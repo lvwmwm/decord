@@ -1,26 +1,26 @@
-// Module ID: 15322
-// Function ID: 15323
+// Module ID: 15435
+// Function ID: 15436
 // Name: GuildRoleSubscriptionListingEditStateUtils
-// Dependencies: [5, 32, 19, 5992, 4700, 15323, 15300, 1085, 1391, 558, 576, 504, 6174, 5640, 15324, 15325, 1103, 4698, 15326, 15307, 15327, 1271, 38, 6102, 6944, 12, 9479, 15328, 1278, 2]
+// Dependencies: [5, 32, 19, 5994, 4702, 15436, 15413, 1085, 1392, 558, 576, 504, 6176, 5641, 15437, 15438, 1103, 4700, 15439, 15420, 15440, 1272, 38, 6104, 6951, 12, 9517, 15441, 1279, 2]
 // Exports: useCreateOrUpdateListingFromEditState
 
-// Module 15322 (GuildRoleSubscriptionListingEditStateUtils)
+// Module 15435 (GuildRoleSubscriptionListingEditStateUtils)
 import react2 from "react" /* 576 */;
-import v1 from "v1" /* 1278 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4698 */;
-import StoreUtils from "StoreUtils" /* 5640 */;
-import useInitialValueDefault from "useInitialValue" /* 6174 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15307 */;
-import useSubscriptionRoleDefault from "useSubscriptionRole" /* 15324 */;
-import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 15327 */;
+import v1 from "v1" /* 1279 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4700 */;
+import StoreUtils from "StoreUtils" /* 5641 */;
+import useInitialValueDefault from "useInitialValue" /* 6176 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15413 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15420 */;
+import useSubscriptionRoleDefault from "useSubscriptionRole" /* 15437 */;
+import useTrialIntervalOptionsDefault from "useTrialIntervalOptions" /* 15440 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4700 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15323 */;
+import EmojiStore from "EmojiStore" /* 5994 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4702 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15436 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,9 +34,9 @@ let closure_12;
 let map1;
 let tmp;
 const utils_ColorUtils = tmp(1103);
-const Contants = tmp(15325);
-const f120728 = (id) => id.id;
-const f146195 = () => {
+const Contants = tmp(15438);
+const f121116 = (id) => id.id;
+const f146565 = () => {
   state.setState((listings) => {
     let obj2;
     obj = { listings: obj2 };
@@ -58,14 +58,14 @@ function getRoleEmojis(arr, arg1) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(found.map(f120728));
+    set = new Set(found.map(f121116));
     return set;
   }
 }
 function clearEditState(NEW_LISTING_EDIT_STATE_ID) {
   _require = NEW_LISTING_EDIT_STATE_ID;
   obj = require("react-native");
-  obj.batchUpdates(f146195);
+  obj.batchUpdates(f146565);
 }
 let obj = function _updateListingPeripheralsFromEditState() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -100,6 +100,7 @@ let obj = function _updateListingPeripheralsFromEditState() {
         let trialInterval;
         let tierEmojiIds;
         let subscriptionTrial;
+        let closure_12;
         let closure_13;
         let closure_14;
         c4 = 2;
@@ -134,7 +135,7 @@ let obj = function _updateListingPeripheralsFromEditState() {
             closure_16 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === tmp5) {
@@ -352,7 +353,7 @@ obj = function _createListingFromEditState() {
               analyticsContext = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             if (1 === c6) {
@@ -590,7 +591,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClearEdit
       return () => {
         closure_0 = closure_1_0;
         obj = closure_0(dependencyMap[21]);
-        obj.batchUpdates(f146195);
+        obj.batchUpdates(f146565);
       };
     };
     const items = [arg0];
@@ -611,7 +612,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClearEdit
     let state;
     closure_0 = closure_1_0;
     obj = closure_0(dependencyMap[21]);
-    obj.batchUpdates(f146195);
+    obj.batchUpdates(f146565);
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1206,7 +1207,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTierEm
       const _Set = Set;
       const self = this;
       const self2 = this;
-      set = new Set(found.map(f120728));
+      set = new Set(found.map(f121116));
     }
     cResult[4] = stateFromStoresArray;
     cResult[5] = tmp4.id;
@@ -1239,7 +1240,7 @@ const tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTierEm
         const _Set = Set;
         const self = this;
         const self2 = this;
-        set = new Set(found.map(f120728));
+        set = new Set(found.map(f121116));
       }
     }
     return set;
@@ -1537,7 +1538,7 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEditSt
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(15307);
+  const tmpResult = tmp(15420);
   const subscriptionListingsForGroup = tmpResult.useSubscriptionListingsForGroup(arg0, tmp4);
   if (cResult[2] !== arg1) {
     const fn = function s(arg0) {
@@ -1946,7 +1947,7 @@ export const useCreateOrUpdateListingFromEditState = function useCreateOrUpdateL
               id = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {

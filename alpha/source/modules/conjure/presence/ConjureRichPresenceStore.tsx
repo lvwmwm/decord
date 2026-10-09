@@ -1,18 +1,18 @@
-// Module ID: 11250
-// Function ID: 11251
+// Module ID: 10616
+// Function ID: 10617
 // Name: ConjureRichPresenceStore
-// Dependencies: [5884, 2115, 4899, 11251, 1085, 2070, 10232, 504, 584, 2]
+// Dependencies: [5885, 2115, 4900, 10617, 1085, 2071, 10217, 504, 584, 2]
 
-// Module 11250 (ConjureRichPresenceStore)
+// Module 10616 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10232 */;
-import IdleStore from "IdleStore" /* 5884 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10217 */;
+import IdleStore from "IdleStore" /* 5885 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
 import size from "module_2" /* 2 */;
 
 let _null, c10, c12, c9;
@@ -22,7 +22,7 @@ function updateActivity(withGracePeriod) {
   let obj3;
   let timeout;
   let timeout2;
-  const f107136 = () => {
+  const f105268 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -40,7 +40,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f107136, closure_1_8);
+      timeout = setTimeout(f105268, closure_1_8);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -171,7 +171,7 @@ function updateActivity(withGracePeriod) {
           timeout2 = null;
         }
         let _setTimeout = setTimeout;
-        timeout2 = setTimeout(f107136, c8);
+        timeout2 = setTimeout(f105268, c8);
         flag = true;
       }
     }

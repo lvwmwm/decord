@@ -1,30 +1,30 @@
-// Module ID: 15452
-// Function ID: 15453
+// Module ID: 15565
+// Function ID: 15566
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5079, 21, 5090, 587, 558, 576, 8266, 1989, 1126, 2955, 10487, 11187, 6058, 8259, 504, 4750, 1200, 10246, 10247, 5086, 2]
+// Dependencies: [19, 17, 5080, 21, 5091, 587, 558, 576, 8274, 1990, 1126, 2955, 10477, 10593, 6060, 8267, 504, 4752, 1200, 10231, 10232, 5087, 2]
 
-// Module 15452 (DisplayNameStylesEditPreview)
+// Module 15565 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import utils from "utils" /* 1989 */;
+import utils from "utils" /* 1990 */;
 import _modDef2955 from "module_2955" /* 2955 */;
-import DateUtils from "DateUtils" /* 4750 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6058 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8259 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8266 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10246 */;
-import types from "types" /* 10247 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 10487 */;
-import NameplatePreview2 from "NameplatePreview" /* 11187 */;
+import DateUtils from "DateUtils" /* 4752 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6060 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8267 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8274 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10231 */;
+import types from "types" /* 10232 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 10477 */;
+import NameplatePreview2 from "NameplatePreview" /* 10593 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -514,7 +514,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPre
   items2[1] = metroRequire(Text_Text.Text, obj8);
   items3 = [metroImportDefault(View, obj6), ];
   const obj9 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: intl.string(_modDef2955.h5Cuej) };
-  const Text = tmp2(5086).Text;
+  const Text = tmp2(5087).Text;
   intl = tmp2(1126).intl;
   items3[1] = metroRequire(Text, obj9);
   items1[1] = metroImportDefault(View, obj5);

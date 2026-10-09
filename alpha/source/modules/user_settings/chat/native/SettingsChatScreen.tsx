@@ -1,24 +1,24 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15671
+// Function ID: 15672
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1389, 4732, 7966, 1085, 21, 5090, 587, 558, 576, 1502, 4726, 573, 5086, 1126, 6186, 1200, 9722, 6671, 11262, 14775, 2]
+// Dependencies: [19, 17, 1390, 4734, 7974, 1085, 21, 5091, 587, 558, 576, 1503, 4728, 573, 5087, 1126, 6188, 1200, 9741, 6678, 10629, 14883, 2]
 
-// Module 15558 (SettingsChatScreen)
+// Module 15671 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl14 from "intl" /* 1126 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9722 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
-import SettingLayoutDefault from "SettingLayout" /* 14775 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6678 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9741 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingLayoutDefault from "SettingLayout" /* 14883 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import SubscriptionStore from "SubscriptionStore" /* 4732 */;
+import UserStore from "UserStore" /* 1390 */;
+import SubscriptionStore from "SubscriptionStore" /* 4734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -123,7 +123,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
   let tmp7;
   let obj = stackNavigation(576);
   const cResult = obj.c(9);
-  const obj2 = stackNavigation(1502);
+  const obj2 = stackNavigation(1503);
   stackNavigation = obj2.useStackNavigation();
   const tmp5 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -145,7 +145,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
   const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(stackNavigation(1126).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" }) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
     const tmp13 = closure_9(Text, obj3);
     cResult[2] = tmp13;
@@ -178,12 +178,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
     const obj5 = { style: tmp5.card, children: closure_9(Card, obj6) };
     obj6 = { border: "none", shadow: "none", children: closure_10(View, obj7) };
     obj7 = { style: tmp5.cardContent, children: items2 };
-    Card = tmp(6186).Card;
+    Card = tmp(6188).Card;
     const obj8 = { style: tmp5.cardIcon, source: AssetRegistryDefault, size: stackNavigation(1200).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1200).Icon;
     items2 = [closure_9(Icon, obj8), ];
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: intl2.format(stackNavigation(1126).t.uW1zul, obj10) };
-    const Text2 = tmp(5086).Text;
+    const Text2 = tmp(5087).Text;
     intl2 = tmp(1126).intl;
     obj10 = {
       onClick() {
@@ -229,12 +229,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
     const obj4 = { style: tmp3.card, children: closure_9(Card, obj5) };
     obj5 = { border: "none", shadow: "none", children: closure_10(View, obj6) };
     obj6 = { style: tmp3.cardContent, children: items2 };
-    Card = tmp(6186).Card;
+    Card = tmp(6188).Card;
     const obj7 = { style: tmp3.cardIcon, source: AssetRegistryDefault, size: require("native").Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1200).Icon;
     items2 = [closure_9(Icon, obj7), ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: intl2.format(require("intl").t.uW1zul, obj9) };
-    const Text2 = tmp(5086).Text;
+    const Text2 = tmp(5087).Text;
     intl2 = tmp(1126).intl;
     obj9 = {
       onClick() {
@@ -267,7 +267,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsChat
   }
   if (first !== initialSetting) {
     const obj2 = { sections: getChatSettings(), scrollTarget: initialSetting1 };
-    const createList = tmp(11262).createList;
+    const createList = tmp(10629).createList;
     SettingBuilders;
     initialSetting1 = undefined;
     if (route != null) {

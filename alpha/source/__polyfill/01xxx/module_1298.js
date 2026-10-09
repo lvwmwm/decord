@@ -1,18 +1,12 @@
 // Module ID: 1298
 // Function ID: 1299
-// Dependencies: []
+// Dependencies: [1299, 1300, 1302]
 
 // Module 1298
-let obj2;
-const re1 = /%20/g;
-const obj = { default: "RFC3986", formatters: obj2, RFC1738: "RFC1738", RFC3986: "RFC3986" };
-obj2 = {
-  RFC1738(arg0) {
-    return replace.call(arg0, re1, "+");
-  },
-  RFC3986(arg0) {
-    return String(arg0);
-  }
-};
+import _mod1299 from "module_1299" /* 1299 */;
+import _mod1300 from "module_1300" /* 1300 */;
+import _mod1302 from "module_1302" /* 1302 */;
 
-export default obj;
+({ formats: _mod1299, parse: _mod1300, stringify: _mod1302 });
+
+export default { formats: _mod1299, parse: _mod1300, stringify: _mod1302 };

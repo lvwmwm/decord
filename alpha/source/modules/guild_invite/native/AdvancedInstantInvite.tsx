@@ -1,21 +1,21 @@
-// Module ID: 18324
-// Function ID: 18325
+// Module ID: 18486
+// Function ID: 18487
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 4717, 1389, 21, 5090, 8134, 5417, 18325, 8662, 18326, 5054, 18327, 1999, 18328, 1126, 6161, 6192, 5373, 587, 6267, 6184, 6882, 1402, 8486, 2]
+// Dependencies: [19, 17, 4719, 1390, 21, 5091, 8142, 5418, 18487, 8671, 18488, 5055, 18489, 2000, 18490, 1126, 6165, 6194, 5374, 587, 6269, 6186, 6889, 1403, 8494, 2]
 // Exports: default
 
-// Module 18324 (AdvancedInstantInvite)
+// Module 18486 (AdvancedInstantInvite)
 import react_native from "react-native" /* 17 */;
 import intl11 from "intl" /* 1126 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 8486 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 8494 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -67,7 +67,7 @@ export default function AdvancedInstantInvite(maxAge) {
   let tmp29;
   let tmp33Result;
   let tmp33Result5;
-  const f134466 = (value) => value.value === maxUses;
+  const f134800 = (value) => value.value === maxUses;
   ({ channel, guild } = maxAge);
   maxAge = maxAge.maxAge;
   const onChangeMaxAge = maxAge.onChangeMaxAge;
@@ -120,7 +120,7 @@ export default function AdvancedInstantInvite(maxAge) {
     if (tmp) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { assignableRoles, selectedRoleIds: roleIds, onSave: onChangeRoleIds };
-      obj.openLazy(asyncRequire(18327, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(18489, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
     }
   }, items);
   const items2 = [maxUses, maxUsesOptions, onChangeMaxUses];
@@ -128,7 +128,7 @@ export default function AdvancedInstantInvite(maxAge) {
     let intl;
     if (null != onChangeMaxAge) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      const tmp6 = asyncRequire(18328, dependencyMap.paths);
+      const tmp6 = asyncRequire(18490, dependencyMap.paths);
       const obj = { title: intl.string(intl11.t.gKmKP0), options: maxAgeOptions, value: maxAge, onChange: tmp };
       intl = intl11.intl;
       openLazy(tmp6, "InviteMaxAgeActionSheet", obj, "stack");
@@ -139,7 +139,7 @@ export default function AdvancedInstantInvite(maxAge) {
     let intl;
     if (null != onChangeMaxUses) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      const tmp6 = asyncRequire(18328, dependencyMap.paths);
+      const tmp6 = asyncRequire(18490, dependencyMap.paths);
       const obj = { title: intl.string(intl11.t["+3vH1h"]), options: maxUsesOptions, value: maxUses, onChange: tmp };
       intl = intl11.intl;
       openLazy(tmp6, "InviteMaxUsesActionSheet", obj, "stack");
@@ -154,12 +154,12 @@ export default function AdvancedInstantInvite(maxAge) {
     const obj4 = { count: memo };
     formatToPlainStringResult = intl.formatToPlainString(guild(onChangeMaxAge[15]).t["eXU3/V"], obj4);
   }
-  const found = maxAgeOptions.find(f134466);
+  const found = maxAgeOptions.find(f134800);
   let label;
   if (found != null) {
     label = found.label;
   }
-  const found1 = maxUsesOptions.find(f134466);
+  const found1 = maxUsesOptions.find(f134800);
   let label1;
   if (found1 != null) {
     label1 = found1.label;

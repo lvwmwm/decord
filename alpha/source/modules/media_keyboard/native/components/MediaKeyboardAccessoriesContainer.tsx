@@ -1,16 +1,16 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 17038
+// Function ID: 17039
 // Name: MediaKeyboardAccessoriesContainer
-// Dependencies: [19, 17, 9645, 21, 1381, 5090, 558, 576, 4810, 504, 2]
+// Dependencies: [19, 17, 9664, 21, 1382, 5091, 558, 576, 4811, 504, 2]
 
-// Module 16910 (MediaKeyboardAccessoriesContainer)
+// Module 17038 (MediaKeyboardAccessoriesContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
 import react from "react" /* 19 */;
-import NativeMenuStore_mod from "NativeMenuStore" /* 9645 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import NativeMenuStore_mod from "NativeMenuStore" /* 9664 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

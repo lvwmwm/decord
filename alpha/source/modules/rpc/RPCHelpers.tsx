@@ -1,38 +1,38 @@
-// Module ID: 11142
-// Function ID: 11143
+// Module ID: 10905
+// Function ID: 10906
 // Name: RPCHelpers
-// Dependencies: [5, 5436, 2021, 2067, 1403, 2063, 2086, 2011, 5428, 5106, 1389, 5111, 5635, 1085, 1383, 5074, 1102, 12, 7167, 5077, 5623, 11143, 5405, 1385, 8433, 1294, 11134, 10614, 11144, 2]
+// Dependencies: [5, 5437, 2022, 2068, 1404, 2064, 2086, 2012, 5429, 5107, 1390, 5112, 5636, 1085, 1384, 5075, 1102, 12, 7172, 5078, 5624, 10906, 5406, 1386, 8441, 1295, 10896, 10773, 10907, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 11142 (RPCHelpers)
+// Module 10905 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import urlParseDefault from "urlParse" /* 1385 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5077 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import useMessageAuthor from "useMessageAuthor" /* 5623 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 10614 */;
-import RPCErrorDefault from "RPCError" /* 11134 */;
-import LeakyBucketDefault from "LeakyBucket" /* 11144 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import urlParseDefault from "urlParse" /* 1386 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5078 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import useMessageAuthor from "useMessageAuthor" /* 5624 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7172 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8441 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 10773 */;
+import RPCErrorDefault from "RPCError" /* 10896 */;
+import LeakyBucketDefault from "LeakyBucket" /* 10907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import UserRecord from "UserRecord" /* 1403 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import PresenceStore from "PresenceStore" /* 5106 */;
-import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
-import Constants_mod from "Constants" /* 5635 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import PresenceStore from "PresenceStore" /* 5107 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import Constants_mod from "Constants" /* 5636 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import URLUtils from "URLUtils" /* 1383 */;
-import RegexUtils_mod from "RegexUtils" /* 5074 */;
+import URLUtils from "URLUtils" /* 1384 */;
+import RegexUtils_mod from "RegexUtils" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ let closure_21;
 let closure_22;
 let closure_23;
 let tmp;
-const transformUserDefault = tmp(11143);
+const transformUserDefault = tmp(10906);
 function recurseReplaceContentTree(type) {
   if ("customEmoji" === type.type) {
     type.type = "emoji";
@@ -607,7 +607,7 @@ export const processSocketThrottlers = function processSocketThrottlers() {
 export const validateOriginAndUpdateSocket = function validateOriginAndUpdateSocket(authorization, arg1) {
   if (null == arg1) {
     const _Set = Set;
-    const items = [authStore3];
+    const items = [authStore4];
     const self = this;
     const self2 = this;
     authorization = authorization.authorization;
@@ -621,18 +621,18 @@ export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoic
   let sorted;
   let sorted1;
   let tmp2;
-  const f142441 = (index, index2) => index.index - index2.index;
-  const f142442 = (id) => ({ id: id.id, name: id.name });
+  const f142703 = (index, index2) => index.index - index2.index;
+  const f142704 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f142442), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f142704), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f142441);
+  sorted = values.sort(f142703);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f142442), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f142704), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f142441);
+  sorted1 = values2.sort(f142703);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

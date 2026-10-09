@@ -1,28 +1,28 @@
-// Module ID: 10739
-// Function ID: 10740
+// Module ID: 10912
+// Function ID: 10913
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 9031, 1085, 2023, 21, 5090, 3, 1381, 558, 576, 10740, 7511, 10741, 1380, 10742, 10743, 10744, 1264, 573, 5297, 1126, 10614, 1294, 10745, 1383, 10746, 5928, 2]
+// Dependencies: [5, 32, 19, 17, 9046, 1085, 2024, 21, 5091, 3, 1382, 558, 576, 10913, 7518, 10914, 1381, 10901, 10915, 10911, 1265, 573, 5298, 1126, 10773, 1295, 10916, 1384, 10891, 5929, 2]
 
-// Module 10739 (BaseEmbeddedAppWebView)
+// Module 10912 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import Constants2 from "Constants" /* 2023 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import usePreviousDefault from "usePrevious" /* 5928 */;
-import WebView2 from "WebView" /* 7511 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 10746 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import Constants2 from "Constants" /* 2024 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import usePreviousDefault from "usePrevious" /* 5929 */;
+import WebView2 from "WebView" /* 7518 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 10891 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9031 */;
-import createStyles from "createStyles" /* 5090 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9046 */;
+import createStyles from "createStyles" /* 5091 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

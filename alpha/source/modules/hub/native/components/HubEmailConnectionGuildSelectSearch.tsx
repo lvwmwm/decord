@@ -1,26 +1,27 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12460
+// Function ID: 12461
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 12496, 21, 5090, 587, 558, 576, 12522, 1126, 5086, 1502, 6099, 1630, 12510, 5631, 6203, 7078, 1200, 12517, 2]
+// Dependencies: [5, 32, 19, 17, 12433, 21, 5091, 587, 558, 576, 6163, 12461, 1126, 5087, 1503, 6101, 1631, 12447, 5632, 6205, 7081, 1200, 12456, 2]
 // Exports: default
 
-// Module 12521 (HubEmailConnectionGuildSelectSearch)
+// Module 12460 (HubEmailConnectionGuildSelectSearch)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
-import HubConstants from "HubConstants" /* 12496 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12522 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6101 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import HubConstants from "HubConstants" /* 12433 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12461 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,8 +29,7 @@ const require = globalThis.__r;
 let c4, closure_2, dependencyMap;
 
 let c10;
-let closure_12;
-let metroImportAll;
+let c9;
 let metroImportDefault;
 let metroRequire;
 let obj2;
@@ -37,31 +37,32 @@ let obj3;
 let tmp2;
 let tmp9;
 let unpackModuleId;
-const NavigatorHeader = tmp2(6203);
-const SearchBarNavDefault = tmp9(7078);
+const NavigatorHeader = tmp2(6205);
+const SearchBarNavDefault = tmp9(7081);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-({ View: metroRequire, Image: metroImportDefault, FlatList: metroImportAll } = react_native);
+({ View: metroRequire, FlatList: metroImportDefault } = react_native);
 const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
-({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { scrollContainer: obj2, fauxHeader: { paddingHorizontal: 0 }, emptyWrapper: { flex: 1, alignItems: "center", justifyContent: "center", marginTop: 64, paddingHorizontal: 16 }, emptyStateImage: { marginBottom: 24 }, emptyStateTitle: { marginBottom: 4, textAlign: "center" }, error: obj3 };
 obj2 = { flex: 1, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginBottom: 8 };
-let closure_13 = createStyles(obj);
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
+let closure_12 = createStyles(obj);
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
   let items;
   let tmp10;
   let tmp12;
   let tmp5;
   const obj = react2;
   const cResult = obj.c(9);
-  const tmp4 = closure_13();
+  const tmp4 = closure_12();
   const emptyWrapper = tmp4.emptyWrapper;
   if (cResult[0] !== tmp4.emptyStateImage) {
     const obj2 = { style: tmp4.emptyStateImage, source: AssetRegistryDefault };
-    const tmp9 = authStore(metroImportDefault, obj2);
+    const tmp8 = FastImageDefault;
+    const tmp9 = React4(tmp8, obj2);
     cResult[0] = tmp4.emptyStateImage;
     cResult[1] = tmp9;
     tmp5 = tmp9;
@@ -79,7 +80,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   }
   if (cResult[3] !== tmp4.emptyStateTitle) {
     const obj3 = { style: emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp14 = authStore(Text_Text.Text, obj3);
+    const tmp14 = React4(Text_Text.Text, obj3);
     cResult[3] = tmp4.emptyStateTitle;
     cResult[4] = tmp14;
     tmp12 = tmp14;
@@ -97,7 +98,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   }
   const obj4 = { style: emptyWrapper, children: items };
   items = [tmp5, tmp12];
-  const tmp16 = unpackModuleId(metroRequire, obj4);
+  const tmp16 = authStore(metroRequire, obj4);
   cResult[5] = tmp4.emptyWrapper;
   cResult[6] = tmp5;
   cResult[7] = tmp12;
@@ -106,16 +107,16 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
 }) : (function EmptyState() {
   let intl;
   let items;
-  const tmp = closure_13();
+  const tmp = closure_12();
   const obj = { style: tmp.emptyWrapper, children: items };
-  items = [, ];
   const obj2 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
-  items[0] = authStore(metroImportDefault, obj2);
+  const tmp2 = FastImageDefault;
+  items = [React4(tmp2, obj2), ];
   const obj3 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["6HXiuE"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
-  items[1] = authStore(Text, obj3);
-  return unpackModuleId(metroRequire, obj);
+  items[1] = React4(Text, obj3);
+  return authStore(metroRequire, obj);
 });
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelectSearch.tsx");
 
@@ -139,7 +140,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
   react = undefined;
   c6 = undefined;
   c7 = undefined;
-  let tmp = closure_13();
+  let tmp = closure_12();
   dependencyMap = tmp;
   let tmp2 = require;
   const tmp3 = dependencyMap;
@@ -162,7 +163,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
     anyErrorMessage = obj2.getAnyErrorMessage();
   }
   let obj3 = { children: items };
-  let obj4 = { style: tmp.fauxHeader, children: closure_10(tmp9Result, obj5) };
+  let obj4 = { style: tmp.fauxHeader, children: closure_9(tmp9Result, obj5) };
   const FauxHeader = NavigatorHeader.FauxHeader;
   obj5 = {
     placeholder: intl.string(intl2.t.nL2wKD),
@@ -173,7 +174,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
   };
   tmp9Result = SearchBarNavDefault;
   intl = intl2.intl;
-  items = [closure_10(FauxHeader, obj4), ];
+  items = [closure_9(FauxHeader, obj4), ];
   let obj6 = {
     keyboardShouldPersistTaps: "always",
     data: found,
@@ -183,7 +184,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
         tmp2 = null;
         if ("" !== anyErrorMessage) {
           const obj = { style: error.error, children: anyErrorMessage };
-          tmp2 = authStore(native.LegacyText, obj);
+          tmp2 = React4(native.LegacyText, obj);
         }
       }
       return tmp2;
@@ -242,7 +243,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                   email = closure_2;
                   const self = this;
                   const self2 = this;
-                  const aPIError = new id(error[17]).APIError(email);
+                  const aPIError = new id(error[18]).APIError(email);
                   c5(aPIError);
                 } else if (arg0 === 1) {
                   c5 = 3;
@@ -281,21 +282,21 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
       };
       const id = item.id;
       const HubEmailConnectionGuildSelectRow = require("HubEmailConnectionGuildSelect").HubEmailConnectionGuildSelectRow;
-      return closure_1_10(HubEmailConnectionGuildSelectRow, obj);
+      return closure_1_9(HubEmailConnectionGuildSelectRow, obj);
     },
     keyExtractor(id) {
       return id.id;
     },
     ListEmptyComponent() {
-      return closure_1_10(closure_1_14, {});
+      return closure_1_9(closure_1_13, {});
     },
     ItemSeparatorComponent() {
-      return closure_1_10(c6, { style: { height: 8 } });
+      return closure_1_9(c6, { style: { height: 8 } });
     },
     style: tmp.scrollContainer,
     contentContainerStyle: obj7
   };
   obj7 = { paddingBottom: bottom + 16, paddingTop: 16 };
-  items[1] = closure_10(anyErrorMessage, obj6);
-  return closure_11(closure_12, obj3);
+  items[1] = closure_9(c7, obj6);
+  return closure_10(closure_11, obj3);
 };

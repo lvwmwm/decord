@@ -1,13 +1,13 @@
-// Module ID: 14710
-// Function ID: 14711
+// Module ID: 14816
+// Function ID: 14817
 // Name: useFetchNameplate
-// Dependencies: [558, 576, 10482, 1992, 1989, 2]
+// Dependencies: [558, 576, 10472, 1993, 1990, 2]
 
-// Module 14710 (useFetchNameplate)
+// Module 14816 (useFetchNameplate)
 import react from "react" /* 576 */;
-import utils from "utils" /* 1989 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10482 */;
+import utils from "utils" /* 1990 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10472 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

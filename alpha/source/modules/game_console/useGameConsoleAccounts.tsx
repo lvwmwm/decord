@@ -1,13 +1,13 @@
-// Module ID: 9108
-// Function ID: 9109
+// Module ID: 11068
+// Function ID: 11069
 // Name: useGameConsoleAccounts
-// Dependencies: [5757, 1085, 558, 576, 1387, 504, 2]
+// Dependencies: [5758, 1085, 558, 576, 1388, 504, 2]
 
-// Module 9108 (useGameConsoleAccounts)
+// Module 11068 (useGameConsoleAccounts)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5758 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

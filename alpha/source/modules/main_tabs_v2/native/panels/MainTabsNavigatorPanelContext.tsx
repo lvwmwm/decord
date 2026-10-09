@@ -1,13 +1,13 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 16749
+// Function ID: 16750
 // Name: MainTabsNavigatorPanelContext
-// Dependencies: [19, 6326, 6754, 2]
+// Dependencies: [19, 6333, 6761, 2]
 
-// Module 16624 (MainTabsNavigatorPanelContext)
-import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
+// Module 16749 (MainTabsNavigatorPanelContext)
+import LegacyBaseButton from "LegacyBaseButton" /* 6333 */;
 import react from "react" /* 19 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6754 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6761 */;
 import size from "module_2" /* 2 */;
 
 let Gesture;

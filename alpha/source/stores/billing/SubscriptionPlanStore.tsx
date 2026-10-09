@@ -1,16 +1,16 @@
-// Module ID: 4731
-// Function ID: 4732
+// Module ID: 4733
+// Function ID: 4734
 // Name: SubscriptionPlanStore
-// Dependencies: [4727, 1085, 1391, 2038, 504, 11, 584, 2]
+// Dependencies: [4729, 1085, 1392, 2039, 504, 11, 584, 2]
 
-// Module 4731 (SubscriptionPlanStore)
+// Module 4733 (SubscriptionPlanStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FunctionUtils from "FunctionUtils" /* 2038 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4727 */;
+import FunctionUtils from "FunctionUtils" /* 2039 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4729 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let set2, set3;
@@ -21,7 +21,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f89856 = (id) => {
+const f90068 = (id) => {
   const obj = { id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 };
   addSubscriptionPlan(SubscriptionPlanRecord.createFromServer(obj));
 };
@@ -81,7 +81,7 @@ function reset() {
   const obj4 = FunctionUtils;
   obj4.clearObject(closure_15);
   const items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-  const item = items.forEach(f89856);
+  const item = items.forEach(f90068);
 }
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
 ({ SubscriptionIntervalTypes, SubscriptionPlanInfo } = PremiumConstants);
@@ -91,10 +91,10 @@ const authStore = {};
 const unpackModuleId = {};
 let set = new Set();
 let set1 = new Set();
-const authStore2 = {};
 const authStore3 = {};
+const authStore4 = {};
 let items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-let item = items.forEach(f89856);
+let item = items.forEach(f90068);
 let items1 = [, , ];
 ({ DAY: arr2[0], MONTH: arr2[1], YEAR: arr2[2] } = SubscriptionIntervalTypes);
 const Store = get_initializedDefault.Store;

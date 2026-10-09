@@ -1,11 +1,11 @@
-// Module ID: 16165
-// Function ID: 16166
+// Module ID: 16281
+// Function ID: 16282
 // Name: RegistrationUIStore
-// Dependencies: [570, 1271, 2]
+// Dependencies: [570, 1272, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 16165 (RegistrationUIStore)
-import react_native from "react-native" /* 1271 */;
+// Module 16281 (RegistrationUIStore)
+import react_native from "react-native" /* 1272 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ export const clearRegistrationErrorMessage = function clearRegistrationErrorMess
   let errors = {};
   const merged = Object.assign(errors.getState().errors);
   delete errors["message"];
-  const obj2 = errors(1271);
+  const obj2 = errors(1272);
   obj2.batchUpdates(() => {
     errors = { errors };
     errors.setState(errors);

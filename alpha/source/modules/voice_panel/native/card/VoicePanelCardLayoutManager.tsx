@@ -1,20 +1,20 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 11928
+// Function ID: 11929
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 6041, 11989, 11992, 5113, 558, 576, 4810, 10352, 568, 10720, 11993, 11994, 1271, 2]
+// Dependencies: [32, 19, 17, 6043, 11926, 11929, 5114, 558, 576, 4811, 10339, 568, 10866, 11930, 11931, 1272, 2]
 
-// Module 11991 (VoicePanelCardLayoutManager)
+// Module 11928 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import react_native2 from "react-native" /* 1271 */;
-import CallConstants from "CallConstants" /* 5113 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10352 */;
+import react_native2 from "react-native" /* 1272 */;
+import CallConstants from "CallConstants" /* 5114 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11992 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11926 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11929 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -279,7 +279,7 @@ class VoicePanelCardLayoutManager {
     let safeAreaTop;
     const self = this;
     windowHeight = windowHeight.windowHeight;
-    const obj = { windowHeight, windowWidth: windowHeight.windowWidth, chunkSize: windowHeight / unpackModuleId, safeAreaLeft: Math.max(windowHeight.safeAreaLeft, closure_12), safeAreaRight: Math.max(safeAreaRight, closure_12), safeAreaBottom: Math.max(safeAreaBottom, closure_12), safeAreaTop, gutter: map1, controlBarSize };
+    const obj = { windowHeight, windowWidth: windowHeight.windowWidth, chunkSize: windowHeight / unpackModuleId, safeAreaLeft: Math.max(windowHeight.safeAreaLeft, authStore2), safeAreaRight: Math.max(safeAreaRight, authStore2), safeAreaBottom: Math.max(safeAreaBottom, authStore2), safeAreaTop, gutter: map1, controlBarSize };
     ({ safeAreaRight, safeAreaTop, safeAreaBottom, controlBarSize } = windowHeight);
     if (!shallowEqualDefault(obj, this.props)) {
       self.props = obj;

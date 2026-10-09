@@ -1,21 +1,20 @@
-// Module ID: 10378
-// Function ID: 10379
+// Module ID: 10365
+// Function ID: 10366
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5725, 5730, 10374, 1126, 1200, 10379, 10380, 5086, 5375, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5726, 5731, 10361, 1126, 1200, 10366, 6163, 10367, 5087, 5376, 2]
 
-// Module 10378 (SafetyWarningBanner)
+// Module 10365 (SafetyWarningBanner)
 import nativeDefault from "native" /* 587 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10361 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
@@ -24,8 +23,8 @@ let obj4;
 let obj5;
 let obj6;
 let rect;
-({ Image: closure_4, Pressable: hasOwnProperty, View: metroRequire } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ Pressable: closure_4, View: hasOwnProperty } = react_native);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, contentContainer: { flexDirection: "row", alignItems: "center" }, safetyShieldIconContainer: { width: 42, height: 50 }, safetyShieldIcon: { flex: 1, width: "auto", height: "auto" }, textContainer: obj3, text: obj4, closeButton: rect, closeButtonIcon: obj5, buttonsContainer: obj6 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12 };
@@ -36,7 +35,7 @@ obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_16, zIndex: 1 };
 obj5 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj6 = { flexDirection: "row", marginTop: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
-let closure_9 = createStyles(obj);
+let closure_8 = createStyles(obj);
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarningBanner(channelId) {
   let closeButton;
   let container;
@@ -58,9 +57,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
   const warningType = channelId.warningType;
   ({ header, description, onDismiss } = channelId);
   const buttons = channelId.buttons;
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
+    const fn = function c() {
       const obj = warningId(senderId[7]);
       const obj2 = { name: channelId(senderId[8]).MetricEvents.SAFETY_WARNING_VIEW };
       obj.increment(obj2);
@@ -97,7 +96,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
           if (cResult[9] !== tmp4.closeButtonIcon) {
             let obj2 = { style: tmp4.closeButtonIcon, source: warningId(senderId[12]), size: tmp(senderId[11]).IconSizes.MEDIUM };
             const Icon = tmp(tmp2[11]).Icon;
-            const tmp14 = closure_7(Icon, obj2);
+            const tmp14 = closure_6(Icon, obj2);
             cResult[9] = tmp4.closeButtonIcon;
             cResult[10] = tmp14;
             tmp11 = tmp14;
@@ -112,8 +111,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                 tmp15 = cResult[14];
               }
               if (cResult[15] !== tmp4.safetyShieldIcon) {
-                const obj3 = { style: tmp4.safetyShieldIcon, source: warningId(senderId[13]), resizeMode: "contain" };
-                const tmp23 = closure_7(onDismiss, obj3);
+                const obj3 = { style: tmp4.safetyShieldIcon, source: warningId(senderId[14]), resizeMode: "contain" };
+                const tmp22 = warningId(senderId[13]);
+                const tmp23 = closure_6(tmp22, obj3);
                 cResult[15] = tmp4.safetyShieldIcon;
                 cResult[16] = tmp23;
                 tmp19 = tmp23;
@@ -152,11 +152,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                               let tmp43;
                               const _Symbol2 = Symbol;
                               if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
-                                class G {
+                                class F {
                                   constructor(text, arg1) {
                                     let str = text.variant;
-                                    const Button = channelId(senderId[15]).Button;
-                                    const tmp = closure_1_7;
+                                    const Button = channelId(senderId[16]).Button;
+                                    const tmp = closure_1_6;
                                     if (str == null) {
                                       str = "primary";
                                     }
@@ -164,14 +164,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                                     return tmp(Button, obj, arg1);
                                   }
                                 }
-                                cResult[36] = G;
-                                tmp43 = G;
+                                cResult[36] = F;
+                                tmp43 = F;
                               } else {
-                                class G {
+                                class F {
                                   constructor(text, arg1) {
                                     let str = text.variant;
-                                    const Button = channelId(senderId[15]).Button;
-                                    const tmp = closure_1_7;
+                                    const Button = channelId(senderId[16]).Button;
+                                    const tmp = closure_1_6;
                                     if (str == null) {
                                       str = "primary";
                                     }
@@ -184,11 +184,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                               cResult[34] = buttons;
                               cResult[35] = mapped;
                             } else {
-                              class G {
+                              class F {
                                 constructor(text, arg1) {
                                   let str = text.variant;
-                                  const Button = channelId(senderId[15]).Button;
-                                  const tmp = closure_1_7;
+                                  const Button = channelId(senderId[16]).Button;
+                                  const tmp = closure_1_6;
                                   if (str == null) {
                                     str = "primary";
                                   }
@@ -198,11 +198,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                               }
                             }
                             if (cResult[37] === tmp4.buttonsContainer) {
-                              class G {
+                              class F {
                                 constructor(text, arg1) {
                                   let str = text.variant;
-                                  const Button = channelId(senderId[15]).Button;
-                                  const tmp = closure_1_7;
+                                  const Button = channelId(senderId[16]).Button;
+                                  const tmp = closure_1_6;
                                   if (str == null) {
                                     str = "primary";
                                   }
@@ -211,11 +211,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                                 }
                               }
                               if (cResult[40] === tmp4.container) {
-                                class G {
+                                class F {
                                   constructor(text, arg1) {
                                     let str = text.variant;
-                                    const Button = channelId(senderId[15]).Button;
-                                    const tmp = closure_1_7;
+                                    const Button = channelId(senderId[16]).Button;
+                                    const tmp = closure_1_6;
                                     if (str == null) {
                                       str = "primary";
                                     }
@@ -230,19 +230,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                               cResult[41] = tmp38;
                               cResult[42] = tmp45;
                               cResult[43] = tmp15;
-                              cResult[44] = closure_8(closure_6, obj4);
-                              const tmp52 = closure_8(closure_6, obj4);
+                              cResult[44] = closure_7(closure_5, obj4);
+                              const tmp52 = closure_7(closure_5, obj4);
                             }
                             const obj5 = { style: buttonsContainer, children: tmp42 };
                             cResult[37] = tmp4.buttonsContainer;
                             cResult[38] = tmp42;
-                            cResult[39] = closure_7(closure_6, obj5);
-                            const tmp48 = closure_7(closure_6, obj5);
+                            cResult[39] = closure_6(closure_5, obj5);
+                            const tmp48 = closure_6(closure_5, obj5);
                           }
                         }
                         const obj6 = { style: tmp4.contentContainer, children: items2 };
                         items2 = [tmp24, tmp34];
-                        const tmp41 = closure_8(closure_6, obj6);
+                        const tmp41 = closure_7(closure_5, obj6);
                         cResult[30] = tmp4.contentContainer;
                         cResult[31] = tmp24;
                         cResult[32] = tmp34;
@@ -252,7 +252,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                     }
                     const obj7 = { style: tmp4.textContainer, children: items3 };
                     items3 = [tmp28, tmp31];
-                    const tmp37 = closure_8(closure_6, obj7);
+                    const tmp37 = closure_7(closure_5, obj7);
                     cResult[26] = tmp4.textContainer;
                     cResult[27] = tmp28;
                     cResult[28] = tmp31;
@@ -260,21 +260,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
                     tmp34 = tmp37;
                   }
                   const obj8 = { style: tmp4.text, variant: "heading-sm/normal", children: description };
-                  const tmp33 = closure_7(tmp(senderId[14]).Text, obj8);
+                  const tmp33 = closure_6(tmp(senderId[15]).Text, obj8);
                   cResult[23] = description;
                   cResult[24] = tmp4.text;
                   cResult[25] = tmp33;
                   tmp31 = tmp33;
                 }
                 const obj9 = { style: tmp4.text, variant: "heading-md/semibold", children: header };
-                const tmp30 = closure_7(tmp(senderId[14]).Text, obj9);
+                const tmp30 = closure_6(tmp(senderId[15]).Text, obj9);
                 cResult[20] = header;
                 cResult[21] = tmp4.text;
                 cResult[22] = tmp30;
                 tmp28 = tmp30;
               }
               const obj10 = { style: tmp4.safetyShieldIconContainer, children: tmp19 };
-              const tmp27 = closure_7(closure_6, obj10);
+              const tmp27 = closure_6(closure_5, obj10);
               cResult[17] = tmp4.safetyShieldIconContainer;
               cResult[18] = tmp19;
               cResult[19] = tmp27;
@@ -282,7 +282,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
             }
           }
           const obj11 = { style: closeButton, onPress: tmp8, accessibilityLabel: tmp9, children: tmp11 };
-          const tmp18 = closure_7(closure_5, obj11);
+          const tmp18 = closure_6(onDismiss, obj11);
           cResult[11] = tmp8;
           cResult[12] = tmp4.closeButton;
           cResult[13] = tmp11;
@@ -292,7 +292,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
       }
     }
   }
-  const fn2 = function _() {
+  const fn2 = function u() {
     if (onDismiss != null) {
       tmp();
     }
@@ -317,6 +317,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
   let items3;
   let obj3;
   let obj6;
+  let tmp3;
   channelId = channelId.channelId;
   const warningId = channelId.warningId;
   const senderId = channelId.senderId;
@@ -324,7 +325,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
   const onDismiss = channelId.onDismiss;
   const buttons = channelId.buttons;
   ({ header, description } = channelId);
-  let tmp = closure_9();
+  let tmp = closure_8();
   const effect = warningType.useEffect(() => {
     const obj = warningId(senderId[7]);
     const obj2 = { name: channelId(senderId[8]).MetricEvents.SAFETY_WARNING_VIEW };
@@ -343,30 +344,31 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
       obj.trackCtaEvent(obj2);
     }, items),
     accessibilityLabel: intl.string(channelId(senderId[10]).t["1UatJ0"]),
-    children: closure_7(Icon, obj3)
+    children: closure_6(Icon, obj3)
   };
   intl = channelId(senderId[10]).intl;
   obj3 = { style: tmp.closeButtonIcon, source: warningId(senderId[12]), size: channelId(senderId[11]).IconSizes.MEDIUM };
   Icon = channelId(senderId[11]).Icon;
-  items1 = [closure_7(closure_5, obj2), , ];
+  items1 = [closure_6(onDismiss, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items2 };
-  const obj5 = { style: tmp.safetyShieldIconContainer, children: closure_7(onDismiss, obj6) };
-  obj6 = { style: tmp.safetyShieldIcon, source: warningId(senderId[13]), resizeMode: "contain" };
-  items2 = [closure_7(closure_6, obj5), ];
+  const obj5 = { style: tmp.safetyShieldIconContainer, children: closure_6(tmp3, obj6) };
+  obj6 = { style: tmp.safetyShieldIcon, source: warningId(senderId[14]), resizeMode: "contain" };
+  tmp3 = warningId(senderId[13]);
+  items2 = [closure_6(closure_5, obj5), ];
   const obj7 = { style: tmp.textContainer, children: items3 };
   items3 = [, ];
   const obj8 = { style: tmp.text, variant: "heading-md/semibold", children: header };
-  items3[0] = closure_7(channelId(senderId[14]).Text, obj8);
+  items3[0] = closure_6(channelId(senderId[15]).Text, obj8);
   const obj9 = { style: tmp.text, variant: "heading-sm/normal", children: description };
-  items3[1] = closure_7(channelId(senderId[14]).Text, obj9);
-  items2[1] = closure_8(closure_6, obj7);
-  items1[1] = closure_8(closure_6, obj4);
+  items3[1] = closure_6(channelId(senderId[15]).Text, obj9);
+  items2[1] = closure_7(closure_5, obj7);
+  items1[1] = closure_7(closure_5, obj4);
   const obj10 = {
     style: tmp.buttonsContainer,
     children: buttons.map((text, index) => {
       let str = text.variant;
-      const Button = channelId(senderId[15]).Button;
-      const tmp = closure_1_7;
+      const Button = channelId(senderId[16]).Button;
+      const tmp = closure_1_6;
       if (str == null) {
         str = "primary";
       }
@@ -374,8 +376,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyWarnin
       return tmp(Button, obj, index);
     })
   };
-  items1[2] = closure_7(closure_6, obj10);
-  return closure_8(closure_6, obj);
+  items1[2] = closure_6(closure_5, obj10);
+  return closure_7(closure_5, obj);
 });
 const result = size.fileFinishedImporting("modules/self_mod/shared/native/SafetyWarningBanner.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 16920
-// Function ID: 16921
+// Module ID: 17048
+// Function ID: 17049
 // Name: ConjureHistoryFormat
-// Dependencies: [5444, 1126, 3827, 2]
+// Dependencies: [5445, 1126, 3827, 2]
 // Exports: backupRow, formatAuthoredAt, formatHistoryDateTime, formatHistoryTime, groupHistoryByDay, historyDatabaseTitle, historyEnvironmentLabel, historyPreviewSha, historyRewindCopy, matchingPreviewBackup, parseTimestampMs, versionTitle, visibleBackups
 
-// Module 16920 (ConjureHistoryFormat)
+// Module 17048 (ConjureHistoryFormat)
 import intl8 from "intl" /* 1126 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import getTimestampString from "getTimestampString" /* 5444 */;
+import getTimestampString from "getTimestampString" /* 5445 */;
 import size from "module_2" /* 2 */;
 
 function startOfDayMs(arg0) {

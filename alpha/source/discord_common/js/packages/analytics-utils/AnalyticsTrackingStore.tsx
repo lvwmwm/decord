@@ -1,15 +1,15 @@
-// Module ID: 1273
-// Function ID: 1274
+// Module ID: 1274
+// Function ID: 1275
 // Name: AnalyticsTrackingStore
-// Dependencies: [1096, 4, 1274, 1277, 1278, 1294, 504, 2]
+// Dependencies: [1096, 4, 1275, 1278, 1279, 1295, 504, 2]
 // Exports: analyticsTrackingStoreMaker
 
-// Module 1273 (AnalyticsTrackingStore)
+// Module 1274 (AnalyticsTrackingStore)
 import logger_Logger from "logger/Logger" /* 4 */;
-import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1274 */;
-import FingerprintUtils from "FingerprintUtils" /* 1277 */;
-import v1 from "v1" /* 1278 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import discord_common_IdGenerator from "discord_common/IdGenerator" /* 1275 */;
+import FingerprintUtils from "FingerprintUtils" /* 1278 */;
+import v1 from "v1" /* 1279 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let closure_31 = [];
 let c32 = null;
 let c33 = false;
 function defaultGetSessionId() {
-  return Promise.resolve({ sessionId: "create" });
+  return Promise.resolve({ sessionId: "r" });
 }
 let result = size.fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsTrackingStore.tsx");
 
@@ -354,14 +354,14 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
       obj = {
         type: "timeout",
         id: setTimeout(() => {
-            const f155961 = () => {
+            const f156296 = () => {
               sendTelemetryEvent();
               if (typeof scheduleNextHeartbeat === "function") {
                 const result = 0.1 * scheduleDrain;
                 const _Math = Math;
                 const _Math2 = Math;
                 const _Math3 = Math;
-                ({ type: "timeout", id: setTimeout(f155961, Math.max(scheduleDrain + (Math.floor(Math.random() * result * 2) - result), drainEventsQueue)) });
+                ({ type: "timeout", id: setTimeout(f156296, Math.max(scheduleDrain + (Math.floor(Math.random() * result * 2) - result), drainEventsQueue)) });
                 const _setTimeout = setTimeout;
               } else {
                 throw new TypeError("Trying to call a non-function");
@@ -373,7 +373,7 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
               let _Math = Math;
               let _Math2 = Math;
               let _Math3 = Math;
-              obj = { type: "timeout", id: setTimeout(f155961, Math.max(c8 + (Math.floor(Math.random() * result * 2) - result), c9)) };
+              obj = { type: "timeout", id: setTimeout(f156296, Math.max(c8 + (Math.floor(Math.random() * result * 2) - result), c9)) };
               let _setTimeout = setTimeout;
             } else {
               throw new TypeError("Trying to call a non-function");

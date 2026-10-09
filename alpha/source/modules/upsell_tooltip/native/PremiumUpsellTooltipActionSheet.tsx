@@ -1,26 +1,25 @@
-// Module ID: 9358
-// Function ID: 9359
+// Module ID: 9396
+// Function ID: 9397
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 2060, 21, 5090, 587, 558, 576, 4898, 5054, 1200, 5086, 5375, 6829, 2]
+// Dependencies: [19, 17, 2061, 21, 5091, 587, 558, 576, 4899, 5055, 6163, 1200, 5087, 5376, 6836, 2]
 
-// Module 9358 (PremiumUpsellTooltipActionSheet)
-import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
-import react from "react" /* 19 */;
+// Module 9396 (PremiumUpsellTooltipActionSheet)
 import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4899 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6836 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
 
-let c3;
-let closure_4;
-let metroImportDefault;
+let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
@@ -29,11 +28,11 @@ let size;
 let size1;
 let tmp3;
 const native = tmp3(1200);
-const Text_Text = tmp3(5086);
-const components_Button_Button = tmp3(5375);
-({ Image: c3, View: closure_4 } = react_native);
+const Text_Text = tmp3(5087);
+const components_Button_Button = tmp3(5376);
+const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, img: size, header: { flexDirection: "row", justifyContent: "center" }, title: { textAlign: "center", marginBottom: 8 }, description: obj3, nitroWheel: size1, buttonContainer: obj4 };
 obj2 = { justifyContent: "center", paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -42,8 +41,8 @@ size = { alignSelf: "center", width: 231, height: 231, borderRadius: nativeDefau
 obj3 = { textAlign: "center", marginBottom: nativeDefault.space.PX_24 };
 size1 = { tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, width: 32, height: 32, marginTop: -2, marginLeft: -16 };
 obj4 = { gap: nativeDefault.space.PX_8 };
-let closure_8 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsellTooltipActionSheet(onPrimaryButtonPress) {
+let closure_7 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsellTooltipActionSheet(onPrimaryButtonPress) {
   let backdropProps;
   let description;
   let descriptionStyle;
@@ -66,7 +65,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
   ({ primaryButtonText, primaryButtonIcon, secondaryButtonText, onDismiss } = onPrimaryButtonPress);
   onPrimaryButtonPress = onPrimaryButtonPress.onPrimaryButtonPress;
   const onSecondaryButtonPress = onPrimaryButtonPress.onSecondaryButtonPress;
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   if (cResult[0] === dismissibleContent) {
     let tmp5;
     if (cResult[1] === onDismiss) {
@@ -93,7 +92,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
               }
               if (cResult[14] !== tmp4.nitroWheel) {
                 let obj2 = { style: tmp4.nitroWheel };
-                const tmp16 = closure_6(tmp(onPrimaryButtonPress[10]).NitroWheel, obj2);
+                const tmp16 = closure_5(tmp(onPrimaryButtonPress[11]).NitroWheel, obj2);
                 cResult[14] = tmp4.nitroWheel;
                 cResult[15] = tmp16;
                 tmp14 = tmp16;
@@ -168,9 +167,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                             }
                                           }
                                           const obj3 = { startExpanded: true, onDismiss: tmp5, children: tmp40 };
-                                          BottomSheet = tmp(tmp2[13]).BottomSheet;
+                                          BottomSheet = tmp(tmp2[14]).BottomSheet;
                                           const merged = Object.assign(backdropProps);
-                                          const tmp49 = closure_6(BottomSheet, obj3);
+                                          const tmp49 = closure_5(BottomSheet, obj3);
                                           cResult[48] = backdropProps;
                                           cResult[49] = tmp5;
                                           cResult[50] = tmp40;
@@ -182,7 +181,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                   }
                                   const obj4 = { style: tmp4.container, children: items };
                                   items = [tmp10, tmp20, tmp25, tmp36];
-                                  const tmp43 = closure_7(closure_4, obj4);
+                                  const tmp43 = closure_6(onSecondaryButtonPress, obj4);
                                   cResult[42] = tmp4.container;
                                   cResult[43] = tmp36;
                                   cResult[44] = tmp10;
@@ -194,7 +193,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                               }
                               const obj5 = { style: tmp4.buttonContainer, children: items1 };
                               items1 = [tmp30, tmp33];
-                              const tmp39 = closure_7(closure_4, obj5);
+                              const tmp39 = closure_6(onSecondaryButtonPress, obj5);
                               cResult[38] = tmp4.buttonContainer;
                               cResult[39] = tmp30;
                               cResult[40] = tmp33;
@@ -204,7 +203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                             let tmp34 = null;
                             if (null != secondaryButtonText) {
                               const obj6 = { variant: "secondary", text: secondaryButtonText, onPress: tmp7, size: "lg" };
-                              tmp34 = closure_6(tmp(tmp2[12]).Button, obj6);
+                              tmp34 = closure_5(tmp(tmp2[13]).Button, obj6);
                             }
                             cResult[35] = tmp7;
                             cResult[36] = secondaryButtonText;
@@ -213,7 +212,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                           }
                         }
                         const obj7 = { variant: "active", text: primaryButtonText, onPress: tmp6, icon: tmp28, size: "lg" };
-                        const tmp32 = closure_6(tmp(onPrimaryButtonPress[12]).Button, obj7);
+                        const tmp32 = closure_5(tmp(onPrimaryButtonPress[13]).Button, obj7);
                         cResult[31] = tmp6;
                         cResult[32] = primaryButtonText;
                         cResult[33] = tmp28;
@@ -221,7 +220,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                         tmp30 = tmp32;
                       }
                       const obj8 = { style: tmp24, variant: "text-md/medium", color: "text-default", children: description };
-                      const tmp27 = closure_6(tmp(onPrimaryButtonPress[11]).Text, obj8);
+                      const tmp27 = closure_5(tmp(onPrimaryButtonPress[12]).Text, obj8);
                       cResult[26] = description;
                       cResult[27] = tmp24;
                       cResult[28] = tmp27;
@@ -236,7 +235,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                 }
                 const obj9 = { style: tmp4.header, children: items3 };
                 items3 = [tmp14, tmp17];
-                const tmp23 = closure_7(closure_4, obj9);
+                const tmp23 = closure_6(onSecondaryButtonPress, obj9);
                 cResult[19] = tmp4.header;
                 cResult[20] = tmp14;
                 cResult[21] = tmp17;
@@ -244,7 +243,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                 tmp20 = tmp23;
               }
               const obj10 = { variant: "heading-xl/bold", style: tmp4.title, color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-              const tmp19 = closure_6(tmp(onPrimaryButtonPress[11]).Text, obj10);
+              const tmp19 = closure_5(tmp(onPrimaryButtonPress[12]).Text, obj10);
               cResult[16] = tmp4.title;
               cResult[17] = title;
               cResult[18] = tmp19;
@@ -256,7 +255,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
         if (null != imageSource) {
           const obj11 = { style: items4, source: imageSource };
           items4 = [tmp4.img, imageStyle];
-          tmp11 = closure_6(onSecondaryButtonPress, obj11);
+          tmp11 = closure_5(onDismiss(tmp2[10]), obj11);
         }
         cResult[9] = null != imageSource;
         cResult[10] = imageSource;
@@ -306,7 +305,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
   tmp5 = handleDismiss;
 }) : (function PremiumUpsellTooltipActionSheet(arg0) {
   let backdropProps;
-  let closure_3;
   let description;
   let descriptionStyle;
   let imageSource;
@@ -322,9 +320,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
   let primaryButtonText;
   let secondaryButtonText;
   let title;
-  ({ imageSource, dismissibleContent: require, primaryButtonIcon, secondaryButtonText, onDismiss: importDefault, onPrimaryButtonPress: dependencyMap, onSecondaryButtonPress: closure_3 } = arg0);
+  ({ imageSource, dismissibleContent: require, primaryButtonIcon, secondaryButtonText, onDismiss: importDefault, onPrimaryButtonPress: dependencyMap, onSecondaryButtonPress: View } = arg0);
   ({ title, backdropProps, description, descriptionStyle, imageStyle, primaryButtonText } = arg0);
-  let tmp = closure_8();
+  let tmp = closure_7();
   const tmp3 = require;
   let tmp4 = dependencyMap;
   let obj = {
@@ -340,7 +338,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
       const obj2 = { forceTrack: true, dismissAction };
       const result = obj.UNSAFE_markDismissibleContentAsDismissed(require, obj2);
     },
-    children: tmp6(closure_4, obj2)
+    children: tmp6(View, obj2)
   };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
   const merged = Object.assign(backdropProps);
@@ -349,19 +347,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
   if (null != imageSource) {
     const obj3 = { style: items, source: imageSource };
     items = [tmp.img, imageStyle];
-    tmp2Result = tmp2(closure_3, obj3);
+    tmp2Result = tmp2(FastImageDefault, obj3);
   }
   items1 = [tmp2Result, , , ];
   const obj4 = { style: tmp.header, children: items2 };
   items2 = [, ];
   const obj5 = { style: tmp.nitroWheel };
-  items2[0] = closure_6(native.NitroWheel, obj5);
+  items2[0] = closure_5(native.NitroWheel, obj5);
   const obj6 = { variant: "heading-xl/bold", style: tmp.title, color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-  items2[1] = closure_6(Text_Text.Text, obj6);
-  items1[1] = closure_7(closure_4, obj4);
+  items2[1] = closure_5(Text_Text.Text, obj6);
+  items1[1] = closure_6(View, obj4);
   const obj7 = { style: items3, variant: "text-md/medium", color: "text-default", children: description };
   items3 = [tmp.description, descriptionStyle];
-  items1[2] = closure_6(Text_Text.Text, obj7);
+  items1[2] = closure_5(Text_Text.Text, obj7);
   const obj9 = {
     variant: "active",
     text: primaryButtonText,
@@ -395,7 +393,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
       variant: "secondary",
       text: secondaryButtonText,
       onPress: function handleSecondaryButtonPress() {
-          if (closure_3 != null) {
+          if (View != null) {
             tmp();
           }
           const obj = ActionSheetActionCreatorsDefault;
@@ -415,10 +413,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
     tmp2Result2 = tmp2(components_Button_Button.Button, obj10);
   }
   items4[1] = tmp2Result2;
-  items1[3] = closure_7(closure_4, obj8);
-  return closure_6(BottomSheet, obj);
+  items1[3] = closure_6(View, obj8);
+  return closure_5(BottomSheet, obj);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/upsell_tooltip/native/PremiumUpsellTooltipActionSheet.tsx");
 
-export default tmp6;
+export default tmp5;

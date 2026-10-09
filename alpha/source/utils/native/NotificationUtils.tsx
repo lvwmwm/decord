@@ -1,14 +1,14 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12086
+// Function ID: 12087
 // Name: NotificationUtils
-// Dependencies: [5, 12140, 1085, 12143, 1264, 10820, 7500, 10770, 2]
+// Dependencies: [5, 12077, 1085, 12080, 1265, 10991, 7505, 10940, 2]
 
-// Module 12149 (NotificationUtils)
+// Module 12086 (NotificationUtils)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import SoundUtils from "SoundUtils" /* 10770 */;
-import PushNotificationDefault from "PushNotification" /* 10820 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12140 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import SoundUtils from "SoundUtils" /* 10940 */;
+import PushNotificationDefault from "PushNotification" /* 10991 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, c0;
 
 let tmp;
-const react_nativeDefault = tmp(7500);
+const react_nativeDefault = tmp(7505);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let obj = {

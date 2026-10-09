@@ -1,17 +1,17 @@
-// Module ID: 1245
-// Function ID: 1246
+// Module ID: 1246
+// Function ID: 1247
 // Name: user_settings/UserSettingsUtils
-// Dependencies: [32, 1095, 1085, 1209, 1244, 1246, 1238, 12, 2]
+// Dependencies: [32, 1095, 1085, 1209, 1245, 1247, 1238, 12, 2]
 // Exports: b64ToPreloadedUserSettingsProto, b64ToProtoWithType, mergeTopLevelFields, mutateUserChannelSettings, mutateUserChannelSettingsInternal, mutateUserGuildSettings, mutateUserGuildSettingsInternal, protoToB64, protoToB64WithType, runMigrations, serializeUsageHistory
 
-// Module 1245 (user_settings/UserSettingsUtils)
+// Module 1246 (user_settings/UserSettingsUtils)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import user_settings_shared from "user_settings_shared" /* 1238 */;
-import frecency_user_settings from "frecency_user_settings" /* 1244 */;
-import ProtoUtils from "ProtoUtils" /* 1246 */;
+import frecency_user_settings from "frecency_user_settings" /* 1245 */;
+import ProtoUtils from "ProtoUtils" /* 1247 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds, 
   }
   return fn(guilds.guilds[tmp3]);
 };
-export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, arg1, f86673) {
+export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, arg1, f86884) {
   let tmp = arg1;
   const tmp2 = null != arg1 && "null" !== tmp;
   if (!tmp2) {
@@ -103,7 +103,7 @@ export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsI
     const GuildSettings = preloaded_user_settings.GuildSettings;
     guilds[tmp] = GuildSettings.create();
   }
-  return f86673(guilds.guilds[tmp]);
+  return f86884(guilds.guilds[tmp]);
 };
 export const mutateUserChannelSettings = function mutateUserChannelSettings(guilds, arg1, id, fn) {
   if (null == guilds.guilds) {
@@ -128,13 +128,13 @@ export const mutateUserChannelSettings = function mutateUserChannelSettings(guil
   }
   return fn(guilds.guilds[tmp3].channels[id]);
 };
-export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, arg1, f86673) {
+export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, arg1, f86884) {
   if (!(arg1 in channels.channels)) {
     channels = channels.channels;
     const ChannelSettings = preloaded_user_settings.ChannelSettings;
     channels[arg1] = ChannelSettings.create();
   }
-  return f86673(channels.channels[arg1]);
+  return f86884(channels.channels[arg1]);
 };
 export const runMigrations = function runMigrations(proto, arg1) {
   if (null == proto.versions) {

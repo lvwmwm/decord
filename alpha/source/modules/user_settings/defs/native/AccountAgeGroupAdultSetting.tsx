@@ -1,16 +1,16 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 14923
+// Function ID: 14924
 // Name: AccountAgeGroupAdultSetting
-// Dependencies: [7966, 558, 5905, 5918, 14771, 11262, 1126, 2]
+// Dependencies: [7974, 558, 5906, 5919, 14879, 10629, 1126, 2]
 
-// Module 14815 (AccountAgeGroupAdultSetting)
+// Module 14923 (AccountAgeGroupAdultSetting)
 import intl2 from "intl" /* 1126 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5905 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5918 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14771 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5906 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5919 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

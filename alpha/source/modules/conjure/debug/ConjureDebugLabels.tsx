@@ -1,17 +1,16 @@
-// Module ID: 17053
-// Function ID: 17054
+// Module ID: 17208
+// Function ID: 17209
 // Name: ConjureDebugLabels
-// Dependencies: [1126, 3827, 17052, 2]
-// Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, forceCompactionStatus, isRenderableLog, modelCallOutcome
+// Dependencies: [1126, 3827, 17207, 2]
+// Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, forceCompactionStatus, isRenderableLog
 
-// Module 17053 (ConjureDebugLabels)
+// Module 17208 (ConjureDebugLabels)
 import intl6 from "intl" /* 1126 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 17052 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 17207 */;
 import size from "module_2" /* 2 */;
 
-const set = new Set(["error", "aborted", "length"]);
-let closure_4 = {
+let closure_3 = {
   db() {
     return _modDef3827["7l+DFG"];
   },
@@ -83,29 +82,6 @@ export const isRenderableLog = function isRenderableLog(log) {
     tmp = typeof log.ts === "string";
   }
   return tmp;
-};
-export const MAX_MODEL_CALL_ROWS = 30;
-export const modelCallOutcome = function modelCallOutcome(call) {
-  let found;
-  const hasItem = null != call.stopReason && set.has(call.stopReason);
-  let formatMsResult = null;
-  if (null != call.durationMs) {
-    const obj = ConjureDebugFormat;
-    formatMsResult = obj.formatMs(call.durationMs);
-  }
-  const items = [formatMsResult, , ];
-  const obj2 = ConjureDebugFormat;
-  const formatCountResult = obj2.formatCount(call.inputTokens + call.cacheReadTokens + call.cacheWriteTokens);
-  const obj3 = ConjureDebugFormat;
-  items[1] = "" + formatCountResult + " \u2192 " + obj3.formatCount(call.outputTokens);
-  let stopReason = null;
-  if (hasItem) {
-    stopReason = call.stopReason;
-  }
-  items[2] = stopReason;
-  const obj4 = { text: found.join(" \u00B7 "), bad: hasItem };
-  found = items.filter((item) => null != item);
-  return obj4;
 };
 export const forceCompactionStatus = function forceCompactionStatus(stateFromStores3) {
   if ("idle" === stateFromStores3) {
@@ -181,7 +157,7 @@ export const analyticsMemoryValue = function analyticsMemoryValue(found) {
     }
     const obj = { p50: formatBytes(num), p999: formatBytes2(num2) };
     num2 = found.memory_p999_bytes;
-    formatBytes2 = tmp2(17052).formatBytes;
+    formatBytes2 = tmp2(17207).formatBytes;
     ConjureDebugFormat;
     if (num2 == null) {
       num2 = found.memory_p50_bytes;
@@ -198,7 +174,7 @@ export const analyticsMemoryValue = function analyticsMemoryValue(found) {
 export const analyticsRoleLabel = function analyticsRoleLabel(role) {
   let tmp = null;
   if ("agent" !== role) {
-    tmp = closure_4[role];
+    tmp = closure_3[role];
   }
   let stringResult = null;
   if (null != tmp) {

@@ -1,91 +1,52 @@
 // Module ID: 9824
 // Function ID: 9825
-// Dependencies: [41, 42, 93, 95, 98, 9817, 9771, 9773, 9774, 9778]
+// Dependencies: [41, 42, 9789]
 
 // Module 9824
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9771 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9778 */;
-import _mod9817 from "module_9817" /* 9817 */;
+import _mod9789 from "module_9789" /* 9789 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+let start;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class DETimeUnitAgoFormatParser {
+const regExp = new RegExp("^\\s*(" + _mod9789.YEAR_PATTERN + ")", "i");
+class ENExtractYearSuffixRefiner {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, DETimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(DETimeUnitAgoFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, ENExtractYearSuffixRefiner);
   }
 }
-_inherits(DETimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const NUMBER_PATTERN = _mod9817.NUMBER_PATTERN;
-    const regExp = new RegExp("(?:\\s*((?:n\u00E4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?|vor|in)\\s*)?(" + NUMBER_PATTERN + ")?(?:\\s*(n\u00E4chste|kommende|folgende|letzte|vergangene|vorige|vor(?:her|an)gegangene)(?:s|n|m|r)?)?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod9817.TIME_UNIT_DICTIONARY) + ")", "i");
-    return regExp;
+  key: "refine",
+  value: function refine(arg0, arr) {
+    let text = arg0;
+    const item = arr.forEach((start) => {
+      text = start;
+      start = start.start;
+      if (start.isDateWithUnknownYear()) {
+        const str = text.text;
+        const match = regExp.exec(str.substring(start.index + start.text.length));
+        const obj = text;
+        if (match) {
+          const str2 = match[0];
+          if (str2.trim().length > 3) {
+            obj.debug(() => {
+              console.log("Extracting year: '" + match[0] + "' into : " + closure_0);
+            });
+            const parseYearResult = _mod9789.parseYear(match[1]);
+            if (null != start.end) {
+              const end = start.end;
+              end.assign("year", parseYearResult);
+            }
+            const start2 = start.start;
+            start2.assign("year", parseYearResult);
+            start.text = start.text + match[0];
+          }
+        }
+      }
+    });
+    return arr;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      let num = 1;
-      if (arg1[2]) {
-        num = _mod9817.parseNumberPattern(arg1[2]);
-      }
-      const obj = {};
-      obj[_mod9817.TIME_UNIT_DICTIONARY[arg1[4].toLowerCase(arg1[4])]] = num;
-      const str2 = arg1[1] || arg1[3] || "";
-      const formatted = str2.toLowerCase();
-      if (formatted) {
-        const obj2 = /vor/;
-        let isMatch = obj2.test(formatted);
-        if (!isMatch) {
-          const obj3 = /letzte/;
-          isMatch = obj3.test(formatted);
-        }
-        if (!isMatch) {
-          const obj4 = /vergangen/;
-          isMatch = obj4.test(formatted);
-        }
-        let reverseDurationResult = obj;
-        if (isMatch) {
-          reverseDurationResult = tmp3(9773).reverseDuration(obj);
-        }
-        const ParsingComponents = tmp3(9774).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-      }
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(DETimeUnitAgoFormatParser, items);
+export default _createClass(ENExtractYearSuffixRefiner, items);

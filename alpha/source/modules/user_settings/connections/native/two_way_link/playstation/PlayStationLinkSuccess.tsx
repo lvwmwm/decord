@@ -1,21 +1,21 @@
-// Module ID: 9158
-// Function ID: 9159
+// Module ID: 12878
+// Function ID: 12879
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 5090, 558, 576, 9120, 9159, 6164, 1126, 5086, 5375, 6803, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 9187, 12863, 6163, 1126, 5087, 5376, 6810, 2]
 
-// Module 9158 (PlayStationLinkSuccess)
+// Module 12878 (PlayStationLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9120 */;
-import _modDef9159 from "module_9159" /* 9159 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6810 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9187 */;
+import _modDef12863 from "module_12863" /* 12863 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   const obj2 = TwoWayLinkStyles;
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { uri: _modDef9159 };
+    const obj3 = { uri: _modDef12863 };
     cResult[0] = obj3;
     first = obj3;
   } else {
@@ -193,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
   const obj3 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef9159 };
+    const obj = { uri: _modDef12863 };
     return obj;
   }, []);
   items = [, , ];

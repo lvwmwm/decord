@@ -1,23 +1,23 @@
-// Module ID: 5971
-// Function ID: 5972
+// Module ID: 5973
+// Function ID: 5974
 // Name: UserGuildSettingsStore
-// Dependencies: [2117, 4709, 2067, 2063, 2086, 1389, 1085, 4720, 5972, 1095, 4710, 12, 1402, 584, 11, 504, 2]
+// Dependencies: [2117, 4711, 2068, 2064, 2086, 1390, 1085, 4722, 5974, 1095, 4712, 12, 1403, 584, 11, 504, 2]
 // Exports: convertChannelOverridesToMap, getGuildDefaults
 
-// Module 5971 (UserGuildSettingsStore)
+// Module 5973 (UserGuildSettingsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import MuteTimers from "MuteTimers" /* 4710 */;
-import NotificationConstants from "NotificationConstants" /* 4720 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import MuteTimers from "MuteTimers" /* 4712 */;
+import NotificationConstants from "NotificationConstants" /* 4722 */;
+import ReadStateConstants from "ReadStateConstants" /* 5974 */;
 import ImpersonateStore from "ImpersonateStore" /* 2117 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4711 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import size from "module_2" /* 2 */;
@@ -30,14 +30,14 @@ let closure_14;
 let closure_15;
 let metroImportDefault;
 let metroRequire;
-const f91937 = (item) => {
+const f92149 = (item) => {
   const obj = closure_1_0(closure_1_3[10]);
   return obj.computeIsMuted(item);
 };
-const f91938 = (channel_id) => channel_id.channel_id;
+const f92150 = (channel_id) => channel_id.channel_id;
 function updateUserGuildSettingsInternal(guild_id, channel_overrides) {
   let ALL_MESSAGES;
-  const f91933 = (channel_id) => channel_id.channel_id;
+  const f92145 = (channel_id) => channel_id.channel_id;
   const tmp = guild_id;
   channel_overrides = undefined;
   if (userGuildSettings[guild_id] != null) {
@@ -139,8 +139,8 @@ function updateUserGuildSettingsInternal(guild_id, channel_overrides) {
   const tmp16 = closure_24;
   if (null != userGuildSettings[guild_id].channel_overrides) {
     const arr3 = _modDef12(userGuildSettings[guild_id].channel_overrides);
-    const found = arr3.filter(f91937);
-    const iter = found.map(f91938);
+    const found = arr3.filter(f92149);
+    const iter = found.map(f92150);
     valueResult = iter.value();
   }
   const _Set1 = new _Set(valueResult);
@@ -155,8 +155,8 @@ function updateUserGuildSettingsInternal(guild_id, channel_overrides) {
     }
     return hasFlag(num, constants.OPT_IN_ENABLED);
   });
-  optedInChannelsByGuild[guild_id] = new Set(found1.map(f91933));
-  new Set(found1.map(f91933));
+  optedInChannelsByGuild[guild_id] = new Set(found1.map(f92145));
+  new Set(found1.map(f92145));
   if (null != guild_id) {
     const _Set2 = Set;
     const self = this;
@@ -254,9 +254,9 @@ const HighlightSettings = Constants.HighlightSettings;
 const AccountNotificationFlags = NotificationConstants.AccountNotificationFlags;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 ({ ChannelNotificationSettingsFlags: closure_14, GuildNotificationSettingsFlags: closure_15 } = UserSettingsConstants);
-const authStore4 = {};
+const authStore5 = {};
 let closure_17 = {};
-const authStore5 = false;
+const authStore6 = false;
 let closure_19 = false;
 let settings = { flags: 0 };
 let tmp5 = new MuteTimersDefault();
@@ -308,8 +308,8 @@ class UserGuildSettingsStoreClass extends PersistedStore {
           const tmp = mutedChannels;
           if (null != channel_overrides.channel_overrides) {
             const arr = _modDef12(channel_overrides.channel_overrides);
-            const found = arr.filter(f91937);
-            const iter = found.map(f91938);
+            const found = arr.filter(f92149);
+            const iter = found.map(f92150);
             valueResult = iter.value();
           }
           const _Set1 = new _Set(valueResult);
@@ -639,7 +639,7 @@ class UserGuildSettingsStoreClass extends PersistedStore {
         if (obj.hasFlag(tmp.flags, constants.NEW_FORUM_THREADS_ON)) {
           return true;
         } else {
-          const tmp2Result = tmp2(1402);
+          const tmp2Result = tmp2(1403);
           if (tmp2Result.hasFlag(tmp.flags, tmp4.NEW_FORUM_THREADS_OFF)) {
             return false;
           }
@@ -805,7 +805,7 @@ class UserGuildSettingsStoreClass extends PersistedStore {
       if (obj.hasFlag(guildFlags, constants2.UNREADS_ALL_MESSAGES)) {
         ALL_MESSAGES = UnreadSetting.ALL_MESSAGES;
       } else {
-        const tmp5Result = tmp5(1402);
+        const tmp5Result = tmp5(1403);
         ALL_MESSAGES = tmp5Result.hasFlag(guildFlags, tmp7.UNREADS_ONLY_MENTIONS) ? tmp8.ONLY_MENTIONS : tmp8.UNSET;
       }
       return ALL_MESSAGES;
@@ -825,7 +825,7 @@ class UserGuildSettingsStoreClass extends PersistedStore {
       if (obj.hasFlag(guildFlags, constants2.UNREADS_ALL_MESSAGES)) {
         ONLY_MENTIONS = UnreadSetting.ALL_MESSAGES;
       } else {
-        const tmp4Result = tmp4(1402);
+        const tmp4Result = tmp4(1403);
         if (tmp4Result.hasFlag(guildFlags, tmp6.UNREADS_ONLY_MENTIONS)) {
           ONLY_MENTIONS = UnreadSetting.ONLY_MENTIONS;
         } else if (guild.defaultMessageNotifications === UserNotificationSettings.ALL_MESSAGES) {

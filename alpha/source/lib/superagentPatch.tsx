@@ -1,24 +1,24 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 17881
+// Function ID: 17882
 // Name: superagentPatch
-// Dependencies: [5, 4976, 1085, 1295, 17730, 1383, 1452, 584, 1294, 502, 1369, 2128, 1389, 1264, 1381, 17731, 1127, 17732, 17733, 7, 1254, 17736, 1999, 5723, 15775, 7007, 6104, 17744, 5899, 17745, 1480, 2]
+// Dependencies: [5, 4977, 1085, 1296, 17882, 1384, 1453, 584, 1295, 502, 1370, 2128, 1390, 1265, 1382, 17883, 1127, 17884, 17885, 7, 1255, 17888, 2000, 5724, 15888, 7014, 6106, 17898, 5900, 17899, 1481, 2]
 
-// Module 17729 (superagentPatch)
+// Module 17881 (superagentPatch)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import Constants from "Constants" /* 1085 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import RequestDefault from "Request" /* 1295 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7007 */;
-import IdGenerator from "IdGenerator" /* 17730 */;
-import getTimeZoneDefault from "getTimeZone" /* 17732 */;
-import trackHttpRequestDefault from "trackHttpRequest" /* 17733 */;
-import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 17744 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import RequestDefault from "Request" /* 1296 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7014 */;
+import IdGenerator from "IdGenerator" /* 17882 */;
+import getTimeZoneDefault from "getTimeZone" /* 17884 */;
+import trackHttpRequestDefault from "trackHttpRequest" /* 17885 */;
+import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 17898 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 4976 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ExperimentStore from "ExperimentStore" /* 4977 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import Dispatcher from "Dispatcher" /* 584 */;
-import HTTPUtils_mod from "HTTPUtils" /* 1294 */;
+import HTTPUtils_mod from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -296,7 +296,7 @@ let obj3 = {
         captcha_key = body.captcha_key;
       }
       if (captcha_key) {
-        const items = [asyncRequire(17736, dependencyMap.paths), asyncRequire(5723, dependencyMap.paths)];
+        const items = [asyncRequire(17888, dependencyMap.paths), asyncRequire(5724, dependencyMap.paths)];
         const allResult = all(items);
         const nextPromise = allResult.then((result) => {
           const iter = result[Symbol.iterator]();
@@ -351,7 +351,7 @@ let obj3 = {
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = asyncRequire(15775, dependencyMap.paths);
+          const promise4 = asyncRequire(15888, dependencyMap.paths);
           const nextPromise2 = promise4.then((openMFAModal) => {
             openMFAModal.openMFAModal(closure_0.body.mfa, closure_1, closure_2);
           });
@@ -369,7 +369,7 @@ let obj3 = {
       code1 = body4.code;
     }
     if (isLimitedAccessErrorCode(statusCode, code1)) {
-      const promise3 = asyncRequire(6104, dependencyMap.paths);
+      const promise3 = asyncRequire(6106, dependencyMap.paths);
       promise3.then((result) => {
         result.default();
       });
@@ -377,14 +377,14 @@ let obj3 = {
     } else {
       const body5 = statusCode.body;
       let code2;
-      const isLimitedAccessErrorCode2 = tmp7(17744).isLimitedAccessErrorCode;
+      const isLimitedAccessErrorCode2 = tmp7(17898).isLimitedAccessErrorCode;
       const statusCode2 = statusCode.statusCode;
       GuildLimitedAccessUtils;
       if (body5 != null) {
         code2 = body5.code;
       }
       if (isLimitedAccessErrorCode2(statusCode2, code2)) {
-        const promise2 = asyncRequire(5899, dependencyMap.paths);
+        const promise2 = asyncRequire(5900, dependencyMap.paths);
         promise2.then((result) => {
           const body = closure_0.body;
           let guild_id;
@@ -406,7 +406,7 @@ let obj3 = {
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          const promise = asyncRequire(17745, dependencyMap.paths);
+          const promise = asyncRequire(17899, dependencyMap.paths);
           promise.then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });

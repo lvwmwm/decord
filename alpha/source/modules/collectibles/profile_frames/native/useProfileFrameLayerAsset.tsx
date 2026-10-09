@@ -1,12 +1,12 @@
-// Module ID: 8324
-// Function ID: 8325
+// Module ID: 8332
+// Function ID: 8333
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 6891, 1986, 558, 576, 1898, 8325, 8326, 2]
+// Dependencies: [5, 32, 19, 17, 6898, 1987, 558, 576, 1899, 8333, 8334, 2]
 // Exports: isProfileFrameLayerShown
 
-// Module 8324 (useProfileFrameLayerAsset)
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1986 */;
-import Constants from "Constants" /* 6891 */;
+// Module 8332 (useProfileFrameLayerAsset)
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1987 */;
+import Constants from "Constants" /* 6898 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -14,12 +14,11 @@ import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _Promise, _require, c4, c5, nextPromise, num2;
+let _Promise, c4, c5, importDefault, nextPromise, num2;
 
 let metroImportDefault;
 let metroRequire;
-const f97618 = (arg0) => {
+const f97826 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -46,7 +45,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f97618);
+      const promise = new Promise(f97826);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -150,227 +149,221 @@ const set = new Set();
 const set1 = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFrameLayerAsset(arg0) {
-  let layer;
-  let skuId;
-  let tmp10;
-  let tmp23;
-  let width;
-  const tmp = _require;
-  obj = require("react");
-  const cResult = obj.c(16);
-  ({ skuId, layer, width } = arg0);
-  if (cResult[0] === layer) {
-    let tmp4;
-    let tmp7;
-    if (cResult[1] === skuId) {
-      tmp4 = cResult[2];
-    }
-    _require = tmp4;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class P {
-        constructor(arg0) {
-          return arg0 + 1;
-        }
-      }
-      cResult[3] = P;
-      tmp7 = P;
-    } else {
-      class P {
-        constructor(arg0) {
-          return arg0 + 1;
-        }
-      }
-    }
-    const tmp9 = _slicedToArray(react.useReducer(tmp7, 0), 2)[1];
-    let closure_1 = tmp9;
-    const obj4 = react;
-    if (cResult[4] === tmp4) {
-      let tmp11;
-      class P {
-        constructor(arg0) {
-          return arg0 + 1;
-        }
-      }
-      if (cResult[7] !== tmp4) {
-        class P {
-          constructor(arg0) {
-            return arg0 + 1;
-          }
-        }
-        tmp12[0] = tmp4;
-        cResult[7] = tmp4;
-        cResult[8] = tmp12;
-        tmp11 = tmp12;
-      } else {
-        class P {
-          constructor(arg0) {
-            return arg0 + 1;
-          }
-        }
-      }
-      const effect = obj4.useEffect(tmp10, tmp11);
-      if (cResult[9] === tmp4) {
-        class P {
-          constructor(arg0) {
-            return arg0 + 1;
-          }
-        }
-        if (cResult[13] === tmp15) {
-          class P {
-            constructor(arg0) {
-              return arg0 + 1;
-            }
-          }
-          return tmp23;
-        }
-        const obj2 = { assetUrl: tmp15, imageHeight: tmp14 };
-        cResult[13] = tmp15;
-        cResult[14] = tmp14;
-        cResult[15] = obj2;
-        tmp23 = obj2;
-      }
-      let value;
-      if (null != tmp4) {
-        class P {
-          constructor(arg0) {
-            return arg0 + 1;
-          }
-        }
-        value = map.get(tmp4);
-      }
-      if (null != value) {
-        class P {
-          constructor(arg0) {
-            return arg0 + 1;
-          }
-        }
-      }
-      let combined = null;
-      if (null != tmp4) {
-        class P {
-          constructor(arg0) {
-            return arg0 + 1;
-          }
-        }
-        if (null != value) {
-          class P {
-            constructor(arg0) {
-              return arg0 + 1;
-            }
-          }
-          const rounded = Math.round(width * closure_7.get());
-          const _Math = Math;
-          const _HermesInternal = HermesInternal;
-          combined = "" + tmp4 + "?width=" + rounded + "&height=" + Math.round(rounded * value);
-        }
-      }
-      cResult[9] = tmp4;
-      cResult[10] = width;
-      cResult[11] = 0;
-      cResult[12] = combined;
-    }
-    const fn = function h() {
-      const hasItem = null == closure_0 || "" === tmp || map.has(tmp);
-      if (!hasItem) {
-        let resolved;
-        closure_0 = tmp;
-        const value = map.get(tmp);
-        if (null != value) {
-          resolved = Promise.resolve(value);
-        } else {
-          resolved = map1.get(tmp);
-          obj = map1;
-          if (null == resolved) {
-            const self = this;
-            const self2 = this;
-            const promise = new Promise(f97618);
-            const cleanupPromise = promise.finally(() => set.delete(closure_0));
-            const result = obj.set(tmp, cleanupPromise);
-            resolved = cleanupPromise;
-          }
-        }
-        resolved.then((result) => {
-          if (null != result) {
-            closure_1_1();
-          }
-        });
-      }
-    };
-    cResult[4] = tmp4;
-    cResult[5] = tmp9;
-    cResult[6] = fn;
-    tmp10 = fn;
-  }
-  const tmpResult = tmp(1986);
-  const obj3 = { skuId, assetFormat: tmp(1986).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
-  const collectiblesItemAssetUrl = tmpResult.getCollectiblesItemAssetUrl(obj3);
-  cResult[0] = layer;
-  cResult[1] = skuId;
-  cResult[2] = collectiblesItemAssetUrl;
-  tmp4 = collectiblesItemAssetUrl;
-}) : (function useProfileFrameLayerAsset(width) {
-  let layer;
-  let skuId;
-  width = width.width;
+  let closure_1;
   let collectiblesItemAssetUrl;
-  ({ skuId, layer } = width);
-  obj = collectiblesItemAssetUrl(1986);
-  const obj2 = { skuId, assetFormat: collectiblesItemAssetUrl(1986).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
-  collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl(obj2);
-  let closure_1 = _slicedToArray(react.useReducer((arg0) => arg0 + 1, 0), 2)[1];
-  const items = [collectiblesItemAssetUrl];
-  const effect = react.useEffect(function() {
-    const hasItem = null == collectiblesItemAssetUrl || "" === tmp || map.has(tmp);
-    if (!hasItem) {
-      let resolved;
-      let closure_0 = tmp;
-      const value = map.get(tmp);
-      if (null != value) {
-        resolved = Promise.resolve(value);
-      } else {
-        resolved = map1.get(tmp);
-        obj = map1;
-        if (null == resolved) {
-          const self = this;
-          const self2 = this;
-          const promise = new Promise(f97618);
-          const cleanupPromise = promise.finally(() => set.delete(closure_0));
-          let result = obj.set(tmp, cleanupPromise);
-          resolved = cleanupPromise;
-        }
-      }
-      resolved.then((result) => {
-        if (null != result) {
-          closure_1_1();
-        }
-      });
-    }
-  }, items);
+  let layer;
+  let ratio;
+  let skuId;
+  let tmp4;
+  let tmp5;
+  let width;
+  obj = collectiblesItemAssetUrl(ratio[7]);
+  const cResult = obj.c(14);
+  ({ width, skuId, layer } = arg0);
+  const obj2 = collectiblesItemAssetUrl(ratio[5]);
+  const obj3 = { skuId, assetFormat: collectiblesItemAssetUrl(ratio[5]).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
+  collectiblesItemAssetUrl = obj2.getCollectiblesItemAssetUrl(obj3);
+  const tmp3 = _slicedToArray(react.useState(null), 2);
+  [tmp4, tmp5] = tmp3;
+  importDefault = tmp5;
   let value;
+  const obj4 = react;
   if (null != collectiblesItemAssetUrl) {
     value = map.get(collectiblesItemAssetUrl);
   }
+  ratio = value;
+  if (null != tmp4) {
+    ratio = value;
+    if (tmp4.baseUrl === collectiblesItemAssetUrl) {
+      ratio = tmp4.ratio;
+    }
+  }
+  if (cResult[0] === collectiblesItemAssetUrl) {
+    if (cResult[1] === ratio) {
+      let tmp8;
+      if (cResult[2] === tmp5) {
+        tmp8 = cResult[3];
+      }
+      if (cResult[4] === collectiblesItemAssetUrl) {
+        let tmp9;
+        if (cResult[5] === ratio) {
+          tmp9 = cResult[6];
+        }
+        const effect = obj4.useEffect(tmp8, tmp9);
+        let num4 = 0;
+        if (null != ratio) {
+          num4 = ratio * width;
+        }
+        if (cResult[7] === collectiblesItemAssetUrl) {
+          if (cResult[8] === ratio) {
+            let tmp11;
+            if (cResult[9] === width) {
+              tmp11 = cResult[10];
+            }
+            if (cResult[11] === tmp11) {
+              let tmp18;
+              if (cResult[12] === num4) {
+                tmp18 = cResult[13];
+              }
+              return tmp18;
+            }
+            const obj5 = { assetUrl: tmp11, imageHeight: num4 };
+            cResult[11] = tmp11;
+            cResult[12] = num4;
+            cResult[13] = obj5;
+            tmp18 = obj5;
+          }
+        }
+        let combined = null;
+        if (null != collectiblesItemAssetUrl) {
+          combined = null;
+          if (null != ratio) {
+            const _Math = Math;
+            const rounded = Math.round(width * closure_7.get());
+            const _Math2 = Math;
+            const _HermesInternal = HermesInternal;
+            combined = "" + collectiblesItemAssetUrl + "?width=" + rounded + "&height=" + Math.round(rounded * ratio);
+          }
+        }
+        cResult[7] = collectiblesItemAssetUrl;
+        cResult[8] = ratio;
+        cResult[9] = width;
+        cResult[10] = combined;
+        tmp11 = combined;
+      }
+      const items = [collectiblesItemAssetUrl, ratio];
+      cResult[4] = collectiblesItemAssetUrl;
+      cResult[5] = ratio;
+      cResult[6] = items;
+      tmp9 = items;
+    }
+  }
+  const fn = function n() {
+    let tmp = c0;
+    if (null != c0) {
+      if ("" !== tmp) {
+        if (null == ratio) {
+          let resolved;
+          c0 = false;
+          let closure_0 = tmp;
+          const value = map.get(tmp);
+          if (null != value) {
+            resolved = Promise.resolve(value);
+          } else {
+            obj = map1;
+            resolved = map1.get(tmp);
+            if (null == resolved) {
+              const self = this;
+              const self2 = this;
+              const promise = new Promise(f97826);
+              const cleanupPromise = promise.finally(() => set.delete(closure_0));
+              const result = obj.set(tmp, cleanupPromise);
+              resolved = cleanupPromise;
+            }
+          }
+          resolved.then((ratio) => {
+            const tmp = c0 || null == ratio;
+            if (!tmp) {
+              obj = { baseUrl: collectiblesItemAssetUrl, ratio };
+              importDefault(obj);
+            }
+          });
+          return () => {
+            c0 = true;
+          };
+        }
+      }
+    }
+  };
+  cResult[0] = collectiblesItemAssetUrl;
+  cResult[1] = ratio;
+  cResult[2] = tmp5;
+  cResult[3] = fn;
+  tmp8 = fn;
+}) : (function useProfileFrameLayerAsset(width) {
+  let c1;
+  let layer;
+  let skuId;
+  let tmp3;
+  width = width.width;
+  let collectiblesItemAssetUrl;
+  c1 = undefined;
+  let ratio;
+  ({ skuId, layer } = width);
+  obj = collectiblesItemAssetUrl(ratio[5]);
+  const obj2 = { skuId, assetFormat: collectiblesItemAssetUrl(ratio[5]).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
+  collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl(obj2);
+  const tmp2 = _slicedToArray(react.useState(null), 2);
+  [tmp3, c1] = tmp2;
+  let value;
+  const obj3 = react;
+  if (null != collectiblesItemAssetUrl) {
+    value = map.get(collectiblesItemAssetUrl);
+  }
+  ratio = value;
+  if (null != tmp3) {
+    ratio = value;
+    if (tmp3.baseUrl === collectiblesItemAssetUrl) {
+      ratio = tmp3.ratio;
+    }
+  }
+  const items = [collectiblesItemAssetUrl, ratio];
+  const effect = obj3.useEffect(function() {
+    let tmp = c0;
+    if (null != c0) {
+      if ("" !== tmp) {
+        if (null == ratio) {
+          let resolved;
+          c0 = false;
+          let closure_0 = tmp;
+          const value = map.get(tmp);
+          if (null != value) {
+            resolved = Promise.resolve(value);
+          } else {
+            obj = map1;
+            resolved = map1.get(tmp);
+            if (null == resolved) {
+              const self = this;
+              const self2 = this;
+              const promise = new Promise(f97826);
+              const cleanupPromise = promise.finally(() => set.delete(closure_0));
+              let result = obj.set(tmp, cleanupPromise);
+              resolved = cleanupPromise;
+            }
+          }
+          resolved.then((ratio) => {
+            const tmp = c0 || null == ratio;
+            if (!tmp) {
+              obj = { baseUrl: collectiblesItemAssetUrl, ratio };
+              c1(obj);
+            }
+          });
+          return () => {
+            c0 = true;
+          };
+        }
+      }
+    }
+  }, items);
   let imageHeight = 0;
-  if (null != value) {
-    imageHeight = value * width;
+  if (null != ratio) {
+    imageHeight = ratio * width;
   }
   let assetUrl = null;
   if (null != collectiblesItemAssetUrl) {
     assetUrl = null;
-    if (null != value) {
-      const tmp6 = globalThis;
+    if (null != ratio) {
       const _Math = Math;
       const rounded = Math.round(width * closure_7.get());
       const _Math2 = Math;
       const _HermesInternal = HermesInternal;
-      assetUrl = "" + collectiblesItemAssetUrl + "?width=" + rounded + "&height=" + Math.round(rounded * value);
+      assetUrl = "" + collectiblesItemAssetUrl + "?width=" + rounded + "&height=" + Math.round(rounded * ratio);
     }
   }
   return { assetUrl, imageHeight };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLayerImages(frame) {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLayerImages(frame) {
   let closure_5;
   let containerWidth;
   let filterLayer;
@@ -404,7 +397,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreload
         tmp6 = cResult[8];
       }
       if (cResult[9] !== frame.skuId) {
-        const fn2 = function v(assetId) {
+        const fn2 = function h(assetId) {
           const skuId = frame.skuId;
           obj = CollectiblesAssetUtils;
           const obj2 = { skuId, assetFormat: CollectiblesAssetUtils.CollectiblesItemAssetFormat.STATIC, assetId: assetId.id };
@@ -437,7 +430,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreload
       cResult[5] = found1;
       tmp5 = found1;
     }
-    const fn = function h(anchor) {
+    const fn = function v(anchor) {
       let tmp3 = null != filterLayer;
       const tmp = profileThemeType;
       if (tmp3) {

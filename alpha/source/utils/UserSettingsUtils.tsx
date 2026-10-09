@@ -1,16 +1,16 @@
-// Module ID: 6675
-// Function ID: 6676
+// Module ID: 6682
+// Function ID: 6683
 // Name: UserSettingsUtils
-// Dependencies: [5970, 2086, 1085, 2040, 5105, 6676, 1126, 1121, 2]
+// Dependencies: [5972, 2086, 1085, 2041, 5106, 6683, 1126, 1121, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 6675 (UserSettingsUtils)
+// Module 6682 (UserSettingsUtils)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl7 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6676 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6683 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5972 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

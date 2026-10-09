@@ -1,10 +1,10 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17206
+// Function ID: 17207
 // Name: ConjureDebugJson
 // Dependencies: [2]
 // Exports: extractLogJson
 
-// Module 17051 (ConjureDebugJson)
+// Module 17206 (ConjureDebugJson)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugJson.tsx");

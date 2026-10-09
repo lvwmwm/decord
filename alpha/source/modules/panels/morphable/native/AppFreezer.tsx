@@ -1,13 +1,13 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16890
+// Function ID: 16891
 // Name: AppFreezer
-// Dependencies: [19, 8392, 21, 6166, 558, 576, 5328, 2]
+// Dependencies: [19, 8400, 21, 6168, 558, 576, 5329, 2]
 
-// Module 16764 (AppFreezer)
+// Module 16890 (AppFreezer)
 import Fragment from "Fragment" /* 21 */;
-import NativeViewDefault from "NativeView" /* 6166 */;
+import NativeViewDefault from "NativeView" /* 6168 */;
 import react from "react" /* 19 */;
-import AppFreezeStore from "AppFreezeStore" /* 8392 */;
+import AppFreezeStore from "AppFreezeStore" /* 8400 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppFreezer
       return tmp7;
     }
   }
-  const tmp8 = jsx(tmp(5328).Freeze, { freeze: tmp6, placeholder, children });
+  const tmp8 = jsx(tmp(5329).Freeze, { freeze: tmp6, placeholder, children });
   cResult[2] = children;
   cResult[3] = placeholder;
   cResult[4] = tmp6;
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppFreezer
     }
     return someResult;
   });
-  const Freeze = lockKeys(5328).Freeze;
+  const Freeze = lockKeys(5329).Freeze;
   const tmp2 = jsx;
   if (!freeze) {
     freeze = flag;

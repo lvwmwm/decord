@@ -1,26 +1,26 @@
-// Module ID: 12517
-// Function ID: 12518
+// Module ID: 12456
+// Function ID: 12457
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 12496, 21, 5090, 587, 558, 576, 2078, 6161, 8555, 1126, 5086, 1630, 5375, 1200, 1502, 7079, 6731, 12510, 5631, 12505, 2]
+// Dependencies: [5, 32, 19, 17, 12433, 21, 5091, 587, 558, 576, 2078, 6165, 8563, 1126, 5087, 1631, 5376, 1200, 1503, 7082, 6738, 12447, 5632, 12442, 2]
 // Exports: default
 
-// Module 12517 (HubEmailConnectionGuildSelect)
+// Module 12456 (HubEmailConnectionGuildSelect)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import GuildIconDefault from "GuildIcon" /* 6161 */;
-import Form from "Form" /* 8555 */;
-import HubConstants from "HubConstants" /* 12496 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import GuildIconDefault from "GuildIcon" /* 6165 */;
+import Form from "Form" /* 8563 */;
+import HubConstants from "HubConstants" /* 12433 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

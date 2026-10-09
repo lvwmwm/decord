@@ -1,12 +1,12 @@
-// Module ID: 14574
-// Function ID: 14575
+// Module ID: 14673
+// Function ID: 14674
 // Name: activityShareLink
-// Dependencies: [5070, 1383, 1126, 2]
+// Dependencies: [5071, 1384, 1126, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 14574 (activityShareLink)
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import findCodedLinks from "findCodedLinks" /* 5070 */;
+// Module 14673 (activityShareLink)
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import findCodedLinks from "findCodedLinks" /* 5071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

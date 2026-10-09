@@ -1,32 +1,32 @@
-// Module ID: 15562
-// Function ID: 15563
+// Module ID: 15675
+// Function ID: 15676
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1389, 4732, 1206, 1207, 1085, 21, 5090, 587, 1264, 2040, 5258, 558, 576, 4778, 504, 4726, 1502, 6671, 6267, 1126, 6882, 1200, 9722, 5086, 6265, 6264, 8555, 5373, 2]
+// Dependencies: [19, 17, 1390, 4734, 1206, 1207, 1085, 21, 5091, 587, 1265, 2041, 5259, 558, 576, 4779, 504, 4728, 1503, 6678, 6269, 1126, 6889, 1200, 9741, 5087, 6267, 6266, 8563, 5374, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15562 (UserSettingsText)
+// Module 15675 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl23 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1207 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5258 */;
-import TableRadioRow4 from "TableRadioRow" /* 6264 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6265 */;
-import TableRowGroup7 from "TableRowGroup" /* 6267 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
-import TableSwitchRow8 from "TableSwitchRow" /* 6882 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9722 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5259 */;
+import TableRadioRow4 from "TableRadioRow" /* 6266 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6267 */;
+import TableRowGroup7 from "TableRowGroup" /* 6269 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6678 */;
+import TableSwitchRow8 from "TableSwitchRow" /* 6889 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9741 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import SubscriptionStore from "SubscriptionStore" /* 4732 */;
+import UserStore from "UserStore" /* 1390 */;
+import SubscriptionStore from "SubscriptionStore" /* 4734 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -240,13 +240,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                           let intl;
                           let intl2;
                           let obj2;
-                          const obj = { title: intl.string(intl23.t.PWZOn4), hasIcons: false, children: onValueChange2(TableSwitchRow, obj2) };
+                          const obj = { title: intl.string(intl23.t.PWZOn4), hasIcons: false, children: authStore2(TableSwitchRow, obj2) };
                           const TableRowGroup = TableRowGroup7.TableRowGroup;
                           intl = intl23.intl;
                           obj2 = { label: intl2.string(intl23.t["5bK9vw"]), value: setting2, onValueChange: UserSettings.RenderEmbeds.updateSetting };
                           TableSwitchRow = TableSwitchRow8.TableSwitchRow;
                           intl2 = intl23.intl;
-                          return onValueChange2(TableRowGroup, obj);
+                          return authStore2(TableRowGroup, obj);
                         }
                         cResult[31] = setting2;
                         class N {
@@ -265,13 +265,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                           let intl;
                           let intl2;
                           let obj2;
-                          const obj = { title: intl.string(intl23.t.sMOuuS), hasIcons: false, children: onValueChange2(TableSwitchRow, obj2) };
+                          const obj = { title: intl.string(intl23.t.sMOuuS), hasIcons: false, children: authStore2(TableSwitchRow, obj2) };
                           const TableRowGroup = TableRowGroup7.TableRowGroup;
                           intl = intl23.intl;
                           obj2 = { label: intl2.string(intl23.t["zge/fP"]), value: setting3, onValueChange: UserSettings.RenderReactions.updateSetting };
                           TableSwitchRow = TableSwitchRow8.TableSwitchRow;
                           intl2 = intl23.intl;
-                          return onValueChange2(TableRowGroup, obj);
+                          return authStore2(TableRowGroup, obj);
                         }
                         cResult[33] = setting3;
                         class N {
@@ -453,14 +453,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                                   let intl2;
                                   let intl3;
                                   let obj2;
-                                  const obj = { title: intl.string(intl23.t.fyG8t2), description: intl2.string(intl23.t["wC0+Ph"]), hasIcons: false, children: onValueChange2(TableSwitchRow, obj2) };
+                                  const obj = { title: intl.string(intl23.t.fyG8t2), description: intl2.string(intl23.t["wC0+Ph"]), hasIcons: false, children: authStore2(TableSwitchRow, obj2) };
                                   const TableRowGroup = TableRowGroup7.TableRowGroup;
                                   intl = intl23.intl;
                                   intl2 = intl23.intl;
                                   obj2 = { label: intl3.string(intl23.t.ix8XIj), value: dataSavingMode, onValueChange: onValueChange2 };
                                   TableSwitchRow = TableSwitchRow8.TableSwitchRow;
                                   intl3 = intl23.intl;
-                                  return onValueChange2(TableRowGroup, obj);
+                                  return authStore2(TableRowGroup, obj);
                                 }
                                 class N {
                                   constructor() {
@@ -494,7 +494,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                         const obj = { style: closure_0.nitroUpsell, children: items };
                         const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, style: closure_0.nitroIcon };
                         const Icon = native.Icon;
-                        items = [onValueChange2(Icon, obj2), ];
+                        items = [authStore2(Icon, obj2), ];
                         const obj3 = { variant: "text-sm/medium", color: "text-muted", style: { marginLeft: 4 }, children: intl.format(intl23.t.uW1zul, obj4) };
                         const Text = Text_Text.Text;
                         intl = intl23.intl;
@@ -503,7 +503,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                             return closure_1_16();
                           }
                         };
-                        items[1] = onValueChange2(Text, obj3);
+                        items[1] = authStore2(Text, obj3);
                         return map1(View, obj);
                       }
                       cResult[37] = tmp39;
@@ -533,20 +533,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                   const obj3 = { label: intl3.string(intl23.t.U47N1p), value: setting1, onValueChange: UserSettings.InlineEmbedMedia.updateSetting };
                   const TableSwitchRow = TableSwitchRow8.TableSwitchRow;
                   intl3 = intl23.intl;
-                  items = [onValueChange2(TableSwitchRow, obj3), ];
+                  items = [authStore2(TableSwitchRow, obj3), ];
                   const obj4 = { label: intl4.string(intl23.t.VP11No), value: setting, onValueChange: UserSettings.InlineAttachmentMedia.updateSetting };
                   const TableSwitchRow2 = TableSwitchRow8.TableSwitchRow;
                   intl4 = intl23.intl;
-                  items[1] = onValueChange2(TableSwitchRow2, obj4);
+                  items[1] = authStore2(TableSwitchRow2, obj4);
                   items1 = [map1(TableRowGroup, obj2), ];
-                  const obj5 = { description: intl5.string(intl23.t.T0rbtM), hasIcons: false, children: onValueChange2(TableSwitchRow3, obj6) };
+                  const obj5 = { description: intl5.string(intl23.t.T0rbtM), hasIcons: false, children: authStore2(TableSwitchRow3, obj6) };
                   const TableRowGroup2 = TableRowGroup7.TableRowGroup;
                   intl5 = intl23.intl;
                   obj6 = { label: intl6.string(intl23.t["w8j+yW"]), value: setting4, onValueChange: onValueChange3 };
                   TableSwitchRow3 = TableSwitchRow8.TableSwitchRow;
                   intl6 = intl23.intl;
-                  items1[1] = onValueChange2(TableRowGroup2, obj5);
-                  return map1(authStore2, obj);
+                  items1[1] = authStore2(TableRowGroup2, obj5);
+                  return map1(authStore3, obj);
                 }
                 cResult[26] = setting;
                 cResult[27] = setting1;

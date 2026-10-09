@@ -1,7 +1,7 @@
 // Module ID: 1207
 // Function ID: 1208
 // Name: UnsyncedUserSettingsStore
-// Dependencies: [1208, 1095, 1085, 1241, 1242, 504, 510, 12, 584, 2]
+// Dependencies: [1208, 1095, 1085, 1241, 1242, 1243, 504, 510, 12, 584, 2]
 
 // Module 1207 (UnsyncedUserSettingsStore)
 import _modDef12 from "module_12" /* 12 */;
@@ -11,9 +11,12 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import ThemeConstants from "ThemeConstants" /* 1208 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1242 */;
+import StageAudienceSidebarConstants from "StageAudienceSidebarConstants" /* 1242 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1243 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
+
+let closure_13;
 
 let CHANNEL_SIDEBAR_WIDTH;
 let hasOwnProperty;
@@ -22,11 +25,11 @@ const ListDensityMode = UserSettingsConstants.ListDensityMode;
 ({ DEFAULT_CHAT_SIDEBAR_WIDTH: hasOwnProperty, CHANNEL_SIDEBAR_WIDTH } = Constants);
 const DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH = Constants.DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH;
 const ExpressionPickerWidths = ExpressionPickerConstants.ExpressionPickerWidths;
+let closure_9 = StageAudienceSidebarConstants.STAGE_AUDIENCE_SIDEBAR_DEFAULT_WIDTH;
 let obj = { DATA_SAVER: "data_saver", STANDARD: "standard", BEST: "best" };
-let closure_9 = (window.innerWidth - CHANNEL_SIDEBAR_WIDTH) / 2;
+let closure_10 = (window.innerWidth - CHANNEL_SIDEBAR_WIDTH) / 2;
 const STANDARD = obj.STANDARD;
-let closure_11 = null;
-let closure_12 = {};
+let closure_12 = null;
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class UnsyncedUserSettingsStore extends DeviceSettingsStore {
   initialize(arg0) {
@@ -34,7 +37,7 @@ class UnsyncedUserSettingsStore extends DeviceSettingsStore {
     if (arg0 == null) {
       obj = {};
     }
-    closure_12 = obj;
+    closure_13 = obj;
     const useSystemTheme = obj.useSystemTheme;
     if (null != useSystemTheme) {
       let UNSET;
@@ -45,14 +48,14 @@ class UnsyncedUserSettingsStore extends DeviceSettingsStore {
         }
       }
       obj.useSystemTheme = UNSET;
-      let lowQualityImageMode = closure_12.dataSavingMode;
-      const tmp3 = closure_12;
+      let lowQualityImageMode = closure_13.dataSavingMode;
+      const tmp3 = closure_13;
       if (lowQualityImageMode == null) {
-        lowQualityImageMode = closure_12.lowQualityImageMode;
+        lowQualityImageMode = closure_13.lowQualityImageMode;
       }
       tmp3.dataSavingMode = lowQualityImageMode;
-      let str = closure_12.hdrDynamicRange;
-      const tmp5 = closure_12;
+      let str = closure_13.hdrDynamicRange;
+      const tmp5 = closure_13;
       if (str == null) {
         str = "no-limit";
       }
@@ -61,10 +64,10 @@ class UnsyncedUserSettingsStore extends DeviceSettingsStore {
     UNSET = SystemThemeState.UNSET;
   }
   getUserAgnosticState() {
-    return closure_12;
+    return closure_13;
   }
   isVisualRefreshDisabled(arg0) {
-    let disableVisualRefresh = closure_12.disableVisualRefresh;
+    let disableVisualRefresh = closure_13.disableVisualRefresh;
     if (disableVisualRefresh == null) {
       disableVisualRefresh = arg0;
     }
@@ -74,7 +77,7 @@ class UnsyncedUserSettingsStore extends DeviceSettingsStore {
 const prototype = UnsyncedUserSettingsStore.prototype;
 Object.defineProperty(prototype, "lowQualityImageMode", {
   get: function lowQualityImageMode() {
-    let flag = closure_12.lowQualityImageMode;
+    let flag = closure_13.lowQualityImageMode;
     if (flag == null) {
       flag = false;
     }
@@ -84,7 +87,7 @@ Object.defineProperty(prototype, "lowQualityImageMode", {
 });
 Object.defineProperty(prototype, "videoUploadQuality", {
   get: function videoUploadQuality() {
-    let videoUploadQuality = closure_12.videoUploadQuality;
+    let videoUploadQuality = closure_13.videoUploadQuality;
     if (videoUploadQuality == null) {
       videoUploadQuality = STANDARD;
     }
@@ -94,9 +97,9 @@ Object.defineProperty(prototype, "videoUploadQuality", {
 });
 Object.defineProperty(prototype, "dataSavingMode", {
   get: function dataSavingMode() {
-    let flag = closure_12.dataSavingMode;
+    let flag = closure_13.dataSavingMode;
     if (flag == null) {
-      flag = closure_12.lowQualityImageMode;
+      flag = closure_13.lowQualityImageMode;
     }
     if (flag == null) {
       flag = false;
@@ -107,7 +110,7 @@ Object.defineProperty(prototype, "dataSavingMode", {
 });
 Object.defineProperty(prototype, "expressionPickerWidth", {
   get: function expressionPickerWidth() {
-    let MIN = closure_12.expressionPickerWidth;
+    let MIN = closure_13.expressionPickerWidth;
     if (MIN == null) {
       MIN = ExpressionPickerWidths.MIN;
     }
@@ -117,7 +120,7 @@ Object.defineProperty(prototype, "expressionPickerWidth", {
 });
 Object.defineProperty(prototype, "messageRequestSidebarWidth", {
   get: function messageRequestSidebarWidth() {
-    let messageRequestSidebarWidth = closure_12.messageRequestSidebarWidth;
+    let messageRequestSidebarWidth = closure_13.messageRequestSidebarWidth;
     if (messageRequestSidebarWidth == null) {
       messageRequestSidebarWidth = DEFAULT_MESSAGE_REQUEST_SIDEBAR_WIDTH;
     }
@@ -127,7 +130,7 @@ Object.defineProperty(prototype, "messageRequestSidebarWidth", {
 });
 Object.defineProperty(prototype, "threadSidebarWidth", {
   get: function threadSidebarWidth() {
-    let threadSidebarWidth = closure_12.threadSidebarWidth;
+    let threadSidebarWidth = closure_13.threadSidebarWidth;
     if (threadSidebarWidth == null) {
       threadSidebarWidth = hasOwnProperty;
     }
@@ -137,9 +140,9 @@ Object.defineProperty(prototype, "threadSidebarWidth", {
 });
 Object.defineProperty(prototype, "postSidebarWidth", {
   get: function postSidebarWidth() {
-    let postSidebarWidth = closure_12.postSidebarWidth;
+    let postSidebarWidth = closure_13.postSidebarWidth;
     if (postSidebarWidth == null) {
-      postSidebarWidth = closure_9;
+      postSidebarWidth = closure_10;
     }
     return postSidebarWidth;
   },
@@ -147,7 +150,7 @@ Object.defineProperty(prototype, "postSidebarWidth", {
 });
 Object.defineProperty(prototype, "callChatSidebarWidth", {
   get: function callChatSidebarWidth() {
-    let callChatSidebarWidth = closure_12.callChatSidebarWidth;
+    let callChatSidebarWidth = closure_13.callChatSidebarWidth;
     if (callChatSidebarWidth == null) {
       callChatSidebarWidth = hasOwnProperty;
     }
@@ -155,16 +158,26 @@ Object.defineProperty(prototype, "callChatSidebarWidth", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "stageAudienceSidebarWidth", {
+  get: function stageAudienceSidebarWidth() {
+    let stageAudienceSidebarWidth = closure_13.stageAudienceSidebarWidth;
+    if (stageAudienceSidebarWidth == null) {
+      stageAudienceSidebarWidth = closure_9;
+    }
+    return stageAudienceSidebarWidth;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "homeSidebarWidth", {
   get: function homeSidebarWidth() {
-    let homeSidebarWidth = closure_12.homeSidebarWidth;
+    let homeSidebarWidth = closure_13.homeSidebarWidth;
     if (homeSidebarWidth == null) {
-      if (null == closure_11) {
+      if (null == closure_12) {
         const _Math = Math;
         const _window = window;
-        closure_11 = Math.max(0.4 * (window.innerWidth - CHANNEL_SIDEBAR_WIDTH), hasOwnProperty);
+        closure_12 = Math.max(0.4 * (window.innerWidth - CHANNEL_SIDEBAR_WIDTH), hasOwnProperty);
       }
-      homeSidebarWidth = closure_11;
+      homeSidebarWidth = closure_12;
     }
     return homeSidebarWidth;
   },
@@ -172,13 +185,13 @@ Object.defineProperty(prototype, "homeSidebarWidth", {
 });
 Object.defineProperty(prototype, "callHeaderHeight", {
   get: function callHeaderHeight() {
-    return closure_12.callHeaderHeight;
+    return closure_13.callHeaderHeight;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "useSystemTheme", {
   get: function useSystemTheme() {
-    let UNSET = closure_12.useSystemTheme;
+    let UNSET = closure_13.useSystemTheme;
     if (UNSET == null) {
       UNSET = SystemThemeState.UNSET;
     }
@@ -188,13 +201,13 @@ Object.defineProperty(prototype, "useSystemTheme", {
 });
 Object.defineProperty(prototype, "activityPanelHeight", {
   get: function activityPanelHeight() {
-    return closure_12.activityPanelHeight;
+    return closure_13.activityPanelHeight;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "disableVoiceChannelChangeAlert", {
   get: function disableVoiceChannelChangeAlert() {
-    let flag = closure_12.disableVoiceChannelChangeAlert;
+    let flag = closure_13.disableVoiceChannelChangeAlert;
     if (flag == null) {
       flag = false;
     }
@@ -204,7 +217,7 @@ Object.defineProperty(prototype, "disableVoiceChannelChangeAlert", {
 });
 Object.defineProperty(prototype, "disableEmbeddedActivityPopOutAlert", {
   get: function disableEmbeddedActivityPopOutAlert() {
-    let flag = closure_12.disableEmbeddedActivityPopOutAlert;
+    let flag = closure_13.disableEmbeddedActivityPopOutAlert;
     if (flag == null) {
       flag = false;
     }
@@ -214,7 +227,7 @@ Object.defineProperty(prototype, "disableEmbeddedActivityPopOutAlert", {
 });
 Object.defineProperty(prototype, "disableActivityHardwareAccelerationPrompt", {
   get: function disableActivityHardwareAccelerationPrompt() {
-    let flag = closure_12.disableActivityHardwareAccelerationPrompt;
+    let flag = closure_13.disableActivityHardwareAccelerationPrompt;
     if (flag == null) {
       flag = false;
     }
@@ -224,7 +237,7 @@ Object.defineProperty(prototype, "disableActivityHardwareAccelerationPrompt", {
 });
 Object.defineProperty(prototype, "disableInviteWithTextChannelActivityLaunch", {
   get: function disableInviteWithTextChannelActivityLaunch() {
-    let flag = closure_12.disableInviteWithTextChannelActivityLaunch;
+    let flag = closure_13.disableInviteWithTextChannelActivityLaunch;
     if (flag == null) {
       flag = false;
     }
@@ -234,7 +247,7 @@ Object.defineProperty(prototype, "disableInviteWithTextChannelActivityLaunch", {
 });
 Object.defineProperty(prototype, "disableHideSelfStreamAndVideoConfirmationAlert", {
   get: function disableHideSelfStreamAndVideoConfirmationAlert() {
-    let flag = closure_12.disableHideSelfStreamAndVideoConfirmationAlert;
+    let flag = closure_13.disableHideSelfStreamAndVideoConfirmationAlert;
     if (flag == null) {
       flag = false;
     }
@@ -244,7 +257,7 @@ Object.defineProperty(prototype, "disableHideSelfStreamAndVideoConfirmationAlert
 });
 Object.defineProperty(prototype, "pushUpsellUserSettingsDismissed", {
   get: function pushUpsellUserSettingsDismissed() {
-    let flag = closure_12.pushUpsellDismissed;
+    let flag = closure_13.pushUpsellDismissed;
     if (flag == null) {
       flag = false;
     }
@@ -254,7 +267,7 @@ Object.defineProperty(prototype, "pushUpsellUserSettingsDismissed", {
 });
 Object.defineProperty(prototype, "disableActivityHostLeftNitroUpsell", {
   get: function disableActivityHostLeftNitroUpsell() {
-    let flag = closure_12.disableActivityHostLeftNitroUpsell;
+    let flag = closure_13.disableActivityHostLeftNitroUpsell;
     if (flag == null) {
       flag = false;
     }
@@ -264,7 +277,7 @@ Object.defineProperty(prototype, "disableActivityHostLeftNitroUpsell", {
 });
 Object.defineProperty(prototype, "disableCallUserConfirmationPrompt", {
   get: function disableCallUserConfirmationPrompt() {
-    let flag = closure_12.disableCallUserConfirmationPrompt;
+    let flag = closure_13.disableCallUserConfirmationPrompt;
     if (flag == null) {
       flag = false;
     }
@@ -274,7 +287,7 @@ Object.defineProperty(prototype, "disableCallUserConfirmationPrompt", {
 });
 Object.defineProperty(prototype, "disableApplicationSubscriptionCancellationSurvey", {
   get: function disableApplicationSubscriptionCancellationSurvey() {
-    let flag = closure_12.disableApplicationSubscriptionCancellationSurvey;
+    let flag = closure_13.disableApplicationSubscriptionCancellationSurvey;
     if (flag == null) {
       flag = false;
     }
@@ -284,7 +297,7 @@ Object.defineProperty(prototype, "disableApplicationSubscriptionCancellationSurv
 });
 Object.defineProperty(prototype, "allowVibegrationsPictureInPictureOnNavigateAway", {
   get: function allowVibegrationsPictureInPictureOnNavigateAway() {
-    let flag = closure_12.allowVibegrationsPictureInPictureOnNavigateAway;
+    let flag = closure_13.allowVibegrationsPictureInPictureOnNavigateAway;
     if (flag == null) {
       flag = true;
     }
@@ -294,7 +307,7 @@ Object.defineProperty(prototype, "allowVibegrationsPictureInPictureOnNavigateAwa
 });
 Object.defineProperty(prototype, "darkSidebar", {
   get: function darkSidebar() {
-    let flag = closure_12.darkSidebar;
+    let flag = closure_13.darkSidebar;
     if (flag == null) {
       flag = false;
     }
@@ -304,7 +317,7 @@ Object.defineProperty(prototype, "darkSidebar", {
 });
 Object.defineProperty(prototype, "saveCameraUploadsToDevice", {
   get: function saveCameraUploadsToDevice() {
-    let flag = closure_12.saveCameraUploadsToDevice;
+    let flag = closure_13.saveCameraUploadsToDevice;
     if (flag == null) {
       flag = true;
     }
@@ -314,7 +327,7 @@ Object.defineProperty(prototype, "saveCameraUploadsToDevice", {
 });
 Object.defineProperty(prototype, "listDensity", {
   get: function listDensity() {
-    let COZY = closure_12.listDensity;
+    let COZY = closure_13.listDensity;
     if (COZY == null) {
       COZY = ListDensityMode.COZY;
     }
@@ -324,7 +337,7 @@ Object.defineProperty(prototype, "listDensity", {
 });
 Object.defineProperty(prototype, "hdrDynamicRange", {
   get: function hdrDynamicRange() {
-    let str = closure_12.hdrDynamicRange;
+    let str = closure_13.hdrDynamicRange;
     if (str == null) {
       str = "no-limit";
     }
@@ -334,7 +347,7 @@ Object.defineProperty(prototype, "hdrDynamicRange", {
 });
 Object.defineProperty(prototype, "pauseSelfStreamPreviewWhenUnfocused", {
   get: function pauseSelfStreamPreviewWhenUnfocused() {
-    let flag = closure_12.pauseSelfStreamPreviewWhenUnfocused;
+    let flag = closure_13.pauseSelfStreamPreviewWhenUnfocused;
     if (flag == null) {
       flag = true;
     }
@@ -344,7 +357,7 @@ Object.defineProperty(prototype, "pauseSelfStreamPreviewWhenUnfocused", {
 });
 Object.defineProperty(prototype, "videoBackground", {
   get: function videoBackground() {
-    let videoBackground = closure_12.videoBackground;
+    let videoBackground = closure_13.videoBackground;
     if (videoBackground == null) {
       videoBackground = null;
     }
@@ -371,21 +384,21 @@ UnsyncedUserSettingsStore.migrations = items;
 const obj2 = {
   UNSYNCED_USER_SETTINGS_UPDATE: function handleUnsyncedUserSettingsUpdate(settings) {
     const obj = {};
-    const merged = Object.assign(closure_12);
+    const merged = Object.assign(closure_13);
     const merged1 = Object.assign(settings.settings);
-    closure_12 = obj;
+    closure_13 = obj;
   },
   LOGOUT: function handleLogOut() {
-    const obj = { useSystemTheme: closure_12.useSystemTheme };
-    closure_12 = obj;
+    const obj = { useSystemTheme: closure_13.useSystemTheme };
+    closure_13 = obj;
   },
   LOGIN_SUCCESS: function handleLogInSuccess() {
-    if (null == closure_12) {
-      closure_12 = {};
+    if (null == closure_13) {
+      closure_13 = {};
     }
   },
   REGISTER_SUCCESS: function handleRegisterSuccess() {
-    closure_12.useSystemTheme = SystemThemeState.ON;
+    closure_13.useSystemTheme = SystemThemeState.ON;
   }
 };
 const unsyncedUserSettingsStore = new UnsyncedUserSettingsStore(DispatcherDefault, obj2);

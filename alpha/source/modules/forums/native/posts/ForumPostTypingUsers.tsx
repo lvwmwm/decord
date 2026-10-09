@@ -1,16 +1,16 @@
-// Module ID: 11712
-// Function ID: 11713
+// Module ID: 11648
+// Function ID: 11649
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9261, 11658, 11713, 4810, 1200, 5086, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 9299, 11594, 11649, 4811, 1200, 5087, 2]
 
-// Module 11712 (ForumPostTypingUsers)
+// Module 11648 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4811 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

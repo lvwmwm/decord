@@ -1,27 +1,27 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 12947
+// Function ID: 12948
 // Name: useConjureProjects
-// Dependencies: [32, 19, 5436, 7309, 4705, 2086, 4707, 4899, 13073, 11251, 1126, 3827, 558, 576, 6934, 12359, 12378, 1452, 504, 6932, 2]
+// Dependencies: [32, 19, 5437, 7314, 4707, 2086, 4709, 4900, 12948, 10617, 1126, 3827, 558, 576, 6941, 12296, 11367, 1453, 504, 6939, 2]
 // Exports: describeConjureProjectRow
 
-// Module 17266 (useConjureProjects)
+// Module 12947 (useConjureProjects)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import ConjureUtils from "ConjureUtils" /* 6932 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6934 */;
-import ConjureActivity from "ConjureActivity" /* 12359 */;
-import conjureAppInServer from "conjureAppInServer" /* 12378 */;
+import ConjureUtils from "ConjureUtils" /* 6939 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6941 */;
+import conjureAppInServer from "conjureAppInServer" /* 11367 */;
+import ConjureActivity from "ConjureActivity" /* 12296 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
-import UserProfileStore from "UserProfileStore" /* 7309 */;
-import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
+import UserProfileStore from "UserProfileStore" /* 7314 */;
+import GuildChannelStore from "GuildChannelStore" /* 4707 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import ConjureChatStore from "ConjureChatStore" /* 13073 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import ConjureChatStore from "ConjureChatStore" /* 12948 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(12359).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(12296).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;

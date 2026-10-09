@@ -1,23 +1,23 @@
-// Module ID: 17378
-// Function ID: 17379
+// Module ID: 17526
+// Function ID: 17527
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1085, 21, 5090, 587, 1126, 558, 576, 12185, 4766, 5007, 5101, 5940, 12177, 1264, 17363, 1200, 5005, 6189, 15008, 8555, 1630, 17372, 17379, 17370, 5725, 5730, 5392, 17373, 5086, 1381, 2]
+// Dependencies: [19, 17, 1085, 21, 5091, 587, 1126, 558, 576, 12124, 4768, 5008, 5102, 5941, 12116, 1265, 17511, 1200, 5006, 6191, 15120, 8563, 1631, 17520, 17527, 17518, 5726, 5731, 5393, 17521, 5087, 1382, 2]
 
-// Module 17378 (SpamMessageList)
+// Module 17526 (SpamMessageList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import transitionToChannel from "transitionToChannel" /* 5101 */;
-import useMountEffectDefault from "useMountEffect" /* 5392 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5725 */;
-import MetricEvents from "MetricEvents" /* 5730 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17379 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import transitionToChannel from "transitionToChannel" /* 5102 */;
+import useMountEffectDefault from "useMountEffect" /* 5393 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5726 */;
+import MetricEvents from "MetricEvents" /* 5731 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17527 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let size;
 let tmp3;
-const MessageRequestEmptyDefault = tmp3(17373);
+const MessageRequestEmptyDefault = tmp3(17521);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty, FlatList: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -541,10 +541,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageL
   const tmp2 = closure_11();
   importDefault = tmp2;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  let obj = goToMessageRequestPreview(17372);
+  let obj = goToMessageRequestPreview(17520);
   dependencyMap = obj.useSpamMessageRequestCount();
   const arr = useSortedSpamMessageRequestsDefault();
-  let obj2 = goToMessageRequestPreview(17370);
+  let obj2 = goToMessageRequestPreview(17518);
   const hasSingleMessageRequest = obj2.useListHasSingleSpamMessageRequest();
   useMountEffectDefault(() => {
     const obj = AnalyticsUtilsDefault;
@@ -567,7 +567,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageL
     const tmp14 = closure_6;
     let num = 0;
     const tmp13 = closure_8;
-    const tmp5Result = goToMessageRequestPreview(1381);
+    const tmp5Result = goToMessageRequestPreview(1382);
     if (tmp5Result.isAndroid()) {
       num = bottom;
     }

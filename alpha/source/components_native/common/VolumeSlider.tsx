@@ -1,21 +1,21 @@
-// Module ID: 10868
-// Function ID: 10869
+// Module ID: 11041
+// Function ID: 11042
 // Name: VolumeSlider
-// Dependencies: [109, 19, 17, 5115, 21, 1381, 5090, 558, 576, 587, 4778, 10869, 5249, 1126, 8380, 8204, 2]
+// Dependencies: [109, 19, 17, 5116, 21, 1382, 5091, 558, 576, 587, 4779, 11042, 5250, 1126, 8388, 8212, 2]
 
-// Module 10868 (VolumeSlider)
+// Module 11041 (VolumeSlider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 4778 */;
-import Constants from "Constants" /* 5115 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5249 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8204 */;
-import VoiceXIcon from "VoiceXIcon" /* 10869 */;
+import useToken2 from "useToken" /* 4779 */;
+import Constants from "Constants" /* 5116 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5250 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8212 */;
+import VoiceXIcon from "VoiceXIcon" /* 11042 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import createStyles from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let _require;
 let metroImportAll;
 let metroImportDefault;
 let tmp17;
-const _modDef8380 = tmp17(8380);
+const _modDef8388 = tmp17(8388);
 let closure_3 = ["style", "maxTrackTintColor", "value", "maxVolume", "onValueChange", "onResponderGrant", "accessibilityLabel"];
 const View = react_native.View;
 let closure_6 = Constants.MAX_EMBEDDED_VOLUME_PERCEPTUAL;
@@ -196,8 +196,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VolumeSlider
     cResult[27] = tmp24;
     cResult[28] = tmp26;
     cResult[29] = tmp27;
-    cResult[30] = closure_7(_modDef8380, obj3);
-    const tmp32 = closure_7(_modDef8380, obj3);
+    cResult[30] = closure_7(_modDef8388, obj3);
+    const tmp32 = closure_7(_modDef8388, obj3);
   }
   const items = [tmp15.volumerSlider, tmp8];
   cResult[9] = tmp8;
@@ -249,7 +249,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VolumeSlider
     },
     onResponderGrant
   };
-  const tmp8Result = _modDef8380;
+  const tmp8Result = _modDef8388;
   const tmp10 = View;
   tmp5Result = PerceptualVolumeUtils;
   const tmp9 = closure_8;

@@ -1,12 +1,12 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8592
+// Function ID: 8593
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 558, 576, 8585, 8586, 6842, 2]
+// Dependencies: [19, 558, 576, 8593, 8594, 6849, 2]
 
-// Module 8584 (useAppChannelApplicationOptions)
+// Module 8592 (useAppChannelApplicationOptions)
 import react2 from "react" /* 576 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6842 */;
-import useGuildEmbeddedApplications2 from "useGuildEmbeddedApplications" /* 8585 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6849 */;
+import useGuildEmbeddedApplications2 from "useGuildEmbeddedApplications" /* 8593 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
   const useGuildEmbeddedApplications = useGuildEmbeddedApplications2.useGuildEmbeddedApplications;
   let tmp6;
   useGuildEmbeddedApplications2;
-  const APP_CHANNEL = tmp(8586).EmbeddedSurfaceType.APP_CHANNEL;
+  const APP_CHANNEL = tmp(8594).EmbeddedSurfaceType.APP_CHANNEL;
   if (!tmp4) {
     tmp6 = arg0;
   }

@@ -1,26 +1,26 @@
-// Module ID: 8545
-// Function ID: 8546
+// Module ID: 8553
+// Function ID: 8554
 // Name: EditGuildEventModal
-// Dependencies: [5, 32, 19, 17, 2069, 21, 5090, 587, 558, 576, 1630, 8495, 1893, 8494, 8504, 4788, 1126, 8499, 8546, 8513, 8549, 8622, 8623, 6679, 2]
+// Dependencies: [5, 32, 19, 17, 2070, 21, 5091, 587, 558, 576, 1631, 8503, 1894, 8502, 8512, 4789, 1126, 8507, 8554, 8521, 8557, 8630, 8631, 6686, 2]
 
-// Module 8545 (EditGuildEventModal)
+// Module 8553 (EditGuildEventModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1893 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8494 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8495 */;
-import EntityUtils from "EntityUtils" /* 8499 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8513 */;
-import useGetEventChannelsByType from "useGetEventChannelsByType" /* 8546 */;
-import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 8549 */;
-import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 8622 */;
-import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 8623 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2070 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8502 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8503 */;
+import EntityUtils from "EntityUtils" /* 8507 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8521 */;
+import useGetEventChannelsByType from "useGetEventChannelsByType" /* 8554 */;
+import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 8557 */;
+import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 8630 */;
+import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 8631 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -190,7 +190,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let onClose;
   let right;
   let tmp8;
-  const f98248 = () => {
+  const f98454 = () => {
     obj = KeyboardManagerUtilsAll;
     const result = obj.dismissGlobalKeyboard();
     const tmp3 = first1;
@@ -310,7 +310,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     return items1;
   }), 1)[0];
-  [c6, tmp8] = first1(require("LazyAPIPromise")(f98248), 2);
+  [c6, tmp8] = first1(require("LazyAPIPromise")(f98454), 2);
   constants = {
     guild,
     guildEvent,
@@ -370,7 +370,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     },
     fullscreen: true
   };
-  const tmp7 = first1(require("LazyAPIPromise")(f98248), 2);
+  const tmp7 = first1(require("LazyAPIPromise")(f98454), 2);
   const CHANNEL_SELECTOR = guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR;
   const CHANNEL_SELECTOR2 = guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR;
   obj3[CHANNEL_SELECTOR] = obj4;

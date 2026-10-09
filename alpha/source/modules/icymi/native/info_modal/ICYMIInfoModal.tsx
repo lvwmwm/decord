@@ -1,15 +1,15 @@
-// Module ID: 16710
-// Function ID: 16711
+// Module ID: 16836
+// Function ID: 16837
 // Name: ICYMIInfoModal
-// Dependencies: [19, 21, 558, 576, 16711, 6203, 16712, 1272, 5940, 7079, 1126, 14482, 16720, 16728, 6679, 11213, 14114, 2]
+// Dependencies: [19, 21, 558, 576, 16837, 6205, 16838, 1273, 5941, 7082, 1126, 14578, 16846, 16854, 6686, 10568, 14211, 2]
 
-// Module 16710 (ICYMIInfoModal)
+// Module 16836 (ICYMIInfoModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import NavigatorHeader from "NavigatorHeader" /* 6203 */;
-import StepModal2 from "StepModal" /* 14114 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 16711 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import StepModal2 from "StepModal" /* 14211 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 16837 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
       tmp4 = cResult[2];
       tmp5 = cResult[3];
     }
-    let tmpResult = tmp(6679);
+    let tmpResult = tmp(6686);
     return tmpResult.useNavigatorScreens(tmp4, tmp5);
   }
   const fn = function t() {
@@ -117,7 +117,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
 }) : (function useScreens(extendedOnboarding) {
   extendedOnboarding = extendedOnboarding.extendedOnboarding;
   const skipIntro = extendedOnboarding.skipIntro;
-  let obj = extendedOnboarding(6679);
+  let obj = extendedOnboarding(6686);
   const items = [extendedOnboarding, skipIntro];
   return obj.useNavigatorScreens(() => {
     let headerCloseButton;
@@ -215,7 +215,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIInfoMod
         tmp7 = cResult[5];
       }
       if (extendedOnboarding) {
-        const ICYMIInfoScreens2 = tmp(16711).ICYMIInfoScreens;
+        const ICYMIInfoScreens2 = tmp(16837).ICYMIInfoScreens;
         const tmp11 = skipIntro ? ICYMIInfoScreens2.TOPICS_CLOUD : ICYMIInfoScreens2.DEFAULT;
         if (cResult[8] === tmp6) {
           if (cResult[9] === tmp7) {
@@ -235,7 +235,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIInfoMod
       } else {
         let tmp8;
         if (cResult[6] !== tmp6) {
-          const Modal = tmp(11213).Modal;
+          const Modal = tmp(10568).Modal;
           const tmp10 = <Modal screens={tmp6} initialRouteName={ICYMIInfoModalTypes.ICYMIInfoScreens.DEFAULT} />;
           cResult[6] = tmp6;
           cResult[7] = tmp10;
@@ -246,7 +246,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIInfoMod
         return tmp8;
       }
     }
-    const ICYMIInfoScreens = tmp(16711).ICYMIInfoScreens;
+    const ICYMIInfoScreens = tmp(16837).ICYMIInfoScreens;
     if (extendedOnboarding) {
       let items1;
       if (skipIntro) {
@@ -278,12 +278,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIInfoMod
   let items = [extendedOnboarding, skipIntro];
   if (extendedOnboarding) {
     const obj2 = { screens: tmp, steps: tmp2, initialRouteName: skipIntro ? ICYMIInfoScreens.TOPICS_CLOUD : ICYMIInfoScreens.DEFAULT };
-    const StepModal = tmp4(14114).StepModal;
-    ICYMIInfoScreens = tmp4(16711).ICYMIInfoScreens;
+    const StepModal = tmp4(14211).StepModal;
+    ICYMIInfoScreens = tmp4(16837).ICYMIInfoScreens;
     tmp3Result = tmp3(StepModal, obj2);
   } else {
-    const obj = { screens: tmp, initialRouteName: extendedOnboarding(16711).ICYMIInfoScreens.DEFAULT };
-    const Modal = tmp4(11213).Modal;
+    const obj = { screens: tmp, initialRouteName: extendedOnboarding(16837).ICYMIInfoScreens.DEFAULT };
+    const Modal = tmp4(10568).Modal;
     tmp3Result = tmp3(Modal, obj);
   }
   return tmp3Result;

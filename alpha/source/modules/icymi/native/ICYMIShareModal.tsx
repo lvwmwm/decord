@@ -1,32 +1,32 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16872
+// Function ID: 16873
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 2063, 1085, 10202, 5083, 21, 5090, 587, 558, 576, 8509, 1126, 16747, 4766, 6656, 11599, 11610, 5375, 5940, 11577, 1387, 7358, 7167, 1630, 1496, 1381, 9232, 6203, 6212, 11588, 2]
+// Dependencies: [32, 5, 19, 17, 2064, 1085, 10187, 5084, 21, 5091, 587, 558, 576, 8517, 1126, 16873, 4768, 6663, 11532, 11543, 5376, 5941, 11510, 1388, 7363, 7172, 1631, 1497, 1382, 9270, 6205, 6214, 11521, 2]
 
-// Module 16746 (ICYMIShareModal)
+// Module 16872 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import MessageConstants from "MessageConstants" /* 5083 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
-import ShareEventUtils from "ShareEventUtils" /* 8509 */;
-import HeaderShared from "HeaderShared" /* 9232 */;
-import UserRowConstants from "UserRowConstants" /* 10202 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 11599 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import MessageConstants from "MessageConstants" /* 5084 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6663 */;
+import ShareEventUtils from "ShareEventUtils" /* 8517 */;
+import HeaderShared from "HeaderShared" /* 9270 */;
+import UserRowConstants from "UserRowConstants" /* 10187 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 11532 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj4;
 let tmp7;
 let tmp9;
 let unpackModuleId;
-const SearchableDestinationListDefault = tmp7(11588);
-const ShareChatInputDefault = tmp9(11610);
+const SearchableDestinationListDefault = tmp7(11521);
+const ShareChatInputDefault = tmp9(11543);
 const View = react_native.View;
 const AbortCodes = Constants.AbortCodes;
 const UserRowModes = UserRowConstants.UserRowModes;
@@ -440,7 +440,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
                             }
                             const obj5 = { style: tmp16, children: items };
                             items = [tmp18, tmp22];
-                            const tmp28 = closure_12(View, obj5);
+                            const tmp28 = authStore2(View, obj5);
                             cResult[25] = tmp16;
                             cResult[26] = tmp22;
                             cResult[27] = tmp18;
@@ -535,8 +535,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5375).Button;
-    const tmp14 = closure_12;
+    const Button = tmp7(5376).Button;
+    const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;
     if (!isSending) {
@@ -931,15 +931,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = title(6212).Header;
-  let obj3 = title(1381);
+  const Header = title(6214).Header;
+  let obj3 = title(1382);
   num = 0;
   const tmp9 = closure_12;
   if (!obj3.isIOS()) {
     num = rect.top;
   }
   ({ headerLeftContainer: obj2.headerLeftContainerStyle, headerRightContainer: obj2.headerRightContainerStyle } = tmp6);
-  tmp12Result = tmp12(6203);
+  tmp12Result = tmp12(6205);
   items1 = [tmp11(Header, obj4), , ];
   let obj5 = { rowMode: UserRowModes.TOGGLE, onSelectedDestinationChange: tmp2, originDestination: originDestinationId, insetEnd: sum + nativeDefault.space.PX_96, disableGradient: true, disableStickySections: true };
   let tmp7Result = SearchableDestinationListDefault;

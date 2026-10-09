@@ -1,50 +1,42 @@
 // Module ID: 4274
 // Function ID: 4275
-// Dependencies: [4275, 4276, 4277, 4278, 4279]
+// Dependencies: [2136]
 
 // Module 4274
-import formatDistance from "formatDistance" /* 4275 */;
-import buildFormatLongFn from "buildFormatLongFn" /* 4276 */;
-import formatRelative from "formatRelative" /* 4277 */;
-import date_mod from "module_4278" /* 4278 */;
-import date_mod2 from "module_4279" /* 4279 */;
+import buildLocalizeFn from "buildLocalizeFn" /* 2136 */;
 
-let tmp11;
-let tmp3;
-let tmp5;
-let tmp7;
-let tmp9;
-if (!formatDistance) {
-  tmp3 = { default: formatDistance };
-  const obj = { default: formatDistance };
+let obj;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+if (!buildLocalizeFn) {
+  obj = { default: buildLocalizeFn };
+  const obj2 = { default: buildLocalizeFn };
 } else {
-  tmp3 = formatDistance;
+  obj = buildLocalizeFn;
 }
-if (!buildFormatLongFn) {
-  tmp5 = { default: buildFormatLongFn };
-  const obj2 = { default: buildFormatLongFn };
-} else {
-  tmp5 = buildFormatLongFn;
-}
-if (!formatRelative) {
-  tmp7 = { default: formatRelative };
-  const obj3 = { default: formatRelative };
-} else {
-  tmp7 = formatRelative;
-}
-let date = date_mod2;
-if (!date) {
-  tmp9 = { default: date };
-  const obj4 = { default: date };
-} else {
-  tmp9 = date;
-}
-date = date_mod2;
-if (!date) {
-  tmp11 = { default: date };
-  const obj5 = { default: date };
-} else {
-  tmp11 = date;
-}
+const date = {
+  ordinalNumber(arg0, arg1) {
+    return String(arg0);
+  },
+  era: obj.default(obj3),
+  quarter: obj.default(obj4),
+  month: obj.default(obj5),
+  day: obj.default(obj6),
+  dayPeriod: obj.default(obj7)
+};
+obj3 = { values: { narrow: ["\u00CE", "D"], abbreviated: ["\u00CE.d.C.", "D.C."], wide: ["\u00CEnainte de Cristos", "Dup\u0103 Cristos"] }, defaultWidth: "wide" };
+obj4 = {
+  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["T1", "T2", "T3", "T4"], wide: ["primul trimestru", "al doilea trimestru", "al treilea trimestru", "al patrulea trimestru"] },
+  defaultWidth: "wide",
+  argumentCallback(arg0) {
+    return arg0 - 1;
+  }
+};
+obj5 = { values: { narrow: ["I", "F", "M", "A", "M", "I", "I", "A", "S", "O", "N", "D"], abbreviated: ["ian", "feb", "mar", "apr", "mai", "iun", "iul", "aug", "sep", "oct", "noi", "dec"], wide: ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"] }, defaultWidth: "wide" };
+obj6 = { values: { narrow: ["d", "l", "m", "m", "j", "v", "s"], short: ["du", "lu", "ma", "mi", "jo", "vi", "s\u00E2"], abbreviated: ["dum", "lun", "mar", "mie", "joi", "vin", "s\u00E2m"], wide: ["duminic\u0103", "luni", "mar\u021Bi", "miercuri", "joi", "vineri", "s\u00E2mb\u0103t\u0103"] }, defaultWidth: "wide" };
+obj7 = { values: { narrow: { am: "a", pm: "p", midnight: "mn", noon: "ami", morning: "dim", afternoon: "da", evening: "s", night: "n" }, abbreviated: { am: "AM", pm: "PM", midnight: "miezul nop\u021Bii", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" }, wide: { am: "a.m.", pm: "p.m.", midnight: "miezul nop\u021Bii", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "a", pm: "p", midnight: "mn", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" }, abbreviated: { am: "AM", pm: "PM", midnight: "miezul nop\u021Bii", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" }, wide: { am: "a.m.", pm: "p.m.", midnight: "miezul nop\u021Bii", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" } }, defaultFormattingWidth: "wide" };
 
-export default { code: "ru", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
+export default date;

@@ -1,19 +1,19 @@
 // Module ID: 1205
 // Function ID: 1206
 // Name: ThemeStore
-// Dependencies: [1206, 1207, 1243, 1208, 1095, 1085, 1242, 1249, 14219, 504, 2045, 584, 2]
+// Dependencies: [1206, 1207, 1244, 1208, 1095, 1085, 1243, 1250, 14315, 504, 2046, 584, 2]
 
 // Module 1205 (ThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1242 */;
-import resolveThemeDefault from "resolveTheme" /* 1249 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2045 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1243 */;
+import resolveThemeDefault from "resolveTheme" /* 1250 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2046 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ThemeConstants from "ThemeConstants" /* 1208 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let THEME_PREFERENCES_MOBILE;
 let THEME_PREFERENCES_WEB_REFRESH;
 let metroRequire;
 let tmp;
-const updateBackgroundColorDefault = tmp(14219);
+const updateBackgroundColorDefault = tmp(14315);
 function handleThemeChange() {
   const tmp3 = resolveThemeDefault(systemTheme, THEME_PREFERENCES_MOBILE, c15);
   let flag = tmp3 !== closure_13;
@@ -42,8 +42,8 @@ let SET = obj.UNSET;
 let tmp3 = getSystemThemeDefault();
 let systemTheme = tmp3;
 let closure_13 = THEME_PREFERENCES_MOBILE[tmp3];
-const authStore2 = {};
-const authStore3 = false;
+const authStore3 = {};
+const authStore4 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class ThemeStore extends PersistedStore {
   initialize(theme) {
@@ -163,7 +163,7 @@ let obj2 = {
       const tmp2 = importDefault;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(14219)(closure_13);
+        tmp2(14315)(closure_13);
         flag = true;
       }
       tmp = flag;

@@ -1,67 +1,55 @@
 // Module ID: 9864
 // Function ID: 9865
-// Dependencies: [41, 42, 93, 95, 98, 9865, 9774, 9778]
+// Dependencies: [41, 42, 9860, 9791]
 
 // Module 9864
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9774 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9778 */;
-import _mod9865 from "module_9865" /* 9865 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9791 */;
+import NUMBER from "NUMBER" /* 9860 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class NLTimeUnitWithinFormatParser {
+const regExp = new RegExp("([0-9\uFF10-\uFF19]{4}[\\/|\\\uFF0F])?([0-1\uFF10-\uFF11]{0,1}[0-9\uFF10-\uFF19]{1})(?:[\\/|\\\uFF0F]([0-3\uFF10-\uFF13]{0,1}[0-9\uFF10-\uFF19]{1}))", "i");
+class JPSlashDateFormatParser {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, NLTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(NLTimeUnitWithinFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, JPSlashDateFormatParser);
   }
 }
-_inherits(NLTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const regExp = new RegExp("(?:binnen|in|binnen de|voor)\\s*(" + _mod9865.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+  key: "pattern",
+  value: function pattern() {
     return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod9865.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    key: "extract",
+    value: function extract(createParsingComponents, arg1) {
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const parsed = parseInt(NUMBER.toHankaku(arg1[2]));
+      const parsed1 = parseInt(NUMBER.toHankaku(arg1[3]));
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          if (parsed1 >= 1) {
+            if (parsed1 <= 31) {
+              parsingComponents.assign("day", parsed1);
+              parsingComponents.assign("month", parsed);
+              if (arg1[1]) {
+                const _parseInt = parseInt;
+                const parsed2 = parseInt(tmp(9860).toHankaku(arg1[1]));
+                parsingComponents.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
+              } else {
+                parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.reference.instant, parsed1, parsed));
+              }
+              return parsingComponents;
+            }
+          }
+          return null;
+        }
+      }
+      return null;
     }
   }
 ];
 
-export default _createClass(NLTimeUnitWithinFormatParser, items);
+export default _createClass(JPSlashDateFormatParser, items);

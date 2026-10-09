@@ -1,22 +1,22 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8033
+// Function ID: 8034
 // Name: RoleSubscriptionPurchaseSystemMessage
-// Dependencies: [2063, 2086, 1085, 5623, 7951, 7989, 7990, 7983, 1417, 1414, 7953, 1126, 7955, 2]
+// Dependencies: [2064, 2086, 1085, 5624, 7960, 7997, 7998, 7991, 1418, 1415, 7962, 1126, 7964, 2]
 // Exports: createRoleSubscriptionPurchaseSystemMessage
 
-// Module 8025 (RoleSubscriptionPurchaseSystemMessage)
+// Module 8033 (RoleSubscriptionPurchaseSystemMessage)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import useMessageAuthor from "useMessageAuthor" /* 5623 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7951 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7953 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7955 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7983 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7989 */;
-import transformSticker2 from "transformSticker" /* 7990 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
+import useMessageAuthor from "useMessageAuthor" /* 5624 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7960 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7962 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7964 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 7991 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 7997 */;
+import transformSticker2 from "transformSticker" /* 7998 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import size from "module_2" /* 2 */;
 

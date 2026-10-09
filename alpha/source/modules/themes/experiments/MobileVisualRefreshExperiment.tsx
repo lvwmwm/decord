@@ -1,12 +1,12 @@
-// Module ID: 11912
-// Function ID: 11913
+// Module ID: 11849
+// Function ID: 11850
 // Name: MobileVisualRefreshExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1454, 558, 576, 2]
 // Exports: isMobileVisualRefreshEnabled, resolveRefreshToken
 
-// Module 11912 (MobileVisualRefreshExperiment)
+// Module 11849 (MobileVisualRefreshExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

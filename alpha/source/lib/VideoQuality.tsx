@@ -1,19 +1,19 @@
-// Module ID: 5289
-// Function ID: 5290
+// Module ID: 5290
+// Function ID: 5291
 // Name: VideoQuality
-// Dependencies: [5252, 5138, 5279, 5119, 5273, 5135, 5290, 12, 1381, 11, 2081, 2]
+// Dependencies: [5253, 5139, 5280, 5120, 5274, 5136, 5291, 12, 1382, 11, 2081, 2]
 
-// Module 5289 (VideoQuality)
+// Module 5290 (VideoQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import TimeUtils from "TimeUtils" /* 5119 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
-import Histogram from "Histogram" /* 5273 */;
-import NetworkQualityDefault from "NetworkQuality" /* 5279 */;
-import VideoQualityStats from "VideoQualityStats" /* 5290 */;
-import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 5252 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5138 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import TimeUtils from "TimeUtils" /* 5120 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5136 */;
+import Histogram from "Histogram" /* 5274 */;
+import NetworkQualityDefault from "NetworkQuality" /* 5280 */;
+import VideoQualityStats from "VideoQualityStats" /* 5291 */;
+import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 5253 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5139 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, map, map1, set, vmafHistogram;
@@ -284,23 +284,23 @@ class VideoQuality extends TypedEventEmitter {
         if (num == null) {
           num = 0;
         }
-        num2 = value.get(tmp2(5290).CodecTypes.H265);
+        num2 = value.get(tmp2(5291).CodecTypes.H265);
         if (num2 == null) {
           num2 = 0;
         }
-        num3 = value.get(tmp2(5290).CodecTypes.VP8);
+        num3 = value.get(tmp2(5291).CodecTypes.VP8);
         if (num3 == null) {
           num3 = 0;
         }
-        num4 = value.get(tmp2(5290).CodecTypes.VP9);
+        num4 = value.get(tmp2(5291).CodecTypes.VP9);
         if (num4 == null) {
           num4 = 0;
         }
-        num5 = value.get(tmp2(5290).CodecTypes.AV1);
+        num5 = value.get(tmp2(5291).CodecTypes.AV1);
         if (num5 == null) {
           num5 = 0;
         }
-        num6 = value.get(tmp2(5290).CodecTypes.UNKNOWN);
+        num6 = value.get(tmp2(5291).CodecTypes.UNKNOWN);
         if (num6 == null) {
           num6 = 0;
         }
@@ -318,23 +318,23 @@ class VideoQuality extends TypedEventEmitter {
     if (num8 == null) {
       num8 = 0;
     }
-    num9 = map.get(tmp7(5290).CodecTypes.H265);
+    num9 = map.get(tmp7(5291).CodecTypes.H265);
     if (num9 == null) {
       num9 = 0;
     }
-    num10 = map.get(tmp7(5290).CodecTypes.VP8);
+    num10 = map.get(tmp7(5291).CodecTypes.VP8);
     if (num10 == null) {
       num10 = 0;
     }
-    num11 = map.get(tmp7(5290).CodecTypes.VP9);
+    num11 = map.get(tmp7(5291).CodecTypes.VP9);
     if (num11 == null) {
       num11 = 0;
     }
-    num12 = map.get(tmp7(5290).CodecTypes.AV1);
+    num12 = map.get(tmp7(5291).CodecTypes.AV1);
     if (num12 == null) {
       num12 = 0;
     }
-    num13 = map.get(tmp7(5290).CodecTypes.UNKNOWN);
+    num13 = map.get(tmp7(5291).CodecTypes.UNKNOWN);
     if (num13 == null) {
       num13 = 0;
     }
@@ -1332,64 +1332,67 @@ class VideoQuality extends TypedEventEmitter {
     VideoBackgroundStore = streamParameters;
     transport = transport.transport;
     let tmp = videoEntropy;
-    let obj = videoEntropy(1381);
+    let obj = videoEntropy(1382);
     let num = 1;
     if (!obj.isWeb()) {
       const receiverReports = transport.receiverReports;
-      let num2;
+      let mapped;
+      const _Set = Set;
       if (receiverReports != null) {
-        num2 = receiverReports.length;
+        let found = receiverReports.filter((item) => null != self.outboundStats[item.ssrc]);
+        mapped = found.map((id) => id.id);
       }
-      if (num2 == null) {
-        num2 = 0;
-      }
-      num = num2;
+      let self2 = this;
+      const self3 = this;
+      let tmp6 = mapped;
+      const _Set1 = new _Set(mapped);
+      let tmp8 = _Set1;
+      num = _Set1.size;
     }
     set = new Set();
     const set1 = new Set();
     self.updateSendState({ receivers: num });
     let value = self.cameraDuration.value;
     const cameraDuration = self.cameraDuration;
-    let tmp7 = self.connection.context === tmp(5135).MediaEngineContextTypes.DEFAULT;
-    if (tmp7) {
-      let tmp8 = null;
-      tmp7 = null != transport.camera;
+    let tmp12 = self.connection.context === tmp(5136).MediaEngineContextTypes.DEFAULT;
+    if (tmp12) {
+      let tmp13 = null;
+      tmp12 = null != transport.camera;
     }
-    cameraDuration.value = tmp7;
+    cameraDuration.value = tmp12;
     const cameraOpportunityDuration = self.cameraOpportunityDuration;
-    let tmp9 = self.connection.context === tmp(5135).MediaEngineContextTypes.DEFAULT;
-    if (tmp9) {
-      let tmp10 = null;
-      tmp9 = null != transport.camera;
+    let tmp14 = self.connection.context === tmp(5136).MediaEngineContextTypes.DEFAULT;
+    if (tmp14) {
+      let tmp15 = null;
+      tmp14 = null != transport.camera;
     }
-    if (tmp9) {
-      tmp9 = self.callUserIdsCount > 1;
+    if (tmp14) {
+      tmp14 = self.callUserIdsCount > 1;
     }
-    cameraOpportunityDuration.value = tmp9;
+    cameraOpportunityDuration.value = tmp14;
     const cameraSendDuration = self.cameraSendDuration;
-    let tmp11 = self.connection.context === tmp(5135).MediaEngineContextTypes.DEFAULT;
-    if (tmp11) {
-      tmp11 = null != transport.camera;
+    let tmp16 = self.connection.context === tmp(5136).MediaEngineContextTypes.DEFAULT;
+    if (tmp16) {
+      tmp16 = null != transport.camera;
     }
-    if (tmp11) {
-      tmp11 = num > 0;
+    if (tmp16) {
+      let num2 = 0;
+      tmp16 = num > 0;
     }
-    cameraSendDuration.value = tmp11;
-    let tmp13 = self.cameraDuration.value && !value;
-    if (tmp13) {
+    cameraSendDuration.value = tmp16;
+    const tmp18 = self.cameraDuration.value && !value;
+    if (tmp18) {
       self.cameraToggles = self.cameraToggles + 1;
     }
     const videoBackgroundEnabledDuration = self.videoBackgroundEnabledDuration;
-    let liveBackgroundEnabled = self.connection.context === tmp(5135).MediaEngineContextTypes.DEFAULT;
+    let liveBackgroundEnabled = self.connection.context === tmp(5136).MediaEngineContextTypes.DEFAULT;
     if (liveBackgroundEnabled) {
       liveBackgroundEnabled = null != transport.camera;
     }
     if (liveBackgroundEnabled) {
-      let tmp15 = VideoBackgroundStore;
       liveBackgroundEnabled = VideoBackgroundStore.liveBackgroundEnabled;
     }
     videoBackgroundEnabledDuration.value = liveBackgroundEnabled;
-    let tmp16 = importDefault;
     const obj2 = _modDef12;
     let closure_7 = obj2.max(streamParameters.map((quality) => quality.quality));
     const outbound = transport.rtp.outbound;
@@ -1409,15 +1412,15 @@ class VideoQuality extends TypedEventEmitter {
       videoEntropy = first.videoEntropy;
     }
     const outbound1 = transport.rtp.outbound;
-    let found = outbound1.filter((type) => "video" === type.type);
-    const item = found.forEach(function(ssrc) {
+    const found1 = outbound1.filter((type) => "video" === type.type);
+    const item = found1.forEach(function(ssrc) {
       if (null != ssrc) {
         ssrc = ssrc.ssrc;
         let obj = self.outboundStats[ssrc];
         if (null == obj) {
           self = this;
           const self2 = this;
-          const outboundStats = new VideoQualityStats.OutboundStats(tmp60.timestampProducer);
+          const outboundStats = new VideoQualityStats.OutboundStats(tmp62.timestampProducer);
           self.outboundStats[ssrc] = outboundStats;
           obj = outboundStats;
         }
@@ -1439,13 +1442,13 @@ class VideoQuality extends TypedEventEmitter {
         }
         const tmp10 = null != videoEntropy && tmp9 >= 0;
         if (tmp10) {
-          videoEntropy = tmp60.videoEntropy;
+          videoEntropy = tmp62.videoEntropy;
           videoEntropy.addSample(videoEntropy);
         }
         const found = streamParameters.find((ssrc) => ssrc.ssrc === ssrc);
         let flag = true;
         if (self.connection.context === BaseConnectionEvent.MediaEngineContextTypes.STREAM) {
-          const connection = tmp60.connection;
+          const connection = tmp62.connection;
           let num5 = connection.getRemoteVideoSinkWants(ssrc);
           let tmp16 = null != num5 && 0 !== num5;
           if (!tmp16) {
@@ -1456,7 +1459,7 @@ class VideoQuality extends TypedEventEmitter {
             tmp16 = quality !== closure_7;
           }
           if (!tmp16) {
-            const connection2 = tmp60.connection;
+            const connection2 = tmp62.connection;
             num5 = connection2.getRemoteVideoSinkWants("any");
           }
           if (num5 == null) {
@@ -1478,83 +1481,95 @@ class VideoQuality extends TypedEventEmitter {
                 if (null == screenshare.hybridGdiBitBltFramesUnique) {
                   if (null == screenshare.hybridGdiPrintWindowFramesUnique) {
                     if (null == screenshare.hybridVideohookFramesUnique) {
-                      let sum4;
                       if (null == screenshare.hybridGraphicsCaptureFramesUnique) {
-                        let num8 = screenshare.screenshareFrames;
-                        if (num8 == null) {
-                          num8 = 0;
+                        let sum5;
+                        if (null == screenshare.hybridExternalFramesUnique) {
+                          let num8 = screenshare.screenshareFrames;
+                          if (num8 == null) {
+                            num8 = 0;
+                          }
+                          let num9 = screenshare.videohookFrames;
+                          if (num9 == null) {
+                            num9 = 0;
+                          }
+                          let num10 = screenshare.quartzFrames;
+                          const sum = num8 + num9;
+                          if (num10 == null) {
+                            num10 = 0;
+                          }
+                          let num11 = screenshare.screenCaptureKitFrames;
+                          const sum1 = sum + num10;
+                          if (num11 == null) {
+                            num11 = 0;
+                          }
+                          let num12 = screenshare.x11Frames;
+                          const sum2 = sum1 + num11;
+                          if (num12 == null) {
+                            num12 = 0;
+                          }
+                          let num13 = screenshare.pipewireFrames;
+                          const sum3 = sum2 + num12;
+                          if (num13 == null) {
+                            num13 = 0;
+                          }
+                          let num14 = screenshare.activityFrames;
+                          const sum4 = sum3 + num13;
+                          if (num14 == null) {
+                            num14 = 0;
+                          }
+                          sum5 = sum4 + num14;
                         }
-                        let num9 = screenshare.videohookFrames;
-                        if (num9 == null) {
-                          num9 = 0;
-                        }
-                        let num10 = screenshare.quartzFrames;
-                        const sum = num8 + num9;
-                        if (num10 == null) {
-                          num10 = 0;
-                        }
-                        let num11 = screenshare.screenCaptureKitFrames;
-                        const sum1 = sum + num10;
-                        if (num11 == null) {
-                          num11 = 0;
-                        }
-                        let num12 = screenshare.x11Frames;
-                        const sum2 = sum1 + num11;
-                        if (num12 == null) {
-                          num12 = 0;
-                        }
-                        let num13 = screenshare.pipewireFrames;
-                        const sum3 = sum2 + num12;
-                        if (num13 == null) {
-                          num13 = 0;
-                        }
-                        sum4 = sum3 + num13;
+                        framesCodec = sum5;
                       }
-                      framesCodec = sum4;
                     }
                   }
                 }
               }
-              let num14 = screenshare.hybridDxgiFramesUnique;
-              if (num14 == null) {
-                num14 = 0;
-              }
-              let num15 = screenshare.hybridGdiBitBltFramesUnique;
+              let num15 = screenshare.hybridDxgiFramesUnique;
               if (num15 == null) {
                 num15 = 0;
               }
-              let num16 = screenshare.hybridGdiPrintWindowFramesUnique;
-              const sum5 = num14 + num15;
+              let num16 = screenshare.hybridGdiBitBltFramesUnique;
               if (num16 == null) {
                 num16 = 0;
               }
-              let num17 = screenshare.hybridVideohookFramesUnique;
-              const sum6 = sum5 + num16;
+              let num17 = screenshare.hybridGdiPrintWindowFramesUnique;
+              const sum6 = num15 + num16;
               if (num17 == null) {
                 num17 = 0;
               }
-              let num18 = screenshare.hybridGraphicsCaptureFramesUnique;
+              let num18 = screenshare.hybridVideohookFramesUnique;
               const sum7 = sum6 + num17;
               if (num18 == null) {
                 num18 = 0;
               }
-              sum4 = sum7 + num18;
+              let num19 = screenshare.hybridGraphicsCaptureFramesUnique;
+              const sum8 = sum7 + num18;
+              if (num19 == null) {
+                num19 = 0;
+              }
+              let num20 = screenshare.hybridExternalFramesUnique;
+              const sum9 = sum8 + num19;
+              if (num20 == null) {
+                num20 = 0;
+              }
+              sum5 = sum9 + num20;
             }
             parseOutboundStatsResult.screenshareFramesUnique = framesCodec;
           }
           const result = obj.appendAndIncrementStats(parseOutboundStatsResult);
-          let tmp38 = null != ssrc.minResolutionWidth && ssrc.minResolutionWidth > 0;
-          if (tmp38) {
-            tmp38 = null == obj.minWidth || ssrc.minResolutionWidth < obj.minWidth;
+          let tmp40 = null != ssrc.minResolutionWidth && ssrc.minResolutionWidth > 0;
+          if (tmp40) {
+            tmp40 = null == obj.minWidth || ssrc.minResolutionWidth < obj.minWidth;
           }
-          if (tmp38) {
+          if (tmp40) {
             obj.minWidth = ssrc.minResolutionWidth;
           }
-          let tmp40 = null != ssrc.minResolutionHeight && ssrc.minResolutionHeight > 0;
-          if (tmp40) {
-            tmp40 = null == obj.minHeight || ssrc.minResolutionHeight < obj.minHeight;
+          let tmp42 = null != ssrc.minResolutionHeight && ssrc.minResolutionHeight > 0;
+          if (tmp42) {
+            tmp42 = null == obj.minHeight || ssrc.minResolutionHeight < obj.minHeight;
           }
-          if (tmp40) {
+          if (tmp42) {
             obj.minHeight = ssrc.minResolutionHeight;
           }
           if (obj.encoderCodec !== VideoQualityStats.CodecTypes.UNKNOWN) {
@@ -1571,23 +1586,23 @@ class VideoQuality extends TypedEventEmitter {
           }
           let bitrateTarget = ssrc.bitrateTarget;
           if (bitrateTarget == null) {
-            let num21 = transport.availableOutgoingBitrate;
+            let num23 = transport.availableOutgoingBitrate;
             const _Math2 = Math;
-            if (num21 == null) {
-              num21 = 0;
+            if (num23 == null) {
+              num23 = 0;
             }
-            let num22 = maxBitrate;
+            let num24 = maxBitrate;
             if (maxBitrate == null) {
-              num22 = 0;
+              num24 = 0;
             }
-            bitrateTarget = min(num21, num22);
+            bitrateTarget = min(num23, num24);
           }
           appendTargetRates(maxFrameRate, bitrateTarget, maxBitrate, transport.availableOutgoingBitrate);
-          let num23 = ssrc.averageEncodeTime;
-          if (num23 == null) {
-            num23 = 0;
+          let num25 = ssrc.averageEncodeTime;
+          if (num25 == null) {
+            num25 = 0;
           }
-          obj.averageEncodeTime = num23;
+          obj.averageEncodeTime = num25;
           let prop = ssrc.framesDroppedRateLimiter;
           if (prop == null) {
             prop = null;
@@ -1609,31 +1624,31 @@ class VideoQuality extends TypedEventEmitter {
           }
           obj.framesDroppedEncoder = framesDroppedEncoder;
           let flag2 = ssrc.hqSimulcastStreamEncoded;
-          const hqSimulcastStreamEncoded = tmp60.hqSimulcastStreamEncoded;
+          const hqSimulcastStreamEncoded = tmp62.hqSimulcastStreamEncoded;
           if (flag2 == null) {
             flag2 = false;
           }
           hqSimulcastStreamEncoded.value = flag2;
           let flag3 = ssrc.lqSimulcastStreamEncoded;
-          const lqSimulcastStreamEncoded = tmp60.lqSimulcastStreamEncoded;
+          const lqSimulcastStreamEncoded = tmp62.lqSimulcastStreamEncoded;
           if (flag3 == null) {
             flag3 = false;
           }
           lqSimulcastStreamEncoded.value = flag3;
-          let value = tmp60.hqSimulcastStreamEncoded.value;
-          const bothSimulcastStreamsEncoded = tmp60.bothSimulcastStreamsEncoded;
+          let value = tmp62.hqSimulcastStreamEncoded.value;
+          const bothSimulcastStreamsEncoded = tmp62.bothSimulcastStreamsEncoded;
           if (value) {
-            value = tmp60.lqSimulcastStreamEncoded.value;
+            value = tmp62.lqSimulcastStreamEncoded.value;
           }
           bothSimulcastStreamsEncoded.value = value;
           let flag4 = ssrc.bandwidthLimitedResolution;
-          const bandwidthLimitedResolution = tmp60.bandwidthLimitedResolution;
+          const bandwidthLimitedResolution = tmp62.bandwidthLimitedResolution;
           if (flag4 == null) {
             flag4 = false;
           }
           bandwidthLimitedResolution.value = flag4;
           let flag5 = ssrc.bandwidthLimitedFrameRate;
-          const bandwidthLimitedFramerate = tmp60.bandwidthLimitedFramerate;
+          const bandwidthLimitedFramerate = tmp62.bandwidthLimitedFramerate;
           if (flag5 == null) {
             flag5 = false;
           }
@@ -1642,8 +1657,8 @@ class VideoQuality extends TypedEventEmitter {
       }
     });
     if (!self.paused.value) {
-      const tmp16Result = _modDef12;
-      const item1 = tmp16Result.forEach(transport.rtp.inbound, function(arr, arg1) {
+      const tmp21Result = _modDef12;
+      const item1 = tmp21Result.forEach(transport.rtp.inbound, function(arr, arg1) {
         const found = arr.find((type) => "video" === type.type);
         if (null != found) {
           let obj = self.inboundStats[arg1];
@@ -1689,8 +1704,8 @@ class VideoQuality extends TypedEventEmitter {
         }
       });
     }
-    const tmp21 = 0 !== set.size && 0 !== set1.size;
-    if (tmp21) {
+    const tmp26 = 0 !== set.size && 0 !== set1.size;
+    if (tmp26) {
       const tmpResult = tmp(2081);
       if (tmpResult.areSetsEqual(set, set1)) {
         self.symmetricCodecUpdates = self.symmetricCodecUpdates + 1;

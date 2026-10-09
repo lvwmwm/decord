@@ -1,13 +1,13 @@
-// Module ID: 16137
-// Function ID: 16138
+// Module ID: 16253
+// Function ID: 16254
 // Name: useIsNotifSettingDisabled
-// Dependencies: [16128, 558, 576, 16130, 16129, 504, 1126, 2891, 2]
+// Dependencies: [16244, 558, 576, 16246, 16245, 504, 1126, 2891, 2]
 
-// Module 16137 (useIsNotifSettingDisabled)
+// Module 16253 (useIsNotifSettingDisabled)
 import _modDef2891 from "module_2891" /* 2891 */;
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 16129 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 16130 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 16128 */;
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 16245 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 16246 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 16244 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

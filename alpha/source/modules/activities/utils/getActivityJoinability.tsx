@@ -1,19 +1,19 @@
-// Module ID: 13025
-// Function ID: 13026
+// Module ID: 13107
+// Function ID: 13108
 // Name: getActivityJoinability
-// Dependencies: [1085, 11389, 11386, 10665, 10658, 6999, 13026, 1381, 11383, 11384, 11385, 2]
+// Dependencies: [1085, 10762, 10759, 10880, 10803, 7006, 13108, 1382, 10756, 10757, 10758, 2]
 // Exports: default
 
-// Module 13025 (getActivityJoinability)
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import hasFlagDefault from "hasFlag" /* 6999 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 10658 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10665 */;
-import _slicedToArray from "_slicedToArray" /* 11383 */;
-import hasPartySize from "hasPartySize" /* 11384 */;
-import getIsInParty from "getIsInParty" /* 11386 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11389 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 13026 */;
+// Module 13107 (getActivityJoinability)
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import hasFlagDefault from "hasFlag" /* 7006 */;
+import _slicedToArray from "_slicedToArray" /* 10756 */;
+import hasPartySize from "hasPartySize" /* 10757 */;
+import getIsInParty from "getIsInParty" /* 10759 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 10762 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 10803 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10880 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 13108 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ export default function getActivityJoinability(arg0) {
       const obj4 = hasPartySize;
       const tmp27 = require;
       if (obj4.hasPartySize(partySize)) {
-        const tmp27Result = tmp27(11385);
+        const tmp27Result = tmp27(10758);
         if (!tmp27Result.isPartyFull(partySize)) {
           const tmp30 = importDefault;
           const tmp31 = constants;
@@ -99,7 +99,7 @@ export default function getActivityJoinability(arg0) {
               return obj.CAN_JOIN;
             }
           }
-          if (tmp30(6999)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
+          if (tmp30(7006)(activity, tmp31.PARTY_PRIVACY_VOICE_CHANNEL)) {
             const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
             if (null != channel) {
               if (VoiceStateStore.isInChannel(channel.id, user.id)) {

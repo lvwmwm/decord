@@ -1,36 +1,37 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16656
+// Function ID: 16657
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 6082, 2086, 4899, 5968, 16525, 16530, 16522, 21, 5090, 587, 558, 576, 4778, 504, 6161, 5374, 4927, 1103, 6753, 4810, 4787, 6164, 8137, 16534, 16537, 12398, 16544, 5055, 6102, 6166, 16527, 16545, 2]
+// Dependencies: [19, 5080, 6084, 2086, 4900, 5970, 16648, 16653, 16645, 21, 5091, 587, 558, 576, 4779, 504, 6165, 5375, 4928, 1103, 6760, 4811, 4788, 6163, 8145, 16657, 16660, 12316, 16667, 5056, 6104, 6168, 16650, 16668, 2]
 
-// Module 16533 (GuildsBarGuildFolder)
+// Module 16656 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import useToken2 from "useToken" /* 4778 */;
-import native from "native" /* 4787 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import ColorUtils from "ColorUtils" /* 4927 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import spring from "spring" /* 5374 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 5968 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import NativeViewDefault from "NativeView" /* 6166 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6753 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8137 */;
-import ListUtils from "ListUtils" /* 12398 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16527 */;
+import useToken2 from "useToken" /* 4779 */;
+import native from "native" /* 4788 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import ColorUtils from "ColorUtils" /* 4928 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import spring from "spring" /* 5375 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 5970 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import NativeViewDefault from "NativeView" /* 6168 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6760 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8145 */;
+import ListUtils from "ListUtils" /* 12316 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 16650 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import GuildReadStateStore_mod from "GuildReadStateStore" /* 6084 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16525 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 16530 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 16522 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16648 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 16653 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 16645 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,18 +40,18 @@ const SortedGuildStore = SortedGuildStore2;
 let dependencyMap, set;
 
 let c10;
-let c9;
 let closure_12;
 let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
+let closure_18;
 let map1;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const GuildIcon = tmp(6161);
-const GuildIconDefault = tmp4(6161);
+const GuildIcon = tmp(6165);
+const GuildIconDefault = tmp4(6165);
 function getItemKey(type) {
   return type.type;
 }
@@ -59,12 +60,12 @@ function renderGuildFolderContent(arg0, type, state, cleanUp) {
   let obj3;
   type = type.type;
   if ("icon" === type) {
-    const obj2 = { fromTop: true, cleanUp, state, children: closure_16(closure_29, obj3) };
+    const obj2 = { fromTop: true, cleanUp, state, children: closure_17(closure_30, obj3) };
     obj3 = { item: type };
-    return closure_16(closure_27, obj2, arg0);
+    return closure_17(closure_28, obj2, arg0);
   } else if ("preview" === type) {
-    let tmp = closure_16;
-    let tmp2 = closure_27;
+    let tmp = closure_17;
+    let tmp2 = closure_28;
     let obj = {
       cleanUp,
       state,
@@ -84,25 +85,26 @@ function renderGuildFolderContent(arg0, type, state, cleanUp) {
             tmp2 = null;
             if (null != tmp) {
               const obj = { guildId, selected: guildId === type.selectedGuildId, position: tmp };
-              tmp2 = authStore4(closure_19, obj, guildId);
+              tmp2 = closure_17(closure_20, obj, guildId);
             }
           }
           return tmp2;
         })
     };
     guilds = type.guilds;
-    return closure_16(closure_27, obj, arg0);
+    return closure_17(closure_28, obj, arg0);
   }
 }
+let GuildReadStateStore = GuildReadStateStore_mod;
 const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
-({ useItemDragState: c9, useFolderBGHeightOffset: c10 } = GuildsBarDnDStore);
+({ useItemDragState: c10, useFolderBGHeightOffset: unpackModuleId } = GuildsBarDnDStore);
 let GuildsBarConstants = GuildsBarConstants_mod2;
-({ DEFAULT_FOLDER_COLOR: unpackModuleId, isDefaultFolderColor: closure_12, normalizeFolderColor: map1 } = GuildsBarConstants);
+({ DEFAULT_FOLDER_COLOR: closure_12, isDefaultFolderColor: map1, normalizeFolderColor: closure_14 } = GuildsBarConstants);
 GuildsBarConstants = GuildsBarConstants_mod2;
-({ TRANSITION_PHYSICS: closure_14, FOLDER_SPRING_PHYSICS: closure_15 } = GuildsBarConstants);
+({ TRANSITION_PHYSICS: closure_15, FOLDER_SPRING_PHYSICS: closure_16 } = GuildsBarConstants);
 let Fragment = Fragment_mod;
-({ jsx: closure_16, jsxs: closure_17 } = Fragment);
-let closure_18 = createStyles.createStyles(() => {
+({ jsx: closure_17, jsxs: closure_18 } = Fragment);
+let closure_19 = createStyles.createStyles(() => {
   let rect;
   let num = arg0;
   if (arg0 === undefined) {
@@ -119,7 +121,7 @@ let closure_18 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGuildIcon(guildId) {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGuildIcon(guildId) {
   let first;
   let guildPreview3;
   let position;
@@ -129,8 +131,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGu
   const cResult = obj.c(12);
   guildId = guildId.guildId;
   ({ position, selected } = guildId);
-  const obj2 = guildId(4778);
-  const tmp5 = closure_18(obj2.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE));
+  const obj2 = guildId(4779);
+  const tmp5 = closure_19(obj2.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE));
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
     cResult[0] = items;
@@ -139,7 +141,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGu
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    const fn = function l() {
+    const fn = function o() {
       return GuildStore.getGuild(guildId);
     };
     cResult[1] = guildId;
@@ -181,9 +183,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGu
           }
         }
       }
-      const obj3 = { style: tmp12, guild: stateFromStores, size: guildId(6161).GuildIconSizes.XXSMALL, selected };
+      const obj3 = { style: tmp12, guild: stateFromStores, size: guildId(6165).GuildIconSizes.XXSMALL, selected };
       const tmp4Result = GuildIconDefault;
-      const tmp16 = closure_16(tmp4Result, obj3, combined);
+      const tmp16 = closure_17(tmp4Result, obj3, combined);
       cResult[7] = stateFromStores;
       cResult[8] = selected;
       cResult[9] = combined;
@@ -205,7 +207,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGu
   let selected;
   ({ guildId: require, position, selected } = arg0);
   const obj = useToken2;
-  const tmp4 = closure_18(obj.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE));
+  const tmp4 = closure_19(obj.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE));
   const items = [GuildStore];
   const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => GuildStore.getGuild(_require));
@@ -221,7 +223,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function MiniGu
   const items1 = [tmp4.guildPreviewIcon, , ];
   let prop;
   const tmp3Result = GuildIconDefault;
-  const tmp6 = closure_16;
+  const tmp6 = closure_17;
   if (!selected) {
     prop = tmp4.guildPreviewIconUnselected;
   }
@@ -234,9 +236,9 @@ const __initData = { code: "function GuildsBarGuildFolderTsx1(values){const{with
 const __initData2 = { code: "function GuildsBarGuildFolderTsx2(values){const{withSpring,TRANSITION_PHYSICS}=this.__closure;return{animations:{height:withSpring(values.targetHeight,TRANSITION_PHYSICS,'animate-always')},initialValues:{height:values.currentHeight}};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
 const __initData3 = { code: "function GuildsBarGuildFolderTsx3(){const{withSpring,visible,FOLDER_SPRING_PHYSICS,state,TransitionStates,runOnJS,cleanUp,fromTop,guildItemSize}=this.__closure;return{opacity:withSpring(visible.get(),FOLDER_SPRING_PHYSICS,undefined,function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}),transform:[{translateY:withSpring(visible.get()===1?0:fromTop?-guildItemSize:guildItemSize,FOLDER_SPRING_PHYSICS)},{scale:withSpring(visible.get()===1?1:fromTop?0.3:1.3,FOLDER_SPRING_PHYSICS)}]};}" };
-let closure_24 = { code: "function GuildsBarGuildFolderTsx4(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
+let closure_25 = { code: "function GuildsBarGuildFolderTsx4(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
 const __initData4 = { code: "function GuildsBarGuildFolderTsx5(){const{withSpring,visible,FOLDER_SPRING_PHYSICS,state,TransitionStates,runOnJS,cleanUp,fromTop,guildItemSize}=this.__closure;return{opacity:withSpring(visible.get(),FOLDER_SPRING_PHYSICS,undefined,function(finished){if(finished&&state===TransitionStates.YEETED)runOnJS(cleanUp)();}),transform:[{translateY:withSpring(visible.get()===1?0:fromTop?-guildItemSize:guildItemSize,FOLDER_SPRING_PHYSICS)},{scale:withSpring(visible.get()===1?1:fromTop?0.3:1.3,FOLDER_SPRING_PHYSICS)}]};}" };
-let closure_26 = { code: "function GuildsBarGuildFolderTsx6(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED)runOnJS(cleanUp)();}" };
+let closure_27 = { code: "function GuildsBarGuildFolderTsx6(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED)runOnJS(cleanUp)();}" };
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FolderBGInner(arg0) {
   let color;
   let first;
@@ -251,9 +253,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj3 = useToken2;
   const token1 = obj3.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN);
   const obj4 = useToken2;
-  const tmp7 = closure_18(token, obj4.useToken(nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
+  const tmp7 = closure_19(token, obj4.useToken(nativeDefault.modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
   const sum = token + token1 + (token + 2 * token1) * totalItems;
-  const sum1 = sum + authStore(folderId);
+  const sum1 = sum + unpackModuleId(folderId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o(height) {
       let obj2;
@@ -299,14 +301,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const obj7 = { pointerEvents: "none", collapsable: false, layout: first, style: items };
     items = [tmp7.folderBackground, tmp14, tmp20];
-    const tmp23 = authStore4(ReanimatedNativeViewDefault, obj7);
+    const tmp23 = closure_17(ReanimatedNativeViewDefault, obj7);
     cResult[8] = tmp14;
     cResult[9] = tmp7.folderBackground;
     cResult[10] = tmp20;
     cResult[11] = tmp23;
     tmp21 = tmp23;
   }
-  const tmp15 = map1(color);
+  const tmp15 = authStore3(color);
   let tmp16;
   if (null != tmp15) {
     let tmp19;
@@ -335,34 +337,34 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   color = color.color;
   let token2;
   ({ folderId, totalItems } = color);
-  let obj = color(4778);
+  let obj = color(4779);
   const token = obj.useToken(token2(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  let obj2 = color(4778);
+  let obj2 = color(4779);
   const token1 = obj2.useToken(token2(587).modules.mobile.GUILD_BAR_ITEM_MARGIN);
-  let obj3 = color(4778);
+  let obj3 = color(4779);
   const fn = function s(height) {
     let obj2;
     let obj3;
     const obj = { animations: obj2, initialValues: { height: height.currentHeight } };
     obj2 = { height: obj3.withSpring(height.targetHeight, TRANSITION_PHYSICS, "animate-always") };
-    obj3 = color(dependencyMap[16]);
+    obj3 = color(dependencyMap[17]);
     return obj;
   };
-  const tmp3 = closure_18(token, obj3.useToken(token2(587).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
-  const obj4 = { withSpring: color(5374).withSpring, TRANSITION_PHYSICS };
-  const tmp4 = closure_10(folderId);
+  const tmp3 = closure_19(token, obj3.useToken(token2(587).modules.mobile.GUILD_FOLDER_BACKGROUND_WIDTH_OFFSET));
+  const obj4 = { withSpring: color(5375).withSpring, TRANSITION_PHYSICS };
+  const tmp4 = closure_11(folderId);
   const useCallback = react.useCallback;
   fn.__closure = obj4;
   fn.__workletHash = 15799331931829;
   fn.__initData = __initData2;
   const callback = useCallback(fn, []);
-  const obj5 = color(4778);
+  const obj5 = color(4779);
   token2 = obj5.useToken(token2(587).modules.mobile.GUILD_FOLDER_COLOR_OPACITY);
   const items = [color, token2];
   const memo = react.useMemo(() => {
     let hexWithOpacity;
     let obj2;
-    const tmp = map1(color);
+    const tmp = authStore3(color);
     if (null != tmp) {
       const obj = { backgroundColor: hexWithOpacity(obj2.int2hex(tmp), token2) };
       hexWithOpacity = ColorUtils.hexWithOpacity;
@@ -375,44 +377,65 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items1 = [tmp3.folderBackground, memo, ];
   const obj7 = { height: token + token1 + (token + 2 * token1) * totalItems + tmp4 };
   items1[2] = obj7;
-  return closure_16(token2(6753), obj6);
+  return closure_17(token2(6760), obj6);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransitionWrapper(state) {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransitionWrapper(state) {
   let children;
   let cleanUp;
   let closure_2;
   let fromTop;
+  let num3;
+  let stateFromStores;
+  let tmp8;
+  let tmp9;
   let tmp = cleanUp;
   let obj = cleanUp(576);
-  const cResult = obj.c(10);
+  const cResult = obj.c(14);
   ({ children, fromTop, cleanUp } = state);
   state = state.state;
   dependencyMap = tmp4;
-  const tmpResult = tmp(4778);
+  const tmpResult = tmp(4779);
   const tmp5 = state;
   const token = tmpResult.useToken(state(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmp7 = closure_18(token);
-  const useSharedValue = tmp(4810).useSharedValue;
-  let num = 0;
-  tmp(4810);
-  if (state === tmp(4787).TransitionStates.MOUNTED) {
-    num = 1;
+  const tmp7 = closure_19(token);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let items = [stateFromStores];
+    let fn = function s() {
+      return stateFromStores.useReducedMotion;
+    };
+    let num = 0;
+    cResult[0] = items;
+    let num2 = 1;
+    cResult[1] = fn;
+    tmp8 = items;
+    tmp9 = fn;
+  } else {
+    [tmp8, tmp9] = cResult;
   }
-  const sharedValue = useSharedValue(num);
-  let fn = function o() {
+  const tmpResult4 = tmp(504);
+  stateFromStores = tmpResult4.useStateFromStores(tmp8, tmp9);
+  const useSharedValue = tmp(4811).useSharedValue;
+  tmp(4811);
+  if (state === tmp(4788).TransitionStates.MOUNTED) {
+    num3 = 1;
+  } else {
+    num3 = 0;
+  }
+  const sharedValue = useSharedValue(num3);
+  const fn2 = function f() {
     let fn;
     let items;
     let value;
     let withSpring;
-    let obj = { opacity: withSpring(value, closure_15, undefined, fn), transform: items };
+    let obj = { opacity: withSpring(value, closure_16, undefined, fn), transform: items };
     let tmp = require;
     withSpring = spring.withSpring;
     value = sharedValue.get();
     fn = function t(arg0) {
-      const tmp = arg0 && state === cleanUp(closure_2[21]).TransitionStates.YEETED;
+      const tmp = arg0 && state === cleanUp(closure_2[22]).TransitionStates.YEETED;
       if (tmp) {
-        const obj = cleanUp(closure_2[20]);
+        const obj = cleanUp(closure_2[21]);
         obj.runOnJS(closure_1_0)();
       }
     };
@@ -428,7 +451,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transi
       num2 = closure_2 ? -tmp8 : tmp8;
     }
     items = [{ translateY: withSpring2(num2, tmp5) }, ];
-    ({ translateY: withSpring2(num2, closure_15) });
+    ({ translateY: withSpring2(num2, closure_16) });
     const withSpring3 = spring.withSpring;
     spring;
     if (num !== obj2.get()) {
@@ -438,68 +461,81 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transi
       }
       num = num3;
     }
-    items[1] = { scale: withSpring3(num, closure_15) };
-    ({ scale: withSpring3(num, closure_15) });
+    items[1] = { scale: withSpring3(num, closure_16) };
+    ({ scale: withSpring3(num, closure_16) });
     return obj;
   };
-  const tmpResult4 = tmp(4810);
-  let obj2 = { withSpring: tmp(5374).withSpring, visible: sharedValue, FOLDER_SPRING_PHYSICS, state, TransitionStates: tmp(4787).TransitionStates, runOnJS: tmp(4810).runOnJS, cleanUp, fromTop: tmp4, guildItemSize: token };
-  fn.__closure = obj2;
-  fn.__workletHash = 6656244933777;
-  fn.__initData = __initData3;
-  const animatedStyle = tmpResult4.useAnimatedStyle(fn);
-  if (cResult[0] === state) {
-    let tmp11;
-    let tmp12;
-    if (cResult[1] === sharedValue) {
-      tmp11 = cResult[2];
-      tmp12 = cResult[3];
-    }
-    const effect = token.useEffect(tmp11, tmp12);
-    if (cResult[4] === animatedStyle) {
-      let tmp15;
-      if (cResult[5] === tmp7.folderScaleContainer) {
-        tmp15 = cResult[6];
-      }
-      if (cResult[7] === children) {
+  const tmpResult6 = tmp(4811);
+  let obj2 = { withSpring: tmp(5375).withSpring, visible: sharedValue, FOLDER_SPRING_PHYSICS, state, TransitionStates: tmp(4788).TransitionStates, runOnJS: tmp(4811).runOnJS, cleanUp, fromTop: tmp4, guildItemSize: token };
+  fn2.__closure = obj2;
+  fn2.__workletHash = 6656244933777;
+  fn2.__initData = __initData3;
+  const animatedStyle = tmpResult6.useAnimatedStyle(fn2);
+  if (cResult[2] === cleanUp) {
+    if (cResult[3] === stateFromStores) {
+      if (cResult[4] === state) {
+        let tmp15;
         let tmp16;
-        if (cResult[8] === tmp15) {
-          tmp16 = cResult[9];
+        if (cResult[5] === sharedValue) {
+          tmp15 = cResult[6];
+          tmp16 = cResult[7];
         }
-        return tmp16;
+        const effect = token.useEffect(tmp15, tmp16);
+        if (cResult[8] === animatedStyle) {
+          let tmp19;
+          if (cResult[9] === tmp7.folderScaleContainer) {
+            tmp19 = cResult[10];
+          }
+          if (cResult[11] === children) {
+            let tmp20;
+            if (cResult[12] === tmp19) {
+              tmp20 = cResult[13];
+            }
+            return tmp20;
+          }
+          const obj3 = { style: tmp19, children };
+          const tmp22 = closure_17(tmp5(6760), obj3);
+          cResult[11] = children;
+          cResult[12] = tmp19;
+          cResult[13] = tmp22;
+          tmp20 = tmp22;
+        }
+        const items1 = [animatedStyle, tmp7.folderScaleContainer];
+        cResult[8] = animatedStyle;
+        cResult[9] = tmp7.folderScaleContainer;
+        cResult[10] = items1;
+        tmp19 = items1;
       }
-      const obj3 = { style: tmp15, children };
-      const tmp18 = closure_16(tmp5(6753), obj3);
-      cResult[7] = children;
-      cResult[8] = tmp15;
-      cResult[9] = tmp18;
-      tmp16 = tmp18;
     }
-    let items = [animatedStyle, tmp7.folderScaleContainer];
-    let num2 = 4;
-    cResult[4] = animatedStyle;
-    let num3 = 5;
-    cResult[5] = tmp7.folderScaleContainer;
-    cResult[6] = items;
-    tmp15 = items;
   }
-  const fn2 = function l() {
-    let num = 1;
-    set = sharedValue.set;
-    if (state === native.TransitionStates.YEETED) {
-      num = 0;
+  class T {
+    constructor() {
+      const tmp = stateFromStores;
+      if (tmp) {
+        if (state === native.TransitionStates.YEETED) {
+          cleanUp();
+        }
+      }
+      let num = 1;
+      set = sharedValue.set;
+      if (state === native.TransitionStates.YEETED) {
+        num = 0;
+      }
+      const result = set(num);
     }
-    const result = set(num);
-  };
-  const items1 = [state, sharedValue];
-  cResult[0] = state;
-  cResult[1] = sharedValue;
-  cResult[2] = fn2;
-  cResult[3] = items1;
-  tmp12 = items1;
-  tmp11 = fn2;
+  }
+  const items2 = [state, sharedValue, stateFromStores, cleanUp];
+  cResult[2] = cleanUp;
+  cResult[3] = stateFromStores;
+  cResult[4] = state;
+  cResult[5] = sharedValue;
+  cResult[6] = T;
+  cResult[7] = items2;
+  tmp16 = items2;
+  tmp15 = T;
 }) : (function TransitionWrapper(fromTop) {
-  let items1;
+  let items2;
+  let num;
   let flag = fromTop.fromTop;
   const children = fromTop.children;
   if (flag === undefined) {
@@ -507,34 +543,39 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transi
   }
   const cleanUp = fromTop.cleanUp;
   const state = fromTop.state;
+  let stateFromStores;
   let sharedValue;
   let tmp = flag;
   const tmp2 = state;
-  let obj = flag(state[13]);
+  let obj = flag(state[14]);
   let tmp3 = cleanUp;
-  const token = obj.useToken(cleanUp(state[10]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmp5 = closure_18(token);
-  let tmp6 = flag(state[20]);
-  const useSharedValue = tmp6.useSharedValue;
-  let num = 0;
-  if (state === flag(state[21]).TransitionStates.MOUNTED) {
+  const token = obj.useToken(cleanUp(state[11]).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const tmp5 = closure_19(token);
+  let obj2 = flag(state[15]);
+  let items = [stateFromStores];
+  stateFromStores = obj2.useStateFromStores(items, () => stateFromStores.useReducedMotion);
+  const tmp7 = flag(state[21]);
+  const useSharedValue = tmp7.useSharedValue;
+  if (state === flag(state[22]).TransitionStates.MOUNTED) {
     num = 1;
+  } else {
+    num = 0;
   }
   sharedValue = useSharedValue(num);
-  const tmpResult = tmp(tmp2[20]);
-  let fn = function u() {
+  const tmpResult = tmp(tmp2[21]);
+  let fn = function c() {
     let fn;
     let items;
     let value;
     let withSpring;
-    let obj = { opacity: withSpring(value, closure_15, undefined, fn), transform: items };
+    let obj = { opacity: withSpring(value, closure_16, undefined, fn), transform: items };
     let tmp = require;
     withSpring = spring.withSpring;
     value = sharedValue.get();
     fn = function t(arg0) {
-      const tmp = arg0 && closure_1_2 === flag(state[21]).TransitionStates.YEETED;
+      const tmp = arg0 && closure_1_2 === flag(state[22]).TransitionStates.YEETED;
       if (tmp) {
-        const obj = flag(state[20]);
+        const obj = flag(state[21]);
         obj.runOnJS(cleanUp)();
       }
     };
@@ -550,7 +591,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transi
       num2 = flag ? -tmp8 : tmp8;
     }
     items = [{ translateY: withSpring2(num2, tmp5) }, ];
-    ({ translateY: withSpring2(num2, closure_15) });
+    ({ translateY: withSpring2(num2, closure_16) });
     const withSpring3 = spring.withSpring;
     spring;
     if (num !== obj2.get()) {
@@ -560,30 +601,36 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Transi
       }
       num = num3;
     }
-    items[1] = { scale: withSpring3(num, closure_15) };
-    ({ scale: withSpring3(num, closure_15) });
+    items[1] = { scale: withSpring3(num, closure_16) };
+    ({ scale: withSpring3(num, closure_16) });
     return obj;
   };
-  let obj2 = { withSpring: tmp(tmp2[16]).withSpring, visible: sharedValue, FOLDER_SPRING_PHYSICS, state, TransitionStates: tmp(tmp2[21]).TransitionStates, runOnJS: tmp(tmp2[20]).runOnJS, cleanUp, fromTop: flag, guildItemSize: token };
-  fn.__closure = obj2;
+  const obj3 = { withSpring: tmp(tmp2[17]).withSpring, visible: sharedValue, FOLDER_SPRING_PHYSICS, state, TransitionStates: tmp(tmp2[22]).TransitionStates, runOnJS: tmp(tmp2[21]).runOnJS, cleanUp, fromTop: flag, guildItemSize: token };
+  fn.__closure = obj3;
   fn.__workletHash = 2276176184081;
   fn.__initData = __initData4;
-  let items = [state, sharedValue];
+  const items1 = [state, sharedValue, stateFromStores, cleanUp];
   const animatedStyle = tmpResult.useAnimatedStyle(fn);
   const effect = token.useEffect(() => {
+    const tmp = stateFromStores;
+    if (tmp) {
+      if (state === native.TransitionStates.YEETED) {
+        cleanUp();
+      }
+    }
     let num = 1;
     set = sharedValue.set;
     if (state === native.TransitionStates.YEETED) {
       num = 0;
     }
     const result = set(num);
-  }, items);
-  const obj3 = { style: items1, children };
-  items1 = [animatedStyle, tmp5.folderScaleContainer];
-  return closure_16(tmp3(tmp2[19]), obj3);
+  }, items1);
+  const obj4 = { style: items2, children };
+  items2 = [animatedStyle, tmp5.folderScaleContainer];
+  return closure_17(tmp3(tmp2[20]), obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolderIcon(item) {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolderIcon(item) {
   const obj = react2;
   const cResult = obj.c(2);
   item = item.item;
@@ -593,7 +640,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
     if (cResult[0] !== item.tintStyle) {
       const obj2 = { source: AssetRegistryDefault, style: item.tintStyle };
       const tmp7 = FastImageDefault;
-      const tmp8 = authStore4(tmp7, obj2);
+      const tmp8 = closure_17(tmp7, obj2);
       cResult[0] = item.tintStyle;
       cResult[1] = tmp8;
       tmp4 = tmp8;
@@ -609,7 +656,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
   if ("icon" === item.type) {
     const obj = { source: AssetRegistryDefault, style: item.tintStyle };
     const tmp5 = FastImageDefault;
-    tmp = authStore4(tmp5, obj);
+    tmp = closure_17(tmp5, obj);
   }
   return tmp;
 });
@@ -627,6 +674,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   let first;
   let folderPreviewStyle;
   let foldersChanged;
+  let guildPreviewWrapper;
   let hasGuildSelected;
   let hideExpandedChildren;
   let isDragPreview;
@@ -642,7 +690,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   let tmp10;
   let tmp = id;
   let tmp2 = name;
-  let obj = id(name[12]);
+  let obj = id(name[13]);
   const cResult = obj.c(92);
   id = id.id;
   const expanded = id.expanded;
@@ -652,9 +700,9 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   let tmp4 = undefined !== isDragPreview && isDragPreview;
   let tmp5 = undefined !== hideExpandedChildren && hideExpandedChildren;
   let tmp6 = expanded;
-  const tmpResult = tmp(tmp2[13]);
-  let tmp7 = closure_18(tmpResult.useToken(expanded(tmp2[10]).modules.mobile.GUILD_BAR_ITEM_SIZE));
-  const guildPreviewWrapper = tmp7;
+  const tmpResult = tmp(tmp2[14]);
+  let tmp7 = closure_19(tmpResult.useToken(expanded(tmp2[11]).modules.mobile.GUILD_BAR_ITEM_SIZE));
+  GuildReadStateStore = tmp7;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { disableSelectedColor: true, disableBGColor: true };
     let num = 0;
@@ -663,10 +711,10 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   } else {
     first = cResult[0];
   }
-  const tmpResult9 = tmp(tmp2[24]);
+  const tmpResult9 = tmp(tmp2[25]);
   const guildsBarAnimatedWrapperStyles = tmpResult9.useGuildsBarAnimatedWrapperStyles(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [foldersChanged];
+    let items = [GuildReadStateStore];
     let num2 = 1;
     cResult[1] = items;
     tmp10 = items;
@@ -679,15 +727,15 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     if (cResult[3] === expanded) {
       tmp12 = cResult[4];
     }
-    const tmpResult10 = tmp(tmp2[14]);
+    const tmpResult10 = tmp(tmp2[15]);
     const stateFromStoresObject = tmpResult10.useStateFromStoresObject(tmp10, tmp12);
     ({ mentionCount, isMentionLowImportance } = stateFromStoresObject);
     const _Symbol = Symbol;
     let unread = stateFromStoresObject.unread;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      let tmp15 = folderPreviewStyle;
-      let items1 = [folderPreviewStyle, ];
-      items1[1] = SortedGuildStore;
+      let tmp15 = SelectedGuildStore;
+      let items1 = [SelectedGuildStore, ];
+      items1[1] = isDragTarget;
       cResult[5] = items1;
       tmp14 = items1;
     } else {
@@ -701,7 +749,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
           tmp17 = cResult[9];
           tmp18 = cResult[10];
         }
-        const tmpResult11 = tmp(tmp2[14]);
+        const tmpResult11 = tmp(tmp2[15]);
         const stateFromStoresObject1 = tmpResult11.useStateFromStoresObject(tmp14, tmp17, tmp18);
         ({ selectedPreviewId, hasGuildSelected } = stateFromStoresObject1);
         if (cResult[11] === isMentionLowImportance) {
@@ -710,11 +758,11 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
           if (cResult[12] === mentionCount) {
             tmp20 = cResult[13];
           }
-          ({ badge, cutouts } = tmp6(tmp2[25])(tmp20));
+          ({ badge, cutouts } = tmp6(tmp2[26])(tmp20));
           const _Symbol2 = Symbol;
-          tmp6(tmp2[25])(tmp20);
+          tmp6(tmp2[26])(tmp20);
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const items2 = [guildPreviewWrapper];
+            const items2 = [folderPreviewStyle];
             cResult[14] = items2;
             tmp22 = items2;
           } else {
@@ -727,10 +775,10 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
               tmp24 = cResult[17];
               tmp25 = cResult[18];
             }
-            const tmpResult12 = tmp(tmp2[14]);
-            const label = tmpResult12.useStateFromStores(tmp22, tmp24, tmp25, tmp6(tmp2[27])).label;
-            const useToken = tmp(tmp2[13]).useToken;
-            tmp(tmp2[13]);
+            const tmpResult12 = tmp(tmp2[15]);
+            const label = tmpResult12.useStateFromStores(tmp22, tmp24, tmp25, tmp6(tmp2[28])).label;
+            const useToken = tmp(tmp2[14]).useToken;
+            tmp(tmp2[14]);
             class B {
               constructor() {
                 let num = 0;
@@ -769,8 +817,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                 }
               }
             }
-            const tmpResult14 = tmp(tmp2[13]);
-            const token = tmpResult14.useToken(tmp6(tmp2[10]).modules.mobile.GUILD_FOLDER_PREVIEW_OPACITY);
+            const tmpResult14 = tmp(tmp2[14]);
+            const token = tmpResult14.useToken(tmp6(tmp2[11]).modules.mobile.GUILD_FOLDER_PREVIEW_OPACITY);
             if (cResult[19] === color) {
               if (cResult[20] === tmp31) {
                 let tmp33;
@@ -828,7 +876,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                         let iter = childNodes[Symbol.iterator]();
                         const nextResult = iter.next();
                         while (iter !== undefined) {
-                          if (nextResult.type === isDragTarget.GUILD) {
+                          if (nextResult.type === dragDropInProgress.GUILD) {
                             let arr = items4.push(tmp50.id);
                             if (items4.length >= 4) {
                               iter.return();
@@ -894,7 +942,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                     }
                     if (cResult[41] === expanded) {
                       if (cResult[42] === folderPreviewStyle) {
-                        const tmp59 = dragDropInProgress(id, tmp4);
+                        const tmp59 = closure_10(id, tmp4);
                         isDragTarget = tmp59.isDragTarget;
                         ({ dragState, overState, itemSize, dragDropInProgress } = tmp59);
                         class B {
@@ -942,7 +990,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                           }
                           ({ accessibilityActions, onAccessibilityAction } = tmp62);
                           let _HermesInternal = HermesInternal;
-                          const obj17 = id(name[20]);
+                          const obj17 = id(name[21]);
                           const sharedValue = obj17.useSharedValue("" + id);
                           const tmp64 = id;
                           class B {
@@ -1111,21 +1159,21 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                                                     const result = set("" + tmp8);
                                                     if (value) {
                                                       const obj = spring;
-                                                      targetOriginY = obj.withSpring(originY.targetOriginY, closure_14, "animate-always");
+                                                      targetOriginY = obj.withSpring(originY.targetOriginY, closure_15, "animate-always");
                                                     } else {
                                                       targetOriginY = originY.targetOriginY;
                                                     }
                                                     const obj2 = { originY: targetOriginY, height: targetHeight };
                                                     if (value) {
                                                       const obj3 = spring;
-                                                      targetHeight = obj3.withSpring(originY.targetHeight, closure_14, "animate-always");
+                                                      targetHeight = obj3.withSpring(originY.targetHeight, closure_15, "animate-always");
                                                     } else {
                                                       targetHeight = originY.targetHeight;
                                                     }
                                                     return { animations: obj2, initialValues: { originY: originY.currentOriginY, height: originY.currentHeight } };
                                                   }
                                                 }
-                                                const tmp88 = closure_16(expanded(name[24]), obj7);
+                                                const tmp88 = closure_17(expanded(name[25]), obj7);
                                                 cResult[71] = accessibilityActions;
                                                 cResult[72] = tmp44;
                                                 cResult[73] = cutouts;
@@ -1133,7 +1181,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                                                 cResult[75] = expanded;
                                                 cResult[76] = hasGuildSelected;
                                                 cResult[77] = tmp4;
-                                                class H {
+                                                class Y {
                                                   constructor() {
                                                     const tmp = expanded;
                                                     if (tmp) {
@@ -1253,14 +1301,14 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                                                   const result = set("" + tmp8);
                                                   if (value) {
                                                     const obj = spring;
-                                                    targetOriginY = obj.withSpring(originY.targetOriginY, closure_14, "animate-always");
+                                                    targetOriginY = obj.withSpring(originY.targetOriginY, closure_15, "animate-always");
                                                   } else {
                                                     targetOriginY = originY.targetOriginY;
                                                   }
                                                   const obj2 = { originY: targetOriginY, height: targetHeight };
                                                   if (value) {
                                                     const obj3 = spring;
-                                                    targetHeight = obj3.withSpring(originY.targetHeight, closure_14, "animate-always");
+                                                    targetHeight = obj3.withSpring(originY.targetHeight, closure_15, "animate-always");
                                                   } else {
                                                     targetHeight = originY.targetHeight;
                                                   }
@@ -1275,7 +1323,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                                           let tmp77;
                                           if (!tmp5) {
                                             const obj9 = { folderId: id, expanded };
-                                            tmp77 = closure_16(expanded(tmp65[32]), obj9);
+                                            tmp77 = closure_17(expanded(tmp65[33]), obj9);
                                           }
                                           cResult[64] = expanded;
                                           cResult[65] = tmp5;
@@ -1340,14 +1388,14 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                                               const result = set("" + tmp8);
                                               if (value) {
                                                 const obj = spring;
-                                                targetOriginY = obj.withSpring(originY.targetOriginY, closure_14, "animate-always");
+                                                targetOriginY = obj.withSpring(originY.targetOriginY, closure_15, "animate-always");
                                               } else {
                                                 targetOriginY = originY.targetOriginY;
                                               }
                                               const obj2 = { originY: targetOriginY, height: targetHeight };
                                               if (value) {
                                                 const obj3 = spring;
-                                                targetHeight = obj3.withSpring(originY.targetHeight, closure_14, "animate-always");
+                                                targetHeight = obj3.withSpring(originY.targetHeight, closure_15, "animate-always");
                                               } else {
                                                 targetHeight = originY.targetHeight;
                                               }
@@ -1364,7 +1412,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                                   tmp73 = badge;
                                   if (!tmp4) {
                                     const obj10 = { color, folderId: id, totalItems: childNodes.length };
-                                    tmp73 = closure_16(closure_22, obj10);
+                                    tmp73 = closure_17(closure_23, obj10);
                                   }
                                 }
                                 cResult[57] = badge;
@@ -1427,14 +1475,14 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                                     const result = set("" + tmp8);
                                     if (value) {
                                       const obj = spring;
-                                      targetOriginY = obj.withSpring(originY.targetOriginY, closure_14, "animate-always");
+                                      targetOriginY = obj.withSpring(originY.targetOriginY, closure_15, "animate-always");
                                     } else {
                                       targetOriginY = originY.targetOriginY;
                                     }
                                     const obj2 = { originY: targetOriginY, height: targetHeight };
                                     if (value) {
                                       const obj3 = spring;
-                                      targetHeight = obj3.withSpring(originY.targetHeight, closure_14, "animate-always");
+                                      targetHeight = obj3.withSpring(originY.targetHeight, closure_15, "animate-always");
                                     } else {
                                       targetHeight = originY.targetHeight;
                                     }
@@ -1470,21 +1518,21 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                               const result = set("" + tmp8);
                               if (value) {
                                 const obj = spring;
-                                targetOriginY = obj.withSpring(originY.targetOriginY, closure_14, "animate-always");
+                                targetOriginY = obj.withSpring(originY.targetOriginY, closure_15, "animate-always");
                               } else {
                                 targetOriginY = originY.targetOriginY;
                               }
                               const obj2 = { originY: targetOriginY, height: targetHeight };
                               if (value) {
                                 const obj3 = spring;
-                                targetHeight = obj3.withSpring(originY.targetHeight, closure_14, "animate-always");
+                                targetHeight = obj3.withSpring(originY.targetHeight, closure_15, "animate-always");
                               } else {
                                 targetHeight = originY.targetHeight;
                               }
                               return { animations: obj2, initialValues: { originY: originY.currentOriginY, height: originY.currentHeight } };
                             }
                           }
-                          Ue.__closure = { dragDropInProgress, sharedId: sharedValue, id, isDragTarget, withSpring: tmp64(name[16]).withSpring, TRANSITION_PHYSICS };
+                          Ue.__closure = { dragDropInProgress, sharedId: sharedValue, id, isDragTarget, withSpring: tmp64(name[17]).withSpring, TRANSITION_PHYSICS };
                           Ue.__workletHash = 15487218884708;
                           Ue.__initData = __initData5;
                           cResult[52] = dragDropInProgress;
@@ -1493,12 +1541,12 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                           cResult[55] = sharedValue;
                           cResult[56] = Ue;
                           tmp67 = Ue;
-                          const obj11 = { dragDropInProgress, sharedId: sharedValue, id, isDragTarget, withSpring: tmp64(name[16]).withSpring, TRANSITION_PHYSICS };
+                          const obj11 = { dragDropInProgress, sharedId: sharedValue, id, isDragTarget, withSpring: tmp64(name[17]).withSpring, TRANSITION_PHYSICS };
                         }
                         tmp63[0] = tmp61;
                         tmp63[1] = function onAccessibilityAction(arg0) {
                           let closure_0 = arg0;
-                          const found = SortedGuildStore.find((label) => label.label === nativeEvent.nativeEvent.actionName);
+                          const found = SelectedGuildStore.find((label) => label.label === nativeEvent.nativeEvent.actionName);
                           if (found != null) {
                             const action = found.action;
                             if (action != null) {
@@ -1517,8 +1565,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                       const Fragment = react.Fragment;
                       const items = [guildPreviewWrapper.guildPreviewWrapper, ];
                       let tmp4;
-                      const tmp = closure_17;
-                      const tmp2 = authStore4;
+                      const tmp = authStore6;
+                      const tmp2 = closure_17;
                       const tmp3 = NativeViewDefault;
                       if (!expanded) {
                         tmp4 = folderPreviewStyle;
@@ -1678,15 +1726,15 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
               }
             }
             let tmp37 = color;
-            const int2hex = tmp(tmp2[18]).int2hex;
-            tmp(tmp2[18]);
+            const int2hex = tmp(tmp2[19]).int2hex;
+            tmp(tmp2[19]);
             if (color == null) {
-              tmp37 = closure_11;
+              tmp37 = closure_12;
             }
             const int2hexResult = int2hex(tmp37);
             let hexWithOpacityResult = tmp31;
-            if (!closure_12(color)) {
-              const tmpResult16 = tmp(tmp2[17]);
+            if (!closure_13(color)) {
+              const tmpResult16 = tmp(tmp2[18]);
               hexWithOpacityResult = tmpResult16.hexWithOpacity(int2hexResult, token);
             }
             cResult[19] = color;
@@ -1862,7 +1910,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     tmp18 = items7;
     tmp17 = B;
   }
-  class H {
+  class Y {
     constructor() {
       const tmp = expanded;
       if (tmp) {
@@ -1909,8 +1957,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   }
   cResult[2] = childNodes;
   cResult[3] = expanded;
-  cResult[4] = H;
-  tmp12 = H;
+  cResult[4] = Y;
+  tmp12 = Y;
 }) : (function GuildsBarGuildFolder(id) {
   let accessibilityActions;
   let badge;
@@ -1940,16 +1988,17 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   }
   const foldersChanged = id.foldersChanged;
   let selectedPreviewId;
+  let token;
   let tmp2 = name;
   let tmp = id;
-  let obj = id(name[13]);
+  let obj = id(name[14]);
   let tmp3 = expanded;
-  let tmp4 = closure_18(obj.useToken(expanded(name[10]).modules.mobile.GUILD_BAR_ITEM_SIZE));
+  let tmp4 = closure_19(obj.useToken(expanded(name[11]).modules.mobile.GUILD_BAR_ITEM_SIZE));
   const guildPreviewWrapper = tmp4;
-  let obj2 = id(name[24]);
+  let obj2 = id(name[25]);
   const guildsBarAnimatedWrapperStyles = obj2.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
-  let obj3 = id(name[14]);
-  let items = [childNodes];
+  let obj3 = id(name[15]);
+  let items = [foldersChanged];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => {
     const tmp = expanded;
     if (tmp) {
@@ -1994,8 +2043,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     }
   });
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  let obj4 = id(name[14]);
-  let items1 = [guildPreviewWrapper, selectedPreviewId];
+  let obj4 = id(name[15]);
+  let items1 = [selectedPreviewId, token];
   let items2 = [expanded, id, childNodes];
   const stateFromStoresObject1 = obj4.useStateFromStoresObject(items1, () => {
     let num = 0;
@@ -2035,10 +2084,10 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
   }, items2);
   selectedPreviewId = stateFromStoresObject1.selectedPreviewId;
   const hasGuildSelected = stateFromStoresObject1.hasGuildSelected;
-  let tmp8 = expanded(name[25])({ mentionCount, isMentionLowImportance });
+  let tmp8 = expanded(name[26])({ mentionCount, isMentionLowImportance });
   ({ badge, cutouts } = tmp8);
-  let obj5 = id(name[14]);
-  const items3 = [foldersChanged];
+  let obj5 = id(name[15]);
+  const items3 = [guildPreviewWrapper];
   const items4 = [name, childNodes];
   const label = obj5.useStateFromStores(items3, () => {
     let items;
@@ -2067,11 +2116,11 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
         return obj;
       }
     }
-  }, items4, expanded(name[27])).label;
-  const obj6 = id(name[13]);
-  const token = obj6.useToken(expanded(name[10]).colors.GUILD_FOLDER_BACKGROUND);
-  const obj7 = id(name[13]);
-  const token1 = obj7.useToken(expanded(name[10]).modules.mobile.GUILD_FOLDER_PREVIEW_OPACITY);
+  }, items4, expanded(name[28])).label;
+  const obj6 = id(name[14]);
+  token = obj6.useToken(expanded(name[11]).colors.GUILD_FOLDER_BACKGROUND);
+  const obj7 = id(name[14]);
+  const token1 = obj7.useToken(expanded(name[11]).modules.mobile.GUILD_FOLDER_PREVIEW_OPACITY);
   const items5 = [color, token, token1];
   const memo = color.useMemo(() => {
     let hexWithOpacityResult;
@@ -2080,11 +2129,11 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     utils_ColorUtils;
     const tmp4 = color;
     if (color == null) {
-      tmp5 = unpackModuleId;
+      tmp5 = authStore2;
     }
     const int2hexResult = int2hex(tmp5);
     const obj = { tintStyle: { tintColor: int2hexResult }, folderPreviewStyle: { backgroundColor: hexWithOpacityResult } };
-    if (isDragTarget(tmp4)) {
+    if (map1(tmp4)) {
       hexWithOpacityResult = token;
     } else {
       const tmpResult = ColorUtils;
@@ -2113,9 +2162,9 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
             const result = obj.set(set);
           }
         }
-        const obj4 = id(name[28]);
-        const result1 = obj4.triggerHapticFeedback(id(name[28]).HapticFeedbackTypes.IMPACT_LIGHT);
-        const obj5 = expanded(name[29]);
+        const obj4 = id(name[29]);
+        const result1 = obj4.triggerHapticFeedback(id(name[29]).HapticFeedbackTypes.IMPACT_LIGHT);
+        const obj5 = expanded(name[30]);
         const result2 = obj5.toggleGuildFolderExpand(closure_1_0);
       }
     };
@@ -2151,8 +2200,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     const Fragment = react.Fragment;
     const items = [guildPreviewWrapper.guildPreviewWrapper, ];
     let tmp4;
-    const tmp = closure_17;
-    const tmp2 = authStore4;
+    const tmp = authStore6;
+    const tmp2 = closure_17;
     const tmp3 = NativeViewDefault;
     if (!expanded) {
       tmp4 = folderPreviewStyle;
@@ -2162,7 +2211,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     items1 = [tmp2(tmp3, { style: items }), arg0];
     return tmp(Fragment, obj, "wrapper");
   }, items8);
-  let tmp15 = token1(id, flag);
+  let tmp15 = tintStyle(id, flag);
   const isDragTarget = tmp15.isDragTarget;
   const dragDropInProgress = tmp15.dragDropInProgress;
   const items9 = [id];
@@ -2186,9 +2235,9 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     return obj2;
   }, items9);
   ({ accessibilityActions, onAccessibilityAction } = memo3);
-  const obj8 = id(name[20]);
+  const obj8 = id(name[21]);
   const sharedValue = obj8.useSharedValue("" + id);
-  class R {
+  class E {
     constructor(originY) {
       let targetHeight;
       let targetOriginY;
@@ -2209,43 +2258,43 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
       const result = set("" + tmp8);
       if (value) {
         const obj = spring;
-        targetOriginY = obj.withSpring(originY.targetOriginY, closure_14, "animate-always");
+        targetOriginY = obj.withSpring(originY.targetOriginY, closure_15, "animate-always");
       } else {
         targetOriginY = originY.targetOriginY;
       }
       const obj2 = { originY: targetOriginY, height: targetHeight };
       if (value) {
         const obj3 = spring;
-        targetHeight = obj3.withSpring(originY.targetHeight, closure_14, "animate-always");
+        targetHeight = obj3.withSpring(originY.targetHeight, closure_15, "animate-always");
       } else {
         targetHeight = originY.targetHeight;
       }
       return { animations: obj2, initialValues: { originY: originY.currentOriginY, height: originY.currentHeight } };
     }
   }
-  R.__closure = { dragDropInProgress, sharedId: sharedValue, id, isDragTarget, withSpring: id(name[16]).withSpring, TRANSITION_PHYSICS: sharedValue };
-  R.__workletHash = 10548965010347;
-  R.__initData = __initData6;
+  E.__closure = { dragDropInProgress, sharedId: sharedValue, id, isDragTarget, withSpring: id(name[17]).withSpring, TRANSITION_PHYSICS };
+  E.__workletHash = 10548965010347;
+  E.__initData = __initData6;
   const items10 = [id, sharedValue, isDragTarget, dragDropInProgress];
-  ({ dragDropInProgress, sharedId: sharedValue, id, isDragTarget, withSpring: id(name[16]).withSpring, TRANSITION_PHYSICS: sharedValue });
-  const callback1 = color.useCallback(R, items10);
-  const obj10 = { id: "" + id, draggedItemSize: itemSize, accessibilityActions, onAccessibilityAction, selected: hasGuildSelected, unread: !expanded && unread, circle: false, styles: guildsBarAnimatedWrapperStyles, label, isDragTarget, dragState, sharedId: sharedValue, cutouts, config: memo1, isDragPreview: flag, overState, preventClipping: true, expanded, layout: callback1, externalChildren: tmp19Result, expandedChildren: tmp19Result2, children: closure_16(tmp(tmp2[21]).TransitionGroup, obj13) };
+  ({ dragDropInProgress, sharedId: sharedValue, id, isDragTarget, withSpring: id(name[17]).withSpring, TRANSITION_PHYSICS });
+  const callback1 = color.useCallback(E, items10);
+  const obj10 = { id: "" + id, draggedItemSize: itemSize, accessibilityActions, onAccessibilityAction, selected: hasGuildSelected, unread: !expanded && unread, circle: false, styles: guildsBarAnimatedWrapperStyles, label, isDragTarget, dragState, sharedId: sharedValue, cutouts, config: memo1, isDragPreview: flag, overState, preventClipping: true, expanded, layout: callback1, externalChildren: tmp19Result, expandedChildren: tmp19Result2, children: closure_17(tmp(tmp2[22]).TransitionGroup, obj13) };
   tmp19Result = badge;
-  const tmp20 = expanded(name[24]);
+  const tmp20 = expanded(name[25]);
   if (expanded) {
     tmp19Result = badge;
     if (!flag) {
       const obj11 = { color, folderId: id, totalItems: childNodes.length };
-      tmp19Result = tmp19(closure_22, obj11);
+      tmp19Result = tmp19(closure_23, obj11);
     }
   }
   tmp19Result2 = undefined;
   if (!flag2) {
     const obj12 = { folderId: id, expanded };
-    tmp19Result2 = tmp19(tmp3(tmp2[32]), obj12);
+    tmp19Result2 = tmp19(tmp3(tmp2[33]), obj12);
   }
   obj13 = { renderItem: renderGuildFolderContent, getItemKey, items: memo2, wrapChildren: callback };
-  return closure_16(tmp20, obj10);
+  return closure_17(tmp20, obj10);
 }));
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarGuildFolder.tsx");
 

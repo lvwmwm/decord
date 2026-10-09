@@ -1,15 +1,15 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 10026
+// Function ID: 10027
 // Name: GiftCodeRecord
-// Dependencies: [1404, 7166, 10007, 4727, 1391, 4659, 1402, 2]
+// Dependencies: [1405, 7171, 9102, 4729, 1392, 4661, 1403, 2]
 
-// Module 10041 (GiftCodeRecord)
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import _modDef4659 from "module_4659" /* 4659 */;
-import Record from "Record" /* 1404 */;
-import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7166 */;
-import PromotionRecord from "PromotionRecord" /* 10007 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4727 */;
+// Module 10026 (GiftCodeRecord)
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import _modDef4661 from "module_4661" /* 4661 */;
+import Record from "Record" /* 1405 */;
+import SubscriptionTrialRecord from "SubscriptionTrialRecord" /* 7171 */;
+import PromotionRecord from "PromotionRecord" /* 9102 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4729 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ class GiftCodeRecord extends Record {
     }
     let tmp5 = null;
     if (null != user.expires_at) {
-      tmp5 = _modDef4659(user.expires_at);
+      tmp5 = _modDef4661(user.expires_at);
     }
     const redeemed = user.redeemed;
     if (null != user.subscription_plan) {
@@ -104,7 +104,7 @@ class GiftCodeRecord extends Record {
     const expiresAt = this.expiresAt;
     let isAfterResult = null != expiresAt;
     if (isAfterResult) {
-      const obj = _modDef4659();
+      const obj = _modDef4661();
       isAfterResult = obj.isAfter(expiresAt);
     }
     return isAfterResult;

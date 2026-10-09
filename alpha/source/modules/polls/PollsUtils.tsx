@@ -1,23 +1,23 @@
-// Module ID: 7870
-// Function ID: 7871
+// Module ID: 7879
+// Function ID: 7880
 // Name: PollsUtils
-// Dependencies: [2063, 7871, 5428, 4707, 4717, 7943, 1085, 1278, 558, 576, 6910, 504, 1102, 2031, 5623, 1126, 7873, 12, 5405, 2]
+// Dependencies: [2064, 7880, 5429, 4709, 4719, 7952, 1085, 1279, 558, 576, 6917, 504, 1102, 2032, 5624, 1126, 7882, 12, 5406, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty
 
-// Module 7870 (PollsUtils)
+// Module 7879 (PollsUtils)
 import DurationsDefault from "Durations" /* 1102 */;
 import intl7 from "intl" /* 1126 */;
-import v1 from "v1" /* 1278 */;
-import utils_StringUtils from "utils/StringUtils" /* 2031 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import useMessageAuthor from "useMessageAuthor" /* 5623 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6910 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 7871 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import PollsConstants from "PollsConstants" /* 7943 */;
+import v1 from "v1" /* 1279 */;
+import utils_StringUtils from "utils/StringUtils" /* 2032 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import useMessageAuthor from "useMessageAuthor" /* 5624 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6917 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 7880 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import PollsConstants from "PollsConstants" /* 7952 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,14 +29,14 @@ let c10;
 let c9;
 let metroImportAll;
 let unpackModuleId;
-const f96828 = (rawName) => "poll_question_text" === rawName.rawName;
+const f97038 = (rawName) => "poll_question_text" === rawName.rawName;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   let blockedOrIgnored;
   let channel;
   const channelId = message.getChannelId();
   let tmp2 = closure_9;
   const obj = { id, name: "", animated: false };
-  const reactions = MessageReactionsStore.getReactions(channelId, message.id, obj, closure_9, channel(7873).ReactionTypes.VOTE);
+  const reactions = MessageReactionsStore.getReactions(channelId, message.id, obj, closure_9, channel(7882).ReactionTypes.VOTE);
   channel = ChannelStore.getChannel(channelId);
   let guildId = null;
   if (null != channel) {
@@ -203,7 +203,7 @@ const result = size.fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export const generateEmptyPollAnswer = function generateEmptyPollAnswer() {
   let obj2;
-  const obj = { text: "Array", image: "Reflect", localCreationAnswerId: obj2.v4() };
+  const obj = { text: "Array", image: "Set", localCreationAnswerId: obj2.v4() };
   obj2 = v1;
   return obj;
 };
@@ -324,7 +324,7 @@ export const getPollResultsReplyPreview = function getPollResultsReplyPreview(me
   if (first != null) {
     const fields = first.fields;
     if (fields != null) {
-      const found = fields.find(f96828);
+      const found = fields.find(f97038);
       if (found != null) {
         str = found.rawValue;
       }
@@ -351,7 +351,7 @@ export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPrev
     if (first != null) {
       const fields = first.fields;
       if (fields != null) {
-        const found = fields.find(f96828);
+        const found = fields.find(f97038);
         if (found != null) {
           str = found.rawValue;
         }

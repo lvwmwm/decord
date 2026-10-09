@@ -1,24 +1,24 @@
-// Module ID: 7729
-// Function ID: 7730
+// Module ID: 7738
+// Function ID: 7739
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 5089, 1207, 5280, 1085, 3, 1294, 7730, 7731, 7739, 1102, 569, 6663, 12, 1480, 7741, 7760, 6664, 7761, 7762, 7766, 1254, 7740, 7732, 7767, 7768, 1999, 7853, 1264, 2]
+// Dependencies: [109, 5, 32, 5090, 1207, 5281, 1085, 3, 1295, 7739, 7740, 7748, 1102, 569, 6670, 12, 1481, 7750, 7769, 6671, 7770, 7771, 7775, 1255, 7749, 7741, 7776, 7777, 2000, 7862, 1265, 2]
 
-// Module 7729 (CloudUpload)
+// Module 7738 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import InlineUploaderDefault from "InlineUploader" /* 6663 */;
-import UploadPlatform from "UploadPlatform" /* 7731 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import InlineUploaderDefault from "InlineUploader" /* 6670 */;
+import UploadPlatform from "UploadPlatform" /* 7740 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 5089 */;
+import DevSettingsStore from "DevSettingsStore" /* 5090 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
-import NetworkStore from "NetworkStore" /* 5280 */;
+import NetworkStore from "NetworkStore" /* 5281 */;
 import Constants from "Constants" /* 1085 */;
-import Upload from "Upload" /* 7730 */;
+import Upload from "Upload" /* 7739 */;
 import size_mod from "module_2" /* 2 */;
 
 let c0, c5, c8, closure_6, createAttachmentURL;
@@ -28,7 +28,7 @@ let unpackModuleId;
 let closure_3 = ["Content-Range"];
 ({ AbortCodes: c10, AnalyticEvents: unpackModuleId } = Constants);
 let tmp3 = new LoggerDefault("CloudUpload.tsx");
-const logger = tmp3;
+const authStore2 = tmp3;
 const set = new Set([429]);
 class ResumableUploadError extends Error {
   constructor(phase, arg1) {
@@ -233,13 +233,13 @@ class CloudUpload extends Upload {
         if (typeof obj.origin === "string") {
           origin = obj.origin;
         } else {
-          origin = tmp11(7730).UploadOrigin[obj.origin];
+          origin = tmp11(7739).UploadOrigin[obj.origin];
         }
         uploadAnalytics.origin = origin;
       }
       const self3 = this;
       const self4 = this;
-      const defaultHttpClient = new tmp11(7739).DefaultHttpClient();
+      const defaultHttpClient = new tmp11(7748).DefaultHttpClient();
       obj._uploadHttpClient = defaultHttpClient;
       obj._libdiscoreEnabled = false;
       return obj;

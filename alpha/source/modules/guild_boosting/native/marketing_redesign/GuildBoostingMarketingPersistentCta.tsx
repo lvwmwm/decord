@@ -1,17 +1,17 @@
-// Module ID: 7105
-// Function ID: 7106
+// Module ID: 7110
+// Function ID: 7111
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 5079, 1085, 21, 5090, 587, 558, 576, 573, 4810, 5374, 6161, 5086, 7106, 5387, 2]
+// Dependencies: [19, 17, 5080, 1085, 21, 5091, 587, 558, 576, 573, 4811, 5375, 6165, 5087, 7111, 5388, 2]
 
-// Module 7105 (GuildBoostingMarketingPersistentCta)
+// Module 7110 (GuildBoostingMarketingPersistentCta)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import spring from "spring" /* 5374 */;
+import spring from "spring" /* 5375 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -91,11 +91,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
     }
     return obj;
   };
-  const tmpResult2 = isVisible(4810);
-  fn.__closure = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5374).withSpring, isVisible, SPRING_CONFIG };
+  const tmpResult2 = isVisible(4811);
+  fn.__closure = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5375).withSpring, isVisible, SPRING_CONFIG };
   fn.__workletHash = 14370895185277;
   fn.__initData = __initData;
-  ({ useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5374).withSpring, isVisible, SPRING_CONFIG });
+  ({ useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5375).withSpring, isVisible, SPRING_CONFIG });
   const animatedStyle = tmpResult2.useAnimatedStyle(fn);
   if (cResult[2] === animatedStyle) {
     let tmp10;
@@ -162,7 +162,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
                                 }
                               }
                               const obj3 = { style: tmp10, children: tmp37 };
-                              const tmp42 = closure_6(stateFromStores(4810).View, obj3);
+                              const tmp42 = closure_6(stateFromStores(4811).View, obj3);
                               cResult[35] = tmp37;
                               cResult[36] = tmp10;
                               cResult[37] = tmp42;
@@ -174,7 +174,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
                               }
                             }
                             const obj4 = { angle: 45, angleCenter: tmp12, colors: tmp13, locations: tmp14, style: tmp4.border, useAngle: true, children: tmp34 };
-                            const tmp39 = closure_6(stateFromStores(5387), obj4);
+                            const tmp39 = closure_6(stateFromStores(5388), obj4);
                             cResult[32] = tmp4.border;
                             cResult[33] = tmp34;
                             cResult[34] = tmp39;
@@ -216,7 +216,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
                 }
               }
               const obj8 = { guild, previousGuildSubscriptionSlot, useShortenedCTA: true, styles: tmp4.button, analyticsSection: AnalyticsSections.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR, fractionalPremiumState, premiumGroupRole };
-              const tmp30 = closure_6(stateFromStores(7106), obj8);
+              const tmp30 = closure_6(stateFromStores(7111), obj8);
               cResult[19] = fractionalPremiumState;
               cResult[20] = guild;
               cResult[21] = premiumGroupRole;
@@ -247,7 +247,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
         }
         tmp22[0] = tmp4.guildName;
         tmp22[3] = guild.name;
-        const tmp23 = closure_6(isVisible(5086).Text, tmp22);
+        const tmp23 = closure_6(isVisible(5087).Text, tmp22);
         cResult[12] = guild.name;
         cResult[13] = tmp4.guildName;
         cResult[14] = tmp23;
@@ -255,8 +255,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
       }
     }
     ({ guildIcon: obj5.style, guildIconText: obj5.textStyle } = tmp4);
-    const obj10 = { style: null, textStyle: null, guild, size: isVisible(6161).GuildIconSizes.LARGE };
-    const tmp18 = stateFromStores(6161);
+    const obj10 = { style: null, textStyle: null, guild, size: isVisible(6165).GuildIconSizes.LARGE };
+    const tmp18 = stateFromStores(6165);
     const tmp19 = closure_6(tmp18, obj10);
     let num3 = 8;
     cResult[8] = guild;
@@ -315,27 +315,27 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
     }
     return obj;
   };
-  const obj2 = isVisible(4810);
-  fn.__closure = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5374).withSpring, isVisible, SPRING_CONFIG };
+  const obj2 = isVisible(4811);
+  fn.__closure = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5375).withSpring, isVisible, SPRING_CONFIG };
   fn.__workletHash = 10455540747486;
   fn.__initData = __initData2;
-  ({ useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5374).withSpring, isVisible, SPRING_CONFIG });
+  ({ useReducedMotion: stateFromStores, VISIBILITY_OFFSET, withSpring: isVisible(5375).withSpring, isVisible, SPRING_CONFIG });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj4 = { style: items1, children: closure_6(tmp4, obj5) };
   items1 = [tmp.wrapper, animatedStyle];
-  View = stateFromStores(4810).View;
+  View = stateFromStores(4811).View;
   obj5 = { angle: 45, angleCenter: { x: 0.5, y: 0.5 }, colors: items2, locations: [0, 1], style: tmp.border, useAngle: true, children: closure_7(View, obj6) };
-  tmp4 = stateFromStores(5387);
+  tmp4 = stateFromStores(5388);
   items2 = [stateFromStores(587).unsafe_rawColors.GUILD_BOOSTING_BLUE, stateFromStores(587).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj6 = { style: tmp.innerWraper, children: items4 };
   const obj7 = { style: tmp.guildInfoContainer, children: items3 };
-  const obj8 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: isVisible(6161).GuildIconSizes.LARGE };
-  const tmp5 = stateFromStores(6161);
+  const obj8 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: isVisible(6165).GuildIconSizes.LARGE };
+  const tmp5 = stateFromStores(6165);
   items3 = [closure_6(tmp5, obj8), ];
   const obj9 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
-  items3[1] = closure_6(isVisible(5086).Text, obj9);
+  items3[1] = closure_6(isVisible(5087).Text, obj9);
   items4 = [closure_7(View, obj7), ];
-  const obj10 = { style: tmp.buttonContainer, children: closure_6(stateFromStores(7106), obj11) };
+  const obj10 = { style: tmp.buttonContainer, children: closure_6(stateFromStores(7111), obj11) };
   obj11 = { guild, previousGuildSubscriptionSlot, useShortenedCTA: true, styles: tmp.button, analyticsSection: AnalyticsSections.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR, fractionalPremiumState, premiumGroupRole };
   items4[1] = closure_6(View, obj10);
   return closure_6(View, obj4);

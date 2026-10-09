@@ -1,12 +1,12 @@
-// Module ID: 12132
-// Function ID: 12133
+// Module ID: 12069
+// Function ID: 12070
 // Name: ApplicationCommandList
-// Dependencies: [19, 17, 9668, 21, 558, 576, 1997, 9192, 9759, 7235, 12129, 12130, 2]
+// Dependencies: [19, 17, 9687, 21, 558, 576, 1998, 9226, 9778, 7240, 12066, 12067, 2]
 
-// Module 12132 (ApplicationCommandList)
+// Module 12069 (ApplicationCommandList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9668 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9687 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -232,7 +232,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
         tmp2 = null;
         found = undefined;
         if (sections != null) {
-          found = arr.find(() => { /* body not rendered: F143579 */ });
+          found = arr.find(() => { /* body not rendered: F143849 */ });
         }
         closure_1 = found;
         tmp4 = closure_1_6;
@@ -240,7 +240,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
         obj = { command: null, section: null, onPress: null, guildId: null, highlighted: null };
         obj.command = item;
         obj.section = found;
-        obj.onPress = function onPress() { /* body not rendered: F143580 */ };
+        obj.onPress = function onPress() { /* body not rendered: F143850 */ };
         tmp6 = item;
         obj.guildId = item.guild_id;
         num = 0;

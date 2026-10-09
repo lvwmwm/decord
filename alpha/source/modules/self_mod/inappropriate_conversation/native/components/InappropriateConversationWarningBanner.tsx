@@ -1,17 +1,17 @@
-// Module ID: 10397
-// Function ID: 10398
+// Module ID: 10386
+// Function ID: 10387
 // Name: InappropriateConversationWarningBanner
-// Dependencies: [19, 4717, 10266, 21, 10374, 504, 10375, 5298, 10398, 1999, 10401, 10378, 1126, 2]
+// Dependencies: [19, 4719, 10251, 21, 10361, 504, 10362, 5299, 10387, 2000, 10390, 10365, 1126, 2]
 
-// Module 10397 (InappropriateConversationWarningBanner)
+// Module 10386 (InappropriateConversationWarningBanner)
 import Fragment from "Fragment" /* 21 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10266 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10375 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 10401 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10251 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10361 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10362 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 10390 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
 import size from "module_2" /* 2 */;
 
 class InappropriateConversationWarningBanner {

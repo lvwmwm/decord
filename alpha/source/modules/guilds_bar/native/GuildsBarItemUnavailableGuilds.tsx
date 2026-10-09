@@ -1,33 +1,32 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16714
+// Function ID: 16715
 // Name: GuildsBarItemUnavailableGuilds
-// Dependencies: [19, 17, 5970, 21, 5090, 587, 5297, 1126, 558, 576, 504, 16582, 2]
+// Dependencies: [19, 17, 5972, 21, 5091, 587, 5298, 1126, 558, 576, 504, 6163, 16705, 2]
 
-// Module 16591 (GuildsBarItemUnavailableGuilds)
+// Module 16714 (GuildsBarItemUnavailableGuilds)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16582 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16705 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5972 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
 let obj2;
 let size;
-({ Image: c3, Pressable: closure_4 } = react_native);
+const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { unavailableGuilds: obj2, unavailableGuildsIcon: size };
 obj2 = { marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING, justifyContent: "center", alignItems: "center" };
 createStyles = createStyles.createStyles;
 size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
-let closure_7 = createStyles(obj);
+let closure_6 = createStyles(obj);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarItemUnavailableGuilds() {
   let stateFromStores;
   let tmp5;
@@ -35,10 +34,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = stateFromStores;
   let obj = stateFromStores(576);
   const cResult = obj.c(13);
-  const tmp4 = closure_7();
+  const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildAvailabilityStore];
-    const fn = function t() {
+    const fn = function o() {
       return GuildAvailabilityStore.totalUnavailableGuilds;
     };
     cResult[0] = items;
@@ -63,7 +62,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp9 = cResult[3];
     }
     if (cResult[4] !== stateFromStores) {
-      class I {
+      class G {
         constructor() {
           let intl;
           let intl2;
@@ -78,9 +77,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       cResult[4] = stateFromStores;
-      cResult[5] = I;
+      cResult[5] = G;
     } else {
-      class I {
+      class G {
         constructor() {
           let intl;
           let intl2;
@@ -96,7 +95,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
     if (cResult[6] !== tmp4.unavailableGuildsIcon) {
-      class I {
+      class G {
         constructor() {
           let intl;
           let intl2;
@@ -110,11 +109,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           show(obj);
         }
       }
-      const tmp15 = <closure_3 style={tmp4.unavailableGuildsIcon} source={AssetRegistryDefault} />;
+      FastImageDefault;
+      const tmp15 = <tmp14 style={tmp4.unavailableGuildsIcon} source={AssetRegistryDefault} />;
       cResult[6] = tmp4.unavailableGuildsIcon;
       cResult[7] = tmp15;
     } else {
-      class I {
+      class G {
         constructor() {
           let intl;
           let intl2;
@@ -130,7 +130,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
     if (cResult[8] === tmp4.unavailableGuilds) {
-      class I {
+      class G {
         constructor() {
           let intl;
           let intl2;
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    const tmp19 = <closure_4 accessibilityRole="button" accessibilityLabel={tmp9} onPress={tmp11} style={tmp4.unavailableGuilds}>{tmp12}</closure_4>;
+    const tmp19 = <Pressable accessibilityRole="button" accessibilityLabel={tmp9} onPress={tmp11} style={tmp4.unavailableGuilds}>{tmp12}</Pressable>;
     cResult[8] = tmp4.unavailableGuilds;
     cResult[9] = tmp9;
     cResult[10] = tmp11;
@@ -155,7 +155,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   return null;
 }) : (function GuildsBarItemUnavailableGuilds() {
   let stateFromStores;
-  const tmp = closure_7();
+  const tmp = closure_6();
   let obj = stateFromStores(504);
   const items = [GuildAvailabilityStore];
   stateFromStores = obj.useStateFromStores(items, () => GuildAvailabilityStore.totalUnavailableGuilds);
@@ -164,7 +164,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let intl = tmp2(1126).intl;
     const obj3 = { count: stateFromStores };
     ({ style: tmp.unavailableGuildsIcon, source: AssetRegistryDefault });
-    tmp5 = <closure_4 accessibilityRole="button" accessibilityLabel={intl.formatToPlainString(stateFromStores(1126).t["MEpX+2"], obj3)} onPress={function onPress() {
+    FastImageDefault;
+    tmp5 = <Pressable accessibilityRole="button" accessibilityLabel={intl.formatToPlainString(stateFromStores(1126).t["MEpX+2"], obj3)} onPress={function onPress() {
       let intl;
       let intl2;
       let obj2;
@@ -175,7 +176,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       intl2 = intl3.intl;
       obj2 = { count: stateFromStores };
       show(obj);
-    }} style={tmp.unavailableGuilds}>{null}</closure_4>;
+    }} style={tmp.unavailableGuilds}>{null}</Pressable>;
   }
   return tmp5;
 }));

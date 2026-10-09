@@ -1,12 +1,12 @@
-// Module ID: 17887
-// Function ID: 17888
+// Module ID: 18041
+// Function ID: 18042
 // Name: setupLoadFromMessageManagerHandlers
-// Dependencies: [6066, 2115, 1102, 2]
+// Dependencies: [6068, 2115, 1102, 2]
 // Exports: default
 
-// Module 17887 (setupLoadFromMessageManagerHandlers)
+// Module 18041 (setupLoadFromMessageManagerHandlers)
 import DurationsDefault from "Durations" /* 1102 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6066 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6068 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import size from "module_2" /* 2 */;
 

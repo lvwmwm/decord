@@ -1,14 +1,14 @@
-// Module ID: 10553
-// Function ID: 10554
+// Module ID: 10544
+// Function ID: 10545
 // Name: BadgeUtils
-// Dependencies: [8283, 8284, 1126, 8293, 2030, 2]
+// Dependencies: [8291, 8292, 1126, 8301, 2031, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 10553 (BadgeUtils)
+// Module 10544 (BadgeUtils)
 import intl2 from "intl" /* 1126 */;
-import Constants from "Constants" /* 8283 */;
-import BadgeId from "BadgeId" /* 8284 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8293 */;
+import Constants from "Constants" /* 8291 */;
+import BadgeId from "BadgeId" /* 8292 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8301 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -129,7 +129,7 @@ export const getProfileBadgeLabel = function getProfileBadgeLabel(description, i
     const obj = BadgeIdResolution;
     const tmp = require;
     if (!obj.isLegacyBadgeId(info_label.badge_id)) {
-      tmp(2030);
+      tmp(2031);
     }
     return info_label;
   }

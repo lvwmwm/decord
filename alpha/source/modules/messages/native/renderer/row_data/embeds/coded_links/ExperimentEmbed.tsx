@@ -1,26 +1,26 @@
-// Module ID: 11413
-// Function ID: 11414
+// Module ID: 11320
+// Function ID: 11321
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 4977, 7418, 21, 7861, 8117, 11272, 11273, 4785, 11414, 11415, 11416, 7863, 11417, 558, 576, 8119, 5054, 4981, 6828, 11418, 6829, 11271, 2]
+// Dependencies: [19, 17, 502, 4978, 7423, 21, 7870, 8125, 10639, 10640, 4786, 11321, 11322, 11323, 7872, 11324, 558, 576, 8127, 5055, 4982, 6835, 11325, 6836, 10638, 2]
 // Exports: createExperimentEmbed
 
-// Module 11413 (ExperimentEmbed)
+// Module 11320 (ExperimentEmbed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import themes from "themes" /* 4785 */;
-import ExperimentConstants from "ExperimentConstants" /* 4977 */;
-import ExperimentManager from "ExperimentManager" /* 4981 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Constants from "Constants" /* 7418 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7861 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7863 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8117 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8119 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11272 */;
-import useApexExperiments from "useApexExperiments" /* 11273 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 11416 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11417 */;
+import themes from "themes" /* 4786 */;
+import ExperimentConstants from "ExperimentConstants" /* 4978 */;
+import ExperimentManager from "ExperimentManager" /* 4982 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Constants from "Constants" /* 7423 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7870 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7872 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8125 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8127 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 10639 */;
+import useApexExperiments from "useApexExperiments" /* 10640 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 11323 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11324 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -29,7 +29,7 @@ import size from "module_2" /* 2 */;
 let BottomSheet, map;
 
 let tmp;
-const useCodedLinksExperimentEmbeds = tmp(11271);
+const useCodedLinksExperimentEmbeds = tmp(10638);
 const Image = react_native.Image;
 const ExperimentEmbedType = ExperimentConstants.ExperimentEmbedType;
 const InviteTypes = Constants.InviteTypes;
@@ -429,9 +429,9 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp4Result10 = themes;
   if (tmp4Result10.isThemeDark(arg1)) {
-    tmpResult = tmp(11414);
+    tmpResult = tmp(11321);
   } else {
-    tmpResult = tmp(11415);
+    tmpResult = tmp(11322);
   }
   return obj7;
 };

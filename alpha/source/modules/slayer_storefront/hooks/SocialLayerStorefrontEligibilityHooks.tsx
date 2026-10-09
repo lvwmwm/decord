@@ -1,19 +1,19 @@
-// Module ID: 8965
-// Function ID: 8966
+// Module ID: 8976
+// Function ID: 8977
 // Name: SocialLayerStorefrontEligibilityHooks
-// Dependencies: [19, 8966, 2018, 7309, 2086, 5106, 6919, 558, 576, 8435, 504, 8967, 2]
+// Dependencies: [19, 8977, 2019, 7314, 2086, 5107, 6926, 558, 576, 8443, 504, 8978, 2]
 // Exports: useIsCurrentUserPlayingSocialLayerStorefrontGames
 
-// Module 8965 (SocialLayerStorefrontEligibilityHooks)
+// Module 8976 (SocialLayerStorefrontEligibilityHooks)
 import react2 from "react" /* 576 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8435 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8443 */;
 import react from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8966 */;
-import RunningGameStore from "RunningGameStore" /* 2018 */;
-import UserProfileStore from "UserProfileStore" /* 7309 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8977 */;
+import RunningGameStore from "RunningGameStore" /* 2019 */;
+import UserProfileStore from "UserProfileStore" /* 7314 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PresenceStore from "PresenceStore" /* 5106 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6919 */;
+import PresenceStore from "PresenceStore" /* 5107 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6926 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUsersPlay
   }
   const tmp2Result = tmp2(504);
   const stateFromStoresArray = tmp2Result.useStateFromStoresArray(first, tmp8, tmp9);
-  const tmp2Result2 = tmp2(8967);
+  const tmp2Result2 = tmp2(8978);
   const slayerStorefrontDevApplicationIdOverride = tmp2Result2.useSlayerStorefrontDevApplicationIdOverride();
   let tmp12 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {

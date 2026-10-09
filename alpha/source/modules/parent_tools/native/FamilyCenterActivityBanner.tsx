@@ -1,42 +1,41 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 15072
+// Function ID: 15073
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5090, 558, 576, 7711, 7712, 14961, 587, 1126, 2565, 11558, 14968, 14969, 5086, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 7720, 7721, 15073, 587, 1126, 2565, 11487, 15080, 15081, 6163, 5087, 2]
 
-// Module 14960 (FamilyCenterActivityBanner)
+// Module 15072 (FamilyCenterActivityBanner)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import _modDef2565 from "module_2565" /* 2565 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import useUserLinks from "useUserLinks" /* 7711 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7712 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 11558 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import useUserLinks from "useUserLinks" /* 7720 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7721 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 11487 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj2;
 let obj3;
 let obj4;
 let tmp;
-const FamilyCenterBannerButton = tmp(14961);
-({ View: c3, Image: closure_4 } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const FamilyCenterBannerButton = tmp(15073);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
-let closure_7 = createStyles.createStyles({ container: { width: "100%" } });
+let closure_6 = createStyles.createStyles({ container: { width: "100%" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivityBannerButton() {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivityBannerButton() {
   const obj = react2;
   const cResult = obj.c(5);
-  const tmp4 = closure_7();
+  const tmp4 = closure_6();
   const obj2 = useUserLinks;
   const hasActiveLinks = obj2.useHasActiveLinks();
   const tmp6 = useIsInAdultAgeGroupDefault();
@@ -47,7 +46,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
       let tmp8;
       if (cResult[0] !== tmp6) {
         const tmpResult = FamilyCenterBannerButton;
-        const tmp9Result = hasOwnProperty(tmp6 ? tmpResult.FamilyCenterParentQRCodeButton : tmpResult.FamilyCenterTeenQRCodeButton, {});
+        const tmp9Result = React3(tmp6 ? tmpResult.FamilyCenterParentQRCodeButton : tmpResult.FamilyCenterTeenQRCodeButton, {});
         cResult[0] = tmp6;
         cResult[1] = tmp9Result;
         tmp8 = tmp9Result;
@@ -62,7 +61,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
         tmp7 = tmp12;
       }
       const obj4 = { style: tmp4.container, children: tmp8 };
-      const tmp15 = hasOwnProperty(_false, obj4);
+      const tmp15 = React3(View, obj4);
       cResult[2] = tmp4.container;
       cResult[3] = tmp8;
       cResult[4] = tmp15;
@@ -74,7 +73,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   return tmp7;
 }) : (function FamilyCenterActivityBannerButton() {
   let tmp2Result;
-  const tmp = closure_7();
+  const tmp = closure_6();
   const obj = useUserLinks;
   const hasActiveLinks = obj.useHasActiveLinks();
   const tmp5 = useIsInAdultAgeGroupDefault();
@@ -82,9 +81,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   const obj2 = useUserLinks;
   if (!obj2.useHasMaxConnections()) {
     if (!tmp5) {
-      const obj3 = { style: tmp.container, children: hasOwnProperty(tmp5 ? tmp2Result.FamilyCenterParentQRCodeButton : tmp2Result.FamilyCenterTeenQRCodeButton, {}) };
+      const obj3 = { style: tmp.container, children: React3(tmp5 ? tmp2Result.FamilyCenterParentQRCodeButton : tmp2Result.FamilyCenterTeenQRCodeButton, {}) };
       tmp2Result = FamilyCenterBannerButton;
-      tmp7Result = tmp7(_false, obj3);
+      tmp7Result = tmp7(View, obj3);
     } else {
       tmp7Result = null;
     }
@@ -97,9 +96,9 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 1
 createStyles = createStyles.createStyles;
 obj3 = { maxWidth: 243, maxHeight: 119, marginBottom: nativeDefault.space.PX_8 };
 obj4 = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
-let closure_9 = createStyles(obj);
+let closure_8 = createStyles(obj);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivityBanner() {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivityBanner() {
   let items;
   let tmp13;
   let tmp14;
@@ -108,7 +107,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const obj = react2;
   const cResult = obj.c(21);
   const tmp5 = useIsInAdultAgeGroupDefault();
-  const tmp6 = closure_9();
+  const tmp6 = closure_8();
   const obj2 = useUserLinks;
   const hasMaxConnections = obj2.useHasMaxConnections();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -140,7 +139,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   const tmpResult2 = useAgeSpecificText3;
   const ageSpecificText1 = tmpResult2.useAgeSpecificText(tmp13, tmp14);
-  const tmp4Result = importDefault(tmp5 ? 14968 : 14969);
+  const tmp4Result = importDefault(tmp5 ? 15080 : 15081);
   if (cResult[4] === tmp6.art) {
     let tmp19;
     if (cResult[5] === tmp4Result) {
@@ -160,7 +159,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
         if (cResult[13] !== hasMaxConnections) {
           let tmp28 = null;
           if (!hasMaxConnections) {
-            tmp28 = hasOwnProperty(closure_8, {});
+            tmp28 = React3(closure_7, {});
           }
           cResult[13] = hasMaxConnections;
           cResult[14] = tmp28;
@@ -183,7 +182,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
         }
         const obj3 = { style: tmp6.container, children: items };
         items = [tmp19, tmp21, tmp24, tmp27];
-        const tmp34 = metroRequire(_false, obj3);
+        const tmp34 = hasOwnProperty(View, obj3);
         cResult[15] = tmp6.container;
         cResult[16] = tmp19;
         cResult[17] = tmp21;
@@ -193,21 +192,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
         tmp31 = tmp34;
       }
       const obj4 = { style: tmp6.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
-      const tmp26 = hasOwnProperty(Text_Text.Text, obj4);
+      const tmp26 = React3(Text_Text.Text, obj4);
       cResult[10] = ageSpecificText1;
       cResult[11] = tmp6.description;
       cResult[12] = tmp26;
       tmp24 = tmp26;
     }
     const obj5 = { style: tmp6.header, variant: "heading-lg/semibold", children: ageSpecificText };
-    const tmp23 = hasOwnProperty(Text_Text.Text, obj5);
+    const tmp23 = React3(Text_Text.Text, obj5);
     cResult[7] = ageSpecificText;
     cResult[8] = tmp6.header;
     cResult[9] = tmp23;
     tmp21 = tmp23;
   }
   const obj6 = { source: tmp4Result, style: tmp6.art };
-  const tmp20 = hasOwnProperty(React3, obj6);
+  const tmp20 = React3(FastImageDefault, obj6);
   cResult[4] = tmp6.art;
   cResult[5] = tmp4Result;
   cResult[6] = tmp20;
@@ -215,7 +214,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
 }) : (function FamilyCenterActivityBanner() {
   let items;
   const tmp3 = useIsInAdultAgeGroupDefault();
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   const obj = useUserLinks;
   const hasMaxConnections = obj.useHasMaxConnections();
   const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
@@ -230,22 +229,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const formatResult = intl3.format(_modDef2565.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
-  const obj3 = { source: importDefault(tmp3 ? 14968 : 14969), style: tmp4.art };
   const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2565.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  items = [hasOwnProperty(React3, obj3), , , ];
+  const obj3 = { source: importDefault(tmp3 ? 15080 : 15081), style: tmp4.art };
+  const tmp16 = FastImageDefault;
+  items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };
-  items[1] = hasOwnProperty(Text_Text.Text, obj4);
+  items[1] = React3(Text_Text.Text, obj4);
   const obj5 = { style: tmp4.description, variant: "text-sm/medium", color: "text-muted", children: ageSpecificText2 };
-  items[2] = hasOwnProperty(Text_Text.Text, obj5);
+  items[2] = React3(Text_Text.Text, obj5);
   let tmp15Result = null;
-  const tmp13 = metroRequire;
-  const tmp14 = _false;
+  const tmp13 = hasOwnProperty;
+  const tmp14 = View;
   if (!hasMaxConnections) {
-    tmp15Result = tmp15(closure_8, {});
+    tmp15Result = tmp15(closure_7, {});
   }
   items[3] = tmp15Result;
   return tmp13(tmp14, obj2);
 });
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterActivityBanner.tsx");
 
-export default tmp6;
+export default tmp5;

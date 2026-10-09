@@ -1,12 +1,12 @@
-// Module ID: 10633
-// Function ID: 10634
+// Module ID: 10807
+// Function ID: 10808
 // Name: LocationMetadataStore
-// Dependencies: [5908, 504, 584, 2]
+// Dependencies: [5909, 504, 584, 2]
 
-// Module 10633 (LocationMetadataStore)
+// Module 10807 (LocationMetadataStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5908 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5909 */;
 import size from "module_2" /* 2 */;
 
 let _window;

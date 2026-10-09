@@ -1,16 +1,16 @@
-// Module ID: 15143
-// Function ID: 15144
+// Module ID: 15253
+// Function ID: 15254
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 5090, 558, 576, 4810, 5091, 5094, 5387, 15112, 2]
+// Dependencies: [17, 21, 5091, 558, 576, 4811, 5092, 5095, 5388, 15222, 2]
 
-// Module 15143 (BountiesModalEndCard)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 15112 */;
+// Module 15253 (BountiesModalEndCard)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 15222 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const timingPresets = tmp(5094);
+const timingPresets = tmp(5095);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles(() => {
@@ -55,11 +55,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesMo
     const obj = { opacity: withTiming(num, timingPresets.timingStandard) };
     return obj;
   };
-  const obj2 = visible(4810);
-  fn.__closure = { withTiming: visible(5091).withTiming, visible, timingStandard: visible(5094).timingStandard };
+  const obj2 = visible(4811);
+  fn.__closure = { withTiming: visible(5092).withTiming, visible, timingStandard: visible(5095).timingStandard };
   fn.__workletHash = 15062259404736;
   fn.__initData = __initData;
-  ({ withTiming: visible(5091).withTiming, visible, timingStandard: visible(5094).timingStandard });
+  ({ withTiming: visible(5092).withTiming, visible, timingStandard: visible(5095).timingStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] === animatedStyle) {
     if (cResult[1] === bounty) {
@@ -102,7 +102,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesMo
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   let tmp = closure_7();
-  const tmp3 = visible(4810);
+  const tmp3 = visible(4811);
   const fn = function b() {
     let num = 0;
     const withTiming = timing.withTiming;
@@ -113,7 +113,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesMo
     const obj = { opacity: withTiming(num, timingPresets.timingStandard) };
     return obj;
   };
-  let obj = { withTiming: visible(5091).withTiming, visible, timingStandard: visible(5094).timingStandard };
+  let obj = { withTiming: visible(5092).withTiming, visible, timingStandard: visible(5095).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 8770295520643;
   fn.__initData = __initData2;

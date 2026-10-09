@@ -1,22 +1,22 @@
-// Module ID: 16545
-// Function ID: 16546
+// Module ID: 16668
+// Function ID: 16669
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6082, 2086, 5968, 5971, 5111, 1085, 21, 5090, 558, 576, 504, 10325, 1126, 5086, 16546, 4942, 4939, 2]
+// Dependencies: [19, 17, 6084, 2086, 5970, 5973, 5112, 1085, 21, 5091, 558, 576, 504, 10312, 1126, 5087, 16669, 4943, 4940, 2]
 
-// Module 16545 (HomeDrawerFolderRow)
+// Module 16668 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10325 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 10312 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6084 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import SortedGuildStore from "SortedGuildStore" /* 5968 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import SortedGuildStore from "SortedGuildStore" /* 5970 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -764,7 +764,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
     const obj2 = { variant: "text-md/medium", style: closure_1.titleText, lineClamp: 1, color: "text-default", children: folderName };
     folderName = folder.folderName;
     const Text = Text_Text.Text;
-    const tmp3 = closure_12;
+    const tmp3 = authStore2;
     const tmp4 = View;
     const tmp5 = unpackModuleId;
     if (folderName == null) {
@@ -870,7 +870,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerFo
   } else {
     tmp8 = cResult[3];
   }
-  const MobileHomeDrawerExperiment = tmp(4942).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = tmp(4943).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig(tmp8).enableHome;
   let tmp10 = null;
   if (null != stateFromStores) {
@@ -907,7 +907,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerFo
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(4942).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4943).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "folder-expanded-children" }).enableHome;
   let tmp3 = null;
   if (null != stateFromStores) {

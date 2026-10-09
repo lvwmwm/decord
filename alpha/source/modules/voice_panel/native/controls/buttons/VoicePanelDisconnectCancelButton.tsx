@@ -1,24 +1,24 @@
-// Module ID: 17646
-// Function ID: 17647
+// Module ID: 17798
+// Function ID: 17799
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 2062, 5893, 6079, 11989, 21, 5090, 587, 558, 576, 11988, 6043, 4810, 10623, 5104, 7438, 5885, 10782, 17647, 9258, 1126, 17637, 2]
+// Dependencies: [32, 19, 2063, 5894, 6081, 11926, 21, 5091, 587, 558, 576, 11925, 6045, 4811, 10777, 5105, 7443, 5886, 10952, 17799, 9296, 1126, 17789, 2]
 
-// Module 17646 (VoicePanelDisconnectCancelButton)
+// Module 17798 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5104 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6043 */;
-import StreamActionCreators from "StreamActionCreators" /* 7438 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 10623 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5105 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5886 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6045 */;
+import StreamActionCreators from "StreamActionCreators" /* 7443 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10777 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11926 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
-import VoicePanelStore from "VoicePanelStore" /* 6079 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import VoicePanelStore from "VoicePanelStore" /* 6081 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -214,13 +214,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disconnect
         const obj = ChannelRTCParticipants;
         const result = obj.activityParticipantIdToApplicationId(id);
         let _location;
-        const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
-        EmbeddedActivitiesNativeManagerDefault;
+        const leaveEmbeddedActivity = leaveEmbeddedActivity2.leaveEmbeddedActivity;
+        leaveEmbeddedActivity2;
         if (currentEmbeddedActivity != null) {
           _location = currentEmbeddedActivity.location;
         }
         const obj2 = { location: _location, applicationId: result };
-        leaveActivity(obj2);
+        const result1 = leaveEmbeddedActivity(obj2);
       }
     }
   }
@@ -276,6 +276,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disconnect
       closure_5(null);
     }
   }, []);
+  const tmp8 = _require;
   let obj2 = require("ReanimatedRexport");
   const fn = function v() {
     let tmp = null;
@@ -335,13 +336,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disconnect
       const obj = ChannelRTCParticipants;
       const result = obj.activityParticipantIdToApplicationId(id);
       let _location;
-      const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
-      EmbeddedActivitiesNativeManagerDefault;
+      const leaveEmbeddedActivity = leaveEmbeddedActivity2.leaveEmbeddedActivity;
+      leaveEmbeddedActivity2;
       if (currentEmbeddedActivity != null) {
         _location = currentEmbeddedActivity.location;
       }
       const obj2 = { location: _location, applicationId: result };
-      leaveActivity(obj2);
+      const result1 = leaveEmbeddedActivity(obj2);
     }
   }, items);
   if (first === constants.ACTIVITY) {

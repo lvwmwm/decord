@@ -1,26 +1,26 @@
-// Module ID: 9146
-// Function ID: 9147
+// Module ID: 9213
+// Function ID: 9214
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 5436, 502, 1389, 21, 5090, 587, 558, 576, 4991, 504, 5759, 1414, 4929, 6842, 9147, 1200, 9180, 5086, 1126, 5375, 5012, 4775, 2]
+// Dependencies: [19, 17, 5437, 502, 1390, 21, 5091, 587, 558, 576, 4992, 504, 5760, 1415, 4930, 6849, 9177, 1200, 9214, 5087, 1126, 5376, 5013, 4776, 2]
 
-// Module 9146 (ConnectAccountStep)
+// Module 9213 (ConnectAccountStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import shared from "shared" /* 4929 */;
-import useThemeDefault from "useTheme" /* 4991 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import PlatformsDefault from "Platforms" /* 5759 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6842 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9147 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import shared from "shared" /* 4930 */;
+import useThemeDefault from "useTheme" /* 4992 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import PlatformsDefault from "Platforms" /* 5760 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6849 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9177 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
   clientId = clientId.clientId;
   const platformType = clientId.platformType;
   const tmp4 = closure_10();
-  const tmp6 = platformType(4991)();
+  const tmp6 = platformType(4992)();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ApplicationStore];
     cResult[0] = items;
@@ -114,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
       if (null != stateFromStores) {
         const obj2 = { id: null, icon: null };
         ({ id: obj7.id, icon: obj7.icon } = stateFromStores);
-        const tmp5Result = platformType(1414);
+        const tmp5Result = platformType(1415);
         applicationIconSource = tmp5Result.getApplicationIconSource(obj2);
       }
       cResult[9] = stateFromStores;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
     if (cResult[11] !== stateFromStores1) {
       let userAvatarSource;
       if (null != stateFromStores1) {
-        const tmp5Result3 = platformType(1414);
+        const tmp5Result3 = platformType(1415);
         userAvatarSource = tmp5Result3.getUserAvatarSource(stateFromStores1);
       }
       cResult[11] = stateFromStores1;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
         }
       }
       const obj4 = { color: platformType(587).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-      const MoreHorizontalIcon = tmp(9180).MoreHorizontalIcon;
+      const MoreHorizontalIcon = tmp(9214).MoreHorizontalIcon;
       const tmp36 = closure_8(MoreHorizontalIcon, obj4);
       class E {
         constructor() {
@@ -327,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
     cResult[26] = closure_9(View, obj6);
     const tmp42 = closure_9(View, obj6);
   }
-  const tmp5Result4 = platformType(5759);
+  const tmp5Result4 = platformType(5760);
   const value = tmp5Result4.get(platformType);
   let source = null;
   if (null != value) {
@@ -339,7 +339,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
     }
     const makeSource = tmp20.makeSource;
     const icon = value.icon;
-    const tmpResult4 = clientId(4929);
+    const tmpResult4 = clientId(4930);
     source = makeSource(tmpResult4.isThemeLight(tmp6) ? icon.lightPNG : icon.darkPNG);
   }
   cResult[6] = platformType;
@@ -360,7 +360,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
   const platformType = clientId.platformType;
   const platformName = clientId.platformName;
   const tmp = closure_10();
-  const tmp4 = platformType(4991)();
+  const tmp4 = platformType(4992)();
   let obj = clientId(504);
   const items = [ApplicationStore];
   const items1 = [clientId];
@@ -374,26 +374,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
     }
     return currentUser;
   });
-  const obj3 = platformType(5759);
+  const obj3 = platformType(5760);
   const value = obj3.get(platformType);
   let source = null;
   if (null != value) {
-    const makeSource = clientId(1414).makeSource;
-    clientId(1414);
+    const makeSource = clientId(1415).makeSource;
+    clientId(1415);
     const icon = value.icon;
-    const tmp5Result2 = clientId(4929);
+    const tmp5Result2 = clientId(4930);
     source = makeSource(tmp5Result2.isThemeLight(tmp4) ? icon.lightPNG : icon.darkPNG);
   }
   let applicationIconSource;
   if (null != stateFromStores) {
     const obj4 = { id: null, icon: null };
     ({ id: obj6.id, icon: obj6.icon } = stateFromStores);
-    const tmp2Result = platformType(1414);
+    const tmp2Result = platformType(1415);
     applicationIconSource = tmp2Result.getApplicationIconSource(obj4);
   }
   let userAvatarSource;
   if (null != stateFromStores1) {
-    const tmp2Result2 = platformType(1414);
+    const tmp2Result2 = platformType(1415);
     userAvatarSource = tmp2Result2.getUserAvatarSource(stateFromStores1);
   }
   let str;
@@ -415,20 +415,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
   const Avatar = tmp5(1200).Avatar;
   items4 = [closure_8(Avatar, obj9), , ];
   const obj10 = { color: platformType(587).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-  const MoreHorizontalIcon = tmp5(9180).MoreHorizontalIcon;
+  const MoreHorizontalIcon = tmp5(9214).MoreHorizontalIcon;
   items4[1] = closure_8(MoreHorizontalIcon, obj10);
   const obj11 = { source: userAvatarSource, size: clientId(1200).AvatarSizes.XLARGE };
   const Avatar2 = tmp5(1200).Avatar;
   items4[2] = closure_8(Avatar2, obj11);
   items5 = [closure_9(View, obj8), , ];
   const obj12 = { variant: "text-lg/normal", color: "text-default", children: intl.string(clientId(1126).t.uT1CPa) };
-  const Text = tmp5(5086).Text;
+  const Text = tmp5(5087).Text;
   intl = tmp5(1126).intl;
   items5[1] = closure_8(Text, obj12);
-  items5[2] = closure_8(clientId(5086).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: str });
+  items5[2] = closure_8(clientId(5087).Text, { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: str });
   items6 = [closure_9(View, obj7), , , ];
   const obj13 = { variant: "text-sm/normal", color: "text-default", children: intl2.format(clientId(1126).t["aJRE/Q"], { applicationName: str, platformName }) };
-  const Text2 = tmp5(5086).Text;
+  const Text2 = tmp5(5087).Text;
   intl2 = tmp5(1126).intl;
   items6[1] = closure_8(Text2, obj13);
   let tmp16Result = null;
@@ -439,7 +439,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
   }
   items7 = [tmp16Result, , ];
   const obj16 = { variant: "text-md/medium", style: tmp.cardName, color: "text-default", children: platformName };
-  items7[1] = closure_8(clientId(5086).Text, obj16);
+  items7[1] = closure_8(clientId(5087).Text, obj16);
   const obj17 = {
     variant: "primary",
     size: "sm",
@@ -449,16 +449,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
     },
     text: intl3.string(clientId(1126).t.S0W8Z5)
   };
-  const Button = tmp5(5375).Button;
+  const Button = tmp5(5376).Button;
   intl3 = tmp5(1126).intl;
   items7[2] = closure_8(Button, obj17);
   items6[2] = closure_9(View, obj14);
   const obj18 = { style: tmp.infoNotice, children: items8 };
   const obj19 = { color: platformType(587).colors.ICON_FEEDBACK_INFO, size: "sm" };
-  const CircleInformationIcon = tmp5(5012).CircleInformationIcon;
+  const CircleInformationIcon = tmp5(5013).CircleInformationIcon;
   items8 = [closure_8(CircleInformationIcon, obj19), ];
   const obj20 = { variant: "text-sm/normal", color: "text-default", style: tmp.infoText, children: intl4.format(clientId(1126).t["8psEFX"], { platformName, applicationName: str }) };
-  const Text3 = tmp5(5086).Text;
+  const Text3 = tmp5(5087).Text;
   intl4 = tmp5(1126).intl;
   items8[1] = closure_8(Text3, obj20);
   items6[3] = closure_9(View, obj18);
@@ -546,7 +546,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedA
             const _Symbol = Symbol;
             if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
               const obj6 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
-              const CheckmarkLargeIcon = tmp(4775).CheckmarkLargeIcon;
+              const CheckmarkLargeIcon = tmp(4776).CheckmarkLargeIcon;
               const tmp35 = metroImportAll(CheckmarkLargeIcon, obj6);
               cResult[21] = tmp35;
               tmp33 = tmp35;
@@ -709,17 +709,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedA
   const obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: connectedAccount.name };
   items2[0] = metroImportAll(Text_Text.Text, obj8);
   const obj9 = { variant: "text-xs/normal", color: "text-muted", children: intl2.format(intl5.t.Dkd7sE, obj10) };
-  const Text2 = tmp12(5086).Text;
+  const Text2 = tmp12(5087).Text;
   intl2 = tmp12(1126).intl;
   obj10 = { platformName, connectedAccountId: connectedAccount.id };
   items2[1] = metroImportAll(Text2, obj9);
   items1[1] = React4(View, obj7);
   const obj11 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
-  const CheckmarkLargeIcon = tmp12(4775).CheckmarkLargeIcon;
+  const CheckmarkLargeIcon = tmp12(4776).CheckmarkLargeIcon;
   items1[2] = metroImportAll(CheckmarkLargeIcon, obj11);
   items[1] = React4(View, obj5);
   const obj12 = { variant: "text-sm/normal", color: "text-default", children: intl3.format(intl5.t.pyRNXJ, { applicationName }) };
-  const Text3 = tmp12(5086).Text;
+  const Text3 = tmp12(5087).Text;
   intl3 = tmp12(1126).intl;
   items[2] = metroImportAll(Text3, obj12);
   const obj13 = { style: tmp.divider };

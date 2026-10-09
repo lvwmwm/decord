@@ -1,14 +1,14 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 17006
+// Function ID: 17007
 // Name: ConjureStaffAccessNotice
-// Dependencies: [19, 1085, 21, 558, 576, 16879, 1112, 4763, 1126, 3827, 16880, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 17007, 1112, 4765, 1126, 3827, 17008, 2]
 
-// Module 16878 (ConjureStaffAccessNotice)
+// Module 17006 (ConjureStaffAccessNotice)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import LinkingDefault from "Linking" /* 4763 */;
+import LinkingDefault from "Linking" /* 4765 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
   let tmp5;
   let obj = conjureStaffAccessTarget(576);
   const cResult = obj.c(6);
-  let obj2 = conjureStaffAccessTarget(16879);
+  let obj2 = conjureStaffAccessTarget(17007);
   conjureStaffAccessTarget = obj2.useConjureStaffAccessTarget();
   if (cResult[0] !== conjureStaffAccessTarget) {
     const fn = function n() {
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
     if (cResult[2] !== tmp5) {
       const intl = tmp(1126).intl;
       const format = intl.format;
-      const obj3 = { channel: conjureStaffAccessTarget(16879).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
+      const obj3 = { channel: conjureStaffAccessTarget(17007).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp5 };
       const v6anmu1 = _modDef3827["6anmu1"];
       const formatResult = format(v6anmu1, obj3);
       cResult[2] = tmp5;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
       tmp7 = cResult[3];
     }
     if (cResult[4] !== tmp7) {
-      const tmp13 = jsx(conjureStaffAccessTarget(16880).NewInlineNotice, { type: "info", role: "static", message: tmp7 });
+      const tmp13 = jsx(conjureStaffAccessTarget(17008).NewInlineNotice, { type: "info", role: "static", message: tmp7 });
       cResult[4] = tmp7;
       cResult[5] = tmp13;
       tmp11 = tmp13;
@@ -69,15 +69,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSta
   return tmp6;
 }) : (function ConjureStaffAccessNotice() {
   let conjureStaffAccessTarget;
-  let obj = conjureStaffAccessTarget(16879);
+  let obj = conjureStaffAccessTarget(17007);
   conjureStaffAccessTarget = obj.useConjureStaffAccessTarget();
   [][0] = conjureStaffAccessTarget;
   let tmp5 = null;
   if (null != conjureStaffAccessTarget) {
-    const NewInlineNotice = tmp(16880).NewInlineNotice;
+    const NewInlineNotice = tmp(17008).NewInlineNotice;
     const intl = tmp(1126).intl;
     const format = intl.format;
-    const obj3 = { channel: conjureStaffAccessTarget(16879).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };
+    const obj3 = { channel: conjureStaffAccessTarget(17007).CONJURE_STAFF_ACCESS_CHANNEL_NAME, onNavigate: tmp4 };
     const v6anmu1 = _modDef3827["6anmu1"];
     tmp5 = <NewInlineNotice type="info" role="static" message={format(v6anmu1, obj3)} />;
   }

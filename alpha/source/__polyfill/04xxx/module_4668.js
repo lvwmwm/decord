@@ -1,160 +1,148 @@
 // Module ID: 4668
 // Function ID: 4669
-// Dependencies: [4659]
+// Dependencies: [4661]
 
 // Module 4668
-import _mod4659 from "module_4659" /* 4659 */;
+import _mod4661 from "module_4661" /* 4661 */;
 
-let obj3;
-let obj4;
-let obj5;
-const translate3 = function translate(arg0, arg1, arg2) {
-  const text = `${arg0} `;
-  if ("ss" === arg2) {
-    let str13 = "sekunda";
-    if (1 !== arg0) {
-      if (2 !== arg0) {
-        let str14;
-        if (3 !== arg0) {
-          str14 = "sekundi";
+const fn = function n(moment) {
+  let split;
+  let split2;
+  function translate(arg0, arg1, arg2, arg3) {
+    let str = "";
+    switch (arg2) {
+      case "s":
+      {
+        let str13 = "muutama sekunti";
+        if (arg3) {
+          str13 = "muutaman sekunnin";
         }
-        str13 = str14;
+        return str13;
       }
-      str14 = "sekunde";
-    }
-    return text + str13;
-  } else if ("m" === arg2) {
-    let str12 = "jedne minute";
-    if (arg1) {
-      str12 = "jedna minuta";
-    }
-    return str12;
-  } else if ("mm" === arg2) {
-    let str10 = "minuta";
-    let str11 = "minuta";
-    if (1 !== arg0) {
-      if (2 !== arg0) {
-        str11 = str10;
-      }
-      str10 = "minute";
-    }
-    return text + str11;
-  } else if ("h" === arg2) {
-    let str9 = "jednog sata";
-    if (arg1) {
-      str9 = "jedan sat";
-    }
-    return str9;
-  } else if ("hh" === arg2) {
-    let str7 = "sat";
-    if (1 !== arg0) {
-      if (2 !== arg0) {
-        let str8;
-        if (3 !== arg0) {
-          str8 = "sati";
+      case "ss":
+      {
+        let str12 = "sekuntia";
+        if (arg3) {
+          str12 = "sekunnin";
         }
-        str7 = str8;
-      }
-      str8 = "sata";
-    }
-    return text + str7;
-  } else if ("dd" === arg2) {
-    let str6 = "dana";
-    if (1 === arg0) {
-      str6 = "dan";
-    }
-    return text + str6;
-  } else if ("MM" === arg2) {
-    let str4 = "mjesec";
-    if (1 !== arg0) {
-      if (2 !== arg0) {
-        let str5;
-        if (3 !== arg0) {
-          str5 = "mjeseci";
+        str = str12;
+        let tmp2 = arg0;
+        if (arg0 < 10) {
+          let tmp4;
+          if (arg3) {
+            tmp4 = items[arg0];
+          } else {
+            tmp4 = parts[arg0];
+          }
+          tmp2 = tmp4;
         }
-        str4 = str5;
+        return tmp2 + " " + str;
       }
-      str5 = "mjeseca";
-    }
-    return text + str4;
-  } else if ("yy" === arg2) {
-    let str2 = "godina";
-    let str3 = "godina";
-    if (1 !== arg0) {
-      if (2 !== arg0) {
-        str3 = str2;
+      case "m":
+      {
+        let str11 = "minuutti";
+        if (arg3) {
+          str11 = "minuutin";
+        }
+        return str11;
       }
-      str2 = "godine";
+      case "mm":
+      {
+        let str10 = "minuuttia";
+        if (arg3) {
+          str10 = "minuutin";
+        }
+        str = str10;
+        break;
+      }
+      case "h":
+      {
+        let str9 = "tunti";
+        if (arg3) {
+          str9 = "tunnin";
+        }
+        return str9;
+      }
+      case "hh":
+      {
+        let str8 = "tuntia";
+        if (arg3) {
+          str8 = "tunnin";
+        }
+        str = str8;
+        break;
+      }
+      case "d":
+      {
+        let str7 = "p\u00E4iv\u00E4";
+        if (arg3) {
+          str7 = "p\u00E4iv\u00E4n";
+        }
+        return str7;
+      }
+      case "dd":
+      {
+        let str6 = "p\u00E4iv\u00E4\u00E4";
+        if (arg3) {
+          str6 = "p\u00E4iv\u00E4n";
+        }
+        str = str6;
+        break;
+      }
+      case "M":
+      {
+        let str5 = "kuukausi";
+        if (arg3) {
+          str5 = "kuukauden";
+        }
+        return str5;
+      }
+      case "MM":
+      {
+        let str4 = "kuukautta";
+        if (arg3) {
+          str4 = "kuukauden";
+        }
+        str = str4;
+        break;
+      }
+      case "y":
+      {
+        let str3 = "vuosi";
+        if (arg3) {
+          str3 = "vuoden";
+        }
+        return str3;
+      }
+      case "yy":
+      {
+        let str2 = "vuotta";
+        if (arg3) {
+          str2 = "vuoden";
+        }
+        str = str2;
+        break;
+      }
     }
-    return text + str3;
   }
+  const parts = "nolla yksi kaksi kolme nelj\u00E4 viisi kuusi seitsem\u00E4n kahdeksan yhdeks\u00E4n".split(" ");
+  const items = ["nolla", "yhden", "kahden", "kolmen", "nelj\u00E4n", "viiden", "kuuden", parts[7], parts[8], parts[9]];
+  ({ split, split: split2 } = "su_ma_ti_ke_to_pe_la");
+  const obj = { months: "tammikuu_helmikuu_maaliskuu_huhtikuu_toukokuu_kes\u00E4kuu_hein\u00E4kuu_elokuu_syyskuu_lokakuu_marraskuu_joulukuu".split("_"), monthsShort: "tammi_helmi_maalis_huhti_touko_kes\u00E4_hein\u00E4_elo_syys_loka_marras_joulu".split("_"), weekdays: "sunnuntai_maanantai_tiistai_keskiviikko_torstai_perjantai_lauantai".split("_"), weekdaysShort: "su_ma_ti_ke_to_pe_la".split("_"), weekdaysMin: "su_ma_ti_ke_to_pe_la".split("_"), longDateFormat: { LT: "HH.mm", LTS: "HH.mm.ss", L: "DD.MM.YYYY", LL: "Do MMMM[ta] YYYY", LLL: "Do MMMM[ta] YYYY, [klo] HH.mm", LLLL: "dddd, Do MMMM[ta] YYYY, [klo] HH.mm", l: "D.M.YYYY", ll: "Do MMM YYYY", lll: "Do MMM YYYY, [klo] HH.mm", llll: "ddd, Do MMM YYYY, [klo] HH.mm" }, calendar: { sameDay: "[t\u00E4n\u00E4\u00E4n] [klo] LT", nextDay: "[huomenna] [klo] LT", nextWeek: "dddd [klo] LT", lastDay: "[eilen] [klo] LT", lastWeek: "[viime] dddd[na] [klo] LT", sameElse: "L" }, relativeTime: { future: "%s p\u00E4\u00E4st\u00E4", past: "%s sitten", s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
+  return moment.defineLocale("fi", obj);
 };
-function nextWeek() {
-  const dayResult = this.day();
-  if (0 === dayResult) {
-    return "[u] [nedjelju] [u] LT";
-  } else if (3 === dayResult) {
-    return "[u] [srijedu] [u] LT";
-  } else if (6 === dayResult) {
-    return "[u] [subotu] [u] LT";
-  } else {
-    return "[u] dddd [u] LT";
-  }
-}
-function lastWeek() {
-  const dayResult = this.day();
-  if (0 === dayResult) {
-    return "[pro\u0161lu] [nedjelju] [u] LT";
-  } else if (3 === dayResult) {
-    return "[pro\u0161lu] [srijedu] [u] LT";
-  } else if (6 === dayResult) {
-    return "[pro\u0161le] [subote] [u] LT";
-  } else {
-    return "[pro\u0161li] dddd [u] LT";
-  }
-}
 if (typeof exports === "object") {
   if (undefined !== module) {
     if (typeof require === "function") {
-      const _module = _mod4659;
-      const translate2 = translate3;
-      const obj2 = { months: obj3, monthsShort: "sij._velj._o\u017Eu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.".split("_"), monthsParseExact: true, weekdays: "nedjelja_ponedjeljak_utorak_srijeda_\u010Detvrtak_petak_subota".split("_"), weekdaysShort: "ned._pon._uto._sri._\u010Det._pet._sub.".split("_"), weekdaysMin: "ne_po_ut_sr_\u010De_pe_su".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "DD.MM.YYYY", LL: "Do MMMM YYYY", LLL: "Do MMMM YYYY H:mm", LLLL: "dddd, Do MMMM YYYY H:mm" }, calendar: obj4, relativeTime: obj5, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 7 } };
-      const split = "sije\u010Dnja_velja\u010De_o\u017Eujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca".split;
-      let str2 = "_";
-      const defineLocale2 = _module.defineLocale;
-      let str3 = "sije\u010Danj_velja\u010Da_o\u017Eujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac";
-      const split2 = "sije\u010Danj_velja\u010Da_o\u017Eujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac".split;
-      let str4 = "sij._velj._o\u017Eu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.";
-      const split3 = "sij._velj._o\u017Eu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.".split;
-      let str5 = "nedjelja_ponedjeljak_utorak_srijeda_\u010Detvrtak_petak_subota";
-      const split4 = "nedjelja_ponedjeljak_utorak_srijeda_\u010Detvrtak_petak_subota".split;
-      let str6 = "ned._pon._uto._sri._\u010Det._pet._sub.";
-      const split5 = "ned._pon._uto._sri._\u010Det._pet._sub.".split;
-      let str7 = "ne_po_ut_sr_\u010De_pe_su";
-      const split6 = "ne_po_ut_sr_\u010De_pe_su".split;
-      let str8 = "hr";
-      obj3 = { format: "sije\u010Dnja_velja\u010De_o\u017Eujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca".split("_"), standalone: "sije\u010Danj_velja\u010Da_o\u017Eujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac".split("_") };
-      obj4 = { sameDay: "[danas u] LT", nextDay: "[sutra u] LT", nextWeek, lastDay: "[ju\u010Der u] LT", lastWeek, sameElse: "L" };
-      obj5 = { future: "za %s", past: "prije %s", s: "par sekundi", ss: translate2, m: translate2, mm: translate2, h: translate2, hh: translate2, d: "dan", dd: translate2, M: "mjesec", MM: translate2, y: "godinu", yy: translate2 };
-      defineLocale2("hr", obj2);
+      let tmp4 = dependencyMap;
+      fn(_mod4661);
     }
   }
 }
 if (typeof globalThis.define === "function") {
   const define2 = globalThis.define;
   if (globalThis.define.amd) {
-    globalThis.define(["../moment"], function t(defineLocale) {
-      const translate = translate3;
-      defineLocale = defineLocale.defineLocale;
-      const obj = { months: { format: "sije\u010Dnja_velja\u010De_o\u017Eujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca".split("_"), standalone: "sije\u010Danj_velja\u010Da_o\u017Eujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac".split("_") }, monthsShort: "sij._velj._o\u017Eu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.".split("_"), monthsParseExact: true, weekdays: "nedjelja_ponedjeljak_utorak_srijeda_\u010Detvrtak_petak_subota".split("_"), weekdaysShort: "ned._pon._uto._sri._\u010Det._pet._sub.".split("_"), weekdaysMin: "ne_po_ut_sr_\u010De_pe_su".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "DD.MM.YYYY", LL: "Do MMMM YYYY", LLL: "Do MMMM YYYY H:mm", LLLL: "dddd, Do MMMM YYYY H:mm" }, calendar: { sameDay: "[danas u] LT", nextDay: "[sutra u] LT", nextWeek, lastDay: "[ju\u010Der u] LT", lastWeek, sameElse: "L" }, relativeTime: { future: "za %s", past: "prije %s", s: "par sekundi", ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "dan", dd: translate, M: "mjesec", MM: translate, y: "godinu", yy: translate }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 7 } };
-      ({ format: "sije\u010Dnja_velja\u010De_o\u017Eujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca".split("_"), standalone: "sije\u010Danj_velja\u010Da_o\u017Eujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac".split("_") });
-      return defineLocale("hr", obj);
-    });
+    globalThis.define(["../moment"], fn);
   }
 }
-const moment = this.moment;
-let translate = translate3;
-let obj = { months: { format: "sije\u010Dnja_velja\u010De_o\u017Eujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca".split("_"), standalone: "sije\u010Danj_velja\u010Da_o\u017Eujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac".split("_") }, monthsShort: "sij._velj._o\u017Eu._tra._svi._lip._srp._kol._ruj._lis._stu._pro.".split("_"), monthsParseExact: true, weekdays: "nedjelja_ponedjeljak_utorak_srijeda_\u010Detvrtak_petak_subota".split("_"), weekdaysShort: "ned._pon._uto._sri._\u010Det._pet._sub.".split("_"), weekdaysMin: "ne_po_ut_sr_\u010De_pe_su".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "DD.MM.YYYY", LL: "Do MMMM YYYY", LLL: "Do MMMM YYYY H:mm", LLLL: "dddd, Do MMMM YYYY H:mm" }, calendar: { sameDay: "[danas u] LT", nextDay: "[sutra u] LT", nextWeek, lastDay: "[ju\u010Der u] LT", lastWeek, sameElse: "L" }, relativeTime: { future: "za %s", past: "prije %s", s: "par sekundi", ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: "dan", dd: translate, M: "mjesec", MM: translate, y: "godinu", yy: translate }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 7 } };
-let defineLocale = moment.defineLocale;
-({ format: "sije\u010Dnja_velja\u010De_o\u017Eujka_travnja_svibnja_lipnja_srpnja_kolovoza_rujna_listopada_studenoga_prosinca".split("_"), standalone: "sije\u010Danj_velja\u010Da_o\u017Eujak_travanj_svibanj_lipanj_srpanj_kolovoz_rujan_listopad_studeni_prosinac".split("_") });
-defineLocale("hr", obj);
+fn(this.moment);

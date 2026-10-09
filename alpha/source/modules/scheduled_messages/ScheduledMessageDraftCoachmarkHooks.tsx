@@ -1,17 +1,17 @@
-// Module ID: 11678
-// Function ID: 11679
+// Module ID: 11614
+// Function ID: 11615
 // Name: ScheduledMessageDraftCoachmarkHooks
-// Dependencies: [32, 2048, 558, 576, 7090, 2]
+// Dependencies: [32, 2049, 558, 576, 7093, 2]
 
-// Module 11678 (ScheduledMessageDraftCoachmarkHooks)
+// Module 11614 (ScheduledMessageDraftCoachmarkHooks)
 import react from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useSelectedDismissibleContent2 = tmp(7090);
+const useSelectedDismissibleContent2 = tmp(7093);
 let closure_3 = dismissible_content.DismissibleContent.SCHEDULED_MESSAGES_DRAFT_COACHMARK;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScheduledMessageDraftCoachmarkState(isEligible) {
   let tmp4;

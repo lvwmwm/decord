@@ -1,30 +1,30 @@
-// Module ID: 10431
-// Function ID: 10432
+// Module ID: 10420
+// Function ID: 10421
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 4759, 2063, 4717, 1389, 6965, 6994, 1085, 1125, 558, 576, 7873, 38, 5417, 8134, 1383, 8454, 9252, 8362, 1381, 5055, 5056, 7876, 5101, 4945, 10432, 9319, 9317, 2]
+// Dependencies: [19, 4761, 2064, 4719, 1390, 6972, 7001, 1085, 1125, 558, 576, 7882, 38, 5418, 8142, 1384, 8462, 9290, 8370, 1382, 5056, 5057, 7885, 5102, 4946, 10421, 9357, 9355, 2]
 
-// Module 10431 (useNativeForumPostHandlers)
+// Module 10420 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ChatInputUtils from "ChatInputUtils" /* 4945 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
-import transitionToChannel from "transitionToChannel" /* 5101 */;
-import useChannelName from "useChannelName" /* 5417 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7873 */;
-import Tracking from "Tracking" /* 7876 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
-import openMediaModal from "openMediaModal" /* 8362 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9317 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9319 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ChatInputUtils from "ChatInputUtils" /* 4946 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5057 */;
+import transitionToChannel from "transitionToChannel" /* 5102 */;
+import useChannelName from "useChannelName" /* 5418 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7882 */;
+import Tracking from "Tracking" /* 7885 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8142 */;
+import openMediaModal from "openMediaModal" /* 8370 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9355 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9357 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4759 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6965 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 6994 */;
+import ActionSheetStore from "ActionSheetStore" /* 4761 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6972 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7001 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const showLongPressForumPostActionSheetDefault = tmp2(10432);
+const showLongPressForumPostActionSheetDefault = tmp2(10421);
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
 const constants4 = ThreadConstants.OpenThreadAnalyticsLocations;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeForumPostHandlers(threadId) {
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeF
   threadId = threadId.threadId;
   let NORMAL = threadId.reactionType;
   if (undefined === NORMAL) {
-    NORMAL = tmp(7873).ReactionTypes.NORMAL;
+    NORMAL = tmp(7882).ReactionTypes.NORMAL;
   }
   if (cResult[0] !== threadId) {
     const fn = function h(containerRef) {
@@ -461,7 +461,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeF
   if (NORMAL === undefined) {
     let tmp = threadId;
     let tmp2 = dependencyMap;
-    NORMAL = threadId(7873).ReactionTypes.NORMAL;
+    NORMAL = threadId(7882).ReactionTypes.NORMAL;
   }
   const items = [threadId];
   const items1 = [threadId];

@@ -1,20 +1,20 @@
-// Module ID: 9374
-// Function ID: 9375
+// Module ID: 9412
+// Function ID: 9413
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1389, 2060, 21, 2048, 5090, 587, 558, 576, 9342, 504, 4726, 7090, 1126, 9375, 2]
+// Dependencies: [32, 19, 17, 1390, 2061, 21, 2049, 5091, 587, 558, 576, 9380, 504, 4728, 7093, 1126, 9413, 2]
 
-// Module 9374 (useBurstToggleCoachmark)
+// Module 9412 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5090 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let _require;
 
 let size;
 let tmp;
-const SuperReactionIcon2 = tmp(9342);
+const SuperReactionIcon2 = tmp(9380);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -193,14 +193,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstTo
   let obj = first(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = first(4726);
+  const obj2 = first(4728);
   if (obj2.isPremium(stateFromStores)) {
     const items1 = [closure_9];
     items2 = items1;
   } else {
     items2 = [];
   }
-  const tmpResult = first(7090);
+  const tmpResult = first(7093);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   let closure_1 = tmp7;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstTo
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(9375);
+  const tmpResult2 = first(9413);
   const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp5[1];
 });

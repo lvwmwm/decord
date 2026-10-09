@@ -1,23 +1,23 @@
-// Module ID: 8666
-// Function ID: 8667
+// Module ID: 8675
+// Function ID: 8676
 // Name: openInstantInviteActionSheet
-// Dependencies: [5054, 8667, 1999, 1272, 2]
+// Dependencies: [5055, 8676, 2000, 1273, 2]
 // Exports: default
 
-// Module 8666 (openInstantInviteActionSheet)
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
+// Module 8675 (openInstantInviteActionSheet)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const discord_common_AnalyticsUtils = tmp3(1272);
+const discord_common_AnalyticsUtils = tmp3(1273);
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/openInstantInviteActionSheet.tsx");
 
 export default function openInstantInviteActionSheet(invite_channel_id) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   let id = invite_channel_id.vanityURLCode;
-  const tmp4 = asyncRequire(8667, dependencyMap.paths);
+  const tmp4 = asyncRequire(8676, dependencyMap.paths);
   if (id == null) {
     id = invite_channel_id.channel.id;
   }

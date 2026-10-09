@@ -1,22 +1,22 @@
-// Module ID: 7726
-// Function ID: 7727
+// Module ID: 7735
+// Function ID: 7736
 // Name: MessageQueue
-// Dependencies: [109, 5089, 502, 5280, 1085, 5083, 1102, 7727, 3, 5105, 7728, 7170, 1294, 5438, 38, 7729, 7732, 7752, 7737, 2]
+// Dependencies: [109, 5090, 502, 5281, 1085, 5084, 1102, 7736, 3, 5106, 7737, 7175, 1295, 5439, 38, 7738, 7741, 7761, 7746, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 7726 (MessageQueue)
+// Module 7735 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import MessageConstants from "MessageConstants" /* 5083 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
-import NetStats from "NetStats" /* 7170 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 7728 */;
+import MessageConstants from "MessageConstants" /* 5084 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
+import NetStats from "NetStats" /* 7175 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 7737 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import DevSettingsStore from "DevSettingsStore" /* 5089 */;
+import DevSettingsStore from "DevSettingsStore" /* 5090 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 5280 */;
+import NetworkStore from "NetworkStore" /* 5281 */;
 import Constants from "Constants" /* 1085 */;
-import Queue from "Queue" /* 7727 */;
+import Queue from "Queue" /* 7736 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let tmp;
 let tmp2;
 let tmp5;
 let unpackModuleId;
-const HTTPUtils = tmp5(1294);
+const HTTPUtils = tmp5(1295);
 function handleEdit(messageId, fn) {
   let channelId;
   let isCrossposted;

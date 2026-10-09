@@ -1,18 +1,18 @@
-// Module ID: 5745
-// Function ID: 5746
+// Module ID: 5746
+// Function ID: 5747
 // Name: StickersUtils
-// Dependencies: [1243, 2086, 2043, 1085, 5746, 1414, 1899, 1381, 1449, 2]
+// Dependencies: [1244, 2086, 2044, 1085, 5747, 1415, 1900, 1382, 1450, 2]
 // Exports: createStickerPackCategory, getFavoriteStickerIds, getFilenameForSticker, getMessageStickers, getStickerAssetUrl, getStickerFormatTypeFromFileType, getStickerPackBannerAssetUrl, getStickerPackPreviewSticker, getStickerTagForEmoji, isAvailableGuildSticker, isFavoriteSticker, isGuildSticker, isStandardSticker, isStickerAssetUrl, isStickerPackAnimated, shouldAnimateSticker
 
-// Module 5745 (StickersUtils)
+// Module 5746 (StickersUtils)
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import StickersTypes from "StickersTypes" /* 5746 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+import StickersTypes from "StickersTypes" /* 5747 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import StickersConstants from "StickersConstants" /* 2043 */;
+import StickersConstants from "StickersConstants" /* 2044 */;
 import size_mod from "module_2" /* 2 */;
 
 let ASSET_ENDPOINT;
@@ -20,11 +20,11 @@ let c10;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f91623 = (id) => id.id === cover_sticker_id.cover_sticker_id;
+const f91835 = (id) => id.id === cover_sticker_id.cover_sticker_id;
 function getStickerExtensionFromFormatType(format_type) {
   if (StickersTypes.StickerFormat.PNG === format_type) {
-    const SUPPORTS_WEBP = tmp(1414).SUPPORTS_WEBP;
-    const StickerExtensions = tmp(5746).StickerExtensions;
+    const SUPPORTS_WEBP = tmp(1415).SUPPORTS_WEBP;
+    const StickerExtensions = tmp(5747).StickerExtensions;
     return SUPPORTS_WEBP ? StickerExtensions.WEBP : StickerExtensions.PNG;
   } else if (StickersTypes.StickerFormat.APNG === format_type) {
     return StickersTypes.StickerExtensions.APNG;
@@ -59,7 +59,7 @@ export const getStickerPackPreviewSticker = function getStickerPackPreviewSticke
   let closure_0 = cover_sticker_id;
   if (null != cover_sticker_id.cover_sticker_id) {
     const stickers = cover_sticker_id.stickers;
-    const found = stickers.find(f91623);
+    const found = stickers.find(f91835);
     if (null != found) {
       return found;
     }
@@ -120,13 +120,13 @@ export const getStickerAssetUrl = (format_type) => {
     let PNG = format_type.format_type;
     const tmp = format_type.format_type === StickersTypes.StickerFormat.GIF && flag;
     if (tmp) {
-      PNG = tmp23(5746).StickerFormat.PNG;
+      PNG = tmp23(5747).StickerFormat.PNG;
     }
     const tmp3 = getStickerExtensionFromFormatType(PNG);
     const STICKER_ASSETResult = Endpoints.STICKER_ASSET(format_type.id, tmp3);
     let flag2 = false;
     try {
-      flag2 = tmp23(1899).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
+      flag2 = tmp23(1900).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
     } catch (err) {
     }
     let str2 = "";
@@ -203,7 +203,7 @@ export const getStickerPackBannerAssetUrl = function getStickerPackBannerAssetUr
     let sum = combined;
     if (null != size) {
       const _HermesInternal3 = HermesInternal;
-      const tmp15Result = tmp15(1449);
+      const tmp15Result = tmp15(1450);
       sum = combined + "?size=" + tmp15Result.getBestMediaProxySize(size);
     }
     return sum;
@@ -228,7 +228,7 @@ export const createStickerPackCategory = function createStickerPackCategory(id) 
     first = id.stickers[0];
   } else {
     const stickers = id.stickers;
-    first = stickers.find(f91623);
+    first = stickers.find(f91835);
   }
   return obj;
 };

@@ -7,4 +7,4 @@
 import react from "react" /* 19 */;
 
 
-export const ConsumedParamsContext = react.createContext(undefined);
+export const NavigationContainerRefContext = react.createContext(undefined);

@@ -1,18 +1,18 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15348
+// Function ID: 15349
 // Name: VideoQuestTranscriptActionSheet
-// Dependencies: [19, 17, 7381, 21, 5090, 587, 1630, 9544, 9537, 6885, 6828, 1126, 6298, 5373, 5086, 2]
+// Dependencies: [19, 17, 7386, 21, 5091, 587, 1631, 9157, 9150, 6892, 6835, 1126, 6305, 5374, 5087, 2]
 // Exports: default
 
-// Module 15235 (VideoQuestTranscriptActionSheet)
+// Module 15348 (VideoQuestTranscriptActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import AssetUtils from "AssetUtils" /* 9544 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import AssetUtils from "AssetUtils" /* 9157 */;
 import react from "react" /* 19 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7381 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -23,7 +23,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const QuestActionCreators = tmp(9537);
+const QuestActionCreators = tmp(9150);
 const ActivityIndicator = react_native.ActivityIndicator;
 ({ FetchStatus: hasOwnProperty, useVideoQuestUIStore: metroRequire } = VideoQuestUIStore);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -42,7 +42,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
   let obj3;
   let obj4;
   let tmp8;
-  const f120306 = (children, index) => {
+  const f120694 = (children, index) => {
     const obj = { variant: "heading-md/normal", color: "text-muted", children };
     return closure_1_7(quest(dependencyMap[14]).Text, obj, index);
   };
@@ -99,15 +99,15 @@ export default function VideoQuestTranscriptActionSheet(quest) {
     return items;
   }, items1);
   let obj = { scrollable: true, header: closure_7(BottomSheetTitleHeader, obj2), children: tmp7(BottomSheetScrollView, obj3) };
-  const ActionSheet = quest(6885).ActionSheet;
+  const ActionSheet = quest(6892).ActionSheet;
   obj2 = { title: intl.string(quest(1126).t["1YS80z"]) };
-  BottomSheetTitleHeader = quest(6828).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = quest(6835).BottomSheetTitleHeader;
   intl = quest(1126).intl;
   obj3 = { contentContainerStyle: { paddingBottom: bottom }, children: tmp8(Stack, obj4) };
-  BottomSheetScrollView = quest(6298).BottomSheetScrollView;
+  BottomSheetScrollView = quest(6305).BottomSheetScrollView;
   let fetchStatus;
   obj4 = { spacing: 16, style: tmp.content, children: items2 };
-  Stack = quest(5373).Stack;
+  Stack = quest(5374).Stack;
   tmp8 = closure_8;
   if (tmp2 != null) {
     fetchStatus = tmp2.fetchStatus;
@@ -117,7 +117,7 @@ export default function VideoQuestTranscriptActionSheet(quest) {
     const obj5 = { style: tmp.loadingSpinner, size: "large" };
     tmp7Result = tmp7(ActivityIndicator, obj5);
   }
-  items2 = [tmp7Result, memo.length > 0 && memo.map(f120306)];
-  memo.length > 0 && memo.map(f120306);
+  items2 = [tmp7Result, memo.length > 0 && memo.map(f120694)];
+  memo.length > 0 && memo.map(f120694);
   return closure_7(ActionSheet, obj);
 };

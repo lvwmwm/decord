@@ -1,20 +1,20 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13359
+// Function ID: 13360
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1087, 21, 5090, 587, 558, 576, 13267, 6326, 1126, 8271, 7264, 13268, 5086, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5091, 587, 558, 576, 13360, 6333, 1126, 8279, 7269, 13361, 5087, 2]
 
-// Module 13266 (BundleProductDetailsActionSheetPreview)
+// Module 13359 (BundleProductDetailsActionSheetPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl2 from "intl" /* 1126 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6326 */;
-import useShopProductItems from "useShopProductItems" /* 8271 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6333 */;
+import useShopProductItems from "useShopProductItems" /* 8279 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,9 +35,9 @@ let obj5;
 let rect;
 let size;
 let tmp;
-const Text_Text = tmp(5086);
-const CollectiblesUtils = tmp(7264);
-const IndividualProductPreview = tmp(13268);
+const Text_Text = tmp(5087);
+const CollectiblesUtils = tmp(7269);
+const IndividualProductPreview = tmp(13361);
 ({ memo, useCallback: closure_4, useLayoutEffect: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
 ({ Pressable: metroImportAll, ScrollView: c9, View: c10 } = react_native);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
@@ -279,7 +279,7 @@ let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function B
     let skuId;
     const obj = { item, index, isSelected: index === activeIndex, setSelected: onSelect, label: name, trackedSkuId: skuId, onTrackPress };
     name = undefined;
-    const tmp = closure_12;
+    const tmp = authStore2;
     const tmp2 = closure_15;
     if (bundledProducts != null) {
       if (bundledProducts[index] != null) {
@@ -328,7 +328,7 @@ let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function B
       let skuId;
       const obj = { item, index, isSelected: index === importDefault, setSelected: dependencyMap, label: name, trackedSkuId: skuId, onTrackPress: _slicedToArray };
       name = undefined;
-      const tmp = closure_12;
+      const tmp = authStore2;
       const tmp2 = closure_15;
       if (require != null) {
         if (require[index] != null) {
@@ -455,7 +455,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
                     ({ bundleContainer, bundleInfoContainer } = tmp4);
                     if (cResult[20] !== product.name) {
                       const obj3 = { variant: "heading-xl/bold", children: product.name };
-                      const tmp31 = closure_12(Text_Text.Text, obj3);
+                      const tmp31 = authStore2(Text_Text.Text, obj3);
                       cResult[20] = product.name;
                       cResult[21] = tmp31;
                       tmp29 = tmp31;
@@ -474,7 +474,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
                     }
                     if (cResult[24] !== tmp32) {
                       const obj6 = { variant: "text-sm/medium", color: "text-default", children: tmp32 };
-                      const tmp36 = closure_12(Text_Text.Text, obj6);
+                      const tmp36 = authStore2(Text_Text.Text, obj6);
                       cResult[24] = tmp32;
                       cResult[25] = tmp36;
                       tmp34 = tmp36;
@@ -501,7 +501,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
                                   const _HermesInternal = HermesInternal;
                                   const obj7 = { variant: "text-sm/medium", color: "text-muted", children: " - " + tmp21 };
                                   const Text = Text_Text.Text;
-                                  tmp46 = closure_12(Text, obj7);
+                                  tmp46 = authStore2(Text, obj7);
                                 }
                                 cResult[35] = tmp21;
                                 cResult[36] = tmp46;
@@ -575,7 +575,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
                           }
                         }
                         const obj12 = { items, bundledProducts, activeIndex: num, onSelect: tmp6, onTrackPress };
-                        const tmp44 = closure_12(closure_16, obj12);
+                        const tmp44 = authStore2(closure_16, obj12);
                         cResult[30] = num;
                         cResult[31] = bundledProducts;
                         cResult[32] = items;
@@ -599,7 +599,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
           }
         }
         const obj14 = { product: tmp24, width, avatarDecorationOverride: firstAvatarDecoration, profileFrameOverride: firstProfileFrame, profileEffectOverride: firstProfileEffect, handlePreviewPress, onTrackPress };
-        const tmp28 = closure_12(IndividualProductPreview.IndividualProductPreview, obj14);
+        const tmp28 = authStore2(IndividualProductPreview.IndividualProductPreview, obj14);
         cResult[12] = tmp24;
         cResult[13] = firstAvatarDecoration;
         cResult[14] = firstProfileEffect;
@@ -701,28 +701,28 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
     items = [closure_1];
     return obj;
   }, items2);
-  items3[0] = closure_12(IndividualProductPreview.IndividualProductPreview, { product: tmp17, width, avatarDecorationOverride: firstAvatarDecoration, profileFrameOverride: firstProfileFrame, profileEffectOverride: firstProfileEffect, handlePreviewPress, onTrackPress });
+  items3[0] = authStore2(IndividualProductPreview.IndividualProductPreview, { product: tmp17, width, avatarDecorationOverride: firstAvatarDecoration, profileFrameOverride: firstProfileFrame, profileEffectOverride: firstProfileEffect, handlePreviewPress, onTrackPress });
   const obj4 = { style: tmp.bundleInfoContainer, children: items4 };
   items4 = [, ];
   const obj3 = { style: tmp.bundleContainer, children: items5 };
   const obj5 = { variant: "heading-xl/bold", children: product.name };
-  items4[0] = closure_12(Text_Text.Text, obj5);
+  items4[0] = authStore2(Text_Text.Text, obj5);
   const obj6 = { variant: "text-sm/medium", color: "text-default", children: intl.formatToPlainString(intl2.t["/0Yndu"], obj7) };
-  const Text = tmp7(5086).Text;
+  const Text = tmp7(5087).Text;
   intl = tmp7(1126).intl;
   obj7 = { num: items.length };
-  items4[1] = closure_12(Text, obj6);
+  items4[1] = authStore2(Text, obj6);
   items5 = [map1(authStore, obj4), ];
   const obj8 = { style: tmp.bundleInfoContainer, children: items6 };
-  items6 = [closure_12(closure_16, { items, bundledProducts, activeIndex: num, onSelect: tmp3, onTrackPress }), ];
+  items6 = [authStore2(closure_16, { items, bundledProducts, activeIndex: num, onSelect: tmp3, onTrackPress }), ];
   const items7 = [name, ];
   let tmp20Result = null != collectibleTypeLabel;
-  const Text2 = tmp7(5086).Text;
-  const tmp20 = closure_12;
+  const Text2 = tmp7(5087).Text;
+  const tmp20 = authStore2;
   if (tmp20Result) {
     const _HermesInternal = HermesInternal;
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: " - " + collectibleTypeLabel };
-    const Text3 = tmp7(5086).Text;
+    const Text3 = tmp7(5087).Text;
     tmp20Result = tmp20(Text3, obj9);
   }
   items7[1] = tmp20Result;

@@ -1,23 +1,23 @@
-// Module ID: 8065
-// Function ID: 8066
+// Module ID: 8073
+// Function ID: 8074
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8066, 7165, 7161, 1391, 1085, 1381, 584, 1264, 1294, 8067, 1254, 4898, 2048, 2045, 2]
+// Dependencies: [5, 8074, 7170, 7166, 1392, 1085, 1382, 584, 1265, 1295, 8075, 1255, 4899, 2049, 2046, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8065 (UserOfferActionCreators)
+// Module 8073 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8066 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7165 */;
-import UserOfferStore from "UserOfferStore" /* 7161 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8074 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7170 */;
+import UserOfferStore from "UserOfferStore" /* 7166 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, body, closure_12, closure_8, trial_id;
+let _require, body, closure_8, trial_id;
 
 let c10;
 let c9;
@@ -69,6 +69,7 @@ let obj = function _fetchUserOffer() {
           let paymentGatewayOverride;
           let obj12;
           let tmp;
+          let closure_12;
           let error;
           c13 = 2;
           if (0 === c12) {
@@ -89,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "Array", paymentGatewayOverride: "Reflect" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Set" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -102,7 +103,7 @@ let obj = function _fetchUserOffer() {
               error = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {
@@ -421,7 +422,7 @@ export const triggerUserOffer = function triggerUserOffer(triggerType, trigger_l
     }
     const _JSON = JSON;
     const obj5 = { payment_gateway: GOOGLE, trigger_type: triggerType, trigger_location_stack, trigger_metadata: JSON.stringify(tmp6), trigger_uptime_app: obj.getUptimeForTrigger() };
-    const HTTP = tmp7(1294).HTTP;
+    const HTTP = tmp7(1295).HTTP;
     const request = { url: constants.USER_OFFER_TRIGGER, body: obj5, rejectWithError: true };
     const postResult = HTTP.post(request);
     postResult.then((body) => {

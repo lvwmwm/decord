@@ -1,14 +1,14 @@
-// Module ID: 6210
-// Function ID: 6211
+// Module ID: 6212
+// Function ID: 6213
 // Name: XSmallIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 6211, 4777, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 6213, 4778, 2]
 
-// Module 6210 (XSmallIcon)
+// Module 6212 (XSmallIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4777 */;
-import AssetRegistry from "AssetRegistry" /* 6211 */;
+import BaseIconImage2 from "BaseIconImage" /* 4778 */;
+import AssetRegistry from "AssetRegistry" /* 6213 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XSmallIcon
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4777).BaseIconImage;
+  const BaseIconImage = tmp(4778).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

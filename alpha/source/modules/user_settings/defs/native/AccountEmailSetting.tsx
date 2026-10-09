@@ -1,16 +1,16 @@
-// Module ID: 14800
-// Function ID: 14801
+// Module ID: 14908
+// Function ID: 14909
 // Name: AccountEmailSetting
-// Dependencies: [1389, 7966, 558, 576, 504, 6200, 11262, 1126, 2]
+// Dependencies: [1390, 7974, 558, 576, 504, 6202, 10629, 1126, 2]
 
-// Module 14800 (AccountEmailSetting)
+// Module 14908 (AccountEmailSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6200 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import UserStore from "UserStore" /* 1389 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6202 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

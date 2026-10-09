@@ -1,50 +1,92 @@
 // Module ID: 9886
 // Function ID: 9887
-// Dependencies: []
-// Exports: zhStringToNumber, zhStringToYear
+// Dependencies: [41, 42, 93, 95, 98, 9884, 9790, 9791, 9797]
 
 // Module 9886
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9790 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9791 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9797 */;
+import _mod9884 from "module_9884" /* 9884 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-export const zhStringToNumber = function zhStringToNumber(arg0) {
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < arg0.length) {
-    do {
-      let sum;
-      let tmp = arg0[num];
-      if ("\u5341" === tmp) {
-        let result;
-        if (0 === num2) {
-          result = exports.NUMBER[tmp];
-        } else {
-          result = num2 * exports.NUMBER[tmp];
-        }
-        sum = result;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const combined = "(?:on\\s*?)?(" + _mod9884.ORDINAL_NUMBER_PATTERN + ")(?:\\s*(?:tot|\\-|\\\u2013|until|through|till|\\s)\\s*(" + _mod9884.ORDINAL_NUMBER_PATTERN + "))?(?:-|/|\\s*(?:of)?\\s*)(";
+const sum = combined + repeatedTimeunitPattern.matchAnyPattern(_mod9884.MONTH_DICTIONARY);
+const regExp = new RegExp(sum + ")(?:(?:-|/|,?\\s*)" + "(" + _mod9884.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
+class NLMonthNameMiddleEndianParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, NLMonthNameMiddleEndianParser);
+    const obj = _getPrototypeOf(NLMonthNameMiddleEndianParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(NLMonthNameMiddleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, index) {
+      const tmp3 = _mod9884.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = _mod9884.parseOrdinalNumberPattern(index[1]);
+      if (result > 31) {
+        index.index = index.index + index[1].length;
+        return null;
       } else {
-        sum = num2 + exports.NUMBER[tmp];
+        const date = { day: result, month: tmp3 };
+        const parsingComponents = createParsingComponents.createParsingComponents(date);
+        if (index[4]) {
+          parsingComponents.assign("year", _mod9884.parseYear(index[4]));
+        } else {
+          parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, result, tmp3));
+        }
+        if (index[2]) {
+          const result1 = tmp(9884).parseOrdinalNumberPattern(index[2]);
+          const parsingResult = createParsingComponents.createParsingResult(index.index, index[0]);
+          parsingResult.start = parsingComponents;
+          parsingResult.end = parsingComponents.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+          return parsingResult;
+        } else {
+          return parsingComponents;
+        }
       }
-      num = num + 1;
-      num2 = sum;
-      num3 = sum;
-    } while (num < arg0.length);
+    }
   }
-  return num3;
-};
-export const zhStringToYear = function zhStringToYear(arg0) {
-  let length;
-  let num = 0;
-  let str = "";
-  let str2 = "";
-  if (0 < arg0.length) {
-    do {
-      str = `${exports.NUMBER[arg0[num]]}`;
-      num = num + 1;
-      str2 = str;
-      length = arg0.length;
-    } while (num < length);
-  }
-  return parseInt(str2);
-};
-export const NUMBER = { "\u96f6": 0, "\u4e00": 1, "\u4e8c": 2, "\u5169": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6, "\u4e03": 7, "\u516b": 8, "\u4e5d": 9, "\u5341": 10, "\u5eff": 20, "\u5345": 30 };
-export const WEEKDAY_OFFSET = { "\u5929": 0, "\u65e5": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6 };
+];
+
+export default _createClass(NLMonthNameMiddleEndianParser, items);

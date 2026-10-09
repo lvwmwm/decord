@@ -1,39 +1,39 @@
-// Module ID: 15026
-// Function ID: 15027
+// Module ID: 15138
+// Function ID: 15139
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 2062, 6786, 2063, 4717, 5971, 2128, 1085, 9581, 10392, 21, 5090, 587, 558, 576, 5012, 5086, 1502, 1503, 1126, 6849, 10623, 9137, 504, 12357, 1414, 5299, 12356, 5054, 10393, 1999, 1272, 7004, 7014, 6671, 6675, 8466, 4937, 6798, 6793, 11, 11749, 11225, 6267, 6882, 6184, 2]
+// Dependencies: [19, 17, 2063, 6793, 2064, 4719, 5973, 2128, 1085, 9600, 10381, 21, 5091, 587, 558, 576, 5013, 5087, 1503, 1504, 1126, 6856, 10777, 9204, 504, 12293, 1415, 5300, 12292, 5055, 10382, 2000, 1273, 7011, 7017, 6678, 6682, 8474, 4938, 6805, 6800, 11, 11686, 10580, 6269, 6889, 6186, 2]
 // Exports: default, handleDeleteApp
 
-// Module 15026 (UserSettingsAuthedApp)
+// Module 15138 (UserSettingsAuthedApp)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl12 from "intl" /* 1126 */;
-import Link from "Link" /* 1503 */;
-import RootNavigationRef from "RootNavigationRef" /* 4937 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5012 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import useAlertStore from "useAlertStore" /* 5299 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6675 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6793 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6849 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8466 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9581 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10392 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 10623 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12356 */;
+import Link from "Link" /* 1504 */;
+import RootNavigationRef from "RootNavigationRef" /* 4938 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5013 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import useAlertStore from "useAlertStore" /* 5300 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6678 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6682 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6800 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6805 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6856 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8474 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9600 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10381 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10777 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12292 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6786 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6793 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warnin
   const tmp4 = closure_19();
   if (cResult[0] !== tmp4.warningIcon) {
     const obj2 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.warningIcon };
-    const CircleInformationIcon = tmp(5012).CircleInformationIcon;
+    const CircleInformationIcon = tmp(5013).CircleInformationIcon;
     const tmp8 = closure_17(CircleInformationIcon, obj2);
     cResult[0] = tmp4.warningIcon;
     cResult[1] = tmp8;
@@ -98,7 +98,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warnin
   }
   const obj4 = { style: tmp4.warningContainer, children: items };
   items = [tmp5, tmp9];
-  const tmp13 = authStore5(hasOwnProperty, obj4);
+  const tmp13 = authStore6(hasOwnProperty, obj4);
   cResult[4] = tmp4.warningContainer;
   cResult[5] = tmp5;
   cResult[6] = tmp9;
@@ -112,7 +112,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warnin
   const obj2 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED, style: tmp.warningIcon };
   const CircleInformationIcon = CircleInformationIcon2.CircleInformationIcon;
   items = [closure_17(CircleInformationIcon, obj2), closure_17(Text_Text.Text, { color: "text-default", variant: "text-sm/medium", children: text })];
-  return authStore5(hasOwnProperty, obj);
+  return authStore6(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizedAppTwoWay(application) {
@@ -120,7 +120,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Author
   const obj = navigation(576);
   const cResult = obj.c(7);
   application = application.application;
-  const obj2 = navigation(1502);
+  const obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function t() {
@@ -163,7 +163,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Author
   let obj3;
   navigation = undefined;
   application = application.application;
-  const obj = navigation(1502);
+  const obj = navigation(1503);
   navigation = obj.useNavigation();
   const items = [navigation];
   const obj2 = { text: intl.format(navigation(1126).t.jUhnwb, obj3) };
@@ -220,13 +220,13 @@ function handleDeleteApp(application) {
   const selfEmbeddedActivities = EmbeddedActivitiesStore.getSelfEmbeddedActivities();
   const value = selfEmbeddedActivities.get(application.id);
   let _location;
-  const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
-  EmbeddedActivitiesNativeManagerDefault;
+  const leaveEmbeddedActivity = leaveEmbeddedActivity2.leaveEmbeddedActivity;
+  leaveEmbeddedActivity2;
   if (value != null) {
     _location = value.location;
   }
   const obj2 = { location: _location, applicationId: application.id };
-  leaveActivity(obj2);
+  const result = leaveEmbeddedActivity(obj2);
 }
 size = size_mod;
 let result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/UserSettingsAuthedApp.tsx");
@@ -307,20 +307,20 @@ export default function UserSettingsAuthedApp(oauth2Token) {
       application,
       scopes: oauth2Token.scopes,
       onDelete() {
-        application = oauth2Token.application;
-        const id = oauth2Token.id;
+        application = closure_1_0.application;
+        const id = closure_1_0.id;
         const obj = application(stateFromStores[21]);
         obj.delete(id);
         const selfEmbeddedActivities = stateFromStores3.getSelfEmbeddedActivities();
         const value = selfEmbeddedActivities.get(application.id);
         let _location;
-        const leaveActivity = application(stateFromStores[22]).leaveActivity;
-        application(stateFromStores[22]);
+        const leaveEmbeddedActivity = oauth2Token(stateFromStores[22]).leaveEmbeddedActivity;
+        oauth2Token(stateFromStores[22]);
         if (value != null) {
           _location = value.location;
         }
         const obj2 = { location: _location, applicationId: application.id };
-        leaveActivity(obj2);
+        const result = leaveEmbeddedActivity(obj2);
       }
     };
     obj.openAlert("confirm-delete-authed-app", closure_17(UserSettingsAuthedAppDeleteWarningModalDefault, obj2));

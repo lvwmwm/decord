@@ -1,31 +1,30 @@
-// Module ID: 13427
-// Function ID: 13428
+// Module ID: 13519
+// Function ID: 13520
 // Name: NUFTemplate
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 5375, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5087, 6163, 5376, 2]
 
-// Module 13427 (NUFTemplate)
+// Module 13519 (NUFTemplate)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FastImageDefault from "FastImage" /* 6163 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
 let closure_4;
 let hasOwnProperty;
 let obj2;
-({ View: c2, Image: c3 } = react_native);
+const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, title: { textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", lineHeight: 18, marginBottom: 24 }, image: { marginBottom: 24 } };
 obj2 = { padding: 16, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_6 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFActionSheetTemplate(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFActionSheetTemplate(arg0) {
   let CTALabel;
   let description;
   let imageSrc;
@@ -71,7 +70,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFActionShe
           }
           const obj2 = { style: tmp4.container, children: items };
           items = [tmp5, tmp7, tmp10, tmp14];
-          const tmp20 = hasOwnProperty(React2, obj2);
+          const tmp20 = hasOwnProperty(View, obj2);
           cResult[12] = tmp4.container;
           cResult[13] = tmp5;
           cResult[14] = tmp7;
@@ -88,7 +87,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFActionShe
         tmp14 = tmp16;
       }
       const obj4 = { source: imageSrc, style: tmp4.image };
-      const tmp13 = React3(_false, obj4);
+      const tmp13 = React3(FastImageDefault, obj4);
       cResult[6] = imageSrc;
       cResult[7] = tmp4.image;
       cResult[8] = tmp13;
@@ -123,10 +122,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFActionShe
   const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: description };
   items[1] = React3(Text_Text.Text, obj3);
   const obj4 = { source: imageSrc, style: tmp.image };
-  items[2] = React3(_false, obj4);
+  items[2] = React3(FastImageDefault, obj4);
   items[3] = React3(components_Button_Button.Button, { text: CTALabel, size: "md", onPress: onCTAPress, grow: true });
-  return hasOwnProperty(React2, obj);
+  return hasOwnProperty(View, obj);
 });
 const result = size.fileFinishedImporting("modules/nuf_channels/native/components/NUFTemplate.tsx");
 
-export default tmp5;
+export default tmp4;

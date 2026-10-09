@@ -1,34 +1,34 @@
-// Module ID: 18318
-// Function ID: 18319
+// Module ID: 18480
+// Function ID: 18481
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 6180, 5079, 2086, 8614, 5083, 1096, 21, 5090, 587, 1126, 15364, 12690, 15366, 1502, 504, 8613, 6203, 7079, 5054, 16531, 1999, 8505, 4810, 6184, 14664, 1103, 5086, 8752, 558, 576, 4750, 6956, 683, 1200, 15379, 2]
+// Dependencies: [32, 19, 17, 6182, 5080, 2086, 8622, 5084, 1096, 21, 5091, 587, 1126, 15477, 12635, 15479, 1503, 504, 8621, 6205, 7082, 5055, 16654, 2000, 8513, 4811, 6186, 14769, 1103, 5087, 8761, 558, 576, 4752, 6963, 683, 1200, 15492, 2]
 // Exports: default
 
-// Module 18318 (GuildSettingsModalOfficialMessages)
+// Module 18480 (GuildSettingsModalOfficialMessages)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1096 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import DateUtils from "DateUtils" /* 4750 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import TableRowConstants from "TableRowConstants" /* 6180 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6956 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15379 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import DateUtils from "DateUtils" /* 4752 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import TableRowConstants from "TableRowConstants" /* 6182 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6963 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7082 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15492 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
-import MessageConstants from "MessageConstants" /* 5083 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8622 */;
+import MessageConstants from "MessageConstants" /* 5084 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
             const obj3 = { source: AssetRegistryDefault };
             const Avatar = tmp(1200).Avatar;
-            const tmp23 = closure_12(Avatar, obj3);
+            const tmp23 = authStore2(Avatar, obj3);
             cResult[15] = tmp23;
             tmp20 = tmp23;
           } else {
@@ -165,7 +165,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
           }
           if (cResult[17] !== animatedStyles.textStrong) {
             const obj5 = { animated: true, style: textStrong, variant: "text-md/semibold", lineClamp: 1, children: tmp24 };
-            const tmp28 = closure_12(Text_Text.Text, obj5);
+            const tmp28 = authStore2(Text_Text.Text, obj5);
             cResult[17] = animatedStyles.textStrong;
             cResult[18] = tmp28;
             tmp26 = tmp28;
@@ -205,7 +205,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
                 }
                 if (cResult[29] !== tmp36) {
                   const obj7 = { animated: true, variant: "text-md/normal", style: tmp36, children: tmp37 };
-                  const tmp41 = closure_12(Text_Text.Text, obj7);
+                  const tmp41 = authStore2(Text_Text.Text, obj7);
                   cResult[29] = tmp36;
                   cResult[30] = tmp41;
                   tmp39 = tmp41;
@@ -231,7 +231,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
                         return tmp50;
                       }
                       const obj8 = { style: tmp17, pointerEvents: "none", children: tmp46 };
-                      const tmp53 = closure_12(ReanimatedRexportDefault.View, obj8);
+                      const tmp53 = authStore2(ReanimatedRexportDefault.View, obj8);
                       cResult[38] = tmp46;
                       cResult[39] = tmp17;
                       cResult[40] = tmp53;
@@ -267,7 +267,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
           }
           const obj12 = { animated: true, variant: "text-xs/medium", style: items3, children: first };
           items3 = [tmp4.chatTimestamp, animatedStyles.textMuted];
-          const tmp31 = closure_12(Text_Text.Text, obj12);
+          const tmp31 = authStore2(Text_Text.Text, obj12);
           cResult[19] = animatedStyles.textMuted;
           cResult[20] = tmp4.chatTimestamp;
           cResult[21] = tmp31;
@@ -339,26 +339,26 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.chatContainerInner, { backgroundColor: alphaResult.hex() }];
   alphaResult.hex();
-  const View = tmp3(4810).View;
+  const View = tmp3(4811).View;
   const obj5 = { source: AssetRegistryDefault };
   const Avatar = native.Avatar;
-  items2 = [closure_12(Avatar, obj5), ];
+  items2 = [authStore2(Avatar, obj5), ];
   const obj6 = { style: tmp.chatContent, children: items5 };
   const obj7 = { style: tmp.chatHeader, children: items3 };
   const obj8 = { animated: true, style: animatedStyles.textStrong, variant: "text-md/semibold", lineClamp: 1, children: intl.string(intl4.t.cqpybK) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items3 = [closure_12(Text, obj8), ];
+  items3 = [authStore2(Text, obj8), ];
   const obj9 = { animated: true, variant: "text-xs/medium", style: items4, children: memo };
   items4 = [tmp.chatTimestamp, animatedStyles.textMuted];
-  items3[1] = closure_12(Text_Text.Text, obj9);
+  items3[1] = authStore2(Text_Text.Text, obj9);
   items5 = [map1(hasOwnProperty, obj7), ];
   const obj10 = { animated: true, variant: "text-md/normal", style: { color: hexResult }, children: intl2.string(intl4.t.Mi9Kbe) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items5[1] = closure_12(Text2, obj10);
+  items5[1] = authStore2(Text2, obj10);
   items2[1] = map1(hasOwnProperty, obj6);
-  return closure_12(View, obj2);
+  return authStore2(View, obj2);
 });
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalOfficialMessages.tsx");
 
@@ -446,7 +446,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
         const obj = { onPress: handleSaveChanges, text: intl.string(intl4.t["R3BPH+"]) };
         const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
         intl = intl4.intl;
-        return closure_12(HeaderActionButton, obj);
+        return authStore2(HeaderActionButton, obj);
       };
     }
     setOptions(obj);
@@ -466,7 +466,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(16531, dependencyMap.paths);
+    const tmp2 = asyncRequire(16654, dependencyMap.paths);
     intl = intl4.intl;
     openLazy(tmp2, "RoleColorPicker", obj);
   }, items5);

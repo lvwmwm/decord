@@ -1,15 +1,15 @@
-// Module ID: 10941
-// Function ID: 10942
+// Module ID: 11116
+// Function ID: 11117
 // Name: StageChannelBackground
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 2]
 
-// Module 10941 (StageChannelBackground)
+// Module 11116 (StageChannelBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

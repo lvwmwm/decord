@@ -18,7 +18,7 @@ import nullthrows from "nullthrows" /* 70 */;
 
 let _Map1, c7;
 
-const f81225 = () => {
+const f81437 = () => {
   c7 = null;
 };
 function _isNativeReflectConstruct() {
@@ -56,9 +56,9 @@ class PerformanceEventTiming {
       constructResult = obj.apply(self, items);
     }
     const tmp3Result = tmp3(self, constructResult);
-    Object.defineProperty(tmp3Result, closure_9, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_10, { writable: true, value: "a" });
-    Object.defineProperty(tmp3Result, closure_11, { writable: true, value: "a" });
+    Object.defineProperty(tmp3Result, closure_9, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_10, { writable: true, value: "Array" });
+    Object.defineProperty(tmp3Result, closure_11, { writable: true, value: "Array" });
     let num = processingStart.processingStart;
     const tmp14 = _classPrivateFieldBase(tmp3Result, closure_9);
     const tmp7 = closure_9;
@@ -139,7 +139,7 @@ const obj2 = {
       const self = this;
       const self2 = this;
       _Map1 = new _Map(eventCounts);
-      global.queueMicrotask(f81225);
+      global.queueMicrotask(f81437);
       tmp = _Map1;
     }
     return tmp.size;
@@ -159,7 +159,7 @@ items1[1] = {
       const self = this;
       const self2 = this;
       _Map1 = new _Map(eventCounts);
-      global.queueMicrotask(f81225);
+      global.queueMicrotask(f81437);
       obj = _Map1;
     }
     return obj.entries();
@@ -178,7 +178,7 @@ items1[2] = {
       const self = this;
       const self2 = this;
       _Map1 = new _Map(eventCounts);
-      global.queueMicrotask(f81225);
+      global.queueMicrotask(f81437);
       arr = _Map1;
     }
     return arr.forEach(arg0);
@@ -197,7 +197,7 @@ items1[3] = {
       const self = this;
       const self2 = this;
       _Map1 = new _Map(eventCounts);
-      global.queueMicrotask(f81225);
+      global.queueMicrotask(f81437);
       obj = _Map1;
     }
     return obj.get(arg0);
@@ -216,7 +216,7 @@ items1[4] = {
       const self = this;
       const self2 = this;
       _Map1 = new _Map(eventCounts);
-      global.queueMicrotask(f81225);
+      global.queueMicrotask(f81437);
       obj = _Map1;
     }
     return obj.has(arg0);
@@ -235,7 +235,7 @@ items1[5] = {
       const self = this;
       const self2 = this;
       _Map1 = new _Map(eventCounts);
-      global.queueMicrotask(f81225);
+      global.queueMicrotask(f81437);
       obj = _Map1;
     }
     return obj.keys();
@@ -254,7 +254,7 @@ items1[6] = {
       const self = this;
       const self2 = this;
       _Map1 = new _Map(eventCounts);
-      global.queueMicrotask(f81225);
+      global.queueMicrotask(f81437);
       obj = _Map1;
     }
     return obj.values();

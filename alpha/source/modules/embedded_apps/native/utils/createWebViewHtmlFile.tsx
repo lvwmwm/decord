@@ -1,12 +1,12 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 10911
+// Function ID: 10912
 // Name: createWebViewHtmlFile
-// Dependencies: [5, 1162, 1254, 1381, 2]
+// Dependencies: [5, 1162, 1255, 1382, 2]
 // Exports: createInjectedJavascriptForIOS, default, deleteWebViewHtmlFile
 
-// Module 10744 (createWebViewHtmlFile)
+// Module 10911 (createWebViewHtmlFile)
 import react_nativeDefault from "react-native" /* 1162 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ let obj = function _createWebViewHtmlFile() {
               closure_7 = undefined;
               messageForDisallowedNavigationError = 1;
               closure_6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {

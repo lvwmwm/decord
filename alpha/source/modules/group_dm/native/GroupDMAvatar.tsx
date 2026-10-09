@@ -1,18 +1,18 @@
-// Module ID: 10261
-// Function ID: 10262
+// Module ID: 10246
+// Function ID: 10247
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1389, 21, 1200, 5090, 558, 576, 8986, 1387, 504, 2]
+// Dependencies: [19, 17, 1390, 21, 1200, 5091, 558, 576, 8997, 1388, 504, 2]
 
-// Module 10261 (GroupDMAvatar)
+// Module 10246 (GroupDMAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1200 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import ClipView from "ClipView" /* 8986 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ClipView from "ClipView" /* 8997 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FacepileGr
     }
   }
   const obj9 = { nativeCutouts: items2 };
-  const point = { shape: tmp(8986).CutoutShape.Circle, x: diff1, y: diff2, size: result1 };
+  const point = { shape: tmp(8997).CutoutShape.Circle, x: diff1, y: diff2, size: result1 };
   items2 = [point];
   cResult[2] = result1;
   cResult[3] = diff1;

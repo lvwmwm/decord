@@ -268,7 +268,7 @@ class FeedbackWidget {
                 let fileName1;
                 uri1 = undefined;
                 if (self._hasScreenshot()) {
-                  obj10.setState({ filename: "useSharedValue", attachment: "apply", attachmentUri: "next" });
+                  obj10.setState({ filename: "toCharArray$esjava$1", attachment: "T", attachmentUri: "code" });
                 } else {
                   imagePicker = obj10.props.imagePicker;
                   if (imagePicker) {

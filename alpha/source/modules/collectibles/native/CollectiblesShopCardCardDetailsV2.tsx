@@ -1,33 +1,33 @@
-// Module ID: 9023
-// Function ID: 9024
+// Module ID: 9038
+// Function ID: 9039
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 7120, 1085, 21, 5090, 587, 558, 576, 8938, 7263, 9024, 7264, 9026, 9040, 1126, 5086, 9009, 1381, 9041, 9005, 8278, 4726, 4778, 4927, 9043, 504, 9044, 5387, 2]
+// Dependencies: [19, 17, 7125, 1085, 21, 5091, 587, 558, 576, 8949, 7268, 9039, 7269, 9041, 9055, 1126, 5087, 9020, 1382, 9056, 9016, 8286, 4728, 4779, 4928, 9058, 504, 9059, 5388, 2]
 
-// Module 9023 (CollectiblesShopCardCardDetailsV2)
+// Module 9038 (CollectiblesShopCardCardDetailsV2)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
-import useToken from "useToken" /* 4778 */;
-import ColorUtils from "ColorUtils" /* 4927 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
-import useCurrentUser from "useCurrentUser" /* 8278 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8938 */;
-import OrbsIcon from "OrbsIcon" /* 9009 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9024 */;
-import _mod9026 from "module_9026" /* 9026 */;
-import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9040 */;
-import getProductName from "getProductName" /* 9043 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import useToken from "useToken" /* 4779 */;
+import ColorUtils from "ColorUtils" /* 4928 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7268 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7269 */;
+import useCurrentUser from "useCurrentUser" /* 8286 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 8949 */;
+import OrbsIcon from "OrbsIcon" /* 9020 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9039 */;
+import _mod9041 from "module_9041" /* 9041 */;
+import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9055 */;
+import getProductName from "getProductName" /* 9058 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7120 */;
+import IAPStore from "IAPStore" /* 7125 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj2;
 let size;
 let tmp11;
 let tmp4;
-const LinearGradientDefault = tmp11(5387);
-const CollectiblesShopCardVariantsDefault = tmp4(9044);
+const LinearGradientDefault = tmp11(5388);
+const CollectiblesShopCardVariantsDefault = tmp4(9059);
 const View = react_native.View;
 ({ CurrencyCodes: metroRequire, VerticalGradient: metroImportDefault } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -103,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               tmp13 = cResult[13];
             }
             const discountPercentage2 = tmp13.discountPercentage;
-            const tmpResult = _mod9026;
+            const tmpResult = _mod9041;
             const balance = tmpResult.useFetchVirtualCurrencyBalance().balance;
             let tmp17 = null;
             if (null != tmp9) {
@@ -394,11 +394,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                               }
                             }
                           }
-                          let tmp53Result = discountPercentage2 >= tmp(7264).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                          let tmp53Result = discountPercentage2 >= tmp(7269).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                           if (tmp53Result) {
                             const items1 = [, , ];
                             ({ discountPercentage: arr6[0], text: arr6[1] } = styles);
-                            const Text2 = tmp(5086).Text;
+                            const Text2 = tmp(5087).Text;
                             let androidTextPadding;
                             const tmp53 = metroImportAll;
                             const tmpResult11 = PlatformUtils;
@@ -495,11 +495,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                           }
                         }
                       }
-                      let tmp31Result = discountPercentage >= tmp(7264).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
+                      let tmp31Result = discountPercentage >= tmp(7269).DISCOUNT_DISPLAY_MINIMUM_THRESHOLD;
                       if (tmp31Result) {
                         const items5 = [, , ];
                         ({ discountPercentage: arr2[0], text: arr2[1] } = styles);
-                        const Text = tmp(5086).Text;
+                        const Text = tmp(5087).Text;
                         let androidTextPadding1;
                         const tmp31 = metroImportAll;
                         const tmpResult13 = PlatformUtils;
@@ -537,10 +537,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
                 let tmp21;
                 if (discountSource === CollectiblesUtils.ShopDiscountSource.THIRDPARTY) {
                   const obj22 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(9041).TagIcon, obj22);
+                  tmp21 = metroImportAll(tmp(9056).TagIcon, obj22);
                 } else {
                   const obj23 = { size: "xs", color: "mobile-text-heading-primary", style: styles.wheelIcon };
-                  tmp21 = metroImportAll(tmp(9005).NitroWheelIcon, obj23);
+                  tmp21 = metroImportAll(tmp(9016).NitroWheelIcon, obj23);
                 }
                 tmp19 = tmp21;
               }

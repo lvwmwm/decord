@@ -1,16 +1,16 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 12591
+// Function ID: 12592
 // Name: BugReportManager
-// Dependencies: [5, 17, 1369, 1085, 7477, 1381, 12588, 12590, 1278, 6797, 7500, 12652, 2]
+// Dependencies: [5, 17, 1370, 1085, 7482, 1382, 12528, 12530, 1279, 6804, 7505, 12592, 2]
 
-// Module 12651 (BugReportManager)
+// Module 12591 (BugReportManager)
 import Constants from "Constants" /* 1085 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
-import react_nativeDefault from "react-native" /* 7500 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
+import react_nativeDefault from "react-native" /* 7505 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1370 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_3, duration;

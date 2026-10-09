@@ -1,17 +1,17 @@
-// Module ID: 10453
-// Function ID: 10454
+// Module ID: 10442
+// Function ID: 10443
 // Name: updateChannelUnreadSettings
-// Dependencies: [5971, 1085, 5972, 1095, 6798, 10425, 6793, 2]
+// Dependencies: [5973, 1085, 5974, 1095, 6805, 10414, 6800, 2]
 // Exports: default
 
-// Module 10453 (updateChannelUnreadSettings)
+// Module 10442 (updateChannelUnreadSettings)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6793 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10425 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import ReadStateConstants from "ReadStateConstants" /* 5974 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6800 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6805 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10414 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsObjects = Constants.AnalyticsObjects;

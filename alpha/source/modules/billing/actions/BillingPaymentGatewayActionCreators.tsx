@@ -1,25 +1,25 @@
-// Module ID: 5732
-// Function ID: 5733
+// Module ID: 5733
+// Function ID: 5734
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1085, 1096, 3, 1294, 1126, 5721, 5733, 584, 38, 5734, 5735, 4748, 5631, 2]
+// Dependencies: [5, 1085, 1096, 3, 1295, 1126, 5722, 5734, 584, 38, 5735, 5736, 4750, 5632, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 5732 (BillingPaymentGatewayActionCreators)
+// Module 5733 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5721 */;
-import react from "react" /* 5733 */;
-import StripeActionCreators from "StripeActionCreators" /* 5734 */;
-import StripeUtilsAll from "StripeUtils" /* 5735 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5722 */;
+import react from "react" /* 5734 */;
+import StripeActionCreators from "StripeActionCreators" /* 5735 */;
+import StripeUtilsAll from "StripeUtils" /* 5736 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 1085 */;
 import Constants_mod2 from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
-let _undefined, closure_12, closure_5, closure_8, postal_code, returnUrl;
+let _undefined, closure_5, closure_8, postal_code, returnUrl;
 
 let PaymentSourceTypes;
 let c9;
@@ -531,7 +531,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
             billingAddressToken = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -693,7 +693,7 @@ obj = function _confirmPaymentElementSource() {
                 billing_details = undefined;
                 c12 = 3;
                 c13 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
               break;
             }
@@ -766,8 +766,8 @@ obj = function _confirmPaymentElementSource() {
                         if (closure_11 == null) {
                           _undefined = undefined;
                         }
-                        tmp121 = { setupIntent: _undefined, error: "Array" };
-                        const obj8 = { setupIntent: _undefined, error: "Array" };
+                        tmp121 = { setupIntent: _undefined, error: "r" };
+                        const obj8 = { setupIntent: _undefined, error: "r" };
                         if (shouldRecreateSetupIntentForPaymentElement(tmp121.error)) {
                           if (c3 !== closure_137_10.PAYMENT_REQUEST) {
                             c12 = 7;
@@ -1319,7 +1319,7 @@ obj = function _createAdyenVaultablePaymentSource() {
               adyen_redirect_url = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {
@@ -1468,6 +1468,7 @@ obj = function _createStripePaymentSourceToken() {
           let state;
           let postalCode;
           let obj6;
+          let closure_12;
           let paymentMethod;
           let error;
           c5 = 2;

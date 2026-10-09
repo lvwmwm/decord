@@ -1,19 +1,19 @@
-// Module ID: 16441
-// Function ID: 16442
+// Module ID: 16560
+// Function ID: 16561
 // Name: conjureUnread
-// Dependencies: [19, 1243, 6040, 5972, 584, 11, 16442, 558, 576, 13074, 504, 16443, 2]
+// Dependencies: [19, 1244, 6042, 5974, 584, 11, 16561, 558, 576, 12949, 504, 16562, 2]
 // Exports: ackConjureProject
 
-// Module 16441 (conjureUnread)
+// Module 16560 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import conjureProjectMute from "conjureProjectMute" /* 13074 */;
-import VibegrationsReadStateFlags from "VibegrationsReadStateFlags" /* 16442 */;
+import ReadStateConstants from "ReadStateConstants" /* 5974 */;
+import conjureProjectMute from "conjureProjectMute" /* 12949 */;
+import VibegrationsReadStateFlags from "VibegrationsReadStateFlags" /* 16561 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import ReadStateStore from "ReadStateStore" /* 6042 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ function unreadStatus(arg0, arg1, arg2) {
         const nonTimestampBits = obj.getNonTimestampBits(arg1);
         const tmp6 = require;
         if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-          FINISHED = tmp6(16442).VibegrationsReadStateFlags.NEEDS_INPUT;
+          FINISHED = tmp6(16561).VibegrationsReadStateFlags.NEEDS_INPUT;
         }
         tmp = FINISHED;
       }
@@ -77,11 +77,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
               const obj2 = SnowflakeUtilsDefault;
               const nonTimestampBits = obj2.getNonTimestampBits(ackMessageIdResult);
               if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-                FINISHED = tmp7(16442).VibegrationsReadStateFlags.NEEDS_INPUT;
+                FINISHED = tmp7(16561).VibegrationsReadStateFlags.NEEDS_INPUT;
               }
               tmp10 = FINISHED;
             }
-            FINISHED = tmp7(16442).VibegrationsReadStateFlags.FINISHED;
+            FINISHED = tmp7(16561).VibegrationsReadStateFlags.FINISHED;
           }
         }
         tmp2 = tmp10;
@@ -121,11 +121,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
             const obj2 = SnowflakeUtilsDefault;
             const nonTimestampBits = obj2.getNonTimestampBits(ackMessageIdResult);
             if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-              FINISHED = tmp7(16442).VibegrationsReadStateFlags.NEEDS_INPUT;
+              FINISHED = tmp7(16561).VibegrationsReadStateFlags.NEEDS_INPUT;
             }
             tmp10 = FINISHED;
           }
-          FINISHED = tmp7(16442).VibegrationsReadStateFlags.FINISHED;
+          FINISHED = tmp7(16561).VibegrationsReadStateFlags.FINISHED;
         }
       }
       tmp2 = tmp10;
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjur
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = stateFromStores(16443)();
+  const tmp9 = stateFromStores(16562)();
   dependencyMap = tmp9;
   if (cResult[4] === tmp9) {
     if (cResult[5] === arg0) {
@@ -285,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjur
     const tmp2 = null != closure_0 && ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT) > 0;
     return tmp2;
   }, items1);
-  let tmp2 = stateFromStores(16443)();
+  let tmp2 = stateFromStores(16562)();
   dependencyMap = tmp2;
   const items2 = [arg0, stateFromStores, tmp2];
   const effect = react.useEffect(() => {

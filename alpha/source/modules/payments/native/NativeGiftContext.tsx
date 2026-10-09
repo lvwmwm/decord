@@ -1,9 +1,9 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 10025
+// Function ID: 10026
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8292, 10006, 10041, 1389, 1085, 7121, 1391, 1096, 21, 3, 7136, 558, 576, 10042, 7137, 4741, 10043, 1126, 10044, 4726, 7115, 10045, 504, 10074, 10081, 8297, 8284, 5298, 1264, 6865, 10082, 584, 1381, 10004, 2]
+// Dependencies: [5, 32, 19, 8300, 9101, 10026, 1390, 1085, 7126, 1392, 1096, 21, 3, 7141, 558, 576, 10027, 7142, 4743, 10028, 1126, 10029, 4728, 7120, 10030, 504, 10059, 10066, 8305, 8292, 5299, 1265, 6872, 10067, 584, 1382, 10023, 2]
 
-// Module 10040 (NativeGiftContext)
+// Module 10025 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,28 +11,28 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import BillingUtils from "BillingUtils" /* 4741 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
-import Constants3 from "Constants" /* 7121 */;
-import ContextUtilsDefault from "ContextUtils" /* 7136 */;
-import BadgeId from "BadgeId" /* 8284 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8297 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10004 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10082 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import BillingUtils from "BillingUtils" /* 4743 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
+import Constants3 from "Constants" /* 7126 */;
+import ContextUtilsDefault from "ContextUtils" /* 7141 */;
+import BadgeId from "BadgeId" /* 8292 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8305 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10023 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10067 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8292 */;
-import PromotionsStore_mod from "PromotionsStore" /* 10006 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10041 */;
-import UserStore from "UserStore" /* 1389 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8300 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9101 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10026 */;
+import UserStore from "UserStore" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let constants;
+let TIER_2, constants;
 
 let closure_12;
 let closure_14;
@@ -110,7 +110,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGif
   }
   if (null != selectedGiftingPromotionReward) {
     let items1;
-    if (premiumType === closure_12.TIER_2) {
+    if (premiumType === authStore2.TIER_2) {
       const items = [selectedGiftingPromotionReward];
       items1 = items;
     }
@@ -121,7 +121,6 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGif
   }
   items1 = [];
 }) : (function useGiftInfoOptions(giftStyle) {
-  let TIER_2;
   giftStyle = giftStyle.giftStyle;
   const recipientUserId = giftStyle.recipientUserId;
   const customGiftMessage = giftStyle.customGiftMessage;
@@ -167,7 +166,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGif
       soundId = soundEffect.soundId;
     }
     if (null != selectedGiftingPromotionReward) {
-      if (premiumType === TIER_2.TIER_2) {
+      if (premiumType === authStore2.TIER_2) {
         const items = [tmp5];
       }
       obj.reward_sku_ids = [];
@@ -631,7 +630,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: "twitch.tv", planSelection: { premiumType, planInterval }, giftInfo: "youtube.com" };
+  let obj4 = { orderId: "a", planId: "adam", planSelection: { premiumType, planInterval }, giftInfo: "erkek" };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
@@ -651,7 +650,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: "twitch.tv", planSelection: { premiumType, planInterval }, giftInfo: "youtube.com" };
+  let obj = { orderId: "a", planId: "adam", planSelection: { premiumType, planInterval }, giftInfo: "erkek" };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);
@@ -946,6 +945,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftContextProvider(basePurchaseAnalytics) {
+  let closure_12;
   let closure_15;
   let first1;
   let first2;
@@ -971,7 +971,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftCo
   const initialOrder = basePurchaseAnalytics.initialOrder;
   const useState = react.useState;
   if (premiumType == null) {
-    premiumType = closure_12.TIER_2;
+    premiumType = TIER_2.TIER_2;
   }
   let tmp6 = first2(useState(premiumType), 2);
   [tmp7, r10026] = tmp6;
@@ -1017,7 +1017,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftCo
       planIdForPremiumType = cResult[3];
       tmp29 = cResult[4];
     }
-    closure_12 = tmp29;
+    TIER_2 = tmp29;
     if (null == handlePremiumPurchase[tmp28]) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;

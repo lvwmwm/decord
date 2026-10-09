@@ -1,15 +1,15 @@
-// Module ID: 10645
-// Function ID: 10646
+// Module ID: 10689
+// Function ID: 10690
 // Name: OAuth2AuthorizeModal
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9129, 1630, 4810, 5374, 1126, 10646, 6210, 6189, 5086, 10648, 6803, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 9196, 1631, 4811, 5375, 1126, 10690, 6212, 6191, 5087, 10692, 6810, 2]
 
-// Module 10645 (OAuth2AuthorizeModal)
+// Module 10689 (OAuth2AuthorizeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5374 */;
+import spring from "spring" /* 5375 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,9 +39,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2Author
   const obj = require("react");
   const cResult = obj.c(38);
   const tmp4 = closure_8();
-  const tmp6 = sharedValue(9129)(arg0);
+  const tmp6 = sharedValue(9196)(arg0);
   _require = tmp6;
-  const top = sharedValue(1630)().top;
+  const top = sharedValue(1631)().top;
   const obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
   const fn = function o() {
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2Author
           }
         }
         const obj5 = { color: sharedValue(587).colors.INTERACTIVE_TEXT_DEFAULT };
-        const ArrowSmallLeftIcon = tmp(10646).ArrowSmallLeftIcon;
+        const ArrowSmallLeftIcon = tmp(10690).ArrowSmallLeftIcon;
         tmp18 = closure_5(ArrowSmallLeftIcon, obj5);
       } else {
         class S {
@@ -160,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2Author
           }
         }
         const obj6 = { color: sharedValue(587).colors.INTERACTIVE_TEXT_DEFAULT };
-        const XSmallIcon = tmp(6210).XSmallIcon;
+        const XSmallIcon = tmp(6212).XSmallIcon;
         tmp18 = closure_5(XSmallIcon, obj6);
       }
       cResult[11] = tmp6.backStep;
@@ -215,9 +215,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2Author
   let tmp2Result;
   const tmp = closure_8();
   const tmp2 = sharedValue;
-  const tmp4 = sharedValue(9129)(arg0);
+  const tmp4 = sharedValue(9196)(arg0);
   _require = tmp4;
-  const top = sharedValue(1630)().top;
+  const top = sharedValue(1631)().top;
   const obj = require("ReanimatedRexport");
   sharedValue = obj.useSharedValue(0);
   const fn = function b() {
@@ -271,27 +271,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OAuth2Author
   };
   if (null != tmp4.backStep) {
     const obj7 = { color: tmp2(587).colors.INTERACTIVE_TEXT_DEFAULT };
-    const ArrowSmallLeftIcon = tmp5(10646).ArrowSmallLeftIcon;
+    const ArrowSmallLeftIcon = tmp5(10690).ArrowSmallLeftIcon;
     tmp11Result = tmp11(ArrowSmallLeftIcon, obj7);
   } else {
     const obj8 = { color: tmp2(587).colors.INTERACTIVE_TEXT_DEFAULT };
-    const XSmallIcon = tmp5(6210).XSmallIcon;
+    const XSmallIcon = tmp5(6212).XSmallIcon;
     tmp11Result = tmp11(XSmallIcon, obj8);
   }
   items2 = [closure_5(PressableOpacity, obj6), , ];
   const obj9 = { style: tmp.title, children: closure_5(Text, obj10) };
   obj10 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: intl3.string(require("intl").t["y+/PE9"]) };
-  Text = tmp5(5086).Text;
+  Text = tmp5(5087).Text;
   intl3 = tmp5(1126).intl;
   items2[1] = closure_5(View, obj9);
   const obj11 = { style: items3 };
   items3 = [tmp.titleContainerBorder, animatedStyle];
-  items2[2] = closure_5(tmp2(4810).View, obj11);
+  items2[2] = closure_5(tmp2(4811).View, obj11);
   items4 = [closure_6(View, obj4), ];
   const obj12 = { bottom: true, style: tmp.contentContainer, children: closure_5(tmp2Result, obj13) };
-  const SafeAreaPaddingView = tmp5(6803).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp5(6810).SafeAreaPaddingView;
   obj13 = { onScroll: callback, centerContent: true };
-  tmp2Result = tmp2(10648);
+  tmp2Result = tmp2(10692);
   const merged = Object.assign(tmp4);
   items4[1] = closure_5(SafeAreaPaddingView, obj12);
   return closure_6(View, obj3);

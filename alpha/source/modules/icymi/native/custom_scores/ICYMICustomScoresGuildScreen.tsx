@@ -1,28 +1,28 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16827
+// Function ID: 16828
 // Name: ICYMICustomScoresGuildScreen
-// Dependencies: [32, 19, 17, 7237, 2063, 2086, 5971, 8429, 21, 5090, 587, 504, 5417, 8446, 1126, 5054, 16702, 1999, 8134, 6184, 1200, 10441, 5086, 558, 576, 7239, 1630, 16703, 10508, 8600, 2]
+// Dependencies: [32, 19, 17, 7242, 2064, 2086, 5973, 8437, 21, 5091, 587, 504, 5418, 8454, 1126, 5055, 16828, 2000, 8142, 6186, 1200, 10430, 5087, 558, 576, 7244, 1631, 16829, 10498, 8608, 2]
 
-// Module 16701 (ICYMICustomScoresGuildScreen)
+// Module 16827 (ICYMICustomScoresGuildScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import ChannelListState from "ChannelListState" /* 7239 */;
-import ICYMIUtils from "ICYMIUtils" /* 8446 */;
-import ChevronSmallDownIcon2 from "ChevronSmallDownIcon" /* 10508 */;
-import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 16703 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import ChannelListState from "ChannelListState" /* 7244 */;
+import ICYMIUtils from "ICYMIUtils" /* 8454 */;
+import ChevronSmallDownIcon2 from "ChevronSmallDownIcon" /* 10498 */;
+import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 16829 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelListStore from "ChannelListStore" /* 7237 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelListStore from "ChannelListStore" /* 7242 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
-import ICYMIStore from "ICYMIStore" /* 8429 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+import ICYMIStore from "ICYMIStore" /* 8437 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -231,7 +231,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
             return ICYMIStore.getCustomGuildScore(guildId);
           }
         }
-        const tmp2Result5 = navigation(8446);
+        const tmp2Result5 = navigation(8454);
         const numberToCustomScoreResult = tmp2Result5.numberToCustomScore(stateFromStores1);
         cResult[12] = stateFromStores1;
         cResult[13] = numberToCustomScoreResult;
@@ -283,7 +283,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
             return ChannelListStore.getGuild(guildId);
           }
         }
-        const bottom = guildId(1630)().bottom;
+        const bottom = guildId(1631)().bottom;
         if (cResult[20] === stateFromStores) {
           class R {
             constructor() {
@@ -317,7 +317,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
                 const Text2 = Text_Text.Text;
                 intl2 = intl5.intl;
                 items[2] = unpackModuleId(Text2, obj6);
-                tmp16 = closure_12(map1, obj2);
+                tmp16 = authStore2(map1, obj2);
               }
               return tmp16;
             } else if ("categoryHeader" === kind) {
@@ -327,7 +327,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
               items1 = [unpackModuleId(ChevronSmallDownIcon, obj9), ];
               const obj10 = { variant: "text-sm/semibold", color: "text-default", children: item.title };
               items1[1] = unpackModuleId(Text_Text.Text, obj10);
-              return closure_12(View, obj8);
+              return authStore2(View, obj8);
             } else if ("channel" === kind) {
               const obj = { disabled: null, channelId: null, start: null, end: null };
               ({ disabled: obj.disabled, channelId: obj.channelId, start: obj.start, end: obj.end } = item);
@@ -363,7 +363,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
             }
           }
           let tmp63 = navigation;
-          if (first1 !== navigation(7239).SECTION_INDEX_GUILD_ACTIONS) {
+          if (first1 !== navigation(7244).SECTION_INDEX_GUILD_ACTIONS) {
             class R {
               constructor() {
                 return ChannelListStore.getGuild(guildId);
@@ -429,7 +429,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
                           const Text2 = Text_Text.Text;
                           intl2 = intl5.intl;
                           items[2] = unpackModuleId(Text2, obj6);
-                          tmp16 = closure_12(map1, obj2);
+                          tmp16 = authStore2(map1, obj2);
                         }
                         return tmp16;
                       } else if ("categoryHeader" === kind) {
@@ -439,7 +439,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
                         items1 = [unpackModuleId(ChevronSmallDownIcon, obj9), ];
                         const obj10 = { variant: "text-sm/semibold", color: "text-default", children: item.title };
                         items1[1] = unpackModuleId(Text_Text.Text, obj10);
-                        return closure_12(View, obj8);
+                        return authStore2(View, obj8);
                       } else if ("channel" === kind) {
                         const obj = { disabled: null, channelId: null, start: null, end: null };
                         ({ disabled: obj.disabled, channelId: obj.channelId, start: obj.start, end: obj.end } = item);
@@ -460,7 +460,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
                     }
                     let tmp50 = stateFromStores(item10185, 2);
                     let first2 = tmp50[0];
-                    let obj3 = { kind: "channel", channelId: tmp50[1].id, start: 0 === first2, end: first2 === arr7.length - 1, disabled: tmp24 === navigation(8446).ICYMICustomScore.MUTED };
+                    let obj3 = { kind: "channel", channelId: tmp50[1].id, start: 0 === first2, end: first2 === arr7.length - 1, disabled: tmp24 === navigation(8454).ICYMICustomScore.MUTED };
                     class W {
                       constructor(item) {
                         let intl;
@@ -487,7 +487,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
                             const Text2 = Text_Text.Text;
                             intl2 = intl5.intl;
                             items[2] = unpackModuleId(Text2, obj6);
-                            tmp16 = closure_12(map1, obj2);
+                            tmp16 = authStore2(map1, obj2);
                           }
                           return tmp16;
                         } else if ("categoryHeader" === kind) {
@@ -497,7 +497,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
                           items1 = [unpackModuleId(ChevronSmallDownIcon, obj9), ];
                           const obj10 = { variant: "text-sm/semibold", color: "text-default", children: item.title };
                           items1[1] = unpackModuleId(Text_Text.Text, obj10);
-                          return closure_12(View, obj8);
+                          return authStore2(View, obj8);
                         } else if ("channel" === kind) {
                           const obj = { disabled: null, channelId: null, start: null, end: null };
                           ({ disabled: obj.disabled, channelId: obj.channelId, start: obj.start, end: obj.end } = item);
@@ -596,7 +596,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
   const items2 = [ICYMIStore];
   const tmp2Result = navigation(504);
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => ICYMIStore.getCustomGuildScore(guildId));
-  const tmp2Result3 = navigation(8446);
+  const tmp2Result3 = navigation(8454);
   const numberToCustomScoreResult = tmp2Result3.numberToCustomScore(stateFromStores1);
   react = numberToCustomScoreResult;
   const items3 = [ChannelListStore];
@@ -631,13 +631,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
               if (0 !== arr3.length) {
                 let intl3 = tmp37(1126).intl;
                 let stringResult = intl3.string(tmp37(1126).t.GSfOoo);
-                if (first === tmp37(7239).SECTION_INDEX_FAVORITES) {
+                if (first === tmp37(7244).SECTION_INDEX_FAVORITES) {
                   let intl2 = tmp37(1126).intl;
                   stringResult = intl2.string(tmp37(1126).t.mlPMCy);
-                } else if (first === tmp37(7239).SECTION_INDEX_RECENTS) {
+                } else if (first === tmp37(7244).SECTION_INDEX_RECENTS) {
                   let intl = tmp37(1126).intl;
                   stringResult = intl.string(tmp37(1126).t.gKcrqM);
-                } else if (first >= tmp37(7239).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
+                } else if (first >= tmp37(7244).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
                   let namedCategoryFromSection = obj4.getNamedCategoryFromSection(first);
                   let str;
                   if (namedCategoryFromSection != null) {
@@ -673,7 +673,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
   }, items4);
   const items5 = [stateFromStores, , ];
   ({ categoryHeader: arr6[1], guildHeader: arr6[2] } = tmp);
-  const bottom = guildId(1630)().bottom;
+  const bottom = guildId(1631)().bottom;
   let obj3 = { style: tmp.container, children: closure_11(AnimatedFlashList, obj4) };
   const callback = obj2.useCallback((item) => {
     let intl;
@@ -700,7 +700,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
         const Text2 = Text_Text.Text;
         intl2 = intl5.intl;
         items[2] = unpackModuleId(Text2, obj6);
-        tmp16 = closure_12(map1, obj2);
+        tmp16 = authStore2(map1, obj2);
       }
       return tmp16;
     } else if ("categoryHeader" === kind) {
@@ -710,7 +710,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
       items1 = [unpackModuleId(ChevronSmallDownIcon, obj9), ];
       const obj10 = { variant: "text-sm/semibold", color: "text-default", children: item.title };
       items1[1] = unpackModuleId(Text_Text.Text, obj10);
-      return closure_12(View, obj8);
+      return authStore2(View, obj8);
     } else if ("channel" === kind) {
       const obj = { disabled: null, channelId: null, start: null, end: null };
       ({ disabled: obj.disabled, channelId: obj.channelId, start: obj.start, end: obj.end } = item);
@@ -721,7 +721,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMICusto
   }, items5);
   obj4 = { contentInset: rect, showsVerticalScrollIndicator: false, renderItem: callback, data: memo, keyExtractor };
   rect = { bottom, top: guildId(587).space.PX_12 };
-  AnimatedFlashList = tmp2(8600).AnimatedFlashList;
+  AnimatedFlashList = tmp2(8608).AnimatedFlashList;
   return closure_11(guildChannels, obj3);
 });
 const result = size.fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoresGuildScreen.tsx");

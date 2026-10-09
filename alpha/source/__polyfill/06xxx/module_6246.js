@@ -1,94 +1,32 @@
 // Module ID: 6246
 // Function ID: 6247
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21]
+// Dependencies: [19, 17, 21, 6247]
+// Exports: MaskedView
 
 // Module 6246
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
+import _mod6247 from "module_6247" /* 6247 */;
+import react from "react" /* 19 */;
 
-let c9;
-let metroImportAll;
-let metroImportDefault;
-let metroRequire;
-let requireNativeComponent;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const UIManager = react_native.UIManager;
+const jsx = Fragment.jsx;
+try {
+  let closure_0 = _mod6247.default;
+} catch (err) {
+}
+let closure_2 = null != UIManager.getViewManagerConfig("RNCMaskedView");
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let closure_0 = ["maskElement", "children"];
-({ View: metroRequire, StyleSheet: metroImportDefault, requireNativeComponent } = react_native);
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let closure_11 = requireNativeComponent("RNCMaskedView");
-class MaskedView {
-  constructor() {
-    let constructResult;
-    const self = this;
-    const items = [...arguments];
-    _classCallCheck(this, MaskedView);
-    const items1 = [...items];
-    const obj = _getPrototypeOf(MaskedView);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
+export const MaskedView = function MaskedView(children) {
+  children = children.children;
+  const merged = Object.assign(children, Object.assign({ children: 0 }));
+  let tmp2 = children;
+  if (closure_2) {
+    tmp2 = children;
+    if (closure_0) {
+      const merged1 = Object.assign(merged);
+      tmp2 = <tmp3>{children}</tmp3>;
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result._hasWarnedInvalidRenderMask = false;
-    return tmp3Result;
   }
-}
-_inherits(MaskedView, react.Component);
-const entry = {
-  key: "render",
-  value: function render() {
-    let children;
-    let items;
-    let maskElement;
-    let tmp9;
-    const self = this;
-    const props = this.props;
-    ({ maskElement, children } = props);
-    const tmp = _objectWithoutProperties(props, closure_0);
-    if (react.isValidElement(maskElement)) {
-      const obj2 = { children: items };
-      const merged = Object.assign(tmp);
-      const obj3 = { pointerEvents: "none", style: metroImportDefault.absoluteFill, children: maskElement };
-      items = [metroImportAll(metroRequire, obj3), children];
-      tmp9 = React4(closure_11, obj2);
-    } else {
-      if (!self._hasWarnedInvalidRenderMask) {
-        const _console = console;
-        console.warn("MaskedView: Invalid `maskElement` prop was passed to MaskedView. Expected a React Element. No mask will render.");
-        self._hasWarnedInvalidRenderMask = true;
-      }
-      const obj = { children };
-      const merged1 = Object.assign(tmp);
-      tmp9 = metroImportAll(metroRequire, obj);
-    }
-    return tmp9;
-  }
+  return tmp2;
 };
-let items = [entry];
-
-export default _createClass(MaskedView, items);

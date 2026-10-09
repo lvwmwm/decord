@@ -1,25 +1,25 @@
-// Module ID: 15594
-// Function ID: 15595
+// Module ID: 15707
+// Function ID: 15708
 // Name: AndroidMessageNotificationsSetting
-// Dependencies: [15582, 7966, 558, 576, 1381, 11262, 1126, 14533, 2891, 15588, 2]
+// Dependencies: [15695, 7974, 558, 576, 1382, 10629, 1126, 14628, 2891, 15701, 2]
 // Exports: useAndroidMessageNotificationsSettingValue
 
-// Module 15594 (AndroidMessageNotificationsSetting)
+// Module 15707 (AndroidMessageNotificationsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2891 from "module_2891" /* 2891 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14533 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15588 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15582 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14628 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15701 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15695 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11262 */;
+import SettingBuilders_mod from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let setAndroidMessageNotificationsEnabled;
 let tmp;
-const PlatformUtils = tmp(1381);
+const PlatformUtils = tmp(1382);
 ({ useAndroidMessageNotificationsEnabled: c3, setAndroidMessageNotificationsEnabled } = AndroidNotificationSettingsStore);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;

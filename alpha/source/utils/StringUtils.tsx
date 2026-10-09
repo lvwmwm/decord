@@ -1,11 +1,11 @@
-// Module ID: 2030
-// Function ID: 2031
+// Module ID: 2031
+// Function ID: 2032
 // Name: StringUtils
-// Dependencies: [2, 2031]
+// Dependencies: [2, 2032]
 // Exports: isNullOrEmpty
 
-// Module 2030 (StringUtils)
-import utils_StringUtils from "utils/StringUtils" /* 2031 */;
+// Module 2031 (StringUtils)
+import utils_StringUtils from "utils/StringUtils" /* 2032 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/StringUtils.tsx");

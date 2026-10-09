@@ -1,19 +1,19 @@
-// Module ID: 10306
-// Function ID: 10307
+// Module ID: 10293
+// Function ID: 10294
 // Name: FavoritesGuildIntroPopover
-// Dependencies: [32, 19, 2055, 2066, 1085, 570, 558, 576, 2048, 10294, 504, 10307, 7090, 2]
+// Dependencies: [32, 19, 2056, 2067, 1085, 570, 558, 576, 2049, 10279, 504, 10294, 7093, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding
 
-// Module 10306 (FavoritesGuildIntroPopover)
+// Module 10293 (FavoritesGuildIntroPopover)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import FavoritesHooks from "FavoritesHooks" /* 10294 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10307 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import FavoritesHooks from "FavoritesHooks" /* 10279 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10294 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2055 */;
-import FavoriteStore from "FavoriteStore" /* 2066 */;
+import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2056 */;
+import FavoriteStore from "FavoriteStore" /* 2067 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const get_initialized = tmp(504);
-const useSelectedDismissibleContent2 = tmp(7090);
+const useSelectedDismissibleContent2 = tmp(7093);
 let DismissibleContentShownStateStore = DismissibleContentShownStateStore_mod;
 ({ isContentShown: hasOwnProperty, useIsContentShown: metroRequire } = DismissibleContentShownStateStore);
 DismissibleContentShownStateStore = DismissibleContentShownStateStore_mod;
@@ -91,13 +91,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp10;
   let tmp15;
   let tmp16;
-  let tmp22;
   let tmp23;
+  let tmp24;
   let tmp5;
   let tmp6;
   let tmp = require;
   let obj = react2;
-  const cResult = obj.c(20);
+  const cResult = obj.c(21);
   const obj2 = FavoritesHooks;
   const favoritesAccess = obj2.useFavoritesAccess("FavoritesGuildIntroPopover");
   ({ hasAccess, isFreemium } = favoritesAccess);
@@ -131,8 +131,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       if (cResult[5] === isFreemium) {
         if (cResult[6] === stateFromStores) {
           let tmp17;
+          let tmp18;
+          let tmp21;
           let tmp20;
-          let tmp19;
           const tmpResult3 = useSelectedDismissibleContent2;
           [tmp15, tmp16] = tmpResult3.useSelectedDismissibleContent(tmp12);
           require = tmp16;
@@ -152,40 +153,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           } else {
             tmp17 = cResult[10];
           }
-          const tmpResult4 = useSelectedDismissibleContent2;
-          const tmp18 = tmp13(tmpResult4.useSelectedDismissibleContent(tmp17, undefined, true), 1)[0] === dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
-          importDefault = tmp18;
-          if (cResult[11] !== tmp18) {
-            class V {
-              constructor() {
-                const tmp = shouldShowPopover;
-                if (tmp) {
-                  c11 = true;
-                }
-              }
-            }
-            const items3 = [tmp18];
-            cResult[11] = tmp18;
-            cResult[12] = V;
-            cResult[13] = items3;
-            tmp20 = items3;
-            tmp19 = V;
+          const _Symbol = Symbol;
+          if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+            const obj3 = { bypassAutoDismiss: true };
+            cResult[11] = obj3;
+            tmp18 = obj3;
           } else {
-            class V {
-              constructor() {
-                const tmp = shouldShowPopover;
-                if (tmp) {
-                  c11 = true;
-                }
-              }
-            }
-            tmp20 = cResult[13];
+            tmp18 = cResult[11];
           }
-          const effect = react.useEffect(tmp19, tmp20);
-          if (cResult[14] === tmp16) {
-            let tmp26;
-            let tmp25;
-            class V {
+          const tmpResult4 = useSelectedDismissibleContent2;
+          const tmp19 = tmp13(tmpResult4.useSelectedDismissibleContent(tmp17, tmp18), 1)[0] === dismissible_content.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          importDefault = tmp19;
+          if (cResult[12] !== tmp19) {
+            class T {
               constructor() {
                 const tmp = shouldShowPopover;
                 if (tmp) {
@@ -193,9 +173,38 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 }
               }
             }
-            const layoutEffect = obj6.useLayoutEffect(tmp22, tmp23);
-            const _Symbol = Symbol;
-            if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+            const items3 = [tmp19];
+            cResult[12] = tmp19;
+            cResult[13] = T;
+            cResult[14] = items3;
+            tmp21 = items3;
+            tmp20 = T;
+          } else {
+            class T {
+              constructor() {
+                const tmp = shouldShowPopover;
+                if (tmp) {
+                  c11 = true;
+                }
+              }
+            }
+            tmp21 = cResult[14];
+          }
+          const effect = react.useEffect(tmp20, tmp21);
+          if (cResult[15] === tmp16) {
+            let tmp27;
+            let tmp26;
+            class T {
+              constructor() {
+                const tmp = shouldShowPopover;
+                if (tmp) {
+                  c11 = true;
+                }
+              }
+            }
+            const layoutEffect = obj7.useLayoutEffect(tmp23, tmp24);
+            const _Symbol2 = Symbol;
+            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
               class M {
                 constructor() {
                   return () => {
@@ -205,10 +214,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 }
               }
               const items4 = [];
-              cResult[18] = items4;
               cResult[19] = M;
+              cResult[20] = items4;
+              tmp27 = items4;
               tmp26 = M;
-              tmp25 = items4;
             } else {
               class M {
                 constructor() {
@@ -218,24 +227,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   };
                 }
               }
-              tmp26 = cResult[19];
+              tmp27 = cResult[20];
             }
-            const layoutEffect1 = obj6.useLayoutEffect(tmp26, tmp25);
+            const layoutEffect1 = obj7.useLayoutEffect(tmp26, tmp27);
             return null;
           }
-          class C {
+          class G {
             constructor() {
               const obj = { shouldShowPopover, markPopoverAsDismissed: require };
               state.setState(obj);
             }
           }
-          const items5 = [tmp18, tmp16];
-          cResult[14] = tmp16;
-          cResult[15] = tmp18;
-          cResult[16] = C;
-          cResult[17] = items5;
-          tmp22 = C;
-          tmp23 = items5;
+          const items5 = [tmp19, tmp16];
+          cResult[15] = tmp16;
+          cResult[16] = tmp19;
+          cResult[17] = G;
+          cResult[18] = items5;
+          tmp23 = G;
+          tmp24 = items5;
         }
       }
     }
@@ -272,21 +281,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           let items1;
           let items3;
           if (tmp6) {
-            items1 = [tmp(2048).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
+            items1 = [tmp(2049).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
           }
           const tmp10 = _slicedToArray(tmp8(items1), 2);
           _require = tmp12;
           const first = tmp10[0];
-          const useSelectedDismissibleContent = tmp(7090).useSelectedDismissibleContent;
-          tmp(7090);
+          const useSelectedDismissibleContent = tmp(7093).useSelectedDismissibleContent;
+          tmp(7093);
           const tmp9 = _slicedToArray;
-          if (first === tmp(2048).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
-            const items2 = [tmp(2048).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
+          if (first === tmp(2049).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
+            const items2 = [tmp(2049).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
             items3 = items2;
           } else {
             items3 = [];
           }
-          const tmp14 = tmp9(useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(2048).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          const tmp14 = tmp9(useSelectedDismissibleContent(items3, { bypassAutoDismiss: true }), 1)[0] === tmp(2049).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
           importDefault = tmp14;
           const items4 = [tmp14];
           const effect = react.useEffect(() => {

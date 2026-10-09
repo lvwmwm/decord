@@ -1,18 +1,18 @@
-// Module ID: 1496
-// Function ID: 1497
+// Module ID: 1497
+// Function ID: 1498
 // Name: useWindowDimensions
-// Dependencies: [19, 1497, 558, 576, 1499, 2]
+// Dependencies: [19, 1498, 558, 576, 1500, 2]
 // Exports: getWindowDimensions
 
-// Module 1496 (useWindowDimensions)
+// Module 1497 (useWindowDimensions)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1497 */;
+import DimensionsStore from "DimensionsStore" /* 1498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const AppEntryKeyContext = tmp2(1499);
+const AppEntryKeyContext = tmp2(1500);
 let closure_4 = { ignoreKeyboard: false };
 function WINDOW_DIMENSIONS_GETTER(arg0) {
 

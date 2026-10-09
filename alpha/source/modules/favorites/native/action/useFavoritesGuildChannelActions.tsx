@@ -1,12 +1,12 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 10434
+// Function ID: 10435
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 2124, 2066, 558, 576, 10294, 2089, 504, 10308, 2]
+// Dependencies: [502, 2124, 2067, 558, 576, 10279, 2089, 504, 10295, 2]
 
-// Module 10445 (useFavoritesGuildChannelActions)
+// Module 10434 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import FavoriteStore from "FavoriteStore" /* 2066 */;
+import FavoriteStore from "FavoriteStore" /* 2067 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   }
   const tmpResult5 = tmp(504);
   const stateFromStores = tmpResult5.useStateFromStores(tmp7, tmp9);
-  const tmpResult6 = tmp(10294);
+  const tmpResult6 = tmp(10279);
   const isFavoritesGuildSelected = tmpResult6.useIsFavoritesGuildSelected();
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [GuildMemberStore, AuthenticationStore];
@@ -88,8 +88,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
       }
     }
   }
-  const useFavoritesBetaTagDismissibleContent = tmp(10308).useFavoritesBetaTagDismissibleContent;
-  tmp(10308);
+  const useFavoritesBetaTagDismissibleContent = tmp(10295).useFavoritesBetaTagDismissibleContent;
+  tmp(10295);
   if (hasAccess) {
     class B {
       constructor() {
@@ -158,8 +158,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     });
   }
   let tmp8 = hasAccess;
-  const useFavoritesBetaTagDismissibleContent = tmp(10308).useFavoritesBetaTagDismissibleContent;
-  tmp(10308);
+  const useFavoritesBetaTagDismissibleContent = tmp(10295).useFavoritesBetaTagDismissibleContent;
+  tmp(10295);
   if (hasAccess) {
     tmp8 = isFavoritableChannelResult;
   }

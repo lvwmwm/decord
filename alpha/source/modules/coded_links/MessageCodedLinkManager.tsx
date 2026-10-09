@@ -1,16 +1,16 @@
-// Module ID: 17873
-// Function ID: 17874
+// Module ID: 18027
+// Function ID: 18028
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7168, 2063, 5071, 5070, 5075, 17874, 8472, 7019, 13361, 17881, 17884, 11764, 6797, 17887, 2]
+// Dependencies: [5, 7173, 2064, 5072, 5071, 5076, 18028, 8480, 7022, 13456, 18035, 18038, 11701, 6804, 18041, 2]
 
-// Module 17873 (MessageCodedLinkManager)
-import findCodedLinksDefault from "findCodedLinks" /* 5070 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17887 */;
+// Module 18027 (MessageCodedLinkManager)
+import findCodedLinksDefault from "findCodedLinks" /* 5071 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18041 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7168 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import InviteStore from "InviteStore" /* 5071 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7173 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import InviteStore from "InviteStore" /* 5072 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -19,7 +19,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f132650 = (item) => {
+  const f132981 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -202,7 +202,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f132650);
+    let item = arr.forEach(f132981);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -213,7 +213,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f132650);
+        const item = arr.forEach(f132981);
       }
     });
   }

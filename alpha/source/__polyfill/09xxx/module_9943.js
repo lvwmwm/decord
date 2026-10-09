@@ -1,12 +1,11 @@
 // Module ID: 9943
 // Function ID: 9944
-// Dependencies: [41, 42, 93, 95, 98, 9771, 9940, 9772, 9778]
+// Dependencies: [41, 42, 93, 95, 98, 9944, 9793, 9797]
 
 // Module 9943
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9771 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 9772 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9778 */;
-import _mod9940 from "module_9940" /* 9940 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9793 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9797 */;
+import _mod9944 from "module_9944" /* 9944 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,14 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9940.MONTH_DICTIONARY);
-const regExp = new RegExp("((?:in)\\s*)?(" + matchAnyPatternResult + ")\\s*(?:[,-]?\\s*(" + _mod9940.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)", "i");
-class ENMonthNameParser {
+let closure_6 = "(?:(?:\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E|\u043E\u0440\u0456\u0454\u043D\u0442\u043E\u0432\u043D\u043E)\\s*(?:~\\s*)?)?(" + _mod9944.TIME_UNITS_PATTERN + ")" + _mod9944.REGEX_PARTS.rightBoundary;
+class UKTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENMonthNameParser);
-    const obj = _getPrototypeOf(ENMonthNameParser);
+    _classCallCheck(this, UKTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(UKTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -47,47 +45,42 @@ class ENMonthNameParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMonthNameParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(UKTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return _mod9944.REGEX_PARTS.leftBoundary;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const str = index[2];
-      const formatted = str.toLowerCase();
-      if (index[0].length <= 3) {
-        if (!_mod9940.FULL_MONTH_NAME_DICTIONARY[formatted]) {
-          return null;
-        }
-      }
-      let str2 = index[1];
-      index = index.index;
-      createParsingResult = createParsingResult.createParsingResult;
-      if (!str2) {
-        str2 = "";
-      }
-      const parsingResult = createParsingResult(index + str2.length, index.index + index[0].length);
-      const start = parsingResult.start;
-      start.imply("day", 1);
-      const tmp9 = _mod9940.MONTH_DICTIONARY[formatted];
-      const start2 = parsingResult.start;
-      start2.assign("month", tmp9);
-      if (index[3]) {
-        const start4 = parsingResult.start;
-        start4.assign("year", _mod9940.parseYear(index[3]));
+    key: "innerPattern",
+    value: function innerPattern(option) {
+      let _RegExp1;
+      const _RegExp = RegExp;
+      if (option.option.forwardDate) {
+        const self3 = this;
+        const self4 = this;
+        _RegExp1 = new _RegExp(tmp, "i");
       } else {
-        const start3 = parsingResult.start;
-        start3.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, 1, tmp9));
+        const _HermesInternal = HermesInternal;
+        const combined = "(?:\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u043D\u0430 \u043F\u0440\u043E\u0442\u044F\u0437\u0456|\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u0443\u043F\u0440\u043E\u0434\u043E\u0432\u0436|\u0432\u043F\u0440\u043E\u0434\u043E\u0432\u0436)\\s*" + tmp;
+        const self = this;
+        const self2 = this;
+        _RegExp1 = new _RegExp(combined, _mod9944.REGEX_PARTS.flags);
       }
-      return parsingResult;
+      return _RegExp1;
+    }
+  },
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod9944.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(ENMonthNameParser, items);
+export default _createClass(UKTimeUnitWithinFormatParser, items);

@@ -1,12 +1,12 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 16069
+// Function ID: 16070
 // Name: DesignSystemsTabsSetting
-// Dependencies: [7966, 1085, 11262, 15953, 2]
+// Dependencies: [7974, 1085, 10629, 16070, 2]
 
-// Module 15952 (DesignSystemsTabsSetting)
+// Module 16069 (DesignSystemsTabsSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 5740
-// Function ID: 5741
+// Module ID: 5741
+// Function ID: 5742
 // Name: getAnalyticsDataForSKU
-// Dependencies: [5436, 1085, 2]
+// Dependencies: [5437, 1085, 2]
 // Exports: default
 
-// Module 5740 (getAnalyticsDataForSKU)
+// Module 5741 (getAnalyticsDataForSKU)
 import Constants from "Constants" /* 1085 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
 import size from "module_2" /* 2 */;
 
 const SKUFeatureTypes = Constants.SKUFeatureTypes;

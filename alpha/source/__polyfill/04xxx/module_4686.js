@@ -1,110 +1,65 @@
 // Module ID: 4686
 // Function ID: 4687
-// Dependencies: [4659]
+// Dependencies: [4661]
 
 // Module 4686
-import _mod4659 from "module_4659" /* 4659 */;
+import _mod4661 from "module_4661" /* 4661 */;
 
-function meridiemHour(arg0, arg1) {
-  let num = arg0;
-  if (12 === arg0) {
-    num = 0;
-  }
-  let tmp = num;
-  if ("\u51CC\u6668" !== arg1) {
-    tmp = num;
-    if ("\u65E9\u4E0A" !== arg1) {
-      tmp = num;
-      if ("\u4E0A\u5348" !== arg1) {
-        let sum1;
-        if ("\u4E2D\u5348" === arg1) {
-          let sum = num;
-          if (num < 11) {
-            sum = num + 12;
-          }
-          sum1 = sum;
-        } else if ("\u4E0B\u5348" === arg1) {
-          sum1 = num + 12;
-        }
-        tmp = sum1;
-      }
-    }
-  }
-  return tmp;
+let split;
+let split2;
+function isPM(arg0) {
+  const obj = /^ch$/i;
+  return obj.test(arg0);
 }
 function meridiem(arg0, arg1, arg2) {
-  const sum = 100 * arg0 + arg1;
-  let str = "\u51CC\u6668";
-  if (sum >= 600) {
-    let str2 = "\u65E9\u4E0A";
-    if (sum >= 900) {
-      let str3 = "\u4E0A\u5348";
-      if (sum >= 1130) {
-        let str4 = "\u4E2D\u5348";
-        if (sum >= 1230) {
-          let str5 = "\u665A\u4E0A";
-          if (sum < 1800) {
-            str5 = "\u4E0B\u5348";
-          }
-          str4 = str5;
-        }
-        str3 = str4;
-      }
-      str2 = str3;
+  let str;
+  if (arg0 < 12) {
+    let str2 = "SA";
+    if (arg2) {
+      str2 = "sa";
     }
     str = str2;
+  } else {
+    str = "CH";
+    if (arg2) {
+      str = "ch";
+    }
   }
   return str;
 }
-function ordinal(arg0, arg1) {
-  if ("d" !== arg1) {
-    if ("D" !== arg1) {
-      if ("DDD" !== arg1) {
-        if ("M" === arg1) {
-          return arg0 + "\u6708";
-        } else {
-          if ("w" !== arg1) {
-            if ("W" !== arg1) {
-              return arg0;
-            }
-          }
-          return arg0 + "\u9031";
-        }
-      }
-    }
-  }
-  return arg0 + "\u65E5";
+function ordinal(arg0) {
+  return arg0;
 }
 if (typeof exports === "object") {
   if (undefined !== module) {
-    let tmp = require;
     if (typeof require === "function") {
-      const _module = _mod4659;
-      let str = "\u4E00\u6708_\u4E8C\u6708_\u4E09\u6708_\u56DB\u6708_\u4E94\u6708_\u516D\u6708_\u4E03\u6708_\u516B\u6708_\u4E5D\u6708_\u5341\u6708_\u5341\u4E00\u6708_\u5341\u4E8C\u6708";
-      const split = "\u4E00\u6708_\u4E8C\u6708_\u4E09\u6708_\u56DB\u6708_\u4E94\u6708_\u516D\u6708_\u4E03\u6708_\u516B\u6708_\u4E5D\u6708_\u5341\u6708_\u5341\u4E00\u6708_\u5341\u4E8C\u6708".split;
+      const _module = _mod4661;
+      let str = "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12";
+      const split3 = "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split;
       let str2 = "_";
       const defineLocale = _module.defineLocale;
-      let str3 = "1\u6708_2\u6708_3\u6708_4\u6708_5\u6708_6\u6708_7\u6708_8\u6708_9\u6708_10\u6708_11\u6708_12\u6708";
-      const split2 = "1\u6708_2\u6708_3\u6708_4\u6708_5\u6708_6\u6708_7\u6708_8\u6708_9\u6708_10\u6708_11\u6708_12\u6708".split;
-      let str4 = "\u661F\u671F\u65E5_\u661F\u671F\u4E00_\u661F\u671F\u4E8C_\u661F\u671F\u4E09_\u661F\u671F\u56DB_\u661F\u671F\u4E94_\u661F\u671F\u516D";
-      const split3 = "\u661F\u671F\u65E5_\u661F\u671F\u4E00_\u661F\u671F\u4E8C_\u661F\u671F\u4E09_\u661F\u671F\u56DB_\u661F\u671F\u4E94_\u661F\u671F\u516D".split;
-      let str5 = "\u9031\u65E5_\u9031\u4E00_\u9031\u4E8C_\u9031\u4E09_\u9031\u56DB_\u9031\u4E94_\u9031\u516D";
-      const split4 = "\u9031\u65E5_\u9031\u4E00_\u9031\u4E8C_\u9031\u4E09_\u9031\u56DB_\u9031\u4E94_\u9031\u516D".split;
-      const split5 = "\u65E5_\u4E00_\u4E8C_\u4E09_\u56DB_\u4E94_\u516D".split;
-      const obj2 = { months: "\u4E00\u6708_\u4E8C\u6708_\u4E09\u6708_\u56DB\u6708_\u4E94\u6708_\u516D\u6708_\u4E03\u6708_\u516B\u6708_\u4E5D\u6708_\u5341\u6708_\u5341\u4E00\u6708_\u5341\u4E8C\u6708".split("_"), monthsShort: "1\u6708_2\u6708_3\u6708_4\u6708_5\u6708_6\u6708_7\u6708_8\u6708_9\u6708_10\u6708_11\u6708_12\u6708".split("_"), weekdays: "\u661F\u671F\u65E5_\u661F\u671F\u4E00_\u661F\u671F\u4E8C_\u661F\u671F\u4E09_\u661F\u671F\u56DB_\u661F\u671F\u4E94_\u661F\u671F\u516D".split("_"), weekdaysShort: "\u9031\u65E5_\u9031\u4E00_\u9031\u4E8C_\u9031\u4E09_\u9031\u56DB_\u9031\u4E94_\u9031\u516D".split("_"), weekdaysMin: "\u65E5_\u4E00_\u4E8C_\u4E09_\u56DB_\u4E94_\u516D".split("_"), longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "YYYY/MM/DD", LL: "YYYY\u5E74M\u6708D\u65E5", LLL: "YYYY\u5E74M\u6708D\u65E5 HH:mm", LLLL: "YYYY\u5E74M\u6708D\u65E5dddd HH:mm", l: "YYYY/M/D", ll: "YYYY\u5E74M\u6708D\u65E5", lll: "YYYY\u5E74M\u6708D\u65E5 HH:mm", llll: "YYYY\u5E74M\u6708D\u65E5dddd HH:mm" }, meridiemParse: /凌晨|早上|上午|中午|下午|晚上/, meridiemHour, meridiem, calendar: { sameDay: "[\u4ECA\u5929] LT", nextDay: "[\u660E\u5929] LT", nextWeek: "[\u4E0B]dddd LT", lastDay: "[\u6628\u5929] LT", lastWeek: "[\u4E0A]dddd LT", sameElse: "L" }, dayOfMonthOrdinalParse: /\d{1,2}(日|月|週)/, ordinal, relativeTime: { future: "%s\u5F8C", past: "%s\u524D", s: "\u5E7E\u79D2", ss: "%d \u79D2", m: "1 \u5206\u9418", mm: "%d \u5206\u9418", h: "1 \u5C0F\u6642", hh: "%d \u5C0F\u6642", d: "1 \u5929", dd: "%d \u5929", M: "1 \u500B\u6708", MM: "%d \u500B\u6708", y: "1 \u5E74", yy: "%d \u5E74" } };
-      defineLocale("zh-tw", obj2);
+      const split4 = "Thg 01_Thg 02_Thg 03_Thg 04_Thg 05_Thg 06_Thg 07_Thg 08_Thg 09_Thg 10_Thg 11_Thg 12".split;
+      const split5 = "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split;
+      const split6 = "CN_T2_T3_T4_T5_T6_T7".split;
+      const split7 = "CN_T2_T3_T4_T5_T6_T7".split;
+      const obj2 = { months: "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split("_"), monthsShort: "Thg 01_Thg 02_Thg 03_Thg 04_Thg 05_Thg 06_Thg 07_Thg 08_Thg 09_Thg 10_Thg 11_Thg 12".split("_"), monthsParseExact: true, weekdays: "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split("_"), weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysParseExact: true, meridiemParse: /sa|ch/i, isPM, meridiem, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD/MM/YYYY", LL: "D MMMM [n\u0103m] YYYY", LLL: "D MMMM [n\u0103m] YYYY HH:mm", LLLL: "dddd, D MMMM [n\u0103m] YYYY HH:mm", l: "DD/M/YYYY", ll: "D MMM YYYY", lll: "D MMM YYYY HH:mm", llll: "ddd, D MMM YYYY HH:mm" }, calendar: { sameDay: "[H\u00F4m nay l\u00FAc] LT", nextDay: "[Ng\u00E0y mai l\u00FAc] LT", nextWeek: "dddd [tu\u1EA7n t\u1EDBi l\u00FAc] LT", lastDay: "[H\u00F4m qua l\u00FAc] LT", lastWeek: "dddd [tu\u1EA7n tr\u01B0\u1EDBc l\u00FAc] LT", sameElse: "L" }, relativeTime: { future: "%s t\u1EDBi", past: "%s tr\u01B0\u1EDBc", s: "v\u00E0i gi\u00E2y", ss: "%d gi\u00E2y", m: "m\u1ED9t ph\u00FAt", mm: "%d ph\u00FAt", h: "m\u1ED9t gi\u1EDD", hh: "%d gi\u1EDD", d: "m\u1ED9t ng\u00E0y", dd: "%d ng\u00E0y", w: "m\u1ED9t tu\u1EA7n", ww: "%d tu\u1EA7n", M: "m\u1ED9t th\u00E1ng", MM: "%d th\u00E1ng", y: "m\u1ED9t n\u0103m", yy: "%d n\u0103m" }, dayOfMonthOrdinalParse: /\d{1,2}/, ordinal, week: { dow: 1, doy: 4 } };
+      defineLocale("vi", obj2);
     }
   }
 }
 if (typeof globalThis.define === "function") {
   const define2 = globalThis.define;
   if (globalThis.define.amd) {
-    globalThis.define(["../moment"], function t(defineLocale) {
-      const obj = { months: "\u4E00\u6708_\u4E8C\u6708_\u4E09\u6708_\u56DB\u6708_\u4E94\u6708_\u516D\u6708_\u4E03\u6708_\u516B\u6708_\u4E5D\u6708_\u5341\u6708_\u5341\u4E00\u6708_\u5341\u4E8C\u6708".split("_"), monthsShort: "1\u6708_2\u6708_3\u6708_4\u6708_5\u6708_6\u6708_7\u6708_8\u6708_9\u6708_10\u6708_11\u6708_12\u6708".split("_"), weekdays: "\u661F\u671F\u65E5_\u661F\u671F\u4E00_\u661F\u671F\u4E8C_\u661F\u671F\u4E09_\u661F\u671F\u56DB_\u661F\u671F\u4E94_\u661F\u671F\u516D".split("_"), weekdaysShort: "\u9031\u65E5_\u9031\u4E00_\u9031\u4E8C_\u9031\u4E09_\u9031\u56DB_\u9031\u4E94_\u9031\u516D".split("_"), weekdaysMin: "\u65E5_\u4E00_\u4E8C_\u4E09_\u56DB_\u4E94_\u516D".split("_"), longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "YYYY/MM/DD", LL: "YYYY\u5E74M\u6708D\u65E5", LLL: "YYYY\u5E74M\u6708D\u65E5 HH:mm", LLLL: "YYYY\u5E74M\u6708D\u65E5dddd HH:mm", l: "YYYY/M/D", ll: "YYYY\u5E74M\u6708D\u65E5", lll: "YYYY\u5E74M\u6708D\u65E5 HH:mm", llll: "YYYY\u5E74M\u6708D\u65E5dddd HH:mm" }, meridiemParse: /凌晨|早上|上午|中午|下午|晚上/, meridiemHour, meridiem, calendar: { sameDay: "[\u4ECA\u5929] LT", nextDay: "[\u660E\u5929] LT", nextWeek: "[\u4E0B]dddd LT", lastDay: "[\u6628\u5929] LT", lastWeek: "[\u4E0A]dddd LT", sameElse: "L" }, dayOfMonthOrdinalParse: /\d{1,2}(日|月|週)/, ordinal, relativeTime: { future: "%s\u5F8C", past: "%s\u524D", s: "\u5E7E\u79D2", ss: "%d \u79D2", m: "1 \u5206\u9418", mm: "%d \u5206\u9418", h: "1 \u5C0F\u6642", hh: "%d \u5C0F\u6642", d: "1 \u5929", dd: "%d \u5929", M: "1 \u500B\u6708", MM: "%d \u500B\u6708", y: "1 \u5E74", yy: "%d \u5E74" } };
-      return defineLocale.defineLocale("zh-tw", obj);
+    globalThis.define(["../moment"], function n(defineLocale) {
+      let split;
+      let split2;
+      let obj = { months: "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split("_"), monthsShort: "Thg 01_Thg 02_Thg 03_Thg 04_Thg 05_Thg 06_Thg 07_Thg 08_Thg 09_Thg 10_Thg 11_Thg 12".split("_"), monthsParseExact: true, weekdays: "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split("_"), weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysParseExact: true, meridiemParse: /sa|ch/i, isPM, meridiem, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD/MM/YYYY", LL: "D MMMM [n\u0103m] YYYY", LLL: "D MMMM [n\u0103m] YYYY HH:mm", LLLL: "dddd, D MMMM [n\u0103m] YYYY HH:mm", l: "DD/M/YYYY", ll: "D MMM YYYY", lll: "D MMM YYYY HH:mm", llll: "ddd, D MMM YYYY HH:mm" }, calendar: { sameDay: "[H\u00F4m nay l\u00FAc] LT", nextDay: "[Ng\u00E0y mai l\u00FAc] LT", nextWeek: "dddd [tu\u1EA7n t\u1EDBi l\u00FAc] LT", lastDay: "[H\u00F4m qua l\u00FAc] LT", lastWeek: "dddd [tu\u1EA7n tr\u01B0\u1EDBc l\u00FAc] LT", sameElse: "L" }, relativeTime: { future: "%s t\u1EDBi", past: "%s tr\u01B0\u1EDBc", s: "v\u00E0i gi\u00E2y", ss: "%d gi\u00E2y", m: "m\u1ED9t ph\u00FAt", mm: "%d ph\u00FAt", h: "m\u1ED9t gi\u1EDD", hh: "%d gi\u1EDD", d: "m\u1ED9t ng\u00E0y", dd: "%d ng\u00E0y", w: "m\u1ED9t tu\u1EA7n", ww: "%d tu\u1EA7n", M: "m\u1ED9t th\u00E1ng", MM: "%d th\u00E1ng", y: "m\u1ED9t n\u0103m", yy: "%d n\u0103m" }, dayOfMonthOrdinalParse: /\d{1,2}/, ordinal, week: { dow: 1, doy: 4 } };
+      ({ split, split: split2 } = "CN_T2_T3_T4_T5_T6_T7");
+      return defineLocale.defineLocale("vi", obj);
     });
   }
 }
 const moment = this.moment;
-let obj = { months: "\u4E00\u6708_\u4E8C\u6708_\u4E09\u6708_\u56DB\u6708_\u4E94\u6708_\u516D\u6708_\u4E03\u6708_\u516B\u6708_\u4E5D\u6708_\u5341\u6708_\u5341\u4E00\u6708_\u5341\u4E8C\u6708".split("_"), monthsShort: "1\u6708_2\u6708_3\u6708_4\u6708_5\u6708_6\u6708_7\u6708_8\u6708_9\u6708_10\u6708_11\u6708_12\u6708".split("_"), weekdays: "\u661F\u671F\u65E5_\u661F\u671F\u4E00_\u661F\u671F\u4E8C_\u661F\u671F\u4E09_\u661F\u671F\u56DB_\u661F\u671F\u4E94_\u661F\u671F\u516D".split("_"), weekdaysShort: "\u9031\u65E5_\u9031\u4E00_\u9031\u4E8C_\u9031\u4E09_\u9031\u56DB_\u9031\u4E94_\u9031\u516D".split("_"), weekdaysMin: "\u65E5_\u4E00_\u4E8C_\u4E09_\u56DB_\u4E94_\u516D".split("_"), longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "YYYY/MM/DD", LL: "YYYY\u5E74M\u6708D\u65E5", LLL: "YYYY\u5E74M\u6708D\u65E5 HH:mm", LLLL: "YYYY\u5E74M\u6708D\u65E5dddd HH:mm", l: "YYYY/M/D", ll: "YYYY\u5E74M\u6708D\u65E5", lll: "YYYY\u5E74M\u6708D\u65E5 HH:mm", llll: "YYYY\u5E74M\u6708D\u65E5dddd HH:mm" }, meridiemParse: /凌晨|早上|上午|中午|下午|晚上/, meridiemHour, meridiem, calendar: { sameDay: "[\u4ECA\u5929] LT", nextDay: "[\u660E\u5929] LT", nextWeek: "[\u4E0B]dddd LT", lastDay: "[\u6628\u5929] LT", lastWeek: "[\u4E0A]dddd LT", sameElse: "L" }, dayOfMonthOrdinalParse: /\d{1,2}(日|月|週)/, ordinal, relativeTime: { future: "%s\u5F8C", past: "%s\u524D", s: "\u5E7E\u79D2", ss: "%d \u79D2", m: "1 \u5206\u9418", mm: "%d \u5206\u9418", h: "1 \u5C0F\u6642", hh: "%d \u5C0F\u6642", d: "1 \u5929", dd: "%d \u5929", M: "1 \u500B\u6708", MM: "%d \u500B\u6708", y: "1 \u5E74", yy: "%d \u5E74" } };
-moment.defineLocale("zh-tw", obj);
+let obj = { months: "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split("_"), monthsShort: "Thg 01_Thg 02_Thg 03_Thg 04_Thg 05_Thg 06_Thg 07_Thg 08_Thg 09_Thg 10_Thg 11_Thg 12".split("_"), monthsParseExact: true, weekdays: "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split("_"), weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysParseExact: true, meridiemParse: /sa|ch/i, isPM, meridiem, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD/MM/YYYY", LL: "D MMMM [n\u0103m] YYYY", LLL: "D MMMM [n\u0103m] YYYY HH:mm", LLLL: "dddd, D MMMM [n\u0103m] YYYY HH:mm", l: "DD/M/YYYY", ll: "D MMM YYYY", lll: "D MMM YYYY HH:mm", llll: "ddd, D MMM YYYY HH:mm" }, calendar: { sameDay: "[H\u00F4m nay l\u00FAc] LT", nextDay: "[Ng\u00E0y mai l\u00FAc] LT", nextWeek: "dddd [tu\u1EA7n t\u1EDBi l\u00FAc] LT", lastDay: "[H\u00F4m qua l\u00FAc] LT", lastWeek: "dddd [tu\u1EA7n tr\u01B0\u1EDBc l\u00FAc] LT", sameElse: "L" }, relativeTime: { future: "%s t\u1EDBi", past: "%s tr\u01B0\u1EDBc", s: "v\u00E0i gi\u00E2y", ss: "%d gi\u00E2y", m: "m\u1ED9t ph\u00FAt", mm: "%d ph\u00FAt", h: "m\u1ED9t gi\u1EDD", hh: "%d gi\u1EDD", d: "m\u1ED9t ng\u00E0y", dd: "%d ng\u00E0y", w: "m\u1ED9t tu\u1EA7n", ww: "%d tu\u1EA7n", M: "m\u1ED9t th\u00E1ng", MM: "%d th\u00E1ng", y: "m\u1ED9t n\u0103m", yy: "%d n\u0103m" }, dayOfMonthOrdinalParse: /\d{1,2}/, ordinal, week: { dow: 1, doy: 4 } };
+({ split, split: split2 } = "CN_T2_T3_T4_T5_T6_T7");
+moment.defineLocale("vi", obj);

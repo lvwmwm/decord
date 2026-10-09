@@ -1,43 +1,41 @@
-// Module ID: 12506
-// Function ID: 12507
+// Module ID: 12443
+// Function ID: 12444
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [19, 17, 12496, 1085, 21, 5090, 5902, 587, 558, 576, 1502, 1264, 1126, 1200, 12507, 6817, 12508, 12505, 2]
+// Dependencies: [19, 17, 12433, 1085, 21, 5091, 5903, 587, 558, 576, 1503, 1265, 1126, 1200, 6163, 12444, 6824, 12445, 12442, 2]
 
-// Module 12506 (HubEmailConnectionStudentPrompt)
-import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import HubConstants from "HubConstants" /* 12496 */;
-import react from "react" /* 19 */;
+// Module 12443 (HubEmailConnectionStudentPrompt)
 import react_native from "react-native" /* 17 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import HubConstants from "HubConstants" /* 12433 */;
+import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import TextStyles from "TextStyles" /* 5902 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import TextStyles from "TextStyles" /* 5903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
 
 let Fonts;
-let c3;
-let closure_4;
-let metroImportAll;
+let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-({ View: c3, Image: closure_4 } = react_native);
+const View = react_native.View;
 const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
-({ AnalyticEvents: metroRequire, Fonts } = Constants);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ AnalyticEvents: hasOwnProperty, Fonts } = Constants);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { display: "flex", alignItems: "center", justifyContent: "center", padding: 16 }, header: obj2, row: obj3 };
 obj2 = { textAlign: "center", marginBottom: 24 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 obj3 = { borderRadius: nativeDefault.radii.sm, marginBottom: 8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-let closure_9 = createStyles(obj);
-const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionStudentPrompt(onClose) {
+let closure_8 = createStyles(obj);
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionStudentPrompt(onClose) {
   let container;
   let header;
   let items;
@@ -46,7 +44,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
   const cResult = obj.c(23);
   onClose = onClose.onClose;
   const invite = onClose.invite;
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   let obj2 = onClose(navigation[10]);
   navigation = obj2.useNavigation();
   if (cResult[0] === invite) {
@@ -72,7 +70,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
       }
       if (cResult[5] !== tmp4.header) {
         const obj3 = { style: header, children: tmp8 };
-        const tmp12 = closure_7(onClose(navigation[13]).LegacyText, obj3);
+        const tmp12 = closure_6(onClose(navigation[13]).LegacyText, obj3);
         cResult[5] = tmp4.header;
         cResult[6] = tmp12;
         tmp10 = tmp12;
@@ -82,8 +80,9 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
       const _Symbol2 = Symbol;
       const row = tmp4.row;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj4 = { source: invite(navigation[14]) };
-        const tmp17 = closure_7(closure_4, obj4);
+        const obj4 = { source: invite(navigation[15]) };
+        const tmp16 = invite(navigation[14]);
+        const tmp17 = closure_6(tmp16, obj4);
         cResult[7] = tmp17;
         tmp13 = tmp17;
       } else {
@@ -113,8 +112,9 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
         const _Symbol4 = Symbol;
         const row2 = tmp4.row;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj5 = { source: invite(navigation[16]) };
-          const tmp31 = closure_7(closure_4, obj5);
+          const obj5 = { source: invite(navigation[17]) };
+          const tmp30 = invite(navigation[14]);
+          const tmp31 = closure_6(tmp30, obj5);
           cResult[13] = tmp31;
           tmp27 = tmp31;
         } else {
@@ -145,11 +145,11 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
               }
             }
           }
-          const obj6 = { children: closure_8(closure_3, obj7) };
+          const obj6 = { children: closure_7(View, obj7) };
           obj7 = { style: container, children: items };
           items = [tmp10, tmp22, tmp34];
-          const HubEmailConnectionScreen = tmp(tmp2[17]).HubEmailConnectionScreen;
-          const tmp43 = closure_7(HubEmailConnectionScreen, obj6);
+          const HubEmailConnectionScreen = tmp(tmp2[18]).HubEmailConnectionScreen;
+          const tmp43 = closure_6(HubEmailConnectionScreen, obj6);
           cResult[18] = tmp4.container;
           cResult[19] = tmp22;
           cResult[20] = tmp34;
@@ -157,17 +157,17 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
           cResult[22] = tmp43;
           tmp39 = tmp43;
         }
-        const obj8 = { DEPRECATED_style: row2, leading: tmp27, trailing: invite(navigation[15]).Arrow, label: tmp32, onPress: onClose };
-        const tmp37 = invite(navigation[15]);
-        const tmp38 = closure_7(tmp37, obj8);
+        const obj8 = { DEPRECATED_style: row2, leading: tmp27, trailing: invite(navigation[16]).Arrow, label: tmp32, onPress: onClose };
+        const tmp37 = invite(navigation[16]);
+        const tmp38 = closure_6(tmp37, obj8);
         cResult[15] = onClose;
         cResult[16] = tmp4.row;
         cResult[17] = tmp38;
         tmp34 = tmp38;
       }
-      const obj9 = { DEPRECATED_style: row, leading: tmp13, trailing: invite(navigation[15]).Arrow, label: tmp18, subLabel: tmp19, onPress: tmp6 };
-      const tmp25 = invite(navigation[15]);
-      const tmp26 = closure_7(tmp25, obj9);
+      const obj9 = { DEPRECATED_style: row, leading: tmp13, trailing: invite(navigation[16]).Arrow, label: tmp18, subLabel: tmp19, onPress: tmp6 };
+      const tmp25 = invite(navigation[16]);
+      const tmp26 = closure_6(tmp25, obj9);
       cResult[10] = tmp6;
       cResult[11] = tmp4.row;
       cResult[12] = tmp26;
@@ -176,7 +176,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
   }
   function onContinue() {
     const obj = AnalyticsUtilsDefault;
-    obj.track(metroRequire.HUB_STUDENT_PROMPT_CLICKED);
+    obj.track(hasOwnProperty.HUB_STUDENT_PROMPT_CLICKED);
     const obj2 = { onClose, invite };
     navigation.push(HubEmailConnectionSteps.VERIFY_EMAIL, obj2);
   }
@@ -195,43 +195,47 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
   let obj3;
   let obj6;
   let obj8;
+  let tmp3;
+  let tmp5;
   onClose = onClose.onClose;
   const invite = onClose.invite;
-  const tmp = closure_9();
-  let obj = onClose(1502);
+  const tmp = closure_8();
+  let obj = onClose(1503);
   dependencyMap = obj.useNavigation();
-  let obj2 = { children: closure_8(closure_3, obj3) };
+  let obj2 = { children: closure_7(View, obj3) };
   obj3 = { style: tmp.container, children: items };
-  const HubEmailConnectionScreen = onClose(12505).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = onClose(12442).HubEmailConnectionScreen;
   const obj4 = { style: tmp.header, children: intl.string(onClose(1126).t["+/Pv0h"]) };
   const LegacyText = onClose(1200).LegacyText;
   intl = onClose(1126).intl;
-  items = [closure_7(LegacyText, obj4), , ];
+  items = [closure_6(LegacyText, obj4), , ];
   const obj5 = {
     DEPRECATED_style: tmp.row,
-    leading: closure_7(closure_4, obj6),
-    trailing: invite(6817).Arrow,
+    leading: closure_6(tmp3, obj6),
+    trailing: invite(6824).Arrow,
     label: intl2.string(onClose(1126).t["a7a/D+"]),
     subLabel: intl3.string(onClose(1126).t.Gsegk8),
     onPress: function onContinue() {
       const obj = AnalyticsUtilsDefault;
-      obj.track(metroRequire.HUB_STUDENT_PROMPT_CLICKED);
+      obj.track(hasOwnProperty.HUB_STUDENT_PROMPT_CLICKED);
       const obj2 = { onClose, invite };
       closure_2.push(HubEmailConnectionSteps.VERIFY_EMAIL, obj2);
     }
   };
-  obj6 = { source: invite(12507) };
-  const tmp2 = invite(6817);
+  obj6 = { source: invite(12444) };
+  const tmp2 = invite(6824);
+  tmp3 = invite(6163);
   intl2 = onClose(1126).intl;
   intl3 = onClose(1126).intl;
-  items[1] = closure_7(tmp2, obj5);
-  const obj7 = { DEPRECATED_style: tmp.row, leading: closure_7(closure_4, obj8), trailing: invite(6817).Arrow, label: intl4.string(onClose(1126).t.GLG9n4), onPress: onClose };
-  obj8 = { source: invite(12508) };
-  const tmp3 = invite(6817);
+  items[1] = closure_6(tmp2, obj5);
+  const obj7 = { DEPRECATED_style: tmp.row, leading: closure_6(tmp5, obj8), trailing: invite(6824).Arrow, label: intl4.string(onClose(1126).t.GLG9n4), onPress: onClose };
+  obj8 = { source: invite(12445) };
+  const tmp4 = invite(6824);
+  tmp5 = invite(6163);
   intl4 = onClose(1126).intl;
-  items[2] = closure_7(tmp3, obj7);
-  return closure_7(HubEmailConnectionScreen, obj2);
+  items[2] = closure_6(tmp4, obj7);
+  return closure_6(HubEmailConnectionScreen, obj2);
 });
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionStudentPrompt.tsx");
 
-export default tmp9;
+export default tmp8;

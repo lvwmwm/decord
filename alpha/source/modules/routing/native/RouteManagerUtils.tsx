@@ -1,30 +1,30 @@
-// Module ID: 10978
-// Function ID: 10979
+// Module ID: 11152
+// Function ID: 11153
 // Name: RouteManagerUtils
-// Dependencies: [109, 10333, 2067, 2063, 4903, 4705, 2115, 1085, 10334, 3, 4917, 10979, 5885, 1112, 10984, 5940, 7476, 6102, 4936, 584, 5104, 4987, 10985, 2]
+// Dependencies: [109, 10320, 2068, 2064, 4904, 4707, 2115, 1085, 10321, 3, 4918, 11153, 5886, 1112, 11158, 5941, 7481, 6104, 4937, 584, 5105, 4988, 11159, 2]
 // Exports: cleanupRouteManager, extractParamsFromVoiceModalRoute, initializeRouteManagerIfNeeded, popVoiceRoute, transitionToVoiceRoute
 
-// Module 10978 (RouteManagerUtils)
+// Module 11152 (RouteManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import RouteUtils from "RouteUtils" /* 4917 */;
-import flow_Client from "flow/Client" /* 4987 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5104 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7476 */;
-import ChannelCallStore from "ChannelCallStore" /* 10333 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10334 */;
-import _mod10979 from "module_10979" /* 10979 */;
-import DefaultRouteActionCreators from "DefaultRouteActionCreators" /* 10984 */;
-import RouteManagerDefault from "RouteManager" /* 10985 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import RouteUtils from "RouteUtils" /* 4918 */;
+import flow_Client from "flow/Client" /* 4988 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5105 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5886 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
+import ChannelCallStore from "ChannelCallStore" /* 10320 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10321 */;
+import _mod11153 from "module_11153" /* 11153 */;
+import DefaultRouteActionCreators from "DefaultRouteActionCreators" /* 11158 */;
+import RouteManagerDefault from "RouteManager" /* 11159 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4903 */;
-import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4904 */;
+import GuildChannelStore from "GuildChannelStore" /* 4707 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ function voiceRouteRewriter(location) {
   let state;
   const obj = { match: obj2.matchPath(pathname, obj3), location };
   ({ state, pathname } = location);
-  obj2 = _mod10979;
+  obj2 = _mod11153;
   obj3 = { path: items, strict: false, exact: false };
   const tmp = extractParams(obj);
   ({ channelId, guildId } = tmp);
@@ -94,7 +94,7 @@ function saveLastRouteListener(pathname) {
 }
 function saveLastNonVoiceRouteListener(pathname) {
   pathname = pathname.pathname;
-  const obj = _mod10979;
+  const obj = _mod11153;
   const obj2 = { path: items, strict: false, exact: false };
   const matchPathResult = obj.matchPath(pathname, obj2);
   let channelId;
@@ -139,7 +139,7 @@ function updateSelectedChannelListener(location, arg1) {
   let voiceMessageId;
   let voiceMessageId2;
   const pathname = location.pathname;
-  let obj = channel1(10979);
+  let obj = channel1(11153);
   const obj2 = { path: items, strict: false, exact: false };
   const matchPathResult = obj.matchPath(pathname, obj2);
   let params;
@@ -181,7 +181,7 @@ function updateSelectedChannelListener(location, arg1) {
       if (isGuildVoiceResult) {
         const popWithKey = ModalActionCreatorsDefault.popWithKey;
         ModalActionCreatorsDefault;
-        const tmpResult = channel1(7476);
+        const tmpResult = channel1(7481);
         popWithKey(tmpResult.getVoiceChannelKey(channel.id));
       }
       const obj17 = GuildActionCreatorsDefault;
@@ -247,13 +247,13 @@ function updateSelectedChannelListener(location, arg1) {
     }
     const channel3 = selectChannel(obj10);
   }
-  const isModalOpen = channel1(4936).isModalOpen;
-  channel1(4936);
-  const tmpResult5 = channel1(7476);
+  const isModalOpen = channel1(4937).isModalOpen;
+  channel1(4937);
+  const tmpResult5 = channel1(7481);
   if (!isModalOpen(tmpResult5.getVoiceChannelKey(channel1.id))) {
     const popAboveKey = ModalActionCreatorsDefault.popAboveKey;
     ModalActionCreatorsDefault;
-    const tmpResult6 = channel1(7476);
+    const tmpResult6 = channel1(7481);
     popAboveKey(tmpResult6.getVoiceChannelKey(channel1.id));
     const obj12 = DispatcherDefault;
     obj12.wait(() => {
@@ -294,9 +294,9 @@ function extractParams(arg0) {
     ({ guildId, channelId } = params);
     const messageId = params.messageId;
     if (_location.jumpType === flow_Client.JumpType.INSTANT) {
-      ANIMATED = tmp5(4987).JumpType.INSTANT;
+      ANIMATED = tmp5(4988).JumpType.INSTANT;
     } else {
-      ANIMATED = tmp5(4987).JumpType.ANIMATED;
+      ANIMATED = tmp5(4988).JumpType.ANIMATED;
     }
     RouteUtils;
     const obj2 = { guildId: unpackModuleId, channelId: tmp, messageId, jumpType: ANIMATED, skipMessageFetch: _location.skipMessageFetch };
@@ -338,7 +338,7 @@ export const extractParamsFromVoiceModalRoute = function extractParamsFromVoiceM
   let voiceGuildId;
   let voiceMessageId;
   const pathname = location.pathname;
-  const obj = _mod10979;
+  const obj = _mod11153;
   const obj2 = { path: items, strict: false, exact: false };
   const matchPathResult = obj.matchPath(pathname, obj2);
   let params;
@@ -393,7 +393,7 @@ export const popVoiceRoute = function popVoiceRoute(guildId) {
 };
 export const transitionToVoiceRoute = function transitionToVoiceRoute(arg0, arg1) {
   const defaultRoute = DefaultRouteStore.defaultRoute;
-  const obj = _mod10979;
+  const obj = _mod11153;
   const obj2 = { path: items, strict: false, exact: false };
   const matchPathResult = obj.matchPath(defaultRoute, obj2);
   let params;

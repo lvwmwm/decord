@@ -1,14 +1,14 @@
-// Module ID: 14596
-// Function ID: 14597
+// Module ID: 14695
+// Function ID: 14696
 // Name: activities
-// Dependencies: [5, 1085, 14560, 14548, 11142, 2028, 11134, 14547, 10616, 10615, 10635, 11148, 2]
+// Dependencies: [5, 1085, 14659, 14645, 10905, 2029, 10896, 14642, 10775, 10774, 10778, 2]
 
-// Module 14596 (activities)
-import RPCHelpers from "RPCHelpers" /* 11142 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14548 */;
+// Module 14695 (activities)
+import RPCHelpers from "RPCHelpers" /* 10905 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14645 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14560 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14659 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, constants;
@@ -38,8 +38,8 @@ let obj3 = {
     socket = socket.socket;
     return (async function(arg0, value) {
       let closure_1;
-      let tmp38Result;
-      let tmp38Result2;
+      let tmp36Result;
+      let tmp36Result2;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -73,7 +73,7 @@ let obj3 = {
               if (obj14.isEmbeddedApplication(socket.application)) {
                 let context;
                 if (tmp(closure_2[7])(socket)) {
-                  context = tmp40.context;
+                  context = tmp38.context;
                 }
                 let surface;
                 const tmp22 = tmp(closure_2[8]);
@@ -90,14 +90,14 @@ let obj3 = {
                 if (type === value(closure_2[9]).EmbeddedContextSourceType.FRAME) {
                   constants = 3;
                   c5 = 1;
-                  const obj4 = { value: tmp38Result.createProxyTicket(validateApplicationResult, tmp22Result, tmp(closure_2[11])(context.surface)), done: false };
-                  tmp38Result = value(closure_2[10]);
+                  const obj4 = { value: tmp36Result.createProxyTicket(validateApplicationResult, tmp22Result, context.surface.type), done: false };
+                  tmp36Result = value(closure_2[10]);
                   return obj4;
                 } else {
                   constants = 2;
                   c5 = 1;
-                  const obj5 = { value: tmp38Result2.createProxyTicket(validateApplicationResult, tmp22Result), done: false };
-                  tmp38Result2 = value(closure_2[10]);
+                  const obj5 = { value: tmp36Result2.createProxyTicket(validateApplicationResult, tmp22Result), done: false };
+                  tmp36Result2 = value(closure_2[10]);
                   return obj5;
                 }
               } else {
@@ -141,11 +141,11 @@ let obj3 = {
             const obj9 = { value, done: true };
             return obj9;
           }
-        } catch (tmp31) {
-          closure_2 = tmp31;
+        } catch (tmp29) {
+          closure_2 = tmp29;
           if (0 === c3) {
             c5 = 3;
-            throw tmp31;
+            throw tmp29;
           } else {
             constants = 1;
           }

@@ -1,13 +1,13 @@
-// Module ID: 4921
-// Function ID: 4922
+// Module ID: 4922
+// Function ID: 4923
 // Name: DcfNewUserCooldownExperiment
-// Dependencies: [1452, 1102, 558, 576, 2]
+// Dependencies: [1453, 1102, 558, 576, 2]
 // Exports: getDcfNewUserCooldown
 
-// Module 4921 (DcfNewUserCooldownExperiment)
+// Module 4922 (DcfNewUserCooldownExperiment)
 import react from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

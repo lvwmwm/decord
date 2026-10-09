@@ -1,12 +1,12 @@
-// Module ID: 6648
-// Function ID: 6649
+// Module ID: 6655
+// Function ID: 6656
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 558, 576, 4991, 4929, 6649, 6650, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4992, 4930, 6656, 6657, 2]
 
-// Module 6648 (BackgroundImage)
+// Module 6655 (BackgroundImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useThemeDefault from "useTheme" /* 4991 */;
+import useThemeDefault from "useTheme" /* 4992 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const shared = tmp(4929);
+const shared = tmp(4930);
 ({ Image: closure_4, View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackgroundImage(arg0) {
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
     let tmp5Result;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(6649);
+      tmp5Result = tmp5(6656);
     } else {
-      tmp5Result = tmp5(6650);
+      tmp5Result = tmp5(6657);
     }
     backgroundImageSource = tmp5Result;
   }
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
   if (flag === undefined) {
     flag = false;
   }
-  let tmp = flag(4991)();
+  let tmp = flag(4992)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   let obj2 = {};
@@ -90,9 +90,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
       let tmp5Result;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp5Result = tmp5(6649);
+        tmp5Result = tmp5(6656);
       } else {
-        tmp5Result = tmp5(6650);
+        tmp5Result = tmp5(6657);
       }
       tmp = tmp5Result;
     }

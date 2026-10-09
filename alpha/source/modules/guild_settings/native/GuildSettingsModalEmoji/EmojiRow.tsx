@@ -1,29 +1,29 @@
-// Module ID: 18069
-// Function ID: 18070
+// Module ID: 18229
+// Function ID: 18230
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 2086, 1389, 21, 5090, 587, 1381, 558, 576, 504, 8548, 9479, 4725, 18070, 5360, 5086, 1200, 4766, 1126, 6164, 1414, 5405, 4922, 6189, 18072, 6184, 2]
+// Dependencies: [32, 19, 17, 2086, 1390, 21, 5091, 587, 1382, 558, 576, 504, 8556, 9517, 4727, 18230, 5361, 5087, 1200, 4768, 1126, 6163, 1415, 5406, 4923, 6191, 18232, 6186, 2]
 
-// Module 18069 (GuildSettingsModalEmoji/EmojiRow)
+// Module 18229 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4725 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5360 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9479 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18070 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18072 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4727 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5361 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9517 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18230 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18232 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

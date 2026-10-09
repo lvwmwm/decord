@@ -1,33 +1,33 @@
-// Module ID: 11950
-// Function ID: 11951
+// Module ID: 11887
+// Function ID: 11888
 // Name: ChatInputActions
-// Dependencies: [32, 19, 11652, 1085, 21, 5090, 587, 5380, 9241, 4778, 6296, 4947, 1628, 11951, 9228, 5369, 7743, 1126, 9994, 8190, 9977, 11952, 8209, 9979, 11936, 9227, 9229, 1264, 4810, 9297, 11954, 4783, 11955, 11957, 11961, 2]
+// Dependencies: [32, 19, 11588, 1085, 21, 5091, 587, 5381, 9279, 4779, 6303, 4948, 1629, 11888, 9266, 5370, 7752, 1126, 10013, 8198, 9996, 11889, 8217, 9998, 11873, 9265, 9267, 1265, 4811, 9335, 11891, 4784, 11892, 11894, 11898, 2]
 
-// Module 11950 (ChatInputActions)
+// Module 11887 (ChatInputActions)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import mergeProps from "mergeProps" /* 4783 */;
-import ButtonConstants from "ButtonConstants" /* 5380 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 7743 */;
-import ImageIcon from "ImageIcon" /* 8190 */;
-import AppsIcon from "AppsIcon" /* 8209 */;
-import PollsIcon from "PollsIcon" /* 9977 */;
-import AttachmentIcon from "AttachmentIcon" /* 9979 */;
-import CameraIcon from "CameraIcon" /* 9994 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11936 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 11952 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11954 */;
-import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 11955 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import mergeProps from "mergeProps" /* 4784 */;
+import ButtonConstants from "ButtonConstants" /* 5381 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 7752 */;
+import ImageIcon from "ImageIcon" /* 8198 */;
+import AppsIcon from "AppsIcon" /* 8217 */;
+import PollsIcon from "PollsIcon" /* 9996 */;
+import AttachmentIcon from "AttachmentIcon" /* 9998 */;
+import CameraIcon from "CameraIcon" /* 10013 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11873 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 11889 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11891 */;
+import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 11892 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 11652 */;
+import ChatInputConstants from "ChatInputConstants" /* 11588 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
-let __initData, closure_12;
+let __initData;
 
 let c9;
 let hasOwnProperty;
@@ -67,7 +67,7 @@ class ChatInputActions {
     __initData = tmp;
     let tmp2 = canStartThreads;
     let obj = canStartThreads(isAppLauncherEnabled[8]);
-    closure_12 = obj.useClientThemesOverride(tmp.themedChatInput);
+    let closure_12 = obj.useClientThemesOverride(tmp.themedChatInput);
     let obj2 = canStartThreads(isAppLauncherEnabled[9]);
     const token = obj2.useToken(channel(isAppLauncherEnabled[6]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_GAP);
     let closure_13 = channel(isAppLauncherEnabled[10])({ includeCustomKeyboard: true });

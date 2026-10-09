@@ -1,41 +1,40 @@
-// Module ID: 9996
-// Function ID: 9997
+// Module ID: 10015
+// Function ID: 10016
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 9985, 1126, 5086, 5375, 9997, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 10004, 1126, 5087, 5376, 6163, 10016, 2]
 
-// Module 9996 (MediaKeyboardFooter)
+// Module 10015 (MediaKeyboardFooter)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import DeviceMediaDefault from "DeviceMedia" /* 9985 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10004 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10016 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let tmp5;
-const AssetRegistryDefault = tmp5(9997);
-({ View: c3, Image: closure_4, ActivityIndicator: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ View: c3, ActivityIndicator: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, label: { textAlign: "center", marginBottom: 16 }, buttonWrapper: obj3, loadingSpinner: obj4 };
 obj2 = { padding: nativeDefault.space.PX_16, height: 280, alignItems: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_32, height: nativeDefault.space.PX_48 };
 obj4 = { color: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, margin: nativeDefault.space.PX_16 };
-let closure_8 = createStyles(obj);
+let closure_7 = createStyles(obj);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardFooter(arg0) {
   let container;
   let disabled;
@@ -45,7 +44,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj = react2;
   const cResult = obj.c(17);
   ({ disabled, onViewAll } = arg0);
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   const obj2 = DeviceMediaDefault;
   if (obj2.useHasReachedEnd()) {
     let tmp11;
@@ -63,7 +62,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (cResult[3] !== tmp4.label) {
       const obj3 = { variant: "text-sm/normal", style: label, children: tmp11 };
-      const tmp15 = metroRequire(Text_Text.Text, obj3);
+      const tmp15 = hasOwnProperty(Text_Text.Text, obj3);
       cResult[3] = tmp4.label;
       cResult[4] = tmp15;
       tmp13 = tmp15;
@@ -94,7 +93,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const _Symbol3 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const obj4 = { source: AssetRegistryDefault };
-          const tmp28 = metroRequire(React3, obj4);
+          const tmp5Result = FastImageDefault;
+          const tmp28 = hasOwnProperty(tmp5Result, obj4);
           cResult[12] = tmp28;
           tmp25 = tmp28;
         } else {
@@ -111,7 +111,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
         const obj5 = { style: container, children: items };
         items = [tmp13, tmp21, tmp25];
-        const tmp32 = metroImportDefault(_false, obj5);
+        const tmp32 = metroRequire(_false, obj5);
         cResult[13] = tmp4.container;
         cResult[14] = tmp13;
         cResult[15] = tmp21;
@@ -119,14 +119,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp29 = tmp32;
       }
       const obj6 = { style: buttonWrapper, children: tmp18 };
-      const tmp24 = metroRequire(_false, obj6);
+      const tmp24 = hasOwnProperty(_false, obj6);
       cResult[9] = tmp4.buttonWrapper;
       cResult[10] = tmp18;
       cResult[11] = tmp24;
       tmp21 = tmp24;
     }
     const obj7 = { variant: "primary", size: "sm", onPress: onViewAll, text: tmp16, disabled };
-    const tmp20 = metroRequire(components_Button_Button.Button, obj7);
+    const tmp20 = hasOwnProperty(components_Button_Button.Button, obj7);
     cResult[6] = disabled;
     cResult[7] = onViewAll;
     cResult[8] = tmp20;
@@ -135,7 +135,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp6;
     if (cResult[0] !== tmp4.loadingSpinner) {
       const obj8 = { style: tmp4.loadingSpinner, size: "large", color: tmp4.loadingSpinner.color };
-      const tmp9 = metroRequire(hasOwnProperty, obj8);
+      const tmp9 = hasOwnProperty(React3, obj8);
       cResult[0] = tmp4.loadingSpinner;
       cResult[1] = tmp9;
       tmp6 = tmp9;
@@ -154,25 +154,26 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let onViewAll;
   let tmp6;
   ({ disabled, onViewAll } = arg0);
-  const tmp = closure_8();
+  const tmp = closure_7();
   const obj = DeviceMediaDefault;
   if (obj.useHasReachedEnd()) {
     const obj2 = { style: tmp.container, children: items };
     const obj3 = { variant: "text-sm/normal", style: tmp.label, children: intl.string(intl3.t.mKSwAW) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
-    items = [metroRequire(Text, obj3), , ];
-    const obj4 = { style: tmp.buttonWrapper, children: metroRequire(Button, obj5) };
+    items = [hasOwnProperty(Text, obj3), , ];
+    const obj4 = { style: tmp.buttonWrapper, children: hasOwnProperty(Button, obj5) };
     obj5 = { variant: "primary", size: "sm", onPress: onViewAll, text: intl2.string(intl3.t.ZT24In), disabled };
     Button = components_Button_Button.Button;
     intl2 = intl3.intl;
-    items[1] = metroRequire(_false, obj4);
+    items[1] = hasOwnProperty(_false, obj4);
     const obj6 = { source: AssetRegistryDefault };
-    items[2] = metroRequire(React3, obj6);
-    tmp6 = metroImportDefault(_false, obj2);
+    const tmp2Result = FastImageDefault;
+    items[2] = hasOwnProperty(tmp2Result, obj6);
+    tmp6 = metroRequire(_false, obj2);
   } else {
     const obj7 = { style: tmp.loadingSpinner, size: "large", color: tmp.loadingSpinner.color };
-    tmp6 = metroRequire(hasOwnProperty, obj7);
+    tmp6 = hasOwnProperty(React3, obj7);
   }
   return tmp6;
 }));

@@ -1,8 +1,8 @@
-// Module ID: 5469
-// Function ID: 5470
+// Module ID: 5470
+// Function ID: 5471
 // Dependencies: [2]
 
-// Module 5469
+// Module 5470
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/base/red.png.js");

@@ -1,16 +1,15 @@
-// Module ID: 1903
-// Function ID: 1904
+// Module ID: 1904
+// Function ID: 1905
 // Name: i18n
-// Dependencies: [1904, 1913, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 580, 1945, 1946, 1360, 2]
+// Dependencies: [1905, 1914, 1915, 1916, 1917, 1918, 1919, 1920, 1921, 1922, 1923, 1924, 1925, 1926, 1927, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 580, 1946, 1947, 1361, 2]
 
-// Module 1903 (i18n)
+// Module 1904 (i18n)
 import _mod580 from "module_580" /* 580 */;
-import react_native from "react-native" /* 1360 */;
-import _modDef1904 from "module_1904" /* 1904 */;
-import _default2 from "_default2" /* 1941 */;
-import _mod1945 from "module_1945" /* 1945 */;
-import parse from "parse" /* 1946 */;
-import module_1913 from "module_1913" /* 1913 */;
+import react_native from "react-native" /* 1361 */;
+import _modDef1905 from "module_1905" /* 1905 */;
+import _default2 from "_default2" /* 1942 */;
+import _mod1946 from "module_1946" /* 1946 */;
+import parse from "parse" /* 1947 */;
 import module_1914 from "module_1914" /* 1914 */;
 import module_1915 from "module_1915" /* 1915 */;
 import module_1916 from "module_1916" /* 1916 */;
@@ -38,11 +37,12 @@ import module_1937 from "module_1937" /* 1937 */;
 import module_1938 from "module_1938" /* 1938 */;
 import module_1939 from "module_1939" /* 1939 */;
 import module_1940 from "module_1940" /* 1940 */;
+import module_1941 from "module_1941" /* 1941 */;
 import size from "module_2" /* 2 */;
 
 let _instance_members_initializer_I18N_;
 
-global.IntlMessageFormat = _modDef1904;
+global.IntlMessageFormat = _modDef1905;
 delete global["IntlMessageFormat"];
 if (typeof Intl === "undefined") {
   const _module28 = _default2;
@@ -172,18 +172,18 @@ class I18N extends EventEmitter {
     let getLanguages;
     let getMessages;
     let tmp12;
-    const f86270 = (resolveLanguageLoaded) => {
+    const f86481 = (resolveLanguageLoaded) => {
       obj.resolveLanguageLoaded = resolveLanguageLoaded;
     };
     initialLocale = initialLocale.initialLocale;
     ({ getMessages, getLanguages } = initialLocale);
     const obj = new I18N(tmp5, tmp4, tmp3, tmp2, new.target, this, tmp);
     _instance_members_initializer_I18N_();
-    obj.initialLanguageLoad = new Promise(f86270);
-    new Promise(f86270);
+    obj.initialLanguageLoad = new Promise(f86481);
+    new Promise(f86481);
     if (Intl.__addLocaleData) {
       const _Intl = Intl;
-      Intl.__addLocaleData(_mod1945);
+      Intl.__addLocaleData(_mod1946);
     }
     obj._languages = getLanguages();
     if (null != window.Proxy) {

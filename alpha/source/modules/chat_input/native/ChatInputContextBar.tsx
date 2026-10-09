@@ -1,30 +1,30 @@
-// Module ID: 12152
-// Function ID: 12153
+// Module ID: 12089
+// Function ID: 12090
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5079, 7232, 1389, 1085, 21, 1200, 5090, 587, 558, 576, 4778, 1126, 5086, 6612, 6189, 504, 4792, 5624, 8825, 7952, 12153, 4896, 4810, 5091, 9642, 1264, 9640, 1112, 5623, 7891, 9227, 9229, 12154, 2]
+// Dependencies: [19, 17, 5080, 7237, 1390, 1085, 21, 1200, 5091, 587, 558, 576, 4779, 1126, 5087, 6619, 6191, 504, 4793, 5625, 8834, 7961, 12090, 4897, 4811, 5092, 9661, 1265, 9659, 1112, 5624, 7900, 9265, 9267, 12091, 2]
 
-// Module 12152 (ChatInputContextBar)
+// Module 12089 (ChatInputContextBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl9 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useToken from "useToken" /* 4778 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Pressables from "Pressables" /* 6189 */;
-import DraftStore2 from "DraftStore" /* 7232 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7891 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9227 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9229 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9642 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useToken from "useToken" /* 4779 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Pressables from "Pressables" /* 6191 */;
+import DraftStore2 from "DraftStore" /* 7237 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7900 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9265 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9267 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9661 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import UserStore from "UserStore" /* 1389 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let hasOwnProperty;
 let map1;
 let tmp5;
 let unpackModuleId;
-const AssetRegistryDefault = tmp5(6612);
+const AssetRegistryDefault = tmp5(6619);
 let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const DraftType = DraftStore2.DraftType;
@@ -95,7 +95,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   }
   if (cResult[1] !== tmp4.floatingReplyTextWrapper) {
     const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: floatingReplyTextWrapper, children: first };
-    const tmp12 = closure_12(Text_Text.Text, obj4);
+    const tmp12 = authStore2(Text_Text.Text, obj4);
     cResult[1] = tmp4.floatingReplyTextWrapper;
     cResult[2] = tmp12;
     tmp10 = tmp12;
@@ -118,7 +118,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   if (cResult[4] !== tmp4.floatingCloseIcon) {
     const obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
     const Icon = tmp(1200).Icon;
-    const tmp18 = closure_12(Icon, obj5);
+    const tmp18 = authStore2(Icon, obj5);
     cResult[4] = tmp4.floatingCloseIcon;
     cResult[5] = tmp18;
     tmp16 = tmp18;
@@ -155,14 +155,14 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
         tmp25 = tmp28;
       }
       const obj7 = { style: floatingRightActions, children: tmp19 };
-      const tmp24 = closure_12(hasOwnProperty, obj7);
+      const tmp24 = authStore2(hasOwnProperty, obj7);
       cResult[10] = tmp4.floatingRightActions;
       cResult[11] = tmp19;
       cResult[12] = tmp24;
       tmp21 = tmp24;
     }
   }
-  const tmp20 = closure_12(Pressables.PressableOpacity, { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp13, hitSlop: tmp15, onPress: onCancelReplying, children: tmp16 });
+  const tmp20 = authStore2(Pressables.PressableOpacity, { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp13, hitSlop: tmp15, onPress: onCancelReplying, children: tmp16 });
   cResult[6] = onCancelReplying;
   cResult[7] = tmp15;
   cResult[8] = tmp16;
@@ -187,9 +187,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t["5IEsGx"]) };
   const Text = Text_Text.Text;
   intl = intl9.intl;
-  items = [closure_12(Text, obj4), ];
-  const obj5 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity, obj6) };
-  obj6 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.jSnJGT), hitSlop: tmp10, onPress: onCancelReplying, children: closure_12(Icon, obj7) };
+  items = [authStore2(Text, obj4), ];
+  const obj5 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity, obj6) };
+  obj6 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.jSnJGT), hitSlop: tmp10, onPress: onCancelReplying, children: authStore2(Icon, obj7) };
   PressableOpacity = Pressables.PressableOpacity;
   intl2 = intl9.intl;
   tmp10 = undefined;
@@ -199,7 +199,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   }
   obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   Icon = tmp2(1200).Icon;
-  items[1] = closure_12(hasOwnProperty, obj5);
+  items[1] = authStore2(hasOwnProperty, obj5);
   return tmp7(hasOwnProperty, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -550,13 +550,13 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputReplyBa
               let tmp3Result;
               if (null != colorString) {
                 const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-                const items = [closure_12(native.RoleDot, obj2), ];
+                const items = [authStore2(native.RoleDot, obj2), ];
                 const obj3 = { variant, style: tmp20, children: nick };
                 tmp20 = undefined;
                 const Text2 = Text_Text.Text;
-                const tmp15 = closure_12;
+                const tmp15 = authStore2;
                 const tmp8 = map1;
-                const tmp9 = authStore2;
+                const tmp9 = authStore3;
                 if (null != displayNameStylesFont) {
                   tmp20 = { fontFamily: tmp19 };
                   const obj4 = { fontFamily: tmp19 };
@@ -571,7 +571,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputReplyBa
             items1 = [roleStyle, ];
             let tmp5 = null != displayNameStylesFont;
             const Text = Text_Text.Text;
-            const tmp3 = closure_12;
+            const tmp3 = authStore2;
             if (tmp5) {
               tmp5 = { fontFamily: tmp4 };
               const obj6 = { fontFamily: tmp4 };
@@ -655,13 +655,13 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputReplyBa
       let tmp3Result;
       if (null != colorString) {
         const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-        const items = [closure_12(native.RoleDot, obj2), ];
+        const items = [authStore2(native.RoleDot, obj2), ];
         const obj3 = { variant: "text-sm/semibold", style: tmp19, children: nick };
         tmp19 = undefined;
         const Text2 = Text_Text.Text;
-        const tmp15 = closure_12;
+        const tmp15 = authStore2;
         const tmp8 = map1;
-        const tmp9 = authStore2;
+        const tmp9 = authStore3;
         if (null != closure_7) {
           tmp19 = { fontFamily: tmp18 };
           const obj4 = { fontFamily: tmp18 };
@@ -676,7 +676,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputReplyBa
     items1 = [roleStyle, ];
     let tmp5 = null != closure_7;
     const Text = Text_Text.Text;
-    const tmp3 = closure_12;
+    const tmp3 = authStore2;
     if (tmp5) {
       tmp5 = { fontFamily: tmp4 };
       const obj6 = { fontFamily: tmp4 };
@@ -858,7 +858,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   }
   if (cResult[1] !== tmp4.floatingReplyTextWrapper) {
     const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: floatingReplyTextWrapper, children: first };
-    const tmp12 = closure_12(Text_Text.Text, obj4);
+    const tmp12 = authStore2(Text_Text.Text, obj4);
     cResult[1] = tmp4.floatingReplyTextWrapper;
     cResult[2] = tmp12;
     tmp10 = tmp12;
@@ -880,7 +880,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   if (cResult[4] !== tmp4.floatingCloseIcon) {
     const obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
     const Icon = tmp(1200).Icon;
-    const tmp18 = closure_12(Icon, obj5);
+    const tmp18 = authStore2(Icon, obj5);
     cResult[4] = tmp4.floatingCloseIcon;
     cResult[5] = tmp18;
     tmp16 = tmp18;
@@ -911,7 +911,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
             return tmp29;
           }
           const obj6 = { style: tmp4.contextBarRow, children: tmp25 };
-          const tmp32 = closure_12(hasOwnProperty, obj6);
+          const tmp32 = authStore2(hasOwnProperty, obj6);
           cResult[16] = tmp4.contextBarRow;
           cResult[17] = tmp25;
           cResult[18] = tmp32;
@@ -919,21 +919,21 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
         }
         const obj7 = { children: items };
         items = [tmp10, tmp21];
-        const tmp28 = map1(authStore2, obj7);
+        const tmp28 = map1(authStore3, obj7);
         cResult[13] = tmp10;
         cResult[14] = tmp21;
         cResult[15] = tmp28;
         tmp25 = tmp28;
       }
       const obj8 = { style: tmp4.floatingRightActions, children: tmp19 };
-      const tmp24 = closure_12(hasOwnProperty, obj8);
+      const tmp24 = authStore2(hasOwnProperty, obj8);
       cResult[10] = tmp19;
       cResult[11] = tmp4.floatingRightActions;
       cResult[12] = tmp24;
       tmp21 = tmp24;
     }
   }
-  const tmp20 = closure_12(Pressables.PressableOpacity, { accessibilityRole: "button", accessibilityLabel: tmp13, activeOpacity: 0.5, hitSlop: tmp15, onPress: onCancelEditing, children: tmp16 });
+  const tmp20 = authStore2(Pressables.PressableOpacity, { accessibilityRole: "button", accessibilityLabel: tmp13, activeOpacity: 0.5, hitSlop: tmp15, onPress: onCancelEditing, children: tmp16 });
   cResult[6] = onCancelEditing;
   cResult[7] = tmp15;
   cResult[8] = tmp16;
@@ -956,8 +956,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   const obj3 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t.rtNXxN) };
   const Text = Text_Text.Text;
   intl = intl9.intl;
-  const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.qv9j1K), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelEditing, children: closure_12(Icon, obj5) };
-  const tmp8 = closure_12(Text, obj3);
+  const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.qv9j1K), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelEditing, children: authStore2(Icon, obj5) };
+  const tmp8 = authStore2(Text, obj3);
   const PressableOpacity = Pressables.PressableOpacity;
   intl2 = intl9.intl;
   tmp9 = undefined;
@@ -966,12 +966,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   }
   obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   Icon = tmp2(1200).Icon;
-  const obj6 = { style: tmp.contextBarRow, children: map1(authStore2, obj7) };
+  const obj6 = { style: tmp.contextBarRow, children: map1(authStore3, obj7) };
   obj7 = { children: items };
   items = [tmp8, ];
-  const obj8 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity, obj4) };
-  items[1] = closure_12(hasOwnProperty, obj8);
-  return closure_12(hasOwnProperty, obj6);
+  const obj8 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity, obj4) };
+  items[1] = authStore2(hasOwnProperty, obj8);
+  return authStore2(hasOwnProperty, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputScheduledMessageBar(arg0) {
@@ -1018,7 +1018,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   }
   if (cResult[3] !== tmp10) {
     const obj5 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: tmp10 };
-    const tmp16 = closure_12(Text_Text.Text, obj5);
+    const tmp16 = authStore2(Text_Text.Text, obj5);
     cResult[3] = tmp10;
     cResult[4] = tmp16;
     tmp14 = tmp16;
@@ -1049,7 +1049,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
       if (cResult[10] !== tmp4.floatingCloseIcon) {
         const obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
         const Icon = tmp(1200).Icon;
-        const tmp24 = closure_12(Icon, obj6);
+        const tmp24 = authStore2(Icon, obj6);
         cResult[10] = tmp4.floatingCloseIcon;
         cResult[11] = tmp24;
         tmp22 = tmp24;
@@ -1080,7 +1080,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
                 return tmp36;
               }
               const obj7 = { style: tmp4.contextBarRow, children: tmp32 };
-              const tmp39 = closure_12(hasOwnProperty, obj7);
+              const tmp39 = authStore2(hasOwnProperty, obj7);
               cResult[22] = tmp4.contextBarRow;
               cResult[23] = tmp32;
               cResult[24] = tmp39;
@@ -1088,14 +1088,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
             }
             const obj8 = { children: items };
             items = [tmp17, tmp28];
-            const tmp35 = map1(authStore2, obj8);
+            const tmp35 = map1(authStore3, obj8);
             cResult[19] = tmp17;
             cResult[20] = tmp28;
             cResult[21] = tmp35;
             tmp32 = tmp35;
           }
           const obj9 = { style: tmp4.floatingRightActions, children: tmp25 };
-          const tmp31 = closure_12(hasOwnProperty, obj9);
+          const tmp31 = authStore2(hasOwnProperty, obj9);
           cResult[16] = tmp25;
           cResult[17] = tmp4.floatingRightActions;
           cResult[18] = tmp31;
@@ -1103,7 +1103,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
         }
       }
       const obj10 = { accessibilityRole: "button", accessibilityLabel: tmp19, activeOpacity: 0.5, hitSlop: tmp21, onPress: onCancelScheduling, children: tmp22 };
-      const tmp27 = closure_12(Pressables.PressableOpacity, obj10);
+      const tmp27 = authStore2(Pressables.PressableOpacity, obj10);
       cResult[12] = onCancelScheduling;
       cResult[13] = tmp21;
       cResult[14] = tmp22;
@@ -1111,7 +1111,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
       tmp25 = tmp27;
     }
   }
-  const tmp18 = closure_12(Pressables.PressableOpacity, { style: floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: first, activeOpacity: 0.5, onPress: onEditSchedule, children: tmp14 });
+  const tmp18 = authStore2(Pressables.PressableOpacity, { style: floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: first, activeOpacity: 0.5, onPress: onEditSchedule, children: tmp14 });
   cResult[5] = onEditSchedule;
   cResult[6] = tmp4.floatingReplyTextWrapper;
   cResult[7] = tmp14;
@@ -1140,7 +1140,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const obj2 = useToken;
   const bound = Math.max(0, (token - obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  const obj3 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: closure_12(Text, obj4) };
+  const obj3 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: authStore2(Text, obj4) };
   const PressableOpacity = Pressables.PressableOpacity;
   intl = intl9.intl;
   obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: formatToPlainString(ZN3tIx, obj5) };
@@ -1150,8 +1150,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   obj5 = { timestamp: date.valueOf() };
   ZN3tIx = intl9.t.ZN3tIx;
   date = new Date(scheduledTimestamp);
-  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl9.t.cpT0Cq), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelScheduling, children: closure_12(Icon, obj7) };
-  const tmp8 = closure_12(PressableOpacity, obj3);
+  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl9.t.cpT0Cq), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelScheduling, children: authStore2(Icon, obj7) };
+  const tmp8 = authStore2(PressableOpacity, obj3);
   const PressableOpacity2 = Pressables.PressableOpacity;
   intl3 = intl9.intl;
   tmp9 = undefined;
@@ -1160,12 +1160,12 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatIn
   }
   obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   Icon = tmp2(1200).Icon;
-  const obj8 = { style: tmp.contextBarRow, children: map1(authStore2, obj9) };
+  const obj8 = { style: tmp.contextBarRow, children: map1(authStore3, obj9) };
   obj9 = { children: items };
   items = [tmp8, ];
-  const obj10 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity2, obj6) };
-  items[1] = closure_12(hasOwnProperty, obj10);
-  return closure_12(hasOwnProperty, obj8);
+  const obj10 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity2, obj6) };
+  items[1] = authStore2(hasOwnProperty, obj10);
+  return authStore2(hasOwnProperty, obj8);
 });
 const __initData = { code: "function ChatInputContextBarTsx1(){const{stylesBackgroundColor,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...{maxHeight:heightSv.get()}};}" };
 let closure_23 = { code: "function ChatInputContextBarTsx2(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
@@ -1183,10 +1183,10 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
   obj = backgroundColor(576);
   const cResult = obj.c(9);
   ({ children, ref } = arg0);
-  const obj2 = backgroundColor(4896);
-  backgroundColor = closure_16(obj2.useGradientValue(backgroundColor(4896).GradientPercentage.END)).contextBar.backgroundColor;
+  const obj2 = backgroundColor(4897);
+  backgroundColor = closure_16(obj2.useGradientValue(backgroundColor(4897).GradientPercentage.END)).contextBar.backgroundColor;
   const tmp3 = closure_17();
-  const obj3 = backgroundColor(4810);
+  const obj3 = backgroundColor(4811);
   const sharedValue = obj3.useSharedValue(0);
   let fn = function l() {
     obj = { backgroundColor, maxHeight: sharedValue.get() };
@@ -1195,7 +1195,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
   fn.__closure = { stylesBackgroundColor: backgroundColor, heightSv: sharedValue };
   fn.__workletHash = 16731072716488;
   fn.__initData = __initData;
-  const obj4 = backgroundColor(4810);
+  const obj4 = backgroundColor(4811);
   const animatedStyle = obj4.useAnimatedStyle(fn);
   dependencyMap = first.useRef(null);
   const obj5 = first;
@@ -1229,7 +1229,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F154300 */ };
+                  const fn = function n() { /* body not rendered: F154627 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1261,7 +1261,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F154300 */ };
+                  const fn = function n() { /* body not rendered: F154627 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1292,7 +1292,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F154300 */ };
+                  const fn = function n() { /* body not rendered: F154627 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1321,7 +1321,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
                       closure_1_2.current = current;
                       set = sharedValue.set;
                       obj = backgroundColor(closure_2[25]);
-                      const fn = function n() { /* body not rendered: F154300 */ };
+                      const fn = function n() { /* body not rendered: F154627 */ };
                       fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                       fn.__workletHash = 10908592279914;
                       fn.__initData = __initData;
@@ -1335,7 +1335,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contex
       return tmp10;
     }
     const obj6 = { style: tmp9, children };
-    const tmp13 = closure_12(sharedValue(4810).View, obj6);
+    const tmp13 = closure_12(sharedValue(4811).View, obj6);
     cResult[6] = children;
     cResult[7] = tmp9;
     cResult[8] = tmp13;
@@ -1572,7 +1572,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: tmp8Result.getContextBarCancelReason("reply", "cancel"), is_own_message: id1 === id2 };
       ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
-      tmp8Result = tmp8(9640);
+      tmp8Result = tmp8(9659);
       const currentUser = UserStore.getCurrentUser();
       id1 = undefined;
       if (currentUser != null) {

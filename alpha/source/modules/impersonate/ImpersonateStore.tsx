@@ -1,7 +1,7 @@
 // Module ID: 2117
 // Function ID: 2118
 // Name: ImpersonateStore
-// Dependencies: [2118, 2086, 1085, 1095, 11, 2123, 1402, 504, 2038, 584, 2]
+// Dependencies: [2118, 2086, 1085, 1095, 11, 2123, 1403, 504, 2039, 584, 2]
 
 // Module 2117 (ImpersonateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -9,8 +9,8 @@ import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import FunctionUtils from "FunctionUtils" /* 2038 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import FunctionUtils from "FunctionUtils" /* 2039 */;
 import ImpersonateTypes from "ImpersonateTypes" /* 2123 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import GuildStore from "GuildStore" /* 2086 */;

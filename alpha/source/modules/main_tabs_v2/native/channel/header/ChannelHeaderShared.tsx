@@ -1,32 +1,32 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 12812
+// Function ID: 12813
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4717, 1389, 21, 5090, 587, 558, 576, 1381, 6189, 10246, 5086, 1200, 12846, 10261, 4778, 8134, 6655, 12847, 1126, 5417, 2]
+// Dependencies: [32, 19, 17, 4719, 1390, 21, 5091, 587, 558, 576, 1382, 6191, 10231, 5087, 1200, 12813, 10246, 4779, 8142, 6662, 12814, 1126, 5418, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12845 (ChannelHeaderShared)
+// Module 12812 (ChannelHeaderShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useToken from "useToken" /* 4778 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import useChannelName from "useChannelName" /* 5417 */;
-import Pressables from "Pressables" /* 6189 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10246 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10261 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12846 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12847 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useToken from "useToken" /* 4779 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import useChannelName from "useChannelName" /* 5418 */;
+import Pressables from "Pressables" /* 6191 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6662 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8142 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10231 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10246 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12813 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12814 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -270,7 +270,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp9 = metroImportAll(UsernameWithEffectsDefault, obj7);
   } else {
     const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = metroImportAll(tmp(5086).Text, obj13);
+    tmp9 = metroImportAll(tmp(5087).Text, obj13);
   }
   cResult[0] = accessibleTitle;
   cResult[1] = guildId;
@@ -382,7 +382,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserAv
       }
     }
   }
-  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: false };
+  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: null };
   const Avatar = tmp(1200).Avatar;
   const tmp7 = metroImportAll(Avatar, obj2);
   cResult[0] = isMobileOnline;
@@ -400,7 +400,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserAv
   let tmp3;
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: false };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: null };
   tmp = closure_11();
   const Avatar = native.Avatar;
   tmp3 = null;
@@ -517,7 +517,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
         let tmp8 = null;
         if (withSeparator) {
           const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = metroImportAll(tmp(5086).Text, obj3);
+          tmp8 = metroImportAll(tmp(5087).Text, obj3);
         }
         cResult[5] = str2;
         cResult[6] = withSeparator;

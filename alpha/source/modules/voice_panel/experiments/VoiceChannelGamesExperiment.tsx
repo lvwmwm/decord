@@ -1,11 +1,11 @@
-// Module ID: 8826
-// Function ID: 8827
+// Module ID: 8835
+// Function ID: 8836
 // Name: VoiceChannelGamesExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1454, 558, 576, 2]
 
-// Module 8826 (VoiceChannelGamesExperiment)
+// Module 8835 (VoiceChannelGamesExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

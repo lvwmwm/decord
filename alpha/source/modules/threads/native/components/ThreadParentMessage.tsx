@@ -1,24 +1,24 @@
-// Module ID: 17085
-// Function ID: 17086
+// Module ID: 17235
+// Function ID: 17236
 // Name: ThreadParentMessage
-// Dependencies: [19, 7301, 5428, 21, 7719, 558, 576, 504, 1112, 9308, 6189, 2]
+// Dependencies: [19, 7306, 5429, 21, 7728, 558, 576, 504, 1112, 9346, 6191, 2]
 
-// Module 17085 (ThreadParentMessage)
+// Module 17235 (ThreadParentMessage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import router_utils from "router_utils" /* 1112 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7301 */;
-import RowGeneratorDefault from "RowGenerator" /* 7719 */;
-import ChatItemDefault from "ChatItem" /* 9308 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7306 */;
+import RowGeneratorDefault from "RowGenerator" /* 7728 */;
+import ChatItemDefault from "ChatItem" /* 9346 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5428 */;
+import MessageStore from "MessageStore" /* 5429 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
 
 let tmp;
-const Pressables = tmp(6189);
+const Pressables = tmp(6191);
 const ReferencedMessageState = ReferencedMessageStore2.ReferencedMessageState;
 const jsx = Fragment.jsx;
 let rowGenerator = new RowGeneratorDefault();
@@ -153,7 +153,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadCreati
         tmp9 = cResult[4];
       }
       if (cResult[5] !== stateFromStores) {
-        const tmp14 = jsx(channelId(9308), { rowGenerator, message: stateFromStores, style: tmp9, pointerEvents: "none" });
+        const tmp14 = jsx(channelId(9346), { rowGenerator, message: stateFromStores, style: tmp9, pointerEvents: "none" });
         cResult[5] = stateFromStores;
         cResult[6] = tmp14;
         tmp10 = tmp14;

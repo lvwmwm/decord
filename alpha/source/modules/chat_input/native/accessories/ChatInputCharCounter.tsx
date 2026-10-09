@@ -1,20 +1,20 @@
-// Module ID: 12163
-// Function ID: 12164
+// Module ID: 12100
+// Function ID: 12101
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1389, 1085, 1391, 21, 5090, 587, 558, 576, 4726, 504, 9198, 9208, 4766, 1126, 5086, 9005, 6189, 2]
+// Dependencies: [32, 19, 1390, 1085, 1392, 21, 5091, 587, 558, 576, 4728, 504, 9232, 9242, 4768, 1126, 5087, 9016, 6191, 2]
 
-// Module 12163 (ChatInputCharCounter)
+// Module 12100 (ChatInputCharCounter)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9208 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9242 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmp9 = stateFromStores(9198)();
+  const tmp9 = stateFromStores(9232)();
   dependencyMap = tmp9;
   let result = tmp9 / 10;
   _slicedToArray = result;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
               if (cResult[15] !== stateFromStores) {
                 let tmp42 = null;
                 if (!stateFromStores) {
-                  tmp42 = closure_9(tmp(9005).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+                  tmp42 = closure_9(tmp(9016).NitroWheelIcon, { size: "xs", color: "icon-muted" });
                 }
                 class S {
                   constructor() {
@@ -147,7 +147,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
               }
               let obj4 = { onPress: tmp18, style: tmp36, children: items1 };
               items1 = [tmp38, tmp41];
-              const tmp46 = closure_10(tmp(6189).PressableOpacity, obj4);
+              const tmp46 = closure_10(tmp(6191).PressableOpacity, obj4);
               cResult[17] = tmp18;
               cResult[18] = tmp36;
               cResult[19] = tmp38;
@@ -206,7 +206,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
               }
               let obj6 = { onPress: tmp18, style: tmp27, children: items3 };
               items3 = [tmp29, tmp32];
-              const tmp35 = closure_10(tmp(6189).PressableOpacity, obj6);
+              const tmp35 = closure_10(tmp(6191).PressableOpacity, obj6);
               cResult[29] = tmp18;
               cResult[30] = tmp27;
               cResult[31] = tmp29;
@@ -248,7 +248,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
                   tmp26 = tmp23;
                 }
                 const obj7 = { onPress: tmp18, style: tmp20, children: tmp22 };
-                const tmp25 = closure_9(tmp(6189).PressableOpacity, obj7);
+                const tmp25 = closure_9(tmp(6191).PressableOpacity, obj7);
                 cResult[38] = tmp18;
                 cResult[39] = tmp20;
                 cResult[40] = tmp25;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
   }
   class E {
     constructor() {
-      obj = { onMessageLengthChanged() { /* body not rendered: F143685 */ } };
+      obj = { onMessageLengthChanged() { /* body not rendered: F143955 */ } };
       return obj;
     }
   }
@@ -321,7 +321,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
     const obj = stateFromStores(maxLength[10]);
     return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
   });
-  const tmp5 = stateFromStores(9198)();
+  const tmp5 = stateFromStores(9232)();
   dependencyMap = tmp5;
   let result = tmp5 / 10;
   _slicedToArray = result;
@@ -367,38 +367,38 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
     const tmp19 = closure_10;
     let obj2 = { onPress: callback, style: items2, children: items3 };
     items2 = [tmp.container, style];
-    const PressableOpacity3 = tmp2(6189).PressableOpacity;
+    const PressableOpacity3 = tmp2(6191).PressableOpacity;
     let obj3 = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xxs/semibold", children: "-" + first };
     const _HermesInternal = HermesInternal;
-    const Text = tmp2(5086).Text;
+    const Text = tmp2(5087).Text;
     items3 = [closure_9(Text, obj3), ];
     let tmp20Result = null;
     const tmp20 = closure_9;
     if (!stateFromStores) {
-      tmp20Result = tmp20(tmp2(9005).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+      tmp20Result = tmp20(tmp2(9016).NitroWheelIcon, { size: "xs", color: "icon-muted" });
     }
     items3[1] = tmp20Result;
     tmp16Result = tmp19(PressableOpacity3, obj2);
   } else if (first >= -result) {
     let obj4 = { onPress: callback, style: items4, children: items5 };
     items4 = [tmp.container, style];
-    const PressableOpacity2 = tmp2(6189).PressableOpacity;
+    const PressableOpacity2 = tmp2(6191).PressableOpacity;
     let obj5 = { color: "text-default", lineClamp: 1, variant: "text-xxs/semibold", children: -first };
-    items5 = [closure_9(tmp2(5086).Text, obj5), ];
+    items5 = [closure_9(tmp2(5087).Text, obj5), ];
     let tmp17Result = null;
     const tmp16 = closure_10;
     const tmp17 = closure_9;
     if (tmp11) {
-      tmp17Result = tmp17(tmp2(9005).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+      tmp17Result = tmp17(tmp2(9016).NitroWheelIcon, { size: "xs", color: "icon-muted" });
     }
     items5[1] = tmp17Result;
     tmp16Result = tmp16(PressableOpacity2, obj4);
   } else {
     tmp16Result = null;
     if (tmp11) {
-      let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9005).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
+      let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9016).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
       items6 = [tmp.container, style];
-      const PressableOpacity = tmp2(6189).PressableOpacity;
+      const PressableOpacity = tmp2(6191).PressableOpacity;
       tmp16Result = closure_9(PressableOpacity, obj6);
     }
   }

@@ -1,8 +1,8 @@
-// Module ID: 5528
-// Function ID: 5529
+// Module ID: 5529
+// Function ID: 5530
 // Dependencies: [2]
 
-// Module 5528
+// Module 5529
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/cowpoke_blush.png.js");

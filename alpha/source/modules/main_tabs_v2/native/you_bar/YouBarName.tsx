@@ -1,28 +1,28 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16755
+// Function ID: 16756
 // Name: YouBarName
-// Dependencies: [19, 17, 5893, 2063, 4707, 5106, 4717, 5755, 5111, 1085, 21, 5090, 587, 558, 576, 10246, 8830, 10508, 504, 10488, 10224, 10222, 10223, 16631, 10220, 10242, 5086, 4922, 2]
+// Dependencies: [19, 17, 5894, 2064, 4709, 5107, 4719, 5756, 5112, 1085, 21, 5091, 587, 558, 576, 10231, 8839, 10498, 504, 10478, 10209, 10207, 10208, 16756, 10205, 10227, 5087, 4923, 2]
 
-// Module 16630 (YouBarName)
+// Module 16755 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import GuildTagDefault from "GuildTag" /* 8830 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10222 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10223 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10246 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16631 */;
+import GuildTagDefault from "GuildTag" /* 8839 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10207 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10208 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10231 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 16756 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import PresenceStore from "PresenceStore" /* 5106 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import PresenceStore from "PresenceStore" /* 5107 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5756 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_14;
 let map1;
 let obj2;
 let tmp;
-const ChevronSmallDownIcon = tmp(10508);
+const ChevronSmallDownIcon = tmp(10498);
 const View = react_native.View;
 const ActivityTypes = Constants.ActivityTypes;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
@@ -63,7 +63,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
         }
         const _Symbol = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp14 = closure_12(ChevronSmallDownIcon.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" });
+          const tmp14 = authStore2(ChevronSmallDownIcon.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" });
           cResult[7] = tmp14;
           tmp12 = tmp14;
         } else {
@@ -88,7 +88,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
         tmp15 = tmp18;
       }
       const obj3 = { userId, disabledTooltip: true, containerStyles: tmp4.guildTag };
-      const tmp10 = closure_12(GuildTagDefault, obj3);
+      const tmp10 = authStore2(GuildTagDefault, obj3);
       cResult[4] = tmp4.guildTag;
       cResult[5] = userId;
       cResult[6] = tmp10;
@@ -96,7 +96,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
     }
   }
   const obj4 = { userId, userName: username, defaultColor: "mobile-text-heading-primary", variant: "heading-md/semibold", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, containerStyle: tmp4.username, style: tmp4.username };
-  const tmp6 = closure_12(UsernameWithEffectsDefault, obj4);
+  const tmp6 = authStore2(UsernameWithEffectsDefault, obj4);
   cResult[0] = tmp4.username;
   cResult[1] = userId;
   cResult[2] = username;
@@ -110,10 +110,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
   const obj = { style: tmp.usernameRow, children: items };
   items = [, , ];
   const obj2 = { userId, userName: username, defaultColor: "mobile-text-heading-primary", variant: "heading-md/semibold", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, containerStyle: tmp.username, style: tmp.username };
-  items[0] = closure_12(UsernameWithEffectsDefault, obj2);
+  items[0] = authStore2(UsernameWithEffectsDefault, obj2);
   const obj3 = { userId, disabledTooltip: true, containerStyles: tmp.guildTag };
-  items[1] = closure_12(GuildTagDefault, obj3);
-  items[2] = closure_12(ChevronSmallDownIcon.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" });
+  items[1] = authStore2(GuildTagDefault, obj3);
+  items[2] = authStore2(ChevronSmallDownIcon.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" });
   return map1(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -143,11 +143,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = userId(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult4 = userId(10488);
+  const tmpResult4 = userId(10478);
   const customStatusActivity = tmpResult4.useCustomStatusActivity();
   let state;
-  const useGameMentionsAsPlainText = userId(10224).useGameMentionsAsPlainText;
-  userId(10224);
+  const useGameMentionsAsPlainText = userId(10209).useGameMentionsAsPlainText;
+  userId(10209);
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
   }
@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   class M {
     constructor() {
       activities = closure_7.getActivities(userId);
-      found = activities.filter(() => { /* body not rendered: F147552 */ });
+      found = activities.filter(() => { /* body not rendered: F147922 */ });
       obj = closure_0(closure_2[21]);
       items = [, ];
       items[0] = closure_4;
@@ -218,11 +218,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = userId(504);
   let items = [SelfPresenceStore];
   const stateFromStores = obj.useStateFromStores(items, () => status.getStatus());
-  let obj2 = userId(10488);
+  let obj2 = userId(10478);
   const customStatusActivity = obj2.useCustomStatusActivity();
   let state;
-  const useGameMentionsAsPlainText = userId(10224).useGameMentionsAsPlainText;
-  userId(10224);
+  const useGameMentionsAsPlainText = userId(10209).useGameMentionsAsPlainText;
+  userId(10209);
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
   }
@@ -246,7 +246,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj4 = { style: tmp.statusRow, children: tmp10Result };
   if (stateFromStores1) {
     let obj5 = { userId, emojiSize: 16, maxFontSizeMultiplier: 1.75 };
-    tmp10Result = tmp12(stateFromStores(10220), obj5);
+    tmp10Result = tmp12(stateFromStores(10205), obj5);
   } else {
     let emoji;
     const tmp13 = closure_14;
@@ -256,14 +256,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp12Result2 = null;
     if (null != emoji) {
       const obj6 = { size: 16, style: tmp.statusEmoji, emoji: customStatusActivity.emoji };
-      tmp12Result2 = tmp12(stateFromStores(10242), obj6);
+      tmp12Result2 = tmp12(stateFromStores(10227), obj6);
     }
     const items3 = [tmp12Result2, ];
     const obj7 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: humanizeStatusResult };
     humanizeStatusResult = gameMentionsAsPlainText;
-    const Text = tmp2(5086).Text;
+    const Text = tmp2(5087).Text;
     if (gameMentionsAsPlainText == null) {
-      const tmp2Result2 = userId(4922);
+      const tmp2Result2 = userId(4923);
       humanizeStatusResult = tmp2Result2.humanizeStatus(stateFromStores);
     }
     const obj8 = { children: items3 };

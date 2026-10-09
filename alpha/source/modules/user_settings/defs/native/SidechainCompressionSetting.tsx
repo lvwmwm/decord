@@ -1,17 +1,17 @@
-// Module ID: 15353
-// Function ID: 15354
+// Module ID: 15466
+// Function ID: 15467
 // Name: SidechainCompressionSetting
-// Dependencies: [2011, 7966, 5115, 558, 576, 504, 11262, 1126, 5241, 2]
+// Dependencies: [2012, 7974, 5116, 558, 576, 504, 10629, 1126, 5242, 2]
 
-// Module 15353 (SidechainCompressionSetting)
+// Module 15466 (SidechainCompressionSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Constants from "Constants" /* 5115 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5241 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import Constants from "Constants" /* 5116 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5242 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

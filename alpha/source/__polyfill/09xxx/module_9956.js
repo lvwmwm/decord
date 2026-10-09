@@ -1,11 +1,10 @@
 // Module ID: 9956
 // Function ID: 9957
-// Dependencies: [41, 42, 93, 95, 98, 9940, 9773, 9774, 9790]
+// Dependencies: [41, 42, 93, 95, 98, 9944, 9792, 9793, 9946]
 
 // Module 9956
-import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 9774 */;
-import _mod9790 from "module_9790" /* 9790 */;
-import _mod9940 from "module_9940" /* 9940 */;
+import _mod9944 from "module_9944" /* 9944 */;
+import _mod9946 from "module_9946" /* 9946 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENMergeRelativeDateRefiner {
+class UKTimeUnitCasualRelativeFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENMergeRelativeDateRefiner);
-    const obj = _getPrototypeOf(ENMergeRelativeDateRefiner);
+    _classCallCheck(this, UKTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(UKTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,65 +43,32 @@ class ENMergeRelativeDateRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMergeRelativeDateRefiner, _mod9790.MergingRefiner);
+_inherits(UKTimeUnitCasualRelativeFormatParser, _mod9946.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*$/i;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(\u0446\u0456|\u043E\u0441\u0442\u0430\u043D\u043D\u0456|\u043C\u0438\u043D\u0443\u043B\u0456|\u043C\u0430\u0439\u0431\u0443\u0442\u043D\u0456|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0456|\u043F\u0456\u0441\u043B\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + _mod9944.TIME_UNITS_PATTERN + ")";
   }
 };
 const items = [
   entry,
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, text, start) {
-      let match = str.match(this.patternBetween());
-      if (match) {
-        let tmp5 = null == str.match(/\s+(prima|dal)$/i);
-        null != text.text.match(/\s+(prima|dal)$/i);
-        if (tmp5) {
-          const str2 = text.text;
-          tmp5 = null == str2.match(/\s+(dopo|dal|fino)$/i);
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod9944.parseDuration(arg1[3]);
+      if ("\u043E\u0441\u0442\u0430\u043D\u043D\u0456" !== formatted) {
+        let reverseDurationResult;
+        if ("\u043C\u0438\u043D\u0443\u043B\u0456" !== formatted) {
+          reverseDurationResult = parseDurationResult;
         }
-        let tmp6 = !tmp5;
-        if (tmp6) {
-          start = start.start;
-          let value = start.get("day");
-          if (value) {
-            const start2 = start.start;
-            value = start2.get("month");
-          }
-          if (value) {
-            const start3 = start.start;
-            value = start3.get("year");
-          }
-          tmp6 = value;
-        }
-        match = tmp6;
+        const ParsingComponents = tmp2(9793).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
       }
-      return match;
-    }
-  },
-  {
-    key: "mergeResults",
-    value: function mergeResults(arg0, text, start) {
-      const parseDurationResult = _mod9940.parseDuration(text.text);
-      let reverseDurationResult = parseDurationResult;
-      const str = text.text;
-      if (null != str.match(/\s+(prima|dal)$/i)) {
-        reverseDurationResult = tmp(9773).reverseDuration(parseDurationResult);
-      }
-      const ParsingComponents = tmp(9774).ParsingComponents;
-      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
-      const ReferenceWithTimezone = tmp(9774).ReferenceWithTimezone;
-      start = start.start;
-      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
-      const reference = start.reference;
-      const index = text.index;
-      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
-      return parsingResult;
+      reverseDurationResult = tmp2(9792).reverseDuration(parseDurationResult);
     }
   }
 ];
 
-export default _createClass(ENMergeRelativeDateRefiner, items);
+export default _createClass(UKTimeUnitCasualRelativeFormatParser, items);

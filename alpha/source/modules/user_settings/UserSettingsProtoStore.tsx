@@ -1,19 +1,19 @@
-// Module ID: 1243
-// Function ID: 1244
+// Module ID: 1244
+// Function ID: 1245
 // Name: UserSettingsProtoStore
-// Dependencies: [1095, 1209, 1244, 38, 1245, 1247, 12, 504, 1239, 1248, 584, 2]
+// Dependencies: [1095, 1209, 1245, 38, 1246, 1248, 12, 504, 1239, 1249, 584, 2]
 
-// Module 1243 (UserSettingsProtoStore)
+// Module 1244 (UserSettingsProtoStore)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import timestamp from "timestamp" /* 1239 */;
-import frecency_user_settings from "frecency_user_settings" /* 1244 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1245 */;
-import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1247 */;
-import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1248 */;
+import frecency_user_settings from "frecency_user_settings" /* 1245 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1246 */;
+import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1248 */;
+import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1249 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let ProtoClass;
 
 let FrecencyUserSettings;
 let PreloadedUserSettings;
-const f84639 = (editInfo) => {
+const f84851 = (editInfo) => {
   if (null != editInfo.editInfo.timeout) {
     const _clearTimeout = clearTimeout;
     clearTimeout(editInfo.editInfo.timeout);
@@ -43,7 +43,7 @@ const f84639 = (editInfo) => {
 };
 function handleConnectionClosedOrResumed() {
   const values = Object.values(closure_7);
-  const item = values.forEach(f84639);
+  const item = values.forEach(f84851);
 }
 function handleUserSettingsProtoUpdate(settings) {
   settings = settings.settings;
@@ -107,7 +107,7 @@ class UserSettingsProtoStore extends PersistedStore {
             }
             if (null != protoToSave) {
               if (null != tmp.offlineEditDataVersion) {
-                const tmp3Result = tmp3(1245);
+                const tmp3Result = tmp3(1246);
                 const b64ToProtoResult1 = tmp3Result.b64ToProto(ProtoClass.ProtoClass, protoToSave);
                 if (null != b64ToProtoResult1) {
                   ProtoClass.editInfo.protoToSave = b64ToProtoResult1;
@@ -342,7 +342,7 @@ const obj3 = {
             }
             if (null != protoToSave) {
               if (null != tmp.offlineEditDataVersion) {
-                const tmp3Result = tmp3(1245);
+                const tmp3Result = tmp3(1246);
                 const b64ToProtoResult1 = tmp3Result.b64ToProto(ProtoClass.ProtoClass, protoToSave);
                 if (null != b64ToProtoResult1) {
                   ProtoClass.editInfo.protoToSave = b64ToProtoResult1;
@@ -401,7 +401,7 @@ const obj3 = {
       }
     });
     const values2 = Object.values(closure_7);
-    const item1 = values2.forEach(f84639);
+    const item1 = values2.forEach(f84851);
   },
   CONNECTION_CLOSED: handleConnectionClosedOrResumed,
   CONNECTION_RESUMED: handleConnectionClosedOrResumed,
@@ -413,7 +413,7 @@ const obj3 = {
   },
   LOGOUT: function handleLogout() {
     const values = Object.values(closure_7);
-    const item = values.forEach(f84639);
+    const item = values.forEach(f84851);
     const values2 = Object.values(closure_7);
     const item1 = values2.forEach((ProtoClass) => {
       ProtoClass = ProtoClass.ProtoClass;

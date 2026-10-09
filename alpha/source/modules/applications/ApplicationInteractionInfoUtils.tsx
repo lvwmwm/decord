@@ -1,15 +1,15 @@
-// Module ID: 9595
-// Function ID: 9596
+// Module ID: 9614
+// Function ID: 9615
 // Name: ApplicationInteractionInfoUtils
-// Dependencies: [5438, 1997, 2]
+// Dependencies: [5439, 1998, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 9595 (ApplicationInteractionInfoUtils)
-import InteractionTypes from "InteractionTypes" /* 5438 */;
+// Module 9614 (ApplicationInteractionInfoUtils)
+import InteractionTypes from "InteractionTypes" /* 5439 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const Server = tmp2(1997);
+const Server = tmp2(1998);
 const result = size.fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
 
 export const canViewInteractionInfo = function canViewInteractionInfo(message) {

@@ -1,32 +1,32 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13363
+// Function ID: 13364
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 5079, 21, 5090, 587, 558, 576, 8271, 1989, 1126, 5086, 5387, 8278, 8266, 8359, 504, 4922, 5624, 10246, 10247, 1200, 10259, 6184, 2]
+// Dependencies: [19, 17, 5080, 21, 5091, 587, 558, 576, 8279, 1990, 1126, 5087, 5388, 8286, 8274, 8367, 504, 4923, 5625, 10231, 10232, 1200, 10244, 6186, 2]
 
-// Module 13270 (NameplateProductPreview)
+// Module 13363 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import utils from "utils" /* 1989 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5624 */;
-import TableRow2 from "TableRow" /* 6184 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8266 */;
-import useShopProductItems from "useShopProductItems" /* 8271 */;
-import useCurrentUser from "useCurrentUser" /* 8278 */;
-import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8359 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10246 */;
-import types from "types" /* 10247 */;
-import UserNameplateRow from "UserNameplateRow" /* 10259 */;
+import utils from "utils" /* 1990 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5625 */;
+import TableRow2 from "TableRow" /* 6186 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8274 */;
+import useShopProductItems from "useShopProductItems" /* 8279 */;
+import useCurrentUser from "useCurrentUser" /* 8286 */;
+import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8367 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10231 */;
+import types from "types" /* 10232 */;
+import UserNameplateRow from "UserNameplateRow" /* 10244 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -388,7 +388,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePro
     const obj7 = { user: nameplateSampleUsers.mallow, end: true };
     items = [metroRequire(closure_10, obj7), , , , , , ];
     const obj8 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
-    const Text = tmp2(5086).Text;
+    const Text = tmp2(5087).Text;
     const intl2 = tmp2(1126).intl;
     items1 = [intl2.string(intl4.t["yzW/fZ"]), " \u2014 3"];
     items[1] = metroImportDefault(Text, obj8);
@@ -399,7 +399,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePro
     const obj11 = { user: nameplateSampleUsers.locke, end: true };
     items[4] = metroRequire(closure_10, obj11);
     const obj12 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
-    const Text2 = tmp2(5086).Text;
+    const Text2 = tmp2(5087).Text;
     const intl3 = tmp2(1126).intl;
     items2 = [intl3.string(intl4.t["NG43/6"]), " \u2014 12"];
     items[5] = metroImportDefault(Text2, obj12);

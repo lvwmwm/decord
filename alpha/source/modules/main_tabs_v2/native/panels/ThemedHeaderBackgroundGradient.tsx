@@ -1,25 +1,25 @@
-// Module ID: 16772
-// Function ID: 16773
+// Module ID: 16896
+// Function ID: 16897
 // Name: ThemedHeaderBackgroundGradient
-// Dependencies: [19, 17, 21, 5090, 558, 576, 587, 1630, 4778, 1103, 5387, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 587, 1631, 4779, 1103, 5388, 2]
 
-// Module 16772 (ThemedHeaderBackgroundGradient)
+// Module 16896 (ThemedHeaderBackgroundGradient)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useToken from "useToken" /* 4778 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import useToken from "useToken" /* 4779 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp6;
-const LinearGradientDefault = tmp6(5387);
+const LinearGradientDefault = tmp6(5388);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { position: "absolute", left: 0, right: 0, top: 0 } });

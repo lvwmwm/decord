@@ -1,19 +1,19 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 16080
+// Function ID: 16081
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 5090, 558, 576, 8426, 9376, 5375, 6882, 6264, 6265, 5086, 6835, 6803, 2]
+// Dependencies: [32, 19, 17, 21, 5091, 558, 576, 8434, 9414, 5376, 6889, 6266, 6267, 5087, 6842, 6810, 2]
 
-// Module 15964 (UserSettingsDesignSystemTooltip)
+// Module 16080 (UserSettingsDesignSystemTooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
-import LayerScope2 from "LayerScope" /* 6835 */;
-import DeviceOrientation from "DeviceOrientation" /* 8426 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6810 */;
+import LayerScope2 from "LayerScope" /* 6842 */;
+import DeviceOrientation from "DeviceOrientation" /* 8434 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     if (cResult[2] === visible) {
       tmp15 = cResult[3];
     }
-    const tmpResult = visible(9376);
+    const tmpResult = visible(9414);
     const tooltip = tmpResult.useTooltip(ref, tmp15);
     if (cResult[4] !== visible) {
       class U {
@@ -201,8 +201,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
             }
             const obj3 = { title: "Position", value: first1, onChange: tmp12, hasIcons: false, children: tmp28 };
             cResult[16] = first1;
-            cResult[17] = closure_5(visible(6265).TableRadioGroup, obj3);
-            const tmp31 = closure_5(visible(6265).TableRadioGroup, obj3);
+            cResult[17] = closure_5(visible(6267).TableRadioGroup, obj3);
+            const tmp31 = closure_5(visible(6267).TableRadioGroup, obj3);
           } else {
             class U {
               constructor() {
@@ -245,8 +245,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         const obj5 = { label: "Unlock Orientation", value: tmp8, onValueChange: tmp9 };
         cResult[12] = tmp8;
         cResult[13] = tmp9;
-        cResult[14] = closure_5(visible(6882).TableSwitchRow, obj5);
-        const tmp27 = closure_5(visible(6882).TableSwitchRow, obj5);
+        cResult[14] = closure_5(visible(6889).TableSwitchRow, obj5);
+        const tmp27 = closure_5(visible(6889).TableSwitchRow, obj5);
       }
       const obj6 = { style: tmp4.container, children: tmp18 };
       cResult[9] = tmp4.container;
@@ -257,8 +257,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     const obj7 = { ref, onPress: tmp17, variant: "primary", text: str, size: "md" };
     cResult[6] = tmp17;
     cResult[7] = str;
-    cResult[8] = closure_5(visible(5375).Button, obj7);
-    const tmp20 = closure_5(visible(5375).Button, obj7);
+    cResult[8] = closure_5(visible(5376).Button, obj7);
+    const tmp20 = closure_5(visible(5376).Button, obj7);
   }
   const obj8 = { label: "NEW", position: first1, visible, onPress: first2 };
   cResult[1] = first1;
@@ -296,10 +296,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       return closure_1_1(false);
     }
   }), items);
-  const obj2 = visible(9376);
+  const obj2 = visible(9414);
   const tooltip = obj2.useTooltip(ref, memo);
   const obj3 = { children: items1 };
-  const obj4 = { style: tmp.container, children: closure_5(visible(5375).Button, obj5) };
+  const obj4 = { style: tmp.container, children: closure_5(visible(5376).Button, obj5) };
   obj5 = {
     ref,
     onPress() {
@@ -309,7 +309,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     text: str,
     size: "md"
   };
-  items1 = [closure_5(View, obj4), closure_5(visible(6882).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), , ];
+  items1 = [closure_5(View, obj4), closure_5(visible(6889).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), , ];
   const obj6 = {
     title: "Position",
     value: first1,
@@ -320,7 +320,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       return closure_1_5(first(closure_1[11]).TableRadioRow, obj, label);
     })
   };
-  const TableRadioGroup = visible(6265).TableRadioGroup;
+  const TableRadioGroup = visible(6267).TableRadioGroup;
   items1[2] = closure_5(TableRadioGroup, obj6);
   items1[3] = closure_5(closure_12, {});
   return closure_7(closure_6, obj3);
@@ -341,7 +341,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TooltipNote(
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", style: first, children: items };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     items = ["Note: If your tooltip is not displaying or it is not in the right position/zIndex, consider adding or moving an existing", hasOwnProperty(Text_Text.Text, { variant: "text-sm/bold", children: " <LayerScope/>" }), " on the surface you expect to see the tooltip."];
     const tmp8 = metroImportDefault(Text, obj3);
     cResult[1] = tmp8;
@@ -367,7 +367,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: hasOwnProperty(closure_11, {}) };
-    const LayerScope = tmp(6835).LayerScope;
+    const LayerScope = tmp(6842).LayerScope;
     const tmp8 = hasOwnProperty(LayerScope, obj2);
     cResult[0] = tmp8;
     first = tmp8;

@@ -1,21 +1,21 @@
-// Module ID: 7097
-// Function ID: 7098
+// Module ID: 7102
+// Function ID: 7103
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1389, 4732, 7098, 1085, 1391, 4659, 38, 4741, 4726, 558, 576, 504, 7104, 5392, 12, 2]
+// Dependencies: [32, 19, 1390, 4734, 7103, 1085, 1392, 4661, 38, 4743, 4728, 558, 576, 504, 7109, 5393, 12, 2]
 
-// Module 7097 (useFractionalPremiumInfo)
+// Module 7102 (useFractionalPremiumInfo)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef4659 from "module_4659" /* 4659 */;
-import PremiumUtils from "PremiumUtils" /* 4726 */;
-import BillingUtils from "BillingUtils" /* 4741 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 7104 */;
+import _modDef4661 from "module_4661" /* 4661 */;
+import PremiumUtils from "PremiumUtils" /* 4728 */;
+import BillingUtils from "BillingUtils" /* 4743 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 7109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import SubscriptionStore from "SubscriptionStore" /* 4732 */;
-import EntitlementStore from "EntitlementStore" /* 7098 */;
+import UserStore from "UserStore" /* 1390 */;
+import SubscriptionStore from "SubscriptionStore" /* 4734 */;
+import EntitlementStore from "EntitlementStore" /* 7103 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function calculateFractionalPremiumInfo(isFetching) {
     flag = false;
   }
   ({ entitlements, unactivatedFractionalPremiumUnits, premiumSubscription, fetchedAllEntitlements, excludeReverseTrialFromCountdown } = isFetching);
-  const obj = { isFractionalPremiumActive: false, fractionalState: unpackModuleId.NONE, startsAt: _modDef4659(0), endsAt: _modDef4659(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef4659(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
+  const obj = { isFractionalPremiumActive: false, fractionalState: unpackModuleId.NONE, startsAt: _modDef4661(0), endsAt: _modDef4661(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef4661(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
   let tmp = unpackModuleId;
   let tmp2 = importDefault;
   const currentUser = isFetching.currentUser;
@@ -109,25 +109,25 @@ function calculateFractionalPremiumInfo(isFetching) {
       }
       const obj7 = { isFractionalPremiumActive: null != first, fractionalState: NONE, startsAt: tmp10, endsAt: tmp2ResultResult, currentEntitlementId: str, currentEntitlementEndsAt: tmp17, unactivatedUnits: unactivatedFractionalPremiumUnits, fetched: fetchedAllEntitlements };
       if (null != first) {
-        tmp10 = _modDef4659(first.startsAt);
+        tmp10 = _modDef4661(first.startsAt);
       } else {
-        tmp10 = _modDef4659(0);
+        tmp10 = _modDef4661(0);
       }
       if (null != first) {
-        const tmp2Result = _modDef4659;
+        const tmp2Result = _modDef4661;
         const obj4 = PremiumUtils;
         tmp2ResultResult = tmp2Result(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
       } else {
-        tmp2ResultResult = _modDef4659(0);
+        tmp2ResultResult = _modDef4661(0);
       }
       str = "";
       if (null != first) {
         str = first.id;
       }
       if (null != first) {
-        tmp17 = _modDef4659(first.endsAt);
+        tmp17 = _modDef4661(first.endsAt);
       } else {
-        tmp17 = _modDef4659(0);
+        tmp17 = _modDef4661(0);
       }
       return obj7;
     }
@@ -346,15 +346,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFractiona
       let tmp11 = null != tmp2;
       if (tmp11) {
         const applicationIdsFetching = EntitlementStore.applicationIdsFetching;
-        tmp11 = !applicationIdsFetching.has(closure_12);
+        tmp11 = !applicationIdsFetching.has(authStore2);
       }
       if (tmp11) {
         const applicationIdsFetched = EntitlementStore.applicationIdsFetched;
-        tmp11 = !applicationIdsFetched.has(closure_12);
+        tmp11 = !applicationIdsFetched.has(authStore2);
       }
       if (tmp11) {
         const obj3 = EntitlementActionCreators;
-        const userEntitlementsForApplication = obj3.fetchUserEntitlementsForApplication(closure_12);
+        const userEntitlementsForApplication = obj3.fetchUserEntitlementsForApplication(authStore2);
       }
     }
   }
@@ -455,15 +455,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFractiona
     let tmp11 = null != tmp2;
     if (tmp11) {
       const applicationIdsFetching = EntitlementStore.applicationIdsFetching;
-      tmp11 = !applicationIdsFetching.has(closure_12);
+      tmp11 = !applicationIdsFetching.has(authStore2);
     }
     if (tmp11) {
       const applicationIdsFetched = EntitlementStore.applicationIdsFetched;
-      tmp11 = !applicationIdsFetched.has(closure_12);
+      tmp11 = !applicationIdsFetched.has(authStore2);
     }
     if (tmp11) {
       const obj3 = EntitlementActionCreators;
-      const userEntitlementsForApplication = obj3.fetchUserEntitlementsForApplication(closure_12);
+      const userEntitlementsForApplication = obj3.fetchUserEntitlementsForApplication(authStore2);
     }
   });
   const items5 = [stateFromStores, stateFromStoresArray, stateFromStores2, stateFromStoresArray1, stateFromStores1, excludeReverseTrialFromCountdown];

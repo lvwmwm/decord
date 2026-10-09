@@ -1,23 +1,23 @@
-// Module ID: 17312
-// Function ID: 17313
+// Module ID: 17460
+// Function ID: 17461
 // Name: useGetOrFetchChannelOverwriteUsers
-// Dependencies: [32, 19, 2124, 1389, 1997, 558, 576, 504, 17313, 6102, 1387, 2]
+// Dependencies: [32, 19, 2124, 1390, 1998, 558, 576, 504, 17461, 6104, 1388, 2]
 
-// Module 17312 (useGetOrFetchChannelOverwriteUsers)
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
-import createAggregatorDefault from "createAggregator" /* 17313 */;
+// Module 17460 (useGetOrFetchChannelOverwriteUsers)
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
+import createAggregatorDefault from "createAggregator" /* 17461 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f129570 = (id) => id.id;
+const f129913 = (id) => id.id;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchChannelOverwriteUsers(arg0, arg1) {
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
     const _Object = Object;
     const values = Object.values(arg1);
     const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-    items5 = found.map(f129570);
+    items5 = found.map(f129913);
   }
   const tmp11Result = tmp11(items5, tmp10);
   cResult[4] = stateFromStoresArray;
@@ -180,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
       const _Object = Object;
       const values = Object.values(tmp2);
       const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-      items = found.map(f129570);
+      items = found.map(f129913);
     }
     return tmp(items, (arg0) => stateFromStoresArray.includes(arg0));
   }, items2), 2);

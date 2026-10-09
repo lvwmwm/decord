@@ -1,21 +1,21 @@
-// Module ID: 17042
-// Function ID: 17043
+// Module ID: 17198
+// Function ID: 17199
 // Name: ConjureNativeStatusStrip
-// Dependencies: [32, 19, 17, 14052, 21, 5090, 587, 558, 576, 17036, 14051, 14055, 1126, 5054, 17043, 6189, 3827, 17044, 5086, 5012, 2]
+// Dependencies: [32, 19, 17, 14149, 21, 5091, 587, 558, 576, 17192, 14148, 14152, 1126, 5055, 17199, 6191, 3827, 17200, 5087, 5013, 2]
 
-// Module 17042 (ConjureNativeStatusStrip)
+// Module 17198 (ConjureNativeStatusStrip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
-import AILoaderConstants from "AILoaderConstants" /* 14052 */;
-import ConjureStatusLabels from "ConjureStatusLabels" /* 17036 */;
-import ConjureUsageSheet from "ConjureUsageSheet" /* 17043 */;
-import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 17044 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5055 */;
+import AILoaderConstants from "AILoaderConstants" /* 14149 */;
+import ConjureStatusLabels from "ConjureStatusLabels" /* 17192 */;
+import ConjureUsageSheet from "ConjureUsageSheet" /* 17199 */;
+import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 17200 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -148,9 +148,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thinki
     class N {
       constructor() {
         closure_0 = null;
-        beat = function beat() { /* body not rendered: F148212 */ };
-        closure_2 = setTimeout(() => { /* body not rendered: F148213 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
-        return () => { /* body not rendered: F148214 */ };
+        beat = function beat() { /* body not rendered: F148600 */ };
+        closure_2 = setTimeout(() => { /* body not rendered: F148601 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => { /* body not rendered: F148602 */ };
       }
     }
     const items3 = [];
@@ -162,9 +162,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thinki
     class N {
       constructor() {
         closure_0 = null;
-        beat = function beat() { /* body not rendered: F148212 */ };
-        closure_2 = setTimeout(() => { /* body not rendered: F148213 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
-        return () => { /* body not rendered: F148214 */ };
+        beat = function beat() { /* body not rendered: F148600 */ };
+        closure_2 = setTimeout(() => { /* body not rendered: F148601 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => { /* body not rendered: F148602 */ };
       }
     }
     tmp21 = cResult[10];
@@ -174,9 +174,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thinki
     class N {
       constructor() {
         closure_0 = null;
-        beat = function beat() { /* body not rendered: F148212 */ };
-        closure_2 = setTimeout(() => { /* body not rendered: F148213 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
-        return () => { /* body not rendered: F148214 */ };
+        beat = function beat() { /* body not rendered: F148600 */ };
+        closure_2 = setTimeout(() => { /* body not rendered: F148601 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => { /* body not rendered: F148602 */ };
       }
     }
     cResult[11] = closure_7(tmp(text[10]).AILoader, { size: 10, color: "text-subtle" });
@@ -185,9 +185,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thinki
     class N {
       constructor() {
         closure_0 = null;
-        beat = function beat() { /* body not rendered: F148212 */ };
-        closure_2 = setTimeout(() => { /* body not rendered: F148213 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
-        return () => { /* body not rendered: F148214 */ };
+        beat = function beat() { /* body not rendered: F148600 */ };
+        closure_2 = setTimeout(() => { /* body not rendered: F148601 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => { /* body not rendered: F148602 */ };
       }
     }
   }
@@ -195,9 +195,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thinki
     class N {
       constructor() {
         closure_0 = null;
-        beat = function beat() { /* body not rendered: F148212 */ };
-        closure_2 = setTimeout(() => { /* body not rendered: F148213 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
-        return () => { /* body not rendered: F148214 */ };
+        beat = function beat() { /* body not rendered: F148600 */ };
+        closure_2 = setTimeout(() => { /* body not rendered: F148601 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => { /* body not rendered: F148602 */ };
       }
     }
   }
@@ -205,9 +205,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thinki
     class N {
       constructor() {
         closure_0 = null;
-        beat = function beat() { /* body not rendered: F148212 */ };
-        closure_2 = setTimeout(() => { /* body not rendered: F148213 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
-        return () => { /* body not rendered: F148214 */ };
+        beat = function beat() { /* body not rendered: F148600 */ };
+        closure_2 = setTimeout(() => { /* body not rendered: F148601 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => { /* body not rendered: F148602 */ };
       }
     }
     const obj3 = { ref, text, variant: "text-xs/medium", color: "text-subtle", duration: tmp(text[9]).INDICATOR_PASS_MS, delay: null };
@@ -219,9 +219,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thinki
     class N {
       constructor() {
         closure_0 = null;
-        beat = function beat() { /* body not rendered: F148212 */ };
-        closure_2 = setTimeout(() => { /* body not rendered: F148213 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
-        return () => { /* body not rendered: F148214 */ };
+        beat = function beat() { /* body not rendered: F148600 */ };
+        closure_2 = setTimeout(() => { /* body not rendered: F148601 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => { /* body not rendered: F148602 */ };
       }
     }
   }
@@ -229,9 +229,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thinki
     class N {
       constructor() {
         closure_0 = null;
-        beat = function beat() { /* body not rendered: F148212 */ };
-        closure_2 = setTimeout(() => { /* body not rendered: F148213 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
-        return () => { /* body not rendered: F148214 */ };
+        beat = function beat() { /* body not rendered: F148600 */ };
+        closure_2 = setTimeout(() => { /* body not rendered: F148601 */ }, line(closure_2[9]).INDICATOR_PASS_STAGGER_MS);
+        return () => { /* body not rendered: F148602 */ };
       }
     }
   }
@@ -380,11 +380,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             tmp7 = cResult[5];
             tmp8 = cResult[6];
           }
-          const first = tmp(17036).RECALLING_LINES[0];
+          const first = tmp(17192).RECALLING_LINES[0];
           if (cResult[7] !== projectUsage) {
             let runesUsedLabelsResult = null;
             if (null != projectUsage) {
-              const tmpResult = tmp(17036);
+              const tmpResult = tmp(17192);
               runesUsedLabelsResult = tmpResult.runesUsedLabels(projectUsage);
             }
             cResult[7] = projectUsage;
@@ -460,7 +460,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             cResult[18] = thinkingOpen;
             cResult[19] = tmp21Result;
           }
-          const PressableOpacity = tmp(6189).PressableOpacity;
+          const PressableOpacity = tmp(6191).PressableOpacity;
           if (!tmp16) {
             class X {
               constructor() {
@@ -550,7 +550,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       }
     }
   }
-  const tmpResult2 = tmp(17036);
+  const tmpResult2 = tmp(17192);
   const thinkingLabelResult = tmpResult2.thinkingLabel({ activity, compacting, saving: undefined !== saving && saving, recalling: undefined !== recalling && recalling, controlling });
   const intl = tmp(1126).intl;
   const stringResult1 = intl.string(thinkingLabelResult);
@@ -592,14 +592,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   ({ activity, projectUsage, connLabel, thinkingOpen } = projectId);
   ({ connFailed, controlling, onToggleThinking } = projectId);
   let tmp = closure_9();
-  let obj = projectId(17036);
+  let obj = projectId(17192);
   const thinkingLabelResult = obj.thinkingLabel({ activity, compacting, saving, recalling: flag, controlling });
   const intl = projectId(1126).intl;
   const stringResult = intl.string(thinkingLabelResult);
   let runesUsedLabelsResult = null;
-  const first = projectId(17036).RECALLING_LINES[0];
+  const first = projectId(17192).RECALLING_LINES[0];
   if (null != projectUsage) {
-    const tmp2Result = projectId(17036);
+    const tmp2Result = projectId(17192);
     runesUsedLabelsResult = tmp2Result.runesUsedLabels(projectUsage);
   }
   let tmp8 = null != activity && "" !== activity.text;
@@ -635,7 +635,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     let tmp13Result3 = null;
     if (null != connLabel) {
       let str3 = "text-muted";
-      const Text = tmp2(5086).Text;
+      const Text = tmp2(5087).Text;
       if (connFailed) {
         str3 = "text-feedback-critical";
       }
@@ -646,11 +646,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     let tmp11Result = null;
     if (null != runesUsedLabelsResult) {
       const obj7 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.runes, onPress: tmp10, children: items2 };
-      const PressableOpacity2 = tmp2(6189).PressableOpacity;
+      const PressableOpacity2 = tmp2(6191).PressableOpacity;
       const obj8 = { variant: "text-xs/medium", color: "text-muted", children: runesUsedLabelsResult.text };
-      items2 = [closure_7(projectId(5086).Text, obj8), ];
+      items2 = [closure_7(projectId(5087).Text, obj8), ];
       const obj9 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-      const CircleInformationIcon = tmp2(5012).CircleInformationIcon;
+      const CircleInformationIcon = tmp2(5013).CircleInformationIcon;
       items2[1] = closure_7(CircleInformationIcon, obj9);
       tmp11Result = tmp11(PressableOpacity2, obj7);
     }
@@ -659,7 +659,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     return closure_8(View, obj2);
   }
   let tmp16 = tmp9;
-  const PressableOpacity = tmp2(6189).PressableOpacity;
+  const PressableOpacity = tmp2(6191).PressableOpacity;
   if (!tmp9) {
     tmp16 = tmp15;
   }

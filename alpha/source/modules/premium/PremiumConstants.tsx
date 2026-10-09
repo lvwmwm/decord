@@ -1,14 +1,14 @@
-// Module ID: 1391
-// Function ID: 1392
+// Module ID: 1392
+// Function ID: 1393
 // Name: PremiumConstants
-// Dependencies: [1085, 1392, 1126, 1393, 1088, 2, 1394]
+// Dependencies: [1085, 1393, 1126, 1394, 1088, 2, 1395]
 
-// Module 1391 (PremiumConstants)
+// Module 1392 (PremiumConstants)
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1088 */;
 import intl from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import BadgeRarity from "BadgeRarity" /* 1393 */;
-import gift_intent_type from "gift_intent_type" /* 1394 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import BadgeRarity from "BadgeRarity" /* 1394 */;
+import gift_intent_type from "gift_intent_type" /* 1395 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

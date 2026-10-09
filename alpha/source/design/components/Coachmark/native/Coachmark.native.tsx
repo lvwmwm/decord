@@ -1,22 +1,22 @@
-// Module ID: 9384
-// Function ID: 9385
+// Module ID: 9422
+// Function ID: 9423
 // Name: Coachmark
-// Dependencies: [109, 32, 19, 17, 1085, 21, 4810, 5090, 587, 558, 576, 9379, 5381, 9385, 5369, 5086, 5375, 1126, 6210, 8517, 9386, 1381, 4787, 2]
+// Dependencies: [109, 32, 19, 17, 1085, 21, 4811, 5091, 587, 558, 576, 9417, 5382, 9423, 5370, 5087, 5376, 1126, 6212, 8525, 9424, 1382, 4788, 2]
 
-// Module 9384 (Coachmark)
+// Module 9422 (Coachmark)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 4787 */;
-import react_native from "react-native" /* 5369 */;
-import Graphic2 from "Graphic" /* 9385 */;
+import native from "native" /* 4788 */;
+import react_native from "react-native" /* 5370 */;
+import Graphic2 from "Graphic" /* 9423 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -667,9 +667,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachmark(
         Graphic = Graphic2.Graphic;
         const merged = Object.assign(tmp);
         let str = tmp.aspectRatio;
-        const tmp11 = closure_12;
+        const tmp11 = authStore2;
         const tmp12 = metroImportAll;
-        tmp14 = closure_12;
+        tmp14 = authStore2;
         const tmp20 = closure_17;
         if (str == null) {
           str = "1/1";
@@ -683,12 +683,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachmark(
         }
         if (null != imgSource) {
           const obj = { source: tmp3, style: closure_3.image };
-          tmp2 = closure_12(Image, obj);
+          tmp2 = authStore2(Image, obj);
         }
         let tmp7 = null;
         if (null != tmp2) {
           const obj4 = { style: closure_3.bottomMargin, children: tmp2 };
-          tmp7 = closure_12(metroImportAll, obj4);
+          tmp7 = authStore2(metroImportAll, obj4);
         }
         return tmp7;
       }
@@ -839,7 +839,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cursor
         }
         if (cResult[9] !== tmp2.cursorHead) {
           const obj2 = { style: tmp2.cursorHead };
-          const tmp12 = closure_12(metroImportAll, obj2);
+          const tmp12 = authStore2(metroImportAll, obj2);
           cResult[9] = tmp2.cursorHead;
           cResult[10] = tmp12;
           tmp9 = tmp12;
@@ -848,7 +848,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cursor
         }
         if (cResult[11] !== tmp2.cursorSpine) {
           const obj3 = { style: tmp2.cursorSpine };
-          const tmp16 = closure_12(metroImportAll, obj3);
+          const tmp16 = authStore2(metroImportAll, obj3);
           cResult[11] = tmp2.cursorSpine;
           cResult[12] = tmp16;
           tmp13 = tmp16;
@@ -901,9 +901,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Cursor
   items = [tmp.cursorContainer, "top" === position ? { marginTop: -6 } : { marginBottom: -6 }, { flexDirection: str, left: -adjustmentX }];
   items1 = [, ];
   const obj2 = { style: tmp.cursorHead };
-  items1[0] = closure_12(metroImportAll, obj2);
+  items1[0] = authStore2(metroImportAll, obj2);
   const obj3 = { style: tmp.cursorSpine };
-  items1[1] = closure_12(metroImportAll, obj3);
+  items1[1] = authStore2(metroImportAll, obj3);
   return map1(metroImportAll, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -919,7 +919,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoachmarkCon
   if (cResult[0] !== experimental_withBlurBackground) {
     const obj3 = {};
     const merged = Object.assign(experimental_withBlurBackground);
-    const tmp11 = closure_12(closure_18, obj3);
+    const tmp11 = authStore2(closure_18, obj3);
     cResult[0] = experimental_withBlurBackground;
     cResult[1] = tmp11;
     tmp5 = tmp11;
@@ -933,7 +933,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoachmarkCon
     }
     return tmp12;
   }
-  const tmp13 = closure_12(native.ThemeContextProvider, { theme: DARK, children: tmp5 });
+  const tmp13 = authStore2(native.ThemeContextProvider, { theme: DARK, children: tmp5 });
   cResult[2] = tmp5;
   cResult[3] = DARK;
   cResult[4] = tmp13;
@@ -945,11 +945,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoachmarkCon
   if (experimental_withBlurBackground.experimental_withBlurBackground) {
     DARK = ThemeTypes.DARK;
   }
-  const obj2 = { theme: DARK, children: closure_12(closure_18, obj3) };
+  const obj2 = { theme: DARK, children: authStore2(closure_18, obj3) };
   obj3 = {};
   const ThemeContextProvider = native.ThemeContextProvider;
   const merged = Object.assign(experimental_withBlurBackground);
-  return closure_12(ThemeContextProvider, obj2);
+  return authStore2(ThemeContextProvider, obj2);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");

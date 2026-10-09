@@ -1,17 +1,17 @@
-// Module ID: 5272
-// Function ID: 5273
+// Module ID: 5273
+// Function ID: 5274
 // Name: VoiceQuality
-// Dependencies: [32, 5273, 5138, 5279, 5281, 5135, 12, 11, 5119, 2]
+// Dependencies: [32, 5274, 5139, 5280, 5282, 5136, 12, 11, 5120, 2]
 
-// Module 5272 (VoiceQuality)
+// Module 5273 (VoiceQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
-import Histogram from "Histogram" /* 5273 */;
-import NetworkQualityDefault from "NetworkQuality" /* 5279 */;
-import SystemResourcesDefault from "SystemResources" /* 5281 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5136 */;
+import Histogram from "Histogram" /* 5274 */;
+import NetworkQualityDefault from "NetworkQuality" /* 5280 */;
+import SystemResourcesDefault from "SystemResources" /* 5282 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5138 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5139 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -122,27 +122,41 @@ class VoiceQuality extends TypedEventEmitter {
           const obj2 = { accumulated: sum1, lastValue: bufferViolations };
           inputDeviceStats.bufferViolations = obj2;
         }
-        let num = input.timeToFirstCallbackMs;
+        let num = input.bufferSize;
         if (num == null) {
           num = 0;
         }
-        const tmp6 = 0 !== num && undefined === inputDeviceStats.timeToFirstCallbackMs;
-        if (tmp6) {
-          inputDeviceStats.timeToFirstCallbackMs = input.timeToFirstCallbackMs;
+        if (0 !== num) {
+          inputDeviceStats.bufferSize = input.bufferSize;
         }
-        let num3 = input.sessionSampleRate;
+        let num3 = input.bufferOccupiedSizeMean;
         if (num3 == null) {
           num3 = 0;
         }
         if (0 !== num3) {
+          inputDeviceStats.bufferOccupiedSizeMean = input.bufferOccupiedSizeMean;
+        }
+        let num4 = input.timeToFirstCallbackMs;
+        if (num4 == null) {
+          num4 = 0;
+        }
+        const tmp6 = 0 !== num4 && undefined === inputDeviceStats.timeToFirstCallbackMs;
+        if (tmp6) {
+          inputDeviceStats.timeToFirstCallbackMs = input.timeToFirstCallbackMs;
+        }
+        let num5 = input.sessionSampleRate;
+        if (num5 == null) {
+          num5 = 0;
+        }
+        if (0 !== num5) {
           if (inputDeviceStats.sessionSampleRate !== input.sessionSampleRate) {
-            let num4 = input.sessionSampleRate;
+            let num6 = input.sessionSampleRate;
             emit = emit.emit;
             const InputDeviceSampleRateChanged = restartCount.InputDeviceSampleRateChanged;
-            if (num4 == null) {
-              num4 = 0;
+            if (num6 == null) {
+              num6 = 0;
             }
-            emit(InputDeviceSampleRateChanged, num4);
+            emit(InputDeviceSampleRateChanged, num6);
           }
           inputDeviceStats.sessionSampleRate = input.sessionSampleRate;
         }
@@ -891,7 +905,7 @@ class VoiceQuality extends TypedEventEmitter {
       accumulated = restartCount.accumulated;
     }
     const restartCount2 = self.outputDeviceStats.restartCount;
-    obj = { input_device_restart_count: accumulated, output_device_restart_count: accumulated1, input_device_time_to_first_audio: self.inputDeviceStats.timeToFirstCallbackMs, output_device_time_to_first_audio: self.outputDeviceStats.timeToFirstCallbackMs, input_device_buffer_overfull_count: accumulated2, output_device_buffer_underrun_count: accumulated3, input_device_session_sample_rate: self.inputDeviceStats.sessionSampleRate, output_device_session_sample_rate: self.outputDeviceStats.sessionSampleRate, input_device_time_from_connect_to_first_audio_ms: self.inputDeviceStats.timeFromConnectToFirstCallbackMs, output_device_time_from_connect_to_first_audio_ms: self.outputDeviceStats.timeFromConnectToFirstCallbackMs, audio_device_delay_ms: self.outputDeviceStats.delayMs, audio_device_total_delay_ms: self.inputDeviceStats.totalDelayMs };
+    obj = { input_device_restart_count: accumulated, output_device_restart_count: accumulated1, input_device_time_to_first_audio: self.inputDeviceStats.timeToFirstCallbackMs, output_device_time_to_first_audio: self.outputDeviceStats.timeToFirstCallbackMs, input_device_buffer_overfull_count: accumulated2, output_device_buffer_underrun_count: accumulated3, input_device_buffer_size: self.inputDeviceStats.bufferSize, input_device_buffer_occupied_size_mean: self.inputDeviceStats.bufferOccupiedSizeMean, input_device_session_sample_rate: self.inputDeviceStats.sessionSampleRate, output_device_session_sample_rate: self.outputDeviceStats.sessionSampleRate, input_device_time_from_connect_to_first_audio_ms: self.inputDeviceStats.timeFromConnectToFirstCallbackMs, output_device_time_from_connect_to_first_audio_ms: self.outputDeviceStats.timeFromConnectToFirstCallbackMs, audio_device_delay_ms: self.outputDeviceStats.delayMs, audio_device_total_delay_ms: self.inputDeviceStats.totalDelayMs };
     accumulated1 = undefined;
     if (restartCount2 != null) {
       accumulated1 = restartCount2.accumulated;

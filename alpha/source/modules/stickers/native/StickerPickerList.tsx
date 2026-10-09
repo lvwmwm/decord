@@ -1,30 +1,30 @@
-// Module ID: 9741
-// Function ID: 9742
+// Module ID: 9760
+// Function ID: 9761
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 6035, 9712, 9679, 1085, 21, 5090, 587, 558, 576, 1200, 9742, 1126, 5086, 9443, 5746, 4810, 9461, 9389, 504, 9743, 9442, 9744, 9724, 12, 6742, 9745, 6659, 9453, 6735, 9466, 9219, 2]
+// Dependencies: [32, 19, 17, 6037, 9731, 9698, 1085, 21, 5091, 587, 558, 576, 1200, 9761, 1126, 5087, 9481, 5747, 4811, 9499, 9427, 504, 9762, 9480, 9763, 9743, 12, 6749, 9764, 6666, 9491, 6742, 9504, 9253, 2]
 
-// Module 9741 (StickerPickerList)
+// Module 9760 (StickerPickerList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6742 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9442 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9443 */;
-import StickerPickerStore from "StickerPickerStore" /* 9712 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 9724 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9742 */;
-import useStickerPickerListData from "useStickerPickerListData" /* 9743 */;
-import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 9744 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6749 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9480 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9481 */;
+import StickerPickerStore from "StickerPickerStore" /* 9731 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 9743 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9761 */;
+import useStickerPickerListData from "useStickerPickerListData" /* 9762 */;
+import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 9763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6035 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9679 */;
+import StickersStore from "StickersStore" /* 6037 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9698 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -118,7 +118,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
     }
     const obj5 = { style: tmp6, children: items };
     items = [tmp8, tmp14];
-    const tmp20 = authStore2(View, obj5);
+    const tmp20 = authStore3(View, obj5);
     cResult[9] = tmp6;
     cResult[10] = tmp14;
     cResult[11] = tmp20;
@@ -144,7 +144,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1[1] = map1(Text, obj3);
-  return authStore2(View, obj);
+  return authStore3(View, obj);
 }));
 let memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -176,7 +176,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         tmp6 = cResult[5];
       }
       if (cResult[6] !== isSectionNitroLocked) {
-        const tmp8 = isSectionNitroLocked && map1(tmp(9443).PremiumUpsellGradientBackground, {});
+        const tmp8 = isSectionNitroLocked && map1(tmp(9481).PremiumUpsellGradientBackground, {});
         cResult[6] = isSectionNitroLocked;
         cResult[7] = tmp8;
         tmp7 = tmp8;
@@ -203,7 +203,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       }
       const obj4 = { style: tmp6, children: items };
       items = [tmp7, tmp10];
-      const tmp16 = authStore2(View, obj4);
+      const tmp16 = authStore3(View, obj4);
       cResult[10] = tmp6;
       cResult[11] = tmp7;
       cResult[12] = tmp10;
@@ -227,7 +227,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   ({ height, label, sectionStyle } = isSectionNitroLocked);
   const obj = { style: items, children: items1 };
   items = [closure_16().section, sectionStyle, { height }];
-  const tmp = authStore2;
+  const tmp = authStore3;
   const tmp2 = View;
   if (isSectionNitroLocked) {
     isSectionNitroLocked = map1(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, {});
@@ -639,7 +639,7 @@ const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? (functi
       if (true === sectionNitroLocked[arg0]) {
         const obj3 = { children: items };
         items = [tmp2(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, {}), tmp5];
-        tmp18 = authStore2(authStore3, obj3);
+        tmp18 = authStore3(authStore4, obj3);
       }
       return tmp18;
     }

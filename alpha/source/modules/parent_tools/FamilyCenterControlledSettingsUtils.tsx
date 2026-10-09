@@ -1,14 +1,14 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 15018
+// Function ID: 15019
 // Name: FamilyCenterControlledSettingsUtils
-// Dependencies: [1209, 14903, 6986, 6983, 2]
+// Dependencies: [1209, 15015, 6993, 6990, 2]
 // Exports: isSetAndNotDefault, resolveExplicitContentSettingWithDefaultsForTeen, updateExplicitContentSetting, updateGoreContentSetting
 
-// Module 14906 (FamilyCenterControlledSettingsUtils)
+// Module 15018 (FamilyCenterControlledSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6983 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6986 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14903 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6990 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6993 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15015 */;
 import size from "module_2" /* 2 */;
 
 function getGoreContentSettingOrDefault(arg0) {
@@ -52,7 +52,7 @@ function getExplicitContentSettingOrDefault(teenId) {
   const tmp5 = null != setting && setting !== preloaded_user_settings.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   if (!tmp5) {
     let tmp8;
-    const ParentalControlledLegacyExplicitContent = tmp(14903).ParentalControlledLegacyExplicitContent;
+    const ParentalControlledLegacyExplicitContent = tmp(15015).ParentalControlledLegacyExplicitContent;
     const controlledSetting1 = ParentalControlledLegacyExplicitContent.getControlledSetting(teenId);
     const tmpResult = SensitiveMediaExplicitRedactionSettingsUtils;
     if (isFriend) {
@@ -69,9 +69,9 @@ function getExplicitContentSettingOrDefault(teenId) {
   }
   const tmp10 = null != prop1 && prop1 !== preloaded_user_settings.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION;
   if (!tmp10) {
-    const ParentalControlledLegacyExplicitContent2 = tmp(14903).ParentalControlledLegacyExplicitContent;
+    const ParentalControlledLegacyExplicitContent2 = tmp(15015).ParentalControlledLegacyExplicitContent;
     const controlledSetting2 = ParentalControlledLegacyExplicitContent2.getControlledSetting(teenId);
-    prop1 = tmp(6983).TEEN_EXPLICIT_CONTENT_FILTER_TO_EXPLICIT_CONTENT_REDACTION_FRIEND_DM[controlledSetting2];
+    prop1 = tmp(6990).TEEN_EXPLICIT_CONTENT_FILTER_TO_EXPLICIT_CONTENT_REDACTION_FRIEND_DM[controlledSetting2];
   }
   return obj2;
 }

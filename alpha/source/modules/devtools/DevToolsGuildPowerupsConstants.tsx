@@ -1,11 +1,11 @@
-// Module ID: 15876
-// Function ID: 15877
+// Module ID: 15991
+// Function ID: 15992
 // Name: DevToolsGuildPowerupsConstants
-// Dependencies: [2048, 2]
+// Dependencies: [2049, 2]
 // Exports: getGuildDCString, getUserDCString
 
-// Module 15876 (DevToolsGuildPowerupsConstants)
-import dismissible_content from "dismissible_content" /* 2048 */;
+// Module 15991 (DevToolsGuildPowerupsConstants)
+import dismissible_content from "dismissible_content" /* 2049 */;
 import size from "module_2" /* 2 */;
 
 const items = [dismissible_content.DismissibleContent.GUILD_POWERUP_PERKS_COACHMARK, dismissible_content.DismissibleContent.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, dismissible_content.DismissibleContent.GUILD_POWERUP_NOTIFICATION, dismissible_content.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, dismissible_content.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE];

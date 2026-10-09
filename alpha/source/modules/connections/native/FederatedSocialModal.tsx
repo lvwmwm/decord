@@ -1,16 +1,16 @@
-// Module ID: 9178
-// Function ID: 9179
+// Module ID: 12893
+// Function ID: 12894
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1085, 21, 5090, 5759, 1126, 6861, 4763, 9179, 6803, 5086, 6282, 1200, 5375, 558, 576, 6203, 6679, 2]
+// Dependencies: [5, 32, 19, 1085, 21, 5091, 5760, 1126, 6868, 4765, 12894, 6810, 5087, 6289, 1200, 5376, 558, 576, 6205, 6686, 2]
 
-// Module 9178 (FederatedSocialModal)
+// Module 12893 (FederatedSocialModal)
 import Constants from "Constants" /* 1085 */;
-import PlatformsDefault from "Platforms" /* 5759 */;
+import PlatformsDefault from "Platforms" /* 5760 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

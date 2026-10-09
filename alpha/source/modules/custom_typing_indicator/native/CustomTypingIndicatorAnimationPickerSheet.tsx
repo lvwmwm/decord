@@ -1,19 +1,19 @@
-// Module ID: 15458
-// Function ID: 15459
+// Module ID: 15571
+// Function ID: 15572
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 5090, 587, 558, 576, 5086, 6186, 1397, 1126, 3829, 6885, 11672, 5373, 2]
+// Dependencies: [32, 19, 17, 21, 5091, 587, 558, 576, 5087, 6188, 1398, 1126, 3829, 6892, 11608, 5374, 2]
 
-// Module 15458 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 15571 (CustomTypingIndicatorAnimationPickerSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import Card_Card from "Card/Card" /* 6186 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import Card_Card from "Card/Card" /* 6188 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -200,19 +200,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
       }
     }
   }
-  const obj4 = { value: onChange(1397).TypingIndicatorAnimation.UNSPECIFIED, label: intl.string(onChange(1126).t.PoWNfe) };
+  const obj4 = { value: onChange(1398).TypingIndicatorAnimation.UNSPECIFIED, label: intl.string(onChange(1126).t.PoWNfe) };
   intl = tmp(1126).intl;
   const items1 = [obj4, , , ];
-  const obj5 = { value: onChange(1397).TypingIndicatorAnimation.PULSE, label: intl2.string(animation(3829)["gyL/ce"]) };
+  const obj5 = { value: onChange(1398).TypingIndicatorAnimation.PULSE, label: intl2.string(animation(3829)["gyL/ce"]) };
   intl2 = tmp(1126).intl;
   items1[1] = obj5;
-  const obj6 = { value: onChange(1397).TypingIndicatorAnimation.RING, label: intl3.string(animation(3829).EgekTm) };
+  const obj6 = { value: onChange(1398).TypingIndicatorAnimation.RING, label: intl3.string(animation(3829).EgekTm) };
   intl3 = tmp(1126).intl;
   items1[2] = obj6;
-  const obj7 = { value: onChange(1397).TypingIndicatorAnimation.WAVE, label: intl4.string(animation(3829)["8t5EiI"]) };
+  const obj7 = { value: onChange(1398).TypingIndicatorAnimation.WAVE, label: intl4.string(animation(3829)["8t5EiI"]) };
   intl4 = tmp(1126).intl;
   items1[3] = obj7;
-  const ActionSheet = tmp(6885).ActionSheet;
+  const ActionSheet = tmp(6892).ActionSheet;
   const content = tmp4.content;
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     const intl5 = tmp(1126).intl;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
       if (cResult[17] === tmp16) {
         tmp19 = cResult[18];
       }
-      let Stack = tmp(5373).Stack;
+      let Stack = tmp(5374).Stack;
       const items2 = [items1.slice(0, 2), items1.slice(2, 4)];
       const mapped = items2.map((arr, index) => {
         let obj = {
@@ -281,8 +281,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
     tmp19 = tmp22;
   }
   const obj9 = { config: obj10, size: 54 };
-  obj10 = { emojis, animation, typingSuggestion: onChange(1397).TypingSuggestion.UNSPECIFIED };
-  const tmp13Result = animation(11672);
+  obj10 = { emojis, animation, typingSuggestion: onChange(1398).TypingSuggestion.UNSPECIFIED };
+  const tmp13Result = animation(11608);
   const tmp18 = closure_6(tmp13Result, obj9);
   cResult[13] = emojis;
   cResult[14] = animation;
@@ -309,25 +309,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   ({ emojis, initialAnimation } = onChange);
   const tmp = closure_8();
   [animation, dependencyMap] = react.useState(initialAnimation);
-  let obj = { value: onChange(1397).TypingIndicatorAnimation.UNSPECIFIED, label: intl.string(onChange(1126).t.PoWNfe) };
+  let obj = { value: onChange(1398).TypingIndicatorAnimation.UNSPECIFIED, label: intl.string(onChange(1126).t.PoWNfe) };
   intl = onChange(1126).intl;
   const items = [obj, , , ];
-  const obj2 = { value: onChange(1397).TypingIndicatorAnimation.PULSE, label: intl2.string(animation(3829)["gyL/ce"]) };
+  const obj2 = { value: onChange(1398).TypingIndicatorAnimation.PULSE, label: intl2.string(animation(3829)["gyL/ce"]) };
   intl2 = onChange(1126).intl;
   items[1] = obj2;
-  const obj3 = { value: onChange(1397).TypingIndicatorAnimation.RING, label: intl3.string(animation(3829).EgekTm) };
+  const obj3 = { value: onChange(1398).TypingIndicatorAnimation.RING, label: intl3.string(animation(3829).EgekTm) };
   intl3 = onChange(1126).intl;
   items[2] = obj3;
-  const obj4 = { value: onChange(1397).TypingIndicatorAnimation.WAVE, label: intl4.string(animation(3829)["8t5EiI"]) };
+  const obj4 = { value: onChange(1398).TypingIndicatorAnimation.WAVE, label: intl4.string(animation(3829)["8t5EiI"]) };
   intl4 = onChange(1126).intl;
   items[3] = obj4;
   const obj5 = { contentStyles: tmp.content, dismissAccessibilityLabel: intl5.string(animation(3829)["q+qHax"]), children: items1 };
-  const ActionSheet = onChange(6885).ActionSheet;
+  const ActionSheet = onChange(6892).ActionSheet;
   intl5 = onChange(1126).intl;
   const obj6 = { style: tmp.previewRow, children: closure_6(tmp4, obj7) };
   obj7 = { config: obj8, size: 54 };
-  obj8 = { emojis, animation, typingSuggestion: onChange(1397).TypingSuggestion.UNSPECIFIED };
-  tmp4 = animation(11672);
+  obj8 = { emojis, animation, typingSuggestion: onChange(1398).TypingSuggestion.UNSPECIFIED };
+  tmp4 = animation(11608);
   items1 = [closure_6(View, obj6), ];
   const obj9 = {
     spacing: 8,
@@ -352,7 +352,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
       return metroRequire(Stack, obj, index);
     })
   };
-  let Stack = onChange(5373).Stack;
+  let Stack = onChange(5374).Stack;
   items2 = [items.slice(0, 2), items.slice(2, 4)];
   items1[1] = closure_6(Stack, obj9);
   return closure_7(ActionSheet, obj5);

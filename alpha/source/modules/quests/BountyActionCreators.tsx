@@ -1,26 +1,28 @@
-// Module ID: 11155
-// Function ID: 11156
+// Module ID: 12923
+// Function ID: 12924
 // Name: BountyActionCreators
-// Dependencies: [5, 7376, 5280, 7378, 7379, 1085, 3, 584, 5984, 9542, 7377, 5632, 7172, 7398, 1294, 5980, 7375, 2]
-// Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchDockCreativePreview, fetchQuestHomeBounties, resetCreativePreviewDeliveryState, resetPreviewDeliveryStateLookback, setBountyVideoProgress
+// Dependencies: [5, 7381, 5281, 7383, 7384, 5979, 1085, 3, 584, 5986, 9155, 7382, 5633, 7177, 7403, 1295, 5982, 12924, 7380, 2]
+// Exports: claimBountyReward, dismissAdContent, fetchBountyPreview, fetchQuestBarCreativePreview, fetchQuestHomeBounties, resetCreativePreviewDeliveryState, resetPreviewDeliveryStateLookback, setBountyVideoProgress
 
-// Module 11155 (BountyActionCreators)
+// Module 12923 (BountyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import QuestTypes from "QuestTypes" /* 5980 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7172 */;
-import QuestDataUtils from "QuestDataUtils" /* 7375 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7398 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import QuestConstants from "QuestConstants" /* 5979 */;
+import QuestTypes from "QuestTypes" /* 5982 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7177 */;
+import QuestDataUtils from "QuestDataUtils" /* 7380 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7403 */;
+import BountiesDesktopQuestBarExperiment2 from "BountiesDesktopQuestBarExperiment" /* 12924 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7376 */;
-import NetworkStore from "NetworkStore" /* 5280 */;
-import BountyStore from "BountyStore" /* 7378 */;
-import QuestStore from "QuestStore" /* 7379 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7381 */;
+import NetworkStore from "NetworkStore" /* 5281 */;
+import BountyStore from "BountyStore" /* 7383 */;
+import QuestStore from "QuestStore" /* 7384 */;
 import size from "module_2" /* 2 */;
 
-let bounties, closure_2, error, map, uuid2;
+let _null, bounties, closure_2, error, map, uuid2;
 
 function fetchBountiesAndDispatch() {
   return obj(...arguments);
@@ -74,12 +76,12 @@ let obj = function _fetchBountiesAndDispatch() {
             if (1 === tmp4) {
               c5 = 0;
               let closure_5 = bounties;
-              obj2 = closure_131_1(closure_131_2[7]);
+              obj2 = closure_131_1(closure_131_2[8]);
               const dispatch = obj2.dispatch;
               const self = this;
               const self2 = this;
               const obj6 = { type: "BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_FAILURE", placement, error: tmp15 };
-              tmp15 = new closure_131_1(closure_131_2[11])(closure_5);
+              tmp15 = new closure_131_1(closure_131_2[12])(closure_5);
               dispatch(obj6);
             } else if (arg0 === 1) {
               c7 = 3;
@@ -99,12 +101,12 @@ let obj = function _fetchBountiesAndDispatch() {
               bounties = decisions.flatMap((creative) => {
                 let obj2;
                 if (null != creative.creative) {
-                  if (creative.creative.creative_type === placement(obj2[8]).AdCreativeType.BOUNTY) {
-                    const tmpResult = placement(obj2[9]);
+                  if (creative.creative.creative_type === placement(obj2[9]).AdCreativeType.BOUNTY) {
+                    const tmpResult = placement(obj2[10]);
                     const bountyFromServerResult = tmpResult.bountyFromServer(creative.creative.creative_content);
                     obj = { fetchedAt, requestId: request_id.request_id, creative: obj2 };
-                    const tmpResult2 = placement(obj2[10]);
-                    obj2 = { type: placement(obj2[8]).AdCreativeType.BOUNTY, bounty: bountyFromServerResult };
+                    const tmpResult2 = placement(obj2[11]);
+                    obj2 = { type: placement(obj2[9]).AdCreativeType.BOUNTY, bounty: bountyFromServerResult };
                     const questAdDecisionFromAdDecision = tmpResult2.questAdDecisionFromAdDecision;
                     const result = closure_1_3.set(bountyFromServerResult.id, questAdDecisionFromAdDecision(creative, obj));
                     const items = [bountyFromServerResult];
@@ -113,7 +115,7 @@ let obj = function _fetchBountiesAndDispatch() {
                 }
                 return [];
               });
-              obj2 = closure_131_1(closure_131_2[7]);
+              obj2 = closure_131_1(closure_131_2[8]);
               const obj7 = { type: "BOUNTIES_FETCH_QUEST_HOME_BOUNTIES_SUCCESS", bounties, placement, adDecisionsByAdCreativeId: map, fetchedAt };
               obj2.dispatch(obj7);
               c5 = 0;
@@ -171,11 +173,11 @@ obj = function _fetchQuestHomeBounties() {
                         let obj7;
                         let obj8;
                         let tmp;
-                        const obj6 = tmp(c2[12]);
+                        const obj6 = tmp(c2[13]);
                         tmp = await obj6.getSession();
-                        const obj10 = tmp(c2[13]);
+                        const obj10 = tmp(c2[14]);
                         let uuid = obj10.getOrRefreshAdSession();
-                        const HTTP = tmp(c2[14]).HTTP;
+                        const HTTP = tmp(c2[15]).HTTP;
                         const request = { url: constants.QUESTS_GET_DECISIONS, query: obj7, rejectWithError: false, context: obj8 };
                         obj7 = { placement: closure_129_0, client_ad_session_id: uuid.uuid, client_heartbeat_session_id: uuid, num_decisions_requested: 5 };
                         const get = HTTP.get;
@@ -256,7 +258,7 @@ obj = function _fetchBountyPreview() {
                         const self = this;
                         const self2 = this;
                         const str2 = new URLSearchParams(items);
-                        const HTTP = closure_0(c2[14]).HTTP;
+                        const HTTP = closure_0(c2[15]).HTTP;
                         const obj4 = { url: "" + constants.QUESTS_CREATIVE_PREVIEW + "?" + str2.toString(), rejectWithError: false };
                         const get = HTTP.get;
                         const _HermesInternal = HermesInternal;
@@ -285,13 +287,15 @@ obj = function _fetchBountyPreview() {
   });
   return obj(...arguments);
 };
-obj = function _fetchDockCreativePreview() {
+obj = function _fetchQuestBarCreativePreview() {
+  let constants2;
   let fetchingAdToDeliverByPlacement;
-  obj = _asyncToGenerator(async (adCreativeId) => {
+  obj = _asyncToGenerator(async (adCreativeId, placement) => {
     let closure_5;
-    let c7 = 0;
+    let closure_6;
     let c8 = 0;
-    let c6 = 0;
+    let c9 = 0;
+    let c7 = 0;
     return (async function(arg0, value) {
       let ad_context;
       let ad_identifiers1;
@@ -302,15 +306,14 @@ obj = function _fetchDockCreativePreview() {
       let creative_type;
       let creative_type1;
       let metadata_sealed;
-      let obj12;
-      let obj17;
+      let obj13;
       let prop;
       let prop1;
       let status;
       let tmp53;
       let tmp72;
-      if (c8 === 2) {
-        c8 = 3;
+      if (c9 === 2) {
+        c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -321,205 +324,219 @@ obj = function _fetchDockCreativePreview() {
           return { value: "IconComponent", done: null };
         }
       } else {
-        let tmp83;
+        let tmp87;
         try {
           let body;
-          let closure_6;
-          let MOBILE_HOME_DOCK_AREA;
-          c8 = 2;
-          if (0 === c7) {
+          let tmp;
+          c9 = 2;
+          if (0 === c8) {
             if (arg0 === 1) {
-              c8 = 3;
+              c9 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c8 = 3;
+              c9 = 3;
               return { value, done: true };
             } else {
-              closure_4 = tmp;
+              _null = undefined;
               body = undefined;
-              tmp83 = undefined;
-              closure_6 = undefined;
-              MOBILE_HOME_DOCK_AREA = QuestTypes.AdPlacement.MOBILE_HOME_DOCK_AREA;
+              tmp = undefined;
+              tmp87 = undefined;
+              value = undefined;
               const _Date = Date;
               fetchedAt = Date.now();
-              HTTP = fetchingAdToDeliverByPlacement;
-              const tmp107 = adCreativeId;
-              if (!fetchingAdToDeliverByPlacement.isFetchingAdToDeliverByPlacement(MOBILE_HOME_DOCK_AREA)) {
-                const obj4 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN", placement: MOBILE_HOME_DOCK_AREA };
-                const obj9 = DispatcherDefault;
-                obj9.dispatch(obj4);
-                c6 = 1;
+              dispatch = fetchingAdToDeliverByPlacement;
+              const tmp113 = adCreativeId;
+              if (fetchingAdToDeliverByPlacement.isFetchingAdToDeliverByPlacement(placement)) {
+                c9 = 3;
+                return { value: null, done: true };
+              } else {
+                dispatch = require;
+                if (placement === QuestTypes.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
+                  const BountiesDesktopQuestBarExperiment = BountiesDesktopQuestBarExperiment2.BountiesDesktopQuestBarExperiment;
+                  const obj4 = { location: constants.BOUNTY_PREVIEW_LINK };
+                  if (!BountiesDesktopQuestBarExperiment.getConfig(obj4).enabled) {
+                    c9 = 3;
+                    return { value: null, done: true };
+                  }
+                }
+                const obj5 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_BEGIN", placement };
+                const obj10 = DispatcherDefault;
+                obj10.dispatch(obj5);
+                c7 = 1;
                 const _URLSearchParams = URLSearchParams;
-                const items = ["ad_creative_ids", tmp107];
+                const items = ["ad_creative_ids", tmp113];
                 const items1 = [items, ];
                 const _String = String;
-                const items2 = ["placement", String(MOBILE_HOME_DOCK_AREA)];
+                const items2 = ["placement", String(placement)];
                 items1[1] = items2;
                 const self5 = this;
                 const self6 = this;
                 const str = new URLSearchParams(items1);
-                HTTP = HTTPUtils.HTTP;
-                const get = HTTP.get;
+                dispatch = HTTPUtils.HTTP;
+                const get = dispatch.get;
                 const _HermesInternal = HermesInternal;
-                c7 = 2;
-                c8 = 1;
-                const obj5 = { url: "" + constants.QUESTS_CREATIVE_PREVIEW + "?" + str.toString(), rejectWithError: false };
-                const obj6 = { value: get(obj5), done: false };
-                return obj6;
+                c8 = 2;
+                c9 = 1;
+                const obj6 = { url: "" + constants2.QUESTS_CREATIVE_PREVIEW + "?" + str.toString(), rejectWithError: false };
+                const obj7 = { value: get(obj6), done: false };
+                return obj7;
               }
             }
           } else if (1 === tmp4) {
-            c6 = 0;
-            error = tmp83;
-            HTTP = closure_132_9;
-            const obj7 = { error, adCreativeId, status };
+            c7 = 0;
+            error = tmp87;
+            dispatch = closure_133_10;
+            const obj8 = { error, adCreativeId, status };
             status = undefined;
-            const error2 = closure_132_9.error;
+            const error2 = closure_133_10.error;
             if (error != null) {
               status = error.status;
             }
-            error2("Failed to fetch dock creative preview for adCreativeId", obj7);
-            HTTP = closure_132_1(closure_132_2[7]);
-            const dispatch2 = HTTP.dispatch;
+            error2("Failed to fetch dock creative preview for adCreativeId", obj8);
+            dispatch = closure_133_1(closure_133_2[8]);
+            const dispatch3 = dispatch.dispatch;
             const self3 = this;
             const self4 = this;
-            const obj8 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", placement: MOBILE_HOME_DOCK_AREA, error: tmp72 };
-            tmp72 = new closure_132_1(closure_132_2[11])(error);
-            dispatch2(obj8);
+            const obj9 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", placement, error: tmp72 };
+            tmp72 = new closure_133_1(closure_133_2[12])(error);
+            dispatch3(obj9);
+            c9 = 3;
+            return { value: null, done: true };
           } else if (arg0 === 1) {
-            c8 = 3;
+            c9 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 0;
-            c8 = 3;
+            c7 = 0;
+            c9 = 3;
             return { value, done: true };
           } else {
-            HTTP = value;
-            body = HTTP.body;
+            _null = value;
+            body = _null.body;
             const decisions = body.decisions;
-            HTTP = decisions == null;
+            dispatch = decisions == null;
             let first;
-            if (!HTTP) {
+            if (!dispatch) {
               first = decisions[0];
             }
-            c1 = first;
+            let c2 = first;
             if (first == null) {
-              c1 = null;
-            }
-            tmp83 = c1;
-            HTTP = tmp83 == null;
-            let creative;
-            if (!HTTP) {
-              creative = tmp83.creative;
-            }
-            let c2 = creative;
-            if (creative == null) {
               c2 = null;
             }
-            closure_6 = c2;
-            if (null != closure_6) {
-              HTTP = closure_132_0;
-              if (closure_6.creative_type === closure_132_0(closure_132_2[8]).AdCreativeType.BOUNTY) {
-                HTTP = closure_132_1(closure_132_2[7]);
-                const obj11 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", creative: obj12, adDecisionData: obj, adContext: ad_context, metadataSealed: metadata_sealed, trafficMetadataSealed: prop, provenanceMetadataSealed: prop1, responseTtlSeconds: 300, placement: MOBILE_HOME_DOCK_AREA, fetchedAt };
-                const dispatch3 = HTTP.dispatch;
-                obj12 = { type: closure_132_0(closure_132_2[8]).AdCreativeType.BOUNTY, bounty: obj17.bountyFromServer(closure_6.creative_content) };
+            tmp = c2;
+            dispatch = tmp == null;
+            let creative;
+            if (!dispatch) {
+              creative = tmp.creative;
+            }
+            let c3 = creative;
+            if (creative == null) {
+              c3 = null;
+            }
+            tmp87 = c3;
+            if (null != tmp87) {
+              dispatch = closure_133_0;
+              if (tmp87.creative_type === closure_133_0(closure_133_2[9]).AdCreativeType.BOUNTY) {
+                const obj16 = closure_133_0(closure_133_2[10]);
+                value = obj16.bountyFromServer(tmp87.creative_content);
+                dispatch = closure_133_1(closure_133_2[8]).dispatch;
+                const obj12 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", creative: obj13, adDecisionData: obj, adContext: ad_context, metadataSealed: metadata_sealed, trafficMetadataSealed: prop, provenanceMetadataSealed: prop1, responseTtlSeconds: 300, placement, fetchedAt };
+                obj13 = { type: closure_133_0(closure_133_2[9]).AdCreativeType.BOUNTY, bounty: value };
+                closure_133_1(closure_133_2[8]);
                 let ad_id;
-                obj17 = closure_132_0(closure_132_2[9]);
-                if (tmp83 != null) {
-                  const ad_identifiers = tmp83.ad_identifiers;
+                if (tmp != null) {
+                  const ad_identifiers = tmp.ad_identifiers;
                   if (ad_identifiers != null) {
                     ad_id = ad_identifiers.ad_id;
                   }
                 }
                 obj = { ad_id, adset_id, ad_set_id, campaign_id, creative_id, creative_type, decision_id: body.request_id, is_targeted: null != ad_identifiers1 };
                 adset_id = undefined;
-                if (tmp83 != null) {
-                  const ad_identifiers2 = tmp83.ad_identifiers;
+                if (tmp != null) {
+                  const ad_identifiers2 = tmp.ad_identifiers;
                   if (ad_identifiers2 != null) {
                     adset_id = ad_identifiers2.adset_id;
                   }
                 }
                 ad_set_id = undefined;
-                if (tmp83 != null) {
-                  const ad_identifiers3 = tmp83.ad_identifiers;
+                if (tmp != null) {
+                  const ad_identifiers3 = tmp.ad_identifiers;
                   if (ad_identifiers3 != null) {
                     ad_set_id = ad_identifiers3.ad_set_id;
                   }
                 }
                 campaign_id = undefined;
-                if (tmp83 != null) {
-                  const ad_identifiers4 = tmp83.ad_identifiers;
+                if (tmp != null) {
+                  const ad_identifiers4 = tmp.ad_identifiers;
                   if (ad_identifiers4 != null) {
                     campaign_id = ad_identifiers4.campaign_id;
                   }
                 }
                 creative_id = undefined;
-                if (tmp83 != null) {
-                  const ad_identifiers5 = tmp83.ad_identifiers;
+                if (tmp != null) {
+                  const ad_identifiers5 = tmp.ad_identifiers;
                   if (ad_identifiers5 != null) {
                     creative_id = ad_identifiers5.creative_id;
                   }
                 }
                 creative_type = undefined;
-                if (tmp83 != null) {
-                  const ad_identifiers6 = tmp83.ad_identifiers;
+                if (tmp != null) {
+                  const ad_identifiers6 = tmp.ad_identifiers;
                   if (ad_identifiers6 != null) {
                     creative_type = ad_identifiers6.creative_type;
                   }
                 }
                 ad_identifiers1 = undefined;
-                if (tmp83 != null) {
-                  ad_identifiers1 = tmp83.ad_identifiers;
+                if (tmp != null) {
+                  ad_identifiers1 = tmp.ad_identifiers;
                 }
                 ad_context = undefined;
-                if (tmp83 != null) {
-                  ad_context = tmp83.ad_context;
+                if (tmp != null) {
+                  ad_context = tmp.ad_context;
                 }
                 metadata_sealed = undefined;
-                if (tmp83 != null) {
-                  metadata_sealed = tmp83.metadata_sealed;
+                if (tmp != null) {
+                  metadata_sealed = tmp.metadata_sealed;
                 }
                 prop = undefined;
-                if (tmp83 != null) {
-                  prop = tmp83.traffic_metadata_sealed;
+                if (tmp != null) {
+                  prop = tmp.traffic_metadata_sealed;
                 }
                 prop1 = undefined;
-                if (tmp83 != null) {
-                  prop1 = tmp83.provenance_metadata_sealed;
+                if (tmp != null) {
+                  prop1 = tmp.provenance_metadata_sealed;
                 }
-                dispatch3(obj11);
-                c6 = 0;
+                dispatch(obj12);
+                c7 = 0;
+                c9 = 3;
+                return { value, done: true };
               }
             }
-            HTTP = closure_132_9;
-            const obj13 = { adCreativeId, creativeType: creative_type1 };
+            dispatch = closure_133_10;
+            const obj15 = { adCreativeId, creativeType: creative_type1 };
             creative_type1 = undefined;
-            error = closure_132_9.error;
-            if (closure_6 != null) {
-              creative_type1 = closure_6.creative_type;
+            error = closure_133_10.error;
+            if (tmp87 != null) {
+              creative_type1 = tmp87.creative_type;
             }
-            error("Creative preview returned no renderable bounty", obj13);
-            HTTP = closure_132_1(closure_132_2[7]);
-            const dispatch = HTTP.dispatch;
+            error("Creative preview returned no renderable bounty", obj15);
+            dispatch = closure_133_1(closure_133_2[8]);
+            const dispatch2 = dispatch.dispatch;
             const self = this;
             const self2 = this;
-            const obj14 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", placement: MOBILE_HOME_DOCK_AREA, error: tmp53 };
-            const obj15 = { status: HTTP.status, body: HTTP.body };
-            tmp53 = new closure_132_1(closure_132_2[11])(obj15);
-            dispatch(obj14);
-            c6 = 0;
-            c8 = 3;
-            return { value: undefined, done: true };
+            const obj17 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", placement, error: tmp53 };
+            const obj18 = { status: _null.status, body: _null.body };
+            tmp53 = new closure_133_1(closure_133_2[12])(obj18);
+            dispatch2(obj17);
+            c7 = 0;
+            c9 = 3;
+            return { value: null, done: true };
           }
-          c8 = 3;
-          return { value: "IconComponent", done: null };
-        } catch (tmp83) {
-          if (0 === c6) {
-            c8 = 3;
-            throw tmp83;
+        } catch (tmp87) {
+          if (0 === c7) {
+            c9 = 3;
+            throw tmp87;
           } else {
-            c7 = 1;
+            c8 = 1;
           }
         }
       }
@@ -586,10 +603,10 @@ obj = function _claimBountyReward() {
             let closure_7 = adMetadataSealed;
             const self = this;
             const self2 = this;
-            error = new closure_131_1(closure_131_2[11])(closure_7);
+            error = new closure_131_1(closure_131_2[12])(closure_7);
             const obj6 = { type: "BOUNTIES_CLAIM_REWARD_FAILURE", bountyId, error };
-            const tmp27 = new closure_131_1(closure_131_2[11])(closure_7);
-            const obj7 = closure_131_1(closure_131_2[7]);
+            const tmp27 = new closure_131_1(closure_131_2[12])(closure_7);
+            const obj7 = closure_131_1(closure_131_2[8]);
             obj7.dispatch(obj6);
             throw error;
           } else if (2 === c6) {
@@ -602,14 +619,14 @@ obj = function _claimBountyReward() {
               return { value, done: true };
             } else {
               uuid = value;
-              const obj15 = closure_131_0(closure_131_2[13]);
+              const obj15 = closure_131_0(closure_131_2[14]);
               uuid2 = obj15.getOrRefreshAdSession();
-              const obj16 = closure_131_0(closure_131_2[16]);
+              const obj16 = closure_131_0(closure_131_2[18]);
               adMetadataSealed = obj16.getAdMetadataSealed(closure_1, bountyId);
-              const obj17 = closure_131_0(closure_131_2[16]);
+              const obj17 = closure_131_0(closure_131_2[18]);
               adTrafficMetadataSealed = obj17.getAdTrafficMetadataSealed(closure_1, undefined, bountyId);
-              const HTTP = closure_131_0(closure_131_2[14]).HTTP;
-              const request = { url: closure_131_8.QUESTS_CREATIVES_CLAIM_REWARD(bountyId), body: obj10, rejectWithError: false };
+              const HTTP = closure_131_0(closure_131_2[15]).HTTP;
+              const request = { url: closure_131_9.QUESTS_CREATIVES_CLAIM_REWARD(bountyId), body: obj10, rejectWithError: false };
               const post = HTTP.post;
               let tmp12 = null;
               if (null != adMetadataSealed) {
@@ -638,7 +655,7 @@ obj = function _claimBountyReward() {
             return { value, done: true };
           } else {
             const obj14 = { type: "BOUNTIES_CLAIM_REWARD_SUCCESS", bountyId };
-            obj = closure_131_1(closure_131_2[7]);
+            obj = closure_131_1(closure_131_2[8]);
             obj.dispatch(obj14);
             c5 = 0;
           }
@@ -705,13 +722,13 @@ obj = function _dismissAdContent() {
                 const obj5 = DispatcherDefault;
                 obj5.dispatch(obj4);
                 c5 = 1;
-                const dispatchResult1 = dispatch(dependencyMap[16]);
+                const dispatchResult1 = dispatch(dependencyMap[18]);
                 const adMetadataSealed = dispatchResult1.getAdMetadataSealed(tmp48, adCreativeId);
-                const dispatchResult2 = dispatch(dependencyMap[16]);
+                const dispatchResult2 = dispatch(dependencyMap[18]);
                 const adTrafficMetadataSealed = dispatchResult2.getAdTrafficMetadataSealed(tmp48, undefined, adCreativeId);
-                const dispatchResult3 = dispatch(dependencyMap[16]);
+                const dispatchResult3 = dispatch(dependencyMap[18]);
                 const questPlacementFromQuestContent = dispatchResult3.getQuestPlacementFromQuestContent(tmp48);
-                const HTTP = dispatch(dependencyMap[14]).HTTP;
+                const HTTP = dispatch(dependencyMap[15]).HTTP;
                 dispatch = HTTP.post;
                 const request = { url: Endpoints.QUESTS_CREATIVES_DISMISS(adCreativeId), body: obj6, rejectWithError: false };
                 let tmp37 = null;
@@ -738,12 +755,12 @@ obj = function _dismissAdContent() {
         } else if (1 === tmp4) {
           c5 = 0;
           closure_1 = closure_4;
-          dispatch = closure_131_1(closure_131_2[7]).dispatch;
+          dispatch = closure_131_1(closure_131_2[8]).dispatch;
           const obj8 = { type: "AD_CONTENT_DISMISS_FAILURE", adCreativeId, error: tmp22 };
           const self = this;
           const self2 = this;
-          const tmp17 = closure_131_1(closure_131_2[7]);
-          tmp22 = new closure_131_1(closure_131_2[11])(closure_1);
+          const tmp17 = closure_131_1(closure_131_2[8]);
+          tmp22 = new closure_131_1(closure_131_2[12])(closure_1);
           dispatch(obj8);
         } else if (arg0 === 1) {
           c7 = 3;
@@ -755,7 +772,7 @@ obj = function _dismissAdContent() {
           return obj9;
         } else {
           const obj10 = { type: "AD_CONTENT_DISMISS_SUCCESS", adCreativeId };
-          obj = closure_131_1(closure_131_2[7]);
+          obj = closure_131_1(closure_131_2[8]);
           obj.dispatch(obj10);
           c5 = 0;
         }
@@ -826,7 +843,7 @@ obj = function _resetCreativePreviewDeliveryState() {
             return { value, done: true };
           } else {
             const obj7 = { type: "ADS_CREATIVE_PREVIEW_DELIVERY_STATE_RESET", adCreativeId };
-            obj = closure_131_1(closure_131_2[7]);
+            obj = closure_131_1(closure_131_2[8]);
             obj.dispatch(obj7);
             c5 = 3;
             return { value: "IconComponent", done: null };
@@ -884,7 +901,7 @@ obj = function _resetPreviewDeliveryStateLookback() {
             c3 = 3;
             return { value, done: true };
           } else {
-            obj = closure_129_1(closure_129_2[7]);
+            obj = closure_129_1(closure_129_2[8]);
             obj.dispatch({ type: "ADS_PREVIEW_DELIVERY_STATE_LOOKBACK_RESET" });
             c3 = 3;
             return { value: "IconComponent", done: null };
@@ -898,9 +915,10 @@ obj = function _resetPreviewDeliveryStateLookback() {
   });
   return obj(...arguments);
 };
+const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 const Endpoints = Constants.Endpoints;
 const tmp2 = new LoggerDefault("BountyActionCreators");
-let closure_9 = tmp2;
+let closure_10 = tmp2;
 let result = size.fileFinishedImporting("modules/quests/BountyActionCreators.tsx");
 
 export const fetchQuestHomeBounties = function fetchQuestHomeBounties() {
@@ -909,7 +927,7 @@ export const fetchQuestHomeBounties = function fetchQuestHomeBounties() {
 export const fetchBountyPreview = function fetchBountyPreview() {
   return obj(...arguments);
 };
-export const fetchDockCreativePreview = function fetchDockCreativePreview() {
+export const fetchQuestBarCreativePreview = function fetchQuestBarCreativePreview() {
   return obj(...arguments);
 };
 export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, arg1) {

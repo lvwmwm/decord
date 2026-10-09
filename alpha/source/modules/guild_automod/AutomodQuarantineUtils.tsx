@@ -1,22 +1,22 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 11412
+// Function ID: 11413
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 9095, 502, 2124, 2086, 4707, 4899, 1085, 4693, 1095, 558, 576, 4713, 573, 1126, 9096, 9097, 7084, 2]
+// Dependencies: [19, 10543, 502, 2124, 2086, 4709, 4900, 1085, 4695, 1095, 558, 576, 4715, 573, 1126, 10607, 10608, 7087, 2]
 
-// Module 11482 (AutomodQuarantineUtils)
+// Module 11412 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import intl4 from "intl" /* 1126 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4693 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4713 */;
-import openUserSettings2 from "openUserSettings" /* 7084 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9097 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4695 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4715 */;
+import openUserSettings2 from "openUserSettings" /* 7087 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10608 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9095 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10543 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -113,7 +113,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
       if (closure_0 == null) {
         guildId = SelectedGuildStore.getGuildId();
       }
-      const obj = { nick: "Array", bio: "Reflect" };
+      const obj = { nick: "Array", bio: "Set" };
       const guild = GuildStore.getGuild(guildId);
       if (null != guild) {
         if (null != guildId) {
@@ -181,7 +181,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "Reflect" };
+    const obj = { nick: "Array", bio: "Set" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

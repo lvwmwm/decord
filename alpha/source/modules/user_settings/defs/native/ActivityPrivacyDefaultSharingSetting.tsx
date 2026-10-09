@@ -1,20 +1,20 @@
-// Module ID: 16113
-// Function ID: 16114
+// Module ID: 16229
+// Function ID: 16230
 // Name: ActivityPrivacyDefaultSharingSetting
-// Dependencies: [19, 7966, 558, 576, 1209, 1126, 2040, 14936, 5054, 16114, 1999, 11262, 2]
+// Dependencies: [19, 7974, 558, 576, 1209, 1126, 2041, 15048, 5055, 16230, 2000, 10629, 2]
 
-// Module 16113 (ActivityPrivacyDefaultSharingSetting)
+// Module 16229 (ActivityPrivacyDefaultSharingSetting)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14936 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15048 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -108,7 +108,7 @@ let obj = {
       const obj2 = { direction: null, affectedGuildIds: null, settingName: activityRestrictionSettingName };
       ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds } = affectedGuilds);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(16114, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
+      obj3.openLazy(asyncRequire(16230, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
     }
   }
 };

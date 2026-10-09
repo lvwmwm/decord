@@ -1,21 +1,21 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8098
+// Function ID: 8099
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [2063, 1389, 5090, 587, 4695, 7988, 5405, 7951, 1126, 7953, 7863, 8091, 7955, 2]
+// Dependencies: [2064, 1390, 5091, 587, 4697, 7996, 5406, 7960, 1126, 7962, 7872, 8099, 7964, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 8090 (GuildSpaceLeaderboardSystemMessage)
+// Module 8098 (GuildSpaceLeaderboardSystemMessage)
 import nativeDefault from "native" /* 587 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4695 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7863 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7951 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7953 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7988 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8091 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5090 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4697 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7872 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7960 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7962 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7996 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8099 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_MUTED };
@@ -97,12 +97,12 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
             let obj6;
             if (null != previousLeader) {
               const obj4 = { userId: previousLeader.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-              obj6 = tmp22(7953)(obj4);
+              obj6 = tmp22(7962)(obj4);
             }
             obj2.previousUsernameOnClick = obj6;
             const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult8.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
             tmpResult8 = renderer_EmbedUtils;
-            const merged1 = Object.assign(tmp22(7955)(theme));
+            const merged1 = Object.assign(tmp22(7964)(theme));
             return obj5;
           }
           obj6 = {};

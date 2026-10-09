@@ -16,7 +16,7 @@ import react from "react" /* 19 */;
 const require = globalThis.__r;
 let _require, c1, closure_4, closure_5, closure_6, closure_7, closure_8, createElement, dependencyMap;
 
-const f83813 = (item) => {
+const f84025 = (item) => {
   closure_0 = item;
   return !closure_0.some((path) => {
     let tmp2 = path === user;
@@ -29,8 +29,8 @@ const f83813 = (item) => {
     return tmp2;
   });
 };
-const f83819 = (children) => {
-  const f83820 = function(children) {
+const f84031 = (children) => {
+  const f84032 = function(children) {
     if (set === undefined) {
       const _Set = Set;
       const self = this;
@@ -42,7 +42,7 @@ const f83819 = (children) => {
       const tmp3 = children.children && !children.index;
       if (tmp3) {
         children = children.children;
-        const item = children.forEach(f83820);
+        const item = children.forEach(f84032);
       }
     }
     const item1 = set.forEach((item) => {
@@ -55,7 +55,7 @@ const f83819 = (children) => {
     const tmp2 = children.children && !children.index;
     if (tmp2) {
       children = children.children;
-      let item = children.forEach(f83820);
+      let item = children.forEach(f84032);
     }
   }
   let item1 = set.forEach((item) => {
@@ -145,7 +145,7 @@ function processResolvedRoutes(arr, children, arg2, activeRootSpan) {
   if (children) {
     const tmp4 = children.children || [];
     let closure_0 = tmp4;
-    const found = arr.filter(f83813);
+    const found = arr.filter(f84025);
     if (found.length > 0) {
       const items = [];
       HermesBuiltin.arraySpread(items, found, HermesBuiltin.arraySpread(items, tmp4, 0));
@@ -468,7 +468,7 @@ function wrapPatchRoutesOnNavigation(basename, arg1) {
                     }
                     if (patch) {
                       tmp16.patch = (arg0, arr) => {
-                        let item = arr.forEach(f83819);
+                        let item = arr.forEach(f84031);
                         let tmp2 = closure_0;
                         let tmp3 = path;
                         const obj = closure_0(path[4]);
@@ -741,7 +741,7 @@ function handleNavigation(version) {
   }
 }
 function addRoutesToAllRoutes(arr) {
-  const item = arr.forEach(f83819);
+  const item = arr.forEach(f84031);
 }
 function updatePageloadTransaction(arg0) {
   let _location;
@@ -805,7 +805,7 @@ function updatePageloadTransaction(arg0) {
           activeRootSpan.end = function patchedEnd() {
             let data;
             let description;
-            const f136253 = (arg0) => setTimeout(arg0, closure_1_11);
+            const f136588 = (arg0) => setTimeout(arg0, closure_1_11);
             const items = [...arguments];
             let first;
             let cleanupNavigationSpan;
@@ -860,8 +860,8 @@ function updatePageloadTransaction(arg0) {
                         const items1 = [nextPromise, ];
                         const self = this;
                         const self2 = this;
-                        items1[1] = new Promise(f136253);
-                        const promise = new Promise(f136253);
+                        items1[1] = new Promise(f136588);
+                        const promise = new Promise(f136588);
                         raceResult = race(items1);
                       }
                       const nextPromise1 = raceResult.then(() => {
@@ -1045,7 +1045,7 @@ function patchSpanEnd(result2, _location, routes, basename, allRoutes, navigatio
       result2.end = function patchedEnd() {
         let data;
         let description;
-        const f136253 = (arg0) => setTimeout(arg0, closure_1_11);
+        const f136588 = (arg0) => setTimeout(arg0, closure_1_11);
         const items = [...arguments];
         let first;
         let cleanupNavigationSpan;
@@ -1100,8 +1100,8 @@ function patchSpanEnd(result2, _location, routes, basename, allRoutes, navigatio
                     const items1 = [nextPromise, ];
                     const self = this;
                     const self2 = this;
-                    items1[1] = new Promise(f136253);
-                    const promise = new Promise(f136253);
+                    items1[1] = new Promise(f136588);
+                    const promise = new Promise(f136588);
                     raceResult = race(items1);
                   }
                   const nextPromise1 = raceResult.then(() => {
@@ -1190,7 +1190,7 @@ const allRoutes_export = set;
 export const addResolvedRoutesToParent = function addResolvedRoutesToParent(arr, children) {
   const tmp2 = children.children || [];
   let closure_0 = tmp2;
-  const found = arr.filter(f83813);
+  const found = arr.filter(f84025);
   if (found.length > 0) {
     const items = [];
     HermesBuiltin.arraySpread(items, found, HermesBuiltin.arraySpread(items, tmp2, 0));
@@ -1273,9 +1273,9 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
       }
       const result1 = initializeRouterUtils(tmp23, flag);
     },
-    afterAllSetup(f136243) {
+    afterAllSetup(f136578) {
       let obj2;
-      _asyncToGenerator.afterAllSetup(f136243);
+      _asyncToGenerator.afterAllSetup(f136578);
       const _location = feedbackAsyncIntegration.WINDOW.location;
       let pathname;
       if (_location != null) {
@@ -1291,11 +1291,11 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
         const _HermesInternal = HermesInternal;
         feedbackAsyncIntegration;
         obj2[_mod693.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.pageload.react.reactrouter_v" + closure_1;
-        _asyncToGenerator = startBrowserTracingPageLoadSpan(f136243, obj);
+        _asyncToGenerator = startBrowserTracingPageLoadSpan(f136578, obj);
       }
       const tmp10 = closure_11;
       if (tmp10) {
-        weakSet.add(f136243);
+        weakSet.add(f136578);
       }
     }
   };
@@ -1329,7 +1329,7 @@ export const createV6CompatibleWithSentryReactRouterRouting = function createV6C
                 items = [, ];
                 items[0] = tmp;
                 items[1] = tmp2;
-                tmp3 = closure_1_4(() => { /* body not rendered: F136256 */ }, items);
+                tmp3 = closure_1_4(() => { /* body not rendered: F136591 */ }, items);
                 obj = {};
                 createElement = closure_1_9.createElement;
                 merged = Object.assign(arg0);
@@ -1356,7 +1356,7 @@ export const createV6CompatibleWithSentryReactRouterRouting = function createV6C
         items = [, ];
         items[0] = tmp;
         items[1] = tmp2;
-        tmp3 = closure_1_4(() => { /* body not rendered: F136256 */ }, items);
+        tmp3 = closure_1_4(() => { /* body not rendered: F136591 */ }, items);
         obj = {};
         createElement = closure_1_9.createElement;
         merged = Object.assign(arg0);
@@ -1521,6 +1521,7 @@ export const createV6CompatibleWrapUseRoutes = function createV6CompatibleWrapUs
         const tmp4 = closure_8;
         if (tmp4) {
           function SentryRoutes(routes) {
+            let version;
             const ref = React.useRef(true);
             routes = routes.routes;
             let locationArg = routes.locationArg;
@@ -1546,7 +1547,7 @@ export const createV6CompatibleWrapUseRoutes = function createV6CompatibleWrapUs
                 const obj2 = { pathname: tmp };
               }
               if (ref.current) {
-                const item = routes.forEach(f83819);
+                const item = routes.forEach(f84031);
                 const obj4 = { activeRootSpan: obj3.getActiveRootSpan(), location: tmp2, routes, allRoutes: Array.from(set) };
                 const _Array2 = Array;
                 obj3 = _mod1025;

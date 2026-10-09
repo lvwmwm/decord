@@ -1,21 +1,21 @@
-// Module ID: 15846
-// Function ID: 15847
+// Module ID: 15959
+// Function ID: 15960
 // Name: TraitOptionList
-// Dependencies: [19, 17, 5079, 5433, 21, 587, 5090, 558, 576, 7550, 15811, 504, 5360, 4810, 6174, 1496, 5091, 5055, 15847, 2]
+// Dependencies: [19, 17, 5080, 5434, 21, 587, 5091, 558, 576, 7559, 15924, 504, 5361, 4811, 6176, 1497, 5092, 5056, 15960, 2]
 
-// Module 15846 (TraitOptionList)
+// Module 15959 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import inlineStyles from "inlineStyles" /* 7550 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 15811 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import inlineStyles from "inlineStyles" /* 7559 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 15924 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import CheckpointConstants from "CheckpointConstants" /* 5433 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import CheckpointConstants from "CheckpointConstants" /* 5434 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   const tmp4 = closure_13();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: metroRequire, strokeWidth: CheckpointCustomizationUtils.TRAIT_OPTION_STROKE_WIDTH };
-    const Polygon = tmp(7550).Polygon;
+    const Polygon = tmp(7559).Polygon;
     const tmp8 = React4(Polygon, obj2);
     cResult[0] = tmp8;
     first = tmp8;

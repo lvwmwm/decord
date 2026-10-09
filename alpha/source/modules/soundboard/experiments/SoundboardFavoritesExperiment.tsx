@@ -1,10 +1,10 @@
-// Module ID: 5427
-// Function ID: 5428
+// Module ID: 5428
+// Function ID: 5429
 // Name: SoundboardFavoritesExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 5427 (SoundboardFavoritesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 5428 (SoundboardFavoritesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

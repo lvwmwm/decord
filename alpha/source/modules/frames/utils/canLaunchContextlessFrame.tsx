@@ -1,14 +1,14 @@
-// Module ID: 10617
-// Function ID: 10618
+// Module ID: 10768
+// Function ID: 10769
 // Name: canLaunchContextlessFrame
-// Dependencies: [1085, 9185, 2028, 8586, 9138, 2]
+// Dependencies: [1085, 9219, 2029, 8594, 9205, 2]
 // Exports: canLaunchContextlessFrame
 
-// Module 10617 (canLaunchContextlessFrame)
+// Module 10768 (canLaunchContextlessFrame)
 import Constants from "Constants" /* 1085 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2028 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9138 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9185 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9205 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9219 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationFlags = Constants.ApplicationFlags;
@@ -19,7 +19,7 @@ export const canLaunchContextlessFrame = function canLaunchContextlessFrame(appl
     const obj = AppLauncherUtils;
     if (obj.isRealApplication(application)) {
       const tmpResult = EmbeddedSurfaceUtils;
-      let result = tmpResult.supportsEmbeddedSurface(application, tmp(8586).EmbeddedSurfaceType.MAIN);
+      let result = tmpResult.supportsEmbeddedSurface(application, tmp(8594).EmbeddedSurfaceType.MAIN);
       const tmpResult2 = ApplicationFlagUtils;
       if (result) {
         result = tmpResult2.hasApplicationFlag(application, ApplicationFlags.CONTEXTLESS_ACTIVITY);

@@ -1,16 +1,16 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10797
+// Function ID: 10798
 // Name: confirmActivityChangeAlert
-// Dependencies: [4717, 1389, 5417, 5297, 1126, 2030, 2]
+// Dependencies: [4719, 1390, 5418, 5298, 1126, 2031, 2]
 // Exports: default
 
-// Module 10652 (confirmActivityChangeAlert)
+// Module 10797 (confirmActivityChangeAlert)
 import intl7 from "intl" /* 1126 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import useChannelName from "useChannelName" /* 5417 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import useChannelName from "useChannelName" /* 5418 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");

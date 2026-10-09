@@ -1,26 +1,26 @@
-// Module ID: 9751
-// Function ID: 9752
+// Module ID: 9770
+// Function ID: 9771
 // Name: AutocompleteOptions
-// Dependencies: [7893, 7894, 8211, 6035, 2063, 2124, 2086, 1085, 5399, 5400, 9752, 1392, 12, 9753, 5975, 2040, 8681, 8685, 9081, 7034, 9764, 9710, 7037, 1414, 1126, 2]
+// Dependencies: [7902, 7903, 8219, 6037, 2064, 2124, 2086, 1085, 5400, 5401, 9771, 1393, 12, 9772, 5977, 2041, 8690, 8694, 9096, 7037, 9783, 9729, 7040, 1415, 1126, 2]
 // Exports: getAutocompleteOptions
 
-// Module 9751 (AutocompleteOptions)
+// Module 9770 (AutocompleteOptions)
 import intl2 from "intl" /* 1126 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
-import StickersActionCreators from "StickersActionCreators" /* 9710 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9752 */;
-import executeCommandDefault from "executeCommand" /* 9753 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7893 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7894 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8211 */;
-import StickersStore from "StickersStore" /* 6035 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5400 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5977 */;
+import StickersActionCreators from "StickersActionCreators" /* 9729 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9771 */;
+import executeCommandDefault from "executeCommand" /* 9772 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7902 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7903 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8219 */;
+import StickersStore from "StickersStore" /* 6037 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5400 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5401 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -208,7 +208,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       channel.isPrivate();
       if (matchSentinelResult) {
         const obj = AutocompleteUtilsDefault;
-        matchSentinelResult = obj.matchSentinel(arg0, arg1, authStore2);
+        matchSentinelResult = obj.matchSentinel(arg0, arg1, authStore3);
       }
       return matchSentinelResult;
     }
@@ -293,7 +293,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       return [];
     },
     matches(arg0, arg1, arg2) {
-      let tmp = 0 === arg2 && arg0 === authStore3;
+      let tmp = 0 === arg2 && arg0 === authStore4;
       if (tmp) {
         tmp = !(flag && 0 === arg1.length);
         const tmp4 = flag && 0 === arg1.length;
@@ -306,7 +306,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       return [];
     },
     matches(arg0, arg1, arg2) {
-      return flag && 0 === arg2 && arg0 === authStore3 && 0 === arg1.length;
+      return flag && 0 === arg2 && arg0 === authStore4 && 0 === arg1.length;
     }
   };
   let obj8 = {

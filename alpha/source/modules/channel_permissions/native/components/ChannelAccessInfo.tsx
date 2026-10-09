@@ -1,21 +1,21 @@
-// Module ID: 12221
-// Function ID: 12222
+// Module ID: 12160
+// Function ID: 12161
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 2082, 2124, 2118, 21, 5090, 587, 558, 576, 1126, 8579, 504, 11358, 1387, 5086, 6189, 1200, 12220, 8192, 8599, 8597, 10808, 2]
+// Dependencies: [19, 17, 2082, 2124, 2118, 21, 5091, 587, 558, 576, 1126, 8587, 504, 10731, 1388, 5087, 6191, 1200, 12159, 8200, 8607, 8605, 10978, 2]
 
-// Module 12221 (ChannelAccessInfo)
+// Module 12160 (ChannelAccessInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
 import GuildRecord from "GuildRecord" /* 2082 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8579 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11358 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8587 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10731 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
                       }
                       const _Symbol2 = Symbol;
                       if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                        let obj2 = { source: channel(10808), size: tmp(1200).Icon.Sizes.SMALL };
+                        let obj2 = { source: channel(10978), size: tmp(1200).Icon.Sizes.SMALL };
                         const Icon = tmp(1200).Icon;
                         const tmp47 = closure_8(Icon, obj2);
                         cResult[34] = tmp47;
@@ -183,7 +183,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
       id = guild.id;
     }
     const memberIds = getMemberIds(id);
-    const tmpResult2 = guild(8579);
+    const tmpResult2 = guild(8587);
     const tmp25 = channel;
     const existingMembers = tmpResult2.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
     let first1 = null;
@@ -206,13 +206,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
         const _Symbol = Symbol;
         if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
           let obj6 = { variant: "eyebrow", children: first };
-          const tmp35 = closure_8(guild(5086).Text, obj6);
+          const tmp35 = closure_8(guild(5087).Text, obj6);
           cResult[29] = tmp35;
           tmp33 = tmp35;
         } else {
           tmp33 = cResult[29];
         }
-        const PressableOpacity = tmp(6189).PressableOpacity;
+        const PressableOpacity = tmp(6191).PressableOpacity;
         const section = tmp4.section;
         const sectionContent = tmp4.sectionContent;
         const tmp38 = closure_10;
@@ -223,9 +223,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
           const items3 = [closure_8(Avatar, obj8), ];
           const obj10 = { variant: "text-sm/semibold", children: first1.tag };
           const obj9 = { children: items4 };
-          items4 = [closure_8(tmp(5086).Text, obj10), ];
+          items4 = [closure_8(tmp(5087).Text, obj10), ];
           const obj11 = { variant: "text-xs/medium", children: intl2.string(guild(1126).t.rt0ERW) };
-          const Text = tmp(5086).Text;
+          const Text = tmp(5087).Text;
           intl2 = tmp(1126).intl;
           items4[1] = closure_8(Text, obj11);
           items3[1] = closure_9(View, obj9);
@@ -241,12 +241,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
           const MEMBERS = constants.MEMBERS;
           items5 = [, ];
           const length = existingMembers.length;
-          const tmp57 = channel(12220);
-          items5[0] = tmp32(MEMBERS, length, tmp57, guild(8192).GroupIcon);
+          const tmp57 = channel(12159);
+          items5[0] = tmp32(MEMBERS, length, tmp57, guild(8200).GroupIcon);
           const ROLES = constants.ROLES;
           const length2 = stateFromStoresArray.length;
-          const tmp59 = channel(8599);
-          items5[1] = tmp32(ROLES, length2, tmp59, guild(8597).ShieldUserIcon);
+          const tmp59 = channel(8607);
+          items5[1] = tmp32(ROLES, length2, tmp59, guild(8605).ShieldUserIcon);
         }
         const tmp37Result = closure_9(tmp38, obj12);
         cResult[6] = channel;
@@ -330,7 +330,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
           const obj7 = { size: "sm", style: closure_2.sectionIcon };
           items = [metroImportAll(arg3, obj7), ];
           const obj8 = { style: closure_2.labelDetail, variant: "text-sm/medium", children: tmp5 };
-          items[1] = metroImportAll(tmp4(5086).Text, obj8);
+          items[1] = metroImportAll(tmp4(5087).Text, obj8);
           return React4(Fragment, obj6);
         }
       }
@@ -391,7 +391,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
     id = guild.id;
   }
   const memberIds = getMemberIds(id);
-  const tmp2Result = guild(8579);
+  const tmp2Result = guild(8587);
   const existingMembers = tmp2Result.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
   const tmp8 = 0 === stateFromStoresArray.length && 1 === existingMembers.length && isGuildOwner(guild, existingMembers[0]);
   let first = null;
@@ -400,7 +400,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
   }
   const tmp12 = closure_10;
   let tmp13 = closure_8;
-  const items2 = [closure_8(tmp2(5086).Text, { variant: "eyebrow", children: stringResult }), ];
+  const items2 = [closure_8(tmp2(5087).Text, { variant: "eyebrow", children: stringResult }), ];
   let obj2 = {
     accessibilityLabel: stringResult,
     accessibilityRole: "button",
@@ -413,7 +413,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
   };
   const tmp14 = View;
   let obj3 = { style: tmp.sectionContent, children: tmp11(tmp12, obj9) };
-  const PressableOpacity = tmp2(6189).PressableOpacity;
+  const PressableOpacity = tmp2(6191).PressableOpacity;
   if (null != first) {
     let obj4 = { children: items3 };
     let obj5 = { style: tmp.avatar, user: first, guildId: guild.id, size: tmp2(1200).AvatarSizes.XSMALL };
@@ -421,9 +421,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
     items3 = [tmp13(Avatar, obj5), ];
     let obj6 = { children: items4 };
     let obj7 = { variant: "text-sm/semibold", children: first.tag };
-    items4 = [tmp13(tmp2(5086).Text, obj7), ];
+    items4 = [tmp13(tmp2(5087).Text, obj7), ];
     let obj8 = { variant: "text-xs/medium", children: intl2.string(tmp2(1126).t.rt0ERW) };
-    const Text = tmp2(5086).Text;
+    const Text = tmp2(5087).Text;
     intl2 = tmp2(1126).intl;
     items4[1] = tmp13(Text, obj8);
     items3[1] = closure_9(tmp14, obj6);
@@ -478,23 +478,23 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAcc
         const obj7 = { size: "sm", style: closure_2.sectionIcon };
         items = [metroImportAll(GroupIcon, obj7), ];
         const obj8 = { style: closure_2.labelDetail, variant: "text-sm/medium", children: tmp5 };
-        items[1] = metroImportAll(tmp4(5086).Text, obj8);
+        items[1] = metroImportAll(tmp4(5087).Text, obj8);
         return React4(Fragment, obj6);
       }
     }
     obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
     const length = existingMembers.length;
-    channel(12220);
-    items5 = [renderCounts(MEMBERS, length, 0, tmp2(8192).GroupIcon), ];
+    channel(12159);
+    items5 = [renderCounts(MEMBERS, length, 0, tmp2(8200).GroupIcon), ];
     const ROLES = constants.ROLES;
     const length2 = stateFromStoresArray.length;
-    channel(8599);
-    items5[1] = renderCounts(ROLES, length2, 0, guild(8597).ShieldUserIcon);
+    channel(8607);
+    items5[1] = renderCounts(ROLES, length2, 0, guild(8605).ShieldUserIcon);
   }
   const obj10 = { children: items2 };
   items6 = [tmp13(tmp14, obj3), ];
-  const obj11 = { source: channel(10808), size: guild(1200).Icon.Sizes.SMALL };
+  const obj11 = { source: channel(10978), size: guild(1200).Icon.Sizes.SMALL };
   const Icon = tmp2(1200).Icon;
   items6[1] = tmp13(Icon, obj11);
   items2[1] = closure_9(PressableOpacity, obj2);

@@ -1,10 +1,10 @@
-// Module ID: 13468
-// Function ID: 13469
+// Module ID: 13560
+// Function ID: 13561
 // Name: PremiumOrbsDeliveredModalExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 13468 (PremiumOrbsDeliveredModalExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 13560 (PremiumOrbsDeliveredModalExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-09-mobile-nitro-orbs-delivered-modal", kind: "user", defaultConfig: false, variations: { 1: true } });

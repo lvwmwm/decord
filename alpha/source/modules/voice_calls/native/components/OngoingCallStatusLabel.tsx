@@ -1,15 +1,15 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13538
+// Function ID: 13539
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 502, 5754, 5111, 21, 558, 576, 504, 1126, 13445, 1200, 2]
+// Dependencies: [19, 502, 5755, 5112, 21, 558, 576, 504, 1126, 13537, 1200, 2]
 
-// Module 13446 (OngoingCallStatusLabel)
+// Module 13538 (OngoingCallStatusLabel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5754 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import CallStore from "CallStore" /* 5755 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

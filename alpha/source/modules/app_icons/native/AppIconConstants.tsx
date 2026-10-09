@@ -1,37 +1,37 @@
-// Module ID: 9401
-// Function ID: 9402
+// Module ID: 9439
+// Function ID: 9440
 // Name: AppIconConstants
-// Dependencies: [9402, 9403, 1126, 9404, 9405, 9406, 9407, 9408, 9409, 9410, 9411, 9412, 9413, 9414, 9415, 9416, 9417, 9418, 9419, 9420, 9421, 9422, 9423, 9424, 9425, 9426, 9427, 2]
+// Dependencies: [9440, 9441, 1126, 9442, 9443, 9444, 9445, 9446, 9447, 9448, 9449, 9450, 9451, 9452, 9453, 9454, 9455, 9456, 9457, 9458, 9459, 9460, 9461, 9462, 9463, 9464, 9465, 2]
 // Exports: getDefaultIcon, getIconById, getIcons, getLimitedAlternateIcons, getOfficialAlternateIcons, isIconExpired
 
-// Module 9401 (AppIconConstants)
+// Module 9439 (AppIconConstants)
 import intl25 from "intl" /* 1126 */;
-import AppIconTypes from "AppIconTypes" /* 9402 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9403 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9404 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9405 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9406 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9407 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9408 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9409 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9410 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 9411 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 9412 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 9413 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 9414 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 9415 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 9416 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 9417 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 9418 */;
-import AssetRegistryDefault17 from "AssetRegistry" /* 9419 */;
-import AssetRegistryDefault18 from "AssetRegistry" /* 9420 */;
-import AssetRegistryDefault19 from "AssetRegistry" /* 9421 */;
-import AssetRegistryDefault20 from "AssetRegistry" /* 9422 */;
-import AssetRegistryDefault21 from "AssetRegistry" /* 9423 */;
-import AssetRegistryDefault22 from "AssetRegistry" /* 9424 */;
-import AssetRegistryDefault23 from "AssetRegistry" /* 9425 */;
-import AssetRegistryDefault24 from "AssetRegistry" /* 9426 */;
-import AssetRegistryDefault25 from "AssetRegistry" /* 9427 */;
+import AppIconTypes from "AppIconTypes" /* 9440 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9441 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9442 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9443 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9444 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9445 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9446 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 9447 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 9448 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 9449 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 9450 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 9451 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 9452 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 9453 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 9454 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 9455 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 9456 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 9457 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 9458 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 9459 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 9460 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 9461 */;
+import AssetRegistryDefault22 from "AssetRegistry" /* 9462 */;
+import AssetRegistryDefault23 from "AssetRegistry" /* 9463 */;
+import AssetRegistryDefault24 from "AssetRegistry" /* 9464 */;
+import AssetRegistryDefault25 from "AssetRegistry" /* 9465 */;
 import size from "module_2" /* 2 */;
 
 let intl;
@@ -58,7 +58,7 @@ let intl6;
 let intl7;
 let intl8;
 let intl9;
-const f100762 = (expiresAt) => {
+const f101270 = (expiresAt) => {
   let tmp = null != expiresAt.expiresAt;
   if (tmp) {
     const _Date = Date;
@@ -66,7 +66,7 @@ const f100762 = (expiresAt) => {
   }
   return !tmp;
 };
-const f100763 = (expiresAt) => {
+const f101271 = (expiresAt) => {
   let tmp = null != expiresAt.expiresAt;
   if (tmp) {
     const _Date = Date;
@@ -164,16 +164,16 @@ export const isIconExpired = function isIconExpired(expiresAt) {
   return tmp;
 };
 export const getOfficialAlternateIcons = function getOfficialAlternateIcons() {
-  return items.filter(f100762);
+  return items.filter(f101270);
 };
 export const getLimitedAlternateIcons = function getLimitedAlternateIcons() {
-  return closure_4.filter(f100763);
+  return closure_4.filter(f101271);
 };
 export const getIcons = function getIcons() {
   let intl;
   const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
   intl = intl25.intl;
-  items = [obj, ...items.filter(f100762), ...closure_4.filter(f100763)];
+  items = [obj, ...items.filter(f101270), ...closure_4.filter(f101271)];
   return items;
 };
 export const getIconById = function getIconById(currentAppIcon) {
@@ -183,7 +183,7 @@ export const getIconById = function getIconById(currentAppIcon) {
   let tmp = require;
   const obj = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl.string(intl25.t.ANxkLy), isPremium: false };
   intl = intl25.intl;
-  items = [obj, ...items.filter(f100762), ...closure_4.filter(f100763)];
+  items = [obj, ...items.filter(f101270), ...closure_4.filter(f101271)];
   let found = items.find((id) => id.id === closure_0);
   if (null == found) {
     const obj2 = { id: AppIconTypes.FreemiumAppIconIds.DEFAULT, iconSource: AssetRegistryDefault, name: intl2.string(intl25.t.ANxkLy), isPremium: false };

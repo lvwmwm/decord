@@ -1,37 +1,37 @@
-// Module ID: 11575
-// Function ID: 11576
+// Module ID: 11508
+// Function ID: 11509
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7302, 7307, 8429, 2063, 5428, 8456, 11576, 10202, 21, 5090, 587, 558, 576, 1496, 11577, 504, 11573, 11572, 6209, 11579, 4766, 1126, 1387, 11581, 5299, 11582, 9251, 5101, 11583, 11584, 5410, 5055, 5056, 4765, 6872, 7079, 5039, 1381, 11587, 10211, 11588, 11598, 11612, 2]
+// Dependencies: [5, 32, 19, 17, 7307, 7312, 8437, 2064, 5429, 8464, 11509, 10187, 21, 5091, 587, 558, 576, 1497, 11510, 504, 11506, 11505, 6211, 11512, 4768, 1126, 1388, 11514, 5300, 11515, 9289, 5102, 11516, 11517, 5411, 5056, 5057, 4767, 6879, 7082, 5040, 1382, 11520, 10196, 11521, 11531, 11545, 2]
 
-// Module 11575 (ForwardModal)
+// Module 11508 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import LinkIcon from "LinkIcon" /* 5039 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
-import ChannelUtils from "ChannelUtils" /* 5410 */;
-import ClipboardUtils from "ClipboardUtils" /* 6872 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
-import UserRowConstants from "UserRowConstants" /* 10202 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11572 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11573 */;
-import ForwardConstants from "ForwardConstants" /* 11576 */;
-import formatResults from "formatResults" /* 11577 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11579 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import LinkIcon from "LinkIcon" /* 5040 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5057 */;
+import ChannelUtils from "ChannelUtils" /* 5411 */;
+import ClipboardUtils from "ClipboardUtils" /* 6879 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7082 */;
+import UserRowConstants from "UserRowConstants" /* 10187 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11505 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11506 */;
+import ForwardConstants from "ForwardConstants" /* 11509 */;
+import formatResults from "formatResults" /* 11510 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11512 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7302 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7307 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8429 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import MessagePreviewStore_mod from "MessagePreviewStore" /* 8456 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7307 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7312 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8437 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import MessagePreviewStore_mod from "MessagePreviewStore" /* 8464 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -603,7 +603,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
         const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
         const merged = Object.assign(arg0);
         intl = intl7.intl;
-        tmp = authStore3(HeaderActionButton, obj);
+        tmp = authStore4(HeaderActionButton, obj);
       }
       return tmp;
     },

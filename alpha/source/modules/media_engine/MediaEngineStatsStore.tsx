@@ -1,9 +1,9 @@
-// Module ID: 5128
-// Function ID: 5129
+// Module ID: 5129
+// Function ID: 5130
 // Name: MediaEngineStatsStore
 // Dependencies: [502, 504, 584, 2]
 
-// Module 5128 (MediaEngineStatsStore)
+// Module 5129 (MediaEngineStatsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -263,35 +263,41 @@ class MediaEngineStatsStore extends Store {
 const prototype = MediaEngineStatsStore.prototype;
 MediaEngineStatsStore.displayName = "MediaEngineStatsStore";
 let obj = {
-  MEDIA_ENGINE_CONNECTION_STATS: function handleMediaEngineConnectionStats(arg0) {
-    const iter = arg0.connectionStats[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp2 = nextResult;
-      let prop = nextResult.mediaEngineConnectionId;
-      let tmp3 = prop;
-      if (0 !== prop.length) {
-        ({}[tmp3]) = tmp2;
-        let tmp28 = closure_1;
-        if (!(tmp3 in closure_1)) {
-          tmp28[tmp3] = [];
+  MEDIA_ENGINE_CONNECTION_STATS: function handleMediaEngineConnectionStats(connectionStats) {
+    connectionStats = connectionStats.connectionStats;
+    if (0 === connectionStats.length) {
+      return false;
+    } else {
+      const obj = {};
+      const iter = connectionStats[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp4 = nextResult;
+        let prop = nextResult.mediaEngineConnectionId;
+        let tmp5 = prop;
+        if (0 !== prop.length) {
+          obj[tmp5] = tmp4;
+          let tmp32 = closure_1;
+          if (!(tmp5 in closure_1)) {
+            tmp32[tmp5] = [];
+          }
+          let arr3 = tmp32[tmp5];
+          let arr = arr3.push(tmp4);
+          let arr2;
+          if (tmp32[tmp5].length > 30) {
+            let arr4 = tmp32[tmp5];
+            arr2 = arr4.shift();
+          }
+          let tmp12 = updateAveragedStats;
+          let tmp13 = closure_3;
+          let tmp14 = prop;
+          let tmp15 = nextResult;
+          let tmp17 = getStatsHistoryAtIndex(tmp5, 15);
+          let tmp12Result = tmp12(tmp13, tmp14, tmp15, tmp17);
+          let tmp12Result2 = tmp12(closure_2, tmp5, tmp4, arr2);
         }
-        let arr2 = tmp28[tmp3];
-        let arr = arr2.push(tmp2);
-        let arr5;
-        if (tmp28[tmp3].length > 30) {
-          let arr3 = tmp28[tmp3];
-          arr5 = arr3.shift();
-        }
-        let tmp10 = updateAveragedStats;
-        let tmp11 = closure_3;
-        let tmp12 = prop;
-        let tmp13 = nextResult;
-        let tmp15 = getStatsHistoryAtIndex(tmp3, 15);
-        let tmp10Result = tmp10(tmp11, tmp12, tmp13, tmp15);
-        let tmp10Result2 = tmp10(closure_2, tmp3, tmp2, arr5);
+        continue;
       }
-      continue;
     }
   },
   MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET: function handleResetStats(mediaEngineConnectionId) {

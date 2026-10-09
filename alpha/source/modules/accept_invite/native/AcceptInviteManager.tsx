@@ -1,25 +1,25 @@
-// Module ID: 17752
-// Function ID: 17753
+// Module ID: 17906
+// Function ID: 17907
 // Name: AcceptInviteManager
-// Dependencies: [502, 2063, 2124, 2086, 5071, 4707, 7348, 1085, 7417, 1112, 5054, 5940, 17753, 1999, 6797, 17754, 584, 8922, 2]
+// Dependencies: [502, 2064, 2124, 2086, 5072, 4709, 7353, 1085, 7422, 1112, 5055, 5941, 17907, 2000, 6804, 17908, 584, 8933, 2]
 
-// Module 17752 (AcceptInviteManager)
+// Module 17906 (AcceptInviteManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 7348 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7417 */;
-import FriendInviteUtils from "FriendInviteUtils" /* 17754 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 7353 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7422 */;
+import FriendInviteUtils from "FriendInviteUtils" /* 17908 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import InviteStore from "InviteStore" /* 5071 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import InviteStore from "InviteStore" /* 5072 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -163,7 +163,7 @@ class AcceptInviteManager extends AutomaticLifecycleManager {
             obj.hideActionSheet();
             const obj5 = { code: tmp, isRegistration: _isRegistration, deeplinkAttemptId, inviteInstanceId };
             const obj2 = ModalActionCreatorsDefault;
-            obj2.pushLazy(asyncRequire(17753, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
+            obj2.pushLazy(asyncRequire(17907, dependencyMap.paths), obj5, ACCEPT_INVITE_MODAL_KEY);
             flag = false;
           }
         }

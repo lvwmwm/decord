@@ -1,332 +1,195 @@
 // Module ID: 4850
 // Function ID: 4851
-// Dependencies: [5, 32, 19, 17, 4833, 4830]
-// Exports: useRiveFile
+// Dependencies: [19, 4839, 4843, 4831]
+// Exports: useViewModelInstance
 
 // Module 4850
-import react_native from "react-native" /* 17 */;
-import callDispose from "callDispose" /* 4830 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import ArtboardByIndex from "ArtboardByIndex" /* 4839 */;
 import react from "react" /* 19 */;
 
-let c4, c5;
+const require = globalThis.__r;
+let _require;
 
-let closure_4;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
-let _slicedToArray = _slicedToArray_mod;
-({ useState: closure_4, useEffect: hasOwnProperty, useMemo: metroRequire, useRef: metroImportDefault } = react);
-const Image = react_native.Image;
+let c2;
+let c3;
+({ useMemo: c2, useRef: c3 } = react);
 
-export const useRiveFile = function useRiveFile(src, arg1) {
-  let _undefined;
-  let c1;
-  let ref;
-  let tmp2;
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
+export const useViewModelInstance = function useViewModelInstance(arg0, instanceName) {
+  let closure_0;
+  let name;
+  let obj3;
+  _require = arg0;
+  instanceName = undefined;
+  if (instanceName != null) {
+    instanceName = instanceName.instanceName;
   }
-  c1 = undefined;
-  _slicedToArray = undefined;
-  let str2;
-  let uri;
-  let riveFile;
-  let tmp = _slicedToArray(str2({ riveFile: "IconComponent", isLoading: null, error: "cha" }), 2);
-  [tmp2, c1] = tmp;
-  const items = [obj.referencedAssets];
-  let tmp3 = riveFile(() => {
-    const referencedAssets = obj.referencedAssets;
-    obj = {};
-    let tmp;
-    if (undefined !== referencedAssets) {
-      const tmp2 = globalThis;
-      const _Object = Object;
-      const entries = Object.entries(referencedAssets);
-      const item = entries.forEach(function(item) {
-        let fileName;
-        let path;
-        let tmp;
-        let tmp2;
-        let tmp8;
-        [tmp, tmp2] = item;
-        let tmp4 = null !== tmp2;
-        const tmp3 = obj;
-        if (tmp4) {
-          tmp4 = typeof tmp2 === "object";
-        }
-        if (tmp4) {
-          tmp4 = "__type" in tmp2;
-        }
-        if (tmp4) {
-          tmp4 = "HybridObject<RiveImage>" === tmp2.__type;
-        }
-        if (tmp4) {
-          tmp8 = { image: tmp2 };
-          const obj2 = { image: tmp2 };
-        } else {
-          const source = tmp2.source;
-          if (typeof source === "number") {
-            const assetSource = closure_2_8.resolveAssetSource(source);
-            if (assetSource) {
-              if (assetSource.uri) {
-                tmp8 = { sourceAssetId: assetSource.uri };
-                const obj3 = { sourceAssetId: assetSource.uri };
-              }
-            }
-            const _Error2 = Error;
-            const self3 = this;
-            const self4 = this;
-            const error = new Error("Invalid asset source provided.");
-            throw error;
-          } else {
-            uri = source.uri;
-            if (typeof source === "object") {
-              if (uri) {
-                tmp8 = { sourceUrl: uri };
-                const obj4 = { sourceUrl: uri };
-              }
-            }
-            ({ fileName, path } = source);
-            if (typeof source === "object") {
-              if (fileName) {
-                obj = { sourceAsset: fileName };
-                tmp8 = obj;
-                if (path) {
-                  obj.path = path;
-                  tmp8 = obj;
-                }
-              }
-            }
-            const _Error = Error;
-            const self = this;
-            const self2 = this;
-            const error1 = new Error("Invalid source provided.");
-            throw error1;
-          }
-        }
-        tmp3[tmp] = tmp8;
-      });
-      tmp = obj;
-    }
-    return tmp;
-  }, items);
-  let closure_2 = tmp3;
-  _slicedToArray = closure_7(tmp3);
-  let tmp4 = null != src && typeof src === "object";
-  if (tmp4) {
-    tmp4 = "uri" in src;
+  if (instanceName != null) {
+    name = instanceName.name;
   }
-  str2 = "primitive";
-  if (tmp4) {
-    str2 = "uri";
+  if (instanceName == null) {
+    instanceName = name;
   }
-  let tmp5 = null != src && typeof src === "object";
-  if (tmp5) {
-    tmp5 = "uri" in src;
+  let artboardName;
+  if (instanceName != null) {
+    artboardName = instanceName.artboardName;
   }
-  uri = src;
-  if (tmp5) {
-    uri = src.uri;
+  let viewModelName;
+  if (instanceName != null) {
+    viewModelName = instanceName.viewModelName;
   }
-  const items1 = [str2, uri];
-  uri(() => {
-    function loadRiveFile() {
-      return closure_0(...arguments);
-    }
-    let c0 = null;
-    let closure_0 = closure_2(function*(arg0, value) {
-      let error;
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: null };
+  let flag;
+  if (instanceName != null) {
+    flag = instanceName.useNew;
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  let flag2;
+  if (instanceName != null) {
+    flag2 = instanceName.required;
+  }
+  if (flag2 == null) {
+    flag2 = false;
+  }
+  let onInit;
+  if (instanceName != null) {
+    onInit = instanceName.onInit;
+  }
+  const tmp5 = viewModelName(onInit);
+  const ref = tmp5;
+  tmp5.current = onInit;
+  let obj = require("react");
+  const items = [arg0, instanceName, artboardName, viewModelName, flag];
+  const disposableMemo = obj.useDisposableMemo(() => {
+    let obj11;
+    if (closure_0) {
+      const tmp6 = null != obj && "getViewModelInstance" in obj;
+      if (tmp6) {
+        let viewModelInstance = obj.getViewModelInstance();
+        if (viewModelInstance == null) {
+          viewModelInstance = null;
         }
+        obj11 = { instance: viewModelInstance, needsDispose: false };
+        const obj2 = { instance: viewModelInstance, needsDispose: false };
       } else {
-        let c3;
-        try {
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
+        const tmp7 = null != obj && "defaultArtboardViewModel" in obj;
+        if (tmp7) {
+          let viewModelByNameResult;
+          let instanceByName;
+          if (viewModelName) {
+            viewModelByNameResult = obj.viewModelByName(tmp3);
+            if (!viewModelByNameResult) {
+              const _HermesInternal3 = HermesInternal;
+              obj11 = { instance: null, needsDispose: false, error: "ViewModel '" + viewModelName + "' not found" };
+              const obj3 = { instance: null, needsDispose: false, error: "ViewModel '" + viewModelName + "' not found" };
+            }
+          } else {
+            let ArtboardByNameResult;
+            const defaultArtboardViewModel = obj.defaultArtboardViewModel;
+            if (artboardName) {
+              const obj5 = ArtboardByIndex;
+              ArtboardByNameResult = obj5.ArtboardByName(tmp2);
+            }
+            viewModelByNameResult = defaultArtboardViewModel(ArtboardByNameResult);
+            if (!viewModelByNameResult) {
               let obj6;
-              let closure_1 = tmp;
-              riveFile = tmp4;
-              c3 = 1;
-              if ("uri" === str2) {
-                const obj4 = { uri };
-                obj6 = obj4;
+              if (artboardName) {
+                const _HermesInternal2 = HermesInternal;
+                obj6 = { instance: null, needsDispose: false, error: "Artboard '" + artboardName + "' not found or has no ViewModel" };
+                const obj4 = { instance: null, needsDispose: false, error: "Artboard '" + artboardName + "' not found or has no ViewModel" };
               } else {
-                obj6 = uri;
+                obj6 = { instance: null, needsDispose: false };
               }
-              if (null == obj6) {
-                const obj5 = { riveFile: null, isLoading: false, error };
-                const _Error3 = Error;
-                const self3 = this;
-                const self4 = this;
-                error = new Error("No Rive file input provided.");
-                closure_2_1(obj5);
-                c3 = 0;
-                c5 = 3;
-                const obj7 = { value: undefined, done: true };
-                return obj7;
-              } else if (typeof obj6 === "string") {
-                if (!obj6.startsWith("http://")) {
-                  if (!obj6.startsWith("https://")) {
-                    const RiveFileFactory3 = riveFile(_undefined[4]).RiveFileFactory;
-                    c4 = 2;
-                    c5 = 1;
-                    const obj8 = { value: RiveFileFactory3.fromResource(obj6, ref.current), done: false };
-                    return obj8;
-                  }
-                }
-                const RiveFileFactory4 = riveFile(_undefined[4]).RiveFileFactory;
-                c4 = 3;
-                c5 = 1;
-                const obj9 = { value: RiveFileFactory4.fromURL(obj6, ref.current), done: false };
-                return obj9;
-              } else {
-                if (typeof obj6 !== "number") {
-                  if (!("uri" in obj6)) {
-                    const _ArrayBuffer = ArrayBuffer;
-                    if (obj6 instanceof ArrayBuffer) {
-                      const RiveFileFactory = riveFile(_undefined[4]).RiveFileFactory;
-                      c4 = 5;
-                      c5 = 1;
-                      const obj10 = { value: RiveFileFactory.fromBytes(obj6, ref.current), done: false };
-                      return obj10;
-                    } else {
-                      const obj11 = { riveFile, isLoading: false, error: null };
-                      closure_2_1(obj11);
-                      c3 = 0;
-                    }
-                  }
-                }
-                const RiveFileFactory2 = riveFile(_undefined[4]).RiveFileFactory;
-                c4 = 4;
-                c5 = 1;
-                const obj12 = { value: RiveFileFactory2.fromSource(obj6, ref.current), done: false };
-                return obj12;
-              }
+              obj11 = obj6;
             }
-          } else if (1 === c4) {
-            let error1;
-            c3 = 0;
-            riveFile = closure_2;
-            const _console = console;
-            console.error(riveFile);
-            const _Error = Error;
-            const tmp14 = closure_2_1;
-            if (riveFile instanceof Error) {
-              error1 = riveFile;
-            } else {
-              const _Error2 = Error;
-              const self = this;
-              const self2 = this;
-              error1 = new Error("Failed to load Rive file");
-            }
-            const obj13 = { riveFile: null, isLoading: false, error: error1 };
-            tmp14(obj13);
-          } else {
-            if (2 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj14 = { value, done: true };
-                return obj14;
-              }
-            } else if (3 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj15 = { value, done: true };
-                return obj15;
-              }
-            } else if (4 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj16 = { value, done: true };
-                return obj16;
-              } else {
-                riveFile = value;
-              }
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              riveFile = value;
-            }
-            riveFile = value;
           }
-          c5 = 3;
-          return { value: "IconComponent", done: null };
-        } catch (tmp40) {
-          closure_2 = tmp40;
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp40;
+          if (instanceName) {
+            instanceByName = viewModelByNameResult.createInstanceByName(tmp);
           } else {
-            c4 = 1;
+            instanceByName = viewModelByNameResult.createDefaultInstance();
           }
+          if (!instanceByName) {
+            let obj7;
+            if (instanceName) {
+              obj7 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
+              const _HermesInternal4 = HermesInternal;
+            }
+            obj11 = obj7;
+          }
+          if (instanceByName == null) {
+            instanceByName = null;
+          }
+          obj7 = { instance: instanceByName, needsDispose: true };
+          const obj8 = { instance: instanceByName, needsDispose: true };
+        } else {
+          let instanceByName1;
+          if (instanceName) {
+            instanceByName1 = obj.createInstanceByName(tmp);
+            if (!instanceByName1) {
+              const _HermesInternal = HermesInternal;
+              obj11 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
+              const obj9 = { instance: null, needsDispose: false, error: "ViewModel instance '" + instanceName + "' not found" };
+            }
+          } else if (tmp4) {
+            instanceByName1 = obj.createInstance();
+          } else {
+            instanceByName1 = obj.createDefaultInstance();
+          }
+          if (instanceByName1 == null) {
+            instanceByName1 = null;
+          }
+          obj11 = { instance: instanceByName1, needsDispose: true };
+          const obj10 = { instance: instanceByName1, needsDispose: true };
         }
       }
-    });
-    let tmp = loadRiveFile();
-    return () => {
-      const tmp = c0;
-      if (tmp) {
-        obj = callDispose;
-        obj.callDispose(c0);
-      }
-    };
+    } else {
+      obj11 = { instance: "Set", needsDispose: true };
+    }
+    const current = obj11.instance && ref.current;
+    if (current) {
+      ref.current(obj11.instance);
+    }
+    return obj11;
+  }, (needsDispose) => {
+    const tmp = needsDispose.needsDispose && needsDispose.instance;
+    if (tmp) {
+      const obj = closure_0(instanceName[3]);
+      obj.callDispose(needsDispose.instance);
+    }
+  }, items);
+  const items1 = [disposableMemo.error];
+  let tmp7 = artboardName(function() {
+    let error = null;
+    if (disposableMemo.error) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      error = new Error(tmp.error);
+    }
+    return error;
   }, items1);
-  riveFile = tmp2.riveFile;
-  const items2 = [tmp3, riveFile];
-  uri(() => {
-    let tmp3 = ref.current !== current;
-    const tmp = ref;
-    if (tmp3) {
-      tmp3 = riveFile;
+  if (flag2) {
+    if (null === disposableMemo.instance) {
+      let str = "useViewModelInstance: Failed to get ViewModelInstance. Ensure the source has a valid ViewModel and instance available.";
+      let _Error = Error;
+      if (disposableMemo.error) {
+        let _HermesInternal = HermesInternal;
+        str = "useViewModelInstance: " + disposableMemo.error;
+      }
+      let self = this;
+      let self2 = this;
+      const _Error1 = new _Error(str);
+      throw _Error1;
     }
-    if (tmp3) {
-      tmp3 = tmp2;
-    }
-    if (tmp3) {
-      obj = { data: current };
-      const result = riveFile.updateReferencedAssets(obj);
-      tmp.current = current;
-    }
-  }, items2);
-  let obj2 = { riveFile: tmp2.riveFile, isLoading: tmp2.isLoading, error: tmp2.error };
-  return obj2;
+  }
+  const instance = disposableMemo.instance;
+  if (instance) {
+    let obj2 = { instance, error: null };
+    obj3 = obj2;
+  } else if (undefined === instance) {
+    obj3 = { instance: "Array", error: 0 };
+  } else {
+    obj3 = { instance: null, error: tmp7 };
+  }
+  return obj3;
 };

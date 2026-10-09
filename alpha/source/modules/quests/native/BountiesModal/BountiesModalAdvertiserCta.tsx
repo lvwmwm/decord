@@ -1,24 +1,24 @@
-// Module ID: 15132
-// Function ID: 15133
+// Module ID: 15242
+// Function ID: 15243
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 5079, 5977, 21, 4810, 5090, 587, 5091, 5094, 558, 576, 15114, 9544, 5381, 10580, 10582, 5984, 7404, 5982, 6164, 5086, 5375, 8526, 15094, 504, 15095, 9381, 2]
+// Dependencies: [109, 19, 17, 5080, 5979, 21, 4811, 5091, 587, 5092, 5095, 558, 576, 15224, 9157, 5382, 9174, 9176, 5986, 7409, 5984, 6163, 5087, 5376, 8534, 15204, 504, 15205, 9419, 2]
 
-// Module 15132 (BountiesModalAdvertiserCta)
+// Module 15242 (BountiesModalAdvertiserCta)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import timingPresets from "timingPresets" /* 5094 */;
-import QuestConstants from "QuestConstants" /* 5977 */;
-import QuestContent from "QuestContent" /* 5982 */;
-import AdCreativeType from "AdCreativeType" /* 5984 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10582 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import timingPresets from "timingPresets" /* 5095 */;
+import QuestConstants from "QuestConstants" /* 5979 */;
+import QuestContent from "QuestContent" /* 5984 */;
+import AdCreativeType from "AdCreativeType" /* 5986 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7409 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9176 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -328,7 +328,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
     const fn3 = function p(arg0, opacityStyle) {
       const obj = { opacityStyle, transformStyle: animatedStyle };
       const merged = Object.assign(arg0);
-      return closure_12(closure_19, obj);
+      return authStore2(closure_19, obj);
     };
     cResult[5] = animatedStyle;
     cResult[6] = fn3;
@@ -431,7 +431,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
   const callback = react.useCallback((arg0, opacityStyle) => {
     const obj = { opacityStyle, transformStyle: animatedStyle };
     const merged = Object.assign(arg0);
-    return closure_12(closure_19, obj);
+    return authStore2(closure_19, obj);
   }, items1);
   const tmp2Result2 = visible(tmp3[27]);
   const obj4 = { visible, entranceTiming: visible(tmp3[10]).timingStandard, exitTiming: visible(tmp3[10]).timingFast };

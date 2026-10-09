@@ -1,18 +1,18 @@
-// Module ID: 16506
-// Function ID: 16507
+// Module ID: 16629
+// Function ID: 16630
 // Name: MobileGameCommunitiesActionCreators
-// Dependencies: [5, 13837, 15728, 1085, 13838, 15729, 1294, 1490, 584, 504, 1102, 2]
+// Dependencies: [5, 13930, 15841, 1085, 13931, 15842, 1295, 1491, 584, 504, 1102, 2]
 // Exports: dismissGuild
 
-// Module 16506 (MobileGameCommunitiesActionCreators)
+// Module 16629 (MobileGameCommunitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef1490 from "module_1490" /* 1490 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import _modDef1491 from "module_1491" /* 1491 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13837 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15728 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13930 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15841 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let obj = function _fetchDetectedGameCommunities() {
             const get = HTTP.get;
             obj4 = { game_ids: tmp17, limit: 20, ignored_guild_ids: Array.from(dismissedGuildIds.getDismissedGuildIds()) };
             const _Array = Array;
-            stringify = _modDef1490.stringify;
+            stringify = _modDef1491.stringify;
             c2 = 1;
             c3 = 1;
             const obj5 = { value: get(request), done: false };

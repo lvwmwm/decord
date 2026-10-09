@@ -1,173 +1,99 @@
 // Module ID: 1736
 // Function ID: 1737
-// Dependencies: [1659, 1695]
-// Exports: withSequence
+// Dependencies: [1696]
+// Exports: withRepeat
 
 // Module 1736
-import _mod1695 from "module_1695" /* 1695 */;
-
 const require = globalThis.__r;
-let dependencyMap;
+let _require;
 
-const __initData = { code: "function pnpm_sequenceTs2(){const{getReduceMotionForAnimation,reduceMotion}=this.__closure;return{onStart:function(animation,value){return animation.current=value;},onFrame:function(){return true;},current:0,animationIndex:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}" };
-const __initData2 = { code: "function pnpm_sequenceTs3(){const{_animations,getReduceMotionForAnimation,reduceMotion}=this.__closure;const animations=_animations.map(function(a){const result=typeof a==='function'?a():a;result.finished=false;return result;});function findNextNonReducedMotionAnimationIndex(index){while(index<animations.length-1&&animations[index].reduceMotion){index++;}return index;}const callback=function(finished){if(finished){return;}animations.forEach(function(animation){if(typeof animation.callback==='function'&&!animation.finished){animation.callback(finished);}});};function sequence(animation,now){const currentAnim=animations[animation.animationIndex];const finished=currentAnim.onFrame(currentAnim,now);animation.current=currentAnim.current;if(finished){if(currentAnim.callback){currentAnim.callback(true);}currentAnim.finished=true;animation.animationIndex=findNextNonReducedMotionAnimationIndex(animation.animationIndex+1);if(animation.animationIndex<animations.length){const nextAnim=animations[animation.animationIndex];nextAnim.onStart(nextAnim,currentAnim.current,now,currentAnim);return false;}return true;}return false;}function onStart(animation,value,now,previousAnimation){animations.forEach(function(anim){if(anim.reduceMotion===undefined){anim.reduceMotion=animation.reduceMotion;}});animation.animationIndex=findNextNonReducedMotionAnimationIndex(0);if(previousAnimation===undefined){previousAnimation=animations[animations.length-1];}const currentAnimation=animations[animation.animationIndex];currentAnimation.onStart(currentAnimation,value,now,previousAnimation);}return{isHigherOrder:true,onFrame:sequence,onStart:onStart,animationIndex:0,current:animations[0].current,callback:callback,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}" };
-function withSequence(withTimingResult) {
-  let defineAnimation2Result;
-  let tmp;
-  const substr = [...arguments].slice();
-  dependencyMap = undefined;
-  if (withTimingResult) {
-    let tmp2;
-    if (typeof withTimingResult === "string") {
-      dependencyMap = withTimingResult;
-      tmp2 = withTimingResult;
-    } else {
-      const arr = substr.unshift(withTimingResult);
-    }
-    tmp = tmp2;
+let closure_2 = { code: "function pnpm_repeatTs2(){const{_nextAnimation,numberOfReps,reverse,callback,getReduceMotionForAnimation,reduceMotion}=this.__closure;const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function repeat(animation,now){const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;if(finished){animation.reps+=1;if(nextAnimation.callback){nextAnimation.callback(true,animation.current);}if(animation.reduceMotion||numberOfReps>0&&animation.reps>=numberOfReps){return true;}const startValue=reverse?nextAnimation.current:animation.startValue;if(reverse){nextAnimation.toValue=animation.startValue;animation.startValue=startValue;}nextAnimation.onStart(nextAnimation,startValue,now,nextAnimation.previousAnimation);return false;}return false;}const repCallback=function(finished){if(callback){callback(finished);}if(!finished&&nextAnimation.callback){nextAnimation.callback(false);}};function onStart(animation,value,now,previousAnimation){animation.startValue=value;animation.reps=0;if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}if(animation.reduceMotion&&reverse&&(numberOfReps<=0||numberOfReps%2===0)){animation.current=animation.startValue;animation.onFrame=function(){return true;};}else{nextAnimation.onStart(nextAnimation,value,now,previousAnimation);}}return{isHigherOrder:true,onFrame:repeat,onStart:onStart,reps:0,current:nextAnimation.current,callback:repCallback,startValue:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}" };
+let fn = function n(_nextAnimation, arg1, arg2, callback, reduceMotion) {
+  _require = _nextAnimation;
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 2;
   }
-  if (0 === substr.length) {
-    const logger = substr(1659).logger;
-    logger.warn("No animation was provided for the sequence");
-    const fn2 = function c() {
-      let obj2;
-      const obj = {
-        onStart(arg0, current) {
-          arg0.current = current;
-          return current;
-        },
-        onFrame() {
-          return true;
-        },
-        current: 0,
-        animationIndex: 0,
-        reduceMotion: obj2.getReduceMotionForAnimation(dependencyMap)
-      };
-      obj2 = _mod1695;
-      return obj;
-    };
-    let obj2 = { getReduceMotionForAnimation: substr(1695).getReduceMotionForAnimation, reduceMotion: tmp };
-    const defineAnimation2 = substr(1695).defineAnimation;
-    substr(1695);
-    fn2.__closure = obj2;
-    let num2 = 3306563388298;
-    fn2.__workletHash = 3306563388298;
-    fn2.__initData = __initData;
-    defineAnimation2Result = defineAnimation2(0, fn2);
-  } else {
-    let tmp3 = substr;
-    let tmp4 = dependencyMap;
-    const fn = function s() {
-      let obj2;
-      const mapped = substr.map((fn) => {
-        let tmp = fn;
-        if (typeof fn === "function") {
-          tmp = fn();
-        }
-        tmp.finished = false;
-        return tmp;
-      });
-      const obj = {
-        isHigherOrder: true,
-        onFrame: function sequence(animationIndex, arg1) {
-          animationIndex.current = mapped[animationIndex.animationIndex].current;
-          if (mapped[animationIndex.animationIndex].onFrame(mapped[animationIndex.animationIndex], arg1)) {
-            if (mapped[animationIndex.animationIndex].callback) {
-              mapped[animationIndex.animationIndex].callback(true);
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  let closure_3 = callback;
+  let closure_4 = reduceMotion;
+  let obj = require("module_1696");
+  const fn = function l() {
+    let closure_0;
+    let obj2;
+    let tmp;
+    let tmpResult = _nextAnimation;
+    if (typeof _nextAnimation === "function") {
+      tmpResult = tmp();
+    }
+    _nextAnimation = tmpResult;
+    const obj = {
+      isHigherOrder: true,
+      onFrame: function repeat(reps, arg1) {
+        reps.current = closure_0.current;
+        if (closure_0.onFrame(closure_0, arg1)) {
+          reps.reps = reps.reps + 1;
+          if (closure_0.callback) {
+            closure_0.callback(true, reps.current);
+          }
+          if (!reps.reduceMotion) {
+            const tmp3 = flag ? closure_0.current : reps.startValue;
+            if (flag) {
+              closure_0.toValue = reps.startValue;
+              reps.startValue = tmp3;
             }
-            mapped[animationIndex.animationIndex].finished = true;
-            const sum = animationIndex.animationIndex + 1;
-            let tmp3 = sum;
-            if (sum < mapped.length - 1) {
-              let tmp4 = sum;
-              tmp3 = sum;
-              if (mapped[sum].reduceMotion) {
-                const sum1 = tmp4 + 1;
-                tmp3 = sum1;
-                while (sum1 < mapped.length - 1) {
-                  tmp4 = sum1;
-                  tmp3 = sum1;
-                  if (!mapped[sum1].reduceMotion) {
-                    break;
-                  }
-                }
-              }
-            }
-            animationIndex.animationIndex = tmp3;
-            if (animationIndex.animationIndex < mapped.length) {
-              mapped[animationIndex.animationIndex].onStart(mapped[animationIndex.animationIndex], mapped[animationIndex.animationIndex].current, arg1, mapped[animationIndex.animationIndex]);
-              return false;
-            } else {
-              return true;
-            }
-          } else {
+            closure_0.onStart(closure_0, tmp3, arg1, closure_0.previousAnimation);
             return false;
           }
-        },
-        onStart(arg0, arg1, arg2, arg3) {
-          let closure_0 = arg0;
-          const item = mapped.forEach((reduceMotion) => {
-            if (undefined === reduceMotion.reduceMotion) {
-              reduceMotion.reduceMotion = reduceMotion.reduceMotion;
-            }
-          });
-          let num = 0;
-          if (0 < mapped.length - 1) {
-            let num2 = 0;
-            num = 0;
-            if (mapped[0].reduceMotion) {
-              const sum = num2 + 1;
-              num = sum;
-              while (sum < mapped.length - 1) {
-                num2 = sum;
-                num = sum;
-                if (!mapped[sum].reduceMotion) {
-                  break;
-                }
-              }
-            }
+          return true;
+        } else {
+          return false;
+        }
+      },
+      onStart(reduceMotion, startValue, arg2, arg3) {
+        reduceMotion.startValue = startValue;
+        reduceMotion.reps = 0;
+        if (undefined === closure_0.reduceMotion) {
+          closure_0.reduceMotion = reduceMotion.reduceMotion;
+        }
+        if (reduceMotion.reduceMotion) {
+          const tmp = flag;
+          if (tmp) {
+            reduceMotion.current = reduceMotion.startValue;
+            reduceMotion.onFrame = () => true;
           }
-          let tmp3 = arg3;
-          arg0.animationIndex = num;
-          if (undefined === arg3) {
-            tmp3 = arr[arr.length - 1];
-          }
-          mapped[arg0.animationIndex].onStart(mapped[arg0.animationIndex], arg1, arg2, tmp3);
-        },
-        animationIndex: 0,
-        current: mapped[0].current,
-        callback(arg0) {
-          let closure_0 = arg0;
-          if (!closure_0) {
-            let tmp = mapped;
-            const item = mapped.forEach((callback) => {
-              const tmp = typeof callback.callback !== "function" || callback.finished;
-              if (!tmp) {
-                callback.callback(closure_0);
-              }
-            });
-          }
-        },
-        reduceMotion: obj2.getReduceMotionForAnimation(dependencyMap)
-      };
-      obj2 = _mod1695;
-      return obj;
+        }
+        closure_0.onStart(closure_0, startValue, arg2, arg3);
+      },
+      reps: 0,
+      current: tmpResult.current,
+      callback(arg0) {
+        if (closure_3) {
+          tmp(arg0);
+        }
+        callback = !arg0 && closure_0.callback;
+        if (callback) {
+          closure_0.callback(false);
+        }
+      },
+      startValue: 0,
+      reduceMotion: obj2.getReduceMotionForAnimation(closure_4)
     };
-    let obj = { _animations: substr, getReduceMotionForAnimation: substr(1695).getReduceMotionForAnimation, reduceMotion: tmp };
-    const defineAnimation = substr(1695).defineAnimation;
-    const first = substr[0];
-    substr(1695);
-    fn.__closure = obj;
-    let num = 13427604040510;
-    fn.__workletHash = 13427604040510;
-    fn.__initData = __initData2;
-    defineAnimation2Result = defineAnimation(first, fn);
-  }
-  return defineAnimation2Result;
-}
-let obj = { logger: require("react-native").logger, defineAnimation: require("module_1695").defineAnimation, getReduceMotionForAnimation: require("module_1695").getReduceMotionForAnimation };
-withSequence.__closure = obj;
-withSequence.__workletHash = 4184395270838;
-withSequence.__initData = { code: "function withSequence_Pnpm_sequenceTs1(_reduceMotionOrFirstAnimation,..._animations){const{logger,defineAnimation,getReduceMotionForAnimation}=this.__closure;let reduceMotion;if(_reduceMotionOrFirstAnimation){if(typeof _reduceMotionOrFirstAnimation==='string'){reduceMotion=_reduceMotionOrFirstAnimation;}else{_animations.unshift(_reduceMotionOrFirstAnimation);}}if(_animations.length===0){logger.warn('No animation was provided for the sequence');return defineAnimation(0,function(){'worklet';return{onStart:function(animation,value){return animation.current=value;},onFrame:function(){return true;},current:0,animationIndex:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}return defineAnimation(_animations[0],function(){'worklet';const animations=_animations.map(function(a){const result=typeof a==='function'?a():a;result.finished=false;return result;});function findNextNonReducedMotionAnimationIndex(index){while(index<animations.length-1&&animations[index].reduceMotion){index++;}return index;}const callback=function(finished){if(finished){return;}animations.forEach(function(animation){if(typeof animation.callback==='function'&&!animation.finished){animation.callback(finished);}});};function sequence(animation,now){const currentAnim=animations[animation.animationIndex];const finished=currentAnim.onFrame(currentAnim,now);animation.current=currentAnim.current;if(finished){if(currentAnim.callback){currentAnim.callback(true);}currentAnim.finished=true;animation.animationIndex=findNextNonReducedMotionAnimationIndex(animation.animationIndex+1);if(animation.animationIndex<animations.length){const nextAnim=animations[animation.animationIndex];nextAnim.onStart(nextAnim,currentAnim.current,now,currentAnim);return false;}return true;}return false;}function onStart(animation,value,now,previousAnimation){animations.forEach(function(anim){if(anim.reduceMotion===undefined){anim.reduceMotion=animation.reduceMotion;}});animation.animationIndex=findNextNonReducedMotionAnimationIndex(0);if(previousAnimation===undefined){previousAnimation=animations[animations.length-1];}const currentAnimation=animations[animation.animationIndex];currentAnimation.onStart(currentAnimation,value,now,previousAnimation);}return{isHigherOrder:true,onFrame:sequence,onStart:onStart,animationIndex:0,current:animations[0].current,callback:callback,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}" };
+    obj2 = _nextAnimation(num[0]);
+    return obj;
+  };
+  let obj2 = { _nextAnimation, numberOfReps: num, reverse: flag, callback, getReduceMotionForAnimation: require("module_1696").getReduceMotionForAnimation, reduceMotion };
+  fn.__closure = obj2;
+  fn.__workletHash = 11413099333511;
+  fn.__initData = flag;
+  return obj.defineAnimation(_nextAnimation, fn);
+};
+let obj = { defineAnimation: require("module_1696").defineAnimation, getReduceMotionForAnimation: require("module_1696").getReduceMotionForAnimation };
+fn.__closure = obj;
+fn.__workletHash = 13638828150427;
+fn.__initData = { code: "function pnpm_repeatTs1(_nextAnimation,numberOfReps=2,reverse=false,callback,reduceMotion){const{defineAnimation,getReduceMotionForAnimation}=this.__closure;return defineAnimation(_nextAnimation,function(){'worklet';const nextAnimation=typeof _nextAnimation==='function'?_nextAnimation():_nextAnimation;function repeat(animation,now){const finished=nextAnimation.onFrame(nextAnimation,now);animation.current=nextAnimation.current;if(finished){animation.reps+=1;if(nextAnimation.callback){nextAnimation.callback(true,animation.current);}if(animation.reduceMotion||numberOfReps>0&&animation.reps>=numberOfReps){return true;}const startValue=reverse?nextAnimation.current:animation.startValue;if(reverse){nextAnimation.toValue=animation.startValue;animation.startValue=startValue;}nextAnimation.onStart(nextAnimation,startValue,now,nextAnimation.previousAnimation);return false;}return false;}const repCallback=function(finished){if(callback){callback(finished);}if(!finished&&nextAnimation.callback){nextAnimation.callback(false);}};function onStart(animation,value,now,previousAnimation){animation.startValue=value;animation.reps=0;if(nextAnimation.reduceMotion===undefined){nextAnimation.reduceMotion=animation.reduceMotion;}if(animation.reduceMotion&&reverse&&(numberOfReps<=0||numberOfReps%2===0)){animation.current=animation.startValue;animation.onFrame=function(){return true;};}else{nextAnimation.onStart(nextAnimation,value,now,previousAnimation);}}return{isHigherOrder:true,onFrame:repeat,onStart:onStart,reps:0,current:nextAnimation.current,callback:repCallback,startValue:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}" };
 
-export { withSequence };
+export const withRepeat = fn;

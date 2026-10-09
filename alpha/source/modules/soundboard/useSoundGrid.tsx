@@ -1,25 +1,25 @@
-// Module ID: 17540
-// Function ID: 17541
+// Module ID: 17692
+// Function ID: 17693
 // Name: useSoundGrid
-// Dependencies: [32, 19, 2063, 2086, 4707, 2115, 1389, 5424, 5426, 1391, 7039, 7998, 17541, 558, 576, 504, 4726, 5427, 17542, 8548, 17543, 17544, 5392, 2]
+// Dependencies: [32, 19, 2064, 2086, 4709, 2115, 1390, 5425, 5427, 1392, 7042, 8006, 17693, 558, 576, 504, 4728, 5428, 17694, 8556, 17695, 17696, 5393, 2]
 
-// Module 17540 (useSoundGrid)
+// Module 17692 (useSoundGrid)
 import react2 from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import SoundboardTypes from "SoundboardTypes" /* 7039 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 7998 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8548 */;
-import useSoundOrganizer from "useSoundOrganizer" /* 17541 */;
-import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 17544 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import SoundboardTypes from "SoundboardTypes" /* 7042 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8006 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8556 */;
+import useSoundOrganizer from "useSoundOrganizer" /* 17693 */;
+import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 17696 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore_mod from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import UserStore from "UserStore" /* 1389 */;
-import SoundboardStore from "SoundboardStore" /* 5424 */;
-import SoundboardConstants from "SoundboardConstants" /* 5426 */;
+import UserStore from "UserStore" /* 1390 */;
+import SoundboardStore from "SoundboardStore" /* 5425 */;
+import SoundboardConstants from "SoundboardConstants" /* 5427 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1225,7 +1225,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       const obj14 = allSounds;
       const tmp55 = unpackModuleId;
       if (value == null) {
-        value = closure_12;
+        value = authStore2;
       }
       const push3 = items.push;
       const obj2 = {
@@ -1246,7 +1246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       const obj5 = { categories: items, availableSounds: value4, isFetching, soundCounts: { favoriteSoundCount: 0, unlockedCustomSoundCount: 0, lockedCustomSoundCount: 0 } };
       value4 = obj14.get(tmp55);
       if (value4 == null) {
-        value4 = closure_12;
+        value4 = authStore2;
       }
       return obj5;
     } else {
@@ -1266,7 +1266,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         tmp14 = require;
       }
       const _Array = Array;
-      const obj6 = { sections: items, guildIds: sortedGuildIdsForSoundboard, allSounds, potentialSoundIdsForSection: Array.from(channel), sectionType: tmp14(7039).SoundboardSoundGridSectionType.FAVORITES, sortSoundsFn: sortSoundsOldestToNewestCreationDate };
+      const obj6 = { sections: items, guildIds: sortedGuildIdsForSoundboard, allSounds, potentialSoundIdsForSection: Array.from(channel), sectionType: tmp14(7042).SoundboardSoundGridSectionType.FAVORITES, sortSoundsFn: sortSoundsOldestToNewestCreationDate };
       _addSectionForPotentialSoundIds(obj6);
       if (tmp2) {
         tmp2 = null != stateFromStores3;
@@ -1285,19 +1285,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       if (!c12) {
         let value5 = obj3.get(unpackModuleId);
         if (value5 == null) {
-          value5 = closure_12;
+          value5 = authStore2;
         }
         const push = items.push;
         const obj9 = {
-          key: tmp14(7039).SoundboardSoundGridSectionType.DEFAULTS,
+          key: tmp14(7042).SoundboardSoundGridSectionType.DEFAULTS,
           categoryInfo: obj10,
           items: result1.map((sound, index) => {
                 const obj = { type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index };
                 return obj;
               })
         };
-        obj10 = { type: tmp14(7039).SoundboardSoundGridSectionType.DEFAULTS };
-        const sortSoundsOldestToNewestCreationDate2 = tmp14(17541).sortSoundsOldestToNewestCreationDate;
+        obj10 = { type: tmp14(7042).SoundboardSoundGridSectionType.DEFAULTS };
+        const sortSoundsOldestToNewestCreationDate2 = tmp14(17693).sortSoundsOldestToNewestCreationDate;
         result1 = value5;
         if (null != sortSoundsOldestToNewestCreationDate2) {
           result1 = sortSoundsOldestToNewestCreationDate2(value5);
@@ -1314,19 +1314,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       if (c12) {
         let value6 = obj3.get(unpackModuleId);
         if (value6 == null) {
-          value6 = closure_12;
+          value6 = authStore2;
         }
         const push2 = items.push;
         const obj12 = {
-          key: tmp14(7039).SoundboardSoundGridSectionType.DEFAULTS,
+          key: tmp14(7042).SoundboardSoundGridSectionType.DEFAULTS,
           categoryInfo: obj13,
           items: result2.map((sound, index) => {
                 const obj = { type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index };
                 return obj;
               })
         };
-        obj13 = { type: tmp14(7039).SoundboardSoundGridSectionType.DEFAULTS };
-        const sortSoundsOldestToNewestCreationDate3 = tmp14(17541).sortSoundsOldestToNewestCreationDate;
+        obj13 = { type: tmp14(7042).SoundboardSoundGridSectionType.DEFAULTS };
+        const sortSoundsOldestToNewestCreationDate3 = tmp14(17693).sortSoundsOldestToNewestCreationDate;
         result2 = value6;
         if (null != sortSoundsOldestToNewestCreationDate3) {
           result2 = sortSoundsOldestToNewestCreationDate3(value6);

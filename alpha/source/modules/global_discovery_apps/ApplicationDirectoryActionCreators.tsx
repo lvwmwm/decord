@@ -1,30 +1,29 @@
-// Module ID: 11764
-// Function ID: 11765
+// Module ID: 11701
+// Function ID: 11702
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 5089, 2128, 1369, 6843, 11765, 11766, 11761, 11767, 11768, 1085, 584, 569, 1294, 11762, 1381, 11769, 11770, 11771, 2]
+// Dependencies: [5, 5090, 2128, 1370, 6850, 11702, 11703, 11698, 11704, 11705, 1085, 584, 569, 1295, 11699, 1382, 11706, 11707, 11708, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11764 (ApplicationDirectoryActionCreators)
+// Module 11701 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6843 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 11761 */;
-import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 11766 */;
-import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 11767 */;
-import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 11768 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11770 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11771 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6850 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 11698 */;
+import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 11703 */;
+import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 11704 */;
+import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 11705 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11707 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11708 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5089 */;
+import DevSettingsStore from "DevSettingsStore" /* 5090 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11765 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1370 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11702 */;
 import size from "module_2" /* 2 */;
 
 const MyGuildApplicationsStore = MyGuildApplicationsStore2;
-let closure_12;
 
 let obj = function _getEmbedApplication() {
   let applicationFetchState;
@@ -215,7 +214,7 @@ obj = function _getApplication() {
       if (closure_1 === undefined) {
         obj5 = {};
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -362,7 +361,7 @@ obj = function _getSimilarApplications() {
       }
       await "IconComponent";
       ({ applicationId: c0, guildId: c1, options: c2 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -384,6 +383,7 @@ obj = function _search() {
       let c2;
       let c3;
       let categoryId;
+      let closure_12;
       let excludeAppsWithCustomInstallUrl;
       let excludeNonEmbeddedApps;
       let integrationType;
@@ -468,7 +468,7 @@ obj = function _search() {
       }
       await "IconComponent";
       ({ query: c0, guildId: c1, options: c2, onSuccessCallback: c3 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -557,7 +557,7 @@ obj = function _fetchCollections() {
     }
     APPLICATION_DIRECTORY = obj5.surface ?? ApplicationCollectionSurface.ApplicationCollectionSurface.APPLICATION_DIRECTORY;
     ACTIVE = obj5.activeState ?? ApplicationCollectionActiveState.ApplicationCollectionActiveState.ACTIVE;
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

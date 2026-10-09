@@ -1,50 +1,47 @@
 // Module ID: 5314
 // Function ID: 5315
-// Dependencies: [19, 17, 5310]
-// Exports: useTabsHost
+// Dependencies: [19, 17, 5312]
+// Exports: useRenderDebugInfo
 
 // Module 5314
 import react_native from "react-native" /* 17 */;
-import RNSLog2 from "RNSLog" /* 5310 */;
-import react_mod from "react" /* 19 */;
+import _mod5312 from "module_5312" /* 5312 */;
+import react from "react" /* 19 */;
 
-let react = react_mod;
+const require = globalThis.__r;
+let _require;
+
 const findNodeHandle = react_native.findNodeHandle;
 
-export const useTabsHost = function useTabsHost(arg0) {
-  let items;
-  let onTabSelected;
-  let ref;
-  let ref2;
-  ({ componentNodeRef: require, onTabSelected } = arg0);
-  react = undefined;
-  react = react.useRef(-1);
-  const effect = react.useEffect(() => {
-    if (null != require.current) {
-      let num2 = findNodeHandle(tmp.current);
-      const tmp3 = ref2;
-      if (num2 == null) {
-        num2 = -1;
-      }
-      tmp3.current = num2;
-    } else {
-      ref2.current = -1;
-    }
-  }, []);
-  const obj = {
-    onTabSelected: react.useCallback((nativeEvent) => {
-      const RNSLog = RNSLog2.RNSLog;
-      let num = ref2.current;
-      const log = RNSLog.log;
+export const useRenderDebugInfo = function useRenderDebugInfo(arg0) {
+  let closure_0;
+  let ref1;
+  _require = arg0;
+  const ref = ref1.useRef(null);
+  ref1 = ref1.useRef(-1);
+  let closure_3 = ref1.useEffectEvent((arg0) => {
+    const current = ref1.current;
+    const RNSLog = _mod5312.RNSLog;
+    RNSLog.log("" + closure_0 + " [" + current + "] " + arg0);
+  });
+  const effect = ref1.useEffect(() => {
+    if (null != ref.current) {
+      let num = findNodeHandle(tmp.current);
       if (num == null) {
         num = -1;
       }
-      log("TabsHost [" + num + "] onTabSelected: " + JSON.stringify(nativeEvent.nativeEvent));
-      if (onTabSelected != null) {
-        onTabSelected(nativeEvent);
+      ref1.current = num;
+      if (-1 === ref1.current) {
+        closure_3("failed to find node handle");
       }
-    }, items)
-  };
-  items = [onTabSelected];
-  return obj;
+    }
+    closure_3("mounted");
+    return () => {
+      closure_1_3("unmounted");
+    };
+  }, []);
+  let current = ref1.current;
+  let RNSLog = require("module_5312").RNSLog;
+  RNSLog.log("" + arg0 + " [" + current + "] " + "rendered");
+  return ref;
 };

@@ -1,16 +1,16 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17330
+// Function ID: 17331
 // Name: ThreadMemberListHooks
-// Dependencies: [19, 2118, 8677, 1096, 558, 576, 6998, 6970, 5392, 504, 1126, 2]
+// Dependencies: [19, 2118, 8686, 1096, 558, 576, 7005, 6977, 5393, 504, 1126, 2]
 
-// Module 17180 (ThreadMemberListHooks)
+// Module 17330 (ThreadMemberListHooks)
 import Constants from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6970 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 6998 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6977 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7005 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 8677 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 8686 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,6 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThreadM
   let intl;
   let intl2;
   let members;
+  let version;
   _require = arg0;
   importDefault = arg1;
   const tmp = _require;

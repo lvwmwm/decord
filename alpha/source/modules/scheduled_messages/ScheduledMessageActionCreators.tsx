@@ -1,12 +1,12 @@
-// Module ID: 12859
-// Function ID: 12860
+// Module ID: 12826
+// Function ID: 12827
 // Name: ScheduledMessageActionCreators
-// Dependencies: [32, 5, 1085, 584, 1294, 9228, 1402, 2]
+// Dependencies: [32, 5, 1085, 584, 1295, 9266, 1403, 2]
 // Exports: createScheduledMessage, deleteScheduledMessage, fetchScheduledMessages, sendScheduledMessageNow, updateScheduledMessage
 
-// Module 12859 (ScheduledMessageActionCreators)
+// Module 12826 (ScheduledMessageActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
@@ -62,7 +62,7 @@ let obj = function _createScheduledMessage() {
             errorMsg = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -191,7 +191,7 @@ obj = function _updateScheduledMessage() {
               errorMsg = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

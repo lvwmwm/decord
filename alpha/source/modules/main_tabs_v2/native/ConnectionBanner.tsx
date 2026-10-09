@@ -1,28 +1,28 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 16763
+// Function ID: 16764
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 13810, 15177, 1085, 21, 5090, 587, 1126, 558, 576, 4778, 16639, 16641, 5086, 683, 5387, 6245, 4810, 504, 1264, 15176, 5374, 13811, 2]
+// Dependencies: [32, 19, 17, 13904, 15288, 1085, 21, 5091, 587, 1126, 558, 576, 4779, 16764, 16766, 5087, 683, 5388, 6247, 4811, 504, 1265, 15287, 5375, 13905, 2]
 
-// Module 16638 (ConnectionBanner)
+// Module 16763 (ConnectionBanner)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useToken from "useToken" /* 4778 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import spring from "spring" /* 5374 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import _modDef6245 from "module_6245" /* 6245 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13810 */;
-import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13811 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useToken from "useToken" /* 4779 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4811 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import spring from "spring" /* 5375 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import _modDef6247 from "module_6247" /* 6247 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13904 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13905 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import YouBarConstants from "YouBarConstants" /* 15177 */;
+import YouBarConstants from "YouBarConstants" /* 15288 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp2;
-const ReanimatedRexport = tmp2(4810);
+const ReanimatedRexport = tmp2(4811);
 let _slicedToArray = _slicedToArray_mod;
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 const constants = ConnectivityIndicatorStateStore2.ConnectivityIndicatorState;
@@ -80,14 +80,14 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
         return tmp28;
       }
       const obj3 = { style: tmp4.leadingSlot, children: tmp24 };
-      const tmp31 = closure_12(metroRequire, obj3);
+      const tmp31 = authStore2(metroRequire, obj3);
       cResult[3] = tmp4.leadingSlot;
       cResult[4] = tmp24;
       cResult[5] = tmp31;
       tmp28 = tmp31;
     }
     const obj4 = { size: "small", color: token, style: tmp4.spinner };
-    const tmp27 = closure_12(hasOwnProperty, obj4);
+    const tmp27 = authStore2(hasOwnProperty, obj4);
     cResult[0] = token;
     cResult[1] = tmp4.spinner;
     cResult[2] = tmp27;
@@ -98,8 +98,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const ConnectionUnknownIcon = tmp(16639).ConnectionUnknownIcon;
-      const tmp19 = closure_12(ConnectionUnknownIcon, obj5);
+      const ConnectionUnknownIcon = tmp(16764).ConnectionUnknownIcon;
+      const tmp19 = authStore2(ConnectionUnknownIcon, obj5);
       cResult[6] = tmp19;
       tmp17 = tmp19;
     } else {
@@ -107,7 +107,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
     }
     if (cResult[7] !== tmp4.leadingSlot) {
       const obj6 = { style: tmp4.leadingSlot, children: tmp17 };
-      const tmp23 = closure_12(metroRequire, obj6);
+      const tmp23 = authStore2(metroRequire, obj6);
       cResult[7] = tmp4.leadingSlot;
       cResult[8] = tmp23;
       tmp20 = tmp23;
@@ -121,8 +121,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-      const ConnectionFineIcon = tmp(16641).ConnectionFineIcon;
-      const tmp11 = closure_12(ConnectionFineIcon, obj7);
+      const ConnectionFineIcon = tmp(16766).ConnectionFineIcon;
+      const tmp11 = authStore2(ConnectionFineIcon, obj7);
       cResult[9] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -130,7 +130,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
     }
     if (cResult[10] !== tmp4.leadingSlot) {
       const obj8 = { style: tmp4.leadingSlot, children: tmp9 };
-      const tmp15 = closure_12(metroRequire, obj8);
+      const tmp15 = authStore2(metroRequire, obj8);
       cResult[10] = tmp4.leadingSlot;
       cResult[11] = tmp15;
       tmp12 = tmp15;
@@ -149,19 +149,19 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   const tmp = closure_21();
   useToken;
   if (constants.WAITING_FOR_NETWORK === state) {
-    const obj2 = { style: tmp.leadingSlot, children: closure_12(hasOwnProperty, obj3) };
+    const obj2 = { style: tmp.leadingSlot, children: authStore2(hasOwnProperty, obj3) };
     obj3 = { size: "small", color: tmp6, style: tmp.spinner };
-    return closure_12(metroRequire, obj2);
+    return authStore2(metroRequire, obj2);
   } else if (constants.NO_CONNECTION === state) {
-    const obj4 = { style: tmp.leadingSlot, children: closure_12(ConnectionUnknownIcon, obj5) };
+    const obj4 = { style: tmp.leadingSlot, children: authStore2(ConnectionUnknownIcon, obj5) };
     obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    ConnectionUnknownIcon = tmp2(16639).ConnectionUnknownIcon;
-    return closure_12(metroRequire, obj4);
+    ConnectionUnknownIcon = tmp2(16764).ConnectionUnknownIcon;
+    return authStore2(metroRequire, obj4);
   } else if (constants.BACK_ONLINE === state) {
-    const obj = { style: tmp.leadingSlot, children: closure_12(ConnectionFineIcon, obj6) };
+    const obj = { style: tmp.leadingSlot, children: authStore2(ConnectionFineIcon, obj6) };
     obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    ConnectionFineIcon = tmp2(16641).ConnectionFineIcon;
-    return closure_12(metroRequire, obj);
+    ConnectionFineIcon = tmp2(16766).ConnectionFineIcon;
+    return authStore2(metroRequire, obj);
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -176,7 +176,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   const content = tmp4.content;
   if (cResult[0] !== state) {
     const obj2 = { state };
-    const tmp8 = closure_12(closure_22, obj2);
+    const tmp8 = authStore2(closure_22, obj2);
     cResult[0] = state;
     cResult[1] = tmp8;
     tmp5 = tmp8;
@@ -228,7 +228,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
     cResult[10] = tmp17;
     tmp14 = tmp17;
   }
-  const tmp13 = closure_12(Text_Text.Text, { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: tmp10 });
+  const tmp13 = authStore2(Text_Text.Text, { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: tmp10 });
   cResult[4] = str;
   cResult[5] = tmp10;
   cResult[6] = tmp13;
@@ -238,12 +238,12 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Connec
   let stringResult;
   state = state.state;
   const obj = { style: closure_21().content, children: items };
-  items = [closure_12(closure_22, { state }), ];
+  items = [authStore2(closure_22, { state }), ];
   let str = "text-muted";
   const Text = Text_Text.Text;
   const tmp = map1;
   const tmp2 = metroRequire;
-  const tmp3 = closure_12;
+  const tmp3 = authStore2;
   if (state === constants.BACK_ONLINE) {
     str = "text-feedback-positive";
   }
@@ -322,7 +322,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
           }
           if (cResult[15] !== tmp3.glowMaskGradient) {
             const obj5 = { style: tmp3.glowMaskGradient, colors, locations, start, end };
-            const tmp23 = closure_12(LinearGradientDefault, obj5);
+            const tmp23 = authStore2(LinearGradientDefault, obj5);
             cResult[15] = tmp3.glowMaskGradient;
             cResult[16] = tmp23;
             tmp17 = tmp23;
@@ -348,7 +348,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
                   return tmp33;
                 }
                 const obj6 = { style: tmp16, pointerEvents: "none", children: tmp30 };
-                const tmp35 = closure_12(ReanimatedRexportDefault.View, obj6);
+                const tmp35 = authStore2(ReanimatedRexportDefault.View, obj6);
                 cResult[24] = tmp30;
                 cResult[25] = tmp16;
                 cResult[26] = tmp35;
@@ -356,7 +356,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
               }
             }
             const obj7 = { style: tmp3.glow, maskElement: tmp17, children: tmp24 };
-            const tmp32 = closure_12(_modDef6245, obj7);
+            const tmp32 = authStore2(_modDef6247, obj7);
             cResult[20] = tmp3.glow;
             cResult[21] = tmp17;
             cResult[22] = tmp24;
@@ -364,7 +364,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
             tmp30 = tmp32;
           }
           const obj8 = { style: tmp3.glowMaskGradient, colors: tmp14, locations: locations2, start: start2, end: end2 };
-          const tmp29 = closure_12(LinearGradientDefault, obj8);
+          const tmp29 = authStore2(LinearGradientDefault, obj8);
           cResult[17] = tmp14;
           cResult[18] = tmp3.glowMaskGradient;
           cResult[19] = tmp29;
@@ -394,7 +394,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
   let token;
   progress = progress.progress;
   const tmp = closure_21();
-  let obj = token(4778);
+  let obj = token(4779);
   token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = react.useMemo(() => {
@@ -416,7 +416,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackOn
   obj3 = { style: tmp.glow, maskElement: closure_12(LinearGradientDefault, obj4), children: closure_12(LinearGradientDefault, obj5) };
   obj4 = { style: tmp.glowMaskGradient, colors, locations, start, end };
   obj5 = { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 };
-  tmp4 = _modDef6245;
+  tmp4 = _modDef6247;
   return closure_12(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -890,7 +890,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionBa
       let tmp7;
       const _Symbol = Symbol;
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp10 = closure_12(closure_30, {});
+        const tmp10 = authStore2(closure_30, {});
         cResult[1] = tmp10;
         tmp7 = tmp10;
       } else {
@@ -910,7 +910,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionBa
   if (null != timeoutMs) {
     tmp3 = null;
     if (!hidden) {
-      tmp3 = closure_12(closure_30, {});
+      tmp3 = authStore2(closure_30, {});
     }
   }
   return tmp3;

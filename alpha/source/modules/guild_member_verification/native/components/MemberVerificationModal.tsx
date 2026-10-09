@@ -1,21 +1,21 @@
-// Module ID: 6152
-// Function ID: 6153
+// Module ID: 6154
+// Function ID: 6155
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 2124, 6153, 6154, 21, 4810, 1200, 5090, 587, 558, 576, 1630, 4991, 4929, 6155, 6157, 504, 4902, 584, 6107, 6158, 6159, 6172, 6173, 1126, 6767, 6189, 6720, 2]
+// Dependencies: [19, 17, 2124, 6155, 6156, 21, 4811, 1200, 5091, 587, 558, 576, 1631, 4992, 4930, 6157, 6159, 504, 4903, 584, 6109, 6160, 6161, 6174, 6175, 1126, 6774, 6191, 6727, 2]
 
-// Module 6152 (MemberVerificationModal)
+// Module 6154 (MemberVerificationModal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4811 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4903 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6153 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6154 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6155 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6156 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp3;
-const MemberVerificationAlertActionCreators = tmp3(6107);
+const MemberVerificationAlertActionCreators = tmp3(6109);
 let View = react_native.View;
 ({ SCROLL_EVENT_TIMER_MS: metroImportDefault, useBannerHeight: metroImportAll } = MemberVerificationFormConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);

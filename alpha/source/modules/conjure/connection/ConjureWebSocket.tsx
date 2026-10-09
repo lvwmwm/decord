@@ -1,9 +1,9 @@
-// Module ID: 13081
-// Function ID: 13082
+// Module ID: 13173
+// Function ID: 13174
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 13081 (ConjureWebSocket)
+// Module 13173 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -22,7 +22,7 @@ class ConjureWebSocket {
     this.close();
     const str = url.replace(/^https:/i, "wss:");
     const replaced = str.replace(/^http:/i, "ws:");
-    const webSocket = new WebSocket("" + replaced + "/agent/ws?ticket=" + encodeURIComponent(ticket));
+    const webSocket = new WebSocket("" + replaced + "/agent/ws?ticket=" + encodeURIComponent(ticket) + "&debug=on_demand");
     this.socket = webSocket;
     const listener = webSocket.addEventListener("message", (event) => {
       if (self.socket === webSocket) {
@@ -84,6 +84,22 @@ class ConjureWebSocket {
         const socket = self.socket;
         const _JSON = JSON;
         socket.send(JSON.stringify({ type: "interrupt" }));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendQueuedMessageAction(arg0, id) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        const _HermesInternal = HermesInternal;
+        const send = socket.send;
+        const obj = { type: "" + arg0 + "_queued_message", id };
+        send(stringify(obj));
       }
     }
     const error = new Error("WebSocket not open");
@@ -156,6 +172,19 @@ class ConjureWebSocket {
       const _JSON = JSON;
       const obj = { type: "load_history", cursor: olderHistoryCursor };
       socket.send(JSON.stringify(obj));
+    }
+  }
+  sendDebugSubscribe() {
+    const self = this;
+    let tmp = null != this.socket;
+    if (tmp) {
+      const _WebSocket = WebSocket;
+      tmp = self.socket.readyState === WebSocket.OPEN;
+    }
+    if (tmp) {
+      const socket = self.socket;
+      const _JSON = JSON;
+      socket.send(JSON.stringify({ type: "debug_subscribe" }));
     }
   }
   sendRefreshBrowserSessions() {

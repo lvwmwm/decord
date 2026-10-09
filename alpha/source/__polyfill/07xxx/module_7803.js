@@ -1,7 +1,69 @@
 // Module ID: 7803
 // Function ID: 7804
-// Dependencies: []
+// Dependencies: [7804, 7805]
 
 // Module 7803
+import _mod7804 from "module_7804" /* 7804 */;
+import _mod7805 from "module_7805" /* 7805 */;
 
-export default { USE_FILE: true, USE_JFIF: true, USE_PNG_FILE: true, USE_EXIF: true, USE_IPTC: true, USE_XMP: true, USE_ICC: true, USE_MPF: true, USE_PHOTOSHOP: true, USE_THUMBNAIL: true, USE_TIFF: true, USE_JPEG: true, USE_PNG: true, USE_HEIC: true, USE_AVIF: true, USE_WEBP: true, USE_GIF: true, USE_MAKER_NOTES: true };
+let hasOwnProperty;
+
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
+  }
+});
+tmp3(_mod7804, exports);
+tmp3(_mod7805, exports);

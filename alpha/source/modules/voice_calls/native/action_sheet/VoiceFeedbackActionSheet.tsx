@@ -1,22 +1,22 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 17972
+// Function ID: 17973
 // Name: VoiceFeedbackActionSheet
-// Dependencies: [19, 1085, 9602, 21, 1264, 1126, 2827, 9605, 17812, 17819, 17813, 5054, 17814, 1999, 4765, 2]
+// Dependencies: [19, 1085, 9621, 21, 1265, 1126, 2827, 9624, 17966, 17973, 17967, 5055, 17968, 2000, 4767, 2]
 // Exports: default
 
-// Module 17818 (VoiceFeedbackActionSheet)
+// Module 17972 (VoiceFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants2 from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef2827 from "module_2827" /* 2827 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import FeedbackUtils from "FeedbackUtils" /* 9605 */;
-import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 17812 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 17813 */;
-import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 17819 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import FeedbackUtils from "FeedbackUtils" /* 9624 */;
+import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 17966 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 17967 */;
+import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 17973 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 9602 */;
+import Constants from "Constants" /* 9621 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -63,25 +63,25 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
   const stringResult1 = intl2.string(analyticsData(1126).t.tLi4cR);
   intl3 = analyticsData(1126).intl;
   intl4 = analyticsData(1126).intl;
-  obj2 = analyticsData(9605);
+  obj2 = analyticsData(9624);
   obj3 = { value: constants2.FREEFORM, label: intl5.string(analyticsData(1126).t.emlT91) };
   intl5 = analyticsData(1126).intl;
   let obj4 = { value: constants3.AUDIO, label: intl6.string(_modDef2827.PL2l6A), problemsHeader: intl7.string(analyticsData(1126).t.FJmoxF), problemOptions: obj5.getAudioFeedbackOptions({ isMobile: true }), freeformConfig: obj6 };
   intl6 = analyticsData(1126).intl;
   intl7 = analyticsData(1126).intl;
-  obj5 = analyticsData(9605);
+  obj5 = analyticsData(9624);
   obj6 = { value: constants.FREEFORM, label: intl8.string(analyticsData(1126).t.emlT91) };
   intl8 = analyticsData(1126).intl;
   let obj7 = { value: constants3.VIDEO, label: intl9.string(_modDef2827["0WFzPh"]), problemsHeader: intl10.string(analyticsData(1126).t.FJmoxF), problemOptions: obj8.getVideoFeedbackOptions(), freeformConfig: obj9 };
   intl9 = analyticsData(1126).intl;
   intl10 = analyticsData(1126).intl;
-  obj8 = analyticsData(9605);
+  obj8 = analyticsData(9624);
   obj9 = { value: constants6.FREEFORM, label: intl11.string(analyticsData(1126).t.emlT91) };
   intl11 = analyticsData(1126).intl;
   const obj10 = { value: constants3.PEOPLE, label: intl12.string(_modDef2827.Moa3W9), problemsHeader: intl13.string(analyticsData(1126).t.FJmoxF), problemOptions: obj11.getPeopleFeedbackOptions(), freeformConfig: obj12 };
   intl12 = analyticsData(1126).intl;
   intl13 = analyticsData(1126).intl;
-  obj11 = analyticsData(9605);
+  obj11 = analyticsData(9624);
   obj12 = { value: constants5.FREEFORM, label: intl14.string(analyticsData(1126).t.emlT91) };
   intl14 = analyticsData(1126).intl;
   FeedbackActionSheetV2Default;
@@ -129,8 +129,8 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
         if (obj3.shouldShowLogUploadForCategory(rating, category, reason)) {
           const obj7 = { mediaSessionId: null, rtcConnectionId: null };
           ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp7);
-          const tmp20Result = tmp20(5054);
-          tmp20Result.openLazy(asyncRequire(17814, dependencyMap.paths), "UploadLogs", obj7);
+          const tmp20Result = tmp20(5055);
+          tmp20Result.openLazy(asyncRequire(17968, dependencyMap.paths), "UploadLogs", obj7);
         }
       }
       const obj4 = ToastUtils;

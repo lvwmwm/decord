@@ -1,16 +1,16 @@
-// Module ID: 12447
-// Function ID: 12448
+// Module ID: 12365
+// Function ID: 12366
 // Name: ContactSyncSettingsActionSheet
-// Dependencies: [19, 17, 12437, 1085, 21, 5090, 587, 558, 576, 1126, 8555, 5086, 12440, 6885, 2]
+// Dependencies: [19, 17, 12355, 1085, 21, 5091, 587, 558, 576, 1126, 8563, 5087, 12358, 6892, 2]
 
-// Module 12447 (ContactSyncSettingsActionSheet)
+// Module 12365 (ContactSyncSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12437 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12355 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

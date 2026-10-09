@@ -1,17 +1,17 @@
-// Module ID: 14059
-// Function ID: 14060
+// Module ID: 14156
+// Function ID: 14157
 // Name: useAIShimmerCycle
-// Dependencies: [32, 19, 558, 576, 14057, 2]
+// Dependencies: [32, 19, 558, 576, 14154, 2]
 // Exports: linesFromKey, linesKeyFor
 
-// Module 14059 (useAIShimmerCycle)
-import waveTransition from "waveTransition" /* 14057 */;
+// Module 14156 (useAIShimmerCycle)
+import waveTransition from "waveTransition" /* 14154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_0, closure_12, current, play, ref2, ref3, tmp;
+let closure_0, current, play, ref2, ref3, tmp;
 
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAIShimmerCycle(initialDelay) {
   let delay;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAIShimmer
   }
   const tmp6 = duration(reducedMotion.useState(0), 2);
   const first = tmp6[0];
-  closure_12 = tmp8;
+  let closure_12 = tmp8;
   obj2.useRef(0);
   obj2.useRef(null);
   const ref4 = obj2.useRef(null);
@@ -331,7 +331,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAIShimmer
   const createController = initialDelay.createController;
   let lines;
   let first;
-  closure_12 = undefined;
+  let closure_12;
   ref2 = undefined;
   ref3 = undefined;
   let ref4;

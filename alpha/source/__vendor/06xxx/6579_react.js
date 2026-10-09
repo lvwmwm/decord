@@ -2,34 +2,23 @@
 // Function ID: 6580
 // Name: react
 // Dependencies: [19]
-// Exports: getValidComponent, isComponentClass
+// Exports: useUnmountFlag
 
 // Module 6579 (react)
 import react from "react" /* 19 */;
 
+let _window;
+let map;
+({ useRef: _window, useLayoutEffect: map } = react);
 
-export const isComponentClass = (fn) => {
-  let _BooleanResult = typeof fn === "function";
-  if (typeof fn === "function") {
-    const prototype = fn.prototype;
-    let isReactComponent;
-    const _Boolean = Boolean;
-    if (prototype != null) {
-      isReactComponent = prototype.isReactComponent;
-    }
-    _BooleanResult = _Boolean(isReactComponent);
-  }
-  return _BooleanResult;
-};
-export const getValidComponent = (label) => {
-  let tmp = label;
-  const obj = react;
-  if (!react.isValidElement(label)) {
-    let element = null;
-    if (null != label) {
-      element = obj.createElement(label);
-    }
-    tmp = element;
-  }
+export const useUnmountFlag = () => {
+  const tmp = React(false);
+  const _window = tmp;
+  map(() => {
+    closure_0.current = false;
+    return () => {
+      closure_1_0.current = true;
+    };
+  }, []);
   return tmp;
 };

@@ -1,72 +1,50 @@
 // Module ID: 1813
 // Function ID: 1814
-// Dependencies: [19, 1658, 1699, 1727]
-// Exports: useDerivedValue
+// Dependencies: [1761, 1801, 1803]
+// Exports: useComposedEventHandler
 
 // Module 1813
-import startMapper from "startMapper" /* 1699 */;
-import react from "react" /* 19 */;
+let set, workletEventHandler;
 
-const require = globalThis.__r;
-let _require;
+let closure_2 = { code: "function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}" };
 
-let c2;
-let c3;
-({ useEffect: c2, useRef: c3 } = react);
-let closure_4 = { code: "function pnpm_useDerivedValueTs1(){const{sharedValue,updater}=this.__closure;sharedValue.value=updater();}" };
-
-export const useDerivedValue = function useDerivedValue(fn, items) {
-  _require = fn;
-  const tmp2 = closure_3(null);
-  let __closure = fn.__closure;
-  const _Object = Object;
-  if (__closure == null) {
-    __closure = {};
-  }
-  let values2 = values(__closure);
-  let obj2 = require("module_1658");
-  let tmp5 = obj2.shouldBeUseWeb() && !values2.length;
-  let arr2 = items;
-  if (tmp5) {
-    let length;
-    if (arr2 != null) {
-      length = arr2.length;
+export const useComposedEventHandler = function useComposedEventHandler(tmp8Result4) {
+  const obj = {};
+  set = new Set();
+  const obj2 = {};
+  const found = tmp8Result4.filter((item) => null !== item);
+  let item = found.forEach((workletEventHandler) => {
+    workletEventHandler = workletEventHandler.workletEventHandler;
+    if (workletEventHandler instanceof obj(set[0]).WorkletEventHandler) {
+      const eventNames = workletEventHandler.eventNames;
+      const item = eventNames.forEach((item) => {
+        let tmp3;
+        set.add(item);
+        if (obj2[item]) {
+          const arr2 = obj2[item];
+          arr2.push(workletEventHandler.worklet);
+          tmp3 = workletEventHandler;
+        } else {
+          tmp3 = workletEventHandler;
+          const items = [workletEventHandler.worklet];
+          obj2[item] = items;
+        }
+        obj[item + "" + obj2[item].length] = tmp3.worklet;
+      });
     }
-    tmp5 = length;
-  }
-  if (tmp5) {
-    values2 = arr2;
-  }
-  if (undefined === arr2) {
-    items = [];
-    items[HermesBuiltin.arraySpread(items, values2, 0)] = fn.__workletHash;
-    arr2 = items;
-  } else {
-    arr2.push(fn.__workletHash);
-  }
-  if (null === tmp2.current) {
-    const makeMutable = require("startMapper").makeMutable;
-    require("startMapper");
-    const tmp3Result2 = require("module_1727");
-    tmp2.current = makeMutable(tmp3Result2.initialUpdaterRun(fn));
-  }
-  const current = tmp2.current;
-  current(() => {
-    let closure_0;
-    const fn = function t() {
-      current.value = closure_0();
-    };
-    let obj = { sharedValue: current, updater };
-    fn.__closure = obj;
-    fn.__workletHash = 1316501239615;
-    fn.__initData = __initData;
-    const items = [current];
-    const obj2 = updater(values2[2]);
-    updater = obj2.startMapper(fn, values2, items);
-    return () => {
-      const obj = startMapper;
-      obj.stopMapper(closure_0);
-    };
-  }, arr2);
-  return current;
+  });
+  const obj3 = obj(set[1]);
+  const doDependenciesDiffer = obj3.useHandler(obj).doDependenciesDiffer;
+  const fn = function v(arg0) {
+    let closure_0 = arg0;
+    if (obj2[arg0.eventName]) {
+      const arr = tmp[arg0.eventName];
+      const item = arr.forEach((fn) => fn(closure_0));
+    }
+  };
+  fn.__closure = { workletsMap: obj2 };
+  fn.__workletHash = 14960316830945;
+  fn.__initData = obj2;
+  const obj4 = obj(set[2]);
+  return obj4.useEvent(fn, Array.from(set), doDependenciesDiffer);
 };

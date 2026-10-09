@@ -1,45 +1,45 @@
-// Module ID: 15144
-// Function ID: 15145
+// Module ID: 15254
+// Function ID: 15255
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 1126, 4778, 4939, 1381, 5086, 15145, 5387, 6803, 2]
+// Dependencies: [19, 17, 1085, 21, 5091, 587, 558, 576, 1126, 4779, 4940, 1382, 5087, 6163, 15255, 5388, 6810, 2]
 
-// Module 15144 (QuestHomeEmptyState)
+// Module 15254 (QuestHomeEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useToken from "useToken" /* 4778 */;
-import useChatLayoutDefault from "useChatLayout" /* 4939 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15145 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useToken from "useToken" /* 4779 */;
+import useChatLayoutDefault from "useChatLayout" /* 4940 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6810 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15255 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
 let c3;
-let closure_4;
-let metroImportAll;
+let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-({ View: c3, Image: closure_4, StyleSheet } = react_native);
+({ View: c3, StyleSheet } = react_native);
 const VerticalGradient = Constants.VerticalGradient;
-({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { flex: 1 }, emptyStateContainer: { justifyContent: "center", alignItems: "center", flex: 1 }, emptyStateContentContainer: obj2, emptyStateContentTitle: { textAlign: "center" }, emptyStateContentDescription: { textAlign: "center", marginTop: 4 }, emptyImage: { flex: 1, width: "100%", aspectRatio: 1.6375545851528384, minWidth: "100%", position: "absolute", bottom: 0, zIndex: -1 }, backgroundImage: obj3, gradient: { height: 22, width: "100%", position: "absolute", bottom: 0 }, actionWrapper: { marginTop: 16, alignSelf: "center" } };
 obj2 = { top: -55, paddingHorizontal: nativeDefault.space.PX_32 };
 createStyles = createStyles.createStyles;
 obj3 = { width: "100%", height: undefined };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-let closure_9 = createStyles(obj);
+let closure_8 = createStyles(obj);
 const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeEmptyState(arg0) {
   let action;
   let items;
@@ -52,6 +52,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
   let tmp11;
   let tmp4;
   let tmp6;
+  let tmp9Result;
   const obj = react2;
   const cResult = obj.c(35);
   ({ action, title, subtitle } = arg0);
@@ -79,7 +80,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
   } else {
     tmp6 = cResult[3];
   }
-  const tmp8 = closure_9();
+  const tmp8 = closure_8();
   const tmpResult = useToken;
   const token = tmpResult.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
   const isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
@@ -140,14 +141,14 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
                               return tmp43;
                             }
                             const obj2 = { bottom: tmp11, style: tmp8.container, children: tmp39 };
-                            const tmp45 = metroRequire(common_SafeAreaView.SafeAreaPaddingView, obj2);
+                            const tmp45 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj2);
                             cResult[32] = tmp8.container;
                             cResult[33] = tmp39;
                             cResult[34] = tmp45;
                             tmp43 = tmp45;
                           }
                           const obj3 = { style: tmp8.container, children: tmp35 };
-                          const tmp42 = metroRequire(_false, obj3);
+                          const tmp42 = hasOwnProperty(_false, obj3);
                           cResult[29] = tmp8.container;
                           cResult[30] = tmp35;
                           cResult[31] = tmp42;
@@ -156,7 +157,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
                       }
                       const obj4 = { style: tmp8.emptyStateContainer, children: items };
                       items = [tmp23, tmp27];
-                      const tmp38 = metroImportDefault(_false, obj4);
+                      const tmp38 = metroRequire(_false, obj4);
                       cResult[25] = tmp8.emptyStateContainer;
                       cResult[26] = tmp27;
                       cResult[27] = tmp23;
@@ -169,14 +170,15 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
               let tmp28 = null;
               if (!isChatLockedOpen) {
                 const obj5 = { children: items1 };
-                const obj6 = { style: tmp8.emptyImage, children: metroRequire(React3, obj7) };
+                const obj6 = { style: tmp8.emptyImage, children: hasOwnProperty(tmp9Result, obj7) };
                 obj7 = { style: tmp8.backgroundImage, source: AssetRegistryDefault, resizeMode: "cover" };
-                items1 = [metroRequire(_false, obj6), ];
+                tmp9Result = FastImageDefault;
+                items1 = [hasOwnProperty(_false, obj6), ];
                 const obj8 = { style: tmp8.gradient, end: null, start: null, colors: items2 };
                 ({ END: obj11.end, START: obj11.start } = VerticalGradient);
                 items2 = ["rgba(0, 0, 0, 0)", token];
-                items1[1] = metroRequire(LinearGradientDefault, obj8);
-                tmp28 = metroImportDefault(metroImportAll, obj5);
+                items1[1] = hasOwnProperty(LinearGradientDefault, obj8);
+                tmp28 = metroRequire(metroImportDefault, obj5);
               }
               cResult[19] = token;
               cResult[20] = isChatLockedOpen;
@@ -190,7 +192,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
         }
         const obj9 = { style: tmp8.emptyStateContentContainer, children: items3 };
         items3 = [tmp13, tmp15, tmp18];
-        const tmp26 = metroImportDefault(_false, obj9);
+        const tmp26 = metroRequire(_false, obj9);
         cResult[14] = tmp8.emptyStateContentContainer;
         cResult[15] = tmp13;
         cResult[16] = tmp15;
@@ -201,7 +203,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
       let tmp20 = null != action;
       if (tmp20) {
         const obj10 = { style: tmp8.actionWrapper, children: action };
-        tmp20 = metroRequire(_false, obj10);
+        tmp20 = hasOwnProperty(_false, obj10);
       }
       cResult[11] = action;
       cResult[12] = tmp8.actionWrapper;
@@ -209,14 +211,14 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
       tmp18 = tmp20;
     }
     const obj12 = { variant: "text-md/normal", color: "text-default", style: tmp8.emptyStateContentDescription, children: tmp6 };
-    const tmp17 = metroRequire(Text_Text.Text, obj12);
+    const tmp17 = hasOwnProperty(Text_Text.Text, obj12);
     cResult[8] = tmp8.emptyStateContentDescription;
     cResult[9] = tmp6;
     cResult[10] = tmp17;
     tmp15 = tmp17;
   }
   const obj13 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp8.emptyStateContentTitle, children: tmp4 };
-  const tmp14 = metroRequire(Text_Text.Text, obj13);
+  const tmp14 = hasOwnProperty(Text_Text.Text, obj13);
   cResult[5] = tmp8.emptyStateContentTitle;
   cResult[6] = tmp4;
   cResult[7] = tmp14;
@@ -232,6 +234,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
   let obj4;
   let obj5;
   let title;
+  let tmp7Result;
   ({ action, title } = subtitle);
   if (title === undefined) {
     const intl = intl3.intl;
@@ -242,42 +245,43 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeE
     const intl2 = intl3.intl;
     subtitle = intl2.string(intl3.t["R7mv+G"]);
   }
-  const tmp5 = closure_9();
+  const tmp5 = closure_8();
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
   const isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
-  const obj2 = { bottom: obj3.isAndroid(), style: tmp5.container, children: metroRequire(_false, obj4) };
+  const obj2 = { bottom: obj3.isAndroid(), style: tmp5.container, children: hasOwnProperty(_false, obj4) };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   obj3 = PlatformUtils;
-  obj4 = { style: tmp5.container, children: metroImportDefault(_false, obj5) };
+  obj4 = { style: tmp5.container, children: metroRequire(_false, obj5) };
   const obj6 = { style: tmp5.emptyStateContentContainer, children: items };
   items = [, , ];
   obj5 = { style: tmp5.emptyStateContainer, children: items1 };
   const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title };
-  items[0] = metroRequire(Text_Text.Text, obj7);
+  items[0] = hasOwnProperty(Text_Text.Text, obj7);
   const obj8 = { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle };
-  items[1] = metroRequire(Text_Text.Text, obj8);
+  items[1] = hasOwnProperty(Text_Text.Text, obj8);
   let tmp9Result = null != action;
   if (tmp9Result) {
     const obj9 = { style: tmp5.actionWrapper, children: action };
     tmp9Result = tmp9(tmp10, obj9);
   }
   items[2] = tmp9Result;
-  items1 = [metroImportDefault(_false, obj6), ];
+  items1 = [metroRequire(_false, obj6), ];
   let tmp11Result = null;
   if (!isChatLockedOpen) {
     const obj10 = { children: items2 };
-    const obj11 = { style: tmp5.emptyImage, children: metroRequire(React3, obj12) };
+    const obj11 = { style: tmp5.emptyImage, children: hasOwnProperty(tmp7Result, obj12) };
     obj12 = { style: tmp5.backgroundImage, source: AssetRegistryDefault, resizeMode: "cover" };
-    items2 = [metroRequire(_false, obj11), ];
+    tmp7Result = FastImageDefault;
+    items2 = [hasOwnProperty(_false, obj11), ];
     const obj24 = { style: tmp5.gradient, end: null, start: null, colors: items3 };
     ({ END: obj13.end, START: obj13.start } = VerticalGradient);
     items3 = ["rgba(0, 0, 0, 0)", token];
-    items2[1] = metroRequire(LinearGradientDefault, obj24);
-    tmp11Result = tmp11(metroImportAll, obj10);
+    items2[1] = hasOwnProperty(LinearGradientDefault, obj24);
+    tmp11Result = tmp11(metroImportDefault, obj10);
   }
   items1[1] = tmp11Result;
-  return metroRequire(SafeAreaPaddingView, obj2);
+  return hasOwnProperty(SafeAreaPaddingView, obj2);
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestHomeEmptyState.tsx");
 

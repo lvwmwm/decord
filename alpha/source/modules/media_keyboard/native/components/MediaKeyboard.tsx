@@ -1,33 +1,33 @@
-// Module ID: 16907
-// Function ID: 16908
+// Module ID: 17035
+// Function ID: 17036
 // Name: MediaKeyboard
-// Dependencies: [19, 7232, 7880, 1626, 1085, 1501, 11729, 21, 558, 576, 1264, 4810, 4947, 1628, 16908, 4778, 587, 8488, 16909, 11863, 9974, 7741, 4945, 7730, 1381, 7729, 9972, 11925, 1126, 8209, 8176, 9977, 9979, 8190, 9981, 16910, 16911, 9983, 9984, 16912, 2]
+// Dependencies: [19, 7237, 7889, 1627, 1085, 1502, 11665, 21, 558, 576, 1265, 4811, 4948, 1629, 17036, 4779, 587, 8496, 17037, 11800, 9993, 7750, 4946, 7739, 1382, 7738, 9991, 11862, 1126, 8217, 8184, 9996, 9998, 8198, 10000, 17038, 17039, 10002, 10003, 17040, 2]
 
-// Module 16907 (MediaKeyboard)
+// Module 17035 (MediaKeyboard)
 import intl6 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import ChatInputUtils from "ChatInputUtils" /* 4945 */;
-import DraftStore from "DraftStore" /* 7232 */;
-import Upload from "Upload" /* 7730 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7741 */;
-import ThreadIcon from "ThreadIcon" /* 8176 */;
-import ImageIcon from "ImageIcon" /* 8190 */;
-import AppsIcon from "AppsIcon" /* 8209 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 9974 */;
-import PollsIcon from "PollsIcon" /* 9977 */;
-import AttachmentIcon from "AttachmentIcon" /* 9979 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 9981 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 9983 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11729 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11925 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 16910 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 16911 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import ChatInputUtils from "ChatInputUtils" /* 4946 */;
+import DraftStore from "DraftStore" /* 7237 */;
+import Upload from "Upload" /* 7739 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7750 */;
+import ThreadIcon from "ThreadIcon" /* 8184 */;
+import ImageIcon from "ImageIcon" /* 8198 */;
+import AppsIcon from "AppsIcon" /* 8217 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 9993 */;
+import PollsIcon from "PollsIcon" /* 9996 */;
+import AttachmentIcon from "AttachmentIcon" /* 9998 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10000 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10002 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11665 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11862 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 17038 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 17039 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7880 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7889 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -118,7 +118,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     if (cResult[20] === validateFilenames) {
                       tmp22 = cResult[21];
                     }
-                    closure_12 = tmp22;
+                    let closure_12 = tmp22;
                     if (cResult[22] === allowedExtensions) {
                       if (cResult[23] === channel) {
                         if (cResult[24] === tmp19.uploadLimit) {
@@ -478,7 +478,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                   }
                                 }
                                 const tmp19Result2 = MediaKeyboardUtils;
-                                const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7730).UploadOrigin.IMAGE_PICKER);
+                                const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7739).UploadOrigin.IMAGE_PICKER);
                               }
                             }
                             cResult[29] = chatInputRef;
@@ -895,7 +895,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let items4 = [sharedValue, sharedValue1, memo, channel.id, tmp8, memo1, token];
   const callback = sharedValue.useCallback((animatedIndex) => {
     const obj = { animatedIndex: animatedIndex.animatedIndex, onPress: memo.onPressHeader };
-    return memo(MediaKeyboardBottomSheetHeaderSimpleDefault, obj);
+    return authStore2(MediaKeyboardBottomSheetHeaderSimpleDefault, obj);
   }, items3);
   const callback1 = sharedValue.useCallback((animateOnMount) => {
     let items;
@@ -907,7 +907,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items = [, ];
     const obj2 = { ref, animatedIndex: sharedValue, channelId: channel.id, draftType: closure_8.draftType, onSend: memo.onSend };
     const tmp = MediaKeyboardAccessoriesContainerDefault;
-    items[0] = memo(MediaKeyboardFloatingSendDefault, obj2);
+    items[0] = authStore2(MediaKeyboardFloatingSendDefault, obj2);
     const obj3 = {
       canPostPolls: closure_8.canPostPolls,
       onHeightChange(arg0) {
@@ -921,7 +921,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       uploadDisabled: closure_8.uploadDisabled,
       overflowButtons: memo1
     };
-    items[1] = memo(MediaKeyboardBottomSheetActionsDefault, obj3);
+    items[1] = authStore2(MediaKeyboardBottomSheetActionsDefault, obj3);
     return map1(tmp, obj);
   }, items4);
   const obj8 = {

@@ -1,26 +1,26 @@
-// Module ID: 16912
-// Function ID: 16913
+// Module ID: 17040
+// Function ID: 17041
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1626, 1085, 21, 1627, 1381, 5090, 587, 558, 576, 1126, 11922, 4787, 4932, 6298, 4811, 5055, 5056, 1264, 5360, 4945, 5369, 4810, 5392, 1630, 5357, 2]
+// Dependencies: [32, 19, 17, 1627, 1085, 21, 1628, 1382, 5091, 587, 558, 576, 1126, 11859, 4788, 4933, 6305, 4812, 5056, 5057, 1265, 5361, 4946, 5370, 4811, 5393, 1631, 5358, 2]
 
-// Module 16912 (MediaKeyboardBottomSheet)
+// Module 17040 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import ChatInputUtils from "ChatInputUtils" /* 4945 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import ChatInputUtils from "ChatInputUtils" /* 4946 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5057 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import createStyles from "createStyles" /* 5090 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 12143
-// Function ID: 12144
+// Module ID: 12080
+// Function ID: 12081
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 12144, 502, 1085, 12145, 5939, 3, 1111, 1294, 1254, 12148, 510, 5944, 1381, 1272, 1387, 584, 2]
+// Dependencies: [5, 12081, 502, 1085, 12082, 5940, 3, 1111, 1295, 1255, 12085, 510, 5945, 1382, 1273, 1388, 584, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 12143 (PushNotificationActionCreators)
+// Module 12080 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import TokenManagerAll from "TokenManager" /* 1111 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5944 */;
-import Constants2 from "Constants" /* 12145 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
+import Constants2 from "Constants" /* 12082 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 12144 */;
+import MultiAccountStore from "MultiAccountStore" /* 12081 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 5939 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 5940 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -155,13 +155,13 @@ body = {
       const post = TrackedHTTPUtilsDefault.post;
       TrackedHTTPUtilsDefault;
       if (flag) {
-        tmp9 = closure_12;
+        tmp9 = authStore2;
       } else {
         tmp9 = map1();
       }
       body = { provider: tmp9, token, bypass_server_throttling_supported: isAndroidResult, bundle_id: unpackModuleId };
       const tmp2Result = PlatformUtils;
-      isAndroidResult = tmp2Result.isAndroid() && !authStore2;
+      isAndroidResult = tmp2Result.isAndroid() && !authStore3;
       obj2 = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_REGISTER_DEVICE_TOKEN };
       syncDeviceResult = post(request);
     }

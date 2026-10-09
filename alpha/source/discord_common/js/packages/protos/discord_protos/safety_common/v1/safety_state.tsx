@@ -1,9 +1,9 @@
-// Module ID: 1398
-// Function ID: 1399
+// Module ID: 1399
+// Function ID: 1400
 // Name: safety_state
-// Dependencies: [32, 1210, 1239, 1399, 1240, 2]
+// Dependencies: [32, 1210, 1239, 1400, 1240, 2]
 
-// Module 1398 (safety_state)
+// Module 1399 (safety_state)
 import _mod1210 from "module_1210" /* 1210 */;
 import timestamp from "timestamp" /* 1239 */;
 import wrappers from "wrappers" /* 1240 */;
@@ -574,7 +574,7 @@ class SafetyState$Type extends MessageType6 {
     return tmp2;
   }
   create(arr) {
-    obj = { state: { oneofKind: "create" }, reason: 0, annotations: [] };
+    obj = { state: { oneofKind: "r" }, reason: 0, annotations: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);

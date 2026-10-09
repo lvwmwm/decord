@@ -1,14 +1,14 @@
-// Module ID: 18143
-// Function ID: 18144
+// Module ID: 18305
+// Function ID: 18306
 // Name: GuildConfigGates
-// Dependencies: [5, 18144, 1085, 504, 1294, 584, 558, 2]
+// Dependencies: [5, 18306, 1085, 504, 1295, 584, 558, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 18143 (GuildConfigGates)
+// Module 18305 (GuildConfigGates)
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 18144 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 18306 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,22 +1,22 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 16308
+// Function ID: 16309
 // Name: RegisterPasswordInput
-// Dependencies: [32, 109, 19, 6615, 16165, 21, 5090, 587, 4810, 558, 576, 16189, 1126, 5086, 14113, 6630, 5910, 504, 4783, 6641, 6643, 6283, 2]
+// Dependencies: [32, 109, 19, 6622, 16281, 21, 5091, 587, 4811, 558, 576, 16305, 1126, 5087, 14210, 6637, 5911, 504, 4784, 6648, 6650, 6290, 2]
 
-// Module 16192 (RegisterPasswordInput)
+// Module 16308 (RegisterPasswordInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14113 */;
-import usePasswordScore from "usePasswordScore" /* 16189 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14210 */;
+import usePasswordScore from "usePasswordScore" /* 16305 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6615 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16165 */;
+import PhoneStore from "PhoneStore" /* 6622 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16281 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let tmp12;
 let unpackModuleId;
-const getErrorDefault = tmp12(6630);
+const getErrorDefault = tmp12(6637);
 let user = ["ref"];
 let closure_4 = ["password"];
 let closure_5 = ["password"];
@@ -139,11 +139,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
               return tmp17;
             }
             const obj2 = { variant: "text-xs/medium", style: tmp13, animated: true, children: items };
-            const Text = tmp(5086).Text;
+            const Text = tmp(5087).Text;
             const merged = Object.assign(obj5);
             const merged1 = Object.assign(obj6);
             items = [tmp15, ": ", str];
-            const tmp25 = closure_12(Text, obj2);
+            const tmp25 = authStore2(Text, obj2);
             cResult[7] = str;
             cResult[8] = tmp13;
             cResult[9] = tmp25;
@@ -191,13 +191,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwo
             }
           }
           const obj = { variant: "text-xs/medium", style: items, animated: true, children: items1 };
-          const Text = tmp9(5086).Text;
+          const Text = tmp9(5087).Text;
           const merged = Object.assign(obj5);
           const merged1 = Object.assign(obj6);
           items = [tmp.passwordStrength, strong];
           const intl3 = tmp9(1126).intl;
           items1 = [intl3.string(intl5.t["5gbdUX"]), ": ", str];
-          return closure_12(Text, obj);
+          return authStore2(Text, obj);
         }
       }
     }
@@ -605,8 +605,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPass
     cResult[34] = tmp40;
     cResult[35] = tmp45;
     cResult[36] = undefined;
-    cResult[37] = closure_13(tmp(6283).TextInput, obj4);
-    const tmp50 = closure_13(tmp(6283).TextInput, obj4);
+    cResult[37] = closure_13(tmp(6290).TextInput, obj4);
+    const tmp50 = closure_13(tmp(6290).TextInput, obj4);
   }
   class W {
     constructor(arg0) {

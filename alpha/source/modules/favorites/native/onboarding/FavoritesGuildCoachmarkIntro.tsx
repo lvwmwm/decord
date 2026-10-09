@@ -1,20 +1,20 @@
-// Module ID: 16554
-// Function ID: 16555
+// Module ID: 16677
+// Function ID: 16678
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 16525, 1085, 2060, 21, 558, 576, 4810, 10302, 16549, 1126, 3439, 16555, 9375, 2]
+// Dependencies: [32, 19, 16648, 1085, 2061, 21, 558, 576, 4811, 10289, 16672, 1126, 3439, 16678, 9413, 2]
 
-// Module 16554 (FavoritesGuildCoachmarkIntro)
+// Module 16677 (FavoritesGuildCoachmarkIntro)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
 import _modDef3439 from "module_3439" /* 3439 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10302 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16549 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10289 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16672 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16525 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16648 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   [tmp9, tmp10] = react.useState(tmp7);
   dependencyMap = tmp10;
   _slicedToArray(react.useState(tmp7), 2);
-  const tmpResult = markAsDismissed(4810);
+  const tmpResult = markAsDismissed(4811);
   class C {
     constructor() {
       return scrollPosition.get() <= 0;
@@ -76,10 +76,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
       obj.runOnJS(dependencyMap)(arg0);
     }
   };
-  fn2.__closure = { runOnJS: markAsDismissed(4810).runOnJS, setScrolledToTop: tmp10 };
+  fn2.__closure = { runOnJS: markAsDismissed(4811).runOnJS, setScrolledToTop: tmp10 };
   fn2.__workletHash = 13648062364539;
   fn2.__initData = __initData2;
-  ({ runOnJS: markAsDismissed(4810).runOnJS, setScrolledToTop: tmp10 });
+  ({ runOnJS: markAsDismissed(4811).runOnJS, setScrolledToTop: tmp10 });
   const animatedReaction = tmpResult.useAnimatedReaction(C, fn2);
   if (cResult[2] !== markAsDismissed) {
     class I {

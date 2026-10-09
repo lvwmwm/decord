@@ -1,15 +1,15 @@
-// Module ID: 17347
-// Function ID: 17348
+// Module ID: 17495
+// Function ID: 17496
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1085, 21, 5090, 558, 576, 1502, 1505, 12074, 17304, 2]
+// Dependencies: [19, 17, 1085, 21, 5091, 558, 576, 1503, 1506, 12011, 17452, 2]
 
-// Module 17347 (SearchNavigatorPreviewScreen)
+// Module 17495 (SearchNavigatorPreviewScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12011 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchNavi
     }
   }
   const fn = function n() {
-    const obj = tracking_TrackingDefault;
+    const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext, channelId };
     const result = obj.trackSearchJumpToMessage(obj2);
     const tmp = searchContext;
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchNavi
   const onBeforeJumpToMessage = route.params.onBeforeJumpToMessage;
   const items = [searchContext, channelId, onBeforeJumpToMessage, navigation];
   const callback = onBeforeJumpToMessage.useCallback(() => {
-    const obj = tracking_TrackingDefault;
+    const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext, channelId };
     const result = obj.trackSearchJumpToMessage(obj2);
     const tmp = searchContext;

@@ -1,30 +1,30 @@
-// Module ID: 10489
-// Function ID: 10490
+// Module ID: 10479
+// Function ID: 10480
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 109, 19, 17, 6891, 1392, 1096, 21, 5090, 587, 558, 576, 7550, 2040, 1414, 6164, 1381, 5086, 6809, 4778, 8290, 10224, 10490, 5054, 10492, 6865, 1126, 6189, 11220, 2]
+// Dependencies: [32, 109, 19, 17, 6898, 1393, 1096, 21, 5091, 587, 558, 576, 7559, 2041, 1415, 6163, 1382, 5087, 6816, 4779, 8298, 10209, 10480, 5055, 10482, 6872, 1126, 6191, 10575, 2]
 
-// Module 10489 (UserProfileCustomStatusBubble)
+// Module 10479 (UserProfileCustomStatusBubble)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import EmojiDefault from "Emoji" /* 6809 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
-import Constants2 from "Constants" /* 6891 */;
-import inlineStyles from "inlineStyles" /* 7550 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 10492 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import EmojiDefault from "Emoji" /* 6816 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
+import Constants2 from "Constants" /* 6898 */;
+import inlineStyles from "inlineStyles" /* 7559 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 10482 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
   }
   size = { pointerEvents: "none", style, width: 20, height: 11, viewBox: "0 0 20 11", children: items };
   items = [tmp4, tmp7];
-  const tmp11 = closure_12(inlineStylesDefault, size);
+  const tmp11 = authStore2(inlineStylesDefault, size);
   cResult[4] = style;
   cResult[5] = tmp4;
   cResult[6] = tmp7;
@@ -125,7 +125,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
   const tmp = inlineStylesDefault;
   items[0] = unpackModuleId(inlineStyles.Path, { d: "M0 10 A10 10 0 0 1 20 10 L20 11 L0 11 Z", fill: backgroundColor });
   items[1] = unpackModuleId(inlineStyles.Path, { d: "M0.5 10 A9.5 9.5 0 0 1 19.5 10", fill: "none", stroke: borderColor, strokeWidth: 1 });
-  return closure_12(tmp, size);
+  return authStore2(tmp, size);
 });
 let closure_16 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
 let closure_17 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
@@ -246,7 +246,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
     let tmp7 = tmp4;
     if (tmp7) {
       let obj3;
-      const tmpResult = tmp(1381);
+      const tmpResult = tmp(1382);
       if (tmpResult.isAndroid()) {
         let obj2 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
         obj3 = obj2;
@@ -297,7 +297,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
       }
       let obj4 = { variant: textVariant, color: "text-default", lineClamp, onTextLayout, style: tmp9, children: items };
       items = [tmp12, text];
-      const tmp16 = closure_12(tmp(5086).Text, obj4);
+      const tmp16 = closure_12(tmp(5087).Text, obj4);
       cResult[10] = lineClamp;
       cResult[11] = onTextLayout;
       cResult[12] = tmp12;
@@ -328,7 +328,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
         const obj6 = { style: obj7 };
         obj7 = { width: 0.5 * lineHeight };
         items[1] = unpackModuleId(metroImportAll, obj6);
-        tmp4 = closure_12(map1, obj2);
+        tmp4 = authStore2(map1, obj2);
       } else {
         let name;
         if (emoji != null) {
@@ -341,7 +341,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
           const obj8 = { style: obj9 };
           obj9 = { width: 0.4 * lineHeight };
           items1[1] = unpackModuleId(metroImportAll, obj8);
-          tmp4 = closure_12(map1, obj);
+          tmp4 = authStore2(map1, obj);
         }
       }
       return tmp4;
@@ -423,7 +423,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextSt
     }
   }
   items2 = [tmp5Result, text];
-  return closure_12(Text, obj5);
+  return authStore2(Text, obj5);
 });
 createStyles = createStyles_mod;
 let closure_20 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));

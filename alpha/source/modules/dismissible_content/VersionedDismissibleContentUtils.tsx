@@ -1,24 +1,24 @@
-// Module ID: 2061
-// Function ID: 2062
+// Module ID: 2062
+// Function ID: 2063
 // Name: VersionedDismissibleContentUtils
-// Dependencies: [2062, 7293, 2048, 14125, 14126, 1997, 14127, 2076, 2]
+// Dependencies: [2063, 7298, 2049, 12959, 14222, 1998, 14223, 2076, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
-// Module 2061 (VersionedDismissibleContentUtils)
-import Server from "Server" /* 1997 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
+// Module 2062 (VersionedDismissibleContentUtils)
+import Server from "Server" /* 1998 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
 import TypeUtils from "TypeUtils" /* 2076 */;
-import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 14126 */;
-import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 14127 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7293 */;
+import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 14222 */;
+import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 14223 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7298 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/VersionedDismissibleContentUtils.tsx");
 
 export const getVersionedDismissibleContentCurrentVersion = function getVersionedDismissibleContentCurrentVersion(id) {
   if (dismissible_content.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING === id) {
-    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(14125).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
+    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(12959).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
     let num5;
     if (marketingBySurface != null) {
       num5 = marketingBySurface.version;

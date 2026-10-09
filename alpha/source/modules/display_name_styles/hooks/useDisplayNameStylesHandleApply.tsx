@@ -1,10 +1,10 @@
-// Module ID: 15433
-// Function ID: 15434
+// Module ID: 15546
+// Function ID: 15547
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 19, 1085, 1408, 6662, 8267, 8264, 1264, 1409, 2]
+// Dependencies: [5, 19, 1085, 1409, 6669, 8275, 8272, 1265, 1410, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15433 (useDisplayNameStylesHandleApply)
+// Module 15546 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -15,13 +15,15 @@ let c4;
 const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
+export const DisplayNameStylesApplyLocations = { TRY_THIS_STYLE: "try_this_style", PROFILE_EDITOR: "profile_editor" };
 export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;
-  const selectedFontId = hasChanges.selectedFontId;
-  let selectedEffectId = hasChanges.selectedEffectId;
+  const _location = hasChanges.location;
+  let selectedFontId = hasChanges.selectedFontId;
+  const selectedEffectId = hasChanges.selectedEffectId;
   const selectedColors = hasChanges.selectedColors;
-  const defaultColor = hasChanges.defaultColor;
-  let guildId = hasChanges.guildId;
+  let defaultColor = hasChanges.defaultColor;
+  const guildId = hasChanges.guildId;
   const isTryItOut = hasChanges.isTryItOut;
   const onClose = hasChanges.onClose;
   let flag = hasChanges.shouldSaveWithoutPendingChanges;
@@ -29,15 +31,15 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
     flag = false;
   }
   const onSaveError = hasChanges.onSaveError;
-  let closure_10 = defaultColor.useRef(false);
-  let items = [hasChanges, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut, flag, onSaveError];
-  return defaultColor.useCallback(selectedColors(function*(arg0, value) {
+  let closure_11 = selectedColors.useRef(false);
+  let items = [hasChanges, _location, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut, flag, onSaveError];
+  return selectedColors.useCallback(selectedEffectId(function*(arg0, value) {
     let closure_0;
     let closure_1;
     let closure_2;
     let obj9;
-    if (guildId === 2) {
-      guildId = 3;
+    if (defaultColor === 2) {
+      defaultColor = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -51,22 +53,22 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
     } else {
       let c3;
       try {
-        guildId = 2;
+        defaultColor = 2;
         if (0 === c4) {
           if (arg0 === 1) {
-            guildId = 3;
+            defaultColor = 3;
             throw value;
           } else if (arg0 === 2) {
-            guildId = 3;
+            defaultColor = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
             hasChanges = undefined;
-            const tmp65 = hasChanges;
-            if (tmp65) {
+            const tmp66 = hasChanges;
+            if (tmp66) {
               if (!ref.current) {
                 let items = selectedColors;
-                const tmp28 = selectedEffectId === hasChanges(selectedEffectId[3]).DisplayNameEffect.SOLID && selectedColors.length > 0 && selectedColors[0] === defaultColor;
+                const tmp28 = selectedEffectId === hasChanges(selectedFontId[3]).DisplayNameEffect.SOLID && selectedColors.length > 0 && selectedColors[0] === defaultColor;
                 if (tmp28) {
                   items = [];
                 }
@@ -76,44 +78,44 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
                   c3 = 2;
                   const obj5 = { displayNameStyles: obj4 };
                   c4 = 3;
-                  guildId = 1;
+                  defaultColor = 1;
                   const obj6 = { value: obj9.saveProfileAndAccountChanges(obj5), done: false };
-                  obj9 = hasChanges(selectedEffectId[4]);
+                  obj9 = hasChanges(selectedFontId[4]);
                   return obj6;
                 } else if (isTryItOut) {
-                  const tmp36Result = hasChanges(selectedEffectId[5]);
+                  const tmp36Result = hasChanges(selectedFontId[5]);
                   const result = tmp36Result.setTryItOutDisplayNameStyles(obj4);
                 } else {
                   const obj7 = { guildId, displayNameStyles: obj4 };
-                  const tmp36Result2 = hasChanges(selectedEffectId[6]);
+                  const tmp36Result2 = hasChanges(selectedFontId[6]);
                   tmp36Result2.setPendingChanges(obj7);
                 }
               }
             }
-            guildId = 3;
+            defaultColor = 3;
             return { value: "IconComponent", done: null };
           }
         } else if (1 === c4) {
           c3 = 0;
-          closure_129_10.current = false;
-          throw selectedEffectId;
+          closure_129_11.current = false;
+          throw selectedFontId;
         } else if (2 === c4) {
           c3 = 1;
-          if (closure_129_9 != null) {
-            closure_129_9();
+          if (closure_129_10 != null) {
+            closure_129_10();
           }
           c3 = 0;
-          closure_129_10.current = false;
-          guildId = 3;
+          closure_129_11.current = false;
+          defaultColor = 3;
           const obj8 = { value: undefined, done: true };
           return obj8;
         } else if (arg0 === 1) {
-          guildId = 3;
+          defaultColor = 3;
           throw value;
         } else if (arg0 === 2) {
           c3 = 0;
-          closure_129_10.current = false;
-          guildId = 3;
+          closure_129_11.current = false;
+          defaultColor = 3;
           const obj10 = { value, done: true };
           return obj10;
         } else {
@@ -123,33 +125,33 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
             ok = hasChanges.ok;
           }
           if (true !== ok) {
-            if (closure_129_9 != null) {
-              closure_129_9();
+            if (closure_129_10 != null) {
+              closure_129_10();
             }
             c3 = 0;
-            closure_129_10.current = false;
-            guildId = 3;
+            closure_129_11.current = false;
+            defaultColor = 3;
             const obj = { value: undefined, done: true };
             return obj;
           } else {
             c3 = 0;
-            closure_129_10.current = false;
+            closure_129_11.current = false;
           }
         }
-        const obj11 = { font_name: hasChanges(selectedEffectId[8]).DisplayNameFont[closure_129_1], effect_name: hasChanges(selectedEffectId[3]).DisplayNameEffect[closure_129_2], colors: closure_129_3 };
-        const track = tmp(selectedEffectId[7]).track;
-        const DISPLAY_NAME_STYLES_APPLIED = guildId.DISPLAY_NAME_STYLES_APPLIED;
-        const tmp44 = tmp(selectedEffectId[7]);
+        const obj11 = { font_name: hasChanges(selectedFontId[8]).DisplayNameFont[closure_129_2], effect_name: hasChanges(selectedFontId[3]).DisplayNameEffect[closure_129_3], colors: closure_129_4, location: closure_129_1 };
+        const track = tmp(selectedFontId[7]).track;
+        const DISPLAY_NAME_STYLES_APPLIED = defaultColor.DISPLAY_NAME_STYLES_APPLIED;
+        const tmp44 = tmp(selectedFontId[7]);
         track(DISPLAY_NAME_STYLES_APPLIED, obj11);
-        if (closure_129_7 != null) {
-          closure_129_7();
+        if (closure_129_8 != null) {
+          closure_129_8();
         }
-      } catch (tmp58) {
-        selectedEffectId = tmp58;
+      } catch (tmp59) {
+        selectedFontId = tmp59;
         if (0 === c3) {
-          guildId = 3;
-          throw tmp58;
-        } else if (1 === tmp60) {
+          defaultColor = 3;
+          throw tmp59;
+        } else if (1 === tmp61) {
           c4 = 1;
         } else {
           c4 = 2;

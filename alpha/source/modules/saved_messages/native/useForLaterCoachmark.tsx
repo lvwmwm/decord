@@ -1,13 +1,13 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16769
+// Function ID: 16770
 // Name: useForLaterCoachmark
-// Dependencies: [32, 19, 2060, 21, 2048, 558, 576, 7090, 1126, 12686, 9375, 2]
+// Dependencies: [32, 19, 2061, 21, 2049, 558, 576, 7093, 1126, 12629, 9413, 2]
 
-// Module 16644 (useForLaterCoachmark)
+// Module 16769 (useForLaterCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,83 +21,87 @@ const jsx = Fragment.jsx;
 let closure_6 = dismissible_content.DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForLaterCoachmark(arg0) {
   let closure_0;
-  let first;
-  let obj2;
+  let obj3;
   let tmp10;
-  let tmp14;
+  let tmp11;
   let tmp15;
-  let tmp9;
+  let tmp16;
+  let tmp4;
+  let tmp5;
   const obj = require("react");
-  const cResult = obj.c(9);
+  const cResult = obj.c(10);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [closure_6];
+    const obj2 = { bypassAutoDismiss: true };
     cResult[0] = items;
-    first = items;
+    cResult[1] = obj2;
+    tmp4 = items;
+    tmp5 = obj2;
   } else {
-    first = cResult[0];
+    [tmp4, tmp5] = cResult;
   }
   const tmpResult = require("useSelectedDismissibleContent");
-  const tmp6 = _slicedToArray(tmpResult.useSelectedDismissibleContent(first, undefined, true), 2);
-  _require = tmp8;
-  const first1 = tmp6[0];
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+  const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp4, tmp5), 2);
+  _require = tmp9;
+  const first = tmp7[0];
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t.qPbFK2);
     const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(require("intl").t.b2yxYL);
-    cResult[1] = stringResult;
-    cResult[2] = stringResult1;
-    tmp10 = stringResult1;
-    tmp9 = stringResult;
+    cResult[2] = stringResult;
+    cResult[3] = stringResult1;
+    tmp11 = stringResult1;
+    tmp10 = stringResult;
   } else {
-    tmp9 = cResult[1];
     tmp10 = cResult[2];
+    tmp11 = cResult[3];
   }
-  if (cResult[3] !== tmp6[1]) {
-    const fn = function p() {
+  if (cResult[4] !== tmp7[1]) {
+    const fn = function v() {
       closure_0(ContentDismissActionType.USER_DISMISS);
     };
-    cResult[3] = tmp6[1];
-    cResult[4] = fn;
-    tmp14 = fn;
+    cResult[4] = tmp7[1];
+    cResult[5] = fn;
+    tmp15 = fn;
   } else {
-    tmp14 = cResult[4];
+    tmp15 = cResult[5];
   }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class D {
       constructor() {
         return jsx(closure_0(dependencyMap[9]).BookmarksSpotIllustration, { width: 120, height: 80, accessible: false });
       }
     }
-    cResult[5] = I;
-    tmp15 = I;
+    cResult[6] = D;
+    tmp16 = D;
   } else {
-    class I {
+    class D {
       constructor() {
         return jsx(closure_0(dependencyMap[9]).BookmarksSpotIllustration, { width: 120, height: 80, accessible: false });
       }
     }
   }
-  if (cResult[6] === first1 === closure_6) {
-    class I {
+  if (cResult[7] === first === closure_6) {
+    class D {
       constructor() {
         return jsx(closure_0(dependencyMap[9]).BookmarksSpotIllustration, { width: 120, height: 80, accessible: false });
       }
     }
     const tmpResult2 = require("useCoachmark");
-    const coachmark = tmpResult2.useCoachmark(arg0, obj2);
-    return tmp6[1];
+    const coachmark = tmpResult2.useCoachmark(arg0, obj3);
+    return tmp7[1];
   }
-  obj2 = { title: tmp9, description: tmp10, position: "bottom", visible: first1 === closure_6, onDismiss: tmp14, renderImgComponent: tmp15 };
-  cResult[6] = first1 === closure_6;
-  cResult[7] = tmp14;
-  cResult[8] = obj2;
+  obj3 = { title: tmp10, description: tmp11, position: "bottom", visible: first === closure_6, onDismiss: tmp15, renderImgComponent: tmp16 };
+  cResult[7] = first === closure_6;
+  cResult[8] = tmp15;
+  cResult[9] = obj3;
 }) : (function useForLaterCoachmark(arg0) {
   let closure_1;
   let first;
-  let obj = first(7090);
+  let obj = first(7093);
   const items = [closure_6];
-  const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items, undefined, true), 2);
+  const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items, { bypassAutoDismiss: true }), 2);
   first = tmp[0];
   dependencyMap = tmp3;
   const items1 = [tmp[1], first];
@@ -120,7 +124,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForLate
     intl2 = intl3.intl;
     return obj;
   }, items1);
-  const obj2 = first(9375);
+  const obj2 = first(9413);
   const coachmark = obj2.useCoachmark(arg0, memo);
   return tmp[1];
 });

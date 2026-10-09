@@ -1,43 +1,43 @@
-// Module ID: 11536
-// Function ID: 11537
+// Module ID: 11465
+// Function ID: 11466
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5079, 5992, 2063, 5428, 1389, 21, 5090, 587, 558, 576, 1414, 504, 6809, 1126, 5086, 6189, 7870, 6326, 11537, 6841, 11543, 9517, 7873, 5405, 4922, 6184, 1200, 8740, 8279, 4810, 5091, 8600, 4991, 4929, 11544, 11545, 6865, 5054, 6829, 2]
+// Dependencies: [32, 5, 19, 17, 5080, 5994, 2064, 5429, 1390, 21, 5091, 587, 558, 576, 1415, 504, 6816, 1126, 5087, 6191, 7879, 6333, 11466, 6848, 11472, 9555, 7882, 5406, 4923, 6186, 1200, 8749, 8287, 4811, 5092, 8608, 4992, 4930, 11473, 11474, 6163, 6872, 5055, 6836, 2]
 // Exports: default
 
-// Module 11536 (PollVotesActionSheet)
+// Module 11465 (PollVotesActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import shared from "shared" /* 4929 */;
-import useThemeDefault from "useTheme" /* 4991 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import timing from "timing" /* 5091 */;
-import Pressables from "Pressables" /* 6189 */;
-import EmojiDefault from "Emoji" /* 6809 */;
-import PollsUtils from "PollsUtils" /* 7870 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 11537 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import shared from "shared" /* 4930 */;
+import useThemeDefault from "useTheme" /* 4992 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import timing from "timing" /* 5092 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import Pressables from "Pressables" /* 6191 */;
+import EmojiDefault from "Emoji" /* 6816 */;
+import PollsUtils from "PollsUtils" /* 7879 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8287 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 11466 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import UserStore from "UserStore" /* 1389 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import EmojiStore from "EmojiStore" /* 5994 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, c2, item, ref2, set, user;
 
 let closure_14;
-let closure_15;
-let metroImportAll;
+let map1;
 let metroImportDefault;
 let metroRequire;
 let obj2;
@@ -50,7 +50,7 @@ function VotersList(channelId) {
   let analyticsLocations;
   let sharedValue;
   const tmp3 = analyticsLocations;
-  const tmp = closure_16();
+  const tmp = closure_15();
   const tmp2 = messageId;
   analyticsLocations = messageId(analyticsLocations[23])().analyticsLocations;
   const tmp4 = messageId(analyticsLocations[24])({ channelId, messageId, reaction });
@@ -91,7 +91,7 @@ function VotersList(channelId) {
     let obj = {
       start: 0 === index,
       end: reactors.length - 1 === index,
-      icon: closure_1_14(Avatar, obj2),
+      icon: closure_1_13(Avatar, obj2),
       label: tmp10Result,
       subLabel: tmp14,
       onPress() {
@@ -119,7 +119,7 @@ function VotersList(channelId) {
     if (null != nickname) {
       tmp14 = userTag;
     }
-    return closure_1_14(TableRow, obj);
+    return closure_1_13(TableRow, obj);
   }, items1);
   let num = 1;
   const useSharedValue = channelId(analyticsLocations[33]).useSharedValue;
@@ -150,22 +150,23 @@ function VotersList(channelId) {
   T.__workletHash = 8593850252158;
   T.__initData = __initData;
   const animatedStyle = tmp5Result.useAnimatedStyle(T);
-  const obj5 = { style: animatedStyle, children: closure_14(channelId(tmp3[35]).BottomSheetFlashList, obj6) };
+  const obj5 = { style: animatedStyle, children: closure_13(channelId(tmp3[35]).BottomSheetFlashList, obj6) };
   const View = tmp2(tmp3[33]).View;
   obj6 = { contentContainerStyle: tmp.list, data: reactors, renderItem: callback, onScroll: reactorsOnScrollNative };
-  return closure_14(View, obj5);
+  return closure_13(View, obj5);
 }
+let _asyncToGenerator = _asyncToGenerator_mod;
 let react = react_mod;
-({ Image: metroRequire, View: metroImportDefault, ScrollView: metroImportAll } = react_native);
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { headerText: { textAlign: "center", paddingHorizontal: 16 }, subheaderText: { textAlign: "center", marginTop: 2, paddingHorizontal: 16 }, answerScroll: { marginTop: 24 }, answerScrollContainer: { gap: 4, paddingHorizontal: 16 }, answerName: { marginTop: 16, marginHorizontal: 16, marginBottom: 8 }, list: { paddingHorizontal: 16 }, answerButton: obj2, answerSelected: obj3, answerEmoji: { marginRight: 8 }, answerText: { flexShrink: 1 }, emojiText: { fontSize: 16 }, emojiImage: { height: 16, width: 16, flexShrink: 0 }, noResultsContainer: { flexDirection: "column", alignItems: "center", paddingHorizontal: 16 }, noResultsImage: { marginTop: 32, width: 138 }, noResultsTitle: { marginTop: 16, textAlign: "center" }, noResultsSubtitle: { marginTop: 4, textAlign: "center" } };
 obj2 = { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.xs, maxWidth: 200 };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_16 = createStyles(obj);
+let closure_15 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollEmoji(arg0) {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollEmoji(arg0) {
   let emoji;
   let first;
   let style;
@@ -173,7 +174,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollEm
   let obj = emoji(576);
   const cResult = obj.c(10);
   ({ style, emoji } = arg0);
-  const tmp4 = closure_16();
+  const tmp4 = closure_15();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [EmojiStore];
     cResult[0] = items;
@@ -203,7 +204,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollEm
     }
     let obj2 = { style, src: stateFromStores, name: emoji.name, textEmojiStyle: null, fastImageStyle: null };
     ({ emojiText: obj3.textEmojiStyle, emojiImage: obj3.fastImageStyle } = tmp4);
-    const tmp12 = closure_14(EmojiDefault, obj2);
+    const tmp12 = closure_13(EmojiDefault, obj2);
     cResult[4] = emoji.name;
     cResult[5] = stateFromStores;
     cResult[6] = style;
@@ -238,7 +239,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollEm
 }) : (function PollEmoji(emoji) {
   emoji = emoji.emoji;
   const style = emoji.style;
-  const tmp = closure_16();
+  const tmp = closure_15();
   let obj = emoji(504);
   const items = [EmojiStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -261,10 +262,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollEm
     }
   });
   let obj2 = { style, src: stateFromStores, name: emoji.name, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emojiImage };
-  return closure_14(EmojiDefault, obj2);
+  return closure_13(EmojiDefault, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAnswerButton(answer) {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAnswerButton(answer) {
   let items;
   let items1;
   let reaction;
@@ -274,7 +275,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
   const cResult = obj.c(32);
   answer = answer.answer;
   ({ reaction, selected, setSelectedAnswerId } = answer);
-  const tmp4 = closure_16();
+  const tmp4 = closure_15();
   let num;
   if (reaction != null) {
     const count_details = reaction.count_details;
@@ -387,7 +388,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
           let tmp16 = null;
           if (null != answer.poll_media.text) {
             const obj5 = { style: tmp4.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-            tmp16 = authStore2(tmp(5086).Text, obj5);
+            tmp16 = map1(tmp(5087).Text, obj5);
           }
           cResult[14] = answer.poll_media.text;
           cResult[15] = tmp4.answerText;
@@ -398,7 +399,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
         let tmp12 = null;
         if (null != answer.poll_media.emoji) {
           const obj6 = { style: tmp4.answerEmoji, emoji: answer.poll_media.emoji };
-          tmp12 = authStore2(closure_17, obj6);
+          tmp12 = map1(closure_16, obj6);
         }
         cResult[11] = answer.poll_media.emoji;
         cResult[12] = tmp4.answerEmoji;
@@ -437,7 +438,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
   answer = answer.answer;
   ({ reaction, selected, setSelectedAnswerId } = answer);
   const ref = answer.ref;
-  const tmp = closure_16();
+  const tmp = closure_15();
   let num;
   if (reaction != null) {
     const count_details = reaction.count_details;
@@ -470,30 +471,27 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
   let tmp8 = null;
   if (null != answer.poll_media.emoji) {
     const obj3 = { style: tmp.answerEmoji, emoji: answer.poll_media.emoji };
-    tmp8 = authStore2(closure_17, obj3);
+    tmp8 = map1(closure_16, obj3);
   }
   items2 = [tmp8, , ];
   let tmp11 = null;
   if (null != answer.poll_media.text) {
     const obj4 = { style: tmp.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp11 = authStore2(tmp3(5086).Text, obj4);
+    tmp11 = map1(tmp3(5087).Text, obj4);
   }
   items2[1] = tmp11;
   const obj5 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: items3 };
-  const Text = tmp3(5086).Text;
+  const Text = tmp3(5087).Text;
   items3 = [" ", "(", num.toLocaleString(), ")"];
   items2[2] = authStore3(Text, obj5);
   return authStore3(PressableHighlight, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVotesHeader(message) {
-  let answerScroll;
-  let answerScrollContainer;
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVotesHeader(message) {
+  let closure_4;
   let closure_5;
-  let items1;
   let setSelectedAnswerId;
-  let tmp11;
-  let tmp5;
+  let tmp12;
   let tmp8;
   let tmp9;
   let tmp = message;
@@ -503,310 +501,92 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   message = message.message;
   const selectedAnswerId = message.selectedAnswerId;
   setSelectedAnswerId = message.setSelectedAnswerId;
-  let tmp4 = closure_16();
+  let tmp4 = closure_15();
   if (cResult[0] !== message.reactions) {
     const tmpResult = tmp(tmp2[20]);
     const totalVotes = tmpResult.getTotalVotes(message.reactions);
     cResult[0] = message.reactions;
     cResult[1] = totalVotes;
-    tmp5 = totalVotes;
-  } else {
-    tmp5 = cResult[1];
   }
   let obj3 = react;
   let ref = react.useRef(null);
-  let closure_4 = react.useRef(null);
+  _asyncToGenerator = react.useRef(null);
   react = react.useRef(false);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function v() {
-      const timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-        let c3;
-        let closure_6;
-        if (ref === 2) {
-          ref = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            let obj = { value, done: true };
-            return obj;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            let closure_2;
-            let styles;
-            let x;
-            let scrollWidth;
-            let scrollPageX;
-            let width;
-            let pageX;
-            let x2;
-            let animated;
-            ref = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                ref = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                ref = 3;
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                let closure_1 = tmp4;
-                let closure_0 = tmp;
-                closure_2 = undefined;
-                ref = undefined;
-                ref2 = undefined;
-                styles = undefined;
-                x = undefined;
-                scrollWidth = undefined;
-                scrollPageX = undefined;
-                width = undefined;
-                pageX = undefined;
-                x2 = undefined;
-                animated = undefined;
-                const current4 = ref.current;
-                const current5 = ref2.current;
-                if (null != current4) {
-                  if (null != current5) {
-                    const self = this;
-                    const self2 = this;
-                    const promise = new Promise((arg0) => {
-                      closure_0 = arg0;
-                      closure_1_0.measure((arg0, arg1, scrollWidth, arg3, scrollPageX) => {
-                        const obj = { scrollWidth, scrollPageX };
-                        return closure_0(obj);
-                      });
-                    });
-                    const self3 = this;
-                    const self4 = this;
-                    const promise3 = new Promise((arg0) => {
-                      closure_0 = arg0;
-                      closure_1_1.measure((arg0, arg1, width, arg3, pageX) => {
-                        const obj = { width, pageX };
-                        return closure_0(obj);
-                      });
-                    });
-                    const self5 = this;
-                    const self6 = this;
-                    const promise4 = new Promise((arg0) => {
-                      closure_0 = arg0;
-                      closure_1_1.measureLayout(closure_1_0, (x) => {
-                        const obj = { x };
-                        return closure_0(obj);
-                      });
-                    });
-                    const items = [promise, promise3, promise4];
-                    c2 = 1;
-                    ref = 1;
-                    const obj3 = { value: Promise.all(items), done: false };
-                    return obj3;
-                  }
-                }
-              }
-            } else if (arg0 === 1) {
-              ref = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              ref = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_2 = value;
-              ref = ref(closure_2, 3);
-              ref2 = ref[0];
-              styles = ref[1];
-              x = ref[2];
-              scrollWidth = ref2.scrollWidth;
-              scrollPageX = ref2.scrollPageX;
-              width = styles.width;
-              pageX = styles.pageX;
-              x2 = x.x;
-              animated = !useReducedMotion.useReducedMotion;
-              if (ref2.current) {
-                if (pageX < scrollPageX) {
-                  const current2 = ref.current;
-                  if (current2 != null) {
-                    const point = { x: x2 - 16, y: 0, animated };
-                    current2.scrollTo(point);
-                  }
-                } else if (pageX + width > scrollPageX + scrollWidth) {
-                  const current3 = ref.current;
-                  if (current3 != null) {
-                    const point1 = { x: x2 + width - scrollWidth + 16, y: 0, animated };
-                    current3.scrollTo(point1);
-                  }
-                }
-              } else {
-                const current = ref.current;
-                if (current != null) {
-                  const point2 = { x: x2 + width / 2 - scrollWidth / 2, y: 0, animated };
-                  current.scrollTo(point2);
-                }
-                ref2.current = true;
-                ref = 3;
-                return { value: "IconComponent", done: null };
-              }
-            }
-            ref = 3;
-            return { value: "IconComponent", done: null };
-          } catch (tmp29) {
-            ref = 3;
-            throw tmp29;
-          }
-        }
-      }), 0);
-    };
-    cResult[2] = fn;
-    tmp8 = fn;
+    class T {
+      constructor() {
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F143170 */ }), 0);
+        return;
+      }
+    }
+    cResult[2] = T;
+    tmp8 = T;
   } else {
-    tmp8 = cResult[2];
+    class T {
+      constructor() {
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F143170 */ }), 0);
+        return;
+      }
+    }
   }
   if (cResult[3] !== selectedAnswerId) {
-    let items = [selectedAnswerId];
+    class T {
+      constructor() {
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F143170 */ }), 0);
+        return;
+      }
+    }
+    tmp10[0] = selectedAnswerId;
     cResult[3] = selectedAnswerId;
-    cResult[4] = items;
-    tmp9 = items;
+    cResult[4] = tmp10;
+    tmp9 = tmp10;
   } else {
-    tmp9 = cResult[4];
+    class T {
+      constructor() {
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F143170 */ }), 0);
+        return;
+      }
+    }
   }
   const effect = obj3.useEffect(tmp8, tmp9);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { disallowInterruption: true };
-    cResult[5] = obj2;
-    tmp11 = obj2;
+    class T {
+      constructor() {
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F143170 */ }), 0);
+        return;
+      }
+    }
+    cResult[5] = tmp13;
+    tmp12 = tmp13;
   } else {
-    tmp11 = cResult[5];
+    class T {
+      constructor() {
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F143170 */ }), 0);
+        return;
+      }
+    }
   }
   const tmpResult2 = tmp(tmp2[21]);
-  const nativeGesture = tmpResult2.useNativeGesture(tmp11);
+  const nativeGesture = tmpResult2.useNativeGesture(tmp12);
   if (null == message.poll) {
-    return null;
-  } else {
-    if (cResult[6] === message.poll.question.text) {
-      let tmp13;
-      let tmp16;
-      if (cResult[7] === tmp4.headerText) {
-        tmp13 = cResult[8];
+    class T {
+      constructor() {
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F143170 */ }), 0);
+        return;
       }
-      const subheaderText = tmp4.subheaderText;
-      if (cResult[9] !== tmp5) {
-        const intl = tmp(tmp2[17]).intl;
-        let obj4 = { count: tmp5 };
-        const formatResult = intl.format(tmp(tmp2[17]).t.XRkuof, obj4);
-        cResult[9] = tmp5;
-        cResult[10] = formatResult;
-        tmp16 = formatResult;
-      } else {
-        tmp16 = cResult[10];
-      }
-      if (cResult[11] === tmp4.subheaderText) {
-        let tmp18;
-        let tmp21;
-        if (cResult[12] === tmp16) {
-          tmp18 = cResult[13];
-        }
-        const _Symbol = Symbol;
-        ({ answerScroll, answerScrollContainer } = tmp4);
-        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(tmp2[17]).intl;
-          const stringResult = intl2.string(tmp(tmp2[17]).t["qbir+4"]);
-          cResult[14] = stringResult;
-          tmp21 = stringResult;
-        } else {
-          tmp21 = cResult[14];
-        }
-        if (cResult[15] === message.poll.answers) {
-          if (cResult[16] === message.reactions) {
-            if (cResult[17] === selectedAnswerId) {
-              let tmp23;
-              if (cResult[18] === setSelectedAnswerId) {
-                tmp23 = cResult[19];
-              }
-              if (cResult[20] === tmp4.answerScroll) {
-                if (cResult[21] === tmp4.answerScrollContainer) {
-                  let tmp25;
-                  if (cResult[22] === tmp23) {
-                    tmp25 = cResult[23];
-                  }
-                  if (cResult[24] === nativeGesture) {
-                    let tmp29;
-                    if (cResult[25] === tmp25) {
-                      tmp29 = cResult[26];
-                    }
-                    if (cResult[27] === tmp29) {
-                      if (cResult[28] === tmp13) {
-                        let tmp32;
-                        if (cResult[29] === tmp18) {
-                          tmp32 = cResult[30];
-                        }
-                        return tmp32;
-                      }
-                    }
-                    const obj5 = { children: items1 };
-                    items1 = [tmp13, tmp18, tmp29];
-                    const tmp35 = closure_15(closure_7, obj5);
-                    cResult[27] = tmp29;
-                    cResult[28] = tmp13;
-                    cResult[29] = tmp18;
-                    cResult[30] = tmp35;
-                    tmp32 = tmp35;
-                  }
-                  const obj6 = { gesture: nativeGesture, children: tmp25 };
-                  const tmp31 = closure_14(tmp(tmp2[21]).GestureDetector, obj6);
-                  cResult[24] = nativeGesture;
-                  cResult[25] = tmp25;
-                  cResult[26] = tmp31;
-                  tmp29 = tmp31;
-                }
-              }
-              const obj7 = { ref, style: answerScroll, contentContainerStyle: answerScrollContainer, horizontal: true, showsHorizontalScrollIndicator: false, accessibilityRole: "tablist", accessibilityLabel: tmp21, children: tmp23 };
-              const tmp28 = closure_14(closure_8, obj7);
-              cResult[20] = tmp4.answerScroll;
-              cResult[21] = tmp4.answerScrollContainer;
-              cResult[22] = tmp23;
-              cResult[23] = tmp28;
-              tmp25 = tmp28;
-            }
-          }
-        }
-        const answers = message.poll.answers;
-        const mapped = answers.map((answer) => {
-          let obj2;
-          const tmp = selectedAnswerId === String(answer.answer_id);
-          let tmp4;
-          const tmp2 = authStore2;
-          const tmp3 = closure_18;
-          if (tmp) {
-            tmp4 = closure_4;
-          }
-          const obj = { ref: tmp4, answer, selected: tmp, reaction: obj2.reactionForId(message.reactions, String(answer.answer_id)), setSelectedAnswerId };
-          obj2 = formatPollMessageChatData;
-          return tmp2(tmp3, obj, answer.answer_id);
-        });
-        cResult[15] = message.poll.answers;
-        cResult[16] = message.reactions;
-        cResult[17] = selectedAnswerId;
-        cResult[18] = setSelectedAnswerId;
-        cResult[19] = mapped;
-        tmp23 = mapped;
-      }
-      const obj8 = { style: subheaderText, variant: "text-md/medium", color: "text-default", children: tmp16 };
-      const tmp20 = closure_14(tmp(tmp2[18]).Text, obj8);
-      cResult[11] = tmp4.subheaderText;
-      cResult[12] = tmp16;
-      cResult[13] = tmp20;
-      tmp18 = tmp20;
     }
-    const obj9 = { style: tmp4.headerText, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: message.poll.question.text };
-    const tmp15 = closure_14(tmp(tmp2[18]).Text, obj9);
+  } else {
+    class T {
+      constructor() {
+        timerId = setTimeout(closure_4(function() { /* body not rendered: F143170 */ }), 0);
+        return;
+      }
+    }
+    let obj2 = { style: tmp4.headerText, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: message.poll.question.text };
+    const tmp17 = closure_13(tmp(tmp2[18]).Text, obj2);
     cResult[6] = message.poll.question.text;
     cResult[7] = tmp4.headerText;
-    cResult[8] = tmp15;
-    tmp13 = tmp15;
+    cResult[8] = tmp17;
   }
 }) : (function PollVotesHeader(message) {
   let answers;
@@ -820,7 +600,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   const selectedAnswerId = message.selectedAnswerId;
   const setSelectedAnswerId = message.setSelectedAnswerId;
   react = undefined;
-  let tmp = closure_16();
+  let tmp = closure_15();
   let items = [message.reactions];
   const memo = react.useMemo(() => {
     const obj = PollsUtils;
@@ -973,13 +753,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
   if (null != message.poll) {
     let obj = { children: items2 };
     let obj2 = { style: tmp.headerText, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: message.poll.question.text };
-    items2 = [closure_14(tmp5(tmp6[18]).Text, obj2), , ];
+    items2 = [closure_13(tmp5(tmp6[18]).Text, obj2), , ];
     let obj3 = { style: tmp.subheaderText, variant: "text-md/medium", color: "text-default", children: intl.format(tmp5(tmp6[17]).t.XRkuof, obj4) };
     const Text = tmp5(tmp6[18]).Text;
     intl = tmp5(tmp6[17]).intl;
     obj4 = { count: memo };
-    items2[1] = closure_14(Text, obj3);
-    const obj5 = { gesture: tmp8, children: closure_14(closure_8, obj11) };
+    items2[1] = closure_13(Text, obj3);
+    const obj5 = { gesture: tmp8, children: closure_13(closure_7, obj11) };
     ({ answerScroll: obj6.style, answerScrollContainer: obj6.contentContainerStyle } = tmp);
     obj11 = {
       ref,
@@ -993,8 +773,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
           let obj2;
           const tmp = selectedAnswerId === String(answer.answer_id);
           let tmp4;
-          const tmp2 = authStore2;
-          const tmp3 = closure_18;
+          const tmp2 = map1;
+          const tmp3 = closure_17;
           if (tmp) {
             tmp4 = closure_4;
           }
@@ -1006,26 +786,26 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollVo
     const GestureDetector = tmp5(tmp6[21]).GestureDetector;
     intl2 = tmp5(tmp6[17]).intl;
     answers = message.poll.answers;
-    items2[2] = closure_14(GestureDetector, obj5);
-    tmp9 = closure_15(closure_7, obj);
+    items2[2] = closure_13(GestureDetector, obj5);
+    tmp9 = closure_14(closure_6, obj);
   }
   return tmp9;
 });
 const __initData = { code: "function PollVotesActionSheetTsx1(){const{opacity}=this.__closure;return{flex:1,opacity:opacity.get(),marginBottom:32};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResults() {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResults() {
   let items;
   let tmp5Result;
   const obj = react2;
   const cResult = obj.c(14);
-  const tmp4 = closure_16();
+  const tmp4 = closure_15();
   const noResultsContainer = tmp4.noResultsContainer;
   const tmp6 = useThemeDefault();
   const obj2 = shared;
   if (obj2.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(11544);
+    tmp5Result = tmp5(11473);
   } else {
-    tmp5Result = tmp5(11545);
+    tmp5Result = tmp5(11474);
   }
   if (cResult[0] === tmp4.noResultsImage) {
     let tmp8;
@@ -1048,7 +828,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResu
     }
     if (cResult[4] !== tmp4.noResultsTitle) {
       const obj3 = { style: noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary", children: tmp11 };
-      const tmp15 = authStore2(Text_Text.Text, obj3);
+      const tmp15 = map1(Text_Text.Text, obj3);
       cResult[4] = tmp4.noResultsTitle;
       cResult[5] = tmp15;
       tmp13 = tmp15;
@@ -1067,7 +847,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResu
     }
     if (cResult[7] !== tmp4.noResultsSubtitle) {
       const obj4 = { style: noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: tmp16 };
-      const tmp20 = authStore2(Text_Text.Text, obj4);
+      const tmp20 = map1(Text_Text.Text, obj4);
       cResult[7] = tmp4.noResultsSubtitle;
       cResult[8] = tmp20;
       tmp18 = tmp20;
@@ -1087,7 +867,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResu
     }
     const obj5 = { style: noResultsContainer, children: items };
     items = [tmp8, tmp13, tmp18];
-    const tmp24 = authStore3(metroImportDefault, obj5);
+    const tmp24 = authStore3(metroRequire, obj5);
     cResult[9] = tmp4.noResultsContainer;
     cResult[10] = tmp8;
     cResult[11] = tmp13;
@@ -1096,7 +876,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResu
     tmp21 = tmp24;
   }
   const obj6 = { style: tmp4.noResultsImage, source: tmp5Result };
-  const tmp9 = authStore2(metroRequire, obj6);
+  const tmp9 = map1(FastImageDefault, obj6);
   cResult[0] = tmp4.noResultsImage;
   cResult[1] = tmp5Result;
   cResult[2] = tmp9;
@@ -1106,28 +886,28 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResu
   let intl2;
   let items;
   let tmp2Result;
-  const tmp = closure_16();
+  const tmp = closure_15();
   const obj = { style: tmp.noResultsContainer, children: items };
   const obj2 = { style: tmp.noResultsImage, source: tmp2Result };
   const tmp4 = useThemeDefault();
+  const tmp8 = FastImageDefault;
   const obj3 = shared;
   const tmp5 = authStore3;
-  const tmp6 = metroImportDefault;
-  const tmp8 = metroRequire;
+  const tmp6 = metroRequire;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(11544);
+    tmp2Result = tmp2(11473);
   } else {
-    tmp2Result = tmp2(11545);
+    tmp2Result = tmp2(11474);
   }
-  items = [authStore2(tmp8, obj2), , ];
+  items = [map1(tmp8, obj2), , ];
   const obj4 = { style: tmp.noResultsTitle, variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };
-  const Text = tmp9(5086).Text;
+  const Text = tmp9(5087).Text;
   intl = tmp9(1126).intl;
-  items[1] = authStore2(Text, obj4);
+  items[1] = map1(Text, obj4);
   const obj5 = { style: tmp.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: intl2.string(intl3.t.bwytdh) };
-  const Text2 = tmp9(5086).Text;
+  const Text2 = tmp9(5087).Text;
   intl2 = tmp9(1126).intl;
-  items[2] = authStore2(Text2, obj5);
+  items[2] = map1(Text2, obj5);
   return tmp5(tmp6, obj);
 });
 let result = size.fileFinishedImporting("modules/polls/native/PollVotesActionSheet.tsx");
@@ -1140,10 +920,10 @@ export default function PollVotesActionSheet(channelId) {
   let selectedAnswerId;
   let stateFromStores;
   const initialAnswerId = channelId.initialAnswerId;
-  let tmp = closure_16();
+  let tmp = closure_15();
   let obj = react;
   const tmp3 = messageId(selectedAnswerId[23]);
-  const analyticsLocations = tmp3(messageId(selectedAnswerId[40]).POLL_VOTES).analyticsLocations;
+  const analyticsLocations = tmp3(messageId(selectedAnswerId[41]).POLL_VOTES).analyticsLocations;
   const tmp4 = stateFromStores(react.useState(initialAnswerId), 2);
   selectedAnswerId = tmp4[0];
   const items = [MessageStore];
@@ -1196,9 +976,9 @@ export default function PollVotesActionSheet(channelId) {
     }
     const obj3 = { value: analyticsLocations, children: null };
     const AnalyticsLocationProvider = tmp7(tmp2[23]).AnalyticsLocationProvider;
-    const obj4 = { scrollable: true, header: closure_14(closure_19, obj5), children: null };
+    const obj4 = { scrollable: true, header: closure_13(closure_18, obj5), children: null };
     obj5 = { message: stateFromStores, selectedAnswerId, setSelectedAnswerId: tmp6 };
-    BottomSheet = tmp7(tmp2[42]).BottomSheet;
+    BottomSheet = tmp7(tmp2[43]).BottomSheet;
     let text;
     const obj6 = { style: tmp.answerName, variant: "text-sm/semibold", color: "text-default", children: items3 };
     const Text = tmp7(tmp2[18]).Text;
@@ -1210,7 +990,7 @@ export default function PollVotesActionSheet(channelId) {
     const intl = tmp7(tmp2[17]).intl;
     const obj7 = { count: num };
     items3[2] = intl.format(channelId(selectedAnswerId[17]).t["SG/Cyy"], obj7);
-    const items4 = [closure_15(Text, obj6), ];
+    const items4 = [closure_14(Text, obj6), ];
     if (null != memo) {
       let tmp14Result;
       if (num > 0) {
@@ -1219,10 +999,10 @@ export default function PollVotesActionSheet(channelId) {
       }
       items4[1] = tmp14Result;
       obj4.children = items4;
-      obj3.children = closure_15(BottomSheet, obj4);
-      return closure_14(AnalyticsLocationProvider, obj3);
+      obj3.children = closure_14(BottomSheet, obj4);
+      return closure_13(AnalyticsLocationProvider, obj3);
     }
-    tmp14Result = tmp14(closure_22, {});
+    tmp14Result = tmp14(closure_21, {});
   } else {
     return null;
   }

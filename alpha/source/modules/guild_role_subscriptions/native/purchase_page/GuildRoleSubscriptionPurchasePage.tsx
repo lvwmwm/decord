@@ -1,26 +1,26 @@
-// Module ID: 16786
-// Function ID: 16787
+// Module ID: 16910
+// Function ID: 16911
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1205, 2063, 2086, 1085, 21, 5090, 587, 558, 576, 5086, 1126, 1200, 10808, 6654, 15305, 15307, 15308, 573, 16787, 5417, 16789, 16790, 16791, 8134, 6164, 6161, 16792, 9493, 16794, 16795, 4763, 16796, 2]
+// Dependencies: [19, 17, 1205, 2064, 2086, 1085, 21, 5091, 587, 558, 576, 5087, 1126, 1200, 10978, 6661, 15418, 15420, 15421, 573, 16911, 5418, 16913, 16914, 16915, 8142, 6163, 6165, 16916, 9531, 16918, 16919, 4765, 16920, 2]
 
-// Module 16786 (GuildRoleSubscriptionPurchasePage)
+// Module 16910 (GuildRoleSubscriptionPurchasePage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import LinkingDefault from "Linking" /* 4763 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10808 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16796 */;
+import LinkingDefault from "Linking" /* 4765 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8142 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10978 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 16920 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Separa
   const tmp2 = closure_17();
   if (cResult[0] !== tmp2.separator) {
     const obj2 = { style: tmp2.separator };
-    const tmp6 = authStore2(metroRequire, obj2);
+    const tmp6 = authStore3(metroRequire, obj2);
     cResult[0] = tmp2.separator;
     cResult[1] = tmp6;
     tmp3 = tmp6;
@@ -78,7 +78,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Separa
   return tmp3;
 }) : (function Separator() {
   const obj = { style: closure_17().separator };
-  return authStore2(metroRequire, obj);
+  return authStore3(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegalDisclaimer() {
@@ -89,11 +89,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegalD
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(intl6.t.FSPTDI, obj5) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
     obj5 = { termsURL: null, paidURL: null };
     ({ TERMS: obj3.termsURL, PAID_TERMS: obj3.paidURL } = map1);
-    const tmp7 = authStore2(Text, obj2);
+    const tmp7 = authStore3(Text, obj2);
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -107,7 +107,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegalD
   const Text = Text_Text.Text;
   intl = intl6.intl;
   obj2 = { termsURL: map1.TERMS, paidURL: map1.PAID_TERMS };
-  return authStore2(Text, obj);
+  return authStore3(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialBadge(arg0) {
@@ -131,7 +131,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     }
     if (cResult[3] !== text) {
       const obj2 = { variant: "text-sm/medium", color: "text-default", children: text };
-      const tmp10 = authStore2(Text_Text.Text, obj2);
+      const tmp10 = authStore3(Text_Text.Text, obj2);
       cResult[3] = text;
       cResult[4] = tmp10;
       tmp8 = tmp10;
@@ -160,7 +160,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
       }
       const obj3 = { style: tmp4.socialBadge, activeOpacity: num, onPress, children: items };
       items = [tmp6, tmp8, tmp11];
-      const tmp18 = authStore3(hasOwnProperty, obj3);
+      const tmp18 = authStore4(hasOwnProperty, obj3);
       cResult[8] = onPress;
       cResult[9] = tmp4.socialBadge;
       cResult[10] = num;
@@ -174,7 +174,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     if (tmp12) {
       const obj4 = { source: AssetRegistryDefault, style: tmp4.socialBadgeArrow };
       const Icon = tmp(1200).Icon;
-      tmp12 = authStore2(Icon, obj4);
+      tmp12 = authStore3(Icon, obj4);
     }
     cResult[5] = null != onPress;
     cResult[6] = tmp4.socialBadgeArrow;
@@ -182,7 +182,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     tmp11 = tmp12;
   }
   const obj5 = { source: iconSource, style: tmp4.socialBadgeIcon, resizeMode: "contain", disableColor: true };
-  const tmp7 = authStore2(native.Icon, obj5);
+  const tmp7 = authStore3(native.Icon, obj5);
   cResult[0] = iconSource;
   cResult[1] = tmp4.socialBadgeIcon;
   cResult[2] = tmp7;
@@ -198,16 +198,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   let tmp5Result = null != onPress;
   const obj = { style: tmp.socialBadge, activeOpacity: num, onPress, children: items };
   num = 1;
-  const tmp3 = authStore3;
+  const tmp3 = authStore4;
   const tmp4 = hasOwnProperty;
   if (tmp5Result) {
     num = 0.5;
   }
   items = [, , ];
   const obj2 = { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true };
-  items[0] = authStore2(native.Icon, obj2);
-  items[1] = authStore2(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: text });
-  const tmp5 = authStore2;
+  items[0] = authStore3(native.Icon, obj2);
+  items[1] = authStore3(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: text });
+  const tmp5 = authStore3;
   if (tmp5Result) {
     const obj3 = { source: AssetRegistryDefault, style: tmp.socialBadgeArrow };
     const Icon = native.Icon;
@@ -565,15 +565,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                               let items;
                               let obj3;
                               const obj = { style: closure_2.gatedChannel, children: items };
-                              items = [authStore2(native.Spacer, { size: 3 }), , , ];
+                              items = [authStore3(native.Spacer, { size: 3 }), , , ];
                               const obj2 = { size: native.Icon.Sizes.SMALL_20, style: closure_2.gatedChannelIcon, source: obj3.getChannelIcon(stateFromStores1) };
                               const Icon = native.Icon;
                               obj3 = utils_ChannelUtils;
-                              items[1] = authStore2(Icon, obj2);
-                              items[2] = authStore2(native.Spacer, { size: 3 });
+                              items[1] = authStore3(Icon, obj2);
+                              items[2] = authStore3(native.Spacer, { size: 3 });
                               const obj4 = { variant: "text-xs/semibold", color: "text-default", children };
-                              items[3] = authStore2(Text_Text.Text, obj4);
-                              return authStore3(metroRequire, obj);
+                              items[3] = authStore3(Text_Text.Text, obj4);
+                              return authStore4(metroRequire, obj);
                             }
               };
               formatResult = intl2.format(tmp(tmp2[12]).t.A1L1hU, obj7);
@@ -638,7 +638,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
               gap: 16,
               children: mapped.map((listingId) => {
                           const obj = { listingId, guildId };
-                          return authStore2(GuildRoleSubscriptionPurchasePreviewCardDefault, obj, listingId);
+                          return authStore3(GuildRoleSubscriptionPurchasePreviewCardDefault, obj, listingId);
                         })
             };
             const GappedList2 = tmp(tmp2[29]).GappedList;

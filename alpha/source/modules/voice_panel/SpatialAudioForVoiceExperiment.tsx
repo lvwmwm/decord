@@ -1,10 +1,10 @@
-// Module ID: 5244
-// Function ID: 5245
+// Module ID: 5245
+// Function ID: 5246
 // Name: SpatialAudioForVoiceExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 5244 (SpatialAudioForVoiceExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 5245 (SpatialAudioForVoiceExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

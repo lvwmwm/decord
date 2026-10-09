@@ -1,20 +1,20 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13730
+// Function ID: 13731
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 4740, 21, 5090, 587, 5054, 13640, 1999, 1126, 3277, 558, 576, 5086, 2]
+// Dependencies: [17, 4742, 21, 5091, 587, 5055, 13731, 2000, 1126, 3277, 558, 576, 5087, 2]
 
-// Module 13639 (BoostingUnavailablePill)
+// Module 13730 (BoostingUnavailablePill)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef3277 from "module_3277" /* 3277 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4740 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4742 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: formatToPlainString(prop, obj2) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13640, dependencyMap.paths);
+  const tmp2 = asyncRequire(13731, dependencyMap.paths);
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { premiumGroupProductName: closure_5() };

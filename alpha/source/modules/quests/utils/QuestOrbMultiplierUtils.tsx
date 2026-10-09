@@ -1,12 +1,12 @@
-// Module ID: 9552
-// Function ID: 9553
+// Module ID: 9142
+// Function ID: 9143
 // Name: QuestOrbMultiplierUtils
-// Dependencies: [4726, 1395, 1397, 2]
+// Dependencies: [4728, 1396, 1398, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 9552 (QuestOrbMultiplierUtils)
-import PerksStateUtils from "PerksStateUtils" /* 1395 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+// Module 9142 (QuestOrbMultiplierUtils)
+import PerksStateUtils from "PerksStateUtils" /* 1396 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
 import size from "module_2" /* 2 */;
 
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", XBOX_GAME_PASS: "XBOX_GAME_PASS", INELIGIBLE: "INELIGIBLE" };
@@ -29,10 +29,10 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
     if (perks != null) {
       perks = perks.perks;
     }
-    const perkSource = getPerkSource(perks, tmp4(1397).Perk.MORE_QUEST_ORBS);
+    const perkSource = getPerkSource(perks, tmp4(1398).Perk.MORE_QUEST_ORBS);
     let hasItem;
     if (perkSource != null) {
-      hasItem = perkSource.includes(tmp4(1397).PerkSource.SOURCE_NITRO);
+      hasItem = perkSource.includes(tmp4(1398).PerkSource.SOURCE_NITRO);
     }
     if (!hasItem) {
       let XBOX_GAME_PASS;
@@ -40,7 +40,7 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
       if (!tmpResult.canUseQuestOrbMultiplier(perks)) {
         let hasItem1;
         if (perkSource != null) {
-          hasItem1 = perkSource.includes(tmp4(1397).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+          hasItem1 = perkSource.includes(tmp4(1398).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
         }
         XBOX_GAME_PASS = null;
         if (hasItem1) {

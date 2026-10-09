@@ -1,27 +1,27 @@
-// Module ID: 11429
-// Function ID: 11430
+// Module ID: 11336
+// Function ID: 11337
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: [19, 17, 2118, 2086, 5106, 1389, 1085, 21, 5090, 587, 558, 576, 6806, 8233, 11430, 5441, 1200, 6870, 6888, 8597, 8740, 1126, 5086, 11431, 11428, 2]
+// Dependencies: [19, 17, 2118, 2086, 5107, 1390, 1085, 21, 5091, 587, 558, 576, 6813, 8241, 11337, 5442, 1200, 6877, 6895, 8605, 8749, 1126, 5087, 11338, 11335, 2]
 
-// Module 11429 (MentionableSelectComponentActionSheet)
+// Module 11336 (MentionableSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5441 */;
-import RoleIconUtils from "RoleIconUtils" /* 6870 */;
-import RoleIconDefault from "RoleIcon" /* 6888 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8233 */;
-import DiscordTagDefault from "DiscordTag" /* 8740 */;
-import UserIcon from "UserIcon" /* 11431 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5442 */;
+import RoleIconUtils from "RoleIconUtils" /* 6877 */;
+import RoleIconDefault from "RoleIcon" /* 6895 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8241 */;
+import DiscordTagDefault from "DiscordTag" /* 8749 */;
+import UserIcon from "UserIcon" /* 11338 */;
 import react_mod from "react" /* 19 */;
 import GuildRoleStore_mod from "GuildRoleStore" /* 2118 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PresenceStore from "PresenceStore" /* 5106 */;
-import UserStore from "UserStore" /* 1389 */;
+import PresenceStore from "PresenceStore" /* 5107 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -235,7 +235,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionableS
                               }
                             }
                             let colorString;
-                            const ShieldUserIcon = tmp(8597).ShieldUserIcon;
+                            const ShieldUserIcon = tmp(8605).ShieldUserIcon;
                             const tmp8 = authStore;
                             if (role != null) {
                               colorString = role.colorString;
@@ -330,7 +330,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionableS
                           }
                         }
                         let colorString;
-                        const ShieldUserIcon = tmp(8597).ShieldUserIcon;
+                        const ShieldUserIcon = tmp(8605).ShieldUserIcon;
                         const tmp8 = authStore;
                         if (role != null) {
                           colorString = role.colorString;
@@ -384,7 +384,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionableS
                         }
                       }
                       let colorString;
-                      const ShieldUserIcon = tmp(8597).ShieldUserIcon;
+                      const ShieldUserIcon = tmp(8605).ShieldUserIcon;
                       const tmp8 = authStore;
                       if (role != null) {
                         colorString = role.colorString;
@@ -492,7 +492,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionableS
             }
           }
           let colorString;
-          const ShieldUserIcon = tmp(8597).ShieldUserIcon;
+          const ShieldUserIcon = tmp(8605).ShieldUserIcon;
           const tmp8 = authStore;
           if (role != null) {
             colorString = role.colorString;

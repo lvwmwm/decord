@@ -1,25 +1,25 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 17092
+// Function ID: 17093
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 10386, 8747, 4992, 587, 5090, 558, 576, 5086, 16961, 1200, 1414, 1417, 1126, 3827, 5373, 2]
+// Dependencies: [19, 17, 21, 10375, 8756, 4993, 587, 5091, 558, 576, 5087, 17093, 1200, 1415, 1418, 1126, 3827, 5374, 2]
 
-// Module 16960 (ConjurePlanAutomodExamples)
+// Module 17092 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4992 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import BellIcon from "BellIcon" /* 8747 */;
-import ShieldIcon from "ShieldIcon" /* 10386 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 16961 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4993 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import BellIcon from "BellIcon" /* 8756 */;
+import ShieldIcon from "ShieldIcon" /* 10375 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 17093 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj7;
 let obj8;
 let rect;
 let tmp;
-const Text_Text = tmp(5086);
+const Text_Text = tmp(5087);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { blocked: ShieldIcon.ShieldIcon, alert: BellIcon.BellIcon, allowed: CircleCheckIcon.CircleCheckIcon };
@@ -270,7 +270,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
   items2[1] = React3(Avatar, obj4);
   const obj5 = { style: tmp.rowBody, children: items3 };
   const obj6 = { variant: "text-sm/normal", color: "text-default", children: tmp2Result4.renderPlanAutomodExampleContent(example.content) };
-  const Text = tmp2(5086).Text;
+  const Text = tmp2(5087).Text;
   tmp2Result4 = ConjurePlanAutomodOutcomes;
   items3 = [React3(Text, obj6), React3(closure_9, { reason: result })];
   items2[2] = hasOwnProperty(View, obj5);
@@ -466,7 +466,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl2.string(_modDef3827.z4ZKYG) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl2 = tmp(1126).intl;
     const tmp14 = React3(Text, obj3);
     cResult[2] = tmp14;
@@ -535,7 +535,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
         }
       }
       const obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(_modDef3827.bo4MOx) };
-      const Text2 = tmp(5086).Text;
+      const Text2 = tmp(5087).Text;
       intl3 = tmp(1126).intl;
       const tmp26 = React3(Text2, obj5);
       cResult[11] = tmp26;

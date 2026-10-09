@@ -1,23 +1,24 @@
-// Module ID: 12413
-// Function ID: 12414
+// Module ID: 12331
+// Function ID: 12332
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 5090, 8270, 6121, 4902, 4772, 4766, 1126, 4997, 587, 5054, 6829, 6803, 6763, 5963, 5375, 2]
+// Dependencies: [5, 32, 19, 21, 5091, 8278, 6123, 4903, 4768, 1126, 5055, 6836, 6810, 6770, 5965, 5376, 2]
 
-// Module 12413 (JoinRequestRejectionReasonActionSheet)
+// Module 12331 (JoinRequestRejectionReasonActionSheet)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, _undefined, c4;
+let BottomSheet, c4;
 
 let metroImportDefault;
 let metroRequire;
 class JoinRequestRejectionReasonActionSheet {
   constructor(onDismiss) {
     let SafeAreaPaddingView;
+    let _undefined;
     let bottomSheetClose;
     let bottomSheetRef;
     let c5;
@@ -35,7 +36,7 @@ class JoinRequestRejectionReasonActionSheet {
     react = undefined;
     onDismiss = onDismiss.onDismiss;
     const tmp = closure_8();
-    const userId = joinRequest.userId;
+    let userId = joinRequest.userId;
     let guildId = joinRequest.guildId;
     const joinRequestId = joinRequest.joinRequestId;
     const tmp2 = value(react.useState(), 2);
@@ -49,13 +50,11 @@ class JoinRequestRejectionReasonActionSheet {
     const tmp6 = value(react.useState(false), 2);
     const callback = react.useCallback(joinRequestId(function*(arg0, value) {
       let closure_0;
-      let closure_1;
       let closure_2;
       let intl;
-      let intl2;
-      let v3;
-      if (_undefined === 2) {
-        _undefined = 3;
+      let v2;
+      if (c4 === 2) {
+        c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -69,103 +68,86 @@ class JoinRequestRejectionReasonActionSheet {
       } else {
         let c3;
         try {
-          _undefined = 2;
-          if (0 === c4) {
+          c4 = 2;
+          if (0 === userId) {
             if (arg0 === 1) {
-              _undefined = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              _undefined = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
             } else {
               _undefined(true);
               c3 = 2;
-              const obj9 = tmp(guildId[6]);
-              c4 = 3;
-              _undefined = 1;
-              const obj5 = { value: obj9.updateGuildJoinRequest(guildId, userId, joinRequestId, tmp(guildId[7]).GuildJoinRequestApplicationStatuses.REJECTED, first), done: false };
-              return obj5;
+              const obj7 = userId(guildId[6]);
+              userId = 3;
+              c4 = 1;
+              const obj4 = { value: obj7.updateGuildJoinRequest(guildId, userId, joinRequestId, tmp(guildId[7]).GuildJoinRequestApplicationStatuses.REJECTED, first), done: false };
+              return obj4;
             }
-          } else if (1 === c4) {
+          } else if (1 === userId) {
             c3 = 0;
-            closure_129_5(false);
+            closure_128_5(false);
             throw guildId;
           } else {
-            if (2 === c4) {
+            if (2 === userId) {
               c3 = 1;
-              closure_129_0();
+              closure_128_0();
             } else if (arg0 === 1) {
-              _undefined = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              closure_129_5(false);
-              _undefined = 3;
-              const obj6 = { value, done: true };
-              return obj6;
+              closure_128_5(false);
+              c4 = 3;
+              const obj = { value, done: true };
+              return obj;
             } else {
-              const obj8 = tmp(guildId[8]);
-              if (obj8.getDesignSystemsNotificationComponents("JoinRequestRejectionReasonActionSheet")) {
-                const obj7 = { text: intl2.string(tmp(guildId[10]).t["TQY/Rd"]), variant: "critical" };
-                const openMana = tmp2(guildId[9]).openMana;
-                const tmp18 = tmp2(guildId[9]);
-                intl2 = tmp(guildId[10]).intl;
-                openMana("JOIN_REQUEST_REJECT", obj7);
-              } else {
-                let obj = {
-                  key: "JOIN_REQUEST_REJECT",
-                  content: intl.string(tmp(guildId[10]).t["TQY/Rd"]),
-                  icon() {
-                              const obj = { color: closure_1_1(closure_1_2[12]).colors.BACKGROUND_FEEDBACK_CRITICAL, secondaryColor: closure_1_1(closure_1_2[12]).colors.ICON_FEEDBACK_CRITICAL };
-                              const CircleXIcon = closure_1_0(closure_1_2[11]).CircleXIcon;
-                              return closure_1_6(CircleXIcon, obj);
-                            }
-                };
-                const open = tmp2(guildId[9]).open;
-                const tmp9 = tmp2(guildId[9]);
-                intl = tmp(guildId[10]).intl;
-                open(obj);
-              }
-              const obj3 = tmp2(guildId[13]);
-              obj3.hideAllActionSheets();
+              const obj5 = { text: intl.string(tmp(guildId[9]).t["TQY/Rd"]), variant: "critical" };
+              const openMana = userId(guildId[8]).openMana;
+              const tmp29 = userId(guildId[8]);
+              intl = tmp(guildId[9]).intl;
+              openMana("JOIN_REQUEST_REJECT", obj5);
+              const obj6 = userId(guildId[10]);
+              obj6.hideAllActionSheets();
               c3 = 1;
             }
             c3 = 0;
-            closure_129_5(false);
-            _undefined = 3;
+            closure_128_5(false);
+            c4 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp43) {
-          guildId = tmp43;
+        } catch (tmp20) {
+          guildId = tmp20;
           if (0 === c3) {
-            _undefined = 3;
-            throw tmp43;
-          } else if (1 === tmp45) {
-            c4 = 1;
+            c4 = 3;
+            throw tmp20;
+          } else if (1 === tmp22) {
+            userId = 1;
           } else {
-            c4 = 2;
+            userId = 2;
           }
         }
       }
     }), items);
     let obj2 = { bodyStyles: tmp.container, onDismiss, ref: bottomSheetRef, children: closure_7(SafeAreaPaddingView, obj3) };
-    BottomSheet = onError(guildId[14]).BottomSheet;
+    BottomSheet = onError(guildId[11]).BottomSheet;
     obj3 = { bottom: true, children: items1 };
-    SafeAreaPaddingView = onError(guildId[15]).SafeAreaPaddingView;
-    let obj4 = { label: intl.string(onError(guildId[10]).t["mFP/qw"]), maxLength: 160, onChange: tmp4, value };
-    const TextArea = onError(guildId[16]).TextArea;
-    intl = onError(guildId[10]).intl;
+    SafeAreaPaddingView = onError(guildId[12]).SafeAreaPaddingView;
+    let obj4 = { label: intl.string(onError(guildId[9]).t["mFP/qw"]), maxLength: 160, onChange: tmp4, value };
+    const TextArea = onError(guildId[13]).TextArea;
+    intl = onError(guildId[9]).intl;
     items1 = [closure_6(TextArea, obj4), ];
     let obj5 = { direction: "horizontal", style: tmp.buttonGroup, children: items2 };
-    const ButtonGroup = onError(guildId[17]).ButtonGroup;
-    let obj6 = { grow: true, variant: "secondary", text: intl2.string(onError(guildId[10]).t["ETE/oC"]), onPress: bottomSheetClose, disabled: tmp7 };
-    const Button = onError(guildId[18]).Button;
-    intl2 = onError(guildId[10]).intl;
+    const ButtonGroup = onError(guildId[14]).ButtonGroup;
+    let obj6 = { grow: true, variant: "secondary", text: intl2.string(onError(guildId[9]).t["ETE/oC"]), onPress: bottomSheetClose, disabled: tmp7 };
+    const Button = onError(guildId[15]).Button;
+    intl2 = onError(guildId[9]).intl;
     items2 = [closure_6(Button, obj6), ];
-    let obj7 = { grow: true, variant: "destructive", text: intl3.string(onError(guildId[10]).t.hDtbsz), onPress: callback, disabled: tmp7 };
-    const Button2 = onError(guildId[18]).Button;
-    intl3 = onError(guildId[10]).intl;
+    let obj7 = { grow: true, variant: "destructive", text: intl3.string(onError(guildId[9]).t.hDtbsz), onPress: callback, disabled: tmp7 };
+    const Button2 = onError(guildId[15]).Button;
+    intl3 = onError(guildId[9]).intl;
     items2[1] = closure_6(Button2, obj7);
     items1[1] = closure_7(ButtonGroup, obj5);
     return closure_6(BottomSheet, obj2);

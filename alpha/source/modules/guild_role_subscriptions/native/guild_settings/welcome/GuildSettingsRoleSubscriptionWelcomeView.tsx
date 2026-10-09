@@ -1,30 +1,30 @@
-// Module ID: 18211
-// Function ID: 18212
+// Module ID: 18373
+// Function ID: 18374
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 15300, 1085, 18212, 21, 5090, 587, 558, 576, 11938, 1126, 18213, 5086, 18214, 1502, 5054, 18216, 1999, 18216, 8555, 5375, 1200, 5376, 5008, 18224, 18228, 18237, 18240, 18245, 18246, 1503, 1272, 8941, 6261, 18210, 4765, 6164, 18247, 6803, 2]
+// Dependencies: [32, 19, 17, 15413, 1085, 18374, 21, 5091, 587, 558, 576, 11875, 1126, 18375, 5087, 18376, 1503, 5055, 18378, 2000, 18378, 8563, 5376, 1200, 5377, 5009, 18386, 18390, 18399, 18402, 18407, 18408, 1504, 1273, 8952, 6263, 18372, 4767, 6163, 18409, 6810, 2]
 
-// Module 18211 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 18373 (GuildSettingsRoleSubscriptionWelcomeView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import NavigatorConstants from "NavigatorConstants" /* 6261 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11938 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 18212 */;
-import WarningNoticeDefault from "WarningNotice" /* 18213 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 18216 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 18224 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 18228 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 18237 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11875 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15413 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 18374 */;
+import WarningNoticeDefault from "WarningNotice" /* 18375 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 18378 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 18386 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 18390 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 18399 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ function StartEarningButton(isTermsAccepted) {
         navigation.push(constants.SECURITY);
       }
     };
-    const tmp2 = asyncRequire(18216, dependencyMap.paths);
+    const tmp2 = asyncRequire(18378, dependencyMap.paths);
     return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   const obj2 = {
@@ -364,7 +364,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionConta
       }
       const obj3 = { onLayout, style: tmp4.container, children: items };
       items = [tmp5, tmp9, children, tmp11];
-      const tmp18 = closure_12(metroRequire, obj3);
+      const tmp18 = authStore2(metroRequire, obj3);
       cResult[8] = children;
       cResult[9] = onLayout;
       cResult[10] = tmp4.container;
@@ -377,7 +377,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionConta
     let tmp13 = null != footer;
     if (tmp13) {
       const obj4 = { style: tmp4.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
-      tmp13 = unpackModuleId(tmp(5086).Text, obj4);
+      tmp13 = unpackModuleId(tmp(5087).Text, obj4);
     }
     cResult[5] = footer;
     cResult[6] = tmp4.sectionFooter;
@@ -406,7 +406,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionConta
   items[1] = unpackModuleId(Text_Text.Text, obj3);
   items[2] = children;
   let tmp4Result = null != footer;
-  const tmp2 = closure_12;
+  const tmp2 = authStore2;
   const tmp3 = metroRequire;
   const tmp4 = unpackModuleId;
   if (tmp4Result) {

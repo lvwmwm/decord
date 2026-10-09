@@ -1,18 +1,18 @@
-// Module ID: 17595
-// Function ID: 17596
+// Module ID: 17747
+// Function ID: 17748
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 5090, 4927, 587, 558, 576, 11127, 1630, 5086, 2]
+// Dependencies: [19, 17, 21, 5091, 4928, 587, 558, 576, 14644, 1631, 5087, 2]
 
-// Module 17595 (ActivitiesDebugOverlay)
+// Module 17747 (ActivitiesDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import useThermalState from "useThermalState" /* 11127 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import useThermalState from "useThermalState" /* 14644 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import ColorUtils_mod from "ColorUtils" /* 4927 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import ColorUtils_mod from "ColorUtils" /* 4928 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let rect;
 let tmp5;
-const useSafeAreaInsetsDefault = tmp5(1630);
+const useSafeAreaInsetsDefault = tmp5(1631);
 const View = react_native.View;
 ({ jsxs: closure_4, jsx: hasOwnProperty } = Fragment);
 let c6 = 16;

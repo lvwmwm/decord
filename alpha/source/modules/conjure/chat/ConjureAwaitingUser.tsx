@@ -1,11 +1,11 @@
-// Module ID: 17007
-// Function ID: 17008
+// Module ID: 17163
+// Function ID: 17164
 // Name: ConjureAwaitingUser
-// Dependencies: [13073, 2]
+// Dependencies: [12948, 2]
 // Exports: activeAwaitingUser
 
-// Module 17007 (ConjureAwaitingUser)
-import ConjureChatStore from "ConjureChatStore" /* 13073 */;
+// Module 17163 (ConjureAwaitingUser)
+import ConjureChatStore from "ConjureChatStore" /* 12948 */;
 import size from "module_2" /* 2 */;
 
 const turnSettled = ConjureChatStore.turnSettled;

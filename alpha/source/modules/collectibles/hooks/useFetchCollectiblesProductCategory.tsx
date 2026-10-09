@@ -1,12 +1,12 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 12728
+// Function ID: 12729
 // Name: useFetchCollectiblesProductCategory
-// Dependencies: [32, 7252, 558, 576, 10076, 573, 2]
+// Dependencies: [32, 7257, 558, 576, 10061, 573, 2]
 
-// Module 11180 (useFetchCollectiblesProductCategory)
-import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10076 */;
+// Module 12728 (useFetchCollectiblesProductCategory)
+import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10061 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7257 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

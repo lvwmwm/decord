@@ -1,13 +1,13 @@
-// Module ID: 11591
-// Function ID: 11592
+// Module ID: 11524
+// Function ID: 11525
 // Name: PlaygroundAccessExperiment
-// Dependencies: [1389, 1452, 558, 576, 504, 2]
+// Dependencies: [1390, 1453, 558, 576, 504, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment
 
-// Module 11591 (PlaygroundAccessExperiment)
+// Module 11524 (PlaygroundAccessExperiment)
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1389 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import UserStore from "UserStore" /* 1390 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

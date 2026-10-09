@@ -1,21 +1,21 @@
-// Module ID: 11752
-// Function ID: 11753
+// Module ID: 11689
+// Function ID: 11690
 // Name: useEmbeddedAppsForChannel
-// Dependencies: [19, 5106, 1389, 2062, 558, 576, 504, 4696, 6847, 1387, 2]
+// Dependencies: [19, 5107, 1390, 2063, 558, 576, 504, 4698, 6854, 1388, 2]
 
-// Module 11752 (useEmbeddedAppsForChannel)
-import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 2062 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4696 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6847 */;
+// Module 11689 (useEmbeddedAppsForChannel)
+import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 2063 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4698 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6854 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5106 */;
-import UserStore from "UserStore" /* 1389 */;
+import PresenceStore from "PresenceStore" /* 5107 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const EmbeddedActivitiesStore = EmbeddedActivitiesStore2;
-let _require, application_id, dependencyMap, findActivity, importDefault, map, set;
+let _require, application_id, dependencyMap, importDefault, map, set;
 
 const NO_ACTIVITIES = EmbeddedActivitiesStore2.NO_ACTIVITIES;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -302,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
     }
     return tmp13;
   });
-  const found = mapped1.filter(tmp22(1387).isNotNullish);
+  const found = mapped1.filter(tmp22(1388).isNotNullish);
   cResult[10] = tmp7;
   cResult[11] = stateFromStoresArray;
   cResult[12] = arr;
@@ -395,24 +395,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
       const item = closure_0.forEach((embeddedActivity) => {
         closure_0 = embeddedActivity;
         let value;
-        findActivity = findActivity.findActivity;
         if (embeddedActivity != null) {
           const userIds = embeddedActivity.embeddedActivity.userIds;
           const iter = userIds.values();
           value = iter.next().value;
         }
-        let id;
-        const findActivityResult = findActivity(value, (application_id) => {
-          let id;
-          application_id = application_id.application_id;
-          if (application != null) {
-            application = application.application;
+        let findActivityResult;
+        if (null != value) {
+          findActivityResult = closure_2_4.findActivity(value, (application_id) => {
+            let id;
+            application_id = application_id.application_id;
             if (application != null) {
-              id = application.id;
+              application = application.application;
+              if (application != null) {
+                id = application.id;
+              }
             }
-          }
-          return application_id === id;
-        });
+            return application_id === id;
+          });
+        }
+        let id;
         set = map.set;
         if (embeddedActivity != null) {
           let application = embeddedActivity.application;
@@ -448,24 +450,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
     const item = closure_0.forEach((embeddedActivity) => {
       closure_0 = embeddedActivity;
       let value;
-      findActivity = findActivity.findActivity;
       if (embeddedActivity != null) {
         const userIds = embeddedActivity.embeddedActivity.userIds;
         const iter = userIds.values();
         value = iter.next().value;
       }
-      let id;
-      const findActivityResult = findActivity(value, (application_id) => {
-        let id;
-        application_id = application_id.application_id;
-        if (application != null) {
-          application = application.application;
+      let findActivityResult;
+      if (null != value) {
+        findActivityResult = closure_2_4.findActivity(value, (application_id) => {
+          let id;
+          application_id = application_id.application_id;
           if (application != null) {
-            id = application.id;
+            application = application.application;
+            if (application != null) {
+              id = application.id;
+            }
           }
-        }
-        return application_id === id;
-      });
+          return application_id === id;
+        });
+      }
+      let id;
       set = map.set;
       if (embeddedActivity != null) {
         let application = embeddedActivity.application;

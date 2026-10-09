@@ -1,25 +1,25 @@
-// Module ID: 6800
-// Function ID: 6801
+// Module ID: 6807
+// Function ID: 6808
 // Name: GuildOnboardingModal
-// Dependencies: [19, 6153, 2063, 2086, 2115, 6778, 6775, 1085, 21, 1112, 6801, 6203, 6838, 6784, 6866, 6802, 558, 576, 504, 6783, 6127, 1126, 6679, 2]
+// Dependencies: [19, 6155, 2064, 2086, 2115, 6785, 6782, 1085, 21, 1112, 6808, 6205, 6845, 6791, 6873, 6809, 558, 576, 504, 6790, 6129, 1126, 6686, 2]
 
-// Module 6800 (GuildOnboardingModal)
+// Module 6807 (GuildOnboardingModal)
 import Fragment from "Fragment" /* 21 */;
 import router_utils from "router_utils" /* 1112 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6127 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6775 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6783 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6784 */;
-import GuildOnboardingPromptsDefault from "GuildOnboardingPrompts" /* 6801 */;
-import GuildOnboardingPrompt from "GuildOnboardingPrompt" /* 6802 */;
-import GuildOnboardingConnectionPromptDefault from "GuildOnboardingConnectionPrompt" /* 6838 */;
-import GuildOnboardingCompletedDefault from "GuildOnboardingCompleted" /* 6866 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6129 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6782 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6790 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6791 */;
+import GuildOnboardingPromptsDefault from "GuildOnboardingPrompts" /* 6808 */;
+import GuildOnboardingPrompt from "GuildOnboardingPrompt" /* 6809 */;
+import GuildOnboardingConnectionPromptDefault from "GuildOnboardingConnectionPrompt" /* 6845 */;
+import GuildOnboardingCompletedDefault from "GuildOnboardingCompleted" /* 6873 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6153 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6155 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6778 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6785 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -130,7 +130,7 @@ function getScreens(guildId) {
       return jsx(GuildOnboardingPrompt.RulesPrompt, { guildId, onClose: ChannelStore });
     }
   };
-  obj4 = guildId(6203);
+  obj4 = guildId(6205);
   return obj;
 }
 let constants = GuildOnboardingConstants.GuildOnboardingModalStates;

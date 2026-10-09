@@ -1,9 +1,9 @@
-// Module ID: 12212
-// Function ID: 12213
+// Module ID: 12151
+// Function ID: 12152
 // Name: useCommunicationDisabledCountdownCleanup
-// Dependencies: [19, 558, 576, 7150, 12213, 2]
+// Dependencies: [19, 558, 576, 7155, 12152, 2]
 
-// Module 12212 (useCommunicationDisabledCountdownCleanup)
+// Module 12151 (useCommunicationDisabledCountdownCleanup)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -107,9 +107,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommunica
               tmp8 = globalThis;
               _setTimeout = setTimeout;
               num2 = 1000;
-              closure_4.current = setTimeout(() => { /* body not rendered: F143723 */ }, 1000);
+              closure_4.current = setTimeout(() => { /* body not rendered: F143993 */ }, 1000);
             }
-            return () => { /* body not rendered: F143724 */ };
+            return () => { /* body not rendered: F143994 */ };
           }
         }
       }

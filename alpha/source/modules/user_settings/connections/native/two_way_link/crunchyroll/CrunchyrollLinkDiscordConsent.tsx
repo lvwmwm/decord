@@ -1,14 +1,14 @@
-// Module ID: 9172
-// Function ID: 9173
+// Module ID: 12887
+// Function ID: 12888
 // Name: CrunchyrollLinkDiscordConsent
-// Dependencies: [19, 9167, 1085, 8432, 21, 558, 576, 1502, 9128, 2]
+// Dependencies: [19, 12882, 1085, 8440, 21, 558, 576, 1503, 9195, 2]
 
-// Module 9172 (CrunchyrollLinkDiscordConsent)
+// Module 12887 (CrunchyrollLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 9167 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 12882 */;
 import react from "react" /* 19 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8432 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const obj = navigation(576);
   const cResult = obj.c(9);
   ({ callbackCode, callbackState } = arg0);
-  const obj2 = navigation(1502);
+  const obj2 = navigation(1503);
   const tmp = navigation;
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
@@ -62,7 +62,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
       }
     }
   }
-  const tmp8 = jsx(tmp(9128).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: tmp5, onError: tmp6 });
+  const tmp8 = jsx(tmp(9195).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: tmp5, onError: tmp6 });
   cResult[4] = callbackCode;
   cResult[5] = callbackState;
   cResult[6] = tmp6;
@@ -74,7 +74,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   let callbackState;
   navigation = undefined;
   ({ callbackCode, callbackState } = arg0);
-  const obj = navigation(1502);
+  const obj = navigation(1503);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  return jsx(navigation(9128).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: callback, onError: callback1 });
+  return jsx(navigation(9195).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId, scopes, onNext: callback, onError: callback1 });
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkDiscordConsent.tsx");
 

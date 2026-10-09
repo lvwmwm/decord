@@ -1,21 +1,21 @@
-// Module ID: 7856
-// Function ID: 7857
+// Module ID: 7865
+// Function ID: 7866
 // Name: InteractionStore
-// Dependencies: [32, 502, 2063, 1102, 5439, 5438, 7167, 504, 584, 2]
+// Dependencies: [32, 502, 2064, 1102, 5440, 5439, 7172, 504, 584, 2]
 
-// Module 7856 (InteractionStore)
+// Module 7865 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import InteractionTypes from "InteractionTypes" /* 5438 */;
-import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5439 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
+import InteractionTypes from "InteractionTypes" /* 5439 */;
+import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5440 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7172 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
-let closure_10, closure_8, closure_9;
+let closure_10, closure_12, closure_8, closure_9;
 
 function deleteNonce(nonce) {
   if (null == closure_12[nonce]) {
@@ -39,7 +39,7 @@ const metroImportAll = {};
 const React4 = {};
 const authStore = {};
 let obj;
-let closure_12 = {};
+const authStore2 = {};
 const Store = get_initializedDefault.Store;
 class InteractionStore extends Store {
   initialize() {
@@ -140,7 +140,7 @@ obj = {
       if (null != closure_8[nonce]) {
         const tmp4 = require;
         if (closure_8[nonce].state === interactions_InteractionTypes.InteractionState.QUEUED) {
-          closure_8[nonce].state = tmp4(5439).InteractionState.CREATED;
+          closure_8[nonce].state = tmp4(5440).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);
@@ -206,7 +206,7 @@ obj = {
           delete closure_12[nonce];
         }
       } else {
-        obj = { state: tmp7(5439).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
+        obj = { state: tmp7(5440).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
         const merged = Object.assign(tmp21);
         closure_8[nonce] = obj;
       }

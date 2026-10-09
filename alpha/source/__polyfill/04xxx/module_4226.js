@@ -1,50 +1,42 @@
 // Module ID: 4226
 // Function ID: 4227
-// Dependencies: [4227, 4228, 4229, 4230, 4231]
+// Dependencies: [2136]
 
 // Module 4226
-import formatDistance from "formatDistance" /* 4227 */;
-import buildFormatLongFn from "buildFormatLongFn" /* 4228 */;
-import formatRelative from "formatRelative" /* 4229 */;
-import date_mod from "module_4230" /* 4230 */;
-import date_mod2 from "module_4231" /* 4231 */;
+import buildLocalizeFn from "buildLocalizeFn" /* 2136 */;
 
-let tmp11;
-let tmp3;
-let tmp5;
-let tmp7;
-let tmp9;
-if (!formatDistance) {
-  tmp3 = { default: formatDistance };
-  const obj = { default: formatDistance };
+let obj;
+let obj3;
+let obj4;
+let obj5;
+let obj6;
+let obj7;
+if (!buildLocalizeFn) {
+  obj = { default: buildLocalizeFn };
+  const obj2 = { default: buildLocalizeFn };
 } else {
-  tmp3 = formatDistance;
+  obj = buildLocalizeFn;
 }
-if (!buildFormatLongFn) {
-  tmp5 = { default: buildFormatLongFn };
-  const obj2 = { default: buildFormatLongFn };
-} else {
-  tmp5 = buildFormatLongFn;
-}
-if (!formatRelative) {
-  tmp7 = { default: formatRelative };
-  const obj3 = { default: formatRelative };
-} else {
-  tmp7 = formatRelative;
-}
-let date = date_mod2;
-if (!date) {
-  tmp9 = { default: date };
-  const obj4 = { default: date };
-} else {
-  tmp9 = date;
-}
-date = date_mod2;
-if (!date) {
-  tmp11 = { default: date };
-  const obj5 = { default: date };
-} else {
-  tmp11 = date;
-}
+const date = {
+  ordinalNumber(arg0, arg1) {
+    return String(Number(arg0));
+  },
+  era: obj.default(obj3),
+  quarter: obj.default(obj4),
+  month: obj.default(obj5),
+  day: obj.default(obj6),
+  dayPeriod: obj.default(obj7)
+};
+obj3 = { values: { narrow: ["aC", "dC"], abbreviated: ["a.C.", "d.C."], wide: ["avanti Cristo", "dopo Cristo"] }, defaultWidth: "wide" };
+obj4 = {
+  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["T1", "T2", "T3", "T4"], wide: ["1\u00BA trimestre", "2\u00BA trimestre", "3\u00BA trimestre", "4\u00BA trimestre"] },
+  defaultWidth: "wide",
+  argumentCallback(arg0) {
+    return arg0 - 1;
+  }
+};
+obj5 = { values: { narrow: ["G", "F", "M", "A", "M", "G", "L", "A", "S", "O", "N", "D"], abbreviated: ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"], wide: ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"] }, defaultWidth: "wide" };
+obj6 = { values: { narrow: ["D", "L", "M", "M", "G", "V", "S"], short: ["dom", "lun", "mar", "mer", "gio", "ven", "sab"], abbreviated: ["dom", "lun", "mar", "mer", "gio", "ven", "sab"], wide: ["domenica", "luned\u00EC", "marted\u00EC", "mercoled\u00EC", "gioved\u00EC", "venerd\u00EC", "sabato"] }, defaultWidth: "wide" };
+obj7 = { values: { narrow: { am: "m.", pm: "p.", midnight: "mezzanotte", noon: "mezzogiorno", morning: "mattina", afternoon: "pomeriggio", evening: "sera", night: "notte" }, abbreviated: { am: "AM", pm: "PM", midnight: "mezzanotte", noon: "mezzogiorno", morning: "mattina", afternoon: "pomeriggio", evening: "sera", night: "notte" }, wide: { am: "AM", pm: "PM", midnight: "mezzanotte", noon: "mezzogiorno", morning: "mattina", afternoon: "pomeriggio", evening: "sera", night: "notte" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "m.", pm: "p.", midnight: "mezzanotte", noon: "mezzogiorno", morning: "di mattina", afternoon: "del pomeriggio", evening: "di sera", night: "di notte" }, abbreviated: { am: "AM", pm: "PM", midnight: "mezzanotte", noon: "mezzogiorno", morning: "di mattina", afternoon: "del pomeriggio", evening: "di sera", night: "di notte" }, wide: { am: "AM", pm: "PM", midnight: "mezzanotte", noon: "mezzogiorno", morning: "di mattina", afternoon: "del pomeriggio", evening: "di sera", night: "di notte" } }, defaultFormattingWidth: "wide" };
 
-export default { code: "ja", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
+export default date;

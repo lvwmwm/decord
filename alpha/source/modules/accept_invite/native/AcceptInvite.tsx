@@ -1,26 +1,26 @@
-// Module ID: 12494
-// Function ID: 12495
+// Module ID: 12431
+// Function ID: 12432
 // Name: AcceptInvite
-// Dependencies: [109, 32, 19, 17, 1085, 21, 5090, 587, 1387, 558, 576, 4778, 6658, 12495, 12499, 1414, 1449, 12504, 1496, 6164, 6186, 2]
+// Dependencies: [109, 32, 19, 17, 1085, 21, 5091, 587, 1388, 558, 576, 4779, 6665, 12432, 12436, 1415, 1450, 12441, 1497, 6163, 6188, 2]
 
-// Module 12494 (AcceptInvite)
+// Module 12431 (AcceptInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useToken from "useToken" /* 4778 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import Card_Card from "Card/Card" /* 6186 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6658 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useToken from "useToken" /* 4779 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import Card_Card from "Card/Card" /* 6188 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6665 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -177,7 +177,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
         return tmp25;
       }
       const obj3 = { invite };
-      const tmp28 = first(12495);
+      const tmp28 = first(12432);
       const merged = Object.assign(invite);
       const tmp32 = closure_10(tmp28, obj3);
       cResult[7] = invite;
@@ -193,7 +193,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
         return tmp17;
       }
       const obj4 = { invite };
-      const tmp20 = first(12499);
+      const tmp20 = first(12436);
       const merged1 = Object.assign(invite);
       const tmp24 = closure_10(tmp20, obj4);
       cResult[10] = invite;
@@ -246,12 +246,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
     return closure_10(closure_15, {});
   } else if (constants.DETAILS === first) {
     const obj2 = { invite };
-    const tmp16 = first(12495);
+    const tmp16 = first(12432);
     const merged = Object.assign(invite);
     return closure_10(tmp16, obj2);
   } else if (tmp22.ERROR === first) {
     let obj = { invite };
-    const tmp9 = first(12499);
+    const tmp9 = first(12436);
     const merged1 = Object.assign(invite);
     return closure_10(tmp9, obj);
   } else {
@@ -441,7 +441,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInvi
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp10(12504);
+    guildSplashSource = tmp10(12441);
   } else {
     ({ id: obj3.id, splash: obj3.splash } = guild);
     const obj10 = { id: null, splash: null, size: width * tmpResult.getDevicePixelRatio() };
@@ -480,7 +480,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInvi
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(12504);
+    guildSplashSource = tmp3(12441);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };

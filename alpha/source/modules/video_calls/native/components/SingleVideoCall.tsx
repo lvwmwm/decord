@@ -1,14 +1,14 @@
-// Module ID: 10928
-// Function ID: 10929
+// Module ID: 11103
+// Function ID: 11104
 // Name: SingleVideoCall
-// Dependencies: [19, 10333, 21, 558, 576, 1630, 6841, 5104, 8279, 10721, 1200, 10710, 2]
+// Dependencies: [19, 10320, 21, 558, 576, 1631, 6848, 5105, 8287, 10867, 1200, 10856, 2]
 
-// Module 10928 (SingleVideoCall)
+// Module 11103 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5104 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5105 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8287 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10333 */;
+import ChannelCallStore from "ChannelCallStore" /* 10320 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,10 +26,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
   let obj = channel(576);
   const cResult = obj.c(13);
   ({ participant, channel } = arg0);
-  ({ bottom, right } = analyticsLocations(1630)());
-  analyticsLocations(1630)();
+  ({ bottom, right } = analyticsLocations(1631)());
+  analyticsLocations(1631)();
   const tmp4 = analyticsLocations;
-  analyticsLocations = analyticsLocations(6841)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6848)().analyticsLocations;
   if (cResult[0] !== channel.id) {
     function handleDoubleTap() {
       React3();
@@ -63,8 +63,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
           }
         }
       }
-      tmp4(10721);
-      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1200).AvatarSizes.PROFILE} resizeMode={channel(10710).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
+      tmp4(10867);
+      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1200).AvatarSizes.PROFILE} resizeMode={channel(10856).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
       cResult[8] = tmp6;
       cResult[9] = tmp7;
       cResult[10] = participant;

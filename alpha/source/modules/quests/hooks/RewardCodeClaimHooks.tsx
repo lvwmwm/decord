@@ -1,24 +1,24 @@
-// Module ID: 11159
-// Function ID: 11160
+// Module ID: 12928
+// Function ID: 12929
 // Name: RewardCodeClaimHooks
-// Dependencies: [5, 32, 19, 558, 576, 9537, 5980, 11160, 10580, 7416, 7405, 7415, 5984, 7404, 4757, 2]
+// Dependencies: [5, 32, 19, 558, 576, 9150, 5982, 12929, 9174, 7421, 7410, 7420, 5986, 7409, 4759, 2]
 
-// Module 11159 (RewardCodeClaimHooks)
-import openURLDefault from "openURL" /* 4757 */;
-import QuestTypes from "QuestTypes" /* 5980 */;
-import AdCreativeType from "AdCreativeType" /* 5984 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 7405 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7415 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7416 */;
-import QuestActionCreators from "QuestActionCreators" /* 9537 */;
+// Module 12928 (RewardCodeClaimHooks)
+import openURLDefault from "openURL" /* 4759 */;
+import QuestTypes from "QuestTypes" /* 5982 */;
+import AdCreativeType from "AdCreativeType" /* 5986 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7409 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 7410 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7420 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7421 */;
+import QuestActionCreators from "QuestActionCreators" /* 9150 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c4, c7, closure_12;
+let _require, c4, c7;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFetchRewardCode(isClaimingReward) {
@@ -434,7 +434,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimRewa
   const tmpResult2 = tmp(hasError[8]);
   const getQuestImpressionId = tmpResult2.useGetQuestImpressionId();
   const tmp6 = questContentPosition(claimCode);
-  closure_12 = tmp6;
+  let closure_12 = tmp6;
   if (cResult[0] === claimCode) {
     if (cResult[1] === fetchCode) {
       if (cResult[2] === getQuestImpressionId) {
@@ -544,7 +544,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimRewa
   let obj2 = claimCode(hasError[8]);
   const getQuestImpressionId = obj2.useGetQuestImpressionId();
   const tmp5 = GET_REWARD_CODE(claimCode);
-  closure_12 = tmp5;
+  let closure_12 = tmp5;
   const items = [claimCode, fetchCode, hasError, onDismiss, , , , , , , , , , ];
   ({ id: arr[4], userStatus } = quest);
   let claimedAt;

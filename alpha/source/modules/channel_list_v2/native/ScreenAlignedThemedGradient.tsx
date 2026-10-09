@@ -1,16 +1,16 @@
-// Module ID: 16327
-// Function ID: 16328
+// Module ID: 16446
+// Function ID: 16447
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 5090, 11596, 558, 576, 9243, 10211, 16248, 4810, 2]
+// Dependencies: [17, 21, 5091, 11529, 558, 576, 9281, 10196, 16367, 4811, 2]
 
-// Module 16327 (ScreenAlignedThemedGradient)
+// Module 16446 (ScreenAlignedThemedGradient)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import useActiveTheme from "useActiveTheme" /* 9243 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10211 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11596 */;
+import useActiveTheme from "useActiveTheme" /* 9281 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10196 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11529 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

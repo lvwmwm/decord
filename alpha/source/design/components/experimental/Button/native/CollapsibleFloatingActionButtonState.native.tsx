@@ -1,11 +1,11 @@
-// Module ID: 8525
-// Function ID: 8526
+// Module ID: 8533
+// Function ID: 8534
 // Name: CollapsibleFloatingActionButtonState
-// Dependencies: [19, 558, 576, 4810, 2]
+// Dependencies: [19, 558, 576, 4811, 2]
 
-// Module 8525 (CollapsibleFloatingActionButtonState)
+// Module 8533 (CollapsibleFloatingActionButtonState)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

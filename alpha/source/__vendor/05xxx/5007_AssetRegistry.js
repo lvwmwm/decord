@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "f6824e7bd3f8a83813ab333cc29423f8", name: "yellow-alert", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/age_gate/native/images", width: 24, height: 24, scales: [2, 3], hash: "d591eaa154611b58ebc00af8c514af58", name: "check", type: "png" });

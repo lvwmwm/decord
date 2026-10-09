@@ -1,19 +1,19 @@
-// Module ID: 5974
-// Function ID: 5975
+// Module ID: 5976
+// Function ID: 5977
 // Name: LegacyTokens
-// Dependencies: [17, 5090, 4929, 587, 4927, 2]
+// Dependencies: [17, 5091, 4930, 587, 4928, 2]
 
-// Module 5974 (LegacyTokens)
+// Module 5976 (LegacyTokens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import shared from "shared" /* 4929 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import shared from "shared" /* 4930 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let theme;
 
 let tmp;
-const ColorUtils = tmp(4927);
+const ColorUtils = tmp(4928);
 const Platform = react_native.Platform;
 let createStyles = createStyles_mod;
 const result = createStyles.experimental_createToken((theme) => {
@@ -431,15 +431,6 @@ const result53 = createStyles.experimental_createToken((theme) => {
 });
 createStyles = createStyles_mod;
 const result54 = createStyles.experimental_createToken((theme) => {
-  let str = "rgba(0, 0, 0, 0.16)";
-  const obj = shared;
-  if (obj.isThemeDark(theme.theme)) {
-    str = "rgba(0, 0, 0, 0.24)";
-  }
-  return str;
-});
-createStyles = createStyles_mod;
-const result55 = createStyles.experimental_createToken((theme) => {
   let str = "rgba(106, 116, 128, 0.16)";
   const obj = shared;
   if (obj.isThemeDark(theme.theme)) {
@@ -449,7 +440,7 @@ const result55 = createStyles.experimental_createToken((theme) => {
 });
 createStyles = createStyles_mod;
 let c3 = 0.5;
-const result56 = createStyles.experimental_createToken((theme) => {
+const result55 = createStyles.experimental_createToken((theme) => {
   let str = "rgba(106, 116, 128, 0.16)";
   const obj = shared;
   if (obj.isThemeDark(theme.theme)) {
@@ -458,7 +449,7 @@ const result56 = createStyles.experimental_createToken((theme) => {
   return str;
 });
 createStyles = createStyles_mod;
-const result57 = createStyles.experimental_createToken((theme) => {
+const result56 = createStyles.experimental_createToken((theme) => {
   let hexWithOpacityResult;
   const obj = shared;
   const isThemeDarkResult = obj.isThemeDark(theme.theme);
@@ -473,7 +464,7 @@ const result57 = createStyles.experimental_createToken((theme) => {
   return hexWithOpacityResult;
 });
 createStyles = createStyles_mod;
-const result58 = createStyles.experimental_createToken((theme) => {
+const result57 = createStyles.experimental_createToken((theme) => {
   let hexWithOpacityResult;
   const obj = shared;
   const isThemeDarkResult = obj.isThemeDark(theme.theme);
@@ -488,7 +479,7 @@ const result58 = createStyles.experimental_createToken((theme) => {
   return hexWithOpacityResult;
 });
 createStyles = createStyles_mod;
-const result59 = createStyles.experimental_createToken((theme) => {
+const result58 = createStyles.experimental_createToken((theme) => {
   let PRIMARY_500;
   const obj = shared;
   if (obj.isThemeDark(theme.theme)) {
@@ -499,7 +490,7 @@ const result59 = createStyles.experimental_createToken((theme) => {
   }
   return PRIMARY_500;
 });
-const result60 = size.fileFinishedImporting("design/migrations/native/LegacyTokens.tsx");
+const result59 = size.fileFinishedImporting("design/migrations/native/LegacyTokens.tsx");
 
 export const DARK_PRIMARY_630_LIGHT_PRIMARY_230 = result;
 export const DARK_WHITE_500_LIGHT_PRIMARY_660 = result1;
@@ -555,9 +546,8 @@ export const DARK_1_LIGHT_04 = result50;
 export const DARK_03_LIGHT_02 = result51;
 export const DARK_024_LIGHT_016 = result52;
 export const FORM_TERNARY_CHECK_BOX_PASSTHROUGH_ACTIVE_BG = result53;
-export const TOAST_CONTAINER_SHADOW_COLOR = result54;
-export const PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG = result55;
-export const TIER_0_MARKETING_PAGE_BACK_BUTTON_BG = result56;
-export const BUTTON_PRIMARY_DISABLED_BACKGROUND = result57;
-export const BUTTON_GREY_DISABLED_BACKGROUND = result58;
-export const BUTTON_OUTLINED_BORDER = result59;
+export const PREMIUM_FEATURES_TABLE_HIGHLIGHTED_CELL_BG = result54;
+export const TIER_0_MARKETING_PAGE_BACK_BUTTON_BG = result55;
+export const BUTTON_PRIMARY_DISABLED_BACKGROUND = result56;
+export const BUTTON_GREY_DISABLED_BACKGROUND = result57;
+export const BUTTON_OUTLINED_BORDER = result58;

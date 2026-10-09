@@ -1,16 +1,16 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 15020
+// Function ID: 15021
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 7015, 21, 558, 576, 14900, 6986, 4763, 2127, 14773, 1126, 7492, 5915, 2]
+// Dependencies: [19, 7018, 21, 558, 576, 15012, 6993, 4765, 2127, 14881, 1126, 7497, 5916, 2]
 
-// Module 14908 (SensitiveContentFiltersNotices)
+// Module 15020 (SensitiveContentFiltersNotices)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import LinkingDefault from "Linking" /* 4763 */;
-import Constants from "Constants" /* 7015 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7492 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14773 */;
+import LinkingDefault from "Linking" /* 4765 */;
+import Constants from "Constants" /* 7018 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7497 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14881 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,9 +30,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SensitiveC
   const tmp = sensitiveContentFilterHelpArticle;
   let obj = sensitiveContentFilterHelpArticle(576);
   const cResult = obj.c(5);
-  const obj2 = sensitiveContentFilterHelpArticle(14900);
+  const obj2 = sensitiveContentFilterHelpArticle(15012);
   const isTinyBroncoSettingsNoticeEnabled = obj2.useIsTinyBroncoSettingsNoticeEnabled();
-  const obj3 = sensitiveContentFilterHelpArticle(6986);
+  const obj3 = sensitiveContentFilterHelpArticle(6993);
   sensitiveContentFilterHelpArticle = obj3.useSensitiveContentFilterHelpArticle();
   if (cResult[0] !== sensitiveContentFilterHelpArticle) {
     function handleOpenHelpCenterArticle() {
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SensitiveC
     let tmp14;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp16 = jsx(tmp(14900).ContentFiltersTeenNotice, {});
+      const tmp16 = jsx(tmp(15012).ContentFiltersTeenNotice, {});
       cResult[2] = tmp16;
       tmp14 = tmp16;
     } else {
@@ -77,7 +77,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SensitiveC
   const obj2 = require("SensitiveMediaGoreRedactionSettingsUtils");
   _require = obj2.useSensitiveContentFilterHelpArticle();
   if (isTinyBroncoSettingsNoticeEnabled) {
-    tmp4Result = tmp4(tmp(14900).ContentFiltersTeenNotice, {});
+    tmp4Result = tmp4(tmp(15012).ContentFiltersTeenNotice, {});
   } else {
     const obj3 = {
       label: tmp(1126).t.EUo0yj,

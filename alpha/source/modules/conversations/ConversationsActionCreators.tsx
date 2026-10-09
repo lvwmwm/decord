@@ -1,27 +1,27 @@
-// Module ID: 9272
-// Function ID: 9273
+// Module ID: 9310
+// Function ID: 9311
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7302, 7307, 9273, 9274, 7304, 1085, 9270, 584, 1294, 7167, 9275, 7465, 7472, 2]
+// Dependencies: [5, 7307, 7312, 9311, 9312, 7309, 1085, 9308, 584, 1295, 7172, 9313, 7470, 7477, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, fetchConversation, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9272 (ConversationsActionCreators)
+// Module 9310 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ConversationConstants from "ConversationConstants" /* 7304 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7465 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9275 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import ConversationConstants from "ConversationConstants" /* 7309 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7470 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9313 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7302 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7307 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9273 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9274 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7307 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7312 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9311 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9312 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(7472);
+const SurveyActionTypes = tmp(7477);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_4;
@@ -139,7 +139,7 @@ let obj = function _fetchChannelConversations() {
         throwOnError = false;
       }
       hydrateMessages = tmp92.hydrateMessages;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -391,7 +391,7 @@ export const setSelectedConversation = function setSelectedConversation(channelI
       }
       if (null != startMessageId) {
         const obj3 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7167);
+        const tmp6Result = tmp6(7172);
         tmp6Result.jumpToMessage(obj3);
       }
     }

@@ -1,13 +1,13 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8018
+// Function ID: 8019
 // Name: GuildDiscoverySystemMessage
-// Dependencies: [2063, 2086, 1126, 7955, 2]
+// Dependencies: [2064, 2086, 1126, 7964, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
-// Module 8010 (GuildDiscoverySystemMessage)
+// Module 8018 (GuildDiscoverySystemMessage)
 import intl3 from "intl" /* 1126 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7955 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7964 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import size from "module_2" /* 2 */;
 

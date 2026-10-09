@@ -1,26 +1,26 @@
-// Module ID: 12516
-// Function ID: 12517
+// Module ID: 12455
+// Function ID: 12456
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12496, 1085, 21, 5090, 587, 1502, 6656, 12510, 5631, 12505, 1200, 1126, 5086, 6282, 5375, 2]
+// Dependencies: [5, 32, 19, 17, 12433, 1085, 21, 5091, 587, 1503, 6663, 12447, 5632, 12442, 1200, 1126, 5087, 6289, 5376, 2]
 // Exports: default
 
-// Module 12516 (HubEmailConnectionSubmitSchool)
+// Module 12455 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6282 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6656 */;
-import HubConstants from "HubConstants" /* 12496 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12505 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6289 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6663 */;
+import HubConstants from "HubConstants" /* 12433 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12442 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, dependencyMap;
@@ -233,7 +233,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5375).Button;
+  Button = tmp2(5376).Button;
   intl5 = tmp2(1126).intl;
   items2[2] = closure_9(first1, obj12);
   return closure_9(HubEmailConnectionScreen, obj10);

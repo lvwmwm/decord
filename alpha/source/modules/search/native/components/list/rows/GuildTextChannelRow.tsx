@@ -1,16 +1,16 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 17287
+// Function ID: 17288
 // Name: GuildTextChannelRow
-// Dependencies: [109, 19, 9247, 21, 558, 576, 11, 17125, 12060, 17128, 2]
+// Dependencies: [109, 19, 9285, 21, 558, 576, 11, 17275, 11997, 17278, 2]
 
-// Module 17137 (GuildTextChannelRow)
+// Module 17287 (GuildTextChannelRow)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SearchConstants from "SearchConstants" /* 9247 */;
-import SearchUtils from "SearchUtils" /* 12060 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17125 */;
-import GuildChannelRowDefault from "GuildChannelRow" /* 17128 */;
+import SearchConstants from "SearchConstants" /* 9285 */;
+import SearchUtils from "SearchUtils" /* 11997 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 17275 */;
+import GuildChannelRowDefault from "GuildChannelRow" /* 17278 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -122,7 +122,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   let channelActiveAgoTimestamp = null;
-  const renderChannelSubtitle = tmp(17125).renderChannelSubtitle;
+  const renderChannelSubtitle = tmp(17275).renderChannelSubtitle;
   guild_channels_ChannelSubtitle;
   if (null != tmp12) {
     const tmpResult2 = SearchUtils;

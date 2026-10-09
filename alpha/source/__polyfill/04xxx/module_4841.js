@@ -1,89 +1,39 @@
 // Module ID: 4841
 // Function ID: 4842
-// Dependencies: [32, 19, 4842]
-// Exports: useRiveProperty
+// Dependencies: [32, 576, 4842]
+// Exports: useRiveNumber
 
 // Module 4841
-import react2 from "react" /* 4842 */;
+import react from "react" /* 576 */;
+import _mod4842 from "module_4842" /* 4842 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
+function getNumberProperty(numberProperty, arg1) {
+  return numberProperty.numberProperty(arg1);
+}
 
-export const useRiveProperty = function useRiveProperty(arg0, arg1, f31797) {
-  let closure_7;
-  let first;
-  let first1;
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = f31797;
-  let tmp = hasOwnProperty(undefined);
-  let c3 = tmp;
-  const items = [arg0, arg1];
-  const obj = react2;
-  const disposableMemo = obj.useDisposableMemo(() => {
-    if (closure_0) {
-      return closure_2(tmp, closure_1);
-    }
-  }, (dispose) => {
-    let disposeResult;
-    if (dispose != null) {
-      disposeResult = dispose.dispose();
-    }
-    return disposeResult;
-  }, items, tmp);
-  [first, metroRequire] = metroRequire(undefined);
-  [first1, closure_7] = metroRequire(null);
-  const items1 = [arg1, arg0];
-  React3(() => {
-    closure_7(null);
-  }, items1);
-  const items2 = [arg0, disposableMemo, arg1];
-  React3(function() {
-    const tmp = closure_0 && !disposableMemo;
-    if (tmp) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Property \"" + closure_1 + "\" not found in the ViewModel instance");
-      closure_7(error);
-    }
-  }, items2);
-  const items3 = [disposableMemo];
-  React3(() => {
-    if (disposableMemo) {
-      closure_6(iter.value);
-      closure_0 = iter.addListener((arg0) => {
-        closure_1_6(arg0);
-      });
-      return () => {
-        try {
-          closure_0();
-        } catch (err) {
-        }
-      };
-    }
-  }, items3);
-  const items4 = [disposableMemo, first];
-  const items5 = [
-    first,
-    _false((fn) => {
-      const current = ref.current;
-      if (current) {
-        let tmp2 = fn;
-        if (typeof fn === "function") {
-          tmp2 = fn(first);
-        }
-        current.value = tmp2;
+export const useRiveNumber = function useRiveNumber(arg0, arg1) {
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(4);
+  const obj2 = _mod4842;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getNumberProperty);
+  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getNumberProperty), 3);
+  if (cResult[0] === tmp5) {
+    if (cResult[1] === tmp4) {
+      let tmp6;
+      if (cResult[2] === tmp3) {
+        tmp6 = cResult[3];
       }
-    }, items4),
-    first1,
-    disposableMemo
-  ];
-  return items5;
+      return tmp6;
+    }
+  }
+  const obj3 = { value: tmp3, setValue: tmp4, error: tmp5 };
+  cResult[0] = tmp5;
+  cResult[1] = tmp4;
+  cResult[2] = tmp3;
+  cResult[3] = obj3;
+  tmp6 = obj3;
 };

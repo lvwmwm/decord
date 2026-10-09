@@ -1,13 +1,14 @@
-// Module ID: 8211
-// Function ID: 8212
+// Module ID: 8219
+// Function ID: 8220
 // Name: GameAutocompleteStore
-// Dependencies: [1456, 504, 8212, 584, 2]
+// Dependencies: [1102, 1457, 504, 8220, 584, 2]
 
-// Module 8211 (GameAutocompleteStore)
+// Module 8219 (GameAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8212 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import LRUCacheDefault from "LRUCache" /* 1457 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8220 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,10 +17,13 @@ let _require;
 function getCacheKey(arg0, arg1) {
   return "" + arg0 + ":" + arg1;
 }
-const _false = new LRUCacheDefault({ max: 100 });
-const tmp2 = new LRUCacheDefault({ max: 100 });
+const HOUR = DurationsDefault.Millis.HOUR;
+let obj = { max: 100, maxAge: HOUR };
+const _false = new LRUCacheDefault(obj);
+const tmp2 = new LRUCacheDefault(obj);
 const set = new Set();
-let tmp4 = new LRUCacheDefault({ max: 500 });
+const obj2 = { max: 500, maxAge: HOUR };
+let tmp4 = new LRUCacheDefault(obj2);
 const hasOwnProperty = tmp4;
 const Store = get_initializedDefault.Store;
 class GameAutocompleteStore extends Store {
@@ -63,7 +67,7 @@ class GameAutocompleteStore extends Store {
       const hasItem = navigation.has(combined);
       let result1 = !hasItem && !set.has(combined);
       if (result1) {
-        const tmpResult = tmp(8212);
+        const tmpResult = tmp(8220);
         result1 = tmpResult.shouldSuppressAutocompleteFetch(result, (arg0) => navigation.peek("" + closure_0 + ":" + arg0));
       }
       return result1;
@@ -85,7 +89,7 @@ class GameAutocompleteStore extends Store {
 }
 const prototype = GameAutocompleteStore.prototype;
 GameAutocompleteStore.displayName = "GameAutocompleteStore";
-let obj = {
+const obj3 = {
   LOGOUT: function handleLogout() {
     navigation.reset();
     new Set();
@@ -108,7 +112,7 @@ let obj = {
     set.delete("" + filterGroup.filterGroup + ":" + filterGroup.query);
   }
 };
-const gameAutocompleteStore = new GameAutocompleteStore(DispatcherDefault, obj);
+const gameAutocompleteStore = new GameAutocompleteStore(DispatcherDefault, obj3);
 let result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteStore.tsx");
 
 export default gameAutocompleteStore;

@@ -1,14 +1,14 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14571
+// Function ID: 14572
 // Name: MobileNativeUpdateStore
-// Dependencies: [5068, 3, 504, 584, 13959, 2]
+// Dependencies: [5069, 3, 504, 584, 14056, 2]
 
-// Module 14475 (MobileNativeUpdateStore)
+// Module 14571 (MobileNativeUpdateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MobileNativeUpdateUtils from "MobileNativeUpdateUtils" /* 13959 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5068 */;
+import MobileNativeUpdateUtils from "MobileNativeUpdateUtils" /* 14056 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5069 */;
 import size from "module_2" /* 2 */;
 
 let c3;

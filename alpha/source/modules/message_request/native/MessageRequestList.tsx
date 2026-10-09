@@ -1,18 +1,18 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17510
+// Function ID: 17511
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1085, 21, 5090, 587, 1126, 558, 576, 4766, 5007, 5101, 5940, 12177, 1264, 17363, 1200, 5005, 6189, 15008, 8555, 1630, 17368, 17370, 12176, 17373, 5086, 1381, 2]
+// Dependencies: [19, 17, 1085, 21, 5091, 587, 1126, 558, 576, 4768, 5008, 5102, 5941, 12116, 1265, 17511, 1200, 5006, 6191, 15120, 8563, 1631, 17516, 17518, 12115, 17521, 5087, 1382, 2]
 
-// Module 17362 (MessageRequestList)
+// Module 17510 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import transitionToChannel from "transitionToChannel" /* 5101 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import transitionToChannel from "transitionToChannel" /* 5102 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

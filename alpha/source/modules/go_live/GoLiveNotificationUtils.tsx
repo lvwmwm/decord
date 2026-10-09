@@ -1,14 +1,14 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15713
+// Function ID: 15714
 // Name: GoLiveNotificationUtils
-// Dependencies: [1085, 4720, 2040, 1264, 2]
+// Dependencies: [1085, 4722, 2041, 1265, 2]
 // Exports: onGoLiveNotificationSettingsChanged
 
-// Module 15600 (GoLiveNotificationUtils)
+// Module 15713 (GoLiveNotificationUtils)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import NotificationConstants from "NotificationConstants" /* 4720 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import NotificationConstants from "NotificationConstants" /* 4722 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

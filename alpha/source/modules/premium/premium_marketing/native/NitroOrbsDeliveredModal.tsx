@@ -1,30 +1,31 @@
-// Module ID: 13466
-// Function ID: 13467
+// Module ID: 13558
+// Function ID: 13559
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1085, 1087, 21, 5090, 587, 558, 576, 1272, 8941, 7251, 6865, 7084, 11171, 6803, 6880, 13467, 5086, 1126, 5375, 2]
+// Dependencies: [32, 19, 17, 1085, 1087, 21, 5091, 587, 558, 576, 1273, 8952, 7256, 6872, 7087, 12940, 6810, 6887, 6163, 13559, 5087, 1126, 5376, 2]
 
-// Module 13466 (NitroOrbsDeliveredModal)
+// Module 13558 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
-import openUserSettings from "openUserSettings" /* 7084 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8941 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
+import openUserSettings from "openUserSettings" /* 7087 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7256 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8952 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13559 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let importDefault, obj1, openUserSettingsResult;
+let importDefault;
 
 let StyleSheet;
-let closure_12;
+let c10;
 let hasOwnProperty;
-let metroRequire;
 let obj2;
 let obj3;
 let obj4;
@@ -32,14 +33,12 @@ let obj5;
 let obj6;
 let obj7;
 let size;
-let tmp6;
 let unpackModuleId;
-const AssetRegistryDefault = tmp6(13467);
-({ ActivityIndicator: hasOwnProperty, Image: metroRequire, StyleSheet } = react_native);
+({ ActivityIndicator: hasOwnProperty, StyleSheet } = react_native);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
-const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let closure_9 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { root: obj2, background: StyleSheet.absoluteFillObject, loading: obj3, main: { flex: 1 }, header: obj4, body: obj5, orbGraphic: size, title: obj6, description: { textAlign: "center" }, footer: obj7 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -51,8 +50,8 @@ obj5 = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizon
 size = { width: 280, height: 157.5, marginBottom: nativeDefault.space.PX_32 };
 obj6 = { textAlign: "center", marginBottom: nativeDefault.space.PX_12 };
 obj7 = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_24, marginBottom: nativeDefault.space.PX_16 };
-let closure_13 = createStyles(obj);
-tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsDeliveredModal(arg0) {
+let closure_12 = createStyles(obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsDeliveredModal(arg0) {
   let intl;
   let intl2;
   let intl3;
@@ -71,12 +70,13 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsDeliver
   let tmp11;
   let tmp12;
   let tmp5;
+  let tmp8;
   let obj = onClose(576);
   const cResult = obj.c(30);
   ({ orbsAmount, onClose } = arg0);
-  const tmp4 = closure_13();
+  const tmp4 = closure_12();
   if (cResult[0] !== orbsAmount) {
-    let obj2 = { type: tmp(1272).ImpressionTypes.MODAL, name: tmp(1272).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: obj3 };
+    let obj2 = { type: tmp(1273).ImpressionTypes.MODAL, name: tmp(1273).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: obj3 };
     obj3 = { orbs_amount: orbsAmount };
     cResult[0] = orbsAmount;
     cResult[1] = obj2;
@@ -86,138 +86,148 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsDeliver
   }
   useTrackImpressionDefault(tmp5);
   if (cResult[2] !== onClose) {
-    class S {
-      constructor() {
-        tmp = onClose();
-        obj = closure_0(closure_2[12]);
-        obj1 = { screen: closure_10.ORBS, analyticsLocations: [], analyticsSource: closure_1(closure_2[13]).PREMIUM_MARKETING };
-        result = obj.openCollectiblesShopMobile(obj1);
-        return;
-      }
-    }
+    const fn = function f() {
+      onClose();
+      const obj = CollectiblesActionCreators;
+      const obj2 = { screen: constants.ORBS, analyticsLocations: [], analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING };
+      const result = obj.openCollectiblesShopMobile(obj2);
+    };
     cResult[2] = onClose;
-    cResult[3] = S;
+    cResult[3] = fn;
+    tmp8 = fn;
   } else {
-    class S {
-      constructor() {
-        tmp = onClose();
-        obj = closure_0(closure_2[12]);
-        obj1 = { screen: closure_10.ORBS, analyticsLocations: [], analyticsSource: closure_1(closure_2[13]).PREMIUM_MARKETING };
-        result = obj.openCollectiblesShopMobile(obj1);
-        return;
-      }
-    }
+    tmp8 = cResult[3];
   }
   if (cResult[4] !== onClose) {
-    class A {
+    class P {
       constructor() {
-        tmp = onClose();
-        obj = closure_0(closure_2[14]);
-        obj1 = { screen: UserSettingsSections.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1);
-        return;
+        onClose();
+        const obj = openUserSettings;
+        const obj2 = { screen: UserSettingsSections.PREMIUM };
+        obj.openUserSettings(obj2);
       }
     }
     cResult[4] = onClose;
-    cResult[5] = A;
+    cResult[5] = P;
   } else {
-    class A {
+    class P {
       constructor() {
-        tmp = onClose();
-        obj = closure_0(closure_2[14]);
-        obj1 = { screen: UserSettingsSections.PREMIUM };
-        openUserSettingsResult = obj.openUserSettings(obj1);
-        return;
+        onClose();
+        const obj = openUserSettings;
+        const obj2 = { screen: UserSettingsSections.PREMIUM };
+        obj.openUserSettings(obj2);
       }
     }
   }
   [tmp11, importDefault] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class P {
       constructor() {
-        return closure_1(true);
+        onClose();
+        const obj = openUserSettings;
+        const obj2 = { screen: UserSettingsSections.PREMIUM };
+        obj.openUserSettings(obj2);
       }
     }
-    cResult[6] = I;
-    tmp12 = I;
+    cResult[6] = tmp13;
+    tmp12 = tmp13;
   } else {
-    class I {
+    class P {
       constructor() {
-        return closure_1(true);
+        onClose();
+        const obj = openUserSettings;
+        const obj2 = { screen: UserSettingsSections.PREMIUM };
+        obj.openUserSettings(obj2);
       }
     }
   }
   if (cResult[7] !== tmp4.background) {
-    class I {
+    class P {
       constructor() {
-        return closure_1(true);
+        onClose();
+        const obj = openUserSettings;
+        const obj2 = { screen: UserSettingsSections.PREMIUM };
+        obj.openUserSettings(obj2);
       }
     }
-    const obj4 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(onClose(11171).OrbsRewardBackground, obj5) };
+    const obj4 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(12940).OrbsRewardBackground, obj5) };
     obj5 = { style: tmp4.background, onReady: tmp12 };
     cResult[7] = tmp4.background;
-    cResult[8] = closure_11(View, obj4);
-    const tmp16 = closure_11(View, obj4);
+    cResult[8] = closure_10(View, obj4);
+    const tmp17 = closure_10(View, obj4);
   } else {
-    class I {
+    class P {
       constructor() {
-        return closure_1(true);
+        onClose();
+        const obj = openUserSettings;
+        const obj2 = { screen: UserSettingsSections.PREMIUM };
+        obj.openUserSettings(obj2);
       }
     }
   }
   if (cResult[9] === tmp11) {
-    class I {
+    class P {
       constructor() {
-        return closure_1(true);
+        onClose();
+        const obj = openUserSettings;
+        const obj2 = { screen: UserSettingsSections.PREMIUM };
+        obj.openUserSettings(obj2);
       }
     }
     if (cResult[12] === tmp9) {
-      class I {
+      class P {
         constructor() {
-          return closure_1(true);
+          onClose();
+          const obj = openUserSettings;
+          const obj2 = { screen: UserSettingsSections.PREMIUM };
+          obj.openUserSettings(obj2);
         }
       }
     }
-    let tmp21 = tmp11;
-    if (tmp21) {
-      class I {
+    let tmp22 = tmp11;
+    if (tmp22) {
+      class P {
         constructor() {
-          return closure_1(true);
+          onClose();
+          const obj = openUserSettings;
+          const obj2 = { screen: UserSettingsSections.PREMIUM };
+          obj.openUserSettings(obj2);
         }
       }
       const rect = { style: tmp4.main, top: true, bottom: true, left: true, right: true, children: items };
-      const obj6 = { style: tmp4.header, children: closure_11(onClose(6880).ActionSheetCloseButton, obj7) };
-      const SafeAreaPaddingView = tmp(6803).SafeAreaPaddingView;
+      const obj6 = { style: tmp4.header, children: closure_10(onClose(6887).ActionSheetCloseButton, obj7) };
+      const SafeAreaPaddingView = tmp(6810).SafeAreaPaddingView;
       obj7 = { onPress: onClose, variant: "overlay" };
-      items = [closure_11(View, obj6), , ];
+      items = [closure_10(View, obj6), , ];
       const obj8 = { style: tmp4.body, children: items1 };
       const obj9 = { source: AssetRegistryDefault, style: tmp4.orbGraphic, resizeMode: "contain" };
-      items1 = [closure_11(closure_6, obj9), ];
+      const tmp6Result = FastImageDefault;
+      items1 = [closure_10(tmp6Result, obj9), ];
       const obj10 = { children: items2 };
       const obj11 = { variant: "heading-lg/bold", color: "text-overlay-light", style: tmp4.title, children: intl.formatToPlainString(onClose(1126).t["O2/Bj8"], obj12) };
-      const Text = tmp(5086).Text;
+      const Text = tmp(5087).Text;
       intl = tmp(1126).intl;
       obj12 = { orbAmount: orbsAmount };
-      items2 = [closure_11(Text, obj11), ];
+      items2 = [closure_10(Text, obj11), ];
       const obj13 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp4.description, children: intl2.format(onClose(1126).t.qiZPb6, obj14) };
-      const Text2 = tmp(5086).Text;
+      const Text2 = tmp(5087).Text;
       intl2 = tmp(1126).intl;
       obj14 = { orbAmount: orbsAmount };
-      items2[1] = closure_11(Text2, obj13);
-      items1[1] = closure_12(View, obj10);
-      items[1] = closure_12(View, obj8);
+      items2[1] = closure_10(Text2, obj13);
+      items1[1] = closure_11(View, obj10);
+      items[1] = closure_11(View, obj8);
       const obj15 = { style: tmp4.footer, children: items3 };
       const obj16 = { text: intl3.string(onClose(1126).t.OhOWfI), variant: "primary", size: "lg", onPress: tmp8 };
-      const Button = tmp(5375).Button;
+      const Button = tmp(5376).Button;
       intl3 = tmp(1126).intl;
-      items3 = [closure_11(Button, obj16), ];
+      items3 = [closure_10(Button, obj16), ];
       const obj17 = { text: intl4.string(onClose(1126).t.CvXwDY), variant: "secondary-overlay", size: "lg", onPress: tmp9 };
-      const Button2 = tmp(5375).Button;
+      const Button2 = tmp(5376).Button;
       intl4 = tmp(1126).intl;
-      items3[1] = closure_11(Button2, obj17);
-      items[2] = closure_12(View, obj15);
-      tmp21 = closure_12(SafeAreaPaddingView, rect);
+      items3[1] = closure_10(Button2, obj17);
+      items[2] = closure_11(View, obj15);
+      tmp22 = closure_11(SafeAreaPaddingView, rect);
     }
     cResult[12] = tmp9;
     cResult[13] = tmp8;
@@ -231,21 +241,24 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsDeliver
     cResult[21] = tmp4.main;
     cResult[22] = tmp4.orbGraphic;
     cResult[23] = tmp4.title;
-    cResult[24] = tmp21;
+    cResult[24] = tmp22;
   }
-  let tmp17 = !tmp11;
-  if (tmp17) {
-    class I {
+  let tmp18 = !tmp11;
+  if (tmp18) {
+    class P {
       constructor() {
-        return closure_1(true);
+        onClose();
+        const obj = openUserSettings;
+        const obj2 = { screen: UserSettingsSections.PREMIUM };
+        obj.openUserSettings(obj2);
       }
     }
-    const obj18 = { style: tmp4.loading, children: closure_11(closure_5, { animating: true }) };
-    tmp17 = closure_11(View, obj18);
+    const obj18 = { style: tmp4.loading, children: closure_10(closure_5, { animating: true }) };
+    tmp18 = closure_10(View, obj18);
   }
   cResult[9] = tmp11;
   cResult[10] = tmp4.loading;
-  cResult[11] = tmp17;
+  cResult[11] = tmp18;
 }) : (function NitroOrbsDeliveredModal(arg0) {
   let _undefined;
   let c1;
@@ -268,8 +281,8 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsDeliver
   let tmp12Result;
   ({ orbsAmount, onClose } = arg0);
   importDefault = undefined;
-  const tmp = closure_13();
-  let obj = { type: onClose(1272).ImpressionTypes.MODAL, name: onClose(1272).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: { orbs_amount: orbsAmount } };
+  const tmp = closure_12();
+  let obj = { type: onClose(1273).ImpressionTypes.MODAL, name: onClose(1273).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: { orbs_amount: orbsAmount } };
   const tmp4 = useTrackImpressionDefault;
   tmp4(obj);
   const items = [onClose];
@@ -288,53 +301,54 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsDeliver
   }, items1);
   [tmp10, c1] = react.useState(false);
   let obj2 = { style: tmp.root, children: items2 };
-  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(onClose(11171).OrbsRewardBackground, obj4) };
+  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(12940).OrbsRewardBackground, obj4) };
   _slicedToArray(react.useState(false), 2);
   const callback2 = react.useCallback(() => _undefined(true), []);
   obj4 = { style: tmp.background, onReady: callback2 };
-  items2 = [closure_11(View, obj3), , ];
+  items2 = [closure_10(View, obj3), , ];
   let tmp14Result = !tmp12Result;
   if (tmp14Result) {
-    const obj5 = { style: tmp.loading, children: closure_11(closure_5, { animating: true }) };
+    const obj5 = { style: tmp.loading, children: closure_10(closure_5, { animating: true }) };
     tmp14Result = tmp14(tmp13, obj5);
   }
   items2[1] = tmp14Result;
   if (tmp12Result) {
     const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items3 };
-    const obj6 = { style: tmp.header, children: closure_11(onClose(6880).ActionSheetCloseButton, obj7) };
-    const SafeAreaPaddingView = tmp5(6803).SafeAreaPaddingView;
+    const obj6 = { style: tmp.header, children: closure_10(onClose(6887).ActionSheetCloseButton, obj7) };
+    const SafeAreaPaddingView = tmp5(6810).SafeAreaPaddingView;
     obj7 = { onPress: onClose, variant: "overlay" };
-    items3 = [closure_11(View, obj6), , ];
+    items3 = [closure_10(View, obj6), , ];
     const obj8 = { style: tmp.body, children: items4 };
     const obj9 = { source: AssetRegistryDefault, style: tmp.orbGraphic, resizeMode: "contain" };
-    items4 = [closure_11(closure_6, obj9), ];
+    const tmp2Result = FastImageDefault;
+    items4 = [closure_10(tmp2Result, obj9), ];
     const obj10 = { children: items5 };
     const obj11 = { variant: "heading-lg/bold", color: "text-overlay-light", style: tmp.title, children: intl.formatToPlainString(onClose(1126).t["O2/Bj8"], obj12) };
-    const Text = tmp5(5086).Text;
+    const Text = tmp5(5087).Text;
     intl = tmp5(1126).intl;
     obj12 = { orbAmount: orbsAmount };
-    items5 = [closure_11(Text, obj11), ];
+    items5 = [closure_10(Text, obj11), ];
     const obj13 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp.description, children: intl2.format(onClose(1126).t.qiZPb6, obj14) };
-    const Text2 = tmp5(5086).Text;
+    const Text2 = tmp5(5087).Text;
     intl2 = tmp5(1126).intl;
     obj14 = { orbAmount: orbsAmount };
-    items5[1] = closure_11(Text2, obj13);
-    items4[1] = closure_12(View, obj10);
-    items3[1] = closure_12(View, obj8);
+    items5[1] = closure_10(Text2, obj13);
+    items4[1] = closure_11(View, obj10);
+    items3[1] = closure_11(View, obj8);
     const obj15 = { style: tmp.footer, children: items6 };
     const obj16 = { text: intl3.string(onClose(1126).t.OhOWfI), variant: "primary", size: "lg", onPress: callback };
-    const Button = tmp5(5375).Button;
+    const Button = tmp5(5376).Button;
     intl3 = tmp5(1126).intl;
-    items6 = [closure_11(Button, obj16), ];
+    items6 = [closure_10(Button, obj16), ];
     const obj17 = { text: intl4.string(onClose(1126).t.CvXwDY), variant: "secondary-overlay", size: "lg", onPress: callback1 };
-    const Button2 = tmp5(5375).Button;
+    const Button2 = tmp5(5376).Button;
     intl4 = tmp5(1126).intl;
-    items6[1] = closure_11(Button2, obj17);
-    items3[2] = closure_12(View, obj15);
-    tmp12Result = closure_12(SafeAreaPaddingView, rect);
+    items6[1] = closure_10(Button2, obj17);
+    items3[2] = closure_11(View, obj15);
+    tmp12Result = closure_11(SafeAreaPaddingView, rect);
   }
   items2[2] = tmp12Result;
-  return closure_12(View, obj2);
+  return closure_11(View, obj2);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/premium/premium_marketing/native/NitroOrbsDeliveredModal.tsx");

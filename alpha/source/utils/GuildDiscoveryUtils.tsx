@@ -1,16 +1,16 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 7045
+// Function ID: 7046
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4708, 4980, 2086, 1085, 1112, 7043, 6936, 6102, 1264, 1294, 1490, 2]
+// Dependencies: [5, 4710, 4981, 2086, 1085, 1112, 7046, 6943, 6104, 1265, 1295, 1491, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7042 (GuildDiscoveryUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef1490 from "module_1490" /* 1490 */;
+// Module 7045 (GuildDiscoveryUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import _modDef1491 from "module_1491" /* 1491 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4708 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4980 */;
+import LurkingStore from "LurkingStore" /* 4710 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4981 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -152,7 +152,7 @@ let obj = function _startLurking() {
       if (closure_2 === undefined) {
         obj4 = {};
       }
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -182,7 +182,7 @@ obj = function _getDiscoverableGuild() {
       const request = { url: constants.GUILD_DISCOVERY, query: obj7.stringify(obj4), oldFormErrors: true, rejectWithError: true };
       const get = HTTP.get;
       obj4 = { guild_ids };
-      obj7 = _modDef1490;
+      obj7 = _modDef1491;
       guild_ids = await get(request);
       const body = guild_ids.body;
       if (body != null) {

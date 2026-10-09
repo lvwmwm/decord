@@ -458,7 +458,7 @@ let items = [
   {
     key: "clearMeasures",
     value: function clearMeasures(arg0) {
-      closure_12(arg0);
+      authStore2(arg0);
     }
   },
   {

@@ -1,24 +1,24 @@
-// Module ID: 11969
-// Function ID: 11970
+// Module ID: 11906
+// Function ID: 11907
 // Name: PortalKeyboardPlaceholder
-// Dependencies: [19, 17, 21, 5090, 1381, 587, 1628, 558, 576, 1630, 6618, 1496, 6659, 9241, 4947, 1896, 2]
+// Dependencies: [19, 17, 21, 5091, 1382, 587, 1629, 558, 576, 1631, 6625, 1497, 6666, 9279, 4948, 1897, 2]
 
-// Module 11969 (PortalKeyboardPlaceholder)
+// Module 11906 (PortalKeyboardPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1896 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4947 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6659 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9241 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1897 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4948 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6625 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6666 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9279 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1, arg2, arg3) => {
   if (arg3) {
     hairlineWidth1 = tmp6.hairlineWidth;
   }
-  const APP_LAUNCHER = tmp(1628).KeyboardTypes.APP_LAUNCHER;
+  const APP_LAUNCHER = tmp(1629).KeyboardTypes.APP_LAUNCHER;
   const tmpResult = PlatformUtils;
   if (tmpResult.isIOS()) {
     tmp12 = arg1;

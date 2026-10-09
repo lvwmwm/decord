@@ -1,26 +1,26 @@
-// Module ID: 8677
-// Function ID: 8678
+// Module ID: 8686
+// Function ID: 8687
 // Name: ThreadMemberListStore
-// Dependencies: [32, 2063, 2124, 6966, 5106, 5755, 1389, 1085, 12, 11, 4712, 4922, 1387, 504, 584, 2]
+// Dependencies: [32, 2064, 2124, 6973, 5107, 5756, 1390, 1085, 12, 11, 4714, 4923, 1388, 504, 584, 2]
 
-// Module 8677 (ThreadMemberListStore)
+// Module 8686 (ThreadMemberListStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4714 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6966 */;
-import PresenceStore from "PresenceStore" /* 5106 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5755 */;
-import UserStore from "UserStore" /* 1389 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6973 */;
+import PresenceStore from "PresenceStore" /* 5107 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5756 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let closure_13, set, subscribedThreadIds, version;
+let closure_13, set, subscribedThreadIds;
 
 let closure_12;
 let unpackModuleId;
@@ -374,7 +374,7 @@ class ThreadMemberListStore extends Store {
     });
   }
   getMemberListVersion(arg0) {
-    version = undefined;
+    let version;
     if (closure_13[arg0] != null) {
       version = tmp.version;
     }

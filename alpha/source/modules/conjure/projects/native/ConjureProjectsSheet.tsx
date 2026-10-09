@@ -1,29 +1,29 @@
-// Module ID: 17265
-// Function ID: 17266
+// Module ID: 12946
+// Function ID: 12947
 // Name: ConjureProjectsSheet
-// Dependencies: [19, 17, 4899, 11251, 6908, 21, 5090, 587, 5054, 4937, 12360, 558, 576, 6842, 17266, 8587, 6184, 6267, 6161, 504, 5086, 1126, 3827, 5373, 5375, 12364, 1630, 5392, 6828, 6885, 6298, 2]
+// Dependencies: [19, 17, 4900, 10617, 6915, 21, 5091, 587, 5055, 4938, 12297, 558, 576, 12947, 12950, 6186, 6269, 6165, 504, 5087, 1126, 3827, 5374, 5376, 11369, 1631, 5393, 6835, 6892, 6305, 2]
 
-// Module 17265 (ConjureProjectsSheet)
+// Module 12946 (ConjureProjectsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import RootNavigationRef from "RootNavigationRef" /* 4937 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import useMountEffectDefault from "useMountEffect" /* 5392 */;
-import TableRowGroup2 from "TableRowGroup" /* 6267 */;
-import BottomSheetModal from "BottomSheetModal" /* 6298 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6828 */;
-import ActionSheet2 from "ActionSheet" /* 6885 */;
-import openConjureProject from "openConjureProject" /* 12360 */;
+import RootNavigationRef from "RootNavigationRef" /* 4938 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import useMountEffectDefault from "useMountEffect" /* 5393 */;
+import TableRowGroup2 from "TableRowGroup" /* 6269 */;
+import BottomSheetModal from "BottomSheetModal" /* 6305 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6835 */;
+import ActionSheet2 from "ActionSheet" /* 6892 */;
+import openConjureProject from "openConjureProject" /* 12297 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6908 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6915 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,24 +45,20 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProjectRow(entry) {
   let label;
   let serverName;
+  let tmp10;
   let tmp4;
+  let tmp6;
   const tmp = entry;
   let obj = entry(576);
-  const cResult = obj.c(18);
+  const cResult = obj.c(17);
   entry = entry.entry;
   let fallbackGuildId = entry.guildId;
   if (fallbackGuildId == null) {
     fallbackGuildId = entry.fallbackGuildId;
   }
-  let application_id = entry.project.preview_application_id;
-  if (application_id == null) {
-    application_id = entry.project.application_id;
-  }
-  const tmpResult = tmp(6842);
-  const data = tmpResult.useApplication(application_id).data;
   if (cResult[0] !== entry) {
-    const tmpResult2 = tmp(17266);
-    const result = tmpResult2.describeConjureProjectRow(entry);
+    const tmpResult = tmp(12947);
+    const result = tmpResult.describeConjureProjectRow(entry);
     let num = 0;
     cResult[0] = entry;
     cResult[1] = result;
@@ -71,130 +67,114 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     tmp4 = cResult[1];
   }
   ({ serverName, label } = tmp4);
-  let icon;
-  if (data != null) {
-    icon = data.icon;
+  if (cResult[2] !== entry.project) {
+    let obj2 = { project: entry.project, size: "list" };
+    const tmp9 = closure_6(fallbackGuildId(12950), obj2);
+    cResult[2] = entry.project;
+    cResult[3] = tmp9;
+    tmp6 = tmp9;
+  } else {
+    tmp6 = cResult[3];
   }
-  if (cResult[2] === application_id) {
-    let tmp7;
-    let tmp9;
-    if (cResult[3] === icon) {
-      tmp7 = cResult[4];
+  if (cResult[4] !== entry.activity) {
+    let tmp11;
+    if ("building" === entry.activity) {
+      tmp11 = closure_6(ActivityIndicator, {});
     }
-    if (cResult[5] !== entry.activity) {
-      let tmp10;
-      if ("building" === entry.activity) {
-        tmp10 = closure_6(ActivityIndicator, {});
-      }
-      cResult[5] = entry.activity;
-      cResult[6] = tmp10;
-      tmp9 = tmp10;
-    } else {
-      tmp9 = cResult[6];
+    cResult[4] = entry.activity;
+    cResult[5] = tmp11;
+    tmp10 = tmp11;
+  } else {
+    tmp10 = cResult[5];
+  }
+  if (cResult[6] === entry.projectId) {
+    let tmp15;
+    if (cResult[7] === fallbackGuildId) {
+      tmp15 = cResult[8];
     }
-    if (cResult[7] === entry.projectId) {
-      let tmp14;
-      if (cResult[8] === fallbackGuildId) {
-        tmp14 = cResult[9];
-      }
-      if (cResult[10] === label) {
-        if (cResult[11] === entry.name) {
-          if (cResult[12] === serverName) {
-            if (cResult[13] === tmp7) {
-              if (cResult[14] === tmp9) {
-                if (cResult[15] === null == fallbackGuildId) {
-                  let tmp15;
-                  if (cResult[16] === tmp14) {
-                    tmp15 = cResult[17];
-                  }
-                  return tmp15;
+    if (cResult[9] === label) {
+      if (cResult[10] === entry.name) {
+        if (cResult[11] === serverName) {
+          if (cResult[12] === tmp6) {
+            if (cResult[13] === tmp10) {
+              if (cResult[14] === null == fallbackGuildId) {
+                let tmp16;
+                if (cResult[15] === tmp15) {
+                  tmp16 = cResult[16];
                 }
+                return tmp16;
               }
             }
           }
         }
       }
-      let obj2 = { label: entry.name, subLabel: serverName, accessibilityLabel: label, icon: tmp7, trailing: tmp9, disabled: null == fallbackGuildId, onPress: tmp14 };
-      const tmp17 = closure_6(tmp(6184).TableRow, obj2);
-      cResult[10] = label;
-      cResult[11] = entry.name;
-      cResult[12] = serverName;
-      cResult[13] = tmp7;
-      cResult[14] = tmp9;
-      cResult[15] = null == fallbackGuildId;
-      cResult[16] = tmp14;
-      cResult[17] = tmp17;
-      tmp15 = tmp17;
     }
-    const fn = function y() {
-      if (null != fallbackGuildId) {
-        const projectId = entry.projectId;
-        const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.hideAllActionSheets();
-        const obj3 = RootNavigationRef;
-        const rootNavigationRef = obj3.getRootNavigationRef();
-        if (null != rootNavigationRef) {
-          if (rootNavigationRef.isReady()) {
-            const state = rootNavigationRef.getState();
-            let num;
-            if (state != null) {
-              const routes = state.routes;
-              if (routes != null) {
-                num = routes.length;
-              }
-            }
-            if (num == null) {
-              num = 0;
-            }
-            if (num > 1) {
-              do {
-                let goBackResult = rootNavigationRef.goBack();
-                num = num - 1;
-              } while (num > 1);
+    let obj3 = { label: entry.name, subLabel: serverName, accessibilityLabel: label, icon: tmp6, trailing: tmp10, disabled: null == fallbackGuildId, onPress: tmp15 };
+    const tmp18 = closure_6(tmp(6186).TableRow, obj3);
+    cResult[9] = label;
+    cResult[10] = entry.name;
+    cResult[11] = serverName;
+    cResult[12] = tmp6;
+    cResult[13] = tmp10;
+    cResult[14] = null == fallbackGuildId;
+    cResult[15] = tmp15;
+    cResult[16] = tmp18;
+    tmp16 = tmp18;
+  }
+  const fn = function v() {
+    if (null != fallbackGuildId) {
+      const projectId = entry.projectId;
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideAllActionSheets();
+      const obj3 = RootNavigationRef;
+      const rootNavigationRef = obj3.getRootNavigationRef();
+      if (null != rootNavigationRef) {
+        if (rootNavigationRef.isReady()) {
+          const state = rootNavigationRef.getState();
+          let num;
+          if (state != null) {
+            const routes = state.routes;
+            if (routes != null) {
+              num = routes.length;
             }
           }
+          if (num == null) {
+            num = 0;
+          }
+          if (num > 1) {
+            do {
+              let goBackResult = rootNavigationRef.goBack();
+              num = num - 1;
+            } while (num > 1);
+          }
         }
-        const obj = openConjureProject;
-        obj.openConjureProject(tmp, projectId);
       }
-    };
-    cResult[7] = entry.projectId;
-    cResult[8] = fallbackGuildId;
-    cResult[9] = fn;
-    tmp14 = fn;
-  }
-  let obj3 = { application: { id: application_id, icon } };
-  const tmp8 = closure_6(fallbackGuildId(8587), obj3);
-  cResult[2] = application_id;
-  cResult[3] = icon;
-  cResult[4] = tmp8;
-  tmp7 = tmp8;
+      const obj = openConjureProject;
+      obj.openConjureProject(tmp, projectId);
+    }
+  };
+  cResult[6] = entry.projectId;
+  cResult[7] = fallbackGuildId;
+  cResult[8] = fn;
+  tmp15 = fn;
 }) : (function ProjectRow(entry) {
-  let icon;
   let label;
-  let obj4;
+  let obj3;
   let serverName;
   let tmp2Result;
-  let tmp3;
   entry = entry.entry;
   let fallbackGuildId = entry.guildId;
   if (fallbackGuildId == null) {
     fallbackGuildId = entry.fallbackGuildId;
   }
-  let application_id = entry.project.preview_application_id;
-  if (application_id == null) {
-    application_id = entry.project.application_id;
-  }
-  let obj = entry(6842);
-  const data = obj.useApplication(application_id).data;
-  let obj2 = entry(17266);
-  const result = obj2.describeConjureProjectRow(entry);
+  let obj = entry(12947);
+  const result = obj.describeConjureProjectRow(entry);
   ({ serverName, label } = result);
-  let obj3 = {
+  let obj2 = {
     label: entry.name,
     subLabel: serverName,
     accessibilityLabel: label,
-    icon: closure_6(tmp3, { application: obj4 }),
+    icon: closure_6(fallbackGuildId(12950), obj3),
     trailing: tmp2Result,
     disabled: null == fallbackGuildId,
     onPress() {
@@ -230,18 +210,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       }
     }
   };
-  const TableRow = entry(6184).TableRow;
-  obj4 = { id: application_id, icon };
-  icon = undefined;
-  tmp3 = fallbackGuildId(8587);
-  if (data != null) {
-    icon = data.icon;
-  }
+  const TableRow = entry(6186).TableRow;
+  obj3 = { project: entry.project, size: "list" };
   tmp2Result = undefined;
   if ("building" === entry.activity) {
     tmp2Result = tmp2(ActivityIndicator, {});
   }
-  return closure_6(TableRow, obj3);
+  return closure_6(TableRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProjectGroup(arg0) {
@@ -269,14 +244,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
         return tmp7;
       }
       const obj2 = { title, hasIcons: true, children: tmp4 };
-      const tmp9 = closure_6(tmp(6267).TableRowGroup, obj2);
+      const tmp9 = closure_6(tmp(6269).TableRowGroup, obj2);
       cResult[5] = tmp4;
       cResult[6] = title;
       cResult[7] = tmp9;
       tmp7 = tmp9;
     }
     if (cResult[3] !== fallbackGuildId) {
-      const fn = function n(entry) {
+      const fn = function l(entry) {
         const obj = { entry, fallbackGuildId };
         return metroRequire(closure_10, obj, entry.projectId);
       };
@@ -329,7 +304,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
       let tmp6;
       const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function n(guild) {
+        const fn = function l(guild) {
           let obj2;
           let tmp;
           let obj = {
@@ -367,9 +342,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
               obj4.openConjureProject(id, undefined);
             }
           };
-          const TableRow = guild(closure_2[16]).TableRow;
-          obj2 = { guild, size: guild(closure_2[18]).GuildIconSizes.SMALL_32 };
-          tmp = closure_1(closure_2[18]);
+          const TableRow = guild(closure_2[15]).TableRow;
+          obj2 = { guild, size: guild(closure_2[17]).GuildIconSizes.SMALL_32 };
+          tmp = closure_1(closure_2[17]);
           return closure_6(TableRow, obj, guild.id);
         };
         let num = 2;
@@ -449,9 +424,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildG
               obj4.openConjureProject(id, undefined);
             }
           };
-          const TableRow = guild(closure_2[16]).TableRow;
-          obj2 = { guild, size: guild(closure_2[18]).GuildIconSizes.SMALL_32 };
-          tmp = closure_1(closure_2[18]);
+          const TableRow = guild(closure_2[15]).TableRow;
+          obj2 = { guild, size: guild(closure_2[17]).GuildIconSizes.SMALL_32 };
+          tmp = closure_1(closure_2[17]);
           return closure_6(TableRow, obj, guild.id);
         })
     };
@@ -481,13 +456,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
   let obj = stateFromStores1(576);
   const cResult = obj.c(46);
   const tmp4 = closure_9(0);
-  const obj2 = stateFromStores1(17266);
+  const obj2 = stateFromStores1(12947);
   const conjureProjects = obj2.useConjureProjects(VibegrationsProjectsSheet);
-  const obj3 = stateFromStores1(17266);
+  const obj3 = stateFromStores1(12947);
   const conjureEligibleGuilds = obj3.useConjureEligibleGuilds(VibegrationsProjectsSheet);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];
-    const fn = function p() {
+    const fn = function h() {
       return projectsFetchState.getProjectsFetchState();
     };
     cResult[0] = items;
@@ -501,7 +476,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [SelectedGuildStore];
-    const fn2 = function y() {
+    const fn2 = function _() {
       return lastSelectedGuildId.getLastSelectedGuildId();
     };
     cResult[2] = items1;
@@ -525,10 +500,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           let tmp71;
           let tmp75;
           let tmp79;
-          const _Symbol6 = Symbol;
+          const _Symbol5 = Symbol;
           if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(_modDef3827.DJAPMO) };
-            const Text2 = tmp(5086).Text;
+            const Text2 = tmp(5087).Text;
             intl4 = tmp(1126).intl;
             const tmp74 = closure_6(Text2, obj4);
             cResult[8] = tmp74;
@@ -536,18 +511,18 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           } else {
             tmp71 = cResult[8];
           }
-          const _Symbol7 = Symbol;
+          const _Symbol6 = Symbol;
           if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
             const obj5 = {
               variant: "secondary",
               size: "sm",
               text: intl5.string(_modDef3827["WFJ/vb"]),
               onPress() {
-                          const obj = stateFromStores1(dependencyMap[25]);
+                          const obj = stateFromStores1(dependencyMap[24]);
                           return obj.listProjects();
                         }
             };
-            const Button = tmp(5375).Button;
+            const Button = tmp(5376).Button;
             intl5 = tmp(1126).intl;
             const tmp78 = closure_6(Button, obj5);
             cResult[9] = tmp78;
@@ -557,7 +532,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           }
           if (cResult[10] !== tmp4.state) {
             const obj7 = { style: tmp4.state, align: "center", spacing: nativeDefault.space.PX_12, children: items2 };
-            const Stack4 = tmp(5373).Stack;
+            const Stack4 = tmp(5374).Stack;
             items2 = [tmp71, tmp75];
             const tmp82 = closure_7(Stack4, obj7);
             cResult[10] = tmp4.state;
@@ -572,10 +547,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           let tmp54;
           let tmp58;
           let tmp63;
-          const _Symbol10 = Symbol;
+          const _Symbol9 = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
             const obj9 = { variant: "text-md/semibold", color: "text-strong", children: intl.string(_modDef3827.snY8uu) };
-            const Text = tmp(5086).Text;
+            const Text = tmp(5087).Text;
             intl = tmp(1126).intl;
             const tmp53 = closure_6(Text, obj9);
             cResult[12] = tmp53;
@@ -601,10 +576,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           }
           if (cResult[15] !== tmp54) {
             const obj12 = { spacing: nativeDefault.space.PX_4, children: items3 };
-            const Stack2 = tmp(5373).Stack;
+            const Stack2 = tmp(5374).Stack;
             items3 = [tmp50, ];
             const obj13 = { variant: "text-sm/normal", color: "text-muted", children: tmp54 };
-            items3[1] = closure_6(stateFromStores1(5086).Text, obj13);
+            items3[1] = closure_6(stateFromStores1(5087).Text, obj13);
             const tmp62 = closure_7(Stack2, obj12);
             cResult[15] = tmp54;
             cResult[16] = tmp62;
@@ -627,7 +602,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
             }
           }
           const obj15 = { spacing: nativeDefault.space.PX_16, children: items4 };
-          const Stack3 = tmp(5373).Stack;
+          const Stack3 = tmp(5374).Stack;
           items4 = [tmp58, tmp63];
           const tmp70 = closure_7(Stack3, obj15);
           cResult[19] = tmp58;
@@ -638,7 +613,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
       }
       return tmp67;
     }
-    const _Symbol8 = Symbol;
+    const _Symbol7 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const tmp86 = closure_6(ActivityIndicator, {});
       cResult[4] = tmp86;
@@ -646,10 +621,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
     } else {
       tmp83 = cResult[4];
     }
-    const _Symbol9 = Symbol;
+    const _Symbol8 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj16 = { variant: "text-sm/normal", color: "text-muted", children: intl6.string(_modDef3827["XE+JXX"]) };
-      const Text3 = tmp(5086).Text;
+      const Text3 = tmp(5087).Text;
       intl6 = tmp(1126).intl;
       const tmp90 = closure_6(Text3, obj16);
       cResult[5] = tmp90;
@@ -659,7 +634,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
     }
     if (cResult[6] !== tmp4.state) {
       const obj17 = { style: tmp4.state, align: "center", spacing: nativeDefault.space.PX_8, children: items5 };
-      const Stack5 = tmp(5373).Stack;
+      const Stack5 = tmp(5374).Stack;
       items5 = [tmp83, tmp87];
       const tmp94 = closure_7(Stack5, obj17);
       cResult[6] = tmp4.state;
@@ -672,7 +647,6 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
   } else {
     if (cResult[22] === conjureEligibleGuilds) {
       let tmp13;
-      let tmp19;
       let tmp25;
       if (cResult[23] === stateFromStores1) {
         tmp13 = cResult[24];
@@ -681,24 +655,37 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
         let tmp20;
         const _Symbol = Symbol;
         if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-          const fn3 = function z(activity) {
-            return "idle" !== activity.activity;
-          };
-          cResult[27] = fn3;
-          tmp20 = fn3;
+          class A {
+            constructor(activity) {
+              return "idle" !== activity.activity;
+            }
+          }
+          cResult[27] = A;
+          tmp20 = A;
         } else {
-          tmp20 = cResult[27];
+          class A {
+            constructor(activity) {
+              return "idle" !== activity.activity;
+            }
+          }
         }
         const found = conjureProjects.filter(tmp20);
         cResult[25] = conjureProjects;
         cResult[26] = found;
-        tmp19 = found;
       } else {
-        tmp19 = cResult[26];
+        class A {
+          constructor(activity) {
+            return "idle" !== activity.activity;
+          }
+        }
       }
       if (cResult[28] !== conjureProjects) {
         let tmp23;
-        const _Symbol2 = Symbol;
+        class A {
+          constructor(activity) {
+            return "idle" !== activity.activity;
+          }
+        }
         if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
           class M {
             constructor(activity) {
@@ -724,7 +711,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
           }
         }
       }
-      const _Symbol3 = Symbol;
+      const _Symbol2 = Symbol;
       if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
         class M {
           constructor(activity) {
@@ -748,7 +735,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
             return "idle" === activity.activity;
           }
         }
-        const _Symbol4 = Symbol;
+        const _Symbol3 = Symbol;
         if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
           class M {
             constructor(activity) {
@@ -772,7 +759,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
               return "idle" === activity.activity;
             }
           }
-          const _Symbol5 = Symbol;
+          const _Symbol4 = Symbol;
           if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
             class M {
               constructor(activity) {
@@ -814,7 +801,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
             }
           }
           const obj19 = { spacing: nativeDefault.space.PX_24, children: items6 };
-          const Stack = tmp(5373).Stack;
+          const Stack = tmp(5374).Stack;
           items6 = [tmp28, tmp35, tmp42];
           cResult[42] = tmp35;
           cResult[43] = tmp42;
@@ -903,9 +890,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
       if ("loading" !== stateFromStores.type) {
         if ("error" === stateFromStores.type) {
           const obj5 = { style: tmp.state, align: "center", spacing: nativeDefault.space.PX_12, children: items2 };
-          const Stack2 = tmp2(5373).Stack;
+          const Stack2 = tmp2(5374).Stack;
           const obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl6.string(_modDef3827.DJAPMO) };
-          const Text = tmp2(5086).Text;
+          const Text = tmp2(5087).Text;
           intl6 = tmp2(1126).intl;
           items2 = [closure_6(Text, obj6), ];
           const obj7 = {
@@ -913,25 +900,25 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
             size: "sm",
             text: intl7.string(_modDef3827["WFJ/vb"]),
             onPress() {
-                      const obj = closure_0(dependencyMap[25]);
+                      const obj = closure_0(dependencyMap[24]);
                       return obj.listProjects();
                     }
           };
-          const Button = tmp2(5375).Button;
+          const Button = tmp2(5376).Button;
           intl7 = tmp2(1126).intl;
           items2[1] = closure_6(Button, obj7);
           tmp28Result = closure_7(Stack2, obj5);
         } else {
           let stringResult;
           const obj8 = { spacing: nativeDefault.space.PX_16, children: items4 };
-          const Stack4 = tmp2(5373).Stack;
+          const Stack4 = tmp2(5374).Stack;
           const obj9 = { spacing: nativeDefault.space.PX_4, children: items3 };
-          const Stack5 = tmp2(5373).Stack;
+          const Stack5 = tmp2(5374).Stack;
           const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl9.string(_modDef3827.snY8uu) };
-          const Text3 = tmp2(5086).Text;
+          const Text3 = tmp2(5087).Text;
           intl9 = tmp2(1126).intl;
           items3 = [closure_6(Text3, obj10), ];
-          const Text4 = tmp2(5086).Text;
+          const Text4 = tmp2(5087).Text;
           if (0 === conjureEligibleGuilds.length) {
             const intl5 = tmp2(1126).intl;
             stringResult = intl5.string(tmp29(3827).f5o5pk);
@@ -951,10 +938,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
       return tmp28Result;
     }
     const obj14 = { style: tmp.state, align: "center", spacing: nativeDefault.space.PX_8, children: items5 };
-    const Stack3 = tmp2(5373).Stack;
+    const Stack3 = tmp2(5374).Stack;
     items5 = [closure_6(ActivityIndicator, {}), ];
     const obj15 = { variant: "text-sm/normal", color: "text-muted", children: intl8.string(_modDef3827["XE+JXX"]) };
-    const Text2 = tmp2(5086).Text;
+    const Text2 = tmp2(5087).Text;
     intl8 = tmp2(1126).intl;
     items5[1] = closure_6(Text2, obj15);
     tmp28Result = closure_7(Stack3, obj14);
@@ -978,7 +965,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
     const found1 = conjureProjects.filter((activity) => "idle" !== activity.activity);
     const found2 = conjureProjects.filter((activity) => "idle" === activity.activity);
     const obj16 = { spacing: nativeDefault.space.PX_24, children: items6 };
-    const Stack = tmp2(5373).Stack;
+    const Stack = tmp2(5374).Stack;
     const obj17 = { title: intl.string(_modDef3827.DnsyEc), entries: found1, fallbackGuildId: id };
     intl = tmp2(1126).intl;
     items6 = [closure_6(closure_11, obj17), , ];
@@ -1016,7 +1003,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   useMountEffectDefault(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(_modDef3827.uk6jhJ) };
-    const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6835).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[1] = tmp10;
@@ -1047,7 +1034,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
     return tmp16;
   }
   const obj4 = { scrollable: true, header: tmp8, children: metroRequire(BottomSheetModal.BottomSheetScrollView, obj5) };
-  const ActionSheet = tmp(6885).ActionSheet;
+  const ActionSheet = tmp(6892).ActionSheet;
   obj5 = { contentContainerStyle: tmp5.scrollContent, scrollIndicatorInsets: tmp11, children: tmp12 };
   const tmp17 = metroRequire(ActionSheet, obj4);
   cResult[5] = tmp5.scrollContent;

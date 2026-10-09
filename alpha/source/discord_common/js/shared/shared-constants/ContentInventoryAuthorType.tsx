@@ -1,9 +1,9 @@
-// Module ID: 8453
-// Function ID: 8454
+// Module ID: 8461
+// Function ID: 8462
 // Name: ContentInventoryAuthorType
 // Dependencies: [2]
 
-// Module 8453 (ContentInventoryAuthorType)
+// Module 8461 (ContentInventoryAuthorType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryAuthorType.tsx");

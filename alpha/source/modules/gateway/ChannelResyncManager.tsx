@@ -1,24 +1,24 @@
-// Module ID: 17783
-// Function ID: 17784
+// Module ID: 17937
+// Function ID: 17938
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 2063, 5970, 2086, 5753, 1085, 2070, 3, 1102, 6797, 1264, 584, 7329, 13795, 1402, 1278, 2]
+// Dependencies: [5, 502, 2064, 5972, 2086, 5754, 1085, 2071, 3, 1102, 6804, 1265, 584, 7334, 13889, 1403, 1279, 2]
 
-// Module 17783 (ChannelResyncManager)
+// Module 17937 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7329 */;
-import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 13795 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7334 */;
+import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 13889 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5972 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -88,7 +88,7 @@ function handleChannelSync(guild_id) {
           num = 0;
         }
         const hasFlagResult = hasFlag(num, ChannelFlags.OBFUSCATED);
-        const tmp5Result = tmp5(1402);
+        const tmp5Result = tmp5(1403);
         const hasFlagResult1 = tmp5Result.hasFlag(closure_0[flags.id].flags, ChannelFlags.OBFUSCATED);
         if (hasFlagResult !== hasFlagResult1) {
           const _HermesInternal2 = HermesInternal;
@@ -523,7 +523,7 @@ function scheduleIntegrityCheck(guild_id) {
     if (null != closure_17[guild_id]) {
       requestId = tmp13.requestId;
     } else {
-      const tmp2Result = tmp2(1278);
+      const tmp2Result = tmp2(1279);
       const v4Result = tmp2Result.v4();
       let obj2 = { guildId: guild_id, requestId: v4Result, source: "integrity_check", requestedUserId: AuthenticationStore.getId() };
       tmp12[guild_id] = obj2;

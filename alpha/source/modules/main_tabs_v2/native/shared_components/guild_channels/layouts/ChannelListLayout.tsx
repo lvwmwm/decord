@@ -1,15 +1,15 @@
-// Module ID: 11777
-// Function ID: 11778
+// Module ID: 11714
+// Function ID: 11715
 // Name: ChannelListLayout
-// Dependencies: [9248, 11778, 11780, 11781, 558, 2040, 2]
+// Dependencies: [9286, 11715, 11717, 11718, 558, 2041, 2]
 // Exports: getScaledChannelRowHeight, isLayoutCompact, isLayoutCozy, makeSizeStyle
 
-// Module 11777 (ChannelListLayout)
-import UserSettings from "UserSettings" /* 2040 */;
-import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 9248 */;
-import CozyDrawer from "CozyDrawer" /* 11778 */;
-import Compact from "Compact" /* 11780 */;
-import Cozy from "Cozy" /* 11781 */;
+// Module 11714 (ChannelListLayout)
+import UserSettings from "UserSettings" /* 2041 */;
+import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 9286 */;
+import CozyDrawer from "CozyDrawer" /* 11715 */;
+import Compact from "Compact" /* 11717 */;
+import Cozy from "Cozy" /* 11718 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function getLayoutStyles(layout, launchpad) {
     return flag ? tmpResult.CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD : tmpResult.CHANNEL_LIST_STYLES_COMPACT;
   } else {
     if (ChannelListLayoutTypes2.ChannelListLayoutTypes.MINIMAL !== layout) {
-      const COZY = tmp(9248).ChannelListLayoutTypes.COZY;
+      const COZY = tmp(9286).ChannelListLayoutTypes.COZY;
     }
     const tmpResult2 = Cozy;
     return flag ? tmpResult2.CHANNEL_LIST_STYLES_COZY_LAUNCHPAD : tmpResult2.CHANNEL_LIST_STYLES_COZY;
@@ -45,9 +45,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
   if (tmp4) {
     COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(9248).ChannelListLayoutTypes.COMPACT;
+    COZY = tmp(9286).ChannelListLayoutTypes.COMPACT;
   } else {
-    COZY = tmp(9248).ChannelListLayoutTypes.COZY;
+    COZY = tmp(9286).ChannelListLayoutTypes.COZY;
   }
   return COZY;
 }) : (function useMessagesTabLayout(arg0) {
@@ -59,9 +59,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
   if (tmp4) {
     COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(9248).ChannelListLayoutTypes.COMPACT;
+    COZY = tmp(9286).ChannelListLayoutTypes.COMPACT;
   } else {
-    COZY = tmp(9248).ChannelListLayoutTypes.COZY;
+    COZY = tmp(9286).ChannelListLayoutTypes.COZY;
   }
   return COZY;
 });

@@ -1,13 +1,13 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16693
+// Function ID: 16694
 // Name: useGuildsBarGuildMediaState
-// Dependencies: [19, 13833, 504, 16571, 16572, 16573, 2]
+// Dependencies: [19, 13927, 504, 16694, 16695, 16696, 2]
 // Exports: default
 
-// Module 16570 (useGuildsBarGuildMediaState)
-import GuildMediaStateShadowCompare from "GuildMediaStateShadowCompare" /* 16572 */;
+// Module 16693 (useGuildsBarGuildMediaState)
+import GuildMediaStateShadowCompare from "GuildMediaStateShadowCompare" /* 16695 */;
 import react from "react" /* 19 */;
-import GuildMediaStateStore from "GuildMediaStateStore" /* 13833 */;
+import GuildMediaStateStore from "GuildMediaStateStore" /* 13927 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ export default function useGuildsBarGuildMediaState(arg0) {
   let closure_1;
   let guildMediaState;
   let stateFromStores;
-  const f125106 = () => guildMediaState.getGuildMediaState(closure_0);
+  const f125495 = () => guildMediaState.getGuildMediaState(closure_0);
   let obj = require("GuildMediaStateStoreExperiment");
   const current = react.useRef(obj.useGuildMediaStateSource("GuildsBarGuild")).current;
   const obj2 = react;
@@ -29,7 +29,7 @@ export default function useGuildsBarGuildMediaState(arg0) {
     const items = [GuildMediaStateStore];
     const items1 = [arg0];
     const tmpResult = require("get initialized");
-    return tmpResult.useStateFromStores(items, f125106, items1);
+    return tmpResult.useStateFromStores(items, f125495, items1);
   } else if (require("GuildMediaStateStoreExperiment").GuildMediaStateSource.SHADOW === current) {
     const tmp5 = require("useGuildMediaState")(arg0);
     importDefault = tmp5;
@@ -37,7 +37,7 @@ export default function useGuildsBarGuildMediaState(arg0) {
     const items2 = [GuildMediaStateStore];
     const items3 = [arg0];
     const tmpResult2 = require("get initialized");
-    stateFromStores = tmpResult2.useStateFromStores(items2, f125106, items3);
+    stateFromStores = tmpResult2.useStateFromStores(items2, f125495, items3);
     const items4 = [arg0, tmp5, stateFromStores];
     const effect = obj2.useEffect(() => {
       const obj = GuildMediaStateShadowCompare;

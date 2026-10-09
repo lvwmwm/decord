@@ -1,22 +1,22 @@
-// Module ID: 13701
-// Function ID: 13702
+// Module ID: 13793
+// Function ID: 13794
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 4967, 21, 5090, 587, 683, 558, 576, 5086, 13702, 12241, 12264, 13703, 1126, 2597, 2]
+// Dependencies: [19, 17, 4968, 21, 5091, 587, 683, 558, 576, 5087, 13794, 12180, 12203, 13795, 1126, 2597, 2]
 
-// Module 13701 (GuildPowerupsMarketingHeader)
+// Module 13793 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl3 from "intl" /* 1126 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12241 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12264 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13702 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 13703 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12180 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12203 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13794 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 13795 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4968 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let alphaResult1;
 let obj2;
 let obj4;
 let tmp;
-const Text_Text = tmp(5086);
+const Text_Text = tmp(5087);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -67,8 +67,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   let obj = guild(576);
   const cResult = obj.c(13);
   guild = guild.guild;
-  const tmp4 = closure_7();
-  arr = arr(13702)(guild.id);
+  let tmp4 = closure_7();
+  arr = arr(13794)(guild.id);
   if (cResult[0] !== guild.id) {
     const fn = function s() {
       const tmp = guild;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  if (arr(12264)(guild.id)) {
+  if (arr(12203)(guild.id)) {
     let num4;
     if (arr != null) {
       num4 = arr.length;
@@ -105,15 +105,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
             if (0 !== arr.length) {
               let formatResult;
               const arr2 = orderMarketablePerksForDisplayDefault(arr);
-              const tmp7 = importDefault;
+              const tmp4 = importDefault;
               if (1 === arr2.length) {
                 formatResult = <closure_8 powerup={arr2[0]} />;
               } else {
                 const intl = intl3.intl;
                 const format = intl.format;
-                const obj = { perk1: null, perk2: null };
-                const MNO3sG = tmp7(2597).MNO3sG;
-                formatResult = format(MNO3sG, obj);
+                const obj2 = { perk1: null, perk2: null };
+                const MNO3sG = tmp4(2597).MNO3sG;
+                formatResult = format(MNO3sG, obj2);
               }
               return formatResult;
             }
@@ -130,7 +130,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
       if (cResult[5] !== tmp10) {
         let intl = tmp(1126).intl;
         let format = intl.format;
-        const obj2 = { perks: tmp10() };
+        let obj2 = { perks: tmp10() };
         const v7lwpzR = tmp5(2597)["7lwpzR"];
         let formatResult = format(v7lwpzR, obj2);
         cResult[5] = tmp10;
@@ -157,7 +157,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
         cResult[12] = tmp20;
         tmp17 = tmp20;
       }
-      const tmp16 = jsx(tmp(5086).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
+      const tmp16 = jsx(tmp(5087).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
       cResult[7] = tmp4.text;
       cResult[8] = tmp11;
       cResult[9] = tmp16;
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
     }
     if (0 !== num) {
       ({ style: tmp.text, variant: "text-sm/semibold", children: format(v7lwpzR, obj7) });
-      const Text = guild(5086).Text;
+      const Text = guild(5087).Text;
       const intl = guild(1126).intl;
       format = intl.format;
       let str2 = "";

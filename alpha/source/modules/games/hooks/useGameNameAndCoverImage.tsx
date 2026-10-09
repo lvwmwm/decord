@@ -1,15 +1,15 @@
-// Module ID: 13090
-// Function ID: 13091
+// Module ID: 13183
+// Function ID: 13184
 // Name: useGameNameAndCoverImage
-// Dependencies: [558, 576, 6995, 1126, 2]
+// Dependencies: [558, 576, 7002, 1126, 2]
 
-// Module 13090 (useGameNameAndCoverImage)
+// Module 13183 (useGameNameAndCoverImage)
 import react from "react" /* 576 */;
-import useGame from "useGame" /* 6995 */;
+import useGame from "useGame" /* 7002 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNameAndCoverImage(arg0, arg1, c9) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNameAndCoverImage(arg0, arg1, c8) {
   let data;
   let isLoading;
   const obj = react;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
   ({ data, isLoading } = game);
   if (cResult[0] === data) {
     let tmp5;
-    if (cResult[1] === c9) {
+    if (cResult[1] === c8) {
       tmp5 = cResult[2];
     }
     let name;
@@ -70,13 +70,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
   }
   let coverURL;
   if (data != null) {
-    coverURL = data.getCoverURL(c9);
+    coverURL = data.getCoverURL(c8);
   }
   cResult[0] = data;
-  cResult[1] = c9;
+  cResult[1] = c8;
   cResult[2] = coverURL;
   tmp5 = coverURL;
-}) : (function useGameNameAndCoverImage(arg0, arg1, c9) {
+}) : (function useGameNameAndCoverImage(arg0, arg1, c8) {
   let name;
   const obj = useGame;
   const game = obj.useGame(arg0);
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameNam
   let coverURL;
   const isLoading = game.isLoading;
   if (data != null) {
-    coverURL = data.getCoverURL(c9);
+    coverURL = data.getCoverURL(c8);
   }
   const obj2 = { coverImageUrl: coverURL, gameName: name, isLoading };
   name = undefined;

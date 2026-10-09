@@ -1,17 +1,17 @@
-// Module ID: 17349
-// Function ID: 17350
+// Module ID: 17497
+// Function ID: 17498
 // Name: PinsScreen
-// Dependencies: [19, 17, 2063, 9247, 21, 5090, 587, 558, 576, 1505, 504, 12014, 17203, 2]
+// Dependencies: [19, 17, 2064, 9285, 21, 5091, 587, 558, 576, 1506, 504, 11951, 17353, 2]
 
-// Module 17349 (PinsScreen)
+// Module 17497 (PinsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import SearchConstants from "SearchConstants" /* 9247 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 17203 */;
+import SearchConstants from "SearchConstants" /* 9285 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 17353 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import createStyles from "createStyles" /* 5090 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp6;
   const obj = channelId(576);
   const cResult = obj.c(8);
-  const obj2 = channelId(1505);
+  const obj2 = channelId(1506);
   channelId = obj2.useRoute().params.channelId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore];
@@ -56,7 +56,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const tmpResult = channelId(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmpResult2 = channelId(12014);
+  const tmpResult2 = channelId(11951);
   const channelDetailsSearchContext = tmpResult2.useChannelDetailsSearchContext(channelId, stateFromStores);
   const tmp9 = closure_7();
   if (cResult[3] !== channelDetailsSearchContext) {
@@ -81,7 +81,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   tmp15 = tmp16;
 }) : (function PinsScreen() {
   let channelId;
-  const obj = channelId(1505);
+  const obj = channelId(1506);
   channelId = obj.useRoute().params.channelId;
   const items = [ChannelStore];
   const obj2 = channelId(504);
@@ -93,7 +93,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     return guild_id;
   });
-  const obj3 = channelId(12014);
+  const obj3 = channelId(11951);
   const channelDetailsSearchContext = obj3.useChannelDetailsSearchContext(channelId, stateFromStores);
   return <View style={closure_7().container}>{null}</View>;
 }));

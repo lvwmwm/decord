@@ -1,10 +1,10 @@
-// Module ID: 7751
-// Function ID: 7752
+// Module ID: 7760
+// Function ID: 7761
 // Name: VideoUploadUtils
 // Dependencies: [1207, 3, 2]
 // Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata
 
-// Module 7751 (VideoUploadUtils)
+// Module 7760 (VideoUploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import size_mod from "module_2" /* 2 */;

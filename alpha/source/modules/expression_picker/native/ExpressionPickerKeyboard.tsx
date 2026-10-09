@@ -1,15 +1,15 @@
-// Module ID: 16913
-// Function ID: 16914
+// Module ID: 17041
+// Function ID: 17042
 // Name: ExpressionPickerKeyboard
-// Dependencies: [32, 19, 11729, 21, 558, 576, 4810, 5360, 12160, 1893, 1628, 4947, 10354, 4787, 9681, 11921, 2]
+// Dependencies: [32, 19, 11665, 21, 558, 576, 4811, 5361, 12097, 1894, 1629, 4948, 10341, 4788, 9700, 11858, 2]
 
-// Module 16913 (ExpressionPickerKeyboard)
+// Module 17041 (ExpressionPickerKeyboard)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import native from "native" /* 4787 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11729 */;
-import getEmojiTextDefault from "getEmojiText" /* 12160 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import native from "native" /* 4788 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11665 */;
+import getEmojiTextDefault from "getEmojiText" /* 12097 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

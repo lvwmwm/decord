@@ -1,11 +1,10 @@
-// Module ID: 9964
-// Function ID: 9965
+// Module ID: 9983
+// Function ID: 9984
 // Name: SelectedDismissibleContent
-// Dependencies: [32, 19, 21, 558, 576, 7090, 2]
+// Dependencies: [32, 19, 21, 558, 576, 7093, 2]
 
-// Module 9964 (SelectedDismissibleContent)
+// Module 9983 (SelectedDismissibleContent)
 import react2 from "react" /* 576 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -14,46 +13,59 @@ import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
+let tmp;
+const useSelectedDismissibleContent = tmp(7093);
 ({ Fragment: c3, jsx: closure_4 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedDismissibleContent(arg0) {
   let bypassAutoDismiss;
   let children;
-  let contentTypes;
   let groupName;
-  let tmp3;
-  let tmp4;
+  let tmp8;
+  let tmp9;
   const obj = react2;
-  const cResult = obj.c(6);
-  ({ children, contentTypes, groupName, bypassAutoDismiss } = arg0);
-  const obj2 = useSelectedDismissibleContent;
-  [tmp3, tmp4] = obj2.useSelectedDismissibleContent(contentTypes, groupName, bypassAutoDismiss);
-  _slicedToArray(obj2.useSelectedDismissibleContent(contentTypes, groupName, bypassAutoDismiss), 2);
-  if (cResult[0] === children) {
-    if (cResult[1] === tmp4) {
-      let tmp5;
-      let tmp7;
-      if (cResult[2] === tmp3) {
-        tmp5 = cResult[3];
-      }
-      if (cResult[4] !== tmp5) {
-        const obj3 = { children: tmp5 };
-        const tmp10 = React3(_false, obj3);
-        cResult[4] = tmp5;
-        cResult[5] = tmp10;
-        tmp7 = tmp10;
-      } else {
-        tmp7 = cResult[5];
-      }
-      return tmp7;
+  const cResult = obj.c(9);
+  ({ children, groupName, bypassAutoDismiss } = arg0);
+  if (cResult[0] === bypassAutoDismiss) {
+    let tmp5;
+    if (cResult[1] === groupName) {
+      tmp5 = cResult[2];
     }
+    const tmpResult = useSelectedDismissibleContent;
+    [tmp8, tmp9] = tmpResult.useSelectedDismissibleContent(tmp4, tmp5);
+    _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp4, tmp5), 2);
+    if (cResult[3] === children) {
+      if (cResult[4] === tmp9) {
+        let tmp10;
+        let tmp12;
+        if (cResult[5] === tmp8) {
+          tmp10 = cResult[6];
+        }
+        if (cResult[7] !== tmp10) {
+          const obj2 = { children: tmp10 };
+          const tmp15 = React3(_false, obj2);
+          cResult[7] = tmp10;
+          cResult[8] = tmp15;
+          tmp12 = tmp15;
+        } else {
+          tmp12 = cResult[8];
+        }
+        return tmp12;
+      }
+    }
+    const obj3 = { visibleContent: tmp8, markAsDismissed: tmp9 };
+    const childrenResult = children(obj3);
+    cResult[3] = children;
+    cResult[4] = tmp9;
+    cResult[5] = tmp8;
+    cResult[6] = childrenResult;
+    tmp10 = childrenResult;
   }
-  const childrenResult = children({ visibleContent: tmp3, markAsDismissed: tmp4 });
-  cResult[0] = children;
-  cResult[1] = tmp4;
-  cResult[2] = tmp3;
-  cResult[3] = childrenResult;
-  tmp5 = childrenResult;
+  const obj4 = { groupName, bypassAutoDismiss };
+  cResult[0] = bypassAutoDismiss;
+  cResult[1] = groupName;
+  cResult[2] = obj4;
+  tmp5 = obj4;
 }) : (function SelectedDismissibleContent(arg0) {
   let bypassAutoDismiss;
   let children;
@@ -62,7 +74,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedDi
   let obj3;
   ({ contentTypes, children, groupName, bypassAutoDismiss } = arg0);
   const obj = useSelectedDismissibleContent;
-  const tmp = _slicedToArray(obj.useSelectedDismissibleContent(contentTypes, groupName, bypassAutoDismiss), 2);
+  const tmp = _slicedToArray(obj.useSelectedDismissibleContent(contentTypes, { groupName, bypassAutoDismiss }), 2);
   const obj2 = { children: children(obj3) };
   obj3 = { visibleContent: tmp[0], markAsDismissed: tmp[1] };
   return React3(_false, obj2);

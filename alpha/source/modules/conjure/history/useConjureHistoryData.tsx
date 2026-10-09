@@ -1,15 +1,15 @@
-// Module ID: 16925
-// Function ID: 16926
+// Module ID: 17053
+// Function ID: 17054
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 13072, 558, 576, 16926, 16920, 2]
+// Dependencies: [32, 19, 13164, 558, 576, 17054, 17048, 2]
 
-// Module 16925 (useConjureHistoryData)
+// Module 17053 (useConjureHistoryData)
 import react2 from "react" /* 576 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 16920 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 16926 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 17048 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 17054 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, dependencyMap, map, obj1, obj5, obj6, set, str, str2;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f127115 = (result) => {
+const f127546 = (result) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = result;
@@ -214,7 +214,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
   const cResult = obj.c(38);
   const tmp2 = _require;
   if (cResult[0] !== arg1) {
-    const tmp2Result = tmp2(16926);
+    const tmp2Result = tmp2(17054);
     const result = tmp2Result.restorePanelEnvironments(arg1);
     cResult[0] = arg1;
     cResult[1] = result;
@@ -246,7 +246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
     const fn2 = function k() {
       const items = [React3(closure_0, "stable"), hasOwnProperty(closure_0, "stable")];
       const allResult = all(items);
-      return allResult.then(f127115);
+      return allResult.then(f127546);
     };
     cResult[6] = arg0;
     cResult[7] = fn2;
@@ -717,7 +717,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
   const tmp3 = refresh2(react.useCallback(() => {
     const items = [React3(closure_0, "stable"), hasOwnProperty(closure_0, "stable")];
     const allResult = all(items);
-    return allResult.then(f127115);
+    return allResult.then(f127546);
   }, items2));
   react = tmp3;
   const items3 = [arg0, hasItem];

@@ -1,22 +1,22 @@
-// Module ID: 6132
-// Function ID: 6133
+// Module ID: 6134
+// Function ID: 6135
 // Name: ImpersonateActionCreators
-// Dependencies: [2063, 4705, 2124, 2118, 4707, 2115, 5971, 2117, 1085, 2070, 1264, 5105, 2123, 584, 1112, 2]
+// Dependencies: [2064, 4707, 2124, 2118, 4709, 2115, 5973, 2117, 1085, 2071, 1265, 5106, 2123, 584, 1112, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 6132 (ImpersonateActionCreators)
+// Module 6134 (ImpersonateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
 import ImpersonateTypes from "ImpersonateTypes" /* 2123 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import GuildChannelStore from "GuildChannelStore" /* 4707 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
 import ImpersonateStore from "ImpersonateStore" /* 2117 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -55,7 +55,7 @@ function updateImpersonating(guildId, type) {
         const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
         if (null != defaultChannel) {
           const tmp8Result = tmp8(1112);
-          tmp8Result.transitionTo(closure_12.CHANNEL(guildId, defaultChannel.id));
+          tmp8Result.transitionTo(authStore2.CHANNEL(guildId, defaultChannel.id));
         }
       }
     }
@@ -82,7 +82,7 @@ export const startImpersonating = function startImpersonating(guildId, data) {
       const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
       if (null != defaultChannel) {
         const tmp3Result = router_utils;
-        tmp3Result.transitionTo(closure_12.CHANNEL(guildId, defaultChannel.id));
+        tmp3Result.transitionTo(authStore2.CHANNEL(guildId, defaultChannel.id));
       }
     }
   }

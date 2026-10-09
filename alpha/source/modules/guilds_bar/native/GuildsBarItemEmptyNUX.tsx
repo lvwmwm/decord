@@ -1,46 +1,45 @@
-// Module ID: 16592
-// Function ID: 16593
+// Module ID: 16715
+// Function ID: 16716
 // Name: GuildsBarItemEmptyNUX
-// Dependencies: [19, 17, 4899, 16522, 1085, 11182, 21, 5090, 587, 7043, 558, 576, 4778, 504, 4810, 5374, 16248, 16535, 1126, 8896, 16534, 6166, 16546, 5086, 2]
+// Dependencies: [19, 17, 4900, 16645, 1085, 10602, 21, 5091, 587, 7046, 558, 576, 4779, 504, 4811, 5375, 16367, 16658, 1126, 6163, 8907, 16657, 6168, 16669, 5087, 2]
 
-// Module 16592 (GuildsBarItemEmptyNUX)
+// Module 16715 (GuildsBarItemEmptyNUX)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import spring from "spring" /* 5374 */;
-import transitionToGuild from "transitionToGuild" /* 7043 */;
-import MainTabsConstants from "MainTabsConstants" /* 11182 */;
+import spring from "spring" /* 5375 */;
+import transitionToGuild from "transitionToGuild" /* 7046 */;
+import MainTabsConstants from "MainTabsConstants" /* 10602 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16522 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16645 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c9;
 let closure_12;
 let closure_4;
 let hasOwnProperty;
-let map1;
 let metroImportAll;
-let metroRequire;
+let metroImportDefault;
+let unpackModuleId;
 function handlePress() {
   const obj = transitionToGuild;
   obj.transitionToGuild(EMPTY_NUX_SERVER);
 }
-({ Pressable: closure_4, Image: hasOwnProperty, View: metroRequire } = react_native);
-({ GUILD_ITEM_HIT_SLOP: metroImportAll, useGuildWrapperSize: c9 } = GuildsBarConstants);
+({ Pressable: closure_4, View: hasOwnProperty } = react_native);
+({ GUILD_ITEM_HIT_SLOP: metroImportDefault, useGuildWrapperSize: metroImportAll } = GuildsBarConstants);
 const EMPTY_NUX_SERVER = Constants.EMPTY_NUX_SERVER;
 const MODE_CHANGE_PHYSICS = MainTabsConstants.MODE_CHANGE_PHYSICS;
-({ jsx: closure_12, jsxs: map1 } = Fragment);
-let closure_14 = createStyles.createStyles((width, arg1) => {
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let closure_13 = createStyles.createStyles((width, arg1) => {
   let rect;
   let rect1;
   const diff = width - 10;
-  const obj = { root: { alignSelf: "stretch", paddingLeft: metroImportAll.left, marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING }, container: { position: "relative", flexDirection: "row", alignItems: "center", height: 55, width }, guildIndicator: rect, icon: { width: 59, height: 55, marginLeft: -3 }, backdrop: size, expandedChildren: rect1 };
-  ({ alignSelf: "stretch", paddingLeft: metroImportAll.left, marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING });
-  rect = { position: "absolute", left: -metroImportAll.left, top: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN };
+  const obj = { root: { alignSelf: "stretch", paddingLeft: metroImportDefault.left, marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING }, container: { position: "relative", flexDirection: "row", alignItems: "center", height: 55, width }, guildIndicator: rect, icon: { width: 59, height: 55, marginLeft: -3 }, backdrop: size, expandedChildren: rect1 };
+  ({ alignSelf: "stretch", paddingLeft: metroImportDefault.left, marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_PADDING });
+  rect = { position: "absolute", left: -metroImportDefault.left, top: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN };
   size = { position: "absolute", top: 16, width, height: diff, borderRadius: nativeDefault.modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS };
   rect1 = { position: "absolute", left: arg1 + 16, right: 8, top: 16, height: diff, flexDirection: "row", alignItems: "center" };
   return obj;
@@ -48,22 +47,14 @@ let closure_14 = createStyles.createStyles((width, arg1) => {
 const __initData = { code: "function GuildsBarItemEmptyNUXTsx1(){const{withSpring,selected,activeColor,inactiveColor,MODE_CHANGE_PHYSICS}=this.__closure;return{backgroundColor:withSpring(selected?activeColor:inactiveColor,MODE_CHANGE_PHYSICS,\"animate-always\")};}" };
 const __initData2 = { code: "function GuildsBarItemEmptyNUXTsx2(){const{withSpring,selected,activeColor,inactiveColor,MODE_CHANGE_PHYSICS}=this.__closure;return{backgroundColor:withSpring(selected?activeColor:inactiveColor,MODE_CHANGE_PHYSICS,'animate-always')};}" };
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarEmptyNUX() {
-  let HomeDrawerSharedItem;
-  let Text;
   let guildId;
-  let intl2;
   let items1;
   let items2;
-  let items3;
-  let obj10;
-  let obj11;
   let sharedValue;
   let stateFromStores;
   let tmp12;
-  let tmp13;
   let tmp17;
-  let tmp20;
-  let tmp22;
+  let tmp21;
   let tmp7;
   let tmp8;
   let token1;
@@ -71,10 +62,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(36);
   let obj2 = stateFromStores(token1[12]);
   const token = obj2.useToken(sharedValue(token1[8]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmp6 = closure_14(token, closure_9());
+  const tmp6 = closure_13(token, closure_8());
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedGuildStore];
-    const fn = function u() {
+    const fn = function c() {
       return guildId.getGuildId() === EMPTY_NUX_SERVER;
     };
     cResult[0] = items;
@@ -89,7 +80,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmpResult5 = stateFromStores(token1[14]);
   sharedValue = tmpResult5.useSharedValue(false);
   if (cResult[2] !== sharedValue) {
-    const fn2 = function w() {
+    const fn2 = function v() {
       const result = sharedValue.set(true);
     };
     cResult[2] = sharedValue;
@@ -99,154 +90,154 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = cResult[3];
   }
   if (cResult[4] !== sharedValue) {
-    const fn3 = function f() {
-      const result = sharedValue.set(false);
-    };
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
+    }
     cResult[4] = sharedValue;
-    cResult[5] = fn3;
-    tmp13 = fn3;
+    cResult[5] = H;
   } else {
-    tmp13 = cResult[5];
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
+    }
   }
   const tmpResult6 = stateFromStores(token1[12]);
   token1 = tmpResult6.useToken(tmp4(tmp2[8]).colors.BACKGROUND_SURFACE_HIGH);
   const tmpResult7 = stateFromStores(token1[12]);
   const token2 = tmpResult7.useToken(tmp4(tmp2[8]).colors.BACKGROUND_BRAND);
   const tmpResult8 = stateFromStores(token1[14]);
-  class A {
+  class P {
     constructor() {
       const obj = spring;
       const obj2 = { backgroundColor: obj.withSpring(stateFromStores ? token2 : token1, MODE_CHANGE_PHYSICS, "animate-always") };
       return obj2;
     }
   }
-  A.__closure = { withSpring: stateFromStores(token1[15]).withSpring, selected: stateFromStores, activeColor: token2, inactiveColor: token1, MODE_CHANGE_PHYSICS };
-  A.__workletHash = 13334573793151;
-  A.__initData = __initData;
+  P.__closure = { withSpring: stateFromStores(token1[15]).withSpring, selected: stateFromStores, activeColor: token2, inactiveColor: token1, MODE_CHANGE_PHYSICS };
+  P.__workletHash = 13334573793151;
+  P.__initData = __initData;
   ({ withSpring: stateFromStores(token1[15]).withSpring, selected: stateFromStores, activeColor: token2, inactiveColor: token1, MODE_CHANGE_PHYSICS });
-  const animatedStyle = tmpResult8.useAnimatedStyle(A);
+  const animatedStyle = tmpResult8.useAnimatedStyle(P);
   const enableHome = token2.useContext(tmp(tmp2[16]).HomeDrawerStateContext).enableHome;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { onPress: handlePress };
-    cResult[6] = obj4;
-    tmp17 = obj4;
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
+    }
+    tmp18[0] = handlePress;
+    cResult[6] = tmp18;
+    tmp17 = tmp18;
   } else {
-    tmp17 = cResult[6];
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
+    }
   }
-  const tmp19 = sharedValue(token1[17])(tmp17);
+  sharedValue(token1[17])(tmp17);
   const container = tmp6.container;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(tmp2[18]).intl;
-    const stringResult = intl.string(stateFromStores(token1[18]).t["3S2xmm"]);
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
+    }
+    const stringResult = obj9.string(stateFromStores(token1[18]).t["3S2xmm"]);
     cResult[7] = stringResult;
-    tmp20 = stringResult;
+    tmp21 = stringResult;
   } else {
-    tmp20 = cResult[7];
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
+    }
   }
   if (cResult[8] !== stateFromStores) {
-    const obj5 = { selected: stateFromStores };
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
+    }
+    tmp24[0] = stateFromStores;
     cResult[8] = stateFromStores;
-    cResult[9] = obj5;
-    tmp22 = obj5;
+    cResult[9] = tmp24;
   } else {
-    tmp22 = cResult[9];
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
+    }
   }
   if (cResult[10] === animatedStyle) {
-    let tmp23;
-    let tmp25;
-    let tmp30;
-    if (cResult[11] === tmp6.backdrop) {
-      tmp23 = cResult[12];
+    class H {
+      constructor() {
+        const result = sharedValue.set(false);
+      }
     }
     if (cResult[13] !== tmp6.icon) {
-      const obj6 = { style: tmp6.icon, source: sharedValue(token1[19]), resizeMode: "contain" };
-      const tmp28 = closure_12(closure_5, obj6);
+      class H {
+        constructor() {
+          const result = sharedValue.set(false);
+        }
+      }
+      const obj4 = { style: tmp6.icon, source: sharedValue(token1[20]), resizeMode: "contain" };
+      const tmp4Result = sharedValue(token1[19]);
       cResult[13] = tmp6.icon;
-      cResult[14] = tmp28;
-      tmp25 = tmp28;
+      cResult[14] = closure_11(tmp4Result, obj4);
+      const tmp29 = closure_11(tmp4Result, obj4);
     } else {
-      tmp25 = cResult[14];
+      class H {
+        constructor() {
+          const result = sharedValue.set(false);
+        }
+      }
     }
     if (cResult[15] !== (true === stateFromStores)) {
-      const obj7 = { selected: true === stateFromStores };
-      const tmp32 = closure_12(stateFromStores(token1[20]).UnreadIndicator, obj7);
+      class H {
+        constructor() {
+          const result = sharedValue.set(false);
+        }
+      }
+      const obj5 = { selected: true === stateFromStores };
       cResult[15] = true === stateFromStores;
-      cResult[16] = tmp32;
-      tmp30 = tmp32;
+      cResult[16] = closure_11(stateFromStores(token1[21]).UnreadIndicator, obj5);
+      const tmp32 = closure_11(stateFromStores(token1[21]).UnreadIndicator, obj5);
     } else {
-      tmp30 = cResult[16];
+      class H {
+        constructor() {
+          const result = sharedValue.set(false);
+        }
+      }
     }
     if (cResult[17] === tmp6.guildIndicator) {
-      let tmp33;
-      if (cResult[18] === tmp30) {
-        tmp33 = cResult[19];
+      class H {
+        constructor() {
+          const result = sharedValue.set(false);
+        }
       }
       if (cResult[20] === tmp12) {
-        if (cResult[21] === tmp13) {
-          if (cResult[22] === tmp6.container) {
-            if (cResult[23] === tmp33) {
-              if (cResult[24] === tmp22) {
-                if (cResult[25] === tmp23) {
-                  if (cResult[28] === enableHome) {
-                    if (cResult[29] === tmp19) {
-                      let tmp43;
-                      if (cResult[30] === tmp6.expandedChildren) {
-                        tmp43 = cResult[31];
-                      }
-                      if (cResult[32] === tmp37) {
-                        if (cResult[33] === tmp6.root) {
-                          let tmp50;
-                          if (cResult[34] === tmp43) {
-                            tmp50 = cResult[35];
-                          }
-                          return tmp50;
-                        }
-                      }
-                      const obj8 = { style: tmp6.root, children: items1 };
-                      items1 = [tmp37, tmp43];
-                      const tmp52 = closure_13(sharedValue(token1[21]), obj8);
-                      cResult[32] = tmp37;
-                      cResult[33] = tmp6.root;
-                      cResult[34] = tmp43;
-                      cResult[35] = tmp52;
-                      tmp50 = tmp52;
-                    }
-                  }
-                  let tmp44 = null;
-                  if (enableHome) {
-                    const obj9 = { style: tmp6.expandedChildren, collapsable: false, children: closure_12(HomeDrawerSharedItem, obj10) };
-                    const tmp4Result = sharedValue(token1[21]);
-                    const merged = Object.assign(tmp19);
-                    obj10 = { title: closure_12(Text, obj11) };
-                    HomeDrawerSharedItem = tmp(tmp2[22]).HomeDrawerSharedItem;
-                    obj11 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(stateFromStores(token1[18]).t["3S2xmm"]) };
-                    Text = tmp(tmp2[23]).Text;
-                    intl2 = tmp(tmp2[18]).intl;
-                    tmp44 = closure_12(tmp4Result, obj9);
-                  }
-                  cResult[28] = enableHome;
-                  cResult[29] = tmp19;
-                  cResult[30] = tmp6.expandedChildren;
-                  cResult[31] = tmp44;
-                  tmp43 = tmp44;
-                }
-              }
-            }
+        class H {
+          constructor() {
+            const result = sharedValue.set(false);
           }
         }
       }
-      const obj12 = { style: container, onPressIn: tmp12, onPressOut: tmp13, onPress: handlePress, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp20, accessibilityState: tmp22, hitSlop, children: items2 };
-      items2 = [tmp23, tmp25, tmp33];
+      const obj6 = { style: container, onPressIn: tmp12, onPressOut: tmp13, onPress: handlePress, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp21, accessibilityState: tmp23, hitSlop, children: items1 };
+      items1 = [tmp25, tmp27, tmp33];
       cResult[20] = tmp12;
       cResult[21] = tmp13;
       cResult[22] = tmp6.container;
       cResult[23] = tmp33;
-      cResult[24] = tmp22;
-      cResult[25] = tmp23;
-      cResult[26] = tmp25;
-      cResult[27] = closure_13(closure_4, obj12);
-      closure_13(closure_4, obj12);
-      class A {
+      cResult[24] = tmp23;
+      cResult[25] = tmp25;
+      cResult[26] = tmp27;
+      cResult[27] = closure_12(closure_4, obj6);
+      closure_12(closure_4, obj6);
+      class P {
         constructor() {
           const obj = spring;
           const obj2 = { backgroundColor: obj.withSpring(stateFromStores ? token2 : token1, MODE_CHANGE_PHYSICS, "animate-always") };
@@ -254,20 +245,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    const obj13 = { style: tmp6.guildIndicator, children: tmp30 };
-    const tmp36 = closure_12(closure_6, obj13);
+    const obj7 = { style: tmp6.guildIndicator, children: tmp31 };
     cResult[17] = tmp6.guildIndicator;
-    cResult[18] = tmp30;
-    cResult[19] = tmp36;
-    tmp33 = tmp36;
+    cResult[18] = tmp31;
+    cResult[19] = closure_11(closure_5, obj7);
+    const tmp36 = closure_11(closure_5, obj7);
   }
-  const obj14 = { style: items3 };
-  items3 = [tmp6.backdrop, animatedStyle];
-  const tmp24 = closure_12(sharedValue(token1[14]).View, obj14);
+  const obj8 = { style: items2 };
+  items2 = [tmp6.backdrop, animatedStyle];
   cResult[10] = animatedStyle;
   cResult[11] = tmp6.backdrop;
-  cResult[12] = tmp24;
-  tmp23 = tmp24;
+  cResult[12] = closure_11(sharedValue(token1[14]).View, obj8);
+  const tmp26 = closure_11(sharedValue(token1[14]).View, obj8);
 }) : (function GuildsBarEmptyNUX() {
   let HomeDrawerSharedItem;
   let Text;
@@ -286,7 +275,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let token2;
   let obj = stateFromStores(token1[12]);
   const token = obj.useToken(sharedValue(token1[8]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmp5 = closure_14(token, closure_9());
+  const tmp5 = closure_13(token, closure_8());
   let obj2 = stateFromStores(token1[13]);
   const items = [SelectedGuildStore];
   stateFromStores = obj2.useStateFromStores(items, () => guildId.getGuildId() === EMPTY_NUX_SERVER);
@@ -323,31 +312,32 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   intl = stateFromStores(token1[18]).intl;
   const obj10 = { style: items3 };
   items3 = [tmp5.backdrop, animatedStyle];
-  items4 = [closure_12(sharedValue(token1[14]).View, obj10), , ];
-  const obj11 = { style: tmp5.icon, source: sharedValue(token1[19]), resizeMode: "contain" };
-  items4[1] = closure_12(closure_5, obj11);
-  const obj12 = { style: tmp5.guildIndicator, children: closure_12(stateFromStores(token1[20]).UnreadIndicator, obj13) };
+  items4 = [closure_11(sharedValue(token1[14]).View, obj10), , ];
+  const obj11 = { style: tmp5.icon, source: sharedValue(token1[20]), resizeMode: "contain" };
+  const tmp16 = sharedValue(token1[19]);
+  items4[1] = closure_11(tmp16, obj11);
+  const obj12 = { style: tmp5.guildIndicator, children: closure_11(stateFromStores(token1[21]).UnreadIndicator, obj13) };
   obj13 = { selected: true === stateFromStores };
-  items4[2] = closure_12(closure_6, obj12);
+  items4[2] = closure_11(closure_5, obj12);
   const obj14 = { style: tmp5.root, children: items5 };
-  items5 = [closure_13(closure_4, obj9), ];
+  items5 = [closure_12(closure_4, obj9), ];
   let tmp15Result = null;
-  closure_13(closure_4, obj9);
-  const tmp14 = closure_13;
-  const tmp17 = sharedValue(token1[21]);
+  closure_12(closure_4, obj9);
+  const tmp14 = closure_12;
+  const tmp18 = sharedValue(token1[22]);
   if (enableHome) {
-    const obj15 = { style: tmp5.expandedChildren, collapsable: false, children: closure_12(HomeDrawerSharedItem, obj16) };
-    const tmp3Result = tmp3(token1[21]);
+    const obj15 = { style: tmp5.expandedChildren, collapsable: false, children: closure_11(HomeDrawerSharedItem, obj16) };
+    const tmp3Result = tmp3(token1[22]);
     const merged = Object.assign(tmp13);
-    obj16 = { title: closure_12(Text, obj17) };
-    HomeDrawerSharedItem = tmp(tmp2[22]).HomeDrawerSharedItem;
+    obj16 = { title: closure_11(Text, obj17) };
+    HomeDrawerSharedItem = tmp(tmp2[23]).HomeDrawerSharedItem;
     obj17 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(stateFromStores(token1[18]).t["3S2xmm"]) };
-    Text = tmp(tmp2[23]).Text;
+    Text = tmp(tmp2[24]).Text;
     intl2 = tmp(tmp2[18]).intl;
     tmp15Result = tmp15(tmp3Result, obj15);
   }
   items5[1] = tmp15Result;
-  return tmp14(tmp17, obj14);
+  return tmp14(tmp18, obj14);
 }));
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarItemEmptyNUX.tsx");

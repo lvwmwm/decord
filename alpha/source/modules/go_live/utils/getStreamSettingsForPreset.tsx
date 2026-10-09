@@ -1,13 +1,13 @@
-// Module ID: 10841
-// Function ID: 10842
+// Module ID: 11014
+// Function ID: 11015
 // Name: getStreamSettingsForPreset
-// Dependencies: [5210, 10842, 1381, 5235, 2]
+// Dependencies: [5211, 11015, 1382, 5236, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 10841 (getStreamSettingsForPreset)
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 10842 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5210 */;
+// Module 11014 (getStreamSettingsForPreset)
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 11015 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5211 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -47,10 +47,10 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3) {
         if (arg0 === constants.PRESET_VIDEO) {
           let tmp26 = require;
           if (PlatformUtils.isPlatformEmbedded) {
-            let tmp26Result = tmp26(1381);
+            let tmp26Result = tmp26(1382);
             if (tmp26Result.isDesktop()) {
               let str = "getStreamSettingsForPreset";
-              let tmp11 = tmp4(5235)("getStreamSettingsForPreset", user, arg3);
+              let tmp11 = tmp4(5236)("getStreamSettingsForPreset", user, arg3);
               let tmp12 = tmp11;
               let maxResolution;
               if (tmp11 != null) {

@@ -1,22 +1,22 @@
-// Module ID: 18026
-// Function ID: 18027
+// Module ID: 18186
+// Function ID: 18187
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 18008, 18010, 11473, 21, 5090, 587, 558, 576, 1502, 17319, 2040, 18011, 5303, 1126, 6203, 7079, 11478, 4765, 5631, 6872, 5086, 6283, 6882, 18027, 18038, 18041, 6267, 6184, 5373, 8555, 6719, 2]
+// Dependencies: [5, 32, 19, 18168, 18170, 11403, 21, 5091, 587, 558, 576, 1503, 17467, 2041, 18171, 5304, 1126, 6205, 7082, 11408, 4767, 5632, 6879, 5087, 6290, 6889, 18187, 18198, 18201, 6269, 6186, 5374, 8563, 6726, 2]
 
-// Module 18026 (GuildSettingsAutomodRule)
+// Module 18186 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6203 */;
-import ClipboardUtils from "ClipboardUtils" /* 6872 */;
-import Constants from "Constants" /* 11473 */;
-import AutomodStore from "AutomodStore" /* 18008 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 18011 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6205 */;
+import ClipboardUtils from "ClipboardUtils" /* 6879 */;
+import Constants from "Constants" /* 11403 */;
+import AutomodStore from "AutomodStore" /* 18168 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18010 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18170 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   } else {
     tmp11 = cResult[1];
   }
-  closure_12 = tmp11;
+  let closure_12 = tmp11;
   let obj5 = hasChanges;
   ref = hasChanges.useRef(null);
   if (cResult[2] !== errorMessage) {
@@ -283,7 +283,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const saveEditingRule = tmp7.saveEditingRule;
   const cancelEditingRule = tmp7.cancelEditingRule;
   let obj2 = guildId(rulesByTriggerType[12]);
-  closure_12 = obj2.useIsUndeletableMentionSpamRule(guildId, triggerType);
+  let closure_12 = obj2.useIsUndeletableMentionSpamRule(guildId, triggerType);
   const DeveloperMode = guildId(rulesByTriggerType[13]).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   let obj3 = editingRule;

@@ -1,11 +1,11 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11694
+// Function ID: 11695
 // Name: OnboardingAppsRocket
-// Dependencies: [19, 21, 558, 576, 7550, 2]
+// Dependencies: [19, 21, 558, 576, 7559, 2]
 
-// Module 11757 (OnboardingAppsRocket)
+// Module 11694 (OnboardingAppsRocket)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7550 */;
+import inlineStyles from "inlineStyles" /* 7559 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -114,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent
   }
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { id: "a", x1: 12.115, x2: 18.746, y1: 29.237, y2: 29.237, gradientUnits: "userSpaceOnUse", children: items };
-    const LinearGradient = tmp(7550).LinearGradient;
+    const LinearGradient = tmp(7559).LinearGradient;
     items = [_false(inlineStyles.Stop, { offset: 0.07, stopColor: "#F9E172" }), _false(inlineStyles.Stop, { offset: 0.27, stopColor: "#F7D067" }), _false(inlineStyles.Stop, { offset: 0.67, stopColor: "#F1A549" }), _false(inlineStyles.Stop, { offset: 0.83, stopColor: "#EF913C" })];
     const tmp48 = React3(LinearGradient, obj2);
     cResult[20] = tmp48;
@@ -124,7 +124,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent
   }
   if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { id: "b", x1: 30.613, x2: 37.243, y1: 47.733, y2: 47.733, gradientUnits: "userSpaceOnUse", children: items1 };
-    const LinearGradient2 = tmp(7550).LinearGradient;
+    const LinearGradient2 = tmp(7559).LinearGradient;
     items1 = [_false(inlineStyles.Stop, { offset: 0.07, stopColor: "#F9E172" }), _false(inlineStyles.Stop, { offset: 0.27, stopColor: "#F7D067" }), _false(inlineStyles.Stop, { offset: 0.67, stopColor: "#F1A549" }), _false(inlineStyles.Stop, { offset: 0.83, stopColor: "#EF913C" })];
     const tmp52 = React3(LinearGradient2, obj3);
     cResult[21] = tmp52;
@@ -135,9 +135,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent
   if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { children: items2 };
     items2 = [tmp45, tmp49, ];
-    const Defs = tmp(7550).Defs;
+    const Defs = tmp(7559).Defs;
     const obj5 = { id: "c", x1: 14.934, x2: 25.72, y1: 42.833, y2: 42.833, gradientUnits: "userSpaceOnUse", children: items3 };
-    const LinearGradient3 = tmp(7550).LinearGradient;
+    const LinearGradient3 = tmp(7559).LinearGradient;
     items3 = [_false(inlineStyles.Stop, { offset: 0.07, stopColor: "#F9E172" }), _false(inlineStyles.Stop, { offset: 0.27, stopColor: "#F7D067" }), _false(inlineStyles.Stop, { offset: 0.67, stopColor: "#F1A549" }), _false(inlineStyles.Stop, { offset: 0.83, stopColor: "#EF913C" })];
     items2[2] = React3(LinearGradient3, obj5);
     const tmp56 = React3(Defs, obj4);

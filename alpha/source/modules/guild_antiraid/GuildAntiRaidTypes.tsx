@@ -1,9 +1,9 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8027
+// Function ID: 8028
 // Name: GuildAntiRaidTypes
 // Dependencies: [2]
 
-// Module 8019 (GuildAntiRaidTypes)
+// Module 8027 (GuildAntiRaidTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidTypes.tsx");

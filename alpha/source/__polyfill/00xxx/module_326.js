@@ -123,7 +123,7 @@ function ItemWithSeparator(leadingItem) {
     if (!react.isValidElement(LeadingSeparatorComponent)) {
       const obj4 = { highlighted: tmp2 };
       let merged = Object.assign(first1);
-      tmp14 = closure_12(LeadingSeparatorComponent, obj4);
+      tmp14 = authStore2(LeadingSeparatorComponent, obj4);
     }
     tmp12 = tmp14;
   }
@@ -133,12 +133,12 @@ function ItemWithSeparator(leadingItem) {
     if (!react.isValidElement(SeparatorComponent)) {
       const obj5 = { highlighted: first };
       let merged1 = Object.assign(first2);
-      tmp21 = closure_12(SeparatorComponent, obj5);
+      tmp21 = authStore2(SeparatorComponent, obj5);
     }
     tmp19 = tmp21;
   }
   let tmp29 = null;
-  const tmp27 = authStore2;
+  const tmp27 = authStore3;
   const tmp28 = map1;
   if (tmp12 || tmp19) {
     let tmp30 = tmp19;
@@ -412,7 +412,7 @@ let items = [
       const tmp13 = _modDef314;
       const merged = Object.assign(tmp);
       prop = undefined;
-      const tmp12 = closure_12;
+      const tmp12 = authStore2;
       if (self.props.onViewableItemsChanged) {
         prop = self._onViewableItemsChanged;
       }

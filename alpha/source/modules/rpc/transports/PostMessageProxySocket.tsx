@@ -1,13 +1,13 @@
-// Module ID: 11146
-// Function ID: 11147
+// Module ID: 10909
+// Function ID: 10910
 // Name: PostMessageProxySocket
-// Dependencies: [1085, 11147, 11134, 11133, 2]
+// Dependencies: [1085, 10910, 10896, 10895, 2]
 
-// Module 11146 (PostMessageProxySocket)
+// Module 10909 (PostMessageProxySocket)
 import Constants from "Constants" /* 1085 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 11133 */;
-import RPCErrorDefault from "RPCError" /* 11134 */;
-import BaseSocket from "BaseSocket" /* 11147 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 10895 */;
+import RPCErrorDefault from "RPCError" /* 10896 */;
+import BaseSocket from "BaseSocket" /* 10910 */;
 import size from "module_2" /* 2 */;
 
 const RPCCloseCodes = Constants.RPCCloseCodes;

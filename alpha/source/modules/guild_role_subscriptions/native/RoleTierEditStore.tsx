@@ -1,17 +1,17 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 18421
+// Function ID: 18422
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1271, 1266, 6945, 558, 576, 4690, 5392, 15307, 2]
+// Dependencies: [32, 5, 1272, 1267, 6952, 558, 576, 4692, 5393, 15420, 2]
 // Exports: resetImperatively
 
-// Module 18259 (RoleTierEditStore)
+// Module 18421 (RoleTierEditStore)
 import react from "react" /* 576 */;
-import react_native from "react-native" /* 1271 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6945 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15307 */;
+import react_native from "react-native" /* 1272 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6952 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15420 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1266 from "module_1266" /* 1266 */;
+import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,11 +19,11 @@ const require = globalThis.__r;
 let _require, c3, c4, dependencyMap, set;
 
 let tmp;
-const _slicedToArray2 = tmp(4690);
+const _slicedToArray2 = tmp(4692);
 let _slicedToArray = _slicedToArray_mod;
 const LoadingState = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
 let closure_7 = Object.freeze({ currentScene: null, groupCover: null, groupDescription: "", groupIsFullGate: false });
-const withEqualityFn = module_1266.createWithEqualityFn((arg0) => {
+const withEqualityFn = module_1267.createWithEqualityFn((arg0) => {
   let obj;
   function nestedUpdate(arg0) {
     closure_0 = arg0;
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
   } else {
     first = cResult[0];
   }
-  const tmp5 = _slicedToArray(withEqualityFn(first, tmp(4690).shallow), 3);
+  const tmp5 = _slicedToArray(withEqualityFn(first, tmp(4692).shallow), 3);
   const first1 = tmp5[0];
   let closure_2 = tmp7;
   dependencyMap = tmp8;
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
         if (cResult[6] === tmp9) {
           tmp10 = cResult[7];
         }
-        first1(5392)(tmp10);
+        first1(5393)(tmp10);
         if (cResult[8] === guildId) {
           if (cResult[9] === tmp9) {
             if (cResult[10] === tmp5[1]) {
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5392)(() => {
+  tiers(5393)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {

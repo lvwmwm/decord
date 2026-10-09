@@ -1,13 +1,13 @@
-// Module ID: 17357
-// Function ID: 17358
+// Module ID: 17505
+// Function ID: 17506
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 5090, 587, 558, 576, 6656, 6729, 17356, 6735, 2]
+// Dependencies: [19, 21, 5091, 587, 558, 576, 6663, 6736, 17504, 6742, 2]
 
-// Module 17357 (ContextMenuCommandAppScreen)
+// Module 17505 (ContextMenuCommandAppScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
           tmp = commands[arg1];
           closure_0 = tmp;
           diff = commands.length - 1;
-          obj = { item: tmp, onPress() { /* body not rendered: F149651 */ }, section: closure_0, start: 0 === arg1, end: arg1 === diff };
+          obj = { item: tmp, onPress() { /* body not rendered: F150000 */ }, section: closure_0, start: 0 === arg1, end: arg1 === diff };
           return closure_1_4(commands(onPressCommand[8]), obj, tmp.id);
         }
       }
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
       tmp = commands[arg1];
       closure_0 = tmp;
       diff = commands.length - 1;
-      obj = { item: tmp, onPress() { /* body not rendered: F149651 */ }, section: closure_0, start: 0 === arg1, end: arg1 === diff };
+      obj = { item: tmp, onPress() { /* body not rendered: F150000 */ }, section: closure_0, start: 0 === arg1, end: arg1 === diff };
       return closure_1_4(commands(onPressCommand[8]), obj, tmp.id);
     }
   }

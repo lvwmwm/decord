@@ -1,11 +1,11 @@
-// Module ID: 2003
-// Function ID: 2004
+// Module ID: 2004
+// Function ID: 2005
 // Name: ZoomedInAnalyticsExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: isZoomedExperimentEnabled
 
-// Module 2003 (ZoomedInAnalyticsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 2004 (ZoomedInAnalyticsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

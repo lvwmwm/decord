@@ -1,18 +1,18 @@
-// Module ID: 8304
-// Function ID: 8305
+// Module ID: 8312
+// Function ID: 8313
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [19, 7259, 8305, 558, 576, 1992, 2]
+// Dependencies: [19, 7264, 8313, 558, 576, 1993, 2]
 
-// Module 8304 (useFramePreviewOverrideFrame)
+// Module 8312 (useFramePreviewOverrideFrame)
 import react2 from "react" /* 576 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8305 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8313 */;
 import react from "react" /* 19 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7259 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7264 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesItemType = tmp(1992);
+const CollectiblesItemType = tmp(1993);
 let closure_4 = FramePreviewOverrideStore.useFramePreviewOverrideStore;
 let c5 = "frame-preview-override";
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFramePreviewOverrideFrame() {

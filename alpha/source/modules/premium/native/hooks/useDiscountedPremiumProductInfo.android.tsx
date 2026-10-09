@@ -1,14 +1,14 @@
-// Module ID: 9346
-// Function ID: 9347
+// Module ID: 9384
+// Function ID: 9385
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1096, 558, 576, 9347, 7115, 6926, 2]
+// Dependencies: [19, 1096, 558, 576, 9385, 7120, 6933, 2]
 
-// Module 9346 (useDiscountedPremiumProductInfo)
+// Module 9384 (useDiscountedPremiumProductInfo)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
-import PriceUtils from "PriceUtils" /* 6926 */;
-import ProductIds from "ProductIds" /* 7115 */;
-import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 9347 */;
+import PriceUtils from "PriceUtils" /* 6933 */;
+import ProductIds from "ProductIds" /* 7120 */;
+import useDiscountedPremiumPlan from "useDiscountedPremiumPlan" /* 9385 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -155,7 +155,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscounte
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    const tmp6Result = tmp6(6926);
+                    const tmp6Result = tmp6(6933);
                     return tmp6Result.formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }

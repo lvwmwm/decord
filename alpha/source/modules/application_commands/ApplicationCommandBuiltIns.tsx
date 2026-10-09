@@ -1,27 +1,27 @@
-// Module ID: 9194
-// Function ID: 9195
+// Module ID: 9228
+// Function ID: 9229
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 2063, 4707, 1389, 5399, 1085, 9195, 2126, 5083, 7235, 1126, 9196, 1997, 2040, 9197, 9198, 6958, 9199, 1106, 9200, 7167, 7358, 6102, 4922, 1102, 11443, 4659, 7001, 38, 6937, 12876, 2]
+// Dependencies: [5, 2064, 4709, 1390, 5400, 1085, 9229, 2126, 5084, 7240, 1126, 9230, 1998, 2041, 9231, 9232, 6965, 9233, 1106, 9234, 7172, 7363, 6104, 4923, 1102, 11350, 4661, 7008, 38, 6944, 12845, 2]
 // Exports: getBuiltInCommands
 
-// Module 9194 (ApplicationCommandBuiltIns)
-import Server from "Server" /* 1997 */;
-import UserSettings from "UserSettings" /* 2040 */;
+// Module 9228 (ApplicationCommandBuiltIns)
+import Server from "Server" /* 1998 */;
+import UserSettings from "UserSettings" /* 2041 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2126 */;
-import MessageConstants from "MessageConstants" /* 5083 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 6937 */;
-import ThreadHooks from "ThreadHooks" /* 6958 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7235 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9196 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9197 */;
+import MessageConstants from "MessageConstants" /* 5084 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5400 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 6944 */;
+import ThreadHooks from "ThreadHooks" /* 6965 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7172 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7240 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9230 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9231 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import UserStore from "UserStore" /* 1389 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import DiceRollConstants from "DiceRollConstants" /* 9195 */;
+import DiceRollConstants from "DiceRollConstants" /* 9229 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -615,7 +615,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
             id = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {

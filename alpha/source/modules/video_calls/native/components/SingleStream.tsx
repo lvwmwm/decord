@@ -1,14 +1,14 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 11102
+// Function ID: 11103
 // Name: SingleStream
-// Dependencies: [19, 10333, 21, 558, 576, 5104, 10700, 10710, 2]
+// Dependencies: [19, 10320, 21, 558, 576, 5105, 10846, 10856, 2]
 
-// Module 10927 (SingleStream)
+// Module 11102 (SingleStream)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5104 */;
-import StreamTileDefault from "StreamTile" /* 10700 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5105 */;
+import StreamTileDefault from "StreamTile" /* 10846 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10333 */;
+import ChannelCallStore from "ChannelCallStore" /* 10320 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleStre
     return tmp7;
   }
   StreamTileDefault;
-  const tmp9 = <tmp8 gestureEnabled resizeMode={tmp(10710).ResizeMode.CONTAIN} onSingleTap={first} onDoubleTap={tmp5} participant={participant} style={tmp6} />;
+  const tmp9 = <tmp8 gestureEnabled resizeMode={tmp(10856).ResizeMode.CONTAIN} onSingleTap={first} onDoubleTap={tmp5} participant={participant} style={tmp6} />;
   cResult[4] = tmp5;
   cResult[5] = participant;
   cResult[6] = tmp9;
@@ -71,7 +71,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleStre
   channel = channel.channel;
   let participant = channel.participant;
   StreamTileDefault;
-  return <tmp gestureEnabled resizeMode={channel(10710).ResizeMode.CONTAIN} onSingleTap={function onSingleTap() {
+  return <tmp gestureEnabled resizeMode={channel(10856).ResizeMode.CONTAIN} onSingleTap={function onSingleTap() {
     closure_1_3();
   }} onDoubleTap={function onDoubleTap() {
     React3();

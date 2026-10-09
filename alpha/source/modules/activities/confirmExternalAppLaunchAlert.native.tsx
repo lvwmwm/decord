@@ -1,35 +1,34 @@
-// Module ID: 10655
-// Function ID: 10656
+// Module ID: 10800
+// Function ID: 10801
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2023, 21, 5090, 558, 576, 10656, 1126, 5086, 4763, 5375, 5297, 2]
+// Dependencies: [19, 17, 2024, 21, 5091, 558, 576, 6163, 10801, 1126, 5087, 4765, 5376, 5298, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10655 (confirmExternalAppLaunchAlert)
+// Module 10800 (confirmExternalAppLaunchAlert)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Constants from "Constants" /* 2023 */;
-import LinkingDefault from "Linking" /* 4763 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10656 */;
+import Constants from "Constants" /* 2024 */;
+import LinkingDefault from "Linking" /* 4765 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10801 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-let metroImportDefault;
+let hasOwnProperty;
 let metroRequire;
-({ Image: c3, View: closure_4 } = react_native);
+const View = react_native.View;
 const PRIVATE_APPS_HELP_ARTICLE = Constants.PRIVATE_APPS_HELP_ARTICLE;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = createStyles.createStyles({ alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertEyebrowText: { marginTop: 40, textAlign: "center" }, alertTitleText: { marginTop: 16, textAlign: "center" }, alertSubtitleText: { marginTop: 16, textAlign: "center" }, announcementBirb: { width: 90, height: 100, position: "absolute", top: -66 }, linkWrapper: { marginTop: 8 } });
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let closure_7 = createStyles.createStyles({ alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertEyebrowText: { marginTop: 40, textAlign: "center" }, alertTitleText: { marginTop: 16, textAlign: "center" }, alertSubtitleText: { marginTop: 16, textAlign: "center" }, announcementBirb: { width: 90, height: 100, position: "absolute", top: -66 }, linkWrapper: { marginTop: 8 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmActivityGateContent(application) {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmActivityGateContent(application) {
   let items;
   let tmp10;
   let tmp12;
@@ -38,11 +37,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
   const obj = react2;
   const cResult = obj.c(19);
   application = application.application;
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   const alertContainer = tmp4.alertContainer;
   if (cResult[0] !== tmp4.announcementBirb) {
     const obj2 = { source: AssetRegistryDefault, style: tmp4.announcementBirb };
-    const tmp9 = metroRequire(_false, obj2);
+    const tmp8 = FastImageDefault;
+    const tmp9 = hasOwnProperty(tmp8, obj2);
     cResult[0] = tmp4.announcementBirb;
     cResult[1] = tmp9;
     tmp5 = tmp9;
@@ -60,7 +60,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
   }
   if (cResult[3] !== tmp4.alertEyebrowText) {
     const obj3 = { style: alertEyebrowText, variant: "eyebrow", children: tmp10 };
-    const tmp14 = metroRequire(Text_Text.Text, obj3);
+    const tmp14 = hasOwnProperty(Text_Text.Text, obj3);
     cResult[3] = tmp4.alertEyebrowText;
     cResult[4] = tmp14;
     tmp12 = tmp14;
@@ -97,7 +97,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
     }
     if (cResult[11] !== tmp4.alertSubtitleText) {
       const obj5 = { style: alertSubtitleText, variant: "text-sm/normal", children: tmp19 };
-      const tmp23 = metroRequire(Text_Text.Text, obj5);
+      const tmp23 = hasOwnProperty(Text_Text.Text, obj5);
       cResult[11] = tmp4.alertSubtitleText;
       cResult[12] = tmp23;
       tmp21 = tmp23;
@@ -119,7 +119,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
     }
     const obj6 = { style: alertContainer, children: items };
     items = [tmp5, tmp12, tmp17, tmp21];
-    const tmp27 = metroImportDefault(React3, obj6);
+    const tmp27 = metroRequire(View, obj6);
     cResult[13] = tmp4.alertContainer;
     cResult[14] = tmp21;
     cResult[15] = tmp5;
@@ -128,7 +128,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
     cResult[18] = tmp27;
     tmp24 = tmp27;
   }
-  const tmp18 = metroRequire(Text_Text.Text, { style: alertTitleText, variant: "heading-lg/bold", children: tmp15 });
+  const tmp18 = hasOwnProperty(Text_Text.Text, { style: alertTitleText, variant: "heading-lg/bold", children: tmp15 });
   cResult[7] = tmp4.alertTitleText;
   cResult[8] = tmp15;
   cResult[9] = tmp18;
@@ -140,35 +140,35 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Confirm
   let items;
   let obj5;
   application = application.application;
-  const tmp = closure_8();
+  const tmp = closure_7();
   const obj = { style: tmp.alertContainer, children: items };
-  items = [, , , ];
   const obj2 = { source: AssetRegistryDefault, style: tmp.announcementBirb };
-  items[0] = metroRequire(_false, obj2);
+  const tmp2 = FastImageDefault;
+  items = [hasOwnProperty(tmp2, obj2), , , ];
   const obj3 = { style: tmp.alertEyebrowText, variant: "eyebrow", children: intl.string(intl4.t["06YebE"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items[1] = metroRequire(Text, obj3);
+  items[1] = hasOwnProperty(Text, obj3);
   const obj4 = { style: tmp.alertTitleText, variant: "heading-lg/bold", children: intl2.format(intl4.t["Z/eMDT"], obj5) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   obj5 = { activityName: application.name };
-  items[2] = metroRequire(Text2, obj4);
+  items[2] = hasOwnProperty(Text2, obj4);
   const obj6 = { style: tmp.alertSubtitleText, variant: "text-sm/normal", children: intl3.string(intl4.t.z81WwD) };
   const Text3 = Text_Text.Text;
   intl3 = intl4.intl;
-  items[3] = metroRequire(Text3, obj6);
-  return metroImportDefault(React3, obj);
+  items[3] = hasOwnProperty(Text3, obj6);
+  return metroRequire(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkButton() {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkButton() {
   let first;
   let intl;
   let tmp6;
   let tmp9;
   let obj = react2;
   const cResult = obj.c(4);
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     function handlePress() {
       const obj = LinkingDefault;
@@ -181,9 +181,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBu
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", onPress: first, text: intl.string(intl4.t.E0gf5l) };
-    const Button = tmp(5375).Button;
+    const Button = tmp(5376).Button;
     intl = tmp(1126).intl;
-    const tmp8 = metroRequire(Button, obj2);
+    const tmp8 = hasOwnProperty(Button, obj2);
     cResult[1] = tmp8;
     tmp6 = tmp8;
   } else {
@@ -191,7 +191,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBu
   }
   if (cResult[2] !== tmp4.linkWrapper) {
     const obj3 = { style: tmp4.linkWrapper, children: tmp6 };
-    const tmp12 = metroRequire(React3, obj3);
+    const tmp12 = hasOwnProperty(View, obj3);
     cResult[2] = tmp4.linkWrapper;
     cResult[3] = tmp12;
     tmp9 = tmp12;
@@ -203,7 +203,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBu
   let Button;
   let intl;
   let obj2;
-  let obj = { style: closure_8().linkWrapper, children: metroRequire(Button, obj2) };
+  let obj = { style: closure_7().linkWrapper, children: hasOwnProperty(Button, obj2) };
   obj2 = {
     variant: "secondary",
     size: "sm",
@@ -215,7 +215,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBu
   };
   Button = components_Button_Button.Button;
   intl = intl4.intl;
-  return metroRequire(React3, obj);
+  return hasOwnProperty(View, obj);
 });
 const result = size.fileFinishedImporting("modules/activities/confirmExternalAppLaunchAlert.native.tsx");
 
@@ -228,7 +228,7 @@ export const confirmExternalAppLaunchAlert = function confirmExternalAppLaunchAl
   ({ application, onConfirm, onCancel } = arg0);
   const tmp = AlertActionCreatorsDefault;
   const show = tmp.show;
-  const obj = { title: "", children: metroRequire(closure_9, { application }), onConfirm, confirmText: intl.string(intl4.t["3PatSz"]), onCancel, cancelText: intl2.string(intl4.t["ETE/oC"]), footer: metroRequire(closure_10, {}), isDismissable: false };
+  const obj = { title: "", children: hasOwnProperty(closure_8, { application }), onConfirm, confirmText: intl.string(intl4.t["3PatSz"]), onCancel, cancelText: intl2.string(intl4.t["ETE/oC"]), footer: hasOwnProperty(closure_9, {}), isDismissable: false };
   intl = intl4.intl;
   intl2 = intl4.intl;
   return resolve(show(obj));

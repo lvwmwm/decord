@@ -1,8 +1,8 @@
-// Module ID: 5506
-// Function ID: 5507
+// Module ID: 5507
+// Function ID: 5508
 // Dependencies: [2]
 
-// Module 5506
+// Module 5507
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/baddie_violet.png.js");

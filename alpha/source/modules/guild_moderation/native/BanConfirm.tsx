@@ -1,20 +1,20 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11390
+// Function ID: 11391
 // Name: BanConfirm
-// Dependencies: [32, 19, 17, 2086, 1389, 21, 1126, 1102, 5090, 587, 558, 576, 6656, 10500, 504, 6102, 11461, 5086, 4922, 6265, 6264, 6763, 5375, 2]
+// Dependencies: [32, 19, 17, 2086, 1390, 21, 1126, 1102, 5091, 587, 558, 576, 6663, 10490, 504, 6104, 6163, 11391, 5087, 4923, 6267, 6266, 6770, 5376, 2]
 
-// Module 11460 (BanConfirm)
+// Module 11390 (BanConfirm)
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl7 from "intl" /* 1126 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,8 @@ const require = globalThis.__r;
 let banUserResult, catchPromise, nextPromise, ref, ref2, tmp13, tmp3, tmp4, tmp5, tmp6, tmp7;
 
 let c10;
-let closure_12;
+let c9;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj10;
 let obj11;
@@ -33,8 +32,8 @@ let obj13;
 let obj14;
 let obj9;
 let unpackModuleId;
-({ Image: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault } = react_native);
-({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 let obj = {
   value: 0,
   getLabel() {
@@ -100,9 +99,8 @@ obj11 = { height: 1.25 * nativeDefault.space.PX_96 };
 obj12 = { marginVertical: nativeDefault.space.PX_16 };
 obj13 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_4, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 obj14 = { marginBottom: nativeDefault.space.PX_16 };
-let closure_14 = createStyles(obj8);
+let closure_13 = createStyles(obj8);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BanConfirm(guildId) {
-  let closure_7;
   let first;
   let onBan;
   let stateFromStores1;
@@ -119,7 +117,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   guildId = guildId.guildId;
   const userId = guildId.userId;
   onBan = guildId.onBan;
-  closure_14();
+  closure_13();
   ref = stateFromStores1.useRef(null);
   const ref1 = stateFromStores1.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -156,52 +154,52 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = cResult[4];
   }
   if (cResult[5] !== guildId) {
-    class I {
+    class X {
       constructor() {
-        return closure_8.getGuild(guildId);
+        return closure_7.getGuild(guildId);
       }
     }
     cResult[5] = guildId;
-    cResult[6] = I;
-    tmp14 = I;
+    cResult[6] = X;
+    tmp14 = X;
   } else {
-    class I {
+    class X {
       constructor() {
-        return closure_8.getGuild(guildId);
+        return closure_7.getGuild(guildId);
       }
     }
   }
   const tmpResult = tmp(tmp2[14]);
   const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp14);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class X {
       constructor() {
-        return closure_8.getGuild(guildId);
+        return closure_7.getGuild(guildId);
       }
     }
     const items2 = [UserStore];
     cResult[7] = items2;
     tmp16 = items2;
   } else {
-    class I {
+    class X {
       constructor() {
-        return closure_8.getGuild(guildId);
+        return closure_7.getGuild(guildId);
       }
     }
   }
   if (cResult[8] !== userId) {
     class I {
       constructor() {
-        return closure_8.getGuild(guildId);
+        return closure_8.getUser(userId);
       }
     }
     cResult[8] = userId;
-    cResult[9] = tmp18;
-    tmp17 = tmp18;
+    cResult[9] = I;
+    tmp17 = I;
   } else {
     class I {
       constructor() {
-        return closure_8.getGuild(guildId);
+        return closure_8.getUser(userId);
       }
     }
   }
@@ -210,29 +208,29 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ref = obj2.useRef(0);
   ref2 = obj2.useRef("");
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
+    class A {
       constructor() {
         return { banning: false, banError: false };
       }
     }
-    cResult[10] = V;
+    cResult[10] = A;
   } else {
-    class V {
+    class A {
       constructor() {
         return { banning: false, banError: false };
       }
     }
   }
-  [r10103, closure_7] = stateFromStores(stateFromStores1.useState(tmp20), 2);
-  stateFromStores(stateFromStores1.useState(tmp20), 2);
+  [r10103, GuildStore] = stateFromStores(stateFromStores1.useState(tmp19), 2);
+  stateFromStores(stateFromStores1.useState(tmp19), 2);
   if (cResult[11] === stateFromStores) {
-    class V {
+    class A {
       constructor() {
         return { banning: false, banError: false };
       }
     }
   }
-  class M {
+  class H {
     constructor() {
       tmp2 = null != closure_3;
       tmp = closure_3;
@@ -247,14 +245,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp7 = closure_2;
         obj = closure_1(closure_2[15]);
         tmp8 = closure_4;
-        tmp9 = closure_13;
+        tmp9 = closure_12;
         tmp10 = closure_5;
         tmp11 = closure_6;
         tmp12 = obj;
-        banUserResult = obj.banUser(tmp.id, closure_4.id, closure_13[closure_5.current].value, closure_6.current);
+        banUserResult = obj.banUser(tmp.id, closure_4.id, closure_12[closure_5.current].value, closure_6.current);
         tmp13 = onBan;
         nextPromise = banUserResult.then(onBan);
-        catchPromise = nextPromise.catch(() => { /* body not rendered: F142829 */ });
+        catchPromise = nextPromise.catch(() => { /* body not rendered: F143096 */ });
       }
       return;
     }
@@ -262,7 +260,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   cResult[11] = stateFromStores;
   cResult[12] = onBan;
   cResult[13] = stateFromStores1;
-  cResult[14] = M;
+  cResult[14] = H;
 }) : (function BanConfirm(arg0) {
   let Button;
   let Qd6w7T;
@@ -288,22 +286,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp11;
   let tmp16;
   let tmp17;
-  let tmp4Result;
-  let tmp4Result3;
   let tmp4Result4;
+  let tmp4Result5;
+  let tmp4Result6;
   let v8jV9fx;
-  const f108121 = () => ({ banning: false, banError: false });
+  const f108044 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
-  let tmp = closure_14();
+  let tmp = closure_13();
   ref = stateFromStores1.useRef(null);
   const ref1 = stateFromStores1.useRef(null);
   const insets = require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets;
   let obj = { insets, inputs: items, scrollViewRef: ref };
   items = [{ ref: ref1, offset: { type: "toBottom" } }];
   require("useSafeAreaAvoidingInputs")(obj);
-  const items1 = [GuildStore];
+  const items1 = [c7];
   const obj2 = require("get initialized");
   const stateFromStores = obj2.useStateFromStores(items1, () => GuildStore.getGuild(require));
   const items2 = [UserStore];
@@ -311,10 +309,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   ref2 = stateFromStores1.useRef("");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f108121), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f108044), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
-  const tmp10 = stateFromStores(stateFromStores1.useState(f108121), 2);
+  const tmp10 = stateFromStores(stateFromStores1.useState(f108044), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {
@@ -322,26 +320,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj5 = { paddingHorizontal: require("native").space.PX_24, paddingBottom: insets.bottom };
       const obj6 = { style: tmp.iconLabelBlock, children: items4 };
       const obj7 = { style: tmp.iconStyles, source: require("AssetRegistry"), resizeMode: "contain" };
-      items4 = [closure_10(ref, obj7), , ];
+      const tmp4Result = require("FastImage");
+      items4 = [closure_9(tmp4Result, obj7), , ];
       const obj8 = { style: tmp.redText, variant: "text-md/semibold", children: format(Qd6w7T, obj9) };
-      const Text = tmp7(tmp5[17]).Text;
+      const Text = tmp7(tmp5[18]).Text;
       const intl = tmp7(tmp5[6]).intl;
       format = intl.format;
-      obj9 = { username: tmp4Result.getName(stateFromStores1) };
+      obj9 = { username: tmp4Result4.getName(stateFromStores1) };
       Qd6w7T = tmp7(tmp5[6]).t.Qd6w7T;
-      tmp4Result = require("UserUtils");
-      items4[1] = closure_10(Text, obj8);
+      tmp4Result4 = require("UserUtils");
+      items4[1] = closure_9(Text, obj8);
       const obj10 = { variant: "text-lg/bold", color: "text-feedback-warning", children: stateFromStores.name };
-      items4[2] = closure_10(require("Text/Text").Text, obj10);
-      const items5 = [closure_11(ref2, obj6), , , , , ];
+      items4[2] = closure_9(require("Text/Text").Text, obj10);
+      const items5 = [closure_10(ref, obj6), , , , , ];
       const obj11 = { style: tmp.blurb, variant: "heading-md/normal", color: "text-feedback-warning", children: format2(v8jV9fx, obj12) };
-      const Text2 = tmp7(tmp5[17]).Text;
+      const Text2 = tmp7(tmp5[18]).Text;
       const intl2 = tmp7(tmp5[6]).intl;
       format2 = intl2.format;
-      obj12 = { user: tmp4Result3.getName(stateFromStores1) };
+      obj12 = { user: tmp4Result5.getName(stateFromStores1) };
       v8jV9fx = tmp7(tmp5[6]).t["8jV9fx"];
-      tmp4Result3 = require("UserUtils");
-      items5[1] = closure_10(Text2, obj11);
+      tmp4Result5 = require("UserUtils");
+      items5[1] = closure_9(Text2, obj11);
       const obj13 = {
         title: intl3.string(require("intl").t["8l3W0y"]),
         defaultValue: items[0].value,
@@ -352,12 +351,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         children: items.map((getLabel, value) => {
               const obj = { value, label: getLabel.getLabel() };
               const TableRadioRow = require("TableRadioRow").TableRadioRow;
-              return closure_1_10(TableRadioRow, obj, value);
+              return closure_1_9(TableRadioRow, obj, value);
             })
       };
-      const TableRadioGroup = tmp7(tmp5[19]).TableRadioGroup;
+      const TableRadioGroup = tmp7(tmp5[20]).TableRadioGroup;
       intl3 = tmp7(tmp5[6]).intl;
-      items5[2] = closure_10(TableRadioGroup, obj13);
+      items5[2] = closure_9(TableRadioGroup, obj13);
       const obj14 = {
         ref: ref1,
         containerStyle: obj15,
@@ -368,27 +367,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
       };
       obj15 = { marginVertical: require("native").space.PX_16 };
-      const TextArea = tmp7(tmp5[21]).TextArea;
+      const TextArea = tmp7(tmp5[22]).TextArea;
       intl4 = tmp7(tmp5[6]).intl;
-      items5[3] = closure_10(TextArea, obj14);
-      const obj16 = { style: obj17, children: closure_10(Button, obj18) };
+      items5[3] = closure_9(TextArea, obj14);
+      const obj16 = { style: obj17, children: closure_9(Button, obj18) };
       obj17 = { marginBottom: require("native").space.PX_16 };
       obj18 = { variant: "destructive", text: intl5.string(require("intl").t["5MBJ5M"]), onPress: tmp12, disabled: tmp11.banning };
-      Button = tmp7(tmp5[22]).Button;
+      Button = tmp7(tmp5[23]).Button;
       intl5 = tmp7(tmp5[6]).intl;
-      items5[4] = closure_10(ref2, obj16);
+      items5[4] = closure_9(ref, obj16);
       let tmp14Result = null;
-      const tmp15 = c7;
-      tmp16 = closure_11;
-      tmp17 = closure_12;
+      const tmp15 = ref2;
+      tmp16 = closure_10;
+      tmp17 = closure_11;
       if (tmp11.banError) {
         const obj19 = { style: tmp.errorText, variant: "text-md/semibold", color: "input-text-error-default", children: format3(prop, obj20) };
-        const Text3 = tmp7(tmp5[17]).Text;
+        const Text3 = tmp7(tmp5[18]).Text;
         const intl6 = tmp7(tmp5[6]).intl;
         format3 = intl6.format;
-        obj20 = { user: tmp4Result4.getName(stateFromStores1) };
+        obj20 = { user: tmp4Result6.getName(stateFromStores1) };
         prop = tmp7(tmp5[6]).t["/K6eer"];
-        tmp4Result4 = require("UserUtils");
+        tmp4Result6 = require("UserUtils");
         tmp14Result = tmp14(Text3, obj19);
       }
       obj21 = { children: items5 };

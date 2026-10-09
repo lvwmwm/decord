@@ -1,26 +1,25 @@
-// Module ID: 18382
-// Function ID: 18383
+// Module ID: 18544
+// Function ID: 18545
 // Name: StreamFullAlert
-// Dependencies: [19, 17, 21, 558, 576, 5287, 1126, 5086, 18383, 5394, 2]
+// Dependencies: [19, 21, 558, 576, 5288, 1126, 5087, 6163, 18545, 5395, 2]
 
-// Module 18382 (StreamFullAlert)
-import react_native from "react-native" /* 17 */;
+// Module 18544 (StreamFullAlert)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import AVError from "AVError" /* 5287 */;
-import AlertDefault from "Alert" /* 5394 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18383 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import AVError from "AVError" /* 5288 */;
+import AlertDefault from "Alert" /* 5395 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18545 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let c3;
 let closure_4;
-let hasOwnProperty;
-const Image = react_native.Image;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let closure_6 = { image: { alignSelf: "center", marginTop: 32 }, body: { marginTop: 16 } };
+({ jsx: c3, jsxs: closure_4 } = Fragment);
+let closure_5 = { image: { alignSelf: "center", marginTop: 32 }, body: { marginTop: 16 } };
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFullAlert(arg0) {
   let first;
   let intl3;
@@ -34,7 +33,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = AVError;
-    const errorInfo = tmpResult.getErrorInfo(tmp(5287).AVError.STREAM_FULL);
+    const errorInfo = tmpResult.getErrorInfo(tmp(5288).AVError.STREAM_FULL);
     let errorCode;
     if (errorInfo != null) {
       errorCode = errorInfo.errorCode;
@@ -56,14 +55,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
     tmp9 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-md/normal", style: closure_6.body, children: intl3.string(intl4.t.VVZDBL) };
-    const Text = tmp(5086).Text;
+    const obj3 = { variant: "text-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
+    const Text = tmp(5087).Text;
     intl3 = tmp(1126).intl;
-    const tmp16 = React3(Text, obj3);
-    const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: first };
-    const tmp17 = React3(Text_Text.Text, obj4);
-    const obj5 = { source: AssetRegistryDefault, style: closure_6.image };
-    const tmp20 = React3(Image, obj5);
+    const tmp16 = _false(Text, obj3);
+    const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: first };
+    const tmp17 = _false(Text_Text.Text, obj4);
+    const obj5 = { source: AssetRegistryDefault, style: closure_5.image };
+    const tmp19 = FastImageDefault;
+    const tmp20 = _false(tmp19, obj5);
     cResult[2] = tmp16;
     cResult[3] = tmp17;
     cResult[4] = tmp20;
@@ -80,7 +80,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
     const tmp24 = AlertDefault;
     const merged = Object.assign(arg0);
     items = [tmp11, tmp12, tmp13];
-    const tmp28 = hasOwnProperty(tmp24, obj6);
+    const tmp28 = React3(tmp24, obj6);
     cResult[5] = arg0;
     cResult[6] = tmp28;
     tmp21 = tmp28;
@@ -104,15 +104,16 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   const tmp6 = AlertDefault;
   const merged = Object.assign(arg0);
   intl2 = tmp(1126).intl;
-  const obj3 = { variant: "text-md/normal", style: closure_6.body, children: intl3.string(intl4.t.VVZDBL) };
-  const Text = tmp(5086).Text;
+  const obj3 = { variant: "text-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
+  const Text = tmp(5087).Text;
   intl3 = tmp(1126).intl;
-  items = [React3(Text, obj3), , ];
-  const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };
-  items[1] = React3(Text_Text.Text, obj4);
-  const obj5 = { source: AssetRegistryDefault, style: closure_6.image };
-  items[2] = React3(Image, obj5);
-  return hasOwnProperty(tmp6, obj2);
+  items = [_false(Text, obj3), , ];
+  const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: formatToPlainStringResult };
+  items[1] = _false(Text_Text.Text, obj4);
+  const obj5 = { source: AssetRegistryDefault, style: closure_5.image };
+  const tmp8 = FastImageDefault;
+  items[2] = _false(tmp8, obj5);
+  return React3(tmp6, obj2);
 });
 const result = size.fileFinishedImporting("components_native/calls/stream/StreamFullAlert.tsx");
 

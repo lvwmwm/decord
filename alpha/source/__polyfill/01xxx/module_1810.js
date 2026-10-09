@@ -1,82 +1,251 @@
 // Module ID: 1810
 // Function ID: 1811
-// Dependencies: [1800, 1802]
-// Exports: useAnimatedScrollHandler
+// Dependencies: [32, 19, 1659, 1764, 1693, 1684, 1687, 1686]
 
 // Module 1810
-import _mod1800 from "module_1800" /* 1800 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import module_1659_mod from "module_1659" /* 1659 */;
 
-let tmp2;
-const react = tmp2(1802);
-const __initData = { code: "function pnpm_useAnimatedScrollHandlerTs1(event){const{scrollHandlers,context}=this.__closure;const{onScroll:onScroll,onBeginDrag:onBeginDrag,onEndDrag:onEndDrag,onMomentumBegin:onMomentumBegin,onMomentumEnd:onMomentumEnd}=scrollHandlers;if(onScroll&&event.eventName.endsWith('onScroll')){onScroll(event,context);}else if(onBeginDrag&&event.eventName.endsWith('onScrollBeginDrag')){onBeginDrag(event,context);}else if(onEndDrag&&event.eventName.endsWith('onScrollEndDrag')){onEndDrag(event,context);}else if(onMomentumBegin&&event.eventName.endsWith('onMomentumScrollBegin')){onMomentumBegin(event,context);}else if(onMomentumEnd&&event.eventName.endsWith('onMomentumScrollEnd')){onMomentumEnd(event,context);}}" };
+let c3;
+let closure_4;
+({ useRef: c3, useState: closure_4 } = react);
+let module_1659 = module_1659_mod;
+module_1659.shouldBeUseWeb();
+module_1659 = module_1659_mod;
+module_1659 = module_1659.isIOS();
+if (!module_1659) {
+  const _module3 = module_1659;
+  module_1659 = _module3.isMacOS();
+}
+const __initData = { code: "function pnpm_useAnimatedRefTs1(){const{tagOrWrapper,viewName}=this.__closure;const f=function(){return tagOrWrapper.value;};if(viewName){f.viewName=viewName;}return f;}" };
 
-export const useAnimatedScrollHandler = function useAnimatedScrollHandler(fn, items) {
-  let tmp = fn;
-  if (typeof fn === "function") {
-    let obj2 = { onScroll: fn };
-    tmp = obj2;
-  }
-  obj2 = tmp;
-  const obj = _mod1800;
-  const handler = obj.useHandler(tmp, items);
-  const context = handler.context;
-  items = ["onScroll"];
-  const doDependenciesDiffer = handler.doDependenciesDiffer;
-  if (undefined !== tmp.onBeginDrag) {
-    items.push("onScrollBeginDrag");
-  }
-  if (undefined !== tmp.onEndDrag) {
-    items.push("onScrollEndDrag");
-  }
-  if (undefined !== tmp.onMomentumBegin) {
-    items.push("onMomentumScrollBegin");
-  }
-  if (undefined !== tmp.onMomentumEnd) {
-    items.push("onMomentumScrollEnd");
-  }
-  fn = function l(eventName) {
-    let onBeginDrag;
-    let onEndDrag;
-    let onMomentumBegin;
-    let onMomentumEnd;
-    let onScroll;
-    ({ onScroll, onBeginDrag, onEndDrag, onMomentumBegin, onMomentumEnd } = obj2);
-    if (onScroll) {
-      eventName = eventName.eventName;
-      if (eventName.endsWith("onScroll")) {
-        onScroll(eventName, context);
+export const useAnimatedRef = module_1659 ? (function useAnimatedRefWeb() {
+  let fun;
+  const f86275 = (getScrollableNode) => {
+    let scrollableNode;
+    if (getScrollableNode.getScrollableNode) {
+      scrollableNode = getScrollableNode.getScrollableNode();
+    } else {
+      scrollableNode = getScrollableNode;
+      if (getScrollableNode.getNativeScrollRef) {
+        scrollableNode = getScrollableNode.getNativeScrollRef();
       }
     }
-    if (onBeginDrag) {
-      const eventName2 = eventName.eventName;
-      if (eventName2.endsWith("onScrollBeginDrag")) {
-        onBeginDrag(eventName, context);
-      }
-    }
-    if (onEndDrag) {
-      const eventName3 = eventName.eventName;
-      if (eventName3.endsWith("onScrollEndDrag")) {
-        onEndDrag(eventName, context);
-      }
-    }
-    if (onMomentumBegin) {
-      const eventName4 = eventName.eventName;
-      if (eventName4.endsWith("onMomentumScrollBegin")) {
-        onMomentumBegin(eventName, context);
-      }
-    }
-    let endsWithResult = onMomentumEnd;
-    if (endsWithResult) {
-      const eventName5 = eventName.eventName;
-      endsWithResult = eventName5.endsWith("onMomentumScrollEnd");
-    }
-    if (endsWithResult) {
-      onMomentumEnd(eventName, context);
-    }
+    return scrollableNode;
   };
-  fn.__closure = { scrollHandlers: tmp, context };
-  fn.__workletHash = 480432859268;
-  fn.__initData = __initData;
-  const tmp2Result = react;
-  return tmp2Result.useEvent(fn, items, doDependenciesDiffer);
-};
+  map = new Map();
+  const current = fun(map).current;
+  let closure_2 = fun(-1);
+  const tmp2 = fun(null);
+  if (!tmp2.current) {
+    fun = function fun(map) {
+      let tag;
+      let closure_0 = map;
+      if (closure_0) {
+        ref.current = closure_0(map);
+        fun.getTag = () => {
+          const obj = first(first1[3]);
+          return obj.findNodeHandle(map);
+        };
+        fun.current = map;
+        const arr = tag;
+        if (tag.size) {
+          tag = undefined;
+          if (fun != null) {
+            const getTag = tmp3.getTag;
+            if (getTag != null) {
+              tag = getTag();
+            }
+          }
+          if (tag == null) {
+            tag = null;
+          }
+          const item = arr.forEach((fn, fn2) => {
+            if (fn != null) {
+              fn();
+            }
+            const result = current.set(fn2, fn2(tag));
+          });
+        }
+      }
+      return ref.current;
+    };
+    fun.observe = (fn) => {
+      let closure_0 = fn;
+      let tmp = fun;
+      let tag;
+      if (fun != null) {
+        const getTag = tmp.getTag;
+        if (getTag != null) {
+          tag = getTag();
+        }
+      }
+      if (tag == null) {
+        tag = null;
+      }
+      const result = current.set(fn, fn(tag));
+      return () => {
+        const value = current.get(fn);
+        const obj = current;
+        const tmp = fn;
+        if (value != null) {
+          value();
+        }
+        obj.delete(tmp);
+      };
+    };
+    fun.current = null;
+    tmp2.current = fun;
+  }
+  return tmp2.current;
+}) : (function useAnimatedRefNative() {
+  let fn;
+  const viewName = _slicedToArray(closure_4(() => {
+    let mutable = null;
+    const obj = first(first1[2]);
+    const tmp = first;
+    const tmp2 = first1;
+    if (!obj.isFabric()) {
+      mutable = null;
+      if (module_1659) {
+        const tmpResult = tmp(tmp2[4]);
+        mutable = tmpResult.makeMutable(null);
+      }
+    }
+    return mutable;
+  }), 1)[0];
+  const first1 = _slicedToArray(closure_4(() => {
+    const obj = first(first1[4]);
+    return obj.makeMutable(null);
+  }), 1)[0];
+  const f86278 = (viewConfig) => {
+    let fn;
+    const tmp = first;
+    const obj = first(first1[2]);
+    const tmp2 = first1;
+    if (obj.isFabric()) {
+      fn = tmp(tmp2[5]).getShadowNodeWrapperFromRef;
+    } else {
+      fn = (getScrollableNode) => {
+        let scrollableNode;
+        const findNodeHandle = closure_1_0(current[3]).findNodeHandle;
+        closure_1_0(current[3]);
+        if (getScrollableNode.getScrollableNode) {
+          scrollableNode = getScrollableNode.getScrollableNode();
+        } else {
+          scrollableNode = getScrollableNode;
+          if (getScrollableNode.getNativeScrollRef) {
+            scrollableNode = getScrollableNode.getNativeScrollRef();
+          }
+        }
+        return findNodeHandle(scrollableNode);
+      };
+    }
+    current.value = fn(viewConfig);
+    const iter = current;
+    if (f86278) {
+      let str;
+      if (viewConfig != null) {
+        viewConfig = viewConfig.viewConfig;
+        if (viewConfig != null) {
+          str = viewConfig.uiViewClassName;
+        }
+      }
+      if (!str) {
+        str = "RCTView";
+      }
+      tmp3.value = str;
+    }
+    return iter.value;
+  };
+  let fun;
+  map = new Map();
+  let current = closure_3(map).current;
+  let closure_2 = closure_3(-1);
+  const tmp4 = closure_3(null);
+  if (!tmp4.current) {
+    fun = function fun(map) {
+      let tag;
+      let closure_0 = map;
+      if (closure_0) {
+        ref.current = closure_0(map);
+        fun.getTag = () => {
+          const obj = first(first1[3]);
+          return obj.findNodeHandle(map);
+        };
+        fun.current = map;
+        const arr = tag;
+        if (tag.size) {
+          tag = undefined;
+          if (fun != null) {
+            const getTag = tmp3.getTag;
+            if (getTag != null) {
+              tag = getTag();
+            }
+          }
+          if (tag == null) {
+            tag = null;
+          }
+          const item = arr.forEach((fn, fn2) => {
+            if (fn != null) {
+              fn();
+            }
+            const result = current.set(fn2, fn2(tag));
+          });
+        }
+      }
+      return ref.current;
+    };
+    fun.observe = (fn) => {
+      let closure_0 = fn;
+      let tmp = fun;
+      let tag;
+      if (fun != null) {
+        const getTag = tmp.getTag;
+        if (getTag != null) {
+          tag = getTag();
+        }
+      }
+      if (tag == null) {
+        tag = null;
+      }
+      const result = current.set(fn, fn(tag));
+      return () => {
+        const value = current.get(fn);
+        const obj = current;
+        const tmp = fn;
+        if (value != null) {
+          value();
+        }
+        obj.delete(tmp);
+      };
+    };
+    fun.current = null;
+    tmp4.current = fun;
+  }
+  current = tmp4.current;
+  const shareableMappingCache = viewName(first1[6]).shareableMappingCache;
+  if (!shareableMappingCache.get(current)) {
+    let obj = { __init: fn };
+    fn = function n() {
+      let value;
+      const fn = function f() {
+        return value.value;
+      };
+      if (viewName) {
+        fn.viewName = viewName;
+      }
+      return fn;
+    };
+    const obj2 = { tagOrWrapper: first1, viewName };
+    fn.__closure = obj2;
+    fn.__workletHash = 5138727370224;
+    fn.__initData = __initData;
+    const tmp5Result = viewName(first1[7]);
+    const shareableCloneRecursive = tmp5Result.makeShareableCloneRecursive(obj);
+    const shareableMappingCache2 = tmp5(tmp6[6]).shareableMappingCache;
+    let result = shareableMappingCache2.set(current, shareableCloneRecursive);
+  }
+  return current;
+});

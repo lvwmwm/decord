@@ -1,17 +1,17 @@
-// Module ID: 15155
-// Function ID: 15156
+// Module ID: 15267
+// Function ID: 15268
 // Name: useBadBundleFilter
-// Dependencies: [19, 1389, 7267, 558, 576, 573, 4726, 9014, 7264, 7263, 2]
+// Dependencies: [19, 1390, 7272, 558, 576, 573, 4728, 9025, 7269, 7268, 2]
 
-// Module 15155 (useBadBundleFilter)
+// Module 15267 (useBadBundleFilter)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9014 */;
-import UserStore from "UserStore" /* 1389 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7268 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7269 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9025 */;
+import UserStore from "UserStore" /* 1390 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7272 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBund
                           let num2 = 0;
                           if (null != product.bundledProducts) {
                             const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(() => { /* body not rendered: F154818 */ }, 0);
+                            num2 = bundledProducts.reduce(() => { /* body not rendered: F155157 */ }, 0);
                           }
                           return result.amount < num2;
                         }
@@ -138,7 +138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBund
                           let num2 = 0;
                           if (null != product.bundledProducts) {
                             const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(() => { /* body not rendered: F154818 */ }, 0);
+                            num2 = bundledProducts.reduce(() => { /* body not rendered: F155157 */ }, 0);
                           }
                           return result.amount < num2;
                         }

@@ -1,20 +1,20 @@
-// Module ID: 11377
-// Function ID: 11378
+// Module ID: 10750
+// Function ID: 10751
 // Name: SpotifyUtils
-// Dependencies: [5, 2018, 11378, 5756, 8434, 1085, 1102, 5759, 11379, 11380, 2]
+// Dependencies: [5, 2019, 10751, 5757, 8442, 1085, 1102, 5760, 10752, 10753, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 11377 (SpotifyUtils)
+// Module 10750 (SpotifyUtils)
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import PlatformsDefault from "Platforms" /* 5759 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 11379 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11380 */;
+import PlatformsDefault from "Platforms" /* 5760 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 10752 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 10753 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2018 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11378 */;
-import SpotifyStore from "SpotifyStore" /* 5756 */;
-import SpotifyConstants from "SpotifyConstants" /* 8434 */;
+import RunningGameStore from "RunningGameStore" /* 2019 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 10751 */;
+import SpotifyStore from "SpotifyStore" /* 5757 */;
+import SpotifyConstants from "SpotifyConstants" /* 8442 */;
 import size from "module_2" /* 2 */;
 
 let TRACK, closure_3, closure_4;
@@ -157,7 +157,7 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
     if (isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        const obj3 = playableComputerDevices(11379);
+        const obj3 = playableComputerDevices(10752);
         obj3.setActiveDevice(socket.accountId, device.id);
         const obj4 = { socket, device };
         return Promise.resolve(obj4);

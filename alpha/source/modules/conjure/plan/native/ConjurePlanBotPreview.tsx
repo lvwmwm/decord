@@ -1,20 +1,20 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 17094
+// Function ID: 17095
 // Name: ConjurePlanBotPreview
-// Dependencies: [19, 17, 21, 7719, 5090, 587, 16933, 558, 576, 9308, 16946, 5086, 1126, 3827, 16963, 5373, 2]
+// Dependencies: [19, 17, 21, 7728, 5091, 587, 17063, 558, 576, 9346, 17078, 5087, 1126, 3827, 17095, 5374, 2]
 
-// Module 16962 (ConjurePlanBotPreview)
+// Module 17094 (ConjurePlanBotPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import RowGeneratorDefault from "RowGenerator" /* 7719 */;
-import ChatItemDefault from "ChatItem" /* 9308 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 16933 */;
-import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 16963 */;
+import RowGeneratorDefault from "RowGenerator" /* 7728 */;
+import ChatItemDefault from "ChatItem" /* 9346 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17063 */;
+import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 17095 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -228,9 +228,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanB
   let tmp5 = null;
   if (0 !== items.length) {
     let obj2 = { direction: "vertical", spacing: 4, children: items1 };
-    const Stack = tmp2(5373).Stack;
+    const Stack = tmp2(5374).Stack;
     const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3827.sA1lTv) };
-    const Text = tmp2(5086).Text;
+    const Text = tmp2(5087).Text;
     intl = tmp2(1126).intl;
     items1 = [closure_5(Text, obj3), , ];
     const obj4 = {
@@ -256,7 +256,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanB
     };
     items1[1] = closure_5(View, obj4);
     let obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(_modDef3827.NnmbJu) };
-    const Text2 = tmp2(5086).Text;
+    const Text2 = tmp2(5087).Text;
     intl2 = tmp2(1126).intl;
     items1[2] = closure_5(Text2, obj5);
     tmp5 = closure_6(Stack, obj2);

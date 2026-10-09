@@ -1,15 +1,15 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11679
+// Function ID: 11680
 // Name: ActivitiesBanner
-// Dependencies: [32, 19, 21, 558, 576, 11731, 11743, 1126, 11754, 2]
+// Dependencies: [32, 19, 21, 558, 576, 11667, 11680, 1126, 11691, 2]
 
-// Module 11742 (ActivitiesBanner)
+// Module 11679 (ActivitiesBanner)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import useActivityApplications from "useActivityApplications" /* 11731 */;
-import ApplicationsImageDefault from "ApplicationsImage" /* 11743 */;
-import BannerBaseDefault from "BannerBase" /* 11754 */;
+import useActivityApplications from "useActivityApplications" /* 11667 */;
+import ApplicationsImageDefault from "ApplicationsImage" /* 11680 */;
+import BannerBaseDefault from "BannerBase" /* 11691 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,26 +1,26 @@
-// Module ID: 12440
-// Function ID: 12441
+// Module ID: 12358
+// Function ID: 12359
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5757, 12439, 12438, 1085, 1382, 5944, 1272, 584, 12441, 2040, 1254, 558, 576, 504, 1402, 2127, 4763, 5940, 2]
+// Dependencies: [5, 17, 5758, 12357, 12356, 1085, 1383, 5945, 1273, 584, 12359, 2041, 1255, 558, 576, 504, 1403, 2127, 4765, 5941, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 12440 (ContactSyncUtils)
+// Module 12358 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 2040 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import UserSettings from "UserSettings" /* 2041 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import LinkingDefault from "Linking" /* 4763 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5944 */;
-import ContactSyncManager from "ContactSyncManager" /* 12441 */;
+import LinkingDefault from "Linking" /* 4765 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
+import ContactSyncManager from "ContactSyncManager" /* 12359 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12439 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12438 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5758 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12357 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12356 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -83,7 +83,7 @@ let obj = function _uploadContacts() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -307,7 +307,7 @@ export const uploadContacts = function uploadContacts() {
 };
 export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
   let obj2;
-  const request = { url: closure_12.USER_BULK_RELATIONSHIPS, body: obj2, trackedActionData: { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE }, rejectWithError: false };
+  const request = { url: authStore2.USER_BULK_RELATIONSHIPS, body: obj2, trackedActionData: { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE }, rejectWithError: false };
   obj2 = { user_ids, token: bulkAddToken };
   obj = TrackedHTTPUtilsDefault;
   ({ event: discord_common_AnalyticsUtils.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE });
@@ -323,7 +323,7 @@ export const adminDeleteContactSync = function adminDeleteContactSync() {
   ContactSyncEnabled.updateSetting(false);
   const tmp5 = TrackedHTTPUtilsDefault;
   const _delete = tmp5.delete;
-  const obj2 = { url: closure_12.CONNECTION(map1.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_CONNECTIONS_UPDATE }, rejectWithError: false };
+  const obj2 = { url: authStore2.CONNECTION(map1.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_CONNECTIONS_UPDATE }, rejectWithError: false };
   ({ event: discord_common_AnalyticsUtils.NetworkActionNames.USER_CONNECTIONS_UPDATE });
   return _delete(obj2);
 };

@@ -1,0 +1,10 @@
+// Module ID: 1672
+// Function ID: 1673
+// Name: WorkletsModule
+// Dependencies: [1673]
+
+// Module 1672 (WorkletsModule)
+import _mod1673 from "module_1673" /* 1673 */;
+
+
+export const WorkletsModule = _mod1673.WorkletsModule;

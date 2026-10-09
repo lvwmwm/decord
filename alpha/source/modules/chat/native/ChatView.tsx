@@ -1,31 +1,31 @@
-// Module ID: 10342
-// Function ID: 10343
+// Module ID: 10329
+// Function ID: 10330
 // Name: ChatView
-// Dependencies: [19, 17, 5753, 2067, 2063, 5428, 1085, 21, 5090, 587, 558, 576, 4945, 504, 1126, 5930, 5949, 10343, 6174, 10344, 7185, 7000, 9627, 6789, 10346, 10360, 10459, 11648, 12218, 1381, 12416, 12417, 11983, 12421, 12424, 9, 9393, 12427, 1200, 10975, 12429, 12430, 12541, 12554, 10211, 11647, 2]
+// Dependencies: [19, 17, 5754, 2068, 2064, 5429, 1085, 21, 5091, 587, 558, 576, 4946, 504, 1126, 5931, 5951, 10330, 6176, 10331, 7190, 7007, 9646, 6796, 10333, 10347, 10449, 11584, 12157, 1382, 12334, 12335, 11920, 12339, 12342, 9, 9431, 12345, 1200, 11149, 12347, 12348, 12480, 12494, 10196, 11583, 2]
 
-// Module 10342 (ChatView)
+// Module 10329 (ChatView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import ChatInputUtils from "ChatInputUtils" /* 4945 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7000 */;
-import SummaryActionCreators from "SummaryActionCreators" /* 9627 */;
-import ChatViewWrapperDefault from "ChatViewWrapper" /* 10346 */;
-import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10360 */;
-import MessagesDefault from "Messages" /* 10459 */;
-import ChatInputDefault from "ChatInput" /* 11648 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 12218 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12421 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12424 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import ChatInputUtils from "ChatInputUtils" /* 4946 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7007 */;
+import SummaryActionCreators from "SummaryActionCreators" /* 9646 */;
+import ChatViewWrapperDefault from "ChatViewWrapper" /* 10333 */;
+import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10347 */;
+import MessagesDefault from "Messages" /* 10449 */;
+import ChatInputDefault from "ChatInput" /* 11584 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 12157 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12339 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12342 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
-import ChannelStore_mod from "ChannelStore" /* 2063 */;
-import MessageStore from "MessageStore" /* 5428 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
+import ChannelStore_mod from "ChannelStore" /* 2064 */;
+import MessageStore from "MessageStore" /* 5429 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -757,20 +757,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp8 = channel;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(12416), obj7);
+        tmp7Result = tmp7(tmp3(12334), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c15) {
         const obj8 = { screenIndex: GatewayConnectionStore };
-        tmp7Result3 = tmp7(tmp3(12417), obj8);
+        tmp7Result3 = tmp7(tmp3(12335), obj8);
       }
       items1[2] = tmp7Result3;
       let tmp7Result4 = null;
       const tmp14Result = PlatformUtils;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId, screenIndex: GatewayConnectionStore, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(11983), obj9);
+        tmp7Result4 = tmp7(tmp3(11920), obj9);
       }
       const obj10 = { children: items2 };
       items1[3] = tmp7Result4;

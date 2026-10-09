@@ -4,8 +4,6 @@
 // Exports: addUserAgentToTransportHeaders
 
 // Module 768
-let version;
-
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const addUserAgentToTransportHeaders = function addUserAgentToTransportHeaders(_metadata) {
@@ -21,7 +19,7 @@ export const addUserAgentToTransportHeaders = function addUserAgentToTransportHe
   }
   let combined;
   if (name) {
-    version = undefined;
+    let version;
     if (sdk != null) {
       version = sdk.version;
     }

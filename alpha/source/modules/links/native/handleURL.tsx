@@ -1,15 +1,15 @@
-// Module ID: 4758
-// Function ID: 4759
+// Module ID: 4760
+// Function ID: 4761
 // Name: handleURL
-// Dependencies: [5, 17, 4759, 1085, 3, 4760, 4762, 4763, 4764, 1948, 4765, 1126, 5051, 1381, 5054, 1385, 5067, 13901, 2]
+// Dependencies: [5, 17, 4761, 1085, 3, 4762, 4764, 4765, 4766, 1949, 4767, 1126, 5052, 1382, 5055, 1386, 5068, 13994, 2]
 // Exports: default
 
-// Module 4758 (handleURL)
+// Module 4760 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4759 */;
+import ActionSheetStore from "ActionSheetStore" /* 4761 */;
 import size from "module_2" /* 2 */;
 
 function sanitizeURLPart(str) {
@@ -325,7 +325,7 @@ let obj = function _handleURL() {
           presentFailedToast(intl.string(closure_2_0(tmp2[11]).t.XiqzAp));
         }
       };
-      return "Reflect";
+      return "Set";
     })();
     let nextResult = iter.next();
     return iter;

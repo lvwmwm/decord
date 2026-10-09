@@ -1,34 +1,34 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 11032
+// Function ID: 11033
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 10860, 10861, 21, 5090, 558, 576, 6267, 10862, 10863, 10865, 10867, 1126, 5086, 10871, 10872, 10874, 10882, 6803, 5373, 2]
+// Dependencies: [19, 17, 11033, 11034, 21, 5091, 558, 576, 6269, 11035, 11036, 11038, 11040, 1126, 5087, 11044, 11045, 11047, 11055, 6810, 5374, 2]
 
-// Module 10859 (UserSettingsVoice)
+// Module 11032 (UserSettingsVoice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 10860 */;
-import UserSettingsVoiceConstants from "UserSettingsVoiceConstants" /* 10861 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 10862 */;
-import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 10863 */;
-import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 10865 */;
-import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 10871 */;
-import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 10872 */;
-import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 10874 */;
-import VideoBackgroundOptionsRadioGroupDefault from "VideoBackgroundOptionsRadioGroup" /* 10882 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6810 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11033 */;
+import UserSettingsVoiceConstants from "UserSettingsVoiceConstants" /* 11034 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11035 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11036 */;
+import UserSettingsVoiceInputOptionsDefault from "UserSettingsVoiceInputOptions" /* 11038 */;
+import UserSettingsSoundboardVolumeDefault from "UserSettingsSoundboardVolume" /* 11044 */;
+import UserSettingsVoiceOverlayDefault from "UserSettingsVoiceOverlay" /* 11045 */;
+import UserSettingsVoiceProcessingDefault from "UserSettingsVoiceProcessing" /* 11047 */;
+import VideoBackgroundOptionsRadioGroupDefault from "VideoBackgroundOptionsRadioGroup" /* 11055 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const TableRowGroup2 = tmp(6267);
+const TableRowGroup2 = tmp(6269);
 const View = react_native.View;
 const isMobileOverlaySupported = MobileVoiceOverlayStore.isMobileOverlaySupported;
 const guideURL = UserSettingsVoiceConstants.USER_SETTINGS_VOICE_GUILD_URL;
@@ -93,7 +93,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp8 = cResult[1];
   }
   if (cResult[2] !== nonContextualStreamOutputPresent) {
-    const tmp12 = nonContextualStreamOutputPresent && metroRequire(tmp6(10867), {});
+    const tmp12 = nonContextualStreamOutputPresent && metroRequire(tmp6(11040), {});
     cResult[2] = nonContextualStreamOutputPresent;
     cResult[3] = tmp12;
     tmp11 = tmp12;
@@ -201,11 +201,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   const tmp6 = View;
   tmp7 = metroImportDefault;
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp5(tmp2(10867), {});
+    nonContextualStreamOutputPresent = tmp5(tmp2(11040), {});
   }
   items[1] = nonContextualStreamOutputPresent;
   const obj3 = { style: tmp.tableRow, variant: "text-sm/medium", children: intl.format(intl3.t["V+B3FH"], obj4) };
-  const Text = tmp8(5086).Text;
+  const Text = tmp8(5087).Text;
   intl = tmp8(1126).intl;
   obj4 = { guideURL };
   items[2] = metroRequire(Text, obj3);

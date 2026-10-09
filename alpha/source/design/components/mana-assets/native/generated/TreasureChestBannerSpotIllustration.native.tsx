@@ -1,100 +1,121 @@
-// Module ID: 13668
-// Function ID: 13669
+// Module ID: 13759
+// Function ID: 13760
 // Name: TreasureChestBannerSpotIllustration
-// Dependencies: [21, 558, 576, 13669, 6164, 2]
+// Dependencies: [19, 21, 13760, 13761, 13762, 558, 576, 6277, 6163, 2]
 
-// Module 13668 (TreasureChestBannerSpotIllustration)
+// Module 13759 (TreasureChestBannerSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import _modDef13669 from "module_13669" /* 13669 */;
+import react2 from "react" /* 576 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import react_native from "react-native" /* 6277 */;
+import _modDef13760 from "module_13760" /* 13760 */;
+import _modDef13761 from "module_13761" /* 13761 */;
+import _modDef13762 from "module_13762" /* 13762 */;
+import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
+let obj = { 1: null, 2: null, 3: null };
+let obj2 = { uri: _modDef13760 };
+obj[1] = obj2;
+let obj3 = { uri: _modDef13761 };
+obj[2] = obj3;
+obj[3] = { uri: _modDef13762 };
+({ uri: _modDef13762 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TreasureChestBannerSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;
-  let first;
   let height;
   let resizeMode;
   let scale;
   let width;
-  const obj = react;
-  const cResult = obj.c(9);
+  obj = react2;
+  const cResult = obj.c(12);
   ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
-  let num = 173;
-  if (undefined !== width) {
-    num = width;
-  }
-  let num2 = 138;
-  if (undefined !== height) {
-    num2 = height;
-  }
-  let num3 = 1;
+  let num = 1;
   if (undefined !== scale) {
-    num3 = scale;
+    num = scale;
   }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef13669 };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const result = num * num3;
-  const result1 = num2 * num3;
-  if (cResult[1] === result) {
-    let tmp7;
-    if (cResult[2] === result1) {
-      tmp7 = cResult[3];
-    }
-    if (cResult[4] === accessibilityLabel) {
-      if (cResult[5] === accessible) {
-        if (cResult[6] === resizeMode) {
-          let tmp8;
-          if (cResult[7] === tmp7) {
-            tmp8 = cResult[8];
+  if (cResult[0] === height) {
+    if (cResult[1] === num) {
+      let tmp4;
+      let tmp7;
+      let tmp10;
+      if (cResult[2] === width) {
+        tmp4 = cResult[3];
+      }
+      const _Symbol = Symbol;
+      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmpResult = react_native;
+        const assetSource = tmpResult.getAssetSource(obj);
+        cResult[4] = assetSource;
+        tmp7 = assetSource;
+      } else {
+        tmp7 = cResult[4];
+      }
+      if (cResult[5] !== resizeMode) {
+        const tmpResult3 = react_native;
+        const assetResizeMode = tmpResult3.getAssetResizeMode(resizeMode);
+        cResult[5] = resizeMode;
+        cResult[6] = assetResizeMode;
+        tmp10 = assetResizeMode;
+      } else {
+        tmp10 = cResult[6];
+      }
+      if (cResult[7] === accessibilityLabel) {
+        if (cResult[8] === accessible) {
+          if (cResult[9] === tmp4) {
+            let tmp12;
+            if (cResult[10] === tmp10) {
+              tmp12 = cResult[11];
+            }
+            return tmp12;
           }
-          return tmp8;
         }
       }
+      const tmp15 = jsx(FastImageDefault, { fadeDuration: 0, source: tmp7, style: tmp4, accessible, accessibilityLabel, resizeMode: tmp10 });
+      cResult[7] = accessibilityLabel;
+      cResult[8] = accessible;
+      cResult[9] = tmp4;
+      cResult[10] = tmp10;
+      cResult[11] = tmp15;
+      tmp12 = tmp15;
     }
-    const tmp11 = jsx(FastImageDefault, { fadeDuration: 0, source: first, style: tmp7, accessible, accessibilityLabel, resizeMode });
-    cResult[4] = accessibilityLabel;
-    cResult[5] = accessible;
-    cResult[6] = resizeMode;
-    cResult[7] = tmp7;
-    cResult[8] = tmp11;
-    tmp8 = tmp11;
   }
-  size = { width: result, height: result1 };
-  cResult[1] = result;
-  cResult[2] = result1;
-  cResult[3] = size;
-  tmp7 = size;
+  const tmpResult4 = react_native;
+  const assetSizeStyle = tmpResult4.getAssetSizeStyle({ width, height, scale: num, intrinsicWidth: 173, intrinsicHeight: 138 });
+  cResult[0] = height;
+  cResult[1] = num;
+  cResult[2] = width;
+  cResult[3] = assetSizeStyle;
+  tmp4 = assetSizeStyle;
 }) : (function TreasureChestBannerSpotIllustration(width) {
   let accessibilityLabel;
   let accessible;
+  let obj2;
+  let obj3;
   let resizeMode;
-  let num = width.width;
+  width = width.width;
+  const height = width.height;
+  let num = width.scale;
   ({ accessible, accessibilityLabel, resizeMode } = width);
   if (num === undefined) {
-    num = 173;
+    num = 1;
   }
-  let num2 = width.height;
-  if (num2 === undefined) {
-    num2 = 138;
-  }
-  let num3 = width.scale;
-  if (num3 === undefined) {
-    num3 = 1;
-  }
-  const obj2 = { uri: _modDef13669 };
-  FastImageDefault;
-  return <tmp fadeDuration={0} source={obj2} style={{ width: num * num3, height: num2 * num3 }} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
+  const items = [width, height, num];
+  const memo = react.useMemo(() => {
+    size = { width, height, scale: num, intrinsicWidth: 173, intrinsicHeight: 138 };
+    obj = react_native;
+    return obj.getAssetSizeStyle(size);
+  }, items);
+  obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode: obj3.getAssetResizeMode(resizeMode) };
+  height(num[8]);
+  obj2 = width(num[7]);
+  obj3 = width(num[7]);
+  return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={obj3.getAssetResizeMode(resizeMode)} />;
 });
 let size = size_mod;
-let result = size.fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestBannerSpotIllustration.native.tsx");
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestBannerSpotIllustration.native.tsx");
 
 export const TreasureChestBannerSpotIllustration = tmp2;

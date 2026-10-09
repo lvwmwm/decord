@@ -1,24 +1,24 @@
-// Module ID: 10148
-// Function ID: 10149
+// Module ID: 10133
+// Function ID: 10134
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7132, 1085, 5069, 1096, 21, 5090, 558, 576, 6174, 9333, 584, 7137, 7138, 6158, 1278, 1254, 10149, 1264, 5392, 10151, 2]
+// Dependencies: [5, 32, 19, 17, 7137, 1085, 5070, 1096, 21, 5091, 558, 576, 6176, 9371, 584, 7142, 7143, 6160, 1279, 1255, 10134, 1265, 5393, 10136, 2]
 
-// Module 10148 (NativeCheckoutStoreProvider)
+// Module 10133 (NativeCheckoutStoreProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import v1 from "v1" /* 1278 */;
-import PaymentConstants from "PaymentConstants" /* 5069 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10149 */;
-import OrderUtils from "OrderUtils" /* 10151 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import v1 from "v1" /* 1279 */;
+import PaymentConstants from "PaymentConstants" /* 5070 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10134 */;
+import OrderUtils from "OrderUtils" /* 10136 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7132 */;
-import createStyles from "createStyles" /* 5090 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7137 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -306,7 +306,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChec
       yield "IconComponent";
       isGift = tmp4;
       ({ orderLineItems: c0, subscriptionFacet: c1 } = orderLineItems);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -850,7 +850,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Native
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
   children = children.children;
-  const contextMetadata = order(6174)(() => {
+  const contextMetadata = order(6176)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -865,7 +865,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Native
     const obj4 = { loadId: id, startTime: Date.now() };
     return obj4;
   });
-  redux = order(6174)(() => {
+  redux = order(6176)(() => {
     const obj = { load_id: contextMetadata.loadId, payment_gateway };
     const merged = Object.assign(View);
     return obj;
@@ -874,7 +874,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Native
     const obj = { order, checkoutInitParameters: require, contextMetadata, analyticsFields, paymentGateway, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react };
     return metroImportDefault(obj);
   }), 1)[0];
-  const tmp2 = order(5392)(() => {
+  const tmp2 = order(5393)(() => {
     if (null != View) {
       let obj = PaymentFlowStartedTriggerPoint;
       const result = obj.trackPaymentFlowStartedAnalyticsAndCTP(analyticsFields);

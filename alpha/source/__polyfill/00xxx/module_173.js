@@ -95,7 +95,7 @@ let closure_6 = _classPrivateFieldKey("entries");
 class PerformanceObserverEntryList {
   constructor(arg0) {
     _classCallCheck(this, PerformanceObserverEntryList);
-    Object.defineProperty(this, closure_6, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_6, { writable: true, value: "Array" });
     _classPrivateFieldBase(this, closure_6)[closure_6] = arg0;
   }
 }
@@ -150,8 +150,8 @@ class PerformanceObserver {
     const obj2 = { value: _createNativeObserver2 };
     Object.defineProperty(this, closure_12, obj2);
     Object.defineProperty(this, closure_8, { writable: true, value: null });
-    Object.defineProperty(this, closure_9, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_10, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_9, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_10, { writable: true, value: "Array" });
     Object.defineProperty(this, closure_11, { writable: true, value: false });
     _classPrivateFieldBase(this, closure_9)[closure_9] = arg0;
   }

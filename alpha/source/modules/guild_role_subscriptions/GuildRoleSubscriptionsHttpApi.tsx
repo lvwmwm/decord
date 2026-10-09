@@ -1,13 +1,13 @@
-// Module ID: 6945
-// Function ID: 6946
+// Module ID: 6952
+// Function ID: 6953
 // Name: GuildRoleSubscriptionsHttpApi
-// Dependencies: [5, 1085, 1096, 1294, 5631, 2]
+// Dependencies: [5, 1085, 1096, 1295, 5632, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 6945 (GuildRoleSubscriptionsHttpApi)
+// Module 6952 (GuildRoleSubscriptionsHttpApi)
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -279,7 +279,7 @@ obj = function _createGuildRoleSubscriptionListing() {
               closure_3 = Object.assign(priceTier, Object.assign({ priceTier: 0 }));
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -377,7 +377,7 @@ obj = function _updateGuildRoleSubscriptionListing() {
               closure_4 = Object.assign(priceTier, Object.assign({ priceTier: 0 }));
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -476,7 +476,7 @@ obj = function _getGuildRoleSubscriptionGroupListingsForGuild() {
             obj6 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -739,7 +739,7 @@ obj = function _getGuildRoleSubscriptionGroupListing() {
             }
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -1291,7 +1291,7 @@ obj = function _getGuildMonetizationRestrictions() {
             signal = obj4.signal;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {

@@ -1,19 +1,19 @@
-// Module ID: 15991
-// Function ID: 15992
+// Module ID: 16107
+// Function ID: 16108
 // Name: ProfileCustomizationTryItOutV2SettingScreen
-// Dependencies: [19, 17, 1389, 1085, 1391, 21, 5090, 587, 558, 576, 1502, 6674, 6841, 6865, 504, 14720, 8287, 1264, 5086, 1126, 1200, 9006, 15992, 2]
+// Dependencies: [19, 17, 1390, 1085, 1392, 21, 5091, 587, 558, 576, 1503, 6681, 6848, 6872, 504, 14826, 8295, 1265, 5087, 1126, 1200, 9017, 16108, 2]
 
-// Module 15991 (ProfileCustomizationTryItOutV2SettingScreen)
+// Module 16107 (ProfileCustomizationTryItOutV2SettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8287 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8295 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

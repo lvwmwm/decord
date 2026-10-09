@@ -1,20 +1,20 @@
-// Module ID: 10679
-// Function ID: 10680
+// Module ID: 10825
+// Function ID: 10826
 // Name: usePipVideoOrStream
-// Dependencies: [2062, 6041, 10680, 5893, 502, 2063, 2011, 5108, 5113, 558, 576, 5896, 4936, 10669, 504, 2]
+// Dependencies: [2063, 6043, 10826, 5894, 502, 2064, 2012, 5109, 5114, 558, 576, 5897, 4937, 10815, 504, 2]
 
-// Module 10679 (usePipVideoOrStream)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 10669 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 10680 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+// Module 10825 (usePipVideoOrStream)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4937 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 10815 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 10826 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
-import CallConstants from "CallConstants" /* 5113 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import CallConstants from "CallConstants" /* 5114 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipVideoO
       if (participant == null) {
         participant = found1;
       }
-      if (!closure_12(participant)) {
+      if (!authStore2(participant)) {
         tmp8 = participant;
       } else {
         tmp8 = null;
@@ -217,7 +217,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipVideoO
     if (participant == null) {
       participant = found1;
     }
-    if (!closure_12(participant)) {
+    if (!authStore2(participant)) {
       tmp8 = participant;
     } else {
       tmp8 = null;

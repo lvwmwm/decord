@@ -1,19 +1,19 @@
-// Module ID: 10484
-// Function ID: 10485
+// Module ID: 10474
+// Function ID: 10475
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 5090, 558, 576, 8998, 1126, 5086, 3697, 10485, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 9009, 1126, 5087, 3697, 10475, 2]
 
-// Module 10484 (SlayerStorefrontGiftPreview)
+// Module 10474 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import _modDef3697 from "module_3697" /* 3697 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8998 */;
-import InfoBox from "InfoBox" /* 10485 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9009 */;
+import InfoBox from "InfoBox" /* 10475 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

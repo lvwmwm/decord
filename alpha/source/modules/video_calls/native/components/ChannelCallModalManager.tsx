@@ -1,13 +1,13 @@
-// Module ID: 10757
-// Function ID: 10758
+// Module ID: 10927
+// Function ID: 10928
 // Name: ChannelCallModalManager
-// Dependencies: [1389, 5111, 2001, 584, 7476, 2]
+// Dependencies: [1390, 5112, 2002, 584, 7481, 2]
 
-// Module 10757 (ChannelCallModalManager)
+// Module 10927 (ChannelCallModalManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
-import LifecycleManager from "LifecycleManager" /* 2001 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
 class ChannelCallModalManager extends LifecycleManager {

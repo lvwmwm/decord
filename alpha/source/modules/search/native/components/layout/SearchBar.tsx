@@ -1,28 +1,28 @@
-// Module ID: 17092
-// Function ID: 17093
+// Module ID: 17242
+// Function ID: 17243
 // Name: SearchBar
-// Dependencies: [19, 17, 2063, 2086, 4717, 1389, 12067, 9247, 9246, 1085, 21, 5090, 1126, 5417, 558, 576, 504, 17089, 5382, 12053, 12078, 4788, 12074, 12061, 17093, 8601, 2]
+// Dependencies: [19, 17, 2064, 2086, 4719, 1390, 12004, 9285, 9284, 1085, 21, 5091, 1126, 5418, 558, 576, 504, 17239, 5383, 11990, 12015, 4789, 12011, 11998, 17243, 8609, 2]
 
-// Module 17092 (SearchBar)
+// Module 17242 (SearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
-import useChannelName from "useChannelName" /* 5417 */;
-import TrackingConstants from "TrackingConstants" /* 9246 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12053 */;
-import SearchTokens from "SearchTokens" /* 12061 */;
-import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12078 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4789 */;
+import useChannelName from "useChannelName" /* 5418 */;
+import TrackingConstants from "TrackingConstants" /* 9284 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 11990 */;
+import SearchTokens from "SearchTokens" /* 11998 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12011 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12015 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
-import SearchQueryStore from "SearchQueryStore" /* 12067 */;
-import SearchConstants from "SearchConstants" /* 9247 */;
-import createStyles from "createStyles" /* 5090 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
+import SearchQueryStore from "SearchQueryStore" /* 12004 */;
+import SearchConstants from "SearchConstants" /* 9285 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1431,7 +1431,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp2 = importDefault;
       if (!SearchQueryStore.isAutocompleteVisible(searchContext)) {
         const isInitialSearchQueryResult = SearchQueryStore.isInitialSearchQuery(searchContext);
-        const tmp2Result = tmp2(12053);
+        const tmp2Result = tmp2(11990);
         if (isInitialSearchQueryResult) {
           const initialMessages = tmp2Result.fetchInitialMessages(tmp);
         } else {
@@ -1453,7 +1453,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       announce(intl.formatToPlainString(intl8.t.srlxB8, obj3));
       if (tmp2.type === unpackModuleId.COMPLETE) {
         const obj6 = { searchContext, searchTokenType: tmp2.searchTokenType, isDefault: tmp2.location === SearchFilterAddLocations.CLIENT_AUTO_ADD };
-        const obj2 = tracking_TrackingDefault;
+        const obj2 = search_tracking_TrackingDefault;
         let result = obj2.trackSearchFilterRemove(obj6);
       }
       const obj4 = SearchPlatformActionCreatorsDefault;
@@ -1469,7 +1469,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
       const tmp6 = importDefault;
       if (queryString !== searchResultsQuery) {
-        const tmp6Result = tmp6(12053);
+        const tmp6Result = tmp6(11990);
         if (tmp11) {
           const initialMessages = tmp6Result.fetchInitialMessages(tmp);
         } else {

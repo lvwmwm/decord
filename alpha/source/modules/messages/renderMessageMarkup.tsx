@@ -1,17 +1,17 @@
-// Module ID: 8114
-// Function ID: 8115
+// Module ID: 8122
+// Function ID: 8123
 // Name: renderMessageMarkup
-// Dependencies: [8115, 5077, 2]
+// Dependencies: [8123, 5078, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupToASTWithParser, renderMessageMarkupWithParser
 
-// Module 8114 (renderMessageMarkup)
-import MarkupUtilsDefault from "MarkupUtils" /* 5077 */;
-import MarkupPostProcessors from "MarkupPostProcessors" /* 8115 */;
+// Module 8122 (renderMessageMarkup)
+import MarkupUtilsDefault from "MarkupUtils" /* 5078 */;
+import MarkupPostProcessors from "MarkupPostProcessors" /* 8123 */;
 import size from "module_2" /* 2 */;
 
 let hasSpoilerEmbeds;
 
-const f97143 = (arg0) => {
+const f97351 = (arg0) => {
   let tmp = arg0;
   if (!Array.isArray(arg0)) {
     const items = [arg0];
@@ -145,7 +145,7 @@ export const renderMessageContentMarkup = function renderMessageContentMarkup(no
   if (obj === undefined) {
     obj = {};
   }
-  const obj2 = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: true, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, previewLinkTarget: false, disableAnimatedEmoji: true, guildId: guildId.guildId, channelId: guildId.channelId, messageId: guildId.messageId, authorId: guildId.authorId, muted: false, disablePressableChannelMention: true, textColor: obj.textColor };
+  const obj2 = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: true, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, previewLinkTarget: false, disableAnimatedEmoji: true, guildId: guildId.guildId, channelId: guildId.channelId, messageId: guildId.messageId, authorId: guildId.authorId, muted: false, unknownUserMentionPlaceholder: true, disablePressableChannelMention: true, textColor: obj.textColor };
   return notifCenterV2MessagePreviewParser(guildId.content, true, obj2, (arg0) => {
     let tmp = arg0;
     if (!Array.isArray(arg0)) {
@@ -157,9 +157,9 @@ export const renderMessageContentMarkup = function renderMessageContentMarkup(no
 };
 export const renderAutomodMessageMarkup = function renderAutomodMessageMarkup(arg0, highlightWord, channelId) {
   const obj = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
-  return MarkupUtilsDefault.parseAutoModerationSystemMessage(arg0, true, obj, f97143);
+  return MarkupUtilsDefault.parseAutoModerationSystemMessage(arg0, true, obj, f97351);
 };
 export const renderAutomodMessageMarkupToAST = function renderAutomodMessageMarkupToAST(arg0, highlightWord, channelId) {
   const obj = { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false };
-  return MarkupUtilsDefault.parseAutoModerationSystemMessageToAST(arg0, true, obj, f97143);
+  return MarkupUtilsDefault.parseAutoModerationSystemMessageToAST(arg0, true, obj, f97351);
 };

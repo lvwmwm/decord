@@ -1,21 +1,21 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 11901
+// Function ID: 11902
 // Name: ChatInputActionButtonGift
-// Dependencies: [32, 19, 17, 5079, 10006, 11652, 2060, 21, 5090, 587, 558, 576, 504, 10080, 2030, 11965, 7090, 2048, 11966, 11561, 1126, 5387, 11954, 2049, 11967, 2]
+// Dependencies: [32, 19, 17, 5080, 9101, 11588, 2061, 21, 5091, 587, 558, 576, 504, 10065, 2031, 11902, 7093, 2049, 11903, 11490, 1126, 5388, 11891, 2050, 11904, 2]
 
-// Module 11964 (ChatInputActionButtonGift)
+// Module 11901 (ChatInputActionButtonGift)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import ChatInputConstants from "ChatInputConstants" /* 11652 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import ChatInputConstants from "ChatInputConstants" /* 11588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import PromotionsStore_mod from "PromotionsStore" /* 10006 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9101 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

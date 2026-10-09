@@ -1,12 +1,12 @@
-// Module ID: 1498
-// Function ID: 1499
+// Module ID: 1499
+// Function ID: 1500
 // Name: subscribeToKeyboardUIStore
-// Dependencies: [1499, 1500, 2]
+// Dependencies: [1500, 1501, 2]
 // Exports: default
 
-// Module 1498 (subscribeToKeyboardUIStore)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
+// Module 1499 (subscribeToKeyboardUIStore)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1501 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/keyboard/native/subscribeToKeyboardUIStore.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 11280
-// Function ID: 11281
+// Module ID: 10647
+// Function ID: 10648
 // Name: useLoadMessageContentEntries
-// Dependencies: [32, 5, 19, 5436, 2023, 11281, 8281, 6842, 8244, 38, 8250, 1997, 8242, 558, 576, 6988, 2]
+// Dependencies: [32, 5, 19, 5437, 2024, 10648, 8289, 6849, 8252, 38, 8258, 1998, 8250, 558, 576, 6995, 2]
 
-// Module 11280 (useLoadMessageContentEntries)
+// Module 10647 (useLoadMessageContentEntries)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1997 */;
-import Constants from "Constants" /* 2023 */;
-import useAvatarColor from "useAvatarColor" /* 8244 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 11281 */;
+import Server from "Server" /* 1998 */;
+import Constants from "Constants" /* 2024 */;
+import useAvatarColor from "useAvatarColor" /* 8252 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 10648 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -682,7 +682,7 @@ function isMessageRenderable(message) {
     let tmp2 = nextResult;
     let tmp3 = require;
     if (nextResult.type === Server.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8242);
+      let tmp3Result = tmp3(8250);
       obj = { component: obj2, message };
       obj2 = { contentInventoryEntry: tmp2.contentInventoryEntry };
       if (null == tmp3Result.transformToRowGeneratedContentInventoryEntryComponent(obj)) {
@@ -775,7 +775,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadMessa
   } else {
     tmp19 = cResult[4];
   }
-  const tmpResult = tmp(8244);
+  const tmpResult = tmp(8252);
   const colorStore = tmpResult.useColorStore(tmp19);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     _require = _asyncToGenerator(async (arg0, value) => {

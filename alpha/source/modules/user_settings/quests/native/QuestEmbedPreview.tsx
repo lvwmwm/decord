@@ -1,21 +1,21 @@
-// Module ID: 15253
-// Function ID: 15254
+// Module ID: 15366
+// Function ID: 15367
 // Name: QuestEmbedPreview
-// Dependencies: [19, 4718, 1389, 1085, 21, 558, 576, 7719, 504, 5075, 9554, 1126, 15252, 9308, 2]
+// Dependencies: [19, 4720, 1390, 1085, 21, 558, 576, 7728, 504, 5076, 9165, 1126, 15365, 9346, 2]
 
-// Module 15253 (QuestEmbedPreview)
+// Module 15366 (QuestEmbedPreview)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import CodedLink from "CodedLink" /* 5075 */;
-import RowGeneratorDefault from "RowGenerator" /* 7719 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9554 */;
-import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 15252 */;
+import CodedLink from "CodedLink" /* 5076 */;
+import RowGeneratorDefault from "RowGenerator" /* 7728 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9165 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 15365 */;
 import react from "react" /* 19 */;
-import MessageRecord from "MessageRecord" /* 4718 */;
-import UserStore from "UserStore" /* 1389 */;
+import MessageRecord from "MessageRecord" /* 4720 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEmbedPr
   }, items1);
   let tmp6 = null;
   if (null != memo1) {
-    stateFromStores(15252);
+    stateFromStores(15365);
     const intl = tmp2(1126).intl;
     let obj3 = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
     tmp6 = <tmp9 title={intl.string(tmp2(1126).t["habP/M"])}>{null}</tmp9>;

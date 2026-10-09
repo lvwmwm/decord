@@ -1,10 +1,10 @@
-// Module ID: 11837
-// Function ID: 11838
+// Module ID: 11774
+// Function ID: 11775
 // Name: getApplicationInstallURL
 // Dependencies: [1085, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 11837 (getApplicationInstallURL)
+// Module 11774 (getApplicationInstallURL)
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

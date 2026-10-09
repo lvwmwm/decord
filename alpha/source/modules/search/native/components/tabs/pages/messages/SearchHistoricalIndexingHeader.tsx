@@ -1,15 +1,15 @@
-// Module ID: 17189
-// Function ID: 17190
+// Module ID: 17339
+// Function ID: 17340
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2128, 9247, 21, 5090, 558, 576, 12074, 1126, 5086, 6186, 2]
+// Dependencies: [19, 2128, 9285, 21, 5091, 558, 576, 12011, 1126, 5087, 6188, 2]
 
-// Module 17189 (SearchHistoricalIndexingHeader)
+// Module 17339 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12011 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import SearchConstants from "SearchConstants" /* 9247 */;
-import createStyles from "createStyles" /* 5090 */;
+import SearchConstants from "SearchConstants" /* 9285 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         tmp14 = cResult[10];
       }
       if (cResult[11] !== tmp14) {
-        const tmp18 = jsx(searchContext(5086).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
+        const tmp18 = jsx(searchContext(5087).Text, { variant: "heading-sm/normal", color: "interactive-text-default", children: tmp14 });
         cResult[11] = tmp14;
         cResult[12] = tmp18;
         tmp16 = tmp18;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
         }
         return tmp19;
       }
-      const tmp21 = jsx(searchContext(6186).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
+      const tmp21 = jsx(searchContext(6188).Card, { variant: "primary", border: "subtle", style: tmp13, children: tmp16 });
       cResult[13] = tmp13;
       cResult[14] = tmp16;
       cResult[15] = tmp21;
@@ -95,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
     tmp13 = items;
   }
   const fn = function b() {
-    const obj = tracking_TrackingDefault;
+    const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext, isHistoricalIndexing: true, documentsIndexed };
     obj.trackSearchIndexing(obj2);
   };
@@ -127,7 +127,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Historical
     return headerMessages;
   }, items1);
   const effect = react.useEffect(() => {
-    const obj = tracking_TrackingDefault;
+    const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext, isHistoricalIndexing: true, documentsIndexed };
     obj.trackSearchIndexing(obj2);
   }, items2);

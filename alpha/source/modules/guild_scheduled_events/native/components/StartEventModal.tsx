@@ -1,28 +1,28 @@
-// Module ID: 8647
-// Function ID: 8648
+// Module ID: 8655
+// Function ID: 8656
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 2063, 2086, 2069, 8490, 21, 5090, 587, 5940, 558, 576, 1126, 1200, 6767, 6189, 5086, 8641, 504, 8548, 8648, 7491, 8651, 5375, 6803, 2]
+// Dependencies: [5, 32, 19, 17, 2064, 2086, 2070, 8498, 21, 5091, 587, 5941, 558, 576, 1126, 1200, 6774, 6191, 5087, 8649, 504, 8556, 8656, 7496, 8659, 5376, 6810, 2]
 
-// Module 8647 (StartEventModal)
+// Module 8655 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import Pressables from "Pressables" /* 6189 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6767 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8490 */;
-import GuildEventCardDefault from "GuildEventCard" /* 8641 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import Pressables from "Pressables" /* 6191 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6774 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8498 */;
+import GuildEventCardDefault from "GuildEventCard" /* 8649 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2070 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,16 +83,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault };
     const Icon = tmp(1200).Icon;
-    const tmp10 = closure_12(Icon, obj2);
+    const tmp10 = authStore2(Icon, obj2);
     cResult[3] = tmp10;
     tmp7 = tmp10;
   } else {
     tmp7 = cResult[3];
   }
   if (cResult[4] !== tmp6) {
-    const obj3 = { children: closure_12(Pressables.PressableOpacity, obj4) };
+    const obj3 = { children: authStore2(Pressables.PressableOpacity, obj4) };
     obj4 = { accessibilityRole: "button", accessibilityLabel: first, onPress: tmp6, children: tmp7 };
-    const tmp14 = closure_12(View, obj3);
+    const tmp14 = authStore2(View, obj3);
     cResult[4] = tmp6;
     cResult[5] = tmp14;
     tmp11 = tmp14;
@@ -107,20 +107,20 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
   let obj2;
   let obj3;
   onClose = onClose.onClose;
-  const obj = { children: closure_12(PressableOpacity, obj2) };
+  const obj = { children: authStore2(PressableOpacity, obj2) };
   obj2 = {
     accessibilityRole: "button",
     accessibilityLabel: intl.string(intl2.t.cpT0Cq),
     onPress() {
       return onClose();
     },
-    children: closure_12(Icon, obj3)
+    children: authStore2(Icon, obj3)
   };
   PressableOpacity = Pressables.PressableOpacity;
   intl = intl2.intl;
   obj3 = { source: AssetRegistryDefault };
   Icon = native.Icon;
-  return closure_12(View, obj);
+  return authStore2(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventHeader(event) {
@@ -144,7 +144,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartE
   }
   if (cResult[1] !== tmp4.headerPrivacyLevel) {
     const obj2 = { style: headerPrivacyLevel, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = closure_12(Text_Text.Text, obj2);
+    const tmp9 = authStore2(Text_Text.Text, obj2);
     cResult[1] = tmp4.headerPrivacyLevel;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -175,7 +175,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartE
     tmp12 = tmp15;
   }
   const obj4 = { style: tmp4.headerTitle, variant: "text-md/medium", color: "text-default", children: event.name };
-  const tmp11 = closure_12(Text_Text.Text, obj4);
+  const tmp11 = authStore2(Text_Text.Text, obj4);
   cResult[3] = event.name;
   cResult[4] = tmp4.headerTitle;
   cResult[5] = tmp11;
@@ -189,9 +189,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartE
   const obj2 = { style: tmp.headerPrivacyLevel, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["q+fFJv"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
-  items = [closure_12(Text, obj2), ];
+  items = [authStore2(Text, obj2), ];
   const obj3 = { style: tmp.headerTitle, variant: "text-md/medium", color: "text-default", children: event.name };
-  items[1] = closure_12(Text_Text.Text, obj3);
+  items[1] = authStore2(Text_Text.Text, obj3);
   return map1(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -208,7 +208,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewEvent
     return tmp4;
   }
   const obj2 = { event, hideControls: true, style: tmp3.previewCard, hideAgeVerificationNotice: true };
-  const tmp5 = closure_12(GuildEventCardDefault, obj2);
+  const tmp5 = authStore2(GuildEventCardDefault, obj2);
   cResult[0] = event;
   cResult[1] = tmp3.previewCard;
   cResult[2] = tmp5;
@@ -216,7 +216,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewEvent
 }) : (function PreviewEventCard(event) {
   event = event.event;
   const obj = { event, hideControls: true, style: closure_14().previewCard, hideAgeVerificationNotice: true };
-  return closure_12(GuildEventCardDefault, obj);
+  return authStore2(GuildEventCardDefault, obj);
 });
 let closure_17 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;

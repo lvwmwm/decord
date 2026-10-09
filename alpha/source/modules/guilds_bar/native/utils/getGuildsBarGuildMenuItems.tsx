@@ -1,21 +1,21 @@
-// Module ID: 16526
-// Function ID: 16527
+// Module ID: 16649
+// Function ID: 16650
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 2086, 5971, 1085, 10422, 5017, 1126, 14013, 1999, 8747, 6798, 7082, 13960, 12102, 5054, 10440, 12103, 6793, 2]
+// Dependencies: [5, 2086, 5973, 1085, 10411, 5018, 1126, 14110, 2000, 8756, 6805, 7085, 14057, 12039, 5055, 10429, 12040, 6800, 2]
 // Exports: default
 
-// Module 16526 (getGuildsBarGuildMenuItems)
+// Module 16649 (getGuildsBarGuildMenuItems)
 import Constants from "Constants" /* 1085 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6793 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12102 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12103 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 13960 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6800 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6805 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12039 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12040 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14057 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -136,7 +136,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
         const obj = { guildId };
-        const tmp2 = asyncRequire(10440, dependencyMap.paths);
+        const tmp2 = asyncRequire(10429, dependencyMap.paths);
         openLazy(tmp2, "muteSettings" + guildId, obj);
       };
       splice(1, 0, obj5);

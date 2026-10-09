@@ -1,18 +1,18 @@
-// Module ID: 13641
-// Function ID: 13642
+// Module ID: 13732
+// Function ID: 13733
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 5090, 587, 5054, 13642, 1999, 1126, 558, 576, 5086, 2]
+// Dependencies: [17, 21, 5091, 587, 5055, 13733, 2000, 1126, 558, 576, 5087, 2]
 
-// Module 13641 (BoostingCountDownPill)
+// Module 13732 (BoostingCountDownPill)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13642, dependencyMap.paths);
+  const tmp2 = asyncRequire(13733, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }
@@ -135,7 +135,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostingCoun
     if (tmp8) {
       const obj6 = { style: tmp4.fpDurationPill, children: hasOwnProperty(Text, obj7) };
       obj7 = { variant: "text-sm/bold", style: tmp4.fpDurationText, children: fpDurationText.toUpperCase() };
-      Text = tmp(5086).Text;
+      Text = tmp(5087).Text;
       tmp8 = hasOwnProperty(React3, obj6);
     }
     cResult[3] = fpDurationText;

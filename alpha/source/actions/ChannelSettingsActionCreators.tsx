@@ -1,16 +1,16 @@
-// Module ID: 9648
-// Function ID: 9649
+// Module ID: 9667
+// Function ID: 9668
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 9649, 2063, 1085, 584, 4937, 7874, 1294, 7018, 2]
+// Dependencies: [5, 9668, 2064, 1085, 584, 4938, 7883, 1295, 7021, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 9648 (ChannelSettingsActionCreators)
+// Module 9667 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import RootNavigationRef from "RootNavigationRef" /* 4937 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import RootNavigationRef from "RootNavigationRef" /* 4938 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9649 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9668 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -90,8 +90,8 @@ function saveChannel() {
 let obj = function _saveChannel() {
   obj = _asyncToGenerator(async (arg0, name) => {
     let closure_0 = arg0;
-    let c8 = 0;
-    let c9 = 0;
+    let c4 = 0;
+    let c5 = 0;
     const iter = (async (arg0, value) => {
       let c1;
       let c10;
@@ -121,15 +121,15 @@ let obj = function _saveChannel() {
       let c9;
       let emojiName;
       let mapped;
-      let obj11;
+      let obj10;
       let obj3;
-      let obj8;
+      let obj7;
       let patchResult;
       let tmp;
       let tmp21;
       let tmp7;
-      if (permission_overwrites === 2) {
-        permission_overwrites = 3;
+      if (bitrate === 2) {
+        bitrate = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -142,27 +142,27 @@ let obj = function _saveChannel() {
         }
       } else {
         try {
-          let closure_6;
+          let closure_2;
           let channel;
-          permission_overwrites = 2;
-          if (0 === flags) {
+          bitrate = 2;
+          if (0 === topic) {
             if (arg0 === 1) {
-              permission_overwrites = 3;
+              bitrate = 3;
               throw value;
             } else if (arg0 === 2) {
-              permission_overwrites = 3;
+              bitrate = 3;
               let obj4 = { value, done: true };
               return obj4;
             } else {
-              let closure_7 = tmp4;
-              closure_6 = tmp;
+              let closure_3 = tmp4;
+              closure_2 = tmp;
               name = undefined;
               type = undefined;
               position = undefined;
-              topic = undefined;
-              bitrate = undefined;
               user_limit = undefined;
               nsfw = undefined;
+              flags = undefined;
+              permission_overwrites = undefined;
               rate_limit_per_user = undefined;
               default_thread_rate_limit_per_user = undefined;
               default_auto_archive_duration = undefined;
@@ -182,76 +182,46 @@ let obj = function _saveChannel() {
               application_id = undefined;
               ({ name: c1, type: c2, position: c3, topic: c4, bitrate: c5, userLimit: c6, nsfw: c7, flags: c8, permissionOverwrites: c9, rateLimitPerUser: c10, defaultThreadRateLimitPerUser: c11, defaultAutoArchiveDuration: c12, template: c13, defaultReactionEmoji: c14, rtcRegion: c15, videoQualityMode: c16, autoArchiveDuration: c17, locked: c18, invitable: c19, availableTags: c20, defaultSortOrder: c21, defaultForumLayout: c22, defaultTagSetting: c23, iconEmoji: c24, themeColor: c25, applicationId: c26 } = closure_1);
               channel = undefined;
-              flags = 1;
-              permission_overwrites = 1;
-              return { value: "Reflect", done: true };
+              topic = 1;
+              bitrate = 1;
+              return { value: "Set", done: true };
             }
-          } else if (1 === flags) {
+          } else if (1 === topic) {
             if (arg0 === 1) {
-              permission_overwrites = 3;
+              bitrate = 3;
               throw value;
             } else if (arg0 === 2) {
-              permission_overwrites = 3;
+              bitrate = 3;
               return { value, done: true };
             } else {
-              channel = closure_135_5.getChannel(channelId);
-              if (null != channel) {
-                if (type === channel.type) {
-                  type = undefined;
-                }
-                type = topic;
-                if (topic == null) {
-                  type = "";
-                }
-                topic = channel.topic;
-                const tmp35 = type;
-                if (topic == null) {
-                  topic = "";
-                }
-                if (tmp35 === topic) {
-                  topic = undefined;
-                }
-                position = application_id;
-                if (application_id == null) {
-                  position = null;
-                }
-                application_id = channel.application_id;
-                bitrate = application_id;
-                const tmp42 = position;
-                if (application_id == null) {
-                  bitrate = null;
-                }
-                if (tmp42 === bitrate) {
-                  application_id = undefined;
-                }
-              }
+              channel = closure_131_5.getChannel(channelId);
               let isGameInvitesChannelResult;
-              const obj6 = channel;
+              const obj14 = channel;
               if (channel != null) {
-                isGameInvitesChannelResult = obj6.isGameInvitesChannel();
+                isGameInvitesChannelResult = obj14.isGameInvitesChannel();
               }
               if (isGameInvitesChannelResult) {
                 default_auto_archive_duration = undefined;
               }
-              const obj7 = closure_135_1(closure_135_2[4]);
-              obj7.dispatch({ type: "CHANNEL_SETTINGS_SUBMIT" });
-              flags = 2;
-              permission_overwrites = 1;
-              const obj9 = { value: obj8.unarchiveThreadIfNecessary(channelId), done: false };
-              obj8 = closure_135_1(closure_135_2[6]);
-              return obj9;
+              const obj6 = closure_131_1(closure_131_2[4]);
+              obj6.dispatch({ type: "CHANNEL_SETTINGS_SUBMIT" });
+              topic = 2;
+              bitrate = 1;
+              const obj8 = { value: obj7.unarchiveThreadIfNecessary(channelId), done: false };
+              obj7 = closure_131_1(closure_131_2[6]);
+              return obj8;
             }
           } else if (arg0 === 1) {
-            permission_overwrites = 3;
+            bitrate = 3;
             throw value;
           } else if (arg0 === 2) {
-            permission_overwrites = 3;
+            bitrate = 3;
             return { value, done: true };
           } else {
-            const HTTP = closure_135_0(closure_135_2[7]).HTTP;
-            const request = { url: closure_135_6.CHANNEL(channelId), body: obj11, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+            const HTTP = closure_131_0(closure_131_2[7]).HTTP;
+            const request = { url: closure_131_6.CHANNEL(channelId), body: obj10, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
             const patch = HTTP.patch;
-            obj11 = { name, type, position, topic, bitrate, user_limit, nsfw, flags, permission_overwrites, rate_limit_per_user, default_thread_rate_limit_per_user, default_auto_archive_duration, template, rtc_region, video_quality_mode, auto_archive_duration, locked, invitable, default_reaction_emoji: tmp7, available_tags: mapped, default_sort_order, default_forum_layout, default_tag_setting, icon_emoji: tmp21, theme_color, application_id };
+            obj10 = { name, type, position, topic, bitrate, user_limit, nsfw, flags, permission_overwrites, rate_limit_per_user, default_thread_rate_limit_per_user, default_auto_archive_duration, template, rtc_region, video_quality_mode, auto_archive_duration, locked, invitable, default_reaction_emoji: tmp7, available_tags: mapped, default_sort_order, default_forum_layout, default_tag_setting, icon_emoji: tmp21, theme_color, application_id };
             if (null != c14) {
               let emojiId;
               if (c14 != null) {
@@ -264,7 +234,7 @@ let obj = function _saveChannel() {
               }
               tmp7 = obj;
             } else {
-              let tmp5 = closure_6;
+              let tmp5 = closure_2;
               if (null === c14) {
                 tmp7 = null;
               }
@@ -276,21 +246,21 @@ let obj = function _saveChannel() {
             }
             if (null != user) {
               tmp21 = { id: user.id, name: user.name };
-              const obj12 = { id: user.id, name: user.name };
+              const obj11 = { id: user.id, name: user.name };
             } else if (null === user) {
               tmp21 = null;
             }
-            obj3 = closure_135_0(closure_135_2[7]);
-            permission_overwrites = 3;
-            const obj13 = {
+            obj3 = closure_131_0(closure_131_2[7]);
+            bitrate = 3;
+            const obj12 = {
               value: patchResult.then((result) => {
-                      obj = name(c2[4]);
+                      obj = name(type[4]);
                       const obj2 = { type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS", channelId };
                       obj.dispatch(obj2);
                       let guildId;
                       const obj3 = closure_1_27;
                       const tmp = name;
-                      const tmp2 = c2;
+                      const tmp2 = type;
                       if (closure_1_27 != null) {
                         guildId = obj3.getGuildId();
                       }
@@ -317,11 +287,11 @@ let obj = function _saveChannel() {
               done: true
             };
             patchResult = patch(request);
-            return obj13;
+            return obj12;
           }
-        } catch (tmp56) {
-          permission_overwrites = 3;
-          throw tmp56;
+        } catch (tmp40) {
+          bitrate = 3;
+          throw tmp40;
         }
       }
     })();

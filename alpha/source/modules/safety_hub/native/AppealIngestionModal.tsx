@@ -1,25 +1,25 @@
-// Module ID: 11503
-// Function ID: 11504
+// Module ID: 11432
+// Function ID: 11433
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 5920, 5921, 1085, 21, 5090, 587, 558, 576, 5086, 504, 11497, 1502, 5922, 11502, 11498, 5927, 6803, 1126, 5375, 6203, 11504, 1272, 11524, 11526, 11528, 11530, 11531, 6174, 6679, 2]
+// Dependencies: [5, 32, 19, 17, 5921, 5922, 1085, 21, 5091, 587, 558, 576, 5087, 504, 11426, 1503, 5923, 11431, 11427, 5928, 6810, 1126, 5376, 6205, 11433, 1273, 11453, 11455, 11457, 11459, 11460, 6176, 6686, 2]
 
-// Module 11503 (AppealIngestionModal)
+// Module 11432 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11502 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 11504 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 11524 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 11526 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11431 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 11433 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 11453 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 11455 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 5920 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
+import SafetyHubStore from "SafetyHubStore" /* 5921 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5922 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
     },
     render() {
       const obj = { isDsaEligible, isSpam, isCoppa, isDeveloperClassification };
-      return closure_12(AppealIngestionSpeedBumpDefault, obj);
+      return authStore2(AppealIngestionSpeedBumpDefault, obj);
     },
     impressionName: require("discord_common/AnalyticsUtils").ImpressionNames.APPEAL_INGESTION_SPEED_BUMP,
     impressionProperties
@@ -67,7 +67,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
     },
     render() {
       const obj = { isDsaEligible };
-      return closure_12(AppealIngestionCollectSignalDefault, obj);
+      return authStore2(AppealIngestionCollectSignalDefault, obj);
     },
     impressionName: require("discord_common/AnalyticsUtils").ImpressionNames.APPEAL_INGESTION_COLLECT_SIGNAL,
     impressionProperties
@@ -82,7 +82,7 @@ function getScreens(isDsaEligible, isSpam, isCoppa, isDeveloperClassification) {
     },
     render() {
       const obj = { isDsaEligible };
-      return closure_12(AppealIngestionConfirmSubmissionDefault, obj);
+      return authStore2(AppealIngestionConfirmSubmissionDefault, obj);
     },
     impressionName: require("discord_common/AnalyticsUtils").ImpressionNames.APPEAL_INGESTION_CONFIRM_SUBMISSION,
     impressionProperties
@@ -187,7 +187,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
       tmp10 = null;
       if (subHeaderText.length > 0) {
         const obj3 = { style: tmp4.subheader, variant: "text-md/medium", color: "text-default", children: subHeaderText };
-        tmp10 = closure_12(tmp(5086).Text, obj3);
+        tmp10 = authStore2(tmp(5087).Text, obj3);
       }
     }
     cResult[3] = tmp4.subheader;
@@ -198,7 +198,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   let tmp6 = null != headerText && "" !== headerText;
   if (tmp6) {
     const obj4 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: headerText };
-    tmp6 = closure_12(tmp(5086).Text, obj4);
+    tmp6 = authStore2(tmp(5087).Text, obj4);
   }
   cResult[0] = headerText;
   cResult[1] = tmp4.header;
@@ -219,7 +219,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   if (tmp4) {
     const obj2 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: headerText };
-    tmp4 = closure_12(Text_Text.Text, obj2);
+    tmp4 = authStore2(Text_Text.Text, obj2);
   }
   items = [tmp4, ];
   let tmp8 = null;
@@ -227,7 +227,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
     tmp8 = null;
     if (subHeaderText.length > 0) {
       const obj3 = { style: tmp.subheader, variant: "text-md/medium", color: "text-default", children: subHeaderText };
-      tmp8 = closure_12(Text_Text.Text, obj3);
+      tmp8 = authStore2(Text_Text.Text, obj3);
     }
   }
   items[1] = tmp8;

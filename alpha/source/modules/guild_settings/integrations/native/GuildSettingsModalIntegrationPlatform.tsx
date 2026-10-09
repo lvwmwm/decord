@@ -1,24 +1,24 @@
-// Module ID: 18104
-// Function ID: 18105
+// Module ID: 18264
+// Function ID: 18265
 // Name: GuildSettingsModalIntegrationPlatform
-// Dependencies: [19, 17, 8614, 1085, 21, 5090, 587, 18065, 18035, 5759, 6164, 1414, 4929, 6267, 6184, 6882, 1126, 8613, 5298, 5394, 558, 576, 4778, 1502, 504, 4991, 6203, 7079, 7084, 2127, 8555, 5373, 5086, 6719, 2]
+// Dependencies: [19, 17, 8622, 1085, 21, 5091, 587, 18225, 18195, 5760, 6163, 1415, 4930, 6269, 6186, 6889, 1126, 8621, 5299, 5395, 558, 576, 4779, 1503, 504, 4992, 6205, 7082, 7087, 2127, 8563, 5374, 5087, 6726, 2]
 
-// Module 18104 (GuildSettingsModalIntegrationPlatform)
+// Module 18264 (GuildSettingsModalIntegrationPlatform)
 import nativeDefault from "native" /* 587 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
-import AlertDefault from "Alert" /* 5394 */;
-import PlatformsDefault from "Platforms" /* 5759 */;
-import NavigatorHeader from "NavigatorHeader" /* 6203 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
-import openUserSettings from "openUserSettings" /* 7084 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
-import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 18065 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import AlertDefault from "Alert" /* 5395 */;
+import PlatformsDefault from "Platforms" /* 5760 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7082 */;
+import openUserSettings from "openUserSettings" /* 7087 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8621 */;
+import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 18225 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8622 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,12 +36,12 @@ let obj2;
 let tmp;
 let unpackModuleId;
 const intl6 = tmp(1126);
-const AvatarUtils = tmp(1414);
-const shared = tmp(4929);
-const TableRow2 = tmp(6184);
-const TableRowGroup2 = tmp(6267);
-const TableSwitchRow2 = tmp(6882);
-const IntegrationTypes = tmp(18035);
+const AvatarUtils = tmp(1415);
+const shared = tmp(4930);
+const TableRow2 = tmp(6186);
+const TableRowGroup2 = tmp(6269);
+const TableSwitchRow2 = tmp(6889);
+const IntegrationTypes = tmp(18195);
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 ({ GuildSettingsSections: metroRequire, HelpdeskArticles: metroImportDefault, PlatformTypes: metroImportAll, UserSettingsSections: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
@@ -157,7 +157,7 @@ class IntegrationItem extends Component {
       let tmp12Result = null;
       const tmp8 = importDefault;
       if (null != value) {
-        const tmp8Result = tmp8(6164);
+        const tmp8Result = tmp8(6163);
         const makeSource = AvatarUtils.makeSource;
         AvatarUtils;
         const icon = value.icon;
@@ -229,11 +229,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const cResult = obj.c(50);
   ({ contentContainerStyle, platformType } = closeGuildSettings);
   closeGuildSettings = closeGuildSettings.closeGuildSettings;
-  let obj2 = platformType(4778);
+  let obj2 = platformType(4779);
   const token = obj2.useToken(closeGuildSettings(587).modules.mobile.TABLE_ROW_PADDING);
   const tmp6 = closure_13();
   dependencyMap = tmp6;
-  const obj3 = platformType(1502);
+  const obj3 = platformType(1503);
   navigation = obj3.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [hasChanges];
@@ -253,7 +253,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const submitting = stateFromStoresObject.submitting;
   hasChanges = stateFromStoresObject.hasChanges;
   const guild = stateFromStoresObject.guild;
-  const tmp12 = closeGuildSettings(4991)();
+  const tmp12 = closeGuildSettings(4992)();
   constants2 = tmp12;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [hasChanges];
@@ -358,7 +358,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           return tmp3;
         }
     };
-    const tmp4Result = closeGuildSettings(5759);
+    const tmp4Result = closeGuildSettings(5760);
     const value = tmp4Result.get(platformType);
     name = undefined;
     if (value != null) {
@@ -443,9 +443,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       }
       tmp45 = tmp42;
     }
-    const Form = tmp(8555).Form;
+    const Form = tmp(8563).Form;
     const form = tmp6.form;
-    const Stack = tmp(5373).Stack;
+    const Stack = tmp(5374).Stack;
     if (cResult[32] !== token) {
       const obj7 = { paddingHorizontal: token };
       class A {
@@ -533,12 +533,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }
   let tmp = platformType;
   const contentContainerStyle = platformType.contentContainerStyle;
-  let obj = platformType(4778);
+  let obj = platformType(4779);
   let tmp3 = closeGuildSettings;
   const token = obj.useToken(closeGuildSettings(587).modules.mobile.TABLE_ROW_PADDING);
   const tmp5 = closure_13();
   dependencyMap = tmp5;
-  let obj2 = platformType(1502);
+  let obj2 = platformType(1503);
   navigation = obj2.useNavigation();
   const items = [c5];
   const obj3 = platformType(504);
@@ -548,7 +548,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   });
   const submitting = stateFromStoresObject.submitting;
   ({ hasChanges: c5, guild } = stateFromStoresObject);
-  constants2 = closeGuildSettings(4991)();
+  constants2 = closeGuildSettings(4992)();
   const items1 = [c5];
   const obj4 = platformType(504);
   const stateFromStores = obj4.useStateFromStores(items1, () => c5.getProps().integrations);
@@ -585,7 +585,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           return tmp3;
         }
     };
-    const tmp3Result = tmp3(5759);
+    const tmp3Result = tmp3(5760);
     const value = tmp3Result.get(platformType);
     name = undefined;
     if (value != null) {
@@ -614,10 +614,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       formatResult = format2(ro1jEN, obj7);
     }
     const obj8 = { style: tmp5.form, contentContainerStyle, children: closure_11(Stack, obj9) };
-    const Form = tmp(8555).Form;
+    const Form = tmp(8563).Form;
     obj9 = { style: obj10, spacing: tmp3(587).space.PX_24, children: items2 };
     obj10 = { paddingHorizontal: token };
-    Stack = tmp(5373).Stack;
+    Stack = tmp(5374).Stack;
     let mapped;
     const tmp16 = closure_12;
     if (found != null) {
@@ -639,8 +639,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     items2 = [mapped, ];
     const obj11 = { children: items3 };
     const obj12 = { variant: "text-sm/medium", color: "text-muted", children: formatResult };
-    items2[1] = closure_10(tmp(5086).Text, obj12);
-    items3 = [closure_10(Form, obj8), closure_10(tmp(6719).NavScrim, {})];
+    items2[1] = closure_10(tmp(5087).Text, obj12);
+    items3 = [closure_10(Form, obj8), closure_10(tmp(6726).NavScrim, {})];
     return closure_11(tmp16, obj11);
   }
 });

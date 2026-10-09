@@ -1,31 +1,31 @@
-// Module ID: 17726
-// Function ID: 17727
+// Module ID: 17878
+// Function ID: 17879
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 17727, 17729, 17, 17750, 2129, 2115, 1998, 7171, 17751, 1085, 9, 3, 18421, 7202, 18422, 11397, 504, 1271, 1256, 18424, 2002, 1381, 10, 18425, 10624, 584, 18426, 7185, 1254, 18427, 18428, 10820, 510, 1264, 14274, 2107, 9189, 2140, 1165, 18429, 1999, 8426, 18431, 14471, 7350, 18449, 18450, 18451, 9251, 7198, 7186, 4938, 1205, 5079, 14521, 17453, 17454, 1111, 14271, 7170, 14526, 14540, 6082, 18452, 6326, 7172, 7186, 2]
+// Dependencies: [32, 5, 17879, 17881, 17, 17904, 2129, 2115, 1999, 7176, 17905, 1085, 9, 3, 18585, 7207, 18586, 11302, 504, 1272, 1257, 18588, 2003, 1382, 10, 18589, 14722, 584, 18590, 7190, 1255, 18591, 18592, 10991, 510, 1265, 14370, 2107, 9223, 2140, 1165, 18593, 2000, 8434, 18595, 14567, 7355, 18613, 18614, 18615, 9289, 7203, 7191, 4939, 1205, 5080, 14617, 17605, 17606, 1111, 14367, 7175, 14621, 14635, 6084, 18616, 6333, 7177, 7191, 2]
 // Exports: init, initHeadlessTask
 
-// Module 17726 (NativeAppStartup)
+// Module 17878 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Storage4 from "Storage" /* 510 */;
 import TokenManagerAll from "TokenManager" /* 1111 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 2107 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2129 */;
-import timeRequireDefault from "timeRequire" /* 7202 */;
-import Future from "Future" /* 9189 */;
-import react_nativeDefault from "react-native" /* 14274 */;
+import timeRequireDefault from "timeRequire" /* 7207 */;
+import Future from "Future" /* 9223 */;
+import react_nativeDefault from "react-native" /* 14370 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_17727 from "module_17727" /* 17727 */;
-import superagentPatch from "superagentPatch" /* 17729 */;
+import module_17879 from "module_17879" /* 17879 */;
+import superagentPatch from "superagentPatch" /* 17881 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 17750 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 17904 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7171 */;
-import ManagerRegistry from "ManagerRegistry" /* 17751 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7176 */;
+import ManagerRegistry from "ManagerRegistry" /* 17905 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -123,11 +123,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f150312 = () => _true(handleNotification[31]);
+  const f150653 = () => _true(handleNotification[31]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f150312).default(arg0, false);
+      timeRequireDefault("receiveNotification", f150653).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -269,7 +269,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f150312).default(arg0, false);
+        timeRequireDefault("receiveNotification", f150653).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -405,7 +405,7 @@ obj = function _loadStorage() {
             let Storage = require("Storage").Storage;
             c4 = 2;
             c5 = 1;
-            const obj4 = { value: Storage.refresh([], authStore5), done: false };
+            const obj4 = { value: Storage.refresh([], authStore6), done: false };
             return obj4;
           }
         } else {
@@ -500,7 +500,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

@@ -1,14 +1,14 @@
-// Module ID: 8597
-// Function ID: 8598
+// Module ID: 8605
+// Function ID: 8606
 // Name: ShieldUserIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8236, 4777, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8244, 4778, 2]
 
-// Module 8597 (ShieldUserIcon)
+// Module 8605 (ShieldUserIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4777 */;
-import AssetRegistry from "AssetRegistry" /* 8236 */;
+import BaseIconImage2 from "BaseIconImage" /* 4778 */;
+import AssetRegistry from "AssetRegistry" /* 8244 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShieldUser
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4777).BaseIconImage;
+  const BaseIconImage = tmp(4778).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

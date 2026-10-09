@@ -1,23 +1,23 @@
-// Module ID: 16792
-// Function ID: 16793
+// Module ID: 16916
+// Function ID: 16917
 // Name: Elements
-// Dependencies: [32, 109, 19, 17, 4731, 21, 5090, 587, 558, 576, 5086, 1126, 1200, 16793, 6189, 9333, 15322, 573, 9336, 6926, 2]
+// Dependencies: [32, 109, 19, 17, 4733, 21, 5091, 587, 558, 576, 5087, 1126, 1200, 16917, 6191, 9371, 15435, 573, 9374, 6933, 2]
 
-// Module 16792 (Elements)
+// Module 16916 (Elements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import Pressables from "Pressables" /* 6189 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9333 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15322 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16793 */;
+import Pressables from "Pressables" /* 6191 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9371 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15435 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16917 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4731 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4733 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const intl2 = tmp(1126);
-const Text_Text = tmp(5086);
-const useStoreFrontPriceDefault = tmp4(9336);
+const Text_Text = tmp(5087);
+const useStoreFrontPriceDefault = tmp4(9374);
 let closure_4 = ["lineClamp"];
 ({ TouchableOpacity: metroImportAll, View: c9 } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -227,7 +227,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
     children: items
   };
   num2 = 1;
-  const tmp13 = closure_12;
+  const tmp13 = authStore2;
   const tmp14 = metroImportAll;
   if (first) {
     num2 = 0.8;
@@ -291,7 +291,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArrowButton(
     }
     const obj3 = { accessibilityRole: "button", style: tmp4.arrowButton, onPress, children: items };
     items = [tmp5, tmp7];
-    const tmp13 = closure_12(Pressables.PressableOpacity, obj3);
+    const tmp13 = authStore2(Pressables.PressableOpacity, obj3);
     cResult[5] = onPress;
     cResult[6] = tmp4.arrowButton;
     cResult[7] = tmp5;
@@ -319,7 +319,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArrowButton(
   const obj3 = { size: native.Icon.Sizes.SMALL, source: AssetRegistryDefault, style: tmp.arrowButtonIcon };
   const Icon = native.Icon;
   items[1] = unpackModuleId(Icon, obj3);
-  return closure_12(PressableOpacity, obj);
+  return authStore2(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormattedSubscriptionPlan(arg0) {
@@ -362,7 +362,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
       const _HermesInternal = HermesInternal;
       str = "" + tmp11 + "/mo.";
     }
-    const tmpResult2 = first(6926);
+    const tmpResult2 = first(6933);
     const formatPriceResult = tmpResult2.formatPrice(price.amount, price.currency);
     cResult[3] = price.amount;
     cResult[4] = price.currency;
@@ -384,7 +384,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(6926);
+    const tmp3Result = tmp3(6933);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

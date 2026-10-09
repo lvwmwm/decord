@@ -1,52 +1,73 @@
 // Module ID: 9805
 // Function ID: 9806
-// Dependencies: [41, 42, 9770]
+// Dependencies: [41, 42, 93, 95, 98, 9789, 9793, 9792, 9797]
 
 // Module 9805
-import _mod9770 from "module_9770" /* 9770 */;
+import _mod9789 from "module_9789" /* 9789 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9797 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let start;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-const regExp = new RegExp("^\\s*(" + _mod9770.YEAR_PATTERN + ")", "i");
-class ENExtractYearSuffixRefiner {
-  constructor() {
-    _classCallCheck(this, ENExtractYearSuffixRefiner);
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+const regExp = new RegExp("(" + _mod9789.TIME_UNITS_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
+const regExp1 = new RegExp("(" + _mod9789.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(?:ago|before|earlier)(?=\\W|$)", "i");
+class ENTimeUnitAgoFormatParser {
+  constructor(strictMode) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
+  }
+}
+_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
-    let text = arg0;
-    const item = arr.forEach((start) => {
-      text = start;
-      start = start.start;
-      if (start.isDateWithUnknownYear()) {
-        const str = text.text;
-        const match = regExp.exec(str.substring(start.index + start.text.length));
-        const obj = text;
-        if (match) {
-          const str2 = match[0];
-          if (str2.trim().length > 3) {
-            obj.debug(() => {
-              console.log("Extracting year: '" + match[0] + "' into : " + closure_0);
-            });
-            const parseYearResult = _mod9770.parseYear(match[1]);
-            if (null != start.end) {
-              const end = start.end;
-              end.assign("year", parseYearResult);
-            }
-            const start2 = start.start;
-            start2.assign("year", parseYearResult);
-            start.text = start.text + match[0];
-          }
-        }
-      }
-    });
-    return arr;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return this.strictMode ? regExp1 : regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod9789.parseDuration(arg1[1]);
+      let relativeFromReference = null;
+      if (parseDurationResult) {
+        const ParsingComponents = tmp(9793).ParsingComponents;
+        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, tmp(9792).reverseDuration(parseDurationResult));
+      }
+      return relativeFromReference;
+    }
+  }
+];
 
-export default _createClass(ENExtractYearSuffixRefiner, items);
+export default _createClass(ENTimeUnitAgoFormatParser, items);

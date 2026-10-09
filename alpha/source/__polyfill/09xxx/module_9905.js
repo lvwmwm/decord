@@ -1,68 +1,50 @@
 // Module ID: 9905
 // Function ID: 9906
-// Dependencies: [41, 42, 93, 95, 98, 9900, 9773, 9774, 9902]
+// Dependencies: []
+// Exports: zhStringToNumber, zhStringToYear
 
 // Module 9905
-import EmptyDuration from "EmptyDuration" /* 9773 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9774 */;
-import REGEX_PARTS from "REGEX_PARTS" /* 9900 */;
-import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 9902 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+export const zhStringToNumber = function zhStringToNumber(arg0) {
+  let num = 0;
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < arg0.length) {
+    do {
+      let sum;
+      let tmp = arg0[num];
+      if ("\u5341" === tmp) {
+        let result;
+        if (0 === num2) {
+          result = exports.NUMBER[tmp];
+        } else {
+          result = num2 * exports.NUMBER[tmp];
+        }
+        sum = result;
+      } else {
+        sum = num2 + exports.NUMBER[tmp];
+      }
+      num = num + 1;
+      num2 = sum;
+      num3 = sum;
+    } while (num < arg0.length);
   }
-}
-class RUTimeUnitAgoFormatParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, RUTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(RUTimeUnitAgoFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(RUTimeUnitAgoFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftBoundaryChecking);
-const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")\\s{0,5}\u043D\u0430\u0437\u0430\u0434(?=(?:\\W|$))";
-  }
+  return num3;
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-    }
+export const zhStringToYear = function zhStringToYear(arg0) {
+  let length;
+  let num = 0;
+  let str = "";
+  let str2 = "";
+  if (0 < arg0.length) {
+    do {
+      str = `${exports.NUMBER[arg0[num]]}`;
+      num = num + 1;
+      str2 = str;
+      length = arg0.length;
+    } while (num < length);
   }
-];
-
-export default _createClass(RUTimeUnitAgoFormatParser, items);
+  return parseInt(str2);
+};
+export const NUMBER = { "\u96f6": 0, "\u4e00": 1, "\u4e8c": 2, "\u5169": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6, "\u4e03": 7, "\u516b": 8, "\u4e5d": 9, "\u5341": 10, "\u5eff": 20, "\u5345": 30 };
+export const WEEKDAY_OFFSET = { "\u5929": 0, "\u65e5": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6 };

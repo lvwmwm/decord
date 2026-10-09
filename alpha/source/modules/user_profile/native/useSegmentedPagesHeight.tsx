@@ -1,13 +1,13 @@
-// Module ID: 13225
-// Function ID: 13226
+// Module ID: 13318
+// Function ID: 13319
 // Name: useSegmentedPagesHeight
-// Dependencies: [32, 19, 558, 576, 4810, 1496, 1630, 2]
+// Dependencies: [32, 19, 558, 576, 4811, 1497, 1631, 2]
 
-// Module 13225 (useSegmentedPagesHeight)
+// Module 13318 (useSegmentedPagesHeight)
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

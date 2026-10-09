@@ -1,20 +1,20 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15937
+// Function ID: 15938
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [17, 15802, 5433, 21, 5090, 587, 558, 576, 504, 1126, 3083, 3115, 15823, 15825, 15826, 10891, 15821, 15827, 15828, 2]
+// Dependencies: [17, 15915, 5434, 21, 5091, 587, 558, 576, 504, 1126, 3083, 3115, 15936, 15938, 15939, 11064, 15934, 15940, 15941, 2]
 
-// Module 15824 (CheckpointVoiceStatsScreen)
+// Module 15937 (CheckpointVoiceStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3083 from "module_3083" /* 3083 */;
-import CheckpointConstants from "CheckpointConstants" /* 5433 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 10891 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 15828 */;
-import CheckpointStore from "CheckpointStore" /* 15802 */;
+import CheckpointConstants from "CheckpointConstants" /* 5434 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11064 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 15941 */;
+import CheckpointStore from "CheckpointStore" /* 15915 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -236,11 +236,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
       formatToPlainStringResult = intl2.formatToPlainString(tmp30(3115).RqXsIs, obj7);
     }
   }
-  const tmp30Result = tmp30(15823);
+  const tmp30Result = tmp30(15936);
   const container = tmp4.container;
   if (cResult[23] !== tmp4.image) {
-    const obj8 = { uri: tmp30(15826), style: tmp4.image };
-    const tmp30Result4 = tmp30(15825);
+    const obj8 = { uri: tmp30(15939), style: tmp4.image };
+    const tmp30Result4 = tmp30(15938);
     const tmp38 = metroRequire(tmp30Result4, obj8);
     cResult[23] = tmp4.image;
     cResult[24] = tmp38;
@@ -268,17 +268,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
     const obj10 = { style: tmp4.title, children: items3 };
     items3 = [tmp41, ];
     const obj11 = { variant: "heading-md/extrabold", style: tmp4.titleText, children: stringResult.toLocaleUpperCase() };
-    const tmp30Result5 = tmp30(15821);
+    const tmp30Result5 = tmp30(15934);
     items3[1] = metroRequire(tmp30Result5, obj11);
     const tmp48 = metroImportDefault(View, obj10);
     let tmp46Result = !tmp26;
     if (tmp46Result) {
       const _HermesInternal = HermesInternal;
-      const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp4.number, children: metroRequire(tmp30(15827), obj13) };
+      const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp4.number, children: metroRequire(tmp30(15940), obj13) };
       obj13 = { end: roundResult };
       tmp46Result = tmp46(tmp34, obj12);
     }
-    const tmp30Result6 = tmp30(15821);
+    const tmp30Result6 = tmp30(15934);
     if (roundResult <= 0) {
       const intl5 = tmp(1126).intl;
       stringResult1 = intl5.string(tmp30(3083).MyO0sh);
@@ -414,9 +414,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
   }
   const obj4 = { style: tmp.container, children: items1 };
   const obj5 = { style: tmp.imageContainer, children: metroRequire(tmp10Result4, obj6) };
-  obj6 = { uri: tmp10(15826), style: tmp.image };
-  const tmp10Result = tmp10(15823);
-  tmp10Result4 = tmp10(15825);
+  obj6 = { uri: tmp10(15939), style: tmp.image };
+  const tmp10Result = tmp10(15936);
+  tmp10Result4 = tmp10(15938);
   items1 = [metroRequire(View, obj5), ];
   const obj8 = { style: tmp.title, children: items2 };
   items2 = [, ];
@@ -424,19 +424,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
   items2[0] = metroRequire(MicrophoneIcon.MicrophoneIcon, obj9);
   const obj10 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp10Result5 = tmp10(15821);
+  const tmp10Result5 = tmp10(15934);
   items2[1] = metroRequire(tmp10Result5, obj10);
   items3 = [metroImportDefault(View, obj8), , ];
   let tmp13Result = !tmp6;
   if (tmp13Result) {
     const _HermesInternal = HermesInternal;
-    const obj11 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: metroRequire(tmp10(15827), obj12) };
+    const obj11 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: metroRequire(tmp10(15940), obj12) };
     obj12 = { end: roundResult };
     tmp13Result = tmp13(tmp16, obj11);
   }
   items3[1] = tmp13Result;
   const obj13 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: stringResult1 };
-  const tmp10Result6 = tmp10(15821);
+  const tmp10Result6 = tmp10(15934);
   if (roundResult <= 0) {
     const intl5 = tmp2(1126).intl;
     stringResult1 = intl5.string(tmp10(3083).MyO0sh);

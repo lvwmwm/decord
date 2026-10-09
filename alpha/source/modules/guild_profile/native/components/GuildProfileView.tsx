@@ -1,31 +1,31 @@
-// Module ID: 8834
-// Function ID: 8835
+// Module ID: 8843
+// Function ID: 8844
 // Name: GuildProfileView
-// Dependencies: [19, 17, 2086, 1085, 21, 4785, 4787, 5090, 587, 558, 576, 2078, 504, 1496, 1414, 8835, 6164, 4991, 4778, 8836, 5387, 8837, 5086, 8849, 9089, 2]
+// Dependencies: [19, 17, 2086, 1085, 21, 4786, 4788, 5091, 587, 558, 576, 2078, 504, 1497, 1415, 8844, 6163, 4992, 4779, 8845, 5388, 8846, 5087, 8858, 12967, 2]
 // Exports: getBackgroundForProfile
 
-// Module 8834 (GuildProfileView)
+// Module 8843 (GuildProfileView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
-import useToken from "useToken" /* 4778 */;
-import themes from "themes" /* 4785 */;
-import native from "native" /* 4787 */;
-import useThemeDefault from "useTheme" /* 4991 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 8835 */;
-import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 8836 */;
-import GuildProfileHeaderDefault from "GuildProfileHeader" /* 8837 */;
-import GuildProfileGamesDefault from "GuildProfileGames" /* 8849 */;
-import GuildProfileTraitsDefault from "GuildProfileTraits" /* 9089 */;
+import useToken from "useToken" /* 4779 */;
+import themes from "themes" /* 4786 */;
+import native from "native" /* 4788 */;
+import useThemeDefault from "useTheme" /* 4992 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 8844 */;
+import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 8845 */;
+import GuildProfileHeaderDefault from "GuildProfileHeader" /* 8846 */;
+import GuildProfileGamesDefault from "GuildProfileGames" /* 8858 */;
+import GuildProfileTraitsDefault from "GuildProfileTraits" /* 12967 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,8 +35,8 @@ let obj2;
 let size;
 let tmp;
 let tmp5;
-const Text_Text = tmp(5086);
-const LinearGradientDefault = tmp5(5387);
+const Text_Text = tmp(5087);
+const LinearGradientDefault = tmp5(5388);
 const View = react_native.View;
 const GuildFeatures = Constants.GuildFeatures;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -149,7 +149,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     if (null != guildProfile.customBanner) {
       ({ id: obj2.id, customBanner: obj2.splash } = guildProfile);
       const obj3 = { id: null, splash: null, size: getDevicePixelRatioDefault() * width };
-      const getGuildDiscoverySplashSource = tmp3(1414).getGuildDiscoverySplashSource;
+      const getGuildDiscoverySplashSource = tmp3(1415).getGuildDiscoverySplashSource;
       AvatarUtilsDefault;
       const guildDiscoverySplashSource = getGuildDiscoverySplashSource(obj3);
       const obj5 = { style: tmp4.imageBanner, source: guildDiscoverySplashSource };
@@ -376,7 +376,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
   let tmp5Result = null != guildProfile.description && guildProfile.description.length > 0;
   if (tmp5Result) {
     let obj3 = { variant: "text-md/medium", color: "text-subtle", children: guildProfile.description };
-    tmp5Result = tmp5(guildProfile(5086).Text, obj3);
+    tmp5Result = tmp5(guildProfile(5087).Text, obj3);
   }
   items2 = [tmp5Result, closure_7(GuildProfileGamesDefault, { profile: guildProfile }), closure_7(GuildProfileTraitsDefault, { profile: guildProfile })];
   items1[2] = closure_8(View, obj2);

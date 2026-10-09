@@ -1,25 +1,25 @@
-// Module ID: 6907
-// Function ID: 6908
+// Module ID: 6914
+// Function ID: 6915
 // Name: getGuildTransitionRoute
-// Dependencies: [6908, 2066, 6774, 2063, 4705, 2086, 2115, 6909, 1085, 2070, 6911, 6915, 6917, 2089, 6932, 2]
+// Dependencies: [6915, 2067, 6781, 2064, 4707, 2086, 2115, 6916, 1085, 2071, 6918, 6922, 6924, 2089, 6939, 2]
 // Exports: getGuildTransitionRoute
 
-// Module 6907 (getGuildTransitionRoute)
+// Module 6914 (getGuildTransitionRoute)
 import Constants from "Constants" /* 1085 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
 import FavoritesUtils from "FavoritesUtils" /* 2089 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6911 */;
-import canUseGuildSpace from "canUseGuildSpace" /* 6915 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6917 */;
-import ConjureUtils from "ConjureUtils" /* 6932 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6908 */;
-import FavoriteStore from "FavoriteStore" /* 2066 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6774 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 6918 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 6922 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6924 */;
+import ConjureUtils from "ConjureUtils" /* 6939 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6915 */;
+import FavoriteStore from "FavoriteStore" /* 2067 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6781 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import GuildChannelStore from "GuildChannelStore" /* 4707 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6909 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6916 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

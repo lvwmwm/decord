@@ -1,29 +1,29 @@
-// Module ID: 14622
-// Function ID: 14623
+// Module ID: 14727
+// Function ID: 14728
 // Name: MediaPlayerManager
-// Dependencies: [17, 2062, 6079, 2063, 5428, 4707, 1998, 1085, 6072, 14623, 1096, 3, 570, 1271, 2001, 4937, 584, 1381, 568, 7167, 6077, 2]
+// Dependencies: [17, 2063, 6081, 2064, 5429, 4709, 1999, 1085, 6074, 14728, 1096, 3, 570, 1272, 2002, 4938, 584, 1382, 568, 7172, 6079, 2]
 // Exports: isPlaybackComplete
 
-// Module 14622 (MediaPlayerManager)
+// Module 14727 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import react_native from "react-native" /* 1271 */;
-import RootNavigationRef from "RootNavigationRef" /* 4937 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7167 */;
+import react_native from "react-native" /* 1272 */;
+import RootNavigationRef from "RootNavigationRef" /* 4938 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6074 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7172 */;
 import react_native2 from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import VoicePanelStore from "VoicePanelStore" /* 6079 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14623 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import VoicePanelStore from "VoicePanelStore" /* 6081 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14728 */;
 import module_570 from "module_570" /* 570 */;
-import LifecycleManager from "LifecycleManager" /* 2001 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,31 +35,31 @@ let closure_4;
 let map1;
 let tmp;
 let tmp2;
-const PlatformUtils = tmp2(1381);
+const PlatformUtils = tmp2(1382);
 ({ NativeEventEmitter: c3, NativeModules: closure_4 } = react_native2);
 const AppStates = Constants.AppStates;
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ PLAYBACK_COMPLETION_DETECTION_TOLERANCE: map1, PLAYBACK_PROGRESS_UPDATE_INTERVAL: closure_14 } = MediaPlaybackPanelConstants);
 const Permissions = Constants2.Permissions;
 const tmp6 = new LoggerDefault("MediaPlayerManager");
-const authStore4 = tmp6;
+const authStore5 = tmp6;
 const useMediaPlayerManagerStore = module_570.create((arg0) => {
   let closure_0 = arg0;
   let obj = {
     activeMediaPlayerSource: "IconComponent",
-    mediaSourceMessage: "Set",
+    mediaSourceMessage: "Symbol",
     canAccessMedia: "emoji",
     isPlaying: false,
     wasPipClosedByUser: null,
     progress: null,
-    rate: "Reflect",
-    showPip: "MakerNoteSafety",
+    rate: "Set",
+    showPip: 2422,
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: true
+    currentlyDisplayedChannelId: 2425
   };
   return obj;
 });
@@ -129,7 +129,7 @@ class MediaPlayerManager extends LifecycleManager {
   }
   updateMediaPermissions() {
     const self = this;
-    const obj = self(1271);
+    const obj = self(1272);
     obj.batchUpdates(() => {
       const activeMediaPlayerSource = obj.getState().activeMediaPlayerSource;
       let channelId;
@@ -191,7 +191,7 @@ class MediaPlayerManager extends LifecycleManager {
   }
   pauseAndClosePip() {
     const self = this;
-    const obj = self(1271);
+    const obj = self(1272);
     obj.batchUpdates(() => {
       self.pauseCurrentPlayer();
       obj.setState({ wasPipClosedByUser: true, showPip: false });
@@ -282,7 +282,7 @@ class MediaPlayerManager extends LifecycleManager {
           let tmp9 = null != progress && null != tmp7;
           if (tmp9) {
             const _Math = Math;
-            tmp9 = Math.abs(tmp7.time - progress.time) < authStore2;
+            tmp9 = Math.abs(tmp7.time - progress.time) < authStore3;
           }
           if (tmp9) {
             tmp9 = tmp7.time !== tmp7.duration;
@@ -303,7 +303,7 @@ class MediaPlayerManager extends LifecycleManager {
   handleMediaPlayerPlaybackSourceChanged(source) {
     const self = this;
     source = source.source;
-    let obj = source(1271);
+    let obj = source(1272);
     obj.batchUpdates(() => {
       let obj;
       let orFetchMediaSourceMessage;

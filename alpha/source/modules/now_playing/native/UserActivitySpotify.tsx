@@ -1,18 +1,18 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 10749
+// Function ID: 10750
 // Name: UserActivitySpotify
-// Dependencies: [19, 17, 8434, 21, 1380, 1294, 4763, 11377, 558, 576, 5375, 8253, 1126, 1200, 2]
+// Dependencies: [19, 17, 8442, 21, 1381, 1295, 4765, 10750, 558, 576, 5376, 8261, 1126, 1200, 2]
 // Exports: attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
-// Module 11376 (UserActivitySpotify)
+// Module 10749 (UserActivitySpotify)
 import native from "native" /* 1200 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import react_nativeAll from "react-native" /* 1380 */;
-import LinkingDefault from "Linking" /* 4763 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8253 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import react_nativeAll from "react-native" /* 1381 */;
+import LinkingDefault from "Linking" /* 4765 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8261 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SpotifyConstants from "SpotifyConstants" /* 8434 */;
+import SpotifyConstants from "SpotifyConstants" /* 8442 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,16 +24,16 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f107742 = () => {
+const f105889 = () => {
 
 };
-const f107744 = () => {
+const f105891 = () => {
 
 };
-const f107746 = () => {
+const f105893 = () => {
 
 };
-const f107747 = (result) => {
+const f105894 = (result) => {
   let closure_0 = result;
   let obj = closure_2_0(closure_2_3[7]);
   const spotifyMetadataFromActivity = obj.getSpotifyMetadataFromActivity(closure_1_0, closure_1_1);
@@ -43,7 +43,7 @@ const f107747 = (result) => {
     const ALBUM = constants.ALBUM;
     if (closure_0) {
       const openURLResult = closure_2_4.openURL(closure_2_7.PLAYER_OPEN(ALBUM, album_id, true, "mobile"));
-      catchPromise = openURLResult.catch(f107742);
+      catchPromise = openURLResult.catch(f105889);
     } else {
       const obj = closure_2_1(closure_2_3[6]);
       catchPromise = obj.openURL(closure_2_7.WEB_OPEN(ALBUM, album_id, "mobile"));
@@ -51,7 +51,7 @@ const f107747 = (result) => {
     return catchPromise;
   });
 };
-const f107748 = () => {
+const f105895 = () => {
 
 };
 ({ Linking: closure_4, View: hasOwnProperty } = react_native);
@@ -71,14 +71,14 @@ class SpotifyTrack extends PureComponent {
         const tmp2 = result;
         if (tmp2) {
           const openURLResult = closure_2_4.openURL(closure_2_7.PLAYER_OPEN(TRACK, sync_id, true, "mobile"));
-          catchPromise = openURLResult.catch(f107742);
+          catchPromise = openURLResult.catch(f105889);
         } else {
           const obj = closure_2_1(closure_2_3[6]);
           catchPromise = obj.openURL(closure_2_7.WEB_OPEN(TRACK, tmp, "mobile"));
         }
         return catchPromise;
       });
-      let catchPromise = nextPromise.catch(f107744);
+      let catchPromise = nextPromise.catch(f105891);
     };
     return applyArgumentsResult;
   }
@@ -115,7 +115,7 @@ function openUrl(arg0, ALBUM, album_id) {
   const tmp = arg0;
   if (tmp) {
     const openURLResult = React3.openURL(metroImportDefault.PLAYER_OPEN(ALBUM, album_id, true, "mobile"));
-    catchPromise = openURLResult.catch(f107742);
+    catchPromise = openURLResult.catch(f105889);
   } else {
     const obj = LinkingDefault;
     catchPromise = obj.openURL(metroImportDefault.WEB_OPEN(ALBUM, album_id, "mobile"));
@@ -131,14 +131,14 @@ function openTrack(findActivityResult) {
     const tmp2 = result;
     if (tmp2) {
       const openURLResult = closure_2_4.openURL(closure_2_7.PLAYER_OPEN(TRACK, sync_id, true, "mobile"));
-      catchPromise = openURLResult.catch(f107742);
+      catchPromise = openURLResult.catch(f105889);
     } else {
       const obj = closure_2_1(closure_2_3[6]);
       catchPromise = obj.openURL(closure_2_7.WEB_OPEN(TRACK, tmp, "mobile"));
     }
     return catchPromise;
   });
-  nextPromise.catch(f107744);
+  nextPromise.catch(f105891);
 }
 function openArtist(arg0, arg1, arg2) {
   let closure_0 = arg0;
@@ -154,7 +154,7 @@ function openArtist(arg0, arg1, arg2) {
       const ARTIST = constants.ARTIST;
       if (closure_0) {
         const openURLResult = closure_3_4.openURL(closure_3_7.PLAYER_OPEN(ARTIST, result.artist_ids[closure_2], true, "mobile"));
-        catchPromise = openURLResult.catch(f107742);
+        catchPromise = openURLResult.catch(f105889);
       } else {
         const obj = closure_3_1(closure_3_3[6]);
         catchPromise = obj.openURL(closure_3_7.WEB_OPEN(ARTIST, tmp, "mobile"));
@@ -162,14 +162,14 @@ function openArtist(arg0, arg1, arg2) {
       return catchPromise;
     });
   });
-  nextPromise.catch(f107746);
+  nextPromise.catch(f105893);
 }
 function openAlbum(activity, id) {
   let closure_0 = activity;
   let closure_1 = id;
   const canOpenURLResult = closure_4.canOpenURL("" + closure_6 + ":");
-  const nextPromise = canOpenURLResult.then(f107747);
-  nextPromise.catch(f107748);
+  const nextPromise = canOpenURLResult.then(f105894);
+  nextPromise.catch(f105895);
 }
 const PureComponent2 = react.PureComponent;
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpotifyPlayButton(activity) {
@@ -217,7 +217,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpotifyPla
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { source: AssetRegistryDefault };
-    const Icon = tmp(5375).Button.Icon;
+    const Icon = tmp(5376).Button.Icon;
     const tmp8 = closure_9(Icon, obj2);
     cResult[2] = tmp8;
     tmp5 = tmp8;
@@ -253,7 +253,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpotifyPla
     cResult[10] = tmp16;
     tmp13 = tmp16;
   }
-  const tmp12 = closure_9(tmp(5375).Button, { icon: tmp5, text: tmp9, size: "sm", onPress: tmp4, grow: true });
+  const tmp12 = closure_9(tmp(5376).Button, { icon: tmp5, text: tmp9, size: "sm", onPress: tmp4, grow: true });
   cResult[5] = tmp4;
   cResult[6] = tmp9;
   cResult[7] = tmp12;
@@ -300,9 +300,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpotifyPla
     },
     grow: true
   };
-  Button = activity(5375).Button;
+  Button = activity(5376).Button;
   obj3 = { source: AssetRegistryDefault };
-  Icon = activity(5375).Button.Icon;
+  Icon = activity(5376).Button.Icon;
   intl = activity(1126).intl;
   obj4 = { platform: activity.name };
   return closure_9(closure_5, obj);
@@ -326,7 +326,7 @@ class SpotifyArtists extends PureComponent2 {
           const ARTIST = constants.ARTIST;
           if (closure_0) {
             const openURLResult = closure_3_4.openURL(closure_3_7.PLAYER_OPEN(ARTIST, result.artist_ids[closure_2], true, "mobile"));
-            catchPromise = openURLResult.catch(f107742);
+            catchPromise = openURLResult.catch(f105889);
           } else {
             const obj = closure_3_1(closure_3_3[6]);
             catchPromise = obj.openURL(closure_3_7.WEB_OPEN(ARTIST, tmp, "mobile"));
@@ -334,7 +334,7 @@ class SpotifyArtists extends PureComponent2 {
           return catchPromise;
         });
       });
-      let catchPromise = nextPromise.catch(f107746);
+      let catchPromise = nextPromise.catch(f105893);
     };
     return applyArgumentsResult;
   }
@@ -385,8 +385,8 @@ class SpotifyAlbum extends PureComponent3 {
       let closure_129_1;
       ({ activity: closure_129_0, userId: closure_129_1 } = require.props);
       const canOpenURLResult = React3.canOpenURL("" + metroRequire + ":");
-      const nextPromise = canOpenURLResult.then(f107747);
-      let catchPromise = nextPromise.catch(f107748);
+      const nextPromise = canOpenURLResult.then(f105894);
+      let catchPromise = nextPromise.catch(f105895);
     };
     return applyArgumentsResult;
   }

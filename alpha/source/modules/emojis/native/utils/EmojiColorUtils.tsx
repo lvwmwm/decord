@@ -1,12 +1,12 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16421
+// Function ID: 16422
 // Name: utils/EmojiColorUtils
-// Dependencies: [5, 17, 1456, 1898, 2]
+// Dependencies: [5, 17, 1457, 1899, 2]
 // Exports: getEmojiDominantColors
 
-// Module 16302 (utils/EmojiColorUtils)
+// Module 16421 (utils/EmojiColorUtils)
 import react_native from "react-native" /* 17 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
+import LRUCacheDefault from "LRUCache" /* 1457 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let obj = function _getFromCacheOrFallback2() {
             value2 = undefined;
             c2 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c2) {
           if (arg0 === 1) {
@@ -156,7 +156,7 @@ obj = function _getEmojiDominantColors() {
             ({ emoji: c0, emojiSource: c1 } = closure_0);
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

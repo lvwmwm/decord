@@ -1,17 +1,17 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 15505
+// Function ID: 15506
 // Name: HappeningNowCard
-// Dependencies: [109, 19, 17, 15391, 21, 5090, 558, 576, 6618, 4932, 6186, 5086, 2]
+// Dependencies: [109, 19, 17, 15504, 21, 5091, 558, 576, 6625, 4933, 6188, 5087, 2]
 
-// Module 15392 (HappeningNowCard)
+// Module 15505 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6625 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15391 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15504 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,9 +33,9 @@ let metroImportAll;
 let obj2;
 let tmp;
 let unpackModuleId;
-const useColorThemeBackgroundDefault = tmp(4932);
-const Text_Text = tmp(5086);
-const Card_Card = tmp(6186);
+const useColorThemeBackgroundDefault = tmp(4933);
+const Text_Text = tmp(5087);
+const Card_Card = tmp(6188);
 let closure_3 = ["children", "noMargin", "displayNameFont"];
 let closure_4 = ["children", "variant"];
 const View = react_native.View;
@@ -67,7 +67,7 @@ let closure_24 = createStyles.createStyles((arg0, arg1, arg2) => {
       }
       tmp6 = diff;
     } else {
-      tmp6 = authStore4;
+      tmp6 = authStore5;
     }
     obj = obj4;
   } else if ("stretchy" === arg0) {
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
         }
         const obj2 = { variant: "secondary", style: tmp8, onPress: panelVariant.onPress, border: "faint", shadow: str, onLongPress: panelVariant.onLongPress, disabled: null == panelVariant.onPress, accessibilityLabel, accessibilityHint, children: items };
         items = [panelVariant.children, tmp10];
-        const tmp16 = authStore6(Card_Card.Card, obj2);
+        const tmp16 = authStore7(Card_Card.Card, obj2);
         cResult[7] = accessibilityHint;
         cResult[8] = accessibilityLabel;
         cResult[9] = panelVariant.children;
@@ -198,7 +198,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNow
   str = undefined;
   const tmp6 = useColorThemeBackgroundDefault();
   const Card = Card_Card.Card;
-  const tmp7 = authStore6;
+  const tmp7 = authStore7;
   if (null == tmp6) {
     str = "low";
   }

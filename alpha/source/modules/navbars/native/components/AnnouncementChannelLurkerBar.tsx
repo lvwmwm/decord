@@ -1,15 +1,15 @@
-// Module ID: 12694
-// Function ID: 12695
+// Module ID: 12639
+// Function ID: 12640
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 12191, 1126, 5086, 5375, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 12130, 1126, 5087, 5376, 2]
 
-// Module 12694 (AnnouncementChannelLurkerBar)
+// Module 12639 (AnnouncementChannelLurkerBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12191 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12130 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
   }
   if (cResult[3] !== tmp4.text) {
     const obj2 = { style: text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: tmp6 };
-    const tmp10 = closure_3(channel(5086).Text, obj2);
+    const tmp10 = closure_3(channel(5087).Text, obj2);
     cResult[3] = tmp4.text;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
   }
   if (cResult[6] !== tmp5) {
     const obj3 = { onPress: tmp5, text: tmp11, size: "sm", variant: "secondary", grow: true };
-    const tmp15 = closure_3(channel(5375).Button, obj3);
+    const tmp15 = closure_3(channel(5376).Button, obj3);
     cResult[6] = tmp5;
     cResult[7] = tmp15;
     tmp13 = tmp15;
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
   const tmp = closure_5();
   let obj = { style: tmp.wrapper, children: items };
   const obj2 = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1126).t.Hl0Mqh) };
-  const Text = channel(5086).Text;
+  const Text = channel(5087).Text;
   intl = channel(1126).intl;
   items = [closure_3(Text, obj2), ];
   const obj3 = {
@@ -126,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announcement
     variant: "secondary",
     grow: true
   };
-  const Button = channel(5375).Button;
+  const Button = channel(5376).Button;
   intl2 = channel(1126).intl;
   items[1] = closure_3(Button, obj3);
   return closure_4(View, obj);

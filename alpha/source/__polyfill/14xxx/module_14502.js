@@ -1,47 +1,27 @@
 // Module ID: 14502
 // Function ID: 14503
-// Dependencies: []
-// Exports: default
+// Dependencies: [14500, 14474]
 
 // Module 14502
+import _mod14474 from "module_14474" /* 14474 */;
+import _mod14500 from "module_14500" /* 14500 */;
 
-export default () => (startTimer) => {
-  let closure_0 = startTimer;
-  startTimer = startTimer.startTimer;
-  let obj = {
-    features: {
-      benchmark(title) {
-        const items = [];
-        let closure_2 = items();
-        function step(title) {
-          let num = 0;
-          if (0 !== items.length) {
-            num = arr[arr.length - 1].time;
-          }
-          const tmp = closure_2();
-          const obj = { title, time: tmp, delta: tmp - num };
-          items.push(obj);
-        }
-        let obj = { title, time: 0, delta: 0 };
-        const arr = items.push(obj);
-        function stop(title) {
-          if (typeof step === "function") {
-            let num = 0;
-            if (0 !== items.length) {
-              num = arr[arr.length - 1].time;
-            }
-            const tmp3 = closure_2();
-            const obj = { title, time: tmp3, delta: tmp3 - num };
-            items.push(obj);
-            const obj2 = { title, steps: items };
-            title.send("benchmark.report", obj2);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        }
-        return { step, stop, last: stop };
-      }
+
+export default function(arg0, arg1) {
+  let tmp3;
+  if (arguments.length < 2) {
+    const tmp7 = _mod14474[arg0];
+    let tmp8;
+    if (_mod14500(tmp7)) {
+      tmp8 = tmp7;
     }
-  };
-  return obj;
+    tmp3 = tmp8;
+  } else {
+    tmp3 = _mod14474[arg0];
+    const tmp = require;
+    if (tmp3) {
+      tmp3 = tmp(14474)[arg0][arg1];
+    }
+  }
+  return tmp3;
 };

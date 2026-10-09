@@ -1,13 +1,13 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 16746
+// Function ID: 16747
 // Name: YouSwitchClientsRadioGroup
-// Dependencies: [32, 19, 21, 558, 576, 16622, 16623, 5054, 6264, 10157, 6265, 2]
+// Dependencies: [32, 19, 21, 558, 576, 16747, 16748, 5055, 6266, 10142, 6267, 2]
 
-// Module 16621 (YouSwitchClientsRadioGroup)
+// Module 16746 (YouSwitchClientsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import DiscordVariants from "DiscordVariants" /* 16622 */;
-import DiscordVariantTypes from "DiscordVariantTypes" /* 16623 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import DiscordVariants from "DiscordVariants" /* 16747 */;
+import DiscordVariantTypes from "DiscordVariantTypes" /* 16748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouSwitchCli
   let obj = value(576);
   const cResult = obj.c(9);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(16622);
+    const tmpResult = tmp(16747);
     const currentVariant = tmpResult.getCurrentVariant();
     cResult[0] = currentVariant;
     value = currentVariant;
@@ -141,7 +141,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouSwitchCli
               return <TableRadioRow key={arg0} value={arg0} label={first(dependencyMap[6]).DISCORD_VARIANTS[arg0].label} icon={null} />;
             }
           }
-          const tmp15 = jsx(tmp(6265).TableRadioGroup, { title: "Switch Clients", value, onChange: tmp10, hasIcons: true, children: tmp11 });
+          const tmp15 = jsx(tmp(6267).TableRadioGroup, { title: "Switch Clients", value, onChange: tmp10, hasIcons: true, children: tmp11 });
           cResult[7] = tmp11;
           cResult[8] = tmp15;
           tmp14 = tmp15;
@@ -205,7 +205,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouSwitchCli
     if (null != arr) {
       tmp5 = null;
       if (arr.length >= 2) {
-        const TableRadioGroup = memo(6265).TableRadioGroup;
+        const TableRadioGroup = memo(6267).TableRadioGroup;
         tmp5 = <TableRadioGroup title="Switch Clients" value={memo} onChange={tmp4} hasIcons>{arr.map((value) => {
           const TableRadioRow = memo(dependencyMap[8]).TableRadioRow;
           ({ color: memo(dependencyMap[6]).DISCORD_VARIANTS[value].color });

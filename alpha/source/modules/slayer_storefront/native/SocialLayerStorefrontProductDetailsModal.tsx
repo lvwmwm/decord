@@ -1,38 +1,38 @@
-// Module ID: 10143
-// Function ID: 10144
+// Module ID: 10128
+// Function ID: 10129
 // Name: SocialLayerStorefrontProductDetailsModal
-// Dependencies: [32, 19, 17, 6092, 6919, 10144, 1085, 21, 683, 587, 5090, 6261, 10145, 558, 576, 8401, 6164, 5086, 1126, 10146, 1200, 2030, 5640, 1630, 8302, 9333, 504, 6847, 6844, 6917, 6865, 1264, 10141, 5392, 10142, 1381, 4739, 10147, 9332, 10148, 10152, 6922, 8998, 10156, 3697, 5375, 8106, 8084, 10159, 6210, 6212, 5387, 10161, 2]
+// Dependencies: [32, 19, 17, 6094, 6926, 10129, 1085, 21, 683, 587, 5091, 6263, 10130, 558, 576, 8409, 6163, 5087, 1126, 10131, 1200, 2031, 5641, 1631, 8310, 9371, 504, 6854, 6851, 6924, 6872, 1265, 10126, 5393, 10127, 1382, 4741, 10132, 9370, 10133, 10137, 6929, 9009, 10141, 3697, 5376, 8114, 8092, 10144, 6212, 6214, 5388, 10146, 2]
 
-// Module 10143 (SocialLayerStorefrontProductDetailsModal)
+// Module 10128 (SocialLayerStorefrontProductDetailsModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import StringUtils from "StringUtils" /* 2030 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4739 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import StoreUtils from "StoreUtils" /* 5640 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import XSmallIcon from "XSmallIcon" /* 6210 */;
-import NavigatorConstants from "NavigatorConstants" /* 6261 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6917 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10141 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10142 */;
-import SocialLayerStorefrontAnalyticsConstants from "SocialLayerStorefrontAnalyticsConstants" /* 10144 */;
-import carouselMediaItems from "carouselMediaItems" /* 10145 */;
-import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10146 */;
-import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10147 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4741 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import StoreUtils from "StoreUtils" /* 5641 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import XSmallIcon from "XSmallIcon" /* 6212 */;
+import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6924 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10126 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10127 */;
+import SocialLayerStorefrontAnalyticsConstants from "SocialLayerStorefrontAnalyticsConstants" /* 10129 */;
+import carouselMediaItems from "carouselMediaItems" /* 10130 */;
+import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10131 */;
+import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10132 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SKUStore from "SKUStore" /* 6092 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6919 */;
+import SKUStore from "SKUStore" /* 6094 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6926 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import module_683_mod from "module_683" /* 683 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -69,8 +69,8 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const common_Video = tmp(8401);
-const NativePaymentContext = tmp(10161);
+const common_Video = tmp(8409);
+const NativePaymentContext = tmp(10146);
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const SlayerShopPDPCTAType = SocialLayerStorefrontAnalyticsConstants.SlayerShopPDPCTAType;
@@ -85,7 +85,7 @@ const importDefaultResult1Result = module_683(nativeDefault.unsafe_rawColors.BRA
 const alphaResult1 = importDefaultResult1Result.alpha(0);
 let closure_17 = alphaResult1.hex();
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, header: obj2, headerTitle: { flexShrink: 1 }, closeButtonIcon: obj3, scrollContent: obj4, scrollContainer: { flex: 1 }, columnsLandscape: obj5, heroColumnLandscape: { flex: 1 }, heroColumnContentLandscape: obj6, bundleGroupLandscape: obj7, detailsScrollLandscape: { flex: 1 }, detailsContentLandscape: { flexGrow: 1, justifyContent: "space-between", paddingBottom: 0 }, detailsGroupLandscape: obj8, section: obj9, bundleThumbnailRow: obj10, thumbnail: size, thumbnailSelected: obj11, thumbnailInner: obj12, thumbnailInnerSelected: obj13, thumbnailImage: { width: "100%", height: "100%" }, labelRow: obj14, labelIcon: size1, priceRow: obj15, footer: obj16, footerButtonRow: obj17, buyButton: { flex: 1 }, availabilityCopy: { textAlign: "center" }, legalCopy: obj18, hero: obj19, heroLandscape: { flex: 1, minHeight: 140, height: "round" }, priceSection: obj20, heroImage: { width: "100%", height: "100%" }, exclusiveBadgeContainer: obj21 };
+let obj = { container: { flex: 1 }, header: obj2, headerTitle: { flexShrink: 1 }, closeButtonIcon: obj3, scrollContent: obj4, scrollContainer: { flex: 1 }, columnsLandscape: obj5, heroColumnLandscape: { flex: 1 }, heroColumnContentLandscape: obj6, bundleGroupLandscape: obj7, detailsScrollLandscape: { flex: 1 }, detailsContentLandscape: { flexGrow: 1, justifyContent: "space-between", paddingBottom: 0 }, detailsGroupLandscape: obj8, section: obj9, bundleThumbnailRow: obj10, thumbnail: size, thumbnailSelected: obj11, thumbnailInner: obj12, thumbnailInnerSelected: obj13, thumbnailImage: { width: "100%", height: "100%" }, labelRow: obj14, labelIcon: size1, priceRow: obj15, footer: obj16, footerButtonRow: obj17, buyButton: { flex: 1 }, availabilityCopy: { textAlign: "center" }, legalCopy: obj18, hero: obj19, heroLandscape: { flex: 1, minHeight: 140, height: "emoji" }, priceSection: obj20, heroImage: { width: "100%", height: "100%" }, exclusiveBadgeContainer: obj21 };
 obj2 = { height: NavigatorConstants.NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
@@ -153,7 +153,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMe
             tmp11 = tmp33;
           }
           const obj3 = { style: tmp5, children: tmp30 };
-          const tmp36 = authStore2(metroImportDefault, obj3);
+          const tmp36 = authStore3(metroImportDefault, obj3);
           cResult[9] = tmp5;
           cResult[10] = tmp30;
           cResult[11] = tmp36;
@@ -161,7 +161,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMe
         }
       }
       const obj4 = { source: tmp29, poster: mediaItem.videoThumbnailSrc, muted: true, resizeMode: "cover", style: tmp4.heroImage };
-      const tmp32 = authStore2(common_Video.VideoComponent, obj4);
+      const tmp32 = authStore3(common_Video.VideoComponent, obj4);
       cResult[5] = mediaItem.videoThumbnailSrc;
       cResult[6] = tmp4.heroImage;
       cResult[7] = tmp29;
@@ -173,7 +173,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMe
       if (cResult[12] !== mediaItem.backgroundSrc) {
         const obj5 = { source: obj6, style: metroRequire.absoluteFill, resizeMode: "cover" };
         obj6 = { uri: mediaItem.backgroundSrc };
-        const tmp19 = authStore2(FastImageDefault, obj5);
+        const tmp19 = authStore3(FastImageDefault, obj5);
         cResult[12] = mediaItem.backgroundSrc;
         cResult[13] = tmp19;
         tmp15 = tmp19;
@@ -204,7 +204,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMe
         }
         const obj8 = { style: tmp5, children: items };
         items = [tmp15, tmp21];
-        const tmp28 = authStore3(metroImportDefault, obj8);
+        const tmp28 = authStore4(metroImportDefault, obj8);
         cResult[19] = tmp5;
         cResult[20] = tmp15;
         cResult[21] = tmp21;
@@ -212,7 +212,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMe
         tmp25 = tmp28;
       }
       const obj9 = { source: tmp20, style: tmp4.heroImage, resizeMode: "cover" };
-      const tmp24 = authStore2(FastImageDefault, obj9);
+      const tmp24 = authStore3(FastImageDefault, obj9);
       cResult[16] = tmp4.heroImage;
       cResult[17] = tmp20;
       cResult[18] = tmp24;
@@ -238,14 +238,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMe
           }
         }
         const obj11 = { style: tmp5, children: tmp7 };
-        const tmp14 = authStore2(metroImportDefault, obj11);
+        const tmp14 = authStore3(metroImportDefault, obj11);
         cResult[28] = tmp5;
         cResult[29] = tmp7;
         cResult[30] = tmp14;
         tmp11 = tmp14;
       }
       const obj12 = { source: tmp6, style: tmp4.heroImage, resizeMode: "cover" };
-      const tmp10 = authStore2(FastImageDefault, obj12);
+      const tmp10 = authStore3(FastImageDefault, obj12);
       cResult[25] = tmp4.heroImage;
       cResult[26] = tmp6;
       cResult[27] = tmp10;
@@ -277,24 +277,24 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMe
   }
   items[1] = landscape;
   if ("video" === mediaItem.type) {
-    const obj2 = { style: items, children: authStore2(common_Video.VideoComponent, obj3) };
+    const obj2 = { style: items, children: authStore3(common_Video.VideoComponent, obj3) };
     obj3 = { source: obj4, poster: mediaItem.videoThumbnailSrc, muted: true, resizeMode: "cover", style: tmp.heroImage };
     obj4 = { uri: mediaItem.src };
-    tmp6 = authStore2(metroImportDefault, obj2);
+    tmp6 = authStore3(metroImportDefault, obj2);
   } else if (null != mediaItem.backgroundSrc) {
     const obj6 = { source: obj7, style: metroRequire.absoluteFill, resizeMode: "cover" };
     const obj5 = { style: items, children: items1 };
     obj7 = { uri: mediaItem.backgroundSrc };
-    items1 = [authStore2(FastImageDefault, obj6), ];
+    items1 = [authStore3(FastImageDefault, obj6), ];
     const obj8 = { source: obj9, style: tmp.heroImage, resizeMode: "cover" };
     obj9 = { uri: mediaItem.src };
-    items1[1] = authStore2(FastImageDefault, obj8);
-    tmp6 = authStore3(metroImportDefault, obj5);
+    items1[1] = authStore3(FastImageDefault, obj8);
+    tmp6 = authStore4(metroImportDefault, obj5);
   } else {
-    const obj = { style: items, children: authStore2(FastImageDefault, obj10) };
+    const obj = { style: items, children: authStore3(FastImageDefault, obj10) };
     obj10 = { source: obj11, style: tmp.heroImage, resizeMode: "cover" };
     obj11 = { uri: mediaItem.src };
-    tmp6 = authStore2(metroImportDefault, obj);
+    tmp6 = authStore3(metroImportDefault, obj);
   }
   return tmp6;
 });
@@ -306,9 +306,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function InGame
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/medium", color: "text-muted", children: intl.string(intl5.t.V91tvy) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
-    const tmp6 = authStore2(Text, obj2);
+    const tmp6 = authStore3(Text, obj2);
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -320,7 +320,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function InGame
   const obj = { variant: "text-sm/medium", color: "text-muted", children: intl.string(intl5.t.V91tvy) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
-  return authStore2(Text, obj);
+  return authStore3(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPriceSection(sku) {
@@ -346,7 +346,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     let tmp13;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp12 = authStore2(closure_20, {});
+      const tmp12 = authStore3(closure_20, {});
       cResult[2] = tmp12;
       tmp9 = tmp12;
     } else {
@@ -354,7 +354,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
     }
     if (cResult[3] !== userPrice) {
       const obj3 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: userPrice };
-      const tmp15 = authStore2(Text_Text.Text, obj3);
+      const tmp15 = authStore3(Text_Text.Text, obj3);
       cResult[3] = userPrice;
       cResult[4] = tmp15;
       tmp13 = tmp15;
@@ -375,14 +375,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
       }
       const obj4 = { style: tmp4.priceSection, children: items };
       items = [tmp9, tmp16];
-      const tmp23 = authStore3(metroImportDefault, obj4);
+      const tmp23 = authStore4(metroImportDefault, obj4);
       cResult[8] = tmp4.priceSection;
       cResult[9] = tmp16;
       cResult[10] = tmp23;
       tmp20 = tmp23;
     }
     const obj5 = { style: tmp4.priceRow, children: tmp13 };
-    const tmp19 = authStore2(metroImportDefault, obj5);
+    const tmp19 = authStore3(metroImportDefault, obj5);
     cResult[5] = tmp4.priceRow;
     cResult[6] = tmp13;
     cResult[7] = tmp19;
@@ -400,11 +400,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Produc
   let tmp4 = null;
   if (null != userPrice) {
     const obj3 = { style: tmp.priceSection, children: items };
-    items = [authStore2(closure_20, {}), ];
-    const obj4 = { style: tmp.priceRow, children: authStore2(Text_Text.Text, obj5) };
+    items = [authStore3(closure_20, {}), ];
+    const obj4 = { style: tmp.priceRow, children: authStore3(Text_Text.Text, obj5) };
     obj5 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: userPrice };
-    items[1] = authStore2(metroImportDefault, obj4);
-    tmp4 = authStore3(metroImportDefault, obj3);
+    items[1] = authStore3(metroImportDefault, obj4);
+    tmp4 = authStore4(metroImportDefault, obj3);
   }
   return tmp4;
 });
@@ -856,7 +856,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function SKUNam
     let tmp9;
     if (cResult[0] !== sku.name) {
       const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: sku.name };
-      const tmp8 = authStore2(Text_Text.Heading, obj3);
+      const tmp8 = authStore3(Text_Text.Heading, obj3);
       cResult[0] = sku.name;
       cResult[1] = tmp8;
       tmp6 = tmp8;
@@ -869,7 +869,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function SKUNam
       tmpResult.isNullOrEmpty(sku.description);
       if (tmp11) {
         const obj4 = { variant: "text-md/medium", color: "text-muted", children: sku.description };
-        tmp11 = authStore2(tmp(5086).Text, obj4);
+        tmp11 = authStore3(tmp(5087).Text, obj4);
       }
       cResult[2] = sku.description;
       cResult[3] = tmp11;
@@ -888,7 +888,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function SKUNam
     }
     const obj5 = { style: tmp4.section, children: items };
     items = [tmp6, tmp9];
-    const tmp16 = authStore3(metroImportDefault, obj5);
+    const tmp16 = authStore4(metroImportDefault, obj5);
     cResult[4] = tmp4.section;
     cResult[5] = tmp6;
     cResult[6] = tmp9;
@@ -905,16 +905,16 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function SKUNam
   if (!obj.isNullOrEmpty(sku.name)) {
     const obj2 = { style: tmp.section, children: items };
     const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: sku.name };
-    items = [authStore2(Text_Text.Heading, obj3), ];
+    items = [authStore3(Text_Text.Heading, obj3), ];
     const tmp2Result = StringUtils;
     let tmp7Result = !tmp2Result.isNullOrEmpty(sku.description);
     tmp2Result.isNullOrEmpty(sku.description);
-    const tmp5 = authStore3;
+    const tmp5 = authStore4;
     const tmp6 = metroImportDefault;
-    const tmp7 = authStore2;
+    const tmp7 = authStore3;
     if (tmp7Result) {
       const obj4 = { variant: "text-md/medium", color: "text-muted", children: sku.description };
-      tmp7Result = tmp7(tmp2(5086).Text, obj4);
+      tmp7Result = tmp7(tmp2(5087).Text, obj4);
     }
     items[1] = tmp7Result;
     tmp5Result = tmp5(tmp6, obj2);
@@ -971,7 +971,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDe
               }
               const obj2 = { style: tmp8, children: items };
               items = [tmp9, tmp10, tmp11];
-              const tmp42 = authStore3(tmp7, obj2);
+              const tmp42 = authStore4(tmp7, obj2);
               cResult[14] = tmp7;
               cResult[15] = tmp8;
               cResult[16] = tmp9;
@@ -1031,7 +1031,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDe
     tmpResult9.isNullOrEmpty(trimmed);
     if (tmp27) {
       const obj3 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
-      tmp27 = authStore2(tmp(5086).Heading, obj3);
+      tmp27 = authStore3(tmp(5087).Heading, obj3);
     }
     const tmpResult10 = StringUtils;
     let tmp31Result = !tmpResult10.isNullOrEmpty(trimmed1);
@@ -1039,15 +1039,15 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDe
     if (tmp31Result) {
       let tmp32 = null != tmp5;
       const obj4 = { style: tmp4.labelRow, children: items1 };
-      const tmp31 = authStore3;
+      const tmp31 = authStore4;
       if (tmp32) {
         const obj5 = { source: obj6, style: tmp4.labelIcon };
         obj6 = { uri: tmp5 };
-        tmp32 = authStore2(FastImageDefault, obj5);
+        tmp32 = authStore3(FastImageDefault, obj5);
       }
       items1 = [tmp32, ];
       const obj7 = { variant: "text-sm/medium", color: "text-muted", children: trimmed1 };
-      items1[1] = authStore2(Text_Text.Text, obj7);
+      items1[1] = authStore3(Text_Text.Text, obj7);
       tmp31Result = tmp31(tmp25, obj4);
     }
     const tmpResult11 = StringUtils;
@@ -1055,7 +1055,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDe
     tmpResult11.isNullOrEmpty(trimmed2);
     if (tmp37) {
       const obj8 = { variant: "text-md/medium", color: "text-default", children: trimmed2 };
-      tmp37 = authStore2(tmp(5086).Text, obj8);
+      tmp37 = authStore3(tmp(5087).Text, obj8);
     }
     tmp19 = forResult;
   }
@@ -1108,7 +1108,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDe
   tmp8Result6.isNullOrEmpty(trimmed);
   if (tmp14) {
     const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
-    tmp14 = authStore2(tmp8(5086).Heading, obj4);
+    tmp14 = authStore3(tmp8(5087).Heading, obj4);
   }
   items = [tmp14, , ];
   const tmp8Result7 = StringUtils;
@@ -1120,11 +1120,11 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDe
     if (tmp18) {
       const obj6 = { source: obj7, style: tmp.labelIcon };
       obj7 = { uri: assetURL };
-      tmp18 = authStore2(FastImageDefault, obj6);
+      tmp18 = authStore3(FastImageDefault, obj6);
     }
     items1 = [tmp18, ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: trimmed1 };
-    items1[1] = authStore2(Text_Text.Text, obj8);
+    items1[1] = authStore3(Text_Text.Text, obj8);
     tmp11Result = tmp11(tmp12, obj5);
   }
   items[1] = tmp11Result;
@@ -1133,7 +1133,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDe
   tmp8Result8.isNullOrEmpty(trimmed2);
   if (tmp23) {
     const obj9 = { variant: "text-md/medium", color: "text-default", children: trimmed2 };
-    tmp23 = authStore2(tmp8(5086).Text, obj9);
+    tmp23 = authStore3(tmp8(5087).Text, obj9);
   }
   items[2] = tmp23;
   tmp11Result2 = tmp11(tmp12, obj3);
@@ -1407,7 +1407,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   let tmp43;
   let tmp70;
   let type;
-  const f103348 = () => {
+  const f103673 = () => {
     let result;
     let applicationId1;
     if (stateFromStores != null) {
@@ -1420,7 +1420,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
       const tenantMetadata = tmp.tenantMetadata;
       let carouselItems;
       const convertCarouselItemsToMediaItems = carouselMediaItems.convertCarouselItemsToMediaItems;
-      const tmp3 = require;
+      const tmp8 = require;
       if (tenantMetadata != null) {
         const socialLayer = tenantMetadata.socialLayer;
         if (socialLayer != null) {
@@ -1431,7 +1431,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
         carouselItems = [];
       }
       applicationId = tmp.applicationId;
-      const obj = { heroWidth: tmp3(10145).MOBILE_HERO_WIDTH_PX };
+      const obj = { heroWidth: tmp8(10130).MOBILE_HERO_WIDTH_PX };
       result = convertCarouselItemsToMediaItems(carouselItems, applicationId, stateFromStores2, obj);
     }
     return result;
@@ -1449,12 +1449,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   let tmp = closure_18();
   dependencyMap = tmp;
   let tmp2 = analyticsLocations;
-  let tmp3 = dependencyMap;
-  const rect = analyticsLocations(1630)();
+  const rect = analyticsLocations(1631)();
   let tmp4 = skuId;
-  let obj = skuId(8302);
+  let obj = skuId(8310);
   const isScreenLandscape = obj.useIsScreenLandscape();
-  let obj2 = analyticsLocations(9333);
+  let obj2 = analyticsLocations(9371);
   const mobileStoreFront = obj2.useMobileStoreFront();
   let items = [trackPDPClick];
   const obj3 = skuId(504);
@@ -1466,14 +1465,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     return tmp2;
   });
   let applicationId1;
-  const useGetOrFetchApplication = skuId(6847).useGetOrFetchApplication;
-  const tmp9 = skuId(6847);
+  const useGetOrFetchApplication = skuId(6854).useGetOrFetchApplication;
+  const tmp9 = skuId(6854);
   if (stateFromStores != null) {
     applicationId1 = stateFromStores.applicationId;
   }
   const getOrFetchApplication = useGetOrFetchApplication(applicationId1);
   let tmp13 = getOrFetchApplication;
-  const tmp2Result = tmp2(6844);
+  const tmp2Result = tmp2(6851);
   if (getOrFetchApplication == null) {
     tmp13 = null;
   }
@@ -1498,7 +1497,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     const items1 = [...items, AnalyticsLocationDefault.SLAYER_STOREFRONT_NATIVE_PDP];
     return items1;
   }, items4);
-  tmp2(5392)(() => {
+  tmp2(5393)(() => {
     const tmp = AnalyticsUtilsDefault;
     const track = tmp.track;
     const OPEN_MODAL = unpackModuleId.OPEN_MODAL;
@@ -1529,9 +1528,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     track(SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, obj);
   }, items5);
   const items6 = [stateFromStores, stateFromStores2];
-  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f103348, items6), 2);
+  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f103673, items6), 2);
   let num = 0;
-  mobileStoreFront(stateFromStores.useMemo(f103348, items6), 2);
+  mobileStoreFront(stateFromStores.useMemo(f103673, items6), 2);
   if (first < arr9.length) {
     num = first;
   }
@@ -1595,7 +1594,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
           country = mobileStoreFront.country;
         }
         APPLE = undefined;
-        const tmp5Result = tmp5(1381);
+        const tmp5Result = tmp5(1382);
         if (tmp5Result.isIOS()) {
           APPLE = _undefined3.APPLE;
         }
@@ -1659,9 +1658,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
       });
     }
   }, items9);
-  const OTPACOMOrderExperiment = tmp4(9332).OTPACOMOrderExperiment;
+  const OTPACOMOrderExperiment = tmp4(9370).OTPACOMOrderExperiment;
   let enabled = OTPACOMOrderExperiment.useConfig({ location: "SocialLayerStorefrontProductDetailsModal" }).enabled;
-  const tmp4Result6 = tmp4(1381);
+  const tmp4Result6 = tmp4(1382);
   if (tmp4Result6.isIOS()) {
     GOOGLE = tmp42.APPLE_ADVANCED_COMMERCE;
     tmp43 = tmp42;
@@ -1671,8 +1670,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   }
   let tmp45Result = null;
   if (tmp32) {
-    const obj5 = { headless: true, paymentGateway: GOOGLE, orderRequired: enabled, skuIds: items10, isGift: false, activeSubscription: null, onOrderRetryCancellation: tmp4(10141).closeSocialLayerStorefrontProductDetailsModal, checkoutAnalyticsFields: obj7, children: closure_14(tmp4(10152).HeadlessSlayerStorefrontPurchaseRunner, obj8) };
-    const tmp2Result2 = tmp2(10148);
+    const obj5 = { headless: true, paymentGateway: GOOGLE, orderRequired: enabled, skuIds: items10, isGift: false, activeSubscription: null, onOrderRetryCancellation: tmp4(10126).closeSocialLayerStorefrontProductDetailsModal, checkoutAnalyticsFields: obj7, children: closure_14(tmp4(10137).HeadlessSlayerStorefrontPurchaseRunner, obj8) };
+    const tmp2Result2 = tmp2(10133);
     if (enabled) {
       enabled = GOOGLE === tmp43.APPLE_ADVANCED_COMMERCE;
     }
@@ -1699,11 +1698,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
   } else {
     let tmp51;
     let tmp65Result2;
-    const tmp4Result7 = tmp4(6922);
+    const tmp4Result7 = tmp4(6929);
     let result = tmp4Result7.isSlayerSkuAvailableOnThisPlatform(stateFromStores);
     const intl4 = tmp4(1126).intl;
     const stringResult = intl4.string(tmp4(1126).t.boqtTA);
-    const tmp4Result8 = tmp4(4739);
+    const tmp4Result8 = tmp4(4741);
     let result1 = tmp4Result8.isSocialLayerStorefrontGiftingSupported();
     if (null != tmp27) {
       const obj9 = { mediaItem: tmp27, landscape: isScreenLandscape };
@@ -1712,12 +1711,12 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
       tmp51 = null;
       if (null != memo) {
         const obj10 = { sku: stateFromStores };
-        tmp51 = closure_14(tmp2(8998), obj10);
+        tmp51 = closure_14(tmp2(9009), obj10);
       }
     }
     let tmp55 = null;
     if (stateFromStores.exclusive) {
-      const obj11 = { style: tmp.exclusiveBadgeContainer, children: closure_14(tmp4(10156).ExclusiveBadge, {}) };
+      const obj11 = { style: tmp.exclusiveBadgeContainer, children: closure_14(tmp4(10141).ExclusiveBadge, {}) };
       tmp55 = closure_14(memo1, obj11);
     }
     let tmp58 = null;
@@ -1747,7 +1746,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     let tmp67Result = !result;
     if (tmp67Result) {
       const obj17 = { variant: "text-xs/normal", color: "text-muted", style: tmp.availabilityCopy, includeFontPadding: true, children: intl.string(tmp2(3697).gndWN7) };
-      const Text = tmp4(5086).Text;
+      const Text = tmp4(5087).Text;
       intl = tmp4(1126).intl;
       tmp67Result = tmp67(Text, obj17);
     }
@@ -1756,14 +1755,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     const obj19 = { style: tmp.buyButton, children: closure_14(Button, obj20) };
     obj20 = { variant: "primary", size: "lg", text: stringResult, loading: tmp30, disabled: tmp70, onPress: callback3 };
     tmp70 = tmp30;
-    Button = tmp4(5375).Button;
+    Button = tmp4(5376).Button;
     if (!tmp30) {
       tmp70 = !result;
     }
     items14 = [closure_14(memo1, obj19), ];
     if (result1) {
-      const obj21 = { icon: tmp2(8084), variant: "primary", size: "lg", disabled: tmp30, accessibilityLabel: intl2.string(tmp4(1126).t.QAZA5f), onPress: tmp50 };
-      const IconButton = tmp4(8106).IconButton;
+      const obj21 = { icon: tmp2(8092), variant: "primary", size: "lg", disabled: tmp30, accessibilityLabel: intl2.string(tmp4(1126).t.QAZA5f), onPress: tmp50 };
+      const IconButton = tmp4(8114).IconButton;
       intl2 = tmp4(1126).intl;
       result1 = tmp67(IconButton, obj21);
     }
@@ -1777,8 +1776,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
               return closure_1_14(skuId(closeButtonIcon[17]).Text, obj, index);
             })
       };
-      const getMobileFinePrintMessageForApplication = tmp4(10159).getMobileFinePrintMessageForApplication;
-      tmp4(10159);
+      const getMobileFinePrintMessageForApplication = tmp4(10144).getMobileFinePrintMessageForApplication;
+      tmp4(10144);
       const obj23 = { shouldAppendDisclaimer: false === hasAlreadyLinked };
       mobileFinePrintMessageForApplication = getMobileFinePrintMessageForApplication(getOrFetchApplication, stringResult, obj23);
       result = tmp67(tmp66, obj22);
@@ -1787,7 +1786,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     const tmp65Result = closure_15(memo1, obj14);
     const items15 = [tmp.container, ];
     let num3 = 0;
-    const tmp4Result10 = tmp4(1381);
+    const tmp4Result10 = tmp4(1382);
     if (!tmp4Result10.isIOS()) {
       num3 = rect.top;
     }
@@ -1797,20 +1796,20 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     items16 = [tmp45Result, , , ];
     const obj26 = { style: tmp.header, children: items17 };
     const obj27 = {
-      onPress: tmp4(10141).closeSocialLayerStorefrontProductDetailsModal,
+      onPress: tmp4(10126).closeSocialLayerStorefrontProductDetailsModal,
       backImage() {
           const obj = { size: "md", style: closeButtonIcon.closeButtonIcon };
-          return authStore2(XSmallIcon.XSmallIcon, obj);
+          return authStore3(XSmallIcon.XSmallIcon, obj);
         },
       accessibilityLabel: intl3.string(tmp4(1126).t.cpT0Cq),
       displayMode: "minimal"
     };
-    const HeaderBackButton = tmp4(6212).HeaderBackButton;
+    const HeaderBackButton = tmp4(6214).HeaderBackButton;
     intl3 = tmp4(1126).intl;
     items17 = [closure_14(HeaderBackButton, obj27), ];
     const obj28 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerTitle, children: name };
     name = undefined;
-    const Heading = tmp4(5086).Heading;
+    const Heading = tmp4(5087).Heading;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
     }
@@ -1821,7 +1820,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Social
     if (exclusive) {
       const obj30 = { style: stateFromStores2.absoluteFill, colors: items18, pointerEvents: "none" };
       items18 = [closure_16, closure_17];
-      exclusive = tmp67(tmp2(5387), obj30);
+      exclusive = tmp67(tmp2(5388), obj30);
     }
     items19 = [exclusive, ];
     if (isScreenLandscape) {
@@ -1875,11 +1874,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function WrappedSocia
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const obj2 = { skuIDs: first, activeSubscription: null, children: authStore2(closure_25, obj3) };
+    const obj2 = { skuIDs: first, activeSubscription: null, children: authStore3(closure_25, obj3) };
     obj3 = {};
     const NativePaymentContextProvider = NativePaymentContext.NativePaymentContextProvider;
     const merged = Object.assign(arg0);
-    const tmp11 = authStore2(NativePaymentContextProvider, obj2);
+    const tmp11 = authStore3(NativePaymentContextProvider, obj2);
     cResult[1] = arg0;
     cResult[2] = tmp11;
     tmp5 = tmp11;
@@ -1889,11 +1888,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function WrappedSocia
   return tmp5;
 }) : (function WrappedSocialLayerStorefrontProductDetailsModal(arg0) {
   let obj2;
-  const obj = { skuIDs: [], activeSubscription: null, children: authStore2(closure_25, obj2) };
+  const obj = { skuIDs: [], activeSubscription: null, children: authStore3(closure_25, obj2) };
   obj2 = {};
   const NativePaymentContextProvider = NativePaymentContext.NativePaymentContextProvider;
   const merged = Object.assign(arg0);
-  return authStore2(NativePaymentContextProvider, obj);
+  return authStore3(NativePaymentContextProvider, obj);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontProductDetailsModal.tsx");

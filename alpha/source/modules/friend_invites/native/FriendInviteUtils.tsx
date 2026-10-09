@@ -1,17 +1,17 @@
-// Module ID: 17754
-// Function ID: 17755
+// Module ID: 17908
+// Function ID: 17909
 // Name: FriendInviteUtils
-// Dependencies: [2063, 4717, 8472, 4766, 1126, 5005, 584, 11235, 2]
+// Dependencies: [2064, 4719, 8480, 4768, 1126, 5006, 584, 10590, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 17754 (FriendInviteUtils)
+// Module 17908 (FriendInviteUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5005 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8472 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5006 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8480 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/friend_invites/native/FriendInviteUtils.tsx");
@@ -31,7 +31,7 @@ export const revokeAllFriendInvites = function revokeAllFriendInvites() {
   });
 };
 export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
-  const f132306 = () => closure_1_1(closure_1_2[7])();
+  const f132637 = () => closure_1_1(closure_1_2[7])();
   const tmp = null == invite.channel && null == invite.guild && null != invite.inviter;
   if (tmp) {
     let dMFromUserId = null;
@@ -42,7 +42,7 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
       const obj3 = InstantInviteActionCreatorsDefault;
       obj3.transitionToInvite(invite, { forceTransition: true });
       const obj4 = DispatcherDefault;
-      obj4.wait(f132306);
+      obj4.wait(f132637);
     } else {
       let obj = InstantInviteActionCreatorsDefault;
       const obj2 = {
@@ -62,7 +62,7 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
               const obj = { key: "FRIEND_INVITE_ACCEPT_CONFIRMATION", content: formatToPlainString(st2dcs, { username }), icon: AssetRegistryDefault };
               open(obj);
               const tmpResult = DispatcherDefault;
-              tmpResult.wait(f132306);
+              tmpResult.wait(f132637);
             }
       };
       const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);

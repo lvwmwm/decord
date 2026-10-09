@@ -1,11 +1,11 @@
-// Module ID: 10425
-// Function ID: 10426
+// Module ID: 10414
+// Function ID: 10415
 // Name: notificationSettingsFlagUtils
-// Dependencies: [1095, 1402, 2]
+// Dependencies: [1095, 1403, 2]
 // Exports: resetChannelUnreadFlags, resetGuildUnreadFlags, withChannelUnreadFlags, withGuildUnreadFlags
 
-// Module 10425 (notificationSettingsFlagUtils)
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
+// Module 10414 (notificationSettingsFlagUtils)
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import size from "module_2" /* 2 */;
 

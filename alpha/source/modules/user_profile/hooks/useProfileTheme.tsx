@@ -1,21 +1,21 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 8337
+// Function ID: 8338
 // Name: useProfileTheme
-// Dependencies: [32, 5079, 8330, 1085, 558, 576, 4991, 504, 586, 8244, 1103, 8331, 4929, 2]
+// Dependencies: [32, 5080, 8338, 1085, 558, 576, 4992, 504, 586, 8252, 1103, 8339, 4930, 2]
 
-// Module 8329 (useProfileTheme)
+// Module 8337 (useProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import shims from "shims" /* 586 */;
 import Constants from "Constants" /* 1085 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import shared from "shared" /* 4929 */;
-import useThemeDefault from "useTheme" /* 4991 */;
-import useAvatarColor from "useAvatarColor" /* 8244 */;
-import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 8330 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8331 */;
+import shared from "shared" /* 4930 */;
+import useThemeDefault from "useTheme" /* 4992 */;
+import useAvatarColor from "useAvatarColor" /* 8252 */;
+import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 8338 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

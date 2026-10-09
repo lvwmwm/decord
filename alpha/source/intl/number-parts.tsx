@@ -1,9 +1,9 @@
-// Module ID: 9755
-// Function ID: 9756
+// Module ID: 9774
+// Function ID: 9775
 // Name: numberParts
 // Dependencies: [2]
 
-// Module 9755 (numberParts)
+// Module 9774 (numberParts)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("intl/number-parts.tsx");

@@ -1,22 +1,22 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9575
+// Function ID: 9576
 // Name: MessageImpressionAnalyticsHelpers
-// Dependencies: [19, 5071, 5114, 1085, 7365, 7418, 558, 576, 9563, 6956, 5075, 7417, 9564, 9565, 5072, 2]
+// Dependencies: [19, 5072, 5115, 1085, 7370, 7423, 558, 576, 9576, 6963, 5076, 7422, 9577, 9578, 5073, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking
 
-// Module 9562 (MessageImpressionAnalyticsHelpers)
+// Module 9575 (MessageImpressionAnalyticsHelpers)
 import react2 from "react" /* 576 */;
-import CodedLink from "CodedLink" /* 5075 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6956 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7365 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7417 */;
-import Constants2 from "Constants" /* 7418 */;
-import MessageViewTrackingManager from "MessageViewTrackingManager" /* 9563 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9564 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9565 */;
+import CodedLink from "CodedLink" /* 5076 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6963 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7370 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7422 */;
+import Constants2 from "Constants" /* 7423 */;
+import MessageViewTrackingManager from "MessageViewTrackingManager" /* 9576 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9577 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9578 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5071 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
+import InviteStore from "InviteStore" /* 5072 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5115 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -436,10 +436,10 @@ export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbe
                   let voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(tmp10, tmp13);
                   someResult = voiceStatesForChannelAlt.some((voiceState) => voiceState.voiceState.selfStream);
                 }
-                let obj = { type: tmp7(9563).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
+                let obj = { type: tmp7(9576).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
                 tmp20 = someResult;
                 let push = items.push;
-                let tmp7Result = tmp7(5072);
+                let tmp7Result = tmp7(5073);
                 inviteInstanceId = tmp7Result.getInviteInstanceId(tmp6.code, message.id);
                 if (inviteInstanceId == null) {
                   inviteInstanceId = null;

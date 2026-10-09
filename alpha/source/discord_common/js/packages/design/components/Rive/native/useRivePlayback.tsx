@@ -1,16 +1,16 @@
-// Module ID: 4854
-// Function ID: 4855
+// Module ID: 4855
+// Function ID: 4856
 // Name: useRivePlayback
 // Dependencies: [19, 17, 558, 576, 2]
 
-// Module 4854 (useRivePlayback)
+// Module 4855 (useRivePlayback)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, ref;
+let _require, ref;
 
 const AppState = react_native.AppState;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRivePlayback(arg0, isReady) {
@@ -82,7 +82,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRivePlayb
     if (cResult[6] === shouldShortLoopForReducedMotion) {
       tmp7 = cResult[7];
     }
-    closure_12 = tmp7;
+    let closure_12 = tmp7;
     if (cResult[8] === tmp7) {
       let tmp8;
       if (cResult[9] === arg0) {

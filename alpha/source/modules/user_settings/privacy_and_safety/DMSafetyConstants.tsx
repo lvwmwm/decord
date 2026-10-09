@@ -1,9 +1,9 @@
-// Module ID: 2042
-// Function ID: 2043
+// Module ID: 2043
+// Function ID: 2044
 // Name: DMSafetyConstants
 // Dependencies: [1209, 2]
 
-// Module 2042 (DMSafetyConstants)
+// Module 2043 (DMSafetyConstants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import size from "module_2" /* 2 */;
 

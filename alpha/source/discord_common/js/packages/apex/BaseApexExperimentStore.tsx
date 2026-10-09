@@ -1,21 +1,21 @@
-// Module ID: 1259
-// Function ID: 1260
+// Module ID: 1260
+// Function ID: 1261
 // Name: BaseApexExperimentStore
-// Dependencies: [109, 32, 1096, 4, 1260, 1261, 1263, 504, 510, 2]
+// Dependencies: [109, 32, 1096, 4, 1261, 1262, 1264, 504, 510, 2]
 
-// Module 1259 (BaseApexExperimentStore)
+// Module 1260 (BaseApexExperimentStore)
 import logger_Logger from "logger/Logger" /* 4 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1096 */;
-import _mod1260 from "module_1260" /* 1260 */;
-import ApexTypes from "ApexTypes" /* 1261 */;
-import _modDef1263 from "module_1263" /* 1263 */;
+import _mod1261 from "module_1261" /* 1261 */;
+import ApexTypes from "ApexTypes" /* 1262 */;
+import _modDef1264 from "module_1264" /* 1264 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let _self, clientOverrides, closure_13, dependencyMap, importDefault;
+let _self, clientOverrides, closure_12, closure_13, dependencyMap, importDefault;
 
 function _toPropertyKey(obj) {
   let StringResult = obj;
@@ -59,13 +59,13 @@ if (!tmp3) {
   tmp3 = tmp4;
 }
 if (!tmp3) {
-  const _module = _mod1260;
+  const _module = _mod1261;
 }
 let items = [ApexTypes.UnitType.User, ApexTypes.UnitType.Installation];
 let obj = { user: {}, guild: {}, installation: {} };
 const authStore = {};
 const unpackModuleId = {};
-let closure_12 = {};
+const authStore2 = {};
 obj = {};
 const set = new Set();
 const set1 = new Set();
@@ -93,7 +93,7 @@ class BaseApexExperimentStore extends PersistedStore {
       for (const key10020 in buildOverrideExperiments) {
         let tmp9 = closure_20[key10020];
         if (null == tmp9) {
-          let obj2 = _modDef1263;
+          let obj2 = _modDef1264;
           let v3Result = obj2.v3(key10020);
           tmp12[key10020] = v3Result;
           tmp9 = v3Result;
@@ -213,7 +213,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const merged = Object.assign(closure_11);
     let tmp3 = closure_20[experimentName];
     if (null == tmp3) {
-      const obj2 = _modDef1263;
+      const obj2 = _modDef1264;
       const v3Result = obj2.v3(experimentName);
       tmp2[experimentName] = v3Result;
       tmp3 = v3Result;
@@ -231,7 +231,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const merged = Object.assign(closure_12);
     let tmp3 = closure_20[experimentName];
     if (null == tmp3) {
-      const obj2 = _modDef1263;
+      const obj2 = _modDef1264;
       const v3Result = obj2.v3(experimentName);
       tmp2[experimentName] = v3Result;
       tmp3 = v3Result;
@@ -298,7 +298,7 @@ class BaseApexExperimentStore extends PersistedStore {
   getServerAssignment(kind, id, name) {
     let tmp2 = closure_20[name];
     if (null == tmp2) {
-      obj = _modDef1263;
+      obj = _modDef1264;
       const v3Result = obj.v3(name);
       tmp[name] = v3Result;
       tmp2 = v3Result;
@@ -327,7 +327,7 @@ class BaseApexExperimentStore extends PersistedStore {
         let tmp3 = closure_20[trackedVariantId1];
         const assignments = tmp10.assignments;
         if (null == tmp3) {
-          obj = _modDef1263;
+          obj = _modDef1264;
           const v3Result = obj.v3(trackedVariantId1);
           tmp2[trackedVariantId1] = v3Result;
           tmp3 = v3Result;
@@ -393,7 +393,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const combined = "" + trackedVariantId1 + "|" + revision + "|" + trackedVariantId + "|" + location + "|" + arg6 + "|1";
     let tmp3 = closure_20[combined];
     if (null == tmp3) {
-      obj = _modDef1263;
+      obj = _modDef1264;
       const v3Result = obj.v3(combined);
       tmp2[combined] = v3Result;
       tmp3 = v3Result;
@@ -591,7 +591,7 @@ class BaseApexExperimentStore extends PersistedStore {
   getHash(arg0) {
     let tmp2 = closure_20[arg0];
     if (null == tmp2) {
-      obj = _modDef1263;
+      obj = _modDef1264;
       const v3Result = obj.v3(arg0);
       tmp[arg0] = v3Result;
       tmp2 = v3Result;

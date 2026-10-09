@@ -1,18 +1,18 @@
-// Module ID: 10408
-// Function ID: 10409
+// Module ID: 10397
+// Function ID: 10398
 // Name: SafetyToolsCrisisTextLineActionSheet
-// Dependencies: [19, 17, 10361, 21, 5090, 587, 558, 576, 1126, 5086, 5375, 4763, 10374, 10409, 2]
+// Dependencies: [19, 17, 10348, 21, 5091, 587, 558, 576, 1126, 5087, 5376, 4765, 10361, 10398, 2]
 
-// Module 10408 (SafetyToolsCrisisTextLineActionSheet)
+// Module 10397 (SafetyToolsCrisisTextLineActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4763 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 10409 */;
+import LinkingDefault from "Linking" /* 4765 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10361 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 10398 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 10361 */;
+import Constants from "Constants" /* 10348 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTool
   }
   if (cResult[2] !== tmp4.description) {
     const obj2 = { variant: "text-md/medium", color: "text-default", style: description, children: tmp7 };
-    const tmp11 = closure_6(trackAnalyticsEvent(5086).Text, obj2);
+    const tmp11 = closure_6(trackAnalyticsEvent(5087).Text, obj2);
     cResult[2] = tmp4.description;
     cResult[3] = tmp11;
     tmp9 = tmp11;
@@ -98,7 +98,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTool
           trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
         }
     };
-    const tmp16 = closure_6(trackAnalyticsEvent(5375).Button, obj3);
+    const tmp16 = closure_6(trackAnalyticsEvent(5376).Button, obj3);
     cResult[5] = trackAnalyticsEvent;
     cResult[6] = tmp16;
     tmp14 = tmp16;
@@ -125,7 +125,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTool
           trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_WEB);
         }
     };
-    const tmp21 = closure_6(trackAnalyticsEvent(5375).Button, obj4);
+    const tmp21 = closure_6(trackAnalyticsEvent(5376).Button, obj4);
     cResult[8] = trackAnalyticsEvent;
     cResult[9] = tmp21;
     tmp19 = tmp21;
@@ -196,7 +196,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTool
   intl = trackAnalyticsEvent(1126).intl;
   obj2 = { style: tmp.container, children: items };
   const obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: intl2.string(trackAnalyticsEvent(1126).t.uicS5l) };
-  const Text = trackAnalyticsEvent(5086).Text;
+  const Text = trackAnalyticsEvent(5087).Text;
   intl2 = trackAnalyticsEvent(1126).intl;
   items = [closure_6(Text, obj3), , ];
   const obj4 = {
@@ -210,7 +210,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTool
       trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
     }
   };
-  const Button = trackAnalyticsEvent(5375).Button;
+  const Button = trackAnalyticsEvent(5376).Button;
   intl3 = trackAnalyticsEvent(1126).intl;
   items[1] = closure_6(Button, obj4);
   const obj5 = {
@@ -224,7 +224,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTool
       trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_SAFETY_TOOLS_CTL_WEB);
     }
   };
-  const Button2 = trackAnalyticsEvent(5375).Button;
+  const Button2 = trackAnalyticsEvent(5376).Button;
   intl4 = trackAnalyticsEvent(1126).intl;
   items[2] = closure_6(Button2, obj5);
   return closure_6(tmp2, obj);

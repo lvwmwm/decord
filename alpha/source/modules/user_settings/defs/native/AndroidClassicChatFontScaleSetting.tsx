@@ -1,23 +1,23 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15525
+// Function ID: 15526
 // Name: AndroidClassicChatFontScaleSetting
-// Dependencies: [15360, 7966, 558, 576, 4690, 1271, 1126, 11262, 1381, 2]
+// Dependencies: [15473, 7974, 558, 576, 4692, 1272, 1126, 10629, 1382, 2]
 
-// Module 15412 (AndroidClassicChatFontScaleSetting)
+// Module 15525 (AndroidClassicChatFontScaleSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import FontScaleStore from "FontScaleStore" /* 15360 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import FontScaleStore from "FontScaleStore" /* 15473 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const _slicedToArray = tmp(4690);
+const _slicedToArray = tmp(4692);
 const useFontScaleStore = FontScaleStore.useFontScaleStore;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClassicChatFontScaleValue() {

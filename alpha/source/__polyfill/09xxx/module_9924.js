@@ -1,11 +1,12 @@
 // Module ID: 9924
 // Function ID: 9925
-// Dependencies: [41, 42, 93, 95, 98, 9925, 9774, 9778]
+// Dependencies: [41, 42, 93, 95, 98, 9919, 9792, 9793, 9921]
 
 // Module 9924
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9774 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9778 */;
-import _mod9925 from "module_9925" /* 9925 */;
+import EmptyDuration from "EmptyDuration" /* 9792 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9793 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 9919 */;
+import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 9921 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,13 +28,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_6 = "(?:(?:\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E|\u043E\u0440\u0456\u0454\u043D\u0442\u043E\u0432\u043D\u043E)\\s*(?:~\\s*)?)?(" + _mod9925.TIME_UNITS_PATTERN + ")" + _mod9925.REGEX_PARTS.rightBoundary;
-class UKTimeUnitWithinFormatParser {
+class RUTimeUnitAgoFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(UKTimeUnitWithinFormatParser);
+    _classCallCheck(this, RUTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(RUTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,42 +45,24 @@ class UKTimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(RUTimeUnitAgoFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftBoundaryChecking);
 const entry = {
-  key: "patternLeftBoundary",
-  value: function patternLeftBoundary() {
-    return _mod9925.REGEX_PARTS.leftBoundary;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")\\s{0,5}\u043D\u0430\u0437\u0430\u0434(?=(?:\\W|$))";
   }
 };
 const items = [
   entry,
   {
-    key: "innerPattern",
-    value: function innerPattern(option) {
-      let _RegExp1;
-      const _RegExp = RegExp;
-      if (option.option.forwardDate) {
-        const self3 = this;
-        const self4 = this;
-        _RegExp1 = new _RegExp(tmp, "i");
-      } else {
-        const _HermesInternal = HermesInternal;
-        const combined = "(?:\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u043D\u0430 \u043F\u0440\u043E\u0442\u044F\u0437\u0456|\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u0443\u043F\u0440\u043E\u0434\u043E\u0432\u0436|\u0432\u043F\u0440\u043E\u0434\u043E\u0432\u0436)\\s*" + tmp;
-        const self = this;
-        const self2 = this;
-        _RegExp1 = new _RegExp(combined, _mod9925.REGEX_PARTS.flags);
-      }
-      return _RegExp1;
-    }
-  },
-  {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod9925.parseDuration(arg1[1]);
+      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
+      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
       const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
     }
   }
 ];
 
-export default _createClass(UKTimeUnitWithinFormatParser, items);
+export default _createClass(RUTimeUnitAgoFormatParser, items);

@@ -1,29 +1,28 @@
-// Module ID: 4765
-// Function ID: 4766
+// Module ID: 4767
+// Function ID: 4768
 // Name: ToastUtils
-// Dependencies: [1085, 4766, 1126, 5031, 5033, 5035, 5037, 5039, 5041, 5043, 5045, 4775, 1414, 4772, 4995, 5012, 5047, 1278, 4992, 5049, 2]
-// Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
+// Dependencies: [1085, 4768, 1126, 5032, 5034, 5036, 5038, 5040, 5042, 5044, 5046, 4776, 1415, 4996, 5013, 5048, 1279, 4993, 5050, 2]
+// Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 4765 (ToastUtils)
+// Module 4767 (ToastUtils)
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
-import v1 from "v1" /* 1278 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4775 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4992 */;
-import XLargeIcon2 from "XLargeIcon" /* 4995 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5012 */;
-import FriendsIcon from "FriendsIcon" /* 5031 */;
-import UserPlatformIcon from "UserPlatformIcon" /* 5035 */;
-import UserMinusIcon from "UserMinusIcon" /* 5037 */;
-import LinkIcon from "LinkIcon" /* 5039 */;
-import SendMessageIcon from "SendMessageIcon" /* 5041 */;
-import CopyIcon from "CopyIcon" /* 5043 */;
-import DownloadIcon from "DownloadIcon" /* 5045 */;
-import TrashIcon from "TrashIcon" /* 5047 */;
-import ClockIcon from "ClockIcon" /* 5049 */;
+import v1 from "v1" /* 1279 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4776 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4993 */;
+import XLargeIcon2 from "XLargeIcon" /* 4996 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
+import FriendsIcon from "FriendsIcon" /* 5032 */;
+import UserPlatformIcon from "UserPlatformIcon" /* 5036 */;
+import UserMinusIcon from "UserMinusIcon" /* 5038 */;
+import LinkIcon from "LinkIcon" /* 5040 */;
+import SendMessageIcon from "SendMessageIcon" /* 5042 */;
+import CopyIcon from "CopyIcon" /* 5044 */;
+import DownloadIcon from "DownloadIcon" /* 5046 */;
+import TrashIcon from "TrashIcon" /* 5048 */;
+import ClockIcon from "ClockIcon" /* 5050 */;
 import size from "module_2" /* 2 */;
 
 const VerificationCriteria = Constants.VerificationCriteria;
@@ -52,7 +51,7 @@ export const presentFriendRequestAcceptedToast = function presentFriendRequestAc
     const obj = { username: username.username };
     stringResult = intl.formatToPlainString(intl7.t.b3eoD4, obj);
   }
-  const obj2 = { key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp3(5033).UserPlusIcon, iconColor: "status-positive" };
+  const obj2 = { key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp3(5034).UserPlusIcon, iconColor: "status-positive" };
   open(obj2);
 };
 export const presentGameFriendRequestAcceptedToast = function presentGameFriendRequestAcceptedToast() {
@@ -168,30 +167,14 @@ export const presentFeedbackSent = function presentFeedbackSent() {
   open(obj);
 };
 export const presentEmoji = function presentEmoji(id) {
-  let obj5;
-  let obj7;
   const obj = AvatarUtilsDefault;
   const obj2 = { id: id.id, animated: id.animated, size: 48 };
   const emojiURL = obj.getEmojiURL(obj2);
-  const obj3 = DesignSystemsNotificationComponentsExperiment;
-  const designSystemsNotificationComponents = obj3.getDesignSystemsNotificationComponents("presentEmoji");
-  const tmp3 = ToastActionCreatorsDefault;
-  if (designSystemsNotificationComponents) {
-    const _HermesInternal3 = HermesInternal;
-    const openMana = tmp3.openMana;
-    const _HermesInternal4 = HermesInternal;
-    const obj4 = { text: ":" + id.name + ":", icon: obj5 };
-    const combined = "PRESENT_EMOJI-" + id.id;
-    obj5 = { type: "emoji", src: emojiURL, alt: id.name };
-    openMana(combined, obj4);
-  } else {
-    const _HermesInternal = HermesInternal;
-    const open = tmp3.open;
-    const _HermesInternal2 = HermesInternal;
-    const obj6 = { key: "PRESENT_EMOJI-" + id.id, content: ":" + id.name + ":", icon: obj7 };
-    obj7 = { uri: emojiURL };
-    open(obj6);
-  }
+  const openMana = ToastActionCreatorsDefault.openMana;
+  const obj3 = { text: ":" + id.name + ":", icon: { type: "emoji", src: emojiURL, alt: id.name } };
+  ToastActionCreatorsDefault;
+  const combined = "PRESENT_EMOJI-" + id.id;
+  openMana(combined, obj3);
 };
 export const presentNoiseCancellation = function presentNoiseCancellation(arg0) {
   let XLargeIcon;
@@ -212,9 +195,9 @@ export const presentNoiseCancellation = function presentNoiseCancellation(arg0) 
   }
   const obj = { key: "NOISE_CANCELLATION_TOGGLE", content: stringResult, IconComponent: XLargeIcon, iconColor: str };
   if (arg0) {
-    XLargeIcon = tmp5(4775).CheckmarkLargeIcon;
+    XLargeIcon = tmp5(4776).CheckmarkLargeIcon;
   } else {
-    XLargeIcon = tmp5(4995).XLargeIcon;
+    XLargeIcon = tmp5(4996).XLargeIcon;
   }
   str = "icon-feedback-critical";
   if (arg0) {
@@ -389,40 +372,6 @@ export const presentCommandCopied = function presentCommandCopied() {
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   intl = intl7.intl;
-  open(obj);
-};
-export const presentGuildMemberBio = function presentGuildMemberBio(guildName, arg1) {
-  let intl;
-  let obj2;
-  let closure_0 = arg1;
-  const obj = {
-    key: "GUILD_IDENTITY_BIO_TOAST",
-    content: intl.formatToPlainString(intl7.t.pOy2tm, obj2),
-    icon() {
-      return closure_0;
-    }
-  };
-  const open = ToastActionCreatorsDefault.open;
-  ToastActionCreatorsDefault;
-  intl = intl7.intl;
-  obj2 = { guildName };
-  open(obj);
-};
-export const presentGuildMemberPronouns = function presentGuildMemberPronouns(guildName, arg1) {
-  let intl;
-  let obj2;
-  let closure_0 = arg1;
-  const obj = {
-    key: "GUILD_IDENTITY_PRONOUNS_TOAST",
-    content: intl.formatToPlainString(intl7.t.gPVLS0, obj2),
-    icon() {
-      return closure_0;
-    }
-  };
-  const open = ToastActionCreatorsDefault.open;
-  ToastActionCreatorsDefault;
-  intl = intl7.intl;
-  obj2 = { guildName };
   open(obj);
 };
 export const presentUserPronouns = function presentUserPronouns() {

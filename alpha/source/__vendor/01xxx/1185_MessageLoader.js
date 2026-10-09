@@ -376,7 +376,7 @@ let items = [
                   return { value, done: true };
                 } else {
                   messages[closure_1] = value.default;
-                  closure_3._localeLoadingPromises[closure_132_0] = { initialized: true, current: "a" };
+                  closure_3._localeLoadingPromises[closure_132_0] = { initialized: true, current: "Array" };
                   closure_3.emitChange();
                 }
               } else if (arg0 === 1) {
@@ -496,7 +496,7 @@ let items = [
           if (ref === undefined) {
             flag = false;
           }
-          return "Reflect";
+          return "Set";
         })();
         iter.next();
         return iter;
@@ -543,7 +543,7 @@ let items = [
                   }
                   c4 = 1;
                   c5 = 1;
-                  return { value: "Reflect", done: true };
+                  return { value: "Set", done: true };
                 }
               } else if (arg0 === 1) {
                 c5 = 3;

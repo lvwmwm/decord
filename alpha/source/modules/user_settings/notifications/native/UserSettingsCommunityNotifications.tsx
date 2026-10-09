@@ -1,17 +1,17 @@
-// Module ID: 15622
-// Function ID: 15623
+// Module ID: 15735
+// Function ID: 15736
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 11293, 21, 5090, 558, 576, 504, 11, 8555, 5373, 6267, 6882, 1126, 2045, 2]
+// Dependencies: [19, 10660, 21, 5091, 558, 576, 504, 11, 8563, 5374, 6269, 6889, 1126, 2046, 2]
 
-// Module 15622 (UserSettingsCommunityNotifications)
+// Module 15735 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl3 from "intl" /* 1126 */;
-import TableRowGroup2 from "TableRowGroup" /* 6267 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 6882 */;
+import TableRowGroup2 from "TableRowGroup" /* 6269 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 6889 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11293 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10660 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,8 +103,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp20;
   if (0 !== keys.length) {
     let tmp21;
-    const Form = tmp(8555).Form;
-    const Stack = tmp(5373).Stack;
+    const Form = tmp(8563).Form;
+    const Stack = tmp(5374).Stack;
     const container = tmp4.container;
     if (cResult[10] !== stateFromStores) {
       const fn2 = function p(arg0) {
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp5 = null;
   if (0 !== keys.length) {
     let obj3 = { children: closure_4(Stack, obj4) };
-    const Form = tmp2(8555).Form;
+    const Form = tmp2(8563).Form;
     obj4 = {
       spacing: 24,
       style: tmp.container,
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           return hasOwnProperty(TableRowGroup, obj, item);
         })
     };
-    Stack = tmp2(5373).Stack;
+    Stack = tmp2(5374).Stack;
     tmp5 = closure_4(Form, obj3);
   }
   return tmp5;

@@ -1,18 +1,18 @@
-// Module ID: 16634
-// Function ID: 16635
+// Module ID: 16759
+// Function ID: 16760
 // Name: YouBarButton
-// Dependencies: [19, 17, 15177, 21, 5090, 587, 558, 576, 8986, 9237, 8106, 2]
+// Dependencies: [19, 17, 15288, 21, 5091, 587, 558, 576, 8997, 9275, 8114, 2]
 
-// Module 16634 (YouBarButton)
+// Module 16759 (YouBarButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ClipViewDefault from "ClipView" /* 8986 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9237 */;
+import ClipViewDefault from "ClipView" /* 8997 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9275 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 15177 */;
+import YouBarConstants from "YouBarConstants" /* 15288 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -22,8 +22,8 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const IconButton2 = tmp(8106);
-const ClipView = tmp(8986);
+const IconButton2 = tmp(8114);
+const ClipView = tmp(8997);
 const View = react_native.View;
 ({ YOU_BAR_BUTTON_HIT_SLOP: hasOwnProperty, YOU_BAR_BUTTON_ICON_SIZE: metroRequire } = YouBarConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -131,7 +131,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIco
     }
     return tmp6;
   }
-  const rect = { position: "absolute", left: sum, top: sum1, right: "constructor", bottom: "useStateFromStores", padding: "keys", minWidth: "marginBottom" };
+  const rect = { position: "absolute", left: sum, top: sum1, right: "apply", bottom: "space", padding: "useStateFromStores", minWidth: "r" };
   cResult[0] = sum;
   cResult[1] = sum1;
   cResult[2] = rect;
@@ -149,7 +149,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIco
   }
   const items = [size, badgeSize, num2, num];
   return react.useMemo(() => {
-    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "constructor", bottom: "useStateFromStores", padding: "keys", minWidth: "marginBottom" };
+    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "apply", bottom: "space", padding: "useStateFromStores", minWidth: "r" };
     return rect;
   }, items);
 });

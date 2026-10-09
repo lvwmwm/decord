@@ -1,24 +1,24 @@
-// Module ID: 6868
-// Function ID: 6869
+// Module ID: 6875
+// Function ID: 6876
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 2124, 2118, 1085, 21, 5090, 587, 558, 576, 6869, 2040, 6871, 6872, 4765, 1126, 6870, 6877, 6886, 5086, 6888, 6189, 6889, 504, 6890, 2]
+// Dependencies: [19, 17, 2124, 2118, 1085, 21, 5091, 587, 558, 576, 6876, 2041, 6878, 6879, 4767, 1126, 6877, 6884, 6893, 5087, 6895, 6191, 6896, 504, 6897, 2]
 
-// Module 6868 (UserProfileRolesCard)
+// Module 6875 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import ClipboardUtils from "ClipboardUtils" /* 6872 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 6886 */;
-import RoleIconDefault from "RoleIcon" /* 6888 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 6889 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import ClipboardUtils from "ClipboardUtils" /* 6879 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 6893 */;
+import RoleIconDefault from "RoleIcon" /* 6895 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 6896 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleItem(rol
     if (cResult[3] === role.id) {
       tmp8 = cResult[4];
     }
-    let tmpResult = tmp(6869);
+    let tmpResult = tmp(6876);
     const roleIconProps = tmpResult.useRoleIconProps(tmp8);
     const tags = role.tags;
     let guild_connections;
@@ -129,7 +129,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleItem(rol
     }
     let tmp11 = undefined !== guild_connections;
     let closure_5 = tmp11;
-    const DeveloperMode = tmp(2040).DeveloperMode;
+    const DeveloperMode = tmp(2041).DeveloperMode;
     const setting = DeveloperMode.useSetting();
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
@@ -138,7 +138,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleItem(rol
       cResult[5] = obj2;
       cResult[6] = obj3;
     }
-    const tmp17 = guildId(6871);
+    const tmp17 = guildId(6878);
     if (cResult[7] === tmp5) {
       if (cResult[10] === tmp5) {
         if (cResult[11] === role) {
@@ -572,7 +572,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileR
           tmp13 = tmp20;
         }
         const obj2 = { title: tmp14, style, children: tmp16 };
-        const tmp23 = closure_9(guildId(6890), obj2);
+        const tmp23 = closure_9(guildId(6897), obj2);
         cResult[11] = style;
         cResult[12] = tmp16;
         cResult[13] = tmp23;
@@ -617,7 +617,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileR
   let tmp4 = null;
   if (0 !== roles.length) {
     const obj2 = { title: intl.string(userId(1126).t["LPJmL/"]), style, children: closure_9(closure_16, obj3) };
-    const tmp7 = guildId(6890);
+    const tmp7 = guildId(6897);
     intl = tmp(1126).intl;
     obj3 = { guildId, guildMemberRoleIds: roles };
     tmp4 = closure_9(tmp7, obj2);

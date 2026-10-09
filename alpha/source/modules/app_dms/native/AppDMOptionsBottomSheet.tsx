@@ -1,19 +1,19 @@
-// Module ID: 12853
-// Function ID: 12854
+// Module ID: 12820
+// Function ID: 12821
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [19, 17, 6786, 1085, 21, 5090, 587, 558, 576, 504, 8279, 5054, 7084, 6849, 1126, 6184, 6267, 6829, 2]
+// Dependencies: [19, 17, 6793, 1085, 21, 5091, 587, 558, 576, 504, 8287, 5055, 7087, 6856, 1126, 6186, 6269, 6836, 2]
 
-// Module 12853 (AppDMOptionsBottomSheet)
+// Module 12820 (AppDMOptionsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import openUserSettings from "openUserSettings" /* 7084 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import openUserSettings from "openUserSettings" /* 7087 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8287 */;
 import react from "react" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6786 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6793 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

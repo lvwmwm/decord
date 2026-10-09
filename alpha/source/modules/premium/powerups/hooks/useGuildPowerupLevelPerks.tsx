@@ -1,15 +1,15 @@
-// Module ID: 12277
-// Function ID: 12278
+// Module ID: 12216
+// Function ID: 12217
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [19, 1391, 4968, 558, 576, 1126, 2597, 1387, 2]
+// Dependencies: [19, 1392, 4969, 558, 576, 1126, 2597, 1388, 2]
 
-// Module 12277 (useGuildPowerupLevelPerks)
+// Module 12216 (useGuildPowerupLevelPerks)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _modDef2597 from "module_2597" /* 2597 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4969 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -138,7 +138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
   features = features.features.features;
   const concat = items.concat;
   const mapped = features.map((item) => closure_0[item]);
-  const combined = concat(mapped.filter(tmp(1387).isNotNullish));
+  const combined = concat(mapped.filter(tmp(1388).isNotNullish));
   cResult[2] = includeEmojis;
   cResult[3] = includeSoundboards;
   cResult[4] = includeStickers;

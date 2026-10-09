@@ -1,22 +1,22 @@
-// Module ID: 6794
-// Function ID: 6795
+// Module ID: 6801
+// Function ID: 6802
 // Name: LastMentionTimestampStore
-// Dependencies: [2124, 5971, 1389, 584, 504, 2]
+// Dependencies: [2124, 5973, 1390, 584, 504, 2]
 // Exports: trackMessageNotificationTimestamps
 
-// Module 6794 (LastMentionTimestampStore)
+// Module 6801 (LastMentionTimestampStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let timestamp = null;
 const React4 = {};
 const authStore = {};
 const unpackModuleId = {};
-let closure_12 = {};
+const authStore2 = {};
 const Store = get_initializedDefault.Store;
 class LastMentionTimestampStore extends Store {
   initialize() {

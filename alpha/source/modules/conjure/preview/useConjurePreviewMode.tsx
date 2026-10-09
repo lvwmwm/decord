@@ -1,13 +1,12 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 17010
+// Function ID: 17011
 // Name: useConjurePreviewMode
-// Dependencies: [32, 19, 502, 558, 576, 504, 16883, 16884, 13185, 6842, 10617, 12369, 12368, 11149, 2]
+// Dependencies: [32, 19, 502, 558, 576, 504, 17011, 17012, 13278, 6849, 10768, 11374, 11373, 10811, 2]
 
-// Module 16882 (useConjurePreviewMode)
-import getFramesManagerDefault from "getFramesManager" /* 11149 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 12368 */;
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 12369 */;
-import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 16883 */;
+// Module 17010 (useConjurePreviewMode)
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11373 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11374 */;
+import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 17011 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -46,12 +45,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     tmp4 = mainCardOnly;
   }
   let tmp5 = undefined !== supportsOverlay && supportsOverlay;
-  let obj2 = react;
   let tmp6 = _slicedToArray(react.useState(null), 2);
   [r10026, tmp7] = tmp6;
-  [tmp9, tmp10] = react.useState(null);
-  _slicedToArray(react.useState(null), 2);
-  const tmp11 = _slicedToArray(react.useState(applicationId), 2);
+  let tmp8 = _slicedToArray(react.useState(null), 2);
+  [tmp9, tmp10] = tmp8;
+  let tmp11 = _slicedToArray(react.useState(applicationId), 2);
+  const obj2 = react;
   if (tmp11[0] !== applicationId) {
     tmp11[1](applicationId);
     tmp7(null);
@@ -87,24 +86,24 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     surfaces = applicationWidgetConfig.surfaces;
   }
   let tmp24;
-  const profileSurfaceAvailability = tmp(16884).profileSurfaceAvailability;
-  tmp(16884);
+  const profileSurfaceAvailability = tmp(17012).profileSurfaceAvailability;
+  tmp(17012);
   if (surfaces != null) {
-    tmp24 = surfaces[tmp(undefined, 13185).ApplicationWidgetConfigSurface.WIDGET_TOP];
+    tmp24 = surfaces[tmp(undefined, 13278).ApplicationWidgetConfigSurface.WIDGET_TOP];
   }
-  const obj3 = { widgetTop: null != tmp24, widgetBottom: null != tmp25, miniProfile: null != tmp26 };
+  let obj3 = { widgetTop: null != tmp24, widgetBottom: null != tmp25, miniProfile: null != tmp26 };
   tmp25 = undefined;
   if (surfaces != null) {
-    tmp25 = surfaces[tmp(undefined, 13185).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+    tmp25 = surfaces[tmp(undefined, 13278).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
   }
   tmp26 = undefined;
   if (surfaces != null) {
-    tmp26 = surfaces[tmp(undefined, 13185).ApplicationWidgetConfigSurface.MINI_PROFILE];
+    tmp26 = surfaces[tmp(undefined, 13278).ApplicationWidgetConfigSurface.MINI_PROFILE];
   }
   const result = profileSurfaceAvailability(obj3);
   const tmp28 = null != tmp15 && (tmp4 ? result.hasMainCard : result.hasAny);
-  const useApplication = tmp(6842).useApplication;
-  tmp(6842);
+  const useApplication = tmp(6849).useApplication;
+  tmp(6849);
   const data = useApplication(previewApplicationId).data;
   let tmp31 = null != previewApplicationId;
   if (tmp31) {
@@ -117,24 +116,24 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     }
     tmp31 = null != id;
   }
-  const useApplication2 = tmp(6842).useApplication;
-  tmp(6842);
+  const useApplication2 = tmp(6849).useApplication;
+  tmp(6849);
   const application2 = useApplication2(applicationId);
   ({ data: data2, isLoading } = application2);
   if (!declaredActivity) {
-    const tmpResult12 = tmp(10617);
+    const tmpResult12 = tmp(10768);
     declaredActivity = tmpResult12.canLaunchContextlessFrame(data2);
   }
   const obj4 = { legacy: { hasFrame: declaredActivity, hasProfileWidget: tmp28, hasBotDm: tmp31 }, widgetResolvable: null != tmp15, botDmResolvable: tmp31 };
-  const tmpResult13 = tmp(16884);
+  const tmpResult13 = tmp(17012);
   const result1 = tmpResult13.previewCapabilitiesFromSurfaces(previewSupportedSurfaces, obj4);
   const obj5 = { installScope, hasOverlay: tmp5, ownerAuthorizationRevoked };
-  const previewModeAvailability = tmp(16884).previewModeAvailability;
-  tmp(16884);
+  const previewModeAvailability = tmp(17012).previewModeAvailability;
+  tmp(17012);
   const merged = Object.assign(result1);
   const result2 = previewModeAvailability(obj5);
   if (cResult[2] !== previewSupportedSurfaces) {
-    const tmpResult15 = tmp(12369);
+    const tmpResult15 = tmp(11374);
     const result3 = tmpResult15.previewFrameSurfaceOptions(previewSupportedSurfaces);
     cResult[2] = previewSupportedSurfaces;
     class B {
@@ -204,7 +203,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     tmp46 = items1;
     tmp45 = tmp47;
   }
-  const tmpResult16 = tmp(12369);
+  const tmpResult16 = tmp(11374);
   const previewFrameSurface = tmpResult16.resolvePreviewFrameSurface(tmp9, tmp41);
   cResult[4] = tmp41;
   cResult[5] = tmp9;
@@ -244,7 +243,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   [tmp5, tmp6] = tmp4;
   let tmp7 = _slicedToArray(react.useState(applicationId), 2);
   if (tmp7[0] !== applicationId) {
-    tmp7[1](applicationId);
+    let tmp8 = tmp7[1](applicationId);
     tmp3(null);
     tmp6(null);
   }
@@ -255,8 +254,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       tmp11 = previewApplicationId;
     }
   }
-  let obj2 = applicationId(previewFrameSurface[5]);
   const items = [AuthenticationStore];
+  const obj2 = applicationId(previewFrameSurface[5]);
   const stateFromStores = obj2.useStateFromStores(items, () => id.getId());
   const tmp15 = previewSupportedSurfaces(previewFrameSurface[6]);
   const applicationWidgetConfig = tmp15(stateFromStores, tmp11).applicationWidgetConfig;
@@ -265,12 +264,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     surfaces = applicationWidgetConfig.surfaces;
   }
   let tmp19;
-  const profileSurfaceAvailability = tmp12(previewFrameSurface[7]).profileSurfaceAvailability;
+  const profileSurfaceAvailability = applicationId(tmp13[7]).profileSurfaceAvailability;
   applicationId(previewFrameSurface[7]);
   if (surfaces != null) {
     tmp19 = surfaces[tmp12(undefined, tmp13[8]).ApplicationWidgetConfigSurface.WIDGET_TOP];
   }
-  const obj3 = { widgetTop: null != tmp19, widgetBottom: null != tmp20, miniProfile: null != tmp21 };
+  let obj3 = { widgetTop: null != tmp19, widgetBottom: null != tmp20, miniProfile: null != tmp21 };
   tmp20 = undefined;
   if (surfaces != null) {
     tmp20 = surfaces[tmp12(undefined, tmp13[8]).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
@@ -281,7 +280,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   const result = profileSurfaceAvailability(obj3);
   const tmp23 = null != tmp11 && (flag ? result.hasMainCard : result.hasAny);
-  const useApplication = tmp12(previewFrameSurface[9]).useApplication;
+  const useApplication = applicationId(tmp13[9]).useApplication;
   applicationId(previewFrameSurface[9]);
   const data = useApplication(previewApplicationId).data;
   let tmp26 = null != previewApplicationId;
@@ -295,7 +294,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     }
     tmp26 = null != id;
   }
-  const useApplication2 = tmp12(previewFrameSurface[9]).useApplication;
+  const useApplication2 = applicationId(tmp13[9]).useApplication;
   applicationId(previewFrameSurface[9]);
   const application2 = useApplication2(applicationId);
   ({ data: data2, isLoading } = application2);
@@ -307,7 +306,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   const tmp12Result11 = applicationId(previewFrameSurface[7]);
   const result1 = tmp12Result11.previewCapabilitiesFromSurfaces(previewSupportedSurfaces, obj4);
   const obj5 = { installScope, hasOverlay: flag2, ownerAuthorizationRevoked };
-  const previewModeAvailability = tmp12(previewFrameSurface[7]).previewModeAvailability;
+  const previewModeAvailability = applicationId(tmp13[7]).previewModeAvailability;
   applicationId(previewFrameSurface[7]);
   const merged = Object.assign(result1);
   const result2 = previewModeAvailability(obj5);
@@ -321,12 +320,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   const items2 = [applicationId, previewFrameSurface];
   const effect = obj.useEffect(() => {
     if (null != applicationId) {
-      const obj2 = conjurePreviewSurface;
-      const conjureBuilderPreviewFrames = obj2.getConjureBuilderPreviewFrames(tmp);
+      const obj3 = conjurePreviewSurface;
+      const conjureBuilderPreviewFrames = obj3.getConjureBuilderPreviewFrames(tmp);
       for (const item10005 of conjureBuilderPreviewFrames) {
-        if (item10005.surface.type !== previewFrameSurface) {
-          let obj = getFramesManagerDefault();
-          let leaveFrameResult = obj.leaveFrame(tmp3.id);
+        let tmp3 = item10005;
+        let type = item10005.surface.type;
+        let tmp5 = require;
+        let obj = conjurePreviewFrameSurfaces;
+        if (type !== obj.previewFrameLaunchType(previewFrameSurface)) {
+          let tmp5Result = tmp5(10811);
+          let leaveFrameResult = tmp5Result.leaveFrame(tmp3.id);
         }
         continue;
       }

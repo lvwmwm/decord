@@ -1,11 +1,11 @@
-// Module ID: 17813
-// Function ID: 17814
+// Module ID: 17967
+// Function ID: 17968
 // Name: shouldShowLogUploadForCategory
-// Dependencies: [9602, 2]
+// Dependencies: [9621, 2]
 // Exports: shouldShowLogUploadForCategory
 
-// Module 17813 (shouldShowLogUploadForCategory)
-import Constants from "Constants" /* 9602 */;
+// Module 17967 (shouldShowLogUploadForCategory)
+import Constants from "Constants" /* 9621 */;
 import size from "module_2" /* 2 */;
 
 const FeedbackRating = Constants.FeedbackRating;

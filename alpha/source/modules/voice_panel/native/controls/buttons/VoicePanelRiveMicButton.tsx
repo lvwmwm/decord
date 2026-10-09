@@ -1,13 +1,13 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 11063
+// Function ID: 11064
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 558, 576, 5020, 10891, 4880, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5021, 11064, 4881, 2]
 
-// Module 10890 (VoicePanelRiveMicButton)
+// Module 11063 (VoicePanelRiveMicButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MicrophoneRive2 from "MicrophoneRive" /* 4880 */;
+import MicrophoneRive2 from "MicrophoneRive" /* 4881 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -61,9 +61,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     }
     const tmp8 = jsx;
     if (muted) {
-      MicrophoneIcon = tmp(5020).MicrophoneSlashIcon;
+      MicrophoneIcon = tmp(5021).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp(10891).MicrophoneIcon;
+      MicrophoneIcon = tmp(11064).MicrophoneIcon;
     }
     const obj4 = { color };
     const tmp8Result = tmp8(MicrophoneIcon, obj4);
@@ -87,9 +87,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     str = "Off";
   }
   if (muted) {
-    let MicrophoneIcon = tmp3(5020).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(5021).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(10891).MicrophoneIcon;
+    MicrophoneIcon = tmp3(11064).MicrophoneIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 });

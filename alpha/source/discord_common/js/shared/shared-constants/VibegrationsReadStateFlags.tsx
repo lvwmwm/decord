@@ -1,9 +1,9 @@
-// Module ID: 16442
-// Function ID: 16443
+// Module ID: 16561
+// Function ID: 16562
 // Name: VibegrationsReadStateFlags
 // Dependencies: [2]
 
-// Module 16442 (VibegrationsReadStateFlags)
+// Module 16561 (VibegrationsReadStateFlags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/VibegrationsReadStateFlags.tsx");

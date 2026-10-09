@@ -1,10 +1,10 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 13062
+// Function ID: 13063
 // Name: useIsUserProfileObfuscated
-// Dependencies: [7309, 558, 576, 504, 2]
+// Dependencies: [7314, 558, 576, 504, 2]
 
-// Module 12980 (useIsUserProfileObfuscated)
-import UserProfileStore from "UserProfileStore" /* 7309 */;
+// Module 13062 (useIsUserProfileObfuscated)
+import UserProfileStore from "UserProfileStore" /* 7314 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

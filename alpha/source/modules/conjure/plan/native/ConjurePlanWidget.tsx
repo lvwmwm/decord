@@ -1,21 +1,21 @@
-// Module ID: 16964
-// Function ID: 16965
+// Module ID: 17096
+// Function ID: 17097
 // Name: ConjurePlanWidget
-// Dependencies: [19, 502, 21, 5090, 587, 558, 576, 8343, 504, 7314, 5086, 1126, 3827, 13099, 5373, 2]
+// Dependencies: [19, 502, 21, 5091, 587, 558, 576, 8351, 504, 7319, 5087, 1126, 3827, 13192, 5374, 2]
 
-// Module 16964 (ConjurePlanWidget)
+// Module 17096 (ConjurePlanWidget)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7314 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8343 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 13099 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7319 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8351 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 13192 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePla
     const self = this;
     const self2 = this;
     const obj2 = { applicationId };
-    const applicationWidget = new tmp(7314).ApplicationWidget(obj2);
+    const applicationWidget = new tmp(7319).ApplicationWidget(obj2);
     cResult[2] = applicationId;
     cResult[3] = applicationWidget;
     tmp11 = applicationWidget;
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePla
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3827.ove4zH) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
     const tmp17 = hasOwnProperty(Text, obj3);
     cResult[4] = tmp17;
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePla
           const _Symbol = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(_modDef3827.XcIrHx) };
-            const Text2 = tmp(5086).Text;
+            const Text2 = tmp(5087).Text;
             intl2 = tmp(1126).intl;
             const tmp24 = hasOwnProperty(Text2, obj4);
             cResult[13] = tmp24;
@@ -150,16 +150,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePla
     return applicationWidget;
   }, items1);
   const obj2 = { direction: "vertical", spacing: 4, children: items2 };
-  const Stack = applicationId(5373).Stack;
+  const Stack = applicationId(5374).Stack;
   const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3827.ove4zH) };
-  const Text = applicationId(5086).Text;
+  const Text = applicationId(5087).Text;
   intl = applicationId(1126).intl;
   items2 = [closure_5(Text, obj3), , ];
   const obj4 = { userId: stateFromStores, widget: memo, rendererProps, cardStyle: items3 };
   items3 = [tmp2.card, tmp.card];
   items2[1] = closure_5(UserProfileApplicationWidgetCardDefault, obj4);
   const obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(_modDef3827.XcIrHx) };
-  const Text2 = applicationId(5086).Text;
+  const Text2 = applicationId(5087).Text;
   intl2 = applicationId(1126).intl;
   items2[2] = closure_5(Text2, obj5);
   return closure_6(Stack, obj2);

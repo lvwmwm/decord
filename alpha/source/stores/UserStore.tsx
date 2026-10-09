@@ -1,24 +1,24 @@
-// Module ID: 1389
-// Function ID: 1390
+// Module ID: 1390
+// Function ID: 1391
 // Name: UserStore
-// Dependencies: [1390, 1403, 502, 1084, 1085, 1391, 1405, 1400, 1984, 1985, 1406, 1410, 1411, 1412, 1402, 12, 1996, 1997, 1387, 2]
+// Dependencies: [1391, 1404, 502, 1084, 1085, 1392, 1406, 1401, 1985, 1986, 1407, 1411, 1412, 1413, 1403, 12, 1997, 1998, 1388, 2]
 
-// Module 1389 (UserStore)
+// Module 1390 (UserStore)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import UserStoreUtils from "UserStoreUtils" /* 1400 */;
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1405 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1406 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1410 */;
-import PremiumStateUtils from "PremiumStateUtils" /* 1411 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1984 */;
-import mappers from "mappers" /* 1985 */;
-import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1996 */;
-import Server from "Server" /* 1997 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1390 */;
-import UserRecord from "UserRecord" /* 1403 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import UserStoreUtils from "UserStoreUtils" /* 1401 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1406 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1411 */;
+import PremiumStateUtils from "PremiumStateUtils" /* 1412 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1985 */;
+import mappers from "mappers" /* 1986 */;
+import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 1997 */;
+import Server from "Server" /* 1998 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1391 */;
+import UserRecord from "UserRecord" /* 1404 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
 import Constants from "Constants" /* 1085 */;
@@ -56,7 +56,7 @@ function mergeUserPrimaryGuild(id, primary_guild) {
     if (tmp8) {
       let flag = null == tmp2.primaryGuild || null != primary_guild.primary_guild;
       if (flag) {
-        const tmp5Result = tmp5(1405);
+        const tmp5Result = tmp5(1406);
         obj[id].primaryGuild = tmp5Result.ensureUserPrimaryGuild(primary_guild.primary_guild);
         tmp[obj[id].id] = obj[id];
         closure_12 = closure_12 + 1;
@@ -155,7 +155,7 @@ function transformUser(mfa_enabled) {
   }
   const restricted_schedule = mfa_enabled.restricted_schedule;
   if (undefined !== restricted_schedule) {
-    const RestrictedScheduleRecord = tmp2(1412).RestrictedScheduleRecord;
+    const RestrictedScheduleRecord = tmp2(1413).RestrictedScheduleRecord;
     let fromServerResult = RestrictedScheduleRecord.fromServer(restricted_schedule);
     if (fromServerResult == null) {
       fromServerResult = null;
@@ -265,7 +265,7 @@ function mergeUser(user, arg1) {
           const obj5 = PrimaryGuildUtils;
           const tmp18 = require;
           if (obj5.isUserPrimaryGuildEqual(obj[user.id].primaryGuild, user.primary_guild) !== true) {
-            const tmp18Result = tmp18(1405);
+            const tmp18Result = tmp18(1406);
             user.primary_guild = tmp18Result.ensureUserPrimaryGuild(user.primary_guild);
           }
         }
@@ -339,11 +339,11 @@ function mergeUsersFromMessage(message, arg1) {
   }
   if (null != users) {
     for (const key10045 in resolved.users) {
-      let tmp23 = resolved.users[key10045];
-      if (tmp23.id === AuthenticationStore.getId()) {
+      let tmp27 = resolved.users[key10045];
+      if (tmp27.id === AuthenticationStore.getId()) {
         continue;
       } else {
-        let tmp15 = mergeUser(tmp23, arg1);
+        let tmp15 = mergeUser(tmp27, arg1);
         continue;
       }
       continue;
@@ -357,6 +357,10 @@ function mergeUsersFromMessage(message, arg1) {
   const tmp17 = null != user2 && message.interaction_metadata.user.id !== AuthenticationStore.getId();
   if (tmp17) {
     mergeUser(message.interaction_metadata.user, arg1);
+  }
+  const tmp21 = null != message.actor && message.actor.id !== AuthenticationStore.getId();
+  if (tmp21) {
+    mergeUser(message.actor, arg1);
   }
   if (null != message.message_snapshots) {
     const message_snapshots = message.message_snapshots;
@@ -727,18 +731,25 @@ function handleFetchUsersForGuildEventSuccess(arg0) {
     }
   });
 }
+function mergeUsersFromNotificationCenterItem(other_user) {
+  if (null != other_user.other_user) {
+    mergeUser(other_user.other_user);
+  }
+  if (null != other_user.message) {
+    mergeUsersFromMessage(other_user.message, true);
+  }
+}
 function handleLoadNotificationCenterItems(items) {
   items = items.items;
-  const item = items.forEach((other_user) => {
-    if (null != other_user.other_user) {
-      mergeUser(other_user.other_user);
-    }
-  });
+  const item = items.forEach(mergeUsersFromNotificationCenterItem);
 }
 function handleNotificationCenterItemCreate(item) {
   item = item.item;
   if (null != item.other_user) {
     mergeUser(item.other_user);
+  }
+  if (null != item.message) {
+    mergeUsersFromMessage(item.message, true);
   }
 }
 function handleIncomingMessage(message) {
@@ -755,7 +766,7 @@ function handleIncomingMessage(message) {
       if (flag) {
         id = obj2.getId();
         set = tmp6.set;
-        const tmp2Result = tmp2(1402);
+        const tmp2Result = tmp2(1403);
         tmp5[id] = set("flags", tmp2Result.setFlag(tmp6.flags, metroImportDefault.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
       }
@@ -792,7 +803,7 @@ function handlePresenceUpdates(updates) {
     if (null == tmp2) {
       return false;
     } else {
-      const reduced = closure_44.reduce((acc, item) => {
+      const reduced = closure_45.reduce((acc, item) => {
         const user = item.user;
         let tmp2 = acc;
         const tmp = item;
@@ -1215,7 +1226,7 @@ let closure_10 = PremiumConstants.UNSELECTED_PREMIUM_TYPE_OVERRIDE;
 let users = {};
 let closure_12 = 0;
 let c13 = "47835198259242069";
-let closure_44 = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild"];
+let closure_45 = ["username", "avatar", "global_name", "discriminator", "bot", "primary_guild"];
 class UserStore extends MobileCacheSnapshotStore {
   constructor() {
     const obj = {

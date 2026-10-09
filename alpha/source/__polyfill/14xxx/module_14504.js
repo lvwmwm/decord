@@ -1,20 +1,17 @@
 // Module ID: 14504
 // Function ID: 14505
-// Dependencies: []
-// Exports: default
+// Dependencies: [14485, 14505]
 
 // Module 14504
+import _mod14485 from "module_14485" /* 14485 */;
 
-export default () => (arg0) => {
-  let closure_0 = arg0;
-  let obj = {
-    features: {
-      apiResponse(request, response, tmp4Result) {
-        const obj = { request, response, duration: tmp4Result };
-        const tmp = response && response.status && typeof response.status === "number" && response.status >= 200 && response.status <= 299;
-        closure_0.send("api.response", obj, !tmp);
-      }
-    }
-  };
-  return obj;
+let tmp2;
+const _mod14505 = tmp2(14505);
+
+export default (arg0, arg1) => {
+  let tmp4;
+  if (!_mod14485(arg0[arg1])) {
+    tmp4 = _mod14505(tmp);
+  }
+  return tmp4;
 };

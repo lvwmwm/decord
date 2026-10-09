@@ -1,18 +1,18 @@
-// Module ID: 18184
-// Function ID: 18185
+// Module ID: 18346
+// Function ID: 18347
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 8614, 2118, 8038, 1085, 21, 558, 576, 4778, 587, 504, 4712, 8613, 1097, 18126, 18173, 18172, 1126, 5086, 6882, 18182, 6267, 5373, 2127, 18170, 2]
+// Dependencies: [32, 19, 17, 8622, 2118, 8046, 1085, 21, 558, 576, 4779, 587, 504, 4714, 8621, 1097, 18288, 18335, 18334, 1126, 5087, 6163, 6889, 18344, 6269, 5374, 2127, 18332, 2]
 
-// Module 18184 (FinishingTouchesScreen)
+// Module 18346 (FinishingTouchesScreen)
+import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4714 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8621 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8622 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8038 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8046 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,28 +21,34 @@ import size from "module_2" /* 2 */;
 let everyoneRole, set;
 
 let c10;
+let c9;
 let closure_12;
 let closure_14;
 let closure_15;
 let closure_16;
-let closure_17;
 let map1;
-let metroImportDefault;
-let metroRequire;
 let unpackModuleId;
-({ Image: metroRequire, View: metroImportDefault } = react_native);
-({ CREATE_NEW_CHANNEL_VALUE: c10, MODERATOR_PERMISSIONS: unpackModuleId, MODERATOR_PERMISSIONS_FLAG: closure_12 } = PublicGuildsConstants);
-({ GuildFeatures: map1, HelpdeskArticles: closure_14, UserNotificationSettings: closure_15 } = Constants);
-({ jsx: closure_16, jsxs: closure_17 } = Fragment);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingTouchesScreen() {
+const View = react_native.View;
+({ CREATE_NEW_CHANNEL_VALUE: c9, MODERATOR_PERMISSIONS: c10, MODERATOR_PERMISSIONS_FLAG: unpackModuleId } = PublicGuildsConstants);
+({ GuildFeatures: closure_12, HelpdeskArticles: map1, UserNotificationSettings: closure_14 } = Constants);
+({ jsx: closure_15, jsxs: closure_16 } = Fragment);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingTouchesScreen() {
   let defaultMessageNotifications;
   let guild;
-  let intl;
+  let intl2;
   let items1;
+  let items2;
+  let items3;
+  let items4;
+  let obj12;
   let props;
-  let tmp14;
   let tmp15;
-  let tmp19;
+  let tmp16;
+  let tmp17;
+  let tmp21;
+  let tmp22;
+  let tmp5Result;
+  let tmp5Result2;
   let tmp7;
   let tmp8;
   let tmp = guild;
@@ -50,12 +56,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   const cResult = obj.c(59);
   let obj2 = react;
   const ref = react.useRef(null);
-  let obj3 = guild(4778);
+  let obj3 = guild(4779);
   const token = obj3.useToken(defaultMessageNotifications(587).modules.mobile.TABLE_ROW_PADDING);
-  const tmp5 = defaultMessageNotifications;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [GuildSettingsStore];
-    const fn = function f() {
+    const fn = function b() {
       return props.getProps();
     };
     cResult[0] = items;
@@ -74,783 +79,377 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   }
   let tmp11 = _slicedToArray;
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
-  [tmp14, r10056] = obj2.useState(false);
-  _slicedToArray(obj2.useState(false), 2);
+  const ONLY_MENTIONS = constants2.ONLY_MENTIONS;
+  [tmp15, tmp16] = _slicedToArray(obj2.useState(false), 2);
+  const tmp14 = _slicedToArray(obj2.useState(false), 2);
   if (cResult[2] !== guild) {
-    const someResult = closure_11.some((item) => {
+    const someResult = closure_10.some((item) => {
       const obj = PermissionUtilsAll;
       return obj.canEveryone(item, guild);
     });
     cResult[2] = guild;
     cResult[3] = someResult;
-    tmp15 = someResult;
+    tmp17 = someResult;
   } else {
-    tmp15 = cResult[3];
+    tmp17 = cResult[3];
   }
-  [tmp19, r10069] = tmp11(obj2.useState(!tmp15), 2);
-  tmp11(obj2.useState(!tmp15), 2);
-  const first1 = tmp11(obj2.useState(tmp19), 1)[0];
+  [tmp21, tmp22] = tmp11(obj2.useState(!tmp17), 2);
+  tmp11(obj2.useState(!tmp17), 2);
+  const first1 = tmp11(obj2.useState(tmp21), 1)[0];
   let prop1;
-  const tmp21 = cResult[4];
+  const tmp24 = cResult[4];
   if (guild != null) {
     prop1 = guild.defaultMessageNotifications;
   }
-  if (tmp21 === prop1) {
-    let tmp30;
-    let tmp35;
-    let tmp39;
+  if (tmp24 === prop1) {
+    let tmp26;
+    let tmp28;
+    let tmp32;
+    let tmp34;
+    let tmp37;
+    let tmp40;
+    let tmp42;
+    let tmp45;
+    let tmp47;
+    if (cResult[5] === defaultMessageNotifications) {
+      tmp26 = cResult[6];
+    }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
+      const fn2 = function k(features) {
+        let publicUpdatesChannelId;
+        let rulesChannelId;
+        everyoneRole = undefined;
+        if (null != features) {
+          everyoneRole = everyoneRole.getEveryoneRole(features);
+        }
+        if (null != everyoneRole) {
+          const _Set = Set;
+          const self = this;
+          const self2 = this;
+          set = new Set(features.features);
+          set.add(constants.COMMUNITY);
+          const obj3 = BigFlagUtilsAll;
+          const removeResult = obj3.remove(everyoneRole.permissions, closure_1_11);
+          const obj2 = { permissions: removeResult };
+          const merged = Object.assign(everyoneRole);
+          const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
+          rulesChannelId = features.rulesChannelId;
+          const saveGuild = first(dependencyMap[14]).saveGuild;
+          const id = features.id;
+          first(dependencyMap[14]);
+          const tmp11 = dependencyMap;
+          if (rulesChannelId == null) {
+            rulesChannelId = closure_1_9;
           }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
+          ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
+          if (publicUpdatesChannelId == null) {
+            publicUpdatesChannelId = closure_1_9;
+          }
+          saveGuild(id, obj4);
+          if (removeResult !== everyoneRole.permissions) {
+            const items = [obj2];
+            const obj = guild(tmp11[16]);
+            obj.saveRoleSettings(features.id, items);
           }
         }
-      }
-      cResult[7] = V;
+      };
+      cResult[7] = fn2;
+      tmp28 = fn2;
     } else {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
+      tmp28 = cResult[7];
     }
-    const tmp25 = tmp5(18173)();
-    const tmpResult2 = tmp(18172);
+    const tmp29 = defaultMessageNotifications(18335)();
+    const tmpResult2 = tmp(18334);
     const enableCommunitySharedStyles = tmpResult2.useEnableCommunitySharedStyles();
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
-      cResult[8] = obj6.string(tmp(1126).t.XGl4ba);
-      const stringResult = obj6.string(tmp(1126).t.XGl4ba);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(tmp(1126).t.XGl4ba);
+      cResult[8] = stringResult;
+      tmp32 = stringResult;
     } else {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
+      tmp32 = cResult[8];
     }
     const _Symbol3 = Symbol;
     const content = enableCommunitySharedStyles.content;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
-      let obj4 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl.formatToPlainString(tmp(1126).t.tInpJj, { number: 3, total: 3 }) };
-      const Text = tmp(5086).Text;
-      intl = tmp(1126).intl;
-      const tmp31 = closure_16(Text, obj4);
-      cResult[9] = tmp31;
-      tmp30 = tmp31;
+      let obj4 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(tmp(1126).t.tInpJj, { number: 3, total: 3 }) };
+      const Text = tmp(5087).Text;
+      intl2 = tmp(1126).intl;
+      const tmp36 = closure_15(Text, obj4);
+      cResult[9] = tmp36;
+      tmp34 = tmp36;
     } else {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
+      tmp34 = cResult[9];
     }
-    if (cResult[10] !== tmp25.finishingTouches) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
-      const obj5 = { resizeMode: "contain", source: tmp25.finishingTouches };
-      cResult[10] = tmp25.finishingTouches;
-      cResult[11] = closure_16(closure_6, obj5);
-      const tmp34 = closure_16(closure_6, obj5);
+    if (cResult[10] !== tmp29.finishingTouches) {
+      const obj5 = { resizeMode: "contain", source: tmp29.finishingTouches };
+      const tmp39 = closure_15(defaultMessageNotifications(6163), obj5);
+      cResult[10] = tmp29.finishingTouches;
+      cResult[11] = tmp39;
+      tmp37 = tmp39;
     } else {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
+      tmp37 = cResult[11];
     }
     const _Symbol4 = Symbol;
     const header = enableCommunitySharedStyles.header;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
-      const stringResult1 = obj9.string(tmp(1126).t["Pj/s/a"]);
+      const intl3 = tmp(1126).intl;
+      const stringResult1 = intl3.string(tmp(1126).t["Pj/s/a"]);
       cResult[12] = stringResult1;
-      tmp35 = stringResult1;
+      tmp40 = stringResult1;
     } else {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
+      tmp40 = cResult[12];
     }
     if (cResult[13] !== enableCommunitySharedStyles.header) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
-      const obj7 = { style: header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp35 };
+      const obj6 = { style: header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp40 };
+      const tmp44 = closure_15(tmp(5087).Heading, obj6);
       cResult[13] = enableCommunitySharedStyles.header;
-      cResult[14] = closure_16(tmp(5086).Heading, obj7);
-      const tmp38 = closure_16(tmp(5086).Heading, obj7);
+      cResult[14] = tmp44;
+      tmp42 = tmp44;
     } else {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
+      tmp42 = cResult[14];
     }
     const _Symbol5 = Symbol;
     const description = enableCommunitySharedStyles.description;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
-      const stringResult2 = obj11.string(tmp(1126).t["IL7/no"]);
+      const intl4 = tmp(1126).intl;
+      const stringResult2 = intl4.string(tmp(1126).t["IL7/no"]);
       cResult[15] = stringResult2;
-      tmp39 = stringResult2;
+      tmp45 = stringResult2;
     } else {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
+      tmp45 = cResult[15];
     }
     if (cResult[16] !== enableCommunitySharedStyles.description) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
-      const obj8 = { style: description, variant: "text-md/medium", color: "text-subtle", children: tmp39 };
+      const obj7 = { style: description, variant: "text-md/medium", color: "text-subtle", children: tmp45 };
+      const tmp49 = closure_15(tmp(5087).Text, obj7);
       cResult[16] = enableCommunitySharedStyles.description;
-      cResult[17] = closure_16(tmp(5086).Text, obj8);
-      const tmp42 = closure_16(tmp(5086).Text, obj8);
+      cResult[17] = tmp49;
+      tmp47 = tmp49;
     } else {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
-          }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
-            }
-          }
-        }
-      }
+      tmp47 = cResult[17];
     }
     if (cResult[18] === enableCommunitySharedStyles.content) {
-      class V {
-        constructor(features) {
-          let publicUpdatesChannelId;
-          let rulesChannelId;
-          everyoneRole = undefined;
-          if (null != features) {
-            everyoneRole = everyoneRole.getEveryoneRole(features);
+      if (cResult[19] === tmp42) {
+        if (cResult[20] === tmp47) {
+          let tmp50;
+          let tmp54;
+          let tmp55;
+          if (cResult[21] === tmp37) {
+            tmp50 = cResult[22];
           }
-          if (null != everyoneRole) {
-            const _Set = Set;
-            const self = this;
-            const self2 = this;
-            set = new Set(features.features);
-            set.add(constants.COMMUNITY);
-            const obj3 = BigFlagUtilsAll;
-            const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-            const obj2 = { permissions: removeResult };
-            const merged = Object.assign(everyoneRole);
-            const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-            rulesChannelId = features.rulesChannelId;
-            const saveGuild = first(dependencyMap[14]).saveGuild;
-            const id = features.id;
-            first(dependencyMap[14]);
-            const tmp11 = dependencyMap;
-            if (rulesChannelId == null) {
-              rulesChannelId = closure_1_10;
-            }
-            ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-            if (publicUpdatesChannelId == null) {
-              publicUpdatesChannelId = closure_1_10;
-            }
-            saveGuild(id, obj4);
-            if (removeResult !== everyoneRole.permissions) {
-              const items = [obj2];
-              const obj = guild(tmp11[16]);
-              obj.saveRoleSettings(features.id, items);
+          if (cResult[23] !== token) {
+            const obj8 = { paddingHorizontal: token };
+            cResult[23] = token;
+            cResult[24] = obj8;
+            tmp54 = obj8;
+          } else {
+            tmp54 = cResult[24];
+          }
+          const _Symbol6 = Symbol;
+          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
+            const intl5 = tmp(1126).intl;
+            const obj9 = {
+              infoHook() {
+                          return null;
+                        }
+            };
+            const formatResult = intl5.format(tmp(1126).t.K8Eg4P, obj9);
+            cResult[25] = formatResult;
+            tmp55 = formatResult;
+          } else {
+            tmp55 = cResult[25];
+          }
+          let prop2;
+          if (guild != null) {
+            prop2 = guild.defaultMessageNotifications;
+          }
+          if (cResult[26] === defaultMessageNotifications === ONLY_MENTIONS) {
+            if (cResult[27] === tmp26) {
+              let tmp60;
+              if (cResult[28] === prop2 === constants2.ONLY_MENTIONS) {
+                tmp60 = cResult[29];
+              }
+              if (cResult[30] === defaultMessageNotifications === ONLY_MENTIONS) {
+                let tmp63;
+                let tmp66;
+                if (cResult[31] === tmp60) {
+                  tmp63 = cResult[32];
+                }
+                const _Symbol7 = Symbol;
+                if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
+                  const intl6 = tmp(1126).intl;
+                  const obj10 = {
+                    infoHook() {
+                                      return null;
+                                    }
+                  };
+                  const formatResult1 = intl6.format(tmp(1126).t.v8qCoG, obj10);
+                  cResult[33] = formatResult1;
+                  tmp66 = formatResult1;
+                } else {
+                  tmp66 = cResult[33];
+                }
+                if (cResult[34] === first1) {
+                  let tmp68;
+                  if (cResult[35] === tmp21) {
+                    tmp68 = cResult[36];
+                  }
+                  if (cResult[37] === first1) {
+                    let tmp71;
+                    if (cResult[38] === tmp68) {
+                      tmp71 = cResult[39];
+                    }
+                    if (cResult[40] === tmp63) {
+                      let tmp74;
+                      let tmp77;
+                      let tmp79;
+                      let tmp81;
+                      if (cResult[41] === tmp71) {
+                        tmp74 = cResult[42];
+                      }
+                      const _Symbol8 = Symbol;
+                      if (cResult[43] === Symbol.for("react.memo_cache_sentinel")) {
+                        const intl7 = tmp(1126).intl;
+                        const stringResult3 = intl7.string(tmp(1126).t["k+b2Cf"]);
+                        cResult[43] = stringResult3;
+                        tmp77 = stringResult3;
+                      } else {
+                        tmp77 = cResult[43];
+                      }
+                      const _Symbol9 = Symbol;
+                      if (cResult[44] === Symbol.for("react.memo_cache_sentinel")) {
+                        const intl8 = tmp(1126).intl;
+                        const stringResult4 = intl8.string(tmp(1126).t["9AG3wI"]);
+                        cResult[44] = stringResult4;
+                        tmp79 = stringResult4;
+                      } else {
+                        tmp79 = cResult[44];
+                      }
+                      if (cResult[45] !== tmp15) {
+                        const obj11 = { title: tmp77, hasIcons: false, children: closure_15(tmp(6889).TableSwitchRow, obj12) };
+                        const TableRowGroup = tmp(6269).TableRowGroup;
+                        obj12 = { label: tmp79, value: tmp15, onValueChange: tmp16 };
+                        const tmp83 = closure_15(TableRowGroup, obj11);
+                        cResult[45] = tmp15;
+                        cResult[46] = tmp83;
+                        tmp81 = tmp83;
+                      } else {
+                        tmp81 = cResult[46];
+                      }
+                      if (cResult[47] === tmp54) {
+                        if (cResult[48] === tmp74) {
+                          let tmp84;
+                          let tmp87;
+                          let tmp91;
+                          if (cResult[49] === tmp81) {
+                            tmp84 = cResult[50];
+                          }
+                          const _Symbol10 = Symbol;
+                          const formHint = enableCommunitySharedStyles.formHint;
+                          if (cResult[51] === Symbol.for("react.memo_cache_sentinel")) {
+                            const intl9 = tmp(1126).intl;
+                            const format = intl9.format;
+                            const obj13 = { communityGuidelines: tmp5Result.getArticleURL(constants.PUBLIC_GUILD_GUILDLINES), typesOfGuilds: tmp5Result2.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };
+                            const prop3 = tmp(1126).t["BwbW/Q"];
+                            tmp5Result = defaultMessageNotifications(2127);
+                            tmp5Result2 = defaultMessageNotifications(2127);
+                            const formatResult2 = format(prop3, obj13);
+                            cResult[51] = formatResult2;
+                            tmp87 = formatResult2;
+                          } else {
+                            tmp87 = cResult[51];
+                          }
+                          if (cResult[52] !== enableCommunitySharedStyles.formHint) {
+                            const obj14 = { style: formHint, variant: "text-xs/medium", color: "text-subtle", children: tmp87 };
+                            const tmp93 = closure_15(tmp(5087).Text, obj14);
+                            cResult[52] = enableCommunitySharedStyles.formHint;
+                            cResult[53] = tmp93;
+                            tmp91 = tmp93;
+                          } else {
+                            tmp91 = cResult[53];
+                          }
+                          if (cResult[54] === tmp50) {
+                            if (cResult[55] === tmp84) {
+                              if (cResult[56] === tmp91) {
+                                let tmp94;
+                                if (cResult[57] === !tmp15) {
+                                  tmp94 = cResult[58];
+                                }
+                                return tmp94;
+                              }
+                            }
+                          }
+                          const obj15 = { headerRef: ref, currentStep: tmp(18332).EnableCommunityModalSteps.STEP_3, onSuccess: tmp28, disableNextStep: !tmp15, buttonText: tmp32, children: items1 };
+                          const EnableCommunityModalScreen = tmp(18332).EnableCommunityModalScreen;
+                          items1 = [tmp50, tmp84, tmp91];
+                          const tmp96 = closure_16(EnableCommunityModalScreen, obj15);
+                          cResult[54] = tmp50;
+                          cResult[55] = tmp84;
+                          cResult[56] = tmp91;
+                          cResult[57] = !tmp15;
+                          cResult[58] = tmp96;
+                          tmp94 = tmp96;
+                        }
+                      }
+                      const obj16 = { spacing: 24, style: tmp54, children: items2 };
+                      items2 = [tmp74, tmp81];
+                      const tmp86 = closure_16(tmp(5374).Stack, obj16);
+                      cResult[47] = tmp54;
+                      cResult[48] = tmp74;
+                      cResult[49] = tmp81;
+                      cResult[50] = tmp86;
+                      tmp84 = tmp86;
+                    }
+                    const obj17 = { hasIcons: false, children: items3 };
+                    items3 = [tmp63, tmp71];
+                    const tmp76 = closure_16(tmp(6269).TableRowGroup, obj17);
+                    cResult[40] = tmp63;
+                    cResult[41] = tmp71;
+                    cResult[42] = tmp76;
+                    tmp74 = tmp76;
+                  }
+                  const obj18 = { formSwitchDisabled: first1, children: tmp68 };
+                  const tmp73 = closure_15(defaultMessageNotifications(18344), obj18);
+                  cResult[37] = first1;
+                  cResult[38] = tmp68;
+                  cResult[39] = tmp73;
+                  tmp71 = tmp73;
+                }
+                const obj19 = { label: tmp66, value: tmp21, disabled: first1, onValueChange: tmp22 };
+                const tmp70 = closure_15(tmp(6889).TableSwitchRow, obj19);
+                cResult[34] = first1;
+                cResult[35] = tmp21;
+                cResult[36] = tmp70;
+                tmp68 = tmp70;
+              }
+              const obj20 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: tmp60 };
+              const tmp65 = closure_15(defaultMessageNotifications(18344), obj20);
+              cResult[30] = defaultMessageNotifications === ONLY_MENTIONS;
+              cResult[31] = tmp60;
+              cResult[32] = tmp65;
+              tmp63 = tmp65;
             }
           }
+          const obj21 = { label: tmp55, value: prop2 === constants2.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: tmp26 };
+          const tmp62 = closure_15(tmp(6889).TableSwitchRow, obj21);
+          cResult[26] = defaultMessageNotifications === ONLY_MENTIONS;
+          cResult[27] = tmp26;
+          cResult[28] = prop2 === constants2.ONLY_MENTIONS;
+          cResult[29] = tmp62;
+          tmp60 = tmp62;
         }
       }
     }
-    const obj10 = { style: content, children: items1 };
-    items1 = [tmp30, tmp32, tmp37, tmp41];
+    const obj22 = { style: content, children: items4 };
+    items4 = [tmp34, tmp37, tmp42, tmp47];
+    const tmp53 = closure_16(View, obj22);
     cResult[18] = enableCommunitySharedStyles.content;
-    cResult[19] = tmp37;
-    cResult[20] = tmp41;
-    cResult[21] = tmp32;
-    const tmp46 = closure_17(closure_7, obj10);
-    class U {
+    cResult[19] = tmp42;
+    cResult[20] = tmp47;
+    cResult[21] = tmp37;
+    class A {
       constructor(arg0) {
         let tmp = arg0;
         if (tmp) {
@@ -874,51 +473,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
         }
       }
     }
-    cResult[22] = tmp46;
+    cResult[22] = tmp53;
+    tmp50 = tmp53;
   }
+  let prop4;
   if (guild != null) {
-    class V {
-      constructor(features) {
-        let publicUpdatesChannelId;
-        let rulesChannelId;
-        everyoneRole = undefined;
-        if (null != features) {
-          everyoneRole = everyoneRole.getEveryoneRole(features);
-        }
-        if (null != everyoneRole) {
-          const _Set = Set;
-          const self = this;
-          const self2 = this;
-          set = new Set(features.features);
-          set.add(constants.COMMUNITY);
-          const obj3 = BigFlagUtilsAll;
-          const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
-          const obj2 = { permissions: removeResult };
-          const merged = Object.assign(everyoneRole);
-          const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
-          rulesChannelId = features.rulesChannelId;
-          const saveGuild = first(dependencyMap[14]).saveGuild;
-          const id = features.id;
-          first(dependencyMap[14]);
-          const tmp11 = dependencyMap;
-          if (rulesChannelId == null) {
-            rulesChannelId = closure_1_10;
-          }
-          ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
-          if (publicUpdatesChannelId == null) {
-            publicUpdatesChannelId = closure_1_10;
-          }
-          saveGuild(id, obj4);
-          if (removeResult !== everyoneRole.permissions) {
-            const items = [obj2];
-            const obj = guild(tmp11[16]);
-            obj.saveRoleSettings(features.id, items);
-          }
-        }
-      }
-    }
+    prop4 = guild.defaultMessageNotifications;
   }
-  class U {
+  class A {
     constructor(arg0) {
       let tmp = arg0;
       if (tmp) {
@@ -942,9 +504,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
       }
     }
   }
-  cResult[4] = undefined;
+  cResult[4] = prop4;
   cResult[5] = defaultMessageNotifications;
-  cResult[6] = U;
+  cResult[6] = A;
+  tmp26 = A;
 }) : (function FinishingTouchesScreen() {
   let TableSwitchRow;
   let TableSwitchRow2;
@@ -979,13 +542,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f134059 = (item) => {
+  const f134393 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
   let obj = react;
   const ref = react.useRef(null);
-  let obj2 = guild(4778);
+  let obj2 = guild(4779);
   const tmp4 = defaultMessageNotifications;
   const token = obj2.useToken(defaultMessageNotifications(587).modules.mobile.TABLE_ROW_PADDING);
   let obj3 = guild(504);
@@ -997,13 +560,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     prop = guild.defaultMessageNotifications;
   }
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
-  const ONLY_MENTIONS = constants3.ONLY_MENTIONS;
+  const ONLY_MENTIONS = constants2.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_11.some(f134059)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_11.some(f134059)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_10.some(f134393)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_10.some(f134393)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
-  const tmp8 = constants3;
+  const tmp8 = constants2;
   const useCallback = obj.useCallback;
   if (guild != null) {
     prop1 = guild.defaultMessageNotifications;
@@ -1045,7 +608,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
       set = new Set(features.features);
       set.add(constants.COMMUNITY);
       const obj3 = BigFlagUtilsAll;
-      const removeResult = obj3.remove(everyoneRole.permissions, closure_1_12);
+      const removeResult = obj3.remove(everyoneRole.permissions, closure_1_11);
       const obj2 = { permissions: removeResult };
       const merged = Object.assign(everyoneRole);
       const obj4 = { features: set, rulesChannelId, safetyAlertsChannelId: null, verificationLevel: null, explicitContentFilter: null, publicUpdatesChannelId, defaultMessageNotifications: features.defaultMessageNotifications };
@@ -1055,11 +618,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
       first(dependencyMap[14]);
       const tmp11 = dependencyMap;
       if (rulesChannelId == null) {
-        rulesChannelId = closure_1_10;
+        rulesChannelId = closure_1_9;
       }
       ({ safetyAlertsChannelId: obj5.safetyAlertsChannelId, verificationLevel: obj5.verificationLevel, explicitContentFilter: obj5.explicitContentFilter, publicUpdatesChannelId } = features);
       if (publicUpdatesChannelId == null) {
-        publicUpdatesChannelId = closure_1_10;
+        publicUpdatesChannelId = closure_1_9;
       }
       saveGuild(id, obj4);
       if (removeResult !== everyoneRole.permissions) {
@@ -1069,35 +632,35 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
       }
     }
   }, []);
-  const tmp20 = tmp4(18173)();
-  const tmp2Result = guild(18172);
+  const tmp20 = tmp4(18335)();
+  const tmp2Result = guild(18334);
   const enableCommunitySharedStyles = tmp2Result.useEnableCommunitySharedStyles();
-  let obj4 = { headerRef: ref, currentStep: tmp2(18170).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1126).t.XGl4ba), children: items3 };
-  const EnableCommunityModalScreen = tmp2(18170).EnableCommunityModalScreen;
+  let obj4 = { headerRef: ref, currentStep: tmp2(18332).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1126).t.XGl4ba), children: items3 };
+  const EnableCommunityModalScreen = tmp2(18332).EnableCommunityModalScreen;
   intl = tmp2(1126).intl;
   const obj5 = { style: enableCommunitySharedStyles.content, children: items2 };
   const obj6 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(guild(1126).t.tInpJj, { number: 3, total: 3 }) };
-  const Text = tmp2(5086).Text;
+  const Text = tmp2(5087).Text;
   intl2 = tmp2(1126).intl;
-  items2 = [closure_16(Text, obj6), , , ];
+  items2 = [closure_15(Text, obj6), , , ];
   const obj7 = { resizeMode: "contain", source: tmp20.finishingTouches };
-  items2[1] = closure_16(closure_6, obj7);
+  items2[1] = closure_15(tmp4(6163), obj7);
   const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl3.string(guild(1126).t["Pj/s/a"]) };
-  const Heading = tmp2(5086).Heading;
+  const Heading = tmp2(5087).Heading;
   intl3 = tmp2(1126).intl;
-  items2[2] = closure_16(Heading, obj8);
+  items2[2] = closure_15(Heading, obj8);
   const obj9 = { style: enableCommunitySharedStyles.description, variant: "text-md/medium", color: "text-subtle", children: intl4.string(guild(1126).t["IL7/no"]) };
-  const Text2 = tmp2(5086).Text;
+  const Text2 = tmp2(5087).Text;
   intl4 = tmp2(1126).intl;
-  items2[3] = closure_16(Text2, obj9);
-  items3 = [closure_17(closure_7, obj5), , ];
+  items2[3] = closure_15(Text2, obj9);
+  items3 = [closure_16(View, obj5), , ];
   const obj10 = { spacing: 24, style: { paddingHorizontal: token }, children: items5 };
-  const Stack = tmp2(5373).Stack;
-  const TableRowGroup = tmp2(6267).TableRowGroup;
-  const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_16(TableSwitchRow, obj12) };
+  const Stack = tmp2(5374).Stack;
+  const TableRowGroup = tmp2(6269).TableRowGroup;
+  const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_15(TableSwitchRow, obj12) };
   obj12 = { label: intl5.format(guild(1126).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
-  const tmp4Result = tmp4(18182);
-  TableSwitchRow = tmp2(6882).TableSwitchRow;
+  const tmp4Result = tmp4(18344);
+  TableSwitchRow = tmp2(6889).TableSwitchRow;
   intl5 = tmp2(1126).intl;
   prop2 = undefined;
   obj13 = {
@@ -1109,38 +672,38 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     prop2 = guild.defaultMessageNotifications;
   }
   const obj14 = { hasIcons: false, children: items4 };
-  items4 = [closure_16(tmp4Result, obj11), ];
-  const obj15 = { formSwitchDisabled: first2, children: closure_16(TableSwitchRow2, obj16) };
+  items4 = [closure_15(tmp4Result, obj11), ];
+  const obj15 = { formSwitchDisabled: first2, children: closure_15(TableSwitchRow2, obj16) };
   obj16 = { label: intl6.format(guild(1126).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
-  const tmp4Result4 = tmp4(18182);
-  TableSwitchRow2 = tmp2(6882).TableSwitchRow;
+  const tmp4Result4 = tmp4(18344);
+  TableSwitchRow2 = tmp2(6889).TableSwitchRow;
   intl6 = tmp2(1126).intl;
   obj17 = {
     infoHook() {
       return null;
     }
   };
-  items4[1] = closure_16(tmp4Result4, obj15);
-  items5 = [closure_17(TableRowGroup, obj14), ];
-  const obj18 = { title: intl7.string(guild(1126).t["k+b2Cf"]), hasIcons: false, children: closure_16(TableSwitchRow3, obj19) };
-  const TableRowGroup2 = tmp2(6267).TableRowGroup;
+  items4[1] = closure_15(tmp4Result4, obj15);
+  items5 = [closure_16(TableRowGroup, obj14), ];
+  const obj18 = { title: intl7.string(guild(1126).t["k+b2Cf"]), hasIcons: false, children: closure_15(TableSwitchRow3, obj19) };
+  const TableRowGroup2 = tmp2(6269).TableRowGroup;
   intl7 = tmp2(1126).intl;
   obj19 = { label: intl8.string(guild(1126).t["9AG3wI"]), value: first1, onValueChange: tmp11 };
-  TableSwitchRow3 = tmp2(6882).TableSwitchRow;
+  TableSwitchRow3 = tmp2(6889).TableSwitchRow;
   intl8 = tmp2(1126).intl;
-  items5[1] = closure_16(TableRowGroup2, obj18);
-  items3[1] = closure_17(Stack, obj10);
+  items5[1] = closure_15(TableRowGroup2, obj18);
+  items3[1] = closure_16(Stack, obj10);
   const obj20 = { style: enableCommunitySharedStyles.formHint, variant: "text-xs/medium", color: "text-subtle", children: format(prop3, obj21) };
-  const Text3 = tmp2(5086).Text;
+  const Text3 = tmp2(5087).Text;
   const intl9 = tmp2(1126).intl;
   format = intl9.format;
-  obj21 = { communityGuidelines: tmp4Result5.getArticleURL(constants2.PUBLIC_GUILD_GUILDLINES), typesOfGuilds: tmp4Result6.getArticleURL(constants2.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };
+  obj21 = { communityGuidelines: tmp4Result5.getArticleURL(constants.PUBLIC_GUILD_GUILDLINES), typesOfGuilds: tmp4Result6.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };
   prop3 = tmp2(1126).t["BwbW/Q"];
   tmp4Result5 = tmp4(2127);
   tmp4Result6 = tmp4(2127);
-  items3[2] = closure_16(Text3, obj20);
-  return closure_17(EnableCommunityModalScreen, obj4);
+  items3[2] = closure_15(Text3, obj20);
+  return closure_16(EnableCommunityModalScreen, obj4);
 });
 const result = size.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/FinishingTouchesScreen.tsx");
 
-export default tmp6;
+export default tmp5;

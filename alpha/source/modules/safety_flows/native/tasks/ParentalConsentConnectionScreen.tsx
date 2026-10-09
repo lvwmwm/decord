@@ -1,25 +1,25 @@
-// Module ID: 18406
-// Function ID: 18407
+// Module ID: 18568
+// Function ID: 18569
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7247, 1389, 7248, 21, 5090, 587, 18397, 18396, 11555, 5392, 17932, 14965, 7711, 504, 14963, 18407, 18391, 4766, 1126, 2859, 5054, 14964, 1999, 18400, 11564, 5373, 18408, 11613, 18409, 5086, 2565, 14966, 2]
+// Dependencies: [5, 32, 19, 17, 7252, 1390, 7253, 21, 5091, 587, 18559, 18558, 11484, 5393, 18092, 15077, 7720, 504, 15075, 18569, 18553, 4768, 1126, 2859, 5055, 15076, 2000, 18562, 11493, 5374, 18570, 11546, 18571, 5087, 2565, 15078, 2]
 // Exports: default
 
-// Module 18406 (ParentalConsentConnectionScreen)
+// Module 18568 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef2859 from "module_2859" /* 2859 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14963 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7253 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15075 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7247 */;
-import UserStore from "UserStore" /* 1389 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7252 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_2;
@@ -242,7 +242,7 @@ export default function ParentalConsentConnectionScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2859.dMMSA0), body: intl2.format(_modDef2859["6GaRTu"], obj2) };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(14964, dependencyMap.paths);
+    const tmp2 = asyncRequire(15076, dependencyMap.paths);
     intl = intl5.intl;
     intl2 = intl5.intl;
     obj2 = { link };

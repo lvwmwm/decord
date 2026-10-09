@@ -1,22 +1,22 @@
-// Module ID: 7875
-// Function ID: 7876
+// Module ID: 7884
+// Function ID: 7885
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 2067, 2063, 6040, 4709, 2073, 7876, 12, 2075, 11, 6993, 504, 584, 2]
+// Dependencies: [32, 2068, 2064, 6042, 4711, 2073, 7885, 12, 2075, 11, 7000, 504, 584, 2]
 
-// Module 7875 (ArchivedThreadsStore)
+// Module 7884 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2073 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2075 */;
-import ForumUtils from "ForumUtils" /* 6993 */;
-import Tracking from "Tracking" /* 7876 */;
+import ForumUtils from "ForumUtils" /* 7000 */;
+import Tracking from "Tracking" /* 7885 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import ReadStateStore from "ReadStateStore" /* 6042 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4711 */;
 import size from "module_2" /* 2 */;
 
 let appliedTags;

@@ -1,15 +1,15 @@
-// Module ID: 13618
-// Function ID: 13619
+// Module ID: 13709
+// Function ID: 13710
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 1085, 1391, 558, 576, 6841, 7158, 7157, 7130, 1126, 4726, 2]
+// Dependencies: [19, 1085, 1392, 558, 576, 6848, 7163, 7162, 7135, 1126, 4728, 2]
 
-// Module 13618 (useOpenPremiumMarketingPayment)
+// Module 13709 (useOpenPremiumMarketingPayment)
 import intl2 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4726 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7130 */;
+import PremiumUtils from "PremiumUtils" /* 4728 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7135 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,10 +29,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenPre
   const tmp2 = dependencyMap;
   let obj = analyticsLocations(576);
   const cResult = obj.c(10);
-  analyticsLocations = premiumTrialOfferPremiumType(6841)(arg0).analyticsLocations;
-  const obj2 = analyticsLocations(7158);
+  analyticsLocations = premiumTrialOfferPremiumType(6848)(arg0).analyticsLocations;
+  const obj2 = analyticsLocations(7163);
   const premiumTrialOffer = obj2.usePremiumTrialOffer();
-  const obj3 = analyticsLocations(7157);
+  const obj3 = analyticsLocations(7162);
   premiumTrialOfferPremiumType = obj3.usePremiumTrialOfferPremiumType();
   if (cResult[0] === analyticsLocations) {
     let tmp6;
@@ -63,7 +63,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenPre
         tmp9 = tmp13;
       }
       const obj4 = { intervalType: interval, intervalCount };
-      const tmpResult = tmp(4726);
+      const tmpResult = tmp(4728);
       const result = tmpResult.formatTrialCtaIntervalDuration(obj4);
       cResult[4] = interval;
       cResult[5] = intervalCount;

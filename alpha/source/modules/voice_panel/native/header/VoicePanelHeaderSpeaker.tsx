@@ -1,28 +1,28 @@
-// Module ID: 17568
-// Function ID: 17569
+// Module ID: 17720
+// Function ID: 17721
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 17569, 5109, 5130, 17570, 2063, 5110, 1085, 21, 558, 17571, 576, 17513, 8759, 10857, 9109, 573, 12895, 9108, 17575, 1381, 8766, 5131, 1126, 8763, 8765, 17576, 9110, 4898, 2048, 6166, 17498, 14050, 2]
+// Dependencies: [109, 19, 17, 17721, 5110, 5131, 17722, 2064, 5111, 1085, 21, 558, 17723, 576, 17665, 8768, 11030, 10985, 573, 12975, 11068, 17727, 1382, 8775, 5132, 1126, 8772, 8774, 17728, 12974, 4899, 2049, 6168, 17650, 14147, 2]
 
-// Module 17568 (VoicePanelHeaderSpeaker)
+// Module 17720 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
-import NativeViewDefault from "NativeView" /* 6166 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 9110 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 12895 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17498 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17569 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17571 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4899 */;
+import NativeViewDefault from "NativeView" /* 6168 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 12974 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 12975 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17650 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17721 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17723 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore_mod from "GameConsoleStore" /* 5109 */;
-import AudioRouteStore from "AudioRouteStore" /* 5130 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 17570 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import SessionsStore from "SessionsStore" /* 5110 */;
+import GameConsoleStore_mod from "GameConsoleStore" /* 5110 */;
+import AudioRouteStore from "AudioRouteStore" /* 5131 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 17722 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import SessionsStore from "SessionsStore" /* 5111 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let closure_15;
 let closure_16;
 let closure_17;
 let tmp;
-const showAudioOutputSelector = tmp(8766);
+const showAudioOutputSelector = tmp(8775);
 let closure_3 = ["ref"];
 let closure_4 = ["ref"];
 let react = react_mod;
@@ -593,14 +593,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       let tmp9;
       let tmp = arg0;
       if (arg0 == null) {
-        tmp = { onPress, ref: "Array" };
-        const obj = { onPress, ref: "Array" };
+        tmp = { onPress, ref: "r" };
+        const obj = { onPress, ref: "r" };
       }
       const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
       tmp9 = !stateFromStores2;
       const tmp3 = _objectWithoutProperties(tmp, closure_4);
       const tmp4 = closure_17;
-      const tmp5 = authStore4;
+      const tmp5 = authStore5;
       const tmp7 = closure_19;
       const tmp8 = tmp.ref;
       if (!stateFromStores2) {
@@ -609,8 +609,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       if (tmp9) {
         tmp9 = isConnectedToVoiceChannel;
       }
-      const items = [authStore3(tmp7, obj2), ];
-      const obj3 = { style, ref: tmp8, children: authStore3(tmp12, obj4) };
+      const items = [authStore4(tmp7, obj2), ];
+      const obj3 = { style, ref: tmp8, children: authStore4(tmp12, obj4) };
       obj4 = { ref: tmp.ref, disabled, overrideVariant: str, loading, icon: tmp15, accessibilityLabel: intl.string(intl4.t.dnI0AL) };
       const tmp11 = NativeViewDefault;
       tmp12 = VoicePanelIconButtonDefault;
@@ -627,7 +627,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       const obj5 = { children: items };
       intl = intl4.intl;
-      items[1] = authStore3(tmp11, obj3);
+      items[1] = authStore4(tmp11, obj3);
       return tmp4(tmp5, obj5);
     }
     const tmp4Result2 = tmp4(tmp2[22]);

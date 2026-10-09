@@ -1,31 +1,31 @@
-// Module ID: 13920
-// Function ID: 13921
+// Module ID: 14017
+// Function ID: 14018
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1085, 7248, 21, 1381, 13921, 558, 576, 587, 6717, 1630, 1383, 13899, 5940, 13914, 1999, 7084, 11552, 4763, 5298, 1126, 7013, 6767, 1200, 2]
+// Dependencies: [32, 19, 17, 1085, 7253, 21, 1382, 14018, 558, 576, 587, 6724, 1631, 1384, 13992, 5941, 14007, 2000, 7087, 11481, 4765, 5299, 1126, 8660, 6774, 1200, 2]
 // Exports: default
 
-// Module 13920 (QRScannerModal)
+// Module 14017 (QRScannerModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import LinkingDefault from "Linking" /* 4763 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 7013 */;
-import openUserSettings from "openUserSettings" /* 7084 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
-import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 11552 */;
-import QRLoginUtils from "QRLoginUtils" /* 13899 */;
-import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 13921 */;
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import LinkingDefault from "Linking" /* 4765 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import openUserSettings from "openUserSettings" /* 7087 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7253 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8660 */;
+import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 11481 */;
+import QRLoginUtils from "QRLoginUtils" /* 13992 */;
+import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 14018 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ export default function QRScannerModal(showHelp) {
                 tmp22Result.pop();
                 const obj2 = { remoteAuthFingerprint: result };
                 const tmp22Result4 = ModalActionCreatorsDefault;
-                tmp22Result4.pushLazy(asyncRequire(13914, dependencyMap.paths), obj2);
+                tmp22Result4.pushLazy(asyncRequire(14007, dependencyMap.paths), obj2);
               } else {
                 let match;
                 if (url.pathname != null) {
@@ -173,7 +173,7 @@ export default function QRScannerModal(showHelp) {
             show(obj4);
             tmp9 = importDefault;
           }
-          const tmp9Result = tmp9(5940);
+          const tmp9Result = tmp9(5941);
           tmp9Result.pop();
         }
     };
@@ -182,7 +182,7 @@ export default function QRScannerModal(showHelp) {
     tmp14 = tmp10;
   }
   items1 = [tmp10Result, , ];
-  let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(onScanSuccess(1126).t.cpT0Cq), source: tmp5(6767), style: items2, onPress: tmp5(5940).pop };
+  let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(onScanSuccess(1126).t.cpT0Cq), source: tmp5(6774), style: items2, onPress: tmp5(5941).pop };
   const tmp5Result = TouchableHitBoxDefault;
   intl = onScanSuccess(1126).intl;
   items2 = [tmp12.closeButton, { marginTop: top }];

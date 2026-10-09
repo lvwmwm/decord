@@ -1,20 +1,20 @@
-// Module ID: 17574
-// Function ID: 17575
+// Module ID: 17726
+// Function ID: 17727
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1085, 21, 5090, 587, 12895, 1126, 558, 576, 9108, 1387, 6166, 1200, 2]
+// Dependencies: [19, 1085, 21, 5091, 587, 12975, 1126, 558, 576, 11068, 1388, 6168, 1200, 2]
 
-// Module 17574 (VoicePanelConsoleFacepile)
+// Module 17726 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import NativeViewDefault from "NativeView" /* 6166 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9108 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 12895 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import NativeViewDefault from "NativeView" /* 6168 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11068 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 12975 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
   const arr = useGameConsoleAccountsDefault();
   if (cResult[0] !== arr) {
     const mapped = arr.map(getConsoleInfo);
-    const found = mapped.filter(tmp(1387).isNotNullish);
+    const found = mapped.filter(tmp(1388).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
     tmp5 = found;

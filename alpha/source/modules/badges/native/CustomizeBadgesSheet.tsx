@@ -1,46 +1,47 @@
-// Module ID: 14692
-// Function ID: 14693
+// Module ID: 14798
+// Function ID: 14799
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8260, 1389, 8292, 1085, 6830, 1391, 21, 5090, 587, 5055, 9299, 14693, 558, 576, 1126, 6643, 6641, 9297, 5012, 10545, 5086, 6186, 10553, 8517, 6637, 4810, 5091, 5094, 13221, 9298, 6326, 4788, 10547, 1630, 504, 4726, 6841, 6865, 6831, 9328, 9329, 8291, 1264, 8297, 4766, 1496, 11596, 14694, 6158, 6829, 6828, 6298, 2]
+// Dependencies: [19, 17, 8268, 1390, 8300, 1085, 6837, 1392, 21, 5091, 587, 5056, 9337, 14799, 558, 576, 1126, 6650, 6648, 9335, 5013, 10535, 5087, 6188, 10544, 8525, 6644, 4811, 5092, 5095, 13314, 9336, 6333, 4789, 10537, 1631, 504, 4728, 6848, 6872, 6838, 9366, 9367, 8299, 1265, 8305, 4768, 1497, 11529, 14800, 6160, 6836, 6835, 6305, 2]
 // Exports: default
 
-// Module 14692 (CustomizeBadgesSheet)
+// Module 14798 (CustomizeBadgesSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5012 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import timing from "timing" /* 5091 */;
-import timingPresets from "timingPresets" /* 5094 */;
-import Card_Card from "Card/Card" /* 6186 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8291 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8297 */;
-import native from "native" /* 8517 */;
-import ContextMenu2 from "ContextMenu" /* 9297 */;
-import ContextMenuState from "ContextMenuState" /* 9298 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9299 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9328 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9329 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10545 */;
-import BadgeUtils from "BadgeUtils" /* 10553 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11596 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 13221 */;
-import BadgeGrid from "BadgeGrid" /* 14693 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4789 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5013 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import timing from "timing" /* 5092 */;
+import timingPresets from "timingPresets" /* 5095 */;
+import Card_Card from "Card/Card" /* 6188 */;
+import EyeSlashIcon2 from "EyeSlashIcon" /* 6648 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6837 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8299 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8305 */;
+import native from "native" /* 8525 */;
+import ContextMenu2 from "ContextMenu" /* 9335 */;
+import ContextMenuState from "ContextMenuState" /* 9336 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9337 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9366 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9367 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10535 */;
+import BadgeUtils from "BadgeUtils" /* 10544 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11529 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 13314 */;
+import BadgeGrid from "BadgeGrid" /* 14799 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8260 */;
-import UserStore from "UserStore" /* 1389 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8292 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8268 */;
+import UserStore from "UserStore" /* 1390 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8300 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -63,10 +64,7 @@ let obj6;
 let obj7;
 let obj8;
 let size;
-let tmp2;
 let unpackModuleId;
-const EyeSlashIcon2 = tmp2(6641);
-const EyeIcon = tmp2(6643);
 ({ Platform, View: closure_4 } = react_native);
 ({ AnalyticEvents: metroImportAll, AnalyticsObjects: c9, AnalyticsPages: c10, AnalyticsSections: unpackModuleId } = Constants);
 let closure_12 = ActionSheetConstants.ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
@@ -113,9 +111,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
     tmp4 = cResult[1];
   }
   if (flag) {
-    EyeSlashIcon = tmp(6643).EyeIcon;
+    EyeSlashIcon = tmp(6650).EyeIcon;
   } else {
-    EyeSlashIcon = tmp(6641).EyeSlashIcon;
+    EyeSlashIcon = tmp(6648).EyeSlashIcon;
   }
   if (cResult[2] === badge) {
     if (cResult[3] === flag) {
@@ -131,7 +129,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
             tmp7 = cResult[9];
           }
           if (cResult[10] !== index) {
-            const result = index % tmp(14693).BADGE_GRID_COLUMNS;
+            const result = index % tmp(14799).BADGE_GRID_COLUMNS;
             let str = "right";
             if (0 !== result) {
               let str2 = "above";
@@ -156,7 +154,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
             }
           }
           const obj2 = { items: tmp7, align: tmp8, disableGesture: true, triggerOnLongPress: true, children };
-          const tmp12 = authStore2(ContextMenu2.ContextMenu, obj2);
+          const tmp12 = authStore3(ContextMenu2.ContextMenu, obj2);
           cResult[12] = children;
           cResult[13] = tmp7;
           cResult[14] = tmp8;
@@ -194,31 +192,28 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
   if (flag == null) {
     flag = false;
   }
-  let tmp2 = require;
-  const tmp3 = dependencyMap;
-  const tmp = authStore2;
   const ContextMenu = ContextMenu2.ContextMenu;
-  let intl = intl7.intl;
+  const intl = intl7.intl;
   const string = intl.string;
   const t = intl7.t;
-  let obj = {
+  const obj = {
     label: string(flag ? t.RXOPc3 : t.xSWJPo),
     trailingIndicator: EyeSlashIcon,
     action() {
       return onSetHidden(badge, !flag);
     }
   };
+  const tmp = authStore3;
   if (flag) {
-    EyeSlashIcon = EyeIcon.EyeIcon;
+    EyeSlashIcon = tmp2(6650).EyeIcon;
   } else {
-    EyeSlashIcon = EyeSlashIcon2.EyeSlashIcon;
+    EyeSlashIcon = tmp2(6648).EyeSlashIcon;
   }
-  let obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
+  const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  let result = index % BadgeGrid.BADGE_GRID_COLUMNS;
+  const result = index % tmp2(14799).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
-    let num = 1;
     let str2 = "above";
     if (result === BadgeGrid.BADGE_GRID_COLUMNS - 1) {
       str2 = "left";
@@ -264,8 +259,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const CircleInformationIcon = tmp(5012).CircleInformationIcon;
-      const tmp15 = authStore2(CircleInformationIcon, obj2);
+      const CircleInformationIcon = tmp(5013).CircleInformationIcon;
+      const tmp15 = authStore3(CircleInformationIcon, obj2);
       cResult[0] = tmp15;
       first = tmp15;
     } else {
@@ -279,8 +274,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
       const _Symbol = Symbol;
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const EyeSlashIcon = tmp(6641).EyeSlashIcon;
-        const tmp10 = authStore2(EyeSlashIcon, obj3);
+        const EyeSlashIcon = tmp(6648).EyeSlashIcon;
+        const tmp10 = authStore3(EyeSlashIcon, obj3);
         cResult[1] = tmp10;
         tmp7 = tmp10;
       } else {
@@ -327,7 +322,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
             }
             const obj4 = { variant: "secondary", border: "none", radius: 16, style: tmp4.card, children: items };
             items = [tmp18, tmp23, tmp26];
-            const tmp32 = authStore3(Card_Card.Card, obj4);
+            const tmp32 = authStore4(Card_Card.Card, obj4);
             cResult[15] = tmp4.card;
             cResult[16] = tmp18;
             cResult[17] = tmp23;
@@ -338,7 +333,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
           let tmp27 = null != tmp5;
           if (tmp27) {
             const obj5 = { style: tmp4.indicator, "aria-hidden": true, children: tmp5 };
-            tmp27 = authStore2(React3, obj5);
+            tmp27 = authStore3(React3, obj5);
           }
           cResult[12] = tmp5;
           cResult[13] = tmp4.indicator;
@@ -347,7 +342,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
         }
       }
       const obj6 = { variant: "text-xs/medium", color: str3, lineClamp: 1, style: tmp4.name, "aria-hidden": true, children: badge.name };
-      const tmp25 = authStore2(Text_Text.Text, obj6);
+      const tmp25 = authStore3(Text_Text.Text, obj6);
       cResult[8] = badge.name;
       cResult[9] = tmp4.name;
       cResult[10] = str3;
@@ -356,7 +351,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
     }
     const obj7 = { badge, size: BadgeGrid.BADGE_TILE_ICON_SIZE, style: tmp17 };
     const tmp21 = BadgeCatalogIconDefault;
-    const tmp22 = authStore2(tmp21, obj7);
+    const tmp22 = authStore3(tmp21, obj7);
     cResult[5] = badge;
     cResult[6] = tmp17;
     cResult[7] = tmp22;
@@ -381,13 +376,13 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
   if (alwaysVisible) {
     const obj2 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
     const CircleInformationIcon = CircleInformationIcon2.CircleInformationIcon;
-    tmp2 = authStore2(CircleInformationIcon, obj2);
+    tmp2 = authStore3(CircleInformationIcon, obj2);
   } else {
     tmp2 = null;
     if (flag) {
       const obj = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
       const EyeSlashIcon = EyeSlashIcon2.EyeSlashIcon;
-      tmp2 = authStore2(EyeSlashIcon, obj);
+      tmp2 = authStore3(EyeSlashIcon, obj);
     }
   }
   const obj3 = { variant: "secondary", border: "none", radius: 16, style: tmp.card, children: items1 };
@@ -395,15 +390,15 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
   const obj4 = { badge, size: BadgeGrid.BADGE_TILE_ICON_SIZE, style: items };
   items = [tmp.icon, flag && tmp.iconHidden];
   const tmp15 = BadgeCatalogIconDefault;
-  items1 = [authStore2(tmp15, obj4), , ];
+  items1 = [authStore3(tmp15, obj4), , ];
   let str = "text-default";
   const Text = Text_Text.Text;
-  const tmp11 = authStore3;
+  const tmp11 = authStore4;
   if (flag) {
     str = "text-muted";
   }
   const obj5 = { variant: "text-xs/medium", color: str, lineClamp: 1, style: tmp.name, "aria-hidden": true, children: badge.name };
-  items1[1] = authStore2(Text, obj5);
+  items1[1] = authStore3(Text, obj5);
   let tmp14Result = null != tmp2;
   if (tmp14Result) {
     const obj6 = { style: tmp.indicator, "aria-hidden": true, children: tmp2 };
@@ -553,7 +548,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function F
                   }
                 };
               }
-              return authStore2(PressableScale, obj);
+              return authStore3(PressableScale, obj);
             }
             cResult[13] = alwaysVisible;
             cResult[14] = badge;
@@ -661,7 +656,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function F
           }
         };
       }
-      return authStore2(PressableScale, obj);
+      return authStore3(PressableScale, obj);
     }
     const tmp2 = badge;
     let result = index % badge(alwaysVisible[13]).BADGE_GRID_COLUMNS;
@@ -1379,7 +1374,7 @@ let closure_49 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         if (result !== value) {
           const result1 = obj.set(result);
           onCommitOrder(result);
-          const AccessibilityAnnouncer = tmp4(4788).AccessibilityAnnouncer;
+          const AccessibilityAnnouncer = tmp4(4789).AccessibilityAnnouncer;
           const announce = AccessibilityAnnouncer.announce;
           const intl = tmp4(1126).intl;
           const obj2 = { from: index + slotOffset + 1, to: clampResult + slotOffset + 1 };
@@ -1819,7 +1814,7 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
     items18 = [
       fixedBadges.map((badge, index) => {
           const obj = { badge, index, tileSize: badgeTileSize, alwaysVisible: set.has(badge.badge_id), onPress };
-          return authStore2(closure_24, obj, badge.badge_id);
+          return authStore3(closure_24, obj, badge.badge_id);
         }),
       reorderableBadges.map((badge, index) => {
           let tmpResult;
@@ -1834,7 +1829,7 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
         }),
       hiddenBadges.map((badge, index) => {
           const obj = { badge, index: fixedBadges.length + reorderableBadges.length + index, tileSize: badgeTileSize, alwaysVisible: set.has(badge.badge_id), onPress, onSetHidden };
-          return authStore2(closure_24, obj, badge.badge_id);
+          return authStore3(closure_24, obj, badge.badge_id);
         })
     ];
     items16[1] = sharedValue(context, obj10);

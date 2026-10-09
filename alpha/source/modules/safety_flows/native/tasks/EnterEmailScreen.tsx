@@ -1,13 +1,13 @@
-// Module ID: 18399
-// Function ID: 18400
+// Module ID: 18561
+// Function ID: 18562
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 558, 576, 1502, 1126, 2859, 18391, 5373, 6283, 18400, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1503, 1126, 2859, 18553, 5374, 6290, 18562, 2]
 
-// Module 18399 (EnterEmailScreen)
+// Module 18561 (EnterEmailScreen)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2859 from "module_2859" /* 2859 */;
-import types from "types" /* 18391 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18400 */;
+import types from "types" /* 18553 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18562 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
   let tmp9;
   const obj = navigation(576);
   const cResult = obj.c(9);
-  const obj2 = navigation(1502);
+  const obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   [first, tmp7] = react.useState("");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
     tmp13 = cResult[3];
   }
   if (cResult[4] !== first) {
-    const Stack = tmp(5373).Stack;
+    const Stack = tmp(5374).Stack;
     const tmp16 = <Stack>{null}</Stack>;
     cResult[4] = first;
     cResult[5] = tmp16;

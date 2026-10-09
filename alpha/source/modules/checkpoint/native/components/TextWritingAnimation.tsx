@@ -1,16 +1,16 @@
-// Module ID: 15820
-// Function ID: 15821
+// Module ID: 15933
+// Function ID: 15934
 // Name: TextWritingAnimation
-// Dependencies: [32, 19, 17, 5079, 21, 5090, 504, 15821, 2]
+// Dependencies: [32, 19, 17, 5080, 21, 5091, 504, 15934, 2]
 // Exports: default
 
-// Module 15820 (TextWritingAnimation)
+// Module 15933 (TextWritingAnimation)
 import react_native from "react-native" /* 17 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;

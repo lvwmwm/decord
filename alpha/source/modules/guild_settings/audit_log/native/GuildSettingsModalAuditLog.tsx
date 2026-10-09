@@ -1,27 +1,27 @@
-// Module ID: 18045
-// Function ID: 18046
+// Module ID: 18205
+// Function ID: 18206
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 2063, 2086, 2115, 1389, 18046, 1085, 21, 5090, 587, 1502, 504, 18048, 4922, 1126, 6877, 18050, 18060, 7079, 18051, 6158, 6184, 5086, 6193, 1200, 18061, 6719, 2]
+// Dependencies: [32, 19, 17, 2064, 2086, 2115, 1390, 18206, 1085, 21, 5091, 587, 1503, 504, 18208, 4923, 1126, 6884, 18210, 18220, 7082, 18211, 6160, 6186, 5087, 6195, 1200, 18221, 6726, 2]
 // Exports: default
 
-// Module 18045 (GuildSettingsModalAuditLog)
+// Module 18205 (GuildSettingsModalAuditLog)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6877 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 18048 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 18051 */;
-import AuditLogDefault from "AuditLog" /* 18060 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6884 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 18208 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 18211 */;
+import AuditLogDefault from "AuditLog" /* 18220 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import UserStore from "UserStore" /* 1389 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18046 */;
+import UserStore from "UserStore" /* 1390 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18206 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -181,7 +181,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
     const id2 = item.id;
     const diff = memo.length - 1;
     let firstAuditRow = 0 === index;
-    const tmp2 = authStore3;
+    const tmp2 = authStore4;
     const tmp3 = AuditLogDefault;
     if (firstAuditRow) {
       firstAuditRow = closure_1.firstAuditRow;

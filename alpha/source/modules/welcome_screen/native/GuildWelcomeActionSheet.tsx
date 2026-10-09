@@ -1,29 +1,29 @@
-// Module ID: 12563
-// Function ID: 12564
+// Module ID: 12503
+// Function ID: 12504
 // Name: GuildWelcomeActionSheet
-// Dependencies: [19, 17, 5992, 2063, 2086, 4707, 12560, 12564, 1085, 1392, 1096, 21, 5090, 587, 5902, 558, 576, 504, 5417, 1112, 5054, 1414, 6164, 4721, 5086, 1200, 11411, 8555, 584, 12562, 1264, 12497, 1126, 6885, 2]
+// Dependencies: [19, 17, 5994, 2064, 2086, 4709, 12500, 12504, 1085, 1393, 1096, 21, 5091, 587, 5903, 558, 576, 504, 5418, 1112, 5055, 1415, 6163, 4723, 5087, 1200, 11318, 8563, 584, 12502, 1265, 12434, 1126, 6892, 2]
 
-// Module 12563 (GuildWelcomeActionSheet)
+// Module 12503 (GuildWelcomeActionSheet)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1096 */;
 import router_utils from "router_utils" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12560 */;
-import WelcomeScreenConstants from "WelcomeScreenConstants" /* 12564 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12500 */;
+import WelcomeScreenConstants from "WelcomeScreenConstants" /* 12504 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore_mod from "EmojiStore" /* 5992 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import EmojiStore_mod from "EmojiStore" /* 5994 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import TextStyles_mod from "TextStyles" /* 5902 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import TextStyles_mod from "TextStyles" /* 5903 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -300,7 +300,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function WelcomeChan
       if (null != stateFromStores) {
         trackOptionSelect();
         const obj = router_utils;
-        obj.transitionTo(authStore2.CHANNEL(stateFromStores.guild_id, stateFromStores.id));
+        obj.transitionTo(authStore3.CHANNEL(stateFromStores.guild_id, stateFromStores.id));
         const obj2 = ActionSheetActionCreatorsDefault;
         obj2.hideActionSheet();
       }
@@ -794,12 +794,12 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
     if (null != welcomeScreen) {
       const obj3 = { startExpanded: true, children: closure_18(hasError, obj4) };
       obj4 = { contentContainerStyle: tmp.container, children: items9 };
-      const ActionSheet = tmp2(6885).ActionSheet;
-      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(12497).Sizes.MEDIUM, textScale: 2 };
-      const tmp17 = onHide(12497);
+      const ActionSheet = tmp2(6892).ActionSheet;
+      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(12434).Sizes.MEDIUM, textScale: 2 };
+      const tmp17 = onHide(12434);
       items9 = [closure_17(tmp17, obj5), , , , ];
       const obj6 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default", children: intl.format(guildId(1126).t["0aydCN"], obj7) };
-      const Text = tmp2(5086).Text;
+      const Text = tmp2(5087).Text;
       intl = tmp2(1126).intl;
       obj7 = {
         guildName: stateFromStores.name,
@@ -810,9 +810,9 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
       };
       items9[1] = closure_17(Text, obj6);
       const obj8 = { style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: welcomeScreen.description };
-      items9[2] = closure_17(guildId(5086).Text, obj8);
+      items9[2] = closure_17(guildId(5087).Text, obj8);
       const obj9 = { style: tmp.channelsTitle, variant: "eyebrow", color: "text-default", children: str.toUpperCase() };
-      const Text2 = tmp2(5086).Text;
+      const Text2 = tmp2(5087).Text;
       const intl2 = tmp2(1126).intl;
       str = intl2.string(guildId(1126).t["haj5+i"]);
       items9[3] = closure_17(Text2, obj9);

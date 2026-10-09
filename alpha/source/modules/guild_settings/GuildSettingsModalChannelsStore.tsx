@@ -1,16 +1,16 @@
-// Module ID: 16368
-// Function ID: 16369
+// Module ID: 16487
+// Function ID: 16488
 // Name: GuildSettingsModalChannelsStore
-// Dependencies: [109, 2067, 4705, 4707, 1085, 2089, 6791, 12, 504, 584, 2]
+// Dependencies: [109, 2068, 4707, 4709, 1085, 2089, 6798, 12, 504, 584, 2]
 
-// Module 16368 (GuildSettingsModalChannelsStore)
+// Module 16487 (GuildSettingsModalChannelsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6791 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6798 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4705 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import Constants from "Constants" /* 1085 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f124193 = (channel) => channel.channel.id;
+const f124578 = (channel) => channel.channel.id;
 function sortCategoryList(channel, channel2) {
   let num;
   channel = channel.channel;
@@ -126,7 +126,7 @@ function buildSortedChannels() {
       }
       return tmp;
     });
-    closure_15 = arr4.map(f124193);
+    closure_15 = arr4.map(f124578);
   }
 }
 let closure_3 = ["lock_permissions", "id"];
@@ -273,7 +273,7 @@ let obj = {
           }
           return tmp;
         });
-        closure_15 = arr.map(f124193);
+        closure_15 = arr.map(f124578);
       }
     }
   },
@@ -290,7 +290,7 @@ let obj = {
         }
         return tmp;
       });
-      closure_15 = arr.map(f124193);
+      closure_15 = arr.map(f124578);
     }
   },
   GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE: function handleLocalSortChange(updates) {

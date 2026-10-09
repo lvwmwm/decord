@@ -1,33 +1,32 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 12830
+// Function ID: 12831
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 5090, 587, 558, 576, 5003, 9470, 5086, 1126, 9733, 5375, 2]
+// Dependencies: [17, 21, 5091, 587, 558, 576, 5004, 6163, 9508, 5087, 1126, 9752, 5376, 2]
 
-// Module 12863 (NitroLimitUpsellBar)
+// Module 12830 (NitroLimitUpsellBar)
+import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import WarningIcon from "WarningIcon" /* 5003 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9470 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9733 */;
-import react_native from "react-native" /* 17 */;
+import WarningIcon from "WarningIcon" /* 5004 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9508 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9752 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj2;
-({ Image: c3, View: closure_4 } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, icon: { height: 20, width: 20 }, text: { flex: 1 } };
 obj2 = { alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.md, flexDirection: "row", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_16, marginHorizontal: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_12 };
-let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUpsellBar(arg0) {
+let closure_6 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUpsellBar(arg0) {
   let intl2;
   let isAtLimit;
   let items;
@@ -40,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
   const obj = react;
   const cResult = obj.c(16);
   ({ text, isAtLimit, onPress, loading } = arg0);
-  const tmp4 = closure_7();
+  const tmp4 = closure_6();
   if (cResult[0] === isAtLimit) {
     let tmp5;
     let tmp11;
@@ -50,10 +49,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-xs/bold", color: "text-brand", children: str2.toUpperCase() };
-      const Text = tmp(5086).Text;
+      const Text = tmp(5087).Text;
       const intl = tmp(1126).intl;
       str2 = intl.string(intl3.t.oW0eUd);
-      const tmp13 = hasOwnProperty(Text, obj2);
+      const tmp13 = React3(Text, obj2);
       cResult[3] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -84,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
           }
           const obj3 = { style: tmp4.container, children: items };
           items = [tmp5, tmp14, tmp17];
-          const tmp24 = metroRequire(React3, obj3);
+          const tmp24 = hasOwnProperty(View, obj3);
           cResult[11] = tmp4.container;
           cResult[12] = tmp5;
           cResult[13] = tmp14;
@@ -93,11 +92,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
           tmp21 = tmp24;
         }
       }
-      const tmp18 = hasOwnProperty;
+      const tmp18 = React3;
       if (isAtLimit) {
         Button = NitroUpsellButtonDefault;
       } else {
-        Button = tmp(5375).Button;
+        Button = tmp(5376).Button;
       }
       const obj4 = { size: "sm", text: intl2.string(intl3.t["8x0jKT"]), onPress, loading };
       intl2 = tmp(1126).intl;
@@ -110,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
     }
     const obj5 = { variant: "text-xs/medium", color: "text-default", style: tmp4.text, children: items1 };
     items1 = [tmp11, " \u00B7 ", text];
-    const tmp16 = metroRequire(Text_Text.Text, obj5);
+    const tmp16 = hasOwnProperty(Text_Text.Text, obj5);
     cResult[4] = tmp4.text;
     cResult[5] = text;
     cResult[6] = tmp16;
@@ -118,10 +117,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
   }
   if (isAtLimit) {
     const obj6 = { color: "text-feedback-warning", style: tmp4.icon };
-    tmp6Result = tmp6(tmp(5003).WarningIcon, obj6);
+    tmp6Result = tmp6(tmp(5004).WarningIcon, obj6);
   } else {
     const obj7 = { source: AssetRegistryDefault, style: tmp4.icon };
-    tmp6Result = tmp6(_false, obj7);
+    const tmp8 = FastImageDefault;
+    tmp6Result = tmp6(tmp8, obj7);
   }
   cResult[0] = isAtLimit;
   cResult[1] = tmp4.icon;
@@ -140,16 +140,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
   let tmp9;
   isAtLimit = isAtLimit.isAtLimit;
   ({ text, onPress, loading } = isAtLimit);
-  const tmp = closure_7();
+  const tmp = closure_6();
   const obj = { style: tmp.container, children: items };
-  const tmp3 = React3;
+  const tmp3 = View;
   if (isAtLimit) {
     const obj2 = { color: "text-feedback-warning", style: tmp.icon };
     tmp4Result = tmp4(WarningIcon.WarningIcon, obj2);
     tmp9 = tmp4;
   } else {
     const obj3 = { source: AssetRegistryDefault, style: tmp.icon };
-    tmp4Result = tmp4(_false, obj3);
+    const tmp7 = FastImageDefault;
+    tmp4Result = tmp4(tmp7, obj3);
     tmp9 = tmp4;
   }
   items = [tmp4Result, , ];
@@ -160,17 +161,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
   const intl = intl3.intl;
   str = intl.string(intl3.t.oW0eUd);
   items1 = [tmp9(Text2, obj5), " \u00B7 ", text];
-  items[1] = metroRequire(Text, obj4);
+  items[1] = hasOwnProperty(Text, obj4);
   if (isAtLimit) {
     Button = NitroUpsellButtonDefault;
   } else {
-    Button = tmp12(5375).Button;
+    Button = tmp12(5376).Button;
   }
   const obj6 = { size: "sm", text: intl2.string(intl3.t["8x0jKT"]), onPress, loading };
   intl2 = tmp12(1126).intl;
   items[2] = tmp9(Button, obj6);
-  return metroRequire(tmp3, obj);
+  return hasOwnProperty(tmp3, obj);
 });
 const result = size.fileFinishedImporting("modules/saved_messages/native/NitroLimitUpsellBar.tsx");
 
-export default tmp4;
+export default tmp3;

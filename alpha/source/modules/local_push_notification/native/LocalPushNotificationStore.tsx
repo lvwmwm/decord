@@ -1,18 +1,18 @@
-// Module ID: 13841
-// Function ID: 13842
+// Module ID: 13934
+// Function ID: 13935
 // Name: LocalPushNotificationStore
-// Dependencies: [2086, 5887, 12367, 1085, 10820, 4659, 1126, 504, 584, 2]
+// Dependencies: [2086, 5888, 11372, 1085, 10991, 4661, 1126, 504, 584, 2]
 
-// Module 13841 (LocalPushNotificationStore)
+// Module 13934 (LocalPushNotificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef4659 from "module_4659" /* 4659 */;
-import PushNotificationDefault from "PushNotification" /* 10820 */;
+import _modDef4661 from "module_4661" /* 4661 */;
+import PushNotificationDefault from "PushNotification" /* 10991 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5887 */;
-import Constants from "Constants" /* 12367 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5888 */;
+import Constants from "Constants" /* 11372 */;
 import size from "module_2" /* 2 */;
 
 let userInfo;
@@ -38,20 +38,22 @@ let obj = {
     let obj = PushNotificationDefault;
     const scheduledLocalNotifications = obj.getScheduledLocalNotifications((arr) => {
       let guild;
-      const found = arr.filter((userInfo) => null != userInfo.userInfo && userInfo.userInfo.type === constants.GUILD_VERIFICATION);
-      const item = found.forEach((userInfo) => {
+      const item = arr.forEach((userInfo) => {
         userInfo = userInfo.userInfo;
-        const guildId = userInfo.guildId;
-        if (null != guild.getGuild(guildId)) {
-          if (!closure_1_4.canChatInGuild(guildId)) {
-            set.add(userInfo);
+        const tmp = null != userInfo && userInfo.type === constants.GUILD_VERIFICATION;
+        if (tmp) {
+          const guildId = userInfo.guildId;
+          if (null != guild.getGuild(guildId)) {
+            if (!closure_1_4.canChatInGuild(guildId)) {
+              set.add(userInfo);
+            }
           }
+          const obj = closure_1_1(closure_1_2[4]);
+          const result = obj.cancelLocalNotifications(userInfo);
+          const obj2 = closure_1_1(closure_1_2[4]);
+          const result1 = obj2.cancelLocalNotifications(userInfo);
+          set.delete(userInfo);
         }
-        const obj = closure_1_1(closure_1_2[4]);
-        const result = obj.cancelLocalNotifications(userInfo);
-        const obj2 = closure_1_1(closure_1_2[4]);
-        const result1 = obj2.cancelLocalNotifications(userInfo);
-        set.delete(userInfo);
       });
     });
   },
@@ -68,16 +70,16 @@ let obj = {
           let obj;
           const verificationLevel = guild.verificationLevel;
           if (VerificationLevels.MEDIUM === verificationLevel) {
-            obj = _modDef4659(check.accountDeadline);
+            obj = _modDef4661(check.accountDeadline);
           } else if (VerificationLevels.HIGH === verificationLevel) {
-            obj = _modDef4659(check.memberDeadline);
+            obj = _modDef4661(check.memberDeadline);
           }
           if (null != obj) {
-            if (!obj.isSameOrBefore(_modDef4659(), "minute")) {
+            if (!obj.isSameOrBefore(_modDef4661(), "minute")) {
               const obj2 = { type: hasOwnProperty.GUILD_VERIFICATION, guildId: guild.id };
               set.add(obj2);
               const obj3 = { userInfo: obj2, fireDate: obj.format(metroRequire), alertTitle: guild.name, alertBody: intl.string(intl2.t["hrDBa+"]), category: "local" };
-              const scheduleLocalNotification = tmp16(10820).scheduleLocalNotification;
+              const scheduleLocalNotification = tmp16(10991).scheduleLocalNotification;
               PushNotificationDefault;
               intl = intl2.intl;
               const result = scheduleLocalNotification(obj3);

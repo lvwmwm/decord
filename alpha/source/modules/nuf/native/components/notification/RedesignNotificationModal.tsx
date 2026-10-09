@@ -1,53 +1,53 @@
-// Module ID: 16220
-// Function ID: 16221
+// Module ID: 16336
+// Function ID: 16337
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 12140, 12141, 1085, 21, 5090, 587, 558, 576, 12142, 1264, 12143, 16221, 1126, 12448, 2]
+// Dependencies: [19, 17, 12077, 12078, 1085, 21, 5091, 587, 558, 576, 12079, 1265, 12080, 16337, 1126, 12366, 2]
 
-// Module 16220 (RedesignNotificationModal)
+// Module 16336 (RedesignNotificationModal)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12140 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12142 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12143 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12448 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16221 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12077 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12079 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12080 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12366 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12141 */;
-import createStyles from "createStyles" /* 5090 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12078 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
+let metroRequire;
 let obj2;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
+const View = react_native.View;
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
-({ EventActionLocation: metroImportDefault, EventActionType: metroImportAll } = NotificationPermissionConstants);
+({ EventActionLocation: metroRequire, EventActionType: metroImportDefault } = NotificationPermissionConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-let obj = { container: obj2, notificationHeaderImage: { position: "absolute", alignSelf: "center", zIndex: 2, top: -140, height: 156, width: 150 } };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: -nativeDefault.space.PX_48 };
-let closure_11 = createStyles.createStyles(obj);
+let obj = { container: obj2 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: nativeDefault.space.PX_48 };
+let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNotificationModal(onComplete) {
-  let obj3;
-  let tmp12;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNotificationModal(onComplete) {
+  let obj2;
+  let tmp10;
+  let tmp15;
   let tmp5;
+  let tmp7;
+  let tmp9;
   const tmp = onComplete;
   let obj = onComplete(576);
-  const cResult = obj.c(15);
+  const cResult = obj.c(13);
   onComplete = onComplete.onComplete;
-  const tmp4 = closure_11();
+  const tmp4 = closure_10();
   if (cResult[0] !== onComplete) {
-    const fn = function n() {
+    const fn = function l() {
       const obj = NotificationPermissionUtil;
-      const pushNotificationPermission = obj.requestPushNotificationPermission(metroImportAll.ALLOW_TO_REQUEST, metroImportDefault.ALERT, () => {
+      const pushNotificationPermission = obj.requestPushNotificationPermission(metroImportDefault.ALLOW_TO_REQUEST, metroRequire.ALERT, () => {
         if (onComplete != null) {
           tmp();
         }
@@ -60,10 +60,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
     tmp5 = cResult[1];
   }
   if (cResult[2] !== onComplete) {
-    class I {
+    class R {
       constructor() {
         const obj = AnalyticsUtilsDefault;
-        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
         obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
         const obj3 = PushNotificationActionCreators;
         const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
@@ -75,12 +75,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
       }
     }
     cResult[2] = onComplete;
-    cResult[3] = I;
+    cResult[3] = R;
   } else {
-    class I {
+    class R {
       constructor() {
         const obj = AnalyticsUtilsDefault;
-        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
         obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
         const obj3 = PushNotificationActionCreators;
         const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
@@ -92,11 +92,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
       }
     }
   }
-  if (cResult[4] !== tmp4.notificationHeaderImage) {
-    class I {
+  const container = tmp4.container;
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
       constructor() {
         const obj = AnalyticsUtilsDefault;
-        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
         obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
         const obj3 = PushNotificationActionCreators;
         const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
@@ -107,14 +108,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
         }
       }
     }
-    const tmp10 = <closure_4 resizeMode="contain" style={tmp4.notificationHeaderImage} source={AssetRegistryDefault} />;
-    cResult[4] = tmp4.notificationHeaderImage;
-    cResult[5] = tmp10;
+    const tmp8 = jsx(tmp(16337).BellSpotIllustration, { width: 245, accessible: false });
+    cResult[4] = tmp8;
+    tmp7 = tmp8;
   } else {
-    class I {
+    class R {
       constructor() {
         const obj = AnalyticsUtilsDefault;
-        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
         obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
         const obj3 = PushNotificationActionCreators;
         const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
@@ -126,11 +127,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
       }
     }
   }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
       constructor() {
         const obj = AnalyticsUtilsDefault;
-        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
         obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
         const obj3 = PushNotificationActionCreators;
         const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
@@ -141,17 +142,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
         }
       }
     }
-    const stringResult = obj3.string(tmp(1126).t["3nx0b5"]);
+    const stringResult = obj2.string(tmp(1126).t["3nx0b5"]);
     const intl = tmp(1126).intl;
     const stringResult1 = intl.string(tmp(1126).t.Gf7U1T);
-    cResult[6] = stringResult;
-    cResult[7] = stringResult1;
-    tmp12 = stringResult1;
+    cResult[5] = stringResult;
+    cResult[6] = stringResult1;
+    tmp10 = stringResult1;
+    tmp9 = stringResult;
   } else {
-    class I {
+    class R {
       constructor() {
         const obj = AnalyticsUtilsDefault;
-        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
         obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
         const obj3 = PushNotificationActionCreators;
         const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
@@ -162,13 +164,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
         }
       }
     }
-    tmp12 = cResult[7];
+    tmp10 = cResult[6];
   }
-  if (cResult[8] === tmp5) {
-    class I {
+  if (cResult[7] === tmp5) {
+    class R {
       constructor() {
         const obj = AnalyticsUtilsDefault;
-        const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+        const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
         obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
         const obj3 = PushNotificationActionCreators;
         const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
@@ -179,22 +181,43 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
         }
       }
     }
+    if (cResult[10] === tmp4.container) {
+      class R {
+        constructor() {
+          const obj = AnalyticsUtilsDefault;
+          const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
+          obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
+          const obj3 = PushNotificationActionCreators;
+          const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
+          const obj4 = NotificationPermissionUtil;
+          const result1 = obj4.enableProvisionalPushNotification();
+          if (onComplete != null) {
+            tmp4(true);
+          }
+        }
+      }
+      return tmp15;
+    }
+    const tmp18 = <View style={container}>{tmp13}</View>;
+    cResult[10] = tmp4.container;
+    cResult[11] = tmp13;
+    cResult[12] = tmp18;
+    tmp15 = tmp18;
   }
-  cResult[8] = tmp5;
-  cResult[9] = tmp6;
-  cResult[10] = tmp7;
-  cResult[11] = jsx(NewUserPermissionsOnboardingDefault, { onAllow: tmp5, onDontAllow: tmp6, header: tmp7, title: tmp11, subtitle: tmp12 });
-  jsx(NewUserPermissionsOnboardingDefault, { onAllow: tmp5, onDontAllow: tmp6, header: tmp7, title: tmp11, subtitle: tmp12 });
+  cResult[7] = tmp5;
+  cResult[8] = tmp6;
+  cResult[9] = jsx(NewUserPermissionsOnboardingDefault, { onAllow: tmp5, onDontAllow: tmp6, header: tmp7, headerInsideCard: true, title: tmp9, subtitle: tmp10 });
+  const tmp14 = jsx(NewUserPermissionsOnboardingDefault, { onAllow: tmp5, onDontAllow: tmp6, header: tmp7, headerInsideCard: true, title: tmp9, subtitle: tmp10 });
 }) : (function RedesignNotificationModal(onComplete) {
   let intl;
   let intl2;
   onComplete = onComplete.onComplete;
-  const tmp = closure_11();
   const items = [onComplete];
+  const tmp = closure_10();
   const items1 = [onComplete];
   const callback = react.useCallback(() => {
     const obj = NotificationPermissionUtil;
-    const pushNotificationPermission = obj.requestPushNotificationPermission(metroImportAll.ALLOW_TO_REQUEST, metroImportDefault.ALERT, () => {
+    const pushNotificationPermission = obj.requestPushNotificationPermission(metroImportDefault.ALLOW_TO_REQUEST, metroRequire.ALERT, () => {
       if (onComplete != null) {
         tmp();
       }
@@ -202,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
   }, items);
   const callback1 = react.useCallback(() => {
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: metroImportAll.SKIP_STEP, action_location: metroImportDefault.ALERT };
+    const obj2 = { action_type: metroImportDefault.SKIP_STEP, action_location: metroRequire.ALERT };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = PushNotificationActionCreators;
     const result = obj3.setPushPermissionState(PermissionStateType.PROMPT_SKIPPED);
@@ -212,22 +235,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
       tmp4(true);
     }
   }, items1);
-  let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, title: intl.string(onComplete(1126).t["3nx0b5"]), subtitle: intl2.string(onComplete(1126).t.Gf7U1T) };
-  let obj3 = { resizeMode: "contain", style: tmp.notificationHeaderImage, source: AssetRegistryDefault };
+  let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, headerInsideCard: true, title: intl.string(onComplete(1126).t["3nx0b5"]), subtitle: intl2.string(onComplete(1126).t.Gf7U1T) };
   const tmp4 = NewUserPermissionsOnboardingDefault;
   intl = onComplete(1126).intl;
   intl2 = onComplete(1126).intl;
-  return <closure_5 style={tmp.container}>{null}</closure_5>;
+  return <View style={tmp.container}>{null}</View>;
 });
-let closure_12 = tmp4;
+let closure_11 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNotificationScreen(route) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNotificationScreen(route) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
   const onComplete = route.route.params.onComplete;
   if (cResult[0] !== onComplete) {
-    const tmp5 = <closure_12 onComplete={onComplete} />;
+    const tmp5 = <closure_11 onComplete={onComplete} />;
     cResult[0] = onComplete;
     cResult[1] = tmp5;
     tmp2 = tmp5;
@@ -236,9 +258,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNoti
   }
   return tmp2;
 }) : (function RedesignNotificationScreen(onComplete) {
-  return <closure_12 onComplete={arg0.route.params.onComplete} />;
+  return <closure_11 onComplete={arg0.route.params.onComplete} />;
 });
 let result = size.fileFinishedImporting("modules/nuf/native/components/notification/RedesignNotificationModal.tsx");
 
-export default tmp4;
-export const RedesignNotificationScreen = tmp5;
+export default tmp3;
+export const RedesignNotificationScreen = tmp4;

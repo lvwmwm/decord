@@ -1,9 +1,9 @@
-// Module ID: 1352
-// Function ID: 1353
+// Module ID: 1353
+// Function ID: 1354
 // Name: StandardAnalyticsConstants
 // Dependencies: [2]
 
-// Module 1352 (StandardAnalyticsConstants)
+// Module 1353 (StandardAnalyticsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/analytics-utils/StandardAnalyticsConstants.tsx");

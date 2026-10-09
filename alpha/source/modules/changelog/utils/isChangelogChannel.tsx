@@ -1,12 +1,12 @@
-// Module ID: 6089
-// Function ID: 6090
+// Module ID: 6091
+// Function ID: 6092
 // Name: isChangelogChannel
-// Dependencies: [2063, 2114, 2]
+// Dependencies: [2064, 2114, 2]
 // Exports: default
 
-// Module 6089 (isChangelogChannel)
+// Module 6091 (isChangelogChannel)
 import ChangelogConstants from "ChangelogConstants" /* 2114 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 const SYSTEM_UPDATES_USER_ID = ChangelogConstants.SYSTEM_UPDATES_USER_ID;

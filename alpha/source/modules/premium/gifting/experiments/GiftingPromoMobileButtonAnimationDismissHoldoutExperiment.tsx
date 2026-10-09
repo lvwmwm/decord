@@ -1,10 +1,10 @@
-// Module ID: 11965
-// Function ID: 11966
+// Module ID: 11902
+// Function ID: 11903
 // Name: GiftingPromoMobileButtonAnimationDismissHoldoutExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 11965 (GiftingPromoMobileButtonAnimationDismissHoldoutExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 11902 (GiftingPromoMobileButtonAnimationDismissHoldoutExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

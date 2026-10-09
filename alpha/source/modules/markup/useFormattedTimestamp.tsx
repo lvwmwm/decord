@@ -1,9 +1,9 @@
-// Module ID: 11786
-// Function ID: 11787
+// Module ID: 11723
+// Function ID: 11724
 // Name: useFormattedTimestamp
-// Dependencies: [32, 19, 1102, 558, 576, 7151, 4659, 8131, 2]
+// Dependencies: [32, 19, 1102, 558, 576, 7156, 4661, 8139, 2]
 
-// Module 11786 (useFormattedTimestamp)
+// Module 11723 (useFormattedTimestamp)
 import DurationsDefault from "Durations" /* 1102 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
   const tmp = _require;
   let obj = require("react");
   const cResult = obj.c(7);
-  const obj2 = require("module_7151");
+  const obj2 = require("module_7156");
   const forceUpdate = obj2.useForceUpdate();
   if (cResult[0] === forceUpdate) {
     if (cResult[1] === format.format) {
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
       if ("R" === format.format) {
         let tmp9;
         if (cResult[5] !== format.parsed) {
-          const TIMESTAMP_FORMATS = tmp(8131).TIMESTAMP_FORMATS;
+          const TIMESTAMP_FORMATS = tmp(8139).TIMESTAMP_FORMATS;
           const RResult = TIMESTAMP_FORMATS.R(format.parsed);
           cResult[5] = format.parsed;
           cResult[6] = RResult;
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
   let formatted;
   _require = format;
   const tmp = _require;
-  let obj = require("module_7151");
+  let obj = require("module_7156");
   const forceUpdate = obj.useForceUpdate();
   const items = [forceUpdate, , ];
   ({ format: arr[1], parsed: arr[2] } = format);
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
     }
   }, items);
   if ("R" === format.format) {
-    const TIMESTAMP_FORMATS = tmp(8131).TIMESTAMP_FORMATS;
+    const TIMESTAMP_FORMATS = tmp(8139).TIMESTAMP_FORMATS;
     formatted = TIMESTAMP_FORMATS.R(format.parsed);
   } else {
     formatted = format.formatted;

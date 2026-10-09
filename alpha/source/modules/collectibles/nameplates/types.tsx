@@ -1,9 +1,9 @@
-// Module ID: 1994
-// Function ID: 1995
+// Module ID: 1995
+// Function ID: 1996
 // Name: types
 // Dependencies: [2]
 
-// Module 1994 (types)
+// Module 1995 (types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/types.tsx");

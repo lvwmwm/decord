@@ -1,12 +1,12 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15790
+// Function ID: 15791
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 4772, 4766, 5012, 15675, 1126, 5373, 5086, 5375, 2]
+// Dependencies: [5, 32, 19, 21, 4768, 5013, 15788, 1126, 5374, 5087, 5376, 2]
 // Exports: default
 
-// Module 15677 (CacheActionsStorageDiagnostics)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
+// Module 15790 (CacheActionsStorageDiagnostics)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -17,29 +17,12 @@ let c4, c5, dependencyMap, ref;
 
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const CircleInformationIcon = tmp(5012);
 function showStorageDiagnosticsToast(text) {
-  const obj = DesignSystemsNotificationComponentsExperiment;
-  const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("CacheActionsStorageDiagnostics");
-  const obj2 = ToastActionCreatorsDefault;
-  if (designSystemsNotificationComponents) {
-    const openMana = obj2.openMana;
-    const obj3 = { text, icon: CircleInformationIcon.CircleInformationIcon };
-    openMana(key, obj3);
-  } else {
-    const obj4 = {
-      key,
-      icon() {
-          return closure_1_6(CircleInformationIcon.CircleInformationIcon, {});
-        },
-      content: text
-    };
-    obj2.open(obj4);
-  }
+  const obj = ToastActionCreatorsDefault;
+  const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };
+  obj.openMana("storage-diagnostics-upload", obj2);
 }
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let c8 = "storage-diagnostics-upload";
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/CacheActionsStorageDiagnostics.tsx");
 
 export default function CacheActionsStorageDiagnostics(onBusyChange) {
@@ -85,7 +68,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
               closure_0 = undefined;
               if (!ref.current) {
                 const tmp33 = tmp;
-                if (null != tmp(ref[7]).uploadStorageDiagnostics) {
+                if (null != tmp(ref[6]).uploadStorageDiagnostics) {
                   ref.current = true;
                   onBusyChange(true);
                   _undefined(true);
@@ -93,7 +76,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
                   c4 = 3;
                   c5 = 1;
                   const obj4 = { value: tmp33Result.uploadStorageDiagnostics(), done: false };
-                  tmp33Result = tmp33(ref[7]);
+                  tmp33Result = tmp33(ref[6]);
                   return obj4;
                 }
               }
@@ -107,8 +90,8 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
           } else {
             if (2 === c4) {
               c3 = 1;
-              const intl = closure_0(ref[8]).intl;
-              closure_1_9(intl.string(closure_0(ref[8]).t["L/aQij"]));
+              const intl = closure_0(ref[7]).intl;
+              closure_1_8(intl.string(closure_0(ref[7]).t["L/aQij"]));
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -123,10 +106,10 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             } else {
               let cHxSwT;
               closure_0 = value;
-              const intl2 = closure_0(ref[8]).intl;
+              const intl2 = closure_0(ref[7]).intl;
               const string = intl2.string;
-              const t = closure_0(ref[8]).t;
-              const tmp50 = closure_1_9;
+              const t = closure_0(ref[7]).t;
+              const tmp50 = closure_1_8;
               if (closure_0) {
                 cHxSwT = t.H99tIV;
               } else {
@@ -161,9 +144,9 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   [tmp2, c1] = tmp;
   dependencyMap = react.useRef(false);
   obj = { children: items };
-  const Stack = onBusyChange(5373).Stack;
+  const Stack = onBusyChange(5374).Stack;
   let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1126).t.Fzi4HX) };
-  const Text = onBusyChange(5086).Text;
+  const Text = onBusyChange(5087).Text;
   intl = onBusyChange(1126).intl;
   items = [closure_6(Text, obj2), ];
   let obj3 = {
@@ -175,7 +158,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
       return obj(...arguments);
     }
   };
-  const Button = onBusyChange(5375).Button;
+  const Button = onBusyChange(5376).Button;
   intl2 = onBusyChange(1126).intl;
   items[1] = closure_6(Button, obj3);
   return closure_7(Stack, obj);

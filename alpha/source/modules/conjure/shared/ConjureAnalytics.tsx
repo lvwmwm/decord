@@ -1,15 +1,15 @@
-// Module ID: 12365
-// Function ID: 12366
+// Module ID: 11370
+// Function ID: 11371
 // Name: ConjureAnalytics
-// Dependencies: [5436, 11251, 1085, 6932, 1264, 2]
+// Dependencies: [5437, 10617, 1085, 6939, 1265, 2]
 // Exports: trackConjureDeployed, trackConjureErrored, trackConjurePublishActionClicked, trackConjureTurnResulted
 
-// Module 12365 (ConjureAnalytics)
+// Module 11370 (ConjureAnalytics)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ConjureUtils from "ConjureUtils" /* 6932 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ConjureUtils from "ConjureUtils" /* 6939 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
 import size from "module_2" /* 2 */;
 
 function conjureLocation(project_id, isPreview) {

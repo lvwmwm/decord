@@ -1,17 +1,17 @@
-// Module ID: 8890
-// Function ID: 8891
+// Module ID: 8901
+// Function ID: 8902
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2019, 2065, 5071, 1085, 8864, 504, 1102, 8472, 6995, 558, 576, 2]
+// Dependencies: [5, 19, 2020, 2066, 5072, 1085, 8873, 504, 1102, 8480, 7002, 558, 576, 2]
 // Exports: hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 8890 (useGameProfileInvite)
+// Module 8901 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1102 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8472 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8480 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2019 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 2065 */;
-import InviteStore from "InviteStore" /* 5071 */;
+import GameStore from "GameStore" /* 2020 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 2066 */;
+import InviteStore from "InviteStore" /* 5072 */;
 import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f99237 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f99454 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -180,7 +180,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
     if (websites != null) {
       websites = websites.websites;
       if (websites != null) {
-        found = websites.find(f99237);
+        found = websites.find(f99454);
       }
     }
     let arr;
@@ -317,7 +317,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f99237);
+      found = websites.find(f99454);
     }
   }
   let arr;
@@ -408,7 +408,7 @@ export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) 
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f99237);
+        found = websites.find(f99454);
       }
     }
     let arr;

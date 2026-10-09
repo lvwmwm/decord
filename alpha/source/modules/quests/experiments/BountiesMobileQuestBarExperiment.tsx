@@ -1,10 +1,10 @@
-// Module ID: 9541
-// Function ID: 9542
+// Module ID: 9154
+// Function ID: 9155
 // Name: BountiesMobileQuestBarExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 9541 (BountiesMobileQuestBarExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 9154 (BountiesMobileQuestBarExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj4;

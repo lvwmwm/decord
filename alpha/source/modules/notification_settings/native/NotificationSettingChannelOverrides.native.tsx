@@ -1,25 +1,25 @@
-// Module ID: 18321
-// Function ID: 18322
+// Module ID: 18483
+// Function ID: 18484
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2067, 6790, 4717, 1389, 1085, 21, 5090, 587, 558, 576, 504, 6656, 6791, 5417, 6099, 1126, 4788, 6729, 6184, 6192, 8134, 10210, 6730, 1200, 8334, 6735, 2]
+// Dependencies: [32, 19, 17, 2068, 6797, 4719, 1390, 1085, 21, 5091, 587, 558, 576, 504, 6663, 6798, 5418, 6101, 1126, 4789, 6736, 6186, 6194, 8142, 10195, 6737, 1200, 8342, 6742, 2]
 
-// Module 18321 (NotificationSettingChannelOverrides)
+// Module 18483 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
-import useChannelName from "useChannelName" /* 5417 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6099 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6791 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4789 */;
+import useChannelName from "useChannelName" /* 5418 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6101 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6798 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6790 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6797 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

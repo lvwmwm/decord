@@ -1,24 +1,24 @@
-// Module ID: 11534
-// Function ID: 11535
+// Module ID: 11463
+// Function ID: 11464
 // Name: PollsActionCreators
-// Dependencies: [5, 4708, 7301, 502, 2063, 7232, 5887, 5428, 7880, 10464, 1085, 38, 5297, 1126, 6102, 6906, 11535, 11537, 5105, 12, 504, 584, 7873, 11546, 4929, 11540, 7167, 9203, 5631, 2]
+// Dependencies: [5, 4710, 7306, 502, 2064, 7237, 5888, 5429, 7889, 10454, 1085, 38, 5298, 1126, 6104, 6913, 11464, 11466, 5106, 12, 504, 584, 7882, 11475, 4930, 11469, 7172, 9237, 5632, 2]
 
-// Module 11534 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6102 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6906 */;
-import DraftStore from "DraftStore" /* 7232 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 11535 */;
+// Module 11463 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6913 */;
+import DraftStore from "DraftStore" /* 7237 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 11464 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4708 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7301 */;
+import LurkingStore from "LurkingStore" /* 4710 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7306 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5887 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7880 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10464 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5888 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7889 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10454 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -142,7 +142,7 @@ function handleShowVotesForAnswer(messageId) {
 function handleUpdateVoteEditingState(channelId) {
   channelId = channelId.channelId;
   const isEditing = channelId.isEditing;
-  authStore2(channelId, channelId.messageId, (showResults) => {
+  authStore3(channelId, channelId.messageId, (showResults) => {
     let flag;
     obj = { channelId, selectedAnswerIds: new Set(), submitting: false, editing: isEditing, showResults: flag };
     flag = undefined;
@@ -239,7 +239,7 @@ let obj = function _optimisticallySetAnswers() {
       await "IconComponent";
       closure_2 = tmp;
       ({ channelId: c0, messageId: c1, answerIds: c2 } = channelId);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -400,7 +400,7 @@ obj = function _handlePollSubmitVote() {
       await "IconComponent";
       answerIds = tmp5;
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -446,7 +446,7 @@ obj = function _handleClearPollVote() {
               channel = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -617,7 +617,7 @@ obj = function _handlePollActionTapped() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1, type: c2 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -681,7 +681,7 @@ obj = function _createPoll() {
                 obj5 = undefined;
                 layout_type = 1;
                 c6 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
             } else if (1 === layout_type) {
               if (arg0 === 1) {
@@ -847,7 +847,7 @@ obj = function _endPollEarly() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

@@ -1,17 +1,17 @@
-// Module ID: 17248
-// Function ID: 17249
+// Module ID: 17398
+// Function ID: 17399
 // Name: ContactSuggestionRow
-// Dependencies: [109, 19, 5079, 1085, 21, 558, 576, 4922, 4810, 1126, 573, 16270, 16269, 16682, 1264, 16683, 10213, 2]
+// Dependencies: [109, 19, 5080, 1085, 21, 558, 576, 4923, 4811, 1126, 573, 16389, 16388, 16806, 1265, 16807, 10198, 2]
 
-// Module 17248 (ContactSuggestionRow)
+// Module 17398 (ContactSuggestionRow)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16270 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16389 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSug
     if (cResult[6] === tmp7.user) {
       tmp11 = cResult[7];
     }
-    const tmpResult = tmp(4810);
+    const tmpResult = tmp(4811);
     sharedValue = tmpResult.useSharedValue(false);
     if (cResult[8] === tmp4) {
       let tmp13;
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSug
               const result = sharedValue.set(closure_0);
             }
           }
-          const tmpResult4 = tmp(16269);
+          const tmpResult4 = tmp(16388);
           const suggestedContactNameForSuggestion = tmpResult4.getSuggestedContactNameForSuggestion(tmp11, tmp7);
           cResult[20] = tmp7;
           cResult[21] = tmp11;

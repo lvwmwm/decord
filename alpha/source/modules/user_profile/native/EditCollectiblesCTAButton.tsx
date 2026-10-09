@@ -1,23 +1,23 @@
-// Module ID: 8272
-// Function ID: 8273
+// Module ID: 8280
+// Function ID: 8281
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 5079, 1087, 1626, 21, 5090, 558, 576, 1630, 504, 8273, 4810, 5374, 4726, 7264, 8274, 1126, 5055, 8275, 8276, 7251, 5054, 5375, 2]
+// Dependencies: [19, 5080, 1087, 1627, 21, 5091, 558, 576, 1631, 504, 8281, 4811, 5375, 4728, 7269, 8282, 1126, 5056, 8283, 8284, 7256, 5055, 5376, 2]
 
-// Module 8272 (EditCollectiblesCTAButton)
+// Module 8280 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl4 from "intl" /* 1126 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import spring from "spring" /* 5374 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8275 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8276 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import spring from "spring" /* 5375 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7256 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8283 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8284 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import createStyles from "createStyles" /* 5090 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

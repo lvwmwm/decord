@@ -1,12 +1,12 @@
-// Module ID: 9631
-// Function ID: 9632
+// Module ID: 9650
+// Function ID: 9651
 // Name: ReportToModStore
-// Dependencies: [4899, 504, 584, 2]
+// Dependencies: [4900, 504, 584, 2]
 
-// Module 9631 (ReportToModStore)
+// Module 9650 (ReportToModStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
 import size from "module_2" /* 2 */;
 
 let map, set;

@@ -1,15 +1,15 @@
-// Module ID: 16537
-// Function ID: 16538
+// Module ID: 16660
+// Function ID: 16661
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 5090, 558, 576, 1200, 4778, 587, 16538, 16539, 16543, 2]
+// Dependencies: [32, 19, 21, 5091, 558, 576, 1200, 4779, 587, 16661, 16662, 16666, 2]
 
-// Module 16537 (useGuildsBarBottomRightBadge)
+// Module 16660 (useGuildsBarBottomRightBadge)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1200 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16538 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 16661 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,9 +46,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
     tmp5 = cResult[1];
   }
   [first, dependencyMap] = react.useState(tmp5);
-  const tmpResult = mentionCount(4778);
+  const tmpResult = mentionCount(4779);
   const token = tmpResult.useToken(first(587).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmpResult2 = mentionCount(4778);
+  const tmpResult2 = mentionCount(4779);
   const token1 = tmpResult2.useToken(first(587).modules.mobile.GUILD_BAR_ITEM_MARGIN);
   const diff = token1 - tmp(1200).BADGE_PADDING;
   if (cResult[2] !== diff) {
@@ -109,8 +109,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
       const obj4 = { position: "bottom-right", containerSize: token, width: diff1 };
       cResult[7] = token;
       cResult[8] = diff1;
-      cResult[9] = first(16538)(obj4);
-      const tmp23 = first(16538)(obj4);
+      cResult[9] = first(16661)(obj4);
+      const tmp23 = first(16661)(obj4);
     } else {
       class L {
         constructor(nativeEvent) {
@@ -188,8 +188,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
         }
         cResult[25] = tmp13;
         cResult[26] = joinRequestState;
-        cResult[27] = jsx(first(16539), { style: tmp13, joinRequestState });
-        const tmp17 = jsx(first(16539), { style: tmp13, joinRequestState });
+        cResult[27] = jsx(first(16662), { style: tmp13, joinRequestState });
+        const tmp17 = jsx(first(16662), { style: tmp13, joinRequestState });
       }
     }
     return tmp20;
@@ -259,7 +259,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
         items2 = [tmp5];
         return obj8;
       } else {
-        return { badge: null, cutout: "Array", cutouts: "toCharArray$esjava$1" };
+        return { badge: null, cutout: "Array", cutouts: "code" };
       }
     }
   }, items1);

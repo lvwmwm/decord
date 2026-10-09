@@ -1,137 +1,186 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 17034
+// Function ID: 17035
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 2063, 21, 558, 576, 6910, 1628, 11728, 11233, 16907, 16913, 2]
+// Dependencies: [19, 2064, 21, 558, 576, 4788, 5371, 6917, 1629, 11664, 10588, 17035, 17041, 2]
 
-// Module 16906 (PortalKeyboardRendererComponent)
+// Module 17034 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6910 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11233 */;
-import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11728 */;
-import MediaKeyboardDefault from "MediaKeyboard" /* 16907 */;
-import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16913 */;
+import useBackPressHandler from "useBackPressHandler" /* 5371 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6917 */;
+import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11664 */;
+import MediaKeyboardDefault from "MediaKeyboard" /* 17035 */;
+import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 17041 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let dependencyMap, importDefault;
+
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboardRendererComponent(arg0) {
-  let FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
   let channelId;
   let chatInputRef;
   let cleanUp;
+  let closure_1;
   let item;
   let state;
-  let tmp6;
-  let type;
-  const obj = react2;
-  const cResult = obj.c(19);
+  let obj = chatInputRef(576);
+  const cResult = obj.c(23);
   ({ item, state, cleanUp } = arg0);
-  ({ channelId, chatInputRef, type } = item);
-  if (cResult[0] !== channelId) {
-    const channel = ChannelStore.getChannel(channelId);
-    cResult[0] = channelId;
-    cResult[1] = channel;
-    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = channel;
-  } else {
-    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = cResult[1];
-  }
-  if (channelId === FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(6910).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
-  }
-  if (cResult[2] !== FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
-    let tmp8;
-    if (null != FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
-      tmp8 = { channel: FAKE_PLACEHOLDER_PRIVATE_CHANNEL, type: "channel" };
-      const obj2 = { channel: FAKE_PLACEHOLDER_PRIVATE_CHANNEL, type: "channel" };
+  ({ channelId, chatInputRef } = item);
+  const type = item.type;
+  const tmp4 = state === chatInputRef(4788).TransitionStates.YEETED;
+  importDefault = tmp4;
+  if (cResult[0] === chatInputRef) {
+    let tmp5;
+    let tmp6;
+    let FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+    let tmp11;
+    if (cResult[1] === tmp4) {
+      tmp5 = cResult[2];
+      tmp6 = cResult[3];
     }
-    cResult[2] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
-    cResult[3] = tmp8;
-    tmp6 = tmp8;
-  } else {
-    tmp6 = cResult[3];
-  }
-  if (null != FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
-    if (undefined !== tmp6) {
-      if (KeyboardTypes.KeyboardTypes.APP_LAUNCHER === type) {
-        if (cResult[4] === chatInputRef) {
-          if (cResult[5] === cleanUp) {
-            if (cResult[6] === tmp6) {
-              let tmp17;
-              if (cResult[7] === state) {
-                tmp17 = cResult[8];
+    const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
+    if (cResult[4] !== channelId) {
+      const channel = ChannelStore.getChannel(channelId);
+      cResult[4] = channelId;
+      cResult[5] = channel;
+      FAKE_PLACEHOLDER_PRIVATE_CHANNEL = channel;
+    } else {
+      FAKE_PLACEHOLDER_PRIVATE_CHANNEL = cResult[5];
+    }
+    if (channelId === chatInputRef(6917).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+      FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(6917).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+    }
+    if (cResult[6] !== FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
+      let tmp13;
+      if (null != FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
+        tmp13 = { channel: FAKE_PLACEHOLDER_PRIVATE_CHANNEL, type: "channel" };
+        const obj2 = { channel: FAKE_PLACEHOLDER_PRIVATE_CHANNEL, type: "channel" };
+      }
+      cResult[6] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+      cResult[7] = tmp13;
+      tmp11 = tmp13;
+    } else {
+      tmp11 = cResult[7];
+    }
+    if (null != FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
+      if (undefined !== tmp11) {
+        if (chatInputRef(1629).KeyboardTypes.APP_LAUNCHER === type) {
+          if (cResult[8] === chatInputRef) {
+            if (cResult[9] === cleanUp) {
+              if (cResult[10] === tmp11) {
+                let tmp23;
+                if (cResult[11] === state) {
+                  tmp23 = cResult[12];
+                }
+                return tmp23;
               }
-              return tmp17;
             }
           }
-        }
-        AppLauncherKeyboardDefault;
-        const tmp21 = <tmp20 context={tmp6} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={AppLauncherTypes.AppLauncherEntrypoint.TEXT} />;
-        cResult[4] = chatInputRef;
-        cResult[5] = cleanUp;
-        cResult[6] = tmp6;
-        cResult[7] = state;
-        cResult[8] = tmp21;
-        tmp17 = tmp21;
-      } else if (KeyboardTypes.KeyboardTypes.MEDIA === type) {
-        if (cResult[9] === chatInputRef) {
-          if (cResult[10] === cleanUp) {
-            if (cResult[11] === FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
-              let tmp13;
-              if (cResult[12] === state) {
-                tmp13 = cResult[13];
+          AppLauncherKeyboardDefault;
+          const tmp27 = <tmp26 context={tmp11} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={chatInputRef(10588).AppLauncherEntrypoint.TEXT} />;
+          cResult[8] = chatInputRef;
+          cResult[9] = cleanUp;
+          cResult[10] = tmp11;
+          cResult[11] = state;
+          cResult[12] = tmp27;
+          tmp23 = tmp27;
+        } else if (chatInputRef(1629).KeyboardTypes.MEDIA === type) {
+          if (cResult[13] === chatInputRef) {
+            if (cResult[14] === cleanUp) {
+              if (cResult[15] === FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
+                let tmp19;
+                if (cResult[16] === state) {
+                  tmp19 = cResult[17];
+                }
+                return tmp19;
               }
-              return tmp13;
             }
           }
-        }
-        const tmp16 = jsx(MediaKeyboardDefault, { channel: FAKE_PLACEHOLDER_PRIVATE_CHANNEL, chatInputRef, onClose: cleanUp, transitionState: state });
-        cResult[9] = chatInputRef;
-        cResult[10] = cleanUp;
-        cResult[11] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
-        cResult[12] = state;
-        cResult[13] = tmp16;
-        tmp13 = tmp16;
-      } else if (KeyboardTypes.KeyboardTypes.EXPRESSION === type) {
-        if (cResult[14] === chatInputRef) {
-          if (cResult[15] === cleanUp) {
-            if (cResult[16] === FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
-              let tmp9;
-              if (cResult[17] === state) {
-                tmp9 = cResult[18];
+          const tmp22 = jsx(MediaKeyboardDefault, { channel: FAKE_PLACEHOLDER_PRIVATE_CHANNEL, chatInputRef, onClose: cleanUp, transitionState: state });
+          cResult[13] = chatInputRef;
+          cResult[14] = cleanUp;
+          cResult[15] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+          cResult[16] = state;
+          cResult[17] = tmp22;
+          tmp19 = tmp22;
+        } else if (chatInputRef(1629).KeyboardTypes.EXPRESSION === type) {
+          if (cResult[18] === chatInputRef) {
+            if (cResult[19] === cleanUp) {
+              if (cResult[20] === FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
+                let tmp15;
+                if (cResult[21] === state) {
+                  tmp15 = cResult[22];
+                }
+                return tmp15;
               }
-              return tmp9;
             }
           }
+          const tmp18 = jsx(ExpressionPickerKeyboardDefault, { channel: FAKE_PLACEHOLDER_PRIVATE_CHANNEL, chatInputRef, onClose: cleanUp, transitionState: state });
+          cResult[18] = chatInputRef;
+          cResult[19] = cleanUp;
+          cResult[20] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+          cResult[21] = state;
+          cResult[22] = tmp18;
+          tmp15 = tmp18;
+        } else {
+          return null;
         }
-        const tmp12 = jsx(ExpressionPickerKeyboardDefault, { channel: FAKE_PLACEHOLDER_PRIVATE_CHANNEL, chatInputRef, onClose: cleanUp, transitionState: state });
-        cResult[14] = chatInputRef;
-        cResult[15] = cleanUp;
-        cResult[16] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
-        cResult[17] = state;
-        cResult[18] = tmp12;
-        tmp9 = tmp12;
-      } else {
-        return null;
       }
     }
+    return null;
   }
-  return null;
+  const fn = function u() {
+    let ref;
+    if (!closure_1) {
+      const obj = useBackPressHandler;
+      return obj.subscribeToBackPress(() => {
+        const current = ref.current;
+        current.closeCustomKeyboard();
+        return true;
+      });
+    }
+  };
+  const items = [chatInputRef, tmp4];
+  cResult[0] = chatInputRef;
+  cResult[1] = tmp4;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp6 = items;
+  tmp5 = fn;
 }) : (function PortalKeyboardRendererComponent(item) {
-  let chatInputRef;
   let cleanUp;
+  let closure_2;
   let state;
-  let type;
   item = item.item;
   const channelId = item.channelId;
-  ({ chatInputRef, type } = item);
+  const chatInputRef = item.chatInputRef;
+  const type = item.type;
   ({ state, cleanUp } = item);
-  const channel = ChannelStore.getChannel(channelId);
-  const items = [channel, channelId];
-  const memo = react.useMemo(() => {
+  dependencyMap = undefined;
+  let channel;
+  let memo;
+  let tmp = channelId;
+  let tmp2 = dependencyMap;
+  const tmp3 = state === channelId(4788).TransitionStates.YEETED;
+  dependencyMap = tmp3;
+  const items = [chatInputRef, tmp3];
+  const layoutEffect = channel.useLayoutEffect(() => {
+    let ref;
+    if (!closure_2) {
+      const obj = useBackPressHandler;
+      return obj.subscribeToBackPress(() => {
+        const current = ref.current;
+        current.closeCustomKeyboard();
+        return true;
+      });
+    }
+  }, items);
+  channel = memo.getChannel(channelId);
+  const items1 = [channel, channelId];
+  memo = channel.useMemo(() => {
     let FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
     if (channelId !== FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       FAKE_PLACEHOLDER_PRIVATE_CHANNEL = channel;
@@ -139,25 +188,25 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       FAKE_PLACEHOLDER_PRIVATE_CHANNEL = FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
     }
     return FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
-  }, items);
-  const items1 = [memo];
-  const memo1 = react.useMemo(() => {
+  }, items1);
+  const items2 = [memo];
+  const memo1 = channel.useMemo(() => {
     let tmp2;
     if (null != memo) {
       tmp2 = { channel: tmp, type: "channel" };
       const obj = { channel: tmp, type: "channel" };
     }
     return tmp2;
-  }, items1);
+  }, items2);
   if (null != memo) {
     if (undefined !== memo1) {
-      if (channelId(memo[6]).KeyboardTypes.APP_LAUNCHER === type) {
-        channel(memo[7]);
-        return <tmp10 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={channelId(memo[8]).AppLauncherEntrypoint.TEXT} />;
-      } else if (channelId(memo[6]).KeyboardTypes.MEDIA === type) {
-        return jsx(channel(memo[9]), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
-      } else if (channelId(memo[6]).KeyboardTypes.EXPRESSION === type) {
-        return jsx(channel(memo[10]), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+      if (tmp(1629).KeyboardTypes.APP_LAUNCHER === type) {
+        chatInputRef(11664);
+        return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(10588).AppLauncherEntrypoint.TEXT} />;
+      } else if (tmp(1629).KeyboardTypes.MEDIA === type) {
+        return jsx(chatInputRef(17035), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+      } else if (tmp(1629).KeyboardTypes.EXPRESSION === type) {
+        return jsx(chatInputRef(17041), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
       } else {
         return null;
       }

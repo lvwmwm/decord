@@ -1,24 +1,24 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16706
+// Function ID: 16707
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 5754, 2063, 6082, 4717, 1389, 1085, 21, 5090, 587, 558, 576, 16534, 504, 8626, 1126, 16537, 5101, 10264, 16584, 10261, 1200, 6164, 2]
+// Dependencies: [19, 502, 5755, 2064, 6084, 4719, 1390, 1085, 21, 5091, 587, 558, 576, 16657, 504, 8634, 1126, 16660, 5102, 10249, 16707, 10246, 1200, 6163, 2]
 
-// Module 16583 (GuildsBarDirectMessage)
+// Module 16706 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import transitionToChannel from "transitionToChannel" /* 5101 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8626 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10264 */;
+import transitionToChannel from "transitionToChannel" /* 5102 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8634 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10249 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5754 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5090 */;
+import CallStore from "CallStore" /* 5755 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6084 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

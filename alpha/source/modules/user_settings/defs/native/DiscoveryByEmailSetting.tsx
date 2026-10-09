@@ -1,21 +1,21 @@
-// Module ID: 14933
-// Function ID: 14934
+// Module ID: 15045
+// Function ID: 15046
 // Name: DiscoveryByEmailSetting
-// Dependencies: [7966, 1085, 1126, 558, 576, 2040, 1402, 12444, 11262, 2]
+// Dependencies: [7974, 1085, 1126, 558, 576, 2041, 1403, 12362, 10629, 2]
 
-// Module 14933 (DiscoveryByEmailSetting)
+// Module 15045 (DiscoveryByEmailSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12444 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12362 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const FlagUtils = tmp(1402);
+const FlagUtils = tmp(1403);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendDiscoveryFlags = Constants.FriendDiscoveryFlags;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscoveryByEmailSettingValue() {

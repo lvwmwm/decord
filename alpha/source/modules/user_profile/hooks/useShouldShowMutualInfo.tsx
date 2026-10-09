@@ -1,12 +1,12 @@
-// Module ID: 12979
-// Function ID: 12980
+// Module ID: 13061
+// Function ID: 13062
 // Name: useShouldShowMutualInfo
-// Dependencies: [1389, 558, 576, 504, 12980, 2]
+// Dependencies: [1390, 558, 576, 504, 13062, 2]
 
-// Module 12979 (useShouldShowMutualInfo)
+// Module 13061 (useShouldShowMutualInfo)
 import react from "react" /* 576 */;
-import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 12980 */;
-import UserStore from "UserStore" /* 1389 */;
+import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 13062 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

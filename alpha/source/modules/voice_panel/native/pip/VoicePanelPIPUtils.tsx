@@ -1,20 +1,20 @@
-// Module ID: 17515
-// Function ID: 17516
+// Module ID: 17667
+// Function ID: 17668
 // Name: VoicePanelPIPUtils
-// Dependencies: [6041, 5893, 502, 11989, 17516, 5113, 11990, 10720, 14124, 587, 2]
+// Dependencies: [6043, 5894, 502, 11926, 17668, 5114, 11927, 10866, 14221, 587, 2]
 // Exports: calculatePIPPositionFromVelocity, clampPIPScale, computePIPParticipantToShow, computePIPSize, getClampedPIPPosition, getPIPMode, getScaledPIPContainerHeight, getVoicePanelPIPBorderRadius
 
-// Module 17515 (VoicePanelPIPUtils)
+// Module 17667 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 587 */;
-import CallConstants from "CallConstants" /* 5113 */;
-import participantHasVideo from "participantHasVideo" /* 10720 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 14124 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
+import CallConstants from "CallConstants" /* 5114 */;
+import participantHasVideo from "participantHasVideo" /* 10866 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 14221 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17516 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11990 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11926 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17668 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11927 */;
 import size_mod from "module_2" /* 2 */;
 
 let PIPReferenceDimensions;

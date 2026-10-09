@@ -1,21 +1,21 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 13610
+// Function ID: 13611
 // Name: PremiumAccountCredit
-// Dependencies: [19, 17, 7098, 1085, 21, 5090, 587, 6851, 558, 576, 4726, 1126, 3277, 5026, 5086, 504, 12, 2]
+// Dependencies: [19, 17, 7103, 1085, 21, 5091, 587, 6858, 558, 576, 4728, 1126, 3277, 5027, 5087, 504, 12, 2]
 
-// Module 13518 (PremiumAccountCredit)
+// Module 13610 (PremiumAccountCredit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4726 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import GameIcon from "GameIcon" /* 6851 */;
+import PremiumUtils from "PremiumUtils" /* 4728 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import GameIcon from "GameIcon" /* 6858 */;
 import react from "react" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7098 */;
+import EntitlementStore from "EntitlementStore" /* 7103 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -201,7 +201,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
                                 let tmp51 = !tmp15;
                                 if (tmp51) {
                                   const obj8 = { style: tmp4.subText, variant: "text-xs/medium", color: "text-default", children: tmp14 };
-                                  tmp51 = metroRequire(tmp(5086).Text, obj8);
+                                  tmp51 = metroRequire(tmp(5087).Text, obj8);
                                 }
                                 cResult[47] = tmp14;
                                 cResult[48] = tmp15;
@@ -322,7 +322,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
           tmp42 = cResult[40];
         }
         const textContainer = tmp4.textContainer;
-        const Text = tmp(5086).Text;
+        const Text = tmp(5087).Text;
         const headerText = tmp4.headerText;
         const intl4 = tmp(1126).intl;
         const obj12 = { planName: displayName };
@@ -368,11 +368,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
     if (tmp9) {
       const obj13 = { style: tmp4.boostIcon, children: metroRequire(BoostGemIcon, obj14) };
       obj14 = { size: "md", color: tmp23(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
-      BoostGemIcon = tmp(5026).BoostGemIcon;
+      BoostGemIcon = tmp(5027).BoostGemIcon;
       tmp43Result = tmp43(tmp39, obj13);
     } else {
       const obj15 = { size: GameIcon.GameIconSizes.SMALL, skuId: tmp5 };
-      const tmp23Result = tmp23(6851);
+      const tmp23Result = tmp23(6858);
       tmp43Result = tmp43(tmp23Result, obj15);
     }
     cResult[37] = tmp9;
@@ -467,7 +467,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
   if (result1) {
     const obj7 = { style: tmp.boostIcon, children: metroRequire(BoostGemIcon, obj8) };
     obj8 = { size: "md", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    BoostGemIcon = tmp2(5026).BoostGemIcon;
+    BoostGemIcon = tmp2(5027).BoostGemIcon;
     tmp22Result = tmp22(tmp20, obj7);
     tmp25 = tmp22;
   } else {
@@ -479,18 +479,18 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Account
   items1 = [tmp22Result, , ];
   const obj10 = { style: tmp.textContainer, children: items2 };
   const obj11 = { style: tmp.headerText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl4.format(intl6.t.LzobT9, { planName: displayName }) };
-  const Text = tmp2(5086).Text;
+  const Text = tmp2(5087).Text;
   intl4 = tmp2(1126).intl;
   items2 = [tmp25(Text, obj11), ];
   let tmp25Result = !tmp16;
   if (tmp25Result) {
     const obj12 = { style: tmp.subText, variant: "text-xs/medium", color: "text-default", children: stringResult };
-    tmp25Result = tmp25(tmp2(5086).Text, obj12);
+    tmp25Result = tmp25(tmp2(5087).Text, obj12);
   }
   items2[1] = tmp25Result;
   items1[1] = metroImportDefault(View, obj10);
   const obj13 = { style: tmp.timeText, variant: "text-md/medium", color: "text-default", children: intl5.format(intl6.t["ess/xl"], { count: months }) };
-  const Text2 = tmp2(5086).Text;
+  const Text2 = tmp2(5087).Text;
   intl5 = tmp2(1126).intl;
   items1[2] = tmp25(Text2, obj13);
   return metroImportDefault(View, obj6);
@@ -725,7 +725,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAccou
       c3 = valueResult;
       const obj2 = { style, children: items1 };
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: intl.string(currentSubscription(1126).t.YugZY0) };
-      const Text = tmp2(5086).Text;
+      const Text = tmp2(5087).Text;
       intl = tmp2(1126).intl;
       items1 = [closure_6(Text, obj3), , , ];
       const obj4 = {
@@ -741,7 +741,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAccou
       keys = Object.keys(valueResult);
       items1[1] = closure_6(c3, obj4);
       const obj5 = { style: tmp.creditDescription, variant: "text-sm/medium", children: intl2.string(currentSubscription(1126).t.Z5b2Gf) };
-      const Text2 = tmp2(5086).Text;
+      const Text2 = tmp2(5087).Text;
       intl2 = tmp2(1126).intl;
       items1[2] = closure_6(Text2, obj5);
       let tmp9Result = null;
@@ -752,7 +752,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAccou
         tmp9Result = null;
         if (currentSubscription.isPurchasedExternally) {
           const obj6 = { style: tmp.creditDescription, variant: "text-sm/medium", children: intl3.string(currentSubscription(1126).t.azRP0E) };
-          const Text3 = tmp2(5086).Text;
+          const Text3 = tmp2(5087).Text;
           intl3 = tmp2(1126).intl;
           tmp9Result = tmp9(Text3, obj6);
         }

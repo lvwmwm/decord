@@ -1,18 +1,18 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 11728
+// Function ID: 11729
 // Name: AppLauncherStore
-// Dependencies: [11233, 504, 584, 2]
+// Dependencies: [10588, 504, 584, 2]
 
-// Module 11791 (AppLauncherStore)
+// Module 11728 (AppLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11233 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10588 */;
 import size from "module_2" /* 2 */;
 
 function handleDismissWithDismissed() {
   let DISMISSED = AppLauncherTypes.AppLauncherCloseReason.DISMISSED;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(11233).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(10588).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherTypes.AppLauncherEntrypoint.NONE;
@@ -23,7 +23,7 @@ function handleDismissWithDismissed() {
 function handleSetActiveCommand() {
   let DISMISSED = AppLauncherTypes.AppLauncherCloseReason.COMMAND;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(11233).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(10588).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherTypes.AppLauncherEntrypoint.NONE;

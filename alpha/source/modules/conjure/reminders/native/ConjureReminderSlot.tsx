@@ -1,17 +1,17 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 17157
+// Function ID: 17158
 // Name: ConjureReminderSlot
-// Dependencies: [32, 19, 17, 5079, 21, 16998, 4810, 558, 576, 504, 5091, 2]
+// Dependencies: [32, 19, 17, 5080, 21, 17154, 4811, 558, 576, 504, 5092, 2]
 
-// Module 17001 (ConjureReminderSlot)
+// Module 17157 (ConjureReminderSlot)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import conjureReminderSlot from "conjureReminderSlot" /* 16998 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import conjureReminderSlot from "conjureReminderSlot" /* 17154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemin
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult4 = tmp(16998);
+  const tmpResult4 = tmp(17154);
   const conjureReminderLayers = tmpResult4.useConjureReminderLayers(reminder);
   const found = conjureReminderLayers.find((leaving) => !leaving.leaving);
   let key;
@@ -85,7 +85,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemin
     }
     num3 = height;
   }
-  const tmpResult5 = tmp(4810);
+  const tmpResult5 = tmp(4811);
   sharedValue = tmpResult5.useSharedValue(0);
   if (cResult[2] === sharedValue) {
     if (cResult[3] === stateFromStores) {
@@ -105,7 +105,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemin
       fn3.__closure = obj2;
       fn3.__workletHash = 13312603429755;
       fn3.__initData = __initData;
-      const tmpResult6 = tmp(4810);
+      const tmpResult6 = tmp(4811);
       const animatedStyle = tmpResult6.useAnimatedStyle(fn3);
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
@@ -210,7 +210,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemin
             }
             return tmp26;
           }
-          const tmp29 = jsx(stateFromStores(4810).View, { style: tmp21, accessibilityLiveRegion: "polite", children: tmp23 });
+          const tmp29 = jsx(stateFromStores(4811).View, { style: tmp21, accessibilityLiveRegion: "polite", children: tmp23 });
           cResult[16] = tmp21;
           cResult[17] = tmp23;
           cResult[18] = tmp29;
@@ -291,7 +291,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemin
   obj = renderReminder(504);
   const items = [onMeasure];
   const stateFromStores = obj.useStateFromStores(items, () => onMeasure.useReducedMotion);
-  obj2 = renderReminder(16998);
+  obj2 = renderReminder(17154);
   const conjureReminderLayers = obj2.useConjureReminderLayers(reminder);
   const found = conjureReminderLayers.find((leaving) => !leaving.leaving);
   let key;
@@ -315,7 +315,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemin
     }
     num = height;
   }
-  const tmpResult = tmp(4810);
+  const tmpResult = tmp(4811);
   sharedValue = tmpResult.useSharedValue(0);
   const items1 = [sharedValue, num, stateFromStores];
   const effect = obj3.useEffect(() => {
@@ -342,7 +342,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemin
       };
     }
   }, items1);
-  const tmpResult2 = tmp(4810);
+  const tmpResult2 = tmp(4811);
   class M {
     constructor() {
       obj = { height: sharedValue.get() };
@@ -370,7 +370,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemin
     });
   }, []);
   const items2 = [closure_9.slot, style, animatedStyle];
-  const View = stateFromStores(4810).View;
+  const View = stateFromStores(4811).View;
   return <View style={items2} accessibilityLiveRegion="polite">{conjureReminderLayers.map((key) => <closure_14 key={arg0.key} reminderKey={arg0.key} leaving={arg0.leaving} onMeasure={onMeasure}>{renderReminder(arg0.key)}</closure_14>)}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;

@@ -1,13 +1,13 @@
-// Module ID: 14678
-// Function ID: 14679
+// Module ID: 14783
+// Function ID: 14784
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 17, 5079, 9095, 558, 576, 504, 2]
+// Dependencies: [19, 17, 5080, 10543, 558, 576, 504, 2]
 
-// Module 14678 (useScrollToUserProfileEditFormSection)
+// Module 14783 (useScrollToUserProfileEditFormSection)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9095 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10543 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

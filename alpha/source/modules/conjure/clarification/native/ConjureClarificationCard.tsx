@@ -1,27 +1,27 @@
-// Module ID: 17012
-// Function ID: 17013
+// Module ID: 17168
+// Function ID: 17169
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5090, 587, 1126, 3827, 558, 576, 17013, 17014, 17015, 5086, 8106, 6210, 17016, 6267, 6181, 6186, 6283, 5375, 16948, 2]
+// Dependencies: [32, 19, 17, 21, 5091, 587, 1126, 3827, 558, 576, 17169, 17170, 17171, 5087, 8114, 6212, 17172, 6269, 6183, 6188, 6290, 5376, 17080, 2]
 
-// Module 17012 (ConjureClarificationCard)
+// Module 17168 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ConjureClarification from "ConjureClarification" /* 17015 */;
+import ConjureClarification from "ConjureClarification" /* 17171 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, closure_12, dependencyMap, id, tmp8;
+let closure_1, dependencyMap, id, tmp8;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-const f127522 = (item) => "" !== item;
+const f127977 = (item) => "" !== item;
 let react = react_mod;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   id = tmp19;
   let closure_11 = tmp20;
   if (cResult[3] !== clarification.questions[bound]) {
-    const tmpResult = tmp(17013);
+    const tmpResult = tmp(17169);
     const isImageQuestionResult = tmpResult.isImageQuestion(clarification.questions[bound]);
     cResult[3] = clarification.questions[bound];
     cResult[4] = isImageQuestionResult;
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   } else {
     tmp21 = cResult[4];
   }
-  closure_12 = tmp21;
+  let closure_12 = tmp21;
   if (true === clarification.questions[bound].multi_select) {
     let tmp24 = first3[tmp19.id];
     if (tmp24 == null) {
@@ -117,10 +117,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     }
     answeredOptionIdsResult = tmp24;
   } else {
-    const tmpResult4 = tmp(17013);
+    const tmpResult4 = tmp(17169);
     answeredOptionIdsResult = tmpResult4.answeredOptionIds(first1[tmp19.id]);
   }
-  const tmpResult5 = tmp(17014);
+  const tmpResult5 = tmp(17170);
   const conjureOwnImages = tmpResult5.useConjureOwnImages(projectId, first1, tmp9);
   if (cResult[5] === first1) {
     if (cResult[6] === clarification) {
@@ -158,8 +158,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                   }
                   let multiSelectAnswerResult = null;
                   if (true === clarification.questions[bound].multi_select) {
-                    const multiSelectAnswer = tmp(17015).multiSelectAnswer;
-                    const tmpResult6 = tmp(17015);
+                    const multiSelectAnswer = tmp(17171).multiSelectAnswer;
+                    const tmpResult6 = tmp(17171);
                     class Z {
                       constructor() {
                         const tmp = disabled || 0 === bound;
@@ -219,7 +219,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                     let tmp49 = null;
                                     if (null != onDismiss) {
                                       const obj7 = { variant: "tertiary", size: "sm", icon: null, onPress: onDismiss, accessibilityLabel: intl.string(onSubmit(3827).qVXlk0) };
-                                      const IconButton = tmp(8106).IconButton;
+                                      const IconButton = tmp(8114).IconButton;
                                       class Z {
                                         constructor() {
                                           const tmp = disabled || 0 === bound;
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                         let tmp56 = null;
                                         if (true === clarification.questions[bound].multi_select) {
                                           const obj8 = { variant: "text-xs/normal", color: "text-muted", children: obj19.string(onSubmit(3827).tE8qbz) };
-                                          const Text2 = tmp(5086).Text;
+                                          const Text2 = tmp(5087).Text;
                                           class Z {
                                             constructor() {
                                               const tmp = disabled || 0 === bound;
@@ -334,7 +334,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                   }
                                                                                   const obj9 = { style: tmp4.card, children: items };
                                                                                   items = [tmp52, tmp55, tmp59, tmp61, tmp64];
-                                                                                  const tmp76 = closure_7(onSubmit(16948), obj9);
+                                                                                  const tmp76 = closure_7(onSubmit(17080), obj9);
                                                                                   cResult[73] = tmp4.card;
                                                                                   cResult[74] = tmp52;
                                                                                   cResult[75] = tmp55;
@@ -368,7 +368,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                 tmp68 = null;
                                                                 if (null != onSubmit) {
                                                                   const obj11 = { variant: "tertiary", size: "sm", text: obj22.string(onSubmit(3827).Pk5lfA), onPress: tmp27 };
-                                                                  const Button = tmp(5375).Button;
+                                                                  const Button = tmp(5376).Button;
                                                                   class Z {
                                                                     constructor() {
                                                                       const tmp = disabled || 0 === bound;
@@ -384,7 +384,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                               const obj13 = { style: tmp4.customField };
                                                               items1[1] = closure_6(View, obj13);
                                                               let tmp72 = tmp17;
-                                                              const Button2 = tmp(5375).Button;
+                                                              const Button2 = tmp(5376).Button;
                                                               const tmp71 = closure_6;
                                                               if (null != onSubmit) {
                                                                 tmp72 = null == tmp34;
@@ -502,7 +502,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                             }
                             if (clarification.questions.length > 1) {
                               const obj17 = { variant: "text-xs/semibold", color: "text-muted", children: obj12.formatToPlainString(onSubmit(3827).yzYUjq, obj18) };
-                              let Text = tmp(5086).Text;
+                              let Text = tmp(5087).Text;
                               class Z {
                                 constructor() {
                                   const tmp = disabled || 0 === bound;
@@ -737,7 +737,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   const bound = Math.min(tmp9[0], length - 1);
   id = tmp12;
   let closure_11 = tmp13;
-  let obj2 = clarification(17013);
+  let obj2 = clarification(17169);
   const isImageQuestionResult = obj2.isImageQuestion(clarification.questions[bound]);
   let c12 = isImageQuestionResult;
   if (true === clarification.questions[bound].multi_select) {
@@ -747,11 +747,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     }
     answeredOptionIdsResult = tmp18;
   } else {
-    let tmp14Result = tmp14(17013);
+    let tmp14Result = tmp14(17169);
     answeredOptionIdsResult = tmp14Result.answeredOptionIds(first[tmp12.id]);
   }
   c13 = answeredOptionIdsResult;
-  let tmp14Result3 = tmp14(17014);
+  let tmp14Result3 = tmp14(17170);
   const conjureOwnImages = tmp14Result3.useConjureOwnImages(projectId, first, tmp4);
   let items = [first, clarification, bound, onSubmit, tmp12.id];
   callback = obj.useCallback((arg0) => {
@@ -832,7 +832,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   }
   let multiSelectAnswerResult = null;
   if (true === clarification.questions[bound].multi_select) {
-    let tmp14Result4 = tmp14(17015);
+    let tmp14Result4 = tmp14(17171);
     multiSelectAnswerResult = tmp14Result4.multiSelectAnswer(tmp12, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp12));
   }
   c17 = multiSelectAnswerResult;
@@ -871,22 +871,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let obj5 = { style: tmp.footer, children: items5 };
   let obj6 = { style: tmp.customField, children: items4 };
   let tmp34 = null;
-  const tmp32 = onSubmit(16948);
+  const tmp32 = onSubmit(17080);
   if (clarification.questions.length > 1) {
     const obj7 = { variant: "text-xs/semibold", color: "text-muted", children: intl.formatToPlainString(onSubmit(3827).yzYUjq, obj8) };
-    let Text = tmp14(5086).Text;
+    let Text = tmp14(5087).Text;
     intl = tmp14(1126).intl;
     obj8 = { index: bound + 1, total: clarification.questions.length };
     tmp34 = closure_6(Text, obj7);
   }
   items4 = [tmp34, ];
   const obj9 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: clarification.questions[bound].question };
-  items4[1] = closure_6(clarification(5086).Text, obj9);
+  items4[1] = closure_6(clarification(5087).Text, obj9);
   items5 = [closure_7(c5, obj6), ];
   let tmp36Result = null;
   if (null != onDismiss) {
-    const obj10 = { variant: "tertiary", size: "sm", icon: closure_6(clarification(6210).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl2.string(onSubmit(3827).qVXlk0) };
-    const IconButton = tmp14(8106).IconButton;
+    const obj10 = { variant: "tertiary", size: "sm", icon: closure_6(clarification(6212).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl2.string(onSubmit(3827).qVXlk0) };
+    const IconButton = tmp14(8114).IconButton;
     intl2 = tmp14(1126).intl;
     tmp36Result = tmp36(IconButton, obj10);
   }
@@ -895,14 +895,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let tmp36Result5 = null;
   if (true === clarification.questions[bound].multi_select) {
     const obj11 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(onSubmit(3827).tE8qbz) };
-    const Text2 = tmp14(5086).Text;
+    const Text2 = tmp14(5087).Text;
     intl3 = tmp14(1126).intl;
     tmp36Result5 = tmp36(Text2, obj11);
   }
   items6[1] = tmp36Result5;
   if (isImageQuestionResult) {
     const obj12 = { projectId, question: clarification.questions[bound], selectedIds: answeredOptionIdsResult, disabled: tmp10, onPick: callback1, own: conjureOwnImages.controlsFor(clarification.questions[bound], tmp10) };
-    const tmp31Result = onSubmit(17016);
+    const tmp31Result = onSubmit(17172);
     tmp36Result6 = tmp36(tmp31Result, obj12);
   } else if (true === clarification.questions[bound].multi_select) {
     const obj13 = {
@@ -933,7 +933,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             str2 = "";
           }
           items[1] = str2;
-          const found = items.filter(f127522);
+          const found = items.filter(f127977);
           joined = undefined;
           if (found.length > 0) {
             joined = found.join(" \u00B7 ");
@@ -942,7 +942,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
         })
     };
     options = tmp12.options;
-    const TableRowGroup = tmp14(6267).TableRowGroup;
+    const TableRowGroup = tmp14(6269).TableRowGroup;
     tmp36Result6 = tmp36(TableRowGroup, obj13);
   } else {
     const options1 = tmp12.options;
@@ -1017,7 +1017,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       onSubmitEditing: callback3,
       returnKeyType: "send"
     };
-    const TextInput = tmp14(6283).TextInput;
+    const TextInput = tmp14(6290).TextInput;
     intl4 = tmp14(1126).intl;
     intl5 = tmp14(1126).intl;
     obj15 = { question: clarification.questions[bound].question };
@@ -1039,7 +1039,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     tmp36Result8 = null;
     if (!tmp10) {
       const obj17 = { variant: "tertiary", size: "sm", text: intl6.string(onSubmit(3827).Pk5lfA), onPress: callback2 };
-      const Button = tmp14(5375).Button;
+      const Button = tmp14(5376).Button;
       intl6 = tmp14(1126).intl;
       tmp36Result8 = tmp36(Button, obj17);
     }
@@ -1047,7 +1047,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   items7 = [tmp36Result8, , ];
   const obj18 = { style: tmp.customField };
   items7[1] = closure_6(c5, obj18);
-  const Button2 = tmp14(5375).Button;
+  const Button2 = tmp14(5376).Button;
   if (!tmp10) {
     tmp10 = null == tmp28;
   }

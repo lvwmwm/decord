@@ -1,42 +1,43 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 14724
+// Function ID: 14725
 // Name: FramesNativeManager
-// Dependencies: [17, 10612, 1382, 10624, 11151, 5298, 1126, 1387, 584, 2]
+// Dependencies: [17, 10772, 1383, 14722, 14725, 10811, 5299, 1126, 2]
 
-// Module 11150 (FramesNativeManager)
+// Module 14724 (FramesNativeManager)
 import react_native from "react-native" /* 17 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
-import react_nativeDefault from "react-native" /* 10624 */;
-import FramesStore from "FramesStore" /* 10612 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import FramesManager from "FramesManager" /* 11151 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import leaveFrame from "leaveFrame" /* 10811 */;
+import react_nativeDefault from "react-native" /* 14722 */;
+import FramesStore from "FramesStore" /* 10772 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import FramesManager from "FramesManager" /* 14725 */;
 import size from "module_2" /* 2 */;
+
+let allFrames;
 
 const NativeEventEmitter = react_native.NativeEventEmitter;
 let nativeEventEmitter = null;
 if (PlatformUtils.isAndroid()) {
-  let self = this;
+  const self = this;
   const self2 = this;
   nativeEventEmitter = new NativeEventEmitter(react_nativeDefault);
 }
 class FramesNativeManager extends FramesManager {
   _initialize() {
-    const self = this;
     super._initialize();
     const lifecycleSubscription = this.lifecycleSubscription;
     if (lifecycleSubscription != null) {
       lifecycleSubscription.remove();
     }
+    let obj = nativeEventEmitter;
     let addListenerResult;
-    const obj = nativeEventEmitter;
     if (nativeEventEmitter != null) {
       addListenerResult = obj.addListener("onHostDestroy", () => {
-        const allFrames = FramesStore.getAllFrames();
+        allFrames = allFrames.getAllFrames();
         for (const item10007 of allFrames) {
-          let leaveFrameResult = self.leaveFrame(item10007.id);
+          let obj = leaveFrame;
+          let leaveFrameResult = obj.leaveFrame(item10007.id);
           continue;
         }
       });
@@ -60,15 +61,6 @@ class FramesNativeManager extends FramesManager {
     actions_AlertActionCreatorsDefault;
     intl = intl2.intl;
     show(obj);
-  }
-  leaveFrame(frameId) {
-    const obj = GlobalUtils;
-    if (obj.isNotNullish(frameId)) {
-      const obj3 = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", frameId, lockState: null, pictureInPictureLockState: null };
-      const obj2 = DispatcherDefault;
-      obj2.dispatch(obj3);
-    }
-    super.leaveFrame(frameId);
   }
 }
 let closure_5 = FramesNativeManager.prototype;

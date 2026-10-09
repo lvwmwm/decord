@@ -1,12 +1,12 @@
-// Module ID: 9626
-// Function ID: 9627
+// Module ID: 9645
+// Function ID: 9646
 // Name: handleContentLinking
-// Dependencies: [5, 6137, 1085, 5940, 6936, 1112, 9627, 2]
+// Dependencies: [5, 6139, 1085, 5941, 6943, 1112, 9646, 2]
 // Exports: default
 
-// Module 9626 (handleContentLinking)
+// Module 9645 (handleContentLinking)
 import Constants from "Constants" /* 1085 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6137 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6139 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let obj = function _handleContentLinking() {
             isAppStartupNavigation = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === c3) {

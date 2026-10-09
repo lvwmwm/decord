@@ -1,16 +1,16 @@
-// Module ID: 16238
-// Function ID: 16239
+// Module ID: 16357
+// Function ID: 16358
 // Name: getJankSurfaceName
-// Dependencies: [19, 4759, 16234, 16233, 4939, 16237, 1381, 2]
+// Dependencies: [19, 4761, 16353, 16352, 4940, 16356, 1382, 2]
 // Exports: attachJankActionSheetReporter, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen, setJankPanelOpen, setJankVoicePanelFocus, setJankVoicePanelTab
 
-// Module 16238 (getJankSurfaceName)
-import useChatLayout from "useChatLayout" /* 4939 */;
-import getJankScreenName from "getJankScreenName" /* 16233 */;
-import react_nativeDefault from "react-native" /* 16237 */;
+// Module 16357 (getJankSurfaceName)
+import useChatLayout from "useChatLayout" /* 4940 */;
+import getJankScreenName from "getJankScreenName" /* 16352 */;
+import react_nativeDefault from "react-native" /* 16356 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4759 */;
-import JankScreenConstants from "JankScreenConstants" /* 16234 */;
+import ActionSheetStore from "ActionSheetStore" /* 4761 */;
+import JankScreenConstants from "JankScreenConstants" /* 16353 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -204,7 +204,7 @@ export const attachJankActionSheetReporter = function attachJankActionSheetRepor
   let tmp = c15;
   if (!tmp) {
     let tmp2 = length;
-    let obj = length(1381);
+    let obj = length(1382);
     if (obj.isAndroid()) {
       c15 = true;
       length = ActionSheetStore.getStack().length;

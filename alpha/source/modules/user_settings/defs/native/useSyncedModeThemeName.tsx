@@ -1,11 +1,11 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15514
+// Function ID: 15515
 // Name: useSyncedModeThemeName
-// Dependencies: [1205, 1252, 558, 576, 1251, 1126, 2795, 504, 2]
+// Dependencies: [1205, 1253, 558, 576, 1252, 1126, 2795, 504, 2]
 
-// Module 15401 (useSyncedModeThemeName)
-import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
+// Module 15514 (useSyncedModeThemeName)
+import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
 import _modDef2795 from "module_2795" /* 2795 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

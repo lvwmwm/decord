@@ -1,18 +1,18 @@
-// Module ID: 6295
-// Function ID: 6296
+// Module ID: 6302
+// Function ID: 6303
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1498, 1085, 21, 558, 576, 6296, 5392, 5360, 6297, 4787, 4780, 2]
+// Dependencies: [19, 17, 1499, 1085, 21, 558, 576, 6303, 5393, 5361, 6304, 4788, 4781, 2]
 // Exports: NativeTextInput
 
-// Module 6295 (NativeTextInput)
+// Module 6302 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 4780 */;
-import native2 from "native" /* 4787 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6297 */;
+import native from "native" /* 4781 */;
+import native2 from "native" /* 4788 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6304 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1498 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5392);
+const useMountEffect = tmp(5393);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "Array", defaultValue: "Reflect" };
+          const obj2 = { value: "Array", defaultValue: "Set" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       current.setNativeProps(obj);
     }
   });
-  return { value: "Array", defaultValue: "Reflect" };
+  return { value: "Array", defaultValue: "Set" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {

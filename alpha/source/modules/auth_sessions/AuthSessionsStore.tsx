@@ -1,9 +1,9 @@
-// Module ID: 14869
-// Function ID: 14870
+// Module ID: 14979
+// Function ID: 14980
 // Name: AuthSessionsStore
 // Dependencies: [504, 584, 2]
 
-// Module 14869 (AuthSessionsStore)
+// Module 14979 (AuthSessionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

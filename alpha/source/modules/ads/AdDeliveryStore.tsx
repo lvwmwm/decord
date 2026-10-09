@@ -1,21 +1,21 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7381
+// Function ID: 7382
 // Name: AdDeliveryStore
-// Dependencies: [1102, 7377, 569, 5984, 504, 5983, 584, 2]
+// Dependencies: [1102, 7382, 569, 5986, 504, 5985, 584, 2]
 
-// Module 7376 (AdDeliveryStore)
+// Module 7381 (AdDeliveryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import AdPlacement from "AdPlacement" /* 5983 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7377 */;
+import AdPlacement from "AdPlacement" /* 5985 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7382 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const AdCreativeType = tmp(5984);
+const AdCreativeType = tmp(5986);
 let closure_9 = 30 * DurationsDefault.Millis.SECOND;
 let closure_10 = 10 * DurationsDefault.Millis.MINUTE;
 new Map();
@@ -29,22 +29,22 @@ let closure_11 = null;
 let c12 = false;
 const Store = get_initializedDefault.Store;
 class AdDeliveryStore extends Store {
-  isFetchingAdToDeliverByPlacement(MOBILE_HOME_DOCK_AREA) {
+  isFetchingAdToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP) {
     let flag;
     const obj = map;
     if (map != null) {
-      flag = obj.get(MOBILE_HOME_DOCK_AREA);
+      flag = obj.get(QUEST_HOME_BANNER_DESKTOP);
     }
     if (flag == null) {
       flag = false;
     }
     return flag;
   }
-  canRefreshAd(MOBILE_HOME_DOCK_AREA) {
+  canRefreshAd(QUEST_HOME_BANNER_DESKTOP) {
     let value;
     const obj = map4;
     if (map4 != null) {
-      value = obj.get(MOBILE_HOME_DOCK_AREA);
+      value = obj.get(QUEST_HOME_BANNER_DESKTOP);
     }
     let tmp3 = null == value;
     if (!tmp3) {

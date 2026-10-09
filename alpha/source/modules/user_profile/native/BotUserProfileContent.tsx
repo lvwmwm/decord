@@ -1,20 +1,20 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 13034
+// Function ID: 13035
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1389, 6891, 6830, 21, 8343, 8332, 8345, 1630, 8290, 504, 5405, 4922, 6997, 8344, 10504, 8329, 8340, 6872, 4765, 8346, 4810, 12955, 8357, 10489, 5054, 10503, 1999, 10507, 1126, 12978, 12981, 10639, 12982, 5375, 8174, 587, 5940, 7001, 12983, 11223, 6868, 13037, 13040, 2]
+// Dependencies: [19, 17, 1390, 6898, 6837, 21, 8351, 8340, 8353, 1631, 8298, 504, 5406, 4923, 7004, 8352, 10494, 8337, 8348, 6879, 4767, 8354, 4811, 13035, 8365, 10479, 5055, 10493, 2000, 10497, 1126, 13060, 13063, 10787, 13064, 5376, 8182, 587, 5941, 7008, 13065, 10578, 6875, 13119, 13122, 2]
 
-// Module 12954 (BotUserProfileContent)
+// Module 13034 (BotUserProfileContent)
 import react_native from "react-native" /* 17 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
-import ClipboardUtils from "ClipboardUtils" /* 6872 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6837 */;
+import ClipboardUtils from "ClipboardUtils" /* 6879 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7008 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 6891 */;
+import UserStore from "UserStore" /* 1390 */;
+import Constants from "Constants" /* 6898 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -166,7 +166,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
               ActionSheetActionCreatorsDefault;
               const obj = { user, guildId: guild_id, channelId: id };
               id = undefined;
-              const tmp2 = asyncRequire(10503, dependencyMap.paths);
+              const tmp2 = asyncRequire(10493, dependencyMap.paths);
               if (channel != null) {
                 id = channel.id;
               }

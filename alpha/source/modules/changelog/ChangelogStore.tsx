@@ -1,15 +1,15 @@
-// Module ID: 7002
-// Function ID: 7003
+// Module ID: 7009
+// Function ID: 7010
 // Name: ChangelogStore
-// Dependencies: [2128, 1243, 2114, 510, 2040, 504, 584, 2]
+// Dependencies: [2128, 1244, 2114, 510, 2041, 504, 584, 2]
 
-// Module 7002 (ChangelogStore)
+// Module 7009 (ChangelogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserSettings from "UserSettings" /* 2040 */;
+import UserSettings from "UserSettings" /* 2041 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ChangelogConstants from "ChangelogConstants" /* 2114 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let c8 = null;
 let id = null;
 let c10 = null;
 const lastChangeLogDate = "lastChangeLogDate";
-const lastSeenChangelogId = null;
+const authStore2 = null;
 let date = null;
 let set = new Set();
 const Store = get_initializedDefault.Store;

@@ -1,83 +1,84 @@
-// Module ID: 13680
-// Function ID: 13681
+// Module ID: 13773
+// Function ID: 13774
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8292, 7098, 1085, 1391, 21, 5090, 587, 558, 576, 6267, 7122, 1502, 1630, 504, 5629, 12, 7125, 13681, 10081, 8284, 13524, 584, 7104, 7127, 8297, 6671, 6675, 9329, 13682, 5086, 1126, 13683, 13689, 13691, 13694, 13696, 2661, 13697, 6158, 10472, 6677, 2]
+// Dependencies: [32, 19, 17, 8300, 7103, 1085, 1392, 21, 5091, 587, 558, 576, 6269, 7127, 1503, 1631, 504, 5630, 12, 7130, 9100, 10066, 8292, 13616, 584, 7109, 7132, 8305, 6678, 6682, 9367, 6163, 13774, 5087, 1126, 13775, 13781, 13783, 13786, 13788, 2661, 13789, 6160, 10462, 6684, 2]
 
-// Module 13680 (UserSettingsPremiumGifting)
-import _modDef12 from "module_12" /* 12 */;
+// Module 13773 (UserSettingsPremiumGifting)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import _modDef2661 from "module_2661" /* 2661 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5629 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6158 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6675 */;
-import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7122 */;
-import BadgeId from "BadgeId" /* 8284 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8297 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9329 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13682 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13683 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13689 */;
-import PremiumTierCardDefault from "PremiumTierCard" /* 13691 */;
-import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13694 */;
-import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13696 */;
-import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13697 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5630 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6160 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6678 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6682 */;
+import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7127 */;
+import BadgeId from "BadgeId" /* 8292 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8305 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9367 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13774 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13775 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13781 */;
+import PremiumTierCardDefault from "PremiumTierCard" /* 13783 */;
+import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13786 */;
+import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13788 */;
+import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13789 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8292 */;
-import EntitlementStore from "EntitlementStore" /* 7098 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8300 */;
+import EntitlementStore from "EntitlementStore" /* 7103 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, constants, constants2, dependencyMap, importDefault, navigation, waitResult;
+let _require, constants2, dependencyMap, importDefault, navigation;
 
 let StyleSheet;
 let c10;
+let c9;
 let closure_12;
 let closure_14;
 let closure_15;
-let closure_16;
 let hasOwnProperty;
 let map1;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let tmp;
+let tmp8;
 let unpackModuleId;
-const TableRowGroup = tmp(6267);
+const _modDef12 = tmp8(12);
+const TableRowGroup = tmp(6269);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-({ Image: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
-({ UserSettingsSections: c10, AnalyticsPages: unpackModuleId } = Constants);
-({ PremiumTypes: closure_12, SubscriptionPlans: map1 } = PremiumConstants);
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
+({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet } = react_native);
+({ UserSettingsSections: c9, AnalyticsPages: c10 } = Constants);
+({ PremiumTypes: unpackModuleId, SubscriptionPlans: closure_12 } = PremiumConstants);
+({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { scrollView: obj2, giftingSettingsContainer: { flex: 1 }, inventorySectionWrapper: { flex: 1 }, giftPurchaseSectionWrapper: { flex: 1, paddingTop: 36, paddingBottom: 16 }, emptyGiftLinks: obj3, emptyImage: { marginRight: 18 }, emptyGiftHeader: { lineHeight: 20 }, emptyGiftDescription: { flex: 1 }, emptyGiftInformation: { marginTop: 8 }, titleWrapper: { paddingTop: 28, paddingBottom: 8 }, cardText: { lineHeight: 18 }, tierCard: { marginTop: 16 }, giftPurchaseButton: { marginTop: 8, height: 40 }, buttonWrapper: { marginTop: 16 }, loading: { marginTop: 32 }, warningMargins: { marginHorizontal: 16 } };
 obj2 = { paddingHorizontal: nativeDefault.modules.mobile.GIFTING_SETTINGS_PADDING_HORIZONTAL };
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, flexDirection: "row", alignItems: "center", paddingVertical: 16, borderWidth: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-let closure_17 = createStyles(obj);
+let closure_16 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSectionTitle(title) {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSectionTitle(title) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
   title = title.title;
   if (cResult[0] !== title) {
     const obj2 = { title };
-    const tmp6 = authStore2(TableRowGroup.TableRowGroupTitle, obj2);
+    const tmp6 = map1(TableRowGroup.TableRowGroupTitle, obj2);
     cResult[0] = title;
     cResult[1] = tmp6;
     tmp4 = tmp6;
@@ -86,27 +87,27 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Giftin
   }
   return tmp4;
 }) : (function GiftingSectionTitle(title) {
-  return authStore2(TableRowGroup.TableRowGroupTitle, { title: title.title });
+  return map1(TableRowGroup.TableRowGroupTitle, { title: title.title });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsPremiumGifting(recipientUserId) {
   let analyticsLocation;
-  let closure_11;
+  let claimedOutboundPromotionCodeMap;
+  let closure_10;
   let closure_2;
-  let enabled;
-  let obj5;
   let ref;
-  let tmp10;
   let tmp11;
-  let tmp14;
-  let tmp21;
+  let tmp12;
+  let tmp15;
+  let tmp20;
   let tmp22;
-  let tmp26;
+  let tmp23;
   let tmp27;
-  let tmp29;
-  let tmp30;
+  let tmp28;
+  let tmp31;
   let tmp32;
   let tmp34;
+  let tmp36;
   let tmp4;
   let tmp = recipientUserId;
   const tmp2 = dependencyMap;
@@ -127,177 +128,150 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     tmp4 = cResult[1];
   }
   importDefault = tmp4;
-  const tmp7 = closure_17();
+  const tmp7 = closure_16();
   dependencyMap = tmp7;
   useStoreConnectionErrorAlertDefault();
-  let tmpResult = tmp(1502);
+  let tmpResult = tmp(1503);
   navigation = tmpResult.useNavigation();
   const bottom = useSafeAreaInsetsDefault().bottom;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [enabled];
-    class U {
-      constructor() {
-        return enabled.getGiftable();
-      }
-    }
+    let items = [claimedOutboundPromotionCodeMap];
+    const fn = function x() {
+      return claimedOutboundPromotionCodeMap.getGiftable();
+    };
     cResult[2] = items;
-    cResult[3] = U;
-    tmp11 = U;
-    tmp10 = items;
+    cResult[3] = fn;
+    tmp12 = fn;
+    tmp11 = items;
   } else {
-    tmp10 = cResult[2];
-    tmp11 = cResult[3];
+    tmp11 = cResult[2];
+    tmp12 = cResult[3];
   }
   const tmpResult6 = tmp(504);
-  const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp10, tmp11);
+  const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp11, tmp12);
   if (cResult[4] !== stateFromStoresArray) {
+    let tmp16;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class W {
+      class L {
         constructor(skuId) {
           const obj = recipientUserId(closure_2[17]);
           return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
         }
       }
-      cResult[6] = W;
-      class U {
-        constructor() {
-          return enabled.getGiftable();
-        }
-      }
+      cResult[6] = L;
+      tmp16 = L;
     } else {
-      class W {
+      class L {
         constructor(skuId) {
           const obj = recipientUserId(closure_2[17]);
           return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
         }
       }
     }
-    class U {
-      constructor() {
-        return enabled.getGiftable();
-      }
-    }
-    const groupByResult = obj5.groupBy(stateFromStoresArray, tmp15);
+    const tmp8Result = _modDef12;
+    const groupByResult = tmp8Result.groupBy(stateFromStoresArray, tmp16);
     cResult[4] = stateFromStoresArray;
     cResult[5] = groupByResult;
-    tmp14 = groupByResult;
+    tmp15 = groupByResult;
   } else {
-    class W {
+    class L {
       constructor(skuId) {
         const obj = recipientUserId(closure_2[17]);
         return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
       }
     }
   }
-  react = tmp14;
-  const tmpResult7 = tmp(7125);
+  react = tmp15;
+  const tmpResult7 = tmp(7130);
   const isPaymentsBlocked = tmpResult7.useIsPaymentsBlocked();
-  const tmpResult8 = tmp(13681);
+  const tmpResult8 = tmp(9100);
   const outboundPromotions = tmpResult8.useOutboundPromotions();
   const promotionsLoaded = outboundPromotions.promotionsLoaded;
   const activeOutboundPromotions = outboundPromotions.activeOutboundPromotions;
   const claimedEndedOutboundPromotions = outboundPromotions.claimedEndedOutboundPromotions;
-  const claimedOutboundPromotionCodeMap = outboundPromotions.claimedOutboundPromotionCodeMap;
+  claimedOutboundPromotionCodeMap = outboundPromotions.claimedOutboundPromotionCodeMap;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class W {
+    class L {
       constructor(skuId) {
         const obj = recipientUserId(closure_2[17]);
         return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
       }
     }
-    cResult[7] = tmp20;
-    class U {
-      constructor() {
-        return enabled.getGiftable();
-      }
-    }
+    cResult[7] = tmp21;
+    tmp20 = tmp21;
   } else {
-    class W {
+    class L {
       constructor(skuId) {
         const obj = recipientUserId(closure_2[17]);
         return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
       }
     }
   }
-  const GiftingBadgeExperiment = tmp(10081).GiftingBadgeExperiment;
-  enabled = GiftingBadgeExperiment.useConfig(tmp19).enabled;
+  const GiftingBadgeExperiment = tmp(10066).GiftingBadgeExperiment;
+  const enabled = GiftingBadgeExperiment.useConfig(tmp20).enabled;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class W {
+    class L {
       constructor(skuId) {
         const obj = recipientUserId(closure_2[17]);
         return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
       }
     }
-    let items1 = [claimedOutboundPromotionCodeMap];
-    class Z {
+    let items1 = [claimedEndedOutboundPromotions];
+    class K {
       constructor() {
-        return claimedOutboundPromotionCodeMap.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
+        return claimedEndedOutboundPromotions.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
       }
     }
     cResult[8] = items1;
-    cResult[9] = Z;
-    tmp22 = Z;
-    tmp21 = items1;
+    cResult[9] = K;
+    tmp23 = K;
+    tmp22 = items1;
   } else {
-    class W {
+    class L {
       constructor(skuId) {
         const obj = recipientUserId(closure_2[17]);
         return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
       }
     }
-    tmp22 = cResult[9];
+    tmp23 = cResult[9];
   }
   const tmpResult9 = tmp(504);
-  const stateFromStores = tmpResult9.useStateFromStores(tmp21, tmp22);
+  const stateFromStores = tmpResult9.useStateFromStores(tmp22, tmp23);
   let obj9 = react;
-  const tmp24 = navigation(react.useState(false), 2);
-  constants = tmp24[0];
-  constants2 = tmp24[1];
-  const tmpResult10 = tmp(13524);
+  const tmp25 = navigation(react.useState(false), 2);
+  constants2 = tmp25[0];
+  let closure_11 = tmp25[1];
+  const tmpResult10 = tmp(13616);
   const subscriptionPlansLoaded = tmpResult10.useSubscriptionPlansLoaded();
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
-      constructor() {
-        obj = closure_1(closure_2[24]);
-        waitResult = obj.wait(() => {
-          const obj = recipientUserId(closure_2[25]);
-          const giftableEntitlements = obj.fetchGiftableEntitlements();
-          giftableEntitlements.then(() => { /* body not rendered: F154578 */ });
-          const obj2 = analyticsLocation(closure_2[26]);
-          obj2.init();
-        });
-        return;
+    class L {
+      constructor(skuId) {
+        const obj = recipientUserId(closure_2[17]);
+        return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
       }
     }
     let items2 = [];
-    class Z {
+    class K {
       constructor() {
-        return claimedOutboundPromotionCodeMap.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
+        return claimedEndedOutboundPromotions.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
       }
     }
-    cResult[11] = X;
-    tmp27 = X;
-    tmp26 = items2;
+    cResult[11] = tmp29;
+    tmp28 = tmp29;
+    tmp27 = items2;
   } else {
-    class X {
-      constructor() {
-        obj = closure_1(closure_2[24]);
-        waitResult = obj.wait(() => {
-          const obj = recipientUserId(closure_2[25]);
-          const giftableEntitlements = obj.fetchGiftableEntitlements();
-          giftableEntitlements.then(() => { /* body not rendered: F154578 */ });
-          const obj2 = analyticsLocation(closure_2[26]);
-          obj2.init();
-        });
-        return;
+    class L {
+      constructor(skuId) {
+        const obj = recipientUserId(closure_2[17]);
+        return obj.makeComboId(skuId.skuId, skuId.subscriptionPlanId, skuId.giftStyle);
       }
     }
-    tmp27 = cResult[11];
+    tmp28 = cResult[11];
   }
-  const effect = obj9.useEffect(tmp27, tmp26);
+  const effect = obj9.useEffect(tmp28, tmp27);
   if (cResult[12] !== enabled) {
-    class J {
+    class X {
       constructor() {
         const tmp = enabled;
         if (tmp) {
@@ -307,18 +281,18 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       }
     }
     const items3 = [enabled];
-    class Z {
+    class K {
       constructor() {
-        return claimedOutboundPromotionCodeMap.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
+        return claimedEndedOutboundPromotions.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
       }
     }
     cResult[12] = enabled;
-    cResult[13] = J;
+    cResult[13] = X;
     cResult[14] = items3;
-    tmp30 = items3;
-    tmp29 = J;
+    tmp32 = items3;
+    tmp31 = X;
   } else {
-    class J {
+    class X {
       constructor() {
         const tmp = enabled;
         if (tmp) {
@@ -327,11 +301,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
     }
-    tmp30 = cResult[14];
+    tmp32 = cResult[14];
   }
-  const effect1 = obj9.useEffect(tmp29, tmp30);
+  const effect1 = obj9.useEffect(tmp31, tmp32);
   if (cResult[15] !== navigation) {
-    class J {
+    class X {
       constructor() {
         const tmp = enabled;
         if (tmp) {
@@ -341,15 +315,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       }
     }
     cResult[15] = navigation;
-    class Z {
+    class K {
       constructor() {
-        return claimedOutboundPromotionCodeMap.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
+        return claimedEndedOutboundPromotions.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
       }
     }
-    cResult[16] = tmp33;
-    tmp32 = tmp33;
+    cResult[16] = tmp35;
+    tmp34 = tmp35;
   } else {
-    class J {
+    class X {
       constructor() {
         const tmp = enabled;
         if (tmp) {
@@ -359,9 +333,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       }
     }
   }
-  const onClick = tmp32;
+  const onClick = tmp34;
   if (cResult[17] !== navigation) {
-    class J {
+    class X {
       constructor() {
         const tmp = enabled;
         if (tmp) {
@@ -371,15 +345,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       }
     }
     cResult[17] = navigation;
-    class Z {
+    class K {
       constructor() {
-        return claimedOutboundPromotionCodeMap.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
+        return claimedEndedOutboundPromotions.getBadgeById(recipientUserId(closure_2[22]).BadgeId.GIFTING);
       }
     }
-    cResult[18] = tmp35;
-    tmp34 = tmp35;
+    cResult[18] = tmp37;
+    tmp36 = tmp37;
   } else {
-    class J {
+    class X {
       constructor() {
         const tmp = enabled;
         if (tmp) {
@@ -389,9 +363,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       }
     }
   }
-  const onClick2 = tmp34;
+  const onClick2 = tmp36;
   if (cResult[19] === tmp7.emptyGiftDescription) {
-    class J {
+    class X {
       constructor() {
         const tmp = enabled;
         if (tmp) {
@@ -407,20 +381,20 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     let items;
     let items1;
     const obj = { style: closure_2.emptyGiftLinks, children: items };
-    items = [, ];
     const obj2 = { style: closure_2.emptyImage, source: AssetRegistryDefault };
-    items[0] = authStore2(hasOwnProperty, obj2);
+    const tmp = FastImageDefault;
+    items = [map1(tmp, obj2), ];
     const obj3 = { style: closure_2.emptyGiftDescription, accessible: true, children: items1 };
     const obj4 = { style: closure_2.emptyGiftHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl9.t.B1qgZn) };
     const Text = Text_Text.Text;
     intl = intl9.intl;
-    items1 = [authStore2(Text, obj4), ];
+    items1 = [map1(Text, obj4), ];
     const obj5 = { style: closure_2.emptyGiftInformation, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl9.t["OV/u0n"]) };
     const Text2 = Text_Text.Text;
     intl2 = intl9.intl;
-    items1[1] = authStore2(Text2, obj5);
-    items[1] = authStore3(metroRequire, obj3);
-    return authStore3(metroRequire, obj);
+    items1[1] = map1(Text2, obj5);
+    items[1] = authStore3(hasOwnProperty, obj3);
+    return authStore3(hasOwnProperty, obj);
   }
   cResult[19] = tmp7.emptyGiftDescription;
   cResult[20] = tmp7.emptyGiftHeader;
@@ -480,7 +454,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   _slicedToArray = undefined;
   let enabled;
   c5 = undefined;
-  const tmp2 = closure_17();
+  const tmp2 = closure_16();
   stateFromStoresArray(memo[13])();
   let obj2 = require("useNavigation");
   _require = obj2.useNavigation();
@@ -530,26 +504,26 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }, items3);
   const obj8 = { paddingBottom: bottom + stateFromStoresArray(memo[9]).space.PX_16 };
   if (isPaymentsBlocked) {
-    const obj9 = { style: tmp2.giftingSettingsContainer, children: closure_14(closure_7, obj10) };
-    obj10 = { ref: ref.ref, contentInset: { top: 40 }, contentContainerStyle: obj8, style: tmp2.scrollView, children: closure_14(stateFromStoresArray(memo[42]), {}) };
-    tmp17Result8 = closure_14(closure_6, obj9);
+    const obj9 = { style: tmp2.giftingSettingsContainer, children: closure_13(closure_6, obj10) };
+    obj10 = { ref: ref.ref, contentInset: { top: 40 }, contentContainerStyle: obj8, style: tmp2.scrollView, children: closure_13(stateFromStoresArray(memo[43]), {}) };
+    tmp17Result8 = closure_13(c5, obj9);
   } else {
     const obj11 = { style: tmp2.giftingSettingsContainer, children: null };
-    const items4 = [closure_14(tmp3(memo[43]), {}), ];
+    const items4 = [closure_13(tmp3(memo[44]), {}), ];
     const obj12 = { ref: ref.ref, style: tmp2.scrollView, contentContainerStyle: obj8, children: null };
-    const tmp20 = closure_7;
+    const tmp20 = closure_6;
     if (enabled) {
       enabled = null != stateFromStores;
     }
     if (enabled) {
       const obj13 = { children: items5 };
-      const obj14 = { style: tmp2.titleWrapper, children: closure_14(closure_18, obj15) };
-      obj15 = { title: intl.string(stateFromStoresArray(memo[39]).sFokBp) };
-      intl = tmp6(tmp4[33]).intl;
-      items5 = [closure_14(closure_6, obj14), ];
+      const obj14 = { style: tmp2.titleWrapper, children: closure_13(closure_17, obj15) };
+      obj15 = { title: intl.string(stateFromStoresArray(memo[40]).sFokBp) };
+      intl = tmp6(tmp4[34]).intl;
+      items5 = [closure_13(c5, obj14), ];
       const obj16 = { analyticsLocation };
-      items5[1] = closure_14(stateFromStoresArray(memo[40]), obj16);
-      enabled = tmp17(closure_16, obj13);
+      items5[1] = closure_13(stateFromStoresArray(memo[41]), obj16);
+      enabled = tmp17(closure_15, obj13);
     }
     const items6 = [enabled, , ];
     if (tmp13) {
@@ -563,18 +537,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
               let tmp17Result;
               if (0 === claimedEndedOutboundPromotions.length) {
                 const obj17 = { style: tmp2.emptyGiftLinks, children: items7 };
-                const obj18 = { style: tmp2.emptyImage, source: stateFromStoresArray(memo[31]) };
-                items7 = [closure_14(c5, obj18), ];
+                const obj18 = { style: tmp2.emptyImage, source: stateFromStoresArray(memo[32]) };
+                const tmp3Result = stateFromStoresArray(memo[31]);
+                items7 = [closure_13(tmp3Result, obj18), ];
                 const obj19 = { style: tmp2.emptyGiftDescription, accessible: true, children: items8 };
                 const obj20 = { style: tmp2.emptyGiftHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl3.string(require("intl").t.B1qgZn) };
-                const Text = tmp6(tmp4[32]).Text;
-                intl3 = tmp6(tmp4[33]).intl;
-                items8 = [closure_14(Text, obj20), ];
+                const Text = tmp6(tmp4[33]).Text;
+                intl3 = tmp6(tmp4[34]).intl;
+                items8 = [closure_13(Text, obj20), ];
                 const obj21 = { style: tmp2.emptyGiftInformation, variant: "text-sm/medium", color: "text-default", children: intl4.string(require("intl").t["OV/u0n"]) };
-                const Text2 = tmp6(tmp4[32]).Text;
-                intl4 = tmp6(tmp4[33]).intl;
-                items8[1] = closure_14(Text2, obj21);
-                items7[1] = closure_15(closure_6, obj19);
+                const Text2 = tmp6(tmp4[33]).Text;
+                intl4 = tmp6(tmp4[34]).intl;
+                items8[1] = closure_13(Text2, obj21);
+                items7[1] = closure_14(c5, obj19);
                 tmp17Result = tmp17(tmp18, obj17);
               }
               tmp19Result = tmp17Result;
@@ -584,31 +559,31 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           const obj22 = { style: tmp2.inventorySectionWrapper, children: items10 };
           if (activeOutboundPromotions.length + claimedEndedOutboundPromotions.length > 0) {
             const obj23 = { children: items9 };
-            const obj24 = { style: tmp2.titleWrapper, children: closure_14(closure_18, obj25) };
+            const obj24 = { style: tmp2.titleWrapper, children: closure_13(closure_17, obj25) };
             obj25 = { title: intl8.string(require("intl").t.wFsj3B) };
-            intl8 = tmp6(tmp4[33]).intl;
+            intl8 = tmp6(tmp4[34]).intl;
             items9 = [
-              closure_14(closure_6, obj24),
+              closure_13(c5, obj24),
               claimedEndedOutboundPromotions.map((code) => {
                           const outboundPromotion = code.promotion;
-                          return closure_1_14(stateFromStoresArray(memo[34]), { outboundPromotion, code: code.code }, outboundPromotion.id);
+                          return closure_1_13(stateFromStoresArray(memo[35]), { outboundPromotion, code: code.code }, outboundPromotion.id);
                         }),
               activeOutboundPromotions.map((outboundPromotion) => {
                           const obj = { outboundPromotion, code: c3[outboundPromotion.id] };
-                          return authStore2(OutboundPromotionCardDefault, obj, outboundPromotion.id);
+                          return map1(OutboundPromotionCardDefault, obj, outboundPromotion.id);
                         })
             ];
-            tmp17Result5 = tmp17(closure_16, obj23);
+            tmp17Result5 = tmp17(closure_15, obj23);
           }
           items10 = [tmp17Result5, ];
           let tmp17Result6 = null;
           if (keys.length > 0) {
             const obj26 = { children: items11 };
-            const obj27 = { style: tmp2.titleWrapper, children: closure_14(closure_18, obj28) };
+            const obj27 = { style: tmp2.titleWrapper, children: closure_13(closure_17, obj28) };
             obj28 = { title: intl2.string(require("intl").t["9KeUbY"]) };
-            intl2 = tmp6(tmp4[33]).intl;
+            intl2 = tmp6(tmp4[34]).intl;
             items11 = [
-              closure_14(closure_6, obj27),
+              closure_13(c5, obj27),
               keys.map((item) => {
                           let giftStyle;
                           let skuId;
@@ -617,16 +592,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                           ({ skuId, subscriptionPlanId, giftStyle } = obj.parseComboId(item));
                           const obj2 = { skuId, subscriptionPlanId, entitlements: memo[item], giftStyle };
                           obj.parseComboId(item);
-                          return authStore2(EntitlementGiftGroupCardDefault, obj2, item);
+                          return map1(EntitlementGiftGroupCardDefault, obj2, item);
                         })
             ];
-            tmp17Result6 = tmp17(closure_16, obj26);
+            tmp17Result6 = tmp17(closure_15, obj26);
           }
           items10[1] = tmp17Result6;
           tmp17Result = tmp17(tmp18, obj22);
         }
         const obj29 = { children: tmp19Result };
-        items6[1] = closure_14(closure_6, obj29);
+        items6[1] = closure_13(c5, obj29);
         let tmp17Result7 = null;
         if (subscriptionPlansLoaded) {
           const obj30 = { style: tmp2.giftPurchaseSectionWrapper, children: items12 };
@@ -648,53 +623,53 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
             closure_0.push(constants.PREMIUM, obj4);
           }
           const obj31 = { title: intl5.string(require("intl").t["55Ccy0"]) };
-          intl5 = tmp6(tmp4[33]).intl;
-          items12 = [closure_14(closure_18, obj31), , , ];
-          const obj32 = { premiumType: closure_12.TIER_2, style: tmp2.tierCard, children: items13 };
+          intl5 = tmp6(tmp4[34]).intl;
+          items12 = [closure_13(closure_17, obj31), , , ];
+          const obj32 = { premiumType: closure_11.TIER_2, style: tmp2.tierCard, children: items13 };
           const obj33 = { style: tmp2.cardText, variant: "text-sm/medium", color: "text-default", children: intl6.format(require("intl").t.thORji, obj34) };
-          const tmp3Result = stateFromStoresArray(memo[36]);
-          const Text3 = tmp6(tmp4[32]).Text;
-          intl6 = tmp6(tmp4[33]).intl;
+          const tmp3Result3 = stateFromStoresArray(memo[37]);
+          const Text3 = tmp6(tmp4[33]).Text;
+          intl6 = tmp6(tmp4[34]).intl;
           obj34 = { onClick: handleLearnMorePremiumClick };
-          items13 = [closure_14(Text3, obj33), ];
+          items13 = [closure_13(Text3, obj33), ];
           const obj35 = { style: tmp2.buttonWrapper, children: items14 };
-          const obj36 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "active", planId: closure_13.PREMIUM_YEAR_TIER_2, analyticsLocation };
-          items14 = [closure_14(tmp3(memo[37]), obj36), ];
-          const obj37 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "secondary", planId: closure_13.PREMIUM_MONTH_TIER_2, analyticsLocation };
-          items14[1] = closure_14(stateFromStoresArray(memo[37]), obj37);
-          items13[1] = closure_15(closure_6, obj35);
-          items12[1] = closure_15(tmp3Result, obj32);
+          const obj36 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "active", planId: closure_12.PREMIUM_YEAR_TIER_2, analyticsLocation };
+          items14 = [closure_13(tmp3(memo[38]), obj36), ];
+          const obj37 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "secondary", planId: closure_12.PREMIUM_MONTH_TIER_2, analyticsLocation };
+          items14[1] = closure_13(stateFromStoresArray(memo[38]), obj37);
+          items13[1] = closure_14(c5, obj35);
+          items12[1] = closure_14(tmp3Result3, obj32);
           const obj38 = { style: tmp2.warningMargins };
-          items12[2] = closure_14(stateFromStoresArray(memo[38]), obj38);
+          items12[2] = closure_13(stateFromStoresArray(memo[39]), obj38);
           const obj39 = { children: items17 };
-          const obj40 = { premiumType: closure_12.TIER_0, style: tmp2.tierCard, children: items15 };
+          const obj40 = { premiumType: closure_11.TIER_0, style: tmp2.tierCard, children: items15 };
           const obj41 = { style: tmp2.cardText, variant: "text-sm/medium", color: "text-default", children: intl7.format(require("intl").t.NmpnsP, obj42) };
-          const tmp3Result2 = stateFromStoresArray(memo[36]);
-          const Text4 = tmp6(tmp4[32]).Text;
-          intl7 = tmp6(tmp4[33]).intl;
+          const tmp3Result4 = stateFromStoresArray(memo[37]);
+          const Text4 = tmp6(tmp4[33]).Text;
+          intl7 = tmp6(tmp4[34]).intl;
           obj42 = { onClick: handleLearnMoreNitroBasicClick };
-          items15 = [closure_14(Text4, obj41), ];
+          items15 = [closure_13(Text4, obj41), ];
           const obj43 = { style: tmp2.buttonWrapper, children: items16 };
-          const obj44 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "active", planId: closure_13.PREMIUM_YEAR_TIER_0, analyticsLocation };
-          items16 = [closure_14(tmp3(memo[37]), obj44), ];
-          const obj45 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "secondary", planId: closure_13.PREMIUM_MONTH_TIER_0, analyticsLocation };
-          items16[1] = closure_14(stateFromStoresArray(memo[37]), obj45);
-          items15[1] = closure_15(closure_6, obj43);
-          items17 = [closure_15(tmp3Result2, obj40), ];
+          const obj44 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "active", planId: closure_12.PREMIUM_YEAR_TIER_0, analyticsLocation };
+          items16 = [closure_13(tmp3(memo[38]), obj44), ];
+          const obj45 = { recipientUserId, style: tmp2.giftPurchaseButton, variant: "secondary", planId: closure_12.PREMIUM_MONTH_TIER_0, analyticsLocation };
+          items16[1] = closure_13(stateFromStoresArray(memo[38]), obj45);
+          items15[1] = closure_14(c5, obj43);
+          items17 = [closure_14(tmp3Result4, obj40), ];
           const obj46 = { style: tmp2.warningMargins };
-          items17[1] = closure_14(stateFromStoresArray(memo[38]), obj46);
-          items12[3] = closure_15(closure_16, obj39);
+          items17[1] = closure_13(stateFromStoresArray(memo[39]), obj46);
+          items12[3] = closure_14(closure_15, obj39);
           tmp17Result7 = tmp17(tmp18, obj30);
         }
         items6[2] = tmp17Result7;
         obj12.children = items6;
-        items4[1] = closure_15(tmp20, obj12);
+        items4[1] = closure_14(tmp20, obj12);
         obj11.children = items4;
         tmp17Result8 = tmp17(tmp18, obj11);
       }
     }
     const obj47 = { style: tmp2.loading };
-    tmp19Result = tmp19(tmp6(tmp4[41]).ActivityIndicator, obj47);
+    tmp19Result = tmp19(tmp6(tmp4[42]).ActivityIndicator, obj47);
   }
   return tmp17Result8;
 });

@@ -1,25 +1,25 @@
-// Module ID: 10866
-// Function ID: 10867
+// Module ID: 11039
+// Function ID: 11040
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 2011, 5952, 1998, 1085, 7477, 21, 5090, 587, 4927, 558, 576, 1496, 504, 7494, 5135, 4788, 1126, 1200, 8555, 1381, 8380, 2]
+// Dependencies: [5, 32, 19, 17, 2012, 5954, 1999, 1085, 7482, 21, 5091, 587, 4928, 558, 576, 1497, 504, 7499, 5136, 4789, 1126, 1200, 8563, 1382, 8388, 2]
 
-// Module 10866 (VoiceSensitivity)
+// Module 11039 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5135 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4789 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5136 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MediaEngineStore_mod from "MediaEngineStore" /* 2011 */;
-import SpeakingStore from "SpeakingStore" /* 5952 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
+import MediaEngineStore_mod from "MediaEngineStore" /* 2012 */;
+import SpeakingStore from "SpeakingStore" /* 5954 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import ColorUtils_mod from "ColorUtils" /* 4927 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import ColorUtils_mod from "ColorUtils" /* 4928 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -172,7 +172,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSensiti
             }
           }
         }
-        closure_12 = tmp34;
+        let closure_12 = tmp34;
         const _Symbol2 = Symbol;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
           class U {

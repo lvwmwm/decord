@@ -1,35 +1,36 @@
-// Module ID: 8709
-// Function ID: 8710
+// Module ID: 8718
+// Function ID: 8719
 // Name: components_native/QRCode
-// Dependencies: [109, 19, 17, 21, 5090, 587, 4787, 8710, 5363, 8724, 8347, 2]
+// Dependencies: [109, 19, 17, 21, 5091, 587, 4788, 8719, 5364, 6163, 8733, 8355, 2]
 
-// Module 8709 (components_native/QRCode)
+// Module 8718 (components_native/QRCode)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 4787 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8347 */;
-import QRCodeDefault from "QRCode" /* 8710 */;
-import AssetRegistry from "AssetRegistry" /* 8724 */;
+import native from "native" /* 4788 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import QRCodeDefault from "QRCode" /* 8719 */;
+import AssetRegistry from "AssetRegistry" /* 8733 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
-let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
+let tmp10;
 let tmp7;
-const VisualEffectViewDefault = tmp7(5363);
+const VisualEffectViewDefault = tmp7(5364);
+const VisualEffectViewThemedDefault = tmp10(8355);
 let closure_3 = ["style", "text", "blur", "accessibilityLabel"];
-({ View: hasOwnProperty, Image: metroRequire, StyleSheet: metroImportDefault } = react_native);
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { qrCode: obj2, qrCodeContainer: { display: "flex", alignSelf: "flex-start", alignItems: "center", justifyContent: "center", position: "relative" }, qrCodeOverlay: { display: "flex", alignItems: "center", justifyContent: "center" }, "size-40": { width: 40, height: 40 }, "size-60": { width: 60, height: 60 } };
 obj2 = { display: "flex", alignSelf: "flex-start", padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs };
-const authStore = createStyles.createLegacyClassComponentStyles(obj);
+const React4 = createStyles.createLegacyClassComponentStyles(obj);
 let obj3 = { SIZE_40: "SIZE_40", SIZE_60: "SIZE_60" };
 const frozen = Object.freeze({ [obj3.SIZE_40]: "size-40", [obj3.SIZE_60]: "size-60" });
 const PureComponent = react.PureComponent;
@@ -45,7 +46,7 @@ class QRCode extends PureComponent {
     const props = this.props;
     const accessibilityLabel = props.accessibilityLabel;
     ({ style, text, blur } = props);
-    const tmp = closure_10(this.context);
+    const tmp = closure_9(this.context);
     const tmp2 = _objectWithoutProperties(props, closure_3);
     let tmp3Result = null;
     const obj = { accessible: null != accessibilityLabel, accessibilityRole: "image", accessibilityLabel, style: items, children: tmp6(hasOwnProperty, obj2) };
@@ -54,14 +55,14 @@ class QRCode extends PureComponent {
     obj3 = { value: text, level: "M" };
     const tmp9 = QRCodeDefault;
     const merged = Object.assign(tmp2);
-    items1 = [metroImportAll(tmp9, obj3), ];
-    tmp6 = React4;
+    items1 = [metroImportDefault(tmp9, obj3), ];
+    tmp6 = metroImportAll;
     if (blur) {
-      const obj4 = { style: metroImportDefault.absoluteFill, blurTheme: "dark" };
+      const obj4 = { style: metroRequire.absoluteFill, blurTheme: "dark" };
       tmp3Result = tmp3(VisualEffectViewDefault, obj4);
     }
     items1[1] = tmp3Result;
-    return metroImportAll(hasOwnProperty, obj);
+    return metroImportDefault(hasOwnProperty, obj);
   }
 }
 const prototype = QRCode.prototype;
@@ -73,7 +74,8 @@ class QRCodeWithOverlay extends PureComponent2 {
     let items;
     let items1;
     let obj4;
-    const tmp = closure_10(this.context);
+    let tmp12;
+    const tmp = closure_9(this.context);
     const props = this.props;
     let SIZE_40 = props.overlaySize;
     const blur = props.blur;
@@ -85,16 +87,17 @@ class QRCodeWithOverlay extends PureComponent2 {
     const obj2 = { blur: false };
     const tmp4 = tmp2[SIZE_40];
     const merged = Object.assign(this.props);
-    items = [metroImportAll(QRCode, obj2), , ];
-    obj3 = { style: items1, children: metroImportAll(metroRequire, obj4) };
-    items1 = [tmp.qrCodeOverlay, metroImportDefault.absoluteFill];
+    items = [metroImportDefault(QRCode, obj2), , ];
+    obj3 = { style: items1, children: metroImportDefault(tmp12, obj4) };
+    items1 = [tmp.qrCodeOverlay, metroRequire.absoluteFill];
     obj4 = { style: tmp[tmp4], source: AssetRegistry };
-    items[1] = metroImportAll(hasOwnProperty, obj3);
+    tmp12 = FastImageDefault;
+    items[1] = metroImportDefault(hasOwnProperty, obj3);
     let tmp7Result = null;
-    const tmp5 = React4;
+    const tmp5 = metroImportAll;
     const tmp6 = hasOwnProperty;
-    const tmp7 = metroImportAll;
-    const tmp9 = metroImportDefault;
+    const tmp7 = metroImportDefault;
+    const tmp9 = metroRequire;
     if (blur) {
       const obj5 = { style: tmp9.absoluteFill };
       tmp7Result = tmp7(VisualEffectViewThemedDefault, obj5);

@@ -1,18 +1,18 @@
-// Module ID: 14105
-// Function ID: 14106
+// Module ID: 14202
+// Function ID: 14203
 // Name: ToastEntity
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 6164, 2031, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5087, 6163, 2032, 2]
 
-// Module 14105 (ToastEntity)
+// Module 14202 (ToastEntity)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_StringUtils from "utils/StringUtils" /* 2031 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import FastImageDefault from "FastImage" /* 6164 */;
+import utils_StringUtils from "utils/StringUtils" /* 2032 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import FastImageDefault from "FastImage" /* 6163 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -189,7 +189,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToastEn
       if (cResult[15] !== entity.name) {
         const tmpResult = utils_StringUtils;
         const acronym = tmpResult.getAcronym(entity.name);
-        const Text = tmp(5086).Text;
+        const Text = tmp(5087).Text;
         let str = "text-md/semibold";
         if (acronym.length > 2) {
           let str2 = "text-xs/semibold";

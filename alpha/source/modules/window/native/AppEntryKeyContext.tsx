@@ -1,9 +1,9 @@
-// Module ID: 1499
-// Function ID: 1500
+// Module ID: 1500
+// Function ID: 1501
 // Name: AppEntryKeyContext
 // Dependencies: [19, 3, 558, 576, 2]
 
-// Module 1499 (AppEntryKeyContext)
+// Module 1500 (AppEntryKeyContext)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,27 +1,27 @@
-// Module ID: 17648
-// Function ID: 17649
+// Module ID: 17800
+// Function ID: 17801
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 10675, 2063, 2086, 2011, 4707, 5115, 21, 558, 576, 11988, 17636, 5903, 504, 12834, 5299, 12837, 1126, 17649, 8759, 10693, 12857, 17637, 11362, 5023, 4864, 2]
+// Dependencies: [19, 17, 10821, 2064, 2086, 2012, 4709, 5116, 21, 558, 576, 11925, 17788, 5904, 504, 12801, 5300, 12804, 1126, 17801, 8768, 10839, 12824, 17789, 10735, 5024, 4865, 2]
 
-// Module 17648 (VoicePanelVideoButton)
+// Module 17800 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import CameraRive2 from "CameraRive" /* 4864 */;
-import Constants from "Constants" /* 5115 */;
-import useAlertStore from "useAlertStore" /* 5299 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 5903 */;
-import CallsUtils from "CallsUtils" /* 8759 */;
-import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10693 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12837 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17649 */;
+import CameraRive2 from "CameraRive" /* 4865 */;
+import Constants from "Constants" /* 5116 */;
+import useAlertStore from "useAlertStore" /* 5300 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 5904 */;
+import CallsUtils from "CallsUtils" /* 8768 */;
+import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 10839 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12804 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 17801 */;
 import react from "react" /* 19 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10675 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10821 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -481,9 +481,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoB
     }
     const tmp7 = jsx;
     if (isVideoEnabled) {
-      VideoSlashIcon = tmp(11362).VideoIcon;
+      VideoSlashIcon = tmp(10735).VideoIcon;
     } else {
-      VideoSlashIcon = tmp(5023).VideoSlashIcon;
+      VideoSlashIcon = tmp(5024).VideoSlashIcon;
     }
     const obj4 = { color };
     const tmp7Result = tmp7(VideoSlashIcon, obj4);
@@ -507,9 +507,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoB
     str = "CamOn";
   }
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(11362).VideoIcon;
+    let VideoSlashIcon = tmp3(10735).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(5023).VideoSlashIcon;
+    VideoSlashIcon = tmp3(5024).VideoSlashIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 });

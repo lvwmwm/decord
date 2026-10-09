@@ -1,16 +1,16 @@
-// Module ID: 17499
-// Function ID: 17500
+// Module ID: 17651
+// Function ID: 17652
 // Name: LeaveActivityButton
-// Dependencies: [19, 6072, 21, 558, 576, 1126, 5375, 10783, 10623, 2]
+// Dependencies: [19, 6074, 21, 558, 576, 1126, 5376, 10953, 10777, 2]
 
-// Module 17499 (LeaveActivityButton)
+// Module 17651 (LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 10623 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10783 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6074 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10777 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10953 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseLeaveA
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] !== onPress) {
-    const Button = tmp(5375).Button;
+    const Button = tmp(5376).Button;
     const tmp11 = <Button onPress={onPress} icon={AssetRegistryDefault} text={tmp4} accessibilityLabel={tmp5} variant="destructive" size="sm" maxFontSizeMultiplier={1} />;
     cResult[2] = onPress;
     cResult[3] = tmp11;
@@ -84,17 +84,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const timerId = setTimeout(() => {
       let applicationId;
       let _location;
-      const leaveActivity = setMode(dependencyMap[8]).leaveActivity;
-      setMode(dependencyMap[8]);
-      if (selfEmbeddedActivity != null) {
+      const leaveEmbeddedActivity = selfEmbeddedActivity(dependencyMap[8]).leaveEmbeddedActivity;
+      selfEmbeddedActivity(dependencyMap[8]);
+      if (closure_1_0 != null) {
         _location = tmp2.location;
       }
       const obj = { location: _location, applicationId };
       applicationId = undefined;
-      if (selfEmbeddedActivity != null) {
+      if (closure_1_0 != null) {
         applicationId = tmp2.applicationId;
       }
-      leaveActivity(obj);
+      const result = leaveEmbeddedActivity(obj);
     }, 400);
   }} />;
   let applicationId1;
@@ -117,8 +117,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const timerId = setTimeout(() => {
       let applicationId;
       let _location;
-      const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
-      EmbeddedActivitiesNativeManagerDefault;
+      const leaveEmbeddedActivity = leaveEmbeddedActivity2.leaveEmbeddedActivity;
+      leaveEmbeddedActivity2;
       if (closure_1_0 != null) {
         _location = tmp2.location;
       }
@@ -127,11 +127,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       if (closure_1_0 != null) {
         applicationId = tmp2.applicationId;
       }
-      leaveActivity(obj);
+      const result = leaveEmbeddedActivity(obj);
     }, 400);
   }} />;
 }));
-const result = size.fileFinishedImporting("modules/activities/panel/native/LeaveActivityButton.tsx");
+let result = size.fileFinishedImporting("modules/activities/panel/native/LeaveActivityButton.tsx");
 
 export default memoResult;
 export const BaseLeaveActivityButton = tmp2;

@@ -1,11 +1,11 @@
-// Module ID: 18466
-// Function ID: 18467
+// Module ID: 18630
+// Function ID: 18631
 // Name: GenerateInvite
-// Dependencies: [17, 18458, 8472, 8669, 2]
+// Dependencies: [17, 18622, 8480, 8678, 2]
 
-// Module 18466 (GenerateInvite)
+// Module 18630 (GenerateInvite)
 import react_native from "react-native" /* 17 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8472 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8480 */;
 import size from "module_2" /* 2 */;
 
 let RNCClipboard;

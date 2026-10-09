@@ -1,14 +1,14 @@
-// Module ID: 7665
-// Function ID: 7666
+// Module ID: 7674
+// Function ID: 7675
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 5725, 5730, 1502, 5905, 7666, 7670, 7529, 7667, 7506, 7507, 5373, 5086, 1126, 3117, 5963, 5375, 5915, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5726, 5731, 1503, 5906, 7675, 7679, 7536, 7676, 7511, 7512, 5374, 5087, 1126, 3117, 5965, 5376, 5916, 2]
 // Exports: default
 
-// Module 7665 (AppStoreAgeVerificationScreen)
+// Module 7674 (AppStoreAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5725 */;
-import MetricEvents from "MetricEvents" /* 5730 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5915 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5726 */;
+import MetricEvents from "MetricEvents" /* 5731 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5916 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -51,11 +51,11 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
   react = undefined;
   let tmp = modalSessionId;
   const onClose = modalSessionId.onClose;
-  let obj = modalSessionId(1502);
+  let obj = modalSessionId(1503);
   navigation = obj.useNavigation();
   const tmp4 = callback1(react.useState({ type: "loading" }), 2);
   [tmp5, c2] = tmp4;
-  let obj2 = modalSessionId(5905);
+  let obj2 = modalSessionId(5906);
   const watchAgeVerificationStatusChange = obj2.useWatchAgeVerificationStatusChange(onClose);
   let items = [navigation];
   const callback = react.useCallback(() => {
@@ -242,25 +242,25 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  const ModalScreen = modalSessionId(7506).ModalScreen;
-  const ModalContent = modalSessionId(7507).ModalContent;
-  const Stack = modalSessionId(5373).Stack;
+  const ModalScreen = modalSessionId(7511).ModalScreen;
+  const ModalContent = modalSessionId(7512).ModalContent;
+  const Stack = modalSessionId(5374).Stack;
   if ("loading" === tmp5.type) {
     let obj3 = { children: items3 };
     items3 = [tmp10(ActivityIndicator, { size: "large" }), ];
     let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3117).MN6I4Y) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
     items3[1] = closure_7(Text, obj4);
     tmp15 = closure_9(closure_8, obj3);
   } else {
     let obj5 = { children: items4 };
     let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3117).tBwanH) };
-    const Text2 = tmp(5086).Text;
+    const Text2 = tmp(5087).Text;
     intl2 = tmp(1126).intl;
     items4 = [tmp10(Text2, obj6), ];
     let obj7 = { children: tmp10(Button, obj8) };
-    const ButtonGroup = tmp(5963).ButtonGroup;
+    const ButtonGroup = tmp(5965).ButtonGroup;
     obj8 = {
       variant: "primary",
       size: "lg",
@@ -272,7 +272,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
           callback();
         }
     };
-    Button = tmp(5375).Button;
+    Button = tmp(5376).Button;
     intl3 = tmp(1126).intl;
     items4[1] = closure_7(ButtonGroup, obj7);
     tmp15 = closure_9(closure_8, obj5);

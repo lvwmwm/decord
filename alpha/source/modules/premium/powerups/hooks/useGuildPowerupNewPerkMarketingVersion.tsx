@@ -1,15 +1,15 @@
-// Module ID: 12256
-// Function ID: 12257
+// Module ID: 12195
+// Function ID: 12196
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 2086, 4707, 4968, 1085, 558, 576, 4986, 504, 4973, 4972, 4971, 8616, 2]
+// Dependencies: [19, 2086, 4709, 4969, 1085, 558, 576, 4987, 504, 4974, 4973, 4972, 8624, 2]
 
-// Module 12256 (useGuildPowerupNewPerkMarketingVersion)
-import Powerups from "Powerups" /* 4971 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8616 */;
+// Module 12195 (useGuildPowerupNewPerkMarketingVersion)
+import Powerups from "Powerups" /* 4972 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8624 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4969 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -74,11 +74,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(4973);
+  const tmpResult5 = tmp(4974);
   const serverThemeEnabled = tmpResult5.useServerThemeEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult6 = tmp(4972);
+  const tmpResult6 = tmp(4973);
   const serverThemeUserEnabled = tmpResult6.useServerThemeUserEnabled("useGuildPowerupNewPerkMarketingVersion");
-  const tmpResult7 = tmp(4973);
+  const tmpResult7 = tmp(4974);
   const serverThemeRollbackEnabled = tmpResult7.useServerThemeRollbackEnabled(arg0, "useGuildPowerupNewPerkMarketingVersion");
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class U {

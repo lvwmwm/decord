@@ -1,40 +1,38 @@
-// Module ID: 12514
-// Function ID: 12515
+// Module ID: 12453
+// Function ID: 12454
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 1502, 7079, 1126, 12515, 1200, 5086, 5375, 2]
+// Dependencies: [19, 17, 1085, 21, 5091, 587, 558, 576, 1503, 7082, 1126, 6163, 12454, 1200, 5087, 5376, 2]
 
-// Module 12514 (HubEmailConnectionWaitlist)
+// Module 12453 (HubEmailConnectionWaitlist)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
 
-let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
-({ View: closure_4, Image: hasOwnProperty } = react_native);
+const View = react_native.View;
 const Fonts = Constants.Fonts;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: { flex: 1, alignItems: "center", justifyContent: "center" }, header: { marginBottom: 16 }, title: obj2, description: { textAlign: "center", marginBottom: 16 }, redesignButton: { paddingHorizontal: 16, width: "100%" } };
 obj2 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
-let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionWaitlist(arg0) {
+let closure_7 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionWaitlist(arg0) {
   let items;
   let onClose;
   let school;
   let obj = onClose(576);
   const cResult = obj.c(26);
   ({ school, onClose } = arg0);
-  const tmp4 = closure_8();
-  const obj2 = onClose(1502);
+  const tmp4 = closure_7();
+  const obj2 = onClose(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === navigation) {
     let tmp6;
@@ -50,8 +48,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
     const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
     const container = tmp4.container;
     if (cResult[4] !== tmp4.header) {
-      const obj3 = { source: navigation(12515), style: tmp4.header };
-      const tmp14 = closure_6(closure_5, obj3);
+      const obj3 = { source: navigation(12454), style: tmp4.header };
+      const tmp13 = navigation(6163);
+      const tmp14 = closure_5(tmp13, obj3);
       cResult[4] = tmp4.header;
       cResult[5] = tmp14;
       tmp10 = tmp14;
@@ -70,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
     }
     if (cResult[7] !== tmp4.title) {
       const obj4 = { style: title, accessibilityRole: "header", children: tmp16 };
-      const tmp20 = closure_6(onClose(1200).LegacyText, obj4);
+      const tmp20 = closure_5(onClose(1200).LegacyText, obj4);
       cResult[7] = tmp4.title;
       cResult[8] = tmp20;
       tmp18 = tmp20;
@@ -107,7 +106,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
       }
       if (cResult[15] !== onClose) {
         const obj6 = { size: "lg", text: tmp26, onPress: onClose };
-        const tmp30 = closure_6(onClose(5375).Button, obj6);
+        const tmp30 = closure_5(onClose(5376).Button, obj6);
         cResult[15] = onClose;
         cResult[16] = tmp30;
         tmp28 = tmp30;
@@ -134,7 +133,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
         }
         const obj7 = { style: container, children: items };
         items = [tmp10, tmp18, tmp23, tmp31];
-        const tmp38 = closure_7(closure_4, obj7);
+        const tmp38 = closure_6(View, obj7);
         cResult[20] = tmp4.container;
         cResult[21] = tmp23;
         cResult[22] = tmp31;
@@ -144,20 +143,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
         tmp35 = tmp38;
       }
       const obj8 = { style: redesignButton, children: tmp28 };
-      const tmp34 = closure_6(closure_4, obj8);
+      const tmp34 = closure_5(View, obj8);
       cResult[17] = tmp4.redesignButton;
       cResult[18] = tmp28;
       cResult[19] = tmp34;
       tmp31 = tmp34;
     }
     const obj9 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp21 };
-    const tmp25 = closure_6(onClose(5086).Text, obj9);
+    const tmp25 = closure_5(onClose(5087).Text, obj9);
     cResult[11] = tmp4.description;
     cResult[12] = tmp21;
     cResult[13] = tmp25;
     tmp23 = tmp25;
   }
-  const fn = function l() {
+  const fn = function s() {
     let onPress;
     let obj = {
       headerLeft() {
@@ -165,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
         const obj = { text: intl.string(onClose(dependencyMap[10]).t.cpT0Cq), onPress };
         const HeaderActionButton = onClose(dependencyMap[9]).HeaderActionButton;
         intl = onClose(dependencyMap[10]).intl;
-        return closure_2_6(HeaderActionButton, obj);
+        return closure_2_5(HeaderActionButton, obj);
       }
     };
     navigation.setOptions(obj);
@@ -186,8 +185,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   let obj7;
   onClose = onClose.onClose;
   const school = onClose.school;
-  const tmp = closure_8();
-  let obj = onClose(1502);
+  const tmp = closure_7();
+  let obj = onClose(1503);
   navigation = obj.useNavigation();
   const items = [navigation, onClose];
   const layoutEffect = react.useLayoutEffect(() => {
@@ -198,30 +197,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
         const obj = { text: intl.string(onClose(dependencyMap[10]).t.cpT0Cq), onPress };
         const HeaderActionButton = onClose(dependencyMap[9]).HeaderActionButton;
         intl = onClose(dependencyMap[10]).intl;
-        return closure_2_6(HeaderActionButton, obj);
+        return closure_2_5(HeaderActionButton, obj);
       }
     };
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  items1 = [, , , ];
-  const obj3 = { source: navigation(12515), style: tmp.header };
-  items1[0] = closure_6(closure_5, obj3);
+  const obj3 = { source: navigation(12454), style: tmp.header };
+  const tmp4 = navigation(6163);
+  items1 = [closure_5(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1126).t.OaloU5) };
   const LegacyText = onClose(1200).LegacyText;
   intl = onClose(1126).intl;
-  items1[1] = closure_6(LegacyText, obj4);
+  items1[1] = closure_5(LegacyText, obj4);
   const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(onClose(1126).t.Rs7MXJ, { school }) };
-  const Text = onClose(5086).Text;
+  const Text = onClose(5087).Text;
   intl2 = onClose(1126).intl;
-  items1[2] = closure_6(Text, obj5);
-  const obj6 = { style: tmp.redesignButton, children: closure_6(Button, obj7) };
+  items1[2] = closure_5(Text, obj5);
+  const obj6 = { style: tmp.redesignButton, children: closure_5(Button, obj7) };
   obj7 = { size: "lg", text: intl3.string(onClose(1126).t.i4jeWR), onPress: onClose };
-  Button = onClose(5375).Button;
+  Button = onClose(5376).Button;
   intl3 = onClose(1126).intl;
-  items1[3] = closure_6(closure_4, obj6);
-  return closure_7(closure_4, obj2);
+  items1[3] = closure_5(View, obj6);
+  return closure_6(View, obj2);
 });
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionWaitlist.tsx");
 
-export default tmp4;
+export default tmp3;

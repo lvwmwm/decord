@@ -1,15 +1,15 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 13479
+// Function ID: 13480
 // Name: SafetySystemNotificationEmbed
-// Dependencies: [17, 1085, 4659, 5004, 8142, 5927, 7863, 1126, 2]
+// Dependencies: [17, 1085, 4661, 5005, 8150, 5928, 7872, 1126, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 13384 (SafetySystemNotificationEmbed)
+// Module 13479 (SafetySystemNotificationEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import _modDef4659 from "module_4659" /* 4659 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7863 */;
+import _modDef4661 from "module_4661" /* 4661 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5928 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7872 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -67,7 +67,7 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
             if (str == null) {
               str = "";
             }
-            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 5004 : 8142))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
+            const obj2 = { titleText: str, titleIcon: tmp6Result4.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 5005 : 8150))), subtitleText: formatToPlainString(eevFb6, obj3), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
             tmp6Result4 = renderer_EmbedUtils;
             const intl = tmp6(1126).intl;
             formatToPlainString = intl.formatToPlainString;
@@ -77,10 +77,10 @@ export const createSafetySystemNotificationEmbed = function createSafetySystemNo
               num = 0;
             }
             obj3 = { daysAgo: diff(tmp14Result.unix(num), "days") };
-            diff = _modDef4659().diff;
-            _modDef4659();
+            diff = _modDef4661().diff;
+            _modDef4661();
             str4 = parseMessageForPropsResult.body;
-            tmp14Result = _modDef4659;
+            tmp14Result = _modDef4661;
             if (str4 == null) {
               str4 = "";
             }

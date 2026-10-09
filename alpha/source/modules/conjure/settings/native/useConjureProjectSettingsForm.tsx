@@ -1,29 +1,29 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 16994
+// Function ID: 16995
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 2118, 11251, 1085, 21, 5090, 587, 558, 576, 504, 6933, 5054, 1126, 3827, 5086, 6828, 8538, 6730, 6267, 6181, 6885, 16872, 6932, 16874, 16875, 12364, 6283, 6184, 2]
+// Dependencies: [5, 32, 19, 17, 2118, 10617, 1085, 21, 5091, 587, 558, 576, 504, 6940, 5055, 1126, 3827, 5087, 6835, 8546, 6737, 6269, 6183, 6892, 16995, 6939, 16998, 16999, 11369, 6290, 6186, 2]
 // Exports: default
 
-// Module 16871 (useConjureProjectSettingsForm)
+// Module 16994 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
-import ConjureTypes from "ConjureTypes" /* 6933 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5055 */;
+import ConjureTypes from "ConjureTypes" /* 6940 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
-let _require, c4, closure_12, importDefault, set;
+let _require, c4, importDefault, set;
 
 let c10;
 let obj2;
@@ -708,7 +708,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
     return set;
   }), 2);
   const first1 = tmp6Result5[0];
-  closure_12 = tmp6Result5[1];
+  let closure_12 = tmp6Result5[1];
   const tmp6Result6 = save(obj3.useState(false), 2);
   first2 = tmp6Result6[0];
   closure_14 = tmp6Result6[1];

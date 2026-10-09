@@ -1,24 +1,24 @@
-// Module ID: 13722
-// Function ID: 13723
+// Module ID: 13814
+// Function ID: 13815
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 5086, 1126, 13723, 5026, 13724, 13649, 13725, 8597, 13726, 8947, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5087, 1126, 13815, 5027, 13816, 13740, 13817, 8605, 13818, 8958, 2]
 
-// Module 13722 (GuildBoostingMarketingBoosterRecognitionCards)
+// Module 13814 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import BoostGemIcon from "BoostGemIcon" /* 5026 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 8597 */;
-import HeartIcon from "HeartIcon" /* 8947 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13649 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13723 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13724 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13725 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13726 */;
+import BoostGemIcon from "BoostGemIcon" /* 5027 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8605 */;
+import HeartIcon from "HeartIcon" /* 8958 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 13740 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13815 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13816 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13817 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13818 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(5086);
+const Text_Text = tmp(5087);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;

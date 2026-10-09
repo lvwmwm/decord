@@ -1,10 +1,10 @@
-// Module ID: 12374
-// Function ID: 12375
+// Module ID: 11379
+// Function ID: 11380
 // Name: RpcCommandInterception
 // Dependencies: [2]
 // Exports: interceptRpcCommand, setRpcCommandInterceptor
 
-// Module 12374 (RpcCommandInterception)
+// Module 11379 (RpcCommandInterception)
 import size from "module_2" /* 2 */;
 
 let c0 = null;

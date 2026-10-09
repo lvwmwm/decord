@@ -1,20 +1,20 @@
-// Module ID: 8393
-// Function ID: 8394
+// Module ID: 8401
+// Function ID: 8402
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 8394, 1381, 8364, 4810, 8395, 1630, 8396, 8368, 5374, 8397, 558, 576, 2]
+// Dependencies: [32, 19, 8402, 1382, 8372, 4811, 8403, 1631, 8404, 8376, 5375, 8405, 558, 576, 2]
 
-// Module 8393 (useMediaViewerSyncer)
+// Module 8401 (useMediaViewerSyncer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import spring from "spring" /* 5374 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8364 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8368 */;
-import portraitThumbnailHelpers from "portraitThumbnailHelpers" /* 8396 */;
-import resolveSelectedIndex from "resolveSelectedIndex" /* 8397 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import spring from "spring" /* 5375 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8372 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8376 */;
+import portraitThumbnailHelpers from "portraitThumbnailHelpers" /* 8404 */;
+import resolveSelectedIndex from "resolveSelectedIndex" /* 8405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 8394 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import Constants from "Constants" /* 8402 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

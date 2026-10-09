@@ -1,29 +1,29 @@
-// Module ID: 9630
-// Function ID: 9631
+// Module ID: 9649
+// Function ID: 9650
 // Name: LongPressMessageActionSheet
-// Dependencies: [32, 19, 7725, 9631, 9632, 4718, 502, 2086, 4707, 5083, 1085, 21, 6841, 6865, 5105, 9629, 7967, 9634, 504, 6958, 9635, 9636, 2040, 6956, 9637, 5432, 1402, 9638, 8229, 9639, 6881, 9640, 6885, 1627, 12810, 12811, 1126, 12633, 5043, 5047, 5039, 9675, 12815, 11584, 8176, 12675, 10321, 12817, 8930, 8197, 10312, 12819, 12821, 12823, 12666, 5049, 12825, 8174, 8193, 5045, 9968, 7964, 9507, 10157, 2697, 8184, 6964, 6973, 11374, 5415, 6976, 7870, 9595, 2]
+// Dependencies: [32, 19, 7734, 9650, 9651, 4720, 502, 2086, 4709, 5084, 1085, 21, 6848, 6872, 5106, 9648, 7975, 9653, 504, 6965, 9654, 9655, 2041, 6963, 9656, 5433, 1403, 9657, 8237, 9658, 6888, 9659, 6892, 1628, 12779, 12780, 1126, 12573, 5044, 5048, 5040, 9694, 12784, 11517, 8184, 12616, 10308, 12786, 8941, 8205, 10299, 12788, 12790, 12792, 12607, 5050, 11388, 8182, 8201, 5046, 9987, 10448, 9545, 10142, 2697, 8192, 6971, 6980, 10747, 5416, 6983, 7879, 9614, 2]
 // Exports: default
 
-// Module 9630 (LongPressMessageActionSheet)
+// Module 9649 (LongPressMessageActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import MessageRecord from "MessageRecord" /* 4718 */;
-import MessageConstants from "MessageConstants" /* 5083 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6841 */;
-import ActionSheet2 from "ActionSheet" /* 6885 */;
-import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9629 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 9640 */;
-import EmojiRowUtils from "EmojiRowUtils" /* 12810 */;
-import EmojiRowDefault from "EmojiRow" /* 12811 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import MessageRecord from "MessageRecord" /* 4720 */;
+import MessageConstants from "MessageConstants" /* 5084 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6848 */;
+import ActionSheet2 from "ActionSheet" /* 6892 */;
+import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 9648 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 9659 */;
+import EmojiRowUtils from "EmojiRowUtils" /* 12779 */;
+import EmojiRowDefault from "EmojiRow" /* 12780 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7725 */;
-import ReportToModStore from "ReportToModStore" /* 9631 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9632 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7734 */;
+import ReportToModStore from "ReportToModStore" /* 9650 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9651 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -104,11 +104,11 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let tmp13;
   let tmp14;
   let user;
-  const f101271 = () => {
+  const f101744 = () => {
     const items = [SavedMessagesStore.isMessageReminder(channel.id, message.id), SavedMessagesStore.isMessageBookmarked(channel.id, message.id)];
     return items;
   };
-  const f101272 = (flags) => {
+  const f101745 = (flags) => {
     let tmp = null == flags.flags;
     if (!tmp) {
       const obj = analyticsLocation(analyticsLocation[26]);
@@ -143,7 +143,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
     const MESSAGE_ACTION_SHEET_OPENED = map1.MESSAGE_ACTION_SHEET_OPENED;
     AppAnalyticsUtilsDefault;
-    obj2 = { page: channel.isPrivate() ? authStore2.DM_CHANNEL : authStore2.GUILD_CHANNEL };
+    obj2 = { page: channel.isPrivate() ? authStore3.DM_CHANNEL : authStore3.GUILD_CHANNEL };
     const merged = Object.assign(analyticsLocation);
     trackWithMetadata(MESSAGE_ACTION_SHEET_OPENED, obj);
   }, items);
@@ -160,8 +160,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const guild = isActiveChannelOrUnarchivableThread.getGuild(channel.guild_id);
   let obj4 = require("get initialized");
   const items2 = [actionSheetSource];
-  [tmp13, tmp14] = message(obj4.useStateFromStoresArray(items2, f101271), 2);
-  message(obj4.useStateFromStoresArray(items2, f101271), 2);
+  [tmp13, tmp14] = message(obj4.useStateFromStoresArray(items2, f101744), 2);
+  message(obj4.useStateFromStoresArray(items2, f101744), 2);
   let obj5 = require("ThreadHooks");
   const isNonModInLockedThread = obj5.useIsNonModInLockedThread(channel);
   let id1;
@@ -242,8 +242,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const attachments1 = message.attachments;
   let tmp51 = message.author.id === id3;
   if (tmp51) {
-    tmp51 = attachments1.filter(f101272).length > 1 || "" !== message.content;
-    const tmp52 = attachments1.filter(f101272).length > 1 || "" !== message.content;
+    tmp51 = attachments1.filter(f101745).length > 1 || "" !== message.content;
+    const tmp52 = attachments1.filter(f101745).length > 1 || "" !== message.content;
   }
   const items3 = [selectedMedia];
   const tmp8Result23 = tmp8(tmp3[18]);
@@ -548,12 +548,14 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       items11.unshift(props8);
       const tmp160 = tmp14 || tmp13 || channel.isPrivate() || set.can(constants8.READ_MESSAGE_HISTORY, channel);
       if (tmp160) {
-        let tmp161 = props16;
-        const unshift = items11.unshift;
-        if (tmp14) {
-          tmp161 = props17;
+        if (!tmp13) {
+          let tmp161 = props16;
+          const unshift = items11.unshift;
+          if (tmp14) {
+            tmp161 = props17;
+          }
+          unshift(tmp161);
         }
-        unshift(tmp161);
         let tmp163 = props18;
         const unshift2 = items11.unshift;
         if (tmp13) {

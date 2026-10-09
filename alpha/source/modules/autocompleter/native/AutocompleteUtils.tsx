@@ -1,27 +1,27 @@
-// Module ID: 9667
-// Function ID: 9668
+// Module ID: 9686
+// Function ID: 9687
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 2067, 4705, 4717, 1389, 1085, 9668, 5400, 21, 5090, 587, 5417, 8131, 5975, 4922, 558, 576, 8559, 2]
+// Dependencies: [19, 17, 2068, 4707, 4719, 1390, 1085, 9687, 5401, 21, 5091, 587, 5418, 8139, 5977, 4923, 558, 576, 8567, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9667 (autocompleter/AutocompleteUtils)
+// Module 9686 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import useChannelName from "useChannelName" /* 5417 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
-import TimestampUtils from "TimestampUtils" /* 8131 */;
-import FormDividerDefault from "FormDivider" /* 8559 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import useChannelName from "useChannelName" /* 5418 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5977 */;
+import TimestampUtils from "TimestampUtils" /* 8139 */;
+import FormDividerDefault from "FormDivider" /* 8567 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4705 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import GuildChannelStore from "GuildChannelStore" /* 4707 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9668 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5400 */;
-import createStyles from "createStyles" /* 5090 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9687 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5401 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let unpackModuleId;
-const UserUtilsDefault = tmp(4922);
+const UserUtilsDefault = tmp(4923);
 const StyleSheet = react_native.StyleSheet;
 let closure_3 = ChannelRecord.isGuildSelectableChannelType;
 ({ AutoCompleteResultTypes: metroImportDefault, WHITESPACE_RE: metroImportAll } = Constants);
@@ -128,7 +128,7 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
       combined = "" + tmp37 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      const tmp35Result = tmp35(4922);
+      const tmp35Result = tmp35(4923);
       combined = "" + tmp37 + tmp35Result.getUserTag(user);
     }
     return combined;
@@ -136,7 +136,7 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
     return type.text;
   } else if (metroImportDefault.ROLE === type) {
     const _HermesInternal7 = HermesInternal;
-    return "" + authStore2 + type.name;
+    return "" + authStore3 + type.name;
   } else if (metroImportDefault.CHANNEL === type) {
     channel = type.channel;
     if (channel.isThread()) {
@@ -175,7 +175,7 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
     return obj.unparseTimestamp(type.mention.timestamp, type.mention.format);
   } else if (metroImportDefault.EMOJI === type) {
     const _HermesInternal2 = HermesInternal;
-    return "" + closure_12 + type.name + ":";
+    return "" + authStore2 + type.name + ":";
   } else {
     if (metroImportDefault.EMOJI_PREMIUM_UPSELL !== type) {
       if (metroImportDefault.SLASH !== type) {

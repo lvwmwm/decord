@@ -1,20 +1,20 @@
-// Module ID: 5903
-// Function ID: 5904
+// Module ID: 5904
+// Function ID: 5905
 // Name: StreamPermissionUtils
-// Dependencies: [5109, 2067, 4705, 2086, 4707, 5111, 1085, 5890, 5410, 5904, 5930, 558, 576, 504, 2]
+// Dependencies: [5110, 2068, 4707, 2086, 4709, 5112, 1085, 5891, 5411, 5905, 5931, 558, 576, 504, 2]
 // Exports: getStreamEligibleChannels
 
-// Module 5903 (StreamPermissionUtils)
+// Module 5904 (StreamPermissionUtils)
 import Constants from "Constants" /* 1085 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import GuildChannelStore from "GuildChannelStore" /* 4705 */;
-import ChannelUtils from "ChannelUtils" /* 5410 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5890 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 5904 */;
-import GameConsoleStore from "GameConsoleStore" /* 5109 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import GuildChannelStore from "GuildChannelStore" /* 4707 */;
+import ChannelUtils from "ChannelUtils" /* 5411 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5891 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 5905 */;
+import GameConsoleStore from "GameConsoleStore" /* 5110 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(5930);
+      const tmp11Result = tmp11(5931);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {

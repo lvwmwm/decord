@@ -1,24 +1,26 @@
 // Module ID: 2116
 // Function ID: 2117
 // Name: GatedChannelStore
-// Dependencies: [2117, 2067, 2119, 2063, 2124, 2118, 2086, 1389, 1085, 4697, 4698, 4699, 504, 584, 2]
+// Dependencies: [2117, 2068, 2119, 2064, 2124, 2118, 2086, 1390, 1085, 4699, 4700, 4701, 504, 584, 2]
 
 // Module 2116 (GatedChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2119 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4697 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4698 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4699 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4699 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4700 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4701 */;
 import ImpersonateStore from "ImpersonateStore" /* 2117 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
+
+let closure_12;
 
 let c10;
 let unpackModuleId;
@@ -32,7 +34,7 @@ function isSubscriptionGated(role) {
   if (isSubscriptionRoleResult) {
     let tmp4 = isPreviewingRoles;
     if (!tmp4) {
-      const isSubscriptionRoleAvailableForPurchase = tmp(4697).isSubscriptionRoleAvailableForPurchase;
+      const isSubscriptionRoleAvailableForPurchase = tmp(4699).isSubscriptionRoleAvailableForPurchase;
       PremiumRoleUtils;
       let result = isSubscriptionRoleAvailableForPurchase(role);
       if (!result) {
@@ -183,7 +185,7 @@ function handleChannelUpdate(channel) {
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 const hasPermission = GuildRoleRecord.hasPermission;
 ({ Permissions: c10, GuildFeatures: unpackModuleId } = Constants);
-let closure_12 = {};
+const authStore2 = {};
 let set = new Set();
 const Store = get_initializedDefault.Store;
 class GatedChannelStore extends Store {

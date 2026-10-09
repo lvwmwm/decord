@@ -1,16 +1,16 @@
-// Module ID: 12174
-// Function ID: 12175
+// Module ID: 12113
+// Function ID: 12114
 // Name: navigateToThreadCreation
-// Dependencies: [7874, 4936, 5101, 2]
+// Dependencies: [7883, 4937, 5102, 2]
 // Exports: navigateToThreadCreation
 
-// Module 12174 (navigateToThreadCreation)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7874 */;
+// Module 12113 (navigateToThreadCreation)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4937 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7883 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const transitionToChannel = tmp3(5101);
+const transitionToChannel = tmp3(5102);
 let result = size.fileFinishedImporting("modules/threads/native/navigateToThreadCreation.tsx");
 
 export const navigateToThreadCreation = function navigateToThreadCreation(channel, Message) {

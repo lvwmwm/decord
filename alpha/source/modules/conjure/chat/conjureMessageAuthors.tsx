@@ -1,12 +1,12 @@
-// Module ID: 16937
-// Function ID: 16938
+// Module ID: 17067
+// Function ID: 17068
 // Name: conjureMessageAuthors
-// Dependencies: [1389, 8281, 2]
+// Dependencies: [1390, 8289, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor
 
-// Module 16937 (conjureMessageAuthors)
-import UserActionCreatorsAll from "UserActionCreators" /* 8281 */;
-import UserStore from "UserStore" /* 1389 */;
+// Module 17067 (conjureMessageAuthors)
+import UserActionCreatorsAll from "UserActionCreators" /* 8289 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let importAll;

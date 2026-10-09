@@ -1,20 +1,20 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 9101
+// Function ID: 9102
 // Name: PromotionsStore
-// Dependencies: [1243, 10007, 1389, 10008, 10038, 504, 10039, 584, 2]
+// Dependencies: [1244, 9102, 1390, 9103, 9133, 504, 9134, 584, 2]
 
-// Module 10006 (PromotionsStore)
+// Module 9101 (PromotionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 10039 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import PromotionRecord from "PromotionRecord" /* 10007 */;
-import UserStore from "UserStore" /* 1389 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 10008 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9134 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import PromotionRecord from "PromotionRecord" /* 9102 */;
+import UserStore from "UserStore" /* 1390 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9103 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let componentType, hasBogoReward;
+let closure_12, componentType, hasBogoReward;
 
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[4]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
@@ -59,10 +59,10 @@ let closure_7 = { hasFetchedConsumedInboundPromotionId: false, consumedInboundPr
 let c9 = false;
 let c10 = null;
 let locale = null;
-let closure_12 = createEmptyPromotionsByType();
+const authStore2 = createEmptyPromotionsByType();
 let closure_13 = null;
 let map = new Map();
-const authStore3 = null;
+const authStore4 = null;
 let closure_16 = [];
 let c17 = false;
 const PersistedStore = get_initializedDefault.PersistedStore;

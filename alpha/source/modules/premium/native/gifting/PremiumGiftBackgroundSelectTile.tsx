@@ -1,29 +1,29 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12664
+// Function ID: 12665
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1391, 12720, 21, 12721, 12722, 12723, 12724, 12725, 12726, 12727, 12728, 12729, 5090, 587, 558, 576, 1126, 2629, 6164, 2]
+// Dependencies: [19, 17, 1392, 12665, 21, 12666, 12667, 12668, 12669, 12670, 12671, 12672, 12673, 12674, 5091, 587, 558, 576, 1126, 2629, 6163, 2]
 
-// Module 12719 (PremiumGiftBackgroundSelectTile)
+// Module 12664 (PremiumGiftBackgroundSelectTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _modDef2629 from "module_2629" /* 2629 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import PremiumGiftingConstants from "PremiumGiftingConstants" /* 12720 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12721 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12722 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12723 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12724 */;
-import _modDef12725 from "module_12725" /* 12725 */;
-import _modDef12726 from "module_12726" /* 12726 */;
-import _modDef12727 from "module_12727" /* 12727 */;
-import _modDef12728 from "module_12728" /* 12728 */;
-import _modDef12729 from "module_12729" /* 12729 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import PremiumGiftingConstants from "PremiumGiftingConstants" /* 12665 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12666 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12667 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12668 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12669 */;
+import _modDef12670 from "module_12670" /* 12670 */;
+import _modDef12671 from "module_12671" /* 12671 */;
+import _modDef12672 from "module_12672" /* 12672 */;
+import _modDef12673 from "module_12673" /* 12673 */;
+import _modDef12674 from "module_12674" /* 12674 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,19 +41,19 @@ const GIFT_STYLE_DESCRIPTIONS = PremiumGiftingConstants.GIFT_STYLE_DESCRIPTIONS;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const GIFT_STYLE_IMG = { [STANDARD_BOX]: AssetRegistryDefault, [CAKE]: AssetRegistryDefault2, [CHEST]: AssetRegistryDefault3, [COFFEE]: AssetRegistryDefault4 };
 ({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
-let obj2 = { uri: _modDef12725 };
+let obj2 = { uri: _modDef12670 };
 GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = obj2;
 GIFT_STYLE_IMG[PremiumGiftStyles.SNOWGLOBE] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.BOX] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.CUP] = null;
-let obj3 = { uri: _modDef12726 };
+let obj3 = { uri: _modDef12671 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = obj3;
-let obj4 = { uri: _modDef12727 };
+let obj4 = { uri: _modDef12672 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = obj4;
-let obj5 = { uri: _modDef12728 };
+let obj5 = { uri: _modDef12673 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = obj5;
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef12729 };
-({ uri: _modDef12729 });
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef12674 };
+({ uri: _modDef12674 });
 let closure_9 = createStyles.createStyles((arg0) => {
   let num;
   let size1;
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBackgrou
     }
     items = [selected, ];
     const obj4 = { resizeMode: "contain", style: tmp.image, source: obj[giftStyle] };
-    items[1] = metroRequire(tmp8(6164), obj4);
+    items[1] = metroRequire(tmp8(6163), obj4);
     tmp4Result = tmp4(tmp5, obj);
   }
   return tmp4Result;

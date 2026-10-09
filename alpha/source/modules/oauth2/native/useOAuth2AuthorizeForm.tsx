@@ -1,33 +1,33 @@
-// Module ID: 9129
-// Function ID: 9130
+// Module ID: 9196
+// Function ID: 9197
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4722, 5079, 2021, 5757, 1389, 9130, 1085, 21, 5090, 4712, 504, 5360, 4810, 5091, 6842, 9131, 9132, 1097, 9133, 1294, 1278, 9134, 9136, 9139, 9140, 6849, 1254, 9141, 9142, 5105, 9143, 5370, 9144, 5375, 1126, 6158, 5759, 9146, 9181, 8433, 9137, 12877, 12881, 12880, 12882, 12883, 12884, 12886, 12889, 6809, 2]
+// Dependencies: [5, 32, 19, 17, 4724, 5080, 2022, 5758, 1390, 9197, 1085, 21, 5091, 4714, 504, 5361, 4811, 5092, 6849, 9198, 9199, 1097, 9200, 1295, 1279, 9201, 9203, 9206, 9207, 6856, 1255, 9208, 9209, 5106, 9210, 5371, 9211, 5376, 1126, 6160, 5760, 9213, 9215, 8441, 9204, 12846, 12850, 12849, 12851, 12852, 12853, 12855, 12858, 6816, 2]
 // Exports: default
 
-// Module 9129 (useOAuth2AuthorizeForm)
+// Module 9196 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6158 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6842 */;
-import Authorize from "Authorize" /* 9131 */;
-import react_nativeDefault from "react-native" /* 9133 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9140 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4714 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6160 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6849 */;
+import Authorize from "Authorize" /* 9198 */;
+import react_nativeDefault from "react-native" /* 9200 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9207 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4722 from "module_4722" /* 4722 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5757 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants_mod from "Constants" /* 9130 */;
+import module_4724 from "module_4724" /* 4724 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5758 */;
+import UserStore from "UserStore" /* 1390 */;
+import Constants_mod from "Constants" /* 9197 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -40,7 +40,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(9132);
+const scopes2 = tmp4(9199);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -730,7 +730,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
     yield "IconComponent";
     responseType = tmp4;
     ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
-    return "Reflect";
+    return "Set";
   });
   const items13 = [first7, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp52, nonce, memo4, first6, first4, first5, first12, dismissOAuthModal, callback, flag5, , , ];
   let application;
@@ -958,7 +958,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       ref2.current = first1;
       const obj = { step: first1, application_id: clientId, integration_type: first7, scopes: requestedScopes, permissions: memo4.toString() };
       const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
-      const OAUTH2_AUTHORIZE_STEP_VIEWED = authStore3.OAUTH2_AUTHORIZE_STEP_VIEWED;
+      const OAUTH2_AUTHORIZE_STEP_VIEWED = authStore4.OAUTH2_AUTHORIZE_STEP_VIEWED;
       AppAnalyticsUtils;
       trackWithMetadata(OAUTH2_AUTHORIZE_STEP_VIEWED, obj);
     }
@@ -1036,7 +1036,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(9143);
+            const tmp27Result = tmp27(9210);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;

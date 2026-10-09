@@ -1,10 +1,10 @@
-// Module ID: 10448
-// Function ID: 10449
+// Module ID: 10437
+// Function ID: 10438
 // Name: AnimatedCounterUtils
 // Dependencies: [2]
 // Exports: defaultFormatter
 
-// Module 10448 (AnimatedCounterUtils)
+// Module 10437 (AnimatedCounterUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/forums/native/posts/AnimatedCounterUtils.tsx");

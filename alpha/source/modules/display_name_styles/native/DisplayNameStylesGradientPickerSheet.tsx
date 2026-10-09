@@ -1,20 +1,20 @@
-// Module ID: 15447
-// Function ID: 15448
+// Module ID: 15560
+// Function ID: 15561
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1085, 21, 5090, 587, 15448, 558, 576, 10249, 1406, 15443, 5055, 1264, 5054, 14662, 6829, 1126, 5375, 15440, 1103, 5387, 15449, 12, 6189, 4775, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5091, 587, 15561, 558, 576, 10234, 1407, 15556, 5056, 1265, 5055, 14767, 6836, 1126, 5376, 15553, 1103, 5388, 15562, 12, 6191, 4776, 2]
 
-// Module 15447 (DisplayNameStylesGradientPickerSheet)
+// Module 15560 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 15448 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 15561 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F156778 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F157113 */ }));
                         },
               actionButtonVariant: "primary"
             };
@@ -140,7 +140,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                           closure_0 = arg0;
                           const obj = onSelectColors(displayNameStylesEffectConfig[13]);
                           const result = obj.triggerHapticFeedback(onSelectColors(displayNameStylesEffectConfig[13]).HapticFeedbackTypes.IMPACT_MEDIUM);
-                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F156778 */ }));
+                          closure_1_5((arr) => arr.map(function() { /* body not rendered: F157113 */ }));
                         },
               actionButtonVariant: "primary"
             };

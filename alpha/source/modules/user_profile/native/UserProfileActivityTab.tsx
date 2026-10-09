@@ -1,18 +1,18 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 13306
+// Function ID: 13307
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 5086, 1126, 8466, 2127, 13214, 13217, 12983, 13218, 2]
+// Dependencies: [19, 17, 1085, 21, 5091, 587, 558, 576, 5087, 1126, 8474, 2127, 13307, 13310, 13065, 13311, 2]
 
-// Module 13213 (UserProfileActivityTab)
+// Module 13306 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 13218 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 13311 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sectio
     let tmp9 = null != introText;
     if (tmp9) {
       const obj3 = { style: tmp4.introText, variant: "text-xs/medium", children: introText };
-      tmp9 = hasOwnProperty(tmp(5086).Text, obj3);
+      tmp9 = hasOwnProperty(tmp(5087).Text, obj3);
     }
     cResult[3] = introText;
     cResult[4] = tmp4.introText;
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       if (cResult[2] === user.id) {
         tmp4 = cResult[3];
       }
-      const tmp6 = cardStyle(13214)(tmp4);
+      const tmp6 = cardStyle(13307)(tmp4);
       ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = tmp6);
       const tmp5 = cardStyle;
       if (!hasCurrentActivity) {
@@ -314,7 +314,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
                 }
               }
             }
-            const tmpResult = user(13217);
+            const tmpResult = user(13310);
             if (isCurrentUser) {
               tmp8Result = tmp8(tmpResult.UserProfileActivityEmptyCurrentUser, {});
             } else {
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       }
       let tmp17 = hasCurrentActivity;
       if (tmp17) {
-        const obj5 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp5(12983), obj6) };
+        const obj5 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp5(13065), obj6) };
         intl = tmp(1126).intl;
         obj6 = { user, currentUser, guildId, style: cardStyle };
         tmp17 = closure_5(closure_10, obj5);
@@ -432,8 +432,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   ({ currentUser, guildId, cardStyle } = user);
   const channelId = user.channelId;
   let obj = { userId: user.id, currentUserId: currentUser.id, guildId };
-  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(13214)(obj));
-  cardStyle(13214)(obj);
+  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(13307)(obj));
+  cardStyle(13307)(obj);
   const tmp = cardStyle;
   if (!hasCurrentActivity) {
     let tmp10Result;
@@ -441,7 +441,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       if (tmp4) {
         tmp10Result = tmp5(closure_9, {});
       } else {
-        const tmp7 = user(13217);
+        const tmp7 = user(13310);
         if (isCurrentUser) {
           tmp10Result = tmp5(tmp7.UserProfileActivityEmptyCurrentUser, {});
         } else {
@@ -455,7 +455,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   const tmp10 = closure_6;
   const tmp11 = closure_7;
   if (hasCurrentActivity) {
-    const obj3 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp(12983), obj4) };
+    const obj3 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp(13065), obj4) };
     intl = user(1126).intl;
     obj4 = { user, currentUser, guildId, style: cardStyle };
     hasCurrentActivity = closure_5(closure_10, obj3);

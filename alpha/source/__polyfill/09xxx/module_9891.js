@@ -1,12 +1,14 @@
 // Module ID: 9891
 // Function ID: 9892
-// Dependencies: [41, 42, 93, 95, 98, 9789]
+// Dependencies: [41, 42, 93, 95, 98, 9796, 9795, 9797]
 
 // Module 9891
-import _mod9789 from "module_9789" /* 9789 */;
+import Meridiem from "Meridiem" /* 9795 */;
+import assignSimilarDate from "assignSimilarDate" /* 9796 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9797 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class ZHHantMergeDateRangeRefiner {
+class NLCasualDateTimeParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(ZHHantMergeDateRangeRefiner);
+    _classCallCheck(this, NLCasualDateTimeParser);
+    const obj = _getPrototypeOf(NLCasualDateTimeParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,13 +44,58 @@ class ZHHantMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantMergeDateRangeRefiner, fn(_mod9789).default);
+_inherits(NLCasualDateTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(至|到|\-|\~|～|－|ー)\s*$/i;
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    return /(gisteren|morgen|van)(ochtend|middag|namiddag|avond|nacht)(?=\W|$)/i;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const str2 = arg1[2];
+      const formatted1 = str2.toLowerCase();
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const refDate = createParsingComponents.refDate;
+      if ("gisteren" === formatted) {
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date(refDate.getTime());
+        date.setDate(date.getDate() - 1);
+        assignSimilarDate.assignSimilarDate(parsingComponents, date);
+      } else if ("van" === formatted) {
+        assignSimilarDate.assignSimilarDate(parsingComponents, refDate);
+      } else if ("morgen" === formatted) {
+        const _Date2 = Date;
+        const self3 = this;
+        const self4 = this;
+        const date1 = new Date(refDate.getTime());
+        date1.setDate(date1.getDate() + 1);
+        assignSimilarDate.assignSimilarDate(parsingComponents, date1);
+        assignSimilarDate.implySimilarTime(parsingComponents, date1);
+      }
+      if ("ochtend" === formatted1) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 6);
+      } else if ("middag" === formatted1) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 12);
+      } else if ("namiddag" === formatted1) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 15);
+      } else if ("avond" === formatted1) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 20);
+      }
+      return parsingComponents;
+    }
+  }
+];
 
-export default _createClass(ZHHantMergeDateRangeRefiner, items);
+export default _createClass(NLCasualDateTimeParser, items);

@@ -1,19 +1,19 @@
-// Module ID: 18094
-// Function ID: 18095
+// Module ID: 18254
+// Function ID: 18255
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7860, 21, 587, 5090, 558, 576, 18095, 12232, 5086, 1126, 18096, 18097, 13968, 6892, 5373, 2]
+// Dependencies: [19, 17, 7869, 21, 587, 5091, 558, 576, 18255, 12171, 5087, 1126, 18256, 18257, 14065, 6899, 5374, 2]
 
-// Module 18094 (GuildSettingsServerTagBadgeGrid)
+// Module 18254 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 7860 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12232 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18095 */;
-import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18096 */;
-import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 18097 */;
+import GuildTagConstants from "GuildTagConstants" /* 7869 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12171 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18255 */;
+import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18256 */;
+import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 18257 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -222,9 +222,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
     openGuildPowerupsModalDefault(obj);
   }, items);
   let obj = { spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = guildId(5373).Stack;
+  const Stack = guildId(5374).Stack;
   const obj2 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl.string(guildId(1126).t.wRnfnY) };
-  const Text = guildId(5086).Text;
+  const Text = guildId(5087).Text;
   intl = guildId(1126).intl;
   items1 = [closure_7(Text, obj2), , ];
   const obj3 = {
@@ -261,11 +261,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
     substr = lockedBadges.slice(0, 10);
     items2 = [closure_7(tmp9, obj5), , ];
     const obj6 = { variant: "text-md/medium", color: "text-subtle", style: tmp.upsellText, children: intl3.string(guildId(1126).t.U5p3GZ) };
-    const Text2 = tmp7(5086).Text;
+    const Text2 = tmp7(5087).Text;
     intl3 = tmp7(1126).intl;
     items2[1] = closure_7(Text2, obj6);
     const obj7 = { size: "md", color: nativeDefault.colors.ICON_SUBTLE };
-    const ChevronSmallRightIcon = tmp7(6892).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp7(6899).ChevronSmallRightIcon;
     items2[2] = closure_7(ChevronSmallRightIcon, obj7);
     tmp6Result = tmp6(closure_4, obj4);
   }

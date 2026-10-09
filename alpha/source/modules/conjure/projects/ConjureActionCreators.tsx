@@ -1,26 +1,26 @@
-// Module ID: 12364
-// Function ID: 12365
+// Module ID: 11369
+// Function ID: 11370
 // Name: ConjureActionCreators
-// Dependencies: [5, 6040, 1389, 11251, 1085, 5972, 584, 12365, 12366, 1294, 5119, 12377, 6933, 6842, 8281, 12378, 12379, 12381, 2]
+// Dependencies: [5, 6042, 1390, 10617, 1085, 5974, 584, 11370, 11371, 6940, 1295, 5120, 11382, 6849, 8289, 11367, 11383, 11385, 2]
 // Exports: createProject, deleteProjectInBackground, fetchProjectLimit, markLogsSeen, refreshPublishedProject, reloadConjureProjectFrames, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, unpublishProject, updateProjectSettings
 
-// Module 12364 (ConjureActionCreators)
+// Module 11369 (ConjureActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import ConjureTypes from "ConjureTypes" /* 6933 */;
-import UserActionCreators from "UserActionCreators" /* 8281 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 12365 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 12366 */;
-import conjureAppInServer from "conjureAppInServer" /* 12378 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import ReadStateConstants from "ReadStateConstants" /* 5974 */;
+import ConjureTypes from "ConjureTypes" /* 6940 */;
+import UserActionCreators from "UserActionCreators" /* 8289 */;
+import conjureAppInServer from "conjureAppInServer" /* 11367 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 11370 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11371 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
-import UserStore from "UserStore" /* 1389 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 11251 */;
+import ReadStateStore from "ReadStateStore" /* 6042 */;
+import UserStore from "UserStore" /* 1390 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
 import size from "module_2" /* 2 */;
 
-let PUBLIC, closure_10, closure_11, closure_18, closure_4, currentUser, projectsFetchState, resourceIds;
+let PUBLIC, also_remove_preview_bot, closure_10, closure_11, closure_18, closure_4, currentUser, projectsFetchState, resourceIds;
 
 function reloadConjureAppFrames(application_id) {
   obj = ConjurePlatformUtilsDefault;
@@ -199,7 +199,7 @@ obj = function _forgetMissingProjects() {
                 c0 = tmp36;
                 if (null == closure_131_6.getProject(c0)) {
                   if (0 !== closure_131_4.getMentionCount(c0, closure_131_8.CONJURING_PROJECT)) {
-                    let obj5 = closure_131_0(closure_131_2[10]);
+                    let obj5 = closure_131_0(closure_131_2[11]);
                     let _Math = Math;
                     c6 = 2;
                     c7 = 1;
@@ -238,7 +238,7 @@ obj = function _forgetMissingProjects() {
         } else if (3 === tmp4) {
           c5 = 1;
           closure_2 = closure_1_4;
-          let obj2 = closure_131_0(closure_131_2[11]);
+          let obj2 = closure_131_0(closure_131_2[12]);
           closure_1 = obj2.createFailureStatus(closure_2);
           let tmp14 = 403 !== closure_1;
           if (tmp14) {
@@ -447,18 +447,12 @@ obj = function _createProject() {
               if (flags == null) {
                 PUBLIC = ConjureTypes.ConjureProjectFlags.PUBLIC;
               }
-              let num5 = 0;
-              const tmp31 = PUBLIC;
-              if ("guild" === flags.install_scope) {
-                num5 = ConjureTypes.ConjureProjectFlags.NATIVE_APP_CHANNELS;
-              }
               c5 = 1;
-              const tmp34 = tmp31 | num5;
               const HTTP = HTTPUtils.HTTP;
               const request = { url: constants.CONJURE_PROJECTS, body: obj4, rejectWithError: false };
               const post = HTTP.post;
-              obj4 = { flags: tmp34 };
-              const merged = Object.assign(tmp48);
+              obj4 = { flags: PUBLIC };
+              const merged = Object.assign(tmp45);
               c6 = 2;
               c7 = 1;
               const obj7 = { value: post(request), done: false };
@@ -467,12 +461,12 @@ obj = function _createProject() {
           } else if (1 === c6) {
             c5 = 0;
             let closure_1 = closure_4;
-            const ConjureCreateError = closure_131_0(closure_131_2[11]).ConjureCreateError;
-            const obj5 = closure_131_0(closure_131_2[11]);
+            const ConjureCreateError = closure_131_0(closure_131_2[12]).ConjureCreateError;
+            const obj5 = closure_131_0(closure_131_2[12]);
             const result = obj5.classifyCreateFailure(closure_1);
             const self = this;
             const self2 = this;
-            const obj6 = closure_131_0(closure_131_2[11]);
+            const obj6 = closure_131_0(closure_131_2[12]);
             const conjureCreateError = new ConjureCreateError(result, obj6.createFailureStatus(closure_1));
             throw conjureCreateError;
           } else if (arg0 === 1) {
@@ -491,11 +485,11 @@ obj = function _createProject() {
             c7 = 3;
             return { value: body.id, done: true };
           }
-        } catch (tmp41) {
-          closure_4 = tmp41;
+        } catch (tmp38) {
+          closure_4 = tmp38;
           if (0 === c5) {
             c7 = 3;
-            throw tmp41;
+            throw tmp38;
           } else {
             c6 = 1;
           }
@@ -662,13 +656,14 @@ obj = function _deleteProject() {
   return obj(...arguments);
 };
 obj = function _unpublishProject() {
-  obj = _asyncToGenerator(async (arg0, arg1) => {
+  obj = _asyncToGenerator(async (arg0, guild_id) => {
     let closure_0 = arg0;
-    let alsoRemovePreviewBot = arg1;
     let c6 = 0;
     let c7 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
+      let c1;
+      let c2;
       let obj5;
       let tmp7;
       if (c7 === 2) {
@@ -694,12 +689,13 @@ obj = function _unpublishProject() {
               return { value, done: true };
             } else {
               closure_3 = tmp;
-              closure_2 = tmp7;
-              alsoRemovePreviewBot = undefined;
-              alsoRemovePreviewBot = alsoRemovePreviewBot.alsoRemovePreviewBot;
+              let closure_2 = tmp7;
+              guild_id = undefined;
+              also_remove_preview_bot = undefined;
+              ({ guildId: c1, alsoRemovePreviewBot: c2 } = closure_1);
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -710,12 +706,12 @@ obj = function _unpublishProject() {
               return { value, done: true };
             } else {
               c5 = 1;
-              const HTTP = closure_131_0(closure_131_2[9]).HTTP;
+              const HTTP = closure_131_0(closure_131_2[10]).HTTP;
               const request = { url: closure_131_7.CONJURE_PROJECT_UNPUBLISH(closure_0), body: obj5, rejectWithError: false };
               const post = HTTP.post;
               c6 = 3;
               c7 = 1;
-              obj5 = { also_remove_preview_bot: alsoRemovePreviewBot };
+              obj5 = { guild_id, also_remove_preview_bot };
               const obj6 = { value: post(request), done: false };
               return obj6;
             }
@@ -856,7 +852,7 @@ obj = function _refreshPublishedProject() {
       obj6.trackConjureDeployed(closure_0, obj16);
       await "IconComponent";
       isPreview = isPreview.isPreview;
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -890,13 +886,16 @@ export const reloadConjureProjectFrames = function reloadConjureProjectFrames(ar
     const application_id = project.application_id;
     obj = ConjurePlatformUtilsDefault;
     obj.reloadAppFrames(application_id);
-    let prop = project.preview_application_id;
+    const obj2 = ConjureTypes;
     const tmp2 = importDefault;
-    if (prop == null) {
-      prop = null;
+    if (!obj2.isPreviewlessProject(project)) {
+      let prop = project.preview_application_id;
+      if (prop == null) {
+        prop = null;
+      }
+      const tmp2Result = tmp2(11371);
+      tmp2Result.reloadAppFrames(prop);
     }
-    const tmp2Result = tmp2(12366);
-    tmp2Result.reloadAppFrames(prop);
   }
 };
 export { listProjects };

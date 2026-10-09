@@ -1,18 +1,18 @@
-// Module ID: 6932
-// Function ID: 6933
+// Module ID: 6939
+// Function ID: 6940
 // Name: ConjureUtils
-// Dependencies: [5436, 4705, 2086, 4707, 4899, 1085, 6933, 6934, 558, 576, 504, 6935, 2]
+// Dependencies: [5437, 4707, 2086, 4709, 4900, 1085, 6940, 6941, 558, 576, 504, 6942, 2]
 // Exports: canAccessConjure, canStartConjureProject, conjureSettingChannels, conjureSettingsGuildId, eligibleConjureGuilds, findConjureChannelId, getConjureProjectAccessSettings, isConjureChannelCandidate, isConjureGuildEligible, isConjureProjectInGuild, resolveConjureWorkspaceGuildId
 
-// Module 6932 (ConjureUtils)
+// Module 6939 (ConjureUtils)
 import react from "react" /* 576 */;
-import ConjureTypes from "ConjureTypes" /* 6933 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6934 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4705 */;
+import ConjureTypes from "ConjureTypes" /* 6940 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6941 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4707 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,22 +20,21 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let c10;
+let ChannelTypes;
 let c3;
 let c9;
 let closure_4;
-let unpackModuleId;
-const f94426 = (guildId) => {
+const f94640 = (guildId) => {
   const obj = ConjureGuildExperiment;
   const obj2 = { guildId: guildId.id, location: _location };
   let result = obj.isConjureGuildEnabled(obj2);
   if (result) {
     const features = guildId.features;
-    result = !features.has(unpackModuleId.INTERNAL_EMPLOYEE_ONLY);
+    result = !features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
   }
   return result;
 };
-const f94427 = (id, id2) => {
+const f94641 = (id, id2) => {
   let num = -1;
   if (id.id >= id2.id) {
     let num2 = 0;
@@ -52,7 +51,7 @@ function conjureChannelAppId(channel) {
     type = channel.type;
   }
   let tmp2 = null;
-  if (type === constants2.GUILD_APP) {
+  if (type === ChannelTypes.GUILD_APP) {
     let application_id = channel.application_id;
     if (application_id == null) {
       application_id = null;
@@ -64,9 +63,13 @@ function conjureChannelAppId(channel) {
 let GuildChannelStore = GuildChannelStore_mod;
 ({ GUILD_SELECTABLE_CHANNELS_KEY: c3, GUILD_VOCAL_CHANNELS_KEY: closure_4 } = GuildChannelStore);
 GuildChannelStore = GuildChannelStore_mod;
-({ Permissions: c9, ChannelTypes: c10, GuildFeatures: unpackModuleId } = Constants);
+({ Permissions: c9, ChannelTypes } = Constants);
+const GuildFeatures = Constants.GuildFeatures;
+let items = [, ];
+({ GUILD_DIRECTORY: arr[0], GUILD_STORE: arr[1] } = ChannelTypes);
+const set = new Set(items);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanAccessConjure(guildId, location) {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanAccessConjure(guildId, location) {
   const obj = react;
   const cResult = obj.c(5);
   if (cResult[0] === guildId.id) {
@@ -79,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanAccess
     let isConjureGuildEnabled = tmpResult.useIsConjureGuildEnabled(tmp4);
     if (cResult[3] !== guildId.features) {
       const features = guildId.features;
-      const hasItem = features.has(unpackModuleId.INTERNAL_EMPLOYEE_ONLY);
+      const hasItem = features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
       cResult[3] = guildId.features;
       cResult[4] = hasItem;
       tmp6 = hasItem;
@@ -102,27 +105,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanAccess
   let isConjureGuildEnabled = obj.useIsConjureGuildEnabled(obj2);
   const features = guildId.features;
   if (isConjureGuildEnabled) {
-    isConjureGuildEnabled = !features.has(unpackModuleId.INTERNAL_EMPLOYEE_ONLY);
+    isConjureGuildEnabled = !features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
   }
   return isConjureGuildEnabled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-function isConjureGuildEligible(guildId, VibegrationsRemixSheet) {
-  const obj = ConjureGuildExperiment;
-  const obj2 = { guildId: guildId.id, location: VibegrationsRemixSheet };
-  let result = obj.isConjureGuildEnabled(obj2);
-  if (result) {
-    const features = guildId.features;
-    result = !features.has(unpackModuleId.INTERNAL_EMPLOYEE_ONLY);
-  }
-  return result;
-}
-function eligibleConjureGuilds(guildsArray, useIsOwnedVibegrationsApplication) {
-  let closure_0 = useIsOwnedVibegrationsApplication;
-  const found = guildsArray.filter(f94426);
-  return found.sort(f94427);
-}
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConjureChannelCandidate(guild_id, location) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConjureChannelCandidate(guild_id, location) {
   let first;
   let tmp8;
   _require = guild_id;
@@ -189,7 +177,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConju
     if (guild_id != null) {
       type = guild_id.type;
     }
-    let tmp18 = type === constants2.GUILD_APP;
+    let tmp18 = type === ChannelTypes.GUILD_APP;
     if (tmp18) {
       let prop;
       if (appChannelApplication != null) {
@@ -201,7 +189,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConju
       let hasItem;
       if (stateFromStores != null) {
         const features = stateFromStores.features;
-        hasItem = features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
+        hasItem = features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
       }
       tmp18 = true !== hasItem;
     }
@@ -246,7 +234,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConju
   if (guild_id != null) {
     type = guild_id.type;
   }
-  let tmp7 = type === constants2.GUILD_APP;
+  let tmp7 = type === ChannelTypes.GUILD_APP;
   if (tmp7) {
     let prop;
     if (appChannelApplication != null) {
@@ -258,7 +246,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConju
     let hasItem;
     if (stateFromStores != null) {
       const features = stateFromStores.features;
-      hasItem = features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
+      hasItem = features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
     }
     tmp7 = true !== hasItem;
   }
@@ -267,15 +255,30 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConju
   }
   return tmp7;
 });
+function isConjureGuildEligible(guildId, VibegrationsRemixSheet) {
+  const obj = ConjureGuildExperiment;
+  const obj2 = { guildId: guildId.id, location: VibegrationsRemixSheet };
+  let result = obj.isConjureGuildEnabled(obj2);
+  if (result) {
+    const features = guildId.features;
+    result = !features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
+  }
+  return result;
+}
+function eligibleConjureGuilds(guildsArray, useIsOwnedVibegrationsApplication) {
+  let closure_0 = useIsOwnedVibegrationsApplication;
+  const found = guildsArray.filter(f94640);
+  return found.sort(f94641);
+}
 let result = size.fileFinishedImporting("modules/conjure/shared/ConjureUtils.tsx");
 
-export const conjureSettingsGuildId = function conjureSettingsGuildId(project, isPreview) {
+export const conjureSettingsGuildId = function conjureSettingsGuildId(project, arg1) {
   let tmp = null;
   if (null != project) {
     tmp = null;
     if ("user" !== project.install_scope) {
       let preview_guild_id = null;
-      if (isPreview) {
+      if (arg1) {
         preview_guild_id = project.preview_guild_id;
       }
       if (preview_guild_id == null) {
@@ -289,22 +292,23 @@ export const conjureSettingsGuildId = function conjureSettingsGuildId(project, i
   }
   return tmp;
 };
-export const conjureSettingChannels = function conjureSettingChannels(stateFromStores1, channel_filter) {
+export const conjureSettingChannels = function conjureSettingChannels(stateFromStores, channel_filter) {
   let items;
   let items2;
   if ("voice" === channel_filter) {
     items = [];
   } else {
-    items = stateFromStores1[_false];
+    items = stateFromStores[_false];
   }
   const items1 = [...items];
   if ("text" === channel_filter) {
     items2 = [];
   } else {
-    items2 = stateFromStores1[React3];
+    items2 = stateFromStores[React3];
   }
   HermesBuiltin.arraySpread(items1, items2, tmp3);
-  return items1.map((channel) => channel.channel);
+  const mapped = items1.map((channel) => channel.channel);
+  return mapped.filter((type) => !set.has(type.type));
 };
 export const getConjureProjectAccessSettings = function getConjureProjectAccessSettings(arg0) {
   const obj = { isPublic: arg0 & ConjureTypes.ConjureProjectFlags.PUBLIC, isShared: arg0 & ConjureTypes.ConjureProjectFlags.SHAREABLE };
@@ -350,7 +354,7 @@ export const resolveConjureWorkspaceGuildId = function resolveConjureWorkspaceGu
     let result = obj.isConjureGuildEnabled(obj2);
     if (result) {
       let features = guild.features;
-      result = !features.has(constants3.INTERNAL_EMPLOYEE_ONLY);
+      result = !features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
     }
     if (result) {
       id = guild.id;
@@ -359,9 +363,9 @@ export const resolveConjureWorkspaceGuildId = function resolveConjureWorkspaceGu
   }
   const guildsArray = GuildStore.getGuildsArray();
   _require = VibegrationsChatStore;
-  const found = guildsArray.filter(f94426);
+  const found = guildsArray.filter(f94640);
   id = undefined;
-  const first = found.sort(f94427)[0];
+  const first = found.sort(f94641)[0];
   if (first != null) {
     id = first.id;
   }
@@ -375,13 +379,13 @@ export const canAccessConjure = function canAccessConjure(guild, getChannelIdFor
   let result = obj.isConjureGuildEnabled(obj2);
   if (result) {
     const features = guild.features;
-    result = !features.has(unpackModuleId.INTERNAL_EMPLOYEE_ONLY);
+    result = !features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
   }
   return result;
 };
 export const canStartConjureProject = function canStartConjureProject(features, location) {
   features = features.features;
-  const hasItem = features.has(unpackModuleId.INTERNAL_EMPLOYEE_ONLY);
+  const hasItem = features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
   let canResult = !hasItem && PermissionStore.can(constants.MANAGE_CHANNELS, features) && PermissionStore.can(constants.MANAGE_GUILD, features);
   if (canResult) {
     const obj2 = { guildId: features.id, location };
@@ -390,15 +394,15 @@ export const canStartConjureProject = function canStartConjureProject(features, 
   }
   return canResult;
 };
-export const useCanAccessConjure = tmp4;
+export const useCanAccessConjure = tmp5;
 export const isConjureChannelCandidate = function isConjureChannelCandidate(channel, ActivitySounds) {
   let type;
   if (channel != null) {
     type = channel.type;
   }
   let tmp3 = null;
-  const tmp2 = constants2;
-  if (type === constants2.GUILD_APP) {
+  const tmp2 = ChannelTypes;
+  if (type === ChannelTypes.GUILD_APP) {
     let application_id = channel.application_id;
     if (application_id == null) {
       application_id = null;
@@ -435,7 +439,7 @@ export const isConjureChannelCandidate = function isConjureChannelCandidate(chan
     let hasItem;
     if (guild != null) {
       const features = guild.features;
-      hasItem = features.has(unpackModuleId.INTERNAL_EMPLOYEE_ONLY);
+      hasItem = features.has(GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
     }
     result = true !== hasItem;
   }
@@ -451,4 +455,4 @@ export const isConjureChannelCandidate = function isConjureChannelCandidate(chan
   }
   return result;
 };
-export const useIsConjureChannelCandidate = tmp5;
+export const useIsConjureChannelCandidate = tmp6;

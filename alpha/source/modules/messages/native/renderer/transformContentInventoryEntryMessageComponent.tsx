@@ -1,28 +1,28 @@
-// Module ID: 8242
-// Function ID: 8243
+// Module ID: 8250
+// Function ID: 8251
 // Name: transformContentInventoryEntryMessageComponent
-// Dependencies: [17, 5436, 2128, 1389, 2023, 8243, 5405, 1417, 7663, 8244, 8245, 4927, 8247, 1102, 1126, 8091, 8249, 8139, 8250, 8252, 8253, 8248, 2]
+// Dependencies: [17, 5437, 2128, 1390, 2024, 8251, 5406, 1418, 7672, 8252, 8253, 4928, 8255, 1102, 1126, 8099, 8257, 8147, 8258, 8260, 8261, 8256, 2]
 // Exports: transformToRowGeneratedContentInventoryEntryComponent
 
-// Module 8242 (transformContentInventoryEntryMessageComponent)
+// Module 8250 (transformContentInventoryEntryMessageComponent)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1126 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import Constants from "Constants" /* 2023 */;
-import ColorUtils from "ColorUtils" /* 4927 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7663 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8091 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8243 */;
-import useAvatarColor from "useAvatarColor" /* 8244 */;
-import useHeroColors from "useHeroColors" /* 8245 */;
-import utils from "utils" /* 8247 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8249 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8250 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8253 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
+import Constants from "Constants" /* 2024 */;
+import ColorUtils from "ColorUtils" /* 4928 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7672 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8099 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8251 */;
+import useAvatarColor from "useAvatarColor" /* 8252 */;
+import useHeroColors from "useHeroColors" /* 8253 */;
+import utils from "utils" /* 8255 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8257 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8258 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 8261 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -116,8 +116,8 @@ export const transformToRowGeneratedContentInventoryEntryComponent = function tr
             const obj3 = { text: sum };
             items2.push(obj3);
           }
-          tmp50 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8252)).uri };
-          const obj4 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8252)).uri };
+          tmp50 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8260)).uri };
+          const obj4 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(8260)).uri };
         }
         tmp21 = tmp50;
       } else if (ContentInventoryEntryType.ContentInventoryEntryType.TOP_ARTIST === content_type) {
@@ -135,7 +135,7 @@ export const transformToRowGeneratedContentInventoryEntryComponent = function tr
             const tmpResult36 = ColorUtils;
             items3[1] = tmpResult36.hexToRgba(secondaryColor3);
             const tmpResult37 = utils;
-            const trait = tmpResult37.getTrait(contentInventoryEntry, tmp(8248).ContentInventoryTraitType.AGGREGATE_COUNT);
+            const trait = tmpResult37.getTrait(contentInventoryEntry, tmp(8256).ContentInventoryTraitType.AGGREGATE_COUNT);
             let count;
             if (trait != null) {
               count = trait.count;
@@ -216,7 +216,7 @@ export const transformToRowGeneratedContentInventoryEntryComponent = function tr
             const items8 = [];
             const push = items8.push;
             const timestamp = message.timestamp;
-            const obj10 = { badgeUrl: obj.resolveAssetSource(tmp6(8139)).uri };
+            const obj10 = { badgeUrl: obj.resolveAssetSource(tmp6(8147)).uri };
             const time = timestamp.getTime();
             const obj11 = { text: tmpResult46.formatEntryTimestamp(contentInventoryEntry, LocaleStore.locale, time), ariaDescription: formatEntryTimestamp(contentInventoryEntry, locale, time, obj12) };
             const merged = Object.assign(obj10);

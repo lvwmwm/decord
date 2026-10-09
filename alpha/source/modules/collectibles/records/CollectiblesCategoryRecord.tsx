@@ -1,14 +1,14 @@
-// Module ID: 7253
-// Function ID: 7254
+// Module ID: 7258
+// Function ID: 7259
 // Name: CollectiblesCategoryRecord
-// Dependencies: [7254, 7261, 1992, 7263, 7264, 2]
+// Dependencies: [7259, 7266, 1993, 7268, 7269, 2]
 
-// Module 7253 (CollectiblesCategoryRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7263 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7254 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7261 */;
+// Module 7258 (CollectiblesCategoryRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7268 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7269 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7259 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7266 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesCategoryRecord extends CollectiblesStoreListingRecord {

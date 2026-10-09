@@ -1,18 +1,18 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 11720
+// Function ID: 11721
 // Name: Spoiler
-// Dependencies: [19, 17, 1085, 11776, 21, 5090, 1381, 587, 4787, 1200, 2]
+// Dependencies: [19, 17, 1085, 11713, 21, 5091, 1382, 587, 4788, 1200, 2]
 
-// Module 11783 (Spoiler)
+// Module 11720 (Spoiler)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 4787 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11776 */;
+import native from "native" /* 4788 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11713 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5090 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import createStyles from "createStyles" /* 5091 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -75,7 +75,7 @@ class Spoiler extends PureComponent {
       let tmp9 = _require;
       let mapped = Children1.map(children, (type) => {
         let validElement;
-        const f109342 = (props) => {
+        const f109270 = (props) => {
           let Children;
           let cloneElement;
           let items;
@@ -87,7 +87,7 @@ class Spoiler extends PureComponent {
             if (Array.isArray(style)) {
               flattenResult = closure_2_4.flatten(style);
             }
-            const obj = { children: Children.map(props.props.children, f109342), style: items, onPress: "r" };
+            const obj = { children: Children.map(props.props.children, f109270), style: items, onPress: "r" };
             ({ Children, cloneElement } = tmp);
             items = [flattenResult, spoiler.spoiler];
             return cloneElement(props, obj);
@@ -117,7 +117,7 @@ class Spoiler extends PureComponent {
             mapped = type;
             if (!revealed) {
               const Children = tmp.Children;
-              mapped = Children.map(type, f109342);
+              mapped = Children.map(type, f109270);
             }
           }
           tmp9 = mapped;

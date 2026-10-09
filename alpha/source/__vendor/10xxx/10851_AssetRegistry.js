@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f32d9237628628dc39ab04879ac15862", name: "ScreenArrowIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/application_streaming", width: 300, height: 120, scales: [2, 3], hash: "a3a7de10a959d0177fccd05afcb73752", name: "img_stream_ended_dark", type: "png" });

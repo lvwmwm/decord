@@ -1,68 +1,69 @@
-// Module ID: 6040
-// Function ID: 6041
+// Module ID: 6042
+// Function ID: 6043
 // Name: ReadStateStore
-// Dependencies: [5, 32, 2062, 6041, 2116, 4976, 6059, 6060, 6061, 6062, 6065, 4709, 1243, 2067, 502, 6066, 2063, 5747, 5970, 2086, 5884, 5428, 4707, 4717, 2115, 5971, 1389, 6070, 1085, 6072, 2070, 2069, 5972, 1125, 3, 11, 1102, 584, 5628, 6073, 1294, 2058, 6074, 6075, 6076, 6077, 4716, 6080, 6081, 6082, 6086, 1999, 1402, 4659, 12, 1387, 5751, 4937, 6087, 6088, 4715, 2076, 504, 1998, 6089, 2]
+// Dependencies: [5, 32, 2063, 6043, 2116, 4977, 6061, 6062, 6063, 6064, 6067, 4711, 1244, 2068, 502, 6068, 2064, 5748, 5972, 2086, 5885, 5429, 4709, 4719, 2115, 5973, 1390, 6072, 1085, 6074, 2071, 2070, 5974, 1125, 3, 11, 1102, 584, 5629, 6075, 1295, 2059, 6076, 6077, 6078, 6079, 5950, 4718, 6082, 6083, 6084, 6088, 2000, 1403, 4661, 12, 1388, 5752, 4938, 6089, 6090, 4717, 2076, 504, 1999, 6091, 2]
 // Exports: isNonMutedPrivateMessage
 
-// Module 6040 (ReadStateStore)
+// Module 6042 (ReadStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
-import _modDef4659 from "module_4659" /* 4659 */;
-import ThreadActionUtils from "ThreadActionUtils" /* 4715 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4716 */;
-import RootNavigationRef from "RootNavigationRef" /* 4937 */;
-import isMessageMentioned from "isMessageMentioned" /* 5628 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5751 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6059 */;
-import networkAwareRetryDefault from "networkAwareRetry" /* 6073 */;
-import OverlaySupported from "OverlaySupported" /* 6074 */;
-import OverlayVisibility from "OverlayVisibility" /* 6075 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6076 */;
-import isChannelFocused from "isChannelFocused" /* 6077 */;
-import MessageRequestUtils from "MessageRequestUtils" /* 6080 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
-import visibleInlineChannels from "visibleInlineChannels" /* 6087 */;
-import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6088 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6089 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2070 */;
+import _modDef4661 from "module_4661" /* 4661 */;
+import ThreadActionUtils from "ThreadActionUtils" /* 4717 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4718 */;
+import RootNavigationRef from "RootNavigationRef" /* 4938 */;
+import isMessageMentioned from "isMessageMentioned" /* 5629 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5752 */;
+import NSFWContentGate from "NSFWContentGate" /* 5950 */;
+import ReadStateConstants from "ReadStateConstants" /* 5974 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6061 */;
+import networkAwareRetryDefault from "networkAwareRetry" /* 6075 */;
+import OverlaySupported from "OverlaySupported" /* 6076 */;
+import OverlayVisibility from "OverlayVisibility" /* 6077 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6078 */;
+import isChannelFocused from "isChannelFocused" /* 6079 */;
+import MessageRequestUtils from "MessageRequestUtils" /* 6082 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6084 */;
+import visibleInlineChannels from "visibleInlineChannels" /* 6089 */;
+import ThreadNotificationSettings from "ThreadNotificationSettings" /* 6090 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
 import GatedChannelStore from "GatedChannelStore" /* 2116 */;
-import ExperimentStore from "ExperimentStore" /* 4976 */;
-import MessageRequestStore from "MessageRequestStore" /* 6060 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6061 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6062 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6065 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ExperimentStore from "ExperimentStore" /* 4977 */;
+import MessageRequestStore from "MessageRequestStore" /* 6062 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6063 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6064 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6067 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4711 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6066 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import DimensionStore from "DimensionStore" /* 5747 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6068 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import DimensionStore from "DimensionStore" /* 5748 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5972 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import IdleStore from "IdleStore" /* 5884 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
+import IdleStore from "IdleStore" /* 5885 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
-import UserStore from "UserStore" /* 1389 */;
-import WindowStore from "WindowStore" /* 6070 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+import UserStore from "UserStore" /* 1390 */;
+import WindowStore from "WindowStore" /* 6072 */;
 import Constants from "Constants" /* 1085 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6074 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -97,12 +98,12 @@ let closure_53;
 let closure_54;
 let closure_55;
 let tmp;
-const isOptInEnabled = tmp(6081);
-const f92085 = () => {
+const isOptInEnabled = tmp(6083);
+const f92297 = () => {
   obj = DispatcherDefault;
   obj.dispatch({ type: "DECAY_READ_STATES" });
 };
-const f92088 = (type) => {
+const f92300 = (type) => {
   let last_pin_timestamp;
   if (closure_1_18(type.type)) {
     const value = closure_1_83.get(type.id);
@@ -120,8 +121,8 @@ const f92088 = (type) => {
     }
     value.lastPinTimestamp = num;
     let num3 = type.flags;
-    const hasFlag = closure_1_0(closure_1_2[52]).hasFlag;
-    closure_1_0(closure_1_2[52]);
+    const hasFlag = closure_1_0(closure_1_2[53]).hasFlag;
+    closure_1_0(closure_1_2[53]);
     if (num3 == null) {
       num3 = 0;
     }
@@ -142,7 +143,7 @@ function setDecayedReadStateTimer() {
   const timestamp1 = Date.now();
   closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
   clearTimeout(timeout);
-  timeout = setTimeout(f92085, DurationsDefault.Millis.HOUR);
+  timeout = setTimeout(f92297, DurationsDefault.Millis.HOUR);
 }
 function parseTimestamp(arg0) {
   if (null == arg0) {
@@ -590,7 +591,7 @@ function mergeForGuild(guild) {
   const value3 = obj.get(guild.id, tmp3.GUILD_HOME);
   const fromTimestamp = require("SnowflakeUtils").fromTimestamp;
   require("SnowflakeUtils");
-  const tmp13 = _modDef4659;
+  const tmp13 = _modDef4661;
   const tmp13Result = tmp13(Date.now());
   const subtractResult = tmp13Result.subtract(24, "h");
   value3.lastMessageId = fromTimestamp(subtractResult.valueOf());
@@ -759,7 +760,7 @@ function handleMessageDelete(channelId) {
 }
 function handleLoadArchivedThreadsSuccess(threads) {
   threads = threads.threads;
-  const item = threads.forEach(f92088);
+  const item = threads.forEach(f92300);
 }
 function handleSearchMessagesSuccess(data) {
   data = data.data;
@@ -769,10 +770,10 @@ function handleSearchMessagesSuccess(data) {
     ({ messages, threads } = item);
     item = messages.forEach((arr) => {
       const mapped = arr.map((thread) => thread.thread);
-      const found = mapped.filter(closure_1_0(closure_1_2[55]).isNotNullish);
-      const item = found.forEach(f92088);
+      const found = mapped.filter(closure_1_0(closure_1_2[56]).isNotNullish);
+      const item = found.forEach(f92300);
     });
-    const item1 = threads.forEach(f92088);
+    const item1 = threads.forEach(f92300);
   });
 }
 function handleChannelDelete(channel) {
@@ -1451,18 +1452,23 @@ class ReadState {
         const basicChannel = ChannelStore.getBasicChannel(self.channelId);
         let tmp4 = null != basicChannel;
         if (tmp4) {
-          let hasItem;
-          if ("basicPermissions" in basicChannel) {
-            obj = BasicPermissionUtilsDefault;
-            hasItem = obj.has(basicChannel.basicPermissions, BasicPermissions.VIEW_CHANNEL);
-          } else {
-            const isChannelGatedResult = GatedChannelStore.isChannelGated(self.guildId, self.channelId);
-            hasItem = !isChannelGatedResult;
-            if (isChannelGatedResult) {
-              hasItem = PermissionStore.can(constants6.VIEW_CHANNEL, basicChannel);
+          obj = NSFWContentGate;
+          let result = obj.isNSFWActivityVisible(basicChannel);
+          if (result) {
+            let hasItem;
+            if ("basicPermissions" in basicChannel) {
+              const obj2 = BasicPermissionUtilsDefault;
+              hasItem = obj2.has(basicChannel.basicPermissions, BasicPermissions.VIEW_CHANNEL);
+            } else {
+              const isChannelGatedResult = GatedChannelStore.isChannelGated(self.guildId, self.channelId);
+              hasItem = !isChannelGatedResult;
+              if (isChannelGatedResult) {
+                hasItem = PermissionStore.can(constants6.VIEW_CHANNEL, basicChannel);
+              }
             }
+            result = hasItem;
           }
-          tmp4 = hasItem;
+          tmp4 = result;
         }
         return tmp4;
       }
@@ -1509,7 +1515,7 @@ class ReadState {
         let tmp9 = !result;
         const tmp4 = require;
         if (tmp9) {
-          const tmp4Result = tmp4(6081);
+          const tmp4Result = tmp4(6083);
           const result1 = tmp4Result.isOptInEnabledForGuild(self._guildId) && self._lastMessageTimestamp < closure_73;
           tmp9 = !result1 && self.canTrackUnreads();
           !result1 && self.canTrackUnreads();
@@ -1520,7 +1526,7 @@ class ReadState {
     }
     return tmp;
   }
-  getGuildChannelUnreadState(basicPermissions, arg1, arg2, arg3, arg4) {
+  getGuildChannelUnreadState(basicPermissions, arg1, arg2, arg3, arg4, userCanSeeNSFW) {
     const self = this;
     const tmp = arg1;
     if (tmp) {
@@ -1534,26 +1540,33 @@ class ReadState {
         }
       }
     }
-    if ("basicPermissions" in basicPermissions) {
-      obj = BasicPermissionUtilsDefault;
-      if (!obj.has(basicPermissions.basicPermissions, BasicPermissions.VIEW_CHANNEL)) {
-        return { mentionCount: 0, unread: false, isMentionLowImportance: false };
+    obj = NSFWContentGate;
+    if (obj.isNSFWActivityVisible(basicPermissions, userCanSeeNSFW)) {
+      if ("basicPermissions" in basicPermissions) {
+        const obj2 = BasicPermissionUtilsDefault;
+        if (!obj2.has(basicPermissions.basicPermissions, BasicPermissions.VIEW_CHANNEL)) {
+          return { mentionCount: 0, unread: false, isMentionLowImportance: false };
+        }
+      } else if (GatedChannelStore.isChannelGated(self.guildId, self.channelId)) {
+        if (!PermissionStore.can(constants6.VIEW_CHANNEL, basicPermissions)) {
+          return { mentionCount: 0, unread: false, isMentionLowImportance: false };
+        }
       }
-    } else if (GatedChannelStore.isChannelGated(self.guildId, self.channelId)) {
-      if (!PermissionStore.can(constants6.VIEW_CHANNEL, basicPermissions)) {
-        return { mentionCount: 0, unread: false, isMentionLowImportance: false };
+      const tmp9 = arg3;
+      if (!tmp9) {
+        let obj3;
+        const tmp10 = arg4;
+        if (!tmp10) {
+          obj3 = { mentionCount: self.mentionCount, unread: self.getAckTimestamp() < self._lastMessageTimestamp, isMentionLowImportance: self.isMentionLowImportance };
+        }
+        return obj3;
       }
+      const obj6 = { mentionCount: null, unread: false, isMentionLowImportance: null };
+      ({ mentionCount: obj4.mentionCount, isMentionLowImportance: obj4.isMentionLowImportance } = self);
+      obj3 = obj6;
+    } else {
+      return { mentionCount: 0, unread: false, isMentionLowImportance: false };
     }
-    const tmp9 = arg3;
-    if (!tmp9) {
-      let obj2;
-      const tmp10 = arg4;
-      if (!tmp10) {
-        obj2 = { mentionCount: self.mentionCount, unread: self.getAckTimestamp() < self._lastMessageTimestamp, isMentionLowImportance: self.isMentionLowImportance };
-      }
-      return obj2;
-    }
-    obj2 = { mentionCount: self.mentionCount, unread: false, isMentionLowImportance: self.isMentionLowImportance };
   }
   hasUnread() {
     return this.getAckTimestamp() < this._lastMessageTimestamp;
@@ -1831,7 +1844,7 @@ class ReadState {
           const tmp5 = dependencyMap;
           const tmp7 = closure_2;
           if (tmp7) {
-            const promise = asyncRequire(6086, tmp5.paths);
+            const promise = asyncRequire(6088, tmp5.paths);
             promise.then((result) => {
               obj = closure_1_1;
               channelId = channelId.channelId;
@@ -1935,7 +1948,7 @@ class ReadState {
       tmp7 = tmp8;
     }
     hasItem = null != basicChannel && set.has(basicChannel.type);
-    tmp14 = null != basicChannel && authStore5(basicChannel.type);
+    tmp14 = null != basicChannel && authStore6(basicChannel.type);
     ({ mentionCount: obj.mentionCount, channelId: obj.channelId, _ackMessageId: obj.ackMessageId, _lastMessageId: obj.lastMessageId } = self);
     tmp3Result6 = require("SnowflakeUtils");
     log("Deleting ReadState", channelId, type, obj);
@@ -2018,7 +2031,7 @@ class ReadState {
       } else {
         hasItem1 = set.has(basicChannel.type);
         if (hasItem1) {
-          const tmp6 = authStore5(basicChannel.type);
+          const tmp6 = authStore6(basicChannel.type);
           let tmp7 = !tmp6;
           if (tmp6) {
             let tmp10 = !closure_20(basicChannel.type);
@@ -2471,13 +2484,14 @@ class ReadStateStoreClass extends Store {
     const value = CHANNEL === ReadStateTypes.CHANNEL && ReadState.getValue(arg0, CHANNEL, (isMentionLowImportance) => isMentionLowImportance.isMentionLowImportance, false);
     return value;
   }
-  getGuildChannelUnreadState(id, arg1, arg2, arg3, arg4) {
+  getGuildChannelUnreadState(id, arg1, arg2, arg3, arg4, arg5) {
     let closure_0 = id;
     let closure_1 = arg1;
     let closure_2 = arg2;
     let closure_3 = arg3;
     let closure_4 = arg4;
-    return ReadState.getValue(id.id, ReadStateTypes.CHANNEL, (getGuildChannelUnreadState) => getGuildChannelUnreadState.getGuildChannelUnreadState(closure_0, closure_1, closure_2, closure_3, closure_4), { mentionCount: 0, unread: false, isMentionLowImportance: false });
+    let closure_5 = arg5;
+    return ReadState.getValue(id.id, ReadStateTypes.CHANNEL, (getGuildChannelUnreadState) => getGuildChannelUnreadState.getGuildChannelUnreadState(closure_0, closure_1, closure_2, closure_3, closure_4, closure_5), { mentionCount: 0, unread: false, isMentionLowImportance: false });
   }
   hasRecentlyVisitedAndRead(arg0) {
     let CHANNEL = arg1;
@@ -2898,7 +2912,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f92085, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f92297, DurationsDefault.Millis.HOUR);
     token = null;
     const tmp5 = channelId !== selectedChannelId && null != channelId;
     if (tmp5) {
@@ -2928,7 +2942,7 @@ obj = {
     const timestamp1 = Date.now();
     closure_74 = timestamp1 - 3 * DurationsDefault.Millis.DAY;
     clearTimeout(timeout);
-    timeout = setTimeout(f92085, DurationsDefault.Millis.HOUR);
+    timeout = setTimeout(f92297, DurationsDefault.Millis.HOUR);
     const item = readStates.forEach(function(type) {
       let CHANNEL = type.type;
       if (CHANNEL == null) {
@@ -3034,7 +3048,7 @@ obj = {
     }
     const mapped = messages.map((thread) => thread.thread);
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const item = found.forEach(f92088);
+    const item = found.forEach(f92300);
   },
   LOCAL_MESSAGES_LOADED: function handleLocalMessagesLoaded(messages) {
     messages = messages.messages;
@@ -3175,8 +3189,8 @@ obj = {
       if (null != value.oldestUnreadMessageId) {
         if (!value.oldestUnreadMessageIdStale) {
           if (!hasUnreadResult) {
-            const tmp13Result4 = isChannelFocused;
-            hasUnreadResult = tmp13Result4.getFocusedChannelId() === channelId;
+            const tmp13Result5 = isChannelFocused;
+            hasUnreadResult = tmp13Result5.getFocusedChannelId() === channelId;
           }
           if (!hasUnreadResult) {
             value.oldestUnreadMessageId = message.id;
@@ -3188,60 +3202,65 @@ obj = {
         if (!RelationshipStore.isBlockedOrIgnoredForMessage(message)) {
           if (message.type !== constants7.RECIPIENT_REMOVE) {
             let obj11;
-            if (null != currentUser) {
-              const obj10 = { rawMessage: message, userId: currentUser.id, suppressEveryone: UserGuildSettingsStore.isSuppressEveryoneEnabled(value.guildId), suppressRoles: UserGuildSettingsStore.isSuppressRolesEnabled(value.guildId) };
-              const isRawMessageMentioned = isMessageMentioned.isRawMessageMentioned;
-              isMessageMentioned;
-              if (isRawMessageMentioned(obj10)) {
-                obj11 = { shouldMention: true, isMentionLowImportance: false };
-              }
-              if (obj11.shouldMention) {
-                value.isMentionLowImportance = obj11.isMentionLowImportance;
-                value.mentionCount = value.mentionCount + 1;
-                if (null != currentUser) {
-                  ReadState.get(currentUser.id, ReadStateTypes.NOTIFICATION_CENTER).lastMessageId = message.id;
-                  const tmp52 = ReadStateTypes;
-                  if (NotificationCenterItemsStore.tabFocused) {
-                    const value4 = obj.get(currentUser.id, tmp52.NOTIFICATION_CENTER);
-                    const tmp44 = undefined !== value4.ackMessageId && value4.lastMessageId !== value4.ackMessageId;
-                    if (tmp44) {
-                      const tmp45 = null != value4.lastMessageId || 0 !== value4.mentionCount;
-                      if (tmp45) {
-                        let lastMessageId = value4.lastMessageId;
-                        if (lastMessageId == null) {
-                          const obj19 = require("SnowflakeUtils");
-                          lastMessageId = obj19.fromTimestamp(value4.getAckTimestamp());
-                        }
-                        const obj12 = { messageId: lastMessageId, local: false, trackAnalytics: false };
-                        value4.ack(obj12);
-                      }
-                    }
-                  }
+            const channel = obj3.getChannel(message.channel_id);
+            const tmp13Result6 = NSFWContentGate;
+            if (tmp13Result6.isNSFWActivityVisible(channel)) {
+              if (null != currentUser) {
+                const obj10 = { rawMessage: message, userId: currentUser.id, suppressEveryone: UserGuildSettingsStore.isSuppressEveryoneEnabled(value.guildId), suppressRoles: UserGuildSettingsStore.isSuppressRolesEnabled(value.guildId) };
+                const isRawMessageMentioned = isMessageMentioned.isRawMessageMentioned;
+                isMessageMentioned;
+                if (isRawMessageMentioned(obj10)) {
+                  obj11 = { shouldMention: true, isMentionLowImportance: false };
                 }
               }
-            }
-            const channel = obj3.getChannel(message.channel_id);
-            const tmp40 = null != channel && channel.isPrivate() && !UserGuildSettingsStore.isGuildOrCategoryOrChannelMuted(channel.guild_id, channel.id);
-            if (tmp40) {
-              obj11 = { shouldMention: true, isMentionLowImportance: false };
-            } else {
-              if (UserGuildSettingsStore.mentionOnAllMessages) {
-                if (null != channel) {
-                  if (channel.isThread()) {
-                    const tmp13Result6 = ThreadNotificationSettings;
-                    if (tmp13Result6.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
-                      obj11 = { shouldMention: true, isMentionLowImportance: true };
-                    }
-                  } else if (!channel.isVocal()) {
-                    if (!UserGuildSettingsStore.isChannelMuted(channel.guild_id, channel.id)) {
-                      if (UserGuildSettingsStore.resolvedMessageNotifications(channel) === constants10.ALL_MESSAGES) {
+              const tmp40 = null != channel && channel.isPrivate() && !UserGuildSettingsStore.isGuildOrCategoryOrChannelMuted(channel.guild_id, channel.id);
+              if (tmp40) {
+                obj11 = { shouldMention: true, isMentionLowImportance: false };
+              } else {
+                if (UserGuildSettingsStore.mentionOnAllMessages) {
+                  if (null != channel) {
+                    if (channel.isThread()) {
+                      const tmp13Result8 = ThreadNotificationSettings;
+                      if (tmp13Result8.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
                         obj11 = { shouldMention: true, isMentionLowImportance: true };
                       }
+                    } else if (!channel.isVocal()) {
+                      if (!UserGuildSettingsStore.isChannelMuted(channel.guild_id, channel.id)) {
+                        if (UserGuildSettingsStore.resolvedMessageNotifications(channel) === constants10.ALL_MESSAGES) {
+                          obj11 = { shouldMention: true, isMentionLowImportance: true };
+                        }
+                      }
+                    }
+                  }
+                }
+                obj11 = { shouldMention: false, isMentionLowImportance: false };
+              }
+            } else {
+              obj11 = { shouldMention: false, isMentionLowImportance: false };
+            }
+            if (obj11.shouldMention) {
+              value.isMentionLowImportance = obj11.isMentionLowImportance;
+              value.mentionCount = value.mentionCount + 1;
+              if (null != currentUser) {
+                ReadState.get(currentUser.id, ReadStateTypes.NOTIFICATION_CENTER).lastMessageId = message.id;
+                const tmp52 = ReadStateTypes;
+                if (NotificationCenterItemsStore.tabFocused) {
+                  const value4 = obj.get(currentUser.id, tmp52.NOTIFICATION_CENTER);
+                  const tmp44 = undefined !== value4.ackMessageId && value4.lastMessageId !== value4.ackMessageId;
+                  if (tmp44) {
+                    const tmp45 = null != value4.lastMessageId || 0 !== value4.mentionCount;
+                    if (tmp45) {
+                      let lastMessageId = value4.lastMessageId;
+                      if (lastMessageId == null) {
+                        const obj20 = require("SnowflakeUtils");
+                        lastMessageId = obj20.fromTimestamp(value4.getAckTimestamp());
+                      }
+                      const obj12 = { messageId: lastMessageId, local: false, trackAnalytics: false };
+                      value4.ack(obj12);
                     }
                   }
                 }
               }
-              obj11 = { shouldMention: false, isMentionLowImportance: false };
             }
           } else {
             let type;
@@ -3307,7 +3326,7 @@ obj = {
   },
   CHANNEL_LOCAL_ACK: function handleChannelLocalAck(channelId) {
     const value = ReadState.get(channelId.channelId);
-    return value.ack({ messageId: "IconComponent", local: "IconComponent", immediate: "Reflect", force: "krisp", isExplicitUserAction: "tm", trackAnalytics: null });
+    return value.ack({ messageId: "IconComponent", local: "IconComponent", immediate: "Set", force: 3, isExplicitUserAction: "explicit_content_non_friend_dm", trackAnalytics: "enum" });
   },
   CHANNEL_PINS_ACK: function handleChannelPinsAck(timestamp) {
     timestamp = timestamp.timestamp;
@@ -3504,7 +3523,7 @@ obj = {
   CHANNEL_CREATE: function handleChannelCreate(channel) {
     let lastPinTimestamp;
     channel = channel.channel;
-    if (authStore5(channel.type)) {
+    if (authStore6(channel.type)) {
       const value = ReadState.get(channel.id);
       ({ lastMessageId: tmp2.lastMessageId, lastPinTimestamp } = channel);
       let num = 0;
@@ -3707,7 +3726,7 @@ obj = {
     const item = found.forEach((messageId) => {
       messageId = messageId.messageId;
       const value = ReadState.get(messageId.channelId, messageId.readStateType);
-      value.ack({ messageId, local: true, immediate: "IconComponent", force: "Reflect", isExplicitUserAction: "bindOpenRoleSubscriptionOverview", trackAnalytics: null });
+      value.ack({ messageId, local: true, immediate: "IconComponent", force: "Set", isExplicitUserAction: "bindOpenRoleSubscriptionOverview", trackAnalytics: null });
     });
     if (context === set2) {
       const push = navigation.push;

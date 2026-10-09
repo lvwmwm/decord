@@ -1,13 +1,12 @@
-// Module ID: 5443
-// Function ID: 5444
+// Module ID: 5444
+// Function ID: 5445
 // Name: CheckpointUtils
-// Dependencies: [5119, 5444, 1126, 5445, 5446, 5447, 5448, 5449, 5450, 5451, 5452, 5453, 5454, 2]
+// Dependencies: [5120, 5445, 1126, 5446, 5447, 5448, 5449, 5450, 5451, 5452, 5453, 5454, 5455, 2]
 // Exports: getCardAssetUrl, getCheckpointPowerBarUnits, getVoiceDurationString
 
-// Module 5443 (CheckpointUtils)
-import TimeUtils from "TimeUtils" /* 5119 */;
-import getTimestampString from "getTimestampString" /* 5444 */;
-import _modDef5445 from "module_5445" /* 5445 */;
+// Module 5444 (CheckpointUtils)
+import TimeUtils from "TimeUtils" /* 5120 */;
+import getTimestampString from "getTimestampString" /* 5445 */;
 import _modDef5446 from "module_5446" /* 5446 */;
 import _modDef5447 from "module_5447" /* 5447 */;
 import _modDef5448 from "module_5448" /* 5448 */;
@@ -17,6 +16,7 @@ import _modDef5451 from "module_5451" /* 5451 */;
 import _modDef5452 from "module_5452" /* 5452 */;
 import _modDef5453 from "module_5453" /* 5453 */;
 import _modDef5454 from "module_5454" /* 5454 */;
+import _modDef5455 from "module_5455" /* 5455 */;
 import size from "module_2" /* 2 */;
 
 const items = [TimeUtils.TimeUnits.HOURS, TimeUtils.TimeUnits.MINUTES];
@@ -51,25 +51,25 @@ export const getVoiceDurationString = function getVoiceDurationString(rounded) {
 };
 export const getCardAssetUrl = function getCardAssetUrl(cardId) {
   if (0 === cardId) {
-    return _modDef5445;
-  } else if (1 === cardId) {
     return _modDef5446;
-  } else if (2 === cardId) {
+  } else if (1 === cardId) {
     return _modDef5447;
-  } else if (3 === cardId) {
+  } else if (2 === cardId) {
     return _modDef5448;
-  } else if (4 === cardId) {
+  } else if (3 === cardId) {
     return _modDef5449;
-  } else if (5 === cardId) {
+  } else if (4 === cardId) {
     return _modDef5450;
-  } else if (6 === cardId) {
+  } else if (5 === cardId) {
     return _modDef5451;
-  } else if (7 === cardId) {
+  } else if (6 === cardId) {
     return _modDef5452;
-  } else if (8 === cardId) {
+  } else if (7 === cardId) {
     return _modDef5453;
-  } else {
+  } else if (8 === cardId) {
     return _modDef5454;
+  } else {
+    return _modDef5455;
   }
 };
 export const getCheckpointPowerBarUnits = function getCheckpointPowerBarUnits(powerLevelPercentile) {

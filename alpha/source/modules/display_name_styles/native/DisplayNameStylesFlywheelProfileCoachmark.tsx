@@ -1,25 +1,25 @@
-// Module ID: 17279
-// Function ID: 17280
+// Module ID: 17424
+// Function ID: 17425
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1389, 2060, 21, 5090, 558, 576, 504, 4726, 1126, 2955, 9375, 17280, 2]
+// Dependencies: [19, 17, 1390, 2061, 21, 5091, 558, 576, 504, 4728, 1126, 2955, 9413, 17425, 2]
 
-// Module 17279 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 17424 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
 import _modDef2955 from "module_2955" /* 2955 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5090 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let tmp;
-const DisplayNameLockeAbstractUI = tmp(17280);
+const DisplayNameLockeAbstractUI = tmp(17425);
 let react = react_mod;
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -148,7 +148,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   const items = [UserStore];
   const obj = visible(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = markAsDismissed(4726);
+  const obj2 = markAsDismissed(4728);
   const result = obj2.canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1126).intl;
   const string = intl.string;
@@ -184,7 +184,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       return closure_1_7(closure_1_9, {});
     }
   }), items2);
-  const tmpResult = visible(9375);
+  const tmpResult = visible(9413);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return null;
 });

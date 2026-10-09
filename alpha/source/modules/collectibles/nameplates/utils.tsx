@@ -1,15 +1,15 @@
-// Module ID: 1989
-// Function ID: 1990
+// Module ID: 1990
+// Function ID: 1991
 // Name: utils
-// Dependencies: [1990, 1096, 1993, 1995, 1126, 2]
+// Dependencies: [1991, 1096, 1994, 1996, 1126, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1989 (utils)
+// Module 1990 (utils)
 import Constants from "Constants" /* 1096 */;
 import intl6 from "intl" /* 1126 */;
-import NameplateRecord from "NameplateRecord" /* 1990 */;
-import nameplates_constants from "nameplates/constants" /* 1993 */;
-import _modDef1995 from "module_1995" /* 1995 */;
+import NameplateRecord from "NameplateRecord" /* 1991 */;
+import nameplates_constants from "nameplates/constants" /* 1994 */;
+import _modDef1996 from "module_1996" /* 1996 */;
 import size_mod from "module_2" /* 2 */;
 
 const isNameplateRecord = NameplateRecord.isNameplateRecord;
@@ -26,7 +26,7 @@ export const getNameplateData = function getNameplateData(nameplate) {
     INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[nameplate.palette];
     const tmp2 = require;
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1993).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1994).INVALID_NAMEPLATE_PALETTE;
     }
     tmp = obj;
   }
@@ -48,7 +48,7 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
         INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[palette];
         const tmp2 = require;
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1993).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1994).INVALID_NAMEPLATE_PALETTE;
         }
         tmp = obj;
       }
@@ -105,9 +105,9 @@ export const getNameplatePalette = function getNameplatePalette(arg0) {
   return INVALID_NAMEPLATE_PALETTE;
 };
 export const parseFirstFrame = function parseFirstFrame(arg0) {
-  const decoder = _modDef1995;
+  const decoder = _modDef1996;
   size = decoder.decode(arg0);
-  const obj = _modDef1995;
+  const obj = _modDef1996;
   const first = obj.toRGBA8(size)[0];
   const element = <canvas />;
   ({ width: obj2.width, height: obj2.height } = size);

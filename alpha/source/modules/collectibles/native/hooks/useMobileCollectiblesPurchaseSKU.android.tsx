@@ -1,15 +1,15 @@
-// Module ID: 12717
-// Function ID: 12718
+// Module ID: 12662
+// Function ID: 12663
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [109, 1389, 558, 576, 504, 9024, 10154, 2]
+// Dependencies: [109, 1390, 558, 576, 504, 9039, 10139, 2]
 
-// Module 12717 (useMobileCollectiblesPurchaseSKU)
+// Module 12662 (useMobileCollectiblesPurchaseSKU)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9024 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10154 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9039 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10139 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

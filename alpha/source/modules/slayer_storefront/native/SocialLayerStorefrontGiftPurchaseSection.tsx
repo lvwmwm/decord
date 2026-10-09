@@ -1,24 +1,24 @@
-// Module ID: 10166
-// Function ID: 10167
+// Module ID: 10151
+// Function ID: 10152
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7132, 1389, 1085, 1391, 21, 5090, 587, 558, 576, 6656, 6847, 504, 1264, 10167, 1381, 584, 10141, 10153, 1126, 5086, 10159, 5375, 2]
+// Dependencies: [5, 32, 19, 17, 7137, 1390, 1085, 1392, 21, 5091, 587, 558, 576, 6663, 6854, 504, 1265, 10152, 1382, 584, 10126, 10138, 1126, 5087, 10144, 5376, 2]
 
-// Module 10166 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10151 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7132 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10141 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7137 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -274,7 +274,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
   let ref;
   let onPurchaseError;
   let awaitSync;
-  closure_12 = undefined;
+  let closure_12;
   const tmp = sku;
   const tmp2 = giftOptions;
   const tmp3 = closure_13(sku(giftOptions[13])().insets.bottom);

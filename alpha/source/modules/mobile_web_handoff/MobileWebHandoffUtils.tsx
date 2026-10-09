@@ -1,12 +1,12 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 7030
+// Function ID: 7031
 // Name: MobileWebHandoffUtils
-// Dependencies: [5, 1085, 1278, 1294, 2]
+// Dependencies: [5, 1085, 1279, 1295, 2]
 
-// Module 7027 (MobileWebHandoffUtils)
+// Module 7030 (MobileWebHandoffUtils)
 import Constants from "Constants" /* 1085 */;
-import v1 from "v1" /* 1278 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import v1 from "v1" /* 1279 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

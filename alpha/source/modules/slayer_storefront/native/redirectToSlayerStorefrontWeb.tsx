@@ -1,10 +1,10 @@
-// Module ID: 10147
-// Function ID: 10148
+// Module ID: 10132
+// Function ID: 10133
 // Name: redirectToSlayerStorefrontWeb
-// Dependencies: [5, 1085, 3, 4766, 1126, 7024, 4741, 2]
+// Dependencies: [5, 1085, 3, 4768, 1126, 7027, 4743, 2]
 // Exports: default
 
-// Module 10147 (redirectToSlayerStorefrontWeb)
+// Module 10132 (redirectToSlayerStorefrontWeb)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -59,7 +59,7 @@ let obj = function _redirectToSlayerStorefrontWeb() {
             closure_3 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

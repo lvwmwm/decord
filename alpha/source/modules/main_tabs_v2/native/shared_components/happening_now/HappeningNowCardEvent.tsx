@@ -1,23 +1,23 @@
-// Module ID: 16311
-// Function ID: 16312
+// Module ID: 16430
+// Function ID: 16431
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2128, 1389, 15391, 1085, 21, 5090, 587, 1200, 8986, 558, 576, 504, 6997, 8496, 8492, 1264, 8489, 1414, 8745, 8192, 5086, 1900, 6164, 15392, 1126, 2]
+// Dependencies: [19, 17, 2128, 1390, 15504, 1085, 21, 5091, 587, 1200, 8997, 558, 576, 504, 7004, 8504, 8500, 1265, 8497, 1415, 8754, 8200, 5087, 1901, 6163, 15505, 1126, 2]
 
-// Module 16311 (HappeningNowCardEvent)
+// Module 16430 (HappeningNowCardEvent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8489 */;
-import ClipView from "ClipView" /* 8986 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8497 */;
+import ClipView from "ClipView" /* 8997 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import UserStore from "UserStore" /* 1389 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15391 */;
+import UserStore from "UserStore" /* 1390 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15504 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

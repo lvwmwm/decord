@@ -1,38 +1,38 @@
-// Module ID: 6102
-// Function ID: 6103
+// Module ID: 6104
+// Function ID: 6105
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6103, 502, 5969, 4705, 2086, 2115, 4899, 1389, 1085, 1110, 5297, 1126, 584, 6104, 1294, 6106, 6773, 1999, 5935, 6894, 6900, 6906, 6907, 6936, 7029, 5944, 1272, 4712, 1097, 7018, 4749, 1264, 7030, 1112, 5930, 5949, 2]
+// Dependencies: [109, 5, 6105, 502, 5971, 4707, 2086, 2115, 4900, 1390, 1085, 1110, 5298, 1126, 584, 6106, 1295, 6108, 6780, 2000, 5936, 6901, 6907, 6913, 6914, 6943, 7032, 5945, 1273, 4714, 1097, 7021, 4751, 1265, 7033, 1112, 5931, 5951, 2]
 
-// Module 6102 (GuildActionCreators)
+// Module 6104 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import AgeGateUtils from "AgeGateUtils" /* 5930 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5944 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 5949 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7018 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7029 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7030 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import AgeGateUtils from "AgeGateUtils" /* 5931 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 5951 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7021 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7032 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7033 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6103 */;
+import BulkBanStore from "BulkBanStore" /* 6105 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5969 */;
-import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5971 */;
+import GuildChannelStore from "GuildChannelStore" /* 4707 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import UserStore from "UserStore" /* 1389 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c5, closure_12, closure_5, lurker;
+let _require, c5, closure_5, lurker;
 
 let closure_15;
 let closure_16;
@@ -108,6 +108,7 @@ let obj = function _joinGuild() {
           let currentUser;
           let guildId2;
           let channelId;
+          let closure_12;
           c8 = 2;
           if (0 === c7) {
             if (arg0 === 1) {
@@ -136,7 +137,7 @@ let obj = function _joinGuild() {
               closure_12 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -519,7 +520,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore5.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { mute };
     obj3 = HTTPUtils;
@@ -529,7 +530,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore5.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { deaf };
     obj3 = HTTPUtils;
@@ -538,14 +539,14 @@ obj = {
   setChannel(guildId, userId, channel_id) {
     let body;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_MEMBER(guildId, userId), body, oldFormErrors: true, rejectWithError: true };
+    const request = { url: authStore5.GUILD_MEMBER(guildId, userId), body, oldFormErrors: true, rejectWithError: true };
     body = { channel_id };
     HTTP.patch(request);
   },
   setMemberFlags(id, id2, flags) {
     let body;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: true };
+    const request = { url: authStore5.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: true };
     body = { flags };
     HTTP.patch(request);
   },
@@ -583,7 +584,7 @@ obj = {
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderatorReportId);
     moderatorReportId = moderatorReportId.moderatorReportId;
     const tmp2 = TrackedHTTPUtilsDefault;
-    const request = { url: authStore4.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderatorReportId }, oldFormErrors: true, trackedActionData, rejectWithError: tmp3Result.rejectWithMigratedError() };
+    const request = { url: authStore5.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderatorReportId }, oldFormErrors: true, trackedActionData, rejectWithError: tmp3Result.rejectWithMigratedError() };
     const patch = tmp2.patch;
     trackedActionData = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE, properties: obj2 };
     obj2 = { guild_id: guildId, target_user_id: userId, duration: tmp4, reason: tmp5, communication_disabled_until: communicationDisabledUntilTimestamp, location: tmp6 };
@@ -606,7 +607,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_BAN(id, id2), reason: current, body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore5.GUILD_BAN(id, id2), reason: current, body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const put = HTTP.put;
     body = { delete_message_seconds: value, moderator_report_id };
     obj3 = HTTPUtils;
@@ -616,7 +617,7 @@ obj = {
     let obj2;
     const HTTP = HTTPUtils.HTTP;
     const del = HTTP.del;
-    obj = { url: authStore4.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
+    obj = { url: authStore5.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
     obj2 = HTTPUtils;
     return del(obj);
   },
@@ -624,7 +625,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.BULK_GUILD_BAN_V2(arg0), body, reason, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore5.BULK_GUILD_BAN_V2(arg0), body, reason, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     body = { user_ids, delete_message_seconds };
     obj3 = HTTPUtils;
@@ -868,7 +869,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore4.GUILD_ROLE(c0, c1), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore5.GUILD_ROLE(c0, c1), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { permissions };
     obj3 = HTTPUtils;

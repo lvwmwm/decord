@@ -1,10 +1,10 @@
-// Module ID: 13206
-// Function ID: 13207
+// Module ID: 13299
+// Function ID: 13300
 // Name: applicationWidgetRefreshOutcome
 // Dependencies: [1126, 3245, 2]
 // Exports: default
 
-// Module 13206 (applicationWidgetRefreshOutcome)
+// Module 13299 (applicationWidgetRefreshOutcome)
 import intl7 from "intl" /* 1126 */;
 import _modDef3245 from "module_3245" /* 3245 */;
 import size from "module_2" /* 2 */;

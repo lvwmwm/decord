@@ -1,12 +1,12 @@
-// Module ID: 10687
-// Function ID: 10688
+// Module ID: 10833
+// Function ID: 10834
 // Name: CircleWithCutoutUtils
-// Dependencies: [19, 21, 558, 576, 7550, 2]
+// Dependencies: [19, 21, 558, 576, 7559, 2]
 // Exports: getBadgeLeft, getBadgeTop, getCutoutCenterX, getCutoutCenterY
 
-// Module 10687 (CircleWithCutoutUtils)
+// Module 10833 (CircleWithCutoutUtils)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7550 */;
+import inlineStyles from "inlineStyles" /* 7559 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CircleWithCu
             tmp22 = tmp24;
           }
           const obj3 = { children: React3(inlineStyles.Mask, obj4) };
-          const Defs = tmp(7550).Defs;
+          const Defs = tmp(7559).Defs;
           obj4 = { id: "mask", children: items1 };
           items1 = [tmp12, tmp15];
           const tmp21 = _false(Defs, obj3);
@@ -174,11 +174,11 @@ let size = size_mod;
 let result = size.fileFinishedImporting("modules/voice_panel/native/shared/CircleWithCutoutUtils.tsx");
 
 export default tmp4;
-export const getBadgeTop = function getBadgeTop(badgeRadius, buttonRadius, c14) {
-  return buttonRadius - buttonRadius * Math.cos(c14 * closure_5) - badgeRadius;
+export const getBadgeTop = function getBadgeTop(badgeRadius, buttonRadius, c13) {
+  return buttonRadius - buttonRadius * Math.cos(c13 * closure_5) - badgeRadius;
 };
-export const getBadgeLeft = function getBadgeLeft(badgeRadius, buttonRadius, c14) {
-  return buttonRadius + buttonRadius * Math.sin(c14 * closure_5) - badgeRadius;
+export const getBadgeLeft = function getBadgeLeft(badgeRadius, buttonRadius, c13) {
+  return buttonRadius + buttonRadius * Math.sin(c13 * closure_5) - badgeRadius;
 };
 export { getCutoutCenterX };
 export { getCutoutCenterY };

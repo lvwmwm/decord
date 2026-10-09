@@ -1,12 +1,13 @@
 // Module ID: 9907
 // Function ID: 9908
-// Dependencies: [41, 42, 93, 95, 98, 9792]
+// Dependencies: [41, 42, 93, 95, 98, 9905, 9797]
 
 // Module 9907
-import _mod9792 from "module_9792" /* 9792 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9797 */;
+import _mod9905 from "module_9905" /* 9905 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +26,16 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class RUMergeDateTimeRefiner {
+const keys = Object.keys(_mod9905.WEEKDAY_OFFSET);
+const regExp = new RegExp("(?<prefix>\u4E0A|\u4ECA|\u4E0B|\u9019|\u5462)(?:\u500B)?(?:\u661F\u671F|\u79AE\u62DC|\u9031)(?<weekday>" + keys.join("|") + ")");
+class ZHHantRelationWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(RUMergeDateTimeRefiner);
+    _classCallCheck(this, ZHHantRelationWeekdayParser);
+    const obj = _getPrototypeOf(ZHHantRelationWeekdayParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,14 +45,93 @@ class RUMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMergeDateTimeRefiner, fn(_mod9792).default);
+_inherits(ZHHantRelationWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(T|\u0432|,|-)?\\s*$");
+  key: "innerPattern",
+  value: function innerPattern() {
     return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp2 = _mod9905.WEEKDAY_OFFSET[index.groups.weekday];
+      if (undefined === tmp2) {
+        return null;
+      } else {
+        const prefix = index.groups.prefix;
+        let str2 = "last";
+        if ("\u4E0A" != prefix) {
+          str2 = "next";
+          if ("\u4E0B" != prefix) {
+            str2 = null;
+            const tmp3 = "\u4ECA" != prefix && "\u9019" != prefix && "\u5462" != prefix;
+            if (!tmp3) {
+              str2 = "this";
+            }
+          }
+        }
+        const _Date = Date;
+        const refDate = createParsingResult.refDate;
+        const self = this;
+        const self2 = this;
+        const date = new Date(refDate.getTime());
+        const day = date.getDay();
+        if ("last" != str2) {
+          let flag;
+          if ("past" != str2) {
+            if ("next" == str2) {
+              date.setDate(date.getDate() + (tmp2 + 7 - day));
+              flag = true;
+            } else if ("this" == str2) {
+              date.setDate(date.getDate() + (tmp2 - day));
+              flag = false;
+            } else {
+              const diff = tmp2 - day;
+              const _Math3 = Math;
+              const _Math4 = Math;
+              const absolute = Math.abs(diff - 7);
+              let diff1 = diff;
+              if (absolute < Math.abs(diff)) {
+                diff1 = diff - 7;
+              }
+              const _Math = Math;
+              const _Math2 = Math;
+              const absolute1 = Math.abs(diff1 + 7);
+              let sum = diff1;
+              if (absolute1 < Math.abs(diff1)) {
+                sum = diff1 + 7;
+              }
+              date.setDate(date.getDate() + sum);
+              flag = false;
+            }
+          }
+          const start = parsingResult.start;
+          start.assign("weekday", tmp2);
+          const start2 = parsingResult.start;
+          if (flag) {
+            start2.assign("day", date.getDate());
+            const start5 = parsingResult.start;
+            start5.assign("month", date.getMonth() + 1);
+            const start6 = parsingResult.start;
+            start6.assign("year", date.getFullYear());
+          } else {
+            start2.imply("day", date.getDate());
+            const start3 = parsingResult.start;
+            start3.imply("month", date.getMonth() + 1);
+            const start4 = parsingResult.start;
+            start4.imply("year", date.getFullYear());
+          }
+          return parsingResult;
+        }
+        date.setDate(date.getDate() + (tmp2 - 7 - day));
+        flag = true;
+      }
+    }
+  }
+];
 
-export default _createClass(RUMergeDateTimeRefiner, items);
+export default _createClass(ZHHantRelationWeekdayParser, items);

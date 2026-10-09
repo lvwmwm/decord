@@ -1,18 +1,18 @@
-// Module ID: 6139
-// Function ID: 6140
+// Module ID: 6141
+// Function ID: 6142
 // Name: Spellchecker
-// Dependencies: [5, 32, 2128, 3, 4688, 6140, 6141, 6142, 6143, 1387, 12, 2033, 2]
+// Dependencies: [5, 32, 2128, 3, 4690, 6142, 6143, 6144, 6145, 1388, 12, 2034, 2]
 // Exports: install
 
-// Module 6139 (Spellchecker)
+// Module 6141 (Spellchecker)
 import LoggerDefault from "Logger" /* 3 */;
-import DOMUtils from "DOMUtils" /* 2033 */;
-import fallbackLocalesDefault from "fallbackLocales" /* 6140 */;
-import _mod6141 from "module_6141" /* 6141 */;
+import DOMUtils from "DOMUtils" /* 2034 */;
+import fallbackLocalesDefault from "fallbackLocales" /* 6142 */;
+import _mod6143 from "module_6143" /* 6143 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import DiscordNative from "DiscordNative" /* 4688 */;
+import DiscordNative from "DiscordNative" /* 4690 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod6141;
+      obj = _mod6143;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -203,7 +203,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod6141;
+      obj = _mod6143;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -233,7 +233,7 @@ class Spellchecker {
       }
       logger.error("" + str2 + " is not a valid locale.");
     });
-    set = new Set(mapped.filter(mapped1(1387).isNotNullish));
+    set = new Set(mapped.filter(mapped1(1388).isNotNullish));
     const fromResult = from(set);
     if (0 !== fromResult.length) {
       mapped1 = fromResult.map((item) => {

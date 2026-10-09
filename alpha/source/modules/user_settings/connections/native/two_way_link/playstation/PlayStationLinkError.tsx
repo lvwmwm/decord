@@ -1,17 +1,17 @@
-// Module ID: 9160
-// Function ID: 9161
+// Module ID: 12879
+// Function ID: 12880
 // Name: PlayStationLinkError
-// Dependencies: [19, 9150, 1085, 21, 558, 576, 1502, 9161, 1126, 9162, 2]
+// Dependencies: [19, 12871, 1085, 21, 558, 576, 1503, 12865, 1126, 12866, 2]
 
-// Module 9160 (PlayStationLinkError)
+// Module 12879 (PlayStationLinkError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 9150 */;
-import useConnectRetry from "useConnectRetry" /* 9161 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 9162 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import useConnectRetry from "useConnectRetry" /* 12865 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 12866 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 12871 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     const intl = tmp(1126).intl;
     stringResult = intl.string(tmp(1126).t.qE9nqE);
   }
-  const TwoWayLinkError = tmp(9162).TwoWayLinkError;
+  const TwoWayLinkError = tmp(12866).TwoWayLinkError;
   const intl3 = tmp(1126).intl;
   return <TwoWayLinkError title={intl3.string(intl4.t.eY3qHd)} body={stringResult} onClose={onClose} onRetry={connectRetry} />;
 });

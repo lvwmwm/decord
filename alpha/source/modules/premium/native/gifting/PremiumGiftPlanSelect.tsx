@@ -1,23 +1,23 @@
-// Module ID: 10005
-// Function ID: 10006
+// Module ID: 10024
+// Function ID: 10025
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8292, 10006, 1391, 1085, 21, 5090, 587, 683, 558, 576, 1502, 1630, 6261, 1496, 10040, 5360, 6209, 504, 10083, 10081, 8284, 10085, 10003, 10089, 10092, 9267, 4810, 1200, 5091, 10100, 6865, 10101, 10135, 10340, 1126, 6210, 6164, 12741, 5387, 5086, 2]
+// Dependencies: [32, 19, 17, 8300, 9101, 1392, 1085, 21, 5091, 587, 683, 558, 576, 1503, 1631, 6263, 1497, 10025, 5361, 6211, 504, 10068, 10066, 8292, 10070, 10022, 10074, 10077, 9305, 4811, 1200, 5092, 10085, 6872, 10086, 10120, 10327, 1126, 6212, 6163, 12686, 5388, 5087, 2]
 
-// Module 10005 (PremiumGiftPlanSelect)
+// Module 10024 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import timing from "timing" /* 5091 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10092 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import timing from "timing" /* 5092 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10077 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 8292 */;
-import PromotionsStore_mod from "PromotionsStore" /* 10006 */;
+import BadgeDirectoryStore_mod from "BadgeDirectoryStore" /* 8300 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9101 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -423,16 +423,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
           const index = item.index;
           let tmp2 = forScreenReader;
           const tmp3 = forScreenReader ? metroRequire : metroImportDefault;
-          const obj = { accessible: tmp2, accessibilityRole: str, onPress: fn, style: { paddingVertical: nativeDefault.space.PX_8 }, children: closure_12(tmp5, obj3, index) };
+          const obj = { accessible: tmp2, accessibilityRole: str, onPress: fn, style: { paddingVertical: nativeDefault.space.PX_8 }, children: authStore2(tmp5, obj3, index) };
           str = undefined;
           if (tmp2) {
             str = "button";
           }
           fn = undefined;
           if (tmp2) {
-            fn = () => { /* body not rendered: F153540 */ };
+            fn = () => { /* body not rendered: F153883 */ };
           }
-          obj3 = { premiumType: item, variant, onPress() { /* body not rendered: F153541 */ }, style: size, onLayout() { /* body not rendered: F153542 */ }, claimableRewards, isSelected: first === index };
+          obj3 = { premiumType: item, variant, onPress() { /* body not rendered: F153884 */ }, style: size, onLayout() { /* body not rendered: F153885 */ }, claimableRewards, isSelected: first === index };
           ({ paddingVertical: nativeDefault.space.PX_8 });
           size = { height: first1, width: VerticalGradient, alignSelf: str2 };
           str2 = undefined;
@@ -441,7 +441,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
           if ("default" === tmp6) {
             str2 = "center";
           }
-          return closure_12(tmp3, obj);
+          return authStore2(tmp3, obj);
         };
       }
     }
@@ -637,7 +637,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
       const index = item.index;
       let tmp2 = forScreenReader;
       const tmp3 = forScreenReader ? metroRequire : metroImportDefault;
-      const obj = { accessible: tmp2, accessibilityRole: str, onPress: fn, style: { paddingVertical: nativeDefault.space.PX_8 }, children: width(tmp5, obj3, index) };
+      const obj = { accessible: tmp2, accessibilityRole: str, onPress: fn, style: { paddingVertical: nativeDefault.space.PX_8 }, children: authStore2(tmp5, obj3, index) };
       str = undefined;
       if (tmp2) {
         str = "button";
@@ -678,7 +678,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
       if ("default" === tmp6) {
         str2 = "center";
       }
-      return width(tmp3, obj);
+      return authStore2(tmp3, obj);
     };
   }, items5);
   let tmp32 = null != claimableRewards;
@@ -712,7 +712,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
       num = 1;
     }
     const obj3 = { opacity: withTiming(num, obj), transform: items };
-    const withTiming2 = tmp(5091).withTiming;
+    const withTiming2 = tmp(5092).withTiming;
     let num2 = 100;
     timing;
     if (obj2.get()) {

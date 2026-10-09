@@ -1,14 +1,14 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 11897
+// Function ID: 11898
 // Name: AppLauncherButtonIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 4947, 1628, 10290, 8209, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 4948, 1629, 10275, 8217, 2]
 
-// Module 11960 (AppLauncherButtonIcon)
+// Module 11897 (AppLauncherButtonIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4947 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4948 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -57,7 +57,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherB
   }
   if (tmp9 === KeyboardTypes.KeyboardTypes.APP_LAUNCHER) {
     const obj4 = { style: items };
-    const PlusLargeIcon = tmp(10290).PlusLargeIcon;
+    const PlusLargeIcon = tmp(10275).PlusLargeIcon;
     const merged = Object.assign(tmp4);
     items = [tmp5, ];
     const obj5 = { transform: items1 };
@@ -66,7 +66,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherB
     tmp12Result = tmp12(PlusLargeIcon, obj4);
   } else {
     const obj6 = { style: tmp5 };
-    const AppsIcon = tmp(8209).AppsIcon;
+    const AppsIcon = tmp(8217).AppsIcon;
     const merged1 = Object.assign(tmp4);
     tmp12Result = tmp12(AppsIcon, obj6);
   }
@@ -85,7 +85,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherB
   const tmp3 = useKeyboardTypeDefault();
   if (tmp3 === KeyboardTypes.KeyboardTypes.APP_LAUNCHER) {
     const obj2 = { style: items };
-    const PlusLargeIcon = tmp6(10290).PlusLargeIcon;
+    const PlusLargeIcon = tmp6(10275).PlusLargeIcon;
     const merged1 = Object.assign(merged);
     items = [style, ];
     const obj3 = { transform: items1 };
@@ -94,7 +94,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherB
     tmp4Result = tmp4(PlusLargeIcon, obj2);
   } else {
     const obj4 = { style };
-    const AppsIcon = tmp6(8209).AppsIcon;
+    const AppsIcon = tmp6(8217).AppsIcon;
     const merged2 = Object.assign(merged);
     tmp4Result = tmp4(AppsIcon, obj4);
   }

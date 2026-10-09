@@ -1,9 +1,9 @@
-// Module ID: 7235
-// Function ID: 7236
+// Module ID: 7240
+// Function ID: 7241
 // Name: ApplicationCommandTypes
 // Dependencies: [2]
 
-// Module 7235 (ApplicationCommandTypes)
+// Module 7240 (ApplicationCommandTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandTypes.tsx");

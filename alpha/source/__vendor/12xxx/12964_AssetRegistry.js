@@ -1,0 +1,10 @@
+// Module ID: 12964
+// Function ID: 12965
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 12964 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "aa1ab8f7d6e2b1c9438f72fdbfc69c0c", name: "FireIcon", type: "png" });

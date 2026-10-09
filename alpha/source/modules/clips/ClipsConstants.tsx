@@ -1,10 +1,10 @@
-// Module ID: 7735
-// Function ID: 7736
+// Module ID: 7744
+// Function ID: 7745
 // Name: ClipsConstants
 // Dependencies: [1102, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds, getDefaultImageTrackWidthFraction, snapTrackRotationDeg
 
-// Module 7735 (ClipsConstants)
+// Module 7744 (ClipsConstants)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import size from "module_2" /* 2 */;
@@ -52,6 +52,8 @@ export const CLIPS_THUMBNAIL_MAX_HEIGHT = 360;
 export const CLIPS_MAX_PARTICIPANTS = 100;
 export const CLIPS_MAX_TIMELINE_EVENTS = 1000;
 export const CLIPS_TIMELINE_BUFFER_MS = 500;
+export const EVENT_ID_DATA_KEY = "id";
+export const STREAK_KILL_IDS_DATA_KEY = "killIds";
 export const CLIP_NAME_TEMPLATE = (arg0) => {
   const date = new Date(arg0);
   return "Clip - " + date.toLocaleString();

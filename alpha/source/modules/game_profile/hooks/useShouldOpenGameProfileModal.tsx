@@ -1,17 +1,17 @@
-// Module ID: 8852
-// Function ID: 8853
+// Module ID: 8861
+// Function ID: 8862
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2019, 1085, 1264, 1402, 8853, 6047, 558, 576, 8854, 38, 2]
-// Exports: gameIdIsAcceptable, gameIsAcceptable, trackEntryPoint
+// Dependencies: [19, 2020, 1085, 1265, 1403, 8862, 6049, 558, 576, 8863, 38, 2]
+// Exports: gameIdIsAcceptable, gameIsAcceptable, isGameDisabled, trackEntryPoint
 
-// Module 8852 (useShouldOpenGameProfileModal)
+// Module 8861 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import GameFlags from "GameFlags" /* 8853 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import GameFlags from "GameFlags" /* 8862 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2019 */;
+import GameStore from "GameStore" /* 2020 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -289,14 +289,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldOpe
           items1.push(obj.Disabled);
         }
         tmp14 = items1;
-        const tmp21Result = tmp21(6047);
+        const tmp21Result = tmp21(6049);
         if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
           items1.push(obj.NSFW);
           tmp14 = items1;
         }
       }
       obj = { game_profile_available: tmp10, application_id: id, rejection_reason: tmp14, source: tmp7 };
-      const tmp5Result = tmp5(1264);
+      const tmp5Result = tmp5(1265);
       tmp5Result.track(AnalyticEvents.GAME_PROFILE_ENTRY_POINT_AVAILABLE, obj);
       tmp.current = true;
     }
@@ -311,6 +311,10 @@ function trackEntryPoint(game_profile_available, id, items, CallTile) {
   const obj2 = { game_profile_available, application_id: id, rejection_reason: items, source: CallTile };
   obj.track(AnalyticEvents.GAME_PROFILE_ENTRY_POINT_AVAILABLE, obj2);
 }
+function isGameDisabled(gameFlags) {
+  const obj = FlagUtilsAll;
+  return obj.hasFlag(gameFlags.gameFlags, GameFlags.GameFlags.GAME_DISABLED);
+}
 function gameIsAcceptable(gameFlags) {
   let arr;
   if (null == gameFlags) {
@@ -324,7 +328,7 @@ function gameIsAcceptable(gameFlags) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp8Result = tmp8(6047);
+    const tmp8Result = tmp8(6049);
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
@@ -337,6 +341,7 @@ const result = size.fileFinishedImporting("modules/game_profile/hooks/useShouldO
 export default tmp2;
 export { RejectionReason };
 export { trackEntryPoint };
+export { isGameDisabled };
 export { gameIsAcceptable };
 export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
   let arr;
@@ -352,7 +357,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp9Result = tmp9(6047);
+    const tmp9Result = tmp9(6049);
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;

@@ -1,21 +1,21 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 10584
+// Function ID: 10585
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 2063, 1501, 5399, 5400, 21, 7235, 4937, 5054, 1628, 5298, 1126, 1200, 11230, 4765, 6872, 2040, 9968, 6877, 558, 576, 11232, 4945, 11235, 8101, 5086, 2]
+// Dependencies: [19, 2064, 1502, 5400, 5401, 21, 7240, 4938, 5055, 1629, 5299, 1126, 1200, 10585, 4767, 6879, 2041, 9987, 6884, 558, 576, 10587, 4946, 10590, 8109, 5087, 2]
 
-// Module 11229 (MarkupReactCommandRule)
+// Module 10584 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5400 */;
-import ClipboardUtils from "ClipboardUtils" /* 6872 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7235 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11235 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5400 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5401 */;
+import ClipboardUtils from "ClipboardUtils" /* 6879 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7240 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 10590 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -177,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
   const cResult = obj.c(18);
   node = node.node;
   ({ output, state, style } = node);
-  const tmp4 = null != react.useContext(node(11232).AppLauncherContext);
+  const tmp4 = null != react.useContext(node(10587).AppLauncherContext);
   let closure_1 = tmp4;
   const tmp5 = closure_6();
   dependencyMap = tmp5;
@@ -212,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
                   }
                 }
                 const items = ["/", tmp8];
-                const tmp12 = jsxs(tmp(5086).Text, { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: items });
+                const tmp12 = jsxs(tmp(5087).Text, { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: items });
                 cResult[13] = style;
                 cResult[14] = tmp6;
                 cResult[15] = tmp7;
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
                 tmp10 = tmp12;
               }
             }
-            const tmpResult = tmp(8101);
+            const tmpResult = tmp(8109);
             const smartOutputResult = tmpResult.smartOutput(node, output, state);
             cResult[9] = node;
             cResult[10] = output;
@@ -304,10 +304,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(11232).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(10587).AppLauncherContext);
   dependencyMap = closure_6();
-  const Text = node(5086).Text;
-  let obj2 = node(8101);
+  const Text = node(5087).Text;
+  let obj2 = node(8109);
   const items = ["/", obj2.smartOutput(node, output, state)];
   return <Text style={style} variant="text-md/bold" onPress={function onPress() {
     let str;

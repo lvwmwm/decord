@@ -1,16 +1,16 @@
-// Module ID: 5954
-// Function ID: 5955
+// Module ID: 5956
+// Function ID: 5957
 // Name: useStageSpeakingForCurrentUser
-// Dependencies: [2063, 4707, 2115, 1096, 558, 5905, 5918, 5917, 576, 504, 2]
+// Dependencies: [2064, 4709, 2115, 1096, 558, 5906, 5919, 5918, 576, 504, 2]
 // Exports: isStageSpeakingDisabledForCurrentUser, shouldAgeVerifyToSpeakForCurrentUser
 
-// Module 5954 (useStageSpeakingForCurrentUser)
+// Module 5956 (useStageSpeakingForCurrentUser)
 import Constants from "Constants" /* 1096 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5905 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5917 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5918 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5906 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5918 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5919 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -106,10 +106,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldA
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp11, tmp12);
-  const tmpResult3 = tmp(5905);
+  const tmpResult3 = tmp(5906);
   const isVerifiedAdult = tmpResult3.useIsVerifiedAdult();
-  const tmpResult4 = tmp(5918);
-  const tmp15 = tmpResult4.useIsFeatureAgeGated(tmp(5917).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
+  const tmpResult4 = tmp(5919);
+  const tmp15 = tmpResult4.useIsFeatureAgeGated(tmp(5918).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
   return tmp15;
 }) : (function useShouldAgeVerifyToSpeakForCurrentUser(arg0) {
   let channelId = arg0;
@@ -127,10 +127,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldA
     const canResult = null != channel && PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel);
     return canResult;
   }, items1);
-  const obj2 = channelId(5905);
+  const obj2 = channelId(5906);
   const isVerifiedAdult = obj2.useIsVerifiedAdult();
-  const obj3 = channelId(5918);
-  const tmp5 = obj3.useIsFeatureAgeGated(channelId(5917).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
+  const obj3 = channelId(5919);
+  const tmp5 = obj3.useIsFeatureAgeGated(channelId(5918).AgeGatedFeature.STAGE_SPEAKING) && !isVerifiedAdult && stateFromStores;
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -206,10 +206,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldSho
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp11, tmp12);
-  const tmpResult3 = tmp(5905);
+  const tmpResult3 = tmp(5906);
   const isAgeVerified = tmpResult3.useIsAgeVerified();
-  const tmpResult4 = tmp(5918);
-  const tmp15 = tmpResult4.useIsFeatureAgeGated(tmp(5917).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
+  const tmpResult4 = tmp(5919);
+  const tmp15 = tmpResult4.useIsFeatureAgeGated(tmp(5918).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
   return tmp15;
 }) : (function useShouldShowAgeVerificationPopover(arg0) {
   let channelId = arg0;
@@ -227,10 +227,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldSho
     const canResult = null != channel && PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel);
     return canResult;
   }, items1);
-  const obj2 = channelId(5905);
+  const obj2 = channelId(5906);
   const isAgeVerified = obj2.useIsAgeVerified();
-  const obj3 = channelId(5918);
-  const tmp5 = obj3.useIsFeatureAgeGated(channelId(5917).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
+  const obj3 = channelId(5919);
+  const tmp5 = obj3.useIsFeatureAgeGated(channelId(5918).AgeGatedFeature.STAGE_SPEAKING) && !isAgeVerified && stateFromStores;
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;

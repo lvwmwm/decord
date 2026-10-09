@@ -1,21 +1,21 @@
-// Module ID: 7690
-// Function ID: 7691
+// Module ID: 7699
+// Function ID: 7700
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1085, 7015, 1102, 1294, 584, 5927, 7492, 7014, 2]
+// Dependencies: [5, 502, 1085, 7018, 1102, 1295, 584, 5928, 7497, 7017, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 7690 (ManualReviewActionCreators)
+// Module 7699 (ManualReviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
-import Constants2 from "Constants" /* 7015 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5928 */;
+import Constants2 from "Constants" /* 7018 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, closure_12, closure_2, suspendedUserToken;
+let c4, c5, closure_2, suspendedUserToken;
 
 let obj = function _requestManualReview() {
   obj = _asyncToGenerator(async () => {
@@ -153,7 +153,7 @@ obj = function _handleManualReviewCta() {
           return obj;
         } else {
           closure_0 = value;
-          closure_12 = closure_0;
+          let closure_12 = closure_0;
           const _Date = Date;
           let closure_13 = Date.now();
         }

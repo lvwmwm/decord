@@ -1,17 +1,17 @@
-// Module ID: 6752
-// Function ID: 6753
+// Module ID: 6759
+// Function ID: 6760
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 5086, 6166, 1381, 4810, 6753, 6754, 6298, 6755, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 5087, 6168, 1382, 4811, 6760, 6761, 6305, 6762, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 6752 (FastList)
+// Module 6759 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4810 */;
-import NativeViewDefault from "NativeView" /* 6166 */;
-import BottomSheetModal from "BottomSheetModal" /* 6298 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 6755 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4811 */;
+import NativeViewDefault from "NativeView" /* 6168 */;
+import BottomSheetModal from "BottomSheetModal" /* 6305 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 6762 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -1297,7 +1297,7 @@ let closure_22 = react.memo(function _FastListSectionRenderer(disableWrapper) {
     let tmp4Result;
     if (!disableWrapper.debug) {
       obj = { children: children(section, fastListInstance) };
-      tmp4Result = unpackModuleId(closure_12, obj);
+      tmp4Result = unpackModuleId(authStore2, obj);
     }
     return tmp4Result;
   }
@@ -1327,7 +1327,7 @@ let closure_23 = react.memo(function _FastListSectionFooterRenderer(disableWrapp
     let tmp4Result;
     if (!disableWrapper.debug) {
       obj = { children: children(section, fastListInstance) };
-      tmp4Result = unpackModuleId(closure_12, obj);
+      tmp4Result = unpackModuleId(authStore2, obj);
     }
     return tmp4Result;
   }
@@ -1392,7 +1392,7 @@ let closure_25 = react.memo(function _FastListHeaderFooterRenderer(disableWrappe
     let tmp4Result;
     if (!disableWrapper.debug) {
       obj = { children: children(fastListInstance) };
-      tmp4Result = unpackModuleId(closure_12, obj);
+      tmp4Result = unpackModuleId(authStore2, obj);
     }
     return tmp4Result;
   }
@@ -2591,7 +2591,7 @@ class FastList extends PureComponent {
     flag = self.props.horizontal;
     const tmp10 = closure_32;
     const tmp6 = authStore;
-    const tmp7 = closure_12;
+    const tmp7 = authStore2;
     const tmp8 = unpackModuleId;
     if (flag == null) {
       flag = false;

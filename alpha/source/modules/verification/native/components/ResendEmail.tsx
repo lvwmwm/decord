@@ -1,21 +1,21 @@
-// Module ID: 6273
-// Function ID: 6274
+// Module ID: 6278
+// Function ID: 6279
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 2057, 1389, 1085, 21, 5090, 558, 576, 1502, 38, 504, 6274, 6200, 5936, 4766, 1126, 6275, 5086, 5375, 2]
+// Dependencies: [32, 19, 17, 2058, 1390, 1085, 21, 5091, 558, 576, 1503, 38, 504, 6279, 6202, 5937, 4768, 1126, 6280, 5087, 5376, 2]
 
-// Module 6273 (ResendEmail)
+// Module 6278 (ResendEmail)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5936 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6200 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5937 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6202 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2057 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2058 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
   let obj = navigation(576);
   const cResult = obj.c(37);
   const tmp4 = closure_11();
-  let obj2 = navigation(1502);
+  let obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -89,7 +89,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
   if (cResult[4] !== stateFromStores1) {
-    const obj5 = verified(6274);
+    const obj5 = verified(6279);
     const result = obj5.isEmailReverification(stateFromStores1);
     class E {
       constructor() {
@@ -239,7 +239,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
         return;
       }
     }
-    closure_9(tmp(6275).EnvelopeOpenSpotIllustration, { scale: 0.75 });
+    closure_9(tmp(6280).EnvelopeOpenSpotIllustration, { scale: 0.75 });
     class E {
       constructor() {
         currentUser = closure_1_7.getCurrentUser();
@@ -296,8 +296,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
       }
     }
     cResult[16] = tmp4.title;
-    cResult[17] = closure_9(tmp(5086).Text, obj3);
-    const tmp34 = closure_9(tmp(5086).Text, obj3);
+    cResult[17] = closure_9(tmp(5087).Text, obj3);
+    const tmp34 = closure_9(tmp(5087).Text, obj3);
   } else {
     class O {
       constructor() {
@@ -379,7 +379,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
           }
         }
         obj9 = { text: intl2.string(tmp(1126).t.Vm8akB), variant: "secondary", onPress: tmp27, grow: true };
-        Button = tmp(5375).Button;
+        Button = tmp(5376).Button;
         intl2 = tmp(1126).intl;
         tmp48 = closure_9(View, obj8);
       }
@@ -399,8 +399,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
     tmp40[3] = tmp35;
     cResult[21] = tmp4.body;
     cResult[22] = tmp35;
-    cResult[23] = closure_9(tmp(5086).Text, tmp40);
-    const tmp41 = closure_9(tmp(5086).Text, tmp40);
+    cResult[23] = closure_9(tmp(5087).Text, tmp40);
+    const tmp41 = closure_9(tmp(5087).Text, tmp40);
   }
   let intl = tmp(1126).intl;
   if (tmp20) {
@@ -442,7 +442,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
   let obj12;
   let tmp10;
   let tmp = closure_11();
-  let obj = navigation(1502);
+  let obj = navigation(1503);
   navigation = obj.useNavigation();
   let obj2 = navigation(504);
   const items = [UserStore];
@@ -456,7 +456,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
   const items1 = [UserRequiredActionStore];
   const obj3 = navigation(504);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => action.getAction());
-  const obj4 = verified(6274);
+  const obj4 = verified(6279);
   const result = obj4.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = ref(react.useState(false), 2);
@@ -478,13 +478,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
   const callback = react.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  items4 = [closure_9(navigation(6275).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  items4 = [closure_9(navigation(6280).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(navigation(1126).t.fUtddV) };
-  const Text = navigation(5086).Text;
+  const Text = navigation(5087).Text;
   intl = navigation(1126).intl;
   items4[1] = closure_9(Text, obj6);
   const obj7 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: formatResult };
-  const Text2 = navigation(5086).Text;
+  const Text2 = navigation(5087).Text;
   const intl2 = navigation(1126).intl;
   const tmp14 = closure_10;
   if (tmp10) {
@@ -511,13 +511,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResendEmail(
     },
     grow: true
   };
-  Button = tmp2(5375).Button;
+  Button = tmp2(5376).Button;
   intl3 = tmp2(1126).intl;
   items4[3] = closure_9(View, obj9);
   if (!result) {
     const obj11 = { style: tmp.change, children: closure_9(Button2, obj12) };
     obj12 = { text: intl4.string(navigation(1126).t.Vm8akB), variant: "secondary", onPress: callback, grow: true };
-    Button2 = tmp2(5375).Button;
+    Button2 = tmp2(5376).Button;
     intl4 = tmp2(1126).intl;
     tmp16Result = tmp16(tmp15, obj11);
   }

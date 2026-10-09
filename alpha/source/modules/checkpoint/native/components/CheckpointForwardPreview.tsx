@@ -1,13 +1,13 @@
-// Module ID: 11606
-// Function ID: 11607
+// Module ID: 11539
+// Function ID: 11540
 // Name: CheckpointForwardPreview
-// Dependencies: [5433, 21, 558, 576, 11607, 2]
+// Dependencies: [5434, 21, 558, 576, 11540, 2]
 
-// Module 11606 (CheckpointForwardPreview)
+// Module 11539 (CheckpointForwardPreview)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5433 */;
-import Checkpoint2025ForwardPreviewDefault from "Checkpoint2025ForwardPreview" /* 11607 */;
+import CheckpointConstants from "CheckpointConstants" /* 5434 */;
+import Checkpoint2025ForwardPreviewDefault from "Checkpoint2025ForwardPreview" /* 11540 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

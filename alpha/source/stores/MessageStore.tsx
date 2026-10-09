@@ -1,41 +1,41 @@
-// Module ID: 5428
-// Function ID: 5429
+// Module ID: 5429
+// Function ID: 5430
 // Name: MessageStore
-// Dependencies: [32, 5, 2117, 5429, 2128, 502, 2063, 5747, 4705, 2124, 2086, 4707, 4717, 2115, 4899, 1389, 1085, 3, 11, 5748, 5753, 2090, 5751, 5430, 1402, 12, 7308, 5623, 4719, 7726, 13884, 504, 11374, 5438, 1997, 584, 2]
+// Dependencies: [32, 5, 2117, 5430, 2128, 502, 2064, 5748, 4707, 2124, 2086, 4709, 4719, 2115, 4900, 1390, 1085, 3, 11, 5749, 5754, 2090, 5752, 5431, 1403, 12, 7313, 5624, 4721, 7735, 13977, 504, 10747, 5439, 1998, 584, 2]
 
-// Module 5428 (MessageStore)
+// Module 5429 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
-import ReactionUtils from "ReactionUtils" /* 4719 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5430 */;
-import InteractionTypes from "InteractionTypes" /* 5438 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 5748 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
-import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7308 */;
-import MessageQueue from "MessageQueue" /* 7726 */;
-import canEditMessageDefault from "canEditMessage" /* 11374 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 13884 */;
+import ReactionUtils from "ReactionUtils" /* 4721 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5431 */;
+import InteractionTypes from "InteractionTypes" /* 5439 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 5749 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7313 */;
+import MessageQueue from "MessageQueue" /* 7735 */;
+import canEditMessageDefault from "canEditMessage" /* 10747 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 13977 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 2117 */;
-import EphemeralMessageStore from "EphemeralMessageStore" /* 5429 */;
+import EphemeralMessageStore from "EphemeralMessageStore" /* 5430 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import DimensionStore from "DimensionStore" /* 5747 */;
-import GuildChannelStore from "GuildChannelStore" /* 4705 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import DimensionStore from "DimensionStore" /* 5748 */;
+import GuildChannelStore from "GuildChannelStore" /* 4707 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import UserStore from "UserStore" /* 1389 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ let closure_24;
 let closure_25;
 let tmp2;
 let tmp3;
-const Server = tmp2(1997);
-const IOSPushNotificationRawPayloadFixExperiment = tmp3(5751);
+const Server = tmp2(1998);
+const IOSPushNotificationRawPayloadFixExperiment = tmp3(5752);
 function reinjectEphemerals(channelId, truncateResult) {
   let closure_0 = truncateResult;
   if (truncateResult.hasMoreAfter) {
@@ -216,7 +216,7 @@ function receiveMediaMentionMessage(item10038) {
     }
     const receiveMessageResult = orCreate.receiveMessage(obj, false);
     const mutation = receiveMessageResult.mutate({ ready: true });
-    const tmp5Result = tmp5(5748);
+    const tmp5Result = tmp5(5749);
     tmp5Result.commit(mutation);
   }
 }
@@ -960,7 +960,7 @@ obj = {
               obj = FlagUtils;
               return set("flags", obj.addFlag(set.flags, constants.EPHEMERAL));
             });
-            const tmp11Result = tmp11(5748);
+            const tmp11Result = tmp11(5749);
             tmp11Result.commit(updateResult);
             const result = map.set(message.id, tmp);
           }
@@ -1089,7 +1089,7 @@ obj = {
     ids = ids.ids;
     let mutation;
     const channelId = ids.channelId;
-    obj = mutation(5748);
+    obj = mutation(5749);
     const orCreate = obj.getOrCreate(channelId);
     if (null == orCreate) {
       return false;
@@ -1114,7 +1114,7 @@ obj = {
               }
               if (null != message_id) {
                 const removeResult = value2.remove(message_id);
-                const tmp3Result = tmp3(5748);
+                const tmp3Result = tmp3(5749);
                 tmp3Result.commit(removeResult);
               }
             }
@@ -1126,9 +1126,9 @@ obj = {
       if (orCreate === removeManyResult) {
         return false;
       } else {
-        let tmp3 = removeManyResult;
+        let tmp5 = removeManyResult;
         if (null != removeManyResult.revealedMessageId) {
-          tmp3 = removeManyResult;
+          tmp5 = removeManyResult;
           const tmpResult = mutation(12);
           if (tmpResult.some(ids, (arg0) => mutation.revealedMessageId === arg0)) {
             const after = removeManyResult.getAfter(removeManyResult.revealedMessageId);
@@ -1137,13 +1137,13 @@ obj = {
                 const obj2 = { revealedMessageId: after.id };
                 mutation = removeManyResult.mutate(obj2);
               }
-              tmp3 = mutation;
+              tmp5 = mutation;
             }
             mutation = removeManyResult.mutate({ revealedMessageId: null });
           }
         }
-        const tmpResult2 = mutation(5748);
-        tmpResult2.commit(tmp3);
+        const tmpResult2 = mutation(5749);
+        tmpResult2.commit(tmp5);
         const item1 = ids.forEach((item) => {
           set.delete(item);
         });
@@ -1353,7 +1353,7 @@ obj = {
           const removeResult = orCreate.remove(messageId);
           const mergeResult = removeResult.merge(items);
           obj5.delete(messageId);
-          const tmp2Result = tmp2(5748);
+          const tmp2Result = tmp2(5749);
           tmp2Result.commit(mergeResult);
         }
       } else {

@@ -1,12 +1,13 @@
 // Module ID: 9811
 // Function ID: 9812
-// Dependencies: [41, 42, 93, 95, 98, 9790]
+// Dependencies: [41, 42, 93, 95, 98, 9812, 9809]
 
 // Module 9811
-import _mod9790 from "module_9790" /* 9790 */;
+import _mod9809 from "module_9809" /* 9809 */;
+import mergeDateTimeComponent from "mergeDateTimeComponent" /* 9812 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,85 +26,63 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UnlikelyFormatFilter {
-  constructor(strictMode) {
+class AbstractMergeDateTimeRefiner {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UnlikelyFormatFilter);
-    const obj = _getPrototypeOf(UnlikelyFormatFilter);
+    _classCallCheck(this, AbstractMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(UnlikelyFormatFilter, _mod9790.Filter);
+_inherits(AbstractMergeDateTimeRefiner, _mod9809.MergingRefiner);
 const entry = {
-  key: "isValid",
-  value: function isValid(debug, text) {
-    let flag;
-    const str = text.text;
-    const str2 = str.replace(" ", "");
-    if (str2.match(/^\d*(\.\d*)?$/)) {
-      debug.debug(() => {
-        console.log("Removing unlikely result '" + text.text + "'");
-      });
-      flag = false;
-    } else {
-      const start = text.start;
-      if (start.isValidDate()) {
-        if (text.end) {
-          let flag2;
-          const end = text.end;
-          if (!end.isValidDate()) {
-            debug.debug(() => {
-              console.log("Removing invalid result: " + text + " (" + text.end + ")");
-            });
-            flag2 = false;
-          }
-          flag = flag2;
-        }
-        const self = this;
-        const strictMode = this.strictMode;
-        let isStrictModeValidResult = !strictMode;
-        if (strictMode) {
-          isStrictModeValidResult = self.isStrictModeValid(debug, text);
-        }
-        flag2 = isStrictModeValidResult;
-      } else {
-        debug.debug(() => {
-          console.log("Removing invalid result: " + text + " (" + text.start + ")");
-        });
-        flag = false;
-      }
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, start, start2) {
+    start = start.start;
+    let isOnlyDateResult = start.isOnlyDate();
+    if (isOnlyDateResult) {
+      start2 = start2.start;
+      isOnlyDateResult = start2.isOnlyTime();
     }
-    return flag;
+    if (!isOnlyDateResult) {
+      const start3 = start2.start;
+      let isOnlyDateResult1 = start3.isOnlyDate();
+      if (isOnlyDateResult1) {
+        const start4 = start.start;
+        isOnlyDateResult1 = start4.isOnlyTime();
+      }
+      isOnlyDateResult = isOnlyDateResult1;
+    }
+    if (isOnlyDateResult) {
+      const self = this;
+      isOnlyDateResult = null != str.match(this.patternBetween());
+    }
+    return isOnlyDateResult;
   }
 };
 const items = [
   entry,
   {
-    key: "isStrictModeValid",
-    value: function isStrictModeValid(debug, start) {
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text) {
       start = start.start;
-      const result = start.isOnlyWeekdayComponent();
-      let flag = !result;
-      if (result) {
-        debug.debug(() => {
-          console.log("(Strict) Removing weekday only component: " + start + " (" + start.end + ")");
-        });
-        flag = false;
-      }
-      return flag;
+      const isOnlyDateResult = start.isOnlyDate();
+      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
+      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
+      tmp2.index = start.index;
+      tmp2.text = start.text + arg0 + text.text;
+      return tmp2;
     }
   }
 ];
 
-export default _createClass(UnlikelyFormatFilter, items);
+export default _createClass(AbstractMergeDateTimeRefiner, items);

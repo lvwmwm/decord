@@ -1,16 +1,16 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14746
+// Function ID: 14747
 // Name: useTrackNavigatorScreenImpression
-// Dependencies: [558, 576, 1272, 8941, 2]
+// Dependencies: [558, 576, 1273, 8952, 2]
 
-// Module 14641 (useTrackNavigatorScreenImpression)
+// Module 14746 (useTrackNavigatorScreenImpression)
 import react from "react" /* 576 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8941 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8952 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const discord_common_AnalyticsUtils = tmp(1272);
+const discord_common_AnalyticsUtils = tmp(1273);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackNavigatorScreenImpression(arg0, params) {
   let impressionName;
   let impressionProperties;

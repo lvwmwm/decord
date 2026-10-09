@@ -1,14 +1,25 @@
 // Module ID: 14433
 // Function ID: 14434
-// Dependencies: [14381, 14382]
+// Dependencies: [1172]
+// Exports: isMissingLocaleDataError
 
 // Module 14433
-import _mod14381 from "module_14381" /* 14381 */;
-import _mod14382 from "module_14382" /* 14382 */;
+import module_1172 from "module_1172" /* 1172 */;
 
-const f66988 = () => 42 !== Object.defineProperty(() => {
+module_1172.__extends(function MissingLocaleDataError() {
+  const self = this;
+  let applyResult = null !== Error;
+  const obj = Error;
+  if (applyResult) {
+    applyResult = obj(...arguments);
+  }
+  if (!applyResult) {
+    applyResult = self;
+  }
+  applyResult.type = "MISSING_LOCALE_DATA";
+  return applyResult;
+}, Error);
 
-}, "prototype", { value: 42, writable: false }).prototype;
-_mod14381 && _mod14382(f66988);
-
-export default _mod14381 && _mod14382(f66988);
+export const isMissingLocaleDataError = function isMissingLocaleDataError(type) {
+  return "MISSING_LOCALE_DATA" === type.type;
+};

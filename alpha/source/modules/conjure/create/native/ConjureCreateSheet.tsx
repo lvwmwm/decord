@@ -1,28 +1,28 @@
-// Module ID: 16847
-// Function ID: 16848
+// Module ID: 16971
+// Function ID: 16972
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 13072, 21, 5090, 587, 6933, 16848, 12364, 5054, 12377, 16849, 1126, 3827, 6878, 16850, 16851, 16854, 16855, 6885, 6828, 6763, 6267, 6184, 5086, 16852, 16859, 5375, 2]
+// Dependencies: [5, 32, 19, 17, 13164, 21, 5091, 587, 6940, 16972, 11369, 5055, 11382, 16973, 1126, 3827, 6885, 16974, 16975, 16978, 16979, 6892, 6835, 6770, 6269, 6186, 5087, 16976, 16983, 5376, 2]
 // Exports: default
 
-// Module 16847 (ConjureCreateSheet)
+// Module 16971 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5054 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6878 */;
-import ConjureTypes from "ConjureTypes" /* 6933 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 16851 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 16855 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5055 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6885 */;
+import ConjureTypes from "ConjureTypes" /* 6940 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 16975 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 16979 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 const ConjureTemplateWizardSheetDefault = ConjureTemplateWizardSheet;
-let c2, closure_12, install_scope;
+let c2, install_scope;
 
 let c10;
 let c9;
@@ -108,7 +108,7 @@ export default function ConjureCreateSheet(guildId) {
   c9 = undefined;
   let callback;
   let closure_11;
-  closure_12 = undefined;
+  let closure_12;
   let c13;
   let memo;
   let c15;

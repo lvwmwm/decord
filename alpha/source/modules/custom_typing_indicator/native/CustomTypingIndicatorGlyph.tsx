@@ -1,14 +1,14 @@
-// Module ID: 11672
-// Function ID: 11673
+// Module ID: 11608
+// Function ID: 11609
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 5090, 558, 576, 1410, 1200, 587, 11673, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 1411, 1200, 587, 11609, 2]
 
-// Module 11672 (CustomTypingIndicatorGlyph)
+// Module 11608 (CustomTypingIndicatorGlyph)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 11673 */;
+import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 11609 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   size = config.size;
   const tmp4 = closure_5();
   if (cResult[0] !== config) {
-    const tmpResult = config(1410);
+    const tmpResult = config(1411);
     const effectiveCustomTypingIndicatorAnimation = tmpResult.getEffectiveCustomTypingIndicatorAnimation(config);
     cResult[0] = config;
     cResult[1] = effectiveCustomTypingIndicatorAnimation;
@@ -35,13 +35,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult3 = config(1410);
+  const tmpResult3 = config(1411);
   if (tmpResult3.hasCustomTypingIndicatorEmojis(config.emojis)) {
     let tmp11;
     let PX_4;
     let tmp15;
     if (cResult[3] !== config.emojis) {
-      const tmpResult4 = config(1410);
+      const tmpResult4 = config(1411);
       const customTypingIndicatorEmojisKey = tmpResult4.getCustomTypingIndicatorEmojisKey(config.emojis);
       cResult[3] = config.emojis;
       cResult[4] = customTypingIndicatorEmojisKey;
@@ -142,12 +142,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   size = config.size;
   let emojisKey;
   const tmp = closure_5();
-  const obj = config(1410);
+  const obj = config(1411);
   dependencyMap = obj.getEffectiveCustomTypingIndicatorAnimation(config);
-  const obj2 = config(1410);
+  const obj2 = config(1411);
   if (obj2.hasCustomTypingIndicatorEmojis(config.emojis)) {
     let PX_4;
-    const tmp2Result = config(1410);
+    const tmp2Result = config(1411);
     emojisKey = tmp2Result.getCustomTypingIndicatorEmojisKey(config.emojis);
     const items = [tmp.emojiRow, ];
     const tmp5 = jsx;

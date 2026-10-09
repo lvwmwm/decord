@@ -1,306 +1,62 @@
 // Module ID: 7826
 // Function ID: 7827
-// Dependencies: [7825]
+// Dependencies: [7814]
 
 // Module 7826
-const require = globalThis.__r;
+import _modDef7814 from "module_7814" /* 7814 */;
 
-let obj = {
-  0: null,
-  1: {
-    name: "GPSLatitudeRef",
-    description(join) {
-      const joined = join.join("");
-      let str = "North latitude";
-      if ("N" !== joined) {
-        let str2 = "Unknown";
-        if ("S" === joined) {
-          str2 = "South latitude";
-        }
-        str = str2;
-      }
-      return str;
-    }
+const typeSizes = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 7: 1, 9: 4, 10: 8, 13: 4 };
+const obj2 = { BYTE: 1, ASCII: 2, SHORT: 3, LONG: 4, RATIONAL: 5, UNDEFINED: 7, SLONG: 9, SRATIONAL: 10, IFD: 13 };
+const obj3 = {
+  getAsciiValue(items) {
+    return items.map((item) => String.fromCharCode(item));
   },
-  2: { name: "GPSLatitude", description: require("module_7825").getCalculatedGpsValue },
-  3: {
-    name: "GPSLongitudeRef",
-    description(join) {
-      const joined = join.join("");
-      let str = "East longitude";
-      if ("E" !== joined) {
-        let str2 = "Unknown";
-        if ("W" === joined) {
-          str2 = "West longitude";
-        }
-        str = str2;
-      }
-      return str;
-    }
+  getByteAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
   },
-  4: null,
-  5: null,
-  6: null,
-  7: null,
-  8: "GPSSatellites",
-  9: null,
-  10: null,
-  11: "GPSDOP",
-  12: null,
-  13: "GPSSpeed",
-  14: null,
-  15: "GPSTrack",
-  16: null,
-  17: "GPSImgDirection",
-  18: "GPSMapDatum",
-  19: null,
-  20: null,
-  21: null,
-  22: null,
-  23: null,
-  24: "GPSDestBearing",
-  25: null,
-  26: "GPSDestDistance",
-  27: null,
-  28: null,
-  29: "GPSDateStamp",
-  30: null,
-  31: "GPSHPositioningError"
-};
-const obj2 = {
-  name: "GPSVersionID",
-  description(arg0) {
-    let str = "Unknown";
-    if (2 === arg0[0]) {
-      str = "Unknown";
-      if (2 === arg0[1]) {
-        str = "Unknown";
-        if (0 === arg0[2]) {
-          str = "Unknown";
-          if (0 === arg0[3]) {
-            str = "Version 2.2";
-          }
-        }
-      }
+  getAsciiAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getShortAt(dataView, sum, byteOrder) {
+    return dataView.getUint16(sum, byteOrder === _modDef7814.LITTLE_ENDIAN);
+  },
+  getLongAt(dataView, sum, byteOrder) {
+    return dataView.getUint32(sum, byteOrder === _modDef7814.LITTLE_ENDIAN);
+  },
+  getRationalAt(getUint32, sum, arg2) {
+    const items = [getUint32.getUint32(sum, arg2 === _modDef7814.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getUint32.getUint32(sum, arg2 === _modDef7814.LITTLE_ENDIAN);
+    return items;
+  },
+  getUndefinedAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getSlongAt(getInt32, sum, arg2) {
+    return getInt32.getInt32(sum, arg2 === _modDef7814.LITTLE_ENDIAN);
+  },
+  getSrationalAt(getInt32, sum, arg2) {
+    const items = [getInt32.getInt32(sum, arg2 === _modDef7814.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getInt32.getInt32(sum, arg2 === _modDef7814.LITTLE_ENDIAN);
+    return items;
+  },
+  getIfdPointerAt(getUint32, sum, arg2) {
+    return getUint32.getUint32(sum, arg2 === _modDef7814.LITTLE_ENDIAN);
+  },
+  typeSizes,
+  tagTypes: obj2,
+  getTypeSize(LONG) {
+    if (undefined === obj2[LONG]) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("No such type found.");
+      throw error;
+    } else {
+      return obj[tmp[LONG]];
     }
-    return str;
   }
 };
-obj[0] = obj2;
-({ name: "GPSLatitude", description: require("module_7825").getCalculatedGpsValue });
-obj[4] = { name: "GPSLongitude", description: require("module_7825").getCalculatedGpsValue };
-obj[5] = {
-  name: "GPSAltitudeRef",
-  description(arg0) {
-    let str = "Sea level";
-    if (0 !== arg0) {
-      let str2 = "Unknown";
-      if (1 === arg0) {
-        str2 = "Sea level reference (negative value)";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[6] = {
-  name: "GPSAltitude",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " m";
-  }
-};
-obj[7] = {
-  name: "GPSTimeStamp",
-  description(arr) {
-    const mapped = arr.map((item) => {
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = item;
-      const result = tmp / tmp2;
-      let combined = result;
-      const obj = /^\d(\.|$)/;
-      if (obj.test("" + result)) {
-        const _HermesInternal = HermesInternal;
-        combined = "0" + result;
-      }
-      return combined;
-    });
-    return mapped.join(":");
-  }
-};
-obj[9] = {
-  name: "GPSStatus",
-  description(join) {
-    const joined = join.join("");
-    let str = "Measurement in progress";
-    if ("A" !== joined) {
-      let str2 = "Unknown";
-      if ("V" === joined) {
-        str2 = "Measurement Interoperability";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[10] = {
-  name: "GPSMeasureMode",
-  description(join) {
-    const joined = join.join("");
-    let str = "2-dimensional measurement";
-    if ("2" !== joined) {
-      let str2 = "Unknown";
-      if ("3" === joined) {
-        str2 = "3-dimensional measurement";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[12] = {
-  name: "GPSSpeedRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "Kilometers per hour";
-    if ("K" !== joined) {
-      let str2 = "Miles per hour";
-      if ("M" !== joined) {
-        let str4 = "Unknown";
-        if ("N" === joined) {
-          str4 = "Knots";
-        }
-        str2 = str4;
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[14] = {
-  name: "GPSTrackRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "True direction";
-    if ("T" !== joined) {
-      let str2 = "Unknown";
-      if ("M" === joined) {
-        str2 = "Magnetic direction";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[16] = {
-  name: "GPSImgDirectionRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "True direction";
-    if ("T" !== joined) {
-      let str2 = "Unknown";
-      if ("M" === joined) {
-        str2 = "Magnetic direction";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[19] = {
-  name: "GPSDestLatitudeRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "North latitude";
-    if ("N" !== joined) {
-      let str2 = "Unknown";
-      if ("S" === joined) {
-        str2 = "South latitude";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[20] = {
-  name: "GPSDestLatitude",
-  description(arg0) {
-    return arg0[0][0] / arg0[0][1] + arg0[1][0] / arg0[1][1] / 60 + arg0[2][0] / arg0[2][1] / 3600;
-  }
-};
-obj[21] = {
-  name: "GPSDestLongitudeRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "East longitude";
-    if ("E" !== joined) {
-      let str2 = "Unknown";
-      if ("W" === joined) {
-        str2 = "West longitude";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[22] = {
-  name: "GPSDestLongitude",
-  description(arg0) {
-    return arg0[0][0] / arg0[0][1] + arg0[1][0] / arg0[1][1] / 60 + arg0[2][0] / arg0[2][1] / 3600;
-  }
-};
-obj[23] = {
-  name: "GPSDestBearingRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "True direction";
-    if ("T" !== joined) {
-      let str2 = "Unknown";
-      if ("M" === joined) {
-        str2 = "Magnetic direction";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[25] = {
-  name: "GPSDestDistanceRef",
-  description(join) {
-    const joined = join.join("");
-    let str = "Kilometers";
-    if ("K" !== joined) {
-      let str2 = "Miles";
-      if ("M" !== joined) {
-        let str4 = "Unknown";
-        if ("N" === joined) {
-          str4 = "Knots";
-        }
-        str2 = str4;
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-({ name: "GPSLongitude", description: require("module_7825").getCalculatedGpsValue });
-obj[27] = { name: "GPSProcessingMethod", description: require("module_7825").getEncodedString };
-({ name: "GPSProcessingMethod", description: require("module_7825").getEncodedString });
-obj[28] = { name: "GPSAreaInformation", description: require("module_7825").getEncodedString };
-obj[30] = {
-  name: "GPSDifferential",
-  description(arg0) {
-    let str = "Measurement without differential correction";
-    if (0 !== arg0) {
-      let str2 = "Unknown";
-      if (1 === arg0) {
-        str2 = "Differential correction applied";
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-({ name: "GPSAreaInformation", description: require("module_7825").getEncodedString });
 
-export default obj;
+export default obj3;

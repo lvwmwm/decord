@@ -1,12 +1,12 @@
-// Module ID: 15837
-// Function ID: 15838
+// Module ID: 15950
+// Function ID: 15951
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [21, 558, 576, 15830, 2]
+// Dependencies: [21, 558, 576, 15943, 2]
 
-// Module 15837 (CheckpointSummaryStatsScreen)
+// Module 15950 (CheckpointSummaryStatsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15830 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15943 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

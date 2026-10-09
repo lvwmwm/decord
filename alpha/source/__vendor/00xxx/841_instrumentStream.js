@@ -11,7 +11,7 @@ import INSTRUMENTED_METHODS from "INSTRUMENTED_METHODS" /* 840 */;
 import _awaitAsyncGenerator from "_awaitAsyncGenerator" /* 842 */;
 import _wrapAsyncGenerator from "_wrapAsyncGenerator" /* 844 */;
 
-let c21, c22, closure_12, closure_20;
+let c21, c22, closure_20;
 
 function AsyncFromSyncIterator(arg0) {
   class AsyncFromSyncIterator {
@@ -388,7 +388,7 @@ let obj = function _instrumentStream() {
                 obj11[closure_145_0(closure_145_1[6]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE] = responseTexts9.join("");
                 setAttributes26(obj11);
               }
-              closure_12 = 0;
+              let closure_12 = 0;
               const _Object9 = Object;
               const items = [];
               closure_12 = HermesBuiltin.arraySpread(items, Object.values(obj5.chatCompletionToolCalls), closure_12);

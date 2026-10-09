@@ -1,28 +1,28 @@
-// Module ID: 14526
-// Function ID: 14527
+// Module ID: 14621
+// Function ID: 14622
 // Name: NotificationTokenManager
-// Dependencies: [17, 1258, 12144, 13759, 502, 14527, 1085, 2001, 584, 10820, 14530, 14531, 1254, 1126, 2891, 1381, 14532, 1264, 12143, 2]
+// Dependencies: [17, 1259, 12081, 13853, 502, 14622, 1085, 2002, 584, 10991, 14625, 14626, 1255, 1126, 2891, 1382, 14627, 1265, 12080, 2]
 
-// Module 14526 (NotificationTokenManager)
+// Module 14621 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import intl32 from "intl" /* 1126 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import _modDef2891 from "module_2891" /* 2891 */;
-import PushNotificationDefault from "PushNotification" /* 10820 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 12143 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14527 */;
-import NotifSettingsExperiments from "NotifSettingsExperiments" /* 14530 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 14531 */;
-import react_nativeDefault from "react-native" /* 14532 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
-import MultiAccountStore from "MultiAccountStore" /* 12144 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13759 */;
+import PushNotificationDefault from "PushNotification" /* 10991 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 12080 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14622 */;
+import NotifSettingsExperiments from "NotifSettingsExperiments" /* 14625 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 14626 */;
+import react_nativeDefault from "react-native" /* 14627 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
+import MultiAccountStore from "MultiAccountStore" /* 12081 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13853 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import LifecycleManager from "LifecycleManager" /* 2001 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -282,7 +282,7 @@ class NotificationTokenManager extends LifecycleManager {
             return hasItem;
           });
           const obj2 = { disabled_channels: found.map((channelId) => channelId.channelId) };
-          const track = tmp4(1264).track;
+          const track = tmp4(1265).track;
           const ANDROID_NOTIFICATION_CHANNELS_SYNCED = AnalyticEvents.ANDROID_NOTIFICATION_CHANNELS_SYNCED;
           AnalyticsUtilsDefault;
           track(ANDROID_NOTIFICATION_CHANNELS_SYNCED, obj2);

@@ -1,31 +1,32 @@
-// Module ID: 13663
-// Function ID: 13664
+// Module ID: 13754
+// Function ID: 13755
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2128, 1389, 1085, 7140, 1391, 21, 5090, 587, 4775, 1126, 1900, 558, 576, 504, 4726, 5086, 13664, 13665, 9356, 5375, 5387, 1105, 2]
+// Dependencies: [19, 17, 2128, 1390, 1085, 7145, 1392, 21, 5091, 587, 4776, 1126, 1901, 558, 576, 504, 4728, 5087, 6163, 13755, 13756, 9394, 5376, 5388, 1105, 2]
 
-// Module 13663 (PremiumSubscriptionUpsell)
+// Module 13754 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl5 from "intl" /* 1126 */;
-import NumberUtils from "NumberUtils" /* 1900 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4775 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import ColorConstants from "ColorConstants" /* 7140 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9356 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13664 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13665 */;
+import NumberUtils from "NumberUtils" /* 1901 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4776 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import ColorConstants from "ColorConstants" /* 7145 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9394 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13755 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13756 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import UserStore from "UserStore" /* 1389 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import UserStore from "UserStore" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,20 +34,19 @@ let StyleSheet;
 let c10;
 let c3;
 let c9;
-let closure_12;
-let closure_4;
 let metroImportAll;
+let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
 let obj6;
 let unpackModuleId;
-({ View: c3, Image: closure_4, StyleSheet } = react_native);
+({ View: c3, StyleSheet } = react_native);
 const Fonts = Constants.Fonts;
 const Gradients = ColorConstants.Gradients;
-({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportAll, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: c9 } = PremiumConstants);
-({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
+({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportDefault, GUILD_BOOST_COST_FOR_PREMIUM_USER_DISCOUNT_PERCENT: metroImportAll } = PremiumConstants);
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { title: { textAlign: "center" }, subtitle: { lineHeight: 20, marginTop: 8, textAlign: "center" }, upsell: obj2, upsellCard: obj3, upsellFeatures: obj4, upsellFeatureSubLogo: { alignSelf: "center", height: 10, width: 54 }, upsellFeatureList: { marginTop: 8 }, upsellButton: { marginTop: 16 }, upsellFeatureLogoTier2: { alignSelf: "center", height: 20, marginTop: 6, width: 84 }, upsellLabel: obj5, upsellRow: obj6 };
 obj2 = { paddingTop: 32, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -55,7 +55,7 @@ obj3 = { borderRadius: nativeDefault.radii.xs, padding: 16, alignItems: "center"
 obj4 = { borderRadius: nativeDefault.radii.sm, padding: 16, marginTop: 12, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj5 = { color: nativeDefault.unsafe_rawColors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20 };
 obj6 = { paddingVertical: 0, marginTop: 8, color: nativeDefault.unsafe_rawColors.WHITE };
-let closure_13 = createStyles(obj);
+let closure_12 = createStyles(obj);
 function FEATURES_UPSELL_PREMIUM_TIER_2() {
   let P3aEj6;
   let formatToPlainString;
@@ -66,13 +66,13 @@ function FEATURES_UPSELL_PREMIUM_TIER_2() {
   const obj = { IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon, label: formatToPlainString(P3aEj6, obj2), color: nativeDefault.unsafe_rawColors.WHITE };
   const intl = intl5.intl;
   formatToPlainString = intl.formatToPlainString;
-  obj2 = { discountPercentage: obj3.formatPercent(LocaleStore.locale, React4 / 100) };
+  obj2 = { discountPercentage: obj3.formatPercent(LocaleStore.locale, metroImportAll / 100) };
   P3aEj6 = intl5.t.P3aEj6;
   const items = [obj, ];
   obj3 = NumberUtils;
   const obj4 = { IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon, label: intl2.formatToPlainString(intl5.t.Ntlzbd, obj5), color: nativeDefault.unsafe_rawColors.WHITE };
   intl2 = intl5.intl;
-  obj5 = { numFreeGuildSubscriptions: metroImportAll };
+  obj5 = { numFreeGuildSubscriptions: metroImportDefault };
   items[1] = obj4;
   return items;
 }
@@ -92,10 +92,10 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
   const obj = react2;
   const cResult = obj.c(37);
   ({ onLearnMorePremium, style } = arg0);
-  const tmp4 = closure_13();
+  const tmp4 = closure_12();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function n() {
+    const fn = function s() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -129,7 +129,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
           const upsellFeatures = tmp4.upsellFeatures;
           if (cResult[9] !== tmp4.upsellFeatureSubLogo) {
             const obj2 = { style: tmp4.upsellFeatureSubLogo, source: AssetRegistryDefault };
-            const tmp22 = authStore(React3, obj2);
+            const tmp9Result = FastImageDefault;
+            const tmp22 = React4(tmp9Result, obj2);
             cResult[9] = tmp4.upsellFeatureSubLogo;
             cResult[10] = tmp22;
             tmp19 = tmp22;
@@ -138,7 +139,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
           }
           if (cResult[11] !== tmp4.upsellFeatureLogoTier2) {
             const obj4 = { style: tmp4.upsellFeatureLogoTier2, source: AssetRegistryDefault2 };
-            const tmp26 = authStore(React3, obj4);
+            const tmp9Result4 = FastImageDefault;
+            const tmp26 = React4(tmp9Result4, obj4);
             cResult[11] = tmp4.upsellFeatureLogoTier2;
             cResult[12] = tmp26;
             tmp23 = tmp26;
@@ -181,7 +183,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
                     }
                     if (cResult[24] !== onLearnMorePremium) {
                       const obj5 = { variant: "experimental_premium-secondary", text: tmp37, onPress: onLearnMorePremium };
-                      const tmp41 = authStore(components_Button_Button.Button, obj5);
+                      const tmp41 = React4(components_Button_Button.Button, obj5);
                       cResult[24] = onLearnMorePremium;
                       cResult[25] = tmp41;
                       tmp39 = tmp41;
@@ -208,7 +210,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
                               return tmp51;
                             }
                             const obj6 = { style: tmp10, children: tmp46 };
-                            const tmp54 = authStore(_false, obj6);
+                            const tmp54 = React4(_false, obj6);
                             cResult[34] = tmp46;
                             cResult[35] = tmp10;
                             cResult[36] = tmp54;
@@ -218,8 +220,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
                       }
                       const obj7 = { style: tmp11, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: items1 };
                       items1 = [tmp12, tmp33, tmp42];
-                      const tmp9Result = LinearGradientDefault;
-                      const tmp50 = closure_12(tmp9Result, obj7);
+                      const tmp9Result5 = LinearGradientDefault;
+                      const tmp50 = unpackModuleId(tmp9Result5, obj7);
                       cResult[29] = tmp4.upsellCard;
                       cResult[30] = tmp33;
                       cResult[31] = tmp42;
@@ -228,7 +230,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
                       tmp46 = tmp50;
                     }
                     const obj8 = { style: upsellButton, children: tmp39 };
-                    const tmp45 = authStore(_false, obj8);
+                    const tmp45 = React4(_false, obj8);
                     cResult[26] = tmp4.upsellButton;
                     cResult[27] = tmp39;
                     cResult[28] = tmp45;
@@ -238,7 +240,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
               }
               const obj9 = { style: upsellFeatures, children: items2 };
               items2 = [tmp19, tmp23, tmp30];
-              const tmp36 = closure_12(_false, obj9);
+              const tmp36 = unpackModuleId(_false, obj9);
               cResult[18] = tmp4.upsellFeatures;
               cResult[19] = tmp30;
               cResult[20] = tmp19;
@@ -249,7 +251,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
           }
           const obj10 = { style: upsellFeatureList, features: tmp27, labelStyle: null, rowStyle: null };
           ({ upsellLabel: obj12.labelStyle, upsellRow: obj12.rowStyle } = tmp4);
-          const tmp32 = authStore(PremiumFeatureListDefault, obj10);
+          const tmp32 = React4(PremiumFeatureListDefault, obj10);
           cResult[14] = tmp4.upsellFeatureList;
           cResult[15] = tmp4.upsellLabel;
           cResult[16] = tmp4.upsellRow;
@@ -257,24 +259,24 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
           tmp30 = tmp32;
         }
       }
-      const tmp9Result2 = PremiumUtilsDefault;
-      if (tmp9Result2.isPremium(stateFromStores)) {
+      const tmp9Result6 = PremiumUtilsDefault;
+      if (tmp9Result6.isPremium(stateFromStores)) {
         const obj11 = { children: items3 };
         const obj13 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl5.t.YYfHlx) };
-        const Text2 = tmp(5086).Text;
+        const Text2 = tmp(5087).Text;
         intl2 = tmp(1126).intl;
-        items3 = [authStore(Text2, obj13), ];
+        items3 = [React4(Text2, obj13), ];
         const obj14 = { style: tmp4.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: intl3.format(intl5.t.Af0zEZ, obj15) };
-        const Text3 = tmp(5086).Text;
+        const Text3 = tmp(5087).Text;
         intl3 = tmp(1126).intl;
-        obj15 = { numFreeGuildSubscriptions: metroImportAll };
-        items3[1] = authStore(Text3, obj14);
-        tmp14 = closure_12(unpackModuleId, obj11);
+        obj15 = { numFreeGuildSubscriptions: metroImportDefault };
+        items3[1] = React4(Text3, obj14);
+        tmp14 = unpackModuleId(authStore, obj11);
       } else {
         const obj16 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl5.t["qUl+K4"]) };
-        const Text = tmp(5086).Text;
+        const Text = tmp(5087).Text;
         intl = tmp(1126).intl;
-        tmp14 = authStore(Text, obj16);
+        tmp14 = React4(Text, obj16);
       }
       cResult[5] = stateFromStores;
       cResult[6] = tmp4.subtitle;
@@ -306,7 +308,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
   let style;
   let tmp5Result;
   ({ onLearnMorePremium, style } = arg0);
-  const tmp = closure_13();
+  const tmp = closure_12();
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
@@ -314,45 +316,47 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
   const obj2 = PremiumUtilsDefault;
   if (!obj2.canUsePremiumGuildMemberProfile(stateFromStores)) {
     let tmp7Result1;
-    const obj3 = { style: items1, children: closure_12(tmp5Result, obj4) };
+    const obj3 = { style: items1, children: unpackModuleId(tmp5Result, obj4) };
     items1 = [tmp.upsell, style];
     obj4 = { style: tmp.upsellCard, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: Gradients.PREMIUM_GUILD, children: items3 };
     tmp5Result = LinearGradientDefault;
-    const tmp5Result3 = PremiumUtilsDefault;
-    if (tmp5Result3.isPremium(stateFromStores)) {
+    const tmp5Result5 = PremiumUtilsDefault;
+    if (tmp5Result5.isPremium(stateFromStores)) {
       const obj5 = { children: items2 };
       const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl5.t.YYfHlx) };
-      const Text2 = tmp2(5086).Text;
+      const Text2 = tmp2(5087).Text;
       intl2 = tmp2(1126).intl;
-      items2 = [authStore(Text2, obj6), ];
+      items2 = [React4(Text2, obj6), ];
       const obj7 = { style: tmp.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: intl3.format(intl5.t.Af0zEZ, obj8) };
-      const Text3 = tmp2(5086).Text;
+      const Text3 = tmp2(5087).Text;
       intl3 = tmp2(1126).intl;
-      obj8 = { numFreeGuildSubscriptions: metroImportAll };
-      items2[1] = authStore(Text3, obj7);
-      tmp7Result1 = tmp9(unpackModuleId, obj5);
+      obj8 = { numFreeGuildSubscriptions: metroImportDefault };
+      items2[1] = React4(Text3, obj7);
+      tmp7Result1 = tmp9(authStore, obj5);
     } else {
       const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl5.t["qUl+K4"]) };
-      const Text = tmp2(5086).Text;
+      const Text = tmp2(5087).Text;
       intl = tmp2(1126).intl;
       tmp7Result1 = tmp7(Text, obj9);
     }
     items3 = [tmp7Result1, , ];
     const obj10 = { style: tmp.upsellFeatures, children: items4 };
     const obj11 = { style: tmp.upsellFeatureSubLogo, source: AssetRegistryDefault };
-    items4 = [authStore(React3, obj11), , ];
+    const tmp5Result6 = FastImageDefault;
+    items4 = [React4(tmp5Result6, obj11), , ];
     const obj12 = { style: tmp.upsellFeatureLogoTier2, source: AssetRegistryDefault2 };
-    items4[1] = authStore(React3, obj12);
+    const tmp5Result7 = FastImageDefault;
+    items4[1] = React4(tmp5Result7, obj12);
     const obj13 = { style: tmp.upsellFeatureList, features: FEATURES_UPSELL_PREMIUM_TIER_2(), labelStyle: null, rowStyle: null };
     ({ upsellLabel: obj14.labelStyle, upsellRow: obj14.rowStyle } = tmp);
-    const tmp5Result4 = PremiumFeatureListDefault;
-    items4[2] = authStore(tmp5Result4, obj13);
-    items3[1] = closure_12(_false, obj10);
-    const obj15 = { style: tmp.upsellButton, children: authStore(Button, obj16) };
+    const tmp5Result8 = PremiumFeatureListDefault;
+    items4[2] = React4(tmp5Result8, obj13);
+    items3[1] = unpackModuleId(_false, obj10);
+    const obj15 = { style: tmp.upsellButton, children: React4(Button, obj16) };
     obj16 = { variant: "experimental_premium-secondary", text: intl4.string(intl5.t.fJOECn), onPress: onLearnMorePremium };
-    Button = tmp2(5375).Button;
+    Button = tmp2(5376).Button;
     intl4 = tmp2(1126).intl;
-    items3[2] = authStore(_false, obj15);
+    items3[2] = React4(_false, obj15);
     tmp7Result = tmp7(tmp8, obj3);
   }
   return tmp7Result;

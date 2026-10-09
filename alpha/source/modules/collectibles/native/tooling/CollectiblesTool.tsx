@@ -1,28 +1,28 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 16007
+// Function ID: 16008
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10041, 1389, 7252, 7267, 8305, 1085, 1391, 21, 5090, 587, 558, 576, 8937, 5086, 10469, 5376, 573, 10075, 11175, 15893, 1200, 2]
+// Dependencies: [32, 19, 17, 10026, 1390, 7257, 7272, 8313, 1085, 1392, 21, 5091, 587, 558, 576, 8948, 5087, 10459, 5377, 573, 10060, 12723, 16008, 1200, 2]
 
-// Module 15892 (CollectiblesTool)
+// Module 16007 (CollectiblesTool)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import BaseTextButton from "BaseTextButton" /* 5376 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8305 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8937 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10469 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 11175 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import BaseTextButton from "BaseTextButton" /* 5377 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8313 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8948 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10459 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 12723 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10041 */;
-import UserStore from "UserStore" /* 1389 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7267 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10026 */;
+import UserStore from "UserStore" /* 1390 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7257 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7272 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -383,8 +383,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
     }
     const obj2 = { variant: "heading-md/semibold", style: tmp4.sectionTitle, children: "Frame Preview Override" };
     cResult[5] = tmp4.sectionTitle;
-    cResult[6] = authStore2(Text_Text.Text, obj2);
-    const tmp24 = authStore2(Text_Text.Text, obj2);
+    cResult[6] = authStore3(Text_Text.Text, obj2);
+    const tmp24 = authStore3(Text_Text.Text, obj2);
   } else {
     class T {
       constructor(clear) {
@@ -406,8 +406,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
       }
       const obj3 = { variant: "text-sm/normal", style: tmp4.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
       cResult[10] = tmp4.description;
-      cResult[11] = authStore2(Text_Text.Text, obj3);
-      const tmp27 = authStore2(Text_Text.Text, obj3);
+      cResult[11] = authStore3(Text_Text.Text, obj3);
+      const tmp27 = authStore3(Text_Text.Text, obj3);
     } else {
       class T {
         constructor(clear) {
@@ -463,7 +463,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
               }
             }
             const obj4 = { pillStyle: tmp4.secondaryButton, text: "Clear override", onPress: tmp6Result6 };
-            tmp39 = authStore2(tmp(5376).BaseTextButton, obj4);
+            tmp39 = authStore3(tmp(5377).BaseTextButton, obj4);
           }
           cResult[23] = tmp6Result6;
           cResult[24] = tmp7;
@@ -473,14 +473,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
         const obj5 = { pillStyle: tmp4.secondaryButton, text: "Load from device", onPress: tmp32 };
         cResult[20] = tmp4.secondaryButton;
         cResult[21] = tmp32;
-        cResult[22] = authStore2(BaseTextButton.BaseTextButton, obj5);
-        const tmp36 = authStore2(BaseTextButton.BaseTextButton, obj5);
+        cResult[22] = authStore3(BaseTextButton.BaseTextButton, obj5);
+        const tmp36 = authStore3(BaseTextButton.BaseTextButton, obj5);
       }
       const obj6 = { variant: "text-xs/normal", style: tmp28, children: str };
       cResult[15] = str;
       cResult[16] = tmp28;
-      cResult[17] = authStore2(Text_Text.Text, obj6);
-      const tmp31 = authStore2(Text_Text.Text, obj6);
+      cResult[17] = authStore3(Text_Text.Text, obj6);
+      const tmp31 = authStore3(Text_Text.Text, obj6);
     }
     const items = [tmp4.statusText, tmp17];
     cResult[12] = tmp17;
@@ -490,8 +490,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
   const obj7 = { style: tmp4.sectionHeader, children: tmp23 };
   cResult[7] = tmp4.sectionHeader;
   cResult[8] = tmp23;
-  cResult[9] = authStore2(metroRequire, obj7);
-  authStore2(metroRequire, obj7);
+  cResult[9] = authStore3(metroRequire, obj7);
+  authStore3(metroRequire, obj7);
 }) : (function FramePreviewOverrideSection() {
   let items;
   let items1;
@@ -531,14 +531,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
     str3 = str4;
   }
   const obj = { style: tmp.section, children: items };
-  const obj2 = { style: tmp.sectionHeader, children: authStore2(Text_Text.Text, obj3) };
+  const obj2 = { style: tmp.sectionHeader, children: authStore3(Text_Text.Text, obj3) };
   obj3 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Frame Preview Override" };
-  items = [authStore2(metroRequire, obj2), , , , ];
+  items = [authStore3(metroRequire, obj2), , , , ];
   const obj4 = { variant: "text-sm/normal", style: tmp.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
-  items[1] = authStore2(Text_Text.Text, obj4);
+  items[1] = authStore3(Text_Text.Text, obj4);
   const obj5 = { variant: "text-xs/normal", style: items1, children: str3 };
   items1 = [tmp.statusText, statusError];
-  items[2] = authStore2(Text_Text.Text, obj5);
+  items[2] = authStore3(Text_Text.Text, obj5);
   const obj6 = {
     pillStyle: tmp.secondaryButton,
     text: "Load from device",
@@ -546,11 +546,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
       closure_0();
     }
   };
-  items[3] = authStore2(BaseTextButton.BaseTextButton, obj6);
+  items[3] = authStore3(BaseTextButton.BaseTextButton, obj6);
   let tmp12Result = null != tmp2;
-  const tmp10 = authStore3;
+  const tmp10 = authStore4;
   const tmp11 = metroRequire;
-  const tmp12 = authStore2;
+  const tmp12 = authStore3;
   if (tmp12Result) {
     const obj7 = { pillStyle: tmp.secondaryButton, text: "Clear override", onPress: tmp4 };
     tmp12Result = tmp12(BaseTextButton.BaseTextButton, obj7);

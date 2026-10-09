@@ -1,12 +1,12 @@
-// Module ID: 15954
-// Function ID: 15955
+// Module ID: 16071
+// Function ID: 16072
 // Name: DesignSystemsContextMenuSetting
-// Dependencies: [7966, 1085, 11262, 15955, 2]
+// Dependencies: [7974, 1085, 10629, 16072, 2]
 
-// Module 15954 (DesignSystemsContextMenuSetting)
+// Module 16071 (DesignSystemsContextMenuSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17175
+// Function ID: 17176
 // Name: conjureAttachmentDrafts
-// Dependencies: [109, 4949, 13072, 1126, 3827, 6933, 558, 576, 584, 2]
+// Dependencies: [109, 4950, 13164, 1126, 3827, 6940, 558, 576, 584, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment
 
-// Module 17019 (conjureAttachmentDrafts)
+// Module 17175 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1126 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import ZustandStore from "ZustandStore" /* 4949 */;
-import ConjureTypes from "ConjureTypes" /* 6933 */;
+import ZustandStore from "ZustandStore" /* 4950 */;
+import ConjureTypes from "ConjureTypes" /* 6940 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let _require, closure_10;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f127590 = () => {
+const f128046 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -83,7 +83,7 @@ function discardDraft(projectId, item10010) {
   }
   if (null != item10010.ref) {
     const promise = hasOwnProperty(projectId, item10010.ref.id);
-    promise.catch(f127590);
+    promise.catch(f128046);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -291,7 +291,7 @@ export const removeConjureAttachmentDraft = function removeConjureAttachmentDraf
     }
     if (null != found.ref) {
       const promise = hasOwnProperty(projectId, found.ref.id);
-      promise.catch(f127590);
+      promise.catch(f128046);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

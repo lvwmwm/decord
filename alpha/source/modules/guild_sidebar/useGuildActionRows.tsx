@@ -1,18 +1,18 @@
-// Module ID: 16489
-// Function ID: 16490
+// Module ID: 16608
+// Function ID: 16609
 // Name: useGuildActionRows
-// Dependencies: [32, 6912, 7245, 1085, 558, 576, 12097, 6953, 6939, 6951, 6917, 6911, 573, 6932, 6913, 12003, 16490, 16493, 6954, 6915, 12264, 16452, 6956, 4986, 16494, 2048, 7090, 2]
+// Dependencies: [32, 6919, 7250, 1085, 558, 576, 12034, 6960, 6946, 6958, 6924, 6918, 573, 6939, 6920, 11940, 16609, 16612, 6961, 6922, 12203, 16571, 6963, 4987, 16613, 2049, 7093, 2]
 
-// Module 16489 (useGuildActionRows)
+// Module 16608 (useGuildActionRows)
 import Constants from "Constants" /* 1085 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 6913 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7245 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12097 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12264 */;
-import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16452 */;
-import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 16490 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 6920 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7250 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 12034 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12203 */;
+import useTotalPossibleBoostCountDefault from "useTotalPossibleBoostCount" /* 16571 */;
+import useIsEligibleForServerOnboardingSetupProgressDefault from "useIsEligibleForServerOnboardingSetupProgress" /* 16609 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6912 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6919 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAc
   let tmp33;
   _require = id;
   const obj = require("react");
-  const cResult = obj.c(10);
+  const cResult = obj.c(11);
   const tmp5 = useCanSeeEventsInChannelListDefault(id.id);
   const obj2 = require("canReviewGuildMemberApplications");
   let canReviewGuildMemberApplications = obj2.useCanReviewGuildMemberApplications(id.id);
@@ -107,12 +107,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAc
   const isGameServerTabAlwaysOnEnabled = tmpResult17.useIsGameServerTabAlwaysOnEnabled("useGuildActionRows");
   if (cResult[6] === gameServerEnabled) {
     if (cResult[7] === tmp30) {
+      let tmp34;
       if (cResult[8] === isGameServerTabAlwaysOnEnabled) {
         tmp33 = cResult[9];
       }
+      const _Symbol = Symbol;
+      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj7 = { bypassAutoDismiss: true };
+        cResult[10] = obj7;
+        tmp34 = obj7;
+      } else {
+        tmp34 = cResult[10];
+      }
       const items2 = [];
       const tmpResult18 = require("useSelectedDismissibleContent");
-      const first1 = _slicedToArray(tmpResult18.useSelectedDismissibleContent(tmp33, undefined, true), 1)[0];
+      const first1 = _slicedToArray(tmpResult18.useSelectedDismissibleContent(tmp33, tmp34), 1)[0];
       if (hasItem) {
         items2.push(ChannelListGuildActionRow.GUILD_HUB_HEADER_OPTIONS);
       }
@@ -120,8 +129,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAc
         if (showSetupProgressRow) {
           items2.push(ChannelListGuildActionRow.GUILD_ONBOARDING_SETUP_PROGRESS);
         }
-        const tmp45 = !hasItem && canSeeOnboardingHome;
-        if (tmp45) {
+        const tmp46 = !hasItem && canSeeOnboardingHome;
+        if (tmp46) {
           items2.push(ChannelListGuildActionRow.GUILD_HOME);
         }
         if (canUseGuildSpace) {
@@ -130,8 +139,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAc
         if (tmp5) {
           items2.push(ChannelListGuildActionRow.GUILD_SCHEDULED_EVENTS);
         }
-        const tmp52 = !hasItem && hasItem1;
-        if (tmp52) {
+        const tmp53 = !hasItem && hasItem1;
+        if (tmp53) {
           items2.push(ChannelListGuildActionRow.CHANNELS_AND_ROLES);
         }
         if (showRoleSubscriptionsInChannelList) {
@@ -259,7 +268,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAc
         items2 = [require("dismissible_content").DismissibleContent.EMPTY_GAME_SERVER_TAB];
       }
       const items3 = [];
-      const first = _slicedToArray(tmp28(items2, undefined, true), 1)[0];
+      const first = _slicedToArray(tmp28(items2, { bypassAutoDismiss: true }), 1)[0];
       if (hasItem) {
         items3.push(ChannelListGuildActionRow.GUILD_HUB_HEADER_OPTIONS);
       }

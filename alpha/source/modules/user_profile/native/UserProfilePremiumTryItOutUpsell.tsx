@@ -1,25 +1,27 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14859
+// Function ID: 14860
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 6891, 21, 5090, 14750, 558, 576, 6841, 6865, 1630, 9328, 9329, 4810, 5374, 1126, 2]
+// Dependencies: [19, 6898, 21, 5091, 14858, 558, 576, 1631, 4811, 5375, 1126, 2]
 
-// Module 14751 (UserProfilePremiumTryItOutUpsell)
+// Module 14859 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
-import spring from "spring" /* 5374 */;
-import Constants from "Constants" /* 6891 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9328 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9329 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14750 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import spring from "spring" /* 5375 */;
+import Constants from "Constants" /* 6898 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14858 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp4;
+const ReanimatedRexportDefault = tmp4(4811);
+const UserProfileUpsellCardV2Default = tmp4(14858);
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
 const jsx = Fragment.jsx;
-let c6 = 0.9;
+let c5 = 0.9;
 const FLOATING_UPSELL_SPRING = { mass: 1, damping: 25, stiffness: 400, overshootClamping: false };
-let closure_8 = createStyles.createStyles((bottom) => {
+let closure_7 = createStyles.createStyles((bottom) => {
   let obj2;
   const obj = { container: obj2, card: { marginHorizontal: PROFILE_SIDE_PADDING - UserProfileUpsellCardV2.GRADIENT_BORDER_WIDTH } };
   obj2 = { position: "absolute", bottom, start: 0, end: 0 };
@@ -30,199 +32,13 @@ const __initData = { code: "function UserProfilePremiumTryItOutUpsellTsx1(){cons
 const __initData2 = { code: "function UserProfilePremiumTryItOutUpsellTsx2(){const{isVisible}=this.__closure;const visible_0=isVisible.get();return{pointerEvents:visible_0?\"box-none\":\"none\",accessibilityElementsHidden:!visible_0,importantForAccessibility:visible_0?\"auto\":\"no-hide-descendants\"};}" };
 const __initData3 = { code: "function UserProfilePremiumTryItOutUpsellTsx3(){const{isVisible,withSpring,FLOATING_UPSELL_SPRING,DISMISSED_TRANSLATE_Y,DISMISSED_SCALE}=this.__closure;const visible=isVisible.get();return{opacity:withSpring(visible?1:0,FLOATING_UPSELL_SPRING),transform:[{translateY:withSpring(visible?0:DISMISSED_TRANSLATE_Y,FLOATING_UPSELL_SPRING)},{scale:withSpring(visible?1:DISMISSED_SCALE,FLOATING_UPSELL_SPRING)}]};}" };
 const __initData4 = { code: "function UserProfilePremiumTryItOutUpsellTsx4(){const{isVisible}=this.__closure;const visible_0=isVisible.get();return{pointerEvents:visible_0?'box-none':'none',accessibilityElementsHidden:!visible_0,importantForAccessibility:visible_0?'auto':'no-hide-descendants'};}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfilePremiumTryItOutUpsell(isVisible) {
-  let analyticsLocations;
-  let tmp7;
-  let tmp = isVisible;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfilePremiumTryItOutUpsell(isVisible) {
   let obj = isVisible(576);
-  const cResult = obj.c(16);
+  const cResult = obj.c(12);
   isVisible = isVisible.isVisible;
   const onPreviewPremium = isVisible.onPreviewPremium;
-  const tmp4 = analyticsLocations;
-  const tmp5 = analyticsLocations(6841);
-  analyticsLocations = tmp5(analyticsLocations(6865).USER_SETTINGS_TRY_OUT_PREMIUM).analyticsLocations;
-  const tmp6 = closure_8(analyticsLocations(1630)().bottom);
-  if (cResult[0] !== analyticsLocations) {
-    const fn = function n() {
-      const obj = { analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
-      const tmp = openPremiumModalDefault;
-      tmp(obj);
-    };
-    let num = 0;
-    cResult[0] = analyticsLocations;
-    let num2 = 1;
-    cResult[1] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-  }
-  const tmpResult = tmp(4810);
-  class L {
-    constructor() {
-      let items;
-      const value = isVisible.get();
-      let num = 0;
-      const withSpring = spring.withSpring;
-      spring;
-      if (value) {
-        num = 1;
-      }
-      let num2 = 60;
-      const obj = { opacity: withSpring(num, FLOATING_UPSELL_SPRING), transform: items };
-      const withSpring2 = spring.withSpring;
-      spring;
-      if (value) {
-        num2 = 0;
-      }
-      items = [{ translateY: withSpring2(num2, FLOATING_UPSELL_SPRING) }, ];
-      ({ translateY: withSpring2(num2, FLOATING_UPSELL_SPRING) });
-      let num3 = 1;
-      const withSpring3 = spring.withSpring;
-      spring;
-      if (!value) {
-        num3 = c6;
-      }
-      items[1] = { scale: withSpring3(num3, FLOATING_UPSELL_SPRING) };
-      ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
-      return obj;
-    }
-  }
-  const obj2 = { isVisible, withSpring: tmp(5374).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
-  L.__closure = obj2;
-  L.__workletHash = 7434922701119;
-  L.__initData = __initData;
-  const animatedStyle = tmpResult.useAnimatedStyle(L);
-  const tmpResult2 = tmp(4810);
-  class T {
-    constructor() {
-      let str2;
-      const value = isVisible.get();
-      let str = "none";
-      if (value) {
-        str = "box-none";
-      }
-      const obj = { pointerEvents: str, accessibilityElementsHidden: !value, importantForAccessibility: str2 };
-      str2 = "no-hide-descendants";
-      if (value) {
-        str2 = "auto";
-      }
-      return obj;
-    }
-  }
-  T.__closure = { isVisible };
-  T.__workletHash = 5163998995941;
-  T.__initData = __initData2;
-  const animatedProps = tmpResult2.useAnimatedProps(T);
-  if (cResult[2] === animatedStyle) {
-    let tmp10;
-    let tmp11;
-    let tmp14;
-    if (cResult[3] === tmp6.container) {
-      tmp10 = cResult[4];
-    }
-    const card = tmp6.card;
-    if (cResult[5] !== tmp7) {
-      const intl = tmp(1126).intl;
-      const obj3 = { onClick: tmp7 };
-      const formatResult = intl.format(tmp(1126).t.TmfgI2, obj3);
-      let num3 = 5;
-      cResult[5] = tmp7;
-      cResult[6] = formatResult;
-      tmp11 = formatResult;
-    } else {
-      tmp11 = cResult[6];
-    }
-    const _Symbol = Symbol;
-    let str = "react.memo_cache_sentinel";
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
-      const stringResult = intl2.string(tmp(1126).t.PxUx8e);
-      cResult[7] = stringResult;
-      tmp14 = stringResult;
-    } else {
-      tmp14 = cResult[7];
-    }
-    if (cResult[8] === onPreviewPremium) {
-      if (cResult[9] === tmp6.card) {
-        let tmp16;
-        if (cResult[10] === tmp11) {
-          tmp16 = cResult[11];
-        }
-        if (cResult[12] === animatedProps) {
-          if (cResult[13] === tmp10) {
-            let tmp19;
-            if (cResult[14] === tmp16) {
-              tmp19 = cResult[15];
-            }
-            return tmp19;
-          }
-        }
-        const tmp21 = jsx(tmp4(4810).View, { animatedProps, style: tmp10, children: tmp16 });
-        cResult[12] = animatedProps;
-        cResult[13] = tmp10;
-        cResult[14] = tmp16;
-        cResult[15] = tmp21;
-        tmp19 = tmp21;
-      }
-    }
-    const tmp18 = jsx(tmp4(14750), { style: card, text: tmp11, buttonText: tmp14, onButtonPress: onPreviewPremium, buttonVariant: "primary" });
-    cResult[8] = onPreviewPremium;
-    class L {
-      constructor() {
-        let items;
-        const value = isVisible.get();
-        let num = 0;
-        const withSpring = spring.withSpring;
-        spring;
-        if (value) {
-          num = 1;
-        }
-        let num2 = 60;
-        const obj = { opacity: withSpring(num, FLOATING_UPSELL_SPRING), transform: items };
-        const withSpring2 = spring.withSpring;
-        spring;
-        if (value) {
-          num2 = 0;
-        }
-        items = [{ translateY: withSpring2(num2, FLOATING_UPSELL_SPRING) }, ];
-        ({ translateY: withSpring2(num2, FLOATING_UPSELL_SPRING) });
-        let num3 = 1;
-        const withSpring3 = spring.withSpring;
-        spring;
-        if (!value) {
-          num3 = c6;
-        }
-        items[1] = { scale: withSpring3(num3, FLOATING_UPSELL_SPRING) };
-        ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
-        return obj;
-      }
-    }
-    cResult[9] = tmp6.card;
-    cResult[10] = tmp11;
-    cResult[11] = tmp18;
-    tmp16 = tmp18;
-  }
-  let items = [tmp6.container, animatedStyle];
-  cResult[2] = animatedStyle;
-  cResult[3] = tmp6.container;
-  cResult[4] = items;
-  tmp10 = items;
-}) : (function UserProfilePremiumTryItOutUpsell(isVisible) {
-  let intl;
-  let intl2;
-  isVisible = isVisible.isVisible;
-  let analyticsLocations;
-  const onPreviewPremium = isVisible.onPreviewPremium;
-  let tmp = analyticsLocations(6841);
-  analyticsLocations = tmp(analyticsLocations(6865).USER_SETTINGS_TRY_OUT_PREMIUM).analyticsLocations;
-  const tmp2 = closure_8(analyticsLocations(1630)().bottom);
-  let items = [analyticsLocations];
-  const callback = react.useCallback(() => {
-    const obj = { analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
-    const tmp = openPremiumModalDefault;
-    tmp(obj);
-  }, items);
-  let obj = isVisible(4810);
+  const tmp5 = closure_7(useSafeAreaInsetsDefault().bottom);
+  const obj2 = isVisible(4811);
   const fn = function c() {
     let items;
     const value = isVisible.get();
@@ -245,19 +61,136 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
     const withSpring3 = spring.withSpring;
     spring;
     if (!value) {
-      num3 = c6;
+      num3 = c5;
     }
     items[1] = { scale: withSpring3(num3, FLOATING_UPSELL_SPRING) };
     ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
     return obj;
   };
-  const obj2 = { isVisible, withSpring: isVisible(5374).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  const obj3 = { isVisible, withSpring: isVisible(5375).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  fn.__closure = obj3;
+  fn.__workletHash = 7434922701119;
+  fn.__initData = __initData;
+  const animatedStyle = obj2.useAnimatedStyle(fn);
+  const fn2 = function u() {
+    let str2;
+    const value = isVisible.get();
+    let str = "none";
+    if (value) {
+      str = "box-none";
+    }
+    const obj = { pointerEvents: str, accessibilityElementsHidden: !value, importantForAccessibility: str2 };
+    str2 = "no-hide-descendants";
+    if (value) {
+      str2 = "auto";
+    }
+    return obj;
+  };
+  fn2.__closure = { isVisible };
+  fn2.__workletHash = 5163998995941;
+  fn2.__initData = __initData2;
+  const obj4 = isVisible(4811);
+  const animatedProps = obj4.useAnimatedProps(fn2);
+  if (cResult[0] === animatedStyle) {
+    let tmp8;
+    let tmp11;
+    let tmp10;
+    if (cResult[1] === tmp5.container) {
+      tmp8 = cResult[2];
+    }
+    const _Symbol = Symbol;
+    let str = "react.memo_cache_sentinel";
+    const card = tmp5.card;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(isVisible(1126).t["MswR/h"]);
+      const intl2 = tmp(1126).intl;
+      const stringResult1 = intl2.string(isVisible(1126).t.PxUx8e);
+      let num = 3;
+      cResult[3] = stringResult;
+      let num2 = 4;
+      cResult[4] = stringResult1;
+      tmp11 = stringResult1;
+      tmp10 = stringResult;
+    } else {
+      tmp10 = cResult[3];
+      tmp11 = cResult[4];
+    }
+    if (cResult[5] === onPreviewPremium) {
+      let tmp14;
+      if (cResult[6] === tmp5.card) {
+        tmp14 = cResult[7];
+      }
+      if (cResult[8] === animatedProps) {
+        if (cResult[9] === tmp8) {
+          let tmp17;
+          if (cResult[10] === tmp14) {
+            tmp17 = cResult[11];
+          }
+          return tmp17;
+        }
+      }
+      const tmp19 = jsx(ReanimatedRexportDefault.View, { animatedProps, style: tmp8, children: tmp14 });
+      cResult[8] = animatedProps;
+      cResult[9] = tmp8;
+      cResult[10] = tmp14;
+      cResult[11] = tmp19;
+      tmp17 = tmp19;
+    }
+    const tmp16 = jsx(UserProfileUpsellCardV2Default, { style: card, text: tmp10, buttonText: tmp11, onButtonPress: onPreviewPremium, buttonVariant: "primary" });
+    let num3 = 5;
+    cResult[5] = onPreviewPremium;
+    cResult[6] = tmp5.card;
+    cResult[7] = tmp16;
+    tmp14 = tmp16;
+  }
+  let items = [tmp5.container, animatedStyle];
+  cResult[0] = animatedStyle;
+  cResult[1] = tmp5.container;
+  cResult[2] = items;
+  tmp8 = items;
+}) : (function UserProfilePremiumTryItOutUpsell(isVisible) {
+  let intl;
+  let intl2;
+  isVisible = isVisible.isVisible;
+  const onPreviewPremium = isVisible.onPreviewPremium;
+  const tmp = closure_7(useSafeAreaInsetsDefault().bottom);
+  let obj = isVisible(4811);
+  const fn = function _() {
+    let items;
+    const value = isVisible.get();
+    let num = 0;
+    const withSpring = spring.withSpring;
+    spring;
+    if (value) {
+      num = 1;
+    }
+    let num2 = 60;
+    const obj = { opacity: withSpring(num, FLOATING_UPSELL_SPRING), transform: items };
+    const withSpring2 = spring.withSpring;
+    spring;
+    if (value) {
+      num2 = 0;
+    }
+    items = [{ translateY: withSpring2(num2, FLOATING_UPSELL_SPRING) }, ];
+    ({ translateY: withSpring2(num2, FLOATING_UPSELL_SPRING) });
+    let num3 = 1;
+    const withSpring3 = spring.withSpring;
+    spring;
+    if (!value) {
+      num3 = c5;
+    }
+    items[1] = { scale: withSpring3(num3, FLOATING_UPSELL_SPRING) };
+    ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
+    return obj;
+  };
+  const obj2 = { isVisible, withSpring: isVisible(5375).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
   fn.__closure = obj2;
   fn.__workletHash = 14790282051517;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = isVisible(4810);
-  class E {
+  const obj3 = isVisible(4811);
+  class I {
     constructor() {
       let str2;
       const value = isVisible.get();
@@ -273,18 +206,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
       return obj;
     }
   }
-  E.__closure = { isVisible };
-  E.__workletHash = 15404222413955;
-  E.__initData = __initData4;
-  const animatedProps = obj3.useAnimatedProps(E);
-  const items1 = [tmp2.container, animatedStyle];
-  const View = analyticsLocations(4810).View;
-  ({ style: tmp2.card, text: intl.format(isVisible(1126).t.TmfgI2, { onClick: callback }), buttonText: intl2.string(isVisible(1126).t.PxUx8e), onButtonPress: onPreviewPremium, buttonVariant: "primary" });
-  analyticsLocations(14750);
+  I.__closure = { isVisible };
+  I.__workletHash = 15404222413955;
+  I.__initData = __initData4;
+  const animatedProps = obj3.useAnimatedProps(I);
+  let items = [tmp.container, animatedStyle];
+  const View = ReanimatedRexportDefault.View;
+  ({ style: tmp.card, text: intl.string(isVisible(1126).t["MswR/h"]), buttonText: intl2.string(isVisible(1126).t.PxUx8e), onButtonPress: onPreviewPremium, buttonVariant: "primary" });
   intl = isVisible(1126).intl;
   intl2 = isVisible(1126).intl;
-  return <View animatedProps={animatedProps} style={items1}>{null}</View>;
+  return <View animatedProps={animatedProps} style={items}>{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePremiumTryItOutUpsell.tsx");
 
-export default tmp2;
+export default tmp3;

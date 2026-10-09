@@ -1,13 +1,13 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 18265
+// Function ID: 18266
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4717, 1389, 1085, 21, 558, 576, 1502, 6847, 6184, 5417, 8134, 6267, 4778, 587, 17995, 12, 5373, 8555, 6719, 2]
+// Dependencies: [19, 4719, 1390, 1085, 21, 558, 576, 1503, 6854, 6186, 5418, 8142, 6269, 4779, 587, 18155, 12, 5374, 8563, 6726, 2]
 
-// Module 18105 (GuildSettingsModalLobbiesLinked)
+// Module 18265 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Syncing
             obj4 = channels(closure_2[11]);
             obj1.IconComponent = obj4.getChannelIconComponent(channels);
             obj.icon = closure_1_6(Icon, obj1);
-            obj.onPress = function onPress() { /* body not rendered: F150828 */ };
+            obj.onPress = function onPress() { /* body not rendered: F151169 */ };
             return closure_1_6(TableRow, obj, channels.id);
           }
         }
@@ -98,7 +98,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Syncing
             obj4 = channels(closure_2[11]);
             obj1.IconComponent = obj4.getChannelIconComponent(channels);
             obj.icon = closure_1_6(Icon, obj1);
-            obj.onPress = function onPress() { /* body not rendered: F150828 */ };
+            obj.onPress = function onPress() { /* body not rendered: F151169 */ };
             return closure_1_6(TableRow, obj, channels.id);
           }
         }
@@ -119,7 +119,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Syncing
         obj4 = channels(closure_2[11]);
         obj1.IconComponent = obj4.getChannelIconComponent(channels);
         obj.icon = closure_1_6(Icon, obj1);
-        obj.onPress = function onPress() { /* body not rendered: F150828 */ };
+        obj.onPress = function onPress() { /* body not rendered: F151169 */ };
         return closure_1_6(TableRow, obj, channels.id);
       }
     }
@@ -135,15 +135,15 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Syncing
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
   const applicationId = channels.applicationId;
-  let obj = channels(1502);
+  let obj = channels(1503);
   dependencyMap = obj.useNavigation();
-  let obj2 = channels(6847);
+  let obj2 = channels(6854);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let tmp5Result = null;
   const tmp = channels;
   if (0 !== channels.length) {
     let name;
-    const TableRowGroup = tmp(6267).TableRowGroup;
+    const TableRowGroup = tmp(6269).TableRowGroup;
     const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
@@ -309,7 +309,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
       tmp21 = tmp23;
     }
     const obj8 = { style: tmp15, spacing: arr(587).space.PX_24, children: tmp16 };
-    const Stack = tmp(5373).Stack;
+    const Stack = tmp(5374).Stack;
     const tmp20 = closure_6(Stack, obj8);
     cResult[13] = tmp15;
     cResult[14] = tmp16;

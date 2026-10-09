@@ -1,29 +1,50 @@
 // Module ID: 1891
 // Function ID: 1892
-// Dependencies: [19, 17, 21, 1645, 1849, 1860]
+// Dependencies: [19, 17, 21, 1850, 1646]
 // Exports: default
 
 // Module 1891
-import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import KeyboardControllerNative from "KeyboardControllerNative" /* 1645 */;
-import _mod1849 from "module_1849" /* 1849 */;
-import KeyboardAvoidingView from "KeyboardAvoidingView" /* 1860 */;
-import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-const Animated = react_native.Animated;
+let size;
+
+let Platform;
+let StyleSheet;
+let c3;
+const useMemo = react2.useMemo;
+({ Platform, StyleSheet, View: c3 } = react_native);
 const jsx = Fragment.jsx;
-let closure_3 = Animated.createAnimatedComponent(KeyboardControllerNative.KeyboardBackgroundView);
+const styles = StyleSheet.create({ absolute: { position: "absolute" }, stretch: { top: 0, bottom: 0, left: 0, right: 0 } });
 
-export default function _default(enabled) {
-  enabled = enabled.enabled;
-  let tmp = undefined === enabled;
-  const children = enabled.children;
-  if (!tmp) {
-    tmp = enabled;
+export default function _default(visible) {
+  let height;
+  let width;
+  visible = visible.visible;
+  const children = visible.children;
+  const obj = height(width[3]);
+  size = obj.useWindowDimensions();
+  height = size.height;
+  width = size.width;
+  let items = [height, width];
+  const items1 = [
+    useMemo(() => {
+      size = { height, width };
+      return size;
+    }, items)
+  ];
+  ({
+    collapsable: false,
+    style: useMemo(() => {
+      const items = [closure_1_5.absolute, undefined, closure_1_5.stretch];
+      return items;
+    }, items1),
+    children: visible
+  });
+  const RCTOverKeyboardView = height(width[4]).RCTOverKeyboardView;
+  if (visible) {
+    visible = children;
   }
-  const obj = _mod1849;
-  ({ style: { opacity: obj.useKeyboardAnimation().progress }, children });
-  const KeyboardStickyView = KeyboardAvoidingView.KeyboardStickyView;
-  return <KeyboardStickyView enabled={tmp}>{null}</KeyboardStickyView>;
+  return <RCTOverKeyboardView visible={visible}>{null}</RCTOverKeyboardView>;
 };

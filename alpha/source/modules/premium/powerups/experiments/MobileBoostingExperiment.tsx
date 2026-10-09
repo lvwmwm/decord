@@ -1,11 +1,11 @@
-// Module ID: 7116
-// Function ID: 7117
+// Module ID: 7121
+// Function ID: 7122
 // Name: MobileBoostingExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: getMobileBoostingEnabled, getRecommendedBoostCount, getShouldRemoveYearlyUpsell
 
-// Module 7116 (MobileBoostingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 7121 (MobileBoostingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-07-mobile-boosting-optimizations", kind: "user", defaultConfig: { enabled: false, removeYearlyUpsell: false, recommendedBoostCount: null }, variations: { 0: { enabled: false, removeYearlyUpsell: false, recommendedBoostCount: null }, 1: { enabled: true, removeYearlyUpsell: false, recommendedBoostCount: 2 }, 2: { enabled: true, removeYearlyUpsell: true, recommendedBoostCount: 2 }, 3: { enabled: true, removeYearlyUpsell: false, recommendedBoostCount: 3 }, 4: { enabled: true, removeYearlyUpsell: true, recommendedBoostCount: 3 } } };

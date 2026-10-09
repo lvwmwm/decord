@@ -1,18 +1,18 @@
-// Module ID: 12623
-// Function ID: 12624
+// Module ID: 12563
+// Function ID: 12564
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [19, 5971, 1085, 5972, 1095, 21, 558, 576, 12613, 1126, 6798, 10425, 6793, 12624, 2]
+// Dependencies: [19, 5973, 1085, 5974, 1095, 21, 558, 576, 12553, 1126, 6805, 10414, 6800, 12564, 2]
 
-// Module 12623 (NotificationSettingsMessageUnreadGuildActionSheet)
+// Module 12563 (NotificationSettingsMessageUnreadGuildActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10425 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 12624 */;
+import ReadStateConstants from "ReadStateConstants" /* 5974 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6805 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10414 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 12564 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp4;
-const NotificationSettingsUtils = tmp4(6793);
+const NotificationSettingsUtils = tmp4(6800);
 const UserNotificationSettings = Constants.UserNotificationSettings;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 let closure_6 = UserSettingsConstants.GuildNotificationSettingsFlags;

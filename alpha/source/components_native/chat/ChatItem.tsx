@@ -1,29 +1,29 @@
-// Module ID: 9308
-// Function ID: 9309
+// Module ID: 9346
+// Function ID: 9347
 // Name: ChatItem
-// Dependencies: [32, 109, 19, 17, 5079, 1085, 7720, 21, 587, 558, 576, 9309, 1101, 9310, 6084, 9311, 5090, 1381, 8239, 4778, 683, 5387, 2]
+// Dependencies: [32, 109, 19, 17, 5080, 1085, 7729, 21, 587, 558, 576, 9347, 1101, 9348, 6086, 9349, 5091, 1382, 8247, 4779, 683, 5388, 2]
 // Exports: default
 
-// Module 9308 (ChatItem)
+// Module 9346 (ChatItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
 import MessageTypes2 from "MessageTypes" /* 1101 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6084 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 9309 */;
-import MessageViewNativeComponent from "MessageViewNativeComponent" /* 9310 */;
-import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 9311 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6086 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 9347 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 9348 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 9349 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5079 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7720 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5080 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7729 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -31,7 +31,7 @@ let closure_12;
 let map1;
 let tmp;
 let unpackModuleId;
-const RowGeneratorTypes = tmp(8239);
+const RowGeneratorTypes = tmp(8247);
 let closure_3 = ["message"];
 let react = react_mod;
 const View = react_native.View;
@@ -64,7 +64,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
       const obj2 = {};
       const _default4 = AutoModerationSystemMessageViewNativeComponent.default;
       const merged = Object.assign(tmp5);
-      const tmp33 = closure_12(_default4, obj2);
+      const tmp33 = authStore2(_default4, obj2);
       cResult[3] = tmp5;
       cResult[4] = tmp33;
       tmp28 = tmp33;
@@ -80,7 +80,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
         const obj3 = {};
         const _default3 = MessageViewNativeComponent.default;
         const merged1 = Object.assign(tmp5);
-        const tmp27 = closure_12(_default3, obj3);
+        const tmp27 = authStore2(_default3, obj3);
         cResult[5] = tmp5;
         cResult[6] = tmp27;
         tmp22 = tmp27;
@@ -94,7 +94,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
         const obj4 = {};
         const _default2 = SystemMessageViewNativeComponent.default;
         const merged2 = Object.assign(tmp5);
-        const tmp21 = closure_12(_default2, obj4);
+        const tmp21 = authStore2(_default2, obj4);
         cResult[7] = tmp5;
         cResult[8] = tmp21;
         tmp16 = tmp21;
@@ -106,7 +106,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
       const obj5 = {};
       const _default = MessageViewNativeComponent.default;
       const merged3 = Object.assign(tmp5);
-      const tmp15 = closure_12(_default, obj5);
+      const tmp15 = authStore2(_default, obj5);
       cResult[9] = tmp5;
       cResult[10] = tmp15;
       tmp10 = tmp15;
@@ -123,14 +123,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
     const obj2 = {};
     const _default4 = AutoModerationSystemMessageViewNativeComponent.default;
     const merged1 = Object.assign(merged);
-    tmp3Result = closure_12(_default4, obj2);
+    tmp3Result = authStore2(_default4, obj2);
   } else {
     const AUTOMOD_INCIDENT_ACTIONS = MessageTypes2.MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       const obj3 = {};
       const _default3 = MessageViewNativeComponent.default;
       const merged2 = Object.assign(merged);
-      tmp3Result = closure_12(_default3, obj3);
+      tmp3Result = authStore2(_default3, obj3);
     } else if (isSystemMessageDefault(message)) {
       const obj4 = {};
       const _default2 = SystemMessageViewNativeComponent.default;

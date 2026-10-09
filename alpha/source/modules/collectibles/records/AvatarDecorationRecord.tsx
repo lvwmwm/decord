@@ -1,12 +1,12 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 7262
+// Function ID: 7263
 // Name: AvatarDecorationRecord
-// Dependencies: [1991, 1992, 2]
+// Dependencies: [1992, 1993, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 7257 (AvatarDecorationRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1991 */;
+// Module 7262 (AvatarDecorationRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1992 */;
 import size from "module_2" /* 2 */;
 
 class AvatarDecorationRecord extends BaseCollectiblesItemRecord {

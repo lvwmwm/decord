@@ -1,12 +1,12 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 14074
+// Function ID: 14075
 // Name: GuildBadgeLeaf
-// Dependencies: [109, 19, 21, 558, 576, 13970, 7550, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14067, 7559, 2]
 
-// Module 13977 (GuildBadgeLeaf)
+// Module 14074 (GuildBadgeLeaf)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7550 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13970 */;
+import inlineStyles from "inlineStyles" /* 7559 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14067 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeLe
     }
   }
   const obj9 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(7550).Svg;
+  const Svg = tmp(7559).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp19, tmp22, tmp25, tmp28, tmp31, tmp34, tmp35, tmp39, tmp42, tmp45];
   const tmp50 = hasOwnProperty(Svg, obj9);

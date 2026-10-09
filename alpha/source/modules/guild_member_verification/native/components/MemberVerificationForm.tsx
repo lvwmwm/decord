@@ -1,26 +1,26 @@
-// Module ID: 6173
-// Function ID: 6174
+// Module ID: 6175
+// Function ID: 6176
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6153, 1085, 21, 5090, 4766, 1126, 5007, 558, 576, 6155, 4902, 6174, 504, 6175, 6127, 6176, 6613, 5375, 2]
+// Dependencies: [5, 32, 19, 17, 6155, 1085, 21, 5091, 4768, 1126, 5008, 558, 576, 6157, 4903, 6176, 504, 6177, 6129, 6178, 6620, 5376, 2]
 // Exports: default
 
-// Module 6173 (MemberVerificationForm)
+// Module 6175 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4902 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6153 */;
-import useInitialValueDefault from "useInitialValue" /* 6174 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4903 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6155 */;
+import useInitialValueDefault from "useInitialValue" /* 6176 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const MemberVerificationFormStore = MemberVerificationFormStore2;
-let _require, c5, c6, importDefault, version;
+let _require, c5, c6, importDefault;
 
 let c10;
 let unpackModuleId;
@@ -50,7 +50,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReq
     if (tmp4 === phone) {
       tmp7 = cResult[2];
     }
-    return initialVerification(6174)(tmp7);
+    return initialVerification(6176)(tmp7);
   }
   cResult[0] = id.verificationLevel;
   let phone1;
@@ -470,7 +470,7 @@ export default function MemberVerificationForm(guild) {
             if (body != null) {
               body = body.body;
             }
-            version = undefined;
+            let version;
             const tmp19 = closure_130_9;
             if (body != null) {
               const errors = body.errors;

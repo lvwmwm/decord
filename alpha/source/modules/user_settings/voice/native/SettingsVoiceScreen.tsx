@@ -1,25 +1,26 @@
-// Module ID: 15342
-// Function ID: 15343
+// Module ID: 15455
+// Function ID: 15456
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2011, 7966, 1085, 21, 2127, 5090, 558, 576, 4991, 4929, 10880, 10881, 1126, 6326, 10879, 5086, 10876, 11262, 14775, 2]
+// Dependencies: [19, 17, 2012, 7974, 1085, 21, 2127, 5091, 558, 576, 4992, 4930, 11053, 11054, 1126, 6163, 6333, 11052, 5087, 11049, 10629, 14883, 2]
 
-// Module 15342 (SettingsVoiceScreen)
+// Module 15455 (SettingsVoiceScreen)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl10 from "intl" /* 1126 */;
-import shared from "shared" /* 4929 */;
-import useThemeDefault from "useTheme" /* 4991 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10876 */;
-import KrispLogo2 from "KrispLogo" /* 10879 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
-import SettingLayoutDefault from "SettingLayout" /* 14775 */;
+import shared from "shared" /* 4930 */;
+import useThemeDefault from "useTheme" /* 4992 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11049 */;
+import KrispLogo2 from "KrispLogo" /* 11052 */;
+import SettingLayoutDefault from "SettingLayout" /* 14883 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import Fragment from "Fragment" /* 21 */;
 import HelpdeskUtils from "HelpdeskUtils" /* 2127 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,9 +28,7 @@ let mediaEngine;
 
 let c10;
 let c9;
-let closure_4;
-let hasOwnProperty;
-let unpackModuleId;
+let metroImportAll;
 function getVoiceSettings() {
   let BPbGq7;
   let format;
@@ -80,10 +79,10 @@ function getVoiceSettings() {
   intl6 = intl10.intl;
   items4 = [MobileUserSettings.ANDROID_MOBILE_OVERLAY];
   items1[3] = obj7;
-  const obj8 = { settings: items5, subLabel: authStore(unpackModuleId, obj9) };
+  const obj8 = { settings: items5, subLabel: React4(authStore, obj9) };
   items5 = [MobileUserSettings.NOISE_SUPPRESSION_KRISP];
   obj9 = { children: items6 };
-  items6 = [React4(closure_15, {}), React4(closure_14, {})];
+  items6 = [metroImportAll(closure_14, {}), metroImportAll(closure_13, {})];
   items1[4] = obj8;
   const obj10 = { label: intl7.string(intl10.t.t8Qhib), settings: items7 };
   intl7 = intl10.intl;
@@ -103,14 +102,14 @@ function getVoiceSettings() {
   items1[8] = obj13;
   return items1;
 }
-({ View: closure_4, Image: hasOwnProperty } = react_native);
+const View = react_native.View;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const HelpdeskArticles = Constants.HelpdeskArticles;
-({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
+({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
 const guideURL = "" + HelpdeskUtils.getArticleURL(HelpdeskArticles.VOICE_VIDEO_TROUBLESHOOTING) + "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm";
-let closure_13 = createStyles.createStyles({ krisp: { marginTop: 8, flexDirection: "row", alignItems: "center" }, logo: { marginRight: 8, height: 30, width: 67 } });
+let closure_12 = createStyles.createStyles({ krisp: { marginTop: 8, flexDirection: "row", alignItems: "center" }, logo: { marginRight: 8, height: 30, width: 67 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() {
   let Text;
   let first;
   let intl3;
@@ -121,13 +120,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   let tmp5Result;
   const obj = react2;
   const cResult = obj.c(9);
-  const tmp4 = closure_13();
+  const tmp4 = closure_12();
   const tmp6 = useThemeDefault();
   const obj2 = shared;
   if (obj2.isThemeLight(tmp6)) {
-    tmp5Result = tmp5(10880);
+    tmp5Result = tmp5(11053);
   } else {
-    tmp5Result = tmp5(10881);
+    tmp5Result = tmp5(11054);
   }
   ({ krisp, logo } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -156,12 +155,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
     }
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp12, onPress: KrispLogo2.handleKrispLinkPressed, children: React4(Text, obj4) };
-      const LegacyPressable = tmp(6326).LegacyPressable;
+      const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp12, onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj4) };
+      const LegacyPressable = tmp(6333).LegacyPressable;
       obj4 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
-      Text = tmp(5086).Text;
+      Text = tmp(5087).Text;
       intl3 = tmp(1126).intl;
-      const tmp16 = React4(LegacyPressable, obj3);
+      const tmp16 = metroImportAll(LegacyPressable, obj3);
       cResult[5] = tmp16;
       tmp14 = tmp16;
     } else {
@@ -176,13 +175,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
     }
     const obj5 = { style: krisp, children: items };
     items = [tmp10, tmp14];
-    const tmp20 = authStore(React3, obj5);
+    const tmp20 = React4(View, obj5);
     cResult[6] = tmp4.krisp;
     cResult[7] = tmp10;
     cResult[8] = tmp20;
     tmp17 = tmp20;
   }
-  const tmp11 = React4(hasOwnProperty, { style: logo, source: tmp5Result, accessibilityLabel: first });
+  const tmp11 = metroImportAll(FastImageDefault, { style: logo, source: tmp5Result, accessibilityLabel: first });
   cResult[1] = tmp5Result;
   cResult[2] = tmp4.logo;
   cResult[3] = tmp11;
@@ -195,29 +194,30 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   let items;
   let obj5;
   let tmp2Result;
-  const tmp = closure_13();
+  const tmp = closure_12();
   const tmp4 = useThemeDefault();
   const obj = shared;
   if (obj.isThemeLight(tmp4)) {
-    tmp2Result = tmp2(10880);
+    tmp2Result = tmp2(11053);
   } else {
-    tmp2Result = tmp2(10881);
+    tmp2Result = tmp2(11054);
   }
   const obj2 = { style: tmp.krisp, children: items };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: intl.string(intl10.t.vFiCSx) };
+  const tmp2Result2 = FastImageDefault;
   intl = tmp5(1126).intl;
-  items = [React4(hasOwnProperty, obj3), ];
-  const obj4 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl10.t.hvVgAZ), onPress: KrispLogo2.handleKrispLinkPressed, children: React4(Text, obj5) };
-  const LegacyPressable = tmp5(6326).LegacyPressable;
+  items = [metroImportAll(tmp2Result2, obj3), ];
+  const obj4 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl10.t.hvVgAZ), onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj5) };
+  const LegacyPressable = tmp5(6333).LegacyPressable;
   intl2 = tmp5(1126).intl;
   obj5 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
-  Text = tmp5(5086).Text;
+  Text = tmp5(5087).Text;
   intl3 = tmp5(1126).intl;
-  items[1] = React4(LegacyPressable, obj4);
-  return authStore(React3, obj2);
+  items[1] = metroImportAll(LegacyPressable, obj4);
+  return React4(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SystemProcessingSubLabel() {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function SystemProcessingSubLabel() {
   let intl;
   let obj4;
   let tmp5;
@@ -229,7 +229,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
     let tmp6 = null;
     if (noiseCancellationDeferredToSystem) {
       const obj3 = { variant: "text-sm/medium", children: intl.format(intl10.t.EUNgko, obj4) };
-      const Text = tmp(5086).Text;
+      const Text = tmp(5087).Text;
       intl = tmp(1126).intl;
       obj4 = {
         onSettingsClick() {
@@ -237,7 +237,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
               const result = mediaEngine.showSystemCaptureConfigurationUI("microphone_modes");
             }
       };
-      tmp6 = React4(Text, obj3);
+      tmp6 = metroImportAll(Text, obj3);
     }
     cResult[0] = noiseCancellationDeferredToSystem;
     cResult[1] = tmp6;
@@ -253,7 +253,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
   const obj = NoiseCancellationUtils;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     const obj2 = { variant: "text-sm/medium", children: intl.format(intl10.t.EUNgko, obj3) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
     obj3 = {
       onSettingsClick() {
@@ -261,19 +261,19 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
           const result = mediaEngine.showSystemCaptureConfigurationUI("microphone_modes");
         }
     };
-    tmp3 = React4(Text, obj2);
+    tmp3 = metroImportAll(Text, obj2);
   }
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsVoiceScreen() {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsVoiceScreen() {
   let first;
   let tmp8;
   const obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getVoiceSettings() };
-    const createList = tmp(11262).createList;
+    const createList = tmp(10629).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;
@@ -283,7 +283,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsVoic
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { node: first };
-    const tmp11 = React4(SettingLayoutDefault, obj3);
+    const tmp11 = metroImportAll(SettingLayoutDefault, obj3);
     cResult[1] = tmp11;
     tmp8 = tmp11;
   } else {
@@ -296,8 +296,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsVoic
     const obj2 = { sections: getVoiceSettings() };
     return obj.createList(obj2);
   }, []);
-  return React4(SettingLayoutDefault, { node });
+  return metroImportAll(SettingLayoutDefault, { node });
 });
 let result = size.fileFinishedImporting("modules/user_settings/voice/native/SettingsVoiceScreen.tsx");
 
-export default tmp4;
+export default tmp3;

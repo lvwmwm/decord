@@ -1,22 +1,22 @@
-// Module ID: 9711
-// Function ID: 9712
+// Module ID: 9730
+// Function ID: 9731
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 2086, 1389, 9712, 1085, 1241, 558, 576, 9709, 504, 9468, 5746, 9713, 9714, 9715, 1628, 2]
+// Dependencies: [19, 17, 2086, 1390, 9731, 1085, 1241, 558, 576, 9728, 504, 9506, 5747, 9732, 9733, 9734, 1629, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker
 
-// Module 9711 (stickers/StickersUtils)
+// Module 9730 (stickers/StickersUtils)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import StickersTypes from "StickersTypes" /* 5746 */;
-import StickerPickerStore from "StickerPickerStore" /* 9712 */;
-import StickerCategoryUtils from "StickerCategoryUtils" /* 9713 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9714 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9715 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import StickersTypes from "StickersTypes" /* 5747 */;
+import StickerPickerStore from "StickerPickerStore" /* 9731 */;
+import StickerCategoryUtils from "StickerCategoryUtils" /* 9732 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9733 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9734 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerCa
     tmp9 = cResult[2];
   }
   dependencyMap = tmp9;
-  const tmpResult2 = tmp(9468);
+  const tmpResult2 = tmp(9506);
   const mobileStickerPickerUpsellRestyleEnabled = tmpResult2.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
   if (cResult[3] === arg0) {
     if (cResult[4] === stickerPackCategories) {

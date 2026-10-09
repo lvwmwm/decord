@@ -1,14 +1,14 @@
-// Module ID: 6730
-// Function ID: 6731
+// Module ID: 6737
+// Function ID: 6738
 // Name: SearchField
-// Dependencies: [109, 19, 21, 558, 576, 1126, 6287, 6731, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1126, 6294, 6738, 2]
 
-// Module 6730 (SearchField)
+// Module 6737 (SearchField)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import TextField2 from "TextField" /* 6287 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6731 */;
+import TextField2 from "TextField" /* 6294 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6738 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchFiel
     }
     return tmp11;
   }
-  const TextField = tmp(6287).TextField;
+  const TextField = tmp(6294).TextField;
   const merged = Object.assign(tmp4);
   const tmp13 = <TextField placeholder={tmp9} returnKeyType="search" ref={tmp5} autoCorrect={false} autoCapitalize="none" accessibilityRole="search" leadingIcon={MagnifyingGlassIcon.MagnifyingGlassIcon} clearable />;
   cResult[4] = tmp4;

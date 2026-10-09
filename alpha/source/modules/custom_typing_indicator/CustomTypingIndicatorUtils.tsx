@@ -1,23 +1,23 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11595
+// Function ID: 11596
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [5992, 8260, 2063, 5968, 1389, 1085, 1392, 1397, 3829, 4721, 4725, 1410, 1097, 4712, 558, 576, 504, 2]
+// Dependencies: [5994, 8268, 2064, 5970, 1390, 1085, 1393, 1398, 3829, 4723, 4727, 1411, 1097, 4714, 558, 576, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis
 
-// Module 11659 (CustomTypingIndicatorUtils)
+// Module 11595 (CustomTypingIndicatorUtils)
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import user2 from "user" /* 1397 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1410 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import user2 from "user" /* 1398 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1411 */;
 import _modDef3829 from "module_3829" /* 3829 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4721 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8260 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import SortedGuildStore from "SortedGuildStore" /* 5968 */;
-import UserStore from "UserStore" /* 1389 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4714 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4723 */;
+import EmojiStore from "EmojiStore" /* 5994 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8268 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import SortedGuildStore from "SortedGuildStore" /* 5970 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

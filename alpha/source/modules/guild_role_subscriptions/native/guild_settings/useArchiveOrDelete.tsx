@@ -1,12 +1,12 @@
-// Module ID: 18265
-// Function ID: 18266
+// Module ID: 18427
+// Function ID: 18428
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 558, 576, 15307, 15322, 1126, 5298, 1200, 38, 4765, 2]
+// Dependencies: [5, 32, 19, 558, 576, 15420, 15435, 1126, 5299, 1200, 38, 4767, 2]
 
-// Module 18265 (useArchiveOrDelete)
+// Module 18427 (useArchiveOrDelete)
 import intl13 from "intl" /* 1126 */;
-import ToastUtilsAll from "ToastUtils" /* 4765 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15322 */;
+import ToastUtilsAll from "ToastUtils" /* 4767 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15435 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -14,7 +14,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c2, closure_12, dependencyMap, importAll;
+let _require, c1, c2, dependencyMap, importAll;
 
 let metroImportDefault;
 let metroRequire;
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
   }
   let tmp9 = true === archived;
   let closure_11 = tmp9;
-  closure_12 = tmp10;
+  let closure_12 = tmp10;
   if (error == null) {
     error = error2;
   }
@@ -610,7 +610,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
   }
   let closure_11 = tmp8;
   let tmp9 = undefined === subscriptionListing;
-  closure_12 = tmp9;
+  let closure_12 = tmp9;
   if (error == null) {
     error = error2;
   }

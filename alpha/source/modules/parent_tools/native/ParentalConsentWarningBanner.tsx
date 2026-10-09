@@ -1,21 +1,21 @@
-// Module ID: 17723
-// Function ID: 17724
+// Module ID: 17875
+// Function ID: 17876
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7248, 1085, 21, 587, 5090, 558, 576, 1630, 14951, 14950, 17724, 10813, 4778, 7262, 1264, 7249, 7084, 5086, 5387, 1126, 2565, 2]
+// Dependencies: [19, 17, 7253, 1085, 21, 587, 5091, 558, 576, 1631, 15063, 15062, 17876, 10983, 4779, 7267, 1265, 7254, 7087, 5087, 5388, 1126, 2565, 2]
 
-// Module 17723 (ParentalConsentWarningBanner)
+// Module 17875 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import openUserSettings from "openUserSettings" /* 7084 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7248 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7249 */;
-import _modDef7262 from "module_7262" /* 7262 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import openUserSettings from "openUserSettings" /* 7087 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7253 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7254 */;
+import _modDef7267 from "module_7267" /* 7267 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   children = children.children;
   const tmp4 = closure_16();
   _require = tmp4;
-  const tmp6 = daysRemaining(1630)();
+  const tmp6 = daysRemaining(1631)();
   let obj2 = require("useParentalConsentWarning");
   const parentalConsentWarning = obj2.useParentalConsentWarning();
   let obj3 = require("useIsParentalConsentBannerActive");
@@ -74,7 +74,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   const obj6 = require("useToken");
   const token = obj6.useToken(daysRemaining(587).colors.BACKGROUND_FEEDBACK_WARNING);
   if (cResult[0] !== token) {
-    const obj7 = daysRemaining(7262)(token);
+    const obj7 = daysRemaining(7267)(token);
     const setAlphaResult = obj7.setAlpha(0);
     const toRgbStringResult = setAlphaResult.toRgbString();
     cResult[0] = token;
@@ -208,14 +208,14 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
           tmp30[0] = items1;
           const obj10 = { pointerEvents: "none", style: StyleSheet.absoluteFill, colors: tmp13, locations, start: null, end: null };
           ({ START: obj12.start, END: obj12.end } = closure_10);
-          const items2 = [closure_11(daysRemaining(5387), obj10), ];
+          const items2 = [closure_11(daysRemaining(5388), obj10), ];
           const obj11 = { accessibilityRole: "button", accessibilityHint: intl.string(daysRemaining(2565).O2HKdA), onPress: tmp19, style: items3, children: closure_11(Text, obj14) };
           intl = tmp(1126).intl;
           items3 = [tmp4.pressable, ];
           const obj13 = { paddingTop: tmp6.top + 8 };
           items3[1] = obj13;
           obj14 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp4.label, children: formatResult };
-          Text = tmp(5086).Text;
+          Text = tmp(5087).Text;
           const tmp28 = closure_12;
           const tmp29 = View;
           const tmp35 = closure_4;
@@ -295,7 +295,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentalCo
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7262(token);
+    const obj = _modDef7267(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;

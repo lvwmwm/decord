@@ -1,16 +1,107 @@
 // Module ID: 7573
 // Function ID: 7574
-// Dependencies: [26, 106, 65]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7567, 7574, 7581, 7582, 7583]
 
 // Module 7573
-import _mod26 from "module_26" /* 26 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import Fragment from "Fragment" /* 21 */;
+import extractProps from "extractProps" /* 7574 */;
+import extractText from "extractText" /* 7581 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 7583 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
 
-let obj2;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGGroup", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: obj2 };
-obj2 = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
+const extractPropsDefault = extractProps;
+let root;
 
-export default module_65.get("RNSVGGroup", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+let tmp4;
+const _modDef7582 = tmp4(7582);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const jsx = Fragment.jsx;
+class G {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    let tmp = _classCallCheck(this, G);
+    const items1 = [...items];
+    const obj = _getPrototypeOf(G);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.setNativeProps = (matrix) => {
+      const tmp = !matrix.matrix && closure_2_1(closure_2_2[7])(matrix);
+      if (tmp) {
+        matrix.matrix = tmp;
+      }
+      root = root.root;
+      if (root != null) {
+        root.setNativeProps(matrix);
+      }
+    };
+    return tmp3Result;
+  }
+}
+_inherits(G, multiplyMatricesDefault);
+const entry = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const props = this.props;
+    const obj = extractProps;
+    const propsAndStylesResult = obj.propsAndStyles(props);
+    const tmp5 = extractPropsDefault(propsAndStylesResult, this);
+    const obj2 = extractText;
+    const extractFontResult = obj2.extractFont(propsAndStylesResult);
+    if (typeof hasProps === "function") {
+      const keys = Object.keys();
+      if (keys !== undefined) {
+        let flag = true;
+        if (flag) {
+          tmp5.font = extractFontResult;
+        }
+        _modDef7582;
+        const merged = Object.assign(tmp5);
+        return <tmp4Result ref={function ref(arg0) {
+          return self.refMethod(arg0);
+        }}>{props.children}</tmp4Result>;
+      }
+      flag = false;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+};
+let items = [entry];
+const importDefaultResultResult = _createClass(G, items);
+importDefaultResultResult.displayName = "G";
+function hasProps(arg0) {
+
+}
+
+export default importDefaultResultResult;

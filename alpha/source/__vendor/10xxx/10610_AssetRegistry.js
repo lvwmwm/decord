@@ -1,0 +1,10 @@
+// Module ID: 10610
+// Function ID: 10611
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 10610 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 200, height: 104, scales: [1, 2, 3], hash: "47b8d830403152e049ae36d361c38751", name: "img_invalid_link_dark", type: "png" });

@@ -1,25 +1,25 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15226
+// Function ID: 15227
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 15092, 21, 1382, 9544, 587, 4810, 5387, 683, 5090, 15117, 558, 576, 15118, 4778, 5091, 5094, 15102, 15119, 15129, 6164, 1126, 15130, 15132, 15133, 11189, 2]
+// Dependencies: [32, 19, 17, 15202, 21, 1383, 9157, 587, 4811, 5388, 683, 5091, 15227, 558, 576, 15228, 4779, 5092, 5095, 15212, 15229, 15239, 6163, 1126, 15240, 15242, 15243, 12730, 2]
 
-// Module 15116 (BountyVideo)
+// Module 15226 (BountyVideo)
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 5091 */;
-import timingPresets from "timingPresets" /* 5094 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import AssetUtils from "AssetUtils" /* 9544 */;
-import BountiesModalProgress from "BountiesModalProgress" /* 15117 */;
-import pickBountyVideoRendition from "pickBountyVideoRendition" /* 15118 */;
+import timing from "timing" /* 5092 */;
+import timingPresets from "timingPresets" /* 5095 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import AssetUtils from "AssetUtils" /* 9157 */;
+import BountiesModalProgress from "BountiesModalProgress" /* 15227 */;
+import pickBountyVideoRendition from "pickBountyVideoRendition" /* 15228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 15092 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 15202 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
 import module_683_mod from "module_683" /* 683 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -83,6 +83,7 @@ const __initData8 = { code: "function BountyVideoTsx8(){const{videoEndPeekProgre
 const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVideo(height) {
   let balanceWidgetPillResetKey;
   let bounty;
+  let closure_12;
   let closure_6;
   let closure_7;
   let closure_9;

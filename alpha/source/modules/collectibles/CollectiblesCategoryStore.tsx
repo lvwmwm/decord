@@ -1,23 +1,23 @@
-// Module ID: 7252
-// Function ID: 7253
+// Module ID: 7257
+// Function ID: 7258
 // Name: CollectiblesCategoryStore
-// Dependencies: [2128, 7253, 1102, 569, 584, 12, 7264, 504, 2]
+// Dependencies: [2128, 7258, 1102, 569, 584, 12, 7269, 504, 2]
 
-// Module 7252 (CollectiblesCategoryStore)
+// Module 7257 (CollectiblesCategoryStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7264 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7269 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7253 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7258 */;
 import size from "module_2" /* 2 */;
 
-let closure_13, closure_14, closure_9;
+let closure_12, closure_13, closure_14, closure_9;
 
 function updateCategoriesAndProducts(map) {
-  const f95432 = (storeListingId) => {
+  const f95640 = (storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   };
@@ -42,8 +42,8 @@ function updateCategoriesAndProducts(map) {
   closure_9 = map1;
   const obj2 = CollectiblesUtils;
   const productsFromCategories1 = obj2.getProductsFromCategories(closure_14, false);
-  closure_11 = [...new Map(productsFromCategories1.map(f95432)).values()];
-  map2 = new Map(productsFromCategories1.map(f95432));
+  closure_11 = [...new Map(productsFromCategories1.map(f95640)).values()];
+  map2 = new Map(productsFromCategories1.map(f95640));
 }
 function reset() {
   closure_14 = map;
@@ -66,9 +66,9 @@ let map1 = new Map();
 let map2 = new Map();
 const React4 = map1;
 let closure_11 = [];
-let closure_12 = {};
+const authStore2 = {};
 map1 = {};
-const authStore2 = map;
+const authStore3 = map;
 map = new Map();
 let c16 = false;
 let error;

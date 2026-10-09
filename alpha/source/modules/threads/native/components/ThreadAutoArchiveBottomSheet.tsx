@@ -1,12 +1,12 @@
-// Module ID: 17296
-// Function ID: 17297
+// Module ID: 17444
+// Function ID: 17445
 // Name: ThreadAutoArchiveBottomSheet
-// Dependencies: [19, 2070, 21, 558, 576, 9200, 6265, 1126, 6264, 2]
+// Dependencies: [19, 2071, 21, 558, 576, 9234, 6267, 1126, 6266, 2]
 
-// Module 17296 (ThreadAutoArchiveBottomSheet)
+// Module 17444 (ThreadAutoArchiveBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
-import TableRadioRow from "TableRadioRow" /* 6264 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
+import TableRadioRow from "TableRadioRow" /* 6266 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -96,7 +96,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp11 = cResult[14];
   }
   _require = tmp11;
-  const TableRadioGroup = tmp(6265).TableRadioGroup;
+  const TableRadioGroup = tmp(6267).TableRadioGroup;
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t.H4mGfI);
@@ -157,7 +157,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const autoArchiveOptions = obj.getAutoArchiveOptions();
   _require = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
   const hasFlagResult = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
-  const TableRadioGroup = tmp(6265).TableRadioGroup;
+  const TableRadioGroup = tmp(6267).TableRadioGroup;
   const intl = tmp(1126).intl;
   return <TableRadioGroup value={selected} title={title} description={description} accessibilityLabel={intl.string(require("intl").t.H4mGfI)} onChange={onSelectDuration} hasIcons={false}>{autoArchiveOptions.map((value) => jsx(TableRadioRow.TableRadioRow, { value: value.value, disabled, label: value.label }, value.value))}</TableRadioGroup>;
 }));

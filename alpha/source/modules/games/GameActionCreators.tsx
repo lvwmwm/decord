@@ -1,16 +1,16 @@
-// Module ID: 6996
-// Function ID: 6997
+// Module ID: 7003
+// Function ID: 7004
 // Name: GameActionCreators
-// Dependencies: [5, 2019, 1085, 1294, 584, 2058, 12, 2]
+// Dependencies: [5, 2020, 1085, 1295, 584, 2059, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 6996 (GameActionCreators)
+// Module 7003 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import Timers from "Timers" /* 2058 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import Timers from "Timers" /* 2059 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameStore from "GameStore" /* 2019 */;
+import GameStore from "GameStore" /* 2020 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

@@ -1,22 +1,22 @@
-// Module ID: 15641
-// Function ID: 15642
+// Module ID: 15754
+// Function ID: 15755
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1085, 21, 570, 1271, 558, 576, 1380, 1130, 1164, 1126, 1381, 1294, 4766, 5012, 11262, 15642, 14927, 2]
+// Dependencies: [5, 17, 1085, 21, 570, 1272, 558, 576, 1381, 1130, 1164, 1126, 1382, 1295, 4768, 5013, 10629, 15755, 15039, 2]
 
-// Module 15641 (UploadIntlDataSetting)
+// Module 15754 (UploadIntlDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
 import AssetRegistry from "AssetRegistry" /* 1164 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14927 */;
-import FileUpIcon from "FileUpIcon" /* 15642 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15039 */;
+import FileUpIcon from "FileUpIcon" /* 15755 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

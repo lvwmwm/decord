@@ -1,27 +1,27 @@
-// Module ID: 6724
-// Function ID: 6725
+// Module ID: 6731
+// Function ID: 6732
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 6615, 2057, 1389, 1085, 1096, 21, 5090, 587, 504, 6274, 6725, 5631, 5086, 1126, 6726, 6636, 5940, 6727, 1999, 5375, 5298, 6757, 2]
+// Dependencies: [5, 32, 19, 17, 6622, 2058, 1390, 1085, 1096, 21, 5091, 587, 504, 6279, 6732, 5632, 5087, 1126, 6733, 6643, 5941, 6734, 2000, 5376, 5299, 6764, 2]
 // Exports: default
 
-// Module 6724 (AddPhone)
+// Module 6731 (AddPhone)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PhoneStore from "PhoneStore" /* 6615 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2057 */;
-import UserStore from "UserStore" /* 1389 */;
+import PhoneStore from "PhoneStore" /* 6622 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2058 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c4, c5, closure_12, closure_2;
+let c4, c5, closure_2;
 
 let closure_14;
 let map1;
@@ -66,7 +66,7 @@ export default function AddPhone(reason) {
   let action;
   let currentUser;
   let ref;
-  closure_12 = undefined;
+  let closure_12;
   let obj = function _handleSubmit() {
     obj = _asyncToGenerator(async function(arg0, value) {
       let closure_1;

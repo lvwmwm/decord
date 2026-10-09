@@ -1,18 +1,18 @@
-// Module ID: 1378
-// Function ID: 1379
+// Module ID: 1379
+// Function ID: 1380
 // Name: BuildOverrideUtils
-// Dependencies: [1379, 1085, 1380, 1381, 1383, 1294, 1385, 1388, 2]
+// Dependencies: [1380, 1085, 1381, 1382, 1384, 1295, 1386, 1389, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
-// Module 1378 (BuildOverrideUtils)
+// Module 1379 (BuildOverrideUtils)
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import BuildOverrideConstants from "BuildOverrideConstants" /* 1379 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import urlParseAll from "urlParse" /* 1385 */;
-import _modDef1388 from "module_1388" /* 1388 */;
-import react_native_mod from "react-native" /* 1380 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import BuildOverrideConstants from "BuildOverrideConstants" /* 1380 */;
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import urlParseAll from "urlParse" /* 1386 */;
+import _modDef1389 from "module_1389" /* 1389 */;
+import react_native_mod from "react-native" /* 1381 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 let Version;
@@ -132,7 +132,7 @@ export const getBuildOverrideExperiments = function getBuildOverrideExperiments(
   try {
     let obj2;
     const _window = window;
-    const obj = _modDef1388;
+    const obj = _modDef1389;
     const tmp5 = obj.parse(window.document.cookie)[closure_4];
     if (null == tmp5) {
       obj2 = {};

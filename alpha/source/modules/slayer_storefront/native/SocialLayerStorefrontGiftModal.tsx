@@ -1,16 +1,16 @@
-// Module ID: 10163
-// Function ID: 10164
+// Module ID: 10148
+// Function ID: 10149
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 6092, 1085, 21, 558, 576, 504, 6865, 6841, 1381, 9332, 1264, 10141, 5392, 4739, 1126, 10164, 10165, 10166, 10168, 10161, 10148, 2]
+// Dependencies: [19, 6094, 1085, 21, 558, 576, 504, 6872, 6848, 1382, 9370, 1265, 10126, 5393, 4741, 1126, 10149, 10150, 10151, 10153, 10146, 10133, 2]
 
-// Module 10163 (SocialLayerStorefrontGiftModal)
+// Module 10148 (SocialLayerStorefrontGiftModal)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10141 */;
-import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 10165 */;
-import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 10166 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10126 */;
+import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 10150 */;
+import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 10151 */;
 import react from "react" /* 19 */;
-import SKUStore from "SKUStore" /* 6092 */;
+import SKUStore from "SKUStore" /* 6094 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

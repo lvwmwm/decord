@@ -1,70 +1,78 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 14915
+// Function ID: 14916
 // Name: TinyBroncoPromoSheet
-// Dependencies: [19, 17, 5933, 1085, 2060, 21, 5090, 587, 558, 576, 5905, 14808, 5054, 14806, 7492, 5915, 2127, 7084, 1126, 3149, 14809, 5375, 5963, 10303, 2]
+// Dependencies: [19, 5934, 1085, 2061, 21, 5091, 587, 558, 576, 5906, 14916, 5055, 14914, 7497, 5916, 2127, 7087, 1126, 3149, 6163, 14917, 5376, 5965, 10290, 2]
 
-// Module 14807 (TinyBroncoPromoSheet)
-import react_native from "react-native" /* 17 */;
+// Module 14915 (TinyBroncoPromoSheet)
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
 import _modDef3149 from "module_3149" /* 3149 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5915 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 5933 */;
-import openUserSettings from "openUserSettings" /* 7084 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7492 */;
-import openTinyBroncoPromoSheet from "openTinyBroncoPromoSheet" /* 14806 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5916 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 5934 */;
+import openUserSettings from "openUserSettings" /* 7087 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7497 */;
+import openTinyBroncoPromoSheet from "openTinyBroncoPromoSheet" /* 14914 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c10;
 let c9;
-let metroImportDefault;
+let hasOwnProperty;
+let metroImportAll;
 let metroRequire;
 let size;
-const Image = react_native.Image;
 const TINY_BRONCO_BLOG_URL = TinyBroncoConstants.TINY_BRONCO_BLOG_URL;
-({ HelpdeskArticles: metroRequire, UserSettingsSections: metroImportDefault } = Constants);
+({ HelpdeskArticles: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-({ jsx: c9, jsxs: c10 } = Fragment);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { illustration: size, actions: { paddingVertical: 0 } };
 size = { width: 198, height: 132, marginTop: nativeDefault.space.PX_16 };
-let closure_11 = createStyles.createStyles(obj);
+let closure_10 = createStyles.createStyles(obj);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBroncoPromoSheet(markAsDismissed) {
   let dismissOnce;
-  let tmp16;
+  let tmp15;
   let obj = dismissOnce(576);
   const cResult = obj.c(36);
   markAsDismissed = markAsDismissed.markAsDismissed;
-  closure_11();
-  let obj2 = dismissOnce(5905);
+  closure_10();
+  let obj2 = dismissOnce(5906);
   const isVerifiedTeen = obj2.useIsVerifiedTeen();
-  let obj3 = dismissOnce(14808);
+  let obj3 = dismissOnce(14916);
   const tmp = dismissOnce;
   dismissOnce = obj3.useDismissOnce(markAsDismissed);
   if (cResult[0] !== dismissOnce) {
-    const fn = function s() {
+    const fn = function o() {
       dismissOnce(ContentDismissActionType.USER_DISMISS);
     };
     cResult[0] = dismissOnce;
     cResult[1] = fn;
   }
   if (cResult[2] !== dismissOnce) {
-    const fn2 = function h() {
-      dismissOnce(ContentDismissActionType.USER_DISMISS);
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
-    };
+    class R {
+      constructor() {
+        dismissOnce(ContentDismissActionType.USER_DISMISS);
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
+      }
+    }
     cResult[2] = dismissOnce;
-    cResult[3] = fn2;
+    cResult[3] = R;
+  } else {
+    class R {
+      constructor() {
+        dismissOnce(ContentDismissActionType.USER_DISMISS);
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
+      }
+    }
   }
   if (cResult[4] !== dismissOnce) {
-    class I {
+    class N {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
@@ -75,9 +83,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
       }
     }
     cResult[4] = dismissOnce;
-    cResult[5] = I;
+    cResult[5] = N;
   } else {
-    class I {
+    class N {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
@@ -89,7 +97,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
     }
   }
   if (cResult[6] !== dismissOnce) {
-    class B {
+    class C {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
@@ -97,13 +105,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
         const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
         AgeVerificationActionCreatorsDefault;
         const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        openUrl(obj2.getArticleURL(hasOwnProperty.TIGGER_PAWTECT_LEARN_MORE));
       }
     }
     cResult[6] = dismissOnce;
-    cResult[7] = B;
+    cResult[7] = C;
   } else {
-    class B {
+    class C {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
@@ -111,12 +119,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
         const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
         AgeVerificationActionCreatorsDefault;
         const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        openUrl(obj2.getArticleURL(hasOwnProperty.TIGGER_PAWTECT_LEARN_MORE));
       }
     }
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
+    class C {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
@@ -124,12 +132,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
         const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
         AgeVerificationActionCreatorsDefault;
         const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        openUrl(obj2.getArticleURL(hasOwnProperty.TIGGER_PAWTECT_LEARN_MORE));
       }
     }
     cResult[8] = tmp12;
   } else {
-    class B {
+    class C {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
@@ -137,47 +145,44 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
         const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
         AgeVerificationActionCreatorsDefault;
         const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        openUrl(obj2.getArticleURL(hasOwnProperty.TIGGER_PAWTECT_LEARN_MORE));
       }
     }
   }
   if (cResult[9] !== dismissOnce) {
-    class B {
+    class M {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
-        const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
-        AgeVerificationActionCreatorsDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        const obj2 = openUserSettings;
+        const obj3 = { screen: metroRequire.AGE_GROUP };
+        obj2.openUserSettings(obj3);
       }
     }
     cResult[9] = dismissOnce;
-    cResult[10] = tmp14;
+    cResult[10] = M;
   } else {
-    class B {
+    class M {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
-        const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
-        AgeVerificationActionCreatorsDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        const obj2 = openUserSettings;
+        const obj3 = { screen: metroRequire.AGE_GROUP };
+        obj2.openUserSettings(obj3);
       }
     }
   }
   if (cResult[11] === tmp10) {
-    class B {
+    class M {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
-        const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
-        AgeVerificationActionCreatorsDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        const obj2 = openUserSettings;
+        const obj3 = { screen: metroRequire.AGE_GROUP };
+        obj2.openUserSettings(obj3);
       }
     }
   }
@@ -185,38 +190,36 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
   const intl = tmp(1126).intl;
   _modDef3149;
   if (isVerifiedTeen) {
-    class B {
+    class M {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
-        const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
-        AgeVerificationActionCreatorsDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        const obj2 = openUserSettings;
+        const obj3 = { screen: metroRequire.AGE_GROUP };
+        obj2.openUserSettings(obj3);
       }
     }
     obj4.onPress = tmp10;
-    tmp16 = obj4;
+    tmp15 = obj4;
   } else {
-    class B {
+    class M {
       constructor() {
         dismissOnce(ContentDismissActionType.TAKE_ACTION);
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
-        const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
-        AgeVerificationActionCreatorsDefault;
-        const obj2 = HelpdeskUtilsDefault;
-        openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+        const obj2 = openUserSettings;
+        const obj3 = { screen: metroRequire.AGE_GROUP };
+        obj2.openUserSettings(obj3);
       }
     }
     obj4.onPress = tmp13;
-    tmp16 = obj4;
+    tmp15 = obj4;
   }
   cResult[11] = tmp10;
   cResult[12] = tmp13;
   cResult[13] = isVerifiedTeen;
-  cResult[14] = tmp16;
+  cResult[14] = tmp15;
 }) : (function TinyBroncoPromoSheet(markAsDismissed) {
   let ButtonGroup;
   let formatResult;
@@ -226,13 +229,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
   let obj5;
   let obj8;
   let tmp14;
+  let tmp14Result;
   let tmp15;
   let dismissOnce;
   markAsDismissed = markAsDismissed.markAsDismissed;
-  const tmp = closure_11();
-  let obj = dismissOnce(5905);
+  const tmp = closure_10();
+  let obj = dismissOnce(5906);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  let obj2 = dismissOnce(14808);
+  let obj2 = dismissOnce(14916);
   dismissOnce = obj2.useDismissOnce(markAsDismissed);
   const items = [dismissOnce];
   const items1 = [dismissOnce];
@@ -261,7 +265,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
     const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
     AgeVerificationActionCreatorsDefault;
     const obj2 = HelpdeskUtilsDefault;
-    openUrl(obj2.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+    openUrl(obj2.getArticleURL(hasOwnProperty.TIGGER_PAWTECT_LEARN_MORE));
   }, items3);
   const items4 = [dismissOnce];
   const callback4 = react.useCallback(() => {
@@ -274,7 +278,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet(openTinyBroncoPromoSheet.TINY_BRONCO_PROMO_SHEET_KEY);
     const obj2 = openUserSettings;
-    const obj3 = { screen: metroImportDefault.AGE_GROUP };
+    const obj3 = { screen: metroRequire.AGE_GROUP };
     obj2.openUserSettings(obj3);
   }, items4);
   const intl = dismissOnce(1126).intl;
@@ -291,30 +295,31 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TinyBronco
     tmp14 = tmp12;
     tmp15 = obj3;
   }
-  const obj4 = { illustration: closure_9(Image, obj5), title: intl2.string(tmp14(3149).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_10(ButtonGroup, obj8) };
-  obj5 = { source: tmp14(14809), style: tmp.illustration, resizeMode: "contain" };
-  const PromoSheet = tmp2(10303).PromoSheet;
+  const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3149).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
+  const PromoSheet = tmp2(10290).PromoSheet;
+  obj5 = { source: tmp14(14917), style: tmp.illustration, resizeMode: "contain" };
+  tmp14Result = tmp14(6163);
   intl2 = tmp2(1126).intl;
   const intl3 = tmp2(1126).intl;
   const format = intl3.format;
-  const tmp14Result = tmp14(3149);
+  const tmp14Result2 = tmp14(3149);
   if (isVerifiedTeen) {
     const obj6 = { handleOnConfirmAgeHook: callback2 };
-    formatResult = format(tmp14Result["Ga2z/E"], obj6);
+    formatResult = format(tmp14Result2["Ga2z/E"], obj6);
   } else {
     const obj7 = { handleOnBlogHook: callback4 };
-    formatResult = format(tmp14Result.xuvWqy, obj7);
+    formatResult = format(tmp14Result2.xuvWqy, obj7);
   }
   obj8 = { size: "lg", style: tmp.actions, children: items5 };
-  ButtonGroup = tmp2(5963).ButtonGroup;
+  ButtonGroup = tmp2(5965).ButtonGroup;
   items5 = [, ];
   const obj9 = { size: "lg", text: tmp15.text, onPress: tmp15.onPress };
-  items5[0] = closure_9(dismissOnce(5375).Button, obj9);
+  items5[0] = closure_8(dismissOnce(5376).Button, obj9);
   const obj10 = { size: "lg", variant: "secondary", text: intl4.string(dismissOnce(1126).t["NX+WJN"]), onPress: callback1 };
-  const Button = tmp2(5375).Button;
+  const Button = tmp2(5376).Button;
   intl4 = tmp2(1126).intl;
-  items5[1] = closure_9(Button, obj10);
-  return closure_9(PromoSheet, obj4);
+  items5[1] = closure_8(Button, obj10);
+  return closure_8(PromoSheet, obj4);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoPromoSheet.tsx");

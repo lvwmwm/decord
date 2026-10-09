@@ -1,12 +1,12 @@
-// Module ID: 5399
-// Function ID: 5400
+// Module ID: 5400
+// Function ID: 5401
 // Name: ApplicationCommandConstants
-// Dependencies: [1126, 1997, 2]
+// Dependencies: [1126, 1998, 2]
 // Exports: getValidationErrorText
 
-// Module 5399 (ApplicationCommandConstants)
+// Module 5400 (ApplicationCommandConstants)
 import intl10 from "intl" /* 1126 */;
-import Server from "Server" /* 1997 */;
+import Server from "Server" /* 1998 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ name: "True", displayName: "True", value: "true" }, { name: "False", displayName: "False", value: "false" }];

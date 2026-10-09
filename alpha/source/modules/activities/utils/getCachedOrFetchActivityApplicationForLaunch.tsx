@@ -1,15 +1,15 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10794
+// Function ID: 10795
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 5436, 2021, 2063, 10635, 10628, 10651, 2]
+// Dependencies: [5, 5437, 2022, 2064, 10778, 10795, 10796, 2]
 // Exports: default
 
-// Module 10650 (getCachedOrFetchActivityApplicationForLaunch)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10635 */;
+// Module 10794 (getCachedOrFetchActivityApplicationForLaunch)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10778 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 let application, channel, closure_2, closure_3;

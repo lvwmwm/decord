@@ -1,14 +1,13 @@
-// Module ID: 13417
-// Function ID: 13418
+// Module ID: 13512
+// Function ID: 13513
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 2060, 21, 558, 576, 5054, 13418, 1126, 13425, 6829, 2]
+// Dependencies: [19, 2061, 21, 558, 576, 5055, 13513, 1126, 13517, 6836, 2]
 
-// Module 13417 (NUFChannelsActionSheet)
+// Module 13512 (NUFChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13418 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 13425 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 13517 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +17,7 @@ let BottomSheet;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFChannelsActionSheet(markAsDismissed) {
-  let tmp16;
+  let tmp15;
   let tmp4;
   let tmp5;
   let tmp6;
@@ -31,7 +30,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFChannelsA
   const cResult = obj.c(13);
   markAsDismissed = markAsDismissed.markAsDismissed;
   if (cResult[0] !== markAsDismissed) {
-    const fn = function o() {
+    const fn = function l() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       if (markAsDismissed != null) {
@@ -59,21 +58,21 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFChannelsA
     tmp5 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp12 = jsx(NUFChannelIllustrationDefault, {});
+    const tmp11 = jsx(tmp(13513).ServerChannelsAbstractUI, {});
     const intl = tmp(1126).intl;
     const stringResult = intl.string(tmp(1126).t.Ay9424);
     const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(tmp(1126).t.mufH2P);
     const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(tmp(1126).t.BddRzS);
-    cResult[4] = tmp12;
+    cResult[4] = tmp11;
     cResult[5] = stringResult;
     cResult[6] = stringResult1;
     cResult[7] = stringResult2;
     tmp9 = stringResult2;
     tmp8 = stringResult1;
     tmp7 = stringResult;
-    tmp6 = tmp12;
+    tmp6 = tmp11;
   } else {
     tmp6 = cResult[4];
     tmp7 = cResult[5];
@@ -81,25 +80,25 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFChannelsA
     tmp9 = cResult[7];
   }
   if (cResult[8] !== tmp4) {
-    const tmp19 = jsx(NUFTemplateV2Default, { illustration: tmp6, title: tmp7, description: tmp8, CTALabel: tmp9, onCTAPress: tmp4 });
+    const tmp18 = jsx(NUFTemplateV2Default, { illustration: tmp6, title: tmp7, description: tmp8, CTALabel: tmp9, onCTAPress: tmp4 });
     cResult[8] = tmp4;
-    cResult[9] = tmp19;
-    tmp16 = tmp19;
+    cResult[9] = tmp18;
+    tmp15 = tmp18;
   } else {
-    tmp16 = cResult[9];
+    tmp15 = cResult[9];
   }
   if (cResult[10] === tmp5) {
-    let tmp20;
-    if (cResult[11] === tmp16) {
-      tmp20 = cResult[12];
+    let tmp19;
+    if (cResult[11] === tmp15) {
+      tmp19 = cResult[12];
     }
-    return tmp20;
+    return tmp19;
   }
-  const tmp21 = jsx(tmp(6829).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp16 });
+  const tmp20 = jsx(tmp(6836).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp15 });
   cResult[10] = tmp5;
-  cResult[11] = tmp16;
-  cResult[12] = tmp21;
-  tmp20 = tmp21;
+  cResult[11] = tmp15;
+  cResult[12] = tmp20;
+  tmp19 = tmp20;
 }) : (function NUFChannelsActionSheet(markAsDismissed) {
   let intl;
   let intl2;
@@ -113,7 +112,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFChannelsA
       tmp2(ContentDismissActionType.UNKNOWN);
     }
   }, items);
-  BottomSheet = markAsDismissed(6829).BottomSheet;
+  BottomSheet = markAsDismissed(6836).BottomSheet;
   ({ illustration: null, title: intl.string(markAsDismissed(1126).t.Ay9424), description: intl2.string(markAsDismissed(1126).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1126).t.BddRzS), onCTAPress: callback });
   const tmp2 = NUFTemplateV2Default;
   intl = markAsDismissed(1126).intl;

@@ -182,7 +182,7 @@ obj = function _flushIfServerless() {
     if (closure_0 === undefined) {
       obj5 = {};
     }
-    return "Reflect";
+    return "Set";
   });
   return obj(...arguments);
 };

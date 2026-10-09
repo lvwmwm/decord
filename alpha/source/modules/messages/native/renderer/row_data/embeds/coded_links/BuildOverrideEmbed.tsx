@@ -1,22 +1,22 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 13451
+// Function ID: 13452
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 10460, 7418, 7861, 11395, 13357, 1380, 1126, 7723, 587, 4929, 11414, 11415, 13355, 2]
+// Dependencies: [17, 10450, 7423, 7870, 11300, 13452, 1381, 1126, 7732, 587, 4930, 11321, 11322, 13450, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 13356 (BuildOverrideEmbed)
+// Module 13451 (BuildOverrideEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import react_nativeAll from "react-native" /* 1380 */;
-import shared from "shared" /* 4929 */;
-import Constants from "Constants" /* 7418 */;
-import react_native2 from "react-native" /* 7723 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7861 */;
-import BuildOverrideStore2 from "BuildOverrideStore" /* 10460 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11395 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13355 */;
-import validateBuildOverrideDefault from "validateBuildOverride" /* 13357 */;
+import react_nativeAll from "react-native" /* 1381 */;
+import shared from "shared" /* 4930 */;
+import Constants from "Constants" /* 7423 */;
+import react_native2 from "react-native" /* 7732 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7870 */;
+import BuildOverrideStore2 from "BuildOverrideStore" /* 10450 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11300 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13450 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 13452 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;
@@ -142,9 +142,9 @@ export const createBuildOverrideEmbed = function createBuildOverrideEmbed(code, 
     resolveAssetSource = Image.resolveAssetSource;
     const tmp20Result = shared;
     if (tmp20Result.isThemeDark(arg1)) {
-      tmpResult2 = tmp(11414);
+      tmpResult2 = tmp(11321);
     } else {
-      tmpResult2 = tmp(11415);
+      tmpResult2 = tmp(11322);
     }
   }
 };

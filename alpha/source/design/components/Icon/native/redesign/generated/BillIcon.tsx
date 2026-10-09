@@ -1,14 +1,14 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11778
+// Function ID: 11779
 // Name: BillIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 11842, 4777, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11779, 4778, 2]
 
-// Module 11841 (BillIcon)
+// Module 11778 (BillIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4777 */;
-import AssetRegistry from "AssetRegistry" /* 11842 */;
+import BaseIconImage2 from "BaseIconImage" /* 4778 */;
+import AssetRegistry from "AssetRegistry" /* 11779 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BillIcon(a
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4777).BaseIconImage;
+  const BaseIconImage = tmp(4778).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

@@ -1,18 +1,18 @@
-// Module ID: 12885
-// Function ID: 12886
+// Module ID: 12854
+// Function ID: 12855
 // Name: Checkbox
-// Dependencies: [17, 21, 5090, 558, 576, 4792, 1126, 6182, 5086, 5373, 2]
+// Dependencies: [17, 21, 5091, 558, 576, 4793, 1126, 6184, 5087, 5374, 2]
 
-// Module 12885 (Checkbox)
+// Module 12854 (Checkbox)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import react_native from "react-native" /* 4792 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import FormCheckbox from "FormCheckbox" /* 6182 */;
+import react_native from "react-native" /* 4793 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import FormCheckbox from "FormCheckbox" /* 6184 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
       let tmp17 = required;
       if (tmp17) {
         const obj4 = { variant: "text-md/bold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-        const Text = tmp(5086).Text;
+        const Text = tmp(5087).Text;
         intl2 = tmp(1126).intl;
         tmp17 = hasOwnProperty(Text, obj4);
       }
@@ -117,7 +117,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
           let tmp27 = null != description;
           if (tmp27) {
             const obj5 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-            tmp27 = React3(tmp(5086).Text, obj5);
+            tmp27 = React3(tmp(5087).Text, obj5);
           }
           cResult[17] = description;
           cResult[18] = tmp27;
@@ -243,15 +243,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
     const _HermesInternal2 = HermesInternal;
     str = ", " + description;
   }
-  Stack = tmp2(5373).Stack;
+  Stack = tmp2(5374).Stack;
   const items = [React3(FormCheckbox.FormCheckbox, { checked }), ];
   const obj3 = { style: tmp.textContainer, children: items2 };
   const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "text-md/medium", children: items1 }) };
   items1 = [label, ];
-  Text = tmp2(5086).Text;
+  Text = tmp2(5087).Text;
   if (required) {
     const obj5 = { variant: "text-md/bold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-    const Text2 = tmp2(5086).Text;
+    const Text2 = tmp2(5087).Text;
     intl2 = tmp2(1126).intl;
     required = tmp10(Text2, obj5);
   }
@@ -260,7 +260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(onT
   let tmp5Result = null != description;
   if (tmp5Result) {
     const obj6 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp5Result = tmp5(tmp2(5086).Text, obj6);
+    tmp5Result = tmp5(tmp2(5087).Text, obj6);
   }
   obj7 = { direction: "horizontal", children: items };
   items2[1] = tmp5Result;

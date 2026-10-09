@@ -1,21 +1,21 @@
-// Module ID: 16628
-// Function ID: 16629
+// Module ID: 16753
+// Function ID: 16754
 // Name: YouBarAvatarDefault
-// Dependencies: [19, 17, 15177, 1085, 21, 5090, 587, 558, 576, 4778, 1200, 8986, 8930, 2]
+// Dependencies: [19, 17, 15288, 1085, 21, 5091, 587, 558, 576, 4779, 1200, 8997, 8941, 2]
 
-// Module 16628 (YouBarAvatarDefault)
+// Module 16753 (YouBarAvatarDefault)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import useToken from "useToken" /* 4778 */;
-import ReactionIcon2 from "ReactionIcon" /* 8930 */;
-import ClipView from "ClipView" /* 8986 */;
+import useToken from "useToken" /* 4779 */;
+import ReactionIcon2 from "ReactionIcon" /* 8941 */;
+import ClipView from "ClipView" /* 8997 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 15177 */;
+import YouBarConstants from "YouBarConstants" /* 15288 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let rect;
 let tmp5;
-const ClipViewDefault = tmp5(8986);
+const ClipViewDefault = tmp5(8997);
 const View = react_native.View;
 ({ YOU_BAR_AVATAR_LARGE_SIZE: closure_4, YOU_BAR_AVATAR_PLACEHOLDER_SIZE: hasOwnProperty, YOU_BAR_STATUS_INSET: metroRequire, YOU_BAR_HEIGHT: metroImportDefault, YOU_BAR_LARGE_STATUS_SIZE: metroImportAll, YOU_BAR_PADDING: c9, YOU_BAR_STATUS_OFFSET: c10 } = YouBarConstants);
 const StatusTypes = Constants.StatusTypes;
@@ -117,7 +117,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     }
     if (cResult[9] !== tmp4.placeholderAvatarBackground) {
       const obj3 = { style: tmp4.placeholderAvatarBackground };
-      const tmp25 = closure_12(View, obj3);
+      const tmp25 = authStore2(View, obj3);
       cResult[9] = tmp4.placeholderAvatarBackground;
       cResult[10] = tmp25;
       tmp22 = tmp25;
@@ -128,7 +128,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { size: "custom", style: size2, color: "background-mod-strong" };
       size2 = { width: tmp11, height: tmp11 };
-      const tmp28 = closure_12(ReactionIcon2.ReactionIcon, obj4);
+      const tmp28 = authStore2(ReactionIcon2.ReactionIcon, obj4);
       cResult[11] = tmp28;
       tmp26 = tmp28;
     } else {
@@ -145,7 +145,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { size: first, status: StatusTypes.OFFLINE, isMobileOnline: false, isVROnline: false, streaming: false, style: rect };
         rect = { position: "absolute", right: bottom, bottom };
-        const tmp39 = closure_12(native.Status, obj5);
+        const tmp39 = authStore2(native.Status, obj5);
         cResult[15] = tmp39;
         tmp35 = tmp39;
       } else {
@@ -167,7 +167,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     obj8 = { style: tmp21, children: items2 };
     items2 = [tmp22, tmp26];
     const tmp5Result = ClipViewDefault;
-    const tmp34 = closure_12(tmp5Result, obj7);
+    const tmp34 = authStore2(tmp5Result, obj7);
     cResult[12] = tmp21;
     cResult[13] = tmp22;
     cResult[14] = tmp34;
@@ -197,7 +197,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
   const result = num / 2;
   const sum = result + tmp2(1200).STATUS_PADDING;
   const diff = tmp7 - sum - num / 4 * 2;
-  const point = { shape: tmp2(8986).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
+  const point = { shape: tmp2(8997).CutoutShape.Circle, x: diff, y: diff, size: 2 * sum };
   const obj3 = { style: size, children: items3 };
   size = { height: tmp2(1200).AVATAR_SIZE_MAP[tmp6], width: tmp2(1200).AVATAR_SIZE_MAP[tmp6], position: "relative" };
   const obj4 = { cutouts: items, children: map1(View, obj5) };
@@ -207,13 +207,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
   items2 = [, ];
   const obj6 = { style: tmp.placeholderAvatarBackground };
   const tmp4Result = ClipViewDefault;
-  items2[0] = closure_12(View, obj6);
+  items2[0] = authStore2(View, obj6);
   const obj7 = { size: "custom", style: { width: tmp7, height: tmp7 }, color: "background-mod-strong" };
-  items2[1] = closure_12(ReactionIcon2.ReactionIcon, obj7);
-  items3 = [closure_12(tmp4Result, obj4), ];
+  items2[1] = authStore2(ReactionIcon2.ReactionIcon, obj7);
+  items3 = [authStore2(tmp4Result, obj4), ];
   const obj8 = { size: num, status: StatusTypes.OFFLINE, isMobileOnline: false, isVROnline: false, streaming: false, style: rect };
   rect = { position: "absolute", right: bottom, bottom };
-  items3[1] = closure_12(native.Status, obj8);
+  items3[1] = authStore2(native.Status, obj8);
   return map1(View, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -298,7 +298,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     }
     if (cResult[11] !== tmp4.placeholderAvatarBackground) {
       const obj3 = { style: tmp4.placeholderAvatarBackground };
-      const tmp30 = closure_12(View, obj3);
+      const tmp30 = authStore2(View, obj3);
       cResult[11] = tmp4.placeholderAvatarBackground;
       cResult[12] = tmp30;
       tmp27 = tmp30;
@@ -309,8 +309,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { size: "custom", style: size3, color: "background-mod-strong" };
       size3 = { width: native.AVATAR_SIZE_MAP[hasOwnProperty], height: native.AVATAR_SIZE_MAP[hasOwnProperty] };
-      const ReactionIcon = tmp(8930).ReactionIcon;
-      const tmp34 = closure_12(ReactionIcon, obj4);
+      const ReactionIcon = tmp(8941).ReactionIcon;
+      const tmp34 = authStore2(ReactionIcon, obj4);
       cResult[13] = tmp34;
       tmp31 = tmp34;
     } else {
@@ -326,7 +326,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { size: tmp9, status: StatusTypes.OFFLINE, isMobileOnline: false, isVROnline: false, streaming: false, style: rect };
         rect = { position: "absolute", right: metroRequire - authStore, bottom: metroRequire - authStore };
-        const tmp46 = closure_12(native.Status, obj5);
+        const tmp46 = authStore2(native.Status, obj5);
         cResult[17] = tmp46;
         tmp41 = tmp46;
       } else {
@@ -342,7 +342,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
       const obj6 = { style: tmp17, children: map1(View, obj7) };
       obj7 = { style: tmp23, children: items2 };
       items2 = [tmp35, tmp41];
-      const tmp51 = closure_12(View, obj6);
+      const tmp51 = authStore2(View, obj6);
       cResult[18] = tmp23;
       cResult[19] = tmp35;
       cResult[20] = tmp51;
@@ -352,7 +352,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     obj9 = { style: tmp26, children: items3 };
     items3 = [tmp27, tmp31];
     const tmp5Result = ClipViewDefault;
-    const tmp40 = closure_12(tmp5Result, obj8);
+    const tmp40 = authStore2(tmp5Result, obj8);
     cResult[14] = tmp26;
     cResult[15] = tmp27;
     cResult[16] = tmp40;
@@ -396,16 +396,16 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
   items3 = [, ];
   const obj6 = { style: tmp.placeholderAvatarBackground };
   const tmp8 = ClipViewDefault;
-  items3[0] = closure_12(View, obj6);
+  items3[0] = authStore2(View, obj6);
   const obj7 = { size: "custom", style: size2, color: "background-mod-strong" };
   size2 = { width: native.AVATAR_SIZE_MAP[hasOwnProperty], height: native.AVATAR_SIZE_MAP[hasOwnProperty] };
   const ReactionIcon = ReactionIcon2.ReactionIcon;
-  items3[1] = closure_12(ReactionIcon, obj7);
-  items4 = [closure_12(tmp8, obj4), ];
+  items3[1] = authStore2(ReactionIcon, obj7);
+  items4 = [authStore2(tmp8, obj4), ];
   const obj8 = { size: metroImportAll, status: StatusTypes.OFFLINE, isMobileOnline: false, isVROnline: false, streaming: false, style: rect };
   rect = { position: "absolute", right: metroRequire - authStore, bottom: metroRequire - authStore };
-  items4[1] = closure_12(native.Status, obj8);
-  return closure_12(View, obj2);
+  items4[1] = authStore2(native.Status, obj8);
+  return authStore2(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarAvatarDefault(isLarge) {
@@ -414,7 +414,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(2);
   isLarge = isLarge.isLarge;
   if (cResult[0] !== isLarge) {
-    const tmp3 = closure_12(isLarge ? closure_16 : closure_15, {});
+    const tmp3 = authStore2(isLarge ? closure_16 : closure_15, {});
     cResult[0] = isLarge;
     cResult[1] = tmp3;
     tmp2 = tmp3;
@@ -423,7 +423,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   return tmp2;
 }) : (function YouBarAvatarDefault(isLarge) {
-  return closure_12(isLarge.isLarge ? closure_16 : closure_15, {});
+  return authStore2(isLarge.isLarge ? closure_16 : closure_15, {});
 }));
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarAvatarDefault.tsx");

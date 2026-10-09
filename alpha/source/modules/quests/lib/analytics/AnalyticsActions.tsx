@@ -1,28 +1,28 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7400
+// Function ID: 7401
 // Name: AnalyticsActions
-// Dependencies: [5, 7396, 1369, 7379, 1085, 7172, 7398, 7375, 7399, 7401, 7404, 5984, 5105, 1264, 7405, 7415, 7416, 5980, 7410, 7353, 1381, 1278, 7406, 2]
+// Dependencies: [5, 7401, 1370, 7384, 1085, 7177, 7403, 7380, 7404, 7406, 7409, 5986, 5106, 1265, 7410, 7420, 7421, 5982, 7415, 7358, 1382, 1279, 7411, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7395 (AnalyticsActions)
+// Module 7400 (AnalyticsActions)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
-import QuestTypes from "QuestTypes" /* 5980 */;
-import AdCreativeType from "AdCreativeType" /* 5984 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7172 */;
-import QuestDataUtils from "QuestDataUtils" /* 7375 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7398 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7399 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7401 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7404 */;
-import captureAdUserAction4 from "captureAdUserAction" /* 7405 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7415 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7416 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
+import QuestTypes from "QuestTypes" /* 5982 */;
+import AdCreativeType from "AdCreativeType" /* 5986 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7177 */;
+import QuestDataUtils from "QuestDataUtils" /* 7380 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7403 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7404 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7406 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7409 */;
+import captureAdUserAction4 from "captureAdUserAction" /* 7410 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7420 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7421 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7396 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
-import QuestStore from "QuestStore" /* 7379 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7401 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1370 */;
+import QuestStore from "QuestStore" /* 7384 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
@@ -54,7 +54,7 @@ function trackQuestEvent(questId) {
     }
     const id = value.id;
     tmp24Result = AnalyticsTypes;
-    const QUEST = tmp24(5984).AdCreativeType.QUEST;
+    const QUEST = tmp24(5986).AdCreativeType.QUEST;
     const tmp24Result5 = SessionAdGenerator;
     let uuid = tmp24Result5.getOrRefreshAdSession(shouldExtendSession).uuid;
     const tmp24Result6 = QuestDataUtils;
@@ -286,7 +286,7 @@ let obj = function _getCommonClickEventProperties() {
             closure_6 = undefined;
             impression_id = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === impression_id) {
           if (arg0 === 1) {
@@ -406,7 +406,7 @@ obj = function _trackQuestContentClicked() {
       sourceQuestContent(obj6);
       await "IconComponent";
       ({ questId: c0, questContent: c1, questContentCTA: c2, questContentPosition: c3, questContentRowIndex: c4, impressionId: c5, clickId: c6, trackGuildAndChannelMetadata: c7, sourceQuestContent: c8 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;
@@ -447,7 +447,7 @@ obj = function _trackAdContentClicked() {
       adCreativeType(obj5);
       await "IconComponent";
       ({ adContentId: c0, relatedQuestId: c1, adCreativeType: c2, questContent: c3, questContentCTA: c4, questContentPosition: c5, questContentRowIndex: c6, impressionId: c7, trackGuildAndChannelMetadata: c8, sourceQuestContent: c9 } = closure_0);
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

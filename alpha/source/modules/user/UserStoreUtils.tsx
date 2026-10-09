@@ -1,13 +1,13 @@
-// Module ID: 1400
-// Function ID: 1401
+// Module ID: 1401
+// Function ID: 1402
 // Name: UserStoreUtils
-// Dependencies: [1401, 1085, 38, 1402, 2]
+// Dependencies: [1402, 1085, 38, 1403, 2]
 // Exports: getEnv, getPremiumTypeFromRawValue, isStaffEnv, isStaffEnvRawData, validatePremiumType
 
-// Module 1400 (UserStoreUtils)
+// Module 1401 (UserStoreUtils)
 import _modDef38 from "module_38" /* 38 */;
-import UserStoreConstants from "UserStoreConstants" /* 1401 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
+import UserStoreConstants from "UserStoreConstants" /* 1402 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

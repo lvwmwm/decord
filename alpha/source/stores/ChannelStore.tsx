@@ -1,9 +1,9 @@
-// Module ID: 2063
-// Function ID: 2064
+// Module ID: 2064
+// Function ID: 2065
 // Name: ChannelStore
-// Dependencies: [32, 5, 2064, 2066, 2067, 502, 2086, 1389, 1085, 3, 1387, 2090, 2110, 2111, 584, 2112, 10, 11, 2113, 12, 504, 2]
+// Dependencies: [32, 5, 2065, 2067, 2068, 502, 2086, 1390, 1085, 3, 1388, 2090, 2110, 2111, 584, 2112, 10, 11, 2113, 12, 504, 2]
 
-// Module 2063 (ChannelStore)
+// Module 2064 (ChannelStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -17,12 +17,12 @@ import deserializeChannels from "deserializeChannels" /* 2112 */;
 import isChangelogUserDefault from "isChangelogUser" /* 2113 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2064 */;
-import FavoriteStore from "FavoriteStore" /* 2066 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2065 */;
+import FavoriteStore from "FavoriteStore" /* 2067 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ let closure_12;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f86740 = (item) => isChangelogUserDefault(item);
+const f86951 = (item) => isChangelogUserDefault(item);
 function ensureGuildLoaded(guild_id, Full, getBasicChannel) {
   let arr;
   let tmp41;
@@ -193,7 +193,7 @@ function setChannel(isPrivate) {
   if (isPrivate.isPrivate()) {
     delete closure_32[isPrivate.id];
     const recipients = isPrivate.recipients;
-    if (null == recipients.find(f86740)) {
+    if (null == recipients.find(f86951)) {
       closure_21[isPrivate.id] = isPrivate;
       if (isPrivate.type === ChannelTypes.DM) {
         closure_25[isPrivate.getRecipientId()] = isPrivate.id;
@@ -249,7 +249,7 @@ function setChannel(isPrivate) {
 }
 function setPrivateChannel(recipients) {
   recipients = recipients.recipients;
-  if (null != recipients.find(f86740)) {
+  if (null != recipients.find(f86951)) {
     return false;
   } else {
     closure_21[recipients.id] = recipients;
@@ -579,7 +579,7 @@ class ChannelLoader {
     let closure_2;
     let found;
     const tmp = found;
-    found = items.filter(found(1387).isNotNullish);
+    found = items.filter(found(1388).isNotNullish);
     if (0 === found.length) {
       let tmp8 = null;
       return null;
@@ -1038,7 +1038,7 @@ let obj = {
       let fileOnlyResult = closure_17.fileOnly("Lazy cache contained full guild channels for " + tmp5 + " #:" + arr.length);
       let addResult = set.add(tmp5);
       for (const item10036 of arr) {
-        let tmp14 = setChannel(closure_12(item10036));
+        let tmp14 = setChannel(authStore2(item10036));
         continue;
       }
       continue;
@@ -1053,7 +1053,7 @@ let obj = {
     while (iter !== undefined) {
       for (const item10021 of nextResult) {
         let obj = deserializeChannels;
-        let tmp8 = setChannel(obj.deserializeChannel(closure_12(item10021)));
+        let tmp8 = setChannel(obj.deserializeChannel(authStore2(item10021)));
         continue;
       }
       continue;
@@ -1225,7 +1225,7 @@ let obj = {
         let _Object = Object;
         let tmp13 = item10033;
         if (!Object.hasOwn(closure_19, item10033.id)) {
-          let tmp18 = setGuildChannel(closure_12(tmp13));
+          let tmp18 = setGuildChannel(authStore2(tmp13));
         }
         continue;
       }
@@ -1254,7 +1254,7 @@ let obj = {
     const tmp = arg0.channels[Symbol.iterator]();
     while (tmp !== undefined) {
       let obj = deserializeChannels;
-      let tmp7 = setChannel(obj.deserializeChannel(closure_12(tmp2)));
+      let tmp7 = setChannel(obj.deserializeChannel(authStore2(tmp2)));
       continue;
     }
   },

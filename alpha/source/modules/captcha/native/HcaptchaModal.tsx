@@ -1,18 +1,18 @@
-// Module ID: 17741
-// Function ID: 17742
+// Module ID: 17893
+// Function ID: 17894
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2128, 1389, 1085, 21, 5090, 558, 576, 504, 1502, 1997, 1630, 1126, 5723, 5370, 5373, 587, 5086, 1381, 17740, 4995, 6189, 2]
+// Dependencies: [109, 19, 17, 2128, 1390, 1085, 21, 5091, 558, 576, 504, 1503, 1998, 1631, 1126, 5724, 5371, 5374, 587, 5087, 1382, 17892, 4996, 6191, 2]
 
-// Module 17741 (HcaptchaModal)
+// Module 17893 (HcaptchaModal)
 import Constants from "Constants" /* 1085 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5723 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5724 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
-  const tmpResult3 = tmp(1502);
+  const tmpResult3 = tmp(1503);
   navigation = tmpResult3.useNavigation();
   if (cResult[5] !== navigation) {
     const state = navigation.getState();
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
       }
     }
   }
-  const tmp19 = O(1630)();
+  const tmp19 = O(1631)();
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(tmp(1126).t.wsoPhr);
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
       }
     }
   }
-  O(5370)(tmp23);
+  O(5371)(tmp23);
   if (cResult[12] === (routes.length > 0 && "auth" === routes[0].name)) {
     class F {
       constructor() {
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
               }
             }
             let obj2 = { color: null };
-            const XLargeIcon = tmp(4995).XLargeIcon;
+            const XLargeIcon = tmp(4996).XLargeIcon;
             class I {
               constructor() {
                 return closure_1_11.getCurrentUser();
@@ -299,8 +299,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
           const obj5 = { accessibilityRole: "button", accessibilityLabel: tmp47, onPress: tmp22, style: tmp9.closeButtonHitArea, children: tmp48 };
           cResult[26] = tmp22;
           cResult[27] = tmp9.closeButtonHitArea;
-          cResult[28] = closure_12(tmp(6189).PressableOpacity, obj5);
-          const tmp52 = closure_12(tmp(6189).PressableOpacity, obj5);
+          cResult[28] = closure_12(tmp(6191).PressableOpacity, obj5);
+          const tmp52 = closure_12(tmp(6191).PressableOpacity, obj5);
         }
         const items2 = [, ];
         class I {
@@ -325,7 +325,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
     }
     const obj7 = { style: closure_9.absoluteFillObject, children: closure_12(tmp18Result, obj8) };
     obj8 = { languageCode: LocaleStore.locale, onMessage: tmp5 };
-    tmp18Result = O(17740);
+    tmp18Result = O(17892);
     const merged = Object.assign(tmp4);
     cResult[15] = tmp4;
     cResult[16] = tmp5;
@@ -341,17 +341,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
       }
     }
     const obj9 = { spacing: null, align: "center", children: items3 };
-    const Stack = tmp(5373).Stack;
+    const Stack = tmp(5374).Stack;
     class I {
       constructor() {
         return closure_1_11.getCurrentUser();
       }
     }
     const obj10 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp9.title, children: tmp20 };
-    items3 = [closure_12(tmp(5086).Text, obj10), ];
+    items3 = [closure_12(tmp(5087).Text, obj10), ];
     const tmp29 = closure_12;
     const tmp30 = closure_7;
-    const tmpResult4 = tmp(1381);
+    const tmpResult4 = tmp(1382);
     if (tmpResult4.isAndroid()) {
       class F {
         constructor() {
@@ -386,7 +386,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
   let obj = onMessage(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = onMessage(1502);
+  let obj2 = onMessage(1503);
   navigation = obj2.useNavigation();
   const routes = navigation.getState().routes;
   let tmp6 = routes.length > 0 && "auth" === routes[0].name;
@@ -395,9 +395,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
     if (stateFromStores != null) {
       prop = stateFromStores.ageVerificationStatus;
     }
-    tmp6 = prop === tmp3(1997).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+    tmp6 = prop === tmp3(1998).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
   }
-  const rect = onPress(1630)();
+  const rect = onPress(1631)();
   const intl = tmp3(1126).intl;
   const items1 = [onMessage];
   const stringResult = intl.string(onMessage(1126).t.wsoPhr);
@@ -409,7 +409,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
       tmp(obj);
     }
   }, items1);
-  onPress(5370)(() => {
+  onPress(5371)(() => {
     callback();
     return true;
   });
@@ -417,13 +417,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
   const obj3 = { style: tmp2.container, children: items3 };
   if (tmp13Result) {
     const obj4 = { spacing: onPress(587).space.PX_16, align: "center", children: items2 };
-    const Stack = tmp3(5373).Stack;
+    const Stack = tmp3(5374).Stack;
     const obj5 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp2.title, children: stringResult };
-    items2 = [closure_12(tmp3(5086).Text, obj5), ];
+    items2 = [closure_12(tmp3(5087).Text, obj5), ];
     let WHITE;
     const tmp16 = closure_12;
     const tmp17 = closure_7;
-    const tmp3Result = onMessage(1381);
+    const tmp3Result = onMessage(1382);
     if (tmp3Result.isAndroid()) {
       WHITE = tmp9(587).unsafe_rawColors.WHITE;
     }
@@ -434,17 +434,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
   items3 = [tmp13Result, , ];
   const obj7 = { style: closure_9.absoluteFillObject, children: closure_12(tmp9Result, obj8) };
   obj8 = { languageCode: LocaleStore.locale, onMessage };
-  tmp9Result = onPress(17740);
+  tmp9Result = onPress(17892);
   const merged = Object.assign(tmp);
   items3[1] = closure_12(closure_8, obj7);
   const obj9 = { style: items4, pointerEvents: "box-none", children: closure_12(PressableOpacity, obj11) };
   items4 = [tmp2.closeButtonContainer, { paddingTop: rect.top + onPress(587).space.PX_8, paddingLeft: rect.left + onPress(587).space.PX_16 }];
   obj11 = { accessibilityRole: "button", accessibilityLabel: intl2.string(onMessage(1126).t.cpT0Cq), onPress, style: tmp2.closeButtonHitArea, children: closure_12(XLargeIcon, obj12) };
   ({ paddingTop: rect.top + onPress(587).space.PX_8, paddingLeft: rect.left + onPress(587).space.PX_16 });
-  PressableOpacity = tmp3(6189).PressableOpacity;
+  PressableOpacity = tmp3(6191).PressableOpacity;
   intl2 = tmp3(1126).intl;
   obj12 = { color: onPress(587).colors.INTERACTIVE_ICON_DEFAULT };
-  XLargeIcon = tmp3(4995).XLargeIcon;
+  XLargeIcon = tmp3(4996).XLargeIcon;
   items3[2] = closure_12(closure_8, obj9);
   return closure_13(closure_8, obj3);
 });

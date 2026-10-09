@@ -1,18 +1,18 @@
-// Module ID: 11962
-// Function ID: 11963
+// Module ID: 11899
+// Function ID: 11900
 // Name: ChatInputActionButtonTransitionItem
-// Dependencies: [19, 17, 11652, 21, 558, 576, 4787, 4810, 5091, 11963, 2]
+// Dependencies: [19, 17, 11588, 21, 558, 576, 4788, 4811, 5092, 11900, 2]
 // Exports: interactivityProps
 
-// Module 11962 (ChatInputActionButtonTransitionItem)
+// Module 11899 (ChatInputActionButtonTransitionItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 4787 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import ChatInputConstants from "ChatInputConstants" /* 11652 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11963 */;
+import native from "native" /* 4788 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import ChatInputConstants from "ChatInputConstants" /* 11588 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11900 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -134,7 +134,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeTr
         }
       };
       const tmpResult = timing;
-      let obj = { runOnJS: tmp(4810).runOnJS, cleanup };
+      let obj = { runOnJS: tmp(4811).runOnJS, cleanup };
       const withTiming = tmpResult.withTiming;
       fn.__closure = obj;
       fn.__workletHash = 10965161938750;
@@ -182,7 +182,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeTr
         }
       };
       const tmpResult = timing;
-      let obj = { runOnJS: tmp(4810).runOnJS, cleanup };
+      let obj = { runOnJS: tmp(4811).runOnJS, cleanup };
       const withTiming = tmpResult.withTiming;
       fn.__closure = obj;
       fn.__workletHash = 12574891324796;
@@ -280,7 +280,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounce
             return tmp11;
           }
         }
-        const View = tmp6(4810).View;
+        const View = tmp6(4811).View;
         const merged = Object.assign(tmp10);
         const tmp16 = <View style={tmp8}>{children}</View>;
         cResult[9] = children;

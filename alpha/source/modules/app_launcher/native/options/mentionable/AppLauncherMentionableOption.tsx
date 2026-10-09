@@ -1,29 +1,29 @@
-// Module ID: 11906
-// Function ID: 11907
+// Module ID: 11843
+// Function ID: 11844
 // Name: AppLauncherMentionableOption
-// Dependencies: [32, 19, 5079, 2118, 1389, 1096, 21, 5090, 587, 558, 576, 504, 10267, 11905, 11903, 1200, 11904, 11907, 11901, 5054, 11903, 1999, 2]
+// Dependencies: [32, 19, 5080, 2118, 1390, 1096, 21, 5091, 587, 558, 576, 504, 10252, 11842, 11840, 1200, 11841, 11844, 11838, 5055, 11840, 2000, 2]
 // Exports: default
 
-// Module 11906 (AppLauncherMentionableOption)
+// Module 11843 (AppLauncherMentionableOption)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import native from "native" /* 1200 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import UserCircleIcon from "UserCircleIcon" /* 10267 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11903 */;
-import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 11904 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11905 */;
-import UsernameTextDefault from "UsernameText" /* 11907 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import UserCircleIcon from "UserCircleIcon" /* 10252 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 11840 */;
+import AppLauncherRoleListActionSheet from "AppLauncherRoleListActionSheet" /* 11841 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11842 */;
+import UsernameTextDefault from "UsernameText" /* 11844 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5090 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -109,7 +109,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mentio
       }
       return tmp16;
     } else {
-      const GLOBAL = tmp(11903).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp(11840).MentionableItemTypes.GLOBAL;
       return tmp12;
     }
   }
@@ -133,7 +133,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mentio
     } else if (AppLauncherMentionableListActionSheet.MentionableItemTypes.ROLE === type) {
       return jsx(AppLauncherRoleListActionSheet.RoleIcon, { role: mentionable.result });
     } else {
-      const GLOBAL = tmp2(11903).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(11840).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
@@ -227,7 +227,7 @@ export default function AppLauncherMentionableOption(option) {
         },
         onActionSheetDismiss: _slicedToArray
       };
-      const tmp4 = asyncRequire(11903, dependencyMap.paths);
+      const tmp4 = asyncRequire(11840, dependencyMap.paths);
       openLazy(tmp4, AppLauncherMentionableListActionSheet.APP_LAUNCHER_MENTIONABLE_LIST_ACTION_SHEET_KEY, obj);
     },
     autoFocus

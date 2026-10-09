@@ -1,22 +1,22 @@
-// Module ID: 7098
-// Function ID: 7099
+// Module ID: 7103
+// Function ID: 7104
 // Name: EntitlementStore
-// Dependencies: [7099, 7101, 6092, 1085, 1391, 504, 12, 7103, 1088, 584, 2]
+// Dependencies: [7104, 7106, 6094, 1085, 1392, 504, 12, 7108, 1088, 584, 2]
 
-// Module 7098 (EntitlementStore)
+// Module 7103 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedAll from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1088 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7103 */;
-import EntitlementRecord from "EntitlementRecord" /* 7099 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7101 */;
-import SKUStore from "SKUStore" /* 6092 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7108 */;
+import EntitlementRecord from "EntitlementRecord" /* 7104 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7106 */;
+import SKUStore from "SKUStore" /* 6094 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let closure_11, closure_9, set2;
+let closure_11, closure_12, closure_9, set2;
 
 let metroImportDefault;
 let metroRequire;
@@ -73,13 +73,13 @@ let closure_8 = PremiumConstants.PREMIUM_SUBSCRIPTION_APPLICATION;
 const React4 = {};
 let closure_10 = {};
 const unpackModuleId = {};
-let closure_12 = {};
+const authStore2 = {};
 let c13 = false;
 let c14 = false;
 let c15 = false;
 let set = new Set();
 let set1 = new Set();
-const authStore5 = {};
+const authStore6 = {};
 const Store = get_initializedAll.Store;
 class EntitlementStore extends Store {
   initialize() {

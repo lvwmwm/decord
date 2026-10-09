@@ -1,25 +1,25 @@
-// Module ID: 8281
-// Function ID: 8282
+// Module ID: 8289
+// Function ID: 8290
 // Name: UserActionCreators
-// Dependencies: [5, 1403, 1389, 1085, 1086, 3, 1294, 584, 5944, 1358, 38, 5631, 2]
+// Dependencies: [5, 1404, 1390, 1085, 1086, 3, 1295, 584, 5945, 1359, 38, 5632, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8281 (UserActionCreators)
+// Module 8289 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import RouteConstants from "RouteConstants" /* 1086 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1358 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5944 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1359 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1403 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, closure_2, closure_3, closure_4, closure_5, connections_role_id, fetchStartedAt, guildId, guild_id, join_request_id;
+let _require, closure_2, closure_3, closure_4, closure_5, connections_role_id, fetchStartedAt, guildId, guild_id, join_request_id;
 
 let obj = function _fetchProfile() {
   obj = _asyncToGenerator(async (userId, type, with_mutual_guilds) => {
@@ -52,6 +52,7 @@ let obj = function _fetchProfile() {
       } else {
         try {
           let closure_9;
+          let closure_12;
           signal = 2;
           if (0 === join_request_id) {
             if (arg0 === 1) {
@@ -82,7 +83,7 @@ let obj = function _fetchProfile() {
               closure_12 = undefined;
               join_request_id = 1;
               signal = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === join_request_id) {
             if (arg0 === 1) {

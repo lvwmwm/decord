@@ -1,49 +1,49 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 14005
+// Function ID: 14006
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1389, 1085, 1252, 21, 5090, 587, 558, 576, 1630, 1496, 1382, 1264, 5940, 4936, 1112, 5299, 5303, 5000, 1126, 5303, 5936, 10211, 4896, 13913, 5086, 6614, 2]
+// Dependencies: [5, 19, 17, 502, 1390, 1085, 1253, 21, 5091, 587, 558, 576, 1631, 1497, 1383, 1265, 5941, 4937, 1112, 5300, 5304, 5001, 1126, 5304, 5937, 10196, 4897, 6163, 14006, 5087, 6621, 2]
 
-// Module 13912 (OneTimeLoginModal)
+// Module 14005 (OneTimeLoginModal)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 5000 */;
-import useAlertStore from "useAlertStore" /* 5299 */;
-import AlertModal2 from "AlertModal" /* 5303 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10211 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 5001 */;
+import useAlertStore from "useAlertStore" /* 5300 */;
+import AlertModal2 from "AlertModal" /* 5304 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let _require, bottom, c4, c5, dependencyMap, importDefault, onPress;
 
 let c10;
-let closure_14;
+let c9;
+let closure_12;
 let hasOwnProperty;
 let map1;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
 let size;
-let unpackModuleId;
-({ View: hasOwnProperty, ActivityIndicator: metroRequire, Image: metroImportDefault } = react_native);
-({ Routes: c10, AnalyticEvents: unpackModuleId } = Constants);
-let closure_12 = ClientThemesConstants.BACKGROUND_GRADIENT_PRESETS_MOBILE;
-({ jsx: map1, jsxs: closure_14 } = Fragment);
+({ View: hasOwnProperty, ActivityIndicator: metroRequire } = react_native);
+({ Routes: c9, AnalyticEvents: c10 } = Constants);
+let closure_11 = ClientThemesConstants.BACKGROUND_GRADIENT_PRESETS_MOBILE;
+({ jsx: closure_12, jsxs: map1 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, centerContent: { flex: 1, justifyContent: "center", alignItems: "center" }, bottomContent: obj3, logo: { width: 80, height: 80, alignSelf: "center" }, loadingContainer: obj4, link: obj5, raisedIcon: size };
 obj2 = { padding: 24, paddingTop: 128, paddingBottom: 96, borderRadius: nativeDefault.radii.md, alignItems: "center", flex: 1, justifyContent: "space-between" };
@@ -52,14 +52,16 @@ obj3 = { alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj4 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8, alignItems: "center", marginBottom: 48 };
 obj5 = { textDecorationLine: "underline", textDecorationColor: nativeDefault.colors.TEXT_DEFAULT, flexShrink: 1 };
 size = { width: 64, height: 64, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, alignSelf: "center" };
-let closure_15 = createStyles(obj);
+let closure_14 = createStyles(obj);
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLoginModal(token) {
   let closure_1;
+  let constants2;
+  let onPress2;
   const tmp = token;
   let obj = token(576);
   const cResult = obj.c(46);
   token = token.token;
-  const tmp4 = closure_15();
+  const tmp4 = closure_14();
   importDefault = tmp4;
   const tmp5 = useSafeAreaInsetsDefault();
   const height = useWindowDimensionsDefault().height;
@@ -68,7 +70,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
     let tmp9;
     let tmp8;
     let tmp13;
-    let tmp15;
+    let tmp14;
     if (cResult[1] === height) {
       tmp6 = cResult[2];
     }
@@ -78,88 +80,58 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
       cResult[4] = obj2;
     }
     if (cResult[5] !== token) {
-      class T {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { has_token: null != token };
-          obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
-          const obj3 = AnalyticsUtilsDefault;
-          obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
-        }
-      }
+      const fn = function p() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { has_token: null != token };
+        obj.track(constants2.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
+        const obj3 = AnalyticsUtilsDefault;
+        obj3.track(constants2.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
+      };
       const items = [token];
       cResult[5] = token;
-      cResult[6] = T;
+      cResult[6] = fn;
       cResult[7] = items;
       tmp9 = items;
-      tmp8 = T;
+      tmp8 = fn;
     } else {
-      class T {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { has_token: null != token };
-          obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
-          const obj3 = AnalyticsUtilsDefault;
-          obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
-        }
-      }
+      tmp8 = cResult[6];
       tmp9 = cResult[7];
     }
-    const effect = S.useEffect(tmp8, tmp9);
+    const effect = G.useEffect(tmp8, tmp9);
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { has_token: null != token };
-          obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
-          const obj3 = AnalyticsUtilsDefault;
-          obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
-        }
-      }
-      cResult[8] = tmp14;
-      tmp13 = tmp14;
+      const fn2 = function k() {
+        const obj = closure_1(onPress[15]);
+        obj.track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "loading" });
+        const obj2 = closure_1(onPress[16]);
+        obj2.popWithKey("ONE_TIME_LOGIN_MODAL");
+        const obj3 = token(onPress[17]);
+        obj3.resetToAuthRoute();
+      };
+      cResult[8] = fn2;
+      tmp13 = fn2;
     } else {
-      class T {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { has_token: null != token };
-          obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
-          const obj3 = AnalyticsUtilsDefault;
-          obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
-        }
-      }
+      tmp13 = cResult[8];
     }
     dependencyMap = tmp13;
     const _Symbol2 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class D {
-        constructor() {
-          const obj = closure_1(dependencyMap[15]);
-          obj.track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "already_logged_in" });
-          const obj2 = closure_1(dependencyMap[16]);
-          obj2.popWithKey("ONE_TIME_LOGIN_MODAL");
-          const obj3 = token(dependencyMap[18]);
-          obj3.transitionTo(constants.ME);
-        }
-      }
-      cResult[9] = D;
-      tmp15 = D;
+      const fn3 = function b() {
+        const obj = closure_1(onPress[15]);
+        obj.track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "already_logged_in" });
+        const obj2 = closure_1(onPress[16]);
+        obj2.popWithKey("ONE_TIME_LOGIN_MODAL");
+        const obj3 = token(onPress[18]);
+        obj3.transitionTo(constants.ME);
+      };
+      cResult[9] = fn3;
+      tmp14 = fn3;
     } else {
-      class D {
-        constructor() {
-          const obj = closure_1(dependencyMap[15]);
-          obj.track(constants2.ONE_TIME_LOGIN_MODAL_CANCEL_CLICKED, { current_state: "already_logged_in" });
-          const obj2 = closure_1(dependencyMap[16]);
-          obj2.popWithKey("ONE_TIME_LOGIN_MODAL");
-          const obj3 = token(dependencyMap[18]);
-          obj3.transitionTo(constants.ME);
-        }
-      }
+      tmp14 = cResult[9];
     }
-    D = tmp15;
+    onPress = tmp14;
     if (cResult[10] !== tmp4.raisedIcon) {
-      class S {
+      class G {
         constructor() {
           let AlertActionButton;
           let AlertActions;
@@ -170,24 +142,24 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           let obj3;
           let obj4;
           const openAlert = useAlertStore.openAlert;
-          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.L6htwI), content: intl2.string(intl4.t["4fnE/J"]), actions: map1(AlertActions, obj3) };
-          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          const obj = { header: authStore2(hasOwnProperty, obj2), title: intl.string(intl4.t.L6htwI), content: intl2.string(intl4.t["4fnE/J"]), actions: authStore2(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: authStore2(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
           useAlertStore;
           const AlertModal = AlertModal2.AlertModal;
           intl = intl4.intl;
           intl2 = intl4.intl;
-          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+          obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
           AlertActions = AlertModal2.AlertActions;
-          obj4 = { onPress: dependencyMap, text: intl3.string(intl4.t["9vN0pz"]) };
+          obj4 = { onPress, text: intl3.string(intl4.t["9vN0pz"]) };
           AlertActionButton = AlertModal2.AlertActionButton;
           intl3 = intl4.intl;
-          openAlert("invalid-login-alert", map1(AlertModal, obj));
+          openAlert("invalid-login-alert", authStore2(AlertModal, obj));
         }
       }
       cResult[10] = tmp4.raisedIcon;
-      cResult[11] = S;
+      cResult[11] = G;
     } else {
-      class S {
+      class G {
         constructor() {
           let AlertActionButton;
           let AlertActions;
@@ -198,24 +170,24 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           let obj3;
           let obj4;
           const openAlert = useAlertStore.openAlert;
-          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.L6htwI), content: intl2.string(intl4.t["4fnE/J"]), actions: map1(AlertActions, obj3) };
-          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          const obj = { header: authStore2(hasOwnProperty, obj2), title: intl.string(intl4.t.L6htwI), content: intl2.string(intl4.t["4fnE/J"]), actions: authStore2(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: authStore2(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
           useAlertStore;
           const AlertModal = AlertModal2.AlertModal;
           intl = intl4.intl;
           intl2 = intl4.intl;
-          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+          obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
           AlertActions = AlertModal2.AlertActions;
-          obj4 = { onPress: dependencyMap, text: intl3.string(intl4.t["9vN0pz"]) };
+          obj4 = { onPress, text: intl3.string(intl4.t["9vN0pz"]) };
           AlertActionButton = AlertModal2.AlertActionButton;
           intl3 = intl4.intl;
-          openAlert("invalid-login-alert", map1(AlertModal, obj));
+          openAlert("invalid-login-alert", authStore2(AlertModal, obj));
         }
       }
     }
-    S = tmp16;
+    G = tmp15;
     if (cResult[12] !== tmp4.raisedIcon) {
-      class P {
+      class R {
         constructor() {
           let AlertActionButton;
           let AlertActions;
@@ -228,8 +200,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           let obj4;
           let str;
           const openAlert = useAlertStore.openAlert;
-          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
-          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          const obj = { header: authStore2(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: authStore2(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: authStore2(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
           useAlertStore;
           const AlertModal = AlertModal2.AlertModal;
           intl = intl4.intl;
@@ -244,18 +216,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           if (str == null) {
             str = "current user";
           }
-          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
-          AlertActions = tmp(5303).AlertActions;
-          obj4 = { onPress: D, text: intl3.string(intl4.t["3PatSz"]) };
-          AlertActionButton = tmp(5303).AlertActionButton;
+          obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
+          AlertActions = tmp(5304).AlertActions;
+          obj4 = { onPress: onPress2, text: intl3.string(intl4.t["3PatSz"]) };
+          AlertActionButton = tmp(5304).AlertActionButton;
           intl3 = tmp(1126).intl;
-          openAlert("already-logged-in-alert", map1(AlertModal, obj));
+          openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
         }
       }
       cResult[12] = tmp4.raisedIcon;
-      cResult[13] = P;
+      cResult[13] = R;
     } else {
-      class P {
+      class R {
         constructor() {
           let AlertActionButton;
           let AlertActions;
@@ -268,8 +240,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           let obj4;
           let str;
           const openAlert = useAlertStore.openAlert;
-          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
-          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          const obj = { header: authStore2(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: authStore2(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: authStore2(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
           useAlertStore;
           const AlertModal = AlertModal2.AlertModal;
           intl = intl4.intl;
@@ -284,18 +256,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           if (str == null) {
             str = "current user";
           }
-          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
-          AlertActions = tmp(5303).AlertActions;
-          obj4 = { onPress: D, text: intl3.string(intl4.t["3PatSz"]) };
-          AlertActionButton = tmp(5303).AlertActionButton;
+          obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
+          AlertActions = tmp(5304).AlertActions;
+          obj4 = { onPress: onPress2, text: intl3.string(intl4.t["3PatSz"]) };
+          AlertActionButton = tmp(5304).AlertActionButton;
           intl3 = tmp(1126).intl;
-          openAlert("already-logged-in-alert", map1(AlertModal, obj));
+          openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
         }
       }
     }
-    P = tmp17;
-    if (cResult[14] === tmp17) {
-      class P {
+    R = tmp16;
+    if (cResult[14] === tmp16) {
+      class R {
         constructor() {
           let AlertActionButton;
           let AlertActions;
@@ -308,8 +280,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           let obj4;
           let str;
           const openAlert = useAlertStore.openAlert;
-          const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
-          obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+          const obj = { header: authStore2(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: authStore2(AlertActions, obj3) };
+          obj2 = { style: closure_1.raisedIcon, children: authStore2(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
           useAlertStore;
           const AlertModal = AlertModal2.AlertModal;
           intl = intl4.intl;
@@ -324,16 +296,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
           if (str == null) {
             str = "current user";
           }
-          obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
-          AlertActions = tmp(5303).AlertActions;
-          obj4 = { onPress: D, text: intl3.string(intl4.t["3PatSz"]) };
-          AlertActionButton = tmp(5303).AlertActionButton;
+          obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
+          AlertActions = tmp(5304).AlertActions;
+          obj4 = { onPress: onPress2, text: intl3.string(intl4.t["3PatSz"]) };
+          AlertActionButton = tmp(5304).AlertActionButton;
           intl3 = tmp(1126).intl;
-          openAlert("already-logged-in-alert", map1(AlertModal, obj));
+          openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
         }
       }
     }
-    _require = D(function*(arg0, value) {
+    _require = onPress(function*(arg0, value) {
       let obj6;
       let v1;
       let v3;
@@ -440,15 +412,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
     function t9() {
       return closure_0(...arguments);
     }
-    cResult[14] = tmp17;
-    cResult[15] = tmp16;
+    cResult[14] = tmp16;
+    cResult[15] = tmp15;
     cResult[16] = token;
     cResult[17] = t9;
   }
   let str = "100%";
-  const tmpResult = tmp(1382);
+  const tmpResult = tmp(1383);
   if (tmpResult.isAndroid()) {
-    class P {
+    class R {
       constructor() {
         let AlertActionButton;
         let AlertActions;
@@ -461,8 +433,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
         let obj4;
         let str;
         const openAlert = useAlertStore.openAlert;
-        const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
-        obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+        const obj = { header: authStore2(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: authStore2(AlertActions, obj3) };
+        obj2 = { style: closure_1.raisedIcon, children: authStore2(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
         useAlertStore;
         const AlertModal = AlertModal2.AlertModal;
         intl = intl4.intl;
@@ -477,12 +449,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
         if (str == null) {
           str = "current user";
         }
-        obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
-        AlertActions = tmp(5303).AlertActions;
-        obj4 = { onPress: D, text: intl3.string(intl4.t["3PatSz"]) };
-        AlertActionButton = tmp(5303).AlertActionButton;
+        obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
+        AlertActions = tmp(5304).AlertActions;
+        obj4 = { onPress: onPress2, text: intl3.string(intl4.t["3PatSz"]) };
+        AlertActionButton = tmp(5304).AlertActionButton;
         intl3 = tmp(1126).intl;
-        openAlert("already-logged-in-alert", map1(AlertModal, obj));
+        openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
       }
     }
   }
@@ -492,6 +464,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
   tmp6 = str;
 }) : (function OneTimeLoginModal(token) {
   let closure_1;
+  let constants2;
   let intl;
   let intl2;
   let intl3;
@@ -503,7 +476,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
   let obj3;
   token = token.token;
   onPress = undefined;
-  let tmp = closure_15();
+  let tmp = closure_14();
   importDefault = tmp;
   const tmp2 = useSafeAreaInsetsDefault();
   dependencyMap = tmp2;
@@ -521,9 +494,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
   const effect = onPress.useEffect(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { has_token: null != token };
-    obj.track(unpackModuleId.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
+    obj.track(constants2.ONE_TIME_LOGIN_MODAL_OPENED, obj2);
     const obj3 = AnalyticsUtilsDefault;
-    obj3.track(unpackModuleId.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
+    obj3.track(constants2.DEEP_LINK_CLICKED, { source: "native_modal", destination: "one_time_login_native_modal", deep_link_provider: "native_app" });
   }, items1);
   onPress = onPress.useCallback(() => {
     const obj = closure_1(bottom[15]);
@@ -552,18 +525,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
     let obj3;
     let obj4;
     const openAlert = useAlertStore.openAlert;
-    const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.L6htwI), content: intl2.string(intl4.t["4fnE/J"]), actions: map1(AlertActions, obj3) };
-    obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+    const obj = { header: authStore2(hasOwnProperty, obj2), title: intl.string(intl4.t.L6htwI), content: intl2.string(intl4.t["4fnE/J"]), actions: authStore2(AlertActions, obj3) };
+    obj2 = { style: closure_1.raisedIcon, children: authStore2(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
     useAlertStore;
     const AlertModal = AlertModal2.AlertModal;
     intl = intl4.intl;
     intl2 = intl4.intl;
-    obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
+    obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
     AlertActions = AlertModal2.AlertActions;
     obj4 = { onPress, text: intl3.string(intl4.t["9vN0pz"]) };
     AlertActionButton = AlertModal2.AlertActionButton;
     intl3 = intl4.intl;
-    openAlert("invalid-login-alert", map1(AlertModal, obj));
+    openAlert("invalid-login-alert", authStore2(AlertModal, obj));
   }, items2);
   const items3 = [tmp.raisedIcon, callback1];
   const callback3 = onPress.useCallback(() => {
@@ -578,8 +551,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
     let obj4;
     let str;
     const openAlert = useAlertStore.openAlert;
-    const obj = { header: map1(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: map1(AlertActions, obj3) };
-    obj2 = { style: closure_1.raisedIcon, children: map1(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
+    const obj = { header: authStore2(hasOwnProperty, obj2), title: intl.string(intl4.t.MKW8z2), content: formatToPlainString(YOeM7B, { username: str }), actions: authStore2(AlertActions, obj3) };
+    obj2 = { style: closure_1.raisedIcon, children: authStore2(CircleErrorIcon.CircleErrorIcon, { size: "custom", style: { width: 40, height: 40 } }) };
     useAlertStore;
     const AlertModal = AlertModal2.AlertModal;
     intl = intl4.intl;
@@ -594,12 +567,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
     if (str == null) {
       str = "current user";
     }
-    obj3 = { children: map1(AlertActionButton, obj4, "confirm") };
-    AlertActions = tmp(5303).AlertActions;
+    obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
+    AlertActions = tmp(5304).AlertActions;
     obj4 = { onPress: callback1, text: intl3.string(intl4.t["3PatSz"]) };
-    AlertActionButton = tmp(5303).AlertActionButton;
+    AlertActionButton = tmp(5304).AlertActionButton;
     intl3 = tmp(1126).intl;
-    openAlert("already-logged-in-alert", map1(AlertModal, obj));
+    openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
   }, items3);
   const items4 = [token, callback2, callback3];
   const callback4 = onPress.useCallback(height(function*(arg0, value) {
@@ -709,34 +682,35 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneTimeLogin
     callback4();
   }, items5);
   let obj = { style: memo, children: items6 };
-  let obj2 = { absolute: true, wide: true, tall: true, gradientOverride: closure_12[5], mix: true, angleOverride: 0, mixAmount: obj3 };
-  obj3 = { dark: token(4896).OverlayOpacity.LEVEL_1 };
+  let obj2 = { absolute: true, wide: true, tall: true, gradientOverride: closure_11[5], mix: true, angleOverride: 0, mixAmount: obj3 };
+  obj3 = { dark: token(4897).OverlayOpacity.LEVEL_1 };
   const tmp11 = ThemedGradientDefault;
-  items6 = [closure_13(tmp11, obj2), ];
+  items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(13913), style: tmp.logo };
-  items7 = [closure_13(callback3, obj6), ];
+  let obj6 = { source: token(14006), style: tmp.logo };
+  const tmp12 = FastImageDefault;
+  items7 = [closure_12(tmp12, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };
-  items8 = [closure_13(callback2, {}), ];
+  items8 = [closure_12(callback2, {}), ];
   let obj8 = { variant: "text-lg/semibold", children: intl.string(token(1126).t.W9uNdG) };
-  const Text = token(5086).Text;
+  const Text = token(5087).Text;
   intl = token(1126).intl;
-  items8[1] = closure_13(Text, obj8);
-  items7[1] = closure_14(callback1, obj7);
-  items9 = [closure_14(callback1, obj5), ];
+  items8[1] = closure_12(Text, obj8);
+  items7[1] = closure_13(callback1, obj7);
+  items9 = [closure_13(callback1, obj5), ];
   let obj9 = { style: tmp.bottomContent, children: items10 };
   let obj10 = { variant: "text-sm/normal", children: intl2.string(token(1126).t["ZXe5/Y"]) };
-  const Text2 = token(5086).Text;
+  const Text2 = token(5087).Text;
   intl2 = token(1126).intl;
-  items10 = [closure_13(Text2, obj10), ];
+  items10 = [closure_12(Text2, obj10), ];
   let obj11 = { textColor: "text-default", text: intl3.string(token(1126).t.FIEwfG), variant: "text-sm/medium", onPress, textStyle: tmp.link };
-  const LinkButton = token(6614).LinkButton;
+  const LinkButton = token(6621).LinkButton;
   intl3 = token(1126).intl;
-  items10[1] = closure_13(LinkButton, obj11);
-  items9[1] = closure_14(callback1, obj9);
-  items6[1] = closure_14(callback1, obj4);
-  return closure_14(callback1, obj);
+  items10[1] = closure_12(LinkButton, obj11);
+  items9[1] = closure_13(callback1, obj9);
+  items6[1] = closure_13(callback1, obj4);
+  return closure_13(callback1, obj);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/one_time_login/native/OneTimeLoginModal.tsx");

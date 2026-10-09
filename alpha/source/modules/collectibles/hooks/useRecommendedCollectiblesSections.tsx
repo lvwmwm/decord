@@ -1,13 +1,13 @@
-// Module ID: 13301
-// Function ID: 13302
+// Module ID: 13396
+// Function ID: 13397
 // Name: useRecommendedCollectiblesSections
-// Dependencies: [19, 13302, 558, 576, 13303, 6174, 13304, 2]
+// Dependencies: [19, 13397, 558, 576, 13398, 6176, 13399, 2]
 
-// Module 13301 (useRecommendedCollectiblesSections)
+// Module 13396 (useRecommendedCollectiblesSections)
 import react from "react" /* 19 */;
-import useInitialValueDefault from "useInitialValue" /* 6174 */;
-import CollectiblesRecommendationUtils from "CollectiblesRecommendationUtils" /* 13304 */;
-import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 13302 */;
+import useInitialValueDefault from "useInitialValue" /* 6176 */;
+import CollectiblesRecommendationUtils from "CollectiblesRecommendationUtils" /* 13399 */;
+import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 13397 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

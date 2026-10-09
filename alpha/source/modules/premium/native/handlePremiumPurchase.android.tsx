@@ -1,18 +1,18 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 10030
+// Function ID: 10031
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 9335, 502, 4732, 7120, 1085, 1096, 1294, 10046, 5631, 10047, 1126, 4748, 5297, 7115, 504, 7158, 10048, 10049, 10004, 10050, 6927, 4741, 9334, 1264, 2]
+// Dependencies: [109, 5, 19, 9373, 502, 4734, 7125, 1085, 1096, 1295, 10031, 5632, 10032, 1126, 4750, 5298, 7120, 504, 7163, 10033, 10034, 10023, 10035, 6934, 4743, 9372, 1265, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10045 (handlePremiumPurchase)
+// Module 10030 (handlePremiumPurchase)
 import Constants2 from "Constants" /* 1096 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9335 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9373 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4732 */;
-import IAPStore from "IAPStore" /* 7120 */;
+import SubscriptionStore from "SubscriptionStore" /* 4734 */;
+import IAPStore from "IAPStore" /* 7125 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let obj = function _validatePurchase() {
               ({ productId: c0, premiumSubscription: c1, offerId: c2, currency: c3, price: c4, isGift: c5 } = closure_0);
               is_gift = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             let self;
@@ -432,7 +432,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
     flag = tmp185.isOneTimePurchase ?? false;
     flag2 = tmp185.allowPlanChange ?? true;
     ({ applicationId: c9, giftInfoOptions: c10, onPurchaseComplete: c11, onPurchaseError: c12 } = premiumSubscription);
-    return "Reflect";
+    return "Set";
   });
   const items1 = [tmp5, paymentGatewayPlanId, prop, id, premiumTrialOffer, premiumDiscountOffer, stateFromStores, isEligibleForBogoOffer];
   return useCallback(function() {

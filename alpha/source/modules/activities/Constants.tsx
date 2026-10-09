@@ -1,13 +1,13 @@
-// Module ID: 2023
-// Function ID: 2024
+// Module ID: 2024
+// Function ID: 2025
 // Name: Constants
-// Dependencies: [1085, 1997, 2, 2024]
+// Dependencies: [1085, 1998, 2, 2025]
 // Exports: getAppIntentScheme
 
-// Module 2023 (Constants)
+// Module 2024 (Constants)
 import Constants from "Constants" /* 1085 */;
-import Server from "Server" /* 1997 */;
-import ActivityApplications from "ActivityApplications" /* 2024 */;
+import Server from "Server" /* 1998 */;
+import ActivityApplications from "ActivityApplications" /* 2025 */;
 import size from "module_2" /* 2 */;
 
 let items3;

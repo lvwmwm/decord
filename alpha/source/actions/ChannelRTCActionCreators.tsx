@@ -1,13 +1,13 @@
-// Module ID: 5104
-// Function ID: 5105
+// Module ID: 5105
+// Function ID: 5106
 // Name: ChannelRTCActionCreators
-// Dependencies: [1085, 584, 1264, 5105, 1121, 2]
+// Dependencies: [1085, 584, 1265, 5106, 1121, 2]
 
-// Module 5104 (ChannelRTCActionCreators)
+// Module 5105 (ChannelRTCActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -91,6 +91,11 @@ let obj = {
       let ComponentDispatch = require("ComponentDispatchUtils").ComponentDispatch;
       ComponentDispatch.dispatch(constants3.FOCUS_CHAT_BUTTON);
     }
+  },
+  updateStageAudienceSidebarOpen(channelId, open) {
+    const obj = DispatcherDefault;
+    const obj2 = { type: "CHANNEL_RTC_UPDATE_STAGE_AUDIENCE_SIDEBAR_OPEN", channelId, open };
+    obj.dispatch(obj2);
   },
   jumpToVoiceChannelMessage(voiceGuildId2, voiceChannelId2, voiceMessageId2, jumpType) {
     const obj = DispatcherDefault;

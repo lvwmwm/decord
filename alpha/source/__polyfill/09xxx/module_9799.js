@@ -1,11 +1,12 @@
 // Module ID: 9799
 // Function ID: 9800
-// Dependencies: [41, 42, 93, 95, 98, 9771, 9770, 9774, 9778]
+// Dependencies: [41, 42, 93, 95, 98, 9790, 9789, 9791, 9797]
 
 // Module 9799
-import _mod9770 from "module_9770" /* 9770 */;
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9771 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9778 */;
+import _mod9789 from "module_9789" /* 9789 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9790 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9791 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9797 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,25 +28,29 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(this|last|past|next|after\\s*this)\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod9770.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
-class ENRelativeDateFormatParser {
-  constructor() {
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9789.MONTH_DICTIONARY);
+const ORDINAL_NUMBER_PATTERN = _mod9789.ORDINAL_NUMBER_PATTERN;
+const regExp = new RegExp("(" + matchAnyPatternResult + ")(?:-|/|\\s*,?\\s*)(" + ORDINAL_NUMBER_PATTERN + ")(?!\\s*(?:am|pm))\\s*(?:(?:to|\\-)\\s*(" + _mod9789.ORDINAL_NUMBER_PATTERN + ")\\s*)?(?:(?:-|/|\\s*,\\s*|\\s+)(" + _mod9789.YEAR_PATTERN + "))?(?=\\W|$)(?!\\:\\d)", "i");
+class ENMonthNameMiddleEndianParser {
+  constructor(shouldSkipYearLikeDate) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENRelativeDateFormatParser);
-    const obj = _getPrototypeOf(ENRelativeDateFormatParser);
+    _classCallCheck(this, ENMonthNameMiddleEndianParser);
+    const obj = _getPrototypeOf(ENMonthNameMiddleEndianParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.shouldSkipYearLikeDate = shouldSkipYearLikeDate;
+    return tmp3Result;
   }
 }
-_inherits(ENRelativeDateFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENMonthNameMiddleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -56,54 +61,45 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const str2 = arg1[2];
-      const str3 = str2.toLowerCase();
-      const tmp3 = _mod9770.TIME_UNIT_DICTIONARY[str3];
-      if ("next" != formatted) {
-        if (!formatted.startsWith("after")) {
-          if ("last" != formatted) {
-            if ("past" != formatted) {
-              const parsingComponents = createParsingComponents.createParsingComponents();
-              const _Date = Date;
-              const instant = createParsingComponents.reference.instant;
-              const self = this;
-              const self2 = this;
-              const date = new Date(instant.getTime());
-              if (str3.match(/week/i)) {
-                const setDate = date.setDate;
-                const date1 = date.getDate();
-                setDate(date1 - date.getDay());
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.imply("month", date.getMonth() + 1);
-                parsingComponents.imply("year", date.getFullYear());
-              } else if (str3.match(/month/i)) {
-                date.setDate(1);
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.assign("year", date.getFullYear());
-                parsingComponents.assign("month", date.getMonth() + 1);
-              } else if (str3.match(/year/i)) {
-                date.setDate(1);
-                date.setMonth(0);
-                parsingComponents.imply("day", date.getDate());
-                parsingComponents.imply("month", date.getMonth() + 1);
-                parsingComponents.assign("year", date.getFullYear());
+    value: function innerExtract(createParsingComponents, index) {
+      const tmp3 = _mod9789.MONTH_DICTIONARY[index[1].toLowerCase(index[1])];
+      const result = _mod9789.parseOrdinalNumberPattern(index[2]);
+      if (result > 31) {
+        return null;
+      } else {
+        const self = this;
+        if (this.shouldSkipYearLikeDate) {
+          if (!index[3]) {
+            if (!index[4]) {
+              const str2 = index[2];
+              if (str2.match(/^2[0-5]$/)) {
+                return null;
               }
-              return parsingComponents;
             }
           }
-          const obj4 = {};
-          obj4[tmp3] = -1;
-          const ParsingComponents = tmp(9774).ParsingComponents;
-          return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj4);
+        }
+        const date = { day: result, month: tmp3 };
+        const parsingComponents = createParsingComponents.createParsingComponents(date);
+        const addTagResult = parsingComponents.addTag("parser/ENMonthNameMiddleEndianParser");
+        if (index[4]) {
+          addTagResult.assign("year", _mod9789.parseYear(index[4]));
+        } else {
+          addTagResult.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, result, tmp3));
+        }
+        if (index[3]) {
+          const result1 = tmp(9789).parseOrdinalNumberPattern(index[3]);
+          const parsingResult = createParsingComponents.createParsingResult(index.index, index[0]);
+          parsingResult.start = addTagResult;
+          parsingResult.end = addTagResult.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+          return parsingResult;
+        } else {
+          return addTagResult;
         }
       }
-      const ParsingComponents2 = tmp(9774).ParsingComponents;
-      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [tmp3]: 1 });
     }
   }
 ];
 
-export default _createClass(ENRelativeDateFormatParser, items);
+export default _createClass(ENMonthNameMiddleEndianParser, items);

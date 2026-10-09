@@ -1,30 +1,30 @@
-// Module ID: 15164
-// Function ID: 15165
+// Module ID: 15275
+// Function ID: 15276
 // Name: QuestHomeOrbShopCarousel
-// Dependencies: [32, 19, 17, 1205, 7378, 5977, 21, 587, 558, 576, 15151, 5090, 504, 1126, 5086, 9051, 8600, 15141, 15165, 8937, 7395, 7404, 8940, 4787, 2]
+// Dependencies: [32, 19, 17, 1205, 7383, 5979, 21, 587, 558, 576, 15263, 5091, 504, 1126, 5087, 9066, 8608, 15251, 15276, 8948, 7400, 7409, 8951, 4788, 2]
 
-// Module 15164 (QuestHomeOrbShopCarousel)
+// Module 15275 (QuestHomeOrbShopCarousel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import QuestConstants from "QuestConstants" /* 5977 */;
-import AnalyticsActions from "AnalyticsActions" /* 7395 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8940 */;
-import SkeletonCardDefault from "SkeletonCard" /* 9051 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 15151 */;
-import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 15165 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import QuestConstants from "QuestConstants" /* 5979 */;
+import AnalyticsActions from "AnalyticsActions" /* 7400 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8951 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9066 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 15263 */;
+import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 15276 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import BountyStore from "BountyStore" /* 7378 */;
+import BountyStore from "BountyStore" /* 7383 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size_mod from "module_2" /* 2 */;
 
-let closure_12, dependencyMap;
+let dependencyMap;
 
 let c10;
 let c9;
@@ -468,6 +468,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeOrb
   let COLLECTIBLES_SHOP_CARD_HEIGHT;
   let COLLECTIBLES_SHOP_CARD_WIDTH;
   let clickable;
+  let closure_12;
   let embedded;
   let hideCardDetails;
   let listEdgeSpacing;
@@ -508,17 +509,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeOrb
   const tmpResult = tmp(504);
   let ONYX = tmpResult.useStateFromStores(tmp8, tmp9);
   if (tmp5) {
-    ONYX = tmp(15141).ThemeTypes.ONYX;
+    ONYX = tmp(15251).ThemeTypes.ONYX;
   }
   if (undefined !== replacesHeaderMedia && replacesHeaderMedia) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(15165).QUEST_HOME_REPLACE_MEDIA_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(15276).QUEST_HOME_REPLACE_MEDIA_CARD_WIDTH;
   } else {
-    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(8937).COLLECTIBLES_SHOP_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(8948).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   if (undefined !== replacesHeaderMedia && replacesHeaderMedia) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(15165).QUEST_HOME_REPLACE_MEDIA_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(15276).QUEST_HOME_REPLACE_MEDIA_CARD_HEIGHT;
   } else {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(8937).COLLECTIBLES_SHOP_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(8948).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   if (cResult[2] !== COLLECTIBLES_SHOP_CARD_WIDTH) {
     const sum = COLLECTIBLES_SHOP_CARD_WIDTH + PX_12;
@@ -656,7 +657,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeOrb
   let closure_9;
   let length;
   ref = undefined;
-  closure_12 = undefined;
+  let closure_12;
   let tmp = closure_17();
   const tmp2 = obtainableOrbRewards;
   const tmp3 = flag3;
@@ -728,9 +729,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeOrb
       const trackQuestHomeOrbShopCarouselScroll = AnalyticsActions.trackQuestHomeOrbShopCarouselScroll;
       AnalyticsActions;
       if (rounded > tmp2) {
-        LEFT = tmp3(7404).HorizontalScrollingDirection.RIGHT;
+        LEFT = tmp3(7409).HorizontalScrollingDirection.RIGHT;
       } else {
-        LEFT = tmp3(7404).HorizontalScrollingDirection.LEFT;
+        LEFT = tmp3(7409).HorizontalScrollingDirection.LEFT;
       }
       const obj = { scrollingDirection: LEFT, carouselPosition: rounded, carouselSize: length };
       const result = trackQuestHomeOrbShopCarouselScroll(obj);

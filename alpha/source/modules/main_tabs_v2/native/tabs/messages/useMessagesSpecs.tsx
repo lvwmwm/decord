@@ -1,16 +1,16 @@
-// Module ID: 16252
-// Function ID: 16253
+// Module ID: 16371
+// Function ID: 16372
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1085, 558, 576, 5382, 1630, 16253, 16256, 16268, 587, 2]
+// Dependencies: [109, 19, 1085, 558, 576, 5383, 1631, 16372, 16375, 16387, 587, 2]
 
-// Module 16252 (useMessagesSpecs)
+// Module 16371 (useMessagesSpecs)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useFontScale from "useFontScale" /* 5382 */;
-import MessagesHeader from "MessagesHeader" /* 16253 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 16256 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16268 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import useFontScale from "useFontScale" /* 5383 */;
+import MessagesHeader from "MessagesHeader" /* 16372 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 16375 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 16387 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -88,9 +88,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
 }) : (function useMessagesSpecs() {
   let fontScale;
   let top;
-  let obj = fontScale(5382);
+  let obj = fontScale(5383);
   fontScale = obj.useFontScale();
-  top = top(1630)().top;
+  top = top(1631)().top;
   const items = [fontScale, top];
   return react.useMemo(() => {
     let obj4;

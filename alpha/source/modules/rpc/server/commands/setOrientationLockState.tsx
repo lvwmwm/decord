@@ -1,15 +1,15 @@
-// Module ID: 14580
-// Function ID: 14581
+// Module ID: 14679
+// Function ID: 14680
 // Name: setOrientationLockState
-// Dependencies: [10612, 2023, 1096, 11137, 14547, 11134, 584, 2]
+// Dependencies: [10772, 2024, 1096, 10899, 14642, 10896, 584, 2]
 
-// Module 14580 (setOrientationLockState)
+// Module 14679 (setOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants2 from "Constants" /* 2023 */;
-import RPCErrorDefault from "RPCError" /* 11134 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11137 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 14547 */;
-import FramesStore from "FramesStore" /* 10612 */;
+import Constants2 from "Constants" /* 2024 */;
+import RPCErrorDefault from "RPCError" /* 10896 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10899 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 14642 */;
+import FramesStore from "FramesStore" /* 10772 */;
 import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 

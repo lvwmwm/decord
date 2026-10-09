@@ -1,30 +1,30 @@
-// Module ID: 4707
-// Function ID: 4708
+// Module ID: 4709
+// Function ID: 4710
 // Name: PermissionStore
-// Dependencies: [2117, 4708, 2068, 4709, 2067, 2082, 1403, 2063, 2124, 2086, 1389, 1085, 4711, 4712, 12, 4715, 2078, 504, 1097, 4716, 584, 2]
+// Dependencies: [2117, 4710, 2069, 4711, 2068, 2082, 1404, 2064, 2124, 2086, 1390, 1085, 4713, 4714, 12, 4717, 2078, 504, 1097, 4718, 584, 2]
 
-// Module 4707 (PermissionStore)
+// Module 4709 (PermissionStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
-import MemberSafetyConstants from "MemberSafetyConstants" /* 4711 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4712 */;
-import ThreadActionUtils from "ThreadActionUtils" /* 4715 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4716 */;
+import MemberSafetyConstants from "MemberSafetyConstants" /* 4713 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4714 */;
+import ThreadActionUtils from "ThreadActionUtils" /* 4717 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4718 */;
 import ImpersonateStore from "ImpersonateStore" /* 2117 */;
-import LurkingStore from "LurkingStore" /* 4708 */;
-import StageInstanceStore from "StageInstanceStore" /* 2068 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
+import LurkingStore from "LurkingStore" /* 4710 */;
+import StageInstanceStore from "StageInstanceStore" /* 2069 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4711 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
 import GuildRecord from "GuildRecord" /* 2082 */;
-import UserRecord from "UserRecord" /* 1403 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -213,7 +213,7 @@ function computePermissions(context, overwrites, roles, excludeGuildPermissions)
       let NONE4;
       const channel = ChannelStore.getChannel(context.parent_id);
       if (null == channel) {
-        NONE4 = tmp(4712).NONE;
+        NONE4 = tmp(4714).NONE;
       } else {
         const applyThreadPermissions = PermissionUtilsAll.applyThreadPermissions;
         const tmpResult = PermissionUtilsAll;
@@ -240,12 +240,12 @@ function computePermissions(context, overwrites, roles, excludeGuildPermissions)
       if (null == NONE2) {
         const currentUser = UserStore.getCurrentUser();
         if (null == currentUser) {
-          NONE2 = tmp(4712).NONE;
+          NONE2 = tmp(4714).NONE;
         } else {
           let NONE3;
           const guild = GuildStore.getGuild(id);
           if (null == guild) {
-            NONE3 = tmp(4712).NONE;
+            NONE3 = tmp(4714).NONE;
           } else {
             const obj2 = { user: currentUser, context: guild, checkElevated: true };
             const tmpResult3 = PermissionUtilsAll;
@@ -335,12 +335,12 @@ class PermissionStore extends Store {
     if (null == NONE) {
       const currentUser = UserStore.getCurrentUser();
       if (null == currentUser) {
-        NONE = tmp(4712).NONE;
+        NONE = tmp(4714).NONE;
       } else {
         let NONE2;
         const guild = GuildStore.getGuild(id);
         if (null == guild) {
-          NONE2 = tmp(4712).NONE;
+          NONE2 = tmp(4714).NONE;
         } else {
           const obj = { user: currentUser, context: guild, checkElevated: true };
           const tmpResult = PermissionUtilsAll;
@@ -360,12 +360,12 @@ class PermissionStore extends Store {
     if (null == NONE) {
       const currentUser = UserStore.getCurrentUser();
       if (null == currentUser) {
-        NONE = tmp(4712).NONE;
+        NONE = tmp(4714).NONE;
       } else {
         let NONE2;
         guild = GuildStore.getGuild(id);
         if (null == guild) {
-          NONE2 = tmp(4712).NONE;
+          NONE2 = tmp(4714).NONE;
         } else {
           const obj = { user: currentUser, context: guild, checkElevated: true };
           const tmpResult = PermissionUtilsAll;
@@ -441,7 +441,7 @@ class PermissionStore extends Store {
         let isRoleHigherResult = null != currentUser;
         const tmp8 = importAll;
         if (isRoleHigherResult) {
-          const tmp8Result = tmp8(4712);
+          const tmp8Result = tmp8(4714);
           isRoleHigherResult = tmp8Result.isRoleHigher(stateFromStores, currentUser.id, highestRole, highestRole1);
         }
         return isRoleHigherResult;

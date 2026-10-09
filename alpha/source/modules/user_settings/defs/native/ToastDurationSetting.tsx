@@ -1,23 +1,22 @@
-// Module ID: 15512
-// Function ID: 15513
+// Module ID: 15625
+// Function ID: 15626
 // Name: ToastDurationSetting
-// Dependencies: [19, 5079, 7966, 1085, 21, 558, 576, 504, 14520, 1126, 15409, 11220, 11262, 4772, 2]
+// Dependencies: [19, 5080, 7974, 1085, 21, 558, 576, 504, 14616, 1126, 15522, 10575, 10629, 2]
 
-// Module 15512 (ToastDurationSetting)
+// Module 15625 (ToastDurationSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11220 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14520 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15409 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10575 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14616 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15522 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -144,10 +143,6 @@ let obj = {
     return intl.string(intl3.t["3oxlia"]);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
-  usePredicate() {
-    const obj = DesignSystemsNotificationComponentsExperiment;
-    return obj.useDesignSystemsNotificationComponents("ToastDurationSettingNative");
-  },
   useProps: tmp2
 };
 const slider = SettingBuilders.createSlider(obj);

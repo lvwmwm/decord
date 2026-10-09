@@ -1,23 +1,23 @@
-// Module ID: 9672
-// Function ID: 9673
+// Module ID: 9691
+// Function ID: 9692
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 6961, 21, 5090, 587, 558, 576, 9261, 1630, 9673, 1381, 9674, 5054, 6803, 5376, 1126, 4905, 5418, 9648, 6189, 5086, 9675, 5077, 6298, 6829, 9672, 1999, 2]
+// Dependencies: [32, 19, 17, 6968, 21, 5091, 587, 558, 576, 9299, 1631, 9692, 1382, 9693, 5055, 6810, 5377, 1126, 4906, 5419, 9667, 6191, 5087, 9694, 5078, 6305, 6836, 9691, 2000, 2]
 // Exports: openForumGuidelinesActionSheet
 
-// Module 9672 (ForumGuidelinesActionSheet)
+// Module 9691 (ForumGuidelinesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import LinkUtils from "LinkUtils" /* 5418 */;
-import ForumConstants from "ForumConstants" /* 6961 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9648 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 9674 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import LinkUtils from "LinkUtils" /* 5419 */;
+import ForumConstants from "ForumConstants" /* 6968 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9667 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 9693 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -369,7 +369,7 @@ export const openForumGuidelinesActionSheet = function openForumGuidelinesAction
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = {};
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(9672, dependencyMap.paths);
+  const tmp2 = asyncRequire(9691, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, closure_6, obj);
 };

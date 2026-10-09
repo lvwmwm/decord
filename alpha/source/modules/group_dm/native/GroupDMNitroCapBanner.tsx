@@ -1,18 +1,18 @@
-// Module ID: 17182
-// Function ID: 17183
+// Module ID: 17332
+// Function ID: 17333
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4778, 13543, 5387, 9005, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 4779, 13635, 5388, 9016, 2]
 
-// Module 17182 (GroupDMNitroCapBanner)
+// Module 17332 (GroupDMNitroCapBanner)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4778 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13543 */;
+import useToken from "useToken" /* 4779 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13635 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const NitroWheelIcon2 = tmp2(9005);
+const NitroWheelIcon2 = tmp2(9016);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const locations = [0.0065, 0.5046, 0.9196];
@@ -207,7 +207,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
           if (tmp28) {
             const obj11 = { style: tmp5.iconContainer, children: hasOwnProperty(NitroWheelIcon, obj12) };
             obj12 = { size: "md", color: nativeDefault.colors.WHITE };
-            NitroWheelIcon = tmp(9005).NitroWheelIcon;
+            NitroWheelIcon = tmp(9016).NitroWheelIcon;
             tmp28 = hasOwnProperty(React3, obj11);
           }
           cResult[19] = undefined === showLeadingIcon || showLeadingIcon;

@@ -1,31 +1,31 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 14672
+// Function ID: 14673
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2063, 1389, 2062, 10202, 5083, 21, 5090, 587, 558, 576, 504, 11577, 11837, 14572, 6847, 1387, 14574, 7167, 7358, 4766, 1126, 6872, 4765, 7079, 5039, 1496, 1630, 1381, 9232, 6203, 6212, 10211, 11588, 11612, 2]
+// Dependencies: [5, 32, 19, 17, 2064, 1390, 2063, 10187, 5084, 21, 5091, 587, 558, 576, 504, 11510, 11774, 14671, 6854, 1388, 14673, 7172, 7363, 4768, 1126, 6879, 4767, 7082, 5040, 1497, 1631, 1382, 9270, 6205, 6214, 10196, 11521, 11545, 2]
 
-// Module 14573 (ActivityShareLinkModal)
+// Module 14672 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import LinkIcon from "LinkIcon" /* 5039 */;
-import MessageConstants from "MessageConstants" /* 5083 */;
-import ClipboardUtils from "ClipboardUtils" /* 6872 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
-import HeaderShared from "HeaderShared" /* 9232 */;
-import UserRowConstants from "UserRowConstants" /* 10202 */;
-import formatResults from "formatResults" /* 11577 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11837 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14572 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import LinkIcon from "LinkIcon" /* 5040 */;
+import MessageConstants from "MessageConstants" /* 5084 */;
+import ClipboardUtils from "ClipboardUtils" /* 6879 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7082 */;
+import HeaderShared from "HeaderShared" /* 9270 */;
+import UserRowConstants from "UserRowConstants" /* 10187 */;
+import formatResults from "formatResults" /* 11510 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11774 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14671 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import UserStore from "UserStore" /* 1389 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2062 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import UserStore from "UserStore" /* 1390 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2063 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp18, tmp19);
   const tmp12Result2 = onShare(react.useState(""), 2);
   let closure_11 = tmp12Result2[0];
-  closure_12 = tmp12Result2[1];
+  let closure_12 = tmp12Result2[1];
   if (cResult[8] === applicationId) {
     class X {
       constructor(arg0) {
@@ -411,7 +411,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
     title: intl.string(applicationId(linkId[24]).t.r9qKow),
     headerTitle(children) {
       const obj = { title: children.children, subtitle: message, variant: "redesign/heading-18/bold" };
-      return first2(HeaderShared.GenericHeaderTitle, obj);
+      return authStore2(HeaderShared.GenericHeaderTitle, obj);
     },
     headerLeft: obj5.getHeaderCloseButton(callback1),
     headerRight(arg0) {
@@ -420,7 +420,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
       const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
       const merged = Object.assign(arg0);
       intl = intl4.intl;
-      return first2(HeaderActionButton, obj);
+      return authStore2(HeaderActionButton, obj);
     },
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null,

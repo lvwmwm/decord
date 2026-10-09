@@ -1,27 +1,25 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14790
+// Function ID: 14791
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1085, 2060, 21, 5090, 587, 558, 576, 1502, 14685, 2048, 7090, 8266, 5624, 10249, 1408, 1264, 1126, 14686, 1200, 13308, 10246, 14687, 2955, 14689, 2]
+// Dependencies: [32, 19, 17, 1085, 2061, 21, 5091, 587, 558, 576, 1503, 14791, 2049, 7093, 8274, 5625, 10234, 1409, 1265, 1126, 14792, 1200, 13403, 10231, 14793, 2955, 14795, 2]
 
-// Module 14684 (UserProfileDisplayNameStylesEditButton)
+// Module 14790 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
+import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13308 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14686 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14687 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13403 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14792 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 14793 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let navigateResult, obj1, obj4, tmp13, tmp15, tmp16, tmp2, tmp8, trackResult;
 
 let closure_4;
 let hasOwnProperty;
@@ -45,11 +43,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let closure_3;
   let first;
   let isTryItOut;
-  let tmp10;
+  let tmp11;
   let tmp7;
+  let tmp8;
   const tmp = user;
   let obj = user(isTryItOut[9]);
-  const cResult = obj.c(38);
+  const cResult = obj.c(39);
   user = user.user;
   const guildId = user.guildId;
   isTryItOut = user.isTryItOut;
@@ -73,860 +72,244 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   } else {
     tmp7 = cResult[1];
   }
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { bypassAutoDismiss: true };
+    cResult[2] = obj4;
+    tmp8 = obj4;
+  } else {
+    tmp8 = cResult[2];
+  }
   const tmpResult = tmp(isTryItOut[13]);
-  [first, tmp10] = tmpResult.useSelectedDismissibleContent(tmp7, undefined, true);
-  let closure_5 = tmp10;
+  [first, tmp11] = tmpResult.useSelectedDismissibleContent(tmp7, tmp8);
+  let closure_5 = tmp11;
   const tmpResult3 = tmp(isTryItOut[14]);
   const guildMemberOrUserPendingDisplayNameStyles = tmpResult3.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
   let tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.pendingDisplayNameStyles;
   if (isTryItOut) {
     tryItOutDisplayNameStyles = guildMemberOrUserPendingDisplayNameStyles.tryItOutDisplayNameStyles;
   }
-  if (cResult[2] === guildId) {
-    if (cResult[3] === tryItOutDisplayNameStyles) {
-      let tmp12;
-      if (cResult[4] === user.id) {
-        tmp12 = cResult[5];
+  if (cResult[3] === guildId) {
+    if (cResult[4] === tryItOutDisplayNameStyles) {
+      let tmp13;
+      if (cResult[5] === user.id) {
+        tmp13 = cResult[6];
       }
-      const tmp14 = guildId(isTryItOut[15])(tmp12);
-      let closure_6 = tmp14;
+      const tmp15 = guildId(isTryItOut[15])(tmp13);
+      let closure_6 = tmp15;
       let effectId;
       const useDisplayNameStylesEffectConfig = tmp(tmp2[16]).useDisplayNameStylesEffectConfig;
       tmp(isTryItOut[16]);
-      if (tmp14 != null) {
-        effectId = tmp14.effectId;
+      if (tmp15 != null) {
+        effectId = tmp15.effectId;
       }
       if (effectId == null) {
         effectId = tmp(tmp2[17]).DisplayNameEffect.SOLID;
       }
-      if (cResult[6] === guildId) {
-        if (cResult[7] === isTryItOut) {
-          if (cResult[8] === tmp10) {
-            let tmp19;
+      if (cResult[7] === guildId) {
+        if (cResult[8] === isTryItOut) {
+          if (cResult[9] === tmp11) {
+            let tmp20;
             let combined;
-            if (cResult[9] === nativeStackNavigation) {
-              tmp19 = cResult[10];
+            if (cResult[10] === nativeStackNavigation) {
+              tmp20 = cResult[11];
             }
-            if (null != tmp14) {
-              let tmp24;
-              if (cResult[12] !== tmp14.fontId) {
+            if (null != tmp15) {
+              let tmp23;
+              if (cResult[13] !== tmp15.fontId) {
                 const intl2 = tmp(tmp2[19]).intl;
-                const stringResult = intl2.string(guildId(isTryItOut[20])(tmp14.fontId));
-                class W {
-                  constructor() {
-                    if (null == closure_6) {
-                      tmp11 = jsx;
-                      tmp12 = closure_0;
-                      tmp13 = closure_2;
-                      obj1 = { source: null, style: null };
-                      tmp14 = closure_1;
-                      tmp15 = closure_2;
-                      Icon = closure_0(closure_2[21]).Icon;
-                      obj1.source = closure_1(closure_2[22]);
-                      tmp16 = closure_3;
-                      obj1.style = closure_3.noneIcon;
-                      tmp10 = jsx(Icon, obj1);
-                    } else {
-                      tmp2 = jsx;
-                      tmp3 = View;
-                      obj = { style: null, children: null };
-                      tmp4 = closure_3;
-                      obj.style = closure_3.ggContainer;
-                      tmp5 = jsx;
-                      tmp6 = closure_1;
-                      tmp7 = closure_2;
-                      obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                      tmp8 = user;
-                      obj4.userId = user.id;
-                      tmp9 = guildId;
-                      obj4.guildId = guildId;
-                      obj4.pendingDisplayNameStyles = tmp;
-                      obj.children = jsx(closure_1(closure_2[23]), obj4);
-                      tmp10 = jsx(View, obj);
-                    }
-                    return tmp10;
-                  }
-                }
-                cResult[12] = tmp14.fontId;
-                cResult[13] = stringResult;
-                tmp24 = stringResult;
+                const stringResult = intl2.string(guildId(isTryItOut[20])(tmp15.fontId));
+                cResult[13] = tmp15.fontId;
+                cResult[14] = stringResult;
+                tmp23 = stringResult;
               } else {
-                tmp24 = cResult[13];
+                tmp23 = cResult[14];
               }
               const _HermesInternal = HermesInternal;
-              class W {
-                constructor() {
-                  if (null == closure_6) {
-                    tmp11 = jsx;
-                    tmp12 = closure_0;
-                    tmp13 = closure_2;
-                    obj1 = { source: null, style: null };
-                    tmp14 = closure_1;
-                    tmp15 = closure_2;
-                    Icon = closure_0(closure_2[21]).Icon;
-                    obj1.source = closure_1(closure_2[22]);
-                    tmp16 = closure_3;
-                    obj1.style = closure_3.noneIcon;
-                    tmp10 = jsx(Icon, obj1);
-                  } else {
-                    tmp2 = jsx;
-                    tmp3 = View;
-                    obj = { style: null, children: null };
-                    tmp4 = closure_3;
-                    obj.style = closure_3.ggContainer;
-                    tmp5 = jsx;
-                    tmp6 = closure_1;
-                    tmp7 = closure_2;
-                    obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                    tmp8 = user;
-                    obj4.userId = user.id;
-                    tmp9 = guildId;
-                    obj4.guildId = guildId;
-                    obj4.pendingDisplayNameStyles = tmp;
-                    obj.children = jsx(closure_1(closure_2[23]), obj4);
-                    tmp10 = jsx(View, obj);
-                  }
-                  return tmp10;
-                }
-              }
-              combined = "" + tmp24 + " + " + tmp18.name;
+              combined = "" + tmp23 + " + " + tmp19.name;
             } else {
               const _Symbol = Symbol;
-              class W {
-                constructor() {
-                  if (null == closure_6) {
-                    tmp11 = jsx;
-                    tmp12 = closure_0;
-                    tmp13 = closure_2;
-                    obj1 = { source: null, style: null };
-                    tmp14 = closure_1;
-                    tmp15 = closure_2;
-                    Icon = closure_0(closure_2[21]).Icon;
-                    obj1.source = closure_1(closure_2[22]);
-                    tmp16 = closure_3;
-                    obj1.style = closure_3.noneIcon;
-                    tmp10 = jsx(Icon, obj1);
-                  } else {
-                    tmp2 = jsx;
-                    tmp3 = View;
-                    obj = { style: null, children: null };
-                    tmp4 = closure_3;
-                    obj.style = closure_3.ggContainer;
-                    tmp5 = jsx;
-                    tmp6 = closure_1;
-                    tmp7 = closure_2;
-                    obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                    tmp8 = user;
-                    obj4.userId = user.id;
-                    tmp9 = guildId;
-                    obj4.guildId = guildId;
-                    obj4.pendingDisplayNameStyles = tmp;
-                    obj.children = jsx(closure_1(closure_2[23]), obj4);
-                    tmp10 = jsx(View, obj);
-                  }
-                  return tmp10;
-                }
-              }
-              if (tmp20 === Symbol.for("react.memo_cache_sentinel")) {
+              if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
                 const intl = tmp(tmp2[19]).intl;
                 const stringResult1 = intl.string(tmp(isTryItOut[19]).t.PoWNfe);
-                class W {
-                  constructor() {
-                    if (null == closure_6) {
-                      tmp11 = jsx;
-                      tmp12 = closure_0;
-                      tmp13 = closure_2;
-                      obj1 = { source: null, style: null };
-                      tmp14 = closure_1;
-                      tmp15 = closure_2;
-                      Icon = closure_0(closure_2[21]).Icon;
-                      obj1.source = closure_1(closure_2[22]);
-                      tmp16 = closure_3;
-                      obj1.style = closure_3.noneIcon;
-                      tmp10 = jsx(Icon, obj1);
-                    } else {
-                      tmp2 = jsx;
-                      tmp3 = View;
-                      obj = { style: null, children: null };
-                      tmp4 = closure_3;
-                      obj.style = closure_3.ggContainer;
-                      tmp5 = jsx;
-                      tmp6 = closure_1;
-                      tmp7 = closure_2;
-                      obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                      tmp8 = user;
-                      obj4.userId = user.id;
-                      tmp9 = guildId;
-                      obj4.guildId = guildId;
-                      obj4.pendingDisplayNameStyles = tmp;
-                      obj.children = jsx(closure_1(closure_2[23]), obj4);
-                      tmp10 = jsx(View, obj);
-                    }
-                    return tmp10;
-                  }
-                }
-                cResult[11] = stringResult1;
+                cResult[12] = stringResult1;
                 combined = stringResult1;
               } else {
-                combined = cResult[11];
+                combined = cResult[12];
               }
             }
-            if (cResult[14] === tmp14) {
-              if (cResult[15] === guildId) {
-                if (cResult[16] === tmp4.ggContainer) {
-                  if (cResult[17] === tmp4.noneIcon) {
+            if (cResult[15] === tmp15) {
+              if (cResult[16] === guildId) {
+                if (cResult[17] === tmp4.ggContainer) {
+                  if (cResult[18] === tmp4.noneIcon) {
+                    let tmp25;
+                    let tmp26;
                     let tmp27;
                     let tmp30;
-                    if (cResult[18] === user.id) {
-                      tmp27 = cResult[19];
+                    let tmp33;
+                    let tmp34;
+                    let tmp36;
+                    if (cResult[19] === user.id) {
+                      tmp25 = cResult[20];
                     }
-                    if (cResult[20] !== tmp14) {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
+                    if (cResult[21] !== tmp15) {
+                      const fn2 = function k() {
+                        let effectId;
+                        let tmp3Result = null;
+                        if (null != closure_6) {
+                          let colors;
+                          const tmp3 = jsx;
+                          const tmp6 = DisplayNameStylesColorSwatchDefault;
+                          if (closure_6 != null) {
+                            colors = tmp.colors;
                           }
-                          return tmp3Result;
-                        }
-                      }
-                      cResult[20] = tmp14;
-                      class W {
-                        constructor() {
-                          if (null == closure_6) {
-                            tmp11 = jsx;
-                            tmp12 = closure_0;
-                            tmp13 = closure_2;
-                            obj1 = { source: null, style: null };
-                            tmp14 = closure_1;
-                            tmp15 = closure_2;
-                            Icon = closure_0(closure_2[21]).Icon;
-                            obj1.source = closure_1(closure_2[22]);
-                            tmp16 = closure_3;
-                            obj1.style = closure_3.noneIcon;
-                            tmp10 = jsx(Icon, obj1);
-                          } else {
-                            tmp2 = jsx;
-                            tmp3 = View;
-                            obj = { style: null, children: null };
-                            tmp4 = closure_3;
-                            obj.style = closure_3.ggContainer;
-                            tmp5 = jsx;
-                            tmp6 = closure_1;
-                            tmp7 = closure_2;
-                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                            tmp8 = user;
-                            obj4.userId = user.id;
-                            tmp9 = guildId;
-                            obj4.guildId = guildId;
-                            obj4.pendingDisplayNameStyles = tmp;
-                            obj.children = jsx(closure_1(closure_2[23]), obj4);
-                            tmp10 = jsx(View, obj);
+                          if (colors == null) {
+                            colors = [];
                           }
-                          return tmp10;
+                          const obj = { colors, effectId };
+                          effectId = undefined;
+                          if (closure_6 != null) {
+                            effectId = tmp.effectId;
+                          }
+                          tmp3Result = tmp3(tmp6, obj);
                         }
-                      }
-                      cResult[21] = R;
+                        return tmp3Result;
+                      };
+                      cResult[21] = tmp15;
+                      cResult[22] = fn2;
+                      tmp26 = fn2;
                     } else {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
+                      tmp26 = cResult[22];
+                    }
+                    const _Symbol2 = Symbol;
+                    if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
+                      const intl3 = tmp(tmp2[19]).intl;
+                      const stringResult2 = intl3.string(guildId(isTryItOut[25])["86GtGH"]);
+                      cResult[23] = stringResult2;
+                      tmp27 = stringResult2;
+                    } else {
+                      tmp27 = cResult[23];
+                    }
+                    const tmp29 = first === tmp(isTryItOut[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
+                    if (cResult[24] !== tmp29) {
+                      const tmp32 = jsx(tmp(isTryItOut[26]).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp29 });
+                      cResult[24] = tmp29;
+                      cResult[25] = tmp32;
+                      tmp30 = tmp32;
+                    } else {
+                      tmp30 = cResult[25];
+                    }
+                    if (cResult[26] !== combined) {
+                      const obj6 = { text: combined };
+                      cResult[26] = combined;
+                      cResult[27] = obj6;
+                      tmp33 = obj6;
+                    } else {
+                      tmp33 = cResult[27];
+                    }
+                    if (cResult[28] !== tmp25) {
+                      const tmp25Result = tmp25();
+                      cResult[28] = tmp25;
+                      cResult[29] = tmp25Result;
+                      tmp34 = tmp25Result;
+                    } else {
+                      tmp34 = cResult[29];
+                    }
+                    if (cResult[30] !== tmp26) {
+                      const tmp26Result = tmp26();
+                      cResult[30] = tmp26;
+                      cResult[31] = tmp26Result;
+                      tmp36 = tmp26Result;
+                    } else {
+                      tmp36 = cResult[31];
+                    }
+                    if (cResult[32] === combined) {
+                      if (cResult[33] === tmp20) {
+                        if (cResult[34] === tmp30) {
+                          if (cResult[35] === tmp33) {
+                            if (cResult[36] === tmp34) {
+                              let tmp38;
+                              if (cResult[37] === tmp36) {
+                                tmp38 = cResult[38];
+                              }
+                              return tmp38;
                             }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
                           }
-                          return tmp3Result;
                         }
                       }
                     }
-                    class W {
+                    class Y {
                       constructor() {
-                        if (null == closure_6) {
-                          tmp11 = jsx;
-                          tmp12 = closure_0;
-                          tmp13 = closure_2;
-                          obj1 = { source: null, style: null };
-                          tmp14 = closure_1;
-                          tmp15 = closure_2;
-                          Icon = closure_0(closure_2[21]).Icon;
-                          obj1.source = closure_1(closure_2[22]);
-                          tmp16 = closure_3;
-                          obj1.style = closure_3.noneIcon;
-                          tmp10 = jsx(Icon, obj1);
-                        } else {
-                          tmp2 = jsx;
-                          tmp3 = View;
-                          obj = { style: null, children: null };
-                          tmp4 = closure_3;
-                          obj.style = closure_3.ggContainer;
-                          tmp5 = jsx;
-                          tmp6 = closure_1;
-                          tmp7 = closure_2;
-                          obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                          tmp8 = user;
-                          obj4.userId = user.id;
-                          tmp9 = guildId;
-                          obj4.guildId = guildId;
-                          obj4.pendingDisplayNameStyles = tmp;
-                          obj.children = jsx(closure_1(closure_2[23]), obj4);
-                          tmp10 = jsx(View, obj);
-                        }
-                        return tmp10;
+                        const obj = AnalyticsUtilsDefault;
+                        obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+                        const obj2 = { guildId, isTryItOut };
+                        nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
+                        closure_5(ContentDismissActionType.TAKE_ACTION);
                       }
                     }
-                    if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                      const stringResult2 = obj7.string(guildId(isTryItOut[25])["86GtGH"]);
-                      class W {
-                        constructor() {
-                          if (null == closure_6) {
-                            tmp11 = jsx;
-                            tmp12 = closure_0;
-                            tmp13 = closure_2;
-                            obj1 = { source: null, style: null };
-                            tmp14 = closure_1;
-                            tmp15 = closure_2;
-                            Icon = closure_0(closure_2[21]).Icon;
-                            obj1.source = closure_1(closure_2[22]);
-                            tmp16 = closure_3;
-                            obj1.style = closure_3.noneIcon;
-                            tmp10 = jsx(Icon, obj1);
-                          } else {
-                            tmp2 = jsx;
-                            tmp3 = View;
-                            obj = { style: null, children: null };
-                            tmp4 = closure_3;
-                            obj.style = closure_3.ggContainer;
-                            tmp5 = jsx;
-                            tmp6 = closure_1;
-                            tmp7 = closure_2;
-                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                            tmp8 = user;
-                            obj4.userId = user.id;
-                            tmp9 = guildId;
-                            obj4.guildId = guildId;
-                            obj4.pendingDisplayNameStyles = tmp;
-                            obj.children = jsx(closure_1(closure_2[23]), obj4);
-                            tmp10 = jsx(View, obj);
-                          }
-                          return tmp10;
-                        }
-                      }
-                      cResult[22] = stringResult2;
-                      tmp30 = stringResult2;
-                    } else {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                    }
-                    const tmp32 = first === tmp(isTryItOut[12]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_NEW_BADGE_PROFILE_PAGE;
-                    if (cResult[23] !== tmp32) {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                      class W {
-                        constructor() {
-                          if (null == closure_6) {
-                            tmp11 = jsx;
-                            tmp12 = closure_0;
-                            tmp13 = closure_2;
-                            obj1 = { source: null, style: null };
-                            tmp14 = closure_1;
-                            tmp15 = closure_2;
-                            Icon = closure_0(closure_2[21]).Icon;
-                            obj1.source = closure_1(closure_2[22]);
-                            tmp16 = closure_3;
-                            obj1.style = closure_3.noneIcon;
-                            tmp10 = jsx(Icon, obj1);
-                          } else {
-                            tmp2 = jsx;
-                            tmp3 = View;
-                            obj = { style: null, children: null };
-                            tmp4 = closure_3;
-                            obj.style = closure_3.ggContainer;
-                            tmp5 = jsx;
-                            tmp6 = closure_1;
-                            tmp7 = closure_2;
-                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                            tmp8 = user;
-                            obj4.userId = user.id;
-                            tmp9 = guildId;
-                            obj4.guildId = guildId;
-                            obj4.pendingDisplayNameStyles = tmp;
-                            obj.children = jsx(closure_1(closure_2[23]), obj4);
-                            tmp10 = jsx(View, obj);
-                          }
-                          return tmp10;
-                        }
-                      }
-                      cResult[23] = tmp32;
-                      cResult[24] = tmp34;
-                    } else {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                    }
-                    if (cResult[25] !== combined) {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                      tmp36[0] = combined;
-                      class W {
-                        constructor() {
-                          if (null == closure_6) {
-                            tmp11 = jsx;
-                            tmp12 = closure_0;
-                            tmp13 = closure_2;
-                            obj1 = { source: null, style: null };
-                            tmp14 = closure_1;
-                            tmp15 = closure_2;
-                            Icon = closure_0(closure_2[21]).Icon;
-                            obj1.source = closure_1(closure_2[22]);
-                            tmp16 = closure_3;
-                            obj1.style = closure_3.noneIcon;
-                            tmp10 = jsx(Icon, obj1);
-                          } else {
-                            tmp2 = jsx;
-                            tmp3 = View;
-                            obj = { style: null, children: null };
-                            tmp4 = closure_3;
-                            obj.style = closure_3.ggContainer;
-                            tmp5 = jsx;
-                            tmp6 = closure_1;
-                            tmp7 = closure_2;
-                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                            tmp8 = user;
-                            obj4.userId = user.id;
-                            tmp9 = guildId;
-                            obj4.guildId = guildId;
-                            obj4.pendingDisplayNameStyles = tmp;
-                            obj.children = jsx(closure_1(closure_2[23]), obj4);
-                            tmp10 = jsx(View, obj);
-                          }
-                          return tmp10;
-                        }
-                      }
-                      cResult[26] = tmp36;
-                    } else {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                    }
-                    if (cResult[27] !== tmp27) {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                      cResult[27] = tmp27;
-                      class W {
-                        constructor() {
-                          if (null == closure_6) {
-                            tmp11 = jsx;
-                            tmp12 = closure_0;
-                            tmp13 = closure_2;
-                            obj1 = { source: null, style: null };
-                            tmp14 = closure_1;
-                            tmp15 = closure_2;
-                            Icon = closure_0(closure_2[21]).Icon;
-                            obj1.source = closure_1(closure_2[22]);
-                            tmp16 = closure_3;
-                            obj1.style = closure_3.noneIcon;
-                            tmp10 = jsx(Icon, obj1);
-                          } else {
-                            tmp2 = jsx;
-                            tmp3 = View;
-                            obj = { style: null, children: null };
-                            tmp4 = closure_3;
-                            obj.style = closure_3.ggContainer;
-                            tmp5 = jsx;
-                            tmp6 = closure_1;
-                            tmp7 = closure_2;
-                            obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                            tmp8 = user;
-                            obj4.userId = user.id;
-                            tmp9 = guildId;
-                            obj4.guildId = guildId;
-                            obj4.pendingDisplayNameStyles = tmp;
-                            obj.children = jsx(closure_1(closure_2[23]), obj4);
-                            tmp10 = jsx(View, obj);
-                          }
-                          return tmp10;
-                        }
-                      }
-                      cResult[28] = tmp38;
-                    } else {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                    }
-                    class M {
-                      constructor() {
-                        obj = closure_1(closure_2[18]);
-                        trackResult = obj.track(AnalyticEvents.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-                        obj1 = { guildId, isTryItOut };
-                        navigateResult = closure_4.navigate(UserSettingsSections.DISPLAY_NAME_STYLES, obj1);
-                        tmp3 = closure_5(ContentDismissActionType.TAKE_ACTION);
-                        return;
-                      }
-                    }
-                    if (cResult[31] === combined) {
-                      class R {
-                        constructor() {
-                          tmp = closure_6;
-                          tmp3Result = null;
-                          if (null != closure_6) {
-                            tmp4 = closure_1;
-                            tmp5 = closure_2;
-                            tmp3 = jsx;
-                            colors = undefined;
-                            tmp6 = closure_1(closure_2[24]);
-                            if (tmp != null) {
-                              colors = tmp.colors;
-                            }
-                            if (colors == null) {
-                              colors = [];
-                            }
-                            obj = { colors: null, effectId: null };
-                            obj.colors = colors;
-                            effectId = undefined;
-                            if (tmp != null) {
-                              effectId = tmp.effectId;
-                            }
-                            obj.effectId = effectId;
-                            tmp3Result = tmp3(tmp6, obj);
-                          }
-                          return tmp3Result;
-                        }
-                      }
-                    }
-                    cResult[31] = combined;
-                    cResult[32] = tmp19;
-                    cResult[33] = tmp33;
-                    cResult[34] = tmp35;
-                    cResult[35] = tmp37;
-                    cResult[36] = tmp39;
-                    cResult[37] = jsx(tmp(isTryItOut[26]).UserProfileEditFormButton, { label: tmp30, labelTrailing: tmp33, buttonText: combined, accessibilityValue: tmp35, onPress: tmp19, leading: tmp37, trailing: tmp39 });
-                    const tmp42 = jsx(tmp(isTryItOut[26]).UserProfileEditFormButton, { label: tmp30, labelTrailing: tmp33, buttonText: combined, accessibilityValue: tmp35, onPress: tmp19, leading: tmp37, trailing: tmp39 });
+                    const tmp39 = jsx(tmp(isTryItOut[26]).UserProfileEditFormButton, { label: tmp27, labelTrailing: tmp30, buttonText: combined, accessibilityValue: tmp33, onPress: tmp20, leading: tmp34, trailing: tmp36 });
+                    cResult[32] = combined;
+                    cResult[33] = tmp20;
+                    cResult[34] = tmp30;
+                    cResult[35] = tmp33;
+                    cResult[36] = tmp34;
+                    cResult[37] = tmp36;
+                    cResult[38] = tmp39;
+                    tmp38 = tmp39;
                   }
                 }
               }
             }
-            class W {
+            const fn = function x() {
+              let tmp10;
+              if (null == closure_6) {
+                const Icon = native.Icon;
+                tmp10 = <Icon source={AssetRegistryDefault} style={closure_3.noneIcon} />;
+              } else {
+                tmp10 = <View style={closure_3.ggContainer}>{null}</View>;
+              }
+              return tmp10;
+            };
+            cResult[15] = tmp15;
+            cResult[16] = guildId;
+            cResult[17] = tmp4.ggContainer;
+            class Y {
               constructor() {
-                if (null == closure_6) {
-                  tmp11 = jsx;
-                  tmp12 = closure_0;
-                  tmp13 = closure_2;
-                  obj1 = { source: null, style: null };
-                  tmp14 = closure_1;
-                  tmp15 = closure_2;
-                  Icon = closure_0(closure_2[21]).Icon;
-                  obj1.source = closure_1(closure_2[22]);
-                  tmp16 = closure_3;
-                  obj1.style = closure_3.noneIcon;
-                  tmp10 = jsx(Icon, obj1);
-                } else {
-                  tmp2 = jsx;
-                  tmp3 = View;
-                  obj = { style: null, children: null };
-                  tmp4 = closure_3;
-                  obj.style = closure_3.ggContainer;
-                  tmp5 = jsx;
-                  tmp6 = closure_1;
-                  tmp7 = closure_2;
-                  obj4 = { userId: null, guildId: null, userName: "Gg", pendingDisplayNameStyles: null, ignoreDisabledStylesSetting: true, variant: "heading-xl/semibold" };
-                  tmp8 = user;
-                  obj4.userId = user.id;
-                  tmp9 = guildId;
-                  obj4.guildId = guildId;
-                  obj4.pendingDisplayNameStyles = tmp;
-                  obj.children = jsx(closure_1(closure_2[23]), obj4);
-                  tmp10 = jsx(View, obj);
-                }
-                return tmp10;
+                const obj = AnalyticsUtilsDefault;
+                obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+                const obj2 = { guildId, isTryItOut };
+                nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
+                closure_5(ContentDismissActionType.TAKE_ACTION);
               }
             }
-            cResult[14] = tmp14;
-            cResult[15] = guildId;
-            cResult[16] = tmp4.ggContainer;
-            class M {
-              constructor() {
-                obj = closure_1(closure_2[18]);
-                trackResult = obj.track(AnalyticEvents.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-                obj1 = { guildId, isTryItOut };
-                navigateResult = closure_4.navigate(UserSettingsSections.DISPLAY_NAME_STYLES, obj1);
-                tmp3 = closure_5(ContentDismissActionType.TAKE_ACTION);
-                return;
-              }
-            }
-            cResult[18] = user.id;
-            cResult[19] = W;
-            tmp27 = W;
+            cResult[19] = user.id;
+            cResult[20] = fn;
+            tmp25 = fn;
           }
         }
       }
-      class M {
+      class Y {
         constructor() {
-          obj = closure_1(closure_2[18]);
-          trackResult = obj.track(AnalyticEvents.DISPLAY_NAME_STYLES_FROM_SETTINGS);
-          obj1 = { guildId, isTryItOut };
-          navigateResult = closure_4.navigate(UserSettingsSections.DISPLAY_NAME_STYLES, obj1);
-          tmp3 = closure_5(ContentDismissActionType.TAKE_ACTION);
-          return;
+          const obj = AnalyticsUtilsDefault;
+          obj.track(metroImportDefault.DISPLAY_NAME_STYLES_FROM_SETTINGS);
+          const obj2 = { guildId, isTryItOut };
+          nativeStackNavigation.navigate(metroImportAll.DISPLAY_NAME_STYLES, obj2);
+          closure_5(ContentDismissActionType.TAKE_ACTION);
         }
       }
-      cResult[6] = guildId;
-      cResult[7] = isTryItOut;
-      cResult[8] = tmp10;
-      cResult[9] = nativeStackNavigation;
-      cResult[10] = M;
-      tmp19 = M;
+      cResult[7] = guildId;
+      cResult[8] = isTryItOut;
+      cResult[9] = tmp11;
+      cResult[10] = nativeStackNavigation;
+      cResult[11] = Y;
+      tmp20 = Y;
     }
   }
-  const obj6 = { userId: user.id, guildId, pendingDisplayNameStyles: tryItOutDisplayNameStyles, ignoreDisabledStylesSetting: true };
-  cResult[2] = guildId;
-  cResult[3] = tryItOutDisplayNameStyles;
-  cResult[4] = user.id;
-  cResult[5] = obj6;
-  tmp12 = obj6;
+  const obj8 = { userId: user.id, guildId, pendingDisplayNameStyles: tryItOutDisplayNameStyles, ignoreDisabledStylesSetting: true };
+  cResult[3] = guildId;
+  cResult[4] = tryItOutDisplayNameStyles;
+  cResult[5] = user.id;
+  cResult[6] = obj8;
+  tmp13 = obj8;
 }) : (function UserProfileDisplayNameStylesEditButton(user) {
   let closure_3;
   let first;
@@ -955,7 +338,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   } else {
     items1 = [];
   }
-  [first, tmp9] = useSelectedDismissibleContent(items1, undefined, true);
+  [first, tmp9] = useSelectedDismissibleContent(items1, { bypassAutoDismiss: true });
   closure_5 = tmp9;
   const tmp2Result = user(tmp3[14]);
   const guildMemberOrUserPendingDisplayNameStyles = tmp2Result.useGuildMemberOrUserPendingDisplayNameStyles(user, guildId);
@@ -990,10 +373,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   const tmp18 = closure_5(() => {
     let stringResult;
     if (null == closure_6) {
-      const intl2 = intl3.intl;
-      stringResult = intl2.string(intl3.t.PoWNfe);
+      const intl2 = intl4.intl;
+      stringResult = intl2.string(intl4.t.PoWNfe);
     } else {
-      const intl = intl3.intl;
+      const intl = intl4.intl;
       const _HermesInternal = HermesInternal;
       stringResult = "" + intl.string(getDisplayNameStylesFontNameDefault(tmp.fontId)) + " + " + displayNameStylesEffectConfig.name;
     }

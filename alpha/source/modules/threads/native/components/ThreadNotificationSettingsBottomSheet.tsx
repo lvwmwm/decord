@@ -1,12 +1,12 @@
-// Module ID: 10444
-// Function ID: 10445
+// Module ID: 10433
+// Function ID: 10434
 // Name: ThreadNotificationSettingsBottomSheet
-// Dependencies: [1125, 21, 558, 576, 6088, 6828, 1126, 7874, 6264, 6885, 6265, 2]
+// Dependencies: [1125, 21, 558, 576, 6090, 6835, 1126, 7883, 6266, 6892, 6267, 2]
 
-// Module 10444 (ThreadNotificationSettingsBottomSheet)
+// Module 10433 (ThreadNotificationSettingsBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7874 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7883 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,10 +20,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
   let obj = channel(576);
   const cResult = obj.c(8);
   channel = channel.channel;
-  let obj2 = channel(6088);
+  let obj2 = channel(6090);
   const threadNotificationSetting = obj2.useThreadNotificationSetting(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(6828).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6835).BottomSheetTitleHeader;
     const intl = tmp(1126).intl;
     const tmp7 = <BottomSheetTitleHeader title={intl.string(channel(1126).t.h850Ss)} />;
     cResult[0] = tmp7;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
     }
     return tmp14;
   }
-  const ActionSheet = tmp(6885).ActionSheet;
+  const ActionSheet = tmp(6892).ActionSheet;
   const tmp15 = <ActionSheet header={first}>{null}</ActionSheet>;
   cResult[5] = threadNotificationSetting;
   cResult[6] = tmp8;
@@ -73,11 +73,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
   let intl;
   let intl2;
   channel = channel.channel;
-  let obj = channel(6088);
+  let obj = channel(6090);
   const threadNotificationSetting = obj.useThreadNotificationSetting(channel);
-  const ActionSheet = channel(6885).ActionSheet;
+  const ActionSheet = channel(6892).ActionSheet;
   ({ title: intl.string(channel(1126).t.h850Ss) });
-  const BottomSheetTitleHeader = channel(6828).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = channel(6835).BottomSheetTitleHeader;
   intl = channel(1126).intl;
   ({
     hasIcons: false,
@@ -94,7 +94,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadNoti
       return jsx(channel(dependencyMap[8]).TableRadioRow, { value: setting, label }, "" + setting);
     })
   });
-  const TableRadioGroup = channel(6265).TableRadioGroup;
+  const TableRadioGroup = channel(6267).TableRadioGroup;
   intl2 = channel(1126).intl;
   arr = closure_3();
   return <ActionSheet header={null}>{null}</ActionSheet>;

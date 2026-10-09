@@ -1,10 +1,10 @@
-// Module ID: 10845
-// Function ID: 10846
+// Module ID: 11018
+// Function ID: 11019
 // Name: MobileGoLiveUpsellExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 10845 (MobileGoLiveUpsellExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 11018 (MobileGoLiveUpsellExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

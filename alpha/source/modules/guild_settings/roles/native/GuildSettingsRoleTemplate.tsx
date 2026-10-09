@@ -1,27 +1,27 @@
-// Module ID: 18117
-// Function ID: 18118
+// Module ID: 18277
+// Function ID: 18278
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 5079, 2086, 18113, 1085, 21, 5090, 587, 558, 576, 6618, 1496, 5360, 4810, 1264, 5105, 5086, 1200, 11311, 5375, 1126, 8380, 6189, 10101, 2]
+// Dependencies: [32, 19, 17, 5080, 2086, 18273, 1085, 21, 5091, 587, 558, 576, 6625, 1497, 5361, 4811, 1265, 5106, 5087, 1200, 10679, 5376, 1126, 8388, 6191, 10086, 2]
 
-// Module 18117 (GuildSettingsRoleTemplate)
+// Module 18277 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5360 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6618 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11311 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5361 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6625 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10679 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18113 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18273 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,9 +41,9 @@ let obj3;
 let tmp11;
 let tmp2;
 let unpackModuleId;
-const ReanimatedRexport = tmp11(4810);
-const _modDef8380 = tmp2(8380);
-const PaginationDefault = tmp2(10101);
+const ReanimatedRexport = tmp11(4811);
+const _modDef8388 = tmp2(8388);
+const PaginationDefault = tmp2(10086);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = react_native);
 ({ PermissionTemplateTypes: c9, PermissionTemplates: c10, DEFAULT_TEMPLATE_TYPE: unpackModuleId } = GuildSettingsRoleConstants);
@@ -337,7 +337,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   const values = Object.values(num);
   let obj4 = { ref, style: tmp.container, children: items3 };
   let obj5 = { style: tmp.sliderContainer, children: items2 };
-  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8380, obj7) };
+  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8388, obj7) };
   obj7 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: closure_9.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   items2 = [closure_14(ref1, obj6), ];
   let obj8 = {
@@ -424,10 +424,10 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
           const obj = { style: closure_3.templateContent, children: items };
           const obj2 = { source: AssetRegistryDefault, size: native.IconSizes.MEDIUM, color: nativeDefault.unsafe_rawColors.GREEN_360 };
           const Icon = native.Icon;
-          items = [authStore2(Icon, obj2), ];
+          items = [authStore3(Icon, obj2), ];
           const obj3 = { style: closure_3.templateContentText, variant: "text-sm/medium", children };
-          items[1] = authStore2(Text_Text.Text, obj3);
-          return authStore3(hasOwnProperty, obj, "" + item.key + "_content_" + index);
+          items[1] = authStore3(Text_Text.Text, obj3);
+          return authStore4(hasOwnProperty, obj, "" + item.key + "_content_" + index);
         })
       };
       contentsResult = item.contents();

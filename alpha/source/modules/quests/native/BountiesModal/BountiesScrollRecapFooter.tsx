@@ -1,23 +1,23 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15244
+// Function ID: 15245
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 5079, 21, 5090, 587, 1381, 558, 576, 6654, 1126, 5086, 9009, 504, 4860, 2]
+// Dependencies: [19, 17, 5080, 21, 5091, 587, 1382, 558, 576, 6661, 1126, 5087, 9020, 504, 4861, 2]
 
-// Module 15134 (BountiesScrollRecapFooter)
+// Module 15244 (BountiesScrollRecapFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4860 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
-import OrbsIcon from "OrbsIcon" /* 9009 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4861 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6661 */;
+import OrbsIcon from "OrbsIcon" /* 9020 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

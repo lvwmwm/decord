@@ -1,11 +1,11 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12055
+// Function ID: 12056
 // Name: GamePlatformAvailabilityUtils
-// Dependencies: [12116, 2]
+// Dependencies: [12053, 2]
 // Exports: getOrderedGamePlatforms
 
-// Module 12118 (GamePlatformAvailabilityUtils)
-import GamePlatformAvailability from "GamePlatformAvailability" /* 12116 */;
+// Module 12055 (GamePlatformAvailabilityUtils)
+import GamePlatformAvailability from "GamePlatformAvailability" /* 12053 */;
 import size from "module_2" /* 2 */;
 
 let set;

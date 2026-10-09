@@ -1,14 +1,14 @@
-// Module ID: 12171
-// Function ID: 12172
+// Module ID: 12110
+// Function ID: 12111
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: [19, 5436, 6786, 558, 576, 504, 6849, 6842, 2]
+// Dependencies: [19, 5437, 6793, 558, 576, 504, 6856, 6849, 2]
 
-// Module 12171 (useRequiredLinkedLobbyApplicationAuthorization)
+// Module 12110 (useRequiredLinkedLobbyApplicationAuthorization)
 import react from "react" /* 19 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6786 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6842 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6849 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6793 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6849 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6856 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

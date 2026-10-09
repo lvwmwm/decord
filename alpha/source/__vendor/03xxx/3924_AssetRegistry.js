@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/friends", scales: [1], hash: "a65520573904ed06314b4631d1305aed", name: "Friends.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/friends", scales: [1], hash: "5c07817bbbf13f50ad420522bd5ebdcf", name: "Friends.compiled.messages", type: "jsona" });

@@ -1,23 +1,23 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16855
+// Function ID: 16856
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 8429, 16693, 558, 576, 16730, 504, 14482, 16698, 8644, 8447, 16697, 8442, 8446, 16731, 2]
+// Dependencies: [32, 19, 8437, 16819, 558, 576, 16856, 504, 14578, 16824, 8652, 8455, 16823, 8450, 8454, 16857, 2]
 
-// Module 16729 (useSharedICYMILogic)
-import ICYMITypes from "ICYMITypes" /* 8442 */;
-import ICYMIUtils from "ICYMIUtils" /* 8446 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8447 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 14482 */;
-import ICYMIConstants from "ICYMIConstants" /* 16693 */;
-import ICYMIStoreUtils from "ICYMIStoreUtils" /* 16697 */;
+// Module 16855 (useSharedICYMILogic)
+import ICYMITypes from "ICYMITypes" /* 8450 */;
+import ICYMIUtils from "ICYMIUtils" /* 8454 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8455 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 14578 */;
+import ICYMIConstants from "ICYMIConstants" /* 16819 */;
+import ICYMIStoreUtils from "ICYMIStoreUtils" /* 16823 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8429 */;
+import ICYMIStore from "ICYMIStore" /* 8437 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_12, importDefault;
+let importDefault;
 
 const SCROLL_EVENT_THROTTLE_MS = ICYMIConstants.SCROLL_EVENT_THROTTLE_MS;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSharedICYMILogic(arg0) {
@@ -422,7 +422,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSharedICY
   const mapped = found.map((item) => item.item.id);
   let arr = mapped.pop();
   const tmp13 = require("react")(arr);
-  closure_12 = tmp13;
+  let closure_12 = tmp13;
   const items6 = [stateFromStores2, lastScrollEventTimestamp, tmp13, arr, loadId, stateFromStores1];
   const effect1 = allUnreadItemsHydrated.useEffect(() => {
     const tmp = stateFromStores2;

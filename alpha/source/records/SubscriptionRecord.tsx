@@ -1,17 +1,17 @@
-// Module ID: 4733
-// Function ID: 4734
+// Module ID: 4735
+// Function ID: 4736
 // Name: SubscriptionRecord
-// Dependencies: [1404, 4734, 4735, 1085, 4737, 1391, 4738, 38, 1381, 4739, 1988, 2]
+// Dependencies: [1405, 4736, 4737, 1085, 4739, 1392, 4740, 38, 1382, 4741, 1989, 2]
 
-// Module 4733 (SubscriptionRecord)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1988 */;
-import PremiumSubscription from "PremiumSubscription" /* 4738 */;
-import Record from "Record" /* 1404 */;
-import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4734 */;
-import InvoiceRecord from "InvoiceRecord" /* 4735 */;
+// Module 4735 (SubscriptionRecord)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
+import PremiumSubscription from "PremiumSubscription" /* 4740 */;
+import Record from "Record" /* 1405 */;
+import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 4736 */;
+import InvoiceRecord from "InvoiceRecord" /* 4737 */;
 import Constants from "Constants" /* 1085 */;
-import BillingConstants from "BillingConstants" /* 4737 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import BillingConstants from "BillingConstants" /* 4739 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ class SubscriptionRecord extends Record {
     let planId = type.items[0].planId;
     let planId2 = null;
     if (type.type === metroImportAll.PREMIUM) {
-      ({ interval, intervalCount } = closure_12[type.items[0].planId]);
+      ({ interval, intervalCount } = authStore2[type.items[0].planId]);
       const obj = PremiumSubscription;
       const basePlanIdForSubscriptionItems = obj.getBasePlanIdForSubscriptionItems(type.items, interval, intervalCount);
       planId = basePlanIdForSubscriptionItems;
@@ -51,7 +51,7 @@ class SubscriptionRecord extends Record {
       tmp10 = basePlanIdForSubscriptionItems;
       const tmp12 = require;
       if (null != renewalMutations) {
-        const tmp12Result = tmp12(4738);
+        const tmp12Result = tmp12(4740);
         const basePlanIdForSubscriptionItems1 = tmp12Result.getBasePlanIdForSubscriptionItems(renewalMutations.items, interval, intervalCount);
         planId2 = basePlanIdForSubscriptionItems1;
         tmp9 = basePlanIdForSubscriptionItems1;
@@ -164,7 +164,7 @@ class SubscriptionRecord extends Record {
     if (someResult) {
       const items = this.items;
       someResult = items.some((item) => {
-        const tmp = closure_12[item.planId];
+        const tmp = authStore2[item.planId];
         const obj = PremiumTypeUtils;
         return obj.isPremiumAtLeast(tmp.premiumType, TIER_2);
       });

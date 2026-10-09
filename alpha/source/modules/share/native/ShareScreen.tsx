@@ -1,28 +1,28 @@
-// Module ID: 13952
-// Function ID: 13953
+// Module ID: 14049
+// Function ID: 14050
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2067, 2063, 4707, 1085, 11576, 10202, 21, 5090, 587, 1381, 1126, 13953, 11577, 13954, 13955, 1264, 9251, 5101, 8458, 9203, 11615, 1999, 5299, 13956, 13957, 6212, 9232, 1627, 6203, 11588, 13958, 2]
+// Dependencies: [5, 32, 19, 17, 2068, 2064, 4709, 1085, 11509, 10187, 21, 5091, 587, 1382, 1126, 14050, 11510, 14051, 14052, 1265, 9289, 5102, 8466, 9237, 11548, 2000, 5300, 14053, 14054, 6214, 9270, 1628, 6205, 11521, 14055, 2]
 // Exports: default
 
-// Module 13952 (ShareScreen)
+// Module 14049 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import HeaderShared from "HeaderShared" /* 9232 */;
-import UserRowConstants from "UserRowConstants" /* 10202 */;
-import ForwardConstants from "ForwardConstants" /* 11576 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 13956 */;
-import ShareEmbedDefault from "ShareEmbed" /* 13957 */;
+import HeaderShared from "HeaderShared" /* 9270 */;
+import UserRowConstants from "UserRowConstants" /* 10187 */;
+import ForwardConstants from "ForwardConstants" /* 11509 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 14053 */;
+import ShareEmbedDefault from "ShareEmbed" /* 14054 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 let attachment_mimetypes, c4, channelId, closure_0, closure_1, closure_4, destination;
@@ -304,7 +304,7 @@ export default function ShareScreen(appEntryKey) {
                                         tmp = undefined;
                                         c5 = 1;
                                         c6 = 1;
-                                        return { value: "Reflect", done: true };
+                                        return { value: "Set", done: true };
                                       }
                                     } else if (1 === c5) {
                                       if (arg0 === 1) {
@@ -476,12 +476,12 @@ export default function ShareScreen(appEntryKey) {
     let tmp4Result;
     if (null != embed) {
       const obj = { attachments: sharedContent.attachments, isRevamp: true };
-      const items = [authStore4(ShareAttachmentsDefault, obj), ];
+      const items = [authStore5(ShareAttachmentsDefault, obj), ];
       embed = undefined;
       const tmp10 = ShareEmbedDefault;
-      const tmp4 = authStore5;
+      const tmp4 = authStore6;
       const tmp5 = closure_17;
-      const tmp6 = authStore4;
+      const tmp6 = authStore5;
       if (embed != null) {
         embed = tmp.embed;
       }
@@ -512,7 +512,7 @@ export default function ShareScreen(appEntryKey) {
         const obj = { count: tmp2 };
         subtitle = intl.formatToPlainString(intl4.t["3Fbkir"], obj);
       }
-      return authStore4(HeaderShared.GenericHeaderTitle, { title, subtitle, subtitleColor: "text-feedback-warning", variant: "redesign/heading-18/bold" });
+      return authStore5(HeaderShared.GenericHeaderTitle, { title, subtitle, subtitleColor: "text-feedback-warning", variant: "redesign/heading-18/bold" });
     },
     headerTitleAlign: "center",
     headerLeft: headerCloseButton,

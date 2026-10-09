@@ -1,18 +1,18 @@
-// Module ID: 16070
-// Function ID: 16071
+// Module ID: 16186
+// Function ID: 16187
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 5938, 7966, 1085, 21, 558, 576, 16063, 1126, 2127, 8800, 1502, 14940, 14943, 11262, 14898, 14775, 2]
+// Dependencies: [19, 5939, 7974, 1085, 21, 558, 576, 16179, 1126, 2127, 8809, 1503, 15052, 15055, 10629, 15010, 14883, 2]
 
-// Module 16070 (DataAndPrivacyScreen)
+// Module 16186 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8800 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
-import SettingLayoutDefault from "SettingLayout" /* 14775 */;
-import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 14898 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8809 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingLayoutDefault from "SettingLayout" /* 14883 */;
+import SettingsScreenNoticesDefault from "SettingsScreenNotices" /* 15010 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 5938 */;
+import ConsentStore from "ConsentStore" /* 5939 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -293,7 +293,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   let tmp8;
   let obj = stackNavigation(576);
   const cResult = obj.c(8);
-  let obj2 = stackNavigation(1502);
+  let obj2 = stackNavigation(1503);
   stackNavigation = obj2.useStackNavigation();
   const tmp6 = closure_11(stackNavigation);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -323,7 +323,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { screen: stackNavigation(14898).SettingsScreen.DATA_AND_PRIVACY };
+      const obj3 = { screen: stackNavigation(15010).SettingsScreen.DATA_AND_PRIVACY };
       const tmp20 = SettingsScreenNoticesDefault;
       const tmp21 = closure_8(tmp20, obj3);
       cResult[5] = tmp21;
@@ -347,9 +347,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   }
   const obj6 = { sections: items2 };
   items2 = [...tmp6];
-  const createList = tmp2(11262).createList;
+  const createList = tmp2(10629).createList;
   const obj7 = { label: intl.string(stackNavigation(1126).t.Me5lVK), settings: items3, subLabel: format(prop, obj8) };
-  stackNavigation(11262);
+  stackNavigation(10629);
   intl = tmp2(1126).intl;
   items3 = [, ];
   ({ DATA_AND_PRIVACY_SECURE_FRAMES_PERSISTENT_CODES: arr3[0], ENCRYPTION_VERIFIED_DEVICES: arr3[1] } = MobileUserSettings);
@@ -358,7 +358,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   obj8 = { helpArticle: tmp2Result2.getSecureFramesHelpdeskArticle() };
   prop = tmp2(1126).t["/6sFWa"];
   const items4 = [obj7];
-  tmp2Result2 = stackNavigation(8800);
+  tmp2Result2 = stackNavigation(8809);
   const obj9 = { label: intl3.string(stackNavigation(1126).t["+uHbqE"]), settings: items5, subLabel: intl4.format(stackNavigation(1126).t.R5N31P, obj10) };
   const arraySpreadResult = HermesBuiltin.arraySpread(items2, items4, tmp12);
   intl3 = tmp2(1126).intl;
@@ -378,7 +378,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
   let fetchedConsents;
   let items1;
   let stackNavigation;
-  let obj = stackNavigation(1502);
+  let obj = stackNavigation(1503);
   stackNavigation = obj.useStackNavigation();
   const tmp2 = closure_11(stackNavigation);
   importDefault = tmp2;
@@ -430,7 +430,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DataAndPri
     HermesBuiltin.arraySpread(items, items4, arraySpreadResult);
     return createList(obj);
   }, items);
-  let obj3 = { screen: stackNavigation(14898).SettingsScreen.DATA_AND_PRIVACY };
+  let obj3 = { screen: stackNavigation(15010).SettingsScreen.DATA_AND_PRIVACY };
   const tmp5 = SettingsScreenNoticesDefault;
   items1 = [closure_8(tmp5, obj3), closure_8(SettingLayoutDefault, { node: memo })];
   return closure_10(closure_9, obj2);

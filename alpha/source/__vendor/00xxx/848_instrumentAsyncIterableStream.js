@@ -303,7 +303,7 @@ let obj = function _instrumentAsyncIterableStream() {
                 closure_3 = undefined;
                 value4 = undefined;
                 value5 = undefined;
-                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__packager_asset", cacheCreationInputTokens: "sk", cacheReadInputTokens: "fill", toolCalls: [], activeToolBlocks: {} };
+                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "k", cacheCreationInputTokens: "application", cacheReadInputTokens: "it", toolCalls: [], activeToolBlocks: {} };
                 closure_4 = false;
                 c5 = false;
                 c9 = 4;
@@ -1062,7 +1062,7 @@ export const instrumentAsyncIterableStream = function instrumentAsyncIterableStr
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
   let closure_0 = arg1;
   let closure_1 = flag;
-  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__packager_asset", cacheCreationInputTokens: "sk", cacheReadInputTokens: "fill", toolCalls: [], activeToolBlocks: {} };
+  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "k", cacheCreationInputTokens: "application", cacheReadInputTokens: "it", toolCalls: [], activeToolBlocks: {} };
   applyResult.on("streamEvent", (arg0) => {
     processEvent(arg0, obj, flag, closure_0);
   });

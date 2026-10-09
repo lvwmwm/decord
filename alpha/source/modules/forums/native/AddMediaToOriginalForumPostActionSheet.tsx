@@ -1,25 +1,25 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11626
+// Function ID: 11627
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2063, 7232, 2086, 5428, 1085, 21, 5090, 587, 9651, 7737, 7752, 5054, 9204, 9201, 11, 7732, 9203, 7874, 1294, 11691, 7167, 8218, 5298, 1126, 558, 576, 504, 6841, 7876, 7741, 11692, 5086, 5376, 6829, 2]
+// Dependencies: [32, 5, 19, 17, 2064, 7237, 2086, 5429, 1085, 21, 5091, 587, 9670, 7746, 7761, 5055, 9238, 9235, 11, 7741, 9237, 7883, 1295, 11627, 7172, 8226, 5299, 1126, 558, 576, 504, 6848, 7885, 7750, 11628, 5087, 5377, 6836, 2]
 
-// Module 11690 (AddMediaToOriginalForumPostActionSheet)
+// Module 11626 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import DraftStore from "DraftStore" /* 7232 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7741 */;
-import Tracking from "Tracking" /* 7876 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import DraftStore from "DraftStore" /* 7237 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7750 */;
+import Tracking from "Tracking" /* 7885 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import MessageStore from "MessageStore" /* 5428 */;
+import MessageStore from "MessageStore" /* 5429 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ let obj = function _upload2() {
               anyErrorMessage = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -207,7 +207,7 @@ let obj = function _upload2() {
           } else {
             if (5 === c8) {
               c7 = 0;
-              closure_12 = closure_6;
+              let closure_12 = closure_6;
               c2(false);
               let obj4 = closure_133_1(closure_133_2[15]);
               obj4.hideActionSheet();

@@ -1,25 +1,25 @@
-// Module ID: 8219
-// Function ID: 8220
+// Module ID: 8227
+// Function ID: 8228
 // Name: transformEmbeds
-// Dependencies: [17, 1085, 8220, 8221, 5743, 8222, 1381, 7863, 5415, 1126, 8093, 4750, 6976, 6982, 5905, 2]
+// Dependencies: [17, 1085, 8228, 8229, 5744, 8230, 1382, 7872, 5416, 1126, 8101, 4752, 6983, 6989, 5906, 2]
 // Exports: default
 
-// Module 8219 (transformEmbeds)
+// Module 8227 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import DateUtils from "DateUtils" /* 4750 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5415 */;
-import EmbedUtils from "EmbedUtils" /* 5743 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5905 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6976 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6982 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7863 */;
-import MarkupParsers from "MarkupParsers" /* 8093 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8220 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8221 */;
-import utils from "utils" /* 8222 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import DateUtils from "DateUtils" /* 4752 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5416 */;
+import EmbedUtils from "EmbedUtils" /* 5744 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5906 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6983 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6989 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7872 */;
+import MarkupParsers from "MarkupParsers" /* 8101 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8228 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8229 */;
+import utils from "utils" /* 8230 */;
 import size from "module_2" /* 2 */;
 
 let borderLeftColor, type;
@@ -33,6 +33,7 @@ export default function transformEmbeds(arg0) {
   let channelId;
   let closure_10;
   let closure_11;
+  let closure_12;
   let closure_13;
   let closure_5;
   let closure_6;
@@ -76,7 +77,7 @@ export default function transformEmbeds(arg0) {
     let imageSrc;
     let intl;
     let intl2;
-    let obj21;
+    let obj22;
     let provider;
     let proxyURL;
     let proxyURL2;
@@ -87,8 +88,8 @@ export default function transformEmbeds(arg0) {
     let str12;
     let stringResult;
     let tmp35;
-    let tmp3Result14;
-    let tmp3Result15;
+    let tmp3Result16;
+    let tmp3Result17;
     let tmp44;
     let tmp50;
     let type2;
@@ -119,310 +120,315 @@ export default function transformEmbeds(arg0) {
                     return [];
                   }
                 }
-                const tmp3Result13 = EmbedUtils;
-                if (tmp3Result13.isSocialLayerStorefrontArticleEmbed(type)) {
+                const tmp3Result14 = EmbedUtils;
+                if (tmp3Result14.isSocialLayerStorefrontArticleEmbed(type)) {
                   return [];
                 } else {
-                  let mapped;
-                  let tmp8 = null;
-                  if (MessageEmbedTypes) {
-                    tmp8 = null;
-                    if (null != type.thumbnail) {
-                      const thumbnail = type.thumbnail;
-                      ({ proxyURL, width, height } = thumbnail);
-                      let obj2 = { width: tmp3Result14.sanitizeMediaDimension(width), height: tmp3Result15.sanitizeMediaDimension(height), proxyURL: imageSrc, url: getImageSrc(proxyURL, width, height, !importDefault) };
-                      const url = thumbnail.url;
-                      let merged = Object.assign(thumbnail);
-                      tmp3Result14 = sanitizeMediaDimension;
-                      imageSrc = proxyURL;
-                      tmp3Result15 = sanitizeMediaDimension;
-                      if (null != proxyURL) {
-                        const obj6 = RowGeneratorUtilsDefault;
-                        imageSrc = obj6.getImageSrc(proxyURL, width, height, !importDefault);
+                  const tmp3Result15 = EmbedUtils;
+                  if (tmp3Result15.isUserProfileArticleEmbed(type)) {
+                    return [];
+                  } else {
+                    let mapped;
+                    let tmp8 = null;
+                    if (MessageEmbedTypes) {
+                      tmp8 = null;
+                      if (null != type.thumbnail) {
+                        const thumbnail = type.thumbnail;
+                        ({ proxyURL, width, height } = thumbnail);
+                        let obj2 = { width: tmp3Result16.sanitizeMediaDimension(width), height: tmp3Result17.sanitizeMediaDimension(height), proxyURL: imageSrc, url: getImageSrc(proxyURL, width, height, !importDefault) };
+                        const url = thumbnail.url;
+                        let merged = Object.assign(thumbnail);
+                        tmp3Result16 = sanitizeMediaDimension;
+                        imageSrc = proxyURL;
+                        tmp3Result17 = sanitizeMediaDimension;
+                        if (null != proxyURL) {
+                          const obj7 = RowGeneratorUtilsDefault;
+                          imageSrc = obj7.getImageSrc(proxyURL, width, height, !importDefault);
+                        }
+                        getImageSrc = RowGeneratorUtilsDefault.getImageSrc;
+                        if (proxyURL == null) {
+                          proxyURL = url;
+                        }
+                        tmp8 = obj2;
                       }
-                      getImageSrc = RowGeneratorUtilsDefault.getImageSrc;
-                      if (proxyURL == null) {
-                        proxyURL = url;
+                    }
+                    let tmp26 = null;
+                    if (MessageEmbedTypes) {
+                      tmp26 = null;
+                      if (null != type.image) {
+                        tmp26 = renderEmbedMedia(type.image);
                       }
-                      tmp8 = obj2;
                     }
-                  }
-                  let tmp26 = null;
-                  if (MessageEmbedTypes) {
-                    tmp26 = null;
-                    if (null != type.image) {
-                      tmp26 = renderEmbedMedia(type.image);
-                    }
-                  }
-                  if (MessageEmbedTypes) {
-                    if (null != type.images) {
-                      const images = type.images;
-                      mapped = images.map(renderEmbedMedia);
-                    }
-                    let tmp32 = tmp8;
-                    if (null != tmp8) {
-                      tmp32 = tmp8;
-                      if (null != type.video) {
-                        if (type.type !== MessageEmbedTypes.GIFV) {
-                          if (type.type === MessageEmbedTypes.VIDEO || type.type === MessageEmbedTypes.RICH || type.type === MessageEmbedTypes.ARTICLE) {
-                            let tmp46 = tmp35;
-                            const tmp45 = type.type !== MessageEmbedTypes.GIFV || importDefault;
-                            if (!tmp45) {
-                              let obj3 = { gifvUrlForPortal: tmp50 };
-                              const merged1 = Object.assign(tmp35);
-                              ({ proxyURL: proxyURL3, url: url3 } = type.video);
-                              tmp50 = url3;
-                              if (null != proxyURL3) {
+                    if (MessageEmbedTypes) {
+                      if (null != type.images) {
+                        const images = type.images;
+                        mapped = images.map(renderEmbedMedia);
+                      }
+                      let tmp32 = tmp8;
+                      if (null != tmp8) {
+                        tmp32 = tmp8;
+                        if (null != type.video) {
+                          if (type.type !== MessageEmbedTypes.GIFV) {
+                            if (type.type === MessageEmbedTypes.VIDEO || type.type === MessageEmbedTypes.RICH || type.type === MessageEmbedTypes.ARTICLE) {
+                              let tmp46 = tmp35;
+                              const tmp45 = type.type !== MessageEmbedTypes.GIFV || importDefault;
+                              if (!tmp45) {
+                                let obj3 = { gifvUrlForPortal: tmp50 };
+                                const merged1 = Object.assign(tmp35);
+                                ({ proxyURL: proxyURL3, url: url3 } = type.video);
                                 tmp50 = url3;
-                                if ("" !== proxyURL3) {
-                                  tmp50 = proxyURL3;
+                                if (null != proxyURL3) {
+                                  tmp50 = url3;
+                                  if ("" !== proxyURL3) {
+                                    tmp50 = proxyURL3;
+                                  }
+                                }
+                                tmp46 = obj3;
+                              }
+                              ({ proxyURL: proxyURL4, url: url4 } = type.video);
+                              let tmp52 = url4;
+                              const isWebPlayerVideoUrl = tmp3(5416).isWebPlayerVideoUrl;
+                              MediaFormatTesters;
+                              if (null != proxyURL4) {
+                                tmp52 = url4;
+                                if ("" !== proxyURL4) {
+                                  tmp52 = proxyURL4;
                                 }
                               }
-                              tmp46 = obj3;
-                            }
-                            ({ proxyURL: proxyURL4, url: url4 } = type.video);
-                            let tmp52 = url4;
-                            const isWebPlayerVideoUrl = tmp3(5415).isWebPlayerVideoUrl;
-                            MediaFormatTesters;
-                            if (null != proxyURL4) {
-                              tmp52 = url4;
-                              if ("" !== proxyURL4) {
-                                tmp52 = proxyURL4;
+                              tmp32 = tmp46;
+                              if (isWebPlayerVideoUrl(tmp52)) {
+                                let obj4 = { inlinePlaybackDisabled: true };
+                                const merged2 = Object.assign(tmp46);
+                                tmp32 = obj4;
                               }
                             }
-                            tmp32 = tmp46;
-                            if (isWebPlayerVideoUrl(tmp52)) {
-                              let obj4 = { inlinePlaybackDisabled: true };
-                              const merged2 = Object.assign(tmp46);
-                              tmp32 = obj4;
-                            }
-                          }
-                          tmp35 = tmp8;
-                          if (type.type === MessageEmbedTypes.VIDEO || type.type === MessageEmbedTypes.RICH || type.type === MessageEmbedTypes.ARTICLE) {
                             tmp35 = tmp8;
-                            if (null == type.video.proxyURL) {
-                              const provider2 = type.provider;
-                              let name;
-                              const getEffectiveVideoProvider = tmp3(5743).getEffectiveVideoProvider;
-                              EmbedUtils;
-                              if (provider2 != null) {
-                                name = provider2.name;
-                              }
-                              const effectiveVideoProvider = getEffectiveVideoProvider(name, type.video.url);
+                            if (type.type === MessageEmbedTypes.VIDEO || type.type === MessageEmbedTypes.RICH || type.type === MessageEmbedTypes.ARTICLE) {
                               tmp35 = tmp8;
-                              const tmp3Result18 = renderer_EmbedUtils;
-                              if (tmp3Result18.shouldPlayVideoInline(effectiveVideoProvider)) {
-                                const obj5 = { showPlayButton: true };
-                                const merged3 = Object.assign(tmp8);
-                                tmp35 = obj5;
-                              }
-                            }
-                          }
-                        }
-                        const obj7 = { gifv: type.type === MessageEmbedTypes.GIFV, videoUrl: tmp44 };
-                        const merged4 = Object.assign(tmp8);
-                        ({ proxyURL: proxyURL2, url: url2 } = type.video);
-                        tmp44 = url2;
-                        if (null != proxyURL2) {
-                          tmp44 = url2;
-                          if ("" !== proxyURL2) {
-                            tmp44 = proxyURL2;
-                          }
-                        }
-                        tmp35 = obj7;
-                      }
-                    }
-                    let tmp57 = tmp32;
-                    const tmp56 = null != tmp32 && type.type === MessageEmbedTypes.GIFV;
-                    if (tmp56) {
-                      const obj8 = { role: intl.string(intl6.t.OBp3V3), hint: intl2.string(intl6.t.IPzNKE) };
-                      const merged5 = Object.assign(tmp32);
-                      intl = tmp3(1126).intl;
-                      intl2 = tmp3(1126).intl;
-                      tmp57 = obj8;
-                    }
-                    const tmp61 = borderLeftColor;
-                    borderLeftColor = borderLeftColor.embedBorderLeftColor;
-                    const tmp62 = null != type.color && "" !== type.color;
-                    if (tmp62) {
-                      borderLeftColor = processColor(type.color);
-                    }
-                    if (null != type.url) {
-                      let parseEmbedTitleMarkup;
-                      if ("" !== type.url) {
-                        parseEmbedTitleMarkup = tmp3(8093).parseEmbedTitleMarkupWithoutLinks;
-                      }
-                      if (type.type === MessageEmbedTypes.RICH) {
-                        let rawTitle;
-                        let tmp72;
-                        if (null != type.rawTitle) {
-                          rawTitle = parseEmbedTitleMarkup(type.rawTitle, require);
-                        }
-                        type = type.type;
-                        let result;
-                        if (MessageEmbedTypes.IMAGE !== type) {
-                          if (MessageEmbedTypes.VIDEO !== type) {
-                            if (MessageEmbedTypes.GIFV !== type) {
-                              if (MessageEmbedTypes.RICH === type) {
-                                if (null != type.rawDescription) {
-                                  const obj9 = { description: type.rawDescription, channelId: require, isField: false, ignoreCache: processColor, showListsAndHeaders, showMaskedLinks };
-                                  const tmp3Result19 = MarkupParsers;
-                                  result = tmp3Result19.parseEmbedDescriptionMarkup(obj9);
+                              if (null == type.video.proxyURL) {
+                                const provider2 = type.provider;
+                                let name;
+                                const getEffectiveVideoProvider = tmp3(5744).getEffectiveVideoProvider;
+                                EmbedUtils;
+                                if (provider2 != null) {
+                                  name = provider2.name;
                                 }
-                              } else {
-                                result = type.rawDescription;
+                                const effectiveVideoProvider = getEffectiveVideoProvider(name, type.video.url);
+                                tmp35 = tmp8;
+                                const tmp3Result20 = renderer_EmbedUtils;
+                                if (tmp3Result20.shouldPlayVideoInline(effectiveVideoProvider)) {
+                                  const obj5 = { showPlayButton: true };
+                                  const merged3 = Object.assign(tmp8);
+                                  tmp35 = obj5;
+                                }
                               }
                             }
                           }
-                        }
-                        let fields = type.fields;
-                        if (fields == null) {
-                          fields = [];
-                        }
-                        const mapped1 = fields.map((rawName) => {
-                          let result = null;
-                          if (null != rawName.rawName) {
-                            const obj = MarkupParsers;
-                            result = obj.parseEmbedTitleMarkup(rawName.rawName, require);
-                          }
-                          let result1 = null;
-                          if (null != rawName.rawValue) {
-                            const obj3 = { description: rawName.rawValue, channelId: require, isField: true, ignoreCache, replaceMap: { "\t": "" }, showListsAndHeaders, showMaskedLinks };
-                            const obj2 = MarkupParsers;
-                            result1 = obj2.parseEmbedDescriptionMarkup(obj3);
-                          }
-                          const obj4 = { name: result, value: result1 };
-                          const merged = Object.assign(rawName);
-                          return obj4;
-                        });
-                        let calendarFormatResult = null;
-                        if (null != type.timestamp) {
-                          const tmp3Result20 = DateUtils;
-                          calendarFormatResult = tmp3Result20.calendarFormat(type.timestamp);
-                        }
-                        if (null != type.footer) {
-                          const text = type.footer.text;
-                          let combined = text;
-                          if (null != calendarFormatResult) {
-                            const _HermesInternal = HermesInternal;
-                            combined = "" + text + " | " + calendarFormatResult;
-                          }
-                          const obj10 = { content: combined };
-                          const merged6 = Object.assign(type.footer);
-                          if (null != type.footer.iconProxyURL) {
-                            let iconURL;
-                            if ("" !== type.footer.iconProxyURL) {
-                              iconURL = type.footer.iconProxyURL;
-                            }
-                            tmp72 = obj10;
-                            if (null != iconURL) {
-                              const obj19 = RowGeneratorUtilsDefault;
-                              obj10.iconURL = obj19.getImageSrc(iconURL, 16, 16, !importDefault);
-                              tmp72 = obj10;
+                          const obj6 = { gifv: type.type === MessageEmbedTypes.GIFV, videoUrl: tmp44 };
+                          const merged4 = Object.assign(tmp8);
+                          ({ proxyURL: proxyURL2, url: url2 } = type.video);
+                          tmp44 = url2;
+                          if (null != proxyURL2) {
+                            tmp44 = url2;
+                            if ("" !== proxyURL2) {
+                              tmp44 = proxyURL2;
                             }
                           }
-                          iconURL = type.footer.iconURL;
-                        } else if (null != calendarFormatResult) {
-                          tmp72 = { content: calendarFormatResult, text: "" };
-                          const obj11 = { content: calendarFormatResult, text: "" };
+                          tmp35 = obj6;
                         }
-                        let tmp81;
-                        if (null != type.author) {
-                          if (null != type.author.iconProxyURL) {
-                            let iconURL2;
-                            let author;
-                            if ("" !== type.author.iconProxyURL) {
-                              iconURL2 = type.author.iconProxyURL;
-                            }
-                            if (null != iconURL2) {
-                              const obj12 = { iconURL: obj21.getImageSrc(iconURL2, 16, 16, !importDefault) };
-                              const merged7 = Object.assign(type.author);
-                              author = obj12;
-                              obj21 = RowGeneratorUtilsDefault;
-                            } else {
-                              author = type.author;
-                            }
-                            tmp81 = author;
-                          }
-                          iconURL2 = type.author.iconURL;
-                        }
-                        let tmp88;
-                        if (type.type === MessageEmbedTypes.COMPONENTS) {
-                          let mapped2;
-                          const components = type.components;
-                          if (dependencyMap) {
-                            mapped2 = components.map((item) => {
-                              const obj = { spoiler: true };
-                              const merged = Object.assign(item);
-                              return obj;
-                            });
-                          } else {
-                            mapped2 = components;
-                          }
-                          tmp88 = closure_13(mapped2);
-                        }
-                        const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                        const getMediaObscuredReasonFromBitmask = tmp3(6976).getMediaObscuredReasonFromBitmask;
-                        ObscuredMediaUtils;
-                        let isMediaScanPendingResult = !closure_10;
-                        const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj13, closure_9);
-                        const tmp93 = closure_9;
-                        if (!closure_10) {
-                          const obj14 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                          const isMediaScanPending = tmp3(6976).isMediaScanPending;
-                          ObscuredMediaUtils;
-                          isMediaScanPendingResult = isMediaScanPending(obj14, tmp93);
-                        }
-                        let isVerifiedTeenResult = tmp97;
-                        if (isVerifiedTeenResult) {
-                          const tmp3Result23 = AgeVerificationUtils;
-                          isVerifiedTeenResult = tmp3Result23.isVerifiedTeen();
-                        }
-                        let str10 = type.id;
-                        if (str10 == null) {
-                          str10 = "";
-                        }
-                        const obj15 = { id: str10, type: type2, spoiler: str12, obscure: stringResult, obscureAwaitingScan: str11, verifyAge: mediaObscuredReasonFromBitmask.length > 0 && closure_12, obscureHideControls: isVerifiedTeenResult, obscureIsOpaque: mediaObscuredReasonFromBitmask.length > 0, provider, author: tmp81, rawTitle: type.rawTitle, title: rawTitle, url: url5, rawDescription: type.rawDescription, description: result, thumbnail: tmp57, image: tmp26, images: mapped, fields: mapped1, components: tmp88, footer: tmp72, video, borderLeftColor, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId, backgroundColor };
-                        type2 = type.type;
-                        str11 = "";
-                        str12 = "";
-                        if (dependencyMap) {
-                          const intl3 = tmp3(1126).intl;
-                          const str13 = intl3.string(intl6.t["F+x38C"]);
-                          str12 = str13.toUpperCase();
-                        }
-                        stringResult = str11;
-                        if (mediaObscuredReasonFromBitmask.length > 0) {
-                          const intl4 = tmp3(1126).intl;
-                          stringResult = intl4.string(tmp3(1126).t.SpxcUR);
-                        }
-                        if (isMediaScanPendingResult) {
-                          const intl5 = tmp3(1126).intl;
-                          str11 = intl5.string(tmp3(1126).t.MRdR7z);
-                        }
-                        provider = type.provider;
-                        url5 = type.url;
-                        video = type.video;
-                        ({ embedProviderColor: obj25.providerColor, embedHeaderTextColor: obj25.headerTextColor, embedBodyTextColor: obj25.bodyTextColor } = tmp61);
-                        referenceId = type.referenceId;
-                        return obj15;
                       }
-                      rawTitle = type.rawTitle;
+                      let tmp57 = tmp32;
+                      const tmp56 = null != tmp32 && type.type === MessageEmbedTypes.GIFV;
+                      if (tmp56) {
+                        const obj8 = { role: intl.string(intl6.t.OBp3V3), hint: intl2.string(intl6.t.IPzNKE) };
+                        const merged5 = Object.assign(tmp32);
+                        intl = tmp3(1126).intl;
+                        intl2 = tmp3(1126).intl;
+                        tmp57 = obj8;
+                      }
+                      const tmp61 = borderLeftColor;
+                      borderLeftColor = borderLeftColor.embedBorderLeftColor;
+                      const tmp62 = null != type.color && "" !== type.color;
+                      if (tmp62) {
+                        borderLeftColor = processColor(type.color);
+                      }
+                      if (null != type.url) {
+                        let parseEmbedTitleMarkup;
+                        if ("" !== type.url) {
+                          parseEmbedTitleMarkup = tmp3(8101).parseEmbedTitleMarkupWithoutLinks;
+                        }
+                        if (type.type === MessageEmbedTypes.RICH) {
+                          let rawTitle;
+                          let tmp72;
+                          if (null != type.rawTitle) {
+                            rawTitle = parseEmbedTitleMarkup(type.rawTitle, require);
+                          }
+                          type = type.type;
+                          let result;
+                          if (MessageEmbedTypes.IMAGE !== type) {
+                            if (MessageEmbedTypes.VIDEO !== type) {
+                              if (MessageEmbedTypes.GIFV !== type) {
+                                if (MessageEmbedTypes.RICH === type) {
+                                  if (null != type.rawDescription) {
+                                    const obj9 = { description: type.rawDescription, channelId: require, isField: false, ignoreCache: processColor, showListsAndHeaders, showMaskedLinks };
+                                    const tmp3Result21 = MarkupParsers;
+                                    result = tmp3Result21.parseEmbedDescriptionMarkup(obj9);
+                                  }
+                                } else {
+                                  result = type.rawDescription;
+                                }
+                              }
+                            }
+                          }
+                          let fields = type.fields;
+                          if (fields == null) {
+                            fields = [];
+                          }
+                          const mapped1 = fields.map((rawName) => {
+                            let result = null;
+                            if (null != rawName.rawName) {
+                              const obj = MarkupParsers;
+                              result = obj.parseEmbedTitleMarkup(rawName.rawName, require);
+                            }
+                            let result1 = null;
+                            if (null != rawName.rawValue) {
+                              const obj3 = { description: rawName.rawValue, channelId: require, isField: true, ignoreCache, replaceMap: { "\t": "" }, showListsAndHeaders, showMaskedLinks };
+                              const obj2 = MarkupParsers;
+                              result1 = obj2.parseEmbedDescriptionMarkup(obj3);
+                            }
+                            const obj4 = { name: result, value: result1 };
+                            const merged = Object.assign(rawName);
+                            return obj4;
+                          });
+                          let calendarFormatResult = null;
+                          if (null != type.timestamp) {
+                            const tmp3Result22 = DateUtils;
+                            calendarFormatResult = tmp3Result22.calendarFormat(type.timestamp);
+                          }
+                          if (null != type.footer) {
+                            const text = type.footer.text;
+                            let combined = text;
+                            if (null != calendarFormatResult) {
+                              const _HermesInternal = HermesInternal;
+                              combined = "" + text + " | " + calendarFormatResult;
+                            }
+                            const obj10 = { content: combined };
+                            const merged6 = Object.assign(type.footer);
+                            if (null != type.footer.iconProxyURL) {
+                              let iconURL;
+                              if ("" !== type.footer.iconProxyURL) {
+                                iconURL = type.footer.iconProxyURL;
+                              }
+                              tmp72 = obj10;
+                              if (null != iconURL) {
+                                const obj20 = RowGeneratorUtilsDefault;
+                                obj10.iconURL = obj20.getImageSrc(iconURL, 16, 16, !importDefault);
+                                tmp72 = obj10;
+                              }
+                            }
+                            iconURL = type.footer.iconURL;
+                          } else if (null != calendarFormatResult) {
+                            tmp72 = { content: calendarFormatResult, text: "" };
+                            const obj11 = { content: calendarFormatResult, text: "" };
+                          }
+                          let tmp81;
+                          if (null != type.author) {
+                            if (null != type.author.iconProxyURL) {
+                              let iconURL2;
+                              let author;
+                              if ("" !== type.author.iconProxyURL) {
+                                iconURL2 = type.author.iconProxyURL;
+                              }
+                              if (null != iconURL2) {
+                                const obj12 = { iconURL: obj22.getImageSrc(iconURL2, 16, 16, !importDefault) };
+                                const merged7 = Object.assign(type.author);
+                                author = obj12;
+                                obj22 = RowGeneratorUtilsDefault;
+                              } else {
+                                author = type.author;
+                              }
+                              tmp81 = author;
+                            }
+                            iconURL2 = type.author.iconURL;
+                          }
+                          let tmp88;
+                          if (type.type === MessageEmbedTypes.COMPONENTS) {
+                            let mapped2;
+                            const components = type.components;
+                            if (dependencyMap) {
+                              mapped2 = components.map((item) => {
+                                const obj = { spoiler: true };
+                                const merged = Object.assign(item);
+                                return obj;
+                              });
+                            } else {
+                              mapped2 = components;
+                            }
+                            tmp88 = closure_13(mapped2);
+                          }
+                          const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
+                          const getMediaObscuredReasonFromBitmask = tmp3(6983).getMediaObscuredReasonFromBitmask;
+                          ObscuredMediaUtils;
+                          let isMediaScanPendingResult = !closure_10;
+                          const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj13, closure_9);
+                          const tmp93 = closure_9;
+                          if (!closure_10) {
+                            const obj14 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
+                            const isMediaScanPending = tmp3(6983).isMediaScanPending;
+                            ObscuredMediaUtils;
+                            isMediaScanPendingResult = isMediaScanPending(obj14, tmp93);
+                          }
+                          let isVerifiedTeenResult = tmp97;
+                          if (isVerifiedTeenResult) {
+                            const tmp3Result25 = AgeVerificationUtils;
+                            isVerifiedTeenResult = tmp3Result25.isVerifiedTeen();
+                          }
+                          let str10 = type.id;
+                          if (str10 == null) {
+                            str10 = "";
+                          }
+                          const obj15 = { id: str10, type: type2, spoiler: str12, obscure: stringResult, obscureAwaitingScan: str11, verifyAge: mediaObscuredReasonFromBitmask.length > 0 && closure_12, obscureHideControls: isVerifiedTeenResult, obscureIsOpaque: mediaObscuredReasonFromBitmask.length > 0, provider, author: tmp81, rawTitle: type.rawTitle, title: rawTitle, url: url5, rawDescription: type.rawDescription, description: result, thumbnail: tmp57, image: tmp26, images: mapped, fields: mapped1, components: tmp88, footer: tmp72, video, borderLeftColor, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId, backgroundColor };
+                          type2 = type.type;
+                          str11 = "";
+                          str12 = "";
+                          if (dependencyMap) {
+                            const intl3 = tmp3(1126).intl;
+                            const str13 = intl3.string(intl6.t["F+x38C"]);
+                            str12 = str13.toUpperCase();
+                          }
+                          stringResult = str11;
+                          if (mediaObscuredReasonFromBitmask.length > 0) {
+                            const intl4 = tmp3(1126).intl;
+                            stringResult = intl4.string(tmp3(1126).t.SpxcUR);
+                          }
+                          if (isMediaScanPendingResult) {
+                            const intl5 = tmp3(1126).intl;
+                            str11 = intl5.string(tmp3(1126).t.MRdR7z);
+                          }
+                          provider = type.provider;
+                          url5 = type.url;
+                          video = type.video;
+                          ({ embedProviderColor: obj26.providerColor, embedHeaderTextColor: obj26.headerTextColor, embedBodyTextColor: obj26.bodyTextColor } = tmp61);
+                          referenceId = type.referenceId;
+                          return obj15;
+                        }
+                        rawTitle = type.rawTitle;
+                      }
+                      parseEmbedTitleMarkup = tmp3(8101).parseEmbedTitleMarkup;
                     }
-                    parseEmbedTitleMarkup = tmp3(8093).parseEmbedTitleMarkup;
-                  }
-                  let tmp28 = null == tmp26;
-                  if (!tmp28) {
-                    const tmp3Result24 = PlatformUtils;
-                    tmp28 = !tmp3Result24.isIOS();
-                  }
-                  mapped = null;
-                  const tmp29 = !tmp28 && null == type.thumbnail;
-                  if (tmp29) {
+                    let tmp28 = null == tmp26;
+                    if (!tmp28) {
+                      const tmp3Result26 = PlatformUtils;
+                      tmp28 = !tmp3Result26.isIOS();
+                    }
                     mapped = null;
-                    if (null != tmp26) {
-                      const items = [tmp26];
-                      mapped = items;
+                    const tmp29 = !tmp28 && null == type.thumbnail;
+                    if (tmp29) {
+                      mapped = null;
+                      if (null != tmp26) {
+                        const items = [tmp26];
+                        mapped = items;
+                      }
                     }
                   }
                 }

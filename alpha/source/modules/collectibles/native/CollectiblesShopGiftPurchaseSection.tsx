@@ -1,26 +1,26 @@
-// Module ID: 12716
-// Function ID: 12717
+// Module ID: 12661
+// Function ID: 12662
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8292, 7132, 1085, 1391, 21, 5090, 587, 6656, 10081, 504, 8284, 10085, 6841, 10167, 1264, 12717, 584, 5940, 5298, 12718, 1999, 1381, 10100, 5086, 1126, 5375, 2]
+// Dependencies: [5, 32, 19, 17, 8300, 7137, 1085, 1392, 21, 5091, 587, 6663, 10066, 504, 8292, 10070, 6848, 10152, 1265, 12662, 584, 5941, 5299, 12663, 2000, 1382, 10085, 5087, 1126, 5376, 2]
 // Exports: default
 
-// Module 12716 (CollectiblesShopGiftPurchaseSection)
+// Module 12661 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7132 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7137 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8292 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8300 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;

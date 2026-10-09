@@ -1,14 +1,14 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7537
+// Function ID: 7538
 // Name: GoogleWalletActionCreators
-// Dependencies: [5, 502, 1085, 5927, 1294, 7531, 2]
+// Dependencies: [5, 502, 1085, 5928, 1295, 7538, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 7530 (GoogleWalletActionCreators)
+// Module 7537 (GoogleWalletActionCreators)
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
-import react_nativeDefault from "react-native" /* 7531 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5928 */;
+import react_nativeDefault from "react-native" /* 7538 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

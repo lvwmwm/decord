@@ -1,17 +1,17 @@
-// Module ID: 15986
-// Function ID: 15987
+// Module ID: 16102
+// Function ID: 16103
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 5090, 558, 576, 5086, 6186, 5373, 14051, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 5087, 6188, 5374, 14148, 2]
 
-// Module 15986 (UserSettingsDesignSystemAILoader)
+// Module 16102 (UserSettingsDesignSystemAILoader)
 import react2 from "react" /* 576 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import Card_Card from "Card/Card" /* 6186 */;
-import AILoader from "AILoader" /* 14051 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import Card_Card from "Card/Card" /* 6188 */;
+import AILoader from "AILoader" /* 14148 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const Text_Text = tmp(5086);
+const Text_Text = tmp(5087);
 ({ ScrollView: c2, View: c3 } = react_native);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { padding: 16 }, row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" } });
@@ -85,9 +85,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { children: hasOwnProperty(Stack, obj3) };
-    const Card = tmp(6186).Card;
+    const Card = tmp(6188).Card;
     obj3 = { children: items };
-    Stack = tmp(5373).Stack;
+    Stack = tmp(5374).Stack;
     items = [
       React3(Text_Text.Text, { variant: "text-lg/bold", children: "Sizes" }),
       React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
@@ -107,11 +107,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { spacing: 24, children: items1 };
     items1 = [first, ];
-    const Stack2 = tmp(5373).Stack;
+    const Stack2 = tmp(5374).Stack;
     const obj5 = { children: hasOwnProperty(Stack3, obj6) };
-    const Card2 = tmp(6186).Card;
+    const Card2 = tmp(6188).Card;
     obj6 = { children: items2 };
-    Stack3 = tmp(5373).Stack;
+    Stack3 = tmp(5374).Stack;
     items2 = [
       React3(Text_Text.Text, { variant: "text-lg/bold", children: "Colors" }),
       React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),

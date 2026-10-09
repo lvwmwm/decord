@@ -1,12 +1,12 @@
-// Module ID: 8278
-// Function ID: 8279
+// Module ID: 8286
+// Function ID: 8287
 // Name: useCurrentUser
-// Dependencies: [1389, 558, 576, 504, 38, 2]
+// Dependencies: [1390, 558, 576, 504, 38, 2]
 
-// Module 8278 (useCurrentUser)
+// Module 8286 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,473 +1,341 @@
 // Module ID: 1301
 // Function ID: 1302
-// Dependencies: [1300, 1298, 1302]
+// Dependencies: [1299]
 
 // Module 1301
-import _mod1298 from "module_1298" /* 1298 */;
-import _mod1300 from "module_1300" /* 1300 */;
-import getSideChannel from "getSideChannel" /* 1302 */;
+import _mod1299 from "module_1299" /* 1299 */;
 
-let obj = {
-  brackets(arg0) {
-    return arg0 + "[]";
-  },
-  comma: "comma",
-  indices(arg0, arg1) {
-    return arg0 + "[" + arg1 + "]";
-  },
-  repeat(arg0) {
-    return arg0;
+let hasOwnProperty;
+
+let merge;
+let items = [];
+let num = 0;
+do {
+  let tmp = num;
+  let str = "";
+  let push = items.push;
+  if (num < 16) {
+    str = "0";
   }
-};
-function pushToArray(arg0, arg1) {
-
+  let str2 = str + num.toString(16);
+  let arr = push(`%${str2.toUpperCase()}`);
+  num = num + 1;
+} while (num < 256);
+function arrayToObject(arg0, plainObjects) {
+  const tmp = plainObjects;
+  if (tmp) {
+    let obj;
+    let num;
+    if (plainObjects.plainObjects) {
+      obj = Object.create(null);
+    }
+    for (let num = 0; num < arg0.length; num = num + 1) {
+      if (undefined !== arg0[num]) {
+        obj[num] = arg0[num];
+      }
+    }
+    return obj;
+  }
+  obj = {};
 }
-let obj2 = {
-  addQueryPrefix: false,
-  allowDots: false,
-  allowEmptyArrays: false,
-  arrayFormat: "indices",
-  charset: "utf-8",
-  charsetSentinel: false,
-  commaRoundTrip: false,
-  delimiter: "&",
-  encode: true,
-  encodeDotInKeys: false,
-  encoder: _mod1300.encode,
-  encodeValuesOnly: false,
-  filter: "r",
-  format: _mod1298.default,
-  formatter: _mod1298.formatters[_mod1298.default],
-  indices: false,
-  serializeDate(arg0) {
-    return toISOString.call(arg0);
+let c6 = 1024;
+let obj = {
+  arrayToObject,
+  assign: function assignSingleSource(arg0, arg1) {
+    let closure_0 = arg1;
+    const keys = Object.keys(arg1);
+    return keys.reduce((acc, item) => {
+      acc[item] = closure_0[item];
+      return acc;
+    }, arg0);
   },
-  skipNulls: 1,
-  strictNullHandling: 1
-};
-let closure_9 = {};
-function stringify(parts1, arg1, fn, arg3, arg4, arg5, arg6, arg7, fn2, fn3, arg10, arg11, fn4, arg13, fn5, arg15, arg16, get) {
-  let items4;
-  let str2;
-  let closure_0 = fn4;
-  let value4 = get.get(closure_9);
-  let flag = false;
-  let num = 0;
-  let num2 = 0;
-  if (undefined !== value4) {
-    while (true) {
-      let value5 = value4.get(parts1);
-      let num3 = num + 1;
-      let flag2 = flag;
-      if (undefined !== value5) {
-        flag2 = true;
-        if (value5 === num3) {
-          break;
+  combine(arg0, arg1) {
+    items = [];
+    return items.concat(arg0, arg1);
+  },
+  compact(o) {
+    let num;
+    items = [];
+    const obj = { obj: { o }, prop: "o" };
+    items[0] = obj;
+    const items1 = [];
+    for (let num = 0; num < items.length; num = num + 1) {
+      let num2;
+      let tmp = items[num];
+      let tmp2 = tmp.obj[tmp.prop];
+      let _Object = Object;
+      let keys = Object.keys(tmp2);
+      for (let num2 = 0; num2 < keys.length; num2 = num2 + 1) {
+        let tmp4 = keys[num2];
+        let tmp5 = tmp2[tmp4];
+        let tmp6 = typeof tmp5 === "object";
+        if (typeof tmp5 === "object") {
+          tmp6 = null !== tmp5;
+        }
+        if (tmp6) {
+          tmp6 = -1 === items1.indexOf(tmp5);
+        }
+        if (tmp6) {
+          let obj2 = { obj: tmp2, prop: tmp4 };
+          let arr = items.push(obj2);
+          let arr2 = items1.push(tmp5);
         }
       }
-      let tmp3 = closure_9;
-      if (undefined === value4.get(closure_9)) {
-        num3 = 0;
-      }
-      let value6 = value4.get(tmp3);
-      num2 = num3;
-      if (undefined !== value6) {
-        num = num3;
-        value4 = value6;
-        num2 = num3;
-        flag = flag2;
-      }
     }
-    const _RangeError = RangeError;
-    const self = this;
-    const self2 = this;
-    const rangeError = new RangeError("Cyclic object value");
-    throw rangeError;
-  }
-  if (typeof fn3 === "function") {
-    str2 = fn3(arg1, parts1);
-  } else {
-    const _Date = Date;
-    if (parts1 instanceof Date) {
-      str2 = fn4(parts1);
+    if (items.length > 1) {
+      do {
+        let arr3 = items.pop();
+        let arr4 = arr3.obj[arr3.prop];
+        if (isArray(arr4)) {
+          let num3;
+          let items2 = [];
+          for (let num3 = 0; num3 < arr4.length; num3 = num3 + 1) {
+            if (undefined !== arr4[num3]) {
+              let arr5 = items2.push(arr4[num3]);
+            }
+          }
+          arr3.obj[arr3.prop] = items2;
+        }
+      } while (items.length > 1);
+    }
+    return o;
+  },
+  decode(str, arg1, arg2) {
+    str = str.replace(/\+/g, " ");
+    if ("iso-8859-1" === arg2) {
+      const _unescape = unescape;
+      return str.replace(/%[0-9a-f]{2}/gi, unescape);
     } else {
-      str2 = parts1;
-      const tmp5 = "comma" === fn && isArray(parts1);
-      if (tmp5) {
-        obj2 = _mod1300;
-        str2 = obj2.maybeMap(parts1, (arg0) => {
-          let tmp = arg0;
-          if (arg0 instanceof Date) {
-            tmp = closure_0(arg0);
-          }
-          return tmp;
-        });
+      try {
+        const _decodeURIComponent = decodeURIComponent;
+        return decodeURIComponent(str);
+      } catch (err) {
+        return str;
       }
     }
-  }
-  if (null === str2) {
-    str2 = "";
-    if (arg5) {
-      let tmp74 = arg1;
-      if (fn2) {
-        tmp74 = arg1;
-        if (!arg15) {
-          tmp74 = fn2(arg1, obj2.encoder, arg16, "key", arg13);
+  },
+  encode(str, arg1, arg2, arg3, arg4) {
+    if (0 === str.length) {
+      return str;
+    } else {
+      let callResult;
+      if (typeof str === "symbol") {
+        const _Symbol = Symbol;
+        callResult = toString.call(str);
+      } else {
+        callResult = str;
+        if (typeof str !== "string") {
+          const _String = String;
+          callResult = String(str);
         }
       }
-      return tmp74;
-    }
-  }
-  const tmp9 = typeof str2 === "string" || typeof str2 === "number" || typeof str2 === "boolean" || typeof str2 === "symbol" || typeof str2 === "bigint";
-  if (!tmp9) {
-    const obj3 = _mod1300;
-    const tmp10 = require;
-    if (!obj3.isBuffer(str2)) {
-      const items = [];
-      if (undefined === str2) {
-        return items;
+      if ("iso-8859-1" === arg2) {
+        const _escape = escape;
+        const str4 = escape(callResult);
+        return str4.replace(/%u[0-9a-f]{4}/gi, (arr) => "%26%23" + parseInt(arr.slice(2), 16) + "%3B");
       } else {
-        let arr2;
-        let arr3;
-        let tmp14;
-        if ("comma" === fn) {
-          let replaced;
-          const tmp12 = isArray;
-          if (isArray(str2)) {
-            let maybeMapResult = str2;
-            const tmp17 = arg15 && fn2;
-            if (tmp17) {
-              const tmp10Result = tmp10(1300);
-              maybeMapResult = tmp10Result.maybeMap(str2, fn2);
+        let num2 = 0;
+        let str2 = "";
+        let str3 = "";
+        if (0 < callResult.length) {
+          do {
+            let substr = callResult;
+            if (callResult.length >= c6) {
+              substr = callResult.slice(num2, num2 + tmp3);
             }
-            let tmp18;
-            if (maybeMapResult.length > 0) {
-              tmp18 = maybeMapResult.join(",") || null;
-              maybeMapResult.join(",") || null;
-            }
-            const items1 = [{ value: tmp18 }];
-            arr2 = items1;
-            arr3 = maybeMapResult;
-            tmp14 = tmp12;
-            obj = { value: tmp18 };
-          }
-          const _String = String;
-          const str4 = String(arg1);
-          if (arg7) {
-            replaced = str4.replace(/\./g, "%2E");
-          } else {
-            replaced = str4;
-          }
-          let text = replaced;
-          if (arg3) {
-            text = replaced;
-            if (tmp14(arr3)) {
-              text = replaced;
-              if (1 === arr3.length) {
-                text = `${tmp22}[]`;
-              }
-            }
-          }
-          const tmp25 = arg4;
-          if (tmp25) {
-            if (tmp14(arr3)) {
-              if (0 === arr3.length) {
-                return text + "[]";
-              }
-            }
-          }
-          let num4 = 0;
-          if (0 < arr2.length) {
-            while (true) {
-              let iter = arr2[num4];
-              if (typeof iter === "object") {
-                if (iter) {
-                  if (undefined !== iter.value) {
-                    let value = iter.value;
-                    if (!arg6) {
-                      if (arg11) {
-                        if (arg7) {
-                          let sum;
-                          let _String3 = String;
-                          let str11 = String(iter);
-                          let replaced1 = str11.replace(/\./g, "%2E");
-                          let tmp28 = isArray;
-                          if (isArray(arr3)) {
-                            let tmp31 = text;
-                            if (typeof fn === "function") {
-                              tmp31 = fn(text, replaced1);
-                            }
-                            sum = tmp31;
-                          } else {
-                            let text1;
-                            if (arg11) {
-                              text1 = `.${tmp27}`;
-                            } else {
-                              text1 = `${"[" + tmp27}]`;
-                            }
-                            sum = text + text1;
-                          }
-                          let result = get.set(parts1, num2);
-                          let obj7 = getSideChannel();
-                          let result1 = obj7.set(closure_9, get);
-                          if (tmp84) {
-                            let tmp39;
-                            if (arg15) {
-                              tmp39 = null;
-                            }
-                            let tmp38Result = tmp38(value, sum, fn, arg3, arg4, arg5, arg6, arg7, tmp39, fn3, arg10, arg11, fn4, arg13, fn5, arg15, arg16, obj7);
-                            if (typeof tmp37 !== "function") {
-                              break;
-                            } else {
-                              let apply = push.apply;
-                              let tmp60 = tmp38Result;
-                              if (!tmp28(tmp38Result)) {
-                                let items2 = [tmp38Result];
-                                tmp60 = items2;
+            items = [];
+            let num = 0;
+            if (0 < substr.length) {
+              while (true) {
+                let charCodeAtResult = substr.charCodeAt(num);
+                if (45 !== charCodeAtResult) {
+                  if (46 !== charCodeAtResult) {
+                    if (95 !== charCodeAtResult) {
+                      if (126 !== charCodeAtResult) {
+                        if (charCodeAtResult < 48) {
+                          if (charCodeAtResult < 65) {
+                            if (charCodeAtResult < 97) {
+                              if (arg4 !== _mod1299.RFC1738) {
+                                let sum;
+                                if (charCodeAtResult < 128) {
+                                  items[items.length] = items[charCodeAtResult];
+                                  sum = num;
+                                } else if (charCodeAtResult < 2048) {
+                                  items[items.length] = items[192 | charCodeAtResult >> 6] + items[128 | 63 & charCodeAtResult];
+                                  sum = num;
+                                } else {
+                                  if (charCodeAtResult >= 55296) {
+                                    if (charCodeAtResult < 57344) {
+                                      sum = num + 1;
+                                      let tmp17 = 1023 & charCodeAtResult;
+                                      let sum1 = 65536 + (tmp17 << 10 | 1023 & substr.charCodeAt(sum));
+                                      items[items.length] = items[240 | sum1 >> 18] + items[128 | sum1 >> 12 & 63] + items[128 | sum1 >> 6 & 63] + items[128 | 63 & sum1];
+                                    }
+                                  }
+                                  items[items.length] = items[224 | charCodeAtResult >> 12] + items[128 | charCodeAtResult >> 6 & 63] + items[128 | 63 & charCodeAtResult];
+                                  sum = num;
+                                }
+                                num = sum + 1;
+                                if (num >= substr.length) {
+                                  break;
+                                }
                               }
-                              let applyResult = apply(items, tmp60);
                             }
                           }
-                          tmp39 = fn2;
                         }
                       }
-                      let _String2 = String;
-                      replaced1 = String(iter);
                     }
-                    num4 = num4 + 1;
                   }
                 }
+                items[items.length] = substr.charAt(num);
+                sum = num;
               }
-              value = arr3[iter];
             }
-            throw new TypeError("Trying to call a non-function");
+            str2 = str2 + items.join("");
+            num2 = num2 + c6;
+            str3 = str2;
+          } while (num2 < callResult.length);
+        }
+        return str3;
+      }
+    }
+  },
+  isBuffer(obj) {
+    let tmp = !obj;
+    if (obj) {
+      tmp = typeof obj !== "object";
+    }
+    let tmp2 = !tmp;
+    if (tmp2) {
+      let isBufferResult = obj.constructor && obj.constructor.isBuffer;
+      if (isBufferResult) {
+        const constructor = obj.constructor;
+        isBufferResult = constructor.isBuffer(obj);
+      }
+      tmp2 = isBufferResult;
+    }
+    return tmp2;
+  },
+  isRegExp(arg0) {
+    return "[object RegExp]" === toString.call(arg0);
+  },
+  maybeMap(parts1, fn) {
+    let length;
+    if (isArray(parts1)) {
+      items = [];
+      let num = 0;
+      if (0 < parts1.length) {
+        do {
+          let arr = items.push(fn(parts1[num]));
+          num = num + 1;
+          length = parts1.length;
+        } while (num < length);
+      }
+      return items;
+    } else {
+      return fn(parts1);
+    }
+  },
+  merge
+};
+merge = function merge(arr, obj, plainObjects) {
+  let closure_0 = arr;
+  let closure_1 = obj;
+  hasOwnProperty = plainObjects;
+  if (obj) {
+    if (typeof obj !== "object") {
+      if (typeof obj !== "function") {
+        if (isArray(arr)) {
+          arr.push(obj);
+        } else {
+          if (arr) {
+            if (typeof arr === "object") {
+              let tmp11 = plainObjects;
+              if (tmp11) {
+                tmp11 = plainObjects.plainObjects || plainObjects.allowPrototypes;
+              }
+              if (!tmp11) {
+                const _Object2 = Object;
+                tmp11 = !hasOwnProperty.call(Object.prototype, obj);
+              }
+              if (tmp11) {
+                arr[obj] = true;
+              }
+            }
           }
+          items = [arr, obj];
           return items;
         }
-        arr2 = fn3;
-        arr3 = str2;
-        tmp14 = isArray;
-        const tmp13 = isArray;
-        if (!isArray(fn3)) {
-          const _Object = Object;
-          const keys = Object.keys(str2);
-          let sorted = keys;
-          if (arg10) {
-            sorted = keys.sort(arg10);
-          }
-          arr2 = sorted;
-          arr3 = str2;
-          tmp14 = tmp13;
-        }
+        return arr;
       }
     }
-  }
-  if (fn2) {
-    let tmp64 = arg1;
-    if (!arg15) {
-      tmp64 = fn2(arg1, obj2.encoder, arg16, "key", arg13);
-    }
-    const text2 = `${fn5(tmp64)}=`;
-    const items3 = [`${fn5(tmp64)}=` + fn5(fn2(str2, obj2.encoder, arg16, "value", arg13))];
-    items4 = items3;
-  } else {
-    const _String4 = String;
-    const text3 = `${fn5(arg1)}=`;
-    items4 = [`${fn5(arg1)}=` + fn5(String(str2))];
-  }
-  return items4;
-}
-
-export default function(arg0, allowEmptyArrays) {
-  let allowEmptyArrays2;
-  let arr;
-  let encodeDotInKeys;
-  let filter1;
-  let found;
-  let skipNulls2;
-  let sort;
-  let strictNullHandling;
-  const tmp = allowEmptyArrays;
-  if (tmp) {
-    let arrayFormat;
-    let allowDots;
-    if (undefined !== allowEmptyArrays.allowEmptyArrays) {
-      if (typeof allowEmptyArrays.allowEmptyArrays !== "boolean") {
-        const _TypeError6 = TypeError;
-        const self11 = this;
-        const self12 = this;
-        const typeError = new TypeError("`allowEmptyArrays` option can only be `true` or `false`, when provided");
-        throw typeError;
-      }
-    }
-    if (undefined !== allowEmptyArrays.encodeDotInKeys) {
-      if (typeof allowEmptyArrays.encodeDotInKeys !== "boolean") {
-        const _TypeError5 = TypeError;
-        const self9 = this;
-        const self10 = this;
-        const typeError1 = new TypeError("`encodeDotInKeys` option can only be `true` or `false`, when provided");
-        throw typeError1;
-      }
-    }
-    if (null !== allowEmptyArrays.encoder) {
-      if (undefined !== allowEmptyArrays.encoder) {
-        if (typeof allowEmptyArrays.encoder !== "function") {
-          const _TypeError4 = TypeError;
-          const self7 = this;
-          const self8 = this;
-          const typeError2 = new TypeError("Encoder has to be a function.");
-          throw typeError2;
-        }
-      }
-    }
-    const charset = allowEmptyArrays.charset || obj2.charset;
-    if (undefined !== allowEmptyArrays.charset) {
-      if ("utf-8" !== allowEmptyArrays.charset) {
-        if ("iso-8859-1" !== allowEmptyArrays.charset) {
-          const _TypeError3 = TypeError;
-          const self5 = this;
-          const self6 = this;
-          const typeError3 = new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
-          throw typeError3;
-        }
-      }
-    }
-    let format = _mod1298.default;
-    if (undefined !== allowEmptyArrays.format) {
-      if (hasOwnProperty.call(_mod1298.formatters, allowEmptyArrays.format)) {
-        format = allowEmptyArrays.format;
-      } else {
-        const _TypeError = TypeError;
-        const self = this;
-        const self2 = this;
-        const typeError4 = new TypeError("Unknown format option provided.");
-        throw typeError4;
-      }
-    }
-    let filter = obj2.filter;
-    const filter2 = allowEmptyArrays.filter;
-    let tmp12 = typeof filter2 === "function";
-    const tmp10 = _mod1298.formatters[format];
-    if (typeof filter2 !== "function") {
-      tmp12 = isArray(allowEmptyArrays.filter);
-    }
-    if (tmp12) {
-      filter = allowEmptyArrays.filter;
-    }
-    if (allowEmptyArrays.arrayFormat in obj) {
-      arrayFormat = allowEmptyArrays.arrayFormat;
-    } else if ("indices" in allowEmptyArrays) {
-      let str5 = "repeat";
-      if (allowEmptyArrays.indices) {
-        str5 = "indices";
-      }
-      arrayFormat = str5;
-    } else {
-      arrayFormat = tmp11.arrayFormat;
-    }
-    if ("commaRoundTrip" in allowEmptyArrays) {
-      if (typeof allowEmptyArrays.commaRoundTrip !== "boolean") {
-        const _TypeError2 = TypeError;
-        const self3 = this;
-        const self4 = this;
-        const typeError5 = new TypeError("`commaRoundTrip` must be a boolean, or absent");
-        throw typeError5;
-      }
-    }
-    if (undefined === allowEmptyArrays.allowDots) {
-      allowDots = true === allowEmptyArrays.encodeDotInKeys || obj2.allowDots;
-    } else {
-      allowDots = allowEmptyArrays.allowDots;
-    }
-    obj = { addQueryPrefix: typeof allowEmptyArrays.addQueryPrefix === "boolean" ? allowEmptyArrays.addQueryPrefix : obj2.addQueryPrefix, allowDots, allowEmptyArrays, arrayFormat, charset, charsetSentinel: typeof allowEmptyArrays.charsetSentinel === "boolean" ? allowEmptyArrays.charsetSentinel : obj2.charsetSentinel, commaRoundTrip: allowEmptyArrays.commaRoundTrip, delimiter: undefined === allowEmptyArrays.delimiter ? obj2.delimiter : allowEmptyArrays.delimiter, encode: typeof allowEmptyArrays.encode === "boolean" ? allowEmptyArrays.encode : obj2.encode, encodeDotInKeys: typeof allowEmptyArrays.encodeDotInKeys === "boolean" ? allowEmptyArrays.encodeDotInKeys : obj2.encodeDotInKeys, encoder: typeof allowEmptyArrays.encoder === "function" ? allowEmptyArrays.encoder : obj2.encoder, encodeValuesOnly: typeof allowEmptyArrays.encodeValuesOnly === "boolean" ? allowEmptyArrays.encodeValuesOnly : obj2.encodeValuesOnly, filter, format, formatter: tmp10, serializeDate: typeof allowEmptyArrays.serializeDate === "function" ? allowEmptyArrays.serializeDate : obj2.serializeDate, skipNulls: typeof allowEmptyArrays.skipNulls === "boolean" ? allowEmptyArrays.skipNulls : obj2.skipNulls, sort, strictNullHandling: typeof allowEmptyArrays.strictNullHandling === "boolean" ? allowEmptyArrays.strictNullHandling : obj2.strictNullHandling };
-    if (typeof allowEmptyArrays.allowEmptyArrays === "boolean") {
-      allowEmptyArrays = allowEmptyArrays.allowEmptyArrays;
-    } else {
-      allowEmptyArrays = tmp11.allowEmptyArrays;
-    }
-    sort = null;
-    if (typeof allowEmptyArrays.sort === "function") {
-      sort = allowEmptyArrays.sort;
-    }
-    arr = obj;
-  } else {
-    arr = obj2;
-  }
-  if (typeof arr.filter === "function") {
-    found = arr.filter("", arg0);
-  } else {
-    found = arg0;
-    if (isArray(arr.filter)) {
-      filter1 = arr.filter;
-      found = arg0;
-    }
-  }
-  if (typeof found === "object") {
-    if (null !== found) {
-      if (!filter1) {
-        const _Object = Object;
-        filter1 = Object.keys(found);
-      }
-      if (arr.sort) {
-        const sorted = filter1.sort(arr.sort);
-      }
-      const items = [];
-      const tmp23 = getSideChannel();
-      let num3 = 0;
-      if (0 < filter1.length) {
-        while (true) {
-          let tmp24 = filter1[num3];
-          let tmp25 = found[tmp24];
-          let skipNulls = arr.skipNulls;
-          if (skipNulls) {
-            skipNulls = null === tmp25;
-          }
-          if (!skipNulls) {
-            ({ allowEmptyArrays: allowEmptyArrays2, strictNullHandling, skipNulls: skipNulls2, encodeDotInKeys } = arr);
-            let encoder = null;
-            let tmp27 = pushToArray;
-            let tmp28 = stringify;
-            if (arr.encode) {
-              encoder = arr.encoder;
-            }
-            let tmp28Result = tmp28(tmp25, tmp24, tmp66, tmp18, allowEmptyArrays2, strictNullHandling, skipNulls2, encodeDotInKeys, encoder, arr.filter, arr.sort, arr.allowDots, arr.serializeDate, arr.format, arr.formatter, arr.encodeValuesOnly, arr.charset, tmp23);
-            if (typeof tmp27 !== "function") {
-              break;
-            } else {
-              let apply = push.apply;
-              let tmp43 = tmp28Result;
-              if (!isArray(tmp28Result)) {
-                let items1 = [tmp28Result];
-                tmp43 = items1;
+    if (arr) {
+      if (typeof arr === "object") {
+        let tmp2 = arr;
+        const tmp = isArray(arr) && !tmp14(obj);
+        if (tmp) {
+          if (typeof arrayToObject === "function") {
+            if (plainObjects) {
+              if (plainObjects.plainObjects) {
+                obj = Object.create(null);
               }
-              let applyResult = apply(items, tmp43);
+              let num = 0;
+              tmp2 = obj;
+              if (0 < arr.length) {
+                do {
+                  if (undefined !== arr[num]) {
+                    obj[num] = arr[num];
+                  }
+                  num = num + 1;
+                  tmp2 = obj;
+                } while (num < arr.length);
+              }
             }
+            obj = {};
+          } else {
+            throw new TypeError("Trying to call a non-function");
           }
-          num3 = num3 + 1;
         }
-        throw new TypeError("Trying to call a non-function");
-      }
-      const joined = items.join(arr.delimiter);
-      let str8 = "";
-      let str9 = "";
-      if (true === arr.addQueryPrefix) {
-        str9 = "?";
-      }
-      let tmp45 = str9;
-      if (arr.charsetSentinel) {
-        let text;
-        if ("iso-8859-1" === arr.charset) {
-          text = `${str9}utf8=%26%2310003%3B&`;
-        } else {
-          text = `${str9}utf8=%E2%9C%93&`;
+        if (isArray(arr)) {
+          let reduced;
+          if (isArray(obj)) {
+            const item = obj.forEach((item, index) => {
+              if (hasOwnProperty.call(arr, index)) {
+                if (arr[index]) {
+                  if (typeof arr[index] === "object") {
+                    if (item) {
+                      if (typeof item === "object") {
+                        arr[index] = merge(arr[index], item, plainObjects);
+                      }
+                    }
+                  }
+                }
+                arr.push(item);
+              } else {
+                arr[index] = item;
+              }
+            });
+            reduced = arr;
+          }
+          return reduced;
         }
-        tmp45 = text;
+        const _Object = Object;
+        const keys = Object.keys(obj);
+        reduced = keys.reduce((acc, item) => {
+          if (hasOwnProperty.call(acc, item)) {
+            acc[item] = merge(acc[item], obj[item], plainObjects);
+          } else {
+            acc[item] = obj[item];
+          }
+          return acc;
+        }, tmp2);
       }
-      if (joined.length > 0) {
-        str8 = tmp45 + joined;
-      }
-      return str8;
     }
+    const items1 = [arr];
+    return items1.concat(obj);
+  } else {
+    return arr;
   }
-  return "";
 };
+
+export default obj;

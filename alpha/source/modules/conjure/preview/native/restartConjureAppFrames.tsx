@@ -1,13 +1,13 @@
-// Module ID: 12376
-// Function ID: 12377
+// Module ID: 11381
+// Function ID: 11382
 // Name: restartConjureAppFrames
-// Dependencies: [10612, 11150, 10618, 2]
+// Dependencies: [10772, 10811, 10769, 2]
 // Exports: default
 
-// Module 12376 (restartConjureAppFrames)
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10618 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 11150 */;
-import FramesStore from "FramesStore" /* 10612 */;
+// Module 11381 (restartConjureAppFrames)
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10769 */;
+import leaveFrame from "leaveFrame" /* 10811 */;
+import FramesStore from "FramesStore" /* 10772 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/native/restartConjureAppFrames.tsx");
@@ -27,9 +27,9 @@ export default function restartConjureAppFrames(applicationId) {
         id1 = mainFrame.id;
       }
       let id = tmp3.id;
-      let tmp8 = importDefault;
-      let obj = FramesNativeManagerDefault;
+      let obj = leaveFrame;
       let leaveFrameResult = obj.leaveFrame(tmp3.id);
+      let tmp11 = importDefault;
       let obj2 = FramesActionCreatorsDefault;
       let obj3 = { applicationId, surface };
       let launchFrameResult = obj2.launchFrame(obj3);
@@ -37,8 +37,8 @@ export default function restartConjureAppFrames(applicationId) {
 
       });
       if (id1 !== id) {
-        let tmp8Result = tmp8(10618);
-        let demoteMainFrameResult = tmp8Result.demoteMainFrame(tmp3.id);
+        let tmp11Result = tmp11(10769);
+        let demoteMainFrameResult = tmp11Result.demoteMainFrame(tmp3.id);
       }
       continue;
     }

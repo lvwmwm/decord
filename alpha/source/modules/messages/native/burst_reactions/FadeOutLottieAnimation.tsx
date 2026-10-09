@@ -1,17 +1,17 @@
-// Module ID: 7941
-// Function ID: 7942
+// Module ID: 7950
+// Function ID: 7951
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 109, 19, 5079, 21, 5090, 558, 576, 504, 4810, 5091, 6110, 2]
+// Dependencies: [32, 109, 19, 5080, 21, 5091, 558, 576, 504, 4811, 5092, 6112, 2]
 
-// Module 7941 (FadeOutLottieAnimation)
+// Module 7950 (FadeOutLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import createStyles from "createStyles" /* 5090 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeOutLotti
     tmp20 = cResult[6];
   }
   const effect = obj2.useEffect(tmp19, tmp20);
-  const tmpResult2 = tmp(4810);
+  const tmpResult2 = tmp(4811);
   class H {
     constructor() {
       tmp = closure_1;
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeOutLotti
       return obj;
     }
   }
-  let obj3 = { isAnimationComplete, isFadeOut: first1, withTiming: tmp(5091).withTiming, runOnJS: tmp(4810).runOnJS, setIsFadeOut: tmp14 };
+  let obj3 = { isAnimationComplete, isFadeOut: first1, withTiming: tmp(5092).withTiming, runOnJS: tmp(4811).runOnJS, setIsFadeOut: tmp14 };
   H.__closure = obj3;
   H.__workletHash = 1522072883983;
   H.__initData = __initData;
@@ -180,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeOutLotti
     }
   }
   let obj4 = { style: tmp9.content, speed: num8, onAnimationFinish: tmp24 };
-  isAnimationComplete(6110);
+  isAnimationComplete(6112);
   const merged = Object.assign(tmp5);
   cResult[9] = tmp5;
   cResult[10] = tmp9.content;
@@ -208,7 +208,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeOutLotti
   const effect = react.useEffect(() => {
     closure_2(false);
   }, []);
-  onComplete(4810);
+  onComplete(4811);
   let fn = function v() {
     let fn;
     let obj;
@@ -242,13 +242,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeOutLotti
     }
     return obj;
   };
-  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(5091).withTiming, runOnJS: onComplete(4810).runOnJS, setIsFadeOut: tmp7 };
+  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(5092).withTiming, runOnJS: onComplete(4811).runOnJS, setIsFadeOut: tmp7 };
   fn.__closure = obj2;
   fn.__workletHash = 7916715451819;
   fn.__initData = __initData3;
   if (!isAnimationComplete) {
     let obj3 = { style: tmp12, children: null };
-    const View = isAnimationComplete(4810).View;
+    const View = isAnimationComplete(4811).View;
     let obj4 = {
       style: tmp2.content,
       speed: num,
@@ -260,7 +260,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeOutLotti
         }
     };
     num = 1;
-    isAnimationComplete(6110);
+    isAnimationComplete(6112);
     if (stateFromStores) {
       num = 0.5;
     }

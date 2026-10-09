@@ -1,13 +1,13 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 12027
+// Function ID: 12028
 // Name: SearchFetcher
-// Dependencies: [5, 2063, 1085, 1102, 3, 1294, 1490, 2]
+// Dependencies: [5, 2064, 1085, 1102, 3, 1295, 1491, 2]
 
-// Module 12090 (SearchFetcher)
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef1490 from "module_1490" /* 1490 */;
+// Module 12027 (SearchFetcher)
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import _modDef1491 from "module_1491" /* 1491 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -208,7 +208,7 @@ class SearchFetcherImpl extends SearchFetcher {
       const HTTP = HTTPUtils.HTTP;
       const request = { url: endpoint, query: obj2.stringify(this.query), oldFormErrors: true, rejectWithError };
       const get = HTTP.get;
-      obj2 = _modDef1490;
+      obj2 = _modDef1491;
       value = get(request);
     }
     return value;

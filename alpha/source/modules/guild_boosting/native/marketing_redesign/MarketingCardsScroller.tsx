@@ -1,24 +1,24 @@
-// Module ID: 12321
-// Function ID: 12322
+// Module ID: 12260
+// Function ID: 12261
 // Name: MarketingCardsScroller
-// Dependencies: [32, 109, 19, 17, 5079, 21, 5090, 4927, 587, 558, 576, 504, 5360, 1126, 1382, 6189, 9697, 12085, 2]
+// Dependencies: [32, 109, 19, 17, 5080, 21, 5091, 4928, 587, 558, 576, 504, 5361, 1126, 1383, 6191, 9716, 12022, 2]
 
-// Module 12321 (MarketingCardsScroller)
+// Module 12260 (MarketingCardsScroller)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import ColorUtils_mod from "ColorUtils" /* 4927 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import ColorUtils_mod from "ColorUtils" /* 4928 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let closure_12, name;
+let name;
 
 let ColorUtils;
 let c10;
@@ -45,6 +45,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingCar
   let cardMarginRight;
   let cardWidth;
   let children;
+  let closure_12;
   let closure_7;
   let closure_8;
   let contentContainerStyle;
@@ -634,7 +635,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingCar
   c9 = undefined;
   let stateFromStores;
   let ref2;
-  closure_12 = undefined;
+  let closure_12;
   let closure_13;
   closure_14 = undefined;
   let scrollToIndex;

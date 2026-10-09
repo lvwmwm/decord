@@ -1,9 +1,9 @@
-// Module ID: 11223
-// Function ID: 11224
+// Module ID: 10578
+// Function ID: 10579
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2128, 2124, 2086, 6891, 1085, 1501, 21, 5090, 558, 576, 4778, 587, 5086, 1126, 11224, 504, 6862, 11, 10157, 6161, 11226, 8466, 1200, 6841, 8290, 11227, 5054, 4937, 1112, 6717, 4945, 1628, 8279, 11228, 5375, 6890, 2]
+// Dependencies: [19, 17, 2128, 2124, 2086, 6898, 1085, 1502, 21, 5091, 558, 576, 4779, 587, 5087, 8298, 1126, 10579, 504, 6869, 11, 10142, 6165, 10581, 8474, 1200, 6848, 10582, 5055, 4938, 1112, 6724, 4946, 1629, 8287, 10583, 5376, 6897, 2]
 
-// Module 11223 (UserProfileAboutMeCard)
+// Module 10578 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -11,22 +11,23 @@ import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import useToken from "useToken" /* 4778 */;
-import ChatInputUtils from "ChatInputUtils" /* 4945 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6890 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8466 */;
-import BioTextDefault from "BioText" /* 11224 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 11226 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 11228 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
+import useToken from "useToken" /* 4779 */;
+import ChatInputUtils from "ChatInputUtils" /* 4946 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import UserProfileCardDefault from "UserProfileCard" /* 6897 */;
+import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8298 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8474 */;
+import BioTextDefault from "BioText" /* 10579 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 10581 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 10583 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import Constants from "Constants" /* 6891 */;
+import Constants from "Constants" /* 6898 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +40,8 @@ let metroImportAll;
 let tmp;
 let tmp10;
 let unpackModuleId;
-const KeyboardTypes = tmp(1628);
-const GuildIconDefault = tmp10(6161);
+const KeyboardTypes = tmp(1629);
+const GuildIconDefault = tmp10(6165);
 const View = react_native.View;
 ({ DIVIDER_DOT: metroImportAll, UserProfileThemeTypes } = Constants);
 const Routes = Constants2.Routes;
@@ -185,7 +186,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextWi
       }
       const obj3 = { style: tmp10, accessible: true, accessibilityLabel, children: items };
       items = [icon, tmp11];
-      const tmp17 = closure_12(View, obj3);
+      const tmp17 = authStore2(View, obj3);
       cResult[10] = accessibilityLabel;
       cResult[11] = icon;
       cResult[12] = tmp10;
@@ -223,7 +224,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextWi
   const obj = { style: items, accessible: true, accessibilityLabel, children: items1 };
   items = [tmp.textWithIcon, { columnGap: tmp2.columnGap }];
   items1 = [icon, unpackModuleId(Text_Text.Text, { variant: tmp2.textVariant, color: "text-default", children })];
-  return closure_12(View, obj);
+  return authStore2(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bio(arg0) {
@@ -235,7 +236,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bio(ar
   let tmp4;
   let userId;
   const obj = react2;
-  const cResult = obj.c(16);
+  const cResult = obj.c(17);
   ({ userId, displayProfile, pendingBio, themeType, lineClamp } = arg0);
   if (cResult[0] !== themeType) {
     let tmp6;
@@ -252,70 +253,77 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bio(ar
     tmp4 = cResult[1];
   }
   const textVariant = tmp4.textVariant;
+  const tmpResult = UserProfileAnalyticsContext;
+  const context = tmpResult.useUserProfileAnalyticsContext().context;
   if (cResult[2] === displayProfile) {
     let tmp8;
     if (cResult[3] === pendingBio) {
       tmp8 = cResult[4];
     }
-    let tmp11 = null;
     if (null != tmp8) {
-      tmp11 = null;
       if ("" !== tmp8) {
-        let tmp12;
-        let tmp14;
+        let tmp11;
+        let tmp13;
         const _Symbol = Symbol;
         if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1126).intl;
           const stringResult = intl.string(intl4.t.ZzAR2Y);
           cResult[5] = stringResult;
-          tmp12 = stringResult;
+          tmp11 = stringResult;
         } else {
-          tmp12 = cResult[5];
+          tmp11 = cResult[5];
         }
         if (cResult[6] !== themeType) {
-          const obj2 = { themeType, children: tmp12 };
-          const tmp17 = unpackModuleId(closure_17, obj2);
+          const obj2 = { themeType, children: tmp11 };
+          const tmp16 = unpackModuleId(closure_17, obj2);
           cResult[6] = themeType;
-          cResult[7] = tmp17;
-          tmp14 = tmp17;
+          cResult[7] = tmp16;
+          tmp13 = tmp16;
         } else {
-          tmp14 = cResult[7];
+          tmp13 = cResult[7];
+        }
+        let guildId;
+        if (context != null) {
+          guildId = context.guildId;
         }
         if (cResult[8] === tmp8) {
           if (cResult[9] === lineClamp) {
-            if (cResult[10] === textVariant) {
-              let tmp18;
-              if (cResult[11] === userId) {
-                tmp18 = cResult[12];
-              }
-              if (cResult[13] === tmp14) {
-                let tmp22;
-                if (cResult[14] === tmp18) {
-                  tmp22 = cResult[15];
+            if (cResult[10] === guildId) {
+              if (cResult[11] === textVariant) {
+                let tmp18;
+                if (cResult[12] === userId) {
+                  tmp18 = cResult[13];
                 }
-                tmp11 = tmp22;
+                if (cResult[14] === tmp13) {
+                  let tmp22;
+                  if (cResult[15] === tmp18) {
+                    tmp22 = cResult[16];
+                  }
+                  return tmp22;
+                }
+                const obj3 = { children: items };
+                items = [tmp13, tmp18];
+                const tmp25 = authStore2(View, obj3);
+                cResult[14] = tmp13;
+                cResult[15] = tmp18;
+                cResult[16] = tmp25;
+                tmp22 = tmp25;
               }
-              const obj3 = { children: items };
-              items = [tmp14, tmp18];
-              const tmp25 = closure_12(View, obj3);
-              cResult[13] = tmp14;
-              cResult[14] = tmp18;
-              cResult[15] = tmp25;
-              tmp22 = tmp25;
             }
           }
         }
-        const obj4 = { bio: tmp8, userId, textVariant, lineClamp };
+        const obj4 = { bio: tmp8, userId, guildId, textVariant, lineClamp };
         const tmp21 = unpackModuleId(BioTextDefault, obj4);
         cResult[8] = tmp8;
         cResult[9] = lineClamp;
-        cResult[10] = textVariant;
-        cResult[11] = userId;
-        cResult[12] = tmp21;
+        cResult[10] = guildId;
+        cResult[11] = textVariant;
+        cResult[12] = userId;
+        cResult[13] = tmp21;
         tmp18 = tmp21;
       }
     }
-    return tmp11;
+    return null;
   }
   let previewBio;
   if (displayProfile != null) {
@@ -327,8 +335,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bio(ar
   tmp8 = previewBio;
 }) : (function Bio(arg0) {
   let displayProfile;
+  let guildId;
   let intl;
-  let items;
   let lineClamp;
   let pendingBio;
   let themeType;
@@ -342,25 +350,35 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bio(ar
   if (tmp == null) {
     tmp = closure_14;
   }
-  let previewBio;
   const textVariant = tmp.textVariant;
+  const obj = UserProfileAnalyticsContext;
+  const context = obj.useUserProfileAnalyticsContext().context;
+  let previewBio;
   if (displayProfile != null) {
     previewBio = displayProfile.getPreviewBio(pendingBio);
   }
-  let tmp4 = null;
+  let tmp8Result = null;
   if (null != previewBio) {
-    tmp4 = null;
+    tmp8Result = null;
     if ("" !== previewBio) {
-      const obj = { children: items };
       const obj2 = { themeType, children: intl.string(intl4.t.ZzAR2Y) };
-      intl = intl4.intl;
-      items = [unpackModuleId(closure_17, obj2), ];
-      const obj3 = { bio: previewBio, userId, textVariant, lineClamp };
-      items[1] = unpackModuleId(BioTextDefault, obj3);
-      tmp4 = closure_12(View, obj);
+      intl = tmp3(1126).intl;
+      const items = [unpackModuleId(closure_17, obj2), ];
+      const obj3 = { bio: previewBio, userId, guildId, textVariant, lineClamp };
+      guildId = undefined;
+      const tmp10 = unpackModuleId;
+      const tmp13 = BioTextDefault;
+      const tmp8 = authStore2;
+      const tmp9 = View;
+      if (context != null) {
+        guildId = context.guildId;
+      }
+      const obj4 = { children: items };
+      items[1] = tmp10(tmp13, obj3);
+      tmp8Result = tmp8(tmp9, obj4);
     }
   }
-  return tmp4;
+  return tmp8Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberJoinDates(userId) {
@@ -501,18 +519,18 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
       }
     }
     const tmpResult6 = tmp(504);
-    const stateFromStores2 = tmpResult6.useStateFromStores(tmp17, B);
+    const stateFromStores2 = tmpResult6.useStateFromStores(tmp17, U);
     class P {
       constructor() {
         return closure_1_5.locale;
       }
     }
-    const getCreatedAtDate = tmp(6862).getCreatedAtDate;
-    tmp(6862);
+    const getCreatedAtDate = tmp(6869).getCreatedAtDate;
+    tmp(6869);
     const obj5 = guildId(11);
     const createdAtDate = getCreatedAtDate(obj5.extractTimestamp(userId), stateFromStores);
-    const getCreatedAtDate2 = tmp(6862).getCreatedAtDate;
-    tmp(6862);
+    const getCreatedAtDate2 = tmp(6869).getCreatedAtDate;
+    tmp(6869);
     if (stateFromStores2 != null) {
       class R {
         constructor() {
@@ -664,7 +682,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     cResult[31] = tmp32;
     cResult[32] = items3;
   }
-  class B {
+  class U {
     constructor() {
       member = null;
       if (null != guildId) {
@@ -677,7 +695,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   }
   cResult[8] = guildId;
   cResult[9] = userId;
-  cResult[10] = B;
+  cResult[10] = U;
 }) : (function MemberJoinDates(userId) {
   let columnGap;
   let intl;
@@ -724,13 +742,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     }
     return member;
   });
-  const getCreatedAtDate = userId(6862).getCreatedAtDate;
-  userId(6862);
+  const getCreatedAtDate = userId(6869).getCreatedAtDate;
+  userId(6869);
   const obj4 = SnowflakeUtilsDefault;
   const createdAtDate = getCreatedAtDate(obj4.extractTimestamp(userId), stateFromStores);
   let joinedAt;
-  const getCreatedAtDate2 = userId(6862).getCreatedAtDate;
-  userId(6862);
+  const getCreatedAtDate2 = userId(6869).getCreatedAtDate;
+  userId(6869);
   if (stateFromStores2 != null) {
     joinedAt = stateFromStores2.joinedAt;
   }
@@ -740,7 +758,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   const items3 = [closure_11(closure_17, obj5), ];
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.memberJoinDates, { columnGap }];
-  const obj7 = { themeType, icon: closure_11(userId(10157).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1126).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
+  const obj7 = { themeType, icon: closure_11(userId(10142).ClydeIcon, { size: "xs" }), accessibilityLabel: intl2.formatToPlainString(userId(1126).t["9t7w53"], { date: createdAtDate }), children: createdAtDate };
   intl2 = tmp4(1126).intl;
   items5 = [closure_11(closure_18, obj7), ];
   let tmp15Result = null != stateFromStores1 && null != createdAtDate2;
@@ -748,9 +766,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   if (tmp15Result) {
     const obj8 = { children: items6 };
     const obj9 = { variant: textVariant, color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children };
-    items6 = [closure_11(tmp4(5086).Text, obj9), ];
+    items6 = [closure_11(tmp4(5087).Text, obj9), ];
     const obj10 = { themeType, icon: closure_11(tmp10Result, obj11), accessibilityLabel: intl3.formatToPlainString(userId(1126).t.FdLNDK, obj12), children: createdAtDate2 };
-    obj11 = { guild: stateFromStores1, size: userId(6161).GuildIconSizes.XXSMALL };
+    obj11 = { guild: stateFromStores1, size: userId(6165).GuildIconSizes.XXSMALL };
     tmp10Result = GuildIconDefault;
     intl3 = tmp4(1126).intl;
     obj12 = { guildName: stateFromStores1.name, date: createdAtDate2 };
@@ -824,7 +842,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
       }
       const obj3 = { children: items };
       items = [tmp13, tmp17];
-      const tmp23 = closure_12(View, obj3);
+      const tmp23 = authStore2(View, obj3);
       cResult[8] = tmp13;
       cResult[9] = tmp17;
       cResult[10] = tmp23;
@@ -861,7 +879,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Friend
     items = [unpackModuleId(closure_17, obj3), ];
     const obj4 = { variant: textVariant, color: "text-default", children: friendsSinceDate };
     items[1] = unpackModuleId(Text_Text.Text, obj4);
-    tmp6 = closure_12(View, obj2);
+    tmp6 = authStore2(View, obj2);
   }
   return tmp6;
 });
@@ -925,7 +943,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
             }
             const obj3 = { children: items };
             items = [tmp9, tmp21];
-            const tmp28 = closure_12(View, obj3);
+            const tmp28 = authStore2(View, obj3);
             cResult[13] = tmp9;
             cResult[14] = tmp21;
             cResult[15] = tmp28;
@@ -934,7 +952,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
         }
         const obj4 = { style: tmp4.policyLinks, children: items1 };
         items1 = [tmp13, tmp17];
-        const tmp24 = closure_12(View, obj4);
+        const tmp24 = authStore2(View, obj4);
         cResult[9] = tmp4.policyLinks;
         cResult[10] = tmp13;
         cResult[11] = tmp17;
@@ -996,7 +1014,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
     }
     const obj5 = { children: items };
     items1[1] = tmp5Result2;
-    items[1] = closure_12(View, obj2);
+    items[1] = authStore2(View, obj2);
     tmp3Result = tmp3(tmp4, obj5);
   } else {
     tmp3Result = null;
@@ -1059,7 +1077,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Policy
     cResult[9] = tmp13;
     tmp11 = tmp13;
   }
-  const tmp10 = closure_11(url(5086).Text, { variant: textVariant, color: "text-link", children: label });
+  const tmp10 = closure_11(url(5087).Text, { variant: textVariant, color: "text-link", children: label });
   cResult[4] = label;
   cResult[5] = textVariant;
   cResult[6] = tmp10;
@@ -1106,8 +1124,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotSla
   const themeType = channel.themeType;
   ({ applicationId, commandIds } = channel);
   const tmp4 = closure_16();
-  analyticsLocations = analyticsLocations(context[25])().analyticsLocations;
-  let obj2 = channel(context[26]);
+  analyticsLocations = analyticsLocations(context[26])().analyticsLocations;
+  let obj2 = channel(context[15]);
   context = obj2.useUserProfileAnalyticsContext().context;
   const tmp5 = analyticsLocations(context[27])(channel, applicationId, commandIds);
   ({ commands, application } = tmp5);
@@ -1126,8 +1144,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotSla
               let tmp15;
               const _Symbol = Symbol;
               if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl = tmp(tmp2[15]).intl;
-                const stringResult = intl.string(tmp(context[15]).t["0hKkS+"]);
+                const intl = tmp(tmp2[16]).intl;
+                const stringResult = intl.string(tmp(context[16]).t["0hKkS+"]);
                 let num = 6;
                 cResult[6] = stringResult;
                 tmp8 = stringResult;
@@ -1190,9 +1208,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotSla
                     }
                     let tmp23 = null != application && null != application.bot;
                     if (tmp23) {
-                      const obj5 = { size: "sm", variant: "tertiary", text: intl2.string(tmp(context[15]).t.VEfKyb), onPress: tmp6 };
+                      const obj5 = { size: "sm", variant: "tertiary", text: intl2.string(tmp(context[16]).t.VEfKyb), onPress: tmp6 };
                       const Button = tmp(tmp2[36]).Button;
-                      intl2 = tmp(tmp2[15]).intl;
+                      intl2 = tmp(tmp2[16]).intl;
                       tmp23 = closure_11(Button, obj5);
                     }
                     cResult[19] = application;
@@ -1344,8 +1362,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotSla
   application = undefined;
   ({ applicationId, commandIds, themeType } = channel);
   let tmp = closure_16();
-  analyticsLocations = analyticsLocations(context[25])().analyticsLocations;
-  let obj = channel(context[26]);
+  analyticsLocations = analyticsLocations(context[26])().analyticsLocations;
+  let obj = channel(context[15]);
   context = obj.useUserProfileAnalyticsContext().context;
   const tmp4 = analyticsLocations(context[27])(channel, applicationId, commandIds);
   ({ commands, application } = tmp4);
@@ -1358,10 +1376,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotSla
     let num = 0;
     tmp8Result = null;
     if (0 !== commands.length) {
-      let obj2 = { themeType, children: intl2.string(channel(tmp2[15]).t["0hKkS+"]) };
+      let obj2 = { themeType, children: intl2.string(channel(tmp2[16]).t["0hKkS+"]) };
       let tmp9 = View;
       let tmp10 = closure_11;
-      intl2 = tmp3(tmp2[15]).intl;
+      intl2 = tmp3(tmp2[16]).intl;
       const items1 = [closure_11(closure_17, obj2), , ];
       let obj3 = {
         style: tmp.slashCommands,
@@ -1374,9 +1392,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotSla
       let tmp10Result = null != application && null != application.bot;
       const tmp8 = closure_12;
       if (tmp10Result) {
-        let obj4 = { size: "sm", variant: "tertiary", text: intl.string(channel(tmp2[15]).t.VEfKyb), onPress: tmp5 };
+        let obj4 = { size: "sm", variant: "tertiary", text: intl.string(channel(tmp2[16]).t.VEfKyb), onPress: tmp5 };
         const Button = tmp3(tmp2[36]).Button;
-        intl = tmp3(tmp2[15]).intl;
+        intl = tmp3(tmp2[16]).intl;
         tmp10Result = tmp10(Button, obj4);
       }
       const obj5 = { children: items1 };
@@ -1495,7 +1513,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
                             }
                             const obj3 = { style: tmp9, children: items };
                             items = [tmp10, tmp15, tmp19, tmp25, tmp29];
-                            const tmp37 = closure_12(UserProfileCardDefault, obj3);
+                            const tmp37 = authStore2(UserProfileCardDefault, obj3);
                             cResult[29] = tmp25;
                             cResult[30] = tmp29;
                             cResult[31] = tmp9;
@@ -1600,7 +1618,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   items1[0] = unpackModuleId(closure_19, { userId, displayProfile, pendingBio, themeType, lineClamp: bioLineClamp });
   const obj2 = { userId, guildId, themeType };
   guildId = undefined;
-  const tmp5 = closure_12;
+  const tmp5 = authStore2;
   const tmp8 = closure_20;
   if (displayProfile != null) {
     guildId = displayProfile.guildId;

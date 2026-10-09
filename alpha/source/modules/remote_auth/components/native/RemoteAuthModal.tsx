@@ -1,32 +1,32 @@
-// Module ID: 13914
-// Function ID: 13915
+// Module ID: 14007
+// Function ID: 14008
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1085, 21, 5090, 587, 558, 576, 1630, 6164, 13915, 13913, 6658, 1294, 5940, 12, 13916, 5086, 1126, 1200, 5375, 5963, 13918, 6158, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5091, 587, 558, 576, 1631, 6163, 14008, 14006, 6665, 1295, 5941, 12, 14009, 5087, 1126, 1200, 5376, 5965, 14013, 6160, 2]
 
-// Module 13914 (RemoteAuthModal)
+// Module 14007 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import ButtonGroup2 from "ButtonGroup" /* 5963 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6658 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13913 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13915 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 13916 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 13918 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import ButtonGroup2 from "ButtonGroup" /* 5965 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6665 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14006 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14008 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 14009 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 14013 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(6158);
+const ActivityIndicator_ActivityIndicator = tmp(6160);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const Endpoints = Constants.Endpoints;
@@ -405,7 +405,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { scale };
-      const tmp19 = closure_7(tmp(13916).QrLoginSpotIllustration, obj4);
+      const tmp19 = closure_7(tmp(14009).QrLoginSpotIllustration, obj4);
       cResult[7] = tmp19;
       tmp16 = tmp19;
     } else {
@@ -423,7 +423,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { variant: "heading-md/extrabold", children: intl.string(tmp(1126).t.jD2pqF) };
-      const Heading = tmp(5086).Heading;
+      const Heading = tmp(5087).Heading;
       intl = tmp(1126).intl;
       const tmp26 = closure_7(Heading, obj6);
       cResult[10] = tmp26;
@@ -481,7 +481,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
         }
         if (cResult[20] !== tmp12) {
           const obj8 = { variant: "secondary", text: tmp38, onPress: tmp12 };
-          const tmp42 = closure_7(tmp(5375).Button, obj8);
+          const tmp42 = closure_7(tmp(5376).Button, obj8);
           cResult[20] = tmp12;
           cResult[21] = tmp42;
           tmp40 = tmp42;
@@ -515,7 +515,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
         }
         const obj10 = { style: buttonGroup, children: items2 };
         items2 = [tmp35, tmp40];
-        const tmp45 = closure_8(tmp(5963).ButtonGroup, obj10);
+        const tmp45 = closure_8(tmp(5965).ButtonGroup, obj10);
         cResult[22] = tmp4.buttonGroup;
         cResult[23] = tmp35;
         cResult[24] = tmp40;
@@ -524,7 +524,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
       }
     }
     const obj11 = { text: tmp33, onPress: tmp13, disabled: !tmp6 && !first };
-    const tmp37 = closure_7(tmp(5375).Button, obj11, combined);
+    const tmp37 = closure_7(tmp(5376).Button, obj11, combined);
     cResult[15] = tmp13;
     cResult[16] = !tmp6 && !first;
     cResult[17] = combined;
@@ -669,7 +669,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "heading-xl/extrabold", children: intl.string(intl5.t.HbwTOZ) };
-    const Heading = tmp(5086).Heading;
+    const Heading = tmp(5087).Heading;
     intl = tmp(1126).intl;
     const tmp15 = metroImportDefault(Heading, obj4);
     cResult[3] = tmp15;
@@ -697,7 +697,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { text: intl3.string(intl5.t.pYWLA0), onPress: ModalActionCreatorsDefault.pop };
-    const Button = tmp(5375).Button;
+    const Button = tmp(5376).Button;
     intl3 = tmp(1126).intl;
     const tmp24 = metroImportDefault(Button, obj6);
     cResult[7] = tmp24;
@@ -775,7 +775,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-xl/extrabold", children: intl.string(intl5.t.NShI3Q) };
-    const Heading = tmp(5086).Heading;
+    const Heading = tmp(5087).Heading;
     intl = tmp(1126).intl;
     const tmp7 = metroImportDefault(Heading, obj2);
     cResult[0] = tmp7;
@@ -803,7 +803,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remote
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { text: intl3.string(intl5.t["ETE/oC"]), onPress: ModalActionCreatorsDefault.pop };
-    const Button = tmp(5375).Button;
+    const Button = tmp(5376).Button;
     intl3 = tmp(1126).intl;
     const tmp16 = metroImportDefault(Button, obj4);
     cResult[4] = tmp16;

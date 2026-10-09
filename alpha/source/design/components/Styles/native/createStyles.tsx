@@ -1,23 +1,23 @@
-// Module ID: 5090
-// Function ID: 5091
+// Module ID: 5091
+// Function ID: 5092
 // Name: createStyles
-// Dependencies: [32, 17, 5079, 4897, 558, 576, 4787, 1381, 587, 4779, 4810, 5091, 5094, 4988, 2]
+// Dependencies: [32, 17, 5080, 4898, 558, 576, 4788, 1382, 587, 4780, 4811, 5092, 5095, 4989, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow
 
-// Module 5090 (createStyles)
+// Module 5091 (createStyles)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import SemanticColorContext from "SemanticColorContext" /* 4779 */;
-import native from "native" /* 4787 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 4988 */;
-import timing from "timing" /* 5091 */;
-import timingPresets from "timingPresets" /* 5094 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import SemanticColorContext from "SemanticColorContext" /* 4780 */;
+import native from "native" /* 4788 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 4989 */;
+import timing from "timing" /* 5092 */;
+import timingPresets from "timingPresets" /* 5095 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4897 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4898 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -433,14 +433,14 @@ export const createNativeStyleProperties = function createNativeStyleProperties(
       const setThemeFlag = native.setThemeFlag;
       native;
       if ("light" === customBackgroundGradient.theme) {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4787).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4788).ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED;
       } else {
-        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4787).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
+        MOBILE_DARK_GRADIENT_THEME_ENABLED = tmp3(4788).ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED;
       }
       num = setThemeFlag(0, MOBILE_DARK_GRADIENT_THEME_ENABLED);
     }
     const obj2 = { flags: num, saturation, theme, enabledExperiments: ["mobile-visual-refresh"], gradient: customBackgroundGradient };
-    const merged = Object.assign(tmp3(4787).FALLBACK_THEME_CONTEXT_VALUE);
+    const merged = Object.assign(tmp3(4788).FALLBACK_THEME_CONTEXT_VALUE);
     const obj3 = { key: json };
     json = JSON.stringify(obj2);
     const merged1 = Object.assign(obj2);

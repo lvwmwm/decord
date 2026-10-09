@@ -1,16 +1,16 @@
-// Module ID: 16123
-// Function ID: 16124
+// Module ID: 16239
+// Function ID: 16240
 // Name: MobileNotifSettingsRoutes
-// Dependencies: [11262, 1126, 8747, 14533, 16124, 16125, 2891, 15588, 16131, 16132, 16133, 16134, 2]
+// Dependencies: [10629, 1126, 8756, 14628, 16240, 16241, 2891, 15701, 16247, 16248, 16249, 16250, 2]
 
-// Module 16123 (MobileNotifSettingsRoutes)
+// Module 16239 (MobileNotifSettingsRoutes)
 import intl2 from "intl" /* 1126 */;
 import _modDef2891 from "module_2891" /* 2891 */;
-import BellIcon from "BellIcon" /* 8747 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14533 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15588 */;
-import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 16124 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11262 */;
+import BellIcon from "BellIcon" /* 8756 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14628 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15701 */;
+import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 16240 */;
+import SettingBuilders_mod from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

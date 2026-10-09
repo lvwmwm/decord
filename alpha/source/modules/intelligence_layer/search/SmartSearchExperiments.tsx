@@ -1,13 +1,13 @@
-// Module ID: 12093
-// Function ID: 12094
+// Module ID: 12030
+// Function ID: 12031
 // Name: SmartSearchExperiments
-// Dependencies: [2086, 1085, 1452, 558, 576, 504, 2]
+// Dependencies: [2086, 1085, 1453, 558, 576, 504, 2]
 // Exports: isNlpSearchEnabled
 
-// Module 12093 (SmartSearchExperiments)
+// Module 12030 (SmartSearchExperiments)
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

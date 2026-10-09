@@ -1,16 +1,16 @@
-// Module ID: 10761
-// Function ID: 10762
+// Module ID: 10931
+// Function ID: 10932
 // Name: ModeratorOverlayState
-// Dependencies: [1266, 1271, 558, 576, 4690, 2]
+// Dependencies: [1267, 1272, 558, 576, 4692, 2]
 
-// Module 10761 (ModeratorOverlayState)
+// Module 10931 (ModeratorOverlayState)
 import react from "react" /* 576 */;
-import _slicedToArray from "_slicedToArray" /* 4690 */;
-import module_1266 from "module_1266" /* 1266 */;
+import _slicedToArray from "_slicedToArray" /* 4692 */;
+import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = module_1266.createWithEqualityFn((arg0, arg1) => {
+let closure_2 = module_1267.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {

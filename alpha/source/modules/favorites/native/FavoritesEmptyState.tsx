@@ -1,22 +1,22 @@
-// Module ID: 17223
-// Function ID: 17224
+// Module ID: 17373
+// Function ID: 17374
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 5090, 587, 10294, 12698, 5054, 10298, 1999, 10297, 10300, 5373, 5086, 1126, 3439, 5375, 11215, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 10279, 12643, 5055, 10283, 2000, 10282, 10285, 5374, 5087, 1126, 3439, 5376, 10570, 2]
 // Exports: default
 
-// Module 17223 (FavoritesEmptyState)
+// Module 17373 (FavoritesEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import _modDef3439 from "module_3439" /* 3439 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import FavoritesHooks from "FavoritesHooks" /* 10294 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10300 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FavoritesHooks from "FavoritesHooks" /* 10279 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10285 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp2;
-const PlusMediumIcon = tmp2(11215);
+const PlusMediumIcon = tmp2(10570);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: obj2, text: { textAlign: "center" } };

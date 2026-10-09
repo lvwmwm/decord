@@ -1,14 +1,14 @@
-// Module ID: 13002
-// Function ID: 13003
+// Module ID: 13084
+// Function ID: 13085
 // Name: FlashIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13003, 4777, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13085, 4778, 2]
 
-// Module 13002 (FlashIcon)
+// Module 13084 (FlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4777 */;
-import AssetRegistry from "AssetRegistry" /* 13003 */;
+import BaseIconImage2 from "BaseIconImage" /* 4778 */;
+import AssetRegistry from "AssetRegistry" /* 13085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FlashIcon(
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4777).BaseIconImage;
+  const BaseIconImage = tmp(4778).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

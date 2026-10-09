@@ -1,9 +1,9 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12384
+// Function ID: 12385
 // Name: NUFConstants
 // Dependencies: [2]
 
-// Module 12465 (NUFConstants)
+// Module 12384 (NUFConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/nuf/NUFConstants.tsx");

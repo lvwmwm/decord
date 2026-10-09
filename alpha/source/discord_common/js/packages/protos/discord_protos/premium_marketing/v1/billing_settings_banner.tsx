@@ -1,14 +1,14 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 9126
+// Function ID: 9127
 // Name: billing_settings_banner
-// Dependencies: [32, 1210, 10021, 10013, 10011, 10012, 2]
+// Dependencies: [32, 1210, 9116, 9108, 9106, 9107, 2]
 
-// Module 10031 (billing_settings_banner)
+// Module 9126 (billing_settings_banner)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 10011 */;
-import help_article from "help_article" /* 10012 */;
-import cta_button from "cta_button" /* 10013 */;
-import theme_aware_asset from "theme_aware_asset" /* 10021 */;
+import localized_string from "localized_string" /* 9106 */;
+import help_article from "help_article" /* 9107 */;
+import cta_button from "cta_button" /* 9108 */;
+import theme_aware_asset from "theme_aware_asset" /* 9116 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

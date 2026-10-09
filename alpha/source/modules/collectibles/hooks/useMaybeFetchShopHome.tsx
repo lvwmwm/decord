@@ -1,22 +1,22 @@
-// Module ID: 16000
-// Function ID: 16001
+// Module ID: 16116
+// Function ID: 16117
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 4976, 7252, 7294, 1087, 558, 576, 504, 7297, 7251, 16001, 2]
+// Dependencies: [32, 19, 4977, 7257, 7299, 1087, 558, 576, 504, 7302, 7256, 16117, 2]
 
-// Module 16000 (useMaybeFetchShopHome)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7297 */;
+// Module 16116 (useMaybeFetchShopHome)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7256 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7302 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore_mod from "ExperimentStore" /* 4976 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7294 */;
+import ExperimentStore_mod from "ExperimentStore" /* 4977 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7257 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7299 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, dependencyMap;
+let _require, dependencyMap;
 
 let c10;
 let c3;
@@ -265,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
       tmp28 = tmp29;
     }
   }
-  const obj2 = { variantsReturnStyle: tmp(7297).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp17[7], skipNumCategories: stateFromStores1 };
+  const obj2 = { variantsReturnStyle: tmp(7302).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp17[7], skipNumCategories: stateFromStores1 };
   const merged = Object.assign(arg1);
   cResult[7] = arg1;
   cResult[8] = tmp17[7];
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
     const merged = Object.assign(closure_1);
     return obj;
   }, items3);
-  closure_12 = tmp13;
+  let closure_12 = tmp13;
   const items4 = [tmp7, tmp13];
   const tmp14 = c5(() => {
     const obj = CollectiblesActionCreators;

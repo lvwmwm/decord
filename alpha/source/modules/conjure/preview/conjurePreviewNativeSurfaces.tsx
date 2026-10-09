@@ -1,12 +1,12 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 11378
+// Function ID: 11379
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [1085, 12374, 2]
+// Dependencies: [1085, 11379, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 12373 (conjurePreviewNativeSurfaces)
+// Module 11378 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1085 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 12374 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 11379 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -59,30 +59,29 @@ function answerFor(cmd) {
   } else if (null == obj[cmd.cmd]) {
     return null;
   } else {
-    const tmp11Result = obj[cmd.cmd](cmd);
-    ({ options, subject } = tmp11Result);
-    const result = tmp11Result.result;
+    const tmp10Result = obj[cmd.cmd](cmd);
+    ({ options, subject } = tmp10Result);
+    const result = tmp10Result.result;
     if (found.recorded.length < 20) {
       const recorded = found.recorded;
-      obj = { command: cmd.cmd, answered: tmp13 };
+      const obj2 = { command: cmd.cmd, answered: tmp12 };
       if (null != options) {
         let obj5;
-        let obj4;
         if (options.length > 0) {
-          obj5 = { options };
-          const obj2 = { options };
+          obj = { options };
+          const obj3 = { options };
         }
-        const merged = Object.assign(obj5);
+        const merged = Object.assign(obj);
         if (null != subject) {
-          obj4 = { subject };
-          const obj3 = { subject };
+          obj5 = { subject };
+          const obj4 = { subject };
         } else {
-          obj4 = {};
+          obj5 = {};
         }
-        const merged1 = Object.assign(obj4);
-        tmp2(obj);
+        const merged1 = Object.assign(obj5);
+        tmp13(obj2);
       }
-      obj5 = {};
+      obj = {};
     }
     return { result };
   }
@@ -146,12 +145,13 @@ let obj = {
   },
   [RPCCommands.OPEN_USER_PROFILE]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.OPEN_USER_POPOUT]: () => ({ result: { opened: true }, answered: "opened" }),
+  [RPCCommands.OPEN_GAME_PROFILE]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOOLTIP]: () => ({ result: { shown: true }, answered: "shown" }),
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "code", answered: false }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "code", answered: false })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "code", answered: null }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "code", answered: null })
 };
 let closure_5 = {
   drain() {
@@ -185,7 +185,7 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj2);
     }
     if (1 === arr.length) {
-      obj = obj2(12374);
+      obj = obj2(11379);
       let result = obj.setRpcCommandInterceptor(answerFor);
     }
     return {

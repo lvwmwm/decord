@@ -1,12 +1,12 @@
-// Module ID: 5456
-// Function ID: 5457
+// Module ID: 5457
+// Function ID: 5458
 // Name: CheckpointExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getIsCheckpointEnabled
 
-// Module 5456 (CheckpointExperiment)
+// Module 5457 (CheckpointExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

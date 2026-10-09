@@ -1,36 +1,36 @@
-// Module ID: 9011
-// Function ID: 9012
+// Module ID: 9022
+// Function ID: 9023
 // Name: WishlistButton
-// Dependencies: [5, 109, 32, 19, 17, 502, 1389, 1087, 1096, 21, 4810, 5380, 5090, 587, 4787, 558, 576, 6291, 4929, 4794, 4766, 1126, 5091, 5374, 5378, 9012, 8947, 504, 8943, 9002, 9014, 8942, 2]
+// Dependencies: [5, 109, 32, 19, 17, 502, 1390, 1087, 1096, 21, 4811, 5381, 5091, 587, 4788, 558, 576, 6298, 4930, 4795, 4768, 1126, 5092, 5375, 5379, 9023, 8958, 504, 8954, 9013, 9025, 8953, 2]
 
-// Module 9011 (WishlistButton)
+// Module 9022 (WishlistButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import Constants from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import native from "native" /* 4787 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import spring from "spring" /* 5374 */;
-import springPresets from "springPresets" /* 5378 */;
-import ButtonConstants from "ButtonConstants" /* 5380 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8942 */;
-import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 8943 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9014 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import native from "native" /* 4788 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import spring from "spring" /* 5375 */;
+import springPresets from "springPresets" /* 5379 */;
+import ButtonConstants from "ButtonConstants" /* 5381 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8953 */;
+import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 8954 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9025 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let _require, c0, c1, closure_12, dependencyMap, importDefault, set;
+let _require, c0, c1, dependencyMap, importDefault, set;
 
 let Easing;
 let c10;
@@ -78,6 +78,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButtonBase(isWishlisted) {
   let accessibilityHidden;
   let busy;
+  let closure_12;
   let closure_7;
   let closure_8;
   let first;
@@ -271,6 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
 }) : (function WishlistButtonBase(isWishlisted) {
   let HeartIcon;
   let HeartOutlineIcon;
+  let closure_12;
   let closure_6;
   let closure_7;
   let closure_8;
@@ -681,7 +683,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
             if (cResult[21] === tmp8) {
               tmp28 = cResult[22];
             }
-            const tmpResult4 = tmp(9002);
+            const tmpResult4 = tmp(9013);
             const wishlistButtonState = tmpResult4.useWishlistButtonState(tmp28);
             class I {
               constructor() {
@@ -924,7 +926,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     }
     obj2 = { skuId, product: tmp6, disabled: !tmp10, onTrackPress: tmp4 };
     const merged = Object.assign(tmp5);
-    const tmp19 = authStore3(closure_30, obj2);
+    const tmp19 = authStore4(closure_30, obj2);
     cResult[6] = tmp4;
     cResult[7] = tmp5;
     cResult[8] = tmp6;
@@ -945,7 +947,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   if (!isPurchased) {
     obj2 = { skuId, product: selectedProduct, disabled: !tmp4, onTrackPress };
     const merged1 = Object.assign(merged);
-    tmp = authStore3(closure_30, obj2);
+    tmp = authStore4(closure_30, obj2);
   }
   return tmp;
 });

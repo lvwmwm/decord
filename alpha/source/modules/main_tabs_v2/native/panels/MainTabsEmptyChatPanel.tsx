@@ -1,25 +1,25 @@
-// Module ID: 17222
-// Function ID: 17223
+// Module ID: 17372
+// Function ID: 17373
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 11278, 1630, 10294, 17223, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 10645, 1631, 10279, 17373, 2]
 
-// Module 17222 (MainTabsEmptyChatPanel)
+// Module 17372 (MainTabsEmptyChatPanel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import FavoritesHooks from "FavoritesHooks" /* 10294 */;
-import useDrawerWidth from "useDrawerWidth" /* 11278 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import FavoritesHooks from "FavoritesHooks" /* 10279 */;
+import useDrawerWidth from "useDrawerWidth" /* 10645 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp4;
-const FavoritesEmptyStateDefault = tmp4(17223);
+const FavoritesEmptyStateDefault = tmp4(17373);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((left, marginTop) => {

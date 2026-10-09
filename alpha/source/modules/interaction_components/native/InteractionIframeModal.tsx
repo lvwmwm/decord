@@ -1,20 +1,20 @@
-// Module ID: 17859
-// Function ID: 17860
+// Module ID: 18013
+// Function ID: 18014
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1372, 21, 5090, 587, 558, 576, 17847, 11128, 6656, 8426, 17860, 5370, 4766, 1126, 4995, 6189, 5086, 8741, 10615, 10750, 17462, 2]
+// Dependencies: [32, 19, 17, 1373, 21, 5091, 587, 558, 576, 18001, 10889, 6663, 8434, 18014, 5371, 4768, 1126, 4996, 6191, 5087, 8750, 10774, 10920, 17614, 2]
 
-// Module 17859 (InteractionIframeModal)
+// Module 18013 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ApplicationConstants from "ApplicationConstants" /* 1372 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import makeIframeIdDefault from "makeIframeId" /* 11128 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 17860 */;
+import ApplicationConstants from "ApplicationConstants" /* 1373 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import makeIframeIdDefault from "makeIframeId" /* 10889 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 18014 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F150489 */ };
+        return () => { /* body not rendered: F150830 */ };
       }
     }
     const items = [];
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F150489 */ };
+        return () => { /* body not rendered: F150830 */ };
       }
     }
     tmp10 = cResult[2];

@@ -1,25 +1,25 @@
-// Module ID: 18264
-// Function ID: 18265
+// Module ID: 18426
+// Function ID: 18427
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1630, 38, 18265, 5086, 1200, 5375, 5054, 1126, 6298, 6829, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 1631, 38, 18427, 5087, 1200, 5376, 5055, 1126, 6305, 6836, 2]
 
-// Module 18264 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 18426 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import BottomSheetModal from "BottomSheetModal" /* 6298 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6829 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18265 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import BottomSheetModal from "BottomSheetModal" /* 6305 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6836 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18427 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
       const _Symbol3 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-        const Text = tmp(5086).Text;
+        const Text = tmp(5087).Text;
         intl = tmp(1126).intl;
         const tmp28 = hasOwnProperty(Text, obj5);
         cResult[14] = tmp28;
@@ -170,7 +170,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
               }
               const obj7 = { backdropOpacity: 0.8, children: hasOwnProperty(React3, obj8) };
               obj8 = { style: tmp4.container, children: tmp33 };
-              BottomSheet = tmp(6829).BottomSheet;
+              BottomSheet = tmp(6836).BottomSheet;
               const tmp39 = hasOwnProperty(BottomSheet, obj7);
               cResult[23] = tmp4.container;
               cResult[24] = tmp33;
@@ -246,7 +246,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
     children: hasOwnProperty(Text, obj6)
   };
   obj6 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-  Text = tmp6(5086).Text;
+  Text = tmp6(5087).Text;
   intl = tmp6(1126).intl;
   items[6] = hasOwnProperty(_false, obj5);
   return hasOwnProperty(BottomSheet, obj4);

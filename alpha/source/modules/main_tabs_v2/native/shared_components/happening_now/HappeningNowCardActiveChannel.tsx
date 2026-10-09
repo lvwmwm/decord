@@ -1,24 +1,24 @@
-// Module ID: 16312
-// Function ID: 16313
+// Module ID: 16431
+// Function ID: 16432
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 13831, 2063, 11655, 1389, 15391, 1085, 21, 5090, 558, 576, 504, 11, 1387, 12, 6997, 1264, 1112, 5417, 1126, 8134, 16306, 15392, 2]
+// Dependencies: [19, 17, 13925, 2064, 11591, 1390, 15504, 1085, 21, 5091, 558, 576, 504, 11, 1388, 12, 7004, 1265, 1112, 5418, 1126, 8142, 16425, 15505, 2]
 
-// Module 16312 (HappeningNowCardActiveChannel)
+// Module 16431 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import router_utils from "router_utils" /* 1112 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import ActiveChannelsStore2 from "ActiveChannelsStore" /* 13831 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15391 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ActiveChannelsStore2 from "ActiveChannelsStore" /* 13925 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15504 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import TypingStore from "TypingStore" /* 11655 */;
-import UserStore from "UserStore" /* 1389 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import TypingStore from "TypingStore" /* 11591 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -232,7 +232,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const obj2 = { order: index, guild_id: guildId, type: unpackModuleId.ACTIVE_CHANNEL_CARD, destination_channel_id: channelId };
     obj.track(unpackModuleId.ACTIVITY_CARD_CLICKED, obj2);
     const obj3 = router_utils;
-    obj3.transitionTo(closure_12.CHANNEL(guildId, channelId));
+    obj3.transitionTo(authStore2.CHANNEL(guildId, channelId));
   };
   cResult[14] = channelId;
   cResult[15] = guildId;
@@ -300,7 +300,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const obj2 = { order: index, guild_id: guildId, type: unpackModuleId.ACTIVE_CHANNEL_CARD, destination_channel_id: channelId };
     obj.track(unpackModuleId.ACTIVITY_CARD_CLICKED, obj2);
     const obj3 = router_utils;
-    obj3.transitionTo(closure_12.CHANNEL(guildId, channelId));
+    obj3.transitionTo(authStore2.CHANNEL(guildId, channelId));
   }, items5);
   const tmp9 = guildId;
   if (null == stateFromStores) {

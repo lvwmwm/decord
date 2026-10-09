@@ -1,10 +1,10 @@
-// Module ID: 11546
-// Function ID: 11547
+// Module ID: 11475
+// Function ID: 11476
 // Name: PollsHttpApi
-// Dependencies: [5, 1085, 1294, 5631, 2]
+// Dependencies: [5, 1085, 1295, 5632, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 11546 (PollsHttpApi)
+// Module 11475 (PollsHttpApi)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ let obj = function _submitPollVote() {
             ({ channelId: c0, messageId: c1, answerIds: c2 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -141,7 +141,7 @@ obj = function _endPollEarly() {
             ({ channelId: c0, messageId: c1 } = closure_0);
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           let self;

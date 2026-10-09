@@ -1,23 +1,23 @@
-// Module ID: 4725
-// Function ID: 4726
+// Module ID: 4727
+// Function ID: 4728
 // Name: EmojiUtils
-// Dependencies: [5, 2067, 4707, 1389, 1085, 1392, 4724, 4726, 5997, 4699, 7897, 1493, 1414, 2]
+// Dependencies: [5, 2068, 4709, 1390, 1085, 1393, 4726, 4728, 5999, 4701, 7906, 1494, 1415, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 4725 (EmojiUtils)
+// Module 4727 (EmojiUtils)
 import Constants from "Constants" /* 1085 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ImageUtils from "ImageUtils" /* 1493 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4699 */;
-import EmojiTypes from "EmojiTypes" /* 4724 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5997 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7897 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import ImageUtils from "ImageUtils" /* 1494 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4701 */;
+import EmojiTypes from "EmojiTypes" /* 4726 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5999 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7906 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import UserStore from "UserStore" /* 1389 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import UserStore from "UserStore" /* 1390 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
 import size from "module_2" /* 2 */;
 
 let animated, c1, c2, closure_1, closure_2, closure_3, closure_5, closure_6, customExternal, dependencyMap, importDefault, managed, managedExternal;
@@ -72,7 +72,7 @@ function getEmojiUnavailableReason(forceIncludeExternalGuilds) {
           DISALLOW_EXTERNAL = EmojiDisabledReasons.DISALLOW_EXTERNAL;
         } else {
           let PREMIUM_LOCKED;
-          if (!authStore2(intention)) {
+          if (!authStore3(intention)) {
             let tmp19 = null != emoji && null != guildId;
             if (tmp19) {
               const tmp20 = emoji.type === EmojiTypes.EmojiTypes.GUILD || null != emoji.guildId;

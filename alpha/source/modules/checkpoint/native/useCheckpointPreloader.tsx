@@ -1,19 +1,19 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15965
+// Function ID: 15966
 // Name: useCheckpointPreloader
-// Dependencies: [32, 19, 15802, 4873, 4875, 15817, 15838, 15826, 15810, 15808, 558, 576, 15853, 1294, 2]
+// Dependencies: [32, 19, 15915, 4874, 4876, 15930, 15951, 15939, 15923, 15921, 558, 576, 15966, 1295, 2]
 
-// Module 15852 (useCheckpointPreloader)
+// Module 15965 (useCheckpointPreloader)
 import react2 from "react" /* 19 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef4873 from "module_4873" /* 4873 */;
-import _modDef4875 from "module_4875" /* 4875 */;
-import CheckpointStore from "CheckpointStore" /* 15802 */;
-import _modDef15808 from "module_15808" /* 15808 */;
-import _modDef15810 from "module_15810" /* 15810 */;
-import _modDef15817 from "module_15817" /* 15817 */;
-import _modDef15826 from "module_15826" /* 15826 */;
-import _modDef15838 from "module_15838" /* 15838 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import _modDef4874 from "module_4874" /* 4874 */;
+import _modDef4876 from "module_4876" /* 4876 */;
+import CheckpointStore from "CheckpointStore" /* 15915 */;
+import _modDef15921 from "module_15921" /* 15921 */;
+import _modDef15923 from "module_15923" /* 15923 */;
+import _modDef15930 from "module_15930" /* 15930 */;
+import _modDef15939 from "module_15939" /* 15939 */;
+import _modDef15951 from "module_15951" /* 15951 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let _require, dependencyMap;
 
 const useEffect = react2.useEffect;
 const CheckpointFetchStates = CheckpointStore.CheckpointFetchStates;
-let items = [_modDef4873, _modDef4875, _modDef15817, _modDef15838, _modDef15826, _modDef15810, _modDef15808];
+let items = [_modDef4874, _modDef4876, _modDef15930, _modDef15951, _modDef15939, _modDef15923, _modDef15921];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointPreloader() {
   let closure_0;
   let closure_1;

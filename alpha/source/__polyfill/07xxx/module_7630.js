@@ -1,13 +1,112 @@
 // Module ID: 7630
 // Function ID: 7631
-// Dependencies: [26, 65]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7572, 7631, 7574, 7583]
 
 // Module 7630
-import _mod26 from "module_26" /* 26 */;
-import module_65 from "module_65" /* 65 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import extractViewBox from "extractViewBox" /* 7572 */;
+import extractProps from "extractProps" /* 7574 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 7583 */;
+import _modDef7631 from "module_7631" /* 7631 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGMarker", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, refX: true, refY: true, markerHeight: true, markerWidth: true, markerUnits: true, orient: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true } };
-({ name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, refX: true, refY: true, markerHeight: true, markerWidth: true, markerUnits: true, orient: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true });
+let size;
 
-export default module_65.get("RNSVGMarker", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const Image = react_native.Image;
+const jsx = Fragment.jsx;
+const re9 = /\s+/;
+class SvgImage {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, SvgImage);
+    const obj = _getPrototypeOf(SvgImage);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(SvgImage, multiplyMatricesDefault);
+const entry = {
+  key: "render",
+  value: function render() {
+    let assetSource;
+    let height;
+    let href;
+    let parts;
+    let preserveAspectRatio;
+    let tmp2;
+    let tmp3;
+    let width;
+    let x;
+    let y;
+    const self = this;
+    const props = this.props;
+    ({ preserveAspectRatio, href } = props);
+    ({ x, y, width, height } = props);
+    if (undefined === href) {
+      href = props.xlinkHref;
+    }
+    const onLoad = props.onLoad;
+    if (preserveAspectRatio) {
+      const str = preserveAspectRatio.trim();
+      parts = str.split(re9);
+    } else {
+      parts = [];
+    }
+    size = { x, y, width, height, onLoad, meetOrSlice: extractViewBox.meetOrSliceTypes[tmp3] || 0, align: extractViewBox.alignEnum[tmp2] || "xMidYMid", src: assetSource };
+    [tmp2, tmp3] = parts;
+    extractViewBox.meetOrSliceTypes[tmp3] || 0;
+    assetSource = null;
+    extractViewBox.alignEnum[tmp2] || "xMidYMid";
+    if (href) {
+      let tmp10 = href;
+      const resolveAssetSource = Image.resolveAssetSource;
+      if (typeof href === "string") {
+        tmp10 = { uri: href };
+        const obj = { uri: href };
+      }
+      assetSource = resolveAssetSource(tmp10);
+    }
+    _modDef7631;
+    const tmp4Result = extractProps;
+    const merged = Object.assign(tmp4Result.withoutXY(this, props));
+    const merged1 = Object.assign(size);
+    return <tmp11 ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
+  }
+};
+const items = [entry];
+const importDefaultResultResult = _createClass(SvgImage, items);
+importDefaultResultResult.displayName = "Image";
+importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0, preserveAspectRatio: "xMidYMid meet" };
+
+export default importDefaultResultResult;

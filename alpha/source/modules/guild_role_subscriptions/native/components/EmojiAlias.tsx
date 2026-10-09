@@ -1,15 +1,15 @@
-// Module ID: 18273
-// Function ID: 18274
+// Module ID: 18435
+// Function ID: 18436
 // Name: EmojiAlias
-// Dependencies: [19, 17, 21, 5090, 558, 576, 5086, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 5087, 2]
 
-// Module 18273 (EmojiAlias)
+// Module 18435 (EmojiAlias)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5086 */;
+import Text_Text from "Text/Text" /* 5087 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

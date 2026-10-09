@@ -1,21 +1,21 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17548
+// Function ID: 17549
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 2060, 21, 5090, 587, 7898, 558, 576, 5055, 5056, 584, 4810, 5091, 2048, 9964, 1200, 7940, 5086, 1126, 4787, 2]
+// Dependencies: [32, 19, 17, 2061, 21, 5091, 587, 7907, 558, 576, 5056, 5057, 584, 4811, 5092, 2049, 9983, 1200, 7949, 5087, 1126, 4788, 2]
 
-// Module 17400 (BurstReactionAnimationContainer)
+// Module 17548 (BurstReactionAnimationContainer)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7898 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7907 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native = tmp(4787);
+const native = tmp(4788);
 let react = react_mod;
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -118,7 +118,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
     tmp12 = cResult[2];
   }
   let closure_7 = tmp12;
-  let tmpResult = tmp(4810);
+  let tmpResult = tmp(4811);
   const fn2 = function x() {
     let obj2;
     if (null == first) {
@@ -150,7 +150,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
     }
     return obj2;
   };
-  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(5091).withTiming, runOnJS: tmp(4810).runOnJS, handleComponentFinish };
+  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(5092).withTiming, runOnJS: tmp(4811).runOnJS, handleComponentFinish };
   fn2.__closure = obj3;
   fn2.__workletHash = 3096942457868;
   fn2.__initData = __initData;
@@ -160,7 +160,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
     let tmp15;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      let items1 = [tmp(2048).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+      let items1 = [tmp(2049).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
       cResult[3] = items1;
       tmp15 = items1;
     } else {
@@ -252,7 +252,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
           return tmp(OverlayView, obj);
         }
     };
-    const tmp19 = animatedStyle(animationData(9964), obj4);
+    const tmp19 = animatedStyle(animationData(9983), obj4);
     cResult[4] = animatedStyle;
     cResult[5] = animationData;
     cResult[6] = first1;
@@ -412,8 +412,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
           return tmp(OverlayView, obj);
         }
     };
-    let tmp11 = animationData(9964);
-    items = [tmp6(2048).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+    let tmp11 = animationData(9983);
+    items = [tmp6(2049).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
     tmp8 = closure_8(tmp11, obj3);
   }
   return tmp8;

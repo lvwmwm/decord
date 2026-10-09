@@ -1,16 +1,16 @@
-// Module ID: 8587
-// Function ID: 8588
+// Module ID: 8595
+// Function ID: 8596
 // Name: TableRowApplicationIcon
-// Dependencies: [19, 21, 5090, 587, 558, 576, 1414, 6164, 2]
+// Dependencies: [19, 21, 5091, 587, 558, 576, 1415, 6163, 2]
 
-// Module 8587 (TableRowApplicationIcon)
+// Module 8595 (TableRowApplicationIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 6164 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import FastImageDefault from "FastImage" /* 6163 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

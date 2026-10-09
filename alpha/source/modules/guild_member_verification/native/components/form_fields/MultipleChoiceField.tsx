@@ -1,16 +1,16 @@
-// Module ID: 6766
-// Function ID: 6767
+// Module ID: 6773
+// Function ID: 6774
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 1096, 21, 5090, 5902, 587, 558, 576, 5086, 6264, 6265, 2]
+// Dependencies: [19, 17, 1096, 21, 5091, 5903, 587, 558, 576, 5087, 6266, 6267, 2]
 
-// Module 6766 (MultipleChoiceField)
+// Module 6773 (MultipleChoiceField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import TextStyles from "TextStyles" /* 5902 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import TextStyles from "TextStyles" /* 5903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,14 +129,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultipleChoi
     cResult[12] = response;
     cResult[13] = tmp11;
     cResult[14] = tmp12;
-    cResult[15] = closure_4(onChange(6265).TableRadioGroup, obj2);
-    const tmp17 = closure_4(onChange(6265).TableRadioGroup, obj2);
+    cResult[15] = closure_4(onChange(6267).TableRadioGroup, obj2);
+    const tmp17 = closure_4(onChange(6267).TableRadioGroup, obj2);
   }
   const obj3 = { style: tmp4.formHeader, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: label };
   cResult[3] = label;
   cResult[4] = tmp4.formHeader;
-  cResult[5] = closure_4(onChange(5086).Text, obj3);
-  closure_4(onChange(5086).Text, obj3);
+  cResult[5] = closure_4(onChange(5087).Text, obj3);
+  closure_4(onChange(5087).Text, obj3);
 }) : (function MultipleChoiceField(hasIcons) {
   let field;
   let items1;

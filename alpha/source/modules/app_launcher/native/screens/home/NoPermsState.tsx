@@ -1,42 +1,41 @@
-// Module ID: 11817
-// Function ID: 11818
+// Module ID: 11754
+// Function ID: 11755
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4929, 4991, 11818, 11819, 11744, 11233, 1126, 5086, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 4930, 4992, 11755, 11756, 11681, 10588, 6163, 1126, 5087, 2]
 
-// Module 11817 (NoPermsState)
+// Module 11754 (NoPermsState)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import shared from "shared" /* 4929 */;
-import useThemeDefault from "useTheme" /* 4991 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11744 */;
+import shared from "shared" /* 4930 */;
+import useThemeDefault from "useTheme" /* 4992 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11681 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj2;
-({ View: c3, Image: closure_4 } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, textContainer: { flexShrink: 1 }, image: { width: 64, height: 64 } };
 obj2 = { paddingVertical: 16, paddingHorizontal: 24, gap: 12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "flex-start", display: "flex", flexDirection: "row" };
-let closure_7 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
+let closure_6 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
   let items;
   const obj = react2;
   const cResult = obj.c(10);
-  const tmp4 = closure_7();
+  const tmp4 = closure_6();
   const obj2 = shared;
-  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 11818 : 11819);
+  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 11755 : 11756);
   const tmpResult = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(11233).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(10588).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   if (cResult[0] === tmp5Result) {
     let tmp9;
     let tmp12;
@@ -56,7 +55,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     }
     if (cResult[4] !== tmp4.textContainer) {
       const obj3 = { style: textContainer, variant: "text-sm/medium", color: "text-muted", children: tmp12 };
-      const tmp16 = hasOwnProperty(Text_Text.Text, obj3);
+      const tmp16 = React3(Text_Text.Text, obj3);
       cResult[4] = tmp4.textContainer;
       cResult[5] = tmp16;
       tmp14 = tmp16;
@@ -74,7 +73,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     }
     const obj4 = { style: tmp8, children: items };
     items = [tmp9, tmp14];
-    const tmp20 = metroRequire(_false, obj4);
+    const tmp20 = hasOwnProperty(View, obj4);
     cResult[6] = tmp4.container;
     cResult[7] = tmp9;
     cResult[8] = tmp14;
@@ -82,7 +81,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
     tmp17 = tmp20;
   }
   const obj5 = { style: tmp4.image, resizeMode: "contain", source: tmp5Result };
-  const tmp10 = hasOwnProperty(React3, obj5);
+  const tmp10 = React3(FastImageDefault, obj5);
   cResult[0] = tmp5Result;
   cResult[1] = tmp4.image;
   cResult[2] = tmp10;
@@ -90,21 +89,21 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState
 }) : (function EmptyState() {
   let intl;
   let items;
-  const tmp = closure_7();
+  const tmp = closure_6();
   const obj = shared;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11818 : 11819);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11755 : 11756);
   const tmp2Result = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(11233).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(10588).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: items };
   items = [, ];
   const obj3 = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
-  items[0] = hasOwnProperty(React3, obj3);
+  items[0] = React3(FastImageDefault, obj3);
   const obj4 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: intl.string(intl2.t.uDnXXj) };
-  const Text = tmp2(5086).Text;
+  const Text = tmp2(5087).Text;
   intl = tmp2(1126).intl;
-  items[1] = hasOwnProperty(Text, obj4);
-  return metroRequire(_false, obj2);
+  items[1] = React3(Text, obj4);
+  return hasOwnProperty(View, obj2);
 });
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");
 
-export default tmp5;
+export default tmp4;

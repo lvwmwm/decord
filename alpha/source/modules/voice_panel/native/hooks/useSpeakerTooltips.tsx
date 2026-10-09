@@ -1,20 +1,20 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 17723
+// Function ID: 17724
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 17569, 11987, 2060, 21, 17572, 17535, 10815, 11988, 4810, 7090, 17513, 1126, 2048, 17574, 558, 576, 9375, 2]
+// Dependencies: [32, 19, 17721, 11924, 2061, 21, 17724, 17687, 10986, 11925, 4811, 7093, 17665, 1126, 2049, 17726, 558, 576, 9413, 2]
 // Exports: default
 
-// Module 17571 (useSpeakerTooltips)
+// Module 17723 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11987 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 17574 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11924 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 17726 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17569 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17721 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,8 +24,8 @@ let importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const dismissible_content = tmp(2048);
-const useCoachmark = tmp(9375);
+const dismissible_content = tmp(2049);
+const useCoachmark = tmp(9413);
 let _slicedToArray = _slicedToArray_mod;
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
 let VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;

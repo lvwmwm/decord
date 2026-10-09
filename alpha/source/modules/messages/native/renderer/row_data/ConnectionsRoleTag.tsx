@@ -1,10 +1,10 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13415
+// Function ID: 13416
 // Name: ConnectionsRoleTag
 // Dependencies: [17, 1085, 587, 1103, 2]
 // Exports: createConnectionsRoleTag
 
-// Module 13320 (ConnectionsRoleTag)
+// Module 13415 (ConnectionsRoleTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

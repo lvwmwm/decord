@@ -1,39 +1,38 @@
-// Module ID: 16318
-// Function ID: 16319
+// Module ID: 16437
+// Function ID: 16438
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4937, 16278, 1126, 5086, 5375, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 4938, 6163, 16397, 1126, 5087, 5376, 2]
 
-// Module 16318 (MessagesItemEmptyState)
+// Module 16437 (MessagesItemEmptyState)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4937 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16278 */;
+import RootNavigationRef from "RootNavigationRef" /* 4938 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16397 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, containerImage: obj3, image: { height: "100%", width: "100%" }, body: obj4, title: { textAlign: "center" } };
 obj2 = { padding: nativeDefault.space.PX_16, flex: 1, height: 325 };
 createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_16, flexShrink: 1, flexGrow: 1 };
 obj4 = { marginBottom: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_8, textAlign: "center" };
-let closure_8 = createStyles(obj);
+let closure_7 = createStyles(obj);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemEmptyState() {
   let first;
   let intl3;
@@ -41,7 +40,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp6;
   let obj = react2;
   const cResult = obj.c(18);
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function t() {
       const obj = RootNavigationRef;
@@ -62,7 +61,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const container = tmp4.container;
   if (cResult[1] !== tmp4.image) {
     let obj2 = { resizeMode: "contain", source: AssetRegistryDefault, style: tmp4.image };
-    const tmp10 = metroRequire(React3, obj2);
+    const tmp9 = FastImageDefault;
+    const tmp10 = hasOwnProperty(tmp9, obj2);
     cResult[1] = tmp4.image;
     cResult[2] = tmp10;
     tmp6 = tmp10;
@@ -91,7 +91,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (cResult[7] !== tmp4.title) {
       const obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: title, maxFontSizeMultiplier: 2, children: tmp13 };
-      const tmp17 = metroRequire(Text_Text.Heading, obj3);
+      const tmp17 = hasOwnProperty(Text_Text.Heading, obj3);
       cResult[7] = tmp4.title;
       cResult[8] = tmp17;
       tmp15 = tmp17;
@@ -110,7 +110,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     if (cResult[10] !== tmp4.body) {
       const obj4 = { color: "text-default", variant: "text-md/medium", style: body, maxFontSizeMultiplier: 2, children: tmp18 };
-      const tmp22 = metroRequire(Text_Text.Text, obj4);
+      const tmp22 = hasOwnProperty(Text_Text.Text, obj4);
       cResult[10] = tmp4.body;
       cResult[11] = tmp22;
       tmp20 = tmp22;
@@ -120,9 +120,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const _Symbol3 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { text: intl3.string(intl4.t.zIJnA6), onPress: first, size: "lg" };
-      const Button = tmp(5375).Button;
+      const Button = tmp(5376).Button;
       intl3 = tmp(1126).intl;
-      const tmp25 = metroRequire(Button, obj5);
+      const tmp25 = hasOwnProperty(Button, obj5);
       cResult[12] = tmp25;
       tmp23 = tmp25;
     } else {
@@ -141,7 +141,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const obj6 = { style: container, collapsable: false, children: items };
     items = [tmp11, tmp15, tmp20, tmp23];
-    const tmp29 = metroImportDefault(hasOwnProperty, obj6);
+    const tmp29 = metroRequire(View, obj6);
     cResult[13] = tmp4.container;
     cResult[14] = tmp11;
     cResult[15] = tmp15;
@@ -150,7 +150,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp26 = tmp29;
   }
   const obj7 = { style: tmp4.containerImage, children: tmp6 };
-  const tmp12 = metroRequire(hasOwnProperty, obj7);
+  const tmp12 = hasOwnProperty(View, obj7);
   cResult[3] = tmp4.containerImage;
   cResult[4] = tmp6;
   cResult[5] = tmp12;
@@ -161,10 +161,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let intl3;
   let items;
   let obj3;
-  const tmp = closure_8();
+  let tmp3;
+  const tmp = closure_7();
   let obj = { style: tmp.container, collapsable: false, children: items };
-  let obj2 = { style: tmp.containerImage, children: metroRequire(React3, obj3) };
-  obj3 = { resizeMode: "contain", source: AssetRegistryDefault, style: tmp.image };
+  let obj2 = { style: tmp.containerImage, children: hasOwnProperty(tmp3, obj3) };
   const callback = react.useCallback(() => {
     const obj = RootNavigationRef;
     const rootNavigationRef = obj.getRootNavigationRef();
@@ -176,20 +176,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }, []);
-  items = [metroRequire(hasOwnProperty, obj2), , , ];
+  obj3 = { resizeMode: "contain", source: AssetRegistryDefault, style: tmp.image };
+  tmp3 = FastImageDefault;
+  items = [hasOwnProperty(View, obj2), , , ];
   const obj4 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.title, maxFontSizeMultiplier: 2, children: intl.string(intl4.t["8JZof8"]) };
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
-  items[1] = metroRequire(Heading, obj4);
+  items[1] = hasOwnProperty(Heading, obj4);
   const obj5 = { color: "text-default", variant: "text-md/medium", style: tmp.body, maxFontSizeMultiplier: 2, children: intl2.string(intl4.t["qm+H7x"]) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
-  items[2] = metroRequire(Text, obj5);
+  items[2] = hasOwnProperty(Text, obj5);
   const obj6 = { text: intl3.string(intl4.t.zIJnA6), onPress: callback, size: "lg" };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
-  items[3] = metroRequire(Button, obj6);
-  return metroImportDefault(hasOwnProperty, obj);
+  items[3] = hasOwnProperty(Button, obj6);
+  return metroRequire(View, obj);
 }));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemEmptyState.tsx");
 

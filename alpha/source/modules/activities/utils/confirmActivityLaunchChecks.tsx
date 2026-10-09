@@ -1,14 +1,14 @@
-// Module ID: 10649
-// Function ID: 10650
+// Module ID: 10793
+// Function ID: 10794
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 2063, 2062, 1085, 10650, 10631, 584, 5631, 4696, 10652, 10622, 10653, 9138, 10655, 2]
+// Dependencies: [5, 2064, 2063, 1085, 10794, 10782, 584, 5632, 4698, 10797, 10777, 10798, 9205, 10800, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10649 (confirmActivityLaunchChecks)
+// Module 10793 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
 import size from "module_2" /* 2 */;
 
 let c5, channelId, closure_5, selfEmbeddedActivities;
@@ -58,7 +58,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
               PRIVATE_CHANNEL = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -163,7 +163,7 @@ obj = function _confirmActivityChange() {
             ({ currentEmbeddedApplication: c0, shouldClosePopoutOnLeaveCurrentEmbeddedApplication: c1, onConfirmActivityLaunchChecksAlertOpen: c2 } = closure_0);
             c2 = 1;
             c3 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === tmp4) {
@@ -196,10 +196,10 @@ obj = function _confirmActivityChange() {
                       closure_2();
                     }
                     shouldClosePopout(tmp3[9])(closure_0, channel, () => {
-                      obj = value(c2[10])();
+                      obj = closure_0(c2[10]);
                       const obj2 = { location: value.location, applicationId: closure_2_0.id, shouldClosePopout };
-                      obj.leaveActivity(obj2);
-                      fn(true);
+                      const result = obj.leaveEmbeddedActivity(obj2);
+                      closure_0(true);
                     }, () => fn(false));
                   }
                 }
@@ -281,7 +281,7 @@ obj = function _confirmActivityAgeGate() {
             application = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           let closure_1;
@@ -439,7 +439,7 @@ obj = function _confirmExternalAppLaunch() {
             isVerified = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else {
           let closure_1;

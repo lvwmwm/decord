@@ -1,17 +1,17 @@
-// Module ID: 7853
-// Function ID: 7854
+// Module ID: 7862
+// Function ID: 7863
 // Name: imageConversion
-// Dependencies: [5, 3, 5440, 7760, 4688, 2]
+// Dependencies: [5, 3, 5441, 7769, 4690, 2]
 // Exports: convertFileToJpeg
 
-// Module 7853 (imageConversion)
+// Module 7862 (imageConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import MediaTypes from "MediaTypes" /* 5440 */;
-import imageFilename from "imageFilename" /* 7760 */;
+import MediaTypes from "MediaTypes" /* 5441 */;
+import imageFilename from "imageFilename" /* 7769 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let UNKNOWN_ERROR, c7, c8, closure_12, closure_5;
+let UNKNOWN_ERROR, c7, c8, closure_5;
 
 function toImageEncoder(arg0) {
   if ("WIC" === arg0) {
@@ -56,6 +56,7 @@ let obj = function _convertViaSysimg() {
         let sysimg;
         let closure_10;
         let closure_11;
+        let closure_12;
         let blob;
         let compressTimeMs;
         let closure_15;
@@ -94,7 +95,7 @@ let obj = function _convertViaSysimg() {
             };
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {

@@ -1,19 +1,19 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10214
+// Function ID: 10215
 // Name: ActivityStatusText
-// Dependencies: [109, 19, 21, 5090, 558, 576, 5086, 2]
+// Dependencies: [109, 19, 21, 5091, 558, 576, 5087, 2]
 
-// Module 10229 (ActivityStatusText)
+// Module 10214 (ActivityStatusText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5086);
+const Text_Text = tmp(5087);
 let closure_2 = ["children", "style", "variant"];
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ text: { flexShrink: 1 } });

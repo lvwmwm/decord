@@ -1,22 +1,22 @@
-// Module ID: 8660
-// Function ID: 8661
+// Module ID: 8669
+// Function ID: 8670
 // Name: InstantInviteUtils
-// Dependencies: [2062, 2063, 2124, 6040, 4717, 1389, 6909, 1085, 7418, 5975, 8661, 1126, 2]
+// Dependencies: [2063, 2064, 2124, 6042, 4719, 1390, 6916, 1085, 7423, 5977, 8670, 1126, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8660 (InstantInviteUtils)
+// Module 8669 (InstantInviteUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
-import Constants2 from "Constants" /* 7418 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8661 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5977 */;
+import Constants2 from "Constants" /* 7423 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8670 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6909 */;
+import ReadStateStore from "ReadStateStore" /* 6042 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6916 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -370,7 +370,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       if (obj10.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
         let tmp3 = dependencyMap;
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: tmp44, limit: 3, guildId: "apply" };
+        const obj12 = { query: tmp44, limit: 3, guildId: "code" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };
@@ -543,17 +543,16 @@ export const getUsersAlreadyJoined = function getUsersAlreadyJoined(channel) {
   return set1;
 };
 export const maxAgeString = function maxAgeString(maxAge, maxUses) {
-  const parsed = parseInt(maxUses, 10);
   const value = closure_19[maxAge].value;
   const type = closure_19[maxAge].type;
   if (minutes === type) {
     let stringResult;
     const intl4 = intl6.intl;
-    if (0 === parsed) {
-      stringResult = intl4.string(tmp13(1126).t["/WbTXD"]);
+    if (0 === maxUses) {
+      stringResult = intl4.string(tmp11(1126).t["/WbTXD"]);
     } else {
-      const obj2 = { numUses: parsed };
-      stringResult = intl4.formatToPlainString(tmp13(1126).t.eDRWJK, obj2);
+      const obj2 = { numUses: maxUses };
+      stringResult = intl4.formatToPlainString(tmp11(1126).t.eDRWJK, obj2);
     }
     return stringResult;
   } else if (hours === type) {
@@ -561,11 +560,11 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     const intl3 = intl6.intl;
     const formatToPlainString2 = intl3.formatToPlainString;
     const t2 = intl6.t;
-    if (0 === parsed) {
+    if (0 === maxUses) {
       const obj3 = { numHours: value };
       formatToPlainString2Result = formatToPlainString2(t2.ZVdJMy, obj3);
     } else {
-      const obj4 = { numHours: value, numUses: parsed };
+      const obj4 = { numHours: value, numUses: maxUses };
       formatToPlainString2Result = formatToPlainString2(t2.NgZgAB, obj4);
     }
     return formatToPlainString2Result;
@@ -574,22 +573,22 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     const intl2 = intl6.intl;
     const formatToPlainString = intl2.formatToPlainString;
     const t = intl6.t;
-    if (0 === parsed) {
+    if (0 === maxUses) {
       const obj5 = { numDays: value };
       formatToPlainStringResult = formatToPlainString(t.T96qss, obj5);
     } else {
-      const obj6 = { numDays: value, numUses: parsed };
+      const obj6 = { numDays: value, numUses: maxUses };
       formatToPlainStringResult = formatToPlainString(t.TfuB9B, obj6);
     }
     return formatToPlainStringResult;
   } else if (never === type) {
     let stringResult1;
     const intl = intl6.intl;
-    if (0 === parsed) {
-      stringResult1 = intl.string(tmp4(1126).t.QrHBnC);
+    if (0 === maxUses) {
+      stringResult1 = intl.string(tmp2(1126).t.QrHBnC);
     } else {
-      obj = { numUses: parsed };
-      stringResult1 = intl.formatToPlainString(tmp4(1126).t.yJnTxI, obj);
+      obj = { numUses: maxUses };
+      stringResult1 = intl.formatToPlainString(tmp2(1126).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {

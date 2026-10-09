@@ -1,26 +1,26 @@
-// Module ID: 15023
-// Function ID: 15024
+// Module ID: 15135
+// Function ID: 15136
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 6786, 1085, 21, 587, 5090, 558, 576, 9135, 9068, 12887, 5012, 1630, 504, 1502, 6849, 1503, 5086, 1126, 6267, 6184, 8587, 6671, 6675, 2]
+// Dependencies: [19, 17, 6793, 1085, 21, 587, 5091, 558, 576, 9202, 9083, 12856, 5013, 1631, 504, 1503, 6856, 1504, 5087, 1126, 6269, 6186, 8595, 6678, 6682, 2]
 
-// Module 15023 (UserSettingsAuthedApps)
+// Module 15135 (UserSettingsAuthedApps)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5012 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import TableRowGroup from "TableRowGroup" /* 6267 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6675 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6786 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9068 */;
-import applications from "applications" /* 9135 */;
-import EmbedIcon from "EmbedIcon" /* 12887 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import TableRowGroup from "TableRowGroup" /* 6269 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6678 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6682 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6793 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9083 */;
+import applications from "applications" /* 9202 */;
+import EmbedIcon from "EmbedIcon" /* 12856 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -861,13 +861,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     const Text2 = Text_Text.Text;
     intl2 = intl4.intl;
     items[1] = unpackModuleId(Text2, obj4);
-    items1 = [closure_12(React3, obj2), ];
+    items1 = [authStore2(React3, obj2), ];
     const obj5 = { style: closure_0.appListHeader, children: unpackModuleId(TableRowGroupTitle, obj6) };
     obj6 = { title: intl3.string(intl4.t.PHjkRE) };
     TableRowGroupTitle = TableRowGroup.TableRowGroupTitle;
     intl3 = intl4.intl;
     items1[1] = unpackModuleId(React3, obj5);
-    return closure_12(map1, obj);
+    return authStore2(map1, obj);
   }
   cResult[3] = tmp4.appListHeader;
   cResult[4] = tmp4.headerDescription;
@@ -947,13 +947,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         const Text2 = Text_Text.Text;
         intl2 = intl4.intl;
         items[1] = unpackModuleId(Text2, obj4);
-        items1 = [closure_12(React3, obj2), ];
+        items1 = [authStore2(React3, obj2), ];
         const obj5 = { style: closure_0.appListHeader, children: unpackModuleId(TableRowGroupTitle, obj6) };
         obj6 = { title: intl3.string(intl4.t.PHjkRE) };
         TableRowGroupTitle = TableRowGroup.TableRowGroupTitle;
         intl3 = intl4.intl;
         items1[1] = unpackModuleId(React3, obj5);
-        return closure_12(map1, obj);
+        return authStore2(map1, obj);
       }
       if (0 === appAuthTokens.length) {
         let obj4 = { style: tmp.emptyContainer, children: items2 };

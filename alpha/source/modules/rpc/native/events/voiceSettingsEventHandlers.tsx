@@ -1,11 +1,11 @@
-// Module ID: 14610
-// Function ID: 14611
+// Module ID: 14709
+// Function ID: 14710
 // Name: voiceSettingsEventHandlers
-// Dependencies: [14611, 11141, 2]
+// Dependencies: [14710, 10904, 2]
 
-// Module 14610 (voiceSettingsEventHandlers)
-import NativeRPCHelpers from "NativeRPCHelpers" /* 11141 */;
-import VoiceSettingsEventsFactory from "VoiceSettingsEventsFactory" /* 14611 */;
+// Module 14709 (voiceSettingsEventHandlers)
+import NativeRPCHelpers from "NativeRPCHelpers" /* 10904 */;
+import VoiceSettingsEventsFactory from "VoiceSettingsEventsFactory" /* 14710 */;
 import size from "module_2" /* 2 */;
 
 const importDefaultResultResult = VoiceSettingsEventsFactory(NativeRPCHelpers.getDeprecatedVoiceSettings, NativeRPCHelpers.getVoiceSettings);

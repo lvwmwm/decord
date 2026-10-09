@@ -1,12 +1,12 @@
-// Module ID: 9034
-// Function ID: 9035
+// Module ID: 9049
+// Function ID: 9050
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 9035, 9036, 6931, 9029, 1126, 2]
+// Dependencies: [5, 32, 19, 9050, 9051, 6938, 9044, 1126, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9034 (useRedeemVirtualCurrency)
+// Module 9049 (useRedeemVirtualCurrency)
 import intl3 from "intl" /* 1126 */;
-import useOrderSigning from "useOrderSigning" /* 9036 */;
+import useOrderSigning from "useOrderSigning" /* 9051 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   [error, _asyncToGenerator] = _slicedToArray(enabled(null), 2);
   const tmp5 = _slicedToArray(enabled(null), 2);
   [isSubmitting, _slicedToArray] = enabled(false);
-  let obj = entitlements(9035);
+  let obj = entitlements(9050);
   enabled = obj.useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {

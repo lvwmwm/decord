@@ -1,27 +1,27 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 12855
+// Function ID: 12856
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5090, 587, 9134, 9068, 12887, 558, 576, 11, 9132, 5039, 1126, 9136, 8198, 11466, 5049, 8433, 12825, 10386, 5086, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 9201, 9083, 12856, 558, 576, 11, 9199, 5040, 1126, 9203, 8206, 11396, 5050, 8441, 11388, 10375, 5087, 2]
 
-// Module 12886 (ApplicationDetails)
+// Module 12855 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import LinkIcon from "LinkIcon" /* 5039 */;
-import LockIcon from "LockIcon" /* 8198 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9068 */;
-import scopes from "scopes" /* 9132 */;
-import disclosures from "disclosures" /* 9134 */;
-import Utils from "Utils" /* 9136 */;
-import HammerIcon from "HammerIcon" /* 11466 */;
-import RobotIcon from "RobotIcon" /* 12825 */;
-import EmbedIcon from "EmbedIcon" /* 12887 */;
+import LinkIcon from "LinkIcon" /* 5040 */;
+import LockIcon from "LockIcon" /* 8206 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8441 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9083 */;
+import scopes from "scopes" /* 9199 */;
+import disclosures from "disclosures" /* 9201 */;
+import Utils from "Utils" /* 9203 */;
+import RobotIcon from "RobotIcon" /* 11388 */;
+import HammerIcon from "HammerIcon" /* 11396 */;
+import EmbedIcon from "EmbedIcon" /* 12856 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,9 +30,9 @@ let hasOwnProperty;
 let size;
 let tmp;
 let tmp4;
-const ClockIcon2 = tmp4(5049);
-const Text_Text = tmp(5086);
-const ShieldIcon = tmp4(10386);
+const ClockIcon2 = tmp4(5050);
+const Text_Text = tmp(5087);
+const ShieldIcon = tmp4(10375);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: size };
@@ -97,7 +97,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
                     tmp44 = cResult[35];
                   }
                   if (cResult[36] !== tmp7) {
-                    let obj3 = { iconComponent: tmp(10386).ShieldIcon, text: tmp7 };
+                    let obj3 = { iconComponent: tmp(10375).ShieldIcon, text: tmp7 };
                     const tmp52 = React3(closure_7, obj3);
                     cResult[36] = tmp7;
                     cResult[37] = tmp52;
@@ -259,7 +259,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
       } else {
         tmp34 = cResult[28];
       }
-      const ClockIcon = tmp(5049).ClockIcon;
+      const ClockIcon = tmp(5050).ClockIcon;
       const intl3 = tmp(1126).intl;
       const obj10 = { date };
       const formatToPlainStringResult = intl3.formatToPlainString(intl5.t["+1bjc8"], obj10);

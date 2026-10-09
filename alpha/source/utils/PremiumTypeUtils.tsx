@@ -1,11 +1,11 @@
-// Module ID: 1988
-// Function ID: 1989
+// Module ID: 1989
+// Function ID: 1990
 // Name: PremiumTypeUtils
-// Dependencies: [1391, 2]
+// Dependencies: [1392, 2]
 // Exports: isPremium, isPremiumAtLeast, isPremiumAtMost, isPremiumExactly
 
-// Module 1988 (PremiumTypeUtils)
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+// Module 1989 (PremiumTypeUtils)
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 function isPremiumAtLeast(premiumType, TIER_2) {

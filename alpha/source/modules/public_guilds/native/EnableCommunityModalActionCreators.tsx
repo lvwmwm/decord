@@ -1,18 +1,18 @@
-// Module ID: 18168
-// Function ID: 18169
+// Module ID: 18330
+// Function ID: 18331
 // Name: EnableCommunityModalActionCreators
-// Dependencies: [5940, 18169, 1999, 2]
+// Dependencies: [5941, 18331, 2000, 2]
 
-// Module 18168 (EnableCommunityModalActionCreators)
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
+// Module 18330 (EnableCommunityModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
 import size from "module_2" /* 2 */;
 
 const ENABLED_COMMUNITY_MODAL_KEY = "ENABLED_COMMUNITY_MODAL_KEY";
 let obj = {
   open() {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(18169, dependencyMap.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
+    obj.pushLazy(asyncRequire(18331, dependencyMap.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

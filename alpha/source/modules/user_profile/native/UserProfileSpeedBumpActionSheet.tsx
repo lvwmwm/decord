@@ -1,27 +1,27 @@
-// Module ID: 8282
-// Function ID: 8283
+// Module ID: 8290
+// Function ID: 8291
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 2063, 2124, 1389, 8283, 1085, 21, 5090, 587, 8285, 1126, 558, 576, 6267, 6184, 1200, 4929, 4991, 504, 8286, 6865, 6841, 8290, 8299, 1264, 8281, 8279, 8300, 6642, 5086, 5405, 5375, 6189, 2040, 6829, 6298, 2]
+// Dependencies: [32, 19, 17, 2064, 2124, 1390, 8291, 1085, 21, 5091, 587, 8293, 1126, 558, 576, 6269, 6186, 1200, 4930, 4992, 504, 8294, 6872, 6848, 8298, 8307, 1265, 8289, 8287, 8308, 6649, 5087, 5406, 5376, 6191, 2041, 6836, 6305, 2]
 
-// Module 8282 (UserProfileSpeedBumpActionSheet)
+// Module 8290 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import TableRow2 from "TableRow" /* 6184 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
-import UserActionCreators from "UserActionCreators" /* 8281 */;
-import Constants2 from "Constants" /* 8283 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8285 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import TableRow2 from "TableRow" /* 6186 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8287 */;
+import UserActionCreators from "UserActionCreators" /* 8289 */;
+import Constants2 from "Constants" /* 8291 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8293 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import UserStore_mod from "UserStore" /* 1389 */;
+import UserStore_mod from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,15 +80,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
         stringResult = intl2.string(tmp(1126).t.W6fjkS);
       }
       items[1] = obj3;
-      const TableRowGroup = tmp(6267).TableRowGroup;
+      const TableRowGroup = tmp(6269).TableRowGroup;
       const mapped = items.map((icon, index) => {
         let Icon;
         let obj2;
-        const obj = { start: 0 === index, end: items.length === index, icon: closure_12(Icon, obj2), label: icon.text };
+        const obj = { start: 0 === index, end: items.length === index, icon: authStore2(Icon, obj2), label: icon.text };
         const TableRow = TableRow2.TableRow;
         obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
         Icon = native.Icon;
-        return closure_12(TableRow, obj, index);
+        return authStore2(TableRow, obj, index);
       });
       cResult[0] = speedBumpType;
       cResult[1] = TableRowGroup;
@@ -142,14 +142,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Inform
       children: items.map((icon, index) => {
           let Icon;
           let obj2;
-          const obj = { start: 0 === index, end: items.length === index, icon: closure_12(Icon, obj2), label: icon.text };
+          const obj = { start: 0 === index, end: items.length === index, icon: authStore2(Icon, obj2), label: icon.text };
           const TableRow = TableRow2.TableRow;
           obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
           Icon = native.Icon;
-          return closure_12(TableRow, obj, index);
+          return authStore2(TableRow, obj, index);
         })
     };
-    const TableRowGroup = tmp4(6267).TableRowGroup;
+    const TableRowGroup = tmp4(6269).TableRowGroup;
     return closure_12(TableRowGroup, obj3);
   } else {
     throw new TypeError("Trying to call a non-function");

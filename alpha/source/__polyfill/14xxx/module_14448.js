@@ -1,8 +1,74 @@
 // Module ID: 14448
 // Function ID: 14449
-// Dependencies: []
+// Dependencies: [14449, 14450, 1172, 14451, 14452]
+// Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
 
 // Module 14448
-const obj = { name: "react-native-url-polyfill", version: "2.0.0", description: "A lightweight and trustworthy URL polyfill for React Native", keywords: ["URL", "URLSearchParams", "polyfill", "react native", "whatwg-url"], bugs: { url: "https://github.com/charpeni/react-native-url-polyfill/issues" }, homepage: "https://github.com/charpeni/react-native-url-polyfill", readme: "https://github.com/charpeni/react-native-url-polyfill#readme", repository: { type: "git", url: "https://github.com/charpeni/react-native-url-polyfill.git" }, main: "index.js", types: "index.d.ts", scripts: { test: "jest", lint: "eslint .", prepare: "husky install", "bundle-size": "node scripts/bundle-size" }, author: "Nicolas Charpentier <nicolas.charpentier079@gmail.com>", license: "MIT", dependencies: { "whatwg-url-without-unicode": "8.0.0-3" }, devDependencies: { "@react-native-community/eslint-config": "3.2.0", detox: "20.9.1", eslint: "8.44.0", "eslint-plugin-prettier": "4.2.1", husky: "8.0.3", jest: "29.5.0", "lint-staged": "13.2.3", "metro-react-native-babel-preset": "0.76.7", nanoid: "3.3.6", prettier: "2.8.8", react: "18.2.0", "react-native": "0.72.1", "react-native-bundle-scale": "1.1.0", typescript: "5.1.6" }, peerDependencies: { "react-native": "*" }, jest: { preset: "react-native", testPathIgnorePatterns: ["/node_modules/", "./platforms/"] }, "lint-staged": { "*.js": ["eslint --fix"] } };
+import _mod1172 from "module_1172" /* 1172 */;
+import calendars2 from "calendars" /* 14449 */;
+import hourCycles from "hourCycles" /* 14450 */;
+import timezones from "timezones" /* 14451 */;
+import weekData2 from "weekData" /* 14452 */;
 
-export default obj;
+
+export const getCalendarPreferenceDataForRegion = function getCalendarPreferenceDataForRegion(region) {
+  let str = null;
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const calendars = calendars2.calendars;
+  if (!str) {
+    str = "";
+  }
+  const arr = calendars[str] || calendars2.calendars["001"];
+  return arr.map((item) => {
+    let str = "gregory";
+    if ("gregorian" !== item) {
+      let str2 = "islamicc";
+      if ("islamic-civil" !== item) {
+        str2 = item;
+      }
+      str = str2;
+    }
+    return str;
+  });
+};
+export const getHourCyclesPreferenceDataForLocaleOrRegion = function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
+  const formatted = locale.toLowerCase();
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  let v001 = hourCycles.hourCycles[formatted] || tmp2(14450).hourCycles[str];
+  if (!v001) {
+    const concat = "".concat;
+    v001 = tmp2(14450).hourCycles["".concat("", formatted, "-001")];
+  }
+  if (!v001) {
+    v001 = tmp2(14450).hourCycles["001"];
+  }
+  const tmp2Result = _mod1172;
+  return tmp2Result.__spreadArray([], v001, true);
+};
+export const getTimeZonePreferenceForRegion = function getTimeZonePreferenceForRegion(region) {
+  const formatted = region.toLowerCase();
+  const items = [];
+  if (timezones.timezones[formatted]) {
+    const tmp2Result = _mod1172;
+    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
+  } else {
+    return items;
+  }
+};
+export const getWeekDataForRegion = function getWeekDataForRegion(region) {
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const weekData = weekData2.weekData;
+  if (!str) {
+    str = "001";
+  }
+  const tmp3 = weekData[str] || weekData2.weekData["001"];
+  return tmp3;
+};

@@ -1,12 +1,12 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8368
+// Function ID: 8369
 // Name: isStreaming
-// Dependencies: [2023, 1085, 2]
+// Dependencies: [2024, 1085, 2]
 // Exports: default
 
-// Module 8360 (isStreaming)
+// Module 8368 (isStreaming)
 import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 2023 */;
+import Constants2 from "Constants" /* 2024 */;
 import size from "module_2" /* 2 */;
 
 function _isStreaming(type) {

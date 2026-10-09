@@ -1,20 +1,20 @@
-// Module ID: 18297
-// Function ID: 18298
+// Module ID: 18459
+// Function ID: 18460
 // Name: GuildRoleSubscriptionTierDetailsModal
-// Dependencies: [32, 19, 15300, 1085, 21, 558, 576, 13950, 18277, 15322, 15307, 18254, 1126, 8654, 18260, 8555, 1200, 18298, 18261, 2]
+// Dependencies: [32, 19, 15413, 1085, 21, 558, 576, 14047, 18439, 15435, 15420, 18416, 1126, 8663, 18422, 8563, 1200, 18460, 18423, 2]
 
-// Module 18297 (GuildRoleSubscriptionTierDetailsModal)
+// Module 18459 (GuildRoleSubscriptionTierDetailsModal)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import FormStylesDefault from "FormStyles" /* 13950 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15322 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18261 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18277 */;
-import FormPriceTierDefault from "FormPriceTier" /* 18298 */;
+import FormStylesDefault from "FormStyles" /* 14047 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15435 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18423 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18439 */;
+import FormPriceTierDefault from "FormPriceTier" /* 18460 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15413 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,11 +30,11 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const intl8 = tmp(1126);
-const FormHeaderDefault = tmp4(8654);
-const GuildRoleSubscriptionsHooks = tmp(15307);
-const RoleSubscriptionSettingsDisabledContext = tmp(18254);
-const FormImagePicker = tmp(18260);
-const FormImagePickerDefault = tmp4(18260);
+const FormHeaderDefault = tmp4(8663);
+const GuildRoleSubscriptionsHooks = tmp(15420);
+const RoleSubscriptionSettingsDisabledContext = tmp(18416);
+const FormImagePicker = tmp(18422);
+const FormImagePickerDefault = tmp4(18422);
 ({ GuildRoleSubscriptionsTierScenes: hasOwnProperty, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: metroRequire, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: metroImportDefault } = GuildRoleSubscriptionsConstants);
 const UPLOAD_MEDIUM_SIZE = Constants.UPLOAD_MEDIUM_SIZE;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
@@ -208,7 +208,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   intl3 = tmp4(1126).intl;
   items[2] = React4(tmpResult7, obj9);
   const obj10 = { style: tmp3.textInput, showTopContainer: false, multiline: false, maxLength: metroImportDefault, value: tmp7, placeholder: intl4.string(intl8.t["i4/g+E"]), onChange: tmp8, autoFocus: true, clearButtonVisibility: native.ClearButtonVisibility.WITH_CONTENT, disabled: roleSubscriptionSettingsDisabled };
-  const FormInput = tmp4(8555).FormInput;
+  const FormInput = tmp4(8563).FormInput;
   intl4 = tmp4(1126).intl;
   items[3] = React4(FormInput, obj10);
   const obj11 = { style: tmp3.header, children: intl5.string(intl8.t["74JctW"]) };
@@ -216,7 +216,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   intl5 = tmp4(1126).intl;
   items[4] = React4(tmpResult8, obj11);
   const obj12 = { style: tmp3.textInput, showTopContainer: false, multiline: true, maxLength: metroRequire, numberOfLines: 3, value: tmp15, placeholder: intl6.string(intl8.t["3YHwoG"]), onChange: tmp16, disabled: roleSubscriptionSettingsDisabled };
-  const FormInput2 = tmp4(8555).FormInput;
+  const FormInput2 = tmp4(8563).FormInput;
   intl6 = tmp4(1126).intl;
   items[5] = React4(FormInput2, obj12);
   const obj13 = { style: tmp3.header, children: intl7.string(intl8.t.CrRVAx) };

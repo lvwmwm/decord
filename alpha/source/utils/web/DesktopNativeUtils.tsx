@@ -1,17 +1,17 @@
-// Module ID: 6144
-// Function ID: 6145
+// Module ID: 6146
+// Function ID: 6147
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1085, 38, 4987, 1381, 510, 6145, 6146, 4, 6147, 6148, 1383, 1294, 5116, 2]
+// Dependencies: [32, 5, 1085, 38, 4988, 1382, 510, 6147, 6148, 4, 6149, 6150, 1384, 1295, 5117, 2]
 
-// Module 6144 (DesktopNativeUtils)
+// Module 6146 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1085 */;
-import flow_Client from "flow/Client" /* 4987 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5116 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6145 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6146 */;
-import IPCEvents from "IPCEvents" /* 6147 */;
+import flow_Client from "flow/Client" /* 4988 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5117 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6147 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6148 */;
+import IPCEvents from "IPCEvents" /* 6149 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(6148);
+const FileExtensionUtils = tmp2(6150);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -974,7 +974,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(6148);
+        const tmpResult = tmp(6150);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;

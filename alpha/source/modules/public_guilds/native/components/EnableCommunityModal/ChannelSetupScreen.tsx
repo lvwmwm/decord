@@ -1,22 +1,22 @@
-// Module ID: 18183
-// Function ID: 18184
+// Module ID: 18345
+// Function ID: 18346
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8614, 2063, 4705, 4717, 1389, 8038, 1085, 21, 4778, 587, 18172, 504, 5417, 1126, 18173, 5054, 8529, 1999, 8613, 18170, 5086, 5373, 6267, 6184, 2]
+// Dependencies: [19, 17, 8622, 2064, 4707, 4719, 1390, 8046, 1085, 21, 4779, 587, 18334, 504, 5418, 1126, 18335, 5055, 8537, 2000, 8621, 18332, 5087, 6163, 5374, 6269, 6186, 2]
 // Exports: default
 
-// Module 18183 (ChannelSetupScreen)
+// Module 18345 (ChannelSetupScreen)
+import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl10 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4705 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8038 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4707 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8046 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8614 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8622 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -24,14 +24,12 @@ const GuildChannelStore = GuildChannelStore2;
 let channel;
 
 let closure_14;
-let closure_15;
-let closure_4;
-let hasOwnProperty;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
-let closure_9 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
+let map1;
+const View = react_native.View;
+let closure_8 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 const CREATE_NEW_CHANNEL_VALUE = PublicGuildsConstants.CREATE_NEW_CHANNEL_VALUE;
 const ChannelTypes = Constants.ChannelTypes;
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
 const result = size.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/ChannelSetupScreen.tsx");
 
 export default function ChannelSetupScreen() {
@@ -114,12 +112,12 @@ export default function ChannelSetupScreen() {
     intl = intl10.intl;
     let items = [];
     if (null != channels) {
-      const arr2 = channels[closure_9];
+      const arr2 = channels[closure_8];
       const found = arr2.filter((channel) => channel.channel.type === constants.GUILD_TEXT);
       items = found.map((channel) => {
         let obj2;
         channel = channel.channel;
-        const obj = { value: channel.id, label: obj2.computeChannelName(channel, closure_1_11, closure_1_10, true) };
+        const obj = { value: channel.id, label: obj2.computeChannelName(channel, closure_1_10, closure_1_9, true) };
         obj2 = guild(publicUpdatesChannel[14]);
         return obj;
       });
@@ -147,7 +145,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8529, dependencyMap.paths);
+    const tmp2 = asyncRequire(8537, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (rulesChannel != null) {
@@ -176,7 +174,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8529, dependencyMap.paths);
+    const tmp2 = asyncRequire(8537, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (publicUpdatesChannel != null) {
@@ -193,34 +191,34 @@ export default function ChannelSetupScreen() {
   const obj8 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl3.formatToPlainString(tmp2(publicUpdatesChannel[15]).t.tInpJj, { number: 2, total: 3 }) };
   const Text = tmp2(tmp3[22]).Text;
   intl3 = tmp2(tmp3[15]).intl;
-  items5 = [closure_14(Text, obj8), , , ];
+  items5 = [closure_13(Text, obj8), , , ];
   const obj9 = { resizeMode: "contain", source: tmp10.channelSetup };
-  items5[1] = closure_14(closure_4, obj9);
+  items5[1] = closure_13(rulesChannel(publicUpdatesChannel[23]), obj9);
   const obj10 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl4.string(tmp2(publicUpdatesChannel[15]).t.YtXpEh) };
   const Heading = tmp2(tmp3[22]).Heading;
   intl4 = tmp2(tmp3[15]).intl;
-  items5[2] = closure_14(Heading, obj10);
+  items5[2] = closure_13(Heading, obj10);
   const obj11 = { style: enableCommunitySharedStyles.description, variant: "text-md/medium", color: "text-subtle", children: intl5.string(tmp2(publicUpdatesChannel[15]).t["J/fYR8"]) };
   const Text2 = tmp2(tmp3[22]).Text;
   intl5 = tmp2(tmp3[15]).intl;
-  items5[3] = closure_14(Text2, obj11);
-  items6 = [closure_15(closure_5, obj7), ];
+  items5[3] = closure_13(Text2, obj11);
+  items6 = [closure_14(View, obj7), ];
   const obj12 = { spacing: 24, style: { paddingHorizontal: token }, children: items7 };
-  const Stack = tmp2(tmp3[23]).Stack;
-  const obj13 = { helperText: intl6.string(tmp2(publicUpdatesChannel[15]).t["+Af+Vw"]), hasIcons: false, children: closure_14(TableRow, obj14) };
-  const TableRowGroup = tmp2(tmp3[24]).TableRowGroup;
+  const Stack = tmp2(tmp3[24]).Stack;
+  const obj13 = { helperText: intl6.string(tmp2(publicUpdatesChannel[15]).t["+Af+Vw"]), hasIcons: false, children: closure_13(TableRow, obj14) };
+  const TableRowGroup = tmp2(tmp3[25]).TableRowGroup;
   intl6 = tmp2(tmp3[15]).intl;
-  obj14 = { label: intl7.string(tmp2(publicUpdatesChannel[15]).t.dYrhCO), trailing: closure_14(tmp2(publicUpdatesChannel[25]).TableRow.TrailingText, { text: stringResult }), arrow: true, onPress: callback1 };
-  TableRow = tmp2(tmp3[25]).TableRow;
+  obj14 = { label: intl7.string(tmp2(publicUpdatesChannel[15]).t.dYrhCO), trailing: closure_13(tmp2(publicUpdatesChannel[26]).TableRow.TrailingText, { text: stringResult }), arrow: true, onPress: callback1 };
+  TableRow = tmp2(tmp3[26]).TableRow;
   intl7 = tmp2(tmp3[15]).intl;
-  items7 = [closure_14(TableRowGroup, obj13), ];
-  const obj15 = { helperText: intl8.string(tmp2(publicUpdatesChannel[15]).t.ZFeonu), hasIcons: false, children: closure_14(TableRow2, obj16) };
-  const TableRowGroup2 = tmp2(tmp3[24]).TableRowGroup;
+  items7 = [closure_13(TableRowGroup, obj13), ];
+  const obj15 = { helperText: intl8.string(tmp2(publicUpdatesChannel[15]).t.ZFeonu), hasIcons: false, children: closure_13(TableRow2, obj16) };
+  const TableRowGroup2 = tmp2(tmp3[25]).TableRowGroup;
   intl8 = tmp2(tmp3[15]).intl;
-  obj16 = { label: intl9.string(tmp2(publicUpdatesChannel[15]).t.vAyDGU), trailing: closure_14(tmp2(publicUpdatesChannel[25]).TableRow.TrailingText, { text: stringResult1 }), arrow: true, onPress: callback2 };
-  TableRow2 = tmp2(tmp3[25]).TableRow;
+  obj16 = { label: intl9.string(tmp2(publicUpdatesChannel[15]).t.vAyDGU), trailing: closure_13(tmp2(publicUpdatesChannel[26]).TableRow.TrailingText, { text: stringResult1 }), arrow: true, onPress: callback2 };
+  TableRow2 = tmp2(tmp3[26]).TableRow;
   intl9 = tmp2(tmp3[15]).intl;
-  items7[1] = closure_14(TableRowGroup2, obj15);
-  items6[1] = closure_15(Stack, obj12);
-  return closure_15(EnableCommunityModalScreen, obj6);
+  items7[1] = closure_13(TableRowGroup2, obj15);
+  items6[1] = closure_14(Stack, obj12);
+  return closure_14(EnableCommunityModalScreen, obj6);
 };

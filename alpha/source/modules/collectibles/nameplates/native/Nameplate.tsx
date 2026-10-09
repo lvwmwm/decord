@@ -1,17 +1,17 @@
-// Module ID: 8991
-// Function ID: 8992
+// Module ID: 9002
+// Function ID: 9003
 // Name: Nameplate
-// Dependencies: [109, 19, 5079, 21, 5090, 558, 576, 504, 4991, 4810, 5091, 1989, 8992, 5387, 1381, 8981, 6164, 2]
+// Dependencies: [109, 19, 5080, 21, 5091, 558, 576, 504, 4992, 4811, 5092, 1990, 9003, 5388, 1382, 8992, 6163, 2]
 
-// Module 8991 (Nameplate)
+// Module 9002 (Nameplate)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -172,10 +172,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp13, tmp12);
   const tmp16 = closure_9(tmp7, tmp4, tmp5, tmp6, tmp9);
-  const tmp18 = sharedValue(4991)();
+  const tmp18 = sharedValue(4992)();
   let num3 = 1;
-  const useSharedValue = tmp(4810).useSharedValue;
-  tmp(4810);
+  const useSharedValue = tmp(4811).useSharedValue;
+  tmp(4811);
   if (undefined !== fadeIn && fadeIn) {
     num3 = 0;
   }
@@ -188,7 +188,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
       tmp22 = cResult[5];
     }
     const effect = react.useEffect(tmp21, tmp22);
-    const tmpResult7 = tmp(4810);
+    const tmpResult7 = tmp(4811);
     class B {
       constructor() {
         const obj = { opacity: sharedValue.get() };
@@ -207,7 +207,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
         tmp27 = cResult[8];
       }
       if (cResult[9] !== nameplate) {
-        const tmpResult8 = tmp(8992);
+        const tmpResult8 = tmp(9003);
         const nameplateAssets = tmpResult8.getNameplateAssets(nameplate);
         cResult[9] = nameplate;
         class B {
@@ -276,7 +276,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
                     }
                   }
                   items1 = [tmp34, tmp38];
-                  const tmp43 = closure_8(sharedValue(4810).View, obj3);
+                  const tmp43 = closure_8(sharedValue(4811).View, obj3);
                   cResult[23] = tmp33;
                   cResult[24] = tmp34;
                   cResult[25] = tmp38;
@@ -284,7 +284,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
                   tmp41 = tmp43;
                 }
               }
-              const tmpResult9 = tmp(1381);
+              const tmpResult9 = tmp(1382);
               if (tmpResult9.isAndroid()) {
                 if (tmp31) {
                   class B {
@@ -313,7 +313,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
               }
               const obj5 = { source: obj6, style: tmp16.img, accessibilityRole: "image" };
               obj6 = { uri: str };
-              tmp39 = closure_7(sharedValue(6164), obj5);
+              tmp39 = closure_7(sharedValue(6163), obj5);
             }
           }
           let tmp36Result = null;
@@ -355,7 +355,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
       cResult[14] = items3;
       tmp33 = items3;
     }
-    const tmpResult10 = tmp(1989);
+    const tmpResult10 = tmp(1990);
     const backgroundGradientColors = tmpResult10.getBackgroundGradientColors(nameplate.palette, tmp18);
     cResult[6] = nameplate.palette;
     cResult[7] = tmp18;
@@ -431,9 +431,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   const tmp4 = closure_9(flag3, isPressed, flag, flag2, flag5);
   const tmp5 = sharedValue;
   let num = 1;
-  const tmp6 = sharedValue(4991)();
-  const useSharedValue = flag6(4810).useSharedValue;
-  flag6(4810);
+  const tmp6 = sharedValue(4992)();
+  const useSharedValue = flag6(4811).useSharedValue;
+  flag6(4811);
   if (flag6) {
     num = 0;
   }
@@ -451,7 +451,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
       const result = set(withTiming(1, obj));
     }
   }, items1);
-  const tmpResult = tmp(4810);
+  const tmpResult = tmp(4811);
   class A {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -462,9 +462,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   A.__workletHash = 8730736390069;
   A.__initData = __initData2;
   const animatedStyle = tmpResult.useAnimatedStyle(A);
-  const tmpResult4 = tmp(1989);
+  const tmpResult4 = tmp(1990);
   const backgroundGradientColors = tmpResult4.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult5 = tmp(8992);
+  const tmpResult5 = tmp(9003);
   const nameplateAssets = tmpResult5.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp13 = true === flag7;
@@ -484,13 +484,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   const obj2 = { style: items2, children: null };
   items2 = [tmp4.container, style, animatedStyle];
   let tmp16Result = null;
-  const View = tmp5(4810).View;
+  const View = tmp5(4811).View;
   const tmp14 = closure_8;
   if (null != backgroundGradientColors) {
     let num2 = 0;
     const obj3 = { style: tmp4.gradient, start: point, end: { x: 1, y: 0 }, colors: items3 };
     const tmp16 = closure_7;
-    const tmp5Result = tmp5(5387);
+    const tmp5Result = tmp5(5388);
     if (flag4) {
       num2 = -2;
     }
@@ -500,19 +500,19 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
     tmp16Result = tmp16(tmp5Result, obj3);
   }
   const items4 = [tmp16Result, ];
-  const tmpResult6 = tmp(1381);
+  const tmpResult6 = tmp(1382);
   if (tmpResult6.isAndroid()) {
     let tmp18;
     if (tmp13) {
       const obj4 = { url: str, style: tmp4.img, autoplay: true };
-      tmp18 = closure_7(tmp(8981).APNGPlayer, obj4);
+      tmp18 = closure_7(tmp(8992).APNGPlayer, obj4);
     }
     items4[1] = tmp18;
     obj2.children = items4;
     return tmp14(View, obj2);
   }
   const obj5 = { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" };
-  tmp18 = closure_7(tmp5(6164), obj5);
+  tmp18 = closure_7(tmp5(6163), obj5);
 });
 let result = size.fileFinishedImporting("modules/collectibles/nameplates/native/Nameplate.tsx");
 

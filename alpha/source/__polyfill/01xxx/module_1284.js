@@ -1,10 +1,7 @@
 // Module ID: 1284
 // Function ID: 1285
-// Dependencies: [1285, 1287]
+// Dependencies: []
 
 // Module 1284
-import md5Default from "md5" /* 1287 */;
-import v35 from "v35" /* 1285 */;
 
-
-export default v35("v3", 48, md5Default);
+export default /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;

@@ -1,17 +1,17 @@
-// Module ID: 17874
-// Function ID: 17875
+// Module ID: 18028
+// Function ID: 18029
 // Name: codedLinkQueue
-// Dependencies: [3, 17875, 2]
+// Dependencies: [3, 18029, 2]
 // Exports: queueMessageLinkFetch
 
-// Module 17874 (codedLinkQueue)
+// Module 18028 (codedLinkQueue)
 import LoggerDefault from "Logger" /* 3 */;
-import _modDef17875 from "module_17875" /* 17875 */;
+import _modDef18029 from "module_18029" /* 18029 */;
 import size from "module_2" /* 2 */;
 
 const logger = new LoggerDefault("codedLinkQueue");
 const tmp2 = new LoggerDefault("codedLinkQueue");
-const obj = new _modDef17875({ concurrency: 5, intervalCap: 10, interval: 2000 });
+const obj = new _modDef18029({ concurrency: 5, intervalCap: 10, interval: 2000 });
 obj.on("add", () => {
   if (obj.size > 0) {
     logger.warn("Message link fetch queue backlog:", tmp.size);

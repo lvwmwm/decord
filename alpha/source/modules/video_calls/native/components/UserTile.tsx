@@ -1,32 +1,32 @@
-// Module ID: 10721
-// Function ID: 10722
+// Module ID: 10867
+// Function ID: 10868
 // Name: UserTile
-// Dependencies: [32, 19, 17, 10722, 502, 2063, 2011, 1085, 5113, 5115, 21, 5090, 587, 4927, 558, 576, 504, 10723, 1200, 5008, 5086, 1126, 8350, 10710, 10709, 10726, 10727, 5019, 10728, 6044, 10720, 10729, 10339, 10698, 6326, 10730, 2]
+// Dependencies: [32, 19, 17, 10868, 502, 2064, 2012, 1085, 5114, 5116, 21, 5091, 587, 4928, 558, 576, 504, 10869, 1200, 5009, 5087, 1126, 8358, 10856, 10855, 10872, 10873, 5020, 10874, 6046, 10866, 10875, 10326, 10844, 6333, 10876, 2]
 
-// Module 10721 (UserTile)
+// Module 10867 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5008 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 5019 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import CallConstants from "CallConstants" /* 5113 */;
-import Constants2 from "Constants" /* 5115 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 10722 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10726 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10727 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10728 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 10729 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5009 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 5020 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import CallConstants from "CallConstants" /* 5114 */;
+import Constants2 from "Constants" /* 5116 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 10868 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10872 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10873 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10874 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 10875 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import ColorUtils_mod from "ColorUtils" /* 4927 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import ColorUtils_mod from "ColorUtils" /* 4928 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -225,18 +225,18 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
         let tmp3;
         const tmp = first1;
         if (tmp) {
-          const obj = { style: closure_1.autoDisabledVideoWrapper, children: authStore3(View, obj2) };
+          const obj = { style: closure_1.autoDisabledVideoWrapper, children: authStore4(View, obj2) };
           obj2 = { style: items, children: items1 };
           items = [, ];
           ({ autoDisabledVideo: arr[0], autoDisabledVideoTextWrapper: arr[1] } = closure_1);
           const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, disableColor: true };
           const Icon = native.Icon;
-          items1 = [authStore2(Icon, obj3), ];
+          items1 = [authStore3(Icon, obj3), ];
           const obj4 = { variant: "text-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
           const Text = Text_Text.Text;
           intl = intl2.intl;
-          items1[1] = authStore2(Text, obj4);
-          tmp3 = authStore2(View, obj);
+          items1[1] = authStore3(Text, obj4);
+          tmp3 = authStore3(View, obj);
         } else {
           tmp3 = null;
         }
@@ -342,18 +342,18 @@ let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       let tmp3;
       const tmp = closure_3;
       if (tmp) {
-        const obj = { style: closure_1.autoDisabledVideoWrapper, children: authStore3(View, obj2) };
+        const obj = { style: closure_1.autoDisabledVideoWrapper, children: authStore4(View, obj2) };
         obj2 = { style: items, children: items1 };
         items = [, ];
         ({ autoDisabledVideo: arr[0], autoDisabledVideoTextWrapper: arr[1] } = closure_1);
         const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, disableColor: true };
         const Icon = native.Icon;
-        items1 = [authStore2(Icon, obj3), ];
+        items1 = [authStore3(Icon, obj3), ];
         const obj4 = { variant: "text-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
         const Text = Text_Text.Text;
         intl = intl2.intl;
-        items1[1] = authStore2(Text, obj4);
-        tmp3 = authStore2(View, obj);
+        items1[1] = authStore3(Text, obj4);
+        tmp3 = authStore3(View, obj);
       } else {
         tmp3 = null;
       }

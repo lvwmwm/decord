@@ -1,19 +1,19 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 8996
+// Function ID: 8997
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 5079, 21, 558, 576, 573, 1414, 1381, 8986, 8982, 6164, 2]
+// Dependencies: [19, 17, 5080, 21, 558, 576, 573, 1415, 1382, 8997, 8993, 6163, 2]
 
-// Module 8985 (CutoutableAvatarDecoration)
+// Module 8996 (CutoutableAvatarDecoration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import ClipViewDefault from "ClipView" /* 8986 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import ClipViewDefault from "ClipView" /* 8997 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

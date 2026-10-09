@@ -1,15 +1,15 @@
-// Module ID: 8468
-// Function ID: 8469
+// Module ID: 8476
+// Function ID: 8477
 // Name: MaskedLinkStore
-// Dependencies: [8434, 8469, 1383, 510, 504, 584, 2]
+// Dependencies: [8442, 8477, 1384, 510, 504, 584, 2]
 
-// Module 8468 (MaskedLinkStore)
+// Module 8476 (MaskedLinkStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import SpotifyConstants from "SpotifyConstants" /* 8434 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8469 */;
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import SpotifyConstants from "SpotifyConstants" /* 8442 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8477 */;
 import size from "module_2" /* 2 */;
 
 const SPOTIFY_HOSTNAMES = SpotifyConstants.SPOTIFY_HOSTNAMES;

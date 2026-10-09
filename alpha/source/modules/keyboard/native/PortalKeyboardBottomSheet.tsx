@@ -1,25 +1,25 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 11858
+// Function ID: 11859
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 9645, 21, 1381, 5090, 587, 8517, 558, 576, 5360, 4810, 11922, 4787, 6832, 11923, 504, 6298, 5055, 6077, 1893, 5392, 4778, 1630, 1496, 4952, 4932, 5357, 9387, 6719, 2]
+// Dependencies: [32, 19, 17, 9664, 21, 1382, 5091, 587, 8525, 558, 576, 5361, 4811, 11859, 4788, 6839, 11860, 504, 6305, 5056, 6079, 1894, 5393, 4779, 1631, 1497, 4953, 4933, 5358, 9425, 6726, 2]
 
-// Module 11921 (PortalKeyboardBottomSheet)
+// Module 11858 (PortalKeyboardBottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5360 */;
-import isChannelFocused from "isChannelFocused" /* 6077 */;
-import BottomSheetModal from "BottomSheetModal" /* 6298 */;
-import native from "native" /* 8517 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5361 */;
+import isChannelFocused from "isChannelFocused" /* 6079 */;
+import BottomSheetModal from "BottomSheetModal" /* 6305 */;
+import native from "native" /* 8525 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NativeMenuStore from "NativeMenuStore" /* 9645 */;
+import NativeMenuStore from "NativeMenuStore" /* 9664 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 12134
-// Function ID: 12135
+// Module ID: 12071
+// Function ID: 12072
 // Name: ApplicationCommandBar
-// Dependencies: [32, 109, 19, 17, 2124, 21, 5090, 587, 5974, 558, 576, 1126, 1200, 6189, 504, 11946, 6164, 5086, 8555, 5928, 12135, 2]
+// Dependencies: [32, 109, 19, 17, 2124, 21, 5091, 587, 5976, 558, 576, 1126, 1200, 6191, 504, 11883, 6163, 5087, 8563, 5929, 12072, 2]
 
-// Module 12134 (ApplicationCommandBar)
+// Module 12071 (ApplicationCommandBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import usePreviousDefault from "usePrevious" /* 5928 */;
-import LegacyTokens from "LegacyTokens" /* 5974 */;
-import Pressables from "Pressables" /* 6189 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11946 */;
+import usePreviousDefault from "usePrevious" /* 5929 */;
+import LegacyTokens from "LegacyTokens" /* 5976 */;
+import Pressables from "Pressables" /* 6191 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11883 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,8 +44,8 @@ let size1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const Text_Text = tmp(5086);
-const DescriptionEllipsisDefault = tmp5(12135);
+const Text_Text = tmp(5087);
+const DescriptionEllipsisDefault = tmp5(12072);
 let closure_3 = ["option", "optionState"];
 let react = react_mod;
 ({ View: metroImportDefault, ScrollView: metroImportAll, StyleSheet } = react_native);
@@ -180,7 +180,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
                 }
               }
               const obj3 = { accessibilityLabel: tmp11, accessibilityRole: "button", disabled: flag, style: tmp15, children: tmp20 };
-              const PressableOpacity = tmp(6189).PressableOpacity;
+              const PressableOpacity = tmp(6191).PressableOpacity;
               const merged = Object.assign(tmp6);
               const tmp28 = authStore(PressableOpacity, obj3);
               cResult[18] = flag;
@@ -328,7 +328,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   optionStates(react.useState(false), 2);
   const tmp9 = optionStates(react.useState(), 2);
   const first1 = tmp9[0];
-  closure_12 = tmp9[1];
+  let closure_12 = tmp9[1];
   if (cResult[1] !== command.options) {
     const fn = function _() {
       let c0 = false;
@@ -768,7 +768,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   const tmp5 = optionStates(react.useState(false), 2);
   const tmp7 = optionStates(react.useState(), 2);
   const first = tmp7[0];
-  closure_12 = tmp7[1];
+  let closure_12 = tmp7[1];
   const items = [command];
   const effect = react.useEffect(() => {
     let c0 = false;
@@ -851,11 +851,11 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   const tmp21 = ref;
   if (tmp22) {
     const obj4 = { style: tmp.applicationIcon, source: memo };
-    tmp22 = c10(section(6164), obj4);
+    tmp22 = c10(section(6163), obj4);
   }
   items5 = [tmp22, , , ];
   const obj5 = { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
-  items5[1] = c10(command(5086).Text, obj5);
+  items5[1] = c10(command(5087).Text, obj5);
   let options = command.options;
   let mapped;
   if (options != null) {
@@ -895,7 +895,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
     items6[1] = applicationOptionalOptionsDividerWithNoRequired;
     const items7 = [c10(ref, obj6), , ];
     const obj7 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "eyebrow", color: "text-muted", children: intl.string(command(1126).t.U19GM3) };
-    const Text = tmp12(5086).Text;
+    const Text = tmp12(5087).Text;
     intl = tmp12(1126).intl;
     items7[1] = c10(Text, obj7);
     const options1 = command.options;
@@ -927,10 +927,10 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   items5[3] = tmp19Result;
   items8 = [closure_12(tmp21, obj3), , , ];
   const obj9 = { style: tmp.applicationDescriptionDivider };
-  items8[1] = c10(command(8555).FormDivider, obj9);
+  items8[1] = c10(command(8563).FormDivider, obj9);
   items8[2] = c10(closure_15, { command, option: currentOption, optionState: tmp17 });
   const obj10 = { style: tmp.applicationDescriptionDivider };
-  items8[3] = c10(command(8555).FormDivider, obj10);
+  items8[3] = c10(command(8563).FormDivider, obj10);
   return closure_12(ref, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1039,7 +1039,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((optionState) =
                           }
                           const obj4 = { style: tmp4.optionDescriptionContainer, children: items };
                           items = [tmp25, tmp29];
-                          const tmp35 = closure_12(metroImportDefault, obj4);
+                          const tmp35 = authStore2(metroImportDefault, obj4);
                           cResult[25] = tmp4.optionDescriptionContainer;
                           cResult[26] = tmp25;
                           cResult[27] = tmp29;
@@ -1190,7 +1190,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((optionState) =
   const PressableOpacity = Pressables.PressableOpacity;
   let error;
   Text = Text_Text.Text;
-  tmp16 = closure_12;
+  tmp16 = authStore2;
   if (optionState != null) {
     if (optionState.lastValidationResult != null) {
       error = lastValidationResult.error;

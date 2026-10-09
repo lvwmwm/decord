@@ -1,12 +1,12 @@
-// Module ID: 11704
-// Function ID: 11705
+// Module ID: 11640
+// Function ID: 11641
 // Name: MediaPostGridThumbnail
-// Dependencies: [19, 17, 21, 558, 576, 6164, 11702, 1381, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6163, 11638, 1382, 2]
 
-// Module 11704 (MediaPostGridThumbnail)
+// Module 11640 (MediaPostGridThumbnail)
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import ForumPostMedia from "ForumPostMedia" /* 11702 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import ForumPostMedia from "ForumPostMedia" /* 11638 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -16,15 +16,14 @@ import size_mod from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1381);
-({ Image: c3, View: closure_4, StyleSheet: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+const PlatformUtils = tmp(1382);
+({ View: c3, StyleSheet: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostGridThumbnailAndroid(arg0) {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostGridThumbnailAndroid(arg0) {
   let androidStyle;
   let backgroundImagesource;
   let blurTheme;
@@ -45,7 +44,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPo
     num = 10;
   }
   if (cResult[0] !== androidStyle) {
-    let flattenResult = hasOwnProperty.flatten(androidStyle);
+    let flattenResult = React3.flatten(androidStyle);
     if (flattenResult == null) {
       flattenResult = {};
     }
@@ -84,7 +83,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPo
             }
             const obj2 = { style: androidStyle, children: items };
             items = [tmp27, tmp31];
-            const tmp37 = metroImportDefault(React3, obj2);
+            const tmp37 = metroRequire(_false, obj2);
             cResult[12] = androidStyle;
             cResult[13] = tmp27;
             cResult[14] = tmp31;
@@ -92,7 +91,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPo
             tmp34 = tmp37;
           }
           const obj3 = { shouldSpoiler, blurTheme };
-          const tmp33 = metroRequire(ForumPostMedia.ForumPostMediaSpoiler, obj3);
+          const tmp33 = hasOwnProperty(ForumPostMedia.ForumPostMediaSpoiler, obj3);
           cResult[9] = blurTheme;
           cResult[10] = shouldSpoiler;
           cResult[11] = tmp33;
@@ -100,14 +99,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPo
         }
       }
       const obj4 = { style: tmp25, source, blurRadius: num, resizeMode: "cover" };
-      const tmp30 = metroRequire(FastImageDefault, obj4);
+      const tmp30 = hasOwnProperty(FastImageDefault, obj4);
       cResult[5] = num;
       cResult[6] = source;
       cResult[7] = tmp25;
       cResult[8] = tmp30;
       tmp27 = tmp30;
     }
-    const items1 = [hasOwnProperty.absoluteFill, ];
+    const items1 = [React3.absoluteFill, ];
     size = { width, height };
     items1[1] = size;
     cResult[2] = height;
@@ -146,7 +145,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPo
             }
             const obj5 = { style: androidStyle, children: items2 };
             items2 = [tmp9, tmp13, tmp18];
-            const tmp24 = metroImportDefault(React3, obj5);
+            const tmp24 = metroRequire(_false, obj5);
             cResult[28] = androidStyle;
             cResult[29] = tmp9;
             cResult[30] = tmp13;
@@ -155,27 +154,27 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPo
             tmp21 = tmp24;
           }
           const obj6 = { shouldSpoiler, blurTheme };
-          const tmp20 = metroRequire(ForumPostMedia.ForumPostMediaSpoiler, obj6);
+          const tmp20 = hasOwnProperty(ForumPostMedia.ForumPostMediaSpoiler, obj6);
           cResult[25] = blurTheme;
           cResult[26] = shouldSpoiler;
           cResult[27] = tmp20;
           tmp18 = tmp20;
         }
-        const obj7 = { style: hasOwnProperty.absoluteFill, source, resizeMode };
-        const tmp17 = metroRequire(FastImageDefault, obj7);
+        const obj7 = { style: React3.absoluteFill, source, resizeMode };
+        const tmp17 = hasOwnProperty(FastImageDefault, obj7);
         cResult[22] = resizeMode;
         cResult[23] = source;
         cResult[24] = tmp17;
         tmp13 = tmp17;
       }
       const obj8 = { style: tmp7, source: backgroundImagesource, resizeMode: "cover" };
-      const tmp12 = metroRequire(_false, obj8);
+      const tmp12 = hasOwnProperty(FastImageDefault, obj8);
       cResult[19] = backgroundImagesource;
       cResult[20] = tmp7;
       cResult[21] = tmp12;
       tmp9 = tmp12;
     }
-    const items3 = [hasOwnProperty.absoluteFill, ];
+    const items3 = [React3.absoluteFill, ];
     const size1 = { width, height, opacity: 0.2 };
     items3[1] = size1;
     cResult[16] = height;
@@ -203,39 +202,39 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPo
   if (shouldSpoiler) {
     num = 10;
   }
-  let flattenResult = hasOwnProperty.flatten(androidStyle);
+  let flattenResult = React3.flatten(androidStyle);
   if (flattenResult == null) {
     flattenResult = {};
   }
   ({ width, height } = flattenResult);
-  const tmp2 = metroImportDefault;
-  const tmp3 = React3;
+  const tmp2 = metroRequire;
+  const tmp3 = _false;
   if (null == backgroundImagesource) {
     const obj2 = { style: items, source, blurRadius: num, resizeMode: "cover" };
-    items = [hasOwnProperty.absoluteFill, ];
+    items = [React3.absoluteFill, ];
     size = { width, height };
     const obj = { style: androidStyle, children: items1 };
     items[1] = size;
-    items1 = [metroRequire(FastImageDefault, obj2), ];
+    items1 = [hasOwnProperty(FastImageDefault, obj2), ];
     const obj3 = { shouldSpoiler, blurTheme };
-    items1[1] = metroRequire(ForumPostMedia.ForumPostMediaSpoiler, obj3);
+    items1[1] = hasOwnProperty(ForumPostMedia.ForumPostMediaSpoiler, obj3);
     obj4 = obj;
   } else {
     obj4 = { style: androidStyle, children: items3 };
     const obj5 = { style: items2, source: backgroundImagesource, resizeMode: "cover" };
-    items2 = [hasOwnProperty.absoluteFill, ];
+    items2 = [React3.absoluteFill, ];
     const size1 = { width, height, opacity: 0.2 };
     items2[1] = size1;
-    items3 = [metroRequire(_false, obj5), , ];
-    const obj6 = { style: hasOwnProperty.absoluteFill, source, resizeMode };
-    items3[1] = metroRequire(FastImageDefault, obj6);
+    items3 = [hasOwnProperty(FastImageDefault, obj5), , ];
+    const obj6 = { style: React3.absoluteFill, source, resizeMode };
+    items3[1] = hasOwnProperty(FastImageDefault, obj6);
     const obj7 = { shouldSpoiler, blurTheme };
-    items3[2] = metroRequire(ForumPostMedia.ForumPostMediaSpoiler, obj7);
+    items3[2] = hasOwnProperty(ForumPostMedia.ForumPostMediaSpoiler, obj7);
   }
   return tmp2(tmp3, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostGridThumbnailIOS(arg0) {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostGridThumbnailIOS(arg0) {
   let backgroundImagesource;
   let blurTheme;
   let iosStyle;
@@ -269,14 +268,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaP
           }
           const obj2 = { children: items };
           items = [tmp21, tmp25];
-          const tmp31 = metroImportDefault(metroImportAll, obj2);
+          const tmp31 = metroRequire(metroImportDefault, obj2);
           cResult[7] = tmp21;
           cResult[8] = tmp25;
           cResult[9] = tmp31;
           tmp28 = tmp31;
         }
         const obj3 = { shouldSpoiler, blurTheme };
-        const tmp27 = metroRequire(ForumPostMedia.ForumPostMediaSpoiler, obj3);
+        const tmp27 = hasOwnProperty(ForumPostMedia.ForumPostMediaSpoiler, obj3);
         cResult[4] = blurTheme;
         cResult[5] = shouldSpoiler;
         cResult[6] = tmp27;
@@ -284,7 +283,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaP
       }
     }
     const obj4 = { style: iosStyle, source, resizeMode };
-    const tmp24 = metroRequire(FastImageDefault, obj4);
+    const tmp24 = hasOwnProperty(FastImageDefault, obj4);
     cResult[0] = iosStyle;
     cResult[1] = resizeMode;
     cResult[2] = source;
@@ -295,7 +294,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaP
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const items1 = [hasOwnProperty.absoluteFill, { opacity: 0.2 }];
+      const items1 = [React3.absoluteFill, { opacity: 0.2 }];
       cResult[10] = items1;
       tmp4 = items1;
     } else {
@@ -303,7 +302,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaP
     }
     if (cResult[11] !== backgroundImagesource) {
       const obj5 = { style: tmp4, source: backgroundImagesource, resizeMode: "cover" };
-      const tmp9 = metroRequire(FastImageDefault, obj5);
+      const tmp9 = hasOwnProperty(FastImageDefault, obj5);
       cResult[11] = backgroundImagesource;
       cResult[12] = tmp9;
       tmp6 = tmp9;
@@ -330,7 +329,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaP
           }
           const obj6 = { children: items2 };
           items2 = [tmp6, tmp10, tmp14];
-          const tmp20 = metroImportDefault(metroImportAll, obj6);
+          const tmp20 = metroRequire(metroImportDefault, obj6);
           cResult[20] = tmp6;
           cResult[21] = tmp10;
           cResult[22] = tmp14;
@@ -338,7 +337,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaP
           tmp17 = tmp20;
         }
         const obj7 = { shouldSpoiler, blurTheme };
-        const tmp16 = metroRequire(ForumPostMedia.ForumPostMediaSpoiler, obj7);
+        const tmp16 = hasOwnProperty(ForumPostMedia.ForumPostMediaSpoiler, obj7);
         cResult[17] = blurTheme;
         cResult[18] = shouldSpoiler;
         cResult[19] = tmp16;
@@ -346,7 +345,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaP
       }
     }
     const obj8 = { style: iosStyle, source, resizeMode };
-    const tmp13 = metroRequire(FastImageDefault, obj8);
+    const tmp13 = hasOwnProperty(FastImageDefault, obj8);
     cResult[13] = iosStyle;
     cResult[14] = resizeMode;
     cResult[15] = source;
@@ -366,24 +365,24 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaP
   let shouldSpoiler;
   let source;
   ({ shouldSpoiler, blurTheme, source, iosStyle, backgroundImagesource, resizeMode } = arg0);
-  const tmp = metroImportDefault;
-  const tmp2 = metroImportAll;
+  const tmp = metroRequire;
+  const tmp2 = metroImportDefault;
   if (null == backgroundImagesource) {
     const obj = { children: items };
     const obj2 = { style: iosStyle, source, resizeMode };
-    items = [metroRequire(FastImageDefault, obj2), ];
+    items = [hasOwnProperty(FastImageDefault, obj2), ];
     const obj3 = { shouldSpoiler, blurTheme };
-    items[1] = metroRequire(ForumPostMedia.ForumPostMediaSpoiler, obj3);
+    items[1] = hasOwnProperty(ForumPostMedia.ForumPostMediaSpoiler, obj3);
     obj4 = obj;
   } else {
     obj4 = { children: items2 };
     const obj5 = { style: items1, source: backgroundImagesource, resizeMode: "cover" };
-    items1 = [hasOwnProperty.absoluteFill, { opacity: 0.2 }];
-    items2 = [metroRequire(FastImageDefault, obj5), , ];
+    items1 = [React3.absoluteFill, { opacity: 0.2 }];
+    items2 = [hasOwnProperty(FastImageDefault, obj5), , ];
     const obj6 = { style: iosStyle, source, resizeMode };
-    items2[1] = metroRequire(FastImageDefault, obj6);
+    items2[1] = hasOwnProperty(FastImageDefault, obj6);
     const obj7 = { shouldSpoiler, blurTheme };
-    items2[2] = metroRequire(ForumPostMedia.ForumPostMediaSpoiler, obj7);
+    items2[2] = hasOwnProperty(ForumPostMedia.ForumPostMediaSpoiler, obj7);
   }
   return tmp(tmp2, obj4);
 });
@@ -417,11 +416,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostG
   if (tmpResult.isAndroid()) {
     const obj3 = {};
     const merged1 = Object.assign(obj2);
-    tmp8Result = tmp8(closure_9, obj3);
+    tmp8Result = tmp8(closure_8, obj3);
   } else {
     const obj4 = {};
     const merged2 = Object.assign(obj2);
-    tmp8Result = tmp8(closure_10, obj4);
+    tmp8Result = tmp8(closure_9, obj4);
   }
   cResult[0] = source;
   cResult[1] = isPortrait;
@@ -443,11 +442,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostG
   if (obj2.isAndroid()) {
     const obj3 = {};
     const merged1 = Object.assign(obj);
-    tmp4Result = tmp4(closure_9, obj3);
+    tmp4Result = tmp4(closure_8, obj3);
   } else {
     const obj4 = {};
     const merged2 = Object.assign(obj);
-    tmp4Result = tmp4(closure_10, obj4);
+    tmp4Result = tmp4(closure_9, obj4);
   }
   return tmp4Result;
 });

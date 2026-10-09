@@ -1,23 +1,23 @@
-// Module ID: 15256
-// Function ID: 15257
+// Module ID: 15369
+// Function ID: 15370
 // Name: UserSettingsAppearanceThemeUtils
-// Dependencies: [1250, 1205, 1208, 1085, 1252, 1391, 1253, 1209, 15257, 11635, 5258, 1251, 4926, 15258, 1264, 2]
+// Dependencies: [1251, 1205, 1208, 1085, 1253, 1392, 1254, 1209, 15370, 11571, 5259, 1252, 4927, 15371, 1265, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 15256 (UserSettingsAppearanceThemeUtils)
+// Module 15369 (UserSettingsAppearanceThemeUtils)
 import Constants from "Constants" /* 1085 */;
 import ThemeConstants from "ThemeConstants" /* 1208 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1252 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4926 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5258 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11635 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 15257 */;
-import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 15258 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1250 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4927 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5259 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11571 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 15370 */;
+import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 15371 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1251 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import size from "module_2" /* 2 */;
 

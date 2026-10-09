@@ -1,28 +1,28 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15483
+// Function ID: 15484
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1205, 15369, 1096, 21, 5090, 587, 4928, 558, 576, 4785, 10211, 1200, 15371, 573, 4778, 15372, 1253, 4792, 1126, 6189, 2]
+// Dependencies: [19, 17, 1205, 15482, 1096, 21, 5091, 587, 4929, 558, 576, 4786, 10196, 1200, 15484, 573, 4779, 15485, 1254, 4793, 1126, 6191, 2]
 
-// Module 15370 (SettingsAppearanceThemeSelectorItem)
+// Module 15483 (SettingsAppearanceThemeSelectorItem)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1253 */;
-import useToken from "useToken" /* 4778 */;
-import themes from "themes" /* 4785 */;
-import react_native2 from "react-native" /* 4792 */;
-import utils_ColorDefault from "utils/Color" /* 4928 */;
-import Pressables from "Pressables" /* 6189 */;
-import ThemedGradient from "ThemedGradient" /* 10211 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15371 */;
-import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 15372 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
+import useToken from "useToken" /* 4779 */;
+import themes from "themes" /* 4786 */;
+import react_native2 from "react-native" /* 4793 */;
+import utils_ColorDefault from "utils/Color" /* 4929 */;
+import Pressables from "Pressables" /* 6191 */;
+import ThemedGradient from "ThemedGradient" /* 10196 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15484 */;
+import SynchronizeIconNativeDefault from "SynchronizeIconNative" /* 15485 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15369 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15482 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -416,7 +416,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   items[1] = obj2;
   const obj4 = { componentStyles: obj5, mix: true, mixColorOverride: isThemeDarkResult ? closure_10 : closure_11, customTheme: item };
   obj5 = { borderRadius: nativeDefault.radii.sm };
-  const CustomThemedGradient = tmp(10211).CustomThemedGradient;
+  const CustomThemedGradient = tmp(10196).CustomThemedGradient;
   items1 = [metroRequire(CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
     const obj6 = { source: AssetRegistryDefault, style: tmp4.lock };
@@ -444,7 +444,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeSelecto
   ({ themePreset, isPreview, isSelected, onPress, isNew } = arg0);
   const tmp4 = closure_8();
   if (isPreview) {
-    isPreview = themePreset.type !== tmp(1253).ClientThemeType.STANDARD_BACKGROUND_THEME;
+    isPreview = themePreset.type !== tmp(1254).ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
   if (cResult[0] === isPreview) {
     let tmp5;
@@ -604,7 +604,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeSelecto
   const radioA11yNative = tmp4Result.useRadioA11yNative({ selected: isSelected, disabled: isPreview });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj4 = { style: tmp.themeSelectorItemContainer, androidRippleConfig: tmp.rippleColor, onPress, accessibilityRole, accessibilityLabel: themePreset.getName(), accessibilityState, accessibilityHint: stringResult, children: tmp16(View, obj5) };
-  const PressableOpacity = tmp4(6189).PressableOpacity;
+  const PressableOpacity = tmp4(6191).PressableOpacity;
   stringResult = undefined;
   if (isPreview) {
     const intl = tmp4(1126).intl;

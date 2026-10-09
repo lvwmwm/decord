@@ -1,19 +1,19 @@
-// Module ID: 17550
-// Function ID: 17551
+// Module ID: 17702
+// Function ID: 17703
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1389, 5426, 558, 576, 504, 7046, 4726, 17551, 9216, 9219, 4766, 5025, 1126, 2]
+// Dependencies: [19, 1390, 5427, 558, 576, 504, 7049, 4728, 17703, 9250, 9253, 4768, 5026, 1126, 2]
 
-// Module 17550 (useSoundboardSoundLock)
+// Module 17702 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1126 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5025 */;
-import SoundboardConstants from "SoundboardConstants" /* 5426 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9216 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9219 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17551 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5026 */;
+import SoundboardConstants from "SoundboardConstants" /* 5427 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9250 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9253 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17703 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -248,7 +248,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
       tmp11 = tmp13;
     }
   }
-  const tmpResult2 = tmp(7046);
+  const tmpResult2 = tmp(7049);
   const result1 = tmpResult2.canUseSoundboardSound(stateFromStores, guildId, guild_id);
   cResult[2] = guild_id;
   cResult[3] = stateFromStores;

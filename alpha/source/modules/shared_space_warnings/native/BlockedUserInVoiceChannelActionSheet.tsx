@@ -1,51 +1,49 @@
-// Module ID: 13860
-// Function ID: 13861
+// Module ID: 13953
+// Function ID: 13954
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 2063, 4717, 1389, 13857, 13859, 1085, 21, 5090, 587, 558, 576, 504, 5054, 1264, 5885, 1126, 6885, 10380, 5086, 6267, 6184, 1200, 11431, 10891, 5375, 2]
+// Dependencies: [19, 17, 2064, 4719, 1390, 13950, 13952, 1085, 21, 5091, 587, 558, 576, 504, 5055, 1265, 5886, 1126, 6892, 6163, 10367, 5087, 6269, 6186, 1200, 11338, 11064, 5376, 2]
 
-// Module 13860 (BlockedUserInVoiceChannelActionSheet)
+// Module 13953 (BlockedUserInVoiceChannelActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13857 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5886 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13950 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13859 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13952 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-let c10;
-let c3;
 let c9;
 let closure_12;
-let closure_14;
-let closure_4;
 let map1;
+let metroImportAll;
 let obj2;
 let obj3;
 let obj4;
-({ Image: c3, View: closure_4 } = react_native);
+let unpackModuleId;
+const View = react_native.View;
 const setDismissalTimeForUser = SharedSpacesWarningStore.setDismissalTimeForUser;
-({ BlockWarningEngagements: c9, VoiceChannelWarningSurfaces: c10 } = SharedSpaceWarningConstants);
+({ BlockWarningEngagements: metroImportAll, VoiceChannelWarningSurfaces: c9 } = SharedSpaceWarningConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
-({ Fragment: closure_12, jsxs: map1, jsx: closure_14 } = Fragment);
+({ Fragment: unpackModuleId, jsxs: closure_12, jsx: map1 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, headerImage: { alignSelf: "center", width: 73, height: 86 }, headerText: obj3, centerText: { textAlign: "center", alignSelf: "center" }, buttonGroup: obj4 };
 obj2 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_16 };
 obj4 = { paddingVertical: nativeDefault.space.PX_16, gap: 8 };
-let closure_15 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInVoiceChannelActionSheet(channelId) {
+let closure_14 = createStyles(obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInVoiceChannelActionSheet(channelId) {
   let first;
   let stateFromStores;
   let tmp10;
@@ -55,7 +53,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   const cResult = obj.c(79);
   channelId = channelId.channelId;
   const blockedUserId = channelId.blockedUserId;
-  const tmp4 = closure_15();
+  const tmp4 = closure_14();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [RelationshipStore];
     cResult[0] = items;
@@ -64,16 +62,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
     first = cResult[0];
   }
   if (cResult[1] !== blockedUserId) {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
     }
     cResult[1] = blockedUserId;
-    cResult[2] = E;
-    tmp7 = E;
+    cResult[2] = A;
+    tmp7 = A;
   } else {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
@@ -82,7 +80,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   const tmpResult = channelId(stateFromStores[13]);
   stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
@@ -91,14 +89,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
     cResult[3] = items1;
     tmp9 = items1;
   } else {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
     }
   }
   if (cResult[4] !== channelId) {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
@@ -107,7 +105,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
     cResult[5] = tmp11;
     tmp10 = tmp11;
   } else {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
@@ -117,14 +115,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
   const tmp13 = cResult[6];
   if (stateFromStores1 != null) {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
     }
   }
   if (tmp13 === undefined) {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
@@ -132,7 +130,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   }
   const user = UserStore.getUser(blockedUserId);
   if (cResult[27] === channelId) {
-    class E {
+    class A {
       constructor() {
         return RelationshipStore.isBlocked(blockedUserId);
       }
@@ -144,7 +142,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
     setDismissalTimeForUser(blockedUserId);
-    const obj2 = { action: constants.CLICK_TO_STAY, channel_id: channelId, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants2.POST_JOIN_SHEET };
+    const obj2 = { action: metroImportAll.CLICK_TO_STAY, channel_id: channelId, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants.POST_JOIN_SHEET };
     const track = AnalyticsUtilsDefault.track;
     const VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT = AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT;
     AnalyticsUtilsDefault;
@@ -184,7 +182,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   let w0YvUo;
   ({ channelId: require, blockedUserId } = arg0);
   let stateFromStores;
-  const tmp = closure_15();
+  const tmp = closure_14();
   const tmp3 = stateFromStores;
   let obj = require("get initialized");
   let items = [RelationshipStore];
@@ -197,7 +195,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   const intl = require("intl").intl;
   const string = intl.string;
   const t = require("intl").t;
-  const tmp8 = closure_12;
+  const tmp8 = closure_11;
   if (stateFromStores) {
     let items2 = [string(t.cpgfFk), "\n", ];
     const intl3 = tmp2(tmp3[17]).intl;
@@ -212,30 +210,31 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
     tmp9 = obj3;
   }
   const obj4 = { style: tmp.container, children: items4 };
-  const obj5 = { source: blockedUserId(tmp3[19]), style: tmp.headerImage };
-  const tmp7Result = closure_13(tmp8, tmp9);
+  const tmp7Result = closure_12(tmp8, tmp9);
   const ActionSheet = tmp2(tmp3[18]).ActionSheet;
-  items4 = [closure_14(closure_3, obj5), , , ];
+  const obj5 = { source: blockedUserId(tmp3[20]), style: tmp.headerImage };
+  const tmp13 = blockedUserId(tmp3[19]);
+  items4 = [closure_13(tmp13, obj5), , , ];
   const obj6 = { style: tmp.headerText, children: items5 };
   const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl4.string(require("intl").t["1/gpFh"]) };
-  const Text = tmp2(tmp3[20]).Text;
+  const Text = tmp2(tmp3[21]).Text;
   intl4 = tmp2(tmp3[17]).intl;
-  items5 = [closure_14(Text, obj7), ];
+  items5 = [closure_13(Text, obj7), ];
   const obj8 = { variant: "text-md/medium", style: tmp.centerText, children: tmp7Result };
-  items5[1] = closure_14(require("Text/Text").Text, obj8);
-  items4[1] = closure_13(closure_4, obj6);
-  const TableRowGroup = tmp2(tmp3[21]).TableRowGroup;
-  const TableRow = tmp2(tmp3[22]).TableRow;
+  items5[1] = closure_13(require("Text/Text").Text, obj8);
+  items4[1] = closure_12(View, obj6);
+  const TableRowGroup = tmp2(tmp3[22]).TableRowGroup;
+  const TableRow = tmp2(tmp3[23]).TableRow;
   if (null != user) {
     const obj9 = { size: require("native").AvatarSizes.SMALL, user, guildId: guild_id };
-    const Avatar = tmp2(tmp3[23]).Avatar;
+    const Avatar = tmp2(tmp3[24]).Avatar;
     guild_id = undefined;
     if (stateFromStores1 != null) {
       guild_id = stateFromStores1.guild_id;
     }
     tmp11Result = tmp11(Avatar, obj9);
   } else {
-    tmp11Result = tmp11(tmp2(tmp3[24]).UserIcon, {});
+    tmp11Result = tmp11(tmp2(tmp3[25]).UserIcon, {});
   }
   const obj10 = { icon: tmp11Result, label: formatToPlainString(w0YvUo, { userName: username }) };
   const intl5 = tmp2(tmp3[17]).intl;
@@ -245,14 +244,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   if (user != null) {
     username = user.username;
   }
-  const obj11 = { startExpanded: true, children: closure_13(closure_4, obj4) };
+  const obj11 = { startExpanded: true, children: closure_12(View, obj4) };
   const obj12 = { hasIcons: true, children: items6 };
-  items6 = [closure_14(TableRow, obj10), ];
-  const obj13 = { icon: closure_14(require("MicrophoneIcon").MicrophoneIcon, {}), label: intl6.string(require("intl").t["+4O9nX"]) };
-  const TableRow2 = tmp2(tmp3[22]).TableRow;
+  items6 = [closure_13(TableRow, obj10), ];
+  const obj13 = { icon: closure_13(require("MicrophoneIcon").MicrophoneIcon, {}), label: intl6.string(require("intl").t["+4O9nX"]) };
+  const TableRow2 = tmp2(tmp3[23]).TableRow;
   intl6 = tmp2(tmp3[17]).intl;
-  items6[1] = closure_14(TableRow2, obj13);
-  items4[2] = closure_13(TableRowGroup, obj12);
+  items6[1] = closure_13(TableRow2, obj13);
+  items4[2] = closure_12(TableRowGroup, obj12);
   const obj14 = { style: tmp.buttonGroup, children: items7 };
   const obj15 = {
     size: "lg",
@@ -263,7 +262,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
       obj.hideActionSheet();
       const obj2 = SelectedChannelActionCreatorsDefault;
       obj2.disconnect();
-      const obj3 = { action: constants.CLICK_TO_LEAVE, channel_id: require, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants2.POST_JOIN_SHEET };
+      const obj3 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: require, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants.POST_JOIN_SHEET };
       const track = AnalyticsUtilsDefault.track;
       const VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT = AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT;
       AnalyticsUtilsDefault;
@@ -282,9 +281,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
     },
     text: intl7.string(require("intl").t["Y56/oK"])
   };
-  const Button = tmp2(tmp3[26]).Button;
+  const Button = tmp2(tmp3[27]).Button;
   intl7 = tmp2(tmp3[17]).intl;
-  items7 = [closure_14(Button, obj15), ];
+  items7 = [closure_13(Button, obj15), ];
   const obj16 = {
     size: "lg",
     variant: "secondary",
@@ -294,7 +293,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       setDismissalTimeForUser(blockedUserId);
-      const obj2 = { action: constants.CLICK_TO_STAY, channel_id: require, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants2.POST_JOIN_SHEET };
+      const obj2 = { action: metroImportAll.CLICK_TO_STAY, channel_id: require, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants.POST_JOIN_SHEET };
       const track = AnalyticsUtilsDefault.track;
       const VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT = AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT;
       AnalyticsUtilsDefault;
@@ -313,12 +312,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
     },
     text: intl8.string(require("intl").t.bCcJST)
   };
-  const Button2 = tmp2(tmp3[26]).Button;
+  const Button2 = tmp2(tmp3[27]).Button;
   intl8 = tmp2(tmp3[17]).intl;
-  items7[1] = closure_14(Button2, obj16);
-  items4[3] = closure_13(closure_4, obj14);
-  return closure_14(ActionSheet, obj11);
+  items7[1] = closure_13(Button2, obj16);
+  items4[3] = closure_12(View, obj14);
+  return closure_13(ActionSheet, obj11);
 });
 const result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInVoiceChannelActionSheet.tsx");
 
-export default tmp7;
+export default tmp6;

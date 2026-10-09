@@ -1,12 +1,12 @@
-// Module ID: 12543
-// Function ID: 12544
+// Module ID: 12482
+// Function ID: 12483
 // Name: ReportToModChannelStore
-// Dependencies: [570, 4950, 1271, 7383, 558, 576, 2]
+// Dependencies: [570, 4951, 1272, 7388, 558, 576, 2]
 
-// Module 12543 (ReportToModChannelStore)
+// Module 12482 (ReportToModChannelStore)
 import react from "react" /* 576 */;
 import module_570 from "module_570" /* 570 */;
-import combine_mod from "combine" /* 4950 */;
+import combine_mod from "combine" /* 4951 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

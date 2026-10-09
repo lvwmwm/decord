@@ -1,41 +1,41 @@
-// Module ID: 18302
-// Function ID: 18303
+// Module ID: 18464
+// Function ID: 18465
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4700, 18259, 15300, 1085, 2060, 21, 5090, 587, 558, 576, 1502, 18277, 18265, 6942, 8654, 5086, 1200, 18303, 5375, 6803, 18297, 18295, 18271, 15307, 18254, 11938, 1126, 18304, 15322, 4765, 6203, 7079, 8505, 2048, 18305, 1999, 9964, 9965, 8752, 2]
+// Dependencies: [32, 19, 17, 4702, 18421, 15413, 1085, 2061, 21, 5091, 587, 558, 576, 1503, 18439, 18427, 6949, 8663, 5087, 1200, 18465, 5376, 6810, 18459, 18457, 18433, 15420, 18416, 11875, 1126, 18466, 15435, 4767, 6205, 7082, 8513, 2049, 18467, 2000, 9983, 9984, 8761, 2]
 // Exports: default
 
-// Module 18302 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 18464 (GuildSettingsRoleSubscriptionTierEdit)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4700 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6942 */;
-import FormHeaderDefault from "FormHeader" /* 8654 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11938 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15300 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15307 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18254 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18265 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18271 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 18277 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18295 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18297 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18303 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 18304 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4702 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6810 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6949 */;
+import FormHeaderDefault from "FormHeader" /* 8663 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11875 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15413 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15420 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18416 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18427 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18433 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 18439 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18457 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18459 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18465 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 18466 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18259 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18421 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj2;
 let obj3;
 let tmp;
 const intl4 = tmp(1126);
-const DismissibleActionSheet = tmp(9965);
+const DismissibleActionSheet = tmp(9984);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
@@ -108,7 +108,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { size: native.Icon.Sizes.SMALL, disableColor: true, source: AssetRegistryDefault };
         const Icon = tmp(1200).Icon;
-        const tmp17 = authStore2(Icon, obj5);
+        const tmp17 = authStore3(Icon, obj5);
         cResult[6] = tmp17;
         tmp15 = tmp17;
       } else {
@@ -143,7 +143,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
             }
             const obj6 = { children: items };
             items = [tmp9, tmp11, tmp22];
-            const tmp29 = authStore4(authStore3, obj6);
+            const tmp29 = authStore5(authStore4, obj6);
             cResult[14] = tmp9;
             cResult[15] = tmp11;
             cResult[16] = tmp22;
@@ -151,7 +151,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
             tmp26 = tmp29;
           }
           const obj7 = { style: tmp4.actionButton, children: tmp19 };
-          const tmp25 = authStore2(metroRequire, obj7);
+          const tmp25 = authStore3(metroRequire, obj7);
           cResult[11] = tmp4.actionButton;
           cResult[12] = tmp19;
           cResult[13] = tmp25;
@@ -159,7 +159,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
         }
       }
       const obj8 = { variant: "destructive", grow: true, icon: tmp15, onPress: handleArchiveOrDelete, disabled: tmp18, text: buttonText };
-      const tmp21 = authStore2(components_Button_Button.Button, obj8);
+      const tmp21 = authStore3(components_Button_Button.Button, obj8);
       cResult[7] = buttonText;
       cResult[8] = handleArchiveOrDelete;
       cResult[9] = tmp18;
@@ -167,14 +167,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
       tmp19 = tmp21;
     }
     const obj9 = { style: tmp4.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
-    const tmp13 = authStore2(Text_Text.Text, obj9);
+    const tmp13 = authStore3(Text_Text.Text, obj9);
     cResult[3] = descriptionText;
     cResult[4] = tmp4.actionDescription;
     cResult[5] = tmp13;
     tmp11 = tmp13;
   }
   const obj10 = { style: tmp4.actionHeader, children: buttonText };
-  const tmp10 = authStore2(FormHeaderDefault, obj10);
+  const tmp10 = authStore3(FormHeaderDefault, obj10);
   cResult[0] = buttonText;
   cResult[1] = tmp4.actionHeader;
   cResult[2] = tmp10;
@@ -205,17 +205,17 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
   const allowSelfRemoveMonetization = obj3.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).allowSelfRemoveMonetization;
   items = [, , ];
   const obj4 = { style: tmp.actionHeader, children: buttonText };
-  items[0] = authStore2(FormHeaderDefault, obj4);
+  items[0] = authStore3(FormHeaderDefault, obj4);
   const obj5 = { style: tmp.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
-  items[1] = authStore2(Text_Text.Text, obj5);
-  const obj6 = { style: tmp.actionButton, children: authStore2(Button, obj7) };
-  obj7 = { variant: "destructive", grow: true, icon: authStore2(Icon, obj8), onPress: handleArchiveOrDelete, disabled: tmp9, text: buttonText };
+  items[1] = authStore3(Text_Text.Text, obj5);
+  const obj6 = { style: tmp.actionButton, children: authStore3(Button, obj7) };
+  obj7 = { variant: "destructive", grow: true, icon: authStore3(Icon, obj8), onPress: handleArchiveOrDelete, disabled: tmp9, text: buttonText };
   Button = components_Button_Button.Button;
   obj8 = { size: native.Icon.Sizes.SMALL, disableColor: true, source: AssetRegistryDefault };
   Icon = native.Icon;
   tmp9 = !allowSelfRemoveMonetization;
-  const tmp5 = authStore4;
-  const tmp6 = authStore3;
+  const tmp5 = authStore5;
+  const tmp6 = authStore4;
   const tmp8 = metroRequire;
   if (allowSelfRemoveMonetization) {
     tmp9 = deleting;
@@ -224,7 +224,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Archiv
     tmp9 = archiving;
   }
   const obj9 = { children: items };
-  items[2] = authStore2(tmp8, obj6);
+  items[2] = authStore3(tmp8, obj6);
   return tmp5(tmp6, obj9);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -239,9 +239,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { bottom: true, children: items };
-      const SafeAreaPaddingView2 = tmp(6803).SafeAreaPaddingView;
-      items = [authStore2(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore2(closure_20, {})];
-      const tmp26 = authStore4(SafeAreaPaddingView2, obj2);
+      const SafeAreaPaddingView2 = tmp(6810).SafeAreaPaddingView;
+      items = [authStore3(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore3(closure_20, {})];
+      const tmp26 = authStore5(SafeAreaPaddingView2, obj2);
       cResult[0] = tmp26;
       first = tmp26;
     } else {
@@ -249,7 +249,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     }
     if (cResult[1] !== tmp4.tabContent) {
       const obj3 = { style: tmp4.tabContent, children: first };
-      const tmp30 = authStore2(metroImportDefault, obj3);
+      const tmp30 = authStore3(metroImportDefault, obj3);
       cResult[1] = tmp4.tabContent;
       cResult[2] = tmp30;
       tmp27 = tmp30;
@@ -262,9 +262,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     let tmp17;
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { bottom: true, children: authStore2(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
-      const SafeAreaPaddingView = tmp(6803).SafeAreaPaddingView;
-      const tmp16 = authStore2(SafeAreaPaddingView, obj4);
+      const obj4 = { bottom: true, children: authStore3(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
+      const SafeAreaPaddingView = tmp(6810).SafeAreaPaddingView;
+      const tmp16 = authStore3(SafeAreaPaddingView, obj4);
       cResult[3] = tmp16;
       tmp14 = tmp16;
     } else {
@@ -272,7 +272,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     }
     if (cResult[4] !== tmp4.tabContent) {
       const obj5 = { style: tmp4.tabContent, children: tmp14 };
-      const tmp20 = authStore2(metroImportDefault, obj5);
+      const tmp20 = authStore3(metroImportDefault, obj5);
       cResult[4] = tmp4.tabContent;
       cResult[5] = tmp20;
       tmp17 = tmp20;
@@ -284,7 +284,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     let tmp10;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp12 = authStore2(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
+      const tmp12 = authStore3(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
       cResult[6] = tmp12;
       tmp10 = tmp12;
     } else {
@@ -307,18 +307,18 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
   selectedTab = selectedTab.selectedTab;
   const tmp = closure_17();
   if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
-    const obj2 = { style: tmp.tabContent, children: authStore4(SafeAreaPaddingView2, obj3) };
+    const obj2 = { style: tmp.tabContent, children: authStore5(SafeAreaPaddingView2, obj3) };
     obj3 = { bottom: true, children: items };
     SafeAreaPaddingView2 = common_SafeAreaView.SafeAreaPaddingView;
-    items = [authStore2(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore2(closure_20, {})];
-    return authStore2(metroImportDefault, obj2);
+    items = [authStore3(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore3(closure_20, {})];
+    return authStore3(metroImportDefault, obj2);
   } else if (GuildRoleSubscriptionsTierScenes.DESIGN === selectedTab) {
-    const obj = { style: tmp.tabContent, children: authStore2(SafeAreaPaddingView, obj4) };
-    obj4 = { bottom: true, children: authStore2(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
+    const obj = { style: tmp.tabContent, children: authStore3(SafeAreaPaddingView, obj4) };
+    obj4 = { bottom: true, children: authStore3(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
     SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-    return authStore2(metroImportDefault, obj);
+    return authStore3(metroImportDefault, obj);
   } else if (GuildRoleSubscriptionsTierScenes.BENEFITS === selectedTab) {
-    return authStore2(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
+    return authStore3(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -382,7 +382,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
                 let tmp32;
                 const _Symbol = Symbol;
                 if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp22 = authStore2(native.Spacer, { size: 16 });
+                  const tmp22 = authStore3(native.Spacer, { size: 16 });
                   cResult[7] = tmp22;
                   tmp20 = tmp22;
                 } else {
@@ -398,7 +398,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
                 }
                 if (cResult[10] !== tmp23) {
                   const obj6 = { children: tmp23 };
-                  const tmp28 = authStore2(ErrorBlockDefault, obj6);
+                  const tmp28 = authStore3(ErrorBlockDefault, obj6);
                   cResult[10] = tmp23;
                   cResult[11] = tmp28;
                   tmp25 = tmp28;
@@ -407,7 +407,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
                 }
                 const _Symbol2 = Symbol;
                 if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp31 = authStore2(native.Spacer, { size: 16 });
+                  const tmp31 = authStore3(native.Spacer, { size: 16 });
                   cResult[12] = tmp31;
                   tmp29 = tmp31;
                 } else {
@@ -416,7 +416,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
                 if (cResult[13] !== tmp25) {
                   const obj7 = { children: items };
                   items = [tmp20, tmp25, tmp29];
-                  const tmp35 = authStore4(authStore3, obj7);
+                  const tmp35 = authStore5(authStore4, obj7);
                   cResult[13] = tmp25;
                   cResult[14] = tmp35;
                   tmp32 = tmp35;
@@ -449,7 +449,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
                   }
                 }
                 const obj8 = { message: tmp11, ctaMessage: tmp12, onClick: tmp10, submitting, disabled: roleSubscriptionSettingsDisabled };
-                const tmp18 = authStore2(ActionableNoticeDefault, obj8);
+                const tmp18 = authStore3(ActionableNoticeDefault, obj8);
                 cResult[17] = tmp10;
                 cResult[18] = roleSubscriptionSettingsDisabled;
                 cResult[19] = submitting;
@@ -515,12 +515,12 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
         let tmp15;
         if (null != error) {
           const obj5 = { children: items };
-          items = [authStore2(native.Spacer, { size: 16 }), , ];
+          items = [authStore3(native.Spacer, { size: 16 }), , ];
           const obj6 = { children: error.getAnyErrorMessage() };
           const tmp14 = ErrorBlockDefault;
-          items[1] = authStore2(tmp14, obj6);
-          items[2] = authStore2(native.Spacer, { size: 16 });
-          tmp15 = authStore4(authStore3, obj5);
+          items[1] = authStore3(tmp14, obj6);
+          items[2] = authStore3(native.Spacer, { size: 16 });
+          tmp15 = authStore5(authStore4, obj5);
         } else {
           const obj7 = {
             message: intl.string(intl4.t.V5mSpz),
@@ -539,7 +539,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
           const tmp18 = ActionableNoticeDefault;
           intl = intl4.intl;
           intl2 = intl4.intl;
-          tmp15 = authStore2(tmp18, obj7);
+          tmp15 = authStore3(tmp18, obj7);
         }
         tmp9 = tmp15;
       }
@@ -561,7 +561,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f134333 = (currentScene) => {
+  const f134667 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -641,9 +641,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f134333), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f134667), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f134333), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f134667), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;
@@ -731,7 +731,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
               actionSheetKey: "TierTemplateSelected",
               importer: GuildRoleSubscriptionsTierTemplateSelectedActionSheetImporter
             };
-            tmp3 = authStore2(DismissibleActionSheet.DismissibleActionSheet, obj);
+            tmp3 = authStore3(DismissibleActionSheet.DismissibleActionSheet, obj);
           }
           return tmp3;
         }

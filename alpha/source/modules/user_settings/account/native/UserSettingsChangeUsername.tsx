@@ -1,20 +1,20 @@
-// Module ID: 14792
-// Function ID: 14793
+// Module ID: 14900
+// Function ID: 14901
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1389, 1085, 21, 5090, 587, 5741, 14793, 5086, 1126, 558, 576, 1502, 504, 4726, 14794, 6671, 6662, 1294, 1503, 9232, 6283, 6677, 6610, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5091, 587, 5742, 14901, 5087, 1126, 558, 576, 1503, 504, 4728, 14902, 6678, 6669, 1295, 1504, 9270, 6290, 6684, 6617, 2]
 
-// Module 14792 (UserSettingsChangeUsername)
+// Module 14900 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
+import Text_Text from "Text/Text" /* 5087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,18 +32,18 @@ function UsernameStatusMessage(showHint) {
   let P2;
   showHint = showHint.showHint;
   const usernameStatus = showHint.usernameStatus;
-  const str = showHint(5741);
+  const str = showHint(5742);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(14793).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(14901).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
-  P = showHint(5741).P;
+  P = showHint(5742).P;
   const _withResult = _with(obj, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(14793).NameValidationState.AVAILABLE, message: P2.select() };
-  P2 = showHint(5741).P;
+  const obj2 = { type: showHint(14901).NameValidationState.AVAILABLE, message: P2.select() };
+  P2 = showHint(5742).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-positive", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);

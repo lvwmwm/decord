@@ -1,13 +1,13 @@
-// Module ID: 16858
-// Function ID: 16859
+// Module ID: 16982
+// Function ID: 16983
 // Name: ConjureTemplateWizard
-// Dependencies: [1126, 3827, 6932, 2]
+// Dependencies: [1126, 3827, 6939, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateStartMessage, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake
 
-// Module 16858 (ConjureTemplateWizard)
+// Module 16982 (ConjureTemplateWizard)
 import intl3 from "intl" /* 1126 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import ConjureUtils from "ConjureUtils" /* 6932 */;
+import ConjureUtils from "ConjureUtils" /* 6939 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/templates/ConjureTemplateWizard.tsx");

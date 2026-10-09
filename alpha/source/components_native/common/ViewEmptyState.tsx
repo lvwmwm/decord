@@ -1,27 +1,26 @@
-// Module ID: 6733
-// Function ID: 6734
+// Module ID: 6740
+// Function ID: 6741
 // Name: ViewEmptyState
-// Dependencies: [19, 17, 1085, 21, 5090, 5902, 587, 558, 576, 1200, 2]
+// Dependencies: [19, 17, 1085, 21, 5091, 5903, 587, 558, 576, 6163, 1200, 2]
 
-// Module 6733 (ViewEmptyState)
+// Module 6740 (ViewEmptyState)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
+import FastImageDefault from "FastImage" /* 6163 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import TextStyles from "TextStyles" /* 5902 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import TextStyles from "TextStyles" /* 5903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
 let closure_4;
 let hasOwnProperty;
 let obj2;
-({ View: c2, Image: c3 } = react_native);
+const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -30,7 +29,7 @@ obj2 = { textAlign: "center", marginTop: 32, opacity: 0.8 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 let closure_6 = createStyles(obj);
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyState(arg0) {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyState(arg0) {
   let items;
   let items1;
   let label;
@@ -77,7 +76,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyS
                     return tmp20;
                   }
                   const obj2 = { style: tmp5, children: tmp16 };
-                  const tmp23 = React3(React2, obj2);
+                  const tmp23 = React3(View, obj2);
                   cResult[18] = tmp5;
                   cResult[19] = tmp16;
                   cResult[20] = tmp23;
@@ -87,7 +86,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyS
             }
             const obj3 = { style: tmp4.fixOpticalIllusion, children: items };
             items = [tmp6, tmp10, tmp13];
-            const tmp19 = hasOwnProperty(React2, obj3);
+            const tmp19 = hasOwnProperty(View, obj3);
             cResult[13] = tmp4.fixOpticalIllusion;
             cResult[14] = tmp6;
             cResult[15] = tmp10;
@@ -121,7 +120,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyS
       tmp10 = tmp11;
     }
     const obj6 = { resizeMode: "contain", source, style: tmp4.emptyImage };
-    const tmp9 = React3(_false, obj6);
+    const tmp9 = React3(FastImageDefault, obj6);
     cResult[3] = source;
     cResult[4] = tmp4.emptyImage;
     cResult[5] = tmp9;
@@ -145,12 +144,12 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyS
   ({ label, text } = arg0);
   ({ source, style } = arg0);
   const tmp = closure_6();
-  const obj = { style: items, children: tmp4(React2, obj2) };
+  const obj = { style: items, children: tmp4(View, obj2) };
   items = [tmp.emptyContainer, style];
   obj2 = { style: tmp.fixOpticalIllusion, children: items1 };
   items1 = [, , ];
   const obj3 = { resizeMode: "contain", source, style: tmp.emptyImage };
-  items1[0] = React3(_false, obj3);
+  items1[0] = React3(FastImageDefault, obj3);
   let tmp2Result = null;
   tmp4 = hasOwnProperty;
   if (null != label) {
@@ -167,8 +166,8 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyS
     tmp2Result2 = tmp2(native.LegacyText, obj5);
   }
   items1[2] = tmp2Result2;
-  return React3(React2, obj);
+  return React3(View, obj);
 });
 const result = size.fileFinishedImporting("components_native/common/ViewEmptyState.tsx");
 
-export default tmp8;
+export default tmp7;

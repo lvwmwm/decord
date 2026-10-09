@@ -1,23 +1,23 @@
-// Module ID: 2036
-// Function ID: 2037
+// Module ID: 2037
+// Function ID: 2038
 // Name: DetectableGameStore
-// Dependencies: [2021, 1085, 1372, 1102, 2037, 510, 1381, 2039, 504, 11, 1387, 1997, 1264, 2040, 584, 2]
+// Dependencies: [2022, 1085, 1373, 1102, 2038, 510, 1382, 2040, 504, 11, 1388, 1998, 1265, 2041, 584, 2]
 
-// Module 2036 (DetectableGameStore)
+// Module 2037 (DetectableGameStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ApplicationConstants from "ApplicationConstants" /* 1372 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2037 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2039 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ApplicationConstants from "ApplicationConstants" /* 1373 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2038 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2040 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -172,11 +172,11 @@ class DetectableGameStore extends PersistedStore {
   }
   getState() {
     let obj3;
-    const f86623 = (source) => source.source;
+    const f86834 = (source) => source.source;
     obj = PlatformUtils;
     if (obj.isDesktop()) {
-      obj3 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f86623) };
-      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f86623) };
+      obj3 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f86834) };
+      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f86834) };
     } else {
       obj3 = { detectableGamesEtag: "", detectableGames: [], blocklistEtag: "", blocklistExecutables: [], blocklistPatterns: [] };
     }

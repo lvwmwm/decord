@@ -1,14 +1,14 @@
-// Module ID: 16572
-// Function ID: 16573
+// Module ID: 16695
+// Function ID: 16696
 // Name: GuildMediaStateShadowCompare
-// Dependencies: [13833, 4, 1254, 509, 2]
+// Dependencies: [13927, 4, 1255, 509, 2]
 // Exports: compareGuildMediaState
 
-// Module 16572 (GuildMediaStateShadowCompare)
+// Module 16695 (GuildMediaStateShadowCompare)
 import logger_Logger from "logger/Logger" /* 4 */;
 import LastFewActionsAll from "LastFewActions" /* 509 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import GuildMediaStateStore from "GuildMediaStateStore" /* 13833 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import GuildMediaStateStore from "GuildMediaStateStore" /* 13927 */;
 import size from "module_2" /* 2 */;
 
 const logger = new logger_Logger.Logger("GuildMediaStateShadowCompare");
@@ -22,7 +22,7 @@ let result = size.fileFinishedImporting("modules/guilds_bar/GuildMediaStateShado
 export const compareGuildMediaState = function compareGuildMediaState(guildId, fromHook, stateFromStores) {
   let obj12;
   let obj6;
-  const f125115 = (item) => {
+  const f125504 = (item) => {
     let flag = closure_0[item];
     if (flag == null) {
       flag = false;
@@ -35,12 +35,12 @@ export const compareGuildMediaState = function compareGuildMediaState(guildId, f
   };
   let closure_0 = fromHook;
   let guildMediaState = stateFromStores;
-  const found = closure_5.filter(f125115);
+  const found = closure_5.filter(f125504);
   const arr = closure_5;
   if (0 !== found.length) {
     closure_0 = fromHook;
     guildMediaState = GuildMediaStateStore.getGuildMediaState(guildId);
-    const length = arr.filter(f125115).length;
+    const length = arr.filter(f125504).length;
     const obj8 = LastFewActionsAll;
     let str = obj8.last();
     if (str == null) {

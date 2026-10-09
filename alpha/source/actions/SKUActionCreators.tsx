@@ -1,24 +1,24 @@
-// Module ID: 10155
-// Function ID: 10156
+// Module ID: 10140
+// Function ID: 10141
 // Name: SKUActionCreators
-// Dependencies: [5, 8960, 6092, 1085, 584, 5640, 1294, 4749, 9030, 7297, 5631, 4748, 4741, 5720, 5738, 1387, 2]
+// Dependencies: [5, 8971, 6094, 1085, 584, 5641, 1295, 4751, 9045, 7302, 5632, 4750, 4743, 5721, 5739, 1388, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10155 (SKUActionCreators)
+// Module 10140 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import BillingUtils from "BillingUtils" /* 4741 */;
-import StoreUtils from "StoreUtils" /* 5640 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5738 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7297 */;
-import TestModeUtils from "TestModeUtils" /* 9030 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import BillingUtils from "BillingUtils" /* 4743 */;
+import StoreUtils from "StoreUtils" /* 5641 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5739 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7302 */;
+import TestModeUtils from "TestModeUtils" /* 9045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8960 */;
-import SKUStore from "SKUStore" /* 6092 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8971 */;
+import SKUStore from "SKUStore" /* 6094 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let _false, closure_12, closure_6, closure_7, closure_8, country_code, expected_amount, gift_info_options, load_id, quantity;
+let _false, closure_6, closure_7, closure_8, country_code, expected_amount, gift_info_options, load_id, quantity;
 
 let metroImportDefault;
 let metroRequire;
@@ -276,7 +276,7 @@ obj = function _fetchTestSKUsForApplication() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -387,7 +387,7 @@ obj = function _previewPurchaseSku() {
             billingError = undefined;
             apply_wallet_balance = 1;
             previous_total = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === apply_wallet_balance) {
           if (arg0 === 1) {
@@ -699,6 +699,7 @@ obj = function _purchaseSKU() {
           let closure_16;
           let billingError;
           let paymentSource;
+          let closure_12;
           c12 = 2;
           if (0 === c11) {
             if (arg0 === 1) {

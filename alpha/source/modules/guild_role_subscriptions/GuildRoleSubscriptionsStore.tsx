@@ -1,17 +1,17 @@
-// Module ID: 4700
-// Function ID: 4701
+// Module ID: 4702
+// Function ID: 4703
 // Name: GuildRoleSubscriptionsStore
-// Dependencies: [4701, 4702, 504, 38, 584, 2]
+// Dependencies: [4703, 4704, 504, 38, 584, 2]
 
-// Module 4700 (GuildRoleSubscriptionsStore)
+// Module 4702 (GuildRoleSubscriptionsStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4701 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4702 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4703 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4704 */;
 import size from "module_2" /* 2 */;
 
-let closure_10, closure_11, closure_7, closure_9;
+let closure_10, closure_11, closure_12, closure_7, closure_9;
 
 function makeGroupListingIndexSubscriptionListingTag(arg0) {
   return "subscription_listing:" + arg0;
@@ -60,7 +60,7 @@ const set = new Set();
 const React4 = {};
 const authStore = {};
 const unpackModuleId = {};
-let closure_12 = {};
+const authStore2 = {};
 const map = new Map();
 const map1 = new Map();
 let closure_19 = [];

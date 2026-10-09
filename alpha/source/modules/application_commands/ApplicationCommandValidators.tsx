@@ -1,17 +1,17 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 11798
+// Function ID: 11799
 // Name: ApplicationCommandValidators
-// Dependencies: [2128, 7880, 1997, 9756, 38, 1126, 9754, 7231, 9757, 2]
+// Dependencies: [2128, 7889, 1998, 9775, 38, 1126, 9773, 7236, 9776, 2]
 
-// Module 11861 (ApplicationCommandValidators)
+// Module 11798 (ApplicationCommandValidators)
 import _modDef38 from "module_38" /* 38 */;
 import intl5 from "intl" /* 1126 */;
-import Server from "Server" /* 1997 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7231 */;
-import ApplicationCommandOptionUtilsAll from "ApplicationCommandOptionUtils" /* 9754 */;
-import ApplicationCommandChoiceUtils from "ApplicationCommandChoiceUtils" /* 9756 */;
+import Server from "Server" /* 1998 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7236 */;
+import ApplicationCommandOptionUtilsAll from "ApplicationCommandOptionUtils" /* 9773 */;
+import ApplicationCommandChoiceUtils from "ApplicationCommandChoiceUtils" /* 9775 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7880 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7889 */;
 import size from "module_2" /* 2 */;
 
 function validateNumericOptionRange(NumberResult, minValue, v8Y5zsp, CyRLmH, VD3Q_S) {
@@ -265,7 +265,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmpResult = tmp(9757);
+        const tmpResult = tmp(9776);
         const applicationCommandOption = tmpResult.resolveApplicationCommandOption(type.text, id5, id, { allowRoles: false });
         type = undefined;
         if (applicationCommandOption != null) {
@@ -284,7 +284,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmpResult = tmp(9757);
+        const tmpResult = tmp(9776);
         const applicationCommandOption = tmpResult.resolveApplicationCommandOption(type.text, id5, id);
         type = undefined;
         if (applicationCommandOption != null) {
@@ -303,7 +303,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmp3Result = tmp3(9757);
+        const tmp3Result = tmp3(9776);
         const applicationCommandOption = tmp3Result.resolveApplicationCommandOption(type.text, id5, id, { allowUsers: false });
         type = undefined;
         if (applicationCommandOption != null) {
@@ -327,7 +327,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmp4Result = tmp4(9757);
+        const tmp4Result = tmp4(9776);
         const applicationCommandOption = tmp4Result.resolveApplicationCommandOption(type.text, id5, id);
         let tmp10 = null != applicationCommandOption;
         if (tmp10) {

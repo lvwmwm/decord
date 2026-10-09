@@ -1,18 +1,18 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17620
+// Function ID: 17621
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 6041, 502, 2011, 5108, 5113, 558, 576, 504, 2]
+// Dependencies: [32, 19, 6043, 502, 2012, 5109, 5114, 558, 576, 504, 2]
 
-// Module 17468 (useExternalPipParticipant)
+// Module 17620 (useExternalPipParticipant)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
-import CallConstants from "CallConstants" /* 5113 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import CallConstants from "CallConstants" /* 5114 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F155418 */ });
+                      closure_1_3(() => { /* body not rendered: F155753 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F155418 */ });
+                      closure_1_3(() => { /* body not rendered: F155753 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -319,7 +319,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "end" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "backgroundColor" };
   };
   cResult[1] = channelId;
   cResult[2] = focusedParticipantStreamId;
@@ -467,7 +467,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSel
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "end" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "backgroundColor" };
   }, items1);
   const items2 = [stateFromStoresObject.selectedParticipantSpeaking];
   const effect = react.useEffect(() => {
@@ -550,8 +550,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFoc
       id2 = tmp6.id;
     }
     if (current !== id2) {
-      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
+      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Set", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Set", focusedParticipantType: ref2.current };
     } else {
       let type1;
       if (tmp6 != null) {
@@ -639,8 +639,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFoc
       id2 = tmp6.id;
     }
     if (current !== id2) {
-      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
+      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Set", focusedParticipantType: ref2.current };
+      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Set", focusedParticipantType: ref2.current };
     } else {
       let type1;
       if (tmp6 != null) {

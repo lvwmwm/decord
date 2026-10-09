@@ -1,12 +1,12 @@
-// Module ID: 10368
-// Function ID: 10369
+// Module ID: 10355
+// Function ID: 10356
 // Name: SelfModInappropriateConversationExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1454, 558, 576, 2]
 // Exports: isEligibleForInappropriateConversationWarning
 
-// Module 10368 (SelfModInappropriateConversationExperiment)
+// Module 10355 (SelfModInappropriateConversationExperiment)
 import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

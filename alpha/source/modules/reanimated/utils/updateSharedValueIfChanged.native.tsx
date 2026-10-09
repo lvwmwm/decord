@@ -1,10 +1,10 @@
-// Module ID: 10352
-// Function ID: 10353
+// Module ID: 10339
+// Function ID: 10340
 // Name: updateSharedValueIfChanged
-// Dependencies: [4810, 2]
+// Dependencies: [4811, 2]
 
-// Module 10352 (updateSharedValueIfChanged)
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+// Module 10339 (updateSharedValueIfChanged)
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
 import size from "module_2" /* 2 */;
 
 const fn = function u(get, arg1) {
@@ -27,7 +27,7 @@ const fn = function u(get, arg1) {
     obj.runOnUI(fn)(get, arg1);
   }
 };
-let obj = { runOnUI: ReanimatedRexport.runOnUI, updateSharedValueIfChanged: "Array" };
+let obj = { runOnUI: ReanimatedRexport.runOnUI, updateSharedValueIfChanged: "r" };
 fn.__closure = obj;
 fn.__workletHash = 6367316923455;
 fn.__initData = { code: "function updateSharedValueIfChangedNativeTsx2(sharedValue,value){const{runOnUI,updateSharedValueIfChanged}=this.__closure;if(!_WORKLET){runOnUI(updateSharedValueIfChanged)(sharedValue,value);}else{const _sharedValue=sharedValue.get();const newValue={..._sharedValue,...value};for(const key in newValue){if(_sharedValue[key]!==newValue[key]){sharedValue.set(newValue);break;}}}}" };
@@ -52,10 +52,10 @@ const fn2 = function u(get, arg1) {
     obj.runOnUI(fn2)(get, arg1);
   }
 };
-fn2.__closure = { runOnUI: ReanimatedRexport.runOnUI, updateSharedValueArrayIfChanged: "Array" };
+fn2.__closure = { runOnUI: ReanimatedRexport.runOnUI, updateSharedValueArrayIfChanged: "r" };
 fn2.__workletHash = 10682766507787;
 fn2.__initData = { code: "function updateSharedValueIfChangedNativeTsx4(sharedValue,value){const{runOnUI,updateSharedValueArrayIfChanged}=this.__closure;if(!_WORKLET){runOnUI(updateSharedValueArrayIfChanged)(sharedValue,value);}else{const _sharedValue=sharedValue.get();if(_sharedValue.length!==value.length){sharedValue.set(value);}for(let i=0;i<value.length;i++){if(_sharedValue[i]!==value[i]){sharedValue.set(value);}}}}" };
-({ runOnUI: ReanimatedRexport.runOnUI, updateSharedValueArrayIfChanged: "Array" });
+({ runOnUI: ReanimatedRexport.runOnUI, updateSharedValueArrayIfChanged: "r" });
 fn2.__closure = { runOnUI: ReanimatedRexport.runOnUI };
 fn2.__workletHash = 13887777879519;
 fn2.__initData = { code: "function updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx3(sharedValue,value){const updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx3=this._recur;const{runOnUI}=this.__closure;if(!_WORKLET){runOnUI(updateSharedValueArrayIfChanged_updateSharedValueIfChangedNativeTsx3)(sharedValue,value);}else{const _sharedValue=sharedValue.get();if(_sharedValue.length!==value.length){sharedValue.set(value);}for(let i=0;i<value.length;i++){if(_sharedValue[i]!==value[i]){sharedValue.set(value);}}}}" };

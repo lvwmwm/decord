@@ -1,24 +1,24 @@
-// Module ID: 14026
-// Function ID: 14027
+// Module ID: 14123
+// Function ID: 14124
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 14027, 2086, 6966, 1085, 21, 5090, 587, 1382, 558, 576, 1126, 8843, 8839, 9068, 8846, 4766, 1200, 5086, 6189, 6618, 504, 2078, 14028, 14029, 1496, 6161, 1414, 6164, 1449, 9241, 4778, 8841, 12847, 2]
+// Dependencies: [19, 17, 14124, 2086, 6973, 1085, 21, 5091, 587, 1383, 558, 576, 1126, 8852, 8848, 9083, 8855, 4768, 1200, 5087, 6191, 6625, 504, 2078, 14125, 14126, 1497, 6165, 1415, 6163, 1450, 9279, 4779, 8850, 12814, 2]
 // Exports: default
 
-// Module 14026 (GuildActionSheetHeader)
+// Module 14123 (GuildActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8843 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14028 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8852 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14125 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 14027 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 14124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6966 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6973 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let size;
 let tmp4;
-const AssetRegistryDefault2 = tmp4(8846);
+const AssetRegistryDefault2 = tmp4(8855);
 const View = react_native.View;
 const GuildFeatures = Constants.GuildFeatures;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -68,9 +68,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
       const intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(require("intl").t.op2cJ6);
       importDefault = stringResult1;
-      const GlobeEarthIcon = tmp(9068).GlobeEarthIcon;
+      const GlobeEarthIcon = tmp(9083).GlobeEarthIcon;
       _require = GlobeEarthIcon;
-      tmp9Result = tmp9(8846);
+      tmp9Result = tmp9(8855);
       tmp11 = stringResult1;
       tmp12 = GlobeEarthIcon;
     }
@@ -162,10 +162,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
   const intl = GlobeEarthIcon(1126).intl;
   importDefault = intl.string(GlobeEarthIcon(1126).t.TME4LJ);
   let tmp4Result = AssetRegistryDefault;
-  if (guildVisibility === GlobeEarthIcon(8839).GuildVisibility.PUBLIC) {
+  if (guildVisibility === GlobeEarthIcon(8848).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1126).intl;
     importDefault = intl2.string(tmp2(1126).t.op2cJ6);
-    GlobeEarthIcon = tmp2(9068).GlobeEarthIcon;
+    GlobeEarthIcon = tmp2(9083).GlobeEarthIcon;
     tmp4Result = AssetRegistryDefault2;
   }
   let obj = {
@@ -178,11 +178,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Commun
     },
     children: items
   };
-  const PressableOpacity = tmp2(6189).PressableOpacity;
+  const PressableOpacity = tmp2(6191).PressableOpacity;
   let obj2 = { style: tmp.communityPillIcon, source: tmp4Result, disableColor: true };
   items = [closure_9(GlobeEarthIcon(1200).Icon, obj2), ];
   const obj3 = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText, children: intl3.string(GlobeEarthIcon(1126).t.K7iRig) };
-  const Text = tmp2(5086).Text;
+  const Text = tmp2(5087).Text;
   intl3 = tmp2(1126).intl;
   items[1] = closure_9(Text, obj3);
   return closure_10(PressableOpacity, obj);

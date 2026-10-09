@@ -1,22 +1,22 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 10883
+// Function ID: 10884
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2021, 2063, 2086, 4707, 1389, 5111, 2062, 10665, 10659, 5297, 1126, 6842, 10658, 10666, 2]
+// Dependencies: [5, 2022, 2064, 2086, 4709, 1390, 5112, 2063, 10880, 10804, 5298, 1126, 6849, 10803, 10812, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 10664 (handlePressJoinActivity)
+// Module 10883 (handlePressJoinActivity)
 import intl9 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 10659 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10665 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 10804 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10880 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2021 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -207,7 +207,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
         });
         return obj(...arguments);
       };
-      return "Reflect";
+      return "Set";
     })();
     iter.next();
     return iter;

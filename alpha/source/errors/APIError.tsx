@@ -1,12 +1,12 @@
-// Module ID: 5632
-// Function ID: 5633
+// Module ID: 5633
+// Function ID: 5634
 // Name: APIError
-// Dependencies: [1085, 1294, 1126, 2]
+// Dependencies: [1085, 1295, 1126, 2]
 
-// Module 5632 (APIError)
+// Module 5633 (APIError)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;
 
 const Links = Constants.Links;

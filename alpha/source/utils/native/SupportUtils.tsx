@@ -1,12 +1,12 @@
-// Module ID: 15639
-// Function ID: 15640
+// Module ID: 15752
+// Function ID: 15753
 // Name: SupportUtils
-// Dependencies: [5, 2128, 1380, 5066, 4763, 2127, 2]
+// Dependencies: [5, 2128, 1381, 5067, 4765, 2127, 2]
 // Exports: emailSupport
 
-// Module 15639 (SupportUtils)
+// Module 15752 (SupportUtils)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import LinkingDefault from "Linking" /* 4763 */;
+import LinkingDefault from "Linking" /* 4765 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
 import size from "module_2" /* 2 */;

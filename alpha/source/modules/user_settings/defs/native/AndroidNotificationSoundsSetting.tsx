@@ -1,19 +1,19 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 15710
+// Function ID: 15711
 // Name: AndroidNotificationSoundsSetting
-// Dependencies: [15582, 7966, 558, 576, 1381, 15584, 1126, 11262, 14533, 15588, 2]
+// Dependencies: [15695, 7974, 558, 576, 1382, 15697, 1126, 10629, 14628, 15701, 2]
 
-// Module 15597 (AndroidNotificationSoundsSetting)
+// Module 15710 (AndroidNotificationSoundsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14533 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15584 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15588 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15582 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14628 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15697 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15701 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15695 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11262 */;
+import SettingBuilders_mod from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 let c2;

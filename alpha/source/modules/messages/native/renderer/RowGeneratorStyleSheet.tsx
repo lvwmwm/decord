@@ -1,10 +1,10 @@
-// Module ID: 7723
-// Function ID: 7724
+// Module ID: 7732
+// Function ID: 7733
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: processColorOrThrow
 
-// Module 7723 (react-native)
+// Module 7732 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

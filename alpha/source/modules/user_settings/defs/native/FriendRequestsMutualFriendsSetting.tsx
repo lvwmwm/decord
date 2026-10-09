@@ -1,23 +1,23 @@
-// Module ID: 15063
-// Function ID: 15064
+// Module ID: 15175
+// Function ID: 15176
 // Name: FriendRequestsMutualFriendsSetting
-// Dependencies: [19, 7966, 1085, 558, 14902, 576, 2040, 6675, 1402, 11262, 1126, 2]
+// Dependencies: [19, 7974, 1085, 558, 15014, 576, 2041, 6682, 1403, 10629, 1126, 2]
 
-// Module 15063 (FriendRequestsMutualFriendsSetting)
+// Module 15175 (FriendRequestsMutualFriendsSetting)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14902 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15014 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettingsUtils = tmp(6675);
+const UserSettingsUtils = tmp(6682);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendSourceFlags = Constants.FriendSourceFlags;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendR
   return tmp5.mutualFriends;
 }) : (function useFriendRequestsMutualFriendsSettingValue() {
   let setting;
-  const FriendSourceFlagsSetting = setting(2040).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(2041).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   return react.useMemo(() => {

@@ -1,32 +1,31 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 12866
+// Function ID: 12867
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 5090, 558, 576, 9120, 9163, 5086, 1126, 5375, 5373, 6803, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 9187, 6163, 12867, 5087, 1126, 5376, 5374, 6810, 2]
 
-// Module 9162 (TwoWayLinkError)
+// Module 12866 (TwoWayLinkError)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6803 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9120 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9163 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6810 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9187 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12867 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
-({ Image: c3, View: closure_4 } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = createStyles.createStyles({ image: { width: 254, height: 127, marginBottom: 32 } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkError(arg0) {
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let closure_6 = createStyles.createStyles({ image: { width: 254, height: 127, marginBottom: 32 } });
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkError(arg0) {
   let body;
   let footerButton;
   let footerContainer;
@@ -40,13 +39,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   const obj = react2;
   const cResult = obj.c(30);
   ({ onClose, title, body, onRetry } = arg0);
-  const tmp4 = closure_7();
+  const tmp4 = closure_6();
   const obj2 = TwoWayLinkStyles;
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   const container = twoWayLinkStyles.container;
   if (cResult[0] !== tmp4.image) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.image };
-    const tmp10 = hasOwnProperty(_false, obj3);
+    const tmp9 = FastImageDefault;
+    const tmp10 = React3(tmp9, obj3);
     cResult[0] = tmp4.image;
     cResult[1] = tmp10;
     tmp6 = tmp10;
@@ -86,7 +86,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
             }
             if (cResult[14] !== onRetry) {
               const obj4 = { size: "lg", variant: "primary", text: tmp21, onPress: onRetry };
-              const tmp25 = hasOwnProperty(components_Button_Button.Button, obj4);
+              const tmp25 = React3(components_Button_Button.Button, obj4);
               cResult[14] = onRetry;
               cResult[15] = tmp25;
               tmp23 = tmp25;
@@ -104,7 +104,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
             }
             if (cResult[17] !== onClose) {
               const obj5 = { size: "lg", variant: "secondary", text: tmp26, onPress: onClose };
-              const tmp30 = hasOwnProperty(components_Button_Button.Button, obj5);
+              const tmp30 = React3(components_Button_Button.Button, obj5);
               cResult[17] = onClose;
               cResult[18] = tmp30;
               tmp28 = tmp30;
@@ -133,7 +133,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
                   }
                   const obj6 = { style: container, children: items };
                   items = [tmp16, tmp34];
-                  const tmp40 = metroRequire(React3, obj6);
+                  const tmp40 = hasOwnProperty(View, obj6);
                   cResult[26] = twoWayLinkStyles.container;
                   cResult[27] = tmp34;
                   cResult[28] = tmp16;
@@ -141,7 +141,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
                   tmp37 = tmp40;
                 }
                 const obj7 = { bottom: true, style: footerContainer, children: tmp31 };
-                const tmp36 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj7);
+                const tmp36 = React3(common_SafeAreaView.SafeAreaPaddingView, obj7);
                 cResult[23] = twoWayLinkStyles.footerContainer;
                 cResult[24] = tmp31;
                 cResult[25] = tmp36;
@@ -150,7 +150,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
             }
             const obj8 = { spacing: 8, direction: "vertical", style: footerButton, children: items1 };
             items1 = [tmp23, tmp28];
-            const tmp33 = metroRequire(Stack_Stack.Stack, obj8);
+            const tmp33 = hasOwnProperty(Stack_Stack.Stack, obj8);
             cResult[19] = twoWayLinkStyles.footerButton;
             cResult[20] = tmp28;
             cResult[21] = tmp23;
@@ -161,7 +161,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
       }
       const obj9 = { style: twoWayLinkStyles.content, children: items2 };
       items2 = [tmp6, tmp11, tmp13];
-      const tmp19 = metroRequire(React3, obj9);
+      const tmp19 = hasOwnProperty(View, obj9);
       cResult[8] = twoWayLinkStyles.content;
       cResult[9] = tmp6;
       cResult[10] = tmp11;
@@ -170,14 +170,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
       tmp16 = tmp19;
     }
     const obj10 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body };
-    const tmp15 = hasOwnProperty(Text_Text.Text, obj10);
+    const tmp15 = React3(Text_Text.Text, obj10);
     cResult[5] = body;
     cResult[6] = twoWayLinkStyles.body;
     cResult[7] = tmp15;
     tmp13 = tmp15;
   }
   const obj11 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title };
-  const tmp12 = hasOwnProperty(Text_Text.Text, obj11);
+  const tmp12 = React3(Text_Text.Text, obj11);
   cResult[2] = twoWayLinkStyles.title;
   cResult[3] = title;
   cResult[4] = tmp12;
@@ -195,34 +195,34 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   let onRetry;
   let title;
   ({ onClose, title, body, onRetry } = arg0);
-  const tmp = closure_7();
+  const tmp = closure_6();
   const obj = TwoWayLinkStyles;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  const obj3 = { style: twoWayLinkStyles.content, children: items };
-  items = [, , ];
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
+  const obj3 = { style: twoWayLinkStyles.content, children: items };
   const obj4 = { source: AssetRegistryDefault, style: tmp.image };
-  items[0] = hasOwnProperty(_false, obj4);
+  const tmp3 = FastImageDefault;
+  items = [React3(tmp3, obj4), , ];
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title };
-  items[1] = hasOwnProperty(Text_Text.Text, obj5);
+  items[1] = React3(Text_Text.Text, obj5);
   const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body };
-  items[2] = hasOwnProperty(Text_Text.Text, obj6);
-  items1 = [metroRequire(React3, obj3), ];
-  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: metroRequire(Stack, obj8) };
+  items[2] = React3(Text_Text.Text, obj6);
+  items1 = [hasOwnProperty(View, obj3), ];
+  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: hasOwnProperty(Stack, obj8) };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   obj8 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton, children: items2 };
   Stack = Stack_Stack.Stack;
   const obj9 = { size: "lg", variant: "primary", text: intl.string(intl3.t["5911Lb"]), onPress: onRetry };
   const Button = components_Button_Button.Button;
   intl = intl3.intl;
-  items2 = [hasOwnProperty(Button, obj9), ];
+  items2 = [React3(Button, obj9), ];
   const obj10 = { size: "lg", variant: "secondary", text: intl2.string(intl3.t["ETE/oC"]), onPress: onClose };
   const Button2 = components_Button_Button.Button;
   intl2 = intl3.intl;
-  items2[1] = hasOwnProperty(Button2, obj10);
-  items1[1] = hasOwnProperty(SafeAreaPaddingView, obj7);
-  return metroRequire(React3, obj2);
+  items2[1] = React3(Button2, obj10);
+  items1[1] = React3(SafeAreaPaddingView, obj7);
+  return hasOwnProperty(View, obj2);
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkError.tsx");
 
-export const TwoWayLinkError = tmp5;
+export const TwoWayLinkError = tmp4;

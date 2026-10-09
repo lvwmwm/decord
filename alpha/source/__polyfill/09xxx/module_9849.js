@@ -1,40 +1,72 @@
 // Module ID: 9849
 // Function ID: 9850
-// Dependencies: [41, 42, 9841, 9798]
+// Dependencies: [41, 42, 93, 95, 98, 9811]
 
 // Module 9849
-import NUMBER from "NUMBER" /* 9841 */;
+import _mod9811 from "module_9811" /* 9811 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let tmp;
-const _mod9798 = tmp(9798);
-const keys = Object.keys(NUMBER.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?:\\(|\\\uFF08)(?<weekday>" + keys.join("|") + ")(?:\\)|\\\uFF09)", "i");
-class JPWeekdayWithParenthesesParser {
-  constructor() {
-    _classCallCheck(this, JPWeekdayWithParenthesesParser);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class FRMergeDateTimeRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, FRMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(FRMergeDateTimeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(FRMergeDateTimeRefiner, fn(_mod9811).default);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
+  key: "patternBetween",
+  value: function patternBetween() {
+    const regExp = new RegExp("^\\s*(T|\u00E0|a|au|vers|de|,|-)?\\s*$");
     return regExp;
   }
 };
-const items = [
-  entry,
-  {
-    key: "extract",
-    value: function extract(reference, arg1) {
-      const tmp3 = NUMBER.WEEKDAY_OFFSET[arg1.groups.weekday];
-      let parsingComponentsAtWeekday = null;
-      if (undefined !== tmp3) {
-        parsingComponentsAtWeekday = _mod9798.createParsingComponentsAtWeekday(reference.reference, tmp3);
-      }
-      return parsingComponentsAtWeekday;
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(JPWeekdayWithParenthesesParser, items);
+export default _createClass(FRMergeDateTimeRefiner, items);

@@ -1,12 +1,12 @@
-// Module ID: 1412
-// Function ID: 1413
+// Module ID: 1413
+// Function ID: 1414
 // Name: FamilyCenterModels
-// Dependencies: [1404, 1397, 2]
+// Dependencies: [1405, 1398, 2]
 // Exports: ensureRestrictedScheduleRecord
 
-// Module 1412 (FamilyCenterModels)
-import user from "user" /* 1397 */;
-import Record from "Record" /* 1404 */;
+// Module 1413 (FamilyCenterModels)
+import user from "user" /* 1398 */;
+import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 
 let end_time;
@@ -81,7 +81,7 @@ class ScheduleRuleRecord extends Record {
               let SUNDAY;
               const tmp6 = require;
               if (arg0 === user.DayOfWeek.MONDAY) {
-                SUNDAY = tmp6(1397).DayOfWeek.SUNDAY;
+                SUNDAY = tmp6(1398).DayOfWeek.SUNDAY;
               } else {
                 SUNDAY = arg0 - 1;
               }

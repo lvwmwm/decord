@@ -1,22 +1,22 @@
-// Module ID: 12162
-// Function ID: 12163
+// Module ID: 12099
+// Function ID: 12100
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1205, 1241, 21, 5090, 587, 1381, 4778, 12157, 4810, 5374, 11879, 6189, 1126, 6164, 4929, 6810, 6811, 9447, 1200, 2]
+// Dependencies: [32, 19, 17, 1205, 1241, 21, 5091, 587, 1382, 4779, 12094, 4811, 5375, 11816, 6191, 1126, 6163, 4930, 6817, 6818, 9485, 1200, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 12162 (EmojiSuggestionChatButton)
+// Module 12099 (EmojiSuggestionChatButton)
 import nativeDefault from "native" /* 587 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import spring from "spring" /* 5374 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12157 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import spring from "spring" /* 5375 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2;

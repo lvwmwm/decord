@@ -1,15 +1,15 @@
 // Module ID: 9803
 // Function ID: 9804
-// Dependencies: [41, 42, 93, 95, 98, 9770, 9773, 9774, 9790]
+// Dependencies: [41, 42, 93, 95, 96, 98, 9795, 9804]
 
 // Module 9803
-import _mod9770 from "module_9770" /* 9770 */;
-import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 9774 */;
-import _mod9790 from "module_9790" /* 9790 */;
+import Meridiem from "Meridiem" /* 9795 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 9804 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
@@ -27,82 +27,109 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENMergeRelativeFollowByDateRefiner {
-  constructor() {
+class ENTimeExpressionParser {
+  constructor(arg0) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENMergeRelativeFollowByDateRefiner);
-    const obj = _getPrototypeOf(ENMergeRelativeFollowByDateRefiner);
+    _classCallCheck(this, ENTimeExpressionParser);
+    const items = [arg0];
+    const obj = _getPrototypeOf(ENTimeExpressionParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, items);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMergeRelativeFollowByDateRefiner, _mod9790.MergingRefiner);
+_inherits(ENTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*$/i;
+  key: "followingPhase",
+  value: function followingPhase() {
+    return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|to|until|through|till|\\?)\\s*";
   }
 };
-const items = [
+let items = [
   entry,
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, text, start) {
-      let match = str.match(this.patternBetween());
-      if (match) {
-        let tmp5 = null == str.match(/\s+(before|from)$/i);
-        null != text.text.match(/\s+(before|from)$/i);
-        if (tmp5) {
-          const str2 = text.text;
-          tmp5 = null == str2.match(/\s+(after|since)$/i);
-        }
-        let tmp6 = !tmp5;
-        if (tmp6) {
-          start = start.start;
-          let value = start.get("day");
-          if (value) {
-            const start2 = start.start;
-            value = start2.get("month");
-          }
-          if (value) {
-            const start3 = start.start;
-            value = start3.get("year");
-          }
-          tmp6 = value;
-        }
-        match = tmp6;
-      }
-      return match;
+    key: "primaryPrefix",
+    value: function primaryPrefix() {
+      return "(?:(?:at|from)\\s*)??";
     }
   },
   {
-    key: "mergeResults",
-    value: function mergeResults(arg0, text, start) {
-      const parseDurationResult = _mod9770.parseDuration(text.text);
-      let reverseDurationResult = parseDurationResult;
-      const str = text.text;
-      if (null != str.match(/\s+(before|from)$/i)) {
-        reverseDurationResult = tmp(9773).reverseDuration(parseDurationResult);
+    key: "primarySuffix",
+    value: function primarySuffix() {
+      return "(?:\\s*(?:o\\W*clock|at\\s*night|in\\s*the\\s*(?:morning|afternoon)))?(?!/)(?=\\W|$)";
+    }
+  },
+  {
+    key: "extractPrimaryTimeComponents",
+    value: function extractPrimaryTimeComponents(arg0, arg1) {
+      const self = this;
+      const tmp = _get(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
+      let closure_1 = tmp;
+      let fn = tmp;
+      if (typeof tmp === "function") {
+        fn = (items) => fn.apply(self, items);
       }
-      const ParsingComponents = tmp(9774).ParsingComponents;
-      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
-      const ReferenceWithTimezone = tmp(9774).ReferenceWithTimezone;
-      start = start.start;
-      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
-      const reference = start.reference;
-      const index = text.index;
-      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
-      return parsingResult;
+      const items = [arg0, arg1];
+      const fnResult = fn(items);
+      if (fnResult) {
+        const first = arg1[0];
+        if (first.endsWith("night")) {
+          const value = fnResult.get("hour");
+          if (value >= 6) {
+            if (value < 12) {
+              fnResult.assign("hour", fnResult.get("hour") + 12);
+              fnResult.assign("meridiem", Meridiem.Meridiem.PM);
+            }
+          }
+          if (value < 6) {
+            fnResult.assign("meridiem", Meridiem.Meridiem.AM);
+          }
+        }
+        const first1 = arg1[0];
+        if (first1.endsWith("afternoon")) {
+          fnResult.assign("meridiem", Meridiem.Meridiem.PM);
+          const value2 = fnResult.get("hour");
+          const tmp14 = value2 >= 0 && value2 <= 6;
+          if (tmp14) {
+            fnResult.assign("hour", fnResult.get("hour") + 12);
+          }
+        }
+        const first2 = arg1[0];
+        if (first2.endsWith("morning")) {
+          fnResult.assign("meridiem", Meridiem.Meridiem.AM);
+          if (fnResult.get("hour") < 12) {
+            fnResult.assign("hour", fnResult.get("hour"));
+          }
+        }
+        return fnResult.addTag("parser/ENTimeExpressionParser");
+      } else {
+        return fnResult;
+      }
+    }
+  },
+  {
+    key: "extractFollowingTimeComponents",
+    value: function extractFollowingTimeComponents(arg0, arg1, arg2) {
+      const self = this;
+      let fn = _get(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractFollowingTimeComponents", this);
+      if (typeof fn === "function") {
+        fn = (items) => fn.apply(self, items);
+      }
+      const items = [arg0, arg1, arg2];
+      const fnResult = fn(items);
+      if (fnResult) {
+        fnResult.addTag("parser/ENTimeExpressionParser");
+      }
+      return fnResult;
     }
   }
 ];
 
-export default _createClass(ENMergeRelativeFollowByDateRefiner, items);
+export default _createClass(ENTimeExpressionParser, items);

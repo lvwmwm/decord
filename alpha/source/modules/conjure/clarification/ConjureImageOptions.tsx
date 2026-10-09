@@ -1,13 +1,13 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17169
+// Function ID: 17170
 // Name: ConjureImageOptions
-// Dependencies: [32, 1126, 3827, 8469, 2]
+// Dependencies: [32, 1126, 3827, 8477, 2]
 // Exports: answeredOptionIds, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, ownImageOption, ownImageUploadText, registrableDomain, viewableImageOptions
 
-// Module 17013 (ConjureImageOptions)
+// Module 17169 (ConjureImageOptions)
 import intl2 from "intl" /* 1126 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8469 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8477 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 

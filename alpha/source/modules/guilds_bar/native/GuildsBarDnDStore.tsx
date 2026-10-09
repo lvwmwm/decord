@@ -1,14 +1,14 @@
-// Module ID: 16525
-// Function ID: 16526
+// Module ID: 16648
+// Function ID: 16649
 // Name: GuildsBarDnDStore
-// Dependencies: [5968, 1266, 4810, 1271, 1254, 558, 576, 4690, 2]
+// Dependencies: [5970, 1267, 4811, 1272, 1255, 558, 576, 4692, 2]
 
-// Module 16525 (GuildsBarDnDStore)
+// Module 16648 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import react_native from "react-native" /* 1271 */;
-import SortedGuildStore from "SortedGuildStore" /* 5968 */;
-import module_1266 from "module_1266" /* 1266 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import react_native from "react-native" /* 1272 */;
+import SortedGuildStore from "SortedGuildStore" /* 5970 */;
+import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,11 +16,11 @@ const require = globalThis.__r;
 let _require, set;
 
 let tmp;
-const _slicedToArray = tmp(4690);
+const _slicedToArray = tmp(4692);
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
-const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
   let closure_5;
   let obj;
   let obj2;
@@ -79,7 +79,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "toCharArray$esjava$1" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "code" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -110,7 +110,7 @@ const withEqualityFn = module_1266.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "create" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {

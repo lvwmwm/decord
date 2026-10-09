@@ -1,15 +1,15 @@
-// Module ID: 12010
-// Function ID: 12011
+// Module ID: 11947
+// Function ID: 11948
 // Name: Divider
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 2]
 
-// Module 12010 (Divider)
+// Module 11947 (Divider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

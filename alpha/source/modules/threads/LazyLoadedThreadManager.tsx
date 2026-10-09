@@ -1,14 +1,14 @@
-// Module ID: 7000
-// Function ID: 7001
+// Module ID: 7007
+// Function ID: 7008
 // Name: LazyLoadedThreadManager
-// Dependencies: [5753, 2067, 2063, 2115, 1085, 2070, 584, 6910, 4904, 4917, 1294, 2]
+// Dependencies: [5754, 2068, 2064, 2115, 1085, 2071, 584, 6917, 4905, 4918, 1295, 2]
 
-// Module 7000 (LazyLoadedThreadManager)
+// Module 7007 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f94663 = () => {
+const f94878 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f94663);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f94878);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(channelId) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f94663);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f94878);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[channelId]) {
@@ -81,11 +81,11 @@ function loadThread(channelId) {
         const matchPath = require("matchPathCompat").matchPath;
         CHANNEL = constants.CHANNEL;
         require("matchPathCompat");
-        const RouteParam = tmp13(4917).RouteParam;
+        const RouteParam = tmp13(4918).RouteParam;
         guildIdResult = RouteParam.guildId();
-        RouteParam2 = tmp13(4917).RouteParam;
+        RouteParam2 = tmp13(4918).RouteParam;
         importDefault = matchPath(pathname, obj2);
-        const HTTP = tmp13(1294).HTTP;
+        const HTTP = tmp13(1295).HTTP;
         const get = HTTP.get;
         const obj3 = { url: closure_8.CHANNEL(channelId), rejectWithError: tmp13Result2.rejectWithMigratedError() };
         tmp13Result2 = require("HTTPUtils");
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(6910).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(6917).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];
@@ -180,11 +180,11 @@ let obj = {
 
         });
       } else {
-        const HTTP = items1(1294).HTTP;
+        const HTTP = items1(1295).HTTP;
         const request = { url: closure_8.THREADS_BULK, body: obj2, rejectWithError: obj4.rejectWithMigratedError() };
         const post = HTTP.post;
         obj2 = { thread_ids: items1 };
-        obj4 = items1(1294);
+        obj4 = items1(1295);
         const postResult = post(request);
         const nextPromise = postResult.then((body) => {
           body = body.body;

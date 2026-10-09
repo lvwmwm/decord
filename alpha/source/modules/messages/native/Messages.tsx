@@ -1,79 +1,79 @@
-// Module ID: 10459
-// Function ID: 10460
+// Module ID: 10449
+// Function ID: 10450
 // Name: Messages
-// Dependencies: [32, 109, 19, 5079, 2062, 8251, 5436, 10460, 7186, 6041, 9566, 5992, 4976, 6977, 10461, 6843, 7946, 7725, 6059, 7168, 8226, 7856, 10463, 7857, 6786, 5906, 10464, 7163, 10465, 7356, 7301, 9572, 4709, 6992, 2128, 1205, 502, 2063, 7357, 10466, 2124, 2086, 5887, 5071, 5428, 4707, 5106, 5108, 6040, 5110, 7859, 1389, 5111, 6092, 11247, 5114, 1085, 1391, 21, 558, 576, 12, 504, 568, 6842, 1387, 2040, 11257, 11264, 11268, 11271, 10575, 7160, 4726, 7972, 5962, 10363, 10364, 9317, 7968, 7125, 11275, 4947, 9574, 9270, 9289, 11276, 9562, 8374, 5905, 9563, 8225, 11277, 11280, 8244, 7417, 11282, 10211, 11285, 11647, 2]
+// Dependencies: [32, 109, 19, 5080, 2063, 8259, 5437, 10450, 7191, 6043, 9579, 5994, 4977, 6984, 10451, 6850, 7955, 7734, 6061, 7173, 8234, 7865, 10453, 7866, 6793, 5907, 10454, 7168, 10455, 7361, 7306, 9585, 4711, 6999, 2128, 1205, 502, 2064, 7362, 10456, 2124, 2086, 5888, 5072, 5429, 4709, 5107, 5109, 6042, 5111, 7868, 1390, 5112, 6094, 10612, 5115, 1085, 1392, 21, 558, 576, 12, 504, 568, 6849, 1388, 2041, 10624, 10631, 10635, 10638, 9149, 7165, 4728, 7980, 5964, 10350, 10351, 9355, 7976, 7130, 10642, 4948, 9587, 9308, 9327, 10643, 9575, 8382, 5906, 9576, 8233, 10644, 10647, 8252, 7422, 10649, 10196, 10652, 11583, 2]
 
-// Module 10459 (Messages)
+// Module 10449 (Messages)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6842 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9317 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11276 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6849 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9355 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10643 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8251 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10460 */;
-import CacheStore from "CacheStore" /* 7186 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9566 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
-import ExperimentStore from "ExperimentStore" /* 4976 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 6977 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10461 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6843 */;
-import BasicGuildStore from "BasicGuildStore" /* 7946 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7725 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7168 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8226 */;
-import InteractionStore from "InteractionStore" /* 7856 */;
-import MediaPostEmbedStore from "MediaPostEmbedStore" /* 10463 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 7857 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6786 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5906 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10464 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7163 */;
-import PushFeedbackStore from "PushFeedbackStore" /* 10465 */;
-import PendingReplyStore from "PendingReplyStore" /* 7356 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7301 */;
-import SummaryStore from "SummaryStore" /* 9572 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4709 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6992 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8259 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10450 */;
+import CacheStore from "CacheStore" /* 7191 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9579 */;
+import EmojiStore from "EmojiStore" /* 5994 */;
+import ExperimentStore from "ExperimentStore" /* 4977 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 6984 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10451 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6850 */;
+import BasicGuildStore from "BasicGuildStore" /* 7955 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7734 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6061 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7173 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8234 */;
+import InteractionStore from "InteractionStore" /* 7865 */;
+import MediaPostEmbedStore from "MediaPostEmbedStore" /* 10453 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 7866 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6793 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5907 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10454 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7168 */;
+import PushFeedbackStore from "PushFeedbackStore" /* 10455 */;
+import PendingReplyStore from "PendingReplyStore" /* 7361 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7306 */;
+import SummaryStore from "SummaryStore" /* 9585 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4711 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6999 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import EditMessageStore from "EditMessageStore" /* 7357 */;
-import GiftCodeStore from "GiftCodeStore" /* 10466 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import EditMessageStore from "EditMessageStore" /* 7362 */;
+import GiftCodeStore from "GiftCodeStore" /* 10456 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5887 */;
-import InviteStore from "InviteStore" /* 5071 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import PresenceStore from "PresenceStore" /* 5106 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
-import SessionsStore from "SessionsStore" /* 5110 */;
-import UploadStore from "UploadStore" /* 7859 */;
-import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
-import SKUStore from "SKUStore" /* 6092 */;
-import ActivityLauncherStore from "ActivityLauncherStore" /* 11247 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5888 */;
+import InviteStore from "InviteStore" /* 5072 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import PresenceStore from "PresenceStore" /* 5107 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import ReadStateStore from "ReadStateStore" /* 6042 */;
+import SessionsStore from "SessionsStore" /* 5111 */;
+import UploadStore from "UploadStore" /* 7868 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import SKUStore from "SKUStore" /* 6094 */;
+import ActivityLauncherStore from "ActivityLauncherStore" /* 10612 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5115 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _loopResult, _require, dependencyMap, findActivity, invites, messageReference, relevantUserTrialOffer, set, state, voiceStatesForChannelAlt;
+let _loopResult, _require, dependencyMap, invites, messageReference, relevantUserTrialOffer, set, state, voiceStatesForChannelAlt;
 
 let closure_30;
 let closure_31;
@@ -271,7 +271,7 @@ let closure_71 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFet
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConnected(ref) {
   let TIER_2;
   let appDirectoryEmbedApplicationFetchStates;
   let appDirectoryEmbedApplications;
@@ -369,6 +369,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   let tmp91;
   let tmp92;
   let tmp93;
+  let version;
   const tmp = channel;
   let tmp2 = id;
   let obj = channel(id[60]);
@@ -731,7 +732,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
     }
   }
   if (cResult[31] !== id) {
-    class At {
+    class Ct {
       constructor() {
         embeddedActivitiesForChannel = closure_8.getEmbeddedActivitiesForChannel(id);
         mapped = embeddedActivitiesForChannel.map((launchId) => launchId.launchId);
@@ -745,12 +746,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
       }
     }
     cResult[31] = id;
-    cResult[32] = At;
+    cResult[32] = Ct;
     cResult[33] = items15;
     tmp67 = items15;
-    tmp66 = At;
+    tmp66 = Ct;
   } else {
-    class At {
+    class Ct {
       constructor() {
         embeddedActivitiesForChannel = closure_8.getEmbeddedActivitiesForChannel(id);
         mapped = embeddedActivitiesForChannel.map((launchId) => launchId.launchId);
@@ -762,7 +763,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   const tmpResult41 = tmp(tmp2[62]);
   const stateFromStoresArray3 = tmpResult41.useStateFromStoresArray(tmp65, tmp66, tmp67);
   if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-    class At {
+    class Ct {
       constructor() {
         embeddedActivitiesForChannel = closure_8.getEmbeddedActivitiesForChannel(id);
         mapped = embeddedActivitiesForChannel.map((launchId) => launchId.launchId);
@@ -779,7 +780,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
     cResult[34] = items16;
     tmp69 = items16;
   } else {
-    class At {
+    class Ct {
       constructor() {
         embeddedActivitiesForChannel = closure_8.getEmbeddedActivitiesForChannel(id);
         mapped = embeddedActivitiesForChannel.map((launchId) => launchId.launchId);
@@ -796,9 +797,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -833,9 +837,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -865,9 +872,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -893,7 +903,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F153613 */ });
+          let item = arr.forEach(() => { /* body not rendered: F153956 */ });
         });
         return Array.from(set);
       }
@@ -911,9 +921,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -944,9 +957,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -972,7 +988,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F153613 */ });
+          let item = arr.forEach(() => { /* body not rendered: F153956 */ });
         });
         return Array.from(set);
       }
@@ -990,9 +1006,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1023,9 +1042,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1051,7 +1073,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F153613 */ });
+          let item = arr.forEach(() => { /* body not rendered: F153956 */ });
         });
         return Array.from(set);
       }
@@ -1069,9 +1091,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1102,9 +1127,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1144,9 +1172,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1178,9 +1209,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1220,9 +1254,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1254,9 +1291,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1296,9 +1336,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1332,9 +1375,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1367,9 +1413,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1400,9 +1449,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1429,9 +1481,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
           _loop = function _loop(iter) {
             let closure_0 = iter;
             const userIds = iter.userIds;
-            findActivity = findActivity.findActivity;
             iter = userIds.values();
-            const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+            const value = iter.next().value;
+            let findActivityResult;
+            if (null != value) {
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+            }
             let details;
             if (findActivityResult != null) {
               details = findActivityResult.details;
@@ -1464,9 +1519,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
           _loop = function _loop(iter) {
             let closure_0 = iter;
             const userIds = iter.userIds;
-            findActivity = findActivity.findActivity;
             iter = userIds.values();
-            const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+            const value = iter.next().value;
+            let findActivityResult;
+            if (null != value) {
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+            }
             let details;
             if (findActivityResult != null) {
               details = findActivityResult.details;
@@ -1499,9 +1557,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
           _loop = function _loop(iter) {
             let closure_0 = iter;
             const userIds = iter.userIds;
-            findActivity = findActivity.findActivity;
             iter = userIds.values();
-            const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+            const value = iter.next().value;
+            let findActivityResult;
+            if (null != value) {
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+            }
             let details;
             if (findActivityResult != null) {
               details = findActivityResult.details;
@@ -1534,9 +1595,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
           _loop = function _loop(iter) {
             let closure_0 = iter;
             const userIds = iter.userIds;
-            findActivity = findActivity.findActivity;
             iter = userIds.values();
-            const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+            const value = iter.next().value;
+            let findActivityResult;
+            if (null != value) {
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+            }
             let details;
             if (findActivityResult != null) {
               details = findActivityResult.details;
@@ -1569,9 +1633,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1600,9 +1667,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1637,9 +1707,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1667,9 +1740,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1704,9 +1780,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1738,9 +1817,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1777,9 +1859,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1810,9 +1895,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1847,9 +1935,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1877,9 +1968,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1917,9 +2011,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1950,9 +2047,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -1987,9 +2087,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -2017,9 +2120,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -2057,9 +2163,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -2090,9 +2199,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -2127,9 +2239,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
         _loop = function _loop(iter) {
           let closure_0 = iter;
           const userIds = iter.userIds;
-          findActivity = findActivity.findActivity;
           iter = userIds.values();
-          const findActivityResult = findActivity(iter.next().value, () => { /* body not rendered: F153612 */ });
+          const value = iter.next().value;
+          let findActivityResult;
+          if (null != value) {
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F153955 */ });
+          }
           let details;
           if (findActivityResult != null) {
             details = findActivityResult.details;
@@ -2399,7 +2514,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   cResult[92] = channel.parent_id;
   cResult[93] = channel.type;
   cResult[94] = $s;
-}) : ((ref) => {
+}) : (function MessagesConnected(ref) {
   let TIER_2;
   let acceptingGiftCodes;
   let appDirectoryEmbedApplicationFetchStates;
@@ -2440,7 +2555,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   let unloadableContentEntryMessageIds;
   let unloadedContentEntryMessageIds;
   let useReducedMotion;
-  const f104435 = () => {
+  let version;
+  const f104762 = () => {
     const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
     return items;
   };
@@ -2541,9 +2657,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
     function _loop2(iter) {
       let closure_0 = iter;
       const userIds = iter.userIds;
-      findActivity = findActivity.findActivity;
       iter = userIds.values();
-      const findActivityResult = findActivity(iter.next().value, (application_id) => application_id.application_id === applicationId.applicationId);
+      const value = iter.next().value;
+      let findActivityResult;
+      if (null != value) {
+        findActivityResult = closure_2_51.findActivity(value, (application_id) => application_id.application_id === applicationId.applicationId);
+      }
       let details;
       if (findActivityResult != null) {
         details = findActivityResult.details;
@@ -2728,8 +2847,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   const stateFromStoresObject3 = tmp2Result112.useStateFromStoresObject(items46, () => messageInteractionStates.getMessageInteractionStates());
   const items47 = [LocalInteractionComponentStateStore];
   const tmp2Result113 = tmp2(tmp3[62]);
-  [tmp67, tmp68] = stateFromStores1(tmp2Result113.useStateFromStores(items47, f104435, [], tmp2(tmp3[75]).isVersionEqual), 2);
-  stateFromStores1(tmp2Result113.useStateFromStores(items47, f104435, [], tmp2(tmp3[75]).isVersionEqual), 2);
+  [tmp67, tmp68] = stateFromStores1(tmp2Result113.useStateFromStores(items47, f104762, [], tmp2(tmp3[75]).isVersionEqual), 2);
+  stateFromStores1(tmp2Result113.useStateFromStores(items47, f104762, [], tmp2(tmp3[75]).isVersionEqual), 2);
   const items48 = [ExperimentStore];
   const tmp2Result114 = tmp2(tmp3[62]);
   let stateFromStores22 = tmp2Result114.useStateFromStores(items48, () => hasLoadedExperiments.hasLoadedExperiments);

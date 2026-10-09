@@ -1,15 +1,15 @@
-// Module ID: 13370
-// Function ID: 13371
+// Module ID: 13465
+// Function ID: 13466
 // Name: InviteEmbedTextUtils
-// Dependencies: [1389, 1085, 1126, 3051, 5405, 2]
+// Dependencies: [1390, 1085, 1126, 3051, 5406, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 13370 (InviteEmbedTextUtils)
+// Module 13465 (InviteEmbedTextUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import _modDef3051 from "module_3051" /* 3051 */;
-import NicknameUtils from "NicknameUtils" /* 5405 */;
-import UserStore from "UserStore" /* 1389 */;
+import NicknameUtils from "NicknameUtils" /* 5406 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 function getAskToJoinText(author, appName, isPrivate, id4, arg4) {

@@ -1,24 +1,24 @@
-// Module ID: 1250
-// Function ID: 1251
+// Module ID: 1251
+// Function ID: 1252
 // Name: CustomThemeMobileStore
-// Dependencies: [1206, 1205, 1207, 1243, 1095, 1251, 4925, 1209, 584, 504, 2]
+// Dependencies: [1206, 1205, 1207, 1244, 1095, 1252, 4926, 1209, 584, 504, 2]
 
-// Module 1250 (CustomThemeMobileStore)
+// Module 1251 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 4925 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 4926 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_3, prop;
 
-const f84669 = () => {
+const f84881 = () => {
   const obj = DispatcherDefault;
   return obj.dispatch({ type: "REFRESH_THEME" });
 };
@@ -50,7 +50,7 @@ function loadFromProtoSettings() {
         prop = clientThemeSettings.customUserThemeSettings;
       }
       const obj2 = DispatcherDefault;
-      obj2.wait(f84669);
+      obj2.wait(f84881);
     }
   }
 }
@@ -70,7 +70,7 @@ function handleSelectivelySyncedUserSettingsUpdate() {
         prop = clientThemeSettings.customUserThemeSettings;
       }
       const obj2 = DispatcherDefault;
-      obj2.wait(f84669);
+      obj2.wait(f84881);
     }
   }
 }
@@ -102,7 +102,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "Array", customTheme: "Reflect" };
+      obj = { theme: "Array", customTheme: "Set" };
     }
     return obj;
   }
@@ -185,7 +185,7 @@ class CustomThemeMobileStore extends PersistedStore {
         if (null == prop) {
           theme = tmp3.theme;
         } else {
-          const tmp10Result = tmp10(1251);
+          const tmp10Result = tmp10(1252);
           theme = tmp10Result.getCustomThemeBaseTheme(tmp3.theme);
         }
         obj = { baseTheme: theme, customTheme: prop };
@@ -283,7 +283,7 @@ let obj = {
           prop = clientThemeSettings.customUserThemeSettings;
         }
         const obj2 = DispatcherDefault;
-        obj2.wait(f84669);
+        obj2.wait(f84881);
       }
     }
   },

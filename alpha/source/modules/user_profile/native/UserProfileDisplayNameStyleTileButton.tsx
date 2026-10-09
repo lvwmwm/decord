@@ -1,24 +1,24 @@
-// Module ID: 14745
-// Function ID: 14746
+// Module ID: 14852
+// Function ID: 14853
 // Name: UserProfileDisplayNameStyleTileButton
-// Dependencies: [19, 17, 5079, 8260, 21, 5090, 587, 558, 576, 504, 2040, 1126, 14746, 10247, 10246, 6193, 6189, 2]
+// Dependencies: [19, 17, 5080, 8268, 21, 5091, 587, 558, 576, 504, 2041, 1126, 14853, 10232, 10231, 6195, 6191, 2]
 
-// Module 14745 (UserProfileDisplayNameStyleTileButton)
+// Module 14852 (UserProfileDisplayNameStyleTileButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import Pressables from "Pressables" /* 6189 */;
-import TableRowArrow from "TableRowArrow" /* 6193 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10246 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 14746 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import Pressables from "Pressables" /* 6191 */;
+import TableRowArrow from "TableRowArrow" /* 6195 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10231 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 14853 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8260 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8268 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   }
   const tmpResult3 = get_initialized;
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
-  const GifAutoPlay = tmp(2040).GifAutoPlay;
+  const GifAutoPlay = tmp(2041).GifAutoPlay;
   const setting = GifAutoPlay.useSetting();
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   if (!stateFromStores1) {
     let STATIC;
     if (setting) {
-      STATIC = tmp(10247).EffectDisplayType.ANIMATED;
+      STATIC = tmp(10232).EffectDisplayType.ANIMATED;
     }
     if (cResult[10] === username) {
       if (cResult[11] === stateFromStores) {
@@ -208,7 +208,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
     cResult[14] = tmp23;
     tmp21 = tmp23;
   }
-  STATIC = tmp(10247).EffectDisplayType.STATIC;
+  STATIC = tmp(10232).EffectDisplayType.STATIC;
 }) : (function UserProfileDisplayNameStyleTileButton(user) {
   let intl;
   let intl2;
@@ -244,7 +244,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   if (!stateFromStores1) {
     let STATIC;
     if (setting) {
-      STATIC = tmp2(10247).EffectDisplayType.ANIMATED;
+      STATIC = tmp2(10232).EffectDisplayType.ANIMATED;
     }
     obj7.effectDisplayType = STATIC;
     obj6.children = metroRequire(tmp10, obj7);
@@ -252,7 +252,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
     obj3.children = items2;
     return tmp7(PressableHighlight, obj3);
   }
-  STATIC = tmp2(10247).EffectDisplayType.STATIC;
+  STATIC = tmp2(10232).EffectDisplayType.STATIC;
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStyleTileButton.tsx");
 

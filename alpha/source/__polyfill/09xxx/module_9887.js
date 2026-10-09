@@ -1,11 +1,12 @@
 // Module ID: 9887
 // Function ID: 9888
-// Dependencies: [41, 42, 93, 95, 98, 9886, 9773, 9778]
+// Dependencies: [41, 42, 93, 95, 98, 9790, 9884, 9791, 9797]
 
 // Module 9887
-import EmptyDuration from "EmptyDuration" /* 9773 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9778 */;
-import _mod9886 from "module_9886" /* 9886 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9790 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9791 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9797 */;
+import _mod9884 from "module_9884" /* 9884 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,14 +28,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const keys = Object.keys(_mod9886.NUMBER);
-const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u5E7E)(?:\\s*)(?:\u500B)?(\u79D2(?:\u9418)?|\u5206\u9418|\u5C0F\u6642|\u9418|\u65E5|\u5929|\u661F\u671F|\u79AE\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u904E)?\u5F8C|(?:\u4E4B)?\u5167)", "i");
-class ZHHantDeadlineFormatParser {
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9884.MONTH_DICTIONARY);
+const regExp = new RegExp("(" + matchAnyPatternResult + ")\\s*(?:[,-]?\\s*(" + _mod9884.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)", "i");
+class NLMonthNameParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantDeadlineFormatParser);
-    const obj = _getPrototypeOf(ZHHantDeadlineFormatParser);
+    _classCallCheck(this, NLMonthNameParser);
+    const obj = _getPrototypeOf(NLMonthNameParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -46,7 +47,7 @@ class ZHHantDeadlineFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLMonthNameParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -57,74 +58,19 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      let num = parseInt(index[1]);
-      if (isNaN(num)) {
-        num = _mod9886.zhStringToNumber(index[1]);
-      }
-      if (isNaN(num)) {
-        num = 3;
-        if ("\u5E7E" !== index[1]) {
-          num = 0.5;
-          if ("\u534A" !== index[1]) {
-            return null;
-          }
-        }
-      }
-      const obj = {};
-      if (index[2][0].match(/[日天星禮月年]/)) {
-        if ("\u65E5" != index[2][0]) {
-          if ("\u5929" != index[2][0]) {
-            if ("\u661F" != index[2][0]) {
-              if ("\u79AE" != index[2][0]) {
-                if ("\u6708" == index[2][0]) {
-                  obj.month = num;
-                } else if ("\u5E74" == index[2][0]) {
-                  obj.year = num;
-                }
-              }
-            }
-            obj.week = num;
-          }
-          const addDurationResult = EmptyDuration.addDuration(createParsingResult.refDate, obj);
-          const start7 = parsingResult.start;
-          start7.assign("year", addDurationResult.getFullYear());
-          const start8 = parsingResult.start;
-          start8.assign("month", addDurationResult.getMonth() + 1);
-          const start9 = parsingResult.start;
-          start9.assign("day", addDurationResult.getDate());
-          return parsingResult;
-        }
-        obj.day = num;
+    value: function innerExtract(createParsingComponents, arg1) {
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      parsingComponents.imply("day", 1);
+      const tmp4 = _mod9884.MONTH_DICTIONARY[arg1[1].toLowerCase(arg1[1])];
+      parsingComponents.assign("month", tmp4);
+      if (arg1[2]) {
+        parsingComponents.assign("year", _mod9884.parseYear(arg1[2]));
       } else {
-        if ("\u79D2" == index[2][0]) {
-          obj.second = num;
-        } else if ("\u5206" == index[2][0]) {
-          obj.minute = num;
-        } else {
-          const tmp6 = "\u5C0F" != str3 && "\u9418" != str3;
-          if (!tmp6) {
-            obj.hour = num;
-          }
-        }
-        const addDurationResult1 = EmptyDuration.addDuration(createParsingResult.refDate, obj);
-        const start = parsingResult.start;
-        start.imply("year", addDurationResult1.getFullYear());
-        const start2 = parsingResult.start;
-        start2.imply("month", addDurationResult1.getMonth() + 1);
-        const start3 = parsingResult.start;
-        start3.imply("day", addDurationResult1.getDate());
-        const start4 = parsingResult.start;
-        start4.assign("hour", addDurationResult1.getHours());
-        const start5 = parsingResult.start;
-        start5.assign("minute", addDurationResult1.getMinutes());
-        const start6 = parsingResult.start;
-        start6.assign("second", addDurationResult1.getSeconds());
-        return parsingResult;
+        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, 1, tmp4));
       }
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(ZHHantDeadlineFormatParser, items);
+export default _createClass(NLMonthNameParser, items);

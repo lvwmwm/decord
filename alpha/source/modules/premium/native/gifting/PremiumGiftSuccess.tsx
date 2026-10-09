@@ -1,18 +1,18 @@
-// Module ID: 12773
-// Function ID: 12774
+// Module ID: 12718
+// Function ID: 12719
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 10006, 2060, 21, 5090, 587, 558, 576, 1630, 10040, 38, 12774, 10094, 10075, 504, 2049, 2048, 12775, 12776, 12777, 2]
+// Dependencies: [19, 17, 9101, 2061, 21, 5091, 587, 558, 576, 1631, 10025, 38, 12719, 10079, 10060, 504, 2050, 2049, 12720, 12721, 12722, 2]
 
-// Module 12773 (PremiumGiftSuccess)
+// Module 12718 (PremiumGiftSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10006 */;
+import PromotionsStore from "PromotionsStore" /* 9101 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

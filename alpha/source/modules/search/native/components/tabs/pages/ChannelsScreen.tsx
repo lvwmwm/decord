@@ -1,19 +1,19 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17333
+// Function ID: 17334
 // Name: ChannelsScreen
-// Dependencies: [19, 5114, 12080, 12067, 9247, 9246, 21, 558, 576, 12060, 504, 16466, 17112, 1126, 4788, 17116, 12074, 17176, 17108, 17120, 2]
+// Dependencies: [19, 5115, 12017, 12004, 9285, 9284, 21, 558, 576, 11997, 504, 16585, 17262, 1126, 4789, 17266, 12011, 17326, 17258, 17270, 2]
 
-// Module 17183 (ChannelsScreen)
+// Module 17333 (ChannelsScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4788 */;
-import TrackingConstants from "TrackingConstants" /* 9246 */;
-import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4789 */;
+import TrackingConstants from "TrackingConstants" /* 9284 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12011 */;
 import react from "react" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12080 */;
-import SearchQueryStore from "SearchQueryStore" /* 12067 */;
-import SearchConstants from "SearchConstants" /* 9247 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5115 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12017 */;
+import SearchQueryStore from "SearchQueryStore" /* 12004 */;
+import SearchConstants from "SearchConstants" /* 9285 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -274,14 +274,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const items8 = [onPressGuildTextChannel, searchContext];
   const callback = stateFromStores1.useCallback((channelId, index) => {
     onPressGuildTextChannel(channelId);
-    const obj = tracking_TrackingDefault;
+    const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext, channelId, index, entityType: fullscreenPlaceholderCount.CHANNEL };
     const result = obj.trackSearchResultClicked(obj2);
   }, items8);
   const items9 = [onPressGuildVoiceChannel, searchContext];
   const callback1 = stateFromStores1.useCallback((channelId, index) => {
     onPressGuildVoiceChannel(channelId);
-    const obj = tracking_TrackingDefault;
+    const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext, channelId, index, entityType: fullscreenPlaceholderCount.CHANNEL };
     const result = obj.trackSearchResultClicked(obj2);
   }, items9);

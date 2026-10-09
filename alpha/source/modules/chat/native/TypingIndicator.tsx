@@ -1,33 +1,33 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11590
+// Function ID: 11591
 // Name: TypingIndicator
-// Dependencies: [19, 17, 9318, 5089, 5994, 7363, 11655, 1389, 1085, 21, 558, 576, 11656, 504, 5090, 587, 11657, 11658, 11659, 5405, 1264, 6841, 6865, 11660, 11661, 4810, 4778, 4787, 5374, 5378, 11671, 1200, 5086, 11675, 2]
+// Dependencies: [19, 17, 9356, 5090, 5996, 7368, 11591, 1390, 1085, 21, 558, 576, 11592, 504, 5091, 587, 11593, 11594, 11595, 5406, 1265, 6848, 6872, 11596, 11597, 4811, 4779, 4788, 5375, 5379, 11607, 1200, 5087, 11611, 2]
 // Exports: hasTypingIndicatorContent
 
-// Module 11654 (TypingIndicator)
+// Module 11590 (TypingIndicator)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import spring from "spring" /* 5374 */;
-import springPresets from "springPresets" /* 5378 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import SlowmodeStore from "SlowmodeStore" /* 7363 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9318 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 11656 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11659 */;
-import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 11660 */;
-import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 11661 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import spring from "spring" /* 5375 */;
+import springPresets from "springPresets" /* 5379 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import SlowmodeStore from "SlowmodeStore" /* 7368 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9356 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 11592 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11595 */;
+import CustomTypingIndicatorAnalytics from "CustomTypingIndicatorAnalytics" /* 11596 */;
+import openCustomTypingIndicatorAnnounceActionSheet from "openCustomTypingIndicatorAnnounceActionSheet" /* 11597 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5089 */;
-import RawGuildEmojiStore_mod from "RawGuildEmojiStore" /* 5994 */;
-import TypingStore from "TypingStore" /* 11655 */;
-import UserStore from "UserStore" /* 1389 */;
+import DevSettingsStore from "DevSettingsStore" /* 5090 */;
+import RawGuildEmojiStore_mod from "RawGuildEmojiStore" /* 5996 */;
+import TypingStore from "TypingStore" /* 11591 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, obj1, set, tmp12, tmp17, trackResult;
@@ -36,11 +36,11 @@ let closure_12;
 let closure_14;
 let map1;
 let tmp;
-const native = tmp(4787);
+const native = tmp(4788);
 function renderTypingIndicator(arg0, arg1, transitionState, cleanUp) {
   const obj = { transitionState, cleanUp };
   const merged = Object.assign(arg1);
-  return closure_12(closure_23, obj, arg0);
+  return authStore2(closure_23, obj, arg0);
 }
 let View = react_native.View;
 let style_owner_user_id = useChatBottomManagerUIStore.useChatShowingAutoComplete;
@@ -905,7 +905,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
       if (cResult[4] !== tmp5) {
         const obj2 = { item: tmp5, renderItem: renderTypingIndicator };
-        const tmp11 = closure_12(native.TransitionItem, obj2);
+        const tmp11 = authStore2(native.TransitionItem, obj2);
         cResult[4] = tmp5;
         cResult[5] = tmp11;
         tmp8 = tmp11;
@@ -951,7 +951,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return tmp4;
   }, items);
   let obj = { item: memo, renderItem: renderTypingIndicator };
-  return closure_12(native.TransitionItem, obj);
+  return authStore2(native.TransitionItem, obj);
 }));
 let result = size.fileFinishedImporting("modules/chat/native/TypingIndicator.tsx");
 

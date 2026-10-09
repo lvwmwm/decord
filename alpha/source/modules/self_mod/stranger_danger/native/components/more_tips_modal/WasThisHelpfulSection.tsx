@@ -1,23 +1,21 @@
-// Module ID: 10385
-// Function ID: 10386
+// Module ID: 10374
+// Function ID: 10375
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10266, 10361, 21, 5090, 587, 558, 576, 573, 10375, 4772, 4766, 1126, 10386, 10387, 10374, 5086, 1200, 10388, 10389, 2]
+// Dependencies: [19, 17, 10251, 10348, 21, 5091, 587, 558, 576, 573, 10362, 4768, 1126, 10375, 10361, 5087, 1200, 10377, 10378, 2]
 
-// Module 10385 (WasThisHelpfulSection)
+// Module 10374 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4766 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4772 */;
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10266 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10375 */;
-import ShieldIcon from "ShieldIcon" /* 10386 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10387 */;
-import react_mod from "react" /* 19 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10251 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10361 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10362 */;
+import ShieldIcon from "ShieldIcon" /* 10375 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 10361 */;
+import Constants from "Constants" /* 10348 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +24,6 @@ const ChannelSafetyWarningsStore = ChannelSafetyWarningsStore2;
 let FEEDBACK_BUTTON_ACTIVE_BACKGROUND_COLOR;
 let c10;
 let c9;
-let closure_12;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
@@ -37,13 +34,12 @@ let obj5;
 let obj6;
 let size;
 let unpackModuleId;
-let react = react_mod;
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 const constants = ChannelSafetyWarningsStore2.SafetyWarningFeedbackTypes;
-({ DOWNVOTE_FEEDBACK_CONFIRMATION_TOAST_KEY: metroImportAll, TOAST_SHIELD_ICON_COLOR: c9, UPVOTE_FEEDBACK_CONFIRMATION_TOAST_KEY: c10, FEEDBACK_BUTTON_ACTIVE_BACKGROUND_COLOR } = Constants);
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+({ DOWNVOTE_FEEDBACK_CONFIRMATION_TOAST_KEY: metroImportAll, UPVOTE_FEEDBACK_CONFIRMATION_TOAST_KEY: c9, FEEDBACK_BUTTON_ACTIVE_BACKGROUND_COLOR } = Constants);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: { flexDirection: "column", alignItems: "center" }, buttonsContainer: obj2, buttonsBackground: size, buttonsBackgroundInactive: obj3, buttonsBackgroundActive: obj4, buttonIconInactive: obj5, buttonIconActive: obj6, toastContainer: { paddingHorizontal: 8, paddingVertical: 12 } };
+let obj = { container: { flexDirection: "column", alignItems: "center" }, buttonsContainer: obj2, buttonsBackground: size, buttonsBackgroundInactive: obj3, buttonsBackgroundActive: obj4, buttonIconInactive: obj5, buttonIconActive: obj6 };
 obj2 = { flexDirection: "row", marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 size = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center" };
@@ -51,21 +47,18 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj4 = { borderWidth: 1, borderColor: nativeDefault.colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, backgroundColor: FEEDBACK_BUTTON_ACTIVE_BACKGROUND_COLOR };
 obj5 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
-let closure_13 = createStyles(obj);
+let closure_12 = createStyles(obj);
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpfulSection(channelId) {
   let first;
   let intl;
-  let obj4;
   let senderId;
-  let toastContainer;
   const tmp = channelId;
   let obj = channelId(senderId[8]);
-  const cResult = obj.c(44);
+  const cResult = obj.c(43);
   channelId = channelId.channelId;
   const warningId = channelId.warningId;
   senderId = channelId.senderId;
-  let tmp4 = closure_13();
-  react = tmp4;
+  const tmp4 = closure_12();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp6 = ChannelSafetyWarningsStore;
     const items = [ChannelSafetyWarningsStore];
@@ -80,9 +73,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
     if (cResult[2] === warningId) {
       tmp7 = cResult[3];
     }
-    let tmpResult = tmp(tmp2[9]);
+    const tmpResult = tmp(tmp2[9]);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-    let tmp9 = null;
     if (stateFromStores != null) {
       feedback_type = stateFromStores.feedback_type;
     }
@@ -98,227 +90,188 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
       }
       if (tmp11 === type) {
         if (cResult[6] === senderId) {
-          if (cResult[7] === tmp4.toastContainer) {
-            let tmp13;
-            if (cResult[8] === warningId) {
-              tmp13 = cResult[9];
+          let tmp13;
+          if (cResult[7] === warningId) {
+            tmp13 = cResult[8];
+          }
+          let closure_4 = tmp13;
+          const _Symbol = Symbol;
+          const container = tmp4.container;
+          if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+            let obj2 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(tmp(tmp2[12]).t.L84yVm) };
+            const Text = tmp(tmp2[15]).Text;
+            intl = tmp(tmp2[12]).intl;
+            cResult[9] = closure_10(Text, obj2);
+            const tmp17 = closure_10(Text, obj2);
+          }
+          const tmp19 = feedback_type === UPVOTE ? tmp4.buttonsBackgroundActive : tmp4.buttonsBackgroundInactive;
+          if (cResult[10] === tmp4.buttonsBackground) {
+            let tmp20;
+            if (cResult[11] === tmp19) {
+              tmp20 = cResult[12];
             }
-            let closure_5 = tmp13;
-            const _Symbol = Symbol;
-            const container = tmp4.container;
-            if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-              let obj2 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(tmp(tmp2[13]).t.L84yVm) };
-              const Text = tmp(tmp2[17]).Text;
-              intl = tmp(tmp2[13]).intl;
-              cResult[10] = closure_11(Text, obj2);
-              const tmp17 = closure_11(Text, obj2);
+            if (cResult[13] !== tmp13) {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+                }
+              }
+              cResult[13] = tmp13;
+              cResult[14] = V;
+            } else {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+                }
+              }
             }
-            const tmp19 = feedback_type === UPVOTE ? tmp4.buttonsBackgroundActive : tmp4.buttonsBackgroundInactive;
-            if (cResult[11] === tmp4.buttonsBackground) {
-              let tmp20;
-              if (cResult[12] === tmp19) {
-                tmp20 = cResult[13];
-              }
-              if (cResult[14] !== tmp13) {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
-                }
-                cResult[14] = tmp13;
-                cResult[15] = L;
-              } else {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
+            const _Symbol2 = Symbol;
+            if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                 }
               }
-              const _Symbol2 = Symbol;
-              if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
-                }
-                const stringResult = obj4.string(tmp(senderId[13]).t["2GrOCN"]);
-                cResult[16] = stringResult;
-              } else {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
+              const stringResult = obj4.string(tmp(senderId[12]).t["2GrOCN"]);
+              cResult[15] = stringResult;
+            } else {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                 }
               }
-              if (feedback_type === UPVOTE) {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
-                }
-              } else {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
-                }
-              }
-              if (cResult[17] !== tmp24) {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
-                }
-                let obj3 = { size: tmp(tmp2[18]).Icon.Sizes.SMALL_20, source: warningId(tmp2[19]), color: tmp24 };
-                const Icon = tmp(tmp2[18]).Icon;
-                cResult[17] = tmp24;
-                cResult[18] = closure_11(Icon, obj3);
-                const tmp27 = closure_11(Icon, obj3);
-              } else {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
-                }
-              }
-              if (cResult[19] === feedback_type === UPVOTE) {
-                class L {
-                  constructor() {
-                    return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
-                  }
-                }
-              }
-              class A {
-                constructor(feedbackType, cta) {
-                  let intl;
-                  let intl2;
-                  let type;
-                  const obj = ChannelSafetyWarningsActionCreators;
-                  const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
-                  const tmp6 = feedbackType === constants.UPVOTE ? authStore : metroImportAll;
-                  const tmpResult = DesignSystemsNotificationComponentsExperiment;
-                  const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("WasThisHelpfulSectionNative");
-                  const tmp9 = ToastActionCreatorsDefault;
-                  const tmp3 = channelId;
-                  const tmp4 = warningId;
-                  if (designSystemsNotificationComponents) {
-                    const openMana = tmp9.openMana;
-                    const obj2 = { text: intl2.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
-                    intl2 = tmp(1126).intl;
-                    openMana(tmp6, obj2);
-                  } else {
-                    const open = tmp9.open;
-                    const obj3 = { key: tmp6, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
-                    intl = tmp(1126).intl;
-                    open(obj3);
-                  }
-                  const obj4 = { channelId: tmp3, warningId: tmp4, senderId, warningType: type, cta };
-                  type = undefined;
-                  const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
-                  SafetyWarningUtils;
-                  if (stateFromStores != null) {
-                    type = stateFromStores.type;
-                  }
-                  trackCtaEvent(obj4);
-                }
-              }
-              cResult[19] = feedback_type === UPVOTE;
-              cResult[20] = tmp25;
-              cResult[21] = tmp20;
-              cResult[22] = tmp21;
-              cResult[23] = tmp31;
             }
-            const items1 = [tmp4.buttonsBackground, tmp19];
-            cResult[11] = tmp4.buttonsBackground;
-            cResult[12] = tmp19;
-            class A {
+            if (feedback_type === UPVOTE) {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+                }
+              }
+            } else {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+                }
+              }
+            }
+            if (cResult[16] !== tmp24) {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+                }
+              }
+              let obj3 = { size: tmp(tmp2[16]).Icon.Sizes.SMALL_20, source: warningId(tmp2[17]), color: tmp24 };
+              const Icon = tmp(tmp2[16]).Icon;
+              cResult[16] = tmp24;
+              cResult[17] = closure_10(Icon, obj3);
+              const tmp27 = closure_10(Icon, obj3);
+            } else {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+                }
+              }
+            }
+            if (cResult[18] === feedback_type === UPVOTE) {
+              class V {
+                constructor() {
+                  return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+                }
+              }
+            }
+            class B {
               constructor(feedbackType, cta) {
                 let intl;
-                let intl2;
                 let type;
                 const obj = ChannelSafetyWarningsActionCreators;
                 const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
-                const tmp6 = feedbackType === constants.UPVOTE ? authStore : metroImportAll;
-                const tmpResult = DesignSystemsNotificationComponentsExperiment;
-                const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("WasThisHelpfulSectionNative");
-                const tmp9 = ToastActionCreatorsDefault;
-                const tmp3 = channelId;
-                const tmp4 = warningId;
-                if (designSystemsNotificationComponents) {
-                  const openMana = tmp9.openMana;
-                  const obj2 = { text: intl2.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
-                  intl2 = tmp(1126).intl;
-                  openMana(tmp6, obj2);
-                } else {
-                  const open = tmp9.open;
-                  const obj3 = { key: tmp6, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
-                  intl = tmp(1126).intl;
-                  open(obj3);
-                }
-                const obj4 = { channelId: tmp3, warningId: tmp4, senderId, warningType: type, cta };
+                const tmp6 = feedbackType === constants.UPVOTE ? React4 : metroImportAll;
+                const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
+                const openMana = ToastActionCreatorsDefault.openMana;
+                ToastActionCreatorsDefault;
+                intl = tmp(1126).intl;
+                openMana(tmp6, obj2);
+                const obj3 = { channelId, warningId, senderId, warningType: type, cta };
                 type = undefined;
                 const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
                 SafetyWarningUtils;
                 if (stateFromStores != null) {
                   type = stateFromStores.type;
                 }
-                trackCtaEvent(obj4);
+                trackCtaEvent(obj3);
               }
             }
-            cResult[13] = items1;
-            tmp20 = items1;
+            cResult[18] = feedback_type === UPVOTE;
+            cResult[19] = tmp25;
+            cResult[20] = tmp20;
+            cResult[21] = tmp21;
+            cResult[22] = tmp31;
           }
+          const items1 = [tmp4.buttonsBackground, tmp19];
+          cResult[10] = tmp4.buttonsBackground;
+          cResult[11] = tmp19;
+          class B {
+            constructor(feedbackType, cta) {
+              let intl;
+              let type;
+              const obj = ChannelSafetyWarningsActionCreators;
+              const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
+              const tmp6 = feedbackType === constants.UPVOTE ? React4 : metroImportAll;
+              const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
+              const openMana = ToastActionCreatorsDefault.openMana;
+              ToastActionCreatorsDefault;
+              intl = tmp(1126).intl;
+              openMana(tmp6, obj2);
+              const obj3 = { channelId, warningId, senderId, warningType: type, cta };
+              type = undefined;
+              const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
+              SafetyWarningUtils;
+              if (stateFromStores != null) {
+                type = stateFromStores.type;
+              }
+              trackCtaEvent(obj3);
+            }
+          }
+          cResult[12] = items1;
+          tmp20 = items1;
         }
       }
     }
     cResult[4] = channelId;
     if (stateFromStores != null) {
-      class L {
+      class V {
         constructor() {
-          return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+          return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
         }
       }
     }
-    class A {
+    class B {
       constructor(feedbackType, cta) {
         let intl;
-        let intl2;
         let type;
         const obj = ChannelSafetyWarningsActionCreators;
         const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
-        const tmp6 = feedbackType === constants.UPVOTE ? authStore : metroImportAll;
-        const tmpResult = DesignSystemsNotificationComponentsExperiment;
-        const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("WasThisHelpfulSectionNative");
-        const tmp9 = ToastActionCreatorsDefault;
-        const tmp3 = channelId;
-        const tmp4 = warningId;
-        if (designSystemsNotificationComponents) {
-          const openMana = tmp9.openMana;
-          const obj2 = { text: intl2.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
-          intl2 = tmp(1126).intl;
-          openMana(tmp6, obj2);
-        } else {
-          const open = tmp9.open;
-          const obj3 = { key: tmp6, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
-          intl = tmp(1126).intl;
-          open(obj3);
-        }
-        const obj4 = { channelId: tmp3, warningId: tmp4, senderId, warningType: type, cta };
+        const tmp6 = feedbackType === constants.UPVOTE ? React4 : metroImportAll;
+        const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
+        const openMana = ToastActionCreatorsDefault.openMana;
+        ToastActionCreatorsDefault;
+        intl = tmp(1126).intl;
+        openMana(tmp6, obj2);
+        const obj3 = { channelId, warningId, senderId, warningType: type, cta };
         type = undefined;
         const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
         SafetyWarningUtils;
         if (stateFromStores != null) {
           type = stateFromStores.type;
         }
-        trackCtaEvent(obj4);
+        trackCtaEvent(obj3);
       }
     }
     cResult[5] = undefined;
     cResult[6] = senderId;
-    cResult[7] = tmp4.toastContainer;
-    cResult[8] = warningId;
-    cResult[9] = A;
-    tmp13 = A;
+    cResult[7] = warningId;
+    cResult[8] = B;
+    tmp13 = B;
   }
   const fn = function u() {
     return ChannelSafetyWarningsStore.getChannelSafetyWarning(channelId, warningId);
@@ -339,18 +292,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
   let items6;
   let obj6;
   let obj8;
-  let toastContainer;
   channelId = channelId.channelId;
   const warningId = channelId.warningId;
   const senderId = channelId.senderId;
-  const tmp = closure_13();
-  react = tmp;
-  let tmp3 = senderId;
+  const tmp = closure_12();
   let obj = channelId(senderId[9]);
   const items = [ChannelSafetyWarningsStore];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelSafetyWarningsStore.getChannelSafetyWarning(channelId, warningId));
   const items1 = [stateFromStores];
-  const memo = react.useMemo(() => {
+  const memo = stateFromStores.useMemo(() => {
     let feedback_type;
     if (stateFromStores != null) {
       feedback_type = stateFromStores.feedback_type;
@@ -358,96 +308,84 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
     return feedback_type === constants.UPVOTE;
   }, items1);
   const items2 = [stateFromStores];
-  const memo1 = react.useMemo(() => {
+  const memo1 = stateFromStores.useMemo(() => {
     let feedback_type;
     if (stateFromStores != null) {
       feedback_type = stateFromStores.feedback_type;
     }
     return feedback_type === constants.DOWNVOTE;
   }, items2);
-  const items3 = [channelId, warningId, tmp.toastContainer, senderId, stateFromStores];
-  let closure_5 = react.useCallback((feedbackType, cta) => {
+  const items3 = [channelId, warningId, senderId, stateFromStores];
+  let closure_4 = stateFromStores.useCallback((feedbackType, cta) => {
     let intl;
-    let intl2;
     let type;
     const obj = ChannelSafetyWarningsActionCreators;
     const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
-    const tmp6 = feedbackType === constants.UPVOTE ? authStore : metroImportAll;
-    const tmpResult = DesignSystemsNotificationComponentsExperiment;
-    const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("WasThisHelpfulSectionNative");
-    const tmp9 = ToastActionCreatorsDefault;
-    const tmp3 = channelId;
-    const tmp4 = warningId;
-    if (designSystemsNotificationComponents) {
-      const openMana = tmp9.openMana;
-      const obj2 = { text: intl2.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
-      intl2 = tmp(1126).intl;
-      openMana(tmp6, obj2);
-    } else {
-      const open = tmp9.open;
-      const obj3 = { key: tmp6, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
-      intl = tmp(1126).intl;
-      open(obj3);
-    }
-    const obj4 = { channelId: tmp3, warningId: tmp4, senderId, warningType: type, cta };
+    const tmp6 = feedbackType === constants.UPVOTE ? React4 : metroImportAll;
+    const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
+    const openMana = ToastActionCreatorsDefault.openMana;
+    ToastActionCreatorsDefault;
+    intl = tmp(1126).intl;
+    openMana(tmp6, obj2);
+    const obj3 = { channelId, warningId, senderId, warningType: type, cta };
     type = undefined;
     const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
     SafetyWarningUtils;
     if (stateFromStores != null) {
       type = stateFromStores.type;
     }
-    trackCtaEvent(obj4);
+    trackCtaEvent(obj3);
   }, items3);
+  const tmp7 = closure_11;
   let obj2 = { style: tmp.container, children: items4 };
-  let tmp9 = closure_11;
-  let obj3 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(channelId(senderId[13]).t.L84yVm) };
-  const Text = channelId(senderId[17]).Text;
-  intl = channelId(senderId[13]).intl;
-  items4 = [closure_11(Text, obj3), ];
-  let obj4 = { style: tmp.buttonsContainer, children: items6 };
+  let obj3 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(channelId(senderId[12]).t.L84yVm) };
+  const Text = channelId(senderId[15]).Text;
+  intl = channelId(senderId[12]).intl;
+  items4 = [closure_10(Text, obj3), ];
   const items5 = [tmp.buttonsBackground, ];
+  const obj4 = { style: tmp.buttonsContainer, children: items6 };
   items5[1] = memo ? tmp.buttonsBackgroundActive : tmp.buttonsBackgroundInactive;
   const obj5 = {
     style: items5,
     disabled: memo,
     onPress() {
-      return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
+      return closure_4(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
     },
-    accessibilityLabel: intl2.string(channelId(tmp3[13]).t["2GrOCN"]),
-    children: tmp9(Icon, obj6)
+    accessibilityLabel: intl2.string(channelId(senderId[12]).t["2GrOCN"]),
+    children: closure_10(Icon, obj6)
   };
-  intl2 = tmp2(tmp3[13]).intl;
-  obj6 = { size: channelId(tmp3[18]).Icon.Sizes.SMALL_20, source: warningId(tmp3[19]), color };
-  Icon = tmp2(tmp3[18]).Icon;
+  intl2 = tmp2(tmp3[12]).intl;
+  obj6 = { size: channelId(senderId[16]).Icon.Sizes.SMALL_20, source: warningId(senderId[17]), color };
+  Icon = tmp2(tmp3[16]).Icon;
   const tmp11 = warningId;
   if (memo) {
     color = tmp.buttonIconActive.color;
   } else {
     color = tmp.buttonIconInactive.color;
   }
-  items6 = [tmp9(tmp10, obj5), ];
+  items6 = [closure_10(closure_4, obj5), ];
   const items7 = [tmp.buttonsBackground, ];
   items7[1] = memo1 ? tmp.buttonsBackgroundActive : tmp.buttonsBackgroundInactive;
   const obj7 = {
     style: items7,
     disabled: memo1,
     onPress() {
-      return closure_5(constants.DOWNVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_DOWNVOTE);
+      return closure_4(constants.DOWNVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_DOWNVOTE);
     },
-    accessibilityLabel: intl3.string(channelId(tmp3[13]).t.COp9BO),
-    children: tmp9(Icon2, obj8)
+    accessibilityLabel: intl3.string(channelId(senderId[12]).t.COp9BO),
+    children: closure_10(Icon2, obj8)
   };
-  intl3 = tmp2(tmp3[13]).intl;
-  obj8 = { size: channelId(tmp3[18]).Icon.Sizes.SMALL_20, source: tmp11(tmp3[20]), color: color2 };
-  Icon2 = tmp2(tmp3[18]).Icon;
+  intl3 = tmp2(tmp3[12]).intl;
+  obj8 = { size: channelId(senderId[16]).Icon.Sizes.SMALL_20, source: tmp11(senderId[18]), color: color2 };
+  Icon2 = tmp2(tmp3[16]).Icon;
   if (memo1) {
     color2 = tmp.buttonIconActive.color;
   } else {
     color2 = tmp.buttonIconInactive.color;
   }
-  items6[1] = tmp9(stateFromStores, obj7);
-  items4[1] = closure_12(closure_5, obj4);
-  return closure_12(closure_5, obj2);
+  items6[1] = closure_10(closure_4, obj7);
+  items4[1] = tmp7(closure_5, obj4);
+  return tmp7(closure_5, obj2);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/WasThisHelpfulSection.tsx");

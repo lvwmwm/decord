@@ -1,18 +1,18 @@
-// Module ID: 15727
-// Function ID: 15728
+// Module ID: 15840
+// Function ID: 15841
 // Name: GameCommunityUpsellDevTools
-// Dependencies: [32, 19, 17, 13837, 15728, 21, 5090, 587, 558, 576, 504, 15729, 13839, 13838, 6267, 6184, 15055, 6193, 2]
+// Dependencies: [32, 19, 17, 13930, 15841, 21, 5091, 587, 558, 576, 504, 15842, 13932, 13931, 6269, 6186, 15167, 6195, 2]
 
-// Module 15727 (GameCommunityUpsellDevTools)
+// Module 15840 (GameCommunityUpsellDevTools)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13837 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15728 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13930 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15841 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -208,7 +208,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
                                 return obj;
                               }
                             }
-                            const tmp58 = closure_8(tmp(6184).TableRow, obj5);
+                            const tmp58 = closure_8(tmp(6186).TableRow, obj5);
                             cResult[48] = tmp18;
                             cResult[49] = tmp58;
                             tmp56 = tmp58;
@@ -246,8 +246,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
                                 dependencyMap();
                               }
                             }
-                            const tmp62 = closure_8(tmp(15055).RefreshIcon, {});
-                            const tmp63 = closure_8(tmp(6193).TableRowArrow, {});
+                            const tmp62 = closure_8(tmp(15167).RefreshIcon, {});
+                            const tmp63 = closure_8(tmp(6195).TableRowArrow, {});
                             class T {
                               constructor() {
                                 const obj = { guildsCount: MobileGameCommunitiesStore.getPresentableUpsellGuilds().length, dismissedCount: MobileGameCommunitiesStore.getDismissedGuildIds().size, lastFetchedAt: MobileGameCommunitiesStore.getLastFetchedAt() };
@@ -281,8 +281,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
                               }
                             }
                             cResult[54] = tmp59;
-                            cResult[55] = closure_8(tmp(6184).TableRow, obj6);
-                            const tmp65 = closure_8(tmp(6184).TableRow, obj6);
+                            cResult[55] = closure_8(tmp(6186).TableRow, obj6);
+                            const tmp65 = closure_8(tmp(6186).TableRow, obj6);
                           } else {
                             class Z {
                               constructor() {
@@ -305,8 +305,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
                               onPress() {
                                                           MobileGameCommunitiesStore.DEV_clearState();
                                                         },
-                              icon: closure_8(tmp(15055).RefreshIcon, {}),
-                              trailing: closure_8(tmp(6193).TableRowArrow, {})
+                              icon: closure_8(tmp(15167).RefreshIcon, {}),
+                              trailing: closure_8(tmp(6195).TableRowArrow, {})
                             };
                             class T {
                               constructor() {
@@ -380,8 +380,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
                           items3 = [tmp56, tmp64, tmp66];
                           cResult[57] = tmp56;
                           cResult[58] = tmp64;
-                          cResult[59] = closure_9(tmp(6267).TableRowGroup, obj9);
-                          const tmp71 = closure_9(tmp(6267).TableRowGroup, obj9);
+                          cResult[59] = closure_9(tmp(6269).TableRowGroup, obj9);
+                          const tmp71 = closure_9(tmp(6269).TableRowGroup, obj9);
                         }
                         class T {
                           constructor() {
@@ -399,7 +399,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
                     }
                     const obj11 = { title: "Store State", hasIcons: false, children: items4 };
                     items4 = [tmp38, tmp42, tmp45];
-                    const tmp50 = closure_9(tmp(6267).TableRowGroup, obj11);
+                    const tmp50 = closure_9(tmp(6269).TableRowGroup, obj11);
                     cResult[39] = tmp38;
                     cResult[40] = tmp42;
                     cResult[41] = tmp45;
@@ -444,7 +444,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
       }
     }
   }
-  const entries = Object.entries(tmp(15729).DETECTABLE_GAME_TO_APPLICATION_ID_MAP);
+  const entries = Object.entries(tmp(15842).DETECTABLE_GAME_TO_APPLICATION_ID_MAP);
   const mapped = entries.map((item) => {
     let flag;
     let lastScannedAt;
@@ -532,7 +532,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
   dependencyMap = tmp25;
   const container = tmp4.container;
   ({ scrollView, section } = tmp4);
-  const TableRowGroup = tmp(6267).TableRowGroup;
+  const TableRowGroup = tmp(6269).TableRowGroup;
   if (0 === mapped.length) {
     class Z {
       constructor() {
@@ -540,7 +540,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultiG
         dependencyMap();
       }
     }
-    tmp28 = closure_8(tmp(6184).TableRow, { label: "No games configured", subLabel: "MULTI_GUILD_GAME_CONFIGS is empty", disabled: true });
+    tmp28 = closure_8(tmp(6186).TableRow, { label: "No games configured", subLabel: "MULTI_GUILD_GAME_CONFIGS is empty", disabled: true });
   } else {
     class Z {
       constructor() {

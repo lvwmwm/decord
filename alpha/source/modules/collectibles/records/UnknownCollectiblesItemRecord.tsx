@@ -1,12 +1,12 @@
-// Module ID: 7260
-// Function ID: 7261
+// Module ID: 7265
+// Function ID: 7266
 // Name: UnknownCollectiblesItemRecord
-// Dependencies: [1991, 1992, 2]
+// Dependencies: [1992, 1993, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 7260 (UnknownCollectiblesItemRecord)
-import CollectiblesItemType from "CollectiblesItemType" /* 1992 */;
-import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1991 */;
+// Module 7265 (UnknownCollectiblesItemRecord)
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1992 */;
 import size from "module_2" /* 2 */;
 
 class UnknownCollectiblesItemRecord extends BaseCollectiblesItemRecord {

@@ -1,17 +1,17 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15310
+// Function ID: 15311
 // Name: useQuestForPlacement
-// Dependencies: [19, 7376, 7379, 1102, 10576, 6076, 9537, 558, 576, 504, 7377, 7385, 5984, 2]
+// Dependencies: [19, 7381, 7384, 1102, 9144, 6078, 9150, 558, 576, 504, 7382, 7390, 5986, 2]
 
-// Module 15197 (useQuestForPlacement)
+// Module 15310 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1102 */;
-import AdCreativeType from "AdCreativeType" /* 5984 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6076 */;
-import QuestActionCreators from "QuestActionCreators" /* 9537 */;
-import QuestsEligibility from "QuestsEligibility" /* 10576 */;
+import AdCreativeType from "AdCreativeType" /* 5986 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6078 */;
+import QuestsEligibility from "QuestsEligibility" /* 9144 */;
+import QuestActionCreators from "QuestActionCreators" /* 9150 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7376 */;
-import QuestStore from "QuestStore" /* 7379 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7381 */;
+import QuestStore from "QuestStore" /* 7384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require, dependencyMap;
 let c3;
 let closure_4;
 let hasOwnProperty;
-function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, arg2) {
+function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP, arg2) {
   const obj = QuestsEligibility;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
   if (isEligibleForQuests) {
@@ -37,17 +37,17 @@ function maybeRefreshAd(fetchedAt, MOBILE_HOME_DOCK_AREA, arg2) {
     const obj2 = DiscordAppStateDefault;
     if ("active" === obj2.getState()) {
       const obj4 = AdDeliveryStore;
-      if (!AdDeliveryStore.isFetchingAdToDeliverByPlacement(MOBILE_HOME_DOCK_AREA)) {
-        if (obj4.canRefreshAd(MOBILE_HOME_DOCK_AREA)) {
+      if (!AdDeliveryStore.isFetchingAdToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP)) {
+        if (obj4.canRefreshAd(QUEST_HOME_BANNER_DESKTOP)) {
           const tmpResult = QuestActionCreators;
           const currentQuests = tmpResult.fetchCurrentQuests();
           const tmpResult3 = QuestActionCreators;
-          const questToDeliver = tmpResult3.fetchQuestToDeliver(MOBILE_HOME_DOCK_AREA, arg2);
+          const questToDeliver = tmpResult3.fetchQuestToDeliver(QUEST_HOME_BANNER_DESKTOP, arg2);
         }
       }
     } else if (null != fetchedAt) {
       const tmpResult4 = QuestActionCreators;
-      tmpResult4.clearQuestAdDecision(MOBILE_HOME_DOCK_AREA, fetchedAt.ttlMillis);
+      tmpResult4.clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
     }
   }
 }
@@ -239,7 +239,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDelivered
     creative = tmp9.creative;
   }
   if (cResult[4] !== creative) {
-    const tmpResult3 = tmp(7377);
+    const tmpResult3 = tmp(7382);
     const deliveredQuestId = tmpResult3.getDeliveredQuestId(creative);
     cResult[4] = creative;
     cResult[5] = deliveredQuestId;
@@ -542,7 +542,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchQues
     creative = tmp5.creative;
   }
   if (cResult[0] !== creative) {
-    const tmpResult = tmp(7377);
+    const tmpResult = tmp(7382);
     const deliveredQuestId = tmpResult.getDeliveredQuestId(creative);
     cResult[0] = creative;
     cResult[1] = deliveredQuestId;
@@ -582,7 +582,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchQues
   let tmp13 = null;
   if (null != stateFromStores) {
     tmp13 = null;
-    const tmpResult4 = tmp(7385);
+    const tmpResult4 = tmp(7390);
     if (!tmpResult4.isQuestExpired(stateFromStores)) {
       tmp13 = stateFromStores;
     }

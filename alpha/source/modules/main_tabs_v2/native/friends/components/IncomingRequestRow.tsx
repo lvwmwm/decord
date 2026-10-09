@@ -1,21 +1,21 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17396
+// Function ID: 17397
 // Name: IncomingRequestRow
-// Dependencies: [109, 19, 5079, 5436, 10202, 1085, 21, 558, 576, 4810, 573, 1126, 4922, 16270, 12407, 16682, 17247, 10213, 2]
+// Dependencies: [109, 19, 5080, 5437, 10187, 1085, 21, 558, 576, 4811, 573, 1126, 4923, 16389, 12325, 16806, 17397, 10198, 2]
 
-// Module 17246 (IncomingRequestRow)
+// Module 17396 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import UserRowConstants from "UserRowConstants" /* 10202 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12407 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16270 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import UserRowConstants from "UserRowConstants" /* 10187 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12325 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16389 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -227,7 +227,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incomi
                           }
                         }
                       }
-                      const tmp42 = jsx(tmp33(12407), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
+                      const tmp42 = jsx(tmp33(12325), { application: null, textVariant: "text-xs/medium", iconSize: 12 }, stateFromStores1.id);
                       cResult[32] = stateFromStores1;
                       cResult[33] = tmp42;
                       tmp40 = tmp42;

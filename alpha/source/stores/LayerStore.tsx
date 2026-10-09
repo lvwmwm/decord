@@ -1,9 +1,9 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12162
+// Function ID: 12163
 // Name: LayerStore
 // Dependencies: [504, 584, 2]
 
-// Module 12223 (LayerStore)
+// Module 12162 (LayerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

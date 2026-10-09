@@ -1,20 +1,20 @@
-// Module ID: 6059
-// Function ID: 6060
+// Module ID: 6061
+// Function ID: 6062
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 2124, 2069, 4702, 12, 11, 504, 584, 2]
+// Dependencies: [502, 2124, 2070, 4704, 12, 11, 504, 584, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 6059 (GuildScheduledEventStore)
+// Module 6061 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4702 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4704 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2069 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2070 */;
 import size from "module_2" /* 2 */;
 
-let closure_13;
+let closure_12, closure_13;
 
 let closure_4;
 let hasOwnProperty;
@@ -250,7 +250,7 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function sched
 let closure_9 = 0;
 let closure_10 = [];
 const SERIES = "SERIES";
-let closure_12 = {};
+const authStore2 = {};
 const Store = get_initializedDefault.Store;
 class GuildScheduledEventStore extends Store {
   initialize() {

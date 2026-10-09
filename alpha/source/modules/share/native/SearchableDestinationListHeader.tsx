@@ -1,25 +1,25 @@
-// Module ID: 11587
-// Function ID: 11588
+// Module ID: 11520
+// Function ID: 11521
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 5090, 587, 558, 576, 1630, 9232, 6203, 1381, 6618, 6212, 2]
+// Dependencies: [19, 21, 5091, 587, 558, 576, 1631, 9270, 6205, 1382, 6625, 6214, 2]
 
-// Module 11587 (SearchableDestinationListHeader)
+// Module 11520 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import NavigatorHeader from "NavigatorHeader" /* 6203 */;
-import _mod6212 from "module_6212" /* 6212 */;
-import HeaderShared from "HeaderShared" /* 9232 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import _mod6214 from "module_6214" /* 6214 */;
+import HeaderShared from "HeaderShared" /* 9270 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp5;
-const useIsWindowLarge = tmp5(6618);
+const useIsWindowLarge = tmp5(6625);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { headerLeftContainer: obj2, headerRightContainer: obj3, header: { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
   subtitleColor = subtitleColor.subtitleColor;
   ({ headerRight, onClose } = subtitleColor);
   const tmp4 = closure_4();
-  const top = subtitleColor(1630)().top;
+  const top = subtitleColor(1631)().top;
   const tmp5 = subtitleColor;
   if (cResult[0] === subtitle) {
     let tmp7;
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
       tmp7 = cResult[2];
     }
     if (cResult[3] !== onClose) {
-      const tmpResult = subtitle(6203);
+      const tmpResult = subtitle(6205);
       const headerCloseButton = tmpResult.getHeaderCloseButton(onClose);
       cResult[3] = onClose;
       cResult[4] = headerCloseButton;
@@ -59,12 +59,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     }
     if (cResult[5] !== top) {
       let num3;
-      const tmpResult3 = subtitle(1381);
+      const tmpResult3 = subtitle(1382);
       if (!tmpResult3.isIOS()) {
         num3 = top;
       } else {
         num3 = 0;
-        subtitle(6618);
+        subtitle(6625);
       }
       cResult[5] = top;
       cResult[6] = num3;
@@ -93,7 +93,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
       }
     }
     ({ headerLeftContainer: obj5.headerLeftContainerStyle, headerRightContainer: obj5.headerRightContainerStyle } = tmp4);
-    const tmp14 = jsx(subtitle(6212).Header, { headerStyle: tmp6, title, headerTitle: tmp7, headerTitleAlign: "center", headerLeft: tmp8, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: sum });
+    const tmp14 = jsx(subtitle(6214).Header, { headerStyle: tmp6, title, headerTitle: tmp7, headerTitleAlign: "center", headerLeft: tmp8, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: sum });
     cResult[7] = headerRight;
     cResult[8] = tmp4.header;
     cResult[9] = tmp4.headerLeftContainer;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
     headerRightContainerStyle: null,
     headerStatusBarHeight: num + nativeDefault.space.PX_8
   };
-  const Header = _mod6212.Header;
+  const Header = _mod6214.Header;
   ({ headerLeftContainer: obj.headerLeftContainerStyle, headerRightContainer: obj.headerRightContainerStyle } = tmp);
   obj2 = NavigatorHeader;
   const obj3 = PlatformUtils;

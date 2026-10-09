@@ -1,23 +1,24 @@
-// Module ID: 7243
-// Function ID: 7244
+// Module ID: 7248
+// Function ID: 7249
 // Name: NewChannelsStore
-// Dependencies: [1243, 502, 2063, 4705, 2124, 2086, 6040, 5971, 1085, 1102, 6068, 584, 6789, 11, 504, 2]
+// Dependencies: [1244, 502, 2064, 4707, 2124, 2086, 6042, 5973, 1085, 1102, 6070, 584, 6796, 11, 504, 5950, 2]
 
-// Module 7243 (NewChannelsStore)
+// Module 7248 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4705 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6068 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6789 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4707 */;
+import NSFWContentGate from "NSFWContentGate" /* 5950 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6070 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6796 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import ReadStateStore from "ReadStateStore" /* 6042 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -147,17 +148,17 @@ function pruneNewChannels() {
   const obj = SnowflakeUtilsDefault;
   const keys = obj.keys(closure_16);
   const item = keys.forEach((item) => {
-    const f139522 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
+    const f139856 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
     let closure_0 = item;
     const items = [...closure_16[item]];
-    closure_16[item] = new Set(items.filter(f139522));
-    new Set(items.filter(f139522));
+    closure_16[item] = new Set(items.filter(f139856));
+    new Set(items.filter(f139856));
   });
 }
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 ({ AnalyticsObjects: closure_12, AnalyticsObjectTypes: map1, GuildFeatures: closure_14 } = Constants);
 let set = new Set();
-const authStore4 = {};
+const authStore5 = {};
 let closure_17 = {};
 let set1 = new Set();
 const Store = get_initializedDefault.Store;
@@ -168,21 +169,36 @@ class NewChannelsStore extends Store {
     this.syncWith(items, pruneNewChannels);
   }
   getNewChannelIds(id) {
-    let tmp5;
-    const tmp = null != id && null == closure_16[id];
-    if (tmp) {
+    let channel;
+    let tmp6;
+    const tmp2 = null != id && null == closure_16[id];
+    if (tmp2) {
       initializeNewChannels(id);
     }
     if (null != id) {
-      let tmp7 = closure_16[id];
-      if (tmp7 == null) {
-        tmp7 = set;
+      let tmp8 = closure_16[id];
+      if (tmp8 == null) {
+        tmp8 = set;
       }
-      tmp5 = tmp7;
+      tmp6 = tmp8;
     } else {
-      tmp5 = set;
+      tmp6 = set;
     }
-    return tmp5;
+    let obj = NSFWContentGate;
+    if (obj.currentUserCanSeeNSFW()) {
+      return tmp6;
+    } else {
+      const items = [];
+      HermesBuiltin.arraySpread(items, tmp6, 0);
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set(items.filter((item) => {
+        const obj = NSFWContentGate;
+        return obj.isNSFWActivityVisible(channel.getChannel(item));
+      }));
+      return set;
+    }
   }
   shouldIndicateNewChannel(guild_id, id) {
     if (null == guild_id) {
@@ -204,10 +220,13 @@ class NewChannelsStore extends Store {
         if (closure_16[guild_id] != null) {
           hasItem = obj.has(id);
         }
-        if (hasItem) {
-          hasItem = null == ReadStateStore.getTrackedAckMessageId(id);
+        let tmp11 = hasItem;
+        if (tmp11) {
+          const obj2 = NSFWContentGate;
+          const result = obj2.isNSFWActivityVisible(ChannelStore.getChannel(id)) && null == ReadStateStore.getTrackedAckMessageId(id);
+          tmp11 = result;
         }
-        tmp3 = hasItem;
+        tmp3 = tmp11;
       }
       return tmp3;
     }
@@ -232,6 +251,9 @@ let obj = {
     }
   },
   CHANNEL_ACK() {
+    return true;
+  },
+  CURRENT_USER_UPDATE() {
     return true;
   },
   CHANNEL_SELECT: function handleChannelSelect(arg0) {
@@ -360,6 +382,6 @@ let obj = {
   }
 };
 const newChannelsStore = new NewChannelsStore(DispatcherDefault, obj);
-const result = size.fileFinishedImporting("modules/recent_channels/NewChannelsStore.tsx");
+let result = size.fileFinishedImporting("modules/recent_channels/NewChannelsStore.tsx");
 
 export default newChannelsStore;

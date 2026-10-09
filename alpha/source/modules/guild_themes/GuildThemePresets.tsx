@@ -1,13 +1,13 @@
-// Module ID: 4933
-// Function ID: 4934
+// Module ID: 4934
+// Function ID: 4935
 // Name: GuildThemePresets
-// Dependencies: [1096, 683, 4934, 2]
+// Dependencies: [1096, 683, 4935, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getGuildThemePresetAppearance, getGuildThemeToneRange, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSaturationPinnedColor, getSingleColorGuildThemeGradientColors, getThemeAdjustedToneColor, getToneAdjustedColor
 
-// Module 4933 (GuildThemePresets)
+// Module 4934 (GuildThemePresets)
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1096 */;
-import CustomThemesRandomUtils from "CustomThemesRandomUtils" /* 4934 */;
+import CustomThemesRandomUtils from "CustomThemesRandomUtils" /* 4935 */;
 import size from "module_2" /* 2 */;
 
 let items1;
@@ -128,7 +128,7 @@ export const getGuildThemePreset = function getGuildThemePreset(presetId) {
   return tmp;
 };
 export const getDefaultGuildThemePresetSettings = function getDefaultGuildThemePresetSettings() {
-  return { presetId: mapped[0].id, customUserThemeSettings: "Array" };
+  return { presetId: mapped[0].id, customUserThemeSettings: "r" };
 };
 export const getGuildThemePresetAppearance = function getGuildThemePresetAppearance(preset, stateFromStores) {
   return stateFromStores === ThemeTypes.LIGHT ? preset.lightAppearance : preset.darkAppearance;

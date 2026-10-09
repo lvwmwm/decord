@@ -1,18 +1,18 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11334
+// Function ID: 11335
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 5090, 587, 558, 576, 8232, 1997, 5054, 6809, 5086, 1126, 11428, 2]
+// Dependencies: [32, 19, 21, 5091, 587, 558, 576, 8240, 1998, 5055, 6816, 5087, 1126, 11335, 2]
 
-// Module 11427 (StringSelectComponentActionSheet)
+// Module 11334 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Server from "Server" /* 1997 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import EmojiDefault from "Emoji" /* 6809 */;
+import Server from "Server" /* 1998 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import EmojiDefault from "Emoji" /* 6816 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSele
   const containerId = selectionActionComponent.containerId;
   let tmp3 = closure_6();
   dependencyMap = tmp3;
-  let obj2 = selectionActionComponent(8232);
+  let obj2 = selectionActionComponent(8240);
   const useState = react.useState;
   set = new Set(obj2.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp5 = first(useState(set), 2);
@@ -519,8 +519,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSele
           cResult[32] = tmp13;
           cResult[33] = tmp24;
           cResult[34] = !tmp17;
-          cResult[35] = jsx(onSubmit(11428), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
-          const tmp28 = jsx(onSubmit(11428), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
+          cResult[35] = jsx(onSubmit(11335), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
+          const tmp28 = jsx(onSubmit(11335), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp13, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp21, channelId, allowEmpty });
         }
       }
     }
@@ -593,7 +593,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSele
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8232);
+  let obj = selectionActionComponent(8240);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -702,7 +702,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StringSele
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(11428);
+  const tmp10 = onSubmit(11335);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

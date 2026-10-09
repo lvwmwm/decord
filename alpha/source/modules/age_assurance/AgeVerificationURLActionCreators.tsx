@@ -1,15 +1,15 @@
-// Module ID: 7505
-// Function ID: 7506
+// Module ID: 7510
+// Function ID: 7511
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 5914, 1085, 5927, 1294, 584, 2]
+// Dependencies: [5, 502, 5915, 1085, 5928, 1295, 584, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7505 (AgeVerificationURLActionCreators)
+// Module 7510 (AgeVerificationURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 5914 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 5927 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 5915 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 5928 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ let obj = function _requestAgeVerification() {
               ({ method: c0, classificationId: c1, vendor: c2 } = closure_0);
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -314,7 +314,7 @@ obj = function _initiateSuspendedUserAgeVerification() {
               token = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -445,7 +445,7 @@ obj = function _requestIncodeSessionBootstrap() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

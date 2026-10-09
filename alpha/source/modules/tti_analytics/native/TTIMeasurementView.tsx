@@ -1,11 +1,11 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11448
+// Function ID: 11449
 // Name: TTIMeasurementView
-// Dependencies: [5366, 11520, 2]
+// Dependencies: [5367, 11449, 2]
 
-// Module 11519 (TTIMeasurementView)
-import TTIMeasurementNativeComponentDefault from "TTIMeasurementNativeComponent" /* 11520 */;
-import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5366 */;
+// Module 11448 (TTIMeasurementView)
+import TTIMeasurementNativeComponentDefault from "TTIMeasurementNativeComponent" /* 11449 */;
+import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5367 */;
 import size from "module_2" /* 2 */;
 
 const obj = { componentName: "DCDTTIMeasurementView", componentFoundInstance: TTIMeasurementNativeComponentDefault };

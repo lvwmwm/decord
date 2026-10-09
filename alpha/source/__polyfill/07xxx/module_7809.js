@@ -1,322 +1,295 @@
 // Module ID: 7809
 // Function ID: 7810
-// Dependencies: [7810, 7803, 7800]
-// Exports: findOffsets
+// Dependencies: [7810]
+// Exports: dataUriToBuffer, decompress, deferInit, getBase64Image, getCharacterArray, getDataView, getNullTerminatedStringFromDataView, getPascalStringFromDataView, getStringFromDataView, getStringValueFromArray, getUnicodeStringFromDataView, objectAssign, padStart, parseFloatRadix, strRepeat
 
 // Module 7809
-import _mod7800 from "module_7800" /* 7800 */;
-import _modDef7803 from "module_7803" /* 7803 */;
-import get64BitValue from "get64BitValue" /* 7810 */;
+import _modDef7810 from "module_7810" /* 7810 */;
 
-function parseBox(getUint32, sum) {
-  let contentOffset;
-  let length;
-  let obj;
-  let obj12;
-  let obj14;
-  let obj20;
-  const uint32 = getUint32.getUint32(sum);
-  if (0 === uint32) {
-    obj = { length: getUint32.byteLength - sum, contentOffset: sum + 4 + 4 };
-    const obj2 = { length: getUint32.byteLength - sum, contentOffset: sum + 4 + 4 };
-  } else {
-    if (1 === uint32) {
-      if (0 === getUint32.getUint32(sum + 8)) {
-        obj = { length: getUint32.getUint32(sum + 12), contentOffset: sum + 4 + 4 + 8 };
-        const obj3 = { length: getUint32.getUint32(sum + 12), contentOffset: sum + 4 + 4 + 8 };
-      }
-    }
-    obj = { length: uint32, contentOffset: sum + 4 + 4 };
-  }
-  ({ length, contentOffset } = obj);
-  if (length >= 8) {
-    const uint321 = getUint32.getUint32(sum + 4);
-    if (1718909296 === uint321) {
-      const obj4 = { type: "ftyp", majorBrand: obj20.getStringFromDataView(getUint32, contentOffset, 4), length };
-      obj20 = _mod7800;
-      return obj4;
-    } else if (1768977008 === uint321) {
-      const diff = length - (contentOffset - sum);
-      const items = [c3, c4];
-      const items1 = [];
-      sum = contentOffset;
-      if (contentOffset < contentOffset + diff) {
-        const arr12 = parseBox(getUint32, sum);
-        while (undefined !== arr12) {
-          let tmp63 = undefined === arr12.type;
-          if (!tmp63) {
-            let tmp64 = undefined !== arr12.itemType && -1 === items.indexOf(arr12.itemType);
-            tmp63 = tmp64;
-          }
-          if (!tmp63) {
-            let arr = items1.push(arr12);
-          }
-          sum = sum + arr12.length;
-          if (sum >= contentOffset + diff) {
-            break;
-          }
-        }
-      }
-      return { type: "iprp", subBoxes: items1, length };
-    } else if (1768973167 === uint321) {
-      const diff1 = length - (contentOffset - sum);
-      const items2 = [c3, c4];
-      const items3 = [];
-      let sum1 = contentOffset;
-      if (contentOffset < contentOffset + diff1) {
-        const arr9 = parseBox(getUint32, sum1);
-        while (undefined !== arr9) {
-          let tmp54 = undefined === arr9.type;
-          if (!tmp54) {
-            let tmp55 = undefined !== arr9.itemType && -1 === items2.indexOf(arr9.itemType);
-            tmp54 = tmp55;
-          }
-          if (!tmp54) {
-            let arr2 = items3.push(arr9);
-          }
-          sum1 = sum1 + arr9.length;
-          if (sum1 >= contentOffset + diff1) {
-            break;
-          }
-        }
-      }
-      return { type: "ipco", properties: items3, length };
-    } else if (1668246642 === uint321) {
-      let tmp47;
-      const obj15 = _mod7800;
-      const stringFromDataView = obj15.getStringFromDataView(getUint32, contentOffset, 4);
-      if ("prof" === stringFromDataView) {
-        tmp47 = { offset: contentOffset + 4, length: getUint32.getUint32(contentOffset + 4), chunkNumber: 1, chunksTotal: 1 };
-      }
-      return { type: "colr", icc: tmp47, length };
-    } else {
-      let parseItemLocationBoxResult;
-      const uint8 = getUint32.getUint8(contentOffset);
-      if (1835365473 === uint321) {
-        let sum2 = contentOffset + 1 + 3;
-        const items4 = [c3, c4];
-        const items5 = [];
-        const sum3 = sum2 + (length - (sum2 - sum));
-        if (sum2 < sum3) {
-          const arr6 = parseBox(getUint32, sum2);
-          while (undefined !== arr6) {
-            let tmp41 = undefined === arr6.type;
-            if (!tmp41) {
-              let tmp42 = undefined !== arr6.itemType && -1 === items4.indexOf(arr6.itemType);
-              tmp41 = tmp42;
-            }
-            if (!tmp41) {
-              let arr4 = items5.push(arr6);
-            }
-            sum2 = sum2 + arr6.length;
-            if (sum2 >= sum3) {
-              break;
-            }
-          }
-        }
-        parseItemLocationBoxResult = { type: "meta", subBoxes: items5, length };
-        const obj11 = { type: "meta", subBoxes: items5, length };
-      } else if (1768714083 === uint321) {
-        const obj13 = get64BitValue;
-        parseItemLocationBoxResult = obj13.parseItemLocationBox(getUint32, uint8, contentOffset + 1, length);
-      } else if (1768517222 === uint321) {
-        obj12 = { entryCount: contentOffset + 1 + 3, itemInfos: obj12.entryCount + obj14.entryCount };
-        let num13 = 4;
-        if (0 === uint8) {
-          num13 = 2;
-        }
-        const itemInfos = obj12.itemInfos;
-        const diff2 = length - (obj12.itemInfos - sum);
-        const items6 = [c3, c4];
-        const items7 = [];
-        let sum4 = itemInfos;
-        obj14 = { entryCount: num13 };
-        if (itemInfos < itemInfos + diff2) {
-          const arr3 = parseBox(getUint32, sum4);
-          while (undefined !== arr3) {
-            let tmp26 = undefined === arr3.type;
-            if (!tmp26) {
-              let tmp27 = undefined !== arr3.itemType && -1 === items6.indexOf(arr3.itemType);
-              tmp26 = tmp27;
-            }
-            if (!tmp26) {
-              let arr5 = items7.push(arr3);
-            }
-            sum4 = sum4 + arr3.length;
-            if (sum4 >= itemInfos + diff2) {
-              break;
-            }
-          }
-        }
-        parseItemLocationBoxResult = { type: "iinf", itemInfos: items7, length };
-        const obj16 = { type: "iinf", itemInfos: items7, length };
-      } else if (1768842853 === uint321) {
-        const obj17 = { type: "infe", length };
-        let tmp3 = 0 !== uint8;
-        const sum5 = contentOffset + 1;
-        if (tmp3) {
-          tmp3 = 1 !== uint8;
-        }
-        const sum6 = sum5 + 3;
-        let sum9 = sum6;
-        if (!tmp3) {
-          obj17.itemId = getUint32.getUint16(sum6);
-          const sum7 = sum6 + 2;
-          obj17.itemProtectionIndex = getUint32.getUint16(sum7);
-          const sum8 = sum7 + 2;
-          const obj6 = _mod7800;
-          obj17.itemName = obj6.getNullTerminatedStringFromDataView(getUint32, sum8);
-          sum9 = sum8 + (obj17.itemName.length + 1);
-        }
-        parseItemLocationBoxResult = obj17;
-        if (uint8 >= 2) {
-          let sum10;
-          if (2 === uint8) {
-            obj17.itemId = getUint32.getUint16(sum9);
-            sum10 = sum9 + 2;
-          } else {
-            sum10 = sum9;
-            if (3 === uint8) {
-              obj17.itemId = getUint32.getUint32(sum9);
-              sum10 = sum9 + 4;
-            }
-          }
-          obj17.itemProtectionIndex = getUint32.getUint16(sum10);
-          const sum11 = sum10 + 2;
-          obj17.itemType = getUint32.getUint32(sum11);
-          const sum12 = sum11 + 4;
-          const obj7 = _mod7800;
-          obj17.itemName = obj7.getNullTerminatedStringFromDataView(getUint32, sum12);
-          const sum13 = sum12 + (obj17.itemName.length + 1);
-          if (obj17.itemType === c4) {
-            const tmp13Result = _mod7800;
-            obj17.contentType = tmp13Result.getNullTerminatedStringFromDataView(getUint32, sum13);
-            const sum14 = sum13 + (obj17.contentType.length + 1);
-            parseItemLocationBoxResult = obj17;
-            if (sum + length > sum14) {
-              const tmp13Result3 = _mod7800;
-              obj17.contentEncoding = tmp13Result3.getNullTerminatedStringFromDataView(getUint32, sum14);
-              const sum15 = obj17.contentEncoding.length + 1;
-              parseItemLocationBoxResult = obj17;
-            }
-          } else {
-            parseItemLocationBoxResult = obj17;
-            if (obj17.itemType === c5) {
-              const tmp13Result4 = _mod7800;
-              obj17.itemUri = tmp13Result4.getNullTerminatedStringFromDataView(getUint32, sum13);
-              const sum16 = obj17.itemUri.length + 1;
-              parseItemLocationBoxResult = obj17;
-            }
-          }
-        }
-      } else {
-        parseItemLocationBoxResult = { type: "Array", length };
-      }
-      return parseItemLocationBoxResult;
-    }
-  }
-}
-function findIlocItem(subBoxes, arg1) {
-  let closure_0 = arg1;
-  subBoxes = subBoxes.subBoxes;
-  const items = subBoxes.find((type) => "iloc" === type.type).items;
-  return items.find((itemId) => itemId.itemId === closure_0);
-}
-let c3 = 1165519206;
-let c4 = 1835625829;
-let c5 = 1970432288;
+const f96964 = (item) => String.fromCharCode(item);
 
-export const ITEM_INFO_TYPE_EXIF = 1165519206;
-export const ITEM_INFO_TYPE_MIME = 1835625829;
-export { parseBox };
-export const findOffsets = function findOffsets(byteLength) {
-  let obj;
-  let obj2;
-  function findExifOffset(byteLength, subBoxes) {
-    function findIinfExifItemId(subBoxes) {
-      subBoxes = subBoxes.subBoxes;
-      const itemInfos = subBoxes.find((type) => "iinf" === type.type).itemInfos;
-      return itemInfos.find((itemType) => itemType.itemType === closure_1_3);
-    }
-    function getTiffHeaderOffset(getUint32, sum) {
-      sum = sum + 4;
-      return sum + getUint32.getUint32(sum);
-    }
-    try {
-      const tmp4 = findIlocItem(subBoxes, findIinfExifItemId(subBoxes).itemId);
-      return getTiffHeaderOffset(byteLength, tmp4.baseOffset + tmp4.extents[0].extentOffset);
-    } catch (err) {
-    }
+export const getDataView = function getDataView(buffer, byteOffset, byteLength) {
+  try {
+    const _DataView = DataView;
+    const self = this;
+    const self2 = this;
+    const dataView = new DataView(buffer, byteOffset, byteLength);
+    return dataView;
+  } catch (err) {
+    const self3 = this;
+    const self4 = this;
+    const tmp12 = new _modDef7810(buffer, byteOffset, byteLength);
+    return tmp12;
   }
-  function findXmpChunks(subBoxes) {
-    function findIinfXmpItemId(subBoxes) {
-      subBoxes = subBoxes.subBoxes;
-      const itemInfos = subBoxes.find((type) => "iinf" === type.type).itemInfos;
-      return itemInfos.find((itemType) => itemType.itemType === closure_1_4 && "application/rdf+xml" === itemType.contentType);
-    }
-    try {
-      const itemId = findIinfXmpItemId(subBoxes).itemId;
-      const tmp3 = findIlocItem(subBoxes, itemId);
-      const first = findIlocItem(subBoxes, itemId).extents[0];
-      const items = [{ dataOffset: tmp3.baseOffset + first.extentOffset, length: first.extentLength }];
-      return items;
-    } catch (err) {
-    }
-  }
-  function findIccChunks(subBoxes) {
-    try {
-      subBoxes = subBoxes.subBoxes;
-      const subBoxes1 = subBoxes.find((type) => "iprp" === type.type).subBoxes;
-      const properties = subBoxes1.find((type) => "ipco" === type.type).properties;
-      const icc = properties.find((type) => "colr" === type.type).icc;
-      if (icc) {
-        const items = [tmp2];
-        return items;
-      }
-    } catch (err) {
-    }
-  }
-  let tmp = importDefault;
-  const tmp2 = dependencyMap;
-  if (!_modDef7803.USE_EXIF) {
-    if (!_modDef7803.USE_XMP) {
-      if (!_modDef7803.USE_ICC) {
-        return {};
-      }
-    }
-  }
-  let num = 0;
-  let tmp3;
-  if (8 <= byteLength.byteLength) {
-    let tmp4 = parseBox;
-    const arr = parseBox(byteLength, num);
-    while (undefined !== arr) {
-      tmp3 = arr;
-      if ("meta" === arr.type) {
-        break;
-      } else {
-        let sum = num + arr.length;
-        num = sum;
-        if (sum + 4 + 4 > byteLength.byteLength) {
+};
+export const getStringFromDataView = function getStringFromDataView(dataView, sum, length) {
+  const items = [];
+  if (0 < length) {
+    let num2 = 0;
+    if (sum < dataView.byteLength) {
+      items.push(dataView.getUint8(sum + num2));
+      sum = num2 + 1;
+      while (sum < length) {
+        num2 = sum;
+        if (sum + sum >= dataView.byteLength) {
           break;
         }
       }
     }
   }
-  if (tmp3) {
-    obj2 = { hasAppMarkers: undefined !== obj2.tiffHeaderOffset || undefined !== obj2.xmpChunks || undefined !== obj2.iccChunks };
-    if (_modDef7803.USE_EXIF) {
-      obj2.tiffHeaderOffset = findExifOffset(byteLength, tmp3);
+  const mapped = items.map(f96964);
+  return mapped.join("");
+};
+export const getNullTerminatedStringFromDataView = function getNullTerminatedStringFromDataView(byteLength, sum13) {
+  const items = [];
+  let num = 0;
+  if (sum13 < byteLength.byteLength) {
+    const uint8 = byteLength.getUint8(sum13 + num);
+    while (0 !== uint8) {
+      let arr = items.push(uint8);
+      let sum = num + 1;
+      num = sum;
+      if (sum13 + sum >= byteLength.byteLength) {
+        break;
+      }
     }
-    if (_modDef7803.USE_XMP) {
-      obj2.xmpChunks = findXmpChunks(tmp3);
-    }
-    if (_modDef7803.USE_ICC) {
-      obj2.iccChunks = findIccChunks(tmp3);
-    }
-    obj = obj2;
-  } else {
-    obj = { hasAppMarkers: false };
   }
-  return obj;
+  const mapped = items.map(f96964);
+  return mapped.join("");
+};
+export const getUnicodeStringFromDataView = function getUnicodeStringFromDataView(byteLength, arg1, uint325) {
+  const items = [];
+  if (0 < uint325) {
+    let num2 = 0;
+    if (arg1 < byteLength.byteLength) {
+      items.push(byteLength.getUint16(arg1 + num2));
+      const sum = num2 + 2;
+      while (sum < uint325) {
+        num2 = sum;
+        if (arg1 + sum >= byteLength.byteLength) {
+          break;
+        }
+      }
+    }
+  }
+  if (0 === items[items.length - 1]) {
+    items.pop();
+  }
+  const mapped = items.map(f96964);
+  return mapped.join("");
+};
+export const getPascalStringFromDataView = function getPascalStringFromDataView(getUint8, sum1) {
+  const uint8 = getUint8.getUint8(sum1);
+  const items = [uint8, ];
+  const sum = sum1 + 1;
+  const items1 = [];
+  if (0 < uint8) {
+    let num = 0;
+    if (sum < getUint8.byteLength) {
+      items1.push(getUint8.getUint8(sum + num));
+      sum1 = num + 1;
+      while (sum1 < uint8) {
+        num = sum1;
+        if (sum + sum1 >= getUint8.byteLength) {
+          break;
+        }
+      }
+    }
+  }
+  const mapped = items1.map(f96964);
+  items[1] = mapped.join("");
+  return items;
+};
+export const getStringValueFromArray = function getStringValueFromArray(value) {
+  const mapped = value.map(f96964);
+  return mapped.join("");
+};
+export const getCharacterArray = function getCharacterArray(str) {
+  const parts = str.split("");
+  return parts.map((item) => item.charCodeAt(0));
+};
+export const objectAssign = function objectAssign() {
+  let num;
+  for (let num = 1; num < arguments.length; num = num + 1) {
+    for (const key10010 in arguments[num]) {
+      arguments[0][key10010] = arguments[num][key10010];
+      continue;
+    }
+  }
+  return arguments[0];
+};
+export const deferInit = function deferInit(items, base64, arg2) {
+  let closure_1 = base64;
+  let closure_2 = arg2;
+  let c3 = false;
+  let obj = {
+    get() {
+      const tmp = c3;
+      if (!tmp) {
+        c3 = true;
+        const _Object = Object;
+        const obj = { configurable: true, enumerable: true, value: closure_2.apply(items), writable: true };
+        defineProperty(items, base64, obj);
+      }
+      return items[base64];
+    },
+    configurable: true,
+    enumerable: true
+  };
+  Object.defineProperty(items, base64, obj);
+};
+export const getBase64Image = function getBase64Image(image) {
+  let tmp4;
+  if (typeof btoa !== "undefined") {
+    let btoaResult;
+    if (typeof image === "string") {
+      const _btoa = btoa;
+      btoaResult = btoa(image);
+    } else {
+      const _Array = Array;
+      const _Uint8Array = Uint8Array;
+      const self3 = this;
+      const self4 = this;
+      const _btoa2 = btoa;
+      const call = reduce.call;
+      const uint8Array = new Uint8Array(image);
+      btoaResult = _btoa2(call(uint8Array, (arg0, arg1) => arg0 + String.fromCharCode(arg1), ""));
+    }
+    tmp4 = btoaResult;
+  } else {
+    const _Buffer3 = Buffer;
+    if (typeof Buffer !== "undefined") {
+      let str1;
+      const _Buffer4 = Buffer;
+      if (undefined !== Buffer.from) {
+        const _Buffer2 = Buffer;
+        const str3 = Buffer.from(image);
+        str1 = str3.toString("base64");
+      } else {
+        const _Buffer = Buffer;
+        const self = this;
+        const self2 = this;
+        const str = new Buffer(image);
+        str1 = str.toString("base64");
+      }
+      tmp4 = str1;
+    }
+  }
+  return tmp4;
+};
+export const dataUriToBuffer = function dataUriToBuffer(result) {
+  const substr = result.substring(result.indexOf(",") + 1);
+  if (-1 !== result.indexOf(";base64")) {
+    const _atob = atob;
+    if (typeof atob !== "undefined") {
+      const _Uint8Array = Uint8Array;
+      const _atob2 = atob;
+      return Uint8Array.from(atob(substr), (str) => str.charCodeAt(0)).buffer;
+    } else {
+      const _Buffer7 = Buffer;
+      if (typeof Buffer !== "undefined") {
+        let fromResult;
+        const _Buffer8 = Buffer;
+        if (undefined !== Buffer.from) {
+          const _Buffer5 = Buffer;
+          fromResult = Buffer.from(substr, "base64");
+        } else {
+          const _Buffer4 = Buffer;
+          const self3 = this;
+          const self4 = this;
+          fromResult = new Buffer(substr, "base64");
+        }
+        return fromResult;
+      }
+    }
+  } else {
+    let buffer;
+    const _decodeURIComponent = decodeURIComponent;
+    const decodeURIComponentResult = decodeURIComponent(substr);
+    const _Buffer6 = Buffer;
+    if (typeof Buffer !== "undefined") {
+      let fromResult1;
+      const _Buffer = Buffer;
+      if (undefined !== Buffer.from) {
+        const _Buffer3 = Buffer;
+        fromResult1 = Buffer.from(decodeURIComponentResult);
+      } else {
+        const _Buffer2 = Buffer;
+        const self = this;
+        const self2 = this;
+        fromResult1 = new Buffer(decodeURIComponentResult);
+      }
+      buffer = fromResult1;
+    } else {
+      const _Uint8Array2 = Uint8Array;
+      buffer = Uint8Array.from(decodeURIComponentResult, (str) => str.charCodeAt(0)).buffer;
+    }
+    return buffer;
+  }
+};
+export const padStart = function padStart(arg0, arg1, arg2) {
+  const array = new Array(arg1 - arg0.length + 1);
+  return array.join(arg2) + arg0;
+};
+export const parseFloatRadix = function parseFloatRadix(str, sum) {
+  const parsed = parseInt(str.replace(".", ""), sum);
+  const _Math = Math;
+  const arr = str.split(".")[1] || "";
+  return parsed / pow(sum, arr.length);
+};
+export const strRepeat = function strRepeat(_1, arg1) {
+  const array = new Array(arg1 + 1);
+  return array.join(_1);
+};
+export const COMPRESSION_METHOD_DEFLATE = 0;
+export const decompress = function decompress(dataView, compressionMethod, arg2, dataview) {
+  let closure_0 = arg2;
+  let str = dataview;
+  if (dataview === undefined) {
+    str = "string";
+  }
+  if (0 === compressionMethod) {
+    if (typeof globalThis.DecompressionStream === "function") {
+      let nextPromise;
+      const DecompressionStream2 = globalThis.DecompressionStream;
+      const self = this;
+      const self2 = this;
+      const decompressionStream = new globalThis.DecompressionStream("deflate");
+      const _Blob = Blob;
+      const items = [dataView];
+      const self3 = this;
+      const self4 = this;
+      const blob = new Blob(items);
+      const streamResult = blob.stream();
+      const pipeThroughResult = streamResult.pipeThrough(decompressionStream);
+      if ("dataview" === str) {
+        const _Response2 = Response;
+        const self7 = this;
+        const self8 = this;
+        const response = new Response(pipeThroughResult);
+        const arrayBufferResult = response.arrayBuffer();
+        nextPromise = arrayBufferResult.then((result) => {
+          const dataView = new DataView(result);
+          return dataView;
+        });
+      } else {
+        const _Response = Response;
+        const self5 = this;
+        const self6 = this;
+        const response1 = new Response(pipeThroughResult);
+        const arrayBufferResult2 = response1.arrayBuffer();
+        nextPromise = arrayBufferResult2.then((result) => {
+          const decoder = new TextDecoder(closure_0);
+          return decoder.decode(result);
+        });
+      }
+      return nextPromise;
+    }
+  }
+  let rejectResult = dataView;
+  if (undefined !== compressionMethod) {
+    const _HermesInternal = HermesInternal;
+    rejectResult = Promise.reject("Unknown compression method " + compressionMethod + ".");
+  }
+  return rejectResult;
 };

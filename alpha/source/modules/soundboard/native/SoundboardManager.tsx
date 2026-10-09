@@ -1,18 +1,18 @@
-// Module ID: 14624
-// Function ID: 14625
+// Module ID: 14729
+// Function ID: 14730
 // Name: SoundboardManager
-// Dependencies: [5, 2011, 2115, 5424, 3, 14625, 14626, 14627, 10770, 7038, 2]
+// Dependencies: [5, 2012, 2115, 5425, 3, 14730, 14731, 14732, 10940, 7041, 2]
 
-// Module 14624 (SoundboardManager)
+// Module 14729 (SoundboardManager)
 import LoggerDefault from "Logger" /* 3 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7038 */;
-import SoundUtils from "SoundUtils" /* 10770 */;
-import getVolumeForSoundDefault from "getVolumeForSound" /* 14626 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7041 */;
+import SoundUtils from "SoundUtils" /* 10940 */;
+import getVolumeForSoundDefault from "getVolumeForSound" /* 14731 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SoundboardStore from "SoundboardStore" /* 5424 */;
-import BaseSoundboardManager from "BaseSoundboardManager" /* 14625 */;
+import SoundboardStore from "SoundboardStore" /* 5425 */;
+import BaseSoundboardManager from "BaseSoundboardManager" /* 14730 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
@@ -46,7 +46,7 @@ class SoundboardManager extends BaseSoundboardManager {
             if (null != value) {
               value.stop();
             }
-            const tmp14 = tmp6(14627)(soundId);
+            const tmp14 = tmp6(14732)(soundId);
             const obj2 = SoundUtils;
             const sound = obj2.createSound(tmp14, "soundboard_sound", tmp8);
             sound.volume = tmp8;
@@ -95,7 +95,7 @@ class SoundboardManager extends BaseSoundboardManager {
       await "IconComponent";
       closure_2 = tmp;
       ({ sound: c0, soundKey: c1, soundId: c2, userId: c3 } = closure_0);
-      return "Reflect";
+      return "Set";
     });
     applyArgumentsResult._playSoundWithListener = function() {
       return closure_0(...arguments);

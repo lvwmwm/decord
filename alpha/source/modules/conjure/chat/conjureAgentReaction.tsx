@@ -1,12 +1,12 @@
-// Module ID: 17002
-// Function ID: 17003
+// Module ID: 17158
+// Function ID: 17159
 // Name: conjureAgentReaction
-// Dependencies: [4721, 1126, 3827, 2]
+// Dependencies: [4723, 1126, 3827, 2]
 // Exports: getConjureAgentReactionLabel
 
-// Module 17002 (conjureAgentReaction)
+// Module 17158 (conjureAgentReaction)
 import intl2 from "intl" /* 1126 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4721 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4723 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/chat/conjureAgentReaction.tsx");

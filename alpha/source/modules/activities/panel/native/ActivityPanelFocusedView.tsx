@@ -1,31 +1,31 @@
-// Module ID: 17486
-// Function ID: 17487
+// Module ID: 17638
+// Function ID: 17639
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 5079, 2063, 2062, 2023, 6072, 17481, 1085, 11989, 21, 5090, 587, 558, 576, 1630, 504, 1496, 17476, 16881, 4810, 4787, 5091, 5374, 5357, 4696, 17478, 17487, 10635, 10735, 2]
+// Dependencies: [19, 17, 5080, 2064, 2063, 2024, 6074, 17633, 1085, 11926, 21, 5091, 587, 558, 576, 1631, 504, 1497, 17628, 17009, 4811, 4788, 5092, 5375, 5358, 4698, 17630, 17639, 10778, 10884, 2]
 
-// Module 17486 (ActivityPanelFocusedView)
+// Module 17638 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Constants2 from "Constants" /* 2023 */;
-import native from "native" /* 4787 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import spring from "spring" /* 5374 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 10735 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11989 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17478 */;
-import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17487 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Constants2 from "Constants" /* 2024 */;
+import native from "native" /* 4788 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import spring from "spring" /* 5375 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 10884 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11926 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17630 */;
+import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17639 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5079 */;
-import ChannelStore_mod from "ChannelStore" /* 2063 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17481 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5080 */;
+import ChannelStore_mod from "ChannelStore" /* 2064 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6074 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17633 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseActiv
   context = context.context;
   const tmp2 = useSafeAreaInsetsDefault();
   const wrapperDimensions = react.useContext(context).wrapperDimensions;
-  const tmp5 = wrapperDimensions.isLandscape && !wrapperDimensions.isWindowLandscape ? closure_12 : unpackModuleId;
+  const tmp5 = wrapperDimensions.isLandscape && !wrapperDimensions.isWindowLandscape ? authStore2 : unpackModuleId;
   if (cResult[0] === tmp2.right) {
     let tmp6;
     if (cResult[1] === (!wrapperDimensions.isLandscape && wrapperDimensions.isWindowLandscape)) {
@@ -654,8 +654,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   ({ portraitSafeAreasConfig, landscapeSafeAreasConfig } = closure_20(tmp10));
   closure_20(tmp10);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    cResult[4] = authStore4(ActivityPanelHeaderDefault, {});
-    const tmp16 = authStore4(ActivityPanelHeaderDefault, {});
+    cResult[4] = authStore5(ActivityPanelHeaderDefault, {});
+    const tmp16 = authStore5(ActivityPanelHeaderDefault, {});
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
@@ -685,8 +685,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   cResult[6] = channel;
   cResult[7] = landscapeSafeAreasConfig;
   cResult[8] = portraitSafeAreasConfig;
-  cResult[9] = authStore4(EmbeddedActivityViewDefault, obj3);
-  authStore4(EmbeddedActivityViewDefault, obj3);
+  cResult[9] = authStore5(EmbeddedActivityViewDefault, obj3);
+  authStore5(EmbeddedActivityViewDefault, obj3);
 }) : (function ActivityPanelFocusedView(transitionState) {
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
@@ -716,9 +716,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const items1 = [transitionState, transitionCleanUp, updateActivityPanelModeToPIP, hasActivity, memo, channel, portraitSafeAreasConfig, landscapeSafeAreasConfig];
   return hasActivity.useMemo(() => {
     let obj2;
-    const obj = { transitionState, transitionCleanUp, updateActivityPanelModeToPIP, hasActivity, context: ActivityPanelStateContextDefault, header: memo, children: authStore4(EmbeddedActivityViewDefault, obj2) };
+    const obj = { transitionState, transitionCleanUp, updateActivityPanelModeToPIP, hasActivity, context: ActivityPanelStateContextDefault, header: memo, children: authStore5(EmbeddedActivityViewDefault, obj2) };
     obj2 = { channel, layoutMode: ActivityLayoutMode.FOCUSED, portraitSafeAreasConfig, landscapeSafeAreasConfig };
-    return authStore4(closure_29, obj);
+    return authStore5(closure_29, obj);
   }, items1);
 }));
 let size = size_mod;

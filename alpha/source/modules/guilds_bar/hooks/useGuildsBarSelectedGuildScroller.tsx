@@ -1,11 +1,11 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 16723
+// Function ID: 16724
 // Name: useGuildsBarSelectedGuildScroller
-// Dependencies: [19, 4899, 558, 576, 2]
+// Dependencies: [19, 4900, 558, 576, 2]
 
-// Module 16600 (useGuildsBarSelectedGuildScroller)
+// Module 16723 (useGuildsBarSelectedGuildScroller)
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

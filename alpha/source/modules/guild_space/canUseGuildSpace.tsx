@@ -1,13 +1,13 @@
-// Module ID: 6915
-// Function ID: 6916
+// Module ID: 6922
+// Function ID: 6923
 // Name: canUseGuildSpace
-// Dependencies: [2086, 4707, 1085, 558, 576, 504, 6916, 2]
+// Dependencies: [2086, 4709, 1085, 558, 576, 504, 6923, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin
 
-// Module 6915 (canUseGuildSpace)
+// Module 6922 (canUseGuildSpace)
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

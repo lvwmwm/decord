@@ -1,28 +1,28 @@
-// Module ID: 16753
-// Function ID: 16754
+// Module ID: 16879
+// Function ID: 16880
 // Name: ICYMICustomStatusRow
-// Dependencies: [32, 19, 17, 1389, 8429, 21, 587, 5090, 16694, 558, 576, 1200, 11701, 5086, 1126, 9241, 4927, 504, 5624, 8825, 10224, 10242, 1381, 6189, 5047, 9675, 12815, 8930, 11, 1102, 4922, 6064, 16754, 8986, 16750, 2]
+// Dependencies: [32, 19, 17, 1390, 8437, 21, 587, 5091, 16820, 558, 576, 1200, 11637, 5087, 1126, 9279, 4928, 504, 5625, 8834, 10209, 10227, 1382, 6191, 5048, 9694, 12784, 8941, 11, 1102, 4923, 6066, 16880, 8997, 16876, 2]
 
-// Module 16753 (ICYMICustomStatusRow)
+// Module 16879 (ICYMICustomStatusRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import TrashIcon from "TrashIcon" /* 5047 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Pressables from "Pressables" /* 6189 */;
-import ReactionIcon from "ReactionIcon" /* 8930 */;
-import PencilIcon from "PencilIcon" /* 9675 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11701 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12815 */;
+import TrashIcon from "TrashIcon" /* 5048 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Pressables from "Pressables" /* 6191 */;
+import ReactionIcon from "ReactionIcon" /* 8941 */;
+import PencilIcon from "PencilIcon" /* 9694 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11637 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12784 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import ICYMIStore from "ICYMIStore" /* 8429 */;
+import UserStore from "UserStore" /* 1390 */;
+import ICYMIStore from "ICYMIStore" /* 8437 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
-import createICYMIStyles from "createICYMIStyles" /* 16694 */;
+import createStyles from "createStyles" /* 5091 */;
+import createICYMIStyles from "createICYMIStyles" /* 16820 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Upload
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/normal", color: "text-strong", children: intl.string(intl4.t["3UB9ad"]) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
     const tmp11 = metroImportAll(Text, obj3);
     cResult[1] = tmp11;
@@ -127,7 +127,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GravityCus
   const userId = id.userId;
   ({ customStatusExtra, renderForScreenshot, variant } = id);
   closure_14(renderForScreenshot);
-  const obj2 = id(9241);
+  const obj2 = id(9279);
   const gradientBottom = obj2.useGradientBottom();
   let backgroundColor;
   const tmp6 = closure_13;
@@ -139,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GravityCus
   }
   const tmp6Result = tmp6(backgroundColor);
   if (cResult[0] !== tmp6Result.background.backgroundColor) {
-    const tmpResult = id(4927);
+    const tmpResult = id(4928);
     cResult[0] = tmp6Result.background.backgroundColor;
     cResult[1] = tmpResult.hexWithOpacity(tmp6Result.background.backgroundColor, 0.6);
     const hexWithOpacityResult = tmpResult.hexWithOpacity(tmp6Result.background.backgroundColor, 0.6);

@@ -1,14 +1,14 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15130
+// Function ID: 15131
 // Name: FamilyCenterScheduleDowntimeSetting
-// Dependencies: [7966, 1085, 11262, 1126, 2565, 15019, 2]
+// Dependencies: [7974, 1085, 10629, 1126, 2565, 15131, 2]
 
-// Module 15018 (FamilyCenterScheduleDowntimeSetting)
+// Module 15130 (FamilyCenterScheduleDowntimeSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2565 from "module_2565" /* 2565 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

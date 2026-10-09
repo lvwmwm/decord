@@ -1,56 +1,54 @@
-// Module ID: 9597
-// Function ID: 9598
+// Module ID: 9616
+// Function ID: 9617
 // Name: ExecutedApplicationCommandPopout
-// Dependencies: [19, 17, 5079, 2063, 2118, 2086, 5428, 4717, 1389, 9186, 5399, 1085, 1501, 5400, 21, 5090, 587, 1997, 1200, 5054, 8279, 4922, 5086, 5417, 1126, 558, 576, 6841, 504, 5624, 8825, 7952, 6164, 1417, 6186, 1381, 9598, 4765, 6184, 1628, 7235, 5373, 6267, 6865, 8230, 6829, 2]
+// Dependencies: [19, 17, 5080, 2064, 2118, 2086, 5429, 4719, 1390, 9220, 5400, 1085, 1502, 5401, 21, 5091, 587, 1998, 1200, 5055, 8287, 4923, 5087, 5418, 1126, 558, 576, 6848, 504, 5625, 8834, 7961, 6163, 1418, 6188, 9617, 4767, 6186, 1629, 7240, 5374, 6269, 6872, 8238, 6836, 2]
 
-// Module 9597 (ExecutedApplicationCommandPopout)
+// Module 9616 (ExecutedApplicationCommandPopout)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import Server from "Server" /* 1997 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5399 */;
-import useChannelName from "useChannelName" /* 5417 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7235 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8230 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
-import react_nativeDefault from "react-native" /* 9598 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import Server from "Server" /* 1998 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5400 */;
+import useChannelName from "useChannelName" /* 5418 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7240 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8238 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8287 */;
+import react_nativeDefault from "react-native" /* 9617 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9186 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9220 */;
 import Constants from "Constants" /* 1085 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5400 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5401 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, closure_12;
+let BottomSheet;
 
+let closure_16;
 let closure_17;
-let closure_18;
+let closure_19;
 let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
 let closure_24;
-let closure_25;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
@@ -85,8 +83,8 @@ function getCommandOptionComponents(option) {
     const _HermesInternal = HermesInternal;
     combined = " " + name_localized;
   }
-  if (iter.type !== iter(1997).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (iter.type !== iter(1997).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (iter.type !== iter(1998).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (iter.type !== iter(1998).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       if (null != iter.value) {
         let userComponent;
         function getUserComponent(user, styles) {
@@ -107,45 +105,45 @@ function getCommandOptionComponents(option) {
             },
             children: items
           };
-          items = [closure_1_22, ];
+          items = [closure_1_21, ];
           const LegacyText = iter(dependencyMap[18]).LegacyText;
           let obj2 = channel(dependencyMap[21]);
           items[1] = obj2.getUserTag(user, { decoration: "never" });
-          return closure_1_24(LegacyText, obj, "optionValue-" + user.name);
+          return closure_1_23(LegacyText, obj, "optionValue-" + user.name);
         }
         function getCommandValueText(intl) {
           const obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl };
-          return version(Text_Text.Text, obj, "optionValue-" + iter.name);
+          return authStore7(Text_Text.Text, obj, "optionValue-" + iter.name);
         }
         const type = iter.type;
-        if (iter(1997).ApplicationCommandOptionType.USER === type) {
+        if (iter(1998).ApplicationCommandOptionType.USER === type) {
           const str5 = iter.value;
           const user = UserStore.getUser(str5.toString());
           userComponent = null;
           if (null != user) {
             userComponent = getUserComponent(user, styles);
           }
-        } else if (iter(1997).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (iter(1998).ApplicationCommandOptionType.CHANNEL === type) {
           const str3 = iter.value;
           const channel1 = ChannelStore.getChannel(str3.toString());
           userComponent = null;
           if (null != channel1) {
             let obj = { style: styles.commandOptionMentionText, children: items1 };
-            items1 = [closure_20, ];
+            items1 = [closure_19, ];
             let LegacyText = tmp6(1200).LegacyText;
-            const tmp6Result = iter(5417);
+            const tmp6Result = iter(5418);
             items1[1] = tmp6Result.computeChannelName(channel1, UserStore, RelationshipStore);
             const _HermesInternal3 = HermesInternal;
-            userComponent = closure_24(LegacyText, obj, "optionValue-" + iter.name);
+            userComponent = closure_23(LegacyText, obj, "optionValue-" + iter.name);
           }
         } else {
           function getRoleComponent(role) {
             let items;
             const obj = { style: styles.commandOptionMentionText, children: items };
-            items = [authStore6, role.name];
-            return closure_24(native.LegacyText, obj, "optionValue-" + iter.name);
+            items = [closure_21, role.name];
+            return closure_23(native.LegacyText, obj, "optionValue-" + iter.name);
           }
-          if (iter(1997).ApplicationCommandOptionType.ROLE === type) {
+          if (iter(1998).ApplicationCommandOptionType.ROLE === type) {
             const value = iter.value;
             let role;
             if (null != guild) {
@@ -155,7 +153,7 @@ function getCommandOptionComponents(option) {
             if (null != role) {
               userComponent = getRoleComponent(role);
             }
-          } else if (iter(1997).ApplicationCommandOptionType.MENTIONABLE === type) {
+          } else if (iter(1998).ApplicationCommandOptionType.MENTIONABLE === type) {
             const str2 = iter.value;
             const str1 = str2.toString();
             let role1;
@@ -173,7 +171,7 @@ function getCommandOptionComponents(option) {
             }
           } else {
             userComponent = null;
-            if (iter(1997).ApplicationCommandOptionType.ATTACHMENT === type) {
+            if (iter(1998).ApplicationCommandOptionType.ATTACHMENT === type) {
               const intl = tmp6(1126).intl;
               userComponent = getCommandValueText(intl.string(tmp6(1126).t.nONJVc));
             }
@@ -204,8 +202,8 @@ function getCommandOptionComponents(option) {
         const push = items.push;
         const Fragment = react.Fragment;
         const LegacyText2 = tmp6(1200).LegacyText;
-        const tmp30 = closure_24;
-        const tmp32 = closure_23;
+        const tmp30 = closure_23;
+        const tmp32 = closure_22;
         if (str6) {
           str6 = " ";
         }
@@ -220,8 +218,8 @@ function getCommandOptionComponents(option) {
   }
   const push2 = items.push;
   const Fragment2 = react.Fragment;
-  const obj4 = { children: closure_23(iter(1200).LegacyText, { children: combined }, "optionKey-" + iter.name) };
-  push2(closure_23(Fragment2, obj4, text));
+  const obj4 = { children: closure_22(iter(1200).LegacyText, { children: combined }, "optionKey-" + iter.name) };
+  push2(closure_22(Fragment2, obj4, text));
   if (null != iter.options) {
     let options1;
     const _Object = Object;
@@ -275,7 +273,7 @@ function getCommandCopyText(item10021, channel, guild, name_localized) {
           sum = null;
           if (null != user) {
             const obj3 = UserUtilsDefault;
-            sum = authStore6 + obj3.getUserTag(user, { decoration: "never" });
+            sum = closure_21 + obj3.getUserTag(user, { decoration: "never" });
           }
         } else if (Server.ApplicationCommandOptionType.CHANNEL === type) {
           const str4 = item10021.value;
@@ -283,7 +281,7 @@ function getCommandCopyText(item10021, channel, guild, name_localized) {
           sum = null;
           if (null != channel) {
             const tmp5Result = useChannelName;
-            sum = closure_20 + tmp5Result.computeChannelName(channel, UserStore, RelationshipStore);
+            sum = closure_19 + tmp5Result.computeChannelName(channel, UserStore, RelationshipStore);
           }
         } else if (Server.ApplicationCommandOptionType.ROLE === type) {
           const value = item10021.value;
@@ -293,7 +291,7 @@ function getCommandCopyText(item10021, channel, guild, name_localized) {
           }
           sum = null;
           if (null != role) {
-            sum = authStore6 + role.name;
+            sum = closure_21 + role.name;
           }
         } else {
           sum = null;
@@ -305,13 +303,13 @@ function getCommandCopyText(item10021, channel, guild, name_localized) {
               role1 = GuildRoleStore.getRole(guild.id, str1);
             }
             if (null != role1) {
-              sum = authStore6 + role1.name;
+              sum = closure_21 + role1.name;
             } else {
               const user1 = UserStore.getUser(str1);
               sum = null;
               if (null != user1) {
                 const obj = UserUtilsDefault;
-                sum = authStore6 + obj.getUserTag(user1, { decoration: "never" });
+                sum = closure_21 + obj.getUserTag(user1, { decoration: "never" });
               }
             }
           }
@@ -360,13 +358,13 @@ function getCommandCopyText(item10021, channel, guild, name_localized) {
   }
   return items;
 }
-({ ActivityIndicator: hasOwnProperty, NativeModules: metroRequire, View: metroImportDefault } = react_native);
+({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 const SUB_COMMAND_KEY_SEPARATOR = ApplicationCommandConstants.SUB_COMMAND_KEY_SEPARATOR;
-({ MessageTypes: closure_17, WHITESPACE_RE: closure_18 } = Constants);
+({ MessageTypes: closure_16, WHITESPACE_RE: closure_17 } = Constants);
 const AppLauncherRouteName = AppLauncherNativeConstants.AppLauncherRouteName;
-({ CHANNEL_SENTINEL: closure_20, COMMAND_SENTINEL: closure_21, MENTION_SENTINEL: closure_22 } = ChannelAutocompleteConstants);
+({ CHANNEL_SENTINEL: closure_19, COMMAND_SENTINEL: closure_20, MENTION_SENTINEL: closure_21 } = ChannelAutocompleteConstants);
 let Fragment = Fragment_mod;
-({ jsx: closure_23, jsxs: closure_24, Fragment: closure_25 } = Fragment);
+({ jsx: closure_22, jsxs: closure_23, Fragment: closure_24 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { paddingVertical: 8, paddingHorizontal: 16, gap: 16 }, activityIndicator: { padding: 16 }, application: obj2, applicationIcon: size, commandName: { flexDirection: "row", flexWrap: "wrap", alignItems: "center" }, commandOptionText: { marginTop: 12 }, commandOptionMentionText: obj3, commandText: obj4 };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
@@ -374,15 +372,14 @@ createStyles = createStyles.createStyles;
 size = { width: 18, height: 18, borderRadius: nativeDefault.radii.round };
 obj3 = { color: nativeDefault.colors.BACKGROUND_BRAND };
 obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-let closure_26 = createStyles(obj);
+let closure_25 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandContentContainer(channelId) {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandContentContainer(channelId) {
   let channel;
   let data;
   let first;
   let guild;
   let guildId;
-  let isRoleStyleAndRoleColorsEligibleForERC;
   let items3;
   let messageId;
   let processColorStringsArray;
@@ -399,19 +396,19 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
   ({ data, guildId } = channelId);
   const messageType = channelId.messageType;
   ({ messageId, user } = channelId);
-  const tmp4 = closure_26();
+  const tmp4 = closure_25();
   let closure_5 = tmp4;
   const tmp5 = author;
   const analyticsLocations = author(guildId[27])().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [isRoleStyleAndRoleColorsEligibleForERC, GuildStore];
+    let items = [processColorStringsArray, GuildStore];
     cResult[0] = items;
     first = items;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    const fn = function i() {
+    const fn = function p() {
       let getGuild;
       let guild_id;
       const channel = ChannelStore.getChannel(channelId);
@@ -474,9 +471,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
     const displayNameStylesFont = tmpResult5.useDisplayNameStylesFont(tmp15);
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const items2 = [processColorStringsArray];
-      const fn2 = function j() {
-        return processColorStringsArray.roleStyle;
+      const items2 = [displayNameStylesFont];
+      const fn2 = function k() {
+        return displayNameStylesFont.roleStyle;
       };
       cResult[9] = items2;
       cResult[10] = fn2;
@@ -491,7 +488,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
     const tmpResult7 = tmp(tmp2[31]);
     processColorStringsArray = tmpResult7.useProcessColorStringsArray(author.colorStrings);
     const tmpResult8 = tmp(tmp2[31]);
-    isRoleStyleAndRoleColorsEligibleForERC = tmpResult8.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, user.id, stateFromStores, processColorStringsArray);
+    const isRoleStyleAndRoleColorsEligibleForERC = tmpResult8.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, user.id, stateFromStores, processColorStringsArray);
     if (cResult[11] === analyticsLocations) {
       if (cResult[12] === applicationUser) {
         if (cResult[13] === author.colorString) {
@@ -544,7 +541,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
                                             }
                                             let obj3 = { children: items3 };
                                             items3 = [tmp60, tmp64];
-                                            const tmp69 = closure_24(tmp27, obj3);
+                                            const tmp69 = closure_23(tmp27, obj3);
                                             cResult[57] = tmp27;
                                             cResult[58] = tmp60;
                                             cResult[59] = tmp64;
@@ -553,7 +550,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
                                           }
                                         }
                                         let obj4 = { style: tmp4.commandOptionText, variant: "text-md/medium", color: "text-default", children: tmp28 };
-                                        const tmp66 = closure_23(tmp33(tmp32[22]).Text, obj4, combined);
+                                        const tmp66 = closure_22(tmp33(tmp32[22]).Text, obj4, combined);
                                         cResult[53] = tmp28;
                                         cResult[54] = tmp4.commandOptionText;
                                         cResult[55] = combined;
@@ -564,7 +561,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
                                   }
                                 }
                                 const obj5 = { style: tmp31, accessible: flag, children: tmp29 };
-                                const tmp62 = closure_23(tmp26, obj5, tmp30);
+                                const tmp62 = closure_22(tmp26, obj5, tmp30);
                                 cResult[47] = tmp26;
                                 cResult[48] = flag;
                                 cResult[49] = tmp29;
@@ -594,7 +591,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
           let tmp3;
           let tmp2;
           const Text = Text_Text.Text;
-          const tmp = version;
+          const tmp = authStore7;
           if (isRoleStyleAndRoleColorsEligibleForERC) {
             tmp2 = processColorStringsArray;
           }
@@ -616,10 +613,10 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       commandHook() {
           let children;
           const Text = Text_Text.Text;
-          const tmp = version;
+          const tmp = authStore7;
           if (messageType === constants.CHAT_INPUT_COMMAND) {
             const _HermesInternal = HermesInternal;
-            children = "" + closure_21 + name_localized;
+            children = "" + closure_20 + name_localized;
           } else {
             children = name_localized;
           }
@@ -632,10 +629,10 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
           const obj2 = { style: closure_5.applicationIcon, source: obj3.ensureAvatarSource(applicationUser.getAvatarSource(guildId)) };
           const tmp = FastImageDefault;
           obj3 = utils_AvatarUtils;
-          items = [version(tmp, obj2, "icon-" + applicationUser.id), ];
+          items = [authStore7(tmp, obj2, "icon-" + applicationUser.id), ];
           const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: applicationUser.username };
-          items[1] = version(Text_Text.Text, obj4);
-          return closure_24(metroImportDefault, obj, "application");
+          items[1] = authStore7(Text_Text.Text, obj4);
+          return closure_23(metroRequire, obj, "application");
         }
     };
     const formatResult = intl.format(tmp(tmp2[24]).t["sj/RT9"], obj6);
@@ -676,7 +673,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
                         let tmp = children;
                         if (typeof children === "string") {
                           const obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children };
-                          tmp = closure_1_23(channelId(guildId[22]).Text, obj, arg1);
+                          tmp = closure_1_22(channelId(guildId[22]).Text, obj, arg1);
                         }
                         return tmp;
                       }
@@ -702,7 +699,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
                     cResult[23] = messageType;
                     cResult[24] = isRoleStyleAndRoleColorsEligibleForERC;
                     cResult[25] = tmp4;
-                    cResult[26] = displayNameStylesFont;
+                    cResult[26] = name_localized;
                     cResult[27] = Card;
                     cResult[28] = combined3;
                     cResult[29] = true;
@@ -775,7 +772,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       cResult[44] = combined3;
     }
     const obj8 = { children: text };
-    const tmp39 = closure_23(tmp(tmp2[18]).LegacyText, obj8, combined1);
+    const tmp39 = closure_22(tmp(tmp2[18]).LegacyText, obj8, combined1);
     cResult[33] = combined1;
     cResult[34] = text;
     cResult[35] = tmp39;
@@ -799,18 +796,17 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
   const guildId = channelId.guildId;
   ({ messageType: closure_5, messageId } = channelId);
   const user = channelId.user;
-  let channel;
-  let name_localized;
-  closure_12 = undefined;
+  let guild;
+  let closure_12;
   let processColorStringsArray;
   let closure_14;
-  let tmp = closure_26();
+  let tmp = closure_25();
   const styles = tmp;
   let tmp3 = data;
   let tmp2 = author;
   const analyticsLocations = author(data[27])().analyticsLocations;
   let obj = channelId(data[28]);
-  let items = [channel, name_localized];
+  let items = [analyticsLocations, guild];
   const items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let getGuild;
@@ -824,10 +820,10 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
     }
     return obj;
   }, items1);
-  channel = stateFromStoresObject.channel;
-  const guild = stateFromStoresObject.guild;
+  let channel = stateFromStoresObject.channel;
+  guild = stateFromStoresObject.guild;
   let application_command = data.application_command;
-  name_localized = undefined;
+  let name_localized;
   if (application_command != null) {
     name_localized = application_command.name_localized;
   }
@@ -838,9 +834,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
   let tmp7 = tmp2(tmp3[29])(obj2);
   const tmp4Result = channelId(tmp3[30]);
   closure_12 = tmp4Result.useDisplayNameStylesFont({ displayNameStyles: tmp7 });
-  const items2 = [analyticsLocations];
+  const items2 = [styles];
   const tmp4Result4 = channelId(tmp3[28]);
-  const stateFromStores = tmp4Result4.useStateFromStores(items2, () => analyticsLocations.roleStyle);
+  const stateFromStores = tmp4Result4.useStateFromStores(items2, () => styles.roleStyle);
   const tmp4Result5 = channelId(tmp3[31]);
   processColorStringsArray = tmp4Result5.useProcessColorStringsArray(author.colorStrings);
   const tmp4Result6 = channelId(tmp3[31]);
@@ -852,7 +848,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       let tmp3;
       let tmp2;
       const Text = Text_Text.Text;
-      const tmp = version;
+      const tmp = authStore7;
       if (closure_14) {
         tmp2 = processColorStringsArray;
       }
@@ -874,10 +870,10 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
     commandHook() {
       let children;
       const Text = Text_Text.Text;
-      const tmp = version;
+      const tmp = authStore7;
       if (closure_5 === constants.CHAT_INPUT_COMMAND) {
         const _HermesInternal = HermesInternal;
-        children = "" + closure_21 + name_localized;
+        children = "" + closure_20 + name_localized;
       } else {
         children = name_localized;
       }
@@ -890,10 +886,10 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       const obj2 = { style: styles.applicationIcon, source: obj3.ensureAvatarSource(importAll.getAvatarSource(guildId)) };
       const tmp = FastImageDefault;
       obj3 = utils_AvatarUtils;
-      items = [version(tmp, obj2, "icon-" + importAll.id), ];
+      items = [authStore7(tmp, obj2, "icon-" + importAll.id), ];
       const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: importAll.username };
-      items[1] = version(Text_Text.Text, obj4);
-      return closure_24(metroImportDefault, obj, "application");
+      items[1] = authStore7(Text_Text.Text, obj4);
+      return closure_23(metroRequire, obj, "application");
     }
   };
   const items3 = [channel, guild, messageId, , , , , , ];
@@ -905,7 +901,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
   const memo = guildId.useMemo(() => {
     let items = [];
     const obj = { children: `/${name_localized}` };
-    items[0] = version(native.LegacyText, obj, "integrationName-" + data.name);
+    items[0] = authStore7(native.LegacyText, obj, "integrationName-" + data.name);
     let combined = items;
     if (null != data.options) {
       const application_command = tmp.application_command;
@@ -940,33 +936,31 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       let tmp = children;
       if (typeof children === "string") {
         const obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children };
-        tmp = closure_1_23(channelId(data[22]).Text, obj, arg1);
+        tmp = closure_1_22(channelId(data[22]).Text, obj, arg1);
       }
       return tmp;
     })
   };
   Children = guildId.Children;
   const Card = tmp4(tmp3[34]).Card;
-  items4 = [closure_23(styles, obj5, "commandName-" + data.name), ];
+  items4 = [closure_22(messageId, obj5, "commandName-" + data.name), ];
   const obj6 = { style: tmp.commandOptionText, variant: "text-md/medium", color: "text-default", children: memo };
-  items4[1] = closure_23(channelId(tmp3[22]).Text, obj6, "commandOption-" + data.name);
-  return closure_24(Card, obj4);
+  items4[1] = closure_22(channelId(tmp3[22]).Text, obj6, "commandOption-" + data.name);
+  return closure_23(Card, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandActionsContainer(channelId) {
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandActionsContainer(channelId) {
   let channel;
-  let intl3;
-  let items2;
+  let tmp10;
   let tmp11;
-  let tmp12;
-  let tmp4;
-  let tmp8;
+  let tmp7;
   const tmp = channelId;
   let obj = channelId(channel[26]);
   const cResult = obj.c(27);
   channelId = channelId.channelId;
   const chatInputRef = channelId.chatInputRef;
   const data = channelId.data;
+  const tmp2 = channel;
   if (cResult[0] !== data.options) {
     let options = data.options;
     let someResult;
@@ -976,226 +970,76 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
     let num = 0;
     cResult[0] = data.options;
     cResult[1] = someResult;
-    tmp4 = someResult;
-  } else {
-    tmp4 = cResult[1];
   }
-  let tmp7 = !tmp4;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp9 = ChannelStore;
+    let tmp8 = ChannelStore;
     let items = [ChannelStore, ];
-    let tmp10 = GuildStore;
+    let tmp9 = GuildStore;
     items[1] = GuildStore;
     cResult[2] = items;
-    tmp8 = items;
+    tmp7 = items;
   } else {
-    tmp8 = cResult[2];
+    tmp7 = cResult[2];
   }
   if (cResult[3] !== channelId) {
-    const fn = function h() {
-      let getGuild;
-      let guild_id;
-      channel = ChannelStore.getChannel(channelId);
-      const obj = { channel, guild: getGuild(guild_id) };
-      guild_id = undefined;
-      getGuild = GuildStore.getGuild;
-      if (channel != null) {
-        guild_id = channel.guild_id;
+    class C {
+      constructor() {
+        let getGuild;
+        let guild_id;
+        channel = ChannelStore.getChannel(channelId);
+        const obj = { channel, guild: getGuild(guild_id) };
+        guild_id = undefined;
+        getGuild = GuildStore.getGuild;
+        if (channel != null) {
+          guild_id = channel.guild_id;
+        }
+        return obj;
       }
-      return obj;
-    };
+    }
     let items1 = [channelId];
     cResult[3] = channelId;
-    cResult[4] = fn;
+    cResult[4] = C;
     cResult[5] = items1;
-    tmp12 = items1;
-    tmp11 = fn;
+    tmp11 = items1;
+    tmp10 = C;
   } else {
-    tmp11 = cResult[4];
-    tmp12 = cResult[5];
+    class C {
+      constructor() {
+        let getGuild;
+        let guild_id;
+        channel = ChannelStore.getChannel(channelId);
+        const obj = { channel, guild: getGuild(guild_id) };
+        guild_id = undefined;
+        getGuild = GuildStore.getGuild;
+        if (channel != null) {
+          guild_id = channel.guild_id;
+        }
+        return obj;
+      }
+    }
+    tmp11 = cResult[5];
   }
-  const tmpResult = tmp(channel[28]);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp8, tmp11, tmp12);
+  const tmpResult = tmp(tmp2[28]);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp10, tmp11);
   channel = stateFromStoresObject.channel;
   const guild = stateFromStoresObject.guild;
   if (cResult[6] === channel) {
-    if (cResult[7] === data) {
-      let tmp14;
-      if (cResult[8] === guild) {
-        tmp14 = cResult[9];
+    class C {
+      constructor() {
+        let getGuild;
+        let guild_id;
+        channel = ChannelStore.getChannel(channelId);
+        const obj = { channel, guild: getGuild(guild_id) };
+        guild_id = undefined;
+        getGuild = GuildStore.getGuild;
+        if (channel != null) {
+          guild_id = channel.guild_id;
+        }
+        return obj;
       }
-      let closure_5 = tmp14;
-      if (cResult[10] === chatInputRef) {
-        if (cResult[11] === data.id) {
-          if (cResult[12] === data.options) {
-            if (cResult[13] === tmp14) {
-              let arr3;
-              if (cResult[14] === tmp7) {
-                arr3 = cResult[15];
-              }
-              let tmp28 = null;
-              if (0 !== arr3.length) {
-                let tmp29;
-                let tmp32;
-                const _Symbol3 = Symbol;
-                if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                  let obj2 = { variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(tmp(tmp2[24]).t["3eF5/L"]) };
-                  const Text = tmp(tmp2[22]).Text;
-                  intl3 = tmp(tmp2[24]).intl;
-                  const tmp31 = closure_23(Text, obj2);
-                  cResult[24] = tmp31;
-                  tmp29 = tmp31;
-                } else {
-                  tmp29 = cResult[24];
-                }
-                if (cResult[25] !== arr3) {
-                  let obj3 = { spacing: 8, children: items2 };
-                  items2 = [tmp29, ];
-                  const Stack = tmp(tmp2[41]).Stack;
-                  const obj4 = {
-                    hasIcons: false,
-                    children: arr3.map((children, index) => {
-                                      const obj = { children };
-                                      return closure_1_23(guild.Fragment, obj, index);
-                                    })
-                  };
-                  const TableRowGroup = tmp(tmp2[42]).TableRowGroup;
-                  items2[1] = closure_23(TableRowGroup, obj4);
-                  const tmp35 = closure_24(Stack, obj3);
-                  cResult[25] = arr3;
-                  cResult[26] = tmp35;
-                  tmp32 = tmp35;
-                } else {
-                  tmp32 = cResult[26];
-                }
-                tmp28 = tmp32;
-              }
-              return tmp28;
-            }
-          }
-        }
-      }
-      const items3 = [];
-      if (!tmp4) {
-        let tmp15;
-        let tmp17;
-        const _Symbol = Symbol;
-        if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(tmp2[24]).intl;
-          const stringResult = intl.string(tmp(channel[24]).t["42H+Nb"]);
-          cResult[16] = stringResult;
-          tmp15 = stringResult;
-        } else {
-          tmp15 = cResult[16];
-        }
-        if (cResult[17] !== tmp14) {
-          let obj5 = {
-            label: tmp15,
-            onPress() {
-                      const obj = ActionSheetActionCreatorsDefault;
-                      obj.hideActionSheet();
-                      closure_5();
-                    }
-          };
-          const tmp19 = closure_23(tmp(channel[38]).TableRow, obj5);
-          cResult[17] = tmp14;
-          cResult[18] = tmp19;
-          tmp17 = tmp19;
-        } else {
-          tmp17 = cResult[18];
-        }
-        items3.push(tmp17);
-      }
-      if (null != chatInputRef) {
-        let tmp22;
-        const _Symbol2 = Symbol;
-        if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(tmp2[24]).intl;
-          const stringResult1 = intl2.string(tmp(channel[24]).t.lNWC7s);
-          cResult[19] = stringResult1;
-          tmp22 = stringResult1;
-        } else {
-          tmp22 = cResult[19];
-        }
-        if (cResult[20] === chatInputRef) {
-          if (cResult[21] === data.id) {
-            let tmp24;
-            if (cResult[22] === data.options) {
-              tmp24 = cResult[23];
-            }
-            items3.push(tmp24);
-          }
-        }
-        let obj6 = {
-          label: tmp22,
-          onPress() {
-                  let obj13;
-                  let obj3;
-                  let obj5;
-                  let obj7;
-                  let sum;
-                  const obj = ActionSheetActionCreatorsDefault;
-                  obj.hideActionSheet();
-                  if (null != data.options) {
-                    if (data.options.length > 0) {
-                      const items = [Server.ApplicationCommandOptionType.SUB_COMMAND, Server.ApplicationCommandOptionType.SUB_COMMAND_GROUP];
-                      if (items.includes(data.options[0].type)) {
-                        const items1 = [data.options[0].name];
-                        const options1 = tmp3.options[0].options;
-                        let hasItem = null != options1 && options1.length > 0;
-                        if (hasItem) {
-                          const items2 = [Server.ApplicationCommandOptionType.SUB_COMMAND, Server.ApplicationCommandOptionType.SUB_COMMAND_GROUP];
-                          hasItem = items2.includes(options1[0].type);
-                        }
-                        let options = options1;
-                        if (hasItem) {
-                          items1.push(options1[0].name);
-                          options = options1[0].options;
-                        }
-                        if (chatInputRef != null) {
-                          const current2 = chatInputRef.current;
-                          if (current2 != null) {
-                            const openCustomKeyboard2 = current2.openCustomKeyboard;
-                            const obj2 = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj3 };
-                            obj3 = { initialRouteName: AppLauncherRouteName.COMMAND_VIEW, analyticsLocation: ApplicationCommandTypes.ApplicationCommandTriggerLocations.RECALL, preSelectedCommand: obj5 };
-                            obj5 = { commandId: sum + items1.join(SUB_COMMAND_KEY_SEPARATOR), prefilledOptions: options };
-                            sum = tmp3.id + SUB_COMMAND_KEY_SEPARATOR;
-                            openCustomKeyboard2(obj2);
-                          }
-                        }
-                      }
-                    }
-                  }
-                  if (chatInputRef != null) {
-                    const current = chatInputRef.current;
-                    if (current != null) {
-                      const openCustomKeyboard = current.openCustomKeyboard;
-                      const obj6 = { type: KeyboardTypes.KeyboardTypes.APP_LAUNCHER, context: obj7 };
-                      obj7 = { initialRouteName: AppLauncherRouteName.COMMAND_VIEW, analyticsLocation: ApplicationCommandTypes.ApplicationCommandTriggerLocations.RECALL, preSelectedCommand: obj13 };
-                      obj13 = { commandId: null, prefilledOptions: null };
-                      ({ id: obj4.commandId, options: obj4.prefilledOptions } = data);
-                      openCustomKeyboard(obj6);
-                    }
-                  }
-                }
-        };
-        const tmp26 = closure_23(tmp(channel[38]).TableRow, obj6);
-        cResult[20] = chatInputRef;
-        cResult[21] = data.id;
-        cResult[22] = data.options;
-        cResult[23] = tmp26;
-        tmp24 = tmp26;
-      }
-      cResult[10] = chatInputRef;
-      cResult[11] = data.id;
-      cResult[12] = data.options;
-      cResult[13] = tmp14;
-      cResult[14] = tmp7;
-      cResult[15] = items3;
-      arr3 = items3;
     }
   }
-  class S {
+  class O {
     constructor() {
       let items1;
       const application_command = data.application_command;
@@ -1206,7 +1050,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
       if (name_localized == null) {
         name_localized = tmp.name;
       }
-      let items = [closure_21 + name_localized];
+      let items = [closure_20 + name_localized];
       let combined = items;
       if (null != data.options) {
         const application_command2 = tmp.application_command;
@@ -1224,38 +1068,25 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
           continue;
         }
       }
-      const obj2 = PlatformUtils;
-      if (obj2.isAndroid()) {
-        const tmp22 = react_nativeDefault;
-        if (tmp22 != null) {
-          const _JSON2 = JSON;
-          const setItem2 = tmp22.setItem;
-          const json = JSON.stringify(data);
-          setItem2(json, "application/x-discord-interaction-data", combined.join(" "));
-        }
-      } else {
-        const DCDClipboardManager = metroRequire.DCDClipboardManager;
-        const _JSON = JSON;
-        const setItem = DCDClipboardManager.setItem;
-        const json1 = JSON.stringify(data);
-        const result = setItem(json1, "application/x-discord-interaction-data", combined.join(" "));
-      }
+      const setItem = react_nativeDefault.setItem;
+      react_nativeDefault;
+      const json = JSON.stringify(data);
+      const result = setItem(json, "application/x-discord-interaction-data", combined.join(" "));
       if (null != channel) {
         const query = ApplicationCommandIndexStore.query;
-        const obj = { channel: tmp28, type: "channel" };
-        const obj3 = { commandTypes: items1 };
+        const obj = { channel: tmp17, type: "channel" };
+        const obj2 = { commandTypes: items1 };
         items1 = [Server.ApplicationCommandType.CHAT];
-        const query1 = query(obj, obj3, { allowFetch: true });
+        const query1 = query(obj, obj2, { allowFetch: true });
       }
-      const tmp13Result = ToastUtils;
-      tmp13Result.presentCommandCopied();
+      const obj4 = ToastUtils;
+      obj4.presentCommandCopied();
     }
   }
   cResult[6] = channel;
   cResult[7] = data;
   cResult[8] = guild;
-  cResult[9] = S;
-  tmp14 = S;
+  cResult[9] = O;
 }) : (function CommandActionsContainer(channelId) {
   let intl;
   let intl2;
@@ -1301,7 +1132,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
     if (name_localized == null) {
       name_localized = tmp.name;
     }
-    let items = [closure_21 + name_localized];
+    let items = [closure_20 + name_localized];
     let combined = items;
     if (null != data.options) {
       const application_command2 = tmp.application_command;
@@ -1319,31 +1150,19 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
         continue;
       }
     }
-    const obj2 = PlatformUtils;
-    if (obj2.isAndroid()) {
-      const tmp22 = react_nativeDefault;
-      if (tmp22 != null) {
-        const _JSON2 = JSON;
-        const setItem2 = tmp22.setItem;
-        const json = JSON.stringify(data);
-        setItem2(json, "application/x-discord-interaction-data", combined.join(" "));
-      }
-    } else {
-      const DCDClipboardManager = metroRequire.DCDClipboardManager;
-      const _JSON = JSON;
-      const setItem = DCDClipboardManager.setItem;
-      const json1 = JSON.stringify(data);
-      const result = setItem(json1, "application/x-discord-interaction-data", combined.join(" "));
-    }
+    const setItem = react_nativeDefault.setItem;
+    react_nativeDefault;
+    const json = JSON.stringify(data);
+    const result = setItem(json, "application/x-discord-interaction-data", combined.join(" "));
     if (null != channel) {
       const query = ApplicationCommandIndexStore.query;
-      const obj = { channel: tmp28, type: "channel" };
-      const obj3 = { commandTypes: items1 };
+      const obj = { channel: tmp17, type: "channel" };
+      const obj2 = { commandTypes: items1 };
       items1 = [Server.ApplicationCommandType.CHAT];
-      const query1 = query(obj, obj3, { allowFetch: true });
+      const query1 = query(obj, obj2, { allowFetch: true });
     }
-    const tmp13Result = ToastUtils;
-    tmp13Result.presentCommandCopied();
+    const obj4 = ToastUtils;
+    obj4.presentCommandCopied();
   }, items2);
   const items3 = [];
   if (!someResult) {
@@ -1356,12 +1175,12 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
           closure_5();
         }
     };
-    const TableRow = tmp2(tmp3[38]).TableRow;
+    const TableRow = tmp2(tmp3[37]).TableRow;
     intl = tmp2(tmp3[24]).intl;
-    push(closure_23(TableRow, obj2));
+    push(closure_22(TableRow, obj2));
   }
   if (null != chatInputRef) {
-    let tmp7 = closure_23;
+    let tmp7 = closure_22;
     const push2 = items3.push;
     let obj3 = {
       label: intl2.string(tmp2(tmp3[24]).t.lNWC7s),
@@ -1416,30 +1235,30 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Comman
           }
         }
     };
-    const TableRow2 = tmp2(tmp3[38]).TableRow;
+    const TableRow2 = tmp2(tmp3[37]).TableRow;
     intl2 = tmp2(tmp3[24]).intl;
-    push2(closure_23(TableRow2, obj3));
+    push2(closure_22(TableRow2, obj3));
   }
   let tmp9 = null;
   if (0 !== items3.length) {
-    let tmp10 = closure_24;
-    const obj4 = { spacing: 8, children: items4 };
-    let tmp11 = closure_23;
-    const Stack = tmp2(tmp3[41]).Stack;
+    let tmp10 = closure_23;
+    let obj4 = { spacing: 8, children: items4 };
+    let tmp11 = closure_22;
+    const Stack = tmp2(tmp3[40]).Stack;
     let obj5 = { variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(tmp2(tmp3[24]).t["3eF5/L"]) };
     const Text = tmp2(tmp3[22]).Text;
     intl3 = tmp2(tmp3[24]).intl;
-    items4 = [closure_23(Text, obj5), ];
+    items4 = [closure_22(Text, obj5), ];
     let obj6 = {
       hasIcons: false,
       children: items3.map((children, index) => {
           const obj = { children };
-          return closure_1_23(guild.Fragment, obj, index);
+          return closure_1_22(guild.Fragment, obj, index);
         })
     };
-    const TableRowGroup = tmp2(tmp3[42]).TableRowGroup;
-    items4[1] = closure_23(TableRowGroup, obj6);
-    tmp9 = closure_24(Stack, obj4);
+    const TableRowGroup = tmp2(tmp3[41]).TableRowGroup;
+    items4[1] = closure_22(TableRowGroup, obj6);
+    tmp9 = closure_23(Stack, obj4);
   }
   return tmp9;
 });
@@ -1461,7 +1280,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExecutedComm
   ({ user, channelId } = arg0);
   ({ chatInputRef, messageId } = arg0);
   ({ author, applicationUser, guildId, messageType } = arg0);
-  const tmp4 = closure_26();
+  const tmp4 = closure_25();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MessageStore];
     cResult[0] = items;
@@ -1476,8 +1295,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExecutedComm
     }
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-    const tmp10 = messageId(6841);
-    const analyticsLocations = tmp10(messageId(6865).EXECUTED_COMMAND).analyticsLocations;
+    const tmp10 = messageId(6848);
+    const analyticsLocations = tmp10(messageId(6872).EXECUTED_COMMAND).analyticsLocations;
     if (cResult[4] === channelId) {
       let interactionData1;
       const tmp11 = cResult[5];
@@ -1530,8 +1349,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExecutedComm
                                 const obj2 = { value: analyticsLocations, children: tmp36 };
                                 cResult[26] = analyticsLocations;
                                 cResult[27] = tmp36;
-                                cResult[28] = closure_23(tmp(6841).AnalyticsLocationProvider, obj2);
-                                closure_23(tmp(6841).AnalyticsLocationProvider, obj2);
+                                cResult[28] = closure_22(tmp(6848).AnalyticsLocationProvider, obj2);
+                                closure_22(tmp(6848).AnalyticsLocationProvider, obj2);
                                 class S {
                                   constructor() {
                                     let interactionData;
@@ -1564,8 +1383,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExecutedComm
                               const obj3 = { startExpanded: true, bodyStyles: tmp4.container, children: tmp24 };
                               cResult[23] = tmp4.container;
                               cResult[24] = tmp24;
-                              cResult[25] = closure_23(tmp(6829).BottomSheet, obj3);
-                              closure_23(tmp(6829).BottomSheet, obj3);
+                              cResult[25] = closure_22(tmp(6836).BottomSheet, obj3);
+                              closure_22(tmp(6836).BottomSheet, obj3);
                               class S {
                                 constructor() {
                                   let interactionData;
@@ -1609,9 +1428,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExecutedComm
             }
             if (null != interactionData4) {
               const obj4 = { guildId, user, channelId, messageId, author, applicationUser, data: null, messageType };
-              const tmp29 = closure_24;
-              const tmp30 = closure_25;
-              const tmp32 = closure_29;
+              const tmp29 = closure_23;
+              const tmp30 = closure_24;
+              const tmp32 = closure_28;
               if (stateFromStores != null) {
                 let interactionData = stateFromStores.interactionData;
               }
@@ -1643,19 +1462,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExecutedComm
                   }
                 }
               }
-              const items1 = [closure_23(tmp32, obj4), ];
+              const items1 = [closure_22(tmp32, obj4), ];
               const obj5 = { channelId, chatInputRef, data: interactionData5 };
               interactionData5 = undefined;
-              const tmp33 = closure_30;
+              const tmp33 = closure_29;
               if (stateFromStores != null) {
                 interactionData5 = stateFromStores.interactionData;
               }
               const obj6 = { children: items1 };
-              items1[1] = closure_23(tmp33, obj5);
+              items1[1] = closure_22(tmp33, obj5);
               tmp29Result = tmp29(tmp30, obj6);
             } else {
               const obj7 = { style: tmp4.activityIndicator, size: "large" };
-              tmp29Result = closure_23(closure_5, obj7);
+              tmp29Result = closure_22(closure_5, obj7);
             }
             cResult[12] = applicationUser;
             cResult[13] = author;
@@ -1798,15 +1617,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExecutedComm
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   ({ user, chatInputRef, author, applicationUser, guildId, messageType } = channelId);
-  const tmp = closure_26();
+  const tmp = closure_25();
   let tmp3 = dependencyMap;
   let obj = channelId(504);
   const items = [MessageStore];
   const stateFromStores = obj.useStateFromStores(items, () => MessageStore.getMessage(channelId, messageId));
   const items1 = [channelId, messageId, ];
   let interactionData;
-  const tmp5 = messageId(6841);
-  const analyticsLocations = tmp5(messageId(6865).EXECUTED_COMMAND).analyticsLocations;
+  const tmp5 = messageId(6848);
+  const analyticsLocations = tmp5(messageId(6872).EXECUTED_COMMAND).analyticsLocations;
   const useEffect = react.useEffect;
   if (stateFromStores != null) {
     interactionData = stateFromStores.interactionData;
@@ -1838,38 +1657,38 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExecutedComm
       const messageInteractionData = obj.fetchMessageInteractionData(channelId, messageId);
     }
   }, items1);
-  const obj2 = { value: analyticsLocations, children: closure_23(BottomSheet, obj3) };
-  const AnalyticsLocationProvider = tmp2(6841).AnalyticsLocationProvider;
+  const obj2 = { value: analyticsLocations, children: closure_22(BottomSheet, obj3) };
+  const AnalyticsLocationProvider = tmp2(6848).AnalyticsLocationProvider;
   let interactionData1;
   obj3 = { startExpanded: true, bodyStyles: tmp.container, children: tmp9Result };
-  BottomSheet = tmp2(6829).BottomSheet;
+  BottomSheet = tmp2(6836).BottomSheet;
   if (stateFromStores != null) {
     interactionData1 = stateFromStores.interactionData;
   }
   if (null != interactionData1) {
     const obj4 = { guildId, user, channelId, messageId, author, applicationUser, data: interactionData2, messageType };
     interactionData2 = undefined;
-    const tmp13 = closure_24;
-    const tmp14 = closure_25;
-    const tmp15 = closure_29;
+    const tmp13 = closure_23;
+    const tmp14 = closure_24;
+    const tmp15 = closure_28;
     if (stateFromStores != null) {
       interactionData2 = stateFromStores.interactionData;
     }
     const items2 = [tmp9(tmp15, obj4), ];
     const obj5 = { channelId, chatInputRef, data: interactionData3 };
     interactionData3 = undefined;
-    const tmp17 = closure_30;
+    const tmp17 = closure_29;
     if (stateFromStores != null) {
       interactionData3 = stateFromStores.interactionData;
     }
     const obj6 = { children: items2 };
-    items2[1] = closure_23(tmp17, obj5);
+    items2[1] = closure_22(tmp17, obj5);
     tmp9Result = tmp13(tmp14, obj6);
   } else {
     const obj7 = { style: tmp.activityIndicator, size: "large" };
     tmp9Result = tmp9(closure_5, obj7);
   }
-  return closure_23(AnalyticsLocationProvider, obj2);
+  return closure_22(AnalyticsLocationProvider, obj2);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/application_commands/native/ExecutedApplicationCommandPopout.tsx");

@@ -1,33 +1,32 @@
-// Module ID: 11528
-// Function ID: 11529
+// Module ID: 11457
+// Function ID: 11458
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 5921, 21, 5090, 558, 576, 11505, 1126, 11529, 11503, 5086, 11523, 2]
+// Dependencies: [19, 17, 5922, 21, 5091, 558, 576, 11434, 1126, 6163, 11458, 11432, 5087, 11452, 2]
 
-// Module 11528 (AppealIngestionRequestSent)
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11523 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11529 */;
-import react from "react" /* 19 */;
+// Module 11457 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 5921 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11452 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11458 */;
+import react from "react" /* 19 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 5922 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-({ View: c3, Image: closure_4 } = react_native);
-({ SafetyHubAnalyticsActions: hasOwnProperty, SafetyHubLinks: metroRequire } = SafetyHubConstants);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let closure_9 = createStyles.createStyles({ container: { flex: 1, padding: 8 }, actionsHeader: { marginTop: 31, marginBottom: 16 }, checkboxPng: { width: 86, height: 78.33, marginLeft: -2, alignSelf: "center" } });
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionRequestSent() {
+const View = react_native.View;
+({ SafetyHubAnalyticsActions: closure_4, SafetyHubLinks: hasOwnProperty } = SafetyHubConstants);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let closure_8 = createStyles.createStyles({ container: { flex: 1, padding: 8 }, actionsHeader: { marginTop: 31, marginBottom: 16 }, checkboxPng: { width: 86, height: 78.33, marginLeft: -2, alignSelf: "center" } });
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionRequestSent() {
   let emitAppealIngestionEvent;
   let first;
   let items;
@@ -43,9 +42,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
   let tmp8;
   const obj = emitAppealIngestionEvent(576);
   const cResult = obj.c(20);
-  const obj2 = emitAppealIngestionEvent(11505);
+  const obj2 = emitAppealIngestionEvent(11434);
   emitAppealIngestionEvent = obj2.useEmitAppealIngestionEvent();
-  const tmp5 = closure_9();
+  const tmp5 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(emitAppealIngestionEvent(1126).t.QMbTSu);
@@ -65,7 +64,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
   const container = tmp5.container;
   if (cResult[2] !== tmp5.checkboxPng) {
     const obj3 = { source: AssetRegistryDefault, style: tmp5.checkboxPng };
-    const tmp14 = closure_7(closure_4, obj3);
+    const tmp13 = FastImageDefault;
+    const tmp14 = closure_6(tmp13, obj3);
     cResult[2] = tmp5.checkboxPng;
     cResult[3] = tmp14;
     tmp10 = tmp14;
@@ -74,7 +74,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { headerText: first, subHeaderText: tmp8 };
-    const tmp17 = closure_7(emitAppealIngestionEvent(11503).AppealIngestionModalHeader, obj4);
+    const tmp17 = closure_6(emitAppealIngestionEvent(11432).AppealIngestionModalHeader, obj4);
     cResult[4] = tmp17;
     tmp15 = tmp17;
   } else {
@@ -91,7 +91,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
   }
   if (cResult[6] !== tmp5.actionsHeader) {
     const obj5 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: actionsHeader, children: tmp18 };
-    const tmp22 = closure_7(emitAppealIngestionEvent(5086).Text, obj5);
+    const tmp22 = closure_6(emitAppealIngestionEvent(5087).Text, obj5);
     cResult[6] = tmp5.actionsHeader;
     cResult[7] = tmp22;
     tmp20 = tmp22;
@@ -111,10 +111,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
       text: tmp23,
       url: constants.COMMUNITY_GUIDELINES,
       onPress() {
-          return emitAppealIngestionEvent(hasOwnProperty.ClickCommunityGuidelinesLink);
+          return emitAppealIngestionEvent(React3.ClickCommunityGuidelinesLink);
         }
     };
-    const tmp29 = closure_7(AppealIngestionExternalLinkDefault, obj6);
+    const tmp29 = closure_6(AppealIngestionExternalLinkDefault, obj6);
     cResult[9] = emitAppealIngestionEvent;
     cResult[10] = tmp29;
     tmp25 = tmp29;
@@ -134,10 +134,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
       text: tmp30,
       url: constants.WARNING_SYSTEM_HELPCENTER_LINK,
       onPress() {
-          return emitAppealIngestionEvent(hasOwnProperty.ClickWarningSystemHelpcenterLink);
+          return emitAppealIngestionEvent(React3.ClickWarningSystemHelpcenterLink);
         }
     };
-    const tmp36 = closure_7(AppealIngestionExternalLinkDefault, obj7);
+    const tmp36 = closure_6(AppealIngestionExternalLinkDefault, obj7);
     cResult[12] = emitAppealIngestionEvent;
     cResult[13] = tmp36;
     tmp32 = tmp36;
@@ -157,11 +157,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
       }
     }
   }
-  const obj8 = { children: closure_8(closure_3, obj9) };
+  const obj8 = { children: closure_7(View, obj9) };
   obj9 = { style: container, children: items };
   items = [tmp10, tmp15, tmp20, tmp25, tmp32];
-  const AppealIngestionModalScreen = tmp(11503).AppealIngestionModalScreen;
-  const tmp38 = closure_7(AppealIngestionModalScreen, obj8);
+  const AppealIngestionModalScreen = tmp(11432).AppealIngestionModalScreen;
+  const tmp38 = closure_6(AppealIngestionModalScreen, obj8);
   cResult[14] = tmp5.container;
   cResult[15] = tmp32;
   cResult[16] = tmp10;
@@ -178,42 +178,43 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealInge
   let obj3;
   const obj = require("useEmitAppealIngestionEvent");
   _require = obj.useEmitAppealIngestionEvent();
-  const tmp = closure_9();
+  const tmp = closure_8();
   const intl = require("intl").intl;
   const stringResult = intl.string(require("intl").t.QMbTSu);
   const intl2 = require("intl").intl;
-  const obj2 = { children: closure_8(closure_3, obj3) };
+  const obj2 = { children: closure_7(View, obj3) };
   obj3 = { style: tmp.container, children: items };
-  const obj4 = { source: AssetRegistryDefault, style: tmp.checkboxPng };
   const stringResult1 = intl2.string(require("intl").t.Qdx8AP);
   const AppealIngestionModalScreen = require("AppealIngestionModal").AppealIngestionModalScreen;
-  items = [closure_7(closure_4, obj4), closure_7(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , ];
+  const obj4 = { source: AssetRegistryDefault, style: tmp.checkboxPng };
+  const tmp4 = FastImageDefault;
+  items = [closure_6(tmp4, obj4), closure_6(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , ];
   const obj5 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: intl3.string(require("intl").t["9BRc1N"]) };
   const Text = require("Text/Text").Text;
   intl3 = require("intl").intl;
-  items[2] = closure_7(Text, obj5);
+  items[2] = closure_6(Text, obj5);
   const obj6 = {
     text: intl4.string(require("intl").t.PxL38B),
     url: constants.COMMUNITY_GUIDELINES,
     onPress() {
-      return closure_0(hasOwnProperty.ClickCommunityGuidelinesLink);
+      return closure_0(React3.ClickCommunityGuidelinesLink);
     }
   };
-  const tmp4 = AppealIngestionExternalLinkDefault;
+  const tmp5 = AppealIngestionExternalLinkDefault;
   intl4 = require("intl").intl;
-  items[3] = closure_7(tmp4, obj6);
+  items[3] = closure_6(tmp5, obj6);
   const obj7 = {
     text: intl5.string(require("intl").t.qC3XKa),
     url: constants.WARNING_SYSTEM_HELPCENTER_LINK,
     onPress() {
-      return closure_0(hasOwnProperty.ClickWarningSystemHelpcenterLink);
+      return closure_0(React3.ClickWarningSystemHelpcenterLink);
     }
   };
-  const tmp5 = AppealIngestionExternalLinkDefault;
+  const tmp6 = AppealIngestionExternalLinkDefault;
   intl5 = require("intl").intl;
-  items[4] = closure_7(tmp5, obj7);
-  return closure_7(AppealIngestionModalScreen, obj2);
+  items[4] = closure_6(tmp6, obj7);
+  return closure_6(AppealIngestionModalScreen, obj2);
 });
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionRequestSent.tsx");
 
-export default tmp6;
+export default tmp5;

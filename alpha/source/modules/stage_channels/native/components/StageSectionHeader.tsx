@@ -1,17 +1,17 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 11126
+// Function ID: 11127
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 4810, 5091, 5086, 1200, 6837, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 4811, 5092, 5087, 1200, 6844, 2]
 
-// Module 10951 (StageSectionHeader)
+// Module 11126 (StageSectionHeader)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6837 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6844 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSection
   ({ label, count, collapsed } = arg0);
   ({ onToggleCollapse, children } = arg0);
   const tmp4 = closure_7();
-  const obj2 = collapsed(4810);
+  const obj2 = collapsed(4811);
   const fn = function n() {
     let items;
     let str = "0deg";
@@ -61,10 +61,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSection
     ({ rotate: withTiming(str, { duration: 150 }) });
     return obj;
   };
-  fn.__closure = { withTiming: collapsed(5091).withTiming, collapsed };
+  fn.__closure = { withTiming: collapsed(5092).withTiming, collapsed };
   fn.__workletHash = 8513320305499;
   fn.__initData = __initData;
-  ({ withTiming: collapsed(5091).withTiming, collapsed });
+  ({ withTiming: collapsed(5092).withTiming, collapsed });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (cResult[0] === count) {
     let tmp6;
@@ -159,7 +159,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSection
   }
   const obj10 = { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items1 };
   items1 = [label, " \u2014 ", count];
-  const tmp7 = closure_5(tmp(5086).Text, obj10);
+  const tmp7 = closure_5(tmp(5087).Text, obj10);
   cResult[0] = count;
   cResult[1] = label;
   cResult[2] = tmp7;
@@ -181,7 +181,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSection
   const children = collapsed.children;
   ({ label, count, onToggleCollapse } = collapsed);
   const tmp = closure_7();
-  let obj = collapsed(4810);
+  let obj = collapsed(4811);
   const tmp2 = collapsed;
   class T {
     constructor() {
@@ -199,7 +199,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSection
       return obj;
     }
   }
-  const obj2 = { withTiming: collapsed(5091).withTiming, collapsed };
+  const obj2 = { withTiming: collapsed(5092).withTiming, collapsed };
   T.__closure = obj2;
   T.__workletHash = 13209446315864;
   T.__initData = __initData2;
@@ -208,7 +208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSection
   const animatedStyle = obj.useAnimatedStyle(T);
   const obj5 = { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items };
   items = [label, " \u2014 ", count];
-  items1 = [closure_5(collapsed(5086).Text, obj5), , ];
+  items1 = [closure_5(collapsed(5087).Text, obj5), , ];
   let tmp5Result = null != children;
   tmp7 = closure_5;
   tmp8 = closure_3;

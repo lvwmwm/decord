@@ -1,11 +1,11 @@
-// Module ID: 15616
-// Function ID: 15617
+// Module ID: 15729
+// Function ID: 15730
 // Name: SummaryReminderNotificationExperiment
-// Dependencies: [1452, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 15616 (SummaryReminderNotificationExperiment)
+// Module 15729 (SummaryReminderNotificationExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

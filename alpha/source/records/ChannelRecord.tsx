@@ -1,39 +1,37 @@
-// Module ID: 2067
-// Function ID: 2068
+// Module ID: 2068
+// Function ID: 2069
 // Name: ChannelRecord
-// Dependencies: [2068, 1085, 2070, 1387, 1097, 12, 2071, 2072, 2073, 2074, 2075, 1402, 2076, 1456, 11, 2]
+// Dependencies: [2069, 1085, 2071, 1388, 1097, 12, 2072, 2073, 2074, 2075, 1403, 2076, 1457, 11, 2]
 // Exports: castChannelRecord, createChannelRecordFromInvite, createChannelRecordFromServer, getAccessPermissions, getBasicAccessPermissions, isChannelChatInSidebar, isChannelMainAreaUploadAllowed, isChannelThreadsForcedOpenedInFullView, isGuildChannelType, isGuildReadableType, isGuildSelectableChannelType, isGuildTextChannelType, isGuildVocalChannelOrVocalThreadType, isGuildVocalChannelType, isMultiUserDM, isPrivate, isReadableType, isTextChannel, isThread, isVocalThreadType, isVoiceChannel
 
-// Module 2067 (ChannelRecord)
+// Module 2068 (ChannelRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import LRUCacheDefault from "LRUCache" /* 1457 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2072 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2073 */;
 import ForumLayout from "ForumLayout" /* 2074 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2075 */;
-import StageInstanceStore from "StageInstanceStore" /* 2068 */;
+import TypeUtils from "TypeUtils" /* 2076 */;
+import StageInstanceStore from "StageInstanceStore" /* 2069 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 let applied_tags;
 
 let ChannelTypes;
 let Permissions;
 let hasOwnProperty;
 let metroImportAll;
-let tmp;
-const TypeUtils = tmp(2076);
-const f86768 = (arg0, id) => {
+const f86979 = (arg0, id) => {
   arg0[id.id] = id.nick;
   return arg0;
 };
-const f86769 = (id) => {
+const f86980 = (id) => {
   let emoji_id;
   obj = { id: id.id, name: id.name, emojiId: emoji_id, emojiName: null, moderated: null, color: null };
   emoji_id = undefined;
@@ -517,17 +515,9 @@ Object.defineProperty(prototype, "permissionOverwrites", {
 });
 Object.defineProperty(prototype, "topic", {
   get: function topic() {
-    let str;
-    const self = this;
-    if (this.type !== ChannelTypes.GUILD_APP) {
-      let str2 = self.topic_;
-      if (str2 == null) {
-        str2 = "";
-      }
-      str = str2;
-    } else {
+    let str = this.topic_;
+    if (str == null) {
       str = "";
-      require("conjureTopicChannel");
     }
     return str;
   },
@@ -654,7 +644,7 @@ class UnknownChannelRecord extends ChannelRecordBase {
       if (null == available_tags) {
         items = [];
       } else {
-        items = available_tags.map(f86769);
+        items = available_tags.map(f86980);
       }
       tmp = items;
     }
@@ -698,7 +688,7 @@ class UnknownChannelRecord extends ChannelRecordBase {
       obj6 = {};
     } else {
       const arr3 = _modDef12;
-      obj6 = arr3.reduce(nicks, f86768, {});
+      obj6 = arr3.reduce(nicks, f86979, {});
     }
     ({ nsfw: obj.nsfw_, origin_channel_id: obj.originChannelId, owner_id: obj.ownerId, parent_id: obj.parent_id, permission_overwrites } = application_id);
     obj7 = {};
@@ -757,12 +747,12 @@ class GuildVocalChannelRecord extends ChannelRecordBase {
     let GUILD_VOICE;
     let flag;
     let name;
-    let obj5;
+    let obj6;
     let permission_overwrites;
     let rate_limit_per_user;
     let tmp2;
     let guild_id = arg1;
-    obj = { application_id: application_id.application_id, bitrate_: application_id.bitrate, flags_: application_id.flags, guild_id, iconEmoji: tmp2, id: null, lastMessageId: null, lastPinTimestamp: null, memberListId: null, name, nsfw_: flag, originChannelId: null, parent_id: null, permissionOverwrites_: obj5, position_: null, rateLimitPerUser_: rate_limit_per_user, rtcRegion: null, themeColor: null, topic_: null, type: GUILD_VOICE, userLimit_: null, version: null, videoQualityMode: null, hdStreamingUntil: null, hdStreamingBuyerId: null, voiceHangout: null };
+    obj = { application_id: application_id.application_id, bitrate_: application_id.bitrate, flags_: application_id.flags, guild_id, iconEmoji: tmp2, id: null, lastMessageId: null, lastPinTimestamp: null, memberListId: null, name, nsfw_: flag, originChannelId: null, parent_id: null, permissionOverwrites_: obj6, position_: null, rateLimitPerUser_: rate_limit_per_user, rtcRegion: null, themeColor: null, topic_: null, type: GUILD_VOICE, userLimit_: null, version: null, videoQualityMode: null, hdStreamingUntil: null, hdStreamingBuyerId: null, voiceHangout: null };
     if (arg1 == null) {
       guild_id = application_id.guild_id;
     }
@@ -785,7 +775,7 @@ class GuildVocalChannelRecord extends ChannelRecordBase {
       flag = false;
     }
     ({ origin_channel_id: obj.originChannelId, parent_id: obj.parent_id, permission_overwrites } = application_id);
-    obj5 = {};
+    obj6 = {};
     if (permission_overwrites != null) {
       const item = permission_overwrites.forEach((id) => {
         let deserializer;
@@ -808,20 +798,17 @@ class GuildVocalChannelRecord extends ChannelRecordBase {
       GUILD_VOICE = ChannelTypes.GUILD_VOICE;
     }
     ({ user_limit: obj.userLimit_, version: obj.version, video_quality_mode: obj.videoQualityMode, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, voice_hangout: obj.voiceHangout } = application_id);
-    const obj4 = obj5(2071);
-    const result = obj4.normalizeConjureTopicChannelRecord(obj);
-    let GUILD_TEXT = result.type;
-    const tmp5 = obj5;
-    const tmp8 = closure_33;
+    let GUILD_TEXT = obj.type;
+    const tmp5 = closure_33;
     if (GUILD_TEXT == null) {
       GUILD_TEXT = ChannelTypes.GUILD_TEXT;
     }
-    let tmp10 = tmp8[GUILD_TEXT];
-    if (tmp10 == null) {
-      tmp10 = UnknownChannelRecord;
+    let tmp7 = tmp5[GUILD_TEXT];
+    if (tmp7 == null) {
+      tmp7 = UnknownChannelRecord;
     }
-    const tmp5Result = tmp5(2076);
-    return tmp5Result.dangerouslyCast(result, tmp10);
+    const obj4 = obj6(2076);
+    return obj4.dangerouslyCast(obj, tmp7);
   }
 }
 class GuildTextualChannelRecord extends ChannelRecordBase {
@@ -840,12 +827,12 @@ class GuildTextualChannelRecord extends ChannelRecordBase {
     let GUILD_TEXT;
     let flag;
     let name;
-    let obj5;
+    let obj6;
     let permission_overwrites;
     let rate_limit_per_user;
     let tmp2;
     let guild_id = arg1;
-    obj = { application_id: application_id.application_id, defaultAutoArchiveDuration: application_id.default_auto_archive_duration, defaultThreadRateLimitPerUser: application_id.default_thread_rate_limit_per_user, flags_: application_id.flags, guild_id, iconEmoji: tmp2, id: null, lastMessageId: null, lastPinTimestamp: null, memberListId: null, name, nsfw_: flag, parent_id: null, permissionOverwrites_: obj5, position_: null, rateLimitPerUser_: rate_limit_per_user, themeColor: null, topic_: null, type: GUILD_TEXT, linkedLobby: null, hdStreamingUntil: null, hdStreamingBuyerId: null, version: null };
+    obj = { application_id: application_id.application_id, defaultAutoArchiveDuration: application_id.default_auto_archive_duration, defaultThreadRateLimitPerUser: application_id.default_thread_rate_limit_per_user, flags_: application_id.flags, guild_id, iconEmoji: tmp2, id: null, lastMessageId: null, lastPinTimestamp: null, memberListId: null, name, nsfw_: flag, parent_id: null, permissionOverwrites_: obj6, position_: null, rateLimitPerUser_: rate_limit_per_user, themeColor: null, topic_: null, type: GUILD_TEXT, linkedLobby: null, hdStreamingUntil: null, hdStreamingBuyerId: null, version: null };
     if (arg1 == null) {
       guild_id = application_id.guild_id;
     }
@@ -868,7 +855,7 @@ class GuildTextualChannelRecord extends ChannelRecordBase {
       flag = false;
     }
     ({ parent_id: obj.parent_id, permission_overwrites } = application_id);
-    obj5 = {};
+    obj6 = {};
     if (permission_overwrites != null) {
       const item = permission_overwrites.forEach((id) => {
         let deserializer;
@@ -891,20 +878,17 @@ class GuildTextualChannelRecord extends ChannelRecordBase {
       GUILD_TEXT = ChannelTypes.GUILD_TEXT;
     }
     ({ linked_lobby: obj.linkedLobby, hd_streaming_until: obj.hdStreamingUntil, hd_streaming_buyer_id: obj.hdStreamingBuyerId, version: obj.version } = application_id);
-    const obj4 = obj5(2071);
-    const result = obj4.normalizeConjureTopicChannelRecord(obj);
-    let GUILD_TEXT2 = result.type;
-    const tmp5 = obj5;
-    const tmp8 = closure_33;
+    let GUILD_TEXT2 = obj.type;
+    const tmp5 = closure_33;
     if (GUILD_TEXT2 == null) {
       GUILD_TEXT2 = ChannelTypes.GUILD_TEXT;
     }
-    let tmp10 = tmp8[GUILD_TEXT2];
-    if (tmp10 == null) {
-      tmp10 = UnknownChannelRecord;
+    let tmp7 = tmp5[GUILD_TEXT2];
+    if (tmp7 == null) {
+      tmp7 = UnknownChannelRecord;
     }
-    const tmp5Result = tmp5(2076);
-    return tmp5Result.dangerouslyCast(result, tmp10);
+    const obj4 = obj6(2076);
+    return obj4.dangerouslyCast(obj, tmp7);
   }
 }
 class GuildAnnouncementChannelRecord extends GuildTextualChannelRecord {
@@ -959,7 +943,7 @@ class ForumChannelRecord extends ChannelRecordBase {
       if (null == available_tags) {
         items = [];
       } else {
-        items = available_tags.map(f86769);
+        items = available_tags.map(f86980);
       }
       items1 = items;
     } else {
@@ -1110,7 +1094,7 @@ class PrivateChannelRecord extends ChannelRecordBase {
       obj2 = {};
     } else {
       const arr2 = _modDef12;
-      obj2 = arr2.reduce(nicks, f86768, {});
+      obj2 = arr2.reduce(nicks, f86979, {});
     }
     ({ recipient_flags: obj.recipientFlags, safety_warnings: obj.safetyWarnings, blocked_user_warning_dismissed: obj.blockedUserWarningDismissed } = application_id);
     if (null != application_id.type) {
@@ -1350,36 +1334,32 @@ export { PrivateChannelRecord };
 export { DMChannelRecord };
 export { GroupDMChannelRecord };
 export { ThreadChannelRecord };
-export const createChannelRecordFromServer = function createChannelRecordFromServer(arg0, arg1) {
-  obj = require("conjureTopicChannel");
-  const result = obj.normalizeConjureTopicChannel(arg0);
-  let GUILD_TEXT = result.type;
-  const tmp2 = closure_32;
+export const createChannelRecordFromServer = function createChannelRecordFromServer(type, arg1) {
+  let GUILD_TEXT = type.type;
+  const tmp = closure_32;
   if (GUILD_TEXT == null) {
     GUILD_TEXT = ChannelTypes.GUILD_TEXT;
   }
-  let fromServer = tmp2[GUILD_TEXT];
+  let fromServer = tmp[GUILD_TEXT];
   if (fromServer == null) {
     fromServer = UnknownChannelRecord.fromServer;
   }
-  return fromServer(result, arg1);
+  return fromServer(type, arg1);
 };
 export const createChannelRecordFromInvite = function createChannelRecordFromInvite(type) {
   return createChannelRecord(type);
 };
-export const castChannelRecord = function castChannelRecord(arg0) {
-  obj = require("conjureTopicChannel");
-  const result = obj.normalizeConjureTopicChannelRecord(arg0);
-  let GUILD_TEXT = result.type;
-  const tmp4 = closure_33;
+export const castChannelRecord = function castChannelRecord(type) {
+  let GUILD_TEXT = type.type;
+  const tmp = closure_33;
   if (GUILD_TEXT == null) {
     GUILD_TEXT = ChannelTypes.GUILD_TEXT;
   }
-  let tmp6 = tmp4[GUILD_TEXT];
-  if (tmp6 == null) {
-    tmp6 = UnknownChannelRecord;
+  let tmp3 = tmp[GUILD_TEXT];
+  if (tmp3 == null) {
+    tmp3 = UnknownChannelRecord;
   }
-  const tmpResult = TypeUtils;
-  return tmpResult.dangerouslyCast(result, tmp6);
+  obj = TypeUtils;
+  return obj.dangerouslyCast(type, tmp3);
 };
 export { createChannelRecord };

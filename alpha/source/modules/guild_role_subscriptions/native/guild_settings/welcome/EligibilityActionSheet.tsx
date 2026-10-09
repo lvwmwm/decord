@@ -1,16 +1,16 @@
-// Module ID: 18216
-// Function ID: 18217
+// Module ID: 18378
+// Function ID: 18379
 // Name: EligibilityActionSheet
-// Dependencies: [19, 1085, 21, 5090, 558, 576, 5054, 8613, 7084, 18217, 1126, 5086, 18221, 6829, 2]
+// Dependencies: [19, 1085, 21, 5091, 558, 576, 5055, 8621, 7087, 18379, 1126, 5087, 18383, 6836, 2]
 
-// Module 18216 (EligibilityActionSheet)
+// Module 18378 (EligibilityActionSheet)
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8613 */;
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 18217 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8621 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 18379 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let BottomSheet;
 let hasOwnProperty;
 let metroRequire;
 let tmp7;
-const EligibilityChecklistDefault = tmp7(18221);
+const EligibilityChecklistDefault = tmp7(18383);
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const EligibilityActionSheet_str = "EligibilityActionSheet";
@@ -79,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EligibilityA
   }
   if (cResult[4] !== tmp4.title) {
     let obj4 = { style: title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp9 };
-    const tmp13 = closure_5(onRequireModeratorMFAClick(5086).Heading, obj4);
+    const tmp13 = closure_5(onRequireModeratorMFAClick(5087).Heading, obj4);
     cResult[4] = tmp4.title;
     cResult[5] = tmp13;
     tmp11 = tmp13;
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EligibilityA
     }
     const obj5 = { startExpanded: true, children: items };
     items = [tmp11, tmp14];
-    const tmp18 = closure_6(onRequireModeratorMFAClick(6829).BottomSheet, obj5);
+    const tmp18 = closure_6(onRequireModeratorMFAClick(6836).BottomSheet, obj5);
     cResult[9] = tmp11;
     cResult[10] = tmp14;
     cResult[11] = tmp18;
@@ -143,9 +143,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EligibilityA
   }, items);
   let obj = { startExpanded: true, children: items1 };
   const tmp3 = useCreatorMonetizationEligibilityItemsDefault(eligibility, memo);
-  BottomSheet = onRequireModeratorMFAClick(6829).BottomSheet;
+  BottomSheet = onRequireModeratorMFAClick(6836).BottomSheet;
   let obj2 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(onRequireModeratorMFAClick(1126).t["3s47iN"]) };
-  const Heading = onRequireModeratorMFAClick(5086).Heading;
+  const Heading = onRequireModeratorMFAClick(5087).Heading;
   intl = onRequireModeratorMFAClick(1126).intl;
   items1 = [closure_5(Heading, obj2), ];
   let obj3 = { style: tmp.container, items: tmp3 };

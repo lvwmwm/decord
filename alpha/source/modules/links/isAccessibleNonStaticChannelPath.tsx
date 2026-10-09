@@ -1,11 +1,11 @@
-// Module ID: 7022
-// Function ID: 7023
+// Module ID: 7025
+// Function ID: 7026
 // Name: isAccessibleNonStaticChannelPath
-// Dependencies: [2116, 5418, 2]
+// Dependencies: [2116, 5419, 2]
 // Exports: default
 
-// Module 7022 (isAccessibleNonStaticChannelPath)
-import LinkUtils from "LinkUtils" /* 5418 */;
+// Module 7025 (isAccessibleNonStaticChannelPath)
+import LinkUtils from "LinkUtils" /* 5419 */;
 import GatedChannelStore from "GatedChannelStore" /* 2116 */;
 import size from "module_2" /* 2 */;
 

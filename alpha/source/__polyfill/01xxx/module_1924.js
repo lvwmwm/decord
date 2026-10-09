@@ -4,35 +4,25 @@
 
 // Module 1924
 const obj = {
-  locale: "it",
+  locale: "hu",
   pluralRuleFunction(arg0, arg1) {
-    let str3;
-    const str = String(arg0);
-    const tmp = str.split(".")[1];
-    const tmp2 = arg1;
-    if (tmp2) {
-      if (11 != arg0) {
-        if (8 != arg0) {
-          let str4;
-          if (80 != arg0) {
-            str4 = "other";
-          }
-          str3 = str4;
-        }
-      }
-      str4 = "many";
-    } else {
-      str3 = "other";
+    let str;
+    const tmp = arg1;
+    if (tmp) {
+      let str2;
       if (1 == arg0) {
-        str3 = "other";
-        if (!tmp) {
-          str3 = "one";
-        }
+        str2 = "one";
+      } else {
+        str2 = "other";
+      }
+      str = str2;
+    } else {
+      str = "other";
+      if (1 == arg0) {
+        str = "one";
       }
     }
-    return str3;
+    return str;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "it-CH", parentLocale: "it" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "it-SM", parentLocale: "it" });

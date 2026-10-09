@@ -1,16 +1,16 @@
-// Module ID: 16363
-// Function ID: 16364
+// Module ID: 16482
+// Function ID: 16483
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4899, 1085, 558, 576, 10294, 10293, 2089, 1112, 1126, 3439, 2]
+// Dependencies: [19, 4900, 1085, 558, 576, 10279, 10278, 2089, 1112, 1126, 3439, 2]
 
-// Module 16363 (useFavoritesGuildHideAction)
+// Module 16482 (useFavoritesGuildHideAction)
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
 import FavoritesUtils from "FavoritesUtils" /* 2089 */;
 import _modDef3439 from "module_3439" /* 3439 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10293 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10278 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   let tmp = hasAccess;
   let obj = hasAccess(576);
   const cResult = obj.c(11);
-  let obj2 = hasAccess(10294);
+  let obj2 = hasAccess(10279);
   hasAccess = obj2.useFavoritesAccess().hasAccess;
   if (cResult[0] !== hasAccess) {
     const fn = function s() {
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   let string;
   let stringResult;
   let tmp = hasAccess;
-  let obj = hasAccess(10294);
+  let obj = hasAccess(10279);
   hasAccess = obj.useFavoritesAccess().hasAccess;
   const items = [hasAccess];
   let obj2 = { isPreview: !hasAccess, label: string(ojM1xJ), subLabel: stringResult, perform: callback };

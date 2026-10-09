@@ -1,20 +1,20 @@
-// Module ID: 17684
-// Function ID: 17685
+// Module ID: 17836
+// Function ID: 17837
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 5079, 2062, 6079, 14623, 6072, 11990, 21, 4810, 1630, 17473, 558, 576, 14622, 504, 17685, 2]
+// Dependencies: [32, 19, 5080, 2063, 6081, 14728, 6074, 11927, 21, 4811, 1631, 17625, 558, 576, 14727, 504, 17837, 2]
 
-// Module 17684 (MediaPlaybackPanelController)
+// Module 17836 (MediaPlaybackPanelController)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6072 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11990 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14622 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14623 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 17685 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6074 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11927 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 14727 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14728 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 17837 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2062 */;
-import VoicePanelStore from "VoicePanelStore" /* 6079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import VoicePanelStore from "VoicePanelStore" /* 6081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,13 +22,13 @@ let dependencyMap, importDefault, set;
 
 function useCoreState() {
   let sharedValue;
-  let obj = sharedValue(4810);
+  let obj = sharedValue(4811);
   sharedValue = obj.useSharedValue(MediaPlaybackPanelModes.PIP);
-  const obj2 = sharedValue(4810);
+  const obj2 = sharedValue(4811);
   const sharedValue1 = obj2.useSharedValue({ height: 0, width: 0 });
-  const obj3 = sharedValue(4810);
+  const obj3 = sharedValue(4811);
   const sharedValue2 = obj3.useSharedValue({ x: -1, y: -1 });
-  const obj4 = sharedValue(4810);
+  const obj4 = sharedValue(4811);
   const sharedValue3 = obj4.useSharedValue(AccessibilityStore.useReducedMotion);
   const items = [sharedValue3];
   const effect = react.useEffect(() => {
@@ -44,9 +44,9 @@ function useCoreState() {
       const result = AccessibilityStore.removeReactChangeListener(onChange);
     };
   }, items);
-  const obj5 = sharedValue(4810);
+  const obj5 = sharedValue(4811);
   const sharedValue4 = obj5.useSharedValue(true);
-  const obj6 = sharedValue(4810);
+  const obj6 = sharedValue(4811);
   const sharedValue5 = obj6.useSharedValue(0);
   const fn = function p() {
     let UNDEFINED;
@@ -61,13 +61,13 @@ function useCoreState() {
   fn.__closure = obj8;
   fn.__workletHash = 10375114450450;
   fn.__initData = __initData;
-  const obj7 = sharedValue(4810);
+  const obj7 = sharedValue(4811);
   const derivedValue = obj7.useDerivedValue(fn);
-  const tmp9 = sharedValue3(1630)();
-  const tmp10 = sharedValue3(17473)(tmp9);
-  const obj9 = sharedValue(4810);
+  const tmp9 = sharedValue3(1631)();
+  const tmp10 = sharedValue3(17625)(tmp9);
+  const obj9 = sharedValue(4811);
   const sharedValue6 = obj9.useSharedValue(false);
-  const obj10 = sharedValue(4810);
+  const obj10 = sharedValue(4811);
   const obj11 = { mode: sharedValue, morphablePanelMode: derivedValue, wrapperDimensions: sharedValue1, useReducedMotion: sharedValue3, pipState: sharedValue2, pipAvoidanceSpecs: tmp10, scrollPosition: sharedValue5, canShowPIP: sharedValue4, lockScrolling: sharedValue6, wrapperOffset: obj10.useSharedValue({ x: 0, y: 0, gestureActive: false }) };
   return obj11;
 }

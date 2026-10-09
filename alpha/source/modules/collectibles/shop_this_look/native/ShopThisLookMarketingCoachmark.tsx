@@ -1,23 +1,23 @@
-// Module ID: 12975
-// Function ID: 12976
+// Module ID: 13055
+// Function ID: 13056
 // Name: ShopThisLookMarketingCoachmark
-// Dependencies: [19, 17, 2060, 6891, 21, 5090, 558, 576, 12976, 12970, 1126, 9375, 2]
+// Dependencies: [19, 17, 2061, 6898, 21, 5091, 558, 576, 13056, 13050, 1126, 9413, 2]
 
-// Module 12975 (ShopThisLookMarketingCoachmark)
+// Module 13055 (ShopThisLookMarketingCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import Constants from "Constants" /* 6891 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12970 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import Constants from "Constants" /* 6898 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 13050 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BumpingFistsSpotIllustration = tmp(12976);
+const BumpingFistsSpotIllustration = tmp(13056);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const UserProfileThemeTypes = Constants.UserProfileThemeTypes;

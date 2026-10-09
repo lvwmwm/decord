@@ -38,7 +38,7 @@ function useStateFromStores(items, cResult, items1, isVersionEqual) {
   let closure_6;
   const tmp2 = state(null);
   if (null == tmp2.current) {
-    const obj = { stores: items, areStatesEqual: tmp, getStateFromStores: cResult, prevDeps: "Boolean", state: "code" };
+    const obj = { stores: items, areStatesEqual: tmp, getStateFromStores: cResult, prevDeps: "Boolean", state: "body" };
     tmp2.current = obj;
   }
   current = tmp2.current;

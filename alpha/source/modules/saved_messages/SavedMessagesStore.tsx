@@ -1,16 +1,16 @@
-// Module ID: 9632
-// Function ID: 9633
+// Module ID: 9651
+// Function ID: 9652
 // Name: SavedMessagesStore
-// Dependencies: [1389, 4702, 9633, 5430, 504, 584, 2]
+// Dependencies: [1390, 4704, 9652, 5431, 504, 584, 2]
 // Exports: getComparator
 
-// Module 9632 (SavedMessagesStore)
+// Module 9651 (SavedMessagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4702 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5430 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9633 */;
-import UserStore from "UserStore" /* 1389 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4704 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5431 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9652 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 function getTimeSafe(dueAt) {
@@ -47,6 +47,11 @@ function upsertSavedMessage(saveData) {
   }
   const result = obj.set(combined, saveData);
   const messageId = saveData.saveData.messageId;
+  if (null == saveData.saveData.dueAt) {
+    set1.add(messageId);
+  } else {
+    set1.delete(messageId);
+  }
   const channelId = saveData.saveData.channelId;
   set = map.get(channelId);
   const obj2 = map;
@@ -59,7 +64,7 @@ function upsertSavedMessage(saveData) {
   set.add(messageId);
   const result1 = obj2.set(channelId, set);
   if (null == saveData.message) {
-    set1.add(messageId);
+    set2.add(messageId);
   }
   if (null != saveData.saveData.dueAt) {
     const _Date2 = Date;
@@ -71,6 +76,25 @@ function upsertSavedMessage(saveData) {
     }
   }
   set.delete(messageId);
+}
+function resetSavedMessages(bookmarkIds) {
+  secondaryIndexMap.clear();
+  map.clear();
+  set2.clear();
+  set1.clear();
+  const tmp5 = bookmarkIds[Symbol.iterator]();
+  while (tmp5 !== undefined) {
+    let addResult = set1.add(tmp6);
+    continue;
+  }
+  c10 = null;
+  requestId = null;
+  c12 = false;
+  if (set1.size > 0) {
+    LOADED_FINISHED = SavedMessagesTypes.BookmarksFetchState.LOADED_HAS_MORE;
+  } else {
+    LOADED_FINISHED = SavedMessagesTypes.BookmarksFetchState.LOADED_FINISHED;
+  }
 }
 function nullifyMessageObject(channelId) {
   const combined = "" + channelId.channelId + "-" + channelId.messageId;
@@ -90,7 +114,7 @@ function nullifyMessageObject(channelId) {
   }
 }
 function handleGuild() {
-  let tmp = 0 !== set1.size;
+  let tmp = 0 !== set2.size;
   if (tmp) {
     if (!c6) {
       c6 = true;
@@ -105,9 +129,9 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap((saveData) => 
   saveData = saveData.saveData;
   const items = [SavedMessagesTypes.SavedMessageSortTypes.ALL, ];
   if (null != saveData.dueAt) {
-    BOOKMARK = tmp(9633).SavedMessageSortTypes.REMINDER;
+    BOOKMARK = tmp(9652).SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = tmp(9633).SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = tmp(9652).SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;
@@ -125,6 +149,11 @@ let c6 = true;
 let closure_7 = 0;
 let set = new Set();
 const set1 = new Set();
+let c10 = null;
+let LOADED_FINISHED = SavedMessagesTypes.BookmarksFetchState.LOADED_FINISHED;
+let c12 = false;
+let requestId = null;
+const set2 = new Set();
 const map = new Map();
 const Store = get_initializedDefault.Store;
 class SavedMessagesStore extends Store {
@@ -166,7 +195,19 @@ class SavedMessagesStore extends Store {
     }
   }
   getSavedMessageCount() {
-    return secondaryIndexMap.size();
+    return secondaryIndexMap.values(SavedMessagesTypes.SavedMessageSortTypes.REMINDER).length + set1.size;
+  }
+  getBookmarkCount() {
+    return set1.size;
+  }
+  getBookmarksCursor() {
+    return c10;
+  }
+  getBookmarksFetchState() {
+    return LOADED_FINISHED;
+  }
+  hasFetchedBookmarks() {
+    return c12;
   }
   getIsStale() {
     return c6;
@@ -175,8 +216,7 @@ class SavedMessagesStore extends Store {
     return closure_7;
   }
   isMessageBookmarked(id, id2) {
-    const value = secondaryIndexMap.get("" + id + "-" + id2);
-    return null != value && null == value.saveData.dueAt;
+    return set1.has(id2);
   }
   isMessageReminder(id, id2) {
     const value = secondaryIndexMap.get("" + id + "-" + id2);
@@ -191,19 +231,14 @@ let obj = {
   },
   LOGOUT: function handleLogout() {
     c6 = true;
-    secondaryIndexMap.clear();
-    map.clear();
-    set1.clear();
+    resetSavedMessages([]);
   },
-  SAVED_MESSAGES_UPDATE: function handleUpdate(savedMessages) {
-    savedMessages = savedMessages.savedMessages;
+  SAVED_MESSAGES_UPDATE: function handleUpdate(reminders) {
+    reminders = reminders.reminders;
     c6 = false;
-    secondaryIndexMap.clear();
-    map.clear();
-    set1.clear();
-    const tmp4 = savedMessages[Symbol.iterator]();
-    while (tmp4 !== undefined) {
-      let tmp7 = upsertSavedMessage(tmp5);
+    resetSavedMessages(reminders.bookmarkIds);
+    for (const item10011 of reminders) {
+      let tmp3 = upsertSavedMessage(item10011);
       continue;
     }
   },
@@ -211,23 +246,61 @@ let obj = {
     upsertSavedMessage(savedMessage.savedMessage);
   },
   SAVED_MESSAGE_DELETE: function handleDelete(savedMessageData) {
+    let flag;
     savedMessageData = savedMessageData.savedMessageData;
     const combined = "" + savedMessageData.channelId + "-" + savedMessageData.messageId;
+    const messageId = savedMessageData.messageId;
     const value = secondaryIndexMap.get(combined);
     const obj = secondaryIndexMap;
-    if (null != value) {
+    if (null == value) {
+      flag = set1.delete(messageId);
+    } else {
       obj.delete(combined);
-      const messageId = savedMessageData.messageId;
+      set1.delete(messageId);
       const value2 = map.get(value.saveData.channelId);
       if (value2 != null) {
         value2.delete(messageId);
       }
-      set1.delete(messageId);
+      set2.delete(messageId);
       set.delete(messageId);
       const _Date = Date;
       closure_7 = Date.now();
+      flag = true;
     }
-    return false;
+    return flag;
+  },
+  BOOKMARKS_FETCH: function handleBookmarksFetch(requestId) {
+    requestId = requestId.requestId;
+    LOADED_FINISHED = SavedMessagesTypes.BookmarksFetchState.LOADING;
+  },
+  BOOKMARKS_FETCH_SUCCESS: function handleBookmarksFetchSuccess(bookmarks) {
+    bookmarks = bookmarks.bookmarks;
+    if (bookmarks.requestId !== requestId) {
+      return false;
+    } else {
+      requestId = null;
+      const BookmarksFetchState = SavedMessagesTypes.BookmarksFetchState;
+      LOADED_FINISHED = tmp2 ? BookmarksFetchState.LOADED_HAS_MORE : BookmarksFetchState.LOADED_FINISHED;
+      c12 = true;
+      c10 = tmp;
+      const iter = bookmarks[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp7 = nextResult;
+        if (set1.has(nextResult.saveData.messageId)) {
+          let tmp11 = upsertSavedMessage(tmp7);
+        }
+        continue;
+      }
+    }
+  },
+  BOOKMARKS_FETCH_FAILURE: function handleBookmarksFetchFailure(requestId) {
+    if (requestId.requestId !== requestId) {
+      return false;
+    } else {
+      requestId = null;
+      LOADED_FINISHED = SavedMessagesTypes.BookmarksFetchState.FAILED;
+    }
   },
   MESSAGE_DELETE: function handleMessageDelete(channelId) {
     const combined = "" + channelId.channelId + "-" + channelId.id;
@@ -284,7 +357,7 @@ let obj = {
   GUILD_UPDATE: handleGuild,
   GUILD_DELETE: handleGuild,
   CHANNEL_CREATE: function handleChannelCreate(arg0) {
-    let tmp2 = 0 !== set1.size;
+    let tmp2 = 0 !== set2.size;
     if (tmp2) {
       let tmp4 = !c6;
       if (tmp4) {
@@ -300,7 +373,7 @@ let obj = {
   },
   CHANNEL_UPDATES: function handleChannelUpdates(channels) {
     channels = channels.channels;
-    if (0 === set1.size) {
+    if (0 === set2.size) {
       return false;
     } else if (c6) {
       return false;
@@ -318,7 +391,7 @@ let obj = {
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(arg0) {
-    let tmp2 = 0 !== set1.size;
+    let tmp2 = 0 !== set2.size;
     if (tmp2) {
       let tmp4 = !c6;
       if (tmp4) {
@@ -333,7 +406,7 @@ let obj = {
     return tmp2;
   },
   GUILD_MEMBER_UPDATE: function handleGuildMemberUpdate(arg0) {
-    let tmp2 = 0 !== set1.size;
+    let tmp2 = 0 !== set2.size;
     if (tmp2) {
       let tmp4 = !c6;
       if (tmp4) {

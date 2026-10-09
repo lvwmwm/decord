@@ -1,17 +1,17 @@
-// Module ID: 10677
-// Function ID: 10678
+// Module ID: 10823
+// Function ID: 10824
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 10333, 1085, 21, 5090, 1200, 558, 576, 10678, 1496, 6656, 10681, 4810, 5374, 10682, 10683, 1381, 6326, 2]
+// Dependencies: [32, 19, 17, 10320, 1085, 21, 5091, 1200, 558, 576, 10824, 1497, 6663, 10827, 4811, 5375, 10828, 10829, 1382, 6333, 2]
 
-// Module 10677 (PictureInPicture)
+// Module 10823 (PictureInPicture)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import spring from "spring" /* 5374 */;
-import ChannelCallStore from "ChannelCallStore" /* 10333 */;
+import spring from "spring" /* 5375 */;
+import ChannelCallStore from "ChannelCallStore" /* 10320 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import native_mod from "native" /* 1200 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

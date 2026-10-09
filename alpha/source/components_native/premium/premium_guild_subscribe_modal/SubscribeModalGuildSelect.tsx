@@ -1,22 +1,22 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 5969
+// Function ID: 5970
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 2086, 5968, 5966, 21, 5090, 587, 5974, 558, 576, 1502, 5975, 504, 7078, 1126, 5964, 6189, 6161, 1200, 6803, 2]
+// Dependencies: [32, 19, 17, 2086, 5970, 5968, 21, 5091, 587, 5976, 558, 576, 1503, 5977, 504, 7081, 1126, 5966, 6191, 6165, 1200, 6810, 2]
 
-// Module 5967 (SubscribeModalGuildSelect)
+// Module 5969 (SubscribeModalGuildSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import BoostingActionCreatorsAll from "BoostingActionCreators" /* 5964 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5966 */;
-import LegacyTokens from "LegacyTokens" /* 5974 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
-import SearchBarNavDefault from "SearchBarNav" /* 7078 */;
+import BoostingActionCreatorsAll from "BoostingActionCreators" /* 5966 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5968 */;
+import LegacyTokens from "LegacyTokens" /* 5976 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5977 */;
+import SearchBarNavDefault from "SearchBarNav" /* 7081 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import SortedGuildStore from "SortedGuildStore" /* 5970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeMod
   importAll = onResult;
   dependencyMap = closure_12();
   const tmp4 = closure_12();
-  let obj2 = guildBoostSlots(1502);
+  let obj2 = guildBoostSlots(1503);
   navigation = obj2.useNavigation();
   const tmp6 = navigation(first.useState(""), 2);
   first = tmp6[0];
@@ -302,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeMod
   first = undefined;
   let tmp = closure_12();
   dependencyMap = tmp;
-  let obj = guildBoostSlots(1502);
+  let obj = guildBoostSlots(1503);
   _slicedToArray = obj.useNavigation();
   [first, tmp4] = first.useState("");
   let items = [guildBoostSlots];
@@ -376,7 +376,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeMod
     return reduce2Result;
   }, items2);
   let obj3 = { top: true, style: tmp.safeArea, children: items3 };
-  const SafeAreaPaddingView = guildBoostSlots(6803).SafeAreaPaddingView;
+  const SafeAreaPaddingView = guildBoostSlots(6810).SafeAreaPaddingView;
   const obj4 = { placeholder: intl.string(guildBoostSlots(1126).t.vf3ZTa), onChange: tmp4, onClose: BoostingActionCreatorsAll.closeApplyBoostModal };
   const tmp6 = SearchBarNavDefault;
   intl = guildBoostSlots(1126).intl;
@@ -404,7 +404,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeMod
       return closure_1_11(PressableOpacity, obj, guild.id);
     })
   };
-  SafeAreaPaddingView2 = guildBoostSlots(6803).SafeAreaPaddingView;
+  SafeAreaPaddingView2 = guildBoostSlots(6810).SafeAreaPaddingView;
   items3[1] = closure_10(memo, obj5);
   return closure_11(SafeAreaPaddingView, obj3);
 });

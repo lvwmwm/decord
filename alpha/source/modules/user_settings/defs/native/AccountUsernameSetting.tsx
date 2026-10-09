@@ -1,27 +1,27 @@
-// Module ID: 14791
-// Function ID: 14792
+// Module ID: 14899
+// Function ID: 14900
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1389, 7966, 1085, 21, 558, 576, 4922, 504, 11482, 5086, 11262, 1126, 14792, 2]
+// Dependencies: [19, 1390, 7974, 1085, 21, 558, 576, 4923, 504, 11412, 5087, 10629, 1126, 14900, 2]
 
-// Module 14791 (AccountUsernameSetting)
+// Module 14899 (AccountUsernameSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import SettingsConstants from "SettingsConstants" /* 7966 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11482 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import SettingsConstants from "SettingsConstants" /* 7974 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11412 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11262 */;
+import SettingBuilders from "SettingBuilders" /* 10629 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
 const get_initialized = tmp(504);
-const Text_Text = tmp(5086);
+const Text_Text = tmp(5087);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;

@@ -1,17 +1,17 @@
-// Module ID: 17547
-// Function ID: 17548
+// Module ID: 17699
+// Function ID: 17700
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 5079, 1205, 17539, 6830, 558, 576, 1496, 504, 4929, 2045, 7038, 2]
+// Dependencies: [5, 19, 5080, 1205, 17691, 6837, 558, 576, 1497, 504, 4930, 2046, 7041, 2]
 
-// Module 17547 (SoundboardHooks)
+// Module 17699 (SoundboardHooks)
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6830 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6837 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17539 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17691 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

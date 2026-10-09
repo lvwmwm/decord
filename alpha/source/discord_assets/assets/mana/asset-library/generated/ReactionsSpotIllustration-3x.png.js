@@ -1,0 +1,11 @@
+// Module ID: 9258
+// Function ID: 9259
+// Dependencies: [2]
+
+// Module 9258
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ReactionsSpotIllustration-3x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/23ebb670af4fa09a8e2faf3edc282e8ce111ee4d6504b1bfeaab0c8ad4422d60.png";
+export const metadata = { fileBytes: 170030 };

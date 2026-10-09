@@ -1,21 +1,21 @@
-// Module ID: 9685
-// Function ID: 9686
+// Module ID: 9704
+// Function ID: 9705
 // Name: GIFPicker
-// Dependencies: [32, 19, 17, 9686, 1085, 21, 5090, 558, 576, 9687, 1264, 6618, 9690, 12, 9693, 504, 9694, 9695, 9696, 9699, 9700, 9704, 2]
+// Dependencies: [32, 19, 17, 9705, 1085, 21, 5091, 558, 576, 9706, 1265, 6625, 9709, 12, 9712, 504, 9713, 9714, 9715, 9718, 9719, 9723, 2]
 
-// Module 9685 (GIFPicker)
+// Module 9704 (GIFPicker)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import GIFPickerActionCreatorsAll from "GIFPickerActionCreators" /* 9687 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9690 */;
-import GifPickerUtils from "GifPickerUtils" /* 9693 */;
-import GIFPickerSearchSuggestionsDefault from "GIFPickerSearchSuggestions" /* 9695 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GIFPickerActionCreatorsAll from "GIFPickerActionCreators" /* 9706 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9709 */;
+import GifPickerUtils from "GifPickerUtils" /* 9712 */;
+import GIFPickerSearchSuggestionsDefault from "GIFPickerSearchSuggestions" /* 9714 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 9686 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 9705 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       onPressGIF(obj2.useState(false), 2);
       const tmp10Result5 = onPressGIF(obj2.useState(first1.SEARCH), 2);
       first1 = tmp10Result5[0];
-      closure_12 = tmp10Result5[1];
+      let closure_12 = tmp10Result5[1];
       [tmp28, tmp29] = onPressGIF(obj2.useState(""), 2);
       const _Symbol2 = Symbol;
       onPressGIF(obj2.useState(""), 2);

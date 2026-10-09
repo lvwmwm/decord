@@ -1,18 +1,18 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 9117
+// Function ID: 9118
 // Name: gift_plan_selection_card_banner
-// Dependencies: [32, 1210, 10021, 10019, 10011, 2]
+// Dependencies: [32, 1210, 9116, 9114, 9106, 2]
 
-// Module 10022 (gift_plan_selection_card_banner)
+// Module 9117 (gift_plan_selection_card_banner)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 10011 */;
-import gradient2 from "gradient" /* 10019 */;
-import theme_aware_asset from "theme_aware_asset" /* 10021 */;
+import localized_string from "localized_string" /* 9106 */;
+import gradient2 from "gradient" /* 9114 */;
+import theme_aware_asset from "theme_aware_asset" /* 9116 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 const GiftPlanSelectionCardBanner_AssetVariant = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", NORMAL: 1, [1]: "NORMAL", LARGE_TILTED: 2, [2]: "LARGE_TILTED" };
 const MessageType = _mod1210.MessageType;
@@ -225,7 +225,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
     }
     if (header.mobileBodyLocalized) {
       const LocalizedString3 = localized_string.LocalizedString;
-      internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
+      const internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
       const mobileBodyLocalized = header.mobileBodyLocalized;
       const tagResult14 = tag.tag(15, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(mobileBodyLocalized, tagResult14.fork(), writeUnknownFields);

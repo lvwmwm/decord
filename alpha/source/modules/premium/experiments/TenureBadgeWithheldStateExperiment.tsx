@@ -1,11 +1,11 @@
-// Module ID: 10541
-// Function ID: 10542
+// Module ID: 10531
+// Function ID: 10532
 // Name: TenureBadgeWithheldStateExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 // Exports: shouldShowWithheldTenureBadge
 
-// Module 10541 (TenureBadgeWithheldStateExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 10531 (TenureBadgeWithheldStateExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-08-nitro-tenure-badge-withheld-state", defaultConfig: { showWithheldBadge: false }, variations: { 0: { showWithheldBadge: false }, 1: { showWithheldBadge: true } } };

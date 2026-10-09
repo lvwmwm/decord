@@ -1,28 +1,28 @@
-// Module ID: 11870
-// Function ID: 11871
+// Module ID: 11807
+// Function ID: 11808
 // Name: AppLauncherList
-// Dependencies: [109, 19, 17, 21, 5090, 558, 576, 1630, 11806, 4783, 1126, 1200, 11871, 6730, 2]
+// Dependencies: [109, 19, 17, 21, 5091, 558, 576, 1631, 11743, 4784, 1126, 1200, 11808, 6737, 2]
 
-// Module 11870 (AppLauncherList)
+// Module 11807 (AppLauncherList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import mergeProps from "mergeProps" /* 4783 */;
-import AppLauncherFlashList from "AppLauncherFlashList" /* 11806 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11871 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import mergeProps from "mergeProps" /* 4784 */;
+import AppLauncherFlashList from "AppLauncherFlashList" /* 11743 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11808 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp9;
-const SearchField2 = tmp(6730);
-const AppLauncherFlashListDefault = tmp9(11806);
+const SearchField2 = tmp(6737);
+const AppLauncherFlashListDefault = tmp9(11743);
 let closure_3 = ["ref"];
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -122,8 +122,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   ref = ref.ref;
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   let appLauncherFlashListProps;
-  const bottom = appLauncherFlashListProps(1630)().bottom;
-  let obj = ref(11806);
+  const bottom = appLauncherFlashListProps(1631)().bottom;
+  let obj = ref(11743);
   appLauncherFlashListProps = obj.useAppLauncherFlashListProps();
   const items = [appLauncherFlashListProps.scrollerRef, ref];
   const memo = react.useMemo(() => {
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     return obj.mergeRefs(appLauncherFlashListProps.scrollerRef, ref);
   }, items);
   const items1 = [{ paddingBottom: bottom }, merged.contentContainerStyle];
-  appLauncherFlashListProps(11806);
+  appLauncherFlashListProps(11743);
   const merged1 = Object.assign(merged);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
   return <tmp4 contentContainerStyle={items1} scrollIndicatorInsets={{ bottom }} ref={memo} />;

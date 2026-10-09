@@ -1,24 +1,24 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 12285
+// Function ID: 12286
 // Name: useDMMessageToReport
-// Dependencies: [558, 576, 12347, 12348, 12349, 12185, 12353, 2]
+// Dependencies: [558, 576, 12286, 12287, 12288, 12124, 12289, 2]
 
-// Module 12346 (useDMMessageToReport)
+// Module 12285 (useDMMessageToReport)
 import react from "react" /* 576 */;
-import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 12185 */;
-import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 12347 */;
-import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 12348 */;
-import useMessageRequestPreview from "useMessageRequestPreview" /* 12353 */;
+import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 12124 */;
+import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 12286 */;
+import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 12287 */;
+import useMessageRequestPreview from "useMessageRequestPreview" /* 12289 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const useIsApplicationDeveloperDefault = tmp5(12349);
+const useIsOwnedConjureApplicationDefault = tmp5(12288);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMMessageToReport(id, arg1, arg2) {
   let error;
   let loaded;
   let message;
-  let tmp13;
+  let tmp14;
   const obj = react;
   const cResult = obj.c(6);
   const obj2 = useIsRelationshipTypeSpamReportable;
@@ -29,8 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMMessa
     tmp7 = arg1;
   }
   const tmp6Result = tmp6(tmp7);
-  let tmp10 = null;
-  const tmp5Result = useIsApplicationDeveloperDefault;
+  useIsOwnedConjureApplicationDefault;
   if (arg2) {
     id = undefined;
     if (tmp6Result != null) {
@@ -39,10 +38,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMMessa
     if (id == null) {
       id = arg1;
     }
-    tmp10 = id;
   }
   if (arg2) {
-    isRelationshipTypeSpamReportable = !tmp5Result(tmp10);
+    isRelationshipTypeSpamReportable = true !== tmp12;
   }
   const tmpResult = useLongestChannelMessageBeforeReply;
   let longestChannelMessageBeforeReply = tmpResult.useLongestChannelMessageBeforeReply(id.id, arg1);
@@ -50,13 +48,73 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMMessa
     const obj3 = { enabled: isRelationshipTypeSpamReportable };
     cResult[0] = isRelationshipTypeSpamReportable;
     cResult[1] = obj3;
-    tmp13 = obj3;
+    tmp14 = obj3;
   } else {
-    tmp13 = cResult[1];
+    tmp14 = cResult[1];
   }
   const tmpResult2 = useMessageRequestPreview;
-  const messageRequestPreview = tmpResult2.useMessageRequestPreview(id, tmp13);
+  const messageRequestPreview = tmpResult2.useMessageRequestPreview(id, tmp14);
   ({ message, loaded, error } = messageRequestPreview);
+  if (longestChannelMessageBeforeReply == null) {
+    let id1;
+    if (message != null) {
+      const author = message.author;
+      if (author != null) {
+        id1 = author.id;
+      }
+    }
+    let tmp17 = null;
+    if (id1 === arg1) {
+      tmp17 = message;
+    }
+    longestChannelMessageBeforeReply = tmp17;
+  }
+  if (cResult[2] === (null != longestChannelMessageBeforeReply || loaded || error)) {
+    if (cResult[3] === isRelationshipTypeSpamReportable) {
+      let tmp19;
+      if (cResult[4] === longestChannelMessageBeforeReply) {
+        tmp19 = cResult[5];
+      }
+      return tmp19;
+    }
+  }
+  const obj4 = { message: longestChannelMessageBeforeReply, isReportable: isRelationshipTypeSpamReportable, isLoaded: null != longestChannelMessageBeforeReply || loaded || error };
+  cResult[2] = null != longestChannelMessageBeforeReply || loaded || error;
+  cResult[3] = isRelationshipTypeSpamReportable;
+  cResult[4] = longestChannelMessageBeforeReply;
+  cResult[5] = obj4;
+  tmp19 = obj4;
+}) : (function useDMMessageToReport(id, arg1, arg2) {
+  let error;
+  let loaded;
+  const obj = useIsRelationshipTypeSpamReportable;
+  let isRelationshipTypeSpamReportable = obj.useIsRelationshipTypeSpamReportable(arg1);
+  let tmp6 = null;
+  const tmp5 = getApplicationFromBotUserIdDefault;
+  if (arg2) {
+    tmp6 = arg1;
+  }
+  const tmp5Result = tmp5(tmp6);
+  useIsOwnedConjureApplicationDefault;
+  if (arg2) {
+    id = undefined;
+    if (tmp5Result != null) {
+      id = tmp5Result.id;
+    }
+    if (id == null) {
+      id = arg1;
+    }
+  }
+  if (arg2) {
+    isRelationshipTypeSpamReportable = true !== tmp11;
+  }
+  const tmpResult = useLongestChannelMessageBeforeReply;
+  const longestChannelMessageBeforeReply = tmpResult.useLongestChannelMessageBeforeReply(id.id, arg1);
+  const tmpResult2 = useMessageRequestPreview;
+  const messageRequestPreview = tmpResult2.useMessageRequestPreview(id, { enabled: isRelationshipTypeSpamReportable });
+  const message = messageRequestPreview.message;
+  let tmp14 = longestChannelMessageBeforeReply;
+  ({ loaded, error } = messageRequestPreview);
   if (longestChannelMessageBeforeReply == null) {
     let id1;
     if (message != null) {
@@ -69,71 +127,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMMessa
     if (id1 === arg1) {
       tmp16 = message;
     }
-    longestChannelMessageBeforeReply = tmp16;
+    tmp14 = tmp16;
   }
-  if (cResult[2] === (null != longestChannelMessageBeforeReply || loaded || error)) {
-    if (cResult[3] === isRelationshipTypeSpamReportable) {
-      let tmp18;
-      if (cResult[4] === longestChannelMessageBeforeReply) {
-        tmp18 = cResult[5];
-      }
-      return tmp18;
-    }
-  }
-  const obj4 = { message: longestChannelMessageBeforeReply, isReportable: isRelationshipTypeSpamReportable, isLoaded: null != longestChannelMessageBeforeReply || loaded || error };
-  cResult[2] = null != longestChannelMessageBeforeReply || loaded || error;
-  cResult[3] = isRelationshipTypeSpamReportable;
-  cResult[4] = longestChannelMessageBeforeReply;
-  cResult[5] = obj4;
-  tmp18 = obj4;
-}) : (function useDMMessageToReport(id, arg1, arg2) {
-  let error;
-  let loaded;
-  const obj = useIsRelationshipTypeSpamReportable;
-  let isRelationshipTypeSpamReportable = obj.useIsRelationshipTypeSpamReportable(arg1);
-  let tmp6 = null;
-  const tmp5 = getApplicationFromBotUserIdDefault;
-  if (arg2) {
-    tmp6 = arg1;
-  }
-  const tmp5Result = tmp5(tmp6);
-  let tmp9 = null;
-  const tmp4Result = useIsApplicationDeveloperDefault;
-  if (arg2) {
-    id = undefined;
-    if (tmp5Result != null) {
-      id = tmp5Result.id;
-    }
-    if (id == null) {
-      id = arg1;
-    }
-    tmp9 = id;
-  }
-  if (arg2) {
-    isRelationshipTypeSpamReportable = !tmp4Result(tmp9);
-  }
-  const tmpResult = useLongestChannelMessageBeforeReply;
-  const longestChannelMessageBeforeReply = tmpResult.useLongestChannelMessageBeforeReply(id.id, arg1);
-  const tmpResult2 = useMessageRequestPreview;
-  const messageRequestPreview = tmpResult2.useMessageRequestPreview(id, { enabled: isRelationshipTypeSpamReportable });
-  const message = messageRequestPreview.message;
-  let tmp13 = longestChannelMessageBeforeReply;
-  ({ loaded, error } = messageRequestPreview);
-  if (longestChannelMessageBeforeReply == null) {
-    let id1;
-    if (message != null) {
-      const author = message.author;
-      if (author != null) {
-        id1 = author.id;
-      }
-    }
-    let tmp15 = null;
-    if (id1 === arg1) {
-      tmp15 = message;
-    }
-    tmp13 = tmp15;
-  }
-  return { message: tmp13, isReportable: isRelationshipTypeSpamReportable, isLoaded: null != tmp13 || loaded || error };
+  return { message: tmp14, isReportable: isRelationshipTypeSpamReportable, isLoaded: null != tmp14 || loaded || error };
 });
 const result = size.fileFinishedImporting("modules/messages/useDMMessageToReport.tsx");
 

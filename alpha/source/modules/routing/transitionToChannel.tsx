@@ -1,16 +1,16 @@
-// Module ID: 5101
-// Function ID: 5102
+// Module ID: 5102
+// Function ID: 5103
 // Name: transitionToChannel
-// Dependencies: [2063, 1085, 5102, 5103, 1112, 5104, 38, 2]
+// Dependencies: [2064, 1085, 5103, 5104, 1112, 5105, 38, 2]
 // Exports: transitionToChannel, transitionToMessage, transitionToStaticChannelRoute, transitionToThread, transitionToThreadMessage, tryTransitionToThreadMessage
 
-// Module 5101 (transitionToChannel)
+// Module 5102 (transitionToChannel)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
-import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 5102 */;
-import preloadChannelDefault from "preloadChannel" /* 5103 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 5103 */;
+import preloadChannelDefault from "preloadChannel" /* 5104 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -37,7 +37,7 @@ export const transitionToChannel = function transitionToChannel(id, openTextInVo
       prop = channel.isGuildVocal();
     }
     if (prop) {
-      const tmp7Result = tmp7(5104);
+      const tmp7Result = tmp7(5105);
       tmp7Result.updateChatOpen(channel.id, true);
     }
   }
@@ -98,7 +98,7 @@ export const tryTransitionToThreadMessage = function tryTransitionToThreadMessag
         prop = channel1.isGuildVocal();
       }
       if (prop) {
-        const tmp21Result = tmp21(5104);
+        const tmp21Result = tmp21(5105);
         tmp21Result.updateChatOpen(channel1.id, true);
       }
     }
@@ -117,11 +117,11 @@ export const transitionToMessage = function transitionToMessage(channelId, messa
     transitionTo(CHANNELResult, obj2);
   }
 };
-export const transitionToStaticChannelRoute = function transitionToStaticChannelRoute(guildId, GUILD_HOME, arg2) {
+export const transitionToStaticChannelRoute = function transitionToStaticChannelRoute(arg0, arg1, arg2) {
   const transitionTo = router_utils.transitionTo;
   const obj = { openChannel: true };
   router_utils;
-  const CHANNELResult = Routes.CHANNEL(guildId, GUILD_HOME);
+  const CHANNELResult = Routes.CHANNEL(arg0, arg1);
   const merged = Object.assign(arg2);
   transitionTo(CHANNELResult, obj);
 };

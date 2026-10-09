@@ -1,28 +1,28 @@
-// Module ID: 11634
-// Function ID: 11635
+// Module ID: 11570
+// Function ID: 11571
 // Name: SharedCustomThemeActionSheet
-// Dependencies: [32, 19, 17, 4732, 1085, 1391, 21, 5090, 587, 558, 576, 1264, 11635, 4926, 5258, 6828, 1126, 2795, 5086, 5375, 6829, 504, 4726, 7130, 6865, 1200, 1251, 2]
+// Dependencies: [32, 19, 17, 4734, 1085, 1392, 21, 5091, 587, 558, 576, 1265, 11571, 4927, 5259, 6835, 1126, 2795, 5087, 5376, 6836, 504, 4728, 7135, 6872, 1200, 1252, 2]
 
-// Module 11634 (SharedCustomThemeActionSheet)
+// Module 11570 (SharedCustomThemeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1251 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4726 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4926 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5258 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6865 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7130 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11635 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4927 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5259 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7135 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11571 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4732 */;
+import SubscriptionStore from "SubscriptionStore" /* 4734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let map1;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-const f108750 = (item) => "#" + item;
+const f108678 = (item) => "#" + item;
 ({ useEffect: hasOwnProperty, useLayoutEffect: metroRequire, useRef: metroImportDefault } = react);
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[0] !== sharedClientTheme) {
     let tmp7;
     if (undefined !== sharedClientTheme) {
-      let obj4 = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      let obj4 = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = sharedClientTheme.colors;
       ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
       tmp7 = obj4;
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         let tmp4;
         const tmp = closure_3;
         if (undefined !== sharedClientTheme) {
-          const obj = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
+          const obj = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         let tmp4;
         const tmp = closure_3;
         if (undefined !== sharedClientTheme) {
-          const obj = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
+          const obj = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
@@ -174,7 +174,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         let tmp4;
         const tmp = closure_3;
         if (undefined !== sharedClientTheme) {
-          const obj = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
+          const obj = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
@@ -581,7 +581,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let tmp4;
   const useState = first1.useState;
   if (undefined !== sharedClientTheme) {
-    let obj4 = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
+    let obj4 = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
     colors = sharedClientTheme.colors;
     ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
     tmp4 = obj4;
@@ -606,7 +606,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     let tmp4;
     const tmp = closure_3;
     if (undefined !== sharedClientTheme) {
-      const obj = { colors: colors.map(f108750), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      const obj = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = tmp2.colors;
       ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
       tmp4 = obj;
@@ -763,7 +763,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Primar
     if (cResult[4] !== tmp4.nitroWheelButton) {
       const fn2 = function f() {
         const obj = { style: nitroWheelButton.nitroWheelButton };
-        return closure_12(native.NitroWheel, obj);
+        return authStore2(native.NitroWheel, obj);
       };
       cResult[4] = tmp4.nitroWheelButton;
       cResult[5] = fn2;
@@ -797,7 +797,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Primar
     }
     if (cResult[10] !== onPressApply) {
       const obj4 = { text: tmp11, onPress: onPressApply, variant: "primary" };
-      const tmp15 = closure_12(tmp(5375).Button, obj4);
+      const tmp15 = closure_12(tmp(5376).Button, obj4);
       cResult[10] = onPressApply;
       cResult[11] = tmp15;
       tmp13 = tmp15;
@@ -833,7 +833,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Primar
         },
       renderIcon() {
           const obj = { style: nitroWheelButton.nitroWheelButton };
-          return closure_12(native.NitroWheel, obj);
+          return authStore2(native.NitroWheel, obj);
         },
       style: tmp.getNitroButton
     };
@@ -842,7 +842,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Primar
     tmp6 = closure_12(ShinyButton, obj3);
   } else {
     const obj4 = { text: intl.string(require("intl").t["1Qm822"]), onPress: onPressApply, variant: "primary" };
-    const Button = tmp2(5375).Button;
+    const Button = tmp2(5376).Button;
     intl = tmp2(1126).intl;
     tmp6 = closure_12(Button, obj4);
   }

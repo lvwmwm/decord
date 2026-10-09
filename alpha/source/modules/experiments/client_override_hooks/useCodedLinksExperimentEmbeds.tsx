@@ -1,18 +1,18 @@
-// Module ID: 11271
-// Function ID: 11272
+// Module ID: 10638
+// Function ID: 10639
 // Name: useCodedLinksExperimentEmbeds
-// Dependencies: [32, 19, 1389, 4976, 1258, 558, 576, 504, 11272, 11273, 2]
+// Dependencies: [32, 19, 1390, 4977, 1259, 558, 576, 504, 10639, 10640, 2]
 // Exports: canSeeExperimentEmbeds
 
-// Module 11271 (useCodedLinksExperimentEmbeds)
+// Module 10638 (useCodedLinksExperimentEmbeds)
 import react2 from "react" /* 576 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11272 */;
-import useApexExperiments from "useApexExperiments" /* 11273 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 10639 */;
+import useApexExperiments from "useApexExperiments" /* 10640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import ExperimentStore from "ExperimentStore" /* 4976 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
+import UserStore from "UserStore" /* 1390 */;
+import ExperimentStore from "ExperimentStore" /* 4977 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -404,13 +404,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCodedLi
         return clientOverrides;
       }
     }
-    const tmpResult13 = tmp(11272);
+    const tmpResult13 = tmp(10639);
     tmp24[0] = tmpResult13.parseRegisteredExperiments(stateFromStoresObject);
-    const tmpResult14 = tmp(11272);
+    const tmpResult14 = tmp(10639);
     tmp24[1] = tmpResult14.getLegacyOverridesInfo(stateFromStoresObject1);
-    const tmpResult15 = tmp(11273);
+    const tmpResult15 = tmp(10640);
     tmp24[2] = tmpResult15.mergeApexExperiments(stateFromStores, stateFromStores1);
-    const tmpResult16 = tmp(11273);
+    const tmpResult16 = tmp(10640);
     tmp24[3] = tmpResult16.getApexExperimentOverridesInfo(stateFromStores2);
     tmp23 = tmp24;
   } else {

@@ -1,16 +1,16 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 17156
+// Function ID: 17157
 // Name: ConjureIdeasOffer
-// Dependencies: [19, 17, 21, 558, 576, 16955, 1126, 3827, 5373, 5375, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17087, 1126, 3827, 5374, 5376, 2]
 
-// Module 17000 (ConjureIdeasOffer)
+// Module 17156 (ConjureIdeasOffer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 16955 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 17087 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIde
     tmp15 = tmp18;
   }
   const obj4 = { direction: "horizontal", children: React3(components_Button_Button.Button, { variant: "secondary", size: "sm", disabled: null == onAsk, onPress: onAsk, text: tmp10 }) };
-  const Stack = tmp(5373).Stack;
+  const Stack = tmp(5374).Stack;
   const tmp14 = React3(Stack, obj4);
   cResult[2] = onAsk;
   cResult[3] = null == onAsk;

@@ -1,31 +1,30 @@
-// Module ID: 13938
-// Function ID: 13939
+// Module ID: 14035
+// Function ID: 14036
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 5090, 558, 576, 9163, 5086, 13936, 1126, 5375, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 6163, 12867, 5087, 14033, 1126, 5376, 2]
 
-// Module 13938 (ActivateDeviceError)
+// Module 14035 (ActivateDeviceError)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9163 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13936 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12867 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14033 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
-({ Image: c3, View: closure_4 } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
-let closure_8 = createStyles.createStyles({ image: { width: 254, height: 127, alignSelf: "center" } });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDeviceError(onRetry) {
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
+let closure_7 = createStyles.createStyles({ image: { width: 254, height: 127, alignSelf: "center" } });
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDeviceError(onRetry) {
   let intl;
   let intl2;
   let items;
@@ -38,10 +37,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
   const obj = react2;
   const cResult = obj.c(10);
   onRetry = onRetry.onRetry;
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   if (cResult[0] !== tmp4.image) {
     const obj2 = { source: AssetRegistryDefault, style: tmp4.image };
-    const tmp9 = hasOwnProperty(_false, obj2);
+    const tmp8 = FastImageDefault;
+    const tmp9 = React3(tmp8, obj2);
     cResult[0] = tmp4.image;
     cResult[1] = tmp9;
     tmp5 = tmp9;
@@ -50,9 +50,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
-    const tmp13 = hasOwnProperty(Text, obj3);
+    const tmp13 = React3(Text, obj3);
     cResult[2] = tmp13;
     tmp10 = tmp13;
   } else {
@@ -62,10 +62,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
     const obj4 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items };
     items = [tmp10, ];
     const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
-    const Text2 = tmp(5086).Text;
+    const Text2 = tmp(5087).Text;
     intl2 = tmp(1126).intl;
-    items[1] = hasOwnProperty(Text2, obj5);
-    const tmp19 = metroRequire(React3, obj4);
+    items[1] = React3(Text2, obj5);
+    const tmp19 = hasOwnProperty(View, obj4);
     cResult[3] = tmp19;
     tmp14 = tmp19;
   } else {
@@ -81,7 +81,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
   }
   if (cResult[5] !== onRetry) {
     const obj6 = { size: "lg", text: tmp20, onPress: onRetry, grow: true };
-    const tmp24 = hasOwnProperty(components_Button_Button.Button, obj6);
+    const tmp24 = React3(components_Button_Button.Button, obj6);
     cResult[5] = onRetry;
     cResult[6] = tmp24;
     tmp22 = tmp24;
@@ -97,7 +97,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
   }
   const obj7 = { children: items1 };
   items1 = [tmp5, tmp14, tmp22];
-  const tmp26 = metroRequire(metroImportDefault, obj7);
+  const tmp26 = hasOwnProperty(metroRequire, obj7);
   cResult[7] = tmp5;
   cResult[8] = tmp22;
   cResult[9] = tmp26;
@@ -112,24 +112,25 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
   onRetry = onRetry.onRetry;
   const obj = { children: items };
   const obj2 = { source: AssetRegistryDefault, style: tmp.image };
-  tmp = closure_8();
-  items = [hasOwnProperty(_false, obj2), , ];
+  tmp = closure_7();
+  const tmp2 = FastImageDefault;
+  items = [React3(tmp2, obj2), , ];
   const obj3 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items1 };
   const obj4 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items1 = [hasOwnProperty(Text, obj4), ];
+  items1 = [React3(Text, obj4), ];
   const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items1[1] = hasOwnProperty(Text2, obj5);
-  items[1] = metroRequire(React3, obj3);
+  items1[1] = React3(Text2, obj5);
+  items[1] = hasOwnProperty(View, obj3);
   const obj6 = { size: "lg", text: intl3.string(intl4.t["5911Lb"]), onPress: onRetry, grow: true };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
-  items[2] = hasOwnProperty(Button, obj6);
-  return metroRequire(metroImportDefault, obj);
+  items[2] = React3(Button, obj6);
+  return hasOwnProperty(metroRequire, obj);
 });
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceError.tsx");
 
-export const ActivateDeviceError = tmp5;
+export const ActivateDeviceError = tmp4;

@@ -1,16 +1,16 @@
-// Module ID: 5885
-// Function ID: 5886
+// Module ID: 5886
+// Function ID: 5887
 // Name: SelectedChannelActionCreators
-// Dependencies: [5109, 2063, 2011, 1085, 5886, 584, 1112, 10897, 2]
+// Dependencies: [5110, 2064, 2012, 1085, 5887, 584, 1112, 11071, 2]
 
-// Module 5885 (SelectedChannelActionCreators)
+// Module 5886 (SelectedChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
-import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 5886 */;
-import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 10897 */;
-import GameConsoleStore from "GameConsoleStore" /* 5109 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 5887 */;
+import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 11071 */;
+import GameConsoleStore from "GameConsoleStore" /* 5110 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

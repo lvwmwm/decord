@@ -1,10 +1,10 @@
-// Module ID: 17821
-// Function ID: 17822
+// Module ID: 17975
+// Function ID: 17976
 // Name: getInAppReportsFeedbackOptions
 // Dependencies: [1126, 2]
 // Exports: default
 
-// Module 17821 (getInAppReportsFeedbackOptions)
+// Module 17975 (getInAppReportsFeedbackOptions)
 import intl4 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 13358
-// Function ID: 13359
+// Module ID: 13453
+// Function ID: 13454
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 2082, 2063, 2086, 4707, 4717, 1389, 1085, 7418, 7861, 1414, 1381, 1126, 8134, 5417, 2]
+// Dependencies: [32, 17, 2082, 2064, 2086, 4709, 4719, 1390, 1085, 7423, 7870, 1415, 1382, 1126, 8142, 5418, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 13358 (VoiceChannelLinkEmbed)
+// Module 13453 (VoiceChannelLinkEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import GuildRecord from "GuildRecord" /* 2082 */;
-import useChannelName from "useChannelName" /* 5417 */;
-import Constants2 from "Constants" /* 7418 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7861 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
+import useChannelName from "useChannelName" /* 5418 */;
+import Constants2 from "Constants" /* 7423 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7870 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8142 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -60,7 +60,7 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             }
             if (null != icon) {
               let id;
-              const getGuildIconURL = tmp5(1414).getGuildIconURL;
+              const getGuildIconURL = tmp5(1415).getGuildIconURL;
               AvatarUtilsDefault;
               if (guild != null) {
                 id = guild.id;

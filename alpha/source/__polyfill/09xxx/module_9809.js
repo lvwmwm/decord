@@ -6,56 +6,70 @@
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let start;
-
-const regExp = new RegExp("^\\s*(?:\\(?(?:GMT|UTC)\\s?)?([+-])(\\d{1,2})(?::?(\\d{2}))?\\)?", "i");
-class ExtractTimezoneOffsetRefiner {
+class Filter {
   constructor() {
-    _classCallCheck(this, ExtractTimezoneOffsetRefiner);
+    _classCallCheck(this, Filter);
   }
 }
 const entry = {
   key: "refine",
   value: function refine(arg0, arr) {
-    let text = arg0;
-    const item = arr.forEach((start) => {
-      text = start;
-      start = start.start;
-      if (!start.isCertain("timezoneOffset")) {
-        const str = text.text;
-        const match = regExp.exec(str.substring(start.index + start.text.length));
-        const obj = text;
-        if (match) {
-          obj.debug(() => {
-            console.log("Extracting timezone: '" + match[0] + "' into : " + closure_0);
-          });
-          const _parseInt = parseInt;
-          let str2 = match[3];
-          const result = 60 * parseInt(match[2]);
-          const _parseInt2 = parseInt;
-          if (!str2) {
-            str2 = "0";
-          }
-          const sum = result + _parseInt2(str2);
-          if (sum <= 840) {
-            let tmp7 = sum;
-            if ("-" === match[1]) {
-              tmp7 = -sum;
-            }
-            if (null != start.end) {
-              const end = start.end;
-              end.assign("timezoneOffset", tmp7);
-            }
-            const start2 = start.start;
-            start2.assign("timezoneOffset", tmp7);
-            start.text = start.text + match[0];
-          }
-        }
-      }
-    });
-    return arr;
+    const self = this;
+    let closure_0 = arg0;
+    return arr.filter((item) => self.isValid(closure_0, item));
   }
 };
-const items = [entry];
+let items = [entry];
+class MergingRefiner {
+  constructor() {
+    _classCallCheck(this, MergingRefiner);
+  }
+}
+const entry1 = {
+  key: "refine",
+  value: function refine(text, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
+    } else {
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp20 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp11;
+          let tmp = arg1[num];
+          let str = text.text;
+          let substr = str.substring(first.index + first.text.length, tmp.index);
+          if (self.shouldMergeResults(substr, first, tmp, text)) {
+            let closure_1 = tmp;
+            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
+            let debugResult = text.debug(() => {
+              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
+            });
+            tmp11 = mergeResultsResult;
+          } else {
+            let arr = items.push(first);
+            tmp11 = tmp;
+          }
+          num = num2 + 1;
+          first = tmp11;
+          tmp20 = tmp11;
+          num2 = num;
+        } while (num < arg1.length);
+      }
+      if (null != tmp20) {
+        items.push(tmp20);
+      }
+      return items;
+    }
+  }
+};
+const items1 = [entry1];
+const Filter_export = _createClass(Filter, items);
+const MergingRefiner_export = _createClass(MergingRefiner, items1);
 
-export default _createClass(ExtractTimezoneOffsetRefiner, items);
+export { Filter_export as Filter };
+export { MergingRefiner_export as MergingRefiner };

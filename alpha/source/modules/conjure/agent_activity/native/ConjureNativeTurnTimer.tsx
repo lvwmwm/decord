@@ -1,16 +1,16 @@
-// Module ID: 17044
-// Function ID: 17045
+// Module ID: 17200
+// Function ID: 17201
 // Name: ConjureNativeTurnTimer
-// Dependencies: [19, 21, 5090, 558, 576, 17045, 16966, 5086, 2]
+// Dependencies: [19, 21, 5091, 558, 576, 17201, 17098, 5087, 2]
 
-// Module 17044 (ConjureNativeTurnTimer)
+// Module 17200 (ConjureNativeTurnTimer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import ConjureDuration from "ConjureDuration" /* 16966 */;
-import useConjureElapsedMs from "useConjureElapsedMs" /* 17045 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import ConjureDuration from "ConjureDuration" /* 17098 */;
+import useConjureElapsedMs from "useConjureElapsedMs" /* 17201 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

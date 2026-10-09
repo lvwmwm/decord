@@ -1,20 +1,20 @@
-// Module ID: 18185
-// Function ID: 18186
+// Module ID: 18347
+// Function ID: 18348
 // Name: GuildSettingsModalAnalytics
-// Dependencies: [5, 19, 17, 2128, 1085, 21, 5090, 587, 558, 576, 504, 18186, 1264, 7024, 7028, 5086, 1126, 1200, 5375, 5373, 18206, 6719, 2]
+// Dependencies: [5, 19, 17, 2128, 1085, 21, 5091, 587, 558, 576, 504, 18348, 1265, 7027, 7031, 5087, 1126, 1200, 5376, 5374, 18368, 6726, 2]
 
-// Module 18185 (GuildSettingsModalAnalytics)
+// Module 18347 (GuildSettingsModalAnalytics)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7024 */;
-import GuildSettingsAnalyticsCardDefault from "GuildSettingsAnalyticsCard" /* 18206 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7027 */;
+import GuildSettingsAnalyticsCardDefault from "GuildSettingsAnalyticsCard" /* 18368 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }
   const tmpResult = guildId(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult6 = guildId(18186);
+  const tmpResult6 = guildId(18348);
   const guildAnalyticsOverview = tmpResult6.useGuildAnalyticsOverview(guildId);
   ({ analytics, notice } = guildAnalyticsOverview);
   if (cResult[2] !== guildId) {
@@ -149,7 +149,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { variant: "text-sm/medium", color: "text-default", children: str.trim() };
-      const Text = tmp(5086).Text;
+      const Text = tmp(5087).Text;
       const intl = tmp(1126).intl;
       str = intl.string(guildId(1126).t.NIZ60a);
       const tmp16 = closure_9(Text, obj2);
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       let obj4 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(tmp(1126).t.A5vswv) };
-      const Text2 = tmp(5086).Text;
+      const Text2 = tmp(5087).Text;
       intl2 = tmp(1126).intl;
       const tmp22 = closure_9(Text2, obj4);
       cResult[10] = tmp22;
@@ -200,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     }
     if (cResult[12] !== tmp10) {
       let obj5 = { text: tmp23, onPress: tmp10 };
-      const tmp27 = closure_9(guildId(5375).Button, obj5);
+      const tmp27 = closure_9(guildId(5376).Button, obj5);
       cResult[12] = tmp10;
       cResult[13] = tmp27;
       tmp25 = tmp27;
@@ -228,7 +228,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
               }
               const _Symbol4 = Symbol;
               if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp57 = closure_9(guildId(6719).NavScrim, {});
+                const tmp57 = closure_9(guildId(6726).NavScrim, {});
                 cResult[25] = tmp57;
                 tmp55 = tmp57;
               } else {
@@ -257,7 +257,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         }
       }
       const obj8 = { spacing: nativeDefault.space.PX_16, children: items2 };
-      const Stack2 = tmp(5373).Stack;
+      const Stack2 = tmp(5374).Stack;
       items2 = [tmp14, tmp17, tmp20, tmp25, tmp28];
       const tmp50 = closure_10(Stack2, obj8);
       cResult[17] = tmp25;
@@ -269,32 +269,32 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     let tmp29 = null;
     if (null != analytics) {
       const obj9 = { spacing: nativeDefault.space.PX_8, children: items3 };
-      const Stack = tmp(5373).Stack;
+      const Stack = tmp(5374).Stack;
       const obj10 = { metricKey: "visitors", title: intl4.string(guildId(1126).t.i0NorT), description: intl5.string(guildId(1126).t.KiRbLJ) };
       const tmp33 = GuildSettingsAnalyticsCardDefault;
       intl4 = tmp(1126).intl;
       intl5 = tmp(1126).intl;
-      const tmpResult7 = guildId(18186);
+      const tmpResult7 = guildId(18348);
       const merged = Object.assign(tmpResult7.getGuildAnalyticsCardProps(analytics.visitors, analytics.visitorsChange, stateFromStores));
       items3 = [closure_9(tmp33, obj10), , , ];
       const obj11 = { metricKey: "communicators", title: intl6.string(guildId(1126).t.DDAHdQ), description: intl7.string(guildId(1126).t.HxWUkU) };
       const tmp36 = GuildSettingsAnalyticsCardDefault;
       intl6 = tmp(1126).intl;
       intl7 = tmp(1126).intl;
-      const tmpResult8 = guildId(18186);
+      const tmpResult8 = guildId(18348);
       const merged1 = Object.assign(tmpResult8.getGuildAnalyticsCardProps(analytics.communicators, analytics.communicatorsChange, stateFromStores));
       items3[1] = closure_9(tmp36, obj11);
       const obj12 = { metricKey: "new_members", title: intl8.string(guildId(1126).t.hYeOqC) };
       const tmp39 = GuildSettingsAnalyticsCardDefault;
       intl8 = tmp(1126).intl;
-      const tmpResult9 = guildId(18186);
+      const tmpResult9 = guildId(18348);
       const merged2 = Object.assign(tmpResult9.getGuildAnalyticsCardProps(analytics.newMembers, analytics.newMembersChange, stateFromStores));
       items3[2] = closure_9(tmp39, obj12);
       const obj13 = { metricKey: "new_member_retention", title: intl9.string(guildId(1126).t.jj7OPw), description: intl10.string(guildId(1126).t.MQCslz) };
       const tmp42 = GuildSettingsAnalyticsCardDefault;
       intl9 = tmp(1126).intl;
       intl10 = tmp(1126).intl;
-      const tmpResult10 = guildId(18186);
+      const tmpResult10 = guildId(18348);
       const merged3 = Object.assign(tmpResult10.getGuildAnalyticsCardProps(analytics.pctRetained, analytics.pctRetainedChange, stateFromStores, true));
       items3[3] = closure_9(tmp42, obj13);
       tmp29 = closure_10(Stack, obj9);
@@ -336,7 +336,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   let obj = guildId(504);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj2 = guildId(18186);
+  let obj2 = guildId(18348);
   const guildAnalyticsOverview = obj2.useGuildAnalyticsOverview(guildId);
   ({ analytics, notice } = guildAnalyticsOverview);
   const items1 = [guildId];
@@ -398,9 +398,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     }
   }), items1);
   obj4 = { spacing: nativeDefault.space.PX_16, children: items3 };
-  Stack = guildId(5373).Stack;
+  Stack = guildId(5374).Stack;
   let obj5 = { variant: "text-sm/medium", color: "text-default", children: str.trim() };
-  const Text = guildId(5086).Text;
+  const Text = guildId(5087).Text;
   const intl = guildId(1126).intl;
   str = intl.string(guildId(1126).t.NIZ60a);
   items3 = [closure_9(Text, obj5), , , , ];
@@ -420,49 +420,49 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }
   items3[1] = tmp9Result;
   const obj7 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(tmp2(1126).t.A5vswv) };
-  const Text2 = tmp2(5086).Text;
+  const Text2 = tmp2(5087).Text;
   intl2 = tmp2(1126).intl;
   items3[2] = closure_9(Text2, obj7);
   const obj8 = { text: intl3.string(tmp2(1126).t.Uskgxx), onPress: callback };
-  const Button = tmp2(5375).Button;
+  const Button = tmp2(5376).Button;
   intl3 = tmp2(1126).intl;
   items3[3] = closure_9(Button, obj8);
   let tmp7Result = null;
   if (null != analytics) {
     const obj9 = { spacing: nativeDefault.space.PX_8, children: items4 };
-    const Stack2 = tmp2(5373).Stack;
+    const Stack2 = tmp2(5374).Stack;
     const obj10 = { metricKey: "visitors", title: intl4.string(tmp2(1126).t.i0NorT), description: intl5.string(tmp2(1126).t.KiRbLJ) };
     const tmp11Result = GuildSettingsAnalyticsCardDefault;
     intl4 = tmp2(1126).intl;
     intl5 = tmp2(1126).intl;
-    const tmp2Result = tmp2(18186);
+    const tmp2Result = tmp2(18348);
     const merged = Object.assign(tmp2Result.getGuildAnalyticsCardProps(analytics.visitors, analytics.visitorsChange, stateFromStores));
     items4 = [tmp9(tmp11Result, obj10), , , ];
     const obj11 = { metricKey: "communicators", title: intl6.string(tmp2(1126).t.DDAHdQ), description: intl7.string(tmp2(1126).t.HxWUkU) };
     const tmp11Result4 = GuildSettingsAnalyticsCardDefault;
     intl6 = tmp2(1126).intl;
     intl7 = tmp2(1126).intl;
-    const tmp2Result4 = tmp2(18186);
+    const tmp2Result4 = tmp2(18348);
     const merged1 = Object.assign(tmp2Result4.getGuildAnalyticsCardProps(analytics.communicators, analytics.communicatorsChange, stateFromStores));
     items4[1] = closure_9(tmp11Result4, obj11);
     const obj12 = { metricKey: "new_members", title: intl8.string(tmp2(1126).t.hYeOqC) };
     const tmp11Result5 = GuildSettingsAnalyticsCardDefault;
     intl8 = tmp2(1126).intl;
-    const tmp2Result5 = tmp2(18186);
+    const tmp2Result5 = tmp2(18348);
     const merged2 = Object.assign(tmp2Result5.getGuildAnalyticsCardProps(analytics.newMembers, analytics.newMembersChange, stateFromStores));
     items4[2] = closure_9(tmp11Result5, obj12);
     const obj13 = { metricKey: "new_member_retention", title: intl9.string(tmp2(1126).t.jj7OPw), description: intl10.string(tmp2(1126).t.MQCslz) };
     const tmp11Result6 = GuildSettingsAnalyticsCardDefault;
     intl9 = tmp2(1126).intl;
     intl10 = tmp2(1126).intl;
-    const tmp2Result6 = tmp2(18186);
+    const tmp2Result6 = tmp2(18348);
     const merged3 = Object.assign(tmp2Result6.getGuildAnalyticsCardProps(analytics.pctRetained, analytics.pctRetainedChange, stateFromStores, true));
     items4[3] = closure_9(tmp11Result6, obj13);
     tmp7Result = tmp7(Stack2, obj9);
   }
   const obj14 = { children: items5 };
   items3[4] = tmp7Result;
-  items5 = [tmp9(tmp10, obj3), tmp9(tmp2(6719).NavScrim, {})];
+  items5 = [tmp9(tmp10, obj3), tmp9(tmp2(6726).NavScrim, {})];
   return closure_10(tmp8, obj14);
 });
 let result = size.fileFinishedImporting("modules/guild_settings/community/native/GuildSettingsModalAnalytics.tsx");

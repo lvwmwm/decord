@@ -1,9 +1,9 @@
-// Module ID: 1393
-// Function ID: 1394
+// Module ID: 1394
+// Function ID: 1395
 // Name: BadgeRarity
 // Dependencies: [2]
 
-// Module 1393 (BadgeRarity)
+// Module 1394 (BadgeRarity)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/BadgeRarity.tsx");

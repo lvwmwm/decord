@@ -1,12 +1,12 @@
-// Module ID: 9245
-// Function ID: 9246
+// Module ID: 9283
+// Function ID: 9284
 // Name: ChannelDetailsStore
-// Dependencies: [570, 1271, 558, 576, 2]
+// Dependencies: [570, 1272, 558, 576, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive
 
-// Module 9245 (ChannelDetailsStore)
+// Module 9283 (ChannelDetailsStore)
 import react from "react" /* 576 */;
-import react_native from "react-native" /* 1271 */;
+import react_native from "react-native" /* 1272 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -128,7 +128,7 @@ export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearc
   const merged2 = Object.assign(obj);
   map = new Map(states);
   const result = map.set(arg0, obj3);
-  const obj5 = map(1271);
+  const obj5 = map(1272);
   obj5.batchUpdates(() => {
     const obj = { states: map };
     return obj.setState(obj);
@@ -150,7 +150,7 @@ export const deleteChannelDetailsSearchState = function deleteChannelDetailsSear
   const states = obj.getState().states;
   states.delete(arg0);
   map = new Map(states);
-  obj = map(1271);
+  obj = map(1272);
   obj.batchUpdates(() => {
     const obj = { states: map };
     return obj.setState(obj);

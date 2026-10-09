@@ -1,11 +1,11 @@
-// Module ID: 17371
-// Function ID: 17372
+// Module ID: 17519
+// Function ID: 17520
 // Name: useMessageRequestsCount
-// Dependencies: [6060, 558, 576, 504, 2]
+// Dependencies: [6062, 558, 576, 504, 2]
 
-// Module 17371 (useMessageRequestsCount)
+// Module 17519 (useMessageRequestsCount)
 import react from "react" /* 576 */;
-import MessageRequestStore from "MessageRequestStore" /* 6060 */;
+import MessageRequestStore from "MessageRequestStore" /* 6062 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

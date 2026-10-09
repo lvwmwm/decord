@@ -1,18 +1,18 @@
-// Module ID: 10551
-// Function ID: 10552
+// Module ID: 10541
+// Function ID: 10542
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1389, 21, 5090, 6261, 587, 558, 576, 504, 1126, 6203, 10550, 10552, 6679, 11213, 2]
+// Dependencies: [19, 1390, 21, 5091, 6263, 587, 558, 576, 504, 1126, 6205, 10540, 10542, 6686, 10568, 2]
 
-// Module 10551 (BadgeDirectoryScreen)
+// Module 10541 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorHeader from "NavigatorHeader" /* 6203 */;
-import NavigatorConstants from "NavigatorConstants" /* 6261 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10550 */;
-import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 10552 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10540 */;
+import BadgeDirectoryViewDefault from "BadgeDirectoryView" /* 10542 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -98,8 +98,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
     }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmpResult5 = tmp(6203);
-      const headerCloseButton = tmpResult5.getHeaderCloseButton(tmp(10550).closeBadgeDirectoryScreen);
+      const tmpResult5 = tmp(6205);
+      const headerCloseButton = tmpResult5.getHeaderCloseButton(tmp(10540).closeBadgeDirectoryScreen);
       cResult[8] = headerCloseButton;
       tmp16 = headerCloseButton;
     } else {
@@ -112,7 +112,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
         if (cResult[11] === tmp14) {
           tmp18 = cResult[12];
         }
-        const tmpResult6 = tmp(10550);
+        const tmpResult6 = tmp(10540);
         if (tmpResult6.isBadgeDirectoryIOSPageSheet()) {
           if (cResult[13] === tmp18) {
             if (cResult[14] === tmp4.sheetHeader) {
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
             }
           }
           ({ sheetHeader: obj10.headerStyle, view: obj10.viewStyle } = tmp4);
-          const tmp27 = jsx(tmp(6679).Navigator, { screens: tmp18, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null });
+          const tmp27 = jsx(tmp(6686).Navigator, { screens: tmp18, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null });
           cResult[13] = tmp18;
           cResult[14] = tmp4.sheetHeader;
           cResult[15] = tmp4.view;
@@ -136,7 +136,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
               tmp20 = cResult[19];
             }
           }
-          const tmp23 = jsx(tmp(11213).Modal, { screens: tmp18, initialRouteName, viewStyle: tmp4.view });
+          const tmp23 = jsx(tmp(10568).Modal, { screens: tmp18, initialRouteName, viewStyle: tmp4.view });
           cResult[17] = tmp18;
           cResult[18] = tmp4.view;
           cResult[19] = tmp23;
@@ -234,14 +234,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirec
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(10550);
+      const tmp2Result = targetUserId(10540);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
-        tmp9Result = tmp9(tmp2(6679).Navigator, obj4);
+        tmp9Result = tmp9(tmp2(6686).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(11213).Modal, obj5);
+        tmp9Result = tmp9(tmp2(10568).Modal, obj5);
       }
       return tmp9Result;
     }

@@ -1,12 +1,12 @@
-// Module ID: 16205
-// Function ID: 16206
+// Module ID: 16321
+// Function ID: 16322
 // Name: usePromoEmailOptInLabel
-// Dependencies: [558, 576, 16206, 1126, 2]
+// Dependencies: [558, 576, 16322, 1126, 2]
 
-// Module 16205 (usePromoEmailOptInLabel)
+// Module 16321 (usePromoEmailOptInLabel)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import RegistrationEmailOptInCopyExperimentDefault from "RegistrationEmailOptInCopyExperiment" /* 16206 */;
+import RegistrationEmailOptInCopyExperimentDefault from "RegistrationEmailOptInCopyExperiment" /* 16322 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

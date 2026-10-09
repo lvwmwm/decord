@@ -1,15 +1,15 @@
-// Module ID: 5418
-// Function ID: 5419
+// Module ID: 5419
+// Function ID: 5420
 // Name: LinkUtils
-// Dependencies: [2063, 2086, 4707, 1085, 2070, 5074, 2]
+// Dependencies: [2064, 2086, 4709, 1085, 2071, 5075, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 5418 (LinkUtils)
-import ChannelConstants from "ChannelConstants" /* 2070 */;
-import RegexUtilsDefault from "RegexUtils" /* 5074 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+// Module 5419 (LinkUtils)
+import ChannelConstants from "ChannelConstants" /* 2071 */;
+import RegexUtilsDefault from "RegexUtils" /* 5075 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 9149
-// Function ID: 9150
+// Module ID: 12870
+// Function ID: 12871
 // Name: PlayStationLinkModal
-// Dependencies: [19, 9150, 21, 558, 576, 9148, 7079, 5009, 1126, 9151, 9121, 9153, 9155, 9158, 9160, 9120, 9164, 6679, 2]
+// Dependencies: [19, 12871, 21, 558, 576, 12869, 7082, 5010, 1126, 12872, 9188, 12874, 12876, 12878, 12879, 9187, 12868, 6686, 2]
 
-// Module 9149 (PlayStationLinkModal)
+// Module 12870 (PlayStationLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5009 */;
-import Navigator2 from "Navigator" /* 6679 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7079 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9120 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 9148 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 9150 */;
-import PlayStationLinkLanding from "PlayStationLinkLanding" /* 9151 */;
-import PlayStationLinkPreConnect from "PlayStationLinkPreConnect" /* 9153 */;
-import PlayStationLinkDiscordConsent from "PlayStationLinkDiscordConsent" /* 9155 */;
-import PlayStationLinkSuccess from "PlayStationLinkSuccess" /* 9158 */;
-import PlayStationLinkError from "PlayStationLinkError" /* 9160 */;
-import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 9164 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5010 */;
+import Navigator2 from "Navigator" /* 6686 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7082 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9187 */;
+import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 12868 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 12869 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 12871 */;
+import PlayStationLinkLanding from "PlayStationLinkLanding" /* 12872 */;
+import PlayStationLinkPreConnect from "PlayStationLinkPreConnect" /* 12874 */;
+import PlayStationLinkDiscordConsent from "PlayStationLinkDiscordConsent" /* 12876 */;
+import PlayStationLinkSuccess from "PlayStationLinkSuccess" /* 12878 */;
+import PlayStationLinkError from "PlayStationLinkError" /* 12879 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -106,7 +106,7 @@ const headerRight = ReactCompilerGating.isReactCompilerEnabled() ? (function Clo
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const HeaderActionButton = tmp(7079).HeaderActionButton;
+    const HeaderActionButton = tmp(7082).HeaderActionButton;
     const intl = tmp(1126).intl;
     const tmp8 = <HeaderActionButton source={AssetRegistryDefault} onPress={first} accessibilityLabel={intl.string(intl2.t.cpT0Cq)} />;
     cResult[1] = tmp8;
@@ -170,13 +170,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
 }) : (function PlayStationLinkModal(platformType) {
   platformType = platformType.platformType;
   const locationStack = platformType.locationStack;
-  const obj = platformType(9120);
+  const obj = platformType(9187);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [platformType, twoWayLinkStyles];
   const memo = react.useMemo(() => getScreens(platformType, twoWayLinkStyles), items);
-  const obj2 = platformType(9164);
+  const obj2 = platformType(12868);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(platformType, locationStack);
-  const Navigator = platformType(6679).Navigator;
+  const Navigator = platformType(6686).Navigator;
   const intl = platformType(1126).intl;
   return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={constants.LANDING} headerBackTitle={intl.string(platformType(1126).t["13/7kX"])} />;
 });

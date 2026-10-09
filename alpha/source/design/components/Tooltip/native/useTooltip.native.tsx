@@ -1,14 +1,14 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9414
+// Function ID: 9415
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1278, 6836, 9377, 1496, 9382, 2]
+// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1279, 6843, 9415, 1497, 9420, 2]
 // Exports: useTooltipHelper
 
-// Module 9376 (useTooltip)
+// Module 9414 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 9377 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 9415 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -31,7 +31,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
   const obj = ref(576);
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = ref(1278);
+    const tmpResult = ref(1279);
     const v4Result = tmpResult.v4();
     cResult[0] = v4Result;
     first = v4Result;
@@ -46,7 +46,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
   const tmp8 = useWindowDimensionsDefault();
   let closure_3 = tmp8;
   let closure_4 = context.useRef(tmp8);
-  context = context.useContext(tmp(6836).LayerContext);
+  context = context.useContext(tmp(6843).LayerContext);
   let closure_6 = context.useRef(null);
   const items = [context, ref];
   const effect = context.useEffect(() => {
@@ -167,7 +167,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
   let context;
   let ref;
   const useRef = context.useRef;
-  let obj = ref(1278);
+  let obj = ref(1279);
   useRef(obj.v4());
   const tmp2 = closure_8(arg1);
   importDefault = arg0;
@@ -176,7 +176,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
   const tmp3 = useWindowDimensionsDefault();
   let closure_3 = tmp3;
   ref = context.useRef(tmp3);
-  context = context.useContext(ref(6836).LayerContext);
+  context = context.useContext(ref(6843).LayerContext);
   let ref2 = context.useRef(null);
   let items = [context, ref];
   const effect = context.useEffect(() => {

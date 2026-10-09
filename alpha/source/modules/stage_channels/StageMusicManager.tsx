@@ -1,21 +1,21 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 10939
+// Function ID: 10940
 // Name: StageMusicManager
-// Dependencies: [2063, 2011, 2115, 5111, 5892, 2068, 10767, 10770, 558, 576, 504, 5961, 5955, 6797, 2]
+// Dependencies: [2064, 2012, 2115, 5112, 5893, 2069, 10937, 10940, 558, 576, 504, 5963, 5957, 6804, 2]
 // Exports: shouldShowStageMusicMuteButton
 
-// Module 10769 (StageMusicManager)
-import StageChannelParticipants from "StageChannelParticipants" /* 5955 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
+// Module 10939 (StageMusicManager)
+import StageChannelParticipants from "StageChannelParticipants" /* 5957 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5892 */;
-import StageInstanceStore from "StageInstanceStore" /* 2068 */;
-import StageMusicStore from "StageMusicStore" /* 10767 */;
-import SoundUtils from "SoundUtils" /* 10770 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5893 */;
+import StageInstanceStore from "StageInstanceStore" /* 2069 */;
+import StageMusicStore from "StageMusicStore" /* 10937 */;
+import SoundUtils from "SoundUtils" /* 10940 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowStage
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   const tmpResult3 = require("StageChannelParticipantStoreHooks");
-  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(5955).StageChannelParticipantNamedIndex.SPEAKER);
+  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(5957).StageChannelParticipantNamedIndex.SPEAKER);
   if (cResult[3] !== stageParticipants) {
     let tmp9;
     const _Symbol = Symbol;

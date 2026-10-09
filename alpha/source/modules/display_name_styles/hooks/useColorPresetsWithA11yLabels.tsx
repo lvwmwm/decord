@@ -1,13 +1,13 @@
-// Module ID: 15443
-// Function ID: 15444
+// Module ID: 15556
+// Function ID: 15557
 // Name: useColorPresetsWithA11yLabels
-// Dependencies: [19, 1407, 558, 576, 1126, 2955, 1103, 2]
+// Dependencies: [19, 1408, 558, 576, 1126, 2955, 1103, 2]
 
-// Module 15443 (useColorPresetsWithA11yLabels)
+// Module 15556 (useColorPresetsWithA11yLabels)
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import intl2 from "intl" /* 1126 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
 import _modDef2955 from "module_2955" /* 2955 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,11 +1,11 @@
-// Module ID: 2025
-// Function ID: 2026
+// Module ID: 2026
+// Function ID: 2027
 // Name: UserApplicationIdentityConstants
-// Dependencies: [2026, 2]
+// Dependencies: [2027, 2]
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 2025 (UserApplicationIdentityConstants)
-import socialSDKMigration from "socialSDKMigration" /* 2026 */;
+// Module 2026 (UserApplicationIdentityConstants)
+import socialSDKMigration from "socialSDKMigration" /* 2027 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

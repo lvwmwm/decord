@@ -1,15 +1,15 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 14678
+// Function ID: 14679
 // Name: setActivity
-// Dependencies: [5436, 5635, 1085, 8433, 11137, 10236, 14545, 11134, 584, 11256, 10617, 12, 1102, 8250, 1264, 2]
+// Dependencies: [5437, 5636, 1085, 8441, 10899, 10221, 14640, 10896, 584, 10623, 10768, 12, 1102, 8258, 1265, 2]
 
-// Module 14579 (setActivity)
+// Module 14678 (setActivity)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10236 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11137 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
-import Constants_mod from "Constants" /* 5635 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8441 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10221 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10899 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
+import Constants_mod from "Constants" /* 5636 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -402,7 +402,7 @@ let obj2 = {
               obj4.party_max = tmp17;
               obj4.party_id = party.id;
             }
-            const tmp5Result = tmp5(1264);
+            const tmp5Result = tmp5(1265);
             tmp5Result.track(constants.ACTIVITY_UPDATED, obj4);
             return activity;
           }

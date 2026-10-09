@@ -1,13 +1,13 @@
-// Module ID: 16953
-// Function ID: 16954
+// Module ID: 17085
+// Function ID: 17086
 // Name: conjurePlanTags
-// Dependencies: [3827, 1126, 16954, 2]
+// Dependencies: [3827, 1126, 17086, 2]
 // Exports: getConjurePlanTags
 
-// Module 16953 (conjurePlanTags)
+// Module 17085 (conjurePlanTags)
 import intl from "intl" /* 1126 */;
 import _modDef3827 from "module_3827" /* 3827 */;
-import conjurePlanOverlay from "conjurePlanOverlay" /* 16954 */;
+import conjurePlanOverlay from "conjurePlanOverlay" /* 17086 */;
 import size from "module_2" /* 2 */;
 
 let obj = { automod: _modDef3827.DnWMLj, overlay: _modDef3827.liTNf3, widget: _modDef3827["EswAi+"], activity: intl.t.IC5Ann, commands: _modDef3827.w7JaEP, chat_bot: _modDef3827["5QSvrP"], bot: _modDef3827.VFWfz1 };

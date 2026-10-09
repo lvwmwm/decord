@@ -1,26 +1,11 @@
 // Module ID: 5185
 // Function ID: 5186
 // Name: shortOut
-// Dependencies: []
+// Dependencies: [5186, 5187]
 
 // Module 5185 (shortOut)
+import _mod5187 from "module_5187" /* 5187 */;
+import shortOut from "shortOut" /* 5186 */;
 
-export default function shortOut(arg0) {
-  let closure_0 = arg0;
-  let c1 = 0;
-  let closure_2 = 0;
-  return function() {
-    const tmp = now();
-    closure_2 = tmp;
-    if (0 < 16 - (tmp - closure_2)) {
-      const sum = c1 + 1;
-      c1 = sum;
-      if (800 <= sum) {
-        return arguments[0];
-      }
-    } else {
-      c1 = 0;
-    }
-    return closure_0(...arguments);
-  };
-};
+
+export default shortOut(_mod5187);

@@ -1,24 +1,24 @@
-// Module ID: 10562
-// Function ID: 10563
+// Module ID: 10553
+// Function ID: 10554
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 587, 1393, 10563, 1126, 10565, 4927, 10567, 10569, 5090, 558, 576, 4929, 4991, 5086, 2]
+// Dependencies: [19, 17, 21, 587, 1394, 10554, 1126, 10556, 4928, 10558, 10560, 5091, 558, 576, 4930, 4992, 5087, 2]
 
-// Module 10562 (BadgeRarityPill)
+// Module 10553 (BadgeRarityPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import BadgeRarity from "BadgeRarity" /* 1393 */;
-import ColorUtils from "ColorUtils" /* 4927 */;
-import shared from "shared" /* 4929 */;
-import useThemeDefault from "useTheme" /* 4991 */;
-import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 10563 */;
-import ExperimentalRareIcon from "ExperimentalRareIcon" /* 10565 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10567 */;
-import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 10569 */;
+import BadgeRarity from "BadgeRarity" /* 1394 */;
+import ColorUtils from "ColorUtils" /* 4928 */;
+import shared from "shared" /* 4930 */;
+import useThemeDefault from "useTheme" /* 4992 */;
+import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 10554 */;
+import ExperimentalRareIcon from "ExperimentalRareIcon" /* 10556 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10558 */;
+import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 10560 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(5086);
+const Text_Text = tmp(5087);
 function getRarityStyle(rarity, arg1) {
   let intl;
   let intl2;

@@ -1,24 +1,24 @@
-// Module ID: 10760
-// Function ID: 10761
+// Module ID: 10930
+// Function ID: 10931
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1096, 21, 558, 576, 10761, 4810, 5374, 587, 10762, 10831, 10764, 10337, 10336, 9251, 10720, 5104, 10832, 10915, 4787, 10671, 10923, 10924, 10811, 10929, 10937, 10939, 10972, 10973, 5090, 10974, 10766, 2]
+// Dependencies: [32, 19, 17, 1096, 21, 558, 576, 10931, 4811, 5375, 587, 10932, 11004, 10934, 10324, 10323, 9289, 10866, 5105, 11005, 11090, 4788, 10817, 11098, 11099, 10981, 11104, 11112, 11114, 11146, 11147, 5091, 11148, 10936, 2]
 
-// Module 10760 (StageChannelCallNavigator)
+// Module 10930 (StageChannelCallNavigator)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4810 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5104 */;
-import spring from "spring" /* 5374 */;
-import MessageManagerDefault from "MessageManager" /* 9251 */;
-import participantHasVideoDefault from "participantHasVideo" /* 10720 */;
-import JoinStageViewDefault from "JoinStageView" /* 10831 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4811 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5105 */;
+import spring from "spring" /* 5375 */;
+import MessageManagerDefault from "MessageManager" /* 9289 */;
+import participantHasVideoDefault from "participantHasVideo" /* 10866 */;
+import JoinStageViewDefault from "JoinStageView" /* 11004 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,8 +31,8 @@ let metroImportAll;
 let metroRequire;
 let obj2;
 let tmp;
-const StageActionBarButtons = tmp(10766);
-const ThemeContextProvider_RootThemeContextProvider = tmp(10974);
+const StageActionBarButtons = tmp(10936);
+const ThemeContextProvider_RootThemeContextProvider = tmp(11148);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
@@ -280,11 +280,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinSt
     const obj = { opacity: withSpring(num, viewAnimationConfig) };
     return obj;
   };
-  const obj3 = showOverlay(4810);
-  fn.__closure = { withSpring: showOverlay(5374).withSpring, showOverlay, viewAnimationConfig };
+  const obj3 = showOverlay(4811);
+  fn.__closure = { withSpring: showOverlay(5375).withSpring, showOverlay, viewAnimationConfig };
   fn.__workletHash = 3866068723381;
   fn.__initData = __initData3;
-  ({ withSpring: showOverlay(5374).withSpring, showOverlay, viewAnimationConfig });
+  ({ withSpring: showOverlay(5375).withSpring, showOverlay, viewAnimationConfig });
   const animatedStyle = obj3.useAnimatedStyle(fn);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -351,7 +351,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinSt
   importDefault = undefined;
   channel = channel.channel;
   [showOverlay, importDefault] = react.useState(false);
-  let obj = showOverlay(4810);
+  let obj = showOverlay(4811);
   const fn = function c() {
     let num = 0;
     const withSpring = spring.withSpring;
@@ -362,10 +362,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinSt
     const obj = { opacity: withSpring(num, viewAnimationConfig) };
     return obj;
   };
-  fn.__closure = { withSpring: showOverlay(5374).withSpring, showOverlay, viewAnimationConfig };
+  fn.__closure = { withSpring: showOverlay(5375).withSpring, showOverlay, viewAnimationConfig };
   fn.__workletHash = 17555856853074;
   fn.__initData = __initData4;
-  ({ withSpring: showOverlay(5374).withSpring, showOverlay, viewAnimationConfig });
+  ({ withSpring: showOverlay(5375).withSpring, showOverlay, viewAnimationConfig });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const effect = react.useEffect(() => {
     let closure_0;

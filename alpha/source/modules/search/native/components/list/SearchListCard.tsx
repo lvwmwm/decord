@@ -1,22 +1,22 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 17291
+// Function ID: 17292
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 1200, 4922, 5086, 5417, 10261, 8191, 1126, 8134, 6186, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 1200, 4923, 5087, 5418, 10246, 8199, 1126, 8142, 6188, 2]
 
-// Module 17141 (SearchListCard)
+// Module 17291 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import useChannelNameDefault from "useChannelName" /* 5417 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8134 */;
-import ForumIcon from "ForumIcon" /* 8191 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import useChannelNameDefault from "useChannelName" /* 5418 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8142 */;
+import ForumIcon from "ForumIcon" /* 8199 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,8 +27,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp5;
-const Card_Card = tmp(6186);
-const GroupDMAvatarDefault = tmp5(10261);
+const Card_Card = tmp(6188);
+const GroupDMAvatarDefault = tmp5(10246);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -199,7 +199,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchL
     const _Symbol = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: intl.string(intl2.t.ACgJhM) };
-      const Text = tmp(5086).Text;
+      const Text = tmp(5087).Text;
       intl = tmp(1126).intl;
       const tmp13 = hasOwnProperty(Text, obj7);
       cResult[14] = tmp13;
@@ -414,7 +414,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchListCa
     let tmp6 = label;
     if (typeof label === "string") {
       const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: label };
-      tmp6 = hasOwnProperty(tmp(5086).Text, obj2);
+      tmp6 = hasOwnProperty(tmp(5087).Text, obj2);
     }
     cResult[0] = label;
     cResult[1] = tmp6;
@@ -426,7 +426,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchListCa
     let tmp8 = subLabel;
     if (typeof subLabel === "string") {
       const obj3 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: subLabel };
-      tmp8 = hasOwnProperty(tmp(5086).Text, obj3);
+      tmp8 = hasOwnProperty(tmp(5087).Text, obj3);
     }
     cResult[2] = subLabel;
     cResult[3] = tmp8;

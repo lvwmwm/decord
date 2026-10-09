@@ -1,16 +1,16 @@
-// Module ID: 11151
-// Function ID: 11152
+// Module ID: 14725
+// Function ID: 14726
 // Name: FramesManager
-// Dependencies: [10612, 1085, 6797, 10625, 8586, 11152, 1264, 584, 2]
+// Dependencies: [10772, 1085, 6804, 14650, 10811, 8594, 14726, 1265, 2]
 
-// Module 11151 (FramesManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8586 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 10625 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 11152 */;
-import FramesStore from "FramesStore" /* 10612 */;
+// Module 14725 (FramesManager)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8594 */;
+import leaveFrame from "leaveFrame" /* 10811 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 14650 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 14726 */;
+import FramesStore from "FramesStore" /* 10772 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -28,7 +28,7 @@ class FramesManager extends AutomaticLifecycleManager {
         let analyticsContext;
         let applicationId;
         ({ applicationId, analyticsContext } = arg0);
-        const obj = EmbeddedActivitiesManager;
+        const obj = ActivitySessionAnalytics;
         const result = obj.trackFrameSessionStart(applicationId, analyticsContext);
       },
       FRAME_LAUNCH_FAIL(arg0) {
@@ -36,12 +36,12 @@ class FramesManager extends AutomaticLifecycleManager {
         let applicationId;
         let error;
         ({ applicationId, error, analyticsContext } = arg0);
-        const obj = EmbeddedActivitiesManager;
+        const obj = ActivitySessionAnalytics;
         const result = obj.trackFrameSessionStartFailed(applicationId, error, analyticsContext);
       },
       FRAME_STOP(applicationId) {
         applicationId = applicationId.applicationId;
-        const obj = EmbeddedActivitiesManager;
+        const obj = ActivitySessionAnalytics;
         obj.trackFrameSessionEnd(applicationId);
       },
       VOICE_CHANNEL_SELECT(arg0) {
@@ -50,7 +50,8 @@ class FramesManager extends AutomaticLifecycleManager {
       CHANNEL_DELETE(channel) {
         const framesForChannel = FramesStore.getFramesForChannel(channel.channel.id);
         for (const item10010 of framesForChannel) {
-          let leaveFrameResult = require.leaveFrame(item10010.id);
+          let obj = leaveFrame;
+          let leaveFrameResult = obj.leaveFrame(item10010.id);
           continue;
         }
       },
@@ -61,15 +62,17 @@ class FramesManager extends AutomaticLifecycleManager {
           for (const item10014 of allFrames) {
             let tmp5 = item10014;
             let tmp6 = require;
+            let tmp7 = dependencyMap;
             let tmp8 = item10014.surface.type !== EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN;
             if (tmp8) {
-              tmp8 = tmp5.surface.type !== tmp6(8586).EmbeddedSurfaceType.OVERLAY;
+              tmp8 = tmp5.surface.type !== tmp6(tmp7[5]).EmbeddedSurfaceType.OVERLAY;
             }
             if (tmp8) {
               tmp8 = tmp5.surface.guildId === guild.id;
             }
             if (tmp8) {
-              let leaveFrameResult = require.leaveFrame(tmp5.id);
+              let tmp6Result = tmp6(tmp7[4]);
+              let leaveFrameResult = tmp6Result.leaveFrame(tmp5.id);
             }
             continue;
           }
@@ -82,7 +85,8 @@ class FramesManager extends AutomaticLifecycleManager {
           let framesForChannel = FramesStore.getFramesForChannel(item10008.id);
           for (const item10018 of framesForChannel) {
             if (item10018.applicationId !== tmp.application_id) {
-              let leaveFrameResult = require.leaveFrame(tmp6.id);
+              let obj = leaveFrame;
+              let leaveFrameResult = obj.leaveFrame(tmp6.id);
             }
             continue;
           }
@@ -95,10 +99,11 @@ class FramesManager extends AutomaticLifecycleManager {
       if (null != currentVoiceChannelId) {
         if (currentVoiceChannelId !== currentVoiceChannelId.channelId) {
           const getFramesForSurface = FramesStore.getFramesForSurface;
-          const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, channelId: currentVoiceChannelId };
-          const framesForSurface = getFramesForSurface(obj);
-          for (const item10018 of framesForSurface) {
-            let leaveFrameResult = require.leaveFrame(item10018.id);
+          const obj2 = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, channelId: currentVoiceChannelId };
+          const framesForSurface = getFramesForSurface(obj2);
+          for (const item10005 of framesForSurface) {
+            let obj = leaveFrame;
+            let leaveFrameResult = obj.leaveFrame(item10005.id);
             continue;
           }
         }
@@ -107,18 +112,18 @@ class FramesManager extends AutomaticLifecycleManager {
     applyArgumentsResult.handleRPCDisconnect = function handleRPCDisconnect(reason) {
       reason = reason.reason;
       if (null != reason) {
-        const tmp6 = importDefault;
+        const tmp7 = importDefault;
         if (isPostMessageDisconnectDefault(reason)) {
           const frameByEmbeddedContext = FramesStore.getFrameByEmbeddedContext(reason.context, reason.source.iframeId);
           if (null != frameByEmbeddedContext) {
-            require.leaveFrame(frameByEmbeddedContext.id);
-            const obj3 = require;
+            const obj3 = leaveFrame;
+            obj3.leaveFrame(frameByEmbeddedContext.id);
             if (reason.code !== hasOwnProperty.CLOSE_NORMAL) {
               const obj = { rpc_close_code: null, rpc_message: null, application_id: frameByEmbeddedContext.applicationId };
               ({ code: obj2.rpc_close_code, message: obj2.rpc_message } = reason);
-              const tmp6Result = tmp6(1264);
-              tmp6Result.track(constants.ACTIVITY_CLOSED_RPC_ERROR, obj);
-              const result = obj3.showRPCDisconnectErrorUI(reason);
+              const tmp7Result = tmp7(1265);
+              tmp7Result.track(constants.ACTIVITY_CLOSED_RPC_ERROR, obj);
+              const result = require.showRPCDisconnectErrorUI(reason);
             }
           }
         }
@@ -126,17 +131,7 @@ class FramesManager extends AutomaticLifecycleManager {
     };
     return applyArgumentsResult;
   }
-  leaveFrame(frameId) {
-    const frame = FramesStore.getFrame(frameId);
-    if (null != frame) {
-      const obj3 = { type: "FRAME_STOP", applicationId: null, frameId: null };
-      ({ applicationId: obj2.applicationId, id: obj2.frameId } = frame);
-      const obj = DispatcherDefault;
-      obj.dispatch(obj3);
-    }
-  }
 }
-const prototype = FramesManager.prototype;
 FramesManager.displayName = "FramesManager";
 let result = size.fileFinishedImporting("modules/frames/FramesManager.tsx");
 

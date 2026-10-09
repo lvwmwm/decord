@@ -1,21 +1,21 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9411
+// Function ID: 9412
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 5079, 2060, 21, 4810, 558, 576, 504, 4778, 587, 5091, 5374, 5090, 9374, 1126, 9342, 2]
+// Dependencies: [19, 17, 5080, 2061, 21, 4811, 558, 576, 504, 4779, 587, 5092, 5375, 5091, 9412, 1126, 9380, 2]
 
-// Module 9373 (BurstReactionToggle)
+// Module 9411 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import timing from "timing" /* 5091 */;
-import spring from "spring" /* 5374 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import timing from "timing" /* 5092 */;
+import spring from "spring" /* 5375 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -213,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     tmp6 = tmp5;
   }
   const ref = react.useRef(null);
-  const tmp8 = tmp6(9374)(ref);
+  const tmp8 = tmp6(9412)(ref);
   importDefault = tmp8;
   if (cResult[0] === tmp8) {
     let tmp9;
@@ -254,7 +254,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
         tmp14 = cResult[9];
       }
       if (cResult[10] !== INTERACTIVE_TEXT_DEFAULT) {
-        const tmp17 = jsx(onPress(9342).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
+        const tmp17 = jsx(onPress(9380).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
         cResult[10] = INTERACTIVE_TEXT_DEFAULT;
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -285,7 +285,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
         cResult[19] = tmp24;
         tmp21 = tmp24;
       }
-      const tmp20 = jsx(tmp6(4810).View, { style: tmp14, ref, children: tmp15 });
+      const tmp20 = jsx(tmp6(4811).View, { style: tmp14, ref, children: tmp15 });
       cResult[12] = tmp14;
       cResult[13] = tmp15;
       cResult[14] = tmp20;
@@ -322,7 +322,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     tmp5 = tmp2;
   }
   const ref = react.useRef(null);
-  importDefault = tmp5(9374)(ref);
+  importDefault = tmp5(9412)(ref);
   const containerStyle = closure_12(isActive).containerStyle;
   const intl = intl2.intl;
   const string = intl.string;
@@ -333,7 +333,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     stringResult = string(t.buV4av);
   }
   const items = [tmp.container, containerStyle];
-  const View = tmp5(4810).View;
+  const View = tmp5(4811).View;
   return <tmp8 onPress={function handleOnPress() {
     closure_1(ContentDismissActionType.AUTO);
     require();

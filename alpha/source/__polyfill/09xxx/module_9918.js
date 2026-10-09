@@ -1,12 +1,14 @@
 // Module ID: 9918
 // Function ID: 9919
-// Dependencies: [41, 42, 93, 95, 98, 9789]
+// Dependencies: [41, 42, 93, 95, 98, 9919, 9793, 9797]
 
 // Module 9918
-import _mod9789 from "module_9789" /* 9789 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9793 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9797 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 9919 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +27,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class ESMergeDateRangeRefiner {
+let closure_6 = "(?:(?:\u043E\u043A\u043E\u043B\u043E|\u043F\u0440\u0438\u043C\u0435\u0440\u043D\u043E)\\s*(?:~\\s*)?)?(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")" + REGEX_PARTS.REGEX_PARTS.rightBoundary;
+class RUTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ESMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(ESMergeDateRangeRefiner);
+    _classCallCheck(this, RUTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(RUTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,13 +45,42 @@ class ESMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ESMergeDateRangeRefiner, fn(_mod9789).default);
+_inherits(RUTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*(?:-)\s*$/i;
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return REGEX_PARTS.REGEX_PARTS.leftBoundary;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerPattern",
+    value: function innerPattern(option) {
+      let _RegExp1;
+      const _RegExp = RegExp;
+      if (option.option.forwardDate) {
+        const self3 = this;
+        const self4 = this;
+        _RegExp1 = new _RegExp(tmp, REGEX_PARTS.REGEX_PARTS.flags);
+      } else {
+        const _HermesInternal = HermesInternal;
+        const combined = "(?:\u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435|\u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0438)\\s*" + tmp;
+        const self = this;
+        const self2 = this;
+        _RegExp1 = new _RegExp(combined, REGEX_PARTS.REGEX_PARTS.flags);
+      }
+      return _RegExp1;
+    }
+  },
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    }
+  }
+];
 
-export default _createClass(ESMergeDateRangeRefiner, items);
+export default _createClass(RUTimeUnitWithinFormatParser, items);

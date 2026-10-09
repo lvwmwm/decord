@@ -1,13 +1,13 @@
-// Module ID: 11235
-// Function ID: 11236
+// Module ID: 10590
+// Function ID: 10591
 // Name: navigateToLastChannel
-// Dependencies: [4936, 11236, 5101, 2]
+// Dependencies: [4937, 10591, 5102, 2]
 // Exports: default
 
-// Module 11235 (navigateToLastChannel)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4936 */;
-import transitionToChannel2 from "transitionToChannel" /* 5101 */;
-import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 11236 */;
+// Module 10590 (navigateToLastChannel)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4937 */;
+import transitionToChannel2 from "transitionToChannel" /* 5102 */;
+import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 10591 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/navigateToLastChannel.tsx");
@@ -27,7 +27,7 @@ export default function navigateToLastChannel() {
   if (tmp4) {
     const params2 = coerceGuildsRouteResult.params;
     let channelId1;
-    const transitionToChannel = tmp(5101).transitionToChannel;
+    const transitionToChannel = tmp(5102).transitionToChannel;
     transitionToChannel2;
     if (params2 != null) {
       channelId1 = params2.channelId;

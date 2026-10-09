@@ -1,10 +1,10 @@
-// Module ID: 12876
-// Function ID: 12877
+// Module ID: 12845
+// Function ID: 12846
 // Name: DiceRollExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 12876 (DiceRollExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 12845 (DiceRollExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,20 +1,20 @@
-// Module ID: 9090
-// Function ID: 9091
+// Module ID: 12968
+// Function ID: 12969
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 558, 576, 8834, 4991, 4778, 587, 5387, 5003, 5086, 1126, 6189, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8843, 4992, 4779, 587, 5388, 5004, 5087, 1126, 6191, 2]
 
-// Module 9090 (GuildProfileLoadingError)
+// Module 12968 (GuildProfileLoadingError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import useToken from "useToken" /* 4778 */;
-import useThemeDefault from "useTheme" /* 4991 */;
-import WarningIcon3 from "WarningIcon" /* 5003 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import Pressables from "Pressables" /* 6189 */;
-import GuildProfileView from "GuildProfileView" /* 8834 */;
+import useToken from "useToken" /* 4779 */;
+import useThemeDefault from "useTheme" /* 4992 */;
+import WarningIcon3 from "WarningIcon" /* 5004 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import Pressables from "Pressables" /* 6191 */;
+import GuildProfileView from "GuildProfileView" /* 8843 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { size: "lg", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-        const WarningIcon = tmp(5003).WarningIcon;
+        const WarningIcon = tmp(5004).WarningIcon;
         const tmp19 = React3(WarningIcon, obj4);
         cResult[6] = tmp19;
         tmp17 = tmp19;
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
           const body = styles.body;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
             const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.DmIUGK) };
-            const Text = tmp(5086).Text;
+            const Text = tmp(5087).Text;
             intl = tmp(1126).intl;
             const tmp34 = React3(Text, obj6);
             cResult[15] = tmp34;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
             const intl2 = tmp(1126).intl;
             const stringResult = intl2.string(intl4.t.s1fAEw);
             const obj7 = { size: "sm", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-            const WarningIcon2 = tmp(5003).WarningIcon;
+            const WarningIcon2 = tmp(5004).WarningIcon;
             const tmp39 = React3(WarningIcon2, obj7);
             cResult[16] = stringResult;
             cResult[17] = tmp39;
@@ -114,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
           const _Symbol4 = Symbol;
           if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
             const obj8 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl3.string(intl4.t.tmGHjc) };
-            const Text2 = tmp(5086).Text;
+            const Text2 = tmp(5087).Text;
             intl3 = tmp(1126).intl;
             const tmp42 = React3(Text2, obj8);
             cResult[18] = tmp42;

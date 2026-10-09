@@ -1,17 +1,17 @@
-// Module ID: 6938
-// Function ID: 6939
+// Module ID: 6945
+// Function ID: 6946
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 6774, 2063, 2118, 2086, 1085, 2070, 6932, 6939, 6948, 6917, 6951, 6953, 6911, 6954, 6955, 4986, 6956, 6915, 1387, 7000, 7001, 7022, 2]
+// Dependencies: [5, 6781, 2064, 2118, 2086, 1085, 2071, 6939, 6946, 6955, 6924, 6958, 6960, 6918, 6961, 6962, 4987, 6963, 6922, 1388, 7007, 7008, 7025, 2]
 // Exports: default
 
-// Module 6938 (isAccessibleChannelOrThreadPath)
+// Module 6945 (isAccessibleChannelOrThreadPath)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6774 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6781 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import GuildStore from "GuildStore" /* 2086 */;
 import Constants from "Constants" /* 1085 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
 import size from "module_2" /* 2 */;
 
 let id, obj13;
@@ -71,7 +71,7 @@ let obj = function _isAccessibleChannelOrThreadPath() {
               channel2 = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else {
             let tmp14;

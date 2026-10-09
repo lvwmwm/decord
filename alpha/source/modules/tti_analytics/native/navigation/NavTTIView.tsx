@@ -1,18 +1,18 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16903
+// Function ID: 16904
 // Name: NavTTIView
-// Dependencies: [109, 19, 17, 5089, 21, 558, 576, 16780, 16782, 16783, 504, 16774, 2]
+// Dependencies: [109, 19, 17, 5090, 21, 558, 576, 16904, 16906, 16907, 504, 16898, 2]
 
-// Module 16779 (NavTTIView)
+// Module 16903 (NavTTIView)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 16774 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16782 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16783 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 16898 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 16906 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 16907 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5089 */;
+import DevSettingsStore from "DevSettingsStore" /* 5090 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let tmp3Result;
 let closure_14;
 let closure_15;
 let tmp;
-const useComponentRenderSpan = tmp(16780);
+const useComponentRenderSpan = tmp(16904);
 let closure_2 = ["measurementProps", "onLayout", "children"];
 let closure_3 = ["name"];
 let closure_4 = ["tracking", "descendantTracking", "name"];
@@ -106,7 +106,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTI
         return;
       }
     }
-    const tmp17 = authStore2(View, obj2);
+    const tmp17 = authStore3(View, obj2);
     cResult[8] = tmp2;
     cResult[9] = tmp4;
     cResult[10] = tmp5;
@@ -145,7 +145,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTI
       tmp3(arg0);
     }
   }, items);
-  const tmp3 = authStore2;
+  const tmp3 = authStore3;
   const merged1 = Object.assign(merged);
   const tmp4 = View;
   if (null != onLayout2) {
@@ -182,7 +182,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Includ
   }
   const obj2 = { measurementProps: navigationTTIRegionMeasurement };
   const merged = Object.assign(tmp5);
-  const tmp12 = authStore2(closure_16, obj2);
+  const tmp12 = authStore3(closure_16, obj2);
   cResult[3] = navigationTTIRegionMeasurement;
   cResult[4] = tmp5;
   cResult[5] = tmp12;
@@ -195,7 +195,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Includ
   const obj = useComponentRenderSpan;
   navigationTTIRegionMeasurement = obj.useNavigationTTIRegionMeasurement("include", name);
   const merged1 = Object.assign(merged);
-  return authStore2(closure_16, obj2);
+  return authStore3(closure_16, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualizedNavTTIViewContent(arg0) {
@@ -269,7 +269,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
                   const obj2 = { measurementProps, children: items };
                   const merged = Object.assign(tmp5);
                   items = [tmp12, tmp14];
-                  const tmp23 = authStore3(closure_16, obj2);
+                  const tmp23 = authStore4(closure_16, obj2);
                   cResult[18] = measurementProps;
                   cResult[19] = tmp5;
                   cResult[20] = tmp12;
@@ -285,7 +285,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
     }
     const obj4 = { name: tmp10, regionId: hierarchy.regionId, tracking: tmp6, descendantTracking: tmp4, includedDescendants: null, excludedDescendants: null, hierarchyDepth: null, violation: null };
     ({ includedDescendants: obj3.includedDescendants, excludedDescendants: obj3.excludedDescendants, depth: obj3.hierarchyDepth, violation: obj3.violation } = hierarchy);
-    const tmp16 = authStore2(NavigationTTIRegionDebugOverlay.NavigationTTIRegionDebugOverlay, obj4);
+    const tmp16 = authStore3(NavigationTTIRegionDebugOverlay.NavigationTTIRegionDebugOverlay, obj4);
     cResult[9] = tmp4;
     cResult[10] = hierarchy.depth;
     cResult[11] = hierarchy.excludedDescendants;
@@ -298,7 +298,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
     tmp14 = tmp16;
   }
   const obj7 = { value: hierarchy.contextValue, children: props.children };
-  const tmp13 = authStore2(NavigationTTIRegionHierarchy.NavigationTTIRegionHierarchyContext.Provider, obj7);
+  const tmp13 = authStore3(NavigationTTIRegionHierarchy.NavigationTTIRegionHierarchyContext.Provider, obj7);
   cResult[6] = hierarchy.contextValue;
   cResult[7] = props.children;
   cResult[8] = tmp13;
@@ -321,10 +321,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
   const merged = Object.assign(tmp);
   items = [, ];
   const obj2 = { value: hierarchy.contextValue, children: props.children };
-  items[0] = authStore2(NavigationTTIRegionHierarchy.NavigationTTIRegionHierarchyContext.Provider, obj2);
+  items[0] = authStore3(NavigationTTIRegionHierarchy.NavigationTTIRegionHierarchyContext.Provider, obj2);
   const obj3 = { name: str, regionId: hierarchy.regionId, tracking, descendantTracking, includedDescendants: hierarchy.includedDescendants, excludedDescendants: hierarchy.excludedDescendants, hierarchyDepth: hierarchy.depth, violation: hierarchy.violation };
-  items[1] = authStore2(NavigationTTIRegionDebugOverlay.NavigationTTIRegionDebugOverlay, obj3);
-  return authStore3(closure_16, obj);
+  items[1] = authStore3(NavigationTTIRegionDebugOverlay.NavigationTTIRegionDebugOverlay, obj3);
+  return authStore4(closure_16, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualizedIncludedNavTTIView(children) {
@@ -352,7 +352,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
         }
       }
       const obj2 = { props: children, measurementProps: navigationTTIRegionMeasurement, hierarchy: navigationTTIRegionHierarchy };
-      const tmp11 = authStore2(closure_18, obj2);
+      const tmp11 = authStore3(closure_18, obj2);
       cResult[4] = navigationTTIRegionHierarchy;
       cResult[5] = navigationTTIRegionMeasurement;
       cResult[6] = children;
@@ -375,7 +375,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
   const navigationTTIRegionHierarchy = useNavigationTTIRegionHierarchy(obj);
   const obj2 = useComponentRenderSpan;
   const obj3 = { props: name, measurementProps: obj2.useNavigationTTIRegionMeasurement("include", name.name), hierarchy: navigationTTIRegionHierarchy };
-  return authStore2(closure_18, obj3);
+  return authStore3(closure_18, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualizedExcludedNavTTIView(name) {
@@ -416,7 +416,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
           }
         }
         const obj2 = { props: name, measurementProps: navigationTTIRegionMeasurement, hierarchy: navigationTTIRegionHierarchy };
-        const tmp13 = authStore2(closure_18, obj2);
+        const tmp13 = authStore3(closure_18, obj2);
         cResult[7] = navigationTTIRegionHierarchy;
         cResult[8] = navigationTTIRegionMeasurement;
         cResult[9] = name;
@@ -445,7 +445,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
   const navigationTTIRegionHierarchy = useNavigationTTIRegionHierarchy(obj);
   const obj2 = useComponentRenderSpan;
   const obj3 = { props: name, measurementProps: obj2.useNavigationTTIRegionMeasurement("exclude", navigationTTIRegionHierarchy.regionId), hierarchy: navigationTTIRegionHierarchy };
-  return authStore2(closure_18, obj3);
+  return authStore3(closure_18, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function VisualizedNavTTIView(tracking) {
@@ -457,11 +457,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
     if ("include" === tracking.tracking) {
       const obj2 = {};
       const merged = Object.assign(tracking);
-      tmp8 = authStore2(closure_19, obj2);
+      tmp8 = authStore3(closure_19, obj2);
     } else {
       const obj3 = {};
       const merged1 = Object.assign(tracking);
-      tmp8 = authStore2(closure_20, obj3);
+      tmp8 = authStore3(closure_20, obj3);
     }
     cResult[0] = tracking;
     cResult[1] = tmp8;
@@ -475,11 +475,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Visual
   if ("include" === tracking.tracking) {
     const obj2 = {};
     const merged = Object.assign(tracking);
-    tmp6 = authStore2(closure_19, obj2);
+    tmp6 = authStore3(closure_19, obj2);
   } else {
     const obj = {};
     const merged1 = Object.assign(tracking);
-    tmp6 = authStore2(closure_20, obj);
+    tmp6 = authStore3(closure_20, obj);
   }
   return tmp6;
 });
@@ -511,7 +511,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTIView(t
     if (cResult[2] !== tracking) {
       const obj2 = {};
       const merged = Object.assign(tracking);
-      const tmp43 = authStore2(closure_21, obj2);
+      const tmp43 = authStore3(closure_21, obj2);
       cResult[2] = tracking;
       cResult[3] = tmp43;
       tmp37 = tmp43;
@@ -534,7 +534,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTIView(t
     if (cResult[6] !== tmp26) {
       const obj3 = {};
       const merged1 = Object.assign(tmp26);
-      const tmp36 = authStore2(View, obj3);
+      const tmp36 = authStore3(View, obj3);
       cResult[6] = tmp26;
       cResult[7] = tmp36;
       tmp30 = tmp36;
@@ -569,7 +569,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTIView(t
       }
       const obj4 = { name: tmp7 };
       const merged2 = Object.assign(tmp8);
-      const tmp25 = authStore2(closure_17, obj4);
+      const tmp25 = authStore3(closure_17, obj4);
       cResult[13] = tmp7;
       cResult[14] = tmp8;
       cResult[15] = tmp25;
@@ -577,7 +577,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTIView(t
     } else if (cResult[11] !== tmp8) {
       const obj5 = {};
       const merged3 = Object.assign(tmp8);
-      const tmp18 = authStore2(View, obj5);
+      const tmp18 = authStore3(View, obj5);
       cResult[11] = tmp8;
       cResult[12] = tmp18;
       tmp12 = tmp18;
@@ -595,12 +595,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTIView(t
   if (obj.useStateFromStores(items, () => DevSettingsStore.get("navigation_tti_visualizer"))) {
     const obj2 = {};
     const merged = Object.assign(tracking);
-    return authStore2(closure_21, obj2);
+    return authStore3(closure_21, obj2);
   } else if ("exclude" === tracking.tracking) {
     ({ tracking: tracking2, name: name2, descendantTracking } = tracking);
     const obj3 = {};
     const merged1 = Object.assign(_objectWithoutProperties(tracking, closure_8));
-    return authStore2(View, obj3);
+    return authStore3(View, obj3);
   } else {
     let tmp6Result;
     tracking = tracking.tracking;

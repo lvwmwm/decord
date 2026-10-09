@@ -1,25 +1,24 @@
-// Module ID: 7004
-// Function ID: 7005
+// Module ID: 7011
+// Function ID: 7012
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1389, 1085, 7005, 6133, 5297, 6104, 1126, 7006, 7007, 7008, 1294, 4922, 4929, 584, 7010, 7014, 2]
+// Dependencies: [32, 1390, 1085, 7012, 6135, 5298, 6106, 1126, 7013, 7014, 7015, 1295, 4923, 4930, 584, 7017, 2]
 
-// Module 7004 (RelationshipActionCreators)
+// Module 7011 (RelationshipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl10 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import shared from "shared" /* 4929 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6104 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6133 */;
-import RelationshipConstants from "RelationshipConstants" /* 7005 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7006 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7007 */;
-import FriendsUtils from "FriendsUtils" /* 7008 */;
-import ClearAllIncomingRequestsConfirmationModalDefault from "ClearAllIncomingRequestsConfirmationModal" /* 7010 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7014 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import shared from "shared" /* 4930 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6106 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6135 */;
+import RelationshipConstants from "RelationshipConstants" /* 7012 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7013 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7014 */;
+import FriendsUtils from "FriendsUtils" /* 7015 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7017 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -130,12 +129,12 @@ let obj2 = {
     }
     [tmp3, tmp4] = str.split("#");
     _slicedToArray(str.split("#"), 2);
-    const HTTP = str(1294).HTTP;
+    const HTTP = str(1295).HTTP;
     const request = { url: closure_6.USER_RELATIONSHIPS(), body, context, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     body = { username: tmp3, discriminator: parseInt(tmp4), note };
     const merged = Object.assign(captchaPayload);
-    obj3 = str(1294);
+    obj3 = str(1295);
     const postResult = post(request);
     return postResult.catch((error) => {
       handleRelationshipAddError(error, errorUxConfig, str);
@@ -262,9 +261,6 @@ let obj2 = {
       return obj.dispatch({ type: "LOAD_RELATIONSHIPS_FAILURE" });
     });
   },
-  confirmClearPendingRelationships(arg0) {
-    ClearAllIncomingRequestsConfirmationModalDefault(arg0);
-  },
   clearPendingRelationships() {
     let obj3;
     let query;
@@ -331,7 +327,7 @@ let obj2 = {
       obj2.dispatch(obj3);
     });
     return nextPromise.catch(() => {
-      obj = channelId(dependencyMap[16]);
+      obj = channelId(dependencyMap[15]);
       obj.showFailedToast();
       const AccessibilityAnnouncer = userId(dependencyMap[13]).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
@@ -357,7 +353,7 @@ let obj2 = {
       announce(intl.string(intl10.t.QlH5w6));
     });
     return nextPromise.catch(() => {
-      obj = channelId(dependencyMap[16]);
+      obj = channelId(dependencyMap[15]);
       obj.showFailedToast();
       const AccessibilityAnnouncer = id(dependencyMap[13]).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;

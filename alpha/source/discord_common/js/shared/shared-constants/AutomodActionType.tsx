@@ -1,9 +1,9 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 11406
+// Function ID: 11407
 // Name: AutomodActionType
 // Dependencies: [2]
 
-// Module 11476 (AutomodActionType)
+// Module 11406 (AutomodActionType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodActionType.tsx");

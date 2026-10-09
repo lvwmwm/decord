@@ -1,20 +1,20 @@
-// Module ID: 13030
-// Function ID: 13031
+// Module ID: 13112
+// Function ID: 13113
 // Name: GroupAvatar
-// Dependencies: [19, 17, 5079, 21, 5090, 587, 558, 576, 4929, 6163, 573, 4810, 5091, 5374, 6655, 5086, 6164, 2]
+// Dependencies: [19, 17, 5080, 21, 5091, 587, 558, 576, 4930, 6167, 573, 4811, 5092, 5375, 6662, 5087, 6163, 2]
 
-// Module 13030 (GroupAvatar)
+// Module 13112 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 5091 */;
-import spring from "spring" /* 5374 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6655 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import timing from "timing" /* 5092 */;
+import spring from "spring" /* 5375 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6662 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let animateOnMount;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5086);
+const Text_Text = tmp(5087);
 let react = react_mod;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

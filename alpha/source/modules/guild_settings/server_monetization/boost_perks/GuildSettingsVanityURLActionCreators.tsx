@@ -1,13 +1,13 @@
-// Module ID: 8618
-// Function ID: 8619
+// Module ID: 8626
+// Function ID: 8627
 // Name: GuildSettingsVanityURLActionCreators
-// Dependencies: [1085, 1294, 584, 2]
+// Dependencies: [1085, 1295, 584, 2]
 // Exports: fetchVanityUrl, resetCode, saveCode, setCode
 
-// Module 8618 (GuildSettingsVanityURLActionCreators)
+// Module 8626 (GuildSettingsVanityURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

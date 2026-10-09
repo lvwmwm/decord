@@ -1,17 +1,17 @@
-// Module ID: 7028
-// Function ID: 7029
+// Module ID: 7031
+// Function ID: 7032
 // Name: LoginHandoffSource
-// Dependencies: [2070, 1095, 5418, 5987, 2]
+// Dependencies: [2071, 1095, 5419, 5989, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 7028 (LoginHandoffSource)
+// Module 7031 (LoginHandoffSource)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ChannelConstants from "ChannelConstants" /* 2070 */;
-import LinkUtils from "LinkUtils" /* 5418 */;
+import ChannelConstants from "ChannelConstants" /* 2071 */;
+import LinkUtils from "LinkUtils" /* 5419 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettingsURLUtils = tmp(5987);
+const UserSettingsURLUtils = tmp(5989);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const UserSettingsPath = UserSettingsConstants.UserSettingsPath;
 const LoginHandoffSource = { ROLE_SUBSCRIPTION: "role_subscription", ROLE_SUBSCRIPTION_SETTING: "role_subscription_setting", GUILD_ANALYTICS_SETTING: "guild_analytics_setting", GAME_CLAIM: "game_claim" };

@@ -1,21 +1,21 @@
-// Module ID: 10817
-// Function ID: 10818
+// Module ID: 10988
+// Function ID: 10989
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 4759, 6041, 9645, 2063, 5108, 21, 558, 576, 9109, 504, 10339, 7476, 1126, 10818, 4810, 10813, 2]
+// Dependencies: [19, 17, 4761, 6043, 9664, 2064, 5109, 21, 558, 576, 10985, 504, 10326, 7481, 1126, 10989, 4811, 10983, 2]
 
-// Module 10817 (GlobalStatusIndicator)
+// Module 10988 (GlobalStatusIndicator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7476 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10813 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10983 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 4759 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
-import NativeMenuStore from "NativeMenuStore" /* 9645 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+import ActionSheetStore from "ActionSheetStore" /* 4761 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
+import NativeMenuStore from "NativeMenuStore" /* 9664 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -582,7 +582,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStat
           }
           const obj2 = { children: items3 };
           items3 = [tmp19, tmp21];
-          const tmp25 = authStore2(map1, obj2);
+          const tmp25 = authStore3(map1, obj2);
           cResult[14] = tmp19;
           cResult[15] = tmp21;
           cResult[16] = tmp25;
@@ -600,7 +600,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStat
       }
     }
   }
-  const tmp20 = closure_12(React3, { importantForAccessibility: str, accessibilityElementsHidden: stateFromStores || stateFromStores1, style: tmp16, children });
+  const tmp20 = authStore2(React3, { importantForAccessibility: str, accessibilityElementsHidden: stateFromStores || stateFromStores1, style: tmp16, children });
   cResult[6] = children;
   cResult[7] = stateFromStores || stateFromStores1;
   cResult[8] = str;
@@ -640,7 +640,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStat
   return height.useMemo(() => {
     let items;
     let str;
-    const tmp = authStore2;
+    const tmp = authStore3;
     const tmp2 = map1;
     const tmp4 = React3;
     if (accessibilityElementsHidden) {
@@ -653,7 +653,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStat
       num = height;
     }
     items[1] = { marginTop: num, overflow: "hidden" };
-    children = [closure_12(tmp4, obj), ];
+    children = [authStore2(tmp4, obj), ];
     let tmp3Result = null;
     if (isVisible) {
       const obj2 = { onPress };

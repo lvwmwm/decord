@@ -1,18 +1,18 @@
-// Module ID: 14715
-// Function ID: 14716
+// Module ID: 14821
+// Function ID: 14822
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2086, 7860, 21, 5090, 587, 504, 14716, 8265, 8264, 1126, 1381, 5086, 14689, 5054, 14717, 1999, 6161, 8830, 2]
+// Dependencies: [19, 2086, 7869, 21, 5091, 587, 504, 14822, 8273, 8272, 1126, 1382, 5087, 14795, 5055, 14823, 2000, 6165, 8839, 2]
 // Exports: default
 
-// Module 14715 (UserProfilePrimaryGuildEditButton)
+// Module 14821 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import GuildTagConstants from "GuildTagConstants" /* 7860 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import GuildTagConstants from "GuildTagConstants" /* 7869 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -140,7 +140,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[10]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(14717, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(14823, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

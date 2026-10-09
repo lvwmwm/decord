@@ -1,13 +1,13 @@
-// Module ID: 10262
-// Function ID: 10263
+// Module ID: 10247
+// Function ID: 10248
 // Name: useRecipientsLabel
-// Dependencies: [19, 1389, 1126, 558, 576, 1387, 4922, 504, 2]
+// Dependencies: [19, 1390, 1126, 558, 576, 1388, 4923, 504, 2]
 
-// Module 10262 (useRecipientsLabel)
+// Module 10247 (useRecipientsLabel)
 import intl5 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,31 +1,31 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12183
+// Function ID: 12184
 // Name: useGuildPowerupsNotifications
-// Dependencies: [32, 19, 8004, 2086, 12245, 4967, 4968, 1085, 2060, 7998, 12247, 12248, 4971, 12249, 1387, 2048, 4986, 558, 576, 8003, 12250, 2049, 573, 12246, 12254, 4973, 4972, 12256, 12257, 12258, 12259, 12261, 12241, 2]
+// Dependencies: [32, 19, 8012, 2086, 12184, 4968, 4969, 1085, 2061, 8006, 12186, 12187, 4972, 12188, 1388, 2049, 4987, 558, 576, 8011, 12189, 2050, 573, 12185, 12193, 4974, 4973, 12195, 12196, 12197, 12198, 12200, 12180, 2]
 // Exports: maybeGetGameServerHostingGuildEligiblePopoutDCF, maybeGetLevelUnlockedPopoutDCF
 
-// Module 12244 (useGuildPowerupsNotifications)
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
-import GameServerExperiment from "GameServerExperiment" /* 4986 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 7998 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8003 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12241 */;
-import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 12246 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 12247 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12248 */;
-import useGuildPowerupRollbackNotificationConfigDefault from "useGuildPowerupRollbackNotificationConfig" /* 12250 */;
-import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12256 */;
-import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 12257 */;
-import useCanPurchaseBoostsDefault from "useCanPurchaseBoosts" /* 12258 */;
-import useFeaturedExpiringPowerupDefault from "useFeaturedExpiringPowerup" /* 12259 */;
+// Module 12183 (useGuildPowerupsNotifications)
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import GameServerExperiment from "GameServerExperiment" /* 4987 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8006 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8011 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12180 */;
+import getExpiringGuildEntitlements2 from "getExpiringGuildEntitlements" /* 12185 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 12186 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12187 */;
+import useGuildPowerupRollbackNotificationConfigDefault from "useGuildPowerupRollbackNotificationConfig" /* 12189 */;
+import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12195 */;
+import useBoostToUnlockFeaturedPowerupDefault from "useBoostToUnlockFeaturedPowerup" /* 12196 */;
+import useCanPurchaseBoostsDefault from "useCanPurchaseBoosts" /* 12197 */;
+import useFeaturedExpiringPowerupDefault from "useFeaturedExpiringPowerup" /* 12198 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8004 */;
+import GameServerStore from "GameServerStore" /* 8012 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import GuildPowerupsNotificationStore from "GuildPowerupsNotificationStore" /* 12245 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4967 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4968 */;
+import GuildPowerupsNotificationStore from "GuildPowerupsNotificationStore" /* 12184 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4968 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4969 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -111,7 +111,7 @@ function maybeGetPerkPurchaseablePopoutDCF(c0, allPowerups, available, serverThe
       const tmp4Result = require("GuildDismissibleContentUtils");
       if (!tmp4Result.isContentDismissed(require("dismissible_content").DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, c0)) {
         obj = {
-          type: tmp4(12248).GuildPowerupNotificationPopoutType.PERKS_PURCHASABLE,
+          type: tmp4(12187).GuildPowerupNotificationPopoutType.PERKS_PURCHASABLE,
           powerups: found,
           markAsDismissed(AUTO_DISMISS) {
                   const obj = GuildDismissibleContentUtils;
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
       }
       const _Symbol2 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj4 = { indicator: "Reflect", showUnread: true };
+        const obj4 = { indicator: "Set", showUnread: true };
         cResult[7] = obj4;
         tmp28 = obj4;
       } else {
@@ -259,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   } else {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj7 = { indicator: "Reflect", showUnread: true };
+      const obj7 = { indicator: "Set", showUnread: true };
       cResult[3] = obj7;
       tmp13 = obj7;
     } else {
@@ -313,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
     let obj2;
     let obj5;
     if (null == closure_1) {
-      return { indicator: "Reflect", showUnread: true };
+      return { indicator: "Set", showUnread: true };
     } else {
       const unlockedPowerups = tmp2.unlockedPowerups;
       const _Object = Object;
@@ -368,7 +368,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
               obj2 = { type: GuildPowerupsNotification.GuildPowerupNotificationIndicatorType.UNREAD, count: diff };
             }
           }
-          obj3 = { indicator: "Reflect", showUnread: true };
+          obj3 = { indicator: "Set", showUnread: true };
         }
         return obj3;
       }
@@ -467,18 +467,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmp21 = useGuildPowerupNewPerkMarketingVersionDefault(c0, allPowerups);
   let tmp23 = null != allPowerups;
-  const useNewPerkAvailableCoachmarkDCF = tmp(12254).useNewPerkAvailableCoachmarkDCF;
+  const useNewPerkAvailableCoachmarkDCF = tmp(12193).useNewPerkAvailableCoachmarkDCF;
   require("GuildPowerupsNotificationsDCF");
   if (tmp23) {
     tmp23 = !tmp20;
   }
   [tmp25, tmp26] = useNewPerkAvailableCoachmarkDCF(tmp23, tmp21);
   _slicedToArray(useNewPerkAvailableCoachmarkDCF(tmp23, tmp21), 2);
-  const GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK = tmp(2048).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK;
+  const GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK = tmp(2049).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK;
   const tmp27 = useBoostToUnlockFeaturedPowerupDefault(c0);
   let tmp30 = null != allPowerups;
   const tmp28 = useCanPurchaseBoostsDefault();
-  const useBoostToUnlockCoachmarkDCF = tmp(12254).useBoostToUnlockCoachmarkDCF;
+  const useBoostToUnlockCoachmarkDCF = tmp(12193).useBoostToUnlockCoachmarkDCF;
   require("GuildPowerupsNotificationsDCF");
   if (tmp30) {
     tmp30 = !tmp20;
@@ -494,10 +494,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   [tmp33, tmp34] = useBoostToUnlockCoachmarkDCF(tmp30, c0);
   _slicedToArray(useBoostToUnlockCoachmarkDCF(tmp30, c0), 2);
-  const BOOST_TO_UNLOCK_COACHMARK = tmp(2048).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
+  const BOOST_TO_UNLOCK_COACHMARK = tmp(2049).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
   const tmp35 = useFeaturedExpiringPowerupDefault(c0);
   let tmp37 = null != allPowerups;
-  const useExpiringPowerupCoachmarkDCF = tmp(12254).useExpiringPowerupCoachmarkDCF;
+  const useExpiringPowerupCoachmarkDCF = tmp(12193).useExpiringPowerupCoachmarkDCF;
   require("GuildPowerupsNotificationsDCF");
   if (tmp37) {
     tmp37 = !tmp20;
@@ -513,7 +513,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   [tmp40, tmp41] = useExpiringPowerupCoachmarkDCF(tmp37, c0);
   _slicedToArray(useExpiringPowerupCoachmarkDCF(tmp37, c0), 2);
-  const EXPIRING_POWERUP_COACHMARK = tmp(2048).DismissibleContent.EXPIRING_POWERUP_COACHMARK;
+  const EXPIRING_POWERUP_COACHMARK = tmp(2049).DismissibleContent.EXPIRING_POWERUP_COACHMARK;
   if (cResult[6] !== c0) {
     const tmpResult21 = require("GameServerExperiment");
     const gameServerEnabled = tmpResult21.getGameServerEnabled(c0, "useGuildPowerupsChannelListPopout");
@@ -524,7 +524,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
     tmp42 = cResult[7];
   }
   let tmp45 = null != allPowerups;
-  const useNewGamesCoachmarkDC = tmp(12254).useNewGamesCoachmarkDC;
+  const useNewGamesCoachmarkDC = tmp(12193).useNewGamesCoachmarkDC;
   require("GuildPowerupsNotificationsDCF");
   if (tmp45) {
     tmp45 = tmp42;
@@ -619,7 +619,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
               }
               _require = c0;
               importDefault = allPowerups;
-              const ReverseOrderedTiers = tmp(7998).ReverseOrderedTiers;
+              const ReverseOrderedTiers = tmp(8006).ReverseOrderedTiers;
               const found = ReverseOrderedTiers.find((item) => {
                 let tmp2;
                 if (null != markAsDismissed2[item]) {
@@ -854,22 +854,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   const tmp13 = useGuildPowerupNewPerkMarketingVersionDefault(c0, arg1);
   let closure_8 = tmp13;
   let tmp15 = null != arg1;
-  const useNewPerkAvailableCoachmarkDCF = tmp(12254).useNewPerkAvailableCoachmarkDCF;
-  tmp(12254);
+  const useNewPerkAvailableCoachmarkDCF = tmp(12193).useNewPerkAvailableCoachmarkDCF;
+  tmp(12193);
   if (tmp15) {
     tmp15 = !tmp6;
   }
   const tmp3Result = tmp3(useNewPerkAvailableCoachmarkDCF(tmp15, tmp13), 2);
   let tmp17 = tmp3Result[1];
   const markAsDismissed2 = tmp17;
-  let tmp18 = tmp3Result[0] === tmp(2048).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK;
+  let tmp18 = tmp3Result[0] === tmp(2049).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK;
   let closure_10 = tmp18;
   const tmp19 = useBoostToUnlockFeaturedPowerupDefault(c0);
   let closure_11 = tmp19;
   let tmp20 = useCanPurchaseBoostsDefault();
   let tmp22 = null != arg1;
-  const useBoostToUnlockCoachmarkDCF = tmp(12254).useBoostToUnlockCoachmarkDCF;
-  tmp(12254);
+  const useBoostToUnlockCoachmarkDCF = tmp(12193).useBoostToUnlockCoachmarkDCF;
+  tmp(12193);
   if (tmp22) {
     tmp22 = !tmp6;
   }
@@ -884,13 +884,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmp3Result5 = tmp3(useBoostToUnlockCoachmarkDCF(tmp22, c0), 2);
   const markAsDismissed3 = tmp24;
-  let tmp25 = tmp3Result5[0] === tmp(2048).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
+  let tmp25 = tmp3Result5[0] === tmp(2049).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
   constants = tmp25;
   let tmp26 = useFeaturedExpiringPowerupDefault(c0);
   let closure_14 = tmp26;
   let tmp28 = null != arg1;
-  const useExpiringPowerupCoachmarkDCF = tmp(12254).useExpiringPowerupCoachmarkDCF;
-  tmp(12254);
+  const useExpiringPowerupCoachmarkDCF = tmp(12193).useExpiringPowerupCoachmarkDCF;
+  tmp(12193);
   if (tmp28) {
     tmp28 = !tmp6;
   }
@@ -905,19 +905,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
   }
   const tmp3Result6 = tmp3(useExpiringPowerupCoachmarkDCF(tmp28, c0), 2);
   const markAsDismissed4 = tmp30;
-  const tmp31 = tmp3Result6[0] === tmp(2048).DismissibleContent.EXPIRING_POWERUP_COACHMARK;
+  const tmp31 = tmp3Result6[0] === tmp(2049).DismissibleContent.EXPIRING_POWERUP_COACHMARK;
   let closure_16 = tmp31;
-  const tmpResult8 = tmp(4986);
+  const tmpResult8 = tmp(4987);
   const gameServerEnabled = tmpResult8.getGameServerEnabled(c0, "useGuildPowerupsChannelListPopout");
   let tmp34 = null != arg1;
-  const useNewGamesCoachmarkDC = tmp(12254).useNewGamesCoachmarkDC;
-  tmp(12254);
+  const useNewGamesCoachmarkDC = tmp(12193).useNewGamesCoachmarkDC;
+  tmp(12193);
   if (tmp34) {
     tmp34 = gameServerEnabled;
   }
   const tmp3Result7 = tmp3(useNewGamesCoachmarkDC(tmp34), 2);
   const markAsDismissed5 = tmp36;
-  const tmp37 = tmp3Result7[0] === tmp(2048).DismissibleContent.GAME_SERVER_NEW_GAMES_COACHMARK;
+  const tmp37 = tmp3Result7[0] === tmp(2049).DismissibleContent.GAME_SERVER_NEW_GAMES_COACHMARK;
   let closure_18 = tmp37;
   const items2 = [c0, arg1, tmp6, tmp18, tmp37, tmp25, tmp31, available, stateFromStores, stateFromStores1, serverThemeEnabled];
   const memo = available.useMemo(() => {
@@ -1017,7 +1017,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowe
       }
     }
   }, items2);
-  const tmpResult10 = tmp(12254);
+  const tmpResult10 = tmp(12193);
   const tmp3Result8 = tmp3(tmpResult10.useGuildPowerupNotificationDCF(null != memo), 2);
   const first = tmp3Result8[0];
   closure_21 = tmp41;
@@ -1237,7 +1237,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoDismi
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   const tmp8 = closure_22(arg0);
   dependencyMap = tmp8;
-  const tmpResult2 = tmp(12261);
+  const tmpResult2 = tmp(12200);
   const autoDismissGuildPowerupsNewBadge = tmpResult2.useAutoDismissGuildPowerupsNewBadge(arg0);
   if (cResult[3] !== arg0) {
     const fn2 = function p() {

@@ -1,14 +1,13 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8674
+// Function ID: 8675
 // Name: CreateInviteModalActionCreators
-// Dependencies: [8659, 1085, 584, 1264, 8472, 1126, 2]
+// Dependencies: [8668, 1085, 584, 1265, 8480, 1126, 2]
 
-// Module 8665 (CreateInviteModalActionCreators)
+// Module 8674 (CreateInviteModalActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8472 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8659 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8668 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,24 +64,22 @@ let obj = {
     let obj = CreateInviteModalStore;
     const pendingSettings = CreateInviteModalStore.getPendingSettings();
     if (null != pendingSettings) {
-      const obj3 = DispatcherDefault;
-      obj3.dispatch({ type: "CREATE_INVITE_MODAL_GENERATE_INVITE" });
+      const obj4 = DispatcherDefault;
+      obj4.dispatch({ type: "CREATE_INVITE_MODAL_GENERATE_INVITE" });
       const channelId = pendingSettings.channelId;
       ({ maxAge, maxUses, temporary, targetType, targetUserId, targetApplicationId, flags, roleIds } = pendingSettings);
       const invite = obj.getInvite();
       let code = null;
+      const tmp6 = importDefault;
       if (arg1) {
         code = null;
         if (null != invite) {
           code = invite.code;
         }
       }
-      let obj2 = { temporary, validate: code, max_age: parseInt(maxAge, 10), max_uses: parseInt(maxUses, 10), target_type: targetType, target_user_id: targetUserId, target_application_id: targetApplicationId, flags, role_ids: roleIds };
-      const _parseInt = parseInt;
-      const createInvite = tmp8(8472).createInvite;
-      InstantInviteActionCreatorsDefault;
-      const _parseInt2 = parseInt;
-      const invite1 = createInvite(channelId, obj2, arg0);
+      let obj2 = { temporary, validate: code, max_age: maxAge, max_uses: maxUses, target_type: targetType, target_user_id: targetUserId, target_application_id: targetApplicationId, flags, role_ids: roleIds };
+      const tmp6Result = tmp6(8480);
+      const invite1 = tmp6Result.createInvite(channelId, obj2, arg0);
       invite1.then(() => {
         const obj = DispatcherDefault;
         const obj2 = { type: "CREATE_INVITE_MODAL_GENERATE_INVITE_SUCCESS", channelId };

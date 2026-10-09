@@ -1,10 +1,10 @@
-// Module ID: 12339
-// Function ID: 12340
+// Module ID: 12278
+// Function ID: 12279
 // Name: getBoostRowMessageText
-// Dependencies: [1126, 2597, 12334, 2]
+// Dependencies: [1126, 2597, 12273, 2]
 // Exports: default
 
-// Module 12339 (getBoostRowMessageText)
+// Module 12278 (getBoostRowMessageText)
 import intl4 from "intl" /* 1126 */;
 import _modDef2597 from "module_2597" /* 2597 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ export default function getBoostRowMessageText(phase) {
       const _Date = Date;
       const self = this;
       const self2 = this;
-      endsAt = new Date(phase.sortKey + tmp4(12334).BOOST_EXPIRING_DISPLAY_WINDOW_MS);
+      endsAt = new Date(phase.sortKey + tmp4(12273).BOOST_EXPIRING_DISPLAY_WINDOW_MS);
     }
     const obj = { date: endsAt };
     return formatToPlainString(vct4l8, obj);

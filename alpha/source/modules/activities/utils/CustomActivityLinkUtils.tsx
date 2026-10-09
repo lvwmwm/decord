@@ -1,14 +1,14 @@
-// Module ID: 12906
-// Function ID: 12907
+// Module ID: 12986
+// Function ID: 12987
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 12907, 1085, 12909, 1294, 584, 2]
+// Dependencies: [5, 12987, 1085, 12989, 1295, 584, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 12906 (CustomActivityLinkUtils)
+// Module 12986 (CustomActivityLinkUtils)
 import Constants from "Constants" /* 1085 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12909 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 12989 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 12907 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 12987 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "create" }, done: true };
+            return { value: { customId: "r" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "create" };
+              obj = { customId: "r" };
             } else {
               obj = { customId: custom_id.custom_id };
             }

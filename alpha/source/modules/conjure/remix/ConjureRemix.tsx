@@ -1,13 +1,13 @@
-// Module ID: 16861
-// Function ID: 16862
+// Module ID: 16985
+// Function ID: 16986
 // Name: ConjureRemix
-// Dependencies: [5, 13072, 12364, 3827, 1126, 2]
+// Dependencies: [5, 13164, 11369, 3827, 1126, 2]
 // Exports: remixConjureProjectInto
 
-// Module 16861 (ConjureRemix)
-import ConjureActionCreators from "ConjureActionCreators" /* 12364 */;
+// Module 16985 (ConjureRemix)
+import ConjureActionCreators from "ConjureActionCreators" /* 11369 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13072 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, status;

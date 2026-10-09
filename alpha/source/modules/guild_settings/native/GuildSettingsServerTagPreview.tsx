@@ -1,36 +1,34 @@
-// Module ID: 13966
-// Function ID: 13967
+// Module ID: 14063
+// Function ID: 14064
 // Name: GuildSettingsServerTagPreview
-// Dependencies: [5, 32, 19, 17, 1389, 7860, 21, 5090, 587, 558, 576, 504, 5405, 1414, 13967, 1126, 5086, 12617, 6164, 8830, 13968, 14012, 5375, 5373, 6186, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 7869, 21, 5091, 587, 558, 576, 504, 5406, 1415, 14064, 1126, 5087, 6163, 12557, 8839, 14065, 14109, 5376, 5374, 6188, 2]
 
-// Module 13966 (GuildSettingsServerTagPreview)
+// Module 14063 (GuildSettingsServerTagPreview)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 7860 */;
+import GuildTagConstants from "GuildTagConstants" /* 7869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, c3, dependencyMap;
 
 let c10;
-let closure_12;
-let metroImportDefault;
-let metroRequire;
+let c9;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
 let size;
 let unpackModuleId;
-({ Image: metroRequire, View: metroImportDefault } = react_native);
+const View = react_native.View;
 const GuildTagBadgeSize = GuildTagConstants.GuildTagBadgeSize;
-({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { card: obj2, notice: obj3, message: obj4, unfocused: { opacity: 0.5 }, avatar: size, messageBody: { flex: 1 }, usernameRow: obj5 };
 obj2 = { padding: nativeDefault.space.PX_16 };
@@ -39,8 +37,8 @@ obj3 = { marginBottom: nativeDefault.space.PX_12 };
 obj4 = { flexDirection: "row", columnGap: nativeDefault.space.PX_12, alignItems: "flex-start" };
 size = { width: 40, height: 40, borderRadius: nativeDefault.radii.round };
 obj5 = { flexDirection: "row", alignItems: "center", columnGap: nativeDefault.space.PX_4 };
-let closure_13 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsServerTagPreview(guildId) {
+let closure_12 = createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsServerTagPreview(guildId) {
   let badge;
   let currentUser;
   let intl2;
@@ -76,10 +74,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   if (undefined !== variant) {
     str = variant;
   }
-  let tmp4 = closure_13();
+  let tmp4 = closure_12();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function b() {
+    const fn = function p() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -91,7 +89,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  let obj4 = onAdopted(5405);
+  let obj4 = onAdopted(5406);
   const name = obj4.useName(guildId, null, stateFromStores);
   if (cResult[2] === stateFromStores) {
     let tmp10;
@@ -156,8 +154,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
             tmp28 = cResult[15];
           }
           if (cResult[16] !== tmp4.avatar) {
-            let obj2 = { source: tmp8(12617), style: tmp4.avatar, importantForAccessibility: "no" };
-            const tmp32 = closure_10(closure_6, obj2);
+            let obj2 = { source: tmp8(12557), style: tmp4.avatar, importantForAccessibility: "no" };
+            const tmp8Result = onAdopted(6163);
+            const tmp32 = closure_9(tmp8Result, obj2);
             cResult[16] = tmp4.avatar;
             cResult[17] = tmp32;
             tmp29 = tmp32;
@@ -166,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           }
           const _Symbol = Symbol;
           if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp35 = closure_10(tmp(5086).Text, { variant: "text-md/semibold", color: "text-default", children: "Locke" });
+            const tmp35 = closure_9(tmp(5087).Text, { variant: "text-md/semibold", color: "text-default", children: "Locke" });
             cResult[18] = tmp35;
             tmp33 = tmp35;
           } else {
@@ -175,9 +174,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           const _Symbol2 = Symbol;
           if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
             let obj3 = { variant: "text-md/normal", color: "text-default", children: intl2.string(tmp(1126).t.KZQ4mF) };
-            const Text = tmp(5086).Text;
+            const Text = tmp(5087).Text;
             intl2 = tmp(1126).intl;
-            const tmp38 = closure_10(Text, obj3);
+            const tmp38 = closure_9(Text, obj3);
             cResult[19] = tmp38;
             tmp36 = tmp38;
           } else {
@@ -186,7 +185,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           if (cResult[20] !== tmp4.messageBody) {
             let obj5 = { style: tmp4.messageBody, children: items1 };
             items1 = [tmp33, tmp36];
-            const tmp42 = closure_11(closure_7, obj5);
+            const tmp42 = closure_10(View, obj5);
             cResult[20] = tmp4.messageBody;
             cResult[21] = tmp42;
             tmp39 = tmp42;
@@ -207,7 +206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                 }
                 if (cResult[29] !== name) {
                   const obj6 = { variant: "text-md/semibold", color: "text-default", children: name };
-                  const tmp52 = closure_10(tmp(5086).Text, obj6);
+                  const tmp52 = closure_9(tmp(5087).Text, obj6);
                   cResult[29] = name;
                   cResult[30] = tmp52;
                   tmp50 = tmp52;
@@ -231,9 +230,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                           const _Symbol3 = Symbol;
                           if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
                             const obj7 = { variant: "text-md/normal", color: "text-default", children: intl3.string(tmp(1126).t.LKsPRe) };
-                            const Text2 = tmp(5086).Text;
+                            const Text2 = tmp(5087).Text;
                             intl3 = tmp(1126).intl;
-                            const tmp66 = closure_10(Text2, obj7);
+                            const tmp66 = closure_9(Text2, obj7);
                             cResult[40] = tmp66;
                             tmp64 = tmp66;
                           } else {
@@ -260,8 +259,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                     tmp75 = cResult[50];
                                   }
                                   if (cResult[51] !== tmp4.avatar) {
-                                    const obj8 = { source: onAdopted(14012), style: tmp4.avatar, importantForAccessibility: "no" };
-                                    const tmp79 = closure_10(closure_6, obj8);
+                                    const obj8 = { source: onAdopted(14109), style: tmp4.avatar, importantForAccessibility: "no" };
+                                    const tmp8Result3 = onAdopted(6163);
+                                    const tmp79 = closure_9(tmp8Result3, obj8);
                                     cResult[51] = tmp4.avatar;
                                     cResult[52] = tmp79;
                                     tmp76 = tmp79;
@@ -270,7 +270,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                   }
                                   const _Symbol4 = Symbol;
                                   if (cResult[53] === Symbol.for("react.memo_cache_sentinel")) {
-                                    const tmp82 = closure_10(tmp(5086).Text, { variant: "text-md/semibold", color: "text-default", children: "Phibi" });
+                                    const tmp82 = closure_9(tmp(5087).Text, { variant: "text-md/semibold", color: "text-default", children: "Phibi" });
                                     cResult[53] = tmp82;
                                     tmp80 = tmp82;
                                   } else {
@@ -279,9 +279,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                   const _Symbol5 = Symbol;
                                   if (cResult[54] === Symbol.for("react.memo_cache_sentinel")) {
                                     const obj9 = { variant: "text-md/normal", color: "text-default", children: intl4.string(tmp(1126).t.vtCg11) };
-                                    const Text3 = tmp(5086).Text;
+                                    const Text3 = tmp(5087).Text;
                                     intl4 = tmp(1126).intl;
-                                    const tmp85 = closure_10(Text3, obj9);
+                                    const tmp85 = closure_9(Text3, obj9);
                                     cResult[54] = tmp85;
                                     tmp83 = tmp85;
                                   } else {
@@ -290,7 +290,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                   if (cResult[55] !== tmp4.messageBody) {
                                     const obj10 = { style: tmp4.messageBody, children: items2 };
                                     items2 = [tmp80, tmp83];
-                                    const tmp89 = closure_11(closure_7, obj10);
+                                    const tmp89 = closure_10(View, obj10);
                                     cResult[55] = tmp4.messageBody;
                                     cResult[56] = tmp89;
                                     tmp86 = tmp89;
@@ -353,7 +353,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                                       tmp106 = tmp107;
                                                     }
                                                     const obj11 = { variant: "secondary", radius: 16, style: tmp4.card, children: tmp102 };
-                                                    const tmp109 = closure_10(tmp(6186).Card, obj11);
+                                                    const tmp109 = closure_9(tmp(6188).Card, obj11);
                                                     cResult[74] = tmp102;
                                                     cResult[75] = tmp4.card;
                                                     cResult[76] = tmp109;
@@ -363,7 +363,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                                 }
                                                 const obj12 = { children: items3 };
                                                 items3 = [tmp25, tmp99];
-                                                const tmp105 = closure_11(closure_12, obj12);
+                                                const tmp105 = closure_10(closure_11, obj12);
                                                 cResult[71] = tmp99;
                                                 cResult[72] = tmp25;
                                                 cResult[73] = tmp105;
@@ -372,9 +372,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                             }
                                           }
                                           const obj14 = { spacing: onAdopted(587).space.PX_12, children: items4 };
-                                          const Stack = tmp(5373).Stack;
+                                          const Stack = tmp(5374).Stack;
                                           items4 = [tmp43, tmp71, tmp90, tmp96];
-                                          const tmp101 = closure_11(Stack, obj14);
+                                          const tmp101 = closure_10(Stack, obj14);
                                           cResult[66] = tmp43;
                                           cResult[67] = tmp71;
                                           cResult[68] = tmp90;
@@ -384,7 +384,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                         }
                                       }
                                       const obj15 = { variant: "primary", text: tmp94, loading: tmp20, disabled: tmp15, onPress: tmp21 };
-                                      const tmp98 = closure_10(tmp(5375).Button, obj15);
+                                      const tmp98 = closure_9(tmp(5376).Button, obj15);
                                       cResult[62] = tmp20;
                                       cResult[63] = tmp21;
                                       cResult[64] = tmp15;
@@ -394,7 +394,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                                   }
                                   const obj16 = { style: tmp75, children: items5 };
                                   items5 = [tmp76, tmp86];
-                                  const tmp93 = closure_11(closure_7, obj16);
+                                  const tmp93 = closure_10(View, obj16);
                                   cResult[57] = tmp75;
                                   cResult[58] = tmp76;
                                   cResult[59] = tmp86;
@@ -411,7 +411,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                             }
                             const obj17 = { style: tmp4.message, children: items7 };
                             items7 = [tmp47, tmp67];
-                            const tmp74 = closure_11(closure_7, obj17);
+                            const tmp74 = closure_10(View, obj17);
                             cResult[44] = tmp4.message;
                             cResult[45] = tmp47;
                             cResult[46] = tmp67;
@@ -420,7 +420,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                           }
                           const obj18 = { style: tmp4.messageBody, children: items8 };
                           items8 = [tmp60, tmp64];
-                          const tmp70 = closure_11(closure_7, obj18);
+                          const tmp70 = closure_10(View, obj18);
                           cResult[41] = tmp4.messageBody;
                           cResult[42] = tmp60;
                           cResult[43] = tmp70;
@@ -429,7 +429,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                       }
                       const obj19 = { style: tmp4.usernameRow, children: items9 };
                       items9 = [tmp50, tmp53];
-                      const tmp63 = closure_11(closure_7, obj19);
+                      const tmp63 = closure_10(View, obj19);
                       cResult[36] = tmp4.usernameRow;
                       cResult[37] = tmp50;
                       cResult[38] = tmp53;
@@ -442,10 +442,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                 if (tmp55Result2) {
                   const obj20 = { guildTag: tag, guildBadge: tmp55Result };
                   tmp55Result = undefined;
-                  const BaseGuildTagChiplet = tmp(8830).BaseGuildTagChiplet;
+                  const BaseGuildTagChiplet = tmp(8839).BaseGuildTagChiplet;
                   if (null != badge) {
                     size = { badge, primaryTintColor: tmp57, secondaryTintColor: tmp58, width: null, height: null };
-                    const GuildBadge = tmp(13968).GuildBadge;
+                    const GuildBadge = tmp(14065).GuildBadge;
                     ({ SIZE_12: obj13.width, SIZE_12: obj13.height } = GuildTagBadgeSize);
                     tmp55Result = tmp55(GuildBadge, size);
                     tmp57 = primaryColor;
@@ -461,7 +461,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                 tmp53 = tmp55Result2;
               }
               const obj21 = { source: tmp10, style: tmp4.avatar, importantForAccessibility: "no" };
-              const tmp49 = closure_10(onAdopted(6164), obj21);
+              const tmp49 = closure_9(onAdopted(6163), obj21);
               cResult[26] = tmp10;
               cResult[27] = tmp4.avatar;
               cResult[28] = tmp49;
@@ -470,7 +470,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           }
           const obj22 = { style: tmp28, children: items10 };
           items10 = [tmp29, tmp39];
-          const tmp46 = closure_11(closure_7, obj22);
+          const tmp46 = closure_10(View, obj22);
           cResult[22] = tmp39;
           cResult[23] = tmp28;
           cResult[24] = tmp29;
@@ -485,7 +485,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         tmp28 = items11;
       }
       const obj23 = { variant: "text-sm/medium", color: "text-muted", style: tmp4.notice, children: tmp23 };
-      const tmp27 = closure_10(tmp(5086).Text, obj23);
+      const tmp27 = closure_9(tmp(5087).Text, obj23);
       cResult[10] = tmp4.notice;
       cResult[11] = tmp23;
       cResult[12] = tmp27;
@@ -561,8 +561,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     tmp21 = t5;
   }
   let avatarURL;
-  const makeSource = tmp8(1414).makeSource;
-  onAdopted(1414);
+  const makeSource = tmp8(1415).makeSource;
+  onAdopted(1415);
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(guildId, 40);
   }
@@ -604,17 +604,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }
   const onAdopted = guildId.onAdopted;
   dependencyMap = undefined;
-  let tmp = closure_13();
+  let tmp = closure_12();
   const tmp3 = dependencyMap;
   let obj = guildId(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const tmp4 = onAdopted;
-  let obj3 = onAdopted(5405);
+  let obj3 = onAdopted(5406);
   const name = obj3.useName(guildId, null, stateFromStores);
   let avatarURL;
-  const makeSource = onAdopted(1414).makeSource;
-  const tmp6 = onAdopted(1414);
+  const makeSource = onAdopted(1415).makeSource;
+  const tmp6 = onAdopted(1415);
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(guildId, 40);
   }
@@ -702,11 +702,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     }
   }), items1);
   let obj2 = { variant: "text-sm/medium", color: "text-muted", style: tmp.notice, children: stringResult };
-  const Text = tmp2(5086).Text;
+  const Text = tmp2(5087).Text;
   const intl = tmp2(1126).intl;
   const string = intl.string;
   const t = tmp2(1126).t;
-  const tmp16 = closure_12;
+  const tmp16 = closure_11;
   if (tmp10) {
     stringResult = string(t.hRsJ7T);
   } else {
@@ -714,40 +714,39 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }
   const items2 = [tmp17(Text, obj2), ];
   let obj4 = { spacing: tmp4(587).space.PX_12, children: items6 };
-  const Stack = tmp2(5373).Stack;
+  const Stack = tmp2(5374).Stack;
   let obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ message: arr4[0], unfocused: arr4[1] } = tmp);
-  items4 = [, ];
-  const obj6 = { source: tmp4(12617), style: tmp.avatar, importantForAccessibility: "no" };
-  items4[0] = closure_10(closure_6, obj6);
+  const obj6 = { source: tmp4(12557), style: tmp.avatar, importantForAccessibility: "no" };
+  const tmp4Result = tmp4(6163);
+  items4 = [tmp17(tmp4Result, obj6), ];
   const obj7 = { style: tmp.messageBody, children: items5 };
-  items5 = [tmp17(tmp2(5086).Text, { variant: "text-md/semibold", color: "text-default", children: "Locke" }), ];
+  items5 = [tmp17(tmp2(5087).Text, { variant: "text-md/semibold", color: "text-default", children: "Locke" }), ];
   const obj8 = { variant: "text-md/normal", color: "text-default", children: intl2.string(guildId(1126).t.KZQ4mF) };
-  const Text2 = tmp2(5086).Text;
+  const Text2 = tmp2(5087).Text;
   intl2 = tmp2(1126).intl;
-  items5[1] = closure_10(Text2, obj8);
-  items4[1] = closure_11(closure_7, obj7);
-  items6 = [tmp15(closure_7, obj5), , , ];
+  items5[1] = closure_9(Text2, obj8);
+  items4[1] = closure_10(View, obj7);
+  items6 = [tmp15(View, obj5), , , ];
   const obj9 = { style: tmp.message, children: items7 };
   items7 = [, ];
   const obj10 = { source, style: tmp.avatar, importantForAccessibility: "no" };
-  items7[0] = closure_10(tmp4(6164), obj10);
+  items7[0] = closure_9(tmp4(6163), obj10);
   const obj11 = { style: tmp.messageBody, children: items9 };
   const obj12 = { style: tmp.usernameRow, children: items8 };
-  items8 = [tmp17(tmp2(5086).Text, { variant: "text-md/semibold", color: "text-default", children: name }), ];
+  items8 = [tmp17(tmp2(5087).Text, { variant: "text-md/semibold", color: "text-default", children: name }), ];
   let tmp17Result3 = null != tag;
-  const tmp20 = closure_6;
   if (tmp17Result3) {
     tmp17Result3 = "" !== tag;
   }
   if (tmp17Result3) {
     const obj13 = { guildTag: tag, guildBadge: tmp17Result };
     tmp17Result = undefined;
-    const BaseGuildTagChiplet = tmp2(8830).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp2(8839).BaseGuildTagChiplet;
     if (null != badge) {
       size = { badge, primaryTintColor: primaryColor, secondaryTintColor: secondaryColor, width: null, height: null };
-      const GuildBadge = tmp2(13968).GuildBadge;
+      const GuildBadge = tmp2(14065).GuildBadge;
       ({ SIZE_12: obj15.width, SIZE_12: obj15.height } = GuildTagBadgeSize);
       tmp17Result = tmp17(GuildBadge, size);
     }
@@ -756,27 +755,27 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   items8[1] = tmp17Result3;
   items9 = [tmp15(tmp19, obj12), ];
   const obj14 = { variant: "text-md/normal", color: "text-default", children: intl3.string(guildId(1126).t.LKsPRe) };
-  const Text3 = tmp2(5086).Text;
+  const Text3 = tmp2(5087).Text;
   intl3 = tmp2(1126).intl;
-  items9[1] = closure_10(Text3, obj14);
-  items7[1] = closure_11(closure_7, obj11);
-  items6[1] = closure_11(closure_7, obj9);
+  items9[1] = closure_9(Text3, obj14);
+  items7[1] = closure_10(View, obj11);
+  items6[1] = closure_10(View, obj9);
   const obj16 = { style: items10, children: items11 };
   items10 = [, ];
   ({ message: arr11[0], unfocused: arr11[1] } = tmp);
-  items11 = [, ];
-  const obj17 = { source: tmp4(14012), style: tmp.avatar, importantForAccessibility: "no" };
-  items11[0] = closure_10(tmp20, obj17);
+  const obj17 = { source: tmp4(14109), style: tmp.avatar, importantForAccessibility: "no" };
+  const tmp4Result2 = tmp4(6163);
+  items11 = [tmp17(tmp4Result2, obj17), ];
   const obj18 = { style: tmp.messageBody, children: items12 };
-  items12 = [tmp17(tmp2(5086).Text, { variant: "text-md/semibold", color: "text-default", children: "Phibi" }), ];
+  items12 = [tmp17(tmp2(5087).Text, { variant: "text-md/semibold", color: "text-default", children: "Phibi" }), ];
   const obj19 = { variant: "text-md/normal", color: "text-default", children: intl4.string(guildId(1126).t.vtCg11) };
-  const Text4 = tmp2(5086).Text;
+  const Text4 = tmp2(5087).Text;
   intl4 = tmp2(1126).intl;
-  items12[1] = closure_10(Text4, obj19);
-  items11[1] = closure_11(closure_7, obj18);
-  items6[2] = closure_11(closure_7, obj16);
+  items12[1] = closure_9(Text4, obj19);
+  items11[1] = closure_10(View, obj18);
+  items6[2] = closure_10(View, obj16);
   const obj20 = { variant: "primary", text: intl5.string(guildId(1126).t.cQDYRu), loading: tmp13, disabled: tmp10, onPress: callback };
-  const Button = tmp2(5375).Button;
+  const Button = tmp2(5376).Button;
   intl5 = tmp2(1126).intl;
   if (!tmp10) {
     tmp10 = tmp13;
@@ -791,17 +790,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     tmp10 = "" === tag;
   }
   const obj21 = { children: items2 };
-  items6[3] = closure_10(Button, obj20);
-  items2[1] = closure_11(Stack, obj4);
-  const tmp15Result = closure_11(tmp16, obj21);
+  items6[3] = closure_9(Button, obj20);
+  items2[1] = closure_10(Stack, obj4);
+  const tmp15Result = closure_10(tmp16, obj21);
   let tmp17Result4 = tmp15Result;
   if ("plain" !== variant) {
     const obj22 = { variant: "secondary", radius: 16, style: tmp.card, children: tmp15Result };
-    tmp17Result4 = tmp17(tmp2(6186).Card, obj22);
+    tmp17Result4 = tmp17(tmp2(6188).Card, obj22);
   }
   return tmp17Result4;
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsServerTagPreview.tsx");
 
-export default tmp5;
+export default tmp4;

@@ -1,20 +1,20 @@
-// Module ID: 13514
-// Function ID: 13515
+// Module ID: 13606
+// Function ID: 13607
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 4727, 21, 5090, 587, 5974, 558, 576, 1200, 1126, 4726, 2]
+// Dependencies: [19, 17, 4729, 21, 5091, 587, 5976, 558, 576, 1200, 1126, 4728, 2]
 
-// Module 13514 (SubscriptionRenewalMutationsNotice)
+// Module 13606 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import PremiumUtils from "PremiumUtils" /* 4726 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4727 */;
-import LegacyTokens from "LegacyTokens" /* 5974 */;
+import PremiumUtils from "PremiumUtils" /* 4728 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4729 */;
+import LegacyTokens from "LegacyTokens" /* 5976 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

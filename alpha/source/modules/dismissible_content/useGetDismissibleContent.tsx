@@ -1,23 +1,23 @@
-// Module ID: 7091
-// Function ID: 7092
+// Module ID: 7094
+// Function ID: 7095
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1243, 4899, 2051, 2055, 1085, 1095, 1264, 2048, 7092, 2049, 504, 558, 576, 4920, 2047, 4898, 11, 2]
+// Dependencies: [32, 19, 1244, 4900, 2052, 2056, 1085, 1095, 1265, 2049, 7095, 2050, 504, 558, 576, 4921, 2048, 4899, 11, 2]
 
-// Module 7091 (useGetDismissibleContent)
+// Module 7094 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2047 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2049 */;
-import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 2055 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2048 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
+import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 2056 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4899 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2051 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2052 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ function useGetVisibleContent(found1, stateFromStores, groupName, version, snowf
   let closure_6 = tmp6;
   let result = null != found1;
   if (result) {
-    const tmp2Result = tmp2(2049);
+    const tmp2Result = tmp2(2050);
     result = tmp2Result.isDismissibleContentBlockedByOverlay(found1, first, tmp6);
   }
   const items = [ref];
@@ -533,7 +533,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetVersio
   dependencyMap = null;
   let tmp9 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(4920);
+    const tmpResult2 = tmp(4921);
     let result = tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp15 = null;
@@ -715,7 +715,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTimeRe
   const tmp2 = _require;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
     let tmp10 = null;
-    const tmp2Result = tmp2(4920);
+    const tmp2Result = tmp2(4921);
     if (canShowTimeRecurringContent(!tmp2Result.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE), lastDismissedAtMs, numTimesDismissed, cooldownDurationMs)) {
       tmp10 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
     }
@@ -804,7 +804,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSnowfl
   dependencyMap = null;
   let tmp9 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(4920);
+    const tmpResult2 = tmp(4921);
     let result = tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp16 = null;
@@ -984,7 +984,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSnowfl
   closure_3 = null;
   let tmp13 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(4920);
+    const tmpResult2 = tmp(4921);
     let result = tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp20 = null;
@@ -1047,7 +1047,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSnowfl
   let closure_3 = null;
   let tmp7 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult = tmp(4920);
+    const tmpResult = tmp(4921);
     let result = tmpResult.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (obj2.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
       let tmp13 = null;
@@ -1156,7 +1156,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTimeRe
   dependencyMap = null;
   let result = null == THIRD_PARTY_OUTBOUND_PROMO_NAGBAR;
   if (!result) {
-    const tmpResult2 = tmp(2049);
+    const tmpResult2 = tmp(2050);
     result = tmpResult2.isTimeRecurringSnowflakeBoundDismissibleContentDismissed(THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, id, cooldownDurationMs);
   }
   let tmp10 = null;
@@ -1462,7 +1462,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTimeRe
   dependencyMap = null;
   let tmp15 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(4920);
+    const tmpResult2 = tmp(4921);
     let lastDismissedAtMs1;
     const tmp16 = !tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (tmp8 != null) {
@@ -1509,7 +1509,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTimeRe
   dependencyMap = null;
   let tmp7 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult = tmp(4920);
+    const tmpResult = tmp(4921);
     let lastDismissedAtMs;
     const tmp8 = !tmpResult.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
     if (tmp4 != null) {

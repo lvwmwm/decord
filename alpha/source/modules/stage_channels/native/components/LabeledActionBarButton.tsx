@@ -1,32 +1,31 @@
-// Module ID: 10913
-// Function ID: 10914
+// Module ID: 11088
+// Function ID: 11089
 // Name: LabeledActionBarButton
-// Dependencies: [109, 19, 17, 1096, 21, 5090, 5974, 587, 558, 576, 1200, 6189, 2]
+// Dependencies: [109, 19, 17, 1096, 21, 5091, 5976, 587, 558, 576, 6163, 1200, 6191, 2]
 
-// Module 10913 (LabeledActionBarButton)
+// Module 11088 (LabeledActionBarButton)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import LegacyTokens from "LegacyTokens" /* 5974 */;
-import Pressables from "Pressables" /* 6189 */;
+import LegacyTokens from "LegacyTokens" /* 5976 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import Pressables from "Pressables" /* 6191 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let tmp7;
 const native = tmp7(1200);
-let closure_2 = ["backgroundColor", "imageStyle", "children", "source", "disabled", "label", "iconPosition"];
-({ Image: closure_4, View: hasOwnProperty } = react_native);
+let closure_3 = ["backgroundColor", "imageStyle", "children", "source", "disabled", "label", "iconPosition"];
+const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -36,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginStart: 8, fontSize: 14, color: nativeDefault.colors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, paddingStart: 3 };
 let closure_8 = createStyles(obj);
 let obj4 = { LEFT: 0, [0]: "LEFT", RIGHT: 1, [1]: "RIGHT" };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActionButton(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActionButton(arg0) {
   let LEFT;
   let backgroundColor;
   let children;
@@ -58,7 +57,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
   const cResult = obj.c(55);
   if (cResult[0] !== arg0) {
     ({ backgroundColor, imageStyle, children, source, disabled, label, iconPosition } = arg0);
-    const tmp13 = _objectWithoutProperties(arg0, closure_2);
+    const tmp13 = _objectWithoutProperties(arg0, closure_3);
     cResult[0] = arg0;
     cResult[1] = backgroundColor;
     cResult[2] = children;
@@ -195,7 +194,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
                                           return tmp52;
                                         }
                                         const obj5 = { style: tmp17, children: tmp46 };
-                                        const tmp55 = metroRequire(hasOwnProperty, obj5);
+                                        const tmp55 = metroRequire(View, obj5);
                                         cResult[52] = tmp46;
                                         cResult[53] = tmp17;
                                         cResult[54] = tmp55;
@@ -204,7 +203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
                                     }
                                   }
                                   const obj6 = { accessibilityRole: "button", disabled: tmp6, style: tmp15.pressable, children: tmp42 };
-                                  const PressableOpacity = tmp(6189).PressableOpacity;
+                                  const PressableOpacity = tmp(6191).PressableOpacity;
                                   const merged = Object.assign(tmp9);
                                   const tmp51 = metroRequire(PressableOpacity, obj6);
                                   cResult[47] = tmp6;
@@ -217,7 +216,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
                               }
                               const obj7 = { style: tmp21, children: items };
                               items = [tmp38, tmp5];
-                              const tmp45 = metroImportDefault(hasOwnProperty, obj7);
+                              const tmp45 = metroImportDefault(View, obj7);
                               cResult[43] = tmp5;
                               cResult[44] = tmp38;
                               cResult[45] = tmp21;
@@ -228,7 +227,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
                         }
                         const obj8 = { style: tmp23, children: items1 };
                         items1 = [tmp24, tmp29, tmp33];
-                        const tmp41 = metroImportDefault(hasOwnProperty, obj8);
+                        const tmp41 = metroImportDefault(View, obj8);
                         cResult[38] = tmp24;
                         cResult[39] = tmp29;
                         cResult[40] = tmp33;
@@ -240,7 +239,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
                     let tmp35 = LEFT === obj4.RIGHT;
                     if (tmp35) {
                       const obj9 = { source: tmp10, style: tmp7 };
-                      tmp35 = metroRequire(React3, obj9);
+                      tmp35 = metroRequire(FastImageDefault, obj9);
                     }
                     cResult[34] = LEFT;
                     cResult[35] = tmp7;
@@ -274,7 +273,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
           let tmp26 = LEFT === obj4.LEFT;
           if (tmp26) {
             const obj11 = { source: tmp10, style: tmp7 };
-            tmp26 = metroRequire(React3, obj11);
+            tmp26 = metroRequire(FastImageDefault, obj11);
           }
           cResult[25] = LEFT;
           cResult[26] = tmp7;
@@ -326,7 +325,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
   }
   items[1] = containerWithLabel;
   const obj = { style: items, children: metroRequire(PressableOpacity, obj2) };
-  obj2 = { accessibilityRole: "button", disabled, style: tmp3.pressable, children: metroImportDefault(hasOwnProperty, obj4) };
+  obj2 = { accessibilityRole: "button", disabled, style: tmp3.pressable, children: metroImportDefault(View, obj4) };
   PressableOpacity = Pressables.PressableOpacity;
   const merged1 = Object.assign(merged);
   const items1 = [tmp3.buttonContainer, , ];
@@ -352,7 +351,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
   let tmp4Result = iconPosition === obj4.LEFT;
   if (tmp4Result) {
     const obj7 = { source, style: imageStyle };
-    tmp4Result = tmp4(React3, obj7);
+    tmp4Result = tmp4(FastImageDefault, obj7);
   }
   items3 = [tmp4Result, , ];
   let tmp4Result3 = null;
@@ -371,13 +370,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledActio
   let tmp4Result4 = iconPosition === tmp12.RIGHT;
   if (tmp4Result4) {
     const obj9 = { source, style: imageStyle };
-    tmp4Result4 = tmp4(React3, obj9);
+    tmp4Result4 = tmp4(FastImageDefault, obj9);
   }
   items3[2] = tmp4Result4;
-  items5 = [metroImportDefault(hasOwnProperty, obj6), children];
-  return metroRequire(hasOwnProperty, obj);
+  items5 = [metroImportDefault(View, obj6), children];
+  return metroRequire(View, obj);
 });
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/LabeledActionBarButton.tsx");
 
 export const IconPosition = obj4;
-export const LabeledActionButton = tmp6;
+export const LabeledActionButton = tmp5;

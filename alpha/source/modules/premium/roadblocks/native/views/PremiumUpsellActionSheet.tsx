@@ -1,36 +1,36 @@
-// Module ID: 9217
-// Function ID: 9218
+// Module ID: 9251
+// Function ID: 9252
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5079, 1205, 5108, 4899, 1389, 1391, 1085, 5210, 9218, 21, 5090, 587, 558, 576, 4778, 4726, 9219, 7752, 7737, 9220, 9221, 1126, 9223, 9225, 9226, 5054, 9216, 9227, 12867, 12869, 1105, 1381, 8981, 6164, 5387, 504, 6841, 9394, 9208, 7158, 8063, 12870, 9468, 1264, 9451, 4945, 6885, 12872, 5086, 5375, 8054, 2]
+// Dependencies: [19, 17, 5080, 1205, 5109, 4900, 1390, 1392, 1085, 5211, 9252, 21, 5091, 587, 558, 576, 4779, 4728, 9253, 7761, 7746, 9254, 9255, 1126, 9259, 9263, 9264, 5055, 9250, 9265, 12834, 12838, 1105, 1382, 8992, 6163, 5388, 504, 6848, 9432, 9242, 7163, 8071, 12839, 9506, 1265, 9489, 4946, 6892, 12841, 5087, 5376, 8062, 2]
 
-// Module 9217 (PremiumUpsellActionSheet)
+// Module 9251 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useToken from "useToken" /* 4778 */;
-import ChatInputUtils from "ChatInputUtils" /* 4945 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5210 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9216 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9218 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9225 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9226 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9227 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12869 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useToken from "useToken" /* 4779 */;
+import ChatInputUtils from "ChatInputUtils" /* 4946 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5211 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9250 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9252 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9263 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9264 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9265 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12838 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import UserStore from "UserStore" /* 1389 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import UserStore from "UserStore" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,15 +52,15 @@ let tmp;
 let unpackModuleId;
 const ConstantsIOS = tmp(1105);
 const intl18 = tmp(1126);
-const PremiumUtils = tmp(4726);
-const FileUtils = tmp(7737);
-const UploadLimits = tmp(7752);
-const APNGPlayer = tmp(8981);
-const EntitlementFeatureNames = tmp(9219);
-const MobileEmojiPickerUpsellRestyleExperiment = tmp(9220);
-const ReactionsSpotIllustration = tmp(9221);
-const StickersSpotIllustration = tmp(9223);
-const NitroScheduleMessageSpotIllustration = tmp(12867);
+const PremiumUtils = tmp(4728);
+const FileUtils = tmp(7746);
+const UploadLimits = tmp(7761);
+const APNGPlayer = tmp(8992);
+const EntitlementFeatureNames = tmp(9253);
+const MobileEmojiPickerUpsellRestyleExperiment = tmp(9254);
+const ReactionsSpotIllustration = tmp(9255);
+const StickersSpotIllustration = tmp(9259);
+const NitroScheduleMessageSpotIllustration = tmp(12834);
 const View = react_native.View;
 ({ PremiumSubscriptionSKUs: c10, PremiumTypes: unpackModuleId, PremiumUpsellTypes: closure_12 } = PremiumConstants);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ThemeTypes: closure_15 } = Constants);
@@ -210,7 +210,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
                                   const result = obj2.showScheduledMessagesModal();
                                 }
                 };
-                const tmp65 = authStore5(closure_19, obj8);
+                const tmp65 = authStore6(closure_19, obj8);
                 cResult[40] = tmp65;
                 tmp61 = tmp65;
               } else {
@@ -218,7 +218,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
               }
               const _Symbol6 = Symbol;
               if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj10 = { title: tmp58, showBetaBadge: true, description: tmp61, analyticsPage: constants3.PREMIUM_UPSELL_SCHEDULED_MESSAGES, upsellType: constants.SCHEDULED_MESSAGES_MODAL_UPSELL, illustration: authStore5(NitroScheduleMessageSpotIllustration.NitroScheduleMessageSpotIllustration, { width: 198, height: 132, accessible: false }) };
+                const obj10 = { title: tmp58, showBetaBadge: true, description: tmp61, analyticsPage: constants3.PREMIUM_UPSELL_SCHEDULED_MESSAGES, upsellType: constants.SCHEDULED_MESSAGES_MODAL_UPSELL, illustration: authStore6(NitroScheduleMessageSpotIllustration.NitroScheduleMessageSpotIllustration, { width: 198, height: 132, accessible: false }) };
                 cResult[41] = obj10;
                 tmp66 = obj10;
               } else {
@@ -326,7 +326,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
     let tmp23;
     const tmpResult7 = MobileEmojiPickerUpsellRestyleExperiment;
     if (tmpResult7.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet")) {
-      tmp23 = authStore5(ReactionsSpotIllustration.ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
+      tmp23 = authStore6(ReactionsSpotIllustration.ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
     }
     cResult[16] = featureName;
     cResult[17] = tmp23;
@@ -359,7 +359,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
     tmp28 = cResult[19];
   }
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj20 = { title: tmp27, description: tmp28, analyticsPage: constants3.PREMIUM_UPSELL_STICKERS_EVERYWHERE, upsellType: constants.STICKERS_EVERYWHERE_UPSELL, illustration: authStore5(StickersSpotIllustration.StickersSpotIllustration, { width: 235, height: 132, accessible: false }) };
+    const obj20 = { title: tmp27, description: tmp28, analyticsPage: constants3.PREMIUM_UPSELL_STICKERS_EVERYWHERE, upsellType: constants.STICKERS_EVERYWHERE_UPSELL, illustration: authStore6(StickersSpotIllustration.StickersSpotIllustration, { width: 235, height: 132, accessible: false }) };
     cResult[20] = obj20;
     tmp31 = obj20;
   } else {
@@ -378,7 +378,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
   let result = tmpResult8.fileUploadLimitRoadblockDescription({ guildId, maxSize: effectiveUploadLimit });
   if (cResult[22] !== result) {
     const obj21 = { children: result };
-    const tmp39 = authStore5(closure_19, obj21);
+    const tmp39 = authStore6(closure_19, obj21);
     cResult[22] = result;
     cResult[23] = tmp39;
     tmp36 = tmp39;
@@ -499,7 +499,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
   let tmp9;
   const tmpResult7 = MobileEmojiPickerUpsellRestyleExperiment;
   if (tmpResult7.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet")) {
-    tmp9 = authStore5(ReactionsSpotIllustration.ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
+    tmp9 = authStore6(ReactionsSpotIllustration.ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
   }
   const obj3 = {};
   const obj4 = { title: intl.string(intl18.t.jGDYF0), description: intl2.formatToPlainString(intl18.t["fc+8uy"], { nitroTierName: premiumTypeDisplayName }), analyticsPage: constants3.PREMIUM_UPSELL_SOUNDBOARD_EVERYWHERE, upsellType: constants.SOUNDBOARD_EVERYWHERE_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/soundboard_" + str + ".png" } };
@@ -513,13 +513,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
   intl3 = intl18.intl;
   intl4 = intl18.intl;
   obj3[EMOJIS_EVERYWHERE] = obj6;
-  const obj8 = { title: intl5.string(intl18.t.Eukdgl), description: intl6.string(intl18.t.sMmd7s), analyticsPage: constants3.PREMIUM_UPSELL_STICKERS_EVERYWHERE, upsellType: constants.STICKERS_EVERYWHERE_UPSELL, illustration: authStore5(StickersSpotIllustration.StickersSpotIllustration, { width: 235, height: 132, accessible: false }) };
+  const obj8 = { title: intl5.string(intl18.t.Eukdgl), description: intl6.string(intl18.t.sMmd7s), analyticsPage: constants3.PREMIUM_UPSELL_STICKERS_EVERYWHERE, upsellType: constants.STICKERS_EVERYWHERE_UPSELL, illustration: authStore6(StickersSpotIllustration.StickersSpotIllustration, { width: 235, height: 132, accessible: false }) };
   ({ uri: "https://cdn.discordapp.com/assets/premium/roadblocks/emoji_" + str + ".png" });
   const STICKERS_EVERYWHERE = EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE;
   intl5 = intl18.intl;
   intl6 = intl18.intl;
   obj3[STICKERS_EVERYWHERE] = obj8;
-  const obj9 = { title: intl7.string(intl18.t["G+pngo"]), description: authStore5(closure_19, obj10), analyticsPage: constants3.PREMIUM_UPSELL_FILE_UPLOAD, upsellType: constants.LARGER_FILE_UPLOAD_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_" + str + "_v2.png" } };
+  const obj9 = { title: intl7.string(intl18.t["G+pngo"]), description: authStore6(closure_19, obj10), analyticsPage: constants3.PREMIUM_UPSELL_FILE_UPLOAD, upsellType: constants.LARGER_FILE_UPLOAD_UPSELL, image: { uri: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_" + str + "_v2.png" } };
   const INCREASED_FILE_UPLOAD_SIZE = EntitlementFeatureNames.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE;
   intl7 = intl18.intl;
   obj10 = { children: tmpResult8.fileUploadLimitRoadblockDescription({ guildId, maxSize: effectiveUploadLimit }) };
@@ -542,7 +542,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
   intl12 = intl18.intl;
   intl13 = intl18.intl;
   obj3[APP_ICONS] = obj15;
-  const obj16 = { title: intl14.formatToPlainString(intl18.t.GNoaxo, obj17), showBetaBadge: true, description: authStore5(closure_19, obj18), analyticsPage: constants3.PREMIUM_UPSELL_SCHEDULED_MESSAGES, upsellType: constants.SCHEDULED_MESSAGES_MODAL_UPSELL, illustration: authStore5(NitroScheduleMessageSpotIllustration.NitroScheduleMessageSpotIllustration, { width: 198, height: 132, accessible: false }) };
+  const obj16 = { title: intl14.formatToPlainString(intl18.t.GNoaxo, obj17), showBetaBadge: true, description: authStore6(closure_19, obj18), analyticsPage: constants3.PREMIUM_UPSELL_SCHEDULED_MESSAGES, upsellType: constants.SCHEDULED_MESSAGES_MODAL_UPSELL, illustration: authStore6(NitroScheduleMessageSpotIllustration.NitroScheduleMessageSpotIllustration, { width: 198, height: 132, accessible: false }) };
   const SCHEDULED_MESSAGES = EntitlementFeatureNames.EntitlementFeatureNames.SCHEDULED_MESSAGES;
   intl14 = intl18.intl;
   obj17 = { premiumMax };
@@ -588,7 +588,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
           return tmp5;
         }
         const obj3 = { url: image.uri, style, autoplay: true };
-        const tmp7 = authStore5(APNGPlayer.APNGPlayer, obj3);
+        const tmp7 = authStore6(APNGPlayer.APNGPlayer, obj3);
         cResult[0] = image.uri;
         cResult[1] = style;
         cResult[2] = tmp7;
@@ -605,7 +605,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       return tmp9;
     }
   }
-  const tmp10 = authStore5(FastImageDefault, { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false });
+  const tmp10 = authStore6(FastImageDefault, { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false });
   cResult[3] = image;
   cResult[4] = style;
   cResult[5] = !useReducedMotion;
@@ -622,13 +622,13 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       let tmp5;
       if (null != image.uri) {
         const obj2 = { url: image.uri, style, autoplay: true };
-        tmp5 = authStore5(APNGPlayer.APNGPlayer, obj2);
+        tmp5 = authStore6(APNGPlayer.APNGPlayer, obj2);
       }
       return tmp5;
     }
   }
   const obj3 = { source: image, resizeMode: "contain", style, enableAnimation: !useReducedMotion, accessible: false };
-  tmp5 = authStore5(FastImageDefault, obj3);
+  tmp5 = authStore6(FastImageDefault, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsellHero(arg0) {
@@ -648,7 +648,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       tmp21 = tmp22;
     }
     const obj2 = { style: styles.hero, children: pageConfig.illustration };
-    const tmp25 = authStore5(View, obj2);
+    const tmp25 = authStore6(View, obj2);
     cResult[0] = pageConfig.illustration;
     cResult[1] = styles.hero;
     cResult[2] = tmp25;
@@ -686,7 +686,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                           tmp4 = tmp17;
                         }
                         const obj3 = { style: styles.imageGradientBackgroundContainer, children: tmp13 };
-                        const tmp20 = authStore5(View, obj3);
+                        const tmp20 = authStore6(View, obj3);
                         cResult[17] = styles.imageGradientBackgroundContainer;
                         cResult[18] = tmp13;
                         cResult[19] = tmp20;
@@ -696,7 +696,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                   }
                 }
                 const obj4 = { colors: pageConfig.imageGradientBackground.colors, start: pageConfig.imageGradientBackground.start, end: pageConfig.imageGradientBackground.end, style: styles.imageGradientBackground, children: tmp9 };
-                const tmp16 = authStore5(LinearGradientDefault, obj4);
+                const tmp16 = authStore6(LinearGradientDefault, obj4);
                 cResult[11] = pageConfig.imageGradientBackground.colors;
                 cResult[12] = pageConfig.imageGradientBackground.end;
                 cResult[13] = pageConfig.imageGradientBackground.start;
@@ -707,7 +707,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
               }
             }
             const obj5 = { image: pageConfig.image, style: tmp8, useReducedMotion };
-            const tmp12 = authStore5(closure_23, obj5);
+            const tmp12 = authStore6(closure_23, obj5);
             cResult[7] = pageConfig.image;
             cResult[8] = tmp8;
             cResult[9] = useReducedMotion;
@@ -736,7 +736,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
             }
           }
           const obj6 = { image: pageConfig.image, style: tmp3, useReducedMotion };
-          const tmp7 = authStore5(closure_23, obj6);
+          const tmp7 = authStore6(closure_23, obj6);
           cResult[23] = pageConfig.image;
           cResult[24] = tmp3;
           cResult[25] = useReducedMotion;
@@ -767,24 +767,24 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   ({ pageConfig, styles, useReducedMotion } = arg0);
   if (null != pageConfig.illustration) {
     const obj2 = { style: styles.hero, children: pageConfig.illustration };
-    tmp10 = authStore5(View, obj2);
+    tmp10 = authStore6(View, obj2);
   } else {
     tmp10 = null;
     if (null != pageConfig.image) {
       let tmp3;
       if (null != pageConfig.imageGradientBackground) {
-        const obj3 = { style: styles.imageGradientBackgroundContainer, children: authStore5(tmp8, obj4) };
-        obj4 = { colors: pageConfig.imageGradientBackground.colors, start: pageConfig.imageGradientBackground.start, end: pageConfig.imageGradientBackground.end, style: styles.imageGradientBackground, children: authStore5(closure_23, obj5) };
+        const obj3 = { style: styles.imageGradientBackgroundContainer, children: authStore6(tmp8, obj4) };
+        obj4 = { colors: pageConfig.imageGradientBackground.colors, start: pageConfig.imageGradientBackground.start, end: pageConfig.imageGradientBackground.end, style: styles.imageGradientBackground, children: authStore6(closure_23, obj5) };
         obj5 = { image: pageConfig.image, style: items, useReducedMotion };
         items = [, , ];
         ({ hero: arr2[0], image: arr2[1], imageInGradientBackground: arr2[2] } = styles);
         tmp8 = LinearGradientDefault;
-        tmp3 = authStore5(View, obj3);
+        tmp3 = authStore6(View, obj3);
       } else {
         const obj = { image: pageConfig.image, style: items1, useReducedMotion };
         items1 = [, ];
         ({ hero: arr[0], image: arr[1] } = styles);
-        tmp3 = authStore5(closure_23, obj);
+        tmp3 = authStore6(closure_23, obj);
       }
       tmp10 = tmp3;
     }

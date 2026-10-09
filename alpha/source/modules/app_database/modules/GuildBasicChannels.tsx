@@ -1,23 +1,23 @@
-// Module ID: 7325
-// Function ID: 7326
+// Module ID: 7330
+// Function ID: 7331
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5753, 2067, 502, 2063, 2118, 2086, 4707, 2064, 3, 2090, 7326, 1097, 4716, 2]
+// Dependencies: [32, 5, 5754, 2068, 502, 2064, 2118, 2086, 4709, 2065, 3, 2090, 7331, 1097, 4718, 2]
 
-// Module 7325 (GuildBasicChannels)
+// Module 7330 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import ChannelStore2 from "ChannelStore" /* 2063 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
+import ChannelStore2 from "ChannelStore" /* 2064 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4716 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4718 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStore = ChannelStore2;
@@ -25,6 +25,13 @@ let c10, c9, closure_3, set;
 
 function hasBasicChannelChanged(basicChannel, nextResult) {
   let tmp = null == basicChannel || basicChannel.type !== nextResult.type || basicChannel.parent_id !== nextResult.parent_id;
+  if (!tmp) {
+    let flag = basicChannel.nsfw;
+    if (flag == null) {
+      flag = false;
+    }
+    tmp = flag !== nextResult.nsfw;
+  }
   if (!tmp) {
     const basicPermissions = PermissionStore.computeBasicPermissions(basicChannel);
     tmp = basicPermissions !== PermissionStore.computeBasicPermissions(nextResult);
@@ -34,7 +41,7 @@ function hasBasicChannelChanged(basicChannel, nextResult) {
 let closure_7 = ChannelRecord.createChannelRecordFromServer;
 const ChannelLoader = ChannelStore2.ChannelLoader;
 let tmp2 = new LoggerDefault("GuildBasicChannels");
-const authStore3 = tmp2;
+const authStore4 = tmp2;
 class GuildBasicChannels {
   constructor() {
     const obj = Object.create(new.target.prototype);
@@ -325,7 +332,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "create" }, done: true };
+                              return { value: { v: "r" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;
@@ -566,6 +573,13 @@ class GuildBasicChannels {
         basicChannel = basicChannel.getBasicChannel(id.id);
         let tmp2 = null == basicChannel || basicChannel.type !== id.type || basicChannel.parent_id !== id.parent_id;
         if (!tmp2) {
+          let flag = basicChannel.nsfw;
+          if (flag == null) {
+            flag = false;
+          }
+          tmp2 = flag !== id.nsfw;
+        }
+        if (!tmp2) {
           const basicPermissions = PermissionStore.computeBasicPermissions(basicChannel);
           tmp2 = basicPermissions !== PermissionStore.computeBasicPermissions(id);
         }
@@ -643,7 +657,7 @@ class GuildBasicChannels {
       const values = Object.values(ChannelStore.getMutableGuildChannelsForGuild(id));
       put(id, values.map((id) => {
         let obj2;
-        const obj = { id: id.id, type: id.type, guild_id: id.guild_id, parent_id: id.parent_id, basicPermissions: obj2.asBasicFlag(PermissionStore.computePermissions(id)) };
+        const obj = { id: id.id, type: id.type, guild_id: id.guild_id, parent_id: id.parent_id, basicPermissions: obj2.asBasicFlag(PermissionStore.computePermissions(id)), nsfw: id.nsfw || undefined };
         obj2 = BasicPermissionUtilsDefault;
         return obj;
       }));

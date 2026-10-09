@@ -1,11 +1,11 @@
-// Module ID: 11805
-// Function ID: 11806
+// Module ID: 11742
+// Function ID: 11743
 // Name: useTrackAppLauncherItemImpressionOnFirstView
-// Dependencies: [19, 558, 576, 11232, 1503, 8941, 1272, 2]
+// Dependencies: [19, 558, 576, 10587, 1504, 8952, 1273, 2]
 
-// Module 11805 (useTrackAppLauncherItemImpressionOnFirstView)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import useTrackImpression from "useTrackImpression" /* 8941 */;
+// Module 11742 (useTrackAppLauncherItemImpressionOnFirstView)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import useTrackImpression from "useTrackImpression" /* 8952 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAp
   let tmp = entrypoint;
   let obj = entrypoint(576);
   const cResult = obj.c(6);
-  let obj2 = entrypoint(11232);
+  let obj2 = entrypoint(10587);
   entrypoint = obj2.useAppLauncherContext().entrypoint;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const _Set = Set;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAp
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = tmp(1503);
+  const tmpResult = tmp(1504);
   const focusEffect = tmpResult.useFocusEffect(tmp7);
   if (cResult[2] !== entrypoint) {
     const fn2 = function p(itemKey) {
@@ -89,12 +89,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAp
   let entrypoint;
   let items;
   let ref;
-  let obj = entrypoint(11232);
+  let obj = entrypoint(10587);
   entrypoint = obj.useAppLauncherContext().entrypoint;
   const useRef = react.useRef;
   set = new Set();
   dependencyMap = useRef(set);
-  let obj2 = entrypoint(1503);
+  let obj2 = entrypoint(1504);
   const focusEffect = obj2.useFocusEffect(react.useCallback(() => {
     const current = ref.current;
     current.clear();

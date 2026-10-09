@@ -1,14 +1,14 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18411
+// Function ID: 18412
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1372, 21, 558, 576, 1502, 15307, 18250, 18209, 6656, 18251, 12, 6203, 7079, 1126, 4765, 587, 18253, 18258, 18262, 2]
+// Dependencies: [5, 32, 19, 17, 1373, 21, 558, 576, 1503, 15420, 18412, 18371, 6663, 18413, 12, 6205, 7082, 1126, 4767, 587, 18415, 18420, 18424, 2]
 
-// Module 18249 (GuildSettingsRoleSubscriptionsGroupEdit)
+// Module 18411 (GuildSettingsRoleSubscriptionsGroupEdit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ApplicationConstants from "ApplicationConstants" /* 1372 */;
-import ToastUtils from "ToastUtils" /* 4765 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 18262 */;
+import ApplicationConstants from "ApplicationConstants" /* 1373 */;
+import ToastUtils from "ToastUtils" /* 4767 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 18424 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c1, c2, closure_12, navigation;
+let _require, c1, c2, navigation;
 
 let c10;
 let c9;
@@ -112,7 +112,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
                   if (cResult[11] === updateSubscriptionsSettings) {
                     tmp28 = cResult[12];
                   }
-                  closure_12 = tmp28;
+                  let closure_12 = tmp28;
                   if (cResult[13] === tmp28) {
                     if (cResult[14] === tmp19) {
                       if (cResult[15] === loading) {

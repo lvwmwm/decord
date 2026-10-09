@@ -1,73 +1,72 @@
-// Module ID: 10957
-// Function ID: 10958
+// Module ID: 11131
+// Function ID: 11132
 // Name: StreamPreview
-// Dependencies: [19, 17, 1205, 21, 5090, 587, 4787, 4929, 10958, 10959, 1126, 6164, 6189, 558, 576, 10960, 504, 2]
+// Dependencies: [19, 17, 1205, 21, 5091, 587, 4788, 6163, 4930, 11132, 11133, 1126, 6191, 558, 576, 11134, 504, 2]
 
-// Module 10957 (StreamPreview)
+// Module 11131 (StreamPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 4787 */;
-import shared from "shared" /* 4929 */;
-import FastImageDefault from "FastImage" /* 6164 */;
-import Pressables from "Pressables" /* 6189 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10960 */;
+import native from "native" /* 4788 */;
+import shared from "shared" /* 4930 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import Pressables from "Pressables" /* 6191 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11134 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
 let c3;
-let closure_4;
-let metroImportDefault;
+let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
 let size;
 let tmp;
 const get_initialized = tmp(504);
-({ Image: c3, View: closure_4, StyleSheet } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ View: c3, StyleSheet } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { wrapper: obj2, text: obj3, fallbackImage: { width: "100%" } };
 obj2 = { alignItems: "center", justifyContent: "center", paddingLeft: 20, paddingRight: 20 };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { textAlign: "center", fontSize: 14, lineHeight: 18, marginTop: 16, color: nativeDefault.colors.TEXT_MUTED };
-const metroImportAll = createLegacyClassComponentStyles(obj);
+const metroImportDefault = createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class DefaultFallback extends PureComponent {
   render() {
     let obj2;
-    let tmp4;
-    let tmp6Result;
-    const tmp = closure_8(this.context);
-    const obj = { style: tmp.wrapper, children: metroRequire(tmp4, obj2) };
+    let tmp4Result;
+    let tmp6;
+    const tmp = closure_7(this.context);
     const theme = this.props.theme;
-    obj2 = { resizeMode: "contain", style: tmp.fallbackImage, source: tmp6Result };
+    const obj = { style: tmp.wrapper, children: hasOwnProperty(tmp6, obj2) };
+    obj2 = { resizeMode: "contain", style: tmp.fallbackImage, source: tmp4Result };
+    tmp6 = FastImageDefault;
     const obj3 = shared;
-    const tmp3 = React3;
-    tmp4 = _false;
+    const tmp3 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp6Result = tmp6(10958);
+      tmp4Result = tmp4(11132);
     } else {
-      tmp6Result = tmp6(10959);
+      tmp4Result = tmp4(11133);
     }
-    return metroRequire(tmp3, obj);
+    return hasOwnProperty(tmp3, obj);
   }
 }
 const prototype = DefaultFallback.prototype;
 DefaultFallback.contextType = native.ThemeContext;
 createStyles = createStyles_mod;
 let obj4 = { touchable: size, imageContainer: { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK }, image: { flex: 1 } };
-size = { flex: 1, width: "100%", height: "__packager_asset", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+size = { flex: 1, width: "100%", height: "k", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const createLegacyClassComponentStyles2 = createStyles.createLegacyClassComponentStyles;
 ({ flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK });
-const authStore = createLegacyClassComponentStyles2(obj4);
+const React4 = createLegacyClassComponentStyles2(obj4);
 const PureComponent2 = react.PureComponent;
 class StreamPreview extends PureComponent2 {
   constructor() {
@@ -93,7 +92,7 @@ class StreamPreview extends PureComponent2 {
     let renderFallback;
     let theme;
     let url;
-    const tmp = closure_10(this.context);
+    const tmp = closure_9(this.context);
     ({ url, isFetching, renderFallback, theme } = this.props);
     const state = this.state;
     if (null != url) {
@@ -111,15 +110,15 @@ class StreamPreview extends PureComponent2 {
           const obj = { resizeMode: "contain", style: tmp.image, source: obj2, onLoadStart: null, onLoad: null, onError: null };
           obj2 = { uri: url, cache: "force-cache" };
           ({ handleLoadStart: obj.onLoadStart, handleLoad: obj.onLoad, handleError: obj.onError } = this);
-          tmp13 = metroRequire(FastImageDefault, obj);
+          tmp13 = hasOwnProperty(FastImageDefault, obj);
         }
         const obj3 = { accessibilityRole: "button", accessibilityLabel: tmp2, activeOpacity: 0.6, style: items, disabled: tmp6, onPress: tmp5, children: items2 };
         items = [tmp.touchable, tmp3];
         const obj4 = { style: tmp.imageContainer, children: items1 };
         items1 = [tmp8, tmp13];
         const PressableOpacity = Pressables.PressableOpacity;
-        items2 = [metroImportDefault(React3, obj4), tmp4];
-        return metroImportDefault(PressableOpacity, obj3);
+        items2 = [metroRequire(_false, obj4), tmp4];
+        return metroRequire(PressableOpacity, obj3);
       }
     }
     let renderFallbackResult1;
@@ -138,7 +137,7 @@ StreamPreview.defaultProps = {
     const intl = intl2.intl;
     const string = intl.string;
     const t = intl2.t;
-    const tmp = metroRequire;
+    const tmp = hasOwnProperty;
     const tmp2 = DefaultFallback;
     const tmp3 = arg0;
     if (tmp3) {
@@ -190,7 +189,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedStr
   }
   const obj2 = { url: previewUrl, isFetching: isLoading, theme: stateFromStores };
   const merged = Object.assign(stream);
-  const tmp11 = metroRequire(StreamPreview, obj2);
+  const tmp11 = hasOwnProperty(StreamPreview, obj2);
   cResult[2] = isLoading;
   cResult[3] = stream;
   cResult[4] = stateFromStores;
@@ -213,7 +212,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedStr
   const obj = get_initialized;
   stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const merged = Object.assign(stream);
-  return metroRequire(StreamPreview, obj2);
+  return hasOwnProperty(StreamPreview, obj2);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("components_native/StreamPreview.tsx");

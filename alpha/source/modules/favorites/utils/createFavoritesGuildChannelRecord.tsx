@@ -1,10 +1,10 @@
-// Module ID: 4706
-// Function ID: 4707
+// Module ID: 4708
+// Function ID: 4709
 // Name: createFavoritesGuildChannelRecord
 // Dependencies: [1085, 2]
 // Exports: createFavoritesGuildChannelRecord
 
-// Module 4706 (createFavoritesGuildChannelRecord)
+// Module 4708 (createFavoritesGuildChannelRecord)
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

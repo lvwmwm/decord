@@ -1,94 +1,63 @@
 // Module ID: 9823
 // Function ID: 9824
-// Dependencies: [41, 42, 93, 95, 98, 9771, 9817, 9772, 9778]
+// Dependencies: [41, 42]
 
 // Module 9823
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9771 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 9772 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9778 */;
-import _mod9817 from "module_9817" /* 9817 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9817.MONTH_DICTIONARY);
-const regExp = new RegExp("(?:am\\s*?)?(?:den\\s*?)?([0-9]{1,2})\\.(?:\\s*(?:bis(?:\\s*(?:am|zum))?|\\-|\\\u2013|\\s)\\s*([0-9]{1,2})\\.?)?\\s*(" + matchAnyPatternResult + ")(?:(?:-|/|,?\\s*)(" + _mod9817.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
-class DEMonthNameLittleEndianParser {
+class OverlapRemovalRefiner {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, DEMonthNameLittleEndianParser);
-    const obj = _getPrototypeOf(DEMonthNameLittleEndianParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, OverlapRemovalRefiner);
   }
 }
-_inherits(DEMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "refine",
+  value: function refine(debug, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
+    } else {
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp8 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp4;
+          let tmp = arg1[num];
+          if (tmp.index >= first.index + first.text.length) {
+            let arr = items.push(first);
+            tmp4 = tmp;
+          } else {
+            first = null;
+            let closure_1 = null;
+            if (tmp.text.length > first.text.length) {
+              first = tmp;
+              closure_1 = first;
+              tmp4 = tmp;
+            } else {
+              closure_1 = tmp;
+              tmp4 = first;
+            }
+            let debugResult = debug.debug(() => {
+              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
+            });
+          }
+          num = num2 + 1;
+          first = tmp4;
+          tmp8 = tmp4;
+          num2 = num;
+        } while (num < arg1.length);
+      }
+      if (null != tmp8) {
+        items.push(tmp8);
+      }
+      return items;
+    }
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = _mod9817.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const parsed = parseInt(index[1]);
-      if (parsed > 31) {
-        index.index = index.index + index[1].length;
-        return null;
-      } else {
-        const start4 = parsingResult.start;
-        start4.assign("month", tmp4);
-        const start5 = parsingResult.start;
-        start5.assign("day", parsed);
-        if (index[4]) {
-          const start2 = parsingResult.start;
-          start2.assign("year", _mod9817.parseYear(index[4]));
-        } else {
-          const start = parsingResult.start;
-          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
-        }
-        if (index[2]) {
-          const _parseInt = parseInt;
-          const start3 = parsingResult.start;
-          const parsed1 = parseInt(index[2]);
-          parsingResult.end = start3.clone();
-          const end = parsingResult.end;
-          end.assign("day", parsed1);
-        }
-        return parsingResult;
-      }
-    }
-  }
-];
+let items = [entry];
 
-export default _createClass(DEMonthNameLittleEndianParser, items);
+export default _createClass(OverlapRemovalRefiner, items);

@@ -1,43 +1,42 @@
-// Module ID: 9999
-// Function ID: 10000
+// Module ID: 10018
+// Function ID: 10019
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 7477, 21, 5090, 587, 558, 576, 5086, 5375, 7082, 1126, 10000, 9994, 10001, 2]
+// Dependencies: [19, 17, 7482, 21, 5091, 587, 558, 576, 6163, 5087, 5376, 7085, 1126, 10019, 10013, 10020, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 9999 (MediaKeyboardEmptyState)
+// Module 10018 (MediaKeyboardEmptyState)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import SettingsIcon from "SettingsIcon" /* 7082 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7477 */;
-import CameraIcon from "CameraIcon" /* 9994 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10000 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10001 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import SettingsIcon from "SettingsIcon" /* 7085 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
+import CameraIcon from "CameraIcon" /* 10013 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10019 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10020 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-let metroImportDefault;
+let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
-({ Image: c3, View: closure_4 } = react_native);
+const View = react_native.View;
 const NativePermissionStatus = NativePermissionConstants.NativePermissionStatus;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, label: obj3 };
 obj2 = { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { textAlign: "center", marginVertical: nativeDefault.space.PX_16 };
-let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardEmptyState(arg0) {
+let closure_7 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardEmptyState(arg0) {
   let actionIcon;
   let actionLabel;
   let actionPress;
@@ -48,10 +47,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeybo
   const obj = react2;
   const cResult = obj.c(14);
   ({ actionIcon, actionLabel, actionPress, imageSource, label } = arg0);
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   if (cResult[0] !== imageSource) {
     const obj2 = { source: imageSource };
-    const tmp8 = metroRequire(_false, obj2);
+    const tmp8 = hasOwnProperty(FastImageDefault, obj2);
     cResult[0] = imageSource;
     cResult[1] = tmp8;
     tmp5 = tmp8;
@@ -82,7 +81,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeybo
         }
         const obj3 = { style: tmp4.container, children: items };
         items = [tmp5, tmp9, tmp11];
-        const tmp17 = metroImportDefault(React3, obj3);
+        const tmp17 = metroRequire(View, obj3);
         cResult[9] = tmp4.container;
         cResult[10] = tmp5;
         cResult[11] = tmp9;
@@ -92,7 +91,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeybo
       }
     }
     const obj4 = { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress };
-    const tmp13 = metroRequire(components_Button_Button.Button, obj4);
+    const tmp13 = hasOwnProperty(components_Button_Button.Button, obj4);
     cResult[5] = actionIcon;
     cResult[6] = actionLabel;
     cResult[7] = actionPress;
@@ -100,7 +99,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeybo
     tmp11 = tmp13;
   }
   const obj5 = { variant: "text-sm/semibold", color: "text-muted", style: tmp4.label, children: label };
-  const tmp10 = metroRequire(Text_Text.Text, obj5);
+  const tmp10 = hasOwnProperty(Text_Text.Text, obj5);
   cResult[2] = label;
   cResult[3] = tmp4.label;
   cResult[4] = tmp10;
@@ -113,18 +112,18 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeybo
   let items;
   let label;
   ({ actionIcon, actionLabel, actionPress, imageSource, label } = arg0);
-  const tmp = closure_8();
+  const tmp = closure_7();
   const obj = { style: tmp.container, children: items };
-  items = [metroRequire(_false, { source: imageSource }), , ];
+  items = [hasOwnProperty(FastImageDefault, { source: imageSource }), , ];
   const obj2 = { variant: "text-sm/semibold", color: "text-muted", style: tmp.label, children: label };
-  items[1] = metroRequire(Text_Text.Text, obj2);
-  items[2] = metroRequire(components_Button_Button.Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
-  return metroImportDefault(React3, obj);
+  items[1] = hasOwnProperty(Text_Text.Text, obj2);
+  items[2] = hasOwnProperty(components_Button_Button.Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
+  return metroRequire(View, obj);
 });
-let closure_9 = tmp6;
+let closure_8 = tmp5;
 const result = size.fileFinishedImporting("modules/media_keyboard/native/components/MediaKeyboardEmptyState.tsx");
 
-export default tmp6;
+export default tmp5;
 export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComponentOrNull(photosEmpty) {
   let intl;
   let intl2;
@@ -144,21 +143,21 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
     if (photoPermissionStatus !== NativePermissionStatus.RESTRICTED) {
       if (photosEmpty) {
         if (photoPermissionStatus === NativePermissionStatus.LIMITED) {
-          const obj2 = { actionIcon: metroRequire(SettingsIcon.SettingsIcon, { color: "white", size: "sm" }), actionLabel: intl3.string(intl7.t.JuXTi6), actionPress: tmp2, imageSource: AssetRegistryDefault, label: intl4.string(intl7.t["5g7NcN"]) };
+          const obj2 = { actionIcon: hasOwnProperty(SettingsIcon.SettingsIcon, { color: "white", size: "sm" }), actionLabel: intl3.string(intl7.t.JuXTi6), actionPress: tmp2, imageSource: AssetRegistryDefault, label: intl4.string(intl7.t["5g7NcN"]) };
           intl3 = intl7.intl;
           intl4 = intl7.intl;
-          return metroRequire(closure_9, obj2);
+          return hasOwnProperty(closure_8, obj2);
         } else if (showCameraButton) {
-          const obj = { actionIcon: metroRequire(CameraIcon.CameraIcon, { color: "white", size: "sm" }), actionLabel: intl.string(intl7.t.tpoWUd), actionPress: tmp, imageSource: AssetRegistryDefault2, label: intl2.string(intl7.t.YOvRBZ) };
+          const obj = { actionIcon: hasOwnProperty(CameraIcon.CameraIcon, { color: "white", size: "sm" }), actionLabel: intl.string(intl7.t.tpoWUd), actionPress: tmp, imageSource: AssetRegistryDefault2, label: intl2.string(intl7.t.YOvRBZ) };
           intl = intl7.intl;
           intl2 = intl7.intl;
-          return metroRequire(closure_9, obj);
+          return hasOwnProperty(closure_8, obj);
         }
       }
     }
   }
-  const obj3 = { actionIcon: metroRequire(SettingsIcon.SettingsIcon, { color: "white", size: "sm" }), actionLabel: intl5.string(intl7.t["457oeG"]), actionPress: onPressPrivacySettings, imageSource: AssetRegistryDefault, label: intl6.string(intl7.t["8p9jGu"]) };
+  const obj3 = { actionIcon: hasOwnProperty(SettingsIcon.SettingsIcon, { color: "white", size: "sm" }), actionLabel: intl5.string(intl7.t["457oeG"]), actionPress: onPressPrivacySettings, imageSource: AssetRegistryDefault, label: intl6.string(intl7.t["8p9jGu"]) };
   intl5 = intl7.intl;
   intl6 = intl7.intl;
-  return metroRequire(closure_9, obj3);
+  return hasOwnProperty(closure_8, obj3);
 };

@@ -1,58 +1,58 @@
-// Module ID: 13666
-// Function ID: 13667
+// Module ID: 13757
+// Function ID: 13758
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 7132, 2086, 4731, 4732, 7120, 13667, 1391, 1085, 7140, 5069, 21, 5090, 5902, 5974, 587, 558, 576, 13668, 1126, 5086, 5373, 4726, 13670, 13671, 13672, 13673, 13674, 13675, 9005, 4778, 504, 13676, 13462, 4991, 1200, 1264, 13500, 13501, 13677, 6158, 6184, 4929, 6326, 1382, 7114, 10004, 5298, 13678, 1999, 6267, 5387, 7116, 7115, 4741, 5940, 7118, 10051, 6841, 6946, 6174, 5392, 10149, 10045, 1502, 7125, 13513, 6865, 10046, 5720, 10472, 13476, 7109, 9332, 4738, 10148, 2]
+// Dependencies: [5, 32, 19, 17, 7137, 2086, 4733, 4734, 7125, 13758, 1392, 1085, 7145, 5070, 21, 5091, 5903, 5976, 587, 558, 576, 13759, 1126, 5087, 5374, 4728, 13763, 13764, 13765, 13766, 13767, 13768, 9016, 4779, 504, 13769, 13554, 4992, 1200, 1265, 13592, 13593, 13770, 6160, 6186, 4930, 6333, 1383, 7119, 10023, 5299, 13771, 2000, 6269, 5388, 7121, 7120, 4743, 5941, 7123, 10036, 6848, 6953, 6176, 5393, 10134, 10030, 1503, 7130, 13605, 6872, 10031, 5721, 10462, 13568, 7114, 9370, 4740, 10133, 2]
 
-// Module 13666 (PremiumPlanSelect)
+// Module 13757 (PremiumPlanSelect)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import PremiumUtils from "PremiumUtils" /* 4726 */;
-import PremiumSubscription from "PremiumSubscription" /* 4738 */;
-import PaymentConstants from "PaymentConstants" /* 5069 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5720 */;
-import TextStylesDefault from "TextStyles" /* 5902 */;
-import LegacyTokens from "LegacyTokens" /* 5974 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6946 */;
-import ProductIds from "ProductIds" /* 7115 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7132 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9005 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10004 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10149 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13500 */;
-import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13501 */;
-import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 13668 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13670 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13671 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13672 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13673 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13674 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13675 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import PremiumUtils from "PremiumUtils" /* 4728 */;
+import PremiumSubscription from "PremiumSubscription" /* 4740 */;
+import PaymentConstants from "PaymentConstants" /* 5070 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5721 */;
+import TextStylesDefault from "TextStyles" /* 5903 */;
+import LegacyTokens from "LegacyTokens" /* 5976 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6953 */;
+import ProductIds from "ProductIds" /* 7120 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7137 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9016 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10023 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10134 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 13592 */;
+import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 13593 */;
+import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 13759 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13763 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13764 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13765 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13766 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13767 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13768 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4731 */;
-import SubscriptionStore from "SubscriptionStore" /* 4732 */;
-import IAPStore from "IAPStore" /* 7120 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 13667 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4733 */;
+import SubscriptionStore from "SubscriptionStore" /* 4734 */;
+import IAPStore from "IAPStore" /* 7125 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 13758 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Constants from "Constants" /* 1085 */;
-import ColorConstants from "ColorConstants" /* 7140 */;
+import ColorConstants from "ColorConstants" /* 7145 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const PremiumUtilsDefault = PremiumUtils;
-let _require, c0, c1, closure_12, closure_2, closure_3, importDefault, navigation, premiumTypeSubscription, productId2, v1;
+let _require, c0, c1, closure_2, closure_3, importDefault, navigation, premiumTypeSubscription, productId2, v1;
 
 let Fonts;
 let USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING;
@@ -87,7 +87,7 @@ let obj7;
 let obj8;
 let tmp;
 const native = tmp(1200);
-const PremiumBundledPlansUtils = tmp(7114);
+const PremiumBundledPlansUtils = tmp(7119);
 function getPlanDescription(premiumTier) {
   let formatToPlainStringResult;
   let flag = arg1;
@@ -145,7 +145,7 @@ function PlanSection(label) {
   let tmp = useNativeCheckoutStore((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
   let closure_11 = tmp;
   let tmp2 = shouldShowModernBoostFlow;
-  let obj = shouldShowModernBoostFlow(1382);
+  let obj = shouldShowModernBoostFlow(1383);
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
     let tmp5 = null;
@@ -353,7 +353,7 @@ function PlanSection(label) {
   });
   if (shouldShowModernBoostFlow) {
     let obj2 = { title: label, hasIcons: true, children: mapped };
-    tmp7Result = tmp7(tmp2(6267).TableRowGroup, obj2);
+    tmp7Result = tmp7(tmp2(6269).TableRowGroup, obj2);
   } else {
     let tmp8 = closure_7;
     let obj3 = { children: mapped };
@@ -364,11 +364,11 @@ function PlanSection(label) {
 function withCurrentPlanAlternative(plans, productIdFromSubscription, productIdFromSubscription2) {
   let toggledIntervalProduct;
   if (null != productIdFromSubscription) {
-    const obj3 = toggledIntervalProduct(7114);
+    const obj3 = toggledIntervalProduct(7119);
     if (obj3.isValidBundleProductId(productIdFromSubscription)) {
       let tmp2 = productIdFromSubscription2;
       if (null == productIdFromSubscription2) {
-        const tmp8Result = toggledIntervalProduct(7114);
+        const tmp8Result = toggledIntervalProduct(7119);
         toggledIntervalProduct = tmp8Result.getToggledIntervalProduct(productIdFromSubscription);
       } else {
         toggledIntervalProduct = productIdFromSubscription;
@@ -389,7 +389,7 @@ function withCurrentPlanAlternative(plans, productIdFromSubscription, productIdF
             const tmp7 = require;
             if (result) {
               const interval = productId.interval;
-              const tmp7Result = tmp7(7114);
+              const tmp7Result = tmp7(7119);
               result = interval === tmp7Result.getPremiumBundledItemsFromProductId(tmp).interval;
             }
             tmp5 = result;
@@ -399,7 +399,7 @@ function withCurrentPlanAlternative(plans, productIdFromSubscription, productIdF
           items = [];
           let tmp5 = items;
           const arraySpreadResult = HermesBuiltin.arraySpread(items, plans, 0);
-          const tmp8Result2 = toggledIntervalProduct(7114);
+          const tmp8Result2 = toggledIntervalProduct(7119);
           items[arraySpreadResult] = tmp8Result2.getPremiumBundledItemsFromProductId(toggledIntervalProduct);
           tmp4 = items;
         }
@@ -460,7 +460,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
     const obj2 = { discount: closure_31(Text, obj3, "discount") };
     const jbrHpT = tmp(1126).t.jbrHpT;
     obj3 = { variant: "text-md/semibold", color: "text-feedback-positive", children: intl2.format(intl5.t.RmVM19, obj4) };
-    Text = tmp(5086).Text;
+    Text = tmp(5087).Text;
     intl2 = tmp(1126).intl;
     obj4 = { percentageOff };
     const formatResult = format(jbrHpT, obj2);
@@ -510,7 +510,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
       return tmp23;
     }
     const obj8 = { align: "center", spacing: nativeDefault.space.PX_12, style: nitroBanner, children: items };
-    const Stack2 = tmp(5373).Stack;
+    const Stack2 = tmp(5374).Stack;
     items = [first, tmp21];
     const tmp26 = __initData2(Stack2, obj8);
     cResult[10] = tmp4.nitroBanner;
@@ -519,7 +519,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostP
     tmp23 = tmp26;
   }
   const obj9 = { align: "center", spacing: nativeDefault.space.PX_4, children: items1 };
-  const Stack = tmp(5373).Stack;
+  const Stack = tmp(5374).Stack;
   items1 = [tmp12, tmp18];
   const tmp22 = __initData2(Stack, obj9);
   cResult[7] = tmp12;
@@ -575,7 +575,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostD
   ({ price, interval } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const NitroWheelIcon = tmp(9005).NitroWheelIcon;
+    const NitroWheelIcon = tmp(9016).NitroWheelIcon;
     const tmp7 = closure_31(NitroWheelIcon, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -590,7 +590,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostD
     }
     if (cResult[6] !== tmp8) {
       const obj3 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_4, children: items };
-      const Stack = tmp(5373).Stack;
+      const Stack = tmp(5374).Stack;
       items = [first, ];
       const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp8 };
       items[1] = closure_31(Text_Text.Text, obj4);
@@ -1589,7 +1589,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
       } else {
         tmp24 = cResult[26];
       }
-      closure_12 = tmp24;
+      let closure_12 = tmp24;
       const _Symbol = Symbol;
       if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
         function checkUpgradableFromBoostOnly(numPremiumGuild, arg1) {
@@ -1656,7 +1656,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
                 const tmp8 = require;
                 if (result) {
                   const interval = productId.interval;
-                  const tmp8Result = tmp8(7114);
+                  const tmp8Result = tmp8(7119);
                   result = interval === tmp8Result.getPremiumBundledItemsFromProductId(tmp).interval;
                 }
                 tmp7 = result;
@@ -1866,7 +1866,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
   let boostContainer;
   let closure_10;
   let recommendedBoostCount;
-  closure_12 = undefined;
+  let closure_12;
   const showCurrentPlan = isBoostPurchaseFlow.showCurrentPlan;
   let tmp = closure_34();
   let closure_6 = boostContainer((getCheckoutContextRecord) => getCheckoutContextRecord.getCheckoutContextRecord());
@@ -1962,7 +1962,7 @@ let closure_45 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlanSe
             const tmp8 = require;
             if (result) {
               const interval = productId.interval;
-              const tmp8Result = tmp8(7114);
+              const tmp8Result = tmp8(7119);
               result = interval === tmp8Result.getPremiumBundledItemsFromProductId(tmp).interval;
             }
             tmp7 = result;
@@ -2778,7 +2778,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlan
       items1 = items;
       obj5 = PremiumUtilsDefault;
     } else {
-      const obj4 = { subscriptionPlanId: authStore6.PREMIUM_YEAR_TIER_2, skuId: obj3.castPremiumSubscriptionAsSkuId(TIER_2.TIER_2), quantity: 1 };
+      const obj4 = { subscriptionPlanId: authStore7.PREMIUM_YEAR_TIER_2, skuId: obj3.castPremiumSubscriptionAsSkuId(TIER_2.TIER_2), quantity: 1 };
       items1 = [obj4];
       obj3 = PremiumUtils;
     }

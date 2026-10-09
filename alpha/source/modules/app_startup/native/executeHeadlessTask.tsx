@@ -1,22 +1,22 @@
-// Module ID: 18454
-// Function ID: 18455
+// Module ID: 18618
+// Function ID: 18619
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 17726, 1085, 3, 1254, 9655, 15, 9, 13793, 1264, 1272, 17805, 2058, 2]
+// Dependencies: [5, 17, 502, 17878, 1085, 3, 1255, 9674, 15, 9, 13887, 1265, 1273, 17959, 2059, 2]
 // Exports: default
 
-// Module 18454 (executeHeadlessTask)
+// Module 18618 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9655 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13793 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9674 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13887 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 17726 */;
+import NativeAppStartup from "NativeAppStartup" /* 17878 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;

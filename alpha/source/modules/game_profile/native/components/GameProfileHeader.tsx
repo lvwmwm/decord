@@ -1,28 +1,26 @@
-// Module ID: 8891
-// Function ID: 8892
+// Module ID: 8902
+// Function ID: 8903
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 8889, 21, 5090, 587, 558, 576, 4810, 8892, 8893, 6164, 5387, 8894, 5086, 8896, 2]
+// Dependencies: [19, 17, 8900, 21, 5091, 587, 558, 576, 4811, 8903, 8904, 6163, 5388, 8905, 5087, 8907, 2]
 
-// Module 8891 (GameProfileHeader)
+// Module 8902 (GameProfileHeader)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 8893 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 8904 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import GameProfileConstants from "GameProfileConstants" /* 8889 */;
+import GameProfileConstants from "GameProfileConstants" /* 8900 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
 let MOBILE_GAME_PROFILE_MAX_WIDTH;
-let closure_4;
 let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
@@ -34,12 +32,12 @@ let rect;
 let size;
 let size1;
 let tmp;
-const SKUUtils = tmp(8892);
-({ View: closure_4, Image: hasOwnProperty } = react_native);
-({ DISCORD_APP_GAME_ID: metroRequire, MOBILE_GAME_PROFILE_MAX_WIDTH } = GameProfileConstants);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let c9 = 114;
-let c10 = "rgba(0,0,0,0.3)";
+const SKUUtils = tmp(8903);
+let View = react_native.View;
+({ DISCORD_APP_GAME_ID: hasOwnProperty, MOBILE_GAME_PROFILE_MAX_WIDTH } = GameProfileConstants);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let c8 = 114;
+let c9 = "rgba(0,0,0,0.3)";
 let createStyles = createStyles_mod;
 let obj = { container: obj2, artHero: rect, artHeroImage: { height: "100%", width: "100%", resizeMode: "cover" }, artHeroGradient: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 }, headerContent: obj3, shadowContainer: obj4, coverContainer: size, iconContainer: size1, image: { width: "100%", height: "100%" }, titleContainer: { flex: 1, flexDirection: "column", alignItems: "flex-start" }, titleRow: obj5, title: { flexShrink: 1 }, wavingWumpus: { width: 43, height: 40, flexShrink: 0, resizeMode: "contain" }, textShadow: obj6 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -52,10 +50,10 @@ size = { width: 85, height: 114, borderRadius: nativeDefault.radii.sm, backgroun
 size1 = { width: 85, height: 85, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
 obj5 = { flexDirection: "row", alignItems: "flex-end", alignSelf: "stretch", gap: nativeDefault.space.PX_8 };
 obj6 = { textShadowColor: nativeDefault.colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 1 };
-let closure_11 = createStyles(obj);
+let closure_10 = createStyles(obj);
 const __initData = { code: "function GameProfileHeaderTsx1(){const{effectiveScrollY}=this.__closure;return{top:-Math.max(0,-effectiveScrollY.get())};}" };
 const __initData2 = { code: "function GameProfileHeaderTsx2(){const{effectiveScrollY}=this.__closure;return{top:-Math.max(0,-effectiveScrollY.get())};}" };
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileHeader(arg0) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileHeader(arg0) {
   let game;
   let items1;
   let obj6;
@@ -65,12 +63,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
   let obj = react2;
   const cResult = obj.c(64);
   ({ game, scrollY, onHeightMeasured } = arg0);
-  const tmp4 = closure_11();
+  const tmp4 = closure_10();
   const obj2 = ReanimatedRexport;
   if (scrollY == null) {
     scrollY = obj2.useSharedValue(0);
   }
-  const fn = function t() {
+  const fn = function o() {
     const obj = { top: -Math.max(0, -scrollY.get()) };
     return obj;
   };
@@ -88,17 +86,17 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
   }
   const tmp9 = useGameProfileHeroBackgroundURLDefault(game, 1024);
   if (cResult[2] !== game) {
-    const coverURL = game.getCoverURL(c9);
+    const coverURL = game.getCoverURL(c8);
     cResult[2] = game;
     cResult[3] = coverURL;
   }
   if (cResult[4] !== game) {
-    const iconURL = game.getIconURL(c9);
+    const iconURL = game.getIconURL(c8);
     cResult[4] = game;
     cResult[5] = iconURL;
   }
   if (cResult[6] !== onHeightMeasured) {
-    class D {
+    class P {
       constructor(nativeEvent) {
         if (onHeightMeasured != null) {
           tmp(nativeEvent.nativeEvent.layout.height);
@@ -106,9 +104,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
       }
     }
     cResult[6] = onHeightMeasured;
-    cResult[7] = D;
+    cResult[7] = P;
   } else {
-    class D {
+    class P {
       constructor(nativeEvent) {
         if (onHeightMeasured != null) {
           tmp(nativeEvent.nativeEvent.layout.height);
@@ -117,7 +115,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
     }
   }
   if (cResult[8] === animatedStyle) {
-    class D {
+    class P {
       constructor(nativeEvent) {
         if (onHeightMeasured != null) {
           tmp(nativeEvent.nativeEvent.layout.height);
@@ -125,7 +123,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
       }
     }
     if (cResult[11] === tmp9) {
-      class D {
+      class P {
         constructor(nativeEvent) {
           if (onHeightMeasured != null) {
             tmp(nativeEvent.nativeEvent.layout.height);
@@ -133,18 +131,18 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
         }
       }
       if (cResult[14] !== tmp4.container.backgroundColor) {
-        class D {
+        class P {
           constructor(nativeEvent) {
             if (onHeightMeasured != null) {
               tmp(nativeEvent.nativeEvent.layout.height);
             }
           }
         }
-        const items = [c10, tmp4.container.backgroundColor];
+        const items = [c9, tmp4.container.backgroundColor];
         cResult[14] = tmp4.container.backgroundColor;
         cResult[15] = items;
       } else {
-        class D {
+        class P {
           constructor(nativeEvent) {
             if (onHeightMeasured != null) {
               tmp(nativeEvent.nativeEvent.layout.height);
@@ -153,7 +151,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
         }
       }
       if (cResult[16] === tmp4.artHeroGradient) {
-        class D {
+        class P {
           constructor(nativeEvent) {
             if (onHeightMeasured != null) {
               tmp(nativeEvent.nativeEvent.layout.height);
@@ -161,7 +159,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
           }
         }
         if (cResult[19] === tmp17) {
-          class D {
+          class P {
             constructor(nativeEvent) {
               if (onHeightMeasured != null) {
                 tmp(nativeEvent.nativeEvent.layout.height);
@@ -174,18 +172,18 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
         cResult[19] = tmp17;
         cResult[20] = tmp18;
         cResult[21] = tmp21;
-        cResult[22] = metroImportAll(ReanimatedRexportDefault.View, obj3);
-        const tmp26 = metroImportAll(ReanimatedRexportDefault.View, obj3);
+        cResult[22] = metroImportDefault(ReanimatedRexportDefault.View, obj3);
+        const tmp26 = metroImportDefault(ReanimatedRexportDefault.View, obj3);
       }
       const obj4 = { colors: tmp20, style: tmp4.artHeroGradient };
       cResult[16] = tmp4.artHeroGradient;
       cResult[17] = tmp20;
-      cResult[18] = metroImportDefault(LinearGradientDefault, obj4);
-      const tmp23 = metroImportDefault(LinearGradientDefault, obj4);
+      cResult[18] = metroRequire(LinearGradientDefault, obj4);
+      const tmp23 = metroRequire(LinearGradientDefault, obj4);
     }
     let tmp19 = null != tmp9;
     if (tmp19) {
-      class D {
+      class P {
         constructor(nativeEvent) {
           if (onHeightMeasured != null) {
             tmp(nativeEvent.nativeEvent.layout.height);
@@ -194,7 +192,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
       }
       const obj5 = { source: obj6, style: tmp4.artHeroImage };
       obj6 = { uri: tmp9 };
-      tmp19 = metroImportDefault(tmp8(6164), obj5);
+      tmp19 = metroRequire(tmp8(6163), obj5);
     }
     cResult[11] = tmp9;
     cResult[12] = tmp4.artHeroImage;
@@ -224,30 +222,32 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
   game = game.game;
   ({ scrollY, onHeightMeasured } = game);
   scrollY = undefined;
-  const tmp = closure_11();
+  const tmp = closure_10();
   let obj = game(scrollY[8]);
   if (scrollY == null) {
     scrollY = obj.useSharedValue(0);
   }
-  const fn = function h() {
-    const obj = { top: -Math.max(0, -scrollY.get()) };
-    return obj;
-  };
-  fn.__closure = { effectiveScrollY: scrollY };
-  fn.__workletHash = 17327557152577;
-  fn.__initData = __initData2;
-  const genres = game.genres;
   const tmp2Result = game(scrollY[8]);
-  const animatedStyle = tmp2Result.useAnimatedStyle(fn);
+  class C {
+    constructor() {
+      const obj = { top: -Math.max(0, -scrollY.get()) };
+      return obj;
+    }
+  }
+  C.__closure = { effectiveScrollY: scrollY };
+  C.__workletHash = 17327557152577;
+  C.__initData = __initData2;
+  const genres = game.genres;
+  const animatedStyle = tmp2Result.useAnimatedStyle(C);
   const name = game.name;
   const mapped = genres.map(tmp2(tmp3[9]).getGenreText);
   const joined = mapped.join(", ");
   const l30Rank = game.l30Rank;
   const tmp7 = onHeightMeasured(scrollY[10])(game, 1024);
   const items = [game];
-  const memo = react.useMemo(() => game.getCoverURL(c9), items);
+  const memo = react.useMemo(() => game.getCoverURL(c8), items);
   const items1 = [game];
-  const memo1 = react.useMemo(() => game.getIconURL(c9), items1);
+  const memo1 = react.useMemo(() => game.getIconURL(c8), items1);
   const items2 = [onHeightMeasured];
   const obj3 = { style: items3, children: items4 };
   items3 = [tmp.artHero, animatedStyle];
@@ -261,21 +261,21 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
     }, items2),
     children: items6
   };
-  const View = onHeightMeasured(tmp3[8]).View;
+  View = onHeightMeasured(tmp3[8]).View;
   if (tmp12) {
     const obj4 = { source: obj5, style: tmp.artHeroImage };
     obj5 = { uri: tmp7 };
-    tmp12 = closure_7(tmp6(tmp3[11]), obj4);
+    tmp12 = closure_6(tmp6(tmp3[11]), obj4);
   }
   items4 = [tmp12, ];
   const obj6 = { colors: items5, style: tmp.artHeroGradient };
-  items5 = [c10, tmp.container.backgroundColor];
-  items4[1] = closure_7(onHeightMeasured(scrollY[12]), obj6);
-  items6 = [closure_8(View, obj3), ];
+  items5 = [c9, tmp.container.backgroundColor];
+  items4[1] = closure_6(onHeightMeasured(scrollY[12]), obj6);
+  items6 = [closure_7(View, obj3), ];
   const obj7 = { style: tmp.headerContent, children: items7 };
-  const obj8 = { style: tmp.shadowContainer, children: closure_7(closure_4, obj12) };
+  const obj8 = { style: tmp.shadowContainer, children: closure_6(View, obj12) };
   if (null != memo) {
-    const obj9 = { style: tmp.coverContainer, children: closure_7(onHeightMeasured(scrollY[11]), obj10) };
+    const obj9 = { style: tmp.coverContainer, children: closure_6(onHeightMeasured(scrollY[11]), obj10) };
     obj10 = { source: obj11, style: tmp.image };
     obj12 = obj9;
     obj11 = { uri: memo };
@@ -288,7 +288,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
       tmp14Result = tmp14(tmp6(tmp3[11]), obj13);
     }
   }
-  items7 = [closure_7(closure_4, obj8), ];
+  items7 = [closure_6(View, obj8), ];
   let tmp14Result4 = null != l30Rank;
   const obj15 = { style: tmp.titleContainer, children: items8 };
   if (tmp14Result4) {
@@ -300,14 +300,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
   items9 = [, ];
   const obj17 = { style: tmp.titleRow, children: items10 };
   ({ textShadow: arr11[0], title: arr11[1] } = tmp);
-  items10 = [closure_7(tmp2(scrollY[14]).Text, obj18), ];
-  let tmp14Result5 = game.id === closure_6;
+  items10 = [closure_6(tmp2(scrollY[14]).Text, obj18), ];
+  let tmp14Result5 = game.id === closure_5;
   if (tmp14Result5) {
     const obj19 = { source: onHeightMeasured(scrollY[15]), style: tmp.wavingWumpus, accessible: false, importantForAccessibility: "no" };
-    tmp14Result5 = tmp14(closure_5, obj19);
+    const tmp6Result = onHeightMeasured(scrollY[11]);
+    tmp14Result5 = tmp14(tmp6Result, obj19);
   }
   items10[1] = tmp14Result5;
-  items8[1] = closure_8(closure_4, obj17);
+  items8[1] = closure_7(View, obj17);
   let tmp14Result6 = null;
   if (null != joined) {
     tmp14Result6 = null;
@@ -317,11 +318,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileH
     }
   }
   items8[2] = tmp14Result6;
-  items7[1] = closure_8(closure_4, obj15);
-  items6[1] = closure_8(closure_4, obj7);
-  return closure_8(closure_4, obj2);
+  items7[1] = closure_7(View, obj15);
+  items6[1] = closure_7(View, obj7);
+  return closure_7(View, obj2);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileHeader.tsx");
 
-export default tmp7;
+export default tmp6;

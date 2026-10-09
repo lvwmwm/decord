@@ -1,39 +1,56 @@
-// Module ID: 12661
-// Function ID: 12662
+// Module ID: 12601
+// Function ID: 12602
 // Name: useRefreshSavedMessages
-// Dependencies: [19, 558, 576, 12662, 2]
+// Dependencies: [19, 558, 576, 12602, 2]
 
-// Module 12661 (useRefreshSavedMessages)
-import react2 from "react" /* 576 */;
-import SavedMessagesActions from "SavedMessagesActions" /* 12662 */;
+// Module 12601 (useRefreshSavedMessages)
+import SavedMessagesActions from "SavedMessagesActions" /* 12602 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefreshSavedMessages() {
-  let tmp2;
+const require = globalThis.__r;
+let _require;
+
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefreshSavedMessages(arg0) {
+  let closure_0;
   let tmp3;
-  let obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+  let tmp4;
+  let obj = require("react");
+  const cResult = obj.c(3);
+  _require = tmp2;
+  if (cResult[0] !== (undefined === arg0 || arg0)) {
+    const fn = function f() {
+      const tmp = closure_0;
+      if (tmp) {
+        const obj = SavedMessagesActions;
+        const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();
+      }
+    };
+    const items = [tmp2];
+    cResult[0] = undefined === arg0 || arg0;
+    cResult[1] = fn;
+    cResult[2] = items;
+    tmp4 = items;
+    tmp3 = fn;
+  } else {
+    tmp3 = cResult[1];
+    tmp4 = cResult[2];
+  }
+  const effect = react.useEffect(tmp3, tmp4);
+}) : (function useRefreshSavedMessages() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const items = [flag];
+  const effect = react.useEffect(() => {
+    const tmp = flag;
+    if (tmp) {
       const obj = SavedMessagesActions;
       const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp2 = fn;
-    tmp3 = items;
-  } else {
-    [tmp2, tmp3] = cResult;
-  }
-  const effect = react.useEffect(tmp2, tmp3);
-}) : (function useRefreshSavedMessages() {
-  const effect = react.useEffect(() => {
-    const obj = SavedMessagesActions;
-    const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();
-  }, []);
+    }
+  }, items);
 });
 const result = size.fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");
 

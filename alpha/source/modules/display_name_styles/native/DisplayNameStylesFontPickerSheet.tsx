@@ -1,20 +1,20 @@
-// Module ID: 15439
-// Function ID: 15440
+// Module ID: 15552
+// Function ID: 15553
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1096, 21, 5090, 587, 558, 576, 8270, 15434, 15436, 1409, 1406, 5055, 5054, 1126, 2955, 15440, 5375, 14686, 8825, 5086, 5373, 5012, 6829, 2]
+// Dependencies: [32, 19, 17, 1096, 21, 5091, 587, 558, 576, 8278, 15547, 15549, 1410, 1407, 5056, 5055, 1126, 2955, 15553, 5376, 14792, 8834, 5087, 5374, 5013, 6836, 2]
 
-// Module 15439 (DisplayNameStylesFontPickerSheet)
+// Module 15552 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import _modDef2955 from "module_2955" /* 2955 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 15440 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 15553 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -155,16 +155,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   importDefault = tmp;
   let tmp2 = onSelectFont;
   let tmp3 = dependencyMap;
-  let obj = onSelectFont(8270);
+  let obj = onSelectFont(8278);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = onSelectFont(15434);
+  let obj2 = onSelectFont(15547);
   const visibleFontOrder = obj2.useVisibleFontOrder();
-  let obj3 = onSelectFont(15436);
+  let obj3 = onSelectFont(15549);
   const displayNameStylesNewFonts = obj3.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   [first, closure_5] = first.useState(selectedFontId);
-  let tmp15Result = first !== onSelectFont(1409).DisplayNameFont.DEFAULT;
-  let obj4 = onSelectFont(1406);
+  let tmp15Result = first !== onSelectFont(1410).DisplayNameFont.DEFAULT;
+  let obj4 = onSelectFont(1407);
   let tmp9 = first !== selectedFontId;
   let closure_6 = tmp9;
   const hasNonLatinLettersResult = obj4.hasNonLatinLetters(displayName);
@@ -184,13 +184,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     obj2.hideActionSheet();
   }, items);
   const obj5 = { ref: bottomSheetRef, header: closure_8(tmp13, obj6), children: tmp11(closure_5, obj8) };
-  BottomSheet = onSelectFont(6829).BottomSheet;
+  BottomSheet = onSelectFont(6836).BottomSheet;
   const tmp12 = importDefault;
   obj6 = { title: intl.string(_modDef2955["0JCuGm"]), trailing: closure_8(Button, obj7) };
   tmp13 = DisplayNameStylesSheetHeaderDefault;
   intl = onSelectFont(1126).intl;
   obj7 = { text: intl2.string(onSelectFont(1126).t.XqMe3N), onPress: callback, variant: "primary", size: "sm" };
-  Button = onSelectFont(5375).Button;
+  Button = onSelectFont(5376).Button;
   intl2 = onSelectFont(1126).intl;
   obj8 = { style: tmp.container, children: closure_9(closure_5, obj9) };
   obj9 = { style: tmp.contentContainer, children: items1 };
@@ -255,16 +255,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       return closure_1_8(tmp9, obj, item);
     })
   };
-  const Stack = onSelectFont(5373).Stack;
+  const Stack = onSelectFont(5374).Stack;
   items1 = [closure_8(Stack, obj10), ];
   if (tmp15Result) {
     tmp15Result = hasNonLatinLettersResult;
   }
   if (tmp15Result) {
     const obj11 = { style: tmp.nonLatinDisclaimer, children: items2 };
-    items2 = [tmp11(tmp2(5012).CircleInformationIcon, { size: "sm" }), ];
+    items2 = [tmp11(tmp2(5013).CircleInformationIcon, { size: "sm" }), ];
     const obj12 = { variant: "text-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl3.string(_modDef2955["+O1xL2"]) };
-    let Text = tmp2(5086).Text;
+    let Text = tmp2(5087).Text;
     intl3 = tmp2(1126).intl;
     items2[1] = tmp11(Text, obj12);
     tmp15Result = tmp15(tmp14, obj11);

@@ -1,25 +1,25 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16719
+// Function ID: 16720
 // Name: UnreadBars
-// Dependencies: [19, 17, 5079, 1085, 21, 5090, 5902, 587, 4927, 4787, 5055, 5056, 1200, 1126, 558, 576, 504, 12154, 2]
+// Dependencies: [19, 17, 5080, 1085, 21, 5091, 5903, 587, 4928, 4788, 5056, 5057, 1200, 1126, 558, 576, 504, 12091, 2]
 
-// Module 16596 (UnreadBars)
+// Module 16719 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import native2 from "native" /* 4787 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
-import TransitionGroup2 from "TransitionGroup" /* 12154 */;
+import native2 from "native" /* 4788 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5057 */;
+import TransitionGroup2 from "TransitionGroup" /* 12091 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
-import TextStyles from "TextStyles" /* 5902 */;
-import ColorUtils_mod from "ColorUtils" /* 4927 */;
+import createStyles from "createStyles" /* 5091 */;
+import TextStyles from "TextStyles" /* 5903 */;
+import ColorUtils_mod from "ColorUtils" /* 4928 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ obj3 = { margin: 8, height: 24, justifyContent: "center", alignItems: "center", 
 ColorUtils = ColorUtils_mod;
 obj4 = { backgroundColor: ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.RED_400, 0.9) };
 ColorUtils = ColorUtils_mod;
-let closure_12 = createLegacyClassComponentStyles(obj);
+const authStore2 = createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class UnreadBar extends PureComponent {
   constructor() {
@@ -282,7 +282,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadBars
                   tmp20[0] = react.Fragment;
                   const items1 = [tmp11, tmp16];
                   tmp20[1] = items1;
-                  const tmp22 = closure_9(scrollToLocation(12154).TransitionGroup, tmp20);
+                  const tmp22 = closure_9(scrollToLocation(12091).TransitionGroup, tmp20);
                   cResult[18] = tmp11;
                   cResult[19] = tmp16;
                   cResult[20] = tmp22;

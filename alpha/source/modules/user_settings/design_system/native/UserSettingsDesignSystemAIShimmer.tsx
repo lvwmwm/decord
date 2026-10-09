@@ -1,20 +1,20 @@
-// Module ID: 15988
-// Function ID: 15989
+// Module ID: 16104
+// Function ID: 16105
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 5090, 558, 576, 5375, 5086, 14055, 6186, 5373, 2]
+// Dependencies: [32, 19, 17, 21, 5091, 558, 576, 5376, 5087, 14152, 6188, 5374, 2]
 
-// Module 15988 (UserSettingsDesignSystemAIShimmer)
+// Module 16104 (UserSettingsDesignSystemAIShimmer)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import Card_Card from "Card/Card" /* 6186 */;
-import AIShimmer from "AIShimmer" /* 14055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import Card_Card from "Card/Card" /* 6188 */;
+import AIShimmer from "AIShimmer" /* 14152 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -347,7 +347,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           }
           if (cResult[31] !== tmp73) {
             const obj13 = { children: metroImportDefault(Stack_Stack.Stack, obj14) };
-            const Card3 = tmp(6186).Card;
+            const Card3 = tmp(6188).Card;
             obj14 = { children: items1 };
             items1 = [tmp61, tmp62, tmp73, tmp77];
             const tmp85 = metroRequire(Card3, obj13);
@@ -389,7 +389,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj17 = { children: metroImportDefault(Stack_Stack.Stack, obj18) };
-      const Card2 = tmp(6186).Card;
+      const Card2 = tmp(6188).Card;
       obj18 = { children: items3 };
       items3 = [tmp32, tmp33, tmp34, tmp39, tmp44, tmp47, tmp52];
       const tmp60 = metroRequire(Card2, obj17);
@@ -408,7 +408,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     tmp52 = tmp56;
   }
   const obj21 = { children: metroImportDefault(Stack_Stack.Stack, obj22) };
-  const Card = tmp(6186).Card;
+  const Card = tmp(6188).Card;
   obj22 = { children: items4 };
   items4 = [tmp15, tmp16, tmp20, tmp25];
   const tmp31 = metroRequire(Card, obj21);

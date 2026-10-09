@@ -1,12 +1,12 @@
-// Module ID: 4760
-// Function ID: 4761
+// Module ID: 4762
+// Function ID: 4763
 // Name: LinkingModule
-// Dependencies: [17, 1381, 4761, 2]
+// Dependencies: [17, 1382, 4763, 2]
 
-// Module 4760 (LinkingModule)
+// Module 4762 (LinkingModule)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import react_nativeDefault from "react-native" /* 4761 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import react_nativeDefault from "react-native" /* 4763 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = react_native.NativeModules;

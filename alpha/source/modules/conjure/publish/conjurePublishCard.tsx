@@ -1,14 +1,15 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 17153
+// Function ID: 17154
 // Name: conjurePublishCard
 // Dependencies: [3827, 2]
 // Exports: isConjurePublishCtaVisible, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
 
-// Module 16997 (conjurePublishCard)
+// Module 17153 (conjurePublishCard)
 import _modDef3827 from "module_3827" /* 3827 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishCard.tsx");
+const weakMap = new WeakMap();
+let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishCard.tsx");
 
 export const isConjurePublishCtaVisible = function isConjurePublishCtaVisible(publish) {
   let tmp = null != publish;
@@ -50,7 +51,7 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
 export const showsOutdatedNotice = function showsOutdatedNotice(publish) {
   return null != publish && publish.isUpdate && null == publish.disabledReason && true !== publish.publishing;
 };
-export const publishNoticeMessage = function publishNoticeMessage(notice) {
+export const publishNoticeMessage = function publishNoticeMessage(notice, arg1) {
   if (notice.update) {
     const surface = notice.surface;
     if ("bot" === surface) {
@@ -63,7 +64,13 @@ export const publishNoticeMessage = function publishNoticeMessage(notice) {
       return _modDef3827.WSmpBT;
     }
   } else {
-    return _modDef3827.MOrR29;
+    let MOrR29;
+    if (null == arg1) {
+      MOrR29 = _modDef3827.MOrR29;
+    } else {
+      MOrR29 = _modDef3827["/npn7F"];
+    }
+    return MOrR29;
   }
 };
 export const withLivePublishCard = function withLivePublishCard(stateFromStores1, stateFromStores2) {
@@ -82,16 +89,20 @@ export const withLivePublishCard = function withLivePublishCard(stateFromStores1
   let mapped = stateFromStores1;
   if (!stateFromStores1.every((publishCta) => null == publishCta.publishCta || publishCta.id === id)) {
     mapped = stateFromStores1.map((publishCta) => {
-      let tmp = publishCta;
       if (null != publishCta.publishCta) {
-        tmp = publishCta;
         if (publishCta.id !== id) {
-          const obj = { publishCta: null };
-          const merged = Object.assign(publishCta);
-          tmp = obj;
+          let value = weakMap.get(publishCta);
+          const obj = weakMap;
+          if (null == value) {
+            const obj2 = { publishCta: null };
+            const merged = Object.assign(publishCta);
+            const result = obj.set(publishCta, obj2);
+            value = obj2;
+          }
+          return value;
         }
       }
-      return tmp;
+      return publishCta;
     });
   }
   return mapped;

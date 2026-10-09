@@ -1,14 +1,14 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7168
+// Function ID: 7169
 // Name: ReferralTrialStore
-// Dependencies: [1389, 1085, 7164, 584, 1101, 504, 2]
+// Dependencies: [1390, 1085, 7169, 584, 1101, 504, 2]
 
-// Module 7163 (ReferralTrialStore)
+// Module 7168 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7164 */;
-import UserStore from "UserStore" /* 1389 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7169 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 function emitChanges() {
@@ -141,7 +141,7 @@ let obj = {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
     const tmp = c8;
     if (!tmp) {
-      let obj = userTrialOfferId(7164);
+      let obj = userTrialOfferId(7169);
       const referralsRemaining = obj.fetchReferralsRemaining();
     }
     if (!set1.has(userTrialOfferId)) {

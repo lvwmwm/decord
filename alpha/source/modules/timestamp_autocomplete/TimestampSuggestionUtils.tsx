@@ -1,19 +1,19 @@
-// Module ID: 9764
-// Function ID: 9765
+// Module ID: 9783
+// Function ID: 9784
 // Name: TimestampSuggestionUtils
-// Dependencies: [32, 2128, 4659, 9765, 1126, 2]
+// Dependencies: [32, 2128, 4661, 9784, 1126, 2]
 // Exports: preloadTimestampParser, queryTimestampSuggestions
 
-// Module 9764 (TimestampSuggestionUtils)
+// Module 9783 (TimestampSuggestionUtils)
 import intl6 from "intl" /* 1126 */;
-import _modDef4659 from "module_4659" /* 4659 */;
-import en2 from "en" /* 9765 */;
+import _modDef4661 from "module_4661" /* 4661 */;
+import en2 from "en" /* 9784 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
 import size from "module_2" /* 2 */;
 
 let items = ["h:mm:ssa", "h:mm:ss a", "H:mm:ss", "h:mma", "h:mm a", "H:mm", "HHmm", "ha", "h a", "H", "LT", "LTS"];
-let items1 = [_modDef4659.ISO_8601];
+let items1 = [_modDef4661.ISO_8601];
 const items2 = [...items];
 const set = new Set(items2);
 HermesBuiltin.arraySpread(items1, set, 1);
@@ -39,7 +39,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
   let unadjustedDescription;
   let obj = cloneResult1;
   if (cloneResult1 === undefined) {
-    obj = _modDef4659();
+    obj = _modDef4661();
   }
   let tmp4 = null;
   if ("" !== arg0) {
@@ -104,7 +104,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
   if (tmp13) {
     tmp13 = first.text === arg0;
   }
-  const obj2 = _modDef4659;
+  const obj2 = _modDef4661;
   if (tmp13) {
     const start = first.start;
     invalidResult = obj2(start.date());
@@ -138,7 +138,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
         if (!start2.isCertain("hour")) {
           const _Math = Math;
           const result = Math.round(cloneResult.valueOf() / 900000) * 900000;
-          obj5 = tmp19(4659)(result);
+          obj5 = tmp19(4661)(result);
         }
       }
       if (tmp13) {

@@ -1,62 +1,27 @@
 // Module ID: 14493
 // Function ID: 14494
-// Dependencies: []
+// Dependencies: [14478, 14474, 14494]
 
 // Module 14493
-let map;
+import _mod14474 from "module_14474" /* 14474 */;
+import _mod14478 from "module_14478" /* 14478 */;
 
-
-export default function(arg0) {
-  map = arg0;
-  if (!map) {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map();
+const prop = Object.getOwnPropertySymbols && !_mod14478(() => {
+  const SymbolResult = Symbol("symbol detection");
+  const obj = _mod14474;
+  const StringResult = obj.String(SymbolResult);
+  let tmp5 = !StringResult;
+  if (StringResult) {
+    const _Object = Object;
+    const _Symbol = Symbol;
+    tmp5 = !(Object(SymbolResult) instanceof Symbol);
   }
-  let obj = {
-    all: map,
-    on(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        value.push(arg1);
-      } else {
-        const items = [arg1];
-        const result = obj.set(arg0, items);
-      }
-    },
-    off(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const tmp = arg1;
-        if (tmp) {
-          value.splice(value.indexOf(arg1) >>> 0, 1);
-        } else {
-          const result = obj.set(arg0, []);
-        }
-      }
-    },
-    emit(arg0, arg1) {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const substr = value.slice();
-        const mapped = substr.map((fn) => {
-          fn(closure_1);
-        });
-      }
-      const value2 = obj.get("*");
-      if (value2) {
-        const substr1 = value2.slice();
-        const mapped1 = substr1.map((fn) => {
-          fn(closure_0, closure_1);
-        });
-      }
-    }
-  };
-  return obj;
-};
+  if (!tmp5) {
+    const _Symbol2 = Symbol;
+    tmp5 = !Symbol.sham && tmp2(14494) && tmp2(14494) < 41;
+    const tmp6 = !Symbol.sham && tmp2(14494) && tmp2(14494) < 41;
+  }
+  return tmp5;
+});
+
+export default prop;

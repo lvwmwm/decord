@@ -1,15 +1,15 @@
-// Module ID: 2020
-// Function ID: 2021
+// Module ID: 2021
+// Function ID: 2022
 // Name: GameRecord
-// Dependencies: [1404, 2021, 1997, 2029, 1414, 1387, 2]
+// Dependencies: [1405, 2022, 1998, 2030, 1415, 1388, 2]
 
-// Module 2020 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import Server from "Server" /* 1997 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2021 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2029 */;
-import Record from "Record" /* 1404 */;
+// Module 2021 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import Server from "Server" /* 1998 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2022 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2030 */;
+import Record from "Record" /* 1405 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;
@@ -154,7 +154,7 @@ class GameRecord extends Record {
     const obj = { keepAspectRatio: true, size };
     return tmp(id, banner, obj);
   }
-  getCoverURL(c9) {
+  getCoverURL(c8) {
     const media = this.media;
     let cover;
     const id = this.id;
@@ -166,7 +166,7 @@ class GameRecord extends Record {
     if (AvatarUtils.SUPPORTS_WEBP) {
       str = "webp";
     }
-    const obj = { keepAspectRatio: true, format: str, size: c9 };
+    const obj = { keepAspectRatio: true, format: str, size: c8 };
     return tmp2(id, cover, obj);
   }
   getArtworkURLs(size) {

@@ -1,11 +1,11 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 17086
+// Function ID: 17087
 // Name: conjurePlanOverlay
-// Dependencies: [6933, 2]
+// Dependencies: [6940, 2]
 // Exports: planSupportsOverlay
 
-// Module 16954 (conjurePlanOverlay)
-import ConjureTypes from "ConjureTypes" /* 6933 */;
+// Module 17086 (conjurePlanOverlay)
+import ConjureTypes from "ConjureTypes" /* 6940 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanOverlay.tsx");

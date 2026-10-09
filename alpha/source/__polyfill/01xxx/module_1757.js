@@ -1,186 +1,237 @@
 // Module ID: 1757
 // Function ID: 1758
-// Dependencies: [32, 1666]
-// Exports: processTransformOrigin
+// Dependencies: [1659, 1666, 1699, 1758, 1759, 1663, 1667]
+// Exports: updatePropsJestWrapper
 
 // Module 1757
-import ReanimatedError from "ReanimatedError" /* 1666 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import setupMicrotasks from "setupMicrotasks" /* 1663 */;
+import _updatePropsJS from "_updatePropsJS" /* 1666 */;
+import clampRGBA from "clampRGBA" /* 1699 */;
+import _mod1758 from "module_1758" /* 1758 */;
+import ComponentRegistry2 from "ComponentRegistry" /* 1759 */;
+import module_1659_mod from "module_1659" /* 1659 */;
 
-function validateTransformOrigin(arg0) {
-  let obj;
-  let obj2;
-  let tmp22;
-  if (3 !== arg0.length) {
-    const self7 = this;
-    const self8 = this;
-    const reanimatedError = new ReanimatedError.ReanimatedError("Transform origin must have exactly 3 values.");
-    throw reanimatedError;
-  } else {
-    [obj, obj2, tmp22] = arg0;
-    _slicedToArray(arg0, 3);
-    if (typeof obj !== "number") {
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const reanimatedError1 = new ReanimatedError.ReanimatedError("Transform origin x-position must be a number or a percentage string. Passed value: " + obj + ".");
-      throw reanimatedError1;
-    }
-    if (typeof obj2 !== "number") {
-      const _HermesInternal2 = HermesInternal;
-      const self3 = this;
-      const self4 = this;
-      const reanimatedError2 = new ReanimatedError.ReanimatedError("Transform origin y-position must be a number or a percentage string. Passed value: " + obj2 + ".");
-      throw reanimatedError2;
-    }
-    if (typeof tmp22 !== "number") {
-      const _HermesInternal3 = HermesInternal;
-      const self5 = this;
-      const self6 = this;
-      const reanimatedError3 = new ReanimatedError.ReanimatedError("Transform origin z-position must be a number. Passed value: " + tmp22 + ".");
-      throw reanimatedError3;
-    }
+const require = globalThis.__r;
+let _global;
+
+let fn;
+let fn3;
+function updatePropsOnReactJS(arg0, arg1) {
+  const ComponentRegistry = ComponentRegistry2.ComponentRegistry;
+  const component = ComponentRegistry.getComponent(arg0);
+  if (component) {
+    const result = component._updateReanimatedProps(arg1);
   }
 }
-validateTransformOrigin.__closure = {};
-validateTransformOrigin.__workletHash = 6034608374885;
-validateTransformOrigin.__initData = { code: "function validateTransformOrigin_Pnpm_processTransformOriginTs1(transformOrigin){if(transformOrigin.length!==3){throw new ReanimatedError('Transform origin must have exactly 3 values.');}const[x,y,z]=transformOrigin;if(!(typeof x==='number'||typeof x==='string'&&x.endsWith('%'))){throw new ReanimatedError(\"Transform origin x-position must be a number or a percentage string. Passed value: \"+x+\".\");}if(!(typeof y==='number'||typeof y==='string'&&y.endsWith('%'))){throw new ReanimatedError(\"Transform origin y-position must be a number or a percentage string. Passed value: \"+y+\".\");}if(typeof z!=='number'){throw new ReanimatedError(\"Transform origin z-position must be a number. Passed value: \"+z+\".\");}}" };
-function processTransformOrigin(str) {
-  let items = str;
-  if (!Array.isArray(str)) {
-    items = ["50%", "50%", 0];
-  }
-  if (typeof str === "string") {
-    const obj = /(top|bottom|left|right|center|\d+(?:%|px)|0)/gi;
-    const items1 = ["50%", "50%", 0];
-    let match = obj.exec(str);
-    let num4 = 0;
-    items = items1;
-    if (match) {
-      while (true) {
-        let num;
-        str = match[0];
-        let formatted = str.toLowerCase();
-        let sum = num4 + 1;
-        if ("left" !== formatted) {
-          if ("right" !== formatted) {
-            if ("top" !== formatted) {
-              if ("bottom" !== formatted) {
-                if ("center" === formatted) {
-                  if (2 === num4) {
-                    let _HermesInternal2 = HermesInternal;
-                    let str3 = " cannot be used for z-position";
-                    let str4 = "Transform-origin value ";
-                    let self3 = this;
-                    let self4 = this;
-                    let reanimatedError = new ReanimatedError.ReanimatedError("Transform-origin value " + str + " cannot be used for z-position");
-                    throw reanimatedError;
-                  } else {
-                    items1[num4] = "50%";
-                    num = sum;
-                  }
-                } else if (str.endsWith("%")) {
-                  items1[num4] = str;
-                  num = sum;
-                } else {
-                  let _parseFloat = parseFloat;
-                  let parsed = parseFloat(str);
-                  let _isNaN = isNaN;
-                  if (isNaN(parsed)) {
-                    break;
-                  } else {
-                    items1[num4] = parsed;
-                    num = sum;
-                  }
-                }
-              }
-            }
-            if (2 === num4) {
-              let _HermesInternal4 = HermesInternal;
-              let str7 = " can only be used for y-position";
-              let str8 = "Transform-origin ";
-              let self7 = this;
-              let self8 = this;
-              let reanimatedError1 = new ReanimatedError.ReanimatedError("Transform-origin " + str + " can only be used for y-position");
-              throw reanimatedError1;
-            } else {
-              let num2 = "100%";
-              if ("top" === formatted) {
-                num2 = 0;
-              }
-              items1[1] = num2;
-              num = sum;
-              if (0 === num4) {
-                let match1 = obj.exec(str);
-                num = sum;
-                if (null != match1) {
-                  let formatted1;
-                  if (match1 != null) {
-                    let str5 = match1[0];
-                    formatted1 = str5.toLowerCase();
-                  }
-                  if ("left" === formatted1) {
-                    items1[0] = 0;
-                    num = 2;
-                  } else if ("right" === formatted1) {
-                    items1[0] = "100%";
-                    num = 2;
-                  } else if ("center" === formatted1) {
-                    items1[0] = "50%";
-                    num = 2;
-                  } else {
-                    let _HermesInternal3 = HermesInternal;
-                    let str6 = "Could not parse transform-origin: ";
-                    let self5 = this;
-                    let self6 = this;
-                    let reanimatedError2 = new ReanimatedError.ReanimatedError("Could not parse transform-origin: " + str);
-                    throw reanimatedError2;
-                  }
-                }
-              }
-            }
+let module_1659 = module_1659_mod;
+if (module_1659.shouldBeUseWeb()) {
+  const fn2 = function o(value, arg1, arg2) {
+    let closure_0 = arg1;
+    let closure_1 = arg2;
+    value = value.value;
+    if (value != null) {
+      const item = value.forEach((tag) => {
+        tag = tag.tag;
+        const obj = _updatePropsJS;
+        obj._updatePropsJS(closure_0, tag, closure_1);
+      });
+    }
+  };
+  let obj = { _updatePropsJS: _updatePropsJS._updatePropsJS };
+  let obj2 = { code: "function pnpm_updatePropsTs1(viewDescriptors,updates,isAnimatedProps){const{_updatePropsJS}=this.__closure;var _viewDescriptors$valu;(_viewDescriptors$valu=viewDescriptors.value)===null||_viewDescriptors$valu===void 0||_viewDescriptors$valu.forEach(function(viewDescriptor){const component=viewDescriptor.tag;_updatePropsJS(updates,component,isAnimatedProps);});}" };
+  fn2.__closure = obj;
+  fn2.__workletHash = 17381979125683;
+  fn2.__initData = obj2;
+  fn = fn2;
+} else {
+  fn = function s(value, transformOrigin) {
+    _global = transformOrigin;
+    value = value.value;
+    const item = value.forEach((tag) => {
+      let obj = global.lastUpdateByTag[tag.tag];
+      if (obj == null) {
+        obj = {};
+      }
+      const lastUpdateByTag = tmp.lastUpdateByTag;
+      tag = tag.tag;
+      const obj2 = {};
+      const merged = Object.assign(obj);
+      const merged1 = Object.assign(transformOrigin);
+      lastUpdateByTag[tag] = obj2;
+      global.lastUpdateFrameTimeByTag[tag.tag] = global.__frameTimestamp;
+    });
+    let obj = clampRGBA;
+    obj.processColorsInProps(transformOrigin);
+    if ("transformOrigin" in transformOrigin) {
+      const tmp2Result = _mod1758;
+      transformOrigin.transformOrigin = tmp2Result.processTransformOrigin(transformOrigin.transformOrigin);
+    }
+    const UpdatePropsManager = _global.UpdatePropsManager;
+    UpdatePropsManager.update(value, transformOrigin);
+  };
+  const obj4 = { code: "function pnpm_updatePropsTs2(viewDescriptors,updates){const{processColorsInProps,processTransformOrigin}=this.__closure;viewDescriptors.value.forEach(function(viewDescriptor){var _global$lastUpdateByT;const prevState=(_global$lastUpdateByT=global.lastUpdateByTag[viewDescriptor.tag])!==null&&_global$lastUpdateByT!==void 0?_global$lastUpdateByT:{};global.lastUpdateByTag[viewDescriptor.tag]={...prevState,...updates};global.lastUpdateFrameTimeByTag[viewDescriptor.tag]=global.__frameTimestamp;});processColorsInProps(updates);if('transformOrigin'in updates){updates.transformOrigin=processTransformOrigin(updates.transformOrigin);}global.UpdatePropsManager.update(viewDescriptors,updates);}" };
+  fn.__closure = { processColorsInProps: clampRGBA.processColorsInProps, processTransformOrigin: _mod1758.processTransformOrigin };
+  fn.__workletHash = 9641647469033;
+  fn.__initData = obj4;
+  const obj3 = { processColorsInProps: clampRGBA.processColorsInProps, processTransformOrigin: _mod1758.processTransformOrigin };
+}
+const __initData = { code: "function checkUpdate_Pnpm_updatePropsTs4(tag){const checkUpdate_Pnpm_updatePropsTs4=this._recur;const{runOnJS,updatePropsOnReactJS,scheduledFrameIds}=this.__closure;const currentFrameTime=global.__frameTimestamp;const lastUpdateFrameTime=global.lastUpdateFrameTimeByTag[tag];if(!currentFrameTime||!lastUpdateFrameTime){return;}if(currentFrameTime-lastUpdateFrameTime>=20){runOnJS(updatePropsOnReactJS)(tag,global.lastUpdateByTag[tag]);global.lastUpdateByTag[tag]=undefined;return;}if(scheduledFrameIds[tag]){return;}scheduledFrameIds[tag]=requestAnimationFrame(function(){'worklet';scheduledFrameIds[tag]=undefined;checkUpdate_Pnpm_updatePropsTs4(tag);});}" };
+let closure_6 = { code: "function pnpm_updatePropsTs5(){const{scheduledFrameIds,tag,checkUpdate}=this.__closure;scheduledFrameIds[tag]=undefined;checkUpdate(tag);}" };
+module_1659 = module_1659_mod;
+if (module_1659.isFabric()) {
+  const fn4 = function l() {
+    let closure_0 = [];
+    const scheduledFrameIds = {};
+    function checkUpdate(tag) {
+      let __closure;
+      checkUpdate = tag;
+      const __frameTimestamp = checkUpdate.__frameTimestamp;
+      if (__frameTimestamp) {
+        if (checkUpdate.lastUpdateFrameTimeByTag[tag]) {
+          if (__frameTimestamp - checkUpdate.lastUpdateFrameTimeByTag[tag] >= 20) {
+            const obj2 = __closure(checkUpdate[5]);
+            obj2.runOnJS(updatePropsOnReactJS)(tag, checkUpdate.lastUpdateByTag[tag]);
+            checkUpdate.lastUpdateByTag[tag] = undefined;
+          } else if (!scheduledFrameIds[tag]) {
+            const _requestAnimationFrame = requestAnimationFrame;
+            fn = function p() {
+              obj[tag] = undefined;
+              checkUpdate(tag);
+            };
+            __closure = { scheduledFrameIds, tag, checkUpdate };
+            fn.__closure = __closure;
+            fn.__workletHash = 7847593993789;
+            fn.__initData = __initData;
+            scheduledFrameIds[tag] = requestAnimationFrame(fn);
           }
-          match = obj.exec(str);
-          num4 = num;
-          items = items1;
-        }
-        if (0 !== num4) {
-          let _HermesInternal5 = HermesInternal;
-          let str10 = " can only be used for x-position";
-          let str11 = "Transform-origin ";
-          let self11 = this;
-          let self12 = this;
-          let reanimatedError3 = new ReanimatedError.ReanimatedError("Transform-origin " + str + " can only be used for x-position");
-          throw reanimatedError3;
-        } else {
-          let num3 = "100%";
-          if ("left" === formatted) {
-            num3 = 0;
-          }
-          items1[0] = num3;
-          num = sum;
         }
       }
-      const _HermesInternal = HermesInternal;
+    }
+    let obj2 = { runOnJS: scheduledFrameIds(checkUpdate[5]).runOnJS, updatePropsOnReactJS, scheduledFrameIds };
+    checkUpdate.__closure = obj2;
+    checkUpdate.__workletHash = 1753947436463;
+    checkUpdate.__initData = __initData;
+    return {
+      update(value, updates) {
+        const self = this;
+        value = value.value;
+        const item = value.forEach((shadowNodeWrapper) => {
+          const obj = { shadowNodeWrapper: shadowNodeWrapper.shadowNodeWrapper, updates, tag: shadowNodeWrapper.tag };
+          updates.push(obj);
+          if (1 === updates.length) {
+            const _queueMicrotask = queueMicrotask;
+            queueMicrotask(self.flush);
+          }
+        });
+      },
+      flush() {
+        global._updatePropsFabric(closure_0);
+        const item = closure_0.forEach((tag) => {
+          checkUpdate(tag.tag);
+        });
+        closure_0.length = 0;
+      }
+    };
+  };
+  const obj6 = { code: "function pnpm_updatePropsTs3(){const{runOnJS,updatePropsOnReactJS}=this.__closure;const operations=[];const scheduledFrameIds={};function checkUpdate(tag){'worklet';const currentFrameTime=global.__frameTimestamp;const lastUpdateFrameTime=global.lastUpdateFrameTimeByTag[tag];if(!currentFrameTime||!lastUpdateFrameTime){return;}if(currentFrameTime-lastUpdateFrameTime>=20){runOnJS(updatePropsOnReactJS)(tag,global.lastUpdateByTag[tag]);global.lastUpdateByTag[tag]=undefined;return;}if(scheduledFrameIds[tag]){return;}scheduledFrameIds[tag]=requestAnimationFrame(function(){'worklet';scheduledFrameIds[tag]=undefined;checkUpdate(tag);});}return{update:function(viewDescriptors,updates){var _this=this;viewDescriptors.value.forEach(function(viewDescriptor){const tag=viewDescriptor.tag;operations.push({shadowNodeWrapper:viewDescriptor.shadowNodeWrapper,updates:updates,tag:tag});if(operations.length===1){queueMicrotask(_this.flush);}});},flush:function(){global._updatePropsFabric(operations);operations.forEach(function({tag:tag}){checkUpdate(tag);});operations.length=0;}};}" };
+  fn4.__closure = { runOnJS: setupMicrotasks.runOnJS, updatePropsOnReactJS };
+  fn4.__workletHash = 7650186665575;
+  fn4.__initData = obj6;
+  fn3 = fn4;
+  const obj5 = { runOnJS: setupMicrotasks.runOnJS, updatePropsOnReactJS };
+} else {
+  fn3 = function c() {
+    let closure_0 = [];
+    let obj = {
+      update(value, updates) {
+        const self = this;
+        value = value.value;
+        const item = value.forEach((tag) => {
+          let str;
+          const obj = { tag: tag.tag, name: str, updates };
+          str = tag.name;
+          const push = updates.push;
+          const arr = updates;
+          if (!str) {
+            str = "RCTView";
+          }
+          push(obj);
+          if (1 === arr.length) {
+            const _queueMicrotask = queueMicrotask;
+            queueMicrotask(self.flush);
+          }
+        });
+      },
+      flush() {
+        global._updatePropsPaper(closure_0);
+        closure_0.length = 0;
+      }
+    };
+    return obj;
+  };
+  fn3.__closure = {};
+  fn3.__workletHash = 8150032191515;
+  fn3.__initData = { code: "function pnpm_updatePropsTs6(){const operations=[];return{update:function(viewDescriptors,updates){var _this=this;viewDescriptors.value.forEach(function(viewDescriptor){operations.push({tag:viewDescriptor.tag,name:viewDescriptor.name||'RCTView',updates:updates});if(operations.length===1){queueMicrotask(_this.flush);}});},flush:function(){global._updatePropsPaper(operations);operations.length=0;}};}" };
+}
+module_1659 = module_1659_mod;
+if (module_1659.shouldBeUseWeb()) {
+  function maybeThrowError() {
+    const obj = require("module_1659");
+    const tmp = require;
+    if (!obj.isJest()) {
       const self = this;
       const self2 = this;
-      const reanimatedError4 = new ReanimatedError.ReanimatedError("Invalid numeric value in transform-origin: " + str);
-      throw reanimatedError4;
+      const reanimatedError = new tmp(1667).ReanimatedError("`UpdatePropsManager` is not available on non-native platform.");
+      throw reanimatedError;
     }
   }
-  if (typeof str !== "string") {
-    const _Array = Array;
-    if (!Array.isArray(str)) {
-      const self9 = this;
-      const self10 = this;
-      const reanimatedError5 = new ReanimatedError.ReanimatedError("Invalid transformOrigin type: " + typeof str);
-      throw reanimatedError5;
-    }
-  }
-  return items;
+  const _Proxy = Proxy;
+  const obj7 = {
+    get: maybeThrowError,
+    set() {
+        if (typeof maybeThrowError === "function") {
+          const obj = require("module_1659");
+          const tmp = require;
+          if (obj.isJest()) {
+            return false;
+          } else {
+            const self = this;
+            const self2 = this;
+            const reanimatedError = new tmp(1667).ReanimatedError("`UpdatePropsManager` is not available on non-native platform.");
+            throw reanimatedError;
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+  };
+  let self = this;
+  let self2 = this;
+  const proxy = new Proxy({}, obj7);
+  global.UpdatePropsManager = proxy;
+} else {
+  const obj8 = { code: "function pnpm_updatePropsTs7(){const{createUpdatePropsManager}=this.__closure;global.UpdatePropsManager=createUpdatePropsManager();}" };
+  const _module3 = setupMicrotasks;
+  const fn5 = function _() {
+    global.UpdatePropsManager = fn3();
+  };
+  const obj9 = { createUpdatePropsManager: fn3 };
+  fn5.__closure = obj9;
+  fn5.__workletHash = 4015188324291;
+  fn5.__initData = obj8;
+  let tmp2 = _module3.runOnUIImmediately(fn5)();
 }
-processTransformOrigin.__closure = { INDEX_X: 0, INDEX_Z: 2, INDEX_Y: 1, __DEV__: false, validateTransformOrigin };
-processTransformOrigin.__workletHash = 11541675557002;
-processTransformOrigin.__initData = { code: "function processTransformOrigin_Pnpm_processTransformOriginTs2(transformOriginIn){const{INDEX_X,INDEX_Z,INDEX_Y,__DEV__,validateTransformOrigin}=this.__closure;let transformOrigin=Array.isArray(transformOriginIn)?transformOriginIn:['50%','50%',0];if(typeof transformOriginIn==='string'){const transformOriginString=transformOriginIn;const regex=/(top|bottom|left|right|center|\\d+(?:%|px)|0)/gi;const transformOriginArray=['50%','50%',0];let index=INDEX_X;let matches;while(matches=regex.exec(transformOriginString)){let nextIndex=index+1;const value=matches[0];const valueLower=value.toLowerCase();switch(valueLower){case'left':case'right':{if(index!==INDEX_X){throw new ReanimatedError(\"Transform-origin \"+value+\" can only be used for x-position\");}transformOriginArray[INDEX_X]=valueLower==='left'?0:'100%';break;}case'top':case'bottom':{if(index===INDEX_Z){throw new ReanimatedError(\"Transform-origin \"+value+\" can only be used for y-position\");}transformOriginArray[INDEX_Y]=valueLower==='top'?0:'100%';if(index===INDEX_X){const horizontal=regex.exec(transformOriginString);if(horizontal==null){break;}switch(horizontal===null||horizontal===void 0?void 0:horizontal[0].toLowerCase()){case'left':transformOriginArray[INDEX_X]=0;break;case'right':transformOriginArray[INDEX_X]='100%';break;case'center':transformOriginArray[INDEX_X]='50%';break;default:throw new ReanimatedError(\"Could not parse transform-origin: \"+transformOriginString);}nextIndex=INDEX_Z;}break;}case'center':{if(index===INDEX_Z){throw new ReanimatedError(\"Transform-origin value \"+value+\" cannot be used for z-position\");}transformOriginArray[index]='50%';break;}default:{if(value.endsWith('%')){transformOriginArray[index]=value;}else{const numericValue=parseFloat(value);if(isNaN(numericValue)){throw new ReanimatedError(\"Invalid numeric value in transform-origin: \"+value);}transformOriginArray[index]=numericValue;}break;}}index=nextIndex;}transformOrigin=transformOriginArray;}if(typeof transformOriginIn!=='string'&&!Array.isArray(transformOriginIn)){throw new ReanimatedError(\"Invalid transformOrigin type: \"+typeof transformOriginIn);}if(__DEV__){validateTransformOrigin(transformOrigin);}return transformOrigin;}" };
 
-export { processTransformOrigin };
+export default fn;
+export const updatePropsJestWrapper = (D, keys, current, arr) => {
+  let closure_0 = keys;
+  const item = arr.forEach((fn) => {
+    fn(closure_0);
+  });
+  current = current.current;
+  const obj = {};
+  const merged = Object.assign(current.current.value);
+  const merged1 = Object.assign(keys);
+  current.value = obj;
+  fn(D, keys);
+};

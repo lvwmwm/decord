@@ -1,10 +1,10 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9398
+// Function ID: 9399
 // Name: emojis/EmojiActionCreators
 // Dependencies: [584, 2]
 // Exports: initiateEmojiInteraction, toggleGuildExpandedState
 
-// Module 9360 (emojis/EmojiActionCreators)
+// Module 9398 (emojis/EmojiActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

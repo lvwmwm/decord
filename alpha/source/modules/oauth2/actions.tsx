@@ -1,15 +1,15 @@
-// Module ID: 9139
-// Function ID: 9140
+// Module ID: 9206
+// Function ID: 9207
 // Name: oauth2/actions
-// Dependencies: [5, 2063, 2115, 1085, 1294, 5936, 1094, 2]
+// Dependencies: [5, 2064, 2115, 1085, 1295, 5937, 1094, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9139 (oauth2/actions)
+// Module 9206 (oauth2/actions)
 import utils_PathUtils from "utils/PathUtils" /* 1094 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5936 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5937 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -109,7 +109,7 @@ let obj = function _authorize() {
               ({ authorize: c0, clientId: c1, scopes: c2, responseType: c3, redirectUri: c4, codeChallenge: c5, codeChallengeMethod: c6, state: c7, permissions: c8, guildId: c9, channelId: c10, integrationType: c11, connectedAccountProvider: c12, nonce: c13 } = closure_0);
               response_type = 1;
               redirect_uri = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === response_type) {
             if (arg0 === 1) {
@@ -216,7 +216,7 @@ obj = function _fetchAuthorization() {
               ({ clientId: c0, scopes: c1, responseType: c2, redirectUri: c3, codeChallenge: c4, codeChallengeMethod: c5, state: c6, integrationType: c7, connectedAccountProvider: c8, nonce: c9, signal: c10 } = closure_0);
               redirect_uri = 1;
               code_challenge = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === redirect_uri) {
             if (arg0 === 1) {

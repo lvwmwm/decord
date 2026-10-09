@@ -1,17 +1,17 @@
-// Module ID: 9733
-// Function ID: 9734
+// Module ID: 9752
+// Function ID: 9753
 // Name: NitroUpsellButton
-// Dependencies: [19, 5079, 21, 558, 576, 504, 9005, 587, 5375, 2]
+// Dependencies: [19, 5080, 21, 558, 576, 504, 9016, 587, 5376, 2]
 
-// Module 9733 (NitroUpsellButton)
+// Module 9752 (NitroUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9005 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9016 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5079 */;
+import AccessibilityStore from "AccessibilityStore" /* 5080 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const NitroWheelIcon = tmp(9005).NitroWheelIcon;
+    const NitroWheelIcon = tmp(9016).NitroWheelIcon;
     const tmp12 = <NitroWheelIcon color={nativeDefault.colors.WHITE} size="sm" />;
     cResult[2] = tmp12;
     tmp9 = tmp12;

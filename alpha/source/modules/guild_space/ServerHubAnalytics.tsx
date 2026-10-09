@@ -1,12 +1,12 @@
-// Module ID: 18002
-// Function ID: 18003
+// Module ID: 18162
+// Function ID: 18163
 // Name: ServerHubAnalytics
-// Dependencies: [1085, 1264, 2]
+// Dependencies: [1085, 1265, 2]
 // Exports: trackServerHubToggleSetting, trackServerHubVisit
 
-// Module 18002 (ServerHubAnalytics)
+// Module 18162 (ServerHubAnalytics)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

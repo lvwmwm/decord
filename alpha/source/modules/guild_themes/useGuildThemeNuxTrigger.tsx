@@ -1,10 +1,10 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16508
+// Function ID: 16509
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 2060, 558, 576, 4963, 2048, 7090, 2]
+// Dependencies: [32, 19, 2061, 558, 576, 4964, 2049, 7093, 2]
 
-// Module 16389 (useGuildThemeNuxTrigger)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+// Module 16508 (useGuildThemeNuxTrigger)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,14 +20,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
   let closure_0;
   let closure_3;
   let closure_4;
-  let tmp10;
+  let tmp11;
+  let tmp12;
   let tmp5;
-  let tmp9;
+  let tmp6;
   _require = arg0;
   let tmp = _require;
   let tmp2 = isNuxOpen;
   let obj = require("react");
-  const cResult = obj.c(12);
+  const cResult = obj.c(13);
   isNuxOpen = isNuxOpen.isNuxOpen;
   const openNux = isNuxOpen.openNux;
   const obj2 = require("GuildThemeResolver");
@@ -46,22 +47,29 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = tmp(tmp2[7]);
-  const tmp6 = openNux(tmpResult.useSelectedDismissibleContent(tmp5, constants.GUILD_THEME_NUX), 2);
-  react = tmp7;
-  const tmp8 = tmp6[0] === tmp(tmp2[6]).DismissibleContent.GUILD_THEME_NUX;
-  constants = tmp8;
-  ref = react.useRef(false);
-  const obj4 = react;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { groupName: constants.GUILD_THEME_NUX };
+    cResult[2] = obj3;
+    tmp6 = obj3;
+  } else {
+    tmp6 = cResult[2];
+  }
+  const tmpResult = tmp(tmp2[7]);
+  const tmp8 = openNux(tmpResult.useSelectedDismissibleContent(tmp5, tmp6), 2);
+  react = tmp9;
+  const tmp10 = tmp8[0] === tmp(tmp2[6]).DismissibleContent.GUILD_THEME_NUX;
+  constants = tmp10;
+  ref = react.useRef(false);
+  const obj5 = react;
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class D {
       constructor() {
         closure_5.current = false;
         return;
       }
     }
-    cResult[2] = D;
-    tmp9 = D;
+    cResult[3] = D;
+    tmp11 = D;
   } else {
     class D {
       constructor() {
@@ -70,17 +78,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
       }
     }
   }
-  if (cResult[3] !== arg0) {
+  if (cResult[4] !== arg0) {
     class D {
       constructor() {
         closure_5.current = false;
         return;
       }
     }
-    tmp11[0] = arg0;
-    cResult[3] = arg0;
-    cResult[4] = tmp11;
-    tmp10 = tmp11;
+    tmp13[0] = arg0;
+    cResult[4] = arg0;
+    cResult[5] = tmp13;
+    tmp12 = tmp13;
   } else {
     class D {
       constructor() {
@@ -89,8 +97,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
       }
     }
   }
-  const effect = obj4.useEffect(tmp9, tmp10);
-  if (cResult[5] === arg0) {
+  const effect = obj5.useEffect(tmp11, tmp12);
+  if (cResult[6] === arg0) {
     class D {
       constructor() {
         closure_5.current = false;
@@ -98,7 +106,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
       }
     }
   }
-  class N {
+  class U {
     constructor() {
       tmp = closure_4;
       if (tmp) {
@@ -109,22 +117,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
             tmp4 = globalThis;
             _setTimeout = setTimeout;
             tmp5 = closure_5;
-            closure_0 = setTimeout(() => { /* body not rendered: F147215 */ }, closure_5);
-            return () => { /* body not rendered: F147216 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F147585 */ }, closure_5);
+            return () => { /* body not rendered: F147586 */ };
           }
         }
       }
       return;
     }
   }
-  const items2 = [tmp8, isNuxOpen, arg0, tmp6[1], openNux];
-  cResult[5] = arg0;
-  cResult[6] = isNuxOpen;
-  cResult[7] = tmp6[1];
-  cResult[8] = openNux;
-  cResult[9] = tmp8;
-  cResult[10] = N;
-  cResult[11] = items2;
+  const items2 = [tmp10, isNuxOpen, arg0, tmp8[1], openNux];
+  cResult[6] = arg0;
+  cResult[7] = isNuxOpen;
+  cResult[8] = tmp8[1];
+  cResult[9] = openNux;
+  cResult[10] = tmp10;
+  cResult[11] = U;
+  cResult[12] = items2;
 }) : (function useGuildThemeNuxTrigger(arg0, isNuxOpen) {
   let closure_0;
   let closure_3;
@@ -148,7 +156,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
   } else {
     items1 = [];
   }
-  const tmp5 = openNux(useSelectedDismissibleContent(items1, constants.GUILD_THEME_NUX), 2);
+  const obj2 = { groupName: constants.GUILD_THEME_NUX };
+  const tmp5 = openNux(useSelectedDismissibleContent(items1, obj2), 2);
   react = tmp6;
   const tmp7 = tmp5[0] === tmp(tmp2[6]).DismissibleContent.GUILD_THEME_NUX;
   constants = tmp7;

@@ -1,9 +1,9 @@
-// Module ID: 9028
-// Function ID: 9029
+// Module ID: 9043
+// Function ID: 9044
 // Name: VirtualCurrencyStore
 // Dependencies: [504, 584, 2]
 
-// Module 9028 (VirtualCurrencyStore)
+// Module 9043 (VirtualCurrencyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

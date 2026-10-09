@@ -1,19 +1,19 @@
-// Module ID: 10395
-// Function ID: 10396
+// Module ID: 10384
+// Function ID: 10385
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4717, 1389, 10266, 21, 558, 576, 504, 4922, 10374, 7004, 1126, 6643, 6641, 9306, 6267, 10396, 2]
+// Dependencies: [32, 19, 4719, 1390, 10251, 21, 558, 576, 504, 4923, 10361, 7011, 1126, 6650, 6648, 9344, 6269, 10385, 2]
 
-// Module 10395 (StrangerDangerMoreTipsModalActionItems)
+// Module 10384 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7004 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10266 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10374 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7011 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10251 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -509,9 +509,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StrangerDang
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(6643).EyeIcon;
+      let EyeSlashIcon = tmp11(6650).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(6641).EyeSlashIcon;
+      EyeSlashIcon = tmp11(6648).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

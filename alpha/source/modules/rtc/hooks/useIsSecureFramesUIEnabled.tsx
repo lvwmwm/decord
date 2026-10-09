@@ -1,16 +1,14 @@
-// Module ID: 8819
-// Function ID: 8820
+// Module ID: 8828
+// Function ID: 8829
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [2063, 5108, 8801, 558, 576, 504, 2]
+// Dependencies: [2064, 5109, 8810, 558, 576, 504, 2]
 
-// Module 8819 (useIsSecureFramesUIEnabled)
-import SecureFramesConstants from "SecureFramesConstants" /* 8801 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
+// Module 8828 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 8810 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let version;
 
 function isSecureFramesUIEnabled(isCallRTCConnectionEmpty, items) {
   let obj;
@@ -25,7 +23,7 @@ function isSecureFramesUIEnabled(isCallRTCConnectionEmpty, items) {
     if (null != channel) {
       if (!channel.isGuildStageVoice()) {
         const secureFramesState = obj.getSecureFramesState();
-        version = undefined;
+        let version;
         if (secureFramesState != null) {
           version = secureFramesState.version;
         }

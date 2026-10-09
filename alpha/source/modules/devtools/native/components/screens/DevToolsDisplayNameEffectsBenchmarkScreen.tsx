@@ -1,25 +1,25 @@
-// Module ID: 15903
-// Function ID: 15904
+// Module ID: 16020
+// Function ID: 16021
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1389, 1407, 21, 1408, 10253, 1126, 10249, 2955, 5090, 587, 558, 576, 5086, 5375, 5373, 10246, 10247, 504, 15904, 12885, 6184, 6267, 5626, 2]
+// Dependencies: [32, 19, 17, 1390, 1408, 21, 1409, 10238, 1126, 10234, 2955, 5091, 587, 558, 576, 5087, 5376, 5374, 10231, 10232, 504, 16021, 12854, 6186, 6269, 5627, 2]
 
-// Module 15903 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 16020 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1408 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1409 */;
 import _modDef2955 from "module_2955" /* 2955 */;
-import components_Button_Button from "components/Button/Button" /* 5375 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10246 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10249 */;
-import _mod10253 from "module_10253" /* 10253 */;
+import components_Button_Button from "components/Button/Button" /* 5376 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10231 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10234 */;
+import _mod10238 from "module_10238" /* 10238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,9 +32,9 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5086);
-const Stack_Stack = tmp(5373);
-const types = tmp(10247);
+const Text_Text = tmp(5087);
+const Stack_Stack = tmp(5374);
+const types = tmp(10232);
 function effectName(arg0) {
   const intl = intl2.intl;
   const string = intl.string;
@@ -479,7 +479,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod10253;
+    const obj = _mod10238;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
@@ -606,7 +606,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod10253;
+              const obj3 = _mod10238;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;

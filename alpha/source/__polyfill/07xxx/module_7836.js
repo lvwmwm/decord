@@ -1,32 +1,16 @@
 // Module ID: 7836
 // Function ID: 7837
-// Dependencies: []
+// Dependencies: [7834]
 
 // Module 7836
-let obj = {
-  get(arg0) {
-    const tmp = arg0;
-    if (tmp) {
-      return arg0;
-    } else {
-      if (typeof globalThis.DOMParser !== "undefined") {
-        const DOMParser2 = globalThis.DOMParser;
-        const self3 = this;
-        const self4 = this;
-        const dOMParser = new globalThis.DOMParser();
-        return dOMParser;
-      } else {
-        try {
-          const result = globalThis.__non_webpack_require__("@xmldom/xmldom");
-          const self = this;
-          const self2 = this;
-          const obj = { onError: result.onErrorStopParsing };
-          const dOMParser1 = new result.DOMParser(obj);
-          return dOMParser1;
-        } catch (err) {
-        }
-      }
-    }
+import _mod7834 from "module_7834" /* 7834 */;
+
+let obj = { 1: "InteroperabilityIndex", 2: null, 4096: "RelatedImageFileFormat", 4097: "RelatedImageWidth", 4098: "RelatedImageHeight" };
+obj[2] = {
+  name: "InteroperabilityVersion",
+  description(value) {
+    const obj = _mod7834;
+    return obj.getStringValue(value);
   }
 };
 

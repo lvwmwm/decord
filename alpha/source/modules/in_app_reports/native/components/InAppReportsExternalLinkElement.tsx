@@ -1,16 +1,16 @@
-// Module ID: 13405
-// Function ID: 13406
+// Module ID: 13500
+// Function ID: 13501
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5090, 558, 576, 6654, 5086, 1126, 4763, 6192, 13406, 8557, 2]
+// Dependencies: [17, 21, 5091, 558, 576, 6661, 5087, 1126, 4765, 6194, 13501, 8565, 2]
 
-// Module 13405 (InAppReportsExternalLinkElement)
+// Module 13500 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import LinkingDefault from "Linking" /* 4763 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6654 */;
+import LinkingDefault from "Linking" /* 4765 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6661 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
         let tmp13Result = !tmp6;
         if (tmp13Result) {
           let headerText;
-          const Text = tmp(5086).Text;
+          const Text = tmp(5087).Text;
           const tmp13 = React3;
           if (null != typeConsolidationEyebrow.style) {
             const items1 = [tmp4.headerText, typeConsolidationEyebrow.style];
@@ -146,7 +146,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
         const tmp9 = hasOwnProperty;
         if (!someResult) {
           let headerText;
-          const Text = tmp2(5086).Text;
+          const Text = tmp2(5087).Text;
           const tmp5 = React3;
           if (null != typeConsolidationEyebrow.style) {
             const items = [tmp.headerText, typeConsolidationEyebrow.style];
@@ -204,8 +204,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
     }
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { IconComponent: url(13406).LinkExternalMediumIcon };
-      const TableRowIcon = tmp(6192).TableRowIcon;
+      const obj2 = { IconComponent: url(13501).LinkExternalMediumIcon };
+      const TableRowIcon = tmp(6194).TableRowIcon;
       const tmp9 = closure_4(TableRowIcon, obj2);
       cResult[2] = tmp9;
       tmp7 = tmp9;
@@ -222,7 +222,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       }
     }
     const obj3 = { label: link_text, subLabel: link_description, trailing: tmp7, onPress: tmp5, arrow: false, accessibilityRole: "link" };
-    const tmp12 = closure_4(url(8557).RowButton, obj3);
+    const tmp12 = closure_4(url(8565).RowButton, obj3);
     cResult[3] = link_description;
     cResult[4] = link_text;
     cResult[5] = tmp5;
@@ -249,9 +249,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       arrow: false,
       accessibilityRole: "link"
     };
-    const RowButton = url(8557).RowButton;
-    obj2 = { IconComponent: url(13406).LinkExternalMediumIcon };
-    TableRowIcon = url(6192).TableRowIcon;
+    const RowButton = url(8565).RowButton;
+    obj2 = { IconComponent: url(13501).LinkExternalMediumIcon };
+    TableRowIcon = url(6194).TableRowIcon;
     tmp3 = closure_4(RowButton, obj);
   }
   return tmp3;

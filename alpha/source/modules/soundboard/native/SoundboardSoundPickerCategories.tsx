@@ -1,31 +1,31 @@
-// Module ID: 17556
-// Function ID: 17557
+// Module ID: 17708
+// Function ID: 17709
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [109, 19, 17, 17538, 1389, 1085, 21, 5090, 587, 558, 576, 7039, 6161, 1126, 9714, 5049, 17554, 8895, 1200, 8198, 6189, 5055, 5056, 4726, 504, 9394, 1630, 6326, 8347, 4952, 2]
+// Dependencies: [109, 19, 17, 17690, 1390, 1085, 21, 5091, 587, 558, 576, 7042, 6165, 1126, 9733, 5050, 17706, 8906, 1200, 8206, 6191, 5056, 5057, 4728, 504, 9432, 1631, 6333, 8355, 4953, 2]
 
-// Module 17556 (SoundboardSoundPickerCategories)
+// Module 17708 (SoundboardSoundPickerCategories)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import ClockIcon from "ClockIcon" /* 5049 */;
-import HapticUtils from "HapticUtils" /* 5055 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5056 */;
-import GuildIconDefault from "GuildIcon" /* 6161 */;
-import Pressables from "Pressables" /* 6189 */;
-import SoundboardTypes from "SoundboardTypes" /* 7039 */;
-import LockIcon from "LockIcon" /* 8198 */;
-import TrophyIcon from "TrophyIcon" /* 8895 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9394 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9714 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 17538 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17554 */;
+import ClockIcon from "ClockIcon" /* 5050 */;
+import HapticUtils from "HapticUtils" /* 5056 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5057 */;
+import GuildIconDefault from "GuildIcon" /* 6165 */;
+import Pressables from "Pressables" /* 6191 */;
+import SoundboardTypes from "SoundboardTypes" /* 7042 */;
+import LockIcon from "LockIcon" /* 8206 */;
+import TrophyIcon from "TrophyIcon" /* 8906 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9432 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9733 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 17690 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17706 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       tmp14 = tmp33;
     }
     const obj2 = { guild, style: tmp5.guildItem };
-    const tmp37 = closure_12(GuildIconDefault, obj2);
+    const tmp37 = authStore2(GuildIconDefault, obj2);
     cResult[0] = guild;
     cResult[1] = tmp5.guildItem;
     cResult[2] = tmp37;
@@ -128,7 +128,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     }
     if (cResult[5] !== tmp5.keyboardItem) {
       const obj3 = { style: tmp5.keyboardItem };
-      const tmp28 = closure_12(ClockIcon.ClockIcon, obj3);
+      const tmp28 = authStore2(ClockIcon.ClockIcon, obj3);
       cResult[5] = tmp5.keyboardItem;
       cResult[6] = tmp28;
       tmp26 = tmp28;
@@ -189,7 +189,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       }
       if (cResult[11] !== tmp5.keyboardItem) {
         const obj5 = { style: tmp5.keyboardItem };
-        const tmp10 = closure_12(TrophyIcon.TrophyIcon, obj5);
+        const tmp10 = authStore2(TrophyIcon.TrophyIcon, obj5);
         cResult[11] = tmp5.keyboardItem;
         cResult[12] = tmp10;
         tmp8 = tmp10;
@@ -241,7 +241,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
                       }
                     }
                     const obj6 = { onPress: tmp38, accessibilityRole: "button", accessibilityLabel: tmp14, children: tmp48 };
-                    const tmp54 = closure_12(Pressables.PressableOpacity, obj6, tmp14);
+                    const tmp54 = authStore2(Pressables.PressableOpacity, obj6, tmp14);
                     cResult[32] = tmp14;
                     cResult[33] = tmp38;
                     cResult[34] = tmp48;
@@ -261,9 +261,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
             }
             let tmp45 = tmp4;
             if (tmp45) {
-              const obj8 = { style: tmp5.lockContainer, children: closure_12(LockIcon.LockIcon, obj9) };
+              const obj8 = { style: tmp5.lockContainer, children: authStore2(LockIcon.LockIcon, obj9) };
               obj9 = { style: tmp5.lock };
-              tmp45 = closure_12(metroImportDefault, obj8);
+              tmp45 = authStore2(metroImportDefault, obj8);
             }
             cResult[24] = undefined !== locked && locked;
             cResult[25] = tmp5.lock;
@@ -279,7 +279,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       }
       if (tmp42 == null) {
         const obj10 = { style: tmp5.keyboardItem, source: tmp12 };
-        tmp42 = closure_12(tmp(1200).Icon, obj10);
+        tmp42 = authStore2(tmp(1200).Icon, obj10);
       }
       cResult[19] = tmp11;
       cResult[20] = tmp13;
@@ -326,7 +326,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     const guild = category.categoryInfo.guild;
     name = guild.name;
     const obj2 = { guild, style: tmp.guildItem };
-    tmp14Result = closure_12(GuildIconDefault, obj2);
+    tmp14Result = authStore2(GuildIconDefault, obj2);
     tmp6 = null;
     tmp7 = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.FAVORITES === type) {
@@ -339,7 +339,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
     const intl3 = tmp2(1126).intl;
     name = intl3.string(tmp2(1126).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = closure_12(tmp2(5049).ClockIcon, obj);
+    tmp7 = authStore2(tmp2(5050).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
   } else if (SoundboardTypes.SoundboardSoundGridSectionType.DEFAULTS === type) {
@@ -364,7 +364,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       const obj3 = { guildName: category.categoryInfo.guild.name };
       name = intl5.formatToPlainString(tmp2(1126).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = closure_12(tmp2(8895).TrophyIcon, obj4);
+      tmp7 = authStore2(tmp2(8906).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -379,7 +379,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
   };
   obj6 = { style: items, children: items1 };
   items = [tmp.item, style];
-  const PressableOpacity = tmp2(6189).PressableOpacity;
+  const PressableOpacity = tmp2(6191).PressableOpacity;
   tmp15 = map1;
   if (tmp14Result == null) {
     tmp14Result = tmp7;
@@ -390,12 +390,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
   }
   items1 = [tmp14Result, ];
   if (locked) {
-    const obj8 = { style: tmp.lockContainer, children: closure_12(LockIcon.LockIcon, obj9) };
+    const obj8 = { style: tmp.lockContainer, children: authStore2(LockIcon.LockIcon, obj9) };
     obj9 = { style: tmp.lock };
     locked = tmp14(tmp16, obj8);
   }
   items1[1] = locked;
-  return closure_12(PressableOpacity, obj5, name);
+  return authStore2(PressableOpacity, obj5, name);
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -424,7 +424,7 @@ let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function M
   }
   const obj2 = { ref: tmp3 };
   const merged = Object.assign(tmp2);
-  const tmp9 = closure_12(metroImportAll, obj2);
+  const tmp9 = authStore2(metroImportAll, obj2);
   cResult[3] = tmp2;
   cResult[4] = tmp3;
   cResult[5] = tmp9;
@@ -433,7 +433,7 @@ let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function M
   const obj = { ref };
   ref = ref.ref;
   const merged = Object.assign(Object.assign(ref, Object.assign({ ref: 0 })));
-  return closure_12(metroImportAll, obj);
+  return authStore2(metroImportAll, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardSoundPickerCategories(guildId) {

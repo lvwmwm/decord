@@ -1,20 +1,20 @@
-// Module ID: 10467
-// Function ID: 10468
+// Module ID: 10457
+// Function ID: 10458
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 5436, 7252, 7260, 1085, 1391, 584, 5629, 6842, 7251, 5631, 4749, 1254, 1294, 10468, 10469, 2]
+// Dependencies: [5, 5437, 7257, 7265, 1085, 1392, 584, 5630, 6849, 7256, 5632, 4751, 1255, 1295, 10458, 10459, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 10467 (GiftCodeActionCreators)
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4749 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7260 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10468 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10469 */;
+// Module 10457 (GiftCodeActionCreators)
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4751 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7265 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10458 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10459 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5436 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import ApplicationStore from "ApplicationStore" /* 5437 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7257 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let obj = function _resolveGiftCode() {
               product = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

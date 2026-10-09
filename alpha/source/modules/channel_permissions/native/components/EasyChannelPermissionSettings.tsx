@@ -1,32 +1,32 @@
-// Module ID: 17307
-// Function ID: 17308
+// Module ID: 17455
+// Function ID: 17456
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 17308, 2063, 2124, 2118, 2086, 4707, 4717, 1389, 7484, 1085, 21, 5090, 587, 558, 576, 1502, 11360, 504, 8579, 8580, 8581, 1126, 5417, 5297, 8596, 4712, 5373, 6882, 6267, 1200, 11220, 6184, 11358, 6209, 5105, 8505, 8752, 17309, 17311, 2]
+// Dependencies: [32, 5, 19, 17, 17456, 2064, 2124, 2118, 2086, 4709, 4719, 1390, 7489, 1085, 21, 5091, 587, 558, 576, 1503, 10733, 504, 8587, 8588, 8589, 1126, 5418, 5298, 8604, 4714, 5374, 6889, 6269, 1200, 10575, 6186, 10731, 6211, 5106, 8513, 8761, 17457, 17459, 2]
 
-// Module 17307 (EasyChannelPermissionSettings)
+// Module 17455 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5297 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7484 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8579 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8580 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8596 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11358 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7489 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8587 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8588 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8604 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10731 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17308 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17456 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildRoleStore from "GuildRoleStore" /* 2118 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[3] !== navigation) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "create" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     const items1 = [navigation];
@@ -122,7 +122,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "create" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     tmp13 = cResult[5];
@@ -131,13 +131,13 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (null != guild) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "create" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     if (null != guild) {
       class N {
         constructor() {
-          navigation.setOptions({ headerRight: "create" });
+          navigation.setOptions({ headerRight: "r" });
         }
       }
     }
@@ -146,14 +146,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "create" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     cResult[6] = tmp16;
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "create" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
   }
@@ -400,7 +400,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "create" });
+    navigation.setOptions({ headerRight: "r" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {
@@ -508,7 +508,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         hasIcons: true,
         children: memo.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return version(ChannelOverwritesItemDefault, obj, item.id);
+              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup3 = tmp2(tmp3[32]).TableRowGroup;
@@ -518,7 +518,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         hasIcons: true,
         children: existingMembersRows.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return version(ChannelOverwritesItemDefault, obj, item.id);
+              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup4 = tmp2(tmp3[32]).TableRowGroup;

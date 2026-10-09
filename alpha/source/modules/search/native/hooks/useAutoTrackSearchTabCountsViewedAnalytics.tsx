@@ -1,11 +1,11 @@
-// Module ID: 17210
-// Function ID: 17211
+// Module ID: 17360
+// Function ID: 17361
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 9247, 558, 576, 12074, 2]
+// Dependencies: [19, 9285, 558, 576, 12011, 2]
 
-// Module 17210 (useAutoTrackSearchTabCountsViewedAnalytics)
-import SearchConstants from "SearchConstants" /* 9247 */;
-import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+// Module 17360 (useAutoTrackSearchTabCountsViewedAnalytics)
+import SearchConstants from "SearchConstants" /* 9285 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12011 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoTrack
         const MEMBERS = SearchTabs.MEMBERS;
         const obj = { searchContext, searchResultTotalCount: reduced, numMemberTabReturnedResults: tmp4, numChannelTabReturnedResults: tmp5, numPeopleTabReturnedResults: tmp8, numMessageTabReturnedResults: tmp11, numMediaTabReturnedResults: tmp14, numFileTabReturnedResults: tmp17, numLinkTabReturnedResults: tmp20 };
         tmp4 = null;
-        const trackSearchResultReturned = tracking_TrackingDefault.trackSearchResultReturned;
+        const trackSearchResultReturned = search_tracking_TrackingDefault.trackSearchResultReturned;
         if (null != tmp) {
           let current = ref.current;
           let tmp3 = null;

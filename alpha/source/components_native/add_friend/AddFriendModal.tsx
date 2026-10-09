@@ -1,27 +1,27 @@
-// Module ID: 13904
-// Function ID: 13905
+// Module ID: 13997
+// Function ID: 13998
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1389, 1085, 12438, 21, 5090, 5902, 587, 558, 576, 12440, 1264, 1381, 5392, 1505, 5940, 4922, 1126, 8457, 7079, 13905, 6203, 5086, 13906, 13908, 1630, 6679, 2]
+// Dependencies: [32, 19, 17, 1390, 1085, 12356, 21, 5091, 5903, 587, 558, 576, 12358, 1265, 1382, 5393, 1506, 5941, 4923, 1126, 8465, 7082, 13998, 6205, 5087, 13999, 14001, 1631, 6686, 2]
 
-// Module 13904 (AddFriendModal)
+// Module 13997 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import NavigatorHeader from "NavigatorHeader" /* 6203 */;
-import Navigator from "Navigator" /* 6679 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12438 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12440 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import Navigator from "Navigator" /* 6686 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12356 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12358 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import TextStyles from "TextStyles" /* 5902 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import TextStyles from "TextStyles" /* 5903 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

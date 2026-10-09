@@ -1,10 +1,10 @@
-// Module ID: 14140
-// Function ID: 14141
+// Module ID: 14236
+// Function ID: 14237
 // Name: AGC2MobileExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1453, 2]
 
-// Module 14140 (AGC2MobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 14236 (AGC2MobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

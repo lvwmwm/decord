@@ -1,34 +1,24 @@
 // Module ID: 14490
 // Function ID: 14491
-// Dependencies: []
-// Exports: getReactNativeDimensionsWithDimensions
+// Dependencies: [14474, 14475, 14491]
 
 // Module 14490
+import _mod14474 from "module_14474" /* 14474 */;
+import _mod14475 from "module_14475" /* 14475 */;
+import _mod14491 from "module_14491" /* 14491 */;
 
-export const getReactNativeDimensionsWithDimensions = function getReactNativeDimensionsWithDimensions(value, value2) {
-  try {
-    let obj = {};
-    let obj2 = {};
-    if (value) {
-      const _Math = Math;
-      const _Math2 = Math;
-      ({ scale: obj3.screenScale, fontScale: obj3.screenFontScale } = value);
-      obj = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-      const obj5 = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-    }
-    const tmp3 = value2;
-    if (tmp3) {
-      const _Math3 = Math;
-      const _Math4 = Math;
-      ({ scale: obj4.windowScale, fontScale: obj4.windowFontScale } = value2);
-      obj2 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-      const obj9 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-    }
-    const obj10 = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(obj2);
-    return obj10;
-  } catch (err) {
-    return null;
-  }
-};
+const prop = _mod14474["__core-js_shared__"] || _mod14475("__core-js_shared__", {});
+let versions = prop.versions;
+if (!versions) {
+  const items = [];
+  prop.versions = items;
+  versions = items;
+}
+const push = versions.push;
+let str2 = "global";
+if (_mod14491) {
+  str2 = "pure";
+}
+push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
+
+export default prop;

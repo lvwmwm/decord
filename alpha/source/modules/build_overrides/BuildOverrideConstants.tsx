@@ -1,9 +1,9 @@
-// Module ID: 1379
-// Function ID: 1380
+// Module ID: 1380
+// Function ID: 1381
 // Name: BuildOverrideConstants
 // Dependencies: [2]
 
-// Module 1379 (BuildOverrideConstants)
+// Module 1380 (BuildOverrideConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/build_overrides/BuildOverrideConstants.tsx");

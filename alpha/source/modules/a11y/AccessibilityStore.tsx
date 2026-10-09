@@ -1,21 +1,21 @@
-// Module ID: 5079
-// Function ID: 5080
+// Module ID: 5080
+// Function ID: 5081
 // Name: AccessibilityStore
-// Dependencies: [109, 5080, 1206, 1205, 1243, 1085, 5083, 5084, 2040, 504, 510, 4929, 584, 2]
+// Dependencies: [109, 5081, 1206, 1205, 1244, 1085, 5084, 5085, 2041, 504, 510, 4930, 584, 2]
 
-// Module 5079 (AccessibilityStore)
+// Module 5080 (AccessibilityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage7 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import shared from "shared" /* 4929 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5084 */;
+import shared from "shared" /* 4930 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import GameModeStore from "GameModeStore" /* 5080 */;
+import GameModeStore from "GameModeStore" /* 5081 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import Constants from "Constants" /* 1085 */;
-import MessageConstants from "MessageConstants" /* 5083 */;
+import MessageConstants from "MessageConstants" /* 5084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -287,7 +287,7 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
       messageGroupSpacing = obj.messageGroupSpacing;
     } else {
       const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-      messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_12 : map1;
+      messageGroupSpacing = MessageDisplayCompact.getSetting() ? authStore2 : map1;
     }
     return messageGroupSpacing;
   },
@@ -296,14 +296,14 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
 Object.defineProperty(prototype, "isMessageGroupSpacingIncreased", {
   get: function isMessageGroupSpacingIncreased() {
     const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-    return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_12 : map1);
+    return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? authStore2 : map1);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingDecreased", {
   get: function isMessageGroupSpacingDecreased() {
     const MessageDisplayCompact = require("UserSettings").MessageDisplayCompact;
-    return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_12 : map1);
+    return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? authStore2 : map1);
   },
   set: undefined
 });

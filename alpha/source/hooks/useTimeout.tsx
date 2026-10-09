@@ -1,9 +1,9 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10084
+// Function ID: 10085
 // Name: useTimeout
 // Dependencies: [19, 558, 576, 2]
 
-// Module 10099 (useTimeout)
+// Module 10084 (useTimeout)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

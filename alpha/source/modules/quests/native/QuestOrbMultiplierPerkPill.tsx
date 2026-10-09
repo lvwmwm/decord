@@ -1,23 +1,23 @@
-// Module ID: 15244
-// Function ID: 15245
+// Module ID: 15357
+// Function ID: 15358
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1085, 21, 5090, 587, 558, 576, 4991, 4785, 4778, 4927, 10575, 9552, 15245, 1126, 9005, 5086, 5387, 6189, 2]
+// Dependencies: [19, 17, 1085, 21, 5091, 587, 558, 576, 4992, 4786, 4779, 4928, 9149, 9142, 15358, 1126, 9016, 5087, 5388, 6191, 2]
 
-// Module 15244 (QuestOrbMultiplierPerkPill)
+// Module 15357 (QuestOrbMultiplierPerkPill)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useToken from "useToken" /* 4778 */;
-import themes from "themes" /* 4785 */;
-import ColorUtils from "ColorUtils" /* 4927 */;
-import useTheme from "useTheme" /* 4991 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9552 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10575 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 15245 */;
+import useToken from "useToken" /* 4779 */;
+import themes from "themes" /* 4786 */;
+import ColorUtils from "ColorUtils" /* 4928 */;
+import useTheme from "useTheme" /* 4992 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9142 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9149 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 15358 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -335,7 +335,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMult
     let tmp19 = tmp21Result;
     const tmp17 = closure_7;
     if (!tmp13) {
-      tmp19 = closure_6(tmp2(9005).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = closure_6(tmp2(9016).NitroWheelIcon, { size: "xs", color: "white" });
     }
     const obj13 = { children: items2 };
     items2 = [tmp19, ];
@@ -360,10 +360,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMult
     const obj17 = { backgroundColor: tmp14 };
     items3[1] = obj17;
     const tmp16Result = closure_8(tmp17, obj13);
-    const PressableOpacity = tmp2(6189).PressableOpacity;
+    const PressableOpacity = tmp2(6191).PressableOpacity;
     if (!tmp13) {
       const obj18 = { style: tmp.fullGradient, colors: items, start, end };
-      tmp21Result = tmp21(tmp6(5387), obj18);
+      tmp21Result = tmp21(tmp6(5388), obj18);
     }
     items4 = [tmp21Result, ];
     const obj19 = { style: tmp.fullGradientContent, children: tmp16Result };

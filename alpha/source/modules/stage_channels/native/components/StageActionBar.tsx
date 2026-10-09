@@ -1,16 +1,16 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 11005
+// Function ID: 11006
 // Name: StageActionBar
-// Dependencies: [19, 17, 21, 5090, 558, 576, 5889, 10833, 10810, 10691, 10769, 5891, 10766, 10888, 2]
+// Dependencies: [19, 17, 21, 5091, 558, 576, 5890, 11006, 10980, 10837, 10939, 5892, 10936, 11061, 2]
 
-// Module 10832 (StageActionBar)
+// Module 11005 (StageActionBar)
 import react_native from "react-native" /* 17 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 10766 */;
-import ChannelCallActionBar from "ChannelCallActionBar" /* 10833 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 10888 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 10936 */;
+import ChannelCallActionBar from "ChannelCallActionBar" /* 11006 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 11061 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(61);
   channel = channel.channel;
   let tmp4 = closure_8();
-  let obj2 = channel(5889);
+  let obj2 = channel(5890);
   const canModerateRequestToSpeak = obj2.useCanModerateRequestToSpeak(channel.id);
   if (cResult[0] !== channel) {
     const obj3 = { channel };
@@ -43,15 +43,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     tmp6 = cResult[1];
   }
-  const tmpResult = tmp(10833);
+  const tmpResult = tmp(11006);
   const actionBarPrimaryButton = tmpResult.useActionBarPrimaryButton(tmp6);
-  const tmpResult5 = tmp(10810);
+  const tmpResult5 = tmp(10980);
   const getActionBarHeight = tmpResult5.useGetActionBarHeight(channel.id);
-  const tmp9 = actionBarPrimaryButton(10691)(channel.id);
-  const tmpResult6 = tmp(10769);
+  const tmp9 = actionBarPrimaryButton(10837)(channel.id);
+  const tmpResult6 = tmp(10939);
   const tmp10 = tmpResult6.useShowStageMusicMuteButton(channel.id) && !tmp9;
   if (cResult[2] !== channel.guild_id) {
-    const tmpResult7 = tmp(5891);
+    const tmpResult7 = tmp(5892);
     const isStageVideoEnabledResult = tmpResult7.isStageVideoEnabled(channel.guild_id);
     cResult[2] = channel.guild_id;
     cResult[3] = isStageVideoEnabledResult;
@@ -125,14 +125,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   tmp46 = tmp13Result;
                 }
                 const obj5 = { channel, isSmallSize: tmp11 };
-                const tmp45 = closure_5(tmp(10766).ChatButton, obj5);
+                const tmp45 = closure_5(tmp(10936).ChatButton, obj5);
                 cResult[18] = channel;
                 cResult[19] = tmp11;
                 cResult[20] = tmp45;
                 tmp43 = tmp45;
               }
             }
-            const tmpResult8 = tmp(10766);
+            const tmpResult8 = tmp(10936);
             const obj6 = { channel, isSmallSize: tmp11 };
             const tmp40Result = closure_5(canModerateRequestToSpeak ? tmpResult8.RequestToSpeakListButton : tmpResult8.MoveToAudienceButton, obj6);
             cResult[14] = channel;
@@ -142,7 +142,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp39 = tmp40Result;
           }
           const obj7 = { channel, isSmallSize: tmp11 };
-          const tmp38 = closure_5(tmp(10888).ChannelCallMicButton, obj7);
+          const tmp38 = closure_5(tmp(11061).ChannelCallMicButton, obj7);
           cResult[11] = channel;
           cResult[12] = tmp11;
           cResult[13] = tmp38;
@@ -152,7 +152,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       let tmp34 = tmp11;
       if (tmp34) {
         const obj8 = { channel, isSmallSize: tmp11 };
-        tmp34 = closure_5(tmp(10833).VideoButton, obj8);
+        tmp34 = closure_5(tmp(11006).VideoButton, obj8);
       }
       cResult[7] = channel;
       cResult[8] = tmp11;
@@ -216,7 +216,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   tmp27 = tmp13Result2;
                 }
                 const obj10 = { channel, isSmallSize: tmp10 && canModerateRequestToSpeak };
-                const tmp26 = closure_5(tmp(10766).ChatButton, obj10);
+                const tmp26 = closure_5(tmp(10936).ChatButton, obj10);
                 cResult[41] = channel;
                 cResult[42] = tmp10 && canModerateRequestToSpeak;
                 cResult[43] = tmp26;
@@ -226,7 +226,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             let tmp22 = canModerateRequestToSpeak;
             if (tmp22) {
               const obj11 = { channel, isSmallSize: tmp10 && canModerateRequestToSpeak };
-              tmp22 = closure_5(tmp(10766).RequestToSpeakListButton, obj11);
+              tmp22 = closure_5(tmp(10936).RequestToSpeakListButton, obj11);
             }
             cResult[37] = channel;
             cResult[38] = canModerateRequestToSpeak;
@@ -235,7 +235,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp21 = tmp22;
           }
           const obj12 = { channel, isSmallSize: tmp10 && canModerateRequestToSpeak };
-          const tmp20 = closure_5(tmp(10766).RequestToSpeakButton, obj12);
+          const tmp20 = closure_5(tmp(10936).RequestToSpeakButton, obj12);
           cResult[34] = channel;
           cResult[35] = tmp10 && canModerateRequestToSpeak;
           cResult[36] = tmp20;
@@ -245,7 +245,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       let tmp16 = tmp10;
       if (tmp16) {
         const obj13 = { channel, isSmallSize: tmp10 && canModerateRequestToSpeak };
-        tmp16 = closure_5(tmp(10766).MusicMuteButton, obj13);
+        tmp16 = closure_5(tmp(10936).MusicMuteButton, obj13);
       }
       cResult[30] = channel;
       cResult[31] = tmp10 && canModerateRequestToSpeak;
@@ -291,12 +291,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmp = actionBarPrimaryButton;
     if (actionBarPrimaryButton === ChannelCallActionBar.ActionBarPrimaryButton.END_STREAM) {
       const obj2 = { channel, isSmallSize };
-      tmp4 = hasOwnProperty(tmp2(10833).DisconnectStreamButton, obj2);
+      tmp4 = hasOwnProperty(tmp2(11006).DisconnectStreamButton, obj2);
     } else {
       tmp4 = null;
       if (tmp === ChannelCallActionBar.ActionBarPrimaryButton.END_CALL) {
         const obj = { channel, isSmallSize };
-        tmp4 = hasOwnProperty(tmp2(10766).DisconnectStageButton, obj);
+        tmp4 = hasOwnProperty(tmp2(10936).DisconnectStageButton, obj);
       }
     }
     return tmp4;
@@ -334,12 +334,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmp = actionBarPrimaryButton;
     if (actionBarPrimaryButton === ChannelCallActionBar.ActionBarPrimaryButton.END_STREAM) {
       const obj2 = { channel, isSmallSize };
-      tmp4 = hasOwnProperty(tmp2(10833).DisconnectStreamButton, obj2);
+      tmp4 = hasOwnProperty(tmp2(11006).DisconnectStreamButton, obj2);
     } else {
       tmp4 = null;
       if (tmp === ChannelCallActionBar.ActionBarPrimaryButton.END_CALL) {
         const obj = { channel, isSmallSize };
-        tmp4 = hasOwnProperty(tmp2(10766).DisconnectStageButton, obj);
+        tmp4 = hasOwnProperty(tmp2(10936).DisconnectStageButton, obj);
       }
     }
     return tmp4;

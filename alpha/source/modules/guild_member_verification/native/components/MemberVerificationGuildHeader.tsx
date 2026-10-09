@@ -1,16 +1,16 @@
-// Module ID: 6159
-// Function ID: 6160
+// Module ID: 6161
+// Function ID: 6162
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 6154, 21, 5090, 587, 1414, 6160, 558, 576, 1630, 4810, 5387, 6161, 6167, 1126, 5086, 2]
+// Dependencies: [19, 17, 6156, 21, 5091, 587, 1415, 6162, 558, 576, 1631, 4811, 6163, 5388, 6165, 6169, 1126, 5087, 2]
 
-// Module 6159 (MemberVerificationGuildHeader)
+// Module 6161 (MemberVerificationGuildHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4810 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6154 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6156 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -173,7 +173,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
     }
     if (cResult[8] !== tmp4.linearGradient) {
       let obj5 = { start: tmp16, end: tmp17, style: tmp4.linearGradient, colors: tmp18 };
-      const tmp21 = closure_6(tmp5(top[12]), obj5);
+      const tmp21 = closure_6(tmp5(top[13]), obj5);
       cResult[8] = tmp4.linearGradient;
       cResult[9] = tmp21;
       tmp19 = tmp21;
@@ -221,9 +221,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
                       }
                       if (cResult[33] !== hasManualFormFields) {
                         let stringResult;
-                        const intl2 = tmp(tmp2[15]).intl;
+                        const intl2 = tmp(tmp2[16]).intl;
                         const string = intl2.string;
-                        const t2 = tmp(tmp2[15]).t;
+                        const t2 = tmp(tmp2[16]).t;
                         if (hasManualFormFields) {
                           stringResult = string(t2["3smSPP"]);
                         } else {
@@ -278,22 +278,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
                         tmp46 = tmp49;
                       }
                       const obj8 = { style: tmp4.headerDescription, variant: "text-sm/medium", color: "text-default", children: tmp41 };
-                      const tmp45 = closure_6(scrollTop(top[16]).Text, obj8);
+                      const tmp45 = closure_6(scrollTop(top[17]).Text, obj8);
                       cResult[35] = tmp4.headerDescription;
                       cResult[36] = tmp41;
                       cResult[37] = tmp45;
                       tmp43 = tmp45;
                     }
                     const obj9 = { style: tmp4.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp36 };
-                    const tmp40 = closure_6(scrollTop(top[16]).Heading, obj9);
+                    const tmp40 = closure_6(scrollTop(top[17]).Heading, obj9);
                     cResult[30] = tmp4.headerTitle;
                     cResult[31] = tmp36;
                     cResult[32] = tmp40;
                     tmp38 = tmp40;
                   }
-                  const intl = tmp(tmp2[15]).intl;
+                  const intl = tmp(tmp2[16]).intl;
                   const format = intl.format;
-                  const t = tmp(tmp2[15]).t;
+                  const t = tmp(tmp2[16]).t;
                   if (hasManualFormFields) {
                     const obj10 = { guildName: guild.name };
                     formatResult = format(t.cgX47Z, obj10);
@@ -317,14 +317,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
               tmp33 = tmp35;
             }
             const obj13 = { style: tmp4.featureIcon, guild, disableColor: true };
-            const tmp32 = closure_6(tmp5(top[14]), obj13);
+            const tmp32 = closure_6(tmp5(top[15]), obj13);
             cResult[20] = guild;
             cResult[21] = tmp4.featureIcon;
             cResult[22] = tmp32;
             tmp30 = tmp32;
           }
-          const obj14 = { style: tmp4.avatar, guild, size: scrollTop(top[13]).GuildIconSizes.XLARGE, animate: true };
-          const tmp5Result = tmp5(top[13]);
+          const obj14 = { style: tmp4.avatar, guild, size: scrollTop(top[14]).GuildIconSizes.XLARGE, animate: true };
+          const tmp5Result = tmp5(top[14]);
           const tmp29 = closure_6(tmp5Result, obj14);
           cResult[17] = guild;
           cResult[18] = tmp4.avatar;
@@ -347,7 +347,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
     cResult[13] = tmp24;
     tmp22 = tmp24;
   }
-  const tmp14 = closure_6(tmp5(top[11]).Image, { style: tmp12, resizeMode: "cover", source: guildBannerSource });
+  const tmp14 = closure_6(tmp5(top[12]), { style: tmp12, resizeMode: "cover", source: guildBannerSource });
   cResult[2] = guildBannerSource;
   cResult[3] = tmp12;
   cResult[4] = tmp14;
@@ -458,25 +458,25 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
   View = tmp5(tmp3[11]).View;
   items = [, ];
   const obj9 = { style: { width: "100%", height: tmp8 }, resizeMode: "cover", source: guildBannerSource };
-  items[0] = closure_6(tmp5(tmp3[11]).Image, obj9);
+  items[0] = closure_6(tmp5(tmp3[12]), obj9);
   const obj10 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.linearGradient, colors: ["rgba(0,0,0,0.7)", "transparent"] };
-  items[1] = closure_6(tmp5(tmp3[12]), obj10);
+  items[1] = closure_6(tmp5(tmp3[13]), obj10);
   items1 = [closure_7(View, obj8), ];
   const obj12 = { style: items2, children: items3 };
   items2 = [tmp.avatarContainer, animatedStyle1];
   const obj11 = { style: tmp.headerContent, children: items4 };
   const View2 = tmp5(tmp3[11]).View;
-  const obj13 = { style: tmp.avatar, guild, size: scrollTop(tmp3[13]).GuildIconSizes.XLARGE, animate: true };
-  const tmp5Result = tmp5(tmp3[13]);
+  const obj13 = { style: tmp.avatar, guild, size: scrollTop(tmp3[14]).GuildIconSizes.XLARGE, animate: true };
+  const tmp5Result = tmp5(tmp3[14]);
   items3 = [closure_6(tmp5Result, obj13), ];
   const obj14 = { style: tmp.featureIcon, guild, disableColor: true };
-  items3[1] = closure_6(tmp5(tmp3[14]), obj14);
+  items3[1] = closure_6(tmp5(tmp3[15]), obj14);
   items4 = [closure_7(View2, obj12), , ];
   const obj15 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: formatResult };
-  const Heading = scrollTop(tmp3[16]).Heading;
-  const intl = scrollTop(tmp3[15]).intl;
+  const Heading = scrollTop(tmp3[17]).Heading;
+  const intl = scrollTop(tmp3[16]).intl;
   const format = intl.format;
-  const t = scrollTop(tmp3[15]).t;
+  const t = scrollTop(tmp3[16]).t;
   if (hasManualFormFields) {
     const obj16 = { guildName: guild.name };
     formatResult = format(t.cgX47Z, obj16);
@@ -486,10 +486,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
   }
   items4[1] = closure_6(Heading, obj15);
   const obj18 = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  const Text = tmp9(tmp3[16]).Text;
-  const intl2 = tmp9(tmp3[15]).intl;
+  const Text = tmp9(tmp3[17]).Text;
+  const intl2 = tmp9(tmp3[16]).intl;
   const string = intl2.string;
-  const t2 = tmp9(tmp3[15]).t;
+  const t2 = tmp9(tmp3[16]).t;
   if (hasManualFormFields) {
     stringResult = string(t2["3smSPP"]);
   } else {

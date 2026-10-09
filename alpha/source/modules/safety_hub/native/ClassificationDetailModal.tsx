@@ -1,15 +1,15 @@
-// Module ID: 11495
-// Function ID: 11496
+// Module ID: 11424
+// Function ID: 11425
 // Name: ClassificationDetailModal
-// Dependencies: [19, 21, 5090, 587, 5940, 6203, 11496, 11532, 558, 576, 11533, 11498, 1503, 1126, 6679, 2]
+// Dependencies: [19, 21, 5091, 587, 5941, 6205, 11425, 11461, 558, 576, 11462, 11427, 1504, 1126, 6686, 2]
 
-// Module 11495 (ClassificationDetailModal)
+// Module 11424 (ClassificationDetailModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorHeader from "NavigatorHeader" /* 6203 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11498 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11427 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
   const cResult = obj.c(11);
   ({ classificationId, source, shouldRedirectToAccountStanding } = arg0);
   const tmp5 = closure_7();
-  const tmpResult = tmp(11533);
+  const tmpResult = tmp(11462);
   safetyHubInitialized = tmpResult.useSafetyHubInitialized();
   if (cResult[0] !== safetyHubInitialized) {
     const fn = function l() {
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
     tmp8 = cResult[2];
   }
   const effect = react.useEffect(tmp7, tmp8);
-  const tmpResult3 = tmp(1503);
+  const tmpResult3 = tmp(1504);
   const isFocused = tmpResult3.useIsFocused();
   if (cResult[3] === classificationId) {
     if (cResult[4] === (undefined !== shouldRedirectToAccountStanding && shouldRedirectToAccountStanding)) {
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
           tmp13 = cResult[8];
         }
         if (cResult[9] !== tmp11) {
-          const tmp18 = jsx(tmp(6679).Navigator, { screens: tmp11, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: tmp13 });
+          const tmp18 = jsx(tmp(6686).Navigator, { screens: tmp11, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: tmp13 });
           cResult[9] = tmp11;
           cResult[10] = tmp18;
           tmp15 = tmp18;
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
   cResult[6] = tmp5;
   cResult[7] = obj3;
   tmp11 = obj3;
-  tmpResult4 = tmp(6203);
+  tmpResult4 = tmp(6205);
 }) : (function ClassificationDetailModal(classificationId) {
   let headerStyle;
   classificationId = classificationId.classificationId;
@@ -142,7 +142,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
   }
   let tmp = closure_7();
   dependencyMap = tmp;
-  let obj = classificationId(11533);
+  let obj = classificationId(11462);
   const safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -152,7 +152,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
       const safetyHubData = obj.getSafetyHubData();
     }
   }, items);
-  let obj2 = classificationId(1503);
+  let obj2 = classificationId(1504);
   const isFocused = obj2.useIsFocused();
   const items1 = [classificationId, flag, tmp, source];
   const memo = safetyHubInitialized.useMemo(() => {
@@ -197,7 +197,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  const Navigator = classificationId(6679).Navigator;
+  const Navigator = classificationId(6686).Navigator;
   const intl = classificationId(1126).intl;
   return <Navigator screens={memo} initialRouteName={constants.CLASSIFICATION_DETAIL} headerBackTitle={intl.string(classificationId(1126).t["13/7kX"])} />;
 });

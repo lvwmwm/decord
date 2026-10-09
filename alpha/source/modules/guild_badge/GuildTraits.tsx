@@ -1,10 +1,10 @@
-// Module ID: 8839
-// Function ID: 8840
+// Module ID: 8848
+// Function ID: 8849
 // Name: GuildTraits
 // Dependencies: [1085, 2078, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 8839 (GuildTraits)
+// Module 8848 (GuildTraits)
 import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

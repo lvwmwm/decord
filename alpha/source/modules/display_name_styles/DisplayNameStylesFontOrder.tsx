@@ -1,12 +1,12 @@
-// Module ID: 15434
-// Function ID: 15435
+// Module ID: 15547
+// Function ID: 15548
 // Name: DisplayNameStylesFontOrder
-// Dependencies: [19, 1407, 1409, 558, 14685, 2]
+// Dependencies: [19, 1408, 1410, 558, 14791, 2]
 
-// Module 15434 (DisplayNameStylesFontOrder)
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
-import DisplayNameFont from "DisplayNameFont" /* 1409 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 14685 */;
+// Module 15547 (DisplayNameStylesFontOrder)
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
+import DisplayNameFont from "DisplayNameFont" /* 1410 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 14791 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisible
   return obj.useIsDisplayNameStylesFlywheelSettersEnabled("font-order") ? items1 : items;
 }) : (function useVisibleFontOrder() {
   let isDisplayNameStylesFlywheelSettersEnabled;
-  const obj = isDisplayNameStylesFlywheelSettersEnabled(14685);
+  const obj = isDisplayNameStylesFlywheelSettersEnabled(14791);
   isDisplayNameStylesFlywheelSettersEnabled = obj.useIsDisplayNameStylesFlywheelSettersEnabled("font-order");
   items = [isDisplayNameStylesFlywheelSettersEnabled];
   return react.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? items1 : items, items);

@@ -1,14 +1,14 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10821
+// Function ID: 10822
 // Name: ChannelCallLifecycleStore
-// Dependencies: [2115, 10334, 8426, 1354, 504, 584, 2]
+// Dependencies: [2115, 10321, 8434, 1355, 504, 584, 2]
 
-// Module 10675 (ChannelCallLifecycleStore)
+// Module 10821 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import _modDef1354 from "module_1354" /* 1354 */;
-import DeviceOrientation from "DeviceOrientation" /* 8426 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10334 */;
+import _modDef1355 from "module_1355" /* 1355 */;
+import DeviceOrientation from "DeviceOrientation" /* 8434 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10321 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,9 +20,9 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
+let size = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
+const size1 = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;
 const Store = get_initializedDefault.Store;

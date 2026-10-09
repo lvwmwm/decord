@@ -1,14 +1,14 @@
-// Module ID: 15496
-// Function ID: 15497
+// Module ID: 15609
+// Function ID: 15610
 // Name: EmojiWoozyFaceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15497, 4777, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15610, 4778, 2]
 
-// Module 15496 (EmojiWoozyFaceIcon)
+// Module 15609 (EmojiWoozyFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4777 */;
-import AssetRegistry from "AssetRegistry" /* 15497 */;
+import BaseIconImage2 from "BaseIconImage" /* 4778 */;
+import AssetRegistry from "AssetRegistry" /* 15610 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiWoozy
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4777).BaseIconImage;
+  const BaseIconImage = tmp(4778).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

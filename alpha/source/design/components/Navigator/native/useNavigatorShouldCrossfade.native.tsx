@@ -1,17 +1,17 @@
-// Module ID: 6680
-// Function ID: 6681
+// Module ID: 6687
+// Function ID: 6688
 // Name: useNavigatorShouldCrossfade
-// Dependencies: [19, 1381, 558, 576, 4794, 2]
+// Dependencies: [19, 1382, 558, 576, 4795, 2]
 
-// Module 6680 (useNavigatorShouldCrossfade)
+// Module 6687 (useNavigatorShouldCrossfade)
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4794 */;
+import react3 from "react" /* 4795 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PlatformUtils = tmp(1381);
+const PlatformUtils = tmp(1382);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigatorShouldCrossfade() {
   const obj = react2;
   const cResult = obj.c(3);

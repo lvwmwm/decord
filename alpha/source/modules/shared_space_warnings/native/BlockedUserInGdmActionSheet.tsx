@@ -1,40 +1,38 @@
-// Module ID: 17956
-// Function ID: 17957
+// Module ID: 18116
+// Function ID: 18117
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2063, 1389, 13859, 1085, 21, 5090, 587, 5086, 5405, 1126, 558, 576, 504, 1387, 1200, 11431, 10261, 4992, 5012, 1264, 5054, 17957, 7001, 6885, 10380, 6267, 6184, 5375, 2]
+// Dependencies: [19, 17, 2064, 1390, 13952, 1085, 21, 5091, 587, 5087, 5406, 1126, 558, 576, 504, 1388, 1200, 11338, 10246, 4993, 5013, 1265, 5055, 18117, 7008, 6892, 6163, 10367, 6269, 6186, 5376, 2]
 
-// Module 17956 (BlockedUserInGdmActionSheet)
+// Module 18116 (BlockedUserInGdmActionSheet)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4992 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5012 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import TableRow2 from "TableRow" /* 6184 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7001 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 17957 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4993 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import TableRow2 from "TableRow" /* 6186 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7008 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18117 */;
 import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import UserStore from "UserStore" /* 1389 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13859 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import UserStore from "UserStore" /* 1390 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13952 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
-let c9;
+let c10;
 let closure_12;
-let closure_4;
-let hasOwnProperty;
-let map1;
 let metroImportAll;
+let metroImportDefault;
 let obj2;
 let obj3;
 let unpackModuleId;
@@ -42,6 +40,7 @@ function getUserCalloutRowText(arg0) {
   let calledOutUserIds;
   let closure_2;
   let formatResult;
+  let require;
   let totalUsers;
   let user;
   ({ calledOutUserIds, totalUsers, guildId: require, channelId: importDefault } = arg0);
@@ -53,19 +52,19 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         },
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         },
       numberOfOtherUsers: totalUsers - calledOutUserIds.length
     };
@@ -76,19 +75,19 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         },
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         }
     };
     formatResult = intl3.format(intl7.t["67ZE+9"], obj3);
@@ -98,19 +97,19 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         },
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         }
     };
     formatResult = intl2.format(intl7.t.veV4IN, obj4);
@@ -121,10 +120,10 @@ function getUserCalloutRowText(arg0) {
       usernameHook() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         }
     };
     formatResult = intl.format(intl7.t["4WHCtq"], obj);
@@ -148,11 +147,11 @@ function getBlockedUserInGDMTableRows(arg0) {
   let tmp28;
   ({ channelId, blockedUserIds, ignoredUserIds } = arg0);
   const channel = ChannelStore.getChannel(channelId);
-  const obj = { icon: unpackModuleId(CircleCheckIcon.CircleCheckIcon, {}), label: intl.string(intl7.t.RIMw54) };
+  const obj = { icon: authStore(CircleCheckIcon.CircleCheckIcon, {}), label: intl.string(intl7.t.RIMw54) };
   const tmp4 = ignoredUserIds.length > 0;
   intl = intl7.intl;
   const items = [obj, ];
-  const obj2 = { icon: unpackModuleId(CircleInformationIcon.CircleInformationIcon, {}), label: intl2.string(intl7.t.bejNWN) };
+  const obj2 = { icon: authStore(CircleInformationIcon.CircleInformationIcon, {}), label: intl2.string(intl7.t.bejNWN) };
   intl2 = intl7.intl;
   items[1] = obj2;
   if (blockedUserIds.length > 0) {
@@ -163,11 +162,11 @@ function getBlockedUserInGDMTableRows(arg0) {
       const obj3 = { userIds: substr, guildId: guild_id };
       guild_id = undefined;
       const unshift2 = items.unshift;
-      const tmp25 = closure_16;
+      const tmp25 = closure_15;
       if (channel != null) {
         guild_id = channel.guild_id;
       }
-      const obj4 = { icon: unpackModuleId(tmp25, obj3), label: tmp28(obj5) };
+      const obj4 = { icon: authStore(tmp25, obj3), label: tmp28(obj5) };
       obj5 = { calledOutUserIds: substr, totalUsers: items1.length, channelId, guildId: guild_id1 };
       guild_id1 = undefined;
       tmp28 = getUserCalloutRowText;
@@ -190,11 +189,11 @@ function getBlockedUserInGDMTableRows(arg0) {
   guild_id2 = undefined;
   const unshift = items.unshift;
   const tmp13 = blockedUserIds.length > 0 ? blockedUserIds.length : ignoredUserIds.length;
-  const tmp14 = closure_16;
+  const tmp14 = closure_15;
   if (channel != null) {
     guild_id2 = channel.guild_id;
   }
-  const obj7 = { icon: unpackModuleId(tmp14, obj6), label: tmp16(obj8) };
+  const obj7 = { icon: authStore(tmp14, obj6), label: tmp16(obj8) };
   obj8 = { calledOutUserIds: substr1, totalUsers: tmp13, channelId, guildId: guild_id3 };
   guild_id3 = undefined;
   tmp16 = getUserCalloutRowText;
@@ -204,18 +203,18 @@ function getBlockedUserInGDMTableRows(arg0) {
   unshift(obj7);
 }
 let react = react_mod;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
-({ BlockWarningEngagements: metroImportAll, GdmWarningMedium: c9 } = SharedSpaceWarningConstants);
+const View = react_native.View;
+({ BlockWarningEngagements: metroImportDefault, GdmWarningMedium: metroImportAll } = SharedSpaceWarningConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
-({ jsx: unpackModuleId, Fragment: closure_12, jsxs: map1 } = Fragment);
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: obj3, buttons: { gap: 8 }, icon: { display: "flex", justifyContent: "center", alignItems: "center", minWidth: 32 } };
 obj2 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: nativeDefault.space.PX_24 };
-let closure_14 = createStyles(obj);
+let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCalloutAvatars(userIds) {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCalloutAvatars(userIds) {
   let first;
   let tmp6;
   let tmp7;
@@ -249,7 +248,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
   const tmpResult = userIds(504);
   const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp6, tmp7);
   if (cResult[4] !== stateFromStoresArray) {
-    const found = stateFromStoresArray.filter(tmp(1387).isNotNullish);
+    const found = stateFromStoresArray.filter(tmp(1388).isNotNullish);
     cResult[4] = stateFromStoresArray;
     cResult[5] = found;
     tmp8 = found;
@@ -279,9 +278,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     if (null != tmp13) {
       const obj2 = { user: tmp8[0], guildId, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
       const Avatar = tmp(1200).Avatar;
-      tmp19 = closure_11(Avatar, obj2);
+      tmp19 = closure_10(Avatar, obj2);
     } else {
-      tmp19 = closure_11(tmp(11431).UserIcon, {});
+      tmp19 = closure_10(tmp(11338).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp13;
@@ -292,8 +291,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     let tmp10;
     if (cResult[12] !== tmp8) {
       const obj3 = { users: tmp8, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10261).FacepileGroupDMAvatar;
-      const tmp12 = closure_11(FacepileGroupDMAvatar, obj3);
+      const FacepileGroupDMAvatar = tmp(10246).FacepileGroupDMAvatar;
+      const tmp12 = closure_10(FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp8;
       cResult[13] = tmp12;
       tmp10 = tmp12;
@@ -313,27 +312,27 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     let user;
     return userIds.map((item) => user.getUser(item));
   }, items1);
-  const found = stateFromStoresArray.filter(userIds(1387).isNotNullish);
+  const found = stateFromStoresArray.filter(userIds(1388).isNotNullish);
   const obj2 = UserStore;
   if (1 === userIds.length) {
     let tmp8;
     if (null != obj2.getUser(userIds[0])) {
       const obj3 = { user: found[0], guildId, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
       const Avatar = tmp(1200).Avatar;
-      tmp8 = closure_11(Avatar, obj3);
+      tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_11(tmp(11431).UserIcon, {});
+      tmp8 = closure_10(tmp(11338).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10261).FacepileGroupDMAvatar;
-    tmp5 = closure_11(FacepileGroupDMAvatar, obj4);
+    const FacepileGroupDMAvatar = tmp(10246).FacepileGroupDMAvatar;
+    tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInGDMDescription(arg0) {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInGDMDescription(arg0) {
   let items;
   let items1;
   let items2;
@@ -362,7 +361,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
         items = [first, "\n", ];
         const intl6 = tmp(1126).intl;
         items[2] = intl6.string(intl7.t["Bp2/ni"]);
-        const tmp31 = map1(closure_12, obj2);
+        const tmp31 = authStore2(unpackModuleId, obj2);
         cResult[1] = tmp31;
         tmp28 = tmp31;
       } else {
@@ -398,7 +397,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
     if (cResult[5] !== tmp16) {
       const obj4 = { children: items1 };
       items1 = [tmp16, "\n", tmp19];
-      const tmp24 = map1(closure_12, obj4);
+      const tmp24 = authStore2(unpackModuleId, obj4);
       cResult[5] = tmp16;
       cResult[6] = tmp24;
       tmp21 = tmp24;
@@ -434,7 +433,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
       if (cResult[10] !== tmp7) {
         const obj6 = { children: items2 };
         items2 = [tmp7, "\n", tmp10];
-        const tmp15 = map1(closure_12, obj6);
+        const tmp15 = authStore2(unpackModuleId, obj6);
         cResult[10] = tmp7;
         cResult[11] = tmp15;
         tmp12 = tmp15;
@@ -459,7 +458,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
       items = [intl5.string(intl7.t.xbRNI3), "\n", ];
       const intl6 = intl7.intl;
       items[2] = intl6.string(intl7.t["Bp2/ni"]);
-      tmp3 = map1(closure_12, obj2);
+      tmp3 = authStore2(unpackModuleId, obj2);
     }
     return tmp3;
   }
@@ -470,7 +469,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
     items1 = [intl3.format(intl7.t.iKtixW, obj4), "\n", ];
     const intl4 = intl7.intl;
     items1[2] = intl4.string(intl7.t.SN1hrl);
-    tmp3 = map1(closure_12, obj3);
+    tmp3 = authStore2(unpackModuleId, obj3);
   } else {
     tmp3 = null;
     if (numOfIgnoredUsers > 0) {
@@ -480,12 +479,12 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
       items2 = [intl.format(intl7.t["6IRwua"], obj5), "\n", ];
       const intl2 = intl7.intl;
       items2[2] = intl2.string(intl7.t["6AKLRt"]);
-      tmp3 = map1(closure_12, obj);
+      tmp3 = authStore2(unpackModuleId, obj);
     }
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInGdmActionSheet(channelId) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInGdmActionSheet(channelId) {
   let icon;
   let ignoredUserIds;
   let items;
@@ -496,7 +495,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   channelId = channelId.channelId;
   const blockedUserIds = channelId.blockedUserIds;
   ignoredUserIds = channelId.ignoredUserIds;
-  const tmp4 = closure_14();
+  const tmp4 = closure_13();
   react = tmp4;
   if (cResult[0] === blockedUserIds) {
     if (cResult[1] === channelId) {
@@ -582,7 +581,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                                       }
                                       if (cResult[58] !== tmp10) {
                                         let obj2 = { size: "lg", onPress: tmp10, text: tmp52 };
-                                        const tmp56 = closure_11(channelId(ignoredUserIds[29]).Button, obj2);
+                                        const tmp56 = closure_10(channelId(ignoredUserIds[30]).Button, obj2);
                                         cResult[58] = tmp10;
                                         cResult[59] = tmp56;
                                         tmp54 = tmp56;
@@ -600,7 +599,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                                       }
                                       if (cResult[61] !== tmp9) {
                                         let obj3 = { size: "lg", variant: "secondary", onPress: tmp9, text: tmp57 };
-                                        const tmp61 = closure_11(channelId(ignoredUserIds[29]).Button, obj3);
+                                        const tmp61 = closure_10(channelId(ignoredUserIds[30]).Button, obj3);
                                         cResult[61] = tmp9;
                                         cResult[62] = tmp61;
                                         tmp59 = tmp61;
@@ -632,7 +631,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                                                       }
                                                     }
                                                     let obj4 = { startExpanded: flag, children: tmp66 };
-                                                    const tmp71 = closure_11(tmp14, obj4);
+                                                    const tmp71 = closure_10(tmp14, obj4);
                                                     cResult[74] = tmp14;
                                                     cResult[75] = flag;
                                                     cResult[76] = tmp66;
@@ -645,7 +644,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                                           }
                                           let obj5 = { style: tmp18, children: items };
                                           items = [tmp19, tmp15, tmp48, tmp62];
-                                          const tmp68 = closure_13(tmp13, obj5);
+                                          const tmp68 = closure_12(tmp13, obj5);
                                           cResult[67] = tmp13;
                                           cResult[68] = tmp15;
                                           cResult[69] = tmp48;
@@ -658,7 +657,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                                       }
                                       const obj6 = { style: buttons, children: items1 };
                                       items1 = [tmp54, tmp59];
-                                      const tmp65 = closure_13(closure_5, obj6);
+                                      const tmp65 = closure_12(View, obj6);
                                       cResult[63] = tmp4.buttons;
                                       cResult[64] = tmp54;
                                       cResult[65] = tmp59;
@@ -667,7 +666,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                                     }
                                   }
                                   const obj7 = { style: tmp17, children: tmp45 };
-                                  const tmp50 = closure_11(tmp12, obj7);
+                                  const tmp50 = closure_10(tmp12, obj7);
                                   cResult[53] = tmp12;
                                   cResult[54] = tmp45;
                                   cResult[55] = tmp17;
@@ -676,7 +675,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                                 }
                               }
                               const obj8 = { hasIcons: flag2, children: tmp16 };
-                              const tmp47 = closure_11(tmp11, obj8);
+                              const tmp47 = closure_10(tmp11, obj8);
                               cResult[49] = tmp11;
                               cResult[50] = flag2;
                               cResult[51] = tmp16;
@@ -695,8 +694,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
               const ActionSheet = tmp(tmp2[25]).ActionSheet;
               const container = tmp4.container;
               if (cResult[33] !== tmp4.headerImage) {
-                const obj10 = { source: blockedUserIds(ignoredUserIds[26]), style: tmp4.headerImage };
-                const tmp26 = closure_11(closure_4, obj10);
+                const obj10 = { source: blockedUserIds(ignoredUserIds[27]), style: tmp4.headerImage };
+                const tmp25 = blockedUserIds(ignoredUserIds[26]);
+                const tmp26 = closure_10(tmp25, obj10);
                 cResult[33] = tmp4.headerImage;
                 cResult[34] = tmp26;
                 tmp22 = tmp26;
@@ -715,7 +715,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
               }
               if (cResult[36] !== tmp4.title) {
                 const obj11 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: title, children: tmp28 };
-                const tmp32 = closure_11(channelId(ignoredUserIds[9]).Text, obj11);
+                const tmp32 = closure_10(channelId(ignoredUserIds[9]).Text, obj11);
                 cResult[36] = tmp4.title;
                 cResult[37] = tmp32;
                 tmp30 = tmp32;
@@ -739,22 +739,34 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                       tmp40 = cResult[46];
                     }
                     const tableGroup = tmp4.tableGroup;
-                    const TableRowGroup = tmp(tmp2[27]).TableRowGroup;
+                    const TableRowGroup = tmp(tmp2[28]).TableRowGroup;
                     if (cResult[47] !== tmp4.icon) {
-                      const fn2 = function j(arg0, arg1) {
-                        let label;
-                        let obj2;
-                        ({ icon, label } = arg0);
-                        const obj = { icon: unpackModuleId(hasOwnProperty, obj2), label };
-                        obj2 = { style: icon.icon, children: icon };
-                        const TableRow = TableRow2.TableRow;
-                        return unpackModuleId(TableRow, obj, arg1);
-                      };
+                      class J {
+                        constructor(arg0, arg1) {
+                          let label;
+                          let obj2;
+                          ({ icon, label } = arg0);
+                          const obj = { icon: authStore(View, obj2), label };
+                          obj2 = { style: icon.icon, children: icon };
+                          const TableRow = TableRow2.TableRow;
+                          return authStore(TableRow, obj, arg1);
+                        }
+                      }
                       cResult[47] = tmp4.icon;
-                      cResult[48] = fn2;
-                      tmp43 = fn2;
+                      cResult[48] = J;
+                      tmp43 = J;
                     } else {
-                      tmp43 = cResult[48];
+                      class J {
+                        constructor(arg0, arg1) {
+                          let label;
+                          let obj2;
+                          ({ icon, label } = arg0);
+                          const obj = { icon: authStore(View, obj2), label };
+                          obj2 = { style: icon.icon, children: icon };
+                          const TableRow = TableRow2.TableRow;
+                          return authStore(TableRow, obj, arg1);
+                        }
+                      }
                     }
                     const mapped = arr4.map(tmp43);
                     cResult[13] = blockedUserIds;
@@ -767,8 +779,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                     cResult[20] = tmp4.tableGroup;
                     cResult[21] = tmp4.title;
                     cResult[22] = TableRowGroup;
-                    cResult[23] = closure_5;
-                    cResult[24] = closure_5;
+                    cResult[23] = View;
+                    cResult[24] = View;
                     cResult[25] = ActionSheet;
                     cResult[26] = tmp40;
                     cResult[27] = true;
@@ -791,21 +803,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
                   }
                   const obj12 = { children: items2 };
                   items2 = [tmp30, tmp37];
-                  const tmp42 = closure_13(closure_5, obj12);
+                  const tmp42 = closure_12(View, obj12);
                   cResult[44] = tmp30;
                   cResult[45] = tmp37;
                   cResult[46] = tmp42;
                   tmp40 = tmp42;
                 }
                 const obj13 = { variant: "text-md/medium", color: "text-default", style: tmp4.description, children: tmp33 };
-                const tmp39 = closure_11(channelId(ignoredUserIds[9]).Text, obj13);
+                const tmp39 = closure_10(channelId(ignoredUserIds[9]).Text, obj13);
                 cResult[41] = tmp4.description;
                 cResult[42] = tmp33;
                 cResult[43] = tmp39;
                 tmp37 = tmp39;
               }
               const obj14 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
-              const tmp36 = closure_11(closure_17, obj14);
+              const tmp36 = closure_10(closure_16, obj14);
               cResult[38] = blockedUserIds.length;
               cResult[39] = ignoredUserIds.length;
               cResult[40] = tmp36;
@@ -820,7 +832,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
             const obj3 = ChannelActionCreatorsDefault;
             obj3.closePrivateChannel(channelId, true, true);
             const obj4 = AnalyticsUtilsDefault;
-            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+            const obj5 = { action: metroImportDefault.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
             obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
           }
           cResult[9] = blockedUserIds;
@@ -836,7 +848,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
         const obj2 = SharedSpacesWarningActionCreators;
         const result = obj2.dismissGdmBlockedUserWarning(channelId);
         const obj3 = AnalyticsUtilsDefault;
-        const obj4 = { action: metroImportAll.CLICK_TO_STAY, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+        const obj4 = { action: metroImportDefault.CLICK_TO_STAY, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
         obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
       }
       cResult[5] = blockedUserIds;
@@ -846,9 +858,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
       tmp9 = handleDismissAndStay;
     }
   }
-  const fn = function o() {
+  const fn = function s() {
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+    const obj2 = { channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
     obj.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, obj2);
   };
   const items3 = [channelId, blockedUserIds, ignoredUserIds];
@@ -874,45 +886,46 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
   channelId = channelId.channelId;
   const blockedUserIds = channelId.blockedUserIds;
   const ignoredUserIds = channelId.ignoredUserIds;
-  const tmp = closure_14();
+  const tmp = closure_13();
   react = tmp;
   const items = [channelId, blockedUserIds, ignoredUserIds];
   const effect = react.useEffect(() => {
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+    const obj2 = { channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
     obj.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, obj2);
   }, items);
-  let obj = { startExpanded: true, children: closure_13(closure_5, obj2) };
+  let obj = { startExpanded: true, children: closure_12(View, obj2) };
   obj2 = { style: tmp.container, children: items1 };
-  let obj3 = { source: blockedUserIds(ignoredUserIds[26]), style: tmp.headerImage };
   const arr4 = getBlockedUserInGDMTableRows({ channelId, blockedUserIds, ignoredUserIds });
   const ActionSheet = channelId(ignoredUserIds[25]).ActionSheet;
-  items1 = [closure_11(closure_4, obj3), , , ];
+  let obj3 = { source: blockedUserIds(ignoredUserIds[27]), style: tmp.headerImage };
+  const tmp3 = blockedUserIds(ignoredUserIds[26]);
+  items1 = [closure_10(tmp3, obj3), , , ];
   let obj4 = { children: items2 };
   let obj5 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
   const Text = channelId(ignoredUserIds[9]).Text;
   intl = channelId(ignoredUserIds[11]).intl;
-  items2 = [closure_11(Text, obj5), ];
-  const obj6 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: closure_11(closure_17, obj7) };
+  items2 = [closure_10(Text, obj5), ];
+  const obj6 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: closure_10(closure_16, obj7) };
   obj7 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
   const Text2 = channelId(ignoredUserIds[9]).Text;
-  items2[1] = closure_11(Text2, obj6);
-  items1[1] = closure_13(closure_5, obj4);
-  const obj8 = { style: tmp.tableGroup, children: closure_11(TableRowGroup, obj9) };
+  items2[1] = closure_10(Text2, obj6);
+  items1[1] = closure_12(View, obj4);
+  const obj8 = { style: tmp.tableGroup, children: closure_10(TableRowGroup, obj9) };
   obj9 = {
     hasIcons: true,
     children: arr4.map((item, index) => {
       let label;
       let obj2;
       ({ icon, label } = item);
-      const obj = { icon: unpackModuleId(hasOwnProperty, obj2), label };
+      const obj = { icon: authStore(View, obj2), label };
       obj2 = { style: icon.icon, children: icon };
       const TableRow = TableRow2.TableRow;
-      return unpackModuleId(TableRow, obj, index);
+      return authStore(TableRow, obj, index);
     })
   };
-  TableRowGroup = channelId(ignoredUserIds[27]).TableRowGroup;
-  items1[2] = closure_11(closure_5, obj8);
+  TableRowGroup = channelId(ignoredUserIds[28]).TableRowGroup;
+  items1[2] = closure_10(View, obj8);
   const obj10 = { style: tmp.buttons, children: items3 };
   const obj11 = {
     size: "lg",
@@ -924,14 +937,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
       const obj3 = ChannelActionCreatorsDefault;
       obj3.closePrivateChannel(channelId, true, true);
       const obj4 = AnalyticsUtilsDefault;
-      const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+      const obj5 = { action: metroImportDefault.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
       obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
     },
     text: intl2.string(channelId(ignoredUserIds[11]).t.I4q1kA)
   };
-  const Button = channelId(ignoredUserIds[29]).Button;
+  const Button = channelId(ignoredUserIds[30]).Button;
   intl2 = channelId(ignoredUserIds[11]).intl;
-  items3 = [closure_11(Button, obj11), ];
+  items3 = [closure_10(Button, obj11), ];
   const obj12 = {
     size: "lg",
     variant: "secondary",
@@ -941,18 +954,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserI
       const obj2 = SharedSpacesWarningActionCreators;
       const result = obj2.dismissGdmBlockedUserWarning(channelId);
       const obj3 = AnalyticsUtilsDefault;
-      const obj4 = { action: metroImportAll.CLICK_TO_STAY, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+      const obj4 = { action: metroImportDefault.CLICK_TO_STAY, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
       obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
     },
     text: intl3.string(channelId(ignoredUserIds[11]).t.DRJhmT)
   };
-  const Button2 = channelId(ignoredUserIds[29]).Button;
+  const Button2 = channelId(ignoredUserIds[30]).Button;
   intl3 = channelId(ignoredUserIds[11]).intl;
-  items3[1] = closure_11(Button2, obj12);
-  items1[3] = closure_13(closure_5, obj10);
-  return closure_11(ActionSheet, obj);
+  items3[1] = closure_10(Button2, obj12);
+  items1[3] = closure_12(View, obj10);
+  return closure_10(ActionSheet, obj);
 });
 let result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
 
-export default tmp6;
+export default tmp5;
 export { getUserCalloutRowText };

@@ -1,14 +1,14 @@
-// Module ID: 7475
-// Function ID: 7476
+// Module ID: 7480
+// Function ID: 7481
 // Name: transitionToStream
-// Dependencies: [2063, 5054, 5940, 7476, 2]
+// Dependencies: [2064, 5055, 5941, 7481, 2]
 // Exports: default
 
-// Module 7475 (transitionToStream)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5940 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7476 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+// Module 7480 (transitionToStream)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/go_live/utils/transitionToStream.native.tsx");

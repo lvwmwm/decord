@@ -1,17 +1,17 @@
-// Module ID: 12158
-// Function ID: 12159
+// Module ID: 12095
+// Function ID: 12096
 // Name: useEmojiSuggestions
-// Dependencies: [32, 19, 5992, 12159, 1392, 4724, 5975, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5994, 12096, 1393, 4726, 5977, 558, 576, 504, 2]
 
-// Module 12158 (useEmojiSuggestions)
+// Module 12095 (useEmojiSuggestions)
 import react2 from "react" /* 576 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import EmojiTypes from "EmojiTypes" /* 4724 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
-import EmojiStore2 from "EmojiStore" /* 5992 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import EmojiTypes from "EmojiTypes" /* 4726 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5977 */;
+import EmojiStore2 from "EmojiStore" /* 5994 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EnglishEmojiSuggestionsConstants from "EnglishEmojiSuggestionsConstants" /* 12159 */;
+import EnglishEmojiSuggestionsConstants from "EnglishEmojiSuggestionsConstants" /* 12096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,29 +50,27 @@ function trimSurroundingPunctuation(wordSpan) {
   return tmp3;
 }
 function sortSuggestedEmojis(unlocked, guildId) {
-  if (null == guildId) {
-    return unlocked;
-  } else {
-    const items = [];
-    const items1 = [];
-    const items2 = [];
-    const iter = unlocked[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp5 = nextResult;
-      if (nextResult.guildId === guildId) {
-        let arr = items.push(tmp5);
-      } else if (tmp5.type === EmojiTypes.EmojiTypes.GUILD) {
-        let arr2 = items1.push(tmp5);
-      } else {
-        let arr3 = items2.push(tmp5);
+  const items = [];
+  const items1 = [];
+  const items2 = [];
+  const iter = unlocked[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    if (null != guildId) {
+      if (tmp2.guildId === guildId) {
+        let arr = items.push(tmp2);
+        continue;
       }
-      continue;
     }
-    const items3 = [];
-    HermesBuiltin.arraySpread(items3, items2, HermesBuiltin.arraySpread(items3, items1, HermesBuiltin.arraySpread(items3, items, 0)));
-    return items3;
+    if (tmp2.type === EmojiTypes.EmojiTypes.GUILD) {
+      let arr2 = items1.push(tmp2);
+    } else {
+      let arr3 = items2.push(tmp2);
+    }
   }
+  const items3 = [...items2];
+  return items3;
 }
 function findWordSpan(text, selectionStart, selectionEnd) {
   if (selectionStart !== selectionEnd) {
@@ -368,7 +366,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
           query,
           channel,
           intention: EmojiIntention.CHAT,
-          maxCount,
+          maxCount: 0,
           matchComparator(str) {
                   let closure_0 = query;
                   str = str.replace(closure_2_15, "$1_");
@@ -380,12 +378,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
         const emojis = obj4.queryEmojiResults(obj8).emojis;
         const guildId = channel.getGuildId();
         const arr3 = sortSuggestedEmojis(emojis.unlocked, guildId);
+        const substr = arr3.slice(0, maxCount);
         const tmp27 = sortSuggestedEmojis(emojis.locked, guildId);
-        if (arr3.length < minUnlockedEmojis) {
+        if (substr.length < minUnlockedEmojis) {
           tmp10 = closure_18;
         } else {
           if (cResult[11] === tmp27) {
-            if (cResult[12] === arr3) {
+            if (cResult[12] === substr) {
               let tmp28;
               if (cResult[13] === tmp13) {
                 tmp28 = cResult[14];
@@ -393,7 +392,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
               tmp10 = tmp28;
             }
           }
-          const obj14 = { unlockedEmojis: arr3, lockedEmojis: null, queryStart: null, queryEnd: null };
+          const obj14 = { unlockedEmojis: substr, lockedEmojis: null, queryStart: null, queryEnd: null };
           class B {
             constructor() {
               return ref.loadState;
@@ -401,7 +400,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
           }
           ({ queryStart: obj6.queryStart, queryEnd: obj6.queryEnd } = tmp13);
           cResult[11] = tmp27;
-          cResult[12] = arr3;
+          cResult[12] = substr;
           cResult[13] = tmp13;
           cResult[14] = obj14;
           tmp28 = obj14;
@@ -476,7 +475,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
             query,
             channel,
             intention: EmojiIntention.CHAT,
-            maxCount,
+            maxCount: 0,
             matchComparator(str) {
                     let closure_0 = query;
                     str = str.replace(closure_2_15, "$1_");
@@ -489,10 +488,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
           const emojis = obj3.queryEmojiResults(obj4).emojis;
           const guildId = channel.getGuildId();
           const arr2 = sortSuggestedEmojis(emojis.unlocked, guildId);
-          if (arr2.length < minUnlockedEmojis) {
+          const substr = arr2.slice(0, maxCount);
+          if (substr.length < minUnlockedEmojis) {
             obj6 = closure_18;
           } else {
-            obj6 = { unlockedEmojis: arr2, lockedEmojis: tmp29, queryStart: null, queryEnd: null };
+            obj6 = { unlockedEmojis: substr, lockedEmojis: tmp29, queryStart: null, queryEnd: null };
             ({ queryStart: obj2.queryStart, queryEnd: obj2.queryEnd } = tmp14);
           }
           return obj6;

@@ -1,25 +1,25 @@
-// Module ID: 6614
-// Function ID: 6615
+// Module ID: 6621
+// Function ID: 6622
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 6615, 502, 1085, 21, 5090, 558, 576, 5086, 6189, 5298, 1126, 1381, 6616, 6617, 1502, 504, 1505, 5936, 6619, 5299, 6620, 6621, 6622, 5631, 6623, 6627, 6628, 6630, 6624, 5375, 6631, 1627, 6633, 6635, 6283, 6641, 6643, 6645, 5373, 6652, 6613, 2]
+// Dependencies: [5, 32, 19, 17, 6622, 502, 1085, 21, 5091, 558, 576, 5087, 6191, 5299, 1126, 1382, 6623, 6624, 1503, 504, 1506, 5937, 6626, 5300, 6627, 6628, 6629, 5632, 6630, 6634, 6635, 6637, 6631, 5376, 6638, 1628, 6640, 6642, 6290, 6648, 6650, 6652, 5374, 6659, 6620, 2]
 // Exports: default
 
-// Module 6614 (Login)
+// Module 6621 (Login)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl11 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
-import Pressables from "Pressables" /* 6189 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import Pressables from "Pressables" /* 6191 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6615 */;
+import PhoneStore from "PhoneStore" /* 6622 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -388,7 +388,7 @@ export default function Login(isMultiAccount) {
               authenticationErrorsFromV6OrEarlierAPIError = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

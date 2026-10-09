@@ -1,11 +1,11 @@
-// Module ID: 13235
-// Function ID: 13236
+// Module ID: 13328
+// Function ID: 13329
 // Name: useUserProfileApplicationRoleConnections
-// Dependencies: [19, 7309, 558, 576, 504, 2]
+// Dependencies: [19, 7314, 558, 576, 504, 2]
 
-// Module 13235 (useUserProfileApplicationRoleConnections)
+// Module 13328 (useUserProfileApplicationRoleConnections)
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7309 */;
+import UserProfileStore from "UserProfileStore" /* 7314 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

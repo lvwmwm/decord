@@ -1,27 +1,27 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14654
+// Function ID: 14655
 // Name: channels
-// Dependencies: [2067, 2063, 2086, 4707, 2115, 5111, 5635, 1085, 8433, 14556, 11134, 11142, 12, 14547, 10616, 11137, 14545, 5885, 5410, 1112, 8472, 2]
+// Dependencies: [2068, 2064, 2086, 4709, 2115, 5112, 5636, 1085, 14639, 8594, 10896, 8441, 14655, 10905, 12, 14642, 10775, 10899, 5886, 5411, 1112, 8480, 2]
 
-// Module 14555 (channels)
+// Module 14654 (channels)
 import router_utils from "router_utils" /* 1112 */;
-import ChannelUtils from "ChannelUtils" /* 5410 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5885 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8433 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8472 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10616 */;
-import RPCErrorDefault from "RPCError" /* 11134 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11137 */;
-import RPCHelpers from "RPCHelpers" /* 11142 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 14547 */;
-import botScopedAccess from "botScopedAccess" /* 14556 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelUtils from "ChannelUtils" /* 5411 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5886 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8441 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8480 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10775 */;
+import RPCErrorDefault from "RPCError" /* 10896 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10899 */;
+import RPCHelpers from "RPCHelpers" /* 10905 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 14642 */;
+import botScopedAccess from "botScopedAccess" /* 14655 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
-import Constants_mod from "Constants" /* 5635 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import Constants_mod from "Constants" /* 5636 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -106,10 +106,10 @@ function handler(args) {
         }
       }
       if (tmp2.guild_id) {
-        const obj3 = socket(dependencyMap[19]);
+        const obj3 = socket(dependencyMap[20]);
         obj3.replaceWith(closure_1_10.CHANNEL(tmp2.guild_id, tmp.id));
       } else {
-        const obj2 = channel_id(dependencyMap[17]);
+        const obj2 = channel_id(dependencyMap[18]);
         const privateChannel = obj2.selectPrivateChannel(tmp.id);
       }
       return tmp2;
@@ -169,7 +169,7 @@ let obj2 = {
         const scopes = socket.authorization.scopes;
         const tmp = require;
         if (!scopes.has(OAuth2Scopes.OAuth2Scopes.RPC)) {
-          if (!scopes.has(tmp(8433).OAuth2Scopes.DM_CHANNELS_READ)) {
+          if (!scopes.has(tmp(8441).OAuth2Scopes.DM_CHANNELS_READ)) {
             const self = this;
             const self2 = this;
             const obj2 = { errorCode: constants2.INVALID_PERMISSIONS };
@@ -222,7 +222,7 @@ let obj4 = {
         const self = this;
         const self2 = this;
         const obj2 = { errorCode: constants2.INVALID_GUILD };
-        const tmpResult = tmp(11134);
+        const tmpResult = tmp(10896);
         const tmpResult1 = new tmpResult(obj2, "Invalid guild id: " + guild_id);
         throw tmpResult1;
       } else {
@@ -247,7 +247,7 @@ const ANY2 = RPC_SCOPE_CONFIG.ANY;
 const items1 = [OAuth2Scopes.OAuth2Scopes.RPC, OAuth2Scopes.OAuth2Scopes.BOT];
 obj5[ANY2] = items1;
 obj[GET_CHANNELS] = obj4;
-const obj6 = {
+let obj6 = {
   scope: obj7,
   validateAccess(args) {
     if (args.args == null) {
@@ -280,7 +280,7 @@ const obj6 = {
     socket = socket.socket;
     let tmp3;
     if (isPostMessageSocketDefault(socket)) {
-      tmp3 = tmp(10616)(socket.context.surface);
+      tmp3 = tmp(10775)(socket.context.surface);
     }
     const channel = ChannelStore.getChannel(tmp3);
     if (null == channel) {
@@ -333,98 +333,157 @@ const obj8 = {
     if (flag2 === undefined) {
       flag2 = false;
     }
+    let obj;
     const scopes = socket.authorization.scopes;
-    let tmp = flag2;
-    if (scopes.has(socket(flag2[8]).OAuth2Scopes.RPC)) {
-      if (channel_id) {
-        const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
-        let tmp13 = null;
-        if (null != voiceChannelId) {
-          if (voiceChannelId !== channel_id) {
-            if (false === flag) {
-              let obj3 = { errorCode: constants2.SELECT_VOICE_FORCE_REQUIRED };
-              let tmp15 = constants2;
-              let self3 = this;
-              let self4 = this;
-              let tmp16 = obj3;
-              const tmp17 = new channel_id(tmp[10])(obj3, "User is already joined to a voice channel.");
-              throw tmp17;
+    let tmp = socket;
+    const tmp2 = flag2;
+    if (scopes.has(socket(flag2[11]).OAuth2Scopes.RPC)) {
+      obj = { kind: "any" };
+    } else {
+      const frame = channel_id(tmp2[8])(socket).frame;
+      const tmp3 = channel_id;
+      const tmpResult = tmp(tmp2[8]);
+      if (tmpResult.isUserScopedConjureApplication(frame.applicationId)) {
+        obj = { kind: "any" };
+      } else {
+        let guildId;
+        if (frame.surface.type !== tmp(tmp2[9]).EmbeddedSurfaceType.OVERLAY) {
+          guildId = frame.surface.guildId;
+        }
+        let tmp5 = null;
+        if (null == guildId) {
+          let obj2 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
+          let self = this;
+          let self2 = this;
+          let tmp7 = obj2;
+          const tmp8 = new tmp3(tmp2[10])(obj2, "This app can only select a voice channel in the server it is installed in");
+          throw tmp8;
+        } else {
+          obj = { kind: "guild", guildId };
+        }
+      }
+    }
+    const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
+    if (channel_id) {
+      if (null != voiceChannelId) {
+        if (voiceChannelId !== channel_id) {
+          if (false === flag) {
+            let obj3 = { errorCode: constants2.SELECT_VOICE_FORCE_REQUIRED };
+            const self7 = this;
+            const self8 = this;
+            const tmp30 = new channel_id(tmp2[10])(obj3, "User is already joined to a voice channel.");
+            throw tmp30;
+          } else if (null != voiceChannelId) {
+            let guildId1;
+            const channel = ChannelStore.getChannel(voiceChannelId);
+            if (channel != null) {
+              guildId1 = channel.getGuildId();
+            }
+            if ("guild" === obj.kind) {
+              if (guildId1 !== obj.guildId) {
+                let obj4 = { errorCode: constants2.INVALID_CHANNEL };
+                let tmp23 = constants2;
+                let self5 = this;
+                let self6 = this;
+                let tmp25 = new channel_id(tmp2[10])(obj4, "This app can only select a voice channel in the server it is installed in");
+                throw tmp25;
+              }
             }
           }
         }
-        const storeWaitResult = server.storeWait(socket, () => ChannelStore.getChannel(channel_id), num);
-        const catchPromise = storeWaitResult.catch(() => {
-          const obj = { errorCode: constants.SELECT_CHANNEL_TIMED_OUT };
-          const tmp = new channel_id(flag2[10])(obj, "Request to select voice channel timed out.");
-          throw tmp;
-        });
-        const nextPromise = catchPromise.then(function(type) {
-          if (null == type) {
-            const _HermesInternal = HermesInternal;
-            const self3 = this;
-            const self4 = this;
-            const obj3 = { errorCode: constants.INVALID_CHANNEL };
-            const tmp15 = RPCErrorDefault;
-            const tmp152 = new tmp15(obj3, "Invalid channel id: " + channel_id);
-            throw tmp152;
-          } else if (_false(type.type)) {
-            const items = [Promise.resolve(type), ];
-            const transformChannel = RPCHelpers.transformChannel;
-            RPCHelpers;
-            const obj2 = RPCHelpers;
-            items[1] = transformChannel(type, obj2.hasMessageReadPermission(type, socket.application.id, socket.authorization.scopes));
-            return all(items);
-          } else {
-            const self = this;
-            const self2 = this;
-            const obj = { errorCode: constants.INVALID_CHANNEL };
-            const tmp5 = new RPCErrorDefault(obj, "Channel is not a voice channel");
-            throw tmp5;
-          }
-        });
-        return nextPromise.then(function(result) {
-          let tmp;
-          let tmp2;
-          [tmp, tmp2] = result;
-          if (tmp2.guild_id) {
-            const obj = ChannelUtils;
-            if (obj.isChannelFull(tmp, VoiceStateStore, GuildStore)) {
+      }
+      const storeWaitResult = server.storeWait(socket, () => ChannelStore.getChannel(channel_id), num);
+      const catchPromise = storeWaitResult.catch(() => {
+        obj = { errorCode: constants.SELECT_CHANNEL_TIMED_OUT };
+        const tmp = new channel_id(flag2[10])(obj, "Request to select voice channel timed out.");
+        throw tmp;
+      });
+      const nextPromise = catchPromise.then(function(type) {
+        if (null == type) {
+          const _HermesInternal = HermesInternal;
+          const self5 = this;
+          const self6 = this;
+          const obj3 = { errorCode: constants.INVALID_CHANNEL };
+          const tmp23 = RPCErrorDefault;
+          const tmp232 = new tmp23(obj3, "Invalid channel id: " + channel_id);
+          throw tmp232;
+        } else if (_false(type.type)) {
+          const tmp7 = obj;
+          if ("guild" === obj.kind) {
+            if (tmp8 !== tmp7.guildId) {
               const self3 = this;
               const self4 = this;
-              const obj2 = { errorCode: constants.INVALID_CHANNEL };
-              const tmp25 = new RPCErrorDefault(obj2, "Channel is full");
-              throw tmp25;
-            } else if (!PermissionStore.can(unpackModuleId.CONNECT, tmp)) {
-              const self = this;
-              const self2 = this;
-              const obj5 = { errorCode: constants.INVALID_PERMISSIONS };
-              const tmp13 = new RPCErrorDefault(obj5, "Connect permission required to join channel");
-              throw tmp13;
+              const obj4 = { errorCode: constants.INVALID_CHANNEL };
+              const tmp19 = new RPCErrorDefault(obj4, "This app can only select a voice channel in the server it is installed in");
+              throw tmp19;
             }
           }
-          const obj3 = SelectedChannelActionCreatorsDefault;
-          const voiceChannel = obj3.selectVoiceChannel(tmp.id);
-          const tmp16 = flag2;
-          if (tmp16) {
-            const obj4 = router_utils;
-            obj4.replaceWith(authStore.CHANNEL(tmp.guild_id, tmp.id));
+          const items = [Promise.resolve(type), ];
+          const transformChannel = RPCHelpers.transformChannel;
+          RPCHelpers;
+          const obj2 = RPCHelpers;
+          items[1] = transformChannel(type, obj2.hasMessageReadPermission(type, socket.application.id, socket.authorization.scopes));
+          return all(items);
+        } else {
+          obj = { errorCode: constants.INVALID_CHANNEL };
+          const self = this;
+          const self2 = this;
+          const tmp5 = new RPCErrorDefault(obj, "Channel is not a voice channel");
+          throw tmp5;
+        }
+      });
+      return nextPromise.then(function(result) {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = result;
+        if (tmp2.guild_id) {
+          obj = ChannelUtils;
+          if (obj.isChannelFull(tmp, VoiceStateStore, GuildStore)) {
+            const self3 = this;
+            const self4 = this;
+            const obj2 = { errorCode: constants.INVALID_CHANNEL };
+            const tmp25 = new RPCErrorDefault(obj2, "Channel is full");
+            throw tmp25;
+          } else if (!PermissionStore.can(unpackModuleId.CONNECT, tmp)) {
+            const self = this;
+            const self2 = this;
+            const obj5 = { errorCode: constants.INVALID_PERMISSIONS };
+            const tmp13 = new RPCErrorDefault(obj5, "Connect permission required to join channel");
+            throw tmp13;
           }
-          return tmp2;
-        });
-      } else {
-        let obj2 = channel_id(tmp[17]);
-        let voiceChannel = obj2.selectVoiceChannel(null);
-        return null;
-      }
+        }
+        const obj3 = SelectedChannelActionCreatorsDefault;
+        const voiceChannel = obj3.selectVoiceChannel(tmp.id);
+        const tmp16 = flag2;
+        if (tmp16) {
+          const obj4 = router_utils;
+          obj4.replaceWith(authStore.CHANNEL(tmp.guild_id, tmp.id));
+        }
+        return tmp2;
+      });
     } else {
-      const tmp2 = channel_id;
-      channel_id(tmp[16])(socket);
-      let obj = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
-      let self = this;
-      let self2 = this;
-      let tmp5 = obj;
-      const tmp6 = new channel_id(tmp[10])(obj, "Embedded apps cannot select a voice channel");
-      throw tmp6;
+      if (null != voiceChannelId) {
+        let guildId2;
+        const channel1 = ChannelStore.getChannel(voiceChannelId);
+        if (channel1 != null) {
+          guildId2 = channel1.getGuildId();
+        }
+        if ("guild" === obj.kind) {
+          if (guildId2 !== obj.guildId) {
+            const obj6 = { errorCode: constants2.INVALID_CHANNEL };
+            let tmp16 = constants2;
+            let self3 = this;
+            let self4 = this;
+            const tmp18 = new channel_id(tmp2[10])(obj6, "This app can only select a voice channel in the server it is installed in");
+            let tmp19 = tmp18;
+            throw tmp18;
+          }
+        }
+      }
+      let tmp13 = channel_id;
+      let obj5 = channel_id(tmp2[18]);
+      let voiceChannel = obj5.selectVoiceChannel(null);
+      return null;
     }
   }
 };

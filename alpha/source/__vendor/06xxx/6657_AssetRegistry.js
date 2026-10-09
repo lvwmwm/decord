@@ -1,0 +1,10 @@
+// Module ID: 6657
+// Function ID: 6658
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 6657 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/auth/native/images", width: 375, height: 413, scales: [2, 3], hash: "9dd921dedb90562e62ae59d45a63666c", name: "register-background-light", type: "png" });

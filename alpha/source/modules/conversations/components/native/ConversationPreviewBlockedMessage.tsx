@@ -1,13 +1,13 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 9343
+// Function ID: 9344
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 558, 576, 9306, 587, 6641, 1126, 5086, 5373, 2]
+// Dependencies: [19, 21, 558, 576, 9344, 587, 6648, 1126, 5087, 5374, 2]
 
-// Module 9305 (ConversationPreviewBlockedMessage)
+// Module 9343 (ConversationPreviewBlockedMessage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import Stack_Stack from "Stack/Stack" /* 5373 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import Stack_Stack from "Stack/Stack" /* 5374 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -28,9 +28,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     let EyeSlashIcon;
     const tmp5 = _false;
     if ("blocked" === reason) {
-      EyeSlashIcon = tmp(9306).DenyIcon;
+      EyeSlashIcon = tmp(9344).DenyIcon;
     } else {
-      EyeSlashIcon = tmp(6641).EyeSlashIcon;
+      EyeSlashIcon = tmp(6648).EyeSlashIcon;
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };
     const tmp5Result = tmp5(EyeSlashIcon, obj2);
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     return tmp13;
   }
   const obj4 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, align: "center", children: items };
-  const Stack = tmp(5373).Stack;
+  const Stack = tmp(5374).Stack;
   items = [tmp4, tmp10];
   const tmp14 = React3(Stack, obj4);
   cResult[6] = tmp4;
@@ -88,14 +88,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   const Stack = Stack_Stack.Stack;
   const tmp = React3;
   if ("blocked" === reason) {
-    EyeSlashIcon = tmp2(9306).DenyIcon;
+    EyeSlashIcon = tmp2(9344).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(6641).EyeSlashIcon;
+    EyeSlashIcon = tmp2(6648).EyeSlashIcon;
   }
   items = [, ];
   const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };
   items[0] = _false(EyeSlashIcon, obj2);
-  const Text = tmp2(5086).Text;
+  const Text = tmp2(5087).Text;
   const intl = tmp2(1126).intl;
   const string = intl.string;
   const t = tmp2(1126).t;

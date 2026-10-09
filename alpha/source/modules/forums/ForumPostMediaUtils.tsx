@@ -1,33 +1,33 @@
-// Module ID: 8454
-// Function ID: 8455
+// Module ID: 8462
+// Function ID: 8463
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 6992, 2063, 5428, 1389, 1085, 5415, 2040, 1402, 1383, 1387, 558, 576, 5432, 1997, 5440, 11, 2]
+// Dependencies: [19, 6999, 2064, 5429, 1390, 1085, 5416, 2041, 1403, 1384, 1388, 558, 576, 5433, 1998, 5441, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
-// Module 8454 (ForumPostMediaUtils)
+// Module 8462 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 2040 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5415 */;
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5416 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 6992 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import MessageStore from "MessageStore" /* 5428 */;
-import UserStore from "UserStore" /* 1389 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 6999 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import MessageStore from "MessageStore" /* 5429 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, type, version;
+let _require, type;
 
 let c9;
 let metroImportAll;
 let tmp;
-const InteractionComponentUtils = tmp(5432);
+const InteractionComponentUtils = tmp(5433);
 function isMediaAttachment(filename) {
   let height;
   let width;
@@ -279,7 +279,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFor
             tmp10 = cResult[6];
           }
           const mapped = embeds1.map(tmp10);
-          const found = mapped.filter(tmp(1387).isNotNullish);
+          const found = mapped.filter(tmp(1388).isNotNullish);
           cResult[2] = embeds1;
           cResult[3] = spoiler;
           cResult[4] = found;
@@ -370,7 +370,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFor
               }
             }
           });
-          found = mapped.filter(tmp(1387).isNotNullish);
+          found = mapped.filter(tmp(1388).isNotNullish);
         }
         return found;
       }
@@ -414,6 +414,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
             let num;
             let spoiler;
             let tmpResult2;
+            let version;
             type = type.type;
             if (require("Server").ComponentType.THUMBNAIL === type) {
               ({ media, spoiler } = type);
@@ -451,6 +452,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
                 let num;
                 let spoiler;
                 let tmpResult;
+                let version;
                 ({ media, spoiler } = item);
                 if (spoiler == null) {
                   spoiler = false;
@@ -526,6 +528,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
           let num;
           let spoiler;
           let tmpResult2;
+          let version;
           type = type.type;
           if (require("Server").ComponentType.THUMBNAIL === type) {
             ({ media, spoiler } = type);
@@ -563,6 +566,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPost
               let num;
               let spoiler;
               let tmpResult;
+              let version;
               ({ media, spoiler } = item);
               if (spoiler == null) {
                 spoiler = false;

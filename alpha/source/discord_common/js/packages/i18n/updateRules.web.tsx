@@ -1,12 +1,12 @@
-// Module ID: 1950
-// Function ID: 1951
+// Module ID: 1951
+// Function ID: 1952
 // Name: updateRules
-// Dependencies: [19, 21, 1948, 2]
+// Dependencies: [19, 21, 1949, 2]
 // Exports: default
 
-// Module 1950 (updateRules)
+// Module 1951 (updateRules)
 import Fragment from "Fragment" /* 21 */;
-import _mod1948 from "module_1948" /* 1948 */;
+import _mod1949 from "module_1949" /* 1949 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -14,9 +14,9 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("../discord_common/js/packages/i18n/updateRules.web.tsx");
 
 export default function updateRules(paragraph) {
-  paragraph.heading = _mod1948.defaultRules.heading;
-  paragraph.lheading = _mod1948.defaultRules.lheading;
-  paragraph.list = _mod1948.defaultRules.list;
+  paragraph.heading = _mod1949.defaultRules.heading;
+  paragraph.lheading = _mod1949.defaultRules.lheading;
+  paragraph.list = _mod1949.defaultRules.list;
   let obj = {
     react: function Paragraph(content, fn, key) {
       return <p key={arg2.key}>{arg1(arg0.content, arg2)}</p>;
@@ -36,7 +36,7 @@ export default function updateRules(paragraph) {
         obj.onClick = context.context[context.target];
       }
       if (null == obj.onClick) {
-        const obj2 = _mod1948;
+        const obj2 = _mod1949;
         obj.href = obj2.sanitizeUrl(context.target);
         obj.target = "_blank";
         const sanitizeUrlResult = obj2.sanitizeUrl(context.target);

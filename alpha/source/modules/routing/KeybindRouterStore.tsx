@@ -1,12 +1,12 @@
-// Module ID: 10986
-// Function ID: 10987
+// Module ID: 11160
+// Function ID: 11161
 // Name: KeybindRouterStore
-// Dependencies: [1085, 4904, 4917, 1266, 1271, 2]
+// Dependencies: [1085, 4905, 4918, 1267, 1272, 2]
 
-// Module 10986 (KeybindRouterStore)
-import matchPathCompat from "matchPathCompat" /* 4904 */;
+// Module 11160 (KeybindRouterStore)
+import matchPathCompat from "matchPathCompat" /* 4905 */;
 import Constants from "Constants" /* 1085 */;
-import module_1266 from "module_1266" /* 1266 */;
+import module_1267 from "module_1267" /* 1267 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -28,18 +28,18 @@ function getMatchData(pathname) {
   }
   const obj = { path: CHANNEL(guildIdResult, RouteParam2.channelId({ optional: true }), ":messageId?") };
   CHANNEL = constants.CHANNEL;
-  const RouteParam = tmp(4917).RouteParam;
+  const RouteParam = tmp(4918).RouteParam;
   guildIdResult = RouteParam.guildId();
-  RouteParam2 = tmp(4917).RouteParam;
+  RouteParam2 = tmp(4918).RouteParam;
   const matchPathResult = matchPath(str2, obj);
   const tmp4 = constants;
   if (null != matchPathResult) {
     ({ guildId, channelId } = matchPathResult.params);
-    let tmp10 = null;
+    let tmp9 = null;
     if (guildId !== _false) {
-      tmp10 = guildId;
+      tmp9 = guildId;
     }
-    const obj2 = { guildId: tmp10, channelId };
+    const obj2 = { guildId: tmp9, channelId };
     if (channelId == null) {
       channelId = null;
     }
@@ -53,7 +53,7 @@ function getMatchData(pathname) {
     }
     const obj3 = { path: GUILD_BOOSTING_MARKETING(RouteParam3.guildId()) };
     GUILD_BOOSTING_MARKETING = tmp4.GUILD_BOOSTING_MARKETING;
-    RouteParam3 = tmp(4917).RouteParam;
+    RouteParam3 = tmp(4918).RouteParam;
     const matchPath2Result = matchPath2(str, obj3);
     if (null != matchPath2Result) {
       obj5 = { guildId: matchPath2Result.params.guildId, channelId: null };
@@ -65,7 +65,7 @@ function getMatchData(pathname) {
   }
 }
 ({ Routes: c2, ME: c3 } = Constants);
-const withEqualityFn = module_1266.createWithEqualityFn((arg0) => {
+const withEqualityFn = module_1267.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     path: null,

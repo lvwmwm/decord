@@ -1,14 +1,48 @@
 // Module ID: 1520
 // Function ID: 1521
 // Name: react
-// Dependencies: [19, 1521]
-// Exports: useNavigationIndependentTree
+// Dependencies: [19]
 
 // Module 1520 (react)
-import react2 from "react" /* 1521 */;
 import react from "react" /* 19 */;
 
+let c0 = "Couldn't find a navigation context. Have you wrapped your app with 'NavigationContainer'? See https://reactnavigation.org/docs/getting-started for setup instructions.";
+const obj = { isDefault: true };
+const createContext = react.createContext;
+Object.defineProperty(obj, "getKey", {
+  get: () => {
+    const error = new Error(c0);
+    throw error;
+  },
+  set: undefined
+});
+Object.defineProperty(obj, "setKey", {
+  get: () => {
+    const error = new Error(c0);
+    throw error;
+  },
+  set: undefined
+});
+Object.defineProperty(obj, "getState", {
+  get: () => {
+    const error = new Error(c0);
+    throw error;
+  },
+  set: undefined
+});
+Object.defineProperty(obj, "setState", {
+  get: () => {
+    const error = new Error(c0);
+    throw error;
+  },
+  set: undefined
+});
+Object.defineProperty(obj, "getIsInitial", {
+  get: () => {
+    const error = new Error(c0);
+    throw error;
+  },
+  set: undefined
+});
 
-export const useNavigationIndependentTree = function useNavigationIndependentTree() {
-  return react.useContext(react2.NavigationIndependentTreeContext);
-};
+export const NavigationStateContext = createContext(obj);

@@ -1,28 +1,27 @@
-// Module ID: 15522
-// Function ID: 15523
+// Module ID: 15635
+// Function ID: 15636
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2129, 2128, 21, 5090, 587, 5258, 558, 576, 504, 1126, 6264, 15523, 6803, 6265, 2]
+// Dependencies: [5, 19, 17, 2129, 2128, 21, 5091, 587, 5259, 558, 576, 504, 1126, 6266, 6163, 15636, 6810, 6267, 2]
 
-// Module 15522 (UserSettingsLocale)
+// Module 15635 (UserSettingsLocale)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2129 */;
-import TableRadioRow2 from "TableRadioRow" /* 6264 */;
-import flags from "flags" /* 15523 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import TableRadioRow2 from "TableRadioRow" /* 6266 */;
+import flags from "flags" /* 15636 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2128 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c3, c4, localizedName;
 
-let closure_4;
-let hasOwnProperty;
 let obj2;
 function handleLanguageChange() {
   return obj(...arguments);
@@ -82,21 +81,22 @@ let obj = function _handleLanguageChange() {
   });
   return obj(...arguments);
 };
-({ Image: closure_4, ScrollView: hasOwnProperty } = react_native);
+const ScrollView = react_native.ScrollView;
 const setAppLocale = IntlLoaderStore.setAppLocale;
 const jsx = Fragment.jsx;
 obj = { content: obj2, flagImage: { width: 27, height: 18 } };
 obj2 = { padding: nativeDefault.space.PX_16 };
-let closure_9 = createStyles.createStyles(obj);
+let closure_8 = createStyles.createStyles(obj);
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsLocale() {
   let flagImage;
   let locale;
   let tmp5;
   let tmp6;
   let tmp9;
+  const tmp = _require;
   obj = require("react");
   const cResult = obj.c(10);
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [LocaleStore];
@@ -110,11 +110,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const tmpResult = require("get initialized");
+  const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   const content = tmp4.content;
   if (cResult[2] !== tmp4.flagImage) {
-    const tmpResult2 = require("intl");
+    const tmpResult2 = tmp(1126);
     const availableLocales = tmpResult2.getAvailableLocales();
     const mapped = availableLocales.map((localizedName) => {
       let name;
@@ -124,6 +124,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const TableRadioRow = TableRadioRow2.TableRadioRow;
       const intl = intl2.intl;
       ({ style: flagImage.flagImage, source: flags.flags[value] });
+      FastImageDefault;
       return <TableRadioRow key={name} value={value} label={name} subLabel={intl.string(localizedName)} icon={null} />;
     });
     cResult[2] = tmp4.flagImage;
@@ -144,13 +145,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       return tmp13;
     }
-    const tmp16 = <closure_5 contentContainerStyle={content}>{tmp11}</closure_5>;
+    const tmp16 = <ScrollView contentContainerStyle={content}>{tmp11}</ScrollView>;
     cResult[7] = tmp4.content;
     cResult[8] = tmp11;
     cResult[9] = tmp16;
     tmp13 = tmp16;
   }
-  const SafeAreaPaddingView = tmp(6803).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6810).SafeAreaPaddingView;
   const tmp12 = <SafeAreaPaddingView bottom>{null}</SafeAreaPaddingView>;
   cResult[4] = stateFromStores;
   cResult[5] = tmp9;
@@ -160,7 +161,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let availableLocales;
   let flagImage;
   let locale;
-  const tmp = closure_9();
+  const tmp = closure_8();
   _require = tmp;
   const items = [LocaleStore];
   obj = require("get initialized");
@@ -178,13 +179,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const TableRadioRow = TableRadioRow2.TableRadioRow;
       const intl = intl2.intl;
       ({ style: flagImage.flagImage, source: flags.flags[value] });
+      FastImageDefault;
       return <TableRadioRow key={name} value={value} label={name} subLabel={intl.string(localizedName)} icon={null} />;
     })
   });
   const TableRadioGroup = require("TableRadioGroup").TableRadioGroup;
   const obj5 = require("intl");
   availableLocales = obj5.getAvailableLocales();
-  return <closure_5 contentContainerStyle={tmp.content}>{null}</closure_5>;
+  return <ScrollView contentContainerStyle={tmp.content}>{null}</ScrollView>;
 }));
 const result = size.fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 8993
+// Function ID: 8994
 // Name: APNGDecorationNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 8982 (APNGDecorationNativeComponent)
+// Module 8993 (APNGDecorationNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;

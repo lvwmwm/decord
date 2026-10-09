@@ -1,15 +1,15 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17254
+// Function ID: 17255
 // Name: SuggestedSearchList
-// Dependencies: [19, 17, 21, 5090, 587, 558, 576, 17105, 1126, 4051, 5086, 17106, 2]
+// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 17255, 1126, 4053, 5087, 17256, 2]
 
-// Module 17104 (SuggestedSearchList)
+// Module 17254 (SuggestedSearchList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 17106 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 17256 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 13459
-// Function ID: 13460
+// Module ID: 13551
+// Function ID: 13552
 // Name: uploadMessageAttachments
-// Dependencies: [5, 7859, 9651, 5430, 584, 2]
+// Dependencies: [5, 7868, 9670, 5431, 584, 2]
 // Exports: uploadMessageAttachments
 
-// Module 13459 (uploadMessageAttachments)
+// Module 13551 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 7859 */;
+import UploadStore from "UploadStore" /* 7868 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;
@@ -58,7 +58,7 @@ let obj = function _uploadMessageAttachments() {
             let message;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

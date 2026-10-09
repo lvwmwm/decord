@@ -1,26 +1,26 @@
-// Module ID: 5955
-// Function ID: 5956
+// Module ID: 5957
+// Function ID: 5958
 // Name: StageChannelParticipants
-// Dependencies: [5893, 2063, 5956, 2124, 4717, 1389, 5111, 5114, 5953, 2068, 5958, 5412, 4702, 5405, 5959, 5896, 2]
+// Dependencies: [5894, 2064, 5958, 2124, 4719, 1390, 5112, 5115, 5955, 2069, 5960, 5413, 4704, 5406, 5961, 5897, 2]
 // Exports: isRequestedToSpeakAll
 
-// Module 5955 (StageChannelParticipants)
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4702 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5114 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5412 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5896 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5958 */;
-import useGuildMemberDisplayRole from "useGuildMemberDisplayRole" /* 5959 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5893 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5956 */;
+// Module 5957 (StageChannelParticipants)
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4704 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5115 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5413 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5897 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5960 */;
+import useGuildMemberDisplayRole from "useGuildMemberDisplayRole" /* 5961 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5958 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5111 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5953 */;
-import StageInstanceStore from "StageInstanceStore" /* 2068 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5955 */;
+import StageInstanceStore from "StageInstanceStore" /* 2069 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -208,10 +208,14 @@ class StageChannelParticipants {
   updateParticipant(arg0) {
     const self = this;
     let closure_0 = arg0;
-    let result = this._getParticipantsForUser(arg0, arr);
+    let arr = arg1;
+    if (arg1 === undefined) {
+      arr = self.participants[arg0];
+    }
+    let result = self._getParticipantsForUser(arg0, arr);
     let flag = null != arr || 0 !== result.length;
     if (flag) {
-      if (this.participants[arg0] != null) {
+      if (arr != null) {
         const item = arr.forEach((id) => {
           const _participantsIndex = self._participantsIndex;
           _participantsIndex.delete(id.id);
@@ -233,12 +237,14 @@ class StageChannelParticipants {
         const _requestToSpeakIndex = tmp._requestToSpeakIndex;
         _requestToSpeakIndex.delete(closure_0);
       });
-      this.participants[arg0] = result;
+      self.participants[arg0] = result;
       flag = true;
     }
     return flag;
   }
   rebuild() {
+    let _participantsIndex;
+    let closure_129_0;
     const self = this;
     const channel = ChannelStore.getChannel(this.channelId);
     if (null != channel) {
@@ -247,13 +253,13 @@ class StageChannelParticipants {
         const _Object = Object;
         const self2 = this;
         const self3 = this;
-        const _participantsIndex = self._participantsIndex;
+        ({ participants: closure_129_0, _participantsIndex } = self);
         set = new Set(Object.keys(VoiceStateStore.getVoiceStatesForChannel(channel.id)));
         _participantsIndex.clear();
         const _requestToSpeakIndex = self._requestToSpeakIndex;
         _requestToSpeakIndex.clear();
         self.participants = {};
-        const item = set.forEach((item) => self.updateParticipant(item));
+        const item = set.forEach((item) => self.updateParticipant(item, closure_1_0[item]));
         return true;
       }
     }

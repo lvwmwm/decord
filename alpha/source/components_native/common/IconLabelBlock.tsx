@@ -1,36 +1,35 @@
-// Module ID: 17337
-// Function ID: 17338
+// Module ID: 17485
+// Function ID: 17486
 // Name: IconLabelBlock
-// Dependencies: [109, 19, 17, 21, 5090, 587, 4787, 1200, 5086, 9591, 4929, 2]
+// Dependencies: [109, 19, 17, 21, 5091, 587, 4788, 1200, 5087, 9610, 6163, 4930, 2]
 
-// Module 17337 (IconLabelBlock)
+// Module 17485 (IconLabelBlock)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import native2 from "native" /* 4787 */;
-import shared from "shared" /* 4929 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import IconUploaderDefault from "IconUploader" /* 9591 */;
+import native2 from "native" /* 4788 */;
+import shared from "shared" /* 4930 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import IconUploaderDefault from "IconUploader" /* 9610 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
-let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let closure_3 = ["error"];
-({ View: hasOwnProperty, Image: metroRequire } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { wrapper: { alignItems: "center", paddingTop: 26, paddingBottom: 16 }, error: obj2, label: obj3, iconUploaderWrapper: { alignSelf: "stretch", alignItems: "center" }, text: { marginTop: 9 } };
 obj2 = { fontSize: 12, textAlign: "center", alignSelf: "center", marginBottom: 10, color: nativeDefault.unsafe_rawColors.RED_400 };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 obj3 = { fontSize: 12, marginTop: 20, color: nativeDefault.colors.TEXT_SUBTLE };
-const React4 = createLegacyClassComponentStyles(obj);
+const metroImportAll = createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class IconLabelBlock extends PureComponent {
   renderLabel() {
@@ -40,7 +39,7 @@ class IconLabelBlock extends PureComponent {
     if (null != label) {
       const obj = { style: items, children: label };
       items = [tmp.label, tmp2];
-      tmp3 = metroImportDefault(native.LegacyText, obj);
+      tmp3 = metroRequire(native.LegacyText, obj);
     }
     return tmp3;
   }
@@ -51,7 +50,7 @@ class IconLabelBlock extends PureComponent {
     if (null != text) {
       const obj = { variant: "heading-md/medium", color: "text-default", style: items, accessibilityRole: tmp3, children: text };
       items = [tmp.text, tmp2];
-      tmp4 = metroImportDefault(Text_Text.Text, obj);
+      tmp4 = metroRequire(Text_Text.Text, obj);
     }
     return tmp4;
   }
@@ -62,32 +61,32 @@ class IconLabelBlock extends PureComponent {
     let items;
     let items1;
     let source;
-    const tmp = closure_9(this.context);
+    const tmp = closure_8(this.context);
     ({ iconProps, source, darkSource, errorProps } = this.props);
     if (null != iconProps) {
       const error = iconProps.error;
       const obj2 = { style: tmp.iconUploaderWrapper, children: items };
       const obj3 = {};
-      const tmp11 = _objectWithoutProperties(iconProps, closure_3);
-      const tmp17 = IconUploaderDefault;
-      const merged = Object.assign(tmp11);
-      items = [metroImportDefault(tmp17, obj3), ];
-      let tmp14Result = null;
-      const tmp12 = metroImportAll;
-      const tmp13 = hasOwnProperty;
-      const tmp14 = metroImportDefault;
+      const tmp12 = _objectWithoutProperties(iconProps, closure_3);
+      const tmp18 = IconUploaderDefault;
+      const merged = Object.assign(tmp12);
+      items = [metroRequire(tmp18, obj3), ];
+      let tmp15Result = null;
+      const tmp13 = metroImportDefault;
+      const tmp14 = View;
+      const tmp15 = metroRequire;
       if (null != error) {
         const obj4 = { style: items1, children: error };
         items1 = [tmp.error, tmp4];
         const LegacyText = native.LegacyText;
         const merged1 = Object.assign(errorProps);
-        tmp14Result = tmp14(LegacyText, obj4);
+        tmp15Result = tmp15(LegacyText, obj4);
       }
-      items[1] = tmp14Result;
-      return tmp12(tmp13, obj2);
+      items[1] = tmp15Result;
+      return tmp13(tmp14, obj2);
     } else {
-      const tmp5 = metroImportDefault;
-      const tmp6 = metroRequire;
+      const tmp5 = metroRequire;
+      const tmp8 = FastImageDefault;
       if (null == source) {
         const obj = shared;
         if (obj.isThemeLight(this.context.theme)) {
@@ -96,16 +95,16 @@ class IconLabelBlock extends PureComponent {
         source = darkSource;
       }
       const obj5 = { source, style: tmp3, resizeMode: "contain" };
-      return tmp5(tmp6, obj5);
+      return tmp5(tmp8, obj5);
     }
   }
   render() {
     let items;
     let items1;
     const obj = { style: items, children: items1 };
-    items = [closure_9(this.context).wrapper, this.props.wrapperStyles];
+    items = [closure_8(this.context).wrapper, this.props.wrapperStyles];
     items1 = [this.renderIcon(), this.props.children, this.renderLabel(), this.renderText()];
-    return metroImportAll(hasOwnProperty, obj);
+    return metroImportDefault(View, obj);
   }
 }
 const prototype = IconLabelBlock.prototype;

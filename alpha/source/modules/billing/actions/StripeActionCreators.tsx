@@ -1,10 +1,10 @@
-// Module ID: 5734
-// Function ID: 5735
+// Module ID: 5735
+// Function ID: 5736
 // Name: StripeActionCreators
-// Dependencies: [5, 1085, 1294, 2]
+// Dependencies: [5, 1085, 1295, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 5734 (StripeActionCreators)
+// Module 5735 (StripeActionCreators)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ let obj = function _createStripeSetupIntent() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -123,7 +123,7 @@ obj = function _createSetupIntentForPaymentElements() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

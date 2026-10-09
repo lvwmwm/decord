@@ -1,18 +1,18 @@
-// Module ID: 7016
-// Function ID: 7017
+// Module ID: 7019
+// Function ID: 7020
 // Name: SafetyToastsUtils
-// Dependencies: [2063, 1389, 7015, 5405, 4922, 1126, 3117, 2697, 2]
+// Dependencies: [2064, 1390, 7018, 5406, 4923, 1126, 3117, 2697, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 7016 (SafetyToastsUtils)
+// Module 7019 (SafetyToastsUtils)
 import intl19 from "intl" /* 1126 */;
 import _modDef2697 from "module_2697" /* 2697 */;
 import _modDef3117 from "module_3117" /* 3117 */;
-import UserUtilsDefault from "UserUtils" /* 4922 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5405 */;
-import Constants from "Constants" /* 7015 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserUtilsDefault from "UserUtils" /* 4923 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
+import Constants from "Constants" /* 7018 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const SafetyToastType = Constants.SafetyToastType;

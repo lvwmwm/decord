@@ -1,15 +1,15 @@
-// Module ID: 1244
-// Function ID: 1245
+// Module ID: 1245
+// Function ID: 1246
 // Name: frecency_user_settings
 // Dependencies: [32, 1210, 1238, 2]
 
-// Module 1244 (frecency_user_settings)
+// Module 1245 (frecency_user_settings)
 import _mod1210 from "module_1210" /* 1210 */;
 import user_settings_shared from "user_settings_shared" /* 1238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
-let internalBinaryWrite, internalBinaryWrite10, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
@@ -237,14 +237,14 @@ class FrecencyUserSettings$Type extends MessageType {
       const joined7 = internalBinaryWrite8Result.join();
     }
     if (versions.applicationFrecency) {
-      internalBinaryWrite9 = playedSoundFrecencyType.internalBinaryWrite;
+      const internalBinaryWrite9 = playedSoundFrecencyType.internalBinaryWrite;
       const applicationFrecency = versions.applicationFrecency;
       const tagResult8 = tag.tag(9, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(applicationFrecency, tagResult8.fork(), writeUnknownFields);
       const joined8 = internalBinaryWrite9Result.join();
     }
     if (versions.heardSoundFrecency) {
-      internalBinaryWrite10 = object18.internalBinaryWrite;
+      const internalBinaryWrite10 = object18.internalBinaryWrite;
       const heardSoundFrecency = versions.heardSoundFrecency;
       const tagResult9 = tag.tag(10, _mod1210.WireType.LengthDelimited);
       const result = internalBinaryWrite10(heardSoundFrecency, tagResult9.fork(), writeUnknownFields);
@@ -1931,7 +1931,7 @@ const items12 = [];
 const obj10 = { no: 1, name: "guild_and_channels", kind: "map", K: 6, V: { kind: "message", T: T9 } };
 items12[0] = obj10;
 let tmp19 = new "binaryReadMap1"("discord_protos.discord_users.v1.GuildAndChannelFrecency", items12, tmp4, ApplicationFrecency$Type, "create", "internalBinaryRead", GuildAndChannelFrecency$Type, "binaryReadMap1", items12, this, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object10, object11, object12, object13, object14, object15, object16);
-const authStore4 = tmp19;
+const authStore5 = tmp19;
 let size = size_mod;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_users/v1/frecency_user_settings.tsx");
 

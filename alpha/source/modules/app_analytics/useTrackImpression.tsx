@@ -1,21 +1,21 @@
-// Module ID: 8941
-// Function ID: 8942
+// Module ID: 8952
+// Function ID: 8953
 // Name: useTrackImpression
-// Dependencies: [19, 2063, 2115, 4899, 1265, 1272, 1264, 584, 5105, 558, 576, 1354, 5941, 5392, 2]
+// Dependencies: [19, 2064, 2115, 4900, 1266, 1273, 1265, 584, 5106, 558, 576, 1355, 5942, 5393, 2]
 
-// Module 8941 (useTrackImpression)
+// Module 8952 (useTrackImpression)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtils2 from "AnalyticsUtils" /* 1264 */;
-import _modDef1354 from "module_1354" /* 1354 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5105 */;
-import useMountEffectDefault from "useMountEffect" /* 5392 */;
-import uniqueIdDefault from "uniqueId" /* 5941 */;
+import AnalyticsUtils2 from "AnalyticsUtils" /* 1265 */;
+import _modDef1355 from "module_1355" /* 1355 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
+import useMountEffectDefault from "useMountEffect" /* 5393 */;
+import uniqueIdDefault from "uniqueId" /* 5942 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import SelectedChannelStore_mod from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
-import ImpressionStore from "ImpressionStore" /* 1265 */;
-import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import ImpressionStore from "ImpressionStore" /* 1266 */;
+import AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -160,11 +160,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackImpr
   function trackImpressionEffect() {
     const tmp = importDefault;
     const tmp3 = ref;
-    const tmp6 = !_modDef1354(ref.current, current);
+    const tmp6 = !_modDef1355(ref.current, current);
     if (tmp6) {
       tmp3.current = current;
     }
-    const tmp10 = !_modDef1354(ref2.current, closure_1);
+    const tmp10 = !_modDef1355(ref2.current, closure_1);
     const tmp7 = ref2;
     const tmp8 = closure_1;
     if (tmp10) {
@@ -195,16 +195,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackImpr
   react = undefined;
   react = react.useRef(undefined);
   const ref2 = react.useRef(undefined);
-  const tmp = obj(5392)(() => {
+  const tmp = obj(5393)(() => {
     if (obj.trackOnInitialLoad) {
       let fn;
-      const tmp6 = _modDef1354(ref.current, current);
+      const tmp6 = _modDef1355(ref.current, current);
       const tmp4 = ref;
       const tmp7 = !tmp6;
       if (tmp7) {
         tmp4.current = current;
       }
-      const tmp11 = !_modDef1354(ref2.current, closure_2);
+      const tmp11 = !_modDef1355(ref2.current, closure_2);
       const tmp8 = ref2;
       const tmp9 = closure_2;
       if (tmp11) {
@@ -226,20 +226,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackImpr
   const effect = react.useEffect(() => {
     if (!obj.trackOnInitialLoad) {
       let fn;
-      const tmp6 = _modDef1354(ref.current, current);
+      const tmp6 = _modDef1355(ref.current, current);
       const tmp4 = ref;
       const tmp7 = !tmp6;
       if (tmp7) {
         tmp4.current = current;
       }
-      const tmp11 = !_modDef1354(ref2.current, closure_2);
+      const tmp11 = !_modDef1355(ref2.current, closure_2);
       const tmp8 = ref2;
       const tmp9 = closure_2;
       if (tmp11) {
         tmp8.current = tmp9;
       }
       if (!tmp6) {
-        obj = { sequenceId: tmp2(5941)("impression_") };
+        obj = { sequenceId: tmp2(5942)("impression_") };
         const merged = Object.assign(tmp5);
         trackImpression(obj, tmp.disableTrack);
         fn = () => {

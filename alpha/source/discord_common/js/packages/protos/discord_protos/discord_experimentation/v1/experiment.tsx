@@ -1,19 +1,19 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8128
+// Function ID: 8129
 // Name: experiment
-// Dependencies: [32, 1210, 1239, 1240, 8121, 8122, 2]
+// Dependencies: [32, 1210, 1239, 1240, 8129, 8130, 2]
 
-// Module 8120 (experiment)
+// Module 8128 (experiment)
 import _mod1210 from "module_1210" /* 1210 */;
 import timestamp from "timestamp" /* 1239 */;
 import wrappers from "wrappers" /* 1240 */;
-import rules from "rules" /* 8121 */;
-import duration from "duration" /* 8122 */;
+import rules from "rules" /* 8129 */;
+import duration from "duration" /* 8130 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
@@ -529,7 +529,7 @@ class Experiment$Type extends MessageType {
     }
     if (id.expectedEndDate) {
       const Timestamp3 = timestamp.Timestamp;
-      internalBinaryWrite9 = Timestamp3.internalBinaryWrite;
+      const internalBinaryWrite9 = Timestamp3.internalBinaryWrite;
       const expectedEndDate = id.expectedEndDate;
       const tagResult31 = tag.tag(31, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(expectedEndDate, tagResult31.fork(), writeUnknownFields);
@@ -545,7 +545,7 @@ class Experiment$Type extends MessageType {
     }
     if (id.archiveAt) {
       const Timestamp4 = timestamp.Timestamp;
-      internalBinaryWrite10 = Timestamp4.internalBinaryWrite;
+      const internalBinaryWrite10 = Timestamp4.internalBinaryWrite;
       const archiveAt = id.archiveAt;
       const tagResult34 = tag.tag(33, _mod1210.WireType.LengthDelimited);
       const result = internalBinaryWrite10(archiveAt, tagResult34.fork(), writeUnknownFields);

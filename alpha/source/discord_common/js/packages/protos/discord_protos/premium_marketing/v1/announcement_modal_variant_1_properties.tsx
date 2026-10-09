@@ -1,18 +1,18 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 9105
+// Function ID: 9106
 // Name: announcement_modal_variant_1_properties
-// Dependencies: [32, 1210, 10011, 10012, 10013, 2]
+// Dependencies: [32, 1210, 9106, 9107, 9108, 2]
 
-// Module 10010 (announcement_modal_variant_1_properties)
+// Module 9105 (announcement_modal_variant_1_properties)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 10011 */;
-import help_article from "help_article" /* 10012 */;
-import cta_button from "cta_button" /* 10013 */;
+import localized_string from "localized_string" /* 9106 */;
+import help_article from "help_article" /* 9107 */;
+import cta_button from "cta_button" /* 9108 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
@@ -876,7 +876,7 @@ class AnnouncementModalVariant1Properties$Type extends MessageType5 {
     }
     if (header.modalTopPillLocalized) {
       const LocalizedString3 = localized_string.LocalizedString;
-      internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
+      const internalBinaryWrite9 = LocalizedString3.internalBinaryWrite;
       const modalTopPillLocalized = header.modalTopPillLocalized;
       const tagResult16 = tag.tag(21, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(modalTopPillLocalized, tagResult16.fork(), writeUnknownFields);

@@ -1,14 +1,14 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10314
+// Function ID: 10315
 // Name: ChannelNotificationIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10328, 4777, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10315, 4778, 2]
 
-// Module 10327 (ChannelNotificationIcon)
+// Module 10314 (ChannelNotificationIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4777 */;
-import AssetRegistry from "AssetRegistry" /* 10328 */;
+import BaseIconImage2 from "BaseIconImage" /* 4778 */;
+import AssetRegistry from "AssetRegistry" /* 10315 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelNot
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4777).BaseIconImage;
+  const BaseIconImage = tmp(4778).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

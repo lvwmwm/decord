@@ -1,15 +1,15 @@
-// Module ID: 16765
-// Function ID: 16766
+// Module ID: 16891
+// Function ID: 16892
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 2056, 5753, 2057, 12140, 558, 576, 504, 2059, 12149, 16766, 16770, 2]
+// Dependencies: [19, 2057, 5754, 2058, 12077, 558, 576, 504, 2060, 12086, 16892, 16894, 2]
 
-// Module 16765 (useNotificationPermissionPrompt)
-import NotificationUtilsDefault from "NotificationUtils" /* 12149 */;
+// Module 16891 (useNotificationPermissionPrompt)
+import NotificationUtilsDefault from "NotificationUtils" /* 12086 */;
 import react from "react" /* 19 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2056 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5753 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2057 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12140 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2057 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2058 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12077 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
       tmp14 = cResult[7];
     }
     const effect = react.useEffect(tmp13, tmp14);
-    const tmpResult4 = tmp(16766);
+    const tmpResult4 = tmp(16892);
     const guildOpenNudge = tmpResult4.useGuildOpenNudge();
     class S {
       constructor() {
@@ -120,9 +120,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificat
       }
     }
   }, items2);
-  const obj3 = stateFromStores(16766);
+  const obj3 = stateFromStores(16892);
   const guildOpenNudge = obj3.useGuildOpenNudge();
-  const obj4 = stateFromStores(16770);
+  const obj4 = stateFromStores(16894);
   const postCallDisconnectNudge = obj4.usePostCallDisconnectNudge();
 });
 const result = size.fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");

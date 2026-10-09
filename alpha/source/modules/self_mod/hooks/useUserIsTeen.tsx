@@ -1,11 +1,11 @@
-// Module ID: 7710
-// Function ID: 7711
+// Module ID: 7719
+// Function ID: 7720
 // Name: useUserIsTeen
-// Dependencies: [1389, 558, 576, 504, 2]
+// Dependencies: [1390, 558, 576, 504, 2]
 
-// Module 7710 (useUserIsTeen)
+// Module 7719 (useUserIsTeen)
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

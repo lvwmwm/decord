@@ -1,12 +1,12 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 9562
+// Function ID: 9563
 // Name: SwipeableFastList
-// Dependencies: [19, 21, 9525, 6752, 2]
+// Dependencies: [19, 21, 9563, 6759, 2]
 
-// Module 9524 (SwipeableFastList)
+// Module 9562 (SwipeableFastList)
 import Fragment from "Fragment" /* 21 */;
-import FastListDefault from "FastList" /* 6752 */;
-import SwipeDirectionDefault from "SwipeDirection" /* 9525 */;
+import FastListDefault from "FastList" /* 6759 */;
+import SwipeDirectionDefault from "SwipeDirection" /* 9563 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -88,9 +88,8 @@ class SwipeableFastList extends Component {
   closeOpenRow() {
     const self = this;
     if (null != this._openRowKey) {
-      if (null != self._refs[self._openRowKey]) {
-        const obj = self._refs[self._openRowKey];
-        obj.close();
+      if (self._refs[self._openRowKey] != null) {
+        self._refs[self._openRowKey].close();
       }
       self._openRowKey = null;
     }

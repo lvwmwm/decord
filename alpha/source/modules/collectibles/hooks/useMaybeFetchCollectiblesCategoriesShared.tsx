@@ -1,15 +1,15 @@
-// Module ID: 10078
-// Function ID: 10079
+// Module ID: 10063
+// Function ID: 10064
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 4976, 7252, 1087, 558, 576, 504, 7297, 7251, 2]
+// Dependencies: [32, 19, 4977, 7257, 1087, 558, 576, 504, 7302, 7256, 2]
 
-// Module 10078 (useMaybeFetchCollectiblesCategoriesShared)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7251 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7297 */;
+// Module 10063 (useMaybeFetchCollectiblesCategoriesShared)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7256 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7302 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore_mod from "ExperimentStore" /* 4976 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7252 */;
+import ExperimentStore_mod from "ExperimentStore" /* 4977 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7257 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -172,7 +172,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
               tmp20 = Date.now() - metroImportAll < metroImportDefault;
             }
             if (!tmp20) {
-              const tmp12Result = tmp12(7251);
+              const tmp12Result = tmp12(7256);
               const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
             }
           }
@@ -263,7 +263,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
               tmp20 = Date.now() - metroImportAll < metroImportDefault;
             }
             if (!tmp20) {
-              const tmp12Result = tmp12(7251);
+              const tmp12Result = tmp12(7256);
               const collectiblesCategories = tmp12Result.fetchCollectiblesCategories(obj, closure_1, closure_2);
             }
           }

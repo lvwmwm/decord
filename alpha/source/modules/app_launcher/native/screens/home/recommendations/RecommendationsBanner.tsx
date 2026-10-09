@@ -1,21 +1,21 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11733
+// Function ID: 11734
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1403, 1085, 21, 5090, 558, 576, 11232, 11787, 10752, 6164, 8286, 8348, 1414, 8244, 2]
+// Dependencies: [19, 17, 1404, 1085, 21, 5091, 558, 576, 10587, 11724, 10922, 6163, 8294, 8356, 1415, 8252, 2]
 
-// Module 11796 (RecommendationsBanner)
+// Module 11733 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8244 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8286 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10752 */;
-import AppLauncherContext from "AppLauncherContext" /* 11232 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8252 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8294 */;
+import AppLauncherContext from "AppLauncherContext" /* 10587 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10922 */;
 import react from "react" /* 19 */;
-import UserRecord from "UserRecord" /* 1403 */;
+import UserRecord from "UserRecord" /* 1404 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,9 +25,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp3;
-const FastImageDefault = tmp3(6164);
-const UserProfileBannerDefault = tmp3(8348);
-const HeroMedia = tmp(11787);
+const FastImageDefault = tmp3(6163);
+const UserProfileBannerDefault = tmp3(8356);
+const HeroMedia = tmp(11724);
 const View = react_native.View;
 ({ BANNER_HEIGHT: metroRequire, EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
@@ -113,7 +113,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function R
             return tmp17;
           }
           if (null != imageSource) {
-            tmp21 = jsx(tmp7(6164), { style: imageStyle, source: imageSource, resizeMode: "cover" });
+            tmp21 = jsx(tmp7(6163), { style: imageStyle, source: imageSource, resizeMode: "cover" });
           } else {
             tmp21 = <View style={imageStyle} />;
           }
@@ -151,9 +151,9 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function R
   importDefault = undefined;
   applicationId = applicationId.applicationId;
   const tmp = dependencyMap;
-  let obj = heroMediaDimensions(11232);
+  let obj = heroMediaDimensions(10587);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(11787);
+  let obj2 = heroMediaDimensions(11724);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);
@@ -291,7 +291,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           cResult[11] = tmp31;
           tmp28 = tmp31;
         }
-        const tmp27 = jsx(tmp6(6164), { style: tmp3.image, source: tmp24, resizeMode: "cover" });
+        const tmp27 = jsx(tmp6(6163), { style: tmp3.image, source: tmp24, resizeMode: "cover" });
         cResult[6] = tmp3.image;
         cResult[7] = tmp24;
         cResult[8] = tmp27;

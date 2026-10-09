@@ -1,10 +1,10 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9241
+// Function ID: 9242
 // Name: getUploaderFileSizeMetrics
 // Dependencies: [2]
 // Exports: getUploaderChannelId, getUploaderFileSizeMetrics
 
-// Module 9207 (getUploaderFileSizeMetrics)
+// Module 9241 (getUploaderFileSizeMetrics)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_uploads/getUploaderFileSizeMetrics.tsx");
@@ -24,7 +24,7 @@ export const getUploaderChannelId = function getUploaderChannelId(file) {
   return channelId;
 };
 export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(totalPreCompressionSize) {
-  const f100118 = (acc, item) => acc + item;
+  const f100633 = (acc, item) => acc + item;
   let items = totalPreCompressionSize.items;
   if (items == null) {
     items = [];
@@ -41,7 +41,7 @@ export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(to
   if (totalPreCompressionSize.totalPreCompressionSize > 0) {
     totalPreCompressionSize = totalPreCompressionSize.totalPreCompressionSize;
   } else {
-    totalPreCompressionSize = mapped.reduce(f100118, 0);
+    totalPreCompressionSize = mapped.reduce(f100633, 0);
   }
   if (null != totalPreCompressionSize.totalPostCompressionSize) {
     let totalPostCompressionSize;
@@ -52,5 +52,5 @@ export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(to
     obj.numAttachments = totalPreCompressionSize.attachmentsCount > 0 ? totalPreCompressionSize.attachmentsCount : items.length;
     return obj;
   }
-  totalPostCompressionSize = mapped1.reduce(f100118, 0);
+  totalPostCompressionSize = mapped1.reduce(f100633, 0);
 };

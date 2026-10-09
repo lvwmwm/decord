@@ -1,15 +1,15 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 10341
+// Function ID: 10342
 // Name: useKeyboardActionSheetHeight
-// Dependencies: [6261, 1630, 1496, 6659, 558, 576, 2]
+// Dependencies: [6263, 1631, 1497, 6666, 558, 576, 2]
 // Exports: getKeyboardActionSheetHeight
 
-// Module 10354 (useKeyboardActionSheetHeight)
+// Module 10341 (useKeyboardActionSheetHeight)
 import react from "react" /* 576 */;
-import useWindowDimensions from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1630 */;
-import NavigatorConstants from "NavigatorConstants" /* 6261 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 6659 */;
+import useWindowDimensions from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1631 */;
+import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 6666 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,11 +40,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardA
       return tmp9;
     }
   }
-  const bound = Math.max(0, tmp7.height - tmp(6261).NAV_BAR_HEIGHT_MULTILINE - tmp5.top);
+  const bound = Math.max(0, tmp7.height - tmp(6263).NAV_BAR_HEIGHT_MULTILINE - tmp5.top);
   let bound1 = Math.min(tmp8, bound);
   if (bound1 >= bound) {
     const _Math = Math;
-    bound1 = Math.max(0, bound - tmp(6261).NAV_BAR_HEIGHT_MULTILINE);
+    bound1 = Math.max(0, bound - tmp(6263).NAV_BAR_HEIGHT_MULTILINE);
   }
   const obj3 = { minimum: bound1, maximum: bound };
   cResult[1] = tmp8;

@@ -1,66 +1,23 @@
 // Module ID: 1575
 // Function ID: 1576
 // Name: react
-// Dependencies: [19, 1545]
-// Exports: useFocusEffect
+// Dependencies: [19, 1540]
+// Exports: useTheme
 
 // Module 1575 (react)
-import _mod1545 from "module_1545" /* 1545 */;
+import react2 from "react" /* 1540 */;
 import react from "react" /* 19 */;
 
-let _undefined, c0, c1, navigation;
 
-
-export const useFocusEffect = function useFocusEffect(cResult) {
-  let closure_0 = cResult;
-  const obj = _mod1545;
-  navigation = obj.useNavigation();
-  if (undefined !== arguments[1]) {
-    let tmp2 = globalThis;
-    const _console = console;
-    console.error("You passed a second argument to 'useFocusEffect', but it only accepts one argument. If you want to pass a dependency array, you can use 'React.useCallback':\n\nuseFocusEffect(\n  React.useCallback(() => {\n    // Your code here\n  }, [depA, depB])\n);\n\nSee usage guide: https://reactnavigation.org/docs/use-focus-effect");
+export const useTheme = function useTheme() {
+  const context = react.useContext(react2.ThemeContext);
+  if (null == context) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("Couldn't find a theme. Is your component inside NavigationContainer or does it have a theme?");
+    throw error;
+  } else {
+    return context;
   }
-  const items = [cResult, navigation];
-  const effect = react.useEffect(() => {
-    navigation = false;
-    if (navigation.isFocused()) {
-      let tmp3;
-      let tmp = c0;
-      const tmp2 = c0();
-      if (undefined === tmp2) {
-        tmp3 = tmp2;
-      }
-      c0 = tmp3;
-      navigation = true;
-    }
-    let closure_2 = obj.addListener("focus", () => {
-      const tmp = c1;
-      if (!tmp) {
-        let tmp5;
-        if (undefined !== _undefined) {
-          _undefined();
-        }
-        const tmp4 = _undefined();
-        if (undefined === tmp4) {
-          tmp5 = tmp4;
-        }
-        _undefined = tmp5;
-        c1 = true;
-      }
-    });
-    let closure_3 = obj.addListener("blur", () => {
-      if (undefined !== _undefined) {
-        _undefined();
-      }
-      _undefined = undefined;
-      c1 = false;
-    });
-    return () => {
-      if (undefined !== _undefined) {
-        _undefined();
-      }
-      closure_2();
-      closure_3();
-    };
-  }, items);
 };

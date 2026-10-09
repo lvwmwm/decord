@@ -1,14 +1,14 @@
-// Module ID: 7160
-// Function ID: 7161
+// Module ID: 7165
+// Function ID: 7166
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1389, 7161, 558, 576, 504, 4726, 2058, 2]
+// Dependencies: [32, 19, 1390, 7166, 558, 576, 504, 4728, 2059, 2]
 // Exports: hasUserTrialOfferExpired
 
-// Module 7160 (useTrialOffer)
+// Module 7165 (useTrialOffer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import UserOfferStore from "UserOfferStore" /* 7161 */;
+import UserStore from "UserStore" /* 1390 */;
+import UserOfferStore from "UserOfferStore" /* 7166 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -139,7 +139,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
                 }
                 const obj = timeout;
                 if (timeout != null) {
-                  obj.start(num, f152881);
+                  obj.start(num, f153221);
                 }
               }
             });
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
   }
   const items2 = [first, stateFromStores];
   const effect = obj3.useEffect(function() {
-    const f152882 = () => {
+    const f153222 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired) {
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
         }
         const obj = timeout;
         if (timeout != null) {
-          obj.start(num, f152882);
+          obj.start(num, f153222);
         }
       }
     };
@@ -229,7 +229,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialOffe
             let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, f152882);
+          timeout.start(num, f153222);
         }
         return () => timeout.stop();
       }

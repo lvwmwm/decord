@@ -1,22 +1,22 @@
-// Module ID: 17721
-// Function ID: 17722
+// Module ID: 17873
+// Function ID: 17874
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 2063, 2115, 21, 5090, 558, 576, 573, 11911, 17179, 11338, 1126, 5086, 2]
+// Dependencies: [19, 17, 2064, 2115, 21, 5091, 558, 576, 573, 11848, 17329, 10711, 1126, 5087, 2]
 
-// Module 17721 (LaunchPadMembers)
+// Module 17873 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import GuildChannelUserListDefault from "GuildChannelUserList" /* 11338 */;
-import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 11911 */;
-import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17179 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import GuildChannelUserListDefault from "GuildChannelUserList" /* 10711 */;
+import PrivateChannelUserListDefault from "PrivateChannelUserList" /* 11848 */;
+import ThreadChannelUserListDefault from "ThreadChannelUserList" /* 17329 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      return { channelId: "code", type: "man_with_veil_light_skin_tone" };
+      return { channelId: "code", type: true };
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -206,7 +206,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    return { channelId: "code", type: "man_with_veil_light_skin_tone" };
+    return { channelId: "code", type: true };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
@@ -218,7 +218,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp8 = <View style={tmp.wrapper}>{null}</View>;
   } else {
     ({ style: tmp.emptyText, variant: "text-md/semibold", children: intl.string(intl2.t["+7wtJq"]) });
-    const Text = tmp2(5086).Text;
+    const Text = tmp2(5087).Text;
     intl = tmp2(1126).intl;
     tmp8 = <View style={tmp.emptyWrapper}>{null}</View>;
   }

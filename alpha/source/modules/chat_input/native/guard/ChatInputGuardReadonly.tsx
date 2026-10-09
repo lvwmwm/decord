@@ -1,26 +1,26 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 12156
+// Function ID: 12157
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 2067, 2063, 4705, 4707, 6040, 4717, 1389, 11652, 1085, 21, 558, 576, 12003, 504, 1387, 1126, 5417, 5105, 1112, 11, 12183, 2]
+// Dependencies: [19, 2068, 2064, 4707, 4709, 6042, 4719, 1390, 11588, 1085, 21, 558, 576, 11940, 504, 1388, 1126, 5418, 5106, 1112, 11, 12122, 2]
 
-// Module 12217 (ChatInputGuardReadonly)
+// Module 12156 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl4 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1387 */;
-import ChannelRecord from "ChannelRecord" /* 2067 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4705 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5105 */;
-import ChatInputConstants from "ChatInputConstants" /* 11652 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12183 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ChannelRecord from "ChannelRecord" /* 2068 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4707 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
+import ChatInputConstants from "ChatInputConstants" /* 11588 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12122 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import PermissionStore from "PermissionStore" /* 4707 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
-import UserStore from "UserStore" /* 1389 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import PermissionStore from "PermissionStore" /* 4709 */;
+import ReadStateStore from "ReadStateStore" /* 6042 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

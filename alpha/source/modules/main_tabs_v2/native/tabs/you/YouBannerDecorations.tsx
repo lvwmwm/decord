@@ -1,28 +1,28 @@
-// Module ID: 17262
-// Function ID: 17263
+// Module ID: 9099
+// Function ID: 9100
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2129, 1389, 2060, 1391, 21, 1382, 587, 5090, 558, 13681, 7160, 4898, 2048, 1126, 504, 8286, 8329, 8340, 4929, 683, 4726, 17263, 10576, 6934, 17264, 10572, 5980, 5054, 17265, 1999, 17267, 12611, 3827, 15080, 17269, 9005, 7082, 17268, 5387, 2]
+// Dependencies: [19, 17, 2129, 1390, 2061, 1392, 21, 1383, 587, 5091, 558, 9100, 7165, 4899, 2049, 1126, 504, 8294, 8337, 8348, 4930, 683, 4728, 9138, 9144, 6941, 9145, 9146, 5982, 5055, 12946, 2000, 12952, 12551, 3827, 12955, 12957, 9016, 7085, 12954, 5388, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 17262 (YouBannerDecorations)
+// Module 9099 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import dismissible_content from "dismissible_content" /* 2048 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2060 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2129 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4898 */;
-import QuestTypes from "QuestTypes" /* 5980 */;
-import useTrialOffer from "useTrialOffer" /* 7160 */;
-import QuestUtils from "QuestUtils" /* 10572 */;
-import PromotionsHooks from "PromotionsHooks" /* 13681 */;
-import you_tracking_Tracking from "you/tracking/Tracking" /* 17264 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4899 */;
+import QuestTypes from "QuestTypes" /* 5982 */;
+import useTrialOffer from "useTrialOffer" /* 7165 */;
+import PromotionsHooks from "PromotionsHooks" /* 9100 */;
+import tracking_Tracking from "tracking/Tracking" /* 9145 */;
+import QuestUtils from "QuestUtils" /* 9146 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -199,23 +199,23 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
   const items2 = [tmp14, navigateToSettings, tmp18];
   const items3 = [navigateToPremium];
   const callback = react.useCallback(() => {
-    const obj = you_tracking_Tracking;
+    const obj = tracking_Tracking;
     const obj2 = { isBadged };
     const result = obj.trackYouTabSettingsIconPress(obj2);
     navigateToSettings();
     let tmp5 = currentUser;
     if (tmp5) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(2048).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(2049).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
     if (tmp5) {
       const tmpResult2 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(2048).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(2049).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];
   const callback1 = react.useCallback(() => {
-    const obj = you_tracking_Tracking;
+    const obj = tracking_Tracking;
     const result = obj.trackYouTabNitroIconPress();
     navigateToPremium();
   }, items3);

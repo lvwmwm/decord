@@ -1,33 +1,31 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17705
+// Function ID: 17706
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [32, 19, 17, 2063, 1389, 5424, 1085, 21, 5090, 587, 1381, 558, 576, 17551, 17550, 17536, 504, 7038, 7046, 1264, 9483, 9485, 1126, 5375, 12601, 13409, 11622, 6809, 5086, 8198, 8376, 6885, 2]
+// Dependencies: [32, 19, 17, 2064, 1390, 5425, 1085, 21, 5091, 587, 1382, 558, 576, 17703, 17702, 17688, 504, 7041, 7049, 1265, 9523, 9521, 1126, 5376, 12541, 6163, 13504, 11555, 6816, 5087, 8206, 8384, 6892, 2]
 
-// Module 17553 (SoundboardSoundPreviewActionSheet)
+// Module 17705 (SoundboardSoundPreviewActionSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7038 */;
-import SoundboardUtils from "SoundboardUtils" /* 7046 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17536 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7041 */;
+import SoundboardUtils from "SoundboardUtils" /* 7049 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 17688 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import UserStore from "UserStore" /* 1389 */;
-import SoundboardStore from "SoundboardStore" /* 5424 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import UserStore_mod from "UserStore" /* 1390 */;
+import SoundboardStore from "SoundboardStore" /* 5425 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 5091 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
+let c9;
 let closure_12;
-let closure_14;
-let hasOwnProperty;
 let map1;
-let metroRequire;
 let num;
 let obj2;
 let obj3;
@@ -37,9 +35,10 @@ let size;
 let size1;
 let size2;
 let unpackModuleId;
-({ View: hasOwnProperty, Image: metroRequire } = react_native);
-({ AnalyticEvents: c10, AnalyticsObjects: unpackModuleId } = Constants);
-({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
+const View = react_native.View;
+let UserStore = UserStore_mod;
+({ AnalyticEvents: c9, AnalyticsObjects: c10 } = Constants);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { soundPresentation: obj2, soundPresentationPlaying: obj3, emoji: size, emojiFastImage: { width: 128, height: 128 }, emojiText: { fontSize: num, lineHeight: 74 }, text: obj4, buttonContainer: obj5, star: size1, primaryIcon: size2 };
 obj2 = { borderWidth: 2, borderColor: "transparent", borderRadius: nativeDefault.radii.lg, paddingBottom: nativeDefault.space.PX_16 };
@@ -54,16 +53,14 @@ obj4 = { marginTop: nativeDefault.space.PX_16, alignSelf: "center" };
 obj5 = { gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_24 };
 size1 = { width: 16, height: 16, tintColor: nativeDefault.colors.TEXT_DEFAULT };
 size2 = { width: 16, height: 16, tintColor: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-let closure_15 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardSoundPreviewActionSheet(channel) {
+let closure_14 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardSoundPreviewActionSheet(channel) {
   let closure_10;
   let isLocked;
   let lockedAccessibilityHint;
   let onLockedPress;
   let soundGridLocation;
-  let stateFromStores;
-  let stateFromStores1;
-  let tmp30;
+  let tmp31;
   let tmp = channel;
   let obj = channel(soundGridLocation[12]);
   const cResult = obj.c(97);
@@ -71,7 +68,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
   const sound = channel.sound;
   soundGridLocation = channel.soundGridLocation;
   const analyticsSource = channel.analyticsSource;
-  closure_15();
+  closure_14();
   let id = channel.id;
   let obj2 = channel(soundGridLocation[13]);
   const soundboardSoundPreviewMenuEnabled = obj2.useSoundboardSoundPreviewMenuEnabled("SoundboardSoundPreviewActionSheet");
@@ -85,33 +82,33 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
         if (cResult[3] === soundGridLocation) {
           tmp7 = cResult[4];
         }
-        let closure_7 = tmp7;
+        UserStore = tmp7;
         if (cResult[5] === onLockedPress) {
           let tmp11;
           let tmp10;
           let tmp14;
           let tmp16;
           let tmp18;
-          let tmp19;
           let tmp20;
-          let tmp23;
-          let tmp25;
+          let tmp21;
           let tmp24;
+          let tmp26;
+          let tmp25;
           if (cResult[6] === tmp7) {
             let tmp8 = cResult[7];
           }
           const _Symbol = Symbol;
-          class U {
+          class T {
             constructor() {
-              tmp = onLockedPress(() => closure_1_7());
+              tmp = onLockedPress(() => currentUser());
               return;
             }
           }
           if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-            let items = [stateFromStores];
-            class N {
+            let items = [UserStore];
+            class R {
               constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -120,21 +117,21 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
               }
             }
             cResult[8] = items;
-            cResult[9] = N;
-            tmp11 = N;
+            cResult[9] = R;
+            tmp11 = R;
             tmp10 = items;
           } else {
             tmp10 = cResult[8];
             tmp11 = cResult[9];
           }
           let tmpResult = tmp(tmp2[16]);
-          stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
+          const stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
           const _Symbol2 = Symbol;
           if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-            const items1 = [stateFromStores1];
-            class N {
+            const items1 = [stateFromStores];
+            class R {
               constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -148,15 +145,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
             tmp14 = cResult[10];
           }
           if (cResult[11] !== sound.soundId) {
-            class X {
-              constructor() {
-                return SoundboardStore.isFavoriteSound(sound.soundId);
-              }
-            }
+            const fn2 = function w() {
+              return SoundboardStore.isFavoriteSound(sound.soundId);
+            };
             cResult[11] = sound.soundId;
-            class N {
+            class R {
               constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -164,28 +159,19 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
                 return id;
               }
             }
-            cResult[12] = X;
-            tmp16 = X;
+            cResult[12] = fn2;
+            tmp16 = fn2;
           } else {
-            class X {
-              constructor() {
-                return SoundboardStore.isFavoriteSound(sound.soundId);
-              }
-            }
+            tmp16 = cResult[12];
           }
           const tmpResult4 = tmp(soundGridLocation[16]);
-          stateFromStores1 = tmpResult4.useStateFromStores(tmp14, tmp16);
+          const stateFromStores1 = tmpResult4.useStateFromStores(tmp14, tmp16);
           const _Symbol3 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-            class X {
+            const items2 = [stateFromStores];
+            class R {
               constructor() {
-                return SoundboardStore.isFavoriteSound(sound.soundId);
-              }
-            }
-            const items2 = [stateFromStores1];
-            class N {
-              constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -196,22 +182,18 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
             cResult[13] = items2;
             tmp18 = items2;
           } else {
-            class X {
-              constructor() {
-                return SoundboardStore.isFavoriteSound(sound.soundId);
-              }
-            }
+            tmp18 = cResult[13];
           }
           if (cResult[14] !== sound.soundId) {
-            class K {
+            class H {
               constructor() {
                 return SoundboardStore.isPlayingSound(sound.soundId);
               }
             }
             cResult[14] = sound.soundId;
-            class N {
+            class R {
               constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -219,25 +201,25 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
                 return id;
               }
             }
-            cResult[15] = K;
-            tmp19 = K;
+            cResult[15] = H;
+            tmp20 = H;
           } else {
-            class K {
+            class H {
               constructor() {
                 return SoundboardStore.isPlayingSound(sound.soundId);
               }
             }
           }
           if (cResult[16] !== sound) {
-            class K {
+            class H {
               constructor() {
                 return SoundboardStore.isPlayingSound(sound.soundId);
               }
             }
-            tmp21[0] = sound;
-            class N {
+            tmp22[0] = sound;
+            class R {
               constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -245,10 +227,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
                 return id;
               }
             }
-            cResult[17] = tmp21;
-            tmp20 = tmp21;
+            cResult[17] = tmp22;
+            tmp21 = tmp22;
           } else {
-            class K {
+            class H {
               constructor() {
                 return SoundboardStore.isPlayingSound(sound.soundId);
               }
@@ -256,17 +238,17 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
           }
           const _Symbol4 = Symbol;
           const tmpResult5 = tmp(soundGridLocation[16]);
-          const stateFromStores2 = tmpResult5.useStateFromStores(tmp18, tmp19, tmp20);
+          const stateFromStores2 = tmpResult5.useStateFromStores(tmp18, tmp20, tmp21);
           if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-            class K {
+            class H {
               constructor() {
                 return SoundboardStore.isPlayingSound(sound.soundId);
               }
             }
-            const items3 = [stateFromStores1];
-            class N {
+            const items3 = [stateFromStores];
+            class R {
               constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -275,25 +257,25 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
               }
             }
             cResult[18] = items3;
-            tmp23 = items3;
+            tmp24 = items3;
           } else {
-            class K {
+            class H {
               constructor() {
                 return SoundboardStore.isPlayingSound(sound.soundId);
               }
             }
           }
           if (cResult[19] !== stateFromStores) {
-            class Y {
+            class M {
               constructor() {
                 const isUserPlayingSoundsResult = null != stateFromStores && SoundboardStore.isUserPlayingSounds(tmp);
                 return isUserPlayingSoundsResult;
               }
             }
             const items4 = [stateFromStores];
-            class N {
+            class R {
               constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -302,56 +284,56 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
               }
             }
             cResult[19] = stateFromStores;
-            cResult[20] = Y;
+            cResult[20] = M;
             cResult[21] = items4;
-            tmp25 = items4;
-            tmp24 = Y;
+            tmp26 = items4;
+            tmp25 = M;
           } else {
-            class Y {
+            class M {
               constructor() {
                 const isUserPlayingSoundsResult = null != stateFromStores && SoundboardStore.isUserPlayingSounds(tmp);
                 return isUserPlayingSoundsResult;
               }
             }
-            tmp25 = cResult[21];
+            tmp26 = cResult[21];
           }
           const tmpResult6 = tmp(soundGridLocation[16]);
-          const stateFromStores3 = tmpResult6.useStateFromStores(tmp23, tmp24, tmp25);
-          [tmp30, closure_10] = analyticsSource(id.useState(false), 2);
+          const stateFromStores3 = tmpResult6.useStateFromStores(tmp24, tmp25, tmp26);
+          [tmp31, closure_10] = analyticsSource(id.useState(false), 2);
           analyticsSource(id.useState(false), 2);
-          if (tmp30) {
-            class Y {
+          if (tmp31) {
+            class M {
               constructor() {
                 const isUserPlayingSoundsResult = null != stateFromStores && SoundboardStore.isUserPlayingSounds(tmp);
                 return isUserPlayingSoundsResult;
               }
             }
           }
-          let closure_11 = tmp30;
+          let closure_11 = tmp31;
           if (cResult[22] === stateFromStores1) {
-            class Y {
+            class M {
               constructor() {
                 const isUserPlayingSoundsResult = null != stateFromStores && SoundboardStore.isUserPlayingSounds(tmp);
                 return isUserPlayingSoundsResult;
               }
             }
             if (cResult[25] === id) {
-              class Y {
+              class M {
                 constructor() {
                   const isUserPlayingSoundsResult = null != stateFromStores && SoundboardStore.isUserPlayingSounds(tmp);
                   return isUserPlayingSoundsResult;
                 }
               }
             }
-            function ie() {
+            function oe() {
               let guild_id;
-              const tmp = constants2;
+              const tmp = closure_11;
               if (!tmp) {
-                closure_10(true);
+                constants2(true);
                 const obj = { sound_id: null, sound_name: null, sound_guild_id: null, location_guild_id: guild_id };
                 ({ soundId: obj.sound_id, name: obj.sound_name, guildId: obj.sound_guild_id } = sound);
                 const track = AnalyticsUtilsDefault.track;
-                const EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED = c10.EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED;
+                const EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED = stateFromStores1.EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED;
                 AnalyticsUtilsDefault;
                 channel = ChannelStore.getChannel(id);
                 guild_id = undefined;
@@ -365,9 +347,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
                 obj2.playSoundLocally(tmp10, tmp8);
               }
             }
-            class N {
+            class R {
               constructor() {
-                const currentUser = stateFromStores.getCurrentUser();
+                currentUser = currentUser.getCurrentUser();
                 id = undefined;
                 if (currentUser != null) {
                   id = currentUser.id;
@@ -376,18 +358,18 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
               }
             }
             cResult[25] = id;
-            cResult[26] = tmp30;
+            cResult[26] = tmp31;
             cResult[27] = sound;
-            cResult[28] = ie;
+            cResult[28] = oe;
           }
-          const fn2 = function q() {
+          const fn3 = function z() {
             let obj2;
             if (stateFromStores1) {
               const tmpResult = SoundboardActionCreators;
               tmpResult.removeFavoriteSound(sound.soundId);
             } else {
               const obj = { sound, location: obj2 };
-              obj2 = { object: unpackModuleId.SOUNDBOARD_SOUND };
+              obj2 = { object: constants.SOUNDBOARD_SOUND };
               const tmpResult2 = SoundboardUtils;
               tmpResult2.trackSoundFavorited(obj);
               const obj4 = SoundboardActionCreators;
@@ -396,22 +378,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
           };
           cResult[22] = stateFromStores1;
           cResult[23] = sound;
-          cResult[24] = fn2;
+          cResult[24] = fn3;
         }
-        class U {
+        class T {
           constructor() {
-            tmp = onLockedPress(() => closure_1_7());
+            tmp = onLockedPress(() => currentUser());
             return;
           }
         }
         cResult[5] = onLockedPress;
         cResult[6] = tmp7;
-        cResult[7] = U;
-        tmp8 = U;
+        cResult[7] = T;
+        tmp8 = T;
       }
     }
   }
-  const fn = function y() {
+  const fn = function b() {
     const tmp = soundboardSoundPreviewMenuEnabled;
     if (tmp) {
       const obj2 = { channel, analyticsSource, initialScrollLocation: soundGridLocation };
@@ -453,10 +435,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
   const soundGridLocation = channel.soundGridLocation;
   const analyticsSource = channel.analyticsSource;
   onLockedPress = undefined;
-  let stateFromStores;
-  let stateFromStores1;
   c10 = undefined;
-  let tmp = closure_15();
+  let tmp = closure_14();
   let id = channel.id;
   let obj = channel(soundGridLocation[13]);
   const soundboardSoundPreviewMenuEnabled = obj.useSoundboardSoundPreviewMenuEnabled("SoundboardSoundPreviewActionSheet");
@@ -478,23 +458,23 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
     onLockedPress(() => onDismiss());
   }, items1);
   let obj4 = channel(soundGridLocation[16]);
-  const items2 = [stateFromStores];
-  stateFromStores = obj4.useStateFromStores(items2, () => {
-    const currentUser = stateFromStores.getCurrentUser();
+  const items2 = [onDismiss];
+  const stateFromStores = obj4.useStateFromStores(items2, () => {
+    const currentUser = callback.getCurrentUser();
     id = undefined;
     if (currentUser != null) {
       id = currentUser.id;
     }
     return id;
   });
-  const items3 = [stateFromStores1];
+  const items3 = [stateFromStores];
   const obj5 = channel(soundGridLocation[16]);
-  stateFromStores1 = obj5.useStateFromStores(items3, () => SoundboardStore.isFavoriteSound(sound.soundId));
-  const items4 = [stateFromStores1];
+  const stateFromStores1 = obj5.useStateFromStores(items3, () => SoundboardStore.isFavoriteSound(sound.soundId));
+  const items4 = [stateFromStores];
   const items5 = [sound];
   const obj6 = channel(soundGridLocation[16]);
   const stateFromStores2 = obj6.useStateFromStores(items4, () => SoundboardStore.isPlayingSound(sound.soundId), items5);
-  const items6 = [stateFromStores1];
+  const items6 = [stateFromStores];
   const items7 = [stateFromStores];
   const obj7 = channel(soundGridLocation[16]);
   obj7.useStateFromStores(items6, () => {
@@ -513,7 +493,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
       tmpResult.removeFavoriteSound(sound.soundId);
     } else {
       const obj = { sound, location: obj2 };
-      obj2 = { object: unpackModuleId.SOUNDBOARD_SOUND };
+      obj2 = { object: _undefined.SOUNDBOARD_SOUND };
       const tmpResult2 = SoundboardUtils;
       tmpResult2.trackSoundFavorited(obj);
       const obj4 = SoundboardActionCreators;
@@ -529,7 +509,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
       const obj = { sound_id: null, sound_name: null, sound_guild_id: null, location_guild_id: guild_id };
       ({ soundId: obj.sound_id, name: obj.sound_name, guildId: obj.sound_guild_id } = sound);
       const track = AnalyticsUtilsDefault.track;
-      const EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED = _undefined.EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED;
+      const EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED = stateFromStores1.EXPRESSION_PICKER_SOUNDBOARD_SOUND_PREVIEWED;
       AnalyticsUtilsDefault;
       channel = ChannelStore.getChannel(id);
       guild_id = undefined;
@@ -554,7 +534,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
   if (soundboardSoundPreviewMenuEnabled) {
     str = "secondary";
   }
-  const obj8 = { variant: str, icon: closure_12(StarOutlineIcon, obj9), text: stringResult, onPress: callback2 };
+  const obj8 = { variant: str, icon: stateFromStores3(StarOutlineIcon, obj9), text: stringResult, onPress: callback2 };
   if (stateFromStores1) {
     StarOutlineIcon = tmp2(tmp3[20]).StarIcon;
   } else {
@@ -569,24 +549,25 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
   } else {
     stringResult = string(t.yZFibY);
   }
-  const tmp18Result = closure_12(Button, obj8);
+  const tmp18Result = stateFromStores3(Button, obj8);
   const Button2 = tmp2(tmp3[23]).Button;
   if (tmp13) {
     const obj10 = { style: tmp.star };
     tmp18Result3 = tmp18(tmp2(tmp3[24]).WaveformIcon, obj10);
   } else {
-    const obj11 = { style: tmp.star, source: sound(soundGridLocation[25]) };
-    tmp18Result3 = tmp18(onLockedPress, obj11);
+    const obj11 = { style: tmp.star, source: sound(soundGridLocation[26]) };
+    const tmp22 = sound(soundGridLocation[25]);
+    tmp18Result3 = tmp18(tmp22, obj11);
   }
   const obj12 = { variant: "secondary", icon: tmp18Result3, text: string2(tmp13 ? t2.diasud : t2.Kd4uxG), onPress: callback3 };
   const intl2 = tmp2(tmp3[22]).intl;
   string2 = intl2.string;
   t2 = tmp2(tmp3[22]).t;
-  const tmp18Result4 = closure_12(Button2, obj12);
+  const tmp18Result4 = stateFromStores3(Button2, obj12);
   const items11 = [tmp.soundPresentation, ];
   let prop = null;
-  const obj13 = { startExpanded: true, onDismiss, children: closure_13(soundboardSoundPreviewMenuEnabled, obj22) };
-  const ActionSheet = tmp2(tmp3[31]).ActionSheet;
+  const obj13 = { startExpanded: true, onDismiss, children: closure_12(soundboardSoundPreviewMenuEnabled, obj22) };
+  const ActionSheet = tmp2(tmp3[32]).ActionSheet;
   if (!tmp13 && stateFromStores2 && stateFromStores3) {
     prop = tmp.soundPresentationPlaying;
   }
@@ -598,35 +579,35 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
     intl3 = tmp2(tmp3[22]).intl;
     tmp28 = obj15;
   }
-  const obj16 = { fastImageStyle: items12, textEmojiStyle: items13, src: sound(soundGridLocation[26])(sound, 64), name: str2 };
+  const obj16 = { fastImageStyle: items12, textEmojiStyle: items13, src: sound(soundGridLocation[27])(sound, 64), name: str2 };
   items12 = [, ];
   ({ emoji: arr13[0], emojiFastImage: arr13[1] } = tmp);
   items13 = [, ];
   ({ emoji: arr14[0], emojiText: arr14[1] } = tmp);
   str2 = sound.emojiName;
-  const tmp29 = sound(soundGridLocation[27]);
+  const tmp29 = sound(soundGridLocation[28]);
   if (str2 == null) {
     str2 = "";
   }
-  items14 = [closure_12(tmp29, obj16), ];
+  items14 = [stateFromStores3(tmp29, obj16), ];
   const obj17 = { style: tmp.text, variant: "heading-lg/extrabold", children: sound.name };
-  items14[1] = closure_12(channel(soundGridLocation[28]).Text, obj17);
-  const items15 = [closure_13(soundboardSoundPreviewMenuEnabled, obj14), ];
+  items14[1] = stateFromStores3(channel(soundGridLocation[29]).Text, obj17);
+  const items15 = [closure_12(soundboardSoundPreviewMenuEnabled, obj14), ];
   const obj19 = { children: null };
-  const obj18 = { style: tmp.buttonContainer, children: closure_13(tmp30, tmp31) };
-  tmp30 = closure_14;
+  const obj18 = { style: tmp.buttonContainer, children: closure_12(tmp30, tmp31) };
+  tmp30 = closure_13;
   if (soundboardSoundPreviewMenuEnabled) {
     let PlayIcon;
     const Button3 = tmp2(tmp3[23]).Button;
     if (isLocked) {
-      PlayIcon = tmp2(tmp3[29]).LockIcon;
+      PlayIcon = tmp2(tmp3[30]).LockIcon;
     } else {
-      PlayIcon = tmp2(tmp3[30]).PlayIcon;
+      PlayIcon = tmp2(tmp3[31]).PlayIcon;
     }
-    const obj20 = { variant: "primary", icon: closure_12(PlayIcon, obj21), text: intl4.string(channel(soundGridLocation[22]).t.RscU7I), disabled: isLocked, accessibilityHint: lockedAccessibilityHint, onPress: callback4, onPressDisabled: callback1 };
+    const obj20 = { variant: "primary", icon: stateFromStores3(PlayIcon, obj21), text: intl4.string(channel(soundGridLocation[22]).t.RscU7I), disabled: isLocked, accessibilityHint: lockedAccessibilityHint, onPress: callback4, onPressDisabled: callback1 };
     obj21 = { style: tmp.primaryIcon };
     intl4 = tmp2(tmp3[22]).intl;
-    const items16 = [closure_12(Button3, obj20), tmp18Result4, tmp18Result];
+    const items16 = [stateFromStores3(Button3, obj20), tmp18Result4, tmp18Result];
     obj19.children = items16;
     tmp31 = obj19;
   } else {
@@ -635,10 +616,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
     tmp31 = obj19;
   }
   obj22 = { children: items15 };
-  items15[1] = closure_12(soundboardSoundPreviewMenuEnabled, obj18);
-  return closure_12(ActionSheet, obj13);
+  items15[1] = stateFromStores3(soundboardSoundPreviewMenuEnabled, obj18);
+  return stateFromStores3(ActionSheet, obj13);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/soundboard/native/SoundboardSoundPreviewActionSheet.tsx");
 
-export default tmp6;
+export default tmp5;

@@ -1,0 +1,10 @@
+// Module ID: 18434
+// Function ID: 18435
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 18434 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "4e2695064a96facdf08d029a4fb1d275", name: "ic_add_perk_24px", type: "png" });

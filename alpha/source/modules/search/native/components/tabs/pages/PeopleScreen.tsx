@@ -1,17 +1,17 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17325
+// Function ID: 17326
 // Name: PeopleScreen
-// Dependencies: [5, 19, 12082, 12067, 9247, 9246, 21, 558, 576, 12060, 504, 17116, 17112, 7001, 12074, 17176, 17108, 17120, 2]
+// Dependencies: [5, 19, 12019, 12004, 9285, 9284, 21, 558, 576, 11997, 504, 17266, 17262, 7008, 12011, 17326, 17258, 17270, 2]
 
-// Module 17175 (PeopleScreen)
+// Module 17325 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9246 */;
-import tracking_TrackingDefault from "tracking/Tracking" /* 12074 */;
+import TrackingConstants from "TrackingConstants" /* 9284 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12011 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12082 */;
-import SearchQueryStore_mod from "SearchQueryStore" /* 12067 */;
-import SearchConstants from "SearchConstants" /* 9247 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12019 */;
+import SearchQueryStore_mod from "SearchQueryStore" /* 12004 */;
+import SearchConstants from "SearchConstants" /* 9285 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -191,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       class D {
         constructor(channelId, index) {
-          const obj = tracking_TrackingDefault;
+          const obj = search_tracking_TrackingDefault;
           const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
           const result = obj.trackSearchResultClicked(obj2);
           onPressGroupDMItem(channelId);
@@ -258,7 +258,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           class D {
             constructor(channelId, index) {
-              const obj = tracking_TrackingDefault;
+              const obj = search_tracking_TrackingDefault;
               const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
               const result = obj.trackSearchResultClicked(obj2);
               onPressGroupDMItem(channelId);
@@ -275,7 +275,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     class D {
       constructor(channelId, index) {
-        const obj = tracking_TrackingDefault;
+        const obj = search_tracking_TrackingDefault;
         const obj2 = { searchContext, channelId, index, entityType: constants2.CHANNEL };
         const result = obj.trackSearchResultClicked(obj2);
         onPressGroupDMItem(channelId);
@@ -438,7 +438,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items2);
   const items3 = [onPressGroupDMItem, searchContext];
   callback1 = fullscreenPlaceholderCount.useCallback((channelId, index) => {
-    const obj = tracking_TrackingDefault;
+    const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext, channelId, index, entityType: constants.CHANNEL };
     const result = obj.trackSearchResultClicked(obj2);
     onPressGroupDMItem(channelId);

@@ -15,7 +15,7 @@ import "react";
 import react from "react" /* 19 */;
 import get_hairlineWidth from "get hairlineWidth" /* 254 */;
 
-let closure_13;
+let closure_12, closure_13;
 
 let hasOwnProperty;
 let metroImportDefault;
@@ -397,7 +397,7 @@ let closure_11 = react.forwardRef(function PressableText_withRef(textProps, ref)
   const merged1 = Object.assign(tmp3);
   return <NativeText isHighlighted={first} isPressable ref={arg1} />;
 });
-let closure_12 = { auto: true, text: true, none: false, contain: true, all: true };
-const authStore2 = get_hairlineWidth.create({ default: { overflow: "hidden" } });
+const authStore2 = { auto: true, text: true, none: false, contain: true, all: true };
+const authStore3 = get_hairlineWidth.create({ default: { overflow: "hidden" } });
 
 export default TextImpl;

@@ -1,11 +1,11 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 10078
+// Function ID: 10079
 // Name: usePremiumProductPricingString
-// Dependencies: [7120, 1391, 558, 576, 4726, 7115, 504, 2]
+// Dependencies: [7125, 1392, 558, 576, 4728, 7120, 504, 2]
 
-// Module 10093 (usePremiumProductPricingString)
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import IAPStore from "IAPStore" /* 7120 */;
+// Module 10078 (usePremiumProductPricingString)
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import IAPStore from "IAPStore" /* 7125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,69 +1,68 @@
-// Module ID: 13621
-// Function ID: 13622
+// Module ID: 13712
+// Function ID: 13713
 // Name: PremiumManagePlan
-// Dependencies: [5, 32, 19, 17, 6180, 4727, 1389, 4728, 4731, 4732, 7098, 1998, 7120, 1085, 5069, 1391, 21, 3, 5090, 587, 558, 576, 1502, 6207, 6189, 5086, 1126, 6841, 13513, 6865, 504, 4787, 4929, 1105, 5720, 6174, 10004, 7109, 1264, 13510, 13517, 4726, 38, 6926, 13622, 13623, 13487, 13497, 8070, 5375, 13476, 13516, 8194, 9330, 13522, 5003, 2127, 5387, 1200, 8054, 6186, 1630, 13585, 7097, 6946, 5392, 8068, 13587, 13549, 2081, 6671, 6675, 5362, 13518, 13600, 2]
+// Dependencies: [5, 32, 19, 17, 6182, 4729, 1390, 4730, 4733, 4734, 7103, 1999, 7125, 1085, 5070, 1392, 21, 3, 5091, 587, 558, 576, 1503, 6209, 6191, 5087, 1126, 6848, 13605, 6872, 504, 4788, 4930, 1105, 5721, 6176, 10023, 7114, 1265, 13602, 13609, 4728, 38, 6933, 6163, 13713, 13714, 13579, 13589, 8078, 5376, 13568, 13608, 8202, 9368, 13614, 5004, 2127, 5388, 1200, 8062, 6188, 1631, 13676, 7102, 6953, 5393, 8076, 13678, 13638, 2081, 6678, 6682, 5363, 13610, 13691, 2]
 
-// Module 13621 (PremiumManagePlan)
+// Module 13712 (PremiumManagePlan)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl13 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4727 */;
-import PaymentConstants from "PaymentConstants" /* 5069 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5720 */;
-import TableRowConstants from "TableRowConstants" /* 6180 */;
-import Card_Card from "Card/Card" /* 6186 */;
-import Pressables from "Pressables" /* 6189 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6207 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6671 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6675 */;
-import PremiumManagementUtils from "PremiumManagementUtils" /* 7109 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8054 */;
-import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9330 */;
-import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 13476 */;
-import PremiumBillingInfoDefault from "PremiumBillingInfo" /* 13516 */;
-import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 13518 */;
-import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 13549 */;
-import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 13600 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4729 */;
+import PaymentConstants from "PaymentConstants" /* 5070 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5721 */;
+import TableRowConstants from "TableRowConstants" /* 6182 */;
+import Card_Card from "Card/Card" /* 6188 */;
+import Pressables from "Pressables" /* 6191 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6209 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6678 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6682 */;
+import PremiumManagementUtils from "PremiumManagementUtils" /* 7114 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8062 */;
+import PremiumFeaturesCardDefault from "PremiumFeaturesCard" /* 9368 */;
+import PremiumSubscriptionDetails from "PremiumSubscriptionDetails" /* 13568 */;
+import PremiumBillingInfoDefault from "PremiumBillingInfo" /* 13608 */;
+import PremiumAccountCreditDefault from "PremiumAccountCredit" /* 13610 */;
+import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 13638 */;
+import PremiumFeaturesTableDefault from "PremiumFeaturesTable" /* 13691 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
-import BillingInfoStore from "BillingInfoStore" /* 4728 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4731 */;
-import SubscriptionStore from "SubscriptionStore" /* 4732 */;
-import EntitlementStore from "EntitlementStore" /* 7098 */;
-import AppStateStore from "AppStateStore" /* 1998 */;
-import IAPStore from "IAPStore" /* 7120 */;
+import UserStore from "UserStore" /* 1390 */;
+import BillingInfoStore from "BillingInfoStore" /* 4730 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4733 */;
+import SubscriptionStore from "SubscriptionStore" /* 4734 */;
+import EntitlementStore from "EntitlementStore" /* 7103 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import IAPStore from "IAPStore" /* 7125 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c4, forApplication, importDefault, navigation;
 
-let c10;
 let c9;
+let closure_19;
 let closure_20;
 let closure_21;
 let closure_22;
-let closure_23;
+let closure_24;
 let closure_25;
 let closure_26;
 let closure_27;
 let closure_28;
 let closure_29;
-let closure_30;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
@@ -72,10 +71,10 @@ let obj3;
 let obj4;
 let size;
 let tmp5;
-const VisualEffectViewAnimatedDefault = tmp5(5362);
-const useMountEffectDefault = tmp5(5392);
-const useFractionalPremiumInfoDefault = tmp5(7097);
-const useFPDurationLeftDefault = tmp5(13587);
+const VisualEffectViewAnimatedDefault = tmp5(5363);
+const useMountEffectDefault = tmp5(5393);
+const useFractionalPremiumInfoDefault = tmp5(7102);
+const useFPDurationLeftDefault = tmp5(13678);
 function SubscriptionAndBillingInfo(subscription) {
   let Button;
   let _undefined;
@@ -122,7 +121,7 @@ function SubscriptionAndBillingInfo(subscription) {
   let first2;
   react = undefined;
   c8 = undefined;
-  const tmp = closure_35();
+  const tmp = closure_34();
   let tmp2 = analyticsLocations;
   let tmp3 = stateFromStores2;
   analyticsLocations = analyticsLocations(stateFromStores2[27])().analyticsLocations;
@@ -225,14 +224,14 @@ function SubscriptionAndBillingInfo(subscription) {
           let tmp3 = externalManagementMessage;
           if (!react.isValidElement(externalManagementMessage)) {
             let obj = { variant: "text-sm/medium", color: "text-default", children: externalManagementMessage };
-            tmp3 = set(tmp6(5086).Text, obj);
+            tmp3 = closure_28(tmp6(5087).Text, obj);
           }
           tmp5 = tmp3;
         }
         return tmp5;
       }
     }
-    return set(authStore, { size: "small" });
+    return closure_28(React4, { size: "small" });
   }, items5);
   [tmp21, c8] = tmp5(react.useState(false), 2);
   tmp5(react.useState(false), 2);
@@ -246,16 +245,16 @@ function SubscriptionAndBillingInfo(subscription) {
   } else {
     const tmp2Result = tmp2(tmp3[41]);
     const planIdFromInvoice = tmp2Result.getPlanIdFromInvoice(subscription, first);
-    const tmp2Result4 = tmp2(tmp3[41]);
-    const statusFromInvoice = tmp2Result4.getStatusFromInvoice(subscription, first);
-    tmp2(tmp3[42])(null != closure_28[planIdFromInvoice], "missing subscription planInfo");
+    const tmp2Result7 = tmp2(tmp3[41]);
+    const statusFromInvoice = tmp2Result7.getStatusFromInvoice(subscription, first);
+    tmp2(tmp3[42])(null != closure_27[planIdFromInvoice], "missing subscription planInfo");
     const obj9 = { subscription, planId: planIdFromInvoice, price: formatRateResult, includePremiumGuilds: true };
     formatRateResult = null;
     const getPlanDescription = tmp2(tmp3[41]).getPlanDescription;
     tmp2(tmp3[41]);
     if (null != stateFromStores) {
       const tmp4Result14 = tmp4(tmp3[43]);
-      formatRateResult = tmp4Result14.formatRate(stateFromStores.priceString, tmp50.interval, tmp50.intervalCount);
+      formatRateResult = tmp4Result14.formatRate(stateFromStores.priceString, tmp52.interval, tmp52.intervalCount);
     }
     const planDescription = getPlanDescription(obj9);
     if (statusFromInvoice !== constants2.CANCELED) {
@@ -273,7 +272,7 @@ function SubscriptionAndBillingInfo(subscription) {
             }
             const obj10 = { style: tmp.container, children: null };
             const obj11 = { style: tmp.mutationWarningContainer, children: null };
-            const items6 = [closure_29(tmp4(tmp3[52]).AnnouncementsWarningIcon, { size: "md" }), ];
+            const items6 = [closure_28(tmp4(tmp3[53]).AnnouncementsWarningIcon, { size: "md" }), ];
             const obj12 = { style: tmp.mutationText, variant: "heading-sm/medium", color: "text-default", children: null };
             const Text6 = tmp4(tmp3[25]).Text;
             const intl7 = tmp4(tmp3[26]).intl;
@@ -281,63 +280,63 @@ function SubscriptionAndBillingInfo(subscription) {
             if (!subscription.hasExternalPlanChange) {
               let displayName;
               if (!isNoneSubscription(subscription.renewalMutations.planId)) {
-                const tmp2Result6 = tmp2(tmp3[41]);
-                displayName = tmp2Result6.getDisplayName(subscription.renewalMutations.planId);
+                const tmp2Result9 = tmp2(tmp3[41]);
+                displayName = tmp2Result9.getDisplayName(subscription.renewalMutations.planId);
               }
               const obj13 = { planName: displayName, date: result };
               obj12.children = format(tmp38, obj13);
-              items6[1] = closure_29(Text6, obj12);
+              items6[1] = closure_28(Text6, obj12);
               obj11.children = items6;
-              const items7 = [closure_30(c8, obj11), , ];
-              const obj14 = { premiumType: closure_27.TIER_2, hideButton: true, isPremiumGroup, premiumGroupRole };
-              items7[1] = closure_29(tmp2(tmp3[53]), obj14);
+              const items7 = [closure_29(loadId, obj11), , ];
+              const obj14 = { premiumType: closure_26.TIER_2, hideButton: true, isPremiumGroup, premiumGroupRole };
+              items7[1] = closure_28(tmp2(tmp3[54]), obj14);
               const obj15 = { style: tmp.extraInfoContainer, children: items8 };
               const obj16 = { variant: "eyebrow", color: "text-default", accessibilityRole: "header", children: intl8.string(tmp4(tmp3[26]).t.YCrcPL) };
               const Text7 = tmp4(tmp3[25]).Text;
               intl8 = tmp4(tmp3[26]).intl;
-              items8 = [closure_29(Text7, obj16), ];
+              items8 = [closure_28(Text7, obj16), ];
               const obj17 = { style: tmp.extraInfoTextContainer, children: items9 };
               const obj18 = { variant: "text-sm/medium", color: "text-default", children: intl9.string(tmp4(tmp3[26]).t["MTG+3O"]) };
               const Text8 = tmp4(tmp3[25]).Text;
               intl9 = tmp4(tmp3[26]).intl;
-              items9 = [closure_29(Text8, obj18), , ];
+              items9 = [closure_28(Text8, obj18), , ];
               const obj19 = { variant: "text-sm/medium", color: "text-default", children: billingInformationNative };
-              items9[1] = closure_29(tmp4(tmp3[25]).Text, obj19);
+              items9[1] = closure_28(tmp4(tmp3[25]).Text, obj19);
               items9[2] = null != memo && memo;
-              items8[1] = closure_30(c8, obj17);
-              items7[2] = closure_30(c8, obj15);
+              items8[1] = closure_29(loadId, obj17);
+              items7[2] = closure_29(loadId, obj15);
               obj10.children = items7;
-              return closure_30(c8, obj10);
+              return closure_29(loadId, obj10);
             }
             const tmp4Result16 = tmp4(tmp3[41]);
             displayName = tmp4Result16.getExternalPlanDisplayName(subscription.renewalMutations);
           } else {
-            let tmp53Result;
+            let tmp55Result;
             const obj20 = { style: tmp.container, children: items11 };
             const obj21 = { style: tmp.pillAndCardContainer, children: items10 };
             if (tmp12) {
-              const obj22 = { style: tmp.pillPosition, children: closure_29(tmp4(tmp3[54]).PremiumReferralTrialPill, {}) };
-              tmp12 = closure_29(tmp54, obj22);
+              const obj22 = { style: tmp.pillPosition, children: closure_28(tmp4(tmp3[55]).PremiumReferralTrialPill, {}) };
+              tmp12 = closure_28(tmp56, obj22);
             }
             items10 = [tmp12, ];
-            const obj23 = { premiumType: closure_27.TIER_2, forFractionalPremium: fractionalPremiumInfo.fractionalState !== constants4.NONE, hideButton: true, isPremiumGroup, premiumGroupRole };
-            items10[1] = closure_29(tmp2(tmp3[53]), obj23);
-            items11 = [closure_30(c8, obj21), ];
+            const obj23 = { premiumType: closure_26.TIER_2, forFractionalPremium: fractionalPremiumInfo.fractionalState !== constants4.NONE, hideButton: true, isPremiumGroup, premiumGroupRole };
+            items10[1] = closure_28(tmp2(tmp3[54]), obj23);
+            items11 = [closure_29(loadId, obj21), ];
             const obj24 = { style: tmp.extraInfoContainer, children: items12 };
             const obj25 = { variant: "eyebrow", color: "text-default", children: intl.string(tmp4(tmp3[26]).t.YCrcPL) };
             const Text = tmp4(tmp3[25]).Text;
             intl = tmp4(tmp3[26]).intl;
-            items12 = [closure_29(Text, obj25), , , ];
+            items12 = [closure_28(Text, obj25), , , ];
             if (appleSubscriptionOwnership.isMismatch()) {
               const obj26 = { accessibilityRole: "alert", style: tmp.appleAccountMismatchNotice, children: items13 };
               const obj27 = { size: "sm", color: tmp2(tmp3[19]).colors.ICON_FEEDBACK_WARNING };
-              const WarningIcon = tmp4(tmp3[55]).WarningIcon;
+              const WarningIcon = tmp4(tmp3[56]).WarningIcon;
               items13 = [tmp26(WarningIcon, obj27), ];
               const obj28 = { variant: "text-sm/medium", color: "text-strong", style: tmp.appleAccountMismatchNoticeText, children: intl4.string(tmp4(tmp3[26]).t.meauFg) };
               const Text3 = tmp4(tmp3[25]).Text;
               intl4 = tmp4(tmp3[26]).intl;
-              items13[1] = closure_29(Text3, obj28);
-              tmp53Result = tmp53(tmp54, obj26);
+              items13[1] = closure_28(Text3, obj28);
+              tmp55Result = tmp55(tmp56, obj26);
             } else {
               let stringResult;
               const obj29 = { style: tmp.extraInfoTextContainer, children: items14 };
@@ -362,15 +361,15 @@ function SubscriptionAndBillingInfo(subscription) {
               const obj31 = { variant: "text-sm/medium", color: "text-default", children: stringResult };
               items14 = [tmp26(Text2, obj31), , ];
               const obj32 = { subscription };
-              items14[1] = closure_29(tmp4(tmp3[51]).GoogleManagementLink, obj32);
+              items14[1] = closure_28(tmp4(tmp3[52]).GoogleManagementLink, obj32);
               items14[2] = null != memo && memo;
-              tmp53Result = tmp53(tmp54, obj29);
+              tmp55Result = tmp55(tmp56, obj29);
             }
-            items12[1] = tmp53Result;
+            items12[1] = tmp55Result;
             const obj33 = { variant: "eyebrow", color: "text-default", children: intl5.string(tmp4(tmp3[26]).t.Sb6wI1) };
             const Text4 = tmp4(tmp3[25]).Text;
             intl5 = tmp4(tmp3[26]).intl;
-            items12[2] = closure_29(Text4, obj33);
+            items12[2] = closure_28(Text4, obj33);
             const obj34 = { style: items15, children: items16 };
             items15 = [tmp.extraInfoTextContainer, { gap: 4 }];
             const obj35 = { variant: "text-md/semibold", color: "text-default", children: intl6.string(tmp4(tmp3[26]).t.KXQjfc) };
@@ -378,10 +377,10 @@ function SubscriptionAndBillingInfo(subscription) {
             intl6 = tmp4(tmp3[26]).intl;
             items16 = [tmp26(Text5, obj35), ];
             const obj36 = { variant: "text-sm/medium", color: "text-default", children: billingInformationNative };
-            items16[1] = closure_29(tmp4(tmp3[25]).Text, obj36);
-            items12[3] = closure_30(c8, obj34);
-            items11[1] = closure_30(c8, obj24);
-            return closure_30(c8, obj20);
+            items16[1] = closure_28(tmp4(tmp3[25]).Text, obj36);
+            items12[3] = closure_29(loadId, obj34);
+            items11[1] = closure_29(loadId, obj24);
+            return closure_29(loadId, obj20);
           }
         }
       }
@@ -389,20 +388,23 @@ function SubscriptionAndBillingInfo(subscription) {
     const obj37 = { style: tmp.container, children: items20 };
     const obj38 = { style: tmp.errorHeader, children: items19 };
     const obj39 = { style: tmp.headerBackground, children: items17 };
-    const obj40 = { source: tmp2(isThemeLightResult ? tmp3[44] : tmp3[45]), style: tmp.headerBackgroundImage };
-    items17 = [closure_29(stateFromStores3, obj40), , ];
+    const obj40 = { source: tmp2(isThemeLightResult ? tmp3[45] : tmp3[46]), style: tmp.headerBackgroundImage };
+    const tmp2Result10 = tmp2(tmp3[44]);
+    items17 = [closure_28(tmp2Result10, obj40), , ];
     const obj41 = { style: tmp.logoContainer, children: items18 };
-    const obj42 = { source: tmp2(tmp3[46]), style: tmp.wumpusImg };
-    items18 = [closure_29(stateFromStores3, obj42), ];
-    const obj43 = { source: tmp2(isThemeLightResult ? tmp3[47] : tmp3[48]), style: tmp.logoStyle };
-    items18[1] = closure_29(stateFromStores3, obj43);
-    items17[1] = closure_30(c8, obj41);
+    const obj42 = { source: tmp2(tmp3[47]), style: tmp.wumpusImg };
+    const tmp2Result11 = tmp2(tmp3[44]);
+    items18 = [closure_28(tmp2Result11, obj42), ];
+    const obj43 = { source: tmp2(isThemeLightResult ? tmp3[48] : tmp3[49]), style: tmp.logoStyle };
+    const tmp2Result12 = tmp2(tmp3[44]);
+    items18[1] = closure_28(tmp2Result12, obj43);
+    items17[1] = closure_29(loadId, obj41);
     const obj44 = { variant: "heading-sm/medium", color: "text-default", children: planDescription };
-    items17[2] = closure_29(tmp4(tmp3[25]).Text, obj44);
-    items19 = [closure_30(c8, obj39), ];
+    items17[2] = closure_28(tmp4(tmp3[25]).Text, obj44);
+    items19 = [closure_29(loadId, obj39), ];
     let isOnPlatformMatchingExternalPaymentGateway = subscription.isOnPlatformMatchingExternalPaymentGateway;
     if (isOnPlatformMatchingExternalPaymentGateway) {
-      const obj45 = { style: tmp.errorHeaderPrimaryButton, children: closure_29(Button, obj46) };
+      const obj45 = { style: tmp.errorHeaderPrimaryButton, children: closure_28(Button, obj46) };
       obj46 = {
         size: "sm",
         variant: "secondary",
@@ -441,7 +443,7 @@ function SubscriptionAndBillingInfo(subscription) {
                       c1 = 2;
                       c4 = 1;
                       const obj5 = { value: obj2.onResubscribeClick(subscription), done: false };
-                      obj2 = tmp(stateFromStores2[50]);
+                      obj2 = tmp(stateFromStores2[51]);
                       return obj5;
                     }
                   } else if (1 === tmp4) {
@@ -477,63 +479,63 @@ function SubscriptionAndBillingInfo(subscription) {
         loading: tmp21,
         disabled: tmp21
       };
-      Button = tmp4(tmp3[49]).Button;
+      Button = tmp4(tmp3[50]).Button;
       intl10 = tmp4(tmp3[26]).intl;
       isOnPlatformMatchingExternalPaymentGateway = tmp44(tmp43, obj45);
     }
     items19[1] = isOnPlatformMatchingExternalPaymentGateway;
-    items20 = [closure_30(c8, obj38), ];
+    items20 = [closure_29(loadId, obj38), ];
     const obj47 = { style: tmp.extraInfoContainer, children: items21 };
     const obj48 = { variant: "eyebrow", color: "text-default", accessibilityRole: "header", children: intl11.string(tmp4(tmp3[26]).t.YCrcPL) };
     const Text9 = tmp4(tmp3[25]).Text;
     intl11 = tmp4(tmp3[26]).intl;
-    items21 = [closure_29(Text9, obj48), ];
+    items21 = [closure_28(Text9, obj48), ];
     const obj49 = { style: tmp.extraInfoTextContainer, children: items22 };
     const obj50 = { variant: "text-sm/medium", color: "text-default", children: intl12.string(tmp4(tmp3[26]).t["MTG+3O"]) };
     const Text10 = tmp4(tmp3[25]).Text;
     intl12 = tmp4(tmp3[26]).intl;
-    items22 = [closure_29(Text10, obj50), , , ];
+    items22 = [closure_28(Text10, obj50), , , ];
     const obj51 = { variant: "text-sm/medium", color: "text-default", children: billingInformationNative };
-    items22[1] = closure_29(tmp4(tmp3[25]).Text, obj51);
+    items22[1] = closure_28(tmp4(tmp3[25]).Text, obj51);
     const obj52 = { subscription };
-    items22[2] = closure_29(tmp4(tmp3[51]).GoogleManagementLink, obj52);
+    items22[2] = closure_28(tmp4(tmp3[52]).GoogleManagementLink, obj52);
     items22[3] = null != memo && memo;
-    items21[1] = closure_30(c8, obj49);
-    items20[1] = closure_30(c8, obj47);
-    return closure_30(c8, obj37);
+    items21[1] = closure_29(loadId, obj49);
+    items20[1] = closure_29(loadId, obj47);
+    return closure_29(loadId, obj37);
   }
 }
 let _asyncToGenerator = _asyncToGenerator_mod;
 let react = react_mod;
-({ Image: metroRequire, StyleSheet: metroImportDefault, View: metroImportAll, ScrollView: c9, ActivityIndicator: c10 } = react_native);
+({ StyleSheet: metroRequire, View: metroImportDefault, ScrollView: metroImportAll, ActivityIndicator: c9 } = react_native);
 const TABLE_DIVIDER_WIDTH = TableRowConstants.TABLE_DIVIDER_WIDTH;
 const isNoneSubscription = SubscriptionPlanRecord.isNoneSubscription;
-({ AnalyticEvents: closure_20, HelpdeskArticles: closure_21, SubscriptionStatusTypes: closure_22, UserSettingsSections: closure_23 } = Constants);
+({ AnalyticEvents: closure_19, HelpdeskArticles: closure_20, SubscriptionStatusTypes: closure_21, UserSettingsSections: closure_22 } = Constants);
 const CustomCheckoutFlow = PaymentConstants.CustomCheckoutFlow;
-({ FractionalPremiumStates: closure_25, PREMIUM_SUBSCRIPTION_APPLICATION: closure_26, PremiumTypes: closure_27, SubscriptionPlanInfo: closure_28 } = PremiumConstants);
-({ jsx: closure_29, jsxs: closure_30 } = Fragment);
+({ FractionalPremiumStates: closure_24, PREMIUM_SUBSCRIPTION_APPLICATION: closure_25, PremiumTypes: closure_26, SubscriptionPlanInfo: closure_27 } = PremiumConstants);
+({ jsx: closure_28, jsxs: closure_29 } = Fragment);
 let tmp6 = new LoggerDefault("PremiumManagePlan");
-let closure_31 = tmp6;
+let closure_30 = tmp6;
 let createStyles = createStyles_mod;
 let obj = { background: obj2, container: obj3, contentContainer: { marginTop: 24, display: "flex", gap: 12 }, topBlur: { position: "absolute", zIndex: 5, top: 0, left: 0, right: 0 }, accountCredit: { paddingHorizontal: 16 }, accountCreditList: obj4, featuresTable: { paddingTop: 16 }, subscriptionHeader: { marginTop: 20, width: "100%" }, billingInfo: { marginTop: 20, width: "100%" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, height: "100%" };
 createStyles = createStyles.createStyles;
 obj3 = { display: "flex", paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 obj4 = { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-let closure_32 = createStyles(obj);
+let closure_31 = createStyles(obj);
 createStyles = createStyles_mod;
 let obj5 = { headerContainer: { display: "flex", flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8, justifyContent: "space-between" }, backButtonWrapper: size };
 size = { width: 24, height: 24, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center" };
-let closure_33 = createStyles.createStyles(obj5);
+let closure_32 = createStyles.createStyles(obj5);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManagePlanHeader() {
+let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManagePlanHeader() {
   let intl;
   let items;
   let tmp6;
   let tmp7;
   const obj = react2;
   const cResult = obj.c(13);
-  const tmp4 = closure_33();
+  const tmp4 = closure_32();
   const obj2 = useNavigation;
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
@@ -547,7 +549,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
     tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = set(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" });
+    const tmp9 = closure_28(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" });
     cResult[2] = tmp9;
     tmp7 = tmp9;
   } else {
@@ -563,9 +565,9 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: intl.string(intl13.t["1bX7Tx"]) };
-      const Text = tmp(5086).Text;
+      const Text = tmp(5087).Text;
       intl = tmp(1126).intl;
-      const tmp14 = set(Text, obj3);
+      const tmp14 = closure_28(Text, obj3);
       cResult[6] = tmp14;
       tmp12 = tmp14;
     } else {
@@ -573,7 +575,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
     }
     if (cResult[7] !== tmp4.backButtonWrapper) {
       const obj4 = { style: tmp4.backButtonWrapper };
-      const tmp18 = set(metroImportAll, obj4);
+      const tmp18 = closure_28(metroImportDefault, obj4);
       cResult[7] = tmp4.backButtonWrapper;
       cResult[8] = tmp18;
       tmp15 = tmp18;
@@ -591,7 +593,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
     }
     const obj5 = { style: tmp4.headerContainer, children: items };
     items = [tmp10, tmp12, tmp15];
-    const tmp22 = __initData(metroImportAll, obj5);
+    const tmp22 = set(metroImportDefault, obj5);
     cResult[9] = tmp4.headerContainer;
     cResult[10] = tmp10;
     cResult[11] = tmp15;
@@ -599,7 +601,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
     tmp19 = tmp22;
   }
   const obj6 = { style: tmp4.backButtonWrapper, onPress: tmp6, children: tmp7 };
-  const tmp11 = set(Pressables.PressableOpacity, obj6);
+  const tmp11 = closure_28(Pressables.PressableOpacity, obj6);
   cResult[3] = tmp4.backButtonWrapper;
   cResult[4] = tmp6;
   cResult[5] = tmp11;
@@ -607,7 +609,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
 }) : (function ManagePlanHeader() {
   let intl;
   let items;
-  const tmp = closure_33();
+  const tmp = closure_32();
   const obj = useNavigation;
   let closure_0 = obj.useNavigation();
   const obj2 = { style: tmp.headerContainer, children: items };
@@ -616,25 +618,25 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
     onPress() {
       return closure_0.pop();
     },
-    children: set(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" })
+    children: closure_28(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" })
   };
   const PressableOpacity = Pressables.PressableOpacity;
-  items = [set(PressableOpacity, obj3), , ];
+  items = [closure_28(PressableOpacity, obj3), , ];
   const obj4 = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: intl.string(intl13.t["1bX7Tx"]) };
   const Text = Text_Text.Text;
   intl = intl13.intl;
-  items[1] = set(Text, obj4);
+  items[1] = closure_28(Text, obj4);
   const obj5 = { style: tmp.backButtonWrapper };
-  items[2] = set(metroImportAll, obj5);
-  return __initData(metroImportAll, obj2);
+  items[2] = closure_28(metroImportDefault, obj5);
+  return set(metroImportDefault, obj2);
 });
 createStyles = createStyles_mod;
-let closure_35 = createStyles.createStyles(() => {
+let closure_34 = createStyles.createStyles(() => {
   let obj3;
   const obj = { container: { display: "flex", flexDirection: "column", gap: 12 }, errorHeader: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, overflow: "hidden" }, headerBackground: { padding: 16 }, headerBackgroundImage: obj3, logoContainer: { flexDirection: "row", alignItems: "center", marginBottom: 12 }, wumpusImg: { marginRight: 10, height: 36, width: 51 }, logoStyle: { height: 32, width: 78 }, errorHeaderPrimaryButton: { marginBottom: 16, marginHorizontal: 16 }, extraInfoContainer: { paddingTop: 16, paddingHorizontal: 16, display: "flex", gap: 8 }, extraInfoTextContainer: { padding: 16, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", gap: 18 }, mutationWarningContainer: { display: "flex", flexDirection: "row", alignItems: "flex-start", gap: 8, padding: 16, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, mutationText: { flex: 1 }, fpTimeRemaining: { color: nativeDefault.colors.TEXT_BRAND }, fpTimeRemainingPill: { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_ACTIVE, paddingVertical: 4, paddingHorizontal: 8 }, fpUnactivatedHoursPill: { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingVertical: 4, paddingHorizontal: 8 }, fpTimeRemainingText: { color: nativeDefault.colors.WHITE }, fpUnitsTitle: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, fpUnitsStatusText: { color: nativeDefault.colors.TEXT_BRAND, marginStart: 18, flexShrink: 1 }, fpRowStart: { padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING, minHeight: nativeDefault.modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, fpRowIcon: { marginEnd: nativeDefault.modules.mobile.TABLE_ROW_PADDING }, fpRowContent: { flexShrink: 1, flexGrow: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, fpRowEnd: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, dividerContainer: { height: TABLE_DIVIDER_WIDTH }, divider: { height: TABLE_DIVIDER_WIDTH, backgroundColor: nativeDefault.colors.BORDER_SUBTLE }, pillAndCardContainer: { position: "relative" }, pillPosition: { position: "absolute", top: -18, left: 5, zIndex: 99 }, appleAccountMismatchNotice: { alignSelf: "stretch", width: "100%", flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_WARNING, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING }, appleAccountMismatchNoticeText: { flex: 1 } };
   obj3 = { width: undefined, height: undefined };
   ({ backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, overflow: "hidden" });
-  const merged = Object.assign(metroImportDefault.absoluteFillObject);
+  const merged = Object.assign(metroRequire.absoluteFillObject);
   ({ padding: 16, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", gap: 18 });
   ({ display: "flex", flexDirection: "row", alignItems: "flex-start", gap: 8, padding: 16, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH });
   ({ color: nativeDefault.colors.TEXT_BRAND });
@@ -651,7 +653,7 @@ let closure_35 = createStyles.createStyles(() => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalPremiumCredits(arg0) {
+let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalPremiumCredits(arg0) {
   let AYGoBn;
   let Icon;
   let activationDate;
@@ -696,13 +698,13 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
   const obj = react2;
   const cResult = obj.c(63);
   ({ fractionalPremiumInfo, showPremiumFeaturesCard, durationText, hasUnactivatedUnits, unactivatedHoursString, activationDate } = arg0);
-  const tmp4 = closure_35();
+  const tmp4 = closure_34();
   const container = tmp4.container;
   if (cResult[0] !== showPremiumFeaturesCard) {
     let tmp6 = showPremiumFeaturesCard;
     if (tmp6) {
-      const obj2 = { premiumType: closure_27.TIER_2, forFractionalPremium: true, hideButton: true };
-      tmp6 = set(PremiumFeaturesCardDefault, obj2);
+      const obj2 = { premiumType: prioritySpeakerDucking.TIER_2, forFractionalPremium: true, hideButton: true };
+      tmp6 = closure_28(PremiumFeaturesCardDefault, obj2);
     }
     cResult[0] = showPremiumFeaturesCard;
     cResult[1] = tmp6;
@@ -713,9 +715,9 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
   const extraInfoContainer = tmp4.extraInfoContainer;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "eyebrow", color: "text-default", children: intl.string(intl13.t.Obre8v) };
-    const Text = tmp(5086).Text;
+    const Text = tmp(5087).Text;
     intl = tmp(1126).intl;
-    const tmp12 = set(Text, obj3);
+    const tmp12 = closure_28(Text, obj3);
     cResult[2] = tmp12;
     tmp10 = tmp12;
   } else {
@@ -723,13 +725,13 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: format(AYGoBn, obj5) };
-    const Text2 = tmp(5086).Text;
+    const Text2 = tmp(5087).Text;
     const intl2 = tmp(1126).intl;
     format = intl2.format;
     obj5 = { helpCenterLink: obj6.getArticleURL(constants.FRACTIONAL_PREMIUM_ABOUT) };
     AYGoBn = tmp(1126).t.AYGoBn;
     obj6 = HelpdeskUtilsDefault;
-    const tmp17 = set(Text2, obj4);
+    const tmp17 = closure_28(Text2, obj4);
     cResult[3] = tmp17;
     tmp13 = tmp17;
   } else {
@@ -756,12 +758,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
     tmp21 = cResult[7];
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj8 = { style: tmp19, start: tmp20, end: tmp21, colors: tmp18, children: set(metroImportAll, obj9) };
-    obj9 = { children: set(Icon, obj10) };
+    const obj8 = { style: tmp19, start: tmp20, end: tmp21, colors: tmp18, children: closure_28(metroImportDefault, obj9) };
+    obj9 = { children: closure_28(Icon, obj10) };
     obj10 = { color: nativeDefault.unsafe_rawColors.WHITE, source: AssetRegistryDefault, size: native.IconSizes.LARGE };
     const tmp26 = LinearGradientDefault;
     Icon = tmp(1200).Icon;
-    const tmp28 = set(tmp26, obj8);
+    const tmp28 = closure_28(tmp26, obj8);
     cResult[8] = tmp28;
     tmp23 = tmp28;
   } else {
@@ -769,7 +771,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
   }
   if (cResult[9] !== tmp4.fpRowIcon) {
     const obj11 = { style: tmp4.fpRowIcon, children: tmp23 };
-    const tmp32 = set(metroImportAll, obj11);
+    const tmp32 = closure_28(metroImportDefault, obj11);
     cResult[9] = tmp4.fpRowIcon;
     cResult[10] = tmp32;
     tmp29 = tmp32;
@@ -787,7 +789,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
   }
   if (cResult[12] !== tmp4.fpUnitsTitle) {
     const obj12 = { variant: "text-sm/semibold", style: fpUnitsTitle, children: tmp33 };
-    const tmp37 = set(Text_Text.Text, obj12);
+    const tmp37 = closure_28(Text_Text.Text, obj12);
     cResult[12] = tmp4.fpUnitsTitle;
     cResult[13] = tmp37;
     tmp35 = tmp37;
@@ -815,7 +817,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                 }
                 if (cResult[27] !== tmp4.divider) {
                   const obj13 = { style: tmp4.divider };
-                  const tmp52 = set(metroImportAll, obj13);
+                  const tmp52 = closure_28(metroImportDefault, obj13);
                   cResult[27] = tmp4.divider;
                   cResult[28] = tmp52;
                   tmp49 = tmp52;
@@ -877,7 +879,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                                                 }
                                                 const obj14 = { style: container, children: items1 };
                                                 items1 = [tmp5, tmp83];
-                                                const tmp90 = __initData(metroImportAll, obj14);
+                                                const tmp90 = set(metroImportDefault, obj14);
                                                 cResult[59] = tmp4.container;
                                                 cResult[60] = tmp5;
                                                 cResult[61] = tmp83;
@@ -886,7 +888,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                                               }
                                               const obj15 = { style: extraInfoContainer, children: items2 };
                                               items2 = [tmp10, tmp13, tmp79];
-                                              const tmp86 = __initData(metroImportAll, obj15);
+                                              const tmp86 = set(metroImportDefault, obj15);
                                               cResult[56] = tmp4.extraInfoContainer;
                                               cResult[57] = tmp79;
                                               cResult[58] = tmp86;
@@ -895,7 +897,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                                           }
                                           const obj16 = { children: items3 };
                                           items3 = [tmp46, tmp53, tmp76];
-                                          const tmp82 = __initData(metroImportAll, obj16);
+                                          const tmp82 = set(metroImportDefault, obj16);
                                           cResult[52] = tmp46;
                                           cResult[53] = tmp53;
                                           cResult[54] = tmp76;
@@ -903,7 +905,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                                           tmp79 = tmp82;
                                         }
                                         const obj17 = { start: false, end: true, style: tmp4.fpRowEnd, variant: "secondary", children: tmp72 };
-                                        const tmp78 = set(Card_Card.Card, obj17);
+                                        const tmp78 = closure_28(Card_Card.Card, obj17);
                                         cResult[49] = tmp4.fpRowEnd;
                                         cResult[50] = tmp72;
                                         cResult[51] = tmp78;
@@ -912,7 +914,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                                     }
                                     const obj18 = { style: tmp4.fpRowContent, children: items4 };
                                     items4 = [tmp57, tmp65];
-                                    const tmp75 = __initData(metroImportAll, obj18);
+                                    const tmp75 = set(metroImportDefault, obj18);
                                     cResult[45] = tmp4.fpRowContent;
                                     cResult[46] = tmp57;
                                     cResult[47] = tmp65;
@@ -927,9 +929,9 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                         if (hasUnactivatedUnits) {
                           let tmp69;
                           if (fractionalPremiumInfo.fractionalState === constants4.NONE) {
-                            const obj19 = { style: tmp4.fpUnactivatedHoursPill, children: set(Text_Text.Text, obj20) };
+                            const obj19 = { style: tmp4.fpUnactivatedHoursPill, children: closure_28(Text_Text.Text, obj20) };
                             obj20 = { variant: "text-sm/medium", style: tmp4.fpTimeRemainingText, children: unactivatedHoursString };
-                            tmp69 = set(metroImportAll, obj19);
+                            tmp69 = closure_28(metroImportDefault, obj19);
                           }
                           cResult[37] = durationText;
                           cResult[38] = fractionalPremiumInfo;
@@ -941,9 +943,9 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                           cResult[44] = tmp69;
                           tmp65 = tmp69;
                         }
-                        const obj21 = { style: tmp4.fpTimeRemainingPill, children: set(Text_Text.Text, obj22) };
+                        const obj21 = { style: tmp4.fpTimeRemainingPill, children: closure_28(Text_Text.Text, obj22) };
                         obj22 = { variant: "text-sm/medium", style: tmp4.fpTimeRemainingText, children: durationText };
-                        tmp69 = set(metroImportAll, obj21);
+                        tmp69 = closure_28(metroImportDefault, obj21);
                       }
                     }
                   }
@@ -951,16 +953,16 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                     let tmp61Result;
                     if (fractionalPremiumInfo.fractionalState === constants4.NONE) {
                       const obj23 = { variant: "text-md/semibold", children: intl6.string(intl13.t["hT6i/0"]) };
-                      const Text5 = tmp(5086).Text;
+                      const Text5 = tmp(5087).Text;
                       intl6 = tmp(1126).intl;
-                      const items5 = [set(Text5, obj23), ];
+                      const items5 = [closure_28(Text5, obj23), ];
                       let tmp63Result = undefined !== activationDate;
-                      const tmp61 = __initData;
-                      const tmp62 = metroImportAll;
-                      const tmp63 = set;
+                      const tmp61 = set;
+                      const tmp62 = metroImportDefault;
+                      const tmp63 = closure_28;
                       if (tmp63Result) {
                         const obj24 = { variant: "text-xs/medium", color: "text-subtle", children: intl7.format(intl13.t["0Vwb/l"], obj25) };
-                        const Text6 = tmp(5086).Text;
+                        const Text6 = tmp(5087).Text;
                         intl7 = tmp(1126).intl;
                         obj25 = { activateDate: activationDate };
                         tmp63Result = tmp63(Text6, obj24);
@@ -977,12 +979,12 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
                     tmp57 = tmp61Result;
                   }
                   const obj27 = { variant: "text-md/semibold", style: tmp4.fpTimeRemaining, children: intl5.string(intl13.t["3G0CTC"]) };
-                  const Text4 = tmp(5086).Text;
+                  const Text4 = tmp(5087).Text;
                   intl5 = tmp(1126).intl;
-                  tmp61Result = set(Text4, obj27);
+                  tmp61Result = closure_28(Text4, obj27);
                 }
                 const obj28 = { style: tmp4.dividerContainer, children: tmp49 };
-                const tmp56 = set(metroImportAll, obj28);
+                const tmp56 = closure_28(metroImportDefault, obj28);
                 cResult[29] = tmp4.dividerContainer;
                 cResult[30] = tmp49;
                 cResult[31] = tmp56;
@@ -991,7 +993,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
             }
             const obj29 = { style: fpRowStart, start: true, end: false, variant: "primary", children: items6 };
             items6 = [tmp29, tmp42];
-            const tmp48 = __initData(Card_Card.Card, obj29);
+            const tmp48 = set(Card_Card.Card, obj29);
             cResult[23] = tmp4.fpRowStart;
             cResult[24] = tmp29;
             cResult[25] = tmp42;
@@ -1001,7 +1003,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
         }
         const obj30 = { style: fpRowContent, children: items7 };
         items7 = [tmp35, tmp38];
-        const tmp45 = __initData(metroImportAll, obj30);
+        const tmp45 = set(metroImportDefault, obj30);
         cResult[19] = tmp4.fpRowContent;
         cResult[20] = tmp35;
         cResult[21] = tmp38;
@@ -1014,7 +1016,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
     let tmp40;
     if (fractionalPremiumInfo.fractionalState === constants4.NONE) {
       const obj31 = { variant: "text-sm/medium", children: unactivatedHoursString };
-      tmp40 = set(tmp(5086).Text, obj31);
+      tmp40 = closure_28(tmp(5087).Text, obj31);
     }
     cResult[14] = fractionalPremiumInfo;
     cResult[15] = hasUnactivatedUnits;
@@ -1024,9 +1026,9 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
     tmp38 = tmp40;
   }
   const obj32 = { variant: "text-sm/medium", style: tmp4.fpUnitsStatusText, children: intl4.string(intl13.t["B66Z+f"]) };
-  const Text3 = tmp(5086).Text;
+  const Text3 = tmp(5087).Text;
   intl4 = tmp(1126).intl;
-  tmp40 = set(Text3, obj32);
+  tmp40 = closure_28(Text3, obj32);
 }) : (function FractionalPremiumCredits(durationText) {
   let AYGoBn;
   let Icon;
@@ -1056,18 +1058,18 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
   let unactivatedHoursString;
   ({ fractionalPremiumInfo, showPremiumFeaturesCard, hasUnactivatedUnits, unactivatedHoursString, activationDate } = durationText);
   durationText = durationText.durationText;
-  const tmp = closure_35();
+  const tmp = closure_34();
   const obj = { style: tmp.container, children: null };
   if (showPremiumFeaturesCard) {
-    const obj2 = { premiumType: closure_27.TIER_2, forFractionalPremium: true, hideButton: true };
-    showPremiumFeaturesCard = set(PremiumFeaturesCardDefault, obj2);
+    const obj2 = { premiumType: prioritySpeakerDucking.TIER_2, forFractionalPremium: true, hideButton: true };
+    showPremiumFeaturesCard = closure_28(PremiumFeaturesCardDefault, obj2);
   }
   const items = [showPremiumFeaturesCard, ];
   const obj3 = { style: tmp.extraInfoContainer, children: null };
   const obj4 = { variant: "eyebrow", color: "text-default", children: intl.string(intl13.t.Obre8v) };
   const Text = Text_Text.Text;
   intl = intl13.intl;
-  const items1 = [set(Text, obj4), , ];
+  const items1 = [closure_28(Text, obj4), , ];
   const obj5 = { variant: "text-md/semibold", color: "text-default", children: format(AYGoBn, obj6) };
   const Text2 = Text_Text.Text;
   const intl2 = intl13.intl;
@@ -1075,50 +1077,50 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
   obj6 = { helpCenterLink: obj7.getArticleURL(constants.FRACTIONAL_PREMIUM_ABOUT) };
   AYGoBn = intl13.t.AYGoBn;
   obj7 = HelpdeskUtilsDefault;
-  items1[1] = set(Text2, obj5);
+  items1[1] = closure_28(Text2, obj5);
   const obj8 = { style: tmp.fpRowStart, start: true, end: false, variant: "primary", children: null };
-  const obj9 = { style: tmp.fpRowIcon, children: set(tmp11, obj10) };
+  const obj9 = { style: tmp.fpRowIcon, children: closure_28(tmp11, obj10) };
   const Card = Card_Card.Card;
-  obj10 = { style: obj11, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items2, children: set(metroImportAll, obj12) };
+  obj10 = { style: obj11, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items2, children: closure_28(metroImportDefault, obj12) };
   obj11 = { padding: 6, borderRadius: nativeDefault.radii.sm };
   tmp11 = LinearGradientDefault;
   items2 = [nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE, nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE];
-  obj12 = { children: set(Icon, obj13) };
+  obj12 = { children: closure_28(Icon, obj13) };
   obj13 = { color: nativeDefault.unsafe_rawColors.WHITE, source: AssetRegistryDefault, size: native.IconSizes.LARGE };
   Icon = native.Icon;
-  const items3 = [set(metroImportAll, obj9), ];
+  const items3 = [closure_28(metroImportDefault, obj9), ];
   const obj14 = { style: tmp.fpRowContent, children: null };
   const obj15 = { variant: "text-sm/semibold", style: tmp.fpUnitsTitle, children: intl3.string(intl13.t.DFMPWS) };
   const Text3 = Text_Text.Text;
   intl3 = intl13.intl;
-  const items4 = [set(Text3, obj15), ];
+  const items4 = [closure_28(Text3, obj15), ];
   if (hasUnactivatedUnits) {
     let tmp8Result;
     if (fractionalPremiumInfo.fractionalState === constants4.NONE) {
       const obj16 = { variant: "text-sm/medium", children: unactivatedHoursString };
-      tmp8Result = tmp8(tmp9(5086).Text, obj16);
+      tmp8Result = tmp8(tmp9(5087).Text, obj16);
     }
     items4[1] = tmp8Result;
     obj14.children = items4;
-    items3[1] = __initData(metroImportAll, obj14);
+    items3[1] = set(metroImportDefault, obj14);
     obj8.children = items3;
-    const items5 = [__initData(Card, obj8), , ];
-    const obj17 = { style: tmp.dividerContainer, children: set(metroImportAll, obj18) };
+    const items5 = [set(Card, obj8), , ];
+    const obj17 = { style: tmp.dividerContainer, children: closure_28(metroImportDefault, obj18) };
     obj18 = { style: tmp.divider };
-    items5[1] = set(metroImportAll, obj17);
+    items5[1] = closure_28(metroImportDefault, obj17);
     const obj19 = { start: false, end: true, style: tmp.fpRowEnd, variant: "secondary", children: null };
     const obj20 = { style: tmp.fpRowContent, children: null };
     if (hasUnactivatedUnits) {
       let tmp8Result5;
       if (fractionalPremiumInfo.fractionalState === constants4.NONE) {
         const obj21 = { variant: "text-md/semibold", children: intl6.string(intl13.t["hT6i/0"]) };
-        const Text6 = tmp9(5086).Text;
+        const Text6 = tmp9(5087).Text;
         intl6 = tmp9(1126).intl;
-        const items6 = [set(Text6, obj21), ];
+        const items6 = [closure_28(Text6, obj21), ];
         let tmp8Result3 = undefined !== activationDate;
         if (tmp8Result3) {
           const obj22 = { variant: "text-xs/medium", color: "text-subtle", children: intl7.format(intl13.t["0Vwb/l"], obj23) };
-          const Text7 = tmp9(5086).Text;
+          const Text7 = tmp9(5087).Text;
           intl7 = tmp9(1126).intl;
           obj23 = { activateDate: activationDate };
           tmp8Result3 = tmp8(Text7, obj22);
@@ -1131,32 +1133,32 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fracti
       if (hasUnactivatedUnits) {
         let tmp8Result4;
         if (fractionalPremiumInfo.fractionalState === constants4.NONE) {
-          const obj25 = { style: tmp.fpUnactivatedHoursPill, children: set(Text_Text.Text, obj26) };
+          const obj25 = { style: tmp.fpUnactivatedHoursPill, children: closure_28(Text_Text.Text, obj26) };
           obj26 = { variant: "text-sm/medium", style: tmp.fpTimeRemainingText, children: unactivatedHoursString };
           tmp8Result4 = tmp8(tmp3, obj25);
         }
         const obj27 = { children: items5 };
         items7[1] = tmp8Result4;
         obj20.children = items7;
-        obj19.children = __initData(metroImportAll, obj20);
-        items5[2] = set(tmp14, obj19);
-        items1[2] = __initData(metroImportAll, obj27);
+        obj19.children = set(metroImportDefault, obj20);
+        items5[2] = closure_28(tmp14, obj19);
+        items1[2] = set(metroImportDefault, obj27);
         obj3.children = items1;
-        items[1] = __initData(metroImportAll, obj3);
+        items[1] = set(metroImportDefault, obj3);
         obj.children = items;
-        return __initData(metroImportAll, obj);
+        return set(metroImportDefault, obj);
       }
-      const obj28 = { style: tmp.fpTimeRemainingPill, children: set(Text_Text.Text, obj29) };
+      const obj28 = { style: tmp.fpTimeRemainingPill, children: closure_28(Text_Text.Text, obj29) };
       obj29 = { variant: "text-sm/medium", style: tmp.fpTimeRemainingText, children: durationText };
       tmp8Result4 = tmp8(tmp3, obj28);
     }
     const obj30 = { variant: "text-md/semibold", style: tmp.fpTimeRemaining, children: intl5.string(intl13.t["3G0CTC"]) };
-    const Text5 = tmp9(5086).Text;
+    const Text5 = tmp9(5087).Text;
     intl5 = tmp9(1126).intl;
     tmp8Result5 = tmp8(Text5, obj30);
   }
   const obj31 = { variant: "text-sm/medium", style: tmp.fpUnitsStatusText, children: intl4.string(intl13.t["B66Z+f"]) };
-  const Text4 = tmp9(5086).Text;
+  const Text4 = tmp9(5087).Text;
   intl4 = tmp9(1126).intl;
   tmp8Result = tmp8(Text4, obj31);
 });
@@ -1182,13 +1184,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   let top;
   let obj = navigation(576);
   const cResult = obj.c(88);
-  const tmp4 = closure_32();
+  const tmp4 = closure_31();
   let tmp5 = importDefault;
   ({ top, bottom } = useSafeAreaInsetsDefault());
   const tmp6 = useSafeAreaInsetsDefault();
-  let obj2 = navigation(13585);
+  let obj2 = navigation(13676);
   const youBarSettingsOutsideSafeAreaTop = obj2.useYouBarSettingsOutsideSafeAreaTop();
-  let obj3 = navigation(1502);
+  let obj3 = navigation(1503);
   navigation = obj3.useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function t() {
@@ -1208,7 +1210,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   const obj4 = react;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [SubscriptionPlanStore];
-    const fn2 = function c() {
+    const fn2 = function p() {
       return SubscriptionPlanStore.isLoadedForPremiumSKUs();
     };
     cResult[3] = items1;
@@ -1223,15 +1225,15 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp13);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [SubscriptionStore];
-    class E {
+    class O {
       constructor() {
         const items = [SubscriptionStore.getPremiumTypeSubscription(), SubscriptionStore.hasFetchedSubscriptions()];
         return items;
       }
     }
     cResult[5] = items2;
-    cResult[6] = E;
-    tmp17 = E;
+    cResult[6] = O;
+    tmp17 = O;
     tmp16 = items2;
   } else {
     tmp16 = cResult[5];
@@ -1279,7 +1281,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         }
         const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
         if (!tmp5) {
-          const obj3 = navigation(dependencyMap[64]);
+          const obj3 = navigation(dependencyMap[65]);
           const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
         }
       }
@@ -1300,17 +1302,17 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         }
         const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
         if (!tmp5) {
-          const obj3 = navigation(dependencyMap[64]);
+          const obj3 = navigation(dependencyMap[65]);
           const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
         }
       }
     }
   }
   useMountEffectDefault(tmp28);
-  const tmpResult8 = navigation(8068);
+  const tmpResult8 = navigation(8076);
   const isInReverseTrial = tmpResult8.useIsInReverseTrial();
   const tmp5Result = useFPDurationLeftDefault;
-  tmp5Result(tmp27.endsAt, navigation(13587).CountDownMessageTypes.SHORT_TIME);
+  tmp5Result(tmp27.endsAt, navigation(13678).CountDownMessageTypes.SHORT_TIME);
   if (cResult[11] !== tmp27) {
     class X {
       constructor() {
@@ -1321,7 +1323,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         }
         const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
         if (!tmp5) {
-          const obj3 = navigation(dependencyMap[64]);
+          const obj3 = navigation(dependencyMap[65]);
           const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
         }
       }
@@ -1343,7 +1345,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         }
         const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
         if (!tmp5) {
-          const obj3 = navigation(dependencyMap[64]);
+          const obj3 = navigation(dependencyMap[65]);
           const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
         }
       }
@@ -1359,7 +1361,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         }
         const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
         if (!tmp5) {
-          const obj3 = navigation(dependencyMap[64]);
+          const obj3 = navigation(dependencyMap[65]);
           const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
         }
       }
@@ -1374,7 +1376,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
           }
           const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
           if (!tmp5) {
-            const obj3 = navigation(dependencyMap[64]);
+            const obj3 = navigation(dependencyMap[65]);
             const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
           }
         }
@@ -1392,7 +1394,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         }
         const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
         if (!tmp5) {
-          const obj3 = navigation(dependencyMap[64]);
+          const obj3 = navigation(dependencyMap[65]);
           const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
         }
       }
@@ -1409,13 +1411,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         }
         const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
         if (!tmp5) {
-          const obj3 = navigation(dependencyMap[64]);
+          const obj3 = navigation(dependencyMap[65]);
           const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
         }
       }
     }
   }
-  const tmpResult9 = navigation(4787);
+  const tmpResult9 = navigation(4788);
   const theme = tmpResult9.useThemeContext().theme;
   importDefault = obj4.useRef(false);
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
@@ -1617,8 +1619,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
     tmp52[2] = theme;
     cResult[26] = tmp49;
     cResult[27] = theme;
-    cResult[28] = closure_29(VisualEffectViewAnimatedDefault, tmp52);
-    const tmp53 = closure_29(VisualEffectViewAnimatedDefault, tmp52);
+    cResult[28] = closure_28(VisualEffectViewAnimatedDefault, tmp52);
+    const tmp53 = closure_28(VisualEffectViewAnimatedDefault, tmp52);
   }
   const items6 = [tmp4.topBlur, tmp47];
   cResult[23] = tmp4.topBlur;
@@ -1636,17 +1638,17 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   let items9;
   let tmp10;
   let tmp11;
-  const f115866 = () => {
+  const f116244 = () => {
     const items = [SubscriptionStore.getPremiumTypeSubscription(), SubscriptionStore.hasFetchedSubscriptions()];
     return items;
   };
-  const tmp = closure_32();
+  const tmp = closure_31();
   const rect = useSafeAreaInsetsDefault();
   const top = rect.top;
   const bottom = rect.bottom;
-  let obj = navigation(13585);
+  let obj = navigation(13676);
   const youBarSettingsOutsideSafeAreaTop = obj.useYouBarSettingsOutsideSafeAreaTop();
-  let obj2 = navigation(1502);
+  let obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   let obj3 = react;
   let items = [navigation];
@@ -1658,8 +1660,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   const stateFromStores = obj4.useStateFromStores(items1, () => SubscriptionPlanStore.isLoadedForPremiumSKUs());
   const items2 = [SubscriptionStore];
   const obj5 = navigation(504);
-  [tmp10, tmp11] = obj5.useStateFromStoresArray(items2, f115866);
-  _slicedToArray(obj5.useStateFromStoresArray(items2, f115866), 2);
+  [tmp10, tmp11] = obj5.useStateFromStoresArray(items2, f116244);
+  _slicedToArray(obj5.useStateFromStoresArray(items2, f116244), 2);
   const items3 = [UserStore];
   const obj6 = navigation(504);
   const stateFromStores1 = obj6.useStateFromStores(items3, () => currentUser.getCurrentUser());
@@ -1672,15 +1674,15 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
     }
     const tmp5 = SubscriptionPlanStore.isLoadedForPremiumSKUs() || SubscriptionPlanStore.isFetchingForPremiumSKUs();
     if (!tmp5) {
-      const obj3 = navigation(dependencyMap[64]);
+      const obj3 = navigation(dependencyMap[65]);
       const premiumSubscriptionPlans = obj3.fetchPremiumSubscriptionPlans();
     }
   });
-  const obj8 = navigation(8068);
+  const obj8 = navigation(8076);
   let isInReverseTrial = obj8.useIsInReverseTrial();
   const tmp15 = useFPDurationLeftDefault;
-  const tmp15Result = tmp15(tmp12.endsAt, navigation(13587).CountDownMessageTypes.SHORT_TIME);
-  const obj9 = navigation(4726);
+  const tmp15Result = tmp15(tmp12.endsAt, navigation(13678).CountDownMessageTypes.SHORT_TIME);
+  const obj9 = navigation(4728);
   const unactivatedFractionalPremiumDurationString = obj9.getUnactivatedFractionalPremiumDurationString(tmp12);
   if (null !== tmp10) {
     if (!tmp10.isPurchasedExternally) {
@@ -1694,7 +1696,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   if (!tmp29Result4) {
     tmp29Result4 = tmp17;
   }
-  const tmp4Result = navigation(4787);
+  const tmp4Result = navigation(4788);
   const theme = tmp4Result.useThemeContext().theme;
   importDefault = obj3.useRef(false);
   const callback = obj3.useCallback((nativeEvent) => {
@@ -1706,7 +1708,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   let tmp23 = null != tmp10;
   const tmp4Result2 = navigation(504);
   const stateFromStores2 = tmp4Result2.useStateFromStores(items4, function() {
-    forApplication = forApplication.getForApplication(closure_1_26);
+    forApplication = forApplication.getForApplication(closure_1_25);
     if (forApplication == null) {
       const _Set = Set;
       const self = this;
@@ -1741,16 +1743,16 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
     num = top;
   }
   items5[1] = { height: num };
-  items6 = [closure_29(tmp2Result, { blurAmount: 0.2, style: items5, blurTheme: theme }), ];
+  items6 = [closure_28(tmp2Result, { blurAmount: 0.2, style: items5, blurTheme: theme }), ];
   const items7 = [tmp.container, ];
   let num2 = 16;
-  const tmp31 = closure_9;
+  const tmp31 = closure_8;
   if (!youBarSettingsOutsideSafeAreaTop) {
     num2 = top;
   }
   const obj10 = { contentContainerStyle: items7, onScrollEndDrag: callback, onMomentumScrollEnd: callback, scrollEventThrottle: 0, children: items8 };
   items7[1] = { paddingTop: num2, paddingBottom: bottom };
-  items8 = [closure_29(closure_34, {}), ];
+  items8 = [closure_28(closure_33, {}), ];
   let tmp29Result = tmp23;
   const obj11 = { style: tmp.contentContainer, children: items9 };
   if (tmp29Result) {
@@ -1759,19 +1761,19 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   }
   items9 = [tmp29Result, , , , , , ];
   if (isInReverseTrial) {
-    const obj13 = { premiumType: closure_27.TIER_2, forFractionalPremium: true, hideButton: true };
-    isInReverseTrial = tmp29(tmp2(9330), obj13);
+    const obj13 = { premiumType: closure_26.TIER_2, forFractionalPremium: true, hideButton: true };
+    isInReverseTrial = tmp29(tmp2(9368), obj13);
   }
   items9[1] = isInReverseTrial;
   let tmp29Result3 = result && !tmp23;
   if (tmp29Result3) {
-    const obj14 = { premiumType: closure_27.TIER_2, hideButton: true, hidePrice: true, isPremiumGroup: true, premiumGroupRole };
-    tmp29Result3 = tmp29(tmp2(9330), obj14);
+    const obj14 = { premiumType: closure_26.TIER_2, hideButton: true, hidePrice: true, isPremiumGroup: true, premiumGroupRole };
+    tmp29Result3 = tmp29(tmp2(9368), obj14);
   }
   items9[2] = tmp29Result3;
   if (tmp29Result4) {
     const obj15 = { fractionalPremiumInfo: tmp12, showPremiumFeaturesCard: tmp12.fractionalState === constants4.FP_ONLY, hasUnactivatedUnits: unactivatedFractionalPremiumDurationString.length > 0, unactivatedHoursString: unactivatedFractionalPremiumDurationString, activationDate: currentPeriodEnd, durationText: tmp15Result };
-    tmp29Result4 = tmp29(closure_37, obj15);
+    tmp29Result4 = tmp29(closure_36, obj15);
   }
   items9[3] = tmp29Result4;
   if (tmp27Result) {
@@ -1794,9 +1796,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
         },
       subscription: tmp10
     };
-    items10 = [closure_29(tmp2(13476), obj17), ];
+    items10 = [closure_28(tmp2(13568), obj17), ];
     const obj18 = { style: tmp.billingInfo, subscription: tmp10 };
-    items10[1] = closure_29(PremiumBillingInfoDefault, obj18);
+    items10[1] = closure_28(PremiumBillingInfoDefault, obj18);
     tmp27Result = tmp27(tmp28, obj16);
   }
   items9[4] = tmp27Result;
@@ -1806,14 +1808,14 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumManag
   if (result == null) {
     flag = false;
   }
-  items9[5] = closure_29(tmp2Result3, obj19);
+  items9[5] = closure_28(tmp2Result3, obj19);
   const obj20 = { style: tmp.featuresTable, variant: "nitro_home", titleOverride: intl.string(navigation(1126).t.QXx2gs), isFractionalOnly: tmp12.fractionalState === constants4.FP_ONLY, isPremiumGroup: result, premiumGroupRole };
   const tmp2Result4 = PremiumFeaturesTableDefault;
   intl = tmp4(1126).intl;
-  items9[6] = closure_29(tmp2Result4, obj20);
-  items8[1] = closure_30(closure_8, obj11);
-  items6[1] = closure_30(tmp31, obj10);
-  return closure_30(closure_8, obj7);
+  items9[6] = closure_28(tmp2Result4, obj20);
+  items8[1] = closure_29(closure_7, obj11);
+  items6[1] = closure_29(tmp31, obj10);
+  return closure_29(closure_7, obj7);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumManagePlan.tsx");

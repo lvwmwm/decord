@@ -1,26 +1,26 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9620
+// Function ID: 9621
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 2086, 5971, 1085, 9602, 21, 5090, 587, 558, 576, 6161, 5086, 9603, 573, 1126, 9604, 1630, 2127, 6186, 8555, 6798, 6793, 5054, 6298, 6829, 2]
+// Dependencies: [32, 19, 17, 2086, 5973, 1085, 9621, 21, 5091, 587, 558, 576, 6165, 5087, 9622, 573, 1126, 9623, 1631, 2127, 6188, 8563, 6805, 6800, 5055, 6305, 6836, 2]
 
-// Module 9601 (GuildHighlightsNotificationsActionSheet)
+// Module 9620 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import GuildIcon from "GuildIcon" /* 6161 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6793 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6798 */;
-import Constants2 from "Constants" /* 9602 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 9603 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import GuildIcon from "GuildIcon" /* 6165 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6800 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6805 */;
+import Constants2 from "Constants" /* 9621 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 9622 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import UserGuildSettingsStore_mod from "UserGuildSettingsStore" /* 5971 */;
+import UserGuildSettingsStore_mod from "UserGuildSettingsStore" /* 5973 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     }
     const obj3 = { style: tmp4.guildPill, children: items };
     items = [tmp5, tmp11];
-    const tmp16 = closure_12(View, obj3);
+    const tmp16 = authStore2(View, obj3);
     cResult[5] = tmp4.guildPill;
     cResult[6] = tmp5;
     cResult[7] = tmp11;
@@ -112,7 +112,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
   const obj3 = { style: tmp.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: name };
   name = undefined;
   const Text = Text_Text.Text;
-  const tmp2 = closure_12;
+  const tmp2 = authStore2;
   const tmp3 = View;
   const tmp4 = unpackModuleId;
   if (guild != null) {

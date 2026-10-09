@@ -1,21 +1,21 @@
-// Module ID: 15849
-// Function ID: 15850
+// Module ID: 15962
+// Function ID: 15963
 // Name: RarityBadge
-// Dependencies: [32, 19, 17, 5433, 21, 5090, 587, 558, 576, 5434, 7550, 15811, 1126, 5086, 9005, 2]
+// Dependencies: [32, 19, 17, 5434, 21, 5091, 587, 558, 576, 5435, 7559, 15924, 1126, 5087, 9016, 2]
 
-// Module 15849 (RarityBadge)
+// Module 15962 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5086 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5434 */;
-import inlineStyles from "inlineStyles" /* 7550 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 15811 */;
+import Text_Text from "Text/Text" /* 5087 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5435 */;
+import inlineStyles from "inlineStyles" /* 7559 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 15924 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 5433 */;
+import CheckpointConstants from "CheckpointConstants" /* 5434 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
               let tmp28 = tmp9;
               if (tmp28) {
                 const obj3 = { size: "xxs", color: nativeDefault.colors.BLACK };
-                const NitroWheelIcon = tmp(9005).NitroWheelIcon;
+                const NitroWheelIcon = tmp(9016).NitroWheelIcon;
                 tmp28 = authStore(NitroWheelIcon, obj3);
               }
               cResult[14] = rarity === NITRO;
@@ -187,18 +187,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
       const tmp14 = inlineStylesDefault;
       if (rarity === NITRO) {
         const obj7 = { children: unpackModuleId(LinearGradient, obj8) };
-        const Defs = tmp(7550).Defs;
+        const Defs = tmp(7559).Defs;
         obj8 = { id: metroImportDefault, x1: "0", y1: "0", x2: "1", y2: "0", children: items2 };
-        LinearGradient = tmp(7550).LinearGradient;
+        LinearGradient = tmp(7559).LinearGradient;
         const obj9 = { offset: "0", stopColor: metroRequire[0] };
-        items2 = [authStore(tmp(7550).Stop, obj9), ];
+        items2 = [authStore(tmp(7559).Stop, obj9), ];
         const obj10 = { offset: "1", stopColor: metroRequire[1] };
         items2[1] = authStore(inlineStyles.Stop, obj10);
         tmp15 = authStore(Defs, obj7);
       }
       items3 = [tmp15, ];
       const obj11 = { points: tmpResult.getChamferedRectPoints(size.width, size.height, 6), fill: metroImportAll[rarity] };
-      const Polygon = tmp(7550).Polygon;
+      const Polygon = tmp(7559).Polygon;
       tmpResult = CheckpointCustomizationUtils;
       items3[1] = authStore(Polygon, obj11);
       tmp12Result = tmp12(tmp14, size1);
@@ -273,9 +273,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
     const tmp10 = inlineStylesDefault;
     if (tmp17Result) {
       const obj3 = { children: unpackModuleId(LinearGradient, obj4) };
-      const Defs = tmp3(7550).Defs;
+      const Defs = tmp3(7559).Defs;
       obj4 = { id: metroImportDefault, x1: "0", y1: "0", x2: "1", y2: "0", children: items1 };
-      LinearGradient = tmp3(7550).LinearGradient;
+      LinearGradient = tmp3(7559).LinearGradient;
       const obj5 = { offset: "0", stopColor: metroRequire[0] };
       items1 = [authStore(inlineStyles.Stop, obj5), ];
       const obj6 = { offset: "1", stopColor: metroRequire[1] };
@@ -284,7 +284,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
     }
     items2 = [tmp11, ];
     const obj7 = { points: tmp3Result.getChamferedRectPoints(size.width, size.height, 6), fill: metroImportAll[rarity] };
-    const Polygon = tmp3(7550).Polygon;
+    const Polygon = tmp3(7559).Polygon;
     tmp3Result = CheckpointCustomizationUtils;
     items2[1] = authStore(Polygon, obj7);
     tmp5Result = tmp5(tmp10, size1);
@@ -292,13 +292,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
   items3 = [tmp5Result, ];
   const obj8 = { style: tmp.badgeContent, children: items4 };
   const obj9 = { variant: "experimental/mono-md/bold", style: tmp.badgeLabel, children: intl.string(React4[rarity]) };
-  const Text = tmp3(5086).Text;
+  const Text = tmp3(5087).Text;
   intl = tmp3(1126).intl;
   items4 = [authStore(Text, obj9), ];
   const tmp17 = authStore;
   if (tmp17Result) {
     const obj10 = { size: "xxs", color: nativeDefault.colors.BLACK };
-    const NitroWheelIcon = tmp3(9005).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9016).NitroWheelIcon;
     tmp17Result = tmp17(NitroWheelIcon, obj10);
   }
   items4[1] = tmp17Result;

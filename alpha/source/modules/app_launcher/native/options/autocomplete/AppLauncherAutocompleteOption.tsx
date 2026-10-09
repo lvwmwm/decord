@@ -1,27 +1,27 @@
-// Module ID: 11875
-// Function ID: 11876
+// Module ID: 11812
+// Function ID: 11813
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 1085, 21, 5090, 587, 1893, 5054, 11876, 1999, 11873, 6189, 5086, 2]
+// Dependencies: [32, 19, 1085, 21, 5091, 587, 1894, 5055, 11813, 2000, 11810, 6191, 5087, 2]
 // Exports: default
 
-// Module 11875 (AppLauncherAutocompleteOption)
+// Module 11812 (AppLauncherAutocompleteOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1893 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Pressables from "Pressables" /* 6189 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11873 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Pressables from "Pressables" /* 6191 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp4;
-const Text_Text = tmp4(5086);
+const Text_Text = tmp4(5087);
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -67,7 +67,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       onDismissAutocompleteSheet: _slicedToArray,
       optionValues: ref.current
     };
-    obj2.openLazy(asyncRequire(11876, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
+    obj2.openLazy(asyncRequire(11813, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
   }
   ({ style, autoFocus } = arg0);
   [initChoice, closure_9] = react.useState(() => {

@@ -1,24 +1,24 @@
-// Module ID: 10135
-// Function ID: 10136
+// Module ID: 10120
+// Function ID: 10121
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 6918, 1391, 1085, 1087, 8283, 21, 587, 5090, 558, 576, 8937, 8949, 10136, 10140, 6841, 6865, 1264, 8279, 10083, 10141, 4937, 4766, 1126, 7251, 12710, 4922, 5086, 12735, 12740, 2]
+// Dependencies: [5, 19, 17, 6925, 1392, 1085, 1087, 8291, 21, 587, 5091, 558, 576, 8948, 8960, 10121, 10125, 6848, 6872, 1265, 8287, 10068, 10126, 4938, 4768, 1126, 7256, 12655, 4923, 5087, 12680, 12685, 2]
 
-// Module 10135 (PremiumGiftWishlistBanner)
+// Module 10120 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6918 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8279 */;
-import Constants2 from "Constants" /* 8283 */;
-import useWishlistHooks from "useWishlistHooks" /* 8949 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10140 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6925 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8287 */;
+import Constants2 from "Constants" /* 8291 */;
+import useWishlistHooks from "useWishlistHooks" /* 8960 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10125 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -245,7 +245,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                                   style: null,
                                   children: from(obj5, (arg0, arg1) => {
                                                                   const obj = { style: constants3.placeholder };
-                                                                  return authStore2(metroRequire, obj, arg1);
+                                                                  return authStore3(metroRequire, obj, arg1);
                                                                 })
                                 };
                                 class F {
@@ -857,7 +857,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
         style: tmp12.placeholderRow,
         children: Array.from(obj9, (arg0, arg1) => {
               const obj = { style: closure_14.placeholder };
-              return authStore2(metroRequire, obj, arg1);
+              return authStore3(metroRequire, obj, arg1);
             })
       };
       let _Array = Array;

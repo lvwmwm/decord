@@ -1,25 +1,25 @@
-// Module ID: 5133
-// Function ID: 5134
+// Module ID: 5134
+// Function ID: 5135
 // Name: RTCDebugStore
-// Dependencies: [32, 2011, 1389, 1085, 5115, 5134, 5135, 584, 504, 2]
+// Dependencies: [32, 2012, 1390, 1085, 5116, 5135, 5136, 584, 504, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 5133 (RTCDebugStore)
+// Module 5134 (RTCDebugStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1085 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5134 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5135 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MediaEngineStore from "MediaEngineStore" /* 2011 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 5115 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import UserStore from "UserStore" /* 1390 */;
+import Constants from "Constants" /* 5116 */;
 import size from "module_2" /* 2 */;
 
 let _null, closure_11, obj, stats;
 
 let c9;
 let metroImportAll;
-const f90871 = (item) => {
+const f91081 = (item) => {
   closure_1_12[item] = {};
 };
 function updateStats(arr, arg1, timestamp) {
@@ -98,7 +98,7 @@ const MediaEngineContextTypes = Constants.MediaEngineContextTypes;
 ({ Features: metroImportAll, SimulcastOverrideQuality: c9 } = Constants);
 let combined = "" + MediaEngineContextTypes.DEFAULT + ":" + RTCDebugSections.TRANSPORT + ":" + 0;
 let section = combined;
-let closure_12 = {};
+const authStore2 = {};
 const map = new Map();
 const graphs = { availableOutgoingBitrate: true, bitrate: true, bitrateTarget: true, bytesReceived: true, bytesSent: true, encoderQualityPsnr: true, encoderQualityVmaf: true, encodeUsage: true, frameRateDecode: true, frameRateEncode: true, frameRateInput: true, frameRateNetwork: true, frameRateRender: true, keyFramesEncoded: true, keyFramesDecoded: true, inboundBitrateEstimate: true, packetsLost: true, packetsReceived: true, packetsSent: true, ping: true, qpSum: true, videoEntropy: true, audioLevel: true, screenshareCapturedFps: true, screenshareCapturedFpsUnique: true };
 class RTCDebugVideoOutputMap {
@@ -163,7 +163,7 @@ let c16 = false;
 let c17 = null;
 const map1 = new Map();
 let values = Object.values(MediaEngineContextTypes);
-let item = values.forEach(f90871);
+let item = values.forEach(f91081);
 const Store = get_initializedDefault.Store;
 class RTCDebugStore extends Store {
   initialize() {
@@ -330,7 +330,7 @@ let obj2 = {
       if (0 !== path.length) {
         replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
         if (null != replayConnection) {
-          replayConnection.on(replayConnection(5135).BaseConnectionEvent.Video, (userId, arg1, arg2, arg3) => {
+          replayConnection.on(replayConnection(5136).BaseConnectionEvent.Video, (userId, arg1, arg2, arg3) => {
             let str;
             let num = arg3;
             obj = { type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT", mediaEngineConnectionId: replayConnection.mediaEngineConnectionId, userId, videoSsrc: num, streamId: str };
@@ -367,7 +367,7 @@ let obj2 = {
     if (null != channelId.channelId) {
       const _Object = Object;
       const values = Object.values(MediaEngineContextTypes);
-      const item = values.forEach(f90871);
+      const item = values.forEach(f91081);
       map.clear();
       map1.clear();
     }
@@ -380,185 +380,212 @@ let obj2 = {
   },
   MEDIA_ENGINE_CONNECTION_STATS: function handleMediaEngineConnectionStats(connectionStats) {
     connectionStats = connectionStats.connectionStats;
-    const values = Object.values(MediaEngineContextTypes);
-    let item = values.forEach((item) => {
-      let user;
-      let closure_0 = item;
-      const found = connectionStats.filter((context) => context.context === closure_0);
-      item = found.forEach((stats, index) => {
-        let obj2;
-        let sum19;
-        stats = stats.stats;
-        if (null != stats) {
-          const tmp6 = closure_2_4(closure_11.split(":"), 3);
-          if (tmp6[0] === closure_0) {
-            const _parseInt = parseInt;
-            if (parseInt(tmp8) === index) {
-              if (null != user.getUser(tmp6[1])) {
-                const _Object = Object;
-                const keys = Object.keys(stats.rtp.inbound);
-                if (!keys.includes(tmp6[1])) {
-                  closure_11 = closure_2_10;
+    if (0 === connectionStats.length) {
+      return false;
+    } else {
+      const tmp = globalThis;
+      let _Object = Object;
+      const tmp2 = MediaEngineContextTypes;
+      const values = Object.values(MediaEngineContextTypes);
+      let item = values.forEach((item) => {
+        let user;
+        let closure_0 = item;
+        const found = connectionStats.filter((context) => context.context === closure_0);
+        item = found.forEach((stats, index) => {
+          let obj2;
+          let sum23;
+          stats = stats.stats;
+          if (null != stats) {
+            const tmp6 = closure_2_4(closure_11.split(":"), 3);
+            if (tmp6[0] === closure_0) {
+              const _parseInt = parseInt;
+              if (parseInt(tmp8) === index) {
+                if (null != user.getUser(tmp6[1])) {
+                  const _Object = Object;
+                  const keys = Object.keys(stats.rtp.inbound);
+                  if (!keys.includes(tmp6[1])) {
+                    closure_11 = closure_2_10;
+                  }
                 }
               }
             }
-          }
-          const _Date = Date;
-          const timestamp = Date.now();
-          let tmp14 = stats;
-          if (null != stats.screenshare) {
-            let screenshare;
-            const _HermesInternal = HermesInternal;
-            combined = "" + tmp2 + ":" + index;
-            const value = closure_2_18.get(combined);
-            const obj3 = closure_2_18;
-            if (closure_2_12[closure_0][index] != null) {
-              screenshare = tmp42.screenshare;
-            }
-            const result = obj3.set(combined, timestamp);
-            tmp14 = stats;
-            if (null != value) {
+            const _Date = Date;
+            const timestamp = Date.now();
+            let tmp14 = stats;
+            if (null != stats.screenshare) {
+              let screenshare;
+              const _HermesInternal = HermesInternal;
+              combined = "" + tmp2 + ":" + index;
+              const value = closure_2_18.get(combined);
+              const obj3 = closure_2_18;
+              if (closure_2_12[closure_0][index] != null) {
+                screenshare = tmp46.screenshare;
+              }
+              const result = obj3.set(combined, timestamp);
               tmp14 = stats;
-              if (null != screenshare) {
-                const result1 = (timestamp - value) / 1000;
+              if (null != value) {
                 tmp14 = stats;
-                if (0 < result1) {
-                  obj = { screenshare: obj2 };
-                  const merged = Object.assign(stats);
-                  obj2 = {};
-                  const merged1 = Object.assign(stats.screenshare);
-                  const screenshare2 = stats.screenshare;
-                  let num2 = screenshare2.videohookFrames;
-                  if (num2 == null) {
-                    num2 = 0;
+                if (null != screenshare) {
+                  const result1 = (timestamp - value) / 1000;
+                  tmp14 = stats;
+                  if (0 < result1) {
+                    obj = { screenshare: obj2 };
+                    const merged = Object.assign(stats);
+                    obj2 = {};
+                    const merged1 = Object.assign(stats.screenshare);
+                    const screenshare2 = stats.screenshare;
+                    let num2 = screenshare2.videohookFrames;
+                    if (num2 == null) {
+                      num2 = 0;
+                    }
+                    let num3 = screenshare2.hybridDxgiFrames;
+                    if (num3 == null) {
+                      num3 = 0;
+                    }
+                    let num4 = screenshare2.hybridGdiFrames;
+                    const sum = num2 + num3;
+                    if (num4 == null) {
+                      num4 = 0;
+                    }
+                    let num5 = screenshare2.hybridVideohookFrames;
+                    const sum1 = sum + num4;
+                    if (num5 == null) {
+                      num5 = 0;
+                    }
+                    let num6 = screenshare2.hybridGraphicsCaptureFrames;
+                    const sum2 = sum1 + num5;
+                    if (num6 == null) {
+                      num6 = 0;
+                    }
+                    let num7 = screenshare2.quartzFrames;
+                    const sum3 = sum2 + num6;
+                    if (num7 == null) {
+                      num7 = 0;
+                    }
+                    let num8 = screenshare2.screenCaptureKitFrames;
+                    const sum4 = sum3 + num7;
+                    if (num8 == null) {
+                      num8 = 0;
+                    }
+                    let num9 = screenshare2.activityFrames;
+                    const sum5 = sum4 + num8;
+                    if (num9 == null) {
+                      num9 = 0;
+                    }
+                    let num10 = screenshare.videohookFrames;
+                    const sum6 = sum5 + num9;
+                    if (num10 == null) {
+                      num10 = 0;
+                    }
+                    let num11 = screenshare.hybridDxgiFrames;
+                    if (num11 == null) {
+                      num11 = 0;
+                    }
+                    let num12 = screenshare.hybridGdiFrames;
+                    const sum7 = num10 + num11;
+                    if (num12 == null) {
+                      num12 = 0;
+                    }
+                    let num13 = screenshare.hybridVideohookFrames;
+                    const sum8 = sum7 + num12;
+                    if (num13 == null) {
+                      num13 = 0;
+                    }
+                    let num14 = screenshare.hybridGraphicsCaptureFrames;
+                    const sum9 = sum8 + num13;
+                    if (num14 == null) {
+                      num14 = 0;
+                    }
+                    let num15 = screenshare.quartzFrames;
+                    const sum10 = sum9 + num14;
+                    if (num15 == null) {
+                      num15 = 0;
+                    }
+                    let num16 = screenshare.screenCaptureKitFrames;
+                    const sum11 = sum10 + num15;
+                    if (num16 == null) {
+                      num16 = 0;
+                    }
+                    let num17 = screenshare.activityFrames;
+                    const sum12 = sum11 + num16;
+                    if (num17 == null) {
+                      num17 = 0;
+                    }
+                    let num18 = screenshare2.hybridDxgiFramesUnique;
+                    const sum13 = sum12 + num17;
+                    if (num18 == null) {
+                      num18 = 0;
+                    }
+                    let num19 = screenshare2.hybridGdiBitBltFramesUnique;
+                    if (num19 == null) {
+                      num19 = 0;
+                    }
+                    let num20 = screenshare2.hybridGdiPrintWindowFramesUnique;
+                    const sum14 = num18 + num19;
+                    if (num20 == null) {
+                      num20 = 0;
+                    }
+                    let num21 = screenshare2.hybridVideohookFramesUnique;
+                    const sum15 = sum14 + num20;
+                    if (num21 == null) {
+                      num21 = 0;
+                    }
+                    let num22 = screenshare2.hybridGraphicsCaptureFramesUnique;
+                    const sum16 = sum15 + num21;
+                    if (num22 == null) {
+                      num22 = 0;
+                    }
+                    let num23 = screenshare2.hybridExternalFramesUnique;
+                    const sum17 = sum16 + num22;
+                    if (num23 == null) {
+                      num23 = 0;
+                    }
+                    let num24 = screenshare.hybridDxgiFramesUnique;
+                    const sum18 = sum17 + num23;
+                    if (num24 == null) {
+                      num24 = 0;
+                    }
+                    let num25 = screenshare.hybridGdiBitBltFramesUnique;
+                    if (num25 == null) {
+                      num25 = 0;
+                    }
+                    let num26 = screenshare.hybridGdiPrintWindowFramesUnique;
+                    const sum19 = num24 + num25;
+                    if (num26 == null) {
+                      num26 = 0;
+                    }
+                    let num27 = screenshare.hybridVideohookFramesUnique;
+                    const sum20 = sum19 + num26;
+                    if (num27 == null) {
+                      num27 = 0;
+                    }
+                    let num28 = screenshare.hybridGraphicsCaptureFramesUnique;
+                    const sum21 = sum20 + num27;
+                    if (num28 == null) {
+                      num28 = 0;
+                    }
+                    let num29 = screenshare.hybridExternalFramesUnique;
+                    const sum22 = sum21 + num28;
+                    if (num29 == null) {
+                      num29 = 0;
+                    }
+                    const _Math = Math;
+                    const obj4 = { screenshareCapturedFps: Math.max(0, (sum6 - sum13) / result1), screenshareCapturedFpsUnique: Math.max(0, (sum18 - sum23) / result1) };
+                    sum23 = sum22 + num29;
+                    const _Math2 = Math;
+                    const merged2 = Object.assign(obj4);
+                    tmp14 = obj;
                   }
-                  let num3 = screenshare2.hybridDxgiFrames;
-                  if (num3 == null) {
-                    num3 = 0;
-                  }
-                  let num4 = screenshare2.hybridGdiFrames;
-                  const sum = num2 + num3;
-                  if (num4 == null) {
-                    num4 = 0;
-                  }
-                  let num5 = screenshare2.hybridVideohookFrames;
-                  const sum1 = sum + num4;
-                  if (num5 == null) {
-                    num5 = 0;
-                  }
-                  let num6 = screenshare2.hybridGraphicsCaptureFrames;
-                  const sum2 = sum1 + num5;
-                  if (num6 == null) {
-                    num6 = 0;
-                  }
-                  let num7 = screenshare2.quartzFrames;
-                  const sum3 = sum2 + num6;
-                  if (num7 == null) {
-                    num7 = 0;
-                  }
-                  let num8 = screenshare2.screenCaptureKitFrames;
-                  const sum4 = sum3 + num7;
-                  if (num8 == null) {
-                    num8 = 0;
-                  }
-                  let num9 = screenshare.videohookFrames;
-                  const sum5 = sum4 + num8;
-                  if (num9 == null) {
-                    num9 = 0;
-                  }
-                  let num10 = screenshare.hybridDxgiFrames;
-                  if (num10 == null) {
-                    num10 = 0;
-                  }
-                  let num11 = screenshare.hybridGdiFrames;
-                  const sum6 = num9 + num10;
-                  if (num11 == null) {
-                    num11 = 0;
-                  }
-                  let num12 = screenshare.hybridVideohookFrames;
-                  const sum7 = sum6 + num11;
-                  if (num12 == null) {
-                    num12 = 0;
-                  }
-                  let num13 = screenshare.hybridGraphicsCaptureFrames;
-                  const sum8 = sum7 + num12;
-                  if (num13 == null) {
-                    num13 = 0;
-                  }
-                  let num14 = screenshare.quartzFrames;
-                  const sum9 = sum8 + num13;
-                  if (num14 == null) {
-                    num14 = 0;
-                  }
-                  let num15 = screenshare.screenCaptureKitFrames;
-                  const sum10 = sum9 + num14;
-                  if (num15 == null) {
-                    num15 = 0;
-                  }
-                  let num16 = screenshare2.hybridDxgiFramesUnique;
-                  const sum11 = sum10 + num15;
-                  if (num16 == null) {
-                    num16 = 0;
-                  }
-                  let num17 = screenshare2.hybridGdiBitBltFramesUnique;
-                  if (num17 == null) {
-                    num17 = 0;
-                  }
-                  let num18 = screenshare2.hybridGdiPrintWindowFramesUnique;
-                  const sum12 = num16 + num17;
-                  if (num18 == null) {
-                    num18 = 0;
-                  }
-                  let num19 = screenshare2.hybridVideohookFramesUnique;
-                  const sum13 = sum12 + num18;
-                  if (num19 == null) {
-                    num19 = 0;
-                  }
-                  let num20 = screenshare2.hybridGraphicsCaptureFramesUnique;
-                  const sum14 = sum13 + num19;
-                  if (num20 == null) {
-                    num20 = 0;
-                  }
-                  let num21 = screenshare.hybridDxgiFramesUnique;
-                  const sum15 = sum14 + num20;
-                  if (num21 == null) {
-                    num21 = 0;
-                  }
-                  let num22 = screenshare.hybridGdiBitBltFramesUnique;
-                  if (num22 == null) {
-                    num22 = 0;
-                  }
-                  let num23 = screenshare.hybridGdiPrintWindowFramesUnique;
-                  const sum16 = num21 + num22;
-                  if (num23 == null) {
-                    num23 = 0;
-                  }
-                  let num24 = screenshare.hybridVideohookFramesUnique;
-                  const sum17 = sum16 + num23;
-                  if (num24 == null) {
-                    num24 = 0;
-                  }
-                  let num25 = screenshare.hybridGraphicsCaptureFramesUnique;
-                  const sum18 = sum17 + num24;
-                  if (num25 == null) {
-                    num25 = 0;
-                  }
-                  const _Math = Math;
-                  const obj4 = { screenshareCapturedFps: Math.max(0, (sum5 - sum11) / result1), screenshareCapturedFpsUnique: Math.max(0, (sum15 - sum19) / result1) };
-                  sum19 = sum18 + num25;
-                  const _Math2 = Math;
-                  const merged2 = Object.assign(obj4);
-                  tmp14 = obj;
                 }
               }
             }
+            closure_2_12[closure_0][index] = closure_2_19(tmp14, closure_2_12[closure_0][index], timestamp);
+          } else {
+            delete closure_2_12[closure_0][tmp];
           }
-          closure_2_12[closure_0][index] = closure_2_19(tmp14, closure_2_12[closure_0][index], timestamp);
-        } else {
-          delete closure_2_12[closure_0][tmp];
-        }
+        });
       });
-    });
+    }
   }
 };
 const rTCDebugStore = new RTCDebugStore(DispatcherDefault, obj2);

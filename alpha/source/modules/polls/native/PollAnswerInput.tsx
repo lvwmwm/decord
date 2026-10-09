@@ -1,28 +1,28 @@
-// Module ID: 11940
-// Function ID: 11941
+// Module ID: 11877
+// Function ID: 11878
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 2063, 7232, 7943, 1392, 21, 5090, 587, 558, 576, 11941, 1126, 7870, 1200, 6189, 9359, 9201, 5054, 11942, 1999, 8931, 8555, 5048, 11945, 2]
+// Dependencies: [19, 17, 2064, 7237, 7952, 1393, 21, 5091, 587, 558, 576, 11878, 1126, 7879, 1200, 6191, 9397, 9235, 5055, 11879, 2000, 8942, 8563, 5049, 11882, 2]
 // Exports: default
 
-// Module 11940 (PollAnswerInput)
+// Module 11877 (PollAnswerInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import asyncRequire from "asyncRequire" /* 1999 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5054 */;
-import Pressables from "Pressables" /* 6189 */;
-import DraftStore from "DraftStore" /* 7232 */;
-import PollsUtils from "PollsUtils" /* 7870 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9201 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9359 */;
-import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 11941 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import Pressables from "Pressables" /* 6191 */;
+import DraftStore from "DraftStore" /* 7237 */;
+import PollsUtils from "PollsUtils" /* 7879 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9235 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9397 */;
+import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 11878 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import PollsConstants from "PollsConstants" /* 7943 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import PollsConstants from "PollsConstants" /* 7952 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -176,7 +176,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
           }
         }
         const obj5 = { accessibilityRole: "button", accessibilityLabel: tmp7, onPress: openExpressionPicker, onLongPress: tmp16, onLayout: tmp17, style: tmp19, children: tmp20 };
-        const tmp26 = closure_12(Pressables.PressableOpacity, obj5);
+        const tmp26 = authStore2(Pressables.PressableOpacity, obj5);
         cResult[17] = openExpressionPicker;
         cResult[18] = tmp16;
         cResult[19] = tmp7;
@@ -369,7 +369,7 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(11942, dependencyMap.paths), authStore, obj2);
+      obj.openLazy(asyncRequire(11879, dependencyMap.paths), authStore, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,

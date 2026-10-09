@@ -1,19 +1,19 @@
-// Module ID: 18334
-// Function ID: 18335
+// Module ID: 18496
+// Function ID: 18497
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 6082, 1085, 3, 6797, 1381, 10820, 8307, 1264, 2]
+// Dependencies: [5, 17, 6084, 1085, 3, 6804, 1382, 10991, 8315, 1265, 2]
 
-// Module 18334 (NativeNotificationsManager)
+// Module 18496 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6082 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6797 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6084 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, c8, closure_0, closure_12, closure_3, logger, map;
+let c4, c5, c8, closure_0, closure_3, logger, map;
 
 const NativeModules = react_native.NativeModules;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -223,7 +223,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
           } else {
             if (1 === tmp4) {
               c6 = 0;
-              closure_12 = tmp73;
+              let closure_12 = tmp73;
               logger.error("Error tracking push notifications", closure_12);
             } else {
               if (2 === tmp4) {

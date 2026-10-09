@@ -1,12 +1,12 @@
-// Module ID: 10977
-// Function ID: 10978
+// Module ID: 11151
+// Function ID: 11152
 // Name: PanGestureAnimations
-// Dependencies: [1200, 5374, 5091, 558, 576, 4810, 6326, 2]
+// Dependencies: [1200, 5375, 5092, 558, 576, 4811, 6333, 2]
 
-// Module 10977 (PanGestureAnimations)
+// Module 11151 (PanGestureAnimations)
 import native from "native" /* 1200 */;
-import timing from "timing" /* 5091 */;
-import spring from "spring" /* 5374 */;
+import timing from "timing" /* 5092 */;
+import spring from "spring" /* 5375 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

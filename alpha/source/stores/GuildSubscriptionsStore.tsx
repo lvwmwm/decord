@@ -1,28 +1,28 @@
-// Module ID: 6966
-// Function ID: 6967
+// Module ID: 6973
+// Function ID: 6974
 // Name: GuildSubscriptionsStore
-// Dependencies: [32, 4976, 4708, 5756, 502, 6967, 6066, 2063, 5970, 2124, 2086, 5108, 4717, 2115, 4899, 1085, 6968, 584, 12, 2089, 504, 2]
+// Dependencies: [32, 4977, 4710, 5757, 502, 6974, 6068, 2064, 5972, 2124, 2086, 5109, 4719, 2115, 4900, 1085, 6975, 584, 12, 2089, 504, 2]
 
-// Module 6966 (GuildSubscriptionsStore)
+// Module 6973 (GuildSubscriptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FavoritesUtils from "FavoritesUtils" /* 2089 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 6967 */;
-import GuildSubscriptionsDefault from "GuildSubscriptions" /* 6968 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 6974 */;
+import GuildSubscriptionsDefault from "GuildSubscriptions" /* 6975 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4976 */;
-import LurkingStore from "LurkingStore" /* 4708 */;
-import SpotifyStore from "SpotifyStore" /* 5756 */;
+import ExperimentStore from "ExperimentStore" /* 4977 */;
+import LurkingStore from "LurkingStore" /* 4710 */;
+import SpotifyStore from "SpotifyStore" /* 5757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6066 */;
-import ChannelStore from "ChannelStore" /* 2063 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6068 */;
+import ChannelStore from "ChannelStore" /* 2064 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5972 */;
 import GuildMemberStore from "GuildMemberStore" /* 2124 */;
 import GuildStore from "GuildStore" /* 2086 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5108 */;
-import RelationshipStore from "RelationshipStore" /* 4717 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import RelationshipStore from "RelationshipStore" /* 4719 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4899 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

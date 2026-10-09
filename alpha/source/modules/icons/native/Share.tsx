@@ -1,12 +1,12 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 8710
+// Function ID: 8711
 // Name: Share
-// Dependencies: [1381, 8702, 8703, 2]
+// Dependencies: [1382, 8711, 8712, 2]
 
-// Module 8701 (Share)
-import AssetRegistryDefault from "AssetRegistry" /* 8702 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8703 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+// Module 8710 (Share)
+import AssetRegistryDefault from "AssetRegistry" /* 8711 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8712 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 let importDefaultResult;

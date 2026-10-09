@@ -1,13 +1,13 @@
-// Module ID: 11806
-// Function ID: 11807
+// Module ID: 11743
+// Function ID: 11744
 // Name: AppLauncherFlashList
-// Dependencies: [109, 19, 17, 21, 6326, 558, 11807, 576, 11232, 11233, 8600, 2]
+// Dependencies: [109, 19, 17, 21, 6333, 558, 11744, 576, 10587, 10588, 8608, 2]
 // Exports: useAppLauncherFlashListProps
 
-// Module 11806 (AppLauncherFlashList)
+// Module 11743 (AppLauncherFlashList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useAnimatedScrollLock from "useAnimatedScrollLock" /* 11807 */;
+import useAnimatedScrollLock from "useAnimatedScrollLock" /* 11744 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     tmp4 = cResult[1];
     tmp5 = cResult[2];
   }
-  const tmpResult = simultaneousHandlers(11232);
+  const tmpResult = simultaneousHandlers(10587);
   const items = [simultaneousHandlers];
   const entrypoint = tmpResult.useAppLauncherContext().entrypoint;
   const memo = react.useMemo(() => (function ScrollViewGestureAware(ref) {
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     const merged1 = Object.assign(merged);
     return <GestureDetector gesture={memo}>{null}</GestureDetector>;
   }), items);
-  if (entrypoint === tmp4.simultaneousHandlers(11233).AppLauncherEntrypoint.VOICE) {
+  if (entrypoint === tmp4.simultaneousHandlers(10588).AppLauncherEntrypoint.VOICE) {
     if (cResult[3] === memo) {
       if (cResult[4] === tmp4.ListHeaderComponent) {
         if (cResult[5] === tmp4.animatedOnScroll) {
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
     }
     ({ ListHeaderComponent: obj4.ListHeaderComponent, animatedOnScroll: obj4.onScroll, contentContainerStyle: obj4.contentContainerStyle, scrollIndicatorInsets: obj4.scrollIndicatorInsets, renderItem: obj4.renderItem, getItemType: obj4.getItemType, data: obj4.data, automaticallyAdjustsScrollIndicatorInsets: obj4.automaticallyAdjustsScrollIndicatorInsets, keyboardDismissMode: obj4.keyboardDismissMode, keyboardShouldPersistTaps: obj4.keyboardShouldPersistTaps, showsVerticalScrollIndicator: obj4.showsVerticalScrollIndicator, onViewableItemsChanged: obj4.onViewableItemsChanged, viewabilityConfigCallbackPairs: obj4.viewabilityConfigCallbackPairs, animatedProps: obj4.animatedProps } = tmp4);
-    const tmp15 = jsx(tmp4.simultaneousHandlers(8600).AnimatedFlashList, { renderScrollComponent: memo, ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, animatedProps: null, overScrollMode: "never", ref: tmp5 });
+    const tmp15 = jsx(tmp4.simultaneousHandlers(8608).AnimatedFlashList, { renderScrollComponent: memo, ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, animatedProps: null, overScrollMode: "never", ref: tmp5 });
     cResult[3] = memo;
     cResult[4] = tmp4.ListHeaderComponent;
     cResult[5] = tmp4.animatedOnScroll;
@@ -144,7 +144,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
     }
     ({ ListHeaderComponent: obj3.ListHeaderComponent, onScroll: obj3.onScroll, contentContainerStyle: obj3.contentContainerStyle, scrollIndicatorInsets: obj3.scrollIndicatorInsets, renderItem: obj3.renderItem, getItemType: obj3.getItemType, data: obj3.data, preserveScrollMomentum: obj3.preserveScrollMomentum, automaticallyAdjustsScrollIndicatorInsets: obj3.automaticallyAdjustsScrollIndicatorInsets, keyboardDismissMode: obj3.keyboardDismissMode, keyboardShouldPersistTaps: obj3.keyboardShouldPersistTaps, showsVerticalScrollIndicator: obj3.showsVerticalScrollIndicator, lockableScrollableContentOffsetY: obj3.lockableScrollableContentOffsetY, bottomViewabilityInsetRef: obj3.bottomViewabilityInsetRef, onViewableItemsChanged: obj3.onViewableItemsChanged, viewabilityConfigCallbackPairs: obj3.viewabilityConfigCallbackPairs } = tmp4);
-    const tmp12 = jsx(tmp4.simultaneousHandlers(8600).BottomSheetFlashList, { ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, preserveScrollMomentum: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, lockableScrollableContentOffsetY: null, bottomViewabilityInsetRef: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, ref: tmp5 });
+    const tmp12 = jsx(tmp4.simultaneousHandlers(8608).BottomSheetFlashList, { ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, preserveScrollMomentum: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, lockableScrollableContentOffsetY: null, bottomViewabilityInsetRef: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, ref: tmp5 });
     cResult[20] = tmp4.ListHeaderComponent;
     cResult[21] = tmp4.automaticallyAdjustsScrollIndicatorInsets;
     cResult[22] = tmp4.bottomViewabilityInsetRef;
@@ -171,7 +171,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let tmp6;
   ref = ref.ref;
   let merged = Object.assign(ref, Object.assign({ ref: 0 }));
-  const obj = simultaneousHandlers(11232);
+  const obj = simultaneousHandlers(10587);
   simultaneousHandlers = merged.simultaneousHandlers;
   const items = [simultaneousHandlers];
   const entrypoint = obj.useAppLauncherContext().entrypoint;
@@ -187,12 +187,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     const merged1 = Object.assign(merged);
     return <GestureDetector gesture={memo}>{null}</GestureDetector>;
   }), items);
-  if (entrypoint === simultaneousHandlers(11233).AppLauncherEntrypoint.VOICE) {
+  if (entrypoint === simultaneousHandlers(10588).AppLauncherEntrypoint.VOICE) {
     ({ ListHeaderComponent: obj2.ListHeaderComponent, animatedOnScroll: obj2.onScroll, contentContainerStyle: obj2.contentContainerStyle, scrollIndicatorInsets: obj2.scrollIndicatorInsets, renderItem: obj2.renderItem, getItemType: obj2.getItemType, data: obj2.data, automaticallyAdjustsScrollIndicatorInsets: obj2.automaticallyAdjustsScrollIndicatorInsets, keyboardDismissMode: obj2.keyboardDismissMode, keyboardShouldPersistTaps: obj2.keyboardShouldPersistTaps, showsVerticalScrollIndicator: obj2.showsVerticalScrollIndicator, onViewableItemsChanged: obj2.onViewableItemsChanged, viewabilityConfigCallbackPairs: obj2.viewabilityConfigCallbackPairs, animatedProps: obj2.animatedProps } = merged);
-    tmp6 = jsx(tmp2(8600).AnimatedFlashList, { renderScrollComponent: memo, ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, animatedProps: null, overScrollMode: "never", ref });
+    tmp6 = jsx(tmp2(8608).AnimatedFlashList, { renderScrollComponent: memo, ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, animatedProps: null, overScrollMode: "never", ref });
   } else {
     ({ ListHeaderComponent: obj3.ListHeaderComponent, onScroll: obj3.onScroll, contentContainerStyle: obj3.contentContainerStyle, scrollIndicatorInsets: obj3.scrollIndicatorInsets, renderItem: obj3.renderItem, getItemType: obj3.getItemType, data: obj3.data, preserveScrollMomentum: obj3.preserveScrollMomentum, automaticallyAdjustsScrollIndicatorInsets: obj3.automaticallyAdjustsScrollIndicatorInsets, keyboardDismissMode: obj3.keyboardDismissMode, keyboardShouldPersistTaps: obj3.keyboardShouldPersistTaps, showsVerticalScrollIndicator: obj3.showsVerticalScrollIndicator, lockableScrollableContentOffsetY: obj3.lockableScrollableContentOffsetY, bottomViewabilityInsetRef: obj3.bottomViewabilityInsetRef, onViewableItemsChanged: obj3.onViewableItemsChanged, viewabilityConfigCallbackPairs: obj3.viewabilityConfigCallbackPairs } = merged);
-    tmp6 = jsx(tmp2(8600).BottomSheetFlashList, { ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, preserveScrollMomentum: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, lockableScrollableContentOffsetY: null, bottomViewabilityInsetRef: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, ref });
+    tmp6 = jsx(tmp2(8608).BottomSheetFlashList, { ListHeaderComponent: null, onScroll: null, contentContainerStyle: null, scrollIndicatorInsets: null, renderItem: null, getItemType: null, data: null, preserveScrollMomentum: null, automaticallyAdjustsScrollIndicatorInsets: null, keyboardDismissMode: null, keyboardShouldPersistTaps: null, showsVerticalScrollIndicator: null, lockableScrollableContentOffsetY: null, bottomViewabilityInsetRef: null, onViewableItemsChanged: null, viewabilityConfigCallbackPairs: null, ref });
   }
   return tmp6;
 });

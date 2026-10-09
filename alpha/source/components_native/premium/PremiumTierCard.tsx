@@ -1,46 +1,45 @@
-// Module ID: 13691
-// Function ID: 13692
+// Module ID: 13783
+// Function ID: 13784
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 7140, 1391, 21, 5090, 587, 558, 576, 13692, 13693, 8070, 7144, 7145, 10057, 4726, 5387, 1105, 6186, 2]
+// Dependencies: [19, 17, 7145, 1392, 21, 5091, 587, 558, 576, 13784, 13785, 8078, 7149, 7150, 10042, 4728, 6163, 5388, 1105, 6188, 2]
 
-// Module 13691 (PremiumTierCard)
+// Module 13783 (PremiumTierCard)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumUtils from "PremiumUtils" /* 4726 */;
-import LinearGradientDefault from "LinearGradient" /* 5387 */;
-import ColorConstants from "ColorConstants" /* 7140 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7144 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7145 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8070 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10057 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13692 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13693 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import PremiumUtils from "PremiumUtils" /* 4728 */;
+import LinearGradientDefault from "LinearGradient" /* 5388 */;
+import FastImageDefault from "FastImage" /* 6163 */;
+import ColorConstants from "ColorConstants" /* 7145 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7149 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7150 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8078 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10042 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13784 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13785 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5090 */;
+import createStyles from "createStyles" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, premiumType;
 
-let c3;
-let c9;
-let closure_4;
 let metroImportAll;
 let metroImportDefault;
+let metroRequire;
 let obj2;
 let tmp8;
-const Card_Card = tmp8(6186);
-({ View: c3, Image: closure_4 } = react_native);
+const Card_Card = tmp8(6188);
+const View = react_native.View;
 const getPremiumGradientColor = ColorConstants.getPremiumGradientColor;
 const PremiumTypes = PremiumConstants.PremiumTypes;
-({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { header: { marginTop: 24, padding: 16 }, textLogoTier0: { width: 158, height: 32 }, textLogoTier1: { width: 185, height: 32 }, textLogoTier2: { width: 80, height: 32 }, wumpusLogo: { position: "absolute", top: 0, right: 24, zIndex: 1 }, wumpusLogoTier0: { width: 83, height: 100 }, wumpusLogoTier1: { width: 86, height: 100 }, wumpusLogoTier2: { width: 133, height: 100 }, body: obj2 };
 obj2 = { padding: 16, borderBottomRightRadius: nativeDefault.radii.xs, borderBottomLeftRadius: nativeDefault.radii.xs };
-let closure_10 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
+let closure_9 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
   let children;
   let closure_1;
   let items;
@@ -51,7 +50,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
   const cResult = obj.c(50);
   premiumType = premiumType.premiumType;
   ({ children, style } = premiumType);
-  const tmp4 = closure_10();
+  const tmp4 = closure_9();
   importDefault = tmp4;
   if (cResult[0] !== premiumType) {
     function getTextLogo() {
@@ -113,7 +112,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
                 tmp9 = cResult[15];
               }
               if (cResult[16] !== premiumType) {
-                const tmpResult = premiumType(4726);
+                const tmpResult = premiumType(4728);
                 const premiumTypeDisplayName = tmpResult.getPremiumTypeDisplayName(premiumType);
                 cResult[16] = premiumType;
                 cResult[17] = premiumTypeDisplayName;
@@ -197,7 +196,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
                                   return tmp44;
                                 }
                                 const obj2 = { variant: "surface-high", style, children: tmp40 };
-                                const tmp46 = closure_7(premiumType(6186).Card, obj2);
+                                const tmp46 = closure_6(premiumType(6188).Card, obj2);
                                 cResult[47] = tmp40;
                                 cResult[48] = style;
                                 cResult[49] = tmp46;
@@ -206,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
                             }
                             const obj3 = { children: items };
                             items = [tmp22, tmp32, tmp36];
-                            const tmp43 = closure_9(closure_8, obj3);
+                            const tmp43 = closure_8(closure_7, obj3);
                             cResult[43] = tmp22;
                             cResult[44] = tmp32;
                             cResult[45] = tmp36;
@@ -214,14 +213,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
                             tmp40 = tmp43;
                           }
                           const obj4 = { style: tmp4.body, children };
-                          const tmp39 = closure_7(closure_3, obj4);
+                          const tmp39 = closure_6(View, obj4);
                           cResult[40] = children;
                           cResult[41] = tmp4.body;
                           cResult[42] = tmp39;
                           tmp36 = tmp39;
                         }
                         const obj5 = { accessible: false, importantForAccessibility: "no", style: tmp29, source: tmp30 };
-                        const tmp35 = closure_7(closure_4, obj5);
+                        const tmp35 = closure_6(FastImageDefault, obj5);
                         cResult[37] = tmp29;
                         cResult[38] = tmp30;
                         cResult[39] = tmp35;
@@ -236,7 +235,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
                   }
                   const obj6 = { style: header, start: premiumType(1105).HorizontalGradient.START, end: premiumType(1105).HorizontalGradient.END, colors: tmp9, children: tmp18 };
                   const tmp25 = LinearGradientDefault;
-                  const tmp26 = closure_7(tmp25, obj6);
+                  const tmp26 = closure_6(tmp25, obj6);
                   cResult[26] = tmp4.header;
                   cResult[27] = tmp18;
                   cResult[28] = tmp9;
@@ -245,7 +244,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
                 }
               }
               const obj7 = { accessible: true, accessibilityLabel: tmp12, accessibilityRole: "header", style: tmp14, source: tmp16 };
-              const tmp21 = closure_7(closure_4, obj7);
+              const tmp21 = closure_6(FastImageDefault, obj7);
               cResult[22] = tmp12;
               cResult[23] = tmp14;
               cResult[24] = tmp16;
@@ -294,17 +293,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
   let style;
   let textLogoTier2;
   let tmp5Result;
-  let tmp5Result2;
+  let tmp5Result4;
+  let tmp9;
   let wumpusLogoTier2;
   premiumType = premiumType.premiumType;
   ({ children, style } = premiumType);
-  const tmp = closure_10();
-  const obj = { style: tmp.header, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: getPremiumGradientColor(premiumType), children: metroImportDefault(React3, obj2) };
+  const tmp = closure_9();
+  const obj = { style: tmp.header, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: getPremiumGradientColor(premiumType), children: metroRequire(tmp9, obj2) };
   const tmp7 = LinearGradientDefault;
   obj2 = { accessible: true, accessibilityLabel: obj3.getPremiumTypeDisplayName(premiumType), accessibilityRole: "header", style: textLogoTier2, source: tmp5Result };
+  tmp9 = FastImageDefault;
   obj3 = PremiumUtils;
-  const tmp2 = React4;
-  const tmp3 = metroImportAll;
+  const tmp2 = metroImportAll;
+  const tmp3 = metroImportDefault;
   if (PremiumTypes.TIER_0 === premiumType) {
     textLogoTier2 = tmp.textLogoTier0;
   } else if (PremiumTypes.TIER_1 === premiumType) {
@@ -313,14 +314,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
     textLogoTier2 = tmp.textLogoTier2;
   }
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result = tmp5(13692);
+    tmp5Result = tmp5(13784);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result = tmp5(13693);
+    tmp5Result = tmp5(13785);
   } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp5Result = tmp5(8070);
+    tmp5Result = tmp5(8078);
   }
-  const items = [metroImportDefault(tmp7, obj), , ];
+  const items = [metroRequire(tmp7, obj), , ];
   const items1 = [tmp.wumpusLogo, ];
+  const tmp5Result3 = FastImageDefault;
   if (PremiumTypes.TIER_0 === premiumType) {
     wumpusLogoTier2 = tmp.wumpusLogoTier0;
   } else if (PremiumTypes.TIER_1 === premiumType) {
@@ -328,22 +330,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType) => {
   } else if (PremiumTypes.TIER_2 === premiumType) {
     wumpusLogoTier2 = tmp.wumpusLogoTier2;
   }
-  const obj4 = { accessible: false, importantForAccessibility: "no", style: items1, source: tmp5Result2 };
+  const obj4 = { accessible: false, importantForAccessibility: "no", style: items1, source: tmp5Result4 };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result2 = tmp5(7144);
+    tmp5Result4 = tmp5(7149);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result2 = tmp5(7145);
+    tmp5Result4 = tmp5(7150);
   } else if (PremiumTypes.TIER_2 === premiumType) {
-    tmp5Result2 = tmp5(10057);
+    tmp5Result4 = tmp5(10042);
   }
   const obj5 = { children: items };
-  items[1] = metroImportDefault(React3, obj4);
+  items[1] = metroRequire(tmp5Result3, obj4);
   const obj6 = { style: tmp.body, children };
-  items[2] = metroImportDefault(_false, obj6);
+  items[2] = metroRequire(View, obj6);
   const children1 = tmp2(tmp3, obj5);
-  return metroImportDefault(Card_Card.Card, { variant: "surface-high", style, children: children1 });
+  return metroRequire(Card_Card.Card, { variant: "surface-high", style, children: children1 });
 });
 const result = size.fileFinishedImporting("components_native/premium/PremiumTierCard.tsx");
 
-export default tmp5;
+export default tmp4;

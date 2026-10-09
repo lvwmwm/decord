@@ -1,11 +1,11 @@
-// Module ID: 2054
-// Function ID: 2055
+// Module ID: 2055
+// Function ID: 2056
 // Name: DismissibleContentTypes
-// Dependencies: [2048, 2]
+// Dependencies: [2049, 2]
 // Exports: isGuildDismissibleContent, isRecurringDismissibleContent, isSingleUseDismissibleContent, isSingleUseGuildDismissibleContent, isSnowflakeBoundDismissibleContent, isSnowflakeBoundGuildDismissibleContent, isTimeRecurringDismissibleContent, isTimeRecurringGuildDismissibleContent, isVersionedDismissibleContent
 
-// Module 2054 (DismissibleContentTypes)
-import dismissible_content from "dismissible_content" /* 2048 */;
+// Module 2055 (DismissibleContentTypes)
+import dismissible_content from "dismissible_content" /* 2049 */;
 import size from "module_2" /* 2 */;
 
 function isSingleUseDismissibleContent(item10020) {

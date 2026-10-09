@@ -1,221 +1,141 @@
 // Module ID: 1601
 // Function ID: 1602
-// Dependencies: [19, 1505, 1602]
-// Exports: useLinkBuilder
+// Dependencies: [109, 19, 21, 1506, 1602, 1604]
+// Exports: createStandardNavigationFactories
 
 // Module 1601
-import BaseNavigationContainer from "BaseNavigationContainer" /* 1505 */;
+import Fragment from "Fragment" /* 21 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1506 */;
+import _mod1602 from "module_1602" /* 1602 */;
+import react2 from "react" /* 1604 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 
-function useBuildHref() {
-  let context;
-  let context1;
-  let options;
-  let tmp = options;
-  let tmp3 = context1;
-  const tmp2 = context;
-  context = options.useContext(context(context1[1]).NavigationHelpersContext);
-  context1 = options.useContext(context(context1[1]).NavigationRouteContext);
-  options = options.useContext(context(context1[2]).LinkingContext).options;
-  let obj = context(context1[1]);
-  const stateForPath = obj.useStateForPath();
-  let getPathFromState;
-  if (options != null) {
-    getPathFromState = options.getPathFromState;
-  }
-  if (getPathFromState == null) {
-    getPathFromState = tmp2(tmp3[1]).getPathFromState;
-  }
-  let enabled;
-  const useCallback = tmp.useCallback;
-  if (options != null) {
-    enabled = options.enabled;
-  }
-  let items = [enabled, , , , , ];
-  let config;
-  if (options != null) {
-    config = options.config;
-  }
-  items[1] = config;
-  let key;
-  if (context1 != null) {
-    key = context1.key;
-  }
-  items[2] = key;
-  items[3] = context;
-  items[4] = stateForPath;
-  items[5] = getPathFromState;
-  return useCallback((name, params) => {
-    let constructState;
-    let items;
-    let items1;
-    let items2;
-    let obj3;
-    let tmp21;
-    let tmp = constructState;
-    let enabled;
-    if (constructState != null) {
-      enabled = tmp.enabled;
-    }
-    if (false !== enabled) {
-      let obj = context;
-      let tmp3 = context;
-      if (tmp3) {
-        let key1;
-        if (obj3 != null) {
-          key1 = obj3.key;
-        }
-        tmp3 = key1;
-      }
-      if (tmp3) {
-        tmp3 = stateForPath;
-      }
-      let tmp5 = tmp3;
-      if (tmp5) {
-        const key = obj3.key;
-        let obj2 = context(context1[1]);
-        const findFocusedRouteResult = obj2.findFocusedRoute(stateForPath);
-        let key2;
-        if (findFocusedRouteResult != null) {
-          key2 = findFocusedRouteResult.key;
-        }
-        let someResult = key === key2;
-        if (someResult) {
-          const routes = obj.getState().routes;
-          someResult = routes.some((key) => key.key === obj3.key);
-        }
-        tmp5 = someResult;
-      }
-      context = tmp5;
-      obj3 = { routes: items };
-      items = [{ name, params }];
-      constructState = function constructState(state) {
-        let items;
-        const tmp = state;
-        if (tmp) {
-          const first = state.routes[0];
-          const tmp4 = context;
-          if (tmp4) {
-            let tmp5;
-            if (!first.state) {
-              tmp5 = obj3;
-            }
-            return tmp5;
-          }
-          const obj = { routes: items };
-          const obj2 = { state: constructState(first.state) };
-          const merged = Object.assign(first);
-          items = [obj2];
-          tmp5 = obj;
-        } else {
-          return obj3;
-        }
-      };
-      let tmp15 = obj3;
-      const obj4 = { name, params };
-      if (stateForPath) {
-        let tmp17;
-        let first = stateForPath.routes[0];
-        if (!tmp5) {
-          const obj5 = { state: tmp21 };
-          let merged = Object.assign(first);
-          const state = first.state;
-          tmp21 = obj3;
-          if (state) {
-            const first1 = state.routes[0];
-            if (!tmp5) {
-              const obj6 = { routes: items1 };
-              const obj7 = { state: constructState(first1.state) };
-              const merged1 = Object.assign(first1);
-              items1 = [obj7];
-              obj3 = obj6;
-            }
-            tmp21 = obj3;
-          }
-          const obj8 = { routes: items2 };
-          items2 = [obj5];
-          tmp17 = obj8;
-        } else {
-          tmp17 = obj3;
-        }
-        tmp15 = tmp17;
-      }
-      let config;
-      const tmp26 = getPathFromState;
-      if (tmp != null) {
-        config = tmp.config;
-      }
-      return tmp26(tmp15, config);
-    }
-  }, items);
-}
-function useBuildAction() {
-  let getActionFromState;
-  let getStateFromPath;
-  let options;
-  options = getActionFromState.useContext(options(getStateFromPath[2]).LinkingContext).options;
-  getStateFromPath = undefined;
-  const tmp = getActionFromState;
-  if (options != null) {
-    getStateFromPath = options.getStateFromPath;
-  }
-  if (getStateFromPath == null) {
-    getStateFromPath = tmp2(tmp3[1]).getStateFromPath;
-  }
-  getActionFromState = undefined;
-  if (options != null) {
-    getActionFromState = options.getActionFromState;
-  }
-  if (getActionFromState == null) {
-    getActionFromState = tmp2(tmp3[1]).getActionFromState;
-  }
-  let config;
-  const useCallback = tmp.useCallback;
-  if (options != null) {
-    config = options.config;
-  }
-  const items = [config, getStateFromPath, getActionFromState];
-  return useCallback(function(str) {
-    if (str.startsWith("/")) {
-      let config;
-      const tmp4 = getStateFromPath;
-      if (options != null) {
-        config = tmp5.config;
-      }
-      const tmp4Result = tmp4(str, config);
-      if (tmp4Result) {
-        let config1;
-        const tmp12 = getActionFromState;
-        if (options != null) {
-          config1 = tmp5.config;
-        }
-        let resetResult = tmp12(tmp4Result, config1);
-        if (resetResult == null) {
-          const CommonActions = BaseNavigationContainer.CommonActions;
-          resetResult = CommonActions.reset(tmp4Result);
-        }
-        return resetResult;
-      } else {
-        const _Error2 = Error;
-        const self3 = this;
-        const self4 = this;
-        const error = new Error("Failed to parse the href to a navigation state.");
-        throw error;
-      }
-    } else {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error1 = new Error("The href must start with '/' (" + str + ").");
-      throw error1;
-    }
-  }, items);
-}
+const require = globalThis.__r;
+let _require, closure_1, dependencyMap, navigation;
 
-export { useBuildHref };
-export { useBuildAction };
-export const useLinkBuilder = function useLinkBuilder() {
-  const obj = { buildHref: useBuildHref(), buildAction: useBuildAction() };
-  return obj;
+let closure_2 = ["children", "id", "initialRouteName", "layout", "screenLayout", "screenListeners", "screenOptions", "UNSTABLE_routeNamesChangeBehavior", "UNSTABLE_router"];
+const jsx = Fragment.jsx;
+
+export const createStandardNavigationFactories = function createStandardNavigationFactories(arg0, arg1, arg2) {
+  let closure_0;
+  let obj2;
+  let obj3;
+  let type;
+  let version;
+  _require = arg1;
+  dependencyMap = arg2;
+  ({ type, version, NavigatorContent: closure_2 } = arg0);
+  if ("standard" !== type) {
+    let str3 = "unknown type.";
+    const _Error2 = Error;
+    if (typeof type === "string") {
+      const _HermesInternal2 = HermesInternal;
+      str3 = "type \"" + type + "\".";
+    }
+    const self3 = this;
+    const self4 = this;
+    const _Error21 = new _Error2("createStandardNavigationFactories only works with standard navigator objects, but got navigator of " + str3);
+    throw _Error21;
+  } else if (1 !== version) {
+    const _Error = Error;
+    const _HermesInternal = HermesInternal;
+    const self = this;
+    const self2 = this;
+    const error = new Error("createStandardNavigationFactories only works with version 1 of standard navigator objects, but got version " + version + ".");
+    throw error;
+  } else {
+    let obj = {
+      createNavigator: obj2.createNavigatorFactory(function StandardNavigationNavigator(UNSTABLE_routeNamesChangeBehavior) {
+          let UNSTABLE_router;
+          let children;
+          let id;
+          let initialRouteName;
+          let layout;
+          let screenLayout;
+          let screenListeners;
+          let screenOptions;
+          let obj = BaseNavigationContainer;
+          const navigationBuilder = obj.useNavigationBuilder(closure_0, UNSTABLE_routeNamesChangeBehavior);
+          const obj3 = _mod1602;
+          closure_1 = obj3.useBuildHref();
+          let tmp = react2;
+          if ("preloadedRoutes" in navigationBuilder.state) {
+            let combined;
+            const _Array = Array;
+            if (Array.isArray(navigationBuilder.state.preloadedRoutes)) {
+              const routes = navigationBuilder.state.routes;
+              combined = routes.concat(navigationBuilder.state.preloadedRoutes);
+            }
+            const tmp2Result = tmp2(combined.map((key) => {
+              const tmp = closure_1(key.name, key.params);
+              const items = [, ];
+              const obj = { key: key.key, name: key.name, params: key.params, href: tmp };
+              items[0] = obj;
+              const items1 = [, , , ];
+              ({ key: arr2[0], name: arr2[1], params: arr2[2] } = key);
+              items1[3] = tmp;
+              items[1] = items1;
+              return items;
+            }));
+            closure_2 = tmp2Result;
+            let items = [navigationBuilder.state.index, tmp2Result];
+            const memo = react.useMemo(() => ({ index: navigationBuilder.state.index, routes }), items);
+            const obj2 = {};
+            const routes2 = memo.routes;
+            const iter = routes2[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let tmp12 = nextResult;
+              let describeResult = navigationBuilder.descriptors[nextResult.key];
+              if (describeResult == null) {
+                describeResult = navigationBuilder.describe(tmp12, true);
+              }
+              let obj4 = { options: null, render: null };
+              ({ options: obj5.options, render: obj5.render } = describeResult);
+              obj2[tmp12.key] = obj4;
+              continue;
+            }
+            let items1 = [navigationBuilder.navigation, navigationBuilder.state.key];
+            const items2 = [navigationBuilder.navigation];
+            const memo1 = react.useMemo(() => {
+              let obj = {
+                navigate(arg0, arg1) {
+                  navigation = closure_1_0.navigation;
+                  const dispatch = navigation.dispatch;
+                  const obj = { target: closure_1_0.state.key };
+                  const CommonActions = navigationBuilder(closure_1[3]).CommonActions;
+                  const merged = Object.assign(CommonActions.navigate(arg0, arg1));
+                  dispatch(obj);
+                },
+                back() {
+                  navigation = navigationBuilder.navigation;
+                  navigation.goBack();
+                }
+              };
+              return obj;
+            }, items1);
+            let tmp19Result;
+            const memo2 = react.useMemo(() => ({ emit: navigationBuilder.navigation.emit }), items2);
+            if (closure_1 != null) {
+              const obj7 = { state: null, navigation: null };
+              ({ state: obj6.state, navigation: obj6.navigation } = navigationBuilder);
+              tmp19Result = tmp19(obj7);
+            }
+            ({ children, id, initialRouteName, layout, screenLayout, screenListeners, screenOptions, UNSTABLE_routeNamesChangeBehavior, UNSTABLE_router } = UNSTABLE_routeNamesChangeBehavior);
+            const NavigationContent = navigationBuilder.NavigationContent;
+            let merged = Object.assign(_objectWithoutProperties(UNSTABLE_routeNamesChangeBehavior, closure_2));
+            const merged1 = Object.assign(tmp19Result);
+            return <NavigationContent>{null}</NavigationContent>;
+          }
+          combined = navigationBuilder.state.routes;
+        }),
+      createScreen: obj3.createScreenFactory()
+    };
+    let tmp = _require;
+    const tmp2 = dependencyMap;
+    obj2 = require("BaseNavigationContainer");
+    obj3 = require("BaseNavigationContainer");
+    return obj;
+  }
 };

@@ -1,47 +1,47 @@
-// Module ID: 7127
-// Function ID: 7128
+// Module ID: 7132
+// Function ID: 7133
 // Name: BillingActionCreators
-// Dependencies: [109, 5, 19, 7128, 7129, 1389, 4732, 7120, 1085, 1096, 21, 3, 1263, 510, 1264, 1294, 4741, 5720, 1381, 12748, 6946, 12750, 584, 12, 7115, 7125, 10470, 1126, 10004, 5298, 10051, 1999, 5940, 7118, 10047, 5631, 13469, 13471, 4748, 5944, 1272, 13472, 13473, 2076, 13474, 10149, 10155, 1278, 9332, 2]
+// Dependencies: [109, 5, 19, 7133, 7134, 1390, 4734, 7125, 1085, 1096, 21, 3, 1264, 510, 1265, 1295, 4743, 5721, 1382, 12693, 6953, 12695, 584, 12, 7120, 7130, 10460, 1126, 10023, 5299, 10036, 2000, 5941, 7123, 10032, 5632, 13561, 13563, 4750, 5945, 1273, 13564, 13565, 2076, 13566, 10134, 10140, 1279, 9370, 2]
 // Exports: cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
-// Module 7127 (BillingActionCreators)
+// Module 7132 (BillingActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1096 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef1263 from "module_1263" /* 1263 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import BillingUtils from "BillingUtils" /* 4741 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5298 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5631 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5720 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5944 */;
-import ProductIds from "ProductIds" /* 7115 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7125 */;
-import ACOMExperiments from "ACOMExperiments" /* 9332 */;
-import showSpendingLimitReachedAlert from "showSpendingLimitReachedAlert" /* 10047 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10470 */;
-import IAPUtils from "IAPUtils" /* 12748 */;
-import _mod12750 from "module_12750" /* 12750 */;
-import ErrorUtilsAll from "ErrorUtils" /* 13469 */;
-import purchaseExceptionAlerts from "purchaseExceptionAlerts" /* 13471 */;
-import APBRequestOperations from "APBRequestOperations" /* 13472 */;
-import ACRequestOperations from "ACRequestOperations" /* 13473 */;
+import _modDef1264 from "module_1264" /* 1264 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import BillingUtils from "BillingUtils" /* 4743 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5632 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5721 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
+import ProductIds from "ProductIds" /* 7120 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7130 */;
+import ACOMExperiments from "ACOMExperiments" /* 9370 */;
+import showSpendingLimitReachedAlert from "showSpendingLimitReachedAlert" /* 10032 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10460 */;
+import IAPUtils from "IAPUtils" /* 12693 */;
+import _mod12695 from "module_12695" /* 12695 */;
+import ErrorUtilsAll from "ErrorUtils" /* 13561 */;
+import purchaseExceptionAlerts from "purchaseExceptionAlerts" /* 13563 */;
+import APBRequestOperations from "APBRequestOperations" /* 13564 */;
+import ACRequestOperations from "ACRequestOperations" /* 13565 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7128 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7129 */;
-import UserStore from "UserStore" /* 1389 */;
-import SubscriptionStore from "SubscriptionStore" /* 4732 */;
-import IAPStore from "IAPStore" /* 7120 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7133 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7134 */;
+import UserStore from "UserStore" /* 1390 */;
+import SubscriptionStore from "SubscriptionStore" /* 4734 */;
+import IAPStore from "IAPStore" /* 7125 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const IAPUtilsDefault = IAPUtils;
-let activeGuildSubscriptions, body2, closure_12, giftOptionsForKey, length, load_id, location_stack, original_transaction_date, product_id, purchaseSKU, request_identifier, staff, v0;
+let activeGuildSubscriptions, body2, giftOptionsForKey, length, load_id, location_stack, original_transaction_date, product_id, purchaseSKU, request_identifier, staff, v0;
 
 let StoreKitErrors;
 let c10;
@@ -52,8 +52,8 @@ let closure_18;
 let tmp2;
 let tmp5;
 let unpackModuleId;
-const AnalyticsUtilsDefault = tmp2(1264);
-const HTTPUtils = tmp5(1294);
+const AnalyticsUtilsDefault = tmp2(1265);
+const HTTPUtils = tmp5(1295);
 function applyAppleReceipt(arg0) {
   let appStoreRegion;
   let encodedReceipt;
@@ -87,7 +87,7 @@ function applyAppleReceipt(arg0) {
   if (null != jwsRepresentations) {
     first = jwsRepresentations[0];
   }
-  obj = _modDef1263;
+  obj = _modDef1264;
   const v3Result = obj.v3(first);
   require = v3Result;
   let Storage = Storage2.Storage;
@@ -173,7 +173,7 @@ function handlePurchaseException(code, purchase_type) {
     if (!(code instanceof V6OrEarlierAPIError.BillingError)) {
       const self = this;
       const self2 = this;
-      billingError = new tmp(5631).BillingError(code);
+      billingError = new tmp(5632).BillingError(code);
     }
     if (isSpendingLimitError(billingError)) {
       const tmpResult = showSpendingLimitReachedAlert;
@@ -247,9 +247,9 @@ function handlePurchaseException(code, purchase_type) {
         if (!(code instanceof V6OrEarlierAPIError.BillingError)) {
           const self3 = this;
           const self4 = this;
-          billingError1 = new tmp(5631).BillingError(code);
+          billingError1 = new tmp(5632).BillingError(code);
         }
-        const tmp27 = message2 === stringResult && flag && billingError1.code !== tmp(4748).ErrorCodes.UNKNOWN && -1 !== billingError1.code && null != billingError1.message;
+        const tmp27 = message2 === stringResult && flag && billingError1.code !== tmp(4750).ErrorCodes.UNKNOWN && -1 !== billingError1.code && null != billingError1.message;
         if (tmp27) {
           message2 = billingError1.message;
         }
@@ -324,7 +324,7 @@ obj = function _clearAndMakeIAPRequest() {
             c6 = 1;
             c7 = 1;
             const obj5 = { value: obj3.clearTransactionIOS(), done: false };
-            obj3 = _mod12750;
+            obj3 = _mod12695;
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -848,7 +848,7 @@ obj = function _createGenericSubscription() {
               originalPurchase = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -894,7 +894,7 @@ obj = function _createGenericSubscription() {
           } else if (3 === c5) {
             let PURCHASE_INCOMPLETE;
             orderId = 0;
-            closure_12 = closure_3;
+            let closure_12 = closure_3;
             const obj17 = { type: "IAP_PURCHASE_PRODUCT_FAILURE", productIdentifier };
             const obj14 = closure_130_1(closure_130_3[22]);
             obj14.dispatch(obj17);
@@ -1051,7 +1051,7 @@ obj = function _modifyGenericSubscription() {
                 originalPurchase = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
               break;
             }
@@ -1203,7 +1203,7 @@ obj = function _modifyGenericSubscription() {
             case 7:
             {
               v0 = 1;
-              closure_12 = closure_3;
+              let closure_12 = closure_3;
               const obj6 = closure_130_0(closure_130_3[16]);
               const result1 = obj6.captureBillingException(closure_12);
               c5 = 8;
@@ -1331,7 +1331,7 @@ obj = function _resubscribeGenericSubscription() {
               originalPurchase = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Set", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -1752,7 +1752,7 @@ obj = function _mobilePurchaseSKU() {
                 closure_22 = undefined;
                 c8 = 1;
                 c9 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Set", done: true };
               }
               break;
             }
@@ -2299,7 +2299,7 @@ obj = {
               c4 = 2;
               c5 = 1;
               const obj4 = { value: obj7.initConnection(), done: false };
-              obj7 = _mod12750;
+              obj7 = _mod12695;
               return obj4;
             }
           } else if (1 === c4) {
@@ -3309,9 +3309,9 @@ obj = {
     })();
   }
 };
-let items = [_mod12750.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
+let items = [_mod12695.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
 const set = new Set(items);
-const items1 = [_mod12750.ErrorCode.E_UNKNOWN, _mod12750.ErrorCode.E_DEFERRED_PAYMENT];
+const items1 = [_mod12695.ErrorCode.E_UNKNOWN, _mod12695.ErrorCode.E_DEFERRED_PAYMENT];
 const set1 = new Set(items1);
 let obj2 = { NONE: "none", CANNOT_MAKE_REQUEST: "cannot_make_request", INVALID_CURRENCY: "invalid_currency", PURCHASE_INCOMPLETE: "purchase_incomplete", USER_CANCELLED: "user_cancelled", POST_PURCHASE_FAILED: "post_purchase_failed" };
 let result = size.fileFinishedImporting("actions/native/BillingActionCreators.tsx");
