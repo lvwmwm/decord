@@ -17,12 +17,12 @@ import size from "module_2" /* 2 */;
 
 let _null2;
 
-const f132052 = (id) => id.id;
+const f132050 = (id) => id.id;
 function handleGuildRoleCreateOrUpdate(arg0) {
   const tmp2 = c8;
   if (tmp2) {
     const sortedRoles = GuildRoleStore.getSortedRoles(tmp);
-    let c9 = sortedRoles.map(f132052);
+    let c9 = sortedRoles.map(f132050);
   }
 }
 const FormStates = Constants.FormStates;
@@ -106,7 +106,7 @@ let obj = {
     guildId = guildId.guildId;
     c8 = true;
     const sortedRoles = GuildRoleStore.getSortedRoles(guildId);
-    let c9 = sortedRoles.map(f132052);
+    let c9 = sortedRoles.map(f132050);
     const guild = GuildStore.getGuild(guildId);
     clearTimeout(closure_15);
   },

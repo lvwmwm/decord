@@ -22,7 +22,7 @@ let frozen;
 let frozen1;
 let map1;
 let memo;
-const f122236 = (item) => {
+const f122234 = (item) => {
   function get() {
     return react_native[item];
   }
@@ -61,7 +61,7 @@ function get() {
   }
   return items;
 }
-const f122256 = () => {
+const f122254 = () => {
   const initialScrollSession = state4.initialScrollSession;
   let kind;
   const tmp = state4;
@@ -92,13 +92,13 @@ const f122256 = () => {
       if (bootstrap1) {
         if (undefined === bootstrap1.frameHandle) {
           const _requestAnimationFrame = requestAnimationFrame;
-          bootstrap1.frameHandle = requestAnimationFrame(f122256);
+          bootstrap1.frameHandle = requestAnimationFrame(f122254);
         }
       }
     }
   }
 };
-const f122257 = () => {
+const f122255 = () => {
   const preservedEndAnchorCorrection = state3.preservedEndAnchorCorrection;
   if (preservedEndAnchorCorrection === obj4) {
     const tmp10 = closure_2_83(closure_0);
@@ -125,7 +125,7 @@ const f122257 = () => {
         state = tmp9.state;
         state.preservedEndAnchorCorrection = obj4;
         const _requestAnimationFrame = requestAnimationFrame;
-        const animationFrame = requestAnimationFrame(f122257);
+        const animationFrame = requestAnimationFrame(f122255);
       }
     }
     state3.preservedEndAnchorCorrection = undefined;
@@ -3923,7 +3923,7 @@ function rearmBootstrapInitialScroll(context, scroll) {
   if (bootstrap1) {
     if (undefined === bootstrap1.frameHandle) {
       const _requestAnimationFrame = requestAnimationFrame;
-      bootstrap1.frameHandle = requestAnimationFrame(f122256);
+      bootstrap1.frameHandle = requestAnimationFrame(f122254);
     }
   }
   state2 = context.state;
@@ -4372,7 +4372,7 @@ function retargetActiveInitialScrollAtEnd(context) {
       const state2 = context.state;
       state2.preservedEndAnchorCorrection = preservedEndAnchorCorrection;
       const _requestAnimationFrame = requestAnimationFrame;
-      const animationFrame = requestAnimationFrame(f122257);
+      const animationFrame = requestAnimationFrame(f122255);
       flag = true;
     }
     tmp4 = flag;
@@ -13271,7 +13271,7 @@ if (!react) {
   if (react) {
     let _Object2 = Object;
     let keys = Object.keys(react);
-    let item = keys.forEach(f122236);
+    let item = keys.forEach(f122234);
   }
   obj.default = react;
   const _Object3 = Object;
@@ -13288,7 +13288,7 @@ if (!react_native) {
   if (react_native) {
     const _Object5 = Object;
     const keys1 = Object.keys(react_native);
-    const item1 = keys1.forEach(f122236);
+    const item1 = keys1.forEach(f122234);
   }
   obj2.default = react_native;
   const _Object6 = Object;
@@ -13366,12 +13366,12 @@ frozen.memo(function DebugView2() {
   const tmp12 = undefined !== tmp6[6] && tmp6[6];
   const obj3 = getContentSize(context);
   let closure_0 = tmp5(react.useReducer((arg0) => arg0 + 1, 0), 2)[1];
-  const f122303 = () => {
-    f122303();
+  const f122301 = () => {
+    f122301();
   };
   const items2 = [100];
   const effect = react.useEffect(() => {
-    const interval = setInterval(f122303, 100);
+    const interval = setInterval(f122301, 100);
     return () => clearInterval(closure_0);
   }, items2);
   ({ createElement, createElement: createElement2 } = frozen);
@@ -17178,7 +17178,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
   let useWindowScroll;
   let viewOffset;
   let viewabilityConfig;
-  const f122276 = () => {
+  const f122274 = () => {
     fn = undefined && ((arg0, arg1, arg2) => {
       let tmp;
       if (undefined !== arg0) {
@@ -19660,11 +19660,11 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
       dataVersion,
       drawDistance: num,
       estimatedItemSize: num2,
-      getFixedItemSize: snapToIndices.useMemo(f122276, items3),
-      getItemType: snapToIndices.useMemo(f122276, items4),
+      getFixedItemSize: snapToIndices.useMemo(f122274, items3),
+      getItemType: snapToIndices.useMemo(f122274, items4),
       horizontal,
       itemsAreEqual,
-      keyExtractor: snapToIndices.useMemo(f122276, items5),
+      keyExtractor: snapToIndices.useMemo(f122274, items5),
       maintainScrollAtEnd: tmp39,
       maintainScrollAtEndThreshold: num3,
       maintainVisibleContentPosition: obj8,
@@ -20020,7 +20020,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
               if (bootstrap2) {
                 if (undefined === bootstrap2.frameHandle) {
                   let _requestAnimationFrame = requestAnimationFrame;
-                  bootstrap2.frameHandle = requestAnimationFrame(f122256);
+                  bootstrap2.frameHandle = requestAnimationFrame(f122254);
                 }
               }
             }
@@ -22408,7 +22408,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                             const state3 = tmp2.state;
                             state3.preservedEndAnchorCorrection = obj4;
                             let _requestAnimationFrame = requestAnimationFrame;
-                            let animationFrame = requestAnimationFrame(f122257);
+                            let animationFrame = requestAnimationFrame(f122255);
                           }
                         } else if (scrollingTo2) {
                           const value2 = closure_37.get(state2);
@@ -24333,13 +24333,13 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
         tmp10.scrollForNextCalculateItemsInView = undefined;
       }
     }, items22);
-    const f122349 = () => {
+    const f122347 = () => {
       const tmp = overrideItemLayout;
       if (!tmp) {
         doInitialAllocateContainers(context);
       }
     };
-    const state1 = obj22.useState(() => f122362());
+    const state1 = obj22.useState(() => f122360());
     const imperativeHandle = obj.useImperativeHandle(ref, () => {
       const t2 = function t() {
         return true;
@@ -25886,7 +25886,7 @@ export const useViewability = function useViewability(arg0, arg1) {
   let closure_1 = arg1;
   const context = frozen.useContext(redux);
   const context1 = react.useContext(redux2);
-  const f122360 = () => {
+  const f122358 = () => {
     if (containerId) {
       let str = "";
       containerId = containerId.containerId;
@@ -25896,11 +25896,11 @@ export const useViewability = function useViewability(arg0, arg1) {
       mapViewabilityValues = mapViewabilityValues.mapViewabilityValues;
       const value = mapViewabilityValues.get(containerId + str);
       if (value) {
-        f122360(value);
+        f122358(value);
       }
     }
   };
-  const state = react.useState(() => f122362());
+  const state = react.useState(() => f122360());
   const items = [context, arg0, arg1, context1];
   const effect = react.useEffect(() => {
     if (context1) {
@@ -25924,16 +25924,16 @@ export const useViewabilityAmount = function useViewabilityAmount(arg0) {
   let closure_0 = arg0;
   const context = frozen.useContext(redux);
   const context1 = react.useContext(redux2);
-  const f122362 = () => {
+  const f122360 = () => {
     if (containerId) {
       const mapViewabilityAmountValues = closure_1_1.mapViewabilityAmountValues;
       const value = mapViewabilityAmountValues.get(containerId.containerId);
       if (value) {
-        f122362(value);
+        f122360(value);
       }
     }
   };
-  const state = react.useState(() => f122362());
+  const state = react.useState(() => f122360());
   const items = [context, arg0, context1];
   const effect = react.useEffect(() => {
     if (context1) {

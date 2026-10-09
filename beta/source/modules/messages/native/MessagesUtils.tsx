@@ -68,7 +68,7 @@ let tmp;
 let tmp9;
 const SnowflakeUtilsDefault = tmp9(11);
 const KeyboardTypes = tmp(1616);
-const f101882 = (id) => id.id;
+const f101880 = (id) => id.id;
 function getVisibleMessages(arg0) {
   let chatManager;
   let firstVisibleMessagePercentVisible;
@@ -579,7 +579,7 @@ export const startOrCancelChannelLatestMessagesLoad = function startOrCancelChan
 export const recordTimings = function recordTimings(channelId, hasFetched) {
   const recordMessageRender = TTITrackerDefault.recordMessageRender;
   TTITrackerDefault;
-  const mapped = hasFetched.map(f101882);
+  const mapped = hasFetched.map(f101880);
   hasFetched = hasFetched.hasFetched;
   if (!hasFetched) {
     hasFetched = hasFetched.ready && !hasFetched.cached;
@@ -828,7 +828,7 @@ export const syncMessageDisplay = function syncMessageDisplay(messages) {
   }
   const recordMessageRender = oldestUnreadMessageId(scrollToMessageId[39]).recordMessageRender;
   oldestUnreadMessageId(scrollToMessageId[39]);
-  const mapped = messages.map(f101882);
+  const mapped = messages.map(f101880);
   let hasFetched = messages.hasFetched;
   if (!hasFetched) {
     hasFetched = messages.ready && !messages.cached;

@@ -42,7 +42,7 @@ let map1;
 let tmp;
 let unpackModuleId;
 const DeviceUtils = tmp(4866);
-const f103870 = (item) => {
+const f103868 = (item) => {
   obj = { origin };
   const merged = Object.assign(item);
   return obj;
@@ -399,7 +399,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103870);
+            const mapped = found.map(f103868);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -456,7 +456,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103870);
+            const mapped = found.map(f103868);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -610,7 +610,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103870);
+            const mapped = found.map(f103868);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -767,7 +767,7 @@ export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE
       }
       return tmp2;
     });
-    const mapped = found.map(f103870);
+    const mapped = found.map(f103868);
     const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
     const obj3 = UploadAttachmentActionCreatorsDefault;
     obj3.addFiles(obj2);

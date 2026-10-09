@@ -41,7 +41,7 @@ function noop() {
 }
 function mapIntoArray(element, items, arg2, arg3, fn) {
   let tmp55;
-  const f133643 = (arg0) => closure_0[arg0];
+  const f133641 = (arg0) => closure_0[arg0];
   let tmp = typeof element !== "undefined";
   if (typeof element !== "undefined") {
     tmp = typeof element !== "boolean";
@@ -83,7 +83,7 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
           if (null != tmp2.key) {
             const text = `${tmp2.key}`;
             _typeof = { "=": "=0", ":": "=2" };
-            let text1 = `$${`${tmp2.key}`.replace(/[=:]/g, f133643)}`;
+            let text1 = `$${`${tmp2.key}`.replace(/[=:]/g, f133641)}`;
           }
           str16 = `.${tmp45}`;
         }
@@ -141,8 +141,8 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
               if (null != tmp36.key) {
                 let text3 = `${tmp36.key}`;
                 _typeof = { "=": "=0", ":": "=2" };
-                let text4 = `$${`${tmp36.key}`.replace(/[=:]/g, f133643)}`;
-                num13 = num13 + tmp35(tmp36, items, arg2, str5 + `$${`${tmp36.key}`.replace(/[=:]/g, f133643)}`, fn);
+                let text4 = `$${`${tmp36.key}`.replace(/[=:]/g, f133641)}`;
+                num13 = num13 + tmp35(tmp36, items, arg2, str5 + `$${`${tmp36.key}`.replace(/[=:]/g, f133641)}`, fn);
                 num12 = num12 + 1;
                 num7 = num13;
                 if (num12 >= tmp2.length) {
@@ -180,9 +180,9 @@ function mapIntoArray(element, items, arg2, arg3, fn) {
                 if (null != value3.key) {
                   let text5 = `${value2.key}`;
                   _typeof = { "=": "=0", ":": "=2" };
-                  let text6 = `$${`${value2.key}`.replace(/[=:]/g, f133643)}`;
+                  let text6 = `$${`${value2.key}`.replace(/[=:]/g, f133641)}`;
                   num5 = num5 + 1;
-                  num6 = num6 + tmp26(value3, items, arg2, str5 + `$${`${value2.key}`.replace(/[=:]/g, f133643)}`, fn);
+                  num6 = num6 + tmp26(value3, items, arg2, str5 + `$${`${value2.key}`.replace(/[=:]/g, f133641)}`, fn);
                   let iter3 = iter.next();
                   iter2 = iter3;
                   num7 = num6;
@@ -697,9 +697,9 @@ export const useOptimistic = (arg0, arg1) => {
   const H = obj.H;
   return H.useOptimistic(arg0, arg1);
 };
-export const useReducer = (P, arg1, fn) => {
+export const useReducer = (cResult, arg1, fn) => {
   const H = obj.H;
-  return H.useReducer(P, arg1, fn);
+  return H.useReducer(cResult, arg1, fn);
 };
 export const useRef = (cResult) => {
   const H = obj.H;

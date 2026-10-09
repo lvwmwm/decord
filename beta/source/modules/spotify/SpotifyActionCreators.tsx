@@ -24,14 +24,14 @@ let metroImportDefault;
 let metroRequire;
 function apiRequest(fn, arg1, arg2, arg3) {
   let num;
-  const f107524 = (status) => {
+  const f107522 = (status) => {
     let rejectResult = status;
     if (202 === status.status) {
       rejectResult = Promise.reject(status);
     }
     return rejectResult;
   };
-  const f107525 = (error) => {
+  const f107523 = (error) => {
     let tmp = true !== obj.onlyRetryOnAuthorizationErrors;
     if (tmp) {
       let num = 202;
@@ -56,7 +56,7 @@ function apiRequest(fn, arg1, arg2, arg3) {
           timeoutPromiseResult = Promise.resolve();
         }
         let nextPromise = timeoutPromiseResult.then(() => {
-          const f107526 = (error) => {
+          const f107524 = (error) => {
             let body = error.body;
             let code;
             if (body != null) {
@@ -94,7 +94,7 @@ function apiRequest(fn, arg1, arg2, arg3) {
             }
             return Promise.reject(error);
           };
-          const f107527 = (body) => {
+          const f107525 = (body) => {
             const access_token = body.body.access_token;
             const obj = closure_2_1(closure_2_2[5]);
             const obj2 = { type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN", accountId, accessToken: access_token };
@@ -105,8 +105,8 @@ function apiRequest(fn, arg1, arg2, arg3) {
           const HTTP = closure_0(obj[4]).HTTP;
           obj = { url: closure_2_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, closure_1_1), oldFormErrors: true, rejectWithError: false };
           const value = HTTP.get(obj);
-          const catchPromise = value.catch(f107526);
-          return catchPromise.then(f107527);
+          const catchPromise = value.catch(f107524);
+          return catchPromise.then(f107525);
         });
         let nextPromise1 = nextPromise.then(f141305);
         nextPromise2 = nextPromise1.then((result) => {
@@ -128,8 +128,8 @@ function apiRequest(fn, arg1, arg2, arg3) {
   const merged = Object.assign(arg3);
   ({ authorization: "Bearer " + arg2 });
   const promise = fn(obj);
-  const nextPromise = promise.then(f107524);
-  return nextPromise.catch(f107525);
+  const nextPromise = promise.then(f107522);
+  return nextPromise.catch(f107523);
 }
 ({ SPOTIFY_APP_PROTOCOL: closure_4, SpotifyEndpoints: hasOwnProperty } = SpotifyConstants);
 ({ AbortCodes: metroRequire, Endpoints: metroImportDefault, PlatformTypes: metroImportAll } = Constants);
@@ -138,7 +138,7 @@ const result = size.fileFinishedImporting("modules/spotify/SpotifyActionCreators
 
 export { SpotifyAPI };
 export const getAccessToken = function getAccessToken(id) {
-  const f107526 = (error) => {
+  const f107524 = (error) => {
     let body = error.body;
     let code;
     if (body != null) {
@@ -176,7 +176,7 @@ export const getAccessToken = function getAccessToken(id) {
     }
     return Promise.reject(error);
   };
-  const f107527 = (body) => {
+  const f107525 = (body) => {
     const access_token = body.body.access_token;
     const obj = closure_2_1(closure_2_2[5]);
     const obj2 = { type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN", accountId, accessToken: access_token };
@@ -187,12 +187,12 @@ export const getAccessToken = function getAccessToken(id) {
   const HTTP = require("HTTPUtils").HTTP;
   obj = { url: closure_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, id), oldFormErrors: true, rejectWithError: false };
   const value = HTTP.get(obj);
-  const catchPromise = value.catch(f107526);
-  return catchPromise.then(f107527);
+  const catchPromise = value.catch(f107524);
+  return catchPromise.then(f107525);
 };
 export const subscribePlayerStateNotifications = function subscribePlayerStateNotifications(accountId, accessToken, connectionId) {
   let num;
-  const f107528 = (error) => {
+  const f107526 = (error) => {
     let rejectResult;
     if (closure_3 <= 0) {
       let tmp4 = error;
@@ -214,7 +214,7 @@ export const subscribePlayerStateNotifications = function subscribePlayerStateNo
   let closure_2 = connectionId;
   const request = { url: closure_5.NOTIFICATIONS_PLAYER, query: { connection_id: connectionId } };
   const putResult = obj.put(accountId, accessToken, request);
-  return putResult.catch(f107528);
+  return putResult.catch(f107526);
 };
 export const getProfile = function getProfile(accountId, arg1) {
   obj = { url: closure_5.PROFILE };

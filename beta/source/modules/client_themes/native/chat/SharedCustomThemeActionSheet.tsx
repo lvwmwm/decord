@@ -35,7 +35,7 @@ let map1;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-const f108195 = (item) => "#" + item;
+const f108193 = (item) => "#" + item;
 ({ useEffect: hasOwnProperty, useLayoutEffect: metroRequire, useRef: metroImportDefault } = react);
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[0] !== sharedClientTheme) {
     let tmp7;
     if (undefined !== sharedClientTheme) {
-      let obj4 = { colors: colors.map(f108195), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      let obj4 = { colors: colors.map(f108193), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = sharedClientTheme.colors;
       ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
       tmp7 = obj4;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         if (tmp3) {
           obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
-          obj.colors = colors.map(() => { /* body not rendered: F108195 */ });
+          obj.colors = colors.map(() => { /* body not rendered: F108193 */ });
           obj.gradientColorStops = [];
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = tmp2);
           tmp4 = obj;
@@ -152,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         if (tmp3) {
           obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
-          obj.colors = colors.map(() => { /* body not rendered: F108195 */ });
+          obj.colors = colors.map(() => { /* body not rendered: F108193 */ });
           obj.gradientColorStops = [];
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = tmp2);
           tmp4 = obj;
@@ -189,7 +189,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         if (tmp3) {
           obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
-          obj.colors = colors.map(() => { /* body not rendered: F108195 */ });
+          obj.colors = colors.map(() => { /* body not rendered: F108193 */ });
           obj.gradientColorStops = [];
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = tmp2);
           tmp4 = obj;
@@ -733,7 +733,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let tmp4;
   const useState = first1.useState;
   if (undefined !== sharedClientTheme) {
-    let obj4 = { colors: colors.map(f108195), gradientColorStops: [], gradientAngle: null, baseMix: null };
+    let obj4 = { colors: colors.map(f108193), gradientColorStops: [], gradientAngle: null, baseMix: null };
     colors = sharedClientTheme.colors;
     ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
     tmp4 = obj4;
@@ -758,7 +758,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     let tmp4;
     const tmp = closure_3;
     if (undefined !== sharedClientTheme) {
-      const obj = { colors: colors.map(f108195), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      const obj = { colors: colors.map(f108193), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = tmp2.colors;
       ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
       tmp4 = obj;

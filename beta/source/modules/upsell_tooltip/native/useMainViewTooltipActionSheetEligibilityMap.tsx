@@ -1367,7 +1367,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp50;
   let tmp8;
   let tmp9;
-  const f128734 = () => {
+  const f128732 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
@@ -1393,8 +1393,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult18 = get_initialized;
-  [tmp8, tmp9] = tmpResult18.useStateFromStoresArray(items2, f128734);
-  _slicedToArray(tmpResult18.useStateFromStoresArray(items2, f128734), 2);
+  [tmp8, tmp9] = tmpResult18.useStateFromStoresArray(items2, f128732);
+  _slicedToArray(tmpResult18.useStateFromStoresArray(items2, f128732), 2);
   const tmpResult19 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult19.usePremiumDiscountOffer();
   const tmpResult20 = usePremiumTrialOffer;

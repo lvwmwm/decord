@@ -35,7 +35,7 @@ let closure_12;
 let tmp;
 let unpackModuleId;
 const _modDef3723 = tmp(3723);
-const f125692 = () => {
+const f125690 = () => {
 
 };
 function readPublishSubject(projectId, guildId) {
@@ -343,7 +343,7 @@ function startPublish(project, navigatesOnPublish, platform) {
         id = tmp10.application_id;
       }
       const profile = fetchProfile(id, { withMutualGuilds: true });
-      profile.catch(f125692);
+      profile.catch(f125690);
     }
     if (null != destination) {
       if (set.has(tmp3)) {
@@ -890,7 +890,7 @@ export default function useConjurePublishAction(arg0, arg1) {
         id = tmp.application_id;
       }
       const profile = fetchProfile(id, { withMutualGuilds: true });
-      profile.catch(f125692);
+      profile.catch(f125690);
     }
   }, items3);
   const items4 = [memo];

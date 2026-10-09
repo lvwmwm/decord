@@ -608,13 +608,13 @@ export const startBrowserTracingNavigationSpan = function startBrowserTracingNav
   }
   return client[_sentry_idleSpan];
 };
-export const startBrowserTracingPageLoadSpan = function startBrowserTracingPageLoadSpan(f134637, name, arg2) {
-  f134637.emit("startPageLoadSpan", name, arg2);
+export const startBrowserTracingPageLoadSpan = function startBrowserTracingPageLoadSpan(f134635, name, arg2) {
+  f134635.emit("startPageLoadSpan", name, arg2);
   obj = _mod693;
   const currentScope = obj.getCurrentScope();
   currentScope.setTransactionName(name.name);
-  if (f134637[_sentry_idleSpan]) {
-    f134637.emit("afterStartPageLoadSpan", f134637[_sentry_idleSpan]);
+  if (f134635[_sentry_idleSpan]) {
+    f134635.emit("afterStartPageLoadSpan", f134635[_sentry_idleSpan]);
   }
-  return f134637[_sentry_idleSpan];
+  return f134635[_sentry_idleSpan];
 };

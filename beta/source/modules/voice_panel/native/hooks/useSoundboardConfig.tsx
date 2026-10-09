@@ -125,7 +125,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSourc
   let closure_0;
   let deaf;
   let stringResult;
-  const f130047 = () => {
+  const f130045 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -155,9 +155,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, analyticsSourc
       const result = obj.showSoundboardSoundPickerActionSheet(obj2);
     }
   }, items1);
-  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f130047, items2), disabledAccessibilityHint: stringResult };
+  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f130045, items2), disabledAccessibilityHint: stringResult };
   stringResult = undefined;
-  stateFromStores || !react.useMemo(f130047, items2);
+  stateFromStores || !react.useMemo(f130045, items2);
   if (stateFromStores) {
     const intl = tmp3(1126).intl;
     stringResult = intl.string(tmp3(1126).t.X1lQli);

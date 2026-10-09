@@ -4,7 +4,7 @@
 
 // Module 4920
 let tmp7;
-const f136544 = (item) => {
+const f136542 = (item) => {
   let closure_0 = item;
   obj4[item] = function(arg0) {
     return this._invoke(closure_0, arg0);
@@ -518,7 +518,7 @@ if (regeneratorRuntime) {
   tmp6.awrap = (__await) => ({ __await });
   let closure_0 = AsyncIterator.prototype;
   let items1 = ["next", "throw", "return"];
-  let item = items1.forEach(f136544);
+  let item = items1.forEach(f136542);
   AsyncIterator.prototype[tmp4] = function() {
     return this;
   };
@@ -635,7 +635,7 @@ if (regeneratorRuntime) {
     return nextPromise;
   };
   const items2 = ["next", "throw", "return"];
-  const item1 = items2.forEach(f136544);
+  const item1 = items2.forEach(f136542);
   let str7 = "Generator";
   obj4[tmp5] = "Generator";
   obj4[tmp3] = function() {

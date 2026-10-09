@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRouteName) =>
   tmp9 = tmp10;
 }) : ((initialRouteName) => {
   let intl;
-  const f117322 = () => {
+  const f117320 = () => {
     let obj4;
     let obj6;
     let totpSecret;
@@ -297,8 +297,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRouteName) =>
   if (LANDING === undefined) {
     LANDING = TwoFAModalSetupSections.LANDING;
   }
-  let obj = { initialRouteName: LANDING, screens: useInitialValueDefault(f117322), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
-  useInitialValueDefault(f117322);
+  let obj = { initialRouteName: LANDING, screens: useInitialValueDefault(f117320), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
+  useInitialValueDefault(f117320);
   const Navigator = Navigator2.Navigator;
   intl = intl3.intl;
   return metroRequire(Navigator, obj);

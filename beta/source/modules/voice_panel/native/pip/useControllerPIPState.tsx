@@ -182,7 +182,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   let tmp15;
   let tmpResult;
   let windowDimensions;
-  const f130302 = () => layoutManager.getTargetDimensions(focusedId);
+  const f130300 = () => layoutManager.getTargetDimensions(focusedId);
   channelId = channelId.channelId;
   ({ connected, focusedId } = channelId);
   const layoutManager = channelId.layoutManager;
@@ -210,9 +210,9 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   const first1 = windowDimensions(pipAvoidanceSpecs.useState(() => focusedId(layoutManager[20])((fn) => fn(), 1000, { leading: true })), 1)[0];
   let items = [first1];
   const layoutEffect = pipAvoidanceSpecs.useLayoutEffect(() => () => first1.cancel(), items);
-  [tmp15, c11] = windowDimensions(pipAvoidanceSpecs.useState(f130302), 2);
+  [tmp15, c11] = windowDimensions(pipAvoidanceSpecs.useState(f130300), 2);
   const obj3 = { connected, mode, focusedId, participantTargetDimensions: tmp15, selfHasVideo: tmp11, showSecondaryPIP: tmp9 };
-  windowDimensions(pipAvoidanceSpecs.useState(f130302), 2);
+  windowDimensions(pipAvoidanceSpecs.useState(f130300), 2);
   ({ participant, dimensions } = focusedId(layoutManager[21])(channelId, layoutManager, focusedId, current, obj3));
   let obj4 = { id, showSecondaryPIP: tmp9, mode: tmpResult.getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp11 }) };
   focusedId(layoutManager[21])(channelId, layoutManager, focusedId, current, obj3);

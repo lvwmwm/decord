@@ -1421,7 +1421,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f108700 = () => {
+  const f108698 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -1462,8 +1462,8 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f108700), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f108700), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f108698), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f108698), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }

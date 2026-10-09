@@ -25,7 +25,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f122848 = (channel) => channel.channel.id;
+const f122846 = (channel) => channel.channel.id;
 function sortCategoryList(channel, channel2) {
   let num;
   channel = channel.channel;
@@ -126,7 +126,7 @@ function buildSortedChannels() {
       }
       return tmp;
     });
-    closure_15 = arr4.map(f122848);
+    closure_15 = arr4.map(f122846);
   }
 }
 let closure_3 = ["lock_permissions", "id"];
@@ -273,7 +273,7 @@ let obj = {
           }
           return tmp;
         });
-        closure_15 = arr.map(f122848);
+        closure_15 = arr.map(f122846);
       }
     }
   },
@@ -290,7 +290,7 @@ let obj = {
         }
         return tmp;
       });
-      closure_15 = arr.map(f122848);
+      closure_15 = arr.map(f122846);
     }
   },
   GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE: function handleLocalSortChange(updates) {

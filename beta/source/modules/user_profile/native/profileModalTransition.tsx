@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let bound, navigation;
 
-const f127614 = (fn) => fn();
+const f127612 = (fn) => fn();
 let c3 = 0;
 const set = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -32,7 +32,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Math = Math;
           bound = Math.max(0, bound - 1);
           if (bound !== bound) {
-            const item = closure_2_4.forEach(f127614);
+            const item = closure_2_4.forEach(f127612);
           }
         }
       }
@@ -44,7 +44,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             const _Math = Math;
             bound = Math.max(0, bound + 1);
             if (bound !== bound) {
-              const item = closure_2_4.forEach(f127614);
+              const item = closure_2_4.forEach(f127612);
             }
           }
         }),
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Math = Math;
           bound = Math.max(0, bound - 1);
           if (bound !== bound) {
-            const item1 = closure_2_4.forEach(f127614);
+            const item1 = closure_2_4.forEach(f127612);
           }
         }
       };
@@ -87,7 +87,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item = closure_2_4.forEach(f127614);
+          const item = closure_2_4.forEach(f127612);
         }
       }
     }
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           const _Math = Math;
           bound = Math.max(0, bound + 1);
           if (bound !== bound) {
-            const item = closure_2_4.forEach(f127614);
+            const item = closure_2_4.forEach(f127612);
           }
         }
       }),
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item1 = closure_2_4.forEach(f127614);
+          const item1 = closure_2_4.forEach(f127612);
         }
       }
     };

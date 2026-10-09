@@ -240,16 +240,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   let obj6;
   let ref;
   let tmp3;
-  const f117600 = () => Date.now();
+  const f117598 = () => Date.now();
   const items = [UserStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [DataHarvestStore];
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => harvestType.harvestType);
-  [tmp3, require] = react.useState(f117600);
+  [tmp3, require] = react.useState(f117598);
   let sum = tmp3;
-  _slicedToArray(react.useState(f117600), 2);
+  _slicedToArray(react.useState(f117598), 2);
   if (null != stateFromStores1) {
     const _Date = Date;
     const self = this;

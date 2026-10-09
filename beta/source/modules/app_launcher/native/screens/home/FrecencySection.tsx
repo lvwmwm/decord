@@ -878,7 +878,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f108601 = () => {
+  const f108599 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -898,8 +898,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[17]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f108601);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f108601), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f108599);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f108599), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[33]);
   const obj5 = { context, applicationId: app.applicationId };

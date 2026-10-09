@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let _require, application_id, dependencyMap;
 
-const f106511 = (application) => {
+const f106509 = (application) => {
   application = application.application;
   let id;
   if (application != null) {
@@ -32,7 +32,7 @@ const f106511 = (application) => {
   }
   return tmp2;
 };
-const f106512 = (id) => id.id;
+const f106510 = (id) => id.id;
 let closure_6 = [];
 let closure_7 = [];
 let closure_8 = [];
@@ -160,8 +160,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, isPrivate)
     tmp16 = items3;
   }
   if (isPrivate.isPrivate()) {
-    const found = arr.filter(f106511);
-    const items4 = [found, found.map(f106512)];
+    const found = arr.filter(f106509);
+    const items4 = [found, found.map(f106510)];
     items5 = items4;
   } else {
     items5 = [closure_8, closure_7];
@@ -181,8 +181,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, isPrivate)
     let items1;
     const arr = closure_0;
     if (_private.isPrivate()) {
-      const found = arr.filter(f106511);
-      const items = [found, found.map(f106512)];
+      const found = arr.filter(f106509);
+      const items = [found, found.map(f106510)];
       items1 = items;
     } else {
       items1 = [closure_8, ];

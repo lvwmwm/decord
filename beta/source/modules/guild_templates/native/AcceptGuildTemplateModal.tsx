@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 let c2, c3, code, dependencyMap;
 
 let obj2;
-const f107561 = () => {
+const f107559 = () => {
   const obj = closure_1_1(closure_1_3[14]);
   return obj.hideModal();
 };
@@ -334,7 +334,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
   if (cResult[0] !== code) {
     obj2 = { code };
     const obj3 = {};
-    const obj4 = { title: "", fullscreen: true, headerLeft: tmpResult.getHeaderCloseButton(f107561), render };
+    const obj4 = { title: "", fullscreen: true, headerLeft: tmpResult.getHeaderCloseButton(f107559), render };
     obj3[ACCEPT_GUILD_TEMPLATE] = obj4;
     cResult[0] = code;
     cResult[1] = obj3;
@@ -359,7 +359,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((code) => {
     let obj4;
     let obj = { code };
     const obj2 = {};
-    const obj3 = { title: "", fullscreen: true, headerLeft: obj4.getHeaderCloseButton(f107561), render };
+    const obj3 = { title: "", fullscreen: true, headerLeft: obj4.getHeaderCloseButton(f107559), render };
     obj2[ACCEPT_GUILD_TEMPLATE] = obj3;
     obj4 = NavigatorHeader;
     return obj2;

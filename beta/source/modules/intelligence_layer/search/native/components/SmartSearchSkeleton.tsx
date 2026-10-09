@@ -29,7 +29,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f126928 = () => Math.random() - 0.5;
+const f126926 = () => Math.random() - 0.5;
 const View = react_native.View;
 ({ AI_LOADER_CYCLE_MS: hasOwnProperty, AI_LOADER_REDUCED_MOTION_CYCLE_MS: metroRequire, AI_LOADER_REST_FRACTION, AI_LOADER_STEP_FRACTION } = AILoaderConstants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -70,7 +70,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isColla
   const reducedMotion = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     items = [_modDef3919.ffCCEe];
-    HermesBuiltin.arraySpread(items, items.sort(f126928), 1);
+    HermesBuiltin.arraySpread(items, items.sort(f126926), 1);
     const mapped = items.map((item) => {
       const intl = intl2.intl;
       return intl.string(item);
@@ -206,7 +206,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isColla
   reducedMotion = react.useContext(reducedMotion(4596).AccessibilityPreferencesContext).reducedMotion;
   items = [reducedMotion.enabled];
   const memo = react.useMemo(() => {
-    items = [_modDef3919.ffCCEe, ...closure_1_10.sort(f126928)];
+    items = [_modDef3919.ffCCEe, ...closure_1_10.sort(f126926)];
     return items.map((item) => {
       const intl = reducedMotion(closure_1_2[10]).intl;
       return intl.string(item);

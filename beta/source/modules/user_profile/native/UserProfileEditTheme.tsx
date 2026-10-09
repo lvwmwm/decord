@@ -217,7 +217,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
   let user;
   let v4X2kc;
   const onPress = () => {
-    const obj = { color: secondaryColor, onSelect: f116874, suggestedColors };
+    const obj = { color: secondaryColor, onSelect: f116872, suggestedColors };
     showCustomColorPickerActionSheetDefault(obj);
   };
   ({ user, onProfileThemeColorsChanged: require, guildId, pendingAvatarSrc, showResetMenu } = pendingThemeColors);
@@ -289,13 +289,13 @@ export default function UserProfileEditTheme(pendingThemeColors) {
       items1 = [tmp8(secondaryColor, obj3), ];
       let tmp7 = closure_9;
       const obj7 = { style: tmp.themeColorContainer, children: items2 };
-      const f116873 = (arg0) => {
+      const f116871 = (arg0) => {
         if (arg0 !== closure_1_2) {
           const items = [arg0, secondaryColor];
           let themeColors;
           const tmp4 = closure_1(primaryColor[16]);
-          if (f116873 != null) {
-            themeColors = f116873.themeColors;
+          if (f116871 != null) {
+            themeColors = f116871.themeColors;
           }
           let tmp8;
           const tmp7 = primaryColor;
@@ -313,13 +313,13 @@ export default function UserProfileEditTheme(pendingThemeColors) {
       v4X2kc = tmp6(tmp3[9]).t.v4X2kc;
       tmp6Result = require("utils/ColorUtils");
       items2 = [closure_4(closure_9, obj8), ];
-      const f116874 = (arg0) => {
+      const f116872 = (arg0) => {
         if (arg0 !== closure_1_3) {
           const items = [closure_1_2, arg0];
           let themeColors;
           const tmp4 = closure_1(primaryColor[16]);
-          if (f116874 != null) {
-            themeColors = f116874.themeColors;
+          if (f116872 != null) {
+            themeColors = f116872.themeColors;
           }
           let tmp8;
           const tmp7 = secondaryColor;

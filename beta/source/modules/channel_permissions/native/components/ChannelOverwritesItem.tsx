@@ -100,7 +100,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
                 obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
                 intl3 = closure_0(closure_3[8]).intl;
                 obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-                obj.onConfirm = function onConfirm() { /* body not rendered: F99902 */ };
+                obj.onConfirm = function onConfirm() { /* body not rendered: F99900 */ };
                 showConfirmModalResult = showConfirmModal(obj);
                 return;
               }
@@ -147,7 +147,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
               obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
               intl3 = closure_0(closure_3[8]).intl;
               obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-              obj.onConfirm = function onConfirm() { /* body not rendered: F99902 */ };
+              obj.onConfirm = function onConfirm() { /* body not rendered: F99900 */ };
               showConfirmModalResult = showConfirmModal(obj);
               return;
             }
@@ -188,7 +188,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
           obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
           intl3 = closure_0(closure_3[8]).intl;
           obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-          obj.onConfirm = function onConfirm() { /* body not rendered: F99902 */ };
+          obj.onConfirm = function onConfirm() { /* body not rendered: F99900 */ };
           showConfirmModalResult = showConfirmModal(obj);
           return;
         }

@@ -560,7 +560,7 @@ export function persist(arg0, arg1) {
               then(arg0) {
                   return this;
                 },
-              catch: f136422
+              catch: f136420
             };
           }
         };

@@ -805,7 +805,7 @@ function updatePageloadTransaction(arg0) {
           activeRootSpan.end = function patchedEnd() {
             let data;
             let description;
-            const f134647 = (arg0) => setTimeout(arg0, closure_1_11);
+            const f134645 = (arg0) => setTimeout(arg0, closure_1_11);
             const items = [...arguments];
             let first;
             let cleanupNavigationSpan;
@@ -860,8 +860,8 @@ function updatePageloadTransaction(arg0) {
                         const items1 = [nextPromise, ];
                         const self = this;
                         const self2 = this;
-                        items1[1] = new Promise(f134647);
-                        const promise = new Promise(f134647);
+                        items1[1] = new Promise(f134645);
+                        const promise = new Promise(f134645);
                         raceResult = race(items1);
                       }
                       const nextPromise1 = raceResult.then(() => {
@@ -1045,7 +1045,7 @@ function patchSpanEnd(result2, _location, routes, basename, allRoutes, navigatio
       result2.end = function patchedEnd() {
         let data;
         let description;
-        const f134647 = (arg0) => setTimeout(arg0, closure_1_11);
+        const f134645 = (arg0) => setTimeout(arg0, closure_1_11);
         const items = [...arguments];
         let first;
         let cleanupNavigationSpan;
@@ -1100,8 +1100,8 @@ function patchSpanEnd(result2, _location, routes, basename, allRoutes, navigatio
                     const items1 = [nextPromise, ];
                     const self = this;
                     const self2 = this;
-                    items1[1] = new Promise(f134647);
-                    const promise = new Promise(f134647);
+                    items1[1] = new Promise(f134645);
+                    const promise = new Promise(f134645);
                     raceResult = race(items1);
                   }
                   const nextPromise1 = raceResult.then(() => {
@@ -1273,9 +1273,9 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
       }
       const result1 = initializeRouterUtils(tmp23, flag);
     },
-    afterAllSetup(f134637) {
+    afterAllSetup(f134635) {
       let obj2;
-      _asyncToGenerator.afterAllSetup(f134637);
+      _asyncToGenerator.afterAllSetup(f134635);
       const _location = feedbackAsyncIntegration.WINDOW.location;
       let pathname;
       if (_location != null) {
@@ -1291,11 +1291,11 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
         const _HermesInternal = HermesInternal;
         feedbackAsyncIntegration;
         obj2[_mod693.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.pageload.react.reactrouter_v" + closure_1;
-        _asyncToGenerator = startBrowserTracingPageLoadSpan(f134637, obj);
+        _asyncToGenerator = startBrowserTracingPageLoadSpan(f134635, obj);
       }
       const tmp10 = closure_11;
       if (tmp10) {
-        weakSet.add(f134637);
+        weakSet.add(f134635);
       }
     }
   };
@@ -1329,7 +1329,7 @@ export const createV6CompatibleWithSentryReactRouterRouting = function createV6C
                 items = [, ];
                 items[0] = tmp;
                 items[1] = tmp2;
-                tmp3 = closure_1_4(() => { /* body not rendered: F134650 */ }, items);
+                tmp3 = closure_1_4(() => { /* body not rendered: F134648 */ }, items);
                 obj = {};
                 createElement = closure_1_9.createElement;
                 merged = Object.assign(arg0);
@@ -1356,7 +1356,7 @@ export const createV6CompatibleWithSentryReactRouterRouting = function createV6C
         items = [, ];
         items[0] = tmp;
         items[1] = tmp2;
-        tmp3 = closure_1_4(() => { /* body not rendered: F134650 */ }, items);
+        tmp3 = closure_1_4(() => { /* body not rendered: F134648 */ }, items);
         obj = {};
         createElement = closure_1_9.createElement;
         merged = Object.assign(arg0);

@@ -2047,8 +2047,8 @@ const tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1,
                   _setTimeout = setTimeout;
                   tmp12 = closure_3;
                   num = 350;
-                  closure_0 = setTimeout(closure_3(function() { /* body not rendered: F138235 */ }), 350);
-                  return () => { /* body not rendered: F138236 */ };
+                  closure_0 = setTimeout(closure_3(function() { /* body not rendered: F138233 */ }), 350);
+                  return () => { /* body not rendered: F138234 */ };
                 }
               } else {
                 tmp8 = closure_8;

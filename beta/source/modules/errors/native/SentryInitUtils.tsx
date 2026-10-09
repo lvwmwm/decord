@@ -665,13 +665,13 @@ export const initSentry = function initSentry() {
             tunnel: `/error-reporting-proxy/${str2}`,
             autoInitializeNativeSdk: false,
             beforeSend,
-            dist: "34910700000000",
+            dist: "34910800000000",
             dsn: SentryStaffDsn,
             environment: ReleaseChannel,
             tracesSampleRate: 0,
             sampleRate: 1,
             ignoreErrors,
-            release: "discord_android@349.7.0-1+349107",
+            release: "discord_android@349.8.0-1+349108",
             tracePropagationTargets: items,
             integrations: items1,
             beforeBreadcrumb(data) {
@@ -707,7 +707,7 @@ export const initSentry = function initSentry() {
           items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
           init(obj3);
           const tmp17Result17 = require("module_686");
-          tmp17Result17.setTag("buildNumber", "34910700000000");
+          tmp17Result17.setTag("buildNumber", "34910800000000");
           const tmp17Result18 = require("module_686");
           tmp17Result18.setTag("appVersion", constants.Version);
           const _HermesInternal = HermesInternal;

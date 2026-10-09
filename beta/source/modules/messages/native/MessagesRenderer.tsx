@@ -100,7 +100,7 @@ const forwardRefResult = react.forwardRef((messages, ref) => {
   let loadMoreBefore;
   let scrollToTopMessage;
   let updateNativeRows;
-  const f106609 = (id) => id.id;
+  const f106607 = (id) => id.id;
   _require = messages;
   function handleVisibleMessagesChange(arg0) {
     let firstVisibleMessagePercentVisible;
@@ -465,7 +465,7 @@ const forwardRefResult = react.forwardRef((messages, ref) => {
     ({ channelId, messages: messages2 } = messages);
     const recordMessageRender = first(dependencyMap[11]).recordMessageRender;
     first(dependencyMap[11]);
-    const mapped = messages2.map(f106609);
+    const mapped = messages2.map(f106607);
     let hasFetched = messages2.hasFetched;
     if (!hasFetched) {
       hasFetched = messages2.ready && !messages2.cached;
@@ -474,7 +474,7 @@ const forwardRefResult = react.forwardRef((messages, ref) => {
     ({ channelId: channelId2, messages: messages3 } = messages);
     const recordMessageRender2 = tmp15(dependencyMap[11]).recordMessageRender;
     first(dependencyMap[11]);
-    const mapped1 = messages3.map(f106609);
+    const mapped1 = messages3.map(f106607);
     let hasFetched2 = messages3.hasFetched;
     if (!hasFetched2) {
       hasFetched2 = messages3.ready && !messages3.cached;
@@ -710,7 +710,7 @@ const forwardRefResult = react.forwardRef((messages, ref) => {
                                                                                                                                           let tmp67 = dependencyMap;
                                                                                                                                           const tmp68 = first(dependencyMap[11]);
                                                                                                                                           const recordMessageRender = tmp68.recordMessageRender;
-                                                                                                                                          const mapped = messages.map(f106609);
+                                                                                                                                          const mapped = messages.map(f106607);
                                                                                                                                           let hasFetched = messages.hasFetched;
                                                                                                                                           if (!hasFetched) {
                                                                                                                                             hasFetched = messages.ready && !messages.cached;
@@ -1136,7 +1136,7 @@ const forwardRefResult = react.forwardRef((messages, ref) => {
           let tmp99 = dependencyMap;
           let tmp100 = first(dependencyMap[11]);
           const recordMessageRender2 = tmp100.recordMessageRender;
-          const mapped1 = messages3.map(f106609);
+          const mapped1 = messages3.map(f106607);
           let hasFetched2 = messages3.hasFetched;
           if (!hasFetched2) {
             let tmp102 = messages3.ready && !messages3.cached;

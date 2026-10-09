@@ -431,7 +431,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   let tmp21;
   let tmp7;
   let tmp8;
-  const f118191 = () => {
+  const f118189 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -490,9 +490,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   const handlePlayerStateChange = isEndCardVisible({ isActive, playerRef: ref }).handlePlayerStateChange;
   [tmp17, tmp18] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp20, tmp21] = isActive(obj.useState(f118191), 2);
+  [tmp20, tmp21] = isActive(obj.useState(f118189), 2);
   VirtualCurrencyStore = tmp21;
-  isActive(obj.useState(f118191), 2);
+  isActive(obj.useState(f118189), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;

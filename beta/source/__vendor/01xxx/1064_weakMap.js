@@ -1132,7 +1132,7 @@ export const createTimeToFullDisplay = function createTimeToFullDisplay(useFocus
     constructor(arg0) {
       tmp = closure_2(useState(false), 2);
       [record, closure_0] = tmp;
-      tmp2 = useFocusEffect(() => { /* body not rendered: F134718 */ });
+      tmp2 = useFocusEffect(() => { /* body not rendered: F134716 */ });
       tmp3 = closure_3;
       createElement = closure_3.createElement;
       tmp4 = closure_1;
@@ -1154,7 +1154,7 @@ export const createTimeToInitialDisplay = function createTimeToInitialDisplay(us
     constructor(arg0) {
       tmp = closure_2(useState(false), 2);
       [record, closure_0] = tmp;
-      tmp2 = useFocusEffect(() => { /* body not rendered: F134718 */ });
+      tmp2 = useFocusEffect(() => { /* body not rendered: F134716 */ });
       tmp3 = closure_3;
       createElement = closure_3.createElement;
       tmp4 = closure_1;

@@ -21,7 +21,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, importDefault;
 
-const f105042 = (channel) => channel.channel.id !== NULL_STRING_CHANNEL_ID;
+const f105040 = (channel) => channel.channel.id !== NULL_STRING_CHANNEL_ID;
 function areDestinationsEqual(arr, arg1) {
   let closure_0 = arg1;
   const tmp = arr.length === arg1.length && arr.every((id, index) => id.id === closure_0[index].id && id.label === closure_0[index].label && id.disabled === closure_0[index].disabled);
@@ -843,7 +843,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (listChannel.isCategory()) {
       let _categories = categories._categories;
-      found = _categories.filter(f105042);
+      found = _categories.filter(f105040);
     } else {
       const tmpResult3 = tmp(tmp2[14]);
       found = tmpResult3.getSectionSiblings(listChannel, categories);
@@ -881,7 +881,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const categoryKey = obj.getCategoryKey(listChannel.parent_id, categories);
   if (listChannel.isCategory()) {
     let _categories = categories._categories;
-    found = _categories.filter(f105042);
+    found = _categories.filter(f105040);
   } else {
     const tmp3Result = tmp3(tmp4[14]);
     found = tmp3Result.getSectionSiblings(listChannel, categories);

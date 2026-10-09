@@ -150,7 +150,7 @@ export const isImageLoaded = function isImageLoaded(arg0) {
 };
 export const loadImage = function loadImage(url, bind) {
   let image;
-  const f134902 = async (arg0, value) => {
+  const f134900 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -291,7 +291,7 @@ export const loadImage = function loadImage(url, bind) {
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f134902);
+    image.onerror = _asyncToGenerator(f134900);
     image.onload = () => {
       let callbacks;
       let url;

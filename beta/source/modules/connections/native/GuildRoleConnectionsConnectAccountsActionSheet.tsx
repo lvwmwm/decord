@@ -2503,7 +2503,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f106932 = () => {
+    const f106930 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -2610,8 +2610,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f106932);
-    _slicedToArray(react.useState(f106932), 2);
+    [tmp27, c16] = react.useState(f106930);
+    _slicedToArray(react.useState(f106930), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[19])();

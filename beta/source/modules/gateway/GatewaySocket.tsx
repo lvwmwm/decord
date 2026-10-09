@@ -246,7 +246,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         const str1 = str11.toString();
         ({ compressionHandler: compressionHandler2, _handleClose } = self);
         let closure_1 = _handleClose.bind(self);
-        const f114798 = (byteLength, compressed_byte_size) => {
+        const f114796 = (byteLength, compressed_byte_size) => {
           let compressionHandler;
           let d;
           let num3;
@@ -321,7 +321,7 @@ class GatewaySocket extends GatewaySocketOpCodes {
         let closure_3 = 0;
         compressionHandler2.dataReady((arg0) => {
           try {
-            f114798(arg0, closure_3);
+            f114796(arg0, closure_3);
             closure_3 = 0;
           } catch (tmp5) {
             closure_3 = 0;

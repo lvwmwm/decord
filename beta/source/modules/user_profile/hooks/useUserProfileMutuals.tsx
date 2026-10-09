@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   let tmp9;
   let user;
   let userAffinitiesMap;
-  const f111098 = (arg0) => {
+  const f111096 = (arg0) => {
     let length = closure_3[arg0.guild.id];
     if (length == null) {
       length = stateFromStores1.length;
@@ -212,8 +212,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       const tmpResult8 = require("module_12");
       cResult[12] = arr3;
       cResult[13] = stateFromStores1;
-      cResult[14] = tmpResult8.sortBy(arr3, f111098);
-      const sortByResult = tmpResult8.sortBy(arr3, f111098);
+      cResult[14] = tmpResult8.sortBy(arr3, f111096);
+      const sortByResult = tmpResult8.sortBy(arr3, f111096);
     }
   }
   stateFromStores(stateFromStores1[9])(tmp8);

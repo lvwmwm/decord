@@ -52,7 +52,7 @@ let closure_19;
 let closure_20;
 let tmp2;
 const QuestMatchingUtils = tmp2(9041);
-const f98986 = (userStatus) => {
+const f98984 = (userStatus) => {
   userStatus = userStatus.userStatus;
   let enrolledAt;
   if (userStatus != null) {
@@ -490,7 +490,7 @@ function maybeEmitFrameSessionMetricsForQuest(applicationId, name) {
     if (eligibleQuestsForApplicationId.length > 0) {
       const _HermesInternal2 = HermesInternal;
       const items = ["application_id:" + applicationId];
-      const found = eligibleQuestsForApplicationId.find(f98986);
+      const found = eligibleQuestsForApplicationId.find(f98984);
       let id;
       if (found != null) {
         id = found.id;
@@ -1449,7 +1449,7 @@ export const trackFrameSessionStart = function trackFrameSessionStart(applicatio
         if (eligibleQuestsForApplicationId.length > 0) {
           const _HermesInternal2 = HermesInternal;
           const items2 = ["application_id:" + applicationId];
-          const found = eligibleQuestsForApplicationId.find(f98986);
+          const found = eligibleQuestsForApplicationId.find(f98984);
           let id;
           if (found != null) {
             id = found.id;

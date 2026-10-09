@@ -26,7 +26,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
   let c9;
   let closure_13;
   let trimIdleSpanEndTimestamp;
-  const f134123 = () => {
+  const f134121 = () => {
     const tmp = !c2 && 0 === map.size && closure_4;
     if (tmp) {
       idleTimeout = "idleTimeout";
@@ -317,7 +317,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
               timeout = undefined;
             }
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f134123, tmp6);
+            timeout = setTimeout(f134121, tmp6);
           }
         }
       }));
@@ -332,7 +332,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
             timeout = undefined;
           }
           const _setTimeout = setTimeout;
-          timeout = setTimeout(f134123, idleTimeout);
+          timeout = setTimeout(f134121, idleTimeout);
           if (map.size) {
             const _setTimeout2 = setTimeout;
             timeout = setTimeout(() => {
@@ -353,7 +353,7 @@ export const startIdleSpan = function startIdleSpan(arg0) {
           _require = undefined;
         }
         let _setTimeout = setTimeout;
-        _require = setTimeout(f134123, idleTimeout);
+        _require = setTimeout(f134121, idleTimeout);
       }
       let _setTimeout2 = setTimeout;
       const timerId = setTimeout(() => {

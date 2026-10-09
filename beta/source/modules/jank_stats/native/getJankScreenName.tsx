@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f122058 = (name) => name.name === tabs;
+const f122056 = (name) => name.name === tabs;
 function resolveScreenName(items) {
   const params = tmp.params;
   if (items[items.length - 1].name === channel) {
@@ -178,7 +178,7 @@ export default function getJankScreenName() {
               let tmp13 = tmp10;
               if (name === channel) {
                 let routes1 = tmp2.routes;
-                let found = routes1.find(f122058);
+                let found = routes1.find(f122056);
                 if (found == null) {
                   found = tmp10;
                 }
@@ -296,7 +296,7 @@ export const getPanelListScreenName = function getPanelListScreenName() {
         let tmp6 = tmp3;
         if (name === channel) {
           let routes1 = rootState.routes;
-          let found = routes1.find(f122058);
+          let found = routes1.find(f122056);
           if (found == null) {
             found = tmp3;
           }

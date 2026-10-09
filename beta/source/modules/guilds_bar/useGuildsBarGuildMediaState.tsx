@@ -20,7 +20,7 @@ export default function useGuildsBarGuildMediaState(arg0) {
   let closure_1;
   let guildMediaState;
   let stateFromStores;
-  const f123755 = () => guildMediaState.getGuildMediaState(closure_0);
+  const f123753 = () => guildMediaState.getGuildMediaState(closure_0);
   let obj = require("GuildMediaStateStoreExperiment");
   const current = react.useRef(obj.useGuildMediaStateSource("GuildsBarGuild")).current;
   const obj2 = react;
@@ -29,7 +29,7 @@ export default function useGuildsBarGuildMediaState(arg0) {
     const items = [GuildMediaStateStore];
     const items1 = [arg0];
     const tmpResult = require("get initialized");
-    return tmpResult.useStateFromStores(items, f123755, items1);
+    return tmpResult.useStateFromStores(items, f123753, items1);
   } else if (require("GuildMediaStateStoreExperiment").GuildMediaStateSource.SHADOW === current) {
     const tmp5 = require("useGuildMediaState")(arg0);
     importDefault = tmp5;
@@ -37,7 +37,7 @@ export default function useGuildsBarGuildMediaState(arg0) {
     const items2 = [GuildMediaStateStore];
     const items3 = [arg0];
     const tmpResult2 = require("get initialized");
-    stateFromStores = tmpResult2.useStateFromStores(items2, f123755, items3);
+    stateFromStores = tmpResult2.useStateFromStores(items2, f123753, items3);
     const items4 = [arg0, tmp5, stateFromStores];
     const effect = obj2.useEffect(() => {
       const obj = GuildMediaStateShadowCompare;

@@ -21,7 +21,7 @@ let _require, closure_9;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f126163 = () => {
+const f126161 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -83,7 +83,7 @@ function discardDraft(projectId, item10010) {
   }
   if (null != item10010.ref) {
     const promise = React3(projectId, item10010.ref.id);
-    promise.catch(f126163);
+    promise.catch(f126161);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -289,7 +289,7 @@ export const removeConjureAttachmentDraft = function removeConjureAttachmentDraf
     }
     if (null != found.ref) {
       const promise = React3(projectId, found.ref.id);
-      promise.catch(f126163);
+      promise.catch(f126161);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

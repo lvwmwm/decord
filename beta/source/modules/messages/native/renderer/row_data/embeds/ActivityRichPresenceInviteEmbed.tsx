@@ -55,7 +55,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
   let obj14;
   let stringResult5;
   let type6;
-  const f113878 = (type) => type.type === constants.LISTENING;
+  const f113876 = (type) => type.type === constants.LISTENING;
   if (null != message.author) {
     if (null != message.activity) {
       if (null != channel) {
@@ -128,7 +128,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
             applicationActivity = PresenceStore.getApplicationActivity(tmp25, message.application.id);
             obj5 = PresenceStore;
           } else {
-            applicationActivity = PresenceStore.findActivity(message.author.id, f113878);
+            applicationActivity = PresenceStore.findActivity(message.author.id, f113876);
             obj5 = PresenceStore;
           }
           let tmp28;
@@ -178,7 +178,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                 }
                 applicationActivity1 = obj5.getApplicationActivity(tmp133, message.application.id);
               } else {
-                applicationActivity1 = obj5.findActivity(message.author.id, f113878);
+                applicationActivity1 = obj5.findActivity(message.author.id, f113876);
               }
               const tmp136 = isInviteActiveDefault(applicationActivity1, message, application1.id);
               const tmp4Result28 = tmp4(13073);

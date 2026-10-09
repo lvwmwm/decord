@@ -19,7 +19,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f131063 = (item) => {
+  const f131061 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -202,7 +202,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f131063);
+    let item = arr.forEach(f131061);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -213,7 +213,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f131063);
+        const item = arr.forEach(f131061);
       }
     });
   }

@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f112003 = (type) => type.type === constants.GIFV;
+const f112001 = (type) => type.type === constants.GIFV;
 const REACTION_MILESTONE_COUNTS = InAppNotificationConstants.REACTION_MILESTONE_COUNTS;
 ({ AnalyticEvents: hasOwnProperty, ChannelTypes: metroRequire, InAppNotificationTypes: metroImportDefault, MessageEmbedTypes: metroImportAll, MessageFlags: c9 } = Constants);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
@@ -41,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
       let everyResult = hasFlag.embeds.length > 0;
       if (everyResult) {
         let embeds = hasFlag.embeds;
-        everyResult = embeds.every(f112003);
+        everyResult = embeds.every(f112001);
       }
       hasFlagResult = everyResult;
     }
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f112003);
+              everyResult = embeds.every(f112001);
             }
             hasFlagResult = everyResult;
           }
@@ -90,7 +90,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
       let everyResult = tmp.embeds.length > 0;
       if (everyResult) {
         let embeds = tmp.embeds;
-        everyResult = embeds.every(f112003);
+        everyResult = embeds.every(f112001);
       }
       hasFlagResult = everyResult;
     }
@@ -108,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasFlag) => {
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f112003);
+              everyResult = embeds.every(f112001);
             }
             hasFlagResult = everyResult;
           }

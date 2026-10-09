@@ -18358,7 +18358,7 @@ let closure_210 = {
     tmp.memoizedState = items;
     return tmp3;
   },
-  useReducer(P, arg1, fn) {
+  useReducer(cResult, arg1, fn) {
     let bindResult;
     const tmp = mountWorkInProgressHook();
     let tmp2 = arg1;
@@ -18379,7 +18379,7 @@ let closure_210 = {
     }
     tmp.baseState = tmp2;
     tmp.memoizedState = tmp2;
-    const queue = { pending: null, lanes: 0, dispatch: bindResult, lastRenderedReducer: P, lastRenderedState: tmp2 };
+    const queue = { pending: null, lanes: 0, dispatch: bindResult, lastRenderedReducer: cResult, lastRenderedState: tmp2 };
     tmp.queue = queue;
     bindResult = dispatchReducerAction.bind(null, c165, queue);
     items = [tmp.memoizedState, bindResult];

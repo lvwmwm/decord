@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f100726 = (hubProgress) => {
+const f100724 = (hubProgress) => {
   let flag = false;
   for (const item10008 of HUB_PROGRESS_STEP_ORDER) {
     let tmp = item10008;
@@ -44,12 +44,12 @@ export const setHubProgressActionComplete = function setHubProgressActionComplet
     if (hasItem) {
       const items = [INVITE_USER];
       const obj = items(2033);
-      const result = obj.updateUserGuildSettings(guildId, f100726, items(2033).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      const result = obj.updateUserGuildSettings(guildId, f100724, items(2033).UserSettingsDelay.INFREQUENT_USER_ACTION);
     }
   }
 };
 export const skipHubProgress = function skipHubProgress(id) {
   _require = HUB_PROGRESS_STEP_ORDER;
   let obj = require("UserSettingsProtoActionCreators");
-  const result = obj.updateUserGuildSettings(id, f100726, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
+  const result = obj.updateUserGuildSettings(id, f100724, require("UserSettingsProtoActionCreators").UserSettingsDelay.INFREQUENT_USER_ACTION);
 };

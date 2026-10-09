@@ -20,7 +20,7 @@ let c1, c2, c4, c5;
 let LinuxKeyToCode;
 let MacosKeyToCode;
 let WindowsKeyToCode;
-const f115616 = (item) => {
+const f115614 = (item) => {
   let tmp;
   [tmp, obj] = item;
   const items = [tmp, ];
@@ -602,8 +602,8 @@ class DiscordKeyboardLayoutMap {
     }
     obj = Object.create(new.target.prototype);
     const entries = Object.entries(tmp);
-    obj.map = new Map(entries.map(f115616));
-    new Map(entries.map(f115616));
+    obj.map = new Map(entries.map(f115614));
+    new Map(entries.map(f115614));
     return obj;
   }
   get(arg0) {
@@ -643,7 +643,7 @@ Object.defineProperty(DiscordKeyboardLayoutMap.prototype, "size", {
 });
 obj = Object.create(DiscordKeyboardLayoutMap.prototype);
 let entries = Object.entries(frozen);
-let map = new Map(entries.map(f115616));
+let map = new Map(entries.map(f115614));
 obj.map = map;
 let c15 = "keyboard-layout-map";
 class BaseKeyboardMapper {

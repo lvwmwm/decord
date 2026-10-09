@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f96277 = () => {
+const f96275 = () => {
   obj = { isOnStartStageScreen };
   return state.setState(obj);
 };
@@ -98,12 +98,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f96277);
+        obj2.batchUpdates(f96275);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f96277);
+      obj.batchUpdates(f96275);
     }
   };
   items3 = [stateFromStores, tmp13];
@@ -130,12 +130,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f96277);
+        obj2.batchUpdates(f96275);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f96277);
+      obj.batchUpdates(f96275);
     }
   }, items3);
 });
@@ -143,7 +143,7 @@ function setIsOnStartStageScreen(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("react-native");
-  obj.batchUpdates(f96277);
+  obj.batchUpdates(f96275);
 }
 const result = size.fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
 

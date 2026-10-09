@@ -42,7 +42,7 @@ function validate(arr) {
   return c0;
 }
 function getData(arg0, arr, arg2) {
-  const f130973 = (type) => {
+  const f130971 = (type) => {
     let components;
     let items;
     let mapped;
@@ -54,7 +54,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f130973) };
+      const obj4 = { type: type.type, components: components.map(f130971) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -115,7 +115,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f130973)[0] };
+                const obj21 = { type: type.type, component: items.map(f130971)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -177,7 +177,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f130973);
+  return arr.map(f130971);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;

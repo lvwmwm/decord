@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 function updateGiftCode(giftCode) {
-  const f106358 = () => {
+  const f106356 = () => {
     let closure_0 = code;
     const value = map.get(code);
     const obj = map;
@@ -35,7 +35,7 @@ function updateGiftCode(giftCode) {
           giftCodeStore.emitChange();
         } else if (null != closure_7[code]) {
           const _Math = Math;
-          closure_7[code].start(Math.min(hasOwnProperty, diff), f106358);
+          closure_7[code].start(Math.min(hasOwnProperty, diff), f106356);
         }
       }
     }
@@ -66,7 +66,7 @@ function updateGiftCode(giftCode) {
             giftCodeStore.emitChange();
           } else if (null != tmp14[code]) {
             let _Math = Math;
-            tmp14[code].start(Math.min(closure_5, diff), f106358);
+            tmp14[code].start(Math.min(closure_5, diff), f106356);
           }
         }
       }

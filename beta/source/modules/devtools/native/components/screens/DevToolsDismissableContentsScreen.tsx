@@ -43,7 +43,7 @@ let obj6;
 let obj7;
 let tmp;
 const TableSwitchRow3 = tmp(6698);
-const f120307 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
+const f120305 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -431,7 +431,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           continue;
         }
-        const sorted = items.sort(f120307);
+        const sorted = items.sort(f120305);
         return items;
       }
     }
@@ -467,7 +467,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           continue;
         }
-        const sorted = items.sort(f120307);
+        const sorted = items.sort(f120305);
         return items;
       }
     }
@@ -502,7 +502,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           continue;
         }
-        const sorted = items.sort(f120307);
+        const sorted = items.sort(f120305);
         return items;
       }
     }
@@ -543,7 +543,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           continue;
         }
-        const sorted = items.sort(f120307);
+        const sorted = items.sort(f120305);
         return items;
       }
     }
@@ -611,7 +611,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           continue;
         }
-        const sorted = items.sort(f120307);
+        const sorted = items.sort(f120305);
         tmp2(items);
         M();
       }
@@ -645,7 +645,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           continue;
         }
-        const sorted = items.sort(f120307);
+        const sorted = items.sort(f120305);
         tmp2(items);
         M();
       }
@@ -730,7 +730,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       continue;
     }
-    const sorted = items.sort(f120307);
+    const sorted = items.sort(f120305);
     return items;
   });
   let items = [closure_6];
@@ -776,7 +776,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       continue;
     }
-    const sorted = items.sort(f120307);
+    const sorted = items.sort(f120305);
     tmp2(items);
     callback();
   }, items1);

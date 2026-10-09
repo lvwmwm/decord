@@ -21,7 +21,7 @@ let _require, closure_0, dependencyMap;
 let hasOwnProperty;
 let metroRequire;
 let obj2;
-const f131163 = () => closure_1_0(paths[7])(paths[6], paths.paths);
+const f131161 = () => closure_1_0(paths[7])(paths[6], paths.paths);
 let react = react_mod;
 let NativeModules = react_native.NativeModules;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -184,7 +184,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   let obj = {
                     onPress() {
                       closure_0 = closure_1_4;
-                      const lazyResult = React.lazy(f131163);
+                      const lazyResult = React.lazy(f131161);
                       const obj = closure_2_0(closure_2_2[8]);
                       const obj2 = {
                         onConfirm() {
@@ -450,7 +450,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             onPress() {
               let paths;
               closure_0 = closure_1_4;
-              const lazyResult = React.lazy(f131163);
+              const lazyResult = React.lazy(f131161);
               const obj = closure_2_0(closure_2_2[8]);
               const obj2 = {
                 onConfirm() {

@@ -29,7 +29,7 @@ let _require, dependencyMap, flag, flag2, importDefault, lockOrientationResult, 
 let VoiceCallOverlayType;
 let VoiceChatDrawerState;
 let obj2;
-const f99148 = () => {
+const f99146 = () => {
   const obj = require("react-native");
   obj.batchUpdates(() => state.setState({ focus: false }));
 };
@@ -351,7 +351,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildStageVoice) =
 });
 function resetFocusTimer() {
   timeout.stop();
-  timeout.start(5000, f99148);
+  timeout.start(5000, f99146);
 }
 size = size_mod;
 let result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallStore.tsx");
@@ -378,7 +378,7 @@ export const resetFocus = function resetFocus() {
   let state;
   if (obj3.getState().focus) {
     timeout.stop();
-    timeout.start(5000, f99148);
+    timeout.start(5000, f99146);
   } else {
     let obj = react_native;
     obj.batchUpdates(() => state.setState({ focus: true }));

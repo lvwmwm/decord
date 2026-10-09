@@ -27,7 +27,7 @@ let _require, c5, guildDismissibleContentStates, recurringDismissibleContentStat
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f135589 = async (arg0, value) => {
+const f135587 = async (arg0, value) => {
   let closure_1;
   let obj11;
   let obj5;
@@ -256,7 +256,7 @@ class UserSettingsProtoActionCreators {
     obj = Object.create(new.target.prototype);
     obj.beforeSendCallbacks = [];
     obj.lastSendTime = 0;
-    obj.persistChanges = _asyncToGenerator(f135589);
+    obj.persistChanges = _asyncToGenerator(f135587);
     obj.ProtoClass = ProtoClass;
     obj.type = type;
     obj.logger = new LoggerDefault(obj.ProtoClass.typeName);
@@ -634,7 +634,7 @@ const PRELOADED_USER_SETTINGS = UserSettingsTypes.PRELOADED_USER_SETTINGS;
 obj = Object.create(UserSettingsProtoActionCreators.prototype);
 obj.beforeSendCallbacks = [];
 obj.lastSendTime = 0;
-obj.persistChanges = _asyncToGenerator(f135589);
+obj.persistChanges = _asyncToGenerator(f135587);
 obj.ProtoClass = PreloadedUserSettings;
 obj.type = PRELOADED_USER_SETTINGS;
 let tmp10 = new LoggerDefault(obj.ProtoClass.typeName);
@@ -644,7 +644,7 @@ const FRECENCY_AND_FAVORITES_SETTINGS = UserSettingsTypes.FRECENCY_AND_FAVORITES
 let obj2 = Object.create(UserSettingsProtoActionCreators.prototype);
 obj2.beforeSendCallbacks = [];
 obj2.lastSendTime = 0;
-obj2.persistChanges = _asyncToGenerator(f135589);
+obj2.persistChanges = _asyncToGenerator(f135587);
 obj2.ProtoClass = FrecencyUserSettings;
 obj2.type = FRECENCY_AND_FAVORITES_SETTINGS;
 let tmp12 = new LoggerDefault(obj2.ProtoClass.typeName);

@@ -979,7 +979,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f132451 = (item) => {
+  const f132449 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
@@ -999,8 +999,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
   const ONLY_MENTIONS = constants3.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_11.some(f132451)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_11.some(f132451)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_11.some(f132449)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_11.some(f132449)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
   const tmp8 = constants3;

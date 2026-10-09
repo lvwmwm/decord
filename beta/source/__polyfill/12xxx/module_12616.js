@@ -12,7 +12,7 @@ export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, 
   let closure_0;
   let closure_1;
   let num;
-  const f112462 = function(fn, arg1) {
+  const f112460 = function(fn, arg1) {
     closure_0 = fn;
     let tmp3 = closure_0[closure_3];
     let tmp4 = closure_1;
@@ -48,7 +48,7 @@ export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, 
           closure_3 = tmp2 + 1;
           let self = this;
           let self2 = this;
-          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f112462);
+          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f112460);
           let tmp9 = syncPromise;
           let nextPromise2 = syncPromise.then(fn);
           let nextPromise3 = nextPromise2.then(null, arg1);
@@ -60,6 +60,6 @@ export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, 
   _require = arg0;
   dependencyMap = arg1;
   let closure_2 = arg2;
-  const syncPromise = new require("module_12589").SyncPromise(f112462);
+  const syncPromise = new require("module_12589").SyncPromise(f112460);
   return syncPromise;
 };

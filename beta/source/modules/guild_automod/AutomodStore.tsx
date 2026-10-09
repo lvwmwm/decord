@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 
 let _require, c0, c1, c6, c7, closure_5;
 
-const f131576 = (arg0) => {
+const f131574 = (arg0) => {
   const items = [, ];
   ({ syncRules: arr[0], fetching: arr[1] } = arg0);
   return items;
@@ -241,7 +241,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   first1 = undefined;
   let obj2 = react;
   [first, closure_1] = react.useState(false);
-  [first1, tmp6] = withEqualityFn(f131576, _slicedToArray2.shallow);
+  [first1, tmp6] = withEqualityFn(f131574, _slicedToArray2.shallow);
   let closure_3 = tmp6;
   const items = [first, ];
   const items1 = [arg0, tmp6, first1];
@@ -406,7 +406,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp8;
   _require = arg0;
   [first, closure_1] = react.useState(false);
-  [first1, tmp5] = withEqualityFn(f131576, require("_slicedToArray").shallow);
+  [first1, tmp5] = withEqualityFn(f131574, require("_slicedToArray").shallow);
   let closure_3 = tmp5;
   let items = [first, ];
   const items1 = [arg0, tmp5, first1];
@@ -583,7 +583,7 @@ function useSyncAutomodRules(arg0) {
   let first;
   let closure_0 = arg0;
   [first, closure_1] = react.useState(false);
-  const tmp3 = _slicedToArray(withEqualityFn(f131576, _slicedToArray2.shallow), 2);
+  const tmp3 = _slicedToArray(withEqualityFn(f131574, _slicedToArray2.shallow), 2);
   const first1 = tmp3[0];
   let closure_3 = tmp5;
   const items = [first, ];

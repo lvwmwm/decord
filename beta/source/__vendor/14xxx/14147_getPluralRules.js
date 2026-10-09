@@ -188,7 +188,7 @@ let obj62;
 let obj63;
 let obj8;
 let obj9;
-const f115949 = (item) => {
+const f115947 = (item) => {
   let closure_0 = item;
   let tmp = item && typeof item !== "string";
   if (tmp) {
@@ -3051,7 +3051,7 @@ if (getPluralRules) {
   const merged = Object.assign({ default: null });
   merged[0] = _default;
   const items = [obj2];
-  let item = items.forEach(f115949);
+  let item = items.forEach(f115947);
   const _Object3 = Object;
   const obj3 = { cardinal: items1, ordinal: items2 };
   items1 = [, ];
@@ -3268,7 +3268,7 @@ if (getPluralRules) {
   const merged1 = Object.assign({ default: null });
   merged1[0] = _default2;
   const items121 = [obj7];
-  const item1 = items121.forEach(f115949);
+  const item1 = items121.forEach(f115947);
   const _Object6 = Object;
   const fn7 = function a(arg0, arg1) {
     return "other";
@@ -3457,7 +3457,7 @@ if (getPluralRules) {
     const merged2 = Object.assign({ default: null });
     merged2[0] = _default3;
     const items122 = [obj64];
-    const item2 = items122.forEach(f115949);
+    const item2 = items122.forEach(f115947);
     const _Object9 = Object;
     frozen2 = Object.freeze(merged2);
   }

@@ -22,7 +22,7 @@ function updateActivity(withGracePeriod) {
   let obj3;
   let timeout;
   let timeout2;
-  const f106496 = () => {
+  const f106494 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -40,7 +40,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f106496, closure_1_8);
+      timeout = setTimeout(f106494, closure_1_8);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -171,7 +171,7 @@ function updateActivity(withGracePeriod) {
           timeout2 = null;
         }
         let _setTimeout = setTimeout;
-        timeout2 = setTimeout(f106496, c8);
+        timeout2 = setTimeout(f106494, c8);
         flag = true;
       }
     }

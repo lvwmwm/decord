@@ -38,7 +38,7 @@ let c9;
 let closure_20;
 let closure_21;
 let metroImportAll;
-const f123425 = () => {
+const f123423 = () => {
   c0 = true;
 };
 function getMissingFavoriteThreadIds(includeLoading) {
@@ -833,7 +833,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      obj5.forEachShownChannel(f123425);
+      obj5.forEachShownChannel(f123423);
       flag2 = !closure_129_0;
     }
     cResult[14] = obj5;
@@ -938,7 +938,7 @@ let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let flag2 = false;
   if (memo.getSections().length <= tmp(7039).SECTION_INDEX_FIRST_NAMED_CATEGORY) {
     let c0 = false;
-    memo.forEachShownChannel(f123425);
+    memo.forEachShownChannel(f123423);
     flag2 = !c0;
   }
   return { guildChannels: memo, shouldShowEmptyState: flag2 && !hasAccess, hasNoChannels: flag2 };

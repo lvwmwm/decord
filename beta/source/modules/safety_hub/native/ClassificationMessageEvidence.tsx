@@ -34,7 +34,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f108079 = (arg0, arg1) => {
+const f108077 = (arg0, arg1) => {
   url = arg0;
   return size.getSize(url.url, (width, height) => {
     size = { width, height };
@@ -208,7 +208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
                   });
                   const mapped = found.map((item) => {
                     let closure_0 = item;
-                    const promise = new Promise(f108079);
+                    const promise = new Promise(f108077);
                     const nextPromise = promise.then((result) => {
                       id = result;
                       return closure_1_4((arg0) => {
@@ -710,7 +710,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(flaggedConte
     });
     const mapped = found.map((item) => {
       let closure_0 = item;
-      const promise = new Promise(f108079);
+      const promise = new Promise(f108077);
       const nextPromise = promise.then((result) => {
         id = result;
         return closure_1_4((arg0) => {

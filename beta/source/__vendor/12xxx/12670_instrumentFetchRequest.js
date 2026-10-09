@@ -27,7 +27,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span) {
   let baggage;
   let joined1;
   let tmp5;
-  const f112608 = (item) => {
+  const f112606 = (item) => {
     const first = item.split("=")[0];
     return !first.startsWith(closure_1_0(closure_1_1[15]).SENTRY_BAGGAGE_KEY_PREFIX);
   };
@@ -69,7 +69,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span) {
           const str6 = headers2.get("baggage");
           if (str6) {
             let parts = str6.split(",");
-            let found = parts.filter(f112608);
+            let found = parts.filter(f112606);
             let joined = found.join(",");
             let combined = baggage;
             set = headers2.set;
@@ -102,7 +102,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span) {
                   items[0] = arr[0];
                   const substr = arr.slice(2);
                   const parts = str2.split(",");
-                  const found = parts.filter(f112608);
+                  const found = parts.filter(f112606);
                   items[1] = found.join(",");
                   HermesBuiltin.arraySpread(items, substr, 2);
                   return items;
@@ -128,7 +128,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span) {
               let joined = item;
               if (typeof item === "string") {
                 const parts = item.split(",");
-                const found = parts.filter(f112608);
+                const found = parts.filter(f112606);
                 joined = found.join(",");
               }
               return joined;
@@ -141,7 +141,7 @@ function _addTracingHeadersToFetchRequest(headers, headers2, span) {
               let str2 = ",";
               const push = items3.push;
               const parts1 = baggage1.split(",");
-              const found3 = parts1.filter(f112608);
+              const found3 = parts1.filter(f112606);
               push(found3.join(","));
               found2 = items3;
             }

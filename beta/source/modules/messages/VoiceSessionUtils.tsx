@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f138315 = (acc, item) => {
+const f138313 = (acc, item) => {
   user = user.getUser(item);
   let tmp3 = acc;
   if (null != user) {
@@ -167,7 +167,7 @@ function getSortedVoiceSessionParticipants(message) {
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce(f138315, []);
+    reduced = participants.reduce(f138313, []);
   }
   if (reduced == null) {
     reduced = [];
@@ -195,7 +195,7 @@ export const getVoiceSessionMessageContent = function getVoiceSessionMessageCont
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce(f138315, []);
+    reduced = participants.reduce(f138313, []);
   }
   if (reduced == null) {
     reduced = [];

@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f96953 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f96951 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 ({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: hasOwnProperty, FamilyCenterFailureCode: metroRequire, TeenActionDisplayType: metroImportDefault, UserLinkStatus: metroImportAll, UserLinkType: c9 } = FamilyCenterConstants);
 let c10 = 86400;
 let c11 = 172800;
@@ -181,11 +181,11 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
 };
 export const hasActiveParentLinks = function hasActiveParentLinks() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f96953);
+  return values.some(f96951);
 };
 export const isParentallyControlled = function isParentallyControlled() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f96953);
+  return values.some(f96951);
 };
 export const getTopUserOrGuildDescription = function getTopUserOrGuildDescription(dms_sent, call_count) {
   let formatToPlainStringResult;

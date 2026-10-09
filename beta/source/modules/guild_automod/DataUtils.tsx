@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/guild_automod/DataUtils.tsx");
 
 export const _transformMetadataToCamelCase = function _transformMetadataToCamelCase(body) {
-  const f107926 = (acc, item) => {
+  const f107924 = (acc, item) => {
     const obj = _mod12;
     const camelCaseResult = obj.camelCase(item);
     if (typeof body[item] === "object") {
@@ -22,7 +22,7 @@ export const _transformMetadataToCamelCase = function _transformMetadataToCamelC
         if (null != body[item]) {
           const _Object = Object;
           const keys = Object.keys(tmp3);
-          reduced = keys.reduce(f107926, {});
+          reduced = keys.reduce(f107924, {});
         }
         acc[camelCaseResult] = reduced;
       }
@@ -34,12 +34,12 @@ export const _transformMetadataToCamelCase = function _transformMetadataToCamelC
   if (null != body) {
     let _Object = Object;
     let keys = Object.keys(body);
-    reduced = keys.reduce(f107926, {});
+    reduced = keys.reduce(f107924, {});
   }
   return reduced;
 };
 export const _transformMetadataToSnakeCase = function _transformMetadataToSnakeCase(metadata) {
-  const f107927 = (acc, item) => {
+  const f107925 = (acc, item) => {
     const obj = _mod12;
     const snakeCaseResult = obj.snakeCase(item);
     if (typeof metadata[item] === "object") {
@@ -50,7 +50,7 @@ export const _transformMetadataToSnakeCase = function _transformMetadataToSnakeC
         if (null != metadata[item]) {
           const _Object = Object;
           const keys = Object.keys(tmp3);
-          reduced = keys.reduce(f107927, {});
+          reduced = keys.reduce(f107925, {});
         }
         acc[snakeCaseResult] = reduced;
       }
@@ -63,7 +63,7 @@ export const _transformMetadataToSnakeCase = function _transformMetadataToSnakeC
   if (null != metadata) {
     let _Object = Object;
     let keys = Object.keys(metadata);
-    reduced = keys.reduce(f107927, {});
+    reduced = keys.reduce(f107925, {});
   }
   return reduced;
 };

@@ -67,7 +67,7 @@ export default function AdvancedInstantInvite(maxAge) {
   let tmp29;
   let tmp33Result;
   let tmp33Result5;
-  const f132858 = (value) => value.value === maxUses;
+  const f132856 = (value) => value.value === maxUses;
   ({ channel, guild } = maxAge);
   maxAge = maxAge.maxAge;
   const onChangeMaxAge = maxAge.onChangeMaxAge;
@@ -154,12 +154,12 @@ export default function AdvancedInstantInvite(maxAge) {
     const obj4 = { count: memo };
     formatToPlainStringResult = intl.formatToPlainString(guild(onChangeMaxAge[15]).t["eXU3/V"], obj4);
   }
-  const found = maxAgeOptions.find(f132858);
+  const found = maxAgeOptions.find(f132856);
   let label;
   if (found != null) {
     label = found.label;
   }
-  const found1 = maxUsesOptions.find(f132858);
+  const found1 = maxUsesOptions.find(f132856);
   let label1;
   if (found1 != null) {
     label1 = found1.label;

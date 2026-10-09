@@ -144,7 +144,7 @@ runOnUIImmediately.__workletHash = 3385146413149;
 runOnUIImmediately.__initData = { code: "function runOnUIImmediately_Pnpm_threadsTs7(worklet){const{__DEV__,SHOULD_BE_USE_WEB,isWorkletFunction,ReanimatedModule,makeShareableCloneRecursive}=this.__closure;if(__DEV__&&!SHOULD_BE_USE_WEB&&_WORKLET){throw new ReanimatedError('`runOnUIImmediately` cannot be called on the UI runtime. Please call the function synchronously or use `queueMicrotask` or `requestAnimationFrame` instead.');}if(__DEV__&&!SHOULD_BE_USE_WEB&&!isWorkletFunction(worklet)){throw new ReanimatedError('`runOnUIImmediately` can only be used with worklets.');}return function(...args){ReanimatedModule.scheduleOnUI(makeShareableCloneRecursive(function(){'worklet';worklet(...args);}));};}" };
 function runOnJS(__remoteFunction) {
   let _scheduleRemoteFunctionOnJS;
-  const f135154 = () => {
+  const f135152 = () => {
     let items = [...arguments];
     let tmp2 = runWorkletOnJS;
     __remoteFunction = runWorkletOnJS;
@@ -155,7 +155,7 @@ function runOnJS(__remoteFunction) {
       if (globalThis._WORKLET) {
         let obj = LayoutAnimationType;
         if (obj.isWorkletFunction(tmp2)) {
-          fn = f135154;
+          fn = f135152;
         } else {
           let tmp7 = tmp2;
           if (tmp2.__remoteFunction) {
@@ -196,7 +196,7 @@ function runOnJS(__remoteFunction) {
       let tmp3 = _scheduleRemoteFunctionOnJS;
       let obj = _scheduleRemoteFunctionOnJS(1668);
       if (obj.isWorkletFunction(__remoteFunction)) {
-        return f135154;
+        return f135152;
       } else {
         let tmp5 = __remoteFunction;
         if (__remoteFunction.__remoteFunction) {

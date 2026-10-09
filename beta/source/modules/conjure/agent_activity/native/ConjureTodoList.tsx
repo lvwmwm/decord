@@ -37,7 +37,7 @@ let obj7;
 let size;
 let size1;
 let size2;
-const f126091 = (status) => "completed" === status.status;
+const f126089 = (status) => "completed" === status.status;
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -901,7 +901,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const length = todos.filter(f126091).length;
+  const length = todos.filter(f126089).length;
   if (cResult[8] !== agents) {
     let items2 = agents;
     if (agents == null) {
@@ -1032,7 +1032,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const onToggleExpanded = announceProgress.onToggleExpanded;
   let tmp = closure_8();
   dependencyMap = tmp;
-  const length = todos.filter(f126091).length;
+  const length = todos.filter(f126089).length;
   let items = [agents];
   react = react.useMemo(() => {
     let items = agents;
@@ -1118,7 +1118,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_6(tmp9, obj);
 });
 function todoProgress(arr) {
-  const obj = { completed: arr.filter(f126091).length, total: arr.length };
+  const obj = { completed: arr.filter(f126089).length, total: arr.length };
   return obj;
 }
 size = size_mod;

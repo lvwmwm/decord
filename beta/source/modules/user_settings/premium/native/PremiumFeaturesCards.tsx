@@ -105,7 +105,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPaymentSuccess) =>
   let onPaymentSuccess;
   let order;
   let tmp3;
-  const f98717 = (premiumType, index) => {
+  const f98715 = (premiumType, index) => {
     let tmp3;
     const tmp = jsx;
     const tmp2 = PremiumFeaturesCardDefault;
@@ -133,9 +133,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPaymentSuccess) =>
     items1 = [, ];
     ({ TIER_0: arr[0], TIER_2: arr[1] } = PremiumTypes);
   }
-  obj = { style: items2, onLayout, children: items1.map(f98717) };
+  obj = { style: items2, onLayout, children: items1.map(f98715) };
   items2 = [tmp2.container, style];
-  return <onFirstCardLayout style={items2} onLayout={onLayout}>{items1.map(f98717)}</onFirstCardLayout>;
+  return <onFirstCardLayout style={items2} onLayout={onLayout}>{items1.map(f98715)}</onFirstCardLayout>;
 });
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumFeaturesCards.tsx");
 

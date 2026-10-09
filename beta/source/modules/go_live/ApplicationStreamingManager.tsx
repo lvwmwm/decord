@@ -55,7 +55,7 @@ let c17 = null;
 const set = new Set();
 class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
   constructor() {
-    const f133006 = (item) => {
+    const f133004 = (item) => {
       if (!streamMarkedFull.isStreamMarkedFull(item)) {
         set.delete(item);
       }
@@ -150,7 +150,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         closure_1_13[streamKey].stop();
       }
       delete tmp[streamKey];
-      const item = set.forEach(f133006);
+      const item = set.forEach(f133004);
       const obj2 = StreamKeyUtils;
       const decodeStreamKeyResult = obj2.decodeStreamKey(streamKey);
       memberCount = memberCount.getMemberCount(decodeStreamKeyResult.guildId);
@@ -162,7 +162,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         closure_1_13[streamKey].stop();
       }
       delete tmp[streamKey];
-      const item = set.forEach(f133006);
+      const item = set.forEach(f133004);
     };
     applyArgumentsResult.handleStreamDelete = function handleStreamDelete(streamKey) {
       streamKey = streamKey.streamKey;
@@ -204,7 +204,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
       channelId = channelId.channelId;
       if (null != channelId) {
         c17 = null;
-        const item = set.forEach(f133006);
+        const item = set.forEach(f133004);
         const allApplicationStreamsForChannel = authStore.getAllApplicationStreamsForChannel(channelId);
         const found = allApplicationStreamsForChannel.find((ownerId) => {
           let tmp = ownerId.ownerId !== id.getId();
@@ -263,7 +263,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
             tmp3 = set.size > 0;
           }
           if (tmp3) {
-            item = set.forEach(f133006);
+            item = set.forEach(f133004);
           }
           if (null != channelId) {
             if (selfStream) {

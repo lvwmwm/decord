@@ -747,15 +747,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAction) => {
   let items;
   let obj2;
   let obj4;
-  const f121243 = () => false;
+  const f121241 = () => false;
   c1 = undefined;
   onAction = onAction.onAction;
   let tmp = closure_9();
   let parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
-  [arr2, c1] = react.useState(parts.map(f121243));
+  [arr2, c1] = react.useState(parts.map(f121241));
   let obj = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}", footer: closure_7(ModalFloatingAction, obj2), children: items };
   obj2 = { isVisible: arr2.some((item) => item), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
-  _slicedToArray(react.useState(parts.map(f121243)), 2);
+  _slicedToArray(react.useState(parts.map(f121241)), 2);
   ModalFloatingAction = parts(10728).ModalFloatingAction;
   const obj3 = { style: tmp.tableRows, children: closure_7(TableRowGroup, obj4) };
   obj4 = {

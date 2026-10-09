@@ -460,7 +460,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   tmp5 = fn2;
 }) : ((arg0) => {
   let onDismiss;
-  const f107643 = () => {
+  const f107641 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -489,8 +489,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f107643) };
-  require("useInitialValue")(f107643);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f107641) };
+  require("useInitialValue")(f107641);
   return closure_10(require("Navigator").Navigator, obj);
 });
 const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIntentGifModal.tsx");

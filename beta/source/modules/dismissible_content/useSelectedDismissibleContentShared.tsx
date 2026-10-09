@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
           const effect = react.useEffect(tmp7, tmp8);
           class D {
             constructor() {
-              return () => { /* body not rendered: F137793 */ };
+              return () => { /* body not rendered: F137791 */ };
             }
           }
         }
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
     }
     class D {
       constructor() {
-        return () => { /* body not rendered: F137793 */ };
+        return () => { /* body not rendered: F137791 */ };
       }
     }
     const items = [tmp5, arg1, arg0, arg3];

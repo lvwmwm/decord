@@ -557,7 +557,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f132725 = (currentScene) => {
+  const f132723 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -637,9 +637,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f132725), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f132723), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f132725), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f132723), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

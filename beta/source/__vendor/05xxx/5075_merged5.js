@@ -129,10 +129,10 @@ function startsWith(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f136649 = (str) => {
+  const f136647 = (str) => {
     let startsWithResult = typeof str === "string";
     if (typeof str === "string") {
-      startsWithResult = str.startsWith(f136649);
+      startsWithResult = str.startsWith(f136647);
     }
     return startsWithResult;
   };
@@ -222,10 +222,10 @@ function endsWith(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  const f136650 = (str) => {
+  const f136648 = (str) => {
     let endsWithResult = typeof str === "string";
     if (typeof str === "string") {
-      endsWithResult = str.endsWith(f136650);
+      endsWithResult = str.endsWith(f136648);
     }
     return endsWithResult;
   };
@@ -501,10 +501,10 @@ function includes(arg0) {
     return obj;
   };
   closure_0 = arg0;
-  let f136651 = (str) => {
+  let f136649 = (str) => {
     let hasItem = typeof str === "string";
     if (typeof str === "string") {
-      hasItem = str.includes(f136651);
+      hasItem = str.includes(f136649);
     }
     return hasItem;
   };
@@ -593,11 +593,11 @@ function regex(arg0) {
     };
     return obj;
   };
-  let f136652 = (str) => {
+  let f136650 = (str) => {
     let BooleanResult = typeof str === "string";
     if (typeof str === "string") {
       const _Boolean = Boolean;
-      BooleanResult = Boolean(str.match(f136652));
+      BooleanResult = Boolean(str.match(f136650));
     }
     return BooleanResult;
   };
@@ -3608,7 +3608,7 @@ merged5[2] = function array() {
       };
       return obj;
     };
-    const f136639 = () => {
+    const f136637 = () => {
       const fn = function t() {
         return globalThis.regeneratorRuntime.wrap((next) => {
           next = next.next;
@@ -3644,13 +3644,13 @@ merged5[2] = function array() {
       }
     };
     let merged = Object.assign(obj, obj2);
-    let obj3 = { [Symbol.iterator]: f136639 };
+    let obj3 = { [Symbol.iterator]: f136637 };
     let obj4 = { optional, select };
     return Object.assign(Object.assign(merged, obj3), obj4);
   }
   function select(arg0) {
     let tmp3;
-    const f136639 = () => {
+    const f136637 = () => {
       const fn = function t() {
         return globalThis.regeneratorRuntime.wrap((next) => {
           next = next.next;
@@ -3676,11 +3676,11 @@ merged5[2] = function array() {
       tmp3 = closure_2_14(arg0, closure_1_0);
     }
     let closure_0 = tmp3;
-    let obj = { [Symbol.iterator]: f136639 };
+    let obj = { [Symbol.iterator]: f136637 };
     let obj2 = { optional, select };
     return Object.assign(Object.assign(tmp3, obj), obj2);
   }
-  const f136639 = () => {
+  const f136637 = () => {
     const fn = function t() {
       return globalThis.regeneratorRuntime.wrap((next) => {
         next = next.next;
@@ -3746,7 +3746,7 @@ merged5[2] = function array() {
       return obj;
     }
   };
-  let obj2 = { [Symbol.iterator]: f136639 };
+  let obj2 = { [Symbol.iterator]: f136637 };
   const obj3 = { optional, select };
   return Object.assign(Object.assign(obj, obj2), obj3);
 };
@@ -4215,7 +4215,7 @@ merged5[34] = function instanceOf(Value) {
     return obj;
   };
   closure_0 = Value;
-  const f136661 = (arg0) => arg0 instanceof f136661;
+  const f136659 = (arg0) => arg0 instanceof f136659;
   const obj = { [closure_1]: f90005 };
   const obj2 = {
     optional,

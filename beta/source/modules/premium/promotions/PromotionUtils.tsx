@@ -26,7 +26,7 @@ let closure_4, name, partner, set;
 let c10;
 let c9;
 let metroImportAll;
-const f114242 = (startDate, startDate2) => {
+const f114240 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -162,7 +162,7 @@ export const getNextUnseenOutboundPromotionId = function getNextUnseenOutboundPr
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f114242)[0].id;
+    id = found1.sort(f114240)[0].id;
   }
   return id;
 };
@@ -203,7 +203,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f114242)[0].id;
+    id = found1.sort(f114240)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

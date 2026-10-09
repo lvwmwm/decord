@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const f119410 = (item) => {
+const f119408 = (item) => {
   if (userSubscriptionRoles.getUserSubscriptionRoles(item).size > 0) {
     c1 = true;
   }
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       [obj] = items;
       const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
       let c1 = false;
-      const item = guildIdsWithPurchasableRoles.forEach(f119410);
+      const item = guildIdsWithPurchasableRoles.forEach(f119408);
       const tmp2 = c1;
       if (tmp2) {
         IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [obj] = items;
     const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
     let c1 = false;
-    const item = guildIdsWithPurchasableRoles.forEach(f119410);
+    const item = guildIdsWithPurchasableRoles.forEach(f119408);
     const tmp2 = c1;
     if (tmp2) {
       IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -87,7 +87,7 @@ function getUserRoleSubscriptionRelationship() {
   [obj] = tmp;
   const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
   let c1 = false;
-  const item = guildIdsWithPurchasableRoles.forEach(f119410);
+  const item = guildIdsWithPurchasableRoles.forEach(f119408);
   const tmp4 = c1;
   if (tmp4) {
     IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;

@@ -1598,10 +1598,10 @@ if (typeof globalThis.define === "function") {
         }
       }
       closure_0 = tmp2;
-      const f134791 = (arg0, arg1) => {
+      const f134789 = (arg0, arg1) => {
         let tmp2Result = arg1;
         const tmp = closure_0;
-        if (f134791) {
+        if (f134789) {
           tmp2Result = tmp2(arg0, arg1);
         }
         tmp[arg0] = tmp2Result;
@@ -1611,7 +1611,7 @@ if (typeof globalThis.define === "function") {
       tmp((arg0, arg1) => {
         let tmp2Result = arg1;
         const tmp = closure_0;
-        if (f134791) {
+        if (f134789) {
           tmp2Result = tmp2(arg0, arg1);
         }
         tmp[arg0] = tmp2Result;
@@ -1634,10 +1634,10 @@ if (typeof module === "object") {
       }
     }
     _self1 = tmp;
-    let f134791 = (arg0, arg1) => {
+    let f134789 = (arg0, arg1) => {
       let tmp2Result = arg1;
       const tmp = closure_0;
-      if (f134791) {
+      if (f134789) {
         tmp2Result = tmp2(arg0, arg1);
       }
       tmp[arg0] = tmp2Result;
@@ -1647,7 +1647,7 @@ if (typeof module === "object") {
     fn((arg0, arg1) => {
       let tmp2Result = arg1;
       const tmp = closure_0;
-      if (f134791) {
+      if (f134789) {
         tmp2Result = tmp2(arg0, arg1);
       }
       tmp[arg0] = tmp2Result;
@@ -1660,7 +1660,7 @@ _self1 = tmp;
 fn((arg0, arg1) => {
   let tmp2Result = arg1;
   const tmp = closure_0;
-  if (f134791) {
+  if (f134789) {
     tmp2Result = tmp2(arg0, arg1);
   }
   tmp[arg0] = tmp2Result;

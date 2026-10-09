@@ -196,7 +196,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   let tmp18;
   let tmp19;
   let tmp24Result2;
-  const f100365 = () => {
+  const f100363 = () => {
     let items1;
     const intl = intl8.intl;
     const string = intl.string;
@@ -312,9 +312,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const alertIfSecureFramesKeyInconsistent = obj10.useAlertIfSecureFramesKeyInconsistent(obj11);
   const items6 = [isUserSecureFramesVerified];
   const items7 = [isCurrentUserKeyPersistent, isOtherUserKeyPersistent, name];
-  [tmp18, tmp19] = fingerprint(fingerprintUserKey.useMemo(f100365, items6), 2);
+  [tmp18, tmp19] = fingerprint(fingerprintUserKey.useMemo(f100363, items6), 2);
   const items8 = [channelId, userId];
-  fingerprint(fingerprintUserKey.useMemo(f100365, items6), 2);
+  fingerprint(fingerprintUserKey.useMemo(f100363, items6), 2);
   const memo = fingerprintUserKey.useMemo(() => {
     const obj = SecureFramesUtils;
     const obj2 = { isCurrentUserKeyPersistent, isOtherUserKeyPersistent, otherUserNickname: name };

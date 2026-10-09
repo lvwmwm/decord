@@ -887,7 +887,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj11;
   let obj9;
   let status;
-  const f117300 = (classification) => {
+  const f117298 = (classification) => {
     const obj = { classification };
     return closure_1_11(ClassificationDetail, obj, classification.id);
   };
@@ -939,9 +939,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (opened) {
     const obj5 = { style: items5 };
     items5 = [tmp.separator];
-    const items6 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f117300), , , ];
+    const items6 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f117298), , , ];
     let tmp11Result = memo.length < classifications.length;
-    memo.length > 0 && memo.map(f117300);
+    memo.length > 0 && memo.map(f117298);
     if (tmp11Result) {
       const obj7 = { style: items7 };
       items7 = [tmp.separator];

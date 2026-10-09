@@ -38,7 +38,7 @@ let _require, importDefault, purchase_token_hash;
 
 let tmp;
 const actions_BillingActionCreators = tmp(5404);
-const f114841 = (timestamps) => {
+const f114839 = (timestamps) => {
   let obj2;
   let tmp8;
   timestamps = timestamps.timestamps;
@@ -61,10 +61,10 @@ const f114841 = (timestamps) => {
   }
   return tmp2;
 };
-const f114845 = (sessionId) => {
+const f114843 = (sessionId) => {
   let activities;
   let hidden_activities;
-  const obj = { sessionId: sessionId.session_id, lastModified: sessionId.last_modified, status: sessionId.status, activities: activities.map(f114841), hiddenActivities: hidden_activities, active: sessionId.active, clientInfo: sessionId.client_info };
+  const obj = { sessionId: sessionId.session_id, lastModified: sessionId.last_modified, status: sessionId.status, activities: activities.map(f114839), hiddenActivities: hidden_activities, active: sessionId.active, clientInfo: sessionId.client_info };
   activities = sessionId.activities;
   if (activities == null) {
     activities = [];
@@ -440,7 +440,7 @@ defineSimpleDispatch(["READY_SUPPLEMENTAL"], (arg0) => {
             hidden_activities = [];
           }
           const tmp2Result = tmp2(activities, hidden_activities);
-          const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114841), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
+          const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114839), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
           activities1 = tmp2Result.activities;
           return obj;
         });
@@ -462,7 +462,7 @@ defineSimpleDispatch(["READY_SUPPLEMENTAL"], (arg0) => {
           hidden_activities = [];
         }
         const tmp2Result = tmp2(activities, hidden_activities);
-        const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114841), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
+        const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114839), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
         activities1 = tmp2Result.activities;
         return obj;
       });
@@ -633,7 +633,7 @@ let result1 = definePreloadableDispatch(["READY"], (guilds) => {
           let regional_feature_config;
           let relationships;
           let sessions;
-          let obj = { type: "CONNECTION_OPEN", sessionId: user.session_id, authSessionIdHash: user.auth_session_id_hash, staticAuthSessionId: user.static_client_session_id, user: user.user, users: user.users, guilds, initialPrivateChannels, unavailableGuilds, readState: user.read_state, userGuildSettings: user.user_guild_settings, tutorial: user.tutorial, relationships, gameRelationships: user.game_relationships, friendSuggestionCount: user.friend_suggestion_count, analyticsToken: user.analytics_token, experiments: user.experiments, connectedAccounts: user.connected_accounts, guildExperiments: user.guild_experiments, apexExperiments: apex_experiments, requiredAction: user.required_action, consents: user.consents, sessions: sessions.map(f114845), pendingPayments: user.pending_payments, countryCode: country_code, guildJoinRequests: guild_join_requests, userSettingsProto: result, apiCodeVersion: user.api_code_version, auth: user.auth, notificationSettings: obj2, geoRestrictedGuilds, explicitContentScanVersion: user.explicit_content_scan_version, failedStates: user.failed_states, linkedUsers: linked_users, regionalFeatureConfig: regional_feature_config, qosToken: qos_token };
+          let obj = { type: "CONNECTION_OPEN", sessionId: user.session_id, authSessionIdHash: user.auth_session_id_hash, staticAuthSessionId: user.static_client_session_id, user: user.user, users: user.users, guilds, initialPrivateChannels, unavailableGuilds, readState: user.read_state, userGuildSettings: user.user_guild_settings, tutorial: user.tutorial, relationships, gameRelationships: user.game_relationships, friendSuggestionCount: user.friend_suggestion_count, analyticsToken: user.analytics_token, experiments: user.experiments, connectedAccounts: user.connected_accounts, guildExperiments: user.guild_experiments, apexExperiments: apex_experiments, requiredAction: user.required_action, consents: user.consents, sessions: sessions.map(f114843), pendingPayments: user.pending_payments, countryCode: country_code, guildJoinRequests: guild_join_requests, userSettingsProto: result, apiCodeVersion: user.api_code_version, auth: user.auth, notificationSettings: obj2, geoRestrictedGuilds, explicitContentScanVersion: user.explicit_content_scan_version, failedStates: user.failed_states, linkedUsers: linked_users, regionalFeatureConfig: regional_feature_config, qosToken: qos_token };
           relationships = user.relationships;
           if (relationships == null) {
             relationships = [];
@@ -1317,7 +1317,7 @@ defineSimpleDispatch(["GUILD_MEMBERS_CHUNK"], (arg0) => {
           hidden_activities = [];
         }
         const tmp2Result = tmp2(activities, hidden_activities);
-        const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114841), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
+        const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114839), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
         activities1 = tmp2Result.activities;
         return obj;
       });
@@ -1358,7 +1358,7 @@ defineSimpleDispatch(["THREAD_MEMBER_LIST_UPDATE"], (arg0) => {
           hidden_activities = [];
         }
         const tmp2Result = tmp2(activities, hidden_activities);
-        const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114841), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
+        const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114839), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
         activities1 = tmp2Result.activities;
         return obj;
       });
@@ -1638,7 +1638,7 @@ defineSimpleDispatch(["PRESENCE_UPDATE"], (hidden_activities) => {
     hidden_activities = [];
   }
   const tmpResult = tmp(activities, hidden_activities);
-  const obj = { user: hidden_activities.user, status: hidden_activities.status, clientStatus: hidden_activities.client_status, activities: activities1.map(f114841), hiddenActivities: tmpResult.hiddenActivities, guildId: guild_id, processedAtTimestamp: hidden_activities.processed_at_timestamp };
+  const obj = { user: hidden_activities.user, status: hidden_activities.status, clientStatus: hidden_activities.client_status, activities: activities1.map(f114839), hiddenActivities: tmpResult.hiddenActivities, guildId: guild_id, processedAtTimestamp: hidden_activities.processed_at_timestamp };
   activities1 = tmpResult.activities;
   importDefaultResult31.add(obj);
 });
@@ -1658,7 +1658,7 @@ defineSimpleDispatch(["PRESENCES_REPLACE"], (arr) => {
         hidden_activities = [];
       }
       const tmp2Result = tmp2(activities, hidden_activities);
-      const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114841), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
+      const obj = { user: activities.user, status: activities.status, clientStatus: activities.client_status, activities: activities1.map(f114839), hiddenActivities: tmp2Result.hiddenActivities, guildId: tmp, processedAtTimestamp: activities.processed_at_timestamp };
       activities1 = tmp2Result.activities;
       return obj;
     })
@@ -1673,7 +1673,7 @@ defineSimpleDispatch(["PRESENCES_REPLACE"], (arr) => {
   });
 });
 defineSimpleDispatch(["SESSIONS_REPLACE"], (arr) => {
-  const obj = { type: "SESSIONS_REPLACE", sessions: arr.map(f114845) };
+  const obj = { type: "SESSIONS_REPLACE", sessions: arr.map(f114843) };
   const obj2 = DispatcherDefault;
   const dispatchResult = obj2.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -2100,7 +2100,7 @@ defineSimpleDispatch(["GUILD_MEMBER_LIST_UPDATE"], (arg0) => {
             hidden_activities = [];
           }
           const tmp = tmp9(activities, hidden_activities);
-          let obj = { user: null, status: null, clientStatus: null, activities: activities1.map(f114841), hiddenActivities: tmp.hiddenActivities, guildId: guild_id, processedAtTimestamp: presence.processed_at_timestamp };
+          let obj = { user: null, status: null, clientStatus: null, activities: activities1.map(f114839), hiddenActivities: tmp.hiddenActivities, guildId: guild_id, processedAtTimestamp: presence.processed_at_timestamp };
           ({ user: obj.user, status: obj.status, client_status: obj.clientStatus } = presence);
           activities1 = tmp.activities;
           let tmp2 = set;

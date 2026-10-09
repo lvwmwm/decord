@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f129263 = (body) => {
+const f129261 = (body) => {
   let mapped;
   const items = body.body.items;
   const obj = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH_SUCCESS", guildId, topSoundsMetadata: mapped.sort((rank, rank2) => rank.rank - rank2.rank) };
@@ -24,7 +24,7 @@ const f129263 = (body) => {
   mapped = items.map((soundId) => ({ soundId: soundId.sound_id, rank: soundId.sound_rank }));
   return dispatch(obj);
 };
-const f129264 = () => {
+const f129262 = () => {
   const obj = DispatcherDefault;
   const obj2 = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH_FAILURE", guildId };
   return obj.dispatch(obj2);
@@ -56,7 +56,7 @@ export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundb
             const get = HTTP.get;
             const obj3 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(id), oldFormErrors: true, rejectWithError: true };
             const value = get(obj3);
-            value.then(f129263, f129264);
+            value.then(f129261, f129262);
           }
         }
       }
@@ -75,6 +75,6 @@ export const fetchTopSoundboardSounds = function fetchTopSoundboardSounds(guildI
     const get = HTTP.get;
     const obj4 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(guildId), oldFormErrors: true, rejectWithError: true };
     const value = get(obj4);
-    value.then(f129263, f129264);
+    value.then(f129261, f129262);
   }
 };

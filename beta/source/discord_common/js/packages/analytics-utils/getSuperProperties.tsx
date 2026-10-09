@@ -65,7 +65,7 @@ function getCachedSuperProperties() {
 }
 function getContextualSuperProperties() {
   let obj2;
-  obj = { client_build_number: parseInt("34910700000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
+  obj = { client_build_number: parseInt("34910800000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
   let buildNumber;
   if (DiscordNative != null) {
     const app = DiscordNative.app;

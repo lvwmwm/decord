@@ -37,7 +37,7 @@ export const reactRouterV3BrowserTracingIntegration = function reactRouterV3Brow
       if (_location) {
         let tmp5 = require;
         const _location2 = feedbackAsyncIntegration.WINDOW.location;
-        const f134637 = (name) => {
+        const f134635 = (name) => {
           let obj3;
           let str = arg1;
           if (arg1 === undefined) {
@@ -47,7 +47,7 @@ export const reactRouterV3BrowserTracingIntegration = function reactRouterV3Brow
           const obj = feedbackAsyncIntegration;
           obj3 = { [closure_3_0(closure_3_1[1]).SEMANTIC_ATTRIBUTE_SENTRY_OP]: "pageload", [closure_3_0(closure_3_1[1]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.pageload.react.reactrouter_v3" };
           obj3[_mod693.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] = str;
-          require = obj.startBrowserTracingPageLoadSpan(f134637, obj2);
+          require = obj.startBrowserTracingPageLoadSpan(f134635, obj2);
         };
         const pathname = _location2.pathname;
         let obj = { location: _location2, routes };

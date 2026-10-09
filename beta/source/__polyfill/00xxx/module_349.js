@@ -48,7 +48,7 @@ class ScrollView {
       return (nativeInstance) => {
         let tmp = null;
         if (null != nativeInstance) {
-          tmp = f133905(nativeInstance);
+          tmp = f133903(nativeInstance);
         }
         obj3.nativeInstance = nativeInstance;
         obj3.publicInstance = tmp;
@@ -249,12 +249,12 @@ class ScrollView {
         props.onContentSizeChange(tmp, tmp2);
       }
     };
-    const f133904 = (arg0) => arg0;
+    const f133902 = (arg0) => arg0;
     new Map();
     let obj2 = { getForwardingRef: memoizeOneDefault(f80945), nativeInstance: null, publicInstance: null };
     tmp3Result._innerView = obj2;
-    const f133905 = (arg0) => {
-      const obj = { getScrollResponder: f133905.getScrollResponder, getScrollableNode: f133905.getScrollableNode, getInnerViewNode: f133905.getInnerViewNode, getInnerViewRef: f133905.getInnerViewRef, getNativeScrollRef: f133905.getNativeScrollRef, scrollTo: f133905.scrollTo, scrollToEnd: f133905.scrollToEnd, flashScrollIndicators: f133905.flashScrollIndicators, scrollResponderZoomTo: f133905.scrollResponderZoomTo, scrollResponderScrollNativeHandleToKeyboard: f133905.scrollResponderScrollNativeHandleToKeyboard };
+    const f133903 = (arg0) => {
+      const obj = { getScrollResponder: f133903.getScrollResponder, getScrollableNode: f133903.getScrollableNode, getInnerViewNode: f133903.getInnerViewNode, getInnerViewRef: f133903.getInnerViewRef, getNativeScrollRef: f133903.getNativeScrollRef, scrollTo: f133903.scrollTo, scrollToEnd: f133903.scrollToEnd, flashScrollIndicators: f133903.flashScrollIndicators, scrollResponderZoomTo: f133903.scrollResponderZoomTo, scrollResponderScrollNativeHandleToKeyboard: f133903.scrollResponderScrollNativeHandleToKeyboard };
       return Object.assign(arg0, obj);
     };
     let obj3 = { getForwardingRef: memoizeOneDefault(f80945), nativeInstance: null, publicInstance: null };

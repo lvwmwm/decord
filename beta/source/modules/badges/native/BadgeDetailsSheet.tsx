@@ -49,8 +49,8 @@ let obj8;
 let obj9;
 let size;
 let unpackModuleId;
-const f105514 = (arr) => arr.some((badge_id) => badge_id.badge_id === closure_1_0);
-const f105515 = (badge_id) => badge_id.badge_id;
+const f105512 = (arr) => arr.some((badge_id) => badge_id.badge_id === closure_1_0);
+const f105513 = (badge_id) => badge_id.badge_id;
 let react = react_mod;
 ({ Platform, View: hasOwnProperty } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -1696,10 +1696,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeId) => {
             items1[0] = owned;
             items1[1] = tmp8;
           }
-          found = items1.find(() => { /* body not rendered: F105514 */ });
+          found = items1.find(() => { /* body not rendered: F105512 */ });
           tmp9 = null;
           if (null != found) {
-            mapped = found.map(() => { /* body not rendered: F105515 */ });
+            mapped = found.map(() => { /* body not rendered: F105513 */ });
           } else {
             mapped = [];
             mapped[0] = tmp;
@@ -1804,9 +1804,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeId) => {
       } else {
         items1 = [owned, tmp8];
       }
-      const found = items1.find(f105514);
+      const found = items1.find(f105512);
       if (null != found) {
-        mapped = found.map(f105515);
+        mapped = found.map(f105513);
       } else {
         mapped = [badgeId];
       }

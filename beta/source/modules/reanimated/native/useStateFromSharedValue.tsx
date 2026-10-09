@@ -258,11 +258,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cResult) => 
 }) : ((arg0, cResult) => {
   let closure_129_2;
   let tmp2;
-  const f95994 = () => current(closure_0.get(), undefined);
+  const f95992 = () => current(closure_0.get(), undefined);
   let closure_0 = arg0;
   let closure_1 = cResult;
-  [tmp2, closure_129_2] = react.useState(f95994);
-  _slicedToArray(react.useState(f95994), 2);
+  [tmp2, closure_129_2] = react.useState(f95992);
+  _slicedToArray(react.useState(f95992), 2);
   let closure_3 = react.useRef(cResult);
   const layoutEffect = react.useLayoutEffect(() => {
     closure_3.current = current;

@@ -147,11 +147,11 @@ function pruneNewChannels() {
   const obj = SnowflakeUtilsDefault;
   const keys = obj.keys(closure_16);
   const item = keys.forEach((item) => {
-    const f137933 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
+    const f137931 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
     let closure_0 = item;
     const items = [...closure_16[item]];
-    closure_16[item] = new Set(items.filter(f137933));
-    new Set(items.filter(f137933));
+    closure_16[item] = new Set(items.filter(f137931));
+    new Set(items.filter(f137931));
   });
 }
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;

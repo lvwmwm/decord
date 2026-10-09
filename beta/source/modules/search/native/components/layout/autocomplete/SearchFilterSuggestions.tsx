@@ -26,9 +26,9 @@ import size from "module_2" /* 2 */;
 let _require, dependencyMap, obj1, set, style, tmp3, token;
 
 let obj2;
-const f126636 = (text) => text.text;
+const f126634 = (text) => text.text;
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f126636);
+  const mapped = arr.map(f126634);
   return mapped.join(" ");
 }
 let closure_3 = ["text", "searchTokenType", "onPress"];
@@ -594,10 +594,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
               }
             });
             constants((arr) => {
-              const mapped = arr.map(f126636);
+              const mapped = arr.map(f126634);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f126636);
+              const mapped1 = closure_1.map(f126634);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }

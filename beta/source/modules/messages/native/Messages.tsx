@@ -2347,7 +2347,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let unloadedContentEntryMessageIds;
   let useReducedMotion;
   let version;
-  const f106323 = () => {
+  const f106321 = () => {
     const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
     return items;
   };
@@ -2627,8 +2627,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const stateFromStoresObject3 = tmpResult112.useStateFromStoresObject(items46, () => messageInteractionStates.getMessageInteractionStates());
   const items47 = [LocalInteractionComponentStateStore];
   const tmpResult113 = tmp(tmp2[61]);
-  [tmp66, tmp67] = guildId(tmpResult113.useStateFromStores(items47, f106323, [], tmp(tmp2[74]).isVersionEqual), 2);
-  guildId(tmpResult113.useStateFromStores(items47, f106323, [], tmp(tmp2[74]).isVersionEqual), 2);
+  [tmp66, tmp67] = guildId(tmpResult113.useStateFromStores(items47, f106321, [], tmp(tmp2[74]).isVersionEqual), 2);
+  guildId(tmpResult113.useStateFromStores(items47, f106321, [], tmp(tmp2[74]).isVersionEqual), 2);
   const items48 = [ExperimentStore];
   const tmpResult114 = tmp(tmp2[61]);
   let stateFromStores22 = tmpResult114.useStateFromStores(items48, () => hasLoadedExperiments.hasLoadedExperiments);

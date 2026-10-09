@@ -1,12 +1,13 @@
 // Module ID: 5787
 // Function ID: 5788
 // Name: MarkupRules
-// Dependencies: [32, 729, 2051, 2106, 2074, 1377, 1085, 5788, 5789, 5790, 1126, 5793, 2109, 5042, 4722, 5794, 1936, 5795, 5796, 5799, 4523, 5801, 5807, 5808, 5809, 5810, 5786, 5811, 12, 2]
+// Dependencies: [32, 729, 2051, 2106, 2074, 1377, 1085, 5788, 5789, 4885, 5790, 1126, 5793, 2109, 5042, 4722, 5794, 1936, 5795, 5796, 5799, 4523, 5801, 5807, 5808, 5809, 5810, 5786, 5811, 12, 2]
 // Exports: hydrateCommandMention
 
 // Module 5787 (MarkupRules)
 import intl2 from "intl" /* 1126 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
+import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 4885 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
@@ -457,6 +458,7 @@ const re15 = /^$|\n *$/;
 const re16 = /^ *>>> ?/;
 const re17 = /^ *> ?/gm;
 const re18 = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
+const regExp = new RegExp(HighlightJsAnsiLanguage.ANSI_CONTROL_SEQUENCE_RE, "g");
 let obj = { newline: module_1936.defaultRules.newline, paragraph: module_1936.defaultRules.paragraph, escape: obj2, blockQuote: obj3, link: MarkupLinkRuleDefault, autolink: obj4, mailto: obj5, tel: obj6, url: obj7, strong: module_1936.defaultRules.strong, em: module_1936.defaultRules.em, u: module_1936.defaultRules.u, br: module_1936.defaultRules.br, text: MarkupTextRuleDefault, inlineCode: obj8, emoticon: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["\u00AF"], match, parse }, codeBlock: { order: module_1936.defaultRules.codeBlock.order, requiredFirstCharacters: ["`"], match: match2, parse: parse2 }, roleMention: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match3, parse: parse3 }, mention: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<", "@"], match: match4, parse: parse4 }, silentPrefix: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["@"], match: match5, parse: parse5 }, channelMention: MarkupChannelMentionRuleDefault.channelMention, channelOrMessageUrl: MarkupChannelMentionRuleDefault.channelOrMessageUrl, mediaPostLink: MarkupChannelMentionRuleDefault.mediaPostLink, attachmentLink: MarkupAttachmentLinkRuleDefault.attachmentLink, commandMention: { order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match6, parse: parse6 }, timestampMentionInput: { order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match7, parse: parse7 }, gameMention: { order: module_1936.defaultRules.text.order, requiredFirstCharacters: ["<"], match: match8, parse: parse8 }, emoji: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: [":"], match: match9, parse: parse9 }, soundboard: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match10, parse: parse10 }, customEmoji: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match11, parse: parse11 }, timestamp: { order: MarkupTextRuleDefault.order - 1, requiredFirstCharacters: ["<"], match: match12, parse: parse12 }, s: obj21, spoiler: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["|"], match: match13, parse: parse13 }, staticRouteLink: { order: MarkupTextRuleDefault.order, requiredFirstCharacters: ["<"], match: match14, parse: parse14 }, heading: MarkupHeadingRuleDefault, list: MarkupListRuleDefault, subtext: MarkupSubtextRuleDefault };
 obj2 = {
   match(arg0, allowEscape, arg2) {
@@ -639,6 +641,14 @@ const obj24 = {
       const match = str.match(arg0, arg1, arg2);
       const tmp = importDefaultResult3Result;
       if (null != match) {
+        let formatted;
+        if (match[1] != null) {
+          formatted = str3.toLowerCase();
+        }
+        if ("ansi" === formatted) {
+          const obj = match[2];
+          match[2] = obj.replaceAll(regExp, "");
+        }
         return match;
       } else {
         const str2 = tmp.inlineCode;

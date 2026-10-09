@@ -12040,14 +12040,14 @@ try {
         const debounce = tmp4.debounce;
         let merged = Object.assign(obj2);
         this._debouncedFlush = debounce(() => self._flush(), flushMinDelay, obj3);
-        const f134514 = (timestamp, arg1) => {
+        const f134512 = (timestamp, arg1) => {
           let resolved;
           let flag = false;
-          if (f134514.eventBuffer) {
+          if (f134512.eventBuffer) {
             flag = false;
-            if (!f134514.isPaused()) {
+            if (!f134512.isPaused()) {
               flag = false;
-              if (f134514.isEnabled()) {
+              if (f134512.isEnabled()) {
                 timestamp = timestamp.timestamp;
                 let result = timestamp;
                 if (timestamp <= 9999999999) {

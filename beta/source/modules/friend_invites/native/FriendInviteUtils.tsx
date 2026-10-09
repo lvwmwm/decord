@@ -31,7 +31,7 @@ export const revokeAllFriendInvites = function revokeAllFriendInvites() {
   });
 };
 export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
-  const f130762 = () => closure_1_1(closure_1_2[7])();
+  const f130760 = () => closure_1_1(closure_1_2[7])();
   const tmp = null == invite.channel && null == invite.guild && null != invite.inviter;
   if (tmp) {
     let dMFromUserId = null;
@@ -42,7 +42,7 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
       const obj3 = InstantInviteActionCreatorsDefault;
       obj3.transitionToInvite(invite, { forceTransition: true });
       const obj4 = DispatcherDefault;
-      obj4.wait(f130762);
+      obj4.wait(f130760);
     } else {
       let obj = InstantInviteActionCreatorsDefault;
       const obj2 = {
@@ -62,7 +62,7 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, context) {
               const obj = { key: "FRIEND_INVITE_ACCEPT_CONFIRMATION", content: formatToPlainString(st2dcs, { username }), icon: AssetRegistryDefault };
               open(obj);
               const tmpResult = DispatcherDefault;
-              tmpResult.wait(f130762);
+              tmpResult.wait(f130760);
             }
       };
       const result = obj.acceptInviteAndTransitionToInviteChannel(obj2);

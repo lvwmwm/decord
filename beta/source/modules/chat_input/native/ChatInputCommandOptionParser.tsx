@@ -355,7 +355,7 @@ export const getUsernameHighlightNodes = function getUsernameHighlightNodes(chan
   const items = [];
   const obj = ApplicationCommandOptionValueParser;
   const users = obj.getUsers(channel);
-  const f108356 = (arg0) => arg0;
+  const f108354 = (arg0) => arg0;
   let match = re17.exec(arg1);
   const obj2 = re17;
   if (null != match) {
@@ -369,7 +369,7 @@ export const getUsernameHighlightNodes = function getUsernameHighlightNodes(chan
       match = obj2.exec(arg1);
     } while (null != match);
   }
-  const f108357 = (arg0) => arg0.split("#")[0];
+  const f108355 = (arg0) => arg0.split("#")[0];
   let match1 = re18.exec(arg1);
   const obj4 = re18;
   if (null != match1) {

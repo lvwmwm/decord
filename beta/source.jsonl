@@ -121,7 +121,7 @@
 { "file": "__polyfill/00xxx/module_105.js", "size": 8567 }
 { "file": "__polyfill/00xxx/module_107.js", "size": 3232 }
 { "file": "__polyfill/00xxx/module_115.js", "size": 1500 }
-{ "file": "__polyfill/00xxx/module_117.js", "size": 675341 }
+{ "file": "__polyfill/00xxx/module_117.js", "size": 675353 }
 { "file": "__polyfill/00xxx/module_12.js", "size": 10175141 }
 { "file": "__polyfill/00xxx/module_121.js", "size": 427 }
 { "file": "__polyfill/00xxx/module_124.js", "size": 2635 }
@@ -2045,7 +2045,7 @@
 { "file": "__vendor/00xxx/190_parseErrorStack.js", "size": 2093 }
 { "file": "__vendor/00xxx/192_parseHermesStack.js", "size": 2601 }
 { "file": "__vendor/00xxx/193_ExceptionsManager.js", "size": 314 }
-{ "file": "__vendor/00xxx/20_react.js", "size": 20374 }
+{ "file": "__vendor/00xxx/20_react.js", "size": 20386 }
 { "file": "__vendor/00xxx/201_BlobModule.js", "size": 300 }
 { "file": "__vendor/00xxx/206_byteLength.js", "size": 4261 }
 { "file": "__vendor/00xxx/21_Fragment.js", "size": 167 }
@@ -10971,7 +10971,7 @@
 { "file": "modules/collectibles/profile_frames/native/tooling/FrameOverrideConstants.tsx", "size": 389 }
 { "file": "modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideFrame.tsx", "size": 22572 }
 { "file": "modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideStore.tsx", "size": 14034 }
-{ "file": "modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx", "size": 24704 }
+{ "file": "modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx", "size": 25057 }
 { "file": "modules/collectibles/profile_frames/scaleProfileFrame.tsx", "size": 568 }
 { "file": "modules/collectibles/profile_frames/tooling/computeProfileFrameDimensions.tsx", "size": 2545 }
 { "file": "modules/collectibles/profile_frames/tooling/ProfileFrameLayerParser.tsx", "size": 5239 }
@@ -14012,7 +14012,7 @@
 { "file": "modules/markup/MarkupLiteralImageRule.tsx", "size": 668 }
 { "file": "modules/markup/MarkupReactLinkUtils.tsx", "size": 776 }
 { "file": "modules/markup/MarkupReactRules.native.tsx", "size": 76516 }
-{ "file": "modules/markup/MarkupRules.tsx", "size": 58479 }
+{ "file": "modules/markup/MarkupRules.tsx", "size": 58875 }
 { "file": "modules/markup/MarkupRulesUtils.tsx", "size": 758 }
 { "file": "modules/markup/MarkupSubtextRule.tsx", "size": 1201 }
 { "file": "modules/markup/MarkupTextRule.tsx", "size": 944 }

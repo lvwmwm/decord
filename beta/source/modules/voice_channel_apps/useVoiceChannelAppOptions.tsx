@@ -21,7 +21,7 @@ let _require, importDefault, map, name, set;
 
 let tmp2;
 const useGetOrFetchApplications = tmp2(6663);
-const f127899 = (application_id) => application_id.application_id;
+const f127897 = (application_id) => application_id.application_id;
 function voiceChannelAppCandidates(stateFromStoresArray, stateFromStoresArray1, guildId) {
   map = new Map();
   const items = [...stateFromStoresArray1];
@@ -303,7 +303,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
         const obj = closure_2_0(stateFromStoresArray1[5]);
         return !obj.isEmbeddedApplication(closure_0[index]);
       });
-      const mapped1 = found1.map(f127899);
+      const mapped1 = found1.map(f127897);
       cResult[18] = arr5;
       cResult[19] = tmp21;
       cResult[20] = mapped1;
@@ -361,7 +361,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(guildId
       const obj = closure_2_0(stateFromStoresArray1[5]);
       return !obj.isEmbeddedApplication(closure_0[index]);
     });
-    return found.map(f127899);
+    return found.map(f127897);
   }, items6);
   const items7 = [memo2];
   const effect1 = react.useEffect(() => {
@@ -618,7 +618,7 @@ function voiceChannelAppIdsToFetch(arr, arg1) {
     const obj = closure_2_0(stateFromStoresArray1[5]);
     return !obj.isEmbeddedApplication(closure_0[index]);
   });
-  return found.map(f127899);
+  return found.map(f127897);
 }
 let result = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelAppOptions.tsx");
 

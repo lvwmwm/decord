@@ -58,7 +58,7 @@ export default function createNativeWrapper(displayName) {
       merged = Object.assign(closure_1);
       obj.gestureHandlerProps = obj1;
       obj.childProps = { enabled: displayName.enabled, hitSlop: displayName.hitSlop, testID: displayName.testID };
-      reduced = reduce(() => { /* body not rendered: F137202 */ }, obj);
+      reduced = reduce(() => { /* body not rendered: F137200 */ }, obj);
       ({ gestureHandlerProps, childProps } = reduced);
       tmp3 = useRef(null);
       closure_1 = tmp3;
@@ -67,7 +67,7 @@ export default function createNativeWrapper(displayName) {
       items = [, ];
       items[0] = tmp3;
       items[1] = tmp4;
-      tmp5 = useImperativeHandle(displayName.ref, () => { /* body not rendered: F137203 */ }, items);
+      tmp5 = useImperativeHandle(displayName.ref, () => { /* body not rendered: F137201 */ }, items);
       obj5 = {};
       NativeViewGestureHandler = closure_0(closure_1[2]).NativeViewGestureHandler;
       merged1 = Object.assign(gestureHandlerProps);

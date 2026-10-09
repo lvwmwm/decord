@@ -13,7 +13,7 @@ import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6908 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const f122950 = (premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription;
+const f122948 = (premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let currentUser;
@@ -147,7 +147,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const tmpResult = tmp(1976);
       let isPremiumResult = tmpResult.isPremium(stateFromStores, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
-        isPremiumResult = stateFromStoresArray.some(f122950) || stateFromStores1.some((item) => {
+        isPremiumResult = stateFromStoresArray.some(f122948) || stateFromStores1.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -155,7 +155,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           return null != premiumSince;
         });
-        stateFromStoresArray.some(f122950) || stateFromStores1.some((item) => {
+        stateFromStoresArray.some(f122948) || stateFromStores1.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -191,7 +191,7 @@ export const getIsCurrentUserEligibleForPowerupUpsells = function getIsCurrentUs
       const obj3 = currentUser(1976);
       let isPremiumResult = obj3.isPremium(currentUser, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
-        isPremiumResult = items.some(f122950) || flattenedGuildIds.some((item) => {
+        isPremiumResult = items.some(f122948) || flattenedGuildIds.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -199,7 +199,7 @@ export const getIsCurrentUserEligibleForPowerupUpsells = function getIsCurrentUs
           }
           return null != premiumSince;
         });
-        items.some(f122950) || flattenedGuildIds.some((item) => {
+        items.some(f122948) || flattenedGuildIds.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {

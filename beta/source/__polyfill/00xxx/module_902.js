@@ -2391,8 +2391,8 @@ function Form(onSubmitError) {
     screenshotInput = first;
   }
   const items1 = [screenshotInput, onSubmitSuccess, onSubmitError];
-  const f134298 = function(arg0) {
-    return f134298(...arguments);
+  const f134296 = function(arg0) {
+    return f134296(...arguments);
   };
   c46 = 8;
   obj = { class: "form", onSubmit: tmp13(() => f82169, items1) };

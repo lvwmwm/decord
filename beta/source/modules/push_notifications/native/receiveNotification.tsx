@@ -37,7 +37,7 @@ let closure_12;
 let closure_14;
 let map1;
 let unpackModuleId;
-const f133152 = (arg0) => {
+const f133150 = (arg0) => {
   addPostConnectionCallback(arg0);
 };
 function onStageConnectionError() {
@@ -49,7 +49,7 @@ function onStageConnectionError() {
   open(obj);
 }
 function waitForConnection() {
-  const promise = new Promise(f133152);
+  const promise = new Promise(f133150);
   return promise;
 }
 function waitForDataOrConnection() {
@@ -1190,7 +1190,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -1364,7 +1364,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -1538,7 +1538,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -1712,7 +1712,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -1886,7 +1886,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -2060,7 +2060,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -2234,7 +2234,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -2408,7 +2408,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -2582,7 +2582,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;
@@ -2756,7 +2756,7 @@ function receiveNotification_(data) {
         case "FORUM_THREAD_CREATED":
         {
           let self = this;
-          fn = f133152;
+          fn = f133150;
           let self2 = this;
           promise = new Promise(fn);
           fn2 = f149503;

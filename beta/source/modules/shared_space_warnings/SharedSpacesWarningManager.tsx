@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f114979 = (item) => {
+const f114977 = (item) => {
   let flag = false;
   {
     let num = closure_1_6(item);
@@ -90,7 +90,7 @@ function handleAppStateChanged(state) {
           if (!everyResult) {
             const _Array = Array;
             const arr = Array.from(set);
-            everyResult = arr.every(f114979);
+            everyResult = arr.every(f114977);
           }
           if (!everyResult) {
             const items1 = [];
@@ -159,7 +159,7 @@ export const voiceBlockedWarningInCooldownForUsers = function voiceBlockedWarnin
   if (!everyResult) {
     const _Array = Array;
     const arr = Array.from(arg0);
-    everyResult = arr.every(f114979);
+    everyResult = arr.every(f114977);
   }
   return everyResult;
 };

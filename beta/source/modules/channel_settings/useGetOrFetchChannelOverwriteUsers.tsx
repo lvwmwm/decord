@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f128040 = (id) => id.id;
+const f128038 = (id) => id.id;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
     const values = Object.values(arg1);
     const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-    mapped = found.map(f128040);
+    mapped = found.map(f128038);
   }
   const tmp11Result = tmp11(mapped, tmp10);
   cResult[4] = stateFromStoresArray;
@@ -205,7 +205,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       const _Object = Object;
       const values = Object.values(tmp2);
       const found = values.filter((type) => type.type === closure_1_0(stateFromStoresArray[4]).PermissionOverwriteType.MEMBER);
-      items = found.map(f128040);
+      items = found.map(f128038);
     }
     return tmp(items, (arg0) => stateFromStoresArray.includes(arg0));
   }, items2), 2);
