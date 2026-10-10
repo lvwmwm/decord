@@ -1,18 +1,18 @@
-// Module ID: 17683
-// Function ID: 17684
+// Module ID: 17755
+// Function ID: 17756
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 5109, 5112, 5114, 558, 576, 11925, 8781, 573, 11094, 5136, 11035, 16582, 17684, 4768, 1126, 5001, 587, 2]
+// Dependencies: [19, 5110, 5113, 5115, 558, 576, 11969, 8798, 573, 11134, 5137, 11075, 16649, 17756, 4809, 1126, 6289, 587, 2]
 
-// Module 17683 (useVoicePanelCardUserStateIcons)
+// Module 17755 (useVoicePanelCardUserStateIcons)
 import intl6 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import CallConstants from "CallConstants" /* 5114 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8781 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11925 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17684 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import CallConstants from "CallConstants" /* 5115 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8798 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11969 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17756 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(11035);
-const useMuteAwareLocalVolumeDefault = tmp2(11094);
+const MobileAudioOutputExperimentDefault = tmp2(11075);
+const useMuteAwareLocalVolumeDefault = tmp2(11134);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON" };
 tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCardUserStateIcons(arg0, arg1, arg2, arg3) {
@@ -34,7 +34,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   let tmp14;
   let tmp17;
   _require = arg1;
-  let tmp = _require;
+  const tmp = _require;
   const tmp2 = setShowFloatingCTA;
   let obj = require("react");
   const cResult = obj.c(35);
@@ -84,7 +84,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
     let tmp19;
     let tmp20;
     let tmp24;
-    let tmp28;
+    let tmp29;
     if (cResult[4] === arg1) {
       tmp19 = cResult[5];
       tmp20 = cResult[6];
@@ -110,106 +110,82 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
     const tmpResult8 = tmp(tmp2[12]);
     const isRTCDisconnectedUIVisible = tmpResult8.useIsRTCDisconnectedUIVisible(tmp4, arg1);
     if (cResult[8] !== setShowFloatingCTA) {
-      const fn2 = function y() {
-        setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
-      };
+      class V {
+        constructor() {
+          setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
+        }
+      }
       cResult[8] = setShowFloatingCTA;
-      cResult[9] = fn2;
+      cResult[9] = V;
+    } else {
+      class V {
+        constructor() {
+          setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
+        }
+      }
     }
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class P {
+      class V {
         constructor() {
-          let intl;
-          const obj = { text: intl.string(closure_0(setShowFloatingCTA[15]).t.HFwRpk), icon: closure_0(setShowFloatingCTA[16]).CircleErrorIcon, iconColor: closure_1(setShowFloatingCTA[17]).colors.ICON_FEEDBACK_WARNING };
-          const openMana = closure_1(setShowFloatingCTA[14]).openMana;
-          closure_1(setShowFloatingCTA[14]);
-          intl = closure_0(setShowFloatingCTA[15]).intl;
-          openMana("user-disconnected-indicator", obj);
+          setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
         }
       }
-      cResult[10] = P;
+      cResult[10] = tmp28;
     } else {
-      class P {
+      class V {
         constructor() {
-          let intl;
-          const obj = { text: intl.string(closure_0(setShowFloatingCTA[15]).t.HFwRpk), icon: closure_0(setShowFloatingCTA[16]).CircleErrorIcon, iconColor: closure_1(setShowFloatingCTA[17]).colors.ICON_FEEDBACK_WARNING };
-          const openMana = closure_1(setShowFloatingCTA[14]).openMana;
-          closure_1(setShowFloatingCTA[14]);
-          intl = closure_0(setShowFloatingCTA[15]).intl;
-          openMana("user-disconnected-indicator", obj);
+          setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
         }
       }
     }
     if (stateFromStores) {
-      class P {
+      class V {
         constructor() {
-          let intl;
-          const obj = { text: intl.string(closure_0(setShowFloatingCTA[15]).t.HFwRpk), icon: closure_0(setShowFloatingCTA[16]).CircleErrorIcon, iconColor: closure_1(setShowFloatingCTA[17]).colors.ICON_FEEDBACK_WARNING };
-          const openMana = closure_1(setShowFloatingCTA[14]).openMana;
-          closure_1(setShowFloatingCTA[14]);
-          intl = closure_0(setShowFloatingCTA[15]).intl;
-          openMana("user-disconnected-indicator", obj);
+          setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
         }
       }
     } else {
-      class P {
+      class V {
         constructor() {
-          let intl;
-          const obj = { text: intl.string(closure_0(setShowFloatingCTA[15]).t.HFwRpk), icon: closure_0(setShowFloatingCTA[16]).CircleErrorIcon, iconColor: closure_1(setShowFloatingCTA[17]).colors.ICON_FEEDBACK_WARNING };
-          const openMana = closure_1(setShowFloatingCTA[14]).openMana;
-          closure_1(setShowFloatingCTA[14]);
-          intl = closure_0(setShowFloatingCTA[15]).intl;
-          openMana("user-disconnected-indicator", obj);
+          setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
         }
       }
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class P {
+        class V {
           constructor() {
-            let intl;
-            const obj = { text: intl.string(closure_0(setShowFloatingCTA[15]).t.HFwRpk), icon: closure_0(setShowFloatingCTA[16]).CircleErrorIcon, iconColor: closure_1(setShowFloatingCTA[17]).colors.ICON_FEEDBACK_WARNING };
-            const openMana = closure_1(setShowFloatingCTA[14]).openMana;
-            closure_1(setShowFloatingCTA[14]);
-            intl = closure_0(setShowFloatingCTA[15]).intl;
-            openMana("user-disconnected-indicator", obj);
+            setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
           }
         }
-        cResult[11] = tmp29;
-        tmp28 = tmp29;
+        cResult[11] = tmp30;
+        tmp29 = tmp30;
       } else {
-        class P {
+        class V {
           constructor() {
-            let intl;
-            const obj = { text: intl.string(closure_0(setShowFloatingCTA[15]).t.HFwRpk), icon: closure_0(setShowFloatingCTA[16]).CircleErrorIcon, iconColor: closure_1(setShowFloatingCTA[17]).colors.ICON_FEEDBACK_WARNING };
-            const openMana = closure_1(setShowFloatingCTA[14]).openMana;
-            closure_1(setShowFloatingCTA[14]);
-            intl = closure_0(setShowFloatingCTA[15]).intl;
-            openMana("user-disconnected-indicator", obj);
+            setShowFloatingCTA(VoicePanelFloatingCTAUtils.OverrideFloatingCTA.BAD_CONNECTION);
           }
         }
       }
     }
-    return tmp28;
+    return tmp29;
   }
-  class M {
-    constructor() {
-      let voicePlatformForChannel = null;
-      if (null != closure_1) {
-        voicePlatformForChannel = null;
-        if (null != closure_0) {
-          voicePlatformForChannel = VoiceStateStore.getVoicePlatformForChannel(tmp, tmp3);
-        }
+  const fn2 = function p() {
+    let voicePlatformForChannel = null;
+    if (null != closure_1) {
+      voicePlatformForChannel = null;
+      if (null != closure_0) {
+        voicePlatformForChannel = VoiceStateStore.getVoicePlatformForChannel(tmp, tmp3);
       }
-      return voicePlatformForChannel;
     }
-  }
+    return voicePlatformForChannel;
+  };
   const items2 = [tmp4, arg1];
   cResult[3] = tmp4;
   cResult[4] = arg1;
-  cResult[5] = M;
+  cResult[5] = fn2;
   cResult[6] = items2;
   tmp20 = items2;
-  tmp19 = M;
+  tmp19 = fn2;
 }) : (function useVoicePanelCardUserStateIcons(arg0, arg1, arg2) {
   let _null;
   let closure_0;
@@ -243,8 +219,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   }
   muteDeafenIconState = useMuteDeafenIconState(tmp7, arg2);
   let tmp10;
-  const useVideoIconState = tmp4(8781).useVideoIconState;
-  tmp4(8781);
+  const useVideoIconState = tmp4(8798).useVideoIconState;
+  tmp4(8798);
   if (arg0 === stateFromStores.USER) {
     tmp10 = arg1;
   }
@@ -270,7 +246,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   if (arg0 === stateFromStores.STREAM) {
     tmp15 = arg1;
   }
-  const effectiveVolume = tmp2Result(tmp15, tmp4(5136).MediaEngineContextTypes.STREAM).effectiveVolume;
+  const effectiveVolume = tmp2Result(tmp15, tmp4(5137).MediaEngineContextTypes.STREAM).effectiveVolume;
   const tmp2Result2 = MobileAudioOutputExperimentDefault;
   showTileVolumeIndicator = tmp2Result2.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
@@ -279,7 +255,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(16582);
+  const tmp4Result6 = tmp4(16649);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {
@@ -288,16 +264,16 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   callback1 = obj.useCallback(() => {
     let intl;
     const obj = { text: intl.string(closure_0(_null[15]).t.HFwRpk), icon: closure_0(_null[16]).CircleErrorIcon, iconColor: closure_1(_null[17]).colors.ICON_FEEDBACK_WARNING };
-    const openMana = closure_1(_null[14]).openMana;
+    const open = closure_1(_null[14]).open;
     closure_1(_null[14]);
     intl = closure_0(_null[15]).intl;
-    openMana("user-disconnected-indicator", obj);
+    open("user-disconnected-indicator", obj);
   }, []);
   const items4 = [stateFromStores, arg0, videoIconState, muteDeafenIconState, isRTCDisconnectedUIVisible, stateFromStores1, callback, arg1, callback1, showTileVolumeIndicator];
   return obj.useMemo(() => {
     let obj;
     let tmp15;
-    let tmp = stateFromStores;
+    const tmp = stateFromStores;
     if (tmp) {
       if (closure_0 === ParticipantTypes.STREAM) {
         const items = [];
@@ -307,11 +283,12 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
             type: obj.SPEAKER_MUTE_ICON,
             onPress() {
                     let intl;
-                    const tmp = closure_1(c2[14]);
-                    const open = tmp.open;
-                    const obj = { key: "" + closure_1_1 + "-stream-status", content: intl.string(closure_0(c2[15]).t.Q8Uzof) };
+                    const open = closure_1(c2[14]).open;
+                    const obj = { text: intl.string(closure_0(c2[15]).t.Q8Uzof) };
+                    closure_1(c2[14]);
+                    const combined = "" + closure_1_1 + "-stream-status";
                     intl = closure_0(c2[15]).intl;
-                    open(obj);
+                    open(combined, obj);
                   }
           };
           items.push(obj2);
@@ -354,39 +331,44 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
                     let intl5;
                     if (closure_0(c2[7]).MuteDeafenIconState.DEAFENED_SERVER === muteDeafenIconState) {
                       const _HermesInternal4 = HermesInternal;
-                      const obj2 = { key: "" + closure_1_1 + "-status", content: intl4.string(closure_0(c2[15]).t.btxSdB) };
                       const open4 = closure_1(c2[14]).open;
+                      const obj2 = { text: intl4.string(closure_0(c2[15]).t.btxSdB) };
                       closure_1(c2[14]);
+                      const combined = "" + closure_1_1 + "-status";
                       intl4 = tmp2(tmp3[15]).intl;
-                      open4(obj2);
+                      open4(combined, obj2);
                     } else if (closure_0(c2[7]).MuteDeafenIconState.DEAFENED === muteDeafenIconState) {
                       const _HermesInternal3 = HermesInternal;
-                      const obj3 = { key: "" + closure_1_1 + "-status", content: intl3.string(closure_0(c2[15]).t.NjmiOL) };
                       const open3 = closure_1(c2[14]).open;
+                      const obj3 = { text: intl3.string(closure_0(c2[15]).t.NjmiOL) };
                       closure_1(c2[14]);
+                      const combined1 = "" + closure_1_1 + "-status";
                       intl3 = tmp2(tmp3[15]).intl;
-                      open3(obj3);
+                      open3(combined1, obj3);
                     } else if (closure_0(c2[7]).MuteDeafenIconState.MUTED_SERVER === muteDeafenIconState) {
                       const _HermesInternal2 = HermesInternal;
-                      const obj4 = { key: "" + closure_1_1 + "-status", content: intl2.string(closure_0(c2[15]).t.uLddbQ) };
                       const open2 = closure_1(c2[14]).open;
+                      const obj4 = { text: intl2.string(closure_0(c2[15]).t.uLddbQ) };
                       closure_1(c2[14]);
+                      const combined2 = "" + closure_1_1 + "-status";
                       intl2 = tmp2(tmp3[15]).intl;
-                      open2(obj4);
+                      open2(combined2, obj4);
                     } else if (closure_0(c2[7]).MuteDeafenIconState.MUTED_LOCAL === muteDeafenIconState) {
                       const _HermesInternal = HermesInternal;
-                      const obj = { key: "" + closure_1_1 + "-status", content: intl.string(closure_0(c2[15]).t.Q8Uzof) };
                       const open = closure_1(c2[14]).open;
+                      const obj = { text: intl.string(closure_0(c2[15]).t.Q8Uzof) };
                       closure_1(c2[14]);
+                      const combined3 = "" + closure_1_1 + "-status";
                       intl = tmp2(tmp3[15]).intl;
-                      open(obj);
+                      open(combined3, obj);
                     } else if (closure_0(c2[7]).MuteDeafenIconState.MUTED === muteDeafenIconState) {
                       const _HermesInternal5 = HermesInternal;
-                      const obj5 = { key: "" + closure_1_1 + "-status", content: intl5.string(closure_0(c2[15]).t.tjtv3P) };
                       const open5 = closure_1(c2[14]).open;
+                      const obj5 = { text: intl5.string(closure_0(c2[15]).t.tjtv3P) };
                       closure_1(c2[14]);
+                      const combined4 = "" + closure_1_1 + "-status";
                       intl5 = tmp2(tmp3[15]).intl;
-                      open5(obj5);
+                      open5(combined4, obj5);
                     }
                   }
           };

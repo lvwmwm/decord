@@ -1,30 +1,30 @@
-// Module ID: 5106
-// Function ID: 5107
+// Module ID: 5107
+// Function ID: 5108
 // Name: AppAnalyticsUtils
-// Dependencies: [2068, 502, 2064, 4707, 4981, 2124, 2118, 2086, 2012, 4709, 5107, 5109, 4719, 2115, 4900, 5112, 1085, 2071, 4714, 1097, 13983, 1265, 12, 2]
+// Dependencies: [2069, 502, 2065, 4748, 5020, 2125, 2119, 2087, 2012, 4750, 5108, 5110, 4760, 2116, 4939, 5113, 1085, 2072, 4755, 1097, 14038, 1265, 12, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getCustomStatusMetadata, getRecipientFriendCounts, getVoiceStateMetadata, trackWithMetadata
 
-// Module 5106 (AppAnalyticsUtils)
+// Module 5107 (AppAnalyticsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
-import ChannelConstants from "ChannelConstants" /* 2071 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4714 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4707 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4981 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4748 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import PresenceStore from "PresenceStore" /* 5107 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -278,7 +278,7 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
         }
       });
       const merged = Object.assign(obj3);
-      const obj4 = id(13983);
+      const obj4 = id(14038);
       const merged1 = Object.assign(obj4.getVoiceAnalyticsMetadataAdditional());
       return obj;
     }

@@ -1,24 +1,24 @@
-// Module ID: 5756
-// Function ID: 5757
+// Module ID: 5759
+// Function ID: 5760
 // Name: SelfPresenceStore
-// Dependencies: [5757, 1244, 2037, 5885, 7106, 10613, 5107, 5111, 1085, 7108, 2041, 1403, 10223, 1355, 12, 504, 584, 2]
+// Dependencies: [5760, 1244, 2037, 5888, 7112, 10647, 5108, 5112, 1085, 7114, 2041, 1403, 10252, 1355, 12, 504, 584, 2]
 
-// Module 5756 (SelfPresenceStore)
+// Module 5759 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1355 from "module_1355" /* 1355 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import PresenceStore2 from "PresenceStore" /* 5107 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7108 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10223 */;
-import SpotifyStore from "SpotifyStore" /* 5757 */;
+import PresenceStore2 from "PresenceStore" /* 5108 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7114 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10252 */;
+import SpotifyStore from "SpotifyStore" /* 5760 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import DetectableGameStore from "DetectableGameStore" /* 2037 */;
-import IdleStore from "IdleStore" /* 5885 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7106 */;
-import LocalActivityStore from "LocalActivityStore" /* 10613 */;
-import SessionsStore from "SessionsStore" /* 5111 */;
+import IdleStore from "IdleStore" /* 5888 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7112 */;
+import LocalActivityStore from "LocalActivityStore" /* 10647 */;
+import SessionsStore from "SessionsStore" /* 5112 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -191,7 +191,7 @@ let c16 = false;
 let num = 0;
 let found = [];
 let activities = [];
-const authStore7 = false;
+const authStore6 = false;
 let c23 = true;
 let remoteActivities = Object.freeze([]);
 let hiddenActivities = Object.freeze([]);

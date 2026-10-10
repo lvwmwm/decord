@@ -1,9 +1,9 @@
-// Module ID: 9781
-// Function ID: 9782
+// Module ID: 9810
+// Function ID: 9811
 // Name: AgeRestrictedApplicationCommandsExperiment
 // Dependencies: [1454, 2]
 
-// Module 9781 (AgeRestrictedApplicationCommandsExperiment)
+// Module 9810 (AgeRestrictedApplicationCommandsExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import size from "module_2" /* 2 */;
 

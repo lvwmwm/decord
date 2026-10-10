@@ -1,10 +1,10 @@
-// Module ID: 7282
-// Function ID: 7283
+// Module ID: 7289
+// Function ID: 7290
 // Name: CollectiblesMarketingCoachmarkRecord
-// Dependencies: [7280, 2]
+// Dependencies: [7287, 2]
 
-// Module 7282 (CollectiblesMarketingCoachmarkRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7280 */;
+// Module 7289 (CollectiblesMarketingCoachmarkRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingCoachmarkRecord {
@@ -31,6 +31,26 @@ class CollectiblesMarketingCoachmarkRecord {
       const obj2 = Object.create(CollectiblesMarketingCoachmarkRecord.prototype);
       obj2.type = CollectiblesMarketingType.CollectiblesMarketingType.COACHMARK;
       ({ title: tmp4.title, body: tmp4.body, assetDark: tmp4.assetDark, assetLight: tmp4.assetLight, version: tmp4.version, refTargetBackground: tmp4.refTargetBackground, badgeIcon: tmp4.badgeIcon, badgeText: tmp4.badgeText, badgeCountdownEndsAt: tmp4.badgeCountdownEndsAt, buttonLabel: tmp4.buttonLabel, showHoverGradient: tmp4.showHoverGradient, displayType: tmp4.displayType } = obj);
+      return obj2;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+  static fromPersisted(badgeCountdownEndsAt) {
+    let date;
+    const obj = { badgeCountdownEndsAt: date };
+    const merged = Object.assign(badgeCountdownEndsAt);
+    date = undefined;
+    if (null != badgeCountdownEndsAt.badgeCountdownEndsAt) {
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      date = new Date(badgeCountdownEndsAt.badgeCountdownEndsAt);
+    }
+    if (typeof CollectiblesMarketingCoachmarkRecord === "function") {
+      const obj2 = Object.create(CollectiblesMarketingCoachmarkRecord.prototype);
+      obj2.type = CollectiblesMarketingType.CollectiblesMarketingType.COACHMARK;
+      ({ title: tmp5.title, body: tmp5.body, assetDark: tmp5.assetDark, assetLight: tmp5.assetLight, version: tmp5.version, refTargetBackground: tmp5.refTargetBackground, badgeIcon: tmp5.badgeIcon, badgeText: tmp5.badgeText, badgeCountdownEndsAt: tmp5.badgeCountdownEndsAt, buttonLabel: tmp5.buttonLabel, showHoverGradient: tmp5.showHoverGradient, displayType: tmp5.displayType } = obj);
       return obj2;
     } else {
       throw new TypeError("Trying to call a non-function");

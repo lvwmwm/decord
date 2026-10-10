@@ -1,16 +1,16 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15754
+// Function ID: 15755
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 7974, 5304, 1126, 5052, 4768, 10629, 1382, 1105, 2]
+// Dependencies: [5, 7992, 5305, 1126, 5053, 4809, 10663, 1382, 1105, 2]
 
-// Module 15692 (ClearWebBrowserDataSetting)
+// Module 15754 (ClearWebBrowserDataSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import BrowserManager from "BrowserManager" /* 5052 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
+import BrowserManager from "BrowserManager" /* 5053 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,7 +56,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -84,13 +84,13 @@ let obj = {
             const obj = { value, done: true };
             return obj;
           } else {
-            const obj6 = { key: "web-browser-data-cleared", content: intl.string(tmp3(c2[3]).t["zaEQz+"]) };
+            const obj6 = { text: intl.string(tmp3(c2[3]).t["zaEQz+"]) };
             const open = c1(c2[5]).open;
             const tmp13 = c1(c2[5]);
             intl = tmp3(c2[3]).intl;
-            open(obj6);
+            open("web-browser-data-cleared", obj6);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp6) {
           c2 = 3;

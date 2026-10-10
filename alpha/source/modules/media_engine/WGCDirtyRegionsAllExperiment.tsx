@@ -1,9 +1,9 @@
-// Module ID: 14239
-// Function ID: 14240
+// Module ID: 14294
+// Function ID: 14295
 // Name: WGCDirtyRegionsAllExperiment
 // Dependencies: [1453, 2]
 
-// Module 14239 (WGCDirtyRegionsAllExperiment)
+// Module 14294 (WGCDirtyRegionsAllExperiment)
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

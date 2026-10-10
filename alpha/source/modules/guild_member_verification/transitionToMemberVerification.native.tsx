@@ -1,16 +1,16 @@
-// Module ID: 6108
-// Function ID: 6109
+// Module ID: 6101
+// Function ID: 6102
 // Name: transitionToMemberVerification
-// Dependencies: [2086, 4901, 1112, 4903, 6109, 6151, 2]
+// Dependencies: [2087, 4940, 1112, 4942, 6102, 6144, 2]
 // Exports: transitionToMemberVerification
 
-// Module 6108 (transitionToMemberVerification)
+// Module 6101 (transitionToMemberVerification)
 import router_utils from "router_utils" /* 1112 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4903 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6109 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6151 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4901 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6102 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6144 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_member_verification/transitionToMemberVerification.native.tsx");

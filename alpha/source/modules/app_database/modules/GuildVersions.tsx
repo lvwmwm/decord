@@ -1,15 +1,15 @@
-// Module ID: 7335
-// Function ID: 7336
+// Module ID: 7341
+// Function ID: 7342
 // Name: GuildVersions
-// Dependencies: [32, 5, 2086, 3, 2090, 1388, 2]
+// Dependencies: [32, 5, 2087, 3, 2091, 1388, 2]
 
-// Module 7335 (GuildVersions)
+// Module 7341 (GuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;
@@ -78,7 +78,7 @@ class GuildVersions {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;

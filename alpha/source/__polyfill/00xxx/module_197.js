@@ -45,8 +45,8 @@ let tmp2 = ((arg0) => {
       const obj = {
         value: function enqueue(arg0, arg1) {
           let nextPromise;
-          const f156138 = (arg0, fn) => {
-            const f151740 = (result) => {
+          const f156593 = (arg0, fn) => {
+            const f152203 = (result) => {
               const tmp2 = closure_1_6(closure_2_0.next, closure_2_0, result);
               const tmp = closure_1;
               if ("throw" !== tmp2.type) {
@@ -56,7 +56,7 @@ let tmp2 = ((arg0) => {
                   if (typeof value === "object") {
                     if (closure_1.call(value, "__await")) {
                       const resolveResult = closure_2_1.resolve(value.__await);
-                      resolveResult.then(f151740, f151741);
+                      resolveResult.then(f152203, f152204);
                     }
                   }
                 }
@@ -64,12 +64,12 @@ let tmp2 = ((arg0) => {
                 resolveResult1.then((value) => {
                   iter.value = value;
                   closure_0(iter);
-                }, f151743);
+                }, f152206);
               } else {
                 tmp(tmp2.arg);
               }
             };
-            const f151741 = (arg0) => {
+            const f152204 = (arg0) => {
               const tmp2 = closure_1_6(closure_2_0.throw, closure_2_0, arg0);
               const tmp = closure_1;
               if ("throw" !== tmp2.type) {
@@ -79,7 +79,7 @@ let tmp2 = ((arg0) => {
                   if (typeof value === "object") {
                     if (closure_1.call(value, "__await")) {
                       const resolveResult = closure_2_1.resolve(value.__await);
-                      resolveResult.then(f151740, f151741);
+                      resolveResult.then(f152203, f152204);
                     }
                   }
                 }
@@ -87,12 +87,12 @@ let tmp2 = ((arg0) => {
                 resolveResult1.then((value) => {
                   iter.value = value;
                   closure_0(iter);
-                }, f151743);
+                }, f152206);
               } else {
                 tmp(tmp2.arg);
               }
             };
-            const f151743 = (arg0) => {
+            const f152206 = (arg0) => {
               let tmp4;
               const tmp2 = closure_1_6(closure_2_0.throw, closure_2_0, arg0);
               const tmp = closure_1;
@@ -103,7 +103,7 @@ let tmp2 = ((arg0) => {
                   if (typeof value === "object") {
                     if (closure_1.call(value, "__await")) {
                       const resolveResult = closure_2_1.resolve(value.__await);
-                      nextPromise = resolveResult.then(f151740, f151741);
+                      nextPromise = resolveResult.then(f152203, f152204);
                     }
                     tmp4 = nextPromise;
                   }
@@ -112,7 +112,7 @@ let tmp2 = ((arg0) => {
                 nextPromise = resolveResult1.then((value) => {
                   iter.value = value;
                   closure_0(iter);
-                }, f151743);
+                }, f152206);
               } else {
                 tmp(tmp2.arg);
               }
@@ -128,7 +128,7 @@ let tmp2 = ((arg0) => {
                 if (typeof value === "object") {
                   if (closure_1_1.call(value, "__await")) {
                     let resolveResult = closure_1.resolve(value.__await);
-                    nextPromise = resolveResult.then(f151740, f151741);
+                    nextPromise = resolveResult.then(f152203, f152204);
                   }
                 }
               }
@@ -136,7 +136,7 @@ let tmp2 = ((arg0) => {
               resolveResult1.then((value) => {
                 iter.value = value;
                 closure_0(iter);
-              }, f151743);
+              }, f152206);
             } else {
               let tmp2 = fn(tmp.arg);
             }
@@ -145,7 +145,7 @@ let tmp2 = ((arg0) => {
           closure_1 = arg1;
           if (nextPromise) {
             function callInvokeWithMethodAndArg() {
-              let tmp = new _Promise(f156138);
+              let tmp = new _Promise(f156593);
               return tmp;
             }
             nextPromise = promise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
@@ -153,7 +153,7 @@ let tmp2 = ((arg0) => {
             let tmp = closure_1;
             const self = this;
             const self2 = this;
-            nextPromise = new closure_1(f156138);
+            nextPromise = new closure_1(f156593);
           }
           return nextPromise;
         }
@@ -246,7 +246,7 @@ let tmp2 = ((arg0) => {
     }
   }
   function doneResult() {
-    return { value: "IconComponent", done: null };
+    return { value: "IconComponent", done: "+51" };
   }
   hasOwnProperty = prototype.hasOwnProperty;
   let tmp = Object.defineProperty || ((arg0, arg1, value) => {
@@ -338,7 +338,7 @@ let tmp2 = ((arg0) => {
           if ("throw" === method) {
             throw arg;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           obj.method = method;
@@ -506,7 +506,7 @@ let tmp2 = ((arg0) => {
           if ("throw" === method) {
             throw arg;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           obj.method = method;
@@ -571,8 +571,8 @@ let tmp2 = ((arg0) => {
     const obj6 = {
       value: function enqueue(arg0, arg1) {
         let nextPromise;
-        const f156138 = (arg0, fn) => {
-          const f151740 = (result) => {
+        const f156593 = (arg0, fn) => {
+          const f152203 = (result) => {
             const tmp2 = closure_1_6(closure_2_0.next, closure_2_0, result);
             const tmp = closure_1;
             if ("throw" !== tmp2.type) {
@@ -582,7 +582,7 @@ let tmp2 = ((arg0) => {
                 if (typeof value === "object") {
                   if (closure_1.call(value, "__await")) {
                     const resolveResult = closure_2_1.resolve(value.__await);
-                    resolveResult.then(f151740, f151741);
+                    resolveResult.then(f152203, f152204);
                   }
                 }
               }
@@ -590,12 +590,12 @@ let tmp2 = ((arg0) => {
               resolveResult1.then((value) => {
                 iter.value = value;
                 closure_0(iter);
-              }, f151743);
+              }, f152206);
             } else {
               tmp(tmp2.arg);
             }
           };
-          const f151741 = (arg0) => {
+          const f152204 = (arg0) => {
             const tmp2 = closure_1_6(closure_2_0.throw, closure_2_0, arg0);
             const tmp = closure_1;
             if ("throw" !== tmp2.type) {
@@ -605,7 +605,7 @@ let tmp2 = ((arg0) => {
                 if (typeof value === "object") {
                   if (closure_1.call(value, "__await")) {
                     const resolveResult = closure_2_1.resolve(value.__await);
-                    resolveResult.then(f151740, f151741);
+                    resolveResult.then(f152203, f152204);
                   }
                 }
               }
@@ -613,12 +613,12 @@ let tmp2 = ((arg0) => {
               resolveResult1.then((value) => {
                 iter.value = value;
                 closure_0(iter);
-              }, f151743);
+              }, f152206);
             } else {
               tmp(tmp2.arg);
             }
           };
-          const f151743 = (arg0) => {
+          const f152206 = (arg0) => {
             let tmp4;
             const tmp2 = closure_1_6(closure_2_0.throw, closure_2_0, arg0);
             const tmp = closure_1;
@@ -629,7 +629,7 @@ let tmp2 = ((arg0) => {
                 if (typeof value === "object") {
                   if (closure_1.call(value, "__await")) {
                     const resolveResult = closure_2_1.resolve(value.__await);
-                    nextPromise = resolveResult.then(f151740, f151741);
+                    nextPromise = resolveResult.then(f152203, f152204);
                   }
                   tmp4 = nextPromise;
                 }
@@ -638,7 +638,7 @@ let tmp2 = ((arg0) => {
               nextPromise = resolveResult1.then((value) => {
                 iter.value = value;
                 closure_0(iter);
-              }, f151743);
+              }, f152206);
             } else {
               tmp(tmp2.arg);
             }
@@ -654,7 +654,7 @@ let tmp2 = ((arg0) => {
               if (typeof value === "object") {
                 if (closure_1_1.call(value, "__await")) {
                   let resolveResult = closure_1.resolve(value.__await);
-                  nextPromise = resolveResult.then(f151740, f151741);
+                  nextPromise = resolveResult.then(f152203, f152204);
                 }
               }
             }
@@ -662,7 +662,7 @@ let tmp2 = ((arg0) => {
             resolveResult1.then((value) => {
               iter.value = value;
               closure_0(iter);
-            }, f151743);
+            }, f152206);
           } else {
             let tmp2 = fn(tmp.arg);
           }
@@ -671,7 +671,7 @@ let tmp2 = ((arg0) => {
         closure_1 = arg1;
         if (nextPromise) {
           function callInvokeWithMethodAndArg() {
-            let tmp = new _Promise(f156138);
+            let tmp = new _Promise(f156593);
             return tmp;
           }
           nextPromise = promise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
@@ -679,7 +679,7 @@ let tmp2 = ((arg0) => {
           let tmp = closure_1;
           const self = this;
           const self2 = this;
-          nextPromise = new closure_1(f156138);
+          nextPromise = new closure_1(f156593);
         }
         return nextPromise;
       }

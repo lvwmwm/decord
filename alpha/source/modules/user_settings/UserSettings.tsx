@@ -1,7 +1,7 @@
 // Module ID: 2041
 // Function ID: 2042
 // Name: UserSettings
-// Dependencies: [2042, 1095, 2043, 1085, 2044, 2045, 1240, 1209, 568, 9286, 12, 504, 5919, 6991, 1249, 2]
+// Dependencies: [2042, 1095, 2043, 1085, 2044, 2045, 1240, 1209, 568, 9313, 12, 504, 5921, 6997, 1249, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
 // Module 2041 (UserSettings)
@@ -12,9 +12,9 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import wrappers from "wrappers" /* 1240 */;
 import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1249 */;
 import StickersConstants from "StickersConstants" /* 2044 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5919 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6991 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9286 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6997 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9313 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2042 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 2043 */;

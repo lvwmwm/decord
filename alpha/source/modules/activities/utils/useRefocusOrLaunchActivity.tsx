@@ -1,15 +1,15 @@
-// Module ID: 12921
-// Function ID: 12922
+// Module ID: 12969
+// Function ID: 12970
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 10772, 2063, 10767, 6849, 504, 10768, 10769, 10814, 11566, 2]
+// Dependencies: [5, 19, 10807, 2064, 10802, 6852, 504, 10803, 10804, 10824, 11612, 2]
 // Exports: default
 
-// Module 12921 (useRefocusOrLaunchActivity)
+// Module 12969 (useRefocusOrLaunchActivity)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 10772 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
-import FramesConstants from "FramesConstants" /* 10767 */;
+import FramesStore from "FramesStore" /* 10807 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import FramesConstants from "FramesConstants" /* 10802 */;
 import size from "module_2" /* 2 */;
 
 let c5;
@@ -52,7 +52,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -133,7 +133,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else if (1 === runBeforeLaunchAttempt) {
           c4 = 0;

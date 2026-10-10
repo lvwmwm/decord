@@ -1,14 +1,14 @@
-// Module ID: 18333
-// Function ID: 18334
+// Module ID: 18407
+// Function ID: 18408
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 8622, 1085, 21, 558, 576, 4779, 587, 18334, 504, 18335, 8621, 5087, 1126, 6163, 6889, 6269, 18344, 5374, 18332, 2]
+// Dependencies: [32, 19, 17, 8638, 1085, 21, 558, 576, 4818, 587, 18408, 504, 18409, 8637, 5088, 1126, 6156, 6895, 6264, 18418, 5377, 18406, 2]
 
-// Module 18333 (SafetyCheckScreen)
+// Module 18407 (SafetyCheckScreen)
 import react_native from "react-native" /* 17 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8621 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8622 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8638 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

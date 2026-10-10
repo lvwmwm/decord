@@ -1,24 +1,24 @@
-// Module ID: 7334
-// Function ID: 7335
+// Module ID: 7340
+// Function ID: 7341
 // Name: GuildsRequiringChannelSync
-// Dependencies: [2068, 502, 2064, 2124, 2118, 2086, 4709, 1085, 2071, 1096, 1097, 3, 2090, 4699, 1279, 1265, 1403, 2]
+// Dependencies: [2069, 502, 2065, 2125, 2119, 2087, 4750, 1085, 2072, 1096, 1097, 3, 2091, 4740, 1279, 1265, 1403, 2]
 
-// Module 7334 (GuildsRequiringChannelSync)
+// Module 7340 (GuildsRequiringChannelSync)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import v1 from "v1" /* 1279 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import ChannelConstants from "ChannelConstants" /* 2071 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4699 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4740 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;
@@ -35,9 +35,9 @@ const ChannelFlags = ChannelConstants.ChannelFlags;
 const Permissions = Constants2.Permissions;
 let closure_15 = BigFlagUtils.combine(Permissions.VIEW_CHANNEL, Permissions.ADMINISTRATOR);
 let tmp4 = new LoggerDefault("GuildsRequiringChannelSync");
-const authStore5 = tmp4;
+const authStore4 = tmp4;
 let closure_17 = { NewGuild: "new_guild", OwnershipChange: "ownership_change", RolePermissions: "role_permissions", RoleSubscriptionTags: "role_subscription_tags", MemberRoles: "member_roles", ChannelVisibleParentHidden: "channel_visible_parent_hidden", Unknown: "unknown" };
-const authStore6 = { ConnectionOpen: "connection_open", GuildCreate: "guild_create", BackgroundSync: "background_sync" };
+const authStore5 = { ConnectionOpen: "connection_open", GuildCreate: "guild_create", BackgroundSync: "background_sync" };
 class GuildsRequiringChannelSync {
   constructor() {
     const obj = Object.create(new.target.prototype);
@@ -120,7 +120,7 @@ class GuildsRequiringChannelSync {
       let obj3 = PremiumRoleUtils;
       let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
       if (isSubscriptionRoleResult1) {
-        let tmp6Result = tmp6(4699);
+        let tmp6Result = tmp6(4740);
         isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
       }
       if (!isSubscriptionRoleResult) {

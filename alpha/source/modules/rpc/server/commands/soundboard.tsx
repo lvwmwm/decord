@@ -1,16 +1,16 @@
-// Module ID: 14692
-// Function ID: 14693
+// Module ID: 14746
+// Function ID: 14747
 // Name: soundboard
-// Dependencies: [5, 5425, 1390, 5636, 1096, 8441, 7041, 7042, 10899, 7078, 7049, 10896, 7080, 6872, 2]
+// Dependencies: [5, 5428, 1390, 5639, 1096, 8457, 7047, 7048, 10939, 7084, 7055, 10936, 7086, 6878, 2]
 
-// Module 14692 (soundboard)
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7041 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8441 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10899 */;
+// Module 14746 (soundboard)
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7047 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5425 */;
+import SoundboardStore from "SoundboardStore" /* 5428 */;
 import UserStore from "UserStore" /* 1390 */;
-import Constants_mod from "Constants" /* 5636 */;
+import Constants_mod from "Constants" /* 5639 */;
 import Constants_mod2 from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ let obj4 = {
                   playSound(tmp4, id, items);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } else {
                 const obj8 = { errorCode: constants.INVALID_PERMISSIONS };
                 const self3 = this;

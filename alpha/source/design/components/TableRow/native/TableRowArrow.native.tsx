@@ -1,23 +1,23 @@
-// Module ID: 6195
-// Function ID: 6196
+// Module ID: 6188
+// Function ID: 6189
 // Name: TableRowArrow
-// Dependencies: [19, 21, 5091, 587, 558, 576, 5378, 6196, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 5381, 6189, 2]
 
-// Module 6195 (TableRowArrow)
+// Module 6188 (TableRowArrow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import IconDefault from "Icon" /* 5378 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6196 */;
+import IconDefault from "Icon" /* 5381 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6189 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let size;
 let tmp;
-const Icon = tmp(5378);
+const Icon = tmp(5381);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { icon: size, iconColor: obj2 };

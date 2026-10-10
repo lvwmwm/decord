@@ -1,21 +1,21 @@
-// Module ID: 17541
-// Function ID: 17542
+// Module ID: 17613
+// Function ID: 17614
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 1999, 14885, 558, 576, 1105, 504, 5929, 6683, 5393, 2]
+// Dependencies: [19, 1999, 14944, 558, 576, 1105, 504, 5922, 6684, 5396, 2]
 
-// Module 17541 (useAutoSettingsSearchSessionAnalytics)
-import usePreviousDefault from "usePrevious" /* 5929 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6683 */;
+// Module 17613 (useAutoSettingsSearchSessionAnalytics)
+import usePreviousDefault from "usePrevious" /* 5922 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6684 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14885 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14944 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, isFocused, state;
 
 let tmp8;
-const useMountEffectDefault = tmp8(5393);
+const useMountEffectDefault = tmp8(5396);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoSettingsSearchSessionAnalytics() {
   let closure_1;
   let stateFromStores;

@@ -1,10 +1,10 @@
-// Module ID: 7279
-// Function ID: 7280
+// Module ID: 7286
+// Function ID: 7287
 // Name: CollectiblesMarketingBadgeRecord
-// Dependencies: [7280, 2]
+// Dependencies: [7287, 2]
 
-// Module 7279 (CollectiblesMarketingBadgeRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7280 */;
+// Module 7286 (CollectiblesMarketingBadgeRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7287 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingBadgeRecord {
@@ -25,6 +25,26 @@ class CollectiblesMarketingBadgeRecord {
       const self = this;
       const self2 = this;
       date = new Date(badge_countdown_ends_at.badge_countdown_ends_at);
+    }
+    if (typeof CollectiblesMarketingBadgeRecord === "function") {
+      const obj2 = Object.create(CollectiblesMarketingBadgeRecord.prototype);
+      obj2.type = CollectiblesMarketingType.CollectiblesMarketingType.BADGE;
+      ({ dismissibleContent: tmp5.dismissibleContent, version: tmp5.version, refTargetBackground: tmp5.refTargetBackground, badgeIcon: tmp5.badgeIcon, badgeText: tmp5.badgeText, badgeCountdownEndsAt: tmp5.badgeCountdownEndsAt, showHoverGradient: tmp5.showHoverGradient } = obj);
+      return obj2;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+  static fromPersisted(badgeCountdownEndsAt) {
+    let date;
+    const obj = { badgeCountdownEndsAt: date };
+    const merged = Object.assign(badgeCountdownEndsAt);
+    date = undefined;
+    if (null != badgeCountdownEndsAt.badgeCountdownEndsAt) {
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      date = new Date(badgeCountdownEndsAt.badgeCountdownEndsAt);
     }
     if (typeof CollectiblesMarketingBadgeRecord === "function") {
       const obj2 = Object.create(CollectiblesMarketingBadgeRecord.prototype);

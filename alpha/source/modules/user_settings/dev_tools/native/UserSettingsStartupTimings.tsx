@@ -1,27 +1,27 @@
-// Module ID: 15784
-// Function ID: 15785
+// Module ID: 15846
+// Function ID: 15847
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1370, 1085, 21, 5091, 587, 558, 576, 5087, 4944, 1631, 12586, 504, 9, 7190, 8465, 5374, 6269, 6183, 1371, 6186, 13000, 8608, 2]
+// Dependencies: [5, 32, 19, 17, 1370, 1085, 21, 5092, 587, 558, 576, 5088, 4983, 1631, 12633, 504, 9, 7196, 8481, 5377, 6264, 6176, 1371, 6179, 13047, 8624, 2]
 
-// Module 15784 (UserSettingsStartupTimings)
+// Module 15846 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Stack_Stack from "Stack/Stack" /* 5374 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 6183 */;
-import TableRow4 from "TableRow" /* 6186 */;
-import TableRowGroup6 from "TableRowGroup" /* 6269 */;
-import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 12586 */;
-import ShareIcon from "ShareIcon" /* 13000 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 6176 */;
+import TableRow4 from "TableRow" /* 6179 */;
+import TableRowGroup6 from "TableRowGroup" /* 6264 */;
+import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 12633 */;
+import ShareIcon from "ShareIcon" /* 13047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import DeveloperOptionsStore_mod from "DeveloperOptionsStore" /* 1370 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import react_native2 from "react-native" /* 4944 */;
+import react_native2 from "react-native" /* 4983 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let metroImportAll;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5087);
+const Text_Text = tmp(5088);
 let react = react_mod;
 let View = react_native.View;
 let DeveloperOptionsStore = DeveloperOptionsStore_mod;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       let closure_10 = Math.ceil(tmp5(9).renderLatestMessages.importTime);
       const _Symbol2 = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult2 = tmp(7190);
+        const tmpResult2 = tmp(7196);
         const lastTrackedAppUiViewed2Properties = tmpResult2.getLastTrackedAppUiViewed2Properties();
         class G {
           constructor() {
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             try {
@@ -207,7 +207,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                 const obj = tmp(c2[18]);
                 obj.showShareActionSheet(obj7, "Startup Timing");
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp16) {
               c3 = 3;
@@ -325,7 +325,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                 }
               }
               let obj4 = { contentContainerStyle: tmp28, ListHeaderComponent: tmp29, data: tmp11, renderItem: tmp31 };
-              const tmp34 = closure_8(tmp(8608).FlashList, obj4);
+              const tmp34 = closure_8(tmp(8624).FlashList, obj4);
               cResult[19] = tmp11;
               cResult[20] = tmp28;
               cResult[21] = tmp29;
@@ -441,7 +441,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           obj42 = {
             label: "Hide the Noise",
             onPress() {
-                      return closure_1_2(() => { /* body not rendered: F155268 */ });
+                      return closure_1_2(() => { /* body not rendered: F155716 */ });
                     },
             checked: closure_1
           };
@@ -450,7 +450,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           obj43 = {
             label: "Hide paints",
             onPress() {
-                      return closure_1_4(() => { /* body not rendered: F155269 */ });
+                      return closure_1_4(() => { /* body not rendered: F155717 */ });
                     },
             checked: !closure_3
           };
@@ -483,7 +483,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       tmp29 = X;
     }
   }
-  const str = checked(12586)(useResult, !checked, first1);
+  const str = checked(12633)(useResult, !checked, first1);
   const parts = str.split("\n");
   cResult[0] = useResult;
   cResult[1] = checked;
@@ -547,7 +547,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -585,7 +585,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           const obj = tmp(c2[18]);
           obj.showShareActionSheet(obj7, "Startup Timing");
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -707,14 +707,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       items2[7] = React4(closure_12, obj20);
       items[1] = metroImportAll(TableRowGroup2, obj17);
       const obj21 = { title: "Legend", hasIcons: false, children: metroImportAll(TableRow2, obj22) };
-      const TableRowGroup3 = tmp3(6269).TableRowGroup;
+      const TableRowGroup3 = tmp3(6264).TableRowGroup;
       obj22 = { label: React4(authStore, obj23) };
       obj23 = { children: items10 };
-      TableRow2 = tmp3(6186).TableRow;
+      TableRow2 = tmp3(6179).TableRow;
       items10 = [metroImportAll(closure_12, { children: "\u2615 - Java / Kotlin" }), metroImportAll(closure_12, { children: "\u{1F3A8} - React render" }), metroImportAll(closure_12, { children: "\u{1F4BE} - CacheStore" }), metroImportAll(closure_12, { children: "\u{1F9A5} - Slow Store Update / Handler" }), metroImportAll(closure_12, { children: "\u{1F3C3} - Startup Event" }), metroImportAll(closure_12, { children: "\u{1F310} - Socket Event" })];
       items[2] = metroImportAll(TableRowGroup3, obj21);
       const obj24 = { title: "Detailed Times", hasIcons: false, children: items11 };
-      const TableRowGroup4 = tmp3(6269).TableRowGroup;
+      const TableRowGroup4 = tmp3(6264).TableRowGroup;
       items11 = [, ];
       const obj25 = {
         label: "Hide the Noise",
@@ -734,9 +734,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       items11[1] = metroImportAll(TableCheckboxRow.TableCheckboxRow, obj26);
       items[3] = React4(TableRowGroup4, obj24);
       const obj27 = { title: "Share Timings", hasIcons: true, children: metroImportAll(TableRow3, obj28) };
-      const TableRowGroup5 = tmp3(6269).TableRowGroup;
+      const TableRowGroup5 = tmp3(6264).TableRowGroup;
       obj28 = { icon: metroImportAll(ShareIcon.ShareIcon, {}), label: "Copy timings to clipboard.", arrow: true, onPress };
-      TableRow3 = tmp3(6186).TableRow;
+      TableRow3 = tmp3(6179).TableRow;
       items[4] = metroImportAll(TableRowGroup5, obj27);
       items12 = [React4(Stack, obj), ];
       const obj29 = { style: border.border };
@@ -750,7 +750,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     }
   };
   obj6 = { paddingBottom: bottom + tmp2(587).space.PX_16 };
-  FlashList = tmp10(8608).FlashList;
+  FlashList = tmp10(8624).FlashList;
   return closure_8(checked, obj4);
 });
 let result = size.fileFinishedImporting("modules/user_settings/dev_tools/native/UserSettingsStartupTimings.tsx");

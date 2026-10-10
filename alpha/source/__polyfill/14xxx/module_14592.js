@@ -1,142 +1,48 @@
 // Module ID: 14592
 // Function ID: 14593
-// Dependencies: [473, 14593, 190, 874]
-// Exports: default
+// Dependencies: [14535, 14532, 14531, 14593, 14552, 14581, 14566, 14534, 14561]
 
 // Module 14592
-import ArgType from "ArgType" /* 14593 */;
-import react_mod from "react" /* 473 */;
+import _mod14531 from "module_14531" /* 14531 */;
+import _mod14532 from "module_14532" /* 14532 */;
+import _mod14534 from "module_14534" /* 14534 */;
+import _mod14535 from "module_14535" /* 14535 */;
+import _mod14552 from "module_14552" /* 14552 */;
+import _mod14581 from "module_14581" /* 14581 */;
 
-let _default2, logger;
-
-let tmp3;
-let react = react_mod;
-if (!react) {
-  let obj = { default: react };
-  tmp3 = obj;
-} else {
-  tmp3 = react;
-}
-react = tmp3.default;
-let closure_5 = { veto: null };
-function objectifyError(headers) {
-  let closure_0 = headers;
-  const obj = {};
-  const ownPropertyNames = Object.getOwnPropertyNames(headers);
-  const item = ownPropertyNames.forEach((item) => {
-    obj[item] = closure_0[item];
-  });
-  return obj;
-}
-
-export default (arg0) => {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let addException;
-    function reportError(stack) {
-      logger = stack;
-      try {
-        const tmp2 = _default;
-        if (!tmp2) {
-          const tmp3 = logger;
-          const tmp5 = logger(veto[2]);
-          if (typeof tmp5 === "function") {
-            _default = tmp5;
-          } else {
-            _default = tmp6.default;
-          }
+let closure_4 = _mod14535([].concat);
+if (!assign) {
+  assign = function assign(arg0, arg1) {
+    let num;
+    const tmp = _mod14552(arg0);
+    const length = arguments.length;
+    const f = _mod14581.f;
+    for (let num = 1; length > num; num = num + 1) {
+      let arr;
+      let num2;
+      let tmp3 = require;
+      let tmp5 = _mod14534(arguments[num]);
+      if (f) {
+        let tmp8 = tmp3(14593)(tmp5);
+        arr = closure_4(tmp8, f(tmp5));
+      } else {
+        arr = tmp3(14593)(tmp5);
+      }
+      let length2 = arr.length;
+      for (let num2 = 0; length2 > num2; num2 = num2 + 1) {
+        let tmp9 = arr[num2];
+        let tmp10 = require;
+        let tmp12 = _mod14531;
+        if (tmp12) {
+          tmp12 = !tmp10(14561)(tmp2, tmp5, tmp9);
         }
-        const tmp9 = _default2;
-        if (!tmp9) {
-          const tmp12 = logger(veto[3]);
-          if (typeof tmp12 === "function") {
-            _default2 = tmp12;
-          } else {
-            _default2 = tmp13.default;
-          }
+        if (!tmp12) {
+          tmp[tmp9] = tmp5[tmp9];
         }
-        if (_default) {
-          if (_default2) {
-            if (typeof tmp16 !== "function") {
-              logger.error("parseErrorStack is not a function", []);
-              const obj2 = { parseErrorStackType: typeof _default, parseErrorStack: _default };
-              logger.debug(obj2);
-            } else if (typeof tmp18 !== "function") {
-              logger.error("symbolicateStackTrace is not a function", []);
-              const obj3 = { symbolicateStackTraceType: typeof _default2, symbolicateStackTrace: _default2 };
-              logger.debug(obj3);
-            } else {
-              try {
-                const promise = _default2(_default(stack.stack));
-                const nextPromise = promise.then((stack) => {
-                  stack = stack.stack;
-                  const mapped = stack.map((file) => ({ fileName: file.file, functionName: file.methodName, lineNumber: file.lineNumber }));
-                  let found = mapped;
-                  if (veto.veto) {
-                    found = mapped.filter((item) => {
-                      let vetoResult;
-                      const obj = veto;
-                      if (veto != null) {
-                        vetoResult = obj.veto(item);
-                      }
-                      return vetoResult;
-                    });
-                  }
-                  stack.error(stack.message, found);
-                });
-                nextPromise.catch((error) => {
-                  stack.error("Unable to symbolicate stack trace from error object", []);
-                  if (typeof closure_2_6 === "function") {
-                    stack = error;
-                    const obj = {};
-                    const _Object = Object;
-                    const ownPropertyNames = Object.getOwnPropertyNames(error);
-                    const item = ownPropertyNames.forEach((item) => {
-                      obj[item] = closure_0[item];
-                    });
-                    tmp3(obj);
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                });
-              } catch (tmp32) {
-                logger.error("Unable to parse stack trace from error object", []);
-                logger.debug(closure_1_6(tmp32));
-              }
-            }
-          }
-        }
-        logger.error("parseErrorStack or symbolicateStackTrace is not available", []);
-        let obj = { parseErrorStackAvailable: _default, symbolicateStackTraceAvailable: _default2 };
-        logger.debug(obj);
-      } catch (tmp47) {
-        logger.error("Unable to load \"react-native/Libraries/Core/Devtools/parseErrorStack\" or \"react-native/Libraries/Core/Devtools/symbolicateStackTrace\"", []);
-        logger.debug(closure_1_6(tmp47));
       }
     }
-    let _default = reportError;
-    const result = ArgType.assertHasLoggerPlugin(arg0);
-    closure_0 = arg0;
-    let obj = closure_0;
-    let _Object = Object;
-    let tmp2 = closure_5;
-    if (!closure_0) {
-      obj = {};
-    }
-    let closure_1 = assign({}, tmp2, obj);
-    let obj2 = {
-      onConnect() {
-        const obj = {
-          apply(apply, arg1, arg2) {
-            _default(arg2[0]);
-            return apply.apply(arg1, arg2);
-          }
-        };
-        const proxy = new Proxy(addException.addException, obj);
-        addException.addException = proxy;
-      },
-      features: { reportError }
-    };
-    return obj2;
+    return tmp;
   };
-};
+}
+
+export default assign;

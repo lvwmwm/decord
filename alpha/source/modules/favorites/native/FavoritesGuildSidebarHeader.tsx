@@ -1,28 +1,28 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16711
+// Function ID: 16712
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 16545, 21, 5091, 587, 10279, 12643, 5055, 10283, 2000, 10282, 5087, 1126, 3439, 558, 576, 8191, 8212, 8182, 5374, 2]
+// Dependencies: [19, 17, 16615, 21, 5092, 587, 10312, 12690, 5056, 10316, 2000, 10315, 5088, 1126, 3442, 558, 576, 8207, 8228, 8198, 5377, 2]
 
-// Module 16641 (FavoritesGuildSidebarHeader)
+// Module 16711 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef3439 from "module_3439" /* 3439 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Stack_Stack from "Stack/Stack" /* 5374 */;
-import ChatIcon2 from "ChatIcon" /* 8182 */;
-import TextIcon2 from "TextIcon" /* 8191 */;
-import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8212 */;
-import FavoritesHooks from "FavoritesHooks" /* 10279 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10282 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 12643 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16545 */;
+import _modDef3442 from "module_3442" /* 3442 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import ChatIcon2 from "ChatIcon" /* 8198 */;
+import TextIcon2 from "TextIcon" /* 8207 */;
+import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8228 */;
+import FavoritesHooks from "FavoritesHooks" /* 10312 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10315 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 12690 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16615 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ function EmptyBody() {
       openLazy(tmp5, openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "favorites_empty_sidebar" });
     }
   }, []);
-  let obj = { variant: "text-sm/medium", color: "text-muted", children: intl.format(_modDef3439.Z3Hdr5, { onClick: callback }) };
+  let obj = { variant: "text-sm/medium", color: "text-muted", children: intl.format(_modDef3442.Z3Hdr5, { onClick: callback }) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return metroRequire(Text, obj);
@@ -84,7 +84,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-    const TextIcon = tmp(8191).TextIcon;
+    const TextIcon = tmp(8207).TextIcon;
     const tmp8 = metroRequire(TextIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -105,7 +105,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const VoiceNormalIcon = tmp(8212).VoiceNormalIcon;
+        const VoiceNormalIcon = tmp(8228).VoiceNormalIcon;
         const tmp18 = metroRequire(VoiceNormalIcon, obj3);
         cResult[7] = tmp18;
         tmp15 = tmp18;
@@ -126,7 +126,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
           const _Symbol2 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-            const ChatIcon = tmp(8182).ChatIcon;
+            const ChatIcon = tmp(8198).ChatIcon;
             const tmp30 = metroRequire(ChatIcon, obj4);
             cResult[14] = tmp30;
             tmp27 = tmp30;
@@ -273,8 +273,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3439["1n0TGE"]) };
-      const Heading = tmp(5087).Heading;
+      const obj2 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3442["1n0TGE"]) };
+      const Heading = tmp(5088).Heading;
       intl = tmp(1126).intl;
       const tmp16 = metroRequire(Heading, obj2);
       const tmp18 = metroRequire(EmptyBody, {});
@@ -288,7 +288,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     }
     if (cResult[5] !== tmp4.copy) {
       const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp4.copy, children: items };
-      const Stack = tmp(5374).Stack;
+      const Stack = tmp(5377).Stack;
       items = [tmp11, tmp12];
       const tmp22 = metroImportDefault(Stack, obj3);
       cResult[5] = tmp4.copy;
@@ -312,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
         }
       }
       const obj4 = { spacing: nativeDefault.space.PX_8, children: items1 };
-      const Stack2 = tmp(5374).Stack;
+      const Stack2 = tmp(5377).Stack;
       items1 = [tmp6, tmp19, tmp23];
       const tmp33 = metroImportDefault(Stack2, obj4);
       cResult[10] = tmp6;
@@ -358,9 +358,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   }
   items = [tmp7, , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: items1 };
-  const Stack2 = tmp4(5374).Stack;
-  const obj4 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3439["1n0TGE"]) };
-  const Heading = tmp4(5087).Heading;
+  const Stack2 = tmp4(5377).Stack;
+  const obj4 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3442["1n0TGE"]) };
+  const Heading = tmp4(5088).Heading;
   intl = tmp4(1126).intl;
   items1 = [metroRequire(Heading, obj4), metroRequire(EmptyBody, {})];
   items[1] = metroImportDefault(Stack2, obj3);

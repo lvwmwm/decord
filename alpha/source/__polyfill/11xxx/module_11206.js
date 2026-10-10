@@ -1,75 +1,58 @@
 // Module ID: 11206
 // Function ID: 11207
-// Dependencies: [11199, 11194, 11207, 11195, 11167]
-// Exports: sampleSpan
+// Dependencies: [11207, 11208, 11211]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 11206
-import _mod11194 from "module_11194" /* 11194 */;
-import _mod11195 from "module_11195" /* 11195 */;
-import _mod11199 from "module_11199" /* 11199 */;
 import _mod11207 from "module_11207" /* 11207 */;
+import _mod11211 from "module_11211" /* 11211 */;
 
+let closure_2 = {};
+let closure_3 = {};
 
-export const sampleSpan = function sampleSpan(tracesSampler, normalizedRequest) {
-  const obj = _mod11199;
-  if (obj.hasTracingEnabled(tracesSampler)) {
-    let num;
-    let items3;
-    const tmpResult = _mod11194;
-    const isolationScope = tmpResult.getIsolationScope();
-    const obj2 = { normalizedRequest: normalizedRequest.normalizedRequest || normalizedRequest };
-    normalizedRequest = isolationScope.getScopeData().sdkProcessingMetadata.normalizedRequest;
-    const merged = Object.assign(normalizedRequest);
-    if (typeof tracesSampler.tracesSampler === "function") {
-      num = tracesSampler.tracesSampler(obj2);
-    } else if (undefined !== obj2.parentSampled) {
-      num = obj2.parentSampled;
-    } else {
-      num = 1;
-      if (undefined !== tracesSampler.tracesSampleRate) {
-        num = tracesSampler.tracesSampleRate;
+export const addHandler = function addHandler(arg0, arg1) {
+  const tmp2 = closure_2[arg0] || [];
+  closure_2[arg0] = tmp2;
+  const arr = closure_2[arg0];
+  arr.push(arg1);
+};
+export const maybeInstrument = function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp[arg0] = true;
+    try {
+      fn();
+    } catch (tmp4) {
+      const tmp5 = require;
+      if (_mod11207.DEBUG_BUILD) {
+        const logger = tmp5(11208).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + arg0, tmp4);
       }
     }
-    const tmpResult2 = _mod11207;
-    const parseSampleRateResult = tmpResult2.parseSampleRate(num);
-    if (undefined === parseSampleRateResult) {
-      if (_mod11195.DEBUG_BUILD) {
-        const logger3 = tmp(11167).logger;
-        logger3.warn("[Tracing] Discarding transaction because of invalid sample rate.");
-      }
-      const items = [false];
-      items3 = items;
-    } else if (parseSampleRateResult) {
-      let items2;
-      const _Math = Math;
-      if (Math.random() < parseSampleRateResult) {
-        const items1 = [true, parseSampleRateResult];
-        items2 = items1;
-      } else {
-        if (_mod11195.DEBUG_BUILD) {
-          const logger2 = tmp(11167).logger;
-          const _Number = Number;
+  }
+};
+export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    closure_1_2[item] = undefined;
+  });
+};
+export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+  if (arg0 && closure_2[arg0]) {
+    const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
+    const nextResult = iter.next();
+    if (iter !== undefined) {
+      try {
+        nextResult(arg1);
+      } catch (tmp11) {
+        if (_mod11207.DEBUG_BUILD) {
+          const logger = tmp12(11208).logger;
+          const error = logger.error;
           const _HermesInternal = HermesInternal;
-          logger2.log("[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = " + Number(num) + ")");
+          const tmp12Result = _mod11211;
+          error("Error while triggering instrumentation handler.\nType: " + arg0 + "\nName: " + tmp12Result.getFunctionName(nextResult) + "\nError:", tmp11);
         }
-        items2 = [false, parseSampleRateResult];
       }
-      items3 = items2;
-    } else {
-      if (_mod11195.DEBUG_BUILD) {
-        const logger = tmp(11167).logger;
-        let str = "a negative sampling decision was inherited or tracesSampleRate is set to 0";
-        const log = logger.log;
-        if (typeof tracesSampler.tracesSampler === "function") {
-          str = "tracesSampler returned 0 or false";
-        }
-        log(`[Tracing] Discarding transaction because ${str}`);
-      }
-      items3 = [false, parseSampleRateResult];
     }
-    return items3;
-  } else {
-    const items4 = [false];
-    return items4;
   }
 };

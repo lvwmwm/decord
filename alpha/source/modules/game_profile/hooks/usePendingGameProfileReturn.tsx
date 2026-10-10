@@ -1,15 +1,15 @@
-// Module ID: 12109
-// Function ID: 12110
+// Module ID: 12153
+// Function ID: 12154
 // Name: usePendingGameProfileReturn
-// Dependencies: [19, 2020, 8867, 1085, 558, 576, 504, 8865, 8859, 2]
+// Dependencies: [19, 2020, 8886, 1085, 558, 576, 504, 8884, 8878, 2]
 
-// Module 12109 (usePendingGameProfileReturn)
+// Module 12153 (usePendingGameProfileReturn)
 import Constants from "Constants" /* 1085 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8859 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8865 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8878 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8884 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2020 */;
-import GameProfileStore from "GameProfileStore" /* 8867 */;
+import GameProfileStore from "GameProfileStore" /* 8886 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,10 +57,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
   if (cResult[3] !== stateFromStores) {
     class P {
       constructor() {
+        let source;
         if (null != stateFromStores) {
-          const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+          const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
+          ({ gameId: obj.gameId, source } = stateFromStores);
           const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
           GameProfileActionCreatorsDefault;
+          if (source == null) {
+            source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+          }
+          ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
           returnToGameProfile(obj);
         }
       }
@@ -70,10 +76,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
   } else {
     class P {
       constructor() {
+        let source;
         if (null != stateFromStores) {
-          const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+          const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
+          ({ gameId: obj.gameId, source } = stateFromStores);
           const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
           GameProfileActionCreatorsDefault;
+          if (source == null) {
+            source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+          }
+          ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
           returnToGameProfile(obj);
         }
       }
@@ -82,10 +94,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
       constructor() {
+        let source;
         if (null != stateFromStores) {
-          const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+          const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
+          ({ gameId: obj.gameId, source } = stateFromStores);
           const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
           GameProfileActionCreatorsDefault;
+          if (source == null) {
+            source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+          }
+          ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
           returnToGameProfile(obj);
         }
       }
@@ -96,10 +114,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
   } else {
     class P {
       constructor() {
+        let source;
         if (null != stateFromStores) {
-          const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+          const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
+          ({ gameId: obj.gameId, source } = stateFromStores);
           const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
           GameProfileActionCreatorsDefault;
+          if (source == null) {
+            source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+          }
+          ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
           returnToGameProfile(obj);
         }
       }
@@ -271,10 +295,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
   const items1 = [stateFromStores];
   let tmp2 = react;
   const callback = react.useCallback(() => {
+    let source;
     if (null != stateFromStores) {
-      const obj = { gameId: stateFromStores.gameId, source: GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn, initialScrollOffset: stateFromStores.initialScrollOffset };
+      const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
+      ({ gameId: obj.gameId, source } = stateFromStores);
       const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
       GameProfileActionCreatorsDefault;
+      if (source == null) {
+        source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+      }
+      ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
       returnToGameProfile(obj);
     }
   }, items1);

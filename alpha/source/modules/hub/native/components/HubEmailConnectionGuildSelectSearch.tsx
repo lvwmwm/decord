@@ -1,27 +1,27 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 12507
+// Function ID: 12508
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 12433, 21, 5091, 587, 558, 576, 6163, 12461, 1126, 5087, 1503, 6101, 1631, 12447, 5632, 6205, 7081, 1200, 12456, 2]
+// Dependencies: [5, 32, 19, 17, 12480, 21, 5092, 587, 558, 576, 6156, 12508, 1126, 5088, 1503, 6094, 1631, 12494, 5635, 6200, 7087, 1200, 12503, 2]
 // Exports: default
 
-// Module 12460 (HubEmailConnectionGuildSelectSearch)
+// Module 12507 (HubEmailConnectionGuildSelectSearch)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import useNavigation from "useNavigation" /* 1503 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6101 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import HubConstants from "HubConstants" /* 12433 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12461 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6094 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import HubConstants from "HubConstants" /* 12480 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12508 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,8 +37,8 @@ let obj3;
 let tmp2;
 let tmp9;
 let unpackModuleId;
-const NavigatorHeader = tmp2(6205);
-const SearchBarNavDefault = tmp9(7081);
+const NavigatorHeader = tmp2(6200);
+const SearchBarNavDefault = tmp9(7087);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ View: metroRequire, FlatList: metroImportDefault } = react_native);
@@ -205,7 +205,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             let c3;
@@ -262,7 +262,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
                 c3 = 0;
                 closure_1_7(false);
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

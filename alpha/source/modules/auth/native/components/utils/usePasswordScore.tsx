@@ -1,9 +1,9 @@
-// Module ID: 16305
-// Function ID: 16306
+// Module ID: 16372
+// Function ID: 16373
 // Name: usePasswordScore
-// Dependencies: [5, 32, 19, 558, 576, 12, 16292, 2]
+// Dependencies: [5, 32, 19, 558, 576, 12, 16359, 2]
 
-// Module 16305 (usePasswordScore)
+// Module 16372 (usePasswordScore)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,7 +49,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordS
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c4;
@@ -97,7 +97,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordS
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp21) {
             let closure_3 = tmp21;
             if (0 === c4) {
@@ -195,7 +195,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordS
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -243,7 +243,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordS
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp21) {
           let closure_3 = tmp21;
           if (0 === c4) {

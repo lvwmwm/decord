@@ -1,17 +1,17 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14172
+// Function ID: 14173
 // Name: GameOrganizationInviteRow
-// Dependencies: [19, 7423, 21, 558, 576, 1200, 4923, 8749, 8752, 6186, 2]
+// Dependencies: [19, 7423, 21, 558, 576, 1200, 4962, 8765, 8768, 6179, 2]
 
-// Module 14117 (GameOrganizationInviteRow)
+// Module 14172 (GameOrganizationInviteRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1200 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import TableRow2 from "TableRow" /* 6186 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import TableRow2 from "TableRow" /* 6179 */;
 import Constants from "Constants" /* 7423 */;
-import DiscordTagDefault from "DiscordTag" /* 8749 */;
-import InviteButtonDefault from "InviteButton" /* 8752 */;
+import DiscordTagDefault from "DiscordTag" /* 8765 */;
+import InviteButtonDefault from "InviteButton" /* 8768 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

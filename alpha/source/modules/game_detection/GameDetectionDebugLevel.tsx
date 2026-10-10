@@ -1,9 +1,9 @@
-// Module ID: 6148
-// Function ID: 6149
+// Module ID: 6141
+// Function ID: 6142
 // Name: GameDetectionDebugLevel
 // Dependencies: [2]
 
-// Module 6148 (GameDetectionDebugLevel)
+// Module 6141 (GameDetectionDebugLevel)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/GameDetectionDebugLevel.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 14613
-// Function ID: 14614
+// Module ID: 14667
+// Function ID: 14668
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 5080, 1085, 1208, 14614, 584, 1265, 14617, 10339, 14615, 4927, 4930, 2]
+// Dependencies: [5, 17, 5081, 1085, 1208, 14668, 584, 1265, 14671, 10372, 14669, 4966, 4969, 2]
 
-// Module 14613 (AccessibilityManager)
+// Module 14667 (AccessibilityManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import ThemeConstants from "ThemeConstants" /* 1208 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4927 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10339 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14614 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14615 */;
-import react_native from "react-native" /* 14617 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4966 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10372 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14668 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14669 */;
+import react_native from "react-native" /* 14671 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, set;
@@ -71,7 +71,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = {
             closure_0 = value;
             const result = closure_129_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp11) {
           c3 = 3;

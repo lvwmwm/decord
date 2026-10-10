@@ -1,24 +1,17 @@
 // Module ID: 11277
 // Function ID: 11278
 // Dependencies: []
-// Exports: getBreadcrumbLogLevelFromHttpStatusCode
+// Exports: parameterize
 
 // Module 11277
 
-export const getBreadcrumbLogLevelFromHttpStatusCode = function getBreadcrumbLogLevelFromHttpStatusCode(arg0) {
-  let tmp;
-  if (undefined !== arg0) {
-    let str;
-    if (arg0 < 400) {
-      let str2;
-      if (arg0 >= 500) {
-        str2 = "error";
-      }
-      str = str2;
-    } else {
-      str = "warning";
-    }
-    tmp = str;
-  }
-  return tmp;
+export const parameterize = function parameterize(join) {
+  const substr = [...arguments].slice();
+  const items = [join, ...substr];
+  const string = new String(String.raw.apply(items));
+  const str = join.join("\0");
+  const str2 = str.replace(/%/g, "%%");
+  string.__sentry_template_string__ = str2.replace(/\0/g, "%s");
+  string.__sentry_template_values__ = substr;
+  return string;
 };

@@ -1,11 +1,11 @@
-// Module ID: 7673
-// Function ID: 7674
+// Module ID: 7690
+// Function ID: 7691
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1503, 5906, 7537, 5928, 5726, 5731, 1126, 3117, 7511, 7512, 5374, 5087, 5965, 5376, 5916, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1503, 5909, 7546, 7511, 5729, 5734, 1126, 3120, 7514, 7515, 5377, 5088, 5958, 5379, 5918, 2]
 
-// Module 7673 (GoogleWalletVerificationScreen)
+// Module 7690 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5916 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -381,7 +381,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let tmp50;
@@ -510,7 +510,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp50) {
           if (0 === c3) {
@@ -604,7 +604,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let tmp50;
@@ -733,7 +733,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp50) {
         if (0 === c3) {

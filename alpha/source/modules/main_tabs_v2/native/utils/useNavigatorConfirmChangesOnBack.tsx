@@ -1,12 +1,12 @@
-// Module ID: 9603
-// Function ID: 9604
+// Module ID: 9632
+// Function ID: 9633
 // Name: useNavigatorConfirmChangesOnBack
-// Dependencies: [19, 17, 1085, 558, 576, 9604, 9605, 2]
+// Dependencies: [19, 17, 1085, 558, 576, 9633, 9634, 2]
 
-// Module 9603 (useNavigatorConfirmChangesOnBack)
+// Module 9632 (useNavigatorConfirmChangesOnBack)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import useNavigatorBackHandlerDefault from "useNavigatorBackHandler" /* 9605 */;
+import useNavigatorBackHandlerDefault from "useNavigatorBackHandler" /* 9634 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

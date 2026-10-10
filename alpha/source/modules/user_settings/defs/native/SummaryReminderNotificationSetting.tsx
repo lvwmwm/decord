@@ -1,16 +1,16 @@
-// Module ID: 15728
-// Function ID: 15729
+// Module ID: 15790
+// Function ID: 15791
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [7974, 558, 15729, 10629, 1126, 2041, 15730, 2]
+// Dependencies: [7992, 558, 15791, 10663, 1126, 2041, 15792, 2]
 
-// Module 15728 (SummaryReminderNotificationSetting)
+// Module 15790 (SummaryReminderNotificationSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
-import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 15729 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15730 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 15791 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15792 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,19 +1,19 @@
-// Module ID: 10771
-// Function ID: 10772
+// Module ID: 10806
+// Function ID: 10807
 // Name: launchFrame
-// Dependencies: [5, 10772, 10767, 6074, 10776, 584, 10778, 10775, 10806, 10810, 10811, 2]
+// Dependencies: [5, 10807, 10802, 6067, 10811, 584, 10813, 10810, 10814, 10820, 10821, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 10771 (launchFrame)
+// Module 10806 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6074 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10775 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10776 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10778 */;
-import leaveFrame from "leaveFrame" /* 10811 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10811 */;
+import createProxyTicket from "createProxyTicket" /* 10813 */;
+import leaveFrame from "leaveFrame" /* 10821 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 10772 */;
-import FramesConstants from "FramesConstants" /* 10767 */;
+import FramesStore from "FramesStore" /* 10807 */;
+import FramesConstants from "FramesConstants" /* 10802 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_2, dispatchResult1, error, hostWindowKey, intent, message, proxyTicket, type;
@@ -45,7 +45,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(10811);
+        const tmp4Result = tmp4(10821);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -268,7 +268,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -300,7 +300,7 @@ obj = function _refreshProxyTicket() {
                 c5 = 4;
                 c6 = 1;
                 const obj6 = { value: obj22.createProxyTicket(applicationId, getChannelIdForEmbeddedSurfaceDefault(surface), surface.type), done: false };
-                obj22 = EmbeddedActivitiesActionCreators;
+                obj22 = createProxyTicket;
                 return obj6;
               }
             }

@@ -1,31 +1,31 @@
-// Module ID: 6045
-// Function ID: 6046
+// Module ID: 6038
+// Function ID: 6039
 // Name: ChannelRTCParticipants
-// Dependencies: [2063, 5955, 5894, 502, 5755, 2064, 2012, 5954, 1390, 6044, 5112, 5114, 1085, 5116, 5960, 4704, 6046, 12, 6047, 6048, 5406, 6060, 5897, 2]
+// Dependencies: [2064, 5948, 5897, 502, 5758, 2065, 2012, 5947, 1390, 6037, 5113, 5115, 1085, 5117, 5953, 4745, 6039, 12, 6040, 6041, 5409, 6053, 5900, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual, getEmbeddedActivityParticipantId
 
-// Module 6045 (ChannelRTCParticipants)
+// Module 6038 (ChannelRTCParticipants)
 import _mod12 from "module_12" /* 12 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5897 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5960 */;
-import useIsSpeaking from "useIsSpeaking" /* 6046 */;
-import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 6047 */;
-import ContentClassificationReference from "ContentClassificationReference" /* 6048 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5955 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5953 */;
+import useIsSpeaking from "useIsSpeaking" /* 6039 */;
+import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 6040 */;
+import ContentClassificationReference from "ContentClassificationReference" /* 6041 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5948 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5755 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import CallStore from "CallStore" /* 5758 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import SpeakingStore from "SpeakingStore" /* 5954 */;
+import SpeakingStore from "SpeakingStore" /* 5947 */;
 import UserStore from "UserStore" /* 1390 */;
-import VideoStreamStore from "VideoStreamStore" /* 6044 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
-import CallConstants from "CallConstants" /* 5114 */;
+import VideoStreamStore from "VideoStreamStore" /* 6037 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import CallConstants from "CallConstants" /* 5115 */;
 import Constants_mod from "Constants" /* 1085 */;
-import Constants_mod2 from "Constants" /* 5116 */;
+import Constants_mod2 from "Constants" /* 5117 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -92,7 +92,7 @@ class ChannelRTCParticipants {
     new Set();
     obj.stageSpeakerIds = new Set();
     new Set();
-    const secondaryIndexMap = new obj(4704).SecondaryIndexMap((type) => {
+    const secondaryIndexMap = new obj(4745).SecondaryIndexMap((type) => {
       const items = [];
       const tmp2 = type.type === constants.USER && type.speaking;
       if (tmp2) {
@@ -128,7 +128,7 @@ class ChannelRTCParticipants {
         }
         return items;
       }
-      if (authStore3(type)) {
+      if (syncedClientThemes(type)) {
         items.push(obj.STREAM);
         let isPoppedOut = type.type === tmp.HIDDEN_STREAM;
         const tmp7 = obj;
@@ -435,7 +435,7 @@ class ChannelRTCParticipants {
         }
         obj4 = NicknameUtilsDefault;
         poppedOutParticipants = self.poppedOutParticipants;
-        tmp8Result = tmp8(6060);
+        tmp8Result = tmp8(6053);
         items.push(obj);
       }
       let streamForUser = ApplicationStreamingStore.getStreamForUser(userId, guildId);

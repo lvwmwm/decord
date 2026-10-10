@@ -1,10 +1,10 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12641
+// Function ID: 12642
 // Name: ReactionNotification
-// Dependencies: [19, 17, 5080, 12529, 1085, 1096, 21, 5091, 1383, 587, 558, 576, 2041, 12540, 5087, 1415, 10419, 6816, 1126, 6995, 12528, 12538, 12539, 12544, 10246, 1200, 6165, 12, 5624, 504, 5941, 5102, 12530, 12546, 2000, 12567, 12571, 2]
+// Dependencies: [19, 17, 5081, 12576, 1085, 1096, 21, 5092, 1383, 587, 558, 576, 2041, 12587, 5088, 1415, 10452, 6819, 1126, 7001, 12575, 12585, 12586, 12591, 10279, 1200, 6158, 12, 5627, 504, 5934, 5103, 12577, 12593, 2000, 12614, 12618, 2]
 // Exports: default
 
-// Module 12594 (ReactionNotification)
+// Module 12641 (ReactionNotification)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -14,25 +14,25 @@ import intl13 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import transitionToChannel from "transitionToChannel" /* 5102 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import GuildIcon from "GuildIcon" /* 6165 */;
-import EmojiDefault from "Emoji" /* 6816 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6995 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10246 */;
-import ForumPostReactionButton from "ForumPostReactionButton" /* 10419 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12528 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12530 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 12538 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 12540 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 12544 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import transitionToChannel from "transitionToChannel" /* 5103 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import GuildIcon from "GuildIcon" /* 6158 */;
+import EmojiDefault from "Emoji" /* 6819 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7001 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10279 */;
+import ForumPostReactionButton from "ForumPostReactionButton" /* 10452 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12575 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12577 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 12585 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 12587 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 12591 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12529 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12576 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1383 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -697,7 +697,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
       let tmp11 = null;
       if (null != secondaryText) {
         const obj2 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-        tmp11 = authStore(tmp(5087).Text, obj2);
+        tmp11 = authStore(tmp(5088).Text, obj2);
       }
       cResult[4] = secondaryText;
       cResult[5] = tmp11;
@@ -737,7 +737,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
       tmp16 = null;
       if (null != messagePreview) {
         const obj4 = { message: messagePreview, lineClamp: 1, maxHeight: metroRequire, textColor: "text-subtle", gradientStyles, gradientColors };
-        tmp16 = authStore(tmp(12539).NativeChannelRowPreview, obj4);
+        tmp16 = authStore(tmp(12586).NativeChannelRowPreview, obj4);
       }
     }
     cResult[6] = gradientColors;
@@ -775,7 +775,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
   const tmp7 = unpackModuleId;
   if (null != secondaryText) {
     const obj3 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-    tmp8Result = tmp8(tmp2(5087).Text, obj3);
+    tmp8Result = tmp8(tmp2(5088).Text, obj3);
   }
   children[1] = tmp8Result;
   let tmp8Result2 = null;
@@ -783,7 +783,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
     tmp8Result2 = null;
     if (null != messagePreview) {
       const obj4 = { message: messagePreview, lineClamp: 1, maxHeight: metroRequire, textColor: "text-subtle", gradientStyles, gradientColors };
-      tmp8Result2 = tmp8(tmp2(12539).NativeChannelRowPreview, obj4);
+      tmp8Result2 = tmp8(tmp2(12586).NativeChannelRowPreview, obj4);
     }
   }
   children[2] = tmp8Result2;
@@ -1114,7 +1114,7 @@ export default function ReactionNotification(notification) {
   const callback1 = obj.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channelId: id };
-    return obj.pushLazy(asyncRequire(12546, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+    return obj.pushLazy(asyncRequire(12593, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
   }, items4);
   let obj3 = { icon: closure_10(ReactorNotificationIcon, { notification, isMilestone: result }), accessoryLabelNode: tmp14Result, header: memo1, onPress: callback, onSettingsPress: callback1, notification, rightAccessory: closure_10(notification(guild[36]).MediaPreviewRightAccessory, { message }), children: closure_10(id1, obj4) };
   const NotificationPressable = tmp3(tmp4[35]).NotificationPressable;

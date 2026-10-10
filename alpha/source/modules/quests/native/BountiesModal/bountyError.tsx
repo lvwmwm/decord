@@ -1,18 +1,16 @@
-// Module ID: 15216
-// Function ID: 15217
+// Module ID: 15278
+// Function ID: 15279
 // Name: bountyError
-// Dependencies: [15202, 1126, 4768, 5008, 2]
+// Dependencies: [15264, 1126, 4809, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 15216 (bountyError)
+// Module 15278 (bountyError)
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 15202 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 15264 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const AssetRegistryDefault = tmp(5008);
-const toastDurationMs = BountiesModalConstants.BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS;
+const duration = BountiesModalConstants.BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS;
 const set = new Set([260021]);
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/bountyError.tsx");
 
@@ -33,8 +31,8 @@ export const openBountyRewardClaimErrorToast = function openBountyRewardClaimErr
       if (null != message1) {
         message = code.message;
       }
-      const obj = { key: "QUESTS_BOUNTIES_REWARD_CLAIM_FAILED", content: message, icon: AssetRegistryDefault, toastDurationMs };
-      open(obj);
+      const obj = { text: message, variant: "critical", duration };
+      open("QUESTS_BOUNTIES_REWARD_CLAIM_FAILED", obj);
     }
   }
   const intl = intl2.intl;

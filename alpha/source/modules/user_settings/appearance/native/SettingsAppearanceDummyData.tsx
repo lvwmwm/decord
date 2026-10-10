@@ -1,25 +1,25 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15549
+// Function ID: 15550
 // Name: SettingsAppearanceDummyData
-// Dependencies: [1085, 1126, 15488, 15489, 15490, 15491, 15492, 15493, 15494, 15495, 15496, 15497, 14109, 12557, 15498, 2]
+// Dependencies: [1085, 1126, 15550, 15551, 15552, 15553, 15554, 15555, 15556, 15557, 15558, 15559, 14164, 12604, 15560, 2]
 // Exports: default
 
-// Module 15487 (SettingsAppearanceDummyData)
+// Module 15549 (SettingsAppearanceDummyData)
 import Constants from "Constants" /* 1085 */;
 import intl32 from "intl" /* 1126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12557 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14109 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15488 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15489 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15490 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15491 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15492 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15493 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 15494 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 15495 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 15496 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 15497 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 15498 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12604 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14164 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15550 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15551 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15552 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15553 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 15554 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 15555 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 15556 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 15557 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 15558 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 15559 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 15560 */;
 import size from "module_2" /* 2 */;
 
 const StatusTypes = Constants.StatusTypes;

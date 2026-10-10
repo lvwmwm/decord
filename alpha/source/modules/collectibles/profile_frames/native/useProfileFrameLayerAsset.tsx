@@ -1,12 +1,12 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8348
+// Function ID: 8349
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 6898, 1987, 558, 576, 1899, 8333, 8334, 2]
+// Dependencies: [5, 32, 19, 17, 6904, 1987, 558, 576, 1899, 8349, 8350, 2]
 // Exports: isProfileFrameLayerShown
 
-// Module 8332 (useProfileFrameLayerAsset)
+// Module 8348 (useProfileFrameLayerAsset)
 import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1987 */;
-import Constants from "Constants" /* 6898 */;
+import Constants from "Constants" /* 6904 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -18,7 +18,7 @@ let _Promise, c4, c5, importDefault, nextPromise, num2;
 
 let metroImportDefault;
 let metroRequire;
-const f97826 = (arg0) => {
+const f98089 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -45,7 +45,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f97826);
+      const promise = new Promise(f98089);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -75,7 +75,7 @@ let obj = function _preloadLayer() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -130,7 +130,7 @@ let obj = function _preloadLayer() {
             closure_131_11.add(uri);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp22) {
         c5 = 3;
@@ -255,7 +255,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f97826);
+              const promise = new Promise(f98089);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               const result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;
@@ -325,7 +325,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f97826);
+              const promise = new Promise(f98089);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               let result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;

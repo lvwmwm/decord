@@ -1,29 +1,29 @@
-// Module ID: 8676
-// Function ID: 8677
+// Module ID: 8691
+// Function ID: 8692
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 2069, 8668, 2086, 4709, 7423, 1085, 21, 5091, 587, 558, 576, 8677, 1631, 6848, 6872, 6854, 5073, 504, 8678, 8667, 5055, 8287, 8679, 1209, 8681, 1126, 6835, 1200, 8702, 8706, 8708, 6737, 8700, 8744, 8745, 6836, 2]
+// Dependencies: [32, 19, 17, 2070, 8683, 2087, 4750, 7423, 1085, 21, 5092, 587, 558, 576, 8692, 1631, 6851, 6878, 6857, 5074, 504, 8693, 8682, 5056, 8303, 8694, 1209, 8696, 1126, 6838, 1200, 8717, 8721, 8723, 6738, 8715, 8760, 8761, 6839, 2]
 
-// Module 8676 (InstantInviteActionSheet)
+// Module 8691 (InstantInviteActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5073 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5074 */;
 import Constants2 from "Constants" /* 7423 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8287 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8667 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8677 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 8679 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8682 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8692 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 8694 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 2069 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8668 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8683 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Loadin
   }
   const obj5 = { children: items1 };
   items1 = [tmp8, tmp12, first];
-  const tmp17 = authStore4(authStore3, obj5);
+  const tmp17 = authStore3(syncedClientThemes, obj5);
   cResult[5] = tmp8;
   cResult[6] = tmp12;
   cResult[7] = tmp17;
@@ -123,7 +123,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Loadin
   const obj4 = { style: tmp.placeholderLabel };
   items1[1] = tmp2(hasOwnProperty, obj4);
   items1[2] = items;
-  return authStore4(authStore3, obj2);
+  return authStore3(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteActionSheet(channel) {

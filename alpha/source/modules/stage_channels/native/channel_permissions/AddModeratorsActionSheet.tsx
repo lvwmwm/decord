@@ -1,10 +1,10 @@
-// Module ID: 17458
-// Function ID: 17459
+// Module ID: 17530
+// Function ID: 17531
 // Name: AddModeratorsActionSheet
-// Dependencies: [5, 32, 19, 17, 2086, 7489, 21, 5091, 587, 504, 5418, 5890, 1998, 8588, 4767, 5055, 6836, 6835, 1126, 5376, 8618, 2072, 2]
+// Dependencies: [5, 32, 19, 17, 2087, 7489, 21, 5092, 587, 504, 5421, 5893, 1998, 8603, 4808, 5056, 6839, 6838, 1126, 5379, 8634, 2073, 2]
 // Exports: default
 
-// Module 17458 (AddModeratorsActionSheet)
+// Module 17530 (AddModeratorsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7489 */
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import createStyles from "createStyles" /* 5091 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, c4, c5, closure_0, closure_1, closure_2, id, row;
@@ -51,7 +51,7 @@ export default function AddModeratorsActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -115,7 +115,7 @@ export default function AddModeratorsActionSheet(channel) {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp16) {
           closure_2 = tmp16;

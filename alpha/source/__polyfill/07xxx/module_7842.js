@@ -1,45 +1,27 @@
 // Module ID: 7842
 // Function ID: 7843
-// Dependencies: [7843]
+// Dependencies: [7827]
 
 // Module 7842
-import _modDef7843 from "module_7843" /* 7843 */;
+import _mod7827 from "module_7827" /* 7827 */;
 
-
-export default {
-  decode(arg0, buffer) {
-    function decodeAsciiValue(arg0) {
-      try {
-        const _decodeURIComponent = decodeURIComponent;
-        const _escape = escape;
-        return decodeURIComponent(escape(arg0));
-      } catch (err) {
-        return arg0;
-      }
+let obj = {
+  isXMLFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      const obj = _mod7827;
+      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
     }
-    const obj = _modDef7843;
-    const value = obj.get();
-    if (undefined !== value) {
-      if (undefined !== arg0) {
-        try {
-          const self = this;
-          const self2 = this;
-          const value1 = new value(arg0);
-          const _DataView = DataView;
-          const decode = value1.decode;
-          if (buffer instanceof DataView) {
-            buffer = buffer.buffer;
-          } else {
-            const _Uint8Array = Uint8Array;
-            buffer = Uint8Array.from(buffer);
-          }
-          return decode(buffer);
-        } catch (err) {
-        }
-      }
-    }
-    const mapped = buffer.map((item) => String.fromCharCode(item));
-    return decodeAsciiValue(mapped.join(""));
+    return tmp;
   },
-  TAG_HEADER_SIZE: 5
+  findOffsets(byteLength) {
+    const xmpChunks = [];
+    const obj = { dataOffset, length: byteLength.byteLength };
+    xmpChunks.push(obj);
+    return { xmpChunks };
+  }
 };
+let c2 = 0;
+let c3 = "<?xpacket begin";
+
+export default obj;

@@ -1,16 +1,16 @@
-// Module ID: 2129
-// Function ID: 2130
+// Module ID: 2130
+// Function ID: 2131
 // Name: IntlLoaderStore
-// Dependencies: [5, 1902, 1267, 2130, 1126, 2140, 1165, 4153, 4628, 4659, 4661, 1255, 558, 576, 2]
+// Dependencies: [5, 1902, 1267, 2131, 1126, 2141, 1165, 4194, 4669, 4700, 4702, 1255, 558, 576, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess
 
-// Module 2129 (IntlLoaderStore)
+// Module 2130 (IntlLoaderStore)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2130 from "module_2130" /* 2130 */;
-import dateFnsLocales from "dateFnsLocales" /* 4153 */;
-import formatjs from "formatjs" /* 4628 */;
-import moment from "moment" /* 4659 */;
+import _modDef2131 from "module_2131" /* 2131 */;
+import dateFnsLocales from "dateFnsLocales" /* 4194 */;
+import formatjs from "formatjs" /* 4669 */;
+import moment from "moment" /* 4700 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1902 from "module_1902" /* 1902 */;
 import module_1267 from "module_1267" /* 1267 */;
@@ -52,7 +52,7 @@ let obj = function _setAppLocale() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = function _setAppLocale() {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else {
                   try {
@@ -130,7 +130,7 @@ let obj = function _setAppLocale() {
                       return obj;
                     } else {
                       c2 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     }
                   } catch (tmp10) {
                     c2 = 3;
@@ -160,7 +160,7 @@ let obj = function _setAppLocale() {
           } else {
             state.setLoadingSucceeded(closure_0);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp9) {
           c3 = 3;
@@ -184,7 +184,7 @@ obj = function _loadDateFnsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -210,7 +210,7 @@ obj = function _loadDateFnsLocale() {
               const obj4 = { value: tmp18(), done: false };
               return obj4;
             } else {
-              state.setLocaleData(require("module_2130"));
+              state.setLocaleData(require("module_2131"));
             }
           }
         } else if (arg0 === 1) {
@@ -225,7 +225,7 @@ obj = function _loadDateFnsLocale() {
           state.setLocaleData(closure_1);
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp10) {
         c3 = 3;
         throw tmp10;
@@ -247,7 +247,7 @@ obj = function _loadFormatJsLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -278,7 +278,7 @@ obj = function _loadFormatJsLocale() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp9) {
         c1 = 3;
         throw tmp9;
@@ -301,7 +301,7 @@ obj = function _setMomentLocale() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -352,7 +352,7 @@ obj = function _setMomentLocale() {
         const obj2 = closure_130_0(closure_130_2[10]);
         obj2.locale(closure_1);
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp25) {
         c4 = 3;
         throw tmp25;
@@ -367,15 +367,15 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "backgroundColor",
-    localeData: _modDef2130,
+    error: "color",
+    localeData: _modDef2131,
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "backgroundColor" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "color" });
       }
     },
     setLoadingFailed(error, arg1) {
@@ -406,13 +406,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLocaleD
   }
   let tmp4 = withEqualityFn(first);
   if (tmp4 == null) {
-    tmp4 = _modDef2130;
+    tmp4 = _modDef2131;
   }
   return tmp4;
 }) : (function useLocaleData() {
   let tmp = withEqualityFn((localeData) => localeData.localeData);
   if (tmp == null) {
-    tmp = _modDef2130;
+    tmp = _modDef2131;
   }
   return tmp;
 });

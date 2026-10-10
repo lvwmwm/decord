@@ -1,13 +1,13 @@
-// Module ID: 13791
-// Function ID: 13792
+// Module ID: 13843
+// Function ID: 13844
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 7112, 1999, 558, 576, 504, 1105, 7132, 8008, 2]
+// Dependencies: [5, 32, 19, 7118, 1999, 558, 576, 504, 1105, 7138, 8026, 2]
 
-// Module 13791 (useFetchGuildBoostSlots)
+// Module 13843 (useFetchGuildBoostSlots)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7112 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7118 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             try {
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp11) {
               c2 = 3;
@@ -199,7 +199,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             try {
@@ -243,7 +243,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGu
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp11) {
               c2 = 3;

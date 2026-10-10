@@ -1,10 +1,10 @@
-// Module ID: 4938
-// Function ID: 4939
+// Module ID: 4977
+// Function ID: 4978
 // Name: RootNavigationRef
 // Dependencies: [1504, 2]
 // Exports: getRootNavigationRef
 
-// Module 4938 (RootNavigationRef)
+// Module 4977 (RootNavigationRef)
 import Link from "Link" /* 1504 */;
 import size from "module_2" /* 2 */;
 

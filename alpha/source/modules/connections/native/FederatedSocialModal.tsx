@@ -1,16 +1,16 @@
-// Module ID: 12893
-// Function ID: 12894
+// Module ID: 12940
+// Function ID: 12941
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1085, 21, 5091, 5760, 1126, 6868, 4765, 12894, 6810, 5087, 6289, 1200, 5376, 558, 576, 6205, 6686, 2]
+// Dependencies: [5, 32, 19, 1085, 21, 5092, 5763, 1126, 6874, 4806, 12941, 6813, 5088, 6284, 1200, 5379, 558, 576, 6200, 6687, 2]
 
-// Module 12893 (FederatedSocialModal)
+// Module 12940 (FederatedSocialModal)
 import Constants from "Constants" /* 1085 */;
-import PlatformsDefault from "Platforms" /* 5760 */;
+import PlatformsDefault from "Platforms" /* 5763 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ function FederatedSocialModalScreen(onClose) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ function FederatedSocialModalScreen(onClose) {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp26) {
           closure_2 = tmp26;

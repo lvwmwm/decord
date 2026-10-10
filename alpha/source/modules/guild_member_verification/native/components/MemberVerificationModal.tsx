@@ -1,26 +1,25 @@
-// Module ID: 6154
-// Function ID: 6155
+// Module ID: 6147
+// Function ID: 6148
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 2124, 6155, 6156, 21, 4811, 1200, 5091, 587, 558, 576, 1631, 4992, 4930, 6157, 6159, 504, 4903, 584, 6109, 6160, 6161, 6174, 6175, 1126, 6774, 6191, 6727, 2]
+// Dependencies: [19, 17, 2125, 6148, 6149, 21, 4850, 1200, 5092, 587, 558, 576, 1631, 5031, 4969, 6150, 6152, 504, 4942, 6102, 6153, 6154, 6167, 6168, 1126, 6777, 6184, 6728, 2]
 
-// Module 6154 (MemberVerificationModal)
+// Module 6147 (MemberVerificationModal)
 import react_native from "react-native" /* 17 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4811 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4903 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6102 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6155 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6156 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6148 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6149 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
-let waitResult;
 
 let c10;
 let c9;
@@ -30,8 +29,6 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-let tmp3;
-const MemberVerificationAlertActionCreators = tmp3(6109);
 let View = react_native.View;
 ({ SCROLL_EVENT_TIMER_MS: metroImportDefault, useBannerHeight: metroImportAll } = MemberVerificationFormConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -52,6 +49,7 @@ const __initData5 = { code: "function MemberVerificationModalTsx5(){const{interp
 const __initData6 = { code: "function MemberVerificationModalTsx6(){const{interpolate,scrollTop,bannerHeight,safeAreaTop}=this.__closure;return{opacity:interpolate(scrollTop.get(),[0,bannerHeight-safeAreaTop],[0,1],'clamp')};}" };
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationModal(guildId) {
   let bottom;
+  let ref;
   let stateFromStores;
   let tmp17;
   let tmp19;
@@ -88,7 +86,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   const obj4 = guildId(top[14]);
   const isThemeDarkResult = obj4.isThemeDark(tmp9);
   View = isThemeDarkResult;
-  const tmp11 = closure_8();
+  const tmp11 = ref();
   let closure_5 = tmp11;
   const obj5 = guildId(top[6]);
   class A {
@@ -233,11 +231,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     tmp30 = cResult[11];
   }
   let closure_7 = tmp30;
-  closure_8 = sharedValue.useRef(onClose);
+  ref = sharedValue.useRef(onClose);
   if (cResult[12] !== onClose) {
     class Q {
       constructor() {
-        closure_8.current = onClose;
+        ref.current = onClose;
       }
     }
     class K {
@@ -258,7 +256,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   } else {
     class Q {
       constructor() {
-        closure_8.current = onClose;
+        ref.current = onClose;
       }
     }
   }
@@ -266,21 +264,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   if (cResult[14] !== tmp30) {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
     const items2 = [];
@@ -305,21 +297,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   } else {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
     tmp35 = cResult[16];
@@ -328,21 +314,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   if (cResult[17] !== guildId) {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
     class K {
@@ -362,66 +342,48 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   } else {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
   }
   if (null != tmp16) {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
   }
   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
-    const tmp40 = closure_9(tmp(tmp2[21]).ActivityIndicator, {});
+    const tmp40 = closure_9(tmp(tmp2[20]).ActivityIndicator, {});
     class K {
       constructor() {
         formFields = undefined;
@@ -440,42 +402,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   } else {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
   }
   if (cResult[20] !== tmp4.flexLoading) {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
     class K {
@@ -500,21 +450,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   } else {
     class Y {
       constructor() {
-        tmp = closure_7;
+        const tmp = closure_7;
         if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[19]);
-          waitResult = obj.wait(() => {
-            const current = ref.current;
-            if (current != null) {
-              current();
-            }
-            const obj = guildId(top[20]);
-            const result = obj.openMemberVerificationUpdateAlert();
-          });
+          const current = ref.current;
+          if (current != null) {
+            current();
+          }
+          const obj = MemberVerificationAlertActionCreators;
+          const result = obj.openMemberVerificationUpdateAlert();
         }
-        return;
       }
     }
   }
@@ -535,7 +479,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   let top;
   let stateFromStores;
   let memo2;
-  let closure_8;
+  let ref;
   let tmp = closure_12();
   let tmp2 = onClose;
   let tmp3 = top;
@@ -556,7 +500,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   const obj3 = guildId(top[14]);
   const isThemeDarkResult = obj3.isThemeDark(tmp7);
   let c4 = isThemeDarkResult;
-  const tmp9 = closure_8();
+  const tmp9 = ref();
   let closure_5 = tmp9;
   const fn2 = function b() {
     let items1;
@@ -637,24 +581,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     let closure_0 = Object.values(MemberVerificationTypes.VerificationFormFieldTypes);
     return formFields.some((field_type) => !closure_0.includes(field_type.field_type));
   }, items3);
-  closure_8 = obj10.useRef(onClose);
+  ref = obj10.useRef(onClose);
   const effect = obj10.useEffect(() => {
-    closure_8.current = onClose;
+    ref.current = onClose;
   });
   const items4 = [memo2];
   const effect1 = obj10.useEffect(() => {
-    let ref;
     const tmp = memo2;
     if (tmp) {
-      let obj = DispatcherDefault;
-      obj.wait(() => {
-        const current = ref.current;
-        if (current != null) {
-          current();
-        }
-        const obj = guildId(top[20]);
-        const result = obj.openMemberVerificationUpdateAlert();
-      });
+      const current = ref.current;
+      if (current != null) {
+        current();
+      }
+      const obj = MemberVerificationAlertActionCreators;
+      const result = obj.openMemberVerificationUpdateAlert();
     }
   }, items4);
   if (null != tmp13) {
@@ -664,12 +604,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
         const obj12 = { style: tmp.scrollContainer, contentContainerStyle: obj13, scrollEventThrottle: memo2, keyboardShouldPersistTaps: "handled", onScroll: animatedScrollHandler, children: items5 };
         const obj11 = { style: tmp.flex, children: items6 };
         obj13 = { paddingBottom: bottom };
-        const tmp2Result = tmp2(tmp3[28]);
+        const tmp2Result = tmp2(tmp3[27]);
         const ScrollView = tmp2(tmp3[6]).ScrollView;
         const obj14 = { guild: tmp13, scrollTop: sharedValue, hasManualFormFields: memo };
-        items5 = [closure_9(tmp2(tmp3[22]), obj14), , ];
+        items5 = [closure_9(tmp2(tmp3[21]), obj14), , ];
         const obj15 = { style: tmp.headerSeparator };
-        items5[1] = closure_9(tmp2(tmp3[23]), obj15);
+        items5[1] = closure_9(tmp2(tmp3[22]), obj15);
         const obj16 = {
           guild: tmp13,
           onSuccess: function handleSuccess(application_status) {
@@ -683,7 +623,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
                 },
           onClose
         };
-        items5[2] = closure_9(tmp2(tmp3[24]), obj16);
+        items5[2] = closure_9(tmp2(tmp3[23]), obj16);
         items6 = [closure_10(ScrollView, obj12), ];
         const obj17 = { style: items7, children: closure_10(PressableOpacity, obj19) };
         items7 = [tmp.closeButtonContainer, ];
@@ -691,7 +631,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
         items7[1] = obj18;
         obj19 = {
           accessibilityRole: "button",
-          accessibilityLabel: intl.string(guildId(tmp3[25]).t.cpT0Cq),
+          accessibilityLabel: intl.string(guildId(tmp3[24]).t.cpT0Cq),
           style: tmp.closeIconContainer,
           onPress() {
                   let tmp;
@@ -702,12 +642,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
                 },
           children: items9
         };
-        PressableOpacity = tmp4(tmp3[27]).PressableOpacity;
-        intl = tmp4(tmp3[25]).intl;
-        const obj20 = { source: tmp2(tmp3[26]), style: items8 };
+        PressableOpacity = tmp4(tmp3[26]).PressableOpacity;
+        intl = tmp4(tmp3[24]).intl;
+        const obj20 = { source: tmp2(tmp3[25]), style: items8 };
         items8 = [tmp.closeIconOverBanner, animatedStyle];
         items9 = [closure_9(closure_11, obj20), ];
-        const obj21 = { source: tmp2(tmp3[26]), style: items10 };
+        const obj21 = { source: tmp2(tmp3[25]), style: items10 };
         items10 = [tmp.closeIconAfterBanner, ];
         class S {
           constructor() {
@@ -726,7 +666,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
       return tmp27;
     }
   }
-  const obj22 = { style: tmp.flexLoading, children: closure_9(guildId(tmp3[21]).ActivityIndicator, {}) };
+  const obj22 = { style: tmp.flexLoading, children: closure_9(guildId(tmp3[20]).ActivityIndicator, {}) };
   tmp27 = closure_9(c4, obj22);
 });
 let result = size.fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationModal.tsx");

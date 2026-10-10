@@ -1,17 +1,17 @@
-// Module ID: 17055
-// Function ID: 17056
+// Module ID: 17123
+// Function ID: 17124
 // Name: ConjureSaveBackupSheet
-// Dependencies: [32, 19, 17, 13164, 21, 5091, 587, 558, 576, 17050, 4768, 1126, 3827, 5055, 6835, 17048, 5087, 6290, 5376, 5374, 6892, 2]
+// Dependencies: [32, 19, 17, 13213, 21, 5092, 587, 558, 576, 17118, 4809, 1126, 3849, 5056, 6838, 17116, 5088, 6285, 5379, 5377, 6898, 2]
 
-// Module 17055 (ConjureSaveBackupSheet)
+// Module 17123 (ConjureSaveBackupSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 17050 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 17118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -204,11 +204,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSav
     });
     nextPromise.then(() => {
       let intl;
-      const obj = { key: "VIBEGRATIONS_HISTORY_BACKUP_SAVED", content: intl.string(environment(onSaved[12]).OoHJfv) };
+      const obj = { text: intl.string(environment(onSaved[12]).OoHJfv) };
       const open = environment(onSaved[10]).open;
       environment(onSaved[10]);
       intl = projectId(onSaved[11]).intl;
-      open(obj);
+      open("VIBEGRATIONS_HISTORY_BACKUP_SAVED", obj);
       closure_1_2();
       const obj2 = environment(onSaved[13]);
       obj2.hideActionSheet(ConjureSaveBackupSheet_str);
@@ -273,11 +273,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSav
     });
     nextPromise.then(() => {
       let intl;
-      const obj = { key: "VIBEGRATIONS_HISTORY_BACKUP_SAVED", content: intl.string(environment(onSaved[12]).OoHJfv) };
+      const obj = { text: intl.string(environment(onSaved[12]).OoHJfv) };
       const open = environment(onSaved[10]).open;
       environment(onSaved[10]);
       intl = projectId(onSaved[11]).intl;
-      open(obj);
+      open("VIBEGRATIONS_HISTORY_BACKUP_SAVED", obj);
       closure_1_2();
       const obj2 = environment(onSaved[13]);
       obj2.hideActionSheet(ConjureSaveBackupSheet_str);

@@ -1,17 +1,17 @@
-// Module ID: 5746
-// Function ID: 5747
+// Module ID: 5749
+// Function ID: 5750
 // Name: StickersUtils
-// Dependencies: [1244, 2086, 2044, 1085, 5747, 1415, 1900, 1382, 1450, 2]
+// Dependencies: [1244, 2087, 2044, 1085, 5750, 1415, 1900, 1382, 1450, 2]
 // Exports: createStickerPackCategory, getFavoriteStickerIds, getFilenameForSticker, getMessageStickers, getStickerAssetUrl, getStickerFormatTypeFromFileType, getStickerPackBannerAssetUrl, getStickerPackPreviewSticker, getStickerTagForEmoji, isAvailableGuildSticker, isFavoriteSticker, isGuildSticker, isStandardSticker, isStickerAssetUrl, isStickerPackAnimated, shouldAnimateSticker
 
-// Module 5746 (StickersUtils)
+// Module 5749 (StickersUtils)
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import StickersTypes from "StickersTypes" /* 5747 */;
+import StickersTypes from "StickersTypes" /* 5750 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import StickersConstants from "StickersConstants" /* 2044 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,11 +20,11 @@ let c10;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f91835 = (id) => id.id === cover_sticker_id.cover_sticker_id;
+const f92115 = (id) => id.id === cover_sticker_id.cover_sticker_id;
 function getStickerExtensionFromFormatType(format_type) {
   if (StickersTypes.StickerFormat.PNG === format_type) {
     const SUPPORTS_WEBP = tmp(1415).SUPPORTS_WEBP;
-    const StickerExtensions = tmp(5747).StickerExtensions;
+    const StickerExtensions = tmp(5750).StickerExtensions;
     return SUPPORTS_WEBP ? StickerExtensions.WEBP : StickerExtensions.PNG;
   } else if (StickersTypes.StickerFormat.APNG === format_type) {
     return StickersTypes.StickerExtensions.APNG;
@@ -59,7 +59,7 @@ export const getStickerPackPreviewSticker = function getStickerPackPreviewSticke
   let closure_0 = cover_sticker_id;
   if (null != cover_sticker_id.cover_sticker_id) {
     const stickers = cover_sticker_id.stickers;
-    const found = stickers.find(f91835);
+    const found = stickers.find(f92115);
     if (null != found) {
       return found;
     }
@@ -120,7 +120,7 @@ export const getStickerAssetUrl = (format_type) => {
     let PNG = format_type.format_type;
     const tmp = format_type.format_type === StickersTypes.StickerFormat.GIF && flag;
     if (tmp) {
-      PNG = tmp23(5747).StickerFormat.PNG;
+      PNG = tmp23(5750).StickerFormat.PNG;
     }
     const tmp3 = getStickerExtensionFromFormatType(PNG);
     const STICKER_ASSETResult = Endpoints.STICKER_ASSET(format_type.id, tmp3);
@@ -228,7 +228,7 @@ export const createStickerPackCategory = function createStickerPackCategory(id) 
     first = id.stickers[0];
   } else {
     const stickers = id.stickers;
-    first = stickers.find(f91835);
+    first = stickers.find(f92115);
   }
   return obj;
 };

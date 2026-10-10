@@ -1,14 +1,14 @@
-// Module ID: 17932
-// Function ID: 17933
+// Module ID: 18004
+// Function ID: 18005
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2128, 7009, 6804, 8105, 17933, 584, 11, 17935, 2]
+// Dependencies: [5, 32, 2129, 7015, 6807, 8123, 18005, 584, 11, 18007, 2]
 
-// Module 17932 (ChangelogManager)
+// Module 18004 (ChangelogManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
-import ChangelogStore from "ChangelogStore" /* 7009 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import ChangelogStore from "ChangelogStore" /* 7015 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -59,7 +59,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -123,13 +123,13 @@ class ChangelogManager extends AutomaticLifecycleManager {
                 const obj15 = tmp(latestChangelogId[7]);
                 obj15.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } else if (true !== body[latestChangelogId].show_on_startup) {
                 c3 = 0;
                 const obj14 = tmp(latestChangelogId[7]);
                 obj14.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } else {
                 closure_3 = closure_1_6.lastSeenChangelogId();
                 closure_4 = closure_1_6.lastSeenChangelogDate();
@@ -140,7 +140,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj13 = tmp(latestChangelogId[7]);
                     obj13.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 }
                 c4 = 3;
@@ -167,7 +167,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
               const obj7 = tmp(latestChangelogId[7]);
               obj7.dispatch({ type: "CHANGE_LOG_RESOLVED" });
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             } else {
               if (null != closure_4) {
                 if (null != closure_1_6.lastSeenChangelogDate()) {
@@ -176,7 +176,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj3 = tmp(latestChangelogId[7]);
                     obj3.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   } else {
                     let tmp5 = closure_0;
                     const _Date = Date;
@@ -199,7 +199,7 @@ class ChangelogManager extends AutomaticLifecycleManager {
                     const obj2 = tmp(latestChangelogId[7]);
                     obj2.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 }
               }

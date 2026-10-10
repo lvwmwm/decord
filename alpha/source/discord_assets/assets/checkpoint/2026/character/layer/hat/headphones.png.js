@@ -1,8 +1,8 @@
-// Module ID: 5581
-// Function ID: 5582
+// Module ID: 5584
+// Function ID: 5585
 // Dependencies: [2]
 
-// Module 5581
+// Module 5584
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/hat/headphones.png.js");

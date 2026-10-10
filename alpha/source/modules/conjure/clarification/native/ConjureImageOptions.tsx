@@ -1,24 +1,24 @@
-// Module ID: 17172
-// Function ID: 17173
+// Module ID: 17242
+// Function ID: 17243
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 13164, 21, 5091, 587, 558, 576, 17073, 8192, 1126, 3827, 5087, 6163, 4793, 6184, 6270, 17169, 6188, 8114, 5048, 17173, 8370, 17174, 5376, 17176, 2]
+// Dependencies: [5, 32, 19, 17, 13213, 21, 5092, 587, 558, 576, 17141, 8208, 1126, 3849, 5088, 6156, 4832, 6177, 6265, 17239, 6181, 7573, 5049, 17243, 8386, 17244, 5379, 17246, 2]
 
-// Module 17172 (clarification/ConjureImageOptions)
+// Module 17242 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3827 from "module_3827" /* 3827 */;
-import react_native from "react-native" /* 4793 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import openMediaModal from "openMediaModal" /* 8370 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17073 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 17169 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import react_native from "react-native" /* 4832 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import openMediaModal from "openMediaModal" /* 8386 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17141 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 17239 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,8 +42,8 @@ let obj8;
 let obj9;
 let tmp;
 const intl5 = tmp(1126);
-const Text_Text = tmp(5087);
-const ImageWarningIcon2 = tmp(8192);
+const Text_Text = tmp(5088);
+const ImageWarningIcon2 = tmp(8208);
 let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native2);
 const getAttachmentUrl = ConjureConnectionStore.getAttachmentUrl;
@@ -112,7 +112,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       const brokenText = tmp4.brokenText;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = intl5.intl;
-        const stringResult = intl.string(_modDef3827.lhgD88);
+        const stringResult = intl.string(_modDef3849.lhgD88);
         cResult[4] = stringResult;
         tmp21 = stringResult;
       } else {
@@ -244,10 +244,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   if (gone) {
     const obj3 = { style: tmp.broken, children: items1 };
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(8192).ImageWarningIcon;
+    const ImageWarningIcon = tmp2(8208).ImageWarningIcon;
     items1 = [React4(ImageWarningIcon, obj4), ];
-    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3827.lhgD88) };
-    const Text = tmp2(5087).Text;
+    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3849.lhgD88) };
+    const Text = tmp2(5088).Text;
     intl = tmp2(1126).intl;
     items1[1] = React4(Text, obj5);
     obj2.children = authStore(metroImportDefault, obj3);
@@ -323,7 +323,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1126).intl;
-        const stringResult = intl.string(_modDef3827["4/eeDD"]);
+        const stringResult = intl.string(_modDef3849["4/eeDD"]);
         cResult[6] = stringResult;
         tmp11 = stringResult;
       } else {
@@ -348,8 +348,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                   const intl2 = tmp(1126).intl;
                   const obj2 = { answer: option.label };
                   cResult[18] = option.label;
-                  cResult[19] = intl2.formatToPlainString(_modDef3827.AQbxhf, obj2);
-                  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3827.AQbxhf, obj2);
+                  cResult[19] = intl2.formatToPlainString(_modDef3849.AQbxhf, obj2);
+                  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3849.AQbxhf, obj2);
                 }
                 if (cResult[20] === onRemove) {
                   if (cResult[23] === onRemove) {
@@ -511,7 +511,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                       return;
                     }
                   }
-                  tmp30[1] = intl3.string(_modDef3827.HQEXJM);
+                  tmp30[1] = intl3.string(_modDef3849.HQEXJM);
                   const items = [tmp30];
                   tmp27 = items;
                 } else {
@@ -661,7 +661,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     radioA11yNative = checkboxA11yNative;
   }
   const intl = tmp2(1126).intl;
-  const stringResult = intl.string(_modDef3827["4/eeDD"]);
+  const stringResult = intl.string(_modDef3849["4/eeDD"]);
   if (null != galleryWidth) {
     rowTile = { width: galleryWidth };
     const obj3 = { width: galleryWidth };
@@ -680,7 +680,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     onPress: fn,
     accessibilityRole: null,
     accessibilityState: null,
-    accessibilityLabel: intl2.formatToPlainString(_modDef3827.AQbxhf, obj7),
+    accessibilityLabel: intl2.formatToPlainString(_modDef3849.AQbxhf, obj7),
     accessibilityActions: tmp11,
     onAccessibilityAction(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
@@ -696,7 +696,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     children: items4
   };
   fn = undefined;
-  const Card = tmp2(6188).Card;
+  const Card = tmp2(6181).Card;
   if (!disabled) {
     fn = () => closure_1_2(option);
   }
@@ -704,7 +704,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   intl2 = tmp2(1126).intl;
   obj7 = { answer: option.label };
   if (null != onRemove) {
-    const obj8 = { name: "remove", label: intl3.string(_modDef3827.HQEXJM) };
+    const obj8 = { name: "remove", label: intl3.string(_modDef3849.HQEXJM) };
     intl3 = tmp2(1126).intl;
     const items1 = [obj8];
     tmp11 = items1;
@@ -733,10 +733,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     const obj13 = { style: tmp.indicator, children: tmp12Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp12Result = tmp12(tmp2(6184).FormCheckbox, obj14);
+      tmp12Result = tmp12(tmp2(6177).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp12Result = tmp12(tmp2(6270).FormRadio, obj15);
+      tmp12Result = tmp12(tmp2(6265).FormRadio, obj15);
     }
     tmp12Result3 = tmp12(tmp9, obj13);
   } else {
@@ -745,7 +745,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   items3[1] = tmp12Result3;
   items4 = [authStore(metroImportDefault, obj10), ];
   const obj16 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(5087).Text;
+  const Text = tmp2(5088).Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp12(Text, obj16);
   items5 = [authStore(Card, obj6), ];
@@ -758,13 +758,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(8114).IconButton;
+      IconButton = tmp2(7573).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(5048).TrashIcon;
+        MaximizeIcon = tmp2(5049).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(17173).MaximizeIcon;
+        MaximizeIcon = tmp2(17243).MaximizeIcon;
       }
-      obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3827.JGjZMs, obj20) };
+      obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3849.JGjZMs, obj20) };
       if (null == onRemove) {
         onRemove = () => closure_1_3(option);
       }
@@ -1014,7 +1014,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
                                     const obj2 = { value, done: true };
                                     return obj2;
                                   } else {
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "+51" };
                                   }
                                 } else {
                                   try {
@@ -1054,7 +1054,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
                                         onUpload(obj.uploadConjurePickedFile(tmp, closure_1));
                                       }
                                       c3 = 3;
-                                      return { value: "IconComponent", done: null };
+                                      return { value: "IconComponent", done: "+51" };
                                     }
                                   } catch (tmp15) {
                                     c3 = 3;
@@ -1442,7 +1442,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -1482,7 +1482,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp15) {
         c3 = 3;

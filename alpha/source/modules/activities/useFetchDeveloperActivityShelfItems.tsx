@@ -1,11 +1,11 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11803
+// Function ID: 11804
 // Name: useFetchDeveloperActivityShelfItems
-// Dependencies: [19, 9046, 558, 576, 10803, 2041, 504, 10778, 2]
+// Dependencies: [19, 9065, 558, 576, 10846, 2041, 504, 10817, 2]
 
-// Module 11759 (useFetchDeveloperActivityShelfItems)
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 9046 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10778 */;
+// Module 11803 (useFetchDeveloperActivityShelfItems)
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 9065 */;
+import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10817 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchDe
     constructor() {
       const tmp = isActivitiesEnabledForCurrentPlatform && first && stateFromStores === DevShelfFetchState.INITIALIZED;
       if (tmp) {
-        const obj = EmbeddedActivitiesActionCreators;
+        const obj = fetchDeveloperApplications;
         const developerApplications = obj.fetchDeveloperApplications();
       }
     }
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchDe
   const effect = stateFromStores.useEffect(() => {
     const tmp = isActivitiesEnabledForCurrentPlatform && setting && stateFromStores === DevShelfFetchState.INITIALIZED;
     if (tmp) {
-      const obj = EmbeddedActivitiesActionCreators;
+      const obj = fetchDeveloperApplications;
       const developerApplications = obj.fetchDeveloperApplications();
     }
   }, items1);

@@ -1,20 +1,20 @@
-// Module ID: 13339
-// Function ID: 13340
+// Module ID: 13389
+// Function ID: 13390
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1085, 21, 5091, 587, 13338, 8956, 9023, 1265, 8968, 4768, 1126, 8957, 8953, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 587, 13388, 8975, 9042, 1265, 8987, 4809, 1126, 8976, 8972, 2]
 // Exports: default
 
-// Module 13339 (AddToWishlistItemCard)
+// Module 13389 (AddToWishlistItemCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import SKUPreviewDefault from "SKUPreview" /* 8956 */;
-import HeartOutlineIcon2 from "HeartOutlineIcon" /* 9023 */;
+import SKUPreviewDefault from "SKUPreview" /* 8975 */;
+import HeartOutlineIcon2 from "HeartOutlineIcon" /* 9042 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -85,7 +85,7 @@ export default function AddToWishlistItemCard(sku) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -129,11 +129,11 @@ export default function AddToWishlistItemCard(sku) {
         } else {
           if (2 === wishlistId) {
             c3 = 1;
-            const obj13 = { key: "WISHLIST_ADD_SUGGESTION_ERROR", content: intl.string(tmp(analyticsLocations[14]).t.F8FvUy) };
+            const obj13 = { text: intl.string(tmp(analyticsLocations[14]).t.F8FvUy) };
             const open = wishlistId(analyticsLocations[13]).open;
             const tmp12 = wishlistId(analyticsLocations[13]);
             intl = tmp(analyticsLocations[14]).intl;
-            open(obj13);
+            open("WISHLIST_ADD_SUGGESTION_ERROR", obj13);
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -150,7 +150,7 @@ export default function AddToWishlistItemCard(sku) {
           closure_128_7(false);
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp33) {
         analyticsLocations = tmp33;
         if (0 === c3) {

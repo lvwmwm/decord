@@ -1,9 +1,9 @@
-// Module ID: 14857
-// Function ID: 14858
+// Module ID: 14916
+// Function ID: 14917
 // Name: EditableTileAvatarButton
-// Dependencies: [19, 5080, 8268, 21, 558, 576, 504, 2041, 8277, 1200, 1415, 14856, 1126, 14853, 14787, 2]
+// Dependencies: [19, 5081, 8284, 21, 558, 576, 504, 2041, 8293, 1200, 1415, 14915, 1126, 14912, 14843, 2]
 
-// Module 14857 (EditableTileAvatarButton)
+// Module 14916 (EditableTileAvatarButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,22 +11,23 @@ import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8277 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 14853 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 14856 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8293 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 14912 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 14915 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8268 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8284 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp21;
-const SpinAnimationDefault = tmp21(14787);
+const SpinAnimationDefault = tmp21(14843);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTileAvatarButtonBase(arg0) {
   let avatarChange;
   let defaultAvatarURL;
+  let enableSpinAnimation;
   let onPress;
   let tmp10;
   let tmp11;
@@ -37,95 +38,90 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
   let tmp16;
   let tmp17;
   let tmp23;
-  let tmp4;
   let tmp5;
+  let tmp6;
   let useReducedMotion;
   let user;
   const obj = react2;
-  const cResult = obj.c(31);
-  ({ user, avatarChange, onPress } = arg0);
+  const cResult = obj.c(32);
+  ({ user, avatarChange, onPress, enableSpinAnimation } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function l() {
+    const fn = function o() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[0] = items;
     cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
+    tmp5 = items;
+    tmp6 = fn;
   } else {
-    [tmp4, tmp5] = cResult;
+    [tmp5, tmp6] = cResult;
   }
   const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   const GifAutoPlay = tmp(2041).GifAutoPlay;
-  let tmp9 = null == avatarChange;
-  const setting = GifAutoPlay.useSetting();
-  if (tmp9) {
-    tmp9 = !stateFromStores;
-  }
-  if (tmp9) {
-    tmp9 = setting;
-  }
+  const tmp9 = !stateFromStores && GifAutoPlay.useSetting();
   if (cResult[2] === avatarChange) {
-    if (cResult[3] === onPress) {
-      if (cResult[4] === tmp9) {
-        if (cResult[5] === user) {
-          tmp10 = cResult[6];
-          tmp11 = cResult[7];
-          tmp12 = cResult[8];
-          tmp13 = cResult[9];
-          tmp14 = cResult[10];
-          tmp15 = cResult[11];
-          tmp16 = cResult[12];
-          tmp17 = cResult[13];
-        }
-        if (cResult[18] === tmp10) {
-          let tmp29;
-          if (cResult[19] === tmp13) {
-            tmp29 = cResult[20];
+    if (cResult[3] === tmp9) {
+      if (cResult[4] === (undefined !== enableSpinAnimation && enableSpinAnimation)) {
+        if (cResult[5] === onPress) {
+          if (cResult[6] === user) {
+            tmp10 = cResult[7];
+            tmp11 = cResult[8];
+            tmp12 = cResult[9];
+            tmp13 = cResult[10];
+            tmp14 = cResult[11];
+            tmp15 = cResult[12];
+            tmp16 = cResult[13];
+            tmp17 = cResult[14];
           }
-          if (cResult[21] === tmp11) {
-            if (cResult[22] === tmp14) {
-              let tmp32;
-              if (cResult[23] === tmp29) {
-                tmp32 = cResult[24];
-              }
-              if (cResult[25] === tmp12) {
-                if (cResult[26] === tmp15) {
-                  if (cResult[27] === tmp16) {
-                    if (cResult[28] === tmp17) {
-                      let tmp35;
-                      if (cResult[29] === tmp32) {
-                        tmp35 = cResult[30];
+          if (cResult[19] === tmp10) {
+            let tmp30;
+            if (cResult[20] === tmp13) {
+              tmp30 = cResult[21];
+            }
+            if (cResult[22] === tmp11) {
+              if (cResult[23] === tmp14) {
+                let tmp33;
+                if (cResult[24] === tmp30) {
+                  tmp33 = cResult[25];
+                }
+                if (cResult[26] === tmp12) {
+                  if (cResult[27] === tmp33) {
+                    if (cResult[28] === tmp15) {
+                      if (cResult[29] === tmp16) {
+                        let tmp36;
+                        if (cResult[30] === tmp17) {
+                          tmp36 = cResult[31];
+                        }
+                        return tmp36;
                       }
-                      return tmp35;
                     }
                   }
                 }
+                const tmp38 = <tmp12 accessibilityLabel={tmp15} accessibilityValue={tmp16} onPress={tmp17}>{tmp33}</tmp12>;
+                cResult[26] = tmp12;
+                cResult[27] = tmp33;
+                cResult[28] = tmp15;
+                cResult[29] = tmp16;
+                cResult[30] = tmp17;
+                cResult[31] = tmp38;
+                tmp36 = tmp38;
               }
-              const tmp37 = <tmp12 accessibilityLabel={tmp15} accessibilityValue={tmp16} onPress={tmp17}>{tmp32}</tmp12>;
-              cResult[25] = tmp12;
-              cResult[26] = tmp15;
-              cResult[27] = tmp16;
-              cResult[28] = tmp17;
-              cResult[29] = tmp32;
-              cResult[30] = tmp37;
-              tmp35 = tmp37;
             }
+            const tmp35 = <tmp11 shouldAnimate={tmp14}>{tmp30}</tmp11>;
+            cResult[22] = tmp11;
+            cResult[23] = tmp14;
+            cResult[24] = tmp30;
+            cResult[25] = tmp35;
+            tmp33 = tmp35;
           }
-          const tmp34 = <tmp11 shouldAnimate={tmp14}>{tmp29}</tmp11>;
-          cResult[21] = tmp11;
-          cResult[22] = tmp14;
-          cResult[23] = tmp29;
-          cResult[24] = tmp34;
-          tmp32 = tmp34;
+          const tmp32 = <tmp10 source={tmp13} size={native.AvatarSizes.XLARGE_72} />;
+          cResult[19] = tmp10;
+          cResult[20] = tmp13;
+          cResult[21] = tmp32;
+          tmp30 = tmp32;
         }
-        const tmp31 = <tmp10 source={tmp13} size={native.AvatarSizes.XLARGE_72} />;
-        cResult[18] = tmp10;
-        cResult[19] = tmp13;
-        cResult[20] = tmp31;
-        tmp29 = tmp31;
       }
     }
   }
@@ -143,39 +139,40 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
     }
   }
   const tmp22 = UserProfileEditableTileBaseDefault;
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.lqaIxI);
-    cResult[14] = stringResult;
+    cResult[15] = stringResult;
     tmp23 = stringResult;
   } else {
-    tmp23 = cResult[14];
+    tmp23 = cResult[15];
   }
-  if (cResult[15] === avatarChange) {
+  if (cResult[16] === avatarChange) {
     let tmp25;
-    if (cResult[16] === user.avatar) {
-      tmp25 = cResult[17];
+    if (cResult[17] === user.avatar) {
+      tmp25 = cResult[18];
     }
     const tmp21Result = SpinAnimationDefault;
     const Avatar = tmp(1200).Avatar;
     const tmpResult7 = AvatarUtils;
     const source = tmpResult7.makeSource(defaultAvatarURL);
     cResult[2] = avatarChange;
-    cResult[3] = onPress;
-    cResult[4] = tmp9;
-    cResult[5] = user;
-    cResult[6] = Avatar;
-    cResult[7] = tmp21Result;
-    cResult[8] = tmp22;
-    cResult[9] = source;
-    cResult[10] = tmp9;
-    cResult[11] = tmp23;
-    cResult[12] = tmp25;
-    cResult[13] = onPress;
-    tmp16 = tmp25;
+    cResult[3] = tmp9;
+    cResult[4] = undefined !== enableSpinAnimation && enableSpinAnimation;
+    cResult[5] = onPress;
+    cResult[6] = user;
+    cResult[7] = Avatar;
+    cResult[8] = tmp21Result;
+    cResult[9] = tmp22;
+    cResult[10] = source;
+    cResult[11] = tmp9 && (undefined !== enableSpinAnimation && enableSpinAnimation);
+    cResult[12] = tmp23;
+    cResult[13] = tmp25;
+    cResult[14] = onPress;
+    tmp14 = tmp28;
     tmp17 = onPress;
+    tmp16 = tmp25;
     tmp15 = tmp23;
-    tmp14 = tmp9;
     tmp13 = source;
     tmp12 = tmp22;
     tmp11 = tmp21Result;
@@ -183,30 +180,27 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
   }
   const tmpResult8 = UserProfileEditingAccessibilityUtils;
   const avatarAccessibleValue = tmpResult8.getAvatarAccessibleValue(avatarChange, user.avatar);
-  cResult[15] = avatarChange;
-  cResult[16] = user.avatar;
-  cResult[17] = avatarAccessibleValue;
+  cResult[16] = avatarChange;
+  cResult[17] = user.avatar;
+  cResult[18] = avatarAccessibleValue;
   tmp25 = avatarAccessibleValue;
 }) : (function EditableTileAvatarButtonBase(onPress) {
   let avatarChange;
   let defaultAvatarURL;
+  let enableSpinAnimation;
   let tmpResult6;
   let useReducedMotion;
   let user;
-  ({ user, avatarChange } = onPress);
+  ({ user, avatarChange, enableSpinAnimation } = onPress);
   onPress = onPress.onPress;
+  if (enableSpinAnimation === undefined) {
+    enableSpinAnimation = false;
+  }
   const items = [AccessibilityStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const GifAutoPlay = UserSettings.GifAutoPlay;
-  let tmp5 = null == avatarChange;
-  const setting = GifAutoPlay.useSetting();
-  if (tmp5) {
-    tmp5 = !stateFromStores;
-  }
-  if (tmp5) {
-    tmp5 = setting;
-  }
+  let tmp4 = !stateFromStores && GifAutoPlay.useSetting();
   const obj2 = { userId: user.id, image: avatarChange };
   const tmpResult = RecentAvatarUtils;
   const pendingAvatarSrc = tmpResult.getPendingAvatarSrc(obj2);
@@ -217,14 +211,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
   } else {
     defaultAvatarURL = pendingAvatarSrc;
     if (pendingAvatarSrc == null) {
-      defaultAvatarURL = tmp7;
+      defaultAvatarURL = tmp6;
     }
   }
   UserProfileEditableTileBaseDefault;
   const intl = tmp(1126).intl;
   const tmpResult5 = UserProfileEditingAccessibilityUtils;
-  ({ source: tmpResult6.makeSource(defaultAvatarURL), size: native.AvatarSizes.XLARGE_72 });
   SpinAnimationDefault;
+  if (tmp4) {
+    tmp4 = enableSpinAnimation;
+  }
+  ({ source: tmpResult6.makeSource(defaultAvatarURL), size: native.AvatarSizes.XLARGE_72 });
   const Avatar = tmp(1200).Avatar;
   tmpResult6 = AvatarUtils;
   return <tmp9 accessibilityLabel={intl.string(intl2.t.lqaIxI)} accessibilityValue={tmpResult5.getAvatarAccessibleValue(avatarChange, user.avatar)} onPress={onPress}>{null}</tmp9>;
@@ -232,18 +229,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTi
 let closure_6 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TryItOutEditableTileAvatarButton(arg0) {
+  let avatarChange;
+  let enableSpinAnimation;
   let onPress;
   let tmp4;
   let tmp5;
-  let tryItOutChanges;
   let user;
   const obj = react2;
-  const cResult = obj.c(6);
+  const cResult = obj.c(7);
   ({ user, onPress } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserProfileSettingsStore];
-    const fn = function o() {
-      return tryItOutChanges.getTryItOutChanges().tryItOutAvatar;
+    const fn = function u() {
+      const tryItOutAvatar = UserProfileSettingsStore.getTryItOutChanges().tryItOutAvatar;
+      let pendingAvatar = tryItOutAvatar;
+      if (tryItOutAvatar == null) {
+        pendingAvatar = UserProfileSettingsStore.getPendingChanges().pendingAvatar;
+      }
+      return { avatarChange: pendingAvatar, enableSpinAnimation: null == tryItOutAvatar };
     };
     cResult[0] = items;
     cResult[1] = fn;
@@ -253,30 +256,41 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TryItOutEdit
     [tmp4, tmp5] = cResult;
   }
   const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === stateFromStores) {
-    if (cResult[3] === onPress) {
-      let tmp8;
-      if (cResult[4] === user) {
-        tmp8 = cResult[5];
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
+  ({ avatarChange, enableSpinAnimation } = stateFromStoresObject);
+  if (cResult[2] === avatarChange) {
+    if (cResult[3] === enableSpinAnimation) {
+      if (cResult[4] === onPress) {
+        let tmp8;
+        if (cResult[5] === user) {
+          tmp8 = cResult[6];
+        }
+        return tmp8;
       }
-      return tmp8;
     }
   }
-  const tmp9 = <closure_6 user={user} avatarChange={stateFromStores} onPress={onPress} />;
-  cResult[2] = stateFromStores;
-  cResult[3] = onPress;
-  cResult[4] = user;
-  cResult[5] = tmp9;
+  const tmp9 = <closure_6 user={user} avatarChange={avatarChange} onPress={onPress} enableSpinAnimation={enableSpinAnimation} />;
+  cResult[2] = avatarChange;
+  cResult[3] = enableSpinAnimation;
+  cResult[4] = onPress;
+  cResult[5] = user;
+  cResult[6] = tmp9;
   tmp8 = tmp9;
 }) : (function TryItOutEditableTileAvatarButton(arg0) {
   let onPress;
-  let tryItOutChanges;
   let user;
   ({ user, onPress } = arg0);
   const items = [UserProfileSettingsStore];
   const obj = get_initialized;
-  return <closure_6 user={user} avatarChange={obj.useStateFromStores(items, () => tryItOutChanges.getTryItOutChanges().tryItOutAvatar)} onPress={onPress} />;
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const tryItOutAvatar = UserProfileSettingsStore.getTryItOutChanges().tryItOutAvatar;
+    let pendingAvatar = tryItOutAvatar;
+    if (tryItOutAvatar == null) {
+      pendingAvatar = UserProfileSettingsStore.getPendingChanges().pendingAvatar;
+    }
+    return { avatarChange: pendingAvatar, enableSpinAnimation: null == tryItOutAvatar };
+  });
+  return <closure_6 user={user} avatarChange={stateFromStoresObject.avatarChange} onPress={onPress} enableSpinAnimation={stateFromStoresObject.enableSpinAnimation} />;
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/EditableTileAvatarButton.tsx");
 

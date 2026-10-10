@@ -1,9 +1,9 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 15395
+// Function ID: 15396
 // Name: MuxIntegration
 // Dependencies: [2]
 
-// Module 15333 (MuxIntegration)
+// Module 15395 (MuxIntegration)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/video-qoe/integrations/MuxIntegration.tsx");
@@ -39,7 +39,7 @@ class MuxIntegration {
     return obj;
   }
   static getAppVersion() {
-    return "35020300000000";
+    return "35020400000000";
   }
   static getBuildChannel() {
     try {

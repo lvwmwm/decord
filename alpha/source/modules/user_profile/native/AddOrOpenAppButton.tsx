@@ -1,20 +1,20 @@
-// Module ID: 13064
-// Function ID: 13065
+// Module ID: 13111
+// Function ID: 13112
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 9220, 1085, 1502, 21, 558, 576, 11787, 10788, 5055, 6879, 11774, 4767, 1384, 7688, 9061, 1126, 587, 5376, 6849, 7008, 4946, 1629, 1265, 2]
+// Dependencies: [5, 32, 19, 9247, 1085, 1502, 21, 558, 576, 11831, 10862, 5056, 6885, 11818, 4808, 1384, 7705, 9081, 1126, 587, 5379, 6852, 7014, 4985, 1629, 1265, 2]
 
-// Module 13064 (AddOrOpenAppButton)
+// Module 13111 (AddOrOpenAppButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import ClipboardUtils from "ClipboardUtils" /* 6879 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9220 */;
-import ApplicationUtils from "ApplicationUtils" /* 10788 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11774 */;
-import useIsAppDMDefault from "useIsAppDM" /* 11787 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9247 */;
+import ApplicationUtils from "ApplicationUtils" /* 10862 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11818 */;
+import useIsAppDMDefault from "useIsAppDM" /* 11831 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -120,7 +120,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
             let tmp11;
             let obj2 = guildId(1384);
             if (!obj2.isDiscordUrl(customInstallUrl)) {
-              PlusSmallIcon = tmp(7688).LinkExternalSmallIcon;
+              PlusSmallIcon = tmp(7705).LinkExternalSmallIcon;
             }
             const _Symbol = Symbol;
             if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -240,10 +240,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
             cResult[15] = tmp5;
             cResult[16] = tmp4;
             cResult[17] = tmp13;
-            cResult[18] = jsx(tmp(5376).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
-            const tmp18 = jsx(tmp(5376).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
+            cResult[18] = jsx(tmp(5379).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
+            const tmp18 = jsx(tmp(5379).Button, { text: tmp11, onPress: tmp4, onLongPress: tmp5, accessibilityActions: tmp9, onAccessibilityAction: tmp10, icon: tmp13 });
           }
-          PlusSmallIcon = tmp(9061).PlusSmallIcon;
+          PlusSmallIcon = tmp(9081).PlusSmallIcon;
         }
       }
     }
@@ -282,7 +282,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
     let tmp6;
     let obj2 = guildId(1384);
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(7688).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(7705).LinkExternalSmallIcon;
       tmp6 = application;
     }
     const items1 = [application];
@@ -303,12 +303,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApp
         obj2.presentLinkCopied();
       }
     }, items1);
-    const Button = tmp6(5376).Button;
+    const Button = tmp6(5379).Button;
     let intl = tmp6(1126).intl;
     ({ size: "sm", color: guildId(587).colors.WHITE });
     return <Button text={intl.string(tmp6(1126).t.NgXl3C)} onPress={callback} onLongPress={tmp2} accessibilityActions={memo} onAccessibilityAction={callback1} icon={null} />;
   }
-  PlusSmallIcon = application(9061).PlusSmallIcon;
+  PlusSmallIcon = application(9081).PlusSmallIcon;
   tmp6 = application;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -369,7 +369,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAp
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -451,7 +451,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAp
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
         recipientIds = application1;
         c3(false);
@@ -504,7 +504,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAp
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -587,7 +587,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenAp
             obj.track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
         tmp = application1;
         closure_130_3(false);

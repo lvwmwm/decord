@@ -1,15 +1,15 @@
-// Module ID: 7050
-// Function ID: 7051
+// Module ID: 7056
+// Function ID: 7057
 // Name: useMuteStates
-// Dependencies: [2117, 502, 2012, 4709, 5112, 1085, 558, 576, 504, 2]
+// Dependencies: [2118, 502, 2012, 4750, 5113, 1085, 558, 576, 504, 2]
 
-// Module 7050 (useMuteStates)
+// Module 7056 (useMuteStates)
 import Constants from "Constants" /* 1085 */;
-import ImpersonateStore from "ImpersonateStore" /* 2117 */;
+import ImpersonateStore from "ImpersonateStore" /* 2118 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

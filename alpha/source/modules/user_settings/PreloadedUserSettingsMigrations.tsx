@@ -1,9 +1,9 @@
-// Module ID: 14633
-// Function ID: 14634
+// Module ID: 14687
+// Function ID: 14688
 // Name: PreloadedUserSettingsMigrations
-// Dependencies: [2064, 1085, 1209, 2048, 6902, 510, 1246, 504, 1240, 2049, 7236, 2]
+// Dependencies: [2065, 1085, 1209, 2048, 6908, 510, 1246, 504, 1240, 2049, 7242, 2]
 
-// Module 14633 (PreloadedUserSettingsMigrations)
+// Module 14687 (PreloadedUserSettingsMigrations)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,9 +12,9 @@ import wrappers from "wrappers" /* 1240 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1246 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2048 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import HotspotStore2 from "HotspotStore" /* 6902 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7236 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import HotspotStore2 from "HotspotStore" /* 6908 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7242 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 function migrateHotspotLocation(userContent, HUB_LINK_CHANNEL_NOTICE, CHANNEL_NOTICE_HUBLINK) {

@@ -120,7 +120,7 @@ function makeReplayDebugLogger() {
   }
   return obj;
 }
-const f83559 = (item) => {
+const f83800 = (item) => {
   mirror = mirror.mirror;
   return mirror.getId(item);
 };
@@ -3167,7 +3167,7 @@ function initInputObserver(sampling) {
       HermesBuiltin.arraySpread(items7, items1.map((item) => {
         let tmp;
         let tmp2;
-        const f83499 = () => {
+        const f83740 = () => {
           let ownPropertyDescriptor;
           const tmp3 = ownPropertyDescriptor || {};
           closure_0 = tmp;
@@ -3177,7 +3177,7 @@ function initInputObserver(sampling) {
           ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
           const _Object2 = window.Object;
           _Object2.defineProperty(closure_0, closure_1, tmp3);
-          return f83499;
+          return f83740;
         };
         [tmp, tmp2] = item;
         obj = {
@@ -3238,7 +3238,7 @@ function initInputObserver(sampling) {
           }
         };
         _Object2.defineProperty(tmp, tmp2, obj2);
-        return f83499;
+        return f83740;
       }), 0);
       const tmp8 = mapped;
       HermesBuiltin.apply(push, items7, mapped);
@@ -3427,7 +3427,7 @@ function initObservers(doc) {
     ({ mousemoveCb: closure_0, sampling, doc, mirror: closure_1 } = doc);
     closure_2 = undefined;
     closure_3 = undefined;
-    let f83497;
+    let f83738;
     items = undefined;
     if (false === sampling.mousemove) {
       return () => {
@@ -3468,7 +3468,7 @@ function initObservers(doc) {
         closure_2 = {};
         let c3 = null;
         let c4 = 0;
-        f83497 = function() {
+        f83738 = function() {
           function clearTimeout$2() {
             items = [...arguments];
             const tmp = closure_1_71("clearTimeout");
@@ -6177,7 +6177,7 @@ function getLargestContentfulPaint(arg0) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f83559);
+    mapped = tmp3.map(f83800);
   }
   return obj2;
 }
@@ -6239,7 +6239,7 @@ function getInteractionToNextPaint(arg0) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f83559);
+    mapped = tmp3.map(f83800);
   }
   return obj2;
 }
@@ -6255,7 +6255,7 @@ function getWebVital(value, name, items1, items) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (items1) {
-    mapped = items1.map(f83559);
+    mapped = items1.map(f83800);
   }
   return obj2;
 }
@@ -6515,7 +6515,7 @@ let obj = function _addEvent3() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let tmp36;
@@ -6560,7 +6560,7 @@ let obj = function _addEvent3() {
               } else {
                 c6 = 0;
                 c8 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             }
             c8 = 3;
@@ -6626,7 +6626,7 @@ let obj = function _addEvent3() {
           return obj;
         } else {
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp36) {
         if (0 === c6) {
@@ -6852,7 +6852,7 @@ obj = function _captureFetchBreadcrumbToReplay() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -6898,7 +6898,7 @@ obj = function _captureFetchBreadcrumbToReplay() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp24) {
           closure_5 = tmp24;
@@ -7201,7 +7201,7 @@ obj = function _getResponseInfo2() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -7349,7 +7349,7 @@ obj = function _parseFetchResponseBody2() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -7753,7 +7753,7 @@ obj = function _captureXhrBreadcrumbToReplay() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -7790,7 +7790,7 @@ obj = function _captureXhrBreadcrumbToReplay() {
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp19) {
             closure_5 = tmp19;
             if (0 === c6) {
@@ -7971,7 +7971,7 @@ obj = function _addMemoryEntry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -8124,7 +8124,7 @@ obj = function _prepareReplayEvent() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -8310,7 +8310,7 @@ obj = function _sendReplayRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -8522,7 +8522,7 @@ obj = function _sendReplay() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c5;
@@ -8574,7 +8574,7 @@ obj = function _sendReplay() {
               return obj7;
             } else {
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           }
         } else {
@@ -8620,7 +8620,7 @@ obj = function _sendReplay() {
                           const obj2 = { value, done: true };
                           return obj2;
                         } else {
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "+51" };
                         }
                       } else {
                         let c3;
@@ -8659,7 +8659,7 @@ obj = function _sendReplay() {
                               c3 = 0;
                             }
                             c4 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+51" };
                           }
                         } catch (tmp16) {
                           closure_2 = tmp16;
@@ -9359,7 +9359,7 @@ let closure_82 = (() => {
                     } while (-2 === id1);
                     if (-1 !== id) {
                       if (-1 !== id1) {
-                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F156233 */ }, onIframeLoad() { /* body not rendered: F156234 */ }, onStylesheetLoad() { /* body not rendered: F156235 */ }, onBlockedImageLoad() { /* body not rendered: F156236 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
+                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F156688 */ }, onIframeLoad() { /* body not rendered: F156689 */ }, onStylesheetLoad() { /* body not rendered: F156690 */ }, onBlockedImageLoad() { /* body not rendered: F156691 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
                         ({ doc: obj2.doc, mirror: obj2.mirror, blockClass: obj2.blockClass, blockSelector: obj2.blockSelector, maskAllText: obj2.maskAllText, unblockSelector: obj2.unblockSelector, maskTextClass: obj2.maskTextClass, unmaskTextClass: obj2.unmaskTextClass, maskTextSelector: obj2.maskTextSelector, unmaskTextSelector: obj2.unmaskTextSelector, inlineStylesheet: obj2.inlineStylesheet, maskInputOptions: obj2.maskInputOptions, maskAttributeFn: obj2.maskAttributeFn, maskTextFn: obj2.maskTextFn, maskInputFn: obj2.maskInputFn, slimDOMOptions: obj2.slimDOMOptions, dataURLOptions: obj2.dataURLOptions, recordCanvas: obj2.recordCanvas, inlineImages: obj2.inlineImages } = self);
                         const tmp25 = closure_3_58(value, obj3);
                         if (tmp25) {
@@ -9719,7 +9719,7 @@ let closure_82 = (() => {
                 let addedSet2;
                 let id1;
                 let tmp28;
-                const f83503 = () => { /* body not rendered: F83503 */ };
+                const f83744 = () => { /* body not rendered: F83744 */ };
                 const mirror = self.mirror;
                 const id = mirror.getId(childNodes);
                 target = target.target;
@@ -9755,7 +9755,7 @@ let closure_82 = (() => {
                     addedSet2.delete(childNodes);
                     childNodes = childNodes.childNodes;
                     if (childNodes != null) {
-                      let item = childNodes.forEach(f83503);
+                      let item = childNodes.forEach(f83744);
                     }
                     const droppedSet = tmp.droppedSet;
                     droppedSet.add(childNodes);
@@ -9839,7 +9839,7 @@ let closure_82 = (() => {
                             movedSet2.delete(childNodes);
                             const childNodes1 = childNodes.childNodes;
                             if (childNodes1 != null) {
-                              const item1 = childNodes1.forEach(f83503);
+                              const item1 = childNodes1.forEach(f83744);
                             }
                           }
                         } else {
@@ -10997,14 +10997,14 @@ try {
           });
         }
         const arr = closure_111.push(fn);
-        const f83553 = () => {
+        const f83794 = () => {
 
         };
         this._teardown = () => {
-          if (typeof f83553 === "function") {
+          if (typeof f83794 === "function") {
             let num2 = -1;
             if (closure_1_111) {
-              num2 = arr.indexOf(f83553);
+              num2 = arr.indexOf(f83794);
             }
             if (num2 > -1) {
               closure_1_111.splice(num2, 1);
@@ -11418,7 +11418,7 @@ try {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -11443,7 +11443,7 @@ try {
                 const events = tmp11.events;
                 events.push(tmp12);
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             }
           } catch (tmp7) {
@@ -11880,7 +11880,7 @@ try {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           while (true) {
@@ -11946,7 +11946,7 @@ try {
                 c6 = 0;
               }
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           }
         }
@@ -12040,14 +12040,14 @@ try {
         const debounce = tmp4.debounce;
         let merged = Object.assign(obj2);
         this._debouncedFlush = debounce(() => self._flush(), flushMinDelay, obj3);
-        const f136455 = (timestamp, arg1) => {
+        const f136886 = (timestamp, arg1) => {
           let resolved;
           let flag = false;
-          if (f136455.eventBuffer) {
+          if (f136886.eventBuffer) {
             flag = false;
-            if (!f136455.isPaused()) {
+            if (!f136886.isPaused()) {
               flag = false;
-              if (f136455.isEnabled()) {
+              if (f136886.isEnabled()) {
                 timestamp = timestamp.timestamp;
                 let result = timestamp;
                 if (timestamp <= 9999999999) {
@@ -12955,7 +12955,7 @@ try {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -12989,7 +12989,7 @@ try {
               closure_3.initializeSampling(id.id);
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp10) {
             c5 = 3;
             throw tmp10;
@@ -13534,7 +13534,7 @@ try {
                                       const obj2 = { value, done: true };
                                       return obj2;
                                     } else {
-                                      return { value: "IconComponent", done: null };
+                                      return { value: "IconComponent", done: "+51" };
                                     }
                                   } else {
                                     let c3;
@@ -13574,7 +13574,7 @@ try {
                                           c3 = 0;
                                         }
                                         c5 = 3;
-                                        return { value: "IconComponent", done: null };
+                                        return { value: "IconComponent", done: "+51" };
                                       }
                                     } catch (tmp13) {
                                       closure_2 = tmp13;
@@ -13625,7 +13625,7 @@ try {
                     } else if (arg0 === 2) {
                       return { value, done: true };
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     }
                   } else {
                     try {
@@ -13669,7 +13669,7 @@ try {
                             }
                           }
                           c4 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "+51" };
                         }
                       } else if (arg0 === 1) {
                         c4 = 3;
@@ -13700,7 +13700,7 @@ try {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else {
                   try {
@@ -13728,7 +13728,7 @@ try {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     }
                   } catch (tmp5) {
                     c0 = 3;
@@ -13742,7 +13742,7 @@ try {
           }
         }
         function setupPerformanceObserver(self) {
-          const f83558 = (metric) => {
+          const f83799 = (metric) => {
             const prop = closure_1.replayPerformanceEntries;
             prop.push(closure_0(metric.metric));
           };
@@ -13769,14 +13769,14 @@ try {
           let push = items.push;
           obj = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_125;
-          const result = obj.addLcpInstrumentationHandler(f83558);
+          const result = obj.addLcpInstrumentationHandler(f83799);
           const obj2 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_127;
-          const result1 = obj2.addClsInstrumentationHandler(f83558);
+          const result1 = obj2.addClsInstrumentationHandler(f83799);
           const obj3 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_128;
           closure_1 = self;
-          push(result, result1, obj3.addInpInstrumentationHandler(f83558));
+          push(result, result1, obj3.addInpInstrumentationHandler(f83799));
           return () => {
             const item = items.forEach((fn) => fn());
           };
@@ -14009,7 +14009,7 @@ try {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c4;
@@ -14160,7 +14160,7 @@ try {
               c4 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp36) {
             recordingData = tmp36;
             if (0 === c4) {
@@ -14395,7 +14395,7 @@ try {
         let maskFn;
         let onError;
         let workerUrl;
-        const f83588 = (item) => item.toLowerCase();
+        const f83829 = (item) => item.toLowerCase();
         obj = arg0;
         if (arg0 === undefined) {
           obj = {};
@@ -14563,8 +14563,8 @@ try {
         const merged = Object.assign(obj2);
         this._recordingOptions = obj3;
         obj4 = { flushMinDelay: num, flushMaxDelay: num2, minReplayDuration: Math.min(num3, 50000), maxReplayDuration: Math.min(num4, c15), stickySession: flag, useCompression: flag2, workerUrl, blockAllMedia: flag5, maskAllInputs: flag4, maskAllText: flag3, mutationBreadcrumbLimit: num5, mutationLimit: num6, slowClickTimeout: num7, slowClickIgnoreSelectors: prop, networkDetailAllowUrls: prop1, networkDetailDenyUrls: prop2, networkCaptureBodies: flag6, networkRequestHeaders: items5, networkResponseHeaders: items6, beforeAddRecordingEvent, beforeErrorSampling, onError, attachRawBodyFromRequest, _experiments };
-        items5 = [...closure_179, ...prop3.map(f83588)];
-        items6 = [...closure_179, ...prop4.map(f83588)];
+        items5 = [...closure_179, ...prop3.map(f83829)];
+        items6 = [...closure_179, ...prop4.map(f83829)];
         this._initialOptions = obj4;
         if (this._initialOptions.blockAllMedia) {
           let combined;

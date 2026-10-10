@@ -1,14 +1,14 @@
-// Module ID: 17514
-// Function ID: 17515
+// Module ID: 17586
+// Function ID: 17587
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 5091, 558, 576, 6165, 17515, 1126, 12315, 5087, 6191, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 6158, 17587, 1126, 12359, 5088, 6184, 2]
 
-// Module 17514 (MessageRequestMutualServers)
+// Module 17586 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
-import GuildIconDefault from "GuildIcon" /* 6165 */;
+import GuildIconDefault from "GuildIcon" /* 6158 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,14 +34,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
   const cResult = obj.c(26);
   ({ style, onPress, iconSize, textVariant, suffix, userId } = arg0);
   if (undefined === iconSize) {
-    iconSize = tmp(6165).GuildIconSizes.XXSMALL_12;
+    iconSize = tmp(6158).GuildIconSizes.XXSMALL_12;
   }
   let str = "text-xs/medium";
   if (undefined !== textVariant) {
     str = textVariant;
   }
   const tmp4 = closure_6();
-  const tmpResult = iconSize(17515);
+  const tmpResult = iconSize(17587);
   const mutualGuildsForMessageRequests = tmpResult.useMutualGuildsForMessageRequests(userId);
   if (cResult[0] === mutualGuildsForMessageRequests.length) {
     if (cResult[1] === iconSize) {
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
                           tmp24 = tmp25;
                         }
                         const obj2 = { accessibilityRole: "button", onPress, children: tmp21 };
-                        const tmp27 = closure_4(iconSize(6191).PressableOpacity, obj2);
+                        const tmp27 = closure_4(iconSize(6184).PressableOpacity, obj2);
                         cResult[23] = tmp21;
                         cResult[24] = onPress;
                         cResult[25] = tmp27;
@@ -106,7 +106,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
             }
           }
           const obj4 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp4.label, children: combined };
-          const tmp20 = closure_4(iconSize(5087).Text, obj4);
+          const tmp20 = closure_4(iconSize(5088).Text, obj4);
           cResult[14] = tmp4.label;
           cResult[15] = combined;
           cResult[16] = str;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
               return React3(GuildIconDefault, obj, guild.id);
             })
       };
-      const GuildIconPile = tmp(12315).GuildIconPile;
+      const GuildIconPile = tmp(12359).GuildIconPile;
       tmp13 = closure_4(GuildIconPile, obj6);
     }
     cResult[0] = mutualGuildsForMessageRequests.length;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(6165).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(6158).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -190,7 +190,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  let obj = iconSize(17515);
+  let obj = iconSize(17587);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -215,13 +215,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
           return React3(GuildIconDefault, obj, guild.id);
         })
     };
-    const GuildIconPile = tmp4(12315).GuildIconPile;
+    const GuildIconPile = tmp4(12359).GuildIconPile;
     tmp9 = closure_4(GuildIconPile, obj4);
   }
   items1 = [tmp9, ];
   const obj5 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: combined };
   combined = formatResult;
-  const Text = tmp4(5087).Text;
+  const Text = tmp4(5088).Text;
   if (null != suffix) {
     const _HermesInternal = HermesInternal;
     combined = "" + formatResult + " \u00B7 " + suffix;
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
     tmp11Result = tmp7Result;
     if (mutualGuildsForMessageRequests.length > 0) {
       const obj6 = { accessibilityRole: "button", onPress, children: tmp7Result };
-      tmp11Result = tmp11(tmp4(6191).PressableOpacity, obj6);
+      tmp11Result = tmp11(tmp4(6184).PressableOpacity, obj6);
     }
   }
   return tmp11Result;

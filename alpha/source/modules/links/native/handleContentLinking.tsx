@@ -1,12 +1,12 @@
-// Module ID: 9645
-// Function ID: 9646
+// Module ID: 9674
+// Function ID: 9675
 // Name: handleContentLinking
-// Dependencies: [5, 6139, 1085, 5941, 6943, 1112, 9646, 2]
+// Dependencies: [5, 6132, 1085, 5934, 6949, 1112, 9675, 2]
 // Exports: default
 
-// Module 9645 (handleContentLinking)
+// Module 9674 (handleContentLinking)
 import Constants from "Constants" /* 1085 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6139 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6132 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _handleContentLinking() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -134,7 +134,7 @@ let obj = function _handleContentLinking() {
               obj5.setSelectedSummary(c1, c4);
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
           if (safe) {
             const obj9 = { navigationReplace, openChannel: true, skipMessageFetch, isAppStartupNavigation };

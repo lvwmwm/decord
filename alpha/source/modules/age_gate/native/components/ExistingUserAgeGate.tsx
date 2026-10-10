@@ -1,21 +1,21 @@
-// Module ID: 17912
-// Function ID: 17913
+// Module ID: 17984
+// Function ID: 17985
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 2058, 1390, 1110, 17911, 1085, 21, 5091, 558, 576, 1503, 504, 1265, 1126, 2127, 38, 16296, 5941, 4661, 16318, 5087, 17913, 5376, 6810, 2]
+// Dependencies: [5, 32, 19, 17, 2059, 1390, 1110, 17983, 1085, 21, 5092, 558, 576, 1503, 504, 1265, 1126, 2128, 38, 16363, 5934, 4702, 16385, 5088, 17985, 5379, 6813, 2]
 
-// Module 17912 (ExistingUserAgeGate)
+// Module 17984 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 17911 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 17983 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2058 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2059 */;
 import UserStore from "UserStore" /* 1390 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -356,7 +356,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+51" };
                           }
                         } else {
                           try {
@@ -399,7 +399,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                               return obj;
                             }
                             c0 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+51" };
                           } catch (tmp9) {
                             c0 = 3;
                             throw tmp9;
@@ -455,7 +455,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+51" };
                           }
                         } else {
                           try {
@@ -737,7 +737,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -837,7 +837,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -880,7 +880,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp9) {
           c0 = 3;
           throw tmp9;

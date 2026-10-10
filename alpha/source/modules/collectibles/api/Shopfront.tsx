@@ -1,10 +1,10 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15326
+// Function ID: 15327
 // Name: Shopfront
-// Dependencies: [5, 1085, 1295, 1349, 7043, 2]
+// Dependencies: [5, 1085, 1295, 1349, 7049, 2]
 // Exports: search
 
-// Module 15264 (Shopfront)
+// Module 15326 (Shopfront)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let obj = function _search() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

@@ -1,9 +1,9 @@
-// Module ID: 9304
-// Function ID: 9305
+// Module ID: 9331
+// Function ID: 9332
 // Name: AnalyticsFeedItemSeenManager
 // Dependencies: [5, 38, 584, 2]
 
-// Module 9304 (AnalyticsFeedItemSeenManager)
+// Module 9331 (AnalyticsFeedItemSeenManager)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -295,7 +295,7 @@ class AnalyticsFeedItemSeenManager {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } else {
                 try {
@@ -324,7 +324,7 @@ class AnalyticsFeedItemSeenManager {
                   } else {
                     closure_128_0();
                     c2 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } catch (tmp8) {
                   c2 = 3;
@@ -347,7 +347,7 @@ class AnalyticsFeedItemSeenManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -377,7 +377,7 @@ class AnalyticsFeedItemSeenManager {
             } else {
               closure_0();
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp10) {
             c3 = 3;

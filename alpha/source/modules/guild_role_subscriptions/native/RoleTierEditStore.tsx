@@ -1,14 +1,14 @@
-// Module ID: 18421
-// Function ID: 18422
+// Module ID: 18495
+// Function ID: 18496
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1272, 1267, 6952, 558, 576, 4692, 5393, 15420, 2]
+// Dependencies: [32, 5, 1272, 1267, 6958, 558, 576, 4733, 5396, 15482, 2]
 // Exports: resetImperatively
 
-// Module 18421 (RoleTierEditStore)
+// Module 18495 (RoleTierEditStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1272 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6952 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15420 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6958 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15482 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1267 from "module_1267" /* 1267 */;
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let _require, c3, c4, dependencyMap, set;
 
 let tmp;
-const _slicedToArray2 = tmp(4692);
+const _slicedToArray2 = tmp(4733);
 let _slicedToArray = _slicedToArray_mod;
 const LoadingState = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
 let closure_7 = Object.freeze({ currentScene: null, groupCover: null, groupDescription: "", groupIsFullGate: false });
@@ -60,7 +60,7 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0) => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c2;
@@ -116,7 +116,7 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0) => {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp21) {
             if (0 === c2) {
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
   } else {
     first = cResult[0];
   }
-  const tmp5 = _slicedToArray(withEqualityFn(first, tmp(4692).shallow), 3);
+  const tmp5 = _slicedToArray(withEqualityFn(first, tmp(4733).shallow), 3);
   const first1 = tmp5[0];
   let closure_2 = tmp7;
   dependencyMap = tmp8;
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
         if (cResult[6] === tmp9) {
           tmp10 = cResult[7];
         }
-        first1(5393)(tmp10);
+        first1(5396)(tmp10);
         if (cResult[8] === guildId) {
           if (cResult[9] === tmp9) {
             if (cResult[10] === tmp5[1]) {
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5393)(() => {
+  tiers(5396)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {

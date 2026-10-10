@@ -1,17 +1,17 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12139
+// Function ID: 12140
 // Name: useEmojiSuggestions
-// Dependencies: [32, 19, 5994, 12096, 1393, 4726, 5977, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5987, 12140, 1393, 4767, 5970, 558, 576, 504, 2]
 
-// Module 12095 (useEmojiSuggestions)
+// Module 12139 (useEmojiSuggestions)
 import react2 from "react" /* 576 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
-import EmojiTypes from "EmojiTypes" /* 4726 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5977 */;
-import EmojiStore2 from "EmojiStore" /* 5994 */;
+import EmojiTypes from "EmojiTypes" /* 4767 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
+import EmojiStore2 from "EmojiStore" /* 5987 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EnglishEmojiSuggestionsConstants from "EnglishEmojiSuggestionsConstants" /* 12096 */;
+import EnglishEmojiSuggestionsConstants from "EnglishEmojiSuggestionsConstants" /* 12140 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

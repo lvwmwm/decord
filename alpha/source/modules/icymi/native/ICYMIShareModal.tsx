@@ -1,9 +1,9 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 16940
+// Function ID: 16941
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 2064, 1085, 10187, 5084, 21, 5091, 587, 558, 576, 8517, 1126, 16873, 4768, 6663, 11532, 11543, 5376, 5941, 11510, 1388, 7363, 7172, 1631, 1497, 1382, 9270, 6205, 6214, 11521, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 1085, 10216, 5085, 21, 5092, 587, 558, 576, 8533, 1126, 16941, 4809, 6664, 11578, 11589, 5379, 5934, 11556, 1388, 7369, 7178, 1631, 1497, 1382, 9297, 6200, 6209, 11567, 2]
 
-// Module 16872 (ICYMIShareModal)
+// Module 16940 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,21 +12,21 @@ import intl3 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import MessageConstants from "MessageConstants" /* 5084 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6663 */;
-import ShareEventUtils from "ShareEventUtils" /* 8517 */;
-import HeaderShared from "HeaderShared" /* 9270 */;
-import UserRowConstants from "UserRowConstants" /* 10187 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 11532 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6664 */;
+import ShareEventUtils from "ShareEventUtils" /* 8533 */;
+import HeaderShared from "HeaderShared" /* 9297 */;
+import UserRowConstants from "UserRowConstants" /* 10216 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 11578 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj4;
 let tmp7;
 let tmp9;
 let unpackModuleId;
-const SearchableDestinationListDefault = tmp7(11521);
-const ShareChatInputDefault = tmp9(11543);
+const SearchableDestinationListDefault = tmp7(11567);
+const ShareChatInputDefault = tmp9(11589);
 const View = react_native.View;
 const AbortCodes = Constants.AbortCodes;
 const UserRowModes = UserRowConstants.UserRowModes;
@@ -163,7 +163,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -207,8 +207,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
               } else {
                 stringResult = string(t.F8FvUy);
               }
-              const obj7 = { key: "FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", content: stringResult };
-              open(obj7);
+              const obj7 = { text: stringResult };
+              open("FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", obj7);
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp27) {
           closure_3 = tmp27;
@@ -265,7 +265,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -309,8 +309,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
             } else {
               stringResult = string(t.F8FvUy);
             }
-            const obj7 = { key: "FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", content: stringResult };
-            open(obj7);
+            const obj7 = { text: stringResult };
+            open("FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", obj7);
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -323,7 +323,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareMod
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp32) {
         closure_3 = tmp32;
@@ -535,7 +535,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5376).Button;
+    const Button = tmp7(5379).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;
@@ -615,7 +615,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -662,7 +662,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else {
                   try {
@@ -708,7 +708,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   } catch (tmp16) {
                     c1 = 3;
                     throw tmp16;
@@ -723,7 +723,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
             const arr3 = linkText(forwardToChannel[21]);
             arr3.pop();
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp6) {
           c4 = 3;
@@ -769,7 +769,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -817,7 +817,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     }
                   } else {
                     try {
@@ -863,7 +863,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
                         return obj;
                       }
                       c1 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     } catch (tmp16) {
                       c1 = 3;
                       throw tmp16;
@@ -878,7 +878,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
               const arr3 = tmp2(closure_2[21]);
               arr3.pop();
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp6) {
             c4 = 3;
@@ -931,7 +931,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = title(6214).Header;
+  const Header = title(6209).Header;
   let obj3 = title(1382);
   num = 0;
   const tmp9 = closure_12;
@@ -939,7 +939,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareMo
     num = rect.top;
   }
   ({ headerLeftContainer: obj2.headerLeftContainerStyle, headerRightContainer: obj2.headerRightContainerStyle } = tmp6);
-  tmp12Result = tmp12(6205);
+  tmp12Result = tmp12(6200);
   items1 = [tmp11(Header, obj4), , ];
   let obj5 = { rowMode: UserRowModes.TOGGLE, onSelectedDestinationChange: tmp2, originDestination: originDestinationId, insetEnd: sum + nativeDefault.space.PX_96, disableGradient: true, disableStickySections: true };
   let tmp7Result = SearchableDestinationListDefault;

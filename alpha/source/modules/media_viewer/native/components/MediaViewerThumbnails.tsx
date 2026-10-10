@@ -1,25 +1,25 @@
-// Module ID: 13006
-// Function ID: 13007
+// Module ID: 13053
+// Function ID: 13054
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 8402, 21, 558, 576, 13007, 4779, 587, 5364, 1382, 4811, 5091, 6163, 8376, 4812, 6759, 2]
+// Dependencies: [32, 19, 17, 8418, 21, 558, 576, 13054, 4818, 587, 5365, 1382, 4850, 5092, 6156, 8392, 4851, 6760, 2]
 // Exports: default
 
-// Module 13006 (MediaViewerThumbnails)
+// Module 13053 (MediaViewerThumbnails)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4779 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4811 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4812 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5364 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13007 */;
+import useToken from "useToken" /* 4818 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4851 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5365 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 13054 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 8402 */;
+import Constants from "Constants" /* 8418 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let THUMBNAIL_HEIGHT;
@@ -111,7 +111,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Obscur
     if (source.spoiler) {
       const obj2 = { style: items, children: metroImportAll(tmp7Result, obj3) };
       items = [metroRequire.absoluteFill, tmp5];
-      const View = tmp7(4811).View;
+      const View = tmp7(4850).View;
       let str = "light";
       tmp7Result = VisualEffectViewDefault;
       const tmp11 = metroRequire;

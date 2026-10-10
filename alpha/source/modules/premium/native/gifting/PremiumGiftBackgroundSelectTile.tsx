@@ -1,29 +1,29 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 12711
+// Function ID: 12712
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1392, 12665, 21, 12666, 12667, 12668, 12669, 12670, 12671, 12672, 12673, 12674, 5091, 587, 558, 576, 1126, 2629, 6163, 2]
+// Dependencies: [19, 17, 1392, 12712, 21, 12713, 12714, 12715, 12716, 12717, 12718, 12719, 12720, 12721, 5092, 587, 558, 576, 1126, 2632, 6156, 2]
 
-// Module 12664 (PremiumGiftBackgroundSelectTile)
+// Module 12711 (PremiumGiftBackgroundSelectTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import _modDef2629 from "module_2629" /* 2629 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import PremiumGiftingConstants from "PremiumGiftingConstants" /* 12665 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12666 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12667 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12668 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12669 */;
-import _modDef12670 from "module_12670" /* 12670 */;
-import _modDef12671 from "module_12671" /* 12671 */;
-import _modDef12672 from "module_12672" /* 12672 */;
-import _modDef12673 from "module_12673" /* 12673 */;
-import _modDef12674 from "module_12674" /* 12674 */;
+import _modDef2632 from "module_2632" /* 2632 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import PremiumGiftingConstants from "PremiumGiftingConstants" /* 12712 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12713 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12714 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12715 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12716 */;
+import _modDef12717 from "module_12717" /* 12717 */;
+import _modDef12718 from "module_12718" /* 12718 */;
+import _modDef12719 from "module_12719" /* 12719 */;
+import _modDef12720 from "module_12720" /* 12720 */;
+import _modDef12721 from "module_12721" /* 12721 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,19 +41,19 @@ const GIFT_STYLE_DESCRIPTIONS = PremiumGiftingConstants.GIFT_STYLE_DESCRIPTIONS;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const GIFT_STYLE_IMG = { [STANDARD_BOX]: AssetRegistryDefault, [CAKE]: AssetRegistryDefault2, [CHEST]: AssetRegistryDefault3, [COFFEE]: AssetRegistryDefault4 };
 ({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
-let obj2 = { uri: _modDef12670 };
+let obj2 = { uri: _modDef12717 };
 GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = obj2;
 GIFT_STYLE_IMG[PremiumGiftStyles.SNOWGLOBE] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.BOX] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.CUP] = null;
-let obj3 = { uri: _modDef12671 };
+let obj3 = { uri: _modDef12718 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = obj3;
-let obj4 = { uri: _modDef12672 };
+let obj4 = { uri: _modDef12719 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = obj4;
-let obj5 = { uri: _modDef12673 };
+let obj5 = { uri: _modDef12720 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = obj5;
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef12674 };
-({ uri: _modDef12674 });
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef12721 };
+({ uri: _modDef12721 });
 let closure_9 = createStyles.createStyles((arg0) => {
   let num;
   let size1;
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBackgrou
       const intl = tmp(1126).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj2 = { giftStyle: intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]) };
-      const prop = _modDef2629["+utqaz"];
+      const prop = _modDef2632["+utqaz"];
       intl2 = tmp(1126).intl;
       const formatToPlainStringResult = formatToPlainString(prop, obj2);
       cResult[0] = giftStyle;
@@ -165,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBackgrou
     const intl = intl3.intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { giftStyle: intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]) };
-    prop = _modDef2629["+utqaz"];
+    prop = _modDef2632["+utqaz"];
     intl2 = intl3.intl;
     const tmp4 = metroImportDefault;
     const tmp5 = React3;
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBackgrou
     }
     items = [selected, ];
     const obj4 = { resizeMode: "contain", style: tmp.image, source: obj[giftStyle] };
-    items[1] = metroRequire(tmp8(6163), obj4);
+    items[1] = metroRequire(tmp8(6156), obj4);
     tmp4Result = tmp4(tmp5, obj);
   }
   return tmp4Result;

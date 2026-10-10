@@ -1,14 +1,14 @@
-// Module ID: 18241
-// Function ID: 18242
+// Module ID: 18315
+// Function ID: 18316
 // Name: useLoadGuildStickerWithCreator
-// Dependencies: [5, 32, 19, 1390, 6038, 558, 576, 504, 9729, 2]
+// Dependencies: [5, 32, 19, 1390, 6031, 558, 576, 504, 9758, 2]
 
-// Module 18241 (useLoadGuildStickerWithCreator)
+// Module 18315 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import GuildStickersStore from "GuildStickersStore" /* 6038 */;
+import GuildStickersStore from "GuildStickersStore" /* 6031 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c3;
@@ -110,7 +110,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp16) {
             let closure_2 = tmp16;
@@ -256,7 +256,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c3;
@@ -298,7 +298,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuild
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp16) {
             let closure_2 = tmp16;

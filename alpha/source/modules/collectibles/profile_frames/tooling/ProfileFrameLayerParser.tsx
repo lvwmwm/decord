@@ -1,13 +1,13 @@
-// Module ID: 8316
-// Function ID: 8317
+// Module ID: 8332
+// Function ID: 8333
 // Name: ProfileFrameLayerParser
-// Dependencies: [729, 8317, 8318, 8319, 2]
+// Dependencies: [729, 8333, 8334, 8335, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8316 (ProfileFrameLayerParser)
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8317 */;
-import ProfileFrameLayerType from "ProfileFrameLayerType" /* 8318 */;
-import ProfileFrameLayerAnchor from "ProfileFrameLayerAnchor" /* 8319 */;
+// Module 8332 (ProfileFrameLayerParser)
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8333 */;
+import ProfileFrameLayerType from "ProfileFrameLayerType" /* 8334 */;
+import ProfileFrameLayerAnchor from "ProfileFrameLayerAnchor" /* 8335 */;
 import _toArray from "_toArray" /* 729 */;
 import size from "module_2" /* 2 */;
 

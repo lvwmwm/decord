@@ -1,10 +1,10 @@
-// Module ID: 16653
-// Function ID: 16654
+// Module ID: 16723
+// Function ID: 16724
 // Name: guilds_bar/GuildsBarConstants
 // Dependencies: [1103, 586, 2]
 // Exports: isDefaultFolderColor, normalizeFolderColor
 
-// Module 16653 (guilds_bar/GuildsBarConstants)
+// Module 16723 (guilds_bar/GuildsBarConstants)
 import ColorUtils from "utils/ColorUtils" /* 1103 */;
 import shims from "shims" /* 586 */;
 import size from "module_2" /* 2 */;

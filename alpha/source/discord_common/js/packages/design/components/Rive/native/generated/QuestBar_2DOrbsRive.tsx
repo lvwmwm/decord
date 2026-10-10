@@ -1,12 +1,12 @@
-// Module ID: 4889
-// Function ID: 4890
+// Module ID: 4928
+// Function ID: 4929
 // Name: QuestBar_2DOrbsRive
-// Dependencies: [109, 19, 21, 558, 4805, 576, 4890, 4858, 2]
+// Dependencies: [109, 19, 21, 558, 4844, 576, 4929, 4897, 2]
 
-// Module 4889 (QuestBar_2DOrbsRive)
+// Module 4928 (QuestBar_2DOrbsRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 4805 */;
+import BaseRive2 from "BaseRive" /* 4844 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let dataBinding, importDefault, tmp3, tmp5;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(4858);
+const RiveErrorBoundary2 = tmp(4897);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -175,7 +175,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestB
         }
       }
       let merged = Object.assign(tmp7);
-      const tmp23 = <BaseRive ref={tmp6} src={require("module_4890")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={null} renderDataBinding={tmp14} />;
+      const tmp23 = <BaseRive ref={tmp6} src={require("module_4929")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={null} renderDataBinding={tmp14} />;
       cResult[12] = str;
       cResult[13] = str2;
       cResult[14] = tmp6;

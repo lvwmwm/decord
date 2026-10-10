@@ -1,16 +1,16 @@
-// Module ID: 12259
-// Function ID: 12260
+// Module ID: 12303
+// Function ID: 12304
 // Name: GuildPowerupsCard
-// Dependencies: [109, 19, 17, 21, 5091, 683, 587, 558, 576, 6188, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 683, 587, 558, 576, 6181, 2]
 
-// Module 12259 (GuildPowerupsCard)
+// Module 12303 (GuildPowerupsCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import module_683_mod from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Card_Card = tmp(6188);
+const Card_Card = tmp(6181);
 let closure_2 = ["children", "containerStyle", "status", "style"];
 const View = react_native.View;
 const jsx = Fragment.jsx;

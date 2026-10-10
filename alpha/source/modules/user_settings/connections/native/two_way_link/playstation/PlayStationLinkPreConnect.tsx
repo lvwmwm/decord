@@ -1,14 +1,14 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 12921
+// Function ID: 12922
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 12871, 21, 5091, 558, 576, 1503, 12875, 1126, 9191, 2]
+// Dependencies: [19, 12918, 21, 5092, 558, 576, 1503, 12922, 1126, 9218, 2]
 
-// Module 12874 (PlayStationLinkPreConnect)
+// Module 12921 (PlayStationLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 12871 */;
-import _modDef12875 from "module_12875" /* 12875 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 12918 */;
+import _modDef12922 from "module_12922" /* 12922 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
         navigation.push(constants.ERROR, {});
       }
     }
-    tmp9[0] = _modDef12875;
+    tmp9[0] = _modDef12922;
     cResult[4] = tmp9;
   } else {
     class S {
@@ -98,8 +98,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   cResult[8] = tmp6;
   cResult[9] = platformType;
   cResult[10] = tmp4.image;
-  cResult[11] = jsx(navigation(9191).TwoWayLinkPreConnect, { platformType, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp11, body: tmp12 });
-  jsx(navigation(9191).TwoWayLinkPreConnect, { platformType, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp11, body: tmp12 });
+  cResult[11] = jsx(navigation(9218).TwoWayLinkPreConnect, { platformType, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp11, body: tmp12 });
+  jsx(navigation(9218).TwoWayLinkPreConnect, { platformType, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp11, body: tmp12 });
 }) : (function PlayStationLinkPreConnect(platformType) {
   navigation = undefined;
   platformType = platformType.platformType;
@@ -115,10 +115,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     navigation.push(constants.ERROR, {});
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef12875 };
+    const obj = { uri: _modDef12922 };
     return obj;
   }, []);
-  const TwoWayLinkPreConnect = navigation(9191).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(9218).TwoWayLinkPreConnect;
   const intl = navigation(1126).intl;
   const intl2 = navigation(1126).intl;
   return <TwoWayLinkPreConnect platformType={platformType} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1126).t["6n+UPR"])} body={intl2.string(navigation(1126).t.JaaqIf)} />;

@@ -1,9 +1,9 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8028
+// Function ID: 8029
 // Name: GuildBoostSlotRecord
 // Dependencies: [1405, 2]
 
-// Module 8010 (GuildBoostSlotRecord)
+// Module 8028 (GuildBoostSlotRecord)
 import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 

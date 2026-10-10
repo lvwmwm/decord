@@ -1,26 +1,69 @@
 // Module ID: 7813
 // Function ID: 7814
-// Dependencies: [7814, 7812]
+// Dependencies: [7814, 7816]
 
 // Module 7813
-import _modDef7812 from "module_7812" /* 7812 */;
-import _modDef7814 from "module_7814" /* 7814 */;
+import _mod7814 from "module_7814" /* 7814 */;
+import _mod7816 from "module_7816" /* 7816 */;
 
+let hasOwnProperty;
 
-export default {
-  isTiffFile(byteLength) {
-    let tmp = byteLength && byteLength.byteLength >= 4;
-    if (tmp) {
-      const uint16 = byteLength.getUint16(0);
-      tmp = byteLength.getUint16(2, uint16 === _modDef7814.LITTLE_ENDIAN) === 42;
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    return tmp;
-  },
-  findTiffOffsets() {
-    if (_modDef7812.USE_EXIF) {
-      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
     } else {
-      return {};
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
     }
+    continue;
   }
-};
+});
+tmp3(_mod7814, exports);
+tmp3(_mod7816, exports);

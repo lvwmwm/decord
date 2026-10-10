@@ -1,10 +1,10 @@
-// Module ID: 10292
-// Function ID: 10293
+// Module ID: 10325
+// Function ID: 10326
 // Name: DismissibleContentFrameworkActionCreators
 // Dependencies: [584, 2]
 // Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, resetDismissibleContentFrameworkStore
 
-// Module 10292 (DismissibleContentFrameworkActionCreators)
+// Module 10325 (DismissibleContentFrameworkActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

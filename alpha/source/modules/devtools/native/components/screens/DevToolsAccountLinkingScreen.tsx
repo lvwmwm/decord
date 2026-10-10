@@ -1,21 +1,21 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16079
+// Function ID: 16080
 // Name: DevToolsAccountLinkingScreen
-// Dependencies: [32, 19, 17, 5437, 6793, 2086, 4900, 21, 5091, 587, 558, 576, 504, 6856, 1631, 6854, 6851, 6269, 6186, 5087, 6290, 5376, 6163, 2]
+// Dependencies: [32, 19, 17, 5440, 6796, 2087, 4939, 21, 5092, 587, 558, 576, 504, 6859, 1631, 6857, 6854, 6264, 6179, 5088, 6285, 5379, 6156, 2]
 
-// Module 16017 (DevToolsAccountLinkingScreen)
+// Module 16079 (DevToolsAccountLinkingScreen)
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6856 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6859 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStore from "ApplicationStore" /* 5437 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6793 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6796 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,9 +31,9 @@ let obj4;
 let size;
 let tmp2;
 let unpackModuleId;
-const FastImageDefault = tmp2(6163);
-const useStartAuthorizeDefault = tmp2(6851);
-const useGetOrFetchApplicationsDefault = tmp2(6854);
+const FastImageDefault = tmp2(6156);
+const useStartAuthorizeDefault = tmp2(6854);
+const useGetOrFetchApplicationsDefault = tmp2(6857);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
@@ -770,7 +770,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   }
   const arr4 = useGetOrFetchApplicationsDefault(gameApplicationIds);
   let found = arr4.filter((item) => null != item);
-  const tmp8Result = value(6854);
+  const tmp8Result = value(6857);
   getOrFetchApplication = tmp8Result.useGetOrFetchApplication(value);
   const items2 = [ApplicationStore];
   const tmp8Result2 = value(504);
@@ -821,7 +821,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   items3 = [tmp.scrollContainer, { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 }];
   let name;
   ({ paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 });
-  const TableRowGroup = tmp8(6269).TableRowGroup;
+  const TableRowGroup = tmp8(6264).TableRowGroup;
   const tmp16 = connectionApp;
   if (stateFromStores != null) {
     name = stateFromStores.name;
@@ -852,18 +852,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
         return closure_1_11(TableRow, obj, name.id);
       });
     } else {
-      mapped1 = tmp17(tmp8(6186).TableRow, { label: "No official games" });
+      mapped1 = tmp17(tmp8(6179).TableRow, { label: "No official games" });
     }
     tmp17Result = mapped1;
   } else {
-    tmp17Result = tmp17(tmp8(6186).TableRow, { label: "No guild selected" });
+    tmp17Result = tmp17(tmp8(6179).TableRow, { label: "No guild selected" });
   }
   items4 = [closure_11(TableRowGroup, obj5), , , ];
-  const obj6 = { style: obj7, children: closure_11(value(6290).TextInput, { label: "Application ID", value, onChange: tmp5[1] }) };
+  const obj6 = { style: obj7, children: closure_11(value(6285).TextInput, { label: "Application ID", value, onChange: tmp5[1] }) };
   obj7 = { padding: nativeDefault.space.PX_12 };
-  const TableRowGroup2 = tmp8(6269).TableRowGroup;
+  const TableRowGroup2 = tmp8(6264).TableRowGroup;
   const items5 = [closure_11(closure_6, obj6), , ];
-  let TableRow = tmp8(6186).TableRow;
+  let TableRow = tmp8(6179).TableRow;
   if (null != getOrFetchApplication) {
     str = getOrFetchApplication.name;
   }
@@ -871,13 +871,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   const obj9 = { label: "Name: " + str };
   items5[1] = closure_11(TableRow, obj9);
   const obj10 = { label: "Linked Games: " + str2 };
-  const TableRow2 = tmp8(6186).TableRow;
+  const TableRow2 = tmp8(6179).TableRow;
   items5[2] = closure_11(TableRow2, obj10);
   items4[1] = closure_12(TableRowGroup2, obj8);
-  const TableRowGroup3 = tmp8(6269).TableRowGroup;
-  const TableRow3 = tmp8(6186).TableRow;
+  const TableRowGroup3 = tmp8(6264).TableRowGroup;
+  const TableRow3 = tmp8(6179).TableRow;
   let str4 = "text-feedback-critical";
-  const Text = tmp8(5087).Text;
+  const Text = tmp8(5088).Text;
   if (debug.hasConnectionEntrypointUrl) {
     str4 = "text-feedback-positive";
   }
@@ -889,9 +889,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   const items6 = [, , ];
   const obj12 = { label: "Connection Entrypoint URL", trailing: closure_11(Text, obj11) };
   items6[0] = closure_11(TableRow3, obj12);
-  const TableRow4 = tmp8(6186).TableRow;
+  const TableRow4 = tmp8(6179).TableRow;
   let str6 = "text-muted";
-  const Text2 = tmp8(5087).Text;
+  const Text2 = tmp8(5088).Text;
   if (hasAlreadyLinked) {
     str6 = "text-feedback-positive";
   }
@@ -913,9 +913,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
     variant: "primary",
     text: "Start Authorization"
   };
-  items7[0] = closure_11(value(5376).Button, obj17);
+  items7[0] = closure_11(value(5379).Button, obj17);
   const obj18 = { disabled: !canDeauthorize, onPress: deauthorize, variant: "critical-primary", text: "Deauthorize" };
-  items7[1] = closure_11(value(5376).Button, obj18);
+  items7[1] = closure_11(value(5379).Button, obj18);
   items6[2] = closure_12(closure_6, obj16);
   items4[2] = closure_12(TableRowGroup3, obj14);
   let prop;
@@ -925,7 +925,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
   let tmp15Result = null != prop;
   if (tmp15Result) {
     let tmp17Result2 = null != connectionApp.applicationAccountLinkBenefitConfig.reward_image;
-    const TableRowGroup4 = tmp8(6269).TableRowGroup;
+    const TableRowGroup4 = tmp8(6264).TableRowGroup;
     if (tmp17Result2) {
       const obj19 = { style: obj20, children: closure_11(FastImageDefault, obj21) };
       obj21 = { source: obj22, style: tmp.rewardImage };
@@ -935,7 +935,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAcco
     }
     const items8 = [tmp17Result2, ];
     let str8 = connectionApp.applicationAccountLinkBenefitConfig.reward_name;
-    const TableRow5 = tmp8(6186).TableRow;
+    const TableRow5 = tmp8(6179).TableRow;
     if (str8 == null) {
       str8 = "Unnamed Reward";
     }

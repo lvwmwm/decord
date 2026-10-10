@@ -1,19 +1,19 @@
-// Module ID: 7089
-// Function ID: 7090
+// Module ID: 7095
+// Function ID: 7096
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 2086, 1390, 1085, 21, 5091, 558, 576, 7090, 504, 1503, 6848, 6176, 7102, 1398, 1265, 584, 6953, 5721, 7110, 13792, 13799, 13804, 13814, 13819, 13823, 2]
+// Dependencies: [32, 19, 17, 2087, 1390, 1085, 21, 5092, 558, 576, 7096, 504, 1503, 6851, 6169, 7108, 1398, 1265, 6959, 5724, 7116, 13844, 13851, 13856, 13866, 13871, 13875, 2]
 
-// Module 7089 (GuildBoostingMarketingOverview)
+// Module 7095 (GuildBoostingMarketingOverview)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7110 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7116 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2086 */;
+import GuildStore_mod from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -268,13 +268,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoost
     };
   }, items3);
   const effect1 = obj4.useEffect(() => {
-    let obj = guildBoostSlots(stateFromStores[18]);
-    obj.wait(() => {
-      const obj = guildId(stateFromStores[19]);
-      const premiumSubscriptionPlans = obj.fetchPremiumSubscriptionPlans();
-      const obj2 = guildId(stateFromStores[20]);
-      const paymentSources = obj2.fetchPaymentSources();
-    });
+    const obj = guildId(stateFromStores[18]);
+    const premiumSubscriptionPlans = obj.fetchPremiumSubscriptionPlans();
+    const obj2 = guildId(stateFromStores[19]);
+    const paymentSources = obj2.fetchPaymentSources();
   }, []);
   let tmp19 = null;
   if (null != stateFromStores) {
@@ -311,17 +308,17 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoost
       fractionalPremiumInfo: tmp13,
       premiumGroupRole: UNSPECIFIED
     };
-    items4 = [closure_10(tmp8(tmp3[22]), obj5), , , , , ];
+    items4 = [closure_10(tmp8(tmp3[21]), obj5), , , , , ];
     const obj6 = { guild: stateFromStores };
-    items4[1] = closure_10(guildBoostSlots(tmp3[23]), obj6);
+    items4[1] = closure_10(guildBoostSlots(tmp3[22]), obj6);
     const obj7 = { guild: stateFromStores };
-    items4[2] = closure_10(guildBoostSlots(tmp3[24]), obj7);
-    items4[3] = closure_10(guildBoostSlots(tmp3[25]), {});
-    items4[4] = closure_10(guildBoostSlots(tmp3[26]), {});
-    items4[5] = closure_10(guildBoostSlots(tmp3[27]), {});
+    items4[2] = closure_10(guildBoostSlots(tmp3[23]), obj7);
+    items4[3] = closure_10(guildBoostSlots(tmp3[24]), {});
+    items4[4] = closure_10(guildBoostSlots(tmp3[25]), {});
+    items4[5] = closure_10(guildBoostSlots(tmp3[26]), {});
     items5 = [closure_11(closure_5, obj3), ];
     const obj8 = { guild: stateFromStores, previousGuildSubscriptionSlot: first, isVisible: first1, fractionalPremiumState: tmp13.fractionalState, premiumGroupRole: UNSPECIFIED };
-    items5[1] = closure_10(guildBoostSlots(tmp3[21]), obj8);
+    items5[1] = closure_10(guildBoostSlots(tmp3[20]), obj8);
     tmp19 = closure_11(closure_12, obj2);
   }
   return tmp19;

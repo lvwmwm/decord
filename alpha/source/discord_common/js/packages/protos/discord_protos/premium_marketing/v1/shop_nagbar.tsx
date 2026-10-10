@@ -1,13 +1,13 @@
-// Module ID: 9127
-// Function ID: 9128
+// Module ID: 9147
+// Function ID: 9148
 // Name: shop_nagbar
-// Dependencies: [32, 1210, 9108, 9107, 9106, 1240, 2]
+// Dependencies: [32, 1210, 9128, 9127, 9126, 1240, 2]
 
-// Module 9127 (shop_nagbar)
+// Module 9147 (shop_nagbar)
 import _mod1210 from "module_1210" /* 1210 */;
 import wrappers from "wrappers" /* 1240 */;
-import localized_string from "localized_string" /* 9106 */;
-import help_article from "help_article" /* 9107 */;
+import localized_string from "localized_string" /* 9126 */;
+import help_article from "help_article" /* 9127 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

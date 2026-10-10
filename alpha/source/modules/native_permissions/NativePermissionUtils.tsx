@@ -1,10 +1,10 @@
 // Module ID: 7499
 // Function ID: 7500
 // Name: NativePermissionUtils
-// Dependencies: [6904, 7500, 7504, 2, 7501]
+// Dependencies: [6910, 7500, 7504, 2, 7501]
 
 // Module 7499 (NativePermissionUtils)
-import ProcessArgs2 from "ProcessArgs" /* 6904 */;
+import ProcessArgs2 from "ProcessArgs" /* 6910 */;
 import nativePermissionDesktopNullUtils from "nativePermissionDesktopNullUtils" /* 7500 */;
 import NativePermissionBaseUtils from "NativePermissionBaseUtils" /* 7501 */;
 import mobile_NativePermissionUtils from "mobile/NativePermissionUtils" /* 7504 */;

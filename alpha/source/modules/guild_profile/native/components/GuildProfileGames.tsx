@@ -1,19 +1,19 @@
-// Module ID: 8858
-// Function ID: 8859
+// Module ID: 8877
+// Function ID: 8878
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 8859, 8860, 12961, 5087, 12965, 4768, 5055, 12966, 2000, 6191, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8878, 8879, 13008, 5088, 13012, 4809, 5056, 13013, 2000, 6184, 2]
 // Exports: default
 
-// Module 8858 (GuildProfileGames)
+// Module 8877 (GuildProfileGames)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8879 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ let metroRequire;
 let rect;
 let tmp;
 let tmp5;
-const Text_Text = tmp(5087);
-const GameProfileAnalyticUtils = tmp(8859);
-const components_GameIconDefault = tmp5(12961);
+const Text_Text = tmp(5088);
+const GameProfileAnalyticUtils = tmp(8878);
+const components_GameIconDefault = tmp5(13008);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -236,10 +236,10 @@ export default function GuildProfileGames(profile) {
     }
     return tmp2;
   }, items);
-  onPressFallback = react.useCallback((content) => {
+  onPressFallback = react.useCallback((name) => {
     const obj = lastGameToDisplay(remainingGames[12]);
-    const obj2 = { key: "profile-game-" + content.id, content: content.name };
-    obj.open(obj2);
+    const obj2 = { text: name.name };
+    obj.open("profile-game-" + name.id, obj2);
   }, []);
   [][0] = profile;
   let tmp9 = null;

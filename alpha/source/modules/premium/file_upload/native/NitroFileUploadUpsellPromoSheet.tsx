@@ -1,17 +1,17 @@
-// Module ID: 17597
-// Function ID: 17598
+// Module ID: 17669
+// Function ID: 17670
 // Name: NitroFileUploadUpsellPromoSheet
-// Dependencies: [19, 17, 1085, 2061, 21, 5091, 587, 558, 576, 5393, 7087, 9489, 17593, 1126, 2665, 5376, 10290, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5092, 587, 558, 576, 5396, 7093, 9518, 17665, 1126, 2668, 5379, 10323, 2]
 
-// Module 17597 (NitroFileUploadUpsellPromoSheet)
+// Module 17669 (NitroFileUploadUpsellPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import openUserSettings from "openUserSettings" /* 7087 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import openUserSettings from "openUserSettings" /* 7093 */;
 import react_mod from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -220,9 +220,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
         return;
       }
     }
-    const stringResult = obj5.string(require("module_2665")["Uty2/X"]);
+    const stringResult = obj5.string(require("module_2668")["Uty2/X"]);
     const intl = tmp(tmp2[13]).intl;
-    const stringResult1 = intl.string(require("module_2665").VAgI8Q);
+    const stringResult1 = intl.string(require("module_2668").VAgI8Q);
     cResult[13] = stringResult;
     cResult[14] = stringResult1;
     tmp21 = stringResult1;
@@ -245,7 +245,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
         return;
       }
     }
-    const stringResult2 = obj6.string(require("module_2665").mRy6sO);
+    const stringResult2 = obj6.string(require("module_2668").mRy6sO);
     cResult[15] = stringResult2;
     tmp24 = stringResult2;
   } else {
@@ -338,14 +338,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
   const PromoSheet = markAsDismissed(callback[16]).PromoSheet;
   const intl = markAsDismissed(callback[13]).intl;
   const intl2 = markAsDismissed(callback[13]).intl;
-  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2665").mRy6sO), onPress: tmp9 });
+  ({ grow: true, size: "lg", variant: "primary", loading, text: intl3.string(require("module_2668").mRy6sO), onPress: tmp9 });
   const Button = markAsDismissed(callback[15]).Button;
   intl3 = markAsDismissed(callback[13]).intl;
   tmp9 = null;
   if (!loading) {
     tmp9 = callback2;
   }
-  return <PromoSheet illustration={null} title={intl.string(require("module_2665")["Uty2/X"])} description={intl2.string(require("module_2665").VAgI8Q)} onDismiss={callback3} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(require("module_2668")["Uty2/X"])} description={intl2.string(require("module_2668").VAgI8Q)} onDismiss={callback3} actions={null} />;
 });
 const result = size.fileFinishedImporting("modules/premium/file_upload/native/NitroFileUploadUpsellPromoSheet.tsx");
 

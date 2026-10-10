@@ -1,24 +1,24 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 6914
+// Function ID: 6915
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 2124, 1390, 6909, 1085, 21, 5091, 587, 558, 576, 1126, 2127, 1265, 6910, 6655, 6163, 6912, 5087, 5376, 2]
+// Dependencies: [19, 17, 2125, 1390, 6915, 1085, 21, 5092, 587, 558, 576, 1126, 2128, 1265, 6916, 6656, 6156, 6918, 5088, 5379, 2]
 
-// Module 6908 (NsfwGateGuild)
+// Module 6914 (NsfwGateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import BackgroundImageDefault from "BackgroundImage" /* 6655 */;
-import Constants2 from "Constants" /* 6909 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6910 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6912 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import BackgroundImageDefault from "BackgroundImage" /* 6656 */;
+import Constants2 from "Constants" /* 6915 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6916 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6918 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -157,7 +157,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
   }
   if (cResult[10] !== tmp4.header) {
     const obj5 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp30 = closure_10(guildId(5087).Heading, obj5);
+    const tmp30 = closure_10(guildId(5088).Heading, obj5);
     cResult[10] = tmp4.header;
     cResult[11] = tmp30;
     tmp28 = tmp30;
@@ -166,9 +166,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
   }
   if (cResult[12] !== tmp4.description) {
     const obj6 = { style: tmp4.description, variant: "text-md/normal", color: "text-default", children: tmp7 };
-    const tmp34 = closure_10(guildId(5087).Text, obj6);
+    const tmp34 = closure_10(guildId(5088).Text, obj6);
     const obj7 = { style: tmp4.description, variant: "text-md/normal", color: "text-default", children: tmp9 };
-    const tmp35 = closure_10(guildId(5087).Text, obj7);
+    const tmp35 = closure_10(guildId(5088).Text, obj7);
     cResult[12] = tmp4.description;
     cResult[13] = tmp34;
     cResult[14] = tmp35;
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
   }
   if (cResult[16] !== onClose) {
     const obj8 = { onPress: onClose, size: "md", text: tmp36 };
-    const tmp40 = closure_10(guildId(5376).Button, obj8);
+    const tmp40 = closure_10(guildId(5379).Button, obj8);
     cResult[16] = onClose;
     cResult[17] = tmp40;
     tmp38 = tmp40;
@@ -237,7 +237,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
   const format = intl3.format;
   let obj = { helpURL: obj2.getArticleURL(constants2.NSFW_GUILD_GUIDELINES) };
   const Z12LNW = guildId(1126).t.Z12LNW;
-  obj2 = currentUser(2127);
+  obj2 = currentUser(2128);
   const formatResult = format(Z12LNW, obj);
   currentUser = UserStore.getCurrentUser();
   const items = [guildId, currentUser];
@@ -272,18 +272,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
     track(GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
-  items1 = [closure_10(currentUser(6655), {}), , , , , ];
-  const obj4 = { source: currentUser(6912), style: tmp.image };
-  const tmp7 = currentUser(6163);
+  items1 = [closure_10(currentUser(6656), {}), , , , , ];
+  const obj4 = { source: currentUser(6918), style: tmp.image };
+  const tmp7 = currentUser(6156);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = closure_10(guildId(5087).Heading, obj5);
+  items1[2] = closure_10(guildId(5088).Heading, obj5);
   const obj6 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: stringResult1 };
-  items1[3] = closure_10(guildId(5087).Text, obj6);
+  items1[3] = closure_10(guildId(5088).Text, obj6);
   const obj7 = { style: tmp.description, variant: "text-md/normal", color: "text-default", children: formatResult };
-  items1[4] = closure_10(guildId(5087).Text, obj7);
+  items1[4] = closure_10(guildId(5088).Text, obj7);
   const obj8 = { onPress: onClose, size: "md", text: intl4.string(guildId(1126).t.gRqiWV) };
-  const Button = guildId(5376).Button;
+  const Button = guildId(5379).Button;
   intl4 = guildId(1126).intl;
   items1[5] = closure_10(Button, obj8);
   return closure_11(View, obj3);

@@ -1,18 +1,18 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16147
+// Function ID: 16148
 // Name: UserSettingsDesignSystemStack
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5087, 6188, 5374, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6181, 5377, 2]
 
-// Module 16085 (UserSettingsDesignSystemStack)
+// Module 16147 (UserSettingsDesignSystemStack)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Stack_Stack from "Stack/Stack" /* 5374 */;
-import Card_Card from "Card/Card" /* 6188 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import Card_Card from "Card/Card" /* 6181 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,12 +87,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: hasOwnProperty(Stack, obj3) };
-    const Card = tmp(6188).Card;
+    const Card = tmp(6181).Card;
     obj3 = { children: items };
     items = [tmp5, tmp6, ];
-    Stack = tmp(5374).Stack;
+    Stack = tmp(5377).Stack;
     const obj4 = { children: items1 };
-    const Stack2 = tmp(5374).Stack;
+    const Stack2 = tmp(5377).Stack;
     items1 = [React3(closure_7, {}), React3(closure_7, {})];
     items[2] = hasOwnProperty(Stack2, obj4);
     const tmp14 = React3(Card, obj2);
@@ -114,12 +114,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { children: hasOwnProperty(Stack3, obj6) };
-    const Card2 = tmp(6188).Card;
+    const Card2 = tmp(6181).Card;
     obj6 = { children: items2 };
     items2 = [tmp15, tmp16, ];
-    Stack3 = tmp(5374).Stack;
+    Stack3 = tmp(5377).Stack;
     const obj7 = { spacing: 24, children: items3 };
-    const Stack4 = tmp(5374).Stack;
+    const Stack4 = tmp(5377).Stack;
     items3 = [React3(closure_7, {}), React3(closure_7, {})];
     items2[2] = hasOwnProperty(Stack4, obj7);
     const tmp24 = React3(Card2, obj5);
@@ -142,14 +142,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { spacing: 16, children: items4 };
     items4 = [tmp10, tmp20, ];
-    const Stack5 = tmp(5374).Stack;
+    const Stack5 = tmp(5377).Stack;
     const obj9 = { children: hasOwnProperty(Stack6, obj10) };
-    const Card3 = tmp(6188).Card;
+    const Card3 = tmp(6181).Card;
     obj10 = { children: items5 };
     items5 = [tmp25, tmp26, ];
-    Stack6 = tmp(5374).Stack;
+    Stack6 = tmp(5377).Stack;
     const obj11 = { direction: "horizontal", children: items6 };
-    const Stack7 = tmp(5374).Stack;
+    const Stack7 = tmp(5377).Stack;
     items6 = [React3(closure_7, {}), React3(closure_7, {})];
     items5[2] = hasOwnProperty(Stack7, obj11);
     items4[2] = React3(Card3, obj9);

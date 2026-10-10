@@ -1,17 +1,10 @@
 // Module ID: 14507
 // Function ID: 14508
-// Dependencies: [14482]
+// Dependencies: [14508, 14509]
 
 // Module 14507
-import _mod14482 from "module_14482" /* 14482 */;
+const require = globalThis.__r;
 
-let fn;
-if (_mod14482) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
-}
 
-export default fn;
+export const shouldPolyfill = require("module_14508").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

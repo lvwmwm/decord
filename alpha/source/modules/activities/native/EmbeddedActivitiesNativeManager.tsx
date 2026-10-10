@@ -1,27 +1,26 @@
-// Module ID: 14721
-// Function ID: 14722
+// Module ID: 14775
+// Function ID: 14776
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 2064, 5109, 2063, 1085, 1382, 14722, 14723, 5295, 4698, 1265, 584, 14644, 10778, 5299, 1126, 4768, 5006, 1388, 10888, 2]
+// Dependencies: [17, 2065, 5110, 2064, 1085, 1382, 14776, 14777, 5296, 4739, 1265, 584, 14698, 10853, 5300, 1126, 4809, 1388, 10928, 2]
 
-// Module 14721 (EmbeddedActivitiesNativeManager)
+// Module 14775 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5006 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5295 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10778 */;
-import activityWebViewController from "activityWebViewController" /* 10888 */;
-import react_nativeDefault from "react-native" /* 14722 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5296 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10853 */;
+import activityWebViewController from "activityWebViewController" /* 10928 */;
+import react_nativeDefault from "react-native" /* 14776 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 14723 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 14777 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;
@@ -133,11 +132,11 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
   }
   showDevShelfOverrideEnabled() {
     let intl;
-    const obj = { key: "EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", content: intl.string(intl2.t.JfA7IK), icon: AssetRegistryDefault, iconColor: "status-positive" };
+    const obj = { text: intl.string(intl2.t.JfA7IK), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
-    open(obj);
+    open("EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", obj);
   }
   leaveActivity(arg0) {
     let _location;

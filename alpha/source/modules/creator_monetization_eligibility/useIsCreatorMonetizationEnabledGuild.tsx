@@ -1,12 +1,12 @@
-// Module ID: 6947
-// Function ID: 6948
+// Module ID: 6953
+// Function ID: 6954
 // Name: useIsCreatorMonetizationEnabledGuild
-// Dependencies: [2086, 1085, 558, 576, 504, 2]
+// Dependencies: [2087, 1085, 558, 576, 504, 2]
 // Exports: isCreatorMonetizationEnabledGuild
 
-// Module 6947 (useIsCreatorMonetizationEnabledGuild)
+// Module 6953 (useIsCreatorMonetizationEnabledGuild)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

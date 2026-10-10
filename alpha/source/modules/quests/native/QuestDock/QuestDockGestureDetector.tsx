@@ -1,17 +1,17 @@
-// Module ID: 15380
-// Function ID: 15381
+// Module ID: 15442
+// Function ID: 15443
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 5979, 15285, 21, 558, 576, 15315, 15282, 15286, 10337, 15289, 15374, 4811, 15290, 15287, 6333, 15284, 5056, 2]
+// Dependencies: [19, 5972, 15347, 21, 558, 576, 15377, 15344, 15348, 10370, 15351, 15436, 4850, 15352, 15349, 6334, 15346, 5057, 2]
 
-// Module 15380 (QuestDockGestureDetector)
+// Module 15442 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import HapticUtils from "HapticUtils" /* 5056 */;
-import QuestConstants from "QuestConstants" /* 5979 */;
-import QuestDockUtils from "QuestDockUtils" /* 15284 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestDockUtils from "QuestDockUtils" /* 15346 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 15285 */;
+import QuestDockConstants from "QuestDockConstants" /* 15347 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const LegacyBaseButton = tmp(6333);
+const LegacyBaseButton = tmp(6334);
 const QuestDockMode = QuestConstants.QuestDockMode;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM: metroImportAll, QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM: c9, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: c10, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY: closure_12, QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD: map1, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: closure_14, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: closure_15, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: closure_16 } = QuestDockConstants);
 const jsx = Fragment.jsx;
@@ -1074,7 +1074,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDo
       }
     };
     const onTouchesMoveResult = onTouchesDownResult.onTouchesMove(fn);
-    let obj3 = { initialGestureOffset: sharedValue, minExpandedContentHeight, activeQuestDockMode, QuestDockMode, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: authStore5, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: authStore, questDockWrapperSpecs, youBarHeight: youBarTotalHeight, getQuestDockExpandedWidth: QuestDockUtils.getQuestDockExpandedWidth, windowDimensions, safeArea, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: authStore4, getQuestDockClosedWidth: QuestDockUtils.getQuestDockClosedWidth, QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: authStore3, questDockOffset, runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, HapticFeedbackTypes: HapticUtils.HapticFeedbackTypes, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, getQuestDockCollapsedWidth: QuestDockUtils.getQuestDockCollapsedWidth, youBarHorizontalMargin };
+    let obj3 = { initialGestureOffset: sharedValue, minExpandedContentHeight, activeQuestDockMode, QuestDockMode, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: authStore4, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: authStore, questDockWrapperSpecs, youBarHeight: youBarTotalHeight, getQuestDockExpandedWidth: QuestDockUtils.getQuestDockExpandedWidth, windowDimensions, safeArea, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: authStore3, getQuestDockClosedWidth: QuestDockUtils.getQuestDockClosedWidth, QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: syncedClientThemes, questDockOffset, runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, HapticFeedbackTypes: HapticUtils.HapticFeedbackTypes, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, getQuestDockCollapsedWidth: QuestDockUtils.getQuestDockCollapsedWidth, youBarHorizontalMargin };
     fn2.__closure = obj3;
     fn2.__workletHash = 11177136508521;
     fn2.__initData = __initData2;

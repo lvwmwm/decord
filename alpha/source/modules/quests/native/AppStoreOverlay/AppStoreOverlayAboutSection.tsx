@@ -1,16 +1,16 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12956
+// Function ID: 12957
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 587, 5091, 558, 576, 1126, 5087, 2]
+// Dependencies: [32, 19, 17, 21, 587, 5092, 558, 576, 1126, 5088, 2]
 
-// Module 12909 (AppStoreOverlayAboutSection)
+// Module 12956 (AppStoreOverlayAboutSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let metroRequire;
 let obj2;
 let tmp;
 const intl3 = tmp(1126);
-const Text_Text = tmp(5087);
+const Text_Text = tmp(5088);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const rect = { top: nativeDefault.space.PX_12, bottom: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12 };
@@ -257,10 +257,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
   const stringResult = string(tmp3 ? t["6MwJo/"] : t.lBeKY2);
   const obj = { style: tmp.aboutSection, children: items2 };
   const obj2 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.CI0vSJ) };
-  const Text = tmp8(5087).Text;
+  const Text = tmp8(5088).Text;
   intl2 = tmp8(1126).intl;
   items2 = [metroRequire(Text, obj2), , ];
-  const Text2 = tmp8(5087).Text;
+  const Text2 = tmp8(5088).Text;
   const tmp11 = metroImportDefault;
   const tmp12 = hasOwnProperty;
   items2[1] = metroRequire(Text2, { variant: "text-sm/medium", color: "text-default", lineClamp: num, onTextLayout: callback, children: description });

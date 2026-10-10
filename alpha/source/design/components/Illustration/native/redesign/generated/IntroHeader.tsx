@@ -1,15 +1,15 @@
-// Module ID: 18326
-// Function ID: 18327
+// Module ID: 18400
+// Function ID: 18401
 // Name: IntroHeader
-// Dependencies: [19, 17, 21, 8343, 18327, 18328, 18329, 558, 576, 4930, 2]
+// Dependencies: [19, 17, 21, 8359, 18401, 18402, 18403, 558, 576, 4969, 2]
 // Exports: getIntroHeaderSource
 
-// Module 18326 (IntroHeader)
+// Module 18400 (IntroHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4930 */;
-import _mod8343 from "module_8343" /* 8343 */;
+import shared from "shared" /* 4969 */;
+import _mod8359 from "module_8359" /* 8359 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIntroHead
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8343;
+    const tmpResult = _mod8359;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -48,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIntroHead
 }) : (function useIntroHeaderSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8343;
+  const obj2 = _mod8359;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntroHeader(
   return <Image source={tmp} />;
 });
 function getIntroHeaderSource(theme) {
-  const obj = _mod8343;
+  const obj = _mod8359;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

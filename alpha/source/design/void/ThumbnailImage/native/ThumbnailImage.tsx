@@ -1,13 +1,13 @@
-// Module ID: 14331
-// Function ID: 14332
+// Module ID: 14385
+// Function ID: 14386
 // Name: ThumbnailImage
-// Dependencies: [19, 17, 21, 1382, 14332, 558, 576, 2]
+// Dependencies: [19, 17, 21, 1382, 14386, 558, 576, 2]
 
-// Module 14331 (ThumbnailImage)
+// Module 14385 (ThumbnailImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 14332 */;
+import LocalImageThumbnailNativeComponent from "LocalImageThumbnailNativeComponent" /* 14386 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,17 +1,17 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11502
+// Function ID: 11503
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 5922, 21, 5091, 558, 576, 11434, 1126, 6163, 11458, 11432, 5087, 11452, 2]
+// Dependencies: [19, 17, 7512, 21, 5092, 558, 576, 11479, 1126, 6156, 11503, 11477, 5088, 11497, 2]
 
-// Module 11457 (AppealIngestionRequestSent)
+// Module 11502 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11452 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11458 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11497 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11503 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 5922 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   let tmp8;
   const obj = emitAppealIngestionEvent(576);
   const cResult = obj.c(20);
-  const obj2 = emitAppealIngestionEvent(11434);
+  const obj2 = emitAppealIngestionEvent(11479);
   emitAppealIngestionEvent = obj2.useEmitAppealIngestionEvent();
   const tmp5 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { headerText: first, subHeaderText: tmp8 };
-    const tmp17 = closure_6(emitAppealIngestionEvent(11432).AppealIngestionModalHeader, obj4);
+    const tmp17 = closure_6(emitAppealIngestionEvent(11477).AppealIngestionModalHeader, obj4);
     cResult[4] = tmp17;
     tmp15 = tmp17;
   } else {
@@ -91,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   if (cResult[6] !== tmp5.actionsHeader) {
     const obj5 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: actionsHeader, children: tmp18 };
-    const tmp22 = closure_6(emitAppealIngestionEvent(5087).Text, obj5);
+    const tmp22 = closure_6(emitAppealIngestionEvent(5088).Text, obj5);
     cResult[6] = tmp5.actionsHeader;
     cResult[7] = tmp22;
     tmp20 = tmp22;
@@ -160,7 +160,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   const obj8 = { children: closure_7(View, obj9) };
   obj9 = { style: container, children: items };
   items = [tmp10, tmp15, tmp20, tmp25, tmp32];
-  const AppealIngestionModalScreen = tmp(11432).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp(11477).AppealIngestionModalScreen;
   const tmp38 = closure_6(AppealIngestionModalScreen, obj8);
   cResult[14] = tmp5.container;
   cResult[15] = tmp32;

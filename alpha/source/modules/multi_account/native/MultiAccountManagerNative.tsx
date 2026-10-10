@@ -1,21 +1,21 @@
-// Module ID: 18044
-// Function ID: 18045
+// Module ID: 18116
+// Function ID: 18117
 // Name: MultiAccountManagerNative
-// Dependencies: [12082, 1085, 3, 1102, 5941, 18045, 2000, 4938, 1121, 18046, 15, 12085, 1112, 4943, 4937, 4768, 1126, 5029, 2]
+// Dependencies: [12126, 1085, 3, 1102, 5934, 18117, 2000, 4977, 1121, 18118, 15, 12129, 1112, 4982, 4976, 4809, 1126, 18119, 2]
 
-// Module 18044 (MultiAccountManagerNative)
+// Module 18116 (MultiAccountManagerNative)
 import LoggerDefault from "Logger" /* 3 */;
 import fast_connect from "fast_connect" /* 15 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import RootNavigationRef from "RootNavigationRef" /* 4938 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5029 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import Constants2 from "Constants" /* 12082 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import Constants2 from "Constants" /* 12126 */;
+import ArrowsLeftRightIcon from "ArrowsLeftRightIcon" /* 18119 */;
 import Constants from "Constants" /* 1085 */;
-import MultiAccountManager from "MultiAccountManager" /* 18046 */;
+import MultiAccountManager from "MultiAccountManager" /* 18118 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ let tmp;
 const ComponentDispatchUtils = tmp(1121);
 function push() {
   obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(18045, dependencyMap.paths), {}, c7);
+  obj.pushLazy(asyncRequire(18117, dependencyMap.paths), {}, c7);
   const tmp3 = c7;
   if (obj.cancelled) {
     const tmpResult = ModalActionCreatorsDefault;
@@ -105,28 +105,28 @@ class MultiAccountManagerNative extends MultiAccountManager {
       const MobileHomeDrawerExperiment = require("HomeDrawerExperiment").MobileHomeDrawerExperiment;
       const tmp2 = _require;
       if (MobileHomeDrawerExperiment.getConfig({ location: "multi-account" }).enableHome) {
-        const tmp2Result = tmp2(4937);
+        const tmp2Result = tmp2(4976);
         tmp2Result.setHomeDrawerState(false);
       }
     }
     const timerId = setTimeout(() => {
       let intl;
       let obj2;
-      obj = { key: "SWITCH_ACCOUNTS_TOAST_LOGIN_SUCCESS", content: intl.formatToPlainString(intl2.t.wx7O3L, obj2), icon: AssetRegistryDefault };
+      obj = { text: intl.formatToPlainString(intl2.t.wx7O3L, obj2), icon: ArrowsLeftRightIcon.ArrowsLeftRightIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl2.intl;
       obj2 = { username: currentUser.username };
-      open(obj);
+      open("SWITCH_ACCOUNTS_TOAST_LOGIN_SUCCESS", obj);
     }, 100);
   }
   onSwitchError() {
     let intl;
-    obj = { key: "SWITCH_ACCOUNTS_TOAST_LOGIN_ERROR", content: intl.string(intl2.t.pqvKWA), icon: AssetRegistryDefault };
+    obj = { text: intl.string(intl2.t.pqvKWA), icon: ArrowsLeftRightIcon.ArrowsLeftRightIcon };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
-    open(obj);
+    open("SWITCH_ACCOUNTS_TOAST_LOGIN_ERROR", obj);
   }
   onSwitchComplete() {
     obj = ModalActionCreatorsDefault;

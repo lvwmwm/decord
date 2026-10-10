@@ -1,28 +1,28 @@
-// Module ID: 18229
-// Function ID: 18230
+// Module ID: 18303
+// Function ID: 18304
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 2086, 1390, 21, 5091, 587, 1382, 558, 576, 504, 8556, 9517, 4727, 18230, 5361, 5087, 1200, 4768, 1126, 6163, 1415, 5406, 4923, 6191, 18232, 6186, 2]
+// Dependencies: [32, 19, 17, 2087, 1390, 21, 5092, 587, 1382, 558, 576, 504, 8572, 9546, 4768, 18304, 5362, 5088, 1200, 4809, 1126, 6156, 1415, 5409, 4962, 6184, 18306, 6179, 2]
 
-// Module 18229 (GuildSettingsModalEmoji/EmojiRow)
+// Module 18303 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4727 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5361 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9517 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18230 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18232 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4768 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9546 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18304 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18306 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -292,11 +292,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiRow(g
   obj5 = {
     onPress() {
       let intl;
-      const obj = { key: "EMOJI_DISABLED", content: intl.string(guildId(onSelectRolesForEmoji[20]).t.KUzI73) };
+      const obj = { text: intl.string(guildId(onSelectRolesForEmoji[20]).t.KUzI73) };
       const open = emoji(onSelectRolesForEmoji[19]).open;
       emoji(onSelectRolesForEmoji[19]);
       intl = guildId(onSelectRolesForEmoji[20]).intl;
-      open(obj);
+      open("EMOJI_DISABLED", obj);
     },
     disabled: emoji.available,
     children: closure_9(tmp16, obj6)

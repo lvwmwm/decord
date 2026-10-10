@@ -1,11 +1,11 @@
-// Module ID: 11368
-// Function ID: 11369
+// Module ID: 11410
+// Function ID: 11411
 // Name: removeConjureServerApp
-// Dependencies: [5, 11369, 4768, 1126, 3827, 4993, 2]
+// Dependencies: [5, 11411, 4809, 1126, 3849, 2]
 // Exports: default
 
-// Module 11368 (removeConjureServerApp)
-import ConjureActionCreators from "ConjureActionCreators" /* 11369 */;
+// Module 11410 (removeConjureServerApp)
+import ConjureActionCreators from "ConjureActionCreators" /* 11411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _removeConjureServerApp() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -81,18 +81,18 @@ let obj = function _removeConjureServerApp() {
             if (appName == null) {
               targetAppName = closure_0.targetAppName;
             }
-            obj = { key: "CONJURE_APP_REMOVED", content: formatToPlainString(SNFGxP, obj7), IconComponent: closure_131_0(closure_131_2[5]).CircleCheckIcon };
+            obj = { text: formatToPlainString(SNFGxP, obj7), variant: "success" };
             obj7 = { app: targetAppName, server: closure_0.guildName };
-            open(obj);
+            open("CONJURE_APP_REMOVED", obj);
             flag2 = true;
           }
           c5 = 3;
           const obj9 = { value: flag2, done: true };
           return obj9;
         }
-      } catch (tmp26) {
+      } catch (tmp23) {
         c5 = 3;
-        throw tmp26;
+        throw tmp23;
       }
     }
   });

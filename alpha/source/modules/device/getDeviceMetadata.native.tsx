@@ -1,11 +1,11 @@
-// Module ID: 7358
-// Function ID: 7359
+// Module ID: 7364
+// Function ID: 7365
 // Name: getDeviceMetadata
-// Dependencies: [7190, 2]
+// Dependencies: [7196, 2]
 // Exports: default
 
-// Module 7358 (getDeviceMetadata)
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7190 */;
+// Module 7364 (getDeviceMetadata)
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7196 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/getDeviceMetadata.native.tsx");

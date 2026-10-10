@@ -1,14 +1,14 @@
 // Module ID: 7504
 // Function ID: 7505
 // Name: mobile/NativePermissionUtils
-// Dependencies: [5, 19, 17, 7482, 21, 1382, 1628, 7505, 7501, 3, 7506, 7507, 2000, 5300, 1126, 2]
+// Dependencies: [5, 19, 17, 7482, 21, 1382, 1628, 7505, 7501, 3, 7506, 7507, 2000, 5301, 1126, 2]
 
 // Module 7504 (mobile/NativePermissionUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import useAlertStore from "useAlertStore" /* 5300 */;
+import useAlertStore from "useAlertStore" /* 5301 */;
 import NativePermissionBaseUtils2 from "NativePermissionBaseUtils" /* 7501 */;
 import react_nativeDefault from "react-native" /* 7506 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -53,7 +53,7 @@ let requestPermissionLookup = function _combineStatuses() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       while (true) {

@@ -1,35 +1,39 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 12996
+// Function ID: 12997
 // Name: ConjureChatStore
-// Dependencies: [109, 32, 7252, 1244, 12517, 2115, 4900, 5756, 10617, 1085, 2071, 11, 11371, 2041, 12949, 10940, 6939, 504, 1126, 3827, 584, 2]
+// Dependencies: [109, 32, 7258, 1244, 12564, 2116, 4939, 5759, 1390, 10651, 1085, 2072, 11, 11413, 2041, 4962, 11425, 10980, 6945, 504, 1126, 3849, 584, 2]
 // Exports: getOlderHistoryCursor, isStrandedSegment, recordStep, turnSettled
 
-// Module 12948 (ConjureChatStore)
+// Module 12996 (ConjureChatStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import ChannelConstants from "ChannelConstants" /* 2071 */;
-import _modDef3827 from "module_3827" /* 3827 */;
-import ConjureUtils from "ConjureUtils" /* 6939 */;
-import SoundUtils from "SoundUtils" /* 10940 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11371 */;
-import conjureProjectMute from "conjureProjectMute" /* 12949 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import ConjureUtils from "ConjureUtils" /* 6945 */;
+import SoundUtils from "SoundUtils" /* 10980 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11413 */;
+import conjureProjectMute from "conjureProjectMute" /* 11425 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7252 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7258 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12517 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5756 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12564 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
+import UserStore from "UserStore" /* 1390 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let closure_14;
+let user;
+
 let closure_15;
+let closure_16;
 function newMessage(assistant, content, arg2) {
   let id;
   let obj4;
@@ -45,8 +49,8 @@ function newMessage(assistant, content, arg2) {
   ({ ts, id, userId, turnId } = obj);
   const attachments = obj.attachments;
   if (id == null) {
-    const sum = c31 + 1;
-    c31 = sum;
+    const sum = c33 + 1;
+    c33 = sum;
     id = `m${tmp2}`;
   }
   const obj2 = { id, render_id: id, role: assistant, content, steps: [], created_at: parsed, attachments };
@@ -77,7 +81,7 @@ function newMessageFromHistory(ts) {
   function snowflakeTimeOf(id) {
     let startsWithResult;
     if (id != null) {
-      startsWithResult = id.startsWith(closure_1_33);
+      startsWithResult = id.startsWith(closure_1_35);
     }
     let substr = id;
     if (true === startsWithResult) {
@@ -218,7 +222,7 @@ function resolveTurnIndex(arr3, activeTurnId) {
         let tmp4 = tmp3.turn_id === activeTurnId;
         if (!tmp4) {
           let _HermesInternal = HermesInternal;
-          tmp4 = tmp3.id === "" + c33 + activeTurnId;
+          tmp4 = tmp3.id === "" + c35 + activeTurnId;
         }
         num = diff;
         if (tmp4) {
@@ -278,7 +282,7 @@ function patchTurn(projectId, turnId, fn) {
           let tmp10 = tmp8.turn_id === turnId;
           if (!tmp10) {
             const _HermesInternal = HermesInternal;
-            tmp10 = tmp8.id === "" + c33 + turnId;
+            tmp10 = tmp8.id === "" + c35 + turnId;
           }
           tmp9 = tmp8;
           if (!tmp10) {
@@ -376,10 +380,10 @@ function hasOpenTurn(map) {
 }
 function notifyTurn(projectId, guildId, title, body, nonce) {
   let CHANNELResult;
-  let tmp25;
+  let tmp26;
   if (null != nonce) {
+    let obj = map5;
     let num = map5.get(projectId);
-    const obj = map5;
     if (num == null) {
       num = 0;
     }
@@ -388,7 +392,10 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
     }
   }
   const obj2 = ConjurePlatformUtilsDefault;
-  let result2 = obj2.areTurnNotificationsDisabled() || SelfPresenceStore.getStatus() === constants.DND;
+  let result2 = obj2.areTurnNotificationsDisabled();
+  if (!result2) {
+    result2 = SelfPresenceStore.getStatus() === constants.DND;
+  }
   if (!result2) {
     const FocusMode = UserSettings.FocusMode;
     result2 = FocusMode.getSetting();
@@ -419,16 +426,33 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
         const tmp8Result2 = ConjureUtils;
         conjureWorkspaceGuildId = tmp8Result2.resolveConjureWorkspaceGuildId("VibegrationsChatStore");
       }
-      const obj4 = { projectId, guildId: conjureWorkspaceGuildId, title, body, route: CHANNELResult, sound: tmp25, volume: 0.4 };
-      CHANNELResult = null;
+      const obj4 = {
+        projectId,
+        guildId: conjureWorkspaceGuildId,
+        title,
+        body: body.replace(re19, (arg0, arg1) => {
+              let combined = arg0;
+              user = user.getUser(arg1);
+              if (null != user) {
+                const _HermesInternal = HermesInternal;
+                const obj = UserUtilsDefault;
+                combined = "@" + obj.getName(user);
+              }
+              return combined;
+            }),
+        route: CHANNELResult,
+        sound: tmp26,
+        volume: 0.4
+      };
       const presentTurnNotification = ConjurePlatformUtilsDefault.presentTurnNotification;
       ConjurePlatformUtilsDefault;
+      CHANNELResult = null;
       if (null != conjureWorkspaceGuildId) {
         CHANNELResult = authStore3.CHANNEL(conjureWorkspaceGuildId, StaticChannelRoute.CONJURE, projectId);
       }
-      tmp25 = undefined;
+      tmp26 = undefined;
       if (!isSoundDisabledResult) {
-        tmp25 = bit_message1;
+        tmp26 = bit_message1;
       }
       const result1 = presentTurnNotification(obj4);
     }
@@ -444,11 +468,11 @@ function recordThinkingTransition(projectId) {
   const obj2 = map;
   if (flag !== tmp2) {
     const result = obj.set(projectId, tmp2);
-    const index = closure_23.indexOf(projectId);
+    const index = closure_25.indexOf(projectId);
     if (-1 !== index) {
-      closure_23.splice(index, 1);
+      closure_25.splice(index, 1);
     }
-    closure_23.unshift(projectId);
+    closure_25.unshift(projectId);
     if (tmp2) {
       map1.delete(projectId);
     } else {
@@ -538,8 +562,8 @@ function purgeProject(projectId) {
   const deleteResult6 = map4.delete(projectId);
   const deleteResult7 = set1.delete(projectId);
   const deleteResult8 = set2.delete(projectId);
-  const index = closure_23.indexOf(projectId);
-  const arr = closure_23;
+  const index = closure_25.indexOf(projectId);
+  const arr = closure_25;
   if (-1 !== index) {
     arr.splice(index, 1);
   }
@@ -695,33 +719,34 @@ function stoppable(role) {
 }
 let closure_3 = ["disposition"];
 let closure_4 = ["disposition"];
-({ Routes: closure_14, StatusTypes: closure_15 } = Constants);
+({ Routes: closure_15, StatusTypes: closure_16 } = Constants);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 const bit_message1 = "bit_message1";
+const re19 = /<@!?(\d+)>/g;
 let set = new Set(["reply", "plan_proposed", "terminal_error"]);
 const weakMap = new WeakMap();
 let map = new Map();
 const map1 = new Map();
 const map2 = new Map();
-let closure_23 = [];
+let closure_25 = [];
 const map3 = new Map();
 const map4 = new Map();
 let set1 = new Set();
 let set2 = new Set();
 const map5 = new Map();
 let width = 0;
-let closure_30 = [];
-let c31 = 0;
-let c33 = "turn:";
+let closure_32 = [];
+let c33 = 0;
+let c35 = "turn:";
 const Store = get_initializedDefault.Store;
 class ConjureChatStore extends Store {
   initialize() {
-    this.waitFor(FamilyCenterStore, NotificationSettingsStore, SelectedChannelStore, SelectedGuildStore, SelfPresenceStore, UserSettingsProtoStore, ConjureProjectStore);
+    this.waitFor(FamilyCenterStore, NotificationSettingsStore, SelectedChannelStore, SelectedGuildStore, SelfPresenceStore, UserSettingsProtoStore, UserStore, ConjureProjectStore);
   }
   getMessages(arg0) {
     let value = map.get(arg0);
     if (value == null) {
-      value = closure_30;
+      value = closure_32;
     }
     return value;
   }
@@ -773,7 +798,7 @@ class ConjureChatStore extends Store {
     return width;
   }
   getActivityOrderedProjectIds() {
-    return closure_23.slice();
+    return closure_25.slice();
   }
   isAnyThinking() {
     const self = this;
@@ -805,7 +830,7 @@ let obj = {
                 if (0 === set2.size) {
                   if (0 === map6.size) {
                     if (0 === set3.size) {
-                      if (0 === closure_23.length) {
+                      if (0 === closure_25.length) {
                         if (0 === width) {
                           return false;
                         }
@@ -828,7 +853,7 @@ let obj = {
     set2.clear();
     map6.clear();
     set3.clear();
-    closure_23.length = 0;
+    closure_25.length = 0;
     width = 0;
   },
   CONJURE_CHAT_HISTORY_SET: function handleChatHistorySet(arg0) {
@@ -1032,7 +1057,7 @@ let obj = {
                 let tmp11 = tmp10.turn_id === activeTurnId;
                 if (!tmp11) {
                   let _HermesInternal = HermesInternal;
-                  tmp11 = tmp10.id === "" + c33 + activeTurnId;
+                  tmp11 = tmp10.id === "" + c35 + activeTurnId;
                 }
                 num5 = diff;
                 if (tmp11) {
@@ -1265,7 +1290,7 @@ let obj = {
       let tmp3;
       steps = steps.steps;
       const tmp2 = (function indexTimeline(steps) {
-        const value = closure_1_44.get(steps);
+        const value = closure_1_46.get(steps);
         if (null != value) {
           return value;
         } else {
@@ -1297,7 +1322,7 @@ let obj = {
             continue;
           }
           const obj = { seenSeq: set, todosAt: num };
-          const result = closure_1_44.set(steps, obj);
+          const result = closure_1_46.set(steps, obj);
           return obj;
         }
       })(steps);
@@ -1435,7 +1460,7 @@ let obj = {
             let tmp4 = tmp3.turn_id === turnId;
             if (!tmp4) {
               let _HermesInternal = HermesInternal;
-              tmp4 = tmp3.id === "" + c33 + turnId;
+              tmp4 = tmp3.id === "" + c35 + turnId;
             }
             num2 = diff;
             if (tmp4) {
@@ -1482,7 +1507,7 @@ let obj = {
             let tmp4 = role.turn_id === require;
             if (!tmp4) {
               const _HermesInternal = HermesInternal;
-              tmp4 = role.id === "" + c33 + tmp3;
+              tmp4 = role.id === "" + c35 + tmp3;
             }
             let tmp7 = role;
             if (tmp4) {
@@ -1630,7 +1655,7 @@ let obj = {
                 const obj2 = { provisionalTodo: undefined, steps: items };
                 const merged = Object.assign(disposition);
                 items = [];
-                const obj3 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3827.lmiuFX) };
+                const obj3 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3849.lmiuFX) };
                 const arraySpreadResult = HermesBuiltin.arraySpread(items, disposition.steps, 0);
                 intl = intl2.intl;
                 items[arraySpreadResult] = obj3;
@@ -1755,7 +1780,7 @@ export const isStrandedSegment = function isStrandedSegment(arg0, arg1) {
                 let tmp11 = tmp8.turn_id === turn_id;
                 if (!tmp11) {
                   let _HermesInternal = HermesInternal;
-                  tmp11 = tmp8.id === "" + c33 + turn_id;
+                  tmp11 = tmp8.id === "" + c35 + turn_id;
                 }
                 if (tmp11) {
                   let tmp12 = true === tmp8.finished || true === tmp8.continued || "" !== tmp8.content || null != tmp8.proposal || null != tmp8.clarification || null != tmp8.intake;
@@ -1794,7 +1819,7 @@ export const getOlderHistoryCursor = function getOlderHistoryCursor(arg0) {
 };
 export const recordStep = function recordStep(arr, turn_seq) {
   const tmp = (function indexTimeline(steps) {
-    const value = closure_1_44.get(steps);
+    const value = closure_1_46.get(steps);
     if (null != value) {
       return value;
     } else {
@@ -1826,7 +1851,7 @@ export const recordStep = function recordStep(arr, turn_seq) {
         continue;
       }
       const obj = { seenSeq: set, todosAt: num };
-      const result = closure_1_44.set(steps, obj);
+      const result = closure_1_46.set(steps, obj);
       return obj;
     }
   })(arr);

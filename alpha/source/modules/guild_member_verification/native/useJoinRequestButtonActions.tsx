@@ -1,17 +1,17 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12374
+// Function ID: 12375
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 2064, 1085, 4768, 1126, 6943, 5055, 6123, 4903, 12331, 2000, 2]
+// Dependencies: [5, 32, 19, 2065, 1085, 4809, 1126, 6949, 5056, 6116, 4942, 12375, 2000, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12330 (useJoinRequestButtonActions)
+// Module 12374 (useJoinRequestButtonActions)
 import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -36,11 +36,11 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
   let closure_7 = tmp[1];
   const onError = joinRequestId.useCallback(() => {
     let intl;
-    const obj = { key: "JOIN_REQUEST_ERROR", content: intl.string(joinRequest(onDismiss[6]).t.R0RpRX) };
+    const obj = { text: intl.string(joinRequest(onDismiss[6]).t.R0RpRX) };
     const open = interviewChannelId(onDismiss[5]).open;
     interviewChannelId(onDismiss[5]);
     intl = joinRequest(onDismiss[6]).intl;
-    open(obj);
+    open("JOIN_REQUEST_ERROR", obj);
   }, []);
   const items = [guildId, joinRequestId, interviewChannelId, onError, submitting, userId];
   let obj2 = {
@@ -59,7 +59,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -114,10 +114,10 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
               return obj9;
             } else {
               const obj = { text: intl.string(tmp(onDismiss[6]).t.WXHcq5), variant: "success" };
-              const openMana = interviewChannelId(onDismiss[5]).openMana;
+              const open = interviewChannelId(onDismiss[5]).open;
               const tmp8 = interviewChannelId(onDismiss[5]);
               intl = tmp(onDismiss[6]).intl;
-              openMana("JOIN_REQUEST_APPROVE", obj);
+              open("JOIN_REQUEST_APPROVE", obj);
               c3 = 1;
             }
             c3 = 0;
@@ -126,7 +126,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             obj4.hideActionSheet();
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp49) {
           onDismiss = tmp49;
           if (0 === c3) {
@@ -157,7 +157,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(12331, dependencyMap.paths);
+        const tmp10 = asyncRequire(12375, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),
@@ -181,7 +181,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -292,7 +292,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           obj6.hideActionSheet();
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp56) {
         onDismiss = tmp56;
         if (0 === c3) {

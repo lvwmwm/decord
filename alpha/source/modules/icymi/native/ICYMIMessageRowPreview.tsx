@@ -1,22 +1,22 @@
-// Module ID: 16864
-// Function ID: 16865
+// Module ID: 16932
+// Function ID: 16933
 // Name: ICYMIMessageRowPreview
-// Dependencies: [109, 19, 1085, 21, 558, 576, 8462, 9286, 7730, 6995, 4992, 5091, 587, 8247, 1126, 2041, 7728, 9346, 2]
+// Dependencies: [109, 19, 1085, 21, 558, 576, 8478, 9313, 7748, 7001, 5031, 5092, 587, 8263, 1126, 2041, 7746, 9373, 2]
 
-// Module 16864 (ICYMIMessageRowPreview)
+// Module 16932 (ICYMIMessageRowPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import useThemeDefault from "useTheme" /* 4992 */;
-import createStyles from "createStyles" /* 5091 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6995 */;
-import RowGeneratorDefault from "RowGenerator" /* 7728 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8247 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9286 */;
-import ChatItemDefault from "ChatItem" /* 9346 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import createStyles from "createStyles" /* 5092 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7001 */;
+import RowGeneratorDefault from "RowGenerator" /* 7746 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8263 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9313 */;
+import ChatItemDefault from "ChatItem" /* 9373 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -382,7 +382,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
           tmp20 = tmp26;
         }
         const obj3 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp11, renderEmbeds: tmp11, inlineEmbedMedia: tmp11 };
-        const merged1 = Object.assign(tmp(7730).DEFAULT_OPTIONS);
+        const merged1 = Object.assign(tmp(7748).DEFAULT_OPTIONS);
         const merged2 = Object.assign(tmp5);
         cResult[11] = tmp11;
         cResult[12] = tmp5;
@@ -415,10 +415,10 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     }
     return obj;
   }, items);
-  const tmp3 = merged(6995)(message);
+  const tmp3 = merged(7001)(message);
   const merged1 = Object.assign(memo);
   const obj2 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp3, renderEmbeds: tmp3, inlineEmbedMedia: tmp3 };
-  const merged2 = Object.assign(message(7730).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(7748).DEFAULT_OPTIONS);
   const merged3 = Object.assign(messageOptions);
   return <closure_10 messageOptions={obj2} seeMoreLabel="..." />;
 }));
@@ -444,8 +444,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
   const tmp5 = useThemeDefault();
   if (cResult[0] !== tmp5) {
     const obj2 = { seeMoreLabelColor: nativeDefault.colors.TEXT_DEFAULT };
-    const createNativeStyleProperties = tmp(5091).createNativeStyleProperties;
-    tmp(5091);
+    const createNativeStyleProperties = tmp(5092).createNativeStyleProperties;
+    tmp(5092);
     const tmp8 = createNativeStyleProperties(obj2)(tmp5);
     cResult[0] = tmp5;
     cResult[1] = tmp8;
@@ -555,7 +555,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
   if (str === undefined) {
     str = "none";
   }
-  let tmp = messageOptions(4992)();
+  let tmp = messageOptions(5031)();
   let obj = createStyles;
   const obj2 = { seeMoreLabelColor: messageOptions(587).colors.TEXT_DEFAULT };
   dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);
@@ -574,7 +574,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIM
     setOptions(obj);
     return tmp;
   }, items);
-  return jsx(messageOptions(9346), {
+  return jsx(messageOptions(9373), {
     pointerEvents: str,
     horizontalOffset: 0,
     modifyRow(arg0) {

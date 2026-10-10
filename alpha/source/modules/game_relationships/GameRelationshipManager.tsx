@@ -1,12 +1,12 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14790
+// Function ID: 14791
 // Name: GameRelationshipManager
-// Dependencies: [7340, 1085, 2002, 584, 6849, 2]
+// Dependencies: [7346, 1085, 2002, 584, 6852, 2]
 
-// Module 14736 (GameRelationshipManager)
+// Module 14790 (GameRelationshipManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7340 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7346 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 

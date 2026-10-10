@@ -1,14 +1,14 @@
-// Module ID: 10208
-// Function ID: 10209
+// Module ID: 10237
+// Function ID: 10238
 // Name: useUserVoiceActivity
-// Dependencies: [2064, 4709, 5112, 1096, 558, 576, 504, 2]
+// Dependencies: [2065, 4750, 5113, 1096, 558, 576, 504, 2]
 // Exports: canViewUserVoiceChannel, getUserVoiceState
 
-// Module 10208 (useUserVoiceActivity)
+// Module 10237 (useUserVoiceActivity)
 import Constants from "Constants" /* 1096 */;
-import ChannelStore_mod from "ChannelStore" /* 2064 */;
-import PermissionStore_mod from "PermissionStore" /* 4709 */;
-import VoiceStateStore_mod from "VoiceStateStore" /* 5112 */;
+import ChannelStore_mod from "ChannelStore" /* 2065 */;
+import PermissionStore_mod from "PermissionStore" /* 4750 */;
+import VoiceStateStore_mod from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ let PermissionStore = PermissionStore_mod;
 let VoiceStateStore = VoiceStateStore_mod;
 const Permissions = Constants.Permissions;
 let closure_6 = { ChannelStore, PermissionStore, VoiceStateStore };
-let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "Set" });
+let closure_7 = Object.freeze({ voiceState: "backgroundColor", voiceChannel: "IconComponent" });
 function getUserVoiceState(arg0) {
   let guildId;
   let includeNonDiscoverable;

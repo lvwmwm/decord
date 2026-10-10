@@ -1,26 +1,26 @@
-// Module ID: 18576
-// Function ID: 18577
+// Module ID: 18650
+// Function ID: 18651
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 4765, 1126, 2859, 5087, 5374, 7512, 18560, 11493, 11546, 7688, 7511, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4806, 1126, 2862, 5088, 5377, 7515, 18634, 11539, 11592, 7705, 7514, 2]
 
-// Module 18576 (AppStoreParentalRevocationScreen)
+// Module 18650 (AppStoreParentalRevocationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef2859 from "module_2859" /* 2859 */;
-import LinkingDefault from "Linking" /* 4765 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Stack_Stack from "Stack/Stack" /* 5374 */;
-import ModalScreen2 from "ModalScreen" /* 7511 */;
-import ModalContent2 from "ModalContent" /* 7512 */;
-import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 7688 */;
-import ModalFooter2 from "ModalFooter" /* 11493 */;
-import ModalActionButton2 from "ModalActionButton" /* 11546 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18560 */;
+import _modDef2862 from "module_2862" /* 2862 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import ModalScreen2 from "ModalScreen" /* 7514 */;
+import ModalContent2 from "ModalContent" /* 7515 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 7705 */;
+import ModalFooter2 from "ModalFooter" /* 11539 */;
+import ModalActionButton2 from "ModalActionButton" /* 11592 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 18634 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
   ({ content, upperHalf, text } = tmp4);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef2859.Z87TFb);
+    const stringResult = intl.string(_modDef2862.Z87TFb);
     cResult[1] = stringResult;
     tmp6 = stringResult;
   } else {
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
   ({ body, text: text2 } = tmp4);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef2859.VS98dM);
+    const stringResult1 = intl2.string(_modDef2862.VS98dM);
     cResult[4] = stringResult1;
     tmp12 = stringResult1;
   } else {
@@ -107,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
   const text3 = tmp4.text;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1126).intl;
-    const stringResult2 = intl3.string(_modDef2859.BaI6L4);
+    const stringResult2 = intl3.string(_modDef2862.BaI6L4);
     cResult[7] = stringResult2;
     tmp18 = stringResult2;
   } else {
@@ -169,12 +169,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
               if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj6 = { children: items };
                 items = [tmp43, ];
-                const ModalFooter = tmp(11493).ModalFooter;
-                const obj7 = { variant: "primary", text: intl4.string(_modDef2859["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj8), iconPosition: "end", onPress: first };
-                const ModalActionButton = tmp(11546).ModalActionButton;
+                const ModalFooter = tmp(11539).ModalFooter;
+                const obj7 = { variant: "primary", text: intl4.string(_modDef2862["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj8), iconPosition: "end", onPress: first };
+                const ModalActionButton = tmp(11592).ModalActionButton;
                 intl4 = tmp(1126).intl;
                 obj8 = { color: nativeDefault.colors.WHITE };
-                LinkExternalSmallIcon = tmp(7688).LinkExternalSmallIcon;
+                LinkExternalSmallIcon = tmp(7705).LinkExternalSmallIcon;
                 items[1] = hasOwnProperty(ModalActionButton, obj7);
                 const tmp51 = metroRequire(ModalFooter, obj6);
                 cResult[27] = tmp51;
@@ -198,7 +198,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
           const obj10 = { children: metroRequire(View, obj11) };
           obj11 = { style: content, children: items2 };
           items2 = [tmp30, tmp34];
-          const ModalContent = tmp(7512).ModalContent;
+          const ModalContent = tmp(7515).ModalContent;
           const tmp42 = hasOwnProperty(ModalContent, obj10);
           cResult[22] = tmp4.content;
           cResult[23] = tmp30;
@@ -214,7 +214,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
         tmp30 = tmp33;
       }
       const obj13 = { align: "center", spacing: nativeDefault.space.PX_16, children: items3 };
-      const Stack2 = tmp(5374).Stack;
+      const Stack2 = tmp(5377).Stack;
       items3 = [tmp9, tmp24];
       const tmp29 = metroRequire(Stack2, obj13);
       cResult[14] = tmp24;
@@ -224,7 +224,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
     }
   }
   const obj14 = { align: "center", spacing: nativeDefault.space.PX_16, style: body, children: items4 };
-  const Stack = tmp(5374).Stack;
+  const Stack = tmp(5377).Stack;
   items4 = [tmp15, tmp21];
   const tmp25 = metroRequire(Stack, obj14);
   cResult[10] = tmp4.body;
@@ -260,17 +260,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
   const ModalContent = ModalContent2.ModalContent;
   obj5 = { align: "center", spacing: nativeDefault.space.PX_16, children: items };
   Stack = Stack_Stack.Stack;
-  const obj6 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef2859.Z87TFb) };
+  const obj6 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef2862.Z87TFb) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [hasOwnProperty(Text, obj6), ];
   const obj7 = { align: "center", spacing: nativeDefault.space.PX_16, style: tmp.body, children: items1 };
   const Stack2 = Stack_Stack.Stack;
-  const obj8 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: intl2.string(_modDef2859.VS98dM) };
+  const obj8 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: intl2.string(_modDef2862.VS98dM) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items1 = [hasOwnProperty(Text2, obj8), ];
-  const obj9 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: intl3.string(_modDef2859.BaI6L4) };
+  const obj9 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: intl3.string(_modDef2862.BaI6L4) };
   const Text3 = Text_Text.Text;
   intl3 = intl5.intl;
   items1[1] = hasOwnProperty(Text3, obj9);
@@ -282,7 +282,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
   const obj11 = { children: items4 };
   const ModalFooter = ModalFooter2.ModalFooter;
   items4 = [hasOwnProperty(LogOutDisclaimerDefault, {}), ];
-  const obj12 = { variant: "primary", text: intl4.string(_modDef2859["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj13), iconPosition: "end", onPress: callback };
+  const obj12 = { variant: "primary", text: intl4.string(_modDef2862["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj13), iconPosition: "end", onPress: callback };
   const ModalActionButton = ModalActionButton2.ModalActionButton;
   intl4 = intl5.intl;
   obj13 = { color: nativeDefault.colors.WHITE };

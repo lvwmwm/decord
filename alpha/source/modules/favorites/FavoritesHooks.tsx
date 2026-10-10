@@ -1,22 +1,22 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10312
+// Function ID: 10313
 // Name: FavoritesHooks
-// Dependencies: [4900, 1390, 2067, 2077, 1392, 10280, 558, 576, 10281, 504, 1989, 11, 1209, 2089, 2]
+// Dependencies: [4939, 1390, 2068, 2078, 1392, 10313, 558, 576, 10314, 504, 1989, 11, 1209, 2090, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories
 
-// Module 10279 (FavoritesHooks)
+// Module 10312 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1989 */;
-import FavoritesConstants from "FavoritesConstants" /* 2077 */;
-import FavoritesUtils from "FavoritesUtils" /* 2089 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10281 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import FavoritesConstants from "FavoritesConstants" /* 2078 */;
+import FavoritesUtils from "FavoritesUtils" /* 2090 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10314 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import UserStore from "UserStore" /* 1390 */;
-import FavoriteStore from "FavoriteStore" /* 2067 */;
+import FavoriteStore from "FavoriteStore" /* 2068 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesLimits = tmp(10280);
+const FavoritesLimits = tmp(10313);
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites
     } else {
       num6 = 0;
       if (isFreemium) {
-        num6 = tmp(10280).FREE_FAVORITE_LIMIT;
+        num6 = tmp(10313).FREE_FAVORITE_LIMIT;
       }
     }
     num5 = num6;

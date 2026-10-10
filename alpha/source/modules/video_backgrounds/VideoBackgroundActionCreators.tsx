@@ -1,15 +1,15 @@
-// Module ID: 5255
-// Function ID: 5256
+// Module ID: 5256
+// Function ID: 5257
 // Name: VideoBackgroundActionCreators
-// Dependencies: [5, 2012, 1390, 1085, 1295, 584, 5256, 5257, 5258, 5259, 2]
+// Dependencies: [5, 2012, 1390, 1085, 1295, 584, 5257, 5258, 5259, 5260, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 5255 (VideoBackgroundActionCreators)
+// Module 5256 (VideoBackgroundActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5258 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5259 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5259 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -29,7 +29,7 @@ let obj = function _fetchVideoFilterAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -110,7 +110,7 @@ obj = function _uploadVideoFilterAsset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -192,7 +192,7 @@ obj = function _deleteVideoFilterAsset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -233,7 +233,7 @@ obj = function _deleteVideoFilterAsset() {
             obj = closure_130_1(closure_130_2[5]);
             obj.dispatch(obj9);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp19) {
           c4 = 3;
@@ -261,7 +261,7 @@ obj = function _saveLastUsedBackgroundOption() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -309,7 +309,7 @@ obj = function _saveLastUsedBackgroundOption() {
             obj.dispatch(obj11);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp16) {
           c4 = 3;
           throw tmp16;

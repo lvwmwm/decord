@@ -1,10 +1,10 @@
-// Module ID: 5067
-// Function ID: 5068
+// Module ID: 5068
+// Function ID: 5069
 // Name: DeviceUtils
 // Dependencies: [1366, 1382, 510, 2]
 // Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
-// Module 5067 (DeviceUtils)
+// Module 5068 (DeviceUtils)
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import react_native from "react-native" /* 1366 */;
 import size from "module_2" /* 2 */;

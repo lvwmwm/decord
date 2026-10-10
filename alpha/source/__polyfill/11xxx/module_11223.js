@@ -1,142 +1,21 @@
 // Module ID: 11223
 // Function ID: 11224
-// Dependencies: [32, 11195, 11167, 11194]
-// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
+// Dependencies: []
 
 // Module 11223
-import _mod11194 from "module_11194" /* 11194 */;
-import _mod11195 from "module_11195" /* 11195 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let integrations;
-
-function setupIntegration(on, name, arg2) {
-  let closure_0 = on;
-  if (arg2[name.name]) {
-    const tmp10 = require;
-    if (_mod11195.DEBUG_BUILD) {
-      const logger2 = tmp10(11167).logger;
-      const _HermesInternal2 = HermesInternal;
-      logger2.log("Integration skipped because it was already installed: " + name.name);
-    }
-  } else {
-    arg2[name.name] = name;
-    const arr = items;
-    const tmp = -1 === items.indexOf(name.name) && typeof name.setupOnce === "function";
-    if (tmp) {
-      name.setupOnce();
-      arr.push(name.name);
-    }
-    const tmp4 = name.setup && typeof name.setup === "function";
-    if (tmp4) {
-      name.setup(on);
-    }
-    if (typeof name.preprocessEvent === "function") {
-      const preprocessEvent = name.preprocessEvent;
-      let closure_1 = preprocessEvent.bind(name);
-      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
-    }
-    if (typeof name.processEvent === "function") {
-      const processEvent = name.processEvent;
-      let closure_2 = processEvent.bind(name);
-      const _Object = Object;
-      const obj = { id: name.name };
-      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
-    }
-    const tmp6 = require;
-    if (_mod11195.DEBUG_BUILD) {
-      const logger = tmp6(11167).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("Integration installed: " + name.name);
-    }
-  }
-}
-let items = [];
-
-export const addIntegration = function addIntegration(name) {
-  const obj = _mod11194;
-  const client = obj.getClient();
-  if (client) {
-    client.addIntegration(name);
-  } else if (_mod11195.DEBUG_BUILD) {
-    const logger = tmp(11167).logger;
-    const _HermesInternal = HermesInternal;
-    logger.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
-  }
-};
-export const afterSetupIntegrations = function afterSetupIntegrations(arg0, arg1) {
-  const iter = arg1[Symbol.iterator]();
-  let afterAllSetup = iter.next();
-  while (iter !== undefined) {
-    let obj = afterAllSetup;
-    if (obj) {
-      afterAllSetup = obj.afterAllSetup;
-    }
-    if (afterAllSetup) {
-      let afterAllSetupResult = obj.afterAllSetup(arg0);
-    }
-    continue;
-  }
-};
-export function defineIntegration(arg0) {
-  return arg0;
-}
-export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegrations) {
-  let arr2;
-  const arr = defaultIntegrations.defaultIntegrations || [];
-  integrations = defaultIntegrations.integrations;
-  const item = arr.forEach((item) => {
-    item.isDefaultInstance = true;
-  });
-  if (Array.isArray(integrations)) {
-    items = [];
-    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, arr, 0));
-    arr2 = items;
-  } else {
-    arr2 = arr;
-    if (typeof integrations === "function") {
-      const integrationsResult = integrations(arr);
-      const _Array = Array;
-      let tmp3 = integrationsResult;
-      if (!Array.isArray(integrationsResult)) {
-        const items1 = [integrationsResult];
-        tmp3 = items1;
-      }
-      arr2 = tmp3;
-    }
-  }
-  const obj = {};
-  const item1 = arr2.forEach((name) => {
-    name = name.name;
-    let isDefaultInstance = tmp2;
-    const tmp = obj;
-    if (obj[name]) {
-      isDefaultInstance = !tmp2.isDefaultInstance;
-    }
-    if (isDefaultInstance) {
-      isDefaultInstance = name.isDefaultInstance;
-    }
-    if (!isDefaultInstance) {
-      tmp[name] = name;
-    }
-  });
-  const values = Object.values(obj);
-  const findIndexResult = values.findIndex((name) => "Debug" === name.name);
-  if (findIndexResult > -1) {
-    values.push(_slicedToArray(values.splice(findIndexResult, 1), 1)[0]);
-  }
-  return values;
-};
-export const installedIntegrations = items;
-export { setupIntegration };
-export const setupIntegrations = function setupIntegrations(arg0, arr) {
-  let closure_0 = arg0;
-  const obj = {};
-  const item = arr.forEach((item) => {
-    const tmp = item;
-    if (tmp) {
-      setupIntegration(closure_0, item, obj);
-    }
-  });
-  return obj;
-};
+export const SEMANTIC_ATTRIBUTE_CACHE_HIT = "cache.hit";
+export const SEMANTIC_ATTRIBUTE_CACHE_ITEM_SIZE = "cache.item_size";
+export const SEMANTIC_ATTRIBUTE_CACHE_KEY = "cache.key";
+export const SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME = "sentry.exclusive_time";
+export const SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD = "http.request.method";
+export const SEMANTIC_ATTRIBUTE_PROFILE_ID = "sentry.profile_id";
+export const SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME = "sentry.custom_span_name";
+export const SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON = "sentry.idle_span_finish_reason";
+export const SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT = "sentry.measurement_unit";
+export const SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE = "sentry.measurement_value";
+export const SEMANTIC_ATTRIBUTE_SENTRY_OP = "sentry.op";
+export const SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN = "sentry.origin";
+export const SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE = "sentry.sample_rate";
+export const SEMANTIC_ATTRIBUTE_SENTRY_SOURCE = "sentry.source";
+export const SEMANTIC_ATTRIBUTE_URL_FULL = "url.full";

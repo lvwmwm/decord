@@ -1,10 +1,10 @@
-// Module ID: 12462
-// Function ID: 12463
+// Module ID: 12509
+// Function ID: 12510
 // Name: HubEmailConnectionModalActionCreators
-// Dependencies: [5, 5941, 12442, 2000, 2]
+// Dependencies: [5, 5934, 12489, 2000, 2]
 
-// Module 12462 (HubEmailConnectionModalActionCreators)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+// Module 12509 (HubEmailConnectionModalActionCreators)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

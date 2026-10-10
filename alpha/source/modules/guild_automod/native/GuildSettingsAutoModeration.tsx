@@ -1,20 +1,20 @@
-// Module ID: 18167
-// Function ID: 18168
+// Module ID: 18241
+// Function ID: 18242
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 18168, 18170, 1085, 21, 5091, 587, 18172, 1126, 558, 576, 1503, 18177, 18185, 6160, 6269, 5087, 5374, 2127, 8563, 6726, 2]
+// Dependencies: [32, 19, 18242, 18244, 1085, 21, 5092, 587, 18246, 1126, 558, 576, 1503, 18251, 18259, 6153, 6264, 5088, 5377, 2128, 8579, 6727, 2]
 
-// Module 18167 (GuildSettingsAutoModeration)
+// Module 18241 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 587 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6160 */;
-import TableRowGroup2 from "TableRowGroup" /* 6269 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18170 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 18172 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6153 */;
+import TableRowGroup2 from "TableRowGroup" /* 6264 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18244 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 18246 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AutomodStore from "AutomodStore" /* 18168 */;
+import AutomodStore from "AutomodStore" /* 18242 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

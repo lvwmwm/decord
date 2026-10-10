@@ -1,14 +1,14 @@
-// Module ID: 8357
-// Function ID: 8358
+// Module ID: 8373
+// Function ID: 8374
 // Name: profile_customization/ProfileCustomizationUtils
-// Dependencies: [558, 576, 1415, 8358, 1103, 2]
+// Dependencies: [558, 576, 1415, 8374, 1103, 2]
 // Exports: getAvatarSource
 
-// Module 8357 (profile_customization/ProfileCustomizationUtils)
+// Module 8373 (profile_customization/ProfileCustomizationUtils)
 import react from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
-import VideoBackground from "VideoBackground" /* 8358 */;
+import VideoBackground from "VideoBackground" /* 8374 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

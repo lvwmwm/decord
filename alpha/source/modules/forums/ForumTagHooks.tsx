@@ -1,16 +1,16 @@
-// Module ID: 6970
-// Function ID: 6971
+// Module ID: 6976
+// Function ID: 6977
 // Name: ForumTagHooks
-// Dependencies: [19, 2064, 4709, 1096, 558, 576, 504, 1388, 6971, 2]
+// Dependencies: [19, 2065, 4750, 1096, 558, 576, 504, 1388, 6977, 2]
 
-// Module 6970 (ForumTagHooks)
+// Module 6976 (ForumTagHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReportToModUtils from "ReportToModUtils" /* 6971 */;
+import ReportToModUtils from "ReportToModUtils" /* 6977 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

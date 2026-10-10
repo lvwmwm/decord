@@ -1,42 +1,105 @@
 // Module ID: 11241
 // Function ID: 11242
-// Dependencies: [11173, 11194, 11223]
+// Dependencies: [41, 42, 11218, 11213]
 
 // Module 11241
-import module_11223 from "module_11223" /* 11223 */;
+import _mod11213 from "module_11213" /* 11213 */;
+import generatePropagationContext from "generatePropagationContext" /* 11218 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-let has, toString;
-
-const weakMap = new WeakMap();
-
-export const functionToStringIntegration = module_11223.defineIntegration(() => {
-  let obj = {
-    name: "FunctionToString",
-    setupOnce() {
-      toString = Function.prototype.toString;
-      try {
-        const _Function = Function;
-        Function.prototype.toString = function() {
-          const items = [...arguments];
-          const obj = closure_1_0(closure_1_1[0]);
-          const originalFunction = obj.getOriginalFunction(this);
-          has = has.has;
-          let self = this;
-          const obj2 = closure_1_0(closure_1_1[1]);
-          if (has(obj2.getClient())) {
-            self = this;
-            if (undefined !== originalFunction) {
-              self = originalFunction;
-            }
-          }
-          return toString.apply(self, items);
-        };
-      } catch (err) {
-      }
-    },
-    setup(arg0) {
-      const result = weakMap.set(arg0, true);
+class SentryNonRecordingSpan {
+  constructor() {
+    let obj = arg0;
+    if (arg0 === undefined) {
+      obj = {};
     }
-  };
-  return obj;
-});
+    const self = this;
+    _classCallCheck(this, SentryNonRecordingSpan);
+    let traceId = obj.traceId;
+    if (!traceId) {
+      const obj2 = generatePropagationContext;
+      traceId = obj2.generateTraceId();
+    }
+    self._traceId = traceId;
+    let spanId = obj.spanId;
+    if (!spanId) {
+      const obj3 = generatePropagationContext;
+      spanId = obj3.generateSpanId();
+    }
+    self._spanId = spanId;
+  }
+}
+const entry = {
+  key: "spanContext",
+  value: function spanContext() {
+    const obj = { spanId: this._spanId, traceId: this._traceId, traceFlags: _mod11213.TRACE_FLAG_NONE };
+    return obj;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "end",
+    value: function end(arg0) {
+
+    }
+  },
+  {
+    key: "setAttribute",
+    value: function setAttribute(arg0, arg1) {
+      return this;
+    }
+  },
+  {
+    key: "setAttributes",
+    value: function setAttributes(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "setStatus",
+    value: function setStatus(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "updateName",
+    value: function updateName(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "isRecording",
+    value: function isRecording() {
+      return false;
+    }
+  },
+  {
+    key: "addEvent",
+    value: function addEvent(arg0, arg1, arg2) {
+      return this;
+    }
+  },
+  {
+    key: "addLink",
+    value: function addLink(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "addLinks",
+    value: function addLinks(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "recordException",
+    value: function recordException(arg0, arg1) {
+
+    }
+  }
+];
+const SentryNonRecordingSpan_export = _createClass(SentryNonRecordingSpan, items);
+
+export { SentryNonRecordingSpan_export as SentryNonRecordingSpan };

@@ -1,18 +1,18 @@
-// Module ID: 17502
-// Function ID: 17503
+// Module ID: 17574
+// Function ID: 17575
 // Name: ContextMenuCommandNavigator
-// Dependencies: [109, 19, 17, 21, 9317, 5091, 587, 558, 576, 7190, 6686, 1631, 9270, 1126, 17503, 17505, 2]
+// Dependencies: [109, 19, 17, 21, 9344, 5092, 587, 558, 576, 7196, 6687, 1631, 9297, 1126, 17575, 17577, 2]
 
-// Module 17502 (ContextMenuCommandNavigator)
+// Module 17574 (ContextMenuCommandNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import HeaderShared from "HeaderShared" /* 9270 */;
+import HeaderShared from "HeaderShared" /* 9297 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9317 */;
-import createStyles from "createStyles" /* 5091 */;
+import NativeStackView from "NativeStackView" /* 9344 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
     [tmp5, tmp6] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
-  const tmpResult = tmp(6686);
+  const tmpResult = tmp(6687);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   ({ left, right } = accessibilityNativeStackOptions(1631)());
   accessibilityNativeStackOptions(1631)();

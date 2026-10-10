@@ -1,13 +1,13 @@
-// Module ID: 14676
-// Function ID: 14677
+// Module ID: 14730
+// Function ID: 14731
 // Name: providers
-// Dependencies: [5, 5758, 5636, 1085, 2024, 1096, 10899, 10905, 5760, 10896, 584, 1121, 9177, 6868, 2]
+// Dependencies: [5, 5761, 5639, 1085, 2024, 1096, 10939, 10945, 5763, 10936, 584, 1121, 9204, 6874, 2]
 
-// Module 14676 (providers)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10899 */;
+// Module 14730 (providers)
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5758 */;
-import Constants_mod from "Constants" /* 5636 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
+import Constants_mod from "Constants" /* 5639 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Constants_mod3 from "Constants" /* 2024 */;
 import Constants_mod4 from "Constants" /* 1096 */;
@@ -80,6 +80,7 @@ obj2 = {
       const self5 = this;
       let str2 = "Command not available for this application";
       const self6 = this;
+      let tmp15 = obj5;
       const tmp16 = new tmp4(tmp[9])(obj5, "Command not available for this application");
       throw tmp16;
     } else if (set.has(validateApplicationResult)) {
@@ -100,7 +101,7 @@ obj2 = {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c5;
@@ -166,7 +167,7 @@ obj2 = {
                   if (self) {
                     const result = handleSocketDisconnected();
                     c7 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   } else {
                     const obj7 = provider(connection_redirect[10]);
                     const subscription = obj7.subscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
@@ -204,22 +205,22 @@ obj2 = {
                 self = this;
                 const self2 = this;
                 const str = "Refreshing access token did not return a new access token";
-                const tmp13 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
-                throw tmp13;
+                const tmp15 = new provider(connection_redirect[9])(obj10, "Refreshing access token did not return a new access token");
+                throw tmp15;
               } else {
                 self = closure_0;
                 let obj = { access_token };
-                closure_0(obj);
+                const tmp9 = closure_0(obj);
                 c5 = 0;
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
-          } catch (tmp36) {
-            closure_4 = tmp36;
+            return { value: "IconComponent", done: "+51" };
+          } catch (tmp38) {
+            closure_4 = tmp38;
             if (0 === c5) {
               c7 = 3;
-              throw tmp36;
+              throw tmp38;
             } else {
               c6 = 1;
             }
@@ -277,7 +278,7 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {

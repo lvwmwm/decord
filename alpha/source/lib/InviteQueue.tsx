@@ -1,14 +1,14 @@
-// Module ID: 8748
-// Function ID: 8749
+// Module ID: 8764
+// Function ID: 8765
 // Name: InviteQueue
-// Dependencies: [2064, 1102, 7736, 3, 7172, 7008, 2]
+// Dependencies: [2065, 1102, 7754, 3, 7178, 7014, 2]
 
-// Module 8748 (InviteQueue)
+// Module 8764 (InviteQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7172 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import Queue from "Queue" /* 7736 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import Queue from "Queue" /* 7754 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -40,7 +40,7 @@ function drain(location, sum) {
   if (self.GROUP_DM !== type) {
     if (self.CHANNEL !== type) {
       if (self.USER === type) {
-        const obj = inviteAnalyticsMetadata(7008);
+        const obj = inviteAnalyticsMetadata(7014);
         const ensurePrivateChannelResult = obj.ensurePrivateChannel(location.user.id);
         ensurePrivateChannelResult.then((result) => {
           const channel = ChannelStore.getChannel(result);

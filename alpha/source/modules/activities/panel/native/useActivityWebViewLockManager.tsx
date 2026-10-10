@@ -1,11 +1,11 @@
-// Module ID: 17628
-// Function ID: 17629
+// Module ID: 17700
+// Function ID: 17701
 // Name: useActivityWebViewLockManager
-// Dependencies: [32, 19, 4811, 4788, 2]
+// Dependencies: [32, 19, 4850, 4827, 2]
 // Exports: default, useLockedWebView
 
-// Module 17628 (useActivityWebViewLockManager)
-import native from "native" /* 4788 */;
+// Module 17700 (useActivityWebViewLockManager)
+import native from "native" /* 4827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -76,7 +76,7 @@ export default function useActivityWebViewLockManager() {
       }, items);
       const items1 = [id, tmp4];
       const layoutEffect = getCanRender.useLayoutEffect(() => {
-        const f155755 = () => {
+        const f156212 = () => {
           let tmp6;
           let tmp8;
           const tmp2 = closure_1_2[Symbol.iterator]();
@@ -100,12 +100,12 @@ export default function useActivityWebViewLockManager() {
         if (null == id) {
           const tmp = globalThis;
           let resolved = Promise.resolve();
-          id = resolved.then(f155755);
+          id = resolved.then(f156212);
         }
         return () => {
           if (null == closure_0) {
             const resolved = Promise.resolve();
-            closure_0 = resolved.then(f155755);
+            closure_0 = resolved.then(f156212);
           }
         };
       }, items1);
@@ -115,17 +115,21 @@ export default function useActivityWebViewLockManager() {
 };
 export const useLockedWebView = function useLockedWebView(transitionState) {
   transitionState = transitionState.transitionState;
-  let shown;
+  const hasActivity = transitionState.hasActivity;
+  let renderWebView;
   const context = transitionState.context;
-  const obj = transitionState(shown[2]);
-  shown = obj.useSharedValue(false);
-  const renderWebView = react.useContext(context).useActivityWebViewLock();
-  const items = [shown, transitionState, renderWebView];
-  const effect = react.useEffect(() => {
+  const obj = transitionState(hasActivity[2]);
+  const shown = obj.useSharedValue(false);
+  renderWebView = renderWebView.useContext(context).useActivityWebViewLock();
+  const items = [shown, transitionState, renderWebView, hasActivity];
+  const effect = renderWebView.useEffect(() => {
     if (transitionState !== native.TransitionStates.YEETED) {
       const tmp = renderWebView;
       if (tmp) {
-        const result = shown.set(true);
+        const tmp2 = hasActivity;
+        if (tmp2) {
+          const result = shown.set(true);
+        }
       }
     }
     const result1 = shown.set(false);

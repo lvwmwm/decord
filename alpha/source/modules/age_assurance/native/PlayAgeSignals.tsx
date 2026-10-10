@@ -1,11 +1,11 @@
-// Module ID: 7680
-// Function ID: 7681
+// Module ID: 7697
+// Function ID: 7698
 // Name: PlayAgeSignals
-// Dependencies: [5, 7681, 7682, 2]
+// Dependencies: [5, 7698, 7699, 2]
 // Exports: getAgeSignals
 
-// Module 7680 (PlayAgeSignals)
-import react_nativeDefault from "react-native" /* 7681 */;
+// Module 7697 (PlayAgeSignals)
+import react_nativeDefault from "react-native" /* 7698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj = function _getAgeSignals() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {

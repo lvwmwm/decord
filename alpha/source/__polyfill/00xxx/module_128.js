@@ -19,7 +19,7 @@ export const createValueIterator = function* createValueIterator(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {
@@ -37,7 +37,7 @@ export const createValueIterator = function* createValueIterator(arg0, value) {
           closure_1 = 0;
           if (closure_1 >= closure_0.length) {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         }
       } else if (arg0 === 1) {
@@ -72,7 +72,7 @@ export const createKeyIterator = function* createKeyIterator(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {
@@ -89,7 +89,7 @@ export const createKeyIterator = function* createKeyIterator(arg0, value) {
           value = 0;
           if (value >= closure_0.length) {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         }
       } else if (arg0 === 1) {
@@ -124,7 +124,7 @@ export const createEntriesIterator = function* createEntriesIterator(arg0, value
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {
@@ -142,7 +142,7 @@ export const createEntriesIterator = function* createEntriesIterator(arg0, value
           closure_1 = 0;
           if (closure_1 >= closure_0.length) {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         }
       } else if (arg0 === 1) {

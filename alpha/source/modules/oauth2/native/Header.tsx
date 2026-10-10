@@ -1,9 +1,9 @@
-// Module ID: 12858
-// Function ID: 12859
+// Module ID: 12905
+// Function ID: 12906
 // Name: Header
-// Dependencies: [19, 17, 1085, 21, 5091, 587, 558, 576, 1415, 1200, 5087, 8750, 1403, 1126, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 1415, 1200, 5088, 8766, 1403, 1126, 2]
 
-// Module 12858 (Header)
+// Module 12905 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,11 +11,11 @@ import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import BotTagDefault from "BotTag" /* 8750 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import BotTagDefault from "BotTag" /* 8766 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -304,7 +304,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(arg0)
   }
   items3[1] = tmp8Result;
   items2[1] = metroRequire(View, obj11);
-  const Text = tmp9(5087).Text;
+  const Text = tmp9(5088).Text;
   if (accountScopes.length > 0) {
     const intl2 = tmp9(1126).intl;
     stringResult = intl2.string(tmp9(1126).t.jFbDnJ);

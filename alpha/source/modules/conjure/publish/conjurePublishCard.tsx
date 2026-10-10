@@ -1,11 +1,11 @@
-// Module ID: 17153
-// Function ID: 17154
+// Module ID: 17223
+// Function ID: 17224
 // Name: conjurePublishCard
-// Dependencies: [3827, 2]
+// Dependencies: [3849, 2]
 // Exports: isConjurePublishCtaVisible, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
 
-// Module 17153 (conjurePublishCard)
-import _modDef3827 from "module_3827" /* 3827 */;
+// Module 17223 (conjurePublishCard)
+import _modDef3849 from "module_3849" /* 3849 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
@@ -52,23 +52,25 @@ export const showsOutdatedNotice = function showsOutdatedNotice(publish) {
   return null != publish && publish.isUpdate && null == publish.disabledReason && true !== publish.publishing;
 };
 export const publishNoticeMessage = function publishNoticeMessage(notice, arg1) {
-  if (notice.update) {
+  if (true === notice.channel_skipped) {
+    return _modDef3849.ev23Cw;
+  } else if (notice.update) {
     const surface = notice.surface;
     if ("bot" === surface) {
-      return _modDef3827.zfpeIL;
+      return _modDef3849.zfpeIL;
     } else if ("widget" === surface) {
-      return _modDef3827.DxCfTh;
+      return _modDef3849.DxCfTh;
     } else if ("automod" === surface) {
-      return _modDef3827["8ytGC3"];
+      return _modDef3849["8ytGC3"];
     } else {
-      return _modDef3827.WSmpBT;
+      return _modDef3849.WSmpBT;
     }
   } else {
     let MOrR29;
     if (null == arg1) {
-      MOrR29 = _modDef3827.MOrR29;
+      MOrR29 = _modDef3849.MOrR29;
     } else {
-      MOrR29 = _modDef3827["/npn7F"];
+      MOrR29 = _modDef3849["/npn7F"];
     }
     return MOrR29;
   }

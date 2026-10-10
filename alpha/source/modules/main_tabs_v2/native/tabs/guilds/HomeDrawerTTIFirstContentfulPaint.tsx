@@ -1,18 +1,18 @@
-// Module ID: 16725
-// Function ID: 16726
+// Module ID: 16795
+// Function ID: 16796
 // Name: HomeDrawerTTIFirstContentfulPaint
-// Dependencies: [19, 21, 558, 576, 7190, 11447, 2]
+// Dependencies: [19, 21, 558, 576, 7196, 11492, 2]
 
-// Module 16725 (HomeDrawerTTIFirstContentfulPaint)
+// Module 16795 (HomeDrawerTTIFirstContentfulPaint)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7190 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7196 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TTIFirstContentfulPaint = tmp(11447);
+const TTIFirstContentfulPaint = tmp(11492);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerTTIFirstContentfulPaint() {
   let tmp4;

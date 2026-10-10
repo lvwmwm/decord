@@ -12,11 +12,11 @@ let _require, dependencyMap;
 
 let tmp;
 const _mod701 = tmp(701);
-const f82883 = () => ({ enabled: false });
+const f83124 = () => ({ enabled: false });
 function consoleSandbox(fn) {
   let closure_1;
   let console;
-  const f82881 = (item) => {
+  const f83122 = (item) => {
     console[item] = closure_1[item];
   };
   const tmp = console;
@@ -31,10 +31,10 @@ function consoleSandbox(fn) {
     });
     try {
       const tmp6 = fn();
-      const item1 = keys.forEach(f82881);
+      const item1 = keys.forEach(f83122);
       return tmp6;
     } catch (tmp8) {
-      const item2 = keys.forEach(f82881);
+      const item2 = keys.forEach(f83122);
       throw tmp8;
     }
   } else {
@@ -51,7 +51,7 @@ function _maybeLog(arg0) {
     let globalSingleton;
     if (require("module_699").DEBUG_BUILD) {
       const tmpResult = require("module_701");
-      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f82883);
+      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f83124);
     } else {
       globalSingleton = { enabled: false };
     }
@@ -73,7 +73,7 @@ const obj2 = {
     let globalSingleton;
     if (_mod699.DEBUG_BUILD) {
       const tmpResult = _mod701;
-      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f82883);
+      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f83124);
     } else {
       globalSingleton = { enabled: false };
     }
@@ -83,7 +83,7 @@ const obj2 = {
     let globalSingleton;
     if (_mod699.DEBUG_BUILD) {
       const tmpResult = _mod701;
-      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f82883);
+      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f83124);
     } else {
       globalSingleton = { enabled: false };
     }
@@ -93,7 +93,7 @@ const obj2 = {
     let globalSingleton;
     if (_mod699.DEBUG_BUILD) {
       const tmpResult = _mod701;
-      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f82883);
+      globalSingleton = tmpResult.getGlobalSingleton("loggerSettings", f83124);
     } else {
       globalSingleton = { enabled: false };
     }

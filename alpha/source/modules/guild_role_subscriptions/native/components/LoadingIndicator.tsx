@@ -1,14 +1,14 @@
-// Module ID: 15423
-// Function ID: 15424
+// Module ID: 15485
+// Function ID: 15486
 // Name: LoadingIndicator
-// Dependencies: [19, 17, 21, 5091, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 2]
 
-// Module 15423 (LoadingIndicator)
+// Module 15485 (LoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

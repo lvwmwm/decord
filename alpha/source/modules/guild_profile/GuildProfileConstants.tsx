@@ -1,9 +1,9 @@
-// Module ID: 8841
-// Function ID: 8842
+// Module ID: 8860
+// Function ID: 8861
 // Name: GuildProfileConstants
 // Dependencies: [2]
 
-// Module 8841 (GuildProfileConstants)
+// Module 8860 (GuildProfileConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { BOULDER: "Boulder", CASCADE: "Cascade", THUNDER: "Thunder", SOUL: "Soul", MARSH: "Marsh", VOLCANO: "Volcano", EARTH: "Earth", ZEPHYR: "Zephyr", RISING: "Rising" };

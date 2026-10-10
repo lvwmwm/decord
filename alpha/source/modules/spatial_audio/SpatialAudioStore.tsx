@@ -1,18 +1,18 @@
-// Module ID: 5243
-// Function ID: 5244
+// Module ID: 5244
+// Function ID: 5245
 // Name: SpatialAudioStore
-// Dependencies: [1259, 2012, 5109, 5244, 5116, 12, 510, 5245, 504, 5136, 584, 2]
+// Dependencies: [1259, 2012, 5110, 5245, 5117, 12, 510, 5246, 504, 5137, 584, 2]
 
-// Module 5243 (SpatialAudioStore)
+// Module 5244 (SpatialAudioStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SpatialAudioConstants from "SpatialAudioConstants" /* 5244 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5245 */;
+import SpatialAudioConstants from "SpatialAudioConstants" /* 5245 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5246 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import Constants from "Constants" /* 5116 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import Constants from "Constants" /* 5117 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -104,8 +104,8 @@ class SpatialAudioStore extends DeviceSettingsStore {
     const items = [ApexExperimentStore];
     self.syncWith(items, handleExperimentChange);
     const mediaEngine = MediaEngineStore.getMediaEngine();
-    mediaEngine.on(self(5136).MediaEngineEvent.Connection, (setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial.isSpatial));
-    mediaEngine.on(self(5136).MediaEngineEvent.SpatialAudioStatus, (arg0) => {
+    mediaEngine.on(self(5137).MediaEngineEvent.Connection, (setSpatialAudioEnabled) => setSpatialAudioEnabled.setSpatialAudioEnabled(isSpatial.isSpatial));
+    mediaEngine.on(self(5137).MediaEngineEvent.SpatialAudioStatus, (arg0) => {
       let flag = arg0 !== UNKNOWN;
       if (flag) {
         UNKNOWN = arg0;

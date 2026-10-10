@@ -1,55 +1,26 @@
 // Module ID: 11284
 // Function ID: 11285
-// Dependencies: []
-// Exports: makeFifoCache
+// Dependencies: [11285, 11268, 11264]
 
 // Module 11284
+import eventFromMessage from "eventFromMessage" /* 11268 */;
+import _mod11285 from "module_11285" /* 11285 */;
+import module_11264 from "module_11264" /* 11264 */;
 
-export function makeFifoCache(arg0) {
-  let closure_0 = arg0;
-  let closure_1 = [];
-  let closure_2 = {};
+
+export const linkedErrorsIntegration = module_11264.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let closure_0 = obj.limit || 5;
+  let closure_1 = obj.key || "cause";
   return {
-    add(arg0, arg1) {
-      if (closure_1.length >= closure_0) {
-        do {
-          let arr = closure_1.shift();
-          if (undefined !== arr) {
-            delete closure_2[tmp2];
-          }
-        } while (closure_1.length >= closure_0);
-      }
-      if (closure_2[arg0]) {
-        const self = this;
-        this.delete(arg0);
-      }
-      closure_1.push(arg0);
-      closure_2[arg0] = arg1;
-    },
-    clear() {
-      closure_2 = {};
-      closure_1 = [];
-    },
-    get(arg0) {
-      return closure_2[arg0];
-    },
-    size() {
-      return closure_1.length;
-    },
-    delete: (arg0) => {
-      if (closure_2[arg0]) {
-        delete closure_2[tmp];
-        let num = 0;
-        if (0 < closure_1.length) {
-          while (closure_1[num] !== arg0) {
-            num = num + 1;
-          }
-          closure_1.splice(num, 1);
-        }
-        return true;
-      } else {
-        return false;
-      }
+    name: "LinkedErrors",
+    preprocessEvent(arg0, arg1, getOptions) {
+      const options = getOptions.getOptions();
+      const obj = _mod11285;
+      const result = obj.applyAggregateErrorsToEvent(eventFromMessage.exceptionFromError, options.stackParser, options.maxValueLength, closure_1, closure_0, arg0, arg1);
     }
   };
-}
+});

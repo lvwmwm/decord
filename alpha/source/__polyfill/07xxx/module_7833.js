@@ -1,412 +1,398 @@
 // Module ID: 7833
 // Function ID: 7834
-// Dependencies: [7832, 7834]
+// Dependencies: [7830, 7827]
 
 // Module 7833
-import _mod7834 from "module_7834" /* 7834 */;
+import _mod7827 from "module_7827" /* 7827 */;
+import _modDef7830 from "module_7830" /* 7830 */;
 
-const require = globalThis.__r;
+let length, length2, length3, length4, length5;
 
-let obj = { 33434: null, 33437: null, 34850: null, 34852: "SpectralSensitivity", 34855: "ISOSpeedRatings", 34856: null, 34858: "TimeZoneOffset", 34859: "SelfTimerMode", 34864: null, 34865: "StandardOutputSensitivity", 34866: "RecommendedExposureIndex", 34867: "ISOSpeed", 34868: "ISOSpeedLatitudeyyy", 34869: "ISOSpeedLatitudezzz", 36864: null, 36867: "DateTimeOriginal", 36868: "DateTimeDigitized", 36873: "GooglePlusUploadCode", 36880: "OffsetTime", 36881: "OffsetTimeOriginal", 36882: "OffsetTimeDigitized", 37121: null, 37122: "CompressedBitsPerPixel", 37377: null, 37378: null, 37379: "BrightnessValue", 37380: "ExposureBiasValue", 37381: null, 37382: null, 37383: null, 37384: null, 37385: null, 37386: null, 37393: "ImageNumber", 37394: null, 37395: "ImageHistory", 37396: null, 37500: null, 37510: null, 37520: "SubSecTime", 37521: "SubSecTimeOriginal", 37522: "SubSecTimeDigitized", 37724: "ImageSourceData", 37888: null, 37889: null, 37890: null, 37891: null, 37892: null, 37893: null, 40960: null, 40961: null, 40962: "PixelXDimension", 40963: "PixelYDimension", 40964: "RelatedSoundFile", 40965: "Interoperability IFD Pointer", 41483: "FlashEnergy", 41484: null, 41486: "FocalPlaneXResolution", 41487: "FocalPlaneYResolution", 41488: null, 41492: null, 41493: "ExposureIndex", 41495: null, 41728: null, 41729: null, 41730: null, 41985: null, 41986: null, 41987: null, 41988: null, 41989: null, 41990: null, 41991: null, 41992: null, 41993: null, 41994: null, 41995: null, 41996: null, 42016: "ImageUniqueID", 42032: "CameraOwnerName", 42033: "BodySerialNumber", 42034: null, 42035: "LensMake", 42036: "LensModel", 42037: "LensSerialNumber", 42080: null, 42081: "SourceImageNumberOfCompositeImage", 42082: "SourceExposureTimesOfCompositeImage", 42240: "Gamma", 59932: "Padding", 59933: "OffsetSchema", 65000: "OwnerName", 65001: "SerialNumber", 65002: "Lens", 65100: "RawFile", 65101: "Converter", 65102: "WhiteBalance", 65105: "Exposure", 65106: "Shadows", 65107: "Brightness", 65108: "Contrast", 65109: "Saturation", 65110: "Sharpness", 65111: "Smoothness", 65112: "MoireFilter" };
-obj[33434] = { name: "ExposureTime", description: require("module_7832").ExposureTime };
-({ name: "ExposureTime", description: require("module_7832").ExposureTime });
-obj[33437] = { name: "FNumber", description: require("module_7832").FNumber };
-({ name: "FNumber", description: require("module_7832").FNumber });
-obj[34850] = { name: "ExposureProgram", description: require("module_7832").ExposureProgram };
-obj[34856] = {
-  name: "OECF",
-  description() {
-    return "[Raw OECF table data]";
-  }
-};
-obj[34864] = {
-  name: "SensitivityType",
-  description(arg0) {
-    return { 1: "Standard Output Sensitivity", 2: "Recommended Exposure Index", 3: "ISO Speed", 4: "Standard Output Sensitivity and Recommended Exposure Index", 5: "Standard Output Sensitivity and ISO Speed", 6: "Recommended Exposure Index and ISO Speed", 7: "Standard Output Sensitivity, Recommended Exposure Index and ISO Speed" }[arg0] || "Unknown";
-  }
-};
-obj[36864] = {
-  name: "ExifVersion",
-  description(value) {
-    const obj = _mod7834;
-    return obj.getStringValue(value);
-  }
-};
-({ name: "ExposureProgram", description: require("module_7832").ExposureProgram });
-obj[37121] = { name: "ComponentsConfiguration", description: require("module_7832").ComponentsConfiguration };
-({ name: "ComponentsConfiguration", description: require("module_7832").ComponentsConfiguration });
-obj[37377] = { name: "ShutterSpeedValue", description: require("module_7832").ShutterSpeedValue };
-({ name: "ShutterSpeedValue", description: require("module_7832").ShutterSpeedValue });
-obj[37378] = { name: "ApertureValue", description: require("module_7832").ApertureValue };
-obj[37381] = {
-  name: "MaxApertureValue",
-  description(arg0) {
-    const powResult = Math.pow(Math.sqrt(2), arg0[0] / arg0[1]);
-    return powResult.toFixed(2);
-  }
-};
-obj[37382] = {
-  name: "SubjectDistance",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " m";
-  }
-};
-({ name: "ApertureValue", description: require("module_7832").ApertureValue });
-obj[37383] = { name: "MeteringMode", description: require("module_7832").MeteringMode };
-({ name: "MeteringMode", description: require("module_7832").MeteringMode });
-obj[37384] = { name: "LightSource", description: require("module_7832").LightSource };
-obj[37385] = {
-  name: "Flash",
-  description(arg0) {
-    let str = "Flash did not fire";
-    if (0 !== arg0) {
-      let str22 = "Flash fired";
-      if (1 !== arg0) {
-        let str21 = "Strobe return light not detected";
-        if (5 !== arg0) {
-          let str20 = "Strobe return light detected";
-          if (7 !== arg0) {
-            let str19 = "Flash fired, compulsory flash mode";
-            if (9 !== arg0) {
-              let str18 = "Flash fired, compulsory flash mode, return light not detected";
-              if (13 !== arg0) {
-                let str17 = "Flash fired, compulsory flash mode, return light detected";
-                if (15 !== arg0) {
-                  let str16 = "Flash did not fire, compulsory flash mode";
-                  if (16 !== arg0) {
-                    let str15 = "Flash did not fire, auto mode";
-                    if (24 !== arg0) {
-                      let str14 = "Flash fired, auto mode";
-                      if (25 !== arg0) {
-                        let str13 = "Flash fired, auto mode, return light not detected";
-                        if (29 !== arg0) {
-                          let str12 = "Flash fired, auto mode, return light detected";
-                          if (31 !== arg0) {
-                            let str11 = "No flash function";
-                            if (32 !== arg0) {
-                              let str10 = "Flash fired, red-eye reduction mode";
-                              if (65 !== arg0) {
-                                let str9 = "Flash fired, red-eye reduction mode, return light not detected";
-                                if (69 !== arg0) {
-                                  let str2 = "Flash fired, red-eye reduction mode, return light detected";
-                                  if (71 !== arg0) {
-                                    let str3 = "Flash fired, compulsory flash mode, red-eye reduction mode";
-                                    if (73 !== arg0) {
-                                      let str4 = "Flash fired, compulsory flash mode, red-eye reduction mode, return light not detected";
-                                      if (77 !== arg0) {
-                                        let str5 = "Flash fired, compulsory flash mode, red-eye reduction mode, return light detected";
-                                        if (79 !== arg0) {
-                                          let str6 = "Flash fired, auto mode, red-eye reduction mode";
-                                          if (89 !== arg0) {
-                                            let str7 = "Flash fired, auto mode, return light not detected, red-eye reduction mode";
-                                            if (93 !== arg0) {
-                                              let str8 = "Unknown";
-                                              if (95 === arg0) {
-                                                str8 = "Flash fired, auto mode, return light detected, red-eye reduction mode";
-                                              }
-                                              str7 = str8;
-                                            }
-                                            str6 = str7;
-                                          }
-                                          str5 = str6;
-                                        }
-                                        str4 = str5;
-                                      }
-                                      str3 = str4;
-                                    }
-                                    str2 = str3;
-                                  }
-                                  str9 = str2;
-                                }
-                                str10 = str9;
-                              }
-                              str11 = str10;
-                            }
-                            str12 = str11;
-                          }
-                          str13 = str12;
-                        }
-                        str14 = str13;
-                      }
-                      str15 = str14;
-                    }
-                    str16 = str15;
-                  }
-                  str17 = str16;
-                }
-                str18 = str17;
-              }
-              str19 = str18;
-            }
-            str20 = str19;
-          }
-          str21 = str20;
-        }
-        str22 = str21;
-      }
-      str = str22;
-    }
-    return str;
-  }
-};
-({ name: "LightSource", description: require("module_7832").LightSource });
-obj[37386] = { name: "FocalLength", description: require("module_7832").FocalLength };
-obj[37394] = {
-  name: "SecurityClassification",
-  description(arg0) {
-    return { C: "Confidential", R: "Restricted", S: "Secret", T: "Top Secret", U: "Unclassified" }[arg0] || "Unknown";
-  }
-};
-obj[37396] = {
-  name: "SubjectArea",
-  description(arg0) {
-    let str;
-    if (2 === arg0.length) {
-      const _HermesInternal3 = HermesInternal;
-      str = "Location; X: " + arg0[0] + ", Y: " + arg0[1];
-    } else if (3 === arg0.length) {
-      const _HermesInternal2 = HermesInternal;
-      str = "Circle; X: " + arg0[0] + ", Y: " + arg0[1] + ", diameter: " + arg0[2];
-    } else {
-      str = "Unknown";
-      if (4 === arg0.length) {
-        const _HermesInternal = HermesInternal;
-        str = "Rectangle; X: " + arg0[0] + ", Y: " + arg0[1] + ", width: " + arg0[2] + ", height: " + arg0[3];
-      }
-    }
-    return str;
-  }
-};
-obj[37500] = {
-  name: "MakerNote",
-  description() {
-    return "[Raw maker note data]";
-  }
-};
-({ name: "FocalLength", description: require("module_7832").FocalLength });
-obj[37510] = { name: "UserComment", description: require("module_7834").getEncodedString };
-obj[37888] = {
-  name: "AmbientTemperature",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " \u00B0C";
-  }
-};
-obj[37889] = {
-  name: "Humidity",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " %";
-  }
-};
-obj[37890] = {
-  name: "Pressure",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " hPa";
-  }
-};
-obj[37891] = {
-  name: "WaterDepth",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " m";
-  }
-};
-obj[37892] = {
-  name: "Acceleration",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " mGal";
-  }
-};
-obj[37893] = {
-  name: "CameraElevationAngle",
-  description(arg0) {
-    return arg0[0] / arg0[1] + " \u00B0";
-  }
-};
-obj[40960] = {
-  name: "FlashpixVersion",
-  description(arr) {
-    const mapped = arr.map((item) => String.fromCharCode(item));
-    return mapped.join("");
-  }
-};
-({ name: "UserComment", description: require("module_7834").getEncodedString });
-obj[40961] = { name: "ColorSpace", description: require("module_7832").ColorSpace };
-obj[41484] = {
-  name: "SpatialFrequencyResponse",
-  description() {
-    return "[Raw SFR table data]";
-  }
-};
-({ name: "ColorSpace", description: require("module_7832").ColorSpace });
-obj[41488] = { name: "FocalPlaneResolutionUnit", description: require("module_7832").FocalPlaneResolutionUnit };
-obj[41492] = {
-  name: "SubjectLocation",
-  description(arg0) {
-    let tmp;
+let obj = {
+  isJpegFile(byteLength) {
+    const tmp = byteLength && byteLength.byteLength >= c3 && byteLength.getUint16(0) === c4;
+    return tmp;
+  },
+  findJpegOffsets(byteLength) {
+    let tmp17;
     let tmp2;
-    [tmp, tmp2] = arg0;
-    return "X: " + tmp + ", Y: " + tmp2;
-  }
-};
-obj[41495] = {
-  name: "SensingMethod",
-  description(arg0) {
-    let str = "Undefined";
-    if (1 !== arg0) {
-      let str2 = "One-chip color area sensor";
-      if (2 !== arg0) {
-        let str3 = "Two-chip color area sensor";
-        if (3 !== arg0) {
-          let str4 = "Three-chip color area sensor";
-          if (4 !== arg0) {
-            let str5 = "Color sequential area sensor";
-            if (5 !== arg0) {
-              let str6 = "Trilinear sensor";
-              if (7 !== arg0) {
-                let str7 = "Unknown";
-                if (8 === arg0) {
-                  str7 = "Color sequential linear sensor";
-                }
-                str6 = str7;
-              }
-              str5 = str6;
+    let tmp3;
+    let tmp4;
+    let tmp5;
+    let tmp6;
+    let tmp7;
+    let tmp8;
+    let tmp = c5;
+    let tmp10 = c5;
+    let tmp11;
+    let tmp12;
+    let tmp13;
+    let tmp14;
+    let tmp15;
+    let tmp16;
+    let tmp18;
+    if (c5 + c6 + 5 <= byteLength.byteLength) {
+      while (true) {
+        let tmp9;
+        let uint16;
+        let sum6;
+        let tmp85;
+        let tmp86;
+        let sum5;
+        let sum4;
+        let sum3;
+        let tmp90;
+        let tmp91;
+        let tmp82;
+        let sum1;
+        let tmp122;
+        let tmp123;
+        let tmp124;
+        let tmp125;
+        let tmp126;
+        let tmp127;
+        let tmp128;
+        let tmp129;
+        let tmp19 = importDefault;
+        if (_modDef7830.USE_FILE) {
+          if (byteLength.getUint16(tmp) === c19) {
+            sum = tmp + c7;
+            uint16 = byteLength.getUint16(sum);
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = sum;
+            tmp82 = c7;
+            sum1 = tmp + (tmp82 + uint16);
+            tmp122 = sum6;
+            tmp123 = tmp85;
+            tmp124 = tmp86;
+            tmp125 = sum5;
+            tmp126 = sum4;
+            tmp127 = sum3;
+            tmp128 = tmp90;
+            tmp129 = tmp91;
+            tmp = sum1;
+            tmp2 = tmp122;
+            tmp3 = tmp123;
+            tmp4 = tmp124;
+            tmp5 = tmp125;
+            tmp6 = tmp126;
+            tmp7 = tmp127;
+            tmp8 = tmp128;
+            tmp9 = tmp129;
+            tmp10 = sum1;
+            tmp11 = tmp122;
+            tmp12 = tmp123;
+            tmp13 = tmp124;
+            tmp14 = tmp125;
+            tmp15 = tmp126;
+            tmp16 = tmp127;
+            tmp17 = tmp128;
+            tmp18 = tmp129;
+            if (sum1 + c6 + 5 > byteLength.byteLength) {
+              break;
             }
-            str4 = str5;
           }
-          str3 = str4;
         }
-        str2 = str3;
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[41728] = {
-  name: "FileSource",
-  description(arg0) {
-    let str = "Unknown";
-    if (3 === arg0) {
-      str = "DSC";
-    }
-    return str;
-  }
-};
-obj[41729] = {
-  name: "SceneType",
-  description(arg0) {
-    let str = "Unknown";
-    if (1 === arg0) {
-      str = "A directly photographed image";
-    }
-    return str;
-  }
-};
-obj[41730] = {
-  name: "CFAPattern",
-  description() {
-    return "[Raw CFA pattern table data]";
-  }
-};
-({ name: "FocalPlaneResolutionUnit", description: require("module_7832").FocalPlaneResolutionUnit });
-obj[41985] = { name: "CustomRendered", description: require("module_7832").CustomRendered };
-({ name: "CustomRendered", description: require("module_7832").CustomRendered });
-obj[41986] = { name: "ExposureMode", description: require("module_7832").ExposureMode };
-({ name: "ExposureMode", description: require("module_7832").ExposureMode });
-obj[41987] = { name: "WhiteBalance", description: require("module_7832").WhiteBalance };
-obj[41988] = {
-  name: "DigitalZoomRatio",
-  description(arg0) {
-    let str = "Digital zoom was not used";
-    if (0 !== arg0[0]) {
-      str = `${arg0[0] / arg0[1]}`;
-    }
-    return str;
-  }
-};
-({ name: "WhiteBalance", description: require("module_7832").WhiteBalance });
-obj[41989] = { name: "FocalLengthIn35mmFilm", description: require("module_7832").FocalLengthIn35mmFilm };
-({ name: "FocalLengthIn35mmFilm", description: require("module_7832").FocalLengthIn35mmFilm });
-obj[41990] = { name: "SceneCaptureType", description: require("module_7832").SceneCaptureType };
-obj[41991] = {
-  name: "GainControl",
-  description(arg0) {
-    let str = "None";
-    if (0 !== arg0) {
-      let str2 = "Low gain up";
-      if (1 !== arg0) {
-        let str3 = "High gain up";
-        if (2 !== arg0) {
-          let str4 = "Low gain down";
-          if (3 !== arg0) {
-            let str5 = "Unknown";
-            if (4 === arg0) {
-              str5 = "High gain down";
+        if (tmp19(7830).USE_FILE) {
+          if (byteLength.getUint16(tmp) === c20) {
+            let sum2 = tmp + c7;
+            uint16 = byteLength.getUint16(sum2);
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = sum2;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(7830).USE_JFIF) {
+          length = JFIF.length;
+          let tmp32 = JFIF;
+          let tmp34 = byteLength.getUint16(tmp) === c25;
+          if (tmp34) {
+            let obj = _mod7827;
+            tmp34 = obj.getStringFromDataView(byteLength, tmp + c6, length) === tmp32;
+          }
+          if (tmp34) {
+            tmp34 = 0 === byteLength.getUint8(tmp + c6 + length);
+          }
+          if (tmp34) {
+            uint16 = byteLength.getUint16(tmp + c7);
+            sum3 = tmp + c8;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(7830).USE_EXIF) {
+          length2 = Exif.length;
+          let tmp38 = Exif;
+          let tmp40 = byteLength.getUint16(tmp) === c26;
+          if (tmp40) {
+            let obj2 = _mod7827;
+            tmp40 = obj2.getStringFromDataView(byteLength, tmp + c6, length2) === tmp38;
+          }
+          if (tmp40) {
+            tmp40 = 0 === byteLength.getUint8(tmp + c6 + length2);
+          }
+          if (tmp40) {
+            uint16 = byteLength.getUint16(tmp + c7);
+            sum4 = tmp + c9;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(7830).USE_XMP) {
+          let tmp45 = byteLength.getUint16(tmp) === c26;
+          if (tmp45) {
+            length3 = length3.length;
+            let obj3 = _mod7827;
+            tmp45 = obj3.getStringFromDataView(byteLength, tmp + c6, length3) === length3;
+          }
+          if (tmp45) {
+            let arr3 = tmp4 || [];
+            let uint161 = byteLength.getUint16(tmp + c7);
+            let obj8 = { dataOffset: tmp + c11, length: uint161 - 31 };
+            let arr = arr3.push(obj8);
+            tmp86 = arr3;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            uint16 = uint161;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(7830).USE_XMP) {
+          let tmp50 = byteLength.getUint16(tmp) === c26;
+          if (tmp50) {
+            length4 = length4.length;
+            let obj4 = _mod7827;
+            tmp50 = obj4.getStringFromDataView(byteLength, tmp + c6, length4) === length4;
+          }
+          if (tmp50) {
+            let arr2 = tmp4 || [];
+            let uint162 = byteLength.getUint16(tmp + c7);
+            let obj9 = { dataOffset: tmp + c12, length: uint162 - 77 };
+            let arr6 = arr2.push(obj9);
+            tmp86 = arr2;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            uint16 = uint162;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(7830).USE_IPTC) {
+          length5 = length5.length;
+          let tmp54 = length5;
+          let tmp56 = byteLength.getUint16(tmp) === c28;
+          if (tmp56) {
+            let obj5 = _mod7827;
+            tmp56 = obj5.getStringFromDataView(byteLength, tmp + c6, length5) === tmp54;
+          }
+          if (tmp56) {
+            tmp56 = 0 === byteLength.getUint8(tmp + c6 + length5);
+          }
+          if (tmp56) {
+            uint16 = byteLength.getUint16(tmp + c7);
+            sum5 = tmp + c10;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(7830).USE_ICC) {
+          let tmp60 = length;
+          let length6 = length.length;
+          let tmp62 = byteLength.getUint16(tmp) === c27;
+          if (tmp62) {
+            let obj6 = _mod7827;
+            tmp62 = obj6.getStringFromDataView(byteLength, tmp + c6, length6) === tmp60;
+          }
+          if (tmp62) {
+            let tmp94 = c7;
+            let uint163 = byteLength.getUint16(tmp + c7);
+            let tmp96 = c13;
+            let diff = uint163 - 16;
+            let uint8 = byteLength.getUint8(tmp + sum);
+            let items = tmp3;
+            let uint81 = byteLength.getUint8(tmp + closure_17);
+            if (!tmp3) {
+              items = [];
             }
-            str4 = str5;
+            let obj10 = { offset: tmp + tmp96, length: diff, chunkNumber: uint8, chunksTotal: uint81 };
+            let arr7 = items.push(obj10);
+            tmp85 = items;
+            sum6 = tmp2;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            uint16 = uint163;
+            tmp82 = tmp94;
           }
-          str3 = str4;
         }
-        str2 = str3;
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-({ name: "SceneCaptureType", description: require("module_7832").SceneCaptureType });
-obj[41992] = { name: "Contrast", description: require("module_7832").Contrast };
-({ name: "Contrast", description: require("module_7832").Contrast });
-obj[41993] = { name: "Saturation", description: require("module_7832").Saturation };
-({ name: "Saturation", description: require("module_7832").Saturation });
-obj[41994] = { name: "Sharpness", description: require("module_7832").Sharpness };
-obj[41995] = {
-  name: "DeviceSettingDescription",
-  description() {
-    return "[Raw device settings table data]";
-  }
-};
-obj[41996] = {
-  name: "SubjectDistanceRange",
-  description(arg0) {
-    let str = "Macro";
-    if (1 !== arg0) {
-      let str2 = "Close view";
-      if (2 !== arg0) {
-        let str3 = "Unknown";
-        if (3 === arg0) {
-          str3 = "Distant view";
+        if (tmp19(7830).USE_MPF) {
+          let tmp65 = length2;
+          let length7 = length2.length;
+          let tmp67 = byteLength.getUint16(tmp) === c27;
+          if (tmp67) {
+            let obj7 = _mod7827;
+            tmp67 = obj7.getStringFromDataView(byteLength, tmp + c6, length7) === tmp65;
+          }
+          if (tmp67) {
+            uint16 = byteLength.getUint16(tmp + c7);
+            sum6 = tmp + c14;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
         }
-        str2 = str3;
+        let uint164 = byteLength.getUint16(tmp);
+        let tmp72 = uint164 >= c25;
+        if (tmp72) {
+          tmp72 = uint164 <= c29;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c30;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c19;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c20;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c21;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c22;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c23;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c24;
+        }
+        let getUint16 = byteLength.getUint16;
+        if (tmp72) {
+          tmp82 = c7;
+          uint16 = getUint16(tmp + c7);
+          sum6 = tmp2;
+          tmp85 = tmp3;
+          tmp86 = tmp4;
+          sum5 = tmp5;
+          sum4 = tmp6;
+          sum3 = tmp7;
+          tmp90 = tmp8;
+          tmp91 = tmp9;
+        } else {
+          tmp10 = tmp;
+          tmp11 = tmp2;
+          tmp12 = tmp3;
+          tmp13 = tmp4;
+          tmp14 = tmp5;
+          tmp15 = tmp6;
+          tmp16 = tmp7;
+          tmp17 = tmp8;
+          tmp18 = tmp9;
+          if (getUint16(tmp) !== c31) {
+            break;
+          } else {
+            sum1 = tmp + 1;
+            tmp122 = tmp2;
+            tmp123 = tmp3;
+            tmp124 = tmp4;
+            tmp125 = tmp5;
+            tmp126 = tmp6;
+            tmp127 = tmp7;
+            tmp128 = tmp8;
+            tmp129 = tmp9;
+          }
+        }
+        break;
       }
-      str = str2;
     }
-    return str;
-  }
-};
-obj[42034] = {
-  name: "LensSpecification",
-  description(arg0) {
-    const result = arg0[0][0] / arg0[0][1];
-    const parsed = parseFloat(result.toFixed(5));
-    const result1 = arg0[1][0] / arg0[1][1];
-    const combined = "" + parsed + "-" + parseFloat(result1.toFixed(5)) + " mm";
-    if (0 === arg0[3][1]) {
-      const _HermesInternal2 = HermesInternal;
-      return "" + combined + " f/?";
-    } else {
-      const result2 = 1 / (arg0[2][1] / arg0[2][1] / (arg0[3][0] / arg0[3][1]));
-      const _parseFloat = parseFloat;
-      const _HermesInternal = HermesInternal;
-      return "" + combined + " f/" + parseFloat(result2.toFixed(5));
+    const obj11 = { hasAppMarkers: tmp10 > c5, fileDataOffset: tmp18, jfifDataOffset: tmp16, tiffHeaderOffset: tmp15, iptcDataOffset: tmp14, xmpChunks: tmp13, iccChunks: tmp12, mpfDataOffset: tmp11 };
+    if (!tmp18) {
+      tmp18 = tmp17;
     }
+    return obj11;
   }
 };
-obj[42080] = {
-  name: "CompositeImage",
-  description(arg0) {
-    return { 1: "Not a Composite Image", 2: "General Composite Image", 3: "Composite Image Captured While Shooting" }[arg0] || "Unknown";
-  }
-};
-({ name: "Sharpness", description: require("module_7832").Sharpness });
+let c3 = 2;
+let c4 = 65496;
+let c5 = 2;
+let c6 = 4;
+let c7 = 2;
+let c8 = 2;
+let c9 = 10;
+let c10 = 18;
+let c11 = 33;
+let c12 = 79;
+let c13 = 18;
+let c14 = 8;
+let c15 = "ICC_PROFILE\0";
+let sum = 4 + "ICC_PROFILE\0".length;
+let closure_17 = sum + 1;
+let c18 = "MPF\0";
+let c19 = 65472;
+let c20 = 65474;
+let c21 = 65476;
+let c22 = 65499;
+let c23 = 65501;
+let c24 = 65498;
+let c25 = 65504;
+let c26 = 65505;
+let c27 = 65506;
+let c28 = 65517;
+let c29 = 65519;
+let c30 = 65534;
+let c31 = 65535;
+const JFIF = "JFIF";
+const Exif = "Exif";
+let c34 = "http://ns.adobe.com/xap/1.0/\0";
+let c35 = "http://ns.adobe.com/xmp/extension/\0";
+let c36 = "Photoshop 3.0";
 
 export default obj;

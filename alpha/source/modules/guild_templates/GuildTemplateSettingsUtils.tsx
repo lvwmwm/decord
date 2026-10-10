@@ -1,18 +1,18 @@
-// Module ID: 18316
-// Function ID: 18317
+// Module ID: 18390
+// Function ID: 18391
 // Name: GuildTemplateSettingsUtils
-// Dependencies: [5, 32, 19, 2064, 4709, 7173, 1085, 558, 576, 504, 7022, 5632, 2]
+// Dependencies: [5, 32, 19, 2065, 4750, 7179, 1085, 558, 576, 504, 7028, 5635, 2]
 // Exports: isGuildTemplateNameValid
 
-// Module 18316 (GuildTemplateSettingsUtils)
+// Module 18390 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1085 */;
-import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7022 */;
+import GuildTemplateActionCreatorsDefault from "GuildTemplateActionCreators" /* 7028 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7173 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7179 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             let c4;
@@ -149,7 +149,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
                 }
                 closure_1(closure_0);
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp26) {
               closure_3 = tmp26;
@@ -256,7 +256,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c4;
@@ -302,7 +302,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTemp
               }
               closure_1(closure_0);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp26) {
             closure_3 = tmp26;

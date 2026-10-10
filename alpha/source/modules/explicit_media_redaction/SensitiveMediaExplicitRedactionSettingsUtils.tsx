@@ -1,15 +1,15 @@
-// Module ID: 6990
-// Function ID: 6991
+// Module ID: 6996
+// Function ID: 6997
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1390, 2043, 1209, 5919, 6991, 2041, 6992, 2]
+// Dependencies: [1390, 2043, 1209, 5921, 6997, 2041, 6998, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 6990 (SensitiveMediaExplicitRedactionSettingsUtils)
+// Module 6996 (SensitiveMediaExplicitRedactionSettingsUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 2043 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5919 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6991 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6997 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -242,7 +242,7 @@ export const shouldRedactMessageMediaForForum = function shouldRedactMessageMedi
     }
     obj3 = { setting: prop2, isDm: true, isFriend: true };
     resolveExplicitContentSettingWithDefaults(obj3);
-    const tmp7Result = tmp7(6992);
+    const tmp7Result = tmp7(6998);
     return tmp7Result.getShouldObscureForSetting(tmp10Result);
   }
 };

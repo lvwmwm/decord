@@ -1,10 +1,10 @@
-// Module ID: 4950
-// Function ID: 4951
+// Module ID: 4989
+// Function ID: 4990
 // Name: ZustandStore
-// Dependencies: [1267, 4951, 1272, 558, 576, 2]
+// Dependencies: [1267, 4990, 1272, 558, 576, 2]
 // Exports: createZustandStore
 
-// Module 4950 (ZustandStore)
+// Module 4989 (ZustandStore)
 import react from "react" /* 576 */;
 import size from "module_2" /* 2 */;
 

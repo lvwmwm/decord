@@ -1,9 +1,9 @@
-// Module ID: 8867
-// Function ID: 8868
+// Module ID: 8886
+// Function ID: 8887
 // Name: GameProfileStore
 // Dependencies: [504, 584, 2]
 
-// Module 8867 (GameProfileStore)
+// Module 8886 (GameProfileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -98,7 +98,9 @@ const obj = {
     let channelId;
     let gameId;
     let initialScrollOffset;
-    ({ gameId, channelId, initialScrollOffset } = arg0);
+    let source;
+    let tab;
+    ({ gameId, channelId, initialScrollOffset, tab, source } = arg0);
     let gameId1;
     if (_null != null) {
       gameId1 = _null.gameId;
@@ -114,11 +116,23 @@ const obj = {
           initialScrollOffset1 = _null.initialScrollOffset;
         }
         if (initialScrollOffset1 === initialScrollOffset) {
-          return false;
+          let tab1;
+          if (_null != null) {
+            tab1 = _null.tab;
+          }
+          if (tab1 === tab) {
+            let source1;
+            if (_null != null) {
+              source1 = _null.source;
+            }
+            if (source1 === source) {
+              return false;
+            }
+          }
         }
       }
     }
-    _null = { gameId, channelId, initialScrollOffset };
+    _null = { gameId, channelId, initialScrollOffset, tab, source };
   },
   GAME_PROFILE_CLEAR_PENDING_RETURN: function handleClearPendingReturn(arg0) {
     if (null != _null) {

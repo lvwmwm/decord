@@ -1,9 +1,9 @@
-// Module ID: 10877
-// Function ID: 10878
+// Module ID: 10917
+// Function ID: 10918
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 2063, 1390, 1085, 1204, 2024, 21, 1200, 5091, 587, 558, 576, 1388, 504, 6854, 5406, 4923, 10878, 6848, 6872, 9509, 1126, 10880, 10812, 10882, 10883, 10884, 6191, 10921, 5087, 5377, 4788, 2]
+// Dependencies: [5, 32, 19, 17, 2064, 1390, 1085, 1204, 2024, 21, 1200, 5092, 587, 558, 576, 1388, 504, 6857, 5409, 4962, 10918, 6851, 6878, 9538, 1126, 10920, 10822, 10922, 10923, 10924, 6184, 10961, 5088, 5380, 4827, 2]
 
-// Module 10877 (ActivityTile)
+// Module 10917 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,15 +11,15 @@ import native from "native" /* 1200 */;
 import FormConstants from "FormConstants" /* 1204 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Constants2 from "Constants" /* 2024 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10883 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10923 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj4;
 let size;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(4788);
+const native2 = tmp(4827);
 const View = react_native.View;
 ({ ThemeTypes: metroImportAll, Fonts } = Constants);
 const getThemedRippleConfig = FormConstants.getThemedRippleConfig;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -414,7 +414,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
               const result = obj.setOrientationLockState(application);
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp16) {
             c2 = 3;
             throw tmp16;
@@ -509,7 +509,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -548,7 +548,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
             const result = obj.setOrientationLockState(closure_128_3);
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp17) {
           c2 = 3;
           throw tmp17;

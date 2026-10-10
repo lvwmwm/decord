@@ -1,85 +1,98 @@
 // Module ID: 11246
 // Function ID: 11247
-// Dependencies: [11168]
-// Exports: addMetadataToStackFrames, stripMetadataFromStackFrames
+// Dependencies: [11236, 11213, 11208]
+// Exports: logSpanEnd, logSpanStart
 
 // Module 11246
-import _mod11168 from "module_11168" /* 11168 */;
+import _mod11213 from "module_11213" /* 11213 */;
+import _mod11236 from "module_11236" /* 11236 */;
 
-function getMetadataForUrl(fn, arg1) {
-  function ensureMetadataStacksAreParsed(fn) {
-    const tmp2 = require;
-    const tmp4 = dependencyMap;
-    if (_mod11168.GLOBAL_OBJ._sentryModuleMetadata) {
-      const _Object = Object;
-      const keys = Object.keys(tmp2(tmp4[0]).GLOBAL_OBJ._sentryModuleMetadata);
-      for (const item10026 of keys) {
-        let tmp11 = item10026;
-        let tmp16 = _mod11168.GLOBAL_OBJ._sentryModuleMetadata[item10026];
-        let obj = set;
-        if (!set.has(item10026)) {
-          let addResult = obj.add(tmp11);
-          let obj2 = fn(tmp11);
-          let reversed = obj2.reverse();
-          for (const item10050 of reversed) {
-            if (item10050.filename) {
-              let result = map.set(tmp22.filename, tmp16);
-              obj3.return();
-              break;
-            }
-            continue;
-          }
-        }
-        continue;
-      }
+
+export const logSpanEnd = function logSpanEnd(spanContext) {
+  if (_mod11236.DEBUG_BUILD) {
+    const tmpResult = _mod11213;
+    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
+    const description = spanToJSONResult.description;
+    let str = "< unknown name >";
+    if (undefined !== description) {
+      str = description;
     }
-  }
-  const tmp = ensureMetadataStacksAreParsed(fn);
-  return map.get(arg1);
-}
-const map = new Map();
-const set = new Set();
-
-export const addMetadataToStackFrames = function addMetadataToStackFrames(arg0, exception) {
-  let closure_0 = arg0;
-  try {
-    let tmp = exception;
-    const values = exception.exception.values;
-    const item = values.forEach((stacktrace) => {
-      if (stacktrace.stacktrace) {
-        const tmp = stacktrace.stacktrace.frames || [];
-        for (const item10010 of tmp) {
-          let tmp4 = item10010;
-          if (item10010.filename) {
-            if (!tmp4.module_metadata) {
-              let tmp9 = getMetadataForUrl(closure_0, tmp4.filename);
-              if (tmp9) {
-                tmp4.module_metadata = tmp10;
-              }
-            }
-          }
-          continue;
-        }
-      }
-    });
-  } catch (err) {
+    const op = spanToJSONResult.op;
+    let str2 = "< unknown op >";
+    if (undefined !== op) {
+      str2 = op;
+    }
+    const spanId = spanContext.spanContext().spanId;
+    let str3 = "";
+    const tmpResult2 = _mod11213;
+    if (tmpResult2.getRootSpan(spanContext) === spanContext) {
+      str3 = "root ";
+    }
+    const _HermesInternal = HermesInternal;
+    const combined = "[Tracing] Finishing \"" + str2 + "\" " + str3 + "span \"" + str + "\" with ID " + spanId;
+    const logger = tmp(11208).logger;
+    logger.log(combined);
   }
 };
-export { getMetadataForUrl };
-export const stripMetadataFromStackFrames = function stripMetadataFromStackFrames(exception) {
-  try {
-    let tmp = exception;
-    const values = exception.exception.values;
-    const item = values.forEach((stacktrace) => {
-      if (stacktrace.stacktrace) {
-        const tmp = stacktrace.stacktrace.frames || [];
-        const iter = tmp[Symbol.iterator]();
-        while (iter !== undefined) {
-          delete iter.next()[`module_metadata`];
-          continue;
-        }
+export const logSpanStart = function logSpanStart(spanContext) {
+  let description2;
+  let op2;
+  if (_mod11236.DEBUG_BUILD) {
+    const tmpResult = _mod11213;
+    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
+    const description = spanToJSONResult.description;
+    let str = "< unknown name >";
+    if (undefined !== description) {
+      str = description;
+    }
+    const op = spanToJSONResult.op;
+    let str2 = "< unknown op >";
+    if (undefined !== op) {
+      str2 = op;
+    }
+    const parent_span_id = spanToJSONResult.parent_span_id;
+    const spanId = spanContext.spanContext().spanId;
+    const tmpResult4 = _mod11213;
+    const spanIsSampledResult = tmpResult4.spanIsSampled(spanContext);
+    const tmpResult5 = _mod11213;
+    const rootSpan = tmpResult5.getRootSpan(spanContext);
+    let str3 = "unsampled";
+    if (spanIsSampledResult) {
+      str3 = "sampled";
+    }
+    let str5 = "";
+    if (rootSpan === spanContext) {
+      str5 = "root ";
+    }
+    const _HermesInternal = HermesInternal;
+    const _HermesInternal2 = HermesInternal;
+    const combined = "[Tracing] Starting " + str3 + " " + str5 + "span";
+    const items = ["op: " + str2, , ];
+    const _HermesInternal3 = HermesInternal;
+    items[1] = "name: " + str;
+    const _HermesInternal4 = HermesInternal;
+    items[2] = "ID: " + spanId;
+    if (parent_span_id) {
+      const _HermesInternal5 = HermesInternal;
+      items.push("parent ID: " + parent_span_id);
+    }
+    if (rootSpan !== spanContext) {
+      const tmpResult6 = _mod11213;
+      ({ op: op2, description: description2 } = tmpResult6.spanToJSON(rootSpan));
+      const _HermesInternal6 = HermesInternal;
+      tmpResult6.spanToJSON(rootSpan);
+      items.push("root ID: " + rootSpan.spanContext().spanId);
+      if (op2) {
+        const _HermesInternal7 = HermesInternal;
+        items.push("root op: " + op2);
       }
-    });
-  } catch (err) {
+      if (description2) {
+        const _HermesInternal8 = HermesInternal;
+        items.push("root description: " + description2);
+      }
+    }
+    const logger = tmp(11208).logger;
+    const _HermesInternal9 = HermesInternal;
+    logger.log("" + combined + "\n  " + items.join("\n  "));
   }
 };

@@ -1,13 +1,13 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14876
+// Function ID: 14877
 // Name: UserProfileTypingIndicatorEditButton
-// Dependencies: [32, 19, 1085, 2061, 21, 558, 576, 1503, 11595, 2049, 7093, 6848, 6872, 1126, 3829, 14795, 11608, 2]
+// Dependencies: [32, 19, 1085, 2062, 21, 558, 576, 1503, 11641, 2049, 7099, 6851, 6878, 1126, 3851, 14851, 11654, 2]
 
-// Module 14820 (UserProfileTypingIndicatorEditButton)
+// Module 14876 (UserProfileTypingIndicatorEditButton)
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   isTryItOut = isTryItOut.isTryItOut;
   const obj2 = isTryItOut(1503);
   const nativeStackNavigation = obj2.useNativeStackNavigation();
-  const obj3 = isTryItOut(11595);
+  const obj3 = isTryItOut(11641);
   const currentCustomTypingIndicatorConfig = obj3.useCurrentCustomTypingIndicatorConfig(isTryItOut);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [tmp(2049).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE];
@@ -40,12 +40,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   } else {
     [tmp6, tmp7] = cResult;
   }
-  const tmpResult = isTryItOut(7093);
+  const tmpResult = isTryItOut(7099);
   const tmp8 = analyticsLocations(tmpResult.useSelectedDismissibleContent(tmp6, tmp7), 2);
   dependencyMap = tmp10;
   const first = tmp8[0];
-  const tmp12 = nativeStackNavigation(6848);
-  const tmp13 = nativeStackNavigation(6872);
+  const tmp12 = nativeStackNavigation(6851);
+  const tmp13 = nativeStackNavigation(6878);
   analyticsLocations = tmp12(isTryItOut ? tmp13.CUSTOM_TYPING_INDICATOR_PROFILE_ROW_TRY_IT_OUT : tmp13.CUSTOM_TYPING_INDICATOR_PROFILE_ROW).analyticsLocations;
   if (cResult[2] === analyticsLocations) {
     if (cResult[3] === isTryItOut) {
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         if (cResult[7] !== currentCustomTypingIndicatorConfig.typingSuggestion) {
           const intl = tmp(1126).intl;
           const string = intl.string;
-          const tmpResult2 = isTryItOut(11595);
+          const tmpResult2 = isTryItOut(11641);
           const stringResult = string(tmpResult2.getCustomTypingIndicatorSuggestionMessage(currentCustomTypingIndicatorConfig.typingSuggestion));
           cResult[7] = currentCustomTypingIndicatorConfig.typingSuggestion;
           cResult[8] = stringResult;
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
           const intl2 = tmp(1126).intl;
-          const stringResult1 = intl2.string(nativeStackNavigation(3829)["pT+BVM"]);
+          const stringResult1 = intl2.string(nativeStackNavigation(3851)["pT+BVM"]);
           cResult[9] = stringResult1;
           tmp17 = stringResult1;
         } else {
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         }
         const tmp19 = first === isTryItOut(2049).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE;
         if (cResult[10] !== tmp19) {
-          const tmp22 = jsx(isTryItOut(14795).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp19 });
+          const tmp22 = jsx(isTryItOut(14851).UserProfileEditFormLabelBadges, { showPremiumIcon: true, showNewBadge: tmp19 });
           cResult[10] = tmp19;
           cResult[11] = tmp22;
           tmp20 = tmp22;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           tmp20 = cResult[11];
         }
         if (cResult[12] !== currentCustomTypingIndicatorConfig) {
-          const tmp25 = jsx(nativeStackNavigation(11608), { config: currentCustomTypingIndicatorConfig, size: 24 });
+          const tmp25 = jsx(nativeStackNavigation(11654), { config: currentCustomTypingIndicatorConfig, size: 24 });
           cResult[12] = currentCustomTypingIndicatorConfig;
           cResult[13] = tmp25;
           tmp23 = tmp25;
@@ -117,7 +117,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             }
           }
         }
-        const tmp29 = jsx(isTryItOut(14795).UserProfileEditFormButton, { label: tmp17, labelTrailing: tmp20, leading: tmp23, buttonText: tmp15, accessibilityValue: tmp26, onPress: tmp14 });
+        const tmp29 = jsx(isTryItOut(14851).UserProfileEditFormButton, { label: tmp17, labelTrailing: tmp20, leading: tmp23, buttonText: tmp15, accessibilityValue: tmp26, onPress: tmp14 });
         cResult[16] = tmp15;
         cResult[17] = tmp14;
         cResult[18] = tmp20;
@@ -155,17 +155,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let analyticsLocations;
   let obj = isTryItOut(1503);
   const nativeStackNavigation = obj.useNativeStackNavigation();
-  const obj2 = isTryItOut(11595);
+  const obj2 = isTryItOut(11641);
   const currentCustomTypingIndicatorConfig = obj2.useCurrentCustomTypingIndicatorConfig(isTryItOut);
-  const useSelectedDismissibleContent = isTryItOut(7093).useSelectedDismissibleContent;
+  const useSelectedDismissibleContent = isTryItOut(7099).useSelectedDismissibleContent;
   const items = [];
-  isTryItOut(7093);
+  isTryItOut(7099);
   items[0] = isTryItOut(2049).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE;
   const tmp6 = analyticsLocations(useSelectedDismissibleContent(items, { bypassAutoDismiss: true }), 2);
   dependencyMap = tmp8;
   const first = tmp6[0];
-  const tmp10 = nativeStackNavigation(6848);
-  const tmp11 = nativeStackNavigation(6872);
+  const tmp10 = nativeStackNavigation(6851);
+  const tmp11 = nativeStackNavigation(6878);
   analyticsLocations = tmp10(isTryItOut ? tmp11.CUSTOM_TYPING_INDICATOR_PROFILE_ROW_TRY_IT_OUT : tmp11.CUSTOM_TYPING_INDICATOR_PROFILE_ROW).analyticsLocations;
   const items1 = [nativeStackNavigation, isTryItOut, tmp6[1], analyticsLocations];
   const tmp12 = useCallback(() => {
@@ -181,13 +181,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   }, items1);
   const intl = tmp(1126).intl;
   const string = intl.string;
-  const tmpResult = isTryItOut(11595);
+  const tmpResult = isTryItOut(11641);
   const stringResult = string(tmpResult.getCustomTypingIndicatorSuggestionMessage(currentCustomTypingIndicatorConfig.typingSuggestion));
-  const UserProfileEditFormButton = tmp(14795).UserProfileEditFormButton;
+  const UserProfileEditFormButton = tmp(14851).UserProfileEditFormButton;
   const intl2 = tmp(1126).intl;
   ({ showPremiumIcon: true, showNewBadge: first === isTryItOut(2049).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE });
-  const UserProfileEditFormLabelBadges = tmp(14795).UserProfileEditFormLabelBadges;
-  return <UserProfileEditFormButton label={intl2.string(nativeStackNavigation(3829)["pT+BVM"])} labelTrailing={null} leading={null} buttonText={stringResult} accessibilityValue={{ text: stringResult }} onPress={tmp12} />;
+  const UserProfileEditFormLabelBadges = tmp(14851).UserProfileEditFormLabelBadges;
+  return <UserProfileEditFormButton label={intl2.string(nativeStackNavigation(3851)["pT+BVM"])} labelTrailing={null} leading={null} buttonText={stringResult} accessibilityValue={{ text: stringResult }} onPress={tmp12} />;
 });
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/UserProfileTypingIndicatorEditButton.tsx");
 

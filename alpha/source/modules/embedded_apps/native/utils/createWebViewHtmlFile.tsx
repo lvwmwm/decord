@@ -1,10 +1,10 @@
-// Module ID: 10911
-// Function ID: 10912
+// Module ID: 10951
+// Function ID: 10952
 // Name: createWebViewHtmlFile
 // Dependencies: [5, 1162, 1255, 1382, 2]
 // Exports: createInjectedJavascriptForIOS, default, deleteWebViewHtmlFile
 
-// Module 10911 (createWebViewHtmlFile)
+// Module 10951 (createWebViewHtmlFile)
 import react_nativeDefault from "react-native" /* 1162 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -63,7 +63,7 @@ let obj = function _createWebViewHtmlFile() {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             let c3;
@@ -104,7 +104,7 @@ let obj = function _createWebViewHtmlFile() {
                   c3 = 0;
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp16) {
               closure_2 = tmp16;
@@ -137,7 +137,7 @@ let obj = function _createWebViewHtmlFile() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let insets;

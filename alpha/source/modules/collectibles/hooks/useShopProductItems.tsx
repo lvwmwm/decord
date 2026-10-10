@@ -1,10 +1,10 @@
-// Module ID: 8279
-// Function ID: 8280
+// Module ID: 8295
+// Function ID: 8296
 // Name: useShopProductItems
 // Dependencies: [19, 1993, 558, 576, 1126, 2]
 // Exports: getBundleItemNames, getProductItems, getPurchasedItem
 
-// Module 8279 (useShopProductItems)
+// Module 8295 (useShopProductItems)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import react from "react" /* 19 */;

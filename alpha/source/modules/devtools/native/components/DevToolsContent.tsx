@@ -1,27 +1,27 @@
-// Module ID: 16036
-// Function ID: 16037
+// Module ID: 16098
+// Function ID: 16099
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 10450, 4977, 1259, 21, 5091, 587, 558, 576, 11300, 504, 16037, 5087, 5056, 16038, 6191, 16040, 1503, 1631, 6186, 4768, 14753, 6269, 2]
+// Dependencies: [32, 19, 17, 10483, 5016, 1259, 21, 5092, 587, 558, 576, 11341, 504, 16099, 5088, 5057, 16100, 6184, 16102, 1503, 1631, 6179, 4809, 14808, 6264, 2]
 
-// Module 16036 (DevToolsContent)
+// Module 16098 (DevToolsContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import HapticUtils from "HapticUtils" /* 5056 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Pressables from "Pressables" /* 6191 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14753 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16037 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 16038 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 16040 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6184 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14808 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16099 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 16100 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 16102 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10450 */;
-import ExperimentStore from "ExperimentStore" /* 4977 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10483 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -281,7 +281,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp11 = closure_10(screenKey(16038).ArrowSmallUpIcon, {});
+      const tmp11 = closure_10(screenKey(16100).ArrowSmallUpIcon, {});
       cResult[5] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -330,7 +330,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
                 obj2.updateSortOrder(screenKey, "down");
               }
             }
-            const tmp19 = closure_10(screenKey(16040).ArrowSmallDownIcon, {});
+            const tmp19 = closure_10(screenKey(16102).ArrowSmallDownIcon, {});
             cResult[15] = tmp19;
             tmp18 = tmp19;
           } else {
@@ -357,8 +357,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
           cResult[16] = end;
           cResult[17] = tmp15;
           cResult[18] = tmp17;
-          cResult[19] = closure_10(screenKey(6191).PressableOpacity, obj2);
-          const tmp22 = closure_10(screenKey(6191).PressableOpacity, obj2);
+          cResult[19] = closure_10(screenKey(6184).PressableOpacity, obj2);
+          const tmp22 = closure_10(screenKey(6184).PressableOpacity, obj2);
         }
         const items = [tmp4.button, end && tmp4.disabledButton];
         cResult[12] = tmp4.button;
@@ -370,8 +370,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
     cResult[6] = start;
     cResult[7] = tmp5;
     cResult[8] = tmp7;
-    cResult[9] = closure_10(screenKey(6191).PressableOpacity, obj3);
-    const tmp14 = closure_10(screenKey(6191).PressableOpacity, obj3);
+    cResult[9] = closure_10(screenKey(6184).PressableOpacity, obj3);
+    const tmp14 = closure_10(screenKey(6184).PressableOpacity, obj3);
   }
   const items1 = [tmp4.button, start && tmp4.disabledButton];
   cResult[2] = tmp4.button;
@@ -424,7 +424,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToo
     children: closure_10(ArrowSmallDownIcon.ArrowSmallDownIcon, {})
   };
   items2 = [tmp.button, ];
-  const PressableOpacity2 = tmp5(6191).PressableOpacity;
+  const PressableOpacity2 = tmp5(6184).PressableOpacity;
   if (end) {
     end = tmp.disabledButton;
   }
@@ -531,21 +531,19 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
       arrow: !screenKey,
       trailing: tmp3Result,
       onLongPress() {
-        let str2;
         let str = "sorting-enabled";
         const open = closure_1(first[22]).open;
         closure_1(first[22]);
         if (closure_1_2) {
           str = "sorting-disabled";
         }
-        const obj = { key: str, content: str2 };
-        str2 = "Sorting enabled";
+        let str2 = "Sorting enabled";
         if (closure_1_2) {
           str2 = "Sorting disabled";
         }
-        open(obj);
-        const obj2 = navigation(first[15]);
-        const result = obj2.triggerHapticFeedback(navigation(tmp[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
+        open(str, { text: str2 });
+        const obj = navigation(first[15]);
+        const result = obj.triggerHapticFeedback(navigation(tmp[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
         closure_1_3((arg0) => !arg0);
       },
       onPress() {
@@ -616,21 +614,19 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
         arrow: !c2,
         trailing: tmp4Result,
         onLongPress() {
-          let str2;
           let str = "sorting-enabled";
           const open = closure_1(c2[22]).open;
           closure_1(c2[22]);
           if (_undefined) {
             str = "sorting-disabled";
           }
-          const obj = { key: str, content: str2 };
-          str2 = "Sorting enabled";
+          let str2 = "Sorting enabled";
           if (_undefined) {
             str2 = "Sorting disabled";
           }
-          open(obj);
-          const obj2 = screenKey(c2[15]);
-          const result = obj2.triggerHapticFeedback(screenKey(tmp[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
+          open(str, { text: str2 });
+          const obj = screenKey(c2[15]);
+          const result = obj.triggerHapticFeedback(screenKey(tmp[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
           closure_1_3((arg0) => !arg0);
         },
         onPress() {

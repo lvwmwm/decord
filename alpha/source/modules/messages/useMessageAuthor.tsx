@@ -1,19 +1,19 @@
-// Module ID: 5624
-// Function ID: 5625
+// Module ID: 5627
+// Function ID: 5628
 // Name: useMessageAuthor
-// Dependencies: [2064, 2124, 2118, 2086, 4719, 1390, 558, 38, 576, 504, 4923, 5625, 2]
+// Dependencies: [2065, 2125, 2119, 2087, 4760, 1390, 558, 38, 576, 504, 4962, 5628, 2]
 // Exports: getMessageAuthor
 
-// Module 5624 (useMessageAuthor)
+// Module 5627 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -126,8 +126,8 @@ function useNullableMessageAuthor(message) {
       }
       const tmp27Result7 = get_initialized;
       let stateFromStores2 = tmp27Result7.useStateFromStores(tmp42, tmp44, tmp45);
-      const useName2 = stateFromStores6(4923).useName;
-      stateFromStores6(4923);
+      const useName2 = stateFromStores6(4962).useName;
+      stateFromStores6(4962);
       const tmp47 = stateFromStores6;
       if (message != null) {
         class R {
@@ -256,7 +256,7 @@ function useNullableMessageAuthor(message) {
                 return guild.getGuild(guild_id);
               }
             }
-            const tmp65 = tmp47(5625)(tmp64);
+            const tmp65 = tmp47(5628)(tmp64);
             if (null != message) {
               class F {
                 constructor() {
@@ -412,8 +412,8 @@ function useNullableMessageAuthor(message) {
         return role;
       }
     }
-    const useName = stateFromStores6(4923).useName;
-    stateFromStores6(4923);
+    const useName = stateFromStores6(4962).useName;
+    stateFromStores6(4962);
     if (message != null) {
       class F {
         constructor() {

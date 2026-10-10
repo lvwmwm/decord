@@ -1,11 +1,11 @@
-// Module ID: 4737
-// Function ID: 4738
+// Module ID: 4778
+// Function ID: 4779
 // Name: InvoiceRecord
-// Dependencies: [1405, 1085, 4738, 2]
+// Dependencies: [1405, 1085, 4779, 2]
 
-// Module 4737 (InvoiceRecord)
+// Module 4778 (InvoiceRecord)
 import Constants from "Constants" /* 1085 */;
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4738 */;
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4779 */;
 import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 
@@ -281,20 +281,20 @@ class InvoiceRecord extends BaseInvoiceRecord {
       }
     }
   }
-  static createFromOTPPreview(invoice_items) {
+  static createFromOTPPreview(body) {
     let apply_wallet_balance;
     let invoiceItems;
     let paymentLegs;
     let tmp3;
-    invoice_items = invoice_items.invoice_items;
+    const invoice_items = body.invoice_items;
     let mapped;
     if (invoice_items != null) {
       mapped = invoice_items.map(PremiumSubscriptionInvoiceItem.createInvoiceItemFromServer);
       tmp3 = require;
     }
-    const obj = { id: "", invoiceItems: mapped, total: invoice_items.amount, subtotal: invoice_items.subtotal, currency: invoice_items.currency, tax: invoice_items.tax, taxInclusive: invoice_items.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: new Date(0), orbsReward: null, checkoutContext: null, applyWalletBalance: apply_wallet_balance, paymentLegs: invoice_items.payment_legs };
+    const obj = { id: "", invoiceItems: mapped, total: body.amount, subtotal: body.subtotal, currency: body.currency, tax: body.tax, taxInclusive: body.tax_inclusive, subscriptionPeriodStart: new Date(0), subscriptionPeriodEnd: new Date(0), orbsReward: null, checkoutContext: null, applyWalletBalance: apply_wallet_balance, paymentLegs: body.payment_legs };
     new Date(0);
-    ({ orbs_reward: obj.orbsReward, checkout_context: obj.checkoutContext, apply_wallet_balance } = invoice_items);
+    ({ orbs_reward: obj.orbsReward, checkout_context: obj.checkoutContext, apply_wallet_balance } = body);
     new Date(0);
     if (typeof InvoiceRecord === "function") {
       const self = this;

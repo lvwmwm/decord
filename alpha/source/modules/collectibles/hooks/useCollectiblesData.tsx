@@ -1,12 +1,12 @@
-// Module ID: 8281
-// Function ID: 8282
+// Module ID: 8297
+// Function ID: 8298
 // Name: useCollectiblesData
-// Dependencies: [32, 7257, 7272, 558, 576, 573, 2]
+// Dependencies: [32, 7263, 7279, 558, 576, 573, 2]
 
-// Module 8281 (useCollectiblesData)
+// Module 8297 (useCollectiblesData)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7257 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7272 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7263 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7279 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

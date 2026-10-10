@@ -1,12 +1,12 @@
-// Module ID: 9502
-// Function ID: 9503
+// Module ID: 9531
+// Function ID: 9532
 // Name: components/EmojiPickerListComponent
-// Dependencies: [19, 9400, 21, 558, 576, 9477, 9491, 9503, 9499, 8608, 2]
+// Dependencies: [19, 9429, 21, 558, 576, 9506, 9520, 9532, 9528, 8624, 2]
 
-// Module 9502 (components/EmojiPickerListComponent)
+// Module 9531 (components/EmojiPickerListComponent)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9400 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9429 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

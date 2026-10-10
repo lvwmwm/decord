@@ -99,7 +99,7 @@ export const KeyboardProvider = (enabled) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ export const KeyboardProvider = (enabled) => {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp11) {
         c0 = 3;

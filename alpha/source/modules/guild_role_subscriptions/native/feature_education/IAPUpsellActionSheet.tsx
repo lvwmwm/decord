@@ -1,15 +1,15 @@
-// Module ID: 16592
-// Function ID: 16593
+// Module ID: 16659
+// Function ID: 16660
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 1085, 2071, 2061, 21, 558, 576, 1112, 1126, 16593, 16594, 2]
+// Dependencies: [19, 1085, 2072, 2062, 21, 558, 576, 1112, 1126, 16660, 16661, 2]
 
-// Module 16592 (IAPUpsellActionSheet)
+// Module 16659 (IAPUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import ChannelConstants from "ChannelConstants" /* 2071 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -57,8 +57,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IAPUpsellA
       }
       return tmp12;
     }
-    markAsDismissed(16593);
-    const tmp16 = <tmp15 imageSource={markAsDismissed(16594)} header={tmp6} body={tmp7} cta={tmp8} onCTAPress={tmp4} markAsDismissed={markAsDismissed} />;
+    markAsDismissed(16660);
+    const tmp16 = <tmp15 imageSource={markAsDismissed(16661)} header={tmp6} body={tmp7} cta={tmp8} onCTAPress={tmp4} markAsDismissed={markAsDismissed} />;
     cResult[6] = tmp4;
     cResult[7] = markAsDismissed;
     cResult[8] = tmp16;
@@ -76,11 +76,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IAPUpsellA
 }) : (function IAPUpsellActionSheet(arg0) {
   let markAsDismissed;
   ({ guildId: require, markAsDismissed } = arg0);
-  markAsDismissed(16593);
+  markAsDismissed(16660);
   const intl = intl4.intl;
   const intl2 = intl4.intl;
   const intl3 = intl4.intl;
-  return <tmp imageSource={markAsDismissed(16594)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function handleCTAPress() {
+  return <tmp imageSource={markAsDismissed(16661)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function handleCTAPress() {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
     markAsDismissed(ContentDismissActionType.UNKNOWN);

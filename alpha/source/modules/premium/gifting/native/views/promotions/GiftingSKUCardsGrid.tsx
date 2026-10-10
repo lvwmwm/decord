@@ -1,22 +1,22 @@
-// Module ID: 12688
-// Function ID: 12689
+// Module ID: 12735
+// Function ID: 12736
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7262, 1991, 21, 587, 5091, 558, 576, 8286, 4793, 10472, 9008, 8994, 8829, 5087, 1126, 6191, 1497, 12, 2]
+// Dependencies: [19, 17, 7268, 1991, 21, 587, 5092, 558, 576, 8302, 4832, 10506, 9027, 9013, 8848, 5088, 1126, 6184, 1497, 12, 2]
 
-// Module 12688 (GiftingSKUCardsGrid)
+// Module 12735 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import NameplateRecord from "NameplateRecord" /* 1991 */;
-import react_native from "react-native" /* 4793 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7262 */;
-import useCurrentUser from "useCurrentUser" /* 8286 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10472 */;
+import react_native from "react-native" /* 4832 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7268 */;
+import useCurrentUser from "useCurrentUser" /* 8302 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10506 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
               }
               class P {
                 constructor(arg0, arg1) {
-                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F144463 */ }) };
+                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F144882 */ }) };
                   return jsx(View, obj, arg1);
                 }
               }
@@ -289,7 +289,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
             const mapped = arr.map(tmp13);
             class P {
               constructor(arg0, arg1) {
-                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F144463 */ }) };
+                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F144882 */ }) };
                 return jsx(View, obj, arg1);
               }
             }
@@ -304,7 +304,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
       }
       class P {
         constructor(arg0, arg1) {
-          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F144463 */ }) };
+          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F144882 */ }) };
           return jsx(View, obj, arg1);
         }
       }

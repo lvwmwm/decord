@@ -1,16 +1,16 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 17278
+// Function ID: 17279
 // Name: ConjurePerfTraceStatsHeader
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 17214, 13174, 5087, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17279, 13224, 5088, 2]
 
-// Module 17213 (ConjurePerfTraceStatsHeader)
+// Module 17278 (ConjurePerfTraceStatsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 17214 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 17279 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
   const cResult = obj.c(25);
   stats = stats.stats;
   if (cResult[0] !== stats) {
-    const tmpResult = tmp(17214);
+    const tmpResult = tmp(17279);
     const perfModelSummaryResult = tmpResult.perfModelSummary(stats);
     cResult[0] = stats;
     cResult[1] = perfModelSummaryResult;
@@ -96,7 +96,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
                 let tmp25 = null;
                 if (null != tmp4) {
                   let obj2 = { variant: "text-sm/normal", color: "text-default", children: tmp4 };
-                  tmp25 = closure_3(tmp(5087).Text, obj2);
+                  tmp25 = closure_3(tmp(5088).Text, obj2);
                 }
                 cResult[18] = tmp4;
                 cResult[19] = tmp25;
@@ -134,7 +134,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
           }
         }
       }
-      const PERF_CATEGORIES = tmp(13174).PERF_CATEGORIES;
+      const PERF_CATEGORIES = tmp(13224).PERF_CATEGORIES;
       const mapped = PERF_CATEGORIES.map((item) => {
         let items;
         let items1;
@@ -207,7 +207,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
   let items;
   stats = stats.stats;
   let tmp = stats;
-  let obj = stats(17214);
+  let obj = stats(17279);
   const perfModelSummaryResult = obj.perfModelSummary(stats);
   let tmp4 = closure_6();
   dependencyMap = tmp4;
@@ -263,13 +263,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePerfT
       return tmp4(tmp5, obj2, item);
     })
   };
-  PERF_CATEGORIES = stats(13174).PERF_CATEGORIES;
+  PERF_CATEGORIES = stats(13224).PERF_CATEGORIES;
   items[1] = closure_3(closure_2, obj4);
   let tmp7Result = null;
   const tmp7 = closure_3;
   if (null != perfModelSummaryResult) {
     let obj5 = { variant: "text-sm/normal", color: "text-default", children: perfModelSummaryResult };
-    tmp7Result = tmp7(tmp(5087).Text, obj5);
+    tmp7Result = tmp7(tmp(5088).Text, obj5);
   }
   items[2] = tmp7Result;
   return tmp5(tmp6, obj2);

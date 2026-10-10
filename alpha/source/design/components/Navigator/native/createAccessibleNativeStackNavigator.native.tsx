@@ -1,15 +1,15 @@
-// Module ID: 14209
-// Function ID: 14210
+// Module ID: 14264
+// Function ID: 14265
 // Name: createAccessibleNativeStackNavigator
-// Dependencies: [109, 19, 21, 558, 576, 6686, 1504, 9317, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6687, 1504, 9344, 2]
 // Exports: default
 
-// Module 14209 (createAccessibleNativeStackNavigator)
+// Module 14264 (createAccessibleNativeStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Link from "Link" /* 1504 */;
-import Navigator from "Navigator" /* 6686 */;
-import NativeStackView2 from "NativeStackView" /* 9317 */;
+import Navigator from "Navigator" /* 6687 */;
+import NativeStackView2 from "NativeStackView" /* 9344 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -184,7 +184,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accessi
                       }
                     }
                   }
-                  const NativeStackView = tmp(9317).NativeStackView;
+                  const NativeStackView = tmp(9344).NativeStackView;
                   const merged = Object.assign(tmp10);
                   const tmp26 = <NativeStackView state={state} navigation={navigation} descriptors={tmp20} describe={describe} />;
                   cResult[21] = describe;

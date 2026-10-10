@@ -1,33 +1,33 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14912
+// Function ID: 14913
 // Name: UserProfileEditingAccessibilityUtils
-// Dependencies: [1126, 14792, 10234, 2955, 6677, 2]
+// Dependencies: [1126, 14848, 10265, 2958, 6678, 2]
 // Exports: getAvatarAccessibleValue, getBannerAccessibleValue, getDisplayNameStyleAccessibleValue
 
-// Module 14853 (UserProfileEditingAccessibilityUtils)
+// Module 14912 (UserProfileEditingAccessibilityUtils)
 import intl5 from "intl" /* 1126 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6677 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10234 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14792 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6678 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10265 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 14848 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileEditingAccessibilityUtils.tsx");
 
-export const getDisplayNameStyleAccessibleValue = function getDisplayNameStyleAccessibleValue(stateFromStores) {
-  if (null == stateFromStores) {
+export const getDisplayNameStyleAccessibleValue = function getDisplayNameStyleAccessibleValue(displayNameStyles) {
+  if (null == displayNameStyles) {
     const intl2 = intl5.intl;
     return intl2.string(intl5.t["3Xph0/"]);
   } else {
     const intl3 = intl5.intl;
-    const stringResult = intl3.string(getDisplayNameStylesFontNameDefault(stateFromStores.fontId));
+    const stringResult = intl3.string(getDisplayNameStylesFontNameDefault(displayNameStyles.fontId));
     const intl4 = intl5.intl;
     const string = intl4.string;
-    let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[stateFromStores.effectId];
+    let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[displayNameStyles.effectId];
     const tmp7 = importDefault;
     if (OpWJ3f == null) {
-      OpWJ3f = tmp7(2955).OpWJ3f;
+      OpWJ3f = tmp7(2958).OpWJ3f;
     }
-    const colors = stateFromStores.colors;
+    const colors = displayNameStyles.colors;
     const stringResult1 = string(OpWJ3f);
     const mapped = colors.map((item) => {
       const str = item.toString(16);

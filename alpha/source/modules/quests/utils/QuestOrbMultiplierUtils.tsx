@@ -1,12 +1,12 @@
-// Module ID: 9142
-// Function ID: 9143
+// Module ID: 9163
+// Function ID: 9164
 // Name: QuestOrbMultiplierUtils
-// Dependencies: [4728, 1396, 1398, 2]
+// Dependencies: [4769, 1396, 1398, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 9142 (QuestOrbMultiplierUtils)
+// Module 9163 (QuestOrbMultiplierUtils)
 import PerksStateUtils from "PerksStateUtils" /* 1396 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
 import size from "module_2" /* 2 */;
 
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", XBOX_GAME_PASS: "XBOX_GAME_PASS", INELIGIBLE: "INELIGIBLE" };

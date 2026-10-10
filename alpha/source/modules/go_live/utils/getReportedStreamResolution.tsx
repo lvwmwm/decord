@@ -1,12 +1,12 @@
-// Module ID: 5271
-// Function ID: 5272
+// Module ID: 5272
+// Function ID: 5273
 // Name: getReportedStreamResolution
-// Dependencies: [5116, 5272, 2]
+// Dependencies: [5117, 5273, 2]
 // Exports: default
 
-// Module 5271 (getReportedStreamResolution)
-import Constants from "Constants" /* 5116 */;
-import getReportedPresetResolutionDefault from "getReportedPresetResolution" /* 5272 */;
+// Module 5272 (getReportedStreamResolution)
+import Constants from "Constants" /* 5117 */;
+import getReportedPresetResolutionDefault from "getReportedPresetResolution" /* 5273 */;
 import size from "module_2" /* 2 */;
 
 const ResolutionTypes = Constants.ResolutionTypes;

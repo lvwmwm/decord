@@ -1,16 +1,16 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 16893
+// Function ID: 16894
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 5429, 6042, 8437, 1085, 16824, 8454, 8450, 6796, 2000, 1085, 11, 8455, 558, 576, 504, 2]
+// Dependencies: [5, 5432, 6035, 8453, 1085, 16894, 8470, 8466, 6799, 2000, 1085, 11, 8471, 558, 576, 504, 2]
 // Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates
 
-// Module 16823 (ICYMIStoreUtils)
+// Module 16893 (ICYMIStoreUtils)
 import Constants from "Constants" /* 1085 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 16824 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 16894 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 5429 */;
-import ReadStateStore from "ReadStateStore" /* 6042 */;
-import ICYMIStore from "ICYMIStore" /* 8437 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import ICYMIStore from "ICYMIStore" /* 8453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp5) {
         c0 = 3;
@@ -93,7 +93,7 @@ obj = function _regenerateFeedAndClearReadStates() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -218,7 +218,7 @@ obj = function _regenerateFeedAndClearReadStates() {
           obj = closure_130_1(closure_130_2[12]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp35) {
         c4 = 3;

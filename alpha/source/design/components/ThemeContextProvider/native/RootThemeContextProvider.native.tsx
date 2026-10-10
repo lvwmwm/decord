@@ -1,13 +1,13 @@
-// Module ID: 11148
-// Function ID: 11149
+// Module ID: 11189
+// Function ID: 11190
 // Name: ThemeContextProvider/RootThemeContextProvider
-// Dependencies: [19, 1096, 21, 558, 576, 4788, 2]
+// Dependencies: [19, 1096, 21, 558, 576, 4827, 2]
 
-// Module 11148 (ThemeContextProvider/RootThemeContextProvider)
+// Module 11189 (ThemeContextProvider/RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
-import native from "native" /* 4788 */;
+import native from "native" /* 4827 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -198,7 +198,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisableCus
   tmp12 = tmp13;
 }) : (function DisableCustomTheme(children) {
   let themeContext;
-  let obj = themeContext(4788);
+  let obj = themeContext(4827);
   themeContext = obj.useThemeContext();
   const items = [themeContext];
   const memo = react.useMemo(() => {
@@ -208,7 +208,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisableCus
     const merged = Object.assign(themeContext);
     return createThemedContext(obj);
   }, items);
-  return jsx(themeContext(4788).ThemeContext.Provider, { value: memo, children: children.children });
+  return jsx(themeContext(4827).ThemeContext.Provider, { value: memo, children: children.children });
 });
 const result = size.fileFinishedImporting("design/components/ThemeContextProvider/native/RootThemeContextProvider.native.tsx");
 

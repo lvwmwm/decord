@@ -1,10 +1,10 @@
-// Module ID: 14827
-// Function ID: 14828
+// Module ID: 14886
+// Function ID: 14887
 // Name: TryItOutPresets
-// Dependencies: [1410, 1409, 1126, 14828, 14829, 14830, 14831, 14832, 14833, 14834, 14835, 14836, 14837, 14838, 14839, 14840, 14841, 14842, 14843, 14844, 14845, 14846, 14847, 2]
+// Dependencies: [1410, 1409, 1126, 14887, 14888, 14889, 14890, 14891, 14892, 14893, 14894, 14895, 14896, 14897, 14898, 14899, 14900, 14901, 14902, 14903, 14904, 14905, 14906, 2]
 // Exports: getRandomTryItOutPreset, getTryItOutPresetConfig
 
-// Module 14827 (TryItOutPresets)
+// Module 14886 (TryItOutPresets)
 import intl2 from "intl" /* 1126 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1409 */;
 import DisplayNameFont from "DisplayNameFont" /* 1410 */;
@@ -17,18 +17,18 @@ function getName() {
   return intl.string(intl2.t["TFc+iF"]);
 }
 function getHeaderSrc() {
-  return require("module_14828").default;
+  return require("module_14887").default;
 }
 function getPreviewThumbnailSrc() {
-  return require("module_14829").default;
+  return require("module_14888").default;
 }
 function getBannerSrc(arg0) {
   let _default;
   const tmp3 = arg0;
   if (tmp3) {
-    _default = tmp(14830).default;
+    _default = tmp(14889).default;
   } else {
-    _default = tmp(14831).default;
+    _default = tmp(14890).default;
   }
   return _default;
 }
@@ -51,18 +51,18 @@ const obj5 = {
     return intl.string(intl2.t["4g+5bq"]);
   },
   getHeaderSrc() {
-    return require("module_14832").default;
+    return require("module_14891").default;
   },
   getPreviewThumbnailSrc() {
-    return require("module_14833").default;
+    return require("module_14892").default;
   },
   getBannerSrc(arg0) {
     let _default;
     const tmp3 = arg0;
     if (tmp3) {
-      _default = tmp(14834).default;
+      _default = tmp(14893).default;
     } else {
-      _default = tmp(14835).default;
+      _default = tmp(14894).default;
     }
     return _default;
   },
@@ -84,18 +84,18 @@ const obj7 = {
     return intl.string(intl2.t.ycg1xj);
   },
   getHeaderSrc() {
-    return require("module_14836").default;
+    return require("module_14895").default;
   },
   getPreviewThumbnailSrc() {
-    return require("module_14837").default;
+    return require("module_14896").default;
   },
   getBannerSrc(arg0) {
     let _default;
     const tmp3 = arg0;
     if (tmp3) {
-      _default = tmp(14838).default;
+      _default = tmp(14897).default;
     } else {
-      _default = tmp(14839).default;
+      _default = tmp(14898).default;
     }
     return _default;
   },
@@ -117,18 +117,18 @@ const obj9 = {
     return intl.string(intl2.t["9WLHvr"]);
   },
   getHeaderSrc() {
-    return require("module_14840").default;
+    return require("module_14899").default;
   },
   getPreviewThumbnailSrc() {
-    return require("module_14841").default;
+    return require("module_14900").default;
   },
   getBannerSrc(arg0) {
     let _default;
     const tmp3 = arg0;
     if (tmp3) {
-      _default = tmp(14842).default;
+      _default = tmp(14901).default;
     } else {
-      _default = tmp(14843).default;
+      _default = tmp(14902).default;
     }
     return _default;
   },
@@ -150,18 +150,18 @@ const obj11 = {
     return intl.string(intl2.t.UdNuqi);
   },
   getHeaderSrc() {
-    return require("module_14844").default;
+    return require("module_14903").default;
   },
   getPreviewThumbnailSrc() {
-    return require("module_14845").default;
+    return require("module_14904").default;
   },
   getBannerSrc(arg0) {
     let _default;
     const tmp3 = arg0;
     if (tmp3) {
-      _default = tmp(14846).default;
+      _default = tmp(14905).default;
     } else {
-      _default = tmp(14847).default;
+      _default = tmp(14906).default;
     }
     return _default;
   },

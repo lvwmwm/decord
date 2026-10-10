@@ -1,21 +1,21 @@
-// Module ID: 12467
-// Function ID: 12468
+// Module ID: 12514
+// Function ID: 12515
 // Name: DiscoverabilityLanding
-// Dependencies: [19, 17, 12355, 1085, 21, 5091, 587, 5903, 1631, 5055, 12468, 2000, 6263, 6163, 12469, 5087, 1126, 8563, 12383, 5376, 2]
+// Dependencies: [19, 17, 12399, 1085, 21, 5092, 587, 5906, 1631, 5056, 12515, 2000, 6258, 6156, 12516, 5088, 1126, 8579, 12427, 5379, 2]
 // Exports: default
 
-// Module 12467 (DiscoverabilityLanding)
+// Module 12514 (DiscoverabilityLanding)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12355 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12399 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
-import TextStyles from "TextStyles" /* 5903 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles from "TextStyles" /* 5906 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -66,7 +66,7 @@ export default function DiscoverabilityLanding(onNext) {
   react = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { allowPhone, allowEmail };
-    obj.openLazy(asyncRequire(12468, dependencyMap.paths), "Discoverability Landing", obj2);
+    obj.openLazy(asyncRequire(12515, dependencyMap.paths), "Discoverability Landing", obj2);
   }, items);
   let obj = { style: tmp.container, contentContainerStyle: obj2, children: items2 };
   obj2 = { paddingTop: onNext(allowPhone[12]).NAV_BAR_HEIGHT + 32, paddingBottom: bottom + 16 };

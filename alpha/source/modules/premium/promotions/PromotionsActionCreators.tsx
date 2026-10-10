@@ -1,20 +1,20 @@
-// Module ID: 9136
-// Function ID: 9137
+// Module ID: 9157
+// Function ID: 9158
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2128, 1390, 9101, 1392, 1085, 584, 9137, 1295, 7109, 2046, 1240, 9135, 2]
+// Dependencies: [5, 2129, 1390, 9121, 1392, 1085, 584, 9158, 1295, 7115, 2046, 1240, 9156, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 9136 (PromotionsActionCreators)
+// Module 9157 (PromotionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import wrappers from "wrappers" /* 1240 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9137 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9158 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
 import UserStore from "UserStore" /* 1390 */;
-import PromotionsStore from "PromotionsStore" /* 9101 */;
+import PromotionsStore from "PromotionsStore" /* 9121 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, c6;
@@ -38,7 +38,7 @@ let obj = function _fetchActivePromotions() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -125,7 +125,7 @@ let obj = function _fetchActivePromotions() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp25) {
           let closure_3 = tmp25;
@@ -172,7 +172,7 @@ obj = function _fetchClaimedOutboundPromotionCodes() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c2;

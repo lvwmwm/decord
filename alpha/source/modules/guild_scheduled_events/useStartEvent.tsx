@@ -1,11 +1,11 @@
-// Module ID: 8656
-// Function ID: 8657
+// Module ID: 8666
+// Function ID: 8667
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 558, 576, 8657, 8658, 5632, 2]
+// Dependencies: [5, 32, 19, 558, 576, 8667, 8668, 5635, 2]
 
-// Module 8656 (useStartEvent)
+// Module 8666 (useStartEvent)
 import react2 from "react" /* 576 */;
-import StartEventUtilsAll from "StartEventUtils" /* 8657 */;
+import StartEventUtilsAll from "StartEventUtils" /* 8667 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c6;
@@ -164,7 +164,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
             }
             closure_0(false);
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp50) {
           closure_5 = tmp50;
@@ -219,7 +219,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -338,7 +338,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartEven
             }
             closure_132_0(false);
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp55) {
           closure_5 = tmp55;

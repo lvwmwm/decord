@@ -1,20 +1,20 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14921
+// Function ID: 14922
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8268, 1390, 21, 5091, 587, 6848, 6872, 504, 14863, 10608, 8295, 14865, 6186, 6165, 9604, 5055, 14867, 2000, 14868, 2]
+// Dependencies: [19, 17, 8284, 1390, 21, 5092, 587, 6851, 6878, 504, 14922, 10642, 8311, 14924, 6179, 6158, 9633, 5056, 14926, 2000, 14927, 2]
 // Exports: default
 
-// Module 14862 (UserSettingsEditGuildProfile)
+// Module 14921 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 587 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8295 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9604 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10608 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9633 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10642 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8268 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8284 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -65,7 +65,7 @@ export default function UserSettingsEditGuildProfile() {
     if (tmp) {
       const obj2 = GuildIdentityActionCreators;
       obj2.setCurrentGuild(guild.id);
-      const obj3 = { guildId: guild.id, dispatchWait: true };
+      const obj3 = { guildId: guild.id };
       const tmp8 = maybeFetchUserProfileDefault;
       tmp8(stateFromStores.id, stateFromStores.getAvatarURL(guild.id, 80), obj3);
     }

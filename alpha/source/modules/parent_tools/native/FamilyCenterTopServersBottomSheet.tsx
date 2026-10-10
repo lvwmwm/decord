@@ -1,20 +1,20 @@
-// Module ID: 15095
-// Function ID: 15096
+// Module ID: 15154
+// Function ID: 15155
 // Name: FamilyCenterTopServersBottomSheet
-// Dependencies: [7252, 21, 5091, 587, 558, 576, 504, 7723, 6165, 6186, 1126, 2565, 5087, 6269, 6892, 2]
+// Dependencies: [7258, 21, 5092, 587, 558, 576, 504, 7741, 6158, 6179, 1126, 2568, 5088, 6264, 6898, 2]
 
-// Module 15095 (FamilyCenterTopServersBottomSheet)
+// Module 15154 (FamilyCenterTopServersBottomSheet)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2565 from "module_2565" /* 2565 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import GuildIconDefault from "GuildIcon" /* 6165 */;
-import TableRowGroup2 from "TableRowGroup" /* 6269 */;
-import ActionSheet2 from "ActionSheet" /* 6892 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7252 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import GuildIconDefault from "GuildIcon" /* 6158 */;
+import TableRowGroup2 from "TableRowGroup" /* 6264 */;
+import ActionSheet2 from "ActionSheet" /* 6898 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7258 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
           }
         }
         const obj2 = { label: stateFromStores.name, subLabel: tmp9, icon: tmp11 };
-        const tmp17 = closure_4(guildActivity(6186).TableRow, obj2);
+        const tmp17 = closure_4(guildActivity(6179).TableRow, obj2);
         cResult[9] = tmp9;
         cResult[10] = stateFromStores.name;
         cResult[11] = tmp11;
@@ -89,7 +89,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const tmpResult2 = guildActivity(7723);
+    const tmpResult2 = guildActivity(7741);
     const topUserOrGuildDescription = tmpResult2.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     cResult[3] = guildActivity.call_count;
     cResult[4] = guildActivity.messages_sent;
@@ -106,10 +106,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp2Result = guildActivity(7723);
+    const tmp2Result = guildActivity(7741);
     const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
-    const TableRow = tmp2(6186).TableRow;
+    const TableRow = tmp2(6179).TableRow;
     obj3 = { guild: stateFromStores, style: tmp.guildIcon };
     return closure_4(TableRow, obj2);
   }
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
   const header = tmp4.header;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef2565.Lq9Set);
+    const stringResult = intl.string(_modDef2568.Lq9Set);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -193,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2565.Lq9Set) };
+  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2568.Lq9Set) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

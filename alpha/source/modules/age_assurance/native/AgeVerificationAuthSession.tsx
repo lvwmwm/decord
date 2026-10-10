@@ -1,14 +1,14 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 7531
+// Function ID: 7532
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 3, 570, 5054, 1382, 558, 576, 2]
+// Dependencies: [5, 3, 570, 5055, 1382, 558, 576, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession
 
-// Module 7528 (AgeVerificationAuthSession)
+// Module 7531 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import react_nativeDefault from "react-native" /* 5054 */;
+import react_nativeDefault from "react-native" /* 5055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -60,7 +60,7 @@ let obj = function _openAgeVerificationAuthSession() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

@@ -1,13 +1,14 @@
-// Module ID: 7168
-// Function ID: 7169
+// Module ID: 7174
+// Function ID: 7175
 // Name: ReferralTrialStore
-// Dependencies: [1390, 1085, 7169, 584, 1101, 504, 2]
+// Dependencies: [1390, 1085, 7175, 1101, 504, 584, 2]
 
-// Module 7168 (ReferralTrialStore)
+// Module 7174 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7169 */;
+import MessageTypes from "MessageTypes" /* 1101 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7175 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -18,42 +19,40 @@ function handleLoadMessages(messages) {
   messages = messages.messages;
   const item = messages.forEach((type) => {
     let content = null;
-    const tmp = closure_2;
-    if (type.type === content(closure_2[4]).MessageTypes.PREMIUM_REFERRAL) {
+    const tmp = require;
+    const tmp2 = dependencyMap;
+    if (type.type === MessageTypes.MessageTypes.PREMIUM_REFERRAL) {
       content = type.content;
     }
     if (null != content) {
       const hasItem = set2.has(content) || set.has(content);
       if (!hasItem) {
         set.add(content);
-        let obj = closure_1(tmp[3]);
-        obj.wait(() => {
-          const obj = ReferralTrialActionCreators;
-          const referralTrialOffer = obj.resolveReferralTrialOffer(content);
-          return referralTrialOffer.catch(NOOP_NULL);
-        });
+        const tmpResult = tmp(tmp2[2]);
+        const referralTrialOffer = tmpResult.resolveReferralTrialOffer(content);
+        referralTrialOffer.catch(NOOP_NULL);
       }
     }
     return false;
   });
 }
 const NOOP_NULL = Constants.NOOP_NULL;
-let c5 = null;
+let c4 = null;
 let set = new Set();
 let map = new Map();
 let recipient_status = map;
-let c8 = false;
+let c7 = false;
 const set1 = new Set();
 const set2 = new Set();
 const map1 = new Map();
 map = map1;
-let c12 = 0;
-let c13 = null;
-let closure_14 = [];
-let c15 = false;
-let c16 = 0;
+let c11 = 0;
+let c12 = null;
+let closure_13 = [];
+let c14 = false;
+let c15 = 0;
+let c16 = false;
 let c17 = false;
-let c18 = false;
 let refresh_at = null;
 let reminder_state_id = null;
 const Store = get_initializedDefault.Store;
@@ -64,9 +63,9 @@ class ReferralTrialStore extends Store {
     this.syncWith(items, emitChanges);
   }
   checkAndFetchReferralsRemaining() {
-    let tmp = null == c5 && !c8 && c12 < 6;
+    let tmp = null == c4 && !c7 && c11 < 6;
     if (tmp) {
-      let tmp5 = null == c13;
+      let tmp5 = null == c12;
       if (!tmp5) {
         const _Date = Date;
         tmp5 = tmp4 < Date.now();
@@ -91,14 +90,14 @@ class ReferralTrialStore extends Store {
       const self = this;
       const result = this.checkAndFetchReferralsRemaining();
     }
-    return c5;
+    return c4;
   }
   getSentUserIds() {
     const result = this.checkAndFetchReferralsRemaining();
     return Array.from(set.values());
   }
   isFetchingReferralsRemaining() {
-    return c8;
+    return c7;
   }
   getRelevantUserTrialOffer(referralTrialOfferId) {
     return map.get(referralTrialOfferId);
@@ -107,19 +106,19 @@ class ReferralTrialStore extends Store {
     return set1.has(arg0);
   }
   getEligibleUsers() {
-    return closure_14;
+    return closure_13;
   }
   getFetchingEligibleUsers() {
-    return c15;
+    return c14;
   }
   getNextIndexOfEligibleUsers() {
-    return c16;
+    return c15;
   }
   getIsEligibleToSendReferrals() {
-    return c17;
+    return c16;
   }
   getHasEligibleFriends() {
-    return c18;
+    return c17;
   }
   getRefreshAt() {
     return refresh_at;
@@ -139,19 +138,16 @@ ReferralTrialStore.displayName = "ReferralTrialStore";
 let obj = {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function handleReferralTrialOfferUpdate(userTrialOfferId) {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
-    const tmp = c8;
+    const tmp = c7;
     if (!tmp) {
-      let obj = userTrialOfferId(7169);
+      const obj = ReferralTrialActionCreators;
       const referralsRemaining = obj.fetchReferralsRemaining();
     }
     if (!set1.has(userTrialOfferId)) {
       set1.add(userTrialOfferId);
-      const obj2 = DispatcherDefault;
-      obj2.wait(() => {
-        const obj = ReferralTrialActionCreators;
-        const referralTrialOffer = obj.resolveReferralTrialOffer(userTrialOfferId);
-        return referralTrialOffer.catch(NOOP_NULL);
-      });
+      const obj2 = ReferralTrialActionCreators;
+      const referralTrialOffer = obj2.resolveReferralTrialOffer(userTrialOfferId);
+      referralTrialOffer.catch(NOOP_NULL);
     }
   },
   BILLING_REFERRALS_REMAINING_FETCH_START: function handleReferralsRemainingFetchStart(arg0) {
@@ -159,41 +155,41 @@ let obj = {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
       refresh_at = null;
-      c8 = true;
+      c7 = true;
     }
   },
   BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: function handleReferralsRemainingFetchSuccess(has_eligible_friends) {
-    c17 = true;
+    c16 = true;
     has_eligible_friends = has_eligible_friends.has_eligible_friends;
-    c8 = false;
+    c7 = false;
     const referrals_remaining = has_eligible_friends.referrals_remaining;
     ({ refresh_at, recipient_status, reminder_state_id } = has_eligible_friends);
     set = new Set(has_eligible_friends.sent_user_ids);
-    c12 = 0;
-    c13 = null;
+    c11 = 0;
+    c12 = null;
   },
   BILLING_REFERRALS_REMAINING_FETCH_FAIL: function handleReferralsRemainingFetchFail(arg0) {
     if (arg0 == null) {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
       let result;
+      c16 = false;
       c17 = false;
-      c18 = false;
       refresh_at = null;
-      c8 = false;
-      const sum = c12 + 1;
-      c12 = sum;
+      c7 = false;
+      const sum = c11 + 1;
+      c11 = sum;
       if (sum <= 3) {
         const _Math2 = Math;
-        result = 1000 * Math.pow(2, c12);
+        result = 1000 * Math.pow(2, c11);
       } else {
         const _Math = Math;
-        result = 8000 * Math.pow(4, c12 - 3);
+        result = 8000 * Math.pow(4, c11 - 3);
       }
       const _Date = Date;
       const _Math3 = Math;
       const timestamp = Date.now();
-      c13 = timestamp + Math.min(300000, result);
+      c12 = timestamp + Math.min(300000, result);
     }
   },
   BILLING_CREATE_REFERRAL_SUCCESS: function handleCreateReferralSuccess(userTrialOffer) {
@@ -227,50 +223,47 @@ let obj = {
     set2.add(userTrialOfferId);
   },
   REFERRALS_FETCH_ELIGIBLE_USER_START: function handleReferralsFetchEligibleUsersStart() {
-    c15 = true;
+    c14 = true;
   },
   REFERRALS_FETCH_ELIGIBLE_USER_SUCCESS: function handleReferralsFetchEligibleUsersSuccess(arg0) {
-    c15 = false;
-    ({ users: closure_14, nextIndex: c16 } = arg0);
+    c14 = false;
+    ({ users: closure_13, nextIndex: c15 } = arg0);
   },
   REFERRALS_FETCH_ELIGIBLE_USER_FAIL: function handleReferralsFetchEligibleUsersFail() {
-    c15 = false;
+    c14 = false;
   },
   LOAD_MESSAGES_SUCCESS: handleLoadMessages,
   MESSAGE_CREATE: function handleMessage(message) {
     message = message.message;
     let content = null;
-    if (message.type === content(1101).MessageTypes.PREMIUM_REFERRAL) {
+    if (message.type === MessageTypes.MessageTypes.PREMIUM_REFERRAL) {
       content = message.content;
     }
     if (null != content) {
       const hasItem = set2.has(content) || set1.has(content);
       if (!hasItem) {
         set1.add(content);
-        const obj = DispatcherDefault;
-        obj.wait(() => {
-          const obj = ReferralTrialActionCreators;
-          const referralTrialOffer = obj.resolveReferralTrialOffer(content);
-          return referralTrialOffer.catch(NOOP_NULL);
-        });
+        const tmpResult = ReferralTrialActionCreators;
+        const referralTrialOffer = tmpResult.resolveReferralTrialOffer(content);
+        referralTrialOffer.catch(NOOP_NULL);
       }
     }
   },
   LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
   LOGOUT: function handleReset() {
-    c5 = null;
+    c4 = null;
     new Set();
-    c8 = false;
+    c7 = false;
     new Set();
     new Set();
     new Map();
-    c12 = 0;
-    c13 = null;
-    closure_14 = [];
-    c15 = false;
-    c16 = 0;
+    c11 = 0;
+    c12 = null;
+    closure_13 = [];
+    c14 = false;
+    c15 = 0;
+    c16 = false;
     c17 = false;
-    c18 = false;
     refresh_at = null;
     recipient_status = new Map();
     reminder_state_id = null;

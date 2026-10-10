@@ -1,22 +1,22 @@
-// Module ID: 16511
-// Function ID: 16512
+// Module ID: 16581
+// Function ID: 16582
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 5080, 4968, 4969, 2061, 21, 5091, 587, 558, 576, 4972, 504, 12210, 16512, 8011, 5966, 1126, 2597, 12213, 9413, 2]
+// Dependencies: [19, 5081, 5007, 5008, 2062, 21, 5092, 587, 558, 576, 5011, 504, 12254, 16582, 8029, 5959, 1126, 2600, 12257, 9442, 2]
 
-// Module 16511 (GuildThemeMemberCoachmark)
+// Module 16581 (GuildThemeMemberCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import _modDef2597 from "module_2597" /* 2597 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4969 */;
-import Powerups from "Powerups" /* 4972 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 5966 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12213 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import _modDef2600 from "module_2600" /* 2600 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
+import Powerups from "Powerups" /* 5011 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 5959 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12257 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5080 */;
-import GuildPowerupsStore_mod from "GuildPowerupsStore" /* 4968 */;
-import createStyles from "createStyles" /* 5091 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
+import GuildPowerupsStore_mod from "GuildPowerupsStore" /* 5007 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
       }
     }
     AccessibilityStore = guildPowerupBannerImage;
-    const diff = closure_6 - markAsDismissed(8011)(guildId).available;
+    const diff = closure_6 - markAsDismissed(8029)(guildId).available;
     GuildPowerupsStore = diff;
     if (cResult[9] !== markAsDismissed) {
       class D {
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
     cResult[13] = markAsDismissed;
     cResult[14] = U;
   }
-  const tmpResult4 = guildId(12210);
+  const tmpResult4 = guildId(12254);
   guildPowerupBannerImage = tmpResult4.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
     class D {
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    guildPowerupBannerImage = markAsDismissed(16512);
+    guildPowerupBannerImage = markAsDismissed(16582);
   }
   cResult[6] = stateFromStores;
   cResult[7] = stateFromStores1;
@@ -209,12 +209,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
   const items2 = [guildPowerupBannerImage];
   const obj2 = guildId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => guildPowerupBannerImage.useReducedMotion);
-  const obj3 = guildId(12210);
+  const obj3 = guildId(12254);
   guildPowerupBannerImage = obj3.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    guildPowerupBannerImage = markAsDismissed(16512);
+    guildPowerupBannerImage = markAsDismissed(16582);
   }
-  const diff = onDismiss - markAsDismissed(8011)(guildId).available;
+  const diff = onDismiss - markAsDismissed(8029)(guildId).available;
   c5 = diff;
   const items3 = [markAsDismissed];
   onDismiss = stateFromStores1.useCallback(() => {
@@ -236,8 +236,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
     let intl2;
     let intl3;
     const obj = {
-      title: intl.string(_modDef2597.RK6NbY),
-      description: intl2.string(_modDef2597.xlAqGk),
+      title: intl.string(_modDef2600.RK6NbY),
+      description: intl2.string(_modDef2600.xlAqGk),
       visible: true,
       position: "bottom",
       offsetY: 8,
@@ -254,7 +254,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMe
     intl3 = intl4.intl;
     return obj;
   }, items5);
-  const tmp2Result = tmp2(9413);
+  const tmp2Result = tmp2(9442);
   const coachmark = tmp2Result.useCoachmark(targetRef, memo);
   return null;
 });

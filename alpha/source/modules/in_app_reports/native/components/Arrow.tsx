@@ -1,16 +1,16 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7731
+// Function ID: 7732
 // Name: Arrow
-// Dependencies: [19, 21, 5091, 587, 558, 576, 1200, 7714, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 1200, 7732, 2]
 
-// Module 7713 (Arrow)
+// Module 7731 (Arrow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7714 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7732 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

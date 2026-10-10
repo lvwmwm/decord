@@ -1,18 +1,18 @@
-// Module ID: 18098
-// Function ID: 18099
+// Module ID: 18172
+// Function ID: 18173
 // Name: ProximitySensorManager
-// Dependencies: [17, 2063, 5894, 5109, 5131, 1382, 18099, 5132, 6804, 2]
+// Dependencies: [17, 2064, 5897, 5110, 5132, 1382, 18173, 5133, 6807, 2]
 
-// Module 18098 (ProximitySensorManager)
+// Module 18172 (ProximitySensorManager)
 import react_native from "react-native" /* 17 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 5132 */;
-import react_nativeDefault from "react-native" /* 18099 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import AudioRouteStore from "AudioRouteStore" /* 5131 */;
+import VoiceCallTypes from "VoiceCallTypes" /* 5133 */;
+import react_nativeDefault from "react-native" /* 18173 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import AudioRouteStore from "AudioRouteStore" /* 5132 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let map;

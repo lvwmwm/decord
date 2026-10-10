@@ -1,24 +1,24 @@
-// Module ID: 7248
-// Function ID: 7249
+// Module ID: 7254
+// Function ID: 7255
 // Name: NewChannelsStore
-// Dependencies: [1244, 502, 2064, 4707, 2124, 2086, 6042, 5973, 1085, 1102, 6070, 584, 6796, 11, 504, 5950, 2]
+// Dependencies: [1244, 502, 2065, 4748, 2125, 2087, 6035, 5966, 1085, 1102, 6063, 6799, 11, 504, 5943, 584, 2]
 
-// Module 7248 (NewChannelsStore)
+// Module 7254 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4707 */;
-import NSFWContentGate from "NSFWContentGate" /* 5950 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6070 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6796 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
+import NSFWContentGate from "NSFWContentGate" /* 5943 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6063 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6799 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import ReadStateStore from "ReadStateStore" /* 6042 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,6 @@ function seedCommunityBaseline() {
   return false;
 }
 function maybeAckViewedChannel(guildId, channelId) {
-  let closure_0 = channelId;
-  let obj = closure_16[guildId];
   let tmp = null != obj && null != channelId && obj.has(channelId);
   if (tmp) {
     const guild = GuildStore.getGuild(guildId);
@@ -78,14 +76,10 @@ function maybeAckViewedChannel(guildId, channelId) {
     tmp = 0 === ReadStateStore.getMentionCount(channelId);
   }
   if (tmp) {
-    const obj3 = DispatcherDefault;
-    obj3.wait(() => {
-      const ack = ReadStateActionCreators.ack;
-      const obj = { object: constants.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: map1.ACK_AUTOMATIC };
-      ReadStateActionCreators;
-      const obj2 = SnowflakeUtilsDefault;
-      return ack(channelId, obj, true, true, obj2.atPreviousMillisecond(channelId));
-    });
+    const ack = ReadStateActionCreators.ack;
+    const obj2 = { object: constants.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: map1.ACK_AUTOMATIC };
+    const obj4 = SnowflakeUtilsDefault;
+    ack(channelId, obj2, true, true, obj4.atPreviousMillisecond(channelId));
   }
 }
 function initializeNewChannels(guildId) {
@@ -148,17 +142,17 @@ function pruneNewChannels() {
   const obj = SnowflakeUtilsDefault;
   const keys = obj.keys(closure_16);
   const item = keys.forEach((item) => {
-    const f139856 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
+    const f140281 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
     let closure_0 = item;
     const items = [...closure_16[item]];
-    closure_16[item] = new Set(items.filter(f139856));
-    new Set(items.filter(f139856));
+    closure_16[item] = new Set(items.filter(f140281));
+    new Set(items.filter(f140281));
   });
 }
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 ({ AnalyticsObjects: closure_12, AnalyticsObjectTypes: map1, GuildFeatures: closure_14 } = Constants);
 let set = new Set();
-const authStore5 = {};
+const authStore4 = {};
 let closure_17 = {};
 let set1 = new Set();
 const Store = get_initializedDefault.Store;

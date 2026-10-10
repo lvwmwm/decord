@@ -1,14 +1,14 @@
-// Module ID: 9080
-// Function ID: 9081
+// Module ID: 9100
+// Function ID: 9101
 // Name: NintendoSwitchNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9081, 4778, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9101, 4817, 2]
 
-// Module 9080 (NintendoSwitchNeutralIcon)
+// Module 9100 (NintendoSwitchNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4778 */;
-import AssetRegistry from "AssetRegistry" /* 9081 */;
+import BaseIconImage2 from "BaseIconImage" /* 4817 */;
+import AssetRegistry from "AssetRegistry" /* 9101 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NintendoSw
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4778).BaseIconImage;
+  const BaseIconImage = tmp(4817).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

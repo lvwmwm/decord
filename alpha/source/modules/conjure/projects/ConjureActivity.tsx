@@ -1,10 +1,10 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 12340
+// Function ID: 12341
 // Name: ConjureActivity
 // Dependencies: [2]
 // Exports: conjureActivity, conjureProjectGuildId, sortConjureProjects
 
-// Module 12296 (ConjureActivity)
+// Module 12340 (ConjureActivity)
 import size from "module_2" /* 2 */;
 
 let closure_0 = { building: 0, done: 1, idle: 2 };

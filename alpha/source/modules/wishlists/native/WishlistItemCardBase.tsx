@@ -1,21 +1,21 @@
-// Module ID: 8957
-// Function ID: 8958
+// Module ID: 8976
+// Function ID: 8977
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 587, 5091, 558, 576, 4768, 8958, 4788, 8348, 4779, 8960, 1126, 1388, 8829, 8206, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 4809, 8977, 4827, 8364, 4818, 8979, 1126, 1388, 8848, 8222, 2]
 
-// Module 8957 (WishlistItemCardBase)
+// Module 8976 (WishlistItemCardBase)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import useToken from "useToken" /* 4779 */;
-import native from "native" /* 4788 */;
-import useUserProfileColors from "useUserProfileColors" /* 8348 */;
-import useWishlistHooks from "useWishlistHooks" /* 8960 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import useToken from "useToken" /* 4818 */;
+import native from "native" /* 4827 */;
+import useUserProfileColors from "useUserProfileColors" /* 8364 */;
+import useWishlistHooks from "useWishlistHooks" /* 8979 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -55,8 +55,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceI
   if (cResult[0] !== toastText) {
     function onPress() {
       const obj = ToastActionCreatorsDefault;
-      const obj2 = { key: "WISHLIST_SOURCE_ICON", content: toastText };
-      obj.open(obj2);
+      const obj2 = { text: toastText };
+      obj.open("WISHLIST_SOURCE_ICON", obj2);
     }
     cResult[0] = toastText;
     cResult[1] = onPress;
@@ -66,7 +66,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceI
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-    const HeartIcon = tmp(8958).HeartIcon;
+    const HeartIcon = tmp(8977).HeartIcon;
     const tmp9 = closure_5(HeartIcon, obj2);
     cResult[2] = tmp9;
     tmp6 = tmp9;
@@ -94,8 +94,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceI
     style: closure_8().sourceIcon,
     onPress() {
       const obj = ToastActionCreatorsDefault;
-      const obj2 = { key: "WISHLIST_SOURCE_ICON", content: toastText };
-      obj.open(obj2);
+      const obj2 = { text: toastText };
+      obj.open("WISHLIST_SOURCE_ICON", obj2);
     },
     accessible: false,
     accessibilityElementsHidden: true,
@@ -103,7 +103,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceI
     children: closure_5(HeartIcon, obj2)
   };
   obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  HeartIcon = toastText(8958).HeartIcon;
+  HeartIcon = toastText(8977).HeartIcon;
   return closure_5(closure_3, obj);
 });
 let obj6 = { OWNED: "owned", LOCKED: "locked" };
@@ -324,7 +324,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
                       if (tmp35) {
                         const obj10 = { style: tmp4.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj11) };
                         obj11 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-                        LockIcon = tmp(8206).LockIcon;
+                        LockIcon = tmp(8222).LockIcon;
                         tmp35 = hasOwnProperty(React3, obj10);
                       }
                       cResult[29] = overlay;
@@ -336,7 +336,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
                     if (tmp31) {
                       const obj12 = { style: tmp4.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj13) };
                       obj13 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-                      CheckmarkLargeBoldIcon = tmp(8829).CheckmarkLargeBoldIcon;
+                      CheckmarkLargeBoldIcon = tmp(8848).CheckmarkLargeBoldIcon;
                       tmp31 = hasOwnProperty(React3, obj12);
                     }
                     cResult[26] = overlay;
@@ -450,7 +450,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
     obj5 = { width: size, aspectRatio: 1 };
   }
   items[2] = obj5;
-  const WISHLIST = tmp2(8960).WishlistItemSource.WISHLIST;
+  const WISHLIST = tmp2(8979).WishlistItemSource.WISHLIST;
   const intl = tmp2(1126).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl4.t.p3RmJF, { username: recipientName });
   const items1 = [accessibilityLabel, , ];
@@ -487,7 +487,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
   if (tmp15Result) {
     const obj7 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj8) };
     obj8 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-    CheckmarkLargeBoldIcon = tmp2(8829).CheckmarkLargeBoldIcon;
+    CheckmarkLargeBoldIcon = tmp2(8848).CheckmarkLargeBoldIcon;
     tmp15Result = tmp15(tmp16, obj7);
   }
   items3[1] = tmp15Result;
@@ -495,7 +495,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
   if (tmp15Result3) {
     const obj9 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj10) };
     obj10 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-    LockIcon = tmp2(8206).LockIcon;
+    LockIcon = tmp2(8222).LockIcon;
     tmp15Result3 = tmp15(tmp16, obj9);
   }
   items3[2] = tmp15Result3;

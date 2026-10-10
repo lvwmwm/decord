@@ -1,13 +1,13 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 10799
+// Function ID: 10800
 // Name: getShouldShowAppAuthPrompt
-// Dependencies: [6793, 6853, 6856, 2]
+// Dependencies: [6796, 6856, 6859, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 10764 (getShouldShowAppAuthPrompt)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6793 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 6853 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6856 */;
+// Module 10799 (getShouldShowAppAuthPrompt)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6796 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 6856 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6859 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;

@@ -1,13 +1,13 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9070
+// Function ID: 9071
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5070, 4750, 4743, 6938, 9052, 1126, 9054, 2]
+// Dependencies: [5, 32, 19, 5071, 4791, 4784, 6944, 9071, 1126, 9073, 2]
 // Exports: useOrderSigning
 
-// Module 9051 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4743 */;
-import BillingErrorDefault from "BillingError" /* 4750 */;
-import PaymentConstants from "PaymentConstants" /* 5070 */;
+// Module 9070 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4784 */;
+import BillingErrorDefault from "BillingError" /* 4791 */;
+import PaymentConstants from "PaymentConstants" /* 5071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,13 +49,13 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4750)(error);
+      tmp3 = new tmp(4791)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4743).captureBillingException;
+      const captureBillingException = tmp5(4784).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4750)(arg2);
+      tmp3 = new tmp(4791)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -94,7 +94,7 @@ export const useOrderSigning = function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c4;

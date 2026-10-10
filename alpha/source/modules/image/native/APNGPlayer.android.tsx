@@ -1,9 +1,9 @@
-// Module ID: 8992
-// Function ID: 8993
+// Module ID: 9011
+// Function ID: 9012
 // Name: APNGPlayer
-// Dependencies: [109, 19, 21, 558, 576, 8993, 2]
+// Dependencies: [109, 19, 21, 558, 576, 9012, 2]
 
-// Module 8992 (APNGPlayer)
+// Module 9011 (APNGPlayer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -275,7 +275,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function APNGPlayer
     }
     return tmp15;
   }
-  ref1(8993);
+  ref1(9012);
   const merged = Object.assign(tmp4);
   tmp15 = <tmp13 ref={ref1} onLoad={tmp10} />;
   cResult[7] = tmp10;
@@ -320,7 +320,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function APNGPlayer
       }
     }
   }));
-  ref1(8993);
+  ref1(9012);
   const merged1 = Object.assign(merged);
   return <tmp5 ref={ref1} onLoad={callback} />;
 });

@@ -1,100 +1,54 @@
 // Module ID: 6331
 // Function ID: 6332
-// Dependencies: [6332, 1656, 6322]
-// Exports: useScrollHandler
+// Dependencies: [19, 6314, 6323]
+// Exports: useScrollableSetter
 
 // Module 6331
-import _mod1656 from "module_1656" /* 1656 */;
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6323 */;
+import react from "react" /* 19 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let __initData = { code: "function pnpm_useScrollHandlerTs1(event,context){const{handleOnScroll,onScroll,runOnJS}=this.__closure;handleOnScroll(event,context);if(onScroll){runOnJS(onScroll)({nativeEvent:event});}}" };
-let closure_3 = { code: "function pnpm_useScrollHandlerTs2(event,context){const{handleOnBeginDrag,onScrollBeginDrag,runOnJS}=this.__closure;handleOnBeginDrag(event,context);if(onScrollBeginDrag){runOnJS(onScrollBeginDrag)({nativeEvent:event});}}" };
-let closure_4 = { code: "function pnpm_useScrollHandlerTs3(event,context){const{handleOnEndDrag,onScrollEndDrag,runOnJS}=this.__closure;handleOnEndDrag(event,context);if(onScrollEndDrag){runOnJS(onScrollEndDrag)({nativeEvent:event});}}" };
+let c2;
+let c3;
+({ useCallback: c2, useEffect: c3 } = react);
 
-export const useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndDrag) => {
-  let fn;
-  let fn2;
-  let items;
-  let obj4;
-  let useAnimatedScrollHandler;
-  let useScrollEventsHandlersDefault = arg0;
-  if (arg0 === undefined) {
-    const tmp2 = dependencyMap;
-    useScrollEventsHandlersDefault = require("module_6332").useScrollEventsHandlersDefault;
+export const useScrollableSetter = (arg0, value, arg2, value3) => {
+  let ref;
+  _require = arg0;
+  dependencyMap = value;
+  const value2 = arg2;
+  let tmp = arg4;
+  if (arg4 === undefined) {
+    tmp = value3;
   }
-  _require = onScroll;
-  dependencyMap = onScrollBeginDrag;
-  __initData = onScrollEndDrag;
-  let workletNoop2;
-  let workletNoop3;
-  let obj = require("module_1656");
-  const animatedRef = obj.useAnimatedRef();
-  let obj2 = require("module_1656");
-  const sharedValue = obj2.useSharedValue(0);
-  const scrollEventsHandlersDefault = useScrollEventsHandlersDefault(animatedRef, sharedValue, arg4);
-  let workletNoop = scrollEventsHandlersDefault.handleOnScroll;
-  if (undefined === workletNoop) {
-    workletNoop = tmp3(6322).workletNoop;
-  }
-  workletNoop2 = scrollEventsHandlersDefault.handleOnBeginDrag;
-  if (undefined === workletNoop2) {
-    workletNoop2 = tmp3(6322).workletNoop;
-  }
-  workletNoop3 = scrollEventsHandlersDefault.handleOnEndDrag;
-  if (undefined === workletNoop3) {
-    workletNoop3 = tmp3(6322).workletNoop;
-  }
-  let workletNoop4 = scrollEventsHandlersDefault.handleOnMomentumEnd;
-  if (undefined === workletNoop4) {
-    workletNoop4 = tmp3(6322).workletNoop;
-  }
-  let workletNoop5 = scrollEventsHandlersDefault.handleOnMomentumBegin;
-  if (undefined === workletNoop5) {
-    workletNoop5 = tmp3(6322).workletNoop;
-  }
-  const obj3 = { scrollHandler: useAnimatedScrollHandler(obj4, items), scrollableRef: animatedRef, scrollableContentOffsetY: sharedValue };
-  obj4 = { onScroll: fn, onBeginDrag: fn2, onEndDrag: O, onMomentumBegin: workletNoop5, onMomentumEnd: workletNoop4 };
-  fn = function v(nativeEvent, arg1) {
-    workletNoop(nativeEvent, arg1);
-    if (onScroll) {
-      const obj2 = { nativeEvent };
-      const obj = _mod1656;
-      obj.runOnJS(tmp2)(obj2);
+  let obj = require("react");
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  const animatedScrollableType = bottomSheetInternal.animatedScrollableType;
+  const animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  const isContentHeightFixed = bottomSheetInternal.isContentHeightFixed;
+  const isScrollableRefreshable = bottomSheetInternal.isScrollableRefreshable;
+  const setScrollableRef = bottomSheetInternal.setScrollableRef;
+  const removeScrollableRef = bottomSheetInternal.removeScrollableRef;
+  const items = [arg0, value, value3, animatedScrollableType, animatedScrollableContentOffsetY, arg2, isScrollableRefreshable, isContentHeightFixed, setScrollableRef, removeScrollableRef];
+  tmp(value2(() => {
+    animatedScrollableContentOffsetY.value = value2.value;
+    animatedScrollableType.value = value;
+    isScrollableRefreshable.value = value3;
+    isContentHeightFixed.value = false;
+    const obj = normalizeSnapPoint;
+    const findNodeHandleResult = obj.findNodeHandle(ref.current);
+    const tmp = ref;
+    if (findNodeHandleResult) {
+      const obj2 = { id: findNodeHandleResult, node: tmp };
+      setScrollableRef(obj2);
+    } else {
+      const _console = console;
+      console.warn("Couldn't find the scrollable node handle id!");
     }
-  };
-  useAnimatedScrollHandler = require("module_1656").useAnimatedScrollHandler;
-  fn.__closure = { handleOnScroll: workletNoop, onScroll, runOnJS: require("module_1656").runOnJS };
-  fn.__workletHash = 13105350120634;
-  fn.__initData = __initData;
-  fn2 = function _(nativeEvent, arg1) {
-    workletNoop2(nativeEvent, arg1);
-    if (onScrollBeginDrag) {
-      const obj2 = { nativeEvent };
-      const obj = _mod1656;
-      obj.runOnJS(tmp2)(obj2);
-    }
-  };
-  ({ handleOnScroll: workletNoop, onScroll, runOnJS: require("module_1656").runOnJS });
-  fn2.__closure = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("module_1656").runOnJS };
-  fn2.__workletHash = 803385440782;
-  fn2.__initData = workletNoop;
-  ({ handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("module_1656").runOnJS });
-  class O {
-    constructor(nativeEvent, arg1) {
-      workletNoop3(nativeEvent, arg1);
-      if (onScrollEndDrag) {
-        const obj2 = { nativeEvent };
-        const obj = _mod1656;
-        obj.runOnJS(tmp2)(obj2);
-      }
-    }
-  }
-  O.__closure = { handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: require("module_1656").runOnJS };
-  O.__workletHash = 3274737678599;
-  O.__initData = workletNoop2;
-  items = [workletNoop, workletNoop2, workletNoop3, workletNoop5, workletNoop4, onScroll, onScrollBeginDrag, onScrollEndDrag];
-  ({ handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: require("module_1656").runOnJS });
-  return obj3;
+    return () => {
+      removeScrollableRef(ref);
+    };
+  }, items));
 };

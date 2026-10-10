@@ -1,12 +1,12 @@
-// Module ID: 7002
-// Function ID: 7003
+// Module ID: 7008
+// Function ID: 7009
 // Name: useGame
-// Dependencies: [5, 19, 2020, 1085, 504, 1102, 7003, 558, 576, 2]
+// Dependencies: [5, 19, 2020, 1085, 504, 1102, 7009, 558, 576, 2]
 
-// Module 7002 (useGame)
+// Module 7008 (useGame)
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GameActionCreators from "GameActionCreators" /* 7003 */;
+import GameActionCreators from "GameActionCreators" /* 7009 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2020 */;
@@ -73,7 +73,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {
@@ -103,7 +103,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

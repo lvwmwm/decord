@@ -1,14 +1,14 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14107
+// Function ID: 14108
 // Name: ShareUtils
-// Dependencies: [5, 7237, 5084, 4768, 5012, 9235, 7900, 7740, 7738, 7363, 9223, 7172, 2]
+// Dependencies: [5, 7243, 5085, 4809, 5046, 9262, 7918, 7758, 7756, 7369, 9250, 7178, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 14052 (ShareUtils)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5012 */;
-import MessageConstants from "MessageConstants" /* 5084 */;
-import DraftStore from "DraftStore" /* 7237 */;
+// Module 14107 (ShareUtils)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import DraftStore from "DraftStore" /* 7243 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _sendShareMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -141,9 +141,11 @@ let size = size_mod;
 const result = size.fileFinishedImporting("modules/share/native/ShareUtils.tsx");
 
 export const showInformationToast = function showInformationToast(intl3) {
-  obj = ToastActionCreatorsDefault;
-  const obj2 = { key: "INFORMATION_TOAST-" + intl3, content: intl3, icon: AssetRegistryDefault };
-  obj.open(obj2);
+  const open = ToastActionCreatorsDefault.open;
+  obj = { text: intl3, icon: CircleInformationIcon.CircleInformationIcon };
+  ToastActionCreatorsDefault;
+  const combined = "INFORMATION_TOAST-" + intl3;
+  open(combined, obj);
 };
 export const sendShareMessage = function sendShareMessage() {
   return obj(...arguments);

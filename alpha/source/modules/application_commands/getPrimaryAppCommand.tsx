@@ -1,19 +1,19 @@
-// Module ID: 10785
-// Function ID: 10786
+// Module ID: 10859
+// Function ID: 10860
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 2064, 9220, 1998, 9226, 558, 576, 9224, 9207, 2]
+// Dependencies: [5, 19, 2065, 9247, 1998, 9253, 558, 576, 9251, 9234, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM
 
-// Module 10785 (getPrimaryAppCommand)
+// Module 10859 (getPrimaryAppCommand)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 1998 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9207 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9224 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9226 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9234 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9251 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9253 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9220 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9247 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = function _getPrimaryAppCommand() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -218,7 +218,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrimary
         let hasItem = null != tmp4.integration_types;
         if (hasItem) {
           const integration_types = tmp4.integration_types;
-          hasItem = integration_types.includes(tmp(9207).ApplicationIntegrationType.USER_INSTALL);
+          hasItem = integration_types.includes(tmp(9234).ApplicationIntegrationType.USER_INSTALL);
         }
         let hasItem1 = null != tmp4.contexts;
         if (hasItem1) {

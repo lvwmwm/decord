@@ -1,48 +1,48 @@
-// Module ID: 17423
-// Function ID: 17424
+// Module ID: 17495
+// Function ID: 17496
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 2056, 5756, 7314, 8291, 6898, 2061, 14761, 21, 558, 576, 9145, 16735, 1382, 8365, 8351, 13160, 13161, 13177, 13306, 4779, 587, 8298, 2049, 9694, 6160, 1126, 5376, 13063, 17424, 17429, 17420, 14791, 10537, 17430, 13135, 11593, 7093, 13138, 10497, 13139, 1504, 8294, 10478, 8352, 504, 8337, 8348, 12991, 17431, 13304, 13162, 13316, 13317, 13318, 10485, 17432, 13321, 15984, 13065, 10578, 8567, 13324, 17434, 13122, 13329, 13334, 8513, 10479, 8634, 12313, 10566, 4811, 6842, 2]
+// Dependencies: [32, 19, 17, 2057, 5759, 7320, 8307, 6904, 2062, 14816, 21, 558, 576, 9166, 16805, 1382, 8381, 8367, 13209, 13210, 13227, 13356, 4818, 587, 8314, 2049, 9723, 6153, 1126, 5379, 13110, 17496, 17501, 17492, 14847, 10571, 17502, 13184, 11639, 7099, 13187, 10531, 13188, 1504, 8310, 10512, 8368, 504, 8353, 8364, 13038, 17503, 13354, 13211, 13366, 13367, 13368, 10519, 17504, 13371, 16046, 13112, 10612, 8583, 13374, 17506, 13171, 13379, 13384, 8529, 10513, 8650, 12357, 10600, 4850, 6845, 2]
 
-// Module 17423 (YouScreenUserProfileContent)
+// Module 17495 (YouScreenUserProfileContent)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2056 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import Constants from "Constants" /* 6898 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7093 */;
-import Constants2 from "Constants" /* 8291 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8351 */;
-import UserProfileAvatarDefault from "UserProfileAvatar" /* 8365 */;
-import FormDividerDefault from "FormDivider" /* 8567 */;
-import tracking_Tracking from "tracking/Tracking" /* 9145 */;
-import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 10485 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 10497 */;
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10537 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10578 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11593 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 13065 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 13122 */;
-import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 13135 */;
-import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 13138 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 13160 */;
-import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 13161 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 13177 */;
-import UserProfileConnections from "UserProfileConnections" /* 13324 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 13329 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 13334 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 14761 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 14791 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 15984 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16735 */;
-import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 17430 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 17432 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 17434 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2057 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import Constants from "Constants" /* 6904 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7099 */;
+import Constants2 from "Constants" /* 8307 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8367 */;
+import UserProfileAvatarDefault from "UserProfileAvatar" /* 8381 */;
+import FormDividerDefault from "FormDivider" /* 8583 */;
+import tracking_Tracking from "tracking/Tracking" /* 9166 */;
+import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 10519 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 10531 */;
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10571 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 10612 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 11639 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 13112 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 13171 */;
+import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 13184 */;
+import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 13187 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 13209 */;
+import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 13210 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 13227 */;
+import UserProfileConnections from "UserProfileConnections" /* 13374 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 13379 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 13384 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 14816 */;
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 14847 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 16046 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 16805 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 17502 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 17504 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 17506 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelfPresenceStore_mod from "SelfPresenceStore" /* 5756 */;
-import UserProfileStore from "UserProfileStore" /* 7314 */;
+import SelfPresenceStore_mod from "SelfPresenceStore" /* 5759 */;
+import UserProfileStore from "UserProfileStore" /* 7320 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -59,7 +59,7 @@ let metroRequire;
 let tmp;
 let tmp3;
 const PlatformUtils = tmp(1382);
-const UserProfileActivityTabDefault = tmp3(13306);
+const UserProfileActivityTabDefault = tmp3(13356);
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const useIsContentShown = DismissibleContentShownStateStore.useIsContentShown;
@@ -100,7 +100,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouAva
     let obj2 = { onPress: first, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: tmp5, accessible: !tmp5 && undefined };
     const tmp10 = UserProfileAvatarDefault;
     const merged = Object.assign(arg0);
-    const tmp8Result = authStore3(tmp10, obj2);
+    const tmp8Result = syncedClientThemes(tmp10, obj2);
     cResult[2] = arg0;
     cResult[3] = tmp8Result;
     tmp7 = tmp8Result;
@@ -120,7 +120,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouAva
   let obj2 = { onPress: callback, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: isAndroidResult, accessible: !isAndroidResult && undefined };
   const tmp4 = UserProfileAvatarDefault;
   const merged = Object.assign(arg0);
-  return authStore3(tmp4, obj2);
+  return syncedClientThemes(tmp4, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouScreenCardStyle(backgroundColor, borderColor) {
@@ -172,8 +172,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
   const WIDGETS = UserProfileSections.WIDGETS;
   const tmp5 = closure_18(containerBackground, containerBorderColor);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = authStore3(UserProfileWidgetsBoardEditNoticeDefault, {});
-    const tmp10 = authStore3(ConjureCustomWidgetAddOptionDefault, {});
+    const tmp9 = syncedClientThemes(UserProfileWidgetsBoardEditNoticeDefault, {});
+    const tmp10 = syncedClientThemes(ConjureCustomWidgetAddOptionDefault, {});
     cResult[0] = tmp9;
     cResult[1] = tmp10;
     tmp6 = tmp9;
@@ -196,14 +196,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
       }
       const obj2 = { style: tmp4.profileContent, children: items };
       items = [tmp6, tmp7, tmp12];
-      const tmp17 = authStore4(metroRequire, obj2);
+      const tmp17 = authStore3(metroRequire, obj2);
       cResult[6] = tmp4.profileContent;
       cResult[7] = tmp12;
       cResult[8] = tmp17;
       tmp14 = tmp17;
     }
   }
-  const tmp13 = authStore3(UserProfileWidgetsBoardDefault, { userId, isVisible: activeSection === WIDGETS, cardStyle: tmp5 });
+  const tmp13 = syncedClientThemes(UserProfileWidgetsBoardDefault, { userId, isVisible: activeSection === WIDGETS, cardStyle: tmp5 });
   cResult[2] = tmp5;
   cResult[3] = activeSection === WIDGETS;
   cResult[4] = userId;
@@ -220,11 +220,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
   const obj = { style: UserProfileSharedStylesDefault().profileContent, children: items };
   items = [, , ];
   const tmp2 = closure_18(containerBackground, containerBorderColor);
-  items[0] = authStore3(UserProfileWidgetsBoardEditNoticeDefault, {});
-  items[1] = authStore3(ConjureCustomWidgetAddOptionDefault, {});
+  items[0] = syncedClientThemes(UserProfileWidgetsBoardEditNoticeDefault, {});
+  items[1] = syncedClientThemes(ConjureCustomWidgetAddOptionDefault, {});
   const obj2 = { userId, isVisible: activeSection === WIDGETS, cardStyle: tmp2 };
-  items[2] = authStore3(UserProfileWidgetsBoardDefault, obj2);
-  return authStore4(metroRequire, obj);
+  items[2] = syncedClientThemes(UserProfileWidgetsBoardDefault, obj2);
+  return authStore3(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenActivityTabContainer(arg0) {
@@ -254,14 +254,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
         return tmp10;
       }
       const obj2 = { style: tmp6, children: tmp7 };
-      const tmp13 = authStore3(metroRequire, obj2);
+      const tmp13 = syncedClientThemes(metroRequire, obj2);
       cResult[6] = tmp6;
       cResult[7] = tmp7;
       cResult[8] = tmp13;
       tmp10 = tmp13;
     }
     const obj3 = { user, currentUser: user, cardStyle: tmp5 };
-    const tmp9 = authStore3(UserProfileActivityTabDefault, obj3);
+    const tmp9 = syncedClientThemes(UserProfileActivityTabDefault, obj3);
     cResult[3] = tmp5;
     cResult[4] = user;
     cResult[5] = tmp9;
@@ -280,12 +280,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
   let tmp2;
   user = user.user;
   ({ containerBackground, containerBorderColor } = user);
-  const obj = { style: items, children: authStore3(UserProfileActivityTabDefault, { user, currentUser: user, cardStyle: tmp2 }) };
+  const obj = { style: items, children: syncedClientThemes(UserProfileActivityTabDefault, { user, currentUser: user, cardStyle: tmp2 }) };
   items = [, ];
   ({ cards: arr[0], profileContent: arr[1] } = UserProfileSharedStylesDefault());
   UserProfileSharedStylesDefault();
   tmp2 = closure_18(containerBackground, containerBorderColor);
-  return authStore3(metroRequire, obj);
+  return syncedClientThemes(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditSection(navigateToProfileCustomization) {
@@ -655,7 +655,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
                                       }
                                       const obj5 = { style: tmp30, children: items };
                                       items = [tmp31, tmp38, tmp42];
-                                      const tmp49 = authStore4(metroRequire, obj5);
+                                      const tmp49 = authStore3(metroRequire, obj5);
                                       cResult[31] = tmp30;
                                       cResult[32] = tmp31;
                                       cResult[33] = tmp38;
@@ -666,7 +666,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
                                   }
                                 }
                                 const obj6 = { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp26, markAsDismissed: tmp27 };
-                                const tmp45 = authStore3(closure_21, obj6);
+                                const tmp45 = syncedClientThemes(closure_21, obj6);
                                 cResult[26] = isProfileLoaded;
                                 cResult[27] = tmp27;
                                 cResult[28] = navigateToProfileCustomization;
@@ -680,7 +680,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
                         let tmp40 = null != badgeDirectoryNuxCoachmarkVariant.variantProps;
                         if (tmp40) {
                           const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp28, markAsDismissed: tmp27 };
-                          tmp40 = authStore3(tmp4(13139), obj7);
+                          tmp40 = syncedClientThemes(tmp4(13188), obj7);
                         }
                         cResult[20] = badgeDirectoryNuxCoachmarkVariant.variantProps;
                         cResult[21] = entryPointRef;
@@ -694,7 +694,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
                     const obj8 = { badgeDirectoryEntryPointRef: entryPointRef, onOpenBadgeDirectory };
                     const tmp4Result = UserProfilePrimaryInfoDefault;
                     const merged = Object.assign(primaryInfoProps);
-                    const tmp37 = authStore3(tmp4Result, obj8);
+                    const tmp37 = syncedClientThemes(tmp4Result, obj8);
                     cResult[16] = entryPointRef;
                     cResult[17] = onOpenBadgeDirectory;
                     cResult[18] = primaryInfoProps;
@@ -798,16 +798,16 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScr
   const obj6 = { badgeDirectoryEntryPointRef: entryPointRef, onOpenBadgeDirectory };
   const tmpResult = UserProfilePrimaryInfoDefault;
   const merged = Object.assign(primaryInfoProps);
-  items2 = [authStore3(tmpResult, obj6), , ];
+  items2 = [syncedClientThemes(tmpResult, obj6), , ];
   let tmp27Result = null != badgeDirectoryNuxCoachmarkVariant.variantProps;
-  const tmp25 = authStore4;
+  const tmp25 = authStore3;
   const tmp26 = metroRequire;
   if (tmp27Result) {
     const obj7 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp23, markAsDismissed: tmp22 };
-    tmp27Result = tmp27(tmp(13139), obj7);
+    tmp27Result = tmp27(tmp(13188), obj7);
   }
   items2[1] = tmp27Result;
-  items2[2] = authStore3(closure_21, { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp21, markAsDismissed: tmp22 });
+  items2[2] = syncedClientThemes(closure_21, { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp21, markAsDismissed: tmp22 });
   return tmp25(tmp26, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1275,31 +1275,31 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUse
     ({ cards: arr2[0], profileContent: arr2[1] } = closure_5);
     items2 = [, , , , , , , , , ];
     const obj3 = { navigateToPremium, style: items };
-    items2[0] = authStore3(YouExpiringTrialOfferCardDefault, obj3);
+    items2[0] = syncedClientThemes(YouExpiringTrialOfferCardDefault, obj3);
     let tmp3Result = !shouldShowExpiringTrialOfferCard;
-    const tmp = authStore4;
+    const tmp = authStore3;
     const tmp2 = metroRequire;
     const tmp6 = navigateToPremium;
     if (tmp3Result) {
       const obj4 = { navigateToPremium: tmp6, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(13321), obj4);
+      tmp3Result = tmp3(tmp4(13371), obj4);
     }
     items2[1] = tmp3Result;
-    items2[2] = enabled && authStore3(BalanceWidgetMenuDefault, {});
+    items2[2] = enabled && syncedClientThemes(BalanceWidgetMenuDefault, {});
     const obj5 = { user, currentUser: user, style: items };
-    enabled && authStore3(BalanceWidgetMenuDefault, {});
-    items2[3] = authStore3(UserProfileActivityDefault, obj5);
+    enabled && syncedClientThemes(BalanceWidgetMenuDefault, {});
+    items2[3] = syncedClientThemes(UserProfileActivityDefault, obj5);
     const obj6 = { userId: user.id, displayProfile };
-    items2[4] = authStore3(UserProfileAboutMeCardDefault, obj6);
-    items2[5] = authStore3(FormDividerDefault, {});
+    items2[4] = syncedClientThemes(UserProfileAboutMeCardDefault, obj6);
+    items2[5] = syncedClientThemes(FormDividerDefault, {});
     const obj7 = { userId: user.id };
-    items2[6] = authStore3(UserProfileConnections.UserProfileAccountConnectionsCard, obj7);
+    items2[6] = syncedClientThemes(UserProfileConnections.UserProfileAccountConnectionsCard, obj7);
     const obj8 = { userId: user.id };
-    items2[7] = authStore3(UserProfileConnections.UserProfileApplicationRoleConnectionsCard, obj8);
+    items2[7] = syncedClientThemes(UserProfileConnections.UserProfileApplicationRoleConnectionsCard, obj8);
     const obj9 = { userId: user.id, navigateToFriends };
-    items2[8] = authStore3(UserProfileYourFriendsCardDefault, obj9);
+    items2[8] = syncedClientThemes(UserProfileYourFriendsCardDefault, obj9);
     const obj10 = { userId: user.id };
-    items2[9] = authStore3(UserProfileNoteDefault, obj10);
+    items2[9] = syncedClientThemes(UserProfileNoteDefault, obj10);
     return tmp(tmp2, obj2);
   }, items6);
   const items7 = [tmp3.profileContent, stateFromStores1, pageWidth, activeProfileTabSection === UserProfileSections.WISHLIST, user.id];
@@ -1310,13 +1310,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUse
     let tmp4Result;
     let tmp8;
     const obj = { style: closure_5.profileContent, children: items };
-    const tmp = authStore4;
+    const tmp = authStore3;
     const tmp2 = metroRequire;
     if (null == stateFromStores1) {
-      tmp4Result = authStore3(UserProfileWishlistGrid.WishlistEmptyState, {});
-      tmp4 = authStore3;
+      tmp4Result = syncedClientThemes(UserProfileWishlistGrid.WishlistEmptyState, {});
+      tmp4 = syncedClientThemes;
     } else {
-      tmp4 = authStore3;
+      tmp4 = syncedClientThemes;
       const obj2 = { wishlistId: stateFromStores1, containerWidth: tmp8, isVisible };
       tmp8 = undefined;
       const tmp7 = UserProfileWishlistGridDefault;
@@ -1347,7 +1347,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUse
     let obj5;
     let obj7;
     let obj8;
-    const obj = { id: "main", label: intl.string(intl5.t.LXw470), page: authStore3(hasOwnProperty, obj2) };
+    const obj = { id: "main", label: intl.string(intl5.t.LXw470), page: syncedClientThemes(hasOwnProperty, obj2) };
     intl = intl5.intl;
     const items = [obj];
     obj2 = {
@@ -1360,14 +1360,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUse
     const tmp5 = closure_17;
     if (tmp5) {
       const push = items.push;
-      const obj3 = { id: "board", label: intl2.string(intl5.t.laViwx), page: authStore3(hasOwnProperty, obj4, boardTabIndex) };
+      const obj3 = { id: "board", label: intl2.string(intl5.t.laViwx), page: syncedClientThemes(hasOwnProperty, obj4, boardTabIndex) };
       intl2 = tmp(1126).intl;
       obj4 = {
         scrollEnabled: false,
         onContentSizeChange(arg0, arg1) {
             return handlePageContentSize(boardTabIndex, arg0, arg1);
           },
-        children: authStore3(closure_19, obj5)
+        children: syncedClientThemes(closure_19, obj5)
       };
       obj5 = { userId: user.id, activeSection: activeProfileTabSection, containerBackground, containerBorderColor };
       push(obj3);
@@ -1375,20 +1375,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreenUse
     const tmp13 = isRecentActivityMobileEnabled;
     if (tmp13) {
       const push2 = items.push;
-      const obj6 = { id: "activity", label: intl3.string(intl5.t.chq59f), page: authStore3(hasOwnProperty, obj7, activityTabIndex) };
+      const obj6 = { id: "activity", label: intl3.string(intl5.t.chq59f), page: syncedClientThemes(hasOwnProperty, obj7, activityTabIndex) };
       intl3 = tmp(1126).intl;
       obj7 = {
         scrollEnabled: false,
         onContentSizeChange(arg0, arg1) {
             return handlePageContentSize(activityTabIndex, arg0, arg1);
           },
-        children: authStore3(closure_20, obj8)
+        children: syncedClientThemes(closure_20, obj8)
       };
       obj8 = { user, containerBackground, containerBorderColor };
       push2(obj6);
     }
     const push3 = items.push;
-    const obj9 = { id: "wishlist", label: intl4.string(intl5.t["7lZ31J"]), page: authStore3(hasOwnProperty, obj10, wishlistTabIndex) };
+    const obj9 = { id: "wishlist", label: intl4.string(intl5.t["7lZ31J"]), page: syncedClientThemes(hasOwnProperty, obj10, wishlistTabIndex) };
     intl4 = tmp(1126).intl;
     obj10 = {
       scrollEnabled: false,

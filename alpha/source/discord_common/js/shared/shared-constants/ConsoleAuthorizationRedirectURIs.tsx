@@ -1,9 +1,9 @@
-// Module ID: 12877
-// Function ID: 12878
+// Module ID: 12924
+// Function ID: 12925
 // Name: ConsoleAuthorizationRedirectURIs
 // Dependencies: [2]
 
-// Module 12877 (ConsoleAuthorizationRedirectURIs)
+// Module 12924 (ConsoleAuthorizationRedirectURIs)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["https://discord.com/connections/playstation-stg/link", "https://discord.com/connections/playstation/link"]) };

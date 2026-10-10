@@ -1,9 +1,9 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7173
+// Function ID: 7174
 // Name: DiscountRecord
 // Dependencies: [1405, 1392, 2]
 
-// Module 7167 (DiscountRecord)
+// Module 7173 (DiscountRecord)
 import Record from "Record" /* 1405 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;

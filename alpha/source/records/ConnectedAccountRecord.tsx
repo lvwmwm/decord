@@ -1,9 +1,9 @@
-// Module ID: 5759
-// Function ID: 5760
+// Module ID: 5762
+// Function ID: 5763
 // Name: ConnectedAccountRecord
 // Dependencies: [1405, 2]
 
-// Module 5759 (ConnectedAccountRecord)
+// Module 5762 (ConnectedAccountRecord)
 import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 

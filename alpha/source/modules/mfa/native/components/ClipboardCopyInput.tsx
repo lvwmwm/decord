@@ -1,16 +1,16 @@
-// Module ID: 15900
-// Function ID: 15901
+// Module ID: 15962
+// Function ID: 15963
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 1999, 1085, 21, 5091, 558, 576, 504, 6644, 6724, 6879, 6290, 2]
+// Dependencies: [5, 19, 17, 1999, 1085, 21, 5092, 558, 576, 504, 6645, 6725, 6885, 6285, 2]
 
-// Module 15900 (ClipboardCopyInput)
+// Module 15962 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -153,7 +153,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -231,7 +231,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp26) {
             c3 = 3;
@@ -294,7 +294,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -372,7 +372,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp26) {
             c3 = 3;

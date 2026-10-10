@@ -1,19 +1,19 @@
-// Module ID: 10311
-// Function ID: 10312
+// Module ID: 10344
+// Function ID: 10345
 // Name: markUnread
-// Dependencies: [5, 4711, 2064, 5429, 6042, 1390, 1085, 3, 11, 7883, 1295, 2]
+// Dependencies: [5, 4752, 2065, 5432, 6035, 1390, 1085, 3, 11, 7901, 1295, 2]
 // Exports: default
 
-// Module 10311 (markUnread)
+// Module 10344 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
-import ReadStateStore from "ReadStateStore" /* 6042 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7883 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7901 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4711 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import MessageStore from "MessageStore" /* 5429 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

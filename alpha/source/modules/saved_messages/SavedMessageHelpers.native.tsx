@@ -1,16 +1,16 @@
-// Module ID: 12605
-// Function ID: 12606
+// Module ID: 12652
+// Function ID: 12653
 // Name: SavedMessageHelpers
-// Dependencies: [5, 1085, 12606, 12602, 5298, 1126, 12596, 9652, 4768, 5001, 5050, 12607, 2]
+// Dependencies: [5, 1085, 12653, 12649, 5299, 1126, 12643, 9681, 4809, 5051, 12654, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 12605 (SavedMessageHelpers)
+// Module 12652 (SavedMessageHelpers)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 12606 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 12653 */;
 import size from "module_2" /* 2 */;
 
-let content;
+let text;
 
 let hasOwnProperty;
 let metroRequire;
@@ -32,7 +32,7 @@ let obj = function _addOrUpdateSavedMessage() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ let obj = function _addOrUpdateSavedMessage() {
               displayToast = undefined;
               displayToast = displayToast.displayToast;
               tmp = Object.assign(displayToast, Object.assign({ displayToast: 0 }));
-              content = undefined;
+              text = undefined;
               BookmarkIcon = undefined;
               c3 = 1;
               c4 = 1;
@@ -77,8 +77,7 @@ let obj = function _addOrUpdateSavedMessage() {
                           let intl2;
                           let intl4;
                           let intl5;
-                          let message;
-                          let obj2;
+                          let obj3;
                           let t;
                           let code;
                           if (error != null) {
@@ -88,12 +87,12 @@ let obj = function _addOrUpdateSavedMessage() {
                             }
                           }
                           if (code === constants.TOO_MANY_SAVED_MESSAGES) {
-                            closure_0 = tmp5;
-                            obj = {
-                              title: intl2.string(closure_0(content[5]).t.mlbiZW),
-                              body: formatToPlainString(null != closure_1_1.dueAt ? t.Anr1Dg : t["1zVbEG"], obj2),
-                              confirmText: intl4.string(closure_0(content[5]).t.BddRzS),
-                              cancelText: intl5.string(closure_0(content[5]).t.ZGbTcy),
+                            closure_0 = tmp6;
+                            const obj2 = {
+                              title: intl2.string(closure_0(closure_2[5]).t.mlbiZW),
+                              body: formatToPlainString(null != closure_1_1.dueAt ? t.Anr1Dg : t["1zVbEG"], obj3),
+                              confirmText: intl4.string(closure_0(closure_2[5]).t.BddRzS),
+                              cancelText: intl5.string(closure_0(closure_2[5]).t.ZGbTcy),
                               onCancel() {
                                   const showForLaterModal = closure_2_0(closure_2_2[6]).showForLaterModal;
                                   closure_2_0(closure_2_2[6]);
@@ -102,22 +101,21 @@ let obj = function _addOrUpdateSavedMessage() {
                                 },
                               isDismissable: false
                             };
-                            const show = closure_1(content[4]).show;
-                            closure_1(content[4]);
-                            intl2 = closure_0(content[5]).intl;
-                            const intl3 = closure_0(content[5]).intl;
+                            const show = closure_1(closure_2[4]).show;
+                            closure_1(closure_2[4]);
+                            intl2 = closure_0(closure_2[5]).intl;
+                            const intl3 = closure_0(closure_2[5]).intl;
                             formatToPlainString = intl3.formatToPlainString;
-                            t = closure_0(content[5]).t;
-                            obj2 = { max: null != closure_1_1.dueAt ? closure_2_6 : closure_2_5 };
-                            intl4 = tmp9(tmp7[5]).intl;
-                            intl5 = tmp9(tmp7[5]).intl;
-                            show(obj);
+                            t = closure_0(closure_2[5]).t;
+                            obj3 = { max: null != closure_1_1.dueAt ? closure_2_6 : closure_2_5 };
+                            intl4 = tmp10(tmp8[5]).intl;
+                            intl5 = tmp10(tmp8[5]).intl;
+                            show(obj2);
                             return null;
                           } else {
-                            const obj3 = { key: "SAVED_MESSAGE_CREATE_ERROR", IconComponent: closure_0(content[9]).CircleErrorIcon, content: message };
-                            const open = closure_1(content[8]).open;
-                            closure_1(content[8]);
-                            message = undefined;
+                            let message;
+                            const open = closure_1(closure_2[8]).open;
+                            closure_1(closure_2[8]);
                             if (error != null) {
                               const body2 = error.body;
                               if (body2 != null) {
@@ -125,10 +123,11 @@ let obj = function _addOrUpdateSavedMessage() {
                               }
                             }
                             if (message == null) {
-                              const intl = tmp14(tmp12[5]).intl;
-                              message = intl.string(tmp14(tmp12[5]).t.R0RpRX);
+                              const intl = closure_0(tmp13[5]).intl;
+                              message = intl.string(closure_0(tmp13[5]).t.R0RpRX);
                             }
-                            open(obj3);
+                            obj = { text: message, variant: "critical" };
+                            open("SAVED_MESSAGE_CREATE_ERROR", obj);
                             return null;
                           }
                         }),
@@ -148,31 +147,30 @@ let obj = function _addOrUpdateSavedMessage() {
               const tmp46 = displayToast;
               if (tmp46) {
                 let stringResult;
-                const tmp5 = tmp;
                 if (null != tmp.dueAt) {
-                  const tmp12 = closure_2;
-                  const tmp14 = closure_130_2;
+                  const tmp13 = closure_130_0;
                   let intl2 = closure_130_0(closure_130_2[5]).intl;
                   stringResult = intl2.string(closure_130_0(closure_130_2[5]).t.i1IsOy);
                 } else {
-                  const tmp7 = closure_130_0;
+                  const tmp6 = closure_2;
+                  const tmp8 = closure_130_2;
                   let intl = closure_130_0(closure_130_2[5]).intl;
-                  const tmp9 = closure_130_0;
+                  const tmp10 = closure_130_2;
                   stringResult = intl.string(closure_130_0(closure_130_2[5]).t.DQjes4);
                 }
-                content = stringResult;
+                text = stringResult;
                 if (null != tmp.dueAt) {
-                  BookmarkIcon = closure_130_0(closure_130_2[10]).ClockIcon;
+                  BookmarkIcon = closure_130_0(closure_130_2[9]).ClockIcon;
                 } else {
-                  BookmarkIcon = closure_130_0(closure_130_2[11]).BookmarkIcon;
+                  BookmarkIcon = closure_130_0(closure_130_2[10]).BookmarkIcon;
                 }
                 obj = closure_130_1(closure_130_2[8]);
-                const obj9 = { key: "SAVED_MESSAGE_CREATE_SUCCESS", IconComponent: BookmarkIcon, content };
-                obj.open(obj9);
+                const obj9 = { text, icon: BookmarkIcon };
+                obj.open("SAVED_MESSAGE_CREATE_SUCCESS", obj9);
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp40) {
           c4 = 3;
@@ -201,14 +199,15 @@ obj = function _removeSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
         let closure_2;
         let ClockIcon;
         c4 = 2;
-        if (0 === content) {
+        const tmp4 = text;
+        if (0 === text) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -223,11 +222,11 @@ obj = function _removeSavedMessage() {
             ({ displayToast: c0, isReminder: c1 } = closure_0);
             closure_2 = Object.assign(closure_0, Object.assign({ displayToast: 0, isReminder: 0 }));
             ClockIcon = undefined;
-            content = 1;
+            text = 1;
             c4 = 1;
             return { value: "Set", done: true };
           }
-        } else if (1 === content) {
+        } else if (1 === tmp4) {
           if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -237,15 +236,13 @@ obj = function _removeSavedMessage() {
             return obj6;
           } else {
             const obj4 = closure_130_0(closure_130_2[3]);
-            content = 2;
+            text = 2;
             c4 = 1;
             const obj7 = {
               value: deleteSavedMessageResult.catch((error) => {
                         let message;
-                        const tmp2 = closure_1_1(closure_1_2[8]);
-                        const open = tmp2.open;
-                        obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: closure_1_0(closure_1_2[9]).CircleErrorIcon, content: message };
-                        message = undefined;
+                        const open = closure_1_1(closure_1_2[8]).open;
+                        closure_1_1(closure_1_2[8]);
                         if (error != null) {
                           const body = error.body;
                           if (body != null) {
@@ -253,10 +250,10 @@ obj = function _removeSavedMessage() {
                           }
                         }
                         if (message == null) {
-                          const intl = tmp3(tmp[5]).intl;
-                          message = intl.string(tmp3(tmp[5]).t.R0RpRX);
+                          const intl = closure_1_0(tmp[5]).intl;
+                          message = intl.string(closure_1_0(tmp[5]).t.R0RpRX);
                         }
-                        open(obj);
+                        open("SAVED_MESSAGE_REMOVE_ERROR", { text: message, variant: "critical" });
                         return null;
                       }),
               done: false
@@ -282,24 +279,24 @@ obj = function _removeSavedMessage() {
                   let intl = closure_130_0(closure_130_2[5]).intl;
                   stringResult = intl.string(closure_130_0(closure_130_2[5]).t["5KOMiV"]);
                 }
-                content = stringResult;
+                text = stringResult;
                 if (null == closure_2.dueAt) {
                   const tmp22 = c1;
                   if (!tmp22) {
-                    ClockIcon = closure_130_0(closure_130_2[11]).BookmarkIcon;
+                    ClockIcon = closure_130_0(closure_130_2[10]).BookmarkIcon;
                   }
+                  const obj9 = { text, icon: ClockIcon };
                   obj = closure_130_1(closure_130_2[8]);
-                  const obj9 = { key: "SAVED_MESSAGE_REMOVE_SUCCESS", IconComponent: ClockIcon, content };
-                  const openResult = obj.open(obj9);
+                  const openResult = obj.open("SAVED_MESSAGE_REMOVE_SUCCESS", obj9);
                 }
-                ClockIcon = closure_130_0(closure_130_2[10]).ClockIcon;
+                ClockIcon = closure_130_0(closure_130_2[9]).ClockIcon;
               }
               const intl2 = closure_130_0(closure_130_2[5]).intl;
               stringResult = intl2.string(closure_130_0(closure_130_2[5]).t.D0tS02);
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp44) {
         c4 = 3;

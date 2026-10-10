@@ -1,28 +1,28 @@
-// Module ID: 10391
-// Function ID: 10392
+// Module ID: 10424
+// Function ID: 10425
 // Name: SafetyToolsActionSheet
-// Dependencies: [19, 17, 4719, 10348, 21, 5091, 587, 10389, 10392, 10393, 504, 10361, 6899, 1126, 8959, 8958, 5055, 10397, 2000, 4765, 6651, 6649, 6650, 6648, 7011, 10400, 4998, 7017, 5299, 10387, 9546, 9545, 7704, 10219, 10218, 5941, 10401, 10405, 10406, 10407, 10376, 10375, 10408, 10398, 6269, 6186, 6194, 2]
+// Dependencies: [19, 17, 4760, 10381, 21, 5092, 587, 10422, 10425, 10426, 504, 10394, 6905, 1126, 8978, 8977, 5056, 10430, 2000, 4806, 6652, 6650, 6651, 6649, 7017, 10433, 6295, 7025, 5300, 10420, 9575, 9574, 7721, 10248, 10247, 5934, 10434, 10438, 10439, 10440, 10409, 10408, 10441, 10431, 6264, 6179, 6187, 2]
 // Exports: default
 
-// Module 10391 (SafetyToolsActionSheet)
+// Module 10424 (SafetyToolsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl18 from "intl" /* 1126 */;
-import TableRowGroup2 from "TableRowGroup" /* 6269 */;
-import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 6899 */;
-import HeartIcon from "HeartIcon" /* 8958 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8959 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9546 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10219 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10361 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10376 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10400 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 10405 */;
+import TableRowGroup2 from "TableRowGroup" /* 6264 */;
+import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 6905 */;
+import HeartIcon from "HeartIcon" /* 8977 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8978 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9575 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10248 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10394 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10409 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10433 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 10438 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
-import Constants from "Constants" /* 10348 */;
-import createStyles from "createStyles" /* 5091 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import Constants from "Constants" /* 10381 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let buttons;
@@ -34,13 +34,13 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const CircleXIcon = tmp(4998);
-const EyeSlashIcon2 = tmp(6648);
-const EyeIcon = tmp(6650);
-const FlagIcon = tmp(9545);
-const MusicIcon = tmp(10218);
-const ShieldIcon = tmp(10375);
-const EducationIcon = tmp(10406);
+const CircleXIcon = tmp(6295);
+const EyeSlashIcon2 = tmp(6649);
+const EyeIcon = tmp(6651);
+const FlagIcon = tmp(9574);
+const MusicIcon = tmp(10247);
+const ShieldIcon = tmp(10408);
+const EducationIcon = tmp(10439);
 const View = react_native.View;
 ({ ACTION_SHEET_CONTEXT_MOBILE: metroRequire, getSafetyToolsActionSheetKey: metroImportDefault, THROUGHLINE_URL: metroImportAll, NOFILTR_URL: c9, VIBING_WUMPUS_MODAL_KEY: c10 } = Constants);
 const jsx = Fragment.jsx;
@@ -173,7 +173,7 @@ export default function SafetyToolsActionSheet(channelId) {
     let obj5 = {
       label: stringResult,
       subLabel: stringResult1,
-      icon: tmp3(tmp5 ? 6651 : 6649),
+      icon: tmp3(tmp5 ? 6652 : 6650),
       IconComponent: EyeSlashIcon,
       disabled: stateFromStores,
       onPress() {
@@ -216,7 +216,7 @@ export default function SafetyToolsActionSheet(channelId) {
         if (stateFromStores) {
           let obj = { location: lastChannelMessage };
           const tmpResult = warningId(warningType[24]);
-          tmpResult.unblockUser(recipientId, obj);
+          tmpResult.unblockUser(recipientId, obj, closure_1_0);
           const obj5 = warningId(warningType[27]);
           const result = obj5.showUnblockSuccessToast(recipientId, closure_1_0);
           trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);

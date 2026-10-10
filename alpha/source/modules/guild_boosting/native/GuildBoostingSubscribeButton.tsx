@@ -1,17 +1,17 @@
-// Module ID: 7111
-// Function ID: 7112
+// Module ID: 7117
+// Function ID: 7118
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 7112, 1085, 5968, 1392, 21, 7113, 5941, 5966, 558, 576, 13791, 1503, 6848, 573, 1398, 12230, 1126, 8206, 5376, 2]
+// Dependencies: [5, 19, 17, 7118, 1085, 5961, 1392, 21, 7119, 5934, 5959, 558, 576, 13843, 1503, 6851, 573, 1398, 12274, 1126, 8222, 5379, 2]
 
-// Module 7111 (GuildBoostingSubscribeButton)
+// Module 7117 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5968 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7113 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5961 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7119 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7112 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7118 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp9) {
           c5 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 4759
-// Function ID: 4760
+// Module ID: 4800
+// Function ID: 4801
 // Name: openURL
-// Dependencies: [5, 4760, 8479, 2000, 2]
+// Dependencies: [5, 4801, 8495, 2000, 2]
 // Exports: default
 
-// Module 4759 (openURL)
+// Module 4800 (openURL)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _openURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _openURL() {
             obj = { skipExtensionCheck, analyticsLocations: [] };
             value.default(closure_0, obj);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp14) {
           c4 = 3;

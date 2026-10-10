@@ -1,11 +1,11 @@
-// Module ID: 8372
-// Function ID: 8373
+// Module ID: 8388
+// Function ID: 8389
 // Name: MediaViewerAnalyticsManager
-// Dependencies: [2064, 1085, 570, 1265, 2]
+// Dependencies: [2065, 1085, 570, 1265, 2]
 
-// Module 8372 (MediaViewerAnalyticsManager)
+// Module 8388 (MediaViewerAnalyticsManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let obj2 = {
   channelType: "toCharArray$esjava$1",
   numMediaItems: "Array",
   hasMediaOptions: "code",
-  source: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000017912663185,
+  source: false,
   incrementableActions: fromEntries(values.map((item) => {
     const items = [item, 0];
     return items;

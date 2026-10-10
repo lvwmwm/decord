@@ -1,21 +1,21 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11453
+// Function ID: 11454
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 2118, 2086, 4709, 1085, 11409, 1388, 11, 1295, 11402, 5106, 7233, 584, 2]
+// Dependencies: [5, 2119, 2087, 4750, 1085, 11454, 1388, 11, 1295, 11447, 5107, 7239, 584, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11408 (GuildAutomodActionCreators)
+// Module 11453 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
-import AutomodFeedback from "AutomodFeedback" /* 7233 */;
-import DataUtils from "DataUtils" /* 11409 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import AutomodFeedback from "AutomodFeedback" /* 7239 */;
+import DataUtils from "DataUtils" /* 11454 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;

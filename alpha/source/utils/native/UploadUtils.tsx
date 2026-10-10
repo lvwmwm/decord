@@ -1,28 +1,28 @@
-// Module ID: 7750
-// Function ID: 7751
+// Module ID: 7768
+// Function ID: 7769
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1207, 5281, 1390, 1085, 7482, 3, 7499, 7751, 7741, 7757, 1382, 4767, 1126, 1445, 4728, 7740, 1162, 7758, 7760, 7761, 7746, 5067, 38, 7762, 7763, 7764, 1388, 7765, 7766, 7767, 5441, 7768, 2]
+// Dependencies: [109, 5, 17, 1207, 5282, 1390, 1085, 7482, 3, 7499, 7769, 7759, 7775, 1382, 4808, 1126, 1445, 4769, 7758, 1162, 7776, 7778, 7779, 7764, 5068, 38, 7780, 7781, 7782, 1388, 7783, 7784, 7785, 5444, 7786, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 7750 (utils/UploadUtils)
+// Module 7768 (utils/UploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1162 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import react_nativeDefault2 from "react-native" /* 1445 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
 import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7499 */;
-import UploadPlatform from "UploadPlatform" /* 7740 */;
-import FileUtils from "FileUtils" /* 7746 */;
-import ImageConversionDecision from "ImageConversionDecision" /* 7758 */;
-import VideoUploadUtils from "VideoUploadUtils" /* 7760 */;
-import UploadLimits from "UploadLimits" /* 7761 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 7768 */;
+import UploadPlatform from "UploadPlatform" /* 7758 */;
+import FileUtils from "FileUtils" /* 7764 */;
+import ImageConversionDecision from "ImageConversionDecision" /* 7776 */;
+import VideoUploadUtils from "VideoUploadUtils" /* 7778 */;
+import UploadLimits from "UploadLimits" /* 7779 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 7786 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1207 */;
-import NetworkStore from "NetworkStore" /* 5281 */;
+import NetworkStore from "NetworkStore" /* 5282 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
@@ -40,8 +40,8 @@ let closure_17;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const DeviceUtils = tmp(5067);
-const UploadUtils = tmp(7741);
+const DeviceUtils = tmp(5068);
+const UploadUtils = tmp(7759);
 function openImagePickerUnhandled() {
   return obj(...arguments);
 }
@@ -56,6 +56,7 @@ let obj = function _openImagePickerUnhandled() {
       let obj35;
       if (c12 === 2) {
         c12 = 3;
+        let str = "Generator functions may not be called on executing generators";
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -63,7 +64,7 @@ let obj = function _openImagePickerUnhandled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -180,8 +181,7 @@ let obj = function _openImagePickerUnhandled() {
                 let _Error = Error;
                 catchPromise = this;
                 let self = this;
-                let str = "Missing permission";
-                let error = new Error("Missing permission");
+                let error = new Error(closure_134_23);
                 throw error;
               }
               break;
@@ -384,12 +384,12 @@ let obj = function _openImagePickerUnhandled() {
               break;
             }
           }
-        } catch (tmp80) {
-          closure_10 = tmp80;
+        } catch (tmp82) {
+          closure_10 = tmp82;
           if (0 === c9) {
             c12 = 3;
-            throw tmp80;
-          } else if (1 === tmp82) {
+            throw tmp82;
+          } else if (1 === tmp84) {
             c11 = 6;
           } else {
             c11 = 7;
@@ -404,115 +404,98 @@ function openImagePicker() {
   return obj(...arguments);
 }
 obj = function _openImagePicker() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_2;
-    let obj9;
-    let closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      let c4;
-      try {
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            value = undefined;
-            c5 = 1;
-            c6 = 1;
-            const obj5 = { value: obj9.requestPermission(constants.PHOTOS), done: false };
-            obj9 = NativePermissionUtilsDefault;
-            return obj5;
-          }
-        } else if (1 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
-          } else if (value) {
-            c4 = 1;
-            c5 = 3;
-            c6 = 1;
-            const obj7 = { value: closure_130_23(closure_0), done: false };
-            return obj7;
-          } else {
-            c6 = 3;
-            const obj8 = { value: { errorStr: "Missing permission" }, done: true };
-            return obj8;
-          }
-        } else if (2 === c5) {
-          c4 = 0;
-          const tmp = closure_3;
-          if ("E_PICKER_CANCELLED" !== tmp.code) {
-            let obj10;
-            if (tmp.message !== closure_130_22) {
-              if ("E_CROPPER_IMAGE_NOT_FOUND" === tmp.code) {
-                const presentFailedToast = closure_130_0(closure_130_2[14]).presentFailedToast;
-                const tmp20 = closure_130_0(closure_130_2[14]);
-                const intl = closure_130_0(closure_130_2[15]).intl;
-                presentFailedToast(intl.string(closure_130_0(closure_130_2[15]).t.TTzyzW));
-                obj10 = { errorStr: "No select photo access" };
-              } else {
-                const obj3 = closure_130_0(closure_130_2[14]);
-                obj3.presentFailedToast(tmp.message);
-                obj10 = { errorStr: tmp.message };
-              }
-            }
-            c6 = 3;
-            const obj11 = { value: obj10, done: true };
-            return obj11;
-          }
-          obj10 = { errorStr: "Cancelled" };
-        } else if (arg0 === 1) {
-          c6 = 3;
+  obj = _asyncToGenerator(async (value) => {
+    let c5 = 0;
+    let c6 = 0;
+    let c4 = 0;
+    return (async (arg0, value) => {
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          const obj12 = { value, done: true };
-          return obj12;
+          return { value, done: true };
         } else {
-          if (null != value.errorStr) {
-            const presentFailedToast2 = closure_130_0(closure_130_2[14]).presentFailedToast;
-            const tmp47 = closure_130_0(closure_130_2[14]);
-            const intl2 = closure_130_0(closure_130_2[15]).intl;
-            const obj13 = { reason: value.errorStr };
-            presentFailedToast2(intl2.formatToPlainString(closure_130_0(closure_130_2[15]).t.Ex162J, obj13));
-          }
-          c4 = 0;
-          c6 = 3;
-          obj = { value, done: true };
-          return obj;
+          return { value: "IconComponent", done: "+51" };
         }
-      } catch (tmp34) {
-        closure_3 = tmp34;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp34;
-        } else {
-          c5 = 2;
+      } else {
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              closure_1 = tmp4;
+              value = undefined;
+              c4 = 1;
+              c5 = 2;
+              c6 = 1;
+              const obj5 = { value: openImagePickerUnhandled(value), done: false };
+              return obj5;
+            }
+          } else if (1 === c5) {
+            c4 = 0;
+            closure_1 = closure_3;
+            if ("E_PICKER_CANCELLED" !== closure_1.code) {
+              let obj7;
+              if (closure_1.message !== closure_130_22) {
+                if (closure_1.message === closure_130_23) {
+                  obj7 = { errorStr: closure_130_23 };
+                  const obj6 = { errorStr: closure_130_23 };
+                } else if ("E_CROPPER_IMAGE_NOT_FOUND" === closure_1.code) {
+                  const presentFailedToast2 = closure_130_0(closure_130_2[14]).presentFailedToast;
+                  closure_130_0(closure_130_2[14]);
+                  const intl2 = closure_130_0(closure_130_2[15]).intl;
+                  presentFailedToast2(intl2.string(closure_130_0(closure_130_2[15]).t.TTzyzW));
+                  obj7 = { errorStr: "No select photo access" };
+                } else {
+                  const obj4 = closure_130_0(closure_130_2[14]);
+                  obj4.presentFailedToast(closure_1.message);
+                  obj7 = { errorStr: closure_1.message };
+                }
+              }
+              c6 = 3;
+              return { value: obj7, done: true };
+            }
+            obj7 = { errorStr: closure_130_22 };
+            const obj9 = { errorStr: closure_130_22 };
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            return { value, done: true };
+          } else {
+            if (null != value.errorStr) {
+              const presentFailedToast = closure_130_0(closure_130_2[14]).presentFailedToast;
+              closure_130_0(closure_130_2[14]);
+              const intl = closure_130_0(closure_130_2[15]).intl;
+              obj = { reason: value.errorStr };
+              presentFailedToast(intl.formatToPlainString(closure_130_0(closure_130_2[15]).t.Ex162J, obj));
+            }
+            c4 = 0;
+            c6 = 3;
+            return { value, done: true };
+          }
+        } catch (tmp43) {
+          closure_3 = tmp43;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp43;
+          } else {
+            c5 = 1;
+          }
         }
       }
-    }
+    })();
   });
   return obj(...arguments);
 };
@@ -537,7 +520,7 @@ obj = function _mediaManager() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -574,7 +557,7 @@ obj = function _mediaManager() {
             let closure_2 = closure_4;
             closure_131_19.warn(closure_2);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -719,7 +702,7 @@ obj = function _getPhotoKitDataUTI() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c5;
@@ -749,7 +732,7 @@ obj = function _getPhotoKitDataUTI() {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else if (1 === c6) {
           c5 = 0;
@@ -804,7 +787,7 @@ obj = function _shouldConvertToPNG() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c5;
@@ -964,7 +947,7 @@ function convertVideo(videoMetadata) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               let c10;
@@ -990,7 +973,7 @@ function convertVideo(videoMetadata) {
                     _loop = function* _loop() {
                       let c3;
                       let closure_2;
-                      let min2 = yield closure_3_41(config);
+                      let min2 = yield closure_3_42(config);
                       if (min2.isSupported) {
                         return { v: true };
                       }
@@ -1097,7 +1080,7 @@ function convertVideo(videoMetadata) {
                                 if (c1) {
                                   closure_7 = closure_7 + 1;
                                   c4 = 3;
-                                  return { value: "IconComponent", done: null };
+                                  return { value: "IconComponent", done: "+51" };
                                 } else {
                                   obj = { currentFailures: min2.failures, config, capabilities: min2.capabilities, attempt: closure_7 + 1 };
                                   logger.error("No adjustments possible for current failures", obj);
@@ -1342,7 +1325,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj4 = { uri: require, overrideType: "r" };
+                  const obj4 = { uri: require, overrideType: "Array" };
                   const tmp12Result8 = UploadUtils;
                   isVideo = tmp12Result8.getFile(obj4).isVideo;
                 }
@@ -1368,7 +1351,7 @@ function convertVideo(videoMetadata) {
                 } else {
                   isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                   if (isVideo2) {
-                    obj6 = { uri: require, overrideType: "r" };
+                    obj6 = { uri: require, overrideType: "Array" };
                     const tmp12Result11 = UploadUtils;
                     isVideo2 = tmp12Result11.getFile(obj6).isVideo;
                   }
@@ -1446,7 +1429,7 @@ obj = function _buildResolvedUpload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -1514,7 +1497,7 @@ obj = function _processVideoUpload() {
     let fileSize;
     let spoiler;
     function fetchVideoMetadata(c0, c2) {
-      return closure_1_39(...arguments);
+      return closure_1_40(...arguments);
     }
     let closure_0 = arg0;
     if (spoiler === 2) {
@@ -1527,7 +1510,7 @@ obj = function _processVideoUpload() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -1579,7 +1562,7 @@ obj = function _processVideoUpload() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            videoQualitySetting = closure_130_28();
+            videoQualitySetting = closure_130_29();
             dataSavingMode = closure_130_9.dataSavingMode && closure_130_10.getType() === closure_130_14.CELLULAR;
             fileSize = 2;
             spoiler = 1;
@@ -1618,7 +1601,7 @@ obj = function _processVideoUpload() {
               const obj7 = { uri: originalUri, filename, isLowQuality: dataSavingMode, compressionQuality: closure_130_15.LOW, videoQualitySetting, videoMetadata, fileSize };
               fileSize = 3;
               spoiler = 1;
-              const obj8 = { value: closure_130_33(obj7), done: false };
+              const obj8 = { value: closure_130_34(obj7), done: false };
               return obj8;
             }
           }
@@ -1642,7 +1625,7 @@ obj = function _processVideoUpload() {
           } else {
             const obj10 = { path, i, mimeType, filename, originalUri, spoiler, description, compressionQuality: closure_130_15.LOW, videoQualitySetting, videoMetadata, encodingConfig, sourceImageDimensions: {}, isImage: false };
             spoiler = 3;
-            obj = { value: closure_130_34(obj10), done: true };
+            obj = { value: closure_130_35(obj10), done: true };
             return obj;
           }
         }
@@ -1670,7 +1653,7 @@ obj = function _processImageOrFileUpload() {
     let tmp;
     let width;
     function tryConvertImage(arg0) {
-      return closure_1_38(...arguments);
+      return closure_1_39(...arguments);
     }
     function resolveFileUri(c0, compressionQuality, dataSavingMode, c15, c8) {
       let flag = c8;
@@ -1685,7 +1668,7 @@ obj = function _processImageOrFileUpload() {
       }
       if (isAndroidResult) {
         const obj2 = { compressionQuality, isLowQuality: dataSavingMode, skipVideoTranscode: true, useOriginalIfSmaller: c15, allowOptimization: flag };
-        return closure_1_26(filename(tmp[16]).resolveToMediaFilePath, c0, obj2);
+        return closure_1_27(filename(tmp[16]).resolveToMediaFilePath, c0, obj2);
       } else {
         return Promise.resolve(c0);
       }
@@ -1701,7 +1684,7 @@ obj = function _processImageOrFileUpload() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -1780,7 +1763,7 @@ obj = function _processImageOrFileUpload() {
             return obj4;
           } else {
             dataSavingMode = closure_132_9.dataSavingMode && closure_132_10.getType() === closure_132_14.CELLULAR;
-            isImage = closure_132_32(originalUri, mimeType);
+            isImage = closure_132_33(originalUri, mimeType);
             const tmp41 = isImage;
             if (tmp41) {
               size = { width, height };
@@ -1895,7 +1878,7 @@ obj = function _processImageOrFileUpload() {
           } else {
             const obj17 = { path, i, mimeType, filename, originalUri, spoiler, description, compressionQuality, sourceImageDimensions: obj5, isImage, imageEncoderType: encoderUsed, uploadedImageWidth: width, uploadedImageHeight: height, attachmentQualityMetricsEnabled: enableQualityMetrics, attachmentOriginDetectionEnabled: enableOriginDetection };
             let outputWidth;
-            const tmp138 = closure_132_34;
+            const tmp138 = closure_132_35;
             if (closure_26 != null) {
               outputWidth = closure_26.outputWidth;
             }
@@ -1931,7 +1914,7 @@ obj = function _tryConvertImage() {
     let tmp;
     let useJpegliEncoder;
     function getPhotoKitDataUTI() {
-      return closure_1_29(...arguments);
+      return closure_1_30(...arguments);
     }
     function shouldConvertBase64ToJPG(c0) {
       obj = closure_1_0(closure_1_2[13]);
@@ -1944,7 +1927,7 @@ obj = function _tryConvertImage() {
       return isIOSResult;
     }
     function shouldConvertToPNG() {
-      return closure_1_30(...arguments);
+      return closure_1_31(...arguments);
     }
     function shouldConvertToGifFilepath(c0, c1) {
       obj = closure_1_0(closure_1_2[13]);
@@ -1978,7 +1961,7 @@ obj = function _tryConvertImage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -2075,12 +2058,12 @@ obj = function _tryConvertImage() {
                 const obj8 = { compressionQuality };
                 useJpegliEncoder = 3;
                 c7 = 1;
-                const obj9 = { value: closure_131_26(closure_131_1(closure_131_2[16]).convertBase64ToJPEG, c0.replace(closure_131_20, ""), obj8), done: false };
+                const obj9 = { value: closure_131_27(closure_131_1(closure_131_2[16]).convertBase64ToJPEG, c0.replace(closure_131_20, ""), obj8), done: false };
                 return obj9;
               } else if (shouldConvertBase64ToGIF(c0)) {
                 useJpegliEncoder = 4;
                 c7 = 1;
-                const obj10 = { value: closure_131_26(closure_131_1(closure_131_2[16]).convertBase64ToGIF, c0.replace(closure_131_21, ""), null), done: false };
+                const obj10 = { value: closure_131_27(closure_131_1(closure_131_2[16]).convertBase64ToGIF, c0.replace(closure_131_21, ""), null), done: false };
                 return obj10;
               } else {
                 const tmp62 = c4;
@@ -2112,7 +2095,7 @@ obj = function _tryConvertImage() {
                   const obj13 = { compressionQuality, forceConvertToJPG, useEnhancedConversion, useJpegliEncoder, targetWidth, targetHeight };
                   useJpegliEncoder = 8;
                   c7 = 1;
-                  const obj14 = { value: closure_131_26(closure_131_1(closure_131_2[16]).convertToJPEG, c0, obj13), done: false };
+                  const obj14 = { value: closure_131_27(closure_131_1(closure_131_2[16]).convertToJPEG, c0, obj13), done: false };
                   return obj14;
                 }
               }
@@ -2326,7 +2309,7 @@ obj = function _fetchVideoMetadata() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -2375,7 +2358,7 @@ obj = function _fetchVideoMetadata() {
             return { value, done: true };
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp21) {
           closure_5 = tmp21;
           if (0 === c6) {
@@ -2439,7 +2422,7 @@ obj = function _getImageDimensionsIfMissing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -2550,7 +2533,7 @@ obj = function _checkVideoEncodingSupport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -2631,7 +2614,7 @@ obj = function _calculateImageQualityMetrics() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let tmp46;
@@ -2761,7 +2744,8 @@ let tmp4 = new LoggerDefault("UploadUtils.tsx");
 let closure_19 = tmp4;
 const regExp = new RegExp("^" + Base64JPEGPrefix, "i");
 const regExp1 = new RegExp("^" + Base64GIFPrefix, "i");
-const Canceled = "Canceled";
+const Cancelled = "Cancelled";
+let c23 = "Missing permission";
 let size = size_mod;
 let result = size.fileFinishedImporting("utils/native/UploadUtils.tsx");
 

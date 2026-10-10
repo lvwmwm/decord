@@ -1,11 +1,11 @@
-// Module ID: 13293
-// Function ID: 13294
+// Module ID: 13343
+// Function ID: 13344
 // Name: UserApplicationIdentityActionCreators
-// Dependencies: [5, 13292, 1085, 584, 1295, 504, 2]
+// Dependencies: [5, 13342, 1085, 584, 1295, 504, 2]
 
-// Module 13293 (UserApplicationIdentityActionCreators)
+// Module 13343 (UserApplicationIdentityActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 13292 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 13342 */;
 import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -81,7 +81,7 @@ let obj = {
             obj.dispatch(obj10);
             c3 = 0;
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp21) {
           closure_2 = tmp21;
@@ -110,7 +110,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ let obj = {
             return obj;
           } else {
             application_id = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp10) {
           application_id = 3;

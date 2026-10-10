@@ -1,41 +1,41 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 16033
+// Function ID: 16034
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8088, 7341, 1244, 2064, 2115, 1390, 5090, 1392, 21, 584, 573, 1295, 4768, 6186, 6195, 6269, 6885, 7172, 1200, 587, 10067, 5091, 7163, 5055, 15972, 2000, 558, 576, 6889, 15979, 12693, 11302, 5941, 15980, 15983, 15987, 15989, 15992, 2]
+// Dependencies: [5, 32, 19, 17, 8106, 7347, 1244, 2065, 2116, 1390, 5091, 1392, 21, 584, 573, 1295, 4809, 6179, 6188, 6264, 6891, 7178, 1200, 587, 10096, 5092, 7169, 5056, 16034, 2000, 558, 576, 6895, 16041, 12740, 11343, 5934, 16042, 16045, 16049, 16051, 16054, 2]
 
-// Module 15971 (DevToolsRevenuePlaygroundScreen)
+// Module 16033 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 5090 */;
-import TableRow6 from "TableRow" /* 6186 */;
-import TableRowArrow from "TableRowArrow" /* 6195 */;
-import TableRowGroup4 from "TableRowGroup" /* 6269 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6885 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6889 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 11302 */;
-import IAPUtils from "IAPUtils" /* 12693 */;
-import DevSettingsActions from "DevSettingsActions" /* 15979 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5091 */;
+import TableRow6 from "TableRow" /* 6179 */;
+import TableRowArrow from "TableRowArrow" /* 6188 */;
+import TableRowGroup4 from "TableRowGroup" /* 6264 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6891 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6895 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 11343 */;
+import IAPUtils from "IAPUtils" /* 12740 */;
+import DevSettingsActions from "DevSettingsActions" /* 16041 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8088 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7341 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8106 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7347 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import UserStore from "UserStore" /* 1390 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const DevSettingsStore = DevSettingsStore2;
-let closure_2, closure_3, closure_4, content, map, map1, set, set2, userAffinity;
+let closure_2, closure_3, closure_4, map, map1, set, set2, userAffinity;
 
 let closure_15;
 let closure_16;
@@ -246,7 +246,7 @@ function FriendAnniversary() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -288,10 +288,10 @@ function FriendAnniversary() {
             if (tmp25) {
               closure_130_4([]);
             } else {
-              const obj5 = { key: "dev-tools-gift-intent-server", content: describeServerError(status) };
+              const obj5 = { text: describeServerError(status) };
               const open = stateFromStores1(status[16]).open;
               const tmp30 = stateFromStores1(status[16]);
-              open(obj5);
+              open("dev-tools-gift-intent-server", obj5);
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -317,7 +317,7 @@ function FriendAnniversary() {
           c4 = 0;
           closure_130_7(false);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp49) {
         closure_3 = tmp49;
@@ -337,7 +337,7 @@ function FriendAnniversary() {
     callback();
   }, items4);
   const useCallback = recipientUserId.useCallback;
-  let closure_0 = stateFromStores3((content, arg1) => {
+  let closure_0 = stateFromStores3((text, arg1) => {
     let closure_1 = arg1;
     let c6 = 0;
     let c7 = 0;
@@ -353,7 +353,7 @@ function FriendAnniversary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -368,12 +368,12 @@ function FriendAnniversary() {
             } else {
               closure_3 = tmp;
               closure_2 = tmp12;
-              content = closure_1;
+              text = closure_1;
               closure_1_8(true);
               c5 = 2;
               c6 = 3;
               c7 = 1;
-              const obj5 = { value: content(), done: false };
+              const obj5 = { value: text(), done: false };
               return obj5;
             }
           } else if (1 === c6) {
@@ -386,8 +386,8 @@ function FriendAnniversary() {
               closure_1 = closure_4;
               tmp12 = stateFromStores1(stateFromStores2[16]);
               const open = tmp12.open;
-              const obj6 = { key: "dev-tools-gift-intent-server", content: closure_2_23(closure_1) };
-              open(obj6);
+              const obj6 = { text: closure_2_23(closure_1) };
+              open("dev-tools-gift-intent-server", obj6);
             } else if (3 === c6) {
               if (arg0 === 1) {
                 c7 = 3;
@@ -398,9 +398,9 @@ function FriendAnniversary() {
                 c7 = 3;
                 return { value, done: true };
               } else {
-                const obj8 = { key: "dev-tools-gift-intent-server", content };
+                const obj8 = { text };
                 const obj2 = stateFromStores1(stateFromStores2[16]);
-                obj2.open(obj8);
+                obj2.open("dev-tools-gift-intent-server", obj8);
                 c6 = 4;
                 c7 = 1;
                 const obj9 = { value: closure_1_9(), done: false };
@@ -420,7 +420,7 @@ function FriendAnniversary() {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp40) {
           closure_4 = tmp40;
@@ -528,14 +528,14 @@ function FriendAnniversary() {
           const obj3 = stateFromStores1(stateFromStores2[21]);
           const result = obj3.sendGiftingPromptSystemMessage(channelId, obj4);
           const obj5 = stateFromStores1(stateFromStores2[16]);
-          obj5.open({ key: "dev-tools-gift-intent-triggered", content: "Friendship anniversary card sent." });
+          obj5.open("dev-tools-gift-intent-triggered", { text: "Friendship anniversary card sent." });
         } else {
           const obj2 = stateFromStores1(stateFromStores2[16]);
-          obj2.open({ key: "dev-tools-gift-intent-no-recipient", content: "Selected channel has no other recipient." });
+          obj2.open("dev-tools-gift-intent-no-recipient", { text: "Selected channel has no other recipient." });
         }
       } else {
         const obj = stateFromStores1(stateFromStores2[16]);
-        obj.open({ key: "dev-tools-gift-intent-no-channel", content: "Open a DM first." });
+        obj.open("dev-tools-gift-intent-no-channel", { text: "Open a DM first." });
       }
     }
   };
@@ -675,7 +675,7 @@ function FriendAnniversary() {
       const obj = stateFromStores1(stateFromStores2[13]);
       obj.dispatch({ type: "DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET" });
       const obj2 = stateFromStores1(stateFromStores2[16]);
-      obj2.open({ key: "dev-tools-gift-intent-local", content: "Cleared local message cooldown." });
+      obj2.open("dev-tools-gift-intent-local", { text: "Cleared local message cooldown." });
     }
   };
   items11[6] = closure_17(tmp(tmp2[17]).TableRow, obj19);
@@ -689,10 +689,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(7163);
+  let obj = premiumTrialOffer(7169);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(6269).TableRowGroup;
-  const TableRow = premiumTrialOffer(6186).TableRow;
+  const TableRowGroup = premiumTrialOffer(6264).TableRowGroup;
+  const TableRow = premiumTrialOffer(6179).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -701,12 +701,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15972, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16034, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(6186).TableRow;
+  const TableRow2 = tmp(6179).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -716,7 +716,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15972, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16034, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -969,9 +969,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceM
     tmp11 = cResult[3];
   }
   if (cResult[4] !== (tmp8 || stateFromStores)) {
-    const TableRowGroup = tmp(6269).TableRowGroup;
+    const TableRowGroup = tmp(6264).TableRowGroup;
     let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
-    const TableSwitchRow = tmp(6889).TableSwitchRow;
+    const TableSwitchRow = tmp(6895).TableSwitchRow;
     if (tmp8) {
       str = "Forced on - the current device can't fetch real StoreKit products.";
     }
@@ -1117,7 +1117,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsReve
   }
   const obj10 = { style: tmp4.container, contentContainerStyle: tmp4.scrollContainer, children: items };
   items = [tmp5, tmp6, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13];
-  const tmp51 = authStore6(ScrollView, obj10);
+  const tmp51 = authStore5(ScrollView, obj10);
   cResult[17] = tmp4.container;
   cResult[18] = tmp4.scrollContainer;
   cResult[19] = tmp51;
@@ -1158,7 +1158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsReve
   const Spacer8 = native.Spacer;
   items[15] = closure_17(Spacer8, obj9);
   items[16] = closure_17(FriendAnniversary, {});
-  return authStore6(ScrollView, obj);
+  return authStore5(ScrollView, obj);
 });
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsRevenuePlaygroundScreen.tsx");
 

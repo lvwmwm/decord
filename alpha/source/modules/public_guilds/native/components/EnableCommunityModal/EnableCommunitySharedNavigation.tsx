@@ -1,16 +1,16 @@
-// Module ID: 18332
-// Function ID: 18333
+// Module ID: 18406
+// Function ID: 18407
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 8622, 1085, 21, 5091, 558, 576, 504, 1503, 5361, 5370, 584, 18330, 6725, 1126, 5376, 6810, 2]
+// Dependencies: [19, 17, 8638, 1085, 21, 5092, 558, 576, 504, 1503, 5362, 5371, 18404, 6726, 1126, 5379, 6813, 2]
 
-// Module 18332 (EnableCommunitySharedNavigation)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 18406 (EnableCommunitySharedNavigation)
 import Constants from "Constants" /* 1085 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18404 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8622 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8638 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableCommun
       if (null == guild) {
         const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-          closure_8(tmp(tmp2[14]).SceneLoadingIndicator, {});
+          closure_8(tmp(tmp2[13]).SceneLoadingIndicator, {});
           class E {
             constructor() {
               return isScreenReaderEnabled.getProps();
@@ -153,8 +153,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableCommun
               if (cResult[21] !== buttonText) {
                 let stringResult = buttonText;
                 if (buttonText == null) {
-                  const intl = tmp(tmp2[15]).intl;
-                  stringResult = intl.string(tmp(tmp2[15]).t.PDTjLN);
+                  const intl = tmp(tmp2[14]).intl;
+                  stringResult = intl.string(tmp(tmp2[14]).t.PDTjLN);
                 }
                 class E {
                   constructor() {
@@ -211,7 +211,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableCommun
                     tmp39[1] = tmp4.modal;
                     const items1 = [tmp25, tmp34];
                     tmp39[2] = items1;
-                    const tmp40 = closure_9(tmp(tmp2[17]).SafeAreaPaddingView, tmp39);
+                    const tmp40 = closure_9(tmp(tmp2[16]).SafeAreaPaddingView, tmp39);
                     cResult[30] = tmp4.modal;
                     cResult[31] = tmp25;
                     cResult[32] = tmp34;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableCommun
                 }
               }
               const obj6 = { variant: "primary", grow: true, text: tmp29, onPress: tmp23, disabled: disableNextStep };
-              const tmp33 = closure_8(tmp(tmp2[16]).Button, obj6);
+              const tmp33 = closure_8(tmp(tmp2[15]).Button, obj6);
               cResult[23] = disableNextStep;
               cResult[24] = tmp23;
               cResult[25] = tmp29;
@@ -354,29 +354,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableCommun
   const effect1 = guild.useEffect(() => {
     const tmp = hasItem;
     if (tmp) {
-      let obj = DispatcherDefault;
-      obj.wait(() => {
-        const obj = closure_1_1(headerRef[13]);
-        return obj.close();
-      });
+      const obj = EnableCommunityModalActionCreatorsDefault;
+      obj.close();
     }
   }, items2);
   if (null == guild) {
-    tmp12Result = closure_8(tmp2(tmp3[14]).SceneLoadingIndicator, {});
+    tmp12Result = closure_8(tmp2(tmp3[13]).SceneLoadingIndicator, {});
   } else {
     let obj2 = { style: tmp.container, children: tmp14(SafeAreaPaddingView, obj3) };
     obj3 = { bottom: true, style: tmp.modal, children: items3 };
     const obj4 = { style: { flexGrow: 1 }, children };
-    SafeAreaPaddingView = tmp2(tmp3[17]).SafeAreaPaddingView;
+    SafeAreaPaddingView = tmp2(tmp3[16]).SafeAreaPaddingView;
     items3 = [closure_8(hasItem, obj4), ];
     const obj5 = { style: tmp.button, children: closure_8(Button, obj6) };
-    Button = tmp2(tmp3[16]).Button;
+    Button = tmp2(tmp3[15]).Button;
     const tmp13 = closure_5;
     tmp14 = closure_9;
     const tmp15 = hasItem;
     if (buttonText == null) {
-      const intl = tmp2(tmp3[15]).intl;
-      buttonText = intl.string(tmp2(tmp3[15]).t.PDTjLN);
+      const intl = tmp2(tmp3[14]).intl;
+      buttonText = intl.string(tmp2(tmp3[14]).t.PDTjLN);
     }
     obj6 = {
       variant: "primary",

@@ -1,28 +1,28 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 16976
+// Function ID: 16977
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5754, 4904, 2086, 21, 5087, 558, 576, 1126, 16909, 9371, 16910, 15421, 573, 6947, 6034, 5299, 1112, 2]
+// Dependencies: [19, 5757, 4943, 2087, 21, 5088, 558, 576, 1126, 16977, 9398, 16978, 15483, 573, 6953, 6027, 5300, 1112, 2]
 
-// Module 16908 (GuildRoleSubscriptionsOverview)
+// Module 16976 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9371 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16909 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9398 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16977 */;
 import react_mod from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4904 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4943 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const GroupListingsFetchContext = tmp(15421);
-const GuildRoleSubscriptionPurchasePageDefault = tmp4(16910);
+const GroupListingsFetchContext = tmp(15483);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(16978);
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }

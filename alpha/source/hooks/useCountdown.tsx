@@ -1,12 +1,12 @@
-// Module ID: 7155
-// Function ID: 7156
+// Module ID: 7161
+// Function ID: 7162
 // Name: useCountdown
-// Dependencies: [19, 558, 576, 4752, 7156, 7161, 2]
+// Dependencies: [19, 558, 576, 4793, 7162, 7167, 2]
 
-// Module 7155 (useCountdown)
+// Module 7161 (useCountdown)
 import react from "react" /* 19 */;
-import DateUtils from "DateUtils" /* 4752 */;
-import useIntervalDefault from "useInterval" /* 7161 */;
+import DateUtils from "DateUtils" /* 4793 */;
+import useIntervalDefault from "useInterval" /* 7167 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdo
   dependencyMap = tmp4;
   if (cResult[0] !== expiresAt) {
     const _Date = Date;
-    const tmpResult = tmp(4752);
+    const tmpResult = tmp(4793);
     const diffAsUnitsResult = tmpResult.diffAsUnits(Date.now(), expiresAt);
     cResult[0] = expiresAt;
     cResult[1] = diffAsUnitsResult;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdo
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult2 = tmp(7156);
+  const tmpResult2 = tmp(7162);
   const forceUpdate = tmpResult2.useForceUpdate();
   if (cResult[2] === expiresAt) {
     if (cResult[3] === (undefined !== arg3 && arg3)) {
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdo
   }
   let obj = require("DateUtils");
   const diffAsUnitsResult = obj.diffAsUnits(Date.now(), expiresAt);
-  const obj2 = require("module_7156");
+  const obj2 = require("module_7162");
   const forceUpdate = obj2.useForceUpdate();
   const items = [expiresAt, flag, forceUpdate, arg2];
   let tmp5 = null;

@@ -1,20 +1,20 @@
-// Module ID: 14759
-// Function ID: 14760
+// Module ID: 14814
+// Function ID: 14815
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1390, 21, 558, 576, 6848, 6872, 504, 8295, 14760, 2]
+// Dependencies: [19, 1390, 21, 558, 576, 6851, 6878, 504, 8311, 14815, 2]
 
-// Module 14759 (UserSettingsEditUserProfile)
+// Module 14814 (UserSettingsEditUserProfile)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6848 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8295 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const UserProfileEditFormDefault = tmp4(14760);
+const UserProfileEditFormDefault = tmp4(14815);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsEditUserProfile(arg0) {
   let currentUser;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
         constructor() {
           if (null != stateFromStores) {
             const tmp3 = maybeFetchUserProfileDefault;
-            tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+            tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
           }
         }
       }
@@ -93,13 +93,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
           constructor() {
             if (null != stateFromStores) {
               const tmp3 = maybeFetchUserProfileDefault;
-              tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+              tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
             }
           }
         }
         tmp13 = tmp21;
       }
-      const tmp23 = jsx(stateFromStores(6848).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp14 });
+      const tmp23 = jsx(stateFromStores(6851).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp14 });
       cResult[8] = analyticsLocations;
       cResult[9] = tmp14;
       cResult[10] = tmp23;
@@ -126,12 +126,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   const effect = react.useEffect(() => {
     if (null != stateFromStores) {
       const tmp3 = maybeFetchUserProfileDefault;
-      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
     }
   }, items1);
   let tmp7 = null;
   if (null != stateFromStores) {
-    const AnalyticsLocationProvider = tmp4(6848).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp4(6851).AnalyticsLocationProvider;
     UserProfileEditFormDefault;
     const merged = Object.assign(arg0);
     tmp7 = <AnalyticsLocationProvider value={analyticsLocations}>{null}</AnalyticsLocationProvider>;

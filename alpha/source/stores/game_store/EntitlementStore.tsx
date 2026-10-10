@@ -1,18 +1,18 @@
-// Module ID: 7103
-// Function ID: 7104
+// Module ID: 7109
+// Function ID: 7110
 // Name: EntitlementStore
-// Dependencies: [7104, 7106, 6094, 1085, 1392, 504, 12, 7108, 1088, 584, 2]
+// Dependencies: [7110, 7112, 6087, 1085, 1392, 504, 12, 7114, 1088, 584, 2]
 
-// Module 7103 (EntitlementStore)
+// Module 7109 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedAll from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1088 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7108 */;
-import EntitlementRecord from "EntitlementRecord" /* 7104 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7106 */;
-import SKUStore from "SKUStore" /* 6094 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7114 */;
+import EntitlementRecord from "EntitlementRecord" /* 7110 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7112 */;
+import SKUStore from "SKUStore" /* 6087 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let c14 = false;
 let c15 = false;
 let set = new Set();
 let set1 = new Set();
-const authStore6 = {};
+const authStore5 = {};
 const Store = get_initializedAll.Store;
 class EntitlementStore extends Store {
   initialize() {

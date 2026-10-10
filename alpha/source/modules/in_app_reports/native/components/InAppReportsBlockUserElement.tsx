@@ -1,18 +1,18 @@
-// Module ID: 13494
-// Function ID: 13495
+// Module ID: 13545
+// Function ID: 13546
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 2064, 4719, 1085, 21, 558, 576, 504, 5406, 5106, 7011, 7017, 1126, 9344, 13492, 2]
+// Dependencies: [19, 2065, 4760, 1085, 21, 558, 576, 504, 5409, 5107, 7017, 7025, 1126, 9371, 13543, 2]
 
-// Module 13494 (InAppReportsBlockUserElement)
+// Module 13545 (InAppReportsBlockUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7011 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7017 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7017 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7025 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockUserEle
               const obj2 = { other_user_id: user.id, report_id: reportId };
               obj.trackWithMetadata(AnalyticEvents.IAR_BLOCK_USER_BUTTON_CLICKED, obj2);
               const obj3 = RelationshipActionCreatorsDefault;
-              obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" });
+              obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" }, channelId);
               const obj4 = SafetyToastsActionCreatorsDefault;
               const result = obj4.showBlockSuccessToast(user.id, channelId);
             }
@@ -115,7 +115,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockUserEle
           const obj2 = { other_user_id: user.id, report_id: reportId };
           obj.trackWithMetadata(AnalyticEvents.IAR_BLOCK_USER_BUTTON_CLICKED, obj2);
           const obj3 = RelationshipActionCreatorsDefault;
-          obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" });
+          obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" }, channelId);
           const obj4 = SafetyToastsActionCreatorsDefault;
           const result = obj4.showBlockSuccessToast(user.id, channelId);
         }

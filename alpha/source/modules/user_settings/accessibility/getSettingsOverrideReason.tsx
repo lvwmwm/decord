@@ -1,13 +1,13 @@
-// Module ID: 15540
-// Function ID: 15541
+// Module ID: 15602
+// Function ID: 15603
 // Name: getSettingsOverrideReason
-// Dependencies: [2042, 1095, 1126, 3991, 558, 576, 504, 2]
+// Dependencies: [2042, 1095, 1126, 4013, 558, 576, 504, 2]
 // Exports: default
 
-// Module 15540 (getSettingsOverrideReason)
+// Module 15602 (getSettingsOverrideReason)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3991 from "module_3991" /* 3991 */;
+import _modDef4013 from "module_4013" /* 4013 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2042 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetting
         formatResult = intl.string(intl4.t["2ExvRu"]);
       } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
         const intl3 = intl4.intl;
-        formatResult = intl3.string(_modDef3991.VGcdxP);
+        formatResult = intl3.string(_modDef4013.VGcdxP);
       }
       return formatResult;
     };
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetting
       formatResult = intl.string(intl4.t["2ExvRu"]);
     } else if (constants.GAME_MODE === appliedOverrideReasonKey) {
       const intl3 = intl4.intl;
-      formatResult = intl3.string(_modDef3991.VGcdxP);
+      formatResult = intl3.string(_modDef4013.VGcdxP);
     }
     return formatResult;
   });
@@ -87,7 +87,7 @@ function getSettingsOverrideReason(arg0) {
     return intl2.string(intl4.t["2ExvRu"]);
   } else if (constants.GAME_MODE === arg0) {
     const intl = intl4.intl;
-    return intl.string(_modDef3991.VGcdxP);
+    return intl.string(_modDef4013.VGcdxP);
   }
 }
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSettingLockedByOverride(arg0) {

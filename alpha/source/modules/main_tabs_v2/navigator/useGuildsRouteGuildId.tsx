@@ -1,10 +1,10 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16431
+// Function ID: 16432
 // Name: useGuildsRouteGuildId
 // Dependencies: [558, 1504, 576, 2]
 // Exports: default
 
-// Module 16364 (useGuildsRouteGuildId)
+// Module 16431 (useGuildsRouteGuildId)
 import react from "react" /* 576 */;
 import Link from "Link" /* 1504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

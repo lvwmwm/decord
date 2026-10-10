@@ -1,16 +1,16 @@
-// Module ID: 4721
-// Function ID: 4722
+// Module ID: 4762
+// Function ID: 4763
 // Name: ReactionUtils
-// Dependencies: [502, 1085, 4722, 4723, 1126, 7882, 2041, 1265, 2]
+// Dependencies: [502, 1085, 4763, 4764, 1126, 7900, 2041, 1265, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 4721 (ReactionUtils)
+// Module 4762 (ReactionUtils)
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import NotificationConstants from "NotificationConstants" /* 4722 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4723 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7882 */;
+import NotificationConstants from "NotificationConstants" /* 4763 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7900 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

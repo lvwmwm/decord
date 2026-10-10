@@ -1,12 +1,12 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9064
+// Function ID: 9065
 // Name: TestModeUtils
-// Dependencies: [9046, 9047, 558, 576, 504, 2]
+// Dependencies: [9065, 9066, 558, 576, 504, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication
 
-// Module 9045 (TestModeUtils)
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9046 */;
-import TestModeStore from "TestModeStore" /* 9047 */;
+// Module 9064 (TestModeUtils)
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9065 */;
+import TestModeStore from "TestModeStore" /* 9066 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

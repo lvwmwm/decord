@@ -1,34 +1,102 @@
 // Module ID: 14586
 // Function ID: 14587
-// Dependencies: []
-// Exports: getReactNativeDimensionsWithDimensions
+// Dependencies: [14587, 14535, 14531, 14532, 14551, 14588, 14589, 14554]
 
 // Module 14586
+import _mod14531 from "module_14531" /* 14531 */;
+import _mod14532 from "module_14532" /* 14532 */;
+import _mod14535 from "module_14535" /* 14535 */;
+import _mod14551 from "module_14551" /* 14551 */;
+import _mod14554 from "module_14554" /* 14554 */;
+import _mod14588 from "module_14588" /* 14588 */;
+import _mod14589 from "module_14589" /* 14589 */;
+import prop from "module_14587" /* 14587 */;
 
-export const getReactNativeDimensionsWithDimensions = function getReactNativeDimensionsWithDimensions(value, value2) {
-  try {
-    let obj = {};
-    let obj2 = {};
-    if (value) {
-      const _Math = Math;
-      const _Math2 = Math;
-      ({ scale: obj3.screenScale, fontScale: obj3.screenFontScale } = value);
-      obj = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-      const obj5 = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-    }
-    const tmp3 = value2;
-    if (tmp3) {
-      const _Math3 = Math;
-      const _Math4 = Math;
-      ({ scale: obj4.windowScale, fontScale: obj4.windowFontScale } = value2);
-      obj2 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-      const obj9 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-    }
-    const obj10 = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(obj2);
-    return obj10;
-  } catch (err) {
-    return null;
+let closure_5 = _mod14535("".slice);
+let closure_6 = _mod14535("".replace);
+let closure_7 = _mod14535([].join);
+let tmp = _mod14531 && !_mod14532(() => 8 !== defineProperty(() => {
+
+}, "length", { value: 8 }).length);
+let closure_8 = tmp;
+const str = String(String);
+let closure_9 = str.split("String");
+const fn = (toString, toString2, arg2) => {
+  let text = toString2;
+  const tmp = String;
+  if ("Symbol(" === closure_5(String(toString2), 0, 7)) {
+    text = `${"[" + closure_6(tmp(toString2), /^Symbol\(([^)]*)\).*$/, "$1")}]`;
   }
+  let text1 = text;
+  const tmp4 = arg2 && arg2.getter;
+  if (tmp4) {
+    text1 = `get ${tmp2}`;
+  }
+  let text2 = text1;
+  const tmp6 = arg2 && arg2.setter;
+  if (tmp6) {
+    text2 = `set ${tmp5}`;
+  }
+  const tmp10 = _mod14551(toString, "name");
+  let tmp11 = !tmp10;
+  if (tmp10) {
+    tmp11 = _mod14588.CONFIGURABLE && toString.name !== text2;
+    _mod14588.CONFIGURABLE && toString.name !== text2;
+  }
+  if (tmp11) {
+    if (_mod14531) {
+      const obj = { value: text2, configurable: true };
+      defineProperty(toString, "name", obj);
+    } else {
+      toString.name = text2;
+    }
+  }
+  const tmp15 = closure_8 && arg2 && tmp8(14551)(arg2, "arity") && toString.length !== arg2.arity;
+  if (tmp15) {
+    const obj2 = { value: arg2.arity };
+    defineProperty(toString, "length", obj2);
+  }
+  try {
+    if (arg2) {
+      if (_mod14551(arg2, "constructor")) {
+        if (arg2.constructor) {
+          if (_mod14531) {
+            defineProperty(toString, "prototype", { writable: false });
+          }
+        }
+      }
+    }
+    if (toString.prototype) {
+      toString.prototype = undefined;
+    }
+  } catch (err) {
+  }
+  const tmp8Result = _mod14589;
+  const enforceResult = tmp8Result.enforce(toString);
+  if (!_mod14551(enforceResult, "source")) {
+    let str10 = "";
+    const tmp21 = closure_7;
+    const tmp22 = closure_9;
+    if (typeof text2 === "string") {
+      str10 = text2;
+    }
+    enforceResult.source = tmp21(tmp22, str10);
+  }
+  return toString;
 };
+function toString() {
+  const self = this;
+  let source = _mod14554(this);
+  if (source) {
+    const tmpResult = _mod14589;
+    source = tmpResult.get(self).source;
+  }
+  if (!source) {
+    source = prop(self);
+  }
+  return source;
+}
+fn(toString, "toString");
+prototype.toString = toString;
+
+export default fn;

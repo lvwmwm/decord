@@ -1,21 +1,21 @@
-// Module ID: 10988
-// Function ID: 10989
+// Module ID: 11028
+// Function ID: 11029
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 4761, 6043, 9664, 2064, 5109, 21, 558, 576, 10985, 504, 10326, 7481, 1126, 10989, 4811, 10983, 2]
+// Dependencies: [19, 17, 4802, 6036, 9693, 2065, 5110, 21, 558, 576, 11025, 504, 10359, 7481, 1126, 11029, 4850, 11023, 2]
 
-// Module 10988 (GlobalStatusIndicator)
+// Module 11028 (GlobalStatusIndicator)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10983 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11023 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 4761 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
-import NativeMenuStore from "NativeMenuStore" /* 9664 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import ActionSheetStore from "ActionSheetStore" /* 4802 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import NativeMenuStore from "NativeMenuStore" /* 9693 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -582,7 +582,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStat
           }
           const obj2 = { children: items3 };
           items3 = [tmp19, tmp21];
-          const tmp25 = authStore3(map1, obj2);
+          const tmp25 = syncedClientThemes(map1, obj2);
           cResult[14] = tmp19;
           cResult[15] = tmp21;
           cResult[16] = tmp25;
@@ -640,7 +640,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalStat
   return height.useMemo(() => {
     let items;
     let str;
-    const tmp = authStore3;
+    const tmp = syncedClientThemes;
     const tmp2 = map1;
     const tmp4 = React3;
     if (accessibilityElementsHidden) {

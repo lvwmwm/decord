@@ -1,20 +1,20 @@
-// Module ID: 18020
-// Function ID: 18021
+// Module ID: 18092
+// Function ID: 18093
 // Name: JankNavigationReporter
-// Dependencies: [4938, 16352, 16356, 16357, 4940, 2]
+// Dependencies: [4977, 16419, 16423, 16424, 4979, 2]
 
-// Module 18020 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4938 */;
-import getJankScreenName from "getJankScreenName" /* 16352 */;
-import react_nativeDefault from "react-native" /* 16356 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16357 */;
+// Module 18092 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import getJankScreenName from "getJankScreenName" /* 16419 */;
+import react_nativeDefault from "react-native" /* 16423 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16424 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "backgroundColor" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "color" });
   }
   attach() {
     const self = this;
@@ -109,7 +109,7 @@ class JankNavigationReporter {
         }
         let isChatLockedOpen = null != chatScreens && _screensBeforeDispatch.chatScreens === chatScreens2.chatScreens && _screensBeforeDispatch.expectedScreenIds === chatScreens2.expectedScreenIds;
         if (!isChatLockedOpen) {
-          const tmp4Result = tmp4(4940);
+          const tmp4Result = tmp4(4979);
           isChatLockedOpen = tmp4Result.getChatLayout().isChatLockedOpen;
         }
         tmp6 = isChatLockedOpen;
@@ -123,4 +123,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "backgroundColor" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "Boolean", _screensBeforeDispatch: "color" });

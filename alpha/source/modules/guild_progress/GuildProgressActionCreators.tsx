@@ -1,13 +1,11 @@
-// Module ID: 12166
-// Function ID: 12167
+// Module ID: 12210
+// Function ID: 12211
 // Name: GuildProgressActionCreators
 // Dependencies: [584, 2]
 
-// Module 12166 (GuildProgressActionCreators)
+// Module 12210 (GuildProgressActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
-
-let importDefault;
 
 let obj = {
   createProgress(id) {
@@ -16,14 +14,9 @@ let obj = {
     obj.dispatch(obj2);
   },
   markCompletedProgressSeen(id) {
-    let guildId;
-    importDefault = id;
-    let obj = DispatcherDefault;
-    obj.wait(() => {
-      const obj = DispatcherDefault;
-      const obj2 = { type: "GUILD_PROGRESS_COMPLETED_SEEN", guildId };
-      return obj.dispatch(obj2);
-    });
+    const obj = DispatcherDefault;
+    const obj2 = { type: "GUILD_PROGRESS_COMPLETED_SEEN", guildId: id };
+    obj.dispatch(obj2);
   },
   dismissProgress(id) {
     const obj = DispatcherDefault;

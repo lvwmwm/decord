@@ -1,11 +1,11 @@
-// Module ID: 6687
-// Function ID: 6688
+// Module ID: 6688
+// Function ID: 6689
 // Name: useNavigatorShouldCrossfade
-// Dependencies: [19, 1382, 558, 576, 4795, 2]
+// Dependencies: [19, 1382, 558, 576, 4834, 2]
 
-// Module 6687 (useNavigatorShouldCrossfade)
+// Module 6688 (useNavigatorShouldCrossfade)
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4795 */;
+import react3 from "react" /* 4834 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

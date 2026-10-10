@@ -1,34 +1,34 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 14927
+// Function ID: 14928
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 2124, 7314, 1085, 1392, 21, 4728, 6848, 6872, 14776, 5055, 14764, 2000, 8274, 1126, 8272, 14775, 14775, 9242, 558, 576, 14782, 14778, 6663, 14869, 587, 5087, 14800, 8351, 8270, 6303, 10490, 14863, 504, 8294, 10478, 8352, 8277, 14111, 14870, 8337, 8348, 14871, 14789, 4923, 14790, 14802, 14806, 14807, 14811, 14815, 9366, 9367, 4788, 10496, 10479, 10497, 2]
+// Dependencies: [109, 19, 17, 2125, 7320, 1085, 1392, 21, 4769, 6851, 6878, 14831, 5056, 14819, 2000, 8290, 1126, 8288, 14830, 14830, 9269, 558, 576, 14837, 14833, 6664, 14928, 587, 5088, 14856, 8367, 8286, 6304, 10524, 14922, 504, 8310, 10512, 8368, 8293, 14166, 14929, 8353, 8364, 14930, 14845, 4962, 14846, 14858, 14862, 14863, 14867, 14871, 9393, 9394, 4827, 10530, 10513, 10531, 2]
 
-// Module 14868 (GuildProfileEditForm)
+// Module 14927 (GuildProfileEditForm)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6848 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8272 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8274 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9242 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9366 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9367 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14776 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 14778 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 14782 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14800 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 14869 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8288 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8290 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9269 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9393 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9394 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 14831 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 14833 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 14837 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 14856 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 14928 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import UserProfileStore from "UserProfileStore" /* 7314 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import UserProfileStore from "UserProfileStore" /* 7320 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -66,7 +66,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(6848).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(6851).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -107,7 +107,7 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(14764, dependencyMap.paths);
+        const tmp14 = asyncRequire(14819, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
@@ -152,8 +152,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
   const cResult = obj.c(16);
   ({ onLayout, onButtonPress } = arg0);
   const obj2 = UserProfilePremiumTryItOutMobileRefreshExperiment;
-  const isTryItOutMobileRefreshEnabled = obj2.useIsTryItOutMobileRefreshEnabled("GuildProfileEditForm");
-  const tmp6 = UserProfileEditFormSharedStylesDefault();
+  const enabled = obj2.useTryItOutMobileRefreshConfig("GuildProfileEditForm").enabled;
+  const tmp5 = UserProfileEditFormSharedStylesDefault();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { includeKeyboardHeight: true };
     cResult[0] = obj3;
@@ -161,9 +161,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
   } else {
     first = cResult[0];
   }
-  if (isTryItOutMobileRefreshEnabled) {
-    let tmp21;
+  if (enabled) {
     let tmp20;
+    let tmp19;
     const _Symbol3 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const intl3 = tmp(1126).intl;
@@ -172,82 +172,82 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
       const stringResult1 = intl4.string(intl7.t.pj0XBN);
       cResult[1] = stringResult;
       cResult[2] = stringResult1;
-      tmp21 = stringResult1;
-      tmp20 = stringResult;
+      tmp20 = stringResult1;
+      tmp19 = stringResult;
     } else {
-      tmp20 = cResult[1];
-      tmp21 = cResult[2];
+      tmp19 = cResult[1];
+      tmp20 = cResult[2];
     }
     if (cResult[3] === onButtonPress) {
-      let tmp24;
+      let tmp23;
       if (cResult[4] === onLayout) {
-        tmp24 = cResult[5];
+        tmp23 = cResult[5];
       }
-      return tmp24;
+      return tmp23;
     }
-    const obj4 = { text: tmp20, buttonText: tmp21, buttonVariant: "experimental_premium-primary", onButtonPress, onLayout };
-    const tmp26 = closure_17(UserProfileFloatingUpsellDefault, obj4);
+    const obj4 = { text: tmp19, buttonText: tmp20, buttonVariant: "experimental_premium-primary", onButtonPress, onLayout };
+    const tmp25 = closure_17(UserProfileFloatingUpsellDefault, obj4);
     cResult[3] = onButtonPress;
     cResult[4] = onLayout;
-    cResult[5] = tmp26;
-    tmp24 = tmp26;
+    cResult[5] = tmp25;
+    tmp23 = tmp25;
   } else {
-    let tmp10;
-    const sum = tmp5(587).space.PX_16 + tmp8.bottom;
+    let tmp9;
+    const sum = tmp4(587).space.PX_16 + tmp7.bottom;
     if (cResult[6] !== sum) {
       const obj5 = { bottom: sum };
       cResult[6] = sum;
       cResult[7] = obj5;
-      tmp10 = obj5;
+      tmp9 = obj5;
     } else {
-      tmp10 = cResult[7];
+      tmp9 = cResult[7];
     }
-    if (cResult[8] === tmp6.floatingUpsell) {
+    if (cResult[8] === tmp5.floatingUpsell) {
+      let tmp10;
       let tmp11;
-      let tmp12;
-      let tmp14;
-      if (cResult[9] === tmp10) {
-        tmp11 = cResult[10];
+      let tmp13;
+      if (cResult[9] === tmp9) {
+        tmp10 = cResult[10];
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1126).intl;
         const stringResult2 = intl.string(intl7.t.pj0XBN);
         cResult[11] = stringResult2;
-        tmp12 = stringResult2;
+        tmp11 = stringResult2;
       } else {
-        tmp12 = cResult[11];
+        tmp11 = cResult[11];
       }
       const _Symbol2 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-        const Text = tmp(5087).Text;
+        const Text = tmp(5088).Text;
         intl2 = tmp(1126).intl;
-        const tmp16 = closure_17(Text, obj6);
-        cResult[12] = tmp16;
-        tmp14 = tmp16;
+        const tmp15 = closure_17(Text, obj6);
+        cResult[12] = tmp15;
+        tmp13 = tmp15;
       } else {
-        tmp14 = cResult[12];
+        tmp13 = cResult[12];
       }
       if (cResult[13] === onButtonPress) {
-        let tmp17;
-        if (cResult[14] === tmp11) {
-          tmp17 = cResult[15];
+        let tmp16;
+        if (cResult[14] === tmp10) {
+          tmp16 = cResult[15];
         }
-        return tmp17;
+        return tmp16;
       }
-      const obj7 = { style: tmp11, ctaText: tmp12, onPress: onButtonPress, children: tmp14 };
-      const tmp19 = closure_17(UserProfileUpsellCardDefault, obj7);
+      const obj7 = { style: tmp10, ctaText: tmp11, onPress: onButtonPress, children: tmp13 };
+      const tmp18 = closure_17(UserProfileUpsellCardDefault, obj7);
       cResult[13] = onButtonPress;
-      cResult[14] = tmp11;
-      cResult[15] = tmp19;
-      tmp17 = tmp19;
+      cResult[14] = tmp10;
+      cResult[15] = tmp18;
+      tmp16 = tmp18;
     }
-    const items = [tmp6.floatingUpsell, tmp10];
-    cResult[8] = tmp6.floatingUpsell;
-    cResult[9] = tmp10;
+    const items = [tmp5.floatingUpsell, tmp9];
+    cResult[8] = tmp5.floatingUpsell;
+    cResult[9] = tmp9;
     cResult[10] = items;
-    tmp11 = items;
+    tmp10 = items;
   }
 }) : (function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
   let Text;
@@ -257,31 +257,31 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
   let intl4;
   let items;
   let obj5;
-  let tmp7Result;
+  let tmp6Result;
   onButtonPress = onButtonPress.onButtonPress;
   const onLayout = onButtonPress.onLayout;
   const obj = UserProfilePremiumTryItOutMobileRefreshExperiment;
-  const isTryItOutMobileRefreshEnabled = obj.useIsTryItOutMobileRefreshEnabled("GuildProfileEditForm");
-  const tmp5 = UserProfileEditFormSharedStylesDefault();
-  if (isTryItOutMobileRefreshEnabled) {
+  const enabled = obj.useTryItOutMobileRefreshConfig("GuildProfileEditForm").enabled;
+  const tmp4 = UserProfileEditFormSharedStylesDefault();
+  if (enabled) {
     const obj2 = { text: intl3.string(intl7.t.YIZS5B), buttonText: intl4.string(intl7.t.pj0XBN), buttonVariant: "experimental_premium-primary", onButtonPress, onLayout };
-    const tmp4Result = UserProfileFloatingUpsellDefault;
+    const tmp3Result = UserProfileFloatingUpsellDefault;
     intl3 = tmp(1126).intl;
     intl4 = tmp(1126).intl;
-    tmp7Result = tmp7(tmp4Result, obj2);
+    tmp6Result = tmp6(tmp3Result, obj2);
   } else {
     const obj3 = { style: items, ctaText: intl.string(intl7.t.pj0XBN), onPress: onButtonPress, children: closure_17(Text, obj5) };
-    items = [tmp5.floatingUpsell, ];
-    const obj4 = { bottom: nativeDefault.space.PX_16 + tmp6.bottom };
+    items = [tmp4.floatingUpsell, ];
+    const obj4 = { bottom: nativeDefault.space.PX_16 + tmp5.bottom };
     items[1] = obj4;
-    const tmp4Result2 = UserProfileUpsellCardDefault;
+    const tmp3Result2 = UserProfileUpsellCardDefault;
     intl = tmp(1126).intl;
     obj5 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5087).Text;
+    Text = tmp(5088).Text;
     intl2 = tmp(1126).intl;
-    tmp7Result = tmp7(tmp4Result2, obj3);
+    tmp6Result = tmp6(tmp3Result2, obj3);
   }
-  return tmp7Result;
+  return tmp6Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileEditForm(currentUser) {

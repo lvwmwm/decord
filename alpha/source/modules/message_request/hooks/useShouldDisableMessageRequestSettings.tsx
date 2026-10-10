@@ -1,12 +1,12 @@
-// Module ID: 16201
-// Function ID: 16202
+// Module ID: 16268
+// Function ID: 16269
 // Name: useShouldDisableMessageRequestSettings
-// Dependencies: [558, 5906, 5919, 6991, 2]
+// Dependencies: [558, 5909, 5921, 6997, 2]
 
-// Module 16201 (useShouldDisableMessageRequestSettings)
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5906 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5919 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6991 */;
+// Module 16268 (useShouldDisableMessageRequestSettings)
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6997 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

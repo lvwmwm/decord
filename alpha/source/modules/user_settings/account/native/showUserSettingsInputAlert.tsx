@@ -1,14 +1,14 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 15026
+// Function ID: 15027
 // Name: showUserSettingsInputAlert
-// Dependencies: [19, 21, 5299, 14968, 2000, 1126, 5395, 2]
+// Dependencies: [19, 21, 5300, 15027, 2000, 1126, 5398, 2]
 // Exports: default
 
-// Module 14967 (showUserSettingsInputAlert)
+// Module 15026 (showUserSettingsInputAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export default function showUserSettingsInputAlert(arg0) {
       let onError;
       let onSubmit;
       let onSuccess;
-      const promise = asyncRequire(14968, dependencyMap.paths);
+      const promise = asyncRequire(15027, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {
@@ -51,8 +51,7 @@ export default function showUserSettingsInputAlert(arg0) {
           return tmp(tmp2, obj);
         };
       });
-    },
-    isDismissable: false
+    }
   };
   obj.openLazy(obj2);
 };

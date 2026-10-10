@@ -1,10 +1,10 @@
-// Module ID: 13330
-// Function ID: 13331
+// Module ID: 13380
+// Function ID: 13381
 // Name: MobileWishlistSuggestionsExperiment
 // Dependencies: [1453, 558, 576, 2]
 // Exports: getIsMobileWishlistSuggestionsEnabled
 
-// Module 13330 (MobileWishlistSuggestionsExperiment)
+// Module 13380 (MobileWishlistSuggestionsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

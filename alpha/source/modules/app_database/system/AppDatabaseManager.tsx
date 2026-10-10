@@ -1,13 +1,13 @@
-// Module ID: 7327
-// Function ID: 7328
+// Module ID: 7333
+// Function ID: 7334
 // Name: AppDatabaseManager
-// Dependencies: [32, 502, 3, 2107, 2091, 584, 7328, 2]
+// Dependencies: [32, 502, 3, 2108, 2092, 584, 7334, 2]
 
-// Module 7327 (AppDatabaseManager)
+// Module 7333 (AppDatabaseManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Dispatcher from "Dispatcher" /* 584 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2107 */;
-import actions2 from "actions" /* 7328 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2108 */;
+import actions2 from "actions" /* 7334 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -76,7 +76,7 @@ class AppDatabaseManager {
     if (null != value) {
       if (0 !== value.length) {
         if (null != databaseResult) {
-          if (stateResult === require("module_2091").DatabaseState.Open) {
+          if (stateResult === require("module_2092").DatabaseState.Open) {
             const transaction = databaseResult.transaction;
             let combined = null;
             if (!set.has(type.type)) {

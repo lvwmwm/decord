@@ -1,22 +1,22 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16489
+// Function ID: 16490
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 5107, 15504, 1096, 21, 5091, 587, 558, 576, 573, 5625, 8834, 16420, 16421, 10209, 8634, 1382, 6163, 10227, 1200, 15505, 5087, 2]
+// Dependencies: [5, 32, 19, 17, 5108, 15566, 1096, 21, 5092, 587, 558, 576, 573, 5628, 8853, 16490, 16491, 10238, 8650, 1382, 6156, 10256, 1200, 15567, 5088, 2]
 
-// Module 16419 (HappeningNowCustomStatus)
+// Module 16489 (HappeningNowCustomStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 10227 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 10256 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5107 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15504 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15566 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -132,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     if (cResult[4] === user.id) {
       tmp12 = cResult[5];
     }
-    const tmp14 = activity(5625)(tmp12);
+    const tmp14 = activity(5628)(tmp12);
     if (cResult[6] !== tmp14) {
       let obj3 = { displayNameStyles: tmp14 };
       cResult[6] = tmp14;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     } else {
       tmp15 = cResult[7];
     }
-    const tmpResult3 = tmp(8834);
+    const tmpResult3 = tmp(8853);
     const displayNameStylesFont = tmpResult3.useDisplayNameStylesFont(tmp15);
     if (cResult[8] !== activity.emoji) {
       class J {
@@ -160,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -259,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -322,7 +322,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -355,7 +355,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -418,7 +418,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -432,7 +432,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
         }
       }
     }
-    const tmpResult4 = tmp(10209);
+    const tmpResult4 = tmp(10238);
     const gameMentionsAsPlainText = tmpResult4.useGameMentionsAsPlainText(activity.state);
     if (cResult[11] !== status) {
       class J {
@@ -451,7 +451,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -514,7 +514,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -547,7 +547,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -610,7 +610,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -641,7 +641,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -704,7 +704,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
                   closure_1_5(emojiSource);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } catch (tmp27) {
                 c3 = 3;
                 throw tmp27;
@@ -782,8 +782,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   let obj2 = { userId: user.id, guildId };
-  let tmp10 = activity(5625)(obj2);
-  let obj3 = user(8834);
+  let tmp10 = activity(5628)(obj2);
+  let obj3 = user(8853);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
   items1 = [activity.emoji];
   const effect = react.useEffect(() => {
@@ -805,7 +805,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -868,7 +868,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
               closure_1_5(emojiSource);
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp27) {
             c3 = 3;
             throw tmp27;
@@ -882,16 +882,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
   if (null != activity.emoji) {
     num = 1;
   }
-  const tmp6Result = user(10209);
+  const tmp6Result = user(10238);
   const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
-  const tmp6Result3 = user(8634);
+  const tmp6Result3 = user(8650);
   items2[1] = tmp6Result3.getStatusLabel(status);
   items2[2] = gameMentionsAsPlainText;
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(15505);
+  const tmp9Result = activity(15567);
   if (fullwidth) {
     str = "full";
   }
@@ -908,12 +908,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
       let tmp15Result = null != source;
       if (tmp15Result) {
         let obj8 = { source, style: tmp.largeEmoji };
-        tmp15Result = tmp15(tmp9(6163), obj8);
+        tmp15Result = tmp15(tmp9(6156), obj8);
       }
       tmp15Result3 = tmp15Result;
     } else {
       let obj9 = { emoji: activity.emoji, size: v32, style: tmp.largeEmoji, animate: false };
-      tmp15Result3 = tmp15(tmp9(10227), obj9);
+      tmp15Result3 = tmp15(tmp9(10256), obj9);
     }
     items4 = [tmp15Result3, ];
     items4[1] = items1.map((item, index) => {
@@ -941,7 +941,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     const Avatar = tmp6(1200).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_11(user(15505).HappeningNowCardHeader, obj12);
+    items6[1] = closure_11(user(15567).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -953,7 +953,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     let tmp15Result4 = num2 > 0;
     if (tmp15Result4) {
       const obj13 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-      tmp15Result4 = tmp15(tmp6(5087).Text, obj13);
+      tmp15Result4 = tmp15(tmp6(5088).Text, obj13);
     }
     const obj14 = { children: items5 };
     items6[2] = tmp15Result4;
@@ -967,9 +967,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(15505).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(15567).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-    items8[1] = closure_11(user(5087).Text, obj19);
+    items8[1] = closure_11(user(5088).Text, obj19);
     items7[1] = closure_12(View, obj17);
     tmp18Result = closure_12(closure_13, obj15);
   }

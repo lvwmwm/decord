@@ -1,15 +1,15 @@
 // Module ID: 7484
 // Function ID: 7485
 // Name: useIsOnStartStageScreenStore
-// Dependencies: [19, 4709, 2115, 570, 1272, 558, 576, 504, 2072, 7485, 2]
+// Dependencies: [19, 4750, 2116, 570, 1272, 558, 576, 504, 2073, 7485, 2]
 // Exports: setIsOnStartStageScreen
 
 // Module 7484 (useIsOnStartStageScreenStore)
 import react_native from "react-native" /* 1272 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 2072 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 2073 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f96130 = () => {
+const f96383 = () => {
   obj = { isOnStartStageScreen };
   return state.setState(obj);
 };
@@ -98,12 +98,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f96130);
+        obj2.batchUpdates(f96383);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f96130);
+      obj.batchUpdates(f96383);
     }
   };
   items3 = [stateFromStores, tmp13];
@@ -130,12 +130,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateIsO
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f96130);
+        obj2.batchUpdates(f96383);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f96130);
+      obj.batchUpdates(f96383);
     }
   }, items3);
 });
@@ -143,7 +143,7 @@ function setIsOnStartStageScreen(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("react-native");
-  obj.batchUpdates(f96130);
+  obj.batchUpdates(f96383);
 }
 const result = size.fileFinishedImporting("modules/stage_channels/useIsOnStartStageScreenStore.tsx");
 

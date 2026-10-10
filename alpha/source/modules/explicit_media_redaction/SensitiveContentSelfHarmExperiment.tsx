@@ -1,10 +1,10 @@
-// Module ID: 6985
-// Function ID: 6986
+// Module ID: 6991
+// Function ID: 6992
 // Name: SensitiveContentSelfHarmExperiment
 // Dependencies: [1453, 558, 576, 2]
 // Exports: isSensitiveContentSelfHarmEnabled
 
-// Module 6985 (SensitiveContentSelfHarmExperiment)
+// Module 6991 (SensitiveContentSelfHarmExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

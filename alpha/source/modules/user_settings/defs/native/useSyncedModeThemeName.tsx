@@ -1,12 +1,12 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 15576
+// Function ID: 15577
 // Name: useSyncedModeThemeName
-// Dependencies: [1205, 1253, 558, 576, 1252, 1126, 2795, 504, 2]
+// Dependencies: [1205, 1253, 558, 576, 1252, 1126, 2798, 504, 2]
 
-// Module 15514 (useSyncedModeThemeName)
+// Module 15576 (useSyncedModeThemeName)
 import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
-import _modDef2795 from "module_2795" /* 2795 */;
+import _modDef2798 from "module_2798" /* 2798 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncedModeThe
       }
       if (null != prop) {
         const intl = intl2.intl;
-        stringResult = intl.string(_modDef2795.yl1iMm);
+        stringResult = intl.string(_modDef2798.yl1iMm);
       } else {
         let prop1;
         if (syncedClientTheme != null) {
@@ -92,7 +92,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncedModeThe
     }
     if (null != prop) {
       const intl = intl2.intl;
-      stringResult = intl.string(_modDef2795.yl1iMm);
+      stringResult = intl.string(_modDef2798.yl1iMm);
     } else {
       let prop1;
       if (syncedClientTheme != null) {

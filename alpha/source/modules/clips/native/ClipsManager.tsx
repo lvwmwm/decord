@@ -1,24 +1,24 @@
-// Module ID: 18493
-// Function ID: 18494
+// Module ID: 18567
+// Function ID: 18568
 // Name: ClipsManager
-// Dependencies: [7744, 18494, 4768, 1126, 2]
+// Dependencies: [7762, 18568, 4809, 1126, 2]
 
-// Module 18493 (ClipsManager)
+// Module 18567 (ClipsManager)
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import ClipsConstants from "ClipsConstants" /* 7744 */;
-import ClipsManager2 from "clips/ClipsManager" /* 18494 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ClipsConstants from "ClipsConstants" /* 7762 */;
+import ClipsManager2 from "clips/ClipsManager" /* 18568 */;
 import size from "module_2" /* 2 */;
 
 const CLIPS_TOAST_DURATION = ClipsConstants.CLIPS_TOAST_DURATION;
 class ClipsManager extends ClipsManager2 {
   showClipsToast() {
     let intl;
-    const obj = { key: "CLIPS_IN_CALL_WARNING", content: intl.string(intl2.t["d+41qJ"]), toastDurationMs: CLIPS_TOAST_DURATION };
+    const obj = { text: intl.string(intl2.t["d+41qJ"]), duration: CLIPS_TOAST_DURATION };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
-    open(obj);
+    open("CLIPS_IN_CALL_WARNING", obj);
   }
   applyNativeClipsSettings() {
 

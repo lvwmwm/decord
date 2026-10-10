@@ -1,125 +1,149 @@
 // Module ID: 6403
 // Function ID: 6404
-// Dependencies: [6338]
-// Exports: checkMappingForChangeProperties, flattenAndFilterEvent, getChangeEventCalculator, isEventForHandlerWithTag, isNativeAnimatedEvent, isStateChangeEvent, isTouchEvent, maybeExtractNativeEvent, shouldHandleTouchEvents
+// Dependencies: [32, 19, 6401, 6391, 6404, 6377, 6392, 6339]
+// Exports: prepareConfigForNativeSide, resolveInternalConfigProps, useClonedAndRemappedConfig
 
 // Module 6403
-import tagMessage from "tagMessage" /* 6338 */;
+import react from "react" /* 19 */;
+import Reanimated2 from "Reanimated" /* 6377 */;
+import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 6391 */;
+import allowedNativeProps2 from "allowedNativeProps" /* 6392 */;
+import _mod6401 from "module_6401" /* 6401 */;
+import _mod6404 from "module_6404" /* 6404 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function isNativeEvent(arg0) {
-  return "nativeEvent" in arg0;
+const useMemo = react.useMemo;
+const map = new Map();
+function DEFAULT_PROPS_TRANSFORMER(arg0) {
+  return arg0;
 }
-isNativeEvent.__closure = {};
-isNativeEvent.__workletHash = 15502708650016;
-isNativeEvent.__initData = { code: "function isNativeEvent_Pnpm_eventUtilsTs1(event){return'nativeEvent'in event;}" };
-function maybeExtractNativeEvent(nativeEvent) {
-  if (typeof isNativeEvent === "function") {
-    if ("nativeEvent" in nativeEvent) {
-      nativeEvent = nativeEvent.nativeEvent;
-    }
-    return nativeEvent;
+function isGestureEnabled(gestures) {
+  let someResult;
+  const obj = _mod6401;
+  if (obj.isComposedGesture(gestures)) {
+    gestures = gestures.gestures;
+    someResult = gestures.some(isGestureEnabled);
   } else {
-    throw new TypeError("Trying to call a non-function");
+    const tmpResult = SHARED_VALUE_OFFSET;
+    someResult = false !== tmpResult.maybeUnpackValue(gestures.config.enabled);
   }
+  return someResult;
 }
-maybeExtractNativeEvent.__closure = { isNativeEvent };
-maybeExtractNativeEvent.__workletHash = 9418753326359;
-maybeExtractNativeEvent.__initData = { code: "function maybeExtractNativeEvent_Pnpm_eventUtilsTs2(event){const{isNativeEvent}=this.__closure;return isNativeEvent(event)?event.nativeEvent:event;}" };
-function flattenAndFilterEvent(handlerTag) {
-  const obj = { handlerTag: handlerTag.handlerTag };
-  const merged = Object.assign(handlerTag.handlerData);
-  return obj;
-}
-flattenAndFilterEvent.__closure = {};
-flattenAndFilterEvent.__workletHash = 12741778497058;
-flattenAndFilterEvent.__initData = { code: "function flattenAndFilterEvent_Pnpm_eventUtilsTs3(event){return{handlerTag:event.handlerTag,...event.handlerData};}" };
-function isEventForHandlerWithTag(arg0, handlerTag) {
-  return handlerTag.handlerTag === arg0;
-}
-isEventForHandlerWithTag.__closure = {};
-isEventForHandlerWithTag.__workletHash = 11134871115176;
-isEventForHandlerWithTag.__initData = { code: "function isEventForHandlerWithTag_Pnpm_eventUtilsTs4(handlerTag,event){return event.handlerTag===handlerTag;}" };
-function isNativeAnimatedEvent(onUpdate) {
-  return onUpdate && "_argMapping" in onUpdate;
-}
-isNativeAnimatedEvent.__closure = {};
-isNativeAnimatedEvent.__workletHash = 3439774750008;
-isNativeAnimatedEvent.__initData = { code: "function isNativeAnimatedEvent_Pnpm_eventUtilsTs5(callback){return!!callback&&'_argMapping'in callback;}" };
-const __initData = { code: "function pnpm_eventUtilsTs7(current,previous){const{diffCalculator}=this.__closure;const currentEventData=current.handlerData;const previousEventData=previous?previous.handlerData:null;const changePayload=diffCalculator(currentEventData,previousEventData);current.handlerData={...currentEventData,...changePayload};return current;}" };
-function getChangeEventCalculator(diffCalculator) {
-  let closure_0 = diffCalculator;
-  const fn = function t(handlerData, handlerData2) {
-    handlerData = handlerData.handlerData;
-    let handlerData1 = null;
-    if (handlerData2) {
-      handlerData1 = handlerData2.handlerData;
-    }
-    const obj = {};
-    const tmp2 = closure_0(handlerData, handlerData1);
-    const merged = Object.assign(handlerData);
-    const merged1 = Object.assign(tmp2);
-    handlerData.handlerData = obj;
-    return handlerData;
-  };
-  fn.__closure = { diffCalculator };
-  fn.__workletHash = 10887773943786;
-  fn.__initData = __initData;
-  return fn;
-}
-getChangeEventCalculator.__closure = {};
-getChangeEventCalculator.__workletHash = 1165584403675;
-getChangeEventCalculator.__initData = { code: "function getChangeEventCalculator_Pnpm_eventUtilsTs6(diffCalculator){return function(current,previous){'worklet';const currentEventData=current.handlerData;const previousEventData=previous?previous.handlerData:null;const changePayload=diffCalculator(currentEventData,previousEventData);current.handlerData={...currentEventData,...changePayload};return current;};}" };
-function isTouchEvent(arg0) {
-  return "allTouches" in arg0;
-}
-isTouchEvent.__closure = {};
-isTouchEvent.__workletHash = 14798108877298;
-isTouchEvent.__initData = { code: "function isTouchEvent_Pnpm_eventUtilsTs8(event){return'allTouches'in event;}" };
-function isStateChangeEvent(oldState) {
-  return "oldState" in oldState && undefined !== oldState.oldState;
-}
-isStateChangeEvent.__closure = {};
-isStateChangeEvent.__workletHash = 7295971713196;
-isStateChangeEvent.__initData = { code: "function isStateChangeEvent_Pnpm_eventUtilsTs9(event){return'oldState'in event&&event.oldState!==undefined;}" };
 
-export { maybeExtractNativeEvent };
-export { flattenAndFilterEvent };
-export { isEventForHandlerWithTag };
-export { isNativeAnimatedEvent };
-export const checkMappingForChangeProperties = function checkMappingForChangeProperties(arg0) {
-  const iter = arg0._argMapping[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp2 = nextResult;
-    if (tmp2) {
-      if ("nativeEvent" in tmp2) {
-        if ("handlerData" in tmp2.nativeEvent) {
-          for (const key10023 in tmp2.nativeEvent.handlerData) {
-            let tmp13 = key10023;
-            if (!key10023.startsWith("change")) {
-              continue;
-            } else {
-              let tmp6 = globalThis;
-              let _Error = Error;
-              let obj = tagMessage;
-              let _HermesInternal = HermesInternal;
-              let str = " is not available when using Animated.Event.";
-              let str2 = "";
-              let self = this;
-              let self2 = this;
-              let error = new Error(obj.tagMessage("" + tmp13 + " is not available when using Animated.Event."));
-              throw error;
-            }
-          }
-        }
-      }
-    }
-    continue;
+export { isGestureEnabled };
+export const resolveInternalConfigProps = function resolveInternalConfigProps(useAnimated) {
+  useAnimated = useAnimated.useAnimated;
+  if (!useAnimated) {
+    const obj = _mod6404;
+    useAnimated = obj.isNativeAnimatedEvent(useAnimated.onUpdate);
   }
+  useAnimated.dispatchesAnimatedEvents = useAnimated;
+  if (useAnimated.dispatchesAnimatedEvents) {
+    useAnimated.disableReanimated = true;
+  }
+  let result = !useAnimated.disableReanimated && undefined !== Reanimated2.Reanimated;
+  if (result) {
+    const obj2 = SHARED_VALUE_OFFSET;
+    result = obj2.hasWorkletEventHandlers(useAnimated);
+  }
+  if (result) {
+    result = !useAnimated.dispatchesAnimatedEvents;
+  }
+  useAnimated.shouldUseReanimatedDetector = result;
+  const obj3 = _mod6404;
+  useAnimated.needsPointerData = obj3.shouldHandleTouchEvents(useAnimated);
 };
-export const shouldHandleTouchEvents = function shouldHandleTouchEvents(onTouchesDown) {
-  return onTouchesDown.onTouchesDown || onTouchesDown.onTouchesMove || onTouchesDown.onTouchesUp || onTouchesDown.onTouchesCancel;
+export const prepareConfigForNativeSide = function prepareConfigForNativeSide(arg0, shouldUseReanimatedDetector) {
+  let first;
+  let iter;
+  shouldUseReanimatedDetector = shouldUseReanimatedDetector.shouldUseReanimatedDetector;
+  if (shouldUseReanimatedDetector) {
+    const obj = SHARED_VALUE_OFFSET;
+    shouldUseReanimatedDetector = !obj.maybeUnpackValue(shouldUseReanimatedDetector.runOnJS);
+  }
+  const obj2 = { dispatchesReanimatedEvents: shouldUseReanimatedDetector };
+  const PropsWhiteLists = allowedNativeProps2.PropsWhiteLists;
+  let EMPTY_WHITE_LIST = PropsWhiteLists.get(arg0);
+  if (EMPTY_WHITE_LIST == null) {
+    EMPTY_WHITE_LIST = allowedNativeProps2.EMPTY_WHITE_LIST;
+  }
+  const entries = Object.entries(shouldUseReanimatedDetector);
+  const tmp12 = entries[Symbol.iterator]();
+  while (tmp12 !== undefined) {
+    [first, iter] = tmp13;
+    let tmp17 = first;
+    let tmp19 = require;
+    let allowedNativeProps = allowedNativeProps2.allowedNativeProps;
+    if (!allowedNativeProps.has(first)) {
+      if (!EMPTY_WHITE_LIST.has(tmp17)) {
+        let PropsToFilter = tmp19(6392).PropsToFilter;
+        if (PropsToFilter.has(tmp17)) {
+          continue;
+        } else {
+          let _console = console;
+          let tmp19Result = tmp19(6339);
+          let _HermesInternal = HermesInternal;
+          let str = "";
+          let str2 = " is not a valid property for ";
+          let str3 = " and will be ignored.";
+          let warnResult = warn(tmp19Result.tagMessage("" + tmp17 + " is not a valid property for " + arg0 + " and will be ignored."));
+        }
+        continue;
+      }
+      continue;
+    }
+    let Reanimated = tmp19(6377).Reanimated;
+    let isSharedValueResult;
+    if (Reanimated != null) {
+      isSharedValueResult = Reanimated.isSharedValue(iter);
+    }
+    obj2[tmp17] = isSharedValueResult ? iter.value : iter;
+  }
+  return obj2;
 };
-export { getChangeEventCalculator };
-export { isTouchEvent };
-export { isStateChangeEvent };
+export const useClonedAndRemappedConfig = function useClonedAndRemappedConfig(cResult, map, transformHoverProps) {
+  let closure_0 = cResult;
+  let tmp = map;
+  if (map === undefined) {
+    tmp = map;
+  }
+  let closure_1 = tmp;
+  let tmp2 = transformHoverProps;
+  if (transformHoverProps === undefined) {
+    tmp2 = DEFAULT_PROPS_TRANSFORMER;
+  }
+  let closure_2 = tmp2;
+  const items = [cResult, tmp, tmp2];
+  return useMemo(() => {
+    const obj = {};
+    const merged = Object.assign(closure_0);
+    const item = closure_1.forEach((item, index) => {
+      if (index in obj) {
+        obj[item] = obj[index];
+        delete obj[tmp];
+      }
+    });
+    const tmp3 = closure_2(obj);
+    let useAnimated = tmp3.useAnimated;
+    if (!useAnimated) {
+      const obj2 = _mod6404;
+      useAnimated = obj2.isNativeAnimatedEvent(tmp3.onUpdate);
+    }
+    tmp3.dispatchesAnimatedEvents = useAnimated;
+    if (tmp3.dispatchesAnimatedEvents) {
+      tmp3.disableReanimated = true;
+    }
+    let result = !tmp3.disableReanimated && undefined !== Reanimated2.Reanimated;
+    if (result) {
+      const obj3 = SHARED_VALUE_OFFSET;
+      result = obj3.hasWorkletEventHandlers(tmp3);
+    }
+    if (result) {
+      result = !tmp3.dispatchesAnimatedEvents;
+    }
+    tmp3.shouldUseReanimatedDetector = result;
+    const obj4 = _mod6404;
+    tmp3.needsPointerData = obj4.shouldHandleTouchEvents(tmp3);
+    return tmp3;
+  }, items);
+};

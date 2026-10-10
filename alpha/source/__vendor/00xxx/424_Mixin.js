@@ -17,7 +17,7 @@ let obj5;
 let touchableHandleBlur;
 let touchableHandleFocus;
 const jsx = Fragment.jsx;
-const f20122 = (arg0) => {
+const f20196 = (arg0) => {
 
 };
 const NOT_RESPONDER = "NOT_RESPONDER";
@@ -60,7 +60,7 @@ obj5 = {
     }
   },
   touchableGetInitialState() {
-    return { touchable: { touchState: "Array", responderID: 0 } };
+    return { touchable: { touchState: "Array", responderID: false } };
   },
   touchableHandleResponderTerminationRequest() {
     return !this.props.rejectResponderTermination;
@@ -167,7 +167,7 @@ obj5 = {
         tmp5 = sum;
       }
       nativeEvent = nativeEvent.nativeEvent;
-      if (typeof f20122 === "function") {
+      if (typeof f20196 === "function") {
         ({ touches, changedTouches } = nativeEvent);
         const tmp13 = changedTouches && changedTouches.length > 0;
         if (!(touches && touches.length > 0)) {
@@ -321,7 +321,7 @@ obj5 = {
     let tmp7;
     let touches;
     nativeEvent = nativeEvent.nativeEvent;
-    if (typeof f20122 === "function") {
+    if (typeof f20196 === "function") {
       ({ touches, changedTouches } = nativeEvent);
       const tmp2 = changedTouches && changedTouches.length > 0;
       if (!(touches && touches.length > 0)) {

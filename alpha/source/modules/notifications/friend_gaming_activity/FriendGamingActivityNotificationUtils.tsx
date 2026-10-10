@@ -1,14 +1,14 @@
-// Module ID: 15720
-// Function ID: 15721
+// Module ID: 15782
+// Function ID: 15783
 // Name: FriendGamingActivityNotificationUtils
-// Dependencies: [4722, 1085, 2041, 1265, 2]
+// Dependencies: [4763, 1085, 2041, 1265, 2]
 // Exports: onFriendGamingActivityNotificationSettingsChanged
 
-// Module 15720 (FriendGamingActivityNotificationUtils)
+// Module 15782 (FriendGamingActivityNotificationUtils)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import NotificationConstants from "NotificationConstants" /* 4722 */;
+import NotificationConstants from "NotificationConstants" /* 4763 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;

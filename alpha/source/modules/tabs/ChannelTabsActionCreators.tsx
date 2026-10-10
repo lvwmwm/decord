@@ -1,20 +1,20 @@
-// Module ID: 11525
-// Function ID: 11526
+// Module ID: 11571
+// Function ID: 11572
 // Name: ChannelTabsActionCreators
-// Dependencies: [2064, 2115, 4900, 11526, 1085, 2071, 5105, 1112, 5102, 584, 2]
+// Dependencies: [2065, 2116, 4939, 11572, 1085, 2072, 5106, 1112, 5103, 584, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, selectChannelTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 11525 (ChannelTabsActionCreators)
+// Module 11571 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
-import ChannelConstants from "ChannelConstants" /* 2071 */;
-import transitionToChannel from "transitionToChannel" /* 5102 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5105 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 11526 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import transitionToChannel from "transitionToChannel" /* 5103 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 11572 */;
 import size from "module_2" /* 2 */;
 
 function navigateToTabLocation(found) {
@@ -68,7 +68,7 @@ function openChannelTabActive(id, guildId) {
       const channel1 = ChannelStore.getChannel(id);
       const tmp18 = null != channel1 && channel1.isGuildVocal();
       if (tmp18) {
-        const tmp15Result = tmp15(5105);
+        const tmp15Result = tmp15(5106);
         tmp15Result.updateChatOpen(id, true);
       }
       if (null != guildId) {
@@ -144,7 +144,7 @@ function navigateActiveTabHistory(arg0) {
               const channel = obj11.getChannel(channelId);
               const tmp8 = null != channel && channel.isGuildVocal();
               if (tmp8) {
-                const tmp36Result = tmp36(5105);
+                const tmp36Result = tmp36(5106);
                 tmp36Result.updateChatOpen(channelId, true);
               }
               if (null != guildId) {

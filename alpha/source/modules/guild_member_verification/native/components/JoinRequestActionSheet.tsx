@@ -1,20 +1,20 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 17023
+// Function ID: 17024
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 5080, 1404, 1390, 1085, 21, 5091, 558, 576, 504, 8294, 8278, 4811, 8337, 4992, 6874, 4779, 587, 1103, 8339, 6125, 2113, 8295, 6836, 1200, 8342, 1126, 16956, 6305, 6840, 4788, 2]
+// Dependencies: [19, 17, 5081, 1404, 1390, 1085, 21, 5092, 558, 576, 504, 8310, 8294, 4850, 8353, 5031, 6880, 4818, 587, 1103, 8355, 6118, 2114, 8311, 6839, 1200, 8358, 1126, 17024, 6306, 6843, 4827, 2]
 
-// Module 16955 (JoinRequestActionSheet)
+// Module 17023 (JoinRequestActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import isChangelogUserDefault from "isChangelogUser" /* 2113 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6125 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8295 */;
+import isChangelogUserDefault from "isChangelogUser" /* 2114 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6118 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinReques
                       const isNonUserBotResult = obj.isNonUserBot() && !isChangelogUserDefault(obj.id);
                     }
                     if (!tmp) {
-                      const obj2 = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, dispatchWait: true, guildId };
+                      const obj2 = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, guildId };
                       const tmp7 = maybeFetchUserProfileDefault;
                       tmp7(stateFromStores.id, stateFromStores.getAvatarURL(guildId, 80), obj2);
                     }
@@ -212,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinReques
                   const isNonUserBotResult = obj.isNonUserBot() && !isChangelogUserDefault(obj.id);
                 }
                 if (!tmp) {
-                  const obj2 = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, dispatchWait: true, guildId };
+                  const obj2 = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, guildId };
                   const tmp7 = maybeFetchUserProfileDefault;
                   tmp7(stateFromStores.id, stateFromStores.getAvatarURL(guildId, 80), obj2);
                 }
@@ -354,7 +354,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinReques
       const isNonUserBotResult = obj.isNonUserBot() && !isChangelogUserDefault(obj.id);
     }
     if (!tmp) {
-      const obj2 = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, dispatchWait: true, guildId };
+      const obj2 = { type: "action_sheet", withMutualGuilds: true, withMutualFriends: true, guildId };
       const tmp7 = maybeFetchUserProfileDefault;
       tmp7(stateFromStores.id, stateFromStores.getAvatarURL(guildId, 80), obj2);
     }

@@ -142,7 +142,7 @@ export default forwardRef((bottomOffset, arg1) => {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -191,7 +191,7 @@ export default forwardRef((bottomOffset, arg1) => {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp10) {
           if (0 === c3) {
             c5 = 3;
@@ -567,7 +567,7 @@ export default forwardRef((bottomOffset, arg1) => {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -607,7 +607,7 @@ export default forwardRef((bottomOffset, arg1) => {
           const obj5 = tmp(c2[3]);
           obj5.runOnUI(fn)();
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp6) {
         c3 = 3;

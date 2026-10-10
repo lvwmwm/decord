@@ -1,18 +1,18 @@
-// Module ID: 16925
-// Function ID: 16926
+// Module ID: 16993
+// Function ID: 16994
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 4977, 6919, 7897, 1085, 21, 558, 576, 4811, 504, 6920, 9292, 1265, 5106, 6104, 16926, 16931, 16935, 16936, 16939, 16942, 6918, 2]
+// Dependencies: [19, 5016, 6925, 7915, 1085, 21, 558, 576, 4850, 504, 6926, 9319, 1265, 5107, 6097, 16994, 16999, 17003, 17004, 17007, 17010, 6924, 2]
 
-// Module 16925 (GuildOnboardingHomePage)
+// Module 16993 (GuildOnboardingHomePage)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
-import GuildOnboardingHomeSettingsStore2 from "GuildOnboardingHomeSettingsStore" /* 6919 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9292 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
+import GuildOnboardingHomeSettingsStore2 from "GuildOnboardingHomeSettingsStore" /* 6925 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9319 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 4977 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7897 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7915 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildO
   let obj = guildId(576);
   const cResult = obj.c(24);
   guildId = guildId.guildId;
-  let obj2 = guildId(4811);
+  let obj2 = guildId(4850);
   const sharedValue = obj2.useSharedValue(-999);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildOnboardingHomeSettingsStore];
@@ -64,8 +64,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildO
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  let tmp10 = !stateFromStores(6920)(guildId);
-  const tmp9 = stateFromStores(6920)(guildId);
+  let tmp10 = !stateFromStores(6926)(guildId);
+  const tmp9 = stateFromStores(6926)(guildId);
   if (tmp10) {
     class I {
       constructor() {
@@ -166,12 +166,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildO
   guildId = guildId.guildId;
   dependencyMap = undefined;
   let tmp = dependencyMap;
-  let obj = guildId(4811);
+  let obj = guildId(4850);
   const sharedValue = obj.useSharedValue(-999);
   let obj2 = guildId(504);
   const items = [GuildOnboardingHomeSettingsStore];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildOnboardingHomeSettingsStore.getSettings(guildId));
-  const tmp5 = stateFromStores(6920)(guildId);
+  const tmp5 = stateFromStores(6926)(guildId);
   let tmp6 = !tmp5;
   if (tmp6) {
     let num;
@@ -244,21 +244,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildO
     let obj4 = { guildId, hideDescription: tmp5 };
     const obj3 = { guildId, scrollValue: sharedValue, children: items3 };
     items3 = [, ];
-    const tmp4Result = stateFromStores(16942);
-    items3[0] = closure_9(stateFromStores(16926), obj4);
+    const tmp4Result = stateFromStores(17010);
+    items3[0] = closure_9(stateFromStores(16994), obj4);
     if (tmp5) {
       let tmp15 = closure_10;
       const obj5 = { children: items4 };
       const obj6 = { guildId };
-      items4 = [tmp13(tmp4(16931), obj6), , ];
+      items4 = [tmp13(tmp4(16999), obj6), , ];
       const obj7 = { guildId };
-      items4[1] = closure_9(stateFromStores(16935), obj7);
+      items4[1] = closure_9(stateFromStores(17003), obj7);
       const obj8 = { guildId };
-      items4[2] = closure_9(stateFromStores(16936), obj8);
+      items4[2] = closure_9(stateFromStores(17004), obj8);
       tmp13Result = tmp11(closure_10, obj5);
     } else {
       const obj9 = { guildId };
-      tmp13Result = tmp13(tmp4(16939), obj9);
+      tmp13Result = tmp13(tmp4(17007), obj9);
     }
     items3[1] = tmp13Result;
     tmp11Result2 = tmp11(tmp4Result, obj3);

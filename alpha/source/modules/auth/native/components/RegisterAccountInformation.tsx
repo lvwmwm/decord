@@ -1,25 +1,25 @@
-// Module ID: 16303
-// Function ID: 16304
+// Module ID: 16370
+// Function ID: 16371
 // Name: RegisterAccountInformation
-// Dependencies: [5, 32, 19, 17, 5939, 5072, 8672, 16281, 16282, 1085, 21, 5091, 587, 4811, 6624, 16278, 504, 16304, 16306, 16289, 1126, 16298, 16280, 16297, 6652, 16307, 16308, 5376, 6620, 6727, 2]
+// Dependencies: [5, 32, 19, 17, 5932, 5073, 8687, 16348, 16349, 1085, 21, 5092, 587, 4850, 6625, 16345, 504, 16371, 16373, 16356, 1126, 16365, 16347, 16364, 6653, 16374, 16375, 5379, 6621, 6728, 2]
 // Exports: default
 
-// Module 16303 (RegisterAccountInformation)
+// Module 16370 (RegisterAccountInformation)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6624 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6625 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConsentStore_mod from "ConsentStore" /* 5939 */;
-import InviteStore from "InviteStore" /* 5072 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 8672 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16281 */;
-import RegistrationConstants from "RegistrationConstants" /* 16282 */;
+import ConsentStore_mod from "ConsentStore" /* 5932 */;
+import InviteStore from "InviteStore" /* 5073 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 8687 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16348 */;
+import RegistrationConstants from "RegistrationConstants" /* 16349 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, dependencyMap;
@@ -35,12 +35,12 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const ReanimatedRexportDefault = tmp(4811);
-const FreeFormErrorLabelDefault = tmp(6620);
-const AuthFormViewDefault = tmp(6652);
-const KeyboardAwareViewDefault = tmp(6727);
-const useInitialRegistrationStepDefault = tmp(16297);
-const useAuthFlowBackHandlerDefault = tmp(16298);
+const ReanimatedRexportDefault = tmp(4850);
+const FreeFormErrorLabelDefault = tmp(6621);
+const AuthFormViewDefault = tmp(6653);
+const KeyboardAwareViewDefault = tmp(6728);
+const useInitialRegistrationStepDefault = tmp(16364);
+const useAuthFlowBackHandlerDefault = tmp(16365);
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 let ConsentStore = ConsentStore_mod;
 ({ setRegistrationErrors: unpackModuleId, updateRegistrationOptions: closure_12, useRegistrationUIStore: map1 } = RegistrationUIStore);
@@ -100,7 +100,7 @@ export default function RegisterAccountInformation() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -166,7 +166,7 @@ export default function RegisterAccountInformation() {
               closure_1_12(closure_129_7);
               closure_129_5(closure_129_8);
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           }
         } catch (tmp41) {
@@ -186,7 +186,7 @@ export default function RegisterAccountInformation() {
   const tmp3 = useWideAuthViewDefault();
   const tmp4 = closure_19(tmp3);
   obj = react;
-  context = react.useContext(context(16278).TrackRegistrationContext);
+  context = react.useContext(context(16345).TrackRegistrationContext);
   const tmp7 = closure_13((registrationOptions) => registrationOptions.registrationOptions);
   let tmp8 = closure_13((submitting) => submitting.submitting);
   [tmp10, importDefault] = _slicedToArray(react.useState(false), 2);
@@ -205,10 +205,10 @@ export default function RegisterAccountInformation() {
     return invite;
   });
   const ref = react.useRef(null);
-  let obj4 = context(16304);
+  let obj4 = context(16371);
   const passwordRegistrationStep = obj4.usePasswordRegistrationStep();
   ({ password, validatePassword: _slicedToArray, setPassword, passwordScore, preventSubmitPassword } = passwordRegistrationStep);
-  let obj5 = context(16306);
+  let obj5 = context(16373);
   const usernameRegistrationStep = obj5.useUsernameRegistrationStep(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   ({ transitionToNextStepOrSubmit: react, username, preventSubmitUsername, validateUsername: closure_6 } = usernameRegistrationStep);
   let obj6 = { username, password, invite: code };
@@ -222,7 +222,7 @@ export default function RegisterAccountInformation() {
   const tmp5Result = context(504);
   const stateFromStores1 = tmp5Result.useStateFromStores(items2, () => ConsentStore.getAuthenticationConsentRequired());
   let obj7 = { isConsentRequired: true === stateFromStores1 };
-  const tmp5Result3 = context(16289);
+  const tmp5Result3 = context(16356);
   const result = tmp5Result3.hasAllRegistrationFieldsCompleted(obj6, obj7);
   ConsentStore = result;
   const intl = tmp5(1126).intl;
@@ -237,7 +237,7 @@ export default function RegisterAccountInformation() {
     return obj(...arguments);
   }
   const tmpResult = useAuthFlowBackHandlerDefault;
-  const tmp5Result4 = context(16280);
+  const tmp5Result4 = context(16347);
   tmpResult(tmp5Result4.getPreviousRegistrationTransitionStep(AuthStates.REGISTER_ACCOUNT_INFORMATION));
   useInitialRegistrationStepDefault(AuthStates.REGISTER_ACCOUNT_INFORMATION);
   const items3 = [context];
@@ -256,14 +256,14 @@ export default function RegisterAccountInformation() {
   intl2 = tmp5(1126).intl;
   obj9 = { contentContainerStyle: { flexGrow: 1 }, keyboardShouldPersistTaps: "handled", children: items4 };
   items4 = [, , ];
-  const obj10 = { style: tmp4.container, children: closure_17(context(16307).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
+  const obj10 = { style: tmp4.container, children: closure_17(context(16374).RegisterUsernameInput, { username, setUsername, onSubmitEditing: callback, usernameStatus, submitBehavior: "submit", autoFocus: true }) };
   items4[0] = closure_17(closure_6, obj10);
   const obj11 = { style: tmp4.password, children: closure_17(RegisterPasswordInput, obj12) };
   const View = ReanimatedRexportDefault.View;
   const merged1 = Object.assign(obj);
   obj12 = { ref, password, onPasswordChange: setPassword, onSubmitEditing: handleSubmit, passwordScore, returnKeyType: str };
   str = "next";
-  RegisterPasswordInput = tmp5(16308).RegisterPasswordInput;
+  RegisterPasswordInput = tmp5(16375).RegisterPasswordInput;
   tmp30 = obj6;
   const tmp31 = obj;
   if (result) {
@@ -273,7 +273,7 @@ export default function RegisterAccountInformation() {
   const obj13 = { style: tmp4.button, children: items5 };
   const View2 = ReanimatedRexportDefault.View;
   const merged2 = Object.assign(tmp31);
-  const Button = tmp5(5376).Button;
+  const Button = tmp5(5379).Button;
   if (!tmp8) {
     tmp8 = tmp10;
   }

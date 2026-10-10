@@ -50,7 +50,7 @@ class ZoomedInTelemetryImpl extends BaseTelemetryExportChannel {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         while (true) {

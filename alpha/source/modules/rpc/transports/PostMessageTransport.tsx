@@ -1,17 +1,17 @@
-// Module ID: 10894
-// Function ID: 10895
+// Module ID: 10934
+// Function ID: 10935
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 2063, 5636, 1085, 1102, 10895, 580, 1121, 1265, 4698, 10896, 10898, 2000, 10899, 10900, 10902, 2]
+// Dependencies: [5, 32, 2064, 5639, 1085, 1102, 10935, 580, 1121, 1265, 4739, 10936, 10938, 2000, 10939, 10940, 10942, 2]
 
-// Module 10894 (PostMessageTransport)
+// Module 10934 (PostMessageTransport)
 import _mod580 from "module_580" /* 580 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import Constants2 from "Constants" /* 5636 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 10895 */;
-import RPCErrorDefault from "RPCError" /* 10896 */;
+import Constants2 from "Constants" /* 5639 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 10935 */;
+import RPCErrorDefault from "RPCError" /* 10936 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -158,7 +158,7 @@ class PostMessageTransport extends EventEmitter {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -309,7 +309,7 @@ class PostMessageTransport extends EventEmitter {
               logger2.info("Socket Validated: " + user.id);
               user = 0;
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             } else {
               const logger = closure_133_1.logger;
               const _HermesInternal = HermesInternal;
@@ -357,7 +357,7 @@ class PostMessageTransport extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c5;
@@ -404,7 +404,7 @@ class PostMessageTransport extends EventEmitter {
               c5 = 0;
               closure_131_1.disconnectSocket(closure_0, closure_1);
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             c5 = 0;

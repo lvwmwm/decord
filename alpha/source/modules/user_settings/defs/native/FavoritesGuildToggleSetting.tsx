@@ -1,23 +1,23 @@
-// Module ID: 15534
-// Function ID: 15535
+// Module ID: 15596
+// Function ID: 15597
 // Name: FavoritesGuildToggleSetting
-// Dependencies: [7974, 10629, 1126, 3439, 10279, 15535, 10278, 2]
+// Dependencies: [7992, 10663, 1126, 3442, 10312, 15597, 10311, 2]
 
-// Module 15534 (FavoritesGuildToggleSetting)
+// Module 15596 (FavoritesGuildToggleSetting)
 import intl2 from "intl" /* 1126 */;
-import _modDef3439 from "module_3439" /* 3439 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10278 */;
-import FavoritesHooks from "FavoritesHooks" /* 10279 */;
-import useIsFavoritesGuildVisibleDefault from "useIsFavoritesGuildVisible" /* 15535 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import _modDef3442 from "module_3442" /* 3442 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10311 */;
+import FavoritesHooks from "FavoritesHooks" /* 10312 */;
+import useIsFavoritesGuildVisibleDefault from "useIsFavoritesGuildVisible" /* 15597 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3439.OT1NK5);
+    return intl.string(_modDef3442.OT1NK5);
   },
   parent: MobileUserSettings.APPEARANCE,
   usePredicate() {

@@ -1,11 +1,11 @@
-// Module ID: 13285
-// Function ID: 13286
+// Module ID: 13335
+// Function ID: 13336
 // Name: MarkupLiteralImageRule
-// Dependencies: [1949, 5397, 2]
+// Dependencies: [1949, 5400, 2]
 
-// Module 13285 (MarkupLiteralImageRule)
+// Module 13335 (MarkupLiteralImageRule)
 import _modDef1949 from "module_1949" /* 1949 */;
-import MarkupTypes from "MarkupTypes" /* 5397 */;
+import MarkupTypes from "MarkupTypes" /* 5400 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

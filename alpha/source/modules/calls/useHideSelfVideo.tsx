@@ -1,14 +1,14 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 17890
+// Function ID: 17891
 // Name: useHideSelfVideo
-// Dependencies: [502, 2012, 1085, 5116, 558, 576, 504, 5242, 2]
+// Dependencies: [502, 2012, 1085, 5117, 558, 576, 504, 5243, 2]
 
-// Module 17818 (useHideSelfVideo)
+// Module 17890 (useHideSelfVideo)
 import Constants2 from "Constants" /* 1085 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5242 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import Constants from "Constants" /* 5116 */;
+import Constants from "Constants" /* 5117 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

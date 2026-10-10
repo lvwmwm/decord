@@ -1,12 +1,12 @@
-// Module ID: 11972
-// Function ID: 11973
+// Module ID: 12016
+// Function ID: 12017
 // Name: create_guild/CreateGuildActionCreators
-// Dependencies: [5, 1085, 5945, 1273, 5632, 2]
+// Dependencies: [5, 1085, 5938, 1273, 5635, 2]
 
-// Module 11972 (create_guild/CreateGuildActionCreators)
+// Module 12016 (create_guild/CreateGuildActionCreators)
 import Constants from "Constants" /* 1085 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _createGuildFromTemplate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

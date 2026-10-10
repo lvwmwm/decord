@@ -1,9 +1,9 @@
-// Module ID: 11570
-// Function ID: 11571
+// Module ID: 11616
+// Function ID: 11617
 // Name: SharedCustomThemeActionSheet
-// Dependencies: [32, 19, 17, 4734, 1085, 1392, 21, 5091, 587, 558, 576, 1265, 11571, 4927, 5259, 6835, 1126, 2795, 5087, 5376, 6836, 504, 4728, 7135, 6872, 1200, 1252, 2]
+// Dependencies: [32, 19, 17, 4775, 1085, 1392, 21, 5092, 587, 558, 576, 1265, 11617, 4966, 5260, 6838, 1126, 2798, 5088, 5379, 6839, 504, 4769, 7141, 6878, 1200, 1252, 2]
 
-// Module 11570 (SharedCustomThemeActionSheet)
+// Module 11616 (SharedCustomThemeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,18 +11,18 @@ import native from "native" /* 1200 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4927 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5259 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7135 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11571 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4966 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5260 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7141 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 11617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4734 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let map1;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-const f108678 = (item) => "#" + item;
+const f108990 = (item) => "#" + item;
 ({ useEffect: hasOwnProperty, useLayoutEffect: metroRequire, useRef: metroImportDefault } = react);
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   if (cResult[0] !== sharedClientTheme) {
     let tmp7;
     if (undefined !== sharedClientTheme) {
-      let obj4 = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      let obj4 = { colors: colors.map(f108990), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = sharedClientTheme.colors;
       ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
       tmp7 = obj4;
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         let tmp4;
         const tmp = closure_3;
         if (undefined !== sharedClientTheme) {
-          const obj = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
+          const obj = { colors: colors.map(f108990), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         let tmp4;
         const tmp = closure_3;
         if (undefined !== sharedClientTheme) {
-          const obj = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
+          const obj = { colors: colors.map(f108990), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
@@ -174,7 +174,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         let tmp4;
         const tmp = closure_3;
         if (undefined !== sharedClientTheme) {
-          const obj = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
+          const obj = { colors: colors.map(f108990), gradientColorStops: [], gradientAngle: null, baseMix: null };
           colors = tmp2.colors;
           ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
           tmp4 = obj;
@@ -308,7 +308,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
             };
           }
         }
-        let obj5 = { title: intl.string(require("module_2795")["3ej1LT"]) };
+        let obj5 = { title: intl.string(require("module_2798")["3ej1LT"]) };
         const BottomSheetTitleHeader = tmp(tmp2[15]).BottomSheetTitleHeader;
         intl = tmp(tmp2[16]).intl;
         const tmp36 = closure_12(BottomSheetTitleHeader, obj5);
@@ -343,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
             };
           }
         }
-        const stringResult = obj6.string(require("module_2795").qZMUoL);
+        const stringResult = obj6.string(require("module_2798").qZMUoL);
         cResult[21] = stringResult;
         tmp37 = stringResult;
       } else {
@@ -581,7 +581,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let tmp4;
   const useState = first1.useState;
   if (undefined !== sharedClientTheme) {
-    let obj4 = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
+    let obj4 = { colors: colors.map(f108990), gradientColorStops: [], gradientAngle: null, baseMix: null };
     colors = sharedClientTheme.colors;
     ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
     tmp4 = obj4;
@@ -606,7 +606,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     let tmp4;
     const tmp = closure_3;
     if (undefined !== sharedClientTheme) {
-      const obj = { colors: colors.map(f108678), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      const obj = { colors: colors.map(f108990), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = tmp2.colors;
       ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
       tmp4 = obj;
@@ -652,12 +652,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }, items3);
   let obj5 = { ref: tmp2, backdropOpacity: 0, children: items4 };
   BottomSheet = sharedClientTheme(customUserThemeSettings[20]).BottomSheet;
-  const obj6 = { title: intl.string(require("module_2795")["3ej1LT"]) };
+  const obj6 = { title: intl.string(require("module_2798")["3ej1LT"]) };
   const BottomSheetTitleHeader = sharedClientTheme(customUserThemeSettings[15]).BottomSheetTitleHeader;
   intl = sharedClientTheme(customUserThemeSettings[16]).intl;
   items4 = [closure_12(BottomSheetTitleHeader, obj6), , ];
   const obj7 = { style: tmp.contentWrapper, children: closure_12(Text, obj8) };
-  obj8 = { variant: "heading-md/medium", style: tmp.centeredText, children: intl2.string(require("module_2795").qZMUoL) };
+  obj8 = { variant: "heading-md/medium", style: tmp.centeredText, children: intl2.string(require("module_2798").qZMUoL) };
   Text = sharedClientTheme(customUserThemeSettings[18]).Text;
   intl2 = sharedClientTheme(customUserThemeSettings[16]).intl;
   items4[1] = closure_12(ref, obj7);
@@ -797,7 +797,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Primar
     }
     if (cResult[10] !== onPressApply) {
       const obj4 = { text: tmp11, onPress: onPressApply, variant: "primary" };
-      const tmp15 = closure_12(tmp(5376).Button, obj4);
+      const tmp15 = closure_12(tmp(5379).Button, obj4);
       cResult[10] = onPressApply;
       cResult[11] = tmp15;
       tmp13 = tmp15;
@@ -842,7 +842,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Primar
     tmp6 = closure_12(ShinyButton, obj3);
   } else {
     const obj4 = { text: intl.string(require("intl").t["1Qm822"]), onPress: onPressApply, variant: "primary" };
-    const Button = tmp2(5376).Button;
+    const Button = tmp2(5379).Button;
     intl = tmp2(1126).intl;
     tmp6 = closure_12(Button, obj4);
   }

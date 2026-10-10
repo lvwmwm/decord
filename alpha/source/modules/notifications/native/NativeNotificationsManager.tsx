@@ -1,16 +1,16 @@
-// Module ID: 18496
-// Function ID: 18497
+// Module ID: 18570
+// Function ID: 18571
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 6084, 1085, 3, 6804, 1382, 10991, 8315, 1265, 2]
+// Dependencies: [5, 17, 6077, 1085, 3, 6807, 1382, 11031, 8331, 1265, 2]
 
-// Module 18496 (NativeNotificationsManager)
+// Module 18570 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6077 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c8, closure_0, closure_3, logger, map;
@@ -54,7 +54,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let tmp73;
@@ -113,7 +113,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     }
                   } else {
                     try {
@@ -240,7 +240,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                   if (null == PUSH_NOTIFICATION_RECEIVED) {
                     c6 = 0;
                     c8 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   } else {
                     const _Map = Map;
                     const self = this;
@@ -360,7 +360,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
               return obj14;
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp73) {
           if (0 === c6) {

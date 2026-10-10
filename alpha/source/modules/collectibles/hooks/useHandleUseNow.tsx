@@ -1,10 +1,10 @@
-// Module ID: 10603
-// Function ID: 10604
+// Module ID: 10637
+// Function ID: 10638
 // Name: hooks/useHandleUseNow
-// Dependencies: [5, 32, 19, 1087, 1993, 1126, 8279, 10604, 8275, 6669, 2]
+// Dependencies: [5, 32, 19, 1087, 1993, 1126, 8295, 10638, 8291, 6670, 2]
 // Exports: useHandleUseNow
 
-// Module 10603 (hooks/useHandleUseNow)
+// Module 10637 (hooks/useHandleUseNow)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -102,7 +102,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c5;
@@ -166,7 +166,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
                 return obj9;
               }
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else if (1 === c6) {
             c5 = 0;

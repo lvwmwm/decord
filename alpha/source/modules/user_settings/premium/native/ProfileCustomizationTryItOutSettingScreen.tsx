@@ -1,22 +1,22 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16172
+// Function ID: 16173
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1390, 1085, 1392, 21, 5091, 587, 558, 576, 6848, 6872, 504, 10061, 8267, 8295, 7269, 15547, 15548, 8275, 1407, 1265, 14760, 2]
+// Dependencies: [19, 17, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 6851, 6878, 504, 10090, 8283, 8311, 7275, 15609, 15610, 8291, 1407, 1265, 14815, 2]
 
-// Module 16110 (ProfileCustomizationTryItOutSettingScreen)
+// Module 16172 (ProfileCustomizationTryItOutSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7269 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8275 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8295 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7275 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8291 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,26 +82,26 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCusto
   const pendingAvatarDecoration = tmp14.pendingAvatarDecoration;
   const setPendingAvatarDecoration = tmp14.setPendingAvatarDecoration;
   if (cResult[4] !== stateFromStores) {
-    class A {
+    class L {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
     const items1 = [stateFromStores];
     cResult[4] = stateFromStores;
-    cResult[5] = A;
+    cResult[5] = L;
     cResult[6] = items1;
     tmp16 = items1;
-    tmp15 = A;
+    tmp15 = L;
   } else {
-    class A {
+    class L {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
@@ -109,11 +109,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCusto
   }
   const effect = pendingAvatarDecoration.useEffect(tmp15, tmp16);
   if (cResult[7] === categories) {
-    class A {
+    class L {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
@@ -159,7 +159,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCusto
   const effect = pendingAvatarDecoration.useEffect(() => {
     if (null != stateFromStores) {
       const tmp3 = maybeFetchUserProfileDefault;
-      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
     }
   }, items1);
   const items2 = [pendingAvatarDecoration, setPendingAvatarDecoration, categories];

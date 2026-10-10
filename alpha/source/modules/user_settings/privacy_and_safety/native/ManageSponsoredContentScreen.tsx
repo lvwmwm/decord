@@ -1,9 +1,9 @@
-// Module ID: 16183
-// Function ID: 16184
+// Module ID: 16250
+// Function ID: 16251
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1085, 21, 1209, 2173, 558, 576, 2041, 1126, 6889, 5091, 587, 6269, 2127, 2]
+// Dependencies: [19, 17, 1085, 21, 1209, 2174, 558, 576, 2041, 1126, 6895, 5092, 587, 6264, 2128, 2]
 
-// Module 16183 (ManageSponsoredContentScreen)
+// Module 16250 (ManageSponsoredContentScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,13 +11,13 @@ import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import _modDef2173 from "module_2173" /* 2173 */;
-import TableRowGroup3 from "TableRowGroup" /* 6269 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import _modDef2174 from "module_2174" /* 2174 */;
+import TableRowGroup3 from "TableRowGroup" /* 6264 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -29,7 +29,7 @@ const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = {};
-obj[preloaded_user_settings.AdTopic.REAL_MONEY_GAMING] = _modDef2173.pmIitA;
+obj[preloaded_user_settings.AdTopic.REAL_MONEY_GAMING] = _modDef2174.pmIitA;
 const keys = Object.keys(obj);
 let closure_8 = keys.map(Number);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -79,7 +79,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdTopic
     if (cResult[7] !== tmp4) {
       const intl2 = tmp(1126).intl;
       const string = intl2.string;
-      const tmp13 = _modDef2173;
+      const tmp13 = _modDef2174;
       const stringResult1 = string(tmp4 ? tmp13.B9PPxE : tmp13.Y9ZOp8);
       cResult[7] = tmp4;
       cResult[8] = stringResult1;
@@ -99,7 +99,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdTopic
       }
     }
     const obj2 = { label: tmp9, subLabel: tmp11, value: !tmp4, onValueChange: tmp8 };
-    const tmp18 = closure_5(tmp(6889).TableSwitchRow, obj2);
+    const tmp18 = closure_5(tmp(6895).TableSwitchRow, obj2);
     cResult[9] = tmp8;
     cResult[10] = tmp9;
     cResult[11] = tmp11;
@@ -138,11 +138,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdTopic
       AdTopicOptOuts2.updateSetting(items);
     }
   };
-  const TableSwitchRow = adTopic(6889).TableSwitchRow;
+  const TableSwitchRow = adTopic(6895).TableSwitchRow;
   intl = adTopic(1126).intl;
   const intl2 = adTopic(1126).intl;
   string = intl2.string;
-  tmp4 = _modDef2173;
+  tmp4 = _modDef2174;
   return closure_5(TableSwitchRow, obj);
 });
 let obj2 = { content: obj3 };
@@ -164,11 +164,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSponso
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { hasIcons: false, description: format(prop, obj3) };
-    const TableRowGroup = tmp(6269).TableRowGroup;
+    const TableRowGroup = tmp(6264).TableRowGroup;
     const intl = tmp(1126).intl;
     format = intl.format;
     obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.MANAGE_SPONSORED_CONTENT) };
-    prop = _modDef2173["z/MfaY"];
+    prop = _modDef2174["z/MfaY"];
     obj4 = HelpdeskUtilsDefault;
     const tmp10 = hasOwnProperty(TableRowGroup, obj2);
     cResult[0] = tmp10;
@@ -179,13 +179,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSponso
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = {
       hasIcons: false,
-      title: intl2.string(_modDef2173.OkmBx0),
+      title: intl2.string(_modDef2174.OkmBx0),
       children: closure_8.map((adTopic) => {
           obj = { adTopic };
           return closure_1_5(closure_1_9, obj, adTopic);
         })
     };
-    const TableRowGroup2 = tmp(6269).TableRowGroup;
+    const TableRowGroup2 = tmp(6264).TableRowGroup;
     intl2 = tmp(1126).intl;
     const tmp15 = hasOwnProperty(TableRowGroup2, obj5);
     cResult[1] = tmp15;
@@ -217,12 +217,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSponso
   const intl = intl3.intl;
   format = intl.format;
   obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.MANAGE_SPONSORED_CONTENT) };
-  prop = _modDef2173["z/MfaY"];
+  prop = _modDef2174["z/MfaY"];
   obj4 = HelpdeskUtilsDefault;
   items = [hasOwnProperty(TableRowGroup, obj2), ];
   const obj5 = {
     hasIcons: false,
-    title: intl2.string(_modDef2173.OkmBx0),
+    title: intl2.string(_modDef2174.OkmBx0),
     children: closure_8.map((adTopic) => {
       obj = { adTopic };
       return closure_1_5(closure_1_9, obj, adTopic);

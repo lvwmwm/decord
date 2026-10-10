@@ -1,9 +1,9 @@
-// Module ID: 18036
-// Function ID: 18037
+// Module ID: 18108
+// Function ID: 18109
 // Name: GameOrganizationInviteActionCreators
-// Dependencies: [5, 18037, 584, 2]
+// Dependencies: [5, 18109, 584, 2]
 
-// Module 18036 (GameOrganizationInviteActionCreators)
+// Module 18108 (GameOrganizationInviteActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let obj = function _fetchGameOrganizationInvite() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -87,7 +87,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -163,7 +163,7 @@ obj = {
             obj.dispatch(obj13);
             c3 = 0;
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp35) {
           closure_2 = tmp35;

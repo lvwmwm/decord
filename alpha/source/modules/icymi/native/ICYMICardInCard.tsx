@@ -1,28 +1,28 @@
-// Module ID: 16868
-// Function ID: 16869
+// Module ID: 16936
+// Function ID: 16937
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 2064, 2124, 2086, 1085, 21, 16820, 587, 558, 576, 8997, 6165, 1200, 5383, 504, 5625, 8834, 5406, 5087, 5418, 16869, 1126, 8191, 16862, 6191, 6066, 9214, 2]
+// Dependencies: [19, 17, 2065, 2125, 2087, 1085, 21, 16890, 587, 558, 576, 9016, 6158, 1200, 5386, 504, 5628, 8853, 5409, 5088, 5421, 16937, 1126, 8207, 16930, 6184, 6059, 9241, 2]
 // Exports: default
 
-// Module 16868 (ICYMICardInCard)
+// Module 16936 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import GuildIcon from "GuildIcon" /* 6165 */;
-import TextIcon2 from "TextIcon" /* 8191 */;
-import ClipView from "ClipView" /* 8997 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 16862 */;
-import getIconForChannel from "getIconForChannel" /* 16869 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import GuildIcon from "GuildIcon" /* 6158 */;
+import TextIcon2 from "TextIcon" /* 8207 */;
+import ClipView from "ClipView" /* 9016 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 16930 */;
+import getIconForChannel from "getIconForChannel" /* 16937 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16820 */;
+import createICYMIStyles from "createICYMIStyles" /* 16890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

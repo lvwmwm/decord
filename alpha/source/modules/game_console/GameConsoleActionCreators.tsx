@@ -1,19 +1,19 @@
-// Module ID: 11071
-// Function ID: 11072
+// Module ID: 11111
+// Function ID: 11112
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 5109, 5111, 5110, 1085, 1265, 584, 5298, 1126, 5248, 11072, 1295, 1255, 2]
+// Dependencies: [5, 5110, 5112, 5111, 1085, 1265, 584, 5299, 1126, 5249, 11112, 1295, 1255, 2]
 // Exports: connectToRemote, fetchDevices, getConnectNonce, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, waitForSession
 
-// Module 11071 (GameConsoleActionCreators)
+// Module 11111 (GameConsoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5248 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 11072 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5249 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 11112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import SessionsStore from "SessionsStore" /* 5111 */;
-import GameConsoleStore from "GameConsoleStore" /* 5110 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import SessionsStore from "SessionsStore" /* 5112 */;
+import GameConsoleStore from "GameConsoleStore" /* 5111 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _disconnectRemote() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -122,7 +122,7 @@ let obj = function _disconnectRemote() {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp30) {
         let closure_2 = tmp30;
@@ -200,7 +200,7 @@ obj = function _fetchDevices() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -284,7 +284,7 @@ obj = function _cancelCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ obj = function _cancelCommand() {
             obj = closure_132_1(closure_132_2[6]);
             obj.dispatch(obj11);
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp25) {
           closure_5 = tmp25;

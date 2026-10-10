@@ -1,15 +1,15 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11701
+// Function ID: 11702
 // Name: GameInviteVoiceCount
-// Dependencies: [19, 17, 5115, 21, 5091, 558, 576, 504, 8212, 587, 5087, 2]
+// Dependencies: [19, 17, 5116, 21, 5092, 558, 576, 504, 8228, 587, 5088, 2]
 
-// Module 11655 (GameInviteVoiceCount)
+// Module 11701 (GameInviteVoiceCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5115 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameInviteVo
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-      const VoiceNormalIcon = tmp(8212).VoiceNormalIcon;
+      const VoiceNormalIcon = tmp(8228).VoiceNormalIcon;
       const tmp14 = closure_5(VoiceNormalIcon, obj2);
       cResult[4] = tmp14;
       tmp11 = tmp14;
@@ -66,7 +66,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameInviteVo
     }
     if (cResult[5] !== stateFromStores) {
       const obj3 = { variant: "text-sm/medium", color: "text-feedback-positive", children: stateFromStores };
-      const tmp17 = closure_5(channel(5087).Text, obj3);
+      const tmp17 = closure_5(channel(5088).Text, obj3);
       cResult[5] = stateFromStores;
       cResult[6] = tmp17;
       tmp15 = tmp17;
@@ -101,10 +101,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameInviteVo
   if (0 !== stateFromStores) {
     const obj2 = { style: tmp.container, children: items2 };
     const obj3 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    const VoiceNormalIcon = tmp2(8212).VoiceNormalIcon;
+    const VoiceNormalIcon = tmp2(8228).VoiceNormalIcon;
     items2 = [closure_5(VoiceNormalIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-positive", children: stateFromStores };
-    items2[1] = closure_5(channel(5087).Text, obj4);
+    items2[1] = closure_5(channel(5088).Text, obj4);
     tmp5 = closure_6(View, obj2);
   }
   return tmp5;

@@ -1,19 +1,19 @@
-// Module ID: 10869
-// Function ID: 10870
+// Module ID: 10907
+// Function ID: 10908
 // Name: useAvatarSpeakingColor
-// Dependencies: [19, 5080, 10870, 558, 576, 504, 10871, 4779, 587, 4928, 683, 2]
+// Dependencies: [19, 5081, 10908, 558, 576, 504, 10909, 4818, 587, 4967, 683, 2]
 
-// Module 10869 (useAvatarSpeakingColor)
+// Module 10907 (useAvatarSpeakingColor)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 4779 */;
-import ColorUtils from "ColorUtils" /* 4928 */;
-import VadColorConstants from "VadColorConstants" /* 10870 */;
-import useVadColorsDefault from "useVadColors" /* 10871 */;
+import useToken from "useToken" /* 4818 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
+import VadColorConstants from "VadColorConstants" /* 10908 */;
+import useVadColorsDefault from "useVadColors" /* 10909 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7377
+// Function ID: 7378
 // Name: ApplicationCodedLink
-// Dependencies: [5076, 1388, 7372, 7373, 2]
+// Dependencies: [5077, 1388, 7378, 7379, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7371 (ApplicationCodedLink)
+// Module 7377 (ApplicationCodedLink)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import CodedLink from "CodedLink" /* 5076 */;
-import _slicedToArray from "_slicedToArray" /* 7372 */;
-import activityBookmarkUtils from "activityBookmarkUtils" /* 7373 */;
+import CodedLink from "CodedLink" /* 5077 */;
+import _slicedToArray from "_slicedToArray" /* 7378 */;
+import activityBookmarkUtils from "activityBookmarkUtils" /* 7379 */;
 import size from "module_2" /* 2 */;
 
 const items = [CodedLink.CodedLinkType.APP_DIRECTORY_PROFILE, CodedLink.CodedLinkType.ACTIVITY_BOOKMARK, CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT, CodedLink.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, CodedLink.CodedLinkType.APP_OAUTH2_LINK];

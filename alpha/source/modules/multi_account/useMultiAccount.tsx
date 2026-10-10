@@ -1,12 +1,12 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16353
+// Function ID: 16354
 // Name: useMultiAccount
-// Dependencies: [19, 1390, 12081, 558, 576, 504, 584, 12085, 2]
+// Dependencies: [19, 1390, 12125, 558, 576, 504, 12129, 2]
 
-// Module 16286 (useMultiAccount)
+// Module 16353 (useMultiAccount)
 import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 12081 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 12125 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 12129 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -57,11 +57,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiAc
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     class U {
       constructor() {
-        let obj = DispatcherDefault;
-        obj.wait(() => {
-          const obj = closure_1_2(closure_1_3[7]);
-          const result = obj.validateMultiAccountTokens();
-        });
+        const obj = MultiAccountActionCreatorsAll;
+        const result = obj.validateMultiAccountTokens();
       }
     }
     const items1 = [];
@@ -72,11 +69,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiAc
   } else {
     class U {
       constructor() {
-        let obj = DispatcherDefault;
-        obj.wait(() => {
-          const obj = closure_1_2(closure_1_3[7]);
-          const result = obj.validateMultiAccountTokens();
-        });
+        const obj = MultiAccountActionCreatorsAll;
+        const result = obj.validateMultiAccountTokens();
       }
     }
     tmp10 = cResult[3];
@@ -105,11 +99,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiAc
     ({ isLoading: users.getIsValidatingUsers(), multiAccountUsers: users });
   });
   const effect = react.useEffect(() => {
-    let obj = DispatcherDefault;
-    obj.wait(() => {
-      const obj = closure_1_2(closure_1_3[7]);
-      const result = obj.validateMultiAccountTokens();
-    });
+    const obj = MultiAccountActionCreatorsAll;
+    const result = obj.validateMultiAccountTokens();
   }, []);
   return stateFromStoresObject;
 });

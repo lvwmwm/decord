@@ -1,14 +1,14 @@
-// Module ID: 7674
-// Function ID: 7675
+// Module ID: 7691
+// Function ID: 7692
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 5726, 5731, 1503, 5906, 7675, 7679, 7536, 7676, 7511, 7512, 5374, 5087, 1126, 3117, 5965, 5376, 5916, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5729, 5734, 1503, 5909, 7692, 7696, 7545, 7693, 7514, 7515, 5377, 5088, 1126, 3120, 5958, 5379, 5918, 2]
 // Exports: default
 
-// Module 7674 (AppStoreAgeVerificationScreen)
+// Module 7691 (AppStoreAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5726 */;
-import MetricEvents from "MetricEvents" /* 5731 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5916 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
+import MetricEvents from "MetricEvents" /* 5734 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -55,7 +55,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
   navigation = obj.useNavigation();
   const tmp4 = callback1(react.useState({ type: "loading" }), 2);
   [tmp5, c2] = tmp4;
-  let obj2 = modalSessionId(5906);
+  let obj2 = modalSessionId(5909);
   const watchAgeVerificationStatusChange = obj2.useWatchAgeVerificationStatusChange(onClose);
   let items = [navigation];
   const callback = react.useCallback(() => {
@@ -77,7 +77,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let status;
@@ -188,7 +188,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             if ("accepted" === closure_5.result) {
               callback1 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             } else {
               const reason = closure_5.reason;
               unknown_str = reason;
@@ -202,7 +202,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             }
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp41) {
         status = tmp41;
@@ -242,29 +242,29 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  const ModalScreen = modalSessionId(7511).ModalScreen;
-  const ModalContent = modalSessionId(7512).ModalContent;
-  const Stack = modalSessionId(5374).Stack;
+  const ModalScreen = modalSessionId(7514).ModalScreen;
+  const ModalContent = modalSessionId(7515).ModalContent;
+  const Stack = modalSessionId(5377).Stack;
   if ("loading" === tmp5.type) {
     let obj3 = { children: items3 };
     items3 = [tmp10(ActivityIndicator, { size: "large" }), ];
-    let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3117).MN6I4Y) };
-    const Text = tmp(5087).Text;
+    let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3120).MN6I4Y) };
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     items3[1] = closure_7(Text, obj4);
     tmp15 = closure_9(closure_8, obj3);
   } else {
     let obj5 = { children: items4 };
-    let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3117).tBwanH) };
-    const Text2 = tmp(5087).Text;
+    let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3120).tBwanH) };
+    const Text2 = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     items4 = [tmp10(Text2, obj6), ];
     let obj7 = { children: tmp10(Button, obj8) };
-    const ButtonGroup = tmp(5965).ButtonGroup;
+    const ButtonGroup = tmp(5958).ButtonGroup;
     obj8 = {
       variant: "primary",
       size: "lg",
-      text: intl3.string(navigation(3117)["Jx33+I"]),
+      text: intl3.string(navigation(3120)["Jx33+I"]),
       onPress() {
           const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
           AgeVerificationAnalyticsUtils;
@@ -272,7 +272,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
           callback();
         }
     };
-    Button = tmp(5376).Button;
+    Button = tmp(5379).Button;
     intl3 = tmp(1126).intl;
     items4[1] = closure_7(ButtonGroup, obj7);
     tmp15 = closure_9(closure_8, obj5);

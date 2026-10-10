@@ -1,9 +1,9 @@
-// Module ID: 8512
-// Function ID: 8513
+// Module ID: 8528
+// Function ID: 8529
 // Name: LazyAPIPromise
-// Dependencies: [5, 32, 19, 558, 576, 5632, 2]
+// Dependencies: [5, 32, 19, 558, 576, 5635, 2]
 
-// Module 8512 (LazyAPIPromise)
+// Module 8528 (LazyAPIPromise)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -69,7 +69,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLazyAPIPr
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -159,7 +159,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLazyAPIPr
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;

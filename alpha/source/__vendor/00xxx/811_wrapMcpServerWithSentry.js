@@ -64,7 +64,7 @@ export const wrapMcpServerWithSentry = function wrapMcpServerWithSentry(arg0, re
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {

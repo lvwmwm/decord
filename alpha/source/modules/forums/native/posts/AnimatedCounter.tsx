@@ -1,19 +1,19 @@
-// Module ID: 10436
-// Function ID: 10437
+// Module ID: 10469
+// Function ID: 10470
 // Name: AnimatedCounter
-// Dependencies: [32, 19, 17, 21, 5091, 558, 576, 38, 4811, 4788, 5375, 5087, 5379, 10437, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 38, 4850, 4827, 5378, 5088, 5382, 10470, 2]
 
-// Module 10436 (AnimatedCounter)
+// Module 10469 (AnimatedCounter)
 import react2 from "react" /* 576 */;
-import native from "native" /* 4788 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import spring from "spring" /* 5375 */;
-import springPresets from "springPresets" /* 5379 */;
+import native from "native" /* 4827 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
+import springPresets from "springPresets" /* 5382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,8 +24,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5087);
-const AnimatedCounterUtils = tmp(10437);
+const Text_Text = tmp(5088);
+const AnimatedCounterUtils = tmp(10470);
 function getItemKey(arg0) {
   return "" + arg0;
 }

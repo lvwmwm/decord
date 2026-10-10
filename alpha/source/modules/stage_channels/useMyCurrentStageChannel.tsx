@@ -1,12 +1,12 @@
-// Module ID: 10987
-// Function ID: 10988
+// Module ID: 11027
+// Function ID: 11028
 // Name: useMyCurrentStageChannel
-// Dependencies: [2064, 2115, 558, 576, 504, 2]
+// Dependencies: [2065, 2116, 558, 576, 504, 2]
 
-// Module 10987 (useMyCurrentStageChannel)
+// Module 11027 (useMyCurrentStageChannel)
 import react from "react" /* 576 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

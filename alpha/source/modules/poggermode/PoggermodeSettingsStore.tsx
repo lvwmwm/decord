@@ -1,12 +1,12 @@
-// Module ID: 7359
-// Function ID: 7360
+// Module ID: 7365
+// Function ID: 7366
 // Name: PoggermodeSettingsStore
-// Dependencies: [7360, 12, 504, 584, 2]
+// Dependencies: [7366, 12, 504, 584, 2]
 
-// Module 7359 (PoggermodeSettingsStore)
+// Module 7365 (PoggermodeSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7360 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7366 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

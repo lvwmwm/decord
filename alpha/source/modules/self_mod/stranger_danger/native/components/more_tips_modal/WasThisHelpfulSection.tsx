@@ -1,21 +1,21 @@
-// Module ID: 10374
-// Function ID: 10375
+// Module ID: 10407
+// Function ID: 10408
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10251, 10348, 21, 5091, 587, 558, 576, 573, 10362, 4768, 1126, 10375, 10361, 5087, 1200, 10377, 10378, 2]
+// Dependencies: [19, 17, 10284, 10381, 21, 5092, 587, 558, 576, 573, 10395, 4809, 1126, 10408, 10394, 5088, 1200, 10410, 10411, 2]
 
-// Module 10374 (WasThisHelpfulSection)
+// Module 10407 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10251 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10361 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10362 */;
-import ShieldIcon from "ShieldIcon" /* 10375 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10284 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10394 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10395 */;
+import ShieldIcon from "ShieldIcon" /* 10408 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 10348 */;
+import Constants from "Constants" /* 10381 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -187,10 +187,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
                 const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
                 const tmp6 = feedbackType === constants.UPVOTE ? React4 : metroImportAll;
                 const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
-                const openMana = ToastActionCreatorsDefault.openMana;
+                const open = ToastActionCreatorsDefault.open;
                 ToastActionCreatorsDefault;
                 intl = tmp(1126).intl;
-                openMana(tmp6, obj2);
+                open(tmp6, obj2);
                 const obj3 = { channelId, warningId, senderId, warningType: type, cta };
                 type = undefined;
                 const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
@@ -218,10 +218,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
               const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
               const tmp6 = feedbackType === constants.UPVOTE ? React4 : metroImportAll;
               const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
-              const openMana = ToastActionCreatorsDefault.openMana;
+              const open = ToastActionCreatorsDefault.open;
               ToastActionCreatorsDefault;
               intl = tmp(1126).intl;
-              openMana(tmp6, obj2);
+              open(tmp6, obj2);
               const obj3 = { channelId, warningId, senderId, warningType: type, cta };
               type = undefined;
               const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
@@ -253,10 +253,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
         const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
         const tmp6 = feedbackType === constants.UPVOTE ? React4 : metroImportAll;
         const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
-        const openMana = ToastActionCreatorsDefault.openMana;
+        const open = ToastActionCreatorsDefault.open;
         ToastActionCreatorsDefault;
         intl = tmp(1126).intl;
-        openMana(tmp6, obj2);
+        open(tmp6, obj2);
         const obj3 = { channelId, warningId, senderId, warningType: type, cta };
         type = undefined;
         const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
@@ -323,10 +323,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
     const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
     const tmp6 = feedbackType === constants.UPVOTE ? React4 : metroImportAll;
     const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
-    const openMana = ToastActionCreatorsDefault.openMana;
+    const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = tmp(1126).intl;
-    openMana(tmp6, obj2);
+    open(tmp6, obj2);
     const obj3 = { channelId, warningId, senderId, warningType: type, cta };
     type = undefined;
     const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;

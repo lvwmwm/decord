@@ -1,21 +1,21 @@
-// Module ID: 17696
-// Function ID: 17697
+// Module ID: 17768
+// Function ID: 17769
 // Name: TopSoundboardSoundsActionCreators
-// Dependencies: [1390, 5425, 5426, 1085, 17695, 4918, 584, 1295, 2]
+// Dependencies: [1390, 5428, 5429, 1085, 17767, 4957, 584, 1295, 2]
 // Exports: fetchTopSoundboardSounds, maybeFetchTopSoundboardSoundsByGuild
 
-// Module 17696 (TopSoundboardSoundsActionCreators)
+// Module 17768 (TopSoundboardSoundsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import UserStore from "UserStore" /* 1390 */;
-import SoundboardStore from "SoundboardStore" /* 5425 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5426 */;
+import SoundboardStore from "SoundboardStore" /* 5428 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5429 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f131124 = (body) => {
+const f131556 = (body) => {
   let mapped;
   const items = body.body.items;
   const obj = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH_SUCCESS", guildId, topSoundsMetadata: mapped.sort((rank, rank2) => rank.rank - rank2.rank) };
@@ -24,7 +24,7 @@ const f131124 = (body) => {
   mapped = items.map((soundId) => ({ soundId: soundId.sound_id, rank: soundId.sound_rank }));
   return dispatch(obj);
 };
-const f131125 = () => {
+const f131557 = () => {
   const obj = DispatcherDefault;
   const obj2 = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH_FAILURE", guildId };
   return obj.dispatch(obj2);
@@ -56,7 +56,7 @@ export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundb
             const get = HTTP.get;
             const obj3 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(id), oldFormErrors: true, rejectWithError: true };
             const value = get(obj3);
-            value.then(f131124, f131125);
+            value.then(f131556, f131557);
           }
         }
       }
@@ -75,6 +75,6 @@ export const fetchTopSoundboardSounds = function fetchTopSoundboardSounds(guildI
     const get = HTTP.get;
     const obj4 = { url: Endpoints.TOP_SOUNDBOARD_SOUNDS_FOR_GUILD(guildId), oldFormErrors: true, rejectWithError: true };
     const value = get(obj4);
-    value.then(f131124, f131125);
+    value.then(f131556, f131557);
   }
 };

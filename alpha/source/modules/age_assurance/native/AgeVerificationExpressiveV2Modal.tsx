@@ -1,25 +1,25 @@
-// Module ID: 7539
-// Function ID: 7540
+// Module ID: 7548
+// Function ID: 7549
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 5915, 1085, 21, 1398, 7540, 7542, 7544, 1382, 7546, 7548, 6638, 5091, 587, 7550, 7551, 7535, 7552, 5916, 7527, 7528, 5906, 7553, 7511, 7512, 5374, 7554, 5087, 7497, 2127, 1200, 5376, 1126, 3117, 6269, 6186, 7558, 7671, 6899, 5941, 6205, 7673, 7674, 558, 576, 1279, 6686, 2]
+// Dependencies: [5, 32, 19, 17, 5917, 1085, 21, 1398, 7549, 7551, 7553, 1382, 7555, 7557, 6639, 5092, 587, 7559, 7560, 7544, 7561, 5918, 7530, 7531, 5909, 7562, 7514, 7515, 5377, 7563, 5088, 7497, 2128, 7567, 1126, 3120, 6264, 6179, 7575, 7688, 6905, 5934, 6200, 7690, 7691, 558, 576, 1279, 6687, 2]
 
-// Module 7539 (AgeVerificationExpressiveV2Modal)
+// Module 7548 (AgeVerificationExpressiveV2Modal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5906 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 5915 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5916 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 5917 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7497 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7527 */;
-import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 7528 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 7530 */;
+import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 7531 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,8 +40,7 @@ const headerTitle3 = function headerTitle() {
   return null;
 };
 function MethodsScreen(onClose) {
-  let Button;
-  let HelpMessage2;
+  let InlineNotice;
   let _undefined;
   let c8;
   let c9;
@@ -50,7 +49,7 @@ function MethodsScreen(onClose) {
   let fn;
   let footerMessage;
   let getAgeVerificationGetStartedSubtitle;
-  let intl;
+  let intl2;
   let items9;
   let loading;
   let methods;
@@ -59,10 +58,8 @@ function MethodsScreen(onClose) {
   let obj24;
   let outageBannerMessage;
   let refetch;
-  let string;
   let tmp19Result;
   let tmp2Result;
-  let tmp31;
   ({ entryPoint, navigation } = onClose);
   onClose = onClose.onClose;
   const modalSessionId = onClose.modalSessionId;
@@ -111,7 +108,7 @@ function MethodsScreen(onClose) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -170,7 +167,7 @@ function MethodsScreen(onClose) {
             closure_1_9(null);
           }
           v3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp38) {
           closure_4 = tmp38;
           if (0 === c5) {
@@ -329,23 +326,30 @@ function MethodsScreen(onClose) {
         tmp19Result7 = null != outageBannerMessage;
       }
       if (tmp19Result7) {
-        const obj16 = { messageType: tmp2(tmp3[33]).HelpMessageTypes.WARNING, children: outageBannerMessage };
-        const HelpMessage = tmp2(tmp3[33]).HelpMessage;
-        tmp19Result7 = tmp19(HelpMessage, obj16);
+        const obj16 = { type: "warning", message: outageBannerMessage, role: "status" };
+        tmp19Result7 = tmp19(tmp2(tmp3[33]).InlineNotice, obj16);
       }
       const items10 = [tmp19Result7, , ];
       let tmp19Result8 = !tmp6;
       if (tmp19Result8) {
-        const obj17 = { style: tmp.emptyContainer, children: c9(HelpMessage2, obj18) };
+        let cR6336;
+        let tmp32;
+        const obj17 = { style: tmp.emptyContainer, children: c9(InlineNotice, obj18) };
         const Stack6 = tmp2(tmp3[28]).Stack;
-        obj18 = { messageType: tmp2(tmp3[33]).HelpMessageTypes.ERROR, button: c9(Button, obj19), children: string(error ? tmp31.Bkmk4Y : tmp31.cR6336) };
-        HelpMessage2 = tmp2(tmp3[33]).HelpMessage;
-        obj19 = { variant: "secondary", size: "sm", text: intl.string(onClose(tmp3[36]).hDvmYP), onPress: refetch };
-        Button = tmp2(tmp3[34]).Button;
-        intl = tmp2(tmp3[35]).intl;
-        const intl2 = tmp2(tmp3[35]).intl;
-        string = intl2.string;
-        tmp31 = onClose(tmp3[36]);
+        InlineNotice = tmp2(tmp3[33]).InlineNotice;
+        const intl = tmp2(tmp3[34]).intl;
+        const string = intl.string;
+        const tmp31 = onClose(tmp3[35]);
+        if (error) {
+          cR6336 = tmp31.Bkmk4Y;
+          tmp32 = tmp30;
+        } else {
+          cR6336 = tmp31.cR6336;
+          tmp32 = tmp30;
+        }
+        obj18 = { type: "critical", message: string(cR6336), role: "alert", action: obj19 };
+        obj19 = { text: intl2.string(tmp32(tmp3[35]).hDvmYP), onClick: refetch };
+        intl2 = tmp2(tmp3[34]).intl;
         tmp19Result8 = tmp19(Stack6, obj17);
       }
       items10[1] = tmp19Result8;
@@ -385,26 +389,26 @@ function MethodsScreen(onClose) {
                   }
                   if (null != KeyIcon) {
                     const obj = { IconComponent: KeyIcon, variant: "secondary" };
-                    tmp4 = _undefined(tmp(tmp2[38]).TableRow.Icon, obj);
+                    tmp4 = _undefined(tmp(tmp2[37]).TableRow.Icon, obj);
                     tmp5 = _undefined;
                   } else if (null != children.icon) {
                     const obj2 = { icon: children.icon };
-                    tmp4 = _undefined(onClose(tmp2[39]), obj2);
+                    tmp4 = _undefined(onClose(tmp2[38]), obj2);
                     tmp5 = _undefined;
                   } else {
-                    const obj3 = { IconComponent: navigation(onComplete[40]).UnknownGameIcon, variant: "secondary" };
-                    const Icon = tmp(tmp2[38]).TableRow.Icon;
+                    const obj3 = { IconComponent: navigation(onComplete[39]).UnknownGameIcon, variant: "secondary" };
+                    const Icon = tmp(tmp2[37]).TableRow.Icon;
                     tmp4 = _undefined(Icon, obj3);
                     tmp5 = _undefined;
                   }
                   const combined = "" + children.method + "-" + children.vendor;
-                  const TableRow = tmp(tmp2[38]).TableRow;
+                  const TableRow = tmp(tmp2[37]).TableRow;
                   const tmp10 = c8;
                   if (c8 === combined) {
                     tmp5Result = tmp5(initiateAgeVerificationV2, {});
                   } else {
                     const obj4 = { size: "md", color: onClose(onComplete[16]).colors.INTERACTIVE_ICON_DEFAULT };
-                    const ChevronSmallRightIcon = tmp(tmp2[41]).ChevronSmallRightIcon;
+                    const ChevronSmallRightIcon = tmp(tmp2[40]).ChevronSmallRightIcon;
                     tmp5Result = tmp5(ChevronSmallRightIcon, obj4);
                   }
                   const obj5 = {
@@ -431,7 +435,7 @@ function MethodsScreen(onClose) {
                   return tmp5(TableRow, obj5, combined);
                 })
         };
-        const TableRowGroup = tmp2(tmp3[37]).TableRowGroup;
+        const TableRowGroup = tmp2(tmp3[36]).TableRowGroup;
         tmp19Result9 = tmp19(TableRowGroup, obj20);
       }
       const obj21 = { direction: "vertical", spacing: 12, children: items10 };
@@ -544,7 +548,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
             }
           }
           const obj2 = { screens: tmp7, initialRouteName: constants.METHODS, headerBackTitle: tmp12 };
-          const tmp16 = closure_9(entryPoint(6686).Navigator, obj2);
+          const tmp16 = closure_9(entryPoint(6687).Navigator, obj2);
           cResult[10] = tmp7;
           cResult[11] = tmp16;
           tmp14 = tmp16;
@@ -561,7 +565,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     }
   }
   function closeModal() {
-    const arr = entryPoint(onClose[42]);
+    const arr = entryPoint(onClose[41]);
     arr.pop();
     closure_2();
   }
@@ -577,7 +581,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     }
   };
   obj3[METHODS] = obj4;
-  tmpResult4 = entryPoint(6205);
+  tmpResult4 = entryPoint(6200);
   const GOOGLE_WALLET_VERIFICATION = constants.GOOGLE_WALLET_VERIFICATION;
   const obj5 = {
     headerStyle: tmp4.headerStyle,
@@ -585,11 +589,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     headerLeft: tmpResult5.getHeaderBackButton(),
     render() {
       const obj = { onClose: closeModal, onComplete, modalSessionId };
-      return closure_2_9(entryPoint(onClose[44]), obj);
+      return closure_2_9(entryPoint(onClose[43]), obj);
     }
   };
   obj3[GOOGLE_WALLET_VERIFICATION] = obj5;
-  tmpResult5 = entryPoint(6205);
+  tmpResult5 = entryPoint(6200);
   const APP_STORE_VERIFICATION = constants.APP_STORE_VERIFICATION;
   const obj6 = {
     headerStyle: tmp4.headerStyle,
@@ -597,7 +601,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     headerLeft: tmpResult6.getHeaderBackButton(),
     render() {
       const obj = { onClose: closeModal, modalSessionId };
-      return closure_2_9(entryPoint(onClose[45]), obj);
+      return closure_2_9(entryPoint(onClose[44]), obj);
     }
   };
   obj3[APP_STORE_VERIFICATION] = obj6;
@@ -607,7 +611,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   cResult[4] = tmp4;
   cResult[5] = obj3;
   tmp7 = obj3;
-  tmpResult6 = entryPoint(6205);
+  tmpResult6 = entryPoint(6200);
 }) : (function AgeVerificationExpressiveV2Modal(entryPoint) {
   let intl;
   entryPoint = entryPoint.entryPoint;
@@ -616,7 +620,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   const tmp = closure_11();
   let closure_3 = tmp;
   const memo = react.useMemo(() => {
-    const obj = entryPoint(onComplete[48]);
+    const obj = entryPoint(onComplete[47]);
     return obj.v4();
   }, []);
   const items = [tmp, memo, entryPoint, onClose, onComplete];
@@ -628,7 +632,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     let closure_0 = memo;
     closure_3 = onComplete;
     function closeModal() {
-      const arr = entryPoint(onClose[42]);
+      const arr = entryPoint(onClose[41]);
       arr.pop();
       closure_2();
     }
@@ -652,7 +656,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
       headerLeft: obj5.getHeaderBackButton(),
       render() {
         const obj = { onClose: closeModal, onComplete, modalSessionId };
-        return closure_2_9(entryPoint(onClose[44]), obj);
+        return closure_2_9(entryPoint(onClose[43]), obj);
       }
     };
     obj[GOOGLE_WALLET_VERIFICATION] = obj4;
@@ -664,7 +668,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
       headerLeft: obj7.getHeaderBackButton(),
       render() {
         const obj = { onClose: closeModal, modalSessionId };
-        return closure_2_9(entryPoint(onClose[45]), obj);
+        return closure_2_9(entryPoint(onClose[44]), obj);
       }
     };
     obj[APP_STORE_VERIFICATION] = obj6;
@@ -675,9 +679,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     const obj = AgeVerificationAnalyticsUtils;
     const result = obj.trackAgeVerificationModalViewed(memo, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
   }, items1);
-  let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: intl.string(entryPoint(onComplete[35]).t["13/7kX"]) };
-  const Navigator = entryPoint(onComplete[49]).Navigator;
-  intl = entryPoint(onComplete[35]).intl;
+  let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: intl.string(entryPoint(onComplete[34]).t["13/7kX"]) };
+  const Navigator = entryPoint(onComplete[48]).Navigator;
+  intl = entryPoint(onComplete[34]).intl;
   return closure_9(Navigator, obj);
 });
 let result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationExpressiveV2Modal.tsx");

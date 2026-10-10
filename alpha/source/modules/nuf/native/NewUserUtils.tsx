@@ -1,25 +1,25 @@
-// Module ID: 18068
-// Function ID: 18069
+// Module ID: 18142
+// Function ID: 18143
 // Name: NewUserUtils
-// Dependencies: [5, 16293, 5758, 1390, 1085, 12356, 7482, 12358, 1382, 7505, 8667, 584, 1504, 12361, 5941, 18067, 1112, 12465, 2]
+// Dependencies: [5, 16360, 5761, 1390, 1085, 12400, 7482, 12402, 1382, 7505, 8682, 584, 1504, 12405, 5934, 18141, 1112, 12512, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 18068 (NewUserUtils)
+// Module 18142 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import Link from "Link" /* 1504 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
 import react_nativeDefault from "react-native" /* 7505 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8667 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12356 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12361 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12465 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 18067 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8682 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12400 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12405 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12512 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 18141 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16293 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5758 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16360 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ let obj = function _shouldSkipContactSyncStep() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -124,7 +124,7 @@ obj = function _getNextOnboardingStep() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -171,7 +171,7 @@ obj = function _getNextOnboardingStep() {
             } else {
               let key;
               if (closure_133_14[lastShownStepIndex] != null) {
-                key = tmp72.key;
+                key = tmp70.key;
               }
               registration = key;
               if (key == null) {
@@ -190,8 +190,8 @@ obj = function _getNextOnboardingStep() {
                 transitionStep = tmp.transitionStep;
                 c6 = 2;
                 c7 = 1;
-                const obj9 = { value: shouldShowStep(), done: false };
-                return obj9;
+                const obj8 = { value: shouldShowStep(), done: false };
+                return obj8;
               }
             }
           } else {
@@ -204,30 +204,29 @@ obj = function _getNextOnboardingStep() {
                 c7 = 3;
                 return { value, done: true };
               } else if (value) {
-                let obj13;
+                let obj12;
                 lastShownStepIndex = sum;
-                const obj11 = { skip: flag };
+                const obj10 = { skip: flag };
                 const obj3 = closure_133_0(closure_133_2[13]);
-                obj3.trackNUFStep(closure_3, key2, obj11);
+                obj3.trackNUFStep(closure_3, key2, obj10);
                 if (null != transitionStep) {
                   closure_133_15(key2);
-                  const obj6 = closure_133_1(closure_133_2[11]);
-                  obj6.wait(transitionStep);
-                  obj13 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
-                  const obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
+                  transitionStep();
+                  obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
+                  const obj11 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: false };
                 } else {
-                  obj13 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
+                  obj12 = { lastShownStepIndex, onboardingStepIndex: sum, continueNavigation: null == transitionStep };
                   transitionStep = undefined;
                   if (closure_133_14[sum] != null) {
                     transitionStep = tmp25.transitionStep;
                   }
                 }
-                tmp5 = obj13;
+                tmp5 = obj12;
               } else {
                 c6 = 3;
                 c7 = 1;
-                const obj14 = { value: closure_133_16(flag, lastShownStepIndex, sum), done: false };
-                return obj14;
+                const obj13 = { value: closure_133_16(flag, lastShownStepIndex, sum), done: false };
+                return obj13;
               }
             } else if (arg0 === 1) {
               c7 = 3;
@@ -242,9 +241,9 @@ obj = function _getNextOnboardingStep() {
             c7 = 3;
             return { value: tmp5, done: true };
           }
-        } catch (tmp62) {
+        } catch (tmp60) {
           c7 = 3;
-          throw tmp62;
+          throw tmp60;
         }
       }
     })();
@@ -285,7 +284,7 @@ let closure_12 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {
@@ -350,7 +349,7 @@ let closure_13 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {

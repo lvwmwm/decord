@@ -1,9 +1,9 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12407
+// Function ID: 12408
 // Name: RedesignContactSyncModal
-// Dependencies: [5, 32, 19, 17, 1390, 1999, 12355, 12356, 1085, 7482, 21, 5091, 587, 6263, 12354, 558, 576, 1126, 12358, 5087, 12364, 1631, 1503, 504, 12362, 1382, 1105, 1265, 5055, 12365, 2000, 7499, 10196, 12366, 12367, 12371, 12374, 12375, 12376, 12377, 12379, 1273, 6205, 12381, 12382, 6686, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1999, 12399, 12400, 1085, 7482, 21, 5092, 587, 6258, 12398, 558, 576, 1126, 12402, 5088, 12408, 1631, 1503, 504, 12406, 1382, 1105, 1265, 5056, 12409, 2000, 7499, 10225, 12410, 12411, 12415, 12418, 12419, 12420, 12421, 12423, 1273, 6200, 12425, 12426, 6687, 2]
 
-// Module 12363 (RedesignContactSyncModal)
+// Module 12407 (RedesignContactSyncModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,25 +13,25 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
+import NavigatorConstants from "NavigatorConstants" /* 6258 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12354 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12358 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12364 */;
-import ContactSyncBackToLandingDefault from "ContactSyncBackToLanding" /* 12381 */;
-import AddPhoneScreens from "AddPhoneScreens" /* 12382 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12398 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12402 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12408 */;
+import ContactSyncBackToLandingDefault from "ContactSyncBackToLanding" /* 12425 */;
+import AddPhoneScreens from "AddPhoneScreens" /* 12426 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12355 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12356 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12399 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12400 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
               const _setTimeout = setTimeout;
               const timerId = setTimeout(() => closure_1_1(false), 2000);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -201,7 +201,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
       const obj = AnalyticsUtilsDefault;
       obj.track(AnalyticEvents.OPEN_POPOUT, obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(12365, dependencyMap.paths), "Contact Sync Info Settings");
+      obj3.openLazy(asyncRequire(12409, dependencyMap.paths), "Contact Sync Info Settings");
     }
   }, items4);
   const items5 = [onNext, onComplete];
@@ -219,7 +219,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -255,7 +255,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
             const result = obj.closeContactSyncModal(obj7);
           }
           onComplete = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp14) {
         onComplete = 3;
@@ -316,17 +316,17 @@ function getScreens(isOnboarding) {
   let setLoading;
   function render() {
     const obj = { navigateToLandingPage: _slicedToArray };
-    return authStore5(closure_25, obj);
+    return authStore4(closure_25, obj);
   }
   const render2 = function render() {
     const obj = { onComplete: _asyncToGenerator };
-    return authStore5(closure_26, obj);
+    return authStore4(closure_26, obj);
   };
   function headerLeft(arg0) {
     const obj = { navigateToLandingPage: _slicedToArray };
     const tmp = ContactSyncBackToLandingDefault;
     const merged = Object.assign(arg0);
-    return authStore5(tmp, obj);
+    return authStore4(tmp, obj);
   }
   const render3 = function render() {
     return closure_1_16(AddPhoneScreens.AddPhoneScreen, {});
@@ -335,7 +335,7 @@ function getScreens(isOnboarding) {
     const obj = { navigateToLandingPage: _slicedToArray };
     const tmp = ContactSyncBackToLandingDefault;
     const merged = Object.assign(arg0);
-    return authStore5(tmp, obj);
+    return authStore4(tmp, obj);
   };
   const render4 = function render() {
     return closure_1_16(AddPhoneScreens.VerifyPhoneScreen, {});
@@ -344,7 +344,7 @@ function getScreens(isOnboarding) {
     const obj = { navigateToLandingPage: _slicedToArray };
     const tmp = ContactSyncBackToLandingDefault;
     const merged = Object.assign(arg0);
-    return authStore5(tmp, obj);
+    return authStore4(tmp, obj);
   };
   const render5 = function render() {
     return closure_1_16(AddPhoneScreens.VerifyPasswordScreen, {});
@@ -360,7 +360,7 @@ function getScreens(isOnboarding) {
     headerLeft: headerCloseButton,
     render() {
       const obj = { onComplete: _asyncToGenerator, openSettingsSheet: dependencyMap, loading: require, setLoading: importDefault };
-      return authStore5(ContactSyncLandingScreen, obj);
+      return authStore4(ContactSyncLandingScreen, obj);
     }
   };
   isOnboarding = isOnboarding.isOnboarding;
@@ -433,7 +433,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Onboar
   }
   if (cResult[1] !== tmp4.landingTrailing) {
     const obj3 = { style: landingTrailing, variant: "text-sm/medium", color: "text-muted", children: first };
-    const tmp10 = authStore5(Text_Text.Text, obj3);
+    const tmp10 = authStore4(Text_Text.Text, obj3);
     cResult[1] = tmp4.landingTrailing;
     cResult[2] = tmp10;
     tmp8 = tmp10;
@@ -453,7 +453,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Onboar
   obj2 = { learnMoreUrl: obj3.getOpenLearnMoreUrl() };
   prop = intl3.t["84S6+Z"];
   obj3 = ContactSyncUtils;
-  return authStore5(Text, obj);
+  return authStore4(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function OnboardingTrailing(arg0) {
@@ -514,7 +514,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
   [loading, dependencyMap] = react.useState(false);
   ({ name, error, isNameFromContactBook } = closure_10());
   closure_10();
-  loading(12374)(navigation, navigateToLandingPage);
+  loading(12418)(navigation, navigateToLandingPage);
   const tmp8 = loading;
   if (cResult[0] !== navigation) {
     const _require = _asyncToGenerator(async (arg0, value) => {
@@ -531,7 +531,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -565,7 +565,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
             const _setTimeout = setTimeout;
             const timerId = setTimeout(() => v1(false), 2000);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -623,7 +623,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
         }
       }
       let obj5 = { onNext: tmp10, error, loading, initialName: str, prefilledFromContactBook: tmp16 };
-      const tmp19 = closure_16(tmp8(12376), obj5);
+      const tmp19 = closure_16(tmp8(12420), obj5);
       cResult[7] = error;
       cResult[8] = loading;
       cResult[9] = tmp10;
@@ -680,7 +680,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
   const tmp5 = closure_10();
   const name = tmp5.name;
   ({ isNameFromContactBook, error } = tmp5);
-  loading(12374)(navigation, navigateToLandingPage);
+  loading(12418)(navigation, navigateToLandingPage);
   const useCallback = react.useCallback;
   let closure_0 = onNext(function*(arg0, value) {
     let obj2;
@@ -696,7 +696,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -730,7 +730,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => v1(false), 2000);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -763,7 +763,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
   obj3 = { onNext, error, loading, initialName: str, prefilledFromContactBook: tmp12 };
   str = name;
   const tmp10 = View;
-  tmp11 = loading(12376);
+  tmp11 = loading(12420);
   if (name == null) {
     str = "";
   }
@@ -931,7 +931,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncO
       return tmp2;
     }
   }
-  const tmp3 = authStore5(closure_28, { onComplete, openSettingsSheet, initialRoutes });
+  const tmp3 = authStore4(closure_28, { onComplete, openSettingsSheet, initialRoutes });
   cResult[0] = initialRoutes;
   cResult[1] = onComplete;
   cResult[2] = openSettingsSheet;
@@ -939,7 +939,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncO
   tmp2 = tmp3;
 }) : (function ContactSyncOnboardingModal(onComplete) {
   const obj = { onComplete: onComplete.route.params.onComplete, openSettingsSheet: onComplete.openSettingsSheet, initialRoutes: onComplete.initialRoutes };
-  return authStore5(closure_28, obj);
+  return authStore4(closure_28, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncModal(arg0) {
@@ -1050,7 +1050,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncM
             return tmp22;
           }
           const obj3 = { screens: tmp13, initialRouteStack: tmp18, headerBackTitle: tmp20 };
-          const tmp24 = closure_16(tmp(6686).Navigator, obj3);
+          const tmp24 = closure_16(tmp(6687).Navigator, obj3);
           cResult[17] = tmp13;
           cResult[18] = tmp18;
           cResult[19] = tmp24;

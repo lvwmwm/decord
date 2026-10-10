@@ -1,29 +1,29 @@
-// Module ID: 13927
-// Function ID: 13928
+// Module ID: 13980
+// Function ID: 13981
 // Name: GuildMediaStateStore
-// Dependencies: [2063, 6061, 2069, 2068, 5894, 502, 2064, 2086, 4709, 4719, 2115, 5973, 5112, 1085, 1106, 4698, 13928, 8638, 11, 5891, 8496, 504, 568, 584, 2]
+// Dependencies: [2064, 6054, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 4739, 13981, 8654, 11, 5894, 8512, 504, 568, 584, 2]
 
-// Module 13927 (GuildMediaStateStore)
+// Module 13980 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4698 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13928 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6061 */;
-import StageInstanceStore from "StageInstanceStore" /* 2069 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 13981 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -257,7 +257,7 @@ function computeGuildMediaState(guildId) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = getEmbeddedActivityLocationChannelId(_location);
-        let tmp29Result = tmp29(8496);
+        let tmp29Result = tmp29(8512);
         if (tmp29Result.isActivitiesInTextEnabled(ChannelStore.getChannel(embeddedActivityLocationChannelId))) {
           someResult2 = found.length > 0;
         } else {
@@ -270,7 +270,7 @@ function computeGuildMediaState(guildId) {
           });
         }
         let obj4 = { audio: flag2, video: flag, screenshare: someResult, liveStage: someResult1, activeEvent: null != tmp29Result2.getGuildActiveEvent(guildId), activity: someResult2, isCurrentUserConnected: false };
-        let tmp29Result2 = tmp29(8638);
+        let tmp29Result2 = tmp29(8654);
         return obj4;
       }
       continue;
@@ -311,7 +311,7 @@ const isVoiceChannel = ChannelRecord.isVoiceChannel;
 ({ BasicPermissions: closure_18, ME: closure_19 } = Constants);
 let closure_20 = Object.freeze({ audio: false, video: false, screenshare: false, liveStage: false, activeEvent: false, activity: false, isCurrentUserConnected: false });
 new Map();
-const authStore7 = 0;
+const authStore6 = 0;
 let closure_23 = 0;
 let c24 = null;
 let c25 = -1;

@@ -1,24 +1,24 @@
-// Module ID: 10342
-// Function ID: 10343
+// Module ID: 10375
+// Function ID: 10376
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5754, 4710, 2064, 2012, 5109, 1085, 2071, 5091, 587, 558, 576, 10343, 5410, 4948, 1629, 1382, 573, 4779, 9279, 2]
+// Dependencies: [19, 5757, 4751, 2065, 2012, 5110, 1085, 2072, 5092, 587, 558, 576, 10376, 5413, 4987, 1629, 1382, 573, 4818, 9306, 2]
 
-// Module 10342 (useChannelSafeAreaBottomStyles)
+// Module 10375 (useChannelSafeAreaBottomStyles)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import KeyboardTypes from "KeyboardTypes" /* 1629 */;
-import ChannelConstants from "ChannelConstants" /* 2071 */;
-import useToken from "useToken" /* 4779 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9279 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import useToken from "useToken" /* 4818 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9306 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
-import LurkingStore from "LurkingStore" /* 4710 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import LurkingStore from "LurkingStore" /* 4751 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import createStyles from "createStyles" /* 5091 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -347,9 +347,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSa
   let closure_1;
   let closure_2;
   let gradientBottom;
-  let obj = gradientBottom(4779);
+  let obj = gradientBottom(4818);
   const token = obj.useToken(nativeDefault.colors.MOBILE_KEYBOARD_GAP_BACKGROUND);
-  let obj2 = gradientBottom(9279);
+  let obj2 = gradientBottom(9306);
   gradientBottom = obj2.useGradientBottom();
   let backgroundColor1;
   if (gradientBottom != null) {

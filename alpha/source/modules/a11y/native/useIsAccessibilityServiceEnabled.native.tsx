@@ -1,12 +1,12 @@
-// Module ID: 7878
-// Function ID: 7879
+// Module ID: 7896
+// Function ID: 7897
 // Name: useIsAccessibilityServiceEnabled
-// Dependencies: [570, 5302, 5361, 558, 2]
+// Dependencies: [570, 5303, 5362, 558, 2]
 // Exports: getIsAccessibilityServiceEnabled
 
-// Module 7878 (useIsAccessibilityServiceEnabled)
-import react_nativeDefault from "react-native" /* 5302 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5361 */;
+// Module 7896 (useIsAccessibilityServiceEnabled)
+import react_nativeDefault from "react-native" /* 5303 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

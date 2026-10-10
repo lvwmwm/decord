@@ -1,9 +1,9 @@
-// Module ID: 4904
-// Function ID: 4905
+// Module ID: 4943
+// Function ID: 4944
 // Name: DefaultRouteStore
 // Dependencies: [1085, 504, 510, 584, 2]
 
-// Module 4904 (DefaultRouteStore)
+// Module 4943 (DefaultRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

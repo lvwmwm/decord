@@ -138,7 +138,7 @@ function ItemWithSeparator(leadingItem) {
     tmp19 = tmp21;
   }
   let tmp29 = null;
-  const tmp27 = authStore3;
+  const tmp27 = syncedClientThemes;
   const tmp28 = map1;
   if (tmp12 || tmp19) {
     let tmp30 = tmp19;

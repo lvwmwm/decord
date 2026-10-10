@@ -1,14 +1,14 @@
-// Module ID: 14660
-// Function ID: 14661
+// Module ID: 14714
+// Function ID: 14715
 // Name: definitions
-// Dependencies: [14661, 8441, 10901, 14662, 8594, 2]
+// Dependencies: [14715, 8457, 10941, 14716, 8610, 2]
 
-// Module 14660 (definitions)
-import OAuth2Scopes from "OAuth2Scopes" /* 8441 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8594 */;
-import ActivityPlatform from "ActivityPlatform" /* 10901 */;
-import helpers from "helpers" /* 14661 */;
-import contextMenuIcons from "contextMenuIcons" /* 14662 */;
+// Module 14714 (definitions)
+import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8610 */;
+import ActivityPlatform from "ActivityPlatform" /* 10941 */;
+import helpers from "helpers" /* 14715 */;
+import contextMenuIcons from "contextMenuIcons" /* 14716 */;
 import size_mod from "module_2" /* 2 */;
 
 function VoiceCapabilities(object) {
@@ -984,7 +984,7 @@ const obj28 = {
     minResult = stringResult1.min(0);
     return obj;
   },
-  response: "Set"
+  response: "y"
 };
 const obj29 = {
   request: "Array",

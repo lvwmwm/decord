@@ -1,14 +1,14 @@
-// Module ID: 5921
-// Function ID: 5922
+// Module ID: 7536
+// Function ID: 7537
 // Name: SafetyHubStore
-// Dependencies: [5922, 5923, 5924, 504, 584, 2]
+// Dependencies: [7512, 7513, 7537, 504, 584, 2]
 
-// Module 5921 (SafetyHubStore)
+// Module 7536 (SafetyHubStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SafetyHubModels from "SafetyHubModels" /* 5923 */;
-import createAggregatorDefault from "createAggregator" /* 5924 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 5922 */;
+import SafetyHubModels from "SafetyHubModels" /* 7513 */;
+import createAggregatorDefault from "createAggregator" /* 7537 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;
@@ -244,13 +244,13 @@ const obj2 = {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
       FAILURE = AgeCheckStatus.LOADING;
-      for (const key10002 in closure_6) {
-        if (!closure_6[key10002].is_coppa) {
+      for (const key10007 in closure_6) {
+        if (!closure_6[key10007].is_coppa) {
           continue;
         } else {
           let obj = { status: SafetyHubModels.AppealStatusType.REVIEW_PENDING };
-          let tmp2 = closure_6[key10002];
-          tmp2.appeal_status = obj;
+          let tmp4 = closure_6[key10007];
+          tmp4.appeal_status = obj;
           continue;
         }
         continue;

@@ -1,9 +1,9 @@
-// Module ID: 10072
-// Function ID: 10073
+// Module ID: 10101
+// Function ID: 10102
 // Name: GiftingBadgeComplexArtExperiment
 // Dependencies: [1453, 2]
 
-// Module 10072 (GiftingBadgeComplexArtExperiment)
+// Module 10101 (GiftingBadgeComplexArtExperiment)
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

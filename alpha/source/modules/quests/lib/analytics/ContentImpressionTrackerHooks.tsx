@@ -1,16 +1,16 @@
-// Module ID: 9174
-// Function ID: 9175
+// Module ID: 9201
+// Function ID: 9202
 // Name: ContentImpressionTrackerHooks
-// Dependencies: [19, 7384, 558, 576, 5986, 504, 7409, 5929, 9175, 2]
+// Dependencies: [19, 7390, 558, 576, 5979, 504, 7415, 5922, 9202, 2]
 // Exports: useQuestImpressionId
 
-// Module 9174 (ContentImpressionTrackerHooks)
+// Module 9201 (ContentImpressionTrackerHooks)
 import react2 from "react" /* 576 */;
-import AdCreativeType from "AdCreativeType" /* 5986 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7409 */;
-import react3 from "react" /* 9175 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
+import react3 from "react" /* 9202 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7384 */;
+import QuestStore from "QuestStore" /* 7390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAdContent
   }
   const tmp4Result = tmp4(questOrQuests, adContentId);
   if ("questOrQuests" in questOrQuests) {
-    adCreativeType = tmp(5986).AdCreativeType.QUEST;
+    adCreativeType = tmp(5979).AdCreativeType.QUEST;
   } else {
     adCreativeType = questOrQuests.adCreativeType;
   }
@@ -228,7 +228,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestStat
     if (null != stateFromStores) {
       let tmp10;
       if (cResult[5] !== stateFromStores) {
-        const tmpResult2 = adContentIds(7409);
+        const tmpResult2 = adContentIds(7415);
         const questStatus = tmpResult2.getQuestStatus(stateFromStores);
         cResult[5] = stateFromStores;
         cResult[6] = questStatus;
@@ -238,7 +238,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestStat
       }
       tmp9 = tmp10;
     }
-    return tmp9 !== adCreativeType(5929)(tmp9);
+    return tmp9 !== adCreativeType(5922)(tmp9);
   }
   const fn = function u() {
     let quest = null;

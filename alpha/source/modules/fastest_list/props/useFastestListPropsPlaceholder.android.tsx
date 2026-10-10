@@ -1,13 +1,13 @@
-// Module ID: 6748
-// Function ID: 6749
+// Module ID: 6749
+// Function ID: 6750
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 6749, 4928, 558, 576, 2]
+// Dependencies: [19, 17, 6750, 4967, 558, 576, 2]
 
-// Module 6748 (useFastestListPropsPlaceholder)
+// Module 6749 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4928 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6749 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6750 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "code", borderBottomLeftRadius: "name", borderBottomRightRadius: "code", divider: "a", dividerColor: "item", dividerPaddingLeft: "round", dividerPaddingRight: "ix", placeholderShape: "lj", placeholderShapeColor: "a", placeholderShapeCount: "toCharArray$esjava$1", placeholderShapeGap: "unicodeVersion", placeholderShapePaddingHorizontal: "lj", placeholderShapePaddingVertical: "a", placeholderFeedBackgroundColor: "toCharArray$esjava$1", placeholderFeedColor: "code", placeholderFeedLabelPadding: "lj", placeholderFeedLabelPaddingInnerRatio: "a", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "color", placeholderFeedPadding: "gap", placeholderFeedShape: "track", placeholderFeedShapeSize: "getChannel", placeholderType: NONE, width: "color", height: "r", verticalAlignment: "mn", horizontalAlignment: "Array" };
+  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "error", borderBottomLeftRadius: "track", borderBottomRightRadius: "e", divider: "toCharArray$esjava$1", dividerColor: "toCharArray$esjava$1", dividerPaddingLeft: "transform", dividerPaddingRight: "e", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "toCharArray$esjava$1", placeholderShapeCount: "uri", placeholderShapeGap: "e", placeholderShapePaddingHorizontal: "toCharArray$esjava$1", placeholderShapePaddingVertical: "toCharArray$esjava$1", placeholderFeedBackgroundColor: "url", placeholderFeedColor: "e", placeholderFeedLabelPadding: "toCharArray$esjava$1", placeholderFeedLabelPaddingInnerRatio: "toCharArray$esjava$1", placeholderFeedLabelSize: "useAnimatedStyle", placeholderFeedLabelSecondarySize: "e", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "toCharArray$esjava$1", placeholderFeedShapeSize: "code", placeholderType: NONE, width: false, height: false, verticalAlignment: false, horizontalAlignment: false };
   if (null == listFooter) {
     return size;
   } else {

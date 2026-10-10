@@ -1,14 +1,14 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16524
+// Function ID: 16525
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 2067, 21, 558, 576, 5418, 12642, 2041, 6835, 6888, 10275, 1126, 7085, 16455, 9987, 6879, 4767, 6892, 504, 2]
+// Dependencies: [19, 2068, 21, 558, 576, 5421, 12689, 2041, 6838, 6894, 10308, 1126, 7091, 16525, 10016, 6885, 4808, 6898, 504, 2]
 
-// Module 16454 (FavoritesGuildCategoryActionSheet)
-import ToastUtils from "ToastUtils" /* 4767 */;
-import ClipboardUtils from "ClipboardUtils" /* 6879 */;
-import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 16455 */;
+// Module 16524 (FavoritesGuildCategoryActionSheet)
+import ToastUtils from "ToastUtils" /* 4808 */;
+import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 16525 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2067 */;
+import FavoriteStore from "FavoriteStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,14 +37,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
   const cResult = obj.c(19);
   category = category.category;
   const onClose = category.onClose;
-  const tmp4 = onClose(5418)(category, true);
-  const tmp5 = onClose(12642)(category);
+  const tmp4 = onClose(5421)(category, true);
+  const tmp5 = onClose(12689)(category);
   dependencyMap = tmp5;
   const DeveloperMode = category(2041).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   if (cResult[0] !== tmp4) {
     let obj2 = { title: tmp4 };
-    const tmp9 = closure_5(category(6835).BottomSheetTitleHeader, obj2);
+    const tmp9 = closure_5(category(6838).BottomSheetTitleHeader, obj2);
     cResult[0] = tmp4;
     cResult[1] = tmp9;
     tmp7 = tmp9;
@@ -62,8 +62,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
       const stringResult = intl.string(category(1126).t.zdPFs9);
-      const obj3 = { IconComponent: category(7085).SettingsIcon };
-      const Icon2 = tmp(6888).ActionSheetRow.Icon;
+      const obj3 = { IconComponent: category(7091).SettingsIcon };
+      const Icon2 = tmp(6894).ActionSheetRow.Icon;
       const tmp18 = closure_5(Icon2, obj3);
       cResult[5] = stringResult;
       cResult[6] = tmp18;
@@ -97,7 +97,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
           }
           const obj4 = { header: tmp7, children: items };
           items = [tmp10, tmp19, tmp22];
-          const tmp27 = closure_6(category(6892).ActionSheet, obj4);
+          const tmp27 = closure_6(category(6898).ActionSheet, obj4);
           cResult[14] = tmp7;
           cResult[15] = tmp10;
           cResult[16] = tmp19;
@@ -109,7 +109,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
       let tmp23 = null;
       if (setting) {
         const obj5 = { hasIcons: true, children: closure_5(ActionSheetRow2, obj6) };
-        const Group3 = tmp(6888).ActionSheetRow.Group;
+        const Group3 = tmp(6894).ActionSheetRow.Group;
         obj6 = {
           label: intl2.string(category(1126).t["2visC6"]),
           icon: closure_5(Icon3, obj7),
@@ -121,10 +121,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
                   onClose();
                 }
         };
-        ActionSheetRow2 = tmp(6888).ActionSheetRow;
+        ActionSheetRow2 = tmp(6894).ActionSheetRow;
         intl2 = tmp(1126).intl;
-        obj7 = { IconComponent: category(9987).IdIcon };
-        Icon3 = tmp(6888).ActionSheetRow.Icon;
+        obj7 = { IconComponent: category(10016).IdIcon };
+        Icon3 = tmp(6894).ActionSheetRow.Icon;
         tmp23 = closure_5(Group3, obj5);
       }
       cResult[10] = category.id;
@@ -133,8 +133,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
       cResult[13] = tmp23;
       tmp22 = tmp23;
     }
-    const obj8 = { hasIcons: true, children: closure_5(category(6888).ActionSheetRow, obj9) };
-    const Group2 = tmp(6888).ActionSheetRow.Group;
+    const obj8 = { hasIcons: true, children: closure_5(category(6894).ActionSheetRow, obj9) };
+    const Group2 = tmp(6894).ActionSheetRow.Group;
     obj9 = {
       label: tmp14,
       icon: tmp15,
@@ -152,7 +152,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
   let tmp11 = null;
   if (null != tmp5) {
     const obj10 = { hasIcons: true, children: closure_5(ActionSheetRow, obj11) };
-    const Group = tmp(6888).ActionSheetRow.Group;
+    const Group = tmp(6894).ActionSheetRow.Group;
     obj11 = {
       label: tmp5.label,
       icon: closure_5(Icon, obj12),
@@ -161,9 +161,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
           onClose();
         }
     };
-    ActionSheetRow = tmp(6888).ActionSheetRow;
-    obj12 = { IconComponent: category(10275).PlusLargeIcon };
-    Icon = tmp(6888).ActionSheetRow.Icon;
+    ActionSheetRow = tmp(6894).ActionSheetRow;
+    obj12 = { IconComponent: category(10308).PlusLargeIcon };
+    Icon = tmp(6894).ActionSheetRow.Icon;
     tmp11 = closure_5(Group, obj10);
   }
   cResult[2] = tmp5;
@@ -189,18 +189,18 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
   let obj9;
   category = category.category;
   const onClose = category.onClose;
-  const tmp2 = onClose(5418)(category, true);
-  const tmp3 = onClose(12642)(category);
+  const tmp2 = onClose(5421)(category, true);
+  const tmp3 = onClose(12689)(category);
   dependencyMap = tmp3;
   const DeveloperMode = category(2041).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = { header: closure_5(category(6835).BottomSheetTitleHeader, { title: tmp2 }), children: items };
-  const ActionSheet = category(6892).ActionSheet;
+  let obj = { header: closure_5(category(6838).BottomSheetTitleHeader, { title: tmp2 }), children: items };
+  const ActionSheet = category(6898).ActionSheet;
   let tmp7Result = null;
   const tmp6 = closure_6;
   if (null != tmp3) {
     let obj2 = { hasIcons: true, children: closure_5(ActionSheetRow, obj3) };
-    const Group = tmp4(6888).ActionSheetRow.Group;
+    const Group = tmp4(6894).ActionSheetRow.Group;
     obj3 = {
       label: tmp3.label,
       icon: closure_5(Icon, obj4),
@@ -209,14 +209,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
           onClose();
         }
     };
-    ActionSheetRow = tmp4(6888).ActionSheetRow;
-    obj4 = { IconComponent: category(10275).PlusLargeIcon };
-    Icon = tmp4(6888).ActionSheetRow.Icon;
+    ActionSheetRow = tmp4(6894).ActionSheetRow;
+    obj4 = { IconComponent: category(10308).PlusLargeIcon };
+    Icon = tmp4(6894).ActionSheetRow.Icon;
     tmp7Result = tmp7(Group, obj2);
   }
   items = [tmp7Result, , ];
   const obj5 = { hasIcons: true, children: closure_5(ActionSheetRow2, obj6) };
-  const Group2 = tmp4(6888).ActionSheetRow.Group;
+  const Group2 = tmp4(6894).ActionSheetRow.Group;
   obj6 = {
     label: intl.string(category(1126).t.zdPFs9),
     icon: closure_5(Icon2, obj7),
@@ -225,15 +225,15 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
       onClose();
     }
   };
-  ActionSheetRow2 = tmp4(6888).ActionSheetRow;
+  ActionSheetRow2 = tmp4(6894).ActionSheetRow;
   intl = tmp4(1126).intl;
-  obj7 = { IconComponent: category(7085).SettingsIcon };
-  Icon2 = tmp4(6888).ActionSheetRow.Icon;
+  obj7 = { IconComponent: category(7091).SettingsIcon };
+  Icon2 = tmp4(6894).ActionSheetRow.Icon;
   items[1] = closure_5(Group2, obj5);
   let tmp7Result2 = null;
   if (setting) {
     const obj8 = { hasIcons: true, children: closure_5(ActionSheetRow3, obj9) };
-    const Group3 = tmp4(6888).ActionSheetRow.Group;
+    const Group3 = tmp4(6894).ActionSheetRow.Group;
     obj9 = {
       label: intl2.string(category(1126).t["2visC6"]),
       icon: closure_5(Icon3, obj10),
@@ -245,10 +245,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
           onClose();
         }
     };
-    ActionSheetRow3 = tmp4(6888).ActionSheetRow;
+    ActionSheetRow3 = tmp4(6894).ActionSheetRow;
     intl2 = tmp4(1126).intl;
-    obj10 = { IconComponent: category(9987).IdIcon };
-    Icon3 = tmp4(6888).ActionSheetRow.Icon;
+    obj10 = { IconComponent: category(10016).IdIcon };
+    Icon3 = tmp4(6894).ActionSheetRow.Icon;
     tmp7Result2 = tmp7(Group3, obj8);
   }
   items[2] = tmp7Result2;

@@ -1,18 +1,18 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16858
+// Function ID: 16859
 // Name: getNotificationCenterItemBody
-// Dependencies: [6061, 2086, 4719, 1390, 1085, 1126, 4923, 6065, 2031, 38, 2]
+// Dependencies: [6054, 2087, 4760, 1390, 1085, 1126, 4962, 6058, 2031, 38, 2]
 // Exports: default, getFriendRequestSentBody
 
-// Module 16788 (getNotificationCenterItemBody)
+// Module 16858 (getNotificationCenterItemBody)
 import _modDef38 from "module_38" /* 38 */;
 import intl13 from "intl" /* 1126 */;
 import StringUtils from "StringUtils" /* 2031 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6061 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6065 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import GuildScheduledEventStore2 from "GuildScheduledEventStore" /* 6054 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6058 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

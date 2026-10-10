@@ -1,19 +1,19 @@
-// Module ID: 11440
-// Function ID: 11441
+// Module ID: 11485
+// Function ID: 11486
 // Name: Chat
-// Dependencies: [109, 19, 5080, 21, 5091, 558, 576, 11441, 6333, 11447, 11450, 504, 9571, 2]
+// Dependencies: [109, 19, 5081, 21, 5092, 558, 576, 11486, 6334, 11492, 11495, 504, 9600, 2]
 
-// Module 11440 (Chat)
+// Module 11485 (Chat)
 import react2 from "react" /* 576 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 9571 */;
-import useNavigationTTIContentPainted from "useNavigationTTIContentPainted" /* 11441 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11447 */;
-import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 11450 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 9600 */;
+import useNavigationTTIContentPainted from "useNavigationTTIContentPainted" /* 11486 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11492 */;
+import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 11495 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
   const obj2 = useNavigationTTIContentPainted;
   const navigationTTIContentPainted = obj2.useNavigationTTIContentPainted();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Gesture = tmp(6333).Gesture;
+    const Gesture = tmp(6334).Gesture;
     const NativeResult = Gesture.Native();
     const disallowInterruptionResult = NativeResult.disallowInterruption(true);
     const result = disallowInterruptionResult.shouldCancelWhenOutside(false);
@@ -70,7 +70,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
     return tmp12;
   }
   const obj3 = { gesture: first, children: metroImportDefault(ChatListNativeComponentDefault, obj4) };
-  const GestureDetector = tmp(6333).GestureDetector;
+  const GestureDetector = tmp(6334).GestureDetector;
   obj4 = { style: tmp4.chatList, floatingChatInputEnabled: true, onContentPaintStateChange: tmp8, children: tmp9 };
   const tmp13 = metroImportDefault(GestureDetector, obj3);
   cResult[4] = tmp8;
@@ -82,7 +82,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
   let obj3;
   let tmp5;
   const tmp = closure_9();
-  const obj = navigationTTIContentPainted(11441);
+  const obj = navigationTTIContentPainted(11486);
   navigationTTIContentPainted = obj.useNavigationTTIContentPainted();
   const items = [navigationTTIContentPainted];
   const memo = react.useMemo(() => {
@@ -93,8 +93,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
   }, []);
   const callback = react.useCallback((nativeEvent) => navigationTTIContentPainted(nativeEvent.nativeEvent), items);
   const obj2 = { gesture: memo, children: closure_7(tmp5, obj3) };
-  const GestureDetector = navigationTTIContentPainted(6333).GestureDetector;
-  obj3 = { style: tmp.chatList, floatingChatInputEnabled: true, onContentPaintStateChange: callback, children: closure_7(navigationTTIContentPainted(11447).TTIFirstContentfulPaint, { label: "chat_list_android" }) };
+  const GestureDetector = navigationTTIContentPainted(6334).GestureDetector;
+  obj3 = { style: tmp.chatList, floatingChatInputEnabled: true, onContentPaintStateChange: callback, children: closure_7(navigationTTIContentPainted(11492).TTIFirstContentfulPaint, { label: "chat_list_android" }) };
   tmp5 = ChatListNativeComponentDefault;
   return closure_7(GestureDetector, obj2);
 });

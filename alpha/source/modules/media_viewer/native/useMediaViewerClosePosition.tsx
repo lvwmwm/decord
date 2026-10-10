@@ -1,12 +1,12 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 13080
+// Function ID: 13081
 // Name: useMediaViewerClosePosition
-// Dependencies: [32, 19, 1085, 13030, 558, 576, 6644, 4811, 2]
+// Dependencies: [32, 19, 1085, 13077, 558, 576, 6645, 4850, 2]
 
-// Module 13033 (useMediaViewerClosePosition)
+// Module 13080 (useMediaViewerClosePosition)
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 13030 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import getMediaViewerStateForScreenDefault from "getMediaViewerStateForScreen" /* 13077 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

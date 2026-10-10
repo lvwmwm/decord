@@ -1,23 +1,23 @@
-// Module ID: 11961
-// Function ID: 11962
+// Module ID: 12005
+// Function ID: 12006
 // Name: GuildDirectoryAddModal
-// Dependencies: [19, 11962, 21, 5091, 6263, 1273, 6205, 11960, 11963, 11971, 11975, 11985, 558, 576, 6810, 6176, 1126, 6686, 2]
+// Dependencies: [19, 12006, 21, 5092, 6258, 1273, 6200, 12004, 12007, 12015, 12019, 12029, 558, 576, 6813, 6169, 1126, 6687, 2]
 
-// Module 11961 (GuildDirectoryAddModal)
+// Module 12005 (GuildDirectoryAddModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import useInitialValueDefault from "useInitialValue" /* 6176 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import NavigatorConstants from "NavigatorConstants" /* 6263 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11960 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 11962 */;
-import GuildDirectoryCreateOrAddDefault from "GuildDirectoryCreateOrAdd" /* 11963 */;
-import GuildDirectoryCreateOrAddDescriptionDefault from "GuildDirectoryCreateOrAddDescription" /* 11971 */;
-import GuildDirectoryTemplatesDefault from "GuildDirectoryTemplates" /* 11975 */;
-import CreateGuildContainerDefault from "CreateGuildContainer" /* 11985 */;
+import useInitialValueDefault from "useInitialValue" /* 6169 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
+import NavigatorConstants from "NavigatorConstants" /* 6258 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12004 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12006 */;
+import GuildDirectoryCreateOrAddDefault from "GuildDirectoryCreateOrAdd" /* 12007 */;
+import GuildDirectoryCreateOrAddDescriptionDefault from "GuildDirectoryCreateOrAddDescription" /* 12015 */;
+import GuildDirectoryTemplatesDefault from "GuildDirectoryTemplates" /* 12019 */;
+import CreateGuildContainerDefault from "CreateGuildContainer" /* 12029 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let _require;
 
 let obj2;
 let tmp;
-const common_SafeAreaView = tmp(6810);
+const common_SafeAreaView = tmp(6813);
 function getScreens() {
   let obj3;
   function headerTitle() {
@@ -157,7 +157,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
   let closure_0;
   let initialStack;
   let screens;
-  const f110231 = () => {
+  const f110541 = () => {
     let obj2;
     const obj = { name: GuildDirectoryCreate.CREATE_OR_ADD, params: obj2 };
     obj2 = {};
@@ -167,8 +167,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
     return obj3;
   };
   _require = arg0;
-  ({ screens, initialStack } = useInitialValueDefault(f110231));
-  useInitialValueDefault(f110231);
+  ({ screens, initialStack } = useInitialValueDefault(f110541));
+  useInitialValueDefault(f110541);
   const Navigator = require("Navigator").Navigator;
   const intl = require("intl").intl;
   return <Navigator screens={screens} initialRouteStack={initialStack} headerBackTitle={intl.string(require("intl").t["13/7kX"])} />;

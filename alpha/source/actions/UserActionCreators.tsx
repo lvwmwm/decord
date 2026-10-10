@@ -1,10 +1,10 @@
-// Module ID: 8289
-// Function ID: 8290
+// Module ID: 8305
+// Function ID: 8306
 // Name: UserActionCreators
-// Dependencies: [5, 1404, 1390, 1085, 1086, 3, 1295, 584, 5945, 1359, 38, 5632, 2]
+// Dependencies: [5, 1404, 1390, 1085, 1086, 3, 1295, 584, 5938, 1359, 38, 5635, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8289 (UserActionCreators)
+// Module 8305 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1085 */;
 import RouteConstants from "RouteConstants" /* 1086 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import AnalyticsSchema from "AnalyticsSchema" /* 1359 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -47,7 +47,7 @@ let obj = function _fetchProfile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ let obj = function _fetchProfile() {
             }
             connections_role_id = 0;
             signal = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp87) {
           closure_5 = tmp87;
@@ -203,7 +203,7 @@ obj = function _fetchMutualFriends() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -261,7 +261,7 @@ obj = function _fetchMutualFriends() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp29) {
           closure_4 = tmp29;

@@ -1,9 +1,9 @@
-// Module ID: 11710
-// Function ID: 11711
+// Module ID: 11755
+// Function ID: 11756
 // Name: AppLauncherHomeScreen
-// Dependencies: [32, 19, 17, 2063, 9220, 5090, 11703, 4709, 11674, 1502, 1085, 2061, 21, 587, 11707, 5091, 558, 576, 5087, 1126, 11686, 9219, 11711, 9286, 6186, 11681, 1415, 11529, 11724, 10922, 504, 7240, 11725, 6163, 11726, 11690, 8525, 6625, 1631, 11727, 8378, 6736, 10587, 1497, 10588, 10778, 11682, 1388, 11729, 7236, 11730, 11731, 11732, 11734, 11735, 11736, 12, 5106, 6724, 11738, 11739, 1273, 8952, 4899, 2049, 11740, 11741, 11743, 6737, 11745, 11751, 11752, 11754, 11757, 11758, 11708, 11759, 11668, 11760, 11763, 8496, 11701, 11764, 11765, 11749, 11766, 1403, 11767, 11768, 2]
+// Dependencies: [32, 19, 17, 2064, 9247, 5091, 11748, 4750, 11720, 1502, 1085, 2062, 21, 587, 11752, 5092, 558, 576, 5088, 1126, 11732, 9246, 11756, 9313, 6179, 11727, 1415, 11575, 11769, 10962, 504, 7246, 11770, 6156, 11771, 11736, 8541, 6626, 1631, 11772, 8394, 6737, 10621, 1497, 10622, 10853, 11728, 1388, 11774, 7242, 11775, 11776, 11777, 11779, 11780, 11781, 12, 5107, 6725, 11783, 11784, 1273, 8971, 4938, 2049, 11785, 11786, 11788, 6738, 11790, 11796, 11797, 11798, 11801, 11802, 11753, 11803, 11714, 11804, 11807, 8512, 10848, 11746, 11808, 11809, 11794, 11810, 1403, 11811, 11812, 2]
 
-// Module 11710 (AppLauncherHomeScreen)
+// Module 11755 (AppLauncherHomeScreen)
 import _modDef12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,51 +13,51 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4899 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
-import TableRow2 from "TableRow" /* 6186 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6625 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7240 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9219 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9286 */;
-import AppLauncherContext from "AppLauncherContext" /* 10587 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10588 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10778 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10922 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11529 */;
-import FrecencySection from "FrecencySection" /* 11682 */;
-import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 11686 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11707 */;
-import ApplicationCollectionActiveState2 from "ApplicationCollectionActiveState" /* 11708 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11711 */;
-import HeroMedia from "HeroMedia" /* 11724 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 11726 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11729 */;
-import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 11740 */;
-import InThisServerSection from "InThisServerSection" /* 11751 */;
-import AllowNonStaffToPreviewAppCollectionsExperimentDefault from "AllowNonStaffToPreviewAppCollectionsExperiment" /* 11758 */;
-import ApplicationDirectoryCollectionType from "ApplicationDirectoryCollectionType" /* 11765 */;
-import ApplicationCollectionFlags from "ApplicationCollectionFlags" /* 11768 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import TableRow2 from "TableRow" /* 6179 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6626 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7246 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9246 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9313 */;
+import AppLauncherContext from "AppLauncherContext" /* 10621 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10622 */;
+import fetchShelf2 from "fetchShelf" /* 10848 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 10853 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10962 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11575 */;
+import FrecencySection from "FrecencySection" /* 11728 */;
+import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 11732 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11752 */;
+import ApplicationCollectionActiveState2 from "ApplicationCollectionActiveState" /* 11753 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11756 */;
+import HeroMedia from "HeroMedia" /* 11769 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 11771 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11774 */;
+import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 11785 */;
+import InThisServerSection from "InThisServerSection" /* 11796 */;
+import AllowNonStaffToPreviewAppCollectionsExperimentDefault from "AllowNonStaffToPreviewAppCollectionsExperiment" /* 11802 */;
+import ApplicationDirectoryCollectionType from "ApplicationDirectoryCollectionType" /* 11809 */;
+import ApplicationCollectionFlags from "ApplicationCollectionFlags" /* 11812 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9220 */;
-import DevSettingsStore from "DevSettingsStore" /* 5090 */;
-import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 11703 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11674 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9247 */;
+import DevSettingsStore from "DevSettingsStore" /* 5091 */;
+import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 11748 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 11720 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const EmbeddedActivitiesActionCreatorsAll = EmbeddedActivitiesActionCreators;
 let _require, current, dependencyMap, height, isLandscape, num2, obj1, obj18, obj19, obj20, obj21, obj22, obj23, obj24, obj25, obj26, set, tmp33, tmp43, v17777777777777777;
 
 let StyleSheet;
@@ -78,8 +78,8 @@ let obj7;
 let obj8;
 let rect;
 let tmp;
-const AppLauncherNativeUtils = tmp(11681);
-const ApplicationDirectoryActionCreators = tmp(11701);
+const AppLauncherNativeUtils = tmp(11727);
+const ApplicationDirectoryActionCreators = tmp(11746);
 function getRecommendationItemsWithViewAll(found1, in_this_server, stringResult, IN_THIS_SERVER_ITEM_MAX) {
   let closure_3;
   let reduce;
@@ -114,7 +114,7 @@ function getRecommendationItemsWithViewAll(found1, in_this_server, stringResult,
     const tmp11 = _require;
     if (bound < found1.length) {
       let obj = {
-        type: tmp11(11729).AppLauncherHomeListItemType.VIEW_ALL,
+        type: tmp11(11774).AppLauncherHomeListItemType.VIEW_ALL,
         applications: found1.map((application) => application.application),
         promotedApplicationIds: reduce((add, showsPromoted) => {
               if (showsPromoted.showsPromoted) {
@@ -183,7 +183,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppRow
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { variant: "text-xxs/semibold", color: "text-muted", children: intl.string(intl4.t["/eVltv"]) };
-        const Text = tmp(5087).Text;
+        const Text = tmp(5088).Text;
         intl = tmp(1126).intl;
         const tmp14 = closure_19(Text, obj2);
         cResult[5] = tmp14;
@@ -286,7 +286,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseAppRow(a
   }
   let FAKE_BUILT_IN_APP = application;
   if (application == null) {
-    FAKE_BUILT_IN_APP = tmp(9219).FAKE_BUILT_IN_APP;
+    FAKE_BUILT_IN_APP = tmp(9246).FAKE_BUILT_IN_APP;
   }
   if (cResult[2] !== FAKE_BUILT_IN_APP) {
     const tmpResult = AppLauncherUtils;
@@ -308,7 +308,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseAppRow(a
       const getSectionDescription = AppLauncherUtils.getSectionDescription;
       AppLauncherUtils;
       if (application == null) {
-        FAKE_BUILT_IN_APP3 = tmp(9219).FAKE_BUILT_IN_APP;
+        FAKE_BUILT_IN_APP3 = tmp(9246).FAKE_BUILT_IN_APP;
       }
       const sectionDescription = getSectionDescription(FAKE_BUILT_IN_APP3);
       let result = null;
@@ -371,7 +371,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseAppRow(a
     const isPromotedApplication = AppLauncherUtils.isPromotedApplication;
     AppLauncherUtils;
     if (application == null) {
-      FAKE_BUILT_IN_APP2 = tmp(9219).FAKE_BUILT_IN_APP;
+      FAKE_BUILT_IN_APP2 = tmp(9246).FAKE_BUILT_IN_APP;
     }
     result1 = isPromotedApplication(FAKE_BUILT_IN_APP2);
   }
@@ -402,18 +402,18 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseAppRow(a
     tmp = closure_19(EntityBorderAppIconDefault, obj);
   }
   let FAKE_BUILT_IN_APP = application;
-  const getSectionName = application(9219).getSectionName;
-  application(9219);
+  const getSectionName = application(9246).getSectionName;
+  application(9246);
   if (application == null) {
-    FAKE_BUILT_IN_APP = tmp5(9219).FAKE_BUILT_IN_APP;
+    FAKE_BUILT_IN_APP = tmp5(9246).FAKE_BUILT_IN_APP;
   }
   const sectionName = getSectionName(FAKE_BUILT_IN_APP);
   if (!flag2) {
     let FAKE_BUILT_IN_APP2 = application;
-    const isPromotedApplication = application(9219).isPromotedApplication;
-    application(9219);
+    const isPromotedApplication = application(9246).isPromotedApplication;
+    application(9246);
     if (application == null) {
-      FAKE_BUILT_IN_APP2 = tmp5(9219).FAKE_BUILT_IN_APP;
+      FAKE_BUILT_IN_APP2 = tmp5(9246).FAKE_BUILT_IN_APP;
     }
     flag2 = isPromotedApplication(FAKE_BUILT_IN_APP2);
   }
@@ -423,7 +423,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseAppRow(a
     const getSectionDescription = AppLauncherUtils.getSectionDescription;
     AppLauncherUtils;
     if (application == null) {
-      FAKE_BUILT_IN_APP = tmp(9219).FAKE_BUILT_IN_APP;
+      FAKE_BUILT_IN_APP = tmp(9246).FAKE_BUILT_IN_APP;
     }
     const sectionDescription = getSectionDescription(FAKE_BUILT_IN_APP);
     let result = null;
@@ -439,7 +439,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseAppRow(a
     return result;
   }, items);
   const obj2 = { icon: tmp, label: closure_19(closure_27, { renderedName: sectionName, showsPromoted: flag2 }), labelLineClamp: 1, subLabel: memo, subLabelLineClamp: 1, start: isFirstRow, end: flag, arrow: true, onPress };
-  const TableRow = tmp5(6186).TableRow;
+  const TableRow = tmp5(6179).TableRow;
   return closure_19(TableRow, obj2);
 });
 let closure_28 = tmp8;
@@ -543,7 +543,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
           tmp17 = null;
           if ("" !== description) {
             ({ content: description, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COMPACT, color: "text-muted" });
-            const renderMessagePreviewMarkup = tmp(11711).renderMessagePreviewMarkup;
+            const renderMessagePreviewMarkup = tmp(11756).renderMessagePreviewMarkup;
             MessagePreviewMarkup;
             class C {
               constructor() {
@@ -653,7 +653,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   let tmp6 = null != applicationIconSource;
   if (tmp6) {
     const obj2 = { iconSource: applicationIconSource };
-    tmp6 = closure_19(tmp(11686), obj2);
+    tmp6 = closure_19(tmp(11732), obj2);
   }
   const items = [section];
   const items1 = [section, onPress];
@@ -675,7 +675,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
     onPress(section);
   }, items1);
   const obj3 = { icon: tmp6, label: section.application.name, subLabel: memo, subLabelLineClamp: 1, start: flag, end: flag2, arrow: true, onPress: callback };
-  return closure_19(section(6186).TableRow, obj3);
+  return closure_19(section(6179).TableRow, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityItemTuple(isLastTuple) {
@@ -702,7 +702,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
     const result = tmp7 / c23;
     const tmp5 = importDefault;
     if (cResult[1] !== result) {
-      const tmp11 = tmp5(11529)(result);
+      const tmp11 = tmp5(11575)(result);
       cResult[1] = result;
       cResult[2] = tmp11;
       tmp10 = tmp11;
@@ -724,7 +724,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   } else {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const size2 = { width: "Array", height: "Set" };
+      const size2 = { width: "backgroundColor", height: "IconComponent" };
       cResult[0] = size2;
       size = size2;
     } else {
@@ -878,7 +878,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   const items = [containerWidth];
   size = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "Set" };
+      return { width: "backgroundColor", height: "IconComponent" };
     } else {
       const tmp5 = roundToNearestPixelDefault(tmp / 2 - DEFAULT_CONTENT_PADDING - 6);
       size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c23) };
@@ -934,7 +934,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   ({ usesHandleActivityItemSelected, onActivityItemSelected, entrypoint, imageWidth, imageHeight } = context);
   dependencyMap = tmp4;
   const tmp5 = closure_26();
-  const tmpResult = tmp(11724);
+  const tmpResult = tmp(11769);
   const heroMediaDimensions = tmpResult.useHeroMediaDimensions();
   const tmp8 = _slicedToArray(handleActivityItemSelected.useState(false), 2);
   _slicedToArray = tmp8[1];
@@ -957,7 +957,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
     if (cResult[2] === width) {
       tmp11 = cResult[3];
     }
-    shelfItem(10922)(tmp11);
+    shelfItem(10962)(tmp11);
     let id = obj3.useId();
     const _Symbol = Symbol;
     const tmp12 = shelfItem;
@@ -979,7 +979,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
         [tmp19, tmp20] = _slicedToArray(tmpResult4.useStateFromStoresArray(tmp15, tmp17), 2);
         _slicedToArray(tmpResult4.useStateFromStoresArray(tmp15, tmp17), 2);
         if (cResult[9] !== shelfItem.application) {
-          const tmpResult5 = tmp(9219);
+          const tmpResult5 = tmp(9246);
           const shelfBadgeTypeIfActive = tmpResult5.getShelfBadgeTypeIfActive(shelfItem.application);
           cResult[9] = shelfItem.application;
           cResult[10] = shelfBadgeTypeIfActive;
@@ -996,7 +996,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
                   if (cResult[16] === shelfItem.application.id) {
                     tmp24 = cResult[17];
                   }
-                  const tmpResult6 = tmp(11681);
+                  const tmpResult6 = tmp(11727);
                   handleActivityItemSelected = tmpResult6.useHandleActivityItemSelected(tmp24).handleActivityItemSelected;
                   if (cResult[18] === handleActivityItemSelected) {
                     if (cResult[19] === onPress) {
@@ -1028,7 +1028,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
                             }
                             if (cResult[36] !== tmp22) {
                               const obj2 = { labelType: tmp22 };
-                              const tmp35 = closure_19(tmp12(11726), obj2);
+                              const tmp35 = closure_19(tmp12(11771), obj2);
                               class X {
                                 constructor() {
                                   tmp = closure_3;
@@ -1071,7 +1071,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
                                     }
                                     if (cResult[46] !== shelfItem.application.name) {
                                       const obj4 = { variant: "heading-sm/bold", color: "mobile-text-heading-primary", children: shelfItem.application.name };
-                                      const tmp45 = closure_19(tmp(5087).Text, obj4);
+                                      const tmp45 = closure_19(tmp(5088).Text, obj4);
                                       class X {
                                         constructor() {
                                           tmp = closure_3;
@@ -1147,7 +1147,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
                                         }
                                       }
                                       items2[1] = tmp46;
-                                      const tmp53 = closure_20(tmp(8525).PressableScale, obj5);
+                                      const tmp53 = closure_20(tmp(8541).PressableScale, obj5);
                                       cResult[51] = tmp26;
                                       cResult[52] = tmp19;
                                       cResult[53] = tmp5.activityItemContainer;
@@ -1240,7 +1240,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
                                 return;
                               }
                             }
-                            const tmp38 = closure_19(tmp(11690).SubmittingOverlay, obj7);
+                            const tmp38 = closure_19(tmp(11736).SubmittingOverlay, obj7);
                             class M {
                               constructor() {
                                 tmp = closure_7;
@@ -1370,7 +1370,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
         tmp25[1] = context;
         tmp25[2] = sectionName;
         tmp25[3] = onActivityItemSelected;
-        tmp25[4] = tmp(7240).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME;
+        tmp25[4] = tmp(7246).ApplicationCommandTriggerLocations.APP_LAUNCHER_HOME;
         tmp25[5] = entrypoint;
         tmp25[6] = id;
         cResult[11] = context;
@@ -1421,7 +1421,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f109174 = () => {
+  const f109486 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -1462,8 +1462,8 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f109174), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f109174), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f109486), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f109486), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -1575,7 +1575,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recomm
   } else {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const size1 = { width: "Array", height: "Set" };
+      const size1 = { width: "backgroundColor", height: "IconComponent" };
       cResult[0] = size1;
       first = size1;
     } else {
@@ -1725,7 +1725,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recomm
   const items1 = [containerWidth, num];
   styles = height.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "Set" };
+      return { width: "backgroundColor", height: "IconComponent" };
     } else {
       const tmp7 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - c22 * (2 - 1)) / 2);
       size = { width: tmp7, height: roundToNearestPixelDefault(tmp7 / c23) };
@@ -1861,7 +1861,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recomm
                 tmp18 = tmp22;
               }
               const obj4 = { onError: tmp20, style: tmp4.activityItemImage, source: tmp21, resizeMode: "cover" };
-              const tmp24 = closure_19(tmp11(6163), obj4);
+              const tmp24 = closure_19(tmp11(6156), obj4);
               cResult[17] = tmp4.activityItemImage;
               cResult[18] = tmp21;
               cResult[19] = tmp24;
@@ -2058,7 +2058,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recomm
   }
   const tmp13 = "loading" === tmp9Result.state || null == tmp9Result.url;
   if (tmp12) {
-    tmp14 = closure_19(tmp8(11725), {});
+    tmp14 = closure_19(tmp8(11770), {});
   } else {
     tmp14 = null;
     if (!tmp13) {
@@ -2071,13 +2071,13 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recomm
         resizeMode: "cover"
       };
       obj7 = { uri: tmp9Result.url };
-      tmp14 = closure_19(tmp8(6163), obj6);
+      tmp14 = closure_19(tmp8(6156), obj6);
     }
   }
   const items1 = [tmp.activityImageContainer, ];
   let tmp19 = null != imageWidth;
   const obj8 = { style: tmp.activityItemContainer, onPress: callback, children: items3 };
-  const PressableScale = tmp2(8525).PressableScale;
+  const PressableScale = tmp2(8541).PressableScale;
   if (tmp19) {
     tmp19 = null != imageHeight;
   }
@@ -2231,20 +2231,20 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherH
   const params = navigation.route.params;
   const context = params.context;
   const initialSearchQuery = params.initialSearchQuery;
-  let obj2 = navigation(11727);
+  let obj2 = navigation(11772);
   const viewableAppLauncherHomeItems = obj2.useViewableAppLauncherHomeItems();
   const handleViewableItemsChanged = viewableAppLauncherHomeItems.handleViewableItemsChanged;
   const tmp5 = context;
   ({ hasViewedActivityItem, hasViewedLearnMoreItem } = viewableAppLauncherHomeItems);
-  let tmp6 = context(8378)(hasViewedActivityItem);
-  const tmp7 = context(8378)(hasViewedLearnMoreItem);
+  let tmp6 = context(8394)(hasViewedActivityItem);
+  const tmp7 = context(8394)(hasViewedLearnMoreItem);
   dependencyMap = tmp7;
   const tmp8 = ref2();
   _slicedToArray = tmp8;
-  const tmp9 = context(6736)();
+  const tmp9 = context(6737)();
   height = tmp9;
   const bottom = context(1631)().bottom;
-  let obj3 = navigation(10587);
+  let obj3 = navigation(10621);
   const requiredAppLauncherContext = obj3.useRequiredAppLauncherContext();
   const chatInputRef = requiredAppLauncherContext.chatInputRef;
   const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
@@ -2316,7 +2316,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherH
                                   if (cResult[33] === context) {
                                     if (cResult[34] === entrypoint) {
                                       if (cResult[35] === navigation) {
-                                        let tmpResult = tmp(11730);
+                                        let tmpResult = tmp(11775);
                                         const clickOnHomeActivityOpensAppDetails = tmpResult.useClickOnHomeActivityOpensAppDetails();
                                         if (cResult[38] === clickOnHomeActivityOpensAppDetails) {
                                           if (cResult[39] === context) {
@@ -3833,7 +3833,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherH
                                                                       }
                                                                     }
                                                                   }
-                                                                  const tmpResult6 = tmp(11738);
+                                                                  const tmpResult6 = tmp(11783);
                                                                   const pinnedSearchBarBottomBorder = tmpResult6.usePinnedSearchBarBottomBorder(tmp44);
                                                                   const ref1 = obj4.useRef(null);
                                                                   if (cResult[66] !== initialSearchQuery) {
@@ -4051,7 +4051,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherH
                                                                   }
                                                                   const layoutEffect = obj4.useLayoutEffect(tmp48, tmp49);
                                                                   const sum = bottom + list;
-                                                                  const tmpResult7 = tmp(11739);
+                                                                  const tmpResult7 = tmp(11784);
                                                                   const bottomSheetFlashListBottomViewabilityInset = tmpResult7.useBottomSheetFlashListBottomViewabilityInset();
                                                                   ({ flashListRef, bottomVisibilityInsetRef } = bottomSheetFlashListBottomViewabilityInset);
                                                                   const _Symbol2 = Symbol;
@@ -4682,7 +4682,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherH
                                                                       }
                                                                     }
                                                                   }
-                                                                  tmp5(8952)(tmp55, tmp58, tmp60);
+                                                                  tmp5(8971)(tmp55, tmp58, tmp60);
                                                                   [r10312, closure_30] = _slicedToArray(obj4.useState(false), 2);
                                                                   const _Symbol3 = Symbol;
                                                                   _slicedToArray(obj4.useState(false), 2);
@@ -5323,7 +5323,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherH
                                                                       }
                                                                     }
                                                                   }
-                                                                  const tmpResult9 = tmp(11741);
+                                                                  const tmpResult9 = tmp(11786);
                                                                   const trackAppLauncherHomeItemImpression = tmpResult9.useTrackAppLauncherHomeItemImpression().trackAppLauncherHomeItemImpression;
                                                                   if (cResult[80] === sum) {
                                                                     let tmp81;
@@ -6168,7 +6168,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherH
                                                                         }
                                                                       }
                                                                     }
-                                                                    const tmpResult10 = tmp(11743);
+                                                                    const tmpResult10 = tmp(11788);
                                                                     const appLauncherFlashListProps = tmpResult10.useAppLauncherFlashListProps(tmp81);
                                                                     const _Symbol6 = Symbol;
                                                                     if (cResult[92] === Symbol.for("react.memo_cache_sentinel")) {
@@ -7245,8 +7245,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherH
                                                                         cResult[107] = tmp38;
                                                                         cResult[108] = tmp95;
                                                                         cResult[109] = tmp97;
-                                                                        cResult[110] = closure_19(tmp(6737).SearchField, obj6);
-                                                                        const tmp100 = closure_19(tmp(6737).SearchField, obj6);
+                                                                        cResult[110] = closure_19(tmp(6738).SearchField, obj6);
+                                                                        const tmp100 = closure_19(tmp(6738).SearchField, obj6);
                                                                       }
                                                                       function wt() {
                                                                         closure_27();
@@ -8434,7 +8434,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApp
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   const obj3 = AllowNonStaffToPreviewAppCollectionsExperimentDefault;
   const enabled = obj3.getConfig({ location: "App Launcher Home (Mobile)" }).enabled;
-  const ApplicationCollectionActiveState = tmp(11708).ApplicationCollectionActiveState;
+  const ApplicationCollectionActiveState = tmp(11753).ApplicationCollectionActiveState;
   if (stateFromStores) {
     PREVIEW = ApplicationCollectionActiveState.PREVIEW;
   } else {
@@ -8589,8 +8589,8 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
         const tmp = isActivitiesInTextEnabled || entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE;
         if (tmp) {
           let guild_id;
-          const fetchShelf = EmbeddedActivitiesActionCreators.fetchShelf;
-          EmbeddedActivitiesActionCreators;
+          const fetchShelf = fetchShelf2.fetchShelf;
+          fetchShelf2;
           if ("channel" === context.type) {
             guild_id = context.channel.guild_id;
           }
@@ -8645,28 +8645,28 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
   let memo7;
   let tmp = context;
   let tmp2 = dependencyMap;
-  let obj = context(11759);
+  let obj = context(11803);
   const fetchDeveloperActivityShelfItems = obj.useFetchDeveloperActivityShelfItems();
   let tmp4 = entrypoint;
   let num = 2;
-  if (entrypoint(6625)()) {
+  if (entrypoint(6626)()) {
     num = 4;
   }
   let guild_id;
-  const tmp4Result = tmp4(11668);
+  const tmp4Result = tmp4(11714);
   if ("channel" === context.type) {
     guild_id = context.channel.guild_id;
   }
   const tmp4ResultResult = tmp4Result({ guildId: guild_id });
   dependencyMap = tmp4ResultResult;
-  let tmp7 = entrypoint === tmp(10588).AppLauncherEntrypoint.VOICE;
+  let tmp7 = entrypoint === tmp(10622).AppLauncherEntrypoint.VOICE;
   closure_4 = tmp7;
-  const tmp8 = tmp4(11760)({ context, onlyActivityApps: tmp7 });
+  const tmp8 = tmp4(11804)({ context, onlyActivityApps: tmp7 });
   frecentApps = tmp8.frecentApps;
   ({ frecencyCommands, sectionDescriptors, loading } = tmp8);
-  const tmp9 = entrypoint === tmp(10588).AppLauncherEntrypoint.TEXT;
+  const tmp9 = entrypoint === tmp(10622).AppLauncherEntrypoint.TEXT;
   closure_6 = tmp9;
-  appsInThisServer = tmp4(11763)({ context }).appsInThisServer;
+  appsInThisServer = tmp4(11807)({ context }).appsInThisServer;
   let obj2 = frecentApps;
   let items = [appsInThisServer, tmp9];
   let items1 = [frecentApps];
@@ -8692,7 +8692,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
     }
     return tmp;
   }, items2);
-  let tmpResult = tmp(8496);
+  let tmpResult = tmp(8512);
   let id;
   const useIsActivitiesInTextEnabled = tmpResult.useIsActivitiesInTextEnabled;
   if ("channel" === context.type) {
@@ -8704,8 +8704,8 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
     const tmp = isActivitiesInTextEnabled || entrypoint === AppLauncherTypes.AppLauncherEntrypoint.VOICE;
     if (tmp) {
       let guild_id;
-      const fetchShelf = EmbeddedActivitiesActionCreators.fetchShelf;
-      EmbeddedActivitiesActionCreators;
+      const fetchShelf = fetchShelf2.fetchShelf;
+      fetchShelf2;
       if ("channel" === context.type) {
         guild_id = context.channel.guild_id;
       }
@@ -8771,13 +8771,13 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
           } while (num < diff);
         }
         if (arr.length % 2 === 1) {
-          const obj2 = { type: tmp11(11729).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE, shelfItem1: tmp12, shelfItem2: undefined, sectionName: "activities", shelfItem1SectionPosition: diff1, shelfItem2SectionPosition: undefined, sectionOverallPosition: 0, isLastTuple: false };
+          const obj2 = { type: tmp11(11774).AppLauncherHomeListItemType.SHELF_ITEM_TUPLE, shelfItem1: tmp12, shelfItem2: undefined, sectionName: "activities", shelfItem1SectionPosition: diff1, shelfItem2SectionPosition: undefined, sectionOverallPosition: 0, isLastTuple: false };
           diff1 = arr.length - 1;
           tmp12 = arr[arr.length - 1];
           items.push(obj2);
         }
         items[items.length - 1].isLastTuple = true;
-        const obj5 = { type: tmp11(11729).AppLauncherHomeListItemType.SECTION_HEADER, section: intl.string(tmp11(1126).t.aeuOoh), sectionName: "activities", numItems: null, numVisibleItems: null };
+        const obj5 = { type: tmp11(11774).AppLauncherHomeListItemType.SECTION_HEADER, section: intl.string(tmp11(1126).t.aeuOoh), sectionName: "activities", numItems: null, numVisibleItems: null };
         intl = tmp11(1126).intl;
         ({ length: obj3.numItems, length: obj3.numVisibleItems } = arr);
         const items1 = [obj5];
@@ -8804,7 +8804,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
   }
   items8[1] = sections1;
   const memo5 = useMemo(() => {
-    const f154561 = (commands) => Object.keys(commands.commands).length > 0;
+    const f155012 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -8822,11 +8822,11 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f154561);
+    let someResult = values.some(f155012);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f154561);
+      someResult = values2.some(f155012);
     }
     return someResult;
   }, items8);
@@ -8889,7 +8889,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
       let item = memo3.forEach((application_directory_collection_items) => {
         const prop = application_directory_collection_items.application_directory_collection_items;
         const item = prop.forEach((type) => {
-          if (type.type === items(closure_2_3[82]).ApplicationDirectoryCollectionItemType.APPLICATION) {
+          if (type.type === items(closure_2_3[83]).ApplicationDirectoryCollectionItemType.APPLICATION) {
             set.add(type.application.id);
           }
         });
@@ -8918,23 +8918,23 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
         ({ type, application_directory_collection_items } = title);
         if (type === ApplicationDirectoryCollectionType.ApplicationDirectoryCollectionType.BANNER_CARDS) {
           const _Math = Math;
-          let obj = { type: tmp(11729).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section: null, sectionName: null, numItems: application_directory_collection_items.length, numVisibleItems: bound };
-          bound = Math.min(length, tmp(11749).COLLAPSED_LIST_ITEM_MAX);
+          let obj = { type: tmp(11774).AppLauncherHomeListItemType.RECOMMENDATION_SECTION_HEADER, section: null, sectionName: null, numItems: application_directory_collection_items.length, numVisibleItems: bound };
+          bound = Math.min(length, tmp(11794).COLLAPSED_LIST_ITEM_MAX);
           ({ title: obj.section, title: obj.sectionName } = title);
           items.push(obj);
           const mapped = application_directory_collection_items.map((type, sectionPosition) => {
             let tmpResult2;
-            if (type.type === items(closure_1_3[82]).ApplicationDirectoryCollectionItemType.APPLICATION) {
+            if (type.type === items(closure_1_3[83]).ApplicationDirectoryCollectionItemType.APPLICATION) {
               let collectionItemAssetUrl;
               const tmp4 = null != type.id && null != type.image_hash;
               if (tmp4) {
                 const obj = { itemId: null, hash: null };
                 ({ id: obj2.itemId, image_hash: obj2.hash } = type);
-                const tmpResult = items(closure_1_3[85]);
+                const tmpResult = items(closure_1_3[86]);
                 collectionItemAssetUrl = tmpResult.getCollectionItemAssetUrl(obj);
               }
-              const obj3 = { application: type.application, showsPromoted: tmpResult2.hasFlag(type.flags, items(closure_1_3[87]).ApplicationCollectionItemFlags.PROMOTED), overrideImageUrl: collectionItemAssetUrl, sectionPosition };
-              tmpResult2 = items(closure_1_3[86]);
+              const obj3 = { application: type.application, showsPromoted: tmpResult2.hasFlag(type.flags, items(closure_1_3[88]).ApplicationCollectionItemFlags.PROMOTED), overrideImageUrl: collectionItemAssetUrl, sectionPosition };
+              tmpResult2 = items(closure_1_3[87]);
               return obj3;
             }
           });
@@ -8954,9 +8954,9 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
           const prop = title.application_directory_collection_items;
           const mapped1 = prop.map((type) => {
             let tmpResult;
-            if (type.type === items(closure_1_3[82]).ApplicationDirectoryCollectionItemType.APPLICATION) {
-              const obj = { application: type.application, showsPromoted: tmpResult.hasFlag(type.flags, items(closure_1_3[87]).ApplicationCollectionItemFlags.PROMOTED) };
-              tmpResult = items(closure_1_3[86]);
+            if (type.type === items(closure_1_3[83]).ApplicationDirectoryCollectionItemType.APPLICATION) {
+              const obj = { application: type.application, showsPromoted: tmpResult.hasFlag(type.flags, items(closure_1_3[88]).ApplicationCollectionItemFlags.PROMOTED) };
+              tmpResult = items(closure_1_3[87]);
               return obj;
             }
           });

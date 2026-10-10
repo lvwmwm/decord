@@ -1,60 +1,44 @@
 // Module ID: 14607
 // Function ID: 14608
-// Dependencies: [19, 14589, 14608, 21]
-// Exports: default
+// Dependencies: []
 
 // Module 14607
-import react from "react" /* 19 */;
-import module_14589_mod from "module_14589" /* 14589 */;
-import module_14608_mod from "module_14608" /* 14608 */;
-import Fragment from "Fragment" /* 21 */;
-
-let closure_0;
-
-let tmp4;
-let tmp6;
-if (react) {
-  const __esModule = react.__esModule;
-}
-let module_14589 = module_14589_mod;
-if (!module_14589) {
-  const obj = { default: module_14589 };
-  tmp4 = obj;
-} else {
-  tmp4 = module_14589;
-}
-module_14589 = tmp4;
-let module_14608 = module_14608_mod;
-if (!module_14608) {
-  let obj2 = { default: module_14608 };
-  tmp6 = obj2;
-} else {
-  tmp6 = module_14608;
-}
-module_14608 = tmp6;
-
-export default () => () => {
-  closure_0 = closure_0.default();
-  return {
-    onCommand(type) {
-      if ("storybook" === type.type) {
-        closure_0.emit("storybook", type.payload);
-      }
-    },
-    features: {
-      storybookSwitcher(arg0) {
-        closure_0 = arg0;
-        return (arg0) => {
-          closure_0 = arg0;
-          return function StorybookSwitcherContainer(arg0) {
-            const jsx = React.jsx;
-            const jsx2 = React.jsx;
-            const obj2 = {};
-            const merged = Object.assign(arg0);
-            return <_default storybookUi={emitter} emitter={emitter}>{jsx2(emitter, obj2)}</_default>;
-          };
-        };
-      }
+const obj = {
+  isASCIIDigit(decodeResult) {
+    return decodeResult >= 48 && decodeResult <= 57;
+  },
+  isASCIIAlpha(input) {
+    let tmp = input >= 65 && input <= 90;
+    if (!tmp) {
+      tmp = input >= 97 && input <= 122;
+      const tmp2 = input >= 97 && input <= 122;
     }
-  };
+    return tmp;
+  },
+  isASCIIAlphanumeric(arg0) {
+    let tmp = arg0 >= 65 && arg0 <= 90;
+    if (!tmp) {
+      tmp = arg0 >= 97 && arg0 <= 122;
+      const tmp2 = arg0 >= 97 && arg0 <= 122;
+    }
+    if (!tmp) {
+      tmp = arg0 >= 48 && arg0 <= 57;
+      const tmp3 = arg0 >= 48 && arg0 <= 57;
+    }
+    return tmp;
+  },
+  isASCIIHex(decodeResult) {
+    let tmp = decodeResult >= 48 && decodeResult <= 57;
+    if (!tmp) {
+      tmp = decodeResult >= 65 && decodeResult <= 70;
+      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
+    }
+    if (!tmp) {
+      tmp = decodeResult >= 97 && decodeResult <= 102;
+      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
+    }
+    return tmp;
+  }
 };
+
+export default obj;

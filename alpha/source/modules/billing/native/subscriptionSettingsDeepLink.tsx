@@ -1,33 +1,48 @@
-// Module ID: 14137
-// Function ID: 14138
+// Module ID: 14192
+// Function ID: 14193
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 4734, 1085, 7087, 14138, 5055, 1126, 5721, 2]
+// Dependencies: [5, 4775, 1085, 7093, 14193, 5056, 1126, 1265, 5724, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 14137 (subscriptionSettingsDeepLink)
-import Constants from "Constants" /* 1085 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5721 */;
-import openUserSettings from "openUserSettings" /* 7087 */;
+// Module 14192 (subscriptionSettingsDeepLink)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
+import openUserSettings from "openUserSettings" /* 7093 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 4734 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let c4, closure_0;
+let c4, c5, closure_0;
 
+let hasOwnProperty;
+let metroRequire;
 function openNitroHome() {
   obj = openUserSettings;
-  const obj2 = { screen: UserSettingsSections.PREMIUM };
+  const obj2 = { screen: metroRequire.PREMIUM };
   obj.openUserSettings(obj2);
 }
 function openNitroManage() {
   obj = openUserSettings;
-  const obj2 = { screen: UserSettingsSections.PREMIUM_MANAGE_PLAN };
+  const obj2 = { screen: metroRequire.PREMIUM_MANAGE_PLAN };
   obj.openUserSettings(obj2);
 }
 function openGuildManage() {
   obj = openUserSettings;
-  const obj2 = { screen: UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS };
+  const obj2 = { screen: metroRequire.GUILD_ROLE_SUBSCRIPTIONS };
   obj.openUserSettings(obj2);
+}
+function trackDeepLinkOpened(arg0) {
+  let tmp2;
+  const track = AnalyticsUtilsDefault.track;
+  const MOBILE_SUBSCRIPTION_DEEP_LINK_OPENED = hasOwnProperty.MOBILE_SUBSCRIPTION_DEEP_LINK_OPENED;
+  AnalyticsUtilsDefault;
+  if (null != arg0) {
+    obj = { has_premium_subscription: null, has_guild_subscription: null };
+    ({ hasNitro: obj.has_premium_subscription, hasGuild: obj.has_guild_subscription } = arg0);
+    tmp2 = obj;
+  }
+  track(MOBILE_SUBSCRIPTION_DEEP_LINK_OPENED, tmp2);
 }
 let obj = function _openSubscriptionSettingsFromDeepLink() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -37,21 +52,21 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
       let intl3;
       let items;
       let obj2;
-      const showSimpleActionSheet = closure_0(closure_1[4]).showSimpleActionSheet;
-      closure_0 = closure_0(closure_1[5]).default;
+      const showSimpleActionSheet = closure_0(closure_2[4]).showSimpleActionSheet;
+      closure_0 = closure_0(closure_2[5]).default;
       obj = { key, hasIcons: false, header: obj2, options: items };
       obj2 = {
-        title: intl.string(closure_0(closure_1[6]).t["z5YcJ+"]),
+        title: intl.string(closure_0(closure_2[6]).t["z5YcJ+"]),
         onClose() {
           closure_0.hideActionSheet(key);
         }
       };
-      intl = closure_0(closure_1[6]).intl;
-      const obj3 = { label: intl2.string(closure_0(closure_1[6]).t["8jmdON"]), onPress };
-      intl2 = closure_0(closure_1[6]).intl;
+      intl = closure_0(closure_2[6]).intl;
+      const obj3 = { label: intl2.string(closure_0(closure_2[6]).t["8jmdON"]), onPress };
+      intl2 = closure_0(closure_2[6]).intl;
       items = [obj3, ];
-      const obj4 = { label: intl3.string(closure_0(closure_1[6]).t["KzCF/6"]), onPress: onPress2 };
-      intl3 = closure_0(closure_1[6]).intl;
+      const obj4 = { label: intl3.string(closure_0(closure_2[6]).t["KzCF/6"]), onPress: onPress2 };
+      intl3 = closure_0(closure_2[6]).intl;
       items[1] = obj4;
       const result = showSimpleActionSheet(obj);
     }
@@ -65,13 +80,13 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
       try {
-        let length;
-        let closure_1;
+        let hasNitro;
+        let hasGuild;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -83,8 +98,8 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             return obj4;
           } else {
             let closure_2 = tmp;
-            length = undefined;
-            closure_1 = undefined;
+            hasNitro = undefined;
+            hasGuild = undefined;
             if (!SubscriptionStore.hasFetchedSubscriptions()) {
               c3 = 1;
               let obj2 = actions_BillingActionCreators;
@@ -96,9 +111,10 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           }
         } else if (1 === c4) {
           c3 = 0;
-          closure_130_6();
+          closure_130_11();
+          closure_130_8();
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -110,34 +126,36 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         } else {
           c3 = 0;
         }
-        null != closure_130_3.getPremiumTypeSubscription();
-        const activeGuildSubscriptions = closure_130_3.getActiveGuildSubscriptions();
-        length = activeGuildSubscriptions;
+        null != closure_130_4.getPremiumTypeSubscription();
+        const activeGuildSubscriptions = closure_130_4.getActiveGuildSubscriptions();
+        hasNitro = activeGuildSubscriptions;
         if (activeGuildSubscriptions == null) {
-          length = [];
+          hasNitro = [];
         }
-        closure_1 = length.length > 0;
-        const tmp17 = length;
-        if (tmp17) {
-          const tmp19 = closure_1;
-          if (tmp19) {
+        hasGuild = hasNitro.length > 0;
+        const obj6 = { hasNitro, hasGuild };
+        closure_130_11(obj6);
+        const tmp24 = hasNitro;
+        if (tmp24) {
+          const tmp26 = hasGuild;
+          if (tmp26) {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
-        const tmp21 = closure_1;
-        if (tmp21) {
-          closure_130_8();
-        } else if (length) {
-          closure_130_7();
+        const tmp28 = hasGuild;
+        if (tmp28) {
+          closure_130_10();
+        } else if (hasNitro) {
+          closure_130_9();
         } else {
-          closure_130_6();
+          closure_130_8();
         }
-      } catch (tmp32) {
+      } catch (tmp39) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp32;
+          throw tmp39;
         } else {
           c4 = 1;
         }
@@ -146,8 +164,8 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
   });
   return obj(...arguments);
 };
-const UserSettingsSections = Constants.UserSettingsSections;
-let c5 = "subscription-settings-deep-link";
+({ AnalyticEvents: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
+let c7 = "subscription-settings-deep-link";
 let result = size.fileFinishedImporting("modules/billing/native/subscriptionSettingsDeepLink.tsx");
 
 export const openSubscriptionSettingsFromDeepLink = function openSubscriptionSettingsFromDeepLink() {

@@ -1,25 +1,25 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16510
+// Function ID: 16511
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1085, 21, 12797, 587, 5091, 8480, 4767, 1126, 8667, 8678, 558, 576, 4938, 5087, 6191, 13998, 16441, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 12844, 587, 5092, 8496, 4808, 1126, 8682, 8693, 558, 576, 4977, 5088, 6184, 14053, 16511, 2]
 
-// Module 16440 (MessagesItemAddFriendsWidget)
+// Module 16510 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4938 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Pressables from "Pressables" /* 6191 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8480 */;
-import IconActionButton from "IconActionButton" /* 12797 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13998 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16441 */;
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6184 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8496 */;
+import IconActionButton from "IconActionButton" /* 12844 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14053 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16511 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj = function _getFriendInviteCode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -126,7 +126,7 @@ obj = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ obj = function _handleShare() {
           const PJf9P9 = closure_129_0(closure_129_2[10]).t.PJf9P9;
           handleOpenShareSheet(closure_0, null, formatToPlainString(PJf9P9, obj5), closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp6) {
         c3 = 3;
@@ -190,7 +190,7 @@ obj = function _handleLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -224,7 +224,7 @@ obj = function _handleLink() {
           obj = closure_129_0(closure_129_2[11]);
           obj.handleCopy(closure_0, null, closure_129_6.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -291,7 +291,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
-    const Text = tmp(5087).Text;
+    const Text = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     const tmp10 = metroImportDefault(Text, obj2);
     cResult[2] = tmp10;

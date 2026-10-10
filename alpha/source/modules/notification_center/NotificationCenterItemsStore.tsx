@@ -1,20 +1,20 @@
-// Module ID: 6064
-// Function ID: 6065
+// Module ID: 6057
+// Function ID: 6058
 // Name: NotificationCenterItemsStore
-// Dependencies: [4977, 6061, 4720, 4719, 1390, 1085, 6065, 5431, 6066, 11, 504, 584, 2]
+// Dependencies: [5016, 6054, 4761, 4760, 1390, 1085, 6058, 5434, 6059, 11, 504, 584, 2]
 
-// Module 6064 (NotificationCenterItemsStore)
+// Module 6057 (NotificationCenterItemsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5431 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6061 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6065 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 6066 */;
-import ExperimentStore from "ExperimentStore" /* 4977 */;
-import MessageRecord from "MessageRecord" /* 4720 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6058 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6059 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
+import MessageRecord from "MessageRecord" /* 4761 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ function _validate(id) {
 function toNotificationCenterItem(item_enum) {
   let id;
   let messageRecord;
-  const tmp3 = item_enum.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item_enum.type === tmp(6065).NotificationCenterItems.LIFECYCLE_ITEM;
+  const tmp3 = item_enum.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item_enum.type === tmp(6058).NotificationCenterItems.LIFECYCLE_ITEM;
   if (tmp3) {
     item_enum.deeplink = "https://discord.com/feature/composeMessage";
   }
@@ -48,7 +48,7 @@ function handleAddItem(type) {
   let messageRecord;
   if ("NOTIFICATION_CENTER_ITEM_CREATE" === type.type) {
     const item2 = type.item;
-    const tmp4 = item2.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item2.type === tmp2(6065).NotificationCenterItems.LIFECYCLE_ITEM;
+    const tmp4 = item2.item_enum === NotificationCenterItemsTypes.ItemEnum.FIRST_MESSAGE && item2.type === tmp2(6058).NotificationCenterItems.LIFECYCLE_ITEM;
     if (tmp4) {
       item2.deeplink = "https://discord.com/feature/composeMessage";
     }
@@ -163,7 +163,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = id === tmp3;
       }
       if (!tmp4) {
-        let tmp7 = type.type === tmp(6065).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED;
+        let tmp7 = type.type === tmp(6058).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED;
         if (tmp7) {
           const other_user2 = type.other_user;
           let id1;
@@ -175,7 +175,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = tmp7;
       }
       if (!tmp4) {
-        let tmp10 = type.type === tmp(6065).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
+        let tmp10 = type.type === tmp(6058).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS;
         if (tmp10) {
           const other_user3 = type.other_user;
           let id2;
@@ -187,7 +187,7 @@ function handleRelationshipAddOrUpdate(relationship) {
         tmp4 = tmp10;
       }
       if (!tmp4) {
-        let tmp13 = type.type === tmp(6065).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED;
+        let tmp13 = type.type === tmp(6058).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED;
         if (tmp13) {
           const other_user4 = type.other_user;
           let id3;
@@ -581,7 +581,7 @@ const obj2 = {
         let tmp8 = obj;
         const items = [];
         const arraySpreadResult = HermesBuiltin.arraySpread(items, obj.notifCenterLocalItems, 0);
-        obj = id(6066);
+        obj = id(6059);
         items[arraySpreadResult] = obj.incomingGameFriendRequestLocalItem(user, since, applicationId);
         obj.notifCenterLocalItems = items;
       }

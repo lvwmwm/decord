@@ -1,17 +1,17 @@
-// Module ID: 5928
-// Function ID: 5929
+// Module ID: 7511
+// Function ID: 7512
 // Name: SafetyHubUtils
-// Dependencies: [502, 5922, 1085, 4661, 5416, 1126, 5923, 558, 576, 504, 2]
+// Dependencies: [502, 7512, 1085, 4702, 5419, 1126, 7513, 558, 576, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 5928 (SafetyHubUtils)
+// Module 7511 (SafetyHubUtils)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef4661 from "module_4661" /* 4661 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5416 */;
-import SafetyHubModels from "SafetyHubModels" /* 5923 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
+import SafetyHubModels from "SafetyHubModels" /* 7513 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 5922 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -87,8 +87,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSuspend
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef4661();
-  return obj.to(_modDef4661(timestamp));
+  const obj = _modDef4702();
+  return obj.to(_modDef4702(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   let num;

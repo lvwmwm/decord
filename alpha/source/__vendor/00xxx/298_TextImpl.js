@@ -398,6 +398,6 @@ let closure_11 = react.forwardRef(function PressableText_withRef(textProps, ref)
   return <NativeText isHighlighted={first} isPressable ref={arg1} />;
 });
 const authStore2 = { auto: true, text: true, none: false, contain: true, all: true };
-const authStore3 = get_hairlineWidth.create({ default: { overflow: "hidden" } });
+const syncedClientThemes = get_hairlineWidth.create({ default: { overflow: "hidden" } });
 
 export default TextImpl;

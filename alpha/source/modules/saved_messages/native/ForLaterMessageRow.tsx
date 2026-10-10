@@ -1,18 +1,18 @@
-// Module ID: 12623
-// Function ID: 12624
+// Module ID: 12670
+// Function ID: 12671
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 4992, 1382, 2041, 7728, 9346, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 1382, 2041, 7746, 9373, 2]
 
-// Module 12623 (ForLaterMessageRow)
+// Module 12670 (ForLaterMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useThemeDefault from "useTheme" /* 4992 */;
-import RowGeneratorDefault from "RowGenerator" /* 7728 */;
-import ChatItemDefault from "ChatItem" /* 9346 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import RowGeneratorDefault from "RowGenerator" /* 7746 */;
+import ChatItemDefault from "ChatItem" /* 9373 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,8 +44,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMess
   const tmp6 = useThemeDefault();
   if (cResult[0] !== tmp6) {
     let obj2 = { seeMoreLabelColor: tmp5(587).colors.TEXT_DEFAULT };
-    const createNativeStyleProperties = tmp(5091).createNativeStyleProperties;
-    tmp(5091);
+    const createNativeStyleProperties = tmp(5092).createNativeStyleProperties;
+    tmp(5092);
     const tmp9 = createNativeStyleProperties(obj2)(tmp6);
     cResult[0] = tmp6;
     cResult[1] = tmp9;
@@ -95,7 +95,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMess
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const self = this;
       const self2 = this;
-      let obj3 = new tmp5(7728)();
+      let obj3 = new tmp5(7746)();
       const obj4 = { renderEmbeds: tmp12, inlineEmbedMedia: tmp14, inlineAttachmentMedia: tmp16, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
       obj3.setOptions(obj4);
       cResult[8] = obj3;

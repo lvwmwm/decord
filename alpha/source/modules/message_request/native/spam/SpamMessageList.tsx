@@ -1,23 +1,23 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17598
+// Function ID: 17599
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1085, 21, 5091, 587, 1126, 558, 576, 12124, 4768, 5008, 5102, 5941, 12116, 1265, 17511, 1200, 5006, 6191, 15120, 8563, 1631, 17520, 17527, 17518, 5726, 5731, 5393, 17521, 5087, 1382, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 1126, 558, 576, 12168, 4809, 5103, 5934, 12160, 1265, 17583, 1200, 13495, 6184, 15181, 8579, 1631, 17592, 17599, 17590, 5729, 5734, 5396, 17593, 5088, 1382, 2]
 
-// Module 17526 (SpamMessageList)
+// Module 17598 (SpamMessageList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import transitionToChannel from "transitionToChannel" /* 5102 */;
-import useMountEffectDefault from "useMountEffect" /* 5393 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5726 */;
-import MetricEvents from "MetricEvents" /* 5731 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17527 */;
+import transitionToChannel from "transitionToChannel" /* 5103 */;
+import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
+import MetricEvents from "MetricEvents" /* 5734 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17599 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let size;
 let tmp3;
-const MessageRequestEmptyDefault = tmp3(17521);
+const MessageRequestEmptyDefault = tmp3(17593);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty, FlatList: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -88,11 +88,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
     class I {
       constructor() {
         let intl;
-        const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+        const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
         const open = hasSingleMessageRequest(user[10]).open;
         hasSingleMessageRequest(user[10]);
         intl = goToMessageRequestPreview(user[6]).intl;
-        open(obj);
+        open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
       }
     }
     cResult[2] = I;
@@ -101,11 +101,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
     class I {
       constructor() {
         let intl;
-        const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+        const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
         const open = hasSingleMessageRequest(user[10]).open;
         hasSingleMessageRequest(user[10]);
         intl = goToMessageRequestPreview(user[6]).intl;
-        open(obj);
+        open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
       }
     }
   }
@@ -113,25 +113,25 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
     class I {
       constructor() {
         let intl;
-        const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+        const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
         const open = hasSingleMessageRequest(user[10]).open;
         hasSingleMessageRequest(user[10]);
         intl = goToMessageRequestPreview(user[6]).intl;
-        open(obj);
+        open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
       }
     }
     if (cResult[6] === tmp9) {
       class I {
         constructor() {
           let intl;
-          const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+          const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
           const open = hasSingleMessageRequest(user[10]).open;
           hasSingleMessageRequest(user[10]);
           intl = goToMessageRequestPreview(user[6]).intl;
-          open(obj);
+          open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
         }
       }
-      const tmpResult2 = tmp(user[14]);
+      const tmpResult2 = tmp(user[13]);
       const messageRequestActions = tmpResult2.useMessageRequestActions(tmp10);
       const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
       ({ isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected, markAsNotSpam } = messageRequestActions);
@@ -139,22 +139,22 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
         class I {
           constructor() {
             let intl;
-            const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+            const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
             const open = hasSingleMessageRequest(user[10]).open;
             hasSingleMessageRequest(user[10]);
             intl = goToMessageRequestPreview(user[6]).intl;
-            open(obj);
+            open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
           }
         }
         if (cResult[12] === channel) {
           class I {
             constructor() {
               let intl;
-              const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+              const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
               const open = hasSingleMessageRequest(user[10]).open;
               hasSingleMessageRequest(user[10]);
               intl = goToMessageRequestPreview(user[6]).intl;
-              open(obj);
+              open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
             }
           }
         }
@@ -180,18 +180,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
     cResult[8] = obj2;
     tmp10 = obj2;
   }
-  const fn = function f() {
-    const tmp = hasSingleMessageRequest;
-    if (tmp) {
-      const obj = transitionToChannel;
-      obj.transitionToChannel(id);
-      const arr = ModalActionCreatorsDefault;
-      arr.pop();
+  class C {
+    constructor() {
+      const tmp = hasSingleMessageRequest;
+      if (tmp) {
+        const obj = transitionToChannel;
+        obj.transitionToChannel(id);
+        const arr = ModalActionCreatorsDefault;
+        arr.pop();
+      }
     }
-  };
+  }
   cResult[3] = id;
   cResult[4] = hasSingleMessageRequest;
-  cResult[5] = fn;
+  cResult[5] = C;
 }) : (function PendingSpamMessageRequestRow(isLastRow) {
   let _undefined;
   let _undefined2;
@@ -212,6 +214,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
   let items3;
   let messageRequest;
   let obj13;
+  let require;
   ({ messageRequest, goToMessageRequestPreview: require, hasSingleMessageRequest } = isLastRow);
   c6 = undefined;
   c7 = undefined;
@@ -225,11 +228,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
   const items = [id, hasSingleMessageRequest];
   const callback = channel.useCallback(() => {
     let intl;
-    const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(require("intl").t.pIQ3h4), icon: hasSingleMessageRequest(str[11]) };
+    const obj = { text: intl.string(require("intl").t.pIQ3h4), variant: "critical" };
     const open = hasSingleMessageRequest(str[10]).open;
     hasSingleMessageRequest(str[10]);
     intl = require("intl").intl;
-    open(obj);
+    open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
   }, []);
   const callback1 = channel.useCallback(() => {
     const tmp = hasSingleMessageRequest;
@@ -247,7 +250,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
     const obj = AnalyticsUtilsDefault;
     const obj2 = { is_spam: true, channel_id: channel.id, other_user_id: str.id };
     obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-    require();
+    _require();
   }
   const obj3 = {
     onPress: handleSelectRow,
@@ -263,14 +266,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
         const obj2 = { is_spam: true, channel_id: channel.id, other_user_id: str.id };
         const obj = AnalyticsUtilsDefault;
         obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-        require();
+        _require();
       }
     },
     style: tmp.pressableRow,
     children: null
   };
   const obj4 = { name: constants.ACCEPT_SPAM_MESSAGE, label: intl.string(require("intl").t.apePSa) };
-  const PressableOpacity = tmp2(tmp3[19]).PressableOpacity;
+  const PressableOpacity = tmp2(tmp3[18]).PressableOpacity;
   intl = tmp2(tmp3[6]).intl;
   items1 = [obj4, , ];
   const obj5 = { name: constants.IGNORE_SPAM_MESSAGE, label: intl2.string(require("intl").t.MWOV9D) };
@@ -282,9 +285,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
   const obj7 = { style: tmp.rowContainer, children: null };
   const items2 = [, ];
   const obj8 = { channel: messageRequest.channel, otherUser: messageRequest.user };
-  items2[0] = closure_8(hasSingleMessageRequest(str[16]), obj8);
+  items2[0] = closure_8(hasSingleMessageRequest(str[15]), obj8);
   const obj9 = { style: tmp.actionContainer, children: null };
-  const PressableOpacity2 = tmp2(tmp3[19]).PressableOpacity;
+  const PressableOpacity2 = tmp2(tmp3[18]).PressableOpacity;
   const intl4 = tmp2(tmp3[6]).intl;
   const formatToPlainString = intl4.formatToPlainString;
   let str1;
@@ -302,13 +305,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
     if (!isUserProfileLoading) {
       let tmp10Result;
       if (!isOptimisticAccepted) {
-        const obj11 = { size: require("native").Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[18]) };
-        const Icon = tmp2(tmp3[17]).Icon;
+        const obj11 = { size: require("native").Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[17]) };
+        const Icon = tmp2(tmp3[16]).Icon;
         tmp10Result = tmp10(Icon, obj11);
       }
       obj10.children = tmp10Result;
       const items4 = [tmp10(PressableOpacity2, obj10), ];
-      const PressableOpacity3 = tmp2(tmp3[19]).PressableOpacity;
+      const PressableOpacity3 = tmp2(tmp3[18]).PressableOpacity;
       const intl5 = tmp2(tmp3[6]).intl;
       const formatToPlainString2 = intl5.formatToPlainString;
       let str2;
@@ -324,8 +327,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
       if (!isRejectLoading) {
         let tmp10Result3;
         if (!isOptimisticRejected) {
-          const obj14 = { size: require("native").Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[20]) };
-          const Icon2 = tmp2(tmp3[17]).Icon;
+          const obj14 = { size: require("native").Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[19]) };
+          const Icon2 = tmp2(tmp3[16]).Icon;
           tmp10Result3 = tmp10(Icon2, obj14);
         }
         obj12.children = tmp10Result3;
@@ -336,7 +339,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
         const items5 = [tmp8(tmp9, obj7), ];
         let tmp10Result4 = null;
         if (!isLastRow) {
-          tmp10Result4 = tmp10(tmp2(tmp3[21]).FormDivider, { iconPush: true, outer: true });
+          tmp10Result4 = tmp10(tmp2(tmp3[20]).FormDivider, { iconPush: true, outer: true });
         }
         items5[1] = tmp10Result4;
         obj3.children = items5;
@@ -361,10 +364,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageL
   const tmp5 = closure_11();
   importDefault = tmp5;
   const bottom = require("useSafeAreaInsets")().bottom;
-  let obj2 = goToMessageRequestPreview(spamMessageRequestCount[23]);
+  let obj2 = goToMessageRequestPreview(spamMessageRequestCount[22]);
   spamMessageRequestCount = obj2.useSpamMessageRequestCount();
   const arr = require("useSortedSpamMessageRequests")();
-  let obj3 = goToMessageRequestPreview(spamMessageRequestCount[25]);
+  let obj3 = goToMessageRequestPreview(spamMessageRequestCount[24]);
   const listHasSingleSpamMessageRequest = obj3.useListHasSingleSpamMessageRequest();
   if (cResult[0] !== spamMessageRequestCount) {
     const fn = function n() {
@@ -420,7 +423,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageL
           }
           if (cResult[10] !== bottom) {
             let num11 = 0;
-            const tmp2Result = goToMessageRequestPreview(spamMessageRequestCount[31]);
+            const tmp2Result = goToMessageRequestPreview(spamMessageRequestCount[30]);
             if (tmp2Result.isAndroid()) {
               num11 = bottom;
             }
@@ -501,7 +504,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageL
       if (typeof item === "string") {
         const obj = { style: sectionContainer.sectionContainer, children: closure_1_8(Text, obj2) };
         obj2 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(spamMessageRequestCount[6]).t.aNh5Kf, obj3) };
-        Text = goToMessageRequestPreview(spamMessageRequestCount[30]).Text;
+        Text = goToMessageRequestPreview(spamMessageRequestCount[29]).Text;
         intl = goToMessageRequestPreview(spamMessageRequestCount[6]).intl;
         obj3 = { count: arr.length };
         tmp11Result = closure_1_8(closure_1_5, obj);
@@ -541,10 +544,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageL
   const tmp2 = closure_11();
   importDefault = tmp2;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  let obj = goToMessageRequestPreview(17520);
+  let obj = goToMessageRequestPreview(17592);
   dependencyMap = obj.useSpamMessageRequestCount();
   const arr = useSortedSpamMessageRequestsDefault();
-  let obj2 = goToMessageRequestPreview(17518);
+  let obj2 = goToMessageRequestPreview(17590);
   const hasSingleMessageRequest = obj2.useListHasSingleSpamMessageRequest();
   useMountEffectDefault(() => {
     const obj = AnalyticsUtilsDefault;
@@ -587,7 +590,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageL
           if (typeof item === "string") {
             const obj = { style: sectionContainer.sectionContainer, children: closure_1_8(Text, obj2) };
             obj2 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(num_spam_message_requests[6]).t.aNh5Kf, obj3) };
-            Text = goToMessageRequestPreview(num_spam_message_requests[30]).Text;
+            Text = goToMessageRequestPreview(num_spam_message_requests[29]).Text;
             intl = goToMessageRequestPreview(num_spam_message_requests[6]).intl;
             obj3 = { count: arr.length };
             tmp11Result = closure_1_8(closure_1_5, obj);

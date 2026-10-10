@@ -1,13 +1,13 @@
-// Module ID: 10985
-// Function ID: 10986
+// Module ID: 11025
+// Function ID: 11026
 // Name: useVoiceStateForRemoteSession
-// Dependencies: [502, 5112, 5110, 558, 576, 504, 2]
+// Dependencies: [502, 5113, 5111, 558, 576, 504, 2]
 
-// Module 10985 (useVoiceStateForRemoteSession)
+// Module 11025 (useVoiceStateForRemoteSession)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
-import GameConsoleStore from "GameConsoleStore" /* 5110 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import GameConsoleStore from "GameConsoleStore" /* 5111 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

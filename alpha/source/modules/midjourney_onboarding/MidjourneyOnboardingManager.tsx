@@ -1,13 +1,13 @@
-// Module ID: 18495
-// Function ID: 18496
+// Module ID: 18569
+// Function ID: 18570
 // Name: MidjourneyOnboardingManager
-// Dependencies: [5, 14004, 1085, 6804, 14003, 6943, 2]
+// Dependencies: [5, 14059, 1085, 6807, 14058, 6949, 2]
 
-// Module 18495 (MidjourneyOnboardingManager)
+// Module 18569 (MidjourneyOnboardingManager)
 import Constants from "Constants" /* 1085 */;
-import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 14004 */;
+import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 14059 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -35,7 +35,7 @@ class MidjourneyOnboardingManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ class MidjourneyOnboardingManager extends AutomaticLifecycleManager {
             tmp8(Routes.CHANNEL(null, closure_128_0.id));
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp15) {
           c2 = 3;
           throw tmp15;

@@ -1,17 +1,17 @@
-// Module ID: 18577
-// Function ID: 18578
+// Module ID: 18651
+// Function ID: 18652
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 5091, 587, 1503, 18555, 18559, 5087, 1126, 5374, 5376, 5937, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 1503, 18629, 18633, 5088, 1126, 5377, 5379, 5930, 2]
 // Exports: default
 
-// Module 18577 (ErrorScreen)
+// Module 18651 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ export default function ErrorScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -99,7 +99,7 @@ export default function ErrorScreen() {
             c3 = 0;
             closure_129_0(false);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp29) {
           closure_2 = tmp29;

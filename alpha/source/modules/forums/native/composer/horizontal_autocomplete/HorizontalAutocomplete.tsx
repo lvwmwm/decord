@@ -1,32 +1,32 @@
-// Module ID: 9982
-// Function ID: 9983
+// Module ID: 10011
+// Function ID: 10012
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 5080, 2118, 2086, 4719, 1390, 1085, 21, 5091, 5903, 587, 558, 576, 4811, 5092, 5393, 504, 1200, 4923, 5087, 6877, 6895, 8245, 8142, 5418, 6163, 2]
+// Dependencies: [19, 17, 5081, 2119, 2087, 4760, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 4850, 5093, 5396, 504, 1200, 4962, 5088, 6883, 6901, 8261, 8158, 5421, 6156, 2]
 
-// Module 9982 (HorizontalAutocomplete)
+// Module 10011 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import timing from "timing" /* 5092 */;
-import useMountEffectDefault from "useMountEffect" /* 5393 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import RoleIconUtils from "RoleIconUtils" /* 6877 */;
-import RoleIconDefault from "RoleIcon" /* 6895 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8245 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import timing from "timing" /* 5093 */;
+import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import RoleIconUtils from "RoleIconUtils" /* 6883 */;
+import RoleIconDefault from "RoleIcon" /* 6901 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8261 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
-import TextStyles from "TextStyles" /* 5903 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles from "TextStyles" /* 5906 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReactCompilerGating";
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ let obj3;
 let obj4;
 let tmp7;
 let unpackModuleId;
-const ReanimatedRexportDefault = tmp7(4811);
+const ReanimatedRexportDefault = tmp7(4850);
 ({ TouchableOpacity: c3, View: closure_4, StyleSheet } = react_native);
 ({ ChannelTypes: c10, Fonts } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -68,7 +68,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Horizo
   const cResult = obj.c(11);
   ({ children, onPress } = arg0);
   const tmp4 = closure_13();
-  const obj2 = sharedValue(4811);
+  const obj2 = sharedValue(4850);
   const tmp = sharedValue;
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
@@ -91,7 +91,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Horizo
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 14159604656069;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4811);
+  const tmpResult = tmp(4850);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[2] === animatedStyle) {
     let tmp10;
@@ -137,7 +137,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Horizo
   let sharedValue;
   ({ children, onPress } = arg0);
   const tmp = closure_13();
-  let obj = sharedValue(4811);
+  let obj = sharedValue(4850);
   sharedValue = obj.useSharedValue(0);
   useMountEffectDefault(() => {
     set = sharedValue.set;
@@ -152,7 +152,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Horizo
   fn.__workletHash = 9120427353030;
   fn.__initData = __initData2;
   const obj3 = { onPress, children: closure_11(ReanimatedRexportDefault.View, obj4) };
-  const obj2 = sharedValue(4811);
+  const obj2 = sharedValue(4850);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   obj4 = { style: items, children };
   items = [tmp.horizontalAutocompleteOption, animatedStyle];
@@ -371,7 +371,7 @@ let obj5 = {
       if (cResult[4] !== stateFromStores) {
         let roleIconData = null;
         if (null != stateFromStores) {
-          const tmpResult2 = guildId(6877);
+          const tmpResult2 = guildId(6883);
           roleIconData = tmpResult2.getRoleIconData(stateFromStores, 30);
         }
         cResult[4] = stateFromStores;
@@ -445,7 +445,7 @@ let obj5 = {
       }
       let tmp12 = null;
       if (null != tmp9) {
-        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6895), obj7) };
+        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6901), obj7) };
         obj7 = { name, src: null, unicodeEmoji: null, size: 24 };
         ({ customIconSrc: obj5.src, unicodeEmoji: obj5.unicodeEmoji } = tmp9);
         tmp12 = closure_11(closure_4, obj6);
@@ -554,7 +554,7 @@ let obj5 = {
         tmp13 = cResult[8];
       }
       if (cResult[9] !== channel) {
-        const tmpResult3 = channel(5418);
+        const tmpResult3 = channel(5421);
         const channelName = tmpResult3.computeChannelName(channel, UserStore, RelationshipStore);
         cResult[9] = channel;
         cResult[10] = channelName;
@@ -586,7 +586,7 @@ let obj5 = {
         tmp23 = tmp26;
       }
       const obj4 = { style: tmp4.channelName, variant: "text-sm/semibold", children: tmp16 };
-      const tmp22 = closure_11(channel(5087).Text, obj4);
+      const tmp22 = closure_11(channel(5088).Text, obj4);
       cResult[11] = tmp16;
       cResult[12] = tmp4.channelName;
       cResult[13] = tmp22;
@@ -595,7 +595,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmpResult4 = channel(8142);
+      const tmpResult4 = channel(8158);
       channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, stateFromStores);
     }
     cResult[4] = channel;
@@ -613,16 +613,16 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(8142);
+      const tmp2Result = channel(8158);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };
     items = [closure_11(channel(1200).Icon, { source: channelIconWithGuild }), ];
     const tmp8 = closure_11(channel(1200).Icon, { source: channelIconWithGuild });
-    const tmp2Result2 = channel(5418);
+    const tmp2Result2 = channel(5421);
     const channelName = tmp2Result2.computeChannelName(channel, UserStore, RelationshipStore);
     const obj2 = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
-    items[1] = closure_11(channel(5087).Text, obj2);
+    items[1] = closure_11(channel(5088).Text, obj2);
     return closure_12(closure_16, obj);
   }),
   Emoji: ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(name) {

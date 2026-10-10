@@ -1,11 +1,11 @@
-// Module ID: 17149
-// Function ID: 17150
+// Module ID: 17219
+// Function ID: 17220
 // Name: conjureQueuedMessage
-// Dependencies: [13164, 2]
+// Dependencies: [13213, 2]
 // Exports: queuedMessageActionHandler
 
-// Module 17149 (conjureQueuedMessage)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
+// Module 17219 (conjureQueuedMessage)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
 import size from "module_2" /* 2 */;
 
 const sendQueuedMessageAction = ConjureConnectionStore.sendQueuedMessageAction;

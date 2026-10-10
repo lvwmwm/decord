@@ -1,10 +1,10 @@
-// Module ID: 8969
-// Function ID: 8970
+// Module ID: 8988
+// Function ID: 8989
 // Name: useGetOrFetchStorefrontPrices
-// Dependencies: [19, 558, 576, 8970, 2]
+// Dependencies: [19, 558, 576, 8989, 2]
 
-// Module 8969 (useGetOrFetchStorefrontPrices)
-import StorefrontActionCreators from "StorefrontActionCreators" /* 8970 */;
+// Module 8988 (useGetOrFetchStorefrontPrices)
+import StorefrontActionCreators from "StorefrontActionCreators" /* 8989 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

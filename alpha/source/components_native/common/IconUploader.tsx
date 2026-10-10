@@ -1,21 +1,21 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9639
+// Function ID: 9640
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1085, 21, 5091, 558, 576, 7750, 6165, 1415, 6163, 9611, 1126, 6191, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5092, 558, 576, 7768, 6158, 1415, 6156, 9640, 1126, 6184, 2]
 
-// Module 9610 (IconUploader)
+// Module 9639 (IconUploader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import GuildIcon from "GuildIcon" /* 6165 */;
-import Pressables from "Pressables" /* 6191 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9611 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import GuildIcon from "GuildIcon" /* 6158 */;
+import Pressables from "Pressables" /* 6184 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9640 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,8 +102,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
             tmp14 = tmp18;
           }
         }
-        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(6165).GuildIconSizes.XLARGE, animate: true };
-        const tmp21 = onChangeIconPress(6165);
+        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(6158).GuildIconSizes.XLARGE, animate: true };
+        const tmp21 = onChangeIconPress(6158);
         const tmp22 = closure_7(tmp21, obj3);
         cResult[8] = tmp7;
         cResult[9] = iconStyle;
@@ -133,7 +133,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
           }
         }
         let obj4 = { style: tmp13, source: tmp11 };
-        const tmp17 = closure_7(onChangeIconPress(6163), obj4);
+        const tmp17 = closure_7(onChangeIconPress(6156), obj4);
         cResult[17] = tmp11;
         cResult[18] = tmp13;
         cResult[19] = tmp17;
@@ -187,7 +187,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
             tmp39 = tmp42;
           }
           let obj6 = { accessibilityRole: "button", accessibilityLabel: tmp34, onPress: tmp10, children: tmp28 };
-          const tmp38 = closure_7(tmp(6191).PressableOpacity, obj6);
+          const tmp38 = closure_7(tmp(6184).PressableOpacity, obj6);
           cResult[27] = tmp10;
           cResult[28] = tmp28;
           cResult[29] = tmp38;
@@ -205,8 +205,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
     }
     let tmp24 = null;
     if (!tmp4) {
-      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(9611) };
-      const tmp27 = onChangeIconPress(6163);
+      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(9640) };
+      const tmp27 = onChangeIconPress(6156);
       tmp24 = closure_7(tmp27, obj8);
     }
     cResult[20] = tmp4;
@@ -227,7 +227,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -274,7 +274,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
           ref.current = false;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp21) {
         c3 = 3;
         throw tmp21;
@@ -328,7 +328,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -375,7 +375,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconUploader
             closure_129_2.current = false;
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp21) {
           c3 = 3;
           throw tmp21;

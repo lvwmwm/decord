@@ -1,32 +1,32 @@
-// Module ID: 5371
-// Function ID: 5372
+// Module ID: 5372
+// Function ID: 5373
 // Name: useBackPressHandler
-// Dependencies: [19, 17, 5372, 1382, 558, 576, 2]
+// Dependencies: [19, 17, 5373, 1382, 5375, 558, 576, 2]
 // Exports: subscribeToBackPress
 
-// Module 5371 (useBackPressHandler)
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import KeyCommands from "KeyCommands" /* 5372 */;
-import react_mod from "react" /* 19 */;
+// Module 5372 (useBackPressHandler)
 import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import KeyCommands from "KeyCommands" /* 5373 */;
+import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let MinimizeApp, _require, dependencyMap;
+let _require, dependencyMap;
 
-let c3;
-let closure_4;
+let tmp;
+const BackPressTracking = tmp(5375);
 let react = react_mod;
-({ BackHandler: c3, NativeModules: closure_4 } = react_native);
+const NativeModules = react_native.NativeModules;
 let obj = {
   minimize() {
-    MinimizeApp = MinimizeApp.MinimizeApp;
+    const MinimizeApp = NativeModules.MinimizeApp;
     MinimizeApp.minimizeApp();
     return true;
   }
 };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPressHandler(cResult, arg1) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPressHandler(cResult, arg1) {
   let closure_2;
   let current;
   let tmp3;
@@ -35,6 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPress
   _require = cResult;
   let obj = require("react");
   cResult = obj.c(5);
+  let tmp2 = undefined === arg1 || arg1;
   dependencyMap = tmp2;
   let obj2 = react;
   react = react.useRef(cResult);
@@ -49,7 +50,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPress
     tmp3 = cResult[1];
   }
   const layoutEffect = obj2.useLayoutEffect(tmp3);
-  if (cResult[2] !== (undefined === arg1 || arg1)) {
+  if (cResult[2] !== tmp2) {
     let fn2 = function t() {
       let ref;
       const tmp = closure_1;
@@ -60,8 +61,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPress
         KeyCommands;
         let fn2 = subscribeKeyCommand(obj);
         const obj2 = PlatformUtils;
+        const tmp2 = require;
         if (!obj2.isIOS()) {
-          closure_1 = _false.addEventListener("hardwareBackPress", fn);
+          const tmp2Result = tmp2(5375);
+          closure_1 = tmp2Result.addBackPressListener(fn);
           fn2 = () => {
             closure_1.remove();
             fn2();
@@ -71,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPress
       }
     };
     const items = [tmp2];
-    cResult[2] = undefined === arg1 || arg1;
+    cResult[2] = tmp2;
     cResult[3] = fn2;
     cResult[4] = items;
     tmp6 = items;
@@ -104,8 +107,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackPress
       KeyCommands;
       let fn2 = subscribeKeyCommand(obj);
       const obj2 = PlatformUtils;
+      const tmp2 = require;
       if (!obj2.isIOS()) {
-        let closure_1 = _false.addEventListener("hardwareBackPress", fn);
+        const tmp2Result = tmp2(5375);
+        let closure_1 = tmp2Result.addBackPressListener(fn);
         fn2 = () => {
           closure_1.remove();
           fn2();
@@ -123,7 +128,8 @@ function subscribeToBackPress(onKeyCommand) {
   if (obj3.isIOS()) {
     return subscribeKeyCommandResult;
   } else {
-    let closure_1 = _false.addEventListener("hardwareBackPress", onKeyCommand);
+    const tmpResult = BackPressTracking;
+    let closure_1 = tmpResult.addBackPressListener(onKeyCommand);
     return () => {
       closure_1.remove();
       fn2();
@@ -132,6 +138,6 @@ function subscribeToBackPress(onKeyCommand) {
 }
 const result = size.fileFinishedImporting("modules/routing/native/useBackPressHandler.tsx");
 
-export default tmp3;
+export default tmp2;
 export { subscribeToBackPress };
 export const BackPressHandler = obj;

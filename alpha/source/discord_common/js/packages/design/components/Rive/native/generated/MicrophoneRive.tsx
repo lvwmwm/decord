@@ -1,12 +1,12 @@
-// Module ID: 4881
-// Function ID: 4882
+// Module ID: 4920
+// Function ID: 4921
 // Name: MicrophoneRive
-// Dependencies: [109, 19, 21, 558, 4805, 576, 4882, 4858, 2]
+// Dependencies: [109, 19, 21, 558, 4844, 576, 4921, 4897, 2]
 
-// Module 4881 (MicrophoneRive)
+// Module 4920 (MicrophoneRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 4805 */;
+import BaseRive2 from "BaseRive" /* 4844 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let dataBinding, importDefault, tmp3, tmp5;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(4858);
+const RiveErrorBoundary2 = tmp(4897);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -45,7 +45,7 @@ let obj = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(4805).useBooleanBinding;
+    const useBooleanBinding = tmp(4844).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -76,7 +76,7 @@ let obj = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(4805).useBooleanBinding;
+    const useBooleanBinding = tmp(4844).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -108,7 +108,7 @@ let obj = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(4805).useBooleanBinding;
+    const useBooleanBinding = tmp(4844).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -139,7 +139,7 @@ let obj = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(4805).useBooleanBinding;
+    const useBooleanBinding = tmp(4844).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -267,7 +267,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Microp
         }
       }
       let merged = Object.assign(tmp7);
-      const tmp23 = <BaseRive ref={tmp6} src={require("module_4882")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={null} renderDataBinding={tmp14} />;
+      const tmp23 = <BaseRive ref={tmp6} src={require("module_4921")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={null} renderDataBinding={tmp14} />;
       cResult[12] = str;
       cResult[13] = str2;
       cResult[14] = tmp6;

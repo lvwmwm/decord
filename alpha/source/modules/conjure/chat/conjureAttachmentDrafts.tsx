@@ -1,16 +1,16 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 17245
+// Function ID: 17246
 // Name: conjureAttachmentDrafts
-// Dependencies: [109, 4950, 13164, 1126, 3827, 6940, 558, 576, 584, 2]
+// Dependencies: [109, 4989, 13213, 1126, 3849, 6946, 558, 576, 584, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment
 
-// Module 17175 (conjureAttachmentDrafts)
+// Module 17245 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1126 */;
-import _modDef3827 from "module_3827" /* 3827 */;
-import ZustandStore from "ZustandStore" /* 4950 */;
-import ConjureTypes from "ConjureTypes" /* 6940 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import ZustandStore from "ZustandStore" /* 4989 */;
+import ConjureTypes from "ConjureTypes" /* 6946 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let _require, closure_10;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f128046 = () => {
+const f128458 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -83,7 +83,7 @@ function discardDraft(projectId, item10010) {
   }
   if (null != item10010.ref) {
     const promise = hasOwnProperty(projectId, item10010.ref.id);
-    promise.catch(f128046);
+    promise.catch(f128458);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -195,7 +195,7 @@ function conjureAttachmentTooLargeText(contentType) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { size: formatConjureAttachmentLimit(obj2.conjureAttachmentLimit(contentType)) };
-  const JZ59Bo = _modDef3827.JZ59Bo;
+  const JZ59Bo = _modDef3849.JZ59Bo;
   formatConjureAttachmentLimit = ConjureTypes.formatConjureAttachmentLimit;
   ConjureTypes;
   obj2 = ConjureTypes;
@@ -234,7 +234,7 @@ export const uploadConjureAttachment = function uploadConjureAttachment(arg0, si
     const intl = tmp(1126).intl;
     formatToPlainString = intl.formatToPlainString;
     obj3 = { size: formatConjureAttachmentLimit(tmpResult2.conjureAttachmentLimit(contentType)) };
-    JZ59Bo = _modDef3827.JZ59Bo;
+    JZ59Bo = _modDef3849.JZ59Bo;
     formatConjureAttachmentLimit = ConjureTypes.formatConjureAttachmentLimit;
     ConjureTypes;
     tmpResult2 = ConjureTypes;
@@ -291,7 +291,7 @@ export const removeConjureAttachmentDraft = function removeConjureAttachmentDraf
     }
     if (null != found.ref) {
       const promise = hasOwnProperty(projectId, found.ref.id);
-      promise.catch(f128046);
+      promise.catch(f128458);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

@@ -314,7 +314,7 @@ class TimeOfDay$Type extends MessageType {
 const prototype = TimeOfDay$Type.prototype;
 let items = [{ no: 1, name: "hours", kind: "scalar", T: 5 }, { no: 2, name: "minutes", kind: "scalar", T: 5 }, { no: 3, name: "seconds", kind: "scalar", T: 5 }, { no: 4, name: "nanos", kind: "scalar", T: 5 }];
 let tmp8 = new "SUBSCRIPTION_GROUP"("discord_protos.users.v1.TimeOfDay", items, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, tmp2, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13);
-const authStore6 = tmp8;
+const authStore5 = tmp8;
 const MessageType2 = _mod1210.MessageType;
 class User$Type extends MessageType2 {
   constructor() {

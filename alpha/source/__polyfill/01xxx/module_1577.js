@@ -37,7 +37,7 @@ function isNavigationState(state) {
 function getRouteConfigsFromChildren(arg0) {
   let layout;
   let options;
-  const f85491 = function(arr, type) {
+  const f85731 = function(arr, type) {
     let combined;
     if (react.isValidElement(type)) {
       if (type.type === Screen.Screen) {
@@ -120,7 +120,7 @@ function getRouteConfigsFromChildren(arg0) {
             const Children = obj.Children;
             const items5 = [];
             const toArrayResult = Children.toArray(children);
-            HermesBuiltin.arraySpread(items5, toArrayResult.reduce(f85491, []), 0);
+            HermesBuiltin.arraySpread(items5, toArrayResult.reduce(f85731, []), 0);
             HermesBuiltin.apply(push, items5, arr);
             return arr;
           } else {
@@ -177,7 +177,7 @@ function getRouteConfigsFromChildren(arg0) {
   let c2;
   let Children = react.Children;
   let toArrayResult = Children.toArray(arg0);
-  return toArrayResult.reduce(f85491, []);
+  return toArrayResult.reduce(f85731, []);
 }
 function getStateFromParams(params1, type) {
   let items;
@@ -865,7 +865,7 @@ export const useNavigationBuilder = function useNavigationBuilder(StackRouter, U
               const Provider2 = react2.NavigationHelpersContext.Provider;
               const NavigationStateListenerProvider = NavigationStateListenerProvider2.NavigationStateListenerProvider;
               const Provider3 = _mod1545.FocusedRouteKeyContext.Provider;
-              return <Provider value="Array">{0}</Provider>;
+              return <Provider value="Array">{false}</Provider>;
             })
       };
       tmp26Result25 = tmp26(1594);

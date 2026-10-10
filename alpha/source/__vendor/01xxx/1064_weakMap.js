@@ -85,7 +85,7 @@ function startTimeToInitialDisplaySpan(isAutoInstrumented) {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               let c3;
@@ -165,7 +165,7 @@ function startTimeToInitialDisplaySpan(isAutoInstrumented) {
                   }
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } catch (tmp45) {
                 closure_2 = tmp45;
                 if (0 === c3) {
@@ -256,7 +256,7 @@ function startTimeToFullDisplaySpan(arg0) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } else {
                 let c3;
@@ -336,7 +336,7 @@ function startTimeToFullDisplaySpan(arg0) {
                     }
                   }
                   c5 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 } catch (tmp45) {
                   closure_2 = tmp45;
                   if (0 === c3) {
@@ -398,7 +398,7 @@ function startTimeToFullDisplaySpan(arg0) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     }
                   } else {
                     let c3;
@@ -487,7 +487,7 @@ function startTimeToFullDisplaySpan(arg0) {
                         map.delete(spanId);
                       }
                       c5 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     } catch (tmp54) {
                       endFrames = tmp54;
                       if (0 === c3) {
@@ -630,7 +630,7 @@ function updateFullDisplaySpan(arg0, span) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } else {
                 let c3;
@@ -719,7 +719,7 @@ function updateFullDisplaySpan(arg0, span) {
                     map.delete(spanId);
                   }
                   c5 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 } catch (tmp54) {
                   endFrames = tmp54;
                   if (0 === c3) {
@@ -969,7 +969,7 @@ export const updateInitialDisplaySpan = function updateInitialDisplaySpan(arg0) 
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } else {
                 let c3;
@@ -1058,7 +1058,7 @@ export const updateInitialDisplaySpan = function updateInitialDisplaySpan(arg0) 
                     map.delete(spanId);
                   }
                   c5 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 } catch (tmp54) {
                   endFrames = tmp54;
                   if (0 === c3) {
@@ -1132,7 +1132,7 @@ export const createTimeToFullDisplay = function createTimeToFullDisplay(useFocus
     constructor(arg0) {
       tmp = closure_2(useState(false), 2);
       [record, closure_0] = tmp;
-      tmp2 = useFocusEffect(() => { /* body not rendered: F136659 */ });
+      tmp2 = useFocusEffect(() => { /* body not rendered: F137090 */ });
       tmp3 = closure_3;
       createElement = closure_3.createElement;
       tmp4 = closure_1;
@@ -1154,7 +1154,7 @@ export const createTimeToInitialDisplay = function createTimeToInitialDisplay(us
     constructor(arg0) {
       tmp = closure_2(useState(false), 2);
       [record, closure_0] = tmp;
-      tmp2 = useFocusEffect(() => { /* body not rendered: F136659 */ });
+      tmp2 = useFocusEffect(() => { /* body not rendered: F137090 */ });
       tmp3 = closure_3;
       createElement = closure_3.createElement;
       tmp4 = closure_1;

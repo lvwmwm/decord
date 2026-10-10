@@ -1,16 +1,16 @@
-// Module ID: 8052
-// Function ID: 8053
+// Module ID: 8070
+// Function ID: 8071
 // Name: PollResultSystemMessage
-// Dependencies: [1393, 7960, 7962, 1126, 1415, 4723, 8053, 7964, 2]
+// Dependencies: [1393, 7978, 7980, 1126, 1415, 4764, 8071, 7982, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 8052 (PollResultSystemMessage)
+// Module 8070 (PollResultSystemMessage)
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4723 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7960 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7962 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8053 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7978 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7980 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8071 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -91,7 +91,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       }
     }
     const obj16 = { content: formatToParts3Result };
-    const merged3 = Object.assign(tmp(7964)(message));
+    const merged3 = Object.assign(tmp(7982)(message));
     return obj16;
   }
 };

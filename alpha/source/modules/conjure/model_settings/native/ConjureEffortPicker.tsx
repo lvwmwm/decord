@@ -1,18 +1,18 @@
-// Module ID: 16975
-// Function ID: 16976
+// Module ID: 17043
+// Function ID: 17044
 // Name: ConjureEffortPicker
-// Dependencies: [32, 19, 17, 21, 558, 576, 1126, 3827, 16976, 6940, 6266, 6267, 6269, 6186, 16977, 6889, 5374, 587, 6835, 6892, 2]
+// Dependencies: [32, 19, 17, 21, 558, 576, 1126, 3849, 17044, 6946, 6261, 6262, 6264, 6179, 17045, 6895, 5377, 587, 6838, 6898, 2]
 
-// Module 16975 (ConjureEffortPicker)
+// Module 17043 (ConjureEffortPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl7 from "intl" /* 1126 */;
-import _modDef3827 from "module_3827" /* 3827 */;
-import TableRadioRow2 from "TableRadioRow" /* 6266 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6835 */;
-import ActionSheet2 from "ActionSheet" /* 6892 */;
-import ConjureEffortTiers from "ConjureEffortTiers" /* 16976 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 16977 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import TableRadioRow2 from "TableRadioRow" /* 6261 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
+import ActionSheet2 from "ActionSheet" /* 6898 */;
+import ConjureEffortTiers from "ConjureEffortTiers" /* 17044 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 17045 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -366,15 +366,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
   [tmp2, c3] = tmp;
   const callback = react.useCallback(() => _undefined((arg0) => !arg0), []);
   const intl = settings(1126).intl;
-  const stringResult = intl.string(disabled(3827).aBPQxX);
+  const stringResult = intl.string(disabled(3849).aBPQxX);
   const intl2 = settings(1126).intl;
-  const stringResult1 = intl2.string(disabled(3827)["59TDiR"]);
+  const stringResult1 = intl2.string(disabled(3849)["59TDiR"]);
   const intl3 = settings(1126).intl;
-  const stringResult2 = intl3.string(disabled(3827).fpdVCO);
-  let obj = settings(16976);
+  const stringResult2 = intl3.string(disabled(3849).fpdVCO);
+  let obj = settings(17044);
   const conjureTierModelResult = obj.conjureTierModel(settings, tiers, settings.tier);
   let obj2 = { direction: "vertical", spacing: disabled(587).space.PX_16, children: items };
-  const Stack = settings(5374).Stack;
+  const Stack = settings(5377).Stack;
   let obj3 = {
     hasIcons: false,
     value: settings.tier,
@@ -399,16 +399,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
     })
   };
   tmp13 = undefined;
-  const TableRadioGroup = settings(6267).TableRadioGroup;
+  const TableRadioGroup = settings(6262).TableRadioGroup;
   if (!hideTitle) {
     tmp13 = stringResult;
   }
-  CONJURE_MODEL_TIERS = tmp4(6940).CONJURE_MODEL_TIERS;
+  CONJURE_MODEL_TIERS = tmp4(6946).CONJURE_MODEL_TIERS;
   items = [closure_6(TableRadioGroup, obj3), , ];
   const obj4 = { hasIcons: false, children: closure_6(TableRow, obj5) };
-  const TableRowGroup = tmp4(6269).TableRowGroup;
-  obj5 = { label: intl4.string(disabled(3827).eGqPbV), arrow: !tmp2, accessibilityState: { expanded: tmp2 }, onPress: callback };
-  TableRow = tmp4(6186).TableRow;
+  const TableRowGroup = tmp4(6264).TableRowGroup;
+  obj5 = { label: intl4.string(disabled(3849).eGqPbV), arrow: !tmp2, accessibilityState: { expanded: tmp2 }, onPress: callback };
+  TableRow = tmp4(6179).TableRow;
   intl4 = tmp4(1126).intl;
   items[1] = closure_6(TableRowGroup, obj4);
   let tmp11Result = null;
@@ -434,12 +434,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
             })
       };
       main = choices.main;
-      const TableRadioGroup2 = tmp4(6267).TableRadioGroup;
+      const TableRadioGroup2 = tmp4(6262).TableRadioGroup;
       tmp12Result = tmp12(TableRadioGroup2, obj6);
     }
     const items1 = [tmp12Result, , ];
     let str = settings.thinking;
-    const TableRadioGroup3 = tmp4(6267).TableRadioGroup;
+    const TableRadioGroup3 = tmp4(6262).TableRadioGroup;
     if (str == null) {
       let thinking;
       if (tiers != null) {
@@ -477,13 +477,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
     thinking1 = choices.thinking;
     items1[1] = closure_6(TableRadioGroup3, obj7);
     let tmp12Result2 = null;
-    const tmp4Result = settings(16976);
+    const tmp4Result = settings(17044);
     if (tmp4Result.conjureCeilingSupportsFast(settings, tiers, choices.main)) {
       const obj8 = { hasIcons: false, children: closure_6(TableSwitchRow, obj9) };
-      const TableRowGroup2 = tmp4(6269).TableRowGroup;
+      const TableRowGroup2 = tmp4(6264).TableRowGroup;
       obj9 = {
-        label: intl5.string(disabled(3827)["5AblQX"]),
-        subLabel: intl6.string(disabled(3827).QnUV8M),
+        label: intl5.string(disabled(3849)["5AblQX"]),
+        subLabel: intl6.string(disabled(3849).QnUV8M),
         value: true === settings.fast,
         disabled,
         onValueChange(fast) {
@@ -493,7 +493,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEff
               dependencyMap(obj2.conjureNormalizeFast(obj));
             }
       };
-      TableSwitchRow = tmp4(6889).TableSwitchRow;
+      TableSwitchRow = tmp4(6895).TableSwitchRow;
       intl5 = tmp4(1126).intl;
       intl6 = tmp4(1126).intl;
       tmp12Result2 = tmp12(TableRowGroup2, obj8);
@@ -534,8 +534,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEffor
     tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: intl.string(_modDef3827.aBPQxX) };
-    const BottomSheetTitleHeader = tmp(6835).BottomSheetTitleHeader;
+    const obj2 = { title: intl.string(_modDef3849.aBPQxX) };
+    const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[2] = tmp10;
@@ -556,7 +556,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEffor
   }
   const obj3 = { header: tmp7, children: metroRequire(View, obj4) };
   obj4 = { children: metroRequire(closure_9, { settings: tmp5, tiers, choices, disabled: false, onChange: tmp6, hideTitle: true }) };
-  const ActionSheet = tmp(6892).ActionSheet;
+  const ActionSheet = tmp(6898).ActionSheet;
   const tmp12 = metroRequire(ActionSheet, obj3);
   cResult[3] = choices;
   cResult[4] = tmp6;
@@ -584,7 +584,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureEffor
   }, items);
   const obj = { header: metroRequire(BottomSheetTitleHeader, obj2), children: metroRequire(View, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { title: intl.string(_modDef3827.aBPQxX) };
+  obj2 = { title: intl.string(_modDef3849.aBPQxX) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl7.intl;
   obj3 = { children: metroRequire(closure_9, { settings: first, tiers, choices, disabled: false, onChange: callback, hideTitle: true }) };

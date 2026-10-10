@@ -1,17 +1,17 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 11340
+// Function ID: 11341
 // Name: useCanFulfillStreamRequest
-// Dependencies: [2019, 5894, 502, 2064, 2086, 4709, 5107, 5109, 1085, 11007, 1382, 558, 576, 504, 2]
+// Dependencies: [2019, 5897, 502, 2065, 2087, 4750, 5108, 5110, 1085, 11047, 1382, 558, 576, 504, 2]
 
-// Module 11299 (useCanFulfillStreamRequest)
+// Module 11340 (useCanFulfillStreamRequest)
 import RunningGameStore from "RunningGameStore" /* 2019 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import PresenceStore from "PresenceStore" /* 5107 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

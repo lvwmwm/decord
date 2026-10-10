@@ -1,29 +1,29 @@
-// Module ID: 5937
-// Function ID: 5938
+// Module ID: 5930
+// Function ID: 5931
 // Name: AuthenticationActionCreators
-// Dependencies: [5, 5938, 502, 5939, 1085, 5940, 3, 5085, 584, 4938, 1112, 5941, 5945, 1273, 1295, 5632, 5946, 5947, 510, 1111, 2]
+// Dependencies: [5, 5931, 502, 5932, 1085, 5933, 3, 5086, 584, 4977, 1112, 5934, 5938, 1273, 1295, 5635, 5939, 5940, 510, 1111, 2]
 
-// Module 5937 (AuthenticationActionCreators)
+// Module 5930 (AuthenticationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import TokenManagerAll from "TokenManager" /* 1111 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import RootNavigationRef from "RootNavigationRef" /* 4938 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5085 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5632 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 5938 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5086 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5635 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 5931 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConsentStore from "ConsentStore" /* 5939 */;
+import ConsentStore from "ConsentStore" /* 5932 */;
 import Constants from "Constants" /* 1085 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 5940 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 5933 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c17, c3, c4, c5, closure_4, importAll, importDefault, obj;
+let _require, c17, c3, c5, c6, closure_3, closure_4, importAll, importDefault, obj;
 
 let c10;
 let c9;
@@ -32,7 +32,7 @@ let closure_14;
 let closure_15;
 let map1;
 let unpackModuleId;
-const f92022 = (error) => {
+const f92289 = (error) => {
   logger.error("Error while dispatching LOGOUT", error);
   if (DiscordErrors != null) {
     DiscordErrors.softCrash(error);
@@ -52,7 +52,7 @@ function handleLogout(source, Routes) {
   const merged = Object.assign(undefined);
   const tmp2Result = DispatcherDefault;
   const dispatchResult = tmp2Result.dispatch(obj2);
-  dispatchResult.catch(f92022);
+  dispatchResult.catch(f92289);
   if (null != DEFAULT_LOGGED_OUT) {
     const obj8 = RootNavigationRef;
     const rootNavigationRef = obj8.getRootNavigationRef();
@@ -79,11 +79,8 @@ let nextPromise = null;
 let obj2 = {
   startSession(token) {
     obj = DispatcherDefault;
-    obj.wait(() => {
-      obj = DispatcherDefault;
-      const obj2 = { type: "START_SESSION", token };
-      obj.dispatch(obj2);
-    });
+    const obj2 = { type: "START_SESSION", token };
+    obj.dispatch(obj2);
   },
   login(self) {
     let code;
@@ -171,7 +168,7 @@ let obj2 = {
             const merged = Object.assign({ isSwitchingAccount: true });
             const tmp21Result = DispatcherDefault;
             const dispatchResult = tmp21Result.dispatch(obj2);
-            dispatchResult.catch(f92022);
+            dispatchResult.catch(f92289);
           }
           const body3 = body.body;
           let suspended_user_token1;
@@ -237,7 +234,7 @@ let obj2 = {
     ({ isMultiAccount: require, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
     let tmp = dependencyMap;
-    const tmp2 = self(5945);
+    const tmp2 = self(5938);
     const request = { url: closure_9.LOGIN_MFA(mfaType), body, retries: 2, oldFormErrors: true, trackedActionData: obj2, rejectWithError: true };
     const post = tmp2.post;
     body = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId, login_instance_id: loginInstanceId };
@@ -298,7 +295,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -398,7 +395,7 @@ let obj2 = {
               } else {
                 credential = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else if (arg0 === 1) {
               c5 = 3;
@@ -434,7 +431,7 @@ let obj2 = {
     let self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    obj = self(5945);
+    obj = self(5938);
     const request = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1, trackedActionData: obj2, rejectWithError: true };
     obj2 = { event: isMultiAccount(1273).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     const postResult = obj.post(request);
@@ -516,7 +513,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -626,7 +623,7 @@ let obj2 = {
     const merged = Object.assign(arg0);
     const tmpResult = DispatcherDefault;
     const dispatchResult = tmpResult.dispatch(obj2);
-    dispatchResult.catch(f92022);
+    dispatchResult.catch(f92289);
   },
   logout(TTI_test, LOGIN) {
     let Storage;
@@ -643,7 +640,7 @@ let obj2 = {
     }
     importAll = arg2;
     let tmp2 = dependencyMap;
-    const tmp3 = DEFAULT_LOGGED_OUT(5945);
+    const tmp3 = DEFAULT_LOGGED_OUT(5938);
     const request = { url: closure_9.LOGOUT, body, oldFormErrors: true, trackedActionData: { event: require("discord_common/AnalyticsUtils").NetworkActionNames.USER_LOGOUT, properties: { logout_source: TTI_test } }, rejectWithError: tmp4Result.rejectWithMigratedError() };
     body = { provider: closure_15(), token: Storage.get(closure_10), voip_provider, voip_token: Storage2.get(closure_11) };
     const post = tmp3.post;
@@ -689,7 +686,7 @@ let obj2 = {
     const merged = Object.assign(obj2);
     const tmp3Result = DispatcherDefault;
     const dispatchResult = tmp3Result.dispatch(obj4);
-    dispatchResult.catch(f92022);
+    dispatchResult.catch(f92289);
     const loginTokenResult = this.loginToken(token, true);
     return loginTokenResult.then(() => {
       const tmp = token === AuthenticationStore.getToken();
@@ -773,9 +770,8 @@ let obj2 = {
     return (async function(arg0, value) {
       let obj6;
       let obj8;
-      let source;
-      if (c5 === 2) {
-        c5 = 3;
+      if (c6 === 2) {
+        c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -784,12 +780,12 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
+        let c4;
         try {
           let password;
-          let body;
           let mfa;
           let sms;
           let webauthn;
@@ -798,18 +794,18 @@ let obj2 = {
           let backup;
           let totp;
           let v6OrEarlierAPIError;
-          c5 = 2;
-          if (0 === c4) {
+          c6 = 2;
+          if (0 === c5) {
             if (arg0 === 1) {
-              c5 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
+              c6 = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              password = tmp;
-              body = undefined;
+              const source = tmp;
+              password = tmp4;
               mfa = undefined;
               sms = undefined;
               webauthn = undefined;
@@ -818,85 +814,89 @@ let obj2 = {
               backup = undefined;
               totp = undefined;
               v6OrEarlierAPIError = undefined;
-              const obj12 = password(c3[8]);
+              const obj12 = password(closure_3[8]);
               obj12.dispatch({ type: "LOGIN" });
               const obj5 = { token, password, source };
-              const Storage2 = token(c3[18]).Storage;
+              const Storage2 = token(closure_3[18]).Storage;
               value = Storage2.get(closure_1_10);
-              const tmp70 = closure_1_15();
-              const tmp26 = null != tmp70 && null != value;
-              if (tmp26) {
-                obj5.push_provider = tmp70;
+              const tmp71 = closure_1_15();
+              const tmp38 = null != tmp71 && null != value;
+              if (tmp38) {
+                obj5.push_provider = tmp71;
                 obj5.push_token = value;
               }
-              const Storage = token(c3[18]).Storage;
+              const Storage = token(closure_3[18]).Storage;
               const value2 = Storage.get(closure_1_11);
-              let tmp32 = null != voip_provider;
-              const tmp31 = voip_provider;
-              if (tmp32) {
-                tmp32 = null != value2;
+              let tmp44 = null != voip_provider;
+              const tmp43 = voip_provider;
+              if (tmp44) {
+                tmp44 = null != value2;
               }
-              if (tmp32) {
-                obj5.push_voip_provider = tmp31;
+              if (tmp44) {
+                obj5.push_voip_provider = tmp43;
                 obj5.push_voip_token = value2;
               }
-              c3 = 1;
+              c4 = 1;
               const request = { url: constants.RESET_PASSWORD, body: obj5, oldFormErrors: true, trackedActionData: obj6, rejectWithError: obj8.rejectWithMigratedError() };
-              obj6 = { event: token(c3[13]).NetworkActionNames.USER_RESET_PASSWORD };
-              const post = password(c3[12]).post;
-              const tmp35 = password(c3[12]);
-              obj8 = token(c3[14]);
-              c4 = 2;
-              c5 = 1;
+              obj6 = { event: token(closure_3[13]).NetworkActionNames.USER_RESET_PASSWORD };
+              const post = password(closure_3[12]).post;
+              const tmp47 = password(closure_3[12]);
+              obj8 = token(closure_3[14]);
+              c5 = 2;
+              c6 = 1;
               const obj7 = { value: post(request), done: false };
               return obj7;
             }
-          } else if (1 === c4) {
-            c3 = 0;
-            let closure_9 = source;
+          } else if (1 === c5) {
+            c4 = 0;
+            let closure_9 = closure_3;
             const self = this;
             const self2 = this;
-            v6OrEarlierAPIError = new token(c3[15]).V6OrEarlierAPIError(closure_9);
+            v6OrEarlierAPIError = new token(closure_3[15]).V6OrEarlierAPIError(closure_9);
             const obj9 = { type: "LOGIN_FAILURE", error: v6OrEarlierAPIError };
-            const obj4 = password(c3[8]);
+            const obj4 = password(closure_3[8]);
             obj4.dispatch(obj9);
             throw v6OrEarlierAPIError;
           } else if (arg0 === 1) {
-            c5 = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c3 = 0;
-            c5 = 3;
+            c4 = 0;
+            c6 = 3;
             const obj10 = { value, done: true };
             return obj10;
           } else {
             let SUCCESS;
-            body = value.body;
-            mfa = body.mfa;
-            sms = body.sms;
-            webauthn = body.webauthn;
-            ticket = body.ticket;
-            token = body.token;
-            backup = body.backup;
-            totp = body.totp;
+            const body = value.body;
+            token = body;
+            if (body == null) {
+              token = {};
+            }
+            mfa = token.mfa;
+            sms = token.sms;
+            webauthn = token.webauthn;
+            ticket = token.ticket;
+            token = token.token;
+            backup = token.backup;
+            totp = token.totp;
             if (mfa) {
-              SUCCESS = tmp58.MFA;
+              SUCCESS = tmp16.MFA;
             } else {
-              SUCCESS = tmp58.SUCCESS;
+              SUCCESS = tmp16.SUCCESS;
             }
             value = { result: SUCCESS, sms, webauthn, ticket, token, backup, totp };
-            c3 = 0;
-            c5 = 3;
+            c4 = 0;
+            c6 = 3;
             const obj11 = { value, done: true };
             return obj11;
           }
-        } catch (tmp41) {
-          source = tmp41;
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp41;
+        } catch (tmp53) {
+          closure_3 = tmp53;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp53;
           } else {
-            c4 = 1;
+            c5 = 1;
           }
         }
       }
@@ -909,22 +909,27 @@ let obj2 = {
     let require;
     let source;
     let ticket;
-    let token;
     ({ method: require, code: importDefault, ticket: importAll, password: dependencyMap, token: closure_4, source: _asyncToGenerator } = arg0);
     return (async () => {
+      let c2;
+      let closure_0;
       let obj4;
       let obj5;
+      let tmp3;
       let v1;
-      let v3;
       const obj6 = code(password[8]);
       obj6.dispatch({ type: "LOGIN_MFA" });
       const request = { url: constants.RESET_PASSWORD, body: obj4, oldFormErrors: true, trackedActionData: obj5, rejectWithError: true };
       obj4 = { code: importDefault, ticket: importAll, password: dependencyMap, token, source: _asyncToGenerator, method: require };
-      obj5 = { event: method(password[13]).NetworkActionNames.USER_RESET_PASSWORD, properties: { mfa: true } };
+      obj5 = { event: tmp3(password[13]).NetworkActionNames.USER_RESET_PASSWORD, properties: { mfa: true } };
       const post = code(password[12]).post;
-      const tmp11 = code(password[12]);
-      await post(request);
-      return arg1.body.token;
+      const tmp15 = code(password[12]);
+      tmp3 = await post(request);
+      const body = tmp3.body;
+      if (body != null) {
+        token = body.token;
+      }
+      return token;
     })();
   },
   forgotPassword(first1) {
@@ -945,7 +950,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

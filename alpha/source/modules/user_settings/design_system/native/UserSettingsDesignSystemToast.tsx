@@ -1,30 +1,25 @@
-// Module ID: 16076
-// Function ID: 16077
+// Module ID: 16138
+// Function ID: 16139
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5087, 5376, 6188, 5374, 4769, 4768, 4776, 4996, 5006, 5008, 5012, 5044, 4727, 14200, 5013, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 5379, 6181, 5377, 4810, 4809, 5046, 5042, 4768, 14255, 2]
 
-// Module 16076 (UserSettingsDesignSystemToast)
+// Module 16138 (UserSettingsDesignSystemToast)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import EmojiUtils from "EmojiUtils" /* 4727 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import toastUtils from "toastUtils" /* 4769 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4776 */;
-import XLargeIcon from "XLargeIcon" /* 4996 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5006 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 5008 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 5012 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
-import CopyIcon from "CopyIcon" /* 5044 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Stack_Stack from "Stack/Stack" /* 5374 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import Card_Card from "Card/Card" /* 6188 */;
-import Toast4 from "Toast" /* 14200 */;
+import EmojiUtils from "EmojiUtils" /* 4768 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import toastUtils from "toastUtils" /* 4810 */;
+import CopyIcon from "CopyIcon" /* 5042 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import Card_Card from "Card/Card" /* 6181 */;
+import Toast4 from "Toast" /* 14255 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,9 +95,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoGr
     }
   }
   const obj4 = { children: hasOwnProperty(Stack, obj5) };
-  const Card = tmp(6188).Card;
+  const Card = tmp(6181).Card;
   obj5 = { spacing: nativeDefault.space.PX_8, children: items };
-  Stack = tmp(5374).Stack;
+  Stack = tmp(5377).Stack;
   items = [tmp4, tmp7, tmp10];
   const tmp15 = React3(Card, obj4);
   cResult[7] = tmp4;
@@ -211,9 +206,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveSt
     }
   }
   const obj2 = { children: hasOwnProperty(Stack, obj3) };
-  const Card = tmp(6188).Card;
+  const Card = tmp(6181).Card;
   obj3 = { spacing: nativeDefault.space.PX_8, children: items };
-  Stack = tmp(5374).Stack;
+  Stack = tmp(5377).Stack;
   items = [tmp8, ];
   const obj4 = { variant: "text-md/medium", color: str, children: items1 };
   items1 = ["Mana: ", str2, str3];
@@ -278,110 +273,77 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveSt
   return tmp3(Card, obj5);
 });
 let obj3 = {
-  label: "Success \u2014 checkmark component",
+  label: "Success",
   onPress() {
-    const tmp = ToastActionCreatorsDefault;
-    const obj = { key: "" + "SUCCESS_COMPONENT" + "-" + metroImportAll, content: "Saved", IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon, iconColor: "status-positive" };
     metroImportAll = metroImportAll + 1;
-    const open = tmp.open;
-    return open(obj);
+    const obj = ToastActionCreatorsDefault;
+    return obj.open("" + "SUCCESS" + "-" + metroImportAll, { text: "Saved", variant: "success" });
   }
 };
 let items = [
   obj3,
   {
-    label: "Critical \u2014 X component",
+    label: "Critical",
     onPress() {
-      const tmp = ToastActionCreatorsDefault;
-      const obj = { key: "" + "ERROR_COMPONENT" + "-" + metroImportAll, content: "Something went wrong", IconComponent: XLargeIcon.XLargeIcon, iconColor: "icon-feedback-critical" };
       metroImportAll = metroImportAll + 1;
-      const open = tmp.open;
-      return open(obj);
+      const obj = ToastActionCreatorsDefault;
+      return obj.open("" + "CRITICAL" + "-" + metroImportAll, { text: "Something went wrong", variant: "critical" });
     }
   },
   {
-    label: "Success \u2014 checkmark bitmap",
+    label: "Default \u2014 information icon",
     onPress() {
-      const tmp = ToastActionCreatorsDefault;
-      const obj = { key: "" + "SUCCESS_BITMAP" + "-" + metroImportAll, content: "Saved", icon: AssetRegistryDefault };
       metroImportAll = metroImportAll + 1;
-      const open = tmp.open;
-      return open(obj);
+      const open = ToastActionCreatorsDefault.open;
+      const obj = { text, icon: CircleInformationIcon.CircleInformationIcon };
+      ToastActionCreatorsDefault;
+      const combined = "" + "INFO_ICON" + "-" + metroImportAll;
+      return open(combined, obj);
     }
   },
   {
-    label: "Critical \u2014 yellow alert bitmap",
+    label: "Default \u2014 copy icon",
     onPress() {
-      const tmp = ToastActionCreatorsDefault;
-      const obj = { key: "" + "ERROR_BITMAP" + "-" + metroImportAll, content: "Something went wrong", icon: AssetRegistryDefault2 };
       metroImportAll = metroImportAll + 1;
-      const open = tmp.open;
-      return open(obj);
-    }
-  },
-  {
-    label: "Default \u2014 information bitmap",
-    onPress() {
-      const tmp = ToastActionCreatorsDefault;
-      const obj = { key: "" + "INFO_BITMAP" + "-" + metroImportAll, content: Thisisatoastmessage, icon: AssetRegistryDefault3 };
-      metroImportAll = metroImportAll + 1;
-      const open = tmp.open;
-      return open(obj);
-    }
-  },
-  {
-    label: "Default \u2014 icon passthrough",
-    onPress() {
-      const tmp = ToastActionCreatorsDefault;
-      const obj = { key: "" + "PASSTHROUGH" + "-" + metroImportAll, content: "Copied", IconComponent: CopyIcon.CopyIcon };
-      metroImportAll = metroImportAll + 1;
-      const open = tmp.open;
-      return open(obj);
+      const open = ToastActionCreatorsDefault.open;
+      const obj = { text: "Copied", icon: CopyIcon.CopyIcon };
+      ToastActionCreatorsDefault;
+      const combined = "" + "COPY_ICON" + "-" + metroImportAll;
+      return open(combined, obj);
     }
   },
   {
     label: "Default \u2014 no icon",
     onPress() {
-      const obj = { key: "" + "NO_ICON" + "-" + metroImportAll, content: Thisisatoastmessage };
       metroImportAll = metroImportAll + 1;
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      return open(obj);
+      const obj = ToastActionCreatorsDefault;
+      const obj2 = { text };
+      return obj.open("" + "NO_ICON" + "-" + metroImportAll, obj2);
     }
   },
   {
     label: "Long text",
     onPress() {
-      const obj = { key: "" + "LONG" + "-" + metroImportAll, content: "This is a much longer toast message that should wrap onto several lines and then clamp, so the container has to make room for it." };
       metroImportAll = metroImportAll + 1;
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      return open(obj);
+      const obj = ToastActionCreatorsDefault;
+      return obj.open("" + "LONG" + "-" + metroImportAll, { text: "This is a much longer toast message that should wrap onto several lines and then clamp, so the container has to make room for it." });
     }
   }
 ];
 let obj4 = {
   label: "Queue three",
   onPress() {
-    let sum1;
-    let sum2;
-    const obj = { key: "" + "QUEUE" + "-" + metroImportAll, content: "First of three" };
     metroImportAll = metroImportAll + 1;
-    const open = ToastActionCreatorsDefault.open;
-    ToastActionCreatorsDefault;
-    open(obj);
-    const obj2 = { key: "" + "QUEUE" + "-" + sum1, content: "Second of three" };
-    sum1 = metroImportAll + 1;
+    const obj = ToastActionCreatorsDefault;
+    obj.open("" + "QUEUE" + "-" + metroImportAll, { text: "First of three" });
+    const sum1 = metroImportAll + 1;
     metroImportAll = sum1;
-    const open2 = ToastActionCreatorsDefault.open;
-    ToastActionCreatorsDefault;
-    open2(obj2);
-    const obj3 = { key: "" + "QUEUE" + "-" + sum2, content: "Third of three" };
-    sum2 = metroImportAll + 1;
+    const obj2 = ToastActionCreatorsDefault;
+    obj2.open("" + "QUEUE" + "-" + sum1, { text: "Second of three" });
+    const sum2 = metroImportAll + 1;
     metroImportAll = sum2;
-    const open3 = ToastActionCreatorsDefault.open;
-    ToastActionCreatorsDefault;
-    open3(obj3);
+    const obj3 = ToastActionCreatorsDefault;
+    obj3.open("" + "QUEUE" + "-" + sum2, { text: "Third of three" });
   }
 };
 let items1 = [
@@ -392,7 +354,7 @@ let items1 = [
       let num = 0;
       do {
         let obj = ToastActionCreatorsDefault;
-        let openResult = obj.open({ key: "DEDUPE_DEMO", content: "Should only appear once" });
+        let openResult = obj.open("DEDUPE_DEMO", { text: "Should only appear once" });
         num = num + 1;
       } while (num < 3);
     }
@@ -408,11 +370,10 @@ let items1 = [
 let obj5 = {
   label: "Bottom position",
   onPress() {
-    const obj = { key: "" + "BOTTOM" + "-" + metroImportAll, content: Thisisatoastmessage, position: "bottom" };
     metroImportAll = metroImportAll + 1;
-    const open = ToastActionCreatorsDefault.open;
-    ToastActionCreatorsDefault;
-    return open(obj);
+    const obj = ToastActionCreatorsDefault;
+    const obj2 = { text, position: "bottom" };
+    return obj.open("" + "BOTTOM" + "-" + metroImportAll, obj2);
   }
 };
 const items2 = [
@@ -420,11 +381,10 @@ const items2 = [
   {
     label: "Ten second duration",
     onPress() {
-      const obj = { key: "" + "DURATION" + "-" + metroImportAll, content: Thisisatoastmessage, toastDurationMs: 10000 };
       metroImportAll = metroImportAll + 1;
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      return open(obj);
+      const obj = ToastActionCreatorsDefault;
+      const obj2 = { text, duration: 10000 };
+      return obj.open("" + "DURATION" + "-" + metroImportAll, obj2);
     }
   }
 ];
@@ -464,7 +424,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp6 = closure_9();
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp13 = React3(closure_11, {});
-    const obj2 = { title: "Automatic mapping", hint: "These use the older toast props and are converted to Mana toasts. Checkmarks and Xs become status variants whether the call site passes a component or a bitmap.", demos: items };
+    const obj2 = { title: "Variants and icons", hint: "Status toasts use the success and critical variants. Other toasts can show an icon.", demos: items };
     const tmp16 = React3(closure_10, obj2);
     const obj3 = { title: "Queueing", hint: "Toasts queue, but repeats of the key on screen are dropped.", demos: items1 };
     const tmp18 = React3(closure_10, obj3);
@@ -486,17 +446,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp29 = React3(Text_Text.Text, { variant: "text-lg/bold", children: "Components" });
-    const obj5 = { text: Thisisatoastmessage, variant: "default" };
+    const obj5 = { text, variant: "default" };
     const tmp31 = React3(Toast4.Toast, obj5);
-    const obj6 = { text: Thisisatoastmessage, variant: "default", icon: CircleInformationIcon.CircleInformationIcon };
-    const Toast = tmp(14200).Toast;
+    const obj6 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon };
+    const Toast = tmp(14255).Toast;
     const tmp32 = React3(Toast, obj6);
-    const obj7 = { text: Thisisatoastmessage, variant: "default", icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_BRAND, secondaryIconColor: nativeDefault.colors.ICON_DEFAULT };
-    const Toast2 = tmp(14200).Toast;
+    const obj7 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_BRAND, secondaryIconColor: nativeDefault.colors.ICON_DEFAULT };
+    const Toast2 = tmp(14255).Toast;
     const tmp34 = React3(Toast2, obj7);
-    const obj8 = { text: Thisisatoastmessage, variant: "success" };
+    const obj8 = { text, variant: "success" };
     const tmp35 = React3(Toast4.Toast, obj8);
-    const obj9 = { text: Thisisatoastmessage, variant: "critical" };
+    const obj9 = { text, variant: "critical" };
     const tmp36 = React3(Toast4.Toast, obj9);
     const tmp37 = React3(Text_Text.Text, { variant: "text-lg/bold", children: "Entities" });
     cResult[5] = tmp36;
@@ -524,7 +484,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     let obj11;
-    const Toast3 = tmp(14200).Toast;
+    const Toast3 = tmp(14255).Toast;
     const tmp39 = React3;
     if ("" !== first) {
       obj11 = { type: "emoji", src: first, alt: "\u{1F525}" };
@@ -567,12 +527,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[16] !== tmp6.previews) {
     const obj18 = { spacing: nativeDefault.space.PX_16, children: items };
-    const Stack = tmp(5374).Stack;
+    const Stack = tmp(5377).Stack;
     items = [tmp7, tmp8, tmp9, tmp10, ];
     const obj19 = { children: hasOwnProperty(Stack2, obj20) };
-    const Card = tmp(6188).Card;
+    const Card = tmp(6181).Card;
     obj20 = { spacing: nativeDefault.space.PX_12, style: tmp6.previews, children: items1 };
-    Stack2 = tmp(5374).Stack;
+    Stack2 = tmp(5377).Stack;
     items1 = [tmp23, tmp24, tmp25, tmp26, tmp27, tmp21, tmp22, tmp38, tmp41, tmp45, tmp49];
     items[4] = React3(Card, obj19);
     const tmp56 = hasOwnProperty(Stack, obj18);
@@ -607,7 +567,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   obj3 = { spacing: nativeDefault.space.PX_16, children: items };
   Stack = Stack_Stack.Stack;
   items = [React3(closure_11, {}), , , , ];
-  const obj4 = { title: "Automatic mapping", hint: "These use the older toast props and are converted to Mana toasts. Checkmarks and Xs become status variants whether the call site passes a component or a bitmap.", demos: items };
+  const obj4 = { title: "Variants and icons", hint: "Status toasts use the success and critical variants. Other toasts can show an icon.", demos: items };
   items[1] = React3(closure_10, obj4);
   const obj5 = { title: "Queueing", hint: "Toasts queue, but repeats of the key on screen are dropped.", demos: items1 };
   items[2] = React3(closure_10, obj5);
@@ -617,17 +577,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const obj7 = { spacing: nativeDefault.space.PX_12, style: tmp4.previews, children: items1 };
   const Stack2 = Stack_Stack.Stack;
   items1 = [React3(Text_Text.Text, { variant: "text-lg/bold", children: "Components" }), , , , , , , , , , ];
-  const obj8 = { text: Thisisatoastmessage, variant: "default" };
+  const obj8 = { text, variant: "default" };
   items1[1] = React3(Toast4.Toast, obj8);
-  const obj9 = { text: Thisisatoastmessage, variant: "default", icon: CircleInformationIcon.CircleInformationIcon };
+  const obj9 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon };
   const Toast = Toast4.Toast;
   items1[2] = React3(Toast, obj9);
-  const obj10 = { text: Thisisatoastmessage, variant: "default", icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_BRAND, secondaryIconColor: nativeDefault.colors.ICON_DEFAULT };
+  const obj10 = { text, variant: "default", icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_BRAND, secondaryIconColor: nativeDefault.colors.ICON_DEFAULT };
   const Toast2 = Toast4.Toast;
   items1[3] = React3(Toast2, obj10);
-  const obj11 = { text: Thisisatoastmessage, variant: "success" };
+  const obj11 = { text, variant: "success" };
   items1[4] = React3(Toast4.Toast, obj11);
-  const obj12 = { text: Thisisatoastmessage, variant: "critical" };
+  const obj12 = { text, variant: "critical" };
   items1[5] = React3(Toast4.Toast, obj12);
   items1[6] = React3(Text_Text.Text, { variant: "text-lg/bold", children: "Entities" });
   const Toast3 = Toast4.Toast;

@@ -1,10 +1,10 @@
-// Module ID: 6204
-// Function ID: 6205
+// Module ID: 6199
+// Function ID: 6200
 // Name: ChangeEmailStore
 // Dependencies: [570, 1272, 558, 576, 2]
 // Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken
 
-// Module 6204 (ChangeEmailStore)
+// Module 6199 (ChangeEmailStore)
 import react_native from "react-native" /* 1272 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f92771 = () => state.setState((errors) => {
+const f93036 = () => state.setState((errors) => {
   let obj2;
   const obj = { errors: obj2 };
   obj2 = {};
@@ -50,7 +50,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangeEma
     const fn2 = function l(arg0) {
       let closure_1 = arg0;
       const obj = react_native;
-      obj.batchUpdates(f92771);
+      obj.batchUpdates(f93036);
     };
     cResult[2] = arg0;
     cResult[3] = fn2;
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangeEma
       let state;
       let closure_1 = arg0;
       let obj = react_native;
-      obj.batchUpdates(f92771);
+      obj.batchUpdates(f93036);
     }
   ];
   return items;
@@ -97,7 +97,7 @@ function setChangeEmailError(arg0, arg1) {
   _require = arg0;
   dependencyMap = arg1;
   const obj = require("react-native");
-  obj.batchUpdates(f92771);
+  obj.batchUpdates(f93036);
 }
 const result = size.fileFinishedImporting("modules/verification/ChangeEmailStore.tsx");
 

@@ -1,18 +1,18 @@
-// Module ID: 15429
-// Function ID: 15430
+// Module ID: 15491
+// Function ID: 15492
 // Name: NavigateForwardButton
-// Dependencies: [19, 21, 5091, 587, 558, 576, 5087, 1200, 15430, 6191, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 5088, 1200, 15492, 6184, 2]
 
-// Module 15429 (NavigateForwardButton)
+// Module 15491 (NavigateForwardButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Pressables from "Pressables" /* 6191 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15430 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6184 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15492 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

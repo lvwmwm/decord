@@ -1,9 +1,9 @@
-// Module ID: 13754
-// Function ID: 13755
+// Module ID: 13806
+// Function ID: 13807
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2128, 1390, 1085, 7145, 1392, 21, 5091, 587, 4776, 1126, 1901, 558, 576, 504, 4728, 5087, 6163, 13755, 13756, 9394, 5376, 5388, 1105, 2]
+// Dependencies: [19, 17, 2129, 1390, 1085, 7151, 1392, 21, 5092, 587, 6195, 1126, 1901, 558, 576, 504, 4769, 5088, 6156, 13807, 13808, 9423, 5379, 5391, 1105, 2]
 
-// Module 13754 (PremiumSubscriptionUpsell)
+// Module 13806 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,22 +11,22 @@ import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl5 from "intl" /* 1126 */;
 import NumberUtils from "NumberUtils" /* 1901 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4776 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import LinearGradientDefault from "LinearGradient" /* 5388 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import ColorConstants from "ColorConstants" /* 7145 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9394 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13755 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13756 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6195 */;
+import ColorConstants from "ColorConstants" /* 7151 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9423 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13807 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13808 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
 import UserStore from "UserStore" /* 1390 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -263,18 +263,18 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
       if (tmp9Result6.isPremium(stateFromStores)) {
         const obj11 = { children: items3 };
         const obj13 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl5.t.YYfHlx) };
-        const Text2 = tmp(5087).Text;
+        const Text2 = tmp(5088).Text;
         intl2 = tmp(1126).intl;
         items3 = [React4(Text2, obj13), ];
         const obj14 = { style: tmp4.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: intl3.format(intl5.t.Af0zEZ, obj15) };
-        const Text3 = tmp(5087).Text;
+        const Text3 = tmp(5088).Text;
         intl3 = tmp(1126).intl;
         obj15 = { numFreeGuildSubscriptions: metroImportDefault };
         items3[1] = React4(Text3, obj14);
         tmp14 = unpackModuleId(authStore, obj11);
       } else {
         const obj16 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl5.t["qUl+K4"]) };
-        const Text = tmp(5087).Text;
+        const Text = tmp(5088).Text;
         intl = tmp(1126).intl;
         tmp14 = React4(Text, obj16);
       }
@@ -324,18 +324,18 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
     if (tmp5Result5.isPremium(stateFromStores)) {
       const obj5 = { children: items2 };
       const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl5.t.YYfHlx) };
-      const Text2 = tmp2(5087).Text;
+      const Text2 = tmp2(5088).Text;
       intl2 = tmp2(1126).intl;
       items2 = [React4(Text2, obj6), ];
       const obj7 = { style: tmp.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: intl3.format(intl5.t.Af0zEZ, obj8) };
-      const Text3 = tmp2(5087).Text;
+      const Text3 = tmp2(5088).Text;
       intl3 = tmp2(1126).intl;
       obj8 = { numFreeGuildSubscriptions: metroImportDefault };
       items2[1] = React4(Text3, obj7);
       tmp7Result1 = tmp9(authStore, obj5);
     } else {
       const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl5.t["qUl+K4"]) };
-      const Text = tmp2(5087).Text;
+      const Text = tmp2(5088).Text;
       intl = tmp2(1126).intl;
       tmp7Result1 = tmp7(Text, obj9);
     }
@@ -354,7 +354,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSub
     items3[1] = unpackModuleId(_false, obj10);
     const obj15 = { style: tmp.upsellButton, children: React4(Button, obj16) };
     obj16 = { variant: "experimental_premium-secondary", text: intl4.string(intl5.t.fJOECn), onPress: onLearnMorePremium };
-    Button = tmp2(5376).Button;
+    Button = tmp2(5379).Button;
     intl4 = tmp2(1126).intl;
     items3[2] = React4(_false, obj15);
     tmp7Result = tmp7(tmp8, obj3);

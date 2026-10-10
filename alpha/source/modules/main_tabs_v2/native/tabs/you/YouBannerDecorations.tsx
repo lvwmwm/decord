@@ -1,28 +1,28 @@
-// Module ID: 9099
-// Function ID: 9100
+// Module ID: 9119
+// Function ID: 9120
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2129, 1390, 2061, 1392, 21, 1383, 587, 5091, 558, 9100, 7165, 4899, 2049, 1126, 504, 8294, 8337, 8348, 4930, 683, 4728, 9138, 9144, 6941, 9145, 9146, 5982, 5055, 12946, 2000, 12952, 12551, 3827, 12955, 12957, 9016, 7085, 12954, 5388, 2]
+// Dependencies: [19, 17, 2130, 1390, 2062, 1392, 21, 1383, 587, 5092, 558, 9120, 7171, 4938, 2049, 1126, 504, 8310, 8353, 8364, 4969, 683, 4769, 9159, 9165, 6947, 9166, 9167, 5975, 5056, 12994, 2000, 12999, 12598, 3849, 13002, 13004, 9035, 7091, 13001, 5391, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 9099 (YouBannerDecorations)
+// Module 9119 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2129 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4899 */;
-import QuestTypes from "QuestTypes" /* 5982 */;
-import useTrialOffer from "useTrialOffer" /* 7165 */;
-import PromotionsHooks from "PromotionsHooks" /* 9100 */;
-import tracking_Tracking from "tracking/Tracking" /* 9145 */;
-import QuestUtils from "QuestUtils" /* 9146 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import useTrialOffer from "useTrialOffer" /* 7171 */;
+import PromotionsHooks from "PromotionsHooks" /* 9120 */;
+import tracking_Tracking from "tracking/Tracking" /* 9166 */;
+import QuestUtils from "QuestUtils" /* 9167 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17125
+// Function ID: 17126
 // Name: useConjurePreviewMenu
-// Dependencies: [19, 13164, 558, 576, 13296, 17058, 4767, 504, 13176, 17059, 1126, 3827, 2]
+// Dependencies: [19, 13213, 558, 576, 13346, 17126, 4808, 504, 13226, 17127, 1126, 3849, 2]
 
-// Module 17057 (useConjurePreviewMenu)
+// Module 17125 (useConjurePreviewMenu)
 import intl2 from "intl" /* 1126 */;
-import _modDef3827 from "module_3827" /* 3827 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 13176 */;
-import conjureProjectMenuItems from "conjureProjectMenuItems" /* 17059 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import conjureExternalConnections from "conjureExternalConnections" /* 13226 */;
+import conjureProjectMenuItems from "conjureProjectMenuItems" /* 17127 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -204,7 +204,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           const presentError = ToastUtils.presentError;
           ToastUtils;
           const intl = intl2.intl;
-          presentError(intl.string(_modDef3827["jCQ/1B"]));
+          presentError(intl.string(_modDef3849["jCQ/1B"]));
         }
       }
     } else {

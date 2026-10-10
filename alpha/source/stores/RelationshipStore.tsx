@@ -1,14 +1,14 @@
-// Module ID: 4719
-// Function ID: 4720
+// Module ID: 4760
+// Function ID: 4761
 // Name: RelationshipStore
-// Dependencies: [32, 4720, 1390, 1085, 584, 504, 2]
+// Dependencies: [32, 4761, 1390, 1085, 584, 504, 2]
 
-// Module 4719 (RelationshipStore)
+// Module 4760 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4720 */;
+import MessageRecord from "MessageRecord" /* 4761 */;
 import UserStore from "UserStore" /* 1390 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -109,10 +109,10 @@ let set1 = new Set();
 const set2 = new Set();
 let obj12 = {};
 let closure_14 = 0;
-const authStore4 = {};
+const authStore3 = {};
 let closure_16 = 0;
 let size = 0;
-let closure_19 = { friends: "color", blocked: "l", ignored: "ks", blockedOrIgnored: "find" };
+let closure_19 = { friends: "Array", blocked: "T", ignored: "y", blockedOrIgnored: "IconComponent" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;

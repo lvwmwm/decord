@@ -1,16 +1,16 @@
-// Module ID: 16545
-// Function ID: 16546
+// Module ID: 16615
+// Function ID: 16616
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2056, 1085, 2061, 570, 558, 576, 10279, 2049, 7093, 2]
+// Dependencies: [32, 19, 2057, 1085, 2062, 570, 558, 576, 10312, 2049, 7099, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 16545 (FavoritesGuildSuggestionsStore)
+// Module 16615 (FavoritesGuildSuggestionsStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2056 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2057 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -222,7 +222,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   if (hasAccess) {
     hasAccess = tmp4;
   }
-  const useSelectedDismissibleContent = tmp(7093).useSelectedDismissibleContent;
+  const useSelectedDismissibleContent = tmp(7099).useSelectedDismissibleContent;
   require("useSelectedDismissibleContent");
   if (hasAccess) {
     items = [tmp(2049).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];

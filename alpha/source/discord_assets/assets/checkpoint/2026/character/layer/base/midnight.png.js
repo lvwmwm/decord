@@ -1,8 +1,8 @@
-// Module ID: 5466
-// Function ID: 5467
+// Module ID: 5469
+// Function ID: 5470
 // Dependencies: [2]
 
-// Module 5466
+// Module 5469
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/base/midnight.png.js");

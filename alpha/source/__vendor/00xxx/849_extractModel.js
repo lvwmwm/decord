@@ -235,7 +235,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {

@@ -1,170 +1,274 @@
 // Module ID: 11214
 // Function ID: 11215
-// Dependencies: [32, 11167, 11166]
-// Exports: dsnToString, makeDsn
+// Dependencies: [11207, 11208, 11215, 11216, 11217]
+// Exports: dropUndefinedKeys, extractExceptionKeysForMessage, fill, getOriginalFunction, objectify, urlEncode
 
 // Module 11214
-import _mod11167 from "module_11167" /* 11167 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod11207 from "module_11207" /* 11207 */;
+import _mod11215 from "module_11215" /* 11215 */;
+import _mod11217 from "module_11217" /* 11217 */;
 
-function dsnFromString(arg0) {
-  let closure_0 = arg0;
-  const match = re3.exec(arg0);
-  if (match) {
-    const tmp5 = _slicedToArray(match.slice(1), 6);
-    let str = tmp5[1];
-    let str3 = "";
-    const first = tmp5[0];
-    if (undefined !== tmp5[2]) {
-      str3 = tmp7;
+let hasOwnProperty;
+
+function addNonEnumerableProperty(arg0, arg1, value) {
+  try {
+    const _Object = Object;
+    const obj = { value, writable: true, configurable: true };
+    Object.defineProperty(arg0, arg1, obj);
+  } catch (err) {
+    const tmp4 = require;
+    if (_mod11207.DEBUG_BUILD) {
+      const logger = tmp4(11208).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("Failed to add non-enumerable property \"" + arg1 + "\" to object", arg0);
     }
-    let str4 = "";
-    if (undefined !== tmp5[3]) {
-      str4 = tmp8;
-    }
-    let str5 = "";
-    if (undefined !== tmp5[4]) {
-      str5 = tmp9;
-    }
-    let str6 = "";
-    if (undefined !== tmp5[5]) {
-      str6 = tmp10;
-    }
-    const parts = str6.split("/");
-    let str8 = str6;
-    let str9 = "";
-    if (parts.length > 1) {
-      const substr = parts.slice(0, -1);
-      str9 = substr.join("/");
-      str8 = parts.pop();
-    }
-    let first1 = str8;
-    if (first1) {
-      const match1 = str8.match(/^\d+/);
-      first1 = str8;
-      if (match1) {
-        first1 = match1[0];
-      }
-    }
-    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
-    if (!str) {
-      str = "";
-    }
-    if (!str3) {
-      str3 = "";
-    }
-    if (!str5) {
-      str5 = "";
-    }
-    if (!str9) {
-      str9 = "";
-    }
-    return url;
-  } else {
-    const obj = _mod11167;
-    obj.consoleSandbox(() => {
-      console.error("Invalid Sentry Dsn: " + closure_0);
-    });
   }
 }
-const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
-
-export { dsnFromString };
-export const dsnToString = function dsnToString(arg0) {
-  let host;
-  let pass;
-  let path;
-  let port;
-  let projectId;
-  let protocol;
-  let publicKey;
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
+function markFunctionWrapped(arg0, arg1) {
+  try {
+    const prototype = arg1.prototype || {};
+    arg1.prototype = prototype;
+    arg0.prototype = prototype;
+    addNonEnumerableProperty(arg0, "__sentry_original__", arg1);
+  } catch (err) {
   }
-  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
-  let str = "";
-  if (flag) {
-    str = "";
-    if (pass) {
-      const _HermesInternal = HermesInternal;
-      str = ":" + pass;
-    }
-  }
-  let str3 = "";
-  if (port) {
-    const _HermesInternal2 = HermesInternal;
-    str3 = ":" + port;
-  }
-  let combined = path;
-  if (combined) {
-    const _HermesInternal3 = HermesInternal;
-    combined = "" + path + "/";
-  }
-  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
-};
-export const makeDsn = function makeDsn(protocol) {
-  let port;
-  let projectId;
-  let url;
-  if (typeof protocol === "string") {
-    url = dsnFromString(protocol);
-  } else {
-    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
-  }
-  if (url) {
-    let flag = true;
-    if (url(11166).DEBUG_BUILD) {
-      ({ port, projectId, protocol } = url);
-      const items = ["protocol", "publicKey", "host", "projectId"];
-      let found = items.find((item) => {
-        let flag = !url[item];
-        if (flag) {
-          const logger = _mod11167.logger;
-          const _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: " + item + " missing");
-          flag = true;
-        }
-        return flag;
-      });
-      if (!found) {
-        let num;
-        if (projectId.match(/^\d+$/)) {
-          let num2;
-          const tmp7 = "http" === protocol || "https" === protocol;
-          if (tmp7) {
-            let num3 = port;
-            if (num3) {
-              const _isNaN = isNaN;
-              const _parseInt = parseInt;
-              num3 = isNaN(parseInt(port, 10));
+}
+function convertToPlainObject(type) {
+  const obj = _mod11215;
+  if (obj.isError(type)) {
+    const error = { message: null, name: null, stack: null };
+    ({ message: obj6.message, name: obj6.name, stack: obj6.stack } = type);
+    if (typeof type === "object") {
+      let obj3;
+      if (null !== type) {
+        const obj2 = {};
+        obj3 = obj2;
+        const keys = Object.keys();
+        if (keys !== undefined) {
+          obj3 = obj2;
+          while (keys[tmp] !== undefined) {
+            let _Object2 = Object;
+            let hasOwnProperty2 = Object.prototype.hasOwnProperty;
+            if (!hasOwnProperty2.call(type, tmp17)) {
+              continue;
+            } else {
+              obj2[tmp17] = type[tmp17];
+              continue;
             }
-            if (num3) {
-              const logger3 = tmp2(11167).logger;
-              const _HermesInternal3 = HermesInternal;
-              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
-              num3 = 1;
-            }
-            num2 = num3;
-          } else {
-            const logger2 = tmp2(11167).logger;
-            const _HermesInternal2 = HermesInternal;
-            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
-            num2 = 1;
+            continue;
           }
-          num = num2;
-        } else {
-          let logger = tmp2(11167).logger;
-          let _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
-          num = 1;
         }
-        found = num;
       }
-      flag = !found;
+      const merged = Object.assign(obj3);
+      return error;
     }
-    if (flag) {
-      return url;
+    obj3 = {};
+  } else {
+    const tmp2Result = _mod11215;
+    if (tmp2Result.isEvent(type)) {
+      const obj4 = { type: type.type, target: serializeEventTarget(type.target), currentTarget: serializeEventTarget(type.currentTarget) };
+      if (typeof type === "object") {
+        let obj7;
+        if (null !== type) {
+          const obj5 = {};
+          obj7 = obj5;
+          const keys1 = Object.keys();
+          if (keys1 !== undefined) {
+            obj7 = obj5;
+            while (keys1[tmp] !== undefined) {
+              let _Object = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              if (!hasOwnProperty.call(type, tmp8)) {
+                continue;
+              } else {
+                obj5[tmp8] = type[tmp8];
+                continue;
+              }
+              continue;
+            }
+          }
+        }
+        const merged1 = Object.assign(obj7);
+        let isInstanceOfResult = typeof globalThis.CustomEvent !== "undefined";
+        if (typeof globalThis.CustomEvent !== "undefined") {
+          const CustomEvent2 = globalThis.CustomEvent;
+          const tmp2Result2 = _mod11215;
+          isInstanceOfResult = tmp2Result2.isInstanceOf(type, globalThis.CustomEvent);
+        }
+        if (isInstanceOfResult) {
+          obj4.detail = type.detail;
+        }
+        return obj4;
+      }
+      obj7 = {};
+    } else {
+      return type;
     }
   }
+}
+function serializeEventTarget(arg0) {
+  try {
+    let htmlTreeAsStringResult;
+    const obj = _mod11215;
+    const tmp2 = require;
+    if (obj.isElement(arg0)) {
+      const tmp2Result = tmp2(11216);
+      htmlTreeAsStringResult = tmp2Result.htmlTreeAsString(arg0);
+    } else {
+      const _Object = Object;
+      htmlTreeAsStringResult = toString.call(arg0);
+    }
+    return htmlTreeAsStringResult;
+  } catch (err) {
+    return "<unknown>";
+  }
+}
+function _dropUndefinedKeys(arr, map) {
+  function isPojo(arr) {
+    const obj = map(items[2]);
+    if (obj.isPlainObject(arr)) {
+      try {
+        const _Object = Object;
+        const name = Object.getPrototypeOf(arr).constructor.name;
+        return !name || "Object" === tmp2;
+      } catch (err) {
+        return true;
+      }
+    } else {
+      return false;
+    }
+  }
+  if (isPojo(arr)) {
+    const value = map.get(arr);
+    if (undefined !== value) {
+      return value;
+    } else {
+      let obj = {};
+      const result = map.set(arr, obj);
+      let _Object = Object;
+      const ownPropertyNames = Object.getOwnPropertyNames(arr);
+      for (const item10030 of ownPropertyNames) {
+        let tmp11 = item10030;
+        if (undefined !== arr[item10030]) {
+          obj[tmp11] = _dropUndefinedKeys(arr[tmp11], map);
+        }
+        continue;
+      }
+      return obj;
+    }
+  } else {
+    const _Array = Array;
+    if (Array.isArray(arr)) {
+      const value2 = map.get(arr);
+      if (undefined !== value2) {
+        return value2;
+      } else {
+        const items = [];
+        const result1 = map.set(arr, items);
+        const item = arr.forEach((item) => {
+          items.push(_dropUndefinedKeys(item, map));
+        });
+        return items;
+      }
+    } else {
+      return arr;
+    }
+  }
+}
+
+export { addNonEnumerableProperty };
+export { convertToPlainObject };
+export const dropUndefinedKeys = function dropUndefinedKeys(arr) {
+  map = new Map();
+  return _dropUndefinedKeys(arr, map);
+};
+export const extractExceptionKeysForMessage = function extractExceptionKeysForMessage(arg0) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 40;
+  }
+  const keys = Object.keys(convertToPlainObject(arg0));
+  const sorted = keys.sort();
+  const first = keys[0];
+  if (first) {
+    if (first.length >= num) {
+      const obj3 = _mod11217;
+      return obj3.truncate(first, num);
+    } else {
+      let length = keys.length;
+      if (length > 0) {
+        const substr = keys.slice(0, length);
+        const joined = substr.join(", ");
+        while (joined.length > num) {
+          length = length - 1;
+        }
+        let truncateResult = joined;
+        if (length !== keys.length) {
+          const obj2 = _mod11217;
+          truncateResult = obj2.truncate(joined, num);
+        }
+        return truncateResult;
+      }
+      return "";
+    }
+  } else {
+    return "[object has no keys]";
+  }
+};
+export const fill = function fill(arg0, arg1, fn) {
+  if (arg1 in arg0) {
+    const tmp3 = fn(arg0[arg1]);
+    if (typeof tmp3 === "function") {
+      markFunctionWrapped(tmp3, arg0[arg1]);
+    }
+    try {
+      arg0[arg1] = tmp3;
+    } catch (err) {
+      const tmp4 = require;
+      if (_mod11207.DEBUG_BUILD) {
+        const logger = tmp4(11208).logger;
+        const _HermesInternal = HermesInternal;
+        logger.log("Failed to replace method \"" + arg1 + "\" in object", arg0);
+      }
+    }
+  }
+};
+export const getOriginalFunction = function getOriginalFunction(__sentry_original__) {
+  return __sentry_original__.__sentry_original__;
+};
+export { markFunctionWrapped };
+export const objectify = function objectify(arg0) {
+  let string;
+  if (null == arg0 === true) {
+    const _String = String;
+    const self3 = this;
+    const self4 = this;
+    string = new String(arg0);
+  } else {
+    const tmp = typeof arg0 === "symbol" || typeof arg0 === "bigint";
+    if (tmp === true) {
+      const _Object = Object;
+      string = Object(arg0);
+    } else {
+      string = arg0;
+      const obj = _mod11215;
+      if (obj.isPrimitive(arg0) === true) {
+        const self = this;
+        const self2 = this;
+        string = new arg0.constructor(arg0);
+      }
+    }
+  }
+  return string;
+};
+export const urlEncode = function urlEncode(arg0) {
+  const entries = Object.entries(arg0);
+  const mapped = entries.map((item) => {
+    let tmp;
+    let tmp2;
+    [tmp, tmp2] = item;
+    const encodeURIComponentResult = encodeURIComponent(tmp);
+    return "" + encodeURIComponentResult + "=" + encodeURIComponent(tmp2);
+  });
+  return mapped.join("&");
 };

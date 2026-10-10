@@ -1,11 +1,11 @@
-// Module ID: 2105
-// Function ID: 2106
+// Module ID: 2106
+// Function ID: 2107
 // Name: MessageDao
-// Dependencies: [2095, 2097, 2]
+// Dependencies: [2096, 2098, 2]
 
-// Module 2105 (MessageDao)
-import Table from "Table" /* 2095 */;
-import TableId from "TableId" /* 2097 */;
+// Module 2106 (MessageDao)
+import Table from "Table" /* 2096 */;
+import TableId from "TableId" /* 2098 */;
 import size from "module_2" /* 2 */;
 
 class MessageDao {

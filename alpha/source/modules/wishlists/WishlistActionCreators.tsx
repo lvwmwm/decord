@@ -1,18 +1,18 @@
-// Module ID: 8968
-// Function ID: 8969
+// Module ID: 8987
+// Function ID: 8988
 // Name: WishlistActionCreators
-// Dependencies: [5, 7314, 1390, 4730, 6925, 8962, 1085, 1383, 1388, 584, 6929, 1295, 8967, 1255, 5632, 1265, 8289, 2]
+// Dependencies: [5, 7320, 1390, 4771, 6931, 8981, 1085, 1383, 1388, 584, 6935, 1295, 8986, 1255, 5635, 1265, 8305, 2]
 
-// Module 8968 (WishlistActionCreators)
+// Module 8987 (WishlistActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import WishlistRecord2 from "WishlistRecord" /* 8962 */;
+import WishlistRecord2 from "WishlistRecord" /* 8981 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserProfileStore from "UserProfileStore" /* 7314 */;
+import UserProfileStore from "UserProfileStore" /* 7320 */;
 import UserStore from "UserStore" /* 1390 */;
-import BillingInfoStore from "BillingInfoStore" /* 4730 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6925 */;
+import BillingInfoStore from "BillingInfoStore" /* 4771 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6931 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,8 @@ let c10;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const StorefrontUtils = tmp(6929);
-const f99654 = (id) => id.id;
+const StorefrontUtils = tmp(6935);
+const f99917 = (id) => id.id;
 function extraWishlistParams() {
   const obj = {};
   if (null != BillingInfoStore.ipCountryCode) {
@@ -52,7 +52,7 @@ function maybeDispatchAdditionalActions(wishlist_items) {
   const storefront_pricing = wishlist_items.storefront_pricing;
   if (null != storefront_pricing) {
     const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: tmpResult.transformStorefrontPricesServer(storefront_pricing) };
-    obj3 = { type: "skus", skuIds: found.map(f99654) };
+    obj3 = { type: "skus", skuIds: found.map(f99917) };
     const dispatch = tmp3(584).dispatch;
     DispatcherDefault;
     tmpResult = StorefrontUtils;
@@ -80,7 +80,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -159,7 +159,7 @@ let obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp48) {
           closure_3 = tmp48;
@@ -191,7 +191,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -279,7 +279,7 @@ let obj = {
                 c3 = 0;
               }
               currentUser = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
             c3 = 0;
             if (null != sku_id) {
@@ -330,7 +330,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -407,7 +407,7 @@ let obj = {
             }
             c3 = 0;
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp22) {
           sku_ids = tmp22;
@@ -441,7 +441,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -525,7 +525,7 @@ let obj = {
             c3 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp29) {
           closure_4 = tmp29;
           if (0 === c3) {
@@ -558,7 +558,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -639,7 +639,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp37) {
           sku_ids = tmp37;
@@ -678,7 +678,7 @@ let obj = {
         ({ storefront_pricing, skus: skus2 } = body);
         if (null != storefront_pricing) {
           const obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj3, data: obj4.transformStorefrontPricesServer(storefront_pricing) };
-          obj3 = { type: "skus", skuIds: skus2.map(f99654) };
+          obj3 = { type: "skus", skuIds: skus2.map(f99917) };
           const dispatch = tmp(closure_1_2[9]).dispatch;
           closure_1_1(closure_1_2[9]);
           obj4 = closure_1_0(closure_1_2[10]);
@@ -695,7 +695,7 @@ let obj = {
           let obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -755,7 +755,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

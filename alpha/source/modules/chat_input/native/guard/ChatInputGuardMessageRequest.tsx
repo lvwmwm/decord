@@ -1,11 +1,11 @@
-// Module ID: 12114
-// Function ID: 12115
+// Module ID: 12158
+// Function ID: 12159
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1390, 21, 558, 576, 1503, 12115, 504, 4768, 1126, 5008, 12116, 5102, 12122, 2]
+// Dependencies: [5, 19, 1390, 21, 558, 576, 1503, 12159, 504, 4809, 1126, 12160, 5103, 12166, 2]
 
-// Module 12114 (ChatInputGuardMessageRequest)
+// Module 12158 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12122 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12166 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -57,11 +57,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     function handleRequestError() {
       let intl;
-      const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(acceptMessageRequest[10]).t["EDYbS+"]), icon: navigation(acceptMessageRequest[11]) };
+      const obj = { text: intl.string(channel(acceptMessageRequest[10]).t["EDYbS+"]), variant: "critical" };
       const open = navigation(acceptMessageRequest[9]).open;
       navigation(acceptMessageRequest[9]);
       intl = channel(acceptMessageRequest[10]).intl;
-      open(obj);
+      open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
     }
     cResult[3] = handleRequestError;
     tmp10 = handleRequestError;
@@ -83,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[7] === stateFromStores) {
       tmp12 = cResult[8];
     }
-    const tmpResult2 = tmp(tmp2[12]);
+    const tmpResult2 = tmp(tmp2[11]);
     const messageRequestActions = tmpResult2.useMessageRequestActions(tmp12);
     acceptMessageRequest = messageRequestActions.acceptMessageRequest;
     const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
@@ -168,7 +168,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
         }
-        const tmp30 = jsx(navigation(tmp2[14]), { type: "button-action", message: tmp19, subtext: tmp21, buttonPrimaryText: tmp23, buttonPrimaryOnPress: tmp15, buttonPrimaryDisabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, buttonPrimaryLoading: isAcceptLoading, buttonSecondaryText: tmp25, buttonSecondaryOnPress: tmp17, buttonSecondaryDisabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, buttonSecondaryLoading: isRejectLoading });
+        const tmp30 = jsx(navigation(tmp2[13]), { type: "button-action", message: tmp19, subtext: tmp21, buttonPrimaryText: tmp23, buttonPrimaryOnPress: tmp15, buttonPrimaryDisabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, buttonPrimaryLoading: isAcceptLoading, buttonSecondaryText: tmp25, buttonSecondaryOnPress: tmp17, buttonSecondaryDisabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, buttonSecondaryLoading: isRejectLoading });
         cResult[21] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
         cResult[22] = tmp15;
         cResult[23] = tmp17;
@@ -191,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -220,7 +220,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               return obj;
             } else {
               c1 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp8) {
             c1 = 3;
@@ -249,7 +249,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -278,10 +278,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            const obj = closure_0(acceptMessageRequest[13]);
+            const obj = closure_0(acceptMessageRequest[12]);
             obj.transitionToChannel(closure_0.id, { navigationReplace: true });
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -334,7 +334,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -363,10 +363,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            obj = id(c2[13]);
+            obj = id(c2[12]);
             obj.transitionToChannel(closure_129_0.id, { navigationReplace: true });
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -390,7 +390,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -419,7 +419,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return obj;
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -433,21 +433,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp2 = dependencyMap;
   obj = channel(1503);
   importDefault = obj.useNavigation();
-  let obj2 = channel(12115);
+  let obj2 = channel(12159);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(12116);
+  let obj4 = channel(12160);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
       let intl;
-      obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(c2[10]).t["EDYbS+"]), icon: closure_1(c2[11]) };
+      obj = { text: intl.string(channel(c2[10]).t["EDYbS+"]), variant: "critical" };
       const open = closure_1(c2[9]).open;
       closure_1(c2[9]);
       intl = channel(c2[10]).intl;
-      open(obj);
+      open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
     },
     onRejectSuccess: function handleRejectSuccess() {
       closure_1.pop();

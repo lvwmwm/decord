@@ -1,10 +1,10 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12402
+// Function ID: 12403
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5758, 12357, 12356, 1085, 1383, 5945, 1273, 584, 12359, 2041, 1255, 558, 576, 504, 1403, 2127, 4765, 5941, 2]
+// Dependencies: [5, 17, 5761, 12401, 12400, 1085, 1383, 5938, 1273, 584, 12403, 2041, 1255, 558, 576, 504, 1403, 2128, 4806, 5934, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 12358 (ContactSyncUtils)
+// Module 12402 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
@@ -12,15 +12,15 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 127
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import LinkingDefault from "Linking" /* 4765 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
-import ContactSyncManager from "ContactSyncManager" /* 12359 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
+import ContactSyncManager from "ContactSyncManager" /* 12403 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5758 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12357 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12356 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12401 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12400 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,6 @@ let unpackModuleId;
 const get_initialized = tmp(504);
 let obj = function _uploadContacts() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_3;
     let obj5;
     let obj6;
     let closure_0 = arg0;
@@ -53,10 +52,10 @@ let obj = function _uploadContacts() {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
+        const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -73,7 +72,7 @@ let obj = function _uploadContacts() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const friend_suggestions = tmp4;
+            let closure_3 = tmp4;
             friend_list_entries = tmp;
             flag = closure_1;
             if (closure_1 === undefined) {
@@ -100,7 +99,7 @@ let obj = function _uploadContacts() {
             obj5 = { friend_list_entries, background: flag, allowed_in_suggestions: closure_131_11.ANYONE_WITH_CONTACT_INFO, include_mutual_friends_count: false };
             obj6 = { event: closure_131_0(closure_131_2[8]).NetworkActionNames.USER_CONTACTS_SYNC };
             const put = closure_131_1(closure_131_2[7]).put;
-            const tmp21 = closure_131_1(closure_131_2[7]);
+            const tmp22 = closure_131_1(closure_131_2[7]);
             c4 = 2;
             c5 = 1;
             const obj7 = { value: put(request), done: false };
@@ -115,19 +114,16 @@ let obj = function _uploadContacts() {
           return obj8;
         } else {
           body = value.body;
+          const obj9 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: body.friend_suggestions };
           obj = closure_131_1(closure_131_2[9]);
-          obj.wait(() => {
-            obj = closure_1(friend_list_entries[9]);
-            const obj2 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: friend_suggestions.friend_suggestions };
-            return obj.dispatch(obj2);
-          });
+          obj.dispatch(obj9);
           c5 = 3;
-          const obj9 = { value: body, done: true };
-          return obj9;
+          const obj10 = { value: body, done: true };
+          return obj10;
         }
-      } catch (tmp11) {
+      } catch (tmp12) {
         c5 = 3;
-        throw tmp11;
+        throw tmp12;
       }
     }
   });

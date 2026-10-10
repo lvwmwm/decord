@@ -1,197 +1,168 @@
 // Module ID: 6561
 // Function ID: 6562
-// Dependencies: [6544, 6545, 6532]
+// Dependencies: [6545, 6546, 6562]
 
 // Module 6561
-import ErrorMessages from "ErrorMessages" /* 6532 */;
-import _createClassDefault from "_createClass" /* 6545 */;
-import _classCallCheck from "_classCallCheck" /* 6544 */;
+import _createClassDefault from "_createClass" /* 6546 */;
+import _classCallCheck from "_classCallCheck" /* 6545 */;
 
-let size;
+let updateViewableItems;
 
-class ViewabilityHelper {
-  constructor(viewabilityConfig, viewableIndicesChanged) {
-    _classCallCheck(this, ViewabilityHelper);
-    this.possiblyViewableIndices = [];
+class ViewabilityManager {
+  constructor(rvManager) {
+    const self = this;
+    let closure_0 = rvManager;
+    let tmp = _classCallCheck(this, ViewabilityManager);
+    this.viewabilityHelpers = [];
     this.hasInteracted = false;
-    this.viewableIndices = [];
-    this.lastReportedViewableIndices = [];
-    this.timers = new Set();
-    this.viewabilityConfig = viewabilityConfig;
-    this.viewableIndicesChanged = viewableIndicesChanged;
-    new Set();
+    this.dispose = () => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      const item = viewabilityHelpers.forEach((dispose) => dispose.dispose());
+    };
+    this.onVisibleIndicesChanged = (arg0) => {
+      self.updateViewableItems(arg0);
+    };
+    this.recordInteraction = () => {
+      if (!self.hasInteracted) {
+        self.hasInteracted = true;
+        const viewabilityHelpers = obj.viewabilityHelpers;
+        const item = viewabilityHelpers.forEach((item) => {
+          item.hasInteracted = true;
+        });
+        self.updateViewableItems();
+      }
+    };
+    this.updateViewableItems = (arg0) => {
+      let windowSize;
+      closure_0 = arg0;
+      let rvManager = windowSize.rvManager;
+      windowSize = rvManager.getWindowSize();
+      if (undefined !== windowSize) {
+        if (windowSize.shouldListenToVisibleIndices) {
+          const rvManager2 = tmp.rvManager;
+          let num = rvManager2.getAbsoluteLastScrollOffset();
+          if (num == null) {
+            num = 0;
+          }
+          let closure_2 = num - tmp.rvManager.firstItemOffset;
+          const bottomViewabilityInsetRef = tmp.rvManager.props.bottomViewabilityInsetRef;
+          let num2;
+          if (bottomViewabilityInsetRef != null) {
+            num2 = bottomViewabilityInsetRef.current;
+          }
+          if (num2 == null) {
+            num2 = 0;
+          }
+          const viewabilityHelpers = tmp.viewabilityHelpers;
+          const item = viewabilityHelpers.forEach((updateViewableItems) => {
+            let flag = self.rvManager.props.horizontal;
+            updateViewableItems = updateViewableItems.updateViewableItems;
+            if (flag == null) {
+              flag = false;
+            }
+            updateViewableItems(flag, closure_2, num2, windowSize, (arg0) => {
+              rvManager = rvManager.rvManager;
+              return rvManager.getLayout(arg0);
+            }, closure_0);
+          });
+        }
+      }
+    };
+    this.clearLastReportedViewableIndices = () => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      const item = viewabilityHelpers.forEach((clearLastReportedViewableIndices) => clearLastReportedViewableIndices.clearLastReportedViewableIndices());
+    };
+    this.createViewabilityHelper = (arg0, arg1) => {
+      closure_0 = arg1;
+      const tmp = new closure_0(self[2])(arg0, (arr, arr2, arr3) => {
+        let items;
+        if (closure_0 != null) {
+          let obj = {
+            viewableItems: arr.map((item) => {
+                if (undefined !== closure_1_1.rvManager.props.data[item]) {
+                  let keyExtractorResult;
+                  if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                    const props = tmp.rvManager.props;
+                    keyExtractorResult = props.keyExtractor(tmp2, item);
+                  }
+                  const _Date = Date;
+                  const obj = { index: item, isViewable: true, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+                  return obj;
+                }
+                keyExtractorResult = item.toString();
+              }),
+            changed: items
+          };
+          items = [];
+          const arraySpreadResult = HermesBuiltin.arraySpread(items, arr2.map((item) => {
+            if (undefined !== closure_1_1.rvManager.props.data[item]) {
+              let keyExtractorResult;
+              if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                const props = tmp.rvManager.props;
+                keyExtractorResult = props.keyExtractor(tmp2, item);
+              }
+              const _Date = Date;
+              const obj = { index: item, isViewable: true, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+              return obj;
+            }
+            keyExtractorResult = item.toString();
+          }), 0);
+          HermesBuiltin.arraySpread(items, arr3.map((item) => {
+            if (undefined !== closure_1_1.rvManager.props.data[item]) {
+              let keyExtractorResult;
+              if (undefined !== closure_1_1.rvManager.props.keyExtractor) {
+                const props = tmp.rvManager.props;
+                keyExtractorResult = props.keyExtractor(tmp2, item);
+              }
+              const _Date = Date;
+              const obj = { index: item, isViewable: false, item: closure_1_1.rvManager.props.data[item], key: keyExtractorResult, timestamp: Date.now() };
+              return obj;
+            }
+            keyExtractorResult = item.toString();
+          }), arraySpreadResult);
+          tmp2(obj);
+        }
+      });
+      return tmp;
+    };
+    this.rvManager = rvManager;
+    const tmp2 = null !== rvManager.props.onViewableItemsChanged && undefined !== rvManager.props.onViewableItemsChanged;
+    if (tmp2) {
+      let viewabilityHelpers = self.viewabilityHelpers;
+      viewabilityHelpers.push(self.createViewabilityHelper(rvManager.props.viewabilityConfig, (arg0) => {
+        const props = closure_0.props;
+        const onViewableItemsChanged = props.onViewableItemsChanged;
+        if (onViewableItemsChanged != null) {
+          const result = onViewableItemsChanged(arg0);
+        }
+      }));
+    }
+    let prop = rvManager.props.viewabilityConfigCallbackPairs;
+    if (prop == null) {
+      prop = [];
+    }
+    let item = prop.forEach((viewabilityConfig, index) => {
+      const viewabilityHelpers = self.viewabilityHelpers;
+      viewabilityHelpers.push(self.createViewabilityHelper(viewabilityConfig.viewabilityConfig, (arg0) => {
+        let prop;
+        if (index.props.viewabilityConfigCallbackPairs != null) {
+          if (index.props.viewabilityConfigCallbackPairs[index] != null) {
+            prop = tmp3.onViewableItemsChanged;
+          }
+        }
+        if (prop != null) {
+          prop(arg0);
+        }
+      }));
+    });
   }
 }
-const entry = {
-  key: "dispose",
-  value: function dispose() {
-    const timers = this.timers;
-    const item = timers.forEach(clearTimeout);
+let obj = {
+  key: "shouldListenToVisibleIndices",
+  get() {
+    return this.viewabilityHelpers.length > 0;
   }
 };
-const items = [
-  entry,
-  {
-    key: "updateViewableItems",
-    value: function updateViewableItems(arg0, arg1, arg2, arg3, arg4, possiblyViewableIndices) {
-      const self = this;
-      let closure_1 = arg0;
-      let closure_2 = arg1;
-      let closure_3 = arg2;
-      let closure_4 = arg3;
-      let closure_5 = arg4;
-      if (undefined !== possiblyViewableIndices) {
-        self.possiblyViewableIndices = possiblyViewableIndices;
-      }
-      let viewabilityConfig = self.viewabilityConfig;
-      let prop;
-      if (viewabilityConfig != null) {
-        prop = viewabilityConfig.itemVisiblePercentThreshold;
-      }
-      if (null !== prop) {
-        let viewabilityConfig2 = self.viewabilityConfig;
-        let prop1;
-        if (viewabilityConfig2 != null) {
-          prop1 = viewabilityConfig2.itemVisiblePercentThreshold;
-        }
-        if (undefined !== prop1) {
-          const viewabilityConfig3 = self.viewabilityConfig;
-          let prop2;
-          if (viewabilityConfig3 != null) {
-            prop2 = viewabilityConfig3.viewAreaCoveragePercentThreshold;
-          }
-          if (null !== prop2) {
-            const viewabilityConfig4 = self.viewabilityConfig;
-            let prop3;
-            if (viewabilityConfig4 != null) {
-              prop3 = viewabilityConfig4.viewAreaCoveragePercentThreshold;
-            }
-            if (undefined !== prop3) {
-              const _Error = Error;
-              const self2 = this;
-              const self3 = this;
-              const error = new Error(ErrorMessages.ErrorMessages.multipleViewabilityThresholdTypesNotSupported);
-              throw error;
-            }
-          }
-        }
-      }
-      const viewabilityConfig5 = self.viewabilityConfig;
-      let waitForInteraction;
-      if (viewabilityConfig5 != null) {
-        waitForInteraction = viewabilityConfig5.waitForInteraction;
-      }
-      if (!waitForInteraction) {
-        const prop4 = self.possiblyViewableIndices;
-        const found = prop4.filter((item) => {
-          const viewabilityConfig = self.viewabilityConfig;
-          let prop;
-          const isItemViewable = self.isItemViewable;
-          const tmp = self;
-          const tmp2 = closure_1;
-          const tmp3 = closure_2;
-          const tmp4 = closure_3;
-          const tmp5 = closure_4;
-          if (viewabilityConfig != null) {
-            prop = viewabilityConfig.viewAreaCoveragePercentThreshold;
-          }
-          const viewabilityConfig2 = tmp.viewabilityConfig;
-          let prop1;
-          if (viewabilityConfig2 != null) {
-            prop1 = viewabilityConfig2.itemVisiblePercentThreshold;
-          }
-          return isItemViewable(item, tmp2, tmp3, tmp4, tmp5, prop, prop1, closure_5);
-        });
-        self.viewableIndices = found;
-        const viewabilityConfig6 = self.viewabilityConfig;
-        let num;
-        if (viewabilityConfig6 != null) {
-          num = viewabilityConfig6.minimumViewTime;
-        }
-        if (num == null) {
-          num = 250;
-        }
-        if (num > 0) {
-          const _setTimeout = setTimeout;
-          const timerId = setTimeout(() => {
-            const timers = self.timers;
-            timers.delete(timerId);
-            const result = self.checkViewableIndicesChanges(found);
-          }, num);
-          let timers = self.timers;
-          timers.add(timerId);
-        } else {
-          let result = self.checkViewableIndicesChanges(found);
-        }
-      }
-    }
-  },
-  {
-    key: "checkViewableIndicesChanges",
-    value: function checkViewableIndicesChanges(found) {
-      const self = this;
-      found = found.filter((item) => {
-        const viewableIndices = self.viewableIndices;
-        return viewableIndices.includes(item);
-      });
-      const found1 = found.filter((item) => {
-        const lastReportedViewableIndices = self.lastReportedViewableIndices;
-        return !lastReportedViewableIndices.includes(item);
-      });
-      const prop = this.lastReportedViewableIndices;
-      const found2 = prop.filter((item) => !found.includes(item));
-      const tmp = found1.length > 0 || found2.length > 0;
-      if (tmp) {
-        self.lastReportedViewableIndices = found;
-        const result = self.viewableIndicesChanged(found, found1, found2);
-      }
-    }
-  },
-  {
-    key: "clearLastReportedViewableIndices",
-    value: function clearLastReportedViewableIndices() {
-      this.lastReportedViewableIndices = [];
-    }
-  },
-  {
-    key: "isItemViewable",
-    value: function isItemViewable(item, arg1, arg2, arg3, width, prop, prop1, fn) {
-      size = fn(item);
-      if (undefined === size) {
-        return false;
-      } else {
-        const diff = (arg1 ? size.x : size.y) - arg2;
-        const tmp3 = arg1 ? size.width : size.height;
-        if (arg1) {
-          width = width.width;
-        } else {
-          width = width.height - arg3;
-        }
-        const _Math = Math;
-        const _Math2 = Math;
-        const bound = Math.min(diff + tmp3, width);
-        const diff1 = bound - Math.max(diff, 0);
-        if (diff1 === tmp3) {
-          return true;
-        } else if (0 === diff1) {
-          return false;
-        } else {
-          let result;
-          const tmp13 = null != prop ? diff1 / width : diff1 / tmp3;
-          if (null != prop) {
-            result = 0.01 * prop;
-          } else {
-            let num2 = prop1;
-            if (prop1 == null) {
-              num2 = 0;
-            }
-            result = 0.01 * num2;
-          }
-          return tmp13 >= result;
-        }
-      }
-    }
-  }
-];
+let items = [obj];
 
-export default _createClassDefault(ViewabilityHelper, items);
+export default _createClassDefault(ViewabilityManager, items);

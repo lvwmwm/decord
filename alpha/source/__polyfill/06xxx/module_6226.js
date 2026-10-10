@@ -1,7 +1,95 @@
 // Module ID: 6226
 // Function ID: 6227
-// Dependencies: []
+// Dependencies: [19, 17, 21, 1504, 6218, 6227, 6228]
+// Exports: Button
 
 // Module 6226
+import Fragment from "Fragment" /* 21 */;
+import Link from "Link" /* 1504 */;
+import ColorDefault from "Color" /* 6218 */;
+import Text from "Text" /* 6228 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-export default { aliceblue: [240, 248, 255], antiquewhite: [250, 235, 215], aqua: [0, 255, 255], aquamarine: [127, 255, 212], azure: [240, 255, 255], beige: [245, 245, 220], bisque: [255, 228, 196], black: [0, 0, 0], blanchedalmond: [255, 235, 205], blue: [0, 0, 255], blueviolet: [138, 43, 226], brown: [165, 42, 42], burlywood: [222, 184, 135], cadetblue: [95, 158, 160], chartreuse: [127, 255, 0], chocolate: [210, 105, 30], coral: [255, 127, 80], cornflowerblue: [100, 149, 237], cornsilk: [255, 248, 220], crimson: [220, 20, 60], cyan: [0, 255, 255], darkblue: [0, 0, 139], darkcyan: [0, 139, 139], darkgoldenrod: [184, 134, 11], darkgray: [169, 169, 169], darkgreen: [0, 100, 0], darkgrey: [169, 169, 169], darkkhaki: [189, 183, 107], darkmagenta: [139, 0, 139], darkolivegreen: [85, 107, 47], darkorange: [255, 140, 0], darkorchid: [153, 50, 204], darkred: [139, 0, 0], darksalmon: [233, 150, 122], darkseagreen: [143, 188, 143], darkslateblue: [72, 61, 139], darkslategray: [47, 79, 79], darkslategrey: [47, 79, 79], darkturquoise: [0, 206, 209], darkviolet: [148, 0, 211], deeppink: [255, 20, 147], deepskyblue: [0, 191, 255], dimgray: [105, 105, 105], dimgrey: [105, 105, 105], dodgerblue: [30, 144, 255], firebrick: [178, 34, 34], floralwhite: [255, 250, 240], forestgreen: [34, 139, 34], fuchsia: [255, 0, 255], gainsboro: [220, 220, 220], ghostwhite: [248, 248, 255], gold: [255, 215, 0], goldenrod: [218, 165, 32], gray: [128, 128, 128], green: [0, 128, 0], greenyellow: [173, 255, 47], grey: [128, 128, 128], honeydew: [240, 255, 240], hotpink: [255, 105, 180], indianred: [205, 92, 92], indigo: [75, 0, 130], ivory: [255, 255, 240], khaki: [240, 230, 140], lavender: [230, 230, 250], lavenderblush: [255, 240, 245], lawngreen: [124, 252, 0], lemonchiffon: [255, 250, 205], lightblue: [173, 216, 230], lightcoral: [240, 128, 128], lightcyan: [224, 255, 255], lightgoldenrodyellow: [250, 250, 210], lightgray: [211, 211, 211], lightgreen: [144, 238, 144], lightgrey: [211, 211, 211], lightpink: [255, 182, 193], lightsalmon: [255, 160, 122], lightseagreen: [32, 178, 170], lightskyblue: [135, 206, 250], lightslategray: [119, 136, 153], lightslategrey: [119, 136, 153], lightsteelblue: [176, 196, 222], lightyellow: [255, 255, 224], lime: [0, 255, 0], limegreen: [50, 205, 50], linen: [250, 240, 230], magenta: [255, 0, 255], maroon: [128, 0, 0], mediumaquamarine: [102, 205, 170], mediumblue: [0, 0, 205], mediumorchid: [186, 85, 211], mediumpurple: [147, 112, 219], mediumseagreen: [60, 179, 113], mediumslateblue: [123, 104, 238], mediumspringgreen: [0, 250, 154], mediumturquoise: [72, 209, 204], mediumvioletred: [199, 21, 133], midnightblue: [25, 25, 112], mintcream: [245, 255, 250], mistyrose: [255, 228, 225], moccasin: [255, 228, 181], navajowhite: [255, 222, 173], navy: [0, 0, 128], oldlace: [253, 245, 230], olive: [128, 128, 0], olivedrab: [107, 142, 35], orange: [255, 165, 0], orangered: [255, 69, 0], orchid: [218, 112, 214], palegoldenrod: [238, 232, 170], palegreen: [152, 251, 152], paleturquoise: [175, 238, 238], palevioletred: [219, 112, 147], papayawhip: [255, 239, 213], peachpuff: [255, 218, 185], peru: [205, 133, 63], pink: [255, 192, 203], plum: [221, 160, 221], powderblue: [176, 224, 230], purple: [128, 0, 128], rebeccapurple: [102, 51, 153], red: [255, 0, 0], rosybrown: [188, 143, 143], royalblue: [65, 105, 225], saddlebrown: [139, 69, 19], salmon: [250, 128, 114], sandybrown: [244, 164, 96], seagreen: [46, 139, 87], seashell: [255, 245, 238], sienna: [160, 82, 45], silver: [192, 192, 192], skyblue: [135, 206, 235], slateblue: [106, 90, 205], slategray: [112, 128, 144], slategrey: [112, 128, 144], snow: [255, 250, 250], springgreen: [0, 255, 127], steelblue: [70, 130, 180], tan: [210, 180, 140], teal: [0, 128, 128], thistle: [216, 191, 216], tomato: [255, 99, 71], turquoise: [64, 224, 208], violet: [238, 130, 238], wheat: [245, 222, 179], white: [255, 255, 255], whitesmoke: [245, 245, 245], yellow: [255, 255, 0], yellowgreen: [154, 205, 50] };
+let Platform;
+let StyleSheet;
+function ButtonLink(arg0) {
+  let action;
+  let href;
+  let params;
+  let screen;
+  ({ screen, params, action, href } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ screen: 0, params: 0, action: 0, href: 0 }));
+  const obj = Link;
+  const linkProps = obj.useLinkProps({ screen, params, action, href });
+  const merged1 = Object.assign(merged);
+  const merged2 = Object.assign(linkProps);
+  return <ButtonBase />;
+}
+function ButtonBase(variant) {
+  let android_ripple;
+  let children;
+  let color;
+  let fadeResult1;
+  let str3;
+  let style;
+  let tmp5;
+  let str = variant.variant;
+  if (str === undefined) {
+    str = "tinted";
+  }
+  ({ color, android_ripple } = variant);
+  ({ style, children } = variant);
+  const merged = Object.assign(variant, Object.assign({ variant: 0, color: 0, android_ripple: 0, style: 0, children: 0 }));
+  const obj = Link;
+  const theme = obj.useTheme();
+  const fonts = theme.fonts;
+  if (color == null) {
+    color = theme.colors.primary;
+  }
+  if ("plain" === str) {
+    str3 = "transparent";
+    tmp5 = color;
+  } else if ("tinted" === str) {
+    const obj4 = ColorDefault(color);
+    const fadeResult = obj4.fade(0.85);
+    str3 = fadeResult.string();
+    tmp5 = color;
+  } else if ("filled" === str) {
+    let str4 = "white";
+    const obj11 = ColorDefault(color);
+    const tmp9 = importDefault;
+    if (!obj11.isDark()) {
+      const obj2 = tmp9(6218)(color);
+      const darkenResult = obj2.darken(0.71);
+      str4 = darkenResult.string();
+    }
+    tmp5 = str4;
+    str3 = color;
+  }
+  const PlatformPressable = tmp2(6227).PlatformPressable;
+  const merged1 = Object.assign(merged);
+  const obj5 = { radius: 40, color: fadeResult1.string() };
+  const obj8 = ColorDefault(tmp5);
+  fadeResult1 = obj8.fade(0.85);
+  const merged2 = Object.assign(android_ripple);
+  const items = [{ backgroundColor: str3 }, closure_6.button, style];
+  const items1 = [{ color: tmp5 }, fonts.regular, closure_6.text];
+  return <PlatformPressable android_ripple={obj5} pressOpacity={1} hoverEffect={{ color: tmp5 }} style={items}>{jsx(Text.Text, { style: items1, children })}</PlatformPressable>;
+}
+({ Platform, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
+const styles = StyleSheet.create({ button: { paddingHorizontal: 24, paddingVertical: 10, borderRadius: 40, borderCurve: "continuous" }, text: { fontSize: 14, lineHeight: 20, letterSpacing: 0.1, textAlign: "center" } });
+
+export const Button = function Button(arg0) {
+  if (!("screen" in arg0)) {
+    let tmp2;
+    if (!("action" in arg0)) {
+      tmp2 = ButtonBase;
+    }
+    const obj = {};
+    const merged = Object.assign(arg0);
+    return tmp(tmp2, obj);
+  }
+  tmp2 = ButtonLink;
+};

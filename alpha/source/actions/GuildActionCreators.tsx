@@ -1,9 +1,9 @@
-// Module ID: 6104
-// Function ID: 6105
+// Module ID: 6097
+// Function ID: 6098
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6105, 502, 5971, 4707, 2086, 2115, 4900, 1390, 1085, 1110, 5298, 1126, 584, 6106, 1295, 6108, 6780, 2000, 5936, 6901, 6907, 6913, 6914, 6943, 7032, 5945, 1273, 4714, 1097, 7021, 4751, 1265, 7033, 1112, 5931, 5951, 2]
+// Dependencies: [109, 5, 6098, 502, 5964, 4748, 2087, 2116, 4939, 1390, 1085, 1110, 5299, 1126, 584, 6099, 1295, 6101, 6783, 2000, 5929, 6907, 6913, 6919, 6920, 6949, 7038, 5938, 1273, 4755, 1097, 7027, 4792, 1265, 7039, 1112, 5924, 5944, 2]
 
-// Module 6104 (GuildActionCreators)
+// Module 6097 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -11,22 +11,22 @@ import intl3 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
-import AgeGateUtils from "AgeGateUtils" /* 5931 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 5951 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7021 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7032 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7033 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import AgeGateUtils from "AgeGateUtils" /* 5924 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 5944 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7027 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7038 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7039 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6105 */;
+import BulkBanStore from "BulkBanStore" /* 6098 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5971 */;
-import GuildChannelStore from "GuildChannelStore" /* 4707 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5964 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -63,26 +63,25 @@ function deleteGuild(id) {
 }
 let obj = function _joinGuild() {
   obj = _asyncToGenerator(async (guildId) => {
-    let closure_3;
     let closure_1 = arg1;
     let c7 = 0;
     let c8 = 0;
     let c6 = 0;
     const iter = (async function(arg0, value) {
-      let obj10;
       let obj11;
-      let obj24;
+      let obj12;
+      let obj25;
       let sessionId;
-      let tmp168;
-      let tmp175;
+      let tmp171;
+      let tmp178;
       function showGuildAtCapacityAlert() {
         let intl;
         let intl2;
-        obj = { title: intl.string(guildId(loadId[13]).t.ZZlox4), body: intl2.string(guildId(loadId[13]).t.ZUEGFn) };
-        const show = closure_1_1(loadId[12]).show;
-        closure_1_1(loadId[12]);
-        intl = guildId(loadId[13]).intl;
-        intl2 = guildId(loadId[13]).intl;
+        obj = { title: intl.string(guildId(closure_1_3[13]).t.ZZlox4), body: intl2.string(guildId(closure_1_3[13]).t.ZUEGFn) };
+        const show = closure_1_1(closure_1_3[12]).show;
+        closure_1_1(closure_1_3[12]);
+        intl = guildId(closure_1_3[13]).intl;
+        intl2 = guildId(closure_1_3[13]).intl;
         show(obj);
       }
       if (c8 === 2) {
@@ -92,23 +91,21 @@ let obj = function _joinGuild() {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          let obj2 = { value, done: true };
-          return obj2;
+          return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
-          let loadId;
           let obj4;
           let source;
+          let loadId;
           let lurkLocation;
           let autoNavigate;
           let closure_6;
           let currentUser;
-          let guildId2;
           let channelId;
-          let closure_12;
+          let closure_11;
           c8 = 2;
           if (0 === c7) {
             if (arg0 === 1) {
@@ -119,7 +116,7 @@ let obj = function _joinGuild() {
               return { value, done: true };
             } else {
               closure_4 = tmp;
-              loadId = tmp4;
+              closure_3 = tmp4;
               obj4 = closure_1;
               if (closure_1 === undefined) {
                 obj4 = {};
@@ -131,10 +128,9 @@ let obj = function _joinGuild() {
               closure_6 = undefined;
               lurker = undefined;
               currentUser = undefined;
-              guildId2 = undefined;
               channelId = undefined;
               value = undefined;
-              closure_12 = undefined;
+              closure_11 = undefined;
               c7 = 1;
               c8 = 1;
               return { value: "Set", done: true };
@@ -179,49 +175,45 @@ let obj = function _joinGuild() {
                 };
                 return obj8;
               } else {
+                const obj10 = { type: "GUILD_JOIN", guildId, lurker, source, loadId };
                 const obj20 = closure_132_1(closure_132_3[14]);
-                obj20.wait(() => {
-                  obj = closure_1(loadId[14]);
-                  const obj2 = { type: "GUILD_JOIN", guildId, lurker, source, loadId };
-                  return obj.dispatch(obj2);
-                });
+                obj20.dispatch(obj10);
                 c6 = 1;
-                guildId2 = closure_132_13.getGuildId();
                 channelId = null;
-                if (guildId === guildId2) {
+                if (guildId === closure_132_13.getGuildId()) {
                   channelId = null;
                   if (null != closure_132_11.getGuild(guildId)) {
                     channelId = closure_132_12.getChannelId(guildId);
                   }
                 }
                 const HTTP = closure_132_0(closure_132_3[16]).HTTP;
-                const request = { url: closure_132_16.GUILD_JOIN(guildId), query: obj10, context: obj11, oldFormErrors: true, body: {}, rejectWithError: obj24.rejectWithMigratedError() };
+                const request = { url: closure_132_16.GUILD_JOIN(guildId), query: obj11, context: obj12, oldFormErrors: true, body: {}, rejectWithError: obj25.rejectWithMigratedError() };
                 const put = HTTP.put;
-                obj10 = { lurker, session_id: sessionId, recommendation_load_id: loadId, location: tmp168, from_directory: tmp175 };
+                obj11 = { lurker, session_id: sessionId, recommendation_load_id: loadId, location: tmp171, from_directory: tmp178 };
                 sessionId = null;
                 if (lurker) {
                   sessionId = closure_132_8.getSessionId();
                 }
-                tmp168 = null;
+                tmp171 = null;
                 if (lurker) {
-                  tmp168 = null;
+                  tmp171 = null;
                   if (null != lurkLocation) {
-                    tmp168 = lurkLocation;
+                    tmp171 = lurkLocation;
                   }
                 }
-                obj11 = { source };
-                tmp175 = source === closure_132_17.DIRECTORY_ENTRY || null;
+                obj12 = { source };
+                tmp178 = source === closure_132_17.DIRECTORY_ENTRY || null;
                 c7 = 3;
                 c8 = 1;
-                obj24 = closure_132_0(closure_132_3[16]);
-                const obj12 = { value: put(request), done: false };
-                return obj12;
+                obj25 = closure_132_0(closure_132_3[16]);
+                const obj14 = { value: put(request), done: false };
+                return obj14;
               }
             }
           } else if (2 === c7) {
             c6 = 0;
-            let closure_13 = closure_5;
-            const body = closure_13.body;
+            let closure_12 = closure_5;
+            const body = closure_12.body;
             let code;
             if (body != null) {
               code = body.code;
@@ -230,7 +222,7 @@ let obj = function _joinGuild() {
               const obj16 = closure_132_0(closure_132_3[20]);
               obj16.openAgeGateModal(closure_132_23.JOIN_LARGE_GUILD_UNDERAGE);
             }
-            const body2 = closure_13.body;
+            const body2 = closure_12.body;
             let code1;
             if (body2 != null) {
               code1 = body2.code;
@@ -243,7 +235,7 @@ let obj = function _joinGuild() {
                 closure_132_24(closure_132_19);
               }
             }
-            const body3 = closure_13.body;
+            const body3 = closure_12.body;
             let code2;
             if (body3 != null) {
               code2 = body3.code;
@@ -253,7 +245,7 @@ let obj = function _joinGuild() {
             }
             let tmp91 = lurker;
             if (tmp91) {
-              const body4 = closure_13.body;
+              const body4 = closure_12.body;
               let code3;
               if (body4 != null) {
                 code3 = body4.code;
@@ -263,7 +255,7 @@ let obj = function _joinGuild() {
             if (tmp91) {
               closure_132_25(guildId);
             }
-            const body5 = closure_13.body;
+            const body5 = closure_12.body;
             let code4;
             if (body5 != null) {
               code4 = body5.code;
@@ -280,7 +272,7 @@ let obj = function _joinGuild() {
               const joinGuildRefusedError = new closure_132_0(closure_132_3[23]).JoinGuildRefusedError();
               throw joinGuildRefusedError;
             } else {
-              throw closure_13;
+              throw closure_12;
             }
           } else {
             if (3 === c7) {
@@ -293,9 +285,9 @@ let obj = function _joinGuild() {
                 return { value, done: true };
               } else {
                 if (null != value.body.join_request) {
-                  const obj15 = { type: "USER_GUILD_JOIN_REQUEST_UPDATE", guildId, request: value.body.join_request };
+                  const obj21 = { type: "USER_GUILD_JOIN_REQUEST_UPDATE", guildId, request: value.body.join_request };
                   const obj5 = closure_132_1(closure_132_3[14]);
-                  obj5.dispatch(obj15);
+                  obj5.dispatch(obj21);
                 }
                 if (null == closure_132_11.getGuild(guildId)) {
                   if (value.body.show_verification_form) {
@@ -310,14 +302,14 @@ let obj = function _joinGuild() {
                   }
                 }
                 if (null != value.body.welcome_screen) {
-                  const obj22 = { type: "WELCOME_SCREEN_UPDATE", guildId: value.body.id, welcomeScreen: value.body.welcome_screen };
+                  const obj23 = { type: "WELCOME_SCREEN_UPDATE", guildId: value.body.id, welcomeScreen: value.body.welcome_screen };
                   const obj7 = closure_132_1(closure_132_3[14]);
-                  obj7.dispatch(obj22);
+                  obj7.dispatch(obj23);
                 }
                 if (null != value.body.approximate_presence_count) {
-                  const obj23 = { type: "ONLINE_GUILD_MEMBER_COUNT_UPDATE", guildId: value.body.id, count: value.body.approximate_presence_count };
+                  const obj24 = { type: "ONLINE_GUILD_MEMBER_COUNT_UPDATE", guildId: value.body.id, count: value.body.approximate_presence_count };
                   const obj9 = closure_132_1(closure_132_3[14]);
-                  obj9.dispatch(obj23);
+                  obj9.dispatch(obj24);
                 }
                 const tmp43 = lurker;
                 if (!tmp43) {
@@ -325,8 +317,8 @@ let obj = function _joinGuild() {
                   if (tmp44) {
                     c7 = 4;
                     c8 = 1;
-                    const obj25 = { value: closure_132_0(closure_132_3[19])(closure_132_3[18], closure_132_3.paths), done: false };
-                    return obj25;
+                    const obj26 = { value: closure_132_0(closure_132_3[19])(closure_132_3[18], closure_132_3.paths), done: false };
+                    return obj26;
                   }
                 }
               }
@@ -339,12 +331,12 @@ let obj = function _joinGuild() {
                 c8 = 3;
                 return { value, done: true };
               } else {
-                closure_12 = value.default;
+                closure_11 = value.default;
                 c7 = 5;
                 c8 = 1;
-                const obj27 = { guildId, returnChannelId: channelId };
-                const obj28 = { value: closure_12(obj27), done: false };
-                return obj28;
+                const obj28 = { guildId, returnChannelId: channelId };
+                const obj29 = { value: closure_11(obj28), done: false };
+                return obj29;
               }
             } else if (arg0 === 1) {
               c8 = 3;
@@ -359,11 +351,11 @@ let obj = function _joinGuild() {
             c8 = 3;
             return { value, done: true };
           }
-        } catch (tmp188) {
-          closure_5 = tmp188;
+        } catch (tmp191) {
+          closure_5 = tmp191;
           if (0 === c6) {
             c8 = 3;
-            throw tmp188;
+            throw tmp191;
           } else {
             c7 = 2;
           }
@@ -416,7 +408,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -497,7 +489,7 @@ obj = {
             return obj;
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp33) {
           c5 = 3;
@@ -520,7 +512,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore5.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { mute };
     obj3 = HTTPUtils;
@@ -530,7 +522,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore5.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { deaf };
     obj3 = HTTPUtils;
@@ -539,14 +531,14 @@ obj = {
   setChannel(guildId, userId, channel_id) {
     let body;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore5.GUILD_MEMBER(guildId, userId), body, oldFormErrors: true, rejectWithError: true };
+    const request = { url: authStore4.GUILD_MEMBER(guildId, userId), body, oldFormErrors: true, rejectWithError: true };
     body = { channel_id };
     HTTP.patch(request);
   },
   setMemberFlags(id, id2, flags) {
     let body;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore5.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: true };
+    const request = { url: authStore4.GUILD_MEMBER(id, id2), body, oldFormErrors: true, rejectWithError: true };
     body = { flags };
     HTTP.patch(request);
   },
@@ -584,7 +576,7 @@ obj = {
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderatorReportId);
     moderatorReportId = moderatorReportId.moderatorReportId;
     const tmp2 = TrackedHTTPUtilsDefault;
-    const request = { url: authStore5.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderatorReportId }, oldFormErrors: true, trackedActionData, rejectWithError: tmp3Result.rejectWithMigratedError() };
+    const request = { url: authStore4.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderatorReportId }, oldFormErrors: true, trackedActionData, rejectWithError: tmp3Result.rejectWithMigratedError() };
     const patch = tmp2.patch;
     trackedActionData = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE, properties: obj2 };
     obj2 = { guild_id: guildId, target_user_id: userId, duration: tmp4, reason: tmp5, communication_disabled_until: communicationDisabledUntilTimestamp, location: tmp6 };
@@ -607,7 +599,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore5.GUILD_BAN(id, id2), reason: current, body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore4.GUILD_BAN(id, id2), reason: current, body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const put = HTTP.put;
     body = { delete_message_seconds: value, moderator_report_id };
     obj3 = HTTPUtils;
@@ -617,7 +609,7 @@ obj = {
     let obj2;
     const HTTP = HTTPUtils.HTTP;
     const del = HTTP.del;
-    obj = { url: authStore5.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
+    obj = { url: authStore4.GUILD_BAN(id, id2), oldFormErrors: true, rejectWithError: obj2.rejectWithMigratedError() };
     obj2 = HTTPUtils;
     return del(obj);
   },
@@ -625,7 +617,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore5.BULK_GUILD_BAN_V2(arg0), body, reason, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore4.BULK_GUILD_BAN_V2(arg0), body, reason, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     body = { user_ids, delete_message_seconds };
     obj3 = HTTPUtils;
@@ -649,7 +641,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -688,7 +680,7 @@ obj = {
             } else if (BulkBanStore.consumeCompletedBeforeStarted(closure_128_0, id.getId())) {
               c3 = 0;
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             } else {
               const obj8 = { type: "GUILD_BULK_BAN_STARTED", guildId: closure_128_0 };
               obj = c1(c3[14]);
@@ -696,7 +688,7 @@ obj = {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp22) {
           closure_2 = tmp22;
@@ -737,7 +729,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c6;
@@ -869,7 +861,7 @@ obj = {
     let body;
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: authStore5.GUILD_ROLE(c0, c1), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore4.GUILD_ROLE(c0, c1), body, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const patch = HTTP.patch;
     body = { permissions };
     obj3 = HTTPUtils;
@@ -1108,7 +1100,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -1150,7 +1142,7 @@ obj = {
             obj = tmp(c3[14]);
             obj.dispatch(obj8);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -1179,7 +1171,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -1223,7 +1215,7 @@ obj = {
             return obj;
           } else {
             guildId = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp8) {
           guildId = 3;
@@ -1252,7 +1244,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -1302,7 +1294,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp10) {
           c0 = 3;
@@ -1326,7 +1318,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -1366,7 +1358,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -1407,7 +1399,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -1439,7 +1431,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -1464,7 +1456,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -1496,7 +1488,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp4) {
           c0 = 3;

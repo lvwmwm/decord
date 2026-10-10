@@ -1,13 +1,13 @@
-// Module ID: 16985
-// Function ID: 16986
+// Module ID: 17053
+// Function ID: 17054
 // Name: ConjureRemix
-// Dependencies: [5, 13164, 11369, 3827, 1126, 2]
+// Dependencies: [5, 13213, 11411, 3849, 1126, 2]
 // Exports: remixConjureProjectInto
 
-// Module 16985 (ConjureRemix)
-import ConjureActionCreators from "ConjureActionCreators" /* 11369 */;
+// Module 17053 (ConjureRemix)
+import ConjureActionCreators from "ConjureActionCreators" /* 11411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, status;
@@ -36,7 +36,7 @@ let obj = function _remixConjureProjectInto() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

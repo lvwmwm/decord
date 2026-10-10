@@ -21,8 +21,8 @@ class NativeReanimatedModule {
   constructor() {
     const self = this;
     _classCallCheck(this, NativeReanimatedModule);
-    Object.defineProperty(this, closure_5, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_6, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_6, { writable: true, value: "a" });
     const tmp6 = _classPrivateFieldBase(this, closure_5);
     tmp6[closure_5] = WorkletsModule.WorkletsModule;
     global._REANIMATED_VERSION_JS = jsVersion.jsVersion;

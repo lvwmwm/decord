@@ -1,31 +1,30 @@
-// Module ID: 18245
-// Function ID: 18246
+// Module ID: 18319
+// Function ID: 18320
 // Name: guildSettingsStickerToasts
-// Dependencies: [4768, 5001, 1126, 5013, 2]
+// Dependencies: [4809, 1126, 5046, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 18245 (guildSettingsStickerToasts)
+// Module 18319 (guildSettingsStickerToasts)
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 5001 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");
 
 export const showGuildSettingsStickerError = function showGuildSettingsStickerError() {
   let intl;
-  const tmp = ToastActionCreatorsDefault;
-  const open = tmp.open;
-  const obj = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: CircleErrorIcon.CircleErrorIcon, content: intl.string(intl2.t["5NMPSS"]) };
+  const obj = { text: intl.string(intl2.t["5NMPSS"]), variant: "critical" };
+  const open = ToastActionCreatorsDefault.open;
+  ToastActionCreatorsDefault;
   intl = intl2.intl;
-  open(obj);
+  open("GUILD_SETTINGS_STICKER_ERROR", obj);
 };
 export const showGuildSettingsStickerSuccess = function showGuildSettingsStickerSuccess() {
   let intl;
-  const tmp = ToastActionCreatorsDefault;
-  const open = tmp.open;
-  const obj = { key: "GUILD_SETTINGS_STICKER_SUCCESS", IconComponent: CircleInformationIcon.CircleInformationIcon, content: intl.string(intl2.t["+c5xtT"]) };
+  const obj = { text: intl.string(intl2.t["+c5xtT"]), icon: CircleInformationIcon.CircleInformationIcon };
+  const open = ToastActionCreatorsDefault.open;
+  ToastActionCreatorsDefault;
   intl = intl2.intl;
-  open(obj);
+  open("GUILD_SETTINGS_STICKER_SUCCESS", obj);
 };

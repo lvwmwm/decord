@@ -1,10 +1,10 @@
-// Module ID: 5898
-// Function ID: 5899
+// Module ID: 5901
+// Function ID: 5902
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: default
 
-// Module 5898 (_slicedToArray)
+// Module 5901 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

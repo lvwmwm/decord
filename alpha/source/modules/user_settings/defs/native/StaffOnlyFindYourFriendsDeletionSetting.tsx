@@ -1,25 +1,25 @@
-// Module ID: 15038
-// Function ID: 15039
+// Module ID: 15097
+// Function ID: 15098
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 7974, 21, 1267, 1272, 558, 576, 4692, 12358, 1349, 4768, 10629, 15039, 2]
+// Dependencies: [5, 17, 7992, 21, 1267, 1272, 558, 576, 4733, 12402, 1349, 4809, 10663, 15098, 2]
 
-// Module 15038 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 15097 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15039 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15098 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
 let tmp;
-const _slicedToArray = tmp(4692);
+const _slicedToArray = tmp(4733);
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -45,13 +45,13 @@ let obj = function _onFindYourFriendsDeletionPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
       try {
         let closure_1;
-        let content;
+        let text;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -63,7 +63,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
             return obj4;
           } else {
             closure_1 = tmp;
-            content = undefined;
+            text = undefined;
             if (!getFindYourFriendsDeletionIsLoading()) {
               setFindYourFriendsDeletionIsLoading(true);
               c3 = 2;
@@ -85,11 +85,11 @@ let obj = function _onFindYourFriendsDeletionPress() {
             const self = this;
             const self2 = this;
             const aPIError = new closure_129_0(closure_129_2[10]).APIError(closure_1);
-            content = aPIError.getAnyErrorMessage();
-            if (null != content) {
-              const obj7 = { key: "FIND_YOUR_FRIENDS_DELETION", content };
+            text = aPIError.getAnyErrorMessage();
+            if (null != text) {
+              const obj7 = { text };
               const obj3 = closure_129_1(closure_129_2[11]);
-              obj3.open(obj7);
+              obj3.open("FIND_YOUR_FRIENDS_DELETION", obj7);
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -107,7 +107,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
           closure_129_7(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp35) {
         closure_2 = tmp35;
         if (0 === c3) {

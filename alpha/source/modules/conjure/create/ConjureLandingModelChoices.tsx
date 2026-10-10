@@ -1,12 +1,12 @@
-// Module ID: 16974
-// Function ID: 16975
+// Module ID: 17042
+// Function ID: 17043
 // Name: ConjureLandingModelChoices
-// Dependencies: [13170, 6940, 2]
+// Dependencies: [13220, 6946, 2]
 // Exports: landingModelChoices
 
-// Module 16974 (ConjureLandingModelChoices)
-import ConjureTypes from "ConjureTypes" /* 6940 */;
-import conjureLocalDev from "conjureLocalDev" /* 13170 */;
+// Module 17042 (ConjureLandingModelChoices)
+import ConjureTypes from "ConjureTypes" /* 6946 */;
+import conjureLocalDev from "conjureLocalDev" /* 13220 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/create/ConjureLandingModelChoices.tsx");

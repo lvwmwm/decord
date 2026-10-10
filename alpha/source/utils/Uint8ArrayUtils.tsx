@@ -48,5 +48,5 @@ export const isUint8Array = function isUint8Array(arg0) {
   return arg0 instanceof Uint8Array;
 };
 export const isSerializedUint8Array = function isSerializedUint8Array(__tag__) {
-  return null != __tag__ && typeof __tag__ === "object" && "uint8array" === __tag__.__tag__;
+  return null != __tag__ && typeof __tag__ === "object" && "__tag__" in __tag__ && "uint8array" === __tag__.__tag__;
 };

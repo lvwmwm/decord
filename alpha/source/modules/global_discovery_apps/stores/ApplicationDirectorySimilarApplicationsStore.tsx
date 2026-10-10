@@ -1,9 +1,9 @@
-// Module ID: 11704
-// Function ID: 11705
+// Module ID: 11749
+// Function ID: 11750
 // Name: ApplicationDirectorySimilarApplicationsStore
 // Dependencies: [1457, 504, 584, 2]
 
-// Module 11704 (ApplicationDirectorySimilarApplicationsStore)
+// Module 11749 (ApplicationDirectorySimilarApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LRUCacheDefault from "LRUCache" /* 1457 */;

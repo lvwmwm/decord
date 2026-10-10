@@ -1,13 +1,13 @@
-// Module ID: 11762
-// Function ID: 11763
+// Module ID: 11806
+// Function ID: 11807
 // Name: ApplicationFrecencyHooks
-// Dependencies: [19, 9221, 1095, 558, 576, 2046, 504, 11, 7236, 2]
+// Dependencies: [19, 9248, 1095, 558, 576, 2046, 504, 11, 7242, 2]
 
-// Module 11762 (ApplicationFrecencyHooks)
+// Module 11806 (ApplicationFrecencyHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import react_mod from "react" /* 19 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9221 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9248 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

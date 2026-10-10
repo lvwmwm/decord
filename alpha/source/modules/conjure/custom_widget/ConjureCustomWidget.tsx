@@ -1,11 +1,11 @@
-// Module ID: 13162
-// Function ID: 13163
+// Module ID: 13211
+// Function ID: 13212
 // Name: ConjureCustomWidget
-// Dependencies: [2086, 558, 576, 1453, 6939, 504, 2]
+// Dependencies: [2087, 558, 576, 1453, 6945, 504, 2]
 // Exports: composeConjureCustomWidgetPrompt
 
-// Module 13162 (ConjureCustomWidget)
-import GuildStore from "GuildStore" /* 2086 */;
+// Module 13211 (ConjureCustomWidget)
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

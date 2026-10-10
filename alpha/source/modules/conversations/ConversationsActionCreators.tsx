@@ -1,21 +1,21 @@
-// Module ID: 9310
-// Function ID: 9311
+// Module ID: 9337
+// Function ID: 9338
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7307, 7312, 9311, 9312, 7309, 1085, 9308, 584, 1295, 7172, 9313, 7470, 7477, 2]
+// Dependencies: [5, 7313, 7318, 9338, 9339, 7315, 1085, 9335, 584, 1295, 7178, 9340, 7470, 7477, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, fetchConversation, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9310 (ConversationsActionCreators)
+// Module 9337 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ConversationConstants from "ConversationConstants" /* 7309 */;
+import ConversationConstants from "ConversationConstants" /* 7315 */;
 import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7470 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9313 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9340 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7307 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7312 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9311 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9312 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7313 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7318 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9338 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9339 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
@@ -162,7 +162,7 @@ obj = function _fetchConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ obj = function _fetchConversation() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp15) {
           if (0 === c4) {
             c6 = 3;
@@ -247,7 +247,7 @@ obj = function _fetchConversationMessages() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -286,7 +286,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (isFullyHydratedResult) {
                   c8 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } else {
                 let hydratedMessages;
@@ -297,7 +297,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (null != hydratedMessages) {
                   c8 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               }
               if (tmp15) {
@@ -340,7 +340,7 @@ obj = function _fetchConversationMessages() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp32) {
           if (0 === c6) {
             c8 = 3;
@@ -391,7 +391,7 @@ export const setSelectedConversation = function setSelectedConversation(channelI
       }
       if (null != startMessageId) {
         const obj3 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7172);
+        const tmp6Result = tmp6(7178);
         tmp6Result.jumpToMessage(obj3);
       }
     }

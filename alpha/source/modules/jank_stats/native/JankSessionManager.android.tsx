@@ -1,18 +1,18 @@
-// Module ID: 18018
-// Function ID: 18019
+// Module ID: 18090
+// Function ID: 18091
 // Name: JankSessionManager
-// Dependencies: [7176, 1085, 3, 6804, 18019, 1363, 16350, 18020, 16357, 18021, 7190, 2]
+// Dependencies: [7182, 1085, 3, 6807, 18091, 1363, 16417, 18092, 16424, 18093, 7196, 2]
 
-// Module 18018 (JankSessionManager)
+// Module 18090 (JankSessionManager)
 import LoggerDefault from "Logger" /* 3 */;
 import clientLaunchId from "clientLaunchId" /* 1363 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 16350 */;
-import react_nativeDefault from "react-native" /* 18019 */;
-import JankNavigationReporterDefault from "JankNavigationReporter" /* 18020 */;
-import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 18021 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7176 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 16417 */;
+import react_nativeDefault from "react-native" /* 18091 */;
+import JankNavigationReporterDefault from "JankNavigationReporter" /* 18092 */;
+import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 18093 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7182 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let screens;
@@ -20,7 +20,7 @@ let screens;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const getJankSurfaceName = tmp(16357);
+const getJankSurfaceName = tmp(16424);
 ({ AnalyticEvents: closure_4, AppStates: hasOwnProperty } = Constants);
 let closure_6 = new LoggerDefault("JankSessionManager");
 const tmp3 = new LoggerDefault("JankSessionManager");
@@ -66,7 +66,7 @@ class JankSessionManager extends AutomaticLifecycleManager {
     let logger;
     const self = this;
     if (!this._isDelivering) {
-      let obj = self(18019);
+      let obj = self(18091);
       tmp._isDelivering = true;
       const pendingReports = obj.getPendingReports();
       const nextPromise = pendingReports.then((arr) => {

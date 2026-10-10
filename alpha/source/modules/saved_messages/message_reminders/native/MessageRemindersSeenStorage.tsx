@@ -1,10 +1,10 @@
-// Module ID: 12597
-// Function ID: 12598
+// Module ID: 12644
+// Function ID: 12645
 // Name: MessageRemindersSeenStorage
 // Dependencies: [510, 2]
 // Exports: getRemindersLastSeenAt, markRemindersSeen
 
-// Module 12597 (MessageRemindersSeenStorage)
+// Module 12644 (MessageRemindersSeenStorage)
 import Storage2 from "Storage" /* 510 */;
 import size from "module_2" /* 2 */;
 

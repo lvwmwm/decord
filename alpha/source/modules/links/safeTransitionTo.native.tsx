@@ -1,17 +1,17 @@
-// Module ID: 6943
-// Function ID: 6944
+// Module ID: 6949
+// Function ID: 6950
 // Name: safeTransitionTo
-// Dependencies: [5, 2086, 1085, 5419, 6944, 1112, 6945, 5299, 1126, 6971, 2697, 7026, 2]
+// Dependencies: [5, 2087, 1085, 5422, 6950, 1112, 6951, 5300, 1126, 6977, 2700, 7032, 2]
 // Exports: default
 
-// Module 6943 (safeTransitionTo)
+// Module 6949 (safeTransitionTo)
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
-import LinkUtils from "LinkUtils" /* 5419 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 6944 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6945 */;
+import LinkUtils from "LinkUtils" /* 5422 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 6950 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6951 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -117,7 +117,7 @@ let obj = function _safeTransitionTo() {
             obj.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
         if (null != c2) {
           if (null != c2.guildId) {

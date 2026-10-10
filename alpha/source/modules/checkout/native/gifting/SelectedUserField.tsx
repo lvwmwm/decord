@@ -1,21 +1,21 @@
-// Module ID: 10184
-// Function ID: 10185
+// Module ID: 10213
+// Function ID: 10214
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 1126, 4923, 6738, 1200, 5087, 4998, 6299, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 4962, 6739, 1200, 5088, 6295, 6300, 2]
 
-// Module 10184 (SelectedUserField)
+// Module 10213 (SelectedUserField)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import CircleXIcon from "CircleXIcon" /* 4998 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 6299 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6738 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import CircleXIcon from "CircleXIcon" /* 6295 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 6300 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6739 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -139,7 +139,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
                     const obj5 = { children: metroRequire(React3, obj6) };
                     obj6 = { style: tmp4.content, children: items };
                     items = [tmp24, tmp28];
-                    const InputFieldContainer = tmp(6299).InputFieldContainer;
+                    const InputFieldContainer = tmp(6300).InputFieldContainer;
                     const tmp38 = hasOwnProperty(InputFieldContainer, obj5);
                     cResult[21] = tmp4.content;
                     cResult[22] = tmp24;
@@ -193,13 +193,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
       const Avatar = tmp(1200).Avatar;
       items2 = [hasOwnProperty(Avatar, obj13), ];
       const obj14 = { variant: "text-md/medium", style: tmp4.userPillText, children: obj8.getName(selectedUser) };
-      const Text2 = tmp(5087).Text;
+      const Text2 = tmp(5088).Text;
       obj8 = UserUtilsDefault;
       items2[1] = hasOwnProperty(Text2, obj14);
       tmp19 = metroRequire(React3, obj11);
     } else {
       const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp4.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-      const Text = tmp(5087).Text;
+      const Text = tmp(5088).Text;
       intl4 = tmp(1126).intl;
       tmp19 = hasOwnProperty(Text, obj15);
     }
@@ -265,13 +265,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
     const Avatar = tmp4(1200).Avatar;
     items2 = [hasOwnProperty(Avatar, obj7), ];
     const obj8 = { variant: "text-md/medium", style: tmp.userPillText, children: obj10.getName(selectedUser) };
-    const Text2 = tmp4(5087).Text;
+    const Text2 = tmp4(5088).Text;
     obj10 = UserUtilsDefault;
     items2[1] = hasOwnProperty(Text2, obj8);
     tmp2Result1 = tmp6(tmp3, obj6);
   } else {
     const obj9 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-    const Text = tmp4(5087).Text;
+    const Text = tmp4(5088).Text;
     intl4 = tmp4(1126).intl;
     tmp2Result1 = tmp2(Text, obj9);
   }

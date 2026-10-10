@@ -1,0 +1,58 @@
+// Module ID: 5658
+// Function ID: 5659
+// Dependencies: [1339, 5659, 5661, 5662, 5686, 5687, 5674, 5710, 5697, 5711, 5712]
+
+// Module 5658
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1339 */;
+import ToObject from "ToObject" /* 5659 */;
+import isString from "isString" /* 5661 */;
+import ToUint32 from "ToUint32" /* 5662 */;
+import ToString from "ToString" /* 5674 */;
+import _mod5686 from "module_5686" /* 5686 */;
+import ArraySpeciesCreate from "ArraySpeciesCreate" /* 5687 */;
+import HasProperty from "HasProperty" /* 5710 */;
+
+const ObjectResult = Object("a");
+let tmp2 = "a" !== ObjectResult[0];
+if (!tmp2) {
+  tmp2 = !(0 in ObjectResult);
+}
+let closure_2 = tmp2;
+let closure_3 = callBoundIntrinsic("String.prototype.split");
+
+export default function map(arg0) {
+  const tmp3 = ToObject(this);
+  let arr = tmp3;
+  if (closure_2) {
+    arr = tmp3;
+    if (isString(tmp3)) {
+      arr = closure_3(tmp3, "");
+    }
+  }
+  const tmp5 = ToUint32(arr.length);
+  if (_mod5686(arg0)) {
+    let tmp9;
+    let num2;
+    if (arguments.length > 1) {
+      tmp9 = arguments[1];
+    }
+    const tmp10 = ArraySpeciesCreate(tmp3, tmp5);
+    for (let num2 = 0; num2 < tmp5; num2 = num2 + 1) {
+      let tmp11 = require;
+      let tmp13 = ToString(num2);
+      if (HasProperty(tmp3, tmp13)) {
+        let tmp15 = tmp11(5697)(tmp3, tmp13);
+        let items = [tmp15, num2, tmp3];
+        let tmp16 = tmp11(5711)(arg0, tmp9, items);
+        let tmp17 = tmp11(5712)(tmp10, tmp13, tmp16);
+      }
+    }
+    return tmp10;
+  } else {
+    const _TypeError = TypeError;
+    const self = this;
+    const self2 = this;
+    const typeError = new TypeError("Array.prototype.map callback must be a function");
+    throw typeError;
+  }
+};

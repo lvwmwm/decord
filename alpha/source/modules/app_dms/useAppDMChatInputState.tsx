@@ -1,17 +1,17 @@
-// Module ID: 12802
-// Function ID: 12803
+// Module ID: 12849
+// Function ID: 12850
 // Name: useAppDMChatInputState
-// Dependencies: [19, 9220, 5437, 7314, 2022, 1390, 1085, 1998, 558, 576, 504, 8295, 584, 6854, 2]
+// Dependencies: [19, 9247, 5440, 7320, 2022, 1390, 1085, 1998, 558, 576, 504, 8311, 584, 6857, 2]
 
-// Module 12802 (useAppDMChatInputState)
+// Module 12849 (useAppDMChatInputState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import Server from "Server" /* 1998 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8295 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9220 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9247 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5437 */;
-import UserProfileStore from "UserProfileStore" /* 7314 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import UserProfileStore from "UserProfileStore" /* 7320 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

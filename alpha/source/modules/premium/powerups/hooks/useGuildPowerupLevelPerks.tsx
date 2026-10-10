@@ -1,15 +1,15 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 12260
+// Function ID: 12261
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [19, 1392, 4969, 558, 576, 1126, 2597, 1388, 2]
+// Dependencies: [19, 1392, 5008, 558, 576, 1126, 2600, 1388, 2]
 
-// Module 12216 (useGuildPowerupLevelPerks)
+// Module 12260 (useGuildPowerupLevelPerks)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import _modDef2597 from "module_2597" /* 2597 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4969 */;
+import _modDef2600 from "module_2600" /* 2600 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
     }
     const intl = tmp(1126).intl;
     const obj4 = { totalEmojis: features.features.total_emoji_slots, additionalEmojis: features.features.additional_emoji_slots };
-    const formatToPlainStringResult = intl.formatToPlainString(_modDef2597["NXvV0+"], obj4);
+    const formatToPlainStringResult = intl.formatToPlainString(_modDef2600["NXvV0+"], obj4);
     cResult[13] = features.features.additional_emoji_slots;
     cResult[14] = features.features.total_emoji_slots;
     cResult[15] = formatToPlainStringResult;
@@ -104,7 +104,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
     }
     const intl2 = tmp(1126).intl;
     const obj6 = { totalStickers: features.features.total_sticker_slots, additionalStickers: features.features.additional_sticker_slots };
-    const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2597.ZEvvPz, obj6);
+    const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2600.ZEvvPz, obj6);
     cResult[18] = features.features.additional_sticker_slots;
     cResult[19] = features.features.total_sticker_slots;
     cResult[20] = formatToPlainStringResult1;
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
     }
     const intl3 = tmp(1126).intl;
     const obj8 = { totalSoundboards: features.features.total_sound_slots, additionalSoundboards: features.features.additional_sound_slots };
-    const formatToPlainStringResult2 = intl3.formatToPlainString(_modDef2597["s9u/E7"], obj8);
+    const formatToPlainStringResult2 = intl3.formatToPlainString(_modDef2600["s9u/E7"], obj8);
     cResult[23] = features.features.additional_sound_slots;
     cResult[24] = features.features.total_sound_slots;
     cResult[25] = formatToPlainStringResult2;
@@ -173,7 +173,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
     const tmp = includeEmojis;
     if (tmp) {
       const push = items.push;
-      const obj = { perkIcon: PerkIcons.EMOJI, description: intl.formatToPlainString(_modDef2597["NXvV0+"], obj2) };
+      const obj = { perkIcon: PerkIcons.EMOJI, description: intl.formatToPlainString(_modDef2600["NXvV0+"], obj2) };
       intl = intl4.intl;
       obj2 = { totalEmojis: closure_0.features.total_emoji_slots, additionalEmojis: closure_0.features.additional_emoji_slots };
       push(obj);
@@ -181,7 +181,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
     const tmp8 = includeStickers;
     if (tmp8) {
       const push2 = items.push;
-      const obj3 = { perkIcon: PerkIcons.STICKER, description: intl2.formatToPlainString(_modDef2597.ZEvvPz, obj4) };
+      const obj3 = { perkIcon: PerkIcons.STICKER, description: intl2.formatToPlainString(_modDef2600.ZEvvPz, obj4) };
       intl2 = intl4.intl;
       obj4 = { totalStickers: closure_0.features.total_sticker_slots, additionalStickers: closure_0.features.additional_sticker_slots };
       push2(obj3);
@@ -189,7 +189,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
     const tmp15 = includeSoundboards;
     if (tmp15) {
       const push3 = items.push;
-      const obj5 = { perkIcon: PerkIcons.SOUNDBOARD, description: intl3.formatToPlainString(_modDef2597["s9u/E7"], obj6) };
+      const obj5 = { perkIcon: PerkIcons.SOUNDBOARD, description: intl3.formatToPlainString(_modDef2600["s9u/E7"], obj6) };
       intl3 = intl4.intl;
       obj6 = { totalSoundboards: closure_0.features.total_sound_slots, additionalSoundboards: closure_0.features.additional_sound_slots };
       push3(obj5);

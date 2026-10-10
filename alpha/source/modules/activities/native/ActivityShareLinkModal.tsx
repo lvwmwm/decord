@@ -1,31 +1,31 @@
-// Module ID: 14672
-// Function ID: 14673
+// Module ID: 14726
+// Function ID: 14727
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2064, 1390, 2063, 10187, 5084, 21, 5091, 587, 558, 576, 504, 11510, 11774, 14671, 6854, 1388, 14673, 7172, 7363, 4768, 1126, 6879, 4767, 7082, 5040, 1497, 1631, 1382, 9270, 6205, 6214, 10196, 11521, 11545, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 1390, 2064, 10216, 5085, 21, 5092, 587, 558, 576, 504, 11556, 11818, 14725, 6857, 1388, 14727, 7178, 7369, 4809, 1126, 6885, 4808, 7088, 5038, 1497, 1631, 1382, 9297, 6200, 6209, 10225, 11567, 11591, 2]
 
-// Module 14672 (ActivityShareLinkModal)
+// Module 14726 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import LinkIcon from "LinkIcon" /* 5040 */;
-import MessageConstants from "MessageConstants" /* 5084 */;
-import ClipboardUtils from "ClipboardUtils" /* 6879 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7082 */;
-import HeaderShared from "HeaderShared" /* 9270 */;
-import UserRowConstants from "UserRowConstants" /* 10187 */;
-import formatResults from "formatResults" /* 11510 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11774 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14671 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import LinkIcon from "LinkIcon" /* 5038 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
+import HeaderShared from "HeaderShared" /* 9297 */;
+import UserRowConstants from "UserRowConstants" /* 10216 */;
+import formatResults from "formatResults" /* 11556 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11818 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14725 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2063 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2064 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -107,21 +107,21 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
   const currentUser = tmp12Result[0];
   EmbeddedActivitiesStore = tmp12Result[1];
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
+    class K {
       constructor(arg0) {
         connectedActivityChannelId(arg0);
       }
     }
-    cResult[5] = X;
+    cResult[5] = K;
   } else {
-    class X {
+    class K {
       constructor(arg0) {
         connectedActivityChannelId(arg0);
       }
     }
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
+    class K {
       constructor(arg0) {
         connectedActivityChannelId(arg0);
       }
@@ -135,7 +135,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
     tmp19 = fn2;
     tmp18 = items2;
   } else {
-    class X {
+    class K {
       constructor(arg0) {
         connectedActivityChannelId(arg0);
       }
@@ -148,7 +148,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
   let closure_11 = tmp12Result2[0];
   let closure_12 = tmp12Result2[1];
   if (cResult[8] === applicationId) {
-    class X {
+    class K {
       constructor(arg0) {
         connectedActivityChannelId(arg0);
       }
@@ -158,7 +158,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
   cResult[9] = customId;
   cResult[10] = linkId;
   if (stateFromStores1 != null) {
-    class X {
+    class K {
       constructor(arg0) {
         connectedActivityChannelId(arg0);
       }
@@ -270,7 +270,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -323,7 +323,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else {
                   try {
@@ -358,7 +358,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -369,18 +369,18 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
                 return closure_0(...arguments);
               };
             })());
-            let obj6 = { key: "ACTIVITY_SHARE_LINK_SUCCESS", content: intl.formatToPlainString(tmp(linkId[24]).t.jQULqL, obj7) };
+            let obj6 = { text: intl.formatToPlainString(tmp(linkId[24]).t.jQULqL, obj7) };
             const open = tmp2(linkId[23]).open;
             const tmp29 = tmp2(linkId[23]);
             intl = tmp(linkId[24]).intl;
             obj7 = { applicationName: closure_129_14.name };
-            open(obj6);
+            open("ACTIVITY_SHARE_LINK_SUCCESS", obj6);
             closure_129_4(true, closure_129_7);
             const obj8 = tmp(linkId[17]);
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

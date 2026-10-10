@@ -1,14 +1,14 @@
-// Module ID: 8465
-// Function ID: 8466
+// Module ID: 8481
+// Function ID: 8482
 // Name: showShareActionSheet
-// Dependencies: [17, 1383, 8466, 8467, 8470, 1255, 2]
+// Dependencies: [17, 1383, 8482, 8483, 8486, 1255, 2]
 // Exports: showShareActionSheet
 
-// Module 8465 (showShareActionSheet)
+// Module 8481 (showShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
-import react_nativeDefault from "react-native" /* 8466 */;
-import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8467 */;
+import react_nativeDefault from "react-native" /* 8482 */;
+import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8483 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
     const obj2 = require("ShowShareActionSheetUtils");
     mediaShareParams = obj2.getMediaShareParams(source.source);
   } else {
-    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "Set" };
+    mediaShareParams = { mediaFallbackUrl: "backgroundColor", mediaStagingOptions: "IconComponent" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {

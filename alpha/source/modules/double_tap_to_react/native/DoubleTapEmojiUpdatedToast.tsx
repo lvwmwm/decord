@@ -1,16 +1,16 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9439
+// Function ID: 9440
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [5080, 1393, 1415, 5361, 4789, 1126, 4768, 2]
+// Dependencies: [5081, 1393, 1415, 5362, 4828, 1126, 4809, 2]
 // Exports: getToastEmojiEntity, showDoubleTapEmojiUpdatedToast
 
-// Module 9410 (DoubleTapEmojiUpdatedToast)
+// Module 9439 (DoubleTapEmojiUpdatedToast)
 import intl3 from "intl" /* 1126 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5361 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -49,14 +49,14 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
   emoji = emoji.emoji;
   const obj = useIsScreenReaderEnabled;
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(4789).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(4828).AccessibilityAnnouncer;
     const announce = AccessibilityAnnouncer.announce;
     const intl2 = tmp(1126).intl;
     const obj2 = { emojiName: emoji.name };
     announce(intl2.formatToPlainString(intl3.t.nKY0Fl, obj2));
   } else {
     const obj3 = { text: intl.formatToPlainString(intl3.t.nKY0Fl, obj4), icon: obj8 };
-    const openMana = ToastActionCreatorsDefault.openMana;
+    const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = tmp(1126).intl;
     obj4 = { emojiName: emoji.name };
@@ -80,6 +80,6 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
         obj8 = { type: "emoji", unicode: emoji.surrogates };
       }
     }
-    openMana("DEFAULT_REACTION_EMOJI_UPDATED", obj3);
+    open("DEFAULT_REACTION_EMOJI_UPDATED", obj3);
   }
 };

@@ -150,7 +150,7 @@ export const isImageLoaded = function isImageLoaded(arg0) {
 };
 export const loadImage = function loadImage(url, bind) {
   let image;
-  const f136844 = async (arg0, value) => {
+  const f137274 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -174,7 +174,7 @@ export const loadImage = function loadImage(url, bind) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -223,7 +223,7 @@ export const loadImage = function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f156297);
+                let failResult = closure_129_2.fail(f156752);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -234,7 +234,7 @@ export const loadImage = function loadImage(url, bind) {
               }
               let num4 = 3;
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           }
         } catch (tmp18) {
@@ -291,7 +291,7 @@ export const loadImage = function loadImage(url, bind) {
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f136844);
+    image.onerror = _asyncToGenerator(f137274);
     image.onload = () => {
       let callbacks;
       let url;

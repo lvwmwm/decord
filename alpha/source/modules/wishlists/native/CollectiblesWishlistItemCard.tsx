@@ -1,16 +1,16 @@
-// Module ID: 12681
-// Function ID: 12682
+// Module ID: 12728
+// Function ID: 12729
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [109, 19, 7261, 12682, 21, 558, 576, 504, 8953, 8956, 8957, 2]
+// Dependencies: [109, 19, 7267, 12729, 21, 558, 576, 504, 8972, 8975, 8976, 2]
 
-// Module 12681 (CollectiblesWishlistItemCard)
+// Module 12728 (CollectiblesWishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7261 */;
-import SKUPreview from "SKUPreview" /* 8956 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8957 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7267 */;
+import SKUPreview from "SKUPreview" /* 8975 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8976 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import SentGiftsStore from "SentGiftsStore" /* 12682 */;
+import SentGiftsStore from "SentGiftsStore" /* 12729 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp16, tmp17);
     if (cResult[12] !== tmp6) {
-      const tmpResult2 = tmp(8953);
+      const tmpResult2 = tmp(8972);
       const productNameAndTypeFromSku = tmpResult2.getProductNameAndTypeFromSku(tmp6);
       cResult[12] = tmp6;
       cResult[13] = productNameAndTypeFromSku;
@@ -146,7 +146,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
         cResult[25] = tmp32;
         tmp25 = tmp32;
       }
-      OWNED = tmp(8957).WishlistItemCardOverlay.OWNED;
+      OWNED = tmp(8976).WishlistItemCardOverlay.OWNED;
     }
     const fn = function _() {
       let tmp2 = null;

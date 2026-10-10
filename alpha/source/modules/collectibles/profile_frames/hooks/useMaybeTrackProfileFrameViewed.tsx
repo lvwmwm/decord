@@ -1,13 +1,13 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8339
+// Function ID: 8340
 // Name: useMaybeTrackProfileFrameViewed
-// Dependencies: [19, 7257, 573, 8299, 2]
+// Dependencies: [19, 7263, 573, 8315, 2]
 // Exports: default
 
-// Module 8323 (useMaybeTrackProfileFrameViewed)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8299 */;
+// Module 8339 (useMaybeTrackProfileFrameViewed)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8315 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7257 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7263 */;
 import size from "module_2" /* 2 */;
 
 let c2;

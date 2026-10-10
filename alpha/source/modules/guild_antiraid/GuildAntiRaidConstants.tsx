@@ -1,10 +1,10 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8044
+// Function ID: 8045
 // Name: GuildAntiRaidConstants
 // Dependencies: [1096, 1126, 1097, 2]
 // Exports: getTimeframes
 
-// Module 8026 (GuildAntiRaidConstants)
+// Module 8044 (GuildAntiRaidConstants)
 import Constants from "Constants" /* 1096 */;
 import intl7 from "intl" /* 1126 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;

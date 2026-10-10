@@ -1,21 +1,23 @@
-// Module ID: 10601
-// Function ID: 10602
+// Module ID: 10635
+// Function ID: 10636
 // Name: useHandleUseNow
-// Dependencies: [19, 10602, 558, 576, 5055, 5941, 4938, 4768, 1126, 10603, 10606, 2]
+// Dependencies: [19, 10636, 558, 576, 5056, 5934, 4977, 4809, 1126, 10637, 10640, 2]
 
-// Module 10601 (useHandleUseNow)
-import RootNavigationRef from "RootNavigationRef" /* 4938 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import MainTabsConstants from "MainTabsConstants" /* 10602 */;
-import react from "react" /* 19 */;
+// Module 10635 (useHandleUseNow)
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import MainTabsConstants from "MainTabsConstants" /* 10636 */;
+import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let react = react_mod;
 const RootNavigatorScreen = MainTabsConstants.RootNavigatorScreen;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleUseNow(product) {
   let analyticsLocations;
   let canUseNow;
+  let closure_3;
   let isApplying;
   let stageCollectibleChangeForEditProfile;
   const tmp2 = stageCollectibleChangeForEditProfile;
@@ -32,16 +34,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleUse
     if (cResult[1] === stageCollectibleChangeForEditProfile) {
       tmp4 = cResult[2];
     }
-    let closure_3 = tmp4;
+    react = tmp4;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const fn2 = function h() {
         let intl;
-        const obj = { key: "collectible shop apply error", content: intl.string(require("intl").t.CKsXk3) };
+        const obj = { text: intl.string(require("intl").t.CKsXk3) };
         const open = onSuccess(stageCollectibleChangeForEditProfile[7]).open;
         onSuccess(stageCollectibleChangeForEditProfile[7]);
         intl = require("intl").intl;
-        open(obj);
+        open("collectible shop apply error", obj);
       };
       cResult[3] = fn2;
       tmp6 = fn2;
@@ -60,83 +62,132 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleUse
       if (cResult[7] === tmp4) {
         if (cResult[8] === product) {
           if (cResult[9] === handleUseNow) {
-            let tmp9;
             let tmp10;
+            let tmp11;
             if (cResult[10] === stageCollectibleChangeForEditProfile) {
-              tmp9 = cResult[11];
+              tmp10 = cResult[11];
             }
             if (cResult[12] !== analyticsLocations) {
               let obj2 = { analyticsLocations };
               cResult[12] = analyticsLocations;
               cResult[13] = obj2;
-              tmp10 = obj2;
-            } else {
-              tmp10 = cResult[13];
-            }
-            const tmp12 = onSuccess(tmp2[10])(tmp10);
-            let closure_5 = tmp12;
-            if (cResult[14] === onSuccess) {
-              let tmp13;
-              if (cResult[15] === tmp12) {
-                tmp13 = cResult[16];
-              }
-              if (cResult[17] === canUseNow) {
-                if (cResult[18] === tmp13) {
-                  if (cResult[19] === tmp9) {
-                    let tmp14;
-                    if (cResult[20] === isApplying) {
-                      tmp14 = cResult[21];
-                    }
-                    return tmp14;
+              class R {
+                constructor() {
+                  closure_5();
+                  if (null == onSuccess) {
+                    const obj = ActionSheetActionCreatorsDefault;
+                    obj.hideAllActionSheets();
+                    const obj2 = ModalActionCreatorsDefault;
+                    obj2.popAll();
+                  } else {
+                    tmp2();
                   }
                 }
               }
-              let obj3 = { handleUseNow: tmp9, isApplying, canUseNow, handleEditProfile: tmp13 };
-              cResult[17] = canUseNow;
-              cResult[18] = tmp13;
-              cResult[19] = tmp9;
+            } else {
+              tmp11 = cResult[13];
+            }
+            const tmp13 = onSuccess(tmp2[10])(tmp11);
+            let closure_5 = tmp13;
+            if (cResult[14] === onSuccess) {
+              let tmp14;
+              if (cResult[15] === tmp13) {
+                tmp14 = cResult[16];
+              }
+              if (cResult[17] === canUseNow) {
+                if (cResult[18] === tmp14) {
+                  if (cResult[19] === tmp10) {
+                    let tmp15;
+                    if (cResult[20] === isApplying) {
+                      tmp15 = cResult[21];
+                    }
+                    return tmp15;
+                  }
+                }
+              }
+              let obj3 = { handleUseNow: tmp10, isApplying, canUseNow, handleEditProfile: null };
+              class R {
+                constructor() {
+                  closure_5();
+                  if (null == onSuccess) {
+                    const obj = ActionSheetActionCreatorsDefault;
+                    obj.hideAllActionSheets();
+                    const obj2 = ModalActionCreatorsDefault;
+                    obj2.popAll();
+                  } else {
+                    tmp2();
+                  }
+                }
+              }
+              class A {
+                constructor() {
+                  if (null != stageCollectibleChangeForEditProfile) {
+                    tmp(require);
+                    closure_3();
+                  } else {
+                    handleUseNow();
+                  }
+                }
+              }
+              cResult[18] = tmp14;
+              cResult[19] = tmp10;
               cResult[20] = isApplying;
               cResult[21] = obj3;
-              tmp14 = obj3;
+              tmp15 = obj3;
             }
-            const fn4 = function k() {
-              closure_5();
-              if (null == onSuccess) {
-                const obj = ActionSheetActionCreatorsDefault;
-                obj.hideAllActionSheets();
-                const obj2 = ModalActionCreatorsDefault;
-                obj2.popAll();
-              } else {
-                tmp2();
+            class R {
+              constructor() {
+                closure_5();
+                if (null == onSuccess) {
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideAllActionSheets();
+                  const obj2 = ModalActionCreatorsDefault;
+                  obj2.popAll();
+                } else {
+                  tmp2();
+                }
               }
-            };
-            cResult[14] = onSuccess;
-            cResult[15] = tmp12;
-            cResult[16] = fn4;
-            tmp13 = fn4;
+            }
+            class A {
+              constructor() {
+                if (null != stageCollectibleChangeForEditProfile) {
+                  tmp(require);
+                  closure_3();
+                } else {
+                  handleUseNow();
+                }
+              }
+            }
+            cResult[15] = tmp13;
+            cResult[16] = R;
+            tmp14 = R;
           }
         }
       }
-      const fn3 = function y() {
-        if (null != stageCollectibleChangeForEditProfile) {
-          tmp(require);
-          closure_3();
-        } else {
-          handleUseNow();
+      class A {
+        constructor() {
+          if (null != stageCollectibleChangeForEditProfile) {
+            tmp(require);
+            closure_3();
+          } else {
+            handleUseNow();
+          }
         }
-      };
+      }
       cResult[7] = tmp4;
       cResult[8] = product;
       cResult[9] = handleUseNow;
       cResult[10] = stageCollectibleChangeForEditProfile;
-      cResult[11] = fn3;
-      tmp9 = fn3;
+      cResult[11] = A;
+      tmp10 = A;
     }
-    const obj4 = { product, onSuccess: tmp4, onError: tmp6 };
+    tmp8[0] = product;
+    tmp8[1] = tmp4;
+    tmp8[2] = tmp6;
     cResult[4] = tmp4;
     cResult[5] = product;
-    cResult[6] = obj4;
-    tmp7 = obj4;
+    cResult[6] = tmp8;
+    tmp7 = tmp8;
   }
   const fn = function n() {
     if (null == onSuccess) {
@@ -190,11 +241,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleUse
   }, items);
   const callback1 = onSuccess.useCallback(() => {
     let intl;
-    const obj = { key: "collectible shop apply error", content: intl.string(require("intl").t.CKsXk3) };
+    const obj = { text: intl.string(require("intl").t.CKsXk3) };
     const open = onSuccess(stageCollectibleChangeForEditProfile[7]).open;
     onSuccess(stageCollectibleChangeForEditProfile[7]);
     intl = require("intl").intl;
-    open(obj);
+    open("collectible shop apply error", obj);
   }, []);
   let obj = require("hooks/useHandleUseNow");
   const handleUseNow1 = obj.useHandleUseNow({ product, onSuccess, onError: callback1 });

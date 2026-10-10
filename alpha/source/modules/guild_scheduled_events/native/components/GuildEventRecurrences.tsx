@@ -1,17 +1,17 @@
-// Module ID: 8650
-// Function ID: 8651
+// Module ID: 8660
+// Function ID: 8661
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 8651, 5087, 1126, 11, 8653, 5376, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8661, 5088, 1126, 11, 8663, 5379, 2]
 
-// Module 8650 (GuildEventRecurrences)
+// Module 8660 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 8651 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 8653 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 8661 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 8663 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -183,7 +183,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
   let obj = { style: tmp2.container, children: items };
   let obj2 = { variant: "heading-md/semibold", children: intl.string(guildEventId(1126).t["D/jjoa"]) };
   useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
-  const Text = guildEventId(5087).Text;
+  const Text = guildEventId(5088).Text;
   intl = guildEventId(1126).intl;
   items = [closure_6(Text, obj2), , ];
   const obj3 = {
@@ -216,7 +216,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
         },
       size: "sm"
     };
-    const Button = tmp8(5376).Button;
+    const Button = tmp8(5379).Button;
     intl2 = tmp8(1126).intl;
     canViewMoreRecurrences = tmp7(Button, obj4);
   }

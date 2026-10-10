@@ -1,10 +1,10 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 10707
+// Function ID: 10708
 // Name: CategoryCollapseActionCreators
 // Dependencies: [584, 2]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll
 
-// Module 10673 (CategoryCollapseActionCreators)
+// Module 10707 (CategoryCollapseActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,28 @@
-// Module ID: 6836
-// Function ID: 6837
+// Module ID: 6839
+// Function ID: 6840
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 109, 19, 17, 6837, 21, 5091, 587, 1382, 558, 576, 1631, 5361, 6263, 6305, 5388, 1105, 4811, 6838, 4795, 6839, 5393, 6840, 6841, 6726, 1497, 4933, 6842, 4788, 2]
+// Dependencies: [32, 109, 19, 17, 6840, 21, 5092, 587, 1382, 558, 576, 1631, 5362, 6258, 6306, 5391, 1105, 4850, 6841, 4834, 6842, 5396, 6843, 6844, 6727, 1497, 4972, 6845, 4827, 2]
 
-// Module 6836 (Sheet/BottomSheet)
+// Module 6839 (Sheet/BottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4933 */;
-import LinearGradientDefault from "LinearGradient" /* 5388 */;
-import BottomSheetModal from "BottomSheetModal" /* 6305 */;
-import reactDefault from "react" /* 6838 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6840 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 6841 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4972 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import BottomSheetModal from "BottomSheetModal" /* 6306 */;
+import reactDefault from "react" /* 6841 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6843 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 6844 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6837 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6840 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,10 +46,10 @@ let tmp;
 let tmp2;
 let unpackModuleId;
 const ConstantsIOS = tmp(1105);
-const useIsScreenReaderEnabled = tmp(5361);
-const NavigatorConstants = tmp(6263);
-const BottomSheetModalDefault = tmp2(6305);
-const NavScrim = tmp2(6726);
+const useIsScreenReaderEnabled = tmp(5362);
+const NavigatorConstants = tmp(6258);
+const BottomSheetModalDefault = tmp2(6306);
+const NavScrim = tmp2(6727);
 let closure_3 = ["startHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "scrollViewStyle", "startExpanded", "onChange", "onExpand", "keyboardShouldPersistTaps", "children", "maxDynamicContentSize", "ref"];
 let closure_4 = ["startHeight", "contentHeight", "maxHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "onChange", "onExpand", "children", "borderGradient", "extraContent", "ref"];
 let closure_5 = ["scrollable", "startHeight", "maxHeight", "containerHeight", "startExpanded", "backdropOpacity", "backdropChildren", "header", "handleComponent", "handleDisabled", "dismissAccessibilityLabel", "footer", "onExpand", "onDismiss", "keyboardShouldPersistTaps", "children", "backgroundStyles", "contentStyles", "bodyStyles", "borderGradient", "showGradient", "extraContent", "contentHeight", "ref"];
@@ -346,11 +346,11 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     const tmp2Result = BottomSheetModalDefault;
     const merged1 = Object.assign(merged);
     if (maxDynamicContentSize == null) {
-      maxDynamicContentSize = height - tmp4(6263).NAV_BAR_HEIGHT_MULTILINE - top;
+      maxDynamicContentSize = height - tmp4(6258).NAV_BAR_HEIGHT_MULTILINE - top;
     }
     obj4 = { bounces: false, keyboardShouldPersistTaps, style: scrollViewStyle, children: closure_20(authStore, obj5) };
     obj5 = { onLayout: callback, style: wrapperStyle, children };
-    BottomSheetScrollView = tmp4(6305).BottomSheetScrollView;
+    BottomSheetScrollView = tmp4(6306).BottomSheetScrollView;
     return closure_20(tmp2Result, obj3);
   }
   items = [];
@@ -975,7 +975,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
   transitionState(onLeave.useState(undefined !== tmp8 && tmp8), 2);
   let closure_12 = onLeave.useRef(false);
   ref = onLeave.useRef(true);
-  onLeave.useContext(tmp(4795).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
+  onLeave.useContext(tmp(4834).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
   if (cResult[26] === tmp15) {
     let tmp42;
     let tmp43;
@@ -984,7 +984,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
       tmp43 = cResult[29];
     }
     const layoutEffect = obj2.useLayoutEffect(tmp42, tmp43);
-    let tmpResult = tmp(6839);
+    let tmpResult = tmp(6842);
     const bottomSheetImperativeHandle = tmpResult.useBottomSheetImperativeHandle(tmp12, ref1);
     if (cResult[30] === close) {
       let tmp46;
@@ -999,7 +999,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
         if (cResult[35] === onLeave) {
           tmp49 = cResult[36];
         }
-        const tmpResult4 = tmp(5393);
+        const tmpResult4 = tmp(5396);
         const unmountEffect = tmpResult4.useUnmountEffect(tmp49);
         if (cResult[37] !== close) {
           function ie(arg0, arg1, arg2, arg3, arg4) {
@@ -1052,18 +1052,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
         ke.__closure = obj3;
         ke.__workletHash = 4341912681188;
         ke.__initData = __initData;
-        const tmpResult5 = tmp(4811);
+        const tmpResult5 = tmp(4850);
         const derivedValue = tmpResult5.useDerivedValue(ke);
-        const tmpResult6 = tmp(4811);
-        class Oe {
+        const tmpResult6 = tmp(4850);
+        class Be {
           constructor() {
             return derivedValue.get();
           }
         }
         const obj4 = { animatedIsVisuallyClosed: derivedValue };
-        Oe.__closure = obj4;
-        Oe.__workletHash = 6995719052506;
-        Oe.__initData = __initData2;
+        Be.__closure = obj4;
+        Be.__workletHash = 6995719052506;
+        Be.__initData = __initData2;
         class De {
           constructor(arg0) {
             const tmp = arg0 && "exiting" === transitionState;
@@ -1074,13 +1074,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
           }
         }
         const useAnimatedReaction = tmpResult6.useAnimatedReaction;
-        De.__closure = { transitionState, runOnJS: tmp(4811).runOnJS, onLeave };
+        De.__closure = { transitionState, runOnJS: tmp(4850).runOnJS, onLeave };
         De.__workletHash = 1921852093213;
         De.__initData = __initData3;
-        const obj5 = { transitionState, runOnJS: tmp(4811).runOnJS, onLeave };
-        const animatedReaction = useAnimatedReaction(Oe, De);
+        const obj5 = { transitionState, runOnJS: tmp(4850).runOnJS, onLeave };
+        const animatedReaction = useAnimatedReaction(Be, De);
         if (cResult[41] !== tmp22) {
-          class Be {
+          class Oe {
             constructor() {
               obj = {
                 accessibilityLabel: closure_2,
@@ -1095,9 +1095,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
             }
           }
           cResult[41] = tmp22;
-          cResult[42] = Be;
+          cResult[42] = Oe;
         } else {
-          class Be {
+          class Oe {
             constructor() {
               obj = {
                 accessibilityLabel: closure_2,
@@ -1114,7 +1114,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
         }
         if (cResult[43] === tmp31) {
           let tmp64;
-          class Be {
+          class Oe {
             constructor() {
               obj = {
                 accessibilityLabel: closure_2,
@@ -1341,11 +1341,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
                       const obj6 = { children: closure_21(ref1, obj7) };
                       obj7 = { style: tmp75, children: items };
                       items = [tmp76, tmp80];
-                      const LayerScope = tmp(6842).LayerScope;
+                      const LayerScope = tmp(6845).LayerScope;
                       cResult[67] = tmp75;
                       cResult[68] = tmp76;
                       const tmp88 = closure_20(LayerScope, obj6);
-                      class Oe {
+                      class Be {
                         constructor() {
                           return derivedValue.get();
                         }
@@ -1398,7 +1398,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
           }
           const items4 = [tmp38.wrapper, null != tmp27 && tmp38.wrapperWithBorder];
           cResult[49] = tmp38.wrapper;
-          class Oe {
+          class Be {
             constructor() {
               return derivedValue.get();
             }
@@ -1498,8 +1498,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
   let startExpanded;
   let startHeight;
   let str;
-  let tmp29;
-  let tmp9Result8;
+  let tmp28;
   let flag = scrollable.scrollable;
   if (flag === undefined) {
     flag = false;
@@ -1565,8 +1564,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
       close();
     }
   }, items1);
-  const tmp9Result5 = backdropOpacity(dismissAccessibilityLabel[21]);
-  const unmountEffect = tmp9Result5.useUnmountEffect(() => {
+  const tmp9Result4 = backdropOpacity(dismissAccessibilityLabel[21]);
+  const unmountEffect = tmp9Result4.useUnmountEffect(() => {
     if (ref.current) {
       if (onDismiss != null) {
         tmp();
@@ -1601,33 +1600,35 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
   }, items3);
   const tmp17 = closure_28(merged.animatedIndex);
   closure_14 = tmp17;
-  function be() {
+  function me() {
     return closure_14.get() <= -1;
   }
-  be.__closure = { animatedIndex: tmp17 };
-  be.__workletHash = 11856440255681;
-  be.__initData = __initData4;
-  const tmp9Result6 = backdropOpacity(dismissAccessibilityLabel[17]);
-  const derivedValue = tmp9Result6.useDerivedValue(be);
+  me.__closure = { animatedIndex: tmp17 };
+  me.__workletHash = 11856440255681;
+  me.__initData = __initData4;
+  const tmp9Result5 = backdropOpacity(dismissAccessibilityLabel[17]);
+  const derivedValue = tmp9Result5.useDerivedValue(me);
   function pe() {
     return derivedValue.get();
   }
   pe.__closure = { animatedIsVisuallyClosed: derivedValue };
   pe.__workletHash = 888700167933;
   pe.__initData = __initData5;
-  function me(arg0) {
-    const tmp = arg0 && "exiting" === transitionState;
-    if (tmp) {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(onLeave)();
+  const tmp9Result6 = backdropOpacity(dismissAccessibilityLabel[17]);
+  class Se {
+    constructor(arg0) {
+      const tmp = arg0 && "exiting" === transitionState;
+      if (tmp) {
+        const obj = ReanimatedRexport;
+        obj.runOnJS(onLeave)();
+      }
     }
   }
-  const tmp9Result7 = backdropOpacity(dismissAccessibilityLabel[17]);
   let obj2 = { transitionState, runOnJS: tmp9(tmp3[17]).runOnJS, onLeave };
-  me.__closure = obj2;
-  me.__workletHash = 9237161324088;
-  me.__initData = __initData6;
-  const animatedReaction = tmp9Result7.useAnimatedReaction(pe, me);
+  Se.__closure = obj2;
+  Se.__workletHash = 9237161324088;
+  Se.__initData = __initData6;
+  const animatedReaction = tmp9Result6.useAnimatedReaction(pe, Se);
   const items4 = [dismissAccessibilityLabel];
   const items5 = [backdropOpacity, backdropChildren];
   const callback2 = obj.useCallback(() => {
@@ -1673,45 +1674,43 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
   if (backgroundComponent == null) {
     backgroundComponent = showGradient ? closure_26 : closure_25;
   }
-  const obj3 = { ref: ref1, accessible: !tmp9Result8.isIOS() && undefined, accessibilityRole: "none", accessibilityLabel: "", startHeight, contentHeight, maxHeight, containerHeight, startExpanded, hasEverExpanded: first, windowDimensions: tmp23, wrapperStyle: items7, onExpand: callback1, enablePanDownToClose: true, containerStyle: tmp24, backgroundStyle: items8, topInset: top, keyboardBehavior: str, keyboardBlurBehavior: "restore", keyboardShouldPersistTaps, animationConfigs: tmp10, overrideReduceMotion: backdropOpacity(dismissAccessibilityLabel[17]).ReduceMotion.Never, handleIndicatorStyle: tmp5.handleIndicator, handleComponent: tmp29, backdropComponent: callback3, backgroundComponent, renderFooter: callback4, animatedIndex: tmp17, onAnimate: callback, onClose: onLeave, borderGradient, extraContent, children: closure_20(LayerScope, obj6) };
-  tmp9Result8 = backdropOpacity(dismissAccessibilityLabel[8]);
+  const obj3 = { ref: ref1, accessible: false, accessibilityRole: "none", accessibilityLabel: "", startHeight, contentHeight, maxHeight, containerHeight, startExpanded, hasEverExpanded: first, windowDimensions: tmp23, wrapperStyle: items7, onExpand: callback1, enablePanDownToClose: true, containerStyle: tmp24, backgroundStyle: items8, topInset: top, keyboardBehavior: str, keyboardBlurBehavior: "restore", keyboardShouldPersistTaps, animationConfigs: tmp10, overrideReduceMotion: backdropOpacity(dismissAccessibilityLabel[17]).ReduceMotion.Never, handleIndicatorStyle: tmp5.handleIndicator, handleComponent: tmp28, backdropComponent: callback3, backgroundComponent, renderFooter: callback4, animatedIndex: tmp17, onAnimate: callback, onClose: onLeave, borderGradient, extraContent, children: closure_20(LayerScope, obj6) };
   items7 = [tmp5.wrapper, null != borderGradient && tmp5.wrapperWithBorder];
   items8 = [tmp5.background, backgroundStyles];
   str = "interactive";
-  tmp9Result8.isIOS();
   if (flag) {
     str = "extend";
   }
-  tmp29 = null;
+  tmp28 = null;
   if (!handleDisabled) {
     if (handleComponent == null) {
       handleComponent = callback2;
     }
-    tmp29 = handleComponent;
+    tmp28 = handleComponent;
   }
   const obj4 = { style: items9, children: items10 };
   items9 = [tmp5.content, contentStyles];
   let tmp27Result = null != header;
   LayerScope = tmp9(tmp3[27]).LayerScope;
-  const tmp30 = closure_21;
+  const tmp29 = closure_21;
   if (tmp27Result) {
     const obj5 = { style: tmp5.header, children: header };
-    tmp27Result = tmp27(tmp31, obj5);
+    tmp27Result = tmp27(tmp30, obj5);
   }
   items10 = [tmp27Result, ];
   const obj7 = { style: items11, children };
   items11 = [tmp5.body, bodyStyles];
-  obj6 = { children: tmp30(ref1, obj4) };
+  obj6 = { children: tmp29(ref1, obj4) };
   items10[1] = closure_20(ref1, obj7);
   const tmp27Result3 = closure_20(tmp25, obj3);
   let tmp27Result4 = tmp27Result3;
   if (showGradient) {
-    let tmp35 = tmp26;
+    let tmp34 = tmp26;
     const ThemeContextProvider = tmp9(tmp3[28]).ThemeContextProvider;
     if (tmp26 == null) {
-      tmp35 = null;
+      tmp34 = null;
     }
-    const obj8 = { gradient: tmp35, children: tmp27Result3 };
+    const obj8 = { gradient: tmp34, children: tmp27Result3 };
     tmp27Result4 = tmp27(ThemeContextProvider, obj8);
   }
   return tmp27Result4;

@@ -1,15 +1,15 @@
-// Module ID: 16515
-// Function ID: 16516
+// Module ID: 16585
+// Function ID: 16586
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 7112, 4969, 1085, 558, 576, 12230, 6848, 7132, 8008, 8006, 5966, 7113, 2]
+// Dependencies: [5, 19, 7118, 5008, 1085, 558, 576, 12274, 6851, 7138, 8026, 8024, 5959, 7119, 2]
 
-// Module 16515 (useGuildPowerupsBoostAction)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6848 */;
-import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12230 */;
+// Module 16585 (useGuildPowerupsBoostAction)
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
+import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 12274 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7112 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4969 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7118 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -104,7 +104,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -195,7 +195,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -229,7 +229,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else if (arg0 === 1) {
           c3 = 3;

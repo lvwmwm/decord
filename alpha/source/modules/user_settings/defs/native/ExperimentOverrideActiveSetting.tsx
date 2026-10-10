@@ -1,23 +1,23 @@
-// Module ID: 16035
-// Function ID: 16036
+// Module ID: 16097
+// Function ID: 16098
 // Name: ExperimentOverrideActiveSetting
-// Dependencies: [4977, 1259, 21, 14753, 558, 576, 504, 16036, 15039, 10629, 15804, 2]
+// Dependencies: [5016, 1259, 21, 14808, 558, 576, 504, 16098, 15098, 10663, 15866, 2]
 
-// Module 16035 (ExperimentOverrideActiveSetting)
+// Module 16097 (ExperimentOverrideActiveSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14753 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15039 */;
-import BeakerIcon from "BeakerIcon" /* 15804 */;
-import ExperimentStore from "ExperimentStore" /* 4977 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14808 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15098 */;
+import BeakerIcon from "BeakerIcon" /* 15866 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DevToolsContent = tmp(16036);
+const DevToolsContent = tmp(16098);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExperimentOverrideActiveCount() {

@@ -1,30 +1,30 @@
-// Module ID: 16787
-// Function ID: 16788
+// Module ID: 16857
+// Function ID: 16858
 // Name: ForYouItemActionButtons
-// Dependencies: [109, 5, 19, 17, 2064, 1390, 1085, 21, 5091, 1121, 558, 576, 4811, 5092, 1126, 5376, 5374, 5087, 573, 7975, 16389, 5068, 13994, 10200, 6065, 7008, 7011, 4768, 9661, 1265, 2]
+// Dependencies: [109, 5, 19, 17, 2065, 1390, 1085, 21, 5092, 1121, 558, 576, 4850, 5093, 1126, 5379, 5377, 5088, 573, 7993, 16456, 5069, 14049, 10229, 6058, 7014, 7017, 4809, 9690, 1265, 2]
 
-// Module 16787 (ForYouItemActionButtons)
+// Module 16857 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import intl22 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import parseURLDefault from "parseURL" /* 5068 */;
-import timing from "timing" /* 5092 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6065 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7008 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7011 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10200 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 13994 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16389 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import parseURLDefault from "parseURL" /* 5069 */;
+import timing from "timing" /* 5093 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6058 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7017 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10229 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 14049 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16456 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFrie
   fn.__initData = __initData;
   ({ withTiming: pressed(sharedValue1[13]).withTiming, pressed });
   const animatedStyle = obj6.useAnimatedStyle(fn);
-  const fn2 = function o() {
+  const fn2 = function s() {
     let items;
     let num4;
     let obj4;
@@ -156,7 +156,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFrie
   fn2.__initData = __initData2;
   ({ pressed, acceptButtonWidth: sharedValue, buttonWidth: sharedValue1, withTiming: pressed(sharedValue1[13]).withTiming });
   const animatedStyle1 = obj8.useAnimatedStyle(fn2);
-  const fn3 = function s() {
+  const fn3 = function o() {
     let items;
     const obj = { transform: items };
     items = [{ translateX: sharedValue2.get() / 2 }, ];
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFrie
     const obj = { transform: items };
     const obj2 = { rotateZ: withDelay(450, withRepeat(withTiming(str, obj3), 4, true)) };
     obj3 = { duration: 150, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-    Easing = tmp(4811).Easing;
+    Easing = tmp(4850).Easing;
     items = [obj2, { translateX: -sharedValue2.get() / 2 }, ];
     ({ translateX: -sharedValue2.get() / 2 });
     items[2] = { translateY: -sharedValue3.get() / 2 };
@@ -576,7 +576,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function IncomingFrie
       const obj = { transform: items };
       const obj2 = { rotateZ: withDelay(450, withRepeat(withTiming(str, obj3), 4, true)) };
       obj3 = { duration: 150, easing: Easing.inOut(ReanimatedRexport.Easing.quad) };
-      Easing = tmp(4811).Easing;
+      Easing = tmp(4850).Easing;
       items = [obj2, { translateX: -sharedValue2.get() / 2 }, ];
       ({ translateX: -sharedValue2.get() / 2 });
       items[2] = { translateY: -sharedValue3.get() / 2 };
@@ -722,7 +722,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
   const message3 = other_user.message;
-  const tmpResult3 = tmp(7975);
+  const tmpResult3 = tmp(7993);
   const canReplyToMessage = tmpResult3.useCanReplyToMessage(stateFromStores, other_user.message);
   if (message3 != null) {
     const type = message3.type;
@@ -734,7 +734,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
         tmp13 = cResult[6];
       }
       let closure_8 = tmp13;
-      const tmpResult4 = tmp(4811);
+      const tmpResult4 = tmp(4850);
       class T {
         constructor() {
           const message = other_user.message;
@@ -819,11 +819,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
                         const obj = RelationshipActionCreatorsDefault;
                         const obj2 = { userId: id, context: { location: "notification_center_v2" } };
                         obj.addRelationship(obj2);
-                        const obj3 = { key: "NOTIF_CENTER_V2_ADD_FRIEND_TOAST", content: intl.string(intl22.t["7MAxkR"]) };
+                        const obj3 = { text: intl.string(intl22.t["7MAxkR"]) };
                         const open = ToastActionCreatorsDefault.open;
                         ToastActionCreatorsDefault;
                         intl = intl22.intl;
-                        open(obj3);
+                        open("NOTIF_CENTER_V2_ADD_FRIEND_TOAST", obj3);
                       }
                     }
                     cResult[21] = id;
@@ -849,11 +849,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
                         const obj = RelationshipActionCreatorsDefault;
                         const obj2 = { userId: id, context: { location: "notification_center_v2" } };
                         obj.addRelationship(obj2);
-                        const obj3 = { key: "NOTIF_CENTER_V2_ADD_FRIEND_TOAST", content: intl.string(intl22.t["7MAxkR"]) };
+                        const obj3 = { text: intl.string(intl22.t["7MAxkR"]) };
                         const open = ToastActionCreatorsDefault.open;
                         ToastActionCreatorsDefault;
                         intl = intl22.intl;
-                        open(obj3);
+                        open("NOTIF_CENTER_V2_ADD_FRIEND_TOAST", obj3);
                       }
                     }
                   }
@@ -864,11 +864,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
                         const obj = RelationshipActionCreatorsDefault;
                         const obj2 = { userId: id, context: { location: "notification_center_v2" } };
                         obj.addRelationship(obj2);
-                        const obj3 = { key: "NOTIF_CENTER_V2_ADD_FRIEND_TOAST", content: intl.string(intl22.t["7MAxkR"]) };
+                        const obj3 = { text: intl.string(intl22.t["7MAxkR"]) };
                         const open = ToastActionCreatorsDefault.open;
                         ToastActionCreatorsDefault;
                         intl = intl22.intl;
-                        open(obj3);
+                        open("NOTIF_CENTER_V2_ADD_FRIEND_TOAST", obj3);
                       }
                     }
                   }
@@ -1117,7 +1117,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
     }
     closure_4(other_user);
   }, items1);
-  const tmp2Result = tmp2(4811);
+  const tmp2Result = tmp2(4850);
   const sharedValue = tmp2Result.useSharedValue(false);
   const items2 = [arg3, sharedValue, other_user, id, arg6];
   const callback1 = notification_center_v2.useCallback(() => {
@@ -1204,11 +1204,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
     obj3 = { location: notification_center_v2 };
     const obj = RelationshipActionCreatorsDefault;
     obj.addRelationship(obj2);
-    const obj4 = { key: "NOTIF_CENTER_V2_ADD_FRIEND_TOAST", content: intl.string(intl22.t["7MAxkR"]) };
+    const obj4 = { text: intl.string(intl22.t["7MAxkR"]) };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl22.intl;
-    open(obj4);
+    open("NOTIF_CENTER_V2_ADD_FRIEND_TOAST", obj4);
   }, items6);
   const items7 = [onPress, stateFromStores, , ];
   ({ message_id: arr8[2], message_channel_id: arr8[3] } = other_user);
@@ -1224,7 +1224,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -1259,7 +1259,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
         closure_128_1();
         focusChatInput(closure_128_0.message_channel_id);
         c2 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp17) {
         c2 = 3;
         throw tmp17;
@@ -1286,10 +1286,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
     let obj3 = { actionButtons: [] };
     return obj3;
   } else {
-    if (other_user.type !== tmp2(6065).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
-      if (other_user.type !== tmp2(6065).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-        if (other_user.type !== tmp2(6065).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
-          if (other_user.type === tmp2(6065).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
+    if (other_user.type !== tmp2(6058).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
+      if (other_user.type !== tmp2(6058).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+        if (other_user.type !== tmp2(6058).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
+          if (other_user.type === tmp2(6058).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
             let obj4 = { actionButtons: items9, accessibilityActions: items10, onAccessibilityAction: callback3 };
             let obj5 = { id: "view_friend_requests", text: intl14.string(tmp2(1126).t["lMR96+"]), variant: "secondary", size: "md", onPress: callback3 };
             intl14 = tmp2(1126).intl;
@@ -1298,7 +1298,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
             intl15 = tmp2(1126).intl;
             items10 = [obj6];
             return obj4;
-          } else if (other_user.type === tmp2(6065).NotificationCenterItems.GO_LIVE_PUSH) {
+          } else if (other_user.type === tmp2(6058).NotificationCenterItems.GO_LIVE_PUSH) {
             const obj7 = { actionButtons: items11, accessibilityActions: items12, onAccessibilityAction: onPress };
             const obj8 = { id: "join_stream", text: intl12.string(tmp2(1126).t["Pqj7h+"]), variant: "secondary", size: "md", onPress };
             intl12 = tmp2(1126).intl;
@@ -1308,11 +1308,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
             items12 = [obj9];
             return obj7;
           } else {
-            if (other_user.type !== tmp2(6065).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-              if (other_user.type !== tmp2(6065).NotificationCenterItems.DM_FRIEND_NUDGE) {
-                if (other_user.type !== tmp2(6065).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED) {
-                  if (other_user.type !== tmp2(6065).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED) {
-                    if (other_user.type === tmp2(6065).NotificationCenterItems.FRIEND_SUGGESTION_CREATED) {
+            if (other_user.type !== tmp2(6058).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+              if (other_user.type !== tmp2(6058).NotificationCenterItems.DM_FRIEND_NUDGE) {
+                if (other_user.type !== tmp2(6058).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED) {
+                  if (other_user.type !== tmp2(6058).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED) {
+                    if (other_user.type === tmp2(6058).NotificationCenterItems.FRIEND_SUGGESTION_CREATED) {
                       const obj10 = { actionButtons: items13, accessibilityActions: items14, onAccessibilityAction: callback5 };
                       const obj11 = { id: "add_friend", text: intl8.string(tmp2(1126).t["boL/YX"]), variant: "secondary", size: "md", onPress: callback5 };
                       intl8 = tmp2(1126).intl;
@@ -1321,7 +1321,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
                       intl9 = tmp2(1126).intl;
                       items14 = [obj12];
                       return obj10;
-                    } else if (other_user.type === tmp2(6065).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED) {
+                    } else if (other_user.type === tmp2(6058).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED) {
                       const obj13 = { actionButtons: items15, accessibilityActions: items16, onAccessibilityAction: onPress };
                       const obj14 = { id: "join_event", text: intl6.string(tmp2(1126).t.hRKdcn), variant: "secondary", size: "md", onPress };
                       intl6 = tmp2(1126).intl;
@@ -1330,26 +1330,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
                       intl7 = tmp2(1126).intl;
                       items16 = [obj15];
                       return obj13;
-                    } else if (other_user.type === tmp2(6065).NotificationCenterItems.LIFECYCLE_ITEM) {
+                    } else if (other_user.type === tmp2(6058).NotificationCenterItems.LIFECYCLE_ITEM) {
                       let stringResult;
                       let str;
                       const item_enum = other_user.item_enum;
-                      if (tmp2(6065).ItemEnum.UPDATE_PROFILE === item_enum) {
+                      if (tmp2(6058).ItemEnum.UPDATE_PROFILE === item_enum) {
                         const intl5 = tmp2(1126).intl;
                         stringResult = intl5.string(tmp2(1126).t.zMRcWL);
                         str = "update_profile";
-                      } else if (tmp2(6065).ItemEnum.FIND_FRIENDS === item_enum) {
+                      } else if (tmp2(6058).ItemEnum.FIND_FRIENDS === item_enum) {
                         const intl4 = tmp2(1126).intl;
                         stringResult = intl4.string(tmp2(1126).t["vwL/4s"]);
                         str = "find_friends";
-                      } else if (tmp2(6065).ItemEnum.ADD_FRIEND === item_enum) {
+                      } else if (tmp2(6058).ItemEnum.ADD_FRIEND === item_enum) {
                         const intl3 = tmp2(1126).intl;
                         stringResult = intl3.string(tmp2(1126).t["boL/YX"]);
                         str = "add_friend";
                       } else {
                         str = null;
                         stringResult = null;
-                        if (tmp2(6065).ItemEnum.FIRST_MESSAGE === item_enum) {
+                        if (tmp2(6058).ItemEnum.FIRST_MESSAGE === item_enum) {
                           const intl19 = tmp2(1126).intl;
                           stringResult = intl19.string(tmp2(1126).t["GuUH7/"]);
                           str = "send_message";
@@ -1371,9 +1371,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
                       const obj19 = { actionButtons: [] };
                     } else {
                       let obj23;
-                      if (other_user.type !== tmp2(6065).NotificationCenterItems.RECENT_MENTION) {
-                        if (other_user.type !== tmp2(6065).NotificationCenterItems.REPLY_MENTION) {
-                          if (other_user.type === tmp2(6065).NotificationCenterItems.TRENDING_CONTENT) {
+                      if (other_user.type !== tmp2(6058).NotificationCenterItems.RECENT_MENTION) {
+                        if (other_user.type !== tmp2(6058).NotificationCenterItems.REPLY_MENTION) {
+                          if (other_user.type === tmp2(6058).NotificationCenterItems.TRENDING_CONTENT) {
                             const obj20 = { actionButtons: items19, accessibilityActions: items20, onAccessibilityAction: callback7 };
                             const obj21 = { id: "read_summary", text: intl.string(tmp2(1126).t.k0Q31F), variant: "secondary", size: "md", onPress: callback7 };
                             intl = tmp2(1126).intl;
@@ -1435,7 +1435,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
         }
     };
     obj32 = { onWavePress, onAccept: callback1, onIgnore: callback2, pressed: sharedValue, compactMode };
-    if (other_user.type === tmp2(6065).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+    if (other_user.type === tmp2(6058).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
       const obj33 = { name: constants3.WAVE, label: intl16.string(tmp2(1126).t.n8nU4W) };
       intl16 = tmp2(1126).intl;
       const items25 = [obj33];

@@ -1,22 +1,22 @@
 // Module ID: 2018
 // Function ID: 2019
 // Name: ClipsStore
-// Dependencies: [5, 2019, 502, 7744, 1085, 5211, 4690, 14226, 1403, 14227, 14229, 14230, 504, 584, 2]
+// Dependencies: [5, 2019, 502, 7762, 1085, 5212, 4731, 14281, 1403, 14282, 14284, 14285, 504, 584, 2]
 
 // Module 2018 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import DiscordNativeDefault from "DiscordNative" /* 4690 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 14227 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14229 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14230 */;
+import DiscordNativeDefault from "DiscordNative" /* 4731 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14282 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14284 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14285 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 7744 */;
+import ClipsConstants from "ClipsConstants" /* 7762 */;
 import Constants from "Constants" /* 1085 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5211 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5212 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -48,7 +48,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -118,7 +118,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_40.emitChange();
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {
@@ -287,7 +287,7 @@ function trackClipMessage(message) {
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);
 let c16 = "default";
 let c17 = "Discord Clips";
-const authStore6 = {};
+const authStore5 = {};
 let closure_19 = {};
 let closure_20 = [];
 let closure_21 = 0;

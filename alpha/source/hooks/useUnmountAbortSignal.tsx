@@ -1,16 +1,16 @@
-// Module ID: 6950
-// Function ID: 6951
+// Module ID: 6956
+// Function ID: 6957
 // Name: useUnmountAbortSignal
-// Dependencies: [558, 576, 6176, 5393, 2]
+// Dependencies: [558, 576, 6169, 5396, 2]
 
-// Module 6950 (useUnmountAbortSignal)
+// Module 6956 (useUnmountAbortSignal)
 import react from "react" /* 576 */;
-import useInitialValueDefault from "useInitialValue" /* 6176 */;
+import useInitialValueDefault from "useInitialValue" /* 6169 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useMountEffect = tmp(5393);
+const useMountEffect = tmp(5396);
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnmountAbortSignal() {
   let first;

@@ -1,20 +1,20 @@
-// Module ID: 16226
-// Function ID: 16227
+// Module ID: 16293
+// Function ID: 16294
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [7252, 7974, 558, 576, 15015, 1126, 2565, 10629, 2]
+// Dependencies: [7258, 7992, 558, 576, 15074, 1126, 2568, 10663, 2]
 
-// Module 16226 (ParentalControlsUseDataForQuestsSetting)
+// Module 16293 (ParentalControlsUseDataForQuestsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2565 from "module_2565" /* 2565 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7252 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7258 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ParentalControlledUserSettings = tmp(15015);
+const ParentalControlledUserSettings = tmp(15074);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToSupportQuestsSettingValue() {
   let first;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToS
 let obj = {
   useTitle: function useDataForQuestsSettingTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2565.ZhaNu8);
+    return intl.string(_modDef2568.ZhaNu8);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: tmp2,

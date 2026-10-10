@@ -1,14 +1,14 @@
-// Module ID: 10617
-// Function ID: 10618
+// Module ID: 10651
+// Function ID: 10652
 // Name: ConjureProjectStore
-// Dependencies: [32, 1390, 6940, 10618, 504, 584, 2]
+// Dependencies: [32, 1390, 6946, 10652, 504, 584, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 10617 (ConjureProjectStore)
+// Module 10651 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureTypes from "ConjureTypes" /* 6940 */;
-import ConjureSequencedBuffer from "ConjureSequencedBuffer" /* 10618 */;
+import ConjureTypes from "ConjureTypes" /* 6946 */;
+import ConjureSequencedBuffer from "ConjureSequencedBuffer" /* 10652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;

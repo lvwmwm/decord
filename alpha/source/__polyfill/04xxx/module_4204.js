@@ -1,50 +1,14 @@
 // Module ID: 4204
 // Function ID: 4205
-// Dependencies: [4205, 4206, 4207, 4208, 4209]
+// Dependencies: []
+// Exports: getDefaultOptions, setDefaultOptions
 
 // Module 4204
-import formatDistance from "formatDistance" /* 4205 */;
-import buildFormatLongFn from "buildFormatLongFn" /* 4206 */;
-import formatRelative from "formatRelative" /* 4207 */;
-import date_mod from "module_4208" /* 4208 */;
-import date_mod2 from "module_4209" /* 4209 */;
+let closure_0 = {};
 
-let tmp11;
-let tmp3;
-let tmp5;
-let tmp7;
-let tmp9;
-if (!formatDistance) {
-  tmp3 = { default: formatDistance };
-  const obj = { default: formatDistance };
-} else {
-  tmp3 = formatDistance;
+export function getDefaultOptions() {
+  return closure_0;
 }
-if (!buildFormatLongFn) {
-  tmp5 = { default: buildFormatLongFn };
-  const obj2 = { default: buildFormatLongFn };
-} else {
-  tmp5 = buildFormatLongFn;
+export function setDefaultOptions(arg0) {
+  closure_0 = arg0;
 }
-if (!formatRelative) {
-  tmp7 = { default: formatRelative };
-  const obj3 = { default: formatRelative };
-} else {
-  tmp7 = formatRelative;
-}
-let date = date_mod2;
-if (!date) {
-  tmp9 = { default: date };
-  const obj4 = { default: date };
-} else {
-  tmp9 = date;
-}
-date = date_mod2;
-if (!date) {
-  tmp11 = { default: date };
-  const obj5 = { default: date };
-} else {
-  tmp11 = date;
-}
-
-export default { code: "fr", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };

@@ -1,0 +1,10 @@
+// Module ID: 13642
+// Function ID: 13643
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 13642 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 167.5, height: 16, scales: [2, 3], hash: "48c1555b13d7692f2f1f3a2ca57206f1", name: "server_boost_logo_light", type: "png" });

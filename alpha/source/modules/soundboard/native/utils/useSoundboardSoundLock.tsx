@@ -1,17 +1,17 @@
-// Module ID: 17702
-// Function ID: 17703
+// Module ID: 17774
+// Function ID: 17775
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1390, 5427, 558, 576, 504, 7049, 4728, 17703, 9250, 9253, 4768, 5026, 1126, 2]
+// Dependencies: [19, 1390, 5430, 558, 576, 504, 7055, 4769, 17775, 9277, 9280, 4809, 1126, 9409, 2]
 
-// Module 17702 (useSoundboardSoundLock)
+// Module 17774 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1126 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4728 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5026 */;
-import SoundboardConstants from "SoundboardConstants" /* 5427 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9250 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9253 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17703 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import SoundboardConstants from "SoundboardConstants" /* 5430 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9277 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9280 */;
+import BoostGemIcon from "BoostGemIcon" /* 9409 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17775 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -85,11 +85,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
                         }
                         tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                       } else if (!guildId.available) {
-                        const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                        const obj = { text: intl.string(intl3.t.MDOXJR), icon: BoostGemIcon.BoostGemIcon, duration: 3000 };
                         const open = ToastActionCreatorsDefault.open;
                         ToastActionCreatorsDefault;
                         intl = intl3.intl;
-                        open(obj);
+                        open("DISABLED_SOUND_PRESSED", obj);
                       }
                     }
                   }
@@ -113,11 +113,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
                       }
                       tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                     } else if (!guildId.available) {
-                      const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                      const obj = { text: intl.string(intl3.t.MDOXJR), icon: BoostGemIcon.BoostGemIcon, duration: 3000 };
                       const open = ToastActionCreatorsDefault.open;
                       ToastActionCreatorsDefault;
                       intl = intl3.intl;
-                      open(obj);
+                      open("DISABLED_SOUND_PRESSED", obj);
                     }
                   }
                 }
@@ -141,11 +141,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
                         }
                         tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                       } else if (!guildId.available) {
-                        const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                        const obj = { text: intl.string(intl3.t.MDOXJR), icon: BoostGemIcon.BoostGemIcon, duration: 3000 };
                         const open = ToastActionCreatorsDefault.open;
                         ToastActionCreatorsDefault;
                         intl = intl3.intl;
-                        open(obj);
+                        open("DISABLED_SOUND_PRESSED", obj);
                       }
                     }
                   }
@@ -166,11 +166,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
                       }
                       tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                     } else if (!guildId.available) {
-                      const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                      const obj = { text: intl.string(intl3.t.MDOXJR), icon: BoostGemIcon.BoostGemIcon, duration: 3000 };
                       const open = ToastActionCreatorsDefault.open;
                       ToastActionCreatorsDefault;
                       intl = intl3.intl;
-                      open(obj);
+                      open("DISABLED_SOUND_PRESSED", obj);
                     }
                   }
                 }
@@ -192,11 +192,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
                   }
                   tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
                 } else if (!guildId.available) {
-                  const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                  const obj = { text: intl.string(intl3.t.MDOXJR), icon: BoostGemIcon.BoostGemIcon, duration: 3000 };
                   const open = ToastActionCreatorsDefault.open;
                   ToastActionCreatorsDefault;
                   intl = intl3.intl;
-                  open(obj);
+                  open("DISABLED_SOUND_PRESSED", obj);
                 }
               }
             }
@@ -221,11 +221,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
                 }
                 tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
               } else if (!guildId.available) {
-                const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+                const obj = { text: intl.string(intl3.t.MDOXJR), icon: BoostGemIcon.BoostGemIcon, duration: 3000 };
                 const open = ToastActionCreatorsDefault.open;
                 ToastActionCreatorsDefault;
                 intl = intl3.intl;
-                open(obj);
+                open("DISABLED_SOUND_PRESSED", obj);
               }
             }
           }
@@ -248,7 +248,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
       tmp11 = tmp13;
     }
   }
-  const tmpResult2 = tmp(7049);
+  const tmpResult2 = tmp(7055);
   const result1 = tmpResult2.canUseSoundboardSound(stateFromStores, guildId, guild_id);
   cResult[2] = guild_id;
   cResult[3] = stateFromStores;
@@ -289,11 +289,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundbo
       }
       tmp17(SOUNDBOARD_EVERYWHERE, undefined, tmp20);
     } else if (!guildId.available) {
-      const obj = { key: "DISABLED_SOUND_PRESSED", icon: AssetRegistryDefault, content: intl.string(intl3.t.MDOXJR), toastDurationMs: 3000 };
+      const obj = { text: intl.string(intl3.t.MDOXJR), icon: BoostGemIcon.BoostGemIcon, duration: 3000 };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl3.intl;
-      open(obj);
+      open("DISABLED_SOUND_PRESSED", obj);
     }
   }, items1);
   if (!result) {

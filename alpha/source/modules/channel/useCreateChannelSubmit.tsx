@@ -1,10 +1,10 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8600
+// Function ID: 8601
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 1085, 1998, 1097, 8585, 4930, 1126, 2]
+// Dependencies: [5, 32, 19, 1085, 1998, 1097, 8601, 4969, 1126, 2]
 // Exports: default
 
-// Module 8584 (useCreateChannelSubmit)
+// Module 8600 (useCreateChannelSubmit)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -51,7 +51,7 @@ export default function useCreateChannelSubmit(arg0) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -170,7 +170,7 @@ export default function useCreateChannelSubmit(arg0) {
             type = 0;
             bitrate(false);
             applicationId = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp61) {
           closure_5 = tmp61;

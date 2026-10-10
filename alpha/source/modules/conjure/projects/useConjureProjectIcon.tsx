@@ -1,16 +1,16 @@
-// Module ID: 12951
-// Function ID: 12952
+// Module ID: 12998
+// Function ID: 12999
 // Name: useConjureProjectIcon
-// Dependencies: [558, 576, 6849, 1415, 2]
+// Dependencies: [558, 576, 6852, 1415, 2]
 
-// Module 12951 (useConjureProjectIcon)
+// Module 12998 (useConjureProjectIcon)
 import react from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ApplicationActionCreators = tmp(6849);
+const ApplicationActionCreators = tmp(6852);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjectIcon(preview_application_id, size) {
   const obj = react;
   const cResult = obj.c(10);

@@ -1,10 +1,10 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 12401
+// Function ID: 12402
 // Name: ContactSyncPersistedStore
 // Dependencies: [510, 1272, 584, 570, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 12357 (ContactSyncPersistedStore)
+// Module 12401 (ContactSyncPersistedStore)
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react_native from "react-native" /* 1272 */;
@@ -14,11 +14,6 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f111805 = () => {
-  const obj = DispatcherDefault;
-  const obj2 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === closure_0 };
-  return obj.dispatch(obj2);
-};
 const V2_DCD_CONTACTS_STORAGE_KEY = "V2_DCD_CONTACTS_STORAGE_KEY";
 const ContactSyncUpsellCTADismissed = "ContactSyncUpsellCTADismissed";
 const ContactSyncDMListCTADismissed = "ContactSyncDMListCTADismissed";
@@ -39,8 +34,9 @@ Storage.asyncGet("V2_DCD_CONTACTS_STORAGE_KEY", async (arg0) => {
       return obj;
     });
   });
-  let obj2 = DispatcherDefault;
-  obj2.wait(f111805);
+  const obj2 = DispatcherDefault;
+  const obj3 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === arg0 };
+  obj2.dispatch(obj3);
 });
 const useContactSyncStore = module_570.create(() => ({ loadedPolicyNotice: false, storedContacts: "", upsellCTADismissed: false, policyUpdateNoticeDismissed: false, dmListCTADismissed: false }));
 let Storage2 = Storage4.Storage;
@@ -90,7 +86,8 @@ export const setStoredContacts = function setStoredContacts(arg0) {
     });
   });
   const obj2 = DispatcherDefault;
-  obj2.wait(f111805);
+  const obj3 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === arg0 };
+  obj2.dispatch(obj3);
 };
 export const deleteStoredContacts = function deleteStoredContacts() {
   let state;

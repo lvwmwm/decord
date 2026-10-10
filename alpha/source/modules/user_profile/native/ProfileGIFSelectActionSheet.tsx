@@ -1,21 +1,21 @@
-// Module ID: 14775
-// Function ID: 14776
+// Module ID: 14830
+// Function ID: 14831
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 5091, 587, 558, 576, 6671, 14765, 8277, 8275, 8272, 8274, 6677, 5055, 1126, 9016, 6835, 9704, 6836, 2]
+// Dependencies: [32, 5, 19, 17, 21, 5092, 587, 558, 576, 6672, 14820, 8293, 8291, 8288, 8290, 6678, 5056, 1126, 9035, 6838, 9733, 6839, 2]
 
-// Module 14775 (ProfileGIFSelectActionSheet)
+// Module 14830 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6835 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6836 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9016 */;
-import GIFPickerDefault from "GIFPicker" /* 9704 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9035 */;
+import GIFPickerDefault from "GIFPicker" /* 9733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIF
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -269,7 +269,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIF
           const obj10 = selectionContext(guildId[16]);
           obj10.hideActionSheet();
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -304,7 +304,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIF
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -424,7 +424,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileGIF
             const obj10 = src(closure_2[16]);
             obj10.hideActionSheet();
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp53) {
           c5 = 3;

@@ -1,56 +1,24 @@
 // Module ID: 11209
 // Function ID: 11210
-// Dependencies: [11172, 11195, 11167, 11182]
-// Exports: setMeasurement, timedEventsToMeasurements
+// Dependencies: [11210]
+// Exports: getGlobalSingleton
 
 // Module 11209
-import _mod11172 from "module_11172" /* 11172 */;
-import _mod11182 from "module_11182" /* 11182 */;
-import _mod11195 from "module_11195" /* 11195 */;
+import _mod11210 from "module_11210" /* 11210 */;
 
 
-export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
-  let activeSpan = arg3;
-  if (arg3 === undefined) {
-    const obj = _mod11172;
-    activeSpan = obj.getActiveSpan();
+export const GLOBAL_OBJ = globalThis;
+export const getGlobalSingleton = function getGlobalSingleton(arg0, fn, arg2) {
+  const tmp2 = (arg2 || globalThis).__SENTRY__ || {};
+  (arg2 || globalThis).__SENTRY__ = tmp2;
+  const SDK_VERSION = _mod11210.SDK_VERSION;
+  const tmp3 = tmp2[_mod11210.SDK_VERSION] || {};
+  tmp2[SDK_VERSION] = tmp3;
+  let tmp4 = tmp3[arg0];
+  if (!tmp4) {
+    const tmp6 = fn();
+    tmp3[arg0] = tmp6;
+    tmp4 = tmp6;
   }
-  let rootSpan = activeSpan;
-  if (rootSpan) {
-    const obj3 = _mod11172;
-    rootSpan = obj3.getRootSpan(activeSpan);
-  }
-  if (rootSpan) {
-    if (_mod11195.DEBUG_BUILD) {
-      const logger = tmp9(11167).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
-    }
-    const obj2 = {};
-    obj2[_mod11182.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
-    obj2[_mod11182.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
-    rootSpan.addEvent(arg0, obj2);
-  }
-};
-export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
-  let tmp = arr;
-  if (tmp) {
-    if (0 !== arr.length) {
-      let obj = {};
-      const item = arr.forEach((attributes) => {
-        const tmp = attributes.attributes || {};
-        const tmp2 = tmp[_mod11182.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
-        const tmp3 = tmp[_mod11182.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
-        let tmp4 = typeof tmp2 === "string";
-        if (typeof tmp2 === "string") {
-          tmp4 = typeof tmp3 === "number";
-        }
-        if (tmp4) {
-          obj = { value: tmp3, unit: tmp2 };
-          obj[attributes.name] = obj;
-        }
-      });
-      return obj;
-    }
-  }
+  return tmp4;
 };

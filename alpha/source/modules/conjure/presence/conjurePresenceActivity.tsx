@@ -1,10 +1,10 @@
-// Module ID: 10217
-// Function ID: 10218
+// Module ID: 10246
+// Function ID: 10247
 // Name: conjurePresenceActivity
 // Dependencies: [1085, 2]
 // Exports: isConjurePresenceActivity
 
-// Module 10217 (conjurePresenceActivity)
+// Module 10246 (conjurePresenceActivity)
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

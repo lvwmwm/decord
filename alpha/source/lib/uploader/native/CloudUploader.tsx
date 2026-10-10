@@ -1,16 +1,16 @@
-// Module ID: 9670
-// Function ID: 9671
+// Module ID: 9699
+// Function ID: 9700
 // Name: CloudUploader
-// Dependencies: [5, 1085, 5084, 3, 9671, 9672, 1126, 9676, 9677, 7771, 9678, 9679, 7738, 7740, 1445, 12, 2]
+// Dependencies: [5, 1085, 5085, 3, 9700, 9701, 1126, 9705, 9706, 7789, 9707, 9708, 7756, 7758, 1445, 12, 2]
 
-// Module 9670 (CloudUploader)
+// Module 9699 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import MessageConstants from "MessageConstants" /* 5084 */;
-import UploadPlatform from "UploadPlatform" /* 7740 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import UploadPlatform from "UploadPlatform" /* 7758 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
-import UploaderBase from "UploaderBase" /* 9671 */;
+import UploaderBase from "UploaderBase" /* 9700 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, c4, closure_0, constants, logger, preCompressionSize, set, uri;
@@ -53,7 +53,7 @@ class CloudUploader extends UploaderBase {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c5;
@@ -93,7 +93,7 @@ class CloudUploader extends UploaderBase {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else {
                   try {
@@ -134,7 +134,7 @@ class CloudUploader extends UploaderBase {
                         obj.endBackgroundTask(_aborted);
                       }
                       c2 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     }
                   } catch (tmp12) {
                     c2 = 3;
@@ -284,7 +284,7 @@ class CloudUploader extends UploaderBase {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -391,12 +391,12 @@ class CloudUploader extends UploaderBase {
               } else {
                 c3 = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp57) {
           closure_2 = tmp57;
           if (0 === c3) {

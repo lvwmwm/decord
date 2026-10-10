@@ -1,16 +1,16 @@
-// Module ID: 13009
-// Function ID: 13010
+// Module ID: 13056
+// Function ID: 13057
 // Name: MediaViewerOverlayButtonFavoriteGIF
-// Dependencies: [19, 21, 558, 576, 9706, 9710, 4768, 1126, 9722, 9708, 1245, 8376, 9523, 587, 9521, 8472, 2]
+// Dependencies: [19, 21, 558, 576, 9735, 9739, 4809, 1126, 9751, 9737, 1245, 8392, 9552, 587, 9550, 8488, 2]
 
-// Module 13009 (MediaViewerOverlayButtonFavoriteGIF)
+// Module 13056 (MediaViewerOverlayButtonFavoriteGIF)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
 import frecency_user_settings from "frecency_user_settings" /* 1245 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9706 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 9708 */;
-import GifIcon from "GifIcon" /* 9722 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9735 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 9737 */;
+import GifIcon from "GifIcon" /* 9751 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -118,11 +118,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (isFavoriteGIF) {
       const tmpResult = GIFPickerActionCreators;
       tmpResult.removeFavoriteGIF(uri);
-      const obj = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
+      const obj = { text: intl2.string(intl3.t.in1rga), icon: GifIcon.GifIcon };
       const open2 = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl2 = intl3.intl;
-      open2(obj);
+      open2("REMOVED_FROM_FAVORITES", obj);
     } else {
       const obj4 = { providerName: null, thumbnail: null };
       ({ embedProviderName: obj2.providerName, thumbnail: obj2.thumbnail } = source);
@@ -135,11 +135,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       GIFPickerActionCreators;
       GIFType = frecency_user_settings.GIFType;
       addFavoriteGIF(size);
-      const obj5 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
+      const obj5 = { text: intl.string(intl3.t.okQonm), icon: GifIcon.GifIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl3.intl;
-      open(obj5);
+      open("ADDED_TO_FAVORITES", obj5);
     }
   };
   cResult[2] = isFavoriteGIF;
@@ -176,11 +176,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (isFavoriteGIF) {
       const tmpResult = GIFPickerActionCreators;
       tmpResult.removeFavoriteGIF(uri);
-      const obj = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
+      const obj = { text: intl2.string(intl3.t.in1rga), icon: GifIcon.GifIcon };
       const open2 = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl2 = intl3.intl;
-      open2(obj);
+      open2("REMOVED_FROM_FAVORITES", obj);
     } else {
       const obj4 = { providerName: null, thumbnail: null };
       ({ embedProviderName: obj2.providerName, thumbnail: obj2.thumbnail } = source);
@@ -193,11 +193,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       GIFPickerActionCreators;
       GIFType = frecency_user_settings.GIFType;
       addFavoriteGIF(size);
-      const obj5 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
+      const obj5 = { text: intl.string(intl3.t.okQonm), icon: GifIcon.GifIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl3.intl;
-      open(obj5);
+      open("ADDED_TO_FAVORITES", obj5);
     }
   }, items);
   const obj2 = source(isFavoriteGIF[11]);

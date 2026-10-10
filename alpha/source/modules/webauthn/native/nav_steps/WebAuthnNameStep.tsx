@@ -1,19 +1,19 @@
-// Module ID: 14989
-// Function ID: 14990
+// Module ID: 15048
+// Function ID: 15049
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 1085, 21, 5091, 6681, 1503, 5946, 4768, 1126, 10012, 4993, 8563, 1200, 5376, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 6682, 1503, 5939, 4809, 1126, 8579, 1200, 5379, 2]
 // Exports: default
 
-// Module 14989 (WebAuthnNameStep)
+// Module 15048 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import useNavigation from "useNavigation" /* 1503 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6681 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6682 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, dependencyMap;
@@ -23,8 +23,8 @@ let metroImportAll;
 let tmp;
 const intl4 = tmp(1126);
 const native = tmp(1200);
-const components_Button_Button = tmp(5376);
-const Form2 = tmp(8563);
+const components_Button_Button = tmp(5379);
+const Form2 = tmp(8579);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -61,7 +61,7 @@ export default function WebAuthnNameStep() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -107,14 +107,14 @@ export default function WebAuthnNameStep() {
           } else {
             c3 = 0;
             closure_128_3(false);
-            const obj7 = { key: "WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", content: intl.string(tmp(body[11]).t.j3d5qI), icon: c1(body[12]), IconComponent: tmp(body[13]).CircleCheckIcon, iconColor: "status-success" };
+            const obj7 = { text: intl.string(tmp(body[11]).t.j3d5qI), variant: "success" };
             const open = c1(body[10]).open;
             const tmp40 = c1(body[10]);
             intl = tmp(body[11]).intl;
-            open(obj7);
+            open("WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", obj7);
             const replaced = closure_128_2.replace(constants.WEBAUTHN_SUCCESS);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp28) {
           body = tmp28;

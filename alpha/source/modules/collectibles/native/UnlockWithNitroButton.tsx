@@ -1,17 +1,17 @@
-// Module ID: 13390
-// Function ID: 13391
+// Module ID: 13440
+// Function ID: 13441
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 7125, 7272, 1087, 21, 558, 576, 7120, 504, 13376, 1126, 5087, 9016, 5377, 2]
+// Dependencies: [19, 7131, 7279, 1087, 21, 558, 576, 7126, 504, 13426, 1126, 5088, 9035, 5380, 2]
 
-// Module 13390 (UnlockWithNitroButton)
+// Module 13440 (UnlockWithNitroButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import ProductIds from "ProductIds" /* 7120 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 13376 */;
+import ProductIds from "ProductIds" /* 7126 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 13426 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7125 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7272 */;
+import IAPStore from "IAPStore" /* 7131 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7279 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,9 +19,9 @@ let importDefault;
 
 let tmp;
 const intl2 = tmp(1126);
-const Text_Text = tmp(5087);
-const BaseTextButton2 = tmp(5377);
-const NitroWheelIcon = tmp(9016);
+const Text_Text = tmp(5088);
+const BaseTextButton2 = tmp(5380);
+const NitroWheelIcon = tmp(9035);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnlockWithNitroButton(text) {
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnlockWith
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = jsx(tmp(9016).NitroWheelIcon, { size: "sm", color: "white" });
+      const tmp20 = jsx(tmp(9035).NitroWheelIcon, { size: "sm", color: "white" });
       cResult[7] = tmp20;
       tmp18 = tmp20;
     } else {
@@ -113,7 +113,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnlockWith
           closure_1();
         }
       }
-      const tmp24 = jsx(tmp(5377).BaseTextButton, { textElement: tmp14, text: tmp17, accessibilityLabel: tmp11, variant: "primary", size: str, grow: true, icon: tmp18, onPress: null, disabled: stateFromStores });
+      const tmp24 = jsx(tmp(5380).BaseTextButton, { textElement: tmp14, text: tmp17, accessibilityLabel: tmp11, variant: "primary", size: str, grow: true, icon: tmp18, onPress: null, disabled: stateFromStores });
       cResult[11] = tmp11;
       cResult[12] = stateFromStores;
       cResult[13] = tmp14;
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnlockWith
   }
   let tmp15;
   if (undefined !== shouldShrink && shouldShrink) {
-    tmp15 = jsx(tmp(5087).Text, { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: tmp11 });
+    tmp15 = jsx(tmp(5088).Text, { variant: "text-xs/semibold", color: "text-overlay-light", allowFontScaling: false, children: tmp11 });
   }
   cResult[4] = tmp11;
   cResult[5] = undefined !== shouldShrink && shouldShrink;

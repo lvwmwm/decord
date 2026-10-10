@@ -1,10 +1,10 @@
-// Module ID: 6671
-// Function ID: 6672
+// Module ID: 6672
+// Function ID: 6673
 // Name: DiscordMd5
-// Dependencies: [5, 6672, 2]
+// Dependencies: [5, 6673, 2]
 
-// Module 6671 (DiscordMd5)
-import _modDef6672 from "module_6672" /* 6672 */;
+// Module 6672 (DiscordMd5)
+import _modDef6673 from "module_6673" /* 6673 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ class DiscordMd5 {
     })();
   }
   static fromArrayBuffer(value) {
-    const _ArrayBuffer = _modDef6672.ArrayBuffer;
+    const _ArrayBuffer = _modDef6673.ArrayBuffer;
     return _ArrayBuffer.hash(value);
   }
   static fromDataURI(arg0) {
@@ -58,7 +58,7 @@ class DiscordMd5 {
             length = atobResult.length;
           } while (num < length);
         }
-        const _ArrayBuffer = _modDef6672.ArrayBuffer;
+        const _ArrayBuffer = _modDef6673.ArrayBuffer;
         return _ArrayBuffer.hash(arrayBuffer);
       }
     });

@@ -1,11 +1,11 @@
-// Module ID: 17164
-// Function ID: 17165
+// Module ID: 17234
+// Function ID: 17235
 // Name: ConjureTurnPresentation
-// Dependencies: [17097, 2]
+// Dependencies: [17166, 2]
 // Exports: resolveAttachmentHost, resolveTurnPresentation, turnLeadsWithStretch
 
-// Module 17164 (ConjureTurnPresentation)
-import ConjureTimelineTree from "ConjureTimelineTree" /* 17097 */;
+// Module 17234 (ConjureTurnPresentation)
+import ConjureTimelineTree from "ConjureTimelineTree" /* 17166 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTurnPresentation.tsx");
@@ -27,12 +27,16 @@ export const resolveAttachmentHost = function resolveAttachmentHost(hasAttachmen
 };
 export const resolveTurnPresentation = function resolveTurnPresentation(hasAttachments) {
   let content;
+  let hasLiveClarification;
   let hasProposal;
   let key;
   let steps;
   let str4;
   let str5;
-  ({ steps, content, hasProposal } = hasAttachments);
+  ({ steps, content, hasProposal, hasLiveClarification } = hasAttachments);
+  if (hasLiveClarification === undefined) {
+    hasLiveClarification = false;
+  }
   let c0;
   hasAttachments = hasAttachments.hasAttachments;
   const tmp = require;
@@ -68,6 +72,9 @@ export const resolveTurnPresentation = function resolveTurnPresentation(hasAttac
   let tmp10 = !hasProposal;
   const atResult1 = found2.at(-1);
   if (!hasProposal) {
+    tmp10 = !hasLiveClarification;
+  }
+  if (tmp10) {
     tmp10 = "" !== content.trim();
   }
   let obj2 = { streamed: found1, lastStreamedMessage: atResult1, replyKey: key, showsClosingMessage: tmp10, closingContent: str4, attachmentsHost: str5 };

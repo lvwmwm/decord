@@ -1,29 +1,29 @@
-// Module ID: 18116
-// Function ID: 18117
+// Module ID: 18190
+// Function ID: 18191
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2064, 1390, 13952, 1085, 21, 5091, 587, 5087, 5406, 1126, 558, 576, 504, 1388, 1200, 11338, 10246, 4993, 5013, 1265, 5055, 18117, 7008, 6892, 6163, 10367, 6269, 6186, 5376, 2]
+// Dependencies: [19, 17, 2065, 1390, 14005, 1085, 21, 5092, 587, 5088, 5409, 1126, 558, 576, 504, 1388, 1200, 11380, 10279, 6867, 5046, 1265, 5056, 18191, 7014, 6898, 6156, 10400, 6264, 6179, 5379, 2]
 
-// Module 18116 (BlockedUserInGdmActionSheet)
+// Module 18190 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4993 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
-import TableRow2 from "TableRow" /* 6186 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7008 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18117 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import TableRow2 from "TableRow" /* 6179 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 6867 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18191 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13952 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14005 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -280,7 +280,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       const Avatar = tmp(1200).Avatar;
       tmp19 = closure_10(Avatar, obj2);
     } else {
-      tmp19 = closure_10(tmp(11338).UserIcon, {});
+      tmp19 = closure_10(tmp(11380).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp13;
@@ -291,7 +291,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     let tmp10;
     if (cResult[12] !== tmp8) {
       const obj3 = { users: tmp8, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10246).FacepileGroupDMAvatar;
+      const FacepileGroupDMAvatar = tmp(10279).FacepileGroupDMAvatar;
       const tmp12 = closure_10(FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp8;
       cResult[13] = tmp12;
@@ -321,12 +321,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       const Avatar = tmp(1200).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(11338).UserIcon, {});
+      tmp8 = closure_10(tmp(11380).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10246).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10279).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;

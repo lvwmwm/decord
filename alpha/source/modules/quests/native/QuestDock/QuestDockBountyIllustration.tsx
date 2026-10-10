@@ -1,25 +1,25 @@
-// Module ID: 15404
-// Function ID: 15405
+// Module ID: 15466
+// Function ID: 15467
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5080, 5979, 15285, 21, 5091, 558, 15400, 15282, 576, 8992, 15405, 504, 1382, 6163, 4788, 9154, 2]
+// Dependencies: [19, 17, 5081, 5972, 15347, 21, 5092, 558, 15462, 15344, 576, 9011, 15467, 504, 1382, 6156, 4827, 9181, 2]
 
-// Module 15404 (QuestDockBountyIllustration)
+// Module 15466 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import QuestConstants from "QuestConstants" /* 5979 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import APNGPlayer2 from "APNGPlayer" /* 8992 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9154 */;
-import QuestDockHooks from "QuestDockHooks" /* 15282 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15400 */;
-import _modDef15405 from "module_15405" /* 15405 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import APNGPlayer2 from "APNGPlayer" /* 9011 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9181 */;
+import QuestDockHooks from "QuestDockHooks" /* 15344 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15462 */;
+import _modDef15467 from "module_15467" /* 15467 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import QuestDockConstants from "QuestDockConstants" /* 15285 */;
-import createStyles from "createStyles" /* 5091 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import QuestDockConstants from "QuestDockConstants" /* 15347 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let size;
 let size1;
 let tmp;
-const native = tmp(4788);
+const native = tmp(4827);
 const View = react_native.View;
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT, QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT } = QuestDockConstants);
@@ -290,7 +290,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     const effect = obj2.useEffect(tmp7, tmp8);
     if (cResult[4] !== tmp4.fill) {
       const APNGPlayer = APNGPlayer2.APNGPlayer;
-      const tmp13 = <APNGPlayer ref={ref} url={_modDef15405} style={tmp4.fill} autoplay={false} />;
+      const tmp13 = <APNGPlayer ref={ref} url={_modDef15467} style={tmp4.fill} autoplay={false} />;
       cResult[4] = tmp4.fill;
       cResult[5] = tmp13;
       tmp10 = tmp13;
@@ -328,7 +328,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     }
   }, items);
   const APNGPlayer = APNGPlayer2.APNGPlayer;
-  return <APNGPlayer ref={ref} url={_modDef15405} style={tmp.fill} autoplay={false} />;
+  return <APNGPlayer ref={ref} url={_modDef15467} style={tmp.fill} autoplay={false} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDock3DOrbsIllustration() {
@@ -369,7 +369,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     let tmp10;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { uri: _modDef15405 };
+      const obj3 = { uri: _modDef15467 };
       cResult[4] = obj3;
       tmp10 = obj3;
     } else {
@@ -406,7 +406,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
     tmp6Result = tmp6(closure_12, obj2);
   } else {
     const obj3 = { source: obj4, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp5, accessible: false };
-    obj4 = { uri: _modDef15405 };
+    obj4 = { uri: _modDef15467 };
     const tmp8 = FastImageDefault;
     tmp6Result = tmp6(tmp8, obj3);
   }
@@ -463,7 +463,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  const BountiesMobileQuestBarExperiment = tmp(9154).BountiesMobileQuestBarExperiment;
+  const BountiesMobileQuestBarExperiment = tmp(9181).BountiesMobileQuestBarExperiment;
   const illustration = BountiesMobileQuestBarExperiment.useConfig(first).illustration;
   if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_2 === illustration) {
     let tmp23;

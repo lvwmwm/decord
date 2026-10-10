@@ -1,16 +1,16 @@
-// Module ID: 18027
-// Function ID: 18028
+// Module ID: 18099
+// Function ID: 18100
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7173, 2064, 5072, 5071, 5076, 18028, 8480, 7022, 13456, 18035, 18038, 11701, 6804, 18041, 2]
+// Dependencies: [5, 7179, 2065, 5073, 5072, 5077, 18100, 8496, 7028, 13507, 18107, 18110, 11746, 6807, 18113, 2]
 
-// Module 18027 (MessageCodedLinkManager)
-import findCodedLinksDefault from "findCodedLinks" /* 5071 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18041 */;
+// Module 18099 (MessageCodedLinkManager)
+import findCodedLinksDefault from "findCodedLinks" /* 5072 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7173 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import InviteStore from "InviteStore" /* 5072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7179 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import InviteStore from "InviteStore" /* 5073 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -19,7 +19,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f132981 = (item) => {
+  const f133413 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -38,7 +38,7 @@ function resolveMessageCodedLinks(content) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -70,7 +70,7 @@ function resolveMessageCodedLinks(content) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp9) {
             c0 = 3;
             throw tmp9;
@@ -91,7 +91,7 @@ function resolveMessageCodedLinks(content) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -123,7 +123,7 @@ function resolveMessageCodedLinks(content) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp9) {
             c0 = 3;
             throw tmp9;
@@ -202,7 +202,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f132981);
+    let item = arr.forEach(f133413);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -213,7 +213,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f132981);
+        const item = arr.forEach(f133413);
       }
     });
   }

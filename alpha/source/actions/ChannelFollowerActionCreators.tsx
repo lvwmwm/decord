@@ -1,9 +1,9 @@
-// Module ID: 12137
-// Function ID: 12138
+// Module ID: 12181
+// Function ID: 12182
 // Name: ChannelFollowerActionCreators
 // Dependencies: [5, 1085, 1295, 584, 2]
 
-// Module 12137 (ChannelFollowerActionCreators)
+// Module 12181 (ChannelFollowerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
@@ -39,7 +39,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -90,7 +90,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

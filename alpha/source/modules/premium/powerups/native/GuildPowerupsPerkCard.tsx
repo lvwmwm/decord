@@ -1,25 +1,25 @@
-// Module ID: 12263
-// Function ID: 12264
+// Module ID: 12307
+// Function ID: 12308
 // Name: GuildPowerupsPerkCard
-// Dependencies: [109, 19, 17, 21, 5091, 587, 558, 576, 4992, 4930, 6662, 12213, 5388, 5087, 12214, 1200, 1126, 12259, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 5031, 4969, 6663, 12257, 5391, 5088, 12258, 1200, 1126, 12303, 2]
 
-// Module 12263 (GuildPowerupsPerkCard)
+// Module 12307 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import shared from "shared" /* 4930 */;
-import useThemeDefault from "useTheme" /* 4992 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import LinearGradientDefault from "LinearGradient" /* 5388 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6662 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12213 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12259 */;
+import shared from "shared" /* 4969 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6663 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12257 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12303 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -267,7 +267,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
                           tmp55 = tmp58;
                         }
                         const obj6 = { status: tmp10 };
-                        const GuildPowerupsCardFooter = tmp(12214).GuildPowerupsCardFooter;
+                        const GuildPowerupsCardFooter = tmp(12258).GuildPowerupsCardFooter;
                         const merged = Object.assign(tmp6);
                         const tmp54 = metroRequire(GuildPowerupsCardFooter, obj6);
                         cResult[40] = tmp6;
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   let str;
   const obj7 = { style: tmp2.contentContainer, children: items4 };
   const obj8 = { style: tmp2.headerContainer, children: items3 };
-  const Text = tmp6(5087).Text;
+  const Text = tmp6(5088).Text;
   if (manaTypeConsolidationExperiment) {
     str = "text-strong";
   }
@@ -407,14 +407,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   }
   items3 = [metroRequire(Text, obj9), ];
   let str3 = "text-sm/medium";
-  const Text2 = tmp6(5087).Text;
+  const Text2 = tmp6(5088).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "experimental/body-sm/normal";
   }
   items3[1] = metroRequire(Text2, { variant: str3, children: description });
   items4 = [metroImportDefault(View, obj8), ];
   const obj10 = { status };
-  const GuildPowerupsCardFooter = tmp6(12214).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(12258).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
   items4[1] = metroRequire(GuildPowerupsCardFooter, obj10);
   items2[1] = metroImportDefault(View, obj7);

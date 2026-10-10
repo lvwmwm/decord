@@ -1,23 +1,23 @@
-// Module ID: 12599
-// Function ID: 12600
+// Module ID: 12646
+// Function ID: 12647
 // Name: ForLaterScreen
-// Dependencies: [32, 19, 17, 9651, 21, 5091, 587, 558, 576, 4811, 5375, 12600, 9652, 504, 6848, 6872, 1273, 8952, 1102, 12604, 12624, 8608, 2]
+// Dependencies: [32, 19, 17, 9680, 21, 5092, 587, 558, 576, 4850, 5378, 12647, 9681, 504, 6851, 6878, 1273, 8971, 1102, 12651, 12671, 8624, 2]
 
-// Module 12599 (ForLaterScreen)
+// Module 12646 (ForLaterScreen)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4811 */;
-import spring from "spring" /* 5375 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6848 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8952 */;
-import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 12600 */;
-import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 12604 */;
-import ForLaterIntroDefault from "ForLaterIntro" /* 12624 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8971 */;
+import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 12647 */;
+import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 12651 */;
+import ForLaterIntroDefault from "ForLaterIntro" /* 12671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9651 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9680 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(12);
   type = type.type;
   const tmp4 = closure_10();
-  const obj2 = sharedValue(4811);
+  const obj2 = sharedValue(4850);
   const tmp = sharedValue;
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
@@ -74,7 +74,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     tmp6 = cResult[1];
   }
-  const tmpResult = tmp(4811);
+  const tmpResult = tmp(4850);
   class S {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -138,7 +138,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let sharedValue;
   type = type.type;
   const tmp = closure_10();
-  let obj = sharedValue(4811);
+  let obj = sharedValue(4850);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const callback = react.useCallback((nativeEvent) => {
@@ -159,7 +159,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   fn.__workletHash = 14855800666151;
   fn.__initData = __initData2;
   const obj3 = { style: tmp.container, children: items2 };
-  const obj2 = sharedValue(4811);
+  const obj2 = sharedValue(4850);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj4 = { style: items1 };
   items1 = [tmp.headerBorder, animatedStyle];
@@ -184,7 +184,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   const tmp4 = closure_10();
   ({ savedMessages, fetchState, loadMore } = useSavedMessagesForPageDefault(type));
   useSavedMessagesForPageDefault(type);
-  const LOADING = throttledNow(9652).BookmarksFetchState.LOADING;
+  const LOADING = throttledNow(9681).BookmarksFetchState.LOADING;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SavedMessagesStore];
     const fn = function _() {
@@ -201,11 +201,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   const tmpResult = throttledNow(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp8);
   ({ overdueReminderCount, bookmarkCount } = stateFromStoresObject);
-  if (type !== throttledNow(9652).SavedMessageSortTypes.BOOKMARK) {
+  if (type !== throttledNow(9681).SavedMessageSortTypes.BOOKMARK) {
     bookmarkCount = savedMessages.length;
   }
   const tmp5Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp5Result(tmp5(6872).FOR_LATER_POPOUT).analyticsLocations;
+  const analyticsLocations = tmp5Result(tmp5(6878).FOR_LATER_POPOUT).analyticsLocations;
   if (cResult[2] === overdueReminderCount) {
     if (cResult[3] === bookmarkCount) {
       let tmp12;
@@ -366,7 +366,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   const tmp4 = useSavedMessagesForPageDefault(type);
   ({ savedMessages, fetchState } = tmp4);
   const loadMore = tmp4.loadMore;
-  const LOADING = throttledNow(9652).BookmarksFetchState.LOADING;
+  const LOADING = throttledNow(9681).BookmarksFetchState.LOADING;
   let obj = throttledNow(504);
   const items = [SavedMessagesStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -374,11 +374,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
     return obj;
   });
   ({ overdueReminderCount, bookmarkCount } = stateFromStoresObject);
-  if (type !== throttledNow(9652).SavedMessageSortTypes.BOOKMARK) {
+  if (type !== throttledNow(9681).SavedMessageSortTypes.BOOKMARK) {
     bookmarkCount = savedMessages.length;
   }
   const tmp2Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp2Result(tmp2(6872).FOR_LATER_POPOUT).analyticsLocations;
+  const analyticsLocations = tmp2Result(tmp2(6878).FOR_LATER_POPOUT).analyticsLocations;
   const obj2 = { type: throttledNow(1273).ImpressionTypes.MODAL, name: throttledNow(1273).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: { tab_type: type, total_count: bookmarkCount, overdue_count: overdueReminderCount } };
   const items1 = [bookmarkCount, overdueReminderCount];
   const tmp2Result2 = useTrackImpressionDefault;
@@ -400,9 +400,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   if (0 === savedMessages.length) {
     if (fetchState !== LOADING) {
       let tmp20;
-      if (fetchState !== throttledNow(9652).BookmarksFetchState.LOADED_HAS_MORE) {
+      if (fetchState !== throttledNow(9681).BookmarksFetchState.LOADED_HAS_MORE) {
         const obj3 = { value: analyticsLocations, children: closure_8(ForLaterIntroDefault, obj4) };
-        const AnalyticsLocationProvider = tmp5(6848).AnalyticsLocationProvider;
+        const AnalyticsLocationProvider = tmp5(6851).AnalyticsLocationProvider;
         obj4 = { type };
         tmp20 = closure_8(AnalyticsLocationProvider, obj3);
       }
@@ -413,10 +413,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLat
   } else {
     const obj6 = { value: analyticsLocations, children: closure_8(tmp24, obj7) };
     obj7 = { style: tmp.listContainer, children: closure_8(FlashList, obj8) };
-    const AnalyticsLocationProvider2 = tmp5(6848).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider2 = tmp5(6851).AnalyticsLocationProvider;
     obj8 = { data: savedMessages, renderItem: tmp15, contentContainerStyle: tmp.cardContainer, keyExtractor, onScroll: handleScroll, onEndReached: loadMore, ListFooterComponent: tmp23Result };
     tmp23Result = null;
-    FlashList = tmp5(8608).FlashList;
+    FlashList = tmp5(8624).FlashList;
     tmp24 = closure_6;
     if (fetchState === LOADING) {
       const obj9 = { style: tmp.loading };

@@ -1,14 +1,14 @@
-// Module ID: 18411
-// Function ID: 18412
+// Module ID: 18485
+// Function ID: 18486
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1373, 21, 558, 576, 1503, 15420, 18412, 18371, 6663, 18413, 12, 6205, 7082, 1126, 4767, 587, 18415, 18420, 18424, 2]
+// Dependencies: [5, 32, 19, 17, 1373, 21, 558, 576, 1503, 15482, 18486, 18445, 6664, 18487, 12, 6200, 7088, 1126, 4808, 587, 18489, 18494, 18498, 2]
 
-// Module 18411 (GuildSettingsRoleSubscriptionsGroupEdit)
+// Module 18485 (GuildSettingsRoleSubscriptionsGroupEdit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 18424 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 18498 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -389,7 +389,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -444,7 +444,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
               closure_1_5(null);
             }
             description = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp16) {
             description = 3;
             throw tmp16;
@@ -652,7 +652,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -707,7 +707,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
           closure_128_5(null);
         }
         c2 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp16) {
         c2 = 3;
         throw tmp16;

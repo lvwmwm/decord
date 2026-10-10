@@ -1,10 +1,10 @@
-// Module ID: 4948
-// Function ID: 4949
+// Module ID: 4987
+// Function ID: 4988
 // Name: useKeyboardType
-// Dependencies: [19, 1500, 1501, 558, 576, 4811, 1629, 2]
+// Dependencies: [19, 1500, 1501, 558, 576, 4850, 1629, 2]
 // Exports: getKeyboardContextForType, getKeyboardType, getKeyboardTypePrevious
 
-// Module 4948 (useKeyboardType)
+// Module 4987 (useKeyboardType)
 import react2 from "react" /* 576 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1501 */;
@@ -98,8 +98,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboar
   const obj2 = appEntryKey(1500);
   appEntryKey = obj2.useAppEntryKey();
   let DEFAULT_APP_ENTRY_KEY = appEntryKey;
-  const useSharedValue = appEntryKey(4811).useSharedValue;
-  appEntryKey(4811);
+  const useSharedValue = appEntryKey(4850).useSharedValue;
+  appEntryKey(4850);
   if (appEntryKey === undefined) {
     DEFAULT_APP_ENTRY_KEY = tmp(1500).DEFAULT_APP_ENTRY_KEY;
   }
@@ -142,8 +142,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboar
   let obj = appEntryKey(1500);
   appEntryKey = obj.useAppEntryKey();
   let DEFAULT_APP_ENTRY_KEY = appEntryKey;
-  const useSharedValue = appEntryKey(4811).useSharedValue;
-  appEntryKey(4811);
+  const useSharedValue = appEntryKey(4850).useSharedValue;
+  appEntryKey(4850);
   if (appEntryKey === undefined) {
     DEFAULT_APP_ENTRY_KEY = tmp(1500).DEFAULT_APP_ENTRY_KEY;
   }
@@ -190,9 +190,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboar
   const cResult = obj.c(4);
   const obj2 = appEntryKey(1500);
   appEntryKey = obj2.useAppEntryKey();
-  const useSharedValue = appEntryKey(4811).useSharedValue;
+  const useSharedValue = appEntryKey(4850).useSharedValue;
   let DEFAULT_APP_ENTRY_KEY = appEntryKey;
-  appEntryKey(4811);
+  appEntryKey(4850);
   const SYSTEM = appEntryKey(1629).KeyboardTypes.SYSTEM;
   if (appEntryKey === undefined) {
     DEFAULT_APP_ENTRY_KEY = tmp(1500).DEFAULT_APP_ENTRY_KEY;
@@ -231,9 +231,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboar
   let tmp = appEntryKey;
   let obj = appEntryKey(1500);
   appEntryKey = obj.useAppEntryKey();
-  const useSharedValue = appEntryKey(4811).useSharedValue;
+  const useSharedValue = appEntryKey(4850).useSharedValue;
   let DEFAULT_APP_ENTRY_KEY = appEntryKey;
-  const tmp4 = appEntryKey(4811);
+  const tmp4 = appEntryKey(4850);
   const SYSTEM = appEntryKey(1629).KeyboardTypes.SYSTEM;
   if (appEntryKey === undefined) {
     DEFAULT_APP_ENTRY_KEY = tmp(1500).DEFAULT_APP_ENTRY_KEY;

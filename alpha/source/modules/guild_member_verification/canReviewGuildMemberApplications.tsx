@@ -1,12 +1,12 @@
-// Module ID: 6960
-// Function ID: 6961
+// Module ID: 6966
+// Function ID: 6967
 // Name: canReviewGuildMemberApplications
-// Dependencies: [2086, 4709, 1085, 558, 576, 504, 6177, 2]
+// Dependencies: [2087, 4750, 1085, 558, 576, 504, 6170, 2]
 // Exports: canReviewGuildMemberApplications
 
-// Module 6960 (canReviewGuildMemberApplications)
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+// Module 6966 (canReviewGuildMemberApplications)
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -80,7 +80,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRevi
     hasItem = PermissionStore.can(constants2.KICK_MEMBERS, stateFromStores);
   }
   if (hasItem) {
-    const tmpResult = tmp(6177);
+    const tmpResult = tmp(6170);
     hasItem = tmpResult.guildHasVerificationGate(stateFromStores);
   }
   return hasItem;

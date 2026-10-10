@@ -1,40 +1,40 @@
-// Module ID: 6808
-// Function ID: 6809
+// Module ID: 6811
+// Function ID: 6812
 // Name: GuildOnboardingPrompts
-// Dependencies: [32, 5, 19, 17, 5080, 6155, 2064, 2086, 2115, 6785, 6786, 6782, 1085, 21, 1112, 5091, 6263, 587, 1494, 4928, 558, 576, 6163, 5388, 1105, 504, 1631, 1503, 4811, 6790, 6791, 1415, 1898, 1265, 5106, 5092, 6205, 6809, 1388, 6810, 6112, 1126, 5087, 2]
+// Dependencies: [32, 5, 19, 17, 5081, 6148, 2065, 2087, 2116, 6788, 6789, 6785, 1085, 21, 1112, 5092, 6258, 587, 1494, 4967, 558, 576, 6156, 5391, 1105, 504, 1631, 1503, 4850, 6793, 6794, 1415, 1898, 1265, 5107, 5093, 6200, 6812, 1388, 6813, 6105, 1126, 5088, 2]
 
-// Module 6808 (GuildOnboardingPrompts)
+// Module 6811 (GuildOnboardingPrompts)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import ColorUtils from "ColorUtils" /* 4928 */;
-import timing from "timing" /* 5092 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
-import LinearGradientDefault from "LinearGradient" /* 5388 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import NavigatorConstants from "NavigatorConstants" /* 6263 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6782 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6786 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6790 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6791 */;
-import GuildOnboardingPrompt2 from "GuildOnboardingPrompt" /* 6809 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
+import timing from "timing" /* 5093 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
+import NavigatorConstants from "NavigatorConstants" /* 6258 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6785 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6789 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6793 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6794 */;
+import GuildOnboardingPrompt2 from "GuildOnboardingPrompt" /* 6812 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5080 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6155 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6785 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6148 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6788 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let obj = function _getBackgroundGradientColor() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -651,7 +651,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                       obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                       withTiming2 = timing.withTiming;
                                                       timing;
-                                                      Easing2 = tmp(4811).Easing;
+                                                      Easing2 = tmp(4850).Easing;
                                                       items = [obj4];
                                                       return obj3;
                                                     }
@@ -747,7 +747,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                       obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                       withTiming2 = timing.withTiming;
                                                       timing;
-                                                      Easing2 = tmp(4811).Easing;
+                                                      Easing2 = tmp(4850).Easing;
                                                       items = [obj4];
                                                       return obj3;
                                                     }
@@ -1181,7 +1181,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                                                                                                 obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                                                                                                 withTiming2 = timing.withTiming;
                                                                                                                                 timing;
-                                                                                                                                Easing2 = tmp(4811).Easing;
+                                                                                                                                Easing2 = tmp(4850).Easing;
                                                                                                                                 items = [obj4];
                                                                                                                                 return obj3;
                                                                                                                               }
@@ -2039,7 +2039,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                                                                     obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                                                                     withTiming2 = timing.withTiming;
                                                                                                     timing;
-                                                                                                    Easing2 = tmp(4811).Easing;
+                                                                                                    Easing2 = tmp(4850).Easing;
                                                                                                     items = [obj4];
                                                                                                     return obj3;
                                                                                                   }
@@ -2208,7 +2208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                                                       obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                                                       withTiming2 = timing.withTiming;
                                                                                       timing;
-                                                                                      Easing2 = tmp(4811).Easing;
+                                                                                      Easing2 = tmp(4850).Easing;
                                                                                       items = [obj4];
                                                                                       return obj3;
                                                                                     }
@@ -2377,7 +2377,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
                                                                         obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
                                                                         withTiming2 = timing.withTiming;
                                                                         timing;
-                                                                        Easing2 = tmp(4811).Easing;
+                                                                        Easing2 = tmp(4850).Easing;
                                                                         items = [obj4];
                                                                         return obj3;
                                                                       }
@@ -2990,7 +2990,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
     withTiming2 = timing.withTiming;
     timing;
-    Easing2 = tmp(4811).Easing;
+    Easing2 = tmp(4850).Easing;
     items = [obj4];
     return obj3;
   }
@@ -3033,7 +3033,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
     withTiming2 = timing.withTiming;
     timing;
-    Easing2 = tmp(4811).Easing;
+    Easing2 = tmp(4850).Easing;
     items = [obj4];
     return obj3;
   }
@@ -3122,7 +3122,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     obj5 = { duration: 300, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
     withTiming2 = timing.withTiming;
     timing;
-    Easing2 = tmp(4811).Easing;
+    Easing2 = tmp(4850).Easing;
     items = [obj4];
     return obj3;
   }

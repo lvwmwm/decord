@@ -1,14 +1,14 @@
-// Module ID: 10211
-// Function ID: 10212
+// Module ID: 10240
+// Function ID: 10241
 // Name: ActivityStatusIcon
-// Dependencies: [109, 19, 21, 5091, 558, 576, 2]
+// Dependencies: [109, 19, 21, 5092, 558, 576, 2]
 
-// Module 10211 (ActivityStatusIcon)
+// Module 10240 (ActivityStatusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

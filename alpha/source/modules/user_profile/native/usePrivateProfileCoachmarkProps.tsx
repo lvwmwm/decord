@@ -1,24 +1,24 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16799
+// Function ID: 16800
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1085, 2061, 21, 5091, 558, 576, 16730, 1209, 1126, 7719, 2041, 2049, 7087, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5092, 558, 576, 16800, 1209, 1126, 7737, 2041, 2049, 7093, 2]
 
-// Module 16729 (usePrivateProfileCoachmarkProps)
+// Module 16799 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import openUserSettings from "openUserSettings" /* 7087 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import openUserSettings from "openUserSettings" /* 7093 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PrivateProfileAbstractUI = tmp(16730);
+const PrivateProfileAbstractUI = tmp(16800);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
   const cResult = obj.c(15);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visibleContent = markAsDismissed.visibleContent;
-  let obj2 = markAsDismissed(7719);
+  let obj2 = markAsDismissed(7737);
   let userIsTeen = obj2.useUserIsTeen();
   const ProfileVisibility = markAsDismissed(2041).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();

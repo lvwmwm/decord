@@ -1,29 +1,29 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12550
+// Function ID: 12551
 // Name: GuildWelcomeActionSheet
-// Dependencies: [19, 17, 5994, 2064, 2086, 4709, 12500, 12504, 1085, 1393, 1096, 21, 5091, 587, 5903, 558, 576, 504, 5418, 1112, 5055, 1415, 6163, 4723, 5087, 1200, 11318, 8563, 584, 12502, 1265, 12434, 1126, 6892, 2]
+// Dependencies: [19, 17, 5987, 2065, 2087, 4750, 12547, 12551, 1085, 1393, 1096, 21, 5092, 587, 5906, 558, 576, 504, 5421, 1112, 5056, 1415, 6156, 4764, 5088, 1200, 11359, 8579, 12549, 1265, 12481, 1126, 6898, 2]
 
-// Module 12503 (GuildWelcomeActionSheet)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 12550 (GuildWelcomeActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1096 */;
 import router_utils from "router_utils" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12500 */;
-import WelcomeScreenConstants from "WelcomeScreenConstants" /* 12504 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import WelcomeScreenStore2 from "WelcomeScreenStore" /* 12547 */;
+import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 12549 */;
+import WelcomeScreenConstants from "WelcomeScreenConstants" /* 12551 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore_mod from "EmojiStore" /* 5994 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import EmojiStore_mod from "EmojiStore" /* 5987 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
-import TextStyles_mod from "TextStyles" /* 5903 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles_mod from "TextStyles" /* 5906 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -300,7 +300,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function WelcomeChan
       if (null != stateFromStores) {
         trackOptionSelect();
         const obj = router_utils;
-        obj.transitionTo(authStore3.CHANNEL(stateFromStores.guild_id, stateFromStores.id));
+        obj.transitionTo(syncedClientThemes.CHANNEL(stateFromStores.guild_id, stateFromStores.id));
         const obj2 = ActionSheetActionCreatorsDefault;
         obj2.hideActionSheet();
       }
@@ -443,7 +443,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
   }
   const tmpResult2 = tmp(504);
   const stateFromStoresObject = tmpResult2.useStateFromStoresObject(tmp9, tmp11);
-  const welcomeScreen = stateFromStoresObject.welcomeScreen;
+  let welcomeScreen = stateFromStoresObject.welcomeScreen;
   const fetching = stateFromStoresObject.fetching;
   const hasError = stateFromStoresObject.hasError;
   if (cResult[6] === guildId) {
@@ -485,11 +485,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
           class O {
             constructor() {
               if (null != welcomeScreen) {
-                let obj = DispatcherDefault;
-                obj.wait(() => {
-                  const obj = guildId(has_custom_emojis[29]);
-                  return obj.welcomeScreenViewed(closure_1_0);
-                });
+                const obj = WelcomeScreenActionCreators;
+                obj.welcomeScreenViewed(guildId);
               }
             }
           }
@@ -517,11 +514,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
         class O {
           constructor() {
             if (null != welcomeScreen) {
-              let obj = DispatcherDefault;
-              obj.wait(() => {
-                const obj = guildId(has_custom_emojis[29]);
-                return obj.welcomeScreenViewed(closure_1_0);
-              });
+              const obj = WelcomeScreenActionCreators;
+              obj.welcomeScreenViewed(guildId);
             }
           }
         }
@@ -549,11 +543,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
           class O {
             constructor() {
               if (null != welcomeScreen) {
-                let obj = DispatcherDefault;
-                obj.wait(() => {
-                  const obj = guildId(has_custom_emojis[29]);
-                  return obj.welcomeScreenViewed(closure_1_0);
-                });
+                const obj = WelcomeScreenActionCreators;
+                obj.welcomeScreenViewed(guildId);
               }
             }
           }
@@ -597,11 +588,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
           class O {
             constructor() {
               if (null != welcomeScreen) {
-                let obj = DispatcherDefault;
-                obj.wait(() => {
-                  const obj = guildId(has_custom_emojis[29]);
-                  return obj.welcomeScreenViewed(closure_1_0);
-                });
+                const obj = WelcomeScreenActionCreators;
+                obj.welcomeScreenViewed(guildId);
               }
             }
           }
@@ -641,11 +629,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
       class O {
         constructor() {
           if (null != welcomeScreen) {
-            let obj = DispatcherDefault;
-            obj.wait(() => {
-              const obj = guildId(has_custom_emojis[29]);
-              return obj.welcomeScreenViewed(closure_1_0);
-            });
+            const obj = WelcomeScreenActionCreators;
+            obj.welcomeScreenViewed(guildId);
           }
         }
       }
@@ -684,13 +669,10 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
     tmp17 = items4;
     tmp16 = R;
   }
-  const fn3 = function y() {
+  const fn3 = function v() {
     if (null == welcomeScreen) {
-      let obj = DispatcherDefault;
-      obj.wait(() => {
-        const obj = guildId(has_custom_emojis[29]);
-        return obj.fetchWelcomeScreen(closure_1_0);
-      });
+      const obj = WelcomeScreenActionCreators;
+      welcomeScreen = obj.fetchWelcomeScreen(guildId);
     }
   };
   const items5 = [guildId, welcomeScreen];
@@ -719,17 +701,14 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
     const obj = { welcomeScreen: WelcomeScreenStore.get(guildId), fetching: WelcomeScreenStore.isFetching(), hasError: WelcomeScreenStore.hasError() };
     return obj;
   });
-  const welcomeScreen = stateFromStoresObject.welcomeScreen;
+  let welcomeScreen = stateFromStoresObject.welcomeScreen;
   const fetching = stateFromStoresObject.fetching;
   const hasError = stateFromStoresObject.hasError;
   const items2 = [guildId, welcomeScreen];
   const effect = welcomeScreen.useEffect(() => {
     if (null == welcomeScreen) {
-      let obj = DispatcherDefault;
-      obj.wait(() => {
-        const obj = guildId(has_custom_emojis[29]);
-        return obj.fetchWelcomeScreen(closure_1_0);
-      });
+      const obj = WelcomeScreenActionCreators;
+      welcomeScreen = obj.fetchWelcomeScreen(guildId);
     }
   }, items2);
   const items3 = [fetching, hasError];
@@ -743,11 +722,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
   const items4 = [guildId, welcomeScreen];
   const effect2 = welcomeScreen.useEffect(() => {
     if (null != welcomeScreen) {
-      let obj = DispatcherDefault;
-      obj.wait(() => {
-        const obj = guildId(has_custom_emojis[29]);
-        return obj.welcomeScreenViewed(closure_1_0);
-      });
+      const obj = WelcomeScreenActionCreators;
+      obj.welcomeScreenViewed(guildId);
     }
   }, items4);
   const items5 = [welcomeScreen];
@@ -794,12 +770,12 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
     if (null != welcomeScreen) {
       const obj3 = { startExpanded: true, children: closure_18(hasError, obj4) };
       obj4 = { contentContainerStyle: tmp.container, children: items9 };
-      const ActionSheet = tmp2(6892).ActionSheet;
-      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(12434).Sizes.MEDIUM, textScale: 2 };
-      const tmp17 = onHide(12434);
+      const ActionSheet = tmp2(6898).ActionSheet;
+      const obj5 = { style: tmp.guildIcon, guild: stateFromStores, size: onHide(12481).Sizes.MEDIUM, textScale: 2 };
+      const tmp17 = onHide(12481);
       items9 = [closure_17(tmp17, obj5), , , , ];
       const obj6 = { style: tmp.header, variant: "heading-xl/extrabold", color: "text-default", children: intl.format(guildId(1126).t["0aydCN"], obj7) };
-      const Text = tmp2(5087).Text;
+      const Text = tmp2(5088).Text;
       intl = tmp2(1126).intl;
       obj7 = {
         guildName: stateFromStores.name,
@@ -810,9 +786,9 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildWelcom
       };
       items9[1] = closure_17(Text, obj6);
       const obj8 = { style: tmp.guildDescription, variant: "text-sm/medium", color: "text-default", children: welcomeScreen.description };
-      items9[2] = closure_17(guildId(5087).Text, obj8);
+      items9[2] = closure_17(guildId(5088).Text, obj8);
       const obj9 = { style: tmp.channelsTitle, variant: "eyebrow", color: "text-default", children: str.toUpperCase() };
-      const Text2 = tmp2(5087).Text;
+      const Text2 = tmp2(5088).Text;
       const intl2 = tmp2(1126).intl;
       str = intl2.string(guildId(1126).t["haj5+i"]);
       items9[3] = closure_17(Text2, obj9);

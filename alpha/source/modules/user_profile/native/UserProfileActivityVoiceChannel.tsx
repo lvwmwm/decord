@@ -1,21 +1,21 @@
-// Module ID: 13097
-// Function ID: 13098
+// Module ID: 13144
+// Function ID: 13145
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 2082, 4709, 1096, 21, 5091, 1382, 6848, 8298, 5361, 13098, 5418, 504, 8208, 8212, 1126, 6165, 6191, 4768, 6899, 5087, 8634, 7481, 5055, 13099, 2000, 8287, 13100, 1200, 2]
+// Dependencies: [17, 2083, 4750, 1096, 21, 5092, 1382, 6851, 8314, 5362, 13145, 5421, 504, 8224, 8228, 1126, 6158, 6184, 4809, 6905, 5088, 8650, 7481, 5056, 13146, 2000, 8303, 13147, 1200, 2]
 // Exports: default
 
-// Module 13097 (UserProfileActivityVoiceChannel)
+// Module 13144 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1096 */;
 import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import GuildRecord from "GuildRecord" /* 2082 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
           const obj2 = { text: guild.name, icon: { type: "guild", src: getGuildIconURL(guild, 48), name: guild.name } };
           const obj = ToastActionCreatorsDefault;
           ({ type: "guild", src: getGuildIconURL(guild, 48), name: guild.name });
-          obj.openMana("GUILD_NAME_TOAST", obj2);
+          obj.open("GUILD_NAME_TOAST", obj2);
         },
       children: closure_7(tmp2Result2, obj9)
     };
@@ -161,7 +161,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(13099, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(13146, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };

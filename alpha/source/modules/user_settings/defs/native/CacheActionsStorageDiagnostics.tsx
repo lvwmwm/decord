@@ -1,12 +1,12 @@
-// Module ID: 15790
-// Function ID: 15791
+// Module ID: 15852
+// Function ID: 15853
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 4768, 5013, 15788, 1126, 5374, 5087, 5376, 2]
+// Dependencies: [5, 32, 19, 21, 4809, 5046, 15850, 1126, 5377, 5088, 5379, 2]
 // Exports: default
 
-// Module 15790 (CacheActionsStorageDiagnostics)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
+// Module 15852 (CacheActionsStorageDiagnostics)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -20,7 +20,7 @@ let metroRequire;
 function showStorageDiagnosticsToast(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };
-  obj.openMana("storage-diagnostics-upload", obj2);
+  obj.open("storage-diagnostics-upload", obj2);
 }
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/CacheActionsStorageDiagnostics.tsx");
@@ -49,7 +49,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -124,7 +124,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             closure_129_0(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp41) {
           ref = tmp41;
           if (0 === c3) {
@@ -144,9 +144,9 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
   [tmp2, c1] = tmp;
   dependencyMap = react.useRef(false);
   obj = { children: items };
-  const Stack = onBusyChange(5374).Stack;
+  const Stack = onBusyChange(5377).Stack;
   let obj2 = { variant: "text-sm/normal", color: "text-subtle", children: intl.string(onBusyChange(1126).t.Fzi4HX) };
-  const Text = onBusyChange(5087).Text;
+  const Text = onBusyChange(5088).Text;
   intl = onBusyChange(1126).intl;
   items = [closure_6(Text, obj2), ];
   let obj3 = {
@@ -158,7 +158,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
       return obj(...arguments);
     }
   };
-  const Button = onBusyChange(5376).Button;
+  const Button = onBusyChange(5379).Button;
   intl2 = onBusyChange(1126).intl;
   items[1] = closure_6(Button, obj3);
   return closure_7(Stack, obj);

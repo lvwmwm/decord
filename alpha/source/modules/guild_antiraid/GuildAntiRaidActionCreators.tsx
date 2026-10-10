@@ -1,19 +1,19 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11386
+// Function ID: 11387
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 2086, 8026, 1085, 1265, 5106, 8621, 4661, 1295, 11345, 2]
+// Dependencies: [5, 2087, 8044, 1085, 1265, 5107, 8637, 4702, 1295, 11387, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11344 (GuildAntiRaidActionCreators)
+// Module 11386 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import _modDef4661 from "module_4661" /* 4661 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8026 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8621 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 11345 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8044 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 11387 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _setGuildRaidAlerts() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _setGuildRaidAlerts() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -116,7 +116,7 @@ obj = function _setGuildIncidentActions() {
     }
     let toISOStringResult = null;
     if (tmp4) {
-      const obj3 = _modDef4661();
+      const obj3 = _modDef4702();
       const addResult = obj3.add(closure_4, "hours");
       toISOStringResult = addResult.toISOString();
     }
@@ -159,7 +159,7 @@ obj = function _handleResolveRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -231,7 +231,7 @@ obj = function _handleReportRaid() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {

@@ -1,12 +1,12 @@
-// Module ID: 6871
-// Function ID: 6872
+// Module ID: 6877
+// Function ID: 6878
 // Name: getConnectionsRoles
-// Dependencies: [2118, 2086, 1085, 1097, 2]
+// Dependencies: [2119, 2087, 1085, 1097, 2]
 // Exports: default
 
-// Module 6871 (getConnectionsRoles)
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import GuildStore from "GuildStore" /* 2086 */;
+// Module 6877 (getConnectionsRoles)
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;

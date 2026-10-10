@@ -1,19 +1,19 @@
-// Module ID: 7704
-// Function ID: 7705
+// Module ID: 7721
+// Function ID: 7722
 // Name: ReportModals
-// Dependencies: [5, 2069, 4720, 1404, 1085, 7705, 7706, 7708, 2078, 5106, 2]
+// Dependencies: [5, 2070, 4761, 1404, 1085, 7722, 7723, 7725, 2079, 5107, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 7704 (ReportModals)
+// Module 7721 (ReportModals)
 import Constants from "Constants" /* 1085 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2078 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
-import MenuTypes from "MenuTypes" /* 7705 */;
-import showReportModal2 from "showReportModal" /* 7706 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 7708 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import MenuTypes from "MenuTypes" /* 7722 */;
+import showReportModal2 from "showReportModal" /* 7723 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 7725 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StageInstanceStore from "StageInstanceStore" /* 2069 */;
-import MessageRecord from "MessageRecord" /* 4720 */;
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
+import MessageRecord from "MessageRecord" /* 4761 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _submitHamReportForFirstDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _submitHamReportForFirstDM() {
               c4 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp7) {
           if (0 === c4) {
@@ -108,7 +108,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp9) {
           if (0 === c5) {
@@ -372,7 +372,7 @@ export const showUnauthenticatedReportModalForMessage = function showUnauthentic
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
   obj = { report_type: MESSAGE };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "Array", channel_id: "Set" });
+  const merged = Object.assign({ message_id: "backgroundColor", channel_id: "IconComponent" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };

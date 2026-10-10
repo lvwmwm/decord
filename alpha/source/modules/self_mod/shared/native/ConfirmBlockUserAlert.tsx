@@ -1,20 +1,20 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 10421
+// Function ID: 10422
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1390, 10348, 21, 5091, 587, 558, 576, 504, 10389, 4923, 7011, 7017, 7704, 5376, 1126, 5087, 5395, 2]
+// Dependencies: [19, 17, 1390, 10381, 21, 5092, 587, 558, 576, 504, 10422, 4962, 7017, 7025, 7721, 5379, 1126, 5088, 5398, 2]
 
-// Module 10388 (ConfirmBlockUserAlert)
+// Module 10421 (ConfirmBlockUserAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7011 */;
-import ReportModals from "ReportModals" /* 7704 */;
-import Constants from "Constants" /* 10348 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7017 */;
+import ReportModals from "ReportModals" /* 7721 */;
+import Constants from "Constants" /* 10381 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -130,8 +130,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmBlo
     constructor() {
       obj = closure_1(closure_2[12]);
       obj1 = { location: LOCATION_CONTEXT_MOBILE };
-      blockUserResult = obj.blockUser(userId, obj1);
-      nextPromise = blockUserResult.then(() => { /* body not rendered: F142147 */ });
+      blockUserResult = obj.blockUser(userId, obj1, channelId);
+      nextPromise = blockUserResult.then(() => { /* body not rendered: F142574 */ });
       return;
     }
   }
@@ -166,7 +166,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmBlo
   const callback = onClose.useCallback(() => {
     let obj = RelationshipActionCreatorsDefault;
     const obj2 = { location: LOCATION_CONTEXT_MOBILE };
-    const blockUserResult = obj.blockUser(userId, obj2);
+    const blockUserResult = obj.blockUser(userId, obj2, channelId);
     blockUserResult.then(() => {
       const obj = channelId(onCancel[13]);
       const result = obj.showBlockSuccessToast(userId, closure_1_1);

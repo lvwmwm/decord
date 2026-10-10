@@ -1,21 +1,21 @@
-// Module ID: 17951
-// Function ID: 17952
+// Module ID: 18023
+// Function ID: 18024
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 2086, 21, 5091, 587, 558, 576, 504, 17948, 17952, 5055, 14057, 6682, 2041, 4768, 5006, 1126, 6163, 10367, 5087, 6165, 5376, 6892, 2]
+// Dependencies: [19, 17, 2087, 21, 5092, 587, 558, 576, 504, 18020, 18024, 5056, 14112, 6683, 2041, 4809, 1126, 6156, 10400, 5088, 6158, 5379, 6898, 2]
 
-// Module 17951 (DmSettingsUpsellActionSheet)
+// Module 18023 (DmSettingsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6682 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14057 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 17948 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 17952 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6683 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14112 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 18020 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 18024 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
   let tmp10;
   let tmp7;
   let tmp9;
-  let tmp = guildId;
+  const tmp = guildId;
   let obj = guildId(576);
   const cResult = obj.c(55);
   guildId = guildId.guildId;
@@ -123,11 +123,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
           const updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
           updateSettingResult.then(() => {
             let intl;
-            const tmp = stateFromStores(closure_1_2[15]);
-            const open = tmp.open;
-            const obj = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(closure_1_2[16]), content: intl.string(guildId(closure_1_2[17]).t.rlYD1W) };
-            intl = guildId(closure_1_2[17]).intl;
-            open(obj);
+            const obj = { text: intl.string(guildId(closure_1_2[16]).t.rlYD1W), variant: "success" };
+            const open = stateFromStores(closure_1_2[15]).open;
+            stateFromStores(closure_1_2[15]);
+            intl = guildId(closure_1_2[16]).intl;
+            open("DM_SETTINGS_UPSELL_SUCCESS_TOAST", obj);
           });
           const obj3 = ActionSheetActionCreatorsDefault;
           obj3.hideActionSheet();
@@ -142,8 +142,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
       }
       const container = tmp4.container;
       if (cResult[13] !== tmp4.headerImage) {
-        let obj2 = { source: stateFromStores(10367), style: tmp4.headerImage };
-        const tmp18 = stateFromStores(6163);
+        let obj2 = { source: stateFromStores(10400), style: tmp4.headerImage };
+        const tmp18 = stateFromStores(6156);
         const tmp19 = closure_6(tmp18, obj2);
         cResult[13] = tmp4.headerImage;
         cResult[14] = tmp19;
@@ -163,7 +163,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
       }
       if (cResult[16] !== tmp4.title) {
         let obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: title, children: tmp20 };
-        const tmp24 = closure_6(tmp(5087).Text, obj3);
+        const tmp24 = closure_6(tmp(5088).Text, obj3);
         cResult[16] = tmp4.title;
         cResult[17] = tmp24;
         tmp22 = tmp24;
@@ -192,7 +192,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
         const _Symbol2 = Symbol;
         if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
           const obj5 = { variant: "eyebrow", color: "text-default", children: intl3.string(tmp(1126).t.KPB2iw) };
-          const Text = tmp(5087).Text;
+          const Text = tmp(5088).Text;
           intl3 = tmp(1126).intl;
           const tmp32 = closure_6(Text, obj5);
           cResult[23] = tmp32;
@@ -201,8 +201,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
           tmp30 = cResult[23];
         }
         if (cResult[24] !== stateFromStores) {
-          const obj6 = { guild: stateFromStores, size: tmp(6165).GuildIconSizes.SMALL_32 };
-          const tmp36 = stateFromStores(6165);
+          const obj6 = { guild: stateFromStores, size: tmp(6158).GuildIconSizes.SMALL_32 };
+          const tmp36 = stateFromStores(6158);
           const tmp37 = closure_6(tmp36, obj6);
           cResult[24] = stateFromStores;
           cResult[25] = tmp37;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
         }
         if (cResult[26] !== stateFromStores.name) {
           const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
-          const tmp40 = closure_6(tmp(5087).Text, obj7);
+          const tmp40 = closure_6(tmp(5088).Text, obj7);
           cResult[26] = stateFromStores.name;
           cResult[27] = tmp40;
           tmp38 = tmp40;
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
               }
               if (cResult[36] !== tmp14) {
                 const obj8 = { size: "lg", onPress: tmp14, text: tmp49 };
-                const tmp53 = closure_6(tmp(5376).Button, obj8);
+                const tmp53 = closure_6(tmp(5379).Button, obj8);
                 cResult[36] = tmp14;
                 cResult[37] = tmp53;
                 tmp51 = tmp53;
@@ -264,7 +264,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
               }
               if (cResult[39] !== tmp12) {
                 const obj9 = { size: "lg", variant: "secondary", onPress: tmp12, text: tmp54 };
-                const tmp58 = closure_6(tmp(5376).Button, obj9);
+                const tmp58 = closure_6(tmp(5379).Button, obj9);
                 cResult[39] = tmp12;
                 cResult[40] = tmp58;
                 tmp56 = tmp58;
@@ -309,7 +309,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
                 const obj11 = { startExpanded: true, children: closure_7(View, obj12) };
                 obj12 = { style: container, children: items2 };
                 items2 = [tmp15, tmp22, tmp27, tmp45, tmp51, tmp56, tmp61];
-                const ActionSheet = tmp(6892).ActionSheet;
+                const ActionSheet = tmp(6898).ActionSheet;
                 const tmp68 = closure_6(ActionSheet, obj11);
                 cResult[46] = tmp4.container;
                 cResult[47] = tmp22;
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
                 tmp64 = tmp68;
               }
               const obj13 = { variant: "text-xs/normal", style: footer, children: tmp59 };
-              const tmp63 = closure_6(tmp(5087).Text, obj13);
+              const tmp63 = closure_6(tmp(5088).Text, obj13);
               cResult[43] = tmp4.footer;
               cResult[44] = tmp59;
               cResult[45] = tmp63;
@@ -348,7 +348,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
         tmp41 = tmp44;
       }
       const obj16 = { variant: "text-md/normal", color: "text-default", style: body, children: tmp25 };
-      const tmp29 = closure_6(tmp(5087).Text, obj16);
+      const tmp29 = closure_6(tmp(5088).Text, obj16);
       cResult[20] = tmp4.body;
       cResult[21] = tmp25;
       cResult[22] = tmp29;
@@ -382,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
   let obj3;
   let obj7;
   guildId = guildId.guildId;
-  let tmp = closure_8();
+  const tmp = closure_8();
   let obj = guildId(504);
   const items = [GuildStore];
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
@@ -397,30 +397,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
   if (null != stateFromStores) {
     let obj2 = { startExpanded: true, children: closure_7(View, obj3) };
     obj3 = { style: tmp.container, children: items2 };
-    const ActionSheet = tmp2(6892).ActionSheet;
-    let obj4 = { source: stateFromStores(10367), style: tmp.headerImage };
-    const tmp11 = stateFromStores(6163);
+    const ActionSheet = tmp2(6898).ActionSheet;
+    let obj4 = { source: stateFromStores(10400), style: tmp.headerImage };
+    const tmp11 = stateFromStores(6156);
     items2 = [closure_6(tmp11, obj4), , , , , , ];
     const obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(guildId(1126).t.w2BvnL) };
-    const Text = tmp2(5087).Text;
+    const Text = tmp2(5088).Text;
     intl = tmp2(1126).intl;
     items2[1] = closure_6(Text, obj5);
     const obj6 = { variant: "text-md/normal", color: "text-default", style: tmp.body, children: intl2.format(guildId(1126).t.Depjkv, obj7) };
-    const Text2 = tmp2(5087).Text;
+    const Text2 = tmp2(5088).Text;
     intl2 = tmp2(1126).intl;
     obj7 = { guild_name: stateFromStores.name };
     items2[2] = closure_6(Text2, obj6);
     const obj8 = { style: tmp.guildContainer, children: items3 };
     const obj9 = { variant: "eyebrow", color: "text-default", children: intl3.string(guildId(1126).t.KPB2iw) };
-    const Text3 = tmp2(5087).Text;
+    const Text3 = tmp2(5088).Text;
     intl3 = tmp2(1126).intl;
     items3 = [closure_6(Text3, obj9), ];
     const obj10 = { style: tmp.guildInfo, children: items4 };
-    const obj11 = { guild: stateFromStores, size: guildId(6165).GuildIconSizes.SMALL_32 };
-    const tmp12 = stateFromStores(6165);
+    const obj11 = { guild: stateFromStores, size: guildId(6158).GuildIconSizes.SMALL_32 };
+    const tmp12 = stateFromStores(6158);
     items4 = [closure_6(tmp12, obj11), ];
     const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
-    items4[1] = closure_6(guildId(5087).Text, obj12);
+    items4[1] = closure_6(guildId(5088).Text, obj12);
     items3[1] = closure_7(View, obj10);
     items2[3] = closure_7(View, obj8);
     const obj13 = {
@@ -433,11 +433,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
           const updateSettingResult = RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
           updateSettingResult.then(() => {
             let intl;
-            const tmp = stateFromStores(closure_1_2[15]);
-            const open = tmp.open;
-            const obj = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: stateFromStores(closure_1_2[16]), content: intl.string(guildId(closure_1_2[17]).t.rlYD1W) };
-            intl = guildId(closure_1_2[17]).intl;
-            open(obj);
+            const obj = { text: intl.string(guildId(closure_1_2[16]).t.rlYD1W), variant: "success" };
+            const open = stateFromStores(closure_1_2[15]).open;
+            stateFromStores(closure_1_2[15]);
+            intl = guildId(closure_1_2[16]).intl;
+            open("DM_SETTINGS_UPSELL_SUCCESS_TOAST", obj);
           });
           const obj3 = ActionSheetActionCreatorsDefault;
           obj3.hideActionSheet();
@@ -446,7 +446,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
         },
       text: intl4.string(guildId(1126).t.TD7iUx)
     };
-    const Button = tmp2(5376).Button;
+    const Button = tmp2(5379).Button;
     intl4 = tmp2(1126).intl;
     items2[4] = closure_6(Button, obj13);
     const obj14 = {
@@ -460,11 +460,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
         },
       text: intl5.string(guildId(1126).t.PsWbcp)
     };
-    const Button2 = tmp2(5376).Button;
+    const Button2 = tmp2(5379).Button;
     intl5 = tmp2(1126).intl;
     items2[5] = closure_6(Button2, obj14);
     const obj15 = { variant: "text-xs/normal", style: tmp.footer, children: intl6.format(guildId(1126).t.IzZxXW, obj16) };
-    const Text4 = tmp2(5087).Text;
+    const Text4 = tmp2(5088).Text;
     intl6 = tmp2(1126).intl;
     obj16 = {
       onClick: function handleGotoServerPrivacySettings() {

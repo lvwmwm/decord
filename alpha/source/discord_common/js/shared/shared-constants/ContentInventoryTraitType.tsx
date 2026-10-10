@@ -1,9 +1,9 @@
-// Module ID: 8256
-// Function ID: 8257
+// Module ID: 8272
+// Function ID: 8273
 // Name: ContentInventoryTraitType
 // Dependencies: [2]
 
-// Module 8256 (ContentInventoryTraitType)
+// Module 8272 (ContentInventoryTraitType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryTraitType.tsx");

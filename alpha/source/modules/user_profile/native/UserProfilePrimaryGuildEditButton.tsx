@@ -1,18 +1,18 @@
-// Module ID: 14821
-// Function ID: 14822
+// Module ID: 14877
+// Function ID: 14878
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2086, 7869, 21, 5091, 587, 504, 14822, 8273, 8272, 1126, 1382, 5087, 14795, 5055, 14823, 2000, 6165, 8839, 2]
+// Dependencies: [19, 2087, 7887, 21, 5092, 587, 504, 14878, 14879, 8289, 8288, 1126, 1382, 5088, 14851, 5056, 14881, 2000, 6158, 8858, 2]
 // Exports: default
 
-// Module 14821 (UserProfilePrimaryGuildEditButton)
+// Module 14877 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import GuildTagConstants from "GuildTagConstants" /* 7869 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import GuildTagConstants from "GuildTagConstants" /* 7887 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import createStyles from "createStyles" /* 5091 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -34,7 +34,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
   pendingPrimaryGuildId = undefined;
   let userAvailableGuildsWithTags;
   function handleSelectPrimaryGuild(primaryGuildId) {
-    const obj = pendingPrimaryGuildId(handleSelectPrimaryGuild[9]);
+    const obj = pendingPrimaryGuildId(handleSelectPrimaryGuild[10]);
     const obj2 = { primaryGuildId };
     obj.setPendingChanges(obj2);
   }
@@ -64,7 +64,9 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
   let obj2 = pendingPrimaryGuildId(handleSelectPrimaryGuild[7]);
   userAvailableGuildsWithTags = obj2.useUserAvailableGuildsWithTags();
   const obj3 = pendingPrimaryGuildId(handleSelectPrimaryGuild[8]);
-  const userPrimaryGuild = obj3.getUserPrimaryGuild(user.primaryGuild);
+  userAvailableGuildsWithTags.length > 0 || obj3.useGuildTagCreationUpsell("UserProfilePrimaryGuildEditButton").isUpsellVisible;
+  const tmp6Result = pendingPrimaryGuildId(handleSelectPrimaryGuild[9]);
+  const userPrimaryGuild = tmp6Result.getUserPrimaryGuild(user.primaryGuild);
   if (null != user) {
     let name;
     let profile;
@@ -95,15 +97,15 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     }
     let guildTagBadgeUrl = null != pendingPrimaryGuildId;
     if (guildTagBadgeUrl) {
-      const tmp6Result = pendingPrimaryGuildId(handleSelectPrimaryGuild[8]);
-      guildTagBadgeUrl = tmp6Result.getGuildTagBadgeUrl(pendingPrimaryGuildId, badge, GuildTagBadgeSize.SIZE_24);
+      const tmp6Result3 = pendingPrimaryGuildId(handleSelectPrimaryGuild[9]);
+      guildTagBadgeUrl = tmp6Result3.getGuildTagBadgeUrl(pendingPrimaryGuildId, badge, GuildTagBadgeSize.SIZE_24);
     }
     if (null != stateFromStores) {
       name = stateFromStores.name;
     } else {
-      const intl = tmp6(tmp7[10]).intl;
+      const intl = tmp6(tmp7[11]).intl;
       const string = intl.string;
-      const t = tmp6(tmp7[10]).t;
+      const t = tmp6(tmp7[11]).t;
       if (null == stateFromStores && null != pendingPrimaryGuildId && pendingPrimaryGuildId === userPrimaryGuild.guildId) {
         name = string(t.dtwqPR);
       } else {
@@ -116,18 +118,18 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
       combined = "" + name + ", " + tag;
     }
     let num = 4;
-    const tmp6Result2 = pendingPrimaryGuildId(handleSelectPrimaryGuild[11]);
-    if (tmp6Result2.isAndroid()) {
+    const tmp6Result4 = pendingPrimaryGuildId(handleSelectPrimaryGuild[12]);
+    if (tmp6Result4.isAndroid()) {
       num = 1;
     }
-    const sum = tmp6(tmp7[12]).TextStyleSheet["text-md/semibold"].fontSize + num;
-    const UserProfileEditFormButton = tmp6(tmp7[13]).UserProfileEditFormButton;
-    const intl2 = tmp6(tmp7[10]).intl;
+    const sum = tmp6(tmp7[13]).TextStyleSheet["text-md/semibold"].fontSize + num;
+    const UserProfileEditFormButton = tmp6(tmp7[14]).UserProfileEditFormButton;
+    const intl2 = tmp6(tmp7[11]).intl;
     let tmp23Result = null;
     const obj5 = { text: combined };
     if (null != stateFromStores) {
-      const obj6 = { guild: stateFromStores, size: pendingPrimaryGuildId(handleSelectPrimaryGuild[17]).GuildIconSizes.LARGE };
-      const tmp26 = userAvailableGuildsWithTags(handleSelectPrimaryGuild[17]);
+      const obj6 = { guild: stateFromStores, size: pendingPrimaryGuildId(handleSelectPrimaryGuild[18]).GuildIconSizes.LARGE };
+      const tmp26 = userAvailableGuildsWithTags(handleSelectPrimaryGuild[18]);
       tmp23Result = tmp23(tmp26, obj6);
     }
     let tmp23Result2 = null;
@@ -135,12 +137,12 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
       const obj7 = { containerStyles: items2, textStyle: obj8, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "text-md/semibold", textColor: "text-default" };
       items2 = [tmp.tag, tagStyle];
       obj8 = { lineHeight: sum };
-      tmp23Result2 = tmp23(tmp6(tmp7[18]).BaseGuildTagChiplet, obj7);
+      tmp23Result2 = tmp23(tmp6(tmp7[19]).BaseGuildTagChiplet, obj7);
     }
-    return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[10]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
+    return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(14823, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(14881, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

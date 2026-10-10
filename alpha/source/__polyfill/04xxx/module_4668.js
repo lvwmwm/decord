@@ -1,148 +1,68 @@
 // Module ID: 4668
 // Function ID: 4669
-// Dependencies: [4661]
+// Dependencies: [2139, 2140, 4665]
 
 // Module 4668
-import _mod4661 from "module_4661" /* 4661 */;
+import localeToNumber from "localeToNumber" /* 4665 */;
+import buildMatchFn from "buildMatchFn" /* 2139 */;
+import buildMatchPatternFn from "buildMatchPatternFn" /* 2140 */;
 
-const fn = function n(moment) {
-  let split;
-  let split2;
-  function translate(arg0, arg1, arg2, arg3) {
-    let str = "";
-    switch (arg2) {
-      case "s":
-      {
-        let str13 = "muutama sekunti";
-        if (arg3) {
-          str13 = "muutaman sekunnin";
-        }
-        return str13;
-      }
-      case "ss":
-      {
-        let str12 = "sekuntia";
-        if (arg3) {
-          str12 = "sekunnin";
-        }
-        str = str12;
-        let tmp2 = arg0;
-        if (arg0 < 10) {
-          let tmp4;
-          if (arg3) {
-            tmp4 = items[arg0];
-          } else {
-            tmp4 = parts[arg0];
-          }
-          tmp2 = tmp4;
-        }
-        return tmp2 + " " + str;
-      }
-      case "m":
-      {
-        let str11 = "minuutti";
-        if (arg3) {
-          str11 = "minuutin";
-        }
-        return str11;
-      }
-      case "mm":
-      {
-        let str10 = "minuuttia";
-        if (arg3) {
-          str10 = "minuutin";
-        }
-        str = str10;
-        break;
-      }
-      case "h":
-      {
-        let str9 = "tunti";
-        if (arg3) {
-          str9 = "tunnin";
-        }
-        return str9;
-      }
-      case "hh":
-      {
-        let str8 = "tuntia";
-        if (arg3) {
-          str8 = "tunnin";
-        }
-        str = str8;
-        break;
-      }
-      case "d":
-      {
-        let str7 = "p\u00E4iv\u00E4";
-        if (arg3) {
-          str7 = "p\u00E4iv\u00E4n";
-        }
-        return str7;
-      }
-      case "dd":
-      {
-        let str6 = "p\u00E4iv\u00E4\u00E4";
-        if (arg3) {
-          str6 = "p\u00E4iv\u00E4n";
-        }
-        str = str6;
-        break;
-      }
-      case "M":
-      {
-        let str5 = "kuukausi";
-        if (arg3) {
-          str5 = "kuukauden";
-        }
-        return str5;
-      }
-      case "MM":
-      {
-        let str4 = "kuukautta";
-        if (arg3) {
-          str4 = "kuukauden";
-        }
-        str = str4;
-        break;
-      }
-      case "y":
-      {
-        let str3 = "vuosi";
-        if (arg3) {
-          str3 = "vuoden";
-        }
-        return str3;
-      }
-      case "yy":
-      {
-        let str2 = "vuotta";
-        if (arg3) {
-          str2 = "vuoden";
-        }
-        str = str2;
-        break;
-      }
-    }
+let items;
+let items1;
+let items2;
+let items3;
+let items4;
+let items5;
+let obj;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
+let obj3;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+if (!buildMatchFn) {
+  obj = { default: buildMatchFn };
+  const obj2 = { default: buildMatchFn };
+} else {
+  obj = buildMatchFn;
+}
+if (!buildMatchPatternFn) {
+  obj3 = { default: buildMatchPatternFn };
+  const obj4 = { default: buildMatchPatternFn };
+} else {
+  obj3 = buildMatchPatternFn;
+}
+const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
+obj6 = { matchPatterns: { narrow: /^(ईसा-पूर्व|ईस्वी)/i, abbreviated: /^(ईसा\.?\s?पूर्व\.?|ईसा\.?)/i, wide: /^(ईसा-पूर्व|ईसवी पूर्व|ईसवी सन|ईसवी)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
+obj7 = { any: items };
+items = [/^b/i, /^(a|c)/i];
+obj8 = {
+  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^ति[1234]/i, wide: /^[1234](पहली|दूसरी|तीसरी|चौथी)? तिमाही/i },
+  defaultMatchWidth: "wide",
+  parsePatterns: obj9,
+  defaultParseWidth: "any",
+  valueCallback(arg0) {
+    return arg0 + 1;
   }
-  const parts = "nolla yksi kaksi kolme nelj\u00E4 viisi kuusi seitsem\u00E4n kahdeksan yhdeks\u00E4n".split(" ");
-  const items = ["nolla", "yhden", "kahden", "kolmen", "nelj\u00E4n", "viiden", "kuuden", parts[7], parts[8], parts[9]];
-  ({ split, split: split2 } = "su_ma_ti_ke_to_pe_la");
-  const obj = { months: "tammikuu_helmikuu_maaliskuu_huhtikuu_toukokuu_kes\u00E4kuu_hein\u00E4kuu_elokuu_syyskuu_lokakuu_marraskuu_joulukuu".split("_"), monthsShort: "tammi_helmi_maalis_huhti_touko_kes\u00E4_hein\u00E4_elo_syys_loka_marras_joulu".split("_"), weekdays: "sunnuntai_maanantai_tiistai_keskiviikko_torstai_perjantai_lauantai".split("_"), weekdaysShort: "su_ma_ti_ke_to_pe_la".split("_"), weekdaysMin: "su_ma_ti_ke_to_pe_la".split("_"), longDateFormat: { LT: "HH.mm", LTS: "HH.mm.ss", L: "DD.MM.YYYY", LL: "Do MMMM[ta] YYYY", LLL: "Do MMMM[ta] YYYY, [klo] HH.mm", LLLL: "dddd, Do MMMM[ta] YYYY, [klo] HH.mm", l: "D.M.YYYY", ll: "Do MMM YYYY", lll: "Do MMM YYYY, [klo] HH.mm", llll: "ddd, Do MMM YYYY, [klo] HH.mm" }, calendar: { sameDay: "[t\u00E4n\u00E4\u00E4n] [klo] LT", nextDay: "[huomenna] [klo] LT", nextWeek: "dddd [klo] LT", lastDay: "[eilen] [klo] LT", lastWeek: "[viime] dddd[na] [klo] LT", sameElse: "L" }, relativeTime: { future: "%s p\u00E4\u00E4st\u00E4", past: "%s sitten", s: translate, ss: translate, m: translate, mm: translate, h: translate, hh: translate, d: translate, dd: translate, M: translate, MM: translate, y: translate, yy: translate }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
-  return moment.defineLocale("fi", obj);
 };
-if (typeof exports === "object") {
-  if (undefined !== module) {
-    if (typeof require === "function") {
-      let tmp4 = dependencyMap;
-      fn(_mod4661);
-    }
-  }
-}
-if (typeof globalThis.define === "function") {
-  const define2 = globalThis.define;
-  if (globalThis.define.amd) {
-    globalThis.define(["../moment"], fn);
-  }
-}
-fn(this.moment);
+obj9 = { any: items1 };
+items1 = [/1/i, /2/i, /3/i, /4/i];
+obj10 = { matchPatterns: { narrow: /^[जफ़माअप्मईजूनजुअगसिअक्तनदि]/i, abbreviated: /^(जन|फ़र|मार्च|अप्|मई|जून|जुल|अग|सित|अक्तू|नव|दिस)/i, wide: /^(जनवरी|फ़रवरी|मार्च|अप्रैल|मई|जून|जुलाई|अगस्त|सितंबर|अक्तूबर|नवंबर|दिसंबर)/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
+obj11 = { narrow: items2, any: items3 };
+items2 = [/^ज/i, /^फ़/i, /^मा/i, /^अप्/i, /^मई/i, /^जू/i, /^जु/i, /^अग/i, /^सि/i, /^अक्तू/i, /^न/i, /^दि/i];
+items3 = [/^जन/i, /^फ़/i, /^मा/i, /^अप्/i, /^मई/i, /^जू/i, /^जु/i, /^अग/i, /^सि/i, /^अक्तू/i, /^नव/i, /^दिस/i];
+obj12 = { matchPatterns: { narrow: /^[रविसोममंगलबुधगुरुशुक्रशनि]/i, short: /^(रवि|सोम|मंगल|बुध|गुरु|शुक्र|शनि)/i, abbreviated: /^(रवि|सोम|मंगल|बुध|गुरु|शुक्र|शनि)/i, wide: /^(रविवार|सोमवार|मंगलवार|बुधवार|गुरुवार|शुक्रवार|शनिवार)/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
+obj13 = { narrow: items4, any: items5 };
+items4 = [/^रवि/i, /^सोम/i, /^मंगल/i, /^बुध/i, /^गुरु/i, /^शुक्र/i, /^शनि/i];
+items5 = [/^रवि/i, /^सोम/i, /^मंगल/i, /^बुध/i, /^गुरु/i, /^शुक्र/i, /^शनि/i];
+obj14 = { matchPatterns: { narrow: /^(पू|अ|म|द.\?|सु|दो|शा|रा)/i, any: /^(पूर्वाह्न|अपराह्न|म|द.\?|सु|दो|शा|रा)/i }, defaultMatchWidth: "any", parsePatterns: obj15, defaultParseWidth: "any" };
+obj15 = { any: { am: /^पूर्वाह्न/i, pm: /^अपराह्न/i, midnight: /^मध्य/i, noon: /^दो/i, morning: /सु/i, afternoon: /दो/i, evening: /शा/i, night: /रा/i } };
+obj5 = { matchPattern: /^[०१२३४५६७८९]+/i, parsePattern: /^[०१२३४५६७८९]+/i, valueCallback: localeToNumber.localeToNumber };
+
+export default date;

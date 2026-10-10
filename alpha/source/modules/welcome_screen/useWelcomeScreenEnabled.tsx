@@ -1,14 +1,14 @@
-// Module ID: 12501
-// Function ID: 12502
+// Module ID: 12548
+// Function ID: 12549
 // Name: useWelcomeScreenEnabled
-// Dependencies: [2068, 2064, 2086, 2115, 1085, 558, 576, 504, 2]
+// Dependencies: [2069, 2065, 2087, 2116, 1085, 558, 576, 504, 2]
 
-// Module 12501 (useWelcomeScreenEnabled)
+// Module 12548 (useWelcomeScreenEnabled)
 import Constants from "Constants" /* 1085 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

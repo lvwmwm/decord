@@ -1,24 +1,24 @@
-// Module ID: 5431
-// Function ID: 5432
+// Module ID: 5434
+// Function ID: 5435
 // Name: MessageRecordUtils
-// Dependencies: [5432, 4720, 1404, 502, 4719, 1390, 1085, 5433, 5071, 5624, 11, 5629, 5630, 5743, 4661, 5744, 5746, 2]
+// Dependencies: [5435, 4761, 1404, 502, 4760, 1390, 1085, 5436, 5072, 5627, 11, 5632, 5633, 5746, 4702, 5747, 5749, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 5431 (MessageRecordUtils)
+// Module 5434 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4661 from "module_4661" /* 4661 */;
-import findCodedLinksDefault from "findCodedLinks" /* 5071 */;
-import useMessageAuthor from "useMessageAuthor" /* 5624 */;
-import isMessageMentioned from "isMessageMentioned" /* 5629 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5630 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 5743 */;
-import EmbedUtils from "EmbedUtils" /* 5744 */;
-import StickersUtils from "StickersUtils" /* 5746 */;
-import InteractionRecord from "InteractionRecord" /* 5432 */;
-import MessageRecord_mod from "MessageRecord" /* 4720 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import findCodedLinksDefault from "findCodedLinks" /* 5072 */;
+import useMessageAuthor from "useMessageAuthor" /* 5627 */;
+import isMessageMentioned from "isMessageMentioned" /* 5632 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5633 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 5746 */;
+import EmbedUtils from "EmbedUtils" /* 5747 */;
+import StickersUtils from "StickersUtils" /* 5749 */;
+import InteractionRecord from "InteractionRecord" /* 5435 */;
+import MessageRecord_mod from "MessageRecord" /* 4761 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -32,11 +32,11 @@ let closure_4;
 let hasOwnProperty;
 let map1;
 let unpackModuleId;
-const f91599 = (item) => {
+const f91879 = (item) => {
   const obj = EmbedUtils;
   return obj.sanitizeEmbed(message2.channel_id, message2.id, item);
 };
-const f91601 = (item) => {
+const f91881 = (item) => {
   const obj = {};
   const merged = Object.assign(item);
   if (null != obj.count_details) {
@@ -59,7 +59,7 @@ const f91601 = (item) => {
   }
   return obj;
 };
-const f91602 = (message) => {
+const f91882 = (message) => {
   const obj = { message: createMinimalMessageRecord(message.message), moderator_report: message.moderator_report };
   const tmp = new closure_1_4(obj);
   return tmp;
@@ -91,7 +91,7 @@ function createMinimalMessageRecord(timestamp) {
     items = [];
   } else {
     const embeds = timestamp.embeds;
-    const mapped = embeds.map(f91599);
+    const mapped = embeds.map(f91879);
     const obj2 = require("EmbedUtils");
     items = obj2.mergeEmbedsOnURL(mapped);
   }
@@ -258,13 +258,13 @@ function createMessageRecord(message, arg1) {
       const _Date = Date;
       const self5 = this;
       self2 = this;
-      const tmp42 = _modDef4661;
+      const tmp42 = _modDef4702;
       const date = new Date(call.ended_timestamp);
       tmp42Result = tmp42(date);
     }
     let durationResult = null;
     if (null != tmp42Result) {
-      const obj11 = _modDef4661;
+      const obj11 = _modDef4702;
       durationResult = obj11.duration(tmp42Result.diff(tmp38));
     }
     tmp39 = { participants: call.participants, endedTimestamp: tmp42Result, duration: durationResult };
@@ -274,7 +274,7 @@ function createMessageRecord(message, arg1) {
     items = [];
   } else {
     const message_snapshots = message.message_snapshots;
-    items = message_snapshots.map(f91602);
+    items = message_snapshots.map(f91882);
   }
   if (reactions == null) {
     reactions = message.reactions;
@@ -335,7 +335,7 @@ function createMessageRecord(message, arg1) {
     mapped1 = [];
   }
   HermesBuiltin.arraySpread(items2, mapped1, tmp49);
-  items1 = items2.map(f91601);
+  items1 = items2.map(f91881);
 }
 let MessageRecord = MessageRecord_mod;
 ({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: hasOwnProperty } = MessageRecord);
@@ -376,13 +376,13 @@ export const updateMessageRecord = function updateMessageRecord(message, message
           const _Date = Date;
           const self = this;
           let self2 = this;
-          const tmp4 = _modDef4661;
+          const tmp4 = _modDef4702;
           const date = new Date(call.ended_timestamp);
           tmp = tmp4(date);
         }
         let durationResult = null;
         if (null != tmp) {
-          let obj = _modDef4661;
+          let obj = _modDef4702;
           durationResult = obj.duration(tmp.diff(tmp43));
         }
         tmp11 = { participants: call.participants, endedTimestamp: tmp, duration: durationResult };
@@ -416,7 +416,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         items = [];
       } else {
         const embeds = message2.embeds;
-        const mapped = embeds.map(f91599);
+        const mapped = embeds.map(f91879);
         const obj7 = require("EmbedUtils");
         items = obj7.mergeEmbedsOnURL(mapped);
       }
@@ -430,7 +430,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         items1 = [];
       } else {
         const message_snapshots = message2.message_snapshots;
-        items1 = message_snapshots.map(f91602);
+        items1 = message_snapshots.map(f91882);
       }
       set2Result = set2("messageSnapshots", items1);
     }
@@ -480,7 +480,7 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         let num = 0;
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, reactions, 0);
         HermesBuiltin.arraySpread(items3, [], arraySpreadResult);
-        items2 = items3.map(f91601);
+        items2 = items3.map(f91881);
       }
       set5Result = set5("reactions", items2);
     }

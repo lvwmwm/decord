@@ -1,12 +1,12 @@
-// Module ID: 5951
-// Function ID: 5952
+// Module ID: 5944
+// Function ID: 5945
 // Name: SpoilerChannelUtils
-// Dependencies: [2064, 5952, 558, 576, 504, 2]
+// Dependencies: [2065, 5945, 558, 576, 504, 2]
 // Exports: shouldShowSpoilerGateForChannelId
 
-// Module 5951 (SpoilerChannelUtils)
-import ChannelStore from "ChannelStore" /* 2064 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 5952 */;
+// Module 5944 (SpoilerChannelUtils)
+import ChannelStore from "ChannelStore" /* 2065 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 5945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

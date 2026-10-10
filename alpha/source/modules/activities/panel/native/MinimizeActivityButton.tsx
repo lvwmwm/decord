@@ -1,15 +1,15 @@
-// Module ID: 17645
-// Function ID: 17646
+// Module ID: 17717
+// Function ID: 17718
 // Name: MinimizeActivityButton
-// Dependencies: [19, 17, 6074, 21, 5091, 558, 576, 1126, 5376, 10499, 8114, 2]
+// Dependencies: [19, 17, 6067, 21, 5092, 558, 576, 1126, 5379, 10533, 7573, 2]
 
-// Module 17645 (MinimizeActivityButton)
+// Module 17717 (MinimizeActivityButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6074 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10499 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10533 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         cResult[8] = tmp22;
         tmp19 = tmp22;
       }
-      const Button = tmp(5376).Button;
+      const Button = tmp(5379).Button;
       const tmp18 = <Button icon={AssetRegistryDefault} accessibilityLabel={tmp13} onPress={tmp4} text={activityName} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} shrink />;
       cResult[3] = activityName;
       cResult[4] = tmp4;
@@ -85,7 +85,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp6 = cResult[9];
   }
   if (cResult[10] !== tmp4) {
-    const IconButton = tmp(8114).IconButton;
+    const IconButton = tmp(7573).IconButton;
     const tmp11 = <IconButton icon={AssetRegistryDefault} accessibilityLabel={tmp6} onPress={tmp4} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} />;
     cResult[10] = tmp4;
     cResult[11] = tmp11;
@@ -107,13 +107,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp3;
     if ("" !== activityName) {
       ({ icon: AssetRegistryDefault, accessibilityLabel: intl2.string(setMode(1126).t.brPQ5U), onPress: callback, text: activityName, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
-      const Button = setMode(5376).Button;
+      const Button = setMode(5379).Button;
       intl2 = setMode(1126).intl;
       tmp3 = <View style={tmp2.buttonParent}>{null}</View>;
     }
     return tmp3;
   }
-  const IconButton = setMode(8114).IconButton;
+  const IconButton = setMode(7573).IconButton;
   const intl = setMode(1126).intl;
   tmp3 = <IconButton icon={AssetRegistryDefault} accessibilityLabel={intl.string(setMode(1126).t.brPQ5U)} onPress={callback} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} />;
 }));

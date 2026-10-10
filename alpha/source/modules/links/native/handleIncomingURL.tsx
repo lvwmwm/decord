@@ -1,19 +1,19 @@
-// Module ID: 18586
-// Function ID: 18587
+// Module ID: 18660
+// Function ID: 18661
 // Name: handleIncomingURL
-// Dependencies: [5, 2064, 5109, 1999, 1085, 3, 7190, 18585, 7481, 1265, 13994, 5068, 5073, 1278, 8480, 16279, 18587, 2]
+// Dependencies: [5, 2065, 5110, 1999, 1085, 3, 7196, 18659, 7481, 1265, 14049, 5069, 5074, 1278, 8496, 16346, 18661, 2]
 // Exports: default
 
-// Module 18586 (handleIncomingURL)
+// Module 18660 (handleIncomingURL)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7190 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7196 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 13994 */;
-import DeepLinkTypes from "DeepLinkTypes" /* 18585 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 14049 */;
+import DeepLinkTypes from "DeepLinkTypes" /* 18659 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ let obj = function _handleIncomingURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -175,18 +175,18 @@ let obj = function _handleIncomingURL() {
                       }
                     }
                     c8 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   } else {
                     const parts = url.split("voice/");
                     if (2 !== parts.length) {
                       c8 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     } else {
                       const str36 = parts[1];
                       const parts1 = str36.split("/");
                       if (0 === parts1.length) {
                         c8 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       } else if ("user" !== parts1[0]) {
                         if ("invite" === parts1[0]) {
                           const obj12 = { payload: obj13, isAppStartupNavigation };
@@ -226,7 +226,7 @@ let obj = function _handleIncomingURL() {
                 }
               }
               c8 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else if (1 === tmp4) {
             c6 = 0;

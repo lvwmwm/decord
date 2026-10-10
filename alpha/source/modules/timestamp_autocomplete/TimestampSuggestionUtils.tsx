@@ -1,19 +1,19 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 9812
+// Function ID: 9813
 // Name: TimestampSuggestionUtils
-// Dependencies: [32, 2128, 4661, 9784, 1126, 2]
+// Dependencies: [32, 2129, 4702, 9813, 1126, 2]
 // Exports: preloadTimestampParser, queryTimestampSuggestions
 
-// Module 9783 (TimestampSuggestionUtils)
+// Module 9812 (TimestampSuggestionUtils)
 import intl6 from "intl" /* 1126 */;
-import _modDef4661 from "module_4661" /* 4661 */;
-import en2 from "en" /* 9784 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import en2 from "en" /* 9813 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
 import size from "module_2" /* 2 */;
 
 let items = ["h:mm:ssa", "h:mm:ss a", "H:mm:ss", "h:mma", "h:mm a", "H:mm", "HHmm", "ha", "h a", "H", "LT", "LTS"];
-let items1 = [_modDef4661.ISO_8601];
+let items1 = [_modDef4702.ISO_8601];
 const items2 = [...items];
 const set = new Set(items2);
 HermesBuiltin.arraySpread(items1, set, 1);
@@ -39,7 +39,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
   let unadjustedDescription;
   let obj = cloneResult1;
   if (cloneResult1 === undefined) {
-    obj = _modDef4661();
+    obj = _modDef4702();
   }
   let tmp4 = null;
   if ("" !== arg0) {
@@ -104,7 +104,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
   if (tmp13) {
     tmp13 = first.text === arg0;
   }
-  const obj2 = _modDef4661;
+  const obj2 = _modDef4702;
   if (tmp13) {
     const start = first.start;
     invalidResult = obj2(start.date());
@@ -138,7 +138,7 @@ export const queryTimestampSuggestions = function queryTimestampSuggestions(arg0
         if (!start2.isCertain("hour")) {
           const _Math = Math;
           const result = Math.round(cloneResult.valueOf() / 900000) * 900000;
-          obj5 = tmp19(4661)(result);
+          obj5 = tmp19(4702)(result);
         }
       }
       if (tmp13) {

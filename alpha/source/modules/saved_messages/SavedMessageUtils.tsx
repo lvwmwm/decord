@@ -1,17 +1,17 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 12656
+// Function ID: 12657
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2068, 2064, 1085, 1126, 4661, 558, 576, 504, 7008, 6943, 2]
+// Dependencies: [5, 19, 2069, 2065, 1085, 1126, 4702, 558, 576, 504, 7014, 6949, 2]
 // Exports: savedMessageJumpToMessage, useDueInString
 
-// Module 12609 (SavedMessageUtils)
+// Module 12656 (SavedMessageUtils)
 import intl2 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
-import _modDef4661 from "module_4661" /* 4661 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7008 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let obj = function _savedMessageJumpToMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -83,11 +83,11 @@ let obj = function _savedMessageJumpToMessage() {
               if (null == type2.recipients) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } else if (type2.recipients.length > 1) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } else {
                 type = closure_131_1(closure_131_2[10]);
                 const recipients = type2.recipients;
@@ -116,7 +116,7 @@ let obj = function _savedMessageJumpToMessage() {
           type = CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId);
           tmp17(type, { openChannel: true });
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp26) {
           closure_4 = tmp26;
           if (0 === c5) {
@@ -243,8 +243,8 @@ export const useDueInString = function useDueInString(arg0) {
     const intl = tmp(1126).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef4661.duration;
-    _modDef4661;
+    const duration = _modDef4702.duration;
+    _modDef4702;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;

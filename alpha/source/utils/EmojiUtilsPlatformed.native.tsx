@@ -1,21 +1,21 @@
-// Module ID: 7906
-// Function ID: 7907
+// Module ID: 7924
+// Function ID: 7925
 // Name: EmojiUtilsPlatformed
-// Dependencies: [32, 5, 17, 4724, 5067, 1382, 12, 1415, 1899, 7907, 1494, 4928, 7946, 7951, 2]
+// Dependencies: [32, 5, 17, 4765, 5068, 1382, 12, 1415, 1899, 7925, 1494, 4967, 7964, 7969, 2]
 
-// Module 7906 (EmojiUtilsPlatformed)
+// Module 7924 (EmojiUtilsPlatformed)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import react_nativeDefault from "react-native" /* 1899 */;
-import DeviceUtils from "DeviceUtils" /* 5067 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7907 */;
-import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 7946 */;
+import DeviceUtils from "DeviceUtils" /* 5068 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7925 */;
+import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 7964 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_4724 from "module_4724" /* 4724 */;
-import MemoizerUtils_mod from "MemoizerUtils" /* 7951 */;
+import module_4765 from "module_4765" /* 4765 */;
+import MemoizerUtils_mod from "MemoizerUtils" /* 7969 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, unicodeVersion;
@@ -24,7 +24,7 @@ let MemoizerUtils;
 function getURL(name) {
   let str;
   if (null == name) {
-    const convert = module_4724.convert;
+    const convert = module_4765.convert;
     const _HermesInternal = HermesInternal;
     str = "asset:/emoji-" + convert.toCodePoint(name) + ".png";
   } else {
@@ -50,7 +50,7 @@ let LIGHT = function _getEmojiColors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

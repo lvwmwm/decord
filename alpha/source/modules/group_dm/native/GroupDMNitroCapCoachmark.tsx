@@ -1,28 +1,28 @@
-// Module ID: 12815
-// Function ID: 12816
+// Module ID: 12862
+// Function ID: 12863
 // Name: GroupDMNitroCapCoachmark
-// Dependencies: [32, 19, 17, 10716, 2061, 21, 5091, 558, 576, 10714, 10721, 10717, 2049, 7093, 1126, 1200, 10298, 9016, 587, 10713, 9413, 2]
+// Dependencies: [32, 19, 17, 10751, 2062, 21, 5092, 558, 576, 10749, 10756, 10752, 2049, 7099, 1126, 1200, 10331, 9035, 587, 10748, 9442, 2]
 
-// Module 12815 (GroupDMNitroCapCoachmark)
+// Module 12862 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10298 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 10713 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 10714 */;
-import GroupDMConstants from "GroupDMConstants" /* 10716 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10331 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 10748 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 10749 */;
+import GroupDMConstants from "GroupDMConstants" /* 10751 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let tmp;
-const NitroWheelIcon2 = tmp(9016);
+const NitroWheelIcon2 = tmp(9035);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
   const _location = location.location;
   const tmp4 = closure_9();
   react.useRef(null);
-  const obj2 = channelId(10714);
+  const obj2 = channelId(10749);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   dependencyMap = tmp7;
   if (cResult[0] === groupDMNitroAudience) {
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
     if (cResult[1] === _location) {
       tmp8 = cResult[2];
     }
-    const tmp10 = _location(10721)(tmp8);
+    const tmp10 = _location(10756)(tmp8);
     _slicedToArray = tmp10;
     const tmp9 = _location;
     if (cResult[3] !== _location) {
@@ -66,14 +66,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
       tmp11 = cResult[4];
     }
     const tmp12 = "staff" === groupDMNitroAudience;
-    const tmp9Result = tmp9(10717);
+    const tmp9Result = tmp9(10752);
     const enabled = tmp9Result.useConfig(tmp11).enabled;
     if (cResult[5] === enabled) {
       let tmp30;
       if (cResult[6] === tmp12) {
         tmp13 = cResult[7];
       }
-      const tmpResult = tmp(7093);
+      const tmpResult = tmp(7099);
       const tmp15 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp13), 2);
       react = tmp17;
       const first = tmp15[0];
@@ -119,7 +119,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
           }
         }
         const string = tmp27.string;
-        const tmpResult2 = tmp(10714);
+        const tmpResult2 = tmp(10749);
         cResult[13] = groupDMNitroAudience;
         cResult[14] = string(tmpResult2.getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
         const stringResult1 = string(tmpResult2.getGroupDMNitroCapCTAMessage(groupDMNitroAudience));
@@ -180,7 +180,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
             return closure_4(ContentDismissActionType.USER_DISMISS);
           }
         }
-        const NitroWheelIcon = tmp(9016).NitroWheelIcon;
+        const NitroWheelIcon = tmp(9035).NitroWheelIcon;
         class H {
           constructor() {
             const tmp = closure_2;
@@ -221,7 +221,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
     }
     items = [];
   }
-  const obj6 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp(10714).GroupDMNitroAcquisitionStrategy.MARKETING };
+  const obj6 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp(10749).GroupDMNitroAcquisitionStrategy.MARKETING };
   cResult[0] = groupDMNitroAudience;
   cResult[1] = _location;
   cResult[2] = obj6;
@@ -240,17 +240,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
   let obj = react;
   const ref = react.useRef(null);
   const tmp3 = channelId;
-  let obj2 = channelId(10714);
+  let obj2 = channelId(10749);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   const tmp6 = "entitled" === groupDMNitroAudience;
   react = tmp6;
-  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(10714).GroupDMNitroAcquisitionStrategy.MARKETING };
-  let tmp7 = _location(10721);
+  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(10749).GroupDMNitroAcquisitionStrategy.MARKETING };
+  let tmp7 = _location(10756);
   const tmp7Result = tmp7(obj3);
   let closure_5 = tmp7Result;
-  const obj4 = _location(10717);
+  const obj4 = _location(10752);
   const enabled = obj4.useConfig({ location: _location }).enabled;
-  channelId(7093);
+  channelId(7099);
   if (enabled) {
     let str = "staff";
     if ("staff" !== groupDMNitroAudience) {
@@ -318,7 +318,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
       }
       return obj;
     }, items1);
-    const tmp3Result = tmp3(9413);
+    const tmp3Result = tmp3(9442);
     const coachmark = tmp3Result.useCoachmark(ref, memo);
     return <closure_5 ref={ref} collapsable={false}>{children}</closure_5>;
   }

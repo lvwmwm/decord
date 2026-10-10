@@ -1,10 +1,10 @@
-// Module ID: 6981
-// Function ID: 6982
+// Module ID: 6987
+// Function ID: 6988
 // Name: getGuildModeratorReportChannelId
 // Dependencies: [2]
 // Exports: default
 
-// Module 6981 (getGuildModeratorReportChannelId)
+// Module 6987 (getGuildModeratorReportChannelId)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/report_to_mod/getGuildModeratorReportChannelId.tsx");

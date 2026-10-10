@@ -1,25 +1,25 @@
-// Module ID: 9560
-// Function ID: 9561
+// Module ID: 9589
+// Function ID: 9590
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 5080, 5994, 4900, 21, 5091, 587, 558, 576, 2041, 6878, 504, 9401, 1415, 5055, 9517, 4768, 1126, 9521, 9523, 6879, 4767, 7881, 6816, 5087, 6186, 6269, 6892, 2]
+// Dependencies: [19, 17, 5081, 5987, 4939, 21, 5092, 587, 558, 576, 2041, 6884, 504, 9430, 1415, 5056, 9546, 4809, 1126, 9550, 9552, 6885, 4808, 7899, 6819, 5088, 6179, 6264, 6898, 2]
 
-// Module 9560 (ReactionEmojiOptionsActionSheet)
+// Module 9589 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import ClipboardUtils from "ClipboardUtils" /* 6879 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7881 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9517 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9521 */;
-import StarIcon from "StarIcon" /* 9523 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7899 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9546 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9550 */;
+import StarIcon from "StarIcon" /* 9552 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import EmojiStore from "EmojiStore" /* 5994 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,6 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.xl, borderWidth: 4, borderColor: nativeDefault.colors.BORDER_STRONG, paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
 let closure_11 = createStyles(obj);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionEmojiOptionsActionSheet(channelId) {
-  let animated;
   let canRemoveReactions;
   let guildId;
   let reaction;
@@ -137,12 +136,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionEm
       }
     }
     const items3 = [AccessibilityStore];
-    const fn2 = function w() {
-      return AccessibilityStore.useReducedMotion;
-    };
+    class D {
+      constructor() {
+        return AccessibilityStore.useReducedMotion;
+      }
+    }
     cResult[8] = items3;
-    cResult[9] = fn2;
-    tmp19 = fn2;
+    cResult[9] = D;
+    tmp19 = D;
     tmp18 = items3;
   } else {
     class O {
@@ -182,10 +183,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionEm
         return customEmojiById;
       }
     }
-    const obj5 = { id: null, animated, size: 96 };
-    ({ id: obj9.id, animated } = emoji);
+    const obj5 = { id: emoji.id, animated: tmp24, size: 96 };
+    class D {
+      constructor() {
+        return AccessibilityStore.useReducedMotion;
+      }
+    }
     const getEmojiURL = tmp23.getEmojiURL;
-    if (animated == null) {
+    if (tmp24 == null) {
       class O {
         constructor() {
           let customEmojiById = null;
@@ -196,7 +201,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionEm
         }
       }
     }
-    if (animated) {
+    if (tmp24) {
       class O {
         constructor() {
           let customEmojiById = null;
@@ -289,17 +294,17 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReactionEm
       if (isFavoriteEmoji) {
         obj3.unfavoriteEmoji(stateFromStores1);
         const obj2 = { text: intl2.string(intl5.t.in1rga), icon: StarOutlineIcon.StarOutlineIcon };
-        const openMana2 = ToastActionCreatorsDefault.openMana;
+        const open2 = ToastActionCreatorsDefault.open;
         ToastActionCreatorsDefault;
         intl2 = intl5.intl;
-        openMana2("EMOJI_UNFAVORITED", obj2);
+        open2("EMOJI_UNFAVORITED", obj2);
       } else {
         obj3.favoriteEmoji(stateFromStores1);
         const obj = { text: intl.string(intl5.t.mE2e8A), icon: StarIcon.StarIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-        const openMana = ToastActionCreatorsDefault.openMana;
+        const open = ToastActionCreatorsDefault.open;
         ToastActionCreatorsDefault;
         intl = intl5.intl;
-        openMana("EMOJI_FAVORITED", obj);
+        open("EMOJI_FAVORITED", obj);
       }
     }
   }, items4);

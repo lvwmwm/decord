@@ -1,18 +1,18 @@
-// Module ID: 10669
-// Function ID: 10670
+// Module ID: 10703
+// Function ID: 10704
 // Name: useBatchUpdateSelectOption
-// Dependencies: [19, 5973, 6785, 1095, 584, 12, 1388, 10670, 558, 576, 504, 6790, 1403, 2]
+// Dependencies: [19, 5966, 6788, 1095, 584, 12, 1388, 10704, 558, 576, 504, 6793, 1403, 2]
 
-// Module 10669 (useBatchUpdateSelectOption)
+// Module 10703 (useBatchUpdateSelectOption)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6790 */;
-import OptInOnboardingUtils from "OptInOnboardingUtils" /* 10670 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6793 */;
+import OptInOnboardingUtils from "OptInOnboardingUtils" /* 10704 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6785 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6788 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14168
+// Function ID: 14169
 // Name: sendGameOrganizationInvite
-// Dependencies: [5, 8747, 10452, 7423, 4930, 1126, 14114, 5633, 2]
+// Dependencies: [5, 8763, 10485, 7423, 4969, 1126, 14169, 5636, 2]
 // Exports: default
 
-// Module 14113 (sendGameOrganizationInvite)
+// Module 14168 (sendGameOrganizationInvite)
 import intl4 from "intl" /* 1126 */;
-import shared from "shared" /* 4930 */;
+import shared from "shared" /* 4969 */;
 import Constants from "Constants" /* 7423 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8747 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10452 */;
-import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 14114 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8763 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10485 */;
+import GameOrganizationInviteSendActionCreatorsDefault from "GameOrganizationInviteSendActionCreators" /* 14169 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = function _sendGameOrganizationInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -117,7 +117,7 @@ let obj = function _sendGameOrganizationInvite() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
           AccessibilityAnnouncer = closure_4;
           c8 = 3;

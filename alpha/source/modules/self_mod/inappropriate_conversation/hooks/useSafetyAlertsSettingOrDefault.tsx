@@ -1,13 +1,13 @@
-// Module ID: 10356
-// Function ID: 10357
+// Module ID: 10389
+// Function ID: 10390
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1244, 1390, 558, 576, 504, 7719, 10357, 2]
+// Dependencies: [1244, 1390, 558, 576, 504, 7737, 10390, 2]
 
-// Module 10356 (useSafetyAlertsSettingOrDefault)
+// Module 10389 (useSafetyAlertsSettingOrDefault)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useUserIsTeen from "useUserIsTeen" /* 7719 */;
-import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10357 */;
+import useUserIsTeen from "useUserIsTeen" /* 7737 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10390 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

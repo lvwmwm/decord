@@ -1,13 +1,13 @@
-// Module ID: 15296
-// Function ID: 15297
+// Module ID: 15358
+// Function ID: 15359
 // Name: QuestDockDismissalToast
-// Dependencies: [4768, 1126, 5016, 2]
+// Dependencies: [4809, 1126, 5046, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 15296 (QuestDockDismissalToast)
+// Module 15358 (QuestDockDismissalToast)
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5016 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/QuestDockDismissalToast.tsx");
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestDockDismis
 export const displayQuestDismissalToast = function displayQuestDismissalToast() {
   let intl;
   let obj2;
-  const obj = { key: "QUEST_BAR_DISMISS_TOAST", content: intl.formatToPlainString(intl2.t.dYE1px, obj2), icon: AssetRegistryDefault, position: "bottom" };
+  const obj = { text: intl.formatToPlainString(intl2.t.dYE1px, obj2), icon: CircleInformationIcon.CircleInformationIcon, position: "bottom" };
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   intl = intl2.intl;
@@ -24,5 +24,5 @@ export const displayQuestDismissalToast = function displayQuestDismissalToast() 
       return "\u2192";
     }
   };
-  open(obj);
+  open("QUEST_BAR_DISMISS_TOAST", obj);
 };

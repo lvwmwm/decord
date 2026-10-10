@@ -1,21 +1,21 @@
-// Module ID: 9071
-// Function ID: 9072
+// Module ID: 9091
+// Function ID: 9092
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2128, 9069, 7275, 1085, 8329, 584, 5641, 5633, 2]
+// Dependencies: [5, 2129, 9089, 7282, 1085, 8345, 584, 5644, 5636, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9071 (StorefrontCollectionActionCreators)
+// Module 9091 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import StoreUtils from "StoreUtils" /* 5641 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8329 */;
+import StoreUtils from "StoreUtils" /* 5644 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8345 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9069 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7275 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9089 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7282 */;
 import size from "module_2" /* 2 */;
 
-let collectionPageFetchState, collectionsAfterFetchState, requestKey;
+let collectionsAfterFetchState, requestKey;
 
 let obj = function _maybeFetchCollectionsWithProducts() {
   obj = _asyncToGenerator(async function(arg0, value) {
@@ -104,18 +104,18 @@ let obj = function _maybeFetchCollectionsWithProducts() {
   });
   return obj(...arguments);
 };
-function getCollectionListKey(includeUnpublishedProducts) {
+function getCollectionListKey(arr) {
   let applicationId;
   let useShopOrdering;
-  ({ applicationId, useShopOrdering } = includeUnpublishedProducts);
+  ({ applicationId, useShopOrdering } = arr);
   if (useShopOrdering === undefined) {
     useShopOrdering = true;
   }
-  let flag = includeUnpublishedProducts.includeUnpublishedProducts;
+  let flag = arr.includeUnpublishedProducts;
   if (flag === undefined) {
     flag = false;
   }
-  let flag2 = includeUnpublishedProducts.includeUnpublishedCollections;
+  let flag2 = arr.includeUnpublishedCollections;
   if (flag2 === undefined) {
     flag2 = false;
   }
@@ -139,138 +139,117 @@ function getCollectionPageKey(includeUnpublishedProducts) {
   return "" + "" + applicationId + ":" + useShopOrdering + ":" + flag + ":" + flag2 + ":" + includeUnpublishedProducts.offset + ":" + includeUnpublishedProducts.limit;
 }
 obj = function _maybeFetchCollectionsForApplicationPage() {
-  let locale;
   obj = _asyncToGenerator(async function(arg0, value) {
+    let applicationId;
+    let closure_2;
     let closure_3;
     let collections;
-    let limit;
-    let obj7;
-    let offset;
+    let flag;
+    let listKey;
+    let obj5;
+    let obj9;
+    let pageKey;
     let tmp16;
     let closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    let closure_1 = value;
+    if (1 === c6) {
       if (arg0 === 1) {
+        let c7 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        c7 = 3;
+        const obj7 = { value, done: true };
+        return obj7;
       } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      let tmp40;
-      let c4;
-      try {
-        let pageKey;
-        let listKey;
-        let applicationId;
-        let dispatch;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            pageKey = undefined;
-            listKey = undefined;
-            tmp40 = undefined;
-            applicationId = closure_0.applicationId;
-            const useShopOrdering = closure_0.useShopOrdering;
-            let tmp19 = undefined === useShopOrdering;
-            ({ offset, limit } = closure_0);
-            if (!tmp19) {
-              tmp19 = useShopOrdering;
-            }
-            const includeUnpublishedProducts = tmp60.includeUnpublishedProducts;
-            const tmp20 = undefined !== includeUnpublishedProducts && includeUnpublishedProducts;
-            const includeUnpublishedCollections = tmp60.includeUnpublishedCollections;
-            const tmp21 = undefined !== includeUnpublishedCollections && includeUnpublishedCollections;
-            const ignoreCache = tmp60.ignoreCache;
-            const tmp22 = undefined !== ignoreCache && ignoreCache;
-            const _Boolean = Boolean;
-            if (Boolean(applicationId)) {
-              const tmp24 = getCollectionPageKey(closure_0);
-              pageKey = tmp24;
-              listKey = getCollectionListKey(tmp60);
-              const tmp26 = collectionPageFetchState;
-              collectionPageFetchState = collectionPageFetchState.getCollectionPageFetchState(tmp24);
-              if ("loading" !== collectionPageFetchState) {
-                dispatch = tmp26.getCollectionPageFetchedAt;
-                const dispatchResult = dispatch(tmp24);
-                if (!tmp22) {
-                  if (null != dispatchResult) {
-                    if ("error" === collectionPageFetchState) {
-                      dispatch = StorefrontCacheUtils.ERROR_STALE_THRESHOLD_MS;
-                    } else {
-                      dispatch = StorefrontCacheUtils.TWELVE_HOURS_MS;
-                    }
-                    const _Date = Date;
-                    if (Date.now() - dispatchResult <= dispatch) {
-                      c6 = 3;
-                      return { value: "IconComponent", done: null };
-                    }
+        applicationId = closure_0.applicationId;
+        const offset = closure_0.offset;
+        const limit = closure_0.limit;
+        const useShopOrdering = closure_0.useShopOrdering;
+        const tmp20 = undefined === useShopOrdering || useShopOrdering;
+        const use_shop_ordering = tmp20;
+        let closure_7 = closure_0.includeUnpublishedProducts;
+        const tmp24 = undefined !== closure_7 && closure_7;
+        const include_unpublished_products = tmp24;
+        let closure_9 = closure_0.includeUnpublishedCollections;
+        const tmp29 = undefined !== closure_9 && closure_9;
+        const include_unpublished_collections = tmp29;
+        const ignoreCache = closure_0.ignoreCache;
+        const tmp34 = undefined !== ignoreCache && ignoreCache;
+        const ignore_cache = tmp34;
+        const _Boolean = Boolean;
+        if (Boolean(applicationId)) {
+          pageKey = closure_131_10(closure_0);
+          listKey = closure_131_9(closure_0);
+          const collectionPageFetchState = closure_131_5.getCollectionPageFetchState(pageKey);
+          if ("loading" !== collectionPageFetchState) {
+            const collectionPageFetchedAt = closure_131_5.getCollectionPageFetchedAt(pageKey);
+            const tmp51 = ignore_cache;
+            if (!tmp51) {
+              if (null != collectionPageFetchedAt) {
+                const tmp109 = flag;
+                if (!tmp109) {
+                  let TWELVE_HOURS_MS;
+                  if ("error" === collectionPageFetchState) {
+                    TWELVE_HOURS_MS = closure_131_0(closure_131_2[5]).ERROR_STALE_THRESHOLD_MS;
+                  } else {
+                    TWELVE_HOURS_MS = closure_131_0(closure_131_2[5]).TWELVE_HOURS_MS;
+                  }
+                  const _Date = Date;
+                  if (Date.now() - collectionPageFetchedAt <= TWELVE_HOURS_MS) {
+                    c7 = 3;
+                    return { value: "IconComponent", done: "+51" };
                   }
                 }
-                c4 = 1;
-                const obj6 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH", pageKey: tmp24 };
-                const obj3 = DispatcherDefault;
-                obj3.dispatch(obj6);
-                const request = { url: constants.STOREFRONT_COLLECTIONS_FOR_APPLICATION, query: obj7, rejectWithError: true };
-                obj7 = { application_id: applicationId, use_shop_ordering: tmp19, offset, limit, include_pricing: true, locale: locale.locale, with_bundled_skus: true, include_google_sku_ids: true, include_unpublished_products: tmp20, include_unpublished_collections: tmp21, ignore_cache: tmp22 };
-                const obj5 = StoreUtils;
-                dispatch = obj5.httpGetWithCountryCodeQuery(request);
-                c5 = 2;
-                c6 = 1;
-                const obj8 = { value: dispatch, done: false };
-                return obj8;
               }
             }
+            let c5 = 1;
+            const obj8 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH", pageKey };
+            const obj3 = closure_131_1(closure_131_2[6]);
+            obj3.dispatch(obj8);
+            const request = { url: closure_131_7.STOREFRONT_COLLECTIONS_FOR_APPLICATION, query: obj9, rejectWithError: true };
+            obj9 = { application_id: applicationId, use_shop_ordering, offset, limit, include_pricing: true, locale: closure_131_4.locale, with_bundled_skus: true, include_google_sku_ids: true, include_unpublished_products, include_unpublished_collections, ignore_cache };
+            c6 = 3;
+            c7 = 1;
+            const obj10 = { value: obj5.httpGetWithCountryCodeQuery(request), done: false };
+            obj5 = closure_131_0(closure_131_2[7]);
+            return obj10;
           }
-        } else if (1 === tmp4) {
-          c4 = 0;
-          let closure_4 = tmp40;
-          dispatch = closure_130_1(closure_130_2[6]).dispatch;
-          const obj9 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_FAILURE", pageKey, apiError: tmp16 };
-          const self = this;
-          const self2 = this;
-          const tmp11 = closure_130_1(closure_130_2[6]);
-          tmp16 = new closure_130_1(closure_130_2[8])(closure_4);
-          dispatch(obj9);
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          tmp40 = value;
-          dispatch = closure_130_1(closure_130_2[6]).dispatch;
-          const obj10 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_SUCCESS", pageKey, listKey, applicationId, collections: collections.map(closure_130_6.fromServer), total: tmp40.body.total };
-          collections = tmp40.body.collections;
-          const tmp52 = closure_130_1(closure_130_2[6]);
-          dispatch(obj10);
-          c4 = 0;
-        }
-        c6 = 3;
-        return { value: "IconComponent", done: null };
-      } catch (tmp40) {
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp40;
-        } else {
-          c5 = 1;
         }
       }
+    } else if (2 === c6) {
+      c5 = 0;
+      let closure_19 = closure_4;
+      const obj11 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_FAILURE", pageKey, apiError: tmp16 };
+      const dispatch = closure_131_1(closure_131_2[6]).dispatch;
+      const self = this;
+      const self2 = this;
+      const tmp11 = closure_131_1(closure_131_2[6]);
+      tmp16 = new closure_131_1(closure_131_2[8])(closure_19);
+      dispatch(obj11);
+    } else if (arg0 === 1) {
+      c7 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c5 = 0;
+      c7 = 3;
+      obj = { value, done: true };
+      return obj;
+    } else {
+      let closure_18 = value;
+      const obj12 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_SUCCESS", pageKey, listKey, applicationId, collections: collections.map(closure_131_6.fromServer), total: closure_18.body.total };
+      collections = closure_18.body.collections;
+      const dispatch2 = closure_131_1(closure_131_2[6]).dispatch;
+      const tmp94 = closure_131_1(closure_131_2[6]);
+      dispatch2(obj12);
+      c5 = 0;
     }
+    await "IconComponent";
+    let obj6 = closure_1;
+    if (closure_1 === undefined) {
+      obj6 = {};
+    }
+    flag = obj6.retryAfterError ?? false;
+    return "Set";
   });
   return obj(...arguments);
 };
@@ -312,7 +291,7 @@ obj = function _maybeFetchCollectionsAfter() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -358,7 +337,7 @@ obj = function _maybeFetchCollectionsAfter() {
                         const _Date = Date;
                         if (Date.now() - collectionsAfterFetchedAt <= TWELVE_HOURS_MS) {
                           c6 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "+51" };
                         }
                       }
                     }
@@ -404,7 +383,7 @@ obj = function _maybeFetchCollectionsAfter() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp46) {
           closure_3 = tmp46;
           if (0 === c4) {
@@ -466,7 +445,7 @@ obj = function _maybeFetchCollectionsForApplication() {
                   }
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             }
             skuTypes = 1;

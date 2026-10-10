@@ -1,7 +1,7 @@
 // Module ID: 7435
 // Function ID: 7436
 // Name: RobloxSubgameUtils
-// Dependencies: [5, 1085, 7436, 12, 7437, 4759, 2]
+// Dependencies: [5, 1085, 7436, 12, 7437, 4800, 2]
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, hasSubgameInfoChanged, isRobloxSubgame, isRobloxSubgameApplication, isRobloxSubgameGame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId
 
 // Module 7435 (RobloxSubgameUtils)
@@ -30,7 +30,7 @@ let obj = function _openRobloxURLWithRootPlaceId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {

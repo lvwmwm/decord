@@ -1,12 +1,12 @@
-// Module ID: 5282
-// Function ID: 5283
+// Module ID: 5283
+// Function ID: 5284
 // Name: SystemResources
-// Dependencies: [5, 5274, 1376, 5283, 2]
+// Dependencies: [5, 5275, 1376, 5284, 2]
 
-// Module 5282 (SystemResources)
+// Module 5283 (SystemResources)
 import ProcessUtilsDefault from "ProcessUtils" /* 1376 */;
-import Histogram from "Histogram" /* 5274 */;
-import DeviceState from "DeviceState" /* 5283 */;
+import Histogram from "Histogram" /* 5275 */;
+import DeviceState from "DeviceState" /* 5284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -158,7 +158,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -189,7 +189,7 @@ class SystemResources {
           } else {
             closure_0.lastBattery = value;
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp6) {
           c2 = 3;
@@ -211,7 +211,7 @@ class SystemResources {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

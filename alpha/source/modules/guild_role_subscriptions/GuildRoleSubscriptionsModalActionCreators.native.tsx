@@ -1,13 +1,13 @@
-// Module ID: 18441
-// Function ID: 18442
+// Module ID: 18515
+// Function ID: 18516
 // Name: GuildRoleSubscriptionsModalActionCreators
-// Dependencies: [18442, 5941, 18443, 2000, 18449, 2]
+// Dependencies: [18516, 5934, 18517, 2000, 18523, 2]
 // Exports: showCreateBenefitModal, showEditBenefitModal, showEditEmojisModal
 
-// Module 18441 (GuildRoleSubscriptionsModalActionCreators)
+// Module 18515 (GuildRoleSubscriptionsModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 18442 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 18516 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionBenefitEditorModal = "GuildRoleSubscriptionBenefitEditorModal";
@@ -21,7 +21,7 @@ export const showCreateBenefitModal = function showCreateBenefitModal(arg0) {
   ({ guildId, listingId, type, onSave } = arg0);
   GuildRoleSubscriptionBenefitEditorModalStateStore.resetImperatively();
   const obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(18443, dependencyMap.paths), { benefitType: type, guildId, onSave, listingId }, GuildRoleSubscriptionBenefitEditorModal);
+  obj.pushLazy(asyncRequire(18517, dependencyMap.paths), { benefitType: type, guildId, onSave, listingId }, GuildRoleSubscriptionBenefitEditorModal);
 };
 export const showEditBenefitModal = function showEditBenefitModal(benefit) {
   let guildId;
@@ -33,7 +33,7 @@ export const showEditBenefitModal = function showEditBenefitModal(benefit) {
   const result = GuildRoleSubscriptionBenefitEditorModalStateStore.initializeImperatively(benefit);
   const obj = ModalActionCreatorsDefault;
   const obj2 = { benefitType: benefit.ref_type, guildId, onDelete, onSave, listingId };
-  obj.pushLazy(asyncRequire(18443, dependencyMap.paths), obj2, GuildRoleSubscriptionBenefitEditorModal);
+  obj.pushLazy(asyncRequire(18517, dependencyMap.paths), obj2, GuildRoleSubscriptionBenefitEditorModal);
 };
 export const showEditEmojisModal = function showEditEmojisModal(initialTierEmojiIds) {
   let guildId;
@@ -45,7 +45,7 @@ export const showEditEmojisModal = function showEditEmojisModal(initialTierEmoji
   const pushLazy = ModalActionCreatorsDefault.pushLazy;
   const obj = { guildId, subscriptionRoleId, initialTierEmojiIds, listingId, onSave };
   ModalActionCreatorsDefault;
-  const tmp2 = asyncRequire(18449, dependencyMap.paths);
+  const tmp2 = asyncRequire(18523, dependencyMap.paths);
   if (initialTierEmojiIds == null) {
     const _Set = Set;
     const self = this;

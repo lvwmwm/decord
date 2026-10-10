@@ -1,17 +1,17 @@
-// Module ID: 10880
-// Function ID: 10881
+// Module ID: 10920
+// Function ID: 10921
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [2064, 2086, 4709, 1390, 5112, 1085, 10881, 5411, 558, 576, 10803, 504, 2]
+// Dependencies: [2065, 2087, 4750, 1390, 5113, 1085, 10921, 5414, 558, 576, 10846, 504, 5924, 2]
 
-// Module 10880 (getEmbeddedActivityJoinability)
+// Module 10920 (getEmbeddedActivityJoinability)
 import Constants from "Constants" /* 1085 */;
-import ChannelUtils from "ChannelUtils" /* 5411 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10881 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import ChannelUtils from "ChannelUtils" /* 5414 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10921 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,17 +41,17 @@ function getEmbeddedActivityJoinability(arg0) {
         return obj.ACTIVITY_AGE_GATED;
       }
     }
-    if (tmp) {
+    if (tmp2) {
       let supported_platforms;
-      const tmp7 = isActivitySupportedOnClientPlatformDefault;
+      const tmp8 = isActivitySupportedOnClientPlatformDefault;
       if (application != null) {
         const embeddedActivityConfig2 = application.embeddedActivityConfig;
         if (embeddedActivityConfig2 != null) {
           supported_platforms = embeddedActivityConfig2.supported_platforms;
         }
       }
-      if (tmp7(supported_platforms)) {
-        let tmp10 = channelId;
+      if (tmp8(supported_platforms)) {
+        let tmp11 = channelId;
         if (null == channelId) {
           let session_id;
           const getVoiceStateForSession = VoiceStateStore.getVoiceStateForSession;
@@ -63,9 +63,9 @@ function getEmbeddedActivityJoinability(arg0) {
           if (voiceStateForSession != null) {
             channelId1 = voiceStateForSession.channelId;
           }
-          tmp10 = channelId1;
+          tmp11 = channelId1;
         }
-        if (null == tmp10) {
+        if (null == tmp11) {
           return obj.NO_CHANNEL;
         } else {
           const channel = ChannelStore.getChannel(channelId);
@@ -90,8 +90,10 @@ function getEmbeddedActivityJoinability(arg0) {
                   const isChannelFullResult = obj2.isChannelFull(channel, VoiceStateStore, GuildStore);
                   const canResult = PermissionStore.can(Permissions.CONNECT, channel);
                   if (PermissionStore.can(Permissions.USE_EMBEDDED_ACTIVITIES, channel)) {
-                    if (channel.isVocal()) {
-                      if (currentClientVoiceChannelId !== tmp10) {
+                    if (tmp) {
+                      return obj.CHANNEL_CONTENT_GATED;
+                    } else if (channel.isVocal()) {
+                      if (currentClientVoiceChannelId !== tmp11) {
                         if (isChannelFullResult) {
                           return obj.CHANNEL_FULL;
                         } else if (!canResult) {
@@ -117,15 +119,17 @@ function getEmbeddedActivityJoinability(arg0) {
   }
 }
 const Permissions = Constants.Permissions;
-const EmbeddedActivityJoinability = { CAN_JOIN: 0, [0]: "CAN_JOIN", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", CHANNEL_FULL: 3, [3]: "CHANNEL_FULL", NO_CHANNEL: 4, [4]: "NO_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 5, [5]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITY_NOT_SUPPORTED_ON_OS: 6, [6]: "ACTIVITY_NOT_SUPPORTED_ON_OS", ACTIVITY_AGE_GATED: 7, [7]: "ACTIVITY_AGE_GATED", NO_USER: 8, [8]: "NO_USER", IS_AFK_CHANNEL: 9, [9]: "IS_AFK_CHANNEL", NO_GUILD: 10, [10]: "NO_GUILD" };
+const EmbeddedActivityJoinability = { CAN_JOIN: 0, [0]: "CAN_JOIN", NO_USE_EMBEDDED_ACTIVITIES_PERMISSION: 1, [1]: "NO_USE_EMBEDDED_ACTIVITIES_PERMISSION", NO_CHANNEL_CONNECT_PERMISSION: 2, [2]: "NO_CHANNEL_CONNECT_PERMISSION", CHANNEL_FULL: 3, [3]: "CHANNEL_FULL", NO_CHANNEL: 4, [4]: "NO_CHANNEL", ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS: 5, [5]: "ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS", ACTIVITY_NOT_SUPPORTED_ON_OS: 6, [6]: "ACTIVITY_NOT_SUPPORTED_ON_OS", ACTIVITY_AGE_GATED: 7, [7]: "ACTIVITY_AGE_GATED", NO_USER: 8, [8]: "NO_USER", IS_AFK_CHANNEL: 9, [9]: "IS_AFK_CHANNEL", NO_GUILD: 10, [10]: "NO_GUILD", CHANNEL_CONTENT_GATED: 11, [11]: "CHANNEL_CONTENT_GATED" };
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedActivityJoinability(userId) {
   let channelId;
-  let currentUser;
+  let isChannelContentGated;
+  let tmp11;
+  let tmp12;
   let tmp5;
   let tmp6;
   let tmp9;
   let obj = userId(channelId[9]);
-  const cResult = obj.c(11);
+  const cResult = obj.c(16);
   userId = userId.userId;
   const activity = userId.activity;
   channelId = userId.channelId;
@@ -133,89 +137,110 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
   const obj2 = userId(channelId[10]);
   const isActivitiesEnabledForCurrentPlatform = obj2.useIsActivitiesEnabledForCurrentPlatform();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    class I {
-      constructor() {
-        return closure_1_6.getCurrentUser();
-      }
-    }
+    const items = [isChannelContentGated];
+    const fn = function s() {
+      return isChannelContentGated.getCurrentUser();
+    };
     cResult[0] = items;
-    cResult[1] = I;
+    cResult[1] = fn;
     tmp5 = items;
-    tmp6 = I;
+    tmp6 = fn;
   } else {
     [tmp5, tmp6] = cResult;
   }
   const tmpResult = userId(channelId[11]);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [application, , , ];
-    class I {
-      constructor() {
-        return closure_1_6.getCurrentUser();
-      }
-    }
-    items1[1] = VoiceStateStore;
-    items1[2] = stateFromStores;
-    items1[3] = isActivitiesEnabledForCurrentPlatform;
+    const items1 = [application];
     cResult[2] = items1;
     tmp9 = items1;
   } else {
     tmp9 = cResult[2];
   }
-  if (cResult[3] === activity) {
-    if (cResult[4] === application) {
-      if (cResult[5] === channelId) {
-        if (cResult[6] === stateFromStores) {
-          if (cResult[7] === isActivitiesEnabledForCurrentPlatform) {
-            let tmp13;
-            let tmp14;
-            if (cResult[8] === userId) {
-              tmp13 = cResult[9];
-              tmp14 = cResult[10];
-            }
-            const tmpResult2 = userId(channelId[11]);
-            return tmpResult2.useStateFromStores(tmp9, tmp13, tmp14);
-          }
-        }
+  if (cResult[3] !== channelId) {
+    class T {
+      constructor() {
+        return ChannelStore.getChannel(channelId);
+      }
+    }
+    const items2 = [channelId];
+    cResult[3] = channelId;
+    cResult[4] = T;
+    cResult[5] = items2;
+    tmp12 = items2;
+    tmp11 = T;
+  } else {
+    class T {
+      constructor() {
+        return ChannelStore.getChannel(channelId);
+      }
+    }
+    tmp12 = cResult[5];
+  }
+  const tmpResult3 = userId(channelId[11]);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp11, tmp12);
+  const tmpResult4 = userId(channelId[12]);
+  isChannelContentGated = tmpResult4.useIsChannelContentGated(stateFromStores1);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class T {
+      constructor() {
+        return ChannelStore.getChannel(channelId);
+      }
+    }
+    const items3 = [application, VoiceStateStore, stateFromStores, isActivitiesEnabledForCurrentPlatform];
+    cResult[6] = items3;
+  } else {
+    class T {
+      constructor() {
+        return ChannelStore.getChannel(channelId);
       }
     }
   }
-  class T {
-    constructor() {
-      obj = { userId, activity, application, channelId, currentUser: closure_5, isActivitiesEnabledForCurrentPlatform: closure_4, ChannelStore: closure_3, VoiceStateStore: closure_7, PermissionStore: closure_5, GuildStore: closure_4 };
-      return getEmbeddedActivityJoinability(obj);
+  if (cResult[7] === activity) {
+    class T {
+      constructor() {
+        return ChannelStore.getChannel(channelId);
+      }
     }
   }
-  const items2 = [activity, application, channelId, stateFromStores, isActivitiesEnabledForCurrentPlatform, userId];
-  cResult[3] = activity;
-  cResult[4] = application;
-  cResult[5] = channelId;
-  cResult[6] = stateFromStores;
-  cResult[7] = isActivitiesEnabledForCurrentPlatform;
-  cResult[8] = userId;
-  cResult[9] = T;
-  cResult[10] = items2;
-  tmp14 = items2;
-  tmp13 = T;
+  const fn2 = function y() {
+    const obj = { userId, activity, application, channelId, currentUser: stateFromStores, isContentGated: isChannelContentGated, isActivitiesEnabledForCurrentPlatform, ChannelStore, VoiceStateStore, PermissionStore, GuildStore };
+    return getEmbeddedActivityJoinability(obj);
+  };
+  const items4 = [activity, application, channelId, stateFromStores, isChannelContentGated, isActivitiesEnabledForCurrentPlatform, userId];
+  cResult[7] = activity;
+  cResult[8] = application;
+  cResult[9] = channelId;
+  cResult[10] = stateFromStores;
+  cResult[11] = isActivitiesEnabledForCurrentPlatform;
+  cResult[12] = isChannelContentGated;
+  cResult[13] = userId;
+  cResult[14] = fn2;
+  cResult[15] = items4;
 }) : (function useEmbeddedActivityJoinability(userId) {
-  let currentUser;
   userId = userId.userId;
   const activity = userId.activity;
   const channelId = userId.channelId;
   const application = userId.application;
+  let isChannelContentGated;
   let obj = userId(channelId[10]);
   const isActivitiesEnabledForCurrentPlatform = obj.useIsActivitiesEnabledForCurrentPlatform();
-  const items = [UserStore];
+  const items = [isChannelContentGated];
   const obj2 = userId(channelId[11]);
-  const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const items1 = [application, VoiceStateStore, stateFromStores, isActivitiesEnabledForCurrentPlatform];
-  const items2 = [activity, application, channelId, stateFromStores, isActivitiesEnabledForCurrentPlatform, userId];
+  const stateFromStores = obj2.useStateFromStores(items, () => isChannelContentGated.getCurrentUser());
+  const items1 = [application];
+  const items2 = [channelId];
   const obj3 = userId(channelId[11]);
-  return obj3.useStateFromStores(items1, () => {
-    const obj = { userId, activity, application, channelId, currentUser: stateFromStores, isActivitiesEnabledForCurrentPlatform, ChannelStore, VoiceStateStore, PermissionStore, GuildStore };
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
+  const obj4 = userId(channelId[12]);
+  isChannelContentGated = obj4.useIsChannelContentGated(stateFromStores1);
+  const items3 = [application, VoiceStateStore, stateFromStores, isActivitiesEnabledForCurrentPlatform];
+  const items4 = [activity, application, channelId, stateFromStores, isChannelContentGated, isActivitiesEnabledForCurrentPlatform, userId];
+  const obj5 = userId(channelId[11]);
+  return obj5.useStateFromStores(items3, () => {
+    const obj = { userId, activity, application, channelId, currentUser: stateFromStores, isContentGated: isChannelContentGated, isActivitiesEnabledForCurrentPlatform, ChannelStore, VoiceStateStore, PermissionStore, GuildStore };
     return getEmbeddedActivityJoinability(obj);
-  }, items2);
+  }, items4);
 });
 const result = size.fileFinishedImporting("modules/activities/utils/getEmbeddedActivityJoinability.tsx");
 

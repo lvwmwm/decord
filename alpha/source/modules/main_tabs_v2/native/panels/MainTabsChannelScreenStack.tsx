@@ -1,33 +1,33 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 16965
+// Function ID: 16966
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 9271, 1085, 1096, 21, 5091, 558, 576, 4811, 16898, 16900, 5393, 4992, 4940, 16901, 4788, 16902, 5329, 4812, 1504, 4946, 16346, 16749, 6333, 4933, 16345, 584, 4947, 2]
+// Dependencies: [32, 19, 17, 9298, 1085, 1096, 21, 5092, 558, 576, 4850, 16966, 16968, 5396, 5031, 4979, 16969, 4827, 16970, 5330, 4851, 1504, 4985, 16413, 16819, 6334, 4972, 16412, 584, 4986, 2]
 
-// Module 16897 (MainTabsChannelScreenStack)
+// Module 16965 (MainTabsChannelScreenStack)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1096 */;
 import Link from "Link" /* 1504 */;
-import native from "native" /* 4788 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4812 */;
-import useChatLayoutDefault from "useChatLayout" /* 4940 */;
-import ChatInputUtils from "ChatInputUtils" /* 4946 */;
-import useThemeDefault from "useTheme" /* 4992 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6333 */;
-import react_native from "react-native" /* 9271 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16345 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 16346 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16749 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 16898 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 16900 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 16901 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16902 */;
+import native from "native" /* 4827 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4851 */;
+import useChatLayoutDefault from "useChatLayout" /* 4979 */;
+import ChatInputUtils from "ChatInputUtils" /* 4985 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6334 */;
+import react_native from "react-native" /* 9298 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 16412 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 16413 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16819 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 16966 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 16968 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 16969 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 16970 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,9 +44,9 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp5;
-const ReanimatedRexport = tmp(4811);
-const react3 = tmp5(5329);
-const useMountEffect = tmp(5393);
+const ReanimatedRexport = tmp(4850);
+const react3 = tmp5(5330);
+const useMountEffect = tmp(5396);
 function getKey(index) {
   return String(index.index);
 }
@@ -1560,7 +1560,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         const tmp7 = require;
         if (!isChatLockedOpen) {
-          const tmp7Result = tmp7(4940);
+          const tmp7Result = tmp7(4979);
           isChatLockedOpen = tmp7Result.getChatLayout().isChatLockedOpen;
         }
         if (!isChatLockedOpen) {

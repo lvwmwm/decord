@@ -1,13 +1,13 @@
-// Module ID: 5105
-// Function ID: 5106
+// Module ID: 5106
+// Function ID: 5107
 // Name: ChannelRTCActionCreators
-// Dependencies: [1085, 584, 1265, 5106, 1121, 2]
+// Dependencies: [1085, 584, 1265, 5107, 1121, 2]
 
-// Module 5105 (ChannelRTCActionCreators)
+// Module 5106 (ChannelRTCActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5106 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

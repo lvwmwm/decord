@@ -1,19 +1,19 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17132
+// Function ID: 17133
 // Name: ConjureShimmer
-// Dependencies: [32, 19, 17, 5080, 21, 5091, 558, 576, 504, 4811, 5092, 683, 6247, 5388, 2]
+// Dependencies: [32, 19, 17, 5081, 21, 5092, 558, 576, 504, 4850, 5093, 683, 6242, 5391, 2]
 // Exports: shouldSweep
 
-// Module 17064 (ConjureShimmer)
+// Module 17132 (ConjureShimmer)
 import _modDef683 from "module_683" /* 683 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import timing from "timing" /* 5092 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
                     flag = false;
                     num4 = -1;
                     result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-                    fn = () => { /* body not rendered: F148473 */ };
+                    fn = () => { /* body not rendered: F148931 */ };
                   } else {
                     tmp2 = closure_0;
                     tmp3 = closure_2;
@@ -174,7 +174,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
                     flag = false;
                     num4 = -1;
                     result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-                    fn = () => { /* body not rendered: F148473 */ };
+                    fn = () => { /* body not rendered: F148931 */ };
                   } else {
                     tmp2 = closure_0;
                     tmp3 = closure_2;
@@ -212,7 +212,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
                   flag = false;
                   num4 = -1;
                   result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-                  fn = () => { /* body not rendered: F148473 */ };
+                  fn = () => { /* body not rendered: F148931 */ };
                 } else {
                   tmp2 = closure_0;
                   tmp3 = closure_2;
@@ -258,7 +258,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
               flag = false;
               num4 = -1;
               result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-              fn = () => { /* body not rendered: F148473 */ };
+              fn = () => { /* body not rendered: F148931 */ };
             } else {
               tmp2 = closure_0;
               tmp3 = closure_2;
@@ -303,7 +303,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
             flag = false;
             num4 = -1;
             result1 = set(withRepeat(withTiming(1, obj1), -1, false));
-            fn = () => { /* body not rendered: F148473 */ };
+            fn = () => { /* body not rendered: F148931 */ };
           } else {
             tmp2 = closure_0;
             tmp3 = closure_2;
@@ -357,7 +357,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
   const tmp5 = sharedValue(live.useState(0), 2);
   const width = tmp5[0];
   dependencyMap = tmp5[1];
-  const obj3 = tint(4811);
+  const obj3 = tint(4850);
   sharedValue = obj3.useSharedValue(0);
   const tmp2 = tint;
   if (live) {
@@ -404,7 +404,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
     items[4] = cssResult;
     return items;
   }, items2);
-  const tmp2Result = tmp2(4811);
+  const tmp2Result = tmp2(4850);
   class R {
     constructor() {
       let items;
@@ -439,13 +439,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShi
     const obj5 = { style: c5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp18, obj6) };
     obj6 = { style: c5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
     obj7 = { children: renderFace() };
-    tmp18 = width(6247);
-    obj8 = { style: items4, children: closure_8(width(5388), obj10) };
+    tmp18 = width(6242);
+    obj8 = { style: items4, children: closure_8(width(5391), obj10) };
     items4 = [tmp.band, , ];
     const obj9 = { width: result };
     items4[1] = obj9;
     items4[2] = animatedStyle;
-    View = width(4811).View;
+    View = width(4850).View;
     obj10 = { style: tmp.fill, start, end, colors: memo, locations };
     tmp14 = closure_8(tmp13, obj5);
   }

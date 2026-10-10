@@ -1,21 +1,21 @@
-// Module ID: 17008
-// Function ID: 17009
+// Module ID: 7570
+// Function ID: 7571
 // Name: NewInlineNotice
-// Dependencies: [19, 17, 21, 5001, 587, 2141, 5004, 5013, 4993, 5088, 5091, 558, 576, 5383, 1126, 4783, 1383, 4789, 5087, 5376, 8114, 6212, 2]
+// Dependencies: [19, 17, 21, 6289, 587, 2142, 7571, 5046, 6867, 5089, 5092, 558, 576, 5386, 1126, 4822, 1383, 4828, 5088, 5379, 7573, 6207, 2]
 
-// Module 17008 (NewInlineNotice)
+// Module 7570 (NewInlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import _modDef2141 from "module_2141" /* 2141 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4993 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 5001 */;
-import WarningIcon from "WarningIcon" /* 5004 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5013 */;
-import TextVariants from "TextVariants" /* 5088 */;
+import _modDef2142 from "module_2142" /* 2142 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
+import TextVariants from "TextVariants" /* 5089 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6289 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 6867 */;
+import WarningIcon from "WarningIcon" /* 7571 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,14 +26,14 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4789);
+const AccessibilityAnnouncer2 = tmp(4828);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { critical: obj2, warning: obj3, info: obj4, positive: obj5 };
-obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2141.uKMqrF };
-obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2141["7vL/d/"] };
-obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2141.BReS7U };
-obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2141["1MXXPf"] };
+obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2142.uKMqrF };
+obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2142["7vL/d/"] };
+obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2142.BReS7U };
+obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2142["1MXXPf"] };
 const TextVariantsFlat = TextVariants.TextVariantsFlat;
 let found = TextVariantsFlat.find((name) => "experimental/body-sm/normal" === name.name);
 let lineHeight;
@@ -124,7 +124,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
             tmp16 = cResult[14];
           }
           const effect = react.useEffect(tmp15, tmp16);
-          if (true === hidden) {
+          if (hidden) {
             return null;
           } else {
             let tmp19;
@@ -148,7 +148,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                     isIOSResult = "static" !== role;
                   }
                   if (isIOSResult) {
-                    isIOSResult = true !== hidden;
+                    isIOSResult = !hidden;
                   }
                   if (isIOSResult) {
                     const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -194,7 +194,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                           isIOSResult = "static" !== role;
                         }
                         if (isIOSResult) {
-                          isIOSResult = true !== hidden;
+                          isIOSResult = !hidden;
                         }
                         if (isIOSResult) {
                           const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -223,7 +223,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                           isIOSResult = "static" !== role;
                         }
                         if (isIOSResult) {
-                          isIOSResult = true !== hidden;
+                          isIOSResult = !hidden;
                         }
                         if (isIOSResult) {
                           const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -280,7 +280,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                                           isIOSResult = "static" !== role;
                                         }
                                         if (isIOSResult) {
-                                          isIOSResult = true !== hidden;
+                                          isIOSResult = !hidden;
                                         }
                                         if (isIOSResult) {
                                           const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -305,7 +305,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                                         isIOSResult = "static" !== role;
                                       }
                                       if (isIOSResult) {
-                                        isIOSResult = true !== hidden;
+                                        isIOSResult = !hidden;
                                       }
                                       if (isIOSResult) {
                                         const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -342,7 +342,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                                       isIOSResult = "static" !== role;
                                     }
                                     if (isIOSResult) {
-                                      isIOSResult = true !== hidden;
+                                      isIOSResult = !hidden;
                                     }
                                     if (isIOSResult) {
                                       const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -378,7 +378,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                                   isIOSResult = "static" !== role;
                                 }
                                 if (isIOSResult) {
-                                  isIOSResult = true !== hidden;
+                                  isIOSResult = !hidden;
                                 }
                                 if (isIOSResult) {
                                   const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -410,7 +410,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                               isIOSResult = "static" !== role;
                             }
                             if (isIOSResult) {
-                              isIOSResult = true !== hidden;
+                              isIOSResult = !hidden;
                             }
                             if (isIOSResult) {
                               const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -444,7 +444,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                               isIOSResult = "static" !== role;
                             }
                             if (isIOSResult) {
-                              isIOSResult = true !== hidden;
+                              isIOSResult = !hidden;
                             }
                             if (isIOSResult) {
                               const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -468,7 +468,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                             isIOSResult = "static" !== role;
                           }
                           if (isIOSResult) {
-                            isIOSResult = true !== hidden;
+                            isIOSResult = !hidden;
                           }
                           if (isIOSResult) {
                             const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -495,7 +495,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                         isIOSResult = "static" !== role;
                       }
                       if (isIOSResult) {
-                        isIOSResult = true !== hidden;
+                        isIOSResult = !hidden;
                       }
                       if (isIOSResult) {
                         const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -527,7 +527,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                       isIOSResult = "static" !== role;
                     }
                     if (isIOSResult) {
-                      isIOSResult = true !== hidden;
+                      isIOSResult = !hidden;
                     }
                     if (isIOSResult) {
                       const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -557,7 +557,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
                   isIOSResult = "static" !== role;
                 }
                 if (isIOSResult) {
-                  isIOSResult = true !== hidden;
+                  isIOSResult = !hidden;
                 }
                 if (isIOSResult) {
                   const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -588,7 +588,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
             isIOSResult = "static" !== role;
           }
           if (isIOSResult) {
-            isIOSResult = true !== hidden;
+            isIOSResult = !hidden;
           }
           if (isIOSResult) {
             const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -665,7 +665,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
       isIOSResult = "static" !== role;
     }
     if (isIOSResult) {
-      isIOSResult = true !== hidden;
+      isIOSResult = !hidden;
     }
     if (isIOSResult) {
       const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
@@ -678,17 +678,17 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
       announce(tmp6, str2);
     }
   }, items1);
-  let tmp17Result = null;
-  if (true !== hidden) {
+  let tmp10Result = null;
+  if (!hidden) {
     let obj3;
     const obj2 = { style: tmp3Result.container, children: items5 };
     if ("alert" === role) {
       obj3 = { accessibilityRole: "alert", accessibilityLiveRegion: "assertive" };
-    } else if ("status" === role) {
-      obj3 = { accessibilityLiveRegion: "polite" };
     } else {
-      let str2 = "static";
-      if ("static" === role) {
+      let str2 = "status";
+      if ("status" === role) {
+        obj3 = { accessibilityLiveRegion: "polite" };
+      } else if ("static" === role) {
         obj3 = {};
       }
     }
@@ -697,38 +697,38 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewInlineN
     const obj5 = { style: tmp3Result.iconContainer, children: closure_5(Icon, obj6) };
     obj6 = { size: "xs", color: iconColor, accessibilityLabel: stringResult };
     items2 = [closure_5(View, obj5), ];
-    let tmp13Result = null;
+    let tmp15Result = null;
     const obj7 = { style: tmp3Result.contents, children: items4 };
     const obj8 = { style: tmp3Result.copy, children: items3 };
     if (null != title) {
       const obj9 = { variant: "experimental/body-sm/semibold", color: "text-strong", children: title };
-      tmp13Result = tmp13(tmp(tmp2[18]).Text, obj9);
+      tmp15Result = tmp15(tmp(tmp2[18]).Text, obj9);
     }
-    items3 = [tmp13Result, ];
+    items3 = [tmp15Result, ];
     const obj10 = { variant: "experimental/body-sm/normal", color: "text-strong", children: message };
     items3[1] = closure_5(tmp(joined[18]).Text, obj10);
     items4 = [closure_6(View, obj8), ];
-    let tmp13Result3 = null;
+    let tmp15Result3 = null;
     if (null != action) {
       const obj11 = { style: tmp3Result.cta, children: closure_5(tmp(joined[19]).Button, obj12) };
       obj12 = { variant: "secondary", size: "sm", text: null, onPress: null };
-      ({ text: obj14.text, onClick: obj14.onPress } = action);
-      tmp13Result3 = tmp13(tmp18, obj11);
+      ({ text: obj15.text, onClick: obj15.onPress } = action);
+      tmp15Result3 = tmp15(tmp11, obj11);
     }
-    items4[1] = tmp13Result3;
+    items4[1] = tmp15Result3;
     items2[1] = closure_6(View, obj7);
     items5 = [closure_6(View, obj4), ];
-    let tmp13Result4 = null;
+    let tmp15Result4 = null;
     if (null != onDismiss) {
       const obj13 = { variant: "tertiary", size: "sm", icon: closure_5(tmp(joined[21]).XSmallIcon, {}), accessibilityLabel: intl2.string(tmp(joined[14]).t.WAI6xu), onPress: onDismiss };
       const IconButton = tmp(tmp2[20]).IconButton;
       intl2 = tmp(tmp2[14]).intl;
-      tmp13Result4 = tmp13(IconButton, obj13);
+      tmp15Result4 = tmp15(IconButton, obj13);
     }
-    items5[1] = tmp13Result4;
-    tmp17Result = tmp17(tmp18, obj2);
+    items5[1] = tmp15Result4;
+    tmp10Result = tmp10(tmp11, obj2);
   }
-  return tmp17Result;
+  return tmp10Result;
 });
 let result = size.fileFinishedImporting("design/mana/components/InlineNotice/NewInlineNotice.native.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 10930
+// Function ID: 10931
 // Name: createWebViewController
-// Dependencies: [5, 1085, 2024, 5636, 7518, 10891, 1255, 10892, 1121, 10911, 2]
+// Dependencies: [5, 1085, 2024, 5639, 7521, 10931, 1255, 10932, 1121, 10951, 2]
 // Exports: default
 
-// Module 10890 (createWebViewController)
+// Module 10930 (createWebViewController)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import Constants2 from "Constants" /* 2024 */;
-import Constants3 from "Constants" /* 5636 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10892 */;
-import createWebViewHtmlFile from "createWebViewHtmlFile" /* 10911 */;
+import Constants3 from "Constants" /* 5639 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10932 */;
+import createWebViewHtmlFile from "createWebViewHtmlFile" /* 10951 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export default function createWebViewController(id, contextSource) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -84,7 +84,7 @@ export default function createWebViewController(id, contextSource) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp17) {
           closure_3 = tmp17;

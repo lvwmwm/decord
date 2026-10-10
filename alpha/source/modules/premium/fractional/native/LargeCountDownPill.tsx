@@ -1,16 +1,16 @@
-// Module ID: 13680
-// Function ID: 13681
+// Module ID: 13732
+// Function ID: 13733
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 5091, 587, 558, 576, 4768, 1126, 5013, 5087, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 4809, 1126, 5046, 5088, 2]
 
-// Module 13680 (LargeCountDownPill)
+// Module 13732 (LargeCountDownPill)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const CircleInformationIcon2 = tmp(5013);
-const Text_Text = tmp(5087);
+const CircleInformationIcon2 = tmp(5046);
+const Text_Text = tmp(5088);
 ({ TouchableOpacity: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -45,10 +45,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LargeCount
     function handlePress() {
       let intl;
       const obj = { text: intl.string(intl2.t["Mv4E/M"]), icon: CircleInformationIcon2.CircleInformationIcon, iconColor: nativeDefault.colors.STATUS_WARNING };
-      const openMana = ToastActionCreatorsDefault.openMana;
+      const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl2.intl;
-      openMana("LARGE_COUNTDOWN_PILL_TOAST", obj);
+      open("LARGE_COUNTDOWN_PILL_TOAST", obj);
     }
     cResult[0] = handlePress;
     first = handlePress;
@@ -113,10 +113,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LargeCount
     onPress: function handlePress() {
       let intl;
       const obj = { text: intl.string(intl2.t["Mv4E/M"]), icon: CircleInformationIcon2.CircleInformationIcon, iconColor: nativeDefault.colors.STATUS_WARNING };
-      const openMana = ToastActionCreatorsDefault.openMana;
+      const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl2.intl;
-      openMana("LARGE_COUNTDOWN_PILL_TOAST", obj);
+      open("LARGE_COUNTDOWN_PILL_TOAST", obj);
     },
     children: metroRequire(React3, obj2)
   };

@@ -1,18 +1,17 @@
-// Module ID: 18559
-// Function ID: 18560
+// Module ID: 18633
+// Function ID: 18634
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1390, 18553, 18555, 5941, 18554, 4768, 5006, 1126, 2859, 558, 576, 1503, 18558, 2]
+// Dependencies: [5, 19, 1390, 18627, 18629, 5934, 18628, 4809, 1126, 2862, 558, 576, 1503, 18632, 2]
 // Exports: getScreensForTaskType
 
-// Module 18559 (SafetyFlowsUtils)
+// Module 18633 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1126 */;
-import _modDef2859 from "module_2859" /* 2859 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5006 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import types from "types" /* 18553 */;
-import constants from "constants" /* 18554 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18555 */;
+import _modDef2862 from "module_2862" /* 2862 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import types from "types" /* 18627 */;
+import constants from "constants" /* 18628 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18629 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -38,7 +37,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -87,11 +86,11 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: AssetRegistryDefault, content: intl.string(_modDef2859["/fHz9S"]) };
+    const obj2 = { text: intl.string(_modDef2862["/fHz9S"]), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
-    open(obj2);
+    open("SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", obj2);
   } else {
     task_type = task_type.task_type;
     const tmp17 = types.TASK_TYPE_TO_SCREENS[task_type];
@@ -142,11 +141,11 @@ function getScreensForTaskType(task_type) {
 }
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskComplete() {
   let setTask;
-  obj = navigation(setTask[12]);
+  obj = navigation(setTask[11]);
   const cResult = obj.c(5);
-  const obj2 = navigation(setTask[13]);
+  const obj2 = navigation(setTask[12]);
   navigation = obj2.useNavigation();
-  const obj3 = navigation(setTask[14]);
+  const obj3 = navigation(setTask[13]);
   const safetyFlowTask = obj3.useSafetyFlowTask();
   const task = safetyFlowTask.task;
   setTask = safetyFlowTask.setTask;
@@ -175,7 +174,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -221,7 +220,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -241,9 +240,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
   tmp4 = t0;
 }) : (function useOnTaskComplete() {
   let setTask;
-  obj = navigation(setTask[13]);
+  obj = navigation(setTask[12]);
   navigation = obj.useNavigation();
-  const obj2 = navigation(setTask[14]);
+  const obj2 = navigation(setTask[13]);
   const safetyFlowTask = obj2.useSafetyFlowTask();
   const task = safetyFlowTask.task;
   setTask = safetyFlowTask.setTask;
@@ -262,7 +261,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -308,7 +307,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp14) {
           c4 = 3;

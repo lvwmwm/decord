@@ -1,11 +1,11 @@
-// Module ID: 17375
-// Function ID: 17376
+// Module ID: 17447
+// Function ID: 17448
 // Name: GuildThemeAnalyticsUtils
-// Dependencies: [2086, 2]
+// Dependencies: [2087, 2]
 // Exports: collectGuildThemeAnalyticsMetadata
 
-// Module 17375 (GuildThemeAnalyticsUtils)
-import GuildStore from "GuildStore" /* 2086 */;
+// Module 17447 (GuildThemeAnalyticsUtils)
+import GuildStore from "GuildStore" /* 2087 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_themes/GuildThemeAnalyticsUtils.tsx");

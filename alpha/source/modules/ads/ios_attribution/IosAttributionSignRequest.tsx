@@ -1,10 +1,10 @@
-// Module ID: 12915
-// Function ID: 12916
+// Module ID: 12963
+// Function ID: 12964
 // Name: IosAttributionSignRequest
 // Dependencies: [5, 1085, 1295, 1255, 2]
 // Exports: fetchIosAttributionSignedPayloads
 
-// Module 12915 (IosAttributionSignRequest)
+// Module 12963 (IosAttributionSignRequest)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

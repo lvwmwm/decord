@@ -1,14 +1,14 @@
-// Module ID: 14318
-// Function ID: 14319
+// Module ID: 14373
+// Function ID: 14374
 // Name: Checkbox/Checkbox
-// Dependencies: [19, 17, 21, 558, 576, 14319, 14320, 2]
+// Dependencies: [19, 17, 21, 558, 576, 14374, 14375, 2]
 
-// Module 14318 (Checkbox/Checkbox)
+// Module 14373 (Checkbox/Checkbox)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14319 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14320 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14374 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14375 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

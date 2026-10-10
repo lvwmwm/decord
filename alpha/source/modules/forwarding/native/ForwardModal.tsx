@@ -1,37 +1,37 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 11554
+// Function ID: 11555
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7307, 7312, 8437, 2064, 5429, 8464, 11509, 10187, 21, 5091, 587, 558, 576, 1497, 11510, 504, 11506, 11505, 6211, 11512, 4768, 1126, 1388, 11514, 5300, 11515, 9289, 5102, 11516, 11517, 5411, 5056, 5057, 4767, 6879, 7082, 5040, 1382, 11520, 10196, 11521, 11531, 11545, 2]
+// Dependencies: [5, 32, 19, 17, 7313, 7318, 8453, 2065, 5432, 8480, 11555, 10216, 21, 5092, 587, 558, 576, 1497, 11556, 504, 11552, 11551, 6206, 11558, 4809, 1126, 1388, 11560, 5301, 11561, 9316, 5103, 11562, 11563, 5414, 5057, 5058, 4808, 6885, 7088, 5038, 1382, 11566, 10225, 11567, 11577, 11591, 2]
 
-// Module 11508 (ForwardModal)
+// Module 11554 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import LinkIcon from "LinkIcon" /* 5040 */;
-import HapticUtils from "HapticUtils" /* 5056 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5057 */;
-import ChannelUtils from "ChannelUtils" /* 5411 */;
-import ClipboardUtils from "ClipboardUtils" /* 6879 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7082 */;
-import UserRowConstants from "UserRowConstants" /* 10187 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11505 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11506 */;
-import ForwardConstants from "ForwardConstants" /* 11509 */;
-import formatResults from "formatResults" /* 11510 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11512 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import LinkIcon from "LinkIcon" /* 5038 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
+import ChannelUtils from "ChannelUtils" /* 5414 */;
+import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
+import UserRowConstants from "UserRowConstants" /* 10216 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11551 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11552 */;
+import ForwardConstants from "ForwardConstants" /* 11555 */;
+import formatResults from "formatResults" /* 11556 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11558 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7307 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7312 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8437 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import MessageStore from "MessageStore" /* 5429 */;
-import MessagePreviewStore_mod from "MessagePreviewStore" /* 8464 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7313 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7318 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8453 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import MessagePreviewStore_mod from "MessagePreviewStore" /* 8480 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -383,7 +383,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -407,11 +407,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
                   const obj5 = { value: Promise.all(closure_1_18.map(withMessage(closure_2_2[18]).getOrResolveChannelIdFromDestinationId)), done: false };
                   return obj5;
                 } else {
-                  const obj6 = { key: "FORWARD_ERROR", content: intl2.string(withMessage(closure_2_2[25]).t.R0RpRX) };
+                  const obj6 = { text: intl2.string(withMessage(closure_2_2[25]).t.R0RpRX) };
                   const open2 = closure_2_1(closure_2_2[24]).open;
                   closure_2_1(closure_2_2[24]);
                   intl2 = withMessage(closure_2_2[25]).intl;
-                  open2(obj6);
+                  open2("FORWARD_ERROR", obj6);
                 }
               } else {
                 c3 = 1;
@@ -502,11 +502,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
                   const obj19 = { channelId, messageId, hasError: false, hasContextMessage: tmp30, numDestinations: forwardOptions.length, numDestinationChanges: ref.current, numQueryChanges: ref2.current, source };
                   tmp30 = null != withMessage && "" !== withMessage;
                   trackForwardSent(obj19);
-                  const obj20 = { key: "FORWARD_SUCCESS", IconComponent: closure_2_1(closure_2_2[33]), content: intl.string(withMessage(closure_2_2[25]).t.kwmYkt) };
+                  const obj20 = { text: intl.string(withMessage(closure_2_2[25]).t.kwmYkt), icon: closure_2_1(closure_2_2[33]) };
                   const open = closure_2_1(closure_2_2[24]).open;
                   closure_2_1(closure_2_2[24]);
                   intl = withMessage(closure_2_2[25]).intl;
-                  open(obj20);
+                  open("FORWARD_SUCCESS", obj20);
                   c4 = 3;
                   return { value: undefined, done: true };
                 } else {
@@ -540,7 +540,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;
@@ -603,7 +603,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
         const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
         const merged = Object.assign(arg0);
         intl = intl7.intl;
-        tmp = authStore4(HeaderActionButton, obj);
+        tmp = authStore3(HeaderActionButton, obj);
       }
       return tmp;
     },

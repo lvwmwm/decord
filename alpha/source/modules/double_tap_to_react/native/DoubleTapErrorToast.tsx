@@ -1,13 +1,13 @@
-// Module ID: 7972
-// Function ID: 7973
+// Module ID: 7990
+// Function ID: 7991
 // Name: DoubleTapErrorToast
-// Dependencies: [1393, 1126, 4768, 2]
+// Dependencies: [1393, 1126, 4809, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7972 (DoubleTapErrorToast)
+// Module 7990 (DoubleTapErrorToast)
 import intl4 from "intl" /* 1126 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import size from "module_2" /* 2 */;
 
 const EmojiDisabledReasons = EmojiConstants.EmojiDisabledReasons;
@@ -17,7 +17,7 @@ export const showDoubleTapErrorToast = function showDoubleTapErrorToast(emojiNam
   let stringResult;
   emojiName = emojiName.emojiName;
   const reason = emojiName.reason;
-  const openMana = ToastActionCreatorsDefault.openMana;
+  const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   if (null == emojiName) {
     const intl3 = intl4.intl;
@@ -31,5 +31,5 @@ export const showDoubleTapErrorToast = function showDoubleTapErrorToast(emojiNam
     const obj = { emojiName };
     stringResult = intl.formatToPlainString(intl4.t.WZGLFq, obj);
   }
-  openMana("EMOJI_DOUBLE_TAP_ERROR", { text: stringResult, variant: "critical" });
+  open("EMOJI_DOUBLE_TAP_ERROR", { text: stringResult, variant: "critical" });
 };

@@ -1,21 +1,21 @@
-// Module ID: 15893
-// Function ID: 15894
+// Module ID: 15955
+// Function ID: 15956
 // Name: WebAuthnScreen
-// Dependencies: [32, 19, 21, 5091, 587, 5949, 558, 576, 1126, 1200, 1382, 1295, 6631, 14983, 6629, 15894, 15895, 2]
+// Dependencies: [32, 19, 21, 5092, 587, 5942, 558, 576, 1126, 1200, 1382, 1295, 6632, 15042, 6630, 15956, 15957, 2]
 
-// Module 15893 (WebAuthnScreen)
+// Module 15955 (WebAuthnScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import react_nativeDefault from "react-native" /* 5949 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6629 */;
-import buttonDefault from "button" /* 15894 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 15895 */;
+import react_nativeDefault from "react-native" /* 5942 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6630 */;
+import buttonDefault from "button" /* 15956 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 15957 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnScre
         const stringResult = intl.string(tmp(1126).t.saHocI);
         const intl2 = tmp(1126).intl;
         const stringResult1 = intl2.string(tmp(1126).t.YpMrqM);
-        const tmp28 = jsx(tmp(14983).KeyImage, {});
+        const tmp28 = jsx(tmp(15042).KeyImage, {});
         cResult[7] = stringResult;
         cResult[8] = stringResult1;
         cResult[9] = tmp28;
@@ -357,7 +357,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnScre
     });
     catchPromise.finally(() => _undefined(false));
   }, items1);
-  obj3 = { headerText: intl.string(finish(1126).t.saHocI), subtitle: intl2.string(finish(1126).t.YpMrqM), headerImage: challenge(finish(14983).KeyImage, {}), content: shouldDisplayAndroidFidoSelector, submit: challenge(tmp17Result, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "webauthn", error: first };
+  obj3 = { headerText: intl.string(finish(1126).t.saHocI), subtitle: intl2.string(finish(1126).t.YpMrqM), headerImage: challenge(finish(15042).KeyImage, {}), content: shouldDisplayAndroidFidoSelector, submit: challenge(tmp17Result, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "webauthn", error: first };
   const tmp18 = MfaOptionScreenDefault;
   intl = tmp6(1126).intl;
   intl2 = tmp6(1126).intl;

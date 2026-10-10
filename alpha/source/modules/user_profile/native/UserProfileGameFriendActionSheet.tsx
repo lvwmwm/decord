@@ -1,21 +1,21 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13182
+// Function ID: 13183
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4719, 1085, 21, 5091, 587, 558, 576, 12317, 6212, 1200, 5087, 6888, 13134, 6854, 5406, 7011, 4767, 5055, 6892, 6835, 1126, 2]
+// Dependencies: [5, 32, 19, 17, 4760, 1085, 21, 5092, 587, 558, 576, 12361, 6207, 1200, 5088, 6894, 13183, 6857, 5409, 7017, 4808, 5056, 6898, 6838, 1126, 2]
 // Exports: default
 
-// Module 13133 (UserProfileGameFriendActionSheet)
+// Module 13182 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12317 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12361 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -253,7 +253,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -303,7 +303,7 @@ export default function UserProfileGameFriendActionSheet(user) {
           c3 = 0;
           closure_128_5(false);
           _undefined = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp30) {
         memo = tmp30;

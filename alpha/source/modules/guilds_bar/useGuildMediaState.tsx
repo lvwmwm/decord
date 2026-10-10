@@ -1,25 +1,25 @@
-// Module ID: 16694
-// Function ID: 16695
+// Module ID: 16764
+// Function ID: 16765
 // Name: useGuildMediaState
-// Dependencies: [2063, 2069, 2068, 5894, 502, 2064, 2086, 4709, 4719, 2115, 5973, 5112, 1085, 1106, 558, 576, 504, 8638, 4698, 13928, 8496, 11, 5891, 2]
+// Dependencies: [2064, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 558, 576, 504, 8654, 4739, 13981, 8512, 11, 5894, 2]
 
-// Module 16694 (useGuildMediaState)
+// Module 16764 (useGuildMediaState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13928 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
-import StageInstanceStore from "StageInstanceStore" /* 2069 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 13981 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

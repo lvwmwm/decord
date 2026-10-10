@@ -1,17 +1,17 @@
-// Module ID: 12524
-// Function ID: 12525
+// Module ID: 12571
+// Function ID: 12572
 // Name: FocusModeUtils
-// Dependencies: [5756, 4722, 1085, 558, 576, 2041, 2046, 1240, 1265, 5298, 1126, 12525, 2]
+// Dependencies: [5759, 4763, 1085, 558, 576, 2041, 2046, 1240, 1265, 5299, 1126, 12572, 2]
 // Exports: getFocusModeEnabled, setFocusMode
 
-// Module 12524 (FocusModeUtils)
+// Module 12571 (FocusModeUtils)
 import react from "react" /* 576 */;
 import wrappers from "wrappers" /* 1240 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import NotificationConstants from "NotificationConstants" /* 4722 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5756 */;
+import NotificationConstants from "NotificationConstants" /* 4763 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -155,7 +155,7 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
           closure_1(dependencyMap[11])(obj);
         }
     };
-    const show = tmp5(5298).show;
+    const show = tmp5(5299).show;
     AlertActionCreatorsDefault;
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;

@@ -1,14 +1,14 @@
-// Module ID: 6948
-// Function ID: 6949
+// Module ID: 6954
+// Function ID: 6955
 // Name: useHasRoleSubscriptionInGuild
-// Dependencies: [502, 2124, 2118, 2086, 1085, 558, 576, 504, 2]
+// Dependencies: [502, 2125, 2119, 2087, 1085, 558, 576, 504, 2]
 
-// Module 6948 (useHasRoleSubscriptionInGuild)
+// Module 6954 (useHasRoleSubscriptionInGuild)
 import Constants from "Constants" /* 1085 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

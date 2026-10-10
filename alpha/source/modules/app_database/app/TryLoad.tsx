@@ -1,10 +1,10 @@
-// Module ID: 2110
-// Function ID: 2111
+// Module ID: 2111
+// Function ID: 2112
 // Name: TryLoad
 // Dependencies: [5, 3, 584, 2]
 // Exports: tryLoad, tryLoadAsync, tryLoadOrResetCacheGateway, tryLoadOrResetCacheGatewayAsync
 
-// Module 2110 (TryLoad)
+// Module 2111 (TryLoad)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -25,7 +25,7 @@ let obj = function _tryLoadAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -99,7 +99,7 @@ obj = function _tryLoadOrResetCacheGatewayAsync() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

@@ -1,24 +1,24 @@
-// Module ID: 16922
-// Function ID: 16923
+// Module ID: 16990
+// Function ID: 16991
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 2115, 4702, 1085, 2071, 21, 15435, 504, 9371, 5087, 5299, 1126, 6151, 4661, 1200, 16916, 5055, 16923, 2000, 558, 576, 16912, 8171, 5376, 9436, 2]
+// Dependencies: [5, 32, 19, 17, 2116, 4743, 1085, 2072, 21, 15497, 504, 9398, 5088, 5300, 1126, 6144, 4702, 1200, 16984, 5056, 16991, 2000, 558, 576, 16980, 8187, 5379, 9465, 2]
 
-// Module 16922 (SubscribeButton)
+// Module 16990 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ChannelConstants from "ChannelConstants" /* 2071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9371 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15435 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9398 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4702 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4743 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ function useCreateRoleSubscription(listingId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -107,7 +107,7 @@ function useCreateRoleSubscription(listingId) {
             c3 = 0;
             closure_128_1(false);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp19) {
           closure_2 = tmp19;
@@ -141,13 +141,13 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(15435);
+  let obj = changeToListingId(15497);
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   const obj3 = { children: items };
-  const obj2 = activeListingId(4661)(activeSubscription.currentPeriodEnd);
+  const obj2 = activeListingId(4702)(activeSubscription.currentPeriodEnd);
   const obj4 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(activeSubscription(1126).t.lA7ztO, obj5) };
   const formatResult = obj2.format("MMMM Do");
-  const Text = activeSubscription(5087).Text;
+  const Text = activeSubscription(5088).Text;
   intl = activeSubscription(1126).intl;
   obj5 = { activeListingName: first, billingEndDate: formatResult, emphasisHook };
   items = [closure_12(Text, obj4), closure_12(activeSubscription(1200).Spacer, { size: 16 }), ];
@@ -157,11 +157,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(16923, dependencyMap.paths);
+      const tmp2 = asyncRequire(16991, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(16916).ArrowButton;
+  const ArrowButton = activeSubscription(16984).ArrowButton;
   intl2 = activeSubscription(1126).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);

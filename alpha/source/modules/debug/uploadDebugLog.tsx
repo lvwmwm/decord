@@ -1,10 +1,10 @@
-// Module ID: 12589
-// Function ID: 12590
+// Module ID: 12636
+// Function ID: 12637
 // Name: uploadDebugLog
 // Dependencies: [1085, 1295, 2]
 // Exports: default
 
-// Module 12589 (uploadDebugLog)
+// Module 12636 (uploadDebugLog)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;

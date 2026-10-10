@@ -1,15 +1,15 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9066
+// Function ID: 9067
 // Name: TestModeStore
-// Dependencies: [1206, 1244, 7106, 504, 2041, 584, 2]
+// Dependencies: [1206, 1244, 7112, 504, 2041, 584, 2]
 
-// Module 9047 (TestModeStore)
+// Module 9066 (TestModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7106 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7112 */;
 import size from "module_2" /* 2 */;
 
 let originURL;

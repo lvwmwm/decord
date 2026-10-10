@@ -1,24 +1,24 @@
-// Module ID: 12071
-// Function ID: 12072
+// Module ID: 12115
+// Function ID: 12116
 // Name: ApplicationCommandBar
-// Dependencies: [32, 109, 19, 17, 2124, 21, 5091, 587, 5976, 558, 576, 1126, 1200, 6191, 504, 11883, 6163, 5087, 8563, 5929, 12072, 2]
+// Dependencies: [32, 109, 19, 17, 2125, 21, 5092, 587, 5969, 558, 576, 1126, 1200, 6184, 504, 11927, 6156, 5088, 8579, 5922, 12116, 2]
 
-// Module 12071 (ApplicationCommandBar)
+// Module 12115 (ApplicationCommandBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import usePreviousDefault from "usePrevious" /* 5929 */;
-import LegacyTokens from "LegacyTokens" /* 5976 */;
-import Pressables from "Pressables" /* 6191 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11883 */;
+import usePreviousDefault from "usePrevious" /* 5922 */;
+import LegacyTokens from "LegacyTokens" /* 5969 */;
+import Pressables from "Pressables" /* 6184 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11927 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,8 +44,8 @@ let size1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const Text_Text = tmp(5087);
-const DescriptionEllipsisDefault = tmp5(12072);
+const Text_Text = tmp(5088);
+const DescriptionEllipsisDefault = tmp5(12116);
 let closure_3 = ["option", "optionState"];
 let react = react_mod;
 ({ View: metroImportDefault, ScrollView: metroImportAll, StyleSheet } = react_native);
@@ -180,7 +180,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
                 }
               }
               const obj3 = { accessibilityLabel: tmp11, accessibilityRole: "button", disabled: flag, style: tmp15, children: tmp20 };
-              const PressableOpacity = tmp(6191).PressableOpacity;
+              const PressableOpacity = tmp(6184).PressableOpacity;
               const merged = Object.assign(tmp6);
               const tmp28 = authStore(PressableOpacity, obj3);
               cResult[18] = flag;
@@ -851,11 +851,11 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   const tmp21 = ref;
   if (tmp22) {
     const obj4 = { style: tmp.applicationIcon, source: memo };
-    tmp22 = c10(section(6163), obj4);
+    tmp22 = c10(section(6156), obj4);
   }
   items5 = [tmp22, , , ];
   const obj5 = { style: tmp.applicationName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
-  items5[1] = c10(command(5087).Text, obj5);
+  items5[1] = c10(command(5088).Text, obj5);
   let options = command.options;
   let mapped;
   if (options != null) {
@@ -895,7 +895,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
     items6[1] = applicationOptionalOptionsDividerWithNoRequired;
     const items7 = [c10(ref, obj6), , ];
     const obj7 = { style: tmp.applicationOptionalOptionsIndicator, lineClamp: 1, variant: "eyebrow", color: "text-muted", children: intl.string(command(1126).t.U19GM3) };
-    const Text = tmp12(5087).Text;
+    const Text = tmp12(5088).Text;
     intl = tmp12(1126).intl;
     items7[1] = c10(Text, obj7);
     const options1 = command.options;
@@ -927,10 +927,10 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((command) => {
   items5[3] = tmp19Result;
   items8 = [closure_12(tmp21, obj3), , , ];
   const obj9 = { style: tmp.applicationDescriptionDivider };
-  items8[1] = c10(command(8563).FormDivider, obj9);
+  items8[1] = c10(command(8579).FormDivider, obj9);
   items8[2] = c10(closure_15, { command, option: currentOption, optionState: tmp17 });
   const obj10 = { style: tmp.applicationDescriptionDivider };
-  items8[3] = c10(command(8563).FormDivider, obj10);
+  items8[3] = c10(command(8579).FormDivider, obj10);
   return closure_12(ref, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

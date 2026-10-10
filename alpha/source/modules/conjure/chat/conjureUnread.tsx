@@ -1,19 +1,18 @@
-// Module ID: 16560
-// Function ID: 16561
+// Module ID: 11424
+// Function ID: 11425
 // Name: conjureUnread
-// Dependencies: [19, 1244, 6042, 5974, 584, 11, 16561, 558, 576, 12949, 504, 16562, 2]
-// Exports: ackConjureProject
+// Dependencies: [19, 1244, 6035, 5967, 584, 11, 558, 576, 11425, 504, 11426, 2]
+// Exports: ackConjureProject, isConjureProjectUnread
 
-// Module 16560 (conjureUnread)
+// Module 11424 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReadStateConstants from "ReadStateConstants" /* 5974 */;
-import conjureProjectMute from "conjureProjectMute" /* 12949 */;
-import VibegrationsReadStateFlags from "VibegrationsReadStateFlags" /* 16561 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import conjureProjectMute from "conjureProjectMute" /* 11425 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import ReadStateStore from "ReadStateStore" /* 6042 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,29 +21,28 @@ let _require, dependencyMap;
 
 let tmp;
 const get_initialized = tmp(504);
-function unreadStatus(arg0, arg1, arg2) {
+function projectBadge(arg0, arg1, arg2) {
   let tmp = null;
   if (!arg2) {
-    tmp = null;
-    if (0 !== arg0) {
-      if (null != arg1) {
-        let FINISHED;
+    let tmp3 = arg0 > 0;
+    if (!tmp3) {
+      let tmp5 = null != arg1;
+      if (tmp5) {
         const obj = SnowflakeUtilsDefault;
-        const nonTimestampBits = obj.getNonTimestampBits(arg1);
-        const tmp6 = require;
-        if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-          FINISHED = tmp6(16561).VibegrationsReadStateFlags.NEEDS_INPUT;
-        }
-        tmp = FINISHED;
+        tmp5 = 0 !== obj.getNonTimestampBits(arg1);
       }
-      FINISHED = VibegrationsReadStateFlags.VibegrationsReadStateFlags.FINISHED;
+      tmp3 = tmp5;
+    }
+    tmp = null;
+    if (tmp3) {
+      tmp = arg0;
     }
   }
   return tmp;
 }
 const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjectUnreadStatus(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjectBadge(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -70,18 +68,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
         let tmp10 = null;
         const obj = conjureProjectMute;
         if (!obj.isConjureProjectMuted(UserSettingsProtoStore.settings, closure_0)) {
-          tmp10 = null;
-          if (0 !== mentionCount) {
-            if (null != ackMessageIdResult) {
-              let FINISHED;
+          let tmp11 = mentionCount > 0;
+          if (!tmp11) {
+            let tmp12 = null != ackMessageIdResult;
+            if (tmp12) {
               const obj2 = SnowflakeUtilsDefault;
-              const nonTimestampBits = obj2.getNonTimestampBits(ackMessageIdResult);
-              if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-                FINISHED = tmp7(16561).VibegrationsReadStateFlags.NEEDS_INPUT;
-              }
-              tmp10 = FINISHED;
+              tmp12 = 0 !== obj2.getNonTimestampBits(ackMessageIdResult);
             }
-            FINISHED = tmp7(16561).VibegrationsReadStateFlags.FINISHED;
+            tmp11 = tmp12;
+          }
+          tmp10 = null;
+          if (tmp11) {
+            tmp10 = mentionCount;
           }
         }
         tmp2 = tmp10;
@@ -100,7 +98,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useConjureProjectUnreadStatus(arg0) {
+}) : (function useConjureProjectBadge(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -114,18 +112,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
       let tmp10 = null;
       const obj = conjureProjectMute;
       if (!obj.isConjureProjectMuted(UserSettingsProtoStore.settings, closure_0)) {
-        tmp10 = null;
-        if (0 !== mentionCount) {
-          if (null != ackMessageIdResult) {
-            let FINISHED;
+        let tmp11 = mentionCount > 0;
+        if (!tmp11) {
+          let tmp12 = null != ackMessageIdResult;
+          if (tmp12) {
             const obj2 = SnowflakeUtilsDefault;
-            const nonTimestampBits = obj2.getNonTimestampBits(ackMessageIdResult);
-            if (nonTimestampBits & VibegrationsReadStateFlags.VibegrationsReadStateFlags.NEEDS_INPUT) {
-              FINISHED = tmp7(16561).VibegrationsReadStateFlags.NEEDS_INPUT;
-            }
-            tmp10 = FINISHED;
+            tmp12 = 0 !== obj2.getNonTimestampBits(ackMessageIdResult);
           }
-          FINISHED = tmp7(16561).VibegrationsReadStateFlags.FINISHED;
+          tmp11 = tmp12;
+        }
+        tmp10 = null;
+        if (tmp11) {
+          tmp10 = mentionCount;
         }
       }
       tmp2 = tmp10;
@@ -143,29 +141,27 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureUn
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ReadStateStore, UserSettingsProtoStore];
     const fn = function s() {
-      let hasUnread = false;
-      let badgeCount = 0;
+      let num = 0;
+      let num2 = 0;
       const resourceIds = ReadStateStore.getResourceIds(constants.CONJURING_PROJECT);
       const iter = resourceIds[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let mentionCount = ReadStateStore.getMentionCount(nextResult, constants.CONJURING_PROJECT);
         let ackMessageIdResult = ReadStateStore.ackMessageId(nextResult, constants.CONJURING_PROJECT);
-        let tmp8 = _require;
-        let tmp9 = dependencyMap;
         let obj = require("conjureProjectMute");
-        let tmp11 = unreadStatus(mentionCount, ackMessageIdResult, obj.isConjureProjectMuted(settings.settings, nextResult));
+        let tmp11 = projectBadge(mentionCount, ackMessageIdResult, obj.isConjureProjectMuted(settings.settings, nextResult));
         if (null != tmp11) {
-          hasUnread = true;
-          if (tmp12 === tmp8(tmp9[6]).VibegrationsReadStateFlags.NEEDS_INPUT) {
-            badgeCount = badgeCount + 1;
-          }
+          num = num + 1;
+          num2 = num2 + tmp12;
         }
         continue;
       }
-      return { hasUnread, badgeCount };
+      return { hasUnread: num > 0, unreadCount: num, badgeCount: num2 };
     };
+    let num = 0;
     cResult[0] = items;
+    let num2 = 1;
     cResult[1] = fn;
     tmp5 = fn;
     tmp4 = items;
@@ -179,27 +175,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureUn
   let obj = get_initialized;
   const items = [ReadStateStore, UserSettingsProtoStore];
   return obj.useStateFromStoresObject(items, () => {
-    let hasUnread = false;
-    let badgeCount = 0;
+    let num = 0;
+    let num2 = 0;
     const resourceIds = ReadStateStore.getResourceIds(constants.CONJURING_PROJECT);
     const iter = resourceIds[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let mentionCount = ReadStateStore.getMentionCount(nextResult, constants.CONJURING_PROJECT);
       let ackMessageIdResult = ReadStateStore.ackMessageId(nextResult, constants.CONJURING_PROJECT);
-      let tmp8 = _require;
-      let tmp9 = dependencyMap;
       let obj = require("conjureProjectMute");
-      let tmp11 = unreadStatus(mentionCount, ackMessageIdResult, obj.isConjureProjectMuted(settings.settings, nextResult));
+      let tmp11 = projectBadge(mentionCount, ackMessageIdResult, obj.isConjureProjectMuted(settings.settings, nextResult));
       if (null != tmp11) {
-        hasUnread = true;
-        if (tmp12 === tmp8(tmp9[6]).VibegrationsReadStateFlags.NEEDS_INPUT) {
-          badgeCount = badgeCount + 1;
-        }
+        num = num + 1;
+        num2 = num2 + tmp12;
       }
       continue;
     }
-    return { hasUnread, badgeCount };
+    return { hasUnread: num > 0, unreadCount: num, badgeCount: num2 };
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -223,7 +215,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjur
   }
   if (cResult[1] !== arg0) {
     const fn = function c() {
-      const tmp2 = null != closure_0 && ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT) > 0;
+      let tmp2 = null != closure_0;
+      if (tmp2) {
+        const mentionCount = ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT);
+        const ackMessageIdResult = ReadStateStore.ackMessageId(closure_0, ReadStateTypes.CONJURING_PROJECT);
+        let tmp7 = mentionCount > 0;
+        if (!tmp7) {
+          let tmp8 = null != ackMessageIdResult;
+          if (tmp8) {
+            const obj = SnowflakeUtilsDefault;
+            tmp8 = 0 !== obj.getNonTimestampBits(ackMessageIdResult);
+          }
+          tmp7 = tmp8;
+        }
+        tmp2 = tmp7;
+      }
       return tmp2;
     };
     const items1 = [arg0];
@@ -238,7 +244,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjur
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = stateFromStores(16562)();
+  const tmp9 = stateFromStores(11426)();
   dependencyMap = tmp9;
   if (cResult[4] === tmp9) {
     if (cResult[5] === arg0) {
@@ -251,7 +257,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjur
       const effect = react.useEffect(tmp10, tmp11);
     }
   }
-  const fn2 = function j() {
+  const fn2 = function l() {
     let tmp2 = null != closure_0;
     const tmp = closure_0;
     if (tmp2) {
@@ -282,10 +288,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjur
   const items = [ReadStateStore];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    const tmp2 = null != closure_0 && ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT) > 0;
+    let tmp2 = null != closure_0;
+    if (tmp2) {
+      const mentionCount = ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT);
+      const ackMessageIdResult = ReadStateStore.ackMessageId(closure_0, ReadStateTypes.CONJURING_PROJECT);
+      let tmp7 = mentionCount > 0;
+      if (!tmp7) {
+        let tmp8 = null != ackMessageIdResult;
+        if (tmp8) {
+          const obj = SnowflakeUtilsDefault;
+          tmp8 = 0 !== obj.getNonTimestampBits(ackMessageIdResult);
+        }
+        tmp7 = tmp8;
+      }
+      tmp2 = tmp7;
+    }
     return tmp2;
   }, items1);
-  let tmp2 = stateFromStores(16562)();
+  let tmp2 = stateFromStores(11426)();
   dependencyMap = tmp2;
   const items2 = [arg0, stateFromStores, tmp2];
   const effect = react.useEffect(() => {
@@ -312,6 +332,20 @@ function ackConjureProject(projectId) {
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureUnread.tsx");
 
 export { ackConjureProject };
-export const useConjureProjectUnreadStatus = tmp2;
+export const isConjureProjectUnread = function isConjureProjectUnread(c0) {
+  const mentionCount = ReadStateStore.getMentionCount(c0, ReadStateTypes.CONJURING_PROJECT);
+  const ackMessageIdResult = ReadStateStore.ackMessageId(c0, ReadStateTypes.CONJURING_PROJECT);
+  let tmp3 = mentionCount > 0;
+  if (!tmp3) {
+    let tmp5 = null != ackMessageIdResult;
+    if (tmp5) {
+      const obj = SnowflakeUtilsDefault;
+      tmp5 = 0 !== obj.getNonTimestampBits(ackMessageIdResult);
+    }
+    tmp3 = tmp5;
+  }
+  return tmp3;
+};
+export const useConjureProjectBadge = tmp2;
 export const useConjureUnreadSummary = tmp3;
 export const useAckConjureProjectWhileViewing = tmp4;

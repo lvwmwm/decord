@@ -1,25 +1,25 @@
-// Module ID: 18568
-// Function ID: 18569
+// Module ID: 18642
+// Function ID: 18643
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7252, 1390, 7253, 21, 5091, 587, 18559, 18558, 11484, 5393, 18092, 15077, 7720, 504, 15075, 18569, 18553, 4768, 1126, 2859, 5055, 15076, 2000, 18562, 11493, 5374, 18570, 11546, 18571, 5087, 2565, 15078, 2]
+// Dependencies: [5, 32, 19, 17, 7258, 1390, 7259, 21, 5092, 587, 18633, 18632, 11530, 5396, 18166, 15136, 7738, 504, 15134, 18643, 18627, 4809, 1126, 2862, 5056, 15135, 2000, 18636, 11539, 5377, 18644, 11592, 18645, 5088, 2568, 15137, 2]
 // Exports: default
 
-// Module 18568 (ParentalConsentConnectionScreen)
+// Module 18642 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef2859 from "module_2859" /* 2859 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7253 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15075 */;
+import _modDef2862 from "module_2862" /* 2862 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7259 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7252 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7258 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let c4, closure_2;
@@ -169,7 +169,7 @@ export default function ParentalConsentConnectionScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -199,11 +199,11 @@ export default function ParentalConsentConnectionScreen() {
         } else {
           if (2 === getLinkCode) {
             c3 = 1;
-            const obj6 = { key: "SAFETY_FLOWS_PARENTAL_CONSENT_CONNECTION_ERROR", content: intl.string(getLinkCode(closure_2[23])["+QRSxc"]) };
+            const obj6 = { text: intl.string(getLinkCode(closure_2[23])["+QRSxc"]) };
             const open = getLinkCode(closure_2[21]).open;
             const tmp12 = getLinkCode(closure_2[21]);
             intl = tmp(closure_2[22]).intl;
-            open(obj6);
+            open("SAFETY_FLOWS_PARENTAL_CONSENT_CONNECTION_ERROR", obj6);
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -219,7 +219,7 @@ export default function ParentalConsentConnectionScreen() {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp30) {
         closure_2 = tmp30;
@@ -240,9 +240,9 @@ export default function ParentalConsentConnectionScreen() {
     let intl2;
     let obj2;
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-    const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2859.dMMSA0), body: intl2.format(_modDef2859["6GaRTu"], obj2) };
+    const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2862.dMMSA0), body: intl2.format(_modDef2862["6GaRTu"], obj2) };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(15076, dependencyMap.paths);
+    const tmp2 = asyncRequire(15135, dependencyMap.paths);
     intl = intl5.intl;
     intl2 = intl5.intl;
     obj2 = { link };

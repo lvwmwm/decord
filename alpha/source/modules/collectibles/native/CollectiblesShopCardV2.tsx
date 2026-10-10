@@ -1,31 +1,31 @@
-// Module ID: 8948
-// Function ID: 8949
+// Module ID: 8967
+// Function ID: 8968
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1205, 7257, 1087, 21, 5091, 587, 558, 576, 8949, 7268, 8950, 8286, 8953, 8954, 1126, 4768, 6848, 9011, 9013, 4930, 504, 7269, 5087, 9014, 9017, 9019, 9016, 9020, 9022, 9027, 9038, 6191, 8951, 5055, 8284, 4728, 9025, 9063, 9064, 1279, 2]
+// Dependencies: [19, 17, 1205, 7263, 1087, 21, 5092, 587, 558, 576, 8968, 7274, 8969, 8302, 8972, 8973, 1126, 4809, 6851, 9030, 9032, 4969, 504, 7275, 5088, 9033, 9036, 9038, 9035, 9039, 9041, 9046, 9057, 6184, 8970, 5056, 8300, 4769, 9044, 9083, 9084, 1279, 2]
 
-// Module 8948 (CollectiblesShopCardV2)
+// Module 8967 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7268 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7269 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8284 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8951 */;
-import DiceIcon from "DiceIcon" /* 9017 */;
-import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9019 */;
-import OrbsIcon from "OrbsIcon" /* 9020 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7274 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7275 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8300 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8970 */;
+import DiceIcon from "DiceIcon" /* 9036 */;
+import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9038 */;
+import OrbsIcon from "OrbsIcon" /* 9039 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7257 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7263 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let content, hideActionSheetResult, obj1, openResult;
+let hideActionSheetResult, obj1, openResult, text;
 
 let PixelRatio;
 let c10;
@@ -132,14 +132,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
         } else {
           tmp20 = cResult[11];
         }
-        content = tmp20;
+        text = tmp20;
         const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           class Y {
             constructor() {
               obj = closure_1(closure_2[17]);
-              obj1 = { key: "WISHLIST_ERROR", content: closure_7 };
-              openResult = obj.open(obj1);
+              obj1 = { text: closure_7 };
+              openResult = obj.open("WISHLIST_ERROR", obj1);
               return;
             }
           }
@@ -149,8 +149,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
           class Y {
             constructor() {
               obj = closure_1(closure_2[17]);
-              obj1 = { key: "WISHLIST_ERROR", content: closure_7 };
-              openResult = obj.open(obj1);
+              obj1 = { text: closure_7 };
+              openResult = obj.open("WISHLIST_ERROR", obj1);
               return;
             }
           }
@@ -160,8 +160,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
           class Y {
             constructor() {
               obj = closure_1(closure_2[17]);
-              obj1 = { key: "WISHLIST_ERROR", content: closure_7 };
-              openResult = obj.open(obj1);
+              obj1 = { text: closure_7 };
+              openResult = obj.open("WISHLIST_ERROR", obj1);
               return;
             }
           }
@@ -171,8 +171,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
             class Y {
               constructor() {
                 obj = closure_1(closure_2[17]);
-                obj1 = { key: "WISHLIST_ERROR", content: closure_7 };
-                openResult = obj.open(obj1);
+                obj1 = { text: closure_7 };
+                openResult = obj.open("WISHLIST_ERROR", obj1);
                 return;
               }
             }
@@ -314,8 +314,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   const items1 = [stringResult];
   const callback1 = shouldShowWishlistNUXActionSheet.useCallback(() => {
     const obj = ToastActionCreatorsDefault;
-    const obj2 = { key: "WISHLIST_ERROR", content };
-    obj.open(obj2);
+    const obj2 = { text };
+    obj.open("WISHLIST_ERROR", obj2);
   }, items1);
   const analyticsLocations = require("useAnalyticsLocations")().analyticsLocations;
   const tmp2Result10 = require("useTrackShopCardClick");
@@ -364,7 +364,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   const tmp2Result12 = require("get initialized");
   const stateFromStores = tmp2Result12.useStateFromStores(items4, () => {
     const obj = require("shared");
-    return obj.isThemeDark(content.theme);
+    return obj.isThemeDark(text.theme);
   });
   const items5 = [trackShopCardClick];
   const tmp2Result13 = require("get initialized");
@@ -551,7 +551,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
               }
             }
           }
-          if (product.skuId !== content.FRACTIONAL_PREMIUM_1_DAY) {
+          if (product.skuId !== text.FRACTIONAL_PREMIUM_1_DAY) {
             if (cResult[8] === cardStyle) {
               if (cResult[9] === cardWidth) {
                 if (cResult[10] === tmp18) {

@@ -1,14 +1,14 @@
-// Module ID: 13948
-// Function ID: 13949
+// Module ID: 14001
+// Function ID: 14002
 // Name: VoiceChannelBlockedUserStore
-// Dependencies: [4719, 5112, 13949, 504, 584, 2]
+// Dependencies: [4760, 5113, 14002, 504, 584, 2]
 
-// Module 13948 (VoiceChannelBlockedUserStore)
+// Module 14001 (VoiceChannelBlockedUserStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import handleBlockedOrIgnoredUserVoiceChannelJoinDefault from "handleBlockedOrIgnoredUserVoiceChannelJoin" /* 13949 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import handleBlockedOrIgnoredUserVoiceChannelJoinDefault from "handleBlockedOrIgnoredUserVoiceChannelJoin" /* 14002 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;

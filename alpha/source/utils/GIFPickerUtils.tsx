@@ -1,12 +1,12 @@
-// Module ID: 9708
-// Function ID: 9709
+// Module ID: 9737
+// Function ID: 9738
 // Name: GIFPickerUtils
-// Dependencies: [1085, 9707, 2]
+// Dependencies: [1085, 9736, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 9708 (GIFPickerUtils)
+// Module 9737 (GIFPickerUtils)
 import Constants from "Constants" /* 1085 */;
-import GifProvider from "GifProvider" /* 9707 */;
+import GifProvider from "GifProvider" /* 9736 */;
 import size from "module_2" /* 2 */;
 
 const SearchTypes = Constants.SearchTypes;

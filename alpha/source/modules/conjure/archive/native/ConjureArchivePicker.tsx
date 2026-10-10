@@ -1,15 +1,15 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 17041
+// Function ID: 17042
 // Name: ConjureArchivePicker
-// Dependencies: [5, 13164, 12748, 6940, 1126, 3827, 2]
+// Dependencies: [5, 13213, 12795, 6946, 1126, 3849, 2]
 // Exports: describeConjureArchiveRejection, pickConjureArchive, sendConjureArchiveImport
 
-// Module 16973 (ConjureArchivePicker)
-import _modDef3827 from "module_3827" /* 3827 */;
-import ConjureTypes from "ConjureTypes" /* 6940 */;
-import FilePickerUtils from "FilePickerUtils" /* 12748 */;
+// Module 17041 (ConjureArchivePicker)
+import _modDef3849 from "module_3849" /* 3849 */;
+import ConjureTypes from "ConjureTypes" /* 6946 */;
+import FilePickerUtils from "FilePickerUtils" /* 12795 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, c6;
@@ -31,7 +31,7 @@ let obj = function _pickConjureArchive() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _sendConjureArchiveImport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -181,7 +181,7 @@ obj = function _sendConjureArchiveImport() {
           const items = [closure_2];
           closure_132_5(closure_0, closure_1, items);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp20) {
         c6 = 3;
@@ -207,7 +207,7 @@ export const describeConjureArchiveRejection = function describeConjureArchiveRe
     const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { size: formatConjureAttachmentLimit(tmpResult2.conjureAttachmentLimit(bytes.contentType)) };
-    const ThxcOX = _modDef3827.ThxcOX;
+    const ThxcOX = _modDef3849.ThxcOX;
     formatConjureAttachmentLimit = ConjureTypes.formatConjureAttachmentLimit;
     ConjureTypes;
     tmpResult2 = ConjureTypes;

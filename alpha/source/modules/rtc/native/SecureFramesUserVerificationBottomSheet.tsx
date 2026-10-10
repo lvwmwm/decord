@@ -1,28 +1,27 @@
-// Module ID: 8827
-// Function ID: 8828
+// Module ID: 8846
+// Function ID: 8847
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: [32, 19, 17, 5109, 1390, 8810, 1085, 21, 5091, 587, 558, 576, 8815, 8828, 8790, 8818, 504, 8820, 8289, 5406, 8809, 8812, 8829, 8831, 5055, 4768, 4993, 1126, 6835, 6887, 5087, 8821, 5376, 5374, 6836, 2]
+// Dependencies: [32, 19, 17, 5110, 1390, 8829, 1085, 21, 5092, 587, 558, 576, 8834, 8847, 8809, 8837, 504, 8839, 8305, 5409, 8828, 8831, 8848, 8850, 5056, 4809, 1126, 6838, 6893, 5088, 8840, 5379, 5377, 6839, 2]
 
-// Module 8827 (SecureFramesUserVerificationBottomSheet)
+// Module 8846 (SecureFramesUserVerificationBottomSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4993 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import UserActionCreators from "UserActionCreators" /* 8289 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8809 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 8812 */;
-import CheckmarkLargeBoldIcon2 from "CheckmarkLargeBoldIcon" /* 8829 */;
-import XLargeBoldIcon2 from "XLargeBoldIcon" /* 8831 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import UserActionCreators from "UserActionCreators" /* 8305 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8828 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 8831 */;
+import CheckmarkLargeBoldIcon2 from "CheckmarkLargeBoldIcon" /* 8848 */;
+import XLargeBoldIcon2 from "XLargeBoldIcon" /* 8850 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import UserStore from "UserStore" /* 1390 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8810 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8829 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -311,7 +310,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFrames
   let obj11;
   let tmp17;
   let tmp18;
-  const f99334 = () => {
+  const f99597 = () => {
     const obj = SecureFramesUtils;
     return obj.getUserVerifyStateText(memo, name);
   };
@@ -395,8 +394,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFrames
   const name = obj9.useName(guildId, channelId, stateFromStores2);
   const items5 = [memo, name];
   const items6 = [channelId, memo, userId];
-  [tmp17, tmp18] = _slicedToArray(fingerprintUserKey.useMemo(f99334, items5), 2);
-  const tmp16 = _slicedToArray(fingerprintUserKey.useMemo(f99334, items5), 2);
+  [tmp17, tmp18] = _slicedToArray(fingerprintUserKey.useMemo(f99597, items5), 2);
+  const tmp16 = _slicedToArray(fingerprintUserKey.useMemo(f99597, items5), 2);
   const effect1 = fingerprintUserKey.useEffect(() => {
     if (stateFromStores.OTHER_USER_ALREADY_VERIFIED !== memo) {
       if (stateFromStores.MATCH !== memo) {
@@ -433,18 +432,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFrames
       obj.addVerification(userId, fingerprintUserKey, isOtherUserKeyPersistent, channelId, AnalyticsLocations.DEEP_LINK);
       const obj2 = ActionSheetActionCreatorsDefault;
       obj2.hideActionSheet();
-      const obj3 = { key: unpackModuleId, iconColor: "text-feedback-positive", IconComponent: CircleCheckIcon.CircleCheckIcon, content: intl.formatToPlainString(intl3.t.Gwu134, obj4) };
+      const obj3 = { text: intl.formatToPlainString(intl3.t.Gwu134, obj4), variant: "success" };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl3.intl;
       obj4 = { username: name };
-      open(obj3);
+      open(unpackModuleId, obj3);
     }
   }, items8);
   const obj10 = { startExpanded: true, header: name(BottomSheetTitleHeader, obj11), children: null };
-  BottomSheet = userId(fingerprint[34]).BottomSheet;
-  obj11 = { title: null, leading: name(userId(fingerprint[29]).ActionSheetCloseButton, { onPress: callback }) };
-  BottomSheetTitleHeader = userId(fingerprint[28]).BottomSheetTitleHeader;
+  BottomSheet = userId(fingerprint[33]).BottomSheet;
+  obj11 = { title: null, leading: name(userId(fingerprint[28]).ActionSheetCloseButton, { onPress: callback }) };
+  BottomSheetTitleHeader = userId(fingerprint[27]).BottomSheetTitleHeader;
   const obj12 = { style: tmp.content, children: null };
   const obj13 = { style: tmp.iconContainer, children: null };
   const tmp14 = channelId;
@@ -452,23 +451,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFrames
     obj13.children = memo1;
     const items9 = [name(isSecureFramesUIEnabled, obj13), , , , ];
     const obj14 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp17 };
-    items9[1] = name(tmp2(fingerprint[30]).Text, obj14);
+    items9[1] = name(tmp2(fingerprint[29]).Text, obj14);
     const obj15 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: tmp18 };
-    items9[2] = name(tmp2(fingerprint[30]).Text, obj15);
+    items9[2] = name(tmp2(fingerprint[29]).Text, obj15);
     const obj16 = { style: tmp.helpMessage, userId, userKey: fingerprintUserKey };
-    items9[3] = name(tmp14(fingerprint[31]), obj16);
+    items9[3] = name(tmp14(fingerprint[30]), obj16);
     const obj17 = { spacing: 12, style: tmp.buttons, children: items10 };
-    const Stack = tmp2(tmp3[33]).Stack;
-    const obj18 = { variant: "primary", onPress: callback1, text: intl.string(tmp2(fingerprint[27]).t["0tvNAn"]), disabled: loading2 };
-    const Button = tmp2(tmp3[32]).Button;
-    intl = tmp2(tmp3[27]).intl;
+    const Stack = tmp2(tmp3[32]).Stack;
+    const obj18 = { variant: "primary", onPress: callback1, text: intl.string(tmp2(fingerprint[26]).t["0tvNAn"]), disabled: loading2 };
+    const Button = tmp2(tmp3[31]).Button;
+    intl = tmp2(tmp3[26]).intl;
     if (!loading2) {
       loading2 = memo !== stateFromStores.MATCH;
     }
     items10 = [name(Button, obj18), ];
-    const obj19 = { variant: "secondary", onPress: callback, text: intl2.string(tmp2(fingerprint[27]).t["ETE/oC"]) };
-    const Button2 = tmp2(tmp3[32]).Button;
-    intl2 = tmp2(tmp3[27]).intl;
+    const obj19 = { variant: "secondary", onPress: callback, text: intl2.string(tmp2(fingerprint[26]).t["ETE/oC"]) };
+    const Button2 = tmp2(tmp3[31]).Button;
+    intl2 = tmp2(tmp3[26]).intl;
     items10[1] = name(Button2, obj19);
     items9[4] = closure_14(Stack, obj17);
     obj12.children = items9;

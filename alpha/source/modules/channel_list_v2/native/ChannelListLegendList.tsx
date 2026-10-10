@@ -1,11 +1,11 @@
-// Module ID: 16604
-// Function ID: 16605
+// Module ID: 16671
+// Function ID: 16672
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 16605, 4811, 6759, 16442, 2]
+// Dependencies: [19, 21, 16672, 4850, 6760, 16512, 2]
 
-// Module 16604 (ChannelListLegendList)
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import FastList from "FastList" /* 6759 */;
+// Module 16671 (ChannelListLegendList)
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import FastList from "FastList" /* 6760 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

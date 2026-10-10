@@ -1,25 +1,25 @@
-// Module ID: 8866
-// Function ID: 8867
+// Module ID: 8885
+// Function ID: 8886
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 8867, 21, 5091, 587, 558, 576, 1126, 5376, 8278, 8868, 4765, 8859, 7002, 8221, 4811, 8871, 5092, 8872, 8877, 8894, 5055, 8896, 6305, 8897, 8895, 8899, 9097, 9098, 6840, 6836, 2]
+// Dependencies: [32, 19, 17, 8886, 21, 5092, 587, 558, 576, 1126, 5379, 8294, 8887, 4806, 8878, 7008, 8237, 4850, 8890, 5093, 8891, 8896, 8913, 5056, 8915, 6306, 8916, 8914, 8918, 9117, 9118, 6843, 6839, 2]
 
-// Module 8866 (GameProfileScreen)
+// Module 8885 (GameProfileScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5055 */;
-import timing from "timing" /* 5092 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8859 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8877 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8896 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
+import timing from "timing" /* 5093 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8878 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8896 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8915 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 8867 */;
+import GameProfileStore from "GameProfileStore" /* 8886 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -160,7 +160,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   const sharedValue = tmpResult11.useSharedValue(0);
   STICKY_HEADER_HEIGHT = obj3.useRef(false);
   if (cResult[1] !== num) {
-    class P {
+    class D {
       constructor() {
         let tmp2 = num > 0;
         const tmp = num;
@@ -178,9 +178,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
     }
     cResult[1] = num;
-    cResult[2] = P;
+    cResult[2] = D;
   } else {
-    class P {
+    class D {
       constructor() {
         let tmp2 = num > 0;
         const tmp = num;
@@ -199,7 +199,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     }
   }
   if (data != null) {
-    class P {
+    class D {
       constructor() {
         let tmp2 = num > 0;
         const tmp = num;
@@ -223,7 +223,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     let tmp43;
     let tmp48;
     let tmp47;
-    class P {
+    class D {
       constructor() {
         let tmp2 = num > 0;
         const tmp = num;
@@ -245,7 +245,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     sharedValue1 = tmpResult12.useSharedValue(0);
     const tmpResult13 = tmp(tmp2[17]);
     const sharedValue2 = tmpResult13.useSharedValue(0);
-    function ee() {
+    function te() {
       let tmp = sharedValue1.get() > 0;
       const obj = sharedValue1;
       if (tmp) {
@@ -255,10 +255,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       return tmp;
     }
     let obj2 = { heroHeaderHeight: sharedValue1, scrollY: sharedValue, STICKY_HEADER_HEIGHT };
-    ee.__closure = obj2;
-    ee.__workletHash = 15395308691297;
-    ee.__initData = sharedValue3;
-    const fn2 = function $(arg0, arg1) {
+    te.__closure = obj2;
+    te.__workletHash = 15395308691297;
+    te.__initData = sharedValue3;
+    function ee(arg0, arg1) {
       if (arg0 !== arg1) {
         num = 0;
         set = sharedValue2.set;
@@ -269,15 +269,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
         }
         const result = set(withTiming(num, { duration: 150 }));
       }
-    };
+    }
     const obj4 = { stickyHeaderVisible: sharedValue2, withTiming: tmp(tmp2[19]).withTiming };
     const useAnimatedReaction = tmp(tmp2[17]).useAnimatedReaction;
     tmp(tmp2[17]);
-    fn2.__closure = obj4;
-    fn2.__workletHash = 3161097061646;
-    fn2.__initData = __initData;
-    const animatedReaction = useAnimatedReaction(ee, fn2);
-    function re() {
+    ee.__closure = obj4;
+    ee.__workletHash = 3161097061646;
+    ee.__initData = __initData;
+    const animatedReaction = useAnimatedReaction(te, ee);
+    function oe() {
       let items;
       let obj3;
       const obj = { transform: items };
@@ -289,24 +289,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     const obj5 = { interpolate: tmp(tmp2[17]).interpolate, stickyHeaderVisible: sharedValue2, STICKY_HEADER_HEIGHT };
     const useAnimatedStyle = tmp(tmp2[17]).useAnimatedStyle;
     tmp(tmp2[17]);
-    re.__closure = obj5;
-    re.__workletHash = 16452163547712;
-    re.__initData = found;
-    const animatedStyle = useAnimatedStyle(re);
+    oe.__closure = obj5;
+    oe.__workletHash = 16452163547712;
+    oe.__initData = found;
+    const animatedStyle = useAnimatedStyle(oe);
     const tmpResult16 = tmp(tmp2[17]);
     sharedValue3 = tmpResult16.useSharedValue(Infinity);
-    [r10130, tmp34] = num(obj3.useState(false), 2);
+    [r10131, tmp34] = num(obj3.useState(false), 2);
     __initData = tmp34;
     num(obj3.useState(false), 2);
-    function ne() {
+    function ae() {
       const value = sharedValue.get();
       return value > sharedValue3.get() - c10;
     }
     const obj6 = { scrollY: sharedValue, storeLinksSectionBottomY: sharedValue3, STICKY_HEADER_HEIGHT };
-    ne.__closure = obj6;
-    ne.__workletHash = 14521195063038;
-    ne.__initData = __initData2;
-    function oe(arg0, arg1) {
+    ae.__closure = obj6;
+    ae.__workletHash = 14521195063038;
+    ae.__initData = __initData2;
+    function ne(arg0, arg1) {
       if (arg0 !== arg1) {
         const obj = ReanimatedRexport;
         obj.runOnJS(__initData)(arg0);
@@ -315,15 +315,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     const obj7 = { runOnJS: tmp(tmp2[17]).runOnJS, setShowGetButton: tmp34 };
     const useAnimatedReaction2 = tmp(tmp2[17]).useAnimatedReaction;
     tmp(tmp2[17]);
-    oe.__closure = obj7;
-    oe.__workletHash = 15045914286853;
-    oe.__initData = __initData3;
-    const animatedReaction2 = useAnimatedReaction2(ne, oe);
+    ne.__closure = obj7;
+    ne.__workletHash = 15045914286853;
+    ne.__initData = __initData3;
+    const animatedReaction2 = useAnimatedReaction2(ae, ne);
     const tmpResult18 = tmp(tmp2[20]);
     const gameProfileStoreWebsites = tmpResult18.useGameProfileStoreWebsites(data);
     if (cResult[6] !== gameProfileStoreWebsites) {
       let tmp40;
-      class P {
+      class D {
         constructor() {
           let tmp2 = num > 0;
           const tmp = num;
@@ -341,7 +341,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
         }
       }
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class P {
+        class D {
           constructor() {
             let tmp2 = num > 0;
             const tmp = num;
@@ -361,7 +361,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
         cResult[8] = tmp41;
         tmp40 = tmp41;
       } else {
-        class P {
+        class D {
           constructor() {
             let tmp2 = num > 0;
             const tmp = num;
@@ -385,7 +385,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       cResult[7] = found;
       tmp39 = found;
     } else {
-      class P {
+      class D {
         constructor() {
           let tmp2 = num > 0;
           const tmp = num;
@@ -407,7 +407,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     __initData2 = obj3.useRef(undefined);
     __initData3 = obj3.useRef(null);
     if (cResult[9] !== name) {
-      class P {
+      class D {
         constructor() {
           let tmp2 = num > 0;
           const tmp = num;
@@ -431,7 +431,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       tmp44 = items;
       tmp43 = tmp45;
     } else {
-      class P {
+      class D {
         constructor() {
           let tmp2 = num > 0;
           const tmp = num;
@@ -452,7 +452,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     }
     const effect = obj3.useEffect(tmp43, tmp44);
     if (cResult[12] !== first2) {
-      class He {
+      class Ie {
         constructor() {
           ref3.current = first2;
         }
@@ -460,11 +460,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       const items1 = [first2];
       cResult[12] = first2;
       cResult[13] = items1;
-      cResult[14] = He;
-      tmp48 = He;
+      cResult[14] = Ie;
+      tmp48 = Ie;
       tmp47 = items1;
     } else {
-      class He {
+      class Ie {
         constructor() {
           ref3.current = first2;
         }
@@ -473,13 +473,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     }
     const effect1 = obj3.useEffect(tmp48, tmp47);
     if (cResult[15] === gameId) {
-      class He {
+      class Ie {
         constructor() {
           ref3.current = first2;
         }
       }
     }
-    class Ie {
+    class Ee {
       constructor(action, similarGameId) {
         let guildId;
         let isVerified;
@@ -499,7 +499,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     cResult[15] = gameId;
     cResult[16] = source;
     cResult[17] = first1;
-    cResult[18] = Ie;
+    cResult[18] = Ee;
   }
   obj8 = { gameId: undefined, scrollY: sharedValue };
   cResult[3] = sharedValue;
@@ -541,6 +541,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   let first3;
   let closure_23;
   let callback3;
+  const initialTab = gameId.initialTab;
   let tmp = sharedValue1();
   let tmp2 = gameId;
   let tmp3 = sourceUserId;
@@ -596,23 +597,21 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
   sharedValue1 = tmp2Result8.useSharedValue(0);
   const tmp2Result9 = tmp2(tmp3[17]);
   sharedValue2 = tmp2Result9.useSharedValue(0);
+  let fn = function j() {
+    let tmp = sharedValue1.get() > 0;
+    const obj = sharedValue1;
+    if (tmp) {
+      const value = sharedValue.get();
+      tmp = value >= obj.get() - c10;
+    }
+    return tmp;
+  };
+  const obj4 = { heroHeaderHeight: sharedValue1, scrollY: sharedValue, STICKY_HEADER_HEIGHT };
+  fn.__closure = obj4;
+  fn.__workletHash = 5065405682310;
+  fn.__initData = __initData4;
   const tmp2Result10 = tmp2(tmp3[17]);
   class W {
-    constructor() {
-      let tmp = sharedValue1.get() > 0;
-      const obj = sharedValue1;
-      if (tmp) {
-        const value = sharedValue.get();
-        tmp = value >= obj.get() - c10;
-      }
-      return tmp;
-    }
-  }
-  const obj4 = { heroHeaderHeight: sharedValue1, scrollY: sharedValue, STICKY_HEADER_HEIGHT };
-  W.__closure = obj4;
-  W.__workletHash = 5065405682310;
-  W.__initData = __initData4;
-  class U {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
         num = 0;
@@ -626,13 +625,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
     }
   }
-  U.__closure = { stickyHeaderVisible: sharedValue2, withTiming: tmp2(tmp3[19]).withTiming };
-  U.__workletHash = 6249404580523;
-  U.__initData = __initData5;
+  W.__closure = { stickyHeaderVisible: sharedValue2, withTiming: tmp2(tmp3[19]).withTiming };
+  W.__workletHash = 6249404580523;
+  W.__initData = __initData5;
   ({ stickyHeaderVisible: sharedValue2, withTiming: tmp2(tmp3[19]).withTiming });
-  const animatedReaction = tmp2Result10.useAnimatedReaction(W, U);
+  const animatedReaction = tmp2Result10.useAnimatedReaction(fn, W);
   const tmp2Result11 = tmp2(tmp3[17]);
-  class Q {
+  class X {
     constructor() {
       let items;
       let obj3;
@@ -643,27 +642,25 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       return obj;
     }
   }
-  Q.__closure = { interpolate: tmp2(tmp3[17]).interpolate, stickyHeaderVisible: sharedValue2, STICKY_HEADER_HEIGHT };
-  Q.__workletHash = 6838413565739;
-  Q.__initData = callback1;
+  X.__closure = { interpolate: tmp2(tmp3[17]).interpolate, stickyHeaderVisible: sharedValue2, STICKY_HEADER_HEIGHT };
+  X.__workletHash = 6838413565739;
+  X.__initData = callback1;
   ({ interpolate: tmp2(tmp3[17]).interpolate, stickyHeaderVisible: sharedValue2, STICKY_HEADER_HEIGHT });
-  const animatedStyle = tmp2Result11.useAnimatedStyle(Q);
+  const animatedStyle = tmp2Result11.useAnimatedStyle(X);
   const tmp2Result12 = tmp2(tmp3[17]);
   sharedValue3 = tmp2Result12.useSharedValue(Infinity);
   const tmp8Result = num(obj2.useState(false), 2);
   first2 = tmp8Result[0];
   closure_15 = tmp29;
+  const fn2 = function $() {
+    const value = sharedValue.get();
+    return value > sharedValue3.get() - c10;
+  };
+  fn2.__closure = { scrollY: sharedValue, storeLinksSectionBottomY: sharedValue3, STICKY_HEADER_HEIGHT };
+  fn2.__workletHash = 14590762926099;
+  fn2.__initData = selectionVersion;
   const tmp2Result13 = tmp2(tmp3[17]);
   class Z {
-    constructor() {
-      const value = sharedValue.get();
-      return value > sharedValue3.get() - c10;
-    }
-  }
-  Z.__closure = { scrollY: sharedValue, storeLinksSectionBottomY: sharedValue3, STICKY_HEADER_HEIGHT };
-  Z.__workletHash = 14590762926099;
-  Z.__initData = selectionVersion;
-  class X {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
         const obj = ReanimatedRexport;
@@ -671,11 +668,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
     }
   }
-  X.__closure = { runOnJS: tmp2(tmp3[17]).runOnJS, setShowGetButton: tmp8Result[1] };
-  X.__workletHash = 5106828361905;
-  X.__initData = first3;
+  Z.__closure = { runOnJS: tmp2(tmp3[17]).runOnJS, setShowGetButton: tmp8Result[1] };
+  Z.__workletHash = 5106828361905;
+  Z.__initData = first3;
   ({ runOnJS: tmp2(tmp3[17]).runOnJS, setShowGetButton: tmp8Result[1] });
-  const animatedReaction1 = tmp2Result13.useAnimatedReaction(Z, X);
+  const animatedReaction1 = tmp2Result13.useAnimatedReaction(fn2, Z);
   const tmp2Result14 = tmp2(tmp3[20]);
   gameProfileStoreWebsites = tmp2Result14.useGameProfileStoreWebsites(data);
   const items1 = [gameProfileStoreWebsites];
@@ -709,9 +706,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
     const obj2 = { gameName: str, gameId, action, similarGameId, viewId, guildId, isVerified, source };
     const result = trackGameProfileAction(obj2);
   }, items4);
-  ({ navigation, selectionVersion } = source(tmp3[22])(callback1));
+  ({ navigation, selectionVersion } = source(tmp3[22])(callback1, initialTab));
   const selectedTab = navigation.selectedTab;
-  source(tmp3[22])(callback1);
+  source(tmp3[22])(callback1, initialTab);
   const tmp8Result2 = num(obj2.useState(0), 2);
   first3 = tmp8Result2[0];
   closure_23 = tmp8Result2[1];

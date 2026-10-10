@@ -139,7 +139,7 @@ export const timeToDisplayIntegration = () => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else {
                   try {
@@ -222,7 +222,7 @@ export const timeToDisplayIntegration = () => {
                           debug.log("[" + c3 + "] Route has been seen and time to initial display is disabled for preloaded routes.");
                         }
                         c3 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       }
                       if (null != tmp) {
                         tmp25 = tmp;
@@ -298,7 +298,7 @@ export const timeToDisplayIntegration = () => {
                 let obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -446,7 +446,7 @@ export const timeToDisplayIntegration = () => {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -545,7 +545,7 @@ export const timeToDisplayIntegration = () => {
                     }
                   }
                   c3 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } catch (tmp81) {
                 c3 = 3;

@@ -1,15 +1,15 @@
-// Module ID: 15905
-// Function ID: 15906
+// Module ID: 15967
+// Function ID: 15968
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1085, 2061, 21, 558, 576, 6163, 15906, 15907, 15904, 6629, 7087, 1126, 1382, 5376, 10290, 5965, 2]
+// Dependencies: [19, 1085, 2062, 21, 558, 576, 6156, 15968, 15969, 15966, 6630, 7093, 1126, 1382, 5379, 10323, 5958, 2]
 
-// Module 15905 (PasskeyUpsellPromoSheet)
+// Module 15967 (PasskeyUpsellPromoSheet)
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6629 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 15904 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 15907 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6630 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 15966 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 15969 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -42,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
   let obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { source: tmp(15906), style: { height: 190, width: 220, resizeMode: "contain" } };
+    let obj2 = { source: tmp(15968), style: { height: 190, width: 220, resizeMode: "contain" } };
     const tmp7 = FastImageDefault;
     const tmp8 = closure_6(tmp7, obj2);
     cResult[0] = tmp8;
@@ -132,7 +132,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { size: "lg", onPress: tmp9, text: intl3.string(tmp(1126).t.NIFmCJ) };
-    const Button = tmp(5376).Button;
+    const Button = tmp(5379).Button;
     intl3 = tmp(1126).intl;
     const tmp19 = closure_6(Button, obj3);
     cResult[6] = tmp19;
@@ -142,12 +142,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     let obj4 = { illustration: first, title: tmp11, description: tmp12, onDismiss: tmp13, actions: closure_7(ButtonGroup, obj5) };
-    const PromoSheet = tmp(10290).PromoSheet;
+    const PromoSheet = tmp(10323).PromoSheet;
     obj5 = { children: items };
     items = [tmp17, ];
-    ButtonGroup = tmp(5965).ButtonGroup;
+    ButtonGroup = tmp(5958).ButtonGroup;
     const obj6 = { size: "lg", variant: "secondary", onPress: tmp10, text: intl4.string(tmp(1126).t["7J6/nG"]) };
-    const Button2 = tmp(5376).Button;
+    const Button2 = tmp(5379).Button;
     intl4 = tmp(1126).intl;
     items[1] = closure_6(Button2, obj6);
     const tmp23 = closure_6(PromoSheet, obj4);
@@ -194,7 +194,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
     stringResult = string(t.d6uxJy);
   }
   obj4 = { children: items };
-  ButtonGroup = tmp4(5965).ButtonGroup;
+  ButtonGroup = tmp4(5958).ButtonGroup;
   const obj5 = {
     size: "lg",
     onPress: function registerPasskey() {
@@ -231,7 +231,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
     },
     text: intl3.string(require("intl").t.NIFmCJ)
   };
-  const Button = tmp4(5376).Button;
+  const Button = tmp4(5379).Button;
   intl3 = tmp4(1126).intl;
   items = [tmp(Button, obj5), ];
   const obj6 = {
@@ -245,7 +245,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Passwordless
     },
     text: intl4.string(require("intl").t["7J6/nG"])
   };
-  const Button2 = tmp4(5376).Button;
+  const Button2 = tmp4(5379).Button;
   intl4 = tmp4(1126).intl;
   items[1] = tmp(Button2, obj6);
   return tmp(PromoSheet, obj2);

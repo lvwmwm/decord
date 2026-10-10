@@ -1,33 +1,33 @@
-// Module ID: 17208
-// Function ID: 17209
+// Module ID: 17289
+// Function ID: 17290
 // Name: ConjureDebugLabels
-// Dependencies: [1126, 3827, 17207, 2]
-// Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, forceCompactionStatus, isRenderableLog
+// Dependencies: [1126, 3849, 17288, 2]
+// Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, forceCompactionStatus, isRenderableLog, sandboxRestartStatus
 
-// Module 17208 (ConjureDebugLabels)
+// Module 17289 (ConjureDebugLabels)
 import intl6 from "intl" /* 1126 */;
-import _modDef3827 from "module_3827" /* 3827 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 17207 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 17288 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = {
   db() {
-    return _modDef3827["7l+DFG"];
+    return _modDef3849["7l+DFG"];
   },
   db_preview() {
-    return _modDef3827.FAuffi;
+    return _modDef3849.FAuffi;
   },
   runtime() {
-    return _modDef3827["Gkl+ab"];
+    return _modDef3849["Gkl+ab"];
   },
   runtime_preview() {
-    return _modDef3827.ynpJzv;
+    return _modDef3849.ynpJzv;
   },
   bot() {
-    return _modDef3827["5/i0cj"];
+    return _modDef3849["5/i0cj"];
   },
   bot_preview() {
-    return _modDef3827.m2jsnw;
+    return _modDef3849.m2jsnw;
   }
 };
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugLabels.tsx");
@@ -37,16 +37,16 @@ export const debugEnvLabel = function debugEnvLabel(env) {
   const intl = intl6.intl;
   const string = intl.string;
   if ("preview" === env) {
-    eiAi57 = _modDef3827["2yLYlG"];
+    eiAi57 = _modDef3849["2yLYlG"];
   } else {
-    eiAi57 = _modDef3827.eiAi57;
+    eiAi57 = _modDef3849.eiAi57;
   }
   return string(eiAi57);
 };
 export const debugYesNo = function debugYesNo(connected) {
   const intl = intl6.intl;
   const string = intl.string;
-  const tmp = _modDef3827;
+  const tmp = _modDef3849;
   return string(connected ? tmp.Wv025I : tmp["7/lsFY"]);
 };
 export const DEBUG_LOG_FILTERS = ["all", "preview", "stable", "web"];
@@ -56,19 +56,19 @@ export const debugLogFilterLabel = function debugLogFilterLabel(id) {
     if ("stable" !== id) {
       if ("web" === id) {
         const intl2 = intl6.intl;
-        return intl2.string(_modDef3827.IVzfVV);
+        return intl2.string(_modDef3849.IVzfVV);
       } else {
         const intl = intl6.intl;
-        return intl.string(_modDef3827["Um1/8L"]);
+        return intl.string(_modDef3849["Um1/8L"]);
       }
     }
   }
   const intl3 = intl6.intl;
   const string = intl3.string;
   if ("preview" === id) {
-    eiAi57 = _modDef3827["2yLYlG"];
+    eiAi57 = _modDef3849["2yLYlG"];
   } else {
-    eiAi57 = _modDef3827.eiAi57;
+    eiAi57 = _modDef3849.eiAi57;
   }
   return string(eiAi57);
 };
@@ -86,25 +86,25 @@ export const isRenderableLog = function isRenderableLog(log) {
 export const forceCompactionStatus = function forceCompactionStatus(stateFromStores3) {
   if ("idle" === stateFromStores3) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3827.wox6Ev);
+    return intl4.string(_modDef3849.wox6Ev);
   } else if ("pending" === stateFromStores3) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3827.OcPHQ1);
+    return intl3.string(_modDef3849.OcPHQ1);
   } else {
     const obj3 = ConjureDebugFormat;
     const formatObservedAtResult = obj3.formatObservedAt(stateFromStores3.observedAt);
     if ("compacted" === stateFromStores3.outcome) {
       const intl2 = tmp12(1126).intl;
       const obj2 = { time: formatObservedAtResult };
-      return intl2.formatToPlainString(_modDef3827.BhRjZZ, obj2);
+      return intl2.formatToPlainString(_modDef3849.BhRjZZ, obj2);
     } else {
       let ZoUSVK;
       if ("declined" === stateFromStores3.outcome) {
-        ZoUSVK = _modDef3827["o/FKzF"];
+        ZoUSVK = _modDef3849["o/FKzF"];
       } else if ("busy" === stateFromStores3.outcome) {
-        ZoUSVK = _modDef3827.YZb4hK;
+        ZoUSVK = _modDef3849.YZb4hK;
       } else {
-        ZoUSVK = _modDef3827.ZoUSVK;
+        ZoUSVK = _modDef3849.ZoUSVK;
       }
       const intl = tmp12(1126).intl;
       let str2 = stateFromStores3.reason;
@@ -121,22 +121,22 @@ export const analyticsUnavailableReason = function analyticsUnavailableReason(an
   const reason = analytics.reason;
   if ("local" === reason) {
     const intl5 = intl6.intl;
-    return intl5.string(_modDef3827.mUeKML);
+    return intl5.string(_modDef3849.mUeKML);
   } else if ("unconfigured" === reason) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3827.bGefb5);
+    return intl4.string(_modDef3849.bGefb5);
   } else if ("unauthorized" === reason) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3827.KLx6Bb);
+    return intl3.string(_modDef3849.KLx6Bb);
   } else {
     let formatToPlainStringResult;
     if (null != analytics.detail) {
       const intl2 = intl6.intl;
       const obj = { detail: analytics.detail };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3827.t09Q6q, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3849.t09Q6q, obj);
     } else {
       const intl = intl6.intl;
-      formatToPlainStringResult = intl.string(_modDef3827["t+tG59"]);
+      formatToPlainStringResult = intl.string(_modDef3849["t+tG59"]);
     }
     return formatToPlainStringResult;
   }
@@ -148,7 +148,7 @@ export const analyticsMemoryValue = function analyticsMemoryValue(found) {
   if (null != found.memory_p50_bytes) {
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const prop = _modDef3827["XO/bN4"];
+    const prop = _modDef3849["XO/bN4"];
     let num = found.memory_p50_bytes;
     const formatBytes = ConjureDebugFormat.formatBytes;
     ConjureDebugFormat;
@@ -157,7 +157,7 @@ export const analyticsMemoryValue = function analyticsMemoryValue(found) {
     }
     const obj = { p50: formatBytes(num), p999: formatBytes2(num2) };
     num2 = found.memory_p999_bytes;
-    formatBytes2 = tmp2(17207).formatBytes;
+    formatBytes2 = tmp2(17288).formatBytes;
     ConjureDebugFormat;
     if (num2 == null) {
       num2 = found.memory_p50_bytes;
@@ -182,4 +182,30 @@ export const analyticsRoleLabel = function analyticsRoleLabel(role) {
     stringResult = intl.string(tmp());
   }
   return stringResult;
+};
+export const sandboxRestartStatus = function sandboxRestartStatus(stateFromStores4) {
+  if ("idle" === stateFromStores4) {
+    const intl2 = intl6.intl;
+    return intl2.string(_modDef3849.mlok8D);
+  } else if ("pending" === stateFromStores4) {
+    const intl = intl6.intl;
+    return intl.string(_modDef3849["1ugSyK"]);
+  } else {
+    let FiVRoT;
+    const obj2 = ConjureDebugFormat;
+    const formatObservedAtResult = obj2.formatObservedAt(stateFromStores4.observedAt);
+    const intl3 = intl6.intl;
+    const formatToPlainString = intl3.formatToPlainString;
+    if ("restarted" === stateFromStores4.outcome) {
+      FiVRoT = _modDef3849["76mfqO"];
+    } else {
+      FiVRoT = _modDef3849.FiVRoT;
+    }
+    let str = stateFromStores4.reason;
+    if (str == null) {
+      str = "";
+    }
+    const obj = { reason: str, time: formatObservedAtResult };
+    return formatToPlainString(FiVRoT, obj);
+  }
 };

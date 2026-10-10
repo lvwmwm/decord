@@ -1,10 +1,10 @@
-// Module ID: 6940
-// Function ID: 6941
+// Module ID: 6946
+// Function ID: 6947
 // Name: ConjureTypes
 // Dependencies: [2]
 // Exports: cacheHitRate, conjureAttachmentLimit, formatConjureAttachmentLimit, isConjureAttachmentWithinLimit, isPreviewlessProject, isProjectPublic, isProjectShared, projectSupportsCollaboratorRoles, projectSupportsVisibility, projectUsesAppChannels, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty
 
-// Module 6940 (ConjureTypes)
+// Module 6946 (ConjureTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ APP_CHANNEL: 1, VOICE_CHANNEL: 2, PROFILE_WIDGET: 3, AUTOMOD: 4, BOT: 5, APPLICATION_COMMANDS: 6, OVERLAY: 7, ACTIVITY: 8 });

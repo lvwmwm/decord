@@ -1,7 +1,9 @@
 // Module ID: 8427
 // Function ID: 8428
-// Dependencies: []
+// Dependencies: [8428]
 
 // Module 8427
+import _modDef8428 from "module_8428" /* 8428 */;
 
-export default { DeprecatedAccessibilityRoles: ["none", "button", "togglebutton", "link", "search", "image", "keyboardkey", "text", "adjustable", "imagebutton", "header", "summary", "alert", "checkbox", "combobox", "menu", "menubar", "menuitem", "progressbar", "radio", "radiogroup", "scrollbar", "spinbutton", "switch", "tab", "tablist", "timer", "toolbar"] };
+
+export default _modDef8428({ contain: null, cover: null, stretch: null });

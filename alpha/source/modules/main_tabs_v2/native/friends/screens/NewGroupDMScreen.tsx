@@ -1,30 +1,30 @@
-// Module ID: 17391
-// Function ID: 17392
+// Module ID: 17463
+// Function ID: 17464
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2064, 13967, 5109, 1390, 10187, 1085, 21, 5091, 587, 7008, 7481, 7010, 11297, 5055, 504, 10715, 10717, 10714, 1265, 4768, 1126, 17390, 9270, 10718, 4767, 9280, 8708, 8480, 8678, 1200, 10188, 17331, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 14021, 5110, 1390, 10216, 1085, 21, 5092, 587, 7014, 7481, 7016, 11338, 5056, 504, 10750, 10752, 10749, 1265, 4809, 1126, 17462, 9297, 10753, 4808, 9307, 8723, 8496, 8693, 1200, 10217, 17403, 2]
 // Exports: default
 
-// Module 17391 (NewGroupDMScreen)
+// Module 17463 (NewGroupDMScreen)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7008 */;
-import HeaderShared from "HeaderShared" /* 9270 */;
-import UserRowConstants from "UserRowConstants" /* 10187 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 10718 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17390 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
+import HeaderShared from "HeaderShared" /* 9297 */;
+import UserRowConstants from "UserRowConstants" /* 10216 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 10753 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17462 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 13967 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14021 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ let obj = function _handleOneRecipientInDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ obj = function _handleInviteUsers() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -212,7 +212,7 @@ obj = function _handleInviteUsers() {
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+51" };
                           }
                         } else {
                           try {
@@ -271,7 +271,7 @@ obj = function _handleInviteUsers() {
                                 obj.call(closure_3, false, true);
                                 length(c2[16])(closure_3);
                                 c2 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "+51" };
                               }
                               closure_3 = value;
                               length = 3;
@@ -497,7 +497,7 @@ export default function NewGroupDMScreen(navigation) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -540,11 +540,11 @@ export default function NewGroupDMScreen(navigation) {
         } else {
           if (2 === c4) {
             c3 = 1;
-            const obj6 = { key: "GROUP_DM_ADD_ERROR", content: intl.string(parent(locationPage[24]).t["N/9OFy"]) };
+            const obj6 = { text: intl.string(parent(locationPage[24]).t["N/9OFy"]) };
             const open = tmp(locationPage[23]).open;
             const tmp27 = tmp(locationPage[23]);
             intl = parent(locationPage[24]).intl;
-            open(obj6);
+            open("GROUP_DM_ADD_ERROR", obj6);
           } else {
             if (3 === c4) {
               if (arg0 === 1) {
@@ -582,7 +582,7 @@ export default function NewGroupDMScreen(navigation) {
           c3 = 0;
           closure_129_11(false);
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp48) {
         locationPage = tmp48;
@@ -817,7 +817,7 @@ export default function NewGroupDMScreen(navigation) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -864,7 +864,7 @@ export default function NewGroupDMScreen(navigation) {
             closure_1_25(false);
           }
           channel = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp14) {
           channel = 3;
           throw tmp14;

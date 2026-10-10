@@ -1,7 +1,7 @@
 // Module ID: 2052
 // Function ID: 2053
 // Name: DismissibleContentFrameworkStore
-// Dependencies: [1085, 3, 2053, 2055, 1265, 504, 584, 2]
+// Dependencies: [1085, 3, 2053, 2056, 1265, 504, 584, 2]
 
 // Module 2052 (DismissibleContentFrameworkStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -10,7 +10,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2053 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2055 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2056 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -57,20 +57,20 @@ class DismissibleContentFrameworkStore extends PersistedStore {
   getState() {
     return obj;
   }
-  getRenderedAtTimestamp(arg0) {
+  getRenderedAtTimestamp(content) {
     const renderedAtTimestamps = obj.renderedAtTimestamps;
-    return renderedAtTimestamps.get(arg0);
+    return renderedAtTimestamps.get(content);
   }
   hasUserHitDCCap(PASSWORDLESS_UPSELL, guildId) {
     if (null != PASSWORDLESS_UPSELL) {
-      const CONTENT_TYPES_WITH_BYPASS_FATIGUE = DismissibleContentFatigueConfig.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+      obj = DismissibleContentFatigueConfig;
       return false;
     }
     if (null != PASSWORDLESS_UPSELL) {
       let result = null != guildId;
       if (result) {
-        obj = DismissibleContentTypes;
-        result = obj.isGuildDismissibleContent(PASSWORDLESS_UPSELL);
+        const obj2 = DismissibleContentTypes;
+        result = obj2.isGuildDismissibleContent(PASSWORDLESS_UPSELL);
       }
       if (result) {
         if (null != guildId) {
@@ -100,8 +100,8 @@ class DismissibleContentFrameworkStore extends PersistedStore {
     const tmp17 = tmp16 && !c5;
     if (tmp17) {
       c5 = true;
-      const obj2 = { shown_dcs: obj.numberOfDCsShownToday };
-      logger.info("Daily cap in effect, suppressing fatigable content until tomorrow", obj2);
+      const obj3 = { shown_dcs: obj.numberOfDCsShownToday };
+      logger.info("Daily cap in effect, suppressing fatigable content until tomorrow", obj3);
     }
     return obj.numberOfDCsShownToday >= 3;
   }
@@ -157,8 +157,8 @@ let obj2 = {
     const renderedAtTimestamps = obj.renderedAtTimestamps;
     const date = new Date();
     const result = renderedAtTimestamps.set(dismissibleContent, date.getTime());
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = DismissibleContentFatigueConfig.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
-    if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(dismissibleContent)) {
+    const obj2 = DismissibleContentFatigueConfig;
+    if (!obj2.bypassesFatigue(dismissibleContent)) {
       if (!obj.dailyCapOverridden) {
         const tmp2Result = DismissibleContentTypes;
         const result1 = tmp2Result.isGuildDismissibleContent(dismissibleContent) && null != guildId;
@@ -194,9 +194,9 @@ let obj2 = {
               logger.info("Daily cap reached", obj);
             }
             if (obj.numberOfDCsShownToday > 3) {
-              const obj2 = { cap_type: "daily_cap", dismissible_content: dismissibleContent, shown_dcs: obj.numberOfDCsShownToday };
-              const obj7 = AnalyticsUtilsDefault;
-              obj7.track(AnalyticEvents.DCF_CAP_EXCEEDED, obj2);
+              const obj3 = { cap_type: "daily_cap", dismissible_content: dismissibleContent, shown_dcs: obj.numberOfDCsShownToday };
+              const obj8 = AnalyticsUtilsDefault;
+              obj8.track(AnalyticEvents.DCF_CAP_EXCEEDED, obj3);
             }
           } else {
             const seenForGuildId = obj.seenForGuildId;

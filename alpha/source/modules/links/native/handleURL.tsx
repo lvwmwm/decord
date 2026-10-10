@@ -1,15 +1,15 @@
-// Module ID: 4760
-// Function ID: 4761
+// Module ID: 4801
+// Function ID: 4802
 // Name: handleURL
-// Dependencies: [5, 17, 4761, 1085, 3, 4762, 4764, 4765, 4766, 1949, 4767, 1126, 5052, 1382, 5055, 1386, 5068, 13994, 2]
+// Dependencies: [5, 17, 4802, 1085, 3, 4803, 4805, 4806, 4807, 1949, 4808, 1126, 5053, 1382, 5056, 1386, 5069, 14049, 2]
 // Exports: default
 
-// Module 4760 (handleURL)
+// Module 4801 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4761 */;
+import ActionSheetStore from "ActionSheetStore" /* 4802 */;
 import size from "module_2" /* 2 */;
 
 function sanitizeURLPart(str) {
@@ -205,7 +205,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp45;
         c6 = 0;
         c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;

@@ -1,15 +1,15 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 16909
+// Function ID: 16910
 // Name: GuildDiscoveryCategoryActionCreators
-// Dependencies: [5, 2128, 16840, 1085, 1295, 584, 2]
+// Dependencies: [5, 2129, 16910, 1085, 1295, 584, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 16839 (GuildDiscoveryCategoryActionCreators)
+// Module 16909 (GuildDiscoveryCategoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 16840 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 16910 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ let obj = function _maybeFetchGuildDiscoveryCategories() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -75,7 +75,7 @@ let obj = function _maybeFetchGuildDiscoveryCategories() {
           obj.dispatch(obj8);
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp16) {
         c3 = 3;
         throw tmp16;
@@ -125,7 +125,7 @@ obj = function _fetchSlugForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -172,7 +172,7 @@ obj = function _fetchSlugForGuild() {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp21) {
           if (0 === c3) {
@@ -215,7 +215,7 @@ obj = function _saveGuildMetadata() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -300,7 +300,7 @@ obj = function _saveGuildMetadata() {
             obj8.dispatch(obj10);
             partner_actioned_timestamp = 0;
             is_published = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp15) {
           closure_3 = tmp15;

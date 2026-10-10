@@ -1,28 +1,28 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 17036
+// Function ID: 17037
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4707, 2086, 4719, 1390, 5084, 21, 5091, 587, 6663, 504, 6939, 9232, 16969, 5055, 12135, 1126, 3827, 7363, 7172, 6892, 6835, 5087, 6770, 5418, 5376, 2]
+// Dependencies: [5, 32, 19, 17, 4748, 2087, 4760, 1390, 5085, 21, 5092, 587, 6664, 504, 6945, 9259, 17037, 5056, 12179, 1126, 3849, 7369, 7178, 6898, 6838, 5088, 6773, 5421, 5379, 2]
 // Exports: default
 
-// Module 16968 (ConjurePublishNotesSheet)
+// Module 17036 (ConjurePublishNotesSheet)
 import nativeDefault from "native" /* 587 */;
 import intl14 from "intl" /* 1126 */;
-import _modDef3827 from "module_3827" /* 3827 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4707 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5055 */;
-import MessageConstants from "MessageConstants" /* 5084 */;
-import ConjureUtils from "ConjureUtils" /* 6939 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12135 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 16969 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import ConjureUtils from "ConjureUtils" /* 6945 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12179 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 17037 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
@@ -257,7 +257,7 @@ export default function ConjurePublishNotesSheet(guildId) {
     let tmp2;
     const tmp = ActionSheetActionCreators;
     const showActionSheet = tmp.showActionSheet;
-    const obj = { content: authStore3(tmp2, obj2), key: "ConjurePatchNotesChannelSheet", stackingBehavior: "stack" };
+    const obj = { content: syncedClientThemes(tmp2, obj2), key: "ConjurePatchNotesChannelSheet", stackingBehavior: "stack" };
     obj2 = {
       header: obj3,
       guild: GuildStore.getGuild(guildId),
@@ -268,7 +268,7 @@ export default function ConjurePublishNotesSheet(guildId) {
         closure_1_10(id.id);
       }
     };
-    obj3 = { title: intl.string(_modDef3827.Gd63Fl) };
+    obj3 = { title: intl.string(_modDef3849.Gd63Fl) };
     tmp2 = ChannelPickerActionSheetDefault;
     intl = intl14.intl;
     showActionSheet(obj);
@@ -292,7 +292,7 @@ export default function ConjurePublishNotesSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -363,7 +363,7 @@ export default function ConjurePublishNotesSheet(guildId) {
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp38) {
         if (0 === publish) {
           c4 = 3;

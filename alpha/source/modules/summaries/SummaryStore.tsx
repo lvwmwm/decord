@@ -1,26 +1,26 @@
-// Module ID: 9585
-// Function ID: 9586
+// Module ID: 9614
+// Function ID: 9615
 // Name: SummaryStore
-// Dependencies: [32, 4977, 8683, 2064, 2086, 6042, 2115, 5973, 1390, 9586, 8684, 504, 11, 1102, 9587, 584, 9588, 12, 2]
+// Dependencies: [32, 5016, 8698, 2065, 2087, 6035, 2116, 5966, 1390, 9615, 8699, 504, 11, 1102, 9616, 584, 9617, 12, 2]
 
-// Module 9585 (SummaryStore)
+// Module 9614 (SummaryStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import _mod8684 from "module_8684" /* 8684 */;
-import SummaryConstants from "SummaryConstants" /* 9586 */;
-import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 9587 */;
-import Summary from "Summary" /* 9588 */;
+import _mod8699 from "module_8699" /* 8699 */;
+import SummaryConstants from "SummaryConstants" /* 9615 */;
+import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 9616 */;
+import Summary from "Summary" /* 9617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4977 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 8683 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import ReadStateStore from "ReadStateStore" /* 6042 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 8698 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -30,14 +30,14 @@ let closure_18, dependencyMap, findIndexResult, flag, startId;
 function handleQuickSwitcherUpdate() {
   const results = QuickSwitcherStore.getProps().results;
   const found = results.filter((type) => {
-    const tmp = type.type === _mod8684.AutocompleterResultTypes.TEXT_CHANNEL && 0 === type.record.type;
+    const tmp = type.type === _mod8699.AutocompleterResultTypes.TEXT_CHANNEL && 0 === type.record.type;
     return tmp;
   });
   closure_24 = found.map((record) => record.record.id);
 }
 const SUMMARY_POLL_INTERVAL = SummaryConstants.SUMMARY_POLL_INTERVAL;
 let obj = { FETCHING: "fetching", OK: "ok", ERROR: "error" };
-const authStore6 = {};
+const authStore5 = {};
 let closure_19 = {};
 let closure_20 = {};
 let items = [];

@@ -1,16 +1,16 @@
-// Module ID: 14942
-// Function ID: 14943
+// Module ID: 15001
+// Function ID: 15002
 // Name: SafetyHubAccountStandingSubwayMarker
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5087, 1126, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 2]
 
-// Module 14942 (SafetyHubAccountStandingSubwayMarker)
+// Module 15001 (SafetyHubAccountStandingSubwayMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5087 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

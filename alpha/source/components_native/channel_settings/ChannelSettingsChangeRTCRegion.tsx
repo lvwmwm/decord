@@ -1,23 +1,23 @@
-// Module ID: 17488
-// Function ID: 17489
+// Module ID: 17560
+// Function ID: 17561
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [729, 19, 2064, 17438, 21, 5091, 587, 4788, 1126, 9667, 6266, 6267, 8563, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 2065, 17510, 21, 5092, 587, 4827, 1126, 9696, 6261, 6262, 8579, 558, 576, 504, 38, 2]
 
-// Module 17488 (ChannelSettingsChangeRTCRegion)
+// Module 17560 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 4788 */;
-import TableRadioRow from "TableRadioRow" /* 6266 */;
-import TableRadioGroup from "TableRadioGroup" /* 6267 */;
-import Form2 from "Form" /* 8563 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9667 */;
+import native from "native" /* 4827 */;
+import TableRadioRow from "TableRadioRow" /* 6261 */;
+import TableRadioGroup from "TableRadioGroup" /* 6262 */;
+import Form2 from "Form" /* 8579 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9696 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import RegionStore from "RegionStore" /* 17438 */;
-import createStyles from "createStyles" /* 5091 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RegionStore from "RegionStore" /* 17510 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(9667);
+    let obj = self(9696);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;

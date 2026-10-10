@@ -1,15 +1,15 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 13024
+// Function ID: 13025
 // Name: resolveInvite
-// Dependencies: [502, 2086, 7423, 1085, 7422, 5073, 1265, 5945, 1273, 2076, 2]
+// Dependencies: [502, 2087, 7423, 1085, 7422, 5074, 1265, 5938, 1273, 2077, 2]
 // Exports: default
 
-// Module 12977 (resolveInvite)
+// Module 13024 (resolveInvite)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import TypeUtils from "TypeUtils" /* 2076 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
+import TypeUtils from "TypeUtils" /* 2077 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants_mod from "Constants" /* 7423 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -74,7 +74,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
     }
     const request = { url: closure_7.INVITE(baseCode), query: obj4, oldFormErrors: true, trackedActionData: obj5, rejectWithError: false };
     const tmp12 = closure_7;
-    const get = tmp4(5945).get;
+    const get = tmp4(5938).get;
     TrackedHTTPUtilsDefault;
     obj5 = {
       event: tmp(1273).NetworkActionNames.INVITE_RESOLVE,

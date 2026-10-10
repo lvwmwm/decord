@@ -1,16 +1,16 @@
-// Module ID: 10322
-// Function ID: 10323
+// Module ID: 10355
+// Function ID: 10356
 // Name: useIsPrivateAudioOnlyCall
-// Dependencies: [32, 2063, 6043, 5894, 2012, 5112, 5114, 558, 576, 504, 2]
+// Dependencies: [32, 2064, 6036, 5897, 2012, 5113, 5115, 558, 576, 504, 2]
 
-// Module 10322 (useIsPrivateAudioOnlyCall)
-import CallConstants from "CallConstants" /* 5114 */;
+// Module 10355 (useIsPrivateAudioOnlyCall)
+import CallConstants from "CallConstants" /* 5115 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

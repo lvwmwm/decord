@@ -1,9 +1,9 @@
-// Module ID: 8282
-// Function ID: 8283
+// Module ID: 8298
+// Function ID: 8299
 // Name: ShopStandalonePdpMobileExperiment
 // Dependencies: [1453, 558, 576, 2]
 
-// Module 8282 (ShopStandalonePdpMobileExperiment)
+// Module 8298 (ShopStandalonePdpMobileExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

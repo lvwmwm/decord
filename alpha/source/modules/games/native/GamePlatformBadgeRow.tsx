@@ -1,24 +1,24 @@
-// Module ID: 12052
-// Function ID: 12053
+// Module ID: 12096
+// Function ID: 12097
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 12053, 9076, 6640, 9184, 5091, 558, 576, 12054, 5374, 587, 2]
+// Dependencies: [19, 21, 12097, 9096, 6641, 9211, 5092, 558, 576, 12098, 5377, 587, 2]
 
-// Module 12052 (GamePlatformBadgeRow)
+// Module 12096 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 6640 */;
-import ScreenIcon from "ScreenIcon" /* 9076 */;
-import GameControllerIcon from "GameControllerIcon" /* 9184 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 12053 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 6641 */;
+import ScreenIcon from "ScreenIcon" /* 9096 */;
+import GameControllerIcon from "GameControllerIcon" /* 9211 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 12097 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Stack_Stack = tmp(5374);
-const GamePlatformBadges = tmp(12054);
+const Stack_Stack = tmp(5377);
+const GamePlatformBadges = tmp(12098);
 const jsx = Fragment.jsx;
 let obj = {};
 obj[GamePlatformAvailability.GamePlatformAvailability.DESKTOP] = ScreenIcon.ScreenIcon;
@@ -83,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj = GamePlatformBadges;
     return obj.sortGamePlatformAvailability(platforms);
   }, items);
-  const Stack = platforms(5374).Stack;
+  const Stack = platforms(5377).Stack;
   return <Stack direction="horizontal" align="center" spacing={nativeDefault.space.PX_4} style={tmp.row}>{memo.map((item) => {
     const obj2 = platforms(dependencyMap[9]);
     return <tmp key={arg0} size="xs" color="icon-subtle" accessibilityLabel={obj2.getGamePlatformAvailabilityLabel(arg0)} />;

@@ -1,21 +1,21 @@
-// Module ID: 18163
-// Function ID: 18164
+// Module ID: 18237
+// Function ID: 18238
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1085, 21, 5091, 587, 4788, 7750, 6191, 1126, 6163, 18164, 18165, 1200, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5092, 587, 4827, 7768, 6184, 1126, 6156, 18238, 18239, 1200, 2]
 
-// Module 18163 (AssetChooser)
+// Module 18237 (AssetChooser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 4788 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import Pressables from "Pressables" /* 6191 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18165 */;
+import native from "native" /* 4827 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import Pressables from "Pressables" /* 6184 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18239 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -59,7 +59,7 @@ class AssetChooser extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -161,7 +161,7 @@ class AssetChooser extends PureComponent {
     const tmp10 = FastImageDefault;
     const tmp4 = React4;
     if (null == source) {
-      tmp9Result = tmp9(18164);
+      tmp9Result = tmp9(18238);
     }
     items = [, ];
     const obj3 = { source: tmp9Result, style: tmp.assetImage };

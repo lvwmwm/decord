@@ -1,19 +1,19 @@
-// Module ID: 9533
-// Function ID: 9534
+// Module ID: 9562
+// Function ID: 9563
 // Name: EmojiPickerCategoriesItem
-// Dependencies: [32, 19, 17, 5998, 1085, 21, 5091, 587, 558, 576, 4811, 5092, 5095, 6165, 9534, 8206, 6191, 2]
+// Dependencies: [32, 19, 17, 5991, 1085, 21, 5092, 587, 558, 576, 4850, 5093, 5096, 6158, 9563, 8222, 6184, 2]
 
-// Module 9533 (EmojiPickerCategoriesItem)
+// Module 9562 (EmojiPickerCategoriesItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import timing from "timing" /* 5092 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5998 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 5991 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let size;
 let size1;
 let size2;
 let tmp;
-const timingPresets = tmp(5095);
+const timingPresets = tmp(5096);
 let View = react_native.View;
 let EmojiCategoryTypes = EmojiPickerConstants.EmojiCategoryTypes;
 ({ CATEGORY_ICON_RIPPLE_CONFIG: metroImportDefault, CATEGORY_ICON_SIZE, NODE_SIZE } = Constants);

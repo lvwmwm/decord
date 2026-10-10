@@ -1,22 +1,22 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 5305
+// Function ID: 5306
 // Name: AlertModal
-// Dependencies: [5, 109, 32, 729, 19, 17, 1096, 21, 5091, 587, 4788, 558, 576, 5300, 4811, 1894, 5305, 5357, 1272, 1126, 5362, 4795, 1631, 5370, 1497, 5371, 5087, 5374, 5375, 5376, 2]
+// Dependencies: [5, 109, 32, 729, 19, 17, 1096, 21, 5092, 587, 4827, 558, 576, 5301, 4850, 1894, 5306, 5358, 1272, 1126, 5363, 4834, 1631, 5371, 1497, 5372, 5088, 5377, 5378, 5379, 2]
 // Exports: showConfirmModal
 
-// Module 5304 (AlertModal)
+// Module 5305 (AlertModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl2 from "intl" /* 1126 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import native from "native" /* 4788 */;
-import useAlertStore2 from "useAlertStore" /* 5300 */;
-import OverlayViewDefault from "OverlayView" /* 5305 */;
-import Dialog2 from "Dialog" /* 5357 */;
-import react_native from "react-native" /* 5370 */;
-import spring from "spring" /* 5375 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
+import native from "native" /* 4827 */;
+import useAlertStore2 from "useAlertStore" /* 5301 */;
+import OverlayViewDefault from "OverlayView" /* 5306 */;
+import Dialog2 from "Dialog" /* 5358 */;
+import react_native from "react-native" /* 5371 */;
+import spring from "spring" /* 5378 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -24,7 +24,7 @@ import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let map1;
 let size;
 let tmp;
 let unpackModuleId;
-const ReanimatedRexport = tmp(4811);
-const Stack_Stack = tmp(5374);
+const ReanimatedRexport = tmp(4850);
+const Stack_Stack = tmp(5377);
 function getAlertModalItemKey(key) {
   return key.key;
 }
@@ -114,9 +114,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(5300);
+  const tmpResult = tmp(5301);
   const alertStore = tmpResult.useAlertStore(first);
-  const tmpResult2 = tmp(4811);
+  const tmpResult2 = tmp(4850);
   const sharedValue = tmpResult2.useSharedValue(0);
   if (cResult[1] !== alertStore) {
     let items;
@@ -231,8 +231,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   cResult[10] = tmp7;
   cResult[11] = tmp13;
   cResult[12] = tmp12;
-  cResult[13] = closure_12(tmp(4788).TransitionGroup, obj2);
-  closure_12(tmp(4788).TransitionGroup, obj2);
+  cResult[13] = closure_12(tmp(4827).TransitionGroup, obj2);
+  closure_12(tmp(4827).TransitionGroup, obj2);
 }) : (function AlertModalContainer() {
   let items;
   let redux;
@@ -341,7 +341,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertM
   } else {
     first1 = cResult[0];
   }
-  const tmpResult = tmp(5300);
+  const tmpResult = tmp(5301);
   const alertStore = tmpResult.useAlertStore(first1);
   const fn2 = function f() {
     let fn;
@@ -365,8 +365,8 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertM
       throw new TypeError("Trying to call a non-function");
     }
   };
-  const tmpResult2 = tmp(4811);
-  obj2 = { withAlertModalSpring, sharedVisible: tmp7, sharedTransitionState, TransitionStates: tmp(4788).TransitionStates, runOnJS: tmp(4811).runOnJS, cleanUp: context };
+  const tmpResult2 = tmp(4850);
+  obj2 = { withAlertModalSpring, sharedVisible: tmp7, sharedTransitionState, TransitionStates: tmp(4827).TransitionStates, runOnJS: tmp(4850).runOnJS, cleanUp: context };
   fn2.__closure = obj2;
   fn2.__workletHash = 4470729133936;
   fn2.__initData = __initData;
@@ -390,7 +390,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertM
     }
     return tmp14;
   }
-  const tmp15 = closure_12(tmp(5362).Backdrop, { blur: "strong", style: animatedStyle, onDismiss: tmp11, accessibilityLabel: tmp12 });
+  const tmp15 = closure_12(tmp(5363).Backdrop, { blur: "strong", style: animatedStyle, onDismiss: tmp11, accessibilityLabel: tmp12 });
   cResult[2] = animatedStyle;
   cResult[3] = tmp11;
   cResult[4] = tmp15;
@@ -405,7 +405,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertM
   [sharedTransitionState, tmp4] = closure_35();
   dependencyMap = tmp4;
   const tmp5 = context;
-  let obj = context(5300);
+  let obj = context(5301);
   const alertStore = obj.useAlertStore((arg0) => {
     const first = arg0.alerts[0];
     let dismissable;
@@ -414,7 +414,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertM
     }
     return false !== dismissable;
   });
-  obj2 = context(4811);
+  obj2 = context(4850);
   let fn = function t() {
     let fn;
     let value = closure_2.get();
@@ -437,14 +437,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertM
       throw new TypeError("Trying to call a non-function");
     }
   };
-  fn.__closure = { withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState, TransitionStates: context(4788).TransitionStates, runOnJS: context(4811).runOnJS, cleanUp: context };
+  fn.__closure = { withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState, TransitionStates: context(4827).TransitionStates, runOnJS: context(4850).runOnJS, cleanUp: context };
   fn.__workletHash = 10548540937715;
   fn.__initData = __initData2;
-  ({ withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState, TransitionStates: context(4788).TransitionStates, runOnJS: context(4811).runOnJS, cleanUp: context });
+  ({ withAlertModalSpring, sharedVisible: tmp4, sharedTransitionState, TransitionStates: context(4827).TransitionStates, runOnJS: context(4850).runOnJS, cleanUp: context });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj4 = { blur: "strong", style: animatedStyle, onDismiss: tmp10, accessibilityLabel: intl.string(tmp5(1126).t.Xkfav5) };
   tmp10 = null;
-  const Backdrop = context(5362).Backdrop;
+  const Backdrop = context(5363).Backdrop;
   const tmp9 = closure_12;
   if (alertStore) {
     tmp10 = dismissTopAlert;
@@ -1227,7 +1227,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertAction
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -1277,7 +1277,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertAction
         const obj3 = closure_0(context[13]);
         obj3.dismissAlert(c2);
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp16) {
         if (0 === c3) {
           c4 = 3;
@@ -1331,7 +1331,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertAction
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -1381,7 +1381,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertAction
         const obj3 = closure_0(closure_2_2[13]);
         obj3.dismissAlert(c2);
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp16) {
         if (0 === c3) {
           c4 = 3;
@@ -1427,7 +1427,7 @@ export const showConfirmModal = function showConfirmModal(arg0) {
     variant = "destructive";
   }
   ({ onConfirm, onCancel, onCloseCallback, dismissable } = arg0);
-  const obj = { title, content, extraContent, actions: map1(authStore3, obj2) };
+  const obj = { title, content, extraContent, actions: map1(syncedClientThemes, obj2) };
   obj2 = { children: items };
   const openAlert = useAlertStore2.openAlert;
   items = [, ];

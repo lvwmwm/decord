@@ -1,10 +1,10 @@
-// Module ID: 17970
-// Function ID: 17971
+// Module ID: 18042
+// Function ID: 18043
 // Name: getActivityReportOptions
 // Dependencies: [2024, 1126, 2]
 // Exports: default
 
-// Module 17970 (getActivityReportOptions)
+// Module 18042 (getActivityReportOptions)
 import intl7 from "intl" /* 1126 */;
 import Constants from "Constants" /* 2024 */;
 import size from "module_2" /* 2 */;

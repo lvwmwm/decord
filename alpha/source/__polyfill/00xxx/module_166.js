@@ -16,9 +16,9 @@ class MemoryInfo {
   constructor(arg0) {
     const self = this;
     _classCallCheck(this, MemoryInfo);
-    Object.defineProperty(this, closure_2, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_3, { writable: true, value: "Array" });
-    Object.defineProperty(this, closure_4, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_2, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_3, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_4, { writable: true, value: "a" });
     if (null != arg0) {
       ({ jsHeapSizeLimit: _classPrivateFieldBase(undefined, self, tmp2)[tmp2], totalJSHeapSize: _classPrivateFieldBase(undefined, self, tmp4)[tmp4], usedJSHeapSize: _classPrivateFieldBase(undefined, self, tmp6)[tmp6] } = arg0);
     }

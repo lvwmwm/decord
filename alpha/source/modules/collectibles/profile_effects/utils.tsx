@@ -1,10 +1,10 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9005
+// Function ID: 9006
 // Name: utils
 // Dependencies: [32, 19, 12, 558, 576, 2]
 // Exports: sortEffectLayers
 
-// Module 8986 (utils)
+// Module 9005 (utils)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const f99724 = (acc, randomizedSources) => {
+const f99987 = (acc, randomizedSources) => {
   randomizedSources = randomizedSources.randomizedSources;
   let num;
   if (randomizedSources != null) {
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePotenti
       const effects = cloneDeepResult.effects;
       const _Math = Math;
       const _Math2 = Math;
-      const diff = effects.reduce(f99724, 0) - 1;
+      const diff = effects.reduce(f99987, 0) - 1;
       let closure_0 = Math.floor(Math.random() * (diff + 1));
       const effects1 = cloneDeepResult.effects;
       cloneDeepResult.effects = effects1.map((randomizedSources) => {
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePotenti
       const effects2 = cloneDeepResult1.effects;
       const _Math3 = Math;
       const _Math4 = Math;
-      const diff1 = effects2.reduce(f99724, 0) - 1;
+      const diff1 = effects2.reduce(f99987, 0) - 1;
       closure_0 = Math.floor(Math.random() * (diff1 + 1));
       const effects3 = cloneDeepResult1.effects;
       cloneDeepResult1.effects = effects3.map((randomizedSources) => {
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePotenti
     let num = 0;
     let _Math = Math;
     const _Math2 = Math;
-    const diff = effects.reduce(f99724, 0) - 1;
+    const diff = effects.reduce(f99987, 0) - 1;
     closure_0 = Math.floor(Math.random() * (diff + 1));
     const effects1 = cloneDeepResult.effects;
     cloneDeepResult.effects = effects1.map((randomizedSources) => {
@@ -139,7 +139,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePotenti
       const effects2 = cloneDeepResult1.effects;
       const _Math3 = Math;
       const _Math4 = Math;
-      const diff1 = effects2.reduce(f99724, 0) - 1;
+      const diff1 = effects2.reduce(f99987, 0) - 1;
       closure_0 = Math.floor(Math.random() * (diff1 + 1));
       const effects3 = cloneDeepResult1.effects;
       cloneDeepResult1.effects = effects3.map((randomizedSources) => {

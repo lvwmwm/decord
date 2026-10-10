@@ -1,19 +1,19 @@
-// Module ID: 4946
-// Function ID: 4947
+// Module ID: 4985
+// Function ID: 4986
 // Name: ChatInputUtils
-// Dependencies: [4947, 1894, 4948, 1629, 1501, 4949, 2]
+// Dependencies: [4986, 1894, 4987, 1629, 1501, 4988, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4946 (ChatInputUtils)
+// Module 4985 (ChatInputUtils)
 import KeyboardUIStore from "KeyboardUIStore" /* 1501 */;
 import KeyboardTypes from "KeyboardTypes" /* 1629 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4947 */;
-import useKeyboardType from "useKeyboardType" /* 4948 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4949 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4986 */;
+import useKeyboardType from "useKeyboardType" /* 4987 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4988 */;
 import size from "module_2" /* 2 */;
 
-const f90666 = (item) => {
+const f90945 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -34,7 +34,7 @@ function getBestActiveInput() {
           if (!map1.has("conjure-preview")) {
             const _Array = Array;
             const arr = Array.from(map1.keys());
-            const found = arr.filter(f90666);
+            const found = arr.filter(f90945);
             if (0 !== found.length) {
               const _Math = Math;
               const items = [];
@@ -162,7 +162,7 @@ export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex(
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f90666);
+      const found = arr.filter(f90945);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];
@@ -206,7 +206,7 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
               if (!obj2.has("conjure-preview")) {
                 const _Array = Array;
                 const arr = Array.from(obj2.keys());
-                const found = arr.filter(f90666);
+                const found = arr.filter(f90945);
                 if (0 !== found.length) {
                   const _Math = Math;
                   const items = [];

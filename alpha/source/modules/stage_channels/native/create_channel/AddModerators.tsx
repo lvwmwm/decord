@@ -1,19 +1,19 @@
-// Module ID: 8617
-// Function ID: 8618
+// Module ID: 8633
+// Function ID: 8634
 // Name: AddModerators
-// Dependencies: [32, 109, 19, 17, 2086, 7489, 21, 5091, 587, 558, 576, 1503, 38, 8584, 5890, 1998, 1126, 6205, 7082, 5087, 1200, 8618, 2072, 2]
+// Dependencies: [32, 109, 19, 17, 2087, 7489, 21, 5092, 587, 558, 576, 1503, 38, 8600, 5893, 1998, 1126, 6200, 7088, 5088, 7567, 8634, 2073, 2]
 
-// Module 8617 (AddModerators)
+// Module 8633 (AddModerators)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import HeaderActionButton from "HeaderActionButton" /* 7082 */;
+import HeaderActionButton from "HeaderActionButton" /* 7088 */;
 import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7489 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,6 @@ let obj = { addMembersContainer: obj2, moderatorDescriptionContainer: { margin: 
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 let closure_12 = createStyles.createStyles(obj);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddModerators(guildId) {
-  let HelpMessage;
   let _require;
   let closure_4;
   let closure_6;
@@ -181,9 +180,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddModerator
               }
               let tmp38 = null;
               if (null != tmp18[1].message) {
-                const obj8 = { style: tmp10.errorMessage, children: closure_10(HelpMessage, obj9) };
-                obj9 = { messageType: require("native").HelpMessageTypes.ERROR, children: tmp18[1].message };
-                HelpMessage = tmp(tmp2[20]).HelpMessage;
+                const obj8 = { style: tmp10.errorMessage, children: closure_10(require("InlineNotice").InlineNotice, obj9) };
+                obj9 = { type: "critical", message: tmp18[1].message, role: "alert" };
                 tmp38 = closure_10(View, obj8);
               }
               cResult[21] = tmp18[1].message;
@@ -224,7 +222,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddModerator
       }
     }
   }
-  class I {
+  class N {
     constructor() {
       let items;
       const values = Object.values(first1);
@@ -257,10 +255,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddModerator
   cResult[8] = tmp18[2];
   cResult[9] = first1;
   cResult[10] = tmp6;
-  cResult[11] = I;
-  tmp26 = I;
+  cResult[11] = N;
+  tmp26 = N;
 }) : (function AddModerators(guildId) {
-  let HelpMessage;
   let Text;
   let closure_4;
   let first1;
@@ -344,9 +341,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddModerator
   const tmp19 = closure_11;
   const tmp8 = merged;
   if (null != tmp10[1].message) {
-    const obj5 = { style: tmp3.errorMessage, children: closure_10(HelpMessage, obj6) };
-    obj6 = { messageType: guildId(tmp5[20]).HelpMessageTypes.ERROR, children: tmp10[1].message };
-    HelpMessage = tmp4(tmp5[20]).HelpMessage;
+    const obj5 = { style: tmp3.errorMessage, children: closure_10(guildId(tmp5[20]).InlineNotice, obj6) };
+    obj6 = { type: "critical", message: tmp10[1].message, role: "alert" };
     tmp = tmp21(tmp20, obj5);
   }
   items2[1] = tmp;

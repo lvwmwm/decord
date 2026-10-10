@@ -1,20 +1,20 @@
-// Module ID: 18013
-// Function ID: 18014
+// Module ID: 18085
+// Function ID: 18086
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1373, 21, 5091, 587, 558, 576, 18001, 10889, 6663, 8434, 18014, 5371, 4768, 1126, 4996, 6191, 5087, 8750, 10774, 10920, 17614, 2]
+// Dependencies: [32, 19, 17, 1373, 21, 5092, 587, 558, 576, 18073, 10929, 6664, 8450, 18086, 5372, 4809, 1126, 10258, 6184, 5088, 8766, 10809, 10960, 17686, 2]
 
-// Module 18013 (InteractionIframeModal)
+// Module 18085 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import makeIframeIdDefault from "makeIframeId" /* 10889 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 18014 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import makeIframeIdDefault from "makeIframeId" /* 10929 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 18086 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F150830 */ };
+        return () => { /* body not rendered: F151301 */ };
       }
     }
     const items = [];
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F150830 */ };
+        return () => { /* body not rendered: F151301 */ };
       }
     }
     tmp10 = cResult[2];
@@ -375,11 +375,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
     queryParams,
     onLoadError() {
       let intl;
-      const obj = { key: interaction_iframe_modal, content: intl.string(intl2.t.HehpFW) };
+      const obj = { text: intl.string(intl2.t.HehpFW) };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl2.intl;
-      open(obj);
+      open(interaction_iframe_modal, obj);
       callback();
     },
     allowPopups: tmp2Result.allowPopups(application),

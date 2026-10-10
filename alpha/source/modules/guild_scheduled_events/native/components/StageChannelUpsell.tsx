@@ -1,31 +1,31 @@
-// Module ID: 8559
-// Function ID: 8560
+// Module ID: 8575
+// Function ID: 8576
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 2068, 8560, 8498, 1085, 21, 5091, 587, 6191, 1200, 5010, 6163, 8561, 5087, 1126, 5376, 5941, 8562, 2000, 5055, 2]
+// Dependencies: [32, 19, 17, 2069, 8576, 8514, 1085, 21, 5092, 587, 6184, 1200, 7728, 6156, 8577, 5088, 1126, 5379, 5934, 8578, 2000, 5056, 2]
 // Exports: default
 
-// Module 8559 (StageChannelUpsell)
+// Module 8575 (StageChannelUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5010 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import Pressables from "Pressables" /* 6191 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8498 */;
-import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8560 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8561 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import Pressables from "Pressables" /* 6184 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7728 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8514 */;
+import StageChannelUpsellCardStore from "StageChannelUpsellCardStore" /* 8576 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8577 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -117,7 +117,7 @@ export default function StageChannelUpsell(arg0) {
               obj.popWithKey(closure_1_11);
             }
           };
-          obj2.pushLazy(asyncRequire(8562, dependencyMap.paths), obj3, CREATE_CHANNEL_MODAL_KEY);
+          obj2.pushLazy(asyncRequire(8578, dependencyMap.paths), obj3, CREATE_CHANNEL_MODAL_KEY);
           closure_2();
           const obj4 = ActionSheetActionCreatorsDefault;
           obj4.hideActionSheet();

@@ -1,15 +1,15 @@
-// Module ID: 8863
-// Function ID: 8864
+// Module ID: 8882
+// Function ID: 8883
 // Name: useResolveGameForProfile
-// Dependencies: [558, 576, 6854, 7435, 7436, 8864, 7002, 2]
+// Dependencies: [558, 576, 6857, 7435, 7436, 8883, 7008, 2]
 
-// Module 8863 (useResolveGameForProfile)
+// Module 8882 (useResolveGameForProfile)
 import react from "react" /* 576 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6854 */;
-import useGame2 from "useGame" /* 7002 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6857 */;
+import useGame2 from "useGame" /* 7008 */;
 import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7435 */;
 import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7436 */;
-import useResolveGameDefault from "useResolveGame" /* 8864 */;
+import useResolveGameDefault from "useResolveGame" /* 8883 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

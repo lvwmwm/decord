@@ -1,34 +1,34 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12471
+// Function ID: 12472
 // Name: GuildInvite
-// Dependencies: [32, 19, 17, 8747, 2064, 8668, 4707, 8682, 6660, 1085, 21, 5091, 6263, 587, 1265, 558, 576, 8200, 1126, 6186, 8746, 1503, 5361, 504, 5370, 8700, 5393, 6205, 4930, 8678, 12387, 8667, 5106, 5087, 6163, 12428, 1200, 8714, 6191, 8744, 5376, 6810, 2]
+// Dependencies: [32, 19, 17, 8763, 2065, 8683, 4748, 8697, 6661, 1085, 21, 5092, 6258, 587, 1265, 558, 576, 8216, 1126, 6179, 8762, 1503, 5362, 504, 5371, 8715, 5396, 6200, 4969, 8693, 12431, 8682, 5107, 5088, 12472, 1200, 8729, 6184, 8760, 5379, 6813, 2]
 
-// Module 12427 (GuildInvite)
+// Module 12471 (GuildInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
-import react_native from "react-native" /* 5370 */;
-import TableRow2 from "TableRow" /* 6186 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import NavigatorConstants from "NavigatorConstants" /* 6263 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6660 */;
-import GroupIcon from "GroupIcon" /* 8200 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8667 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8700 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 8746 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8747 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12387 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import react_native from "react-native" /* 5371 */;
+import TableRow2 from "TableRow" /* 6179 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
+import NavigatorConstants from "NavigatorConstants" /* 6258 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6661 */;
+import GroupIcon from "GroupIcon" /* 8216 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8682 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8715 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 8762 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8763 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12431 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import CreateInviteModalStore_mod from "CreateInviteModalStore" /* 8668 */;
-import GuildChannelStore from "GuildChannelStore" /* 4707 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8682 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import CreateInviteModalStore_mod from "CreateInviteModalStore" /* 8683 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8697 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ const CreateGuildModalStates = CreateGuildConstants.CreateGuildModalStates;
 ({ AnalyticEvents: map1, AnalyticsSections: closure_14, InstantInviteSources: closure_15, Permissions: closure_16, SearchTypes: closure_17 } = Constants);
 ({ jsx: closure_18, jsxs: closure_19 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, header: { marginBottom: 8 }, description: { lineHeight: 18, marginBottom: 8, paddingHorizontal: 16, textAlign: "center" }, headerImage: { marginVertical: 16 }, linkContainer: { paddingHorizontal: 16, width: "100%" }, linkButton: obj3, linkButtonIcon: obj4, inviteDetail: { marginTop: 8 }, shareButton: { marginVertical: 16 }, suggestionsContainer: { width: "100%", flex: 1, alignContent: "flex-start" }, friendIcon: size, suggestionRowsContainer: { marginHorizontal: 12 }, separator: obj5 };
+let obj = { container: obj2, header: { marginBottom: 8 }, description: { lineHeight: 18, marginBottom: 8, paddingHorizontal: 16, textAlign: "center" }, headerIllustration: { alignItems: "center", marginTop: 8, marginBottom: -32 }, linkContainer: { paddingHorizontal: 16, width: "100%", zIndex: 1 }, linkButton: obj3, linkButtonIcon: obj4, inviteDetail: { marginTop: 8 }, shareButton: { marginVertical: 16 }, suggestionsContainer: { width: "100%", flex: 1, alignContent: "flex-start" }, friendIcon: size, suggestionRowsContainer: { marginHorizontal: 12 }, separator: obj5 };
 obj2 = { marginTop: NavigatorConstants.NAV_BAR_HEIGHT, flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, alignItems: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: 16, flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, padding: 12, justifyContent: "space-between" };
@@ -75,7 +75,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function SeeMor
   openInviteSheet = openInviteSheet.openInviteSheet;
   const tmp4 = closure_20();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = authStore6(GroupIcon.GroupIcon, { size: "sm" });
+    const tmp7 = authStore5(GroupIcon.GroupIcon, { size: "sm" });
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -83,7 +83,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function SeeMor
   }
   if (cResult[1] !== tmp4.friendIcon) {
     const obj2 = { style: tmp4.friendIcon, children: first };
-    const tmp11 = authStore6(hasOwnProperty, obj2);
+    const tmp11 = authStore5(hasOwnProperty, obj2);
     cResult[1] = tmp4.friendIcon;
     cResult[2] = tmp11;
     tmp8 = tmp11;
@@ -105,7 +105,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function SeeMor
     }
     return tmp14;
   }
-  const tmp15 = authStore6(TableRow2.TableRow, { icon: tmp8, onPress: openInviteSheet, label: tmp12, end: true });
+  const tmp15 = authStore5(TableRow2.TableRow, { icon: tmp8, onPress: openInviteSheet, label: tmp12, end: true });
   cResult[4] = openInviteSheet;
   cResult[5] = tmp8;
   cResult[6] = tmp15;
@@ -114,11 +114,11 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function SeeMor
   let intl;
   let obj2;
   openInviteSheet = openInviteSheet.openInviteSheet;
-  const obj = { icon: authStore6(hasOwnProperty, obj2), onPress: openInviteSheet, label: intl.string(intl5.t.zrLIIz), end: true };
-  obj2 = { style: closure_20().friendIcon, children: authStore6(GroupIcon.GroupIcon, { size: "sm" }) };
+  const obj = { icon: authStore5(hasOwnProperty, obj2), onPress: openInviteSheet, label: intl.string(intl5.t.zrLIIz), end: true };
+  obj2 = { style: closure_20().friendIcon, children: authStore5(GroupIcon.GroupIcon, { size: "sm" }) };
   const TableRow = TableRow2.TableRow;
   intl = intl5.intl;
-  return authStore6(TableRow, obj);
+  return authStore5(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteSuggestionRows(invite) {
@@ -149,7 +149,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
         let item;
         ({ item, index } = arg0);
         const obj = { row: item, code: invite.code, start: 0 === index };
-        return authStore6(InstantInviteRowDefault, obj);
+        return authStore5(InstantInviteRowDefault, obj);
       }
       cResult[2] = invite.code;
       cResult[3] = renderSuggestionRow;
@@ -159,63 +159,71 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
     }
     if (cResult[4] === openInviteSheet) {
       let tmp6;
-      let tmp9;
-      let tmp11;
+      let tmp10;
+      let tmp12;
       if (cResult[5] === suggestions.length) {
         tmp6 = cResult[6];
       }
       if (cResult[7] !== tmp2.separator) {
         const fn = function f() {
           const obj = { style: separator.separator };
-          return authStore6(hasOwnProperty, obj);
+          return authStore5(hasOwnProperty, obj);
         };
         cResult[7] = tmp2.separator;
         cResult[8] = fn;
-        tmp9 = fn;
+        tmp10 = fn;
       } else {
-        tmp9 = cResult[8];
+        tmp10 = cResult[8];
       }
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
-          constructor(item) {
-            return item.item.id;
-          }
-        }
-        cResult[9] = E;
-        tmp11 = E;
+        const fn2 = function p(item) {
+          return item.item.id;
+        };
+        cResult[9] = fn2;
+        tmp12 = fn2;
       } else {
-        class E {
-          constructor(item) {
-            return item.item.id;
-          }
-        }
+        tmp12 = cResult[9];
       }
       if (cResult[10] === tmp3) {
-        class E {
-          constructor(item) {
-            return item.item.id;
+        if (cResult[11] === tmp5) {
+          if (cResult[12] === tmp2.suggestionRowsContainer) {
+            if (cResult[13] === tmp6) {
+              let tmp13;
+              if (cResult[14] === tmp10) {
+                tmp13 = cResult[15];
+              }
+              if (cResult[16] === tmp2.suggestionsContainer) {
+                let tmp17;
+                if (cResult[17] === tmp13) {
+                  tmp17 = cResult[18];
+                }
+                return tmp17;
+              }
+              const obj2 = { style: tmp2.suggestionsContainer, children: tmp13 };
+              const tmp20 = closure_18(closure_5, obj2);
+              cResult[16] = tmp2.suggestionsContainer;
+              cResult[17] = tmp13;
+              cResult[18] = tmp20;
+              tmp17 = tmp20;
+            }
           }
         }
       }
-      const obj2 = { data: tmp3, renderItem: tmp5, contentContainerStyle: tmp2.suggestionRowsContainer, ListFooterComponent: tmp6, ItemSeparatorComponent: tmp9, keyExtractor: tmp11 };
+      const obj3 = { data: tmp3, renderItem: tmp5, contentContainerStyle: tmp2.suggestionRowsContainer, ListFooterComponent: tmp6, ItemSeparatorComponent: tmp10, keyExtractor: tmp12 };
+      const tmp16 = closure_18(closure_6, obj3);
       cResult[10] = tmp3;
       cResult[11] = tmp5;
       cResult[12] = tmp2.suggestionRowsContainer;
       cResult[13] = tmp6;
-      cResult[14] = tmp9;
-      cResult[15] = closure_18(closure_6, obj2);
-      const tmp15 = closure_18(closure_6, obj2);
+      cResult[14] = tmp10;
+      cResult[15] = tmp16;
+      tmp13 = tmp16;
     }
     let tmp7 = null;
     if (suggestions.length > 6) {
-      class E {
-        constructor(item) {
-          return item.item.id;
-        }
-      }
-      const obj3 = { openInviteSheet };
-      tmp7 = closure_18(closure_21, obj3);
+      const obj4 = { openInviteSheet };
+      tmp7 = closure_18(closure_21, obj4);
     }
     cResult[4] = openInviteSheet;
     cResult[5] = suggestions.length;
@@ -244,13 +252,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
           let item;
           ({ item, index } = arg0);
           const obj = { row: item, code: require.code, start: 0 === index };
-          return authStore6(InstantInviteRowDefault, obj);
+          return authStore5(InstantInviteRowDefault, obj);
         },
       contentContainerStyle: tmp.suggestionRowsContainer,
       ListFooterComponent: tmp6Result,
       ItemSeparatorComponent() {
           const obj = { style: separator.separator };
-          return authStore6(hasOwnProperty, obj);
+          return authStore5(hasOwnProperty, obj);
         },
       keyExtractor(item) {
           return item.item.id;
@@ -347,7 +355,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
   const tmpResult6 = tmp(tmp2[23]);
   stateFromStores1 = tmpResult6.useStateFromStores(tmp15, tmp16);
   if (cResult[4] !== isScreenReaderEnabled) {
-    class M {
+    class P {
       constructor() {
         const tmp = isScreenReaderEnabled && null != ref.current;
         if (tmp) {
@@ -358,10 +366,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
       }
     }
     cResult[4] = isScreenReaderEnabled;
-    cResult[5] = M;
-    tmp21 = M;
+    cResult[5] = P;
+    tmp21 = P;
   } else {
-    class M {
+    class P {
       constructor() {
         const tmp = isScreenReaderEnabled && null != ref.current;
         if (tmp) {
@@ -375,7 +383,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
   if (cResult[6] === stateFromStores) {
     let tmp23;
     let tmp27;
-    class M {
+    class P {
       constructor() {
         const tmp = isScreenReaderEnabled && null != ref.current;
         if (tmp) {
@@ -388,7 +396,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
     const effect = obj4.useEffect(tmp21, items4);
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
+      class P {
         constructor() {
           const tmp = isScreenReaderEnabled && null != ref.current;
           if (tmp) {
@@ -401,7 +409,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
       cResult[9] = tmp24;
       tmp23 = tmp24;
     } else {
-      class M {
+      class P {
         constructor() {
           const tmp = isScreenReaderEnabled && null != ref.current;
           if (tmp) {
@@ -436,7 +444,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
     const tmp26 = stateFromStores();
     CreateInviteModalStore = tmp26;
     if (cResult[10] !== stateFromStores1) {
-      class M {
+      class P {
         constructor() {
           const tmp = isScreenReaderEnabled && null != ref.current;
           if (tmp) {
@@ -450,7 +458,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
       cResult[11] = tmp28;
       tmp27 = tmp28;
     } else {
-      class M {
+      class P {
         constructor() {
           const tmp = isScreenReaderEnabled && null != ref.current;
           if (tmp) {
@@ -463,7 +471,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
     }
     require("useMountEffect")(tmp27);
     if (cResult[12] === tmp26) {
-      class M {
+      class P {
         constructor() {
           const tmp = isScreenReaderEnabled && null != ref.current;
           if (tmp) {
@@ -475,7 +483,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
       }
       const effect1 = obj4.useEffect(tmp31, tmp32);
       if (cResult[16] === first) {
-        class M {
+        class P {
           constructor() {
             const tmp = isScreenReaderEnabled && null != ref.current;
             if (tmp) {
@@ -724,7 +732,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
       if (stateFromStores != null) {
         code = stateFromStores.code;
       }
-      const tmp2Result = tmp2(8667);
+      const tmp2Result = tmp2(8682);
       handleOpenShareSheet(code, tmp, tmp2Result.getShareMessage(defaultChannel));
       closure_6(true);
     }
@@ -737,7 +745,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
         tmp27 = closure_18(closure_22, obj6);
       }
       const rect = { top: true, left: true, right: true, style: tmp.container, children: items8 };
-      const SafeAreaPaddingView = tmp2(tmp3[41]).SafeAreaPaddingView;
+      const SafeAreaPaddingView = tmp2(tmp3[40]).SafeAreaPaddingView;
       const obj7 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(tmp2(tmp3[18]).t.OZ1qhO) };
       const Text = tmp2(tmp3[33]).Text;
       intl = tmp2(tmp3[18]).intl;
@@ -748,9 +756,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
       items8[1] = closure_18(Text2, obj8);
       let tmp29Result = !tmp20;
       if (tmp29Result) {
-        const obj9 = { source: onClose(tmp3[35]), resizeMode: "contain", style: tmp.headerImage };
-        const tmp13Result = onClose(tmp3[34]);
-        tmp29Result = tmp29(tmp13Result, obj9);
+        const obj9 = { style: tmp.headerIllustration, children: closure_18(tmp2(tmp3[34]).HelloWumpusSpotIllustration, { width: 252, accessible: false }) };
+        tmp29Result = tmp29(first, obj9);
       }
       items8[2] = tmp29Result;
       const obj10 = { style: tmp.linkContainer, children: items10 };
@@ -765,15 +772,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
             },
         children: items9
       };
-      const PressableOpacity = tmp2(tmp3[38]).PressableOpacity;
+      const PressableOpacity = tmp2(tmp3[37]).PressableOpacity;
       intl3 = tmp2(tmp3[18]).intl;
       const obj12 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: { flexShrink: 1 }, children: tmp17Result };
       items9 = [closure_18(tmp2(tmp3[33]).Text, obj12), ];
-      const obj13 = { source: onClose(tmp3[37]), style: tmp.linkButtonIcon };
-      const Icon = tmp2(tmp3[36]).Icon;
+      const obj13 = { source: onClose(tmp3[36]), style: tmp.linkButtonIcon };
+      const Icon = tmp2(tmp3[35]).Icon;
       items9[1] = closure_18(Icon, obj13);
       items10 = [closure_19(PressableOpacity, obj11), , ];
-      const obj14 = { style: tmp.inviteDetail, children: closure_18(onClose(tmp3[39]), obj15) };
+      const obj14 = { style: tmp.inviteDetail, children: closure_18(onClose(tmp3[38]), obj15) };
       obj15 = {
         channel: stateFromStores1,
         canEditInvite: true,
@@ -789,7 +796,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvite(
       items10[1] = closure_18(first, obj14);
       const obj16 = { style: tmp.shareButton, children: closure_18(Button, obj17) };
       obj17 = { text: intl4.string(tmp2(tmp3[18]).t.Ej3B3Y), onPress: callback1 };
-      Button = tmp2(tmp3[40]).Button;
+      Button = tmp2(tmp3[39]).Button;
       intl4 = tmp2(tmp3[18]).intl;
       items10[2] = closure_18(first, obj16);
       items8[3] = closure_19(first, obj10);

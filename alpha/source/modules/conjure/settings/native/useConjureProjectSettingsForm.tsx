@@ -1,23 +1,23 @@
-// Module ID: 16994
-// Function ID: 16995
+// Module ID: 17062
+// Function ID: 17063
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 2118, 10617, 1085, 21, 5091, 587, 558, 576, 504, 6940, 5055, 1126, 3827, 5087, 6835, 8546, 6737, 6269, 6183, 6892, 16995, 6939, 16998, 16999, 11369, 6290, 6186, 2]
+// Dependencies: [5, 32, 19, 17, 2119, 10651, 1085, 21, 5092, 587, 558, 576, 504, 6946, 5056, 1126, 3849, 5088, 6838, 8562, 6738, 6264, 6176, 6898, 17063, 6945, 17066, 17067, 11411, 6285, 6179, 2]
 // Exports: default
 
-// Module 16994 (useConjureProjectSettingsForm)
+// Module 17062 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5055 */;
-import ConjureTypes from "ConjureTypes" /* 6940 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
+import ConjureTypes from "ConjureTypes" /* 6946 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -548,13 +548,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let intl = guildId(onSave[15]).intl;
   let formatToPlainString = intl.formatToPlainString;
   let obj2 = { count: first.size, max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES };
-  const g5I05P = require("module_3827").g5I05P;
+  const g5I05P = require("module_3849").g5I05P;
   let formatToPlainStringResult = formatToPlainString(g5I05P, obj2);
-  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3827").un99lK), footer: closure_10(closure_6, obj4), header: closure_10(BottomSheetTitleHeader, obj5), children: items4 };
+  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3849").un99lK), footer: closure_10(closure_6, obj4), header: closure_10(BottomSheetTitleHeader, obj5), children: items4 };
   const ActionSheet = guildId(onSave[23]).ActionSheet;
   intl2 = guildId(onSave[15]).intl;
   obj4 = { style: tmp.roleListFooter, children: closure_10(guildId(onSave[17]).Text, { variant: "text-xs/normal", color: "text-muted", children: formatToPlainStringResult }) };
-  obj5 = { title: intl3.string(require("module_3827")["pO3+p5"]), trailing: closure_10(ActionSheetHeaderPressableText, obj6) };
+  obj5 = { title: intl3.string(require("module_3849")["pO3+p5"]), trailing: closure_10(ActionSheetHeaderPressableText, obj6) };
   BottomSheetTitleHeader = guildId(onSave[18]).BottomSheetTitleHeader;
   intl3 = guildId(onSave[15]).intl;
   obj6 = { label: intl4.string(guildId(onSave[15]).t.i4jeWR), onPress: callback };
@@ -618,7 +618,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             const intl = guildId(onSave[15]).intl;
             const formatToPlainString = intl.formatToPlainString;
             const obj4 = { max: guildId(onSave[13]).MAX_PROJECT_COLLABORATOR_ROLES };
-            const prop = require("module_3827")["dH7+/Z"];
+            const prop = require("module_3849")["dH7+/Z"];
             formatToPlainStringResult = formatToPlainString(prop, obj4);
           }
           return closure_1_10(TableCheckboxRow, obj2, children.id);
@@ -823,7 +823,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -956,7 +956,7 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
       }
     }
   }), items3);
-  let obj5 = { label: intl.string(require("module_3827").ncxNJT), value: str2, onChange: callback, maxLength: tmp2(tmp3[13]).MAX_PROJECT_NAME_LENGTH, disabled: first2 };
+  let obj5 = { label: intl.string(require("module_3849").ncxNJT), value: str2, onChange: callback, maxLength: tmp2(tmp3[13]).MAX_PROJECT_NAME_LENGTH, disabled: first2 };
   const TextInput = tmp2(tmp3[29]).TextInput;
   intl = tmp2(tmp3[15]).intl;
   let tmp42 = importDefault;

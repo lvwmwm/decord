@@ -1,15 +1,15 @@
-// Module ID: 6810
-// Function ID: 6811
+// Module ID: 6813
+// Function ID: 6814
 // Name: common/SafeAreaView
-// Dependencies: [109, 19, 17, 21, 558, 576, 1631, 6167, 1355, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 1631, 6160, 1355, 2]
 
-// Module 6810 (common/SafeAreaView)
+// Module 6813 (common/SafeAreaView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _modDef1355 from "module_1355" /* 1355 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import useRefValueDefault from "useRefValue" /* 6167 */;
+import useRefValueDefault from "useRefValue" /* 6160 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

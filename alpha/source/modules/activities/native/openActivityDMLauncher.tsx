@@ -1,10 +1,10 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14191
+// Function ID: 14192
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1502, 6849, 7008, 12986, 11567, 6872, 7240, 4946, 1629, 2]
+// Dependencies: [5, 1502, 6852, 7014, 13033, 11613, 6878, 7246, 4985, 1629, 2]
 // Exports: default
 
-// Module 14136 (openActivityDMLauncher)
+// Module 14191 (openActivityDMLauncher)
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let obj = function _openActivityDMLauncher() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -156,7 +156,7 @@ let obj = function _openActivityDMLauncher() {
               return { value, done: true };
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp49) {
           c8 = 3;

@@ -1,15 +1,15 @@
-// Module ID: 18249
-// Function ID: 18250
+// Module ID: 18323
+// Function ID: 18324
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6037, 21, 504, 9729, 4768, 5001, 1126, 6836, 6835, 587, 6269, 6186, 9694, 18242, 5048, 2]
+// Dependencies: [5, 32, 19, 17, 6030, 21, 504, 9758, 4809, 1126, 6839, 6838, 587, 6264, 6179, 9723, 18316, 5049, 2]
 
-// Module 18249 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18242 */;
+// Module 18323 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 18316 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StickersStore from "StickersStore" /* 6037 */;
+import StickersStore from "StickersStore" /* 6030 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
               c3 = 2;
               c1 = 3;
               c4 = 1;
-              const obj5 = { value: obj3.deleteGuildSticker(tmp31), done: false };
+              const obj5 = { value: obj3.deleteGuildSticker(tmp29), done: false };
               obj3 = tmp(closure_2[7]);
               return obj5;
             }
@@ -88,11 +88,11 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
           } else {
             if (2 === c1) {
               c3 = 1;
-              const obj6 = { key: "IMAGE_PICKER_ERROR", IconComponent: tmp(closure_2[9]).CircleErrorIcon, content: intl.string(tmp(closure_2[10]).t["5NMPSS"]) };
+              const obj6 = { text: intl.string(tmp(closure_2[9]).t["5NMPSS"]), variant: "critical" };
               const open = c1(closure_2[8]).open;
               const tmp15 = c1(closure_2[8]);
-              intl = tmp(closure_2[10]).intl;
-              open(obj6);
+              intl = tmp(closure_2[9]).intl;
+              open("IMAGE_PICKER_ERROR", obj6);
             } else if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -110,13 +110,13 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
-        } catch (tmp36) {
-          closure_2 = tmp36;
+          return { value: "IconComponent", done: "+51" };
+        } catch (tmp34) {
+          closure_2 = tmp34;
           if (0 === c3) {
             c4 = 3;
-            throw tmp36;
-          } else if (1 === tmp38) {
+            throw tmp34;
+          } else if (1 === tmp36) {
             c1 = 1;
           } else {
             c1 = 2;
@@ -147,35 +147,35 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
   }, items1);
   let tmp8Result2 = null;
   if (null != stateFromStores) {
-    let obj2 = { header: closure_9(tmp(tmp2[12]).BottomSheetTitleHeader, obj4), children: tmp8(tmp9, obj5) };
-    BottomSheet = tmp(tmp2[11]).BottomSheet;
+    let obj2 = { header: closure_9(tmp(tmp2[11]).BottomSheetTitleHeader, obj4), children: tmp8(tmp9, obj5) };
+    BottomSheet = tmp(tmp2[10]).BottomSheet;
     obj4 = { title: null, subtitle: null };
     ({ name: obj3.title, description: obj3.subtitle } = stateFromStores);
     obj5 = { style: obj6, children: tmp11(TableRowGroup, obj15) };
     obj6 = { paddingHorizontal: require("native").space.PX_12, paddingBottom: require("native").space.PX_16 };
-    TableRowGroup = tmp(tmp2[14]).TableRowGroup;
+    TableRowGroup = tmp(tmp2[13]).TableRowGroup;
     const obj7 = {
-      icon: closure_9(tmp(hideActionSheet[16]).PencilIcon, {}),
-      label: intl.string(tmp(hideActionSheet[10]).t.tdhW5b),
+      icon: closure_9(tmp(hideActionSheet[15]).PencilIcon, {}),
+      label: intl.string(tmp(hideActionSheet[9]).t.tdhW5b),
       onPress() {
           obj = { guildId: require, stickerId: importDefault };
           showGuildSettingsStickerCreateModalDefault(obj);
         }
     };
-    const TableRow = tmp(tmp2[15]).TableRow;
-    intl = tmp(tmp2[10]).intl;
+    const TableRow = tmp(tmp2[14]).TableRow;
+    intl = tmp(tmp2[9]).intl;
     const items2 = [closure_9(TableRow, obj7), ];
     const obj8 = {
-      icon: closure_9(tmp(hideActionSheet[18]).TrashIcon, { color: "text-feedback-critical" }),
+      icon: closure_9(tmp(hideActionSheet[17]).TrashIcon, { color: "text-feedback-critical" }),
       trailing: tmp8Result,
-      label: intl2.string(tmp(hideActionSheet[10]).t["+ZhGOk"]),
+      label: intl2.string(tmp(hideActionSheet[9]).t["+ZhGOk"]),
       variant: "danger",
       disabled: tmp5,
       onPress: function onDeleteSticker() {
           return obj(...arguments);
         }
     };
-    const TableRow2 = tmp(tmp2[15]).TableRow;
+    const TableRow2 = tmp(tmp2[14]).TableRow;
     tmp8Result = null;
     tmp11 = closure_10;
     tmp9 = closure_7;
@@ -183,7 +183,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
       tmp8Result = tmp8(closure_6, {});
     }
     obj15 = { hasIcons: true, children: items2 };
-    intl2 = tmp(tmp2[10]).intl;
+    intl2 = tmp(tmp2[9]).intl;
     items2[1] = closure_9(TableRow2, obj8);
     tmp8Result2 = tmp8(BottomSheet, obj2);
   }

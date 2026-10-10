@@ -1,23 +1,23 @@
 // Module ID: 7497
 // Function ID: 7498
 // Name: AgeVerificationActionCreators
-// Dependencies: [5, 1390, 5915, 7498, 7482, 7018, 21, 7499, 5941, 7508, 2000, 7017, 7527, 7528, 1628, 5300, 7529, 1398, 1382, 7530, 7531, 5906, 5919, 584, 7532, 7533, 7539, 7683, 7684, 4765, 5916, 7695, 7697, 7698, 2]
+// Dependencies: [5, 1390, 5917, 7498, 7482, 7019, 21, 7499, 5934, 7508, 2000, 7025, 7530, 7531, 1628, 5301, 7532, 1398, 1382, 7533, 7534, 5909, 5921, 584, 7535, 7541, 7548, 7700, 7701, 4806, 5918, 7712, 7714, 7715, 2]
 
 // Module 7497 (AgeVerificationActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LinkingDefault from "Linking" /* 4765 */;
-import useAlertStore from "useAlertStore" /* 5300 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5916 */;
-import Constants from "Constants" /* 7018 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import useAlertStore from "useAlertStore" /* 5301 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
+import Constants from "Constants" /* 7019 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
 import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7498 */;
-import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 7695 */;
-import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 7697 */;
-import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 7698 */;
+import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 7712 */;
+import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 7714 */;
+import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 7715 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore_mod from "UserStore" /* 1390 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 5915 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 5917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ function openIncodeAgeVerificationModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ function openIncodeAgeVerificationModal(arg0) {
               combined = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp21) {
           if (0 === combined) {
@@ -304,17 +304,17 @@ let obj = {
     let obj = entryPoint(1628);
     if (obj.isMetaQuest()) {
       const tmp19 = closure_7;
-      const tmpResult = tmp(5300);
-      tmpResult.openAlert(closure_7, jsx(onClose(7529), {}), onClose);
+      const tmpResult = tmp(5301);
+      tmpResult.openAlert(closure_7, jsx(onClose(7532), {}), onClose);
     } else {
-      const tmpResult6 = tmp(5906);
+      const tmpResult6 = tmp(5909);
       let isAgeVerifiedResult = tmpResult6.isAgeVerified();
       if (isAgeVerifiedResult) {
-        const tmpResult7 = tmp(5919);
+        const tmpResult7 = tmp(5921);
         isAgeVerifiedResult = tmpResult7.hasAgeGatedFeatures();
       }
       dependencyMap = isAgeVerifiedResult;
-      const tmpResult8 = tmp(7530);
+      const tmpResult8 = tmp(7533);
       if (tmpResult8.isAgeVerificationIncodeEnabled(entryPoint)) {
         const currentUser = UserStore.getCurrentUser();
         prop = undefined;
@@ -348,7 +348,7 @@ let obj = {
           }
         }
       } else {
-        const tmpResult9 = tmp(7532);
+        const tmpResult9 = tmp(7535);
         if (tmpResult9.isExpressiveModalV2Enabled(entryPoint)) {
           let tmp8 = prop;
           let tmp9 = prop(function*(arg0, value) {
@@ -367,7 +367,7 @@ let obj = {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else {
               try {
@@ -423,7 +423,7 @@ let obj = {
                     }), {}, closure_1_6);
                   }
                   prop = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } catch (tmp19) {
                 prop = 3;
@@ -432,12 +432,12 @@ let obj = {
             }
           })();
         } else {
-          const tmpResult10 = tmp(7683);
+          const tmpResult10 = tmp(7700);
           UserStore = tmpResult10.isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
           let tmp4 = onClose;
           let tmp5 = prop;
           let tmp6 = closure_6;
-          const obj7 = onClose(5941);
+          const obj7 = onClose(5934);
           obj7.pushLazy(prop(function*() {
             let c1;
             let closure_0;

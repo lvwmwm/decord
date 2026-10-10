@@ -1,9 +1,9 @@
-// Module ID: 9252
-// Function ID: 9253
+// Module ID: 9279
+// Function ID: 9280
 // Name: ScheduledMessagesConstants
 // Dependencies: [2]
 
-// Module 9252 (ScheduledMessagesConstants)
+// Module 9279 (ScheduledMessagesConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ScheduledMessagesConstants.tsx");

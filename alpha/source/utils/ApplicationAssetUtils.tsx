@@ -1,16 +1,16 @@
-// Module ID: 8258
-// Function ID: 8259
+// Module ID: 8274
+// Function ID: 8275
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8259, 1085, 38, 3, 1295, 584, 1450, 2]
+// Dependencies: [32, 5, 8275, 1085, 38, 3, 1295, 584, 1450, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8258 (ApplicationAssetUtils)
+// Module 8274 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8259 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8275 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f97550 = (item) => {
+const f97814 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -104,7 +104,7 @@ obj = function _resolveExternalAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       while (true) {
@@ -175,7 +175,7 @@ obj = function _resolveExternalAssets() {
           }
         }
         c9 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     }
   });
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f97550).length > 0) {
+  if (arr.filter(f97814).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -522,7 +522,7 @@ export { fetchAssetIds };
 export const getAssetIds = function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f97550).length > 0) {
+  if (arr.filter(f97814).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

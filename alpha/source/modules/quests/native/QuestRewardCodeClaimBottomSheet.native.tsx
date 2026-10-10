@@ -1,22 +1,21 @@
-// Module ID: 12927
-// Function ID: 12928
+// Module ID: 12975
+// Function ID: 12976
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7384, 5979, 21, 5091, 587, 558, 576, 1631, 504, 12928, 4768, 1126, 5008, 5055, 9162, 6879, 5044, 12930, 6836, 6835, 5087, 5078, 6186, 6269, 5376, 12933, 2]
+// Dependencies: [19, 17, 7390, 5972, 21, 5092, 587, 558, 576, 1631, 504, 12976, 4809, 1126, 5056, 9189, 6885, 5042, 12978, 6839, 6838, 5088, 5079, 6179, 6264, 5379, 12981, 2]
 
-// Module 12927 (QuestRewardCodeClaimBottomSheet)
+// Module 12975 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5008 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import QuestConstants from "QuestConstants" /* 5979 */;
-import ClipboardUtils from "ClipboardUtils" /* 6879 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9162 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9189 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7384 */;
+import QuestStore from "QuestStore" /* 7390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,15 +102,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
           const claimOrFetchRewardCode = tmpResult6.useClaimOrFetchRewardCode(tmp10);
           ({ claimCode, fetchCode, hasError } = claimOrFetchRewardCode);
           if (cResult[9] !== hasError) {
-            const fn2 = function k() {
+            const fn2 = function x() {
               let intl;
               const tmp = hasError;
               if (tmp) {
-                const obj = { key: "CLAIM_QUEST_REWARD_ERROR", content: intl.string(intl4.t.CKsXk3), icon: AssetRegistryDefault };
+                const obj = { text: intl.string(intl4.t.CKsXk3), variant: "critical" };
                 const open = ToastActionCreatorsDefault.open;
                 ToastActionCreatorsDefault;
                 intl = intl4.intl;
-                open(obj);
+                open("CLAIM_QUEST_REWARD_ERROR", obj);
                 const obj2 = ActionSheetActionCreatorsDefault;
                 obj2.hideActionSheet();
               }
@@ -129,7 +128,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
           const effect = react.useEffect(tmp12, tmp13);
           if (cResult[12] !== quest) {
             let obj2 = { quest };
-            const tmpResult7 = tmp(hasError[16]);
+            const tmpResult7 = tmp(hasError[15]);
             const result = tmpResult7.isTieredRewardCodeQuest(obj2);
             cResult[12] = quest;
             cResult[13] = result;
@@ -201,11 +200,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
                                   let obj = ClipboardUtils;
                                   obj.copy(tmp.code, () => {
                                     let intl;
-                                    const obj = { text: intl.string(quest(hasError[13]).t.MSaeTe), icon: quest(hasError[18]).CopyIcon };
-                                    const openMana = rewardCode(hasError[12]).openMana;
+                                    const obj = { text: intl.string(quest(hasError[13]).t.MSaeTe), icon: quest(hasError[17]).CopyIcon };
+                                    const open = rewardCode(hasError[12]).open;
                                     rewardCode(hasError[12]);
                                     intl = quest(hasError[13]).intl;
-                                    openMana("TOAST_QUEST_REWARD_CODE_COPIED", obj);
+                                    open("TOAST_QUEST_REWARD_CODE_COPIED", obj);
                                   });
                                 }
                               };
@@ -259,8 +258,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
                                         }
                                         let tmp61 = null != code4;
                                         if (tmp61) {
-                                          const obj3 = { IconComponent: tmp(hasError[18]).CopyIcon };
-                                          const Icon = tmp(tmp2[24]).TableRow.Icon;
+                                          const obj3 = { IconComponent: tmp(hasError[17]).CopyIcon };
+                                          const Icon = tmp(tmp2[23]).TableRow.Icon;
                                           tmp61 = closure_8(Icon, obj3);
                                         }
                                         let code5;
@@ -389,7 +388,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
                                                       }
                                                     }
                                                     const obj7 = { disabled: tmp41, onPress: claimRewardCodePrimaryCtaClickHandler, grow: true, text: tmp88 };
-                                                    const tmp92 = closure_8(tmp(hasError[26]).Button, obj7);
+                                                    const tmp92 = closure_8(tmp(hasError[25]).Button, obj7);
                                                     cResult[68] = claimRewardCodePrimaryCtaClickHandler;
                                                     cResult[69] = tmp41;
                                                     cResult[70] = tmp88;
@@ -440,8 +439,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
                                           tmp69 = tmp72;
                                         }
                                       }
-                                      const obj12 = { hasIcons: false, children: closure_8(tmp(hasError[24]).TableRow, obj13) };
-                                      const TableRowGroup = tmp(tmp2[25]).TableRowGroup;
+                                      const obj12 = { hasIcons: false, children: closure_8(tmp(hasError[23]).TableRow, obj13) };
+                                      const TableRowGroup = tmp(tmp2[24]).TableRowGroup;
                                       obj13 = { label: code2, trailing: tmp59, onPress: tmp65 };
                                       const tmp68 = closure_8(TableRowGroup, obj12);
                                       cResult[49] = code2;
@@ -455,7 +454,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
                               }
                             }
                             const obj14 = { quest, rewardCode };
-                            const tmpResult9 = tmp(hasError[19]);
+                            const tmpResult9 = tmp(hasError[18]);
                             const rewardCodeRedemptionInstructions = tmpResult9.getRewardCodeRedemptionInstructions(obj14);
                             let tmp46 = isFetchingRewardCode || isClaimingReward;
                             if (!tmp46) {
@@ -465,11 +464,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
                               }
                               tmp46 = null == code10;
                             }
-                            BottomSheet = tmp(tmp2[20]).BottomSheet;
+                            BottomSheet = tmp(tmp2[19]).BottomSheet;
                             const _Symbol = Symbol;
                             if (cResult[46] === Symbol.for("react.memo_cache_sentinel")) {
                               const obj15 = { title: intl.string(tmp(hasError[13]).t.srzsU2) };
-                              const BottomSheetTitleHeader = tmp(tmp2[21]).BottomSheetTitleHeader;
+                              const BottomSheetTitleHeader = tmp(tmp2[20]).BottomSheetTitleHeader;
                               intl = tmp(tmp2[13]).intl;
                               const tmp50 = closure_8(BottomSheetTitleHeader, obj15);
                               cResult[46] = tmp50;
@@ -481,8 +480,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
                             let tmp52 = null != rewardCode && null != rewardCodeRedemptionInstructions;
                             if (tmp52) {
                               const obj16 = { style: tmp5.redemptionInstructions, variant: "text-md/normal", color: "text-default", children: tmp4Result.parse(rewardCodeRedemptionInstructions, true, { allowLinks: true }) };
-                              const Text = tmp(tmp2[22]).Text;
-                              tmp4Result = tmp4(hasError[23]);
+                              const Text = tmp(tmp2[21]).Text;
+                              tmp4Result = tmp4(hasError[22]);
                               tmp52 = closure_8(Text, obj16);
                             }
                             cResult[32] = isClaimingReward;
@@ -514,7 +513,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
                   }
                 }
               }
-              const obj17 = { claimCode, fetchCode, hasError, onDismiss: tmp4(hasError[15]).hideActionSheet, quest, questContent, questContentPosition, redemptionLink: redemptionLink1, sourceQuestContent };
+              const obj17 = { claimCode, fetchCode, hasError, onDismiss: tmp4(hasError[14]).hideActionSheet, quest, questContent, questContentPosition, redemptionLink: redemptionLink1, sourceQuestContent };
               cResult[21] = claimCode;
               cResult[22] = redemptionLink1;
               cResult[23] = fetchCode;
@@ -527,8 +526,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
               tmp35 = obj17;
             }
           }
-          const getRewardCodeQuestReward = tmp(tmp2[16]).getRewardCodeQuestReward;
-          tmp(hasError[16]);
+          const getRewardCodeQuestReward = tmp(tmp2[15]).getRewardCodeQuestReward;
+          tmp(hasError[15]);
           if (tmp16) {
             const obj18 = { quest, idx: tier1 };
             tier1 = undefined;
@@ -604,16 +603,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
     let intl;
     const tmp = hasError;
     if (tmp) {
-      const obj = { key: "CLAIM_QUEST_REWARD_ERROR", content: intl.string(intl4.t.CKsXk3), icon: AssetRegistryDefault };
+      const obj = { text: intl.string(intl4.t.CKsXk3), variant: "critical" };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl4.intl;
-      open(obj);
+      open("CLAIM_QUEST_REWARD_ERROR", obj);
       const obj2 = ActionSheetActionCreatorsDefault;
       obj2.hideActionSheet();
     }
   }, items1);
-  const obj4 = quest(hasError[16]);
+  const obj4 = quest(hasError[15]);
   const result = obj4.isTieredRewardCodeQuest({ quest });
   react = result;
   const items2 = [result, quest, ];
@@ -668,22 +667,22 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
   }, items3);
   const items4 = [rewardCode];
   const tmp4Result = tmp4(hasError[11]);
-  const obj5 = { claimCode, fetchCode, hasError, onDismiss: tmp(hasError[15]).hideActionSheet, quest, questContent, questContentPosition, redemptionLink: memo1, sourceQuestContent };
+  const obj5 = { claimCode, fetchCode, hasError, onDismiss: tmp(hasError[14]).hideActionSheet, quest, questContent, questContentPosition, redemptionLink: memo1, sourceQuestContent };
   const claimRewardCodePrimaryCtaClickHandler = tmp4Result.useClaimRewardCodePrimaryCtaClickHandler(obj5);
   const callback = obj3.useCallback(() => {
     if (null != rewardCode) {
       let obj = ClipboardUtils;
       obj.copy(tmp.code, () => {
         let intl;
-        const obj = { text: intl.string(quest(hasError[13]).t.MSaeTe), icon: quest(hasError[18]).CopyIcon };
-        const openMana = rewardCode(hasError[12]).openMana;
+        const obj = { text: intl.string(quest(hasError[13]).t.MSaeTe), icon: quest(hasError[17]).CopyIcon };
+        const open = rewardCode(hasError[12]).open;
         rewardCode(hasError[12]);
         intl = quest(hasError[13]).intl;
-        openMana("TOAST_QUEST_REWARD_CODE_COPIED", obj);
+        open("TOAST_QUEST_REWARD_CODE_COPIED", obj);
       });
     }
   }, items4);
-  const tmp4Result2 = tmp4(hasError[19]);
+  const tmp4Result2 = tmp4(hasError[18]);
   const rewardCodeRedemptionInstructions = tmp4Result2.getRewardCodeRedemptionInstructions({ quest, rewardCode });
   if (!isFetchingRewardCode) {
     isFetchingRewardCode = isClaimingReward;
@@ -696,16 +695,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
     isFetchingRewardCode = null == code;
   }
   const obj6 = { header: closure_8(BottomSheetTitleHeader, obj7), startExpanded: true, children: null };
-  BottomSheet = tmp4(tmp2[20]).BottomSheet;
+  BottomSheet = tmp4(tmp2[19]).BottomSheet;
   obj7 = { title: intl.string(tmp4(hasError[13]).t.srzsU2) };
-  BottomSheetTitleHeader = tmp4(tmp2[21]).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp4(tmp2[20]).BottomSheetTitleHeader;
   intl = tmp4(tmp2[13]).intl;
   const obj8 = { style: tmp3.wrapper, children: null };
   let tmp16Result = null != rewardCode && null != rewardCodeRedemptionInstructions;
   if (tmp16Result) {
     const obj9 = { style: tmp3.redemptionInstructions, variant: "text-md/normal", color: "text-default", children: tmpResult.parse(rewardCodeRedemptionInstructions, true, { allowLinks: true }) };
-    const Text = tmp4(tmp2[22]).Text;
-    tmpResult = tmp(hasError[23]);
+    const Text = tmp4(tmp2[21]).Text;
+    tmpResult = tmp(hasError[22]);
     tmp16Result = tmp16(Text, obj9);
   }
   const items5 = [tmp16Result, ];
@@ -714,9 +713,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
     code1 = rewardCode.code;
   }
   const obj10 = { style: null == code1 && tmp3.codeCopyWrapperLoading, children: closure_8(TableRowGroup, obj13) };
-  TableRowGroup = tmp4(tmp2[25]).TableRowGroup;
+  TableRowGroup = tmp4(tmp2[24]).TableRowGroup;
   let code2;
-  const TableRow = tmp4(tmp2[24]).TableRow;
+  const TableRow = tmp4(tmp2[23]).TableRow;
   if (rewardCode != null) {
     code2 = rewardCode.code;
   }
@@ -727,8 +726,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestR
   }
   tmp16Result3 = null != code3;
   if (tmp16Result3) {
-    const obj12 = { IconComponent: tmp4(hasError[18]).CopyIcon };
-    const Icon = tmp4(tmp2[24]).TableRow.Icon;
+    const obj12 = { IconComponent: tmp4(hasError[17]).CopyIcon };
+    const Icon = tmp4(tmp2[23]).TableRow.Icon;
     tmp16Result3 = tmp16(Icon, obj12);
   }
   let code4;
@@ -804,7 +803,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestRewardC
   const tmpResult = questId(questContentPosition[10]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (null == stateFromStores) {
-    const obj4 = questContent(questContentPosition[15]);
+    const obj4 = questContent(questContentPosition[14]);
     obj4.hideActionSheet();
     tmp9 = null;
   } else {
@@ -827,7 +826,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestRewardC
             }
           }
           const obj2 = { overrideVisibility: true, questOrQuests: stateFromStores, questContent, questContentPosition, sourceQuestContent, children: tmp8 };
-          const tmp11 = closure_8(questId(questContentPosition[27]).QuestContentImpressionTrackerNative, obj2);
+          const tmp11 = closure_8(questId(questContentPosition[26]).QuestContentImpressionTrackerNative, obj2);
           cResult[8] = stateFromStores;
           cResult[9] = questContent;
           cResult[10] = questContentPosition;
@@ -861,7 +860,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestRewardC
   const stateFromStores = obj.useStateFromStores(items, () => QuestStore.getQuest(require));
   const tmp = require;
   if (null == stateFromStores) {
-    const obj3 = questContent(questContentPosition[15]);
+    const obj3 = questContent(questContentPosition[14]);
     obj3.hideActionSheet();
     tmp5 = null;
   } else {
@@ -876,7 +875,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestRewardC
           return metroImportAll(closure_11, obj);
         }
     };
-    tmp5 = closure_8(tmp(tmp2[27]).QuestContentImpressionTrackerNative, obj2);
+    tmp5 = closure_8(tmp(tmp2[26]).QuestContentImpressionTrackerNative, obj2);
   }
   return tmp5;
 });

@@ -1,19 +1,19 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12596
+// Function ID: 12597
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5087, 1126, 5376, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 5379, 2]
 // Exports: getMuteBannerSubtitleFromConfig
 
-// Module 12549 (NotificationSettingsMuteBanner)
+// Module 12596 (NotificationSettingsMuteBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

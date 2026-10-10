@@ -1,16 +1,16 @@
-// Module ID: 13127
-// Function ID: 13128
+// Module ID: 13176
+// Function ID: 13177
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1085, 21, 5091, 558, 576, 1503, 13123, 6205, 9604, 4946, 9270, 1126, 13128, 5087, 6770, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 1503, 13172, 6200, 9633, 4985, 9297, 1126, 13177, 5088, 6773, 2]
 
-// Module 13127 (UserProfileEditNote)
+// Module 13176 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -166,13 +166,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       setOptions = closure_4.setOptions;
       obj2 = closure_0(closure_2[10]);
       obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-        const promise = new Promise(() => { /* body not rendered: F154813 */ });
+        const promise = new Promise(() => { /* body not rendered: F155263 */ });
         return promise;
       });
       obj.headerRight = function headerRight(arg0) {
         let intl;
         let str;
-        let obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F154814 */ } };
+        let obj = { label: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F155264 */ } };
         const HeaderTextButton = userId(onClose[13]).HeaderTextButton;
         const merged = Object.assign(arg0);
         intl = userId(onClose[14]).intl;

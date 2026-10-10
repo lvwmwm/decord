@@ -1,9 +1,9 @@
-// Module ID: 10774
-// Function ID: 10775
+// Module ID: 10809
+// Function ID: 10810
 // Name: EmbeddedAppTypes
 // Dependencies: [2]
 
-// Module 10774 (EmbeddedAppTypes)
+// Module 10809 (EmbeddedAppTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/EmbeddedAppTypes.tsx");

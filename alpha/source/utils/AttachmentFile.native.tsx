@@ -1,14 +1,14 @@
-// Module ID: 7749
-// Function ID: 7750
+// Module ID: 7767
+// Function ID: 7768
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 7740, 7750, 7741, 2]
+// Dependencies: [5, 3, 38, 7758, 7768, 7759, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 7749 (AttachmentFile)
+// Module 7767 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import UploadPlatform from "UploadPlatform" /* 7740 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7750 */;
+import UploadPlatform from "UploadPlatform" /* 7758 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7768 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _getAttachmentFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _cancelGetAttachmentFile() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ obj = function _cancelGetAttachmentFile() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -193,7 +193,7 @@ export const fileIsInAppDir = function fileIsInAppDir(uri) {
     const tmp2 = require;
     if (startsWithResult) {
       const startsWith = replaced.startsWith;
-      const tmp2Result = tmp2(7750);
+      const tmp2Result = tmp2(7768);
       startsWithResult = startsWith(tmp2Result.getAppDir());
     }
     return startsWithResult;

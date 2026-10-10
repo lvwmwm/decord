@@ -1,20 +1,20 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16369
+// Function ID: 16370
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 14904, 16281, 16282, 21, 5091, 587, 1126, 558, 576, 6624, 1503, 16278, 16280, 1105, 16298, 16297, 14210, 14905, 7082, 6637, 6290, 5376, 6652, 6727, 2]
+// Dependencies: [5, 32, 19, 17, 14963, 16348, 16349, 21, 5092, 587, 1126, 558, 576, 6625, 1503, 16345, 16347, 1105, 16365, 16364, 14265, 14964, 7088, 6638, 6285, 5379, 6653, 6728, 2]
 
-// Module 16302 (RegisterDisplayName)
+// Module 16369 (RegisterDisplayName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14904 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16281 */;
-import RegistrationConstants from "RegistrationConstants" /* 16282 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14963 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16348 */;
+import RegistrationConstants from "RegistrationConstants" /* 16349 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -662,7 +662,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterDisp
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -694,7 +694,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterDisp
               const obj4 = globalName(first1[16]);
               const result = obj4.handleNextOrSubmitRegistration(globalName(first1[17]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -782,7 +782,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterDisp
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -814,7 +814,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterDisp
               const obj4 = globalName(str[16]);
               const result = obj4.handleNextOrSubmitRegistration(globalName(str[17]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else if (arg0 === 1) {
             c3 = 3;

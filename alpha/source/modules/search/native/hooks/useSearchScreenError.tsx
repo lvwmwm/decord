@@ -1,21 +1,20 @@
-// Module ID: 17326
-// Function ID: 17327
+// Module ID: 17398
+// Function ID: 17399
 // Name: useSearchScreenError
-// Dependencies: [19, 6069, 12004, 9285, 558, 576, 11997, 504, 1126, 4768, 5009, 2]
+// Dependencies: [19, 6062, 12048, 9312, 558, 576, 12041, 504, 1126, 4809, 2]
 
-// Module 17326 (useSearchScreenError)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5009 */;
-import SearchConstants from "SearchConstants" /* 9285 */;
-import SearchUtils from "SearchUtils" /* 11997 */;
+// Module 17398 (useSearchScreenError)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import SearchConstants from "SearchConstants" /* 9312 */;
+import SearchUtils from "SearchUtils" /* 12041 */;
 import react from "react" /* 19 */;
-import SearchMessageStore_mod from "SearchMessageStore" /* 6069 */;
-import SearchQueryStore from "SearchQueryStore" /* 12004 */;
+import SearchMessageStore_mod from "SearchMessageStore" /* 6062 */;
+import SearchQueryStore from "SearchQueryStore" /* 12048 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let content;
+let text;
 
 let SearchMessageStore = SearchMessageStore_mod;
 let closure_6 = SearchConstants.SEARCH_MESSAGE_TAB_SENTINEL;
@@ -32,8 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSe
   const tab = searchContext.tab;
   const hasListItems = searchContext.hasListItems;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SearchQueryStore, ];
-    items[1] = SearchMessageStore;
+    const items = [SearchQueryStore, SearchMessageStore];
     cResult[0] = items;
     first = items;
   } else {
@@ -62,8 +60,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSe
     } else {
       tmp8 = cResult[5];
     }
-    content = tmp8;
-    SearchMessageStore = content.useRef(null);
+    text = tmp8;
+    SearchMessageStore = text.useRef(null);
     if (cResult[6] === stateFromStores) {
       let tmp13;
       if (cResult[7] === tmp8) {
@@ -82,14 +80,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSe
           }
         }
       }
-      const obj2 = { hasError: null != stateFromStores, errorText: tmp8, isErrorFullscreen: null != stateFromStores && !hasListItems, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: null };
+      let obj2 = { hasError: null != stateFromStores, errorText: tmp8, isErrorFullscreen: null != stateFromStores && !hasListItems, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: null };
       class C {
         constructor() {
           if (stateFromStores !== ref.current) {
-            const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content };
-            const open = ToastActionCreatorsDefault.open;
-            ToastActionCreatorsDefault;
-            open(obj);
+            const obj2 = { text, variant: "critical" };
+            const obj = ToastActionCreatorsDefault;
+            obj.open("SEARCH_ERROR_TOAST", obj2);
             tmp2.current = tmp;
           }
         }
@@ -105,10 +102,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSe
     class C {
       constructor() {
         if (stateFromStores !== ref.current) {
-          const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          open(obj);
+          const obj2 = { text, variant: "critical" };
+          const obj = ToastActionCreatorsDefault;
+          obj.open("SEARCH_ERROR_TOAST", obj2);
           tmp2.current = tmp;
         }
       }
@@ -153,14 +149,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSe
   }
   ref = anyErrorMessage.useRef(null);
   const items1 = [stateFromStores, anyErrorMessage];
-  const obj2 = { hasError: null != stateFromStores, errorText: anyErrorMessage, isErrorFullscreen: tmp5, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: callback };
+  let obj2 = { hasError: null != stateFromStores, errorText: anyErrorMessage, isErrorFullscreen: tmp5, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: callback };
   tmp5 = null != stateFromStores;
   callback = anyErrorMessage.useCallback(() => {
     if (stateFromStores !== ref.current) {
-      const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content: anyErrorMessage };
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      open(obj);
+      const obj2 = { text: anyErrorMessage, variant: "critical" };
+      const obj = ToastActionCreatorsDefault;
+      obj.open("SEARCH_ERROR_TOAST", obj2);
       tmp2.current = tmp;
     }
   }, items1);

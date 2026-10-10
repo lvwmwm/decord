@@ -1,17 +1,19 @@
-// Module ID: 17002
-// Function ID: 17003
+// Module ID: 17070
+// Function ID: 17071
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 4707, 4719, 1390, 10617, 558, 576, 6939, 504, 17003, 5418, 5406, 2]
+// Dependencies: [19, 4748, 4760, 4963, 1390, 10651, 558, 576, 6945, 504, 17071, 5421, 5409, 2]
 // Exports: conjureSettingPickedIds, withSavedPicks
 
-// Module 17002 (useConjureSettingPickerOptions)
-import NicknameUtils from "NicknameUtils" /* 5406 */;
-import ConjureUtils from "ConjureUtils" /* 6939 */;
+// Module 17070 (useConjureSettingPickerOptions)
+import NicknameUtils from "NicknameUtils" /* 5409 */;
+import ConjureUtils from "ConjureUtils" /* 6945 */;
+import conjureGuildPickerSources from "conjureGuildPickerSources" /* 17071 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4707 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import StreamerModeStore from "StreamerModeStore" /* 4963 */;
 import UserStore from "UserStore" /* 1390 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   dependencyMap = type;
   const tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(17);
+  const cResult = obj.c(21);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildChannelStore];
     cResult[0] = items;
@@ -103,7 +105,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   if (cResult[1] === type.type) {
     let tmp6;
     let tmp7;
-    let tmp14;
+    let tmp16;
+    let tmp15;
+    let tmp19;
     if (cResult[2] === arg0) {
       tmp6 = cResult[3];
       tmp7 = cResult[4];
@@ -111,131 +115,139 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
     let tmp11 = null;
-    const useConjureGuildRoles = tmp(17003).useConjureGuildRoles;
-    tmp(17003);
+    const useConjureGuildRoles = tmp(17071).useConjureGuildRoles;
+    tmp(17071);
     if ("role" === type.type) {
       tmp11 = arg0;
     }
     const conjureGuildRoles = useConjureGuildRoles(tmp11);
     let tmp13 = null;
-    const useConjureGuildMemberUsers = tmp(17003).useConjureGuildMemberUsers;
-    tmp(17003);
+    const useConjureGuildMemberUsers = tmp(17071).useConjureGuildMemberUsers;
+    tmp(17071);
     if ("user" === type.type) {
       tmp13 = arg0;
     }
     const conjureGuildMemberUsers = useConjureGuildMemberUsers(tmp13);
+    class S {
+      constructor() {
+        let channels = null;
+        if (null != closure_0) {
+          channels = null;
+          if ("channel" === type.type) {
+            channels = GuildChannelStore.getChannels(tmp);
+          }
+        }
+        return channels;
+      }
+    }
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [StreamerModeStore];
+      const fn = function j() {
+        return StreamerModeStore.hidePersonalInformation;
+      };
+      cResult[5] = items1;
+      cResult[6] = fn;
+      tmp16 = fn;
+      tmp15 = items1;
+    } else {
+      tmp15 = cResult[5];
+      tmp16 = cResult[6];
+    }
+    const tmpResult7 = tmp(504);
+    const stateFromStores1 = tmpResult7.useStateFromStores(tmp15, tmp16);
     type = type.type;
     if ("channel" === type) {
-      let items1;
-      if (cResult[5] === stateFromStores) {
-        let tmp21;
-        if (cResult[6] === type.channel_filter) {
-          tmp21 = cResult[7];
+      if (cResult[7] === stateFromStores) {
+        let tmp23;
+        if (cResult[8] === type.channel_filter) {
+          tmp23 = cResult[9];
         }
-        tmp14 = tmp21;
+        tmp19 = tmp23;
       }
-      if (null == stateFromStores) {
-        items1 = [];
-      } else {
-        const tmpResult6 = tmp(6939);
-        const result = tmpResult6.conjureSettingChannels(stateFromStores, type.channel_filter);
-        items1 = result.map((id) => {
+      let mapped = null;
+      if (null != stateFromStores) {
+        const tmpResult8 = tmp(6945);
+        let result = tmpResult8.conjureSettingChannels(stateFromStores, type.channel_filter);
+        mapped = result.map((id) => {
           let obj2;
-          const obj = { id: id.id, label: obj2.computeChannelName(id, UserStore, RelationshipStore, true) };
-          obj2 = closure_0(type[10]);
+          const obj = { id: id.id, label: obj2.computeChannelName(id, UserStore, RelationshipStore) };
+          obj2 = closure_0(type[11]);
           return obj;
         });
       }
-      cResult[5] = stateFromStores;
-      cResult[6] = type.channel_filter;
-      cResult[7] = items1;
-      tmp21 = items1;
+      cResult[7] = stateFromStores;
+      cResult[8] = type.channel_filter;
+      cResult[9] = mapped;
+      tmp23 = mapped;
     } else if ("role" === type) {
-      let tmp18;
-      if (cResult[8] !== conjureGuildRoles) {
-        let tmp19;
-        const _Symbol2 = Symbol;
-        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const fn3 = function _(id) {
-            return { id: id.id, label: id.name };
-          };
-          cResult[10] = fn3;
-          tmp19 = fn3;
+      let tmp20;
+      if (cResult[10] !== conjureGuildRoles) {
+        let tmp21;
+        const _Symbol = Symbol;
+        if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+          class I {
+            constructor(id) {
+              return { id: id.id, label: id.name };
+            }
+          }
+          cResult[12] = I;
+          tmp21 = I;
         } else {
-          tmp19 = cResult[10];
+          class I {
+            constructor(id) {
+              return { id: id.id, label: id.name };
+            }
+          }
         }
-        const mapped = conjureGuildRoles.map(tmp19);
-        cResult[8] = conjureGuildRoles;
-        cResult[9] = mapped;
-        tmp18 = mapped;
+        const mapped1 = conjureGuildRoles.map(tmp21);
+        cResult[10] = conjureGuildRoles;
+        cResult[11] = mapped1;
+        tmp20 = mapped1;
       } else {
-        tmp18 = cResult[9];
-      }
-      tmp14 = tmp18;
-    } else if ("user" === type) {
-      let tmp16;
-      if (cResult[11] === arg0) {
-        let tmp15;
-        if (cResult[12] === conjureGuildMemberUsers) {
-          tmp15 = cResult[13];
+        class I {
+          constructor(id) {
+            return { id: id.id, label: id.name };
+          }
         }
-        tmp14 = tmp15;
       }
-      if (cResult[14] !== arg0) {
-        const fn2 = function k(id) {
-          let obj2;
-          const obj = { id: id.id, label: obj2.getName(closure_0, null, id) };
-          obj2 = NicknameUtils;
-          return obj;
-        };
-        cResult[14] = arg0;
-        cResult[15] = fn2;
-        tmp16 = fn2;
-      } else {
-        tmp16 = cResult[15];
-      }
-      const mapped1 = conjureGuildMemberUsers.map(tmp16);
-      cResult[11] = arg0;
-      cResult[12] = conjureGuildMemberUsers;
-      cResult[13] = mapped1;
-      tmp15 = mapped1;
+      tmp19 = tmp20;
     } else {
-      const _Symbol = Symbol;
-      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        const items2 = [];
-        cResult[16] = items2;
-        tmp14 = items2;
-      } else {
-        tmp14 = cResult[16];
+      class I {
+        constructor(id) {
+          return { id: id.id, label: id.name };
+        }
       }
     }
-    return tmp14;
+    return tmp19;
   }
-  const fn = function c() {
-    let channels = null;
-    if (null != closure_0) {
-      channels = null;
-      if ("channel" === type.type) {
-        channels = GuildChannelStore.getChannels(tmp);
+  class S {
+    constructor() {
+      let channels = null;
+      if (null != closure_0) {
+        channels = null;
+        if ("channel" === type.type) {
+          channels = GuildChannelStore.getChannels(tmp);
+        }
       }
+      return channels;
     }
-    return channels;
-  };
-  const items3 = [arg0, type.type];
+  }
+  const items2 = [arg0, type.type];
   cResult[1] = type.type;
   cResult[2] = arg0;
-  cResult[3] = fn;
-  cResult[4] = items3;
-  tmp7 = items3;
-  tmp6 = fn;
+  cResult[3] = S;
+  cResult[4] = items2;
+  tmp7 = items2;
+  tmp6 = S;
 }) : (function useConjureSettingPickerOptions(arg0, type) {
   let closure_0;
   let conjureGuildRoles;
+  let stateFromStores1;
   _require = arg0;
   dependencyMap = type;
   const tmp = _require;
   let obj = require("get initialized");
-  let items = [conjureGuildRoles];
+  const items = [conjureGuildRoles];
   const items1 = [arg0, type.type];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let channels = null;
@@ -255,47 +267,58 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(17003).useConjureGuildMemberUsers;
-  tmp(17003);
+  const useConjureGuildMemberUsers = tmp(17071).useConjureGuildMemberUsers;
+  tmp(17071);
   if ("user" === type.type) {
     tmp8 = arg0;
   }
   const conjureGuildMemberUsers = useConjureGuildMemberUsers(tmp8);
-  const items2 = [stateFromStores, , , , , ];
-  ({ channel_filter: arr3[1], type: arr3[2] } = type);
-  items2[3] = arg0;
-  items2[4] = conjureGuildRoles;
-  items2[5] = conjureGuildMemberUsers;
+  const items2 = [stateFromStores1];
+  const tmpResult2 = tmp(504);
+  stateFromStores1 = tmpResult2.useStateFromStores(items2, () => stateFromStores1.hidePersonalInformation);
+  const items3 = [stateFromStores, , , , , , ];
+  ({ channel_filter: arr4[1], type: arr4[2] } = type);
+  items3[3] = arg0;
+  items3[4] = stateFromStores1;
+  items3[5] = conjureGuildRoles;
+  items3[6] = conjureGuildMemberUsers;
   return stateFromStores.useMemo(() => {
     type = type.type;
     if ("channel" === type) {
-      let items;
-      if (null == stateFromStores) {
-        items = [];
-      } else {
+      let mapped = null;
+      if (null != stateFromStores) {
         let obj = ConjureUtils;
-        const result = obj.conjureSettingChannels(tmp4, tmp.channel_filter);
-        items = result.map((id) => {
+        let result = obj.conjureSettingChannels(tmp4, tmp.channel_filter);
+        mapped = result.map((id) => {
           let obj2;
-          const obj = { id: id.id, label: obj2.computeChannelName(id, closure_1_5, conjureGuildMemberUsers, true) };
-          obj2 = closure_1_0(type[10]);
+          const obj = { id: id.id, label: obj2.computeChannelName(id, closure_1_6, conjureGuildMemberUsers) };
+          obj2 = closure_1_0(type[11]);
           return obj;
         });
       }
-      return items;
+      return mapped;
     } else if ("role" === type) {
       return conjureGuildRoles.map((id) => ({ id: id.id, label: id.name }));
     } else if ("user" === type) {
       return conjureGuildMemberUsers.map((id) => {
-        let obj2;
-        const obj = { id: id.id, label: obj2.getName(closure_1_0, null, id) };
-        obj2 = closure_0(type[11]);
-        return obj;
+        let obj3;
+        let obj4;
+        const obj = closure_0(type[10]);
+        const result = obj.conjureMemberUsername(id, stateFromStores1);
+        const obj2 = { id: id.id, label: obj3.getName(closure_1_0, null, id) };
+        obj3 = closure_0(type[12]);
+        if ("" === result) {
+          obj4 = {};
+        } else {
+          obj4 = { description: result };
+        }
+        const merged = Object.assign(obj4);
+        return obj2;
       });
     } else {
       return [];
     }
-  }, items2);
+  }, items3);
 });
 let result = size.fileFinishedImporting("modules/conjure/settings/useConjureSettingPickerOptions.tsx");
 

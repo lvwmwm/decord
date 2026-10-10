@@ -1,25 +1,25 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 15174
+// Function ID: 15175
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 7253, 21, 5091, 587, 558, 576, 7721, 7720, 11487, 1126, 2565, 5087, 15113, 15115, 6191, 5941, 15118, 2000, 1200, 15120, 2]
+// Dependencies: [19, 17, 7259, 21, 5092, 587, 558, 576, 7739, 7738, 11533, 1126, 2568, 5088, 15175, 15176, 6184, 5934, 15179, 2000, 1200, 15181, 2]
 
-// Module 15112 (FamilyCenterAcceptedLinks)
+// Module 15174 (FamilyCenterAcceptedLinks)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef2565 from "module_2565" /* 2565 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import useUserLinks from "useUserLinks" /* 7720 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7721 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 11487 */;
-import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 15113 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15115 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import useUserLinks from "useUserLinks" /* 7738 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7739 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 11533 */;
+import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 15175 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15176 */;
 import react from "react" /* 19 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7253 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7259 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,11 +40,11 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
   if (undefined !== str) {
     let obj2 = { otherUser: str, actions: closure_6(PressableOpacity, obj) };
     const tmp7 = FamilyCenterLinkRowDefault;
-    PressableOpacity = str(6191).PressableOpacity;
+    PressableOpacity = str(6184).PressableOpacity;
     const intl = str(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     let str1;
-    const T7DUoU = _modDef2565.T7DUoU;
+    const T7DUoU = _modDef2568.T7DUoU;
     const tmp5 = importDefault;
     if (str != null) {
       str1 = str.toString();
@@ -55,13 +55,13 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       onPress: function handleDisconnect() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { otherUser: str };
-          obj.pushLazy(asyncRequire(15118, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(15179, dependencyMap.paths), obj2);
         },
       style: tmp.actionButton,
       children: closure_6(Icon, obj4)
     };
     obj3 = { name: str1 };
-    obj4 = { size: str(1200).Icon.Sizes.SMALL, disableColor: true, source: tmp5(15120) };
+    obj4 = { size: str(1200).Icon.Sizes.SMALL, disableColor: true, source: tmp5(15181) };
     Icon = tmp8(1200).Icon;
     tmp4Result = tmp4(tmp7, obj2);
   }
@@ -139,7 +139,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
       }
       if (0 === activeLinkUsers.length) {
         const obj5 = { style: tmp4.empty, children: metroRequire(tmp5Result, obj6) };
-        obj6 = { text: intl3.string(_modDef2565.C4ScLD) };
+        obj6 = { text: intl3.string(_modDef2568.C4ScLD) };
         tmp5Result = FamilyCenterEmptyDefault;
         intl3 = tmp(1126).intl;
         mapped = metroRequire(View, obj5);
@@ -162,11 +162,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     tmp14 = tmp16;
   }
   const obj8 = { count: activeLinkUsers.length, max: tmp7 };
-  const useAgeSpecificText = tmp(11487).useAgeSpecificText;
+  const useAgeSpecificText = tmp(11533).useAgeSpecificText;
   const intl = tmp(1126).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef2565["+tnO34"], obj8);
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef2568["+tnO34"], obj8);
   const intl2 = tmp(1126).intl;
-  const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2565["pu6/U0"], obj8);
+  const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2568["pu6/U0"], obj8);
   cResult[0] = activeLinkUsers.length;
   cResult[1] = tmp7;
   cResult[2] = useAgeSpecificText;
@@ -189,10 +189,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const useAgeSpecificText = useAgeSpecificText2.useAgeSpecificText;
   useAgeSpecificText2;
   const intl = tmp5(1126).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef2565["+tnO34"], obj2);
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef2568["+tnO34"], obj2);
   const intl2 = tmp5(1126).intl;
   const obj3 = { style: tmp.container, children: items };
-  const ageSpecificText = useAgeSpecificText(formatToPlainStringResult, intl2.formatToPlainString(tmp2(2565)["pu6/U0"], obj2));
+  const ageSpecificText = useAgeSpecificText(formatToPlainStringResult, intl2.formatToPlainString(tmp2(2568)["pu6/U0"], obj2));
   items = [, ];
   const obj4 = { style: tmp.header, variant: "eyebrow", color: "text-default", children: ageSpecificText };
   items[0] = metroRequire(Text_Text.Text, obj4);
@@ -200,7 +200,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const tmp9 = metroImportDefault;
   if (0 === activeLinkUsers.length) {
     const obj6 = { style: tmp.empty, children: metroRequire(tmp2Result, obj7) };
-    obj7 = { text: intl3.string(_modDef2565.C4ScLD) };
+    obj7 = { text: intl3.string(_modDef2568.C4ScLD) };
     tmp2Result = FamilyCenterEmptyDefault;
     intl3 = tmp5(1126).intl;
     mapped = tmp11(tmp10, obj6);

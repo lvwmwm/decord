@@ -1,23 +1,23 @@
-// Module ID: 13956
-// Function ID: 13957
+// Module ID: 14010
+// Function ID: 14011
 // Name: ActivityTrackingStore
-// Dependencies: [2019, 1244, 502, 2037, 7106, 5109, 2115, 1085, 1102, 510, 7108, 10633, 2059, 7434, 504, 584, 2]
+// Dependencies: [2019, 1244, 502, 2037, 7112, 5110, 2116, 1085, 1102, 510, 7114, 10667, 2060, 7434, 504, 584, 2]
 
-// Module 13956 (ActivityTrackingStore)
+// Module 14010 (ActivityTrackingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7434 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 10633 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 10667 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import DetectableGameStore from "DetectableGameStore" /* 2037 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7106 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7112 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,7 +73,7 @@ function updateActivity(applicationId) {
     applicationId = applicationId.applicationId;
     const self = this;
     const self2 = this;
-    const interval = new tmp3(2059).Interval();
+    const interval = new tmp3(2060).Interval();
     tmp12[applicationId] = interval;
     interval.start(tmp2, () => {
       updateActivity(applicationId);

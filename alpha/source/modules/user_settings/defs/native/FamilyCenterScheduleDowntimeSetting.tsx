@@ -1,14 +1,14 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15191
+// Function ID: 15192
 // Name: FamilyCenterScheduleDowntimeSetting
-// Dependencies: [7974, 1085, 10629, 1126, 2565, 15131, 2]
+// Dependencies: [7992, 1085, 10663, 1126, 2568, 15192, 2]
 
-// Module 15130 (FamilyCenterScheduleDowntimeSetting)
+// Module 15191 (FamilyCenterScheduleDowntimeSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2565 from "module_2565" /* 2565 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const UserSettingsSections = Constants.UserSettingsSections;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2565["w/ISB8"]);
+    return intl.string(_modDef2568["w/ISB8"]);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   unsearchable: true,

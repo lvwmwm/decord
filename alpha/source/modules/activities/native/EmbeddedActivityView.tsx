@@ -1,25 +1,25 @@
-// Module ID: 10884
-// Function ID: 10885
+// Module ID: 10924
+// Function ID: 10925
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 2063, 2024, 1373, 21, 5091, 558, 576, 10882, 1497, 584, 10885, 10886, 10888, 10912, 10878, 504, 10917, 10777, 10918, 5105, 10920, 2]
+// Dependencies: [109, 32, 19, 17, 2064, 2024, 1373, 21, 5092, 558, 576, 10922, 1497, 584, 10925, 10926, 10928, 10952, 10918, 504, 10957, 10812, 10958, 5106, 10960, 2]
 
-// Module 10884 (EmbeddedActivityView)
+// Module 10924 (EmbeddedActivityView)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5105 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10777 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 10885 */;
-import DiscordEnvironment from "DiscordEnvironment" /* 10886 */;
-import activityWebViewController from "activityWebViewController" /* 10888 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10812 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 10925 */;
+import DiscordEnvironment from "DiscordEnvironment" /* 10926 */;
+import activityWebViewController from "activityWebViewController" /* 10928 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import Constants from "Constants" /* 2024 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -356,7 +356,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityView
   const cResult = obj.c(3);
   const tmp2 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = authStore3(metroImportAll, { size: "large" });
+    const tmp6 = syncedClientThemes(metroImportAll, { size: "large" });
     cResult[0] = tmp6;
     first = tmp6;
   } else {
@@ -364,7 +364,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityView
   }
   if (cResult[1] !== tmp2.loadingContainer) {
     const obj2 = { style: tmp2.loadingContainer, children: first };
-    const tmp10 = authStore3(React4, obj2);
+    const tmp10 = syncedClientThemes(React4, obj2);
     cResult[1] = tmp2.loadingContainer;
     cResult[2] = tmp10;
     tmp7 = tmp10;
@@ -373,8 +373,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityView
   }
   return tmp7;
 }) : (function ActivityViewLoadingIndicator() {
-  const obj = { style: closure_16().loadingContainer, children: authStore3(metroImportAll, { size: "large" }) };
-  return authStore3(React4, obj);
+  const obj = { style: closure_16().loadingContainer, children: syncedClientThemes(metroImportAll, { size: "large" }) };
+  return syncedClientThemes(React4, obj);
 });
 let closure_20 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -386,7 +386,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivity
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp9 = authStore3(closure_20, {});
+      const tmp9 = syncedClientThemes(closure_20, {});
       cResult[0] = tmp9;
       first = tmp9;
     } else {
@@ -403,7 +403,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivity
 }) : (function BaseActivityView(showLoadingIndicator) {
   let tmp3;
   if (showLoadingIndicator.showLoadingIndicator) {
-    tmp3 = authStore3(closure_20, {});
+    tmp3 = syncedClientThemes(closure_20, {});
   } else {
     tmp3 = null;
     if (!tmp2) {
@@ -463,7 +463,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Embedd
     }
   }
   const obj2 = { iframeId: first, deepLinkQueryParams: tmp5, applicationId: tmp4 };
-  const BaseEmbeddedAppWebView = tmp(10912).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = tmp(10952).BaseEmbeddedAppWebView;
   const merged = Object.assign(tmp6);
   const tmp14 = closure_14(BaseEmbeddedAppWebView, obj2);
   cResult[6] = tmp4;
@@ -484,7 +484,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Embedd
     deepLinkQueryParams,
     applicationId
   };
-  const BaseEmbeddedAppWebView = applicationId(10912).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = applicationId(10952).BaseEmbeddedAppWebView;
   const merged1 = Object.assign(merged);
   return closure_14(BaseEmbeddedAppWebView, obj);
 });

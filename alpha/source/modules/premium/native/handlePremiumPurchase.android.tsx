@@ -1,18 +1,18 @@
-// Module ID: 10030
-// Function ID: 10031
+// Module ID: 10059
+// Function ID: 10060
 // Name: handlePremiumPurchase
-// Dependencies: [109, 5, 19, 9373, 502, 4734, 7125, 1085, 1096, 1295, 10031, 5632, 10032, 1126, 4750, 5298, 7120, 504, 7163, 10033, 10034, 10023, 10035, 6934, 4743, 9372, 1265, 2]
+// Dependencies: [109, 5, 19, 9400, 502, 4775, 7131, 1085, 1096, 1295, 10060, 5635, 10061, 1126, 4791, 5299, 7126, 504, 7169, 10062, 10063, 10052, 10064, 6940, 4784, 9399, 1265, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 10030 (handlePremiumPurchase)
+// Module 10059 (handlePremiumPurchase)
 import Constants2 from "Constants" /* 1096 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9373 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9400 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4734 */;
-import IAPStore from "IAPStore" /* 7125 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import IAPStore from "IAPStore" /* 7131 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let obj = function _validatePurchase() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ let obj = function _validatePurchase() {
             } else {
               price = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           }
         } catch (tmp19) {

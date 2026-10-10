@@ -1,14 +1,14 @@
-// Module ID: 18022
-// Function ID: 18023
+// Module ID: 18094
+// Function ID: 18095
 // Name: FramePanelUtils
-// Dependencies: [10772, 10767, 6074, 558, 576, 504, 2]
+// Dependencies: [10807, 10802, 6067, 558, 576, 504, 2]
 // Exports: isFramePanelFullscreen
 
-// Module 18022 (FramePanelUtils)
+// Module 18094 (FramePanelUtils)
 import react from "react" /* 576 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6074 */;
-import FramesConstants from "FramesConstants" /* 10767 */;
-import FramesStore from "FramesStore" /* 10772 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import FramesConstants from "FramesConstants" /* 10802 */;
+import FramesStore from "FramesStore" /* 10807 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

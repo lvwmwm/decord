@@ -1,13 +1,13 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16344
+// Function ID: 16345
 // Name: createChatPanelNativeStackNavigator
-// Dependencies: [109, 19, 21, 558, 576, 1504, 4937, 14209, 9317, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1504, 4976, 14264, 9344, 2]
 // Exports: default
 
-// Module 16277 (createChatPanelNativeStackNavigator)
+// Module 16344 (createChatPanelNativeStackNavigator)
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1504 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4937 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -146,7 +146,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPan
                                       addListener = tmp.addListener;
                                       if (addListener != null) {
                                         str = "tabPress";
-                                        addListenerResult = addListener("tabPress", () => { /* body not rendered: F147205 */ });
+                                        addListenerResult = addListener("tabPress", () => { /* body not rendered: F147653 */ });
                                       }
                                     }
                                     return addListenerResult;
@@ -167,7 +167,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPan
                               addListener = tmp.addListener;
                               if (addListener != null) {
                                 str = "tabPress";
-                                addListenerResult = addListener("tabPress", () => { /* body not rendered: F147205 */ });
+                                addListenerResult = addListener("tabPress", () => { /* body not rendered: F147653 */ });
                               }
                             }
                             return addListenerResult;
@@ -193,7 +193,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPan
                           addListener = tmp.addListener;
                           if (addListener != null) {
                             str = "tabPress";
-                            addListenerResult = addListener("tabPress", () => { /* body not rendered: F147205 */ });
+                            addListenerResult = addListener("tabPress", () => { /* body not rendered: F147653 */ });
                           }
                         }
                         return addListenerResult;
@@ -246,7 +246,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPan
                           addListener = tmp.addListener;
                           if (addListener != null) {
                             str = "tabPress";
-                            addListenerResult = addListener("tabPress", () => { /* body not rendered: F147205 */ });
+                            addListenerResult = addListener("tabPress", () => { /* body not rendered: F147653 */ });
                           }
                         }
                         return addListenerResult;

@@ -1,101 +1,125 @@
 // Module ID: 6404
 // Function ID: 6405
-// Dependencies: [19, 6354, 6341]
-// Exports: runCallback, touchEventTypeToCallbackType, useMemoizedGestureCallbacks
+// Dependencies: [6339]
+// Exports: checkMappingForChangeProperties, flattenAndFilterEvent, getChangeEventCalculator, isEventForHandlerWithTag, isNativeAnimatedEvent, isStateChangeEvent, isTouchEvent, maybeExtractNativeEvent, shouldHandleTouchEvents
 
 // Module 6404
-import react from "react" /* 19 */;
-import TouchEventType from "TouchEventType" /* 6341 */;
-import CALLBACK_TYPE from "CALLBACK_TYPE" /* 6354 */;
+import tagMessage from "tagMessage" /* 6339 */;
 
-const useMemo = react.useMemo;
-function getHandler(arg0, onBegin) {
-  if (CALLBACK_TYPE.CALLBACK_TYPE.BEGAN === arg0) {
-    return onBegin.onBegin;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.START === arg0) {
-    return onBegin.onActivate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.UPDATE === arg0) {
-    return onBegin.onUpdate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.END === arg0) {
-    return onBegin.onDeactivate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.FINALIZE === arg0) {
-    return onBegin.onFinalize;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_DOWN === arg0) {
-    return onBegin.onTouchesDown;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_MOVE === arg0) {
-    return onBegin.onTouchesMove;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_UP === arg0) {
-    return onBegin.onTouchesUp;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_CANCEL === arg0) {
-    return onBegin.onTouchesCancel;
-  }
+function isNativeEvent(arg0) {
+  return "nativeEvent" in arg0;
 }
-let obj = { CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE };
-getHandler.__closure = obj;
-getHandler.__workletHash = 8647314057396;
-getHandler.__initData = { code: "function getHandler_Pnpm_eventHandlersUtilsTs1(type,callbacks){const{CALLBACK_TYPE}=this.__closure;switch(type){case CALLBACK_TYPE.BEGAN:return callbacks.onBegin;case CALLBACK_TYPE.START:return callbacks.onActivate;case CALLBACK_TYPE.UPDATE:return callbacks.onUpdate;case CALLBACK_TYPE.END:return callbacks.onDeactivate;case CALLBACK_TYPE.FINALIZE:return callbacks.onFinalize;case CALLBACK_TYPE.TOUCHES_DOWN:return callbacks.onTouchesDown;case CALLBACK_TYPE.TOUCHES_MOVE:return callbacks.onTouchesMove;case CALLBACK_TYPE.TOUCHES_UP:return callbacks.onTouchesUp;case CALLBACK_TYPE.TOUCHES_CANCEL:return callbacks.onTouchesCancel;}}" };
-function touchEventTypeToCallbackType(arg0) {
-  if (TouchEventType.TouchEventType.TOUCHES_DOWN === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_DOWN;
-  } else if (TouchEventType.TouchEventType.TOUCHES_MOVE === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_MOVE;
-  } else if (TouchEventType.TouchEventType.TOUCHES_UP === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_UP;
-  } else if (TouchEventType.TouchEventType.TOUCHES_CANCEL === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_CANCEL;
+isNativeEvent.__closure = {};
+isNativeEvent.__workletHash = 15502708650016;
+isNativeEvent.__initData = { code: "function isNativeEvent_Pnpm_eventUtilsTs1(event){return'nativeEvent'in event;}" };
+function maybeExtractNativeEvent(nativeEvent) {
+  if (typeof isNativeEvent === "function") {
+    if ("nativeEvent" in nativeEvent) {
+      nativeEvent = nativeEvent.nativeEvent;
+    }
+    return nativeEvent;
   } else {
-    return CALLBACK_TYPE.CALLBACK_TYPE.UNDEFINED;
+    throw new TypeError("Trying to call a non-function");
   }
 }
-touchEventTypeToCallbackType.__closure = { TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE };
-touchEventTypeToCallbackType.__workletHash = 2066229974382;
-touchEventTypeToCallbackType.__initData = { code: "function touchEventTypeToCallbackType_Pnpm_eventHandlersUtilsTs2(eventType){const{TouchEventType,CALLBACK_TYPE}=this.__closure;switch(eventType){case TouchEventType.TOUCHES_DOWN:return CALLBACK_TYPE.TOUCHES_DOWN;case TouchEventType.TOUCHES_MOVE:return CALLBACK_TYPE.TOUCHES_MOVE;case TouchEventType.TOUCHES_UP:return CALLBACK_TYPE.TOUCHES_UP;case TouchEventType.TOUCHES_CANCEL:return CALLBACK_TYPE.TOUCHES_CANCEL;}return CALLBACK_TYPE.UNDEFINED;}" };
-function runCallback(arg0, arg1, arg2) {
-  const tmp = getHandler(arg0, arg1);
-  if (tmp) {
-    tmp(arg2);
-  }
+maybeExtractNativeEvent.__closure = { isNativeEvent };
+maybeExtractNativeEvent.__workletHash = 9418753326359;
+maybeExtractNativeEvent.__initData = { code: "function maybeExtractNativeEvent_Pnpm_eventUtilsTs2(event){const{isNativeEvent}=this.__closure;return isNativeEvent(event)?event.nativeEvent:event;}" };
+function flattenAndFilterEvent(handlerTag) {
+  const obj = { handlerTag: handlerTag.handlerTag };
+  const merged = Object.assign(handlerTag.handlerData);
+  return obj;
 }
-runCallback.__closure = { getHandler };
-runCallback.__workletHash = 9892811129293;
-runCallback.__initData = { code: "function runCallback_Pnpm_eventHandlersUtilsTs3(type,callbacks,event){const{getHandler}=this.__closure;const handler=getHandler(type,callbacks);if(!handler){return;}handler(event);}" };
-({ TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE });
-
-export const useMemoizedGestureCallbacks = function useMemoizedGestureCallbacks(disableReanimated) {
-  let closure_0 = disableReanimated;
-  const items = [, , , , , , , , ];
-  ({ onActivate: arr[0], onBegin: arr[1], onDeactivate: arr[2], onFinalize: arr[3], onTouchesCancel: arr[4], onTouchesDown: arr[5], onTouchesMove: arr[6], onTouchesUp: arr[7], onUpdate: arr[8] } = disableReanimated);
-  return useMemo(() => {
+flattenAndFilterEvent.__closure = {};
+flattenAndFilterEvent.__workletHash = 12741778497058;
+flattenAndFilterEvent.__initData = { code: "function flattenAndFilterEvent_Pnpm_eventUtilsTs3(event){return{handlerTag:event.handlerTag,...event.handlerData};}" };
+function isEventForHandlerWithTag(arg0, handlerTag) {
+  return handlerTag.handlerTag === arg0;
+}
+isEventForHandlerWithTag.__closure = {};
+isEventForHandlerWithTag.__workletHash = 11134871115176;
+isEventForHandlerWithTag.__initData = { code: "function isEventForHandlerWithTag_Pnpm_eventUtilsTs4(handlerTag,event){return event.handlerTag===handlerTag;}" };
+function isNativeAnimatedEvent(onUpdate) {
+  return onUpdate && "_argMapping" in onUpdate;
+}
+isNativeAnimatedEvent.__closure = {};
+isNativeAnimatedEvent.__workletHash = 3439774750008;
+isNativeAnimatedEvent.__initData = { code: "function isNativeAnimatedEvent_Pnpm_eventUtilsTs5(callback){return!!callback&&'_argMapping'in callback;}" };
+const __initData = { code: "function pnpm_eventUtilsTs7(current,previous){const{diffCalculator}=this.__closure;const currentEventData=current.handlerData;const previousEventData=previous?previous.handlerData:null;const changePayload=diffCalculator(currentEventData,previousEventData);current.handlerData={...currentEventData,...changePayload};return current;}" };
+function getChangeEventCalculator(diffCalculator) {
+  let closure_0 = diffCalculator;
+  const fn = function t(handlerData, handlerData2) {
+    handlerData = handlerData.handlerData;
+    let handlerData1 = null;
+    if (handlerData2) {
+      handlerData1 = handlerData2.handlerData;
+    }
     const obj = {};
-    if (onBegin.onBegin) {
-      obj.onBegin = onBegin.onBegin;
+    const tmp2 = closure_0(handlerData, handlerData1);
+    const merged = Object.assign(handlerData);
+    const merged1 = Object.assign(tmp2);
+    handlerData.handlerData = obj;
+    return handlerData;
+  };
+  fn.__closure = { diffCalculator };
+  fn.__workletHash = 10887773943786;
+  fn.__initData = __initData;
+  return fn;
+}
+getChangeEventCalculator.__closure = {};
+getChangeEventCalculator.__workletHash = 1165584403675;
+getChangeEventCalculator.__initData = { code: "function getChangeEventCalculator_Pnpm_eventUtilsTs6(diffCalculator){return function(current,previous){'worklet';const currentEventData=current.handlerData;const previousEventData=previous?previous.handlerData:null;const changePayload=diffCalculator(currentEventData,previousEventData);current.handlerData={...currentEventData,...changePayload};return current;};}" };
+function isTouchEvent(arg0) {
+  return "allTouches" in arg0;
+}
+isTouchEvent.__closure = {};
+isTouchEvent.__workletHash = 14798108877298;
+isTouchEvent.__initData = { code: "function isTouchEvent_Pnpm_eventUtilsTs8(event){return'allTouches'in event;}" };
+function isStateChangeEvent(oldState) {
+  return "oldState" in oldState && undefined !== oldState.oldState;
+}
+isStateChangeEvent.__closure = {};
+isStateChangeEvent.__workletHash = 7295971713196;
+isStateChangeEvent.__initData = { code: "function isStateChangeEvent_Pnpm_eventUtilsTs9(event){return'oldState'in event&&event.oldState!==undefined;}" };
+
+export { maybeExtractNativeEvent };
+export { flattenAndFilterEvent };
+export { isEventForHandlerWithTag };
+export { isNativeAnimatedEvent };
+export const checkMappingForChangeProperties = function checkMappingForChangeProperties(arg0) {
+  const iter = arg0._argMapping[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    if (tmp2) {
+      if ("nativeEvent" in tmp2) {
+        if ("handlerData" in tmp2.nativeEvent) {
+          for (const key10023 in tmp2.nativeEvent.handlerData) {
+            let tmp13 = key10023;
+            if (!key10023.startsWith("change")) {
+              continue;
+            } else {
+              let tmp6 = globalThis;
+              let _Error = Error;
+              let obj = tagMessage;
+              let _HermesInternal = HermesInternal;
+              let str = " is not available when using Animated.Event.";
+              let str2 = "";
+              let self = this;
+              let self2 = this;
+              let error = new Error(obj.tagMessage("" + tmp13 + " is not available when using Animated.Event."));
+              throw error;
+            }
+          }
+        }
+      }
     }
-    if (onBegin.onActivate) {
-      obj.onActivate = onBegin.onActivate;
-    }
-    if (onBegin.onDeactivate) {
-      obj.onDeactivate = onBegin.onDeactivate;
-    }
-    if (onBegin.onFinalize) {
-      obj.onFinalize = onBegin.onFinalize;
-    }
-    if (onBegin.onUpdate) {
-      obj.onUpdate = onBegin.onUpdate;
-    }
-    if (onBegin.onTouchesDown) {
-      obj.onTouchesDown = onBegin.onTouchesDown;
-    }
-    if (onBegin.onTouchesMove) {
-      obj.onTouchesMove = onBegin.onTouchesMove;
-    }
-    if (onBegin.onTouchesUp) {
-      obj.onTouchesUp = onBegin.onTouchesUp;
-    }
-    if (onBegin.onTouchesCancel) {
-      obj.onTouchesCancel = onBegin.onTouchesCancel;
-    }
-    return obj;
-  }, items);
+    continue;
+  }
 };
-export { touchEventTypeToCallbackType };
-export { runCallback };
+export const shouldHandleTouchEvents = function shouldHandleTouchEvents(onTouchesDown) {
+  return onTouchesDown.onTouchesDown || onTouchesDown.onTouchesMove || onTouchesDown.onTouchesUp || onTouchesDown.onTouchesCancel;
+};
+export { getChangeEventCalculator };
+export { isTouchEvent };
+export { isStateChangeEvent };

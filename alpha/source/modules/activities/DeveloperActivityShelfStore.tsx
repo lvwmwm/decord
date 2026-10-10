@@ -1,13 +1,13 @@
-// Module ID: 9046
-// Function ID: 9047
+// Module ID: 9065
+// Function ID: 9066
 // Name: DeveloperActivityShelfStore
-// Dependencies: [8594, 504, 2041, 584, 2]
+// Dependencies: [8610, 504, 2041, 584, 2]
 
-// Module 9046 (DeveloperActivityShelfStore)
+// Module 9065 (DeveloperActivityShelfStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8594 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8610 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_5;

@@ -1,29 +1,29 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 14864
+// Function ID: 14865
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7272, 7263, 1085, 21, 5091, 587, 558, 576, 8294, 8278, 6848, 6872, 1265, 8279, 8275, 8272, 1126, 5087, 8280, 6836, 10060, 504, 14809, 8274, 8295, 14810, 13405, 13406, 8281, 10476, 5388, 2]
+// Dependencies: [32, 19, 17, 7279, 7269, 1085, 21, 5092, 587, 558, 576, 8310, 8294, 6851, 6878, 1265, 8295, 8291, 8288, 1126, 5088, 8296, 6839, 10089, 504, 14865, 8290, 8311, 14866, 13455, 13456, 8297, 10510, 5391, 2]
 
-// Module 14808 (EditProfileEffectActionSheet)
+// Module 14864 (EditProfileEffectActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import LinearGradientDefault from "LinearGradient" /* 5388 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7263 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8272 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8275 */;
-import useShopProductItems from "useShopProductItems" /* 8279 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8281 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8295 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10476 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 14810 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7269 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8288 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8291 */;
+import useShopProductItems from "useShopProductItems" /* 8295 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8297 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10510 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 14866 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7272 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7279 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -222,7 +222,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileE
   let memo;
   let tmp = closure_12();
   let str = user.id;
-  let tmp4 = isTryItOut(8294);
+  let tmp4 = isTryItOut(8310);
   if (str == null) {
     str = "";
   }
@@ -231,10 +231,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileE
   const tmp6 = selectedProfileEffect(memo.useState(currentProfileEffect), 2);
   selectedProfileEffect = tmp6[0];
   const tmp8 = tmp6[1];
-  let obj = guildId(8278);
+  let obj = guildId(8294);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  const tmp2Result = isTryItOut(6848);
-  const analyticsLocations = tmp2Result(tmp2(6872).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
+  const tmp2Result = isTryItOut(6851);
+  const analyticsLocations = tmp2Result(tmp2(6878).EDIT_PROFILE_EFFECT_SHEET).analyticsLocations;
   const items = [guildId, tmp4Result];
   memo = memo.useMemo(() => {
     let tmp;
@@ -279,22 +279,22 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileE
     }
   }, items2);
   let obj2 = { value: analyticsLocations, children: tmp14(BottomSheet, obj3) };
-  const AnalyticsLocationProvider = guildId(6848).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = guildId(6851).AnalyticsLocationProvider;
   obj3 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, children: items4 };
   const obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.bounceOffset };
-  BottomSheet = guildId(6836).BottomSheet;
+  BottomSheet = guildId(6839).BottomSheet;
   items3 = [closure_9(closure_5, obj5), , ];
   const obj6 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(1126).t["/6nv6N"]) };
-  const Text = guildId(5087).Text;
+  const Text = guildId(5088).Text;
   intl = guildId(1126).intl;
   items3[1] = closure_9(Text, obj6);
   items3[2] = closure_9(closure_13, { user, selectedProfileEffect, setSelectedProfileEffect: tmp8, guildId, isTryItOut });
   items4 = [closure_10(closure_5, obj4), ];
-  const obj7 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations, analyticsSource: isTryItOut(6872).EDIT_PROFILE_EFFECT_SHEET };
+  const obj7 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations, analyticsSource: isTryItOut(6878).EDIT_PROFILE_EFFECT_SHEET };
   skuId = undefined;
   tmp14 = closure_10;
-  const tmp2Result2 = isTryItOut(8280);
+  const tmp2Result2 = isTryItOut(8296);
   if (currentProfileEffect != null) {
     skuId = currentProfileEffect.skuId;
   }
@@ -369,7 +369,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPr
             const tmp = null == user || user.isNonUserBot();
             if (!tmp) {
               const tmp4 = maybeFetchUserProfileDefault;
-              tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
+              tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true });
             }
           };
           const items1 = [user];
@@ -590,7 +590,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditPr
     const tmp = null == user || user.isNonUserBot();
     if (!tmp) {
       const tmp4 = maybeFetchUserProfileDefault;
-      tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
+      tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true });
     }
   }, items1);
   const items2 = [setSelectedProfileEffect, guildId, flag];
@@ -736,7 +736,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(8281)(previewSkuId);
+  const tmp2 = purchase(8297)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -760,10 +760,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(10476), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  items1 = [closure_9(purchase(10510), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5388);
+  const tmp4 = purchase(5391);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);

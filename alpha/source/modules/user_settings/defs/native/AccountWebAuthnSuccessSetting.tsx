@@ -1,13 +1,13 @@
-// Module ID: 14992
-// Function ID: 14993
+// Module ID: 15051
+// Function ID: 15052
 // Name: AccountWebAuthnSuccessSetting
-// Dependencies: [7974, 1085, 10629, 1126, 14993, 2]
+// Dependencies: [7992, 1085, 10663, 1126, 15052, 2]
 
-// Module 14992 (AccountWebAuthnSuccessSetting)
+// Module 15051 (AccountWebAuthnSuccessSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

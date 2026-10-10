@@ -1,10 +1,10 @@
-// Module ID: 13169
-// Function ID: 13170
+// Module ID: 13219
+// Function ID: 13220
 // Name: ConjureWorkerTickets
-// Dependencies: [5, 1085, 1295, 13170, 2]
+// Dependencies: [5, 1085, 1295, 13220, 2]
 // Exports: mintRemixTicket, mintWorkerTicket
 
-// Module 13169 (ConjureWorkerTickets)
+// Module 13219 (ConjureWorkerTickets)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

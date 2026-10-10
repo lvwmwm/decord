@@ -1,16 +1,16 @@
-// Module ID: 17681
-// Function ID: 17682
+// Module ID: 17753
+// Function ID: 17754
 // Name: useStableParticipant
-// Dependencies: [6043, 502, 2012, 1390, 5114, 568, 558, 576, 5406, 6060, 10866, 504, 2]
+// Dependencies: [6036, 502, 2012, 1390, 5115, 568, 558, 576, 5409, 6053, 10904, 504, 2]
 // Exports: isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 17681 (useStableParticipant)
+// Module 17753 (useStableParticipant)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import CallConstants from "CallConstants" /* 5114 */;
-import NicknameUtils from "NicknameUtils" /* 5406 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6060 */;
-import participantHasVideoDefault from "participantHasVideo" /* 10866 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
+import CallConstants from "CallConstants" /* 5115 */;
+import NicknameUtils from "NicknameUtils" /* 5409 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6053 */;
+import participantHasVideoDefault from "participantHasVideo" /* 10904 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import UserStore from "UserStore" /* 1390 */;

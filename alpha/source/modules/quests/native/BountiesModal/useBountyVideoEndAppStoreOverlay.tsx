@@ -1,18 +1,18 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15274
+// Function ID: 15275
 // Name: useBountyVideoEndAppStoreOverlay
-// Dependencies: [19, 5979, 21, 558, 576, 15213, 9154, 9174, 15214, 5984, 7409, 7400, 5986, 12895, 2]
+// Dependencies: [19, 5972, 21, 558, 576, 15275, 9181, 9201, 15276, 5977, 7415, 7406, 5979, 12959, 12942, 2]
 // Exports: canUseBountyVideoEndAppStoreOverlay
 
-// Module 15212 (useBountyVideoEndAppStoreOverlay)
+// Module 15274 (useBountyVideoEndAppStoreOverlay)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import QuestConstants from "QuestConstants" /* 5979 */;
-import QuestContent from "QuestContent" /* 5984 */;
-import AnalyticsActions from "AnalyticsActions" /* 7400 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7409 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9154 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15213 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestContent from "QuestContent" /* 5977 */;
+import AnalyticsActions from "AnalyticsActions" /* 7406 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9181 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 15275 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -169,15 +169,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyV
                             return trackingCtx.trackAdContentAppStoreOverlayEvent(obj2);
                           },
                       onOverlaySurfaceClick(overlaySurface) {
-                            trackingCtx = current(sourceQuestContent[11]);
+                            trackingCtx = current(sourceQuestContent[13]);
                             const obj2 = { adContentId: user.id, adCreativeType: current(sourceQuestContent[12]).AdCreativeType.BOUNTY, trackingCtx, overlaySurface };
                             return trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent(obj2);
                           },
                       onInstallPress(overlaySurface) {
-                            trackingCtx = current(closure_2_1[11]);
+                            trackingCtx = current(closure_2_1[13]);
                             let obj2 = { adContentId: appId.id, adCreativeType: current(closure_2_1[12]).AdCreativeType.BOUNTY, trackingCtx, overlaySurface };
                             const result = trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent(obj2);
-                            const obj3 = current(closure_2_1[13]);
+                            const obj3 = current(closure_2_1[14]);
                             const obj4 = {
                               trackOverlayEvent(event, timeSpentMs) {
                                 trackingCtx = current(sourceQuestContent[11]);
@@ -281,15 +281,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyV
                                 return trackingCtx.trackAdContentAppStoreOverlayEvent(obj2);
                               },
                           onOverlaySurfaceClick(overlaySurface) {
-                                trackingCtx = current(sourceQuestContent[11]);
+                                trackingCtx = current(sourceQuestContent[13]);
                                 const obj2 = { adContentId: user.id, adCreativeType: current(sourceQuestContent[12]).AdCreativeType.BOUNTY, trackingCtx, overlaySurface };
                                 return trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent(obj2);
                               },
                           onInstallPress(overlaySurface) {
-                                trackingCtx = current(closure_2_1[11]);
+                                trackingCtx = current(closure_2_1[13]);
                                 let obj2 = { adContentId: appId.id, adCreativeType: current(closure_2_1[12]).AdCreativeType.BOUNTY, trackingCtx, overlaySurface };
                                 const result = trackingCtx.trackAppStoreOverlaySurfaceClickedForAdContent(obj2);
-                                const obj3 = current(closure_2_1[13]);
+                                const obj3 = current(closure_2_1[14]);
                                 const obj4 = {
                                   trackOverlayEvent(event, timeSpentMs) {
                                     trackingCtx = current(sourceQuestContent[11]);
@@ -333,7 +333,7 @@ export { useBountyVideoEndAppStoreContext };
 export const canUseBountyVideoEndAppStoreOverlay = function canUseBountyVideoEndAppStoreOverlay(cta) {
   const obj = QuestCustomAppStoreOverlayUtils;
   if (obj.canOpenCustomAppStoreOverlayFromCta(cta.cta)) {
-    const BountiesMobileQuestBarExperiment = tmp(9154).BountiesMobileQuestBarExperiment;
+    const BountiesMobileQuestBarExperiment = tmp(9181).BountiesMobileQuestBarExperiment;
     const obj2 = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
     const config = BountiesMobileQuestBarExperiment.getConfig(obj2);
     const tmp5 = config.enabled && tmp6 === BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarCtrVariant.LOOP_SQUEEZED_BACK_APP_STORE_OVERLAY;

@@ -1,27 +1,27 @@
-// Module ID: 13605
-// Function ID: 13606
+// Module ID: 13656
+// Function ID: 13657
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 4737, 1085, 4728, 1295, 584, 5632, 38, 5641, 558, 576, 2]
+// Dependencies: [109, 32, 5, 19, 4778, 1085, 4769, 1295, 584, 5635, 38, 5644, 558, 576, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionInvoicePreview
 
-// Module 13605 (PremiumSubscriptionInvoice)
+// Module 13656 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import InvoiceRecord from "InvoiceRecord" /* 4737 */;
+import InvoiceRecord from "InvoiceRecord" /* 4778 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, payment_source_id, planId, sku_subscription_plan_id;
+let _require, apply_wallet_balance, dependencyMap, payment_source_id, planId, sku_subscription_plan_id;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f115975 = (enabled) => enabled.enabled;
+const f116282 = (enabled) => enabled.enabled;
 function createSubscriptionInvoicePreview() {
   return obj(...arguments);
 }
@@ -50,7 +50,7 @@ let obj = function _createSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -206,7 +206,7 @@ obj = function _updateSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let currency;
@@ -349,8 +349,9 @@ obj = function _createOneTimePurchaseInvoicePreview() {
       let c3;
       let c4;
       let c5;
-      if (c6 === 2) {
-        c6 = 3;
+      let c6;
+      if (apply_wallet_balance === 2) {
+        apply_wallet_balance = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -358,18 +359,18 @@ obj = function _createOneTimePurchaseInvoicePreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
           let obj5;
-          c6 = 2;
+          apply_wallet_balance = 2;
           if (0 === quantity) {
             if (arg0 === 1) {
-              c6 = 3;
+              apply_wallet_balance = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
+              apply_wallet_balance = 3;
               return { value, done: true };
             } else {
               let closure_2 = tmp;
@@ -379,66 +380,69 @@ obj = function _createOneTimePurchaseInvoicePreview() {
               sku_subscription_plan_id = undefined;
               currency = undefined;
               load_id = undefined;
-              ({ paymentSourceId: c0, skuId: c1, subscriptionPlanId: c2, currency: c3, loadId: c4, quantity: c5 } = closure_0);
+              ({ paymentSourceId: c0, skuId: c1, subscriptionPlanId: c2, currency: c3, loadId: c4, quantity: c5, applyWalletBalance: c6 } = closure_0);
               obj5 = undefined;
               body = undefined;
               quantity = 1;
-              c6 = 1;
+              apply_wallet_balance = 1;
               return { value: "Set", done: true };
             }
           } else if (1 === quantity) {
             if (arg0 === 1) {
-              c6 = 3;
+              apply_wallet_balance = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
+              apply_wallet_balance = 3;
               return { value, done: true };
             } else {
               let tmp20 = null != c1;
-              const tmp50 = closure_130_1(closure_130_2[10]);
+              const tmp55 = closure_130_1(closure_130_2[10]);
               if (tmp20) {
                 tmp20 = "" !== c1;
               }
-              tmp50(tmp20, "SKU ID is missing for one time purchase gift invoice preview");
+              tmp55(tmp20, "SKU ID is missing for one time purchase gift invoice preview");
               obj5 = { gift: true, payment_source_id, sku_subscription_plan_id, currency, load_id };
               if (null != quantity) {
                 obj5.quantity = quantity;
+              }
+              if (null != apply_wallet_balance) {
+                obj5.apply_wallet_balance = apply_wallet_balance;
               }
               load_id = 1;
               const request = { url: closure_130_12.STORE_SKU_PURCHASE(c1), query: obj5, oldFormErrors: true, rejectWithError: false };
               const httpGetWithCountryCodeQuery = closure_130_0(closure_130_2[11]).httpGetWithCountryCodeQuery;
               closure_130_0(closure_130_2[11]);
               quantity = 3;
-              c6 = 1;
+              apply_wallet_balance = 1;
               const obj6 = { value: httpGetWithCountryCodeQuery(request), done: false };
               return obj6;
             }
           } else if (2 === quantity) {
             load_id = 0;
-            let closure_8 = closure_3;
+            let closure_9 = closure_3;
             const self = this;
             const self2 = this;
-            const billingError = new closure_130_0(closure_130_2[9]).BillingError(closure_8);
+            const billingError = new closure_130_0(closure_130_2[9]).BillingError(closure_9);
             throw billingError;
           } else if (arg0 === 1) {
-            c6 = 3;
+            apply_wallet_balance = 3;
             throw value;
           } else if (arg0 === 2) {
             load_id = 0;
-            c6 = 3;
+            apply_wallet_balance = 3;
             return { value, done: true };
           } else {
             body = value;
             load_id = 0;
-            c6 = 3;
-            obj = { value: closure_130_11.createInvoiceFromServer(body.body), done: true };
+            apply_wallet_balance = 3;
+            obj = { value: closure_130_11.createFromOTPPreview(body.body), done: true };
             return obj;
           }
-        } catch (tmp39) {
-          closure_3 = tmp39;
+        } catch (tmp44) {
+          closure_3 = tmp44;
           if (0 === load_id) {
-            c6 = 3;
-            throw tmp39;
+            apply_wallet_balance = 3;
+            throw tmp44;
           } else {
             quantity = 2;
           }
@@ -468,7 +472,7 @@ obj = function _getSubscriptionInvoice() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -603,7 +607,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -656,7 +660,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp28) {
           closure_2 = tmp28;
@@ -716,7 +720,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c3;
@@ -768,7 +772,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp28) {
             if (0 === c3) {
@@ -910,7 +914,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f115975);
+          const found = payment_sources.find(f116282);
           let id;
           if (found != null) {
             id = found.id;
@@ -964,7 +968,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f115975);
+          const found = payment_sources.find(f116282);
           let id;
           if (found != null) {
             id = found.id;

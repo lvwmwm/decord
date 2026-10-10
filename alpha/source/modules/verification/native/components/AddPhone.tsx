@@ -1,23 +1,23 @@
-// Module ID: 6731
-// Function ID: 6732
+// Module ID: 6732
+// Function ID: 6733
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 6622, 2058, 1390, 1085, 1096, 21, 5091, 587, 504, 6279, 6732, 5632, 5087, 1126, 6733, 6643, 5941, 6734, 2000, 5376, 5299, 6764, 2]
+// Dependencies: [5, 32, 19, 17, 6623, 2059, 1390, 1085, 1096, 21, 5092, 587, 504, 6274, 6733, 5635, 5088, 1126, 6734, 6644, 5934, 6735, 2000, 5379, 5300, 6765, 2]
 // Exports: default
 
-// Module 6731 (AddPhone)
+// Module 6732 (AddPhone)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PhoneStore from "PhoneStore" /* 6622 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2058 */;
+import PhoneStore from "PhoneStore" /* 6623 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2059 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ export default function AddPhone(reason) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -156,7 +156,7 @@ export default function AddPhone(reason) {
             c3 = 0;
             closure_129_12(false);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp38) {
           closure_2 = tmp38;

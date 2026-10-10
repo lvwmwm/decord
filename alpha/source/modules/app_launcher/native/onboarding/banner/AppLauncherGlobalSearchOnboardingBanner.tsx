@@ -1,17 +1,17 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11801
+// Function ID: 11802
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1502, 2061, 21, 5091, 587, 558, 576, 8217, 1126, 9422, 2]
+// Dependencies: [19, 17, 1502, 2062, 21, 5092, 587, 558, 576, 8233, 1126, 9451, 2]
 
-// Module 11757 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 11801 (AppLauncherGlobalSearchOnboardingBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import AppsIcon2 from "AppsIcon" /* 8217 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import AppsIcon2 from "AppsIcon" /* 8233 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSearch
               }
             }
           }
-          const tmp22 = jsx(tmp(9422).Coachmark, { renderImgComponent: tmp10, title: tmp13, description: tmp14, onDismiss: tmp17, targetMeasurements: tmp18, surfaceMeasurements: tmp19, position: "bottom" });
+          const tmp22 = jsx(tmp(9451).Coachmark, { renderImgComponent: tmp10, title: tmp13, description: tmp14, onDismiss: tmp17, targetMeasurements: tmp18, surfaceMeasurements: tmp19, position: "bottom" });
           cResult[16] = tmp10;
           cResult[17] = tmp17;
           cResult[18] = tmp18;
@@ -167,7 +167,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GlobalSearch
   }, items);
   let tmp3 = null;
   if (visible) {
-    const Coachmark = markAsDismissed(9422).Coachmark;
+    const Coachmark = markAsDismissed(9451).Coachmark;
     const intl = markAsDismissed(1126).intl;
     const intl2 = markAsDismissed(1126).intl;
     size = { x: 0, y: -40, width: diff, height: 40 };

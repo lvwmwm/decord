@@ -1,12 +1,12 @@
-// Module ID: 6060
-// Function ID: 6061
+// Module ID: 6053
+// Function ID: 6054
 // Name: useAvatarDecoration
-// Dependencies: [32, 2124, 558, 576, 573, 2]
+// Dependencies: [32, 2125, 558, 576, 573, 2]
 // Exports: getAvatarDecoration
 
-// Module 6060 (useAvatarDecoration)
+// Module 6053 (useAvatarDecoration)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 9399
+// Function ID: 9400
 // Name: GPlayActionCreators
-// Dependencies: [109, 5, 17, 9373, 502, 7125, 1085, 7126, 1392, 1096, 3, 7120, 6953, 5911, 584, 4741, 569, 1382, 1481, 1265, 5298, 1126, 1295, 4743, 2]
-// Exports: downgradeSubscription, ensureSkusLoaded, loadUserCountry, purchase, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
+// Dependencies: [109, 5, 17, 9400, 502, 7131, 1085, 7132, 1392, 1096, 3, 7126, 6959, 5913, 584, 4782, 569, 1481, 1382, 1265, 5299, 1126, 1295, 4784, 2]
+// Exports: downgradeSubscription, ensureSkusLoaded, loadUserCountry, purchase, retainInAppSkus, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 9372 (GPlayActionCreators)
+// Module 9399 (GPlayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import BackoffDefault from "Backoff" /* 569 */;
@@ -13,21 +13,21 @@ import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import NetworkUtilsDefault from "NetworkUtils" /* 1481 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4741 */;
-import BillingUtils from "BillingUtils" /* 4743 */;
-import ProductIds from "ProductIds" /* 7120 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4782 */;
+import BillingUtils from "BillingUtils" /* 4784 */;
+import ProductIds from "ProductIds" /* 7126 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9373 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IAPStore from "IAPStore" /* 7125 */;
+import IAPStore from "IAPStore" /* 7131 */;
 import Constants_mod from "Constants" /* 1085 */;
-import Constants_mod2 from "Constants" /* 7126 */;
+import Constants_mod2 from "Constants" /* 7132 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let applyResult, c2, c21, c22, c8, closure_31, gift_info_options, oldProductId;
+let applyResult, c2, c21, c22, c8, closure_31, gift_info_options, importDefault, oldProductId;
 
 let c10;
 let c9;
@@ -36,7 +36,7 @@ let closure_15;
 let closure_18;
 let closure_19;
 let map1;
-const f101071 = async () => {
+const f101363 = async () => {
   closure_0 = [...arguments];
   let c5 = 0;
   let c6 = 0;
@@ -51,7 +51,7 @@ const f101071 = async () => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ const f101071 = async () => {
           let closure_1 = closure_3;
           let tmp12;
           const tmp10 = closure_1;
-          const tmp9 = closure_1_38;
+          const tmp9 = closure_1_44;
           if (null != closure_130_2) {
             applyResult = { source: tmp11 };
             tmp12 = applyResult;
@@ -102,7 +102,7 @@ const f101071 = async () => {
             throw closure_1;
           } else {
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else if (arg0 === 1) {
           c6 = 3;
@@ -172,7 +172,7 @@ let obj = function _fetchDesktopSubscriptionSkus() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       while (true) {
@@ -435,6 +435,65 @@ let obj = function _fetchDesktopSubscriptionSkus() {
   });
   return obj(...arguments);
 };
+function retryFailedInAppSkus() {
+  let closure_1;
+  let product;
+  const items = [...set1];
+  const found = items.filter((item) => {
+    const hasItem = set2.has(item) && null == product.getProduct(item);
+    return hasItem;
+  });
+  const item = set1.forEach((item) => set.delete(item));
+  set1.clear();
+  let tmp3 = found.length > 0;
+  if (tmp3) {
+    obj = NetworkUtilsDefault;
+    let isOnlineResult = obj.isOnline();
+    if (isOnlineResult) {
+      let isReadyResult;
+      const obj2 = found(4782);
+      if (obj2.isGooglePlayBillingSupported()) {
+        isReadyResult = IAPStore.isReady();
+      } else {
+        isReadyResult = AuthenticationStore.isAuthenticated();
+      }
+      isOnlineResult = isReadyResult;
+    }
+    tmp3 = isOnlineResult;
+  }
+  if (tmp3) {
+    const promise = importDefaultResultResult1(found);
+    importDefault = promise.then(() => {
+      closure_1_36.succeed();
+      const tmp2 = set1.size > 0 && obj.fails < 5;
+      if (tmp2) {
+        closure_1_36.fail(retryFailedInAppSkus);
+      }
+    }, (code) => {
+      code = undefined;
+      if (code != null) {
+        code = code.code;
+      }
+      if (code === String(constants.BILLING_CLIENT_NOT_READY)) {
+        const item = found.forEach((item) => set.delete(item));
+      } else {
+        let code1;
+        has = has.has;
+        if (code != null) {
+          code1 = code.code;
+        }
+        if (!has(code1)) {
+          const item1 = found.forEach((item) => set2.add(item));
+          const tmp7 = set1.size > 0 && closure_2_36.fails < 5;
+          if (tmp7) {
+            closure_2_36.fail(retryFailedInAppSkus);
+          }
+        }
+      }
+    });
+    const item1 = found.forEach((item) => map.set(item, closure_1));
+  }
+}
 obj = function _loadUserCountry() {
   obj = _asyncToGenerator(async (arg0, value) => {
     if (c3 === 2) {
@@ -447,7 +506,7 @@ obj = function _loadUserCountry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -482,7 +541,7 @@ obj = function _loadUserCountry() {
           obj = closure_129_1(closure_129_2[14]);
           obj.dispatch(obj6);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -513,7 +572,7 @@ obj = function _subscribe() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -543,7 +602,7 @@ obj = function _subscribe() {
               const obj6 = { productId: product_id, oldProductId };
               oldProductId = closure_1;
               const tmp10 = message;
-              const tmp9 = closure_135_38;
+              const tmp9 = closure_135_44;
               if (closure_1 == null) {
                 oldProductId = "";
               }
@@ -569,7 +628,7 @@ obj = function _subscribe() {
               c9 = 0;
             }
             c11 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp37) {
           closure_8 = tmp37;
@@ -602,7 +661,7 @@ obj = function _verifyPurchase() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c6;
@@ -670,10 +729,10 @@ obj = function _verifyPurchase() {
         } else if (1 === tmp4) {
           c6 = 0;
           closure_6 = closure_5;
-          productId = closure_132_38;
+          productId = closure_132_44;
           const obj6 = { tags: obj7 };
           obj7 = { productId: closure_0.productId };
-          closure_132_38(closure_6, obj6);
+          closure_132_44(closure_6, obj6);
           if (null != gift_info_options) {
             const succeededOnlyFields2 = gift_info_options.succeededOnlyFields;
             closure_5 = closure_132_7(gift_info_options, closure_132_6);
@@ -725,7 +784,7 @@ obj = function _verifyPurchase() {
 };
 function captureGPlayBillingException(code, fingerprint) {
   code = undefined;
-  const has = set1.has;
+  const has = set3.has;
   if (code != null) {
     code = code.code;
   }
@@ -733,7 +792,7 @@ function captureGPlayBillingException(code, fingerprint) {
     let hasItem;
     let hasItem1;
     let code1;
-    const has2 = set.has;
+    const has2 = set2.has;
     if (code != null) {
       code1 = code.code;
     }
@@ -807,7 +866,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     let c4;
@@ -916,7 +975,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSubscriptionSkus = "loadSubscriptionSkus";
-const importDefaultResultResult = _asyncToGenerator(f101071);
+const importDefaultResultResult = _asyncToGenerator(f101363);
 _asyncToGenerator(async () => {
   let closure_0 = arg0;
   let c5 = 0;
@@ -954,7 +1013,7 @@ _asyncToGenerator(async () => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -1059,7 +1118,7 @@ _asyncToGenerator(async () => {
   return iter;
 });
 const loadInAppSkus = "loadInAppSkus";
-const importDefaultResultResult1 = _asyncToGenerator(f101071);
+const importDefaultResultResult1 = _asyncToGenerator(f101363);
 _asyncToGenerator(async (arg0, value) => {
   if (c0 === 2) {
     c0 = 3;
@@ -1071,7 +1130,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {
@@ -1100,7 +1159,7 @@ _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } catch (tmp7) {
       c0 = 3;
@@ -1109,11 +1168,19 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSkus = "loadSkus";
-const importDefaultResultResult2 = _asyncToGenerator(f101071);
+const importDefaultResultResult2 = _asyncToGenerator(f101363);
 let tmp11 = new BackoffDefault(5000, 300000, true);
 let closure_29 = tmp11;
 let c30 = 0;
 let c31 = null;
+let items = [, , , ];
+({ BILLING_UNAVAILABLE: arr[0], DEVELOPER_ERROR: arr[1], FEATURE_NOT_SUPPORTED: arr[2], ITEM_UNAVAILABLE: arr[3] } = Constants.GPlayBillingResult);
+let set = new Set(items.map(String));
+const map = new Map();
+map1 = new Map();
+const set1 = new Set();
+const tmp16 = new BackoffDefault(1000, 60000);
+let closure_36 = tmp16;
 _asyncToGenerator(async (arg0, value) => {
   let obj6;
   let v1;
@@ -1128,7 +1195,7 @@ _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     let c6;
@@ -1187,7 +1254,7 @@ _asyncToGenerator(async (arg0, value) => {
       } else {
         c6 = 0;
         c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } catch (tmp35) {
       closure_5 = tmp35;
@@ -1212,7 +1279,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     let c3;
@@ -1309,13 +1376,13 @@ let _require = _asyncToGenerator(async (arg0, value) => {
 });
 let c1 = true;
 const getUserCountry = "getUserCountry";
-const importDefaultResultResult3 = _asyncToGenerator(f101071);
-let items = [, , , , ];
-({ SERVICE_DISCONNECTED: arr[0], SERVICE_TIMEOUT: arr[1], BILLING_UNAVAILABLE: arr[2], BILLING_CLIENT_NOT_READY: arr[3], DEVELOPER_ERROR: arr[4] } = Constants.GPlayBillingResult);
-let set = new Set(items.map(String));
-const items1 = [, , ];
-({ FEATURE_NOT_SUPPORTED: arr2[0], SERVICE_UNAVAILABLE: arr2[1], NETWORK_ERROR: arr2[2] } = Constants.GPlayBillingResult);
-const set1 = new Set(items1.map(String));
+const importDefaultResultResult3 = _asyncToGenerator(f101363);
+const items1 = [, , , , ];
+({ SERVICE_DISCONNECTED: arr2[0], SERVICE_TIMEOUT: arr2[1], BILLING_UNAVAILABLE: arr2[2], BILLING_CLIENT_NOT_READY: arr2[3], DEVELOPER_ERROR: arr2[4] } = Constants.GPlayBillingResult);
+const set2 = new Set(items1.map(String));
+const items2 = [, , ];
+({ FEATURE_NOT_SUPPORTED: arr3[0], SERVICE_UNAVAILABLE: arr3[1], NETWORK_ERROR: arr3[2] } = Constants.GPlayBillingResult);
+const set3 = new Set(items2.map(String));
 let result = size.fileFinishedImporting("actions/native/GPlayActionCreators.tsx");
 const loadSubscriptionSkus_export = importDefaultResultResult;
 const loadInAppSkus_export = importDefaultResultResult1;
@@ -1327,133 +1394,227 @@ export { loadInAppSkus_export as loadInAppSkus };
 export { loadSkus_export as loadSkus };
 export const ensureSkusLoaded = function ensureSkusLoaded(items) {
   let product;
+  let resolved1;
   _require = items;
   const tmp = _require;
   obj = require("PlatformUtils");
   if (obj.isAndroid()) {
+    let resolved;
     if (items.every((item) => null != product.getProduct(item))) {
-      return Promise.resolve();
+      resolved = Promise.resolve();
+    } else if (null != closure_31) {
+      resolved = closure_31;
     } else {
-      const tmp4 = closure_31;
-      if (null != closure_31) {
-        return closure_31;
+      let _Date = Date;
+      if (Date.now() < c30) {
+        resolved = Promise.resolve();
       } else {
-        let _Date = Date;
-        if (Date.now() < c30) {
-          return Promise.resolve();
-        } else {
-          let obj3 = NetworkUtilsDefault;
-          if (obj3.isOnline()) {
-            const tmpResult = tmp(4741);
-            if (tmpResult.isGooglePlayBillingSupported()) {
-              if (!IAPStore.isReady()) {
-                return Promise.resolve();
-              }
-            } else if (!AuthenticationStore.isAuthenticated()) {
-              return Promise.resolve();
-            }
-            const tmp9 = (async (arg0, value) => {
-              const f153776 = (item) => null != product.getProduct(item);
-              if (c5 === 2) {
-                c5 = 3;
-                throw new TypeError("Generator functions may not be called on executing generators");
-              } else if (tmp3 === 3) {
-                if (arg0 === 1) {
-                  throw value;
-                } else if (arg0 === 2) {
-                  const obj2 = { value, done: true };
-                  return obj2;
-                } else {
-                  return { value: "IconComponent", done: null };
-                }
+        let obj3 = NetworkUtilsDefault;
+        let isOnlineResult = obj3.isOnline();
+        if (isOnlineResult) {
+          let isReadyResult;
+          const tmpResult = tmp(4782);
+          if (tmpResult.isGooglePlayBillingSupported()) {
+            isReadyResult = IAPStore.isReady();
+          } else {
+            isReadyResult = AuthenticationStore.isAuthenticated();
+          }
+          isOnlineResult = isReadyResult;
+        }
+        if (isOnlineResult) {
+          const tmp13 = (async (arg0, value) => {
+            const f154229 = (item) => null != product.getProduct(item);
+            if (c5 === 2) {
+              c5 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp3 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj2 = { value, done: true };
+                return obj2;
               } else {
-                let c3;
-                try {
-                  c5 = 2;
-                  if (0 === c4) {
-                    if (arg0 === 1) {
-                      c5 = 3;
-                      throw value;
-                    } else if (arg0 === 2) {
-                      c5 = 3;
-                      const obj3 = { value, done: true };
-                      return obj3;
-                    } else {
-                      let closure_1 = tmp;
-                      let closure_0 = tmp;
-                      c3 = 1;
-                      c4 = 2;
-                      c5 = 1;
-                      const obj4 = { value: importDefaultResultResult2(), done: false };
-                      return obj4;
-                    }
-                  } else if (1 === tmp4) {
-                    c3 = 0;
-                    c31 = null;
-                    const tmp19 = closure_2;
-                    if (closure_129_0.every(f153776)) {
-                      closure_1_29.succeed();
-                      let closure_30 = 0;
-                    } else {
-                      const _Date3 = Date;
-                      const timestamp = Date.now();
-                      closure_30 = timestamp + closure_1_29.fail();
-                    }
-                    throw tmp19;
-                  } else if (arg0 === 1) {
+                return { value: "IconComponent", done: "+51" };
+              }
+            } else {
+              let c3;
+              try {
+                c5 = 2;
+                if (0 === c4) {
+                  if (arg0 === 1) {
                     c5 = 3;
                     throw value;
                   } else if (arg0 === 2) {
-                    c3 = 0;
-                    c31 = null;
-                    if (closure_129_0.every(f153776)) {
-                      closure_1_29.succeed();
-                      closure_30 = 0;
-                    } else {
-                      const _Date2 = Date;
-                      const timestamp1 = Date.now();
-                      closure_30 = timestamp1 + closure_1_29.fail();
-                    }
                     c5 = 3;
-                    obj = { value, done: true };
-                    return obj;
+                    const obj3 = { value, done: true };
+                    return obj3;
                   } else {
-                    c3 = 0;
-                    c31 = null;
-                    if (closure_129_0.every(f153776)) {
-                      closure_1_29.succeed();
-                      closure_30 = 0;
-                    } else {
-                      const _Date = Date;
-                      const timestamp2 = Date.now();
-                      closure_30 = timestamp2 + closure_1_29.fail();
-                    }
-                    c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    let closure_1 = tmp;
+                    let closure_0 = tmp;
+                    c3 = 1;
+                    c4 = 2;
+                    c5 = 1;
+                    const obj4 = { value: importDefaultResultResult2(), done: false };
+                    return obj4;
                   }
-                } catch (tmp28) {
-                  closure_2 = tmp28;
-                  if (0 === c3) {
-                    c5 = 3;
-                    throw tmp28;
+                } else if (1 === tmp4) {
+                  c3 = 0;
+                  c31 = null;
+                  const tmp19 = closure_2;
+                  if (closure_129_0.every(f154229)) {
+                    closure_1_29.succeed();
+                    let closure_30 = 0;
                   } else {
-                    c4 = 1;
+                    const _Date3 = Date;
+                    const timestamp = Date.now();
+                    closure_30 = timestamp + closure_1_29.fail();
                   }
+                  throw tmp19;
+                } else if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c3 = 0;
+                  c31 = null;
+                  if (closure_129_0.every(f154229)) {
+                    closure_1_29.succeed();
+                    closure_30 = 0;
+                  } else {
+                    const _Date2 = Date;
+                    const timestamp1 = Date.now();
+                    closure_30 = timestamp1 + closure_1_29.fail();
+                  }
+                  c5 = 3;
+                  obj = { value, done: true };
+                  return obj;
+                } else {
+                  c3 = 0;
+                  c31 = null;
+                  if (closure_129_0.every(f154229)) {
+                    closure_1_29.succeed();
+                    closure_30 = 0;
+                  } else {
+                    const _Date = Date;
+                    const timestamp2 = Date.now();
+                    closure_30 = timestamp2 + closure_1_29.fail();
+                  }
+                  c5 = 3;
+                  return { value: "IconComponent", done: "+51" };
+                }
+              } catch (tmp28) {
+                closure_2 = tmp28;
+                if (0 === c3) {
+                  c5 = 3;
+                  throw tmp28;
+                } else {
+                  c4 = 1;
                 }
               }
-            })();
-            closure_31 = tmp9;
-            return tmp9;
-          } else {
-            return Promise.resolve();
-          }
+            }
+          })();
+          closure_31 = tmp13;
+          resolved = tmp13;
+        } else {
+          resolved = Promise.resolve();
         }
       }
     }
+    resolved1 = resolved;
   } else {
     const tmp3 = globalThis;
-    return Promise.resolve();
+    resolved1 = Promise.resolve();
   }
+  return resolved1;
+};
+export const retainInAppSkus = function retainInAppSkus(c0) {
+  let allPromises;
+  let product;
+  _require = c0;
+  let item = c0.forEach((item) => {
+    set = map1.set;
+    let num = map1.get(item);
+    if (num == null) {
+      num = 0;
+    }
+    return set(item, num + 1);
+  });
+  set = new Set(c0);
+  const items = [...set];
+  const found = items.filter((item) => {
+    const hasItem = map.has(item);
+    const tmp2 = !hasItem && null == product.getProduct(item);
+    return tmp2;
+  });
+  let tmp3 = found.length > 0;
+  if (tmp3) {
+    obj = NetworkUtilsDefault;
+    let isOnlineResult = obj.isOnline();
+    if (isOnlineResult) {
+      let isReadyResult;
+      let tmp7 = _require;
+      const obj2 = require("BillingPlatformUtils");
+      if (obj2.isGooglePlayBillingSupported()) {
+        isReadyResult = IAPStore.isReady();
+      } else {
+        isReadyResult = AuthenticationStore.isAuthenticated();
+      }
+      isOnlineResult = isReadyResult;
+    }
+    tmp3 = isOnlineResult;
+  }
+  if (tmp3) {
+    const promise = importDefaultResultResult1(found);
+    let closure_1 = promise.then(() => {
+      closure_1_36.succeed();
+      const tmp2 = set1.size > 0 && obj.fails < 5;
+      if (tmp2) {
+        closure_1_36.fail(retryFailedInAppSkus);
+      }
+    }, (code) => {
+      code = undefined;
+      if (code != null) {
+        code = code.code;
+      }
+      if (code === String(constants.BILLING_CLIENT_NOT_READY)) {
+        const item = found.forEach((item) => set.delete(item));
+      } else {
+        let code1;
+        has = has.has;
+        if (code != null) {
+          code1 = code.code;
+        }
+        if (!has(code1)) {
+          const item1 = found.forEach((item) => set2.add(item));
+          const tmp7 = set1.size > 0 && closure_2_36.fails < 5;
+          if (tmp7) {
+            closure_2_36.fail(retryFailedInAppSkus);
+          }
+        }
+      }
+    });
+    let item1 = found.forEach((item) => map.set(item, closure_1));
+  }
+  const obj3 = {
+    settled: allPromises.then(() => {
+
+    }),
+    release() {
+      return closure_0.forEach((item) => {
+        let num = map.get(item);
+        if (num == null) {
+          num = 0;
+        }
+        const diff = num - 1;
+        if (0 < diff) {
+          const result = obj.set(item, diff);
+        } else {
+          map.delete(item);
+        }
+      });
+    }
+  };
+  allPromises = Promise.all(c0.map((item) => map.get(item)));
+  return obj3;
 };
 export const loadUserCountry = function loadUserCountry() {
   return obj(...arguments);

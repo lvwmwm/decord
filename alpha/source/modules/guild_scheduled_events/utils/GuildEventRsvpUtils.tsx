@@ -1,17 +1,17 @@
-// Module ID: 8508
-// Function ID: 8509
+// Module ID: 8524
+// Function ID: 8525
 // Name: GuildEventRsvpUtils
-// Dependencies: [502, 6061, 2070, 1126, 8509, 8510, 8504, 2]
+// Dependencies: [502, 6054, 2071, 1126, 8525, 8526, 8520, 2]
 // Exports: getExistingRsvp, getResponseOptions, handleRsvp
 
-// Module 8508 (GuildEventRsvpUtils)
+// Module 8524 (GuildEventRsvpUtils)
 import intl3 from "intl" /* 1126 */;
-import ScheduleUtils from "ScheduleUtils" /* 8504 */;
-import useEventException from "useEventException" /* 8509 */;
-import useEventSchedule from "useEventSchedule" /* 8510 */;
+import ScheduleUtils from "ScheduleUtils" /* 8520 */;
+import useEventException from "useEventException" /* 8525 */;
+import useEventSchedule from "useEventSchedule" /* 8526 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6061 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2070 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

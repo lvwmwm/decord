@@ -1,14 +1,14 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12375
+// Function ID: 12376
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 5091, 8278, 6123, 4903, 4768, 1126, 5055, 6836, 6810, 6770, 5965, 5376, 2]
+// Dependencies: [5, 32, 19, 21, 5092, 8294, 6116, 4942, 4809, 1126, 5056, 6839, 6813, 6773, 5958, 5379, 2]
 
-// Module 12331 (JoinRequestRejectionReasonActionSheet)
+// Module 12375 (JoinRequestRejectionReasonActionSheet)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, c4;
@@ -63,7 +63,7 @@ class JoinRequestRejectionReasonActionSheet {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -105,10 +105,10 @@ class JoinRequestRejectionReasonActionSheet {
               return obj;
             } else {
               const obj5 = { text: intl.string(tmp(guildId[9]).t["TQY/Rd"]), variant: "critical" };
-              const openMana = userId(guildId[8]).openMana;
+              const open = userId(guildId[8]).open;
               const tmp29 = userId(guildId[8]);
               intl = tmp(guildId[9]).intl;
-              openMana("JOIN_REQUEST_REJECT", obj5);
+              open("JOIN_REQUEST_REJECT", obj5);
               const obj6 = userId(guildId[10]);
               obj6.hideAllActionSheets();
               c3 = 1;
@@ -116,7 +116,7 @@ class JoinRequestRejectionReasonActionSheet {
             c3 = 0;
             closure_128_5(false);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp20) {
           guildId = tmp20;

@@ -1,23 +1,23 @@
-// Module ID: 9022
-// Function ID: 9023
+// Module ID: 9041
+// Function ID: 9042
 // Name: WishlistButton
-// Dependencies: [5, 109, 32, 19, 17, 502, 1390, 1087, 1096, 21, 4811, 5381, 5091, 587, 4788, 558, 576, 6298, 4930, 4795, 4768, 1126, 5092, 5375, 5379, 9023, 8958, 504, 8954, 9013, 9025, 8953, 2]
+// Dependencies: [5, 109, 32, 19, 17, 502, 1390, 1087, 1096, 21, 4850, 5384, 5092, 587, 4827, 558, 576, 6299, 4969, 4834, 4809, 1126, 5093, 5378, 5382, 9042, 8977, 504, 8973, 9032, 9044, 8972, 2]
 
-// Module 9022 (WishlistButton)
+// Module 9041 (WishlistButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import Constants from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import native from "native" /* 4788 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import spring from "spring" /* 5375 */;
-import springPresets from "springPresets" /* 5379 */;
-import ButtonConstants from "ButtonConstants" /* 5381 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8953 */;
-import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 8954 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9025 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import native from "native" /* 4827 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
+import springPresets from "springPresets" /* 5382 */;
+import ButtonConstants from "ButtonConstants" /* 5384 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8972 */;
+import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 8973 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9044 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -26,7 +26,7 @@ import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -222,11 +222,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
           let intl;
           const tmp = disabled;
           if (tmp) {
-            obj = { key: "WISHLIST_DISABLED", content: intl.string(intl3.t["50TX9k"]) };
+            obj = { text: intl.string(intl3.t["50TX9k"]) };
             const open = ToastActionCreatorsDefault.open;
             ToastActionCreatorsDefault;
             intl = intl3.intl;
-            open(obj);
+            open("WISHLIST_DISABLED", obj);
           } else {
             const tmp2 = busy;
             if (!tmp2) {
@@ -335,11 +335,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
     let intl;
     const tmp = disabled;
     if (tmp) {
-      obj = { key: "WISHLIST_DISABLED", content: intl.string(intl3.t["50TX9k"]) };
+      obj = { text: intl.string(intl3.t["50TX9k"]) };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl3.intl;
-      open(obj);
+      open("WISHLIST_DISABLED", obj);
     } else {
       const tmp2 = busy;
       if (!tmp2) {
@@ -548,7 +548,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
   let closure_1;
   let closure_2;
   let closure_6;
-  let content;
   let currentUser;
   let handleToggle;
   let id;
@@ -556,6 +555,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
   let product;
   let shouldShowWishlistNUXActionSheet;
   let skuId;
+  let text;
   let tmp12;
   let tmp13;
   let tmp16;
@@ -662,12 +662,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
       _asyncToGenerator = tmp26;
       const _Symbol2 = Symbol;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn2 = function x() {
+        const fn = function x() {
           obj = ToastActionCreatorsDefault;
-          obj2 = { key: "WISHLIST_ERROR", content: _asyncToGenerator };
-          obj.open(obj2);
+          obj2 = { text: _asyncToGenerator };
+          obj.open("WISHLIST_ERROR", obj2);
         };
-        cResult[17] = fn2;
+        cResult[17] = fn;
         class I {
           constructor() {
             return id.getId();
@@ -683,7 +683,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
             if (cResult[21] === tmp8) {
               tmp28 = cResult[22];
             }
-            const tmpResult4 = tmp(9013);
+            const tmpResult4 = tmp(9032);
             const wishlistButtonState = tmpResult4.useWishlistButtonState(tmp28);
             class I {
               constructor() {
@@ -737,7 +737,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
                   obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } else {
                 try {
@@ -777,7 +777,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } catch (tmp12) {
                   c0 = 3;
@@ -806,21 +806,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
       tmp28 = obj3;
     }
   }
-  const fn = function k() {
-    const tmp = shouldShowWishlistNUXActionSheet;
-    if (tmp) {
-      showWishlistNUXActionSheet(closure_2);
+  class B {
+    constructor() {
+      const tmp = shouldShowWishlistNUXActionSheet;
+      if (tmp) {
+        showWishlistNUXActionSheet(closure_2);
+      }
     }
-  };
+  }
   cResult[12] = tmp6;
   cResult[13] = shouldShowWishlistNUXActionSheet;
   cResult[14] = showWishlistNUXActionSheet;
-  cResult[15] = fn;
-  tmp24 = fn;
+  cResult[15] = B;
+  tmp24 = B;
 }) : (function WishlistButton(product) {
-  let content;
   let currentUser;
   let id;
+  let text;
   product = product.product;
   const require = product;
   const onPress = product.onPress;
@@ -853,8 +855,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
   const items3 = [stringResult];
   const callback1 = react.useCallback(() => {
     obj = ToastActionCreatorsDefault;
-    obj2 = { key: "WISHLIST_ERROR", content };
-    obj.open(obj2);
+    obj2 = { text };
+    obj.open("WISHLIST_ERROR", obj2);
   }, items3);
   let obj4 = require("useWishlistButtonState");
   const wishlistButtonState = obj4.useWishlistButtonState({ userId: stateFromStores, skuId, onAddSuccess: callback, onError: callback1, skipAddAnnouncement: shouldShowWishlistNUXActionSheet });
@@ -926,7 +928,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     }
     obj2 = { skuId, product: tmp6, disabled: !tmp10, onTrackPress: tmp4 };
     const merged = Object.assign(tmp5);
-    const tmp19 = authStore4(closure_30, obj2);
+    const tmp19 = authStore3(closure_30, obj2);
     cResult[6] = tmp4;
     cResult[7] = tmp5;
     cResult[8] = tmp6;
@@ -947,7 +949,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   if (!isPurchased) {
     obj2 = { skuId, product: selectedProduct, disabled: !tmp4, onTrackPress };
     const merged1 = Object.assign(merged);
-    tmp = authStore4(closure_30, obj2);
+    tmp = authStore3(closure_30, obj2);
   }
   return tmp;
 });

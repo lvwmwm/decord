@@ -1,20 +1,20 @@
-// Module ID: 4891
-// Function ID: 4892
+// Module ID: 4930
+// Function ID: 4931
 // Name: TeenScreenTimeRive
-// Dependencies: [109, 19, 21, 558, 576, 4805, 4892, 4858, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4844, 4931, 4897, 2]
 
-// Module 4891 (TeenScreenTimeRive)
+// Module 4930 (TeenScreenTimeRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef4892 from "module_4892" /* 4892 */;
+import _modDef4931 from "module_4931" /* 4931 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const BaseRive2 = tmp(4805);
-const RiveErrorBoundary2 = tmp(4858);
+const BaseRive2 = tmp(4844);
+const RiveErrorBoundary2 = tmp(4897);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 const jsx = Fragment.jsx;
@@ -78,7 +78,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TeenScr
   }
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp5);
-  const tmp15 = <BaseRive ref={tmp4} src={_modDef4892} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp12} stateMachine={tmp6} />;
+  const tmp15 = <BaseRive ref={tmp4} src={_modDef4931} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp12} stateMachine={tmp6} />;
   cResult[6] = str;
   cResult[7] = tmp12;
   cResult[8] = tmp4;
@@ -104,7 +104,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TeenScr
   const tmp2 = _objectWithoutProperties(ref, closure_4);
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp2);
-  return <BaseRive ref={ref} src={_modDef4892} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
+  return <BaseRive ref={ref} src={_modDef4931} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TeenScreenTimeRiveWithBoundary(fallback) {

@@ -1,19 +1,19 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 17003
+// Function ID: 17004
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 2086, 1390, 6919, 21, 5091, 587, 558, 576, 573, 8294, 8337, 7004, 8295, 4923, 1103, 8366, 1200, 5406, 5087, 8606, 10496, 4788, 2]
+// Dependencies: [19, 17, 2087, 1390, 6925, 21, 5092, 587, 558, 576, 573, 8310, 8353, 7010, 8311, 4962, 1103, 8382, 1200, 5409, 5088, 8622, 10530, 4827, 2]
 
-// Module 16935 (HomeWelcomeMessage)
+// Module 17003 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8295 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6919 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6925 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -396,7 +396,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeWelcomeM
           return null;
         }
         const items5 = [stateFromStores2, stateFromStores3];
-        class W {
+        class H {
           constructor() {
             let getAvatarURL;
             let id;
@@ -413,7 +413,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeWelcomeM
               if (stateFromStores3 != null) {
                 id2 = tmp5.id;
               }
-              const obj2 = { dispatchWait: true, guildId: id2 };
+              const obj2 = { guildId: id2 };
               tmp4(id, avatarURL, obj2);
             }
           }
@@ -429,7 +429,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeWelcomeM
           }
         }
       }
-      class W {
+      class H {
         constructor() {
           let getAvatarURL;
           let id;
@@ -446,13 +446,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeWelcomeM
             if (stateFromStores3 != null) {
               id2 = tmp5.id;
             }
-            const obj2 = { dispatchWait: true, guildId: id2 };
+            const obj2 = { guildId: id2 };
             tmp4(id, avatarURL, obj2);
           }
         }
       }
       cResult[21] = undefined;
-      cResult[22] = W;
+      cResult[22] = H;
     }
     let obj2 = {};
     obj2[guildId] = tmp33;
@@ -536,7 +536,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeWelcomeM
       if (stateFromStores3 != null) {
         id2 = tmp5.id;
       }
-      const obj2 = { dispatchWait: true, guildId: id2 };
+      const obj2 = { guildId: id2 };
       tmp4(id, avatarURL, obj2);
     }
   }, items4);

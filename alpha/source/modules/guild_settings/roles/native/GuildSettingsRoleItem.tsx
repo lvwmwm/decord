@@ -1,17 +1,17 @@
-// Module ID: 18286
-// Function ID: 18287
+// Module ID: 18360
+// Function ID: 18361
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1085, 21, 5091, 587, 5087, 558, 576, 5405, 6876, 5299, 1126, 10693, 6104, 5395, 5048, 8114, 6895, 6893, 5388, 1388, 1103, 8605, 8200, 1200, 9437, 8206, 6186, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5092, 587, 5088, 558, 576, 5408, 6882, 5300, 1126, 10728, 6097, 5398, 5049, 7573, 6901, 6899, 5391, 1388, 1103, 8621, 8216, 1200, 9466, 8222, 6179, 2]
 
-// Module 18286 (GuildSettingsRoleItem)
+// Module 18360 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 5087 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -841,7 +841,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -875,7 +875,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj2 = onPress(onMoveUp[15]);
             obj2.deleteRole(guildId, tmp.id);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp15) {
             c2 = 3;
             throw tmp15;
@@ -1023,7 +1023,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         const obj4 = { value, done: true };
                         return obj4;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       }
                     } else {
                       try {
@@ -1057,7 +1057,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                         const obj2 = require("GuildActionCreators");
                         obj2.deleteRole(guildId, tmp.id);
                         c2 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       } catch (tmp15) {
                         c2 = 3;
                         throw tmp15;

@@ -1,10 +1,10 @@
-// Module ID: 7109
-// Function ID: 7110
+// Module ID: 7115
+// Function ID: 7116
 // Name: EntitlementActionCreators
-// Dependencies: [5, 1085, 584, 1295, 5641, 2]
+// Dependencies: [5, 1085, 584, 1295, 5644, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7109 (EntitlementActionCreators)
+// Module 7115 (EntitlementActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -71,7 +71,7 @@ obj = function _fetchGiftableEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ obj = function _fetchGiftableEntitlements() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp16) {
         let closure_2 = tmp16;
@@ -146,11 +146,8 @@ export const fetchUserEntitlementsForApplication = function fetchUserEntitlement
     flag = true;
   }
   obj = DispatcherDefault;
-  obj.wait(() => {
-    obj = DispatcherDefault;
-    const obj2 = { type: "ENTITLEMENT_FETCH_APPLICATION_START", applicationId };
-    obj.dispatch(obj2);
-  });
+  let obj2 = { type: "ENTITLEMENT_FETCH_APPLICATION_START", applicationId: id };
+  obj.dispatch(obj2);
   const HTTP = require("HTTPUtils").HTTP;
   const request = { url: Endpoints.ENTITLEMENTS_FOR_APPLICATION(id), oldFormErrors: true, query: { exclude_consumed: flag }, rejectWithError: true };
   const value = HTTP.get(request);

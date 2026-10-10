@@ -1,27 +1,27 @@
-// Module ID: 18484
-// Function ID: 18485
+// Module ID: 18558
+// Function ID: 18559
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2064, 8668, 2086, 4709, 1085, 21, 5091, 587, 558, 576, 1503, 38, 504, 12, 18485, 8674, 5298, 1126, 584, 5393, 7082, 18486, 8669, 8563, 1273, 6205, 6686, 2]
+// Dependencies: [32, 19, 2065, 8683, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1503, 38, 504, 12, 18559, 8689, 5299, 1126, 5396, 7088, 18560, 8684, 8579, 1273, 6200, 6687, 2]
 
-// Module 18484 (InviteSettingsModal)
+// Module 18558 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import Navigator from "Navigator" /* 6686 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8674 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18485 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
+import Navigator from "Navigator" /* 6687 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8689 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18559 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8668 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8683 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -172,8 +172,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       class O {
         constructor() {
-          const obj = channel(closure_2[20]);
-          obj.wait(channel(closure_2[17]).resetSettings);
+          const obj = channel(closure_2[17]);
+          obj.resetSettings();
         }
       }
       cResult[8] = O;
@@ -181,12 +181,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
     } else {
       class O {
         constructor() {
-          const obj = channel(closure_2[20]);
-          obj.wait(channel(closure_2[17]).resetSettings);
+          const obj = channel(closure_2[17]);
+          obj.resetSettings();
         }
       }
     }
-    const tmpResult3 = tmp(5393);
+    const tmpResult3 = tmp(5396);
     const unmountEffect = tmpResult3.useUnmountEffect(tmp23);
     if (cResult[9] !== channel) {
       class V {
@@ -262,7 +262,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
           headerRight() {
                   let tmp;
                   if (closure_1_2) {
-                    const HeaderActionButton = navigation(closure_2[22]).HeaderActionButton;
+                    const HeaderActionButton = navigation(closure_2[21]).HeaderActionButton;
                     const intl = navigation(closure_2[19]).intl;
                     tmp = <HeaderActionButton onPress={onPress} text={intl.string(navigation(closure_2[19]).t["R3BPH+"])} />;
                   }
@@ -353,10 +353,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
       }
     }
   }, items1);
-  const tmp2Result2 = navigation(5393);
+  const tmp2Result2 = navigation(5396);
   const unmountEffect = tmp2Result2.useUnmountEffect(() => {
-    const obj = channel(closure_2[20]);
-    obj.wait(channel(closure_2[17]).resetSettings);
+    const obj = channel(closure_2[17]);
+    obj.resetSettings();
   });
   const items2 = [channel];
   callback = obj3.useCallback(() => {
@@ -384,7 +384,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
       headerRight() {
         let tmp;
         if (closure_1_2) {
-          const HeaderActionButton = navigation(closure_2[22]).HeaderActionButton;
+          const HeaderActionButton = navigation(closure_2[21]).HeaderActionButton;
           const intl = navigation(closure_2[19]).intl;
           tmp = <HeaderActionButton onPress={onPress} text={intl.string(navigation(closure_2[19]).t["R3BPH+"])} />;
         }
@@ -418,9 +418,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8563).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8669).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(18486);
+  const Form = tmp2(8579).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8684).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(18560);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 });

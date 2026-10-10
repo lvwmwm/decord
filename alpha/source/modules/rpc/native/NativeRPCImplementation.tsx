@@ -1,22 +1,22 @@
-// Module ID: 14646
-// Function ID: 14647
+// Module ID: 14700
+// Function ID: 14701
 // Name: NativeRPCImplementation
-// Dependencies: [5080, 1205, 1244, 14647, 14699, 14700, 14702, 14703, 14705, 14708, 14709, 14711, 10892, 2]
+// Dependencies: [5081, 1205, 1244, 14701, 14753, 14754, 14756, 14757, 14759, 14762, 14763, 14765, 10932, 2]
 
-// Module 14646 (NativeRPCImplementation)
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10892 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 14647 */;
-import commands_activitiesDefault from "commands/activities" /* 14699 */;
-import authDefault from "auth" /* 14700 */;
-import voiceSettingsDefault from "voiceSettings" /* 14702 */;
-import unsupportedDefault from "unsupported" /* 14703 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14705 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 14709 */;
-import NativeRPCServerDefault from "NativeRPCServer" /* 14711 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+// Module 14700 (NativeRPCImplementation)
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10932 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 14701 */;
+import commands_activitiesDefault from "commands/activities" /* 14753 */;
+import authDefault from "auth" /* 14754 */;
+import voiceSettingsDefault from "voiceSettings" /* 14756 */;
+import unsupportedDefault from "unsupported" /* 14757 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14759 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 14763 */;
+import NativeRPCServerDefault from "NativeRPCServer" /* 14765 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 14708 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 14762 */;
 import size from "module_2" /* 2 */;
 
 let items;

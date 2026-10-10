@@ -164,7 +164,7 @@ class VirtualizedList {
         const onContentSizeChange = onRefresh.onContentSizeChange;
         const obj2 = {};
         const merged = Object.assign(_objectWithoutProperties(onRefresh, closure_4));
-        return authStore6(authStore5, obj2);
+        return authStore5(authStore4, obj2);
       } else {
         let tmp14Result;
         if (onRefresh) {
@@ -179,11 +179,11 @@ class VirtualizedList {
           tmp9(tmp12, `\`refreshing\` prop must be set as a boolean in order to use \`onRefresh\`, but got \`${stringify(str)}\``);
           const obj3 = { refreshControl };
           const merged1 = Object.assign(onRefresh);
-          const tmp14 = authStore6;
-          const tmp15 = authStore3;
+          const tmp14 = authStore5;
+          const tmp15 = syncedClientThemes;
           if (null == onRefresh.refreshControl) {
             const obj4 = { refreshing: onRefresh.refreshing, onRefresh, progressViewOffset: onRefresh.progressViewOffset };
-            refreshControl = authStore6(map1, obj4);
+            refreshControl = authStore5(map1, obj4);
           } else {
             refreshControl = onRefresh.refreshControl;
           }
@@ -191,7 +191,7 @@ class VirtualizedList {
         } else {
           const obj = {};
           const merged2 = Object.assign(onRefresh);
-          tmp14Result = authStore6(authStore3, obj);
+          tmp14Result = authStore5(syncedClientThemes, obj);
         }
         return tmp14Result;
       }
@@ -967,7 +967,7 @@ let items = [
             enabledResult = _fillRateHelper.enabled();
           }
           let push = items.push;
-          let tmp15 = authStore6;
+          let tmp15 = authStore5;
           let obj = {
             CellRendererComponent,
             ItemSeparatorComponent: tmp19,
@@ -1081,13 +1081,13 @@ let items = [
         }
         let tmp8 = ListHeaderComponent;
         if (!unpackModuleId(ListHeaderComponent)) {
-          tmp8 = authStore6(ListHeaderComponent, {});
+          tmp8 = authStore5(ListHeaderComponent, {});
         }
         const push = items.push;
-        const obj2 = { cellKey: `${self._getCellKey()}-header`, children: authStore6(authStore5, obj3) };
+        const obj2 = { cellKey: `${self._getCellKey()}-header`, children: authStore5(authStore4, obj3) };
         const VirtualizedListCellContextProvider = _mod322.VirtualizedListCellContextProvider;
         obj3 = { collapsable: false, onLayout: self._onLayoutHeader, style: StyleSheet.compose(tmp2, self.props.ListHeaderComponentStyle), children: tmp8 };
-        push(authStore6(VirtualizedListCellContextProvider, obj2, "$header"));
+        push(authStore5(VirtualizedListCellContextProvider, obj2, "$header"));
       }
       const props = self.props;
       const itemCount = props.getItemCount(data);
@@ -1095,12 +1095,12 @@ let items = [
         if (ListEmptyComponent) {
           let tmp18 = ListEmptyComponent;
           if (!unpackModuleId(ListEmptyComponent)) {
-            tmp18 = authStore6(ListEmptyComponent, {});
+            tmp18 = authStore5(ListEmptyComponent, {});
           }
           const push2 = items.push;
           const obj4 = { cellKey: `${self._getCellKey()}-empty`, children: self._renderEmptyComponent(tmp18, tmp2) };
           const VirtualizedListCellContextProvider2 = _mod322.VirtualizedListCellContextProvider;
-          push2(authStore6(VirtualizedListCellContextProvider2, obj4, "$empty"));
+          push2(authStore5(VirtualizedListCellContextProvider2, obj4, "$empty"));
         }
       }
       if (itemCount > 0) {
@@ -1141,7 +1141,7 @@ let items = [
                 obj6 = {};
                 obj6[_getSpacerKeyResult] = cellMetricsApprox1.offset + cellMetricsApprox1.length - cellMetricsApprox.offset;
                 let _HermesInternal = HermesInternal;
-                let arr3 = items.push(authStore6(authStore5, obj5, "$spacer-" + tmp30.first));
+                let arr3 = items.push(authStore5(authStore4, obj5, "$spacer-" + tmp30.first));
               }
               last = tmp30.last;
             }
@@ -1160,13 +1160,13 @@ let items = [
       if (ListFooterComponent) {
         let tmp54 = ListFooterComponent;
         if (!unpackModuleId(ListFooterComponent)) {
-          tmp54 = authStore6(ListFooterComponent, {});
+          tmp54 = authStore5(ListFooterComponent, {});
         }
         const push3 = items.push;
-        const obj7 = { cellKey: self._getFooterCellKey(), children: authStore6(authStore5, obj8) };
+        const obj7 = { cellKey: self._getFooterCellKey(), children: authStore5(authStore4, obj8) };
         const VirtualizedListCellContextProvider3 = _mod322.VirtualizedListCellContextProvider;
         obj8 = { onLayout: self._onLayoutFooter, style: StyleSheet.compose(tmp2, self.props.ListFooterComponentStyle), children: tmp54 };
-        push3(authStore6(VirtualizedListCellContextProvider3, obj7, "$footer"));
+        push3(authStore5(VirtualizedListCellContextProvider3, obj7, "$footer"));
       }
       const obj9 = { scrollEventThrottle: num2, invertStickyHeaders: inverted, stickyHeaderIndices: items1, style, isInvertedVirtualizedList: self.props.inverted, maintainVisibleContentPosition: tmp63 };
       const merged = Object.assign(self.props);
@@ -1204,7 +1204,7 @@ let items = [
       ({ _getOutermostParentListRef: obj13.getOutermostParentListRef, _registerAsNestedChild: obj13.registerAsNestedChild, _unregisterAsNestedChild: obj13.unregisterAsNestedChild } = self);
       _defaultRenderScrollComponent = self.props.renderScrollComponent;
       obj14 = react2;
-      const tmp66 = authStore6;
+      const tmp66 = authStore5;
       tmp67 = authStore;
       if (!_defaultRenderScrollComponent) {
         _defaultRenderScrollComponent = self._defaultRenderScrollComponent;
@@ -1215,7 +1215,7 @@ let items = [
       if (self.props.debug) {
         const obj29 = { style: debug.debug, children: items3 };
         items3 = [tmp66Result, self._renderDebugOverlay()];
-        tmp69 = closure_19(authStore5, obj29);
+        tmp69 = closure_19(authStore4, obj29);
       }
       return tmp69;
     }
@@ -1351,7 +1351,7 @@ let items = [
           ({ debugOverlayBase: arr[0], debugOverlayFrame: arr[1] } = debug);
           const obj2 = { top: item.offset * require, height: item.length * require };
           items[2] = obj2;
-          return authStore6(authStore5, obj, "f" + index);
+          return authStore5(authStore4, obj, "f" + index);
         }),
       ,
 

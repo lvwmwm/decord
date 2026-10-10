@@ -1,10 +1,10 @@
-// Module ID: 8014
-// Function ID: 8015
+// Module ID: 8032
+// Function ID: 8033
 // Name: gameServerResponseToInstance
 // Dependencies: [2]
 // Exports: default
 
-// Module 8014 (gameServerResponseToInstance)
+// Module 8032 (gameServerResponseToInstance)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_server/utils/gameServerResponseToInstance.tsx");

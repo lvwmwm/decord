@@ -1,21 +1,21 @@
-// Module ID: 7175
-// Function ID: 7176
+// Module ID: 7181
+// Function ID: 7182
 // Name: NetStats
-// Dependencies: [5, 17, 5754, 7176, 2086, 1085, 3, 1483, 1482, 5289, 1102, 510, 584, 4944, 7177, 7190, 9, 2]
+// Dependencies: [5, 17, 5757, 7182, 2087, 1085, 3, 1483, 1482, 5290, 1102, 510, 584, 4983, 7183, 7196, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 7175 (NetStats)
+// Module 7181 (NetStats)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import configure from "configure" /* 1483 */;
-import react_nativeDefault from "react-native" /* 4944 */;
-import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 5289 */;
+import react_nativeDefault from "react-native" /* 4983 */;
+import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 5290 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7176 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7182 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import NetworkUtils_mod from "utils/NetworkUtils" /* 1482 */;
 import Dispatcher_mod from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let c14, c2, c3, c6, c7, closure_1_11, fileOnly, nativeStats, sendMessageOptions
 
 let AppState;
 let closure_4;
-const f95373 = (arg0) => {
+const f95634 = (arg0) => {
   let obj2;
   nativeStats = arg0;
   if (null == closure_1_11) {
@@ -42,7 +42,7 @@ function receiveNetworkInfoformation(result) {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f95373);
+    const networkUsage = getNetworkUsage(f95634);
   }
 }
 function updateNetworkUsage() {
@@ -50,7 +50,7 @@ function updateNetworkUsage() {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f95373);
+    const networkUsage = getNetworkUsage(f95634);
   }
 }
 ({ NativeModules: closure_4, AppState } = react_native);
@@ -149,7 +149,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ class EventTracker {
             const result = Storage.set("previousNetStatsEvents", length);
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp23) {
           c3 = 3;
           throw tmp23;
@@ -221,7 +221,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ class EventTracker {
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;
@@ -308,7 +308,7 @@ class EventTracker {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

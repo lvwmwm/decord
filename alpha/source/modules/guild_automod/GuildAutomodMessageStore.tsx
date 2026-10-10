@@ -1,18 +1,18 @@
-// Module ID: 7734
-// Function ID: 7735
+// Module ID: 7752
+// Function ID: 7753
 // Name: GuildAutomodMessageStore
-// Dependencies: [2064, 5429, 1085, 7735, 7863, 5431, 7223, 11, 504, 584, 2]
+// Dependencies: [2065, 5432, 1085, 7753, 7881, 5434, 7229, 11, 504, 584, 2]
 
-// Module 7734 (GuildAutomodMessageStore)
+// Module 7752 (GuildAutomodMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5431 */;
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7223 */;
-import MessageQueue from "MessageQueue" /* 7735 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 7863 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import MessageStore from "MessageStore" /* 5429 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7229 */;
+import MessageQueue from "MessageQueue" /* 7753 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 7881 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ let obj = {
       let result = obj2.isAutomodMessageRecord(messageRecord);
       const tmp = require;
       if (result) {
-        const tmpResult = tmp(7223);
+        const tmpResult = tmp(7229);
         let flag = tmpResult.isAutomodNotification(messageRecord);
         if (flag) {
           lastIncidentAlertMessage[guildId] = messageRecord.id;

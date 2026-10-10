@@ -1,15 +1,15 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17899
+// Function ID: 17900
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 2064, 2115, 1085, 558, 576, 4698, 10447, 10805, 10814, 1121, 2]
+// Dependencies: [5, 19, 2065, 2116, 1085, 558, 576, 4739, 10480, 10878, 10824, 1121, 2]
 
-// Module 17827 (useTransitionToConnectedActivityInVoice)
+// Module 17899 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTransitio
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTransitio
                   }
                 }
                 c4 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -143,7 +143,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTransitio
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             try {
@@ -187,7 +187,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTransitio
                       }
                     }
                     c4 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

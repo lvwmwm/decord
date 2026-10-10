@@ -1,10 +1,10 @@
-// Module ID: 4740
-// Function ID: 4741
+// Module ID: 4781
+// Function ID: 4782
 // Name: PremiumSubscription
 // Dependencies: [1392, 2]
 // Exports: getBasePlanIdForSubscriptionItems, getBaseSubscriptionItemForSubscriptionItems, getNonePlanIdForIntervalType, getNonePlanIdForSubscription
 
-// Module 4740 (PremiumSubscription)
+// Module 4781 (PremiumSubscription)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;
 
@@ -44,8 +44,8 @@ export const getNonePlanIdForSubscription = function getNonePlanIdForSubscriptio
   }
   return NONE_MONTH;
 };
-export const getBaseSubscriptionItemForSubscriptionItems = function getBaseSubscriptionItemForSubscriptionItems(items) {
-  return items.find((item) => null != intervalCount[item.planId] && null != intervalCount[item.planId].premiumType);
+export const getBaseSubscriptionItemForSubscriptionItems = function getBaseSubscriptionItemForSubscriptionItems(c1) {
+  return c1.find((item) => null != intervalCount[item.planId] && null != intervalCount[item.planId].premiumType);
 };
 export const getBasePlanIdForSubscriptionItems = function getBasePlanIdForSubscriptionItems(items, interval, intervalCount) {
   const found = items.find((item) => null != intervalCount[item.planId] && null != intervalCount[item.planId].premiumType);

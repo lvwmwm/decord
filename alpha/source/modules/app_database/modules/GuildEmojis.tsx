@@ -1,11 +1,11 @@
-// Module ID: 6000
-// Function ID: 6001
+// Module ID: 5993
+// Function ID: 5994
 // Name: GuildEmojis
-// Dependencies: [5, 3, 2090, 2]
+// Dependencies: [5, 3, 2091, 2]
 
-// Module 6000 (GuildEmojis)
+// Module 5993 (GuildEmojis)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2090 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ class GuildEmojis {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

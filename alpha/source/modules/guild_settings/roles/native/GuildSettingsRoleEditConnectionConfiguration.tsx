@@ -1,9 +1,9 @@
-// Module ID: 18302
-// Function ID: 18303
+// Module ID: 18376
+// Function ID: 18377
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1085, 6870, 21, 5091, 587, 558, 576, 4992, 10678, 1200, 4930, 1415, 1126, 6212, 6191, 6186, 6889, 18303, 1382, 5087, 5760, 6269, 2]
+// Dependencies: [32, 19, 17, 1085, 6876, 21, 5092, 587, 558, 576, 5031, 10712, 1200, 4969, 1415, 1126, 6207, 6184, 6179, 6895, 18377, 1382, 5088, 5763, 6264, 2]
 
-// Module 18302 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 18376 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,20 +11,20 @@ import Constants2 from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
-import shared from "shared" /* 4930 */;
-import useThemeDefault from "useTheme" /* 4992 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import PlatformsDefault from "Platforms" /* 5760 */;
-import TableRow2 from "TableRow" /* 6186 */;
-import Pressables from "Pressables" /* 6191 */;
-import XSmallIcon from "XSmallIcon" /* 6212 */;
-import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 10678 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18303 */;
+import shared from "shared" /* 4969 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import PlatformsDefault from "Platforms" /* 5763 */;
+import TableRow2 from "TableRow" /* 6179 */;
+import Pressables from "Pressables" /* 6184 */;
+import XSmallIcon from "XSmallIcon" /* 6207 */;
+import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 10712 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 6870 */;
+import Constants from "Constants" /* 6876 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const TableRowGroup3 = tmp(6269);
+const TableRowGroup3 = tmp(6264);
 function ApplicationMetadataRules(arg0) {
   let integration;
   let locked;
@@ -174,7 +174,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
     if (cResult[0] !== bot) {
-      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
+      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
       const Avatar2 = tmp(1200).Avatar;
       const tmp26 = onChangeText(Avatar2, obj2);
       cResult[0] = bot;
@@ -197,7 +197,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       if (null != bot1) {
         let tmp19;
         if (cResult[2] !== getOrFetchApplicationBatched.bot) {
-          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
+          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
           const Avatar = tmp(1200).Avatar;
           const tmp21 = onChangeText(Avatar, obj3);
           cResult[2] = getOrFetchApplicationBatched.bot;
@@ -353,7 +353,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
+    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
     const Avatar2 = tmp3(1200).Avatar;
     bot = undefined;
     const tmp16 = onChangeText;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
       let tmp13;
       if (null != bot1) {
-        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
+        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
         const Avatar = tmp3(1200).Avatar;
         tmp13 = onChangeText(Avatar, obj2);
       }
@@ -396,7 +396,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     tmp9Result = onChangeText(Icon, obj3);
   }
   const obj4 = { icon: tmp9Result, label: format(Nj0a3j, { platformName: name2 }), trailing: onChangeText(PressableOpacity, obj5) };
-  const TableRow = tmp3(6186).TableRow;
+  const TableRow = tmp3(6179).TableRow;
   const intl = tmp3(1126).intl;
   format = intl.format;
   name2 = undefined;
@@ -408,7 +408,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     name2 = name;
   }
   obj5 = { "aria-label": intl2.string(intl3.t.N86XcP), onPress: onRemove, disabled: locked, children: onChangeText(XSmallIcon.XSmallIcon, {}) };
-  PressableOpacity = tmp3(6191).PressableOpacity;
+  PressableOpacity = tmp3(6184).PressableOpacity;
   intl2 = tmp3(1126).intl;
   return onChangeText(TableRow, obj4);
 });
@@ -564,7 +564,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Boolea
     }
   };
   value = undefined;
-  const TableSwitchRow = metadataField(6889).TableSwitchRow;
+  const TableSwitchRow = metadataField(6895).TableSwitchRow;
   const tmp2 = closure_12;
   if (existingPendingConfiguration != null) {
     value = existingPendingConfiguration.configuration.value;
@@ -1401,7 +1401,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(18303);
+  let obj = metadataField(18377);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -1410,7 +1410,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(18303);
+  const tmp2Result = tmp2(18377);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);
@@ -1477,7 +1477,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
     items[1] = numericalInputDisabled;
     items1 = [onInputValueChange(closure_5, obj5, "_numericalInputContainer"), ];
     const obj7 = { variant: "text-md/semibold", style: tmp.appNumericalInputText, children: fieldText };
-    items1[1] = onInputValueChange(tmp2(5087).Text, obj7);
+    items1[1] = onInputValueChange(tmp2(5088).Text, obj7);
     tmp19Result = tmp19(tmp20, obj4);
   }
   const obj8 = {
@@ -1515,7 +1515,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       tmp10(tmp3, num);
     }
   };
-  return onInputValueChange(tmp2(6889).TableSwitchRow, obj8, metadataField);
+  return onInputValueChange(tmp2(6895).TableSwitchRow, obj8, metadataField);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlueskyMetadataRules(arg0) {
@@ -1591,7 +1591,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bluesk
               }
               const obj3 = { children: items };
               items = [tmp11, tmp16, tmp24];
-              const tmp32 = map1(authStore3, obj3);
+              const tmp32 = map1(syncedClientThemes, obj3);
               cResult[19] = tmp11;
               cResult[20] = tmp16;
               cResult[21] = tmp24;
@@ -1640,7 +1640,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bluesk
   items[1] = onChangeText(closure_18, obj4);
   const obj5 = { fieldTextHook: intl3.t["5I4mVS"], metadataField: metroImportDefault.BLUESKY_STATUSES_COUNT, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.BLUESKY_STATUSES_COUNT), platform: value, onConfigurationChange, locked };
   items[2] = onChangeText(closure_18, obj5);
-  return map1(authStore3, obj2);
+  return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function SteamMetadataRules(arg0) {
@@ -1733,7 +1733,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function SteamM
                   }
                   const obj3 = { children: items };
                   items = [tmp11, tmp16, tmp24, tmp32];
-                  const tmp40 = map1(authStore3, obj3);
+                  const tmp40 = map1(syncedClientThemes, obj3);
                   cResult[25] = tmp11;
                   cResult[26] = tmp16;
                   cResult[27] = tmp24;
@@ -1794,7 +1794,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function SteamM
   items[2] = onChangeText(closure_18, obj5);
   const obj6 = { fieldTextHook: intl3.t["MCHnK+"], metadataField: metroImportDefault.STEAM_ITEM_COUNT_TF2, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.STEAM_ITEM_COUNT_TF2), platform: value, onConfigurationChange, locked };
   items[3] = onChangeText(closure_18, obj6);
-  return map1(authStore3, obj2);
+  return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwitterMetadataRules(arg0) {
@@ -1897,7 +1897,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Twitte
                   }
                   const obj3 = { children: items };
                   items = [tmp11, tmp16, tmp24, tmp34];
-                  const tmp42 = map1(authStore3, obj3);
+                  const tmp42 = map1(syncedClientThemes, obj3);
                   cResult[26] = tmp34;
                   cResult[27] = tmp11;
                   cResult[28] = tmp16;
@@ -1960,7 +1960,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Twitte
   const obj6 = { fieldText: intl.string(intl3.t.E2iT8K), metadataField: metroImportDefault.TWITTER_VERIFIED, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.TWITTER_VERIFIED), platform: value, onConfigurationChange, locked };
   intl = intl3.intl;
   items[3] = onChangeText(closure_17, obj6);
-  return map1(authStore3, obj2);
+  return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedditMetadataRules(arg0) {
@@ -2073,7 +2073,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reddit
                   }
                   const obj3 = { children: items };
                   items = [tmp11, tmp16, tmp26, tmp36];
-                  const tmp44 = map1(authStore3, obj3);
+                  const tmp44 = map1(syncedClientThemes, obj3);
                   cResult[27] = tmp36;
                   cResult[28] = tmp11;
                   cResult[29] = tmp16;
@@ -2138,7 +2138,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reddit
   const obj6 = { fieldText: intl2.string(intl3.t.kCAN58), metadataField: metroImportDefault.REDDIT_GOLD, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.REDDIT_GOLD), platform: value, onConfigurationChange, locked };
   intl2 = intl3.intl;
   items[3] = onChangeText(closure_17, obj6);
-  return map1(authStore3, obj2);
+  return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaypalMetadataRules(arg0) {
@@ -2207,7 +2207,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Paypal
           }
           const obj3 = { children: items };
           items = [tmp11, tmp18];
-          const tmp26 = map1(authStore3, obj3);
+          const tmp26 = map1(syncedClientThemes, obj3);
           cResult[14] = tmp11;
           cResult[15] = tmp18;
           cResult[16] = tmp26;
@@ -2246,7 +2246,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Paypal
   const obj4 = { fieldText: intl.string(intl3.t["0JyE8I"]), metadataField: metroImportDefault.PAYPAL_VERIFIED, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.PAYPAL_VERIFIED), platform: value, onConfigurationChange, locked };
   intl = intl3.intl;
   items[1] = onChangeText(closure_17, obj4);
-  return map1(authStore3, obj2);
+  return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function EbayMetadataRules(arg0) {
@@ -2366,7 +2366,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function EbayMe
                       }
                       const obj3 = { children: items };
                       items = [tmp11, tmp16, tmp24, tmp32, tmp43];
-                      const tmp51 = map1(authStore3, obj3);
+                      const tmp51 = map1(syncedClientThemes, obj3);
                       cResult[32] = tmp43;
                       cResult[33] = tmp11;
                       cResult[34] = tmp16;
@@ -2441,7 +2441,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function EbayMe
   const obj7 = { fieldText: intl.string(intl3.t["39wASN"]), metadataField: metroImportDefault.EBAY_TOP_RATED_SELLER, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.EBAY_TOP_RATED_SELLER), platform: value, onConfigurationChange, locked };
   intl = intl3.intl;
   items[4] = onChangeText(closure_17, obj7);
-  return map1(authStore3, obj2);
+  return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function TikTokMetadataRules(arg0) {
@@ -2543,7 +2543,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function TikTok
                   }
                   const obj3 = { children: items };
                   items = [tmp13, tmp18, tmp26, tmp34];
-                  const tmp42 = map1(authStore3, obj3);
+                  const tmp42 = map1(syncedClientThemes, obj3);
                   cResult[26] = tmp34;
                   cResult[27] = tmp13;
                   cResult[28] = tmp18;
@@ -2605,7 +2605,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function TikTok
   items[2] = onChangeText(closure_18, obj5);
   const obj6 = { fieldTextHook: intl3.t.tEFCYA, metadataField: metroImportDefault.TIKTOK_LIKES_COUNT, existingPendingConfiguration: configMetadataMap.get(metroImportDefault.TIKTOK_LIKES_COUNT), platform: value, onConfigurationChange, locked };
   items[3] = onChangeText(closure_18, obj6);
-  return map1(authStore3, obj2);
+  return map1(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleEditConnectionConfiguration(configurationItems) {

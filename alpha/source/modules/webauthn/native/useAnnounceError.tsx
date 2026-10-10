@@ -1,10 +1,10 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 15041
+// Function ID: 15042
 // Name: useAnnounceError
-// Dependencies: [19, 558, 576, 4789, 2]
+// Dependencies: [19, 558, 576, 4828, 2]
 
-// Module 14982 (useAnnounceError)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4789 */;
+// Module 15041 (useAnnounceError)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

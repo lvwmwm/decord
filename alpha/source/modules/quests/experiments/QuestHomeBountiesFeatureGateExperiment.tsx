@@ -1,9 +1,9 @@
-// Module ID: 12922
-// Function ID: 12923
+// Module ID: 12970
+// Function ID: 12971
 // Name: QuestHomeBountiesFeatureGateExperiment
 // Dependencies: [1453, 2]
 
-// Module 12922 (QuestHomeBountiesFeatureGateExperiment)
+// Module 12970 (QuestHomeBountiesFeatureGateExperiment)
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 13921
-// Function ID: 13922
+// Module ID: 13974
+// Function ID: 13975
 // Name: OnlineFriendsStore
-// Dependencies: [5107, 4719, 1085, 6071, 2081, 504, 1453, 584, 2]
+// Dependencies: [5108, 4760, 1085, 6064, 2082, 504, 1453, 584, 2]
 
-// Module 13921 (OnlineFriendsStore)
+// Module 13974 (OnlineFriendsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
-import SetUtils from "SetUtils" /* 2081 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6071 */;
-import PresenceStore from "PresenceStore" /* 5107 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import SetUtils from "SetUtils" /* 2082 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6064 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import size from "module_2" /* 2 */;
 
 function isEnabled() {

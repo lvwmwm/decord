@@ -1,19 +1,19 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12504
+// Function ID: 12505
 // Name: HubEmailConnectionPinVerify
-// Dependencies: [32, 5, 19, 17, 2086, 21, 5091, 4768, 5017, 558, 576, 12458, 10590, 12447, 1126, 5632, 12, 7046, 12442, 6163, 12459, 5087, 6767, 2]
+// Dependencies: [32, 5, 19, 17, 2087, 21, 5092, 4809, 6769, 558, 576, 12505, 10624, 12494, 1126, 5635, 12, 7052, 12489, 6156, 12506, 5088, 6768, 2]
 
-// Module 12457 (HubEmailConnectionPinVerify)
+// Module 12504 (HubEmailConnectionPinVerify)
 import react_native from "react-native" /* 17 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5017 */;
-import HubJoinManagerDefault from "HubJoinManager" /* 12458 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import EnvelopeIcon from "EnvelopeIcon" /* 6769 */;
+import HubJoinManagerDefault from "HubJoinManager" /* 12505 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,10 +22,10 @@ let c5, c6, importDefault;
 
 let c9;
 let metroImportAll;
-function presentResendToast(content) {
+function presentResendToast(text) {
   const obj = ToastActionCreatorsDefault;
-  const obj2 = { key: "HUB_EMAIL_RESET", content, icon: AssetRegistryDefault };
-  obj.open(obj2);
+  const obj2 = { text, icon: EnvelopeIcon.EnvelopeIcon };
+  obj.open("HUB_EMAIL_RESET", obj2);
 }
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
@@ -246,7 +246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -298,7 +298,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp34) {
           if (0 === c4) {
@@ -331,7 +331,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -391,7 +391,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp34) {
         closure_3 = tmp34;
@@ -436,7 +436,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -490,7 +490,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp34) {
           closure_3 = tmp34;
@@ -535,7 +535,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -594,7 +594,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp34) {
         closure_3 = tmp34;

@@ -1,13 +1,13 @@
-// Module ID: 6083
-// Function ID: 6084
+// Module ID: 6076
+// Function ID: 6077
 // Name: isOptInEnabled
-// Dependencies: [2086, 4709, 5973, 1390, 1085, 558, 576, 504, 2]
+// Dependencies: [2087, 4750, 5966, 1390, 1085, 558, 576, 504, 2]
 // Exports: isOptInEnabledForGuild
 
-// Module 6083 (isOptInEnabled)
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+// Module 6076 (isOptInEnabled)
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

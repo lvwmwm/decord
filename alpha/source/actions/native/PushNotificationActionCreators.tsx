@@ -1,10 +1,10 @@
-// Module ID: 12080
-// Function ID: 12081
+// Module ID: 12124
+// Function ID: 12125
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 12081, 502, 1085, 12082, 5940, 3, 1111, 1295, 1255, 12085, 510, 5945, 1382, 1273, 1388, 584, 2]
+// Dependencies: [5, 12125, 502, 1085, 12126, 5933, 3, 1111, 1295, 1255, 12129, 510, 5938, 1382, 1273, 1388, 584, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 12080 (PushNotificationActionCreators)
+// Module 12124 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,13 +12,13 @@ import TokenManagerAll from "TokenManager" /* 1111 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5945 */;
-import Constants2 from "Constants" /* 12082 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
+import Constants2 from "Constants" /* 12126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 12081 */;
+import MultiAccountStore from "MultiAccountStore" /* 12125 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 5940 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 5933 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -47,7 +47,7 @@ let body = function _getOrRefreshPushSyncToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -161,7 +161,7 @@ body = {
       }
       body = { provider: tmp9, token, bypass_server_throttling_supported: isAndroidResult, bundle_id: unpackModuleId };
       const tmp2Result = PlatformUtils;
-      isAndroidResult = tmp2Result.isAndroid() && !authStore3;
+      isAndroidResult = tmp2Result.isAndroid() && !syncedClientThemes;
       obj2 = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_REGISTER_DEVICE_TOKEN };
       syncDeviceResult = post(request);
     }
@@ -188,7 +188,7 @@ body = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ body = {
               }
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp22) {
           c3 = 3;
@@ -296,13 +296,9 @@ let result = size.fileFinishedImporting("actions/native/PushNotificationActionCr
 
 export default body;
 export const setPushPermissionState = function setPushPermissionState(PROMPT_SEEN) {
-  const permissionState = PROMPT_SEEN;
-  let obj = DispatcherDefault;
-  obj.wait(() => {
-    const obj = DispatcherDefault;
-    const obj2 = { type: "PUSH_NOTIFICATION_PERMISSION_SET_STATE", permissionState };
-    obj.dispatch(obj2);
-  });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "PUSH_NOTIFICATION_PERMISSION_SET_STATE", permissionState: PROMPT_SEEN };
+  obj.dispatch(obj2);
 };
 export const setPushPermissionReactivationSeen = function setPushPermissionReactivationSeen(promptType) {
   const obj = DispatcherDefault;

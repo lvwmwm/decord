@@ -1,22 +1,22 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 17286
+// Function ID: 17287
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 10617, 21, 5091, 587, 558, 576, 17206, 10498, 6899, 17207, 5087, 1126, 3827, 6191, 6188, 1631, 504, 17208, 8513, 8761, 6737, 17209, 17210, 8608, 2]
+// Dependencies: [32, 19, 17, 10651, 21, 5092, 587, 558, 576, 17287, 10532, 6905, 17288, 5088, 1126, 3849, 6184, 6181, 1631, 504, 17289, 8529, 8778, 6738, 17290, 17291, 8624, 2]
 
-// Module 17205 (ConjureDebugLogsTab)
+// Module 17286 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3827 from "module_3827" /* 3827 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 17206 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 17207 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 17208 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 17287 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 17288 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 17289 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,9 +86,9 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp(10498).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp(10532).ChevronSmallDownIcon;
   } else {
-    ChevronSmallRightIcon = tmp(6899).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp(6905).ChevronSmallRightIcon;
   }
   ({ row, rowHead } = tmp4);
   if (cResult[2] !== entry.ts) {
@@ -192,32 +192,32 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
                       const tmp32 = React4;
                       if ("" !== tmp5.prefix) {
                         const obj4 = { variant: "text-xs/normal", color: str, selectable: true, children: tmp5.prefix };
-                        tmp33 = metroImportDefault(tmp(5087).Text, obj4);
+                        tmp33 = metroImportDefault(tmp(5088).Text, obj4);
                       }
                       const items1 = [tmp33, , ];
                       const obj5 = {
                         style: tmp4.jsonToggle,
                         accessibilityRole: "button",
                         accessibilityState: obj6,
-                        accessibilityLabel: intl2.string(_modDef3827["9CTzyV"]),
+                        accessibilityLabel: intl2.string(_modDef3849["9CTzyV"]),
                         onPress() {
                                               return onToggle(logKey);
                                             },
                         children: items2
                       };
                       obj6 = { expanded };
-                      const PressableOpacity = tmp(6191).PressableOpacity;
+                      const PressableOpacity = tmp(6184).PressableOpacity;
                       intl2 = tmp(1126).intl;
                       const obj7 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
                       items2 = [metroImportDefault(ChevronSmallRightIcon, obj7), ];
                       const items3 = [tmp5.marker, " ", ];
-                      const Text2 = tmp(5087).Text;
+                      const Text2 = tmp(5088).Text;
                       const intl3 = tmp(1126).intl;
                       const formatToPlainString = intl3.formatToPlainString;
                       if ("[\u2026]" === tmp5.marker) {
-                        kUhyUv = tmp35(3827).kUhyUv;
+                        kUhyUv = tmp35(3849).kUhyUv;
                       } else {
-                        kUhyUv = tmp35(3827)["N+fphl"];
+                        kUhyUv = tmp35(3849)["N+fphl"];
                       }
                       const obj8 = { variant: "text-xs/medium", color: "text-muted", children: items3 };
                       const obj9 = { count: tmp5.size };
@@ -227,7 +227,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
                       let tmp36Result = null;
                       if (expanded) {
                         const obj10 = { variant: "primary", children: metroImportDefault(Text_Text.Text, obj11) };
-                        const Card = tmp(6188).Card;
+                        const Card = tmp(6181).Card;
                         obj11 = { variant: "text-xs/normal", color: str, selectable: true, children: tmp5.pretty };
                         tmp36Result = tmp36(Card, obj10);
                       }
@@ -236,7 +236,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
                       tmp31Result = tmp31(tmp32, obj12);
                     } else {
                       const obj13 = { variant: "text-xs/normal", color: str, selectable: true, children: entry.message };
-                      tmp31Result = metroImportDefault(tmp(5087).Text, obj13);
+                      tmp31Result = metroImportDefault(tmp(5088).Text, obj13);
                     }
                     cResult[25] = ChevronSmallRightIcon;
                     cResult[26] = entry.message;
@@ -265,8 +265,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
           }
           let tmp20 = null;
           if (null != entry.kind) {
-            const obj15 = { variant: "text-xxs/semibold", color: "text-feedback-critical", style: tmp4.badge, children: intl.string(_modDef3827.TrC9c8) };
-            const Text = tmp(5087).Text;
+            const obj15 = { variant: "text-xxs/semibold", color: "text-feedback-critical", style: tmp4.badge, children: intl.string(_modDef3849.TrC9c8) };
+            const Text = tmp(5088).Text;
             intl = tmp(1126).intl;
             tmp20 = metroImportDefault(Text, obj15);
           }
@@ -281,7 +281,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
         tmp17 = null;
         if (null != entry.source) {
           const obj16 = { variant: "text-xxs/semibold", color: "text-subtle", style: tmp4.badge, children: entry.source };
-          tmp17 = metroImportDefault(tmp(5087).Text, obj16);
+          tmp17 = metroImportDefault(tmp(5088).Text, obj16);
         }
       }
       cResult[12] = entry.source;
@@ -325,21 +325,21 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp3(10498).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp3(10532).ChevronSmallDownIcon;
     tmp6 = tmp3;
   } else {
-    ChevronSmallRightIcon = tmp3(6899).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp3(6905).ChevronSmallRightIcon;
     tmp6 = tmp3;
   }
   let obj = { style: tmp.row, children: items2 };
   const obj2 = { style: tmp.rowHead, children: items1 };
   const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6Result.formatClockTime(entry.ts) };
-  const Text = tmp6(5087).Text;
-  tmp6Result = tmp6(17207);
+  const Text = tmp6(5088).Text;
+  tmp6Result = tmp6(17288);
   items1 = [closure_7(Text, obj3), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
-  const Text2 = tmp6(5087).Text;
+  const Text2 = tmp6(5088).Text;
   if ("error" !== level) {
     let str3 = "text-muted";
     if ("warn" === level) {
@@ -354,14 +354,14 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     tmp9Result = null;
     if (null != entry.source) {
       const obj5 = { variant: "text-xxs/semibold", color: "text-subtle", style: tmp.badge, children: entry.source };
-      tmp9Result = tmp9(tmp6(5087).Text, obj5);
+      tmp9Result = tmp9(tmp6(5088).Text, obj5);
     }
   }
   items1[2] = tmp9Result;
   let tmp9Result4 = null;
   if (null != entry.kind) {
-    const obj6 = { variant: "text-xxs/semibold", color: "text-feedback-critical", style: tmp.badge, children: intl.string(_modDef3827.TrC9c8) };
-    const Text3 = tmp6(5087).Text;
+    const obj6 = { variant: "text-xxs/semibold", color: "text-feedback-critical", style: tmp.badge, children: intl.string(_modDef3849.TrC9c8) };
+    const Text3 = tmp6(5088).Text;
     intl = tmp6(1126).intl;
     tmp9Result4 = tmp9(Text3, obj6);
   }
@@ -373,32 +373,32 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     const tmp14 = closure_9;
     if ("" !== memo.prefix) {
       const obj7 = { variant: "text-xs/normal", color: str, selectable: true, children: memo.prefix };
-      tmp9Result5 = tmp9(tmp6(5087).Text, obj7);
+      tmp9Result5 = tmp9(tmp6(5088).Text, obj7);
     }
     const items3 = [tmp9Result5, , ];
     const obj8 = {
       style: tmp.jsonToggle,
       accessibilityRole: "button",
       accessibilityState: obj9,
-      accessibilityLabel: intl2.string(_modDef3827["9CTzyV"]),
+      accessibilityLabel: intl2.string(_modDef3849["9CTzyV"]),
       onPress() {
           return dependencyMap(importDefault);
         },
       children: items4
     };
     obj9 = { expanded };
-    const PressableOpacity = tmp6(6191).PressableOpacity;
+    const PressableOpacity = tmp6(6184).PressableOpacity;
     intl2 = tmp6(1126).intl;
     const obj10 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
     items4 = [closure_7(ChevronSmallRightIcon, obj10), ];
     const items5 = [memo.marker, " ", ];
-    const Text4 = tmp6(5087).Text;
+    const Text4 = tmp6(5088).Text;
     const intl3 = tmp6(1126).intl;
     const formatToPlainString = intl3.formatToPlainString;
     if ("[\u2026]" === memo.marker) {
-      kUhyUv = tmp16(3827).kUhyUv;
+      kUhyUv = tmp16(3849).kUhyUv;
     } else {
-      kUhyUv = tmp16(3827)["N+fphl"];
+      kUhyUv = tmp16(3849)["N+fphl"];
     }
     const obj11 = { variant: "text-xs/medium", color: "text-muted", children: items5 };
     const obj12 = { count: memo.size };
@@ -407,8 +407,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     items3[1] = closure_8(PressableOpacity, obj8);
     let tmp9Result6 = null;
     if (expanded) {
-      const obj13 = { variant: "primary", children: closure_7(tmp6(5087).Text, obj14) };
-      const Card = tmp6(6188).Card;
+      const obj13 = { variant: "primary", children: closure_7(tmp6(5088).Text, obj14) };
+      const Card = tmp6(6181).Card;
       obj14 = { variant: "text-xs/normal", color: str, selectable: true, children: memo.pretty };
       tmp9Result6 = tmp9(Card, obj13);
     }
@@ -417,7 +417,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     tmp9Result7 = tmp7(tmp14, obj15);
   } else {
     const obj16 = { variant: "text-xs/normal", color: str, selectable: true, children: entry.message };
-    tmp9Result7 = tmp9(tmp6(5087).Text, obj16);
+    tmp9Result7 = tmp9(tmp6(5088).Text, obj16);
   }
   items2[1] = tmp9Result7;
   return closure_8(View, obj);
@@ -504,7 +504,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         return ConjureProjectStore.getHistoryState(projectId, "logs");
       }
     }
-    const DEBUG_LOG_FILTERS = tmp(17208).DEBUG_LOG_FILTERS;
+    const DEBUG_LOG_FILTERS = tmp(17289).DEBUG_LOG_FILTERS;
     tmp18[1] = DEBUG_LOG_FILTERS.map((id) => {
       let obj2;
       const obj = { id, label: obj2.debugLogFilterLabel(id), page: null };
@@ -528,7 +528,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
       }
     }
   }
-  const tmpResult4 = tmp(8513);
+  const tmpResult4 = tmp(8529);
   const segmentedControlState = tmpResult4.useSegmentedControlState(tmp17);
   if (cResult[9] === first1) {
     class L {

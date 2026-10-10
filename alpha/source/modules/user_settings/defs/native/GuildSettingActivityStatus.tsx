@@ -1,17 +1,17 @@
-// Module ID: 16203
-// Function ID: 16204
+// Module ID: 16270
+// Function ID: 16271
 // Name: GuildSettingActivityStatus
-// Dependencies: [16190, 7974, 558, 576, 2041, 6682, 10629, 1126, 2]
+// Dependencies: [16257, 7992, 558, 576, 2041, 6683, 10663, 1126, 2]
 
-// Module 16203 (GuildSettingActivityStatus)
+// Module 16270 (GuildSettingActivityStatus)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6682 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16190 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6683 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16257 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let c2;

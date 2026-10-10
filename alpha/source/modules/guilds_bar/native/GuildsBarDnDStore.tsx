@@ -1,13 +1,13 @@
-// Module ID: 16648
-// Function ID: 16649
+// Module ID: 16718
+// Function ID: 16719
 // Name: GuildsBarDnDStore
-// Dependencies: [5970, 1267, 4811, 1272, 1255, 558, 576, 4692, 2]
+// Dependencies: [5963, 1267, 4850, 1272, 1255, 558, 576, 4733, 2]
 
-// Module 16648 (GuildsBarDnDStore)
+// Module 16718 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import react_native from "react-native" /* 1272 */;
-import SortedGuildStore from "SortedGuildStore" /* 5970 */;
+import SortedGuildStore from "SortedGuildStore" /* 5963 */;
 import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, set;
 
 let tmp;
-const _slicedToArray = tmp(4692);
+const _slicedToArray = tmp(4733);
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
@@ -79,7 +79,7 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "code" };
+          const obj = { dropSpecs, dragSpecs: "r", overSpecs: "toCharArray$esjava$1" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;

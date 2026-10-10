@@ -1,17 +1,42 @@
 // Module ID: 11282
 // Function ID: 11283
-// Dependencies: []
-// Exports: getSDKSource, isBrowserBundle
+// Dependencies: [11214, 11235, 11264]
 
 // Module 11282
+import module_11264 from "module_11264" /* 11264 */;
 
-export function getSDKSource() {
-  return "npm";
-}
-export const isBrowserBundle = function isBrowserBundle() {
-  let prop = typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined";
-  if (typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined") {
-    prop = globalThis.__SENTRY_BROWSER_BUNDLE__;
-  }
-  return prop;
-};
+let has, toString;
+
+const weakMap = new WeakMap();
+
+export const functionToStringIntegration = module_11264.defineIntegration(() => {
+  let obj = {
+    name: "FunctionToString",
+    setupOnce() {
+      toString = Function.prototype.toString;
+      try {
+        const _Function = Function;
+        Function.prototype.toString = function() {
+          const items = [...arguments];
+          const obj = closure_1_0(closure_1_1[0]);
+          const originalFunction = obj.getOriginalFunction(this);
+          has = has.has;
+          let self = this;
+          const obj2 = closure_1_0(closure_1_1[1]);
+          if (has(obj2.getClient())) {
+            self = this;
+            if (undefined !== originalFunction) {
+              self = originalFunction;
+            }
+          }
+          return toString.apply(self, items);
+        };
+      } catch (err) {
+      }
+    },
+    setup(arg0) {
+      const result = weakMap.set(arg0, true);
+    }
+  };
+  return obj;
+});

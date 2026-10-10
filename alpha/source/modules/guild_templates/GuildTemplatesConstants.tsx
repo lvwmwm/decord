@@ -1,9 +1,9 @@
-// Module ID: 7024
-// Function ID: 7025
+// Module ID: 7030
+// Function ID: 7031
 // Name: GuildTemplatesConstants
 // Dependencies: [2]
 
-// Module 7024 (GuildTemplatesConstants)
+// Module 7030 (GuildTemplatesConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_templates/GuildTemplatesConstants.tsx");

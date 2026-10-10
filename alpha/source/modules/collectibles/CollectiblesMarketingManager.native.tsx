@@ -1,13 +1,13 @@
-// Module ID: 14737
-// Function ID: 14738
+// Module ID: 14791
+// Function ID: 14792
 // Name: CollectiblesMarketingManager
-// Dependencies: [5090, 2002, 584, 7256, 7304, 2]
+// Dependencies: [5091, 2002, 584, 14792, 7262, 7310, 2]
 
-// Module 14737 (CollectiblesMarketingManager)
+// Module 14791 (CollectiblesMarketingManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7256 */;
-import CollectiblesMarketingReleaseType2 from "CollectiblesMarketingReleaseType" /* 7304 */;
-import DevSettingsStore from "DevSettingsStore" /* 5090 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7262 */;
+import CollectiblesMarketingCacheExperiment from "CollectiblesMarketingCacheExperiment" /* 14792 */;
+import DevSettingsStore from "DevSettingsStore" /* 5091 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
@@ -16,11 +16,21 @@ class CollectiblesMarketingManager extends LifecycleManager {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
       const value = DevSettingsStore.get("shop_include_unpublished");
-      const fetchCollectiblesMarketings = CollectiblesActionCreators.fetchCollectiblesMarketings;
-      CollectiblesActionCreators;
-      const CollectiblesMarketingReleaseType = CollectiblesMarketingReleaseType2.CollectiblesMarketingReleaseType;
-      const obj = { release: value ? CollectiblesMarketingReleaseType.BETA : CollectiblesMarketingReleaseType.PROD };
-      const collectiblesMarketings = fetchCollectiblesMarketings(obj);
+      const obj = CollectiblesMarketingCacheExperiment;
+      const collectiblesMarketingCacheTTL = obj.getCollectiblesMarketingCacheTTL("CollectiblesMarketingManager");
+      let result = null != collectiblesMarketingCacheTTL;
+      if (result) {
+        const obj2 = { ttlMs: collectiblesMarketingCacheTTL };
+        const tmp2Result = CollectiblesActionCreators;
+        result = tmp2Result.restoreCollectiblesMarketingsFromCache(obj2);
+      }
+      if (!result) {
+        const fetchCollectiblesMarketings = CollectiblesActionCreators.fetchCollectiblesMarketings;
+        CollectiblesActionCreators;
+        const CollectiblesMarketingReleaseType = tmp2(tmp3[5]).CollectiblesMarketingReleaseType;
+        const obj3 = { release: value ? CollectiblesMarketingReleaseType.BETA : CollectiblesMarketingReleaseType.PROD };
+        const collectiblesMarketings = fetchCollectiblesMarketings(obj3);
+      }
     };
     return applyArgumentsResult;
   }
@@ -35,6 +45,6 @@ class CollectiblesMarketingManager extends LifecycleManager {
 }
 const prototype = CollectiblesMarketingManager.prototype;
 const collectiblesMarketingManager = new CollectiblesMarketingManager();
-const result = size.fileFinishedImporting("modules/collectibles/CollectiblesMarketingManager.native.tsx");
+let result = size.fileFinishedImporting("modules/collectibles/CollectiblesMarketingManager.native.tsx");
 
 export default collectiblesMarketingManager;

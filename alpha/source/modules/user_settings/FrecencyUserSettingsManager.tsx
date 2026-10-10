@@ -1,24 +1,24 @@
-// Module ID: 17979
-// Function ID: 17980
+// Module ID: 18051
+// Function ID: 18052
 // Name: FrecencyUserSettingsManager
-// Dependencies: [5, 9222, 9221, 5994, 5425, 6036, 6093, 1244, 1095, 1373, 1102, 6804, 2046, 1245, 1246, 12, 2]
+// Dependencies: [5, 9249, 9248, 5987, 5428, 6029, 6086, 1244, 1095, 1373, 1102, 6807, 2046, 1245, 1246, 12, 2]
 
-// Module 17979 (FrecencyUserSettingsManager)
+// Module 18051 (FrecencyUserSettingsManager)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import frecency_user_settings from "frecency_user_settings" /* 1245 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1246 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2046 */;
-import FrecencyStore2 from "FrecencyStore" /* 6093 */;
+import FrecencyStore2 from "FrecencyStore" /* 6086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9222 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9221 */;
-import EmojiStore from "EmojiStore" /* 5994 */;
-import SoundboardStore from "SoundboardStore" /* 5425 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 6036 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9249 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9248 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
+import SoundboardStore from "SoundboardStore" /* 5428 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 6029 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 const FrecencyStore = FrecencyStore2;
@@ -70,7 +70,7 @@ let actions = function _saveProtos() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let actions = function _saveProtos() {
           const result = markDirtyIfHasPendingChange.markDirtyIfHasPendingChange();
         });
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp24) {
         c4 = 3;
         throw tmp24;

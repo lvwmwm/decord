@@ -1,10 +1,10 @@
-// Module ID: 5083
-// Function ID: 5084
+// Module ID: 5084
+// Function ID: 5085
 // Name: GameModeExperiment
 // Dependencies: [1453, 558, 576, 2]
 // Exports: getGameModeExperimentConfig
 
-// Module 5083 (GameModeExperiment)
+// Module 5084 (GameModeExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

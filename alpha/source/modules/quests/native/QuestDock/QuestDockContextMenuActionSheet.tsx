@@ -1,27 +1,27 @@
-// Module ID: 15293
-// Function ID: 15294
+// Module ID: 15355
+// Function ID: 15356
 // Name: QuestDockContextMenuActionSheet
-// Dependencies: [5, 19, 5979, 1085, 21, 558, 576, 15292, 12922, 5986, 9165, 1126, 5982, 7409, 7421, 7410, 7420, 7400, 6888, 13501, 8563, 9176, 5055, 7404, 15294, 9146, 6212, 9150, 15296, 12923, 6892, 9149, 8906, 15297, 15299, 15301, 6650, 7087, 5044, 6879, 12744, 15303, 2]
+// Dependencies: [5, 19, 5972, 1085, 21, 558, 576, 15354, 12970, 5979, 9192, 1126, 5975, 7415, 9173, 9174, 9177, 7406, 6894, 13552, 8579, 9203, 5056, 7410, 15356, 9167, 6207, 9171, 15358, 12971, 6898, 9170, 8925, 15359, 15361, 15363, 6651, 7093, 5042, 6885, 12791, 15365, 2]
 
-// Module 15293 (QuestDockContextMenuActionSheet)
+// Module 15355 (QuestDockContextMenuActionSheet)
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import QuestConstants from "QuestConstants" /* 5979 */;
-import QuestTypes from "QuestTypes" /* 5982 */;
-import AdCreativeType from "AdCreativeType" /* 5986 */;
-import ClipboardUtils from "ClipboardUtils" /* 6879 */;
-import openUserSettings from "openUserSettings" /* 7087 */;
-import AnalyticsActions from "AnalyticsActions" /* 7400 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7409 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 7410 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7420 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7421 */;
-import QuestUtils from "QuestUtils" /* 9146 */;
-import QuestActionCreators from "QuestActionCreators" /* 9150 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9165 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9176 */;
-import WreathIconDefault from "WreathIcon" /* 15294 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15303 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
+import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import openUserSettings from "openUserSettings" /* 7093 */;
+import AnalyticsActions from "AnalyticsActions" /* 7406 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
+import QuestUtils from "QuestUtils" /* 9167 */;
+import QuestActionCreators from "QuestActionCreators" /* 9171 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9173 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9174 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9177 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9192 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9203 */;
+import WreathIconDefault from "WreathIcon" /* 15356 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15365 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -63,7 +63,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
   creative = creative.creative;
   const impressionId = creative.impressionId;
   if (cResult[0] !== creative) {
-    const tmpResult = tmp(15292);
+    const tmpResult = tmp(15354);
     const creativeAnalyticsParams = tmpResult.getCreativeAnalyticsParams(creative);
     cResult[0] = creative;
     cResult[1] = creativeAnalyticsParams;
@@ -79,14 +79,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
   } else {
     tmp6 = cResult[2];
   }
-  const QuestHomeBountiesFeatureGateExperiment = tmp(12922).QuestHomeBountiesFeatureGateExperiment;
-  const tmp8 = creative.type === creative(5986).AdCreativeType.BOUNTY && !QuestHomeBountiesFeatureGateExperiment.useConfig(tmp6).enabled;
+  const QuestHomeBountiesFeatureGateExperiment = tmp(12970).QuestHomeBountiesFeatureGateExperiment;
+  const tmp8 = creative.type === creative(5979).AdCreativeType.BOUNTY && !QuestHomeBountiesFeatureGateExperiment.useConfig(tmp6).enabled;
   let type = creative.type;
-  if (creative(5986).AdCreativeType.QUEST === type) {
+  if (creative(5979).AdCreativeType.QUEST === type) {
     let tmp13;
     let tmp15;
     if (cResult[3] !== creative.quest) {
-      const tmpResult3 = tmp(9165);
+      const tmpResult3 = tmp(9192);
       const externalCtaLabel = tmpResult3.getExternalCtaLabel(creative.quest);
       cResult[3] = creative.quest;
       cResult[4] = externalCtaLabel;
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
     }
     tmp11 = tmp15;
     tmp12 = tmp13;
-  } else if (creative(5986).AdCreativeType.BOUNTY === type) {
+  } else if (creative(5979).AdCreativeType.BOUNTY === type) {
     let tmp9;
     const _Symbol4 = Symbol;
     const buttonLabel = creative.bounty.cta.buttonLabel;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
     tmp12 = buttonLabel;
   }
   if (cResult[7] !== impressionId) {
-    let obj3 = { content: tmp(5982).QuestContent.QUEST_BAR_MOBILE, ctaContent: tmp(7409).QuestContentCTA.CONTEXT_MENU_OPEN_GAME_LINK, impressionId, sourceQuestContent: tmp(5982).QuestContent.QUEST_BAR_MOBILE };
+    let obj3 = { content: tmp(5975).QuestContent.QUEST_BAR_MOBILE, ctaContent: tmp(7415).QuestContentCTA.CONTEXT_MENU_OPEN_GAME_LINK, impressionId, sourceQuestContent: tmp(5975).QuestContent.QUEST_BAR_MOBILE };
     cResult[7] = impressionId;
     cResult[8] = obj3;
     tmp17 = obj3;
@@ -159,8 +159,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
   }
   _asyncToGenerator = tmp18;
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj4 = { IconComponent: tmp(13501).LinkExternalMediumIcon };
-    const Icon = tmp(6888).ActionSheetRow.Icon;
+    let obj4 = { IconComponent: tmp(13552).LinkExternalMediumIcon };
+    const Icon = tmp(6894).ActionSheetRow.Icon;
     const tmp21 = closure_6(Icon, obj4);
     cResult[11] = tmp21;
     tmp19 = tmp21;
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
   }
   if (cResult[12] !== tmp12) {
     let obj5 = { text: tmp12 };
-    const tmp24 = closure_6(creative(8563).FormLabel, obj5);
+    const tmp24 = closure_6(creative(8579).FormLabel, obj5);
     cResult[12] = tmp12;
     cResult[13] = tmp24;
     tmp22 = tmp24;
@@ -221,8 +221,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                       }
                       const _Symbol2 = Symbol;
                       if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
-                        let obj7 = { IconComponent: tmp(6212).XSmallIcon };
-                        const Icon3 = tmp(6888).ActionSheetRow.Icon;
+                        let obj7 = { IconComponent: tmp(6207).XSmallIcon };
+                        const Icon3 = tmp(6894).ActionSheetRow.Icon;
                         const tmp46 = closure_6(Icon3, obj7);
                         cResult[36] = tmp46;
                         tmp44 = tmp46;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                       const _Symbol3 = Symbol;
                       if (cResult[37] === Symbol.for("react.memo_cache_sentinel")) {
                         let obj8 = { text: intl3.string(tmp(1126).t.NN79E9) };
-                        const FormLabel = tmp(8563).FormLabel;
+                        const FormLabel = tmp(8579).FormLabel;
                         intl3 = tmp(1126).intl;
                         const tmp49 = closure_6(FormLabel, obj8);
                         cResult[37] = tmp49;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                                     }
                                     let obj9 = { children: items };
                                     items = [tmp33, tmp57, tmp60];
-                                    const tmp66 = closure_7(creative(6892).ActionSheet, obj9);
+                                    const tmp66 = closure_7(creative(6898).ActionSheet, obj9);
                                     cResult[55] = tmp33;
                                     cResult[56] = tmp57;
                                     cResult[57] = tmp60;
@@ -294,7 +294,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                                     tmp64 = tmp66;
                                   }
                                   let tmp61 = null;
-                                  if (creative.type === creative(5986).AdCreativeType.QUEST) {
+                                  if (creative.type === creative(5979).AdCreativeType.QUEST) {
                                     tmp61 = null;
                                     if (creative.quest.preview) {
                                       let obj10 = { quest: creative.quest };
@@ -309,7 +309,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                               }
                               let obj11 = { hasIcons: true, children: items1 };
                               items1 = [tmp36, tmp40, tmp54];
-                              const tmp59 = closure_7(creative(6888).ActionSheetRow.Group, obj11);
+                              const tmp59 = closure_7(creative(6894).ActionSheetRow.Group, obj11);
                               cResult[48] = tmp36;
                               cResult[49] = tmp40;
                               cResult[50] = tmp54;
@@ -317,7 +317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                               tmp57 = tmp59;
                             }
                             const obj12 = { icon: tmp44, label: tmp47, subLabel: tmp50, onPress: tmp52 };
-                            const tmp56 = closure_6(creative(6888).ActionSheetRow, obj12);
+                            const tmp56 = closure_6(creative(6894).ActionSheetRow, obj12);
                             cResult[45] = tmp50;
                             cResult[46] = tmp52;
                             cResult[47] = tmp56;
@@ -336,7 +336,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                             const obj3 = { value, done: true };
                             return obj3;
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+51" };
                           }
                         } else {
                           try {
@@ -395,7 +395,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                               return obj;
                             }
                             c2 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+51" };
                           } catch (tmp25) {
                             c2 = 3;
                             throw tmp25;
@@ -419,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
               if (!tmp8) {
                 const obj13 = {
                   icon: closure_6(Icon2, obj14),
-                  label: closure_6(creative(8563).FormLabel, obj15),
+                  label: closure_6(creative(8579).FormLabel, obj15),
                   onPress() {
                                   closure_3(AnalyticsTypes.QuestContentCTA.CONTEXT_MENU_LEARN_MORE);
                                   const type = creative.type;
@@ -439,9 +439,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
                                   obj2.hideActionSheet();
                                 }
                 };
-                const ActionSheetRow = tmp(6888).ActionSheetRow;
+                const ActionSheetRow = tmp(6894).ActionSheetRow;
                 obj14 = { IconComponent: WreathIconDefault };
-                Icon2 = tmp(6888).ActionSheetRow.Icon;
+                Icon2 = tmp(6894).ActionSheetRow.Icon;
                 obj15 = { text: tmp11 };
                 tmp37 = closure_6(ActionSheetRow, obj13);
               }
@@ -455,15 +455,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
             }
             const obj16 = { hasIcons: true, children: items2 };
             items2 = [tmp26, tmp29];
-            const tmp35 = closure_7(creative(6888).ActionSheetRow.Group, obj16);
+            const tmp35 = closure_7(creative(6894).ActionSheetRow.Group, obj16);
             cResult[25] = tmp26;
             cResult[26] = tmp29;
             cResult[27] = tmp35;
             tmp33 = tmp35;
           }
           let tmp30 = null;
-          if (creative.type === creative(5986).AdCreativeType.QUEST) {
-            const tmpResult4 = tmp(7404);
+          if (creative.type === creative(5979).AdCreativeType.QUEST) {
+            const tmpResult4 = tmp(7410);
             tmp30 = null;
             if (tmpResult4.isShareableQuest(creative.quest.config)) {
               const obj17 = { quest: creative.quest };
@@ -476,7 +476,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
           tmp29 = tmp30;
         }
         const obj18 = { icon: tmp19, label: tmp22, onPress: tmp25 };
-        const tmp28 = closure_6(creative(6888).ActionSheetRow, obj18);
+        const tmp28 = closure_6(creative(6894).ActionSheetRow, obj18);
         cResult[19] = tmp22;
         cResult[20] = tmp25;
         cResult[21] = tmp28;
@@ -647,7 +647,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -705,7 +705,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockCon
             return obj;
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp26) {
           c2 = 3;
           throw tmp26;
@@ -1127,11 +1127,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
   dependencyMap = undefined;
   c3 = undefined;
   c4 = undefined;
-  let obj = quest(9149);
+  let obj = quest(9170);
   const questPreviewActions = obj.useQuestPreviewActions(quest.id);
   ({ handleComplete: c1, handleProgress: c2, handleResetDismissibilityClick: c3, handleResetStatusClick: c4 } = questPreviewActions);
   let obj2 = { title: intl.string(quest(1126).t["Ape+mm"]), hasIcons: true, children: items };
-  const Group = quest(6888).ActionSheetRow.Group;
+  const Group = quest(6894).ActionSheetRow.Group;
   intl = quest(1126).intl;
   let obj3 = {
     icon: closure_6(Icon, obj4),
@@ -1142,11 +1142,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
       obj.hideActionSheet();
     }
   };
-  const ActionSheetRow = quest(6888).ActionSheetRow;
-  obj4 = { IconComponent: quest(8906).TrophyIcon };
-  Icon = quest(6888).ActionSheetRow.Icon;
+  const ActionSheetRow = quest(6894).ActionSheetRow;
+  obj4 = { IconComponent: quest(8925).TrophyIcon };
+  Icon = quest(6894).ActionSheetRow.Icon;
   obj5 = { text: intl2.string(quest(1126).t.jQEfRT) };
-  FormLabel = quest(8563).FormLabel;
+  FormLabel = quest(8579).FormLabel;
   intl2 = quest(1126).intl;
   items = [closure_6(ActionSheetRow, obj3), , , , , , ];
   const obj6 = {
@@ -1158,11 +1158,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
       obj.hideActionSheet();
     }
   };
-  const ActionSheetRow2 = quest(6888).ActionSheetRow;
-  obj7 = { IconComponent: quest(15297).RedoIcon };
-  Icon2 = quest(6888).ActionSheetRow.Icon;
+  const ActionSheetRow2 = quest(6894).ActionSheetRow;
+  obj7 = { IconComponent: quest(15359).RedoIcon };
+  Icon2 = quest(6894).ActionSheetRow.Icon;
   obj8 = { text: intl3.string(quest(1126).t.cKSLr4) };
-  FormLabel2 = quest(8563).FormLabel;
+  FormLabel2 = quest(8579).FormLabel;
   intl3 = quest(1126).intl;
   items[1] = closure_6(ActionSheetRow2, obj6);
   const obj9 = {
@@ -1174,11 +1174,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
       obj.hideActionSheet();
     }
   };
-  const ActionSheetRow3 = quest(6888).ActionSheetRow;
-  obj10 = { IconComponent: quest(15299).UndoIcon };
-  Icon3 = quest(6888).ActionSheetRow.Icon;
+  const ActionSheetRow3 = quest(6894).ActionSheetRow;
+  obj10 = { IconComponent: quest(15361).UndoIcon };
+  Icon3 = quest(6894).ActionSheetRow.Icon;
   obj11 = { text: intl4.string(quest(1126).t.taqkwK) };
-  FormLabel3 = quest(8563).FormLabel;
+  FormLabel3 = quest(8579).FormLabel;
   intl4 = quest(1126).intl;
   items[2] = closure_6(ActionSheetRow3, obj9);
   const obj12 = {
@@ -1190,11 +1190,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
       obj.hideActionSheet();
     }
   };
-  const ActionSheetRow4 = quest(6888).ActionSheetRow;
-  obj13 = { IconComponent: quest(15301).UnsendIcon };
-  Icon4 = quest(6888).ActionSheetRow.Icon;
+  const ActionSheetRow4 = quest(6894).ActionSheetRow;
+  obj13 = { IconComponent: quest(15363).UnsendIcon };
+  Icon4 = quest(6894).ActionSheetRow.Icon;
   obj14 = { text: intl5.string(quest(1126).t.JF6W66) };
-  FormLabel4 = quest(8563).FormLabel;
+  FormLabel4 = quest(8579).FormLabel;
   intl5 = quest(1126).intl;
   items[3] = closure_6(ActionSheetRow4, obj12);
   const obj15 = {
@@ -1208,11 +1208,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
       obj2.hideActionSheet();
     }
   };
-  const ActionSheetRow5 = quest(6888).ActionSheetRow;
-  obj16 = { IconComponent: quest(6650).EyeIcon };
-  Icon5 = quest(6888).ActionSheetRow.Icon;
+  const ActionSheetRow5 = quest(6894).ActionSheetRow;
+  obj16 = { IconComponent: quest(6651).EyeIcon };
+  Icon5 = quest(6894).ActionSheetRow.Icon;
   obj17 = { text: intl6.string(quest(1126).t["lL6/zF"]) };
-  FormLabel5 = quest(8563).FormLabel;
+  FormLabel5 = quest(8579).FormLabel;
   intl6 = quest(1126).intl;
   items[4] = closure_6(ActionSheetRow5, obj15);
   const obj18 = {
@@ -1228,11 +1228,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
       obj4.hideActionSheet();
     }
   };
-  const ActionSheetRow6 = quest(6888).ActionSheetRow;
-  obj19 = { IconComponent: quest(6650).EyeIcon };
-  Icon6 = quest(6888).ActionSheetRow.Icon;
+  const ActionSheetRow6 = quest(6894).ActionSheetRow;
+  obj19 = { IconComponent: quest(6651).EyeIcon };
+  Icon6 = quest(6894).ActionSheetRow.Icon;
   obj20 = { text: intl7.string(quest(1126).t.tx5Ax5) };
-  FormLabel6 = quest(8563).FormLabel;
+  FormLabel6 = quest(8579).FormLabel;
   intl7 = quest(1126).intl;
   items[5] = closure_6(ActionSheetRow6, obj18);
   const obj21 = {
@@ -1245,11 +1245,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
       obj2.hideActionSheet();
     }
   };
-  const ActionSheetRow7 = quest(6888).ActionSheetRow;
-  obj22 = { IconComponent: quest(5044).CopyIcon };
-  Icon7 = quest(6888).ActionSheetRow.Icon;
+  const ActionSheetRow7 = quest(6894).ActionSheetRow;
+  obj22 = { IconComponent: quest(5042).CopyIcon };
+  Icon7 = quest(6894).ActionSheetRow.Icon;
   obj23 = { text: intl8.string(quest(1126).t.oisrFi) };
-  FormLabel7 = quest(8563).FormLabel;
+  FormLabel7 = quest(8579).FormLabel;
   intl8 = quest(1126).intl;
   items[6] = closure_6(ActionSheetRow7, obj21);
   return closure_7(Group, obj2);
@@ -1264,8 +1264,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
   const cResult = obj.c(4);
   quest = quest.quest;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { IconComponent: quest(5044).CopyIcon };
-    const Icon = tmp(6888).ActionSheetRow.Icon;
+    let obj2 = { IconComponent: quest(5042).CopyIcon };
+    const Icon = tmp(6894).ActionSheetRow.Icon;
     const tmp6 = closure_6(Icon, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -1274,7 +1274,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { text: intl.string(quest(1126).t.WqhZss) };
-    const FormLabel = tmp(8563).FormLabel;
+    const FormLabel = tmp(8579).FormLabel;
     intl = tmp(1126).intl;
     const tmp9 = closure_6(FormLabel, obj3);
     cResult[1] = tmp9;
@@ -1294,7 +1294,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
           obj3.hideActionSheet();
         }
     };
-    const tmp12 = closure_6(quest(6888).ActionSheetRow, obj4);
+    const tmp12 = closure_6(quest(6894).ActionSheetRow, obj4);
     cResult[2] = quest.id;
     cResult[3] = tmp12;
     tmp10 = tmp12;
@@ -1320,11 +1320,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDo
       obj3.hideActionSheet();
     }
   };
-  const ActionSheetRow = quest(6888).ActionSheetRow;
-  obj2 = { IconComponent: quest(5044).CopyIcon };
-  Icon = quest(6888).ActionSheetRow.Icon;
+  const ActionSheetRow = quest(6894).ActionSheetRow;
+  obj2 = { IconComponent: quest(5042).CopyIcon };
+  Icon = quest(6894).ActionSheetRow.Icon;
   obj3 = { text: intl.string(quest(1126).t.WqhZss) };
-  FormLabel = quest(8563).FormLabel;
+  FormLabel = quest(8579).FormLabel;
   intl = quest(1126).intl;
   return closure_6(ActionSheetRow, obj);
 });
@@ -1338,8 +1338,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   const cResult = obj.c(4);
   creative = creative.creative;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { IconComponent: creative(12744).CircleQuestionIcon };
-    const Icon = tmp(6888).ActionSheetRow.Icon;
+    let obj2 = { IconComponent: creative(12791).CircleQuestionIcon };
+    const Icon = tmp(6894).ActionSheetRow.Icon;
     const tmp6 = closure_6(Icon, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -1348,7 +1348,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { text: intl.string(creative(1126).t.GcsZKJ) };
-    const FormLabel = tmp(8563).FormLabel;
+    const FormLabel = tmp(8579).FormLabel;
     intl = tmp(1126).intl;
     const tmp9 = closure_6(FormLabel, obj3);
     cResult[1] = tmp9;
@@ -1369,7 +1369,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
           obj4.hideActionSheet();
         }
     };
-    const tmp12 = closure_6(creative(6888).ActionSheetRow, obj4);
+    const tmp12 = closure_6(creative(6894).ActionSheetRow, obj4);
     cResult[2] = creative;
     cResult[3] = tmp12;
     tmp10 = tmp12;
@@ -1396,11 +1396,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
       obj4.hideActionSheet();
     }
   };
-  const ActionSheetRow = creative(6888).ActionSheetRow;
-  obj2 = { IconComponent: creative(12744).CircleQuestionIcon };
-  Icon = creative(6888).ActionSheetRow.Icon;
+  const ActionSheetRow = creative(6894).ActionSheetRow;
+  obj2 = { IconComponent: creative(12791).CircleQuestionIcon };
+  Icon = creative(6894).ActionSheetRow.Icon;
   obj3 = { text: intl.string(creative(1126).t.GcsZKJ) };
-  FormLabel = creative(8563).FormLabel;
+  FormLabel = creative(8579).FormLabel;
   intl = creative(1126).intl;
   return closure_6(ActionSheetRow, obj);
 });

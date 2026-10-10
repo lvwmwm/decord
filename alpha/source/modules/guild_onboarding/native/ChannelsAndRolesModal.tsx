@@ -1,21 +1,21 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 10698
+// Function ID: 10699
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2086, 6786, 21, 5091, 587, 558, 576, 573, 7038, 1126, 8513, 8761, 10665, 10671, 9606, 2]
+// Dependencies: [32, 19, 17, 2087, 6789, 21, 5092, 587, 558, 576, 573, 7044, 1126, 8529, 8778, 10699, 10705, 9635, 2]
 
-// Module 10664 (ChannelsAndRolesModal)
+// Module 10698 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6786 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7038 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9606 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6789 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7044 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9635 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
   }
   const tmpResult = guildId(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp9 = defaultTab(7038)(stateFromStores);
+  const tmp9 = defaultTab(7044)(stateFromStores);
   const tmp8 = defaultTab;
   if (cResult[3] !== tmp9) {
     let stringResult;
@@ -272,7 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
       return tmp13;
     }
     const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp12 };
-    const tmp15 = closure_8(tmp8(9606), obj2);
+    const tmp15 = closure_8(tmp8(9635), obj2);
     cResult[8] = tmp10;
     cResult[9] = tmp12;
     cResult[10] = tmp15;

@@ -1,15 +1,15 @@
-// Module ID: 9275
-// Function ID: 9276
+// Module ID: 9302
+// Function ID: 9303
 // Name: shared_components/Badge
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 2]
 
-// Module 9275 (shared_components/Badge)
+// Module 9302 (shared_components/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

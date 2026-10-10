@@ -1,27 +1,27 @@
-// Module ID: 10022
-// Function ID: 10023
+// Module ID: 10051
+// Function ID: 10052
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1390, 21, 10023, 5091, 587, 558, 576, 504, 8960, 1126, 6205, 10024, 12687, 12689, 12718, 2661, 12676, 10021, 6872, 6848, 1279, 6176, 5941, 4741, 10149, 6686, 12747, 10025, 2]
+// Dependencies: [32, 19, 1390, 21, 10052, 5092, 587, 558, 576, 504, 8979, 1126, 6200, 10053, 12734, 12736, 12765, 2664, 12723, 10050, 6878, 6851, 1279, 6169, 5934, 4782, 10178, 6687, 12794, 10054, 2]
 
-// Module 10022 (PremiumGiftModal)
+// Module 10051 (PremiumGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2661 from "module_2661" /* 2661 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import useInitialValueDefault from "useInitialValue" /* 6176 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6848 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10023 */;
-import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10024 */;
-import UnsupportedFeatureModalDefault from "UnsupportedFeatureModal" /* 10149 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 12676 */;
-import GiftingSKUSelectScreenDefault from "GiftingSKUSelectScreen" /* 12687 */;
-import PremiumGiftCustomizationDefault from "PremiumGiftCustomization" /* 12689 */;
-import PremiumGiftSuccessDefault from "PremiumGiftSuccess" /* 12718 */;
-import PremiumGiftAnalyticsDefault from "PremiumGiftAnalytics" /* 12747 */;
+import _modDef2664 from "module_2664" /* 2664 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import useInitialValueDefault from "useInitialValue" /* 6169 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10052 */;
+import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10053 */;
+import UnsupportedFeatureModalDefault from "UnsupportedFeatureModal" /* 10178 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 12723 */;
+import GiftingSKUSelectScreenDefault from "GiftingSKUSelectScreen" /* 12734 */;
+import PremiumGiftCustomizationDefault from "PremiumGiftCustomization" /* 12736 */;
+import PremiumGiftSuccessDefault from "PremiumGiftSuccess" /* 12765 */;
+import PremiumGiftAnalyticsDefault from "PremiumGiftAnalytics" /* 12794 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult4 = tmp(8960);
+  const tmpResult4 = tmp(8979);
   const fetchWishlistAndProfileInfoForUser = tmpResult4.useFetchWishlistAndProfileInfoForUser(arg2);
   ({ wishlist, userProfile, wishlistId, error } = fetchWishlistAndProfileInfoForUser);
   if (cResult[3] !== stateFromStores) {
@@ -120,7 +120,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
       }
     }
   }
-  const tmpResult5 = tmp(8960);
+  const tmpResult5 = tmp(8979);
   const shouldShowWishlistInDMGifting = tmpResult5.useShouldShowWishlistInDMGifting(tmp10);
   let tmp13 = null != arg2 && !shouldShowWishlistInDMGifting && null == error;
   if (tmp13) {
@@ -170,7 +170,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
     }
     const intl = tmp(1126).intl;
     tmp17[0] = intl.string(tmp(1126).t["JCFN/y"]);
-    const tmpResult6 = tmp(6205);
+    const tmpResult6 = tmp(6200);
     tmp17[1] = tmpResult6.getHeaderCloseButton(pop);
     tmp17[2] = tmp4.header;
     tmp17[3] = function render() {
@@ -236,7 +236,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
     };
     intl = tmp2(1126).intl;
     obj5 = obj4;
-    tmp2Result = tmp2(6205);
+    tmp2Result = tmp2(6200);
   } else {
     obj5 = {
       title: "",
@@ -283,19 +283,19 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
     }
   };
   if (arg0 === tmp7.REWARD_SELECT) {
-    const tmp2Result7 = tmp2(6205);
+    const tmp2Result7 = tmp2(6200);
     headerCloseButton = tmp2Result7.getHeaderCloseButton(pop);
   } else {
-    const tmp2Result8 = tmp2(6205);
+    const tmp2Result8 = tmp2(6200);
     headerCloseButton = tmp2Result8.getHeaderBackButton();
   }
   obj6[REWARD_SELECT] = obj7;
   const CUSTOMIZATION = tmp7.CUSTOMIZATION;
   if (arg0 === tmp7.CUSTOMIZATION) {
-    const tmp2Result9 = tmp2(6205);
+    const tmp2Result9 = tmp2(6200);
     headerCloseButton1 = tmp2Result9.getHeaderCloseButton(pop);
   } else {
-    const tmp2Result10 = tmp2(6205);
+    const tmp2Result10 = tmp2(6200);
     headerCloseButton1 = tmp2Result10.getHeaderBackButton();
   }
   obj6[CUSTOMIZATION] = {
@@ -316,10 +316,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
     }
   };
   obj6[SUCCESS] = obj8;
-  tmp2Result11 = tmp2(6205);
+  tmp2Result11 = tmp2(6200);
   const GIFTING_BADGE = tmp7.GIFTING_BADGE;
   const obj9 = {
-    title: intl2.string(_modDef2661.roVAey),
+    title: intl2.string(_modDef2664.roVAey),
     headerLeft: tmp2Result12.getHeaderCloseButton(pop),
     headerTransparent: true,
     headerStyle: { backgroundColor: "transparent", shadowColor: "transparent" },
@@ -340,7 +340,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGet
   };
   intl2 = tmp2(1126).intl;
   obj6[GIFTING_BADGE] = obj9;
-  tmp2Result12 = tmp2(6205);
+  tmp2Result12 = tmp2(6200);
   return obj6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -415,7 +415,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
       [tmp19, tmp20] = react.useState(obj2[initialRoute]);
       importDefault = tmp20;
       _slicedToArray(react.useState(obj2[initialRoute]), 2);
-      const tmpResult = onDismiss(4741);
+      const tmpResult = onDismiss(4782);
       if (tmpResult.isPremiumGiftingSupported()) {
         let tmp24;
         class A {
@@ -488,8 +488,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
             cResult[19] = premiumType;
             cResult[20] = recipientUserId;
             cResult[21] = tmp29;
-            cResult[22] = jsx(onDismiss(10025).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
-            const tmp34 = jsx(onDismiss(10025).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
+            cResult[22] = jsx(onDismiss(10054).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
+            const tmp34 = jsx(onDismiss(10054).NativeGiftContextProvider, { basePurchaseAnalytics: tmp7, recipientUserId, onClose: tmp12, setCurrentAnalyticsStep: tmp20, premiumType, planInterval, initialOrder: order, children: tmp29 });
           }
           cResult[12] = tmp19;
           cResult[13] = tmp26;
@@ -498,8 +498,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
         }
         cResult[9] = initialRoute;
         cResult[10] = tmp14;
-        cResult[11] = jsx(onDismiss(6686).Navigator, { initialRouteName: initialRoute, screens: tmp14, onStateChange: tmp24 });
-        const tmp28 = jsx(onDismiss(6686).Navigator, { initialRouteName: initialRoute, screens: tmp14, onStateChange: tmp24 });
+        cResult[11] = jsx(onDismiss(6687).Navigator, { initialRouteName: initialRoute, screens: tmp14, onStateChange: tmp24 });
+        const tmp28 = jsx(onDismiss(6687).Navigator, { initialRouteName: initialRoute, screens: tmp14, onStateChange: tmp24 });
       } else {
         class A {
           constructor() {
@@ -540,7 +540,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftM
       return tmp21;
     }
   }
-  const tmpResult2 = onDismiss(10023);
+  const tmpResult2 = onDismiss(10052);
   const basePurchaseFlowAnalyticsFields = tmpResult2.getBasePurchaseFlowAnalyticsFields({ isGift: true, analyticsLoadId: tmp6, analyticsLocation, analyticsLocations });
   cResult[1] = tmp6;
   cResult[2] = analyticsLocation;

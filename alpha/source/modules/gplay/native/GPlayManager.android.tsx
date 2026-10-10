@@ -1,28 +1,28 @@
-// Module ID: 10035
-// Function ID: 10036
+// Module ID: 10064
+// Function ID: 10065
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7133, 7134, 502, 4734, 7125, 9373, 7126, 1085, 5070, 1392, 21, 3, 7120, 584, 9372, 1264, 4661, 7142, 4743, 5721, 1265, 5299, 1126, 10036, 2000, 5941, 7123, 2]
+// Dependencies: [109, 5, 19, 17, 7139, 7140, 502, 4775, 7131, 9400, 7132, 1085, 5071, 1392, 21, 3, 7126, 584, 9399, 1264, 4702, 7148, 4784, 5724, 1265, 5300, 1126, 10065, 2000, 5934, 7129, 2]
 
-// Module 10035 (GPlayManager)
+// Module 10064 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PaymentConstants from "PaymentConstants" /* 5070 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5721 */;
-import ProductIds from "ProductIds" /* 7120 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9372 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9373 */;
+import PaymentConstants from "PaymentConstants" /* 5071 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
+import ProductIds from "ProductIds" /* 7126 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9399 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9400 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7133 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7134 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7139 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7140 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4734 */;
-import IAPStore from "IAPStore" /* 7125 */;
-import Constants_mod from "Constants" /* 7126 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import IAPStore from "IAPStore" /* 7131 */;
+import Constants_mod from "Constants" /* 7132 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let obj = function _handlePurchaseUpdated() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ let obj = function _handlePurchaseUpdated() {
                 return { value, done: true };
               } else if (closure_131_11.isPurchasingProduct(purchase.productId)) {
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } else {
                 closure_1 = closure_131_12.getState().analyticsByProductId[purchase.productId];
                 giftOptionsForKey = closure_131_25[purchase.productId];
@@ -189,7 +189,7 @@ let obj = function _handlePurchaseUpdated() {
                   const obj44 = closure_131_1(closure_131_2[17]);
                   obj44.dispatch(obj17);
                   c7 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 } else {
                   c6 = 7;
                   c7 = 1;
@@ -494,7 +494,7 @@ obj = function _executePendingDowngrade() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -591,7 +591,7 @@ obj = function _executePendingDowngrade() {
           obj9.dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp62) {
         closure_2 = tmp62;
         if (0 === c3) {
@@ -626,7 +626,7 @@ obj = function _fetchAndAlertActiveSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -695,7 +695,7 @@ obj = function _fetchAndAlertActiveSubscription() {
               obj.openLazy(obj2);
             });
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         }
       } catch (tmp21) {

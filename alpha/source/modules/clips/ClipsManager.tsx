@@ -1,29 +1,29 @@
-// Module ID: 18494
-// Function ID: 18495
+// Module ID: 18568
+// Function ID: 18569
 // Name: clips/ClipsManager
-// Dependencies: [5, 7430, 502, 2064, 2012, 5109, 7428, 2018, 7744, 1085, 5895, 6804, 13544, 5136, 5897, 1265, 2041, 584, 4690, 1382, 13543, 2]
+// Dependencies: [5, 7430, 502, 2065, 2012, 5110, 7428, 2018, 7762, 1085, 5898, 6807, 13595, 5137, 5900, 1265, 2041, 584, 4731, 1382, 13594, 2]
 
-// Module 18494 (clips/ClipsManager)
+// Module 18568 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import DiscordNativeDefault from "DiscordNative" /* 4690 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5136 */;
-import Constants2 from "Constants" /* 5895 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5897 */;
+import DiscordNativeDefault from "DiscordNative" /* 4731 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
+import Constants2 from "Constants" /* 5898 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7430 */;
-import ClipsExperiment from "ClipsExperiment" /* 13544 */;
+import ClipsExperiment from "ClipsExperiment" /* 13595 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7428 */;
 import ClipsStore from "ClipsStore" /* 2018 */;
-import ClipsConstants from "ClipsConstants" /* 7744 */;
+import ClipsConstants from "ClipsConstants" /* 7762 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -37,7 +37,7 @@ let closure_17;
 let closure_18;
 let map1;
 let tmp;
-const isClipsEnabled = tmp(13543);
+const isClipsEnabled = tmp(13594);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_12, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: map1, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_14, ClipsHardwareClassification: closure_15, CLIP_RUNTIME: closure_16 } = ClipsConstants);
 ({ AnalyticEvents: closure_17, RTCConnectionStates: closure_18 } = Constants);
@@ -195,7 +195,7 @@ class ClipsManager extends AutomaticLifecycleManager {
       if (tmpResult.areClipsAvailable()) {
         const clipsFromStorage = self.loadClipsFromStorage();
         self.maybeStartNtpClock();
-        const tmp7 = null != ClipsStore.getHardwareClassification() && null != obj3.getHardwareClassificationForDecoupled() && obj3.getHardwareClassificationVersion() === authStore3;
+        const tmp7 = null != ClipsStore.getHardwareClassification() && null != obj3.getHardwareClassificationForDecoupled() && obj3.getHardwareClassificationVersion() === syncedClientThemes;
         if (!tmp7) {
           const result1 = self.classifyHardwareAndTrack();
           result1.then((classification) => {
@@ -256,7 +256,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;

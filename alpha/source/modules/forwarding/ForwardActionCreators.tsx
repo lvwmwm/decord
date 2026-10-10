@@ -1,16 +1,16 @@
-// Module ID: 11516
-// Function ID: 11517
+// Module ID: 11562
+// Function ID: 11563
 // Name: ForwardActionCreators
-// Dependencies: [32, 5, 2064, 4709, 1085, 5084, 8450, 7363, 1108, 7365, 1403, 7172, 11512, 5642, 2]
+// Dependencies: [32, 5, 2065, 4750, 1085, 5085, 8466, 7369, 1108, 7371, 1403, 7178, 11558, 5645, 2]
 
-// Module 11516 (ForwardActionCreators)
+// Module 11562 (ForwardActionCreators)
 import Constants from "Constants" /* 1085 */;
-import MessageConstants from "MessageConstants" /* 5084 */;
-import allSettledDefault from "allSettled" /* 5642 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import allSettledDefault from "allSettled" /* 5645 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, importDefault;
@@ -35,7 +35,7 @@ let obj = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ let obj = {
               return obj;
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp56) {
           c3 = 3;

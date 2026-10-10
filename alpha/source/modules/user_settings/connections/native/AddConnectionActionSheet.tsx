@@ -1,17 +1,17 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 15216
+// Function ID: 15217
 // Name: AddConnectionActionSheet
-// Dependencies: [1085, 2026, 21, 5091, 1200, 558, 576, 4992, 1631, 7218, 6854, 6836, 6835, 1126, 6305, 6186, 5055, 9177, 1415, 4930, 6851, 6848, 6872, 2]
+// Dependencies: [1085, 2026, 21, 5092, 1200, 558, 576, 5031, 1631, 7224, 6857, 6839, 6838, 1126, 6306, 6179, 5056, 9204, 1415, 4969, 6854, 6851, 6878, 2]
 
-// Module 15154 (AddConnectionActionSheet)
+// Module 15216 (AddConnectionActionSheet)
 import Constants from "Constants" /* 1085 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2026 */;
-import shared from "shared" /* 4930 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import TableRow2 from "TableRow" /* 6186 */;
+import shared from "shared" /* 4969 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import TableRow2 from "TableRow" /* 6179 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import native_mod from "native" /* 1200 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
         found(found1[17])(obj2);
       },
       icon: hasOwnProperty(Icon, obj2),
-      trailing: hasOwnProperty(tmp2(6186).TableRow.Arrow, {})
+      trailing: hasOwnProperty(tmp2(6179).TableRow.Arrow, {})
     };
     Icon = tmp2(1200).Icon;
     const makeSource = tmp2(1415).makeSource;
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectio
           found(found1[17])(obj2);
         },
         icon: hasOwnProperty(Icon, obj2),
-        trailing: hasOwnProperty(tmp2(6186).TableRow.Arrow, {})
+        trailing: hasOwnProperty(tmp2(6179).TableRow.Arrow, {})
       };
       Icon = tmp2(1200).Icon;
       const makeSource = tmp2(1415).makeSource;
@@ -278,11 +278,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
   let obj = startAuthorization(576);
   const cResult = obj.c(17);
   ({ application, start, end } = arg0);
-  const tmp4 = analyticsLocations(6851)(application);
+  const tmp4 = analyticsLocations(6854)(application);
   startAuthorization = tmp4.startAuthorization;
   const canStartAuthorization = tmp4.canStartAuthorization;
-  const tmp5 = analyticsLocations(6848);
-  analyticsLocations = tmp5(analyticsLocations(6872).ACTION_SHEET).analyticsLocations;
+  const tmp5 = analyticsLocations(6851);
+  analyticsLocations = tmp5(analyticsLocations(6878).ACTION_SHEET).analyticsLocations;
   const tmp6 = closure_7();
   if (cResult[0] !== application) {
     const getIconSource = application.getIconSource;
@@ -307,7 +307,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = closure_5(startAuthorization(6186).TableRow.Arrow, {});
+        const tmp16 = closure_5(startAuthorization(6179).TableRow.Arrow, {});
         cResult[8] = tmp16;
         tmp14 = tmp16;
       } else {
@@ -331,7 +331,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
         }
       }
       let obj2 = { start, end, label: application.name, onPress: tmp9, icon: tmp10, trailing: tmp14, disabled: !canStartAuthorization };
-      const tmp20 = closure_5(startAuthorization(6186).TableRow, obj2, application.id);
+      const tmp20 = closure_5(startAuthorization(6179).TableRow, obj2, application.id);
       cResult[9] = application.id;
       cResult[10] = application.name;
       cResult[11] = end;
@@ -373,10 +373,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddAppl
   _require = undefined;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(6851)(application));
-  const tmp2 = analyticsLocations(6851)(application);
-  const tmp3 = analyticsLocations(6848);
-  analyticsLocations = tmp3(analyticsLocations(6872).ACTION_SHEET).analyticsLocations;
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(6854)(application));
+  const tmp2 = analyticsLocations(6854)(application);
+  const tmp3 = analyticsLocations(6851);
+  analyticsLocations = tmp3(analyticsLocations(6878).ACTION_SHEET).analyticsLocations;
   const getIconSource = application.getIconSource;
   const tmp4 = closure_7();
   let obj = require("native");

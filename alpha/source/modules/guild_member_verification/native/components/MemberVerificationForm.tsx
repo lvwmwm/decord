@@ -1,20 +1,20 @@
-// Module ID: 6175
-// Function ID: 6176
+// Module ID: 6168
+// Function ID: 6169
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6155, 1085, 21, 5091, 4768, 1126, 5008, 558, 576, 6157, 4903, 6176, 504, 6177, 6129, 6178, 6620, 5376, 2]
+// Dependencies: [5, 32, 19, 17, 6148, 1085, 21, 5092, 4809, 1126, 558, 576, 6150, 4942, 6169, 504, 6170, 6122, 6171, 6621, 5379, 2]
 // Exports: default
 
-// Module 6175 (MemberVerificationForm)
+// Module 6168 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4903 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6155 */;
-import useInitialValueDefault from "useInitialValue" /* 6176 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6148 */;
+import useInitialValueDefault from "useInitialValue" /* 6169 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReq
     if (tmp4 === phone) {
       tmp7 = cResult[2];
     }
-    return initialVerification(6176)(tmp7);
+    return initialVerification(6169)(tmp7);
   }
   cResult[0] = id.verificationLevel;
   let phone1;
@@ -115,7 +115,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVer
   let tmp7;
   let tmp8;
   let tmp2 = stateFromStores;
-  const obj = id(stateFromStores[12]);
+  const obj = id(stateFromStores[11]);
   const cResult = obj.c(21);
   const tmp = id;
   id = id.id;
@@ -142,7 +142,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVer
     tmp7 = cResult[2];
     tmp8 = cResult[3];
   }
-  const tmpResult = tmp(tmp2[16]);
+  const tmpResult = tmp(tmp2[15]);
   stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
   let formFields1;
   const tmp10 = cResult[4];
@@ -154,7 +154,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVer
     if (stateFromStores != null) {
       let formFields = stateFromStores.formFields;
       if (formFields != null) {
-        someResult = formFields.some((field_type) => field_type.field_type !== id(stateFromStores[14]).VerificationFormFieldTypes.TERMS);
+        someResult = formFields.some((field_type) => field_type.field_type !== id(stateFromStores[13]).VerificationFormFieldTypes.TERMS);
       }
     }
     let formFields2;
@@ -320,7 +320,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVer
   let closure_1 = tmp2;
   let items = [MemberVerificationFormStore];
   const items1 = [id];
-  const obj = id(stateFromStores[16]);
+  const obj = id(stateFromStores[15]);
   stateFromStores = obj.useStateFromStores(items, () => MemberVerificationFormStore.get(id), items1);
   let formFields;
   const useMemo = react.useMemo;
@@ -333,7 +333,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVer
     if (stateFromStores != null) {
       const formFields = stateFromStores.formFields;
       if (formFields != null) {
-        someResult = formFields.some((field_type) => field_type.field_type !== id(stateFromStores[14]).VerificationFormFieldTypes.TERMS);
+        someResult = formFields.some((field_type) => field_type.field_type !== id(stateFromStores[13]).VerificationFormFieldTypes.TERMS);
       }
     }
     return someResult;
@@ -402,11 +402,11 @@ export default function MemberVerificationForm(guild) {
       let obj4;
       function showIncompleteToast() {
         let intl;
-        obj = { key: "MEMBER_VERIFICATION_FORM_INCOMPLETE", content: intl.string(closure_1_0(closure_1_2[9]).t.StC497), icon: closure_1_1(closure_1_2[10]) };
+        obj = { text: intl.string(closure_1_0(closure_1_2[9]).t.StC497), variant: "critical" };
         const open = closure_1_1(closure_1_2[8]).open;
         closure_1_1(closure_1_2[8]);
         intl = closure_1_0(closure_1_2[9]).intl;
-        open(obj);
+        open("MEMBER_VERIFICATION_FORM_INCOMPLETE", obj);
       }
       if (c6 === 2) {
         c6 = 3;
@@ -418,7 +418,7 @@ export default function MemberVerificationForm(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -444,7 +444,7 @@ export default function MemberVerificationForm(guild) {
                 if (tmp33) {
                   showIncompleteToast();
                   c6 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 } else {
                   _undefined2(null);
                   _undefined(true);
@@ -454,12 +454,12 @@ export default function MemberVerificationForm(guild) {
                   }
                   const obj6 = { formFields: obj3.removeInternalFields(tmp56) };
                   const merged = Object.assign(id);
-                  obj3 = id(closure_2[17]);
+                  obj3 = id(closure_2[16]);
                   c4 = 1;
                   c5 = 2;
                   c6 = 1;
                   const obj7 = { value: obj4.submitVerificationForm(id.id, obj6), done: false };
-                  obj4 = closure_1(closure_2[18]);
+                  obj4 = closure_1(closure_2[17]);
                   return obj7;
                 }
               }
@@ -517,7 +517,7 @@ export default function MemberVerificationForm(guild) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp49) {
           body = tmp49;
           if (0 === c4) {
@@ -534,7 +534,7 @@ export default function MemberVerificationForm(guild) {
   const tmp = closure_12();
   let tmp2 = guild;
   const tmp3 = onClose;
-  obj = guild(onClose[13]);
+  obj = guild(onClose[12]);
   const userVerificationState = obj.useUserVerificationState();
   const tmp5 = formFields(closure_14(guild), 4);
   formFields = tmp5[0];
@@ -560,7 +560,7 @@ export default function MemberVerificationForm(guild) {
     let someResult;
     if (first != null) {
       someResult = obj.some((item) => {
-        obj = guild(onClose[17]);
+        obj = guild(onClose[16]);
         return !obj.isValidFormResponse(item);
       });
     }
@@ -615,7 +615,7 @@ export default function MemberVerificationForm(guild) {
     const tmp16 = obj;
     if (null != tmp12) {
       let obj4 = { style: tmp.error, children: tmp12 };
-      tmp18Result = tmp18(tmp19(tmp3[20]), obj4);
+      tmp18Result = tmp18(tmp19(tmp3[19]), obj4);
     }
     items2[1] = tmp18Result;
     let obj5 = { style: tmp.submitButton, children: tmp18(Button, obj6) };
@@ -630,7 +630,7 @@ export default function MemberVerificationForm(guild) {
           return obj(...arguments);
         }
     };
-    Button = tmp2(tmp3[21]).Button;
+    Button = tmp2(tmp3[20]).Button;
     intl = tmp2(tmp3[9]).intl;
     items2[2] = memo(closure_6, obj5);
     return tmp16(closure_6, obj2);

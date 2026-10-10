@@ -1,12 +1,12 @@
-// Module ID: 16555
-// Function ID: 16556
+// Module ID: 16625
+// Function ID: 16626
 // Name: HubUnreadUtils
-// Dependencies: [11964, 6042, 558, 576, 11, 11956, 504, 2]
+// Dependencies: [12008, 6035, 558, 576, 11, 12000, 504, 2]
 
-// Module 16555 (HubUnreadUtils)
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 11956 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 11964 */;
-import ReadStateStore from "ReadStateStore" /* 6042 */;
+// Module 16625 (HubUnreadUtils)
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 12000 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12008 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

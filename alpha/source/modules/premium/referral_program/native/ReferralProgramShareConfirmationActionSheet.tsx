@@ -1,26 +1,26 @@
-// Module ID: 13659
-// Function ID: 13660
+// Module ID: 13711
+// Function ID: 13712
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1085, 21, 5091, 587, 558, 576, 4923, 7169, 5055, 7008, 1200, 5087, 1126, 8182, 5376, 2127, 6835, 13660, 5374, 6836, 2]
+// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 4962, 7175, 5056, 7014, 1200, 5088, 1126, 8198, 5379, 2128, 6838, 13712, 5377, 6839, 2]
 
-// Module 13659 (ReferralProgramShareConfirmationActionSheet)
+// Module 13711 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Stack_Stack from "Stack/Stack" /* 5374 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6835 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6836 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7008 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7169 */;
-import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 13660 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6838 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7175 */;
+import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 13712 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   } else {
     tmp5 = cResult[1];
   }
-  const FAIL = tmp(7169).CreateReferralStatus.FAIL;
+  const FAIL = tmp(7175).CreateReferralStatus.FAIL;
   if (cResult[2] !== user.id) {
     function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
@@ -112,7 +112,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
             const intl2 = tmp(1126).intl;
             const stringResult = intl2.string(user(1126).t["g33r/P"]);
             let obj3 = { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-            const ChatIcon = tmp(8182).ChatIcon;
+            const ChatIcon = tmp(8198).ChatIcon;
             const tmp26 = closure_5(ChatIcon, obj3);
             cResult[14] = stringResult;
             cResult[15] = tmp26;
@@ -124,7 +124,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
           }
           if (cResult[16] !== tmp8) {
             const obj4 = { variant: "secondary", size: "sm", text: tmp21, icon: tmp22, onPress: tmp8 };
-            const tmp29 = closure_5(user(5376).Button, obj4);
+            const tmp29 = closure_5(user(5379).Button, obj4);
             cResult[16] = tmp8;
             cResult[17] = tmp29;
             tmp27 = tmp29;
@@ -156,16 +156,16 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
       if (user.trialCreationResult === FAIL) {
         const obj6 = { children: items1 };
         const obj7 = { variant: "text-md/medium", color: "text-muted", style: tmp4.recipientDisplayName, children: tmp5 };
-        items1 = [closure_5(user(5087).Text, obj7), ];
+        items1 = [closure_5(user(5088).Text, obj7), ];
         const obj8 = { variant: "text-md/medium", color: "text-muted", children: intl.format(user(1126).t.RO3T4B, obj9) };
-        const Text = tmp(5087).Text;
+        const Text = tmp(5088).Text;
         intl = tmp(1126).intl;
         obj9 = { userName: tmp5 };
         items1[1] = closure_5(Text, obj8);
         tmp16 = closure_7(closure_6, obj6);
       } else {
         const obj10 = { variant: "text-md/medium", color: "text-strong", style: tmp4.recipientDisplayName, children: tmp5 };
-        tmp16 = closure_5(tmp(5087).Text, obj10);
+        tmp16 = closure_5(tmp(5088).Text, obj10);
       }
       cResult[10] = tmp5;
       cResult[11] = user.trialCreationResult === FAIL;
@@ -200,7 +200,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   const tmp = closure_8();
   let obj = UserUtilsDefault;
   const name = obj.getName(user);
-  const tmp6 = trialCreationResult === user(7169).CreateReferralStatus.FAIL;
+  const tmp6 = trialCreationResult === user(7175).CreateReferralStatus.FAIL;
   let obj2 = { style: tmp.recipientRow, children: items1 };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -215,16 +215,16 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   if (tmp6) {
     const obj4 = { children: items2 };
     const obj5 = { variant: "text-md/medium", color: "text-muted", style: tmp.recipientDisplayName, children: name };
-    items2 = [closure_5(user(5087).Text, obj5), ];
+    items2 = [closure_5(user(5088).Text, obj5), ];
     const obj6 = { variant: "text-md/medium", color: "text-muted", children: intl.format(user(1126).t.RO3T4B, obj7) };
-    const Text = tmp5(5087).Text;
+    const Text = tmp5(5088).Text;
     intl = tmp5(1126).intl;
     obj7 = { userName: name };
     items2[1] = closure_5(Text, obj6);
     tmp9Result = tmp7(closure_6, obj4);
   } else {
     const obj8 = { variant: "text-md/medium", color: "text-strong", style: tmp.recipientDisplayName, children: name };
-    tmp9Result = tmp9(tmp5(5087).Text, obj8);
+    tmp9Result = tmp9(tmp5(5088).Text, obj8);
   }
   items1[1] = tmp9Result;
   const obj9 = {
@@ -240,10 +240,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
       obj2.openPrivateChannel(obj3);
     }
   };
-  const Button = tmp5(5376).Button;
+  const Button = tmp5(5379).Button;
   intl2 = tmp5(1126).intl;
   obj10 = { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-  ChatIcon = tmp5(8182).ChatIcon;
+  ChatIcon = tmp5(8198).ChatIcon;
   items1[2] = closure_5(Button, obj9);
   return closure_7(tmp8, obj2);
 });
@@ -431,17 +431,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReferralProg
   let obj = { helpdeskArticle: obj2.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM) };
   const AwGSWl = tmp5(1126).t.AwGSWl;
   obj2 = HelpdeskUtilsDefault;
-  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(6835).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
+  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(6838).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
   const formatResult = format(AwGSWl, obj);
-  BottomSheet = tmp5(6836).BottomSheet;
+  BottomSheet = tmp5(6839).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13660).FistBumpSpotIllustration, {}) };
-  Stack = tmp5(5374).Stack;
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13712).FistBumpSpotIllustration, {}) };
+  Stack = tmp5(5377).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };
-  items[1] = closure_5(tmp5(5087).Text, obj6);
+  items[1] = closure_5(tmp5(5088).Text, obj6);
   const obj7 = { variant: "text-md/medium", color: "text-default", style: tmp.subheader, children: formatResult };
-  items[2] = closure_5(tmp5(5087).Text, obj7);
+  items[2] = closure_5(tmp5(5088).Text, obj7);
   const obj8 = {
     style: tmp.recipientContainer,
     children: arr2.map((user) => {

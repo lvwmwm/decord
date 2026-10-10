@@ -1,14 +1,14 @@
-// Module ID: 2128
-// Function ID: 2129
+// Module ID: 2129
+// Function ID: 2130
 // Name: LocaleStore
-// Dependencies: [5, 2129, 1244, 4690, 1126, 504, 584, 2]
+// Dependencies: [5, 2130, 1244, 4731, 1126, 504, 584, 2]
 
-// Module 2128 (LocaleStore)
+// Module 2129 (LocaleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl from "intl" /* 1126 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2129 */;
-import DiscordNativeDefault from "DiscordNative" /* 4690 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
+import DiscordNativeDefault from "DiscordNative" /* 4731 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let obj = function _getSystemLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {

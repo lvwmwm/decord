@@ -1,10 +1,10 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 16925
+// Function ID: 16926
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 558, 576, 14578, 8455, 2]
+// Dependencies: [5, 19, 558, 576, 14632, 8471, 2]
 
-// Module 16857 (useICYMIReloadHandler)
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8455 */;
+// Module 16925 (useICYMIReloadHandler)
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8471 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
             const obj = ICYMIActionCreatorsDefault;
             const recommendedGuilds = obj.getRecommendedGuilds();
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp18) {
           c2 = 3;
@@ -137,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -206,7 +206,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
           const obj = c1(c2[5]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp18) {
         c2 = 3;

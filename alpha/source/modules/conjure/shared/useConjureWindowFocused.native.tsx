@@ -1,9 +1,9 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 11426
+// Function ID: 11427
 // Name: useConjureWindowFocused
 // Dependencies: [1999, 1085, 558, 576, 504, 2]
 
-// Module 16562 (useConjureWindowFocused)
+// Module 11426 (useConjureWindowFocused)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import AppStateStore from "AppStateStore" /* 1999 */;

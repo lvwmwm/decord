@@ -1,9 +1,9 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14673
+// Function ID: 14674
 // Name: CallKitManager
 // Dependencies: [2002, 2]
 
-// Module 14619 (CallKitManager)
+// Module 14673 (CallKitManager)
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 

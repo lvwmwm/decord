@@ -1,24 +1,24 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 16840
+// Function ID: 16841
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 6084, 21, 5091, 587, 558, 576, 504, 16761, 1200, 8997, 1383, 6209, 6212, 4996, 2]
+// Dependencies: [19, 17, 6077, 21, 5092, 587, 558, 576, 504, 16831, 1200, 9016, 1383, 6204, 6207, 10258, 2]
 
-// Module 16770 (BackIconWithBadge)
+// Module 16840 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import XLargeIcon from "XLargeIcon" /* 4996 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6209 */;
-import XSmallIcon from "XSmallIcon" /* 6212 */;
-import ClipView from "ClipView" /* 8997 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16761 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6204 */;
+import XSmallIcon from "XSmallIcon" /* 6207 */;
+import ClipView from "ClipView" /* 9016 */;
+import XLargeIcon from "XLargeIcon" /* 10258 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16831 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6084 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6077 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp10;
-const ClipViewDefault = tmp10(8997);
+const ClipViewDefault = tmp10(9016);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 }, iconWithBadge: obj2 };
@@ -225,7 +225,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconWit
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(16761)().value;
+  const value = memo(16831)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;
@@ -262,7 +262,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconWit
   const obj2 = { style: size, children: tmp11(View, obj3) };
   obj3 = { style: tmp.backIcon, children: items5 };
   tmp11 = closure_7;
-  const tmp5Result = tmp5(8997);
+  const tmp5Result = tmp5(9016);
   if (null != memo1) {
     const items3 = [memo1];
     items4 = items3;

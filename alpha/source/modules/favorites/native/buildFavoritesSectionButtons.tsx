@@ -1,20 +1,20 @@
-// Module ID: 10296
-// Function ID: 10297
+// Module ID: 10329
+// Function ID: 10330
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 21, 10278, 2000, 5055, 10283, 10282, 1126, 3439, 9016, 9523, 9521, 1200, 2]
+// Dependencies: [5, 21, 10311, 2000, 5056, 10316, 10315, 1126, 3442, 9035, 9552, 9550, 1200, 2]
 // Exports: default
 
-// Module 10296 (buildFavoritesSectionButtons)
+// Module 10329 (buildFavoritesSectionButtons)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef3439 from "module_3439" /* 3439 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9016 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9521 */;
-import StarIcon from "StarIcon" /* 9523 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10282 */;
+import _modDef3442 from "module_3442" /* 3442 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9035 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9550 */;
+import StarIcon from "StarIcon" /* 9552 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10315 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _addChannelToFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ let obj = function _addChannelToFavorites() {
           items = [closure_0];
           value.addFavoriteChannels(obj);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -92,7 +92,7 @@ obj = function _removeChannelFromFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ obj = function _removeChannelFromFavorites() {
         } else {
           const result = value.removeFavoriteChannel(closure_0);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -135,7 +135,7 @@ obj = function _removeChannelFromFavorites() {
 function openNoAccessUpsell() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10283, dependencyMap.paths);
+  const tmp2 = asyncRequire(10316, dependencyMap.paths);
   openLazy(tmp2, openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
 }
 const jsx = Fragment.jsx;
@@ -155,7 +155,7 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
         let tmp11;
         if (tmp3) {
           const obj2 = {
-            label: intl3.string(_modDef3439.TN4nAX),
+            label: intl3.string(_modDef3442.TN4nAX),
             IconComponent: StarIcon.StarIcon,
             isDestructive: true,
             onPress() {
@@ -171,7 +171,7 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
           tmp11 = null;
           if (!tmp4) {
             const obj3 = {
-              label: intl2.string(_modDef3439.G9fGlP),
+              label: intl2.string(_modDef3442.G9fGlP),
               IconComponent: StarOutlineIcon.StarOutlineIcon,
               trailing: tmp15,
               onPress() {
@@ -193,7 +193,7 @@ export default function buildFavoritesSectionButtons(isExperimentEnabled) {
         }
         obj = tmp11;
       } else {
-        obj = { label: intl.string(_modDef3439.G9fGlP), IconComponent: NitroWheelIcon.NitroWheelIcon, onPress: openNoAccessUpsell };
+        obj = { label: intl.string(_modDef3442.G9fGlP), IconComponent: NitroWheelIcon.NitroWheelIcon, onPress: openNoAccessUpsell };
         intl = intl4.intl;
       }
       tmp6 = obj;

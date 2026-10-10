@@ -1,20 +1,20 @@
-// Module ID: 13508
-// Function ID: 13509
+// Module ID: 13559
+// Function ID: 13560
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 5889, 1085, 21, 5091, 587, 558, 576, 5055, 8768, 7487, 1126, 1200, 5087, 5376, 12976, 2]
+// Dependencies: [19, 17, 5892, 1085, 21, 5092, 587, 558, 576, 5056, 8785, 7487, 1126, 1200, 5088, 5379, 13023, 2]
 
-// Module 13508 (EndStageActionSheet)
+// Module 13559 (EndStageActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5889 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 7487 */;
-import CallsUtils from "CallsUtils" /* 8768 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 12976 */;
+import CallsUtils from "CallsUtils" /* 8785 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 13023 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     }
     if (cResult[9] !== tmp4.subtitle) {
       const obj3 = { style: subtitle, variant: "text-md/medium", color: "text-default", children: tmp13 };
-      const tmp17 = closure_5(channel(5087).Text, obj3);
+      const tmp17 = closure_5(channel(5088).Text, obj3);
       cResult[9] = tmp4.subtitle;
       cResult[10] = tmp17;
       tmp15 = tmp17;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     }
     if (cResult[12] !== tmp5) {
       const obj4 = { variant: "secondary", text: tmp18, onPress: tmp5 };
-      const tmp22 = closure_5(channel(5376).Button, obj4);
+      const tmp22 = closure_5(channel(5379).Button, obj4);
       cResult[12] = tmp5;
       cResult[13] = tmp22;
       tmp20 = tmp22;
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       }
       if (cResult[18] !== tmp6) {
         const obj5 = { variant: "destructive", text: tmp27, onPress: tmp6 };
-        const tmp31 = closure_5(channel(5376).Button, obj5);
+        const tmp31 = closure_5(channel(5379).Button, obj5);
         cResult[18] = tmp6;
         cResult[19] = tmp31;
         tmp29 = tmp31;
@@ -224,7 +224,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
   intl = channel(1126).intl;
   items = [closure_5(LegacyText, obj3), , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1126).t.mT7jwN) };
-  const Text = channel(5087).Text;
+  const Text = channel(5088).Text;
   intl2 = channel(1126).intl;
   items[1] = closure_5(Text, obj4);
   const obj5 = { style: tmp.cancelButton, children: closure_5(Button, obj6) };
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       obj2.handleDisconnect(channel);
     }
   };
-  Button = channel(5376).Button;
+  Button = channel(5379).Button;
   intl3 = channel(1126).intl;
   items[2] = closure_5(View, obj5);
   const obj7 = { style: tmp.confirmButton, children: closure_5(Button2, obj8) };
@@ -254,7 +254,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       obj3.handleDisconnect(channel);
     }
   };
-  Button2 = channel(5376).Button;
+  Button2 = channel(5379).Button;
   intl4 = channel(1126).intl;
   items[3] = closure_5(View, obj7);
   return closure_5(tmp2, obj);

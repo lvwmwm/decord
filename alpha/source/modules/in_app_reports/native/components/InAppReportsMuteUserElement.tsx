@@ -1,19 +1,19 @@
-// Module ID: 13495
-// Function ID: 13496
+// Module ID: 13546
+// Function ID: 13547
 // Name: InAppReportsMuteUserElement
-// Dependencies: [32, 19, 2064, 1085, 1095, 21, 558, 576, 504, 5406, 10363, 5106, 7017, 1126, 10312, 13492, 2]
+// Dependencies: [32, 19, 2065, 1085, 1095, 21, 558, 576, 504, 5409, 10396, 5107, 7025, 1126, 10345, 13543, 2]
 
-// Module 13495 (InAppReportsMuteUserElement)
+// Module 13546 (InAppReportsMuteUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5406 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7017 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 10363 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7025 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10396 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore_mod from "ChannelStore" /* 2064 */;
+import ChannelStore_mod from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

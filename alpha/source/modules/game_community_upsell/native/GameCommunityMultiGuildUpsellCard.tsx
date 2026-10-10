@@ -1,25 +1,25 @@
-// Module ID: 16631
-// Function ID: 16632
+// Module ID: 16698
+// Function ID: 16699
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 5080, 4710, 2086, 1085, 21, 5091, 587, 504, 1415, 1450, 1497, 1265, 6104, 6913, 7046, 7045, 1126, 8997, 6163, 8850, 1200, 5087, 5376, 9335, 8114, 9214, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 4751, 2087, 1085, 21, 5092, 587, 504, 1415, 1450, 1497, 1265, 6097, 6919, 7052, 7051, 1126, 9016, 6156, 8869, 1200, 5088, 5379, 9362, 7573, 9241, 2]
 // Exports: default
 
-// Module 16631 (GameCommunityMultiGuildUpsellCard)
+// Module 16698 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import transitionToGuild from "transitionToGuild" /* 7046 */;
+import transitionToGuild from "transitionToGuild" /* 7052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import LurkingStore from "LurkingStore" /* 4710 */;
-import GuildStore from "GuildStore" /* 2086 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import LurkingStore from "LurkingStore" /* 4751 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;
@@ -184,7 +184,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -261,7 +261,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp44) {
         onDismiss = tmp44;
         if (0 === c3) {
@@ -297,7 +297,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -368,7 +368,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp37) {
         onDismiss = tmp37;
         if (0 === c3) {

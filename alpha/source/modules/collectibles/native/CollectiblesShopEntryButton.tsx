@@ -1,15 +1,15 @@
-// Module ID: 12957
-// Function ID: 12958
+// Module ID: 13004
+// Function ID: 13005
 // Name: CollectiblesShopEntryButton
-// Dependencies: [32, 19, 7298, 2061, 21, 558, 576, 7093, 2049, 1126, 12952, 11780, 12958, 12959, 573, 7280, 9983, 2]
+// Dependencies: [32, 19, 7278, 2062, 21, 558, 576, 7099, 2049, 1126, 12999, 11824, 13005, 13006, 573, 7287, 10012, 2]
 
-// Module 12957 (CollectiblesShopEntryButton)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 12952 */;
-import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 12958 */;
+// Module 13004 (CollectiblesShopEntryButton)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 12999 */;
+import MobileShopButtonCoachmarkDefault from "MobileShopButtonCoachmark" /* 13005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7298 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7278 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const cResult = obj.c(18);
   ({ marketing, navigateToShop } = shopButtonRef);
   shopButtonRef = shopButtonRef.shopButtonRef;
-  const obj2 = navigateToShop(7093);
+  const obj2 = navigateToShop(7099);
   const tmp4 = _slicedToArray(obj2.useSelectedVersionedDismissibleContent(navigateToShop(2049).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING, marketing.version, undefined, true), 2);
   importDefault = tmp5;
   const tmp6 = tmp4[0] === navigateToShop(2049).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING;
@@ -96,7 +96,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
           tmp15 = tmp18;
         }
       }
-      const obj5 = { ref: shopButtonRef, IconComponent: tmp(11780).ShopIcon, accessibilityLabel: first, onPress: tmp9, showRedDot: tmp6 };
+      const obj5 = { ref: shopButtonRef, IconComponent: tmp(11824).ShopIcon, accessibilityLabel: first, onPress: tmp9, showRedDot: tmp6 };
       const tmp13 = YouScreenNavIconDefault;
       const tmp14 = closure_6(tmp13, obj5);
       cResult[5] = tmp6;
@@ -127,7 +127,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   let navigateToShop;
   ({ marketing, navigateToShop } = shopButtonRef);
   shopButtonRef = shopButtonRef.shopButtonRef;
-  const obj = navigateToShop(7093);
+  const obj = navigateToShop(7099);
   let tmp = _slicedToArray(obj.useSelectedVersionedDismissibleContent(navigateToShop(2049).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING, marketing.version, undefined, true), 2);
   importDefault = tmp2;
   const tmp3 = tmp[0] === navigateToShop(2049).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING;
@@ -135,7 +135,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const obj2 = { children: items };
   const obj3 = {
     ref: shopButtonRef,
-    IconComponent: navigateToShop(11780).ShopIcon,
+    IconComponent: navigateToShop(11824).ShopIcon,
     accessibilityLabel: intl.string(navigateToShop(1126).t.pWG4ze),
     onPress() {
       const tmp = closure_2;
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   if (stateFromStores != null) {
     type = stateFromStores.type;
   }
-  if (type === tmp(7280).CollectiblesMarketingType.COACHMARK) {
+  if (type === tmp(7287).CollectiblesMarketingType.COACHMARK) {
     if (cResult[2] === navigateToShop) {
       if (cResult[3] === stateFromStores) {
         let tmp20;
@@ -216,12 +216,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
       }
       if (tmp8) {
         let type1;
-        const SelectedVersionedDismissibleContent = tmp(9983).SelectedVersionedDismissibleContent;
+        const SelectedVersionedDismissibleContent = tmp(10012).SelectedVersionedDismissibleContent;
         if (stateFromStores != null) {
           type1 = stateFromStores.type;
         }
         let prop = null;
-        if (type1 === tmp(7280).CollectiblesMarketingType.BADGE) {
+        if (type1 === tmp(7287).CollectiblesMarketingType.BADGE) {
           prop = tmp(2049).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING;
         }
         const obj3 = { contentType: prop, latestVersion: num6, children: tmp10 };
@@ -235,11 +235,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
         tmp12Result = tmp12(SelectedVersionedDismissibleContent, obj3);
       } else {
         let type2;
-        const tmp14 = shopButtonRef(9983);
+        const tmp14 = shopButtonRef(10012);
         if (stateFromStores != null) {
           type2 = stateFromStores.type;
         }
-        if (type2 === tmp(7280).CollectiblesMarketingType.BADGE) {
+        if (type2 === tmp(7287).CollectiblesMarketingType.BADGE) {
           let items2;
           let dismissibleContent;
           if (stateFromStores != null) {
@@ -299,7 +299,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   if (stateFromStores != null) {
     type = stateFromStores.type;
   }
-  if (type === tmp(7280).CollectiblesMarketingType.COACHMARK) {
+  if (type === tmp(7287).CollectiblesMarketingType.COACHMARK) {
     const obj2 = { marketing: stateFromStores, navigateToShop, shopButtonRef };
     return closure_6(closure_9, obj2);
   } else {
@@ -326,12 +326,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
     }
     if (tmp4) {
       let type1;
-      const SelectedVersionedDismissibleContent = tmp(9983).SelectedVersionedDismissibleContent;
+      const SelectedVersionedDismissibleContent = tmp(10012).SelectedVersionedDismissibleContent;
       if (stateFromStores != null) {
         type1 = stateFromStores.type;
       }
       let prop = null;
-      if (type1 === tmp(7280).CollectiblesMarketingType.BADGE) {
+      if (type1 === tmp(7287).CollectiblesMarketingType.BADGE) {
         prop = tmp(2049).DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING;
       }
       const obj3 = { contentType: prop, latestVersion: num, children: content };
@@ -345,11 +345,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
       tmp15Result = tmp15(SelectedVersionedDismissibleContent, obj3);
     } else {
       let type2;
-      const tmp7 = shopButtonRef(9983);
+      const tmp7 = shopButtonRef(10012);
       if (stateFromStores != null) {
         type2 = stateFromStores.type;
       }
-      if (type2 === tmp(7280).CollectiblesMarketingType.BADGE) {
+      if (type2 === tmp(7287).CollectiblesMarketingType.BADGE) {
         let items2;
         let dismissibleContent;
         if (stateFromStores != null) {

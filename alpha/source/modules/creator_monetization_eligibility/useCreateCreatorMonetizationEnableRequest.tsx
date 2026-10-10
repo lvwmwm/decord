@@ -1,10 +1,10 @@
-// Module ID: 18403
-// Function ID: 18404
+// Module ID: 18477
+// Function ID: 18478
 // Name: useCreateCreatorMonetizationEnableRequest
-// Dependencies: [5, 32, 19, 18377, 5633, 2]
+// Dependencies: [5, 32, 19, 18451, 5636, 2]
 // Exports: default
 
-// Module 18403 (useCreateCreatorMonetizationEnableRequest)
+// Module 18477 (useCreateCreatorMonetizationEnableRequest)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -44,7 +44,7 @@ export default function useCreateCreatorMonetizationEnableRequest(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -101,7 +101,7 @@ export default function useCreateCreatorMonetizationEnableRequest(arg0) {
             closure_129_2(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp38) {
           dependencyMap = tmp38;
           if (0 === c3) {

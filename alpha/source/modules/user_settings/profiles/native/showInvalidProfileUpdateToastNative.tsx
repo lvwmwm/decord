@@ -1,24 +1,22 @@
-// Module ID: 14780
-// Function ID: 14781
+// Module ID: 14835
+// Function ID: 14836
 // Name: showInvalidProfileUpdateToastNative
-// Dependencies: [4768, 5010, 587, 2]
+// Dependencies: [4809, 2]
 // Exports: showGenericGuildProfileUpdateFailureToast, showGenericProfileUpdateFailureToast
 
-// Module 14780 (showInvalidProfileUpdateToastNative)
-import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5010 */;
+// Module 14835 (showInvalidProfileUpdateToastNative)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/showInvalidProfileUpdateToastNative.tsx");
 
 export const showGenericProfileUpdateFailureToast = function showGenericProfileUpdateFailureToast(avatar) {
   const obj = ToastActionCreatorsDefault;
-  const obj2 = { key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: AssetRegistryDefault, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-  obj.open(obj2);
+  const obj2 = { text: avatar, variant: "critical" };
+  obj.open("USER_SETTINGS_UPDATE_FAILURE", obj2);
 };
 export const showGenericGuildProfileUpdateFailureToast = function showGenericGuildProfileUpdateFailureToast(avatar) {
   const obj = ToastActionCreatorsDefault;
-  const obj2 = { key: "USER_SETTINGS_UPDATE_FAILURE", content: avatar, icon: AssetRegistryDefault, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-  obj.open(obj2);
+  const obj2 = { text: avatar, variant: "critical" };
+  obj.open("USER_SETTINGS_UPDATE_FAILURE", obj2);
 };

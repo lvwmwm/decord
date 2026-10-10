@@ -1,23 +1,23 @@
-// Module ID: 12831
-// Function ID: 12832
+// Module ID: 12878
+// Function ID: 12879
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 2064, 21, 5091, 587, 558, 576, 1631, 9232, 504, 7363, 9266, 9265, 5941, 1126, 9270, 1382, 6205, 6191, 5087, 6214, 6770, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 21, 5092, 587, 558, 576, 1631, 9259, 504, 7369, 9293, 9292, 5934, 1126, 9297, 1382, 6200, 6184, 5088, 6209, 6773, 2]
 
-// Module 12831 (ScheduledMessageEditContentModal)
+// Module 12878 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Pressables from "Pressables" /* 6191 */;
-import MessageParserDefault from "MessageParser" /* 7363 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9266 */;
-import HeaderShared from "HeaderShared" /* 9270 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6184 */;
+import MessageParserDefault from "MessageParser" /* 7369 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9293 */;
+import HeaderShared from "HeaderShared" /* 9297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
               arr.pop();
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -215,7 +215,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -251,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
             arr.pop();
           }
           stateFromStores = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp8) {
         stateFromStores = 3;

@@ -1,121 +1,82 @@
 // Module ID: 11279
 // Function ID: 11280
-// Dependencies: [11168, 11166, 11167]
-// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
+// Dependencies: [11204, 11207, 11236, 11222, 11235, 11256, 11226, 11227, 11213, 11244, 11221, 11220, 11208]
+// Exports: getTraceData
 
 // Module 11279
-import _mod11166 from "module_11166" /* 11166 */;
-import _mod11168 from "module_11168" /* 11168 */;
+import _mod11213 from "module_11213" /* 11213 */;
+import _mod11220 from "module_11220" /* 11220 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 11221 */;
+import _mod11226 from "module_11226" /* 11226 */;
+import _mod11227 from "module_11227" /* 11227 */;
+import _mod11235 from "module_11235" /* 11235 */;
+import _mod11244 from "module_11244" /* 11244 */;
+import _mod11256 from "module_11256" /* 11256 */;
+import registerSpanErrorInstrumentation from "module_11204" /* 11204 */;
+import "module_11207";
+import DEBUG_BUILD from "module_11236" /* 11236 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 11222 */;
 
-function supportsFetch() {
-  if ("fetch" in _mod11168.GLOBAL_OBJ) {
-    try {
-      const _Headers = Headers;
-      const self = this;
-      const headers = new Headers();
-      const _Request = Request;
-      const self2 = this;
-      const request = new Request("http://www.example.com");
-      const _Response = Response;
-      const self3 = this;
-      const response = new Response();
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-}
-function isNativeFunction(arg0) {
-  let isMatch = arg0;
-  if (isMatch) {
-    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
-    isMatch = obj.test(arg0.toString());
-  }
-  return isMatch;
-}
 
-export { isNativeFunction };
-export const supportsDOMError = function supportsDOMError() {
-  try {
-    const self = this;
-    const dOMError = new globalThis.DOMError("");
-    return true;
-  } catch (err) {
-    return false;
+export const getTraceData = function getTraceData() {
+  let sampled;
+  let spanId;
+  let traceId;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-};
-export const supportsDOMException = function supportsDOMException() {
-  try {
-    const self = this;
-    const dOMException = new globalThis.DOMException("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export const supportsErrorEvent = function supportsErrorEvent() {
-  try {
-    const self = this;
-    const errorEvent = new globalThis.ErrorEvent("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-};
-export { supportsFetch };
-export const supportsNativeFetch = function supportsNativeFetch() {
-  if (typeof globalThis.EdgeRuntime === "string") {
-    return true;
-  } else if (supportsFetch()) {
-    const tmp = isNativeFunction;
-    if (isNativeFunction(_mod11168.GLOBAL_OBJ.fetch)) {
-      return true;
-    } else {
-      let flag2 = false;
-      const _document = tmp2(11168).GLOBAL_OBJ.document;
-      if (_document) {
-        if (typeof _document.createElement === "function") {
-          try {
-            const element = <iframe />;
-            element.hidden = true;
-            const head = _document.head;
-            head.appendChild(element);
-            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
-            if (_fetch) {
-              flag2 = tmp(tmp5.contentWindow.fetch);
-            }
-            const head2 = _document.head;
-            head2.removeChild(element);
-          } catch (tmp10) {
-            if (_mod11166.DEBUG_BUILD) {
-              const logger = tmp2(11167).logger;
-              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
-            }
-          }
+  const obj2 = _mod11235;
+  const client = obj2.getClient();
+  const obj3 = _mod11256;
+  if (obj3.isEnabled()) {
+    if (client) {
+      const tmpResult = _mod11226;
+      const mainCarrier = tmpResult.getMainCarrier();
+      const tmpResult8 = _mod11227;
+      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
+      } else {
+        let spanToTraceHeaderResult;
+        let dynamicSamplingContextFromSpan;
+        let obj5;
+        const tmpResult9 = _mod11235;
+        const currentScope = tmpResult9.getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          const tmpResult10 = _mod11213;
+          span = tmpResult10.getActiveSpan();
         }
+        if (span) {
+          const tmpResult11 = _mod11213;
+          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
+        } else {
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          const tmpResult12 = _mod11220;
+          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
+        }
+        const tmpResult13 = _mod11244;
+        if (span) {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
+        }
+        const tmpResult14 = BAGGAGE_HEADER_NAME;
+        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(11220).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+        } else {
+          const logger = tmp(11208).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
       }
-      return flag2;
     }
-  } else {
-    return false;
   }
-};
-export const supportsReferrerPolicy = function supportsReferrerPolicy() {
-  if (supportsFetch()) {
-    try {
-      const _Request = Request;
-      const self = this;
-      const request = new Request("_", { referrerPolicy: "origin" });
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-};
-export const supportsReportingObserver = function supportsReportingObserver() {
-  return "ReportingObserver" in _mod11168.GLOBAL_OBJ;
+  return {};
 };

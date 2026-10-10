@@ -1,19 +1,28 @@
 // Module ID: 11276
 // Function ID: 11277
 // Dependencies: []
-// Exports: flatten
+// Exports: isSentryRequestUrl
 
 // Module 11276
 
-export const flatten = function flatten(arr) {
-  const f142963 = (arr) => {
-    if (Array.isArray(arr)) {
-      const item = arr.forEach(f142963);
-    } else {
-      items.push(arr);
+export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
+  const tmp = getDsn && getDsn.getDsn();
+  arr = getDsn && getDsn.getOptions().tunnel;
+  let tmp2 = tmp && arr.includes(tmp.host);
+  if (!tmp2) {
+    let flag = false;
+    if (arr) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
+      }
+      let substr1 = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr1 = arr.slice(0, -1);
+      }
+      flag = substr === substr1;
     }
-  };
-  const items = [];
-  let item = arr.forEach(f142963);
-  return items;
+    tmp2 = flag;
+  }
+  return tmp2;
 };

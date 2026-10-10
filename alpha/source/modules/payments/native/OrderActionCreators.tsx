@@ -1,14 +1,14 @@
-// Module ID: 7142
-// Function ID: 7143
+// Module ID: 7148
+// Function ID: 7149
 // Name: payments/OrderActionCreators
-// Dependencies: [5, 5070, 1085, 3, 1295, 4743, 584, 6938, 2]
+// Dependencies: [5, 5071, 1085, 3, 1295, 4784, 584, 6944, 2]
 // Exports: cancelOrderSigning, discardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7142 (payments/OrderActionCreators)
+// Module 7148 (payments/OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import PaymentConstants from "PaymentConstants" /* 5070 */;
+import PaymentConstants from "PaymentConstants" /* 5071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _getOrders() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _createOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -396,7 +396,7 @@ obj = function _getOrCreateOrder() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -517,7 +517,7 @@ obj = function _patchOrderLineItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -657,7 +657,7 @@ obj = function _patchOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -806,7 +806,7 @@ obj = function _updateOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c4;
@@ -988,7 +988,7 @@ obj = function _markOrderAsSigningInProgress() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -1027,7 +1027,7 @@ obj = function _markOrderAsSigningInProgress() {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+51" };
                 }
               } else {
                 let c3;
@@ -1156,7 +1156,7 @@ obj = function _markOrderAsSigningInProgress() {
                     c3 = 0;
                     c11 = null;
                     c5 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } catch (tmp38) {
                   closure_2 = tmp38;
@@ -1199,7 +1199,7 @@ obj = function _markOrderAsSigningInProgress() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -1224,7 +1224,7 @@ obj = function _cancelOrderSigning() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -1265,7 +1265,7 @@ obj = function _cancelOrderSigning() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else {
                   let c3;

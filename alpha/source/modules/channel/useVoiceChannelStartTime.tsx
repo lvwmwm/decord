@@ -1,15 +1,15 @@
-// Module ID: 16579
-// Function ID: 16580
+// Module ID: 16646
+// Function ID: 16647
 // Name: useVoiceChannelStartTime
-// Dependencies: [19, 5754, 5972, 9579, 1085, 558, 576, 504, 10636, 2]
+// Dependencies: [19, 5757, 5965, 9608, 1085, 558, 576, 504, 10670, 2]
 
-// Module 16579 (useVoiceChannelStartTime)
+// Module 16646 (useVoiceChannelStartTime)
 import Constants from "Constants" /* 1085 */;
-import ChannelInfoActionCreators from "ChannelInfoActionCreators" /* 10636 */;
+import ChannelInfoActionCreators from "ChannelInfoActionCreators" /* 10670 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
-import GuildAvailabilityStore_mod from "GuildAvailabilityStore" /* 5972 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9579 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import GuildAvailabilityStore_mod from "GuildAvailabilityStore" /* 5965 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9608 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

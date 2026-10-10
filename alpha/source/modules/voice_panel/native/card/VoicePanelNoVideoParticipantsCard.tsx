@@ -1,16 +1,16 @@
-// Module ID: 17741
-// Function ID: 17742
+// Module ID: 17813
+// Function ID: 17814
 // Name: VoicePanelNoVideoParticipantsCard
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 11925, 5105, 1126, 5087, 6168, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11969, 5106, 1126, 5088, 6161, 2]
 
-// Module 17741 (VoicePanelNoVideoParticipantsCard)
+// Module 17813 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5105 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11925 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11969 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let obj2;
 let obj3;
 let size;
 let tmp4;
-const NativeViewDefault = tmp4(6168);
+const NativeViewDefault = tmp4(6161);
 const Pressable = react_native.Pressable;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -67,7 +67,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[3] !== tmp5.label) {
     const obj2 = { style: label, variant: "text-md/semibold", color: "text-overlay-light", children: tmp7 };
-    const tmp11 = closure_5(channelId(5087).Text, obj2);
+    const tmp11 = closure_5(channelId(5088).Text, obj2);
     cResult[3] = tmp5.label;
     cResult[4] = tmp11;
     tmp9 = tmp11;
@@ -94,7 +94,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[7] !== tmp5.buttonText) {
     const obj3 = { variant: "text-sm/semibold", style: buttonText, children: tmp14 };
-    const tmp18 = closure_5(channelId(5087).Text, obj3);
+    const tmp18 = closure_5(channelId(5088).Text, obj3);
     cResult[7] = tmp5.buttonText;
     cResult[8] = tmp18;
     tmp16 = tmp18;
@@ -149,13 +149,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = { style: tmp.container, children: items1 };
   const obj2 = { style: tmp.label, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1126).t["8eBJ73"]) };
   const tmp3 = NativeViewDefault;
-  const Text = channelId(5087).Text;
+  const Text = channelId(5088).Text;
   intl = channelId(1126).intl;
   items1 = [closure_5(Text, obj2), ];
   const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(channelId(1126).t.kLQySL), children: closure_5(Text2, obj4) };
   intl2 = channelId(1126).intl;
   obj4 = { variant: "text-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1126).t.kLQySL) };
-  Text2 = channelId(5087).Text;
+  Text2 = channelId(5088).Text;
   intl3 = channelId(1126).intl;
   items1[1] = closure_5(Pressable, obj3);
   return closure_6(tmp3, obj);

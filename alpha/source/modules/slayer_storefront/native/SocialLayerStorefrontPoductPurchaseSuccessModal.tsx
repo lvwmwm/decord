@@ -1,31 +1,31 @@
-// Module ID: 12654
-// Function ID: 12655
+// Module ID: 12701
+// Function ID: 12702
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 729, 19, 17, 5080, 6094, 6927, 1085, 21, 5091, 587, 558, 576, 4811, 5375, 5092, 5056, 1497, 504, 8310, 6924, 5087, 1126, 5376, 6163, 5388, 6212, 6214, 9009, 6810, 6854, 6851, 10473, 6872, 1265, 10126, 5393, 3697, 8930, 4923, 2]
+// Dependencies: [32, 729, 19, 17, 5081, 6087, 6933, 1085, 21, 5092, 587, 558, 576, 4850, 5378, 5093, 5057, 1497, 504, 8326, 6930, 5088, 1126, 5379, 6156, 5391, 6207, 6209, 9028, 6813, 6857, 6854, 10507, 6878, 1265, 10155, 5396, 3719, 8949, 4962, 2]
 
-// Module 12654 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 12701 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import _modDef3697 from "module_3697" /* 3697 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import timing from "timing" /* 5092 */;
-import spring from "spring" /* 5375 */;
-import XSmallIcon from "XSmallIcon" /* 6212 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6924 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6927 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10126 */;
+import _modDef3719 from "module_3719" /* 3719 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import timing from "timing" /* 5093 */;
+import spring from "spring" /* 5378 */;
+import XSmallIcon from "XSmallIcon" /* 6207 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6930 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6933 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10155 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import SKUStore from "SKUStore" /* 6094 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import SKUStore from "SKUStore" /* 6087 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -510,7 +510,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   let title;
   let tmp18Result4;
   let useReducedMotion;
-  const f112799 = () => useReducedMotion.useReducedMotion;
+  const f113103 = () => useReducedMotion.useReducedMotion;
   sku = sku.sku;
   ({ finePrint, ctaLabel, onCtaPress, onClose } = sku);
   let width;
@@ -522,8 +522,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   width = require("useWindowDimensions")().width;
   let obj = sku(width[18]);
   const items = [AccessibilityStore];
-  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_26(obj.useStateFromStores(items, f112799)));
-  const tmp5 = closure_26(obj.useStateFromStores(items, f112799));
+  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_26(obj.useStateFromStores(items, f113103)));
+  const tmp5 = closure_26(obj.useStateFromStores(items, f113103));
   let obj2 = sku(width[19]);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let obj3 = react;
@@ -680,7 +680,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
       onPress: onClose,
       backImage() {
           const obj = { size: "lg", style: closeButtonIcon.closeButtonIcon };
-          return authStore3(XSmallIcon.XSmallIcon, obj);
+          return syncedClientThemes(XSmallIcon.XSmallIcon, obj);
         },
       accessibilityLabel: intl2.string(sku(tmp3[22]).t.cpT0Cq),
       displayMode: "minimal"
@@ -1136,7 +1136,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
         formatToPlainString2Result = formatToPlainString(prop, obj3);
       } else {
         let str;
-        const eNNnIG = _modDef3697.eNNnIG;
+        const eNNnIG = _modDef3719.eNNnIG;
         if (getOrFetchApplication != null) {
           str = getOrFetchApplication.name;
         }

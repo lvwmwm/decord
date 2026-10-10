@@ -1,17 +1,17 @@
-// Module ID: 17669
-// Function ID: 17670
+// Module ID: 17741
+// Function ID: 17742
 // Name: VoicePanelPIPStateContext
-// Dependencies: [19, 6761, 558, 2]
+// Dependencies: [19, 6762, 558, 2]
 // Exports: usePIPState
 
-// Module 17669 (VoicePanelPIPStateContext)
+// Module 17741 (VoicePanelPIPStateContext)
 import react from "react" /* 19 */;
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6761 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6762 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let ReanimatedHelperTypes;
-let size = { id: "end", mode: "toCharArray$esjava$1", width: false, height: null, containerHeight: 0, showSecondaryPIP: null, scale: ReanimatedHelperTypes.createFakeSharedValue(1) };
+let size = { id: "end", mode: "toCharArray$esjava$1", width: false, height: null, containerHeight: "\u{1F9D1}\u{1F3FC}\u200D\u2764\uFE0F\u200D\u{1F48B}\u200D\u{1F9D1}\u{1F3FB}", showSecondaryPIP: true, scale: ReanimatedHelperTypes.createFakeSharedValue(1) };
 const createContext = react.createContext;
 ReanimatedHelperTypes = ReanimatedHelperTypes_mod;
 const context = createContext(size);

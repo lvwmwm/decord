@@ -1,11 +1,13 @@
-// Module ID: 17079
-// Function ID: 17080
+// Module ID: 17148
+// Function ID: 17149
 // Name: conjurePlanBot
-// Dependencies: [1998, 2]
+// Dependencies: [1998, 17143, 6946, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction
 
-// Module 17079 (conjurePlanBot)
+// Module 17148 (conjurePlanBot)
 import Server from "Server" /* 1998 */;
+import ConjureTypes from "ConjureTypes" /* 6946 */;
+import conjurePlanTags from "conjurePlanTags" /* 17143 */;
 import size from "module_2" /* 2 */;
 
 function isAppCommand(kind) {
@@ -73,39 +75,29 @@ const set = new Set(items);
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanBot.tsx");
 
 export const getConjurePlanBotInteraction = function getConjurePlanBotInteraction(bot) {
-  if (null != bot.bot) {
-    return bot.bot.interaction;
-  } else {
-    let str2;
-    const commands = bot.commands;
-    const someResult = commands.some(isAppCommand);
-    const privileged_intents = bot.privileged_intents;
-    let hasItem;
-    if (privileged_intents != null) {
-      hasItem = privileged_intents.includes("MESSAGE_CONTENT");
-    }
-    if (!someResult) {
-      let str3 = "commands";
-      if (!someResult) {
-        let str4 = "messages";
-        if (true !== hasItem) {
-          if (true !== bot.is_activity) {
-            let tmp3;
-            if (null == bot.automod) {
-              tmp3 = "events";
-            }
-            str4 = tmp3;
-          }
-          tmp3 = null;
-        }
-        str3 = str4;
-      }
-      str2 = str3;
+  let tmp2;
+  const obj = conjurePlanTags;
+  const planDeclaresSurfaceResult = obj.planDeclaresSurface(bot, ConjureTypes.ConjureSupportedSurface.APPLICATION_COMMANDS);
+  const obj2 = conjurePlanTags;
+  if (obj2.planDeclaresSurface(bot, ConjureTypes.ConjureSupportedSurface.BOT)) {
+    let str;
+    if (null != bot.bot) {
+      str = bot.bot.interaction;
     } else {
-      str2 = "both";
+      str = null;
+      if (planDeclaresSurfaceResult) {
+        const commands = bot.commands;
+        str = null;
+        if (commands.some(isAppCommand)) {
+          str = "commands";
+        }
+      }
     }
-    return str2;
+    tmp2 = str;
+  } else {
+    tmp2 = null;
   }
+  return tmp2;
 };
 export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bot, cResult, bot2) {
   let closure_0 = cResult;

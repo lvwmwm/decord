@@ -1,11 +1,11 @@
-// Module ID: 17058
-// Function ID: 17059
+// Module ID: 17126
+// Function ID: 17127
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 13164, 558, 576, 13176, 8474, 1126, 3827, 2]
+// Dependencies: [5, 32, 19, 13213, 558, 576, 13226, 8490, 1126, 3849, 2]
 
-// Module 17058 (useConjureConnectActions)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 13176 */;
+// Module 17126 (useConjureConnectActions)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
+import conjureExternalConnections from "conjureExternalConnections" /* 13226 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -81,7 +81,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             try {
@@ -131,7 +131,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
                   obj.handleClick(obj7);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp32) {
               c3 = 3;
@@ -180,7 +180,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             try {
@@ -230,7 +230,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
                   obj.handleClick(obj7);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp32) {
               c3 = 3;

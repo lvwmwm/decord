@@ -1,23 +1,23 @@
-// Module ID: 10572
-// Function ID: 10573
+// Module ID: 10606
+// Function ID: 10607
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 10484, 21, 5091, 587, 558, 576, 5055, 6835, 1126, 6266, 10573, 6267, 5376, 6836, 2]
+// Dependencies: [32, 19, 17, 10518, 21, 5092, 587, 558, 576, 5056, 6838, 1126, 6261, 10607, 6262, 5379, 6839, 2]
 
-// Module 10572 (ClearAfterOptionsActionSheet)
+// Module 10606 (ClearAfterOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import TableRadioRow2 from "TableRadioRow" /* 6266 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6267 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6835 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6836 */;
-import Constants from "Constants" /* 10484 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import TableRadioRow2 from "TableRadioRow" /* 6261 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6262 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
+import Constants from "Constants" /* 10518 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAfterOp
     const content = tmp4.content;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { title: intl.string(onChange(1126).t["5XnRQ+"]) };
-      const BottomSheetTitleHeader = tmp(6835).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
       intl = tmp(1126).intl;
       const tmp12 = closure_7(BottomSheetTitleHeader, obj2);
       cResult[3] = tmp12;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAfterOp
     }
     if (cResult[6] !== initialValue) {
       const obj3 = { onChange: tmp7, title: tmp13, defaultValue: initialValue, hasIcons: false, children: tmp15 };
-      const tmp20 = closure_7(onChange(6267).TableRadioGroup, obj3);
+      const tmp20 = closure_7(onChange(6262).TableRadioGroup, obj3);
       cResult[6] = initialValue;
       cResult[7] = tmp20;
       tmp18 = tmp20;
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAfterOp
     }
     if (cResult[9] !== tmp8) {
       const obj4 = { onPress: tmp8, text: tmp21 };
-      const tmp25 = closure_7(onChange(5376).Button, obj4);
+      const tmp25 = closure_7(onChange(5379).Button, obj4);
       cResult[9] = tmp8;
       cResult[10] = tmp25;
       tmp23 = tmp25;
@@ -136,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAfterOp
       }
       const obj5 = { contentStyles: content, header: tmp10, children: items };
       items = [tmp18, tmp26];
-      const tmp32 = closure_8(onChange(6836).BottomSheet, obj5);
+      const tmp32 = closure_8(onChange(6839).BottomSheet, obj5);
       cResult[14] = tmp4.content;
       cResult[15] = tmp26;
       cResult[16] = tmp18;

@@ -1,10 +1,10 @@
-// Module ID: 18503
-// Function ID: 18504
+// Module ID: 18577
+// Function ID: 18578
 // Name: QuestFetchReconnectJitterExperiment
 // Dependencies: [1102, 1453, 2]
 // Exports: getQuestFetchReconnectJitterConfig
 
-// Module 18503 (QuestFetchReconnectJitterExperiment)
+// Module 18577 (QuestFetchReconnectJitterExperiment)
 import DurationsDefault from "Durations" /* 1102 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;

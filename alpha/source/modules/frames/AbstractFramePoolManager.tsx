@@ -1,10 +1,10 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17093
+// Function ID: 17094
 // Name: AbstractFramePoolManager
-// Dependencies: [32, 17026, 2]
+// Dependencies: [32, 17094, 2]
 
-// Module 17025 (AbstractFramePoolManager)
-import FrameStackLevel from "FrameStackLevel" /* 17026 */;
+// Module 17093 (AbstractFramePoolManager)
+import FrameStackLevel from "FrameStackLevel" /* 17094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

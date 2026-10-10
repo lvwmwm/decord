@@ -1,17 +1,17 @@
-// Module ID: 6146
-// Function ID: 6147
+// Module ID: 6139
+// Function ID: 6140
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1085, 38, 4988, 1382, 510, 6147, 6148, 4, 6149, 6150, 1384, 1295, 5117, 2]
+// Dependencies: [32, 5, 1085, 38, 5027, 1382, 510, 6140, 6141, 4, 6142, 6143, 1384, 1295, 5118, 2]
 
-// Module 6146 (DesktopNativeUtils)
+// Module 6139 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1085 */;
-import flow_Client from "flow/Client" /* 4988 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5117 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6147 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6148 */;
-import IPCEvents from "IPCEvents" /* 6149 */;
+import flow_Client from "flow/Client" /* 5027 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5118 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6140 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6141 */;
+import IPCEvents from "IPCEvents" /* 6142 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(6150);
+const FileExtensionUtils = tmp2(6143);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -76,7 +76,7 @@ obj = function _transcodeImageToPng() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -667,7 +667,7 @@ let obj2 = {
               obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             try {
@@ -701,7 +701,7 @@ let obj2 = {
                 const dock = closure_129_0.dock;
                 dock.cancelBounce(closure_0);
                 c3 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             } catch (tmp10) {
               c3 = 3;
@@ -727,7 +727,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -756,7 +756,7 @@ let obj2 = {
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp8) {
           c0 = 3;
           throw tmp8;
@@ -782,7 +782,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -889,7 +889,7 @@ let obj2 = {
             return obj;
           } else {
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp39) {
           c4 = 3;
@@ -913,7 +913,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -961,7 +961,7 @@ let obj2 = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -974,7 +974,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(6150);
+        const tmpResult = tmp(6143);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;
@@ -999,7 +999,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c8;
@@ -1489,7 +1489,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -1638,7 +1638,7 @@ let obj2 = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

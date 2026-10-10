@@ -1,24 +1,24 @@
-// Module ID: 13448
-// Function ID: 13449
+// Module ID: 13499
+// Function ID: 13500
 // Name: GuildProfileInvite
-// Dependencies: [32, 2128, 9580, 1085, 7423, 7870, 6130, 4930, 587, 2078, 8845, 8843, 1415, 2032, 1898, 1126, 11303, 8851, 7424, 11, 2122, 6877, 1103, 7732, 7872, 2]
+// Dependencies: [32, 2129, 9609, 1085, 7423, 7888, 6123, 4969, 587, 2079, 8864, 8862, 1415, 2032, 1898, 1126, 11344, 8870, 7424, 11, 2123, 6883, 1103, 7750, 7890, 2]
 // Exports: createGuildProfileInvite
 
-// Module 13448 (GuildProfileInvite)
+// Module 13499 (GuildProfileInvite)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import intl10 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 2122 */;
-import RoleIconUtils from "RoleIconUtils" /* 6877 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 2123 */;
+import RoleIconUtils from "RoleIconUtils" /* 6883 */;
 import Constants2 from "Constants" /* 7423 */;
-import react_native from "react-native" /* 7732 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7870 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9580 */;
+import react_native from "react-native" /* 7750 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7888 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9609 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
@@ -46,21 +46,21 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   const baseColors = tmp4.baseColors;
   const tmp5 = id;
   const colors = tmp4.colors;
-  let obj = id(6130);
+  let obj = id(6123);
   const guildProfileFromInvite = obj.buildGuildProfileFromInvite(invite);
-  let obj2 = id(4930);
+  let obj2 = id(4969);
   const isThemeDarkResult = obj2.isThemeDark(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   let fromGuildProfileResult = null;
   const tmp8 = isThemeDarkResult ? unsafe_rawColors.PRIMARY_660 : unsafe_rawColors.PRIMARY_160;
   if (null != guildProfileFromInvite) {
-    const tmp5Result = tmp5(2078);
+    const tmp5Result = tmp5(2079);
     fromGuildProfileResult = tmp5Result.fromGuildProfile(guildProfileFromInvite);
   }
-  const tmp5Result10 = tmp5(8845);
+  const tmp5Result10 = tmp5(8864);
   let profilePrimaryColor = tmp5Result10.getProfilePrimaryColor(guildProfileFromInvite);
-  const getBackgroundForProfile = tmp5(8843).getBackgroundForProfile;
-  tmp5(8843);
+  const getBackgroundForProfile = tmp5(8862).getBackgroundForProfile;
+  tmp5(8862);
   if (profilePrimaryColor == null) {
     profilePrimaryColor = tmp8;
   }
@@ -147,31 +147,31 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   }
   let guildProfileCTAType = null;
   if (null != guildProfileFromInvite) {
-    const tmp5Result13 = tmp5(11303);
+    const tmp5Result13 = tmp5(11344);
     guildProfileCTAType = tmp5Result13.getGuildProfileCTAType(guildProfileFromInvite, invite.code);
   }
-  if (tmp5(11303).CTATypes.IS_MEMBER === guildProfileCTAType) {
+  if (tmp5(11344).CTATypes.IS_MEMBER === guildProfileCTAType) {
     const intl7 = tmp5(1126).intl;
     stringResult = intl7.string(tmp5(1126).t.IRoQXr);
-  } else if (tmp5(11303).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
+  } else if (tmp5(11344).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
     const intl6 = tmp5(1126).intl;
     stringResult = intl6.string(tmp5(1126).t["4yfIDk"]);
-  } else if (tmp5(11303).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
+  } else if (tmp5(11344).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
     const intl5 = tmp5(1126).intl;
     stringResult = intl5.string(tmp5(1126).t["7XdMW2"]);
-  } else if (tmp5(11303).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
+  } else if (tmp5(11344).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
     const intl4 = tmp5(1126).intl;
     stringResult = intl4.string(tmp5(1126).t.MMlhsr);
   } else {
-    if (tmp5(11303).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
-      const JOIN_VIA_INVITE = tmp5(11303).CTATypes.JOIN_VIA_INVITE;
+    if (tmp5(11344).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
+      const JOIN_VIA_INVITE = tmp5(11344).CTATypes.JOIN_VIA_INVITE;
     }
     const intl3 = tmp5(1126).intl;
     stringResult = intl3.string(tmp5(1126).t.XpeFYr);
   }
   let guildBadgeImageSource;
   if (null != fromGuildProfileResult) {
-    const tmp5Result14 = tmp5(8851);
+    const tmp5Result14 = tmp5(8870);
     guildBadgeImageSource = tmp5Result14.getGuildBadgeImageSource(fromGuildProfileResult, theme);
   }
   let found;
@@ -205,7 +205,7 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
         id = invite.guild.id;
         const items = [];
         HermesBuiltin.arraySpread(items, invite.roles, 0);
-        const sorted = items.sort(tmp5(2122).sortInviteRoles);
+        const sorted = items.sort(tmp5(2123).sortInviteRoles);
         mapped = sorted.map((color) => {
           let intl;
           let obj5;
@@ -263,8 +263,8 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   if (GUILD == null) {
     GUILD = InviteTypes.GUILD;
   }
-  tmp5Result16 = tmp5(7732);
-  tmp5Result17 = tmp5(7732);
+  tmp5Result16 = tmp5(7750);
+  tmp5Result17 = tmp5(7750);
   if (found == null) {
     found = [];
   }
@@ -281,7 +281,7 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   }
   assetUriForEmbed = undefined;
   if (null != guildBadgeImageSource) {
-    const tmp5Result18 = tmp5(7872);
+    const tmp5Result18 = tmp5(7890);
     assetUriForEmbed = tmp5Result18.getAssetUriForEmbed(guildBadgeImageSource);
   }
   stringResult1 = undefined;

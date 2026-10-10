@@ -1,21 +1,21 @@
-// Module ID: 15209
-// Function ID: 15210
+// Module ID: 15271
+// Function ID: 15272
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9043, 7383, 5979, 21, 558, 576, 15210, 504, 15211, 12923, 15216, 15217, 15218, 15214, 12933, 5986, 5984, 15221, 15226, 2]
+// Dependencies: [5, 32, 19, 17, 9062, 7389, 5972, 21, 558, 576, 15272, 504, 15273, 12971, 15278, 15279, 15280, 15276, 12981, 5979, 5977, 15283, 15288, 2]
 
-// Module 15209 (BountiesScrollVideoItem)
+// Module 15271 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 5979 */;
-import QuestContent from "QuestContent" /* 5984 */;
-import AdCreativeType from "AdCreativeType" /* 5986 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12933 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15210 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestContent from "QuestContent" /* 5977 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12981 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15272 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9043 */;
-import BountyStore from "BountyStore" /* 7383 */;
+import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9062 */;
+import BountyStore from "BountyStore" /* 7389 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -314,7 +314,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -370,7 +370,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
               });
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp24) {
           closure_2 = tmp24;
@@ -433,7 +433,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   let tmp21;
   let tmp7;
   let tmp8;
-  const f119821 = () => {
+  const f120147 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -492,9 +492,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   const handlePlayerStateChange = isEndCardVisible({ isActive, playerRef: ref }).handlePlayerStateChange;
   [tmp17, tmp18] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp20, tmp21] = isActive(obj.useState(f119821), 2);
+  [tmp20, tmp21] = isActive(obj.useState(f120147), 2);
   VirtualCurrencyStore = tmp21;
-  isActive(obj.useState(f119821), 2);
+  isActive(obj.useState(f120147), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;
@@ -523,7 +523,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -579,7 +579,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
             });
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp24) {
         width = tmp24;
@@ -796,15 +796,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScro
   }
   const obj = {
     adContentId: bounty.id,
-    adCreativeType: bounty(5986).AdCreativeType.BOUNTY,
-    questContent: bounty(5984).QuestContent.VIDEO_MODAL_MOBILE,
+    adCreativeType: bounty(5979).AdCreativeType.BOUNTY,
+    questContent: bounty(5977).QuestContent.VIDEO_MODAL_MOBILE,
     sourceQuestContent,
     overrideVisibility: isActive,
     children() {
       return <closure_12 bounty={bounty} sourceQuestContent={sourceQuestContent} width={dependencyMap} height={_asyncToGenerator} index={_slicedToArray} isActive={isActive} isRecapPageRevealed={flag} isRecapPageOnTop={flag2} isScrollingInBoundsSharedValue={BountyStore} shouldLoadHls={shouldLoadHls} softDownloadCapsEnabled={flag3} isScrollIndicatorEnabled={flag4} />;
     }
   };
-  const BillableAdPlacementImpressionTrackerNative = bounty(12933).BillableAdPlacementImpressionTrackerNative;
+  const BillableAdPlacementImpressionTrackerNative = bounty(12981).BillableAdPlacementImpressionTrackerNative;
   return flag3(BillableAdPlacementImpressionTrackerNative, obj);
 });
 let size = size_mod;

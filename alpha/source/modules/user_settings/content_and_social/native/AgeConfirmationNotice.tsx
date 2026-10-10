@@ -1,18 +1,18 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15078
+// Function ID: 15079
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7018, 21, 558, 576, 6993, 14882, 4765, 2127, 7497, 5916, 587, 5376, 1126, 5087, 1200, 2]
+// Dependencies: [19, 17, 7019, 21, 558, 576, 6999, 14941, 4806, 2128, 7497, 5918, 587, 1126, 5088, 7567, 2]
 
-// Module 15019 (AgeConfirmationNotice)
+// Module 15078 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import LinkingDefault from "Linking" /* 4765 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14882 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14941 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7018 */;
+import Constants from "Constants" /* 7019 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,11 +24,10 @@ const View = react_native.View;
 ({ SafetySettingsNoticeAction: hasOwnProperty, SafetySettingsNoticeType: metroRequire } = Constants);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirmationNotice() {
+  let obj3;
   let onPress;
   let sensitiveContentFilterHelpArticle;
   let tmp10;
-  let tmp12;
-  let tmp15;
   let tmp17;
   let tmp5;
   let tmp6;
@@ -37,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
   const tmp = sensitiveContentFilterHelpArticle;
   let obj = sensitiveContentFilterHelpArticle(576);
   const cResult = obj.c(11);
-  let obj2 = sensitiveContentFilterHelpArticle(6993);
+  let obj2 = sensitiveContentFilterHelpArticle(6999);
   sensitiveContentFilterHelpArticle = obj2.useSensitiveContentFilterHelpArticle();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
@@ -70,65 +69,140 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
   }
   importDefault = tmp8;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function y() {
-      const obj = onPress(dependencyMap[10]);
-      const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
-      const result = obj.showAgeVerificationGetStartedModal(obj2);
-      const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
-      const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
-    };
-    cResult[4] = fn3;
-    tmp9 = fn3;
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
+    cResult[4] = E;
+    tmp9 = E;
   } else {
-    tmp9 = cResult[4];
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { marginBottom: nativeDefault.space.PX_8 };
-    cResult[5] = obj3;
-    tmp10 = obj3;
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
+    tmp11[0] = nativeDefault.space.PX_8;
+    cResult[5] = tmp11;
+    tmp10 = tmp11;
   } else {
-    tmp10 = cResult[5];
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
   }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const Button = tmp(5376).Button;
-    const intl = tmp(1126).intl;
-    const tmp14 = <Button variant="secondary" size="sm" text={intl.string(tmp(1126).t.FDSSia)} onPress={tmp9} />;
-    cResult[6] = tmp14;
-    tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[6];
-  }
-  if (cResult[7] !== tmp8) {
-    const intl2 = tmp(1126).intl;
-    const obj5 = {
+  if (cResult[6] !== tmp8) {
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
+    const obj4 = {
       hook(children) {
           return jsx(Text_Text.Text, { role: "link", variant: "text-sm/medium", color: "text-link", onPress, children });
         }
     };
-    const formatResult = intl2.format(tmp(1126).t.mFgsfg, obj5);
-    cResult[7] = tmp8;
-    cResult[8] = formatResult;
-    tmp15 = formatResult;
+    cResult[6] = tmp8;
+    cResult[7] = obj3.format(tmp(1126).t.mFgsfg, obj4);
+    const formatResult = obj3.format(tmp(1126).t.mFgsfg, obj4);
   } else {
-    tmp15 = cResult[8];
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
   }
-  if (cResult[9] !== tmp15) {
-    ({ messageType: tmp(1200).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: tmp12, children: tmp15 });
-    const HelpMessage = tmp(1200).HelpMessage;
-    const tmp21 = <View style={tmp10}>{null}</View>;
-    cResult[9] = tmp15;
-    cResult[10] = tmp21;
-    tmp17 = tmp21;
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
+    const intl = tmp(1126).intl;
+    tmp16[0] = intl.string(tmp(1126).t.FDSSia);
+    tmp16[1] = tmp9;
+    cResult[8] = tmp16;
   } else {
-    tmp17 = cResult[10];
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
+  }
+  if (cResult[9] !== tmp13) {
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
+    const tmp19 = <View style={tmp10}>{null}</View>;
+    cResult[9] = tmp13;
+    cResult[10] = tmp19;
+    tmp17 = tmp19;
+  } else {
+    class E {
+      constructor() {
+        const obj = onPress(dependencyMap[10]);
+        const obj2 = { entryPoint: sensitiveContentFilterHelpArticle(dependencyMap[11]).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+        const result = obj.showAgeVerificationGetStartedModal(obj2);
+        const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
+        const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+      }
+    }
   }
   return tmp17;
 }) : (function AgeConfirmationNotice() {
   let intl;
   let intl2;
+  let obj5;
+  let obj6;
   let onPress;
   let sensitiveContentFilterHelpArticle;
-  let obj = sensitiveContentFilterHelpArticle(6993);
+  let obj = sensitiveContentFilterHelpArticle(6999);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = react.useEffect(() => {
     const obj = sensitiveContentFilterHelpArticle(dependencyMap[7]);
@@ -151,11 +225,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeConfirm
     const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
-  ({ messageType: sensitiveContentFilterHelpArticle(1200).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(sensitiveContentFilterHelpArticle(1126).t.mFgsfg, obj6) });
-  const HelpMessage = sensitiveContentFilterHelpArticle(1200).HelpMessage;
-  ({ variant: "secondary", size: "sm", text: intl.string(sensitiveContentFilterHelpArticle(1126).t.FDSSia), onPress: callback });
-  const Button = sensitiveContentFilterHelpArticle(5376).Button;
+  ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1126).t.mFgsfg, obj5), role: "status", action: obj6 });
+  const InlineNotice = sensitiveContentFilterHelpArticle(7567).InlineNotice;
   intl = sensitiveContentFilterHelpArticle(1126).intl;
+  obj5 = {
+    hook(children) {
+      return jsx(Text_Text.Text, { role: "link", variant: "text-sm/medium", color: "text-link", onPress, children });
+    }
+  };
+  obj6 = { text: intl2.string(sensitiveContentFilterHelpArticle(1126).t.FDSSia), onClick: callback };
   intl2 = sensitiveContentFilterHelpArticle(1126).intl;
   return <View style={obj3}>{null}</View>;
 });

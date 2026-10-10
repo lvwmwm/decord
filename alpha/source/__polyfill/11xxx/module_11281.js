@@ -1,49 +1,48 @@
 // Module ID: 11281
 // Function ID: 11282
-// Dependencies: [11282]
-// Exports: isNodeEnv, loadModule
+// Dependencies: [11235, 11222, 11208]
+// Exports: addBreadcrumb
 
 // Module 11281
-import _mod11282 from "module_11282" /* 11282 */;
+import _mod11208 from "module_11208" /* 11208 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 11222 */;
+import _mod11235 from "module_11235" /* 11235 */;
 
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
-}
 
-export { dynamicRequire };
-export const isNodeEnv = function isNodeEnv() {
-  const obj = _mod11282;
-  let tmp2 = !obj.isBrowserBundle();
-  obj.isBrowserBundle();
-  if (tmp2) {
-    const _Object = Object;
-    const _process = process;
-    let num = 0;
-    const call = toString.call;
-    if (typeof process !== "undefined") {
-      num = process;
+export const addBreadcrumb = function addBreadcrumb(arg0, arg1) {
+  let tmpResult;
+  let closure_0 = arg1;
+  const obj = _mod11235;
+  const client = obj.getClient();
+  const obj3 = _mod11235;
+  const isolationScope = obj3.getIsolationScope();
+  if (client) {
+    const options = client.getOptions();
+    let beforeBreadcrumb = options.beforeBreadcrumb;
+    let tmp5 = null;
+    if (undefined !== beforeBreadcrumb) {
+      tmp5 = beforeBreadcrumb;
     }
-    tmp2 = "[object process]" === call(num);
-  }
-  return tmp2;
-};
-export const loadModule = function loadModule(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = module;
-  }
-  let tmp2;
-  try {
-    tmp2 = dynamicRequire(tmp, arg0);
-  } catch (err) {
-  }
-  const tmp4 = tmp2;
-  if (!tmp4) {
-    try {
-      const _HermesInternal = HermesInternal;
-      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-    } catch (err) {
+    beforeBreadcrumb = tmp5;
+    const maxBreadcrumbs = options.maxBreadcrumbs;
+    let num = 100;
+    if (undefined !== maxBreadcrumbs) {
+      num = maxBreadcrumbs;
+    }
+    if (num > 0) {
+      let obj2 = { timestamp: tmpResult.dateTimestampInSeconds() };
+      tmpResult = _browserPerformanceTimeOriginMode;
+      const merged = Object.assign(arg0);
+      if (tmp5) {
+        const tmpResult2 = _mod11208;
+        obj2 = tmpResult2.consoleSandbox(() => beforeBreadcrumb(obj2, closure_0));
+      }
+      if (null !== obj2) {
+        if (client.emit) {
+          client.emit("beforeAddBreadcrumb", obj2, arg1);
+        }
+        isolationScope.addBreadcrumb(obj2, num);
+      }
     }
   }
-  return tmp2;
 };

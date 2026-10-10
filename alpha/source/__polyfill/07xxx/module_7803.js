@@ -1,69 +1,54 @@
 // Module ID: 7803
 // Function ID: 7804
-// Dependencies: [7804, 7805]
+// Dependencies: [7799, 7800]
+// Exports: isAAC, isAMR, isFLAC, isM4A, isMP3, isWAV
 
 // Module 7803
-import _mod7804 from "module_7804" /* 7804 */;
-import _mod7805 from "module_7805" /* 7805 */;
+import _mod7799 from "module_7799" /* 7799 */;
+import _mod7800 from "module_7800" /* 7800 */;
 
-let hasOwnProperty;
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
+export const isAAC = function isAAC(fileChunk, excludeSimilarTypes) {
+  fileChunk = _mod7799.getFileChunk(fileChunk);
+  const FileTypes = _mod7800.FileTypes;
+  let checkByFileTypeResult1 = FileTypes.checkByFileType(fileChunk, "aac");
+  if (!checkByFileTypeResult1) {
+    excludeSimilarTypes = undefined;
+    if (null != excludeSimilarTypes) {
+      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
     }
-    closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
+    let checkByFileTypeResult = !excludeSimilarTypes;
+    if (checkByFileTypeResult) {
+      const fileChunk1 = tmp(7799).getFileChunk(fileChunk);
+      const FileTypes2 = tmp(7800).FileTypes;
+      checkByFileTypeResult = FileTypes2.checkByFileType(fileChunk1, "m4a");
     }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
-    }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
+    checkByFileTypeResult1 = checkByFileTypeResult;
   }
-});
-tmp3(_mod7804, exports);
-tmp3(_mod7805, exports);
+  return checkByFileTypeResult1;
+};
+export const isAMR = function isAMR(fileChunk) {
+  fileChunk = _mod7799.getFileChunk(fileChunk);
+  const FileTypes = _mod7800.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "amr");
+};
+export const isFLAC = function isFLAC(fileChunk) {
+  fileChunk = _mod7799.getFileChunk(fileChunk);
+  const FileTypes = _mod7800.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "flac");
+};
+export const isM4A = function isM4A(fileChunk) {
+  fileChunk = _mod7799.getFileChunk(fileChunk);
+  const FileTypes = _mod7800.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "m4a");
+};
+export const isMP3 = function isMP3(fileChunk) {
+  fileChunk = _mod7799.getFileChunk(fileChunk);
+  const FileTypes = _mod7800.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "mp3");
+};
+export const isWAV = function isWAV(fileChunk) {
+  fileChunk = _mod7799.getFileChunk(fileChunk);
+  const FileTypes = _mod7800.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "wav");
+};

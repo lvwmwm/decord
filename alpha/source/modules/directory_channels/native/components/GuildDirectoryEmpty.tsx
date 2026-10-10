@@ -1,18 +1,18 @@
-// Module ID: 12476
-// Function ID: 12477
+// Module ID: 12523
+// Function ID: 12524
 // Name: GuildDirectoryEmpty
-// Dependencies: [19, 17, 4707, 1085, 21, 5091, 587, 558, 576, 1631, 504, 11959, 6163, 12477, 1126, 1200, 5087, 8563, 11960, 12478, 8667, 12479, 2]
+// Dependencies: [19, 17, 4748, 1085, 21, 5092, 587, 558, 576, 1631, 504, 12003, 6156, 12524, 1126, 1200, 5088, 8579, 12004, 12525, 8682, 12526, 2]
 
-// Module 12476 (GuildDirectoryEmpty)
+// Module 12523 (GuildDirectoryEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8667 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11960 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8682 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12004 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4707 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -285,14 +285,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
   let obj = guild(504);
   const items = [GuildChannelStore];
   dependencyMap = obj.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  let obj2 = guild(11959);
+  let obj2 = guild(12003);
   const obj3 = { contentContainerStyle: items1, children: items2 };
   items1 = [tmp.container, ];
   const obj4 = { paddingBottom: bottom + 16 };
   items1[1] = obj4;
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
-  const obj5 = { source: channel(12477), style: tmp.header };
-  const tmp9 = channel(6163);
+  const obj5 = { source: channel(12524), style: tmp.header };
+  const tmp9 = channel(6156);
   items2 = [closure_6(tmp9, obj5), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", children: intl.format(guild(1126).t.vyvrpC, obj7) };
   const LegacyText = guild(1200).LegacyText;
@@ -300,7 +300,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
   obj7 = { guildName: guild.name };
   items2[1] = closure_6(LegacyText, obj6);
   const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(guild(1126).t.WypE0i) };
-  const Text = guild(5087).Text;
+  const Text = guild(5088).Text;
   intl2 = guild(1126).intl;
   items2[2] = closure_6(Text, obj8);
   let tmp8Result = null;
@@ -314,10 +314,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
           const obj2 = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
           return obj.open(obj2);
         },
-      iconSource: channel(12478),
+      iconSource: channel(12525),
       title: intl3.string(guild(1126).t.hyK15i)
     };
-    const FormCTA = tmp4(8563).FormCTA;
+    const FormCTA = tmp4(8579).FormCTA;
     intl3 = tmp4(1126).intl;
     tmp8Result = tmp8(FormCTA, obj9);
   }
@@ -328,10 +328,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
       const obj = instant_invite_InstantInviteUtils;
       return obj.handleOpenInviteActionsheet(guild, channel.id, closure_2, hasOwnProperty.HUB_EMPTY_STATE);
     },
-    iconSource: channel(12479),
+    iconSource: channel(12526),
     title: intl4.string(guild(1126).t.L4bwJ9)
   };
-  const FormCTA2 = tmp4(8563).FormCTA;
+  const FormCTA2 = tmp4(8579).FormCTA;
   intl4 = tmp4(1126).intl;
   items2[4] = closure_6(FormCTA2, obj10);
   return tmp6(tmp7, obj3);

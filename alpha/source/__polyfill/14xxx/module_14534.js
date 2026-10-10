@@ -1,29 +1,27 @@
 // Module ID: 14534
 // Function ID: 14535
-// Dependencies: [14477, 14497]
+// Dependencies: [14535, 14532, 14537]
 
 // Module 14534
-import _mod14497 from "module_14497" /* 14497 */;
-import getOwnPropertyDescriptor_mod from "module_14477" /* 14477 */;
+import _mod14532 from "module_14532" /* 14532 */;
+import _mod14535 from "module_14535" /* 14535 */;
+import _mod14537 from "module_14537" /* 14537 */;
 
-let getOwnPropertyDescriptor = getOwnPropertyDescriptor_mod;
-if (getOwnPropertyDescriptor) {
-  const _Object = Object;
-  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-}
-const tmp = _mod14497(prototype, "name");
-let tmp3 = tmp;
-const tmp2 = tmp && "something" === (function something() {
-
-}).name;
-if (tmp3) {
-  const _module = getOwnPropertyDescriptor;
-  let tmp5 = !_module;
-  if (_module) {
-    tmp5 = getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
-    getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
-  }
-  tmp3 = tmp5;
+let fn = Object;
+let closure_3 = _mod14535("".split);
+if (_mod14532(() => {
+  const obj = Object("z");
+  return !obj.propertyIsEnumerable(0);
+})) {
+  fn = (arg0) => {
+    let tmp2;
+    if ("String" === _mod14537(arg0)) {
+      tmp2 = closure_3(arg0, "");
+    } else {
+      tmp2 = Object(arg0);
+    }
+    return tmp2;
+  };
 }
 
-export default { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };
+export default fn;

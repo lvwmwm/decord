@@ -1,18 +1,18 @@
-// Module ID: 6828
-// Function ID: 6829
+// Module ID: 6831
+// Function ID: 6832
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 5087, 1200, 6829, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1200, 6832, 2]
 
-// Module 6828 (FormArrow)
+// Module 6831 (FormArrow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6829 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6832 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

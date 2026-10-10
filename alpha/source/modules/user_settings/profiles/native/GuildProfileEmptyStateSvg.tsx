@@ -1,11 +1,11 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14925
+// Function ID: 14926
 // Name: GuildProfileEmptyStateSvg
-// Dependencies: [19, 21, 558, 576, 7559, 2]
+// Dependencies: [19, 21, 558, 576, 7576, 2]
 
-// Module 14866 (GuildProfileEmptyStateSvg)
+// Module 14925 (GuildProfileEmptyStateSvg)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7559 */;
+import inlineStyles from "inlineStyles" /* 7576 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -120,7 +120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent
   }
   if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { id: "paint0_linear_313_93366", x1: "95.4274", y1: "123.439", x2: "104.392", y2: "96.0278", gradientUnits: "userSpaceOnUse", children: items };
-    const LinearGradient = tmp(7559).LinearGradient;
+    const LinearGradient = tmp(7576).LinearGradient;
     items = [_false(inlineStyles.Stop, { offset: "0.18", stopColor: "#FF78B7" }), _false(inlineStyles.Stop, { offset: "0.97", stopColor: "#F25AA8" })];
     const tmp50 = React3(LinearGradient, obj2);
     cResult[21] = tmp50;
@@ -130,7 +130,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent
   }
   if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { id: "paint1_linear_313_93366", x1: "136.357", y1: "127.053", x2: "128.314", y2: "96.2055", gradientUnits: "userSpaceOnUse", children: items1 };
-    const LinearGradient2 = tmp(7559).LinearGradient;
+    const LinearGradient2 = tmp(7576).LinearGradient;
     items1 = [_false(inlineStyles.Stop, { offset: "0.26", stopColor: "#FF78B7" }), _false(inlineStyles.Stop, { offset: "0.51", stopColor: "#F96BB0" }), _false(inlineStyles.Stop, { offset: "0.97", stopColor: "#EB4A9F" }), _false(inlineStyles.Stop, { offset: "1", stopColor: "#EA489E" })];
     const tmp54 = React3(LinearGradient2, obj3);
     cResult[22] = tmp54;
@@ -140,7 +140,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent
   }
   if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { id: "paint2_linear_313_93366", x1: "49.5877", y1: "44.6544", x2: "54.3549", y2: "71.8062", gradientUnits: "userSpaceOnUse", children: items2 };
-    const LinearGradient3 = tmp(7559).LinearGradient;
+    const LinearGradient3 = tmp(7576).LinearGradient;
     items2 = [_false(inlineStyles.Stop, { offset: "0.15", stopColor: "#5865F0" }), _false(inlineStyles.Stop, { offset: "0.89", stopColor: "#3442D7" })];
     const tmp58 = React3(LinearGradient3, obj4);
     cResult[23] = tmp58;
@@ -151,9 +151,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SvgComponent
   if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { children: items3 };
     items3 = [tmp47, tmp51, tmp55, ];
-    const Defs = tmp(7559).Defs;
+    const Defs = tmp(7576).Defs;
     const obj6 = { id: "paint3_linear_313_93366", x1: "112.951", y1: "33.745", x2: "124.172", y2: "93.5012", gradientUnits: "userSpaceOnUse", children: items4 };
-    const LinearGradient4 = tmp(7559).LinearGradient;
+    const LinearGradient4 = tmp(7576).LinearGradient;
     items4 = [_false(inlineStyles.Stop, { offset: "0.42", stopColor: "#8FFFAB" }), _false(inlineStyles.Stop, { offset: "0.92", stopColor: "#58F086" })];
     items3[3] = React3(LinearGradient4, obj6);
     const tmp62 = React3(Defs, obj5);

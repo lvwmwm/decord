@@ -1,9 +1,9 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10180
+// Function ID: 10181
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7137, 1390, 1085, 1392, 21, 5091, 587, 558, 576, 6663, 6854, 504, 1265, 10152, 1382, 584, 10126, 10138, 1126, 5087, 10144, 5376, 2]
+// Dependencies: [5, 32, 19, 17, 7143, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 6664, 6857, 504, 1265, 10181, 1382, 584, 10155, 10167, 1126, 5088, 10173, 5379, 2]
 
-// Module 10151 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10180 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,14 +11,14 @@ import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7137 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10126 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7143 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10155 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -396,7 +396,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -433,7 +433,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
               closure_128_10();
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp14) {
           c2 = 3;

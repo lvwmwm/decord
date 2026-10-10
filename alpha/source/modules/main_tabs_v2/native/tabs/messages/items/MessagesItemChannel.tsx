@@ -1,28 +1,28 @@
-// Module ID: 16375
-// Function ID: 16376
+// Module ID: 16442
+// Function ID: 16443
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 2064, 21, 10480, 587, 16376, 558, 576, 504, 16385, 8608, 16386, 2]
+// Dependencies: [32, 19, 2065, 21, 10514, 587, 16443, 558, 576, 504, 16452, 8624, 16453, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 16375 (MessagesItemChannel)
+// Module 16442 (MessagesItemChannel)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10480 */;
-import MessagesItemChannelBase from "MessagesItemChannelBase" /* 16376 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16385 */;
-import LegendList from "LegendList" /* 16386 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10514 */;
+import MessagesItemChannelBase from "MessagesItemChannelBase" /* 16443 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16452 */;
+import LegendList from "LegendList" /* 16453 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;
 
 let tmp;
-const defaultMVCPConfig = tmp(8608);
+const defaultMVCPConfig = tmp(8624);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_7 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannel(channelId) {

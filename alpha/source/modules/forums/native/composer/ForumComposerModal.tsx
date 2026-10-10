@@ -1,9 +1,9 @@
-// Module ID: 9663
-// Function ID: 9664
+// Module ID: 9692
+// Function ID: 9693
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 9664, 2064, 7237, 7889, 6972, 21, 5091, 587, 1894, 5299, 1126, 7900, 9235, 558, 576, 6848, 504, 9665, 9662, 1501, 1629, 11, 7885, 6211, 9666, 2]
+// Dependencies: [19, 17, 9693, 2065, 7243, 7907, 6978, 21, 5092, 587, 1894, 5300, 1126, 7918, 9262, 558, 576, 6851, 504, 9694, 9691, 1501, 1629, 11, 7903, 6206, 9695, 2]
 
-// Module 9663 (ForumComposerModal)
+// Module 9692 (ForumComposerModal)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -12,17 +12,17 @@ import intl5 from "intl" /* 1126 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1501 */;
 import KeyboardTypes from "KeyboardTypes" /* 1629 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
-import DraftStore2 from "DraftStore" /* 7237 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7900 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9235 */;
-import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9662 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import DraftStore2 from "DraftStore" /* 7243 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7918 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9262 */;
+import ForumComposerModalActionCreators from "ForumComposerModalActionCreators" /* 9691 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9664 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7889 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6972 */;
-import createStyles from "createStyles" /* 5091 */;
+import NativeMenuStore from "NativeMenuStore" /* 9693 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7907 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6978 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

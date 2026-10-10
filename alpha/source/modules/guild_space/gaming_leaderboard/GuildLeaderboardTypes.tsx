@@ -1,10 +1,10 @@
-// Module ID: 4697
-// Function ID: 4698
+// Module ID: 4738
+// Function ID: 4739
 // Name: GuildLeaderboardTypes
 // Dependencies: [2]
 // Exports: parseGuildSpaceLeaderboardMessageData, parseServerMemberGamingLeaderboardData
 
-// Module 4697 (GuildLeaderboardTypes)
+// Module 4738 (GuildLeaderboardTypes)
 import size from "module_2" /* 2 */;
 
 const GamingLeaderboardStat = { GAMING_LEADERBOARD_STAT_UNSPECIFIED: 0, [0]: "GAMING_LEADERBOARD_STAT_UNSPECIFIED", GAMING_LEADERBOARD_STAT_HOURS_PLAYED: 1, [1]: "GAMING_LEADERBOARD_STAT_HOURS_PLAYED", GAMING_LEADERBOARD_STAT_DAYS_PLAYED: 2, [2]: "GAMING_LEADERBOARD_STAT_DAYS_PLAYED", GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED: 3, [3]: "GAMING_LEADERBOARD_STAT_UNIQUE_GAMES_PLAYED" };
@@ -34,12 +34,20 @@ export const parseGuildSpaceLeaderboardMessageData = function parseGuildSpaceLea
                 if (leaderboard.stat !== obj.GAMING_LEADERBOARD_STAT_UNSPECIFIED) {
                   tmp = null;
                   if (leaderboard.stat in tmp3) {
-                    obj = { event: null, stat: null, userId: null, secondaryUserId: secondary_user_id, value: leaderboard.value };
+                    obj = { event: null, stat: null, userId: null, secondaryUserId: secondary_user_id, value: leaderboard.value, secondaryValue: null };
                     ({ event: obj.event, stat: obj.stat, user_id: obj.userId, secondary_user_id } = leaderboard);
                     if (secondary_user_id == null) {
                       secondary_user_id = null;
                     }
-                    tmp = obj;
+                    if (null != leaderboard.secondary_value) {
+                      let secondary_value;
+                      if (leaderboard.secondary_value > 0) {
+                        secondary_value = leaderboard.secondary_value;
+                      }
+                      obj.secondaryValue = secondary_value;
+                      tmp = obj;
+                    }
+                    secondary_value = leaderboard.value;
                   }
                 }
               }

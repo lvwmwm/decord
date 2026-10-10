@@ -1,11 +1,11 @@
-// Module ID: 9053
-// Function ID: 9054
+// Module ID: 9072
+// Function ID: 9073
 // Name: Stripe3DSChallenge
-// Dependencies: [5, 5736, 2]
+// Dependencies: [5, 5739, 2]
 // Exports: authenticateStripePaymentIntent
 
-// Module 9053 (Stripe3DSChallenge)
-import StripeUtils from "StripeUtils" /* 5736 */;
+// Module 9072 (Stripe3DSChallenge)
+import StripeUtils from "StripeUtils" /* 5739 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj = function _getLoadedStripe() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -115,7 +115,7 @@ obj = function _confirmCardPayment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -155,7 +155,7 @@ obj = function _confirmCardPayment() {
             throw error;
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         }
       } catch (tmp16) {

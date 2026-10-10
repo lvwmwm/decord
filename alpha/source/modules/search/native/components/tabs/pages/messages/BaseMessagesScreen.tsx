@@ -1,19 +1,19 @@
-// Module ID: 17337
-// Function ID: 17338
+// Module ID: 17409
+// Function ID: 17410
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6069, 12004, 9284, 21, 12011, 558, 576, 11997, 504, 17326, 17338, 11990, 17339, 17340, 11995, 17258, 17270, 2]
+// Dependencies: [19, 6062, 12048, 9311, 21, 12055, 558, 576, 12041, 504, 17398, 17410, 12034, 17411, 17412, 12039, 17330, 17342, 2]
 // Exports: trackMessageItemPress
 
-// Module 17337 (BaseMessagesScreen)
+// Module 17409 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9284 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11990 */;
-import SearchUtils from "SearchUtils" /* 11997 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12011 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 17339 */;
+import TrackingConstants from "TrackingConstants" /* 9311 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12034 */;
+import SearchUtils from "SearchUtils" /* 12041 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12055 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 17411 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6069 */;
-import SearchQueryStore from "SearchQueryStore" /* 12004 */;
+import SearchMessageStore from "SearchMessageStore" /* 6062 */;
+import SearchQueryStore from "SearchQueryStore" /* 12048 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

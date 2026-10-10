@@ -1,12 +1,12 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 14843
+// Function ID: 14844
 // Name: SpinAnimation
-// Dependencies: [19, 21, 558, 576, 4811, 5092, 2]
+// Dependencies: [19, 21, 558, 576, 4850, 5093, 2]
 
-// Module 14787 (SpinAnimation)
+// Module 14843 (SpinAnimation)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import timing from "timing" /* 5092 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpinAnimat
   const cResult = obj.c(7);
   shouldAnimate = shouldAnimate.shouldAnimate;
   const children = shouldAnimate.children;
-  let obj2 = shouldAnimate(4811);
+  let obj2 = shouldAnimate(4850);
   const sharedValue = obj2.useSharedValue(0);
   let fn = function c() {
     let items;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpinAnimat
   fn.__closure = { rotation: sharedValue };
   fn.__workletHash = 7820847848206;
   fn.__initData = __initData;
-  const obj3 = shouldAnimate(4811);
+  const obj3 = shouldAnimate(4850);
   const animatedStyle = obj3.useAnimatedStyle(fn);
   if (cResult[0] === sharedValue) {
     let tmp5;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpinAnimat
       }
       return tmp9;
     }
-    const tmp12 = jsx(sharedValue(4811).View, { style: animatedStyle, children });
+    const tmp12 = jsx(sharedValue(4850).View, { style: animatedStyle, children });
     cResult[4] = children;
     cResult[5] = animatedStyle;
     cResult[6] = tmp12;
@@ -91,9 +91,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpinAnimat
 }) : (function SpinAnimation(shouldAnimate) {
   shouldAnimate = shouldAnimate.shouldAnimate;
   const children = shouldAnimate.children;
-  let obj = shouldAnimate(4811);
+  let obj = shouldAnimate(4850);
   const sharedValue = obj.useSharedValue(0);
-  let obj2 = shouldAnimate(4811);
+  let obj2 = shouldAnimate(4850);
   let fn = function u() {
     let items;
     const obj = { transform: items };
@@ -130,7 +130,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpinAnimat
     }
     return fn;
   }, items);
-  return jsx(sharedValue(4811).View, { style, children });
+  return jsx(sharedValue(4850).View, { style, children });
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/SpinAnimation.tsx");
 

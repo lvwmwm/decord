@@ -1,32 +1,32 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18399
+// Function ID: 18400
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2086, 4709, 8622, 1085, 21, 5091, 587, 9725, 1126, 5087, 9535, 5013, 558, 576, 1503, 504, 584, 8621, 18326, 18330, 4767, 6163, 2127, 5376, 6726, 2]
+// Dependencies: [19, 17, 2087, 4750, 8638, 1085, 21, 5092, 587, 9754, 1126, 5088, 9564, 5046, 558, 576, 1503, 504, 8637, 18400, 18404, 4808, 6156, 2128, 5379, 6727, 2]
 
-// Module 18325 (GuildSettingsModalCommunityIntro)
+// Module 18399 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5013 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import LightbulbIcon2 from "LightbulbIcon" /* 9535 */;
-import AnalyticsIcon2 from "AnalyticsIcon" /* 9725 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18330 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5046 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
+import LightbulbIcon2 from "LightbulbIcon" /* 9564 */;
+import AnalyticsIcon2 from "AnalyticsIcon" /* 9754 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18404 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8622 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8638 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let navigation, obj1, tmp2, waitResult;
+let navigation;
 
 let c10;
 let c9;
@@ -175,7 +175,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Featur
         }
         const obj4 = { style: featureCard, children: items };
         items = [tmp7, tmp15];
-        const tmp22 = authStore3(React3, obj4);
+        const tmp22 = syncedClientThemes(React3, obj4);
         cResult[13] = tmp4.featureCard;
         cResult[14] = tmp7;
         cResult[15] = tmp15;
@@ -185,7 +185,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Featur
     }
     const obj5 = { style: tmp4.featureDescription, children: items1 };
     items1 = [tmp9, tmp12];
-    const tmp18 = authStore3(React3, obj5);
+    const tmp18 = syncedClientThemes(React3, obj5);
     cResult[9] = tmp4.featureDescription;
     cResult[10] = tmp9;
     cResult[11] = tmp12;
@@ -211,8 +211,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Featur
   items[0] = map1(React3, obj2);
   const obj3 = { style: tmp.featureDescription, children: items1 };
   items1 = [map1(Text_Text.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), map1(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
-  items[1] = authStore3(React3, obj3);
-  return authStore3(React3, obj);
+  items[1] = syncedClientThemes(React3, obj3);
+  return syncedClientThemes(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalCommunityIntro(guildId) {
@@ -332,33 +332,21 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   }
   class L {
     constructor() {
-      tmp = !closure_5;
+      let tmp = !stateFromStores2;
       if (tmp) {
-        tmp2 = null;
-        hasItem = undefined;
-        if (closure_3 != null) {
-          features = closure_3.features;
-          tmp4 = GuildFeatures;
-          hasItem = features.has(GuildFeatures.COMMUNITY);
+        let hasItem;
+        if (stateFromStores != null) {
+          const features = stateFromStores.features;
+          hasItem = features.has(constants.COMMUNITY);
         }
         tmp = hasItem;
       }
       if (tmp) {
-        tmp5 = closure_1;
-        tmp6 = closure_2;
-        obj = closure_1(closure_2[18]);
-        waitResult = obj.wait(() => {
-          const obj = onClose(navigation[19]);
-          return obj.setSection(constants.COMMUNITY);
-        });
-        tmp8 = closure_2;
-        tmp9 = GuildSettingsSections;
-        obj1 = { onClose: null };
-        tmp10 = onClose;
-        obj1.onClose = onClose;
-        replaced = closure_2.replace(GuildSettingsSections.COMMUNITY, obj1);
+        const obj = GuildSettingsActionCreatorsDefault;
+        obj.setSection(unpackModuleId.COMMUNITY);
+        const obj2 = { onClose };
+        const replaced = navigation.replace(unpackModuleId.COMMUNITY, obj2);
       }
-      return;
     }
   }
   cResult[8] = undefined;
@@ -410,11 +398,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
       tmp = hasItem;
     }
     if (tmp) {
-      let obj = DispatcherDefault;
-      obj.wait(() => {
-        const obj = onClose(navigation[19]);
-        return obj.setSection(constants.COMMUNITY);
-      });
+      const obj = GuildSettingsActionCreatorsDefault;
+      obj.setSection(unpackModuleId.COMMUNITY);
       const obj2 = { onClose };
       const replaced = navigation.replace(unpackModuleId.COMMUNITY, obj2);
     }
@@ -426,7 +411,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   const introHeaderSource = obj5.useIntroHeaderSource();
   items5 = [, , , , , ];
   const obj8 = { resizeMode: "contain", source: introHeaderSource, style: tmp.headerImage };
-  items5[0] = closure_13(onClose(navigation[23]), obj8);
+  items5[0] = closure_13(onClose(navigation[22]), obj8);
   const obj9 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["M/gBcA"]) };
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
@@ -437,7 +422,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   format = intl2.format;
   obj11 = { helpdeskArticle: obj12.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };
   v52EgsM = require("intl").t["52EgsM"];
-  obj12 = onClose(navigation[24]);
+  obj12 = onClose(navigation[23]);
   items5[2] = closure_13(Text, obj10);
   const obj13 = {
     text: intl3.string(require("intl").t.LhlgY9),

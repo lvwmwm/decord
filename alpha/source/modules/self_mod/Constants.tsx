@@ -1,10 +1,10 @@
-// Module ID: 10348
-// Function ID: 10349
+// Module ID: 10381
+// Function ID: 10382
 // Name: Constants
 // Dependencies: [1126, 2]
 // Exports: getInappropriateConversationsSafetyTips, getSafetyToolsActionSheetKey, getStrangerDangerSafetyTips
 
-// Module 10348 (Constants)
+// Module 10381 (Constants)
 import intl4 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10383
+// Function ID: 10384
 // Name: useIsSpamMessageRequest
-// Dependencies: [6063, 558, 576, 504, 2]
+// Dependencies: [6056, 558, 576, 504, 2]
 
-// Module 10350 (useIsSpamMessageRequest)
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6063 */;
+// Module 10383 (useIsSpamMessageRequest)
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6056 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

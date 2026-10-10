@@ -1,24 +1,24 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 14956
+// Function ID: 14957
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 14885, 21, 5091, 587, 558, 576, 1894, 14891, 6737, 2]
+// Dependencies: [19, 17, 14944, 21, 5092, 587, 558, 576, 1894, 14950, 6738, 2]
 
-// Module 14897 (SettingSearchBar)
+// Module 14956 (SettingSearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import settings_tracking_Tracking from "settings/tracking/Tracking" /* 14891 */;
+import settings_tracking_Tracking from "settings/tracking/Tracking" /* 14950 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14885 */;
-import createStyles from "createStyles" /* 5091 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14944 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const SearchField2 = tmp(6737);
+const SearchField2 = tmp(6738);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };

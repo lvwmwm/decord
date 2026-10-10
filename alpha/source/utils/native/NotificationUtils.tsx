@@ -1,14 +1,14 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 12130
+// Function ID: 12131
 // Name: NotificationUtils
-// Dependencies: [5, 12077, 1085, 12080, 1265, 10991, 7505, 10940, 2]
+// Dependencies: [5, 12121, 1085, 12124, 1265, 11031, 7505, 10980, 2]
 
-// Module 12086 (NotificationUtils)
+// Module 12130 (NotificationUtils)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import SoundUtils from "SoundUtils" /* 10940 */;
-import PushNotificationDefault from "PushNotification" /* 10991 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12077 */;
+import SoundUtils from "SoundUtils" /* 10980 */;
+import PushNotificationDefault from "PushNotification" /* 11031 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12121 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp3) {
           c0 = 3;

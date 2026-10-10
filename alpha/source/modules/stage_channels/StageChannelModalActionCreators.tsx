@@ -1,18 +1,18 @@
 // Module ID: 7492
 // Function ID: 7493
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 5894, 2064, 2086, 4709, 2115, 2072, 7483, 7032, 6104, 7493, 5886, 5897, 7443, 7494, 2]
+// Dependencies: [5, 5897, 2065, 2087, 4750, 2116, 2073, 7483, 7038, 6097, 7493, 5889, 5900, 7443, 7494, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
 // Module 7492 (StageChannelModalActionCreators)
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5886 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
 import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7483 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -116,7 +116,7 @@ export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -185,7 +185,7 @@ export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) 
             return flag;
           });
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp19) {
         c4 = 3;

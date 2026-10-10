@@ -1,20 +1,20 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 10169
+// Function ID: 10170
 // Name: SKUActionCreators
-// Dependencies: [5, 8971, 6094, 1085, 584, 5641, 1295, 4751, 9045, 7302, 5632, 4750, 4743, 5721, 5739, 1388, 2]
+// Dependencies: [5, 8990, 6087, 1085, 584, 5644, 1295, 4792, 9064, 7308, 5635, 4791, 4784, 5724, 5742, 1388, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10140 (SKUActionCreators)
+// Module 10169 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import BillingUtils from "BillingUtils" /* 4743 */;
-import StoreUtils from "StoreUtils" /* 5641 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5739 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7302 */;
-import TestModeUtils from "TestModeUtils" /* 9045 */;
+import BillingUtils from "BillingUtils" /* 4784 */;
+import StoreUtils from "StoreUtils" /* 5644 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 5742 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7308 */;
+import TestModeUtils from "TestModeUtils" /* 9064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8971 */;
-import SKUStore from "SKUStore" /* 6094 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8990 */;
+import SKUStore from "SKUStore" /* 6087 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _fetchSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ let obj = function _fetchSKU() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp32) {
           closure_3 = tmp32;
           if (0 === c4) {
@@ -128,7 +128,7 @@ obj = function _fetchPublishedSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _fetchPublishedSKU() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp36) {
           closure_6 = tmp36;
           if (0 === c7) {
@@ -251,7 +251,7 @@ obj = function _fetchTestSKUsForApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -354,7 +354,7 @@ obj = function _previewPurchaseSku() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let currency;
@@ -485,7 +485,7 @@ obj = function _grantChannelBranchEntitlement() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -578,7 +578,7 @@ obj = function _orderSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -673,12 +673,12 @@ obj = function _purchaseSKU() {
       let c4;
       let c5;
       let c7;
-      let c8;
       let c9;
       let isGift;
-      let obj17;
+      let loadId;
+      let obj18;
       let obj20;
-      let obj30;
+      let obj31;
       let obj4;
       let obj9;
       if (c12 === 2) {
@@ -688,10 +688,9 @@ obj = function _purchaseSKU() {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          let obj2 = { value, done: true };
-          return obj2;
+          return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -715,6 +714,7 @@ obj = function _purchaseSKU() {
               load_id = undefined;
               isGift = undefined;
               gift_info_options = undefined;
+              loadId = undefined;
               quantity = undefined;
               body = undefined;
               promotion_id_override = undefined;
@@ -726,23 +726,21 @@ obj = function _purchaseSKU() {
               const merged1 = Object.assign(closure_2);
               paymentSource = obj5.paymentSource;
               ({ expectedAmount: c3, expectedCurrency: c4, analyticsLoadId: c5, isGift } = obj5);
-              ({ giftInfoOptions: c7, loadId: c8, countryCode: c9, quantity: c10, applyWalletBalance: c11 } = obj5);
+              ({ giftInfoOptions: c7, loadId } = obj5);
+              ({ countryCode: c9, quantity: c10, applyWalletBalance: c11 } = obj5);
               const subscriptionPlanId = obj5.subscriptionPlanId;
+              const obj6 = { type: "SKU_PURCHASE_START", applicationId, skuId, isGift, loadId };
               const obj27 = DispatcherDefault;
-              obj27.wait(() => {
-                obj = closure_2_1(closure_2_2[4]);
-                const obj2 = { type: "SKU_PURCHASE_START", applicationId, skuId, isGift, loadId };
-                obj.dispatch(obj2);
-              });
-              const obj28 = TestModeUtils;
-              closure_12 = obj28.isTestModeForApplication(applicationId);
+              obj27.dispatch(obj6);
+              const obj29 = TestModeUtils;
+              closure_12 = obj29.isTestModeForApplication(applicationId);
               country_code = 1;
-              obj6 = { gift: isGift, sku_subscription_plan_id: subscriptionPlanId };
+              obj8 = { gift: isGift, sku_subscription_plan_id: subscriptionPlanId };
               c11 = 2;
               c12 = 1;
-              const obj8 = { value: obj30.createGatewayCheckoutContext(paymentSource), done: false };
-              obj30 = BillingUtils;
-              return obj8;
+              const obj10 = { value: obj31.createGatewayCheckoutContext(paymentSource), done: false };
+              obj31 = BillingUtils;
+              return obj10;
             }
           } else {
             let prop;
@@ -759,20 +757,20 @@ obj = function _purchaseSKU() {
               const tmp105 = billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED && billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.AUTHENTICATION_REQUIRED;
               if (!tmp105) {
                 prop = skuId;
-                const obj10 = { type: "SKU_PURCHASE_AWAIT_CONFIRMATION", skuId, isGift };
+                const obj12 = { type: "SKU_PURCHASE_AWAIT_CONFIRMATION", skuId, isGift };
                 const obj16 = closure_136_1(closure_136_2[4]);
-                obj16.dispatch(obj10);
+                obj16.dispatch(obj12);
               }
               prop = closure_136_1(closure_136_2[4]);
-              const obj12 = { type: "SKU_PURCHASE_FAIL", applicationId, skuId, error: billingError };
-              prop.dispatch(obj12);
+              const obj13 = { type: "SKU_PURCHASE_FAIL", applicationId, skuId, error: billingError };
+              prop.dispatch(obj13);
               if (billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED) {
                 throw billingError;
               } else if (closure_18.body.payment_id) {
                 c12 = 3;
-                const obj13 = { value: obj20.handlePaymentConfirmation(closure_18.body, paymentSource), done: true };
+                const obj14 = { value: obj20.handlePaymentConfirmation(closure_18.body, paymentSource), done: true };
                 obj20 = closure_136_0(closure_136_2[13]);
-                return obj13;
+                return obj14;
               } else {
                 const obj19 = closure_136_0(closure_136_2[13]);
                 throw obj19.dispatchConfirmationError("payment id cannot be null on redirected confirmations.");
@@ -788,10 +786,10 @@ obj = function _purchaseSKU() {
                   c12 = 3;
                   return { value, done: true };
                 } else {
-                  obj6.gateway_checkout_context = value;
-                  obj6.load_id = tmp;
-                  obj6.gift_info_options = gift_info_options;
-                  body = obj6;
+                  obj8.gateway_checkout_context = value;
+                  obj8.load_id = loadId;
+                  obj8.gift_info_options = gift_info_options;
+                  body = obj8;
                   promotion_id_override = closure_136_4.getPromotionIdOverride();
                   if (null != promotion_id_override) {
                     body.promotion_id_override = promotion_id_override;
@@ -805,9 +803,9 @@ obj = function _purchaseSKU() {
                     closure_5 = body;
                     c11 = 4;
                     c12 = 1;
-                    const obj15 = { value: obj9.createPaymentSourceToken(paymentSource), done: false };
+                    const obj17 = { value: obj9.createPaymentSourceToken(paymentSource), done: false };
                     obj9 = closure_136_0(closure_136_2[13]);
-                    return obj15;
+                    return obj17;
                   }
                   if (null != expected_amount) {
                     body.expected_amount = expected_amount;
@@ -827,14 +825,14 @@ obj = function _purchaseSKU() {
                   }
                   tmp74.apply_wallet_balance = _false;
                   const HTTP = closure_136_0(closure_136_2[6]).HTTP;
-                  const request = { url: closure_136_7.STORE_SKU_PURCHASE(skuId), body, context: obj17, oldFormErrors: true, rejectWithError: prop.rejectWithMigratedError() };
+                  const request = { url: closure_136_7.STORE_SKU_PURCHASE(skuId), body, context: obj18, oldFormErrors: true, rejectWithError: prop.rejectWithMigratedError() };
                   const post = HTTP.post;
-                  obj17 = { load_id };
+                  obj18 = { load_id };
                   prop = closure_136_0(closure_136_2[6]);
                   c11 = 5;
                   c12 = 1;
-                  const obj18 = { value: post(request), done: false };
-                  return obj18;
+                  const obj21 = { value: post(request), done: false };
+                  return obj21;
                 }
               } else if (3 === c11) {
                 if (arg0 === 1) {
@@ -870,9 +868,9 @@ obj = function _purchaseSKU() {
                   if (closure_136_6.has(paymentSource.type)) {
                     c11 = 3;
                     c12 = 1;
-                    const obj23 = { value: obj4.popupBridgeState(paymentSource.type), done: false };
+                    const obj24 = { value: obj4.popupBridgeState(paymentSource.type), done: false };
                     obj4 = closure_136_0(closure_136_2[13]);
-                    return obj23;
+                    return obj24;
                   }
                 }
               } else if (arg0 === 1) {
@@ -884,7 +882,7 @@ obj = function _purchaseSKU() {
                 return { value, done: true };
               } else {
                 closure_16 = value;
-                const obj25 = { type: "SKU_PURCHASE_SUCCESS", skuId, libraryApplications: prop, entitlements: closure_16.body.entitlements, giftCode: closure_16.body.gift_code, loadId: tmp };
+                const obj26 = { type: "SKU_PURCHASE_SUCCESS", skuId, libraryApplications: prop, entitlements: closure_16.body.entitlements, giftCode: closure_16.body.gift_code, loadId };
                 prop = skuId;
                 const dispatch = closure_136_1(closure_136_2[4]).dispatch;
                 closure_136_1(closure_136_2[4]);
@@ -894,8 +892,8 @@ obj = function _purchaseSKU() {
                 } else {
                   prop = [];
                 }
-                prop = tmp;
-                dispatch(obj25);
+                prop = loadId;
+                dispatch(obj26);
                 obj = { appliedUserDiscounts: closure_16.body.applied_user_discounts, redirectConfirmation: false };
                 const merged2 = Object.assign(closure_16.body);
                 country_code = 0;
@@ -935,7 +933,7 @@ obj = function _resendPaymentVerificationEmail() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -1039,10 +1037,7 @@ export const clearPurchaseError = function clearPurchaseError() {
 };
 export const showPurchaseConfirmationStep = function showPurchaseConfirmationStep() {
   obj = DispatcherDefault;
-  obj.wait(() => {
-    obj = DispatcherDefault;
-    return obj.dispatch({ type: "SKU_PURCHASE_SHOW_CONFIRMATION_STEP" });
-  });
+  obj.dispatch({ type: "SKU_PURCHASE_SHOW_CONFIRMATION_STEP" });
 };
 export const updateSKUPaymentIsGift = function updateSKUPaymentIsGift(isGift) {
   obj = DispatcherDefault;

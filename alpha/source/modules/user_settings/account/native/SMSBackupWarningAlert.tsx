@@ -1,14 +1,14 @@
-// Module ID: 6764
-// Function ID: 6765
+// Module ID: 6765
+// Function ID: 6766
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 5091, 558, 576, 5299, 1126, 5087, 5395, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 5300, 1126, 5088, 5398, 2]
 
-// Module 6764 (SMSBackupWarningAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5299 */;
-import AlertDefault from "Alert" /* 5395 */;
+// Module 6765 (SMSBackupWarningAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import AlertDefault from "Alert" /* 5398 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
   }
   if (cResult[6] !== tmp4.title) {
     const obj2 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp11 };
-    const tmp15 = closure_3(onConfirm(5087).Text, obj2);
+    const tmp15 = closure_3(onConfirm(5088).Text, obj2);
     cResult[6] = tmp4.title;
     cResult[7] = tmp15;
     tmp13 = tmp15;
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
   }
   if (cResult[9] !== tmp4.body) {
     const obj3 = { style: body, variant: "text-sm/medium", color: "text-default", children: tmp16 };
-    const tmp20 = closure_3(onConfirm(5087).Text, obj3);
+    const tmp20 = closure_3(onConfirm(5088).Text, obj3);
     cResult[9] = tmp4.body;
     cResult[10] = tmp20;
     tmp18 = tmp20;
@@ -144,11 +144,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWar
   intl = onConfirm(1126).intl;
   intl2 = onConfirm(1126).intl;
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1126).t.Ed4XQB) };
-  const Text = onConfirm(5087).Text;
+  const Text = onConfirm(5088).Text;
   intl3 = onConfirm(1126).intl;
   items = [closure_3(Text, obj2), ];
   const obj3 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: intl4.string(onConfirm(1126).t.EDU2Eg) };
-  const Text2 = onConfirm(5087).Text;
+  const Text2 = onConfirm(5088).Text;
   intl4 = onConfirm(1126).intl;
   items[1] = closure_3(Text2, obj3);
   return closure_4(tmp2, obj);

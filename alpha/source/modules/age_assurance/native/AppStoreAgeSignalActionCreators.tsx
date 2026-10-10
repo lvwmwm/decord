@@ -1,10 +1,10 @@
-// Module ID: 7676
-// Function ID: 7677
+// Module ID: 7693
+// Function ID: 7694
 // Name: AppStoreAgeSignalActionCreators
 // Dependencies: [5, 1085, 1295, 2]
 // Exports: registerAgeSignalAttestKey, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 7676 (AppStoreAgeSignalActionCreators)
+// Module 7693 (AppStoreAgeSignalActionCreators)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -28,7 +28,7 @@ let obj = function _requestAgeSignalChallenge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ let obj = function _requestAgeSignalChallenge() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -131,7 +131,7 @@ obj = function _submitAgeSignal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

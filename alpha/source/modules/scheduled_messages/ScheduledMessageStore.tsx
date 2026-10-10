@@ -1,9 +1,9 @@
-// Module ID: 9269
-// Function ID: 9270
+// Module ID: 9296
+// Function ID: 9297
 // Name: ScheduledMessageStore
 // Dependencies: [504, 584, 2]
 
-// Module 9269 (ScheduledMessageStore)
+// Module 9296 (ScheduledMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

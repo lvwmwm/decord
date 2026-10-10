@@ -1,9 +1,9 @@
-// Module ID: 13388
-// Function ID: 13389
+// Module ID: 13438
+// Function ID: 13439
 // Name: useHandleClaim
-// Dependencies: [5, 19, 558, 576, 7256, 5055, 12723, 4768, 1126, 2]
+// Dependencies: [5, 19, 558, 576, 7262, 5056, 12770, 4809, 1126, 2]
 
-// Module 13388 (useHandleClaim)
+// Module 13438 (useHandleClaim)
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -73,11 +73,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
         } else {
           if (1 === tmp4) {
             c3 = 0;
-            const obj6 = { key: "collectible shop claim error", content: intl.string(product(dependencyMap[8]).t.CKsXk3) };
+            const obj6 = { text: intl.string(product(dependencyMap[8]).t.CKsXk3) };
             const open = stageCollectibleChangeForEditProfile(dependencyMap[7]).open;
             const tmp9 = stageCollectibleChangeForEditProfile(dependencyMap[7]);
             intl = product(dependencyMap[8]).intl;
-            open(obj6);
+            open("collectible shop claim error", obj6);
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -97,7 +97,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp18) {
         let closure_2 = tmp18;
@@ -138,7 +138,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -163,11 +163,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
           } else {
             if (1 === tmp4) {
               c3 = 0;
-              const obj6 = { key: "collectible shop claim error", content: intl.string(tmp(closure_2[8]).t.CKsXk3) };
+              const obj6 = { text: intl.string(tmp(closure_2[8]).t.CKsXk3) };
               const open = stageCollectibleChangeForEditProfile(closure_2[7]).open;
               const tmp9 = stageCollectibleChangeForEditProfile(closure_2[7]);
               intl = tmp(closure_2[8]).intl;
-              open(obj6);
+              open("collectible shop claim error", obj6);
             } else if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -187,7 +187,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

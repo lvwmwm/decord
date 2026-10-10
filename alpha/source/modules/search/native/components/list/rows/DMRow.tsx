@@ -1,28 +1,28 @@
-// Module ID: 17271
-// Function ID: 17272
+// Module ID: 17343
+// Function ID: 17344
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5080, 5107, 4719, 1085, 21, 5091, 587, 558, 576, 4923, 5087, 10205, 504, 8750, 1200, 8606, 13717, 17257, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 5108, 4760, 1085, 21, 5092, 587, 558, 576, 4962, 5088, 10234, 504, 8766, 1200, 8622, 13769, 17329, 2]
 
-// Module 17271 (DMRow)
+// Module 17343 (DMRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import UserUtils from "UserUtils" /* 4923 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8606 */;
-import BotTagDefault from "BotTag" /* 8750 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10205 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13717 */;
+import UserUtils from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8622 */;
+import BotTagDefault from "BotTag" /* 8766 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10234 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13769 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import PresenceStore from "PresenceStore" /* 5107 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -175,7 +175,7 @@ const memoResult = react.memo(function DMRow(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -215,7 +215,7 @@ const memoResult = react.memo(function DMRow(user) {
           c3 = 0;
           closure_128_8(false);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -252,7 +252,7 @@ const memoResult = react.memo(function DMRow(user) {
     const obj2 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
     items[0] = map1(Text_Text.Text, obj2);
     let bot = user.bot;
-    const tmp = authStore3;
+    const tmp = syncedClientThemes;
     if (bot) {
       const obj4 = { style: title.tag, verified: user.isVerifiedBot(), type: isSystemUserResult ? Types.SYSTEM_DM : Types.BOT };
       const tmp8 = BotTagDefault;

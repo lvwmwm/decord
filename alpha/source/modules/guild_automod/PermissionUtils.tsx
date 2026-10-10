@@ -1,13 +1,13 @@
-// Module ID: 17467
-// Function ID: 17468
+// Module ID: 17539
+// Function ID: 17540
 // Name: guild_automod/PermissionUtils
-// Dependencies: [2086, 4709, 11403, 1085, 558, 576, 504, 2]
+// Dependencies: [2087, 4750, 11448, 1085, 558, 576, 504, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess
 
-// Module 17467 (guild_automod/PermissionUtils)
-import Constants2 from "Constants" /* 11403 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+// Module 17539 (guild_automod/PermissionUtils)
+import Constants2 from "Constants" /* 11448 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

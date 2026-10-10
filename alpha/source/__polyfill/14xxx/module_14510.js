@@ -1,26 +1,36 @@
 // Module ID: 14510
 // Function ID: 14511
-// Dependencies: [14499, 14474]
+// Dependencies: [14431, 14511]
+// Exports: getSupportedCalendars
 
 // Module 14510
-import _mod14474 from "module_14474" /* 14474 */;
-import module_14499 from "module_14499" /* 14499 */;
+const require = globalThis.__r;
+let _require;
 
-let _moduleResult = module_14499(_mod14474.document);
-if (_moduleResult) {
-  const _module1 = module_14499;
-  _moduleResult = _module1(_mod14474.document.createElement);
-}
-let c2 = _moduleResult;
 
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod14474.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
-  }
-  return element;
+export const getSupportedCalendars = function getSupportedCalendars(locale) {
+  _require = locale;
+  const calendars = require("module_14511").calendars;
+  return calendars.filter((item) => {
+    function isSupportedCalendar(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat;
+        const combined = "".concat(str, "-u-ca-");
+        const memoizedDateTimeFormat = createMemoizedDateTimeFormat(combined.concat(item));
+        if ("gregory" === item) {
+          if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
+    }
+    return isSupportedCalendar(item, locale);
+  });
 };

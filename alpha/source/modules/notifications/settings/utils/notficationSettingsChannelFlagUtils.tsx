@@ -1,21 +1,21 @@
-// Module ID: 10413
-// Function ID: 10414
+// Module ID: 10446
+// Function ID: 10447
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [32, 2064, 5973, 1085, 5974, 1095, 558, 576, 573, 7895, 10411, 6805, 10414, 6800, 2]
+// Dependencies: [32, 2065, 5966, 1085, 5967, 1095, 558, 576, 573, 7913, 10444, 6808, 10447, 6803, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting
 
-// Module 10413 (notficationSettingsChannelFlagUtils)
+// Module 10446 (notficationSettingsChannelFlagUtils)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5974 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6800 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6805 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7895 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10411 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10414 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6803 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6808 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7913 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10444 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

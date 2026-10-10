@@ -1,17 +1,17 @@
-// Module ID: 9307
-// Function ID: 9308
+// Module ID: 9334
+// Function ID: 9335
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 7307, 7309, 9308, 1106, 9309, 9310, 504, 9314, 9313, 9316, 1126, 2]
+// Dependencies: [5, 19, 7313, 7315, 9335, 1106, 9336, 9337, 504, 9341, 9340, 9343, 1126, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 9307 (useConversationsHeaderButton)
+// Module 9334 (useConversationsHeaderButton)
 import intl2 from "intl" /* 1126 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9310 */;
-import PaperIcon from "PaperIcon" /* 9314 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9337 */;
+import PaperIcon from "PaperIcon" /* 9341 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7307 */;
-import ConversationConstants from "ConversationConstants" /* 7309 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7313 */;
+import ConversationConstants from "ConversationConstants" /* 7315 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -98,7 +98,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
           ref = 0;
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp17) {
         if (0 === ref) {
           c3 = 3;

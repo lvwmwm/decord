@@ -1,9 +1,9 @@
-// Module ID: 7736
-// Function ID: 7737
+// Module ID: 7754
+// Function ID: 7755
 // Name: Queue
 // Dependencies: [3, 8, 2]
 
-// Module 7736 (Queue)
+// Module 7754 (Queue)
 import LoggerDefault from "Logger" /* 3 */;
 import DequeDefault from "Deque" /* 8 */;
 import size from "module_2" /* 2 */;

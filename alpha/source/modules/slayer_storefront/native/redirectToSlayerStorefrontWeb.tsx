@@ -1,10 +1,10 @@
-// Module ID: 10132
-// Function ID: 10133
+// Module ID: 10161
+// Function ID: 10162
 // Name: redirectToSlayerStorefrontWeb
-// Dependencies: [5, 1085, 3, 4768, 1126, 7027, 4743, 2]
+// Dependencies: [5, 1085, 3, 4809, 1126, 7033, 4784, 2]
 // Exports: default
 
-// Module 10132 (redirectToSlayerStorefrontWeb)
+// Module 10161 (redirectToSlayerStorefrontWeb)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -32,7 +32,7 @@ let obj = function _redirectToSlayerStorefrontWeb() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -70,11 +70,11 @@ let obj = function _redirectToSlayerStorefrontWeb() {
             const obj5 = { value, done: true };
             return obj5;
           } else if (null == c0) {
-            const obj7 = { key: "SHOP_ITEM_HANDOFF_ERROR", content: intl2.string(closure_130_0(closure_130_2[4]).t["rTU7/z"]) };
+            const obj7 = { text: intl2.string(closure_130_0(closure_130_2[4]).t["rTU7/z"]) };
             const open2 = closure_130_1(closure_130_2[3]).open;
             const tmp37 = closure_130_1(closure_130_2[3]);
             intl2 = closure_130_0(closure_130_2[4]).intl;
-            open2(obj7);
+            open2("SHOP_ITEM_HANDOFF_ERROR", obj7);
             c6 = 3;
             return { value: false, done: true };
           } else {
@@ -96,11 +96,11 @@ let obj = function _redirectToSlayerStorefrontWeb() {
           obj10 = { source, skuId };
           const obj2 = closure_130_0(closure_130_2[6]);
           const result = obj2.captureBillingException(closure_4, obj9);
-          const obj11 = { key: "SHOP_ITEM_HANDOFF_ERROR", content: intl.string(closure_130_0(closure_130_2[4]).t["rTU7/z"]) };
+          const obj11 = { text: intl.string(closure_130_0(closure_130_2[4]).t["rTU7/z"]) };
           const open = closure_130_1(closure_130_2[3]).open;
           const tmp20 = closure_130_1(closure_130_2[3]);
           intl = closure_130_0(closure_130_2[4]).intl;
-          open(obj11);
+          open("SHOP_ITEM_HANDOFF_ERROR", obj11);
           c6 = 3;
           return { value: false, done: true };
         } else if (arg0 === 1) {

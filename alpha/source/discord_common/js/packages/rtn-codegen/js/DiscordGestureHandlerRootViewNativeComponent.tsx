@@ -1,9 +1,9 @@
-// Module ID: 14745
-// Function ID: 14746
+// Module ID: 14800
+// Function ID: 14801
 // Name: DiscordGestureHandlerRootViewNativeComponent
 // Dependencies: [65, 2]
 
-// Module 14745 (DiscordGestureHandlerRootViewNativeComponent)
+// Module 14800 (DiscordGestureHandlerRootViewNativeComponent)
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 

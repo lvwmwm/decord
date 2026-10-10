@@ -1,14 +1,14 @@
-// Module ID: 6198
-// Function ID: 6199
+// Module ID: 6191
+// Function ID: 6192
 // Name: DragIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 6199, 4778, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 6192, 4817, 2]
 
-// Module 6198 (DragIcon)
+// Module 6191 (DragIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4778 */;
-import AssetRegistry from "AssetRegistry" /* 6199 */;
+import BaseIconImage2 from "BaseIconImage" /* 4817 */;
+import AssetRegistry from "AssetRegistry" /* 6192 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DragIcon(a
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4778).BaseIconImage;
+  const BaseIconImage = tmp(4817).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

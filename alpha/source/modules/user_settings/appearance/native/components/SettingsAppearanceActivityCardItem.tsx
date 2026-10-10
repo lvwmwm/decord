@@ -1,19 +1,19 @@
-// Module ID: 15503
-// Function ID: 15504
+// Module ID: 15565
+// Function ID: 15566
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2128, 15504, 21, 4811, 1200, 5091, 587, 558, 576, 573, 8997, 6163, 5087, 1901, 15505, 15506, 15507, 2]
+// Dependencies: [19, 17, 2129, 15566, 21, 4850, 1200, 5092, 587, 558, 576, 573, 9016, 6156, 5088, 1901, 15567, 15568, 15569, 2]
 
-// Module 15503 (SettingsAppearanceActivityCardItem)
+// Module 15565 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import ClipView from "ClipView" /* 8997 */;
+import ClipView from "ClipView" /* 9016 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15504 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15566 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4811 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

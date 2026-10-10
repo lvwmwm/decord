@@ -1,19 +1,19 @@
-// Module ID: 17568
-// Function ID: 17569
+// Module ID: 17640
+// Function ID: 17641
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 4734, 17569, 1085, 2061, 21, 5091, 587, 558, 576, 504, 4728, 6933, 6836, 5087, 1126, 2127, 5376, 2]
+// Dependencies: [19, 17, 4775, 17641, 1085, 2062, 21, 5092, 587, 558, 576, 504, 4769, 6939, 6839, 5088, 1126, 2128, 5379, 2]
 
-// Module 17568 (GooglePlayPriceChangeActionSheet)
+// Module 17640 (GooglePlayPriceChangeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4734 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17569 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17641 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPr
                                                                       markAsDismissed(ContentDismissActionType.USER_DISMISS);
                                                                     }
                                   };
-                                  const tmp40 = closure_8(markAsDismissed(5376).Button, obj2);
+                                  const tmp40 = closure_8(markAsDismissed(5379).Button, obj2);
                                   cResult[35] = markAsDismissed;
                                   cResult[36] = tmp40;
                                   tmp38 = tmp40;
@@ -223,23 +223,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPr
       }
     }
   }
-  const tmpResult8 = markAsDismissed(4728);
+  const tmpResult8 = markAsDismissed(4769);
   const tierDisplayNameByPlanId = tmpResult8.getTierDisplayNameByPlanId(str);
-  const tmpResult9 = markAsDismissed(4728);
+  const tmpResult9 = markAsDismissed(4769);
   const intervalType = tmpResult9.getInterval(str).intervalType;
-  const tmpResult10 = markAsDismissed(4728);
+  const tmpResult10 = markAsDismissed(4769);
   const intervalStringAsNoun = tmpResult10.getIntervalStringAsNoun(intervalType);
-  const tmpResult11 = markAsDismissed(6933);
+  const tmpResult11 = markAsDismissed(6939);
   const formatPriceResult = tmpResult11.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmpResult12 = markAsDismissed(6933);
+  const tmpResult12 = markAsDismissed(6939);
   const formatPriceResult1 = tmpResult12.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  BottomSheet = tmp(6836).BottomSheet;
+  BottomSheet = tmp(6839).BottomSheet;
   ({ container, textContainer } = tmp4);
   const obj7 = { variant: "heading-xl/bold", style: tmp4.header, children: intl.format(markAsDismissed(1126).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
-  const Text = tmp(5087).Text;
+  const Text = tmp(5088).Text;
   intl = tmp(1126).intl;
   const tmp26 = closure_8(Text, obj7);
-  const Text2 = tmp(5087).Text;
+  const Text2 = tmp(5088).Text;
   const body = tmp4.body;
   const intl2 = tmp(1126).intl;
   const format = intl2.format;
@@ -305,26 +305,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPr
   if (str == null) {
     str = "";
   }
-  const tmp2Result = markAsDismissed(4728);
+  const tmp2Result = markAsDismissed(4769);
   const tierDisplayNameByPlanId = tmp2Result.getTierDisplayNameByPlanId(str);
-  const tmp2Result5 = markAsDismissed(4728);
+  const tmp2Result5 = markAsDismissed(4769);
   const intervalType = tmp2Result5.getInterval(str).intervalType;
-  const tmp2Result6 = markAsDismissed(4728);
+  const tmp2Result6 = markAsDismissed(4769);
   const intervalStringAsNoun = tmp2Result6.getIntervalStringAsNoun(intervalType);
-  const tmp2Result7 = markAsDismissed(6933);
+  const tmp2Result7 = markAsDismissed(6939);
   const formatPriceResult = tmp2Result7.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmp2Result8 = markAsDismissed(6933);
+  const tmp2Result8 = markAsDismissed(6939);
   const obj3 = { children: closure_9(View, obj4) };
   obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.textContainer, children: items2 };
   const formatPriceResult1 = tmp2Result8.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  BottomSheet = tmp2(6836).BottomSheet;
+  BottomSheet = tmp2(6839).BottomSheet;
   const obj6 = { variant: "heading-xl/bold", style: tmp.header, children: intl.format(markAsDismissed(1126).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
-  const Text = tmp2(5087).Text;
+  const Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;
   items2 = [closure_8(Text, obj6), ];
   const obj7 = { variant: "text-md/medium", style: tmp.body, children: format(prop, obj8) };
-  const Text2 = tmp2(5087).Text;
+  const Text2 = tmp2(5088).Text;
   const intl2 = tmp2(1126).intl;
   format = intl2.format;
   obj8 = { subscriptionName: tierDisplayNameByPlanId, changeDate: new Date(stateFromStores.expectedChargeTime), interval: intervalStringAsNoun, newPrice: formatPriceResult1, oldPrice: formatPriceResult, hc_article_url: obj14.getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL) };
@@ -340,7 +340,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPr
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = tmp2(5376).Button;
+  const Button = tmp2(5379).Button;
   intl3 = tmp2(1126).intl;
   items3[1] = closure_8(Button, obj9);
   return closure_8(BottomSheet, obj3);

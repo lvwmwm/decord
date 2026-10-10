@@ -1,22 +1,24 @@
-// Module ID: 7011
-// Function ID: 7012
+// Module ID: 7017
+// Function ID: 7018
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1390, 1085, 7012, 6135, 5298, 6106, 1126, 7013, 7014, 7015, 1295, 4923, 4930, 584, 7017, 2]
+// Dependencies: [32, 1390, 1085, 7018, 7019, 6128, 5299, 6099, 1126, 7020, 7021, 7022, 1295, 4962, 4969, 7024, 584, 7025, 2]
 
-// Module 7011 (RelationshipActionCreators)
+// Module 7017 (RelationshipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl10 from "intl" /* 1126 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import shared from "shared" /* 4930 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6106 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6135 */;
-import RelationshipConstants from "RelationshipConstants" /* 7012 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7013 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7014 */;
-import FriendsUtils from "FriendsUtils" /* 7015 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7017 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import shared from "shared" /* 4969 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6099 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6128 */;
+import RelationshipConstants from "RelationshipConstants" /* 7018 */;
+import Constants2 from "Constants" /* 7019 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7020 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7021 */;
+import FriendsUtils from "FriendsUtils" /* 7022 */;
+import SafetyToastsUtils from "SafetyToastsUtils" /* 7024 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7025 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
@@ -110,6 +112,7 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
 }
 ({ Endpoints: metroRequire, AbortCodes: metroImportDefault, RelationshipTypes: metroImportAll } = Constants);
 const ClearFriendRequestFilters = RelationshipConstants.ClearFriendRequestFilters;
+const SafetyToastType = Constants2.SafetyToastType;
 const RelationshipErrorUXConfig = { SHOW_ALWAYS: 0, [0]: "SHOW_ALWAYS", SHOW_ONLY_IF_ACTION_NEEDED: 1, [1]: "SHOW_ONLY_IF_ACTION_NEEDED" };
 let obj2 = {
   sendRequest(discordTag) {
@@ -201,21 +204,25 @@ let obj2 = {
       announce(intl.string(require("intl").t.vGSLa2));
     });
   },
-  blockUser(userId, context) {
-    obj = { userId, context, type: metroImportAll.BLOCKED };
+  blockUser(userId, context, channelId) {
+    let closure_0 = userId;
+    let closure_1 = channelId;
+    obj = { userId, context, type: constants2.BLOCKED };
     return obj2.addRelationship(obj, function onSuccess() {
-      const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = require("intl").intl;
-      announce(intl.string(require("intl").t.mU0Vrp));
+      obj = SafetyToastsUtils;
+      announce(obj.getSafetyToastTypeContent(SafetyToastType.BLOCK_SUCCESS, userId, channelId));
     });
   },
-  unblockUser(id, arg1) {
+  unblockUser(id, arg1, channelId) {
+    let closure_0 = id;
+    let closure_1 = channelId;
     return obj2.removeRelationship(id, arg1, function onSuccess() {
-      const AccessibilityAnnouncer = require("shared").AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = require("intl").intl;
-      announce(intl.string(require("intl").t["9t1au7"]));
+      obj = SafetyToastsUtils;
+      announce(obj.getSafetyToastTypeContent(SafetyToastType.UNBLOCK_SUCCESS, id, channelId));
     });
   },
   removeRelationship(userId, context, arg2) {
@@ -232,10 +239,10 @@ let obj2 = {
       }
     });
     return nextPromise.catch(() => {
-      const AccessibilityAnnouncer = closure_0(dependencyMap[13]).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = closure_0(dependencyMap[14]).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = closure_0(dependencyMap[7]).intl;
-      announce(intl.string(closure_0(dependencyMap[7]).t.n6Jo3E));
+      const intl = closure_0(dependencyMap[8]).intl;
+      announce(intl.string(closure_0(dependencyMap[8]).t.n6Jo3E));
     });
   },
   updateRelationship(userId, c0) {
@@ -320,19 +327,19 @@ let obj2 = {
       const result = obj.showIgnoreSuccessToast(userId, channelId);
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = intl10.intl;
-      announce(intl.string(intl10.t.Us93Ca));
-      obj2 = DispatcherDefault;
-      const obj3 = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId, timestamp: Date.now() };
-      obj2.dispatch(obj3);
+      obj2 = SafetyToastsUtils;
+      announce(obj2.getSafetyToastTypeContent(SafetyToastType.IGNORE_SUCCESS, userId, channelId));
+      const obj3 = DispatcherDefault;
+      const obj4 = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId, timestamp: Date.now() };
+      obj3.dispatch(obj4);
     });
     return nextPromise.catch(() => {
-      obj = channelId(dependencyMap[15]);
+      obj = channelId(dependencyMap[17]);
       obj.showFailedToast();
-      const AccessibilityAnnouncer = userId(dependencyMap[13]).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = userId(dependencyMap[14]).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = userId(dependencyMap[7]).intl;
-      announce(intl.string(userId(dependencyMap[7]).t.n6Jo3E));
+      const intl = userId(dependencyMap[8]).intl;
+      announce(intl.string(userId(dependencyMap[8]).t.n6Jo3E));
     });
   },
   unignoreUser(id, UserProfileRemediatedNotice, channelId) {
@@ -349,16 +356,16 @@ let obj2 = {
       const result = obj.showUnignoreSuccessToast(id, channelId);
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = intl10.intl;
-      announce(intl.string(intl10.t.QlH5w6));
+      obj2 = SafetyToastsUtils;
+      announce(obj2.getSafetyToastTypeContent(SafetyToastType.UNIGNORE_SUCCESS, id, channelId));
     });
     return nextPromise.catch(() => {
-      obj = channelId(dependencyMap[15]);
+      obj = channelId(dependencyMap[17]);
       obj.showFailedToast();
-      const AccessibilityAnnouncer = id(dependencyMap[13]).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = id(dependencyMap[14]).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = id(dependencyMap[7]).intl;
-      announce(intl.string(id(dependencyMap[7]).t.n6Jo3E));
+      const intl = id(dependencyMap[8]).intl;
+      announce(intl.string(id(dependencyMap[8]).t.n6Jo3E));
     });
   }
 };

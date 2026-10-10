@@ -1,26 +1,26 @@
-// Module ID: 6835
-// Function ID: 6836
+// Module ID: 6838
+// Function ID: 6839
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 5091, 587, 558, 576, 1497, 4779, 5087, 6206, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1497, 4818, 5088, 6201, 2]
 
-// Module 6835 (BottomSheetTitleHeader)
+// Module 6838 (BottomSheetTitleHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import useToken from "useToken" /* 4779 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6206 */;
+import useToken from "useToken" /* 4818 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6201 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5087);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

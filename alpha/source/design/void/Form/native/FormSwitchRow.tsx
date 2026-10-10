@@ -1,20 +1,20 @@
-// Module ID: 8575
-// Function ID: 8576
+// Module ID: 8591
+// Function ID: 8592
 // Name: FormSwitchRow
-// Dependencies: [32, 109, 19, 17, 21, 5091, 558, 576, 1382, 6826, 8573, 6824, 6268, 6889, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5092, 558, 576, 1382, 6829, 8589, 6827, 6263, 6895, 2]
 
-// Module 8575 (FormSwitchRow)
+// Module 8591 (FormSwitchRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import RedesignCompat from "RedesignCompat" /* 6268 */;
-import FormRowDefault from "FormRow" /* 6824 */;
-import FormLabelDefault from "FormLabel" /* 6826 */;
-import Form_FormSwitchDefault from "Form/FormSwitch" /* 8573 */;
+import RedesignCompat from "RedesignCompat" /* 6263 */;
+import FormRowDefault from "FormRow" /* 6827 */;
+import FormLabelDefault from "FormLabel" /* 6829 */;
+import Form_FormSwitchDefault from "Form/FormSwitch" /* 8589 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let c9;
 let metroImportAll;
 let tmp;
 const PlatformUtils = tmp(1382);
-const TableSwitchRow2 = tmp(6889);
+const TableSwitchRow2 = tmp(6895);
 let closure_3 = ["onValueChange", "value", "disabled", "label", "subLabel", "accessibilityHint", "trailing", "numberOfLines", "switchProps"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

@@ -1,16 +1,16 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14074
+// Function ID: 14075
 // Name: BuildOverrideModal
-// Dependencies: [19, 17, 10450, 21, 5091, 587, 558, 576, 4992, 4930, 14020, 14021, 504, 11300, 4661, 6810, 6163, 1126, 5087, 5376, 5941, 2]
+// Dependencies: [19, 17, 10483, 21, 5092, 587, 558, 576, 5031, 4969, 14075, 14076, 504, 11341, 4702, 6813, 6156, 1126, 5088, 5379, 5934, 2]
 
-// Module 14019 (BuildOverrideModal)
+// Module 14074 (BuildOverrideModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11300 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11341 */;
 import react from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10450 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10483 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -66,12 +66,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
     str = overrideUrl;
   }
   const tmp4 = closure_8();
-  const tmp6 = stateFromStores(4992)();
-  const tmpResult = tmp(4930);
+  const tmp6 = stateFromStores(5031)();
+  const tmpResult = tmp(4969);
   if (tmpResult.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(14020);
+    tmp5Result = tmp5(14075);
   } else {
-    tmp5Result = tmp5(14021);
+    tmp5Result = tmp5(14076);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [BuildOverrideStore];
@@ -100,7 +100,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp13 = targetBuildOverride[tmp(undefined, 11300).DEVICE_FIELD];
+      const tmp13 = targetBuildOverride[tmp(undefined, 11341).DEVICE_FIELD];
       if (tmp13 != null) {
         id = tmp13.id;
       }
@@ -202,7 +202,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
                                                               const result = setBuildOverrideFromLink(str);
                                                             }
                               };
-                              Button2 = tmp(5376).Button;
+                              Button2 = tmp(5379).Button;
                               intl5 = tmp(1126).intl;
                               items3 = [closure_5(View, obj4), ];
                               const obj6 = {
@@ -214,7 +214,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
                                                               return arr.pop();
                                                             }
                               };
-                              const Button3 = tmp(5376).Button;
+                              const Button3 = tmp(5379).Button;
                               intl6 = tmp(1126).intl;
                               items3[1] = closure_5(Button3, obj6);
                               tmp49 = closure_7(closure_6, obj3);
@@ -227,7 +227,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
                                                               return arr.pop();
                                                             }
                               };
-                              const Button = tmp(5376).Button;
+                              const Button = tmp(5379).Button;
                               intl4 = tmp(1126).intl;
                               tmp49 = closure_5(Button, obj7);
                             }
@@ -259,22 +259,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
       }
     }
   }
-  const duration = stateFromStores(4661).duration;
-  stateFromStores(4661);
+  const duration = stateFromStores(4702).duration;
+  stateFromStores(4702);
   let expiresAt1;
-  const diff = stateFromStores(4661)().diff;
-  stateFromStores(4661)();
+  const diff = stateFromStores(4702)().diff;
+  stateFromStores(4702)();
   if (override != null) {
     expiresAt1 = override.expiresAt;
   }
   const durationResult = duration(diff(expiresAt1));
   const humanizeResult = durationResult.humanize();
-  const SafeAreaPaddingView = tmp(6810).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6813).SafeAreaPaddingView;
   const container = tmp4.container;
   const content = tmp4.content;
   if (cResult[23] !== tmp5Result) {
     const obj9 = { source: tmp5Result };
-    const tmp30 = closure_5(stateFromStores(6163), obj9);
+    const tmp30 = closure_5(stateFromStores(6156), obj9);
     cResult[23] = tmp5Result;
     cResult[24] = tmp30;
     tmp28 = tmp30;
@@ -301,7 +301,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
     }
     if (cResult[29] !== tmp4.text) {
       const obj10 = { style: text, variant: "text-md/medium", children: tmp33 };
-      const tmp37 = closure_5(tmp(5087).Text, obj10);
+      const tmp37 = closure_5(tmp(5088).Text, obj10);
       cResult[29] = tmp4.text;
       cResult[30] = tmp37;
       tmp35 = tmp37;
@@ -311,16 +311,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
     if (null != id) {
       const obj11 = { children: items5 };
       const obj12 = { style: tmp4.buildOverrideName, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: id };
-      items5 = [closure_5(tmp(5087).Text, obj12), ];
+      items5 = [closure_5(tmp(5088).Text, obj12), ];
       const obj13 = { style: tmp4.buildOverrideExpiration, variant: "text-md/medium", color: "text-default", children: intl3.format(tmp(1126).t.lOsPpu, obj14) };
-      const Text2 = tmp(5087).Text;
+      const Text2 = tmp(5088).Text;
       intl3 = tmp(1126).intl;
       obj14 = { expirationDuration: humanizeResult };
       items5[1] = closure_5(Text2, obj13);
       tmp39 = closure_7(closure_6, obj11);
     } else {
       const obj15 = { style: tmp4.buildOverrideInvalid, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(tmp(1126).t["cz+sue"]) };
-      const Text = tmp(5087).Text;
+      const Text = tmp(5088).Text;
       intl2 = tmp(1126).intl;
       tmp39 = closure_5(Text, obj15);
     }
@@ -386,12 +386,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   }
   let stateFromStores;
   const tmp = closure_8();
-  const tmp4 = stateFromStores(4992)();
-  const obj = str(4930);
+  const tmp4 = stateFromStores(5031)();
+  const obj = str(4969);
   if (obj.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(14020);
+    tmp2Result = tmp2(14075);
   } else {
-    tmp2Result = tmp2(14021);
+    tmp2Result = tmp2(14076);
   }
   const items = [BuildOverrideStore];
   const items1 = [str];
@@ -402,44 +402,44 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp9 = targetBuildOverride[str(undefined, 11300).DEVICE_FIELD];
+      const tmp9 = targetBuildOverride[str(undefined, 11341).DEVICE_FIELD];
       if (tmp9 != null) {
         id = tmp9.id;
       }
     }
   }
-  const duration = stateFromStores(4661).duration;
-  stateFromStores(4661);
+  const duration = stateFromStores(4702).duration;
+  stateFromStores(4702);
   let expiresAt;
-  const diff = stateFromStores(4661)().diff;
-  stateFromStores(4661)();
+  const diff = stateFromStores(4702)().diff;
+  stateFromStores(4702)();
   if (override != null) {
     expiresAt = override.expiresAt;
   }
   const rect = { top: true, bottom: true, style: tmp.container, children: items4 };
   const durationResult = duration(diff(expiresAt));
   const obj2 = { style: tmp.content, children: items2 };
-  const obj3 = { style: tmp.imageWrapper, children: closure_5(stateFromStores(6163), { source: tmp2Result }) };
+  const obj3 = { style: tmp.imageWrapper, children: closure_5(stateFromStores(6156), { source: tmp2Result }) };
   const humanizeResult = durationResult.humanize();
-  const SafeAreaPaddingView = tmp5(6810).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp5(6813).SafeAreaPaddingView;
   items2 = [closure_5(View, obj3), , ];
   const obj4 = { style: tmp.text, variant: "text-md/medium", children: intl.string(str(1126).t["6ILkNN"]) };
-  const Text = tmp5(5087).Text;
+  const Text = tmp5(5088).Text;
   intl = tmp5(1126).intl;
   items2[1] = closure_5(Text, obj4);
   if (null != id) {
     const obj5 = { children: items3 };
     const obj6 = { style: tmp.buildOverrideName, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: id };
-    items3 = [closure_5(str(5087).Text, obj6), ];
+    items3 = [closure_5(str(5088).Text, obj6), ];
     const obj7 = { style: tmp.buildOverrideExpiration, variant: "text-md/medium", color: "text-default", children: intl3.format(str(1126).t.lOsPpu, obj8) };
-    const Text3 = tmp5(5087).Text;
+    const Text3 = tmp5(5088).Text;
     intl3 = tmp5(1126).intl;
     obj8 = { expirationDuration: humanizeResult };
     items3[1] = closure_5(Text3, obj7);
     tmp16Result = tmp14(closure_6, obj5);
   } else {
     const obj9 = { style: tmp.buildOverrideInvalid, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(str(1126).t["cz+sue"]) };
-    const Text2 = tmp5(5087).Text;
+    const Text2 = tmp5(5088).Text;
     intl2 = tmp5(1126).intl;
     tmp16Result = tmp16(Text2, obj9);
   }
@@ -462,7 +462,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
           const result = setBuildOverrideFromLink(str);
         }
     };
-    Button2 = tmp5(5376).Button;
+    Button2 = tmp5(5379).Button;
     intl5 = tmp5(1126).intl;
     items5 = [closure_5(View, obj12), ];
     const obj14 = {
@@ -474,7 +474,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
           return arr.pop();
         }
     };
-    const Button3 = tmp5(5376).Button;
+    const Button3 = tmp5(5379).Button;
     intl6 = tmp5(1126).intl;
     items5[1] = closure_5(Button3, obj14);
     tmp14Result2 = tmp14(closure_6, obj11);
@@ -487,7 +487,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
           return arr.pop();
         }
     };
-    const Button = tmp5(5376).Button;
+    const Button = tmp5(5379).Button;
     intl4 = tmp5(1126).intl;
     tmp14Result2 = tmp16(Button, obj15);
   }

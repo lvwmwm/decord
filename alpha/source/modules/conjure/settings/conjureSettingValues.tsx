@@ -1,10 +1,10 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 17069
+// Function ID: 17070
 // Name: conjureSettingValues
 // Dependencies: [2]
 // Exports: conjureSettingBaseline, conjureSettingSubmitValue, conjureSettingValuesEqual
 
-// Module 17001 (conjureSettingValues)
+// Module 17069 (conjureSettingValues)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingValues.tsx");

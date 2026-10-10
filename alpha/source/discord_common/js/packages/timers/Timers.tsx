@@ -1,10 +1,10 @@
-// Module ID: 2059
-// Function ID: 2060
+// Module ID: 2060
+// Function ID: 2061
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 2059 (Timers)
+// Module 2060 (Timers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -42,10 +42,10 @@ class Timeout {
 }
 const prototype = Timeout.prototype;
 class DelayedCall {
-  constructor(MINUTE, update) {
+  constructor(MINUTE, resetAllPending) {
     const obj = Object.create(new.target.prototype);
     obj._delay = MINUTE;
-    obj._handler = update;
+    obj._handler = resetAllPending;
     if (typeof Timeout === "function") {
       obj._timeout = Object.create(Timeout.prototype);
       return obj;
@@ -237,7 +237,7 @@ class BatchInvocationManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c6;
@@ -317,7 +317,7 @@ class BatchInvocationManager {
             closure_132_0._flush();
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp34) {
           closure_5 = tmp34;
           if (0 === c6) {

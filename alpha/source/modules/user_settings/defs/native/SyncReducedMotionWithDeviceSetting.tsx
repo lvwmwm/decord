@@ -1,16 +1,16 @@
-// Module ID: 15628
-// Function ID: 15629
+// Module ID: 15690
+// Function ID: 15691
 // Name: SyncReducedMotionWithDeviceSetting
-// Dependencies: [5080, 7974, 558, 576, 504, 14616, 10629, 1126, 2]
+// Dependencies: [5081, 7992, 558, 576, 504, 14670, 10663, 1126, 2]
 
-// Module 15628 (SyncReducedMotionWithDeviceSetting)
+// Module 15690 (SyncReducedMotionWithDeviceSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7974 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14616 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import SettingsConstants from "SettingsConstants" /* 7992 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14670 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

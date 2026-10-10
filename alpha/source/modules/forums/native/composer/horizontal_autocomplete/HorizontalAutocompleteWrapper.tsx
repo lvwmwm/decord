@@ -1,13 +1,13 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9797
+// Function ID: 9798
 // Name: HorizontalAutocompleteWrapper
-// Dependencies: [19, 17, 1085, 21, 558, 576, 9769, 9982, 4811, 5092, 2]
+// Dependencies: [19, 17, 1085, 21, 558, 576, 9798, 10011, 4850, 5093, 2]
 
-// Module 9768 (HorizontalAutocompleteWrapper)
+// Module 9797 (HorizontalAutocompleteWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import timing from "timing" /* 5092 */;
+import timing from "timing" /* 5093 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

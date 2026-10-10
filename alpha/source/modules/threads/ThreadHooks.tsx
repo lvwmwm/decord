@@ -1,26 +1,26 @@
-// Module ID: 6965
-// Function ID: 6966
+// Module ID: 6971
+// Function ID: 6972
 // Name: ThreadHooks
-// Dependencies: [32, 4976, 2068, 502, 2064, 4709, 6041, 1085, 558, 576, 1097, 504, 6086, 11, 12, 6966, 6967, 5905, 5931, 2]
+// Dependencies: [32, 5015, 2069, 502, 2065, 4750, 6034, 1085, 558, 576, 1097, 504, 6079, 11, 12, 6972, 6973, 5908, 5924, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator
 
-// Module 6965 (ThreadHooks)
+// Module 6971 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react from "react" /* 576 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 5905 */;
-import AgeGateUtils from "AgeGateUtils" /* 5931 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6086 */;
-import useIsRemoteDefault from "useIsRemote" /* 6966 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6967 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 5908 */;
+import AgeGateUtils from "AgeGateUtils" /* 5924 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6079 */;
+import useIsRemoteDefault from "useIsRemote" /* 6972 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6973 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import createExperiment from "createExperiment" /* 4976 */;
+import createExperiment from "createExperiment" /* 5015 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6041 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6034 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

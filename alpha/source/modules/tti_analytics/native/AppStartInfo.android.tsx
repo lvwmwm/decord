@@ -1,11 +1,11 @@
-// Module ID: 7354
-// Function ID: 7355
+// Module ID: 7360
+// Function ID: 7361
 // Name: AppStartInfo
-// Dependencies: [32, 5, 7355, 4944, 2]
+// Dependencies: [32, 5, 7361, 4983, 2]
 
-// Module 7354 (AppStartInfo)
-import react_nativeDefault from "react-native" /* 4944 */;
-import react_nativeDefault2 from "react-native" /* 7355 */;
+// Module 7360 (AppStartInfo)
+import react_nativeDefault from "react-native" /* 4983 */;
+import react_nativeDefault2 from "react-native" /* 7361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

@@ -1,19 +1,19 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 16027
+// Function ID: 16028
 // Name: useCheckpointPreloader
-// Dependencies: [32, 19, 15915, 4874, 4876, 15930, 15951, 15939, 15923, 15921, 558, 576, 15966, 1295, 2]
+// Dependencies: [32, 19, 15977, 4913, 4915, 15992, 16013, 16001, 15985, 15983, 558, 576, 16028, 1295, 2]
 
-// Module 15965 (useCheckpointPreloader)
+// Module 16027 (useCheckpointPreloader)
 import react2 from "react" /* 19 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import _modDef4874 from "module_4874" /* 4874 */;
-import _modDef4876 from "module_4876" /* 4876 */;
-import CheckpointStore from "CheckpointStore" /* 15915 */;
-import _modDef15921 from "module_15921" /* 15921 */;
-import _modDef15923 from "module_15923" /* 15923 */;
-import _modDef15930 from "module_15930" /* 15930 */;
-import _modDef15939 from "module_15939" /* 15939 */;
-import _modDef15951 from "module_15951" /* 15951 */;
+import _modDef4913 from "module_4913" /* 4913 */;
+import _modDef4915 from "module_4915" /* 4915 */;
+import CheckpointStore from "CheckpointStore" /* 15977 */;
+import _modDef15983 from "module_15983" /* 15983 */;
+import _modDef15985 from "module_15985" /* 15985 */;
+import _modDef15992 from "module_15992" /* 15992 */;
+import _modDef16001 from "module_16001" /* 16001 */;
+import _modDef16013 from "module_16013" /* 16013 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let _require, dependencyMap;
 
 const useEffect = react2.useEffect;
 const CheckpointFetchStates = CheckpointStore.CheckpointFetchStates;
-let items = [_modDef4874, _modDef4876, _modDef15930, _modDef15951, _modDef15939, _modDef15923, _modDef15921];
+let items = [_modDef4913, _modDef4915, _modDef15992, _modDef16013, _modDef16001, _modDef15985, _modDef15983];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointPreloader() {
   let closure_0;
   let closure_1;

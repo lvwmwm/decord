@@ -1,18 +1,18 @@
-// Module ID: 12528
-// Function ID: 12529
+// Module ID: 12575
+// Function ID: 12576
 // Name: InAppNotificationUtils
-// Dependencies: [19, 12529, 1085, 12, 1279, 1383, 1102, 558, 576, 6995, 5106, 2]
+// Dependencies: [19, 12576, 1085, 12, 1279, 1383, 1102, 558, 576, 7001, 5107, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed
 
-// Module 12528 (InAppNotificationUtils)
+// Module 12575 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import v1 from "v1" /* 1279 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6995 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12529 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7001 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12576 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f112418 = (type) => type.type === constants.GIFV;
+const f112723 = (type) => type.type === constants.GIFV;
 const REACTION_MILESTONE_COUNTS = InAppNotificationConstants.REACTION_MILESTONE_COUNTS;
 ({ AnalyticEvents: hasOwnProperty, ChannelTypes: metroRequire, InAppNotificationTypes: metroImportDefault, MessageEmbedTypes: metroImportAll, MessageFlags: c9 } = Constants);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPreviewableMedia(hasFlag) {
@@ -41,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
       let everyResult = hasFlag.embeds.length > 0;
       if (everyResult) {
         let embeds = hasFlag.embeds;
-        everyResult = embeds.every(f112418);
+        everyResult = embeds.every(f112723);
       }
       hasFlagResult = everyResult;
     }
@@ -59,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f112418);
+              everyResult = embeds.every(f112723);
             }
             hasFlagResult = everyResult;
           }
@@ -90,7 +90,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
       let everyResult = tmp.embeds.length > 0;
       if (everyResult) {
         let embeds = tmp.embeds;
-        everyResult = embeds.every(f112418);
+        everyResult = embeds.every(f112723);
       }
       hasFlagResult = everyResult;
     }
@@ -108,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPrevie
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f112418);
+              everyResult = embeds.every(f112723);
             }
             hasFlagResult = everyResult;
           }

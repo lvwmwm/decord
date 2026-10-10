@@ -1,16 +1,16 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8101
+// Function ID: 8102
 // Name: VoiceUserAffinityExperiment
 // Dependencies: [1453, 558, 576, 2]
 // Exports: getVoiceUserAffinitySortType
 
-// Module 8083 (VoiceUserAffinityExperiment)
+// Module 8101 (VoiceUserAffinityExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { 0: { enabled: false, sortType: "Array" }, 1: { enabled: true, sortType: "vc_probability" }, 2: { enabled: true, sortType: "communication_probability" } } };
+let obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { 0: { enabled: false, sortType: "a" }, 1: { enabled: true, sortType: "vc_probability" }, 2: { enabled: true, sortType: "communication_probability" } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceUserAffinitySortType(location) {
   let tmp2;

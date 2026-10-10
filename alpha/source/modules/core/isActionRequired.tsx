@@ -1,12 +1,12 @@
-// Module ID: 2060
-// Function ID: 2061
+// Module ID: 2061
+// Function ID: 2062
 // Name: isActionRequired
-// Dependencies: [2057, 2058, 2]
+// Dependencies: [2058, 2059, 2]
 // Exports: default
 
-// Module 2060 (isActionRequired)
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2057 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2058 */;
+// Module 2061 (isActionRequired)
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2058 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2059 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/core/isActionRequired.tsx");

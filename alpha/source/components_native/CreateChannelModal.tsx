@@ -1,52 +1,52 @@
-// Module ID: 8562
-// Function ID: 8563
+// Module ID: 8578
+// Function ID: 8579
 // Name: CreateChannelModal
-// Dependencies: [32, 19, 17, 2068, 2082, 2064, 2086, 4709, 4719, 1390, 1085, 7489, 21, 5091, 587, 8191, 8199, 8212, 8208, 8205, 8198, 8217, 8189, 8197, 8209, 8207, 8204, 8196, 8216, 1126, 5087, 2127, 558, 576, 4793, 6270, 8563, 1200, 6186, 6663, 504, 38, 5418, 5890, 8582, 8583, 1503, 8584, 5106, 6205, 8586, 7082, 8587, 12, 8590, 6290, 6269, 8591, 8599, 6889, 8206, 5374, 5411, 8603, 1273, 8617, 6176, 6686, 2]
+// Dependencies: [32, 19, 17, 2069, 2083, 2065, 2087, 4750, 4760, 1390, 1085, 7489, 21, 5092, 587, 8207, 8215, 8228, 8224, 8221, 8214, 8233, 8205, 8213, 8225, 8223, 8220, 8212, 8232, 1126, 5088, 2128, 558, 576, 4832, 6265, 8579, 1200, 6179, 6664, 504, 38, 5421, 5893, 8598, 8599, 1503, 8600, 8602, 5107, 6200, 8605, 7088, 12, 8606, 6285, 6264, 8607, 8615, 6895, 8222, 7567, 5377, 5414, 8619, 1273, 8633, 6169, 6687, 2]
 
-// Module 8562 (CreateChannelModal)
+// Module 8578 (CreateChannelModal)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl16 from "intl" /* 1126 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import ChannelRecord from "ChannelRecord" /* 2068 */;
-import GuildRecord from "GuildRecord" /* 2082 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2127 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import ChannelUtils from "ChannelUtils" /* 5411 */;
-import useInitialValueDefault from "useInitialValue" /* 6176 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import HeaderActionButton from "HeaderActionButton" /* 7082 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ChannelUtils from "ChannelUtils" /* 5414 */;
+import useInitialValueDefault from "useInitialValue" /* 6169 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
+import HeaderActionButton from "HeaderActionButton" /* 7088 */;
 import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7489 */;
-import TextLockIcon from "TextLockIcon" /* 8189 */;
-import TextIcon from "TextIcon" /* 8191 */;
-import ImageLockIcon from "ImageLockIcon" /* 8196 */;
-import ForumLockIcon from "ForumLockIcon" /* 8197 */;
-import ImageIcon from "ImageIcon" /* 8198 */;
-import ForumIcon from "ForumIcon" /* 8199 */;
-import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 8204 */;
-import AnnouncementsIcon from "AnnouncementsIcon" /* 8205 */;
-import StageLockIcon from "StageLockIcon" /* 8207 */;
-import StageIcon from "StageIcon" /* 8208 */;
-import VoiceLockIcon from "VoiceLockIcon" /* 8209 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8212 */;
-import AppsLockIcon from "AppsLockIcon" /* 8216 */;
-import AppsIcon from "AppsIcon" /* 8217 */;
-import useCreateChannelSubmitDefault from "useCreateChannelSubmit" /* 8584 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8586 */;
-import sanitizeChannelNameDefault from "sanitizeChannelName" /* 8590 */;
-import AddModeratorsDefault from "AddModerators" /* 8617 */;
+import TextLockIcon from "TextLockIcon" /* 8205 */;
+import TextIcon from "TextIcon" /* 8207 */;
+import ImageLockIcon from "ImageLockIcon" /* 8212 */;
+import ForumLockIcon from "ForumLockIcon" /* 8213 */;
+import ImageIcon from "ImageIcon" /* 8214 */;
+import ForumIcon from "ForumIcon" /* 8215 */;
+import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 8220 */;
+import AnnouncementsIcon from "AnnouncementsIcon" /* 8221 */;
+import StageLockIcon from "StageLockIcon" /* 8223 */;
+import StageIcon from "StageIcon" /* 8224 */;
+import VoiceLockIcon from "VoiceLockIcon" /* 8225 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8228 */;
+import AppsLockIcon from "AppsLockIcon" /* 8232 */;
+import AppsIcon from "AppsIcon" /* 8233 */;
+import useCreateChannelSubmitDefault from "useCreateChannelSubmit" /* 8600 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8605 */;
+import sanitizeChannelNameDefault from "sanitizeChannelName" /* 8606 */;
+import AddModeratorsDefault from "AddModerators" /* 8633 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore_mod from "PermissionStore" /* 4709 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
+import ChannelStore_mod from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore_mod from "PermissionStore" /* 4750 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,10 +65,10 @@ let metroRequire;
 let obj2;
 let tmp;
 const native = tmp(1200);
-const react_native = tmp(4793);
-const TableRow2 = tmp(6186);
-const FormRadio = tmp(6270);
-const Form = tmp(8563);
+const react_native = tmp(4832);
+const TableRow2 = tmp(6179);
+const FormRadio = tmp(6265);
+const Form = tmp(8579);
 function getChannelTypeLabel(channelType) {
   let format;
   let intl;
@@ -121,7 +121,7 @@ function getChannelTypeLabel(channelType) {
     intl5 = intl16.intl;
     return obj8;
   } else if (ChannelTypes.GUILD_MEDIA === channelType) {
-    const obj = { label: intl.string(intl16.t["6x6fVg"]), description: authStore7(closure_21, obj9) };
+    const obj = { label: intl.string(intl16.t["6x6fVg"]), description: authStore6(closure_21, obj9) };
     intl = intl16.intl;
     obj9 = { children: items };
     const obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(intl16.t.JyCrwS) };
@@ -221,6 +221,7 @@ let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native2);
 const isGuildVocalChannelType = ChannelRecord.isGuildVocalChannelType;
 let isGuildOwner = GuildRecord.isGuildOwner;
+let ChannelStore = ChannelStore_mod;
 let PermissionStore = PermissionStore_mod;
 const ChannelTypes = Constants.ChannelTypes;
 ({ GuildFeatures: closure_15, Permissions: closure_16, AnalyticEvents: closure_17, HelpdeskArticles: closure_18 } = Constants);
@@ -383,7 +384,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
           const obj7 = { size: native.BetaSizes.SMALL };
           const BetaTag = native.BetaTag;
           items[1] = closure_20(BetaTag, obj7);
-          tmp22 = authStore7(metroRequire, obj5);
+          tmp22 = authStore6(metroRequire, obj5);
         }
         cResult[15] = isBeta;
         cResult[16] = label;
@@ -449,17 +450,17 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     subLabel: description
   };
   obj3 = { style: tmp.flexRow, children: closure_20(IconComponent, {}) };
-  const TableRow = tmp2(6186).TableRow;
+  const TableRow = tmp2(6179).TableRow;
   tmp8 = label;
   const tmp7 = metroRequire;
   if (true === isBeta) {
     const obj4 = { style: tmp.horizontalContainer, children: items };
     const obj5 = { text: label };
-    items = [closure_20(tmp2(8563).FormLabel, obj5), ];
+    items = [closure_20(tmp2(8579).FormLabel, obj5), ];
     const obj6 = { size: native.BetaSizes.SMALL };
     const BetaTag = tmp2(1200).BetaTag;
     items[1] = closure_20(BetaTag, obj6);
-    tmp8 = authStore7(tmp7, obj4);
+    tmp8 = authStore6(tmp7, obj4);
   }
   return closure_20(TableRow, obj2);
 });
@@ -469,24 +470,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
   let cloneChannelId;
   let closure_11;
   let closure_15;
+  let closure_9;
   let createMode;
   let first;
   let first2;
   let first4;
   let first5;
   let tmp10;
-  let tmp11;
   let tmp12;
-  let tmp17;
-  let tmp20;
-  let tmp33;
-  let tmp44;
-  let tmp45;
+  let tmp29;
+  let tmp41;
+  let tmp42;
   let tmp8;
   let tmp = categoryId;
   let tmp2 = createMode;
   let obj = categoryId(createMode[33]);
-  const cResult = obj.c(81);
+  const cResult = obj.c(83);
   categoryId = categoryId.categoryId;
   ({ channelType, cloneChannelId } = categoryId);
   createMode = categoryId.createMode;
@@ -504,68 +503,70 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    class T {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
+    const fn = function _() {
+      return GuildStore.getGuild(guildId);
+    };
     cResult[1] = guildId;
-    cResult[2] = T;
-    tmp8 = T;
+    cResult[2] = fn;
+    tmp8 = fn;
   } else {
-    class T {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
+    tmp8 = cResult[2];
   }
   let tmpResult = tmp(tmp2[40]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-    const items1 = [closure_9];
+    let tmp11 = ChannelStore;
+    const items1 = [ChannelStore];
     cResult[3] = items1;
     tmp10 = items1;
   } else {
-    class T {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
+    tmp10 = cResult[3];
   }
   if (cResult[4] !== cloneChannelId) {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
     cResult[4] = cloneChannelId;
-    cResult[5] = tmp12;
-    tmp11 = tmp12;
+    cResult[5] = H;
+    tmp12 = H;
   } else {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
   }
   const tmpResult5 = tmp(tmp2[40]);
-  const stateFromStores1 = tmpResult5.useStateFromStores(tmp10, tmp11);
+  const stateFromStores1 = tmpResult5.useStateFromStores(tmp10, tmp12);
   if (cResult[6] !== stateFromStores) {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
     let hasItem = null != stateFromStores;
     if (hasItem) {
-      class T {
+      class H {
         constructor() {
-          return GuildStore.getGuild(guildId);
+          let channel = null;
+          if (null != cloneChannelId) {
+            channel = ChannelStore.getChannel(tmp);
+          }
+          return channel;
         }
       }
       hasItem = obj4.has(constants.COMMUNITY);
@@ -573,152 +574,181 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
     cResult[6] = stateFromStores;
     cResult[7] = hasItem;
   } else {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
   }
-  if (cResult[8] !== stateFromStores) {
-    class T {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-    let tmp18 = first5;
-    const canResult = PermissionStore.can(first5.VIEW_CHANNEL, stateFromStores);
-    cResult[8] = stateFromStores;
-    cResult[9] = canResult;
-    tmp17 = canResult;
-  } else {
-    class T {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-  }
-  let closure_6 = tmp17;
-  if (cResult[10] !== stateFromStores) {
-    class T {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-    let canResult1 = PermissionStore.can(first5.CONNECT, stateFromStores);
-    cResult[10] = stateFromStores;
-    cResult[11] = canResult1;
-    tmp20 = canResult1;
-  } else {
-    class T {
-      constructor() {
-        return GuildStore.getGuild(guildId);
-      }
-    }
-  }
-  canResult1 = tmp20;
+  const canResult = PermissionStore.can(first5.VIEW_CHANNEL, stateFromStores);
+  let closure_6 = canResult;
+  const canResult1 = PermissionStore.can(first5.CONNECT, stateFromStores);
   const currentUser = navigation.getCurrentUser();
-  tmp5(tmp2[41])(null != currentUser, "CreateChannel: user cannot be undefined");
-  const tmp25 = tmp5(tmp2[42])(stateFromStores1);
+  const tmp20 = tmp5(tmp2[41])(null != currentUser, "CreateChannel: user cannot be undefined");
+  const tmp21 = tmp5(tmp2[42])(stateFromStores1);
   const useState = onChannelCreated.useState;
-  if (tmp25 == null) {
-    class T {
+  if (tmp21 == null) {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
   }
-  let tmp26 = guildId;
-  const tmp27 = guildId(useState(tmp25), 2);
-  const first1 = tmp27[0];
-  closure_9 = tmp27[1];
+  const tmp23 = guildId(useState(tmp21), 2);
+  const first1 = tmp23[0];
+  ChannelStore = tmp23[1];
   const useState2 = obj5.useState;
   if (null == channelType) {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
     channelType = first4.GUILD_TEXT;
   }
-  const tmp26Result = tmp26(useState2(channelType), 2);
-  first2 = tmp26Result[0];
-  PermissionStore = tmp26Result[1];
+  const tmp22Result = guildId(useState2(channelType), 2);
+  first2 = tmp22Result[0];
+  PermissionStore = tmp22Result[1];
   const tmpResult6 = tmp(tmp2[43]);
   const canCreateStageChannelByGuild = tmpResult6.useCanCreateStageChannelByGuild(guildId);
   const tmpResult7 = tmp(tmp2[44]);
   const guildEligibleForMediaChannels = tmpResult7.useGuildEligibleForMediaChannels(stateFromStores);
-  if (cResult[12] !== guildId) {
-    class T {
+  if (cResult[8] !== guildId) {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
-    tmp34[0] = guildId;
-    cResult[12] = guildId;
-    cResult[13] = tmp34;
-    tmp33 = tmp34;
+    tmp30[0] = guildId;
+    cResult[8] = guildId;
+    cResult[9] = tmp30;
+    tmp29 = tmp30;
   } else {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
   }
   const tmp5Result = tmp5(tmp2[45]);
-  const enabled = tmp5Result.useConfig(tmp33).enabled;
+  const enabled = tmp5Result.useConfig(tmp29).enabled;
   const useState3 = obj5.useState;
   if (stateFromStores1 != null) {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
   }
   if (undefined == null) {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
   }
-  const first3 = tmp26(useState3(undefined), 2)[0];
-  tmp26(useState3(undefined), 2);
+  const first3 = tmp22(useState3(undefined), 2)[0];
+  guildId(useState3(undefined), 2);
   const tmpResult8 = tmp(tmp2[46]);
   navigation = tmpResult8.useNavigation();
-  const tmp26Result5 = tmp26(tmp5(tmp2[47])(onChannelCreated), 3);
-  first4 = tmp26Result5[0];
-  constants = tmp41;
-  const tmp26Result6 = tmp26(onChannelCreated.useState(false), 2);
-  first5 = tmp26Result6[0];
-  let closure_17 = tmp26Result6[1];
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
+  const tmp22Result5 = guildId(tmp5(tmp2[47])(onChannelCreated), 3);
+  first4 = tmp22Result5[0];
+  constants = tmp37;
+  const tmp22Result6 = guildId(onChannelCreated.useState(false), 2);
+  first5 = tmp22Result6[0];
+  let closure_17 = tmp22Result6[1];
+  if (first5) {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
+      }
+    }
+    let privateChannelHintText = null;
+    if (!obj10.canCreatePrivateChannel(first2, canResult, canResult1)) {
+      class H {
+        constructor() {
+          let channel = null;
+          if (null != cloneChannelId) {
+            channel = ChannelStore.getChannel(tmp);
+          }
+          return channel;
+        }
+      }
+      privateChannelHintText = obj11.getPrivateChannelHintText(first2);
+    }
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class H {
+      constructor() {
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
     const items2 = [];
-    cResult[14] = items2;
-    cResult[15] = tmp46;
-    tmp45 = tmp46;
-    tmp44 = items2;
+    cResult[10] = tmp43;
+    cResult[11] = items2;
+    tmp42 = items2;
+    tmp41 = tmp43;
   } else {
-    class T {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
-    tmp45 = cResult[15];
+    tmp42 = cResult[11];
   }
-  const effect = obj5.useEffect(tmp45, tmp44);
-  if (cResult[16] === first3) {
-    class T {
+  const effect = obj5.useEffect(tmp41, tmp42);
+  if (cResult[12] === first3) {
+    class H {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        let channel = null;
+        if (null != cloneChannelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
     }
   }
-  function de() {
+  function ce() {
     let obj2;
     let obj = {
       headerLeft: obj2.getHeaderCloseButton(CreateChannelModalActionCreatorsDefault.close),
@@ -732,7 +762,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
         const tmp2 = categoryId;
         const tmp3 = createMode;
         if (constants) {
-          tmpResult = tmp(tmp2(tmp3[49]).HeaderSubmittingIndicator, {});
+          tmpResult = tmp(tmp2(tmp3[50]).HeaderSubmittingIndicator, {});
         } else {
           let tmp5 = first5;
           if (!tmp5) {
@@ -782,7 +812,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
             tmp18 = "" === first1;
             if (!tmp18) {
               if (tmp5) {
-                let obj2 = categoryId(createMode[52]);
+                let obj2 = categoryId(createMode[48]);
                 tmp5 = !obj2.canCreatePrivateChannel(first2, closure_1_6, canResult1);
               }
               tmp18 = tmp5;
@@ -804,26 +834,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
     obj2 = NavigatorHeader;
     setOptions(obj);
   }
-  const items3 = [navigation, first2, stateFromStores1, tmp17, tmp20, first5, first1, first4, guildId, tmp26Result5[2], categoryId, createMode, onChannelCreated, first3];
-  cResult[16] = first3;
-  cResult[17] = tmp20;
-  cResult[18] = tmp17;
-  cResult[19] = categoryId;
-  cResult[20] = first2;
-  cResult[21] = stateFromStores1;
-  cResult[22] = tmp26Result5[2];
-  cResult[23] = createMode;
-  cResult[24] = guildId;
-  cResult[25] = first5;
-  cResult[26] = first1;
-  cResult[27] = navigation;
-  cResult[28] = onChannelCreated;
-  cResult[29] = first4;
-  cResult[30] = de;
-  cResult[31] = items3;
+  const items3 = [navigation, first2, stateFromStores1, canResult, canResult1, first5, first1, first4, guildId, tmp22Result5[2], categoryId, createMode, onChannelCreated, first3];
+  cResult[12] = first3;
+  cResult[13] = canResult1;
+  cResult[14] = canResult;
+  cResult[15] = categoryId;
+  cResult[16] = first2;
+  cResult[17] = stateFromStores1;
+  cResult[18] = tmp22Result5[2];
+  cResult[19] = createMode;
+  cResult[20] = guildId;
+  cResult[21] = first5;
+  cResult[22] = first1;
+  cResult[23] = navigation;
+  cResult[24] = onChannelCreated;
+  cResult[25] = first4;
+  cResult[26] = items3;
+  cResult[27] = ce;
 }) : (function CreateChannel(categoryId) {
-  let HelpMessage;
-  let HelpMessage2;
   let Stack;
   let TableSwitchRow;
   let channelType;
@@ -842,7 +870,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
   let stringResult1;
   let stringResult2;
   let tmp4Result10;
-  let tmp4Result8;
   categoryId = categoryId.categoryId;
   ({ channelType, cloneChannelId: importDefault, createMode } = categoryId);
   const guildId = categoryId.guildId;
@@ -929,6 +956,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
   const tmp14Result6 = tmp14(obj3.useState(false), 2);
   first4 = tmp14Result6[0];
   closure_17 = tmp14Result6[1];
+  let privateChannelHintText = null;
+  if (first4) {
+    privateChannelHintText = null;
+    const tmp4Result8 = tmp4(tmp3[48]);
+    if (!tmp4Result8.canCreatePrivateChannel(first1, canResult, canResult1)) {
+      const tmp4Result9 = tmp4(tmp3[48]);
+      privateChannelHintText = tmp4Result9.getPrivateChannelHintText(first1);
+    }
+  }
   const effect = obj3.useEffect(() => {
     const obj = require("AppAnalyticsUtils");
     obj.trackWithMetadata(closure_17.OPEN_MODAL, { type: "Create Channel" });
@@ -948,7 +984,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
         const tmp2 = categoryId;
         const tmp3 = createMode;
         if (constants) {
-          tmpResult = tmp(tmp2(tmp3[49]).HeaderSubmittingIndicator, {});
+          tmpResult = tmp(tmp2(tmp3[50]).HeaderSubmittingIndicator, {});
         } else {
           let tmp5 = first4;
           if (!tmp5) {
@@ -998,7 +1034,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
             tmp18 = "" === closure_1_8;
             if (!tmp18) {
               if (tmp5) {
-                let obj2 = categoryId(createMode[52]);
+                let obj2 = categoryId(createMode[48]);
                 tmp5 = !obj2.canCreatePrivateChannel(first1, closure_1_6, canResult1);
               }
               tmp18 = tmp5;
@@ -1023,9 +1059,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
   const obj4 = { keyboardShouldPersistTaps: "always", contentContainerStyle: { padding: tmp2(tmp3[14]).space.PX_16, paddingBottom: tmp2(tmp3[14]).space.PX_16 + insets.bottom }, children: closure_22(Stack, obj6) };
   obj6 = { spacing: tmp2(tmp3[14]).space.PX_16, children: items3 };
   ({ padding: tmp2(tmp3[14]).space.PX_16, paddingBottom: tmp2(tmp3[14]).space.PX_16 + insets.bottom });
-  Stack = tmp4(tmp3[61]).Stack;
+  Stack = tmp4(tmp3[62]).Stack;
   const TextInput = tmp4(tmp3[55]).TextInput;
-  const tmp36 = stateFromStores1;
+  const tmp37 = stateFromStores1;
   if (first1 === first3.GUILD_CATEGORY) {
     let intl2 = tmp4(tmp3[29]).intl;
     stringResult = intl2.string(tmp4(tmp3[29]).t.OCAkGP);
@@ -1058,9 +1094,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
   } else if (null != stateFromStores1) {
     const intl3 = tmp4(tmp3[29]).intl;
     const format = intl3.format;
-    const obj8 = { name: tmp4Result8.computeChannelName(stateFromStores1, tmp11, first2, true) };
+    const obj8 = { name: tmp4Result10.computeChannelName(stateFromStores1, tmp11, first2, true) };
     const s2ZzZZ = tmp4(tmp3[29]).t.s2ZzZZ;
-    tmp4Result8 = tmp4(tmp3[42]);
+    tmp4Result10 = tmp4(tmp3[42]);
     stringResult1 = format(s2ZzZZ, obj8);
   }
   if (first1 === first3.GUILD_CATEGORY) {
@@ -1074,9 +1110,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
     stringResult2 = intl5.string(tmp4(tmp3[29]).t["bw/b8E"]);
   }
   items3 = [closure_20(TextInput, obj7), , ];
-  let tmp37Result4 = null;
+  let tmp38Result4 = null;
   if (null == stateFromStores1) {
-    let tmp37Result = null;
+    let tmp38Result = null;
     if (first1 !== first3.GUILD_CATEGORY) {
       function handleTypeChange(arg0) {
         closure_11(arg0);
@@ -1091,50 +1127,50 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
       items4[1] = closure_20(closure_27, obj11);
       const obj12 = { channelType: first3.GUILD_FORUM, selected: first1 === first3.GUILD_FORUM, isPrivate: first4, onPress: handleTypeChange };
       items4[2] = closure_20(closure_27, obj12);
-      let tmp35Result = null;
+      let tmp36Result = null;
       if (guildEligibleForMediaChannels) {
         const obj13 = { channelType: first3.GUILD_MEDIA, selected: first1 === first3.GUILD_MEDIA, isPrivate: first4, isBeta: true, onPress: handleTypeChange };
-        tmp35Result = tmp35(tmp64, obj13);
+        tmp36Result = tmp36(tmp65, obj13);
       }
-      items4[3] = tmp35Result;
-      let tmp35Result7 = null;
+      items4[3] = tmp36Result;
+      let tmp36Result7 = null;
       if (hasItem) {
-        tmp35Result7 = null;
+        tmp36Result7 = null;
         if (createMode !== tmp4(tmp3[47]).CreateChannelMode.PREMIUM_CHANNEL) {
           const obj14 = { channelType: first3.GUILD_ANNOUNCEMENT, selected: first1 === first3.GUILD_ANNOUNCEMENT, isPrivate: first4, onPress: handleTypeChange };
-          tmp35Result7 = tmp35(tmp64, obj14);
+          tmp36Result7 = tmp36(tmp65, obj14);
         }
       }
-      items4[4] = tmp35Result7;
-      let tmp35Result8 = null;
+      items4[4] = tmp36Result7;
+      let tmp36Result8 = null;
       if (canCreateStageChannelByGuild) {
-        tmp35Result8 = null;
+        tmp36Result8 = null;
         if (!first4) {
           const obj15 = { channelType: first3.GUILD_STAGE_VOICE, selected: first1 === first3.GUILD_STAGE_VOICE, isPrivate: first4, onPress: handleTypeChange };
-          tmp35Result8 = tmp35(tmp64, obj15);
+          tmp36Result8 = tmp36(tmp65, obj15);
         }
       }
-      items4[5] = tmp35Result8;
-      let tmp35Result9 = null;
+      items4[5] = tmp36Result8;
+      let tmp36Result9 = null;
       if (enabled) {
         const obj16 = { channelType: first3.GUILD_APP, selected: first1 === first3.GUILD_APP, isPrivate: first4, onPress: handleTypeChange };
-        tmp35Result9 = tmp35(tmp64, obj16);
+        tmp36Result9 = tmp36(tmp65, obj16);
       }
-      items4[6] = tmp35Result9;
-      tmp37Result = tmp37(TableRowGroup, obj9);
+      items4[6] = tmp36Result9;
+      tmp38Result = tmp38(TableRowGroup, obj9);
     }
-    const items5 = [tmp37Result, , , ];
-    let tmp35Result10 = null;
+    const items5 = [tmp38Result, , , ];
+    let tmp36Result10 = null;
     if (first1 === first3.GUILD_APP) {
       const obj17 = { guildId, channelId: categoryId, selectedApplicationId: first2, onChange: tmp25 };
-      tmp35Result10 = tmp35(tmp2(tmp3[57]), obj17);
+      tmp36Result10 = tmp36(tmp2(tmp3[57]), obj17);
     }
-    items5[1] = tmp35Result10;
+    items5[1] = tmp36Result10;
     const obj18 = { guildId, channelType: first1 };
     items5[2] = closure_20(tmp2(tmp3[58]), obj18);
-    let tmp37Result3 = null;
+    let tmp38Result3 = null;
     if (first1 !== first3.GUILD_STAGE_VOICE) {
-      tmp37Result3 = null;
+      tmp38Result3 = null;
       if (createMode !== tmp4(tmp3[47]).CreateChannelMode.PREMIUM_CHANNEL) {
         let stringResult3;
         let stringResult4;
@@ -1143,11 +1179,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
           const intl9 = tmp4(tmp3[29]).intl;
           stringResult3 = intl9.string(tmp4(tmp3[29]).t.RQUk61);
         } else {
-          const tmp57 = canResult1(first1);
+          const tmp58 = canResult1(first1);
           const intl8 = tmp4(tmp3[29]).intl;
           const string = intl8.string;
           const t = tmp4(tmp3[29]).t;
-          if (tmp57) {
+          if (tmp58) {
             stringResult3 = string(t.cLjvKg);
           } else {
             stringResult3 = string(t.hfbjIH);
@@ -1171,42 +1207,34 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
                 }
         };
         const items6 = [closure_20(TableRowGroup2, obj19), ];
-        let tmp35Result11 = null;
-        if (first4) {
-          tmp35Result11 = null;
-          const tmp4Result9 = tmp4(tmp3[52]);
-          if (!tmp4Result9.canCreatePrivateChannel(first1, canResult, canResult1)) {
-            const obj21 = { style: tmp.errorMessage, children: closure_20(HelpMessage, obj22) };
-            obj22 = { messageType: tmp4(tmp3[37]).HelpMessageTypes.ERROR, children: tmp4Result10.getPrivateChannelHintText(first1) };
-            HelpMessage = tmp4(tmp3[37]).HelpMessage;
-            tmp4Result10 = tmp4(tmp3[52]);
-            tmp35Result11 = tmp35(c6, obj21);
-          }
+        let tmp36Result11 = null;
+        if (null != privateChannelHintText) {
+          const obj21 = { style: tmp.errorMessage, children: closure_20(tmp4(tmp3[61]).InlineNotice, obj22) };
+          obj22 = { type: "critical", message: privateChannelHintText, role: "status" };
+          tmp36Result11 = tmp36(c6, obj21);
         }
         const obj23 = { children: items6 };
-        items6[1] = tmp35Result11;
-        tmp37Result3 = tmp37(tmp48, obj23);
+        items6[1] = tmp36Result11;
+        tmp38Result3 = tmp38(tmp49, obj23);
       }
     }
     const obj24 = { children: items5 };
-    items5[3] = tmp37Result3;
-    tmp37Result4 = tmp37(tmp48, obj24);
+    items5[3] = tmp38Result3;
+    tmp38Result4 = tmp38(tmp49, obj24);
   }
-  items3[1] = tmp37Result4;
-  let tmp35Result12 = null;
+  items3[1] = tmp38Result4;
+  let tmp36Result12 = null;
   if (null != tmp14Result5[1].message) {
-    const obj25 = { style: tmp.errorMessage, children: closure_20(HelpMessage2, obj26) };
-    obj26 = { messageType: tmp4(tmp3[37]).HelpMessageTypes.ERROR, children: tmp14Result5[1].message };
-    HelpMessage2 = tmp4(tmp3[37]).HelpMessage;
-    tmp35Result12 = tmp35(c6, obj25);
+    const obj25 = { style: tmp.errorMessage, children: closure_20(tmp4(tmp3[61]).InlineNotice, obj26) };
+    obj26 = { type: "critical", message: tmp14Result5[1].message, role: "alert" };
+    tmp36Result12 = tmp36(c6, obj25);
   }
-  items3[2] = tmp35Result12;
-  return closure_20(tmp36, obj4);
+  items3[2] = tmp36Result12;
+  return closure_20(tmp37, obj4);
 });
 let closure_28 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMembers(guildId) {
-  let HelpMessage;
   let closure_1;
   let closure_8;
   let first;
@@ -1334,7 +1362,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
                             closure_0 = stringResult;
                           }
                           obj = {
-                            headerRight: closure_7 ? (() => closure_1_20(stringResult(id[49]).HeaderSubmittingIndicator, {})) : (() => {
+                            headerRight: closure_7 ? (() => closure_1_20(stringResult(id[50]).HeaderSubmittingIndicator, {})) : (() => {
                                                       const obj = { text: stringResult, onPress };
                                                       return closure_20(HeaderActionButton.HeaderActionButton, obj);
                                                     })
@@ -1371,7 +1399,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
                           closure_0 = stringResult;
                         }
                         obj = {
-                          headerRight: closure_7 ? (() => closure_1_20(stringResult(id[49]).HeaderSubmittingIndicator, {})) : (() => {
+                          headerRight: closure_7 ? (() => closure_1_20(stringResult(id[50]).HeaderSubmittingIndicator, {})) : (() => {
                                                   const obj = { text: stringResult, onPress };
                                                   return closure_20(HeaderActionButton.HeaderActionButton, obj);
                                                 })
@@ -1383,7 +1411,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
                     tmp43[1] = tmp6;
                     tmp43[2] = first;
                     tmp43[3] = tmp26;
-                    const tmp44 = closure_20(tmp(8603).AddMembersBody, tmp43);
+                    const tmp44 = closure_20(tmp(8619).AddMembersBody, tmp43);
                     cResult[24] = tmp6;
                     cResult[25] = first;
                     cResult[26] = tmp44;
@@ -1408,7 +1436,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
                         closure_0 = stringResult;
                       }
                       obj = {
-                        headerRight: closure_7 ? (() => closure_1_20(stringResult(id[49]).HeaderSubmittingIndicator, {})) : (() => {
+                        headerRight: closure_7 ? (() => closure_1_20(stringResult(id[50]).HeaderSubmittingIndicator, {})) : (() => {
                                               const obj = { text: stringResult, onPress };
                                               return closure_20(HeaderActionButton.HeaderActionButton, obj);
                                             })
@@ -1421,7 +1449,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
                   if (null != tmp27[1].message) {
                     tmp38 = null;
                     if ("" !== tmp27[1].message) {
-                      const obj6 = { style: null, children: closure_20(HelpMessage, obj7) };
+                      const obj6 = { style: null, children: closure_20(tmp(7567).InlineNotice, obj7) };
                       class X {
                         constructor() {
                           tmp = closure_0;
@@ -1441,7 +1469,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
                             closure_0 = stringResult;
                           }
                           obj = {
-                            headerRight: closure_7 ? (() => closure_1_20(stringResult(id[49]).HeaderSubmittingIndicator, {})) : (() => {
+                            headerRight: closure_7 ? (() => closure_1_20(stringResult(id[50]).HeaderSubmittingIndicator, {})) : (() => {
                                                       const obj = { text: stringResult, onPress };
                                                       return closure_20(HeaderActionButton.HeaderActionButton, obj);
                                                     })
@@ -1450,8 +1478,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
                           return;
                         }
                       }
-                      obj7 = { messageType: tmp(1200).HelpMessageTypes.ERROR, children: tmp27[1].message };
-                      HelpMessage = tmp(1200).HelpMessage;
+                      obj7 = { type: "critical", message: tmp27[1].message, role: "alert" };
                       tmp38 = closure_20(first, obj6);
                     }
                   }
@@ -1481,7 +1508,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
                   closure_0 = stringResult;
                 }
                 obj = {
-                  headerRight: closure_7 ? (() => closure_1_20(stringResult(id[49]).HeaderSubmittingIndicator, {})) : (() => {
+                  headerRight: closure_7 ? (() => closure_1_20(stringResult(id[50]).HeaderSubmittingIndicator, {})) : (() => {
                                   const obj = { text: stringResult, onPress };
                                   return closure_20(HeaderActionButton.HeaderActionButton, obj);
                                 })
@@ -1504,14 +1531,14 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
       }
     }
   }
-  class N {
+  class R {
     constructor() {
       current = closure_3.current;
       ({ guildId, channelType } = current);
       ({ name, categoryId, applicationId, onChannelCreated, flags } = current);
       tmp = closure_0;
       tmp2 = closure_2;
-      obj = closure_0(closure_2[62]);
+      obj = closure_0(closure_2[63]);
       result = obj.permissionOverwritesForRoles(guildId, channelType, [], true);
       closure_1 = result;
       values = Object.values(closure_6);
@@ -1521,11 +1548,11 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
         if (tmp) {
           if (row.rowType === constants.ROLE) {
             const push2 = result.push;
-            const obj2 = current(id[62]);
+            const obj2 = current(id[63]);
             push2(obj2.permissionOverwriteForRole(row.id, channelType));
           } else if (row.rowType === tmp2.MEMBER) {
             const push = result.push;
-            const obj = current(id[62]);
+            const obj = current(id[63]);
             push(obj.permissionOverwriteForUser(row.id, channelType));
           }
         }
@@ -1533,7 +1560,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
       tmp4 = closure_1 || closure_5;
       if (!tmp4) {
         push = result.push;
-        tmpResult = tmp(tmp2[62]);
+        tmpResult = tmp(tmp2[63]);
         tmp5 = closure_2;
         arr1 = push(tmpResult.permissionOverwriteForUser(closure_2.id, channelType));
       }
@@ -1563,10 +1590,9 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
   cResult[11] = tmp27[2];
   cResult[12] = first;
   cResult[13] = tmp9.id;
-  cResult[14] = N;
-  tmp33 = N;
+  cResult[14] = R;
+  tmp33 = R;
 }) : (function AddMembers(guildId) {
-  let HelpMessage;
   let closure_8;
   let items2;
   let obj4;
@@ -1617,11 +1643,11 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
       if (tmp) {
         if (row.rowType === constants.ROLE) {
           const push2 = result.push;
-          const obj2 = current(navigation[62]);
+          const obj2 = current(navigation[63]);
           push2(obj2.permissionOverwriteForRole(row.id, channelType));
         } else if (row.rowType === tmp2.MEMBER) {
           const push = result.push;
-          const obj = current(navigation[62]);
+          const obj = current(navigation[63]);
           push(obj.permissionOverwriteForUser(row.id, channelType));
         }
       }
@@ -1660,7 +1686,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
       current = stringResult;
     }
     let obj = {
-      headerRight: first1 ? (() => closure_1_20(stringResult(navigation[49]).HeaderSubmittingIndicator, {})) : (() => {
+      headerRight: first1 ? (() => closure_1_20(stringResult(navigation[50]).HeaderSubmittingIndicator, {})) : (() => {
         const obj = { text: stringResult, onPress };
         return closure_20(HeaderActionButton.HeaderActionButton, obj);
       })
@@ -1673,13 +1699,12 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMem
   if (null != tmp14[1].message) {
     tmp23 = null;
     if ("" !== tmp14[1].message) {
-      obj3 = { style: tmp.errorMessage, children: closure_20(HelpMessage, obj4) };
-      obj4 = { messageType: tmp2(navigation[37]).HelpMessageTypes.ERROR, children: tmp14[1].message };
-      HelpMessage = tmp2(tmp3[37]).HelpMessage;
+      obj3 = { style: tmp.errorMessage, children: closure_20(tmp2(tmp3[61]).InlineNotice, obj4) };
+      obj4 = { type: "critical", message: tmp14[1].message, role: "alert" };
       tmp23 = closure_20(tmp22, obj3);
     }
   }
-  items2 = [tmp23, closure_20(tmp2(tmp3[63]).AddMembersBody, { channel: null, guild, pendingAdditions, setPendingAdditions: tmp13 })];
+  items2 = [tmp23, closure_20(tmp2(tmp3[64]).AddMembersBody, { channel: null, guild, pendingAdditions, setPendingAdditions: tmp13 })];
   return tmp21(pendingAdditions, obj2);
 });
 const constants4 = { CREATE_CHANNEL: "CREATE_CHANNEL", ADD_MEMBERS: "ADD_MEMBERS", ADD_MODERATORS: "ADD_MODERATORS" };
@@ -1718,7 +1743,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
     }
     return tmp6;
   }
-  const tmp7 = closure_20(tmp(6686).Navigator, { screens, initialRouteStack: initialStack });
+  const tmp7 = closure_20(tmp(6687).Navigator, { screens, initialRouteStack: initialStack });
   cResult[2] = initialStack;
   cResult[3] = screens;
   cResult[4] = tmp7;
@@ -1727,7 +1752,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
   let closure_0;
   let initialStack;
   let screens;
-  const f98530 = () => {
+  const f98793 = () => {
     let obj2;
     const obj = { name: constants.CREATE_CHANNEL, params: obj2 };
     obj2 = {};
@@ -1737,8 +1762,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChanne
     return obj3;
   };
   _require = arg0;
-  ({ screens, initialStack } = useInitialValueDefault(f98530));
-  useInitialValueDefault(f98530);
+  ({ screens, initialStack } = useInitialValueDefault(f98793));
+  useInitialValueDefault(f98793);
   return closure_20(require("Navigator").Navigator, { screens, initialRouteStack });
 });
 let result = size.fileFinishedImporting("components_native/CreateChannelModal.tsx");

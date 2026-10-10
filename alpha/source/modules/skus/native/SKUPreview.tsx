@@ -1,9 +1,9 @@
-// Module ID: 8956
-// Function ID: 8957
+// Module ID: 8975
+// Function ID: 8976
 // Name: SKUPreview
-// Dependencies: [19, 17, 7261, 1085, 21, 5091, 8957, 587, 558, 576, 8279, 8981, 1993, 8994, 8983, 9006, 9008, 9009, 4779, 4893, 1388, 2]
+// Dependencies: [19, 17, 7267, 1085, 21, 5092, 8976, 587, 558, 576, 8295, 9000, 1993, 9013, 9002, 9025, 9027, 9028, 4818, 4932, 1388, 2]
 
-// Module 8956 (SKUPreview)
+// Module 8975 (SKUPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,19 +11,19 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import useToken from "useToken" /* 4779 */;
-import ThemeAwareNitroWishlistingWumpusRive from "ThemeAwareNitroWishlistingWumpusRive" /* 4893 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7261 */;
-import useShopProductItems from "useShopProductItems" /* 8279 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 8957 */;
-import BundleSampleV2Default from "BundleSampleV2" /* 8981 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 8983 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8994 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9006 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9008 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9009 */;
+import useToken from "useToken" /* 4818 */;
+import ThemeAwareNitroWishlistingWumpusRive from "ThemeAwareNitroWishlistingWumpusRive" /* 4932 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7267 */;
+import useShopProductItems from "useShopProductItems" /* 8295 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 8976 */;
+import BundleSampleV2Default from "BundleSampleV2" /* 9000 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9002 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9013 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9025 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9027 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9028 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   const cResult = obj.c(53);
   ({ collectiblesItemData, size } = arg0);
   if (undefined === size) {
-    size = tmp(8957).DEFAULT_ITEM_SIZE;
+    size = tmp(8976).DEFAULT_ITEM_SIZE;
   }
   if (cResult[0] !== size) {
     let tmp4 = size;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
     if (cResult[2] !== collectiblesItemData.items) {
       const self = this;
       const self2 = this;
-      const itemsSortingHat = new tmp(8279).ItemsSortingHat(collectiblesItemData.items);
+      const itemsSortingHat = new tmp(8295).ItemsSortingHat(collectiblesItemData.items);
       cResult[2] = collectiblesItemData.items;
       cResult[3] = itemsSortingHat;
       tmp57 = itemsSortingHat;
@@ -360,7 +360,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
   sku = sku.sku;
   let DEFAULT_ITEM_SIZE = sku.size;
   if (DEFAULT_ITEM_SIZE === undefined) {
-    DEFAULT_ITEM_SIZE = sku(8957).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = sku(8976).DEFAULT_ITEM_SIZE;
   }
   const items = [sku];
   const memo = react.useMemo(() => closure_5(sku), items);
@@ -426,7 +426,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumSKUPr
   const cResult = obj.c(7);
   let DEFAULT_ITEM_SIZE = size.size;
   if (undefined === DEFAULT_ITEM_SIZE) {
-    DEFAULT_ITEM_SIZE = tmp(8957).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = tmp(8976).DEFAULT_ITEM_SIZE;
   }
   if (cResult[0] !== DEFAULT_ITEM_SIZE) {
     let tmp4 = DEFAULT_ITEM_SIZE;
@@ -487,7 +487,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SKUPreview(a
   const cResult = obj.c(8);
   ({ sku, size } = arg0);
   if (undefined === size) {
-    size = tmp(8957).DEFAULT_ITEM_SIZE;
+    size = tmp(8976).DEFAULT_ITEM_SIZE;
   }
   const productLine = sku.productLine;
   if (SKUProductLines.COLLECTIBLES === productLine) {

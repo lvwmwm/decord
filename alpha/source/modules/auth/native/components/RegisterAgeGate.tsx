@@ -1,22 +1,22 @@
-// Module ID: 16317
-// Function ID: 16318
+// Module ID: 16384
+// Function ID: 16385
 // Name: RegisterAgeGate
-// Dependencies: [32, 19, 17, 5939, 16281, 16282, 1085, 21, 5091, 587, 4661, 16318, 558, 576, 4788, 1503, 16278, 504, 6637, 16280, 16298, 38, 1126, 8525, 6291, 16319, 5376, 6620, 6652, 4930, 8547, 2]
+// Dependencies: [32, 19, 17, 5932, 16348, 16349, 1085, 21, 5092, 587, 4702, 16385, 558, 576, 4827, 1503, 16345, 504, 6638, 16347, 16365, 38, 1126, 8541, 6286, 16386, 5379, 6621, 6653, 4969, 8563, 2]
 
-// Module 16317 (RegisterAgeGate)
+// Module 16384 (RegisterAgeGate)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16280 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16347 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 5939 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16281 */;
-import RegistrationConstants from "RegistrationConstants" /* 16282 */;
+import ConsentStore from "ConsentStore" /* 5932 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16348 */;
+import RegistrationConstants from "RegistrationConstants" /* 16349 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
-import module_4661_mod from "module_4661" /* 4661 */;
+import createStyles from "createStyles" /* 5092 */;
+import module_4702_mod from "module_4702" /* 4702 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,14 +39,14 @@ const AuthStates = Constants.AuthStates;
 let obj = { inputGroup: { marginTop: 24, marginBottom: 24 }, flexGrow: { flexGrow: 1 }, button: { flexGrow: 0, marginBottom: 4, marginTop: 16, flexDirection: "column" }, datePickerButton: obj2, page: { flex: 1 } };
 obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_15 = createStyles.createStyles(obj);
-let module_4661 = module_4661_mod;
-module_4661 = module_4661.utc();
-let closure_17 = module_4661.toDate();
-module_4661 = module_4661.clone();
-const endOfResult = module_4661.endOf("year");
+let module_4702 = module_4702_mod;
+module_4702 = module_4702.utc();
+let closure_17 = module_4702.toDate();
+module_4702 = module_4702.clone();
+const endOfResult = module_4702.endOf("year");
 const maximumDate = endOfResult.toDate();
-module_4661 = module_4661.clone();
-const subtractResult = module_4661.subtract(100, "years");
+module_4702 = module_4702.clone();
+const subtractResult = module_4702.subtract(100, "years");
 const minimumDate = subtractResult.toDate();
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeGate() {
   let authenticationConsentRequired;
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
   }
   obj9 = {
     value: formatResult,
-    text: module_4661.format("L"),
+    text: module_4702.format("L"),
     onPress() {
       return ConsentStore(true);
     },
@@ -461,10 +461,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
     minimumDate,
     onConfirm(arg0) {
       ConsentStore(false);
-      closure_3(module_4661(arg0));
+      closure_3(module_4702(arg0));
     },
     onDateChange(date1) {
-      closure_3(module_4661(date1));
+      closure_3(module_4702(date1));
     },
     onCancel() {
       return ConsentStore(false);

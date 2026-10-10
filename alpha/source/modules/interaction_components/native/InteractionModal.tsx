@@ -1,28 +1,29 @@
-// Module ID: 18000
-// Function ID: 18001
+// Module ID: 18072
+// Function ID: 18073
 // Name: InteractionModal
-// Dependencies: [19, 17, 14575, 21, 5091, 587, 5941, 558, 576, 18001, 6663, 1415, 1200, 5087, 1126, 6212, 6191, 18002, 8233, 5376, 2]
+// Dependencies: [19, 17, 14629, 21, 5092, 587, 5934, 558, 576, 18073, 6664, 1415, 1200, 5088, 1126, 6207, 6184, 7567, 18074, 8249, 5379, 2]
 // Exports: openInteractionModal
 
-// Module 18000 (InteractionModal)
+// Module 18072 (InteractionModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import Pressables from "Pressables" /* 6191 */;
-import XSmallIcon from "XSmallIcon" /* 6212 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6663 */;
-import ComponentStateContext from "ComponentStateContext" /* 8233 */;
-import InteractionModalStore from "InteractionModalStore" /* 14575 */;
-import InteractionModalUtils from "InteractionModalUtils" /* 18001 */;
-import renderComponents from "renderComponents" /* 18002 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import Pressables from "Pressables" /* 6184 */;
+import XSmallIcon from "XSmallIcon" /* 6207 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6664 */;
+import InlineNotice2 from "InlineNotice" /* 7567 */;
+import ComponentStateContext from "ComponentStateContext" /* 8249 */;
+import InteractionModalStore from "InteractionModalStore" /* 14629 */;
+import InteractionModalUtils from "InteractionModalUtils" /* 18073 */;
+import renderComponents from "renderComponents" /* 18074 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +60,6 @@ obj7 = { color: nativeDefault.colors.TEXT_MUTED };
 obj8 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_9 = createStyles(obj);
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function InteractionModal(title) {
-  let HelpMessage;
   let applicationIconURL;
   let applicationName;
   let components;
@@ -184,9 +184,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
                       tmp42 = cResult[32];
                     }
                     if (cResult[33] !== tmp42) {
-                      const obj7 = { messageType: native.HelpMessageTypes.WARNING, children: tmp42 };
-                      const HelpMessage2 = tmp(1200).HelpMessage;
-                      const tmp46 = metroRequire(HelpMessage2, obj7);
+                      const obj7 = { type: "warning", message: tmp42, role: "static" };
+                      const tmp46 = metroRequire(InlineNotice2.InlineNotice, obj7);
                       cResult[33] = tmp42;
                       cResult[34] = tmp46;
                       tmp44 = tmp46;
@@ -316,9 +315,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
                   if (null != error) {
                     tmp39 = null;
                     if ("" !== error) {
-                      const obj14 = { style: tmp4.error, children: metroRequire(HelpMessage, obj15) };
-                      obj15 = { messageType: native.HelpMessageTypes.ERROR, children: error };
-                      HelpMessage = tmp(1200).HelpMessage;
+                      const obj14 = { style: tmp4.error, children: metroRequire(InlineNotice2.InlineNotice, obj15) };
+                      obj15 = { type: "critical", message: error, role: "alert" };
                       tmp39 = metroRequire(_false, obj14);
                     }
                   }
@@ -374,7 +372,6 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
   tmp9 = obj20;
 }) : (function InteractionModal(modal) {
   let Button;
-  let HelpMessage;
   let applicationIconURL;
   let applicationName;
   let components;
@@ -424,26 +421,25 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
   if (null != error) {
     tmp7Result = null;
     if ("" !== error) {
-      const obj10 = { style: tmp.error, children: metroRequire(HelpMessage, obj11) };
-      obj11 = { messageType: native.HelpMessageTypes.ERROR, children: error };
-      HelpMessage = tmp2(1200).HelpMessage;
+      const obj10 = { style: tmp.error, children: metroRequire(InlineNotice2.InlineNotice, obj11) };
+      obj11 = { type: "critical", message: error, role: "alert" };
       tmp7Result = tmp7(tmp6, obj10);
     }
   }
   const obj12 = { children: items3 };
   items3 = [tmp7Result, ];
-  const obj13 = { messageType: native.HelpMessageTypes.WARNING, children: intl2.format(intl4.t["dSTy/w"], { applicationName }) };
-  const HelpMessage2 = tmp2(1200).HelpMessage;
+  const obj13 = { type: "warning", message: intl2.format(intl4.t["dSTy/w"], { applicationName }), role: "static" };
+  const InlineNotice = tmp2(7567).InlineNotice;
   intl2 = tmp2(1126).intl;
-  items3[1] = metroRequire(HelpMessage2, obj13);
+  items3[1] = metroRequire(InlineNotice, obj13);
   items4 = [metroImportDefault(_false, obj12), , ];
   const obj14 = { modal, validators, validationErrors, setValidationErrors, children: tmp2Result.renderComponents(components) };
-  const ComponentStateContextProvider = tmp2(8233).ComponentStateContextProvider;
+  const ComponentStateContextProvider = tmp2(8249).ComponentStateContextProvider;
   tmp2Result = renderComponents;
   items4[1] = metroRequire(ComponentStateContextProvider, obj14);
   const obj15 = { style: tmp.footer, children: metroRequire(Button, obj16) };
   obj16 = { text: intl3.string(intl4.t.geKm7t), loading: submissionState === InteractionModalState.IN_FLIGHT, size: "lg", onPress: onSubmit };
-  Button = tmp2(5376).Button;
+  Button = tmp2(5379).Button;
   intl3 = tmp2(1126).intl;
   items4[2] = metroRequire(_false, obj15);
   items2[1] = metroImportDefault(tmp8, obj9);

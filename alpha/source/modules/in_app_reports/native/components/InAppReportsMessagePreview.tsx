@@ -1,20 +1,20 @@
-// Module ID: 7727
-// Function ID: 7728
+// Module ID: 7745
+// Function ID: 7746
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 5091, 587, 7728, 558, 576, 4928, 1126, 5087, 9346, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 7746, 558, 576, 4967, 1126, 5088, 9373, 2]
 
-// Module 7727 (InAppReportsMessagePreview)
+// Module 7745 (InAppReportsMessagePreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ColorUtils from "ColorUtils" /* 4928 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import RowGeneratorDefault from "RowGenerator" /* 7728 */;
-import ChatItemDefault from "ChatItem" /* 9346 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import RowGeneratorDefault from "RowGenerator" /* 7746 */;
+import ChatItemDefault from "ChatItem" /* 9373 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

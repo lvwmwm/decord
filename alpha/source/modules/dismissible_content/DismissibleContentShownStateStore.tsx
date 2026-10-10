@@ -1,21 +1,21 @@
-// Module ID: 2056
-// Function ID: 2057
+// Module ID: 2057
+// Function ID: 2058
 // Name: DismissibleContentShownStateStore
-// Dependencies: [5, 2057, 2058, 1085, 569, 1267, 2053, 1295, 2059, 1272, 558, 576, 504, 2060, 584, 2]
+// Dependencies: [5, 2058, 2059, 1085, 569, 1267, 2053, 1295, 2060, 1272, 558, 576, 504, 2061, 584, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown
 
-// Module 2056 (DismissibleContentShownStateStore)
+// Module 2057 (DismissibleContentShownStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import react from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import react_native from "react-native" /* 1272 */;
 import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2053 */;
-import Timers from "Timers" /* 2059 */;
-import isActionRequiredDefault from "isActionRequired" /* 2060 */;
+import Timers from "Timers" /* 2060 */;
+import isActionRequiredDefault from "isActionRequired" /* 2061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2057 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2058 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2058 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2059 */;
 import Constants from "Constants" /* 1085 */;
 import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,14 +26,14 @@ let body, closure_3, closure_4, context, dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
-const f86900 = (item) => {
+const f87140 = (item) => {
   content = undefined;
   if (content != null) {
     content = content.content;
   }
   return item !== content;
 };
-const f86902 = () => {
+const f87142 = () => {
   state.setState(() => {
     obj = { candidates: new Map(), shownFatigableCandidate: null, prevFatigableCandidate: null, recentlyShown: [], currentlyShown: new Set(), currentlyShownGroup: new Set(), lastWinnerTime: 0, postConnectionOpen: true };
     new Map();
@@ -62,8 +62,8 @@ function withContent(currentlyShown, content) {
       const currentlyShownGroup = currentlyShown.currentlyShownGroup;
       currentlyShownGroup.add(content.groupName);
     }
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = DismissibleContentFatigueConfig.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
-    if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content)) {
+    obj = DismissibleContentFatigueConfig;
+    if (!obj.bypassesFatigue(content.content)) {
       currentlyShown.shownFatigableCandidate = content;
       const prevFatigableCandidate = currentlyShown.prevFatigableCandidate;
       content = undefined;
@@ -132,7 +132,7 @@ let obj = function _arbitrateCandidates() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -261,7 +261,7 @@ function withUpdateWinner(candidates, arg1) {
           const items1 = [];
           HermesBuiltin.arraySpread(items1, candidates3.keys(), 0);
           const shownFatigableCandidate = candidates.shownFatigableCandidate;
-          const found = items1.filter(f86900);
+          const found = items1.filter(f87140);
           const tmp9 = withContent;
           if (null != shownFatigableCandidate) {
             if (null != shownFatigableCandidate.content) {
@@ -439,7 +439,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {
@@ -560,7 +560,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
                 const items = [];
                 HermesBuiltin.arraySpread(items, candidates.keys(), 0);
                 const shownFatigableCandidate = obj.shownFatigableCandidate;
-                let found = items.filter(f86900);
+                let found = items.filter(f87140);
                 const tmp11 = closure_2_13;
                 if (null != shownFatigableCandidate) {
                   if (null != shownFatigableCandidate.content) {
@@ -594,7 +594,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
         }
       }
       c4 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     } catch (tmp25) {
       c4 = 3;
       throw tmp25;
@@ -666,7 +666,7 @@ function isStateInCooldown(shownFatigableCandidate) {
 }
 function reset() {
   obj = react_native;
-  obj.batchUpdates(f86902);
+  obj.batchUpdates(f87142);
   closure_9 = {};
   c10 = null;
   closure_8.succeed();
@@ -689,7 +689,7 @@ DismissibleContentShownStateStore.displayName = "DismissibleContentShownStateSto
 obj = {
   CONNECTION_OPEN() {
     obj = react_native;
-    obj.batchUpdates(f86902);
+    obj.batchUpdates(f87142);
     closure_9 = {};
     c10 = null;
     closure_8.succeed();
@@ -698,7 +698,7 @@ obj = {
   LOGOUT() {
     let state;
     obj = react_native;
-    obj.batchUpdates(f86902);
+    obj.batchUpdates(f87142);
     closure_9 = {};
     c10 = null;
     closure_8.succeed();
@@ -718,11 +718,11 @@ export { isStateInCooldown };
 export const addCandidateContent = function addCandidateContent(content) {
   let c2;
   _require = content;
-  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require("DismissibleContentFatigueConfig").CONTENT_TYPES_WITH_BYPASS_FATIGUE;
-  let closure_1 = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content);
+  obj = require("DismissibleContentFatigueConfig");
+  let closure_1 = obj.bypassesFatigue(content.content);
   dependencyMap = null;
-  obj = require("react-native");
-  obj.batchUpdates(() => {
+  const obj2 = require("react-native");
+  obj2.batchUpdates(() => {
     state.setState((candidates) => {
       obj = { candidates: new Map(candidates.candidates), currentlyShown: new Set(candidates.currentlyShown), currentlyShownGroup: new Set(candidates.currentlyShownGroup) };
       const merged = Object.assign(candidates);
@@ -871,8 +871,8 @@ export const getCurrentlyShownCounts = function getCurrentlyShownCounts() {
   const items = [...closure_11.getState().currentlyShown];
   const items1 = [, ];
   const length = items.filter((item) => {
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require("DismissibleContentFatigueConfig").CONTENT_TYPES_WITH_BYPASS_FATIGUE;
-    return !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(item);
+    obj = require("DismissibleContentFatigueConfig");
+    return !obj.bypassesFatigue(item);
   }).length;
   items1[0] = closure_11.getState().currentlyShown.size;
   items1[1] = length;

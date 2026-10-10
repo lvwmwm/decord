@@ -1,12 +1,12 @@
-// Module ID: 10656
-// Function ID: 10657
+// Module ID: 10690
+// Function ID: 10691
 // Name: useChannelLoading
-// Dependencies: [32, 19, 558, 576, 10657, 9355, 5394, 2]
+// Dependencies: [32, 19, 558, 576, 10691, 9382, 5397, 2]
 
-// Module 10656 (useChannelLoading)
-import hooks_useMountEffectDefault from "hooks/useMountEffect" /* 5394 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9355 */;
-import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 10657 */;
+// Module 10690 (useChannelLoading)
+import hooks_useMountEffectDefault from "hooks/useMountEffect" /* 5397 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9382 */;
+import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 10691 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

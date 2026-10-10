@@ -1,12 +1,12 @@
-// Module ID: 7552
-// Function ID: 7553
+// Module ID: 7561
+// Function ID: 7562
 // Name: useInitiateAgeVerification
-// Dependencies: [5, 32, 19, 1390, 1085, 7018, 504, 584, 7497, 7017, 558, 576, 7510, 2]
+// Dependencies: [5, 32, 19, 1390, 1085, 7019, 504, 584, 7497, 7025, 558, 576, 7510, 2]
 
-// Module 7552 (useInitiateAgeVerification)
+// Module 7561 (useInitiateAgeVerification)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 7018 */;
+import Constants2 from "Constants" /* 7019 */;
 import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7510 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -64,7 +64,7 @@ function useAgeVerificationRunner(onComplete) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ function useAgeVerificationRunner(onComplete) {
             c5 = 0;
             tmp64(false);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp64) {
           if (0 === c5) {

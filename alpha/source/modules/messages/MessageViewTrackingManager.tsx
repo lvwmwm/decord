@@ -1,16 +1,16 @@
-// Module ID: 9576
-// Function ID: 9577
+// Module ID: 9605
+// Function ID: 9606
 // Name: MessageViewTrackingManager
-// Dependencies: [1085, 1273, 6872, 1388, 6804, 1457, 1265, 2]
+// Dependencies: [1085, 1273, 6878, 1388, 6807, 1457, 1265, 2]
 
-// Module 9576 (MessageViewTrackingManager)
+// Module 9605 (MessageViewTrackingManager)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import LRUCacheDefault from "LRUCache" /* 1457 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -46,7 +46,7 @@ function getAnalyticsConfig(type) {
     const INVITE_EMBED = AnalyticsLocationDefault.INVITE_EMBED;
     const tmp6 = importDefault;
     if (treatmentRendered) {
-      const items = [INVITE_EMBED, tmp6(6872).VOICE_CHANNEL_LIST_INVITE_EMBED];
+      const items = [INVITE_EMBED, tmp6(6878).VOICE_CHANNEL_LIST_INVITE_EMBED];
       items1 = items;
     } else {
       items1 = [INVITE_EMBED];

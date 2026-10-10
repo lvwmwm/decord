@@ -1,12 +1,12 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17166
+// Function ID: 17167
 // Name: ConjureTimelineTree
-// Dependencies: [32, 3827, 1126, 2]
+// Dependencies: [32, 3849, 1126, 2]
 // Exports: currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 17097 (ConjureTimelineTree)
+// Module 17166 (ConjureTimelineTree)
 import intl6 from "intl" /* 1126 */;
-import _modDef3827 from "module_3827" /* 3827 */;
+import _modDef3849 from "module_3849" /* 3849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -477,7 +477,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3827.iwOTgo, preview_ready: _modDef3827.okkgSB, working: _modDef3827.t8skVB, error: _modDef3827.avt0ax };
+let obj = { healthcheck_failed: _modDef3849.iwOTgo, preview_ready: _modDef3849.okkgSB, working: _modDef3849.t8skVB, error: _modDef3849.avt0ax };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
@@ -495,26 +495,26 @@ export const describeNode = function describeNode(currentStepResult) {
   const intl = intl6.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef3827.t8skVB;
+    t8skVB = _modDef3849.t8skVB;
   }
   return string(t8skVB);
 };
 export const describeTaskStatus = function describeTaskStatus(arg0) {
   if ("running" === arg0) {
     const intl5 = intl6.intl;
-    return intl5.string(_modDef3827.jTwZFY);
+    return intl5.string(_modDef3849.jTwZFY);
   } else if ("done" === arg0) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3827.keYz9o);
+    return intl4.string(_modDef3849.keYz9o);
   } else if ("failed" === arg0) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3827["RoY/lg"]);
+    return intl3.string(_modDef3849["RoY/lg"]);
   } else if ("cancelled" === arg0) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3827["HZw/I/"]);
+    return intl2.string(_modDef3849["HZw/I/"]);
   } else if ("incomplete" === arg0) {
     const intl = intl6.intl;
-    return intl.string(_modDef3827.sf2UHL);
+    return intl.string(_modDef3849.sf2UHL);
   }
 };
 export { buildTimelineTree };

@@ -1,21 +1,21 @@
-// Module ID: 15635
-// Function ID: 15636
+// Module ID: 15697
+// Function ID: 15698
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2129, 2128, 21, 5091, 587, 5259, 558, 576, 504, 1126, 6266, 6163, 15636, 6810, 6267, 2]
+// Dependencies: [5, 19, 17, 2130, 2129, 21, 5092, 587, 5260, 558, 576, 504, 1126, 6261, 6156, 15698, 6813, 6262, 2]
 
-// Module 15635 (UserSettingsLocale)
+// Module 15697 (UserSettingsLocale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2129 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import TableRadioRow2 from "TableRadioRow" /* 6266 */;
-import flags from "flags" /* 15636 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import TableRadioRow2 from "TableRadioRow" /* 6261 */;
+import flags from "flags" /* 15698 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2128 */;
-import createStyles from "createStyles" /* 5091 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = function _handleLanguageChange() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -71,7 +71,7 @@ let obj = function _handleLanguageChange() {
           obj = closure_130_1(closure_130_2[8]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp13) {
         c4 = 3;
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[9] = tmp16;
     tmp13 = tmp16;
   }
-  const SafeAreaPaddingView = tmp(6810).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6813).SafeAreaPaddingView;
   const tmp12 = <SafeAreaPaddingView bottom>{null}</SafeAreaPaddingView>;
   cResult[4] = stateFromStores;
   cResult[5] = tmp9;

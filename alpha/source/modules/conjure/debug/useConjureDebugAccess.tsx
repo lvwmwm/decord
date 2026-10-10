@@ -1,13 +1,13 @@
-// Module ID: 17056
-// Function ID: 17057
+// Module ID: 17124
+// Function ID: 17125
 // Name: useConjureDebugAccess
-// Dependencies: [7402, 558, 2041, 576, 504, 2]
+// Dependencies: [7408, 558, 2041, 576, 504, 2]
 // Exports: useConjureDebugPaneEnabled
 
-// Module 17056 (useConjureDebugAccess)
+// Module 17124 (useConjureDebugAccess)
 import react from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7402 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7408 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

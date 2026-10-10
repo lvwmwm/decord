@@ -1,9 +1,9 @@
-// Module ID: 12432
-// Function ID: 12433
+// Module ID: 12479
+// Function ID: 12480
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 12081, 1404, 1390, 1085, 12433, 21, 5091, 587, 5976, 558, 576, 7422, 1200, 12434, 4923, 1126, 6169, 5087, 1415, 6163, 1265, 504, 5376, 5965, 12435, 8514, 2]
+// Dependencies: [32, 19, 17, 12125, 1404, 1390, 1085, 12480, 21, 5092, 587, 5969, 558, 576, 7422, 1200, 12481, 4962, 1126, 6162, 5088, 1415, 6156, 1265, 504, 5379, 5958, 12482, 8530, 2]
 
-// Module 12432 (InviteDetails)
+// Module 12479 (InviteDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,24 +11,24 @@ import intl9 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import LegacyTokens from "LegacyTokens" /* 5976 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import GuildBadgeDefault from "GuildBadge" /* 6169 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import LegacyTokens from "LegacyTokens" /* 5969 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import GuildBadgeDefault from "GuildBadge" /* 6162 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 7422 */;
-import HubConstants from "HubConstants" /* 12433 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 12434 */;
-import InviteRolesListDefault from "InviteRolesList" /* 12435 */;
+import HubConstants from "HubConstants" /* 12480 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 12481 */;
+import InviteRolesListDefault from "InviteRolesList" /* 12482 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MultiAccountStore_mod from "MultiAccountStore" /* 12081 */;
+import MultiAccountStore_mod from "MultiAccountStore" /* 12125 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -609,7 +609,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     const format3 = intl7.format;
     let obj2 = { username: obj11.getFormattedName(invite.inviter) };
     const Quj7HX = tmp3(1126).t.Quj7HX;
-    obj11 = isGuildMember(4923);
+    obj11 = isGuildMember(4962);
     format3Result = format3(Quj7HX, obj2);
   } else {
     const tmp3Result = invite(7422);
@@ -621,7 +621,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           const format2 = intl6.format;
           let obj3 = { username: obj9.getFormattedName(invite.inviter) };
           const Lu4h18 = tmp3(1126).t.Lu4h18;
-          obj9 = isGuildMember(4923);
+          obj9 = isGuildMember(4962);
           format2Result = format2(Lu4h18, obj3);
         }
         format3Result = format2Result;
@@ -636,7 +636,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           const formatToPlainString = intl4.formatToPlainString;
           const obj4 = { username: obj7.getFormattedName(invite.target_user) };
           const x2L32Q = tmp3(1126).t.x2L32Q;
-          obj7 = isGuildMember(4923);
+          obj7 = isGuildMember(4962);
           format3Result = formatToPlainString(x2L32Q, obj4);
         }
       }
@@ -660,7 +660,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           const format = intl2.format;
           const obj6 = { username: obj5.getFormattedName(invite.inviter) };
           const spU2mI = tmp3(1126).t.spU2mI;
-          obj5 = isGuildMember(4923);
+          obj5 = isGuildMember(4962);
           format3Result = format(spU2mI, obj6);
         }
       }
@@ -673,14 +673,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     tmp22 = null;
     const tmp3Result4 = invite(7422);
     if (!tmp3Result4.isFriendInvite(invite)) {
-      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(6163), obj12) };
+      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(6156), obj12) };
       obj12 = { source: memo, style: tmp.inviterIcon };
       tmp22 = closure_12(tmp21, obj10);
     }
   }
   items1 = [tmp22, ];
   const obj13 = { style: tmp.inviteJoinText, variant: "text-sm/normal", color: "text-default", children: format3Result };
-  items1[1] = closure_12(invite(5087).Text, obj13);
+  items1[1] = closure_12(invite(5088).Text, obj13);
   return tmp20(View, obj8);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -777,11 +777,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           const obj5 = { style: tmp4.dotOnline };
           items1 = [authStore2(View, obj5), ];
           const obj6 = { variant: "text-xs/medium", color: "text-default", children: intl.format(intl9.t["LC+S+m"], obj7) };
-          const Text = tmp(5087).Text;
+          const Text = tmp(5088).Text;
           intl = tmp(1126).intl;
           obj7 = { membersOnline: tmp11.onlineCount };
           items1[1] = authStore2(Text, obj6);
-          tmp23 = map1(authStore3, obj4);
+          tmp23 = map1(syncedClientThemes, obj4);
         }
         let tmp24 = null;
         if (null != tmp11.memberCount) {
@@ -789,11 +789,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           const obj9 = { style: tmp4.dotOffline };
           items2 = [authStore2(View, obj9), ];
           const obj10 = { variant: "text-xs/medium", color: "text-default", children: intl2.format(intl9.t.zRl6XR, obj11) };
-          const Text2 = tmp(5087).Text;
+          const Text2 = tmp(5088).Text;
           intl2 = tmp(1126).intl;
           obj11 = { count: tmp11.memberCount };
           items2[1] = authStore2(Text2, obj10);
-          tmp24 = map1(authStore3, obj8);
+          tmp24 = map1(syncedClientThemes, obj8);
         }
         tmp13 = tmp24;
         tmp12 = forResult;
@@ -865,7 +865,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           intl = intl9.intl;
           obj6 = { membersOnline: tmp2.onlineCount };
           items[1] = authStore2(Text, obj5);
-          tmp17Result = tmp17(authStore3, obj3);
+          tmp17Result = tmp17(syncedClientThemes, obj3);
         }
         items1 = [tmp17Result, ];
         let tmp17Result3 = null;
@@ -878,7 +878,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           intl2 = intl9.intl;
           obj10 = { count: tmp2.memberCount };
           items2[1] = authStore2(Text2, obj9);
-          tmp17Result3 = tmp17(authStore3, obj7);
+          tmp17Result3 = tmp17(syncedClientThemes, obj7);
         }
         items1[1] = tmp17Result3;
         tmp17Result4 = tmp17(tmp18, obj2);
@@ -1184,11 +1184,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteDetail
                 tmp19 = formatToPlainStringResult;
               }
             }
-            const ButtonGroup = tmp14(5965).ButtonGroup;
+            const ButtonGroup = tmp14(5958).ButtonGroup;
             const items = [, ];
             const obj4 = { icon: tmp7, variant: "primary", size: "lg", text: tmp19, accessibilityLabel: stringResult, onPress, loading: first === constants.ACCEPT, disabled: first === constants.ACCEPT };
             items[0] = authStore2(components_Button_Button.Button, obj4);
-            const Button = tmp14(5376).Button;
+            const Button = tmp14(5379).Button;
             const intl4 = tmp14(1126).intl;
             const string = intl4.string;
             const t = tmp14(1126).t;
@@ -1296,11 +1296,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteDetail
   if (tmp8Result) {
     const obj10 = { event: guild_scheduled_event };
     const obj9 = { style: tmp.embedDetailsCard, children: items3 };
-    items3 = [closure_12(invite(8514).GuildEventCardHeader, obj10), , ];
+    items3 = [closure_12(invite(8530).GuildEventCardHeader, obj10), , ];
     const obj11 = { event: guild_scheduled_event };
-    items3[1] = closure_12(invite(8514).GuildEventCardMetaInfo, obj11);
+    items3[1] = closure_12(invite(8530).GuildEventCardMetaInfo, obj11);
     const obj12 = { event: guild_scheduled_event };
-    items3[2] = closure_12(invite(8514).GuildEventCardGuildInfo, obj12);
+    items3[2] = closure_12(invite(8530).GuildEventCardGuildInfo, obj12);
     tmp8Result = tmp8(View, obj9);
   }
   items2[5] = tmp8Result;
@@ -1315,7 +1315,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteDetail
   let tmp10Result;
   if (null != userAvatarSource) {
     const obj13 = { source: userAvatarSource, variant: "entity" };
-    tmp10Result = tmp10(tmp4(5376).Button.Icon, obj13);
+    tmp10Result = tmp10(tmp4(5379).Button.Icon, obj13);
   }
   if (null != stateFromStores) {
     const intl = tmp4(1126).intl;
@@ -1353,11 +1353,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteDetail
     _undefined(constants.ACCEPT);
     importDefault();
   }
-  const ButtonGroup = tmp4(5965).ButtonGroup;
+  const ButtonGroup = tmp4(5958).ButtonGroup;
   const items4 = [, ];
   const obj15 = { icon: tmp10Result, variant: "primary", size: "lg", text: tmp24, accessibilityLabel: stringResult, onPress: handleAcceptInvitePress, loading: tmp3 === constants3.ACCEPT, disabled: tmp3 === constants3.ACCEPT };
-  items4[0] = closure_12(invite(5376).Button, obj15);
-  const Button = tmp4(5376).Button;
+  items4[0] = closure_12(invite(5379).Button, obj15);
+  const Button = tmp4(5379).Button;
   const intl4 = tmp4(1126).intl;
   const string = intl4.string;
   const t = tmp4(1126).t;

@@ -1,13 +1,13 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16720
+// Function ID: 16721
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 5970, 1085, 5018, 1126, 14110, 2000, 7085, 16651, 2]
+// Dependencies: [5, 5963, 1085, 6769, 1126, 14165, 2000, 7091, 16721, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 16650 (GuildsBarFolderMenuItems)
+// Module 16720 (GuildsBarFolderMenuItems)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SortedGuildStore from "SortedGuildStore" /* 5970 */;
+import SortedGuildStore from "SortedGuildStore" /* 5963 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp9) {
             c2 = 3;

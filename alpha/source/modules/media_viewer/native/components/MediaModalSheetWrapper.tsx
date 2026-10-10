@@ -1,12 +1,12 @@
-// Module ID: 8398
-// Function ID: 8399
+// Module ID: 8414
+// Function ID: 8415
 // Name: MediaModalSheetWrapper
-// Dependencies: [109, 19, 1085, 21, 558, 576, 6838, 5055, 8399, 2]
+// Dependencies: [109, 19, 1085, 21, 558, 576, 6841, 5056, 8415, 2]
 
-// Module 8398 (MediaModalSheetWrapper)
+// Module 8414 (MediaModalSheetWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
     tmp4 = cResult[2];
   }
   const tmp8 = context;
-  context = react.useContext(context(6838));
+  context = react.useContext(context(6841));
   const obj2 = react;
   if (cResult[3] !== context) {
     const fn = function f() {
@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
     }
     return tmp16;
   }
-  tmp8(8399);
+  tmp8(8415);
   const merged = Object.assign(tmp4);
   tmp16 = <tmp8Result onClose={tmp13} />;
   cResult[8] = tmp13;
@@ -108,7 +108,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
   onCloseCallback = onCloseCallback.onCloseCallback;
   const merged = Object.assign(onCloseCallback, Object.assign({ onCloseCallback: 0 }));
   let context;
-  context = react.useContext(context(6838));
+  context = react.useContext(context(6841));
   const items = [context];
   const effect = react.useEffect(() => {
     let transitionState;
@@ -127,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet(MEDIA_MODAL_KEY);
   }, items1);
-  context(8399);
+  context(8415);
   const merged1 = Object.assign(merged);
   return <tmp5 onClose={callback} />;
 });

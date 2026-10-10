@@ -1,71 +1,64 @@
 // Module ID: 4847
 // Function ID: 4848
-// Dependencies: [32, 19, 576, 4842, 4837]
-// Exports: useRiveColor
+// Dependencies: [4848, 4857, 4858, 4859, 4860, 4861, 4862, 4853, 4863, 4864, 4865, 4866]
 
 // Module 4847
-import react from "react" /* 19 */;
-import react2 from "react" /* 576 */;
-import _mod4842 from "module_4842" /* 4842 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import installedNitro1 from "installedNitro1" /* 4853 */;
+import _mod4857 from "module_4857" /* 4857 */;
+import _mod4858 from "module_4858" /* 4858 */;
+import _mod4859 from "module_4859" /* 4859 */;
+import _mod4860 from "module_4860" /* 4860 */;
+import _mod4861 from "module_4861" /* 4861 */;
+import _mod4862 from "module_4862" /* 4862 */;
+import _mod4863 from "module_4863" /* 4863 */;
+import _mod4864 from "module_4864" /* 4864 */;
+import _mod4865 from "module_4865" /* 4865 */;
+import react_native from "react-native" /* 4866 */;
+import installWorkletsSupport_mod from "installWorkletsSupport" /* 4848 */;
 
-let tmp;
-const RiveColor2 = tmp(4837);
-react.useCallback;
-const f31952 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
-
-export const useRiveColor = function useRiveColor(arg0, arg1) {
-  let closure_0;
-  let tmp10;
-  let tmp5;
-  let tmp6;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(8);
-  const obj2 = _mod4842;
-  const tmp4 = _slicedToArray(obj2.useRiveProperty(arg1, arg0, f31952), 3);
-  [tmp5, tmp6] = tmp4;
-  require = tmp6;
-  if (cResult[0] !== tmp5) {
-    let fromIntResult;
-    if (undefined !== tmp5) {
-      let RiveColor = RiveColor2.RiveColor;
-      fromIntResult = RiveColor.fromInt(tmp5);
-    }
-    cResult[0] = tmp5;
-    cResult[1] = fromIntResult;
-    tmp8 = fromIntResult;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== tmp6) {
-    const fn = function p(str) {
-      let fromHexStringResult = str;
-      if (typeof str === "string") {
-        const RiveColor = RiveColor2.RiveColor;
-        fromHexStringResult = RiveColor.fromHexString(str);
-      }
-      tmp6(fromHexStringResult.toInt());
-    };
-    cResult[2] = tmp6;
-    cResult[3] = fn;
-    tmp10 = fn;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === tmp4[2]) {
-    if (cResult[5] === tmp10) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      return tmp11;
-    }
-  }
-  const obj3 = { value: tmp8, setValue: tmp10, error: tmp4[2] };
-  cResult[4] = tmp4[2];
-  cResult[5] = tmp10;
-  cResult[6] = tmp8;
-  cResult[7] = obj3;
-  tmp11 = obj3;
-};
+let installWorkletsSupport = installWorkletsSupport_mod;
+installWorkletsSupport = installWorkletsSupport.installWorkletsSupport();
+for (const key10017 in _mod4857) {
+  exports[key10017] = _mod4857[key10017];
+  continue;
+}
+for (const key10021 in _mod4858) {
+  exports[key10021] = _mod4858[key10021];
+  continue;
+}
+for (const key10025 in _mod4859) {
+  exports[key10025] = _mod4859[key10025];
+  continue;
+}
+for (const key10029 in _mod4860) {
+  exports[key10029] = _mod4860[key10029];
+  continue;
+}
+for (const key10033 in _mod4861) {
+  exports[key10033] = _mod4861[key10033];
+  continue;
+}
+for (const key10037 in _mod4862) {
+  exports[key10037] = _mod4862[key10037];
+  continue;
+}
+for (const key10041 in installedNitro1) {
+  exports[key10041] = installedNitro1[key10041];
+  continue;
+}
+for (const key10045 in _mod4863) {
+  exports[key10045] = _mod4863[key10045];
+  continue;
+}
+for (const key10049 in _mod4864) {
+  exports[key10049] = _mod4864[key10049];
+  continue;
+}
+for (const key10053 in _mod4865) {
+  exports[key10053] = _mod4865[key10053];
+  continue;
+}
+for (const key10057 in react_native) {
+  exports[key10057] = react_native[key10057];
+  continue;
+}

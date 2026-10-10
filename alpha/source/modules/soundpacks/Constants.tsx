@@ -1,9 +1,9 @@
-// Module ID: 10942
-// Function ID: 10943
+// Module ID: 10982
+// Function ID: 10983
 // Name: Constants
 // Dependencies: [2]
 
-// Module 10942 (Constants)
+// Module 10982 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundpacks/Constants.tsx");

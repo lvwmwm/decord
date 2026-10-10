@@ -1,26 +1,26 @@
-// Module ID: 10619
-// Function ID: 10620
+// Module ID: 10653
+// Function ID: 10654
 // Name: StageChannelSelfRichPresenceStore
-// Dependencies: [2064, 2086, 5109, 4719, 2115, 1390, 5893, 2069, 5889, 1085, 4714, 10224, 5957, 5418, 5892, 1355, 504, 584, 2]
+// Dependencies: [2065, 2087, 5110, 4760, 2116, 1390, 5896, 2070, 5892, 1085, 4755, 10253, 5950, 5421, 5895, 1355, 504, 584, 2]
 
-// Module 10619 (StageChannelSelfRichPresenceStore)
+// Module 10653 (StageChannelSelfRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1355 from "module_1355" /* 1355 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4714 */;
-import useChannelName from "useChannelName" /* 5418 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5889 */;
-import StageMediaHooks from "StageMediaHooks" /* 5892 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5957 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10224 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
+import useChannelName from "useChannelName" /* 5421 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
+import StageMediaHooks from "StageMediaHooks" /* 5895 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10253 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import UserStore from "UserStore" /* 1390 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5893 */;
-import StageInstanceStore from "StageInstanceStore" /* 2069 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5896 */;
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -66,7 +66,7 @@ function handleUpdateActivity() {
               if (id === result) {
                 tmp15 = obj;
               }
-              const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(channel.id, tmp12(5957).StageChannelParticipantNamedIndex.SPEAKER);
+              const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(channel.id, tmp12(5950).StageChannelParticipantNamedIndex.SPEAKER);
               const length = mutableParticipants.filter((type) => type.type === StageChannelParticipants.StageChannelParticipantTypes.STREAM).length;
               const diff = mutableParticipants.length - length;
               size = undefined;

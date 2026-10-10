@@ -1,22 +1,22 @@
-// Module ID: 8791
-// Function ID: 8792
+// Module ID: 8810
+// Function ID: 8811
 // Name: SecureFramesVerifiedStore
-// Dependencies: [502, 5109, 7428, 8792, 8793, 1085, 8809, 5897, 5136, 504, 584, 2]
+// Dependencies: [502, 5110, 7428, 8811, 8812, 1085, 8828, 5900, 5137, 504, 584, 2]
 
-// Module 8791 (SecureFramesVerifiedStore)
+// Module 8810 (SecureFramesVerifiedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5136 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8809 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8828 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7428 */;
-import TransientKeyStore from "TransientKeyStore" /* 8792 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 8793 */;
+import TransientKeyStore from "TransientKeyStore" /* 8811 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 8812 */;
 import size from "module_2" /* 2 */;
 
-const f99218 = (acc, item) => {
+const f99481 = (acc, item) => {
   const obj = closure_0(dependencyMap[7]);
   const tmp = true === map.get(obj.decodeStreamKey(item).ownerId);
   const value = map1.get(item);
@@ -68,7 +68,7 @@ function handleUserUpdate(userId) {
       const result = map.set(userId, isKeyVerifiedResult);
     }
     const allActiveStreamKeys = StreamRTCConnectionStore.getAllActiveStreamKeys();
-    const reduced = allActiveStreamKeys.reduce(f99218, false);
+    const reduced = allActiveStreamKeys.reduce(f99481, false);
     const tmp16 = computeCallVerification();
     if (!flag) {
       flag = reduced;
@@ -132,7 +132,7 @@ let obj = {
           tmp6 = computeCallVerification();
         }
         return tmp6;
-      } else if (tmp10(5136).MediaEngineContextTypes.DEFAULT === context) {
+      } else if (tmp10(5137).MediaEngineContextTypes.DEFAULT === context) {
         map.clear();
         map1.clear();
         c10 = false;
@@ -153,7 +153,7 @@ let obj = {
       return tmp;
     }, false);
     const allActiveStreamKeys = StreamRTCConnectionStore.getAllActiveStreamKeys();
-    const reduced1 = allActiveStreamKeys.reduce(f99218, false);
+    const reduced1 = allActiveStreamKeys.reduce(f99481, false);
     const tmp3 = computeCallVerification();
     if (!reduced) {
       reduced = reduced1;

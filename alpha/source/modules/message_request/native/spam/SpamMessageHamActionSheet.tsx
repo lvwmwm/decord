@@ -1,27 +1,26 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12165
+// Function ID: 12166
 // Name: SpamMessageHamActionSheet
-// Dependencies: [32, 19, 17, 1390, 21, 5091, 587, 558, 576, 4768, 1126, 5008, 5055, 504, 12116, 6887, 6835, 8563, 5376, 6836, 2]
+// Dependencies: [32, 19, 17, 1390, 21, 5092, 587, 558, 576, 4809, 1126, 5056, 504, 12160, 6893, 6838, 8579, 5379, 6839, 2]
 
-// Module 12121 (SpamMessageHamActionSheet)
+// Module 12165 (SpamMessageHamActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5008 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6835 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6836 */;
-import ActionSheetCloseButton from "ActionSheetCloseButton" /* 6887 */;
-import Form from "Form" /* 8563 */;
-import useMessageRequestActions from "useMessageRequestActions" /* 12116 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
+import ActionSheetCloseButton from "ActionSheetCloseButton" /* 6893 */;
+import Form from "Form" /* 8579 */;
+import useMessageRequestActions from "useMessageRequestActions" /* 12160 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,11 +65,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessag
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     function handleRequestError() {
       let intl;
-      const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(onCancel[10]).t["EDYbS+"]), icon: onConfirm(onCancel[11]) };
+      const obj = { text: intl.string(channel(onCancel[10]).t["EDYbS+"]), variant: "critical" };
       const open = onConfirm(onCancel[9]).open;
       onConfirm(onCancel[9]);
       intl = channel(onCancel[10]).intl;
-      open(obj);
+      open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
     }
     cResult[0] = handleRequestError;
     first1 = handleRequestError;
@@ -79,7 +78,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessag
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     function handleAcceptSuccess() {
-      const obj = onConfirm(onCancel[12]);
+      const obj = onConfirm(onCancel[11]);
       obj.hideActionSheet();
     }
     cResult[1] = handleAcceptSuccess;
@@ -110,7 +109,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessag
       }
     }
   }
-  const tmpResult = tmp(onCancel[13]);
+  const tmpResult = tmp(onCancel[12]);
   const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
   if (cResult[5] !== stateFromStores) {
     class P {
@@ -131,7 +130,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessag
       }
     }
   }
-  const tmpResult2 = tmp(onCancel[14]);
+  const tmpResult2 = tmp(onCancel[13]);
   const messageRequestActions = tmpResult2.useMessageRequestActions(tmp13);
   const acceptMessageRequest = messageRequestActions.acceptMessageRequest;
   ({ isAcceptLoading, isOptimisticAccepted } = messageRequestActions);
@@ -182,11 +181,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessag
     user: stateFromStores,
     onError: function handleRequestError() {
       let intl;
-      const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(intl4.t["EDYbS+"]), icon: AssetRegistryDefault };
+      const obj = { text: intl.string(intl4.t["EDYbS+"]), variant: "critical" };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl4.intl;
-      open(obj);
+      open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
     },
     onAcceptSuccess: function handleAcceptSuccess() {
       const obj = ActionSheetActionCreatorsDefault;

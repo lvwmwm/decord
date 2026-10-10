@@ -1,9 +1,9 @@
-// Module ID: 10944
-// Function ID: 10945
+// Module ID: 10984
+// Function ID: 10985
 // Name: sound_playback/SoundUtils
 // Dependencies: [17, 1628, 1382, 2]
 
-// Module 10944 (sound_playback/SoundUtils)
+// Module 10984 (sound_playback/SoundUtils)
 import react_native from "react-native" /* 17 */;
 import "MetaQuestUtils";
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1628 */;
@@ -32,15 +32,14 @@ class RNSound {
     let closure_0 = fn;
     const DCDSoundManager = NativeModules.DCDSoundManager;
     DCDSoundManager.prepare(arg0, arg1, this._key, (arg0, arg1) => {
-      const tmp = arg1;
-      if (tmp) {
+      if (null != arg1) {
         ({ duration: self._duration, numberOfChannels: self._numberOfChannels } = arg1);
       }
       if (null == arg0) {
         self._loaded = true;
       }
       if (closure_0 != null) {
-        tmp4(arg0);
+        tmp3(arg0);
       }
     });
   }

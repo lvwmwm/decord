@@ -1,20 +1,20 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8291
+// Function ID: 8292
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1390, 1085, 1392, 1121, 4930, 1126, 1265, 8276, 7363, 584, 6674, 1295, 6670, 5632, 2]
+// Dependencies: [5, 1390, 1085, 1392, 1121, 4969, 1126, 1265, 8292, 7369, 584, 6675, 1295, 6671, 5635, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8275 (UserProfileActionCreators)
+// Module 8291 (UserProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl3 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import shared from "shared" /* 4930 */;
-import InlineUploaderDefault from "InlineUploader" /* 6670 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 6674 */;
-import MessageParserDefault from "MessageParser" /* 7363 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8276 */;
+import shared from "shared" /* 4969 */;
+import InlineUploaderDefault from "InlineUploader" /* 6671 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 6675 */;
+import MessageParserDefault from "MessageParser" /* 7369 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8292 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
@@ -49,7 +49,7 @@ let obj = function _saveProfileChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ let obj = function _saveProfileChanges() {
                 return obj12;
               } else {
                 c9 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               }
             }
           } else if (1 === c8) {

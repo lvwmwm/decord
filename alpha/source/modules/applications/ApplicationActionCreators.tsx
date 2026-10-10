@@ -1,13 +1,13 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 6852
+// Function ID: 6853
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6850, 2022, 5437, 1085, 584, 1295, 504, 558, 576, 2]
+// Dependencies: [5, 6853, 2022, 5440, 1085, 584, 1295, 504, 558, 576, 2]
 
-// Module 6849 (ApplicationActionCreators)
+// Module 6852 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6850 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6853 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import ApplicationStore from "ApplicationStore" /* 5437 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ let obj = function _fetchApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -338,7 +338,7 @@ obj = {
             obj11.dispatch(obj10);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp26) {
           closure_2 = tmp26;
           if (0 === c3) {

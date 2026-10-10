@@ -1,22 +1,22 @@
-// Module ID: 16336
-// Function ID: 16337
+// Module ID: 16403
+// Function ID: 16404
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 12077, 12078, 1085, 21, 5091, 587, 558, 576, 12079, 1265, 12080, 16337, 1126, 12366, 2]
+// Dependencies: [19, 17, 12121, 12122, 1085, 21, 5092, 587, 558, 576, 12123, 1265, 12124, 16404, 1126, 12410, 2]
 
-// Module 16336 (RedesignNotificationModal)
+// Module 16403 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12077 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12079 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12080 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12366 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12121 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12123 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12124 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12410 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12078 */;
-import createStyles from "createStyles" /* 5091 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12122 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignNo
         }
       }
     }
-    const tmp8 = jsx(tmp(16337).BellSpotIllustration, { width: 245, accessible: false });
+    const tmp8 = jsx(tmp(16404).BellSpotIllustration, { width: 245, accessible: false });
     cResult[4] = tmp8;
     tmp7 = tmp8;
   } else {

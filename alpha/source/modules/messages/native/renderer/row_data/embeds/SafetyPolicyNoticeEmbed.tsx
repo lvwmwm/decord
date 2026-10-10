@@ -1,17 +1,17 @@
-// Module ID: 13478
-// Function ID: 13479
+// Module ID: 13529
+// Function ID: 13530
 // Name: SafetyPolicyNoticeEmbed
-// Dependencies: [17, 1085, 5922, 4661, 1126, 7872, 5005, 2]
+// Dependencies: [17, 1085, 7512, 4702, 1126, 7890, 7572, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 13478 (SafetyPolicyNoticeEmbed)
+// Module 13529 (SafetyPolicyNoticeEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef4661 from "module_4661" /* 4661 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5005 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 5922 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7872 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7572 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7890 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -73,9 +73,9 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
             formatToPlainString = intl2.formatToPlainString;
             obj3 = { daysAgo: diff(obj4.unix(parsed), "days") };
             eevFb6 = intl5.t.eevFb6;
-            diff = _modDef4661().diff;
-            _modDef4661();
-            obj4 = _modDef4661;
+            diff = _modDef4702().diff;
+            _modDef4702();
+            obj4 = _modDef4702;
             intl3 = intl5.intl;
             intl4 = intl5.intl;
             return obj;

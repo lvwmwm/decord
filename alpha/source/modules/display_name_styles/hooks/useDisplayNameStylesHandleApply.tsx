@@ -1,10 +1,10 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15608
+// Function ID: 15609
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 19, 1085, 1409, 6669, 8275, 8272, 1265, 1410, 2]
+// Dependencies: [5, 19, 1085, 1409, 6670, 8291, 8288, 1265, 1410, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15546 (useDisplayNameStylesHandleApply)
+// Module 15608 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -15,10 +15,10 @@ let c4;
 const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesHandleApply.tsx");
 
-export const DisplayNameStylesApplyLocations = { TRY_THIS_STYLE: "try_this_style", PROFILE_EDITOR: "profile_editor" };
+export const DisplayNameStylesEntryPoints = { TRY_THIS_STYLE: "try_this_style", PROFILE_EDITOR: "profile_editor" };
 export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHandleApply(hasChanges) {
   hasChanges = hasChanges.hasChanges;
-  const _location = hasChanges.location;
+  const entryPoint = hasChanges.entryPoint;
   let selectedFontId = hasChanges.selectedFontId;
   const selectedEffectId = hasChanges.selectedEffectId;
   const selectedColors = hasChanges.selectedColors;
@@ -32,7 +32,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
   }
   const onSaveError = hasChanges.onSaveError;
   let closure_11 = selectedColors.useRef(false);
-  let items = [hasChanges, _location, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut, flag, onSaveError];
+  let items = [hasChanges, entryPoint, selectedFontId, selectedEffectId, selectedColors, defaultColor, onClose, guildId, isTryItOut, flag, onSaveError];
   return selectedColors.useCallback(selectedEffectId(function*(arg0, value) {
     let closure_0;
     let closure_1;
@@ -48,7 +48,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -93,7 +93,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
               }
             }
             defaultColor = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else if (1 === c4) {
           c3 = 0;
@@ -138,7 +138,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
             closure_129_11.current = false;
           }
         }
-        const obj11 = { font_name: hasChanges(selectedFontId[8]).DisplayNameFont[closure_129_2], effect_name: hasChanges(selectedFontId[3]).DisplayNameEffect[closure_129_3], colors: closure_129_4, location: closure_129_1 };
+        const obj11 = { font_name: hasChanges(selectedFontId[8]).DisplayNameFont[closure_129_2], effect_name: hasChanges(selectedFontId[3]).DisplayNameEffect[closure_129_3], colors: closure_129_4, entry_point: closure_129_1 };
         const track = tmp(selectedFontId[7]).track;
         const DISPLAY_NAME_STYLES_APPLIED = defaultColor.DISPLAY_NAME_STYLES_APPLIED;
         const tmp44 = tmp(selectedFontId[7]);

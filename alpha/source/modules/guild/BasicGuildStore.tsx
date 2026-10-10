@@ -1,9 +1,9 @@
-// Module ID: 7955
-// Function ID: 7956
+// Module ID: 7973
+// Function ID: 7974
 // Name: BasicGuildStore
 // Dependencies: [504, 584, 2]
 
-// Module 7955 (BasicGuildStore)
+// Module 7973 (BasicGuildStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

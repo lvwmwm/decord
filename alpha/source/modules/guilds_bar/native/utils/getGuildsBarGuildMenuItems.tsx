@@ -1,21 +1,21 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16719
+// Function ID: 16720
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 2086, 5973, 1085, 10411, 5018, 1126, 14110, 2000, 8756, 6805, 7085, 14057, 12039, 5055, 10429, 12040, 6800, 2]
+// Dependencies: [5, 2087, 5966, 1085, 10444, 6769, 1126, 14165, 2000, 8772, 6808, 7091, 14112, 12083, 5056, 10462, 12084, 6803, 2]
 // Exports: default
 
-// Module 16649 (getGuildsBarGuildMenuItems)
+// Module 16719 (getGuildsBarGuildMenuItems)
 import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6800 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6805 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12039 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12040 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14057 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6803 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6808 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12083 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12084 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5973 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -79,7 +79,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
               const items = [closure_128_0];
               value.default(items, constants.GUILD_LIST);
               paths = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp10) {
             paths = 3;
@@ -136,7 +136,7 @@ export default function getGuildsBarGuildMenuItems(guildId) {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
         const obj = { guildId };
-        const tmp2 = asyncRequire(10429, dependencyMap.paths);
+        const tmp2 = asyncRequire(10462, dependencyMap.paths);
         openLazy(tmp2, "muteSettings" + guildId, obj);
       };
       splice(1, 0, obj5);

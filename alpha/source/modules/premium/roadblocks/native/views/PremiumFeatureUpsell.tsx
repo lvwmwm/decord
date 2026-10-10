@@ -1,28 +1,28 @@
-// Module ID: 9505
-// Function ID: 9506
+// Module ID: 9534
+// Function ID: 9535
 // Name: PremiumFeatureUpsell
-// Dependencies: [109, 19, 17, 5109, 1392, 1085, 7145, 21, 9253, 4728, 1126, 5091, 587, 558, 576, 9432, 9242, 9254, 9506, 1265, 9250, 9489, 1200, 9507, 9508, 5087, 9016, 5388, 1105, 5375, 5379, 6848, 9509, 8378, 4811, 9419, 2]
+// Dependencies: [109, 19, 17, 5110, 1392, 1085, 7151, 21, 9280, 4769, 1126, 5092, 587, 558, 576, 9461, 9269, 9281, 9535, 1265, 9277, 9518, 1200, 9536, 9537, 5088, 9035, 5391, 1105, 5378, 5382, 6851, 9538, 8394, 4850, 9448, 2]
 
-// Module 9505 (PremiumFeatureUpsell)
+// Module 9534 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl7 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import PremiumUtils from "PremiumUtils" /* 4728 */;
-import spring from "spring" /* 5375 */;
-import springPresets from "springPresets" /* 5379 */;
-import LinearGradientDefault from "LinearGradient" /* 5388 */;
-import ColorConstants from "ColorConstants" /* 7145 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9250 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9253 */;
+import PremiumUtils from "PremiumUtils" /* 4769 */;
+import spring from "spring" /* 5378 */;
+import springPresets from "springPresets" /* 5382 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import ColorConstants from "ColorConstants" /* 7151 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9277 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9280 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -243,7 +243,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                                             constructor() {
                                               const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
                                               const tmp2 = LinearGradientDefault;
-                                              return authStore3(tmp2, obj);
+                                              return syncedClientThemes(tmp2, obj);
                                             }
                                           }
                                           let obj2 = { style: tmp19, children: items };
@@ -263,7 +263,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                                   constructor() {
                                     const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
                                     const tmp2 = LinearGradientDefault;
-                                    return authStore3(tmp2, obj);
+                                    return syncedClientThemes(tmp2, obj);
                                   }
                                 }
                                 const obj3 = { disabled: loading, shrink: true, style: tmp7.button, size: tmp(tmp2[22]).ButtonSizes.XSMALL, onPress, text: tmp29, color: tmp(tmp2[22]).ButtonColors.GREEN, renderIcon: tmp31, renderLinearGradient: tmp32 };
@@ -282,7 +282,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                                 constructor() {
                                   const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
                                   const tmp2 = LinearGradientDefault;
-                                  return authStore3(tmp2, obj);
+                                  return syncedClientThemes(tmp2, obj);
                                 }
                               }
                               cResult[36] = tmp7.gradient;
@@ -298,7 +298,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                         let tmpResult;
                         if (closure_4) {
                           const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-                          const NitroWheelIcon = tmp2(9016).NitroWheelIcon;
+                          const NitroWheelIcon = tmp2(9035).NitroWheelIcon;
                           items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
                           tmpResult = tmp(NitroWheelIcon, obj2);
                         } else {
@@ -347,7 +347,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                 constructor() {
                   const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
                   const tmp2 = LinearGradientDefault;
-                  return authStore3(tmp2, obj);
+                  return syncedClientThemes(tmp2, obj);
                 }
               }
               tmp22Result = tmp22(tmp23, obj6);
@@ -471,7 +471,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       let tmpResult;
       if (mobileEmojiPickerUpsellRestyleEnabledForFeature) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(9016).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9035).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {
@@ -490,7 +490,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
     renderLinearGradient() {
       const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
       const tmp2 = LinearGradientDefault;
-      return authStore3(tmp2, obj);
+      return syncedClientThemes(tmp2, obj);
     }
   };
   const ShinyButton = tmp(tmp2[22]).ShinyButton;

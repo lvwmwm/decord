@@ -1,24 +1,24 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 15994
+// Function ID: 15995
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1390, 21, 5091, 587, 558, 576, 1497, 504, 4923, 1126, 3083, 15933, 3115, 15935, 15936, 2]
+// Dependencies: [17, 1390, 21, 5092, 587, 558, 576, 1497, 504, 4962, 1126, 3086, 15995, 3118, 15997, 15998, 2]
 
-// Module 15932 (CheckpointWelcomeScreen)
+// Module 15994 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import _modDef3083 from "module_3083" /* 3083 */;
-import _modDef3115 from "module_3115" /* 3115 */;
-import UserUtils from "UserUtils" /* 4923 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 15933 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 15935 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 15936 */;
+import _modDef3086 from "module_3086" /* 3086 */;
+import _modDef3118 from "module_3118" /* 3118 */;
+import UserUtils from "UserUtils" /* 4962 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 15995 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 15997 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 15998 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
     const titleText = tmp4.titleText;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
-      const stringResult = intl.string(_modDef3083["CdU/PF"]);
+      const stringResult = intl.string(_modDef3086["CdU/PF"]);
       cResult[7] = stringResult;
       tmp14 = stringResult;
     } else {
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
       if (cResult[11] !== name) {
         const intl2 = tmp(1126).intl;
         const obj4 = { username: name };
-        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3115.xhZ23b, obj4);
+        const formatToPlainStringResult = intl2.formatToPlainString(_modDef3118.xhZ23b, obj4);
         cResult[11] = name;
         cResult[12] = formatToPlainStringResult;
         tmp20 = formatToPlainStringResult;
@@ -200,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
   const obj3 = { children: hasOwnProperty(View, obj4) };
   obj4 = { style: tmp.container, children: metroRequire(View, obj5) };
   obj5 = { style: tmp.content, children: items3 };
-  const obj6 = { style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3083["CdU/PF"]), delay, variant: "display-lg" };
+  const obj6 = { style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3086["CdU/PF"]), delay, variant: "display-lg" };
   items1 = [tmp.title, ];
   const obj7 = { transform: items2 };
   items2 = [{ scale: bound }];
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointWe
   const tmp6 = TextWritingAnimationDefault;
   intl = intl3.intl;
   items3 = [hasOwnProperty(tmp6, obj6), , ];
-  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3115.xhZ23b, { username: name }), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3118.xhZ23b, { username: name }), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
   const tmp7 = TextWritingAnimationDefault;
   intl2 = intl3.intl;
   items3[1] = hasOwnProperty(tmp7, obj8);

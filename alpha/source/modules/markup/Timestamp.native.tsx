@@ -1,15 +1,15 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11767
+// Function ID: 11768
 // Name: Timestamp
-// Dependencies: [19, 21, 5091, 587, 558, 576, 11723, 4768, 1200, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 11768, 4809, 1200, 2]
 
-// Module 11722 (Timestamp)
+// Module 11767 (Timestamp)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11723 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11768 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timestamp(no
   if (cResult[0] !== node.full) {
     const fn = function o() {
       const obj = ToastActionCreatorsDefault;
-      const obj2 = { key: "TIMESTAMP", content: node.full };
-      obj.open(obj2);
+      const obj2 = { text: node.full };
+      obj.open("TIMESTAMP", obj2);
     };
     cResult[0] = node.full;
     cResult[1] = fn;
@@ -73,8 +73,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timestamp(no
     style: timestamp,
     onPress() {
       const obj = ToastActionCreatorsDefault;
-      const obj2 = { key: "TIMESTAMP", content: node.full };
-      obj.open(obj2);
+      const obj2 = { text: node.full };
+      obj.open("TIMESTAMP", obj2);
     },
     children: tmp2
   };

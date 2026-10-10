@@ -1,26 +1,26 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 11413
+// Function ID: 11414
 // Name: ConjurePlatformUtils
-// Dependencies: [5, 1999, 10617, 10767, 11372, 8441, 9207, 10788, 1097, 10991, 11373, 11375, 7518, 10891, 11376, 11377, 11378, 11380, 11381, 2]
+// Dependencies: [5, 1999, 10651, 10802, 11414, 8457, 9234, 10862, 1097, 11031, 11415, 11417, 7521, 10931, 11418, 11419, 11420, 11422, 11423, 2]
 // Exports: inspectConjurePreviewPoint
 
-// Module 11371 (ConjurePlatformUtils)
+// Module 11413 (ConjurePlatformUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8441 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9207 */;
-import FramesConstants from "FramesConstants" /* 10767 */;
-import ApplicationUtils from "ApplicationUtils" /* 10788 */;
-import PushNotificationDefault from "PushNotification" /* 10991 */;
-import Constants from "Constants" /* 11372 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11373 */;
-import conjurePreviewCall from "conjurePreviewCall" /* 11375 */;
-import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 11378 */;
-import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 11381 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9234 */;
+import FramesConstants from "FramesConstants" /* 10802 */;
+import ApplicationUtils from "ApplicationUtils" /* 10862 */;
+import PushNotificationDefault from "PushNotification" /* 11031 */;
+import Constants from "Constants" /* 11414 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11415 */;
+import conjurePreviewCall from "conjurePreviewCall" /* 11417 */;
+import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 11420 */;
+import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 11423 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10617 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11377 */;
-import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 11380 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11419 */;
+import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 11422 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -182,7 +182,7 @@ function callNativePreviewFrame(iframeId, arg1, arg2, id) {
   const promise = new Promise((arg0, arg1) => {
     let closure_1;
     let closure_3;
-    const f154460 = () => {
+    const f154911 = () => {
 
     };
     let closure_0 = arg0;
@@ -220,7 +220,7 @@ function callNativePreviewFrame(iframeId, arg1, arg2, id) {
           }
           _null = null;
         } else {
-          const tmp4Result = tmp4(11375);
+          const tmp4Result = tmp4(11417);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.result, tmp8.id)) {
             cleanup();
             closure_0(parsed);
@@ -230,10 +230,10 @@ function callNativePreviewFrame(iframeId, arg1, arg2, id) {
       }
     });
     let injectJavaScriptResult = closure_4.injectJavaScript(obj2(obj4[13])(timeout));
-    injectJavaScriptResult.catch(f154460);
+    injectJavaScriptResult.catch(f154911);
     const interval = setInterval(function post() {
       const injectJavaScriptResult = closure_4.injectJavaScript(obj2(obj4[13])(closure_3));
-      injectJavaScriptResult.catch(f154460);
+      injectJavaScriptResult.catch(f154911);
     }, obj2.retryMs);
   });
   return promise;
@@ -256,7 +256,7 @@ let obj = function _relayPreviewCapture() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let tmp45;
@@ -420,7 +420,7 @@ obj = function _inspectConjurePreviewPoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -512,7 +512,7 @@ obj = function _relayPreviewControl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let tmp71;
@@ -725,7 +725,7 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
     const promise = new Promise((arg0, arg1) => {
       let closure_1;
       let closure_3;
-      const f154460 = () => {
+      const f154911 = () => {
 
       };
       let closure_0 = arg0;
@@ -763,7 +763,7 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
             }
             _null = null;
           } else {
-            const tmp4Result = tmp4(11375);
+            const tmp4Result = tmp4(11417);
             if (tmp4Result.isResultEnvelope(parsed, tmp7.result, tmp8.id)) {
               cleanup();
               closure_0(parsed);
@@ -773,10 +773,10 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
         }
       });
       let injectJavaScriptResult = closure_4.injectJavaScript(obj2(obj4[13])(timeout));
-      injectJavaScriptResult.catch(f154460);
+      injectJavaScriptResult.catch(f154911);
       const interval = setInterval(function post() {
         const injectJavaScriptResult = closure_4.injectJavaScript(obj2(obj4[13])(closure_3));
-        injectJavaScriptResult.catch(f154460);
+        injectJavaScriptResult.catch(f154911);
       }, obj2.retryMs);
     });
     promise.catch(() => {
@@ -794,7 +794,7 @@ let closure_19 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
   }
   let tmp3 = null;
   if (null != prop) {
-    const obj2 = iframeId(11373);
+    const obj2 = iframeId(11415);
     const conjureBuilderPreviewFrame = obj2.getConjureBuilderPreviewFrame(prop);
     let tmp7 = null;
     if (null != conjureBuilderPreviewFrame) {
@@ -822,7 +822,7 @@ let closure_19 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
     }
     let tmp12 = null;
     if (null != prop1) {
-      const obj5 = iframeId(11373);
+      const obj5 = iframeId(11415);
       const conjureBuilderPreviewFrame1 = obj5.getConjureBuilderPreviewFrame(prop1);
       iframeId = null;
       if (isLaunched(conjureBuilderPreviewFrame1)) {
@@ -980,7 +980,7 @@ obj = {
       const promise = new Promise((arg0, arg1) => {
         let closure_1;
         let closure_3;
-        const f154460 = () => {
+        const f154911 = () => {
 
         };
         let closure_0 = arg0;
@@ -1018,7 +1018,7 @@ obj = {
               }
               _null = null;
             } else {
-              const tmp4Result = tmp4(11375);
+              const tmp4Result = tmp4(11417);
               if (tmp4Result.isResultEnvelope(parsed, tmp7.result, tmp8.id)) {
                 cleanup();
                 closure_0(parsed);
@@ -1028,10 +1028,10 @@ obj = {
           }
         });
         let injectJavaScriptResult = closure_4.injectJavaScript(obj2(obj4[13])(timeout));
-        injectJavaScriptResult.catch(f154460);
+        injectJavaScriptResult.catch(f154911);
         const interval = setInterval(function post() {
           const injectJavaScriptResult = closure_4.injectJavaScript(obj2(obj4[13])(closure_3));
-          injectJavaScriptResult.catch(f154460);
+          injectJavaScriptResult.catch(f154911);
         }, obj2.retryMs);
       });
       const catchPromise = promise.catch(() => {

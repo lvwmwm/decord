@@ -1,24 +1,24 @@
-// Module ID: 11463
-// Function ID: 11464
+// Module ID: 11508
+// Function ID: 11509
 // Name: PollsActionCreators
-// Dependencies: [5, 4710, 7306, 502, 2064, 7237, 5888, 5429, 7889, 10454, 1085, 38, 5298, 1126, 6104, 6913, 11464, 11466, 5106, 12, 504, 584, 7882, 11475, 4930, 11469, 7172, 9237, 5632, 2]
+// Dependencies: [5, 4751, 7312, 502, 2065, 7243, 5891, 5432, 7907, 10488, 1085, 38, 5299, 1126, 6097, 6919, 11509, 11511, 5107, 12, 504, 584, 7900, 11520, 4969, 11514, 7178, 9264, 5635, 2]
 
-// Module 11463 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6913 */;
-import DraftStore from "DraftStore" /* 7237 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 11464 */;
+// Module 11508 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6919 */;
+import DraftStore from "DraftStore" /* 7243 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 11509 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4710 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7306 */;
+import LurkingStore from "LurkingStore" /* 4751 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7312 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5888 */;
-import MessageStore from "MessageStore" /* 5429 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7889 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10454 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5891 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7907 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10488 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -142,7 +142,7 @@ function handleShowVotesForAnswer(messageId) {
 function handleUpdateVoteEditingState(channelId) {
   channelId = channelId.channelId;
   const isEditing = channelId.isEditing;
-  authStore3(channelId, channelId.messageId, (showResults) => {
+  syncedClientThemes(channelId, channelId.messageId, (showResults) => {
     let flag;
     obj = { channelId, selectedAnswerIds: new Set(), submitting: false, editing: isEditing, showResults: flag };
     flag = undefined;
@@ -426,7 +426,7 @@ obj = function _handleClearPollVote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -485,7 +485,7 @@ obj = function _handleClearPollVote() {
                 }
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -653,7 +653,7 @@ obj = function _createPoll() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -786,7 +786,7 @@ obj = function _createPoll() {
                 duration = 0;
               }
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } catch (tmp33) {
             closure_3 = tmp33;

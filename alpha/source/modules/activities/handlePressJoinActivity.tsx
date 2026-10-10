@@ -1,22 +1,22 @@
-// Module ID: 10883
-// Function ID: 10884
+// Module ID: 10923
+// Function ID: 10924
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2022, 2064, 2086, 4709, 1390, 5112, 2063, 10880, 10804, 5298, 1126, 6849, 10803, 10812, 2]
+// Dependencies: [5, 2022, 2065, 2087, 4750, 1390, 5113, 2064, 10920, 10877, 5299, 1126, 6852, 5924, 10846, 10822, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 10883 (handlePressJoinActivity)
-import intl9 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 10804 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10880 */;
+// Module 10923 (handlePressJoinActivity)
+import intl11 from "intl" /* 1126 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 10877 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10920 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -25,6 +25,7 @@ function handlePressJoinActivity(arg0) {
   let embeddedActivityJoinability;
   let handleCanJoin;
   let intl;
+  let intl10;
   let intl2;
   let intl3;
   let intl4;
@@ -32,6 +33,7 @@ function handlePressJoinActivity(arg0) {
   let intl6;
   let intl7;
   let intl8;
+  let intl9;
   ({ embeddedActivityJoinability, handleCanJoin } = arg0);
   if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.CAN_JOIN === embeddedActivityJoinability) {
     if (handleCanJoin != null) {
@@ -41,28 +43,35 @@ function handlePressJoinActivity(arg0) {
     const tmpResult = showActivitiesInvalidPermissionsAlert;
     const result = tmpResult.showActivitiesInvalidPermissionsAlert();
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
-    const obj2 = { title: intl7.string(intl9.t.PtobXW), body: intl8.string(intl9.t.UXoQTp), hideActionSheet: false };
+    const obj2 = { title: intl9.string(intl11.t.PtobXW), body: intl10.string(intl11.t.UXoQTp), hideActionSheet: false };
+    const show5 = AlertActionCreatorsDefault.show;
+    AlertActionCreatorsDefault;
+    intl9 = tmp(1126).intl;
+    intl10 = tmp(1126).intl;
+    show5(obj2);
+  } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
+    const obj3 = { title: intl7.string(intl11.t.PtobXW), body: intl8.string(intl11.t.uGDCcw), hideActionSheet: false };
     const show4 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
     intl7 = tmp(1126).intl;
     intl8 = tmp(1126).intl;
-    show4(obj2);
-  } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
-    const obj3 = { title: intl5.string(intl9.t.PtobXW), body: intl6.string(intl9.t.uGDCcw), hideActionSheet: false };
+    show4(obj3);
+  } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
+    const obj4 = { title: intl5.string(intl11.t.PtobXW), body: intl6.string(intl11.t["4WuFRE"]), hideActionSheet: false };
     const show3 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
     intl5 = tmp(1126).intl;
     intl6 = tmp(1126).intl;
-    show3(obj3);
-  } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
-    const obj4 = { title: intl3.string(intl9.t.PtobXW), body: intl4.string(intl9.t["4WuFRE"]), hideActionSheet: false };
+    show3(obj4);
+  } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.CHANNEL_CONTENT_GATED === embeddedActivityJoinability) {
+    const obj5 = { title: intl3.string(intl11.t.PtobXW), body: intl4.string(intl11.t.pKLV22), hideActionSheet: false };
     const show2 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
     intl3 = tmp(1126).intl;
     intl4 = tmp(1126).intl;
-    show2(obj4);
+    show2(obj5);
   } else {
-    obj = { title: intl.string(intl9.t.PtobXW), body: intl2.string(intl9.t.FUCQco), hideActionSheet: false };
+    obj = { title: intl.string(intl11.t.PtobXW), body: intl2.string(intl11.t.FUCQco), hideActionSheet: false };
     const show = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
     intl = tmp(1126).intl;
@@ -84,8 +93,10 @@ let obj = function _maybeJoinEmbeddedActivity() {
       let c6;
       let c7;
       let closure_8;
+      let obj10;
       let obj4;
-      let obj9;
+      let obj5;
+      let obj6;
       if (1 === tmp4) {
         if (arg0 === 1) {
           c4 = 3;
@@ -104,11 +115,11 @@ let obj = function _maybeJoinEmbeddedActivity() {
           });
           application = c3;
           if (null == application) {
-            let obj5 = closure_130_1(closure_130_2[12]);
             c3 = 2;
             c4 = 1;
-            const obj7 = { value: obj5.fetchApplication(c1), done: false };
-            return obj7;
+            const obj8 = { value: obj6.fetchApplication(c1), done: false };
+            obj6 = closure_130_1(closure_130_2[12]);
+            return obj8;
           }
         }
       } else if (arg0 === 1) {
@@ -125,21 +136,23 @@ let obj = function _maybeJoinEmbeddedActivity() {
       if (null != closure_8) {
         if (null != application) {
           currentUser = closure_130_8.getCurrentUser();
+          const channel = closure_130_5.getChannel(channelId);
           let id;
-          const tmp46 = closure_130_11;
-          const tmp49 = closure_130_1(closure_130_2[8]);
+          const tmp50 = closure_130_11;
+          const tmp53 = closure_130_1(closure_130_2[8]);
           if (currentUser != null) {
             id = currentUser.id;
           }
-          const obj8 = {
-            embeddedActivityJoinability: tmp49(obj9),
+          const obj9 = {
+            embeddedActivityJoinability: tmp53(obj10),
             handleCanJoin() {
-                  return closure_1_12(...arguments);
+                  return closure_1_13(...arguments);
                 }
           };
-          obj9 = { userId: id, application, channelId, currentUser, isActivitiesEnabledForCurrentPlatform: obj4.getIsActivitiesEnabledForCurrentPlatform(), ChannelStore: closure_130_5, VoiceStateStore: closure_130_9, PermissionStore: closure_130_7, GuildStore: closure_130_6 };
+          obj10 = { userId: id, application, channelId, currentUser, isContentGated: obj4.isChannelContentGated(channel), isActivitiesEnabledForCurrentPlatform: obj5.getIsActivitiesEnabledForCurrentPlatform(), ChannelStore: closure_130_5, VoiceStateStore: closure_130_9, PermissionStore: closure_130_7, GuildStore: closure_130_6 };
           obj4 = closure_130_0(closure_130_2[13]);
-          tmp46(obj8);
+          obj5 = closure_130_0(closure_130_2[14]);
+          tmp50(obj9);
         }
       }
       await "IconComponent";
@@ -169,7 +182,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           } else {
             try {
@@ -186,7 +199,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
                   const obj4 = { applicationId: applicationId.applicationId, activityChannelId, locationObject: {}, analyticsLocations, componentId, sectionName, inviterUserId };
                   c1 = 1;
                   c0 = 1;
-                  const obj5 = { value: c1(closure_1_2[14])(obj4), done: false };
+                  const obj5 = { value: c1(closure_1_2[15])(obj4), done: false };
                   return obj5;
                 }
               } else if (arg0 === 1) {
@@ -198,7 +211,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             } catch (tmp12) {
               c0 = 3;
               throw tmp12;

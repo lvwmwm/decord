@@ -1,43 +1,42 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15259
+// Function ID: 15260
 // Name: QuestHome
-// Dependencies: [32, 19, 17, 5080, 9147, 7384, 7405, 5979, 1085, 21, 5091, 587, 558, 576, 504, 1503, 15198, 584, 7470, 7477, 1126, 15254, 5376, 5941, 7087, 9149, 15256, 5087, 9144, 1631, 7390, 9150, 5986, 7380, 4768, 5008, 1265, 1273, 8952, 15278, 12991, 12922, 15279, 1504, 5982, 15200, 7404, 15271, 15275, 12933, 15280, 15361, 8608, 2]
+// Dependencies: [32, 19, 17, 5081, 9168, 7390, 7411, 5972, 1085, 21, 5092, 587, 558, 576, 504, 1503, 15260, 584, 7470, 7477, 1126, 15316, 5379, 5934, 7093, 9170, 15318, 5088, 9165, 1631, 7396, 9171, 5979, 7386, 4809, 1265, 1273, 8971, 15340, 13038, 12970, 15341, 1504, 5975, 15262, 7410, 15333, 15337, 12981, 15342, 15423, 8624, 2]
 
-// Module 15197 (QuestHome)
+// Module 15259 (QuestHome)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useNavigation from "useNavigation" /* 1503 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5008 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5941 */;
-import QuestConstants from "QuestConstants" /* 5979 */;
-import QuestTypes from "QuestTypes" /* 5982 */;
-import AdCreativeType from "AdCreativeType" /* 5986 */;
-import QuestDataUtils from "QuestDataUtils" /* 7380 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9149 */;
-import QuestActionCreators from "QuestActionCreators" /* 9150 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12933 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15198 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 15200 */;
-import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 15254 */;
-import QuestHomeBountiesDefault from "QuestHomeBounties" /* 15256 */;
-import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 15278 */;
-import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 15361 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
+import QuestDataUtils from "QuestDataUtils" /* 7386 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9170 */;
+import QuestActionCreators from "QuestActionCreators" /* 9171 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12981 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15260 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 15262 */;
+import QuestHomeEmptyStateDefault from "QuestHomeEmptyState" /* 15316 */;
+import QuestHomeBountiesDefault from "QuestHomeBounties" /* 15318 */;
+import QuestHomeOpenTriggerPoint2 from "QuestHomeOpenTriggerPoint" /* 15340 */;
+import QuestHomeRoundtripTrackerDefault from "QuestHomeRoundtripTracker" /* 15423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9147 */;
-import QuestStore from "QuestStore" /* 7384 */;
-import QuestUtmStore from "QuestUtmStore" /* 7405 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9168 */;
+import QuestStore from "QuestStore" /* 7390 */;
+import QuestUtmStore from "QuestUtmStore" /* 7411 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -556,10 +555,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
     tmp6 = cResult[2];
   }
   if (cResult[3] !== tmp5) {
-    const obj3 = { action: authStore3(components_Button_Button.Button, obj4) };
+    const obj3 = { action: syncedClientThemes(components_Button_Button.Button, obj4) };
     obj4 = { variant: "secondary", text: tmp6, onPress: tmp5 };
     const tmp11 = QuestHomeEmptyStateDefault;
-    const tmp12 = authStore3(tmp11, obj3);
+    const tmp12 = syncedClientThemes(tmp11, obj3);
     cResult[3] = tmp5;
     cResult[4] = tmp12;
     tmp8 = tmp12;
@@ -575,12 +574,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   navigation = obj.useNavigation();
   const items = [navigation];
   const callback = react.useCallback(() => navigation.goBack(), items);
-  const obj2 = { action: authStore3(Button, obj3) };
+  const obj2 = { action: syncedClientThemes(Button, obj3) };
   obj3 = { variant: "secondary", text: intl.string(intl4.t["/g10LC"]), onPress: callback };
   const tmp3 = QuestHomeEmptyStateDefault;
   Button = components_Button_Button.Button;
   intl = intl4.intl;
-  return authStore3(tmp3, obj2);
+  return syncedClientThemes(tmp3, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyStateFiltered(onClearFilters) {
@@ -602,7 +601,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   }
   if (cResult[1] !== onClearFilters) {
     const obj2 = { variant: "secondary", text: first, onPress: onClearFilters };
-    const tmp8 = authStore3(components_Button_Button.Button, obj2);
+    const tmp8 = syncedClientThemes(components_Button_Button.Button, obj2);
     cResult[1] = onClearFilters;
     cResult[2] = tmp8;
     tmp6 = tmp8;
@@ -624,7 +623,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   }
   if (cResult[5] !== tmp6) {
     const obj3 = { action: tmp6, title: tmp9, subtitle: tmp10 };
-    const tmp16 = authStore3(QuestHomeEmptyStateDefault, obj3);
+    const tmp16 = syncedClientThemes(QuestHomeEmptyStateDefault, obj3);
     cResult[5] = tmp6;
     cResult[6] = tmp16;
     tmp13 = tmp16;
@@ -639,14 +638,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   let intl3;
   let obj2;
   onClearFilters = onClearFilters.onClearFilters;
-  const obj = { action: authStore3(Button, obj2), title: intl2.string(intl4.t.PBfFnx), subtitle: intl3.string(intl4.t.nwdKFC) };
+  const obj = { action: syncedClientThemes(Button, obj2), title: intl2.string(intl4.t.PBfFnx), subtitle: intl3.string(intl4.t.nwdKFC) };
   obj2 = { variant: "secondary", text: intl.string(intl4.t.urZl31), onPress: onClearFilters };
   const tmp = QuestHomeEmptyStateDefault;
   Button = components_Button_Button.Button;
   intl = intl4.intl;
   intl2 = intl4.intl;
   intl3 = intl4.intl;
-  return authStore3(tmp, obj);
+  return syncedClientThemes(tmp, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderPreviewButton() {
@@ -677,9 +676,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { grow: true, onPress: first, variant: "primary", text: intl.string(intl4.t.tx5Ax5) };
-      const Button = tmp(5376).Button;
+      const Button = tmp(5379).Button;
       intl = tmp(1126).intl;
-      const tmp9 = authStore3(Button, obj2);
+      const tmp9 = syncedClientThemes(Button, obj2);
       cResult[1] = tmp9;
       tmp7 = tmp9;
     } else {
@@ -687,7 +686,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     }
     if (cResult[2] !== tmp4.previewButton) {
       let obj3 = { style: tmp4.previewButton, children: tmp7 };
-      const tmp13 = authStore3(hasOwnProperty, obj3);
+      const tmp13 = syncedClientThemes(hasOwnProperty, obj3);
       cResult[2] = tmp4.previewButton;
       cResult[3] = tmp13;
       tmp10 = tmp13;
@@ -713,11 +712,11 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   let obj = hooks_QuestHooks;
   let tmp5 = null;
   if (obj.useShouldShowPreviewToolTab()) {
-    let obj2 = { style: tmp.previewButton, children: authStore3(Button, obj3) };
+    let obj2 = { style: tmp.previewButton, children: syncedClientThemes(Button, obj3) };
     obj3 = { grow: true, onPress: callback, variant: "primary", text: intl.string(intl4.t.tx5Ax5) };
-    Button = tmp3(5376).Button;
+    Button = tmp3(5379).Button;
     intl = tmp3(1126).intl;
-    tmp5 = authStore3(hasOwnProperty, obj2);
+    tmp5 = syncedClientThemes(hasOwnProperty, obj2);
   }
   return tmp5;
 });
@@ -735,7 +734,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   ({ orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel, shopCarouselConfig } = arg0);
   const tmp4 = closure_17();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = authStore3(closure_22, {});
+    const tmp8 = syncedClientThemes(closure_22, {});
     cResult[0] = tmp8;
     first = tmp8;
   } else {
@@ -758,9 +757,9 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
           const _Symbol = Symbol;
           if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
             const obj2 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
-            const Text = tmp(5087).Text;
+            const Text = tmp(5088).Text;
             intl = tmp(1126).intl;
-            const tmp14 = authStore3(Text, obj2);
+            const tmp14 = syncedClientThemes(Text, obj2);
             cResult[9] = tmp14;
             tmp12 = tmp14;
           } else {
@@ -768,7 +767,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
           }
           if (cResult[10] !== tmp11) {
             const obj3 = { style: tmp11, children: tmp12 };
-            const tmp18 = authStore3(hasOwnProperty, obj3);
+            const tmp18 = syncedClientThemes(hasOwnProperty, obj3);
             cResult[10] = tmp11;
             cResult[11] = tmp18;
             tmp15 = tmp18;
@@ -784,7 +783,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
           }
           const obj4 = { children: items };
           items = [first, tmp9, tmp15];
-          const tmp22 = authStore5(authStore4, obj4);
+          const tmp22 = authStore4(authStore3, obj4);
           cResult[12] = tmp9;
           cResult[13] = tmp15;
           cResult[14] = tmp22;
@@ -799,7 +798,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
   }
-  const tmp10 = authStore3(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
+  const tmp10 = syncedClientThemes(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
   cResult[1] = obtainableOrbRewards;
   cResult[2] = orbShopProducts;
   cResult[3] = shopCarouselConfig;
@@ -820,16 +819,16 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   const obj = { children: items };
   items = [, , ];
   const tmp = closure_17();
-  items[0] = authStore3(closure_22, {});
-  items[1] = authStore3(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
-  const obj2 = { style: items1, children: authStore3(Text, obj3) };
+  items[0] = syncedClientThemes(closure_22, {});
+  items[1] = syncedClientThemes(QuestHomeBountiesDefault, { shopCarouselConfig, orbShopProducts, obtainableOrbRewards, showOrbShopPlaceholderCarousel });
+  const obj2 = { style: items1, children: syncedClientThemes(Text, obj3) };
   items1 = [, ];
   ({ sectionHeader: arr2[0], sectionHeaderWithTag: arr2[1] } = tmp);
   obj3 = { variant: "text-lg/semibold", color: "text-strong", children: intl.string(intl4.t.JALI2K) };
   Text = Text_Text.Text;
   intl = intl4.intl;
-  items[2] = authStore3(hasOwnProperty, obj2);
-  return authStore5(authStore4, obj);
+  items[2] = syncedClientThemes(hasOwnProperty, obj2);
+  return authStore4(authStore3, obj);
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -860,7 +859,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function M
             return tmp7;
           }
           const obj2 = { onLayout, children: tmp2 };
-          const tmp10 = authStore3(hasOwnProperty, obj2);
+          const tmp10 = syncedClientThemes(hasOwnProperty, obj2);
           cResult[6] = onLayout;
           cResult[7] = tmp2;
           cResult[8] = tmp10;
@@ -892,7 +891,7 @@ let closure_24 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function M
   } else {
     tmp5Result = tmp5(closure_22, {});
   }
-  return authStore3(tmp6, obj);
+  return syncedClientThemes(tmp6, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHome(arg0) {
@@ -1033,11 +1032,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const obj = QuestDataUtils;
         const tmp8 = null == obj.findQuestOrReplacement(tmp, quests, excludedQuests) && ref.current !== tmp;
         if (tmp8) {
-          const obj2 = { key: "QUEST_HOME_MOBILE_DEEP_LINK_QUEST_NOT_FOUND", content: intl.string(intl4.t.sIyHuY), icon: AssetRegistryDefault, toastDurationMs: 5000 };
+          const obj2 = { text: intl.string(intl4.t.sIyHuY), variant: "critical", duration: 5000 };
           const open = ToastActionCreatorsDefault.open;
           ToastActionCreatorsDefault;
           intl = tmp4(1126).intl;
-          open(obj2);
+          open("QUEST_HOME_MOBILE_DEEP_LINK_QUEST_NOT_FOUND", obj2);
           const obj4 = { quest_id: scrollToQuestId };
           const obj3 = AnalyticsUtilsDefault;
           obj3.track(visibilityRef.QUEST_HOME_MOBILE_DEEP_LINK_MISSING_QUEST, obj4);
@@ -1143,11 +1142,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const obj = QuestDataUtils;
       const tmp8 = null == obj.findQuestOrReplacement(tmp, quests, excludedQuests) && ref.current !== tmp;
       if (tmp8) {
-        const obj2 = { key: "QUEST_HOME_MOBILE_DEEP_LINK_QUEST_NOT_FOUND", content: intl.string(intl4.t.sIyHuY), icon: AssetRegistryDefault, toastDurationMs: 5000 };
+        const obj2 = { text: intl.string(intl4.t.sIyHuY), variant: "critical", duration: 5000 };
         const open = ToastActionCreatorsDefault.open;
         ToastActionCreatorsDefault;
         intl = tmp4(1126).intl;
-        open(obj2);
+        open("QUEST_HOME_MOBILE_DEEP_LINK_QUEST_NOT_FOUND", obj2);
         const obj4 = { quest_id: scrollToQuestId };
         const obj3 = AnalyticsUtilsDefault;
         obj3.track(handleHeaderLayout.QUEST_HOME_MOBILE_DEEP_LINK_MISSING_QUEST, obj4);
@@ -1162,8 +1161,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const visibilityRef = tmp12.visibilityRef;
   ({ handleListScroll, handleListLayout, handleListLoad } = tmp12);
   const tmp13 = scrollViewRef((getUtmCurrentContext) => getUtmCurrentContext.getUtmCurrentContext());
-  let obj4 = { name: scrollToQuestId(sortMethod[37]).ImpressionNames.QUEST_HOME, type: scrollToQuestId(sortMethod[37]).ImpressionTypes.VIEW, properties: { utm_source_current: tmp13.utmSourceCurrent, utm_medium_current: tmp13.utmMediumCurrent, utm_campaign_current: tmp13.utmCampaignCurrent, utm_content_current: tmp13.utmContentCurrent, tab: scrollToQuestId(sortMethod[25]).QuestTabs.ALL } };
-  const tmp14 = filters(sortMethod[38]);
+  let obj4 = { name: scrollToQuestId(sortMethod[36]).ImpressionNames.QUEST_HOME, type: scrollToQuestId(sortMethod[36]).ImpressionTypes.VIEW, properties: { utm_source_current: tmp13.utmSourceCurrent, utm_medium_current: tmp13.utmMediumCurrent, utm_campaign_current: tmp13.utmCampaignCurrent, utm_content_current: tmp13.utmContentCurrent, tab: scrollToQuestId(sortMethod[25]).QuestTabs.ALL } };
+  const tmp14 = filters(sortMethod[37]);
   ({ utm_source_current: tmp13.utmSourceCurrent, utm_medium_current: tmp13.utmMediumCurrent, utm_campaign_current: tmp13.utmCampaignCurrent, utm_content_current: tmp13.utmContentCurrent, tab: scrollToQuestId(sortMethod[25]).QuestTabs.ALL });
   tmp14(obj4);
   const items5 = [isEligibleForQuests];
@@ -1189,15 +1188,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj6 = scrollToQuestId(sortMethod[25]);
   const obj7 = { selectedSortMethod: sortMethod, selectedFilters: filters, numQuestsVisible: quests.length };
   const questHomeSortingFilteringAnalytics = obj6.useQuestHomeSortingFilteringAnalytics(obj7);
-  const obj8 = scrollToQuestId(sortMethod[40]);
+  const obj8 = scrollToQuestId(sortMethod[39]);
   enabled = obj8.useVirtualCurrencyMobileEnabled().enabled;
-  const QuestHomeBountiesFeatureGateExperiment = scrollToQuestId(sortMethod[41]).QuestHomeBountiesFeatureGateExperiment;
+  const QuestHomeBountiesFeatureGateExperiment = scrollToQuestId(sortMethod[40]).QuestHomeBountiesFeatureGateExperiment;
   const obj9 = { location: handleQuestCardLayout.QUEST_HOME_MOBILE };
   const enabled2 = QuestHomeBountiesFeatureGateExperiment.useConfig(obj9).enabled;
-  const OrbsHoldoutExperiment = scrollToQuestId(sortMethod[42]).OrbsHoldoutExperiment;
+  const OrbsHoldoutExperiment = scrollToQuestId(sortMethod[41]).OrbsHoldoutExperiment;
   const obj10 = { location: handleQuestCardLayout.QUEST_HOME_MOBILE };
   const enabled3 = OrbsHoldoutExperiment.useConfig(obj10).enabled;
-  const obj11 = scrollToQuestId(sortMethod[43]);
+  const obj11 = scrollToQuestId(sortMethod[42]);
   const params = obj11.useRoute().params;
   let previewAdCreativeIds;
   const tmp19 = handleQuestCardLayout;
@@ -1232,15 +1231,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     enabled = !enabled3;
   }
   if (enabled) {
-    const tmpResult4 = tmp(tmp2[46]);
+    const tmpResult4 = tmp(tmp2[45]);
     enabled = tmpResult4.shouldShowBountiesGivenFilters(filters);
   }
-  const BountiesShopCarouselExperiment = tmp(tmp2[47]).BountiesShopCarouselExperiment;
+  const BountiesShopCarouselExperiment = tmp(tmp2[46]).BountiesShopCarouselExperiment;
   const obj12 = { location: tmp19.QUEST_HOME_MOBILE };
   config = BountiesShopCarouselExperiment.useConfig(obj12);
   let tmp25 = enabled;
-  const useQuestHomeOrbShopCarouselData = tmp(tmp2[48]).useQuestHomeOrbShopCarouselData;
-  tmp(tmp2[48]);
+  const useQuestHomeOrbShopCarouselData = tmp(tmp2[47]).useQuestHomeOrbShopCarouselData;
+  tmp(tmp2[47]);
   if (enabled) {
     tmp25 = "none" !== config.placement;
   }
@@ -1262,7 +1261,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const items9 = [visibilityRef];
   const callback = obj2.useCallback(() => {
     const obj = { shouldShowBounties: enabled, onLayout: handleHeaderLayout, shopCarouselConfig: config, orbShopProducts: products, obtainableOrbRewards, showOrbShopPlaceholderCarousel: showPlaceholderCarousel };
-    return authStore3(closure_24, obj);
+    return syncedClientThemes(closure_24, obj);
   }, items8);
   const items10 = [quests, handleQuestCardLayout];
   const callback1 = obj2.useCallback((item) => {
@@ -1277,13 +1276,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       skipRemountKey: true,
       sourceQuestContent: QuestTypes.QuestContent.QUEST_HOME_MOBILE,
       children() {
-        const obj = { quest: item, questContentPosition: index, containerPadding: 0, sourceQuestContent: scrollToQuestId(sortMethod[44]).QuestContent.QUEST_HOME_MOBILE };
-        const QuestCard = scrollToQuestId(sortMethod[50]).QuestCard;
+        const obj = { quest: item, questContentPosition: index, containerPadding: 0, sourceQuestContent: scrollToQuestId(sortMethod[43]).QuestContent.QUEST_HOME_MOBILE };
+        const QuestCard = scrollToQuestId(sortMethod[49]).QuestCard;
         return previewAdCreativeIds(QuestCard, obj);
       }
     };
     const QuestContentImpressionTrackerNative = QuestContentImpressionTracker.QuestContentImpressionTrackerNative;
-    return authStore3(QuestContentImpressionTrackerNative, obj);
+    return syncedClientThemes(QuestContentImpressionTrackerNative, obj);
   }, items9);
   let tmp33 = !isNavigationComplete;
   const callback2 = obj2.useCallback((arg0) => {
@@ -1322,7 +1321,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const obj2 = { includesBounties: ref2.current };
       obj.startTracking(obj2);
       return () => {
-        const obj = filters(sortMethod[51]);
+        const obj = filters(sortMethod[50]);
         obj.clearTracking();
       };
     }
@@ -1356,7 +1355,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       let num4 = 0;
       const obj16 = { ref: scrollViewRef, contentContainerStyle: obj17, style: items15, accessibilityLabel: intl.string(tmp(tmp2[20]).t.JALI2K), data: quests, renderItem: callback1, showsHorizontalScrollIndicator: false, ListHeaderComponent: callback, CellRendererComponent: callback2, onLayout: handleListLayout, onScroll: handleListScroll, onLoad: handleListLoad, scrollEventThrottle: 16 };
-      const FlashList = tmp(tmp2[52]).FlashList;
+      const FlashList = tmp(tmp2[51]).FlashList;
       const tmp50 = previewAdCreativeIds;
       if (tmp39) {
         num4 = tmp5(tmp2[11]).space.PX_16;

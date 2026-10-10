@@ -1,17 +1,17 @@
-// Module ID: 18525
-// Function ID: 18526
+// Module ID: 18599
+// Function ID: 18600
 // Name: AVErrorStreamViewLowFPS
-// Dependencies: [6043, 5894, 502, 7428, 1085, 18526, 5897, 5269, 5288, 18523, 2]
+// Dependencies: [6036, 5897, 502, 7428, 1085, 18600, 5900, 5270, 5289, 18597, 2]
 
-// Module 18525 (AVErrorStreamViewLowFPS)
+// Module 18599 (AVErrorStreamViewLowFPS)
 import Constants from "Constants" /* 1085 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5269 */;
-import AVError from "AVError" /* 5288 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5897 */;
-import AVErrorContext from "AVErrorContext" /* 18523 */;
-import AVErrorUtils from "AVErrorUtils" /* 18526 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5270 */;
+import AVError from "AVError" /* 5289 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
+import AVErrorContext from "AVErrorContext" /* 18597 */;
+import AVErrorUtils from "AVErrorUtils" /* 18600 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7428 */;
 import size from "module_2" /* 2 */;

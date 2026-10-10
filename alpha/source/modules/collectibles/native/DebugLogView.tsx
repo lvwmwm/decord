@@ -1,17 +1,17 @@
-// Module ID: 16161
-// Function ID: 16162
+// Module ID: 16228
+// Function ID: 16229
 // Name: DebugLogView
-// Dependencies: [19, 17, 5090, 7271, 21, 5091, 587, 558, 576, 504, 5087, 2]
+// Dependencies: [19, 17, 5091, 7277, 21, 5092, 587, 558, 576, 504, 5088, 2]
 
-// Module 16161 (DebugLogView)
+// Module 16228 (DebugLogView)
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5087 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5090 */;
-import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7271 */;
+import DevSettingsStore from "DevSettingsStore" /* 5091 */;
+import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7277 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -181,7 +181,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugLogView
           }
           if (cResult[27] !== tmp8.clearButtonText) {
             const obj5 = { variant: "text-xs/bold", style: tmp8.clearButtonText, children: "Clear" };
-            const tmp32 = closure_10(tmp(5087).Text, obj5);
+            const tmp32 = closure_10(tmp(5088).Text, obj5);
             cResult[27] = tmp8.clearButtonText;
             cResult[28] = tmp32;
             tmp30 = tmp32;
@@ -266,7 +266,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugLogView
         }
         const obj8 = { variant: "text-xs/normal", style: tmp24, children: items3 };
         items3 = ["Debug Log (", arr.length, " entries)"];
-        const tmp29 = closure_9(tmp(5087).Text, obj8);
+        const tmp29 = closure_9(tmp(5088).Text, obj8);
         cResult[24] = arr.length;
         cResult[25] = tmp24;
         cResult[26] = tmp29;
@@ -320,7 +320,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugLogView
       const obj2 = { style: tmp.debugLogContainer, children: items4 };
       const obj3 = { style: tmp.debugLogHeader, children: items3 };
       obj5 = { color: "#ffffff" };
-      const Text = tmp2(5087).Text;
+      const Text = tmp2(5088).Text;
       const merged = Object.assign(tmp.debugLogText);
       items2 = ["Debug Log (", arr.length, " entries)"];
       items3 = [closure_9(Text, obj4), ];
@@ -329,7 +329,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugLogView
               closure_1();
             },
         style: tmp.clearButton,
-        children: closure_10(arr(5087).Text, obj7)
+        children: closure_10(arr(5088).Text, obj7)
       };
       obj7 = { variant: "text-xs/bold", style: tmp.clearButtonText, children: "Clear" };
       items3[1] = closure_10(closure_5, obj6);

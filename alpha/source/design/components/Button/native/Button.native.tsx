@@ -1,10 +1,10 @@
-// Module ID: 5376
-// Function ID: 5377
+// Module ID: 5379
+// Function ID: 5380
 // Name: components/Button/Button
-// Dependencies: [2, 5377]
+// Dependencies: [2, 5380]
 
-// Module 5376 (components/Button/Button)
-import BaseTextButton from "BaseTextButton" /* 5377 */;
+// Module 5379 (components/Button/Button)
+import BaseTextButton from "BaseTextButton" /* 5380 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Button/native/Button.native.tsx");

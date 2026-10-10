@@ -1,13 +1,13 @@
-// Module ID: 4992
-// Function ID: 4993
+// Module ID: 5031
+// Function ID: 5032
 // Name: useTheme
-// Dependencies: [1085, 558, 4930, 576, 2]
+// Dependencies: [1085, 558, 4969, 576, 2]
 // Exports: getThemeIndex
 
-// Module 4992 (useTheme)
+// Module 5031 (useTheme)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import shared from "shared" /* 4930 */;
+import shared from "shared" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

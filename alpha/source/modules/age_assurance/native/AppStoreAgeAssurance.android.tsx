@@ -1,10 +1,10 @@
-// Module ID: 7679
-// Function ID: 7680
+// Module ID: 7696
+// Function ID: 7697
 // Name: AppStoreAgeAssurance
-// Dependencies: [5, 7680, 2]
+// Dependencies: [5, 7697, 2]
 
-// Module 7679 (AppStoreAgeAssurance)
-import PlayAgeSignals from "PlayAgeSignals" /* 7680 */;
+// Module 7696 (AppStoreAgeAssurance)
+import PlayAgeSignals from "PlayAgeSignals" /* 7697 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

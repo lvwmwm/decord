@@ -1,10 +1,10 @@
-// Module ID: 18564
-// Function ID: 18565
+// Module ID: 18638
+// Function ID: 18639
 // Name: ResendVerificationCodeButton
-// Dependencies: [5, 32, 19, 17, 21, 18555, 4767, 4768, 1126, 2859, 15120, 4996, 5087, 2]
+// Dependencies: [5, 32, 19, 17, 21, 18629, 4808, 4809, 1126, 2862, 5088, 2]
 // Exports: default
 
-// Module 18564 (ResendVerificationCodeButton)
+// Module 18638 (ResendVerificationCodeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -61,7 +61,7 @@ export default function ResendVerificationCodeButton(flowId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -91,11 +91,11 @@ export default function ResendVerificationCodeButton(flowId) {
           } else {
             if (2 === setLoading) {
               c3 = 1;
-              const obj6 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_ERROR", content: intl.string(setLoading(countdown[9])["3AXMYu"]), icon: setLoading(countdown[10]), IconComponent: tmp(countdown[11]).XLargeIcon, iconColor: "icon-feedback-critical" };
+              const obj6 = { text: intl.string(setLoading(countdown[9])["3AXMYu"]), variant: "critical" };
               const open = setLoading(countdown[7]).open;
               const tmp18 = setLoading(countdown[7]);
               intl = tmp(countdown[8]).intl;
-              open(obj6);
+              open("SAFETY_FLOWS_VERIFY_EMAIL_ERROR", obj6);
             } else if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -115,13 +115,13 @@ export default function ResendVerificationCodeButton(flowId) {
             closure_128_1(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
-        } catch (tmp40) {
-          countdown = tmp40;
+          return { value: "IconComponent", done: "+51" };
+        } catch (tmp37) {
+          countdown = tmp37;
           if (0 === c3) {
             c4 = 3;
-            throw tmp40;
-          } else if (1 === tmp42) {
+            throw tmp37;
+          } else if (1 === tmp39) {
             setLoading = 1;
           } else {
             setLoading = 2;
@@ -136,7 +136,7 @@ export default function ResendVerificationCodeButton(flowId) {
   };
   intl = flowId(countdown[8]).intl;
   obj2 = { variant: "text-sm/medium", color: "text-link", accessibilityLabel: intl2.string(setLoading(countdown[9]).ah0EUu), importantForAccessibility: "no", children: formatResult };
-  Text = flowId(countdown[12]).Text;
+  Text = flowId(countdown[10]).Text;
   intl2 = flowId(countdown[8]).intl;
   const tmp5 = Pressable;
   if (countdown > 0) {

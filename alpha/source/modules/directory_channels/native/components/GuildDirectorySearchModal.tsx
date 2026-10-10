@@ -1,11 +1,11 @@
-// Module ID: 11953
-// Function ID: 11954
+// Module ID: 11997
+// Function ID: 11998
 // Name: GuildDirectorySearchModal
-// Dependencies: [19, 21, 11954, 558, 576, 6176, 6686, 2]
+// Dependencies: [19, 21, 11998, 558, 576, 6169, 6687, 2]
 
-// Module 11953 (GuildDirectorySearchModal)
+// Module 11997 (GuildDirectorySearchModal)
 import Fragment from "Fragment" /* 21 */;
-import useInitialValueDefault from "useInitialValue" /* 6176 */;
+import useInitialValueDefault from "useInitialValue" /* 6169 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
   }
   const tmp5 = useInitialValueDefault(tmp4);
   if (cResult[2] !== tmp5) {
-    const tmp9 = jsx(tmp(6686).Navigator, { screens: tmp5, initialRouteName: SEARCH_SCREEN_KEY });
+    const tmp9 = jsx(tmp(6687).Navigator, { screens: tmp5, initialRouteName: SEARCH_SCREEN_KEY });
     cResult[2] = tmp5;
     cResult[3] = tmp9;
     tmp6 = tmp9;

@@ -1,23 +1,23 @@
-// Module ID: 13527
-// Function ID: 13528
+// Module ID: 13578
+// Function ID: 13579
 // Name: VoiceMemberEmbeddedActivity
-// Dependencies: [32, 19, 17, 2063, 2064, 1390, 1204, 6837, 21, 1200, 5091, 587, 558, 576, 6854, 1388, 504, 4698, 10880, 1497, 8147, 10883, 1126, 6163, 5087, 10921, 5377, 6191, 2]
+// Dependencies: [32, 19, 17, 2064, 2065, 1390, 1204, 6840, 21, 1200, 5092, 587, 558, 576, 6857, 1388, 504, 4739, 10920, 1497, 8163, 10923, 1126, 6156, 5088, 10961, 5380, 6184, 2]
 // Exports: calculateActivityRowHeight
 
-// Module 13527 (VoiceMemberEmbeddedActivity)
+// Module 13578 (VoiceMemberEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import FormConstants from "FormConstants" /* 1204 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6837 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10883 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6840 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10923 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2063 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

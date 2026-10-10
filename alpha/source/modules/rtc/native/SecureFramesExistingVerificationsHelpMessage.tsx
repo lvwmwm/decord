@@ -1,16 +1,16 @@
-// Module ID: 8821
-// Function ID: 8822
+// Module ID: 8840
+// Function ID: 8841
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 5091, 558, 576, 8822, 1126, 1200, 2]
+// Dependencies: [17, 21, 5092, 558, 576, 8841, 1126, 7567, 2]
 
-// Module 8821 (SecureFramesExistingVerificationsHelpMessage)
+// Module 8840 (SecureFramesExistingVerificationsHelpMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8822 */;
-import createStyles from "createStyles" /* 5091 */;
+import InlineNotice2 from "InlineNotice" /* 7567 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8841 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,8 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
           tmp9 = cResult[7];
         }
         if (cResult[8] !== tmp9) {
-          const HelpMessage = tmp(1200).HelpMessage;
-          const tmp13 = <HelpMessage messageType={native.HelpMessageTypes.INFO}>{tmp9}</HelpMessage>;
+          const tmp13 = jsx(InlineNotice2.InlineNotice, { type: "info", message: tmp9, role: "static" });
           cResult[8] = tmp9;
           cResult[9] = tmp13;
           tmp11 = tmp13;
@@ -99,8 +98,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
   let tmp5 = null;
   if (0 !== secureFramesUserVerifiedKeysCount) {
     const items = [tmp.container, style];
-    ({ messageType: native.HelpMessageTypes.INFO, children: intl.format(intl2.t.uZDkz0, obj4) });
-    const HelpMessage = tmp2(1200).HelpMessage;
+    ({ type: "info", message: intl.format(intl2.t.uZDkz0, obj4), role: "static" });
+    const InlineNotice = tmp2(7567).InlineNotice;
     intl = tmp2(1126).intl;
     tmp5 = <View style={items}>{null}</View>;
     obj4 = { count: secureFramesUserVerifiedKeysCount };

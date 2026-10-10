@@ -1,16 +1,16 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 9233
+// Function ID: 9234
 // Name: oauth2/actions
-// Dependencies: [5, 2064, 2115, 1085, 1295, 5937, 1094, 2]
+// Dependencies: [5, 2065, 2116, 1085, 1295, 5930, 1094, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9206 (oauth2/actions)
+// Module 9233 (oauth2/actions)
 import utils_PathUtils from "utils/PathUtils" /* 1094 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5937 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let obj = function _authorize() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -190,7 +190,7 @@ obj = function _fetchAuthorization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -274,7 +274,7 @@ obj = function _startSamsungAuthorization() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ obj = function _startSamsungAuthorization() {
             return { value, done: true };
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp4) {
           c5 = 3;

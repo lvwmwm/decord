@@ -1,12 +1,12 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10967
+// Function ID: 10968
 // Name: ChannelCallModalManager
-// Dependencies: [1390, 5112, 2002, 584, 7481, 2]
+// Dependencies: [1390, 5113, 2002, 7481, 2]
 
-// Module 10927 (ChannelCallModalManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 10967 (ChannelCallModalManager)
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
@@ -16,20 +16,16 @@ class ChannelCallModalManager extends LifecycleManager {
     require = applyArgumentsResult;
     applyArgumentsResult.inVoiceChannel = false;
     applyArgumentsResult.handleCloseModal = function handleCloseModal() {
-      let obj = require;
       const channel = require.channel;
       const currentUser = UserStore.getCurrentUser();
       const isInChannelResult = null != channel && null != currentUser && VoiceStateStore.isInChannel(channel.id, currentUser.id);
-      const tmp4 = null != channel && obj.inVoiceChannel && obj.inVoiceChannel !== isInChannelResult;
+      const tmp4 = null != channel && require.inVoiceChannel && require.inVoiceChannel !== isInChannelResult;
       if (tmp4) {
-        const obj2 = DispatcherDefault;
-        obj2.wait(() => {
-          const obj = closure_2_0(closure_2_2[4]);
-          const result = obj.dismissVoiceChannelScreens(channel);
-        });
-        obj.terminate();
+        const obj2 = PrivateChannelCallUtils;
+        const result = obj2.dismissVoiceChannelScreens(channel);
+        require.terminate();
       }
-      obj.inVoiceChannel = isInChannelResult;
+      require.inVoiceChannel = isInChannelResult;
     };
     return applyArgumentsResult;
   }

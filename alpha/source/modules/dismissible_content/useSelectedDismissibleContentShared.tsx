@@ -1,10 +1,10 @@
-// Module ID: 7096
-// Function ID: 7097
+// Module ID: 7102
+// Function ID: 7103
 // Name: useSelectedDismissibleContentShared
-// Dependencies: [19, 2052, 2061, 558, 576, 2053, 2055, 2]
+// Dependencies: [19, 2052, 2062, 558, 576, 2053, 2056, 2]
 
-// Module 7096 (useSelectedDismissibleContentShared)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+// Module 7102 (useSelectedDismissibleContentShared)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import react_mod from "react" /* 19 */;
 import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2052 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -44,7 +44,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
           const effect = react.useEffect(tmp7, tmp8);
           class T {
             constructor() {
-              return () => { /* body not rendered: F139716 */ };
+              return () => { /* body not rendered: F140143 */ };
             }
           }
         }
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedD
     }
     class T {
       constructor() {
-        return () => { /* body not rendered: F139716 */ };
+        return () => { /* body not rendered: F140143 */ };
       }
     }
     const items = [tmp5, arg1, arg0, arg3];

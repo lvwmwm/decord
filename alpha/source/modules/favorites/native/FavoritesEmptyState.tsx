@@ -1,22 +1,22 @@
-// Module ID: 17373
-// Function ID: 17374
+// Module ID: 17445
+// Function ID: 17446
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 5091, 587, 10279, 12643, 5055, 10283, 2000, 10282, 10285, 5374, 5087, 1126, 3439, 5376, 10570, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 10312, 12690, 5056, 10316, 2000, 10315, 10318, 5377, 5088, 1126, 3442, 5379, 10604, 2]
 // Exports: default
 
-// Module 17373 (FavoritesEmptyState)
+// Module 17445 (FavoritesEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef3439 from "module_3439" /* 3439 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Stack_Stack from "Stack/Stack" /* 5374 */;
-import components_Button_Button from "components/Button/Button" /* 5376 */;
-import FavoritesHooks from "FavoritesHooks" /* 10279 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10285 */;
+import _modDef3442 from "module_3442" /* 3442 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import FavoritesHooks from "FavoritesHooks" /* 10312 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10318 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp2;
-const PlusMediumIcon = tmp2(10570);
+const PlusMediumIcon = tmp2(10604);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: obj2, text: { textAlign: "center" } };
@@ -59,11 +59,11 @@ export default function FavoritesEmptyState() {
   items = [hasOwnProperty(FavoritesSpotIllustration.FavoritesSpotIllustration, { width: 192, height: 108 }), , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, align: "center", children: items1 };
   const Stack = Stack_Stack.Stack;
-  const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef3439["wh+Rz1"]) };
+  const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef3442["wh+Rz1"]) };
   const Heading = Text_Text.Heading;
   intl = intl5.intl;
   items1 = [hasOwnProperty(Heading, obj4), ];
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: intl2.string(_modDef3439["+SuGKb"]) };
+  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: intl2.string(_modDef3442["+SuGKb"]) };
   const Text = Text_Text.Text;
   intl2 = intl5.intl;
   items1[1] = hasOwnProperty(Text, obj5);
@@ -72,11 +72,11 @@ export default function FavoritesEmptyState() {
   const tmp6 = metroRequire;
   const tmp7 = View;
   if (hasAccess) {
-    const obj6 = { variant: "primary", text: intl4.string(_modDef3439["6kk0gM"]), icon: hasOwnProperty(PlusMediumIcon.PlusMediumIcon, {}), onPress: callback };
+    const obj6 = { variant: "primary", text: intl4.string(_modDef3442["6kk0gM"]), icon: hasOwnProperty(PlusMediumIcon.PlusMediumIcon, {}), onPress: callback };
     intl4 = intl5.intl;
     obj7 = obj6;
   } else {
-    obj7 = { variant: "primary", text: intl3.string(_modDef3439.yYVbdv), onPress: callback1 };
+    obj7 = { variant: "primary", text: intl3.string(_modDef3442.yYVbdv), onPress: callback1 };
     intl3 = intl5.intl;
   }
   items[2] = hasOwnProperty(Button, obj7);

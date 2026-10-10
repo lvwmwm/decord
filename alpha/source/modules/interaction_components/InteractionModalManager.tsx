@@ -1,17 +1,17 @@
-// Module ID: 17999
-// Function ID: 18000
+// Module ID: 18071
+// Function ID: 18072
 // Name: InteractionModalManager
-// Dependencies: [5, 5437, 7865, 1085, 5439, 18000, 2000, 1265, 559, 1255, 18011, 14726, 8594, 18014, 6804, 2]
+// Dependencies: [5, 5440, 7883, 1085, 5442, 18072, 2000, 1265, 559, 1255, 18083, 14780, 8610, 18086, 6807, 2]
 
-// Module 17999 (InteractionModalManager)
+// Module 18071 (InteractionModalManager)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 14726 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18011 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 14780 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18083 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5437 */;
-import InteractionStore from "InteractionStore" /* 7865 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import InteractionStore from "InteractionStore" /* 7883 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, iFrameModal, interactionDebugContext;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp18) {
           c4 = 3;

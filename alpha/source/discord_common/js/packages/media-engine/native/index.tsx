@@ -1,22 +1,22 @@
-// Module ID: 5137
-// Function ID: 5138
+// Module ID: 5138
+// Function ID: 5139
 // Name: MediaEngineNative
-// Dependencies: [32, 5, 5116, 5138, 5139, 5140, 5144, 4, 2014, 5145, 5146, 1364, 1383, 5148, 5153, 5208, 2]
+// Dependencies: [32, 5, 5117, 5139, 5140, 5141, 5145, 4, 2014, 5146, 5147, 1364, 1383, 5149, 5154, 5209, 2]
 
-// Module 5137 (MediaEngineNative)
+// Module 5138 (MediaEngineNative)
 import _modDef1364 from "module_1364" /* 1364 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import inject from "inject" /* 2014 */;
-import VideoDefault from "Video" /* 5140 */;
-import CameraDefault from "Camera" /* 5144 */;
-import MediaEngineEvent from "MediaEngineEvent" /* 5145 */;
-import ConnectionDefault from "Connection" /* 5148 */;
-import Devices from "Devices" /* 5208 */;
+import VideoDefault from "Video" /* 5141 */;
+import CameraDefault from "Camera" /* 5145 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 5146 */;
+import ConnectionDefault from "Connection" /* 5149 */;
+import Devices from "Devices" /* 5209 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5116 */;
-import Constants_mod2 from "Constants" /* 5138 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5139 */;
+import Constants_mod from "Constants" /* 5117 */;
+import Constants_mod2 from "Constants" /* 5139 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5140 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp10;
 let unpackModuleId;
-const pollConnectionStatsDefault = tmp10(5146);
+const pollConnectionStatsDefault = tmp10(5147);
 let Constants = Constants_mod2;
 ({ QUEUE_METRICS_INTERVAL_MS: hasOwnProperty, SIDECHAIN_COMPRESSION_MAX_RATIO: metroRequire, SIDECHAIN_COMPRESSION_MAX_THRESHOLD: metroImportDefault, SIDECHAIN_COMPRESSION_MIN_RATIO: metroImportAll, SIDECHAIN_COMPRESSION_MIN_THRESHOLD: c9, ProcessPriority: c10 } = Constants);
 Constants = Constants_mod2;
@@ -279,7 +279,7 @@ class MediaEngineNative extends TypedEventEmitter {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -335,7 +335,7 @@ class MediaEngineNative extends TypedEventEmitter {
               const timerId = setTimeout(closure_129_2, periodMs);
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp21) {
             c3 = 3;
             throw tmp21;
@@ -345,7 +345,7 @@ class MediaEngineNative extends TypedEventEmitter {
       return obj(...arguments);
     };
     let c1 = false;
-    obj.on(obj(5145).MediaEngineEvent.Destroy, () => {
+    obj.on(obj(5146).MediaEngineEvent.Destroy, () => {
       c1 = true;
       return true;
     });
@@ -583,8 +583,8 @@ class MediaEngineNative extends TypedEventEmitter {
       videoSupported.experiments = undefined;
     }
     let flag = videoSupported.videoSupported;
-    const create = self(5148).create;
-    const tmp3 = self(5148);
+    const create = self(5149).create;
+    const tmp3 = self(5149);
     if (flag == null) {
       flag = true;
     }
@@ -592,7 +592,7 @@ class MediaEngineNative extends TypedEventEmitter {
       flag = self.supports(constants3.VIDEO);
     }
     obj2 = create(arg0, arg1, videoSupported, flag);
-    obj2.on(obj2(5153).BaseConnectionEvent.Destroy, (arg0) => {
+    obj2.on(obj2(5154).BaseConnectionEvent.Destroy, (arg0) => {
       const connections = self.connections;
       connections.delete(arg0);
       if (self.connectionsEmpty()) {
@@ -606,10 +606,10 @@ class MediaEngineNative extends TypedEventEmitter {
         }
       }
     });
-    obj2.on(obj2(5153).BaseConnectionEvent.Connected, () => {
+    obj2.on(obj2(5154).BaseConnectionEvent.Connected, () => {
       obj2.setVideoBroadcast(self.shouldConnectionBroadcastVideo(obj2));
     });
-    obj2.on(obj2(5153).BaseConnectionEvent.Silence, (arg0) => {
+    obj2.on(obj2(5154).BaseConnectionEvent.Silence, (arg0) => {
       self.emit(MediaEngineEvent.MediaEngineEvent.Silence, arg0);
     });
     let connections = self.connections;
@@ -629,14 +629,14 @@ class MediaEngineNative extends TypedEventEmitter {
         let result = setNativeThreadsPriority(videoSupported.threadPriorityConfiguration);
       }
     }
-    self.emit(tmp(5145).MediaEngineEvent.Connection, obj2);
+    self.emit(tmp(5146).MediaEngineEvent.Connection, obj2);
     return obj2;
   }
   shouldConnectionBroadcastVideo(context) {
     let hasDesktopSourceResult = context.context === constants4.DEFAULT;
     if (hasDesktopSourceResult) {
       const self = this;
-      hasDesktopSourceResult = this.videoInputDeviceId !== authStore3;
+      hasDesktopSourceResult = this.videoInputDeviceId !== syncedClientThemes;
     }
     if (!hasDesktopSourceResult) {
       hasDesktopSourceResult = context.hasDesktopSource();
@@ -793,7 +793,7 @@ class MediaEngineNative extends TypedEventEmitter {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -868,7 +868,7 @@ class MediaEngineNative extends TypedEventEmitter {
               const item = connections.forEach((setVideoBroadcast) => setVideoBroadcast.setVideoBroadcast(closure_1_1.shouldConnectionBroadcastVideo(setVideoBroadcast)));
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp42) {
           c3 = 3;
@@ -1557,7 +1557,7 @@ class MediaEngineNative extends TypedEventEmitter {
       const voiceEngine1 = tmp2Result5.getVoiceEngine();
       const setEmitVADLevel2 = voiceEngine1.setEmitVADLevel2;
       if (!tmp) {
-        tmp = self.listenerCount(tmp2(5145).MediaEngineEvent.VoiceActivity) > 0;
+        tmp = self.listenerCount(tmp2(5146).MediaEngineEvent.VoiceActivity) > 0;
       }
       setEmitVADLevel2(tmp);
     } else {
@@ -1566,7 +1566,7 @@ class MediaEngineNative extends TypedEventEmitter {
       let tmp7 = tmp;
       const setEmitVADLevel = voiceEngine2.setEmitVADLevel;
       if (!tmp) {
-        tmp7 = self.listenerCount(tmp2(5145).MediaEngineEvent.VoiceActivity) > 0;
+        tmp7 = self.listenerCount(tmp2(5146).MediaEngineEvent.VoiceActivity) > 0;
       }
       const obj4 = { echoCancellation: null, noiseSuppression: null, automaticGainControl: enabled1, noiseCancellation: null, noiseCancellationDuringProcessing: null };
       ({ echoCancellation: obj5.echoCancellation, noiseSuppression: obj5.noiseSuppression, automaticGainControlConfig: automaticGainControlConfig2 } = arg1);
@@ -1696,7 +1696,7 @@ class MediaEngineNative extends TypedEventEmitter {
     const replay = obj.createReplay(arg0, arg1);
     let tmp2 = null;
     if (null != replay) {
-      replay.on(self(5153).BaseConnectionEvent.Destroy, (arg0) => {
+      replay.on(self(5154).BaseConnectionEvent.Destroy, (arg0) => {
         const connections = self.connections;
         connections.delete(arg0);
         if (self.connectionsEmpty()) {
@@ -1708,7 +1708,7 @@ class MediaEngineNative extends TypedEventEmitter {
       connections.add(replay);
       const obj3 = self(2014);
       obj3.setProcessPriority(constants.HIGH);
-      self.emit(self(5145).MediaEngineEvent.Connection, replay);
+      self.emit(self(5146).MediaEngineEvent.Connection, replay);
       tmp2 = replay;
     }
     return tmp2;
@@ -1786,7 +1786,7 @@ class MediaEngineNative extends TypedEventEmitter {
         closure_0(arg0, arg1);
       });
     }
-    let tmp5 = this.listenerCount(tmp(5145).MediaEngineEvent.VoiceActivity) > 0;
+    let tmp5 = this.listenerCount(tmp(5146).MediaEngineEvent.VoiceActivity) > 0;
     if (tmp5) {
       const tmpResult = inject;
       tmp5 = null != tmpResult.getVoiceEngine().setEmitVADLevel2;

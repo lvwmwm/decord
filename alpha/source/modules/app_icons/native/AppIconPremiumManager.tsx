@@ -1,18 +1,18 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17990
+// Function ID: 17991
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1390, 9439, 1085, 3, 9440, 6804, 1382, 13672, 4728, 1265, 2]
+// Dependencies: [5, 1390, 9468, 1085, 3, 9469, 6807, 1382, 13724, 4769, 1265, 2]
 
-// Module 17918 (AppIconPremiumManager)
+// Module 17990 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AppIconConstants from "AppIconConstants" /* 9439 */;
-import AppIconTypes from "AppIconTypes" /* 9440 */;
+import AppIconConstants from "AppIconConstants" /* 9468 */;
+import AppIconTypes from "AppIconTypes" /* 9469 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp38) {
           c5 = 3;

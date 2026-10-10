@@ -1,20 +1,20 @@
-// Module ID: 11878
-// Function ID: 11879
+// Module ID: 11922
+// Function ID: 11923
 // Name: useRenderPollAnswerImage
-// Dependencies: [32, 19, 17, 7237, 7889, 1393, 21, 558, 576, 504, 11870, 6163, 4726, 1415, 6816, 2]
+// Dependencies: [32, 19, 17, 7243, 7907, 1393, 21, 558, 576, 504, 11914, 6156, 4767, 1415, 6819, 2]
 
-// Module 11878 (useRenderPollAnswerImage)
+// Module 11922 (useRenderPollAnswerImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import EmojiTypes from "EmojiTypes" /* 4726 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import EmojiDefault from "Emoji" /* 6816 */;
-import DraftStore from "DraftStore" /* 7237 */;
+import EmojiTypes from "EmojiTypes" /* 4767 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import EmojiDefault from "Emoji" /* 6819 */;
+import DraftStore from "DraftStore" /* 7243 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7889 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7907 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRenderP
           tmp25 = cResult[13];
           tmp26 = cResult[14];
         }
-        let str = emoji.type === tmp(4726).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
+        let str = emoji.type === tmp(4767).EmojiTypes.UNICODE ? emoji.surrogates : emoji.name;
         if (str == null) {
           str = "";
         }
@@ -230,7 +230,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRenderP
       status = mediaAttachmentState.status;
     }
   }
-  const tmp8 = status === tmp(11870).PollMediaUploadAttachmentStatus.PREPARING;
+  const tmp8 = status === tmp(11914).PollMediaUploadAttachmentStatus.PREPARING;
   closure_7 = tmp8;
   let obj3 = {
     renderImage: obj2.useMemo(() => {

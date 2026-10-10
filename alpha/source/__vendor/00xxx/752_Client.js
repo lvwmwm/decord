@@ -32,7 +32,7 @@ const _mod751 = tmp2(751);
 const DEFAULT_TRANSPORT_BUFFER_SIZE = tmp2(754);
 const _INTERNAL_captureLog = tmp2(756);
 const _INTERNAL_captureMetric = tmp2(761);
-const f83050 = (item) => {
+const f83291 = (item) => {
   if (Array.isArray(item)) {
     let num4;
     const first = item[0];
@@ -91,7 +91,7 @@ function estimateMetricSizeInBytes(name) {
     c0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f83050);
+    const item = values.forEach(f83291);
     num3 = c0;
   }
   return num + 8 + num3;
@@ -109,7 +109,7 @@ function estimateLogSizeInBytes(message) {
     closure_0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f83050);
+    const item = values.forEach(f83291);
     num3 = closure_0;
   }
   return num + num3;
@@ -126,12 +126,12 @@ class Client {
   constructor(_options) {
     let envelopeEndpointWithUrlEncodedAuth;
     let recordDroppedEvent;
-    const f83047 = () => {
+    const f83288 = () => {
       sum = 0;
       clearTimeout(closure_3);
       c5 = false;
     };
-    const f83048 = (arg0) => {
+    const f83289 = (arg0) => {
       sum = sum + closure_1(arg0);
       if (sum >= 800000) {
         closure_2(self);
@@ -146,7 +146,7 @@ class Client {
         }
       }
     };
-    const f83049 = () => {
+    const f83290 = () => {
       closure_2(self);
     };
     const self = this;
@@ -208,9 +208,9 @@ class Client {
       let c3;
       c4 = 0;
       c5 = false;
-      self.on("flushLogs", f83047);
-      self.on("afterCaptureLog", f83048);
-      self.on("flush", f83049);
+      self.on("flushLogs", f83288);
+      self.on("afterCaptureLog", f83289);
+      self.on("flush", f83290);
     }
     let flag2 = self._options.enableMetrics;
     if (flag2 == null) {
@@ -230,9 +230,9 @@ class Client {
       closure_3 = undefined;
       let sum = 0;
       c5 = false;
-      self.on("flushMetrics", f83047);
-      self.on("afterCaptureMetric", f83048);
-      self.on("flush", f83049);
+      self.on("flushMetrics", f83288);
+      self.on("afterCaptureMetric", f83289);
+      self.on("flush", f83290);
     }
   }
 }
@@ -646,7 +646,7 @@ _asyncToGenerator(async function(arg0) {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -808,7 +808,7 @@ React = _asyncToGenerator(async function(arg0) {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {

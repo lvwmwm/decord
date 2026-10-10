@@ -1,15 +1,15 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 10868
+// Function ID: 10869
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 5437, 2022, 2064, 10778, 10795, 10796, 2]
+// Dependencies: [5, 5440, 2022, 2065, 10848, 10869, 10870, 2]
 // Exports: default
 
-// Module 10794 (getCachedOrFetchActivityApplicationForLaunch)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10778 */;
+// Module 10868 (getCachedOrFetchActivityApplicationForLaunch)
+import fetchShelf from "fetchShelf" /* 10848 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5437 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 let application, channel, closure_2, closure_3;
@@ -31,7 +31,7 @@ let obj = function _getCachedOrFetchActivityApplicationForLaunch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ let obj = function _getCachedOrFetchActivityApplicationForLaunch() {
                 c5 = 1;
                 const obj6 = { guildId: guild_id };
                 const obj8 = { value: obj7.fetchShelf(obj6), done: false };
-                obj7 = EmbeddedActivitiesActionCreators;
+                obj7 = fetchShelf;
                 return obj8;
               }
             }

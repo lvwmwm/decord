@@ -1,178 +1,201 @@
 // Module ID: 11258
 // Function ID: 11259
-// Dependencies: [11223, 11168, 11259]
-// Exports: generateIteratee
+// Dependencies: [11233, 11214, 11213, 11244]
+// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
 
 // Module 11258
-import _mod11259 from "module_11259" /* 11259 */;
-import module_11223 from "module_11223" /* 11223 */;
+import _mod11213 from "module_11213" /* 11213 */;
+import _mod11214 from "module_11214" /* 11214 */;
+import _mod11233 from "module_11233" /* 11233 */;
+import _mod11244 from "module_11244" /* 11244 */;
 
-const require = globalThis.__r;
-let _require, stacktrace;
 
-
-export const generateIteratee = function generateIteratee(arg0) {
-  let closure_2;
-  let require;
-  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
-  return (filename) => {
-    if (filename.filename) {
-      const obj = /^[a-zA-Z]:\\/;
-      let isMatch = obj.test(filename.filename);
-      if (!isMatch) {
-        filename = filename.filename;
-        let hasItem = filename.includes("\\");
-        if (hasItem) {
-          const filename2 = filename.filename;
-          hasItem = !filename2.includes("/");
-        }
-        isMatch = hasItem;
-      }
-      const tmp5 = closure_0;
-      if (tmp5) {
-        if (root) {
-          const filename1 = filename.filename;
-          if (0 === filename1.indexOf(root)) {
-            filename.filename = filename1.replace(root, prefix);
-          }
-        }
-      } else if (isMatch) {
-        let replaced;
-        let relativeResult;
-        if (isMatch) {
-          const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-          replaced = str5.replace(/\\/g, "/");
-        } else {
-          replaced = str3;
-        }
-        const obj2 = _mod11259;
-        if (root) {
-          relativeResult = obj2.relative(tmp7, replaced);
-        } else {
-          relativeResult = obj2.basename(replaced);
-        }
-        const _HermesInternal = HermesInternal;
-        filename.filename = "" + prefix + relativeResult;
-      }
-      return filename;
+export const applyScopeDataToEvent = function applyScopeDataToEvent(extra, arg1) {
+  let breadcrumbs;
+  let contexts;
+  let fingerprint;
+  let items1;
+  let level;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let tmpResult10;
+  let tmpResult9;
+  let transactionName;
+  let user;
+  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
+  ({ extra, tags, user, contexts } = arg1);
+  const obj = _mod11214;
+  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
+  let length = dropUndefinedKeysResult;
+  if (length) {
+    const _Object = Object;
+    length = Object.keys(dropUndefinedKeysResult).length;
+  }
+  const tmp5 = extra;
+  if (length) {
+    const obj2 = {};
+    const merged = Object.assign(dropUndefinedKeysResult);
+    const merged1 = Object.assign(extra.extra);
+    extra.extra = obj2;
+  }
+  const tmpResult = _mod11214;
+  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
+  let length2 = dropUndefinedKeysResult1;
+  if (length2) {
+    const _Object2 = Object;
+    length2 = Object.keys(dropUndefinedKeysResult1).length;
+  }
+  if (length2) {
+    const obj3 = {};
+    const merged2 = Object.assign(dropUndefinedKeysResult1);
+    const merged3 = Object.assign(extra.tags);
+    extra.tags = obj3;
+  }
+  const tmpResult7 = _mod11214;
+  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
+  let length3 = dropUndefinedKeysResult2;
+  if (length3) {
+    const _Object3 = Object;
+    length3 = Object.keys(dropUndefinedKeysResult2).length;
+  }
+  if (length3) {
+    const obj4 = {};
+    const merged4 = Object.assign(dropUndefinedKeysResult2);
+    const merged5 = Object.assign(extra.user);
+    extra.user = obj4;
+  }
+  const tmpResult8 = _mod11214;
+  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
+  let length4 = dropUndefinedKeysResult3;
+  if (length4) {
+    const _Object4 = Object;
+    length4 = Object.keys(dropUndefinedKeysResult3).length;
+  }
+  if (length4) {
+    const obj5 = {};
+    const merged6 = Object.assign(dropUndefinedKeysResult3);
+    const merged7 = Object.assign(extra.contexts);
+    extra.contexts = obj5;
+  }
+  if (level) {
+    extra.level = level;
+  }
+  const tmp32 = transactionName && "transaction" !== extra.type;
+  if (tmp32) {
+    extra.transaction = transactionName;
+  }
+  if (span) {
+    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
+    tmpResult9 = _mod11213;
+    const merged8 = Object.assign(extra.contexts);
+    extra.contexts = obj6;
+    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
+    tmpResult10 = _mod11244;
+    const merged9 = Object.assign(extra.sdkProcessingMetadata);
+    extra.sdkProcessingMetadata = obj7;
+    const tmpResult11 = _mod11213;
+    const rootSpan = tmpResult11.getRootSpan(span);
+    const tmpResult12 = _mod11213;
+    const description = tmpResult12.spanToJSON(rootSpan).description;
+    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
+    if (tmp38) {
+      extra.transaction = description;
+    }
+  }
+  if (extra.fingerprint) {
+    let items;
+    const _Array = Array;
+    const fingerprint2 = extra.fingerprint;
+    if (Array.isArray(extra.fingerprint)) {
+      items = fingerprint2;
     } else {
-      return filename;
+      items = [fingerprint2];
     }
-  };
+    items1 = items;
+  } else {
+    items1 = [];
+  }
+  extra.fingerprint = items1;
+  if (fingerprint) {
+    const fingerprint3 = extra.fingerprint;
+    extra.fingerprint = fingerprint3.concat(fingerprint);
+  }
+  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
+  if (tmp40) {
+    delete tmp5["fingerprint"];
+  }
+  const items2 = [...breadcrumbs];
+  let tmp42;
+  if (items2.length) {
+    tmp42 = items2;
+  }
+  extra.breadcrumbs = tmp42;
+  const obj8 = {};
+  const merged10 = Object.assign(extra.sdkProcessingMetadata);
+  const merged11 = Object.assign(sdkProcessingMetadata);
+  extra.sdkProcessingMetadata = obj8;
 };
-export const rewriteFramesIntegration = module_11223.defineIntegration(() => {
-  let closure_0;
-  let prefix;
-  let root;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+export const mergeAndOverwriteScopeData = function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
+  const obj = _mod11233;
+  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
+};
+export const mergeScopeData = function mergeScopeData(extra, arg1) {
+  let attachments;
+  let breadcrumbs;
+  let contexts;
+  let eventProcessors;
+  let fingerprint;
+  let level;
+  let propagationContext;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let transactionName;
+  let user;
+  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
+  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
+  const obj = _mod11233;
+  extra.extra = obj.merge(extra.extra, extra, 1);
+  const obj2 = _mod11233;
+  extra.tags = obj2.merge(extra.tags, tags, 1);
+  const obj3 = _mod11233;
+  extra.user = obj3.merge(extra.user, user, 1);
+  const obj4 = _mod11233;
+  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
+  const obj5 = _mod11233;
+  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
+  if (level) {
+    extra.level = level;
   }
-  let fn;
-  ({ prefix, root } = obj);
-  if (!prefix) {
-    prefix = "app:///";
+  if (transactionName) {
+    extra.transactionName = transactionName;
   }
-  const tmp = _require;
-  let tmp2 = root;
-  fn = obj.iteratee;
-  const tmp3 = "window" in require("module_11168").GLOBAL_OBJ && undefined !== tmp(tmp2[1]).GLOBAL_OBJ.window;
-  if (!fn) {
-    _require = tmp3;
-    fn = (filename) => {
-      if (filename.filename) {
-        const obj = /^[a-zA-Z]:\\/;
-        let isMatch = obj.test(filename.filename);
-        if (!isMatch) {
-          filename = filename.filename;
-          let hasItem = filename.includes("\\");
-          if (hasItem) {
-            const filename2 = filename.filename;
-            hasItem = !filename2.includes("/");
-          }
-          isMatch = hasItem;
-        }
-        const tmp5 = closure_0;
-        if (tmp5) {
-          if (root) {
-            const filename1 = filename.filename;
-            if (0 === filename1.indexOf(root)) {
-              filename.filename = filename1.replace(root, prefix);
-            }
-          }
-        } else if (isMatch) {
-          let replaced;
-          let relativeResult;
-          if (isMatch) {
-            const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-            replaced = str5.replace(/\\/g, "/");
-          } else {
-            replaced = str3;
-          }
-          const obj2 = _mod11259;
-          if (root) {
-            relativeResult = obj2.relative(tmp7, replaced);
-          } else {
-            relativeResult = obj2.basename(replaced);
-          }
-          const _HermesInternal = HermesInternal;
-          filename.filename = "" + prefix + relativeResult;
-        }
-        return filename;
-      } else {
-        return filename;
-      }
-    };
+  if (span) {
+    extra.span = span;
   }
-  let obj2 = {
-    name: "RewriteFrames",
-    processEvent(exception) {
-      function _processExceptionsEvent(exception) {
-        let obj2;
-        let values;
-        try {
-          let obj = { exception: obj2 };
-          let merged = Object.assign(exception);
-          obj2 = {
-            values: values.map((stacktrace) => {
-                let mapped;
-                const obj = {};
-                const merged = Object.assign(stacktrace);
-                stacktrace = stacktrace.stacktrace;
-                if (stacktrace) {
-                  const stacktrace2 = stacktrace.stacktrace;
-                  const obj2 = { frames: mapped };
-                  const merged1 = Object.assign(stacktrace2);
-                  mapped = stacktrace2 && stacktrace2.frames;
-                  if (mapped) {
-                    const frames = stacktrace2.frames;
-                    mapped = frames.map((item) => closure_1_0(item));
-                  }
-                  stacktrace = { stacktrace: obj2 };
-                  const obj3 = { stacktrace: obj2 };
-                }
-                const merged2 = Object.assign(stacktrace);
-                return obj;
-              })
-          };
-          let merged1 = Object.assign(exception.exception);
-          values = exception.exception.values;
-          return obj;
-        } catch (err) {
-          return exception;
-        }
-      }
-      exception = exception.exception;
-      if (exception) {
-        const _Array = Array;
-        exception = Array.isArray(exception.exception.values);
-      }
-      let tmp2 = exception;
-      if (exception) {
-        tmp2 = _processExceptionsEvent(exception);
-      }
-      return tmp2;
-    }
-  };
-  return obj2;
-});
+  if (breadcrumbs.length) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
+    extra.breadcrumbs = items;
+  }
+  if (fingerprint.length) {
+    const items1 = [];
+    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
+    extra.fingerprint = items1;
+  }
+  if (eventProcessors.length) {
+    const items2 = [];
+    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
+    extra.eventProcessors = items2;
+  }
+  if (attachments.length) {
+    const items3 = [];
+    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
+    extra.attachments = items3;
+  }
+  const obj6 = {};
+  const merged = Object.assign(extra.propagationContext);
+  const merged1 = Object.assign(propagationContext);
+  extra.propagationContext = obj6;
+};

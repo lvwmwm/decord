@@ -1,12 +1,12 @@
-// Module ID: 8601
-// Function ID: 8602
+// Module ID: 8617
+// Function ID: 8618
 // Name: useGuildProfile
-// Dependencies: [5, 19, 8600, 558, 576, 504, 8602, 2]
+// Dependencies: [5, 19, 8616, 558, 576, 504, 8618, 2]
 
-// Module 8601 (useGuildProfile)
+// Module 8617 (useGuildProfile)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildProfileStore from "GuildProfileStore" /* 8600 */;
+import GuildProfileStore from "GuildProfileStore" /* 8616 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProf
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {

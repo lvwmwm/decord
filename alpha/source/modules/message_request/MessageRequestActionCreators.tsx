@@ -1,14 +1,14 @@
-// Module ID: 10305
-// Function ID: 10306
+// Module ID: 10338
+// Function ID: 10339
 // Name: MessageRequestActionCreators
-// Dependencies: [5, 1085, 1295, 10306, 584, 5937, 2]
+// Dependencies: [5, 1085, 1295, 10339, 584, 5930, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10305 (MessageRequestActionCreators)
+// Module 10338 (MessageRequestActionCreators)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5937 */;
-import MessageRequestTypes from "MessageRequestTypes" /* 10306 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
+import MessageRequestTypes from "MessageRequestTypes" /* 10339 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let body = function _acceptMessageRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ let body = function _acceptMessageRequest() {
             const obj = closure_130_1(closure_130_2[4]);
             obj.dispatch(obj7);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp11) {
           c4 = 3;

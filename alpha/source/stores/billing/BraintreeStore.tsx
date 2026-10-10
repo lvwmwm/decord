@@ -1,9 +1,9 @@
-// Module ID: 4745
-// Function ID: 4746
+// Module ID: 4786
+// Function ID: 4787
 // Name: BraintreeStore
 // Dependencies: [1085, 1382, 1295, 504, 584, 2]
 
-// Module 4745 (BraintreeStore)
+// Module 4786 (BraintreeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;

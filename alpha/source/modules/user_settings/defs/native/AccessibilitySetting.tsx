@@ -1,21 +1,21 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 15598
+// Function ID: 15599
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1085, 2061, 21, 2049, 558, 576, 7093, 1200, 1126, 10629, 15537, 15539, 2]
+// Dependencies: [32, 19, 1085, 2062, 21, 2049, 558, 576, 7099, 1200, 1126, 10663, 15599, 15601, 2]
 
-// Module 15536 (AccessibilitySetting)
+// Module 15598 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7093 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 15537 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7099 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 15599 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavi
   let tmp4;
   let obj = first(576);
   const cResult = obj.c(3);
-  const obj2 = first(7093);
+  const obj2 = first(7099);
   [first, tmp4] = obj2.useSelectedDismissibleContent(items);
   dependencyMap = tmp4;
   if (cResult[0] === tmp4) {
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavi
 }) : (function usePreNavigationAction() {
   let closure_1;
   let first;
-  let obj = first(7093);
+  let obj = first(7099);
   const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp[0];
   dependencyMap = tmp3;

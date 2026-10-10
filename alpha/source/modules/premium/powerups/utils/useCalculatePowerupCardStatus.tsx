@@ -1,13 +1,13 @@
-// Module ID: 12209
-// Function ID: 12210
+// Module ID: 12253
+// Function ID: 12254
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 4969, 558, 576, 1126, 2597, 2]
+// Dependencies: [19, 5008, 558, 576, 1126, 2600, 2]
 
-// Module 12209 (useCalculatePowerupCardStatus)
+// Module 12253 (useCalculatePowerupCardStatus)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef2597 from "module_2597" /* 2597 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4969 */;
+import _modDef2600 from "module_2600" /* 2600 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCalcula
         let tmp16;
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { type: "active", statusText: intl3.string(_modDef2597.FFLkmx) };
+          const obj3 = { type: "active", statusText: intl3.string(_modDef2600.FFLkmx) };
           intl3 = tmp(1126).intl;
           cResult[8] = obj3;
           tmp16 = obj3;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCalcula
         const formatToPlainString = intl.formatToPlainString;
         const sourcePowerup = sourceEntitlement.sourcePowerup;
         let title1;
-        const WRRYUT = _modDef2597.WRRYUT;
+        const WRRYUT = _modDef2600.WRRYUT;
         if (sourcePowerup != null) {
           title1 = sourcePowerup.title;
         }
@@ -137,7 +137,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCalcula
         const formatToPlainString = intl2.formatToPlainString;
         const sourcePowerup = tmp.sourcePowerup;
         let title;
-        const WRRYUT = _modDef2597.WRRYUT;
+        const WRRYUT = _modDef2600.WRRYUT;
         if (sourcePowerup != null) {
           title = sourcePowerup.title;
         }
@@ -149,7 +149,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCalcula
         tmp5 = obj4;
         obj5 = { perkName: title };
       } else if (sourceEntitlement.type !== tmp4.INACTIVE) {
-        const obj = { type: "active", statusText: intl.string(_modDef2597.FFLkmx) };
+        const obj = { type: "active", statusText: intl.string(_modDef2600.FFLkmx) };
         intl = intl4.intl;
         tmp5 = obj;
       }

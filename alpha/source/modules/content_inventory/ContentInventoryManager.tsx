@@ -1,25 +1,25 @@
-// Module ID: 18500
-// Function ID: 18501
+// Module ID: 18574
+// Function ID: 18575
 // Name: ContentInventoryManager
-// Dependencies: [5, 5754, 5758, 5885, 6072, 11557, 8438, 8453, 1085, 1102, 12, 13309, 584, 13910, 18501, 6804, 2]
+// Dependencies: [5, 5757, 5761, 5888, 6065, 11603, 8454, 8469, 1085, 1102, 12, 13359, 584, 13963, 18575, 6807, 2]
 
-// Module 18500 (ContentInventoryManager)
+// Module 18574 (ContentInventoryManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8453 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 13309 */;
-import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13910 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 18501 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8469 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 13359 */;
+import ContentInventoryExperiments from "ContentInventoryExperiments" /* 13963 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 18575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5754 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5758 */;
-import IdleStore from "IdleStore" /* 5885 */;
-import WindowStore from "WindowStore" /* 6072 */;
-import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 11557 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8438 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
+import IdleStore from "IdleStore" /* 5888 */;
+import WindowStore from "WindowStore" /* 6065 */;
+import ContentInventoryPersistedStore from "ContentInventoryPersistedStore" /* 11603 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8454 */;
 import module_12 from "module_12" /* 12 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let refresh_token;

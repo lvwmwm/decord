@@ -1,0 +1,38 @@
+// Module ID: 6481
+// Function ID: 6482
+// Name: react
+// Dependencies: [19]
+// Exports: useStableCallback
+
+// Module 6481 (react)
+import react from "react" /* 19 */;
+
+let current;
+
+let _window;
+let c2;
+let c3;
+let map;
+({ useCallback: _window, useEffect: map, useLayoutEffect: c2, useRef: c3 } = react);
+
+export const useStableCallback = function useStableCallback(arg0) {
+  const _window = arg0;
+  map = _false(undefined);
+  React2(() => {
+    ref.current = current;
+  });
+  const tmp2 = map(() => () => {
+    ref.current = undefined;
+  }, []);
+  return React(() => {
+    const items = [...arguments];
+    current = ref.current;
+    let applyResult;
+    if (current != null) {
+      const items1 = [];
+      HermesBuiltin.arraySpread(items1, items, 0);
+      applyResult = HermesBuiltin.apply(current, items1, tmp2);
+    }
+    return applyResult;
+  }, []);
+};

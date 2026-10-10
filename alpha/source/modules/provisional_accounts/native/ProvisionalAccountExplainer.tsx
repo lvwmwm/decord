@@ -1,21 +1,21 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12368
+// Function ID: 12369
 // Name: ProvisionalAccountExplainer
-// Dependencies: [19, 17, 21, 5091, 587, 558, 576, 12325, 12326, 5087, 1126, 5001, 6188, 6897, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12369, 12370, 5088, 1126, 6289, 6181, 6903, 2]
 
-// Module 12324 (ProvisionalAccountExplainer)
+// Module 12368 (ProvisionalAccountExplainer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 5001 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import Card_Card from "Card/Card" /* 6188 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6897 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12325 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Card_Card from "Card/Card" /* 6181 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6289 */;
+import UserProfileCardDefault from "UserProfileCard" /* 6903 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12369 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNati
       if (cResult[4] === userId) {
         tmp5 = cResult[5];
       }
-      const tmpResult = tmp(12326);
+      const tmpResult = tmp(12370);
       return tmpResult.useProvisionalAccountExplanationText(tmp5);
     }
     const obj2 = { userId, renderApplicationName: tmp4 };
@@ -74,7 +74,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNati
     const obj = { application, textVariant, iconSize };
     return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
   }, items);
-  let obj = iconSize(12326);
+  let obj = iconSize(12370);
   return obj.useProvisionalAccountExplanationText({ userId, renderApplicationName });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -107,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatProvis
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(intl2.t.Iyka0U) };
-        const Text = tmp(5087).Text;
+        const Text = tmp(5088).Text;
         intl = tmp(1126).intl;
         const tmp13 = hasOwnProperty(Text, obj2);
         const tmp14 = hasOwnProperty(CircleErrorIcon.CircleErrorIcon, { size: "xs", color: "text-default" });

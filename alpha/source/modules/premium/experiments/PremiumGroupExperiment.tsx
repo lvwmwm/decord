@@ -1,9 +1,9 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 9085
+// Function ID: 9086
 // Name: PremiumGroupExperiment
 // Dependencies: [1453, 558, 576, 2]
 
-// Module 9065 (PremiumGroupExperiment)
+// Module 9085 (PremiumGroupExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

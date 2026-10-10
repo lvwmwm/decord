@@ -1,12 +1,12 @@
-// Module ID: 7411
-// Function ID: 7412
+// Module ID: 7421
+// Function ID: 7422
 // Name: QuestHomeSearchSession
-// Dependencies: [1279, 7187, 2]
+// Dependencies: [1279, 7193, 2]
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession
 
-// Module 7411 (QuestHomeSearchSession)
+// Module 7421 (QuestHomeSearchSession)
 import v1 from "v1" /* 1279 */;
-import SessionUtils from "SessionUtils" /* 7187 */;
+import SessionUtils from "SessionUtils" /* 7193 */;
 import size from "module_2" /* 2 */;
 
 let searchSession;

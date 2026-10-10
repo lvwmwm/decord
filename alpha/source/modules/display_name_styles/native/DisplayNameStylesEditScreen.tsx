@@ -1,10 +1,10 @@
-// Module ID: 15544
-// Function ID: 15545
+// Module ID: 15606
+// Function ID: 15607
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 5080, 1390, 1085, 1627, 21, 1409, 5091, 587, 1504, 504, 15545, 8274, 5625, 4992, 1410, 1407, 14791, 10234, 10235, 568, 15546, 15547, 15548, 15549, 1265, 5056, 8275, 8272, 5055, 15552, 2000, 15554, 15555, 15560, 15564, 1126, 14792, 4788, 5627, 15565, 2955, 5087, 1200, 6899, 1103, 14793, 5376, 9017, 9344, 558, 576, 1631, 4811, 5375, 2]
+// Dependencies: [32, 19, 17, 5081, 1390, 1085, 1627, 21, 1409, 5092, 587, 1504, 504, 15607, 8290, 5628, 5031, 1410, 1407, 14847, 10265, 10266, 568, 15608, 15609, 15610, 15611, 1265, 5057, 8291, 8288, 5056, 15614, 2000, 15616, 15617, 15622, 15626, 1126, 14848, 4827, 5630, 15627, 2958, 5088, 1200, 6905, 1103, 14849, 5379, 9036, 9371, 558, 576, 1631, 4850, 5378, 2]
 // Exports: default
 
-// Module 15544 (DisplayNameStylesEditScreen)
+// Module 15606 (DisplayNameStylesEditScreen)
 import shallowEqual from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,18 +13,18 @@ import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1409 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import HapticUtils from "HapticUtils" /* 5056 */;
-import spring from "spring" /* 5375 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8272 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8275 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import spring from "spring" /* 5378 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8288 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8291 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplyB
   const tmpResult = onPress(stateFromStores[12]);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   const bottom = visible(tmp2[54])().bottom;
-  const fn2 = function p() {
+  const fn2 = function y() {
     let pointerEvents = "none";
     if (visible) {
       pointerEvents = "box-none";
@@ -108,7 +108,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplyB
   fn2.__initData = __initData;
   const tmpResult3 = onPress(stateFromStores[55]);
   const animatedProps = tmpResult3.useAnimatedProps(fn2);
-  const fn3 = function y() {
+  const fn3 = function p() {
     let withSpringResult2;
     let num = 0;
     if (visible) {
@@ -484,7 +484,7 @@ export default function DisplayNameStylesEditScreen() {
     }, items2);
     let obj4 = {
       hasChanges: memo1,
-      location: tmp2(tmp3[23]).DisplayNameStylesApplyLocations.PROFILE_EDITOR,
+      entryPoint: tmp2(tmp3[23]).DisplayNameStylesEntryPoints.PROFILE_EDITOR,
       selectedFontId,
       selectedEffectId: first1,
       selectedColors: memo,
@@ -562,7 +562,7 @@ export default function DisplayNameStylesEditScreen() {
       }
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName };
-      obj.openLazy(asyncRequire(15552, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
+      obj.openLazy(asyncRequire(15614, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
     }, items6);
     const useCallback = displayNameStylesPendingName.useCallback;
     if (stateFromStores != null) {
@@ -580,7 +580,7 @@ export default function DisplayNameStylesEditScreen() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       let id;
       ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequire(15554, dependencyMap.paths);
+      const tmp5 = asyncRequire(15616, dependencyMap.paths);
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
@@ -596,7 +596,7 @@ export default function DisplayNameStylesEditScreen() {
             }
         };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(15555, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+        obj3.openLazy(asyncRequire(15617, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
       } else {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
@@ -609,10 +609,10 @@ export default function DisplayNameStylesEditScreen() {
                   return callback(first1, arg0);
                 }
           };
-          openLazy(tmp2Result(15560, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+          openLazy(tmp2Result(15622, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
         } else {
           const obj = { selectedColor: first3, selectedEffectId: first1, onSelectColor };
-          openLazy(tmp2Result(15564, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
+          openLazy(tmp2Result(15626, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
         }
       }
     }, items8);
@@ -635,7 +635,7 @@ export default function DisplayNameStylesEditScreen() {
         num = 70;
       }
       const obj10 = { contentContainerStyle: obj9, children: items9 };
-      const obj11 = { user: stateFromStores, displayName: displayNameStylesPendingName, guildId, selectedFontId, selectedEffectId: first1, selectedColors: memo };
+      const obj11 = { user: stateFromStores, displayName: displayNameStylesPendingName, guildId, selectedFontId, selectedEffectId: first1, selectedColors: memo, isTryItOut };
       items9 = [closure_12(tmp9(tmp3[42]), obj11), , ];
       const obj12 = { style: tmp.fieldButtonGroup, children: items13 };
       const obj13 = { onPress: callback4, style: tmp.fieldButton, accessibilityRole: "button", accessibilityLabel: combined, children: items11 };

@@ -1,24 +1,24 @@
-// Module ID: 18547
-// Function ID: 18548
+// Module ID: 18621
+// Function ID: 18622
 // Name: NativeIntentsManager
-// Dependencies: [32, 2064, 2086, 4709, 4719, 2115, 1390, 1085, 18548, 18549, 5418, 13103, 1415, 1388, 4923, 6804, 2]
+// Dependencies: [32, 2065, 2087, 4750, 4760, 2116, 1390, 1085, 18622, 18623, 5421, 13150, 1415, 1388, 4962, 6807, 2]
 
-// Module 18547 (NativeIntentsManager)
+// Module 18621 (NativeIntentsManager)
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import UserUtilsDefault from "UserUtils" /* 4923 */;
-import useChannelName from "useChannelName" /* 5418 */;
-import getChannelIcon from "getChannelIcon" /* 13103 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 18548 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 18549 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import useChannelName from "useChannelName" /* 5421 */;
+import getChannelIcon from "getChannelIcon" /* 13150 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 18622 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 18623 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import RelationshipStore from "RelationshipStore" /* 4719 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -74,7 +74,7 @@ function makeSearchItem(channel, guild, flag) {
   }
   const sum = channelName + str2;
   id = undefined;
-  const CHANNEL = authStore3.CHANNEL;
+  const CHANNEL = syncedClientThemes.CHANNEL;
   if (guild != null) {
     id = guild.id;
   }
@@ -136,7 +136,7 @@ function makeGuildDomain(guild1, flag) {
     flag = false;
   }
   const tmp = getGuildThumbnail(guild1);
-  const CHANNELResult = authStore3.CHANNEL(guild1.id);
+  const CHANNELResult = syncedClientThemes.CHANNEL(guild1.id);
   const obj = { id: CHANNELResult, relatedUniqueIdentifier: CHANNELResult, type: "url", title: guild1.name, displayName: guild1.name, alternateNames: items, rankingHint: constants4.GUILD };
   items = ["*" + guild1.name];
   const items1 = [obj];
@@ -227,7 +227,7 @@ function setChannelActivity(channelId) {
       const _Set1 = new _Set(items);
       const items3 = [];
       HermesBuiltin.arraySpread(items3, _Set1, 0);
-      const CHANNELResult = authStore3.CHANNEL(channel.guild_id, channel.id);
+      const CHANNELResult = syncedClientThemes.CHANNEL(channel.guild_id, channel.id);
       const _HermesInternal2 = HermesInternal;
       const obj3 = { webpageURL: "" + constants2.BASE_URL + CHANNELResult, relatedUniqueIdentifier: CHANNELResult, eligibleForHandoff: true, eligibleForSearch: true, title: sum, keywords: items3, displayName: sum, type: "com.discord.view-channel" };
       const tmpResult5 = IntentsBindingsDefault;

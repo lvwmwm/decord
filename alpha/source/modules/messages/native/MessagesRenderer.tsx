@@ -1,40 +1,40 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10686
+// Function ID: 10687
 // Name: MessagesRenderer
-// Dependencies: [5, 32, 19, 9356, 2124, 4709, 6042, 6094, 7729, 1085, 21, 9, 10653, 9355, 10643, 9353, 7728, 9570, 10635, 12, 11, 10656, 9150, 9575, 9569, 10658, 7172, 10659, 11573, 4988, 1255, 9572, 11443, 11580, 10642, 568, 5076, 7422, 11581, 11440, 9647, 1382, 1629, 5982, 11582, 2]
+// Dependencies: [5, 32, 19, 9383, 2125, 4750, 6035, 6087, 7747, 1085, 21, 9, 10687, 9382, 10677, 9380, 7746, 9599, 10669, 12, 11, 10690, 9171, 9604, 9598, 10692, 7178, 10693, 11619, 5027, 1255, 9601, 11488, 11626, 10676, 568, 5077, 7422, 11627, 11485, 9676, 1382, 1629, 5975, 11628, 2]
 
-// Module 10652 (MessagesRenderer)
+// Module 10686 (MessagesRenderer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import GuildMemberStore from "GuildMemberStore" /* 2124 */;
-import flow_Client from "flow/Client" /* 4988 */;
-import CodedLink from "CodedLink" /* 5076 */;
-import QuestTypes from "QuestTypes" /* 5982 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7172 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import flow_Client from "flow/Client" /* 5027 */;
+import CodedLink from "CodedLink" /* 5077 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 7422 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7729 */;
-import QuestActionCreators from "QuestActionCreators" /* 9150 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9355 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9356 */;
-import computeScrollData from "computeScrollData" /* 9569 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 9570 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9572 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 9575 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9647 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 10653 */;
-import MessagesHandlers from "MessagesHandlers" /* 10659 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 11443 */;
-import NavigationTTIDefinition from "NavigationTTIDefinition" /* 11580 */;
-import MessagesUtilsDefault from "MessagesUtils" /* 11581 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7747 */;
+import QuestActionCreators from "QuestActionCreators" /* 9171 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9382 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9383 */;
+import computeScrollData from "computeScrollData" /* 9598 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 9599 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9601 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 9604 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9676 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 10687 */;
+import MessagesHandlers from "MessagesHandlers" /* 10693 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 11488 */;
+import NavigationTTIDefinition from "NavigationTTIDefinition" /* 11626 */;
+import MessagesUtilsDefault from "MessagesUtils" /* 11627 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4709 */;
-import ReadStateStore from "ReadStateStore" /* 6042 */;
-import SKUStore from "SKUStore" /* 6094 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import SKUStore from "SKUStore" /* 6087 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
@@ -109,7 +109,7 @@ class MessagesRenderer {
     let loadMoreBefore;
     let scrollToTopMessage;
     let updateNativeRows;
-    const f105389 = (id) => id.id;
+    const f105685 = (id) => id.id;
     ref = ref.ref;
     const merged = Object.assign(ref, Object.assign({ ref: 0 }));
     dependencyMap = undefined;
@@ -175,7 +175,7 @@ class MessagesRenderer {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -208,7 +208,7 @@ class MessagesRenderer {
                       const tmp24 = findMessageIndex(tmp10Result3.castChannelIdAsMessageId(channel.id));
                       if (null == tmp24) {
                         c2 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       } else {
                         const obj8 = { animated: !useReducedMotion };
                         const tmp10Result4 = c1(c2[17]);
@@ -232,7 +232,7 @@ class MessagesRenderer {
               const timerId1 = setTimeout(() => closure_2_25(!closure_1_0), 50);
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp18) {
             c2 = 3;
             throw tmp18;
@@ -361,7 +361,7 @@ class MessagesRenderer {
       obj.updateRows(ref6.current, { rows, isLoadingAtTop: tmp, scrollData, HACK_iOSForceAnimations, forceReload, isAnimated });
       ref2.current = hasMoreMessagesAfter;
     }, []);
-    current = merged(10635);
+    current = merged(10669);
     const chatUpdatesQueue = current.useChatUpdatesQueue(ref6, callback);
     let items = [, ];
     ({ canChat: arr[0], channel: arr[1] } = merged);
@@ -396,7 +396,7 @@ class MessagesRenderer {
       return isForumPostResult;
     }, items2);
     let obj2 = { channelId: merged.channelId, jumpTargetId: merged.messages.jumpTargetId, oldestUnreadMessageId: merged.oldestUnreadMessageId, shouldJumpToOriginalPost: callback3 };
-    let tmp18 = chatManager(10656)(obj2);
+    let tmp18 = chatManager(10690)(obj2);
     ({ startOrCancelLatestMessagesLoad: c15, channelLatestMessageLoadingStatsManager } = tmp18);
     let obj3 = {
       chatRef: ref6,
@@ -455,8 +455,8 @@ class MessagesRenderer {
       isStaff: merged.isStaff,
       visibleMessagesWindowHandler: merged.visibleMessagesWindowHandler
     };
-    ({ hasHandledScrollRef: c18, isAtBottomRef: c19, isNearBottomRef: c20, isNearTopRef: c21, deceleratingRef: c22, draggingRef: c23, firstIgnoredScrollEventTimestampRef: c24, scrollToTop: c25, handleScrollCallbacks: c26, loadMoreBefore, loadMoreAfter, scrollToTopMessage, updateNativeRows, handleScrollPosition } = chatManager(10658)(obj3));
-    const tmp19 = chatManager(10658)(obj3);
+    ({ hasHandledScrollRef: c18, isAtBottomRef: c19, isNearBottomRef: c20, isNearTopRef: c21, deceleratingRef: c22, draggingRef: c23, firstIgnoredScrollEventTimestampRef: c24, scrollToTop: c25, handleScrollCallbacks: c26, loadMoreBefore, loadMoreAfter, scrollToTopMessage, updateNativeRows, handleScrollPosition } = chatManager(10692)(obj3));
+    const tmp19 = chatManager(10692)(obj3);
     const ref7 = react.useRef(null);
     ref7.current = { getMessage: callback2, chatInputRef: merged.chatInputRef, selectedChannelId: merged.channelId, revealedMessageId: merged.messages.revealedMessageId, uploads: merged.uploads, paymentsBlocked: merged.paymentsBlocked, loadMoreBefore, loadMoreAfter };
     const first3 = first2(react.useState(() => {
@@ -465,7 +465,7 @@ class MessagesRenderer {
     }), 1)[0];
     const imperativeHandle = react.useImperativeHandle(ref, () => ({ scrollToBottom, jumpToPresent, scrollToNewMessages, getChatRef }));
     let obj4 = { chatManager, rowGenerator: first1, animatingStickerMessageIdRef: ref4, canAddNewReactions: callback1, channel: merged.channel, messages: merged.messages, isMessagesReady: merged.isMessagesReady, uploads: merged.uploads, roleStyle: merged.roleStyle, oldestUnreadMessageId: merged.oldestUnreadMessageId, replyingMessageId: merged.replyingMessageId, inlineAttachmentMedia: merged.inlineAttachmentMedia, inlineEmbedMedia: merged.inlineEmbedMedia, renderEmbeds: merged.renderEmbeds, renderReactions: merged.renderReactions, animateEmoji: merged.animateEmoji, gifAutoPlay: merged.gifAutoPlay, timestampHourCycle: merged.timestampHourCycle, currentUserId: merged.currentUserId, renderCommunicationDisabled: merged.renderCommunicationDisabled, selectedSummary: merged.selectedSummary, selectedConversation: merged.selectedConversation, enableSwipeActions: merged.enableSwipeActions, isResourceChannel: merged.isResourceChannel, shouldObscureSpoiler: merged.shouldObscureSpoiler, shouldDisableInteractiveComponents: merged.shouldDisableInteractiveComponents, unloadableContentEntryMessageIds: merged.unloadableContentEntryMessageIds, containerWidth: merged.containerWidth, chatRef: ref6, loadedRef: ref5, animatedRef: ref1, hasMoreMessagesAfterForLastUpdateRef: ref2, updateNativeRows, isLoadingAtTop, channelLatestMessageLoadingStatsManager, channelId: merged.channelId, isMessagesCached: merged.isMessagesCached, chatUpdatesQueue, shouldJumpToOriginalPost: callback3, findMessageIndex, scrollToTopMessage, useReducedMotion: merged.useReducedMotion };
-    let tmp23 = chatManager(11573)(obj4);
+    let tmp23 = chatManager(11619)(obj4);
     ({ updateRows: c33, scrollToMessageId: c34 } = tmp23);
     const effect = react.useEffect(() => {
       let channelId;
@@ -499,7 +499,7 @@ class MessagesRenderer {
       ({ channelId, messages: messages2 } = messages);
       const recordMessageRender = first(hasJumpedToOriginalPost[11]).recordMessageRender;
       first(hasJumpedToOriginalPost[11]);
-      const mapped = messages2.map(f105389);
+      const mapped = messages2.map(f105685);
       let hasFetched = messages2.hasFetched;
       if (!hasFetched) {
         hasFetched = messages2.ready && !messages2.cached;
@@ -508,7 +508,7 @@ class MessagesRenderer {
       ({ channelId: channelId2, messages: messages3 } = messages);
       const recordMessageRender2 = tmp15(hasJumpedToOriginalPost[11]).recordMessageRender;
       first(hasJumpedToOriginalPost[11]);
-      const mapped1 = messages3.map(f105389);
+      const mapped1 = messages3.map(f105685);
       let hasFetched2 = messages3.hasFetched;
       if (!hasFetched2) {
         hasFetched2 = messages3.ready && !messages3.cached;
@@ -746,7 +746,7 @@ class MessagesRenderer {
                                                                                                                                             let tmp67 = hasJumpedToOriginalPost;
                                                                                                                                             const tmp68 = first(hasJumpedToOriginalPost[11]);
                                                                                                                                             const recordMessageRender = tmp68.recordMessageRender;
-                                                                                                                                            const mapped = messages.map(f105389);
+                                                                                                                                            const mapped = messages.map(f105685);
                                                                                                                                             let hasFetched = messages.hasFetched;
                                                                                                                                             if (!hasFetched) {
                                                                                                                                               hasFetched = messages.ready && !messages.cached;
@@ -1172,7 +1172,7 @@ class MessagesRenderer {
             let tmp99 = hasJumpedToOriginalPost;
             let tmp100 = first(hasJumpedToOriginalPost[11]);
             const recordMessageRender2 = tmp100.recordMessageRender;
-            const mapped1 = messages3.map(f105389);
+            const mapped1 = messages3.map(f105685);
             let hasFetched2 = messages3.hasFetched;
             if (!hasFetched2) {
               let tmp102 = messages3.ready && !messages3.cached;
@@ -1339,9 +1339,9 @@ class MessagesRenderer {
         handleVisibleMessagesChange(obj);
       }
     };
-    items4 = [findMessageIndex(chatManager(11440), obj6), ];
+    items4 = [findMessageIndex(chatManager(11485), obj6), ];
     let obj7 = { messages: merged.messages };
-    items4[1] = findMessageIndex(merged(11582).ChatTTITracker, obj7);
+    items4[1] = findMessageIndex(merged(11628).ChatTTITracker, obj7);
     return c19(c18, obj5);
   }
 }

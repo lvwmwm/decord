@@ -1,11 +1,11 @@
-// Module ID: 17015
-// Function ID: 17016
+// Module ID: 17083
+// Function ID: 17084
 // Name: useConjurePublishedChannelId
-// Dependencies: [4707, 558, 576, 6939, 504, 2]
+// Dependencies: [4748, 558, 576, 6945, 504, 2]
 
-// Module 17015 (useConjurePublishedChannelId)
-import ConjureUtils from "ConjureUtils" /* 6939 */;
-import GuildChannelStore from "GuildChannelStore" /* 4707 */;
+// Module 17083 (useConjurePublishedChannelId)
+import ConjureUtils from "ConjureUtils" /* 6945 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

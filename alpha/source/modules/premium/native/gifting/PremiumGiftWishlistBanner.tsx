@@ -1,24 +1,24 @@
-// Module ID: 10120
-// Function ID: 10121
+// Module ID: 10149
+// Function ID: 10150
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 6925, 1392, 1085, 1087, 8291, 21, 587, 5091, 558, 576, 8948, 8960, 10121, 10125, 6848, 6872, 1265, 8287, 10068, 10126, 4938, 4768, 1126, 7256, 12655, 4923, 5087, 12680, 12685, 2]
+// Dependencies: [5, 19, 17, 6931, 1392, 1085, 1087, 8307, 21, 587, 5092, 558, 576, 8967, 8979, 10150, 10154, 6851, 6878, 1265, 8303, 10097, 10155, 4977, 4809, 1126, 7262, 12702, 4962, 5088, 12727, 12732, 2]
 
-// Module 10120 (PremiumGiftWishlistBanner)
+// Module 10149 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6925 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8287 */;
-import Constants2 from "Constants" /* 8291 */;
-import useWishlistHooks from "useWishlistHooks" /* 8960 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10125 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6931 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
+import Constants2 from "Constants" /* 8307 */;
+import useWishlistHooks from "useWishlistHooks" /* 8979 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10154 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -245,7 +245,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                                   style: null,
                                   children: from(obj5, (arg0, arg1) => {
                                                                   const obj = { style: constants3.placeholder };
-                                                                  return authStore3(metroRequire, obj, arg1);
+                                                                  return syncedClientThemes(metroRequire, obj, arg1);
                                                                 })
                                 };
                                 class F {
@@ -428,7 +428,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                       } else if (arg0 === 2) {
                         return { value, done: true };
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       }
                     } else {
                       try {
@@ -475,11 +475,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                                     openShopGiftModal(obj6);
                                   }
                                 }
-                                const obj7 = { key: "WISHLIST_ITEM_PRESS_ERROR", content: intl.string(lockedRecipientUser(skusToUserAndReason[25]).t["rTU7/z"]) };
+                                const obj7 = { text: intl.string(lockedRecipientUser(skusToUserAndReason[25]).t["rTU7/z"]) };
                                 const open = size(skusToUserAndReason[24]).open;
                                 size(skusToUserAndReason[24]);
                                 intl = tmp33(tmp30[25]).intl;
-                                open(obj7);
+                                open("WISHLIST_ITEM_PRESS_ERROR", obj7);
                               } else {
                                 const obj8 = { skuId: lockedRecipientUser.id, analyticsLocations: items2, lockedRecipientUser, giftingOrigin: constants.DM_CHANNEL_WISHLIST };
                                 const openSocialLayerStorefrontGiftModal = lockedRecipientUser(skusToUserAndReason[22]).openSocialLayerStorefrontGiftModal;
@@ -503,7 +503,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                           return { value, done: true };
                         }
                         c2 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       } catch (tmp23) {
                         c2 = 3;
                         throw tmp23;
@@ -736,7 +736,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -783,11 +783,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                       openShopGiftModal(obj6);
                     }
                   }
-                  const obj7 = { key: "WISHLIST_ITEM_PRESS_ERROR", content: intl.string(lockedRecipientUser(WISHLIST_IN_DM_LENGTH_MOBILE[25]).t["rTU7/z"]) };
+                  const obj7 = { text: intl.string(lockedRecipientUser(WISHLIST_IN_DM_LENGTH_MOBILE[25]).t["rTU7/z"]) };
                   const open = size(WISHLIST_IN_DM_LENGTH_MOBILE[24]).open;
                   size(WISHLIST_IN_DM_LENGTH_MOBILE[24]);
                   intl = tmp33(tmp30[25]).intl;
-                  open(obj7);
+                  open("WISHLIST_ITEM_PRESS_ERROR", obj7);
                 } else {
                   const obj8 = { skuId: lockedRecipientUser.id, analyticsLocations: items2, lockedRecipientUser, giftingOrigin: constants.DM_CHANNEL_WISHLIST };
                   const openSocialLayerStorefrontGiftModal = lockedRecipientUser(WISHLIST_IN_DM_LENGTH_MOBILE[22]).openSocialLayerStorefrontGiftModal;
@@ -811,7 +811,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;
@@ -857,7 +857,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
         style: tmp12.placeholderRow,
         children: Array.from(obj9, (arg0, arg1) => {
               const obj = { style: closure_14.placeholder };
-              return authStore3(metroRequire, obj, arg1);
+              return syncedClientThemes(metroRequire, obj, arg1);
             })
       };
       let _Array = Array;

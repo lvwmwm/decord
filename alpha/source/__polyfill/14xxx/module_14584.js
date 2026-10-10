@@ -1,39 +1,17 @@
 // Module ID: 14584
 // Function ID: 14585
-// Dependencies: []
-// Exports: getReactNativeVersionWithModules
+// Dependencies: [14531, 14582, 14565]
 
 // Module 14584
+import _mod14531 from "module_14531" /* 14531 */;
+import _mod14565 from "module_14565" /* 14565 */;
+import defineProperty2 from "defineProperty2" /* 14582 */;
 
-export const getReactNativeVersionWithModules = function getReactNativeVersionWithModules(constants) {
-  try {
-    const tmp = constants;
-    if (tmp) {
-      if (constants.reactNativeVersion) {
-        const major = constants.reactNativeVersion.major;
-        const minor = constants.reactNativeVersion.minor;
-        const patch = constants.reactNativeVersion.patch;
-        const prerelease = constants.reactNativeVersion.prerelease;
-        if (typeof major !== "number") {
-          return null;
-        } else {
-          const items = [];
-          const _HermesInternal2 = HermesInternal;
-          items.push("" + tmp4 + "." + minor + "." + patch);
-          const tmp16 = prerelease;
-          if (tmp16) {
-            const _HermesInternal = HermesInternal;
-            items.push("-" + prerelease);
-          }
-          return items.join("");
-        }
-      } else {
-        return null;
-      }
-    } else {
-      return null;
-    }
-  } catch (err) {
-    return null;
-  }
-};
+
+export default _mod14531 ? ((arg0, arg1, arg2) => {
+  const obj = defineProperty2;
+  return obj.f(arg0, arg1, _mod14565(1, arg2));
+}) : ((arg0, arg1, arg2) => {
+  arg0[arg1] = arg2;
+  return arg0;
+});

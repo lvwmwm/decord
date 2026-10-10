@@ -1,17 +1,17 @@
-// Module ID: 9409
-// Function ID: 9410
+// Module ID: 9438
+// Function ID: 9439
 // Name: DoubleTapReminderToast
-// Dependencies: [2061, 4899, 2049, 2041, 7968, 4768, 1126, 9410, 2]
+// Dependencies: [2062, 4938, 2049, 2041, 7986, 4809, 1126, 9439, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 9409 (DoubleTapReminderToast)
+// Module 9438 (DoubleTapReminderToast)
 import intl2 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4899 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7968 */;
-import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 9410 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7986 */;
+import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 9439 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -38,7 +38,7 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
     }
     if (areEmojisEqualResult) {
       const obj2 = { text: intl.formatToPlainString(intl2.t.C2tQIV, obj3), icon: tmpResult5.getToastEmojiEntity(name) };
-      const openMana = ToastActionCreatorsDefault.openMana;
+      const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = tmp(1126).intl;
       obj3 = {
@@ -48,7 +48,7 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
         emojiName: name.name
       };
       tmpResult5 = DoubleTapEmojiUpdatedToast;
-      openMana("DOUBLE_TAP_TO_REACT_REMINDER", obj2);
+      open("DOUBLE_TAP_TO_REACT_REMINDER", obj2);
       const obj4 = { dismissAction: ContentDismissActionType.AUTO_DISMISS, forceTrack: true };
       const tmpResult6 = DismissibleContentUnsafeUtils;
       const result1 = tmpResult6.UNSAFE_markDismissibleContentAsDismissed(tmp(2049).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj4);

@@ -1,7 +1,7 @@
 // Module ID: 7442
 // Function ID: 7443
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 5894, 2064, 2115, 1085, 2024, 3, 2059, 2041, 584, 1295, 2002, 2014, 38, 7443, 5105, 5897, 1497, 11012, 10991, 1126, 2]
+// Dependencies: [5, 17, 5897, 2065, 2116, 1085, 2024, 3, 2060, 2041, 584, 1295, 2002, 2014, 38, 7443, 5106, 5900, 1497, 11052, 11031, 1126, 2]
 
 // Module 7442 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -13,15 +13,15 @@ import useWindowDimensions from "useWindowDimensions" /* 1497 */;
 import inject from "inject" /* 2014 */;
 import Constants2 from "Constants" /* 2024 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import Timers from "Timers" /* 2059 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5897 */;
+import Timers from "Timers" /* 2060 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import StreamActionCreators from "StreamActionCreators" /* 7443 */;
-import PushNotificationDefault from "PushNotification" /* 10991 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 11012 */;
+import PushNotificationDefault from "PushNotification" /* 11031 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 11052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5894 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2115 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Constants from "Constants" /* 1085 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size_mod from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ let obj = function _handleThumbnailUpload() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c5;
@@ -107,7 +107,7 @@ let obj = function _handleThumbnailUpload() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp21) {
         closure_4 = tmp21;
         if (0 === c5) {

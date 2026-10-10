@@ -1,11 +1,11 @@
-// Module ID: 6620
-// Function ID: 6621
+// Module ID: 6621
+// Function ID: 6622
 // Name: FreeFormErrorLabel
-// Dependencies: [19, 21, 558, 576, 4781, 4930, 5087, 2]
+// Dependencies: [19, 21, 558, 576, 4820, 4969, 5088, 2]
 
-// Module 6620 (FreeFormErrorLabel)
+// Module 6621 (FreeFormErrorLabel)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 4930 */;
+import shared from "shared" /* 4969 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Label(arg0) 
   const cResult = obj.c(8);
   ({ children, style } = arg0);
   if (cResult[0] !== children) {
-    const tmpResult = tmp(4781);
+    const tmpResult = tmp(4820);
     const nodeText = tmpResult.getNodeText(children);
     cResult[0] = children;
     cResult[1] = nodeText;
@@ -62,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Label(arg0) 
     }
     return tmp9;
   }
-  const tmp10 = jsx(tmp(5087).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  const tmp10 = jsx(tmp(5088).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
   cResult[5] = children;
   cResult[6] = style;
   cResult[7] = tmp10;
@@ -71,7 +71,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Label(arg0) 
   children = children.children;
   let nodeText;
   const style = children.style;
-  const obj = nodeText(4781);
+  const obj = nodeText(4820);
   nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = react.useEffect(() => {
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Label(arg0) 
       AccessibilityAnnouncer.announce(nodeText);
     }
   }, items);
-  return jsx(nodeText(5087).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  return jsx(nodeText(5088).Text, { style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 });
 const result = size.fileFinishedImporting("design/void/Form/native/FreeFormErrorLabel.tsx");
 

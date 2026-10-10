@@ -1,9 +1,9 @@
-// Module ID: 13326
-// Function ID: 13327
+// Module ID: 13376
+// Function ID: 13377
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [19, 2026, 558, 576, 13293, 2]
+// Dependencies: [19, 2026, 558, 576, 13343, 2]
 
-// Module 13326 (useConnectionFilteredAppIdentities)
+// Module 13376 (useConnectionFilteredAppIdentities)
 import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2026 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConnect
   }
   const includeHidden = tmp4.includeHidden;
   _require = tmp5;
-  const tmpResult = tmp(13293);
+  const tmpResult = tmp(13343);
   const userApplicationIdentities = tmpResult.useUserApplicationIdentities(arg0);
   ({ isLoading, data } = userApplicationIdentities);
   if (cResult[2] !== data) {

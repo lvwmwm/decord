@@ -1,26 +1,26 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13094
+// Function ID: 13095
 // Name: ShopThisLookActionSheet
-// Dependencies: [19, 17, 8328, 6837, 6898, 21, 5091, 587, 8957, 4768, 1126, 558, 576, 9068, 504, 13048, 7268, 13050, 12680, 9022, 8325, 13051, 6848, 6872, 5055, 7256, 5087, 10495, 2]
+// Dependencies: [19, 17, 8344, 6840, 6904, 21, 5092, 587, 8976, 4809, 1126, 558, 576, 9088, 504, 13095, 7274, 13097, 12727, 9041, 8341, 13098, 6851, 6878, 5056, 7262, 5088, 10529, 2]
 
-// Module 13047 (ShopThisLookActionSheet)
+// Module 13094 (ShopThisLookActionSheet)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4768 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6837 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6872 */;
-import Constants from "Constants" /* 6898 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7256 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7268 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 8957 */;
-import ShopThisLookUtils from "ShopThisLookUtils" /* 13048 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 13050 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6840 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
+import Constants from "Constants" /* 6904 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7262 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7274 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 8976 */;
+import ShopThisLookUtils from "ShopThisLookUtils" /* 13095 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 13097 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StorefrontProductStore_mod from "StorefrontProductStore" /* 8328 */;
+import StorefrontProductStore_mod from "StorefrontProductStore" /* 8344 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -184,11 +184,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
                   constructor() {
                     let intl;
                     closure_6();
-                    const obj = { key: "SHOP_THIS_LOOK_ITEM_UNAVAILABLE", content: intl.string(intl3.t.YymRft) };
+                    const obj = { text: intl.string(intl3.t.YymRft) };
                     const open = ToastActionCreatorsDefault.open;
                     ToastActionCreatorsDefault;
                     intl = intl3.intl;
-                    open(obj);
+                    open("SHOP_THIS_LOOK_ITEM_UNAVAILABLE", obj);
                   }
                 }
                 cResult[28] = tmp25;
@@ -204,11 +204,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
                   constructor() {
                     let intl;
                     closure_6();
-                    const obj = { key: "SHOP_THIS_LOOK_ITEM_UNAVAILABLE", content: intl.string(intl3.t.YymRft) };
+                    const obj = { text: intl.string(intl3.t.YymRft) };
                     const open = ToastActionCreatorsDefault.open;
                     ToastActionCreatorsDefault;
                     intl = intl3.intl;
-                    open(obj);
+                    open("SHOP_THIS_LOOK_ITEM_UNAVAILABLE", obj);
                   }
                 }
               }
@@ -279,7 +279,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
   let callback;
   const tmp = closure_11();
   let tmp2 = skuId;
-  let obj = skuId(9068);
+  let obj = skuId(9088);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -322,7 +322,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
         const _Math = Math;
         const variants = tmp.variants;
         const bound = Math.max(0, variants.findIndex((skuId) => skuId.skuId === skuId));
-        const tmp2Result = tmp2(7268);
+        const tmp2Result = tmp2(7274);
         return tmp2Result.getSelectedProduct(c2, bound);
       } else {
         return c2;
@@ -361,7 +361,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
         },
       accessibilityHidden: true
     };
-    tmp22 = closure_9(onPress(8957), obj3);
+    tmp22 = closure_9(onPress(8976), obj3);
   } else {
     tmp22 = null;
     if (null != stateFromStores) {
@@ -369,7 +369,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
       if (memo) {
         const obj4 = { style: tmp.cardWrapper, children: items7 };
         const obj5 = { sku: stateFromStores, size, onPress: callback1 };
-        items7 = [closure_9(onPress(12680), obj5), ];
+        items7 = [closure_9(onPress(12727), obj5), ];
         let tmp19Result = null != memo1;
         const tmp17 = closure_10;
         const tmp18 = memo;
@@ -377,13 +377,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopTh
         const tmp20 = onPress;
         if (tmp19Result) {
           const obj6 = { selectedProduct: memo1, style: tmp.wishlistButton };
-          tmp19Result = tmp19(tmp20(9022), obj6);
+          tmp19Result = tmp19(tmp20(9041), obj6);
         }
         items7[1] = tmp19Result;
         tmp17Result = tmp17(tmp18, obj4);
       } else {
-        const obj7 = { sku: stateFromStores, size, overlay: tmp2(8957).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
-        const tmp15 = onPress(12680);
+        const obj7 = { sku: stateFromStores, size, overlay: tmp2(8976).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
+        const tmp15 = onPress(12727);
         tmp17Result = closure_9(tmp15, obj7);
       }
       tmp22 = tmp17Result;
@@ -395,28 +395,20 @@ ReactCompilerGating = ReactCompilerGating_mod;
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLookActionSheet(arg0) {
   let analyticsLocations;
   let cardWidth;
-  let closure_2;
   let container;
   let description;
   let first;
   let gap;
   let guildId;
-  let items1;
-  let obj6;
-  let obj7;
   let rowWidth;
-  let tmp10;
-  let tmp11;
-  let tmp12;
-  let tmp14;
-  let tmp16;
-  let tmp7Result;
+  let tmp15;
+  let tmp22;
   let userId;
-  let obj = cardWidth(576);
+  let obj = cardWidth(T[12]);
   const cResult = obj.c(28);
   ({ userId, guildId } = arg0);
   const tmp4 = closure_11();
-  let obj2 = cardWidth(8325);
+  let obj2 = cardWidth(T[20]);
   const equippedCollectibleSkuIds = obj2.useEquippedCollectibleSkuIds(userId, guildId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
@@ -425,149 +417,204 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLo
   } else {
     first = cResult[0];
   }
-  const tmp8 = analyticsLocations(13051)(first);
+  const tmp8 = analyticsLocations(T[21])(first);
   cardWidth = tmp8.cardWidth;
   ({ rowWidth, gap } = tmp8);
-  const tmp9 = analyticsLocations(6848);
-  analyticsLocations = tmp9(analyticsLocations(6872).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  const tmp7 = analyticsLocations;
+  const tmp9 = analyticsLocations(T[22]);
+  analyticsLocations = tmp9(analyticsLocations(tmp2[23]).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   if (cResult[1] !== analyticsLocations) {
-    const fn = function k(initialProductSkuId) {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet();
-      const obj2 = CollectiblesActionCreators;
-      const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
-      const result = obj2.openCollectiblesShopMobile(obj3);
-    };
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
     cResult[1] = analyticsLocations;
-    cResult[2] = fn;
-    tmp10 = fn;
+    cResult[2] = T;
   } else {
-    tmp10 = cResult[2];
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
   }
-  dependencyMap = tmp10;
+  T = tmp10;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [analyticsLocations(6872).SHOP_THIS_LOOK_ACTION_SHEET];
-    cResult[3] = items;
-    tmp11 = items;
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
+    tmp12[0] = tmp7(T[23]).SHOP_THIS_LOOK_ACTION_SHEET;
+    cResult[3] = tmp12;
   } else {
-    tmp11 = cResult[3];
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(cardWidth(1126).t.xNdRDO);
-    cResult[4] = stringResult;
-    tmp12 = stringResult;
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
+    cResult[4] = obj4.string(cardWidth(T[10]).t.xNdRDO);
+    const stringResult = obj4.string(cardWidth(T[10]).t.xNdRDO);
   } else {
-    tmp12 = cResult[4];
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
   }
   ({ container, description } = tmp4);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(cardWidth(1126).t["ws+0Lr"]);
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
+    const stringResult1 = obj5.string(cardWidth(T[10]).t["ws+0Lr"]);
     cResult[5] = stringResult1;
-    tmp14 = stringResult1;
+    tmp15 = stringResult1;
   } else {
-    tmp14 = cResult[5];
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
   }
   if (cResult[6] !== tmp4.description) {
-    const obj4 = { variant: "text-sm/medium", color: "text-subtle", style: description, children: tmp14 };
-    const tmp18 = closure_9(cardWidth(5087).Text, obj4);
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
+    const obj6 = { variant: "text-sm/medium", color: "text-subtle", style: description, children: tmp15 };
     cResult[6] = tmp4.description;
-    cResult[7] = tmp18;
-    tmp16 = tmp18;
+    cResult[7] = closure_9(cardWidth(T[26]).Text, obj6);
+    const tmp18 = closure_9(cardWidth(T[26]).Text, obj6);
   } else {
-    tmp16 = cResult[7];
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
+    }
   }
   if (cResult[8] === gap) {
-    let tmp19;
-    if (cResult[9] === rowWidth) {
-      tmp19 = cResult[10];
+    class T {
+      constructor(initialProductSkuId) {
+        const obj = ActionSheetActionCreatorsDefault;
+        obj.hideActionSheet();
+        const obj2 = CollectiblesActionCreators;
+        const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+        const result = obj2.openCollectiblesShopMobile(obj3);
+      }
     }
     if (cResult[11] === tmp4.itemsContainer) {
-      let tmp20;
-      let tmp21;
-      if (cResult[12] === tmp19) {
-        tmp20 = cResult[13];
+      class T {
+        constructor(initialProductSkuId) {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          const obj2 = CollectiblesActionCreators;
+          const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+          const result = obj2.openCollectiblesShopMobile(obj3);
+        }
       }
       if (cResult[14] === cardWidth) {
-        if (cResult[15] === tmp10) {
-          if (cResult[16] === equippedCollectibleSkuIds) {
-            tmp21 = cResult[17];
+        class T {
+          constructor(initialProductSkuId) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet();
+            const obj2 = CollectiblesActionCreators;
+            const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+            const result = obj2.openCollectiblesShopMobile(obj3);
           }
-          if (cResult[21] === tmp20) {
-            let tmp24;
-            if (cResult[22] === tmp21) {
-              tmp24 = cResult[23];
-            }
-            if (cResult[24] === tmp4.container) {
-              if (cResult[25] === tmp24) {
-                let tmp28;
-                if (cResult[26] === tmp16) {
-                  tmp28 = cResult[27];
-                }
-                return tmp28;
-              }
-            }
-            const obj5 = { value: tmp11, children: closure_9(tmp7Result, obj6) };
-            const AnalyticsLocationProvider = tmp(6848).AnalyticsLocationProvider;
-            obj6 = { startExpanded: true, title: tmp12, children: closure_10(closure_5, obj7) };
-            obj7 = { style: container, children: items1 };
-            items1 = [tmp16, tmp24];
-            tmp7Result = analyticsLocations(10495);
-            const tmp33 = closure_9(AnalyticsLocationProvider, obj5);
-            cResult[24] = tmp4.container;
-            cResult[25] = tmp24;
-            cResult[26] = tmp16;
-            cResult[27] = tmp33;
-            tmp28 = tmp33;
-          }
-          const obj8 = { style: tmp20, children: tmp21 };
-          const tmp27 = closure_9(closure_5, obj8);
-          cResult[21] = tmp20;
-          cResult[22] = tmp21;
-          cResult[23] = tmp27;
-          tmp24 = tmp27;
         }
       }
       if (cResult[18] === cardWidth) {
-        let tmp22;
-        if (cResult[19] === tmp10) {
-          tmp22 = cResult[20];
+        class T {
+          constructor(initialProductSkuId) {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet();
+            const obj2 = CollectiblesActionCreators;
+            const obj3 = { initialProductSkuId, analyticsLocations, analyticsSource: AnalyticsLocationDefault.USER_PROFILE_OVERFLOW_MENU };
+            const result = obj2.openCollectiblesShopMobile(obj3);
+          }
         }
         const mapped = equippedCollectibleSkuIds.map(tmp22);
         cResult[14] = cardWidth;
         cResult[15] = tmp10;
         cResult[16] = equippedCollectibleSkuIds;
         cResult[17] = mapped;
-        tmp21 = mapped;
       }
-      const fn2 = function x(skuId) {
+      const fn = function x(skuId) {
         size = skuId;
         const obj = {
           skuId,
           size,
           onPress() {
-            return closure_2(skuId);
+            return T(skuId);
           }
         };
         return closure_1_9(closure_1_12, obj, skuId);
       };
       cResult[18] = cardWidth;
       cResult[19] = tmp10;
-      cResult[20] = fn2;
-      tmp22 = fn2;
+      cResult[20] = fn;
+      tmp22 = fn;
     }
-    const items2 = [tmp4.itemsContainer, tmp19];
+    const items = [tmp4.itemsContainer, tmp19];
     cResult[11] = tmp4.itemsContainer;
     cResult[12] = tmp19;
-    cResult[13] = items2;
-    tmp20 = items2;
+    cResult[13] = items;
   }
-  const obj9 = { gap, width: rowWidth };
+  const obj7 = { gap, width: rowWidth };
   cResult[8] = gap;
   cResult[9] = rowWidth;
-  cResult[10] = obj9;
-  tmp19 = obj9;
+  cResult[10] = obj7;
 }) : (function ShopThisLookActionSheet(arg0) {
   let c0;
   let closure_2;
@@ -590,10 +637,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLo
   let obj = require("useMaybeFetchEquippedCollectibleProducts");
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(13051)(obj2));
-  analyticsLocations(13051)(obj2);
-  const tmp3 = analyticsLocations(6848);
-  analyticsLocations = tmp3(analyticsLocations(6872).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(13098)(obj2));
+  analyticsLocations(13098)(obj2);
+  const tmp3 = analyticsLocations(6851);
+  analyticsLocations = tmp3(analyticsLocations(6878).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = react.useCallback((initialProductSkuId) => {
     const obj = ActionSheetActionCreatorsDefault;
@@ -604,9 +651,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopThisLo
   }, items);
   let obj3 = { value: items1, children: closure_9(tmp4, obj4) };
   const AnalyticsLocationProvider = require("useAnalyticsLocations").AnalyticsLocationProvider;
-  items1 = [analyticsLocations(6872).SHOP_THIS_LOOK_ACTION_SHEET];
+  items1 = [analyticsLocations(6878).SHOP_THIS_LOOK_ACTION_SHEET];
   obj4 = { startExpanded: true, title: intl.string(require("intl").t.xNdRDO), children: closure_10(closure_5, obj5) };
-  tmp4 = analyticsLocations(10495);
+  tmp4 = analyticsLocations(10529);
   intl = require("intl").intl;
   obj5 = { style: tmp.container, children: items2 };
   const obj6 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: intl2.string(require("intl").t["ws+0Lr"]) };

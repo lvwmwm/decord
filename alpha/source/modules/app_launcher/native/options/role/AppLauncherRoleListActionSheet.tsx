@@ -1,21 +1,21 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11885
+// Function ID: 11886
 // Name: AppLauncherRoleListActionSheet
-// Dependencies: [32, 109, 19, 6814, 2119, 2118, 1085, 21, 558, 576, 8605, 11842, 504, 6815, 5087, 8200, 6186, 6101, 5055, 11807, 11809, 2]
+// Dependencies: [32, 109, 19, 6817, 2120, 2119, 1085, 21, 558, 576, 8621, 11886, 504, 6818, 5088, 8216, 6179, 6094, 5056, 11851, 11853, 2]
 
-// Module 11841 (AppLauncherRoleListActionSheet)
+// Module 11885 (AppLauncherRoleListActionSheet)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6101 */;
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6815 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11842 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2120 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6094 */;
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 6818 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6814 */;
-import GuildRoleStore from "GuildRoleStore" /* 2118 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6817 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ let _require;
 let closure_12;
 let map1;
 let tmp;
-const ShieldUserIcon2 = tmp(8605);
+const ShieldUserIcon2 = tmp(8621);
 let closure_4 = ["guildRole", "guildId"];
 let react = react_mod;
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRow(guil
         }
       }
       const obj4 = { label: tmp21, icon: tmp23, trailing: tmp26 };
-      const TableRow = tmp(6186).TableRow;
+      const TableRow = tmp(6179).TableRow;
       const merged = Object.assign(tmp6);
       cResult[20] = tmp5.id;
       cResult[21] = tmp6;
@@ -258,7 +258,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRow(guil
           }
         }
         const obj5 = { variant: "text-sm/normal", color: "text-muted", children: items2 };
-        const Text = tmp(5087).Text;
+        const Text = tmp(5088).Text;
         items2 = [closure_12(require("GroupIcon").GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
         tmp28 = closure_13(Text, obj5);
       }
@@ -303,16 +303,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRow(guil
     const obj = GuildRoleMemberActionCreatorsAll;
     const memberCounts = obj.fetchMemberCounts(guildId);
   }, items1);
-  const obj2 = { label: closure_12(guildRole(5087).Text, obj3), icon: closure_12(closure_15, { role: guildRole }), trailing: tmp8 };
-  const TableRow = guildRole(6186).TableRow;
+  const obj2 = { label: closure_12(guildRole(5088).Text, obj3), icon: closure_12(closure_15, { role: guildRole }), trailing: tmp8 };
+  const TableRow = guildRole(6179).TableRow;
   tmp8 = null;
   obj3 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildRole.name };
   if (!tmp5) {
     tmp8 = null;
     if (null != stateFromStores) {
       const obj4 = { variant: "text-sm/normal", color: "text-muted", children: items2 };
-      const Text = tmp2(5087).Text;
-      items2 = [closure_12(tmp2(8200).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
+      const Text = tmp2(5088).Text;
+      items2 = [closure_12(tmp2(8216).GroupIcon, { size: "xxs", color: "text-muted" }), " ", stateFromStores];
       tmp8 = closure_13(Text, obj4);
     }
   }

@@ -1,12 +1,14 @@
 // Module ID: 9873
 // Function ID: 9874
-// Dependencies: [41, 42, 93, 95, 98, 9811]
+// Dependencies: [41, 42, 93, 95, 98, 9865, 9822, 9826]
 
 // Module 9873
-import _mod9811 from "module_9811" /* 9811 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9822 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9826 */;
+import _mod9865 from "module_9865" /* 9865 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class PTMergeDateTimeRefiner {
+class DETimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, PTMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(PTMergeDateTimeRefiner);
+    _classCallCheck(this, DETimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(DETimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,14 +44,24 @@ class PTMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(PTMergeDateTimeRefiner, fn(_mod9811).default);
+_inherits(DETimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(?:,|\u00E0)?\\s*$");
+  key: "innerPattern",
+  value: function innerPattern() {
+    const regExp = new RegExp("(?:in|f\u00FCr|w\u00E4hrend)\\s*(" + _mod9865.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
     return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod9865.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    }
+  }
+];
 
-export default _createClass(PTMergeDateTimeRefiner, items);
+export default _createClass(DETimeUnitWithinFormatParser, items);

@@ -1,13 +1,13 @@
-// Module ID: 17496
-// Function ID: 17497
+// Module ID: 17568
+// Function ID: 17569
 // Name: ConversationPreviewFocusScreen
-// Dependencies: [19, 7312, 21, 558, 576, 1506, 504, 9351, 2]
+// Dependencies: [19, 7318, 21, 558, 576, 1506, 504, 9378, 2]
 
-// Module 17496 (ConversationPreviewFocusScreen)
+// Module 17568 (ConversationPreviewFocusScreen)
 import Fragment from "Fragment" /* 21 */;
-import ConversationFocusViewDefault from "ConversationFocusView" /* 9351 */;
+import ConversationFocusViewDefault from "ConversationFocusView" /* 9378 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7312 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7318 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

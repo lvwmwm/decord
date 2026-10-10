@@ -1,17 +1,17 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8920
+// Function ID: 8921
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2020, 2066, 5072, 1085, 8873, 504, 1102, 8480, 7002, 558, 576, 2]
+// Dependencies: [5, 19, 2020, 2067, 5073, 1085, 8892, 504, 1102, 8496, 7008, 558, 576, 2]
 // Exports: hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 8901 (useGameProfileInvite)
+// Module 8920 (useGameProfileInvite)
 import DurationsDefault from "Durations" /* 1102 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8480 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2020 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 2066 */;
-import InviteStore from "InviteStore" /* 5072 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 2067 */;
+import InviteStore from "InviteStore" /* 5073 */;
 import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f99454 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f99717 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -97,7 +97,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     }
   } else {
     try {
@@ -137,7 +137,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
         throw error;
       }
       c4 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+51" };
     } catch (tmp19) {
       c4 = 3;
       throw tmp19;
@@ -180,7 +180,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
     if (websites != null) {
       websites = websites.websites;
       if (websites != null) {
-        found = websites.find(f99454);
+        found = websites.find(f99717);
       }
     }
     let arr;
@@ -317,7 +317,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f99454);
+      found = websites.find(f99717);
     }
   }
   let arr;
@@ -408,7 +408,7 @@ export const preloadGameProfileInvite = function preloadGameProfileInvite(arg0) 
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f99454);
+        found = websites.find(f99717);
       }
     }
     let arr;

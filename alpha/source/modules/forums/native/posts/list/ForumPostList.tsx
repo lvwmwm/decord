@@ -1,20 +1,20 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11696
+// Function ID: 11697
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 2071, 21, 5091, 558, 576, 6970, 11631, 11642, 11651, 11654, 2]
+// Dependencies: [32, 19, 17, 2072, 21, 5092, 558, 576, 6976, 11677, 11688, 11697, 11700, 2]
 
-// Module 11650 (ForumPostList)
+// Module 11696 (ForumPostList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ChannelConstants from "ChannelConstants" /* 2071 */;
-import ForumTagHooks from "ForumTagHooks" /* 6970 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11631 */;
-import ForumPostListBodyDefault from "ForumPostListBody" /* 11651 */;
-import ForumPostListFooterDefault from "ForumPostListFooter" /* 11654 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import ForumTagHooks from "ForumTagHooks" /* 6976 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11677 */;
+import ForumPostListBodyDefault from "ForumPostListBody" /* 11697 */;
+import ForumPostListFooterDefault from "ForumPostListFooter" /* 11700 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostAppliedTags = tmp(11642);
+const ForumPostAppliedTags = tmp(11688);
 const View = react_native.View;
 const ChannelFlags = ChannelConstants.ChannelFlags;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);

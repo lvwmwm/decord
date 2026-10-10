@@ -1,17 +1,25 @@
 // Module ID: 6718
 // Function ID: 6719
 // Dependencies: []
-// Exports: findLastIndex
+// Exports: getModalRouteKeys
 
 // Module 6718
 
-export const findLastIndex = function findLastIndex(arg0, fn) {
-  let diff = arg0.length - 1;
-  if (0 <= diff) {
-    while (!fn(arg0[diff])) {
-      diff = diff - 1;
+export const getModalRouteKeys = (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.reduce((arr, key) => {
+    let options;
+    if (closure_0[key.key] != null) {
+      options = tmp.options;
     }
-    return diff;
-  }
-  return -1;
+    if (options == null) {
+      options = {};
+    }
+    const presentation = options.presentation;
+    const tmp2 = arr.length && !presentation || "modal" === presentation || "transparentModal" === presentation;
+    if (tmp2) {
+      arr.push(key.key);
+    }
+    return arr;
+  }, []);
 };

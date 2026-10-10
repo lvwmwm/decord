@@ -1,10 +1,10 @@
-// Module ID: 11867
-// Function ID: 11868
+// Module ID: 11911
+// Function ID: 11912
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1126, 5633, 2]
+// Dependencies: [5, 32, 19, 1126, 5636, 2]
 // Exports: default
 
-// Module 11867 (useRequest)
+// Module 11911 (useRequest)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ export default function useRequest(arg0) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -99,7 +99,7 @@ export default function useRequest(arg0) {
               c4 = 0;
               closure_130_1(false);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;

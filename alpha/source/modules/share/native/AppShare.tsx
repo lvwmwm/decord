@@ -1,25 +1,25 @@
-// Module ID: 18617
-// Function ID: 18618
+// Module ID: 18691
+// Function ID: 18692
 // Name: AppShare
-// Dependencies: [32, 19, 17, 7176, 14573, 502, 1085, 12082, 21, 558, 576, 504, 5937, 1382, 7505, 14613, 12085, 7190, 1265, 5393, 14049, 1628, 8466, 6725, 17544, 17603, 5304, 14743, 2]
+// Dependencies: [32, 19, 17, 7182, 14627, 502, 1085, 12126, 21, 558, 576, 504, 5930, 1382, 7505, 14667, 12129, 7196, 1265, 5396, 14104, 1628, 8482, 6726, 17616, 17675, 5305, 14798, 2]
 
-// Module 18617 (AppShare)
+// Module 18691 (AppShare)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useMountEffectDefault from "useMountEffect" /* 5393 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5937 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7190 */;
-import Constants2 from "Constants" /* 12082 */;
-import ShareScreenDefault from "ShareScreen" /* 14049 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 14613 */;
-import AppContainerDefault from "AppContainer" /* 14743 */;
-import AppToastContainerDefault from "AppToastContainer" /* 17603 */;
+import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7196 */;
+import Constants2 from "Constants" /* 12126 */;
+import ShareScreenDefault from "ShareScreen" /* 14104 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 14667 */;
+import AppContainerDefault from "AppContainer" /* 14798 */;
+import AppToastContainerDefault from "AppToastContainer" /* 17675 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7176 */;
-import ShareStore from "ShareStore" /* 14573 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7182 */;
+import ShareStore from "ShareStore" /* 14627 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -334,9 +334,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppShare(att
       let str = "react.memo_cache_sentinel";
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { appEntryKey: share };
-        const tmp25 = closure_9(tmp(17544).ActionSheetContainer, obj2);
+        const tmp25 = closure_9(tmp(17616).ActionSheetContainer, obj2);
         const tmp26 = closure_9(AppToastContainerDefault, { appChrome: false });
-        const tmp27 = closure_9(tmp(5304).AlertModalContainer, {});
+        const tmp27 = closure_9(tmp(5305).AlertModalContainer, {});
         cResult[9] = tmp25;
         cResult[10] = tmp26;
         cResult[11] = tmp27;
@@ -365,13 +365,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppShare(att
       const tmp11Result = ShareScreenDefault;
       const tmpResult = tmp(1628);
       if (tmpResult.isMetaQuest()) {
-        exitApp = tmp11(8466).close;
+        exitApp = tmp11(8482).close;
       } else {
         exitApp = BackHandler.exitApp;
       }
       tmp14Result = tmp14(tmp11Result, obj4);
     } else {
-      tmp14Result = tmp14(tmp(6725).SceneLoadingIndicator, {});
+      tmp14Result = tmp14(tmp(6726).SceneLoadingIndicator, {});
     }
     cResult[6] = tmp4;
     cResult[7] = attachments;
@@ -439,7 +439,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppShare(att
     const obj3 = require("MetaQuestUtils");
     const tmp15 = _require;
     if (obj3.isMetaQuest()) {
-      exitApp = tmp4(8466).close;
+      exitApp = tmp4(8482).close;
     } else {
       exitApp = BackHandler.exitApp;
     }
@@ -451,7 +451,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppShare(att
     tmp10Result = tmp10(require("SceneLoadingIndicator").SceneLoadingIndicator, {});
     tmp13 = tmp10;
   }
-  items1 = [tmp10Result, tmp13(tmp11(17544).ActionSheetContainer, { appEntryKey: share }), tmp13(AppToastContainerDefault, { appChrome: false }), tmp13(tmp11(5304).AlertModalContainer, {})];
+  items1 = [tmp10Result, tmp13(tmp11(17616).ActionSheetContainer, { appEntryKey: share }), tmp13(AppToastContainerDefault, { appChrome: false }), tmp13(tmp11(5305).AlertModalContainer, {})];
   return tmp7(tmp8, obj);
 });
 const result = size.fileFinishedImporting("modules/share/native/AppShare.tsx");

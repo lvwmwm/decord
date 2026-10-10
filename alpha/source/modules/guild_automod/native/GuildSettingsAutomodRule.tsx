@@ -1,22 +1,22 @@
-// Module ID: 18186
-// Function ID: 18187
+// Module ID: 18260
+// Function ID: 18261
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 32, 19, 18168, 18170, 11403, 21, 5091, 587, 558, 576, 1503, 17467, 2041, 18171, 5304, 1126, 6205, 7082, 11408, 4767, 5632, 6879, 5087, 6290, 6889, 18187, 18198, 18201, 6269, 6186, 5374, 8563, 6726, 2]
+// Dependencies: [5, 32, 19, 18242, 18244, 11448, 21, 5092, 587, 558, 576, 1503, 17539, 2041, 18245, 5305, 1126, 6200, 7088, 11453, 4808, 5635, 6885, 5088, 6285, 6895, 18261, 18272, 18275, 6264, 6179, 5377, 8579, 6727, 2]
 
-// Module 18186 (GuildSettingsAutomodRule)
+// Module 18260 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 4767 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6205 */;
-import ClipboardUtils from "ClipboardUtils" /* 6879 */;
-import Constants from "Constants" /* 11403 */;
-import AutomodStore from "AutomodStore" /* 18168 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 18171 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6200 */;
+import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import Constants from "Constants" /* 11448 */;
+import AutomodStore from "AutomodStore" /* 18242 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18245 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18170 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 18244 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -189,7 +189,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -227,7 +227,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp19) {
         c3 = 3;
@@ -326,7 +326,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -364,7 +364,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp19) {
         c3 = 3;
@@ -583,7 +583,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+51" };
                           }
                         } else {
                           let c4;
@@ -637,7 +637,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                               c4(closure_130_1, closure_0);
                               closure_1.pop();
                               c6 = 3;
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "+51" };
                             }
                           } catch (tmp37) {
                             closure_3 = tmp37;

@@ -1,12 +1,12 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9591
+// Function ID: 9592
 // Name: SwipeableFastList
-// Dependencies: [19, 21, 9563, 6759, 2]
+// Dependencies: [19, 21, 9592, 6760, 2]
 
-// Module 9562 (SwipeableFastList)
+// Module 9591 (SwipeableFastList)
 import Fragment from "Fragment" /* 21 */;
-import FastListDefault from "FastList" /* 6759 */;
-import SwipeDirectionDefault from "SwipeDirection" /* 9563 */;
+import FastListDefault from "FastList" /* 6760 */;
+import SwipeDirectionDefault from "SwipeDirection" /* 9592 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

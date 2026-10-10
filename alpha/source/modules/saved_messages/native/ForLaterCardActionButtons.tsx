@@ -1,17 +1,17 @@
-// Module ID: 12611
-// Function ID: 12612
+// Module ID: 12658
+// Function ID: 12659
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 5091, 5055, 12612, 2000, 12605, 12615, 1126, 12616, 6212, 12618, 9694, 9335, 8114, 8755, 2]
+// Dependencies: [19, 17, 21, 5092, 5056, 12659, 2000, 12652, 12662, 1126, 12663, 6207, 12665, 9723, 9362, 7573, 8771, 2]
 // Exports: default
 
-// Module 12611 (ForLaterCardActionButtons)
+// Module 12658 (ForLaterCardActionButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 12605 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 12652 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -30,7 +30,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   const tmp = closure_6();
   let obj = {
     label: intl.string(savedMessage(1126).t["+TSRGD"]),
-    IconComponent: savedMessage(12616).ChatArrowRightIcon,
+    IconComponent: savedMessage(12663).ChatArrowRightIcon,
     action() {
       return jumpToMessage();
     }
@@ -53,7 +53,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
       channelId: savedMessage.saveData.channelId,
       messageId: savedMessage.saveData.messageId
     };
-    return obj.openLazy(asyncRequire(12612, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
+    return obj.openLazy(asyncRequire(12659, dependencyMap.paths), "MessageReminderDurationActionSheet", obj2);
   }, items);
   intl = savedMessage(1126).intl;
   const items1 = [obj, ];
@@ -66,7 +66,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }
   let obj2 = {
     label: string(SvXS1Z),
-    IconComponent: tmp3(6212).XSmallIcon,
+    IconComponent: tmp3(6207).XSmallIcon,
     action() {
       const obj = SavedMessageHelpers;
       return obj.removeSavedMessage(savedMessage.saveData);
@@ -81,9 +81,9 @@ export default function ForLaterCardActionButtons(savedMessage) {
     const t = tmp3(1126).t;
     const obj3 = { label: string2(throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1), IconComponent: PencilIcon, action: callback };
     if (throttledNow > savedMessage.saveData.dueAt) {
-      PencilIcon = tmp3(12618).BellZIcon;
+      PencilIcon = tmp3(12665).BellZIcon;
     } else {
-      PencilIcon = tmp3(9694).PencilIcon;
+      PencilIcon = tmp3(9723).PencilIcon;
     }
     unshift(obj3);
   }

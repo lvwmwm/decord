@@ -1,15 +1,15 @@
-// Module ID: 17170
-// Function ID: 17171
+// Module ID: 17240
+// Function ID: 17241
 // Name: useConjureOwnImages
-// Dependencies: [109, 32, 19, 13164, 1126, 3827, 2]
+// Dependencies: [109, 32, 19, 13213, 1126, 3849, 2]
 // Exports: inertOwnImageControls, useConjureOwnImages
 
-// Module 17170 (useConjureOwnImages)
-import _modDef3827 from "module_3827" /* 3827 */;
+// Module 17240 (useConjureOwnImages)
+import _modDef3849 from "module_3849" /* 3849 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13164 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ export const useConjureOwnImages = function useConjureOwnImages(projectId, first
   [first1, closure_6] = first1.useState({});
   [first2, closure_8] = first1.useState({});
   let intl = require("intl").intl;
-  const stringResult = intl.string(_modDef3827.wTsP5l);
+  const stringResult = intl.string(_modDef3849.wTsP5l);
   const text = stringResult;
   let items = [first];
   const items1 = [first1, first, first2];
@@ -127,7 +127,7 @@ export const useConjureOwnImages = function useConjureOwnImages(projectId, first
       let closure_1;
       let closure_3;
       let error;
-      const f155607 = (arg0) => {
+      const f156058 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
@@ -246,7 +246,7 @@ export const useConjureOwnImages = function useConjureOwnImages(projectId, first
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f155607);
+                    closure_1_8(f156058);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -307,7 +307,7 @@ export const useConjureOwnImages = function useConjureOwnImages(projectId, first
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f155607);
+                  closure_1_8(f156058);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

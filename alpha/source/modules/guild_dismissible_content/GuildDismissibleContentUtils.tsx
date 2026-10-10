@@ -1,15 +1,15 @@
-// Module ID: 12186
-// Function ID: 12187
+// Module ID: 12230
+// Function ID: 12231
 // Name: GuildDismissibleContentUtils
-// Dependencies: [1244, 1085, 2061, 1095, 2048, 558, 576, 504, 2046, 1265, 2049, 2]
+// Dependencies: [1244, 1085, 2062, 1095, 2048, 558, 576, 504, 2046, 1265, 2049, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed
 
-// Module 12186 (GuildDismissibleContentUtils)
+// Module 12230 (GuildDismissibleContentUtils)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2048 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2061 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,16 +1,16 @@
-// Module ID: 9671
-// Function ID: 9672
+// Module ID: 9700
+// Function ID: 9701
 // Name: UploaderBase
-// Dependencies: [5, 1085, 5084, 3, 580, 12, 7771, 7748, 7749, 2]
+// Dependencies: [5, 1085, 5085, 3, 580, 12, 7789, 7766, 7767, 2]
 
-// Module 9671 (UploaderBase)
+// Module 9700 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import _mod580 from "module_580" /* 580 */;
 import Constants from "Constants" /* 1085 */;
-import MessageConstants from "MessageConstants" /* 5084 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 7748 */;
-import UploadTargets from "UploadTargets" /* 7771 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 7766 */;
+import UploadTargets from "UploadTargets" /* 7789 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c7;
@@ -409,7 +409,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ class UploaderBase extends EventEmitter {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp28) {
           c3 = 3;
           throw tmp28;

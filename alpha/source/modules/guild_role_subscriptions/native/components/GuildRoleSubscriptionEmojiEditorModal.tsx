@@ -1,24 +1,24 @@
-// Module ID: 18449
-// Function ID: 18450
+// Module ID: 18523
+// Function ID: 18524
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5995, 21, 5091, 587, 558, 576, 18440, 504, 5298, 1126, 5395, 6163, 1415, 8563, 18435, 5087, 18446, 2]
+// Dependencies: [5, 32, 19, 17, 5988, 21, 5092, 587, 558, 576, 18514, 504, 5299, 1126, 5398, 6156, 1415, 8579, 18509, 5088, 18520, 2]
 
-// Module 18449 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 18523 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5298 */;
-import AlertDefault from "Alert" /* 5395 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import EmojiAliasDefault from "EmojiAlias" /* 18435 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import AlertDefault from "Alert" /* 5398 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import EmojiAliasDefault from "EmojiAlias" /* 18509 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5995 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5988 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -207,7 +207,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -245,7 +245,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp11) {
         if (0 === c3) {
@@ -296,7 +296,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -334,7 +334,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp11) {
           let closure_2 = tmp11;

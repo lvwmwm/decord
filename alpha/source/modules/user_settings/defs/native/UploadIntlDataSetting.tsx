@@ -1,22 +1,22 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15816
+// Function ID: 15817
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1085, 21, 570, 1272, 558, 576, 1381, 1130, 1164, 1126, 1382, 1295, 4768, 5013, 10629, 15755, 15039, 2]
+// Dependencies: [5, 17, 1085, 21, 570, 1272, 558, 576, 1381, 1130, 1164, 1126, 1382, 1295, 4809, 5046, 10663, 15817, 15098, 2]
 
-// Module 15754 (UploadIntlDataSetting)
+// Module 15816 (UploadIntlDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
 import AssetRegistry from "AssetRegistry" /* 1164 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15039 */;
-import FileUpIcon from "FileUpIcon" /* 15755 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15098 */;
+import FileUpIcon from "FileUpIcon" /* 15817 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10629 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -43,7 +43,7 @@ let obj = function _serializeIntlData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let tmp32;
@@ -176,7 +176,7 @@ obj = function _handleUploadIntlDataSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c3;
@@ -220,9 +220,9 @@ obj = function _handleUploadIntlDataSettingPress() {
           if (2 === c4) {
             c3 = 1;
             open = closure_129_1(closure_129_3[14]).open;
-            const obj5 = { key: "USER_SETTINGS_INTL_DATA_UPLOAD_FAILED", IconComponent: closure_129_0(closure_129_3[15]).CircleInformationIcon, content: "Failed to upload internationalization data." };
+            const obj5 = { text: "Failed to upload internationalization data.", icon: closure_129_0(closure_129_3[15]).CircleInformationIcon };
             const tmp19 = closure_129_1(closure_129_3[14]);
-            open(obj5);
+            open("USER_SETTINGS_INTL_DATA_UPLOAD_FAILED", obj5);
           } else if (3 === c4) {
             if (arg0 === 1) {
               c5 = 3;
@@ -254,15 +254,15 @@ obj = function _handleUploadIntlDataSettingPress() {
             return obj8;
           } else {
             open = closure_129_1(closure_129_3[14]).open;
-            obj = { key: "USER_SETTINGS_INTL_DATA_UPLOADED", IconComponent: closure_129_0(closure_129_3[15]).CircleInformationIcon, content: "Internationalization data uploaded successfully." };
+            obj = { text: "Internationalization data uploaded successfully.", icon: closure_129_0(closure_129_3[15]).CircleInformationIcon };
             const tmp8 = closure_129_1(closure_129_3[14]);
-            open(obj);
+            open("USER_SETTINGS_INTL_DATA_UPLOADED", obj);
             c3 = 1;
           }
           c3 = 0;
           onUploadIntlDataRequestFinish();
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp28) {
         url = tmp28;

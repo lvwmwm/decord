@@ -1,12 +1,12 @@
-// Module ID: 17515
-// Function ID: 17516
+// Module ID: 17587
+// Function ID: 17588
 // Name: useMutualGuilds
-// Dependencies: [19, 7314, 1390, 558, 576, 504, 584, 8295, 2]
+// Dependencies: [19, 7320, 1390, 558, 576, 504, 8311, 2]
 
-// Module 17515 (useMutualGuilds)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 17587 (useMutualGuilds)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7314 */;
+import UserProfileStore from "UserProfileStore" /* 7320 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMutualG
   let tmp8;
   _require = arg0;
   let tmp = _require;
-  let obj = require("react");
+  const obj = require("react");
   const cResult = obj.c(11);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -87,8 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMutualG
     constructor() {
       const tmp = 0 === stateFromStoresArray.length && null != stateFromStores && null == UserProfileStore.getMutualGuilds(closure_0);
       if (tmp) {
-        const obj = DispatcherDefault;
-        obj.wait(() => stateFromStores(stateFromStoresArray[7])(closure_1_0, undefined, { withMutualGuilds: true }));
+        maybeFetchUserProfileDefault(closure_0, undefined, { withMutualGuilds: true });
       }
     }
   }
@@ -104,8 +103,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMutualG
   let closure_0;
   let stateFromStoresArray;
   _require = arg0;
-  let obj = require("get initialized");
   const items = [UserStore];
+  const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(closure_0));
   const items1 = [UserProfileStore];
   const obj2 = require("get initialized");
@@ -124,8 +123,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMutualG
   const effect = react.useEffect(() => {
     const tmp = 0 === stateFromStoresArray.length && null != stateFromStores && null == UserProfileStore.getMutualGuilds(closure_0);
     if (tmp) {
-      const obj = DispatcherDefault;
-      obj.wait(() => stateFromStores(stateFromStoresArray[7])(closure_1_0, undefined, { withMutualGuilds: true }));
+      maybeFetchUserProfileDefault(closure_0, undefined, { withMutualGuilds: true });
     }
   }, items2);
   return stateFromStoresArray;

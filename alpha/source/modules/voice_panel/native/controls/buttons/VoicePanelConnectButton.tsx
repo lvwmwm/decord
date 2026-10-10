@@ -1,22 +1,22 @@
-// Module ID: 17790
-// Function ID: 17791
+// Module ID: 17862
+// Function ID: 17863
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 2064, 21, 5091, 587, 558, 576, 11925, 17727, 504, 1126, 5931, 5951, 7492, 5886, 5300, 17791, 17794, 17795, 12979, 5087, 17789, 2]
+// Dependencies: [19, 2065, 21, 5092, 587, 558, 576, 11969, 17799, 504, 1126, 5924, 5944, 7492, 5889, 5301, 17863, 17866, 17867, 13026, 5088, 17861, 2]
 
-// Module 17790 (VoicePanelConnectButton)
+// Module 17862 (VoicePanelConnectButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5087 */;
-import useAlertStore from "useAlertStore" /* 5300 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5886 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useAlertStore from "useAlertStore" /* 5301 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7492 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 12979 */;
-import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 17791 */;
-import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 17794 */;
-import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 17795 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13026 */;
+import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 17863 */;
+import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 17866 */;
+import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 17867 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import createStyles from "createStyles" /* 5091 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

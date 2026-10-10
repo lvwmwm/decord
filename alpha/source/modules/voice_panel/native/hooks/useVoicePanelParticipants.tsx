@@ -1,19 +1,19 @@
-// Module ID: 17762
-// Function ID: 17763
+// Module ID: 17834
+// Function ID: 17835
 // Name: useVoicePanelParticipants
-// Dependencies: [32, 19, 6043, 502, 2064, 5109, 5112, 5115, 11926, 1085, 558, 576, 17652, 504, 16582, 11925, 11928, 2]
+// Dependencies: [32, 19, 6036, 502, 2065, 5110, 5113, 5116, 11970, 1085, 558, 576, 17724, 504, 16649, 11969, 11972, 2]
 
-// Module 17762 (useVoicePanelParticipants)
+// Module 17834 (useVoicePanelParticipants)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6043 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5115 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11926 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11970 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -457,7 +457,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
   if (cResult[2] !== first1) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F150392 */ };
+        return () => { /* body not rendered: F150863 */ };
       }
     }
     let items = [first1];
@@ -469,7 +469,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
   } else {
     class T {
       constructor() {
-        return () => { /* body not rendered: F150392 */ };
+        return () => { /* body not rendered: F150863 */ };
       }
     }
     tmp11 = cResult[4];
@@ -478,7 +478,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F150392 */ };
+        return () => { /* body not rendered: F150863 */ };
       }
     }
     let items1 = [VoiceStateStore, ];
@@ -487,14 +487,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
   } else {
     class T {
       constructor() {
-        return () => { /* body not rendered: F150392 */ };
+        return () => { /* body not rendered: F150863 */ };
       }
     }
   }
   if (cResult[6] === first1) {
     class T {
       constructor() {
-        return () => { /* body not rendered: F150392 */ };
+        return () => { /* body not rendered: F150863 */ };
       }
     }
   }
@@ -513,7 +513,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChunked
           _Set = Set;
           self = this;
           self2 = this;
-          set = new Set((() => { /* body not rendered: F150393 */ })());
+          set = new Set((() => { /* body not rendered: F150864 */ })());
           tmp3 = set;
           tmp4 = set;
           for (const item10013 of set) {

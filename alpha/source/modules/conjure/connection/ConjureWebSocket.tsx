@@ -1,9 +1,9 @@
-// Module ID: 13173
-// Function ID: 13174
+// Module ID: 13223
+// Function ID: 13224
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 13173 (ConjureWebSocket)
+// Module 13223 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -146,6 +146,20 @@ class ConjureWebSocket {
     const error = new Error("WebSocket not open");
     throw error;
   }
+  sendOverlayBackgroundBlur(enabled) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        const obj = { type: "set_overlay_background_blur", enabled };
+        socket.send(JSON.stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
   sendModelSettings(settings) {
     const self = this;
     if (null != this.socket) {
@@ -228,6 +242,19 @@ class ConjureWebSocket {
         const tmp2 = flag ? { settle_pending: true } : {};
         const merged = Object.assign(tmp2);
         send(stringify(obj));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendRestartSandbox() {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        socket.send(JSON.stringify({ type: "restart_sandbox" }));
       }
     }
     const error = new Error("WebSocket not open");

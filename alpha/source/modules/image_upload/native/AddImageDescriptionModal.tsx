@@ -1,19 +1,19 @@
-// Module ID: 12763
-// Function ID: 12764
+// Module ID: 12810
+// Function ID: 12811
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 7237, 7889, 21, 5091, 587, 558, 576, 504, 1497, 1503, 6663, 10490, 9270, 1126, 9235, 12762, 6770, 9606, 2]
+// Dependencies: [32, 19, 17, 7243, 7907, 21, 5092, 587, 558, 576, 504, 1497, 1503, 6664, 10524, 9297, 1126, 9262, 12809, 6773, 9635, 2]
 
-// Module 12763 (AddImageDescriptionModal)
+// Module 12810 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import DraftStore from "DraftStore" /* 7237 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9606 */;
+import DraftStore from "DraftStore" /* 7243 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9635 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7889 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7907 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddDes
   let width;
   let tmp = channelId;
   let obj = channelId(stateFromStores[9]);
-  const cResult = obj.c(43);
+  const cResult = obj.c(45);
   ({ source, channelId } = id);
   id = id.id;
   closure_12();
@@ -293,7 +293,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddDes
   }, items3);
   const obj4 = { ref: ref1, style: tmp.contentContainer, contentContainerStyle: { padding: id(stateFromStores[7]).space.PX_16, paddingBottom: insets.bottom + id(stateFromStores[7]).space.PX_16 }, children: items5 };
   const obj6 = { style: tmp.imageContainer, children: closure_10(closure_6, obj7) };
-  obj7 = { style: items4, source };
+  obj7 = { style: items4, source: { uri: source.uri } };
   items4 = [tmp.image, { aspectRatio: num, maxHeight: tmp6.height / 2 }];
   ({ padding: id(stateFromStores[7]).space.PX_16, paddingBottom: insets.bottom + id(stateFromStores[7]).space.PX_16 });
   items5 = [closure_10(navigation, obj6), ];

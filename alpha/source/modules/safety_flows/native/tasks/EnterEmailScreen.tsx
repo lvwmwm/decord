@@ -1,13 +1,13 @@
-// Module ID: 18561
-// Function ID: 18562
+// Module ID: 18635
+// Function ID: 18636
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 558, 576, 1503, 1126, 2859, 18553, 5374, 6290, 18562, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1503, 1126, 2862, 18627, 5377, 6285, 18636, 2]
 
-// Module 18561 (EnterEmailScreen)
+// Module 18635 (EnterEmailScreen)
 import Fragment from "Fragment" /* 21 */;
-import _modDef2859 from "module_2859" /* 2859 */;
-import types from "types" /* 18553 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18562 */;
+import _modDef2862 from "module_2862" /* 2862 */;
+import types from "types" /* 18627 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 18636 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -31,9 +31,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
   [first, tmp7] = react.useState("");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef2859.bFbsV6);
+    const stringResult = intl.string(_modDef2862.bFbsV6);
     const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef2859.RRBNpv);
+    const stringResult1 = intl2.string(_modDef2862.RRBNpv);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp8 = stringResult;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
     tmp13 = cResult[3];
   }
   if (cResult[4] !== first) {
-    const Stack = tmp(5374).Stack;
+    const Stack = tmp(5377).Stack;
     const tmp16 = <Stack>{null}</Stack>;
     cResult[4] = first;
     cResult[5] = tmp16;
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
   const intl = require("intl").intl;
   const intl2 = require("intl").intl;
   const Stack = require("Stack/Stack").Stack;
-  return <tmp4 title={intl.string(_modDef2859.bFbsV6)} action={intl2.string(_modDef2859.RRBNpv)} onAction={function onAction() {
+  return <tmp4 title={intl.string(_modDef2862.bFbsV6)} action={intl2.string(_modDef2862.RRBNpv)} onAction={function onAction() {
     closure_0.push(types.SafetyFlowScreens.VERIFY_EMAIL);
   }}>{null}</tmp4>;
 });

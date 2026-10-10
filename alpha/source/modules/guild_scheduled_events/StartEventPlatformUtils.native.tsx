@@ -1,19 +1,19 @@
-// Module ID: 8658
-// Function ID: 8659
+// Module ID: 8668
+// Function ID: 8669
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 2064, 5109, 4900, 2070, 1085, 38, 7492, 7487, 5886, 1112, 2]
+// Dependencies: [5, 2065, 5110, 4939, 2071, 1085, 38, 7492, 7487, 5889, 1112, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 8658 (StartEventPlatformUtils)
+// Module 8668 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2070 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
 import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7492 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5109 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4900 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -38,7 +38,7 @@ let obj = function _navigateToEvent() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _navigateToEvent() {
                 }
               }
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+51" };
             }
           }
         } else if (1 === c4) {

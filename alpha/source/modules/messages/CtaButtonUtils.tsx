@@ -1,15 +1,15 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 11521
+// Function ID: 11522
 // Name: CtaButtonUtils
-// Dependencies: [5907, 11477, 5906, 558, 576, 504, 2]
+// Dependencies: [10487, 11522, 11523, 558, 576, 504, 2]
 // Exports: getCtaButtonType
 
-// Module 11476 (CtaButtonUtils)
+// Module 11521 (CtaButtonUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5906 */;
-import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 11477 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 5907 */;
+import useShouldRenderReportFalsePositiveButton from "useShouldRenderReportFalsePositiveButton" /* 11522 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 11523 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 10487 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCtaButt
   const cResult = obj.c(2);
   const obj2 = useShouldRenderReportFalsePositiveButton;
   const shouldRenderReportFalsePositiveButton = obj2.useShouldRenderReportFalsePositiveButton(id);
-  const obj3 = AgeVerificationUtils;
+  const obj3 = AgeVerificationSystemNotificationUtils;
   const result = obj3.isAgeVerificationMessageWithRetryCta(channel_id, id);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FamilyCenterPendingConnectionStore];
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCtaButt
   const tmpResult = get_initialized;
   let result1 = null != tmpResult.useStateFromStores(tmp6, tmp7);
   if (result1) {
-    const tmpResult2 = AgeVerificationUtils;
+    const tmpResult2 = AgeVerificationSystemNotificationUtils;
     result1 = tmpResult2.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id);
   }
   if (shouldRenderReportFalsePositiveButton) {
@@ -58,13 +58,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCtaButt
   let pendingConnection;
   const obj = useShouldRenderReportFalsePositiveButton;
   const shouldRenderReportFalsePositiveButton = obj.useShouldRenderReportFalsePositiveButton(id);
-  const obj2 = AgeVerificationUtils;
+  const obj2 = AgeVerificationSystemNotificationUtils;
   const result = obj2.isAgeVerificationMessageWithRetryCta(channel_id, id);
   const items = [FamilyCenterPendingConnectionStore];
   const obj3 = get_initialized;
   let result1 = null != obj3.useStateFromStores(items, () => pendingConnection.getPendingConnection());
   if (result1) {
-    const tmpResult = AgeVerificationUtils;
+    const tmpResult = AgeVerificationSystemNotificationUtils;
     result1 = tmpResult.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id);
   }
   if (shouldRenderReportFalsePositiveButton) {
@@ -85,11 +85,11 @@ export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
   if (obj.shouldRenderReportFalsePositiveButton(id)) {
     CONNECT_TO_TEEN = obj.MARK_AS_FALSE_POSITIVE;
   } else {
-    const tmpResult = AgeVerificationUtils;
+    const tmpResult = AgeVerificationSystemNotificationUtils;
     if (tmpResult.isAgeVerificationMessageWithRetryCta(channel_id, id)) {
       CONNECT_TO_TEEN = obj.AGE_VERIFICATION_RETRY;
     } else {
-      const tmpResult2 = AgeVerificationUtils;
+      const tmpResult2 = AgeVerificationSystemNotificationUtils;
       if (tmpResult2.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id)) {
         CONNECT_TO_TEEN = obj.CONNECT_TO_TEEN;
       }

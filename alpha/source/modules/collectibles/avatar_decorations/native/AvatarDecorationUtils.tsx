@@ -1,14 +1,14 @@
-// Module ID: 8265
-// Function ID: 8266
+// Module ID: 8281
+// Function ID: 8282
 // Name: avatar_decorations/AvatarDecorationUtils
-// Dependencies: [1416, 1200, 5055, 8266, 2000, 2]
+// Dependencies: [1416, 1200, 5056, 8282, 2000, 2]
 // Exports: getDecorationCutoutForAvatarCutout, getDecorationSizeForAvatarSize, openAvatarDecorationActionSheet
 
-// Module 8265 (avatar_decorations/AvatarDecorationUtils)
+// Module 8281 (avatar_decorations/AvatarDecorationUtils)
 import native from "native" /* 1200 */;
 import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1416 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5055 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = AvatarDecorationConstants.DECORATION_TO_AVATAR_RATIO;
@@ -57,5 +57,5 @@ export const openAvatarDecorationActionSheet = function openAvatarDecorationActi
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
   const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequire(8266, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
+  obj2.openLazy(asyncRequire(8282, dependencyMap.paths), "Edit Avatar Decoration", { user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations });
 };

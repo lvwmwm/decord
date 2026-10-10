@@ -1,17 +1,17 @@
-// Module ID: 17699
-// Function ID: 17700
+// Module ID: 17771
+// Function ID: 17772
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 5080, 1205, 17691, 6837, 558, 576, 1497, 504, 4930, 2046, 7041, 2]
+// Dependencies: [5, 19, 5081, 1205, 17763, 6840, 558, 576, 1497, 504, 4969, 2046, 7047, 2]
 
-// Module 17699 (SoundboardHooks)
+// Module 17771 (SoundboardHooks)
 import react2 from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6837 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6840 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17691 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17763 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           try {
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp8) {
             c0 = 3;
             throw tmp8;

@@ -1,17 +1,17 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12976
+// Function ID: 12977
 // Name: RewardCodeClaimHooks
-// Dependencies: [5, 32, 19, 558, 576, 9150, 5982, 12929, 9174, 7421, 7410, 7420, 5986, 7409, 4759, 2]
+// Dependencies: [5, 32, 19, 558, 576, 9171, 5975, 12977, 9201, 9173, 9174, 9177, 5979, 7415, 4800, 2]
 
-// Module 12928 (RewardCodeClaimHooks)
-import openURLDefault from "openURL" /* 4759 */;
-import QuestTypes from "QuestTypes" /* 5982 */;
-import AdCreativeType from "AdCreativeType" /* 5986 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7409 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 7410 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7420 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7421 */;
-import QuestActionCreators from "QuestActionCreators" /* 9150 */;
+// Module 12976 (RewardCodeClaimHooks)
+import openURLDefault from "openURL" /* 4800 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
+import QuestActionCreators from "QuestActionCreators" /* 9171 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9173 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 9174 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9177 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -55,7 +55,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFe
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c6;
@@ -98,7 +98,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFe
               c6 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp23) {
           let closure_5 = tmp23;
@@ -220,7 +220,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFe
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c6;
@@ -263,7 +263,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClaimOrFe
             c6 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp23) {
         let closure_5 = tmp23;

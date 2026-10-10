@@ -1,10 +1,10 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13392
+// Function ID: 13393
 // Name: useFriendRequestActions
-// Dependencies: [19, 558, 576, 10200, 2]
+// Dependencies: [19, 558, 576, 10229, 2]
 
-// Module 13342 (useFriendRequestActions)
-import PeopleUtilsDefault from "PeopleUtils" /* 10200 */;
+// Module 13392 (useFriendRequestActions)
+import PeopleUtilsDefault from "PeopleUtils" /* 10229 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -101,7 +101,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
   let getUseStoreState;
   let loader;
   let retryConfig;
-  const f135976 = () => {
+  const f136407 = () => {
     obj = { isLoading: false, error: null, backoff: closure_1_7(), lastSuccessAt: null, failureLockedUntil: null };
     return obj;
   };
@@ -130,7 +130,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       obj = map;
       if (null == value) {
         const obj2 = module_570;
-        const obj3 = obj2.create(f135976);
+        const obj3 = obj2.create(f136407);
         const result = obj.set(arg0, obj3);
         value = obj3;
       }
@@ -256,12 +256,12 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
                   let closure_6 = HermesBuiltin.apply(closure_131_2, items1, undefined);
                   if (closure_6 === closure_1_8) {
                     c7 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   } else {
                     if (null != closure_6) {
                       if (!isCachedDataStale(useStoreState, closure_131_9)) {
                         c7 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       }
                     }
                     const failureLockedUntil = useStoreState.getState().failureLockedUntil;
@@ -269,7 +269,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
                       const _Date2 = Date;
                       if (Date.now() < failureLockedUntil) {
                         c7 = 3;
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+51" };
                       }
                     }
                   }
@@ -393,7 +393,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
       value = map.get(tmp4);
       if (null == value) {
         const obj2 = ApplicationStore(dependencyMap[6]);
-        const obj6 = obj2.create(f135976);
+        const obj6 = obj2.create(f136407);
         const result = obj.set(tmp4, obj6);
         value = obj6;
       }
@@ -499,7 +499,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
           const obj2 = closure_1_11;
           if (null == value) {
             const obj3 = closure_0(c2[6]);
-            const obj4 = obj3.create(f135976);
+            const obj4 = obj3.create(f136407);
             const result = obj2.set(tmp, obj4);
             value = obj4;
           }
@@ -528,7 +528,7 @@ export const createFetchStore = function createFetchStore(ApplicationStore, arg1
           value = closure_1_11.get(tmp);
           if (null == value) {
             const obj3 = closure_0(c2[6]);
-            const obj2 = obj3.create(f135976);
+            const obj2 = obj3.create(f136407);
             const result = obj.set(tmp, obj2);
             value = obj2;
           }

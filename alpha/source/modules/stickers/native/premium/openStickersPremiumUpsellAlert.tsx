@@ -1,14 +1,14 @@
-// Module ID: 9753
-// Function ID: 9754
+// Module ID: 9782
+// Function ID: 9783
 // Name: openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 1085, 21, 1265, 6953, 5721, 5299, 9754, 2000, 2]
+// Dependencies: [5, 19, 1085, 21, 1265, 6959, 5724, 5300, 9783, 2000, 2]
 // Exports: default
 
-// Module 9753 (openStickersPremiumUpsellAlert)
+// Module 9782 (openStickersPremiumUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5721 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6953 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
@@ -33,7 +33,7 @@ let obj = function _openStickersPremiumUpsellAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = function _openStickersPremiumUpsellAlert() {
             };
             obj.openLazy(obj8);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp10) {
           c4 = 3;

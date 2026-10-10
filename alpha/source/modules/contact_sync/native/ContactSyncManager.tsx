@@ -1,19 +1,19 @@
-// Module ID: 12359
-// Function ID: 12360
+// Module ID: 12403
+// Function ID: 12404
 // Name: ContactSyncManager
-// Dependencies: [5, 5758, 1390, 12357, 12356, 1085, 510, 12358, 6804, 6724, 2]
+// Dependencies: [5, 5761, 1390, 12401, 12400, 1085, 510, 12402, 6807, 6725, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 12359 (ContactSyncManager)
+// Module 12403 (ContactSyncManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1085 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12356 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12358 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12400 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12402 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5758 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import UserStore from "UserStore" /* 1390 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12357 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6804 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12401 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, localAccount, set;
@@ -34,7 +34,7 @@ let obj = function _requestAndSyncContacts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       let c4;
@@ -75,7 +75,7 @@ let obj = function _requestAndSyncContacts() {
               if (null == phone) {
                 c4 = 0;
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+51" };
               } else {
                 set = ContactSyncUtils;
                 c5 = 2;
@@ -128,7 +128,7 @@ let obj = function _requestAndSyncContacts() {
           const result = set(closure_130_10, timestamp);
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp29) {
         let closure_3 = tmp29;
         if (0 === c4) {

@@ -1,28 +1,24 @@
-// Module ID: 7400
-// Function ID: 7401
+// Module ID: 7406
+// Function ID: 7407
 // Name: AnalyticsActions
-// Dependencies: [5, 7401, 1370, 7384, 1085, 7177, 7403, 7380, 7404, 7406, 7409, 5986, 5106, 1265, 7410, 7420, 7421, 5982, 7415, 7358, 1382, 1279, 7411, 2]
-// Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackAppStoreOverlaySurfaceClickedForAdContent, trackAppStoreOverlaySurfaceClickedForQuest, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
+// Dependencies: [5, 7407, 1370, 7390, 1085, 7183, 7409, 7386, 7410, 7412, 7415, 5979, 5107, 1265, 7416, 7364, 1382, 1279, 7421, 5975, 2]
+// Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7400 (AnalyticsActions)
+// Module 7406 (AnalyticsActions)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5106 */;
-import QuestTypes from "QuestTypes" /* 5982 */;
-import AdCreativeType from "AdCreativeType" /* 5986 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7177 */;
-import QuestDataUtils from "QuestDataUtils" /* 7380 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7403 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7404 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7406 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7409 */;
-import captureAdUserAction4 from "captureAdUserAction" /* 7410 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7420 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7421 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7183 */;
+import QuestDataUtils from "QuestDataUtils" /* 7386 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7409 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7410 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7412 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7401 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7407 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1370 */;
-import QuestStore from "QuestStore" /* 7384 */;
+import QuestStore from "QuestStore" /* 7390 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
@@ -54,7 +50,7 @@ function trackQuestEvent(questId) {
     }
     const id = value.id;
     tmp24Result = AnalyticsTypes;
-    const QUEST = tmp24(5986).AdCreativeType.QUEST;
+    const QUEST = tmp24(5979).AdCreativeType.QUEST;
     const tmp24Result5 = SessionAdGenerator;
     let uuid = tmp24Result5.getOrRefreshAdSession(shouldExtendSession).uuid;
     const tmp24Result6 = QuestDataUtils;
@@ -100,30 +96,6 @@ function trackQuestEvent(questId) {
         }
       }
     }
-  }
-}
-function captureAppStoreOverlaySurfaceClickForMigration(overlaySurface, arg1, arg2) {
-  if (obj.MAIN_CTA === overlaySurface) {
-    const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, questContentCTA: AnalyticsTypes.QuestContentCTA.GAME_STORE_OPEN_GAME_LINK };
-    const captureAdUserAction2 = captureAdUserAction4.captureAdUserAction;
-    captureAdUserAction4;
-    const merged = Object.assign(arg2);
-    const merged1 = Object.assign(arg1);
-    captureAdUserAction2(obj2);
-  } else if (obj.RATING_STAT === overlaySurface) {
-    obj = { type: captureAdUserActionTypes.AdUserActionType.CLICK_EXTERNAL_ADVERTISER_CTA, questContentCTA: AnalyticsTypes.QuestContentCTA.GAME_STORE_OPEN_REVIEWS };
-    const captureAdUserAction = captureAdUserAction4.captureAdUserAction;
-    captureAdUserAction4;
-    const merged2 = Object.assign(arg2);
-    const merged3 = Object.assign(arg1);
-    captureAdUserAction(obj);
-  } else if (obj.SEE_MORE === overlaySurface) {
-    const obj3 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, questContentCTA: AnalyticsTypes.QuestContentCTA.EXPAND };
-    const captureAdUserAction3 = captureAdUserAction4.captureAdUserAction;
-    captureAdUserAction4;
-    const merged4 = Object.assign(arg2);
-    const merged5 = Object.assign(arg1);
-    captureAdUserAction3(obj3);
   }
 }
 function trackAdContentEvent(sourceQuestContent) {
@@ -260,7 +232,7 @@ let obj = function _getCommonClickEventProperties() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -297,8 +269,8 @@ let obj = function _getCommonClickEventProperties() {
             const obj7 = { value, done: true };
             return obj7;
           } else {
-            const getAdUser = closure_131_0(closure_131_2[18]).getAdUser;
-            const tmp29 = closure_131_0(closure_131_2[18]);
+            const getAdUser = closure_131_0(closure_131_2[14]).getAdUser;
+            const tmp29 = closure_131_0(closure_131_2[14]);
             impression_id = 2;
             c5 = 1;
             const obj8 = { value: getAdUser(obj6.getQuestContentName(c0)), done: false };
@@ -317,11 +289,11 @@ let obj = function _getCommonClickEventProperties() {
           const obj10 = { cta_name, impression_id, apple_advertising_id: advertisingId, android_advertising_id: advertisingId1, click_id };
           const obj12 = closure_131_0(closure_131_2[10]);
           const merged = Object.assign(obj12.getContentProperties(c0, c1, c2));
-          const merged1 = Object.assign(closure_131_1(closure_131_2[19])());
+          const merged1 = Object.assign(closure_131_1(closure_131_2[15])());
           advertisingId = null;
           if (null != closure_6) {
             advertisingId = null;
-            obj = closure_131_0(closure_131_2[20]);
+            obj = closure_131_0(closure_131_2[16]);
             if (obj.isIOS()) {
               advertisingId = closure_6.advertisingId;
             }
@@ -329,14 +301,14 @@ let obj = function _getCommonClickEventProperties() {
           advertisingId1 = null;
           if (null != closure_6) {
             advertisingId1 = null;
-            const obj2 = closure_131_0(closure_131_2[20]);
+            const obj2 = closure_131_0(closure_131_2[16]);
             if (obj2.isAndroid()) {
               advertisingId1 = closure_6.advertisingId;
             }
           }
           click_id = c5;
           if (c5 == null) {
-            const obj3 = closure_131_0(closure_131_2[21]);
+            const obj3 = closure_131_0(closure_131_2[17]);
             click_id = obj3.v4();
           }
           c5 = 3;
@@ -351,9 +323,6 @@ let obj = function _getCommonClickEventProperties() {
   });
   return obj(...arguments);
 };
-function trackQuestContentClicked() {
-  return obj(...arguments);
-}
 obj = function _trackQuestContentClicked() {
   obj = _asyncToGenerator(async (questId) => {
     let clickId;
@@ -381,7 +350,7 @@ obj = function _trackQuestContentClicked() {
       const obj6 = { questId, event: closure_134_7.QUEST_CONTENT_CLICKED, properties, trackGuildAndChannelMetadata, shouldExtendSession: obj2.isBillableQuestContent(_null), sourceQuestContent };
       properties = { metadata_sealed: _null, traffic_metadata_sealed: _null2, search_session_id: _null3 };
       const obj7 = { questContent: _null, questContentPosition: _null3, questContentRowIndex, questContentCTA: _null2, impressionId, clickId };
-      await closure_134_13(obj7);
+      await closure_134_11(obj7);
       const merged = Object.assign(value);
       const obj8 = closure_134_0(closure_134_2[7]);
       const adMetadataSealed = obj8.getAdMetadataSealed(sourceQuestContent);
@@ -393,7 +362,7 @@ obj = function _trackQuestContentClicked() {
       if (adTrafficMetadataSealed == null) {
         _null2 = null;
       }
-      obj = closure_134_0(closure_134_2[22]);
+      obj = closure_134_0(closure_134_2[18]);
       const currentQuestHomeSearchSession = obj.getCurrentQuestHomeSearchSession();
       if (currentQuestHomeSearchSession != null) {
         uuid = currentQuestHomeSearchSession.uuid;
@@ -413,9 +382,6 @@ obj = function _trackQuestContentClicked() {
   });
   return obj(...arguments);
 };
-function trackAdContentClicked() {
-  return obj(...arguments);
-}
 obj = function _trackAdContentClicked() {
   obj = _asyncToGenerator(async (adContentId) => {
     let impressionId;
@@ -440,8 +406,8 @@ obj = function _trackAdContentClicked() {
       let c8;
       let c9;
       let obj6;
-      adCreativeType = closure_131_12;
-      const obj5 = { adContentId, relatedQuestId, adCreativeType, event: closure_131_7.QUEST_CONTENT_CLICKED, properties: await closure_131_13(obj6), trackGuildAndChannelMetadata, shouldExtendSession: obj.isBillableQuestContent(questContent), sourceQuestContent };
+      adCreativeType = closure_131_10;
+      const obj5 = { adContentId, relatedQuestId, adCreativeType, event: closure_131_7.QUEST_CONTENT_CLICKED, properties: await closure_131_11(obj6), trackGuildAndChannelMetadata, shouldExtendSession: obj.isBillableQuestContent(questContent), sourceQuestContent };
       obj6 = { questContent, questContentPosition, questContentRowIndex, questContentCTA, impressionId };
       obj = closure_131_0(closure_131_2[7]);
       adCreativeType(obj5);
@@ -458,12 +424,11 @@ const AnalyticEvents = Constants.AnalyticEvents;
 const items = [, , ];
 ({ QUEST_CONTENT_VIEWED: arr[0], QUEST_CONTENT_ENGAGED_VIEWED: arr[1], QUEST_CONTENT_CLICKED: arr[2] } = AnalyticEvents);
 const set = new Set(items);
-obj = { MAIN_CTA: "main_cta", RATING_STAT: "rating_stat", SEE_MORE: "see_more" };
 const result = size.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsActions.tsx");
 
 export { trackQuestEvent };
 export const AppStoreOverlayVariant = { NATIVE: "native", CUSTOM: "custom" };
-export const AppStoreOverlaySurfaces = obj;
+export const AppStoreOverlaySurfaces = { MAIN_CTA: "main_cta", RATING_STAT: "rating_stat", SEE_MORE: "see_more" };
 export const trackAppStoreOverlayEvent = function trackAppStoreOverlayEvent(arg0) {
   let event;
   let inlineStoreAppId;
@@ -520,31 +485,6 @@ export const trackAppStoreOverlayEvent = function trackAppStoreOverlayEvent(arg0
   } else if (AnalyticEvents.QUEST_APP_STORE_OVERLAY_OPEN_SUCCEEDED === event) {
     const obj10 = { questId: quest.id, event, properties: obj, sourceQuestContent: trackingCtx.sourceQuestContent };
     trackQuestEvent(obj10);
-  }
-};
-export const trackAppStoreOverlaySurfaceClickedForQuest = function trackAppStoreOverlaySurfaceClickedForQuest(arg0) {
-  let EXPAND;
-  let overlaySurface;
-  let questId;
-  let trackingCtx;
-  ({ questId, trackingCtx, overlaySurface } = arg0);
-  if (obj.MAIN_CTA === overlaySurface) {
-    EXPAND = AnalyticsTypes.QuestContentCTA.GAME_STORE_OPEN_GAME_LINK;
-  } else if (obj.RATING_STAT === overlaySurface) {
-    EXPAND = AnalyticsTypes.QuestContentCTA.GAME_STORE_OPEN_REVIEWS;
-  } else if (obj.SEE_MORE === overlaySurface) {
-    EXPAND = AnalyticsTypes.QuestContentCTA.EXPAND;
-  }
-  obj = AdAnalyticsInterfaceExperiment;
-  if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "app_store_overlay_surface_click")) {
-    ({ sourceQuestContent: obj3.sourceQuestContent, position: obj3.questContentPosition, impressionId: obj3.impressionId } = trackingCtx);
-    const obj4 = { surfaceId: QuestTypes.QuestContent.CUSTOM_APP_STORE_OVERLAY, sourceQuestContent: null, questContentPosition: null, impressionId: null };
-    const obj7 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, adCreativeId: questId };
-    captureAppStoreOverlaySurfaceClickForMigration(overlaySurface, obj4, obj7);
-  } else {
-    ({ position: obj2.questContentPosition, impressionId: obj2.impressionId, sourceQuestContent: obj2.sourceQuestContent } = trackingCtx);
-    const obj8 = { questId, questContent: QuestTypes.QuestContent.CUSTOM_APP_STORE_OVERLAY, questContentCTA: EXPAND, questContentPosition: null, impressionId: null, sourceQuestContent: null };
-    trackQuestContentClicked(obj8);
   }
 };
 export const AppStoreOverlayCarouselTypes = { MEDIA: "media", STATS: "stats" };
@@ -638,33 +578,6 @@ export function createAppStoreOverlayCarouselScrollTracker(arg0, appId) {
     track(QUEST_APP_STORE_OVERLAY_CAROUSEL_SCROLL, obj3);
   };
 }
-export const trackAppStoreOverlaySurfaceClickedForAdContent = function trackAppStoreOverlaySurfaceClickedForAdContent(relatedQuestId) {
-  let EXPAND;
-  let adContentId;
-  let adCreativeType;
-  let overlaySurface;
-  let trackingCtx;
-  ({ adContentId, adCreativeType, trackingCtx, overlaySurface } = relatedQuestId);
-  relatedQuestId = relatedQuestId.relatedQuestId;
-  if (obj.MAIN_CTA === overlaySurface) {
-    EXPAND = AnalyticsTypes.QuestContentCTA.GAME_STORE_OPEN_GAME_LINK;
-  } else if (obj.RATING_STAT === overlaySurface) {
-    EXPAND = AnalyticsTypes.QuestContentCTA.GAME_STORE_OPEN_REVIEWS;
-  } else if (obj.SEE_MORE === overlaySurface) {
-    EXPAND = AnalyticsTypes.QuestContentCTA.EXPAND;
-  }
-  obj = AdAnalyticsInterfaceExperiment;
-  if (obj.shouldMigrateToAdAnalyticsInterface(AdAnalyticsInterfaceExperiment.AdAnalyticsInterfaceExperimentStep.STEP_3_CLICKED_EXTERNAL, "app_store_overlay_surface_click")) {
-    ({ sourceQuestContent: obj3.sourceQuestContent, position: obj3.questContentPosition, impressionId: obj3.impressionId } = trackingCtx);
-    const obj4 = { surfaceId: QuestTypes.QuestContent.CUSTOM_APP_STORE_OVERLAY, sourceQuestContent: null, questContentPosition: null, impressionId: null };
-    const obj7 = { adCreativeType, adCreativeId: adContentId };
-    captureAppStoreOverlaySurfaceClickForMigration(overlaySurface, obj4, obj7);
-  } else {
-    ({ position: obj2.questContentPosition, impressionId: obj2.impressionId, sourceQuestContent: obj2.sourceQuestContent } = trackingCtx);
-    const obj8 = { adContentId, relatedQuestId, adCreativeType, questContent: QuestTypes.QuestContent.CUSTOM_APP_STORE_OVERLAY, questContentCTA: EXPAND, questContentPosition: null, impressionId: null, sourceQuestContent: null };
-    trackAdContentClicked(obj8);
-  }
-};
 export const trackAdContentAppStoreOverlayEvent = function trackAdContentAppStoreOverlayEvent(arg0) {
   let adContentId;
   let adCreativeType;
@@ -726,8 +639,12 @@ export const trackAdContentAppStoreOverlayEvent = function trackAdContentAppStor
 };
 export { trackAdContentEvent };
 export { getCommonClickEventProperties };
-export { trackQuestContentClicked };
-export { trackAdContentClicked };
+export const trackQuestContentClicked = function trackQuestContentClicked() {
+  return obj(...arguments);
+};
+export const trackAdContentClicked = function trackAdContentClicked() {
+  return obj(...arguments);
+};
 export const trackQuestHomeOrbShopCarouselViewed = function trackQuestHomeOrbShopCarouselViewed(arg0) {
   let carouselSize;
   let isPlaceholderCarousel;

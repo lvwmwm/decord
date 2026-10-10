@@ -1,15 +1,15 @@
-// Module ID: 8011
-// Function ID: 8012
+// Module ID: 8029
+// Function ID: 8030
 // Name: useGuildPowerupsBoostCount
-// Dependencies: [19, 8012, 2086, 4968, 4987, 558, 576, 504, 2]
+// Dependencies: [19, 8030, 2087, 5007, 5026, 558, 576, 504, 2]
 // Exports: getGuildPowerupsBoostCount
 
-// Module 8011 (useGuildPowerupsBoostCount)
-import GameServerExperiment from "GameServerExperiment" /* 4987 */;
+// Module 8029 (useGuildPowerupsBoostCount)
+import GameServerExperiment from "GameServerExperiment" /* 5026 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8012 */;
-import GuildStore from "GuildStore" /* 2086 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4968 */;
+import GameServerStore from "GameServerStore" /* 8030 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 13456
-// Function ID: 13457
+// Module ID: 13507
+// Function ID: 13508
 // Name: LinkedGameOrgInvitesExperiment
 // Dependencies: [1453, 558, 576, 2]
 // Exports: getLinkedGameOrgInvitesEnabled
 
-// Module 13456 (LinkedGameOrgInvitesExperiment)
+// Module 13507 (LinkedGameOrgInvitesExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

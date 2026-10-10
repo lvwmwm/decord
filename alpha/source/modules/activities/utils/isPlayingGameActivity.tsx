@@ -1,10 +1,10 @@
-// Module ID: 8837
-// Function ID: 8838
+// Module ID: 8856
+// Function ID: 8857
 // Name: isPlayingGameActivity
 // Dependencies: [2024, 1085, 7426, 2]
 // Exports: default
 
-// Module 8837 (isPlayingGameActivity)
+// Module 8856 (isPlayingGameActivity)
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 2024 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7426 */;

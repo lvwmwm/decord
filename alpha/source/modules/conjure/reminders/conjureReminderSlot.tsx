@@ -1,19 +1,19 @@
-// Module ID: 17154
-// Function ID: 17155
+// Module ID: 17224
+// Function ID: 17225
 // Name: conjureReminderSlot
-// Dependencies: [32, 19, 5080, 12948, 17153, 17155, 558, 576, 17042, 16562, 504, 2]
+// Dependencies: [32, 19, 5081, 12996, 17223, 17225, 558, 576, 17110, 11426, 504, 2]
 // Exports: clampToObserved, hasOpenAsk, markConjureReminderActivity, nextReminderLayers, reminderActivityAt, reminderSlotTurn
 
-// Module 17154 (conjureReminderSlot)
+// Module 17224 (conjureReminderSlot)
 import react2 from "react" /* 576 */;
-import useConjureWindowFocusedDefault from "useConjureWindowFocused" /* 16562 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 17042 */;
-import conjurePublishCard from "conjurePublishCard" /* 17153 */;
-import conjureIdeasOffer from "conjureIdeasOffer" /* 17155 */;
+import useConjureWindowFocusedDefault from "useConjureWindowFocused" /* 11426 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 17110 */;
+import conjurePublishCard from "conjurePublishCard" /* 17223 */;
+import conjureIdeasOffer from "conjureIdeasOffer" /* 17225 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5080 */;
-import ConjureChatStore from "ConjureChatStore" /* 12948 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import ConjureChatStore from "ConjureChatStore" /* 12996 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, dependencyMap, importDefault, set;
 
 let metroImportDefault;
 let metroRequire;
-const f127919 = (item) => {
+const f128328 = (item) => {
   const obj = { leaving: true };
   const merged = Object.assign(item);
   return obj;
@@ -289,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   let tmp41;
   let tmp45;
   let tmp46;
-  const f127921 = (key) => {
+  const f128330 = (key) => {
     let num;
     const obj = { idleDelayMs: num, eligible: null != react && key.eligible(tmp6) };
     const merged = Object.assign(key);
@@ -544,8 +544,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
                       }
                     }
                     react = tmp33;
-                    ({ shown, nextDueAt } = selectConjureReminder(items1.map(f127921), tmp32));
-                    selectConjureReminder(items1.map(f127921), tmp32);
+                    ({ shown, nextDueAt } = selectConjureReminder(items1.map(f128330), tmp32));
+                    selectConjureReminder(items1.map(f128330), tmp32);
                     if ("outdated" === shown) {
                       class T {
                         constructor() {
@@ -997,7 +997,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   let shown;
   let tmp15;
   let tmp16;
-  const f127924 = () => {
+  const f128333 = () => {
     let bound;
     let tmp5;
     const timestamp = Date.now();
@@ -1014,7 +1014,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     }
     return obj;
   };
-  const f127925 = (key) => {
+  const f128334 = (key) => {
     let num;
     obj = { idleDelayMs: num, eligible: null != obj3 && key.eligible(tmp6) };
     const merged = Object.assign(key);
@@ -1035,10 +1035,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     return obj;
   };
   let closure_0 = projectId;
-  let tmp = obj(17042)(projectId);
+  let tmp = obj(17110)(projectId);
   let diff = arr.length - 1;
   let tmp4 = null;
-  const tmp2 = obj(16562)();
+  const tmp2 = obj(11426)();
   if (0 <= diff) {
     while (true) {
       let tmp5 = arr[diff];
@@ -1093,9 +1093,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     }
     maxResult = max(created_at, num, num2);
   }
-  [tmp15, tmp16] = obj3.useState(f127924);
+  [tmp15, tmp16] = obj3.useState(f128333);
   dependencyMap = tmp16;
-  _slicedToArray(obj3.useState(f127924), 2);
+  _slicedToArray(obj3.useState(f128333), 2);
   const tmp17 = nextReminderClockState(tmp15, obj, Date.now);
   _slicedToArray = tmp17;
   let tmp18 = null;
@@ -1119,8 +1119,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     }
   }
   obj3 = tmp18;
-  ({ shown, nextDueAt } = selectConjureReminder(items1.map(f127925), tmp17));
-  selectConjureReminder(items1.map(f127925), tmp17);
+  ({ shown, nextDueAt } = selectConjureReminder(items1.map(f128334), tmp17));
+  selectConjureReminder(items1.map(f128334), tmp17);
   if ("outdated" === shown) {
     if (!tmp17.outdatedShown) {
       const obj4 = { outdatedShown: true };
@@ -1206,7 +1206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   if (key !== key) {
     closure_0 = key;
     const found1 = arr2.filter((key) => key.key !== closure_0);
-    const mapped = found1.map(f127919);
+    const mapped = found1.map(f128328);
     let tmp9 = mapped;
     if (null != key) {
       items1 = [];
@@ -1266,7 +1266,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
 }) : (function useConjureReminderLayers(key) {
   let arr;
   let tmp3;
-  const f127932 = (leaving) => leaving.leaving;
+  const f128341 = (leaving) => leaving.leaving;
   let obj = react;
   [arr, tmp3] = react.useState([]);
   let closure_0 = tmp3;
@@ -1282,7 +1282,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
   if (key !== key) {
     closure_0 = key;
     const found1 = arr.filter((key) => key.key !== closure_0);
-    const mapped = found1.map(f127919);
+    const mapped = found1.map(f128328);
     let tmp7 = mapped;
     if (null != key) {
       items = [];
@@ -1292,8 +1292,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRe
     }
     tmp3(tmp7);
   }
-  items1 = [arr.some(f127932), arr];
-  const someResult = arr.some(f127932);
+  items1 = [arr.some(f128341), arr];
+  const someResult = arr.some(f128341);
   const effect = obj.useEffect(() => {
     if (closure_1) {
       const _setTimeout = setTimeout;
@@ -1467,7 +1467,7 @@ function clampToObserved(arg0, arg1) {
 function nextReminderLayers(arr, key) {
   let closure_0 = key;
   const found = arr.filter((key) => key.key !== closure_0);
-  const mapped = found.map(f127919);
+  const mapped = found.map(f128328);
   let tmp3 = mapped;
   if (null != key) {
     items = [];

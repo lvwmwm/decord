@@ -1,20 +1,20 @@
-// Module ID: 16172
-// Function ID: 16173
+// Module ID: 16239
+// Function ID: 16240
 // Name: updatePersistentCodesEnabled
-// Dependencies: [5, 502, 2064, 5112, 8810, 1085, 584, 8809, 5632, 5298, 1126, 8813, 5886, 2]
+// Dependencies: [5, 502, 2065, 5113, 8829, 1085, 584, 8828, 5635, 5299, 1126, 8832, 5889, 2]
 // Exports: updatePersistentCodesEnabled
 
-// Module 16172 (updatePersistentCodesEnabled)
+// Module 16239 (updatePersistentCodesEnabled)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8809 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8810 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8813 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8828 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8829 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2064 */;
-import VoiceStateStore from "VoiceStateStore" /* 5112 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import size from "module_2" /* 2 */;
 
 let body, c0, c1, c2, closure_4, closure_5, dispatchResult, getChannel, id, persistentCodesEnabled, voiceStateForUser;
@@ -39,7 +39,7 @@ let obj = function _savePersistentCodesEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _savePersistentCodesEnabled() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         } catch (tmp38) {
           closure_5 = tmp38;
           if (0 === c6) {
@@ -160,7 +160,7 @@ obj = function _updatePersistentCodesEnabled() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ obj = function _updatePersistentCodesEnabled() {
                     let obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+51" };
                   }
                 } else {
                   try {
@@ -257,7 +257,7 @@ obj = function _updatePersistentCodesEnabled() {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+51" };
                     }
                   } catch (tmp6) {
                     c0 = 3;
@@ -282,7 +282,7 @@ obj = function _updatePersistentCodesEnabled() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;

@@ -1,22 +1,22 @@
-// Module ID: 15968
-// Function ID: 15969
+// Module ID: 16030
+// Function ID: 16031
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 5091, 587, 15969, 15970, 4768, 5087, 1200, 6810, 5376, 5941, 6205, 558, 576, 1126, 6686, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 16031, 16032, 4809, 5088, 1200, 6813, 5379, 5934, 6200, 558, 576, 1126, 6687, 2]
 
-// Module 15968 (CaptchaTestModal)
+// Module 16030 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import Navigator2 from "Navigator" /* 6686 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 15969 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 15970 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
+import Navigator2 from "Navigator" /* 6687 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 16031 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 16032 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ function CaptchaTestScreen(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } else {
           let c4;
@@ -97,9 +97,9 @@ function CaptchaTestScreen(arg0) {
             } else if (1 === c5) {
               c4 = 0;
               difficulty = closure_3;
-              const obj7 = { key: "captcha-test-modal-error", content: difficulty.message };
+              const obj7 = { text: difficulty.message };
               const obj3 = closure_1(closure_2[9]);
-              obj3.open(obj7);
+              obj3.open("captcha-test-modal-error", obj7);
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -110,11 +110,11 @@ function CaptchaTestScreen(arg0) {
               return obj8;
             } else {
               obj = closure_1(closure_2[9]);
-              obj.open({ key: "captcha-test-modal-success", content: "Captcha completed!" });
+              obj.open("captcha-test-modal-success", { text: "Captcha completed!" });
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           } catch (tmp22) {
             closure_3 = tmp22;
             if (0 === c4) {

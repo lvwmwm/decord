@@ -1,13 +1,13 @@
-// Module ID: 7143
-// Function ID: 7144
+// Module ID: 7149
+// Function ID: 7150
 // Name: showCheckoutOrderErrorModal
-// Dependencies: [5, 32, 19, 21, 5304, 1126, 5300, 2]
+// Dependencies: [5, 32, 19, 21, 5305, 1126, 5301, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 7143 (showCheckoutOrderErrorModal)
+// Module 7149 (showCheckoutOrderErrorModal)
 import intl4 from "intl" /* 1126 */;
-import useAlertStore from "useAlertStore" /* 5300 */;
-import AlertModal2 from "AlertModal" /* 5304 */;
+import useAlertStore from "useAlertStore" /* 5301 */;
+import AlertModal2 from "AlertModal" /* 5305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ function SyncedLoadingAlertModal(onConfirm) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         let c3;
@@ -92,7 +92,7 @@ function SyncedLoadingAlertModal(onConfirm) {
             c3 = 0;
             closure_128_1(false);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp19) {
           closure_2 = tmp19;
@@ -171,7 +171,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
             tmp = value;
             closure_129_0(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp11) {
           c3 = 3;

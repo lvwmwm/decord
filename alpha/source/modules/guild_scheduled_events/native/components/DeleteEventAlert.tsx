@@ -1,15 +1,15 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8678
+// Function ID: 8679
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6061, 21, 5091, 558, 576, 504, 8502, 5055, 1126, 5087, 5304, 2]
+// Dependencies: [5, 19, 6054, 21, 5092, 558, 576, 504, 8518, 5056, 1126, 5088, 5305, 2]
 
-// Module 8665 (DeleteEventAlert)
+// Module 8678 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl7 from "intl" /* 1126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6061 */;
-import createStyles from "createStyles" /* 5091 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -213,7 +213,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+51" };
       }
     } else {
       try {
@@ -262,7 +262,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
           const obj2 = guildId(recurrenceId[9]);
           obj2.hideActionSheet();
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } catch (tmp16) {
         c2 = 3;
@@ -303,7 +303,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+51" };
         }
       } else {
         try {
@@ -352,7 +352,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
             const obj2 = c1(c2[9]);
             obj2.hideActionSheet();
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+51" };
           }
         } catch (tmp15) {
           c2 = 3;

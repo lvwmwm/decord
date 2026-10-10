@@ -1,25 +1,26 @@
-// Module ID: 6686
-// Function ID: 6687
+// Module ID: 6687
+// Function ID: 6688
 // Name: Navigator
-// Dependencies: [109, 32, 19, 17, 21, 5091, 587, 558, 576, 6687, 6205, 4779, 6688, 1631, 1126, 12, 6721, 1504, 4992, 6728, 1256, 6214, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5092, 587, 558, 576, 6688, 6200, 4818, 6689, 1631, 1126, 12, 6722, 1504, 5375, 5031, 6729, 1256, 6209, 2]
 // Exports: useNavigatorScreens
 
-// Module 6686 (Navigator)
+// Module 6687 (Navigator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import SentryInitUtils from "SentryInitUtils" /* 1256 */;
 import Link from "Link" /* 1504 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import _mod6214 from "module_6214" /* 6214 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 6687 */;
-import NavigatorScreen2 from "NavigatorScreen" /* 6721 */;
-import useNavigationTheme from "useNavigationTheme" /* 6728 */;
+import BackPressTracking from "BackPressTracking" /* 5375 */;
+import NavigatorHeader from "NavigatorHeader" /* 6200 */;
+import _mod6209 from "module_6209" /* 6209 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 6688 */;
+import NavigatorScreen2 from "NavigatorScreen" /* 6722 */;
+import useNavigationTheme from "useNavigationTheme" /* 6729 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5091 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -236,13 +237,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
                                                               return obj;
                                                             };
                                                           } else {
-                                                            fn2 = tmp3(6688).CardStyleInterpolators.forHorizontalIOS;
+                                                            fn2 = tmp3(6689).CardStyleInterpolators.forHorizontalIOS;
                                                           }
                                                           const tmp8 = disableHeaderAnimation;
                                                           if (tmp8) {
-                                                            fn3 = tmp3(6688).HeaderStyleInterpolators.forNoAnimation;
+                                                            fn3 = tmp3(6689).HeaderStyleInterpolators.forNoAnimation;
                                                           } else if (navigatorShouldCrossfade) {
-                                                            fn3 = tmp3(6688).HeaderStyleInterpolators.forFade;
+                                                            fn3 = tmp3(6689).HeaderStyleInterpolators.forFade;
                                                           } else {
                                                             fn3 = (arg0) => {
                                                               let current;
@@ -340,13 +341,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
                                                       return obj;
                                                     };
                                                   } else {
-                                                    fn2 = tmp3(6688).CardStyleInterpolators.forHorizontalIOS;
+                                                    fn2 = tmp3(6689).CardStyleInterpolators.forHorizontalIOS;
                                                   }
                                                   const tmp8 = disableHeaderAnimation;
                                                   if (tmp8) {
-                                                    fn3 = tmp3(6688).HeaderStyleInterpolators.forNoAnimation;
+                                                    fn3 = tmp3(6689).HeaderStyleInterpolators.forNoAnimation;
                                                   } else if (navigatorShouldCrossfade) {
-                                                    fn3 = tmp3(6688).HeaderStyleInterpolators.forFade;
+                                                    fn3 = tmp3(6689).HeaderStyleInterpolators.forFade;
                                                   } else {
                                                     fn3 = (arg0) => {
                                                       let current;
@@ -487,13 +488,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
             return obj;
           };
         } else {
-          fn2 = tmp3(6688).CardStyleInterpolators.forHorizontalIOS;
+          fn2 = tmp3(6689).CardStyleInterpolators.forHorizontalIOS;
         }
         const tmp8 = disableHeaderAnimation;
         if (tmp8) {
-          fn3 = tmp3(6688).HeaderStyleInterpolators.forNoAnimation;
+          fn3 = tmp3(6689).HeaderStyleInterpolators.forNoAnimation;
         } else if (navigatorShouldCrossfade) {
-          fn3 = tmp3(6688).HeaderStyleInterpolators.forFade;
+          fn3 = tmp3(6689).HeaderStyleInterpolators.forFade;
         } else {
           fn3 = (arg0) => {
             let current;
@@ -698,13 +699,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
           return obj;
         };
       } else {
-        fn2 = tmp3(6688).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp3(6689).CardStyleInterpolators.forHorizontalIOS;
       }
       const tmp8 = disableHeaderAnimation;
       if (tmp8) {
-        fn3 = tmp3(6688).HeaderStyleInterpolators.forNoAnimation;
+        fn3 = tmp3(6689).HeaderStyleInterpolators.forNoAnimation;
       } else if (navigatorShouldCrossfade) {
-        fn3 = tmp3(6688).HeaderStyleInterpolators.forFade;
+        fn3 = tmp3(6689).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           let current;
@@ -766,7 +767,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
   let initialRouteState;
   let navigationTheme;
   let onStateChange;
-  let tmp14;
+  let tmp15;
   let tmp4;
   let tmp6;
   let tmp7;
@@ -803,6 +804,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
   }
   const tmpResult = tmp(1504);
   const navigationContainerRef = tmpResult.useNavigationContainerRef();
+  const tmpResult3 = tmp(5375);
+  const trackNavigationBackPress = tmpResult3.useTrackNavigationBackPress(navigationContainerRef);
   if (cResult[7] !== tmp5) {
     class N {
       constructor() {
@@ -817,7 +820,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
     }
     cResult[7] = tmp5;
     cResult[8] = N;
-    tmp14 = N;
+    tmp15 = N;
   } else {
     class N {
       constructor() {
@@ -831,10 +834,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
       }
     }
   }
-  const first = _slicedToArray(react.useState(tmp14), 1)[0];
-  const tmp16 = navigationContainerRef(4992)();
-  const tmpResult2 = tmp(6728);
-  const navigationTheme1 = tmpResult2.useNavigationTheme(tmp16);
+  const first = _slicedToArray(react.useState(tmp15), 1)[0];
+  const tmp17 = navigationContainerRef(5031)();
+  const tmpResult4 = tmp(6729);
+  const navigationTheme1 = tmpResult4.useNavigationTheme(tmp17);
   if (null != tmp7) {
     class N {
       constructor() {
@@ -873,12 +876,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
         }
       }
     }
-    tmp6 = tmp18;
+    tmp6 = tmp19;
   }
   if (cResult[9] !== navigationContainerRef) {
     class R {
       constructor() {
-        routingInstrumentation = closure_0(closure_2[20]).routingInstrumentation;
+        routingInstrumentation = closure_0(closure_2[21]).routingInstrumentation;
         result = routingInstrumentation.registerNavigationContainer(closure_1);
         return;
       }
@@ -888,7 +891,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
   } else {
     class R {
       constructor() {
-        routingInstrumentation = closure_0(closure_2[20]).routingInstrumentation;
+        routingInstrumentation = closure_0(closure_2[21]).routingInstrumentation;
         result = routingInstrumentation.registerNavigationContainer(closure_1);
         return;
       }
@@ -897,7 +900,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
   if (cResult[11] === tmp4) {
     class R {
       constructor() {
-        routingInstrumentation = closure_0(closure_2[20]).routingInstrumentation;
+        routingInstrumentation = closure_0(closure_2[21]).routingInstrumentation;
         result = routingInstrumentation.registerNavigationContainer(closure_1);
         return;
       }
@@ -905,28 +908,28 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
     if (cResult[14] === navigationContainerRef) {
       class R {
         constructor() {
-          routingInstrumentation = closure_0(closure_2[20]).routingInstrumentation;
+          routingInstrumentation = closure_0(closure_2[21]).routingInstrumentation;
           result = routingInstrumentation.registerNavigationContainer(closure_1);
           return;
         }
       }
     }
     const NavigationIndependentTree = tmp(1504).NavigationIndependentTree;
-    const Provider = tmp(6214).HeaderBackContext.Provider;
-    const tmp25 = <NavigationIndependentTree>{null}</NavigationIndependentTree>;
+    const Provider = tmp(6209).HeaderBackContext.Provider;
+    const tmp26 = <NavigationIndependentTree>{null}</NavigationIndependentTree>;
     cResult[14] = navigationContainerRef;
     cResult[15] = tmp8;
     cResult[16] = navigationTheme1;
     cResult[17] = tmp6;
-    cResult[18] = tmp19;
-    cResult[19] = tmp20;
-    cResult[20] = tmp25;
+    cResult[18] = tmp20;
+    cResult[19] = tmp21;
+    cResult[20] = tmp26;
   }
   const merged = Object.assign(tmp9);
-  const tmp22 = <closure_11 initialRouteName={tmp4} />;
+  const tmp23 = <closure_11 initialRouteName={tmp4} />;
   cResult[11] = tmp4;
   cResult[12] = tmp9;
-  cResult[13] = tmp22;
+  cResult[13] = tmp23;
 }) : (function WrappedNavigationStack(arg0) {
   let initialRouteName;
   let initialRouteState;
@@ -938,6 +941,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
   const merged = Object.assign(arg0, Object.assign({ initialRouteName: 0, initialRouteStack: 0, initialRouteState: 0, onStateChange: 0, navigationTheme: 0 }));
   let obj = Link;
   const navigationContainerRef = obj.useNavigationContainerRef();
+  const obj2 = BackPressTracking;
+  const trackNavigationBackPress = obj2.useTrackNavigationBackPress(navigationContainerRef);
   const first = _slicedToArray(react.useState(() => {
     let tmp2;
     if (null != _require) {
@@ -946,21 +951,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Wrappe
     }
     return tmp2;
   }), 1)[0];
-  const tmp4 = navigationContainerRef(4992)();
-  const obj2 = useNavigationTheme;
-  let navigationTheme1 = obj2.useNavigationTheme(tmp4);
+  const tmp5 = navigationContainerRef(5031)();
+  const obj3 = useNavigationTheme;
+  let navigationTheme1 = obj3.useNavigationTheme(tmp5);
   const NavigationIndependentTree = Link.NavigationIndependentTree;
-  const Provider = _mod6214.HeaderBackContext.Provider;
+  const Provider = _mod6209.HeaderBackContext.Provider;
   const NavigationContainer = Link.NavigationContainer;
   if (null != navigationTheme) {
     navigationTheme1 = navigationTheme;
   }
   if (null == initialRouteState) {
-    let tmp7;
+    let tmp8;
     if (null != first) {
-      tmp7 = first;
+      tmp8 = first;
     }
-    initialRouteState = tmp7;
+    initialRouteState = tmp8;
   }
   const merged1 = Object.assign(merged);
   return <NavigationIndependentTree>{null}</NavigationIndependentTree>;

@@ -1,20 +1,20 @@
-// Module ID: 10532
-// Function ID: 10533
+// Module ID: 10566
+// Function ID: 10567
 // Name: OrbsBadgeCoachmark
-// Dependencies: [109, 19, 17, 21, 5091, 558, 576, 10533, 6163, 1126, 4938, 9413, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 558, 576, 10567, 6156, 1126, 4977, 9442, 2]
 // Exports: default
 
-// Module 10532 (OrbsBadgeCoachmark)
+// Module 10566 (OrbsBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import FastImageDefault from "FastImage" /* 6163 */;
-import useCoachmark from "useCoachmark" /* 9413 */;
-import _modDef10533 from "module_10533" /* 10533 */;
+import FastImageDefault from "FastImage" /* 6156 */;
+import useCoachmark from "useCoachmark" /* 9442 */;
+import _modDef10567 from "module_10567" /* 10567 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsBad
   const cResult = obj.c(6);
   const tmp3 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef10533 };
+    const obj2 = { uri: _modDef10567 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -60,7 +60,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsBad
   tmp10 = tmp11;
 }) : (function OrbsBadgeCoachmarkImg() {
   const tmp = closure_8();
-  const obj3 = { uri: _modDef10533 };
+  const obj3 = { uri: _modDef10567 };
   FastImageDefault;
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 });
@@ -216,7 +216,7 @@ export default function OrbsBadgeCoachmark(badgeRef) {
       tmp11 = cResult[1];
       tmp12 = cResult[2];
     }
-    const tmp8Result = tmp8(9413);
+    const tmp8Result = tmp8(9442);
     const coachmark = tmp8Result.useCoachmark(tmp11, tmp12);
   } else {
     badgeRef = badgeRef.badgeRef;

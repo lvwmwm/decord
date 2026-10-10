@@ -1931,7 +1931,7 @@ const items12 = [];
 const obj10 = { no: 1, name: "guild_and_channels", kind: "map", K: 6, V: { kind: "message", T: T9 } };
 items12[0] = obj10;
 let tmp19 = new "binaryReadMap1"("discord_protos.discord_users.v1.GuildAndChannelFrecency", items12, tmp4, ApplicationFrecency$Type, "create", "internalBinaryRead", GuildAndChannelFrecency$Type, "binaryReadMap1", items12, this, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object10, object11, object12, object13, object14, object15, object16);
-const authStore5 = tmp19;
+const authStore4 = tmp19;
 let size = size_mod;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_users/v1/frecency_user_settings.tsx");
 

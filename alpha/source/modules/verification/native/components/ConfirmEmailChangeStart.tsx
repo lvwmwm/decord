@@ -1,18 +1,18 @@
-// Module ID: 6284
-// Function ID: 6285
+// Module ID: 6279
+// Function ID: 6280
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1390, 21, 5091, 1503, 504, 6285, 1105, 5633, 4768, 1126, 6163, 6286, 5087, 5376, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 21, 5092, 1503, 504, 6280, 1105, 5636, 4809, 1126, 6156, 6281, 5088, 5379, 2]
 // Exports: default
 
-// Module 6284 (ConfirmEmailChangeStart)
-import Text_Text from "Text/Text" /* 5087 */;
+// Module 6279 (ConfirmEmailChangeStart)
+import Text_Text from "Text/Text" /* 5088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5091 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -54,12 +54,12 @@ export default function ConfirmEmailChangeStart() {
     let obj3 = { oldEmail: stateFromStores.email };
     let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_6, obj5) };
     obj5 = { style: tmp.container, children: items1 };
-    let obj6 = { style: tmp.image, source: navigation(6286) };
+    let obj6 = { style: tmp.image, source: navigation(6281) };
     const formatResult = intl.format(require("intl").t.oMFSgi, obj3);
-    const tmp14 = navigation(6163);
+    const tmp14 = navigation(6156);
     items1 = [closure_9(tmp14, obj6), , , ];
     let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(1126).t.dQ71Wa) };
-    const Text = tmp2(5087).Text;
+    const Text = tmp2(5088).Text;
     intl2 = tmp2(1126).intl;
     items1[1] = closure_9(Text, obj7);
     items1[2] = formatResult.map((children, index) => {
@@ -68,7 +68,7 @@ export default function ConfirmEmailChangeStart() {
     });
     let obj8 = { style: tmp.button, children: closure_9(Button, obj9) };
     obj9 = { text: intl3.string(require("intl").t.rXV81H), onPress: tmp8, loading: first, grow: true };
-    Button = tmp2(5376).Button;
+    Button = tmp2(5379).Button;
     intl3 = tmp2(1126).intl;
     items1[3] = closure_9(closure_6, obj8);
     return closure_9(closure_7, obj4);

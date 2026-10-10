@@ -190,7 +190,7 @@ let items = [
     key: "captureUserFeedback",
     value: function captureUserFeedback(arg0) {
       const obj = header;
-      const obj2 = { metadata: this._options._metadata, dsn: this.getDsn(), tunnel: "r" };
+      const obj2 = { metadata: this._options._metadata, dsn: this.getDsn(), tunnel: "Array" };
       this.sendEnvelope(obj.createUserFeedbackEnvelope(arg0, obj2));
     }
   },
