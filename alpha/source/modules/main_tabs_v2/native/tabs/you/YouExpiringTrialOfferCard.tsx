@@ -1,9 +1,9 @@
-// Module ID: 17504
-// Function ID: 17505
+// Module ID: 17561
+// Function ID: 17562
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 13992, 1085, 7151, 1392, 21, 1102, 5092, 587, 17505, 1265, 1126, 558, 576, 4702, 573, 7169, 7161, 17503, 2128, 5088, 4769, 1200, 6184, 9035, 5391, 6903, 2]
+// Dependencies: [19, 17, 14015, 1085, 7152, 1392, 21, 1102, 5092, 587, 17562, 1265, 1126, 558, 576, 4702, 573, 7170, 7162, 17560, 2128, 5088, 4769, 1200, 6185, 9036, 5391, 6904, 2]
 
-// Module 17504 (YouExpiringTrialOfferCard)
+// Module 17561 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1102 */;
@@ -12,11 +12,11 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import ColorConstants from "ColorConstants" /* 7151 */;
-import useCountdownDefault from "useCountdown" /* 7161 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 17505 */;
+import ColorConstants from "ColorConstants" /* 7152 */;
+import useCountdownDefault from "useCountdown" /* 7162 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 17562 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 13992 */;
+import NoticeStore from "NoticeStore" /* 14015 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -36,7 +36,7 @@ let obj2;
 let obj3;
 let tmp;
 const HelpdeskUtilsDefault = tmp(2128);
-const UserProfileCardDefault = tmp(6903);
+const UserProfileCardDefault = tmp(6904);
 function getNoticeCopy(days, trialPeriod, termsUrl) {
   let formatResult;
   if (days.days > 0) {
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  const tmpResult4 = tmp(7169);
+  const tmpResult4 = tmp(7170);
   const premiumTrialOffer = tmpResult4.usePremiumTrialOffer();
   if (cResult[3] !== premiumTrialOffer) {
     let num5 = 0;
@@ -132,8 +132,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   } else {
     tmp13 = cResult[4];
   }
-  const tmp16 = untilAtLeast(7161)(tmp13, closure_15);
-  const tmpResult5 = tmp(17503);
+  const tmp16 = untilAtLeast(7162)(tmp13, closure_15);
+  const tmpResult5 = tmp(17560);
   shouldShowExpiringTrialOfferCard = tmpResult5.useShouldShowExpiringTrialOfferCard();
   if (cResult[5] === stateFromStores) {
     if (cResult[6] === shouldShowExpiringTrialOfferCard) {
@@ -331,7 +331,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
                                                       return tmp(tmp2, obj);
                                                     }
                                                   }
-                                                  const tmp80 = closure_12(untilAtLeast(6903), tmp79);
+                                                  const tmp80 = closure_12(untilAtLeast(6904), tmp79);
                                                   cResult[58] = tmp73;
                                                   cResult[59] = style;
                                                   cResult[60] = tmp80;
@@ -461,7 +461,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
                                   }
                                 }
                                 let obj4 = { style: null, accessibilityRole: "button", accessibilityLabel: tmp52, hitSlop: tmp53, onPress: tmp56, children: tmp57 };
-                                const tmp61 = closure_12(tmp(6184).PressableOpacity, obj4);
+                                const tmp61 = closure_12(tmp(6185).PressableOpacity, obj4);
                                 cResult[37] = tmp7.closeButton;
                                 cResult[38] = tmp56;
                                 cResult[39] = tmp57;
@@ -632,7 +632,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
   let obj2 = navigateToPremium(573);
   const items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = obj2.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj3 = navigateToPremium(7169);
+  let obj3 = navigateToPremium(7170);
   const premiumTrialOffer = obj3.usePremiumTrialOffer();
   let num = 0;
   const tmp7 = useCountdownDefault;
@@ -644,7 +644,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
     }
   }
   const tmp7Result = tmp7(num, closure_15);
-  const tmp4Result = tmp4(17503);
+  const tmp4Result = tmp4(17560);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -705,7 +705,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouExpirin
                 },
           children: closure_12(tmp4(1200).CloseIcon, size)
         };
-        const PressableOpacity = tmp4(6184).PressableOpacity;
+        const PressableOpacity = tmp4(6185).PressableOpacity;
         intl = tmp4(1126).intl;
         size = { width: 16, height: 16, color: tmp3.closeIcon.color };
         items2[1] = closure_12(PressableOpacity, obj8);

@@ -1,16 +1,16 @@
-// Module ID: 16239
-// Function ID: 16240
+// Module ID: 16262
+// Function ID: 16263
 // Name: updatePersistentCodesEnabled
-// Dependencies: [5, 502, 2065, 5113, 8829, 1085, 584, 8828, 5635, 5299, 1126, 8832, 5889, 2]
+// Dependencies: [5, 502, 2065, 5113, 8830, 1085, 584, 8829, 5635, 5299, 1126, 8833, 5889, 2]
 // Exports: updatePersistentCodesEnabled
 
-// Module 16239 (updatePersistentCodesEnabled)
+// Module 16262 (updatePersistentCodesEnabled)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8828 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8829 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8832 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8829 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8830 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8833 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -39,7 +39,7 @@ let obj = function _savePersistentCodesEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = function _savePersistentCodesEnabled() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp38) {
           closure_5 = tmp38;
           if (0 === c6) {
@@ -160,7 +160,7 @@ obj = function _updatePersistentCodesEnabled() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ obj = function _updatePersistentCodesEnabled() {
                     let obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -257,7 +257,7 @@ obj = function _updatePersistentCodesEnabled() {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp6) {
                     c0 = 3;
@@ -282,7 +282,7 @@ obj = function _updatePersistentCodesEnabled() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp14) {
         c1 = 3;
         throw tmp14;

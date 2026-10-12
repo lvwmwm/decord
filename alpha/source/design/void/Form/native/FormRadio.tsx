@@ -1,9 +1,9 @@
-// Module ID: 6833
-// Function ID: 6834
+// Module ID: 6834
+// Function ID: 6835
 // Name: Form/FormRadio
-// Dependencies: [19, 17, 21, 5092, 558, 576, 6834, 6835, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 6835, 6836, 2]
 
-// Module 6833 (Form/FormRadio)
+// Module 6834 (Form/FormRadio)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -20,7 +20,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadio(se
   const cResult = obj.c(3);
   selected = selected.selected;
   const tmp3 = closure_5();
-  const tmp4 = importDefault(selected ? 6834 : 6835);
+  const tmp4 = importDefault(selected ? 6835 : 6836);
   if (cResult[0] === tmp3.radio) {
     let tmp5;
     if (cResult[1] === tmp4) {
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadio(se
   tmp5 = tmp6;
 }) : (function FormRadio(selected) {
   selected = selected.selected;
-  return <Image style={closure_5().radio} source={importDefault(selected ? 6834 : 6835)} />;
+  return <Image style={closure_5().radio} source={importDefault(selected ? 6835 : 6836)} />;
 });
 const result = size.fileFinishedImporting("design/void/Form/native/FormRadio.tsx");
 

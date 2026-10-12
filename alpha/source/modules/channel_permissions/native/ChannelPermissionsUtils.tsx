@@ -1,7 +1,7 @@
 // Module ID: 10766
 // Function ID: 10767
 // Name: channel_permissions/ChannelPermissionsUtils
-// Dependencies: [1085, 1265, 5056, 8619, 2000, 10767, 2]
+// Dependencies: [1085, 1265, 5056, 8620, 2000, 10767, 2]
 // Exports: openAddMembersActionSheet, openChannelMembersActionSheet
 
 // Module 10766 (channel_permissions/ChannelPermissionsUtils)
@@ -24,7 +24,7 @@ export const openAddMembersActionSheet = function openAddMembersActionSheet(stat
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel: stateFromStores, canSkip: flag };
-  const tmp3 = asyncRequire(8619, dependencyMap.paths);
+  const tmp3 = asyncRequire(8620, dependencyMap.paths);
   openLazy(tmp3, "channel-add-members-" + stateFromStores.id, obj2);
 };
 export const openChannelMembersActionSheet = function openChannelMembersActionSheet(id, guild_id) {

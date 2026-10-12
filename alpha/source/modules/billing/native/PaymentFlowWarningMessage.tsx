@@ -1,9 +1,9 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13629
+// Function ID: 13630
 // Name: PaymentFlowWarningMessage
 // Dependencies: [19, 17, 21, 5092, 587, 5969, 558, 576, 1200, 5088, 2]
 
-// Module 13606 (PaymentFlowWarningMessage)
+// Module 13629 (PaymentFlowWarningMessage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

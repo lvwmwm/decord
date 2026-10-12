@@ -1,10 +1,10 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12505
+// Function ID: 12506
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 12480, 21, 5092, 587, 558, 576, 2079, 6158, 8579, 1126, 5088, 1631, 5379, 1200, 1503, 7088, 6739, 12494, 5635, 12489, 2]
+// Dependencies: [5, 32, 19, 17, 12482, 21, 5092, 587, 558, 576, 2079, 6159, 8580, 1126, 5088, 1631, 5379, 1200, 1503, 7089, 6740, 12496, 5635, 12491, 2]
 // Exports: default
 
-// Module 12503 (HubEmailConnectionGuildSelect)
+// Module 12505 (HubEmailConnectionGuildSelect)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -12,9 +12,9 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import GuildIconDefault from "GuildIcon" /* 6158 */;
-import Form from "Form" /* 8579 */;
-import HubConstants from "HubConstants" /* 12480 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import Form from "Form" /* 8580 */;
+import HubConstants from "HubConstants" /* 12482 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -393,7 +393,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c3;
@@ -448,7 +448,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 c3 = 0;
                 closure_1_7(false);
                 c5 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp42) {
               closure_2 = tmp42;

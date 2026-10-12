@@ -1,9 +1,9 @@
-// Module ID: 17651
-// Function ID: 17652
+// Module ID: 17708
+// Function ID: 17709
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8316, 2062, 21, 5092, 587, 558, 576, 10099, 5056, 4977, 10105, 1126, 2664, 5088, 5379, 6839, 10050, 6878, 17652, 6156, 11536, 8308, 504, 2]
+// Dependencies: [19, 17, 8317, 2062, 21, 5092, 587, 558, 576, 10100, 5056, 4977, 10106, 1126, 2664, 5088, 5379, 6840, 10051, 6879, 17709, 6157, 11538, 8309, 504, 2]
 
-// Module 17651 (GiftingBadgesCoachmarkActionSheet)
+// Module 17708 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,13 +11,13 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import _modDef2664 from "module_2664" /* 2664 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10050 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10105 */;
-import _modDef17652 from "module_17652" /* 17652 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10051 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10106 */;
+import _modDef17709 from "module_17709" /* 17709 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8316 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -56,7 +56,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasBad
   markAsDismissed = markAsDismissed.markAsDismissed;
   ({ currentTier, giftCount, variant } = markAsDismissed);
   const tmp4 = closure_9();
-  let obj2 = markAsDismissed(10099);
+  let obj2 = markAsDismissed(10100);
   const isGiftingBadgeComplexArtEnabled = obj2.useIsGiftingBadgeComplexArtEnabled("GiftingBadgesCoachmarkActionSheet");
   if (cResult[0] === currentTier) {
     let tmp6;
@@ -397,7 +397,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasBad
     cResult[11] = closure_7(View, obj10);
     const tmp17 = closure_7(View, obj10);
   }
-  const tmpResult = markAsDismissed(10099);
+  const tmpResult = markAsDismissed(10100);
   const giftingBadgeTierIconUrl = tmpResult.getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
   cResult[0] = currentTier;
   cResult[1] = isGiftingBadgeComplexArtEnabled;
@@ -421,9 +421,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasBad
   ({ currentTier, giftCount } = markAsDismissed);
   const variant = markAsDismissed.variant;
   const tmp = closure_9();
-  let obj = markAsDismissed(10099);
+  let obj = markAsDismissed(10100);
   const isGiftingBadgeComplexArtEnabled = obj.useIsGiftingBadgeComplexArtEnabled("GiftingBadgesCoachmarkActionSheet");
-  let obj2 = markAsDismissed(10099);
+  let obj2 = markAsDismissed(10100);
   const giftingBadgeTierIconUrl = obj2.getGiftingBadgeTierIconUrl(currentTier, isGiftingBadgeComplexArtEnabled);
   const items = [markAsDismissed];
   const items1 = [markAsDismissed];
@@ -444,7 +444,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HasBad
   const obj5 = { style: tmp.graphicContainer, children: tmp8Result };
   tmp8Result = null != giftingBadgeTierIconUrl;
   obj4 = { style: tmp.container, children: items2 };
-  BottomSheet = markAsDismissed(6839).BottomSheet;
+  BottomSheet = markAsDismissed(6840).BottomSheet;
   if (tmp8Result) {
     const obj6 = { icon: giftingBadgeTierIconUrl, size: 120 };
     tmp8Result = tmp8(GiftingBadgeIconDefault, obj6);
@@ -532,7 +532,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBad
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    tmp8[0] = _modDef17652;
+    tmp8[0] = _modDef17709;
     cResult[4] = tmp8;
     tmp7 = tmp8;
   } else {
@@ -693,9 +693,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBad
   let obj = { startExpanded: true, onDismiss: callback1, children: closure_8(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
   const obj3 = { style: tmp.graphicContainer, children: closure_7(tmp4, obj4) };
-  BottomSheet = markAsDismissed(6839).BottomSheet;
+  BottomSheet = markAsDismissed(6840).BottomSheet;
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef17652 };
+  obj5 = { uri: _modDef17709 };
   tmp4 = FastImageDefault;
   items2 = [closure_7(View, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };
@@ -713,7 +713,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBad
   Button = markAsDismissed(5379).Button;
   intl3 = markAsDismissed(1126).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(11536).GiftIcon;
+  GiftIcon = markAsDismissed(11538).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 });

@@ -1,8 +1,8 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16725
+// Function ID: 16726
 // Dependencies: [2]
 
-// Module 16701
+// Module 16725
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CheersSpotIllustration-1x.png.js");

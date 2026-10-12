@@ -1,14 +1,14 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16788
+// Function ID: 16789
 // Name: useGuildMediaState
-// Dependencies: [2064, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 558, 576, 504, 8654, 4739, 13981, 8512, 11, 5894, 2]
+// Dependencies: [2064, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 558, 576, 504, 8655, 4739, 14004, 8513, 11, 5894, 2]
 
-// Module 16764 (useGuildMediaState)
+// Module 16788 (useGuildMediaState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13981 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14004 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;

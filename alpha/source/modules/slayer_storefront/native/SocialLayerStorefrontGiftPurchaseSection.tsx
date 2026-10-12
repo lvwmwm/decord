@@ -1,9 +1,9 @@
-// Module ID: 10180
-// Function ID: 10181
+// Module ID: 10181
+// Function ID: 10182
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7143, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 6664, 6857, 504, 1265, 10181, 1382, 584, 10155, 10167, 1126, 5088, 10173, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 7144, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 6665, 6858, 504, 1265, 10182, 1382, 584, 10156, 10168, 1126, 5088, 10174, 5379, 2]
 
-// Module 10180 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10181 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7143 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10155 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10156 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -396,7 +396,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -433,7 +433,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
               closure_128_10();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

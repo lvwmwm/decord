@@ -1,10 +1,10 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 12610
+// Function ID: 12611
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12602, 1126, 5088, 12609, 6184, 12600, 5056, 12610, 2000, 10446, 12612, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12604, 1126, 5088, 12611, 6185, 12602, 5056, 12612, 2000, 10447, 12614, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 12608 (NotificationSettingsMessageUnread)
+// Module 12610 (NotificationSettingsMessageUnread)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import intl4 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import Pressables from "Pressables" /* 6184 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12602 */;
-import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 12609 */;
+import Pressables from "Pressables" /* 6185 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12604 */;
+import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 12611 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -258,7 +258,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notific
   }
   items2[1] = React3(Text3, obj9);
   const obj10 = { onPress: onPress.onCustomize, children: hasOwnProperty(Text4, obj11) };
-  const PressableOpacity2 = tmp2(6184).PressableOpacity;
+  const PressableOpacity2 = tmp2(6185).PressableOpacity;
   obj11 = { variant: "text-sm/semibold", style: tmp.cta, color: "text-brand", children: items3 };
   Text4 = tmp2(5088).Text;
   const intl3 = tmp2(1126).intl;
@@ -278,7 +278,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId: style.guildId };
-      obj.openLazy(asyncRequire(12610, dependencyMap.paths), "MessageUnreadActionSheet", obj2);
+      obj.openLazy(asyncRequire(12612, dependencyMap.paths), "MessageUnreadActionSheet", obj2);
     }
   };
   obj2 = require("notificationSettingsGuildFlagUtils");
@@ -293,7 +293,7 @@ export const NotificationSettingsChannelMessageUnread = function NotificationSet
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel: style.channel };
-      obj.openLazy(asyncRequire(12612, dependencyMap.paths), "MessageUnreadActionSheet", obj2);
+      obj.openLazy(asyncRequire(12614, dependencyMap.paths), "MessageUnreadActionSheet", obj2);
     }
   };
   obj2 = require("notficationSettingsChannelFlagUtils");

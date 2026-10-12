@@ -1,9 +1,9 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 14010
+// Function ID: 14011
 // Name: LocalPushNotificationStore
-// Dependencies: [2087, 5891, 11414, 1085, 11031, 4702, 1126, 504, 584, 2]
+// Dependencies: [2087, 5891, 11422, 1085, 11031, 4702, 1126, 504, 584, 2]
 
-// Module 13987 (LocalPushNotificationStore)
+// Module 14010 (LocalPushNotificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 1085 */;
@@ -12,7 +12,7 @@ import _modDef4702 from "module_4702" /* 4702 */;
 import PushNotificationDefault from "PushNotification" /* 11031 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 5891 */;
-import Constants from "Constants" /* 11414 */;
+import Constants from "Constants" /* 11422 */;
 import size from "module_2" /* 2 */;
 
 let userInfo;

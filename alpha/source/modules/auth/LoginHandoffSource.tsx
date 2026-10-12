@@ -1,10 +1,10 @@
-// Module ID: 7037
-// Function ID: 7038
+// Module ID: 7038
+// Function ID: 7039
 // Name: LoginHandoffSource
 // Dependencies: [2072, 1095, 5422, 5982, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 7037 (LoginHandoffSource)
+// Module 7038 (LoginHandoffSource)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import LinkUtils from "LinkUtils" /* 5422 */;

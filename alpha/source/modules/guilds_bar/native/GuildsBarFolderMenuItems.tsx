@@ -1,10 +1,10 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16744
+// Function ID: 16745
 // Name: GuildsBarFolderMenuItems
-// Dependencies: [5, 5963, 1085, 6769, 1126, 14165, 2000, 7091, 16721, 2]
+// Dependencies: [5, 5963, 1085, 6770, 1126, 14188, 2000, 7092, 16745, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 16720 (GuildsBarFolderMenuItems)
+// Module 16744 (GuildsBarFolderMenuItems)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;
@@ -36,7 +36,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
               value.default(guildFolderById.guildIds, constants.GUILD_LIST);
             }
             guildFolderById = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp13) {
             guildFolderById = 3;
             throw tmp13;
@@ -98,7 +98,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(id) {
             } else {
               const result = value.showGuildsBarFolderModal(closure_128_0);
               c2 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp9) {
             c2 = 3;

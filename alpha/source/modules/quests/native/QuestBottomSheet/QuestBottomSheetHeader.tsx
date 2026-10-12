@@ -1,9 +1,9 @@
-// Module ID: 15376
-// Function ID: 15377
+// Module ID: 15399
+// Function ID: 15400
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1390, 21, 5092, 587, 558, 576, 9170, 7412, 15343, 504, 9189, 7410, 1126, 15375, 5975, 15377, 15344, 5362, 5371, 5088, 6184, 9241, 2]
+// Dependencies: [32, 19, 17, 1390, 21, 5092, 587, 558, 576, 9171, 7413, 15366, 504, 9190, 7411, 1126, 15398, 5975, 15400, 15367, 5362, 5371, 5088, 6185, 9242, 2]
 
-// Module 15376 (QuestBottomSheetHeader)
+// Module 15399 (QuestBottomSheetHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,12 +11,12 @@ import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1126 */;
 import react_native2 from "react-native" /* 5371 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7410 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7412 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9170 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9189 */;
-import QuestHooks from "QuestHooks" /* 15343 */;
-import QuestBottomSheet from "QuestBottomSheet" /* 15375 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7411 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9190 */;
+import QuestHooks from "QuestHooks" /* 15366 */;
+import QuestBottomSheet from "QuestBottomSheet" /* 15398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -260,15 +260,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHea
   let tmp2 = null != completedAt;
   dependencyMap = tmp2;
   gameTitle = quest.config.messages.gameTitle;
-  let obj = quest(9170);
+  let obj = quest(9171);
   const questTaskDetails = obj.useQuestTaskDetails(quest);
-  let obj2 = quest(7412);
+  let obj2 = quest(7413);
   const hasWatchVideoTasksResult = obj2.hasWatchVideoTasks(quest);
   react = hasWatchVideoTasksResult;
-  let obj3 = quest(7412);
+  let obj3 = quest(7413);
   const isInGameQuestResult = obj3.isInGameQuest(quest);
   c5 = isInGameQuestResult;
-  let obj4 = quest(9170);
+  let obj4 = quest(9171);
   first = gameTitle(obj4.useTaskPlatformScreen(quest, questTaskDetails), 1)[0];
   targetMinutes = questTaskDetails.targetMinutes;
   const items = [quest];
@@ -277,14 +277,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHea
     const obj2 = { quest };
     return obj.hasStreamOnDesktopTask(obj2);
   }, items);
-  let obj5 = quest(15343);
+  let obj5 = quest(15366);
   hasWatchVideoOnMobileTasks = obj5.useHasWatchVideoOnMobileTasks(quest.config);
   let obj6 = quest(504);
   const items1 = [first];
   const stateFromStores = obj6.useStateFromStores(items1, () => first.getCurrentUser());
-  const obj7 = quest(9189);
+  const obj7 = quest(9190);
   defaultRewardNameWithArticle = obj7.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
-  const obj8 = quest(7410);
+  const obj8 = quest(7411);
   const isSponsoredPlayQuestResult = obj8.isSponsoredPlayQuest(quest);
   c11 = isSponsoredPlayQuestResult;
   const items2 = [tmp2, hasWatchVideoTasksResult, step, first, memo, gameTitle, defaultRewardNameWithArticle, targetMinutes, hasWatchVideoOnMobileTasks, isInGameQuestResult, isSponsoredPlayQuestResult, quest.config];
@@ -367,9 +367,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
   const cResult = obj.c(23);
   ({ quest, step, withActionSheet, location: _location } = arg0);
   const tmp5 = closure_9();
-  const tmpResult = tmp(15377);
+  const tmpResult = tmp(15400);
   const questCreative = tmpResult.useQuestCreative(quest);
-  const tmpResult3 = tmp(15344);
+  const tmpResult3 = tmp(15367);
   const actionSheetPressHandler = tmpResult3.useActionSheetPressHandler(questCreative);
   if (cResult[0] === _location) {
     if (cResult[1] === quest) {
@@ -444,10 +444,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
               let tmp23 = tmp4;
               if (tmp23) {
                 const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(tmp(1126).t["UKOtz+"]), onPress: actionSheetPressHandler, style: tmp5.actionSheetButton, children: closure_7(MoreHorizontalIcon, obj4) };
-                const PressableOpacity = tmp(6184).PressableOpacity;
+                const PressableOpacity = tmp(6185).PressableOpacity;
                 intl = tmp(1126).intl;
                 obj4 = { color: ref(587).colors.INTERACTIVE_TEXT_DEFAULT };
-                MoreHorizontalIcon = tmp(9241).MoreHorizontalIcon;
+                MoreHorizontalIcon = tmp(9242).MoreHorizontalIcon;
                 tmp23 = closure_7(PressableOpacity, obj3);
               }
               cResult[15] = actionSheetPressHandler;
@@ -507,9 +507,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
   let isScreenReaderEnabled;
   const _location = step.location;
   let tmp = closure_9();
-  let obj = isScreenReaderEnabled(15377);
+  let obj = isScreenReaderEnabled(15400);
   const questCreative = obj.useQuestCreative(quest);
-  let obj2 = isScreenReaderEnabled(15344);
+  let obj2 = isScreenReaderEnabled(15367);
   const actionSheetPressHandler = obj2.useActionSheetPressHandler(questCreative);
   const tmp6 = closure_10({ quest, step, location: _location });
   const obj3 = isScreenReaderEnabled(5362);
@@ -549,10 +549,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBotto
   items3 = [tmp13Result, ];
   if (withActionSheet) {
     const obj6 = { accessibilityRole: "button", accessibilityLabel: intl.string(isScreenReaderEnabled(1126).t["UKOtz+"]), onPress: actionSheetPressHandler, style: tmp.actionSheetButton, children: closure_7(MoreHorizontalIcon, obj7) };
-    const PressableOpacity = tmp2(6184).PressableOpacity;
+    const PressableOpacity = tmp2(6185).PressableOpacity;
     intl = tmp2(1126).intl;
     obj7 = { color: ref(587).colors.INTERACTIVE_TEXT_DEFAULT };
-    MoreHorizontalIcon = tmp2(9241).MoreHorizontalIcon;
+    MoreHorizontalIcon = tmp2(9242).MoreHorizontalIcon;
     withActionSheet = closure_7(PressableOpacity, obj6);
   }
   items3[1] = withActionSheet;

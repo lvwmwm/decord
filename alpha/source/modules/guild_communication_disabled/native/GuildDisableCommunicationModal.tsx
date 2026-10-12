@@ -1,7 +1,7 @@
 // Module ID: 11398
 // Function ID: 11399
 // Name: GuildDisableCommunicationModal
-// Dependencies: [19, 21, 558, 576, 9634, 1126, 5409, 11399, 9635, 2]
+// Dependencies: [19, 21, 558, 576, 9635, 1126, 5409, 11399, 9636, 2]
 
 // Module 11398 (GuildDisableCommunicationModal)
 import Fragment from "Fragment" /* 21 */;

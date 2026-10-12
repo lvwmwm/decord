@@ -1,9 +1,9 @@
-// Module ID: 8146
-// Function ID: 8147
+// Module ID: 8147
+// Function ID: 8148
 // Name: duration
 // Dependencies: [32, 1210, 2]
 
-// Module 8146 (duration)
+// Module 8147 (duration)
 import _mod1210 from "module_1210" /* 1210 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

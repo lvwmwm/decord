@@ -8,11 +8,11 @@
 import _mod11207 from "module_11207" /* 11207 */;
 import _mod11215 from "module_11215" /* 11215 */;
 
-const f107576 = (acc, item) => {
+const f107795 = (acc, item) => {
   let closure_0 = acc;
   let parts = item.split(",");
-  const mapped = parts.map(f107577);
-  const entries = Object.entries(mapped.reduce(f107578, {}));
+  const mapped = parts.map(f107796);
+  const entries = Object.entries(mapped.reduce(f107797, {}));
   item = entries.forEach((item) => {
     let tmp;
     let tmp2;
@@ -21,11 +21,11 @@ const f107576 = (acc, item) => {
   });
   return acc;
 };
-const f107577 = (item) => {
+const f107796 = (item) => {
   const parts = item.split("=");
   return parts.map((item) => decodeURIComponent(item.trim()));
 };
-const f107578 = (acc, item) => {
+const f107797 = (acc, item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -54,12 +54,12 @@ export const baggageHeaderToDynamicSamplingContext = function baggageHeaderToDyn
       let reduced;
       const _Array2 = Array;
       if (Array.isArray(arr)) {
-        reduced = arr.reduce(f107576, {});
+        reduced = arr.reduce(f107795, {});
       } else {
         const str = ",";
         let parts = arr.split(",");
-        let mapped = parts.map(f107577);
-        reduced = mapped.reduce(f107578, {});
+        let mapped = parts.map(f107796);
+        reduced = mapped.reduce(f107797, {});
       }
       tmp = reduced;
     } else {
@@ -145,11 +145,11 @@ export const parseBaggageHeader = function parseBaggageHeader(arr) {
     }
     const _Array2 = Array;
     if (Array.isArray(arr)) {
-      reduced = arr.reduce(f107576, {});
+      reduced = arr.reduce(f107795, {});
     } else {
       const parts = arr.split(",");
-      const mapped = parts.map(f107577);
-      reduced = mapped.reduce(f107578, {});
+      const mapped = parts.map(f107796);
+      reduced = mapped.reduce(f107797, {});
     }
     return reduced;
   }

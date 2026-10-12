@@ -1,17 +1,17 @@
-// Module ID: 6788
-// Function ID: 6789
+// Module ID: 6789
+// Function ID: 6790
 // Name: GuildOnboardingPromptsStore
-// Dependencies: [2118, 2065, 6784, 6789, 6790, 12, 504, 1102, 11, 584, 2]
+// Dependencies: [2118, 2065, 6785, 6790, 6791, 12, 504, 1102, 11, 584, 2]
 
-// Module 6788 (GuildOnboardingPromptsStore)
+// Module 6789 (GuildOnboardingPromptsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GuildOnboardingStore2 from "GuildOnboardingStore" /* 6784 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6789 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 6790 */;
+import GuildOnboardingStore2 from "GuildOnboardingStore" /* 6785 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6790 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 6791 */;
 import ImpersonateStore from "ImpersonateStore" /* 2118 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 7113
-// Function ID: 7114
+// Module ID: 7114
+// Function ID: 7115
 // Name: LibraryApplicationRecord
-// Dependencies: [1405, 5440, 7110, 1085, 4702, 1403, 2]
+// Dependencies: [1405, 5440, 7111, 1085, 4702, 1403, 2]
 
-// Module 7113 (LibraryApplicationRecord)
+// Module 7114 (LibraryApplicationRecord)
 import FlagUtilsAll from "FlagUtils" /* 1403 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import Record from "Record" /* 1405 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import EntitlementRecord from "EntitlementRecord" /* 7110 */;
+import EntitlementRecord from "EntitlementRecord" /* 7111 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

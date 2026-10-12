@@ -1,9 +1,9 @@
-// Module ID: 6265
-// Function ID: 6266
+// Module ID: 6266
+// Function ID: 6267
 // Name: FormRadio
 // Dependencies: [19, 21, 5092, 587, 558, 576, 4834, 4850, 5378, 5382, 2]
 
-// Module 6265 (FormRadio)
+// Module 6266 (FormRadio)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

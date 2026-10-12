@@ -1,7 +1,7 @@
 // Module ID: 11405
 // Function ID: 11406
 // Name: TransferOwnership
-// Dependencies: [5, 32, 19, 17, 1390, 11404, 1085, 21, 5092, 587, 4818, 1503, 504, 38, 8637, 11402, 4808, 5409, 6158, 5088, 6156, 11406, 1200, 1126, 4962, 6264, 6176, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 11404, 1085, 21, 5092, 587, 4818, 1503, 504, 38, 8638, 11402, 4808, 5409, 6159, 5088, 6157, 11406, 1200, 1126, 4962, 6265, 6177, 5379, 2]
 // Exports: default
 
 // Module 11405 (TransferOwnership)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import GuildIcon from "GuildIcon" /* 6158 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -87,7 +87,7 @@ export default function TransferOwnership(guild) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ export default function TransferOwnership(guild) {
             closure_128_2.push(constants.CONFIRM_EMAIL_CODE);
           }
           c2 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp22) {
           c2 = 3;
           throw tmp22;
@@ -196,7 +196,7 @@ export default function TransferOwnership(guild) {
   const obj8 = { style: tmp5.header, children: null };
   const obj9 = { source: toUser(11406), style: tmp5.arrow };
   ({ paddingTop: toUser(587).space.PX_16, paddingHorizontal: token });
-  let tmp15 = toUser(6156);
+  let tmp15 = toUser(6157);
   const items1 = [closure_12(tmp15, obj9), , , ];
   const obj10 = { style: tmp5.avatarsWrapper, children: items2 };
   const obj11 = { user: stateFromStores, guildId: guild.id, size: guild(1200).AvatarSizes.XXLARGE };
@@ -226,7 +226,7 @@ export default function TransferOwnership(guild) {
     obj8.children = items1;
     const items3 = [tmp13(tmp14, obj8), , ];
     const obj17 = { title: null, hasIcons: false, children: closure_12(TableCheckboxRow, obj18) };
-    const TableRowGroup = tmp(6264).TableRowGroup;
+    const TableRowGroup = tmp(6265).TableRowGroup;
     const string = tmp(1126).intl.string;
     class GuildWithSmallIcon {
       constructor() {
@@ -256,7 +256,7 @@ export default function TransferOwnership(guild) {
           _undefined(arg0);
         }
     };
-    TableCheckboxRow = tmp(6176).TableCheckboxRow;
+    TableCheckboxRow = tmp(6177).TableCheckboxRow;
     const intl3 = tmp(1126).intl;
     format3 = intl3.format;
     obj19 = { username: tmp3Result3.getUserTag(toUser) };

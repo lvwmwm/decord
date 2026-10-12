@@ -1,17 +1,17 @@
-// Module ID: 17939
-// Function ID: 17940
+// Module ID: 17996
+// Function ID: 17997
 // Name: ChannelSubtitle
-// Dependencies: [19, 11758, 21, 17354, 5088, 558, 576, 16641, 11756, 2]
+// Dependencies: [19, 11760, 21, 17411, 5088, 558, 576, 16665, 11758, 2]
 // Exports: renderChannelSubtitle
 
-// Module 17939 (ChannelSubtitle)
+// Module 17996 (ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11756 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11758 */;
-import getChannelSubtitleData from "getChannelSubtitleData" /* 16641 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17354 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11758 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
+import getChannelSubtitleData from "getChannelSubtitleData" /* 16665 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17411 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

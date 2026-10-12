@@ -1,16 +1,16 @@
-// Module ID: 12605
-// Function ID: 12606
+// Module ID: 12607
+// Function ID: 12608
 // Name: NotificationSettingsMessageNotificationGuildActionSheet
-// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 12600, 1126, 10447, 6808, 6803, 12606, 2]
+// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 12602, 1126, 10448, 6809, 6804, 12608, 2]
 
-// Module 12605 (NotificationSettingsMessageNotificationGuildActionSheet)
+// Module 12607 (NotificationSettingsMessageNotificationGuildActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6803 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6808 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10447 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10448 */;
 import react from "react" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
           return tmp9;
         }
       }
-      const tmp12 = jsx(unread(12606), { context: "guild", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+      const tmp12 = jsx(unread(12608), { context: "guild", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
       cResult[6] = notification;
       cResult[7] = tmp5;
       cResult[8] = tmp8;
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   };
   stringResult = undefined;
   const tmp4 = jsx;
-  const tmp5 = unread(12606);
+  const tmp5 = unread(12608);
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
       const intl = tmp(1126).intl;

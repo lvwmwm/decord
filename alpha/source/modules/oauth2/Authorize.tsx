@@ -1,15 +1,15 @@
-// Module ID: 9225
-// Function ID: 9226
+// Module ID: 9226
+// Function ID: 9227
 // Name: Authorize
-// Dependencies: [2065, 4939, 1085, 9226, 8457, 5984, 4755, 1097, 5075, 2]
+// Dependencies: [2065, 4939, 1085, 9227, 8458, 5984, 4755, 1097, 5075, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 9225 (Authorize)
+// Module 9226 (Authorize)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import _mod5984 from "module_5984" /* 5984 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
-import scopes from "scopes" /* 9226 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import scopes from "scopes" /* 9227 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import Constants from "Constants" /* 1085 */;
@@ -28,7 +28,7 @@ export const filterScopes = function filterScopes(items) {
     const RemovedScopes = scopes.RemovedScopes;
     return !RemovedScopes.includes(item);
   });
-  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(8457).OAuth2Scopes.APPLICATIONS_COMMANDS);
+  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(8458).OAuth2Scopes.APPLICATIONS_COMMANDS);
   if (hasItem) {
     found.push(OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }

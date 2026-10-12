@@ -1,20 +1,20 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15467
+// Function ID: 15468
 // Name: QuestDockEnrolledHeader
-// Dependencies: [32, 19, 17, 15347, 21, 587, 5092, 558, 576, 15377, 9170, 12978, 5975, 10514, 15387, 5088, 2]
+// Dependencies: [32, 19, 17, 15370, 21, 587, 5092, 558, 576, 15400, 9171, 12980, 5975, 10515, 15410, 5088, 2]
 
-// Module 15444 (QuestDockEnrolledHeader)
+// Module 15467 (QuestDockEnrolledHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9170 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10514 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 12978 */;
-import QuestDockConstants from "QuestDockConstants" /* 15347 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15377 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15387 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 12980 */;
+import QuestDockConstants from "QuestDockConstants" /* 15370 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15400 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

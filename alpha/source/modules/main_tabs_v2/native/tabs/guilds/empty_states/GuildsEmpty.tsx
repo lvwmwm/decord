@@ -1,9 +1,9 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16723
+// Function ID: 16724
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 502, 2087, 4939, 1085, 21, 5092, 587, 5088, 12431, 558, 576, 16700, 1126, 5379, 5377, 1504, 573, 1273, 8971, 2090, 4978, 8326, 15352, 2]
+// Dependencies: [32, 19, 17, 502, 2087, 4939, 1085, 21, 5092, 587, 5088, 12433, 558, 576, 16724, 1126, 5379, 5377, 1504, 573, 1273, 8972, 2090, 4978, 8327, 15375, 2]
 
-// Module 16699 (GuildsEmpty)
+// Module 16723 (GuildsEmpty)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -11,8 +11,8 @@ import FavoritesUtils from "FavoritesUtils" /* 2090 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12431 */;
-import CheersSpotIllustration from "CheersSpotIllustration" /* 16700 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12433 */;
+import CheersSpotIllustration from "CheersSpotIllustration" /* 16724 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -347,7 +347,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp11 = cResult[2];
   }
-  selectedGuildId(8971)(tmp11);
+  selectedGuildId(8972)(tmp11);
   if (cResult[3] === tmp10) {
     let tmp13;
     let tmp14;
@@ -356,9 +356,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp14 = cResult[6];
     }
     const effect = react.useEffect(tmp13, tmp14);
-    const tmpResult3 = tmp(8326);
+    const tmpResult3 = tmp(8327);
     const isScreenLandscape = tmpResult3.useIsScreenLandscape();
-    const tmpResult4 = tmp(15352);
+    const tmpResult4 = tmp(15375);
     const youBarTotalHeight = tmpResult4.useYouBarTotalHeight();
     let tmp19 = null;
     if (stateFromStores) {
@@ -518,7 +518,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   selectedGuildId = tmp6;
   let obj3 = { type: tmp2(1273).ImpressionTypes.VIEW, name: tmp2(1273).ImpressionNames.GUILDS_EMPTY_NUX };
-  const tmp7 = selectedGuildId(8971);
+  const tmp7 = selectedGuildId(8972);
   tmp7(obj3);
   const items1 = [tmp6, navigation];
   const effect = react.useEffect(() => {
@@ -555,9 +555,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }, items1);
-  const tmp2Result = navigation(8326);
+  const tmp2Result = navigation(8327);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(15352);
+  navigation(15375);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };

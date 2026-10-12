@@ -1,18 +1,18 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9558
+// Function ID: 9559
 // Name: EmojiGrid
-// Dependencies: [19, 17, 21, 5092, 587, 4768, 1415, 558, 576, 6819, 9542, 9558, 9560, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 4768, 1415, 558, 576, 6820, 9543, 9559, 9561, 2]
 
-// Module 9557 (EmojiGrid)
+// Module 9558 (EmojiGrid)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4768 */;
-import EmojiDefault from "Emoji" /* 6819 */;
-import chunkDefault from "chunk" /* 9558 */;
-import LayoutUtils from "LayoutUtils" /* 9560 */;
+import EmojiDefault from "Emoji" /* 6820 */;
+import chunkDefault from "chunk" /* 9559 */;
+import LayoutUtils from "LayoutUtils" /* 9561 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -225,14 +225,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
     const substr1 = found.slice(0, num3);
     const emojiGridContainer = tmp7.emojiGridContainer;
     const arr4 = chunkDefault(substr1, num4);
-    let GappedList = tmp(9560).GappedList;
+    let GappedList = tmp(9561).GappedList;
     if (cResult[18] !== tmp7.emojiGridRowContainer) {
       class U {
         constructor(arg0, arg1) {
           obj = { style: closure_1.emojiGridRowContainer, children: null };
           obj1 = { gap: 32, children: null };
           GappedList = closure_0(closure_2[12]).GappedList;
-          obj1.children = arg0.map(() => { /* body not rendered: F141984 */ });
+          obj1.children = arg0.map(() => { /* body not rendered: F142276 */ });
           obj.children = jsx(GappedList, obj1);
           return jsx(View, obj, arg1);
         }
@@ -246,7 +246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
           obj = { style: closure_1.emojiGridRowContainer, children: null };
           obj1 = { gap: 32, children: null };
           GappedList = closure_0(closure_2[12]).GappedList;
-          obj1.children = arg0.map(() => { /* body not rendered: F141984 */ });
+          obj1.children = arg0.map(() => { /* body not rendered: F142276 */ });
           obj.children = jsx(GappedList, obj1);
           return jsx(View, obj, arg1);
         }
@@ -260,7 +260,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
           obj = { style: closure_1.emojiGridRowContainer, children: null };
           obj1 = { gap: 32, children: null };
           GappedList = closure_0(closure_2[12]).GappedList;
-          obj1.children = arg0.map(() => { /* body not rendered: F141984 */ });
+          obj1.children = arg0.map(() => { /* body not rendered: F142276 */ });
           obj.children = jsx(GappedList, obj1);
           return jsx(View, obj, arg1);
         }
@@ -305,7 +305,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
     num2 = 5;
   }
   let obj = {};
-  const obj2 = doNotDisplayEmojiIds(9542);
+  const obj2 = doNotDisplayEmojiIds(9543);
   const merged = Object.assign(obj2.useSharedMessageEmojiStyles());
   const merged1 = Object.assign(closure_5());
   let emojis;
@@ -334,8 +334,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGrid(ar
       return <View key={arg1} style={obj.emojiGridRowContainer}>{null}</View>;
     })
   });
-  arr4 = obj(9558)(substr1, num2);
-  let GappedList = tmp(9560).GappedList;
+  arr4 = obj(9559)(substr1, num2);
+  let GappedList = tmp(9561).GappedList;
   return <View style={obj.emojiGridContainer}>{null}</View>;
 });
 size = size_mod;

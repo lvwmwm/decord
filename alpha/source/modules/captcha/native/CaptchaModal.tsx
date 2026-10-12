@@ -1,22 +1,22 @@
-// Module ID: 17961
-// Function ID: 17962
+// Module ID: 18018
+// Function ID: 18019
 // Name: CaptchaModal
-// Dependencies: [19, 17, 16348, 16349, 21, 5092, 558, 576, 6625, 1504, 17962, 5727, 17963, 16356, 17966, 1126, 5088, 5379, 6839, 5377, 2]
+// Dependencies: [19, 17, 16371, 16372, 21, 5092, 558, 576, 6626, 1504, 18019, 5727, 18020, 16379, 18023, 1126, 5088, 5379, 6840, 5377, 2]
 
-// Module 17961 (CaptchaModal)
+// Module 18018 (CaptchaModal)
 import intl4 from "intl" /* 1126 */;
 import Link from "Link" /* 1504 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5727 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16348 */;
-import RegistrationUtils from "RegistrationUtils" /* 16356 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 17963 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 17966 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16371 */;
+import RegistrationUtils from "RegistrationUtils" /* 16379 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 18020 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 18023 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationConstants from "RegistrationConstants" /* 16349 */;
+import RegistrationConstants from "RegistrationConstants" /* 16372 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -188,7 +188,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: react, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let tmp = dependencyMap;
-  const tmp2 = closure_11(onReject(6625)());
+  const tmp2 = closure_11(onReject(6626)());
   let obj = Link;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
     }
     return str;
   }, items);
-  let closure_9 = onReject(17962)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(18019)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);

@@ -1,14 +1,14 @@
-// Module ID: 8230
-// Function ID: 8231
+// Module ID: 8231
+// Function ID: 8232
 // Name: AppsWarningIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8185, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8186, 4817, 2]
 
-// Module 8230 (AppsWarningIcon)
+// Module 8231 (AppsWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8185 */;
+import AssetRegistry from "AssetRegistry" /* 8186 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

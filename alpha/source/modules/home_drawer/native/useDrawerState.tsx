@@ -1,9 +1,9 @@
-// Module ID: 16437
-// Function ID: 16438
+// Module ID: 16460
+// Function ID: 16461
 // Name: useDrawerState
 // Dependencies: [32, 19, 558, 576, 1504, 4976, 2]
 
-// Module 16437 (useDrawerState)
+// Module 16460 (useDrawerState)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 18244
-// Function ID: 18245
+// Module ID: 18302
+// Function ID: 18303
 // Name: GuildSettingsAutomodRuleStore
-// Dependencies: [5, 1085, 1126, 1267, 12, 1388, 1272, 18245, 18250, 18246, 7881, 18243, 11453, 5635, 4733, 2]
+// Dependencies: [5, 1085, 1126, 1267, 12, 1388, 1272, 18303, 18308, 18304, 7882, 18301, 11455, 5635, 4733, 2]
 // Exports: useAutomodEditingRuleActions, useAutomodEditingRuleState
 
-// Module 18244 (GuildSettingsAutomodRuleStore)
+// Module 18302 (GuildSettingsAutomodRuleStore)
 import Constants from "Constants" /* 1085 */;
 import react_native from "react-native" /* 1272 */;
 import _slicedToArray from "_slicedToArray" /* 4733 */;
@@ -91,7 +91,7 @@ let closure_6 = module_1267.createWithEqualityFn((arg0, arg1) => {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c8;

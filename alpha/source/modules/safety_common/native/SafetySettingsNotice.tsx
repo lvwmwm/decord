@@ -1,14 +1,14 @@
-// Module ID: 14940
-// Function ID: 14941
+// Module ID: 14963
+// Function ID: 14964
 // Name: SafetySettingsNotice
-// Dependencies: [19, 17, 7019, 21, 5092, 587, 558, 576, 14941, 5046, 1126, 5088, 2]
+// Dependencies: [19, 17, 7020, 21, 5092, 587, 558, 576, 14964, 5046, 1126, 5088, 2]
 
-// Module 14940 (SafetySettingsNotice)
+// Module 14963 (SafetySettingsNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import Constants from "Constants" /* 7019 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14941 */;
+import Constants from "Constants" /* 7020 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14964 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

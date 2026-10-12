@@ -1,9 +1,9 @@
-// Module ID: 7177
-// Function ID: 7178
+// Module ID: 7178
+// Function ID: 7179
 // Name: SubscriptionTrialRecord
 // Dependencies: [1405, 2]
 
-// Module 7177 (SubscriptionTrialRecord)
+// Module 7178 (SubscriptionTrialRecord)
 import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 

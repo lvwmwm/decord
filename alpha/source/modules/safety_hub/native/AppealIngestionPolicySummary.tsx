@@ -1,16 +1,16 @@
-// Module ID: 11496
-// Function ID: 11497
+// Module ID: 11498
+// Function ID: 11499
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 7511, 4967, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 7512, 4967, 1126, 5088, 2]
 
-// Module 11496 (AppealIngestionPolicySummary)
+// Module 11498 (AppealIngestionPolicySummary)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import ColorUtils from "ColorUtils" /* 4967 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7511 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

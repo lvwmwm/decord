@@ -1,9 +1,9 @@
-// Module ID: 15819
-// Function ID: 15820
+// Module ID: 15842
+// Function ID: 15843
 // Name: AcknowledgementsSetting
 // Dependencies: [1085, 4806, 10663, 1126, 5046, 2]
 
-// Module 15819 (AcknowledgementsSetting)
+// Module 15842 (AcknowledgementsSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import LinkingDefault from "Linking" /* 4806 */;

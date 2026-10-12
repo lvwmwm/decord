@@ -1,9 +1,9 @@
-// Module ID: 18376
-// Function ID: 18377
+// Module ID: 18434
+// Function ID: 18435
 // Name: GuildSettingsRoleEditConnectionConfiguration
-// Dependencies: [32, 19, 17, 1085, 6876, 21, 5092, 587, 558, 576, 5031, 10712, 1200, 4969, 1415, 1126, 6207, 6184, 6179, 6895, 18377, 1382, 5088, 5763, 6264, 2]
+// Dependencies: [32, 19, 17, 1085, 6877, 21, 5092, 587, 558, 576, 5031, 10712, 1200, 4969, 1415, 1126, 6208, 6185, 6180, 6896, 18435, 1382, 5088, 5763, 6265, 2]
 
-// Module 18376 (GuildSettingsRoleEditConnectionConfiguration)
+// Module 18434 (GuildSettingsRoleEditConnectionConfiguration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,14 +15,14 @@ import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
-import TableRow2 from "TableRow" /* 6179 */;
-import Pressables from "Pressables" /* 6184 */;
-import XSmallIcon from "XSmallIcon" /* 6207 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import Pressables from "Pressables" /* 6185 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
 import useGetOrFetchApplicationBatched2 from "useGetOrFetchApplicationBatched" /* 10712 */;
-import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18377 */;
+import RoleConnectionRequirementUtils from "RoleConnectionRequirementUtils" /* 18435 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 6876 */;
+import Constants from "Constants" /* 6877 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -45,7 +45,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const TableRowGroup3 = tmp(6264);
+const TableRowGroup3 = tmp(6265);
 function ApplicationMetadataRules(arg0) {
   let integration;
   let locked;
@@ -174,7 +174,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
     if (cResult[0] !== bot) {
-      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
+      const obj2 = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
       const Avatar2 = tmp(1200).Avatar;
       const tmp26 = onChangeText(Avatar2, obj2);
       cResult[0] = bot;
@@ -197,7 +197,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       if (null != bot1) {
         let tmp19;
         if (cResult[2] !== getOrFetchApplicationBatched.bot) {
-          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
+          const obj3 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
           const Avatar = tmp(1200).Avatar;
           const tmp21 = onChangeText(Avatar, obj3);
           cResult[2] = getOrFetchApplicationBatched.bot;
@@ -353,7 +353,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     application2 = integration.application;
   }
   if (null != application2) {
-    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "Array" };
+    const obj = { size: native.AvatarSizes.XSMALL, user: bot, guildId: "r" };
     const Avatar2 = tmp3(1200).Avatar;
     bot = undefined;
     const tmp16 = onChangeText;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
       let tmp13;
       if (null != bot1) {
-        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "Array" };
+        const obj2 = { size: native.AvatarSizes.XSMALL, user: getOrFetchApplicationBatched.bot, guildId: "r" };
         const Avatar = tmp3(1200).Avatar;
         tmp13 = onChangeText(Avatar, obj2);
       }
@@ -396,7 +396,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     tmp9Result = onChangeText(Icon, obj3);
   }
   const obj4 = { icon: tmp9Result, label: format(Nj0a3j, { platformName: name2 }), trailing: onChangeText(PressableOpacity, obj5) };
-  const TableRow = tmp3(6179).TableRow;
+  const TableRow = tmp3(6180).TableRow;
   const intl = tmp3(1126).intl;
   format = intl.format;
   name2 = undefined;
@@ -408,7 +408,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     name2 = name;
   }
   obj5 = { "aria-label": intl2.string(intl3.t.N86XcP), onPress: onRemove, disabled: locked, children: onChangeText(XSmallIcon.XSmallIcon, {}) };
-  PressableOpacity = tmp3(6184).PressableOpacity;
+  PressableOpacity = tmp3(6185).PressableOpacity;
   intl2 = tmp3(1126).intl;
   return onChangeText(TableRow, obj4);
 });
@@ -564,7 +564,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Boolea
     }
   };
   value = undefined;
-  const TableSwitchRow = metadataField(6895).TableSwitchRow;
+  const TableSwitchRow = metadataField(6896).TableSwitchRow;
   const tmp2 = closure_12;
   if (existingPendingConfiguration != null) {
     value = existingPendingConfiguration.configuration.value;
@@ -1401,7 +1401,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
   }
   let tmp2 = metadataField;
   let tmp3 = dependencyMap;
-  let obj = metadataField(18377);
+  let obj = metadataField(18435);
   const realizedOperatorForResult = obj.realizedOperatorFor(operator);
   c7 = realizedOperatorForResult;
   value = undefined;
@@ -1410,7 +1410,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       value = iter.value;
     }
   }
-  const tmp2Result = tmp2(18377);
+  const tmp2Result = tmp2(18435);
   const str = tmp2Result.displayedValueFor(value, realizedOperatorForResult);
   str1 = str.toString();
   [value, tmp10] = react.useState(str1);
@@ -1515,7 +1515,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Numeri
       tmp10(tmp3, num);
     }
   };
-  return onInputValueChange(tmp2(6895).TableSwitchRow, obj8, metadataField);
+  return onInputValueChange(tmp2(6896).TableSwitchRow, obj8, metadataField);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlueskyMetadataRules(arg0) {

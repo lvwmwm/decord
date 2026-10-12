@@ -1,13 +1,13 @@
-// Module ID: 8660
-// Function ID: 8661
+// Module ID: 8661
+// Function ID: 8662
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8661, 5088, 1126, 11, 8663, 5379, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8662, 5088, 1126, 11, 8664, 5379, 2]
 
-// Module 8660 (GuildEventRecurrences)
+// Module 8661 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 8661 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 8663 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 8662 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 8664 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

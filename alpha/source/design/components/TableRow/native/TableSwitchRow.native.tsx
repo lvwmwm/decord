@@ -1,9 +1,9 @@
-// Module ID: 6895
-// Function ID: 6896
+// Module ID: 6896
+// Function ID: 6897
 // Name: TableSwitchRow
-// Dependencies: [32, 109, 19, 17, 21, 5092, 558, 576, 1382, 4820, 5088, 6896, 6179, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5092, 558, 576, 1382, 4820, 5088, 6897, 6180, 2]
 
-// Module 6895 (TableSwitchRow)
+// Module 6896 (TableSwitchRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -20,8 +20,8 @@ let tmp;
 const PlatformUtils = tmp(1382);
 const native = tmp(4820);
 const Text_Text = tmp(5088);
-const TableRow2 = tmp(6179);
-const FormSwitch = tmp(6896);
+const TableRow2 = tmp(6180);
+const FormSwitch = tmp(6897);
 let closure_2 = ["value", "onValueChange", "label", "subLabel", "trailing", "disabled", "accessibilityHint", "variant"];
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

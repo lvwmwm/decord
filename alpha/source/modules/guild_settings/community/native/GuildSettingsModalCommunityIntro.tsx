@@ -1,24 +1,24 @@
-// Module ID: 18399
-// Function ID: 18400
+// Module ID: 18457
+// Function ID: 18458
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 2087, 4750, 8638, 1085, 21, 5092, 587, 9754, 1126, 5088, 9564, 5046, 558, 576, 1503, 504, 8637, 18400, 18404, 4808, 6156, 2128, 5379, 6727, 2]
+// Dependencies: [19, 17, 2087, 4750, 8639, 1085, 21, 5092, 587, 9755, 1126, 5088, 9565, 5046, 558, 576, 1503, 504, 8638, 18458, 18462, 4808, 6157, 2128, 5379, 6728, 2]
 
-// Module 18399 (GuildSettingsModalCommunityIntro)
+// Module 18457 (GuildSettingsModalCommunityIntro)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5046 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
-import LightbulbIcon2 from "LightbulbIcon" /* 9564 */;
-import AnalyticsIcon2 from "AnalyticsIcon" /* 9754 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18404 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import LightbulbIcon2 from "LightbulbIcon" /* 9565 */;
+import AnalyticsIcon2 from "AnalyticsIcon" /* 9755 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18462 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8638 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

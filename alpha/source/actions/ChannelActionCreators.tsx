@@ -1,9 +1,9 @@
-// Module ID: 7014
-// Function ID: 7015
+// Module ID: 7015
+// Function ID: 7016
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7015, 2069, 2065, 6035, 1085, 7016, 1295, 6099, 4977, 5103, 5889, 584, 6084, 1265, 1112, 4969, 1126, 7027, 5105, 5644, 2]
+// Dependencies: [32, 5, 7016, 2069, 2065, 6035, 1085, 7017, 1295, 6100, 4977, 5103, 5889, 584, 6085, 1265, 1112, 4969, 1126, 7028, 5105, 5644, 2]
 
-// Module 7014 (ChannelActionCreators)
+// Module 7015 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl2 from "intl" /* 1126 */;
@@ -14,10 +14,10 @@ import shared from "shared" /* 4969 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import preloadChannelDefault from "preloadChannel" /* 5105 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6084 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7015 */;
+import ChangelogStore from "ChangelogStore" /* 7016 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import Constants from "Constants" /* 1085 */;
@@ -70,7 +70,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -345,7 +345,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -452,7 +452,7 @@ let obj = {
       AnalyticsUtilsDefault;
       track(CHANGE_LOG_DM_REMOVED, obj);
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "r", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "ddd" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {
@@ -634,7 +634,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -781,7 +781,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;

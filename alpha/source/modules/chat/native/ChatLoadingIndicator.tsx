@@ -1,9 +1,9 @@
-// Module ID: 12857
-// Function ID: 12858
+// Module ID: 12859
+// Function ID: 12860
 // Name: ChatLoadingIndicator
-// Dependencies: [32, 19, 17, 5081, 5757, 5432, 2116, 1390, 1999, 1085, 21, 5092, 587, 5300, 5398, 2000, 558, 576, 504, 5088, 12858, 4850, 5093, 1126, 6184, 2]
+// Dependencies: [32, 19, 17, 5081, 5757, 5432, 2116, 1390, 1999, 1085, 21, 5092, 587, 5300, 5398, 2000, 558, 576, 504, 5088, 12860, 4850, 5093, 1126, 6185, 2]
 
-// Module 12857 (ChatLoadingIndicator)
+// Module 12859 (ChatLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -599,7 +599,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
         let tmp24;
         if (cResult[11] !== tmp19) {
           let obj4 = { onPress: openLoadingIndicatorDebugBody, children: tmp19 };
-          const tmp27 = closure_13(stateFromStores(6184).PressableOpacity, obj4);
+          const tmp27 = closure_13(stateFromStores(6185).PressableOpacity, obj4);
           cResult[11] = tmp19;
           cResult[12] = tmp27;
           tmp24 = tmp27;
@@ -709,7 +709,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelHeade
   const tmp7 = closure_13;
   if (stateFromStores1) {
     const obj8 = { onPress: openLoadingIndicatorDebugBody, children: tmp8 };
-    tmp7Result = tmp7(tmp2(6184).PressableOpacity, obj8);
+    tmp7Result = tmp7(tmp2(6185).PressableOpacity, obj8);
   }
   return tmp7Result;
 });

@@ -1,13 +1,13 @@
-// Module ID: 12339
-// Function ID: 12340
+// Module ID: 12341
+// Function ID: 12342
 // Name: openConjureProjectInBuilder
-// Dependencies: [12340, 6945, 12341, 2]
+// Dependencies: [12342, 6946, 12343, 2]
 // Exports: default
 
-// Module 12339 (openConjureProjectInBuilder)
-import ConjureUtils from "ConjureUtils" /* 6945 */;
-import ConjureActivity from "ConjureActivity" /* 12340 */;
-import openConjureProject from "openConjureProject" /* 12341 */;
+// Module 12341 (openConjureProjectInBuilder)
+import ConjureUtils from "ConjureUtils" /* 6946 */;
+import ConjureActivity from "ConjureActivity" /* 12342 */;
+import openConjureProject from "openConjureProject" /* 12343 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/projects/openConjureProjectInBuilder.tsx");

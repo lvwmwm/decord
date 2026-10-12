@@ -1,10 +1,10 @@
-// Module ID: 6928
-// Function ID: 6929
+// Module ID: 6929
+// Function ID: 6930
 // Name: canUseGuildSpace
-// Dependencies: [2087, 4750, 1085, 558, 576, 504, 6929, 2]
+// Dependencies: [2087, 4750, 1085, 558, 576, 504, 6930, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin
 
-// Module 6928 (canUseGuildSpace)
+// Module 6929 (canUseGuildSpace)
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;

@@ -1,15 +1,15 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10610
+// Function ID: 10611
 // Name: CirclePlusIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 10610, 4817, 10611, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 10611, 4817, 10612, 2]
 
-// Module 10609 (CirclePlusIcon)
+// Module 10610 (CirclePlusIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage3 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 10610 */;
-import AssetRegistry2 from "AssetRegistry" /* 10611 */;
+import AssetRegistry from "AssetRegistry" /* 10611 */;
+import AssetRegistry2 from "AssetRegistry" /* 10612 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

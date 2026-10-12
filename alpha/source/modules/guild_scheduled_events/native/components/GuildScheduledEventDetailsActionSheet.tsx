@@ -1,13 +1,13 @@
-// Module ID: 8515
-// Function ID: 8516
+// Module ID: 8516
+// Function ID: 8517
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 2087, 6054, 2071, 21, 5092, 587, 1126, 558, 576, 6851, 6878, 504, 8516, 8527, 8517, 8528, 1631, 8529, 8530, 8778, 6306, 8780, 8781, 6839, 2]
+// Dependencies: [32, 19, 17, 2087, 6054, 2071, 21, 5092, 587, 1126, 558, 576, 6852, 6879, 504, 8517, 8528, 8518, 8529, 1631, 8530, 8531, 8779, 6307, 8781, 8782, 6840, 2]
 
-// Module 8515 (GuildScheduledEventDetailsActionSheet)
+// Module 8516 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8517 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8518 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -381,7 +381,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f98505 = () => {
+  const f98724 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -466,9 +466,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f98505), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f98724), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[18])(f98505), 2);
+  tmp5(tmp2(tmp3[18])(f98724), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

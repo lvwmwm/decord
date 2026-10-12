@@ -1,10 +1,10 @@
-// Module ID: 17167
-// Function ID: 17168
+// Module ID: 17273
+// Function ID: 17274
 // Name: ConjureDuration
 // Dependencies: [1126, 3849, 2]
 // Exports: describeDuration, describeElapsedLabel, describeTurnDuration, formatElapsed
 
-// Module 17167 (ConjureDuration)
+// Module 17273 (ConjureDuration)
 import intl4 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import size from "module_2" /* 2 */;

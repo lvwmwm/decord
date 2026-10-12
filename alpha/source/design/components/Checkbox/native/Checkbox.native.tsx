@@ -1,15 +1,15 @@
-// Module ID: 12901
-// Function ID: 12902
+// Module ID: 12903
+// Function ID: 12904
 // Name: Checkbox
-// Dependencies: [17, 21, 5092, 558, 576, 4832, 1126, 6177, 5088, 5377, 2]
+// Dependencies: [17, 21, 5092, 558, 576, 4832, 1126, 6178, 5088, 5377, 2]
 
-// Module 12901 (Checkbox)
+// Module 12903 (Checkbox)
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import react_native from "react-native" /* 4832 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import FormCheckbox from "FormCheckbox" /* 6177 */;
+import FormCheckbox from "FormCheckbox" /* 6178 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

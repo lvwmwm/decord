@@ -1,9 +1,9 @@
-// Module ID: 11554
-// Function ID: 11555
+// Module ID: 11556
+// Function ID: 11557
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7313, 7318, 8453, 2065, 5432, 8480, 11555, 10216, 21, 5092, 587, 558, 576, 1497, 11556, 504, 11552, 11551, 6206, 11558, 4809, 1126, 1388, 11560, 5301, 11561, 9316, 5103, 11562, 11563, 5414, 5057, 5058, 4808, 6885, 7088, 5038, 1382, 11566, 10225, 11567, 11577, 11591, 2]
+// Dependencies: [5, 32, 19, 17, 7314, 7319, 8454, 2065, 5432, 8481, 11557, 10217, 21, 5092, 587, 558, 576, 1497, 11558, 504, 11554, 11553, 6207, 11560, 4809, 1126, 1388, 11562, 5301, 11563, 9317, 5103, 11564, 11565, 5414, 5057, 5058, 4808, 6886, 7089, 5038, 1382, 11568, 10226, 11569, 11579, 11593, 2]
 
-// Module 11554 (ForwardModal)
+// Module 11556 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -13,23 +13,23 @@ import LinkIcon from "LinkIcon" /* 5038 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
-import ClipboardUtils from "ClipboardUtils" /* 6885 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
-import UserRowConstants from "UserRowConstants" /* 10216 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11551 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11552 */;
-import ForwardConstants from "ForwardConstants" /* 11555 */;
-import formatResults from "formatResults" /* 11556 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11558 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
+import UserRowConstants from "UserRowConstants" /* 10217 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11553 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11554 */;
+import ForwardConstants from "ForwardConstants" /* 11557 */;
+import formatResults from "formatResults" /* 11558 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11560 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7313 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7318 */;
-import ICYMIStore_mod from "ICYMIStore" /* 8453 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7314 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7319 */;
+import ICYMIStore_mod from "ICYMIStore" /* 8454 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
-import MessagePreviewStore_mod from "MessagePreviewStore" /* 8480 */;
+import MessagePreviewStore_mod from "MessagePreviewStore" /* 8481 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -383,7 +383,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -540,7 +540,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardModal
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp94) {
           c4 = 3;
           throw tmp94;

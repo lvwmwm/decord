@@ -1,13 +1,13 @@
-// Module ID: 17931
-// Function ID: 17932
+// Module ID: 17988
+// Function ID: 17989
 // Name: isGuildSelectable
-// Dependencies: [2070, 5897, 6077, 5966, 2]
+// Dependencies: [2070, 5897, 6078, 5966, 2]
 // Exports: default
 
-// Module 17931 (isGuildSelectable)
+// Module 17988 (isGuildSelectable)
 import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6077 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import size from "module_2" /* 2 */;
 

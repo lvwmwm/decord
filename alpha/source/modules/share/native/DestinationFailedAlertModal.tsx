@@ -1,9 +1,9 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11596
+// Function ID: 11597
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 2065, 2087, 5108, 4760, 1390, 1096, 21, 5092, 587, 558, 576, 5421, 10279, 1200, 5088, 504, 4962, 11595, 5305, 5305, 1126, 2]
+// Dependencies: [19, 17, 2065, 2087, 5108, 4760, 1390, 1096, 21, 5092, 587, 558, 576, 5421, 10280, 1200, 5088, 504, 4962, 11597, 5305, 5305, 1126, 2]
 
-// Module 11594 (DestinationFailedAlertModal)
+// Module 11596 (DestinationFailedAlertModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -31,7 +31,7 @@ let obj2;
 let obj3;
 let tmp5;
 let unpackModuleId;
-const GroupDMAvatarDefault = tmp5(10279);
+const GroupDMAvatarDefault = tmp5(10280);
 const View = react_native.View;
 const StatusTypes = Constants.StatusTypes;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
@@ -333,8 +333,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     cResult[8] = tmp17;
     tmp15 = tmp17;
   }
-  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(11595).GuildIconWithChannelTypeSizes.SMALL_32 };
-  const GuildIconWithChannelType = tmp(11595).GuildIconWithChannelType;
+  const obj4 = { "aria-label": "", guild: stateFromStores, channel, size: channel(11597).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const GuildIconWithChannelType = tmp(11597).GuildIconWithChannelType;
   const tmp14 = closure_10(GuildIconWithChannelType, obj4);
   cResult[3] = channel;
   cResult[4] = stateFromStores;
@@ -355,9 +355,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Failed
     return getGuild(guild_id);
   });
   const obj2 = { style: tmp.row, children: items1 };
-  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(11595).GuildIconWithChannelTypeSizes.SMALL_32 };
+  const obj3 = { "aria-label": "", guild: stateFromStores, channel, size: channel(11597).GuildIconWithChannelTypeSizes.SMALL_32 };
   const tmp3 = useChannelNameDefault(channel);
-  const GuildIconWithChannelType = channel(11595).GuildIconWithChannelType;
+  const GuildIconWithChannelType = channel(11597).GuildIconWithChannelType;
   items1 = [closure_10(GuildIconWithChannelType, obj3), ];
   const obj4 = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 };
   items1[1] = closure_10(channel(5088).Text, obj4);

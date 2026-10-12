@@ -1,9 +1,9 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7168
+// Function ID: 7169
 // Name: useInterval
 // Dependencies: [19, 558, 576, 38, 2]
 
-// Module 7167 (useInterval)
+// Module 7168 (useInterval)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

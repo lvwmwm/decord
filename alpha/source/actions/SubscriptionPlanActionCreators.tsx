@@ -1,10 +1,10 @@
-// Module ID: 6959
-// Function ID: 6960
+// Module ID: 6960
+// Function ID: 6961
 // Name: SubscriptionPlanActionCreators
 // Dependencies: [5, 4771, 1085, 1392, 584, 5724, 1295, 4784, 4792, 2]
 // Exports: fetchPremiumSubscriptionPlans, fetchSubscriptionPlansBySKUs, resetSubscriptionPlanData
 
-// Module 6959 (SubscriptionPlanActionCreators)
+// Module 6960 (SubscriptionPlanActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
@@ -39,7 +39,7 @@ let obj = function _fetchSubscriptionPlansForSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

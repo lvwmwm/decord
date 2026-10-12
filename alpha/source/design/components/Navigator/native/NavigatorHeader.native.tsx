@@ -1,20 +1,20 @@
-// Module ID: 6200
-// Function ID: 6201
+// Module ID: 6201
+// Function ID: 6202
 // Name: NavigatorHeader
-// Dependencies: [5, 109, 19, 17, 1085, 21, 5092, 587, 5088, 558, 576, 6201, 6204, 1504, 6206, 1126, 6207, 6209, 1382, 1631, 6258, 2]
+// Dependencies: [5, 109, 19, 17, 1085, 21, 5092, 587, 5088, 558, 576, 6202, 6205, 1504, 6207, 1126, 6208, 6210, 1382, 1631, 6259, 2]
 // Exports: getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 6200 (NavigatorHeader)
+// Module 6201 (NavigatorHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6201 */;
-import XSmallIcon from "XSmallIcon" /* 6207 */;
-import _mod6209 from "module_6209" /* 6209 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6202 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import _mod6210 from "module_6210" /* 6210 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -37,7 +37,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const ArrowLargeLeftIcon = tmp(6204);
+const ArrowLargeLeftIcon = tmp(6205);
 let closure_3 = ["onPress"];
 let closure_4 = ["onPress"];
 let closure_5 = ["text", "labelStyle"];
@@ -272,7 +272,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CloseB
       }
     }
     const obj2 = { onPress: tmp11, label: tmp16, displayMode: "minimal", backImage: tmp18, accessibilityLabel: tmp16 };
-    const HeaderBackButton = tmp(6209).HeaderBackButton;
+    const HeaderBackButton = tmp(6210).HeaderBackButton;
     const merged = Object.assign(tmp5);
     cResult[11] = tmp11;
     cResult[12] = tmp5;
@@ -362,7 +362,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
   } else {
     tmp9 = cResult[4];
   }
-  const tmpResult = tmp(6206);
+  const tmpResult = tmp(6207);
   tmpResult.useNavigatorBackPressHandler(tmp9);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function u() {
@@ -381,7 +381,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     return tmp12;
   }
   const obj2 = { onPress: tmp4, displayMode: "minimal", backImage: tmp11 };
-  const HeaderBackButton = tmp(6209).HeaderBackButton;
+  const HeaderBackButton = tmp(6210).HeaderBackButton;
   const merged = Object.assign(tmp5);
   const tmp14 = closure_10(HeaderBackButton, obj2);
   cResult[6] = tmp4;
@@ -391,7 +391,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
 }) : (function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(6206);
+  const obj = onPress(6207);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -405,7 +405,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
       return closure_1_10(closure_1_13, {});
     }
   };
-  const HeaderBackButton = onPress(6209).HeaderBackButton;
+  const HeaderBackButton = onPress(6210).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_10(HeaderBackButton, obj2);
 });
@@ -477,7 +477,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
     const obj3 = { label: tmp6, displayMode: "default", labelStyle: tmp14, backImage: tmp16, accessibilityLabel: tmp17 };
-    const HeaderBackButton = tmp(6209).HeaderBackButton;
+    const HeaderBackButton = tmp(6210).HeaderBackButton;
     const merged1 = Object.assign(tmp4);
     const tmp23 = authStore(HeaderBackButton, obj3);
     cResult[10] = tmp14;
@@ -509,7 +509,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod6209.HeaderBackButton;
+  const HeaderBackButton = _mod6210.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;
@@ -634,7 +634,7 @@ export function getHeaderConditionalBackButton(callback1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -667,7 +667,7 @@ export function getHeaderConditionalBackButton(callback1) {
                 }
               }
               c2 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp9) {
             c2 = 3;

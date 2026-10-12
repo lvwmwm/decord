@@ -1,18 +1,18 @@
-// Module ID: 7143
-// Function ID: 7144
+// Module ID: 7144
+// Function ID: 7145
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 7144, 5071, 7147, 558, 4733, 1267, 7148, 12, 6944, 4784, 7149, 2]
+// Dependencies: [5, 32, 19, 7145, 5071, 7148, 558, 4733, 1267, 7149, 12, 6945, 4784, 7150, 2]
 // Exports: createNativeStore, useNativeCheckoutStoreOrNull
 
-// Module 7143 (NativeCheckoutStore)
+// Module 7144 (NativeCheckoutStore)
 import _mod1267 from "module_1267" /* 1267 */;
 import _slicedToArray2 from "_slicedToArray" /* 4733 */;
 import PaymentConstants from "PaymentConstants" /* 5071 */;
-import ContextUtilsDefault from "ContextUtils" /* 7147 */;
+import ContextUtilsDefault from "ContextUtils" /* 7148 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 7144 */;
+import OrderRecord from "OrderRecord" /* 7145 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -156,7 +156,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -220,7 +220,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               closure_130_0(obj);
             }
             paymentGateway = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp23) {
             paymentGateway = 3;
             throw tmp23;
@@ -246,7 +246,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -333,7 +333,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp40) {
             c7 = 3;
             throw tmp40;
@@ -417,7 +417,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -525,7 +525,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -599,7 +599,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             c4 = 0;
             closure_130_0({ isCreateOrderLoading: false });
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp39) {
           closure_3 = tmp39;
@@ -627,7 +627,7 @@ export const createNativeStore = function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -701,7 +701,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             c3 = 0;
             closure_129_0({ isCreateOrderLoading: false });
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp38) {
           closure_2 = tmp38;

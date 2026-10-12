@@ -1,24 +1,24 @@
-// Module ID: 15496
-// Function ID: 15497
+// Module ID: 15519
+// Function ID: 15520
 // Name: UserSettingsGuildRoleSubscriptionsCancel
-// Dependencies: [5, 32, 19, 17, 4775, 21, 5092, 587, 558, 576, 15497, 4702, 1126, 6158, 1200, 5088, 15487, 6156, 15505, 6851, 6878, 9398, 5300, 5724, 4808, 4791, 5379, 6662, 15493, 15482, 15506, 15507, 504, 2]
+// Dependencies: [5, 32, 19, 17, 4775, 21, 5092, 587, 558, 576, 15520, 4702, 1126, 6159, 1200, 5088, 15510, 6157, 15528, 6852, 6879, 9399, 5300, 5724, 4808, 4791, 5379, 6663, 15516, 15505, 15529, 15530, 504, 2]
 
-// Module 15496 (UserSettingsGuildRoleSubscriptionsCancel)
+// Module 15519 (UserSettingsGuildRoleSubscriptionsCancel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import GuildIconDefault from "GuildIcon" /* 6158 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6662 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15482 */;
-import FormSeparatorDefault from "FormSeparator" /* 15487 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15493 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15505 */;
-import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 15507 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15505 */;
+import FormSeparatorDefault from "FormSeparator" /* 15510 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15516 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15528 */;
+import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 15530 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let obj2;
 let obj4;
 let tmp6;
 let unpackModuleId;
-const FastAssetImageDefault = tmp6(15506);
+const FastAssetImageDefault = tmp6(15529);
 function CancelSubscriptionButtonFooter(guild) {
   let Button;
   let c3;
@@ -55,9 +55,9 @@ function CancelSubscriptionButtonFooter(guild) {
   [tmp3, c3] = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   const tmp4 = dependencyMap;
   const tmp2 = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
-  const tmp5 = subscription(6851);
-  const analyticsLocations = tmp5(subscription(6878).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  let obj = subscription(9398);
+  const tmp5 = subscription(6852);
+  const analyticsLocations = tmp5(subscription(6879).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
+  let obj = subscription(9399);
   const cancelSubscription1 = obj.useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription1.cancelSubscription;
   isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
@@ -91,7 +91,7 @@ function CancelSubscriptionButtonFooter(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -220,7 +220,7 @@ function CancelSubscriptionButtonFooter(guild) {
             _undefined = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp59) {
         if (0 === _undefined) {

@@ -1,23 +1,23 @@
-// Module ID: 11477
-// Function ID: 11478
+// Module ID: 11479
+// Function ID: 11480
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7536, 7512, 1085, 21, 5092, 587, 558, 576, 5088, 504, 11471, 1503, 7513, 11476, 11472, 7511, 6813, 1126, 5379, 6200, 11478, 1273, 11498, 11500, 11502, 11504, 11505, 6169, 6687, 2]
+// Dependencies: [5, 32, 19, 17, 7537, 7513, 1085, 21, 5092, 587, 558, 576, 5088, 504, 11473, 1503, 7514, 11478, 11474, 7512, 6814, 1126, 5379, 6201, 11480, 1273, 11500, 11502, 11504, 11506, 11507, 6170, 6688, 2]
 
-// Module 11477 (AppealIngestionModal)
+// Module 11479 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11476 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 11478 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 11498 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 11500 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11478 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 11480 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 11500 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 11502 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7536 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
+import SafetyHubStore from "SafetyHubStore" /* 7537 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -417,7 +417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -469,7 +469,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp25) {
           closure_2 = tmp25;
           if (0 === c3) {
@@ -617,7 +617,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -668,7 +668,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
           navigation = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp25) {
         if (0 === navigation) {
           c5 = 3;

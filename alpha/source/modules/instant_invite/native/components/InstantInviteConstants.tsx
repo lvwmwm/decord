@@ -1,9 +1,9 @@
-// Module ID: 8724
-// Function ID: 8725
+// Module ID: 8725
+// Function ID: 8726
 // Name: components/InstantInviteConstants
-// Dependencies: [17, 8688, 1085, 8725, 8728, 587, 1126, 8682, 8729, 5039, 8730, 1628, 8731, 5056, 8732, 2000, 8693, 1382, 8749, 8750, 7438, 7178, 5300, 8751, 8752, 8753, 8754, 8755, 8756, 8757, 8758, 2]
+// Dependencies: [17, 8689, 1085, 8726, 8729, 587, 1126, 8683, 8730, 5039, 8731, 1628, 8732, 5056, 8733, 2000, 8694, 1382, 8750, 8751, 7439, 7179, 5300, 8752, 8753, 8754, 8755, 8756, 8757, 8758, 8759, 2]
 
-// Module 8724 (components/InstantInviteConstants)
+// Module 8725 (components/InstantInviteConstants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -11,29 +11,29 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import AssetRegistryDefault from "AssetRegistry" /* 5039 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
-import getInviteURLDefault from "getInviteURL" /* 8693 */;
-import ShareDefault from "Share" /* 8725 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8728 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8729 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8730 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 8731 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 8749 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 8750 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 8751 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 8752 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 8753 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 8754 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 8755 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 8756 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 8757 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 8758 */;
-import InstantInviteConstants from "InstantInviteConstants" /* 8688 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
+import getInviteURLDefault from "getInviteURL" /* 8694 */;
+import ShareDefault from "Share" /* 8726 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8729 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8730 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 8731 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 8732 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 8750 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 8751 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 8752 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 8753 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 8754 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 8755 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 8756 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 8757 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 8758 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 8759 */;
+import InstantInviteConstants from "InstantInviteConstants" /* 8689 */;
 import Constants from "Constants" /* 1085 */;
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1628 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
-import DCDSendUtils_mod from "DCDSendUtils" /* 7438 */;
-import InstantInviteUtils_mod from "instant_invite/InstantInviteUtils" /* 8682 */;
+import DCDSendUtils_mod from "DCDSendUtils" /* 7439 */;
+import InstantInviteUtils_mod from "instant_invite/InstantInviteUtils" /* 8683 */;
 import size from "module_2" /* 2 */;
 
 let DCDSendUtils;
@@ -108,7 +108,7 @@ const obj4 = {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { link: getInviteURLDefault(code), location: _location, channel };
-    const tmp2 = asyncRequire(8732, dependencyMap.paths);
+    const tmp2 = asyncRequire(8733, dependencyMap.paths);
     const combined = "InstantInviteQRCodeActionSheet-" + code;
     openLazy(tmp2, combined, obj, "stack");
   }
@@ -132,14 +132,14 @@ const obj5 = {
     const code = channel.code;
     ({ message, location: _location } = channel);
     let tmp = channel;
-    let obj = channel(8682);
+    let obj = channel(8683);
     obj.trackOptionClicked(code, channel, constants.SMS, _location);
     let obj2 = channel(1382);
     if (obj2.isIOS()) {
       let obj3 = code(5056);
       obj3.hideActionSheet();
     }
-    const tmpResult = tmp(7438);
+    const tmpResult = tmp(7439);
     tmpResult.sendSMS({ body: message }, (arg0, arg1, arg2) => {
       let id;
       let intl;
@@ -198,14 +198,14 @@ const obj6 = {
     const code = channel.code;
     ({ message, location: _location } = channel);
     let tmp = channel;
-    let obj = channel(8682);
+    let obj = channel(8683);
     obj.trackOptionClicked(code, channel, constants.EMAIL, _location);
     let obj2 = channel(1382);
     if (obj2.isIOS()) {
       let obj3 = code(5056);
       obj3.hideActionSheet();
     }
-    const tmpResult = tmp(7438);
+    const tmpResult = tmp(7439);
     tmpResult.sendMail({ subject: "", body: message }, (arg0, arg1, arg2) => {
       let id;
       let intl;

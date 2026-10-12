@@ -1,10 +1,10 @@
-// Module ID: 15608
-// Function ID: 15609
+// Module ID: 15631
+// Function ID: 15632
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 19, 1085, 1409, 6670, 8291, 8288, 1265, 1410, 2]
+// Dependencies: [5, 19, 1085, 1409, 6671, 8292, 8289, 1265, 1410, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15608 (useDisplayNameStylesHandleApply)
+// Module 15631 (useDisplayNameStylesHandleApply)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -48,7 +48,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -93,7 +93,7 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
               }
             }
             defaultColor = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === c4) {
           c3 = 0;

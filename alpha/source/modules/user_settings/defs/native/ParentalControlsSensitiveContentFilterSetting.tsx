@@ -1,13 +1,13 @@
-// Module ID: 16280
-// Function ID: 16281
+// Module ID: 16303
+// Function ID: 16304
 // Name: ParentalControlsSensitiveContentFilterSetting
-// Dependencies: [7992, 1085, 10663, 1126, 8208, 16281, 2]
+// Dependencies: [7993, 1085, 10663, 1126, 8209, 16304, 2]
 
-// Module 16280 (ParentalControlsSensitiveContentFilterSetting)
+// Module 16303 (ParentalControlsSensitiveContentFilterSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8208 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8209 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 17159
+// Function ID: 17160
 // Name: ConjureVersionRestoreConfirm
-// Dependencies: [32, 19, 21, 558, 576, 1126, 3849, 6264, 6176, 5305, 5301, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1126, 3849, 6265, 6177, 5305, 5301, 2]
 // Exports: confirmRestoreVersion
 
-// Module 17120 (ConjureVersionRestoreConfirm)
+// Module 17159 (ConjureVersionRestoreConfirm)
 import react2 from "react" /* 576 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import useAlertStore from "useAlertStore" /* 5301 */;
@@ -20,8 +20,8 @@ let metroRequire;
 let tmp;
 const intl7 = tmp(1126);
 const AlertModal2 = tmp(5305);
-const TableCheckboxRow2 = tmp(6176);
-const TableRowGroup2 = tmp(6264);
+const TableCheckboxRow2 = tmp(6177);
+const TableRowGroup2 = tmp(6265);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureVersionRestoreAlert(matchingBackup) {
   let TableCheckboxRow;
@@ -173,9 +173,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   tmp4Result = undefined;
   if (null != matchingBackup) {
     const obj2 = { hasIcons: false, children: hasOwnProperty(TableCheckboxRow, obj3) };
-    const TableRowGroup = tmp5(6264).TableRowGroup;
+    const TableRowGroup = tmp5(6265).TableRowGroup;
     obj3 = { label: intl3.string(_modDef3849["+/pFME"]), subLabel: intl4.string(_modDef3849["+I112y"]), checked: first, onPress: tmp3 };
-    TableCheckboxRow = tmp5(6176).TableCheckboxRow;
+    TableCheckboxRow = tmp5(6177).TableCheckboxRow;
     intl3 = tmp5(1126).intl;
     intl4 = tmp5(1126).intl;
     tmp4Result = tmp4(TableRowGroup, obj2);
@@ -205,7 +205,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   items[1] = hasOwnProperty(AlertActionButton2, obj6);
   return hasOwnProperty(AlertModal, obj);
 });
-let result = size.fileFinishedImporting("modules/conjure/history/native/ConjureVersionRestoreConfirm.tsx");
+const result = size.fileFinishedImporting("modules/conjure/history/native/ConjureVersionRestoreConfirm.tsx");
 
 export const confirmRestoreVersion = function confirmRestoreVersion(arg0) {
   const openAlert = useAlertStore.openAlert;

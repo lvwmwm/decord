@@ -1,9 +1,9 @@
-// Module ID: 16046
-// Function ID: 16047
+// Module ID: 16069
+// Function ID: 16070
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1085, 1087, 2062, 5972, 21, 558, 576, 5088, 1126, 6179, 2049, 10012, 1265, 9167, 5975, 16047, 9060, 5056, 12787, 2000, 6878, 7262, 12786, 4938, 5395, 2]
+// Dependencies: [19, 1085, 1087, 2062, 5972, 21, 558, 576, 5088, 1126, 6180, 2049, 10013, 1265, 9168, 5975, 16070, 9061, 5056, 12789, 2000, 6879, 7263, 12788, 4938, 5395, 2]
 
-// Module 16046 (BalanceWidgetMenu)
+// Module 16069 (BalanceWidgetMenu)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -15,12 +15,12 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import Text_Text from "Text/Text" /* 5088 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import TableRow2 from "TableRow" /* 6179 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import _mod9060 from "module_9060" /* 9060 */;
-import QuestUtils from "QuestUtils" /* 9167 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10012 */;
-import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 12786 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import _mod9061 from "module_9061" /* 9061 */;
+import QuestUtils from "QuestUtils" /* 9168 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10013 */;
+import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 12788 */;
 import react from "react" /* 19 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ function BalanceWidgetMenu() {
   let constants2;
   let constants3;
   let str;
-  let obj = str(9060);
+  let obj = str(9061);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = react.useCallback(() => {
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWidge
   let tmp7;
   const obj = react2;
   const cResult = obj.c(3);
-  const obj2 = _mod9060;
+  const obj2 = _mod9061;
   const balance = obj2.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {
@@ -304,7 +304,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BalanceWidge
   return tmp7;
 }) : (function BalanceWidgetMenuWrapper() {
   let tmp5Result;
-  const obj = _mod9060;
+  const obj = _mod9061;
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {

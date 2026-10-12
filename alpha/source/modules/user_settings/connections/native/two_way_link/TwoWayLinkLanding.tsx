@@ -1,14 +1,14 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9214
+// Function ID: 9215
 // Name: TwoWayLinkLanding
-// Dependencies: [19, 17, 5761, 21, 5092, 558, 576, 9214, 504, 6156, 5088, 6179, 1126, 5379, 5377, 6813, 2]
+// Dependencies: [19, 17, 5761, 21, 5092, 558, 576, 9215, 504, 6157, 5088, 6180, 1126, 5379, 5377, 6814, 2]
 
-// Module 9213 (TwoWayLinkLanding)
+// Module 9214 (TwoWayLinkLanding)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import TableRow2 from "TableRow" /* 6179 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9214 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9215 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
@@ -44,7 +44,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   ({ img, imgStyle, headerConnect, headerReconnect, body, valueProps } = platformType);
   ({ learnMoreLink, onNext } = platformType);
   const tmp4 = closure_8();
-  const obj2 = platformType(9214);
+  const obj2 = platformType(9215);
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConnectedAccountsStore];
@@ -204,7 +204,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
       tmp16 = tmp18;
     }
     const obj7 = { source: img, style: tmp10 };
-    const tmp14 = closure_6(valueProps(6156), obj7);
+    const tmp14 = closure_6(valueProps(6157), obj7);
     cResult[6] = img;
     cResult[7] = tmp10;
     cResult[8] = tmp14;
@@ -255,7 +255,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   });
   const obj5 = { source: img, style: items1 };
   items1 = [tmp.image, ];
-  const tmp10 = valueProps(6156);
+  const tmp10 = valueProps(6157);
   const tmp8 = closure_4;
   if (imgStyle == null) {
     imgStyle = false;
@@ -299,7 +299,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   items3[1] = tmp9Result;
   items4 = [closure_7(tmp8, { alwaysBounceVertical: false, children: items3 }), ];
   const obj11 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: closure_6(Stack, obj12) };
-  const SafeAreaPaddingView = tmp2(6813).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(6814).SafeAreaPaddingView;
   obj12 = { spacing: 8, direction: "vertical", style: twoWayLinkStyles.footerButton, children: closure_6(Button, obj13) };
   Stack = tmp2(5377).Stack;
   obj13 = { variant: "primary", size: "lg", text: intl2.string(intl3.t.LhlgY9), onPress: onNext };

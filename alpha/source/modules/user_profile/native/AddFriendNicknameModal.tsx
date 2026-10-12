@@ -1,10 +1,10 @@
-// Module ID: 13099
-// Function ID: 13100
+// Module ID: 13104
+// Function ID: 13105
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 4760, 1390, 21, 5092, 587, 9638, 504, 1126, 5934, 7017, 6728, 5398, 5088, 6292, 4962, 2]
+// Dependencies: [5, 32, 19, 17, 4760, 1390, 21, 5092, 587, 9639, 504, 1126, 5934, 7018, 6729, 5398, 5088, 6293, 4962, 2]
 // Exports: default
 
-// Module 13099 (AddFriendNicknameModal)
+// Module 13104 (AddFriendNicknameModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
@@ -70,7 +70,7 @@ export default function AddFriendNicknameModal(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -151,7 +151,7 @@ export default function AddFriendNicknameModal(arg0) {
             closure_130_3(false);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp42) {
           closure_3 = tmp42;
           if (0 === c4) {
@@ -171,7 +171,7 @@ export default function AddFriendNicknameModal(arg0) {
   const tmp3 = showUserProfile;
   const tmp4 = dependencyMap;
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  _slicedToArray = showUserProfile(9638)();
+  _slicedToArray = showUserProfile(9639)();
   let obj2 = get_initialized;
   const items = [obj];
   const stateFromStores = obj2.useStateFromStores(items, () => RelationshipStore.getNickname(require));
@@ -213,7 +213,7 @@ export default function AddFriendNicknameModal(arg0) {
     onCancel: callback1,
     children: items3
   };
-  tmp3Result = tmp3(6728);
+  tmp3Result = tmp3(6729);
   tmp3Result3 = tmp3(5398);
   intl3 = tmp5(1126).intl;
   intl4 = tmp5(1126).intl;
@@ -224,7 +224,7 @@ export default function AddFriendNicknameModal(arg0) {
   intl5 = tmp5(1126).intl;
   items3[1] = closure_9(Text, obj7);
   let obj8 = { onChange: callback, autoFocus: true, accessibilityLabel: intl6.string(tmp5(1126).t.pqG6GS), placeholder: tmp3Result4.getName(stateFromStores1), defaultValue: stateFromStores, maxLength: 32, clearable: true };
-  const TextField = tmp5(6292).TextField;
+  const TextField = tmp5(6293).TextField;
   intl6 = tmp5(1126).intl;
   tmp3Result4 = tmp3(4962);
   items3[2] = closure_9(TextField, obj8);

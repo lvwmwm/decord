@@ -1,9 +1,9 @@
-// Module ID: 12296
-// Function ID: 12297
+// Module ID: 12298
+// Function ID: 12299
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6663, 12297, 6289, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6664, 12299, 6290, 5088, 2]
 
-// Module 12296 (GuildPowerupsWarning)
+// Module 12298 (GuildPowerupsWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
@@ -46,7 +46,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   _require = tmp4;
   const obj2 = require("ManaTypeConsolidationExperiment");
   const manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
-  const tmp7 = manaTypeConsolidationExperiment(12297)(guildId, powerupNames);
+  const tmp7 = manaTypeConsolidationExperiment(12299)(guildId, powerupNames);
   ({ title, description } = tmp7);
   const tmp6 = manaTypeConsolidationExperiment;
   if (tmp7.shouldShow) {
@@ -55,7 +55,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     let str = "react.memo_cache_sentinel";
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { color: tmp6(587).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-      const CircleErrorIcon = tmp(6289).CircleErrorIcon;
+      const CircleErrorIcon = tmp(6290).CircleErrorIcon;
       const tmp12 = closure_4(CircleErrorIcon, obj3);
       cResult[0] = tmp12;
       first = tmp12;
@@ -175,12 +175,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
   let tmp10Result = null;
   const tmp5 = manaTypeConsolidationExperiment;
-  const tmp6 = manaTypeConsolidationExperiment(12297)(guildId, powerupNames);
+  const tmp6 = manaTypeConsolidationExperiment(12299)(guildId, powerupNames);
   if (tmp6.shouldShow) {
     const obj2 = { style: tmp.container, children: tmp12(View, obj3) };
     obj3 = { style: tmp.contentContainer, children: items };
     const obj4 = { color: tmp5(587).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    const CircleErrorIcon = tmp2(6289).CircleErrorIcon;
+    const CircleErrorIcon = tmp2(6290).CircleErrorIcon;
     items = [closure_4(CircleErrorIcon, obj4), , , ];
     const obj5 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp7 };
     items[1] = closure_4(require("Text/Text").Text, obj5);

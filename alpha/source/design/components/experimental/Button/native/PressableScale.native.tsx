@@ -1,9 +1,9 @@
-// Module ID: 8546
-// Function ID: 8547
+// Module ID: 8547
+// Function ID: 8548
 // Name: PressableScale
 // Dependencies: [109, 19, 17, 21, 4850, 558, 576, 5385, 2]
 
-// Module 8546 (PressableScale)
+// Module 8547 (PressableScale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

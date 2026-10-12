@@ -1,24 +1,24 @@
-// Module ID: 8953
-// Function ID: 8954
+// Module ID: 8954
+// Function ID: 8955
 // Name: GameProfileAnnouncements
-// Dependencies: [19, 17, 8919, 21, 1382, 5399, 1126, 5092, 587, 558, 576, 8946, 6626, 8948, 8954, 8955, 5088, 6156, 8958, 4793, 8960, 6851, 8962, 8878, 8884, 8965, 8932, 2]
+// Dependencies: [19, 17, 8920, 21, 1382, 5399, 1126, 5092, 587, 558, 576, 8947, 6627, 8949, 8955, 8956, 5088, 6157, 8959, 4793, 8961, 6852, 8963, 8879, 8885, 8966, 8933, 2]
 
-// Module 8953 (GameProfileAnnouncements)
+// Module 8954 (GameProfileAnnouncements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import DateUtils from "DateUtils" /* 4793 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import CustomMarkupAll from "CustomMarkup" /* 5399 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6626 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8878 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8884 */;
-import GameProfileConstants from "GameProfileConstants" /* 8919 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8946 */;
-import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 8955 */;
-import ImageWithPlaceholder from "ImageWithPlaceholder" /* 8958 */;
-import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 8965 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8885 */;
+import GameProfileConstants from "GameProfileConstants" /* 8920 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8947 */;
+import AnnouncementMessageUtils from "AnnouncementMessageUtils" /* 8956 */;
+import ImageWithPlaceholder from "ImageWithPlaceholder" /* 8959 */;
+import navigateToGameAnnouncementDefault from "navigateToGameAnnouncement" /* 8966 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -53,7 +53,7 @@ let size;
 let size1;
 let size2;
 let tmp5;
-const GameProfileSkeletonCardRowDefault = tmp5(8954);
+const GameProfileSkeletonCardRowDefault = tmp5(8955);
 ({ View: hasOwnProperty, Pressable: metroRequire } = react_native);
 const MAX_VISIBLE_ANNOUNCEMENTS = GameProfileConstants.MAX_VISIBLE_ANNOUNCEMENTS;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -105,7 +105,7 @@ let closure_16 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
     if (cResult[1] === tmp5) {
       tmp6 = cResult[2];
     }
-    const result = index * tmp(8946).SKELETON_CARD_ANIMATION_DELAY_MS;
+    const result = index * tmp(8947).SKELETON_CARD_ANIMATION_DELAY_MS;
     if (cResult[3] === tmp4.skeletonCardImage) {
       let tmp8;
       if (cResult[4] === tmp4.smallCardMedia) {
@@ -273,7 +273,7 @@ let closure_17 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
     }
   }
   const obj2 = { showViewAllSkeleton: true, skeletonTitleWidth: 200, children: onPress(GameProfileSkeletonCardRowDefault, { style: skeletonCardsScroller, contentContainerStyle: skeletonCardsContainer, children: tmp7 }) };
-  const GameProfileSectionSkeleton = tmp(8948).GameProfileSectionSkeleton;
+  const GameProfileSectionSkeleton = tmp(8949).GameProfileSectionSkeleton;
   const tmp11 = onPress(GameProfileSectionSkeleton, obj2);
   cResult[2] = tmp4.skeletonCardsContainer;
   cResult[3] = tmp4.skeletonCardsScroller;
@@ -495,7 +495,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedA
                 if (tmp85Result) {
                   const obj7 = { style: tmp4.reactionInfo, children: items3 };
                   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-                  const ReactionIcon = tmp(8960).ReactionIcon;
+                  const ReactionIcon = tmp(8961).ReactionIcon;
                   items3 = [metroImportAll(ReactionIcon, obj8), ];
                   let tmp90 = null != obj14;
                   const Text3 = tmp(5088).Text;
@@ -906,7 +906,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmbedA
     if (tmp15Result2) {
       const obj21 = { style: tmp.reactionInfo, children: items6 };
       const obj22 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-      const ReactionIcon = tmp38(8960).ReactionIcon;
+      const ReactionIcon = tmp38(8961).ReactionIcon;
       items6 = [metroImportAll(ReactionIcon, obj22), ];
       let tmp48 = null != obj14;
       const Text4 = tmp38(5088).Text;
@@ -1087,7 +1087,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
                       if (tmp44Result) {
                         const obj7 = { style: tmp4.reactionInfo, children: items3 };
                         const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-                        const ReactionIcon = tmp(8960).ReactionIcon;
+                        const ReactionIcon = tmp(8961).ReactionIcon;
                         items3 = [metroImportAll(ReactionIcon, obj8), ];
                         let tmp50 = null != obj14;
                         const Text3 = tmp(5088).Text;
@@ -1225,7 +1225,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
     }
     let tmp25 = null != message.media && null != tmp18;
     if (tmp25) {
-      obj14 = { style: tmp4.smallCardMedia, children: metroImportAll(tmp(8958).ImageWithPlaceholder, obj15) };
+      obj14 = { style: tmp4.smallCardMedia, children: metroImportAll(tmp(8959).ImageWithPlaceholder, obj15) };
       obj15 = { uri: tmp18, placeholder: message.media.placeholder, placeholderVersion: message.media.placeholderVersion, style: tmp4.mediaImage };
       tmp25 = metroImportAll(hasOwnProperty, obj14);
     }
@@ -1334,7 +1334,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
   if (tmp12Result) {
     const obj12 = { style: tmp.reactionInfo, children: items3 };
     const obj13 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-    const ReactionIcon = tmp29(8960).ReactionIcon;
+    const ReactionIcon = tmp29(8961).ReactionIcon;
     items3 = [metroImportAll(ReactionIcon, obj13), ];
     let tmp36 = null != obj14;
     const Text4 = tmp29(5088).Text;
@@ -1507,7 +1507,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
                           const obj6 = { createdAt: date, expiryLabel: tmpResult.getPollExpiryLabel(poll) };
                           const t0FTsH = tmp(1126).t.t0FTsH;
                           date = new Date(message.timestamp);
-                          tmpResult = message(8955);
+                          tmpResult = message(8956);
                           const formatResult = format(t0FTsH, obj6);
                           cResult[35] = message.timestamp;
                           cResult[36] = poll;
@@ -1718,7 +1718,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollAn
     obj9 = { createdAt: date, expiryLabel: tmp11Result.getPollExpiryLabel(poll) };
     t0FTsH = tmp11(1126).t.t0FTsH;
     date = new Date(message.timestamp);
-    tmp11Result = message(8955);
+    tmp11Result = message(8956);
     items[2] = onPress(closure_5, obj7);
     return onPress(tmp8, obj2);
   }

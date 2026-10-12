@@ -1,9 +1,9 @@
-// Module ID: 7013
-// Function ID: 7014
+// Module ID: 7014
+// Function ID: 7015
 // Name: LazyLoadedThreadManager
-// Dependencies: [5757, 2069, 2065, 2116, 1085, 2072, 584, 6923, 4944, 4957, 1295, 2]
+// Dependencies: [5757, 2069, 2065, 2116, 1085, 2072, 584, 6924, 4944, 4957, 1295, 2]
 
-// Module 7013 (LazyLoadedThreadManager)
+// Module 7014 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f95142 = () => {
+const f95361 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f95142);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f95361);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(channelId) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f95142);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f95361);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[channelId]) {
@@ -109,7 +109,7 @@ function loadThread(channelId) {
         const catchPromise = nextPromise.catch(() => {
           let guildId;
           closure_11[id] = { type: "NOT_FOUND" };
-          const obj = { id, guild_id: guildId, parent_id: "Array" };
+          const obj = { id, guild_id: guildId, parent_id: "r" };
           guildId = undefined;
           const dispatch = DispatcherDefault.dispatch;
           DispatcherDefault;
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(6923).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(6924).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];

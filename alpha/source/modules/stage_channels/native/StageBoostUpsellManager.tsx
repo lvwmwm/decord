@@ -1,20 +1,20 @@
-// Module ID: 18192
-// Function ID: 18193
+// Module ID: 18250
+// Function ID: 18251
 // Name: StageBoostUpsellManager
-// Dependencies: [4802, 2065, 4750, 2116, 5892, 6807, 5056, 5895, 8788, 2073, 5955, 2000, 2]
+// Dependencies: [4802, 2065, 4750, 2116, 5892, 6808, 5056, 5895, 8789, 2073, 5955, 2000, 2]
 
-// Module 18192 (StageBoostUpsellManager)
+// Module 18250 (StageBoostUpsellManager)
 import asyncRequire from "asyncRequire" /* 2000 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2073 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
 import StageMediaHooks from "StageMediaHooks" /* 5895 */;
-import useChannelVideoLimit from "useChannelVideoLimit" /* 8788 */;
+import useChannelVideoLimit from "useChannelVideoLimit" /* 8789 */;
 import ActionSheetStore from "ActionSheetStore" /* 4802 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const STAGE_BOOSTING_SHEET_KEY = StageChannelsConstants.STAGE_BOOSTING_SHEET_KEY;

@@ -1,7 +1,7 @@
 // Module ID: 11021
 // Function ID: 11022
 // Name: FocusedControls
-// Dependencies: [19, 17, 1085, 21, 5092, 1200, 558, 576, 4850, 11022, 5093, 6813, 1497, 7576, 11023, 11028, 10827, 5362, 6851, 6878, 10919, 1265, 11035, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 1200, 558, 576, 4850, 11022, 5093, 6814, 1497, 7577, 11023, 11028, 10827, 5362, 6852, 6879, 10919, 1265, 11035, 2]
 
 // Module 11021 (FocusedControls)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
-import inlineStyles from "inlineStyles" /* 7576 */;
+import inlineStyles from "inlineStyles" /* 7577 */;
 import RevealProvider from "RevealProvider" /* 10827 */;
 import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11023 */;
 import GlobalStatusIndicator from "GlobalStatusIndicator" /* 11028 */;
@@ -105,7 +105,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
       }
     }
     const rect = { top: !tmp7, left: isTouchingLeftScreenEdge, right: true, children: tmp10 };
-    const tmp14 = closure_7(tmp(6813).SafeAreaPaddingView, rect);
+    const tmp14 = closure_7(tmp(6814).SafeAreaPaddingView, rect);
     let num = 3;
     cResult[3] = isTouchingLeftScreenEdge;
     cResult[4] = !tmp7;
@@ -160,7 +160,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const View = derivedValue(4850).View;
   rect = { top: !tmp3, left: isTouchingLeftScreenEdge, right: true, children: closure_7(closure_5, obj5) };
   obj5 = { style: tmp.headerContainer, children: header };
-  SafeAreaPaddingView = reveal(6813).SafeAreaPaddingView;
+  SafeAreaPaddingView = reveal(6814).SafeAreaPaddingView;
   return closure_7(View, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -192,9 +192,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { children: metroImportAll(LinearGradient, obj4) };
-      const Defs = tmp(7576).Defs;
+      const Defs = tmp(7577).Defs;
       obj4 = { id: "grad", y1: "0%", x1: "0", x2: "0", y2: "100%", children: items };
-      LinearGradient = tmp(7576).LinearGradient;
+      LinearGradient = tmp(7577).LinearGradient;
       items = [metroImportDefault(inlineStyles.Stop, { offset: "0%", stopColor: "black", stopOpacity: ".8" }), metroImportDefault(inlineStyles.Stop, { offset: "66%", stopColor: "black", stopOpacity: ".51" }), metroImportDefault(inlineStyles.Stop, { offset: "100%", stopColor: "black", stopOpacity: "0" })];
       const tmp11 = metroImportDefault(Defs, obj3);
       cResult[5] = tmp11;
@@ -348,8 +348,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   fn3.__workletHash = 6179540517245;
   fn3.__initData = __initData7;
   const animatedStyle = tmpResult10.useAnimatedStyle(fn3);
-  const tmp8Result = globalStatusIndicatorHeightSharedValue(6851);
-  const analyticsLocations = tmp8Result(tmp8(6878).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  const tmp8Result = globalStatusIndicatorHeightSharedValue(6852);
+  const analyticsLocations = tmp8Result(tmp8(6879).FOCUSED_VOICE_CONTROLS).analyticsLocations;
   const tmp15 = globalStatusIndicatorHeightSharedValue(10919)();
   let closure_7 = tmp15;
   if (cResult[0] === analyticsLocations) {
@@ -602,8 +602,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   fn.__initData = __initData10;
   ({ withTiming: timing.withTiming, top: derivedValue, TIMING_CONFIG, revealOpacity: derivedValue1 });
   const animatedStyle = tmpResult4.useAnimatedStyle(fn);
-  const tmp5Result = globalStatusIndicatorHeightSharedValue(6851);
-  analyticsLocations = tmp5Result(tmp5(6878).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  const tmp5Result = globalStatusIndicatorHeightSharedValue(6852);
+  analyticsLocations = tmp5Result(tmp5(6879).FOCUSED_VOICE_CONTROLS).analyticsLocations;
   closure_7 = tmp5(10919)();
   const View = tmp5(4850).View;
   const tmp12 = closure_8;

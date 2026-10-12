@@ -1,26 +1,9 @@
 // Module ID: 8428
 // Function ID: 8429
-// Dependencies: []
+// Dependencies: [8429]
 
 // Module 8428
+import _modDef8429 from "module_8429" /* 8429 */;
 
-export default (obj) => {
-  if (obj instanceof Object) {
-    const _Array = Array;
-    if (!Array.isArray(obj)) {
-      obj = {};
-      for (const key10010 in obj) {
-        if (!obj.hasOwnProperty(key10010)) {
-          continue;
-        } else {
-          obj[key10010] = key10010;
-          continue;
-        }
-        continue;
-      }
-      return obj;
-    }
-  }
-  const error = new Error("keyMirror(...): Argument must be an object.");
-  throw error;
-};
+
+export default _modDef8429({ contain: null, cover: null, stretch: null });

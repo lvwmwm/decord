@@ -1,20 +1,20 @@
-// Module ID: 9757
-// Function ID: 9758
+// Module ID: 9758
+// Function ID: 9759
 // Name: StickersHooks
-// Dependencies: [5, 32, 19, 2087, 4939, 5963, 1390, 6029, 6030, 1085, 558, 576, 504, 9758, 2041, 5749, 8572, 5750, 8024, 1126, 4755, 9740, 7046, 2]
+// Dependencies: [5, 32, 19, 2087, 4939, 5963, 1390, 6029, 6030, 1085, 558, 576, 504, 9759, 2041, 5749, 8573, 5750, 8025, 1126, 4755, 9741, 7047, 2]
 // Exports: useHasSendableSticker, useStickersGrid
 
-// Module 9757 (StickersHooks)
+// Module 9758 (StickersHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import StickersTypes from "StickersTypes" /* 5750 */;
-import StickerSendability from "StickerSendability" /* 7046 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8572 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 9740 */;
-import StickersActionCreators from "StickersActionCreators" /* 9758 */;
+import StickerSendability from "StickerSendability" /* 7047 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8573 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 9741 */;
+import StickersActionCreators from "StickersActionCreators" /* 9759 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -757,7 +757,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerPa
         if (flag) {
           const tmpResult = StickerSendability;
           const stickerSendability = tmpResult.getStickerSendability(guild_id, stateFromStores, closure_0);
-          flag = stickerSendability !== tmp(7046).StickerSendability.NONSENDABLE;
+          flag = stickerSendability !== tmp(7047).StickerSendability.NONSENDABLE;
         }
         someResult = flag;
       } else {
@@ -947,7 +947,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     let c2;
@@ -999,7 +999,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         closure_128_3(true);
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     } catch (tmp12) {
                       if (0 === c2) {
                         c3 = 3;
@@ -1035,7 +1035,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     let c2;
@@ -1087,7 +1087,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         closure_128_3(true);
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     } catch (tmp12) {
                       if (0 === c2) {
                         c3 = 3;
@@ -1120,7 +1120,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     let c2;
@@ -1172,7 +1172,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         closure_128_3(true);
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     } catch (tmp12) {
                       if (0 === c2) {
                         c3 = 3;
@@ -1206,7 +1206,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                       const obj3 = { value, done: true };
                       return obj3;
                     } else {
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     let c2;
@@ -1258,7 +1258,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         closure_128_3(true);
                       }
                       c3 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     } catch (tmp12) {
                       if (0 === c2) {
                         c3 = 3;
@@ -1288,7 +1288,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       let c2;
@@ -1340,7 +1340,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                           closure_128_3(true);
                         }
                         c3 = 3;
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       } catch (tmp12) {
                         if (0 === c2) {
                           c3 = 3;
@@ -1371,7 +1371,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       let c2;
@@ -1423,7 +1423,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
                           closure_128_3(true);
                         }
                         c3 = 3;
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       } catch (tmp12) {
                         if (0 === c2) {
                           c3 = 3;
@@ -1508,7 +1508,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -1559,7 +1559,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerF
             closure_128_3(true);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp12) {
           if (0 === c2) {
             c3 = 3;

@@ -1,7 +1,7 @@
 // Module ID: 11372
 // Function ID: 11373
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 5440, 1085, 21, 5092, 1382, 587, 558, 576, 504, 1200, 5088, 1126, 2128, 6839, 2]
+// Dependencies: [19, 17, 5440, 1085, 21, 5092, 1382, 587, 558, 576, 504, 1200, 5088, 1126, 2128, 6840, 2]
 
 // Module 11372 (MessageGameIconActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -156,7 +156,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageGam
                   }
                   const obj5 = { startExpanded: true, children: closure_6(View, obj6) };
                   obj6 = { style: contentWrapper, children: tmp30 };
-                  BottomSheet = tmp(6839).BottomSheet;
+                  BottomSheet = tmp(6840).BottomSheet;
                   const tmp37 = closure_6(BottomSheet, obj5);
                   cResult[27] = tmp4.contentWrapper;
                   cResult[28] = tmp30;
@@ -222,7 +222,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageGam
   if (null != stateFromStores) {
     const obj2 = { style: tmp.contentWrapper, children: closure_7(View, obj3) };
     obj3 = { style: tmp.gameDescriptionWrapperOuter, children: items1 };
-    BottomSheet = tmp2(6839).BottomSheet;
+    BottomSheet = tmp2(6840).BottomSheet;
     let str;
     const obj4 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
     const Icon = tmp2(1200).Icon;

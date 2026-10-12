@@ -1,25 +1,25 @@
-// Module ID: 16594
-// Function ID: 16595
+// Module ID: 16617
+// Function ID: 16618
 // Name: ChannelsUnreadBars
-// Dependencies: [32, 19, 17, 5081, 4752, 2065, 6077, 6035, 5966, 11758, 5967, 21, 5092, 7250, 5386, 6760, 15352, 551, 568, 504, 4850, 16546, 6626, 5057, 5058, 16595, 2]
+// Dependencies: [32, 19, 17, 5081, 4752, 2065, 6078, 6035, 5966, 11760, 5967, 21, 5092, 7251, 5386, 6761, 15375, 551, 568, 504, 4850, 16569, 6627, 5057, 5058, 16618, 2]
 
-// Module 16594 (ChannelsUnreadBars)
+// Module 16617 (ChannelsUnreadBars)
 import debounceDefault from "debounce" /* 551 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
 import useFontScale from "useFontScale" /* 5386 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import FastList from "FastList" /* 6760 */;
-import ChannelListState from "ChannelListState" /* 7250 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11758 */;
+import FastList from "FastList" /* 6761 */;
+import ChannelListState from "ChannelListState" /* 7251 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6077 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import Fragment from "Fragment" /* 21 */;
@@ -148,7 +148,7 @@ function findNearestUnreadItem(fastList, guildChannels, headerHeight, youBarTota
             if (-1 === section) {
               ({ section, item } = tmp13);
             }
-            if (tmp13.type !== tmp72(6760).FastListItemTypes.ITEM) {
+            if (tmp13.type !== tmp72(6761).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else if (shouldSkipSection(tmp13.section)) {
               continue;

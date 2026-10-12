@@ -1,9 +1,9 @@
-// Module ID: 6097
-// Function ID: 6098
+// Module ID: 6098
+// Function ID: 6099
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 6098, 502, 5964, 4748, 2087, 2116, 4939, 1390, 1085, 1110, 5299, 1126, 584, 6099, 1295, 6101, 6783, 2000, 5929, 6907, 6913, 6919, 6920, 6949, 7038, 5938, 1273, 4755, 1097, 7027, 4792, 1265, 7039, 1112, 5924, 5944, 2]
+// Dependencies: [109, 5, 6099, 502, 5964, 4748, 2087, 2116, 4939, 1390, 1085, 1110, 5299, 1126, 584, 6100, 1295, 6102, 6784, 2000, 5929, 6908, 6914, 6920, 6921, 6950, 7039, 5938, 1273, 4755, 1097, 7028, 4792, 1265, 7040, 1112, 5924, 5944, 2]
 
-// Module 6097 (GuildActionCreators)
+// Module 6098 (GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -15,12 +15,12 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import AgeGateUtils from "AgeGateUtils" /* 5924 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
 import SpoilerChannelUtils from "SpoilerChannelUtils" /* 5944 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7027 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7038 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7039 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7028 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7039 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 7040 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 6098 */;
+import BulkBanStore from "BulkBanStore" /* 6099 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5964 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
@@ -93,7 +93,7 @@ let obj = function _joinGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -408,7 +408,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -489,7 +489,7 @@ obj = {
             return obj;
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp33) {
           c5 = 3;
@@ -641,7 +641,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -680,7 +680,7 @@ obj = {
             } else if (BulkBanStore.consumeCompletedBeforeStarted(closure_128_0, id.getId())) {
               c3 = 0;
               c4 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } else {
               const obj8 = { type: "GUILD_BULK_BAN_STARTED", guildId: closure_128_0 };
               obj = c1(c3[14]);
@@ -688,7 +688,7 @@ obj = {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           closure_2 = tmp22;
@@ -729,7 +729,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -1100,7 +1100,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1142,7 +1142,7 @@ obj = {
             obj = tmp(c3[14]);
             obj.dispatch(obj8);
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -1171,7 +1171,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1215,7 +1215,7 @@ obj = {
             return obj;
           } else {
             guildId = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           guildId = 3;
@@ -1244,7 +1244,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1294,7 +1294,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c0 = 3;
@@ -1318,7 +1318,7 @@ obj = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1358,7 +1358,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -1399,7 +1399,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1431,7 +1431,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -1456,7 +1456,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1488,7 +1488,7 @@ obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c0 = 3;

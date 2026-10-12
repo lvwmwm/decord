@@ -1,15 +1,15 @@
-// Module ID: 8628
-// Function ID: 8629
+// Module ID: 8629
+// Function ID: 8630
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 8629, 5088, 6184, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 8630, 5088, 6185, 2]
 
-// Module 8628 (TagListInputTag)
+// Module 8629 (TagListInputTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 6184 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 8629 */;
+import Pressables from "Pressables" /* 6185 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 8630 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   let start;
   let str;
   let tag;
-  const f98916 = () => closure_1_0("remove");
+  const f99135 = () => closure_1_0("remove");
   ({ tag, selected, onPress: closure_129_0, start } = end);
   if (start === undefined) {
     start = false;
@@ -129,10 +129,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   const intl = intl2.intl;
   const obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f98916, formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f99135, formatToPlainStringResult));
   const items = [tmp.tagWrapper, , , ];
   let prop;
-  useAccessibilityPressDefault(f98916, formatToPlainStringResult);
+  useAccessibilityPressDefault(f99135, formatToPlainStringResult);
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp6 = hasOwnProperty;
   if (selected) {

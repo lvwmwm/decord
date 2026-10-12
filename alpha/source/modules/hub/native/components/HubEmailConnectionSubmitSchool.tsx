@@ -1,20 +1,20 @@
-// Module ID: 12502
-// Function ID: 12503
+// Module ID: 12504
+// Function ID: 12505
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12480, 1085, 21, 5092, 587, 1503, 6664, 12494, 5635, 12489, 1200, 1126, 5088, 6284, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 12482, 1085, 21, 5092, 587, 1503, 6665, 12496, 5635, 12491, 1200, 1126, 5088, 6285, 5379, 2]
 // Exports: default
 
-// Module 12502 (HubEmailConnectionSubmitSchool)
+// Module 12504 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import useNavigation from "useNavigation" /* 1503 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6284 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6664 */;
-import HubConstants from "HubConstants" /* 12480 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12489 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6285 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import HubConstants from "HubConstants" /* 12482 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12491 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -87,7 +87,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -142,7 +142,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
             c3 = 0;
             closure_129_3(false);
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp41) {
           closure_2 = tmp41;

@@ -1,9 +1,9 @@
-// Module ID: 9316
-// Function ID: 9317
+// Module ID: 9317
+// Function ID: 9318
 // Name: MessageManager
-// Dependencies: [32, 6036, 5757, 2069, 6061, 2065, 2087, 6035, 2116, 4939, 1085, 2072, 1102, 3, 5752, 9317, 5027, 6084, 7178, 9318, 510, 4944, 1112, 6063, 5299, 1126, 584, 6807, 2]
+// Dependencies: [32, 6036, 5757, 2069, 6061, 2065, 2087, 6035, 2116, 4939, 1085, 2072, 1102, 3, 5752, 9318, 5027, 6085, 7179, 9319, 510, 4944, 1112, 6063, 5299, 1126, 584, 6808, 2]
 
-// Module 9316 (MessageManager)
+// Module 9317 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -17,9 +17,9 @@ import flow_Client from "flow/Client" /* 5027 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import ChannelMessagesDefault from "ChannelMessages" /* 5752 */;
 import SidebarActionTypes from "SidebarActionTypes" /* 6063 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9317 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9318 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9318 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 9319 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
@@ -30,7 +30,7 @@ import ReadStateStore from "ReadStateStore" /* 6035 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 let map, obj3;
@@ -103,7 +103,7 @@ function fetchMessages(arg0) {
             if (!GatewayConnectionStore.isConnected()) {
               flag = true;
             }
-            const hasUnreadResult = tmp7(6084)(channelId) && ReadStateStore.hasUnread(channelId);
+            const hasUnreadResult = tmp7(6085)(channelId) && ReadStateStore.hasUnread(channelId);
             if (hasUnreadResult) {
               flag = true;
             }

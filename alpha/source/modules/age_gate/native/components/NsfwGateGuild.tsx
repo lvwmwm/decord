@@ -1,18 +1,18 @@
-// Module ID: 6914
-// Function ID: 6915
+// Module ID: 6915
+// Function ID: 6916
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 2125, 1390, 6915, 1085, 21, 5092, 587, 558, 576, 1126, 2128, 1265, 6916, 6656, 6156, 6918, 5088, 5379, 2]
+// Dependencies: [19, 17, 2125, 1390, 6916, 1085, 21, 5092, 587, 558, 576, 1126, 2128, 1265, 6917, 6657, 6157, 6919, 5088, 5379, 2]
 
-// Module 6914 (NsfwGateGuild)
+// Module 6915 (NsfwGateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import BackgroundImageDefault from "BackgroundImage" /* 6656 */;
-import Constants2 from "Constants" /* 6915 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6916 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6918 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import BackgroundImageDefault from "BackgroundImage" /* 6657 */;
+import Constants2 from "Constants" /* 6916 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6917 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6919 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -272,9 +272,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
     track(GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
-  items1 = [closure_10(currentUser(6656), {}), , , , , ];
-  const obj4 = { source: currentUser(6918), style: tmp.image };
-  const tmp7 = currentUser(6156);
+  items1 = [closure_10(currentUser(6657), {}), , , , , ];
+  const obj4 = { source: currentUser(6919), style: tmp.image };
+  const tmp7 = currentUser(6157);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
   items1[2] = closure_10(guildId(5088).Heading, obj5);

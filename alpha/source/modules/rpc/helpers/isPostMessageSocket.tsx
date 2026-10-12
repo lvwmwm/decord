@@ -1,10 +1,10 @@
-// Module ID: 14696
-// Function ID: 14697
+// Module ID: 14719
+// Function ID: 14720
 // Name: isPostMessageSocket
 // Dependencies: [5639, 2]
 // Exports: default
 
-// Module 14696 (isPostMessageSocket)
+// Module 14719 (isPostMessageSocket)
 import Constants from "Constants" /* 5639 */;
 import size from "module_2" /* 2 */;
 

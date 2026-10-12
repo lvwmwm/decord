@@ -1,13 +1,13 @@
-// Module ID: 17148
-// Function ID: 17149
+// Module ID: 17288
+// Function ID: 17289
 // Name: conjurePlanBot
-// Dependencies: [1998, 17143, 6946, 2]
+// Dependencies: [1998, 17283, 6947, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction
 
-// Module 17148 (conjurePlanBot)
+// Module 17288 (conjurePlanBot)
 import Server from "Server" /* 1998 */;
-import ConjureTypes from "ConjureTypes" /* 6946 */;
-import conjurePlanTags from "conjurePlanTags" /* 17143 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
+import conjurePlanTags from "conjurePlanTags" /* 17283 */;
 import size from "module_2" /* 2 */;
 
 function isAppCommand(kind) {
@@ -77,9 +77,9 @@ const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanBot.t
 export const getConjurePlanBotInteraction = function getConjurePlanBotInteraction(bot) {
   let tmp2;
   const obj = conjurePlanTags;
-  const planDeclaresSurfaceResult = obj.planDeclaresSurface(bot, ConjureTypes.ConjureSupportedSurface.APPLICATION_COMMANDS);
+  const planDeclaresSurfaceResult = obj.planDeclaresSurface(bot, ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS);
   const obj2 = conjurePlanTags;
-  if (obj2.planDeclaresSurface(bot, ConjureTypes.ConjureSupportedSurface.BOT)) {
+  if (obj2.planDeclaresSurface(bot, ConjureProjectTypes.ConjureSupportedSurface.BOT)) {
     let str;
     if (null != bot.bot) {
       str = bot.bot.interaction;

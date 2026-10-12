@@ -1,18 +1,18 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12393
+// Function ID: 12394
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 6036, 2065, 2087, 11968, 21, 5092, 587, 558, 576, 504, 5421, 11969, 5106, 6097, 4977, 8158, 5088, 1126, 5377, 5079, 6184, 11191, 5918, 2]
+// Dependencies: [32, 19, 17, 6036, 2065, 2087, 11970, 21, 5092, 587, 558, 576, 504, 5421, 11971, 5106, 6098, 4977, 8159, 5088, 1126, 5377, 5079, 6185, 11191, 5918, 2]
 
-// Module 12391 (ChannelSpoiler)
+// Module 12393 (ChannelSpoiler)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import GatedContentDefault from "GatedContent" /* 11191 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11968 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
@@ -30,7 +30,7 @@ let c10;
 let size;
 let tmp14;
 let unpackModuleId;
-const VoicePanelStateContextDefault = tmp14(11969);
+const VoicePanelStateContextDefault = tmp14(11971);
 const View = react_native.View;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -186,7 +186,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     isVocalResult = stateFromStores1.isVocal();
   }
   dependencyMap = isVocalResult;
-  setControlsMode = obj4.useContext(tmp7(11969)).setControlsMode;
+  setControlsMode = obj4.useContext(tmp7(11971)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;
@@ -219,7 +219,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
     }
   }, items3);
   if (null != stateFromStores1) {
-    const tmpResult = tmp(8158);
+    const tmpResult = tmp(8159);
     channelIconComponent = tmpResult.getChannelIconComponent(stateFromStores1);
   }
   if (null != channelIconComponent) {
@@ -259,7 +259,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSpoil
       const tmp26 = View;
       if (first) {
         const obj12 = { onPress: callback2, accessibilityRole: "button", children: closure_10(Text, obj13) };
-        const PressableHighlight = tmp(6184).PressableHighlight;
+        const PressableHighlight = tmp(6185).PressableHighlight;
         obj13 = { variant: "text-sm/medium", color: "text-brand", style: { textDecorationLine: "underline" }, children: intl2.string(tmp(1126).t["/QvRak"]) };
         Text = tmp(5088).Text;
         intl2 = tmp(1126).intl;

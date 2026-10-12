@@ -1,14 +1,14 @@
 // Module ID: 10841
 // Function ID: 10842
 // Name: CallBarAction
-// Dependencies: [109, 19, 17, 10353, 21, 4967, 587, 5092, 558, 576, 10842, 10843, 6156, 6184, 5088, 2]
+// Dependencies: [109, 19, 17, 10354, 21, 4967, 587, 5092, 558, 576, 10842, 10843, 6157, 6185, 5088, 2]
 
 // Module 10841 (CallBarAction)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 6184 */;
-import ChannelCallStore from "ChannelCallStore" /* 10353 */;
+import Pressables from "Pressables" /* 6185 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 10843 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
                                                 }
                                               }
                                               const obj3 = { accessibilityLabel, accessibilityRole: "button", accessibilityState, onPress: tmp15, disabled: false, style: tmp16, children: tmp41 };
-                                              const tmp47 = closure_10(onPress(6184).PressableOpacity, obj3);
+                                              const tmp47 = closure_10(onPress(6185).PressableOpacity, obj3);
                                               cResult[46] = accessibilityLabel;
                                               cResult[47] = accessibilityState;
                                               cResult[48] = tmp41;
@@ -254,7 +254,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
                       cloneElementResult = closure_10(IconComponent, obj8);
                     } else {
                       const obj9 = { source, style: imageStyle };
-                      cloneElementResult = closure_10(tmp8(6156), obj9);
+                      cloneElementResult = closure_10(tmp8(6157), obj9);
                     }
                     cResult[25] = IconComponent;
                     cResult[26] = imageStyle;
@@ -384,7 +384,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
     cloneElementResult = tmp10(IconComponent, obj6);
   } else {
     const obj7 = { source, style: imageStyle };
-    cloneElementResult = tmp10(tmp2(6156), obj7);
+    cloneElementResult = tmp10(tmp2(6157), obj7);
   }
   items1[1] = closure_10(View, obj4);
   let tmp10Result = null;

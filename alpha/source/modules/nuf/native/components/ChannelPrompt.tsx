@@ -1,13 +1,13 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12513
+// Function ID: 12514
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 4748, 2087, 21, 5092, 6258, 504, 1503, 6200, 1126, 7014, 5635, 6813, 6158, 1415, 5088, 6284, 5379, 6621, 2]
+// Dependencies: [5, 32, 19, 17, 4748, 2087, 21, 5092, 6259, 504, 1503, 6201, 1126, 7015, 5635, 6814, 6159, 1415, 5088, 6285, 5379, 6622, 2]
 // Exports: default
 
-// Module 12511 (ChannelPrompt)
+// Module 12513 (ChannelPrompt)
 import intl5 from "intl" /* 1126 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         hasSkip = tmp28;

@@ -1,9 +1,9 @@
-// Module ID: 7433
-// Function ID: 7434
+// Module ID: 7434
+// Function ID: 7435
 // Name: VideoStreamStats
 // Dependencies: [5271, 1085, 2060, 5121, 2]
 
-// Module 7433 (VideoStreamStats)
+// Module 7434 (VideoStreamStats)
 import Constants from "Constants" /* 1085 */;
 import TimeUtils from "TimeUtils" /* 5121 */;
 import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5271 */;

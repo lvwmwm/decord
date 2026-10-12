@@ -1,16 +1,16 @@
-// Module ID: 6284
-// Function ID: 6285
+// Module ID: 6285
+// Function ID: 6286
 // Name: FreeFormInputGroup
-// Dependencies: [19, 17, 21, 5092, 1382, 6263, 6285, 1200, 6618, 6619, 6621, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 1382, 6264, 6286, 1200, 6619, 6620, 6622, 5088, 2]
 // Exports: default
 
-// Module 6284 (FreeFormInputGroup)
+// Module 6285 (FreeFormInputGroup)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1200 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import RedesignCompat from "RedesignCompat" /* 6263 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 6618 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 6619 */;
+import RedesignCompat from "RedesignCompat" /* 6264 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 6619 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 6620 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -67,7 +67,7 @@ export default (textStyle) => {
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
     const obj3 = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, clearable: clearButtonVisibility !== native.ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
-    const TextInput = tmp8(6285).TextInput;
+    const TextInput = tmp8(6286).TextInput;
     return hasOwnProperty(TextInput, obj3);
   } else {
     let tmp14 = null;
@@ -97,7 +97,7 @@ export default (textStyle) => {
     let tmp17Result = null;
     if (null != error) {
       const obj7 = { style: tmp2.error, children: error };
-      tmp17Result = tmp17(tmp18(6621), obj7);
+      tmp17Result = tmp17(tmp18(6622), obj7);
     }
     items[2] = tmp17Result;
     let tmp17Result2 = null;

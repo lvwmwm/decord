@@ -1,18 +1,18 @@
-// Module ID: 15365
-// Function ID: 15366
+// Module ID: 15388
+// Function ID: 15389
 // Name: QuestDisclosureModalActionCreators
-// Dependencies: [5979, 7412, 15354, 9173, 9174, 9177, 7406, 5934, 15366, 2000, 2]
+// Dependencies: [5979, 7413, 15377, 9174, 9175, 9178, 7407, 5934, 15389, 2000, 2]
 
-// Module 15365 (QuestDisclosureModalActionCreators)
+// Module 15388 (QuestDisclosureModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import AnalyticsActions from "AnalyticsActions" /* 7406 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7412 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9173 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9174 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9177 */;
-import AdCreativeUtils from "AdCreativeUtils" /* 15354 */;
+import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9174 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9175 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9178 */;
+import AdCreativeUtils from "AdCreativeUtils" /* 15377 */;
 import size from "module_2" /* 2 */;
 
 const QUEST_DISCLOSURE_MODAL = "QUEST_DISCLOSURE_MODAL";
@@ -53,7 +53,7 @@ let obj = {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const type = creative.type;
     ModalActionCreatorsDefault;
-    const tmp12 = asyncRequire(15366, tmp2.paths);
+    const tmp12 = asyncRequire(15389, tmp2.paths);
     if (AdCreativeType.AdCreativeType.QUEST === type) {
       const obj9 = { adCreativeType: AdCreativeType.AdCreativeType.QUEST, gamePublisher, gameTitle, cosponsorName: name, isVideoQuest: tmpResult6.hasWatchVideoTasks(creative.quest) };
       ({ gamePublisher, gameTitle } = creative.quest.config.messages);

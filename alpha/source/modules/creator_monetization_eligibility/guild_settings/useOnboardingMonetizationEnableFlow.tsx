@@ -1,9 +1,9 @@
-// Module ID: 18476
-// Function ID: 18477
+// Module ID: 18534
+// Function ID: 18535
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 2083, 1390, 1085, 558, 576, 6963, 573, 18477, 18478, 18479, 6955, 1126, 2128, 18480, 2]
+// Dependencies: [19, 2083, 1390, 1085, 558, 576, 6964, 573, 18535, 18536, 18537, 6956, 1126, 2128, 18538, 2]
 
-// Module 18476 (useOnboardingMonetizationEnableFlow)
+// Module 18534 (useOnboardingMonetizationEnableFlow)
 import GuildRecord from "GuildRecord" /* 2083 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
-  const tmp22 = refresh(18477);
+  const tmp22 = refresh(18535);
   if (features != null) {
     class T {
       constructor() {
@@ -135,7 +135,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   }
   ({ error, loading, createEnableRequest, submittedRequest } = tmp22(undefined));
   tmp22(undefined);
-  const tmp21Result = refresh(18478);
+  const tmp21Result = refresh(18536);
   if (features != null) {
     class T {
       constructor() {
@@ -151,8 +151,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   const tmp21ResultResult = tmp21Result(undefined);
   ({ loading: loading2, error: error2, refresh } = tmp21ResultResult);
   const eligibility = tmp21ResultResult.eligibility;
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(18479)(eligibility));
-  refresh(18479)(eligibility);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(18537)(eligibility));
+  refresh(18537)(eligibility);
   const tmp27 = cResult[7];
   if (features != null) {
     class T {
@@ -246,8 +246,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
       }
     }
   }
-  const useIsMonetizationReapplicationDisabled = tmp(6955).useIsMonetizationReapplicationDisabled;
-  tmp(6955);
+  const useIsMonetizationReapplicationDisabled = tmp(6956).useIsMonetizationReapplicationDisabled;
+  tmp(6956);
   if (features != null) {
     class T {
       constructor() {
@@ -509,23 +509,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(18477);
+  const tmp10 = refresh(18535);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(18478);
+  const tmp9Result = refresh(18536);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(18479)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(18537)(eligibility));
   let hasItem2;
-  refresh(18479)(eligibility);
+  refresh(18537)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -540,8 +540,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     tmp19 = true === hasItem3;
   }
   let id2;
-  const useIsMonetizationReapplicationDisabled = tmp(6955).useIsMonetizationReapplicationDisabled;
-  tmp(6955);
+  const useIsMonetizationReapplicationDisabled = tmp(6956).useIsMonetizationReapplicationDisabled;
+  tmp(6956);
   if (features != null) {
     id2 = features.id;
   }
@@ -581,7 +581,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(18480);
+    const tmpResult4 = tmp(18538);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {

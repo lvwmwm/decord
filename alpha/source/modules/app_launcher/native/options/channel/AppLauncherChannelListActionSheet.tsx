@@ -1,19 +1,19 @@
-// Module ID: 11897
-// Function ID: 11898
+// Module ID: 11899
+// Function ID: 11900
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 2087, 21, 5092, 587, 558, 576, 8207, 8158, 11886, 5970, 5056, 11851, 11853, 5421, 5088, 6179, 2]
+// Dependencies: [32, 19, 2087, 21, 5092, 587, 558, 576, 8208, 8159, 11888, 5970, 5056, 11853, 11855, 5421, 5088, 6180, 2]
 
-// Module 11897 (AppLauncherChannelListActionSheet)
+// Module 11899 (AppLauncherChannelListActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
-import TableRow2 from "TableRow" /* 6179 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8158 */;
-import TextIcon3 from "TextIcon" /* 8207 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11886 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import TextIcon3 from "TextIcon" /* 8208 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11888 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIco
     num = wrapperSize;
   }
   const tmp4 = closure_9();
-  let TextIcon = tmp(8207).TextIcon;
+  let TextIcon = tmp(8208).TextIcon;
   if (null != channel) {
     let tmp5;
     if (cResult[0] !== channel) {
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIco
       const tmpResult = utils_ChannelUtils;
       let TextIcon2 = tmpResult.getChannelIconComponentWithGuild(channel, guild);
       if (TextIcon2 == null) {
-        TextIcon2 = tmp(8207).TextIcon;
+        TextIcon2 = tmp(8208).TextIcon;
       }
       cResult[0] = channel;
       cResult[1] = TextIcon2;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIco
     const tmp2Result = utils_ChannelUtils;
     let TextIcon2 = tmp2Result.getChannelIconComponentWithGuild(channel, guild);
     if (TextIcon2 == null) {
-      TextIcon2 = tmp2(8207).TextIcon;
+      TextIcon2 = tmp2(8208).TextIcon;
     }
     TextIcon = TextIcon2;
   }

@@ -1,9 +1,9 @@
-// Module ID: 12140
-// Function ID: 12141
+// Module ID: 12142
+// Function ID: 12143
 // Name: EnglishEmojiSuggestionsConstants
 // Dependencies: [2]
 
-// Module 12140 (EnglishEmojiSuggestionsConstants)
+// Module 12142 (EnglishEmojiSuggestionsConstants)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["aw", "bi", "dr", "ew", "ez", "gg", "go", "ha", "hi", "hm", "no", "np", "oh", "ok", "or", "tm", "tv", "ty", "wp", "xd", "yo"]);

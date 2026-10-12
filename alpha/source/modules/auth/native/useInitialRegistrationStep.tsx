@@ -1,12 +1,12 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16387
+// Function ID: 16388
 // Name: useInitialRegistrationStep
-// Dependencies: [19, 502, 5932, 16348, 16347, 558, 576, 504, 5930, 2]
+// Dependencies: [19, 502, 5932, 16371, 16370, 558, 576, 504, 5930, 2]
 
-// Module 16364 (useInitialRegistrationStep)
+// Module 16387 (useInitialRegistrationStep)
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16347 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16348 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16370 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16371 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ConsentStore from "ConsentStore" /* 5932 */;

@@ -1,9 +1,9 @@
-// Module ID: 17986
-// Function ID: 17987
+// Module ID: 18043
+// Function ID: 18044
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 558, 576, 1503, 1126, 5088, 2128, 5379, 6813, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 558, 576, 1503, 1126, 5088, 2128, 5379, 6814, 2]
 
-// Module 17986 (ExistingUserAgeGateConfirm)
+// Module 18043 (ExistingUserAgeGateConfirm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -25,7 +25,7 @@ let tmp;
 const intl4 = tmp(1126);
 const Text_Text = tmp(5088);
 const components_Button_Button = tmp(5379);
-const common_SafeAreaView = tmp(6813);
+const common_SafeAreaView = tmp(6814);
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -170,7 +170,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -212,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           }
           tmp18(false);
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         if (0 === c3) {
@@ -259,7 +259,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -302,7 +302,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
             }
             closure_128_2(false);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           let closure_2 = tmp18;
@@ -324,7 +324,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
   [tmp3, c2] = _slicedToArray(react.useState(false), 2);
   let obj2 = { top: true, style: tmp.container, children: items };
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  const SafeAreaPaddingView = onConfirm(6813).SafeAreaPaddingView;
+  const SafeAreaPaddingView = onConfirm(6814).SafeAreaPaddingView;
   let obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.format(onConfirm(1126).t.wumolR, { age }) };
   const Heading = onConfirm(5088).Heading;
   intl = onConfirm(1126).intl;

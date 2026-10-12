@@ -1,14 +1,14 @@
-// Module ID: 17744
-// Function ID: 17745
+// Module ID: 17801
+// Function ID: 17802
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 6036, 11970, 11968, 5115, 21, 11969, 1272, 1382, 551, 4850, 9579, 10360, 10829, 2]
+// Dependencies: [32, 19, 6036, 11972, 11970, 5115, 21, 11971, 1272, 1382, 551, 4850, 9580, 10361, 10829, 2]
 
-// Module 17744 (VoicePanelSystemUIManager)
+// Module 17801 (VoicePanelSystemUIManager)
 import react_native from "react-native" /* 1272 */;
 import CallConstants from "CallConstants" /* 5115 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9579 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11968 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11970 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;

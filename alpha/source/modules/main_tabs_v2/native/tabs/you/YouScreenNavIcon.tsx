@@ -1,18 +1,18 @@
-// Module ID: 12999
-// Function ID: 13000
+// Module ID: 13004
+// Function ID: 13005
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 13000, 587, 9016, 5092, 558, 576, 13001, 1126, 4823, 5088, 8541, 2]
+// Dependencies: [19, 17, 21, 13005, 587, 9017, 5092, 558, 576, 13006, 1126, 4823, 5088, 8542, 2]
 
-// Module 12999 (YouScreenNavIcon)
+// Module 13004 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import mergeProps from "mergeProps" /* 4823 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ClipView from "ClipView" /* 9016 */;
-import getIconSize from "getIconSize" /* 13000 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13001 */;
+import ClipView from "ClipView" /* 9017 */;
+import getIconSize from "getIconSize" /* 13005 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13006 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -120,7 +120,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
           const obj4 = { ref: tmp20, style: tmp6.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp18, onPress, hitSlop: nativeDefault.space.PX_8, children: items };
-          const PressableScale = tmp(8541).PressableScale;
+          const PressableScale = tmp(8542).PressableScale;
           items = [tmp11, tmp23];
           const tmp30 = hasOwnProperty(PressableScale, obj4);
           cResult[14] = accessibilityLabel;
@@ -199,7 +199,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = obj6;
   }
   const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp12, onPress, hitSlop: nativeDefault.space.PX_8, children: items1 };
-  const PressableScale = tmp(8541).PressableScale;
+  const PressableScale = tmp(8542).PressableScale;
   items1 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;

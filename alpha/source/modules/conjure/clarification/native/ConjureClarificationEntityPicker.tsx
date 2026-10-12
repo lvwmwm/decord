@@ -1,17 +1,17 @@
-// Module ID: 17248
-// Function ID: 17249
+// Module ID: 17307
+// Function ID: 17308
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4748, 2087, 4760, 1390, 21, 558, 576, 17070, 504, 6945, 5056, 12179, 1126, 3849, 17241, 5421, 17072, 6264, 6179, 2]
+// Dependencies: [19, 4748, 2087, 4760, 1390, 21, 558, 576, 17096, 504, 6946, 5056, 12181, 1126, 3849, 17303, 5421, 17098, 6265, 6180, 2]
 
-// Module 17248 (ConjureClarificationEntityPicker)
+// Module 17307 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import ConjureUtils from "ConjureUtils" /* 6945 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12179 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 17072 */;
-import ConjureClarification from "ConjureClarification" /* 17241 */;
+import ConjureUtils from "ConjureUtils" /* 6946 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12181 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 17098 */;
+import ConjureClarification from "ConjureClarification" /* 17303 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildStore from "GuildStore" /* 2087 */;

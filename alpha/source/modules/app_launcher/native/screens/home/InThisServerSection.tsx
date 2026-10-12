@@ -1,14 +1,14 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 11798
+// Function ID: 11799
 // Name: InThisServerSection
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11774, 1388, 5088, 1126, 6184, 11727, 10622, 11732, 8541, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11776, 1388, 5088, 1126, 6185, 11729, 10623, 11734, 8542, 2]
 
-// Module 11796 (InThisServerSection)
+// Module 11798 (InThisServerSection)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10622 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11774 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 11776 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -245,7 +245,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InThisServer
         accessibilityRole: "button",
         children: closure_5(Text2, obj5)
       };
-      const PressableOpacity = tmp11(6184).PressableOpacity;
+      const PressableOpacity = tmp11(6185).PressableOpacity;
       obj5 = { variant: "text-sm/medium", color: "text-brand", children: intl2.string(intl3.t["/qG8v7"]) };
       Text2 = tmp11(5088).Text;
       intl2 = tmp11(1126).intl;
@@ -272,7 +272,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
   const tmp4 = closure_7();
   const application = appItem.application;
   if (cResult[0] !== application) {
-    const tmpResult = tmp(11727);
+    const tmpResult = tmp(11729);
     const appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
     cResult[0] = application;
     cResult[1] = appLauncherIconSource;
@@ -317,7 +317,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
       }
       const obj3 = { accessible: true, accessibilityLabel: application.name, accessibilityRole: "button", onPress: tmp7, style: tmp4.appCardContainer, children: items };
       items = [tmp8, tmp12];
-      const tmp17 = closure_6(tmp(8541).PressableScale, obj3, application.id);
+      const tmp17 = closure_6(tmp(8542).PressableScale, obj3, application.id);
       cResult[10] = application.id;
       class C {
         constructor() {
@@ -349,7 +349,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
     let tmp9 = null;
     if (null != tmp5) {
       const obj4 = { iconSource: tmp5, wrapperStyle: tmp4.iconContainer, iconSize: 36 };
-      tmp9 = closure_5(application(11732), obj4);
+      tmp9 = closure_5(application(11734), obj4);
     }
     cResult[5] = tmp5;
     cResult[6] = tmp4.iconContainer;
@@ -387,7 +387,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
   let tmp = closure_7();
   const application = appItem.application;
   let tmp2 = onAppSelected;
-  let obj = onAppSelected(11727);
+  let obj = onAppSelected(11729);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp6 = null;
   const obj2 = {
@@ -408,11 +408,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInTh
     style: tmp.appCardContainer,
     children: items
   };
-  const PressableScale = onAppSelected(8541).PressableScale;
+  const PressableScale = onAppSelected(8542).PressableScale;
   const tmp5 = closure_6;
   if (null != appLauncherIconSource) {
     const obj3 = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };
-    tmp6 = closure_5(application(11732), obj3);
+    tmp6 = closure_5(application(11734), obj3);
   }
   items = [tmp6, ];
   const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };

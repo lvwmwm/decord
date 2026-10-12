@@ -1,9 +1,9 @@
-// Module ID: 13451
-// Function ID: 13452
+// Module ID: 13474
+// Function ID: 13475
 // Name: useCollectibleListLayout
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 13451 (useCollectibleListLayout)
+// Module 13474 (useCollectibleListLayout)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

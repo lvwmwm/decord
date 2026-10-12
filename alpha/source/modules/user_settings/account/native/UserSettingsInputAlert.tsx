@@ -1,9 +1,9 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15050
+// Function ID: 15051
 // Name: UserSettingsInputAlert
-// Dependencies: [19, 21, 1295, 5377, 5088, 6285, 5398, 6728, 2]
+// Dependencies: [19, 21, 1295, 5377, 5088, 6286, 5398, 6729, 2]
 
-// Module 15027 (UserSettingsInputAlert)
+// Module 15050 (UserSettingsInputAlert)
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import AlertDefault from "Alert" /* 5398 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const KeyboardAwareViewDefault = tmp2(6728);
+const KeyboardAwareViewDefault = tmp2(6729);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const hasOwnProperty = { input: "", error: "color" };
 const PureComponent = react.PureComponent;
@@ -105,7 +105,7 @@ class UserSettingsInputAlert extends PureComponent {
           }
       };
       str2 = "default";
-      const TextInput = tmp5(6285).TextInput;
+      const TextInput = tmp5(6286).TextInput;
       const tmp9 = _false;
       if (null != error) {
         str2 = "error";

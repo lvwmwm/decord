@@ -1,10 +1,10 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11615
+// Function ID: 11616
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 2065, 1390, 10868, 10823, 11614, 10853, 2]
+// Dependencies: [5, 2065, 1390, 10868, 10823, 11616, 10853, 2]
 // Exports: default
 
-// Module 11613 (handleUsePrimaryEntryPointAppCommand)
+// Module 11615 (handleUsePrimaryEntryPointAppCommand)
 import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 10868 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -31,7 +31,7 @@ let obj = function _handleUsePrimaryEntryPointAppCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -132,7 +132,7 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

@@ -1,9 +1,9 @@
-// Module ID: 17602
-// Function ID: 17603
+// Module ID: 17659
+// Function ID: 17660
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2065, 5432, 1390, 21, 5092, 587, 558, 576, 1631, 504, 17603, 17605, 12158, 2]
+// Dependencies: [32, 19, 17, 2065, 5432, 1390, 21, 5092, 587, 558, 576, 1631, 504, 17660, 17662, 12160, 2]
 
-// Module 17602 (RestrictedMessageRequestPreview)
+// Module 17659 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -294,11 +294,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
       }
       items7[1] = hidden;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items8 = [closure_10(tmp2(17603), obj6), ];
+      items8 = [closure_10(tmp2(17660), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(ref(17605), obj7);
+      items8[1] = closure_10(ref(17662), obj7);
       items9 = [closure_11(tmp15, obj5), ];
-      const obj8 = { style: items10, children: closure_10(ref(12158), obj10) };
+      const obj8 = { style: items10, children: closure_10(ref(12160), obj10) };
       items10 = [tmp.footer, ];
       items10[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
       obj10 = { channel: stateFromStores };

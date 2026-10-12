@@ -1,27 +1,27 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 12997
+// Function ID: 12998
 // Name: useConjureProjects
-// Dependencies: [32, 19, 5440, 7320, 4748, 2087, 4750, 4939, 12996, 10651, 1126, 3849, 558, 576, 6947, 12340, 11409, 1453, 504, 6945, 2]
+// Dependencies: [32, 19, 5440, 7321, 4748, 2087, 4750, 4939, 12998, 10652, 1126, 3849, 558, 576, 6948, 12342, 11409, 1453, 504, 6946, 2]
 // Exports: describeConjureProjectRow
 
-// Module 12995 (useConjureProjects)
+// Module 12997 (useConjureProjects)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureUtils from "ConjureUtils" /* 6945 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6947 */;
+import ConjureUtils from "ConjureUtils" /* 6946 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6948 */;
 import conjureAppInServer from "conjureAppInServer" /* 11409 */;
-import ConjureActivity from "ConjureActivity" /* 12340 */;
+import ConjureActivity from "ConjureActivity" /* 12342 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import UserProfileStore from "UserProfileStore" /* 7320 */;
+import UserProfileStore from "UserProfileStore" /* 7321 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import ConjureChatStore from "ConjureChatStore" /* 12996 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
+import ConjureChatStore from "ConjureChatStore" /* 12998 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ function conjureEntriesEqual(nextExpiry, nextExpiry2) {
   let everyResult = nextExpiry.nextExpiry === nextExpiry2.nextExpiry && nextExpiry.entries.length === nextExpiry2.entries.length;
   if (everyResult) {
     const entries = nextExpiry.entries;
-    everyResult = entries.every((projectId, index) => null != nextExpiry2.entries[index] && projectId.projectId === nextExpiry2.entries[index].projectId && projectId.activity === nextExpiry2.entries[index].activity && projectId.name === nextExpiry2.entries[index].name && projectId.guildId === nextExpiry2.entries[index].guildId && projectId.guildName === nextExpiry2.entries[index].guildName && projectId.notInServer === nextExpiry2.entries[index].notInServer && projectId.guild === nextExpiry2.entries[index].guild);
+    everyResult = entries.every((projectId, index) => null != nextExpiry2.entries[index] && projectId.projectId === nextExpiry2.entries[index].projectId && projectId.activity === nextExpiry2.entries[index].activity && projectId.name === nextExpiry2.entries[index].name && projectId.project.updated_at === nextExpiry2.entries[index].project.updated_at && projectId.guildId === nextExpiry2.entries[index].guildId && projectId.guildName === nextExpiry2.entries[index].guildName && projectId.notInServer === nextExpiry2.entries[index].notInServer && projectId.guild === nextExpiry2.entries[index].guild);
   }
   return everyResult;
 }
@@ -60,7 +60,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(12340).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(12342).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;
@@ -222,7 +222,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
     first1 = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function p() {
+    const fn = function v() {
       return collectEntries(closure_0);
     };
     cResult[1] = arg0;

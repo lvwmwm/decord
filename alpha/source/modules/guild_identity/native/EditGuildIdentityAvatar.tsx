@@ -1,14 +1,14 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 14953
+// Function ID: 14954
 // Name: EditGuildIdentityAvatar
-// Dependencies: [19, 2125, 1390, 1085, 1392, 21, 5092, 504, 6851, 6878, 8283, 14841, 8293, 4769, 8290, 9269, 5056, 14842, 2000, 14830, 14830, 8281, 6184, 1126, 8382, 14844, 2]
+// Dependencies: [19, 2125, 1390, 1085, 1392, 21, 5092, 504, 6852, 6879, 8284, 14864, 8294, 4769, 8291, 9270, 5056, 14865, 2000, 14853, 14853, 8282, 6185, 1126, 8383, 14867, 2]
 // Exports: default
 
-// Module 14930 (EditGuildIdentityAvatar)
+// Module 14953 (EditGuildIdentityAvatar)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9269 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9270 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import UserStore from "UserStore" /* 1390 */;

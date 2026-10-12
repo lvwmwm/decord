@@ -1,9 +1,9 @@
-// Module ID: 14837
-// Function ID: 14838
+// Module ID: 14860
+// Function ID: 14861
 // Name: UserProfilePremiumTryItOutMobileRefreshExperiment
 // Dependencies: [1453, 558, 576, 2]
 
-// Module 14837 (UserProfilePremiumTryItOutMobileRefreshExperiment)
+// Module 14860 (UserProfilePremiumTryItOutMobileRefreshExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

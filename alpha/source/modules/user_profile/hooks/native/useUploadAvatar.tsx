@@ -1,12 +1,12 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 14864
+// Function ID: 14865
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1390, 1085, 1392, 558, 576, 573, 9269, 5056, 7768, 4769, 14820, 8293, 8291, 8288, 8290, 2]
+// Dependencies: [5, 19, 1390, 1085, 1392, 558, 576, 573, 9270, 5056, 7769, 4769, 14843, 8294, 8292, 8289, 8291, 2]
 
-// Module 14841 (useUploadAvatar)
+// Module 14864 (useUploadAvatar)
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9269 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9270 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadA
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -176,7 +176,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadA
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp40) {
         c3 = 3;
@@ -232,7 +232,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadA
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -304,7 +304,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUploadA
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp40) {
         c3 = 3;

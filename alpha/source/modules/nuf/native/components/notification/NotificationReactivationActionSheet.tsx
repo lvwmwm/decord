@@ -1,18 +1,18 @@
-// Module ID: 18155
-// Function ID: 18156
+// Module ID: 18213
+// Function ID: 18214
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 12122, 1085, 21, 5092, 587, 1265, 558, 576, 12123, 5056, 6156, 18156, 1126, 5088, 5379, 5958, 6839, 2]
+// Dependencies: [19, 17, 12124, 1085, 21, 5092, 587, 1265, 558, 576, 12125, 5056, 6157, 18214, 1126, 5088, 5379, 5958, 6840, 2]
 
-// Module 18155 (NotificationReactivationActionSheet)
+// Module 18213 (NotificationReactivationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12122 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12123 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18156 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12124 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12125 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18214 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     const fn2 = function v() {
       const SKIP_STEP = EventActionType.SKIP_STEP;
       const obj = AnalyticsUtilsDefault;
-      const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
+      const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
       obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
       obj3.hideActionSheet();
@@ -192,7 +192,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
       const obj7 = { children: closure_8(View, obj8) };
       obj8 = { style: container, children: items };
       items = [tmp7, tmp14, tmp19, tmp32];
-      BottomSheet = tmp(6839).BottomSheet;
+      BottomSheet = tmp(6840).BottomSheet;
       const tmp38 = closure_7(BottomSheet, obj7);
       cResult[22] = tmp4.container;
       cResult[23] = tmp19;
@@ -233,14 +233,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const callback1 = react.useCallback(() => {
     const SKIP_STEP = EventActionType.SKIP_STEP;
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
+    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "r" };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items1);
   let obj = { children: closure_8(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
-  BottomSheet = _location(6839).BottomSheet;
+  BottomSheet = _location(6840).BottomSheet;
   let obj3 = { style: tmp.image, source: AssetRegistryDefault, resizeMode: "contain" };
   const tmp4 = FastImageDefault;
   items2 = [closure_7(tmp4, obj3), , , ];

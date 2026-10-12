@@ -1,18 +1,18 @@
-// Module ID: 17520
-// Function ID: 17521
+// Module ID: 17577
+// Function ID: 17578
 // Name: useVoiceChannelAppOptions
-// Dependencies: [32, 19, 10651, 1415, 6945, 2029, 558, 576, 11411, 504, 6857, 6852, 17521, 2]
+// Dependencies: [32, 19, 10652, 1415, 6946, 2029, 558, 576, 11413, 504, 6858, 6853, 17578, 2]
 // Exports: voiceChannelAppIdsToFetch, voiceChannelAppRows
 
-// Module 17520 (useVoiceChannelAppOptions)
+// Module 17577 (useVoiceChannelAppOptions)
 import react2 from "react" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6857 */;
-import ConjureUtils from "ConjureUtils" /* 6945 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11411 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6858 */;
+import ConjureUtils from "ConjureUtils" /* 6946 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11413 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 10651 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 10652 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let _require, importDefault, map, name, set;
 
 let tmp2;
-const useGetOrFetchApplications = tmp2(6857);
-const f130204 = (application_id) => application_id.application_id;
+const useGetOrFetchApplications = tmp2(6858);
+const f130495 = (application_id) => application_id.application_id;
 function voiceChannelAppCandidates(stateFromStoresArray, stateFromStoresArray1, guildId) {
   map = new Map();
   const items = [...stateFromStoresArray1];
@@ -281,7 +281,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
             }
           }
           let obj3 = { hasRows: arr8.length > 0, loadFailed: "error" === stateFromStores || tmp31, fetchPhase: str };
-          const tmpResult6 = tmp(17521);
+          const tmpResult6 = tmp(17578);
           const result = tmpResult6.voiceChannelAppListState(obj3);
           cResult[31] = str;
           cResult[32] = "error" === stateFromStores || tmp31;
@@ -303,7 +303,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
         const obj = closure_2_0(stateFromStoresArray1[5]);
         return !obj.isEmbeddedApplication(closure_0[index]);
       });
-      const mapped1 = found1.map(f130204);
+      const mapped1 = found1.map(f130495);
       cResult[18] = arr5;
       cResult[19] = tmp21;
       cResult[20] = mapped1;
@@ -361,7 +361,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoic
       const obj = closure_2_0(stateFromStoresArray1[5]);
       return !obj.isEmbeddedApplication(closure_0[index]);
     });
-    return found.map(f130204);
+    return found.map(f130495);
   }, items6);
   const items7 = [memo2];
   const effect1 = react.useEffect(() => {
@@ -618,7 +618,7 @@ function voiceChannelAppIdsToFetch(arr, arg1) {
     const obj = closure_2_0(stateFromStoresArray1[5]);
     return !obj.isEmbeddedApplication(closure_0[index]);
   });
-  return found.map(f130204);
+  return found.map(f130495);
 }
 let result = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelAppOptions.tsx");
 

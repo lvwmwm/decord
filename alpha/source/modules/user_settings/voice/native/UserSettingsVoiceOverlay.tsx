@@ -1,14 +1,14 @@
 // Module ID: 11085
 // Function ID: 11086
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 11073, 21, 558, 576, 573, 1126, 11072, 6895, 11086, 2]
+// Dependencies: [19, 11073, 21, 558, 576, 573, 1126, 11072, 6896, 11086, 2]
 
 // Module 11085 (UserSettingsVoiceOverlay)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6895 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
 import UserSettingsVoice from "UserSettingsVoice" /* 11072 */;
 import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11086 */;
 import react from "react" /* 19 */;
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   if (cResult[5] !== stateFromStores) {
     const UserSettingsTableRowGroup = tmp(11072).UserSettingsTableRowGroup;
     ({ label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
-    const TableSwitchRow = tmp(6895).TableSwitchRow;
+    const TableSwitchRow = tmp(6896).TableSwitchRow;
     const tmp17 = <UserSettingsTableRowGroup title={tmp8} hasIcons={false}>{null}</UserSettingsTableRowGroup>;
     cResult[5] = stateFromStores;
     cResult[6] = tmp17;

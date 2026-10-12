@@ -1,7 +1,7 @@
 // Module ID: 11092
 // Function ID: 11093
 // Name: KrispLogo
-// Dependencies: [19, 17, 1205, 1085, 21, 2128, 1265, 1126, 4806, 558, 576, 504, 4969, 11093, 11094, 6156, 5088, 2]
+// Dependencies: [19, 17, 1205, 1085, 21, 2128, 1265, 1126, 4806, 558, 576, 504, 4969, 11093, 11094, 6157, 5088, 2]
 
 // Module 11092 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
@@ -95,7 +95,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   }
   if (cResult[3] !== tmp8Result) {
     const obj2 = { style: closure_12.logo, source: tmp8Result, accessibilityLabel: tmp11 };
-    const tmp16 = authStore(tmp10(6156), obj2);
+    const tmp16 = authStore(tmp10(6157), obj2);
     cResult[3] = tmp8Result;
     cResult[4] = tmp16;
     tmp13 = tmp16;
@@ -155,7 +155,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };
   const obj4 = { style: closure_12.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
-  const tmp6Result = tmp6(6156);
+  const tmp6Result = tmp6(6157);
   intl = tmp(1126).intl;
   items1 = [authStore(tmp6Result, obj4), ];
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: authStore(Text, obj6) };

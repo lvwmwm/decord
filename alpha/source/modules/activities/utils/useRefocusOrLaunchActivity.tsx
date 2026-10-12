@@ -1,10 +1,10 @@
-// Module ID: 12969
-// Function ID: 12970
+// Module ID: 12971
+// Function ID: 12972
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 10807, 2064, 10802, 6852, 504, 10803, 10804, 10824, 11612, 2]
+// Dependencies: [5, 19, 10807, 2064, 10802, 6853, 504, 10803, 10804, 10824, 11614, 2]
 // Exports: default
 
-// Module 12969 (useRefocusOrLaunchActivity)
+// Module 12971 (useRefocusOrLaunchActivity)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 10807 */;
@@ -52,7 +52,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -133,7 +133,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === runBeforeLaunchAttempt) {
           c4 = 0;

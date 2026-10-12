@@ -1,13 +1,13 @@
-// Module ID: 17439
-// Function ID: 17440
+// Module ID: 17496
+// Function ID: 17497
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 558, 576, 10282, 1126, 9303, 9297, 8664, 2]
+// Dependencies: [19, 21, 558, 576, 10283, 1126, 9304, 9298, 8665, 2]
 
-// Module 17439 (ChannelDetailsMoreButton)
+// Module 17496 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8664 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9303 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10282 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8665 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9304 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreButton(c
       if (cResult[3] !== tmp4) {
         ({ accessibilityLabel: tmp7, source: AssetRegistryDefault, onPress: tmp4 });
         PressableNavigatorButtonWrapperDefault;
-        const HeaderIconButton = tmp(9297).HeaderIconButton;
+        const HeaderIconButton = tmp(9298).HeaderIconButton;
         const tmp13 = <tmp12>{null}</tmp12>;
         cResult[3] = tmp4;
         cResult[4] = tmp13;
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreButton(c
     if (channel.isDM()) {
       let obj2 = { accessibilityLabel: intl.string(channel(1126).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
       PressableNavigatorButtonWrapperDefault;
-      const HeaderIconButton = channel(9297).HeaderIconButton;
+      const HeaderIconButton = channel(9298).HeaderIconButton;
       intl = channel(1126).intl;
       tmp2 = <tmp6>{null}</tmp6>;
     } else {

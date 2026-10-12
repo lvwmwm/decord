@@ -1,19 +1,19 @@
-// Module ID: 15733
-// Function ID: 15734
+// Module ID: 15756
+// Function ID: 15757
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1390, 4775, 7992, 1085, 21, 5092, 587, 558, 576, 1503, 4769, 573, 5088, 1126, 6181, 1200, 9770, 6679, 10663, 14942, 2]
+// Dependencies: [19, 17, 1390, 4775, 7993, 1085, 21, 5092, 587, 558, 576, 1503, 4769, 573, 5088, 1126, 6182, 1200, 9771, 6680, 10663, 14965, 2]
 
-// Module 15733 (SettingsChatScreen)
+// Module 15756 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl14 from "intl" /* 1126 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6679 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9770 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9771 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
-import SettingLayoutDefault from "SettingLayout" /* 14942 */;
+import SettingLayoutDefault from "SettingLayout" /* 14965 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
@@ -178,7 +178,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
     const obj5 = { style: tmp5.card, children: closure_9(Card, obj6) };
     obj6 = { border: "none", shadow: "none", children: closure_10(View, obj7) };
     obj7 = { style: tmp5.cardContent, children: items2 };
-    Card = tmp(6181).Card;
+    Card = tmp(6182).Card;
     const obj8 = { style: tmp5.cardIcon, source: AssetRegistryDefault, size: stackNavigation(1200).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1200).Icon;
     items2 = [closure_9(Icon, obj8), ];
@@ -229,7 +229,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
     const obj4 = { style: tmp3.card, children: closure_9(Card, obj5) };
     obj5 = { border: "none", shadow: "none", children: closure_10(View, obj6) };
     obj6 = { style: tmp3.cardContent, children: items2 };
-    Card = tmp(6181).Card;
+    Card = tmp(6182).Card;
     const obj7 = { style: tmp3.cardIcon, source: AssetRegistryDefault, size: require("native").Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1200).Icon;
     items2 = [closure_9(Icon, obj7), ];

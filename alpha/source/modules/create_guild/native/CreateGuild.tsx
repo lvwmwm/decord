@@ -1,9 +1,9 @@
-// Module ID: 12030
-// Function ID: 12031
+// Module ID: 12032
+// Function ID: 12033
 // Name: CreateGuild
-// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 5362, 5371, 1126, 5088, 11353, 6285, 6895, 5379, 6621, 5377, 2]
+// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 5362, 5371, 1126, 5088, 11353, 6286, 6896, 5379, 6622, 5377, 2]
 
-// Module 12030 (CreateGuild)
+// Module 12032 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -444,7 +444,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
   items1[2] = closure_7(ref(11353), obj5);
   const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1126).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
-  const TextInput = tmp4(6285).TextInput;
+  const TextInput = tmp4(6286).TextInput;
   intl3 = tmp4(1126).intl;
   firstFieldErrorMessage = undefined;
   const tmp12 = ref;
@@ -458,7 +458,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   items1[3] = closure_7(TextInput, obj6);
   if (tmp9Result) {
     const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1126).t.edQ5va) };
-    const TableSwitchRow = tmp4(6895).TableSwitchRow;
+    const TableSwitchRow = tmp4(6896).TableSwitchRow;
     intl4 = tmp4(1126).intl;
     tmp9Result = tmp9(TableSwitchRow, obj7);
   }
@@ -494,7 +494,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
       tmp9Result2 = null;
       if ("" !== message1) {
         let message2;
-        const tmp12Result = tmp12(6621);
+        const tmp12Result = tmp12(6622);
         if (error != null) {
           message2 = error.message;
         }

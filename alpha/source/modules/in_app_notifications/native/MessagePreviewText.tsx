@@ -1,9 +1,9 @@
-// Module ID: 12584
-// Function ID: 12585
+// Module ID: 12586
+// Function ID: 12587
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 2065, 12576, 1096, 21, 5092, 1383, 587, 558, 576, 12585, 12586, 12575, 5088, 6156, 12587, 5627, 12590, 12591, 1107, 7001, 1126, 9313, 2]
+// Dependencies: [19, 17, 2065, 12578, 1096, 21, 5092, 1383, 587, 558, 576, 12587, 12588, 12577, 5088, 6157, 12589, 5627, 12592, 12593, 1107, 7002, 1126, 9314, 2]
 
-// Module 12584 (MessagePreviewText)
+// Module 12586 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,17 +11,17 @@ import Constants from "Constants" /* 1096 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1107 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useMessageAuthor from "useMessageAuthor" /* 5627 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7001 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9313 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12575 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 12585 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 12587 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 12590 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 12591 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7002 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9314 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12577 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 12587 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 12589 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 12592 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 12593 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12576 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12578 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
@@ -38,7 +38,7 @@ let obj5;
 let obj6;
 let size;
 let tmp;
-const ChannelRowPreview2 = tmp(12586);
+const ChannelRowPreview2 = tmp(12588);
 const View = react_native.View;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportDefault } = InAppNotificationConstants);
 const Fonts = Constants.Fonts;
@@ -641,7 +641,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
               return tmp;
             }
           }
-          tmp15 = tmp16 === tmp(12587).PreviewableMediaTypes.GIF;
+          tmp15 = tmp16 === tmp(12589).PreviewableMediaTypes.GIF;
         }
         if (previewableMedia.length > 0) {
           let tmp23;
@@ -768,7 +768,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(12587).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(12589).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
@@ -791,7 +791,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(12586).ChannelRowPreview;
+        const ChannelRowPreview = tmp(12588).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }

@@ -1,9 +1,9 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14405
+// Function ID: 14406
 // Name: Collapsible
 // Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 4850, 5378, 2]
 
-// Module 14382 (Collapsible)
+// Module 14405 (Collapsible)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5378 */;

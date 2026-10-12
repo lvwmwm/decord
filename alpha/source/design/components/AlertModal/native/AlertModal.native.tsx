@@ -1227,7 +1227,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertAction
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -1277,7 +1277,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertAction
         const obj3 = closure_0(context[13]);
         obj3.dismissAlert(c2);
         c4 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp16) {
         if (0 === c3) {
           c4 = 3;
@@ -1331,7 +1331,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertAction
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -1381,7 +1381,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertAction
         const obj3 = closure_0(closure_2_2[13]);
         obj3.dismissAlert(c2);
         c4 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp16) {
         if (0 === c3) {
           c4 = 3;

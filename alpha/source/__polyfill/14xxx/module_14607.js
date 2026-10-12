@@ -1,44 +1,17 @@
 // Module ID: 14607
 // Function ID: 14608
-// Dependencies: []
+// Dependencies: [14554, 14605, 14588]
 
 // Module 14607
-const obj = {
-  isASCIIDigit(decodeResult) {
-    return decodeResult >= 48 && decodeResult <= 57;
-  },
-  isASCIIAlpha(input) {
-    let tmp = input >= 65 && input <= 90;
-    if (!tmp) {
-      tmp = input >= 97 && input <= 122;
-      const tmp2 = input >= 97 && input <= 122;
-    }
-    return tmp;
-  },
-  isASCIIAlphanumeric(arg0) {
-    let tmp = arg0 >= 65 && arg0 <= 90;
-    if (!tmp) {
-      tmp = arg0 >= 97 && arg0 <= 122;
-      const tmp2 = arg0 >= 97 && arg0 <= 122;
-    }
-    if (!tmp) {
-      tmp = arg0 >= 48 && arg0 <= 57;
-      const tmp3 = arg0 >= 48 && arg0 <= 57;
-    }
-    return tmp;
-  },
-  isASCIIHex(decodeResult) {
-    let tmp = decodeResult >= 48 && decodeResult <= 57;
-    if (!tmp) {
-      tmp = decodeResult >= 65 && decodeResult <= 70;
-      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
-    }
-    if (!tmp) {
-      tmp = decodeResult >= 97 && decodeResult <= 102;
-      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
-    }
-    return tmp;
-  }
-};
+import _mod14554 from "module_14554" /* 14554 */;
+import _mod14588 from "module_14588" /* 14588 */;
+import defineProperty2 from "defineProperty2" /* 14605 */;
 
-export default obj;
+
+export default _mod14554 ? ((arg0, arg1, arg2) => {
+  const obj = defineProperty2;
+  return obj.f(arg0, arg1, _mod14588(1, arg2));
+}) : ((arg0, arg1, arg2) => {
+  arg0[arg1] = arg2;
+  return arg0;
+});

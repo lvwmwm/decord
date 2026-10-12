@@ -1,10 +1,10 @@
-// Module ID: 14698
-// Function ID: 14699
+// Module ID: 14721
+// Function ID: 14722
 // Name: useThermalState
 // Dependencies: [1382, 5296, 558, 576, 2]
 // Exports: getThermalState
 
-// Module 14698 (useThermalState)
+// Module 14721 (useThermalState)
 import react from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 5296 */;

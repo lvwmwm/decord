@@ -1,23 +1,23 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15124
+// Function ID: 15125
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 12400, 21, 5934, 5092, 587, 6258, 558, 576, 12402, 12406, 4809, 1126, 12420, 6200, 6687, 2]
+// Dependencies: [5, 32, 19, 17, 12402, 21, 5934, 5092, 587, 6259, 558, 576, 12404, 12408, 4809, 1126, 12422, 6201, 6688, 2]
 
-// Module 15101 (ContactSyncNameUpdateModal)
+// Module 15124 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12400 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12402 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12402 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import NavigatorHeader_mod from "NavigatorHeader" /* 6200 */;
+import NavigatorHeader_mod from "NavigatorHeader" /* 6201 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let _require, c2, c4;
 let NavigatorHeader;
 let obj2;
 let tmp;
-const Navigator = tmp(6687);
+const Navigator = tmp(6688);
 function onClose() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
@@ -66,7 +66,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -113,7 +113,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           if (0 === c3) {
@@ -181,7 +181,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
     cResult[7] = tmp16;
     tmp13 = tmp16;
   }
-  const tmp12 = jsx(onNext(12420), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
+  const tmp12 = jsx(onNext(12422), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
   cResult[2] = tmp6;
   cResult[3] = undefined;
   cResult[4] = tmp12;
@@ -206,7 +206,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -252,7 +252,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           if (0 === c3) {

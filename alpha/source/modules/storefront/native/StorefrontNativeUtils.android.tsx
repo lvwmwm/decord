@@ -1,11 +1,11 @@
-// Module ID: 10160
-// Function ID: 10161
+// Module ID: 10161
+// Function ID: 10162
 // Name: StorefrontNativeUtils
-// Dependencies: [19, 558, 576, 9399, 7131, 504, 2]
+// Dependencies: [19, 558, 576, 9400, 7132, 504, 2]
 
-// Module 10160 (StorefrontNativeUtils)
-import IAPStoreDefault from "IAPStore" /* 7131 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9399 */;
+// Module 10161 (StorefrontNativeUtils)
+import IAPStoreDefault from "IAPStore" /* 7132 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9400 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
   }, items);
   const useStateFromStores = require("get initialized").useStateFromStores;
   const tmp4 = require("get initialized");
-  const items1 = [stateFromStores(7131)];
+  const items1 = [stateFromStores(7132)];
   const items2 = [tmp2];
   stateFromStores = useStateFromStores(items1, () => {
     let product = null;

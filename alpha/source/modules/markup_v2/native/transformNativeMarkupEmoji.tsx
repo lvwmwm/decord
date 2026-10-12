@@ -1,10 +1,10 @@
-// Module ID: 8153
-// Function ID: 8154
+// Module ID: 8154
+// Function ID: 8155
 // Name: transformNativeMarkupEmoji
 // Dependencies: [4764, 5400, 1415, 2]
 // Exports: transformNativeEmoji
 
-// Module 8153 (transformNativeMarkupEmoji)
+// Module 8154 (transformNativeMarkupEmoji)
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
 import MarkupTypes from "MarkupTypes" /* 5400 */;

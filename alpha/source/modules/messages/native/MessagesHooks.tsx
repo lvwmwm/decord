@@ -1,7 +1,7 @@
 // Module ID: 10669
 // Function ID: 10670
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 9608, 9383, 5965, 2087, 5108, 558, 576, 12, 504, 568, 6852, 1388, 7422, 10670, 9382, 10671, 2]
+// Dependencies: [32, 19, 17, 9609, 9384, 5965, 2087, 5108, 558, 576, 12, 504, 568, 6853, 1388, 7423, 10670, 9383, 10671, 2]
 // Exports: useChatUpdatesQueue, useMessagesLifecycle
 
 // Module 10669 (MessagesHooks)
@@ -9,14 +9,14 @@ import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6852 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7422 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9382 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9383 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9383 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9384 */;
 import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 10671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9608 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9609 */;
 import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5965 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PresenceStore from "PresenceStore" /* 5108 */;

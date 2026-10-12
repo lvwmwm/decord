@@ -1,10 +1,10 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8668
+// Function ID: 8669
 // Name: StartEventUtils
-// Dependencies: [5, 2069, 2065, 2087, 2071, 1085, 8601, 38, 7495, 8518, 2]
+// Dependencies: [5, 2069, 2065, 2087, 2071, 1085, 8602, 38, 7496, 8519, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8667 (StartEventUtils)
+// Module 8668 (StartEventUtils)
 import Constants from "Constants" /* 1085 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -37,7 +37,7 @@ let obj = function _createStageChannelForEvent() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _preStartEventActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -182,7 +182,7 @@ obj = function _preStartEventActions() {
             closure_131_1(closure_131_2[7])(null != entity_type, "could not find or create channel");
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp16) {
           c5 = 3;
           throw tmp16;

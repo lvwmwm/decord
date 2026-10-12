@@ -1,16 +1,16 @@
-// Module ID: 12830
-// Function ID: 12831
+// Module ID: 12832
+// Function ID: 12833
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 5081, 1498, 1085, 1393, 21, 5092, 587, 558, 576, 2041, 7986, 1500, 504, 1415, 9426, 1265, 9439, 5088, 1126, 6819, 6184, 2]
+// Dependencies: [5, 19, 17, 5081, 1498, 1085, 1393, 21, 5092, 587, 558, 576, 2041, 7987, 1500, 504, 1415, 9427, 1265, 9440, 5088, 1126, 6820, 6185, 2]
 
-// Module 12830 (DoubleTapEmojiEditNudge)
+// Module 12832 (DoubleTapEmojiEditNudge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7986 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7987 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -220,7 +220,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -260,7 +260,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -294,7 +294,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -334,7 +334,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -368,7 +368,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -408,7 +408,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -445,7 +445,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -485,7 +485,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -518,7 +518,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -558,7 +558,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -591,7 +591,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -631,7 +631,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                       const obj = emoji(dependencyMap[19]);
                       const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                       c4 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp11) {
                     c4 = 3;
@@ -649,7 +649,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
         }
         let obj4 = { style: null, fastImageStyle: null, textEmojiStyle: null, src: tmp12, name: str };
         ({ doubleTapEmojiContainer: obj6.style, doubleTapCustomEmoji: obj6.fastImageStyle, doubleTapTextEmoji: obj6.textEmojiStyle } = tmp11);
-        const tmp24 = closure_11(appEntryKey(6819), obj4);
+        const tmp24 = closure_11(appEntryKey(6820), obj4);
         cResult[12] = tmp12;
         cResult[13] = tmp11.doubleTapCustomEmoji;
         cResult[14] = tmp11.doubleTapEmojiContainer;
@@ -676,7 +676,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -716,7 +716,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                 const obj = emoji(dependencyMap[19]);
                 const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                 c4 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c4 = 3;
@@ -752,7 +752,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -792,7 +792,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                   const obj = emoji(dependencyMap[19]);
                   const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                   c4 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 }
               } catch (tmp11) {
                 c4 = 3;
@@ -826,7 +826,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -866,7 +866,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                 const obj = emoji(dependencyMap[19]);
                 const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
                 c4 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp11) {
               c4 = 3;
@@ -947,7 +947,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -987,7 +987,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
             const obj = emoji(closure_2_2[19]);
             const result = obj.showDoubleTapEmojiUpdatedToast(obj17);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -1003,7 +1003,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
   items3 = [closure_11(Text, obj4), , ];
   let obj5 = { style: tmp5.doubleTapEmojiContainer, fastImageStyle: tmp5.doubleTapCustomEmoji, textEmojiStyle: tmp5.doubleTapTextEmoji, src: memo, name: str };
   str = "";
-  const tmp11 = emoji(6819);
+  const tmp11 = emoji(6820);
   const tmp8 = closure_12;
   const tmp9 = View;
   if (null == emoji.id) {
@@ -1011,7 +1011,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
   }
   items3[1] = closure_11(tmp11, obj5);
   let obj6 = { accessibilityRole: "button", onPress: callback, hitSlop, style: tmp5.editButton, children: closure_11(Text2, obj7) };
-  const PressableOpacity = tmp(6184).PressableOpacity;
+  const PressableOpacity = tmp(6185).PressableOpacity;
   obj7 = { color: "text-brand", variant: "text-sm/normal", children: intl2.string(tmp(1126).t.bt75uw) };
   Text2 = tmp(5088).Text;
   intl2 = tmp(1126).intl;

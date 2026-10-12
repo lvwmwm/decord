@@ -1,14 +1,14 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 13038
+// Function ID: 13039
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 13034, 1085, 13036, 1295, 584, 2]
+// Dependencies: [5, 13039, 1085, 13041, 1295, 584, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 13033 (CustomActivityLinkUtils)
+// Module 13038 (CustomActivityLinkUtils)
 import Constants from "Constants" /* 1085 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13036 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13041 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 13034 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 13039 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -30,7 +30,7 @@ let obj = function _fetchCustomActivityLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ obj = function _getCustomActivityLinkParams() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _getCustomActivityLinkParams() {
           } else if (1 === tmp3) {
             c6 = 0;
             c7 = 3;
-            return { value: { customId: "r" }, done: true };
+            return { value: { customId: "top" }, done: true };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -180,7 +180,7 @@ obj = function _getCustomActivityLinkParams() {
           } else {
             custom_id = value;
             if (null == custom_id) {
-              obj = { customId: "r" };
+              obj = { customId: "top" };
             } else {
               obj = { customId: custom_id.custom_id };
             }

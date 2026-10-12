@@ -1,9 +1,9 @@
-// Module ID: 12303
-// Function ID: 12304
+// Module ID: 12305
+// Function ID: 12306
 // Name: GuildPowerupsCard
-// Dependencies: [109, 19, 17, 21, 5092, 683, 587, 558, 576, 6181, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 683, 587, 558, 576, 6182, 2]
 
-// Module 12303 (GuildPowerupsCard)
+// Module 12305 (GuildPowerupsCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -22,7 +22,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Card_Card = tmp(6181);
+const Card_Card = tmp(6182);
 let closure_2 = ["children", "containerStyle", "status", "style"];
 const View = react_native.View;
 const jsx = Fragment.jsx;

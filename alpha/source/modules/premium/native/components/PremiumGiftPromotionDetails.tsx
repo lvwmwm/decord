@@ -1,16 +1,16 @@
-// Module ID: 10112
-// Function ID: 10113
+// Module ID: 10113
+// Function ID: 10114
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [109, 32, 19, 17, 5081, 21, 587, 5092, 558, 576, 5088, 504, 9011, 1383, 10113, 6156, 1993, 8975, 2]
+// Dependencies: [109, 32, 19, 17, 5081, 21, 587, 5092, 558, 576, 5088, 504, 9012, 1383, 10114, 6157, 1993, 8976, 2]
 
-// Module 10112 (PremiumGiftPromotionDetails)
+// Module 10113 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import SKUPreview from "SKUPreview" /* 8975 */;
+import SKUPreview from "SKUPreview" /* 8976 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -555,7 +555,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
   if (tmp15Result) {
     const obj6 = { style: tmp9.preview, children: authStore(CollectiblesPreview, obj11) };
     obj11 = { collectiblesItemData: tmp10, size: rounded };
-    CollectiblesPreview = tmp(8975).CollectiblesPreview;
+    CollectiblesPreview = tmp(8976).CollectiblesPreview;
     const tmp16 = View;
     if ("bundle" === tmp10.type) {
       const _Math2 = Math;

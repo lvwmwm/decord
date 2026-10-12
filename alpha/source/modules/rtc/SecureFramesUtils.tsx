@@ -1,10 +1,10 @@
-// Module ID: 8828
-// Function ID: 8829
+// Module ID: 8829
+// Function ID: 8830
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2012, 5110, 7428, 1390, 5131, 8829, 1085, 2128, 8830, 8831, 8813, 8832, 1126, 4962, 4702, 1102, 38, 206, 1295, 1255, 5299, 5409, 2]
+// Dependencies: [32, 5, 502, 2012, 5110, 7429, 1390, 5131, 8830, 1085, 2128, 8831, 8832, 8814, 8833, 1126, 4962, 4702, 1102, 38, 206, 1295, 1255, 5299, 5409, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 8828 (SecureFramesUtils)
+// Module 8829 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import DurationsDefault from "Durations" /* 1102 */;
@@ -14,19 +14,19 @@ import _modDef4702 from "module_4702" /* 4702 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import _mod8813 from "module_8813" /* 8813 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 8830 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 8831 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8832 */;
+import _mod8814 from "module_8814" /* 8814 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 8831 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 8832 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8833 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7428 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
 import UserStore from "UserStore" /* 1390 */;
 import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5131 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8829 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8830 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ obj = function _isPublicKeyMatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ obj = function _uploadCurrentUserPublicKey() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(key_version);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -254,7 +254,7 @@ obj = function _ensureCurrentUserPublicKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _ensureCurrentUserPublicKey() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -309,7 +309,7 @@ obj = function _isCurrentUserPublicKeyMatch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -478,8 +478,8 @@ export const deleteVerification = function deleteVerification(userId, arg1, isOt
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod8813.serializeKey;
-    _mod8813;
+    const serializeKey = _mod8814.serializeKey;
+    _mod8814;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;

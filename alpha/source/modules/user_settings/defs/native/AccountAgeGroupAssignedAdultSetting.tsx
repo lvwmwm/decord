@@ -1,14 +1,14 @@
-// Module ID: 14983
-// Function ID: 14984
+// Module ID: 15006
+// Function ID: 15007
 // Name: AccountAgeGroupAssignedAdultSetting
-// Dependencies: [7992, 1085, 10663, 1126, 3120, 14984, 14979, 2]
+// Dependencies: [7993, 1085, 10663, 1126, 3120, 15007, 15002, 2]
 
-// Module 14983 (AccountAgeGroupAssignedAdultSetting)
+// Module 15006 (AccountAgeGroupAssignedAdultSetting)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3120 from "module_3120" /* 3120 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 14984 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 15007 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

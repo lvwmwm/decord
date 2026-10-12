@@ -1,14 +1,14 @@
 // Module ID: 11142
 // Function ID: 11143
 // Name: SingleStream
-// Dependencies: [19, 10353, 21, 558, 576, 5106, 10884, 10894, 2]
+// Dependencies: [19, 10354, 21, 558, 576, 5106, 10884, 10894, 2]
 
 // Module 11142 (SingleStream)
 import Fragment from "Fragment" /* 21 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import StreamTileDefault from "StreamTile" /* 10884 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10353 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

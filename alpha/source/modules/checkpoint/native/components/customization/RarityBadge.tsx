@@ -1,16 +1,16 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16047
+// Function ID: 16048
 // Name: RarityBadge
-// Dependencies: [32, 19, 17, 5437, 21, 5092, 587, 558, 576, 5438, 7576, 15986, 1126, 5088, 9035, 2]
+// Dependencies: [32, 19, 17, 5437, 21, 5092, 587, 558, 576, 5438, 7577, 16009, 1126, 5088, 9036, 2]
 
-// Module 16024 (RarityBadge)
+// Module 16047 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5438 */;
-import inlineStyles from "inlineStyles" /* 7576 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 15986 */;
+import inlineStyles from "inlineStyles" /* 7577 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16009 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CheckpointConstants from "CheckpointConstants" /* 5437 */;
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
               let tmp28 = tmp9;
               if (tmp28) {
                 const obj3 = { size: "xxs", color: nativeDefault.colors.BLACK };
-                const NitroWheelIcon = tmp(9035).NitroWheelIcon;
+                const NitroWheelIcon = tmp(9036).NitroWheelIcon;
                 tmp28 = authStore(NitroWheelIcon, obj3);
               }
               cResult[14] = rarity === NITRO;
@@ -187,18 +187,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
       const tmp14 = inlineStylesDefault;
       if (rarity === NITRO) {
         const obj7 = { children: unpackModuleId(LinearGradient, obj8) };
-        const Defs = tmp(7576).Defs;
+        const Defs = tmp(7577).Defs;
         obj8 = { id: metroImportDefault, x1: "0", y1: "0", x2: "1", y2: "0", children: items2 };
-        LinearGradient = tmp(7576).LinearGradient;
+        LinearGradient = tmp(7577).LinearGradient;
         const obj9 = { offset: "0", stopColor: metroRequire[0] };
-        items2 = [authStore(tmp(7576).Stop, obj9), ];
+        items2 = [authStore(tmp(7577).Stop, obj9), ];
         const obj10 = { offset: "1", stopColor: metroRequire[1] };
         items2[1] = authStore(inlineStyles.Stop, obj10);
         tmp15 = authStore(Defs, obj7);
       }
       items3 = [tmp15, ];
       const obj11 = { points: tmpResult.getChamferedRectPoints(size.width, size.height, 6), fill: metroImportAll[rarity] };
-      const Polygon = tmp(7576).Polygon;
+      const Polygon = tmp(7577).Polygon;
       tmpResult = CheckpointCustomizationUtils;
       items3[1] = authStore(Polygon, obj11);
       tmp12Result = tmp12(tmp14, size1);
@@ -273,9 +273,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
     const tmp10 = inlineStylesDefault;
     if (tmp17Result) {
       const obj3 = { children: unpackModuleId(LinearGradient, obj4) };
-      const Defs = tmp3(7576).Defs;
+      const Defs = tmp3(7577).Defs;
       obj4 = { id: metroImportDefault, x1: "0", y1: "0", x2: "1", y2: "0", children: items1 };
-      LinearGradient = tmp3(7576).LinearGradient;
+      LinearGradient = tmp3(7577).LinearGradient;
       const obj5 = { offset: "0", stopColor: metroRequire[0] };
       items1 = [authStore(inlineStyles.Stop, obj5), ];
       const obj6 = { offset: "1", stopColor: metroRequire[1] };
@@ -284,7 +284,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
     }
     items2 = [tmp11, ];
     const obj7 = { points: tmp3Result.getChamferedRectPoints(size.width, size.height, 6), fill: metroImportAll[rarity] };
-    const Polygon = tmp3(7576).Polygon;
+    const Polygon = tmp3(7577).Polygon;
     tmp3Result = CheckpointCustomizationUtils;
     items2[1] = authStore(Polygon, obj7);
     tmp5Result = tmp5(tmp10, size1);
@@ -298,7 +298,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RarityBadge(
   const tmp17 = authStore;
   if (tmp17Result) {
     const obj10 = { size: "xxs", color: nativeDefault.colors.BLACK };
-    const NitroWheelIcon = tmp3(9035).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9036).NitroWheelIcon;
     tmp17Result = tmp17(NitroWheelIcon, obj10);
   }
   items4[1] = tmp17Result;

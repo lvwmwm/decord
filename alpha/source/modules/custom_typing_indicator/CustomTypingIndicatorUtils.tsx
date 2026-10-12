@@ -1,10 +1,10 @@
-// Module ID: 11641
-// Function ID: 11642
+// Module ID: 11643
+// Function ID: 11644
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [5987, 8284, 2065, 5963, 1390, 1085, 1393, 1398, 3851, 4764, 4768, 1411, 1097, 4755, 558, 576, 504, 2]
+// Dependencies: [5987, 8285, 2065, 5963, 1390, 1085, 1393, 1398, 3851, 4764, 4768, 1411, 1097, 4755, 558, 576, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis
 
-// Module 11641 (CustomTypingIndicatorUtils)
+// Module 11643 (CustomTypingIndicatorUtils)
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
@@ -14,7 +14,7 @@ import _modDef3851 from "module_3851" /* 3851 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8284 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;
 import UserStore from "UserStore" /* 1390 */;

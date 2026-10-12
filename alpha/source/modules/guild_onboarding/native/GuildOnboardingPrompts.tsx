@@ -1,9 +1,9 @@
-// Module ID: 6811
-// Function ID: 6812
+// Module ID: 6812
+// Function ID: 6813
 // Name: GuildOnboardingPrompts
-// Dependencies: [32, 5, 19, 17, 5081, 6148, 2065, 2087, 2116, 6788, 6789, 6785, 1085, 21, 1112, 5092, 6258, 587, 1494, 4967, 558, 576, 6156, 5391, 1105, 504, 1631, 1503, 4850, 6793, 6794, 1415, 1898, 1265, 5107, 5093, 6200, 6812, 1388, 6813, 6105, 1126, 5088, 2]
+// Dependencies: [32, 5, 19, 17, 5081, 6149, 2065, 2087, 2116, 6789, 6790, 6786, 1085, 21, 1112, 5092, 6259, 587, 1494, 4967, 558, 576, 6157, 5391, 1105, 504, 1631, 1503, 4850, 6794, 6795, 1415, 1898, 1265, 5107, 5093, 6201, 6813, 1388, 6814, 6106, 1126, 5088, 2]
 
-// Module 6811 (GuildOnboardingPrompts)
+// Module 6812 (GuildOnboardingPrompts)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
@@ -14,24 +14,24 @@ import ColorUtils from "ColorUtils" /* 4967 */;
 import timing from "timing" /* 5093 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6785 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6789 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6793 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6794 */;
-import GuildOnboardingPrompt2 from "GuildOnboardingPrompt" /* 6812 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6786 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6790 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6794 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6795 */;
+import GuildOnboardingPrompt2 from "GuildOnboardingPrompt" /* 6813 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6148 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6149 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6788 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6789 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -71,7 +71,7 @@ let obj = function _getBackgroundGradientColor() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

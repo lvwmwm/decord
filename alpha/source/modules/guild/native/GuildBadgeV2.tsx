@@ -1,17 +1,17 @@
-// Module ID: 8869
-// Function ID: 8870
+// Module ID: 8870
+// Function ID: 8871
 // Name: GuildBadgeV2
-// Dependencies: [109, 19, 21, 5092, 558, 576, 1200, 4969, 8870, 8867, 8868, 2]
+// Dependencies: [109, 19, 21, 5092, 558, 576, 1200, 4969, 8871, 8868, 8869, 2]
 // Exports: hasGuildBadge
 
-// Module 8869 (GuildBadgeV2)
+// Module 8870 (GuildBadgeV2)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1200 */;
 import shared from "shared" /* 4969 */;
-import GuildTraits from "GuildTraits" /* 8867 */;
-import BadgeCategory from "BadgeCategory" /* 8868 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8870 */;
+import GuildTraits from "GuildTraits" /* 8868 */;
+import BadgeCategory from "BadgeCategory" /* 8869 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8871 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;

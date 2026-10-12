@@ -1,9 +1,9 @@
-// Module ID: 18500
-// Function ID: 18501
+// Module ID: 18558
+// Function ID: 18559
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 38, 18501, 5088, 1200, 5379, 5056, 1126, 6306, 6839, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 38, 18559, 5088, 1200, 5379, 5056, 1126, 6307, 6840, 2]
 
-// Module 18500 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 18558 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,9 +13,9 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import BottomSheetModal from "BottomSheetModal" /* 6306 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18501 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18559 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -170,7 +170,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
               }
               const obj7 = { backdropOpacity: 0.8, children: hasOwnProperty(React3, obj8) };
               obj8 = { style: tmp4.container, children: tmp33 };
-              BottomSheet = tmp(6839).BottomSheet;
+              BottomSheet = tmp(6840).BottomSheet;
               const tmp39 = hasOwnProperty(BottomSheet, obj7);
               cResult[23] = tmp4.container;
               cResult[24] = tmp33;

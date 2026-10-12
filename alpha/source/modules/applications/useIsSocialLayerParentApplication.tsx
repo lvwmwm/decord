@@ -1,13 +1,13 @@
-// Module ID: 9231
-// Function ID: 9232
+// Module ID: 9232
+// Function ID: 9233
 // Name: useIsSocialLayerParentApplication
-// Dependencies: [19, 1085, 9232, 558, 576, 2]
+// Dependencies: [19, 1085, 9233, 558, 576, 2]
 // Exports: getIsSocialLayerParentApplication
 
-// Module 9231 (useIsSocialLayerParentApplication)
+// Module 9232 (useIsSocialLayerParentApplication)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9232 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9233 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

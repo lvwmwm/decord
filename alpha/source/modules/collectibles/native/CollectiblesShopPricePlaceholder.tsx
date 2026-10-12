@@ -1,9 +1,9 @@
-// Module ID: 9074
-// Function ID: 9075
+// Module ID: 9075
+// Function ID: 9076
 // Name: CollectiblesShopPricePlaceholder
 // Dependencies: [19, 21, 5092, 587, 558, 576, 4850, 5093, 2]
 
-// Module 9074 (CollectiblesShopPricePlaceholder)
+// Module 9075 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;

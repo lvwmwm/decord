@@ -1,19 +1,19 @@
-// Module ID: 17134
-// Function ID: 17135
+// Module ID: 17198
+// Function ID: 17199
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 17131, 558, 576, 17135, 504, 17136, 5088, 6184, 1126, 4962, 17137, 3849, 1200, 8233, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 587, 17194, 558, 576, 17199, 504, 17200, 5088, 6185, 1126, 4962, 17201, 3849, 1200, 8234, 2]
 
-// Module 17134 (ConjureMessageAuthor)
+// Module 17198 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17131 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 17135 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 17136 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 17137 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17194 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 17199 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 17200 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 17201 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const AppsIcon2 = tmp(8233);
+const AppsIcon2 = tmp(8234);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessa
       let tmp11 = tmp7;
       if (null != onPressName) {
         const obj4 = { style: tmp4.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp7 };
-        const PressableOpacity = tmp(6184).PressableOpacity;
+        const PressableOpacity = tmp(6185).PressableOpacity;
         intl = tmp(1126).intl;
         obj5 = { username: name };
         tmp11 = metroRequire(PressableOpacity, obj4);
@@ -233,7 +233,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessa
   const tmp8 = View;
   if (null != onPressName) {
     const obj4 = { style: tmp.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp6 };
-    const PressableOpacity = tmp2(6184).PressableOpacity;
+    const PressableOpacity = tmp2(6185).PressableOpacity;
     intl = tmp2(1126).intl;
     obj5 = { username: name };
     tmp5Result = tmp5(PressableOpacity, obj4);
@@ -398,13 +398,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
         tmp6 = tmp13;
       }
       const obj2 = { onPress: tmp5, onLongPress: tmp5, accessibilityRole: "button", accessibilityLabel: tmp8, children: tmp10 };
-      const tmp15 = closure_6(tmp(6184).PressableOpacity, obj2);
+      const tmp15 = closure_6(tmp(6185).PressableOpacity, obj2);
       cResult[6] = tmp5;
       cResult[7] = tmp10;
       cResult[8] = tmp15;
       tmp13 = tmp15;
     }
-    const obj3 = { size, user: tmp4, guildId: "Array" };
+    const obj3 = { size, user: tmp4, guildId: "r" };
     const tmp12 = closure_6(tmp(1200).Avatar, obj3);
     cResult[3] = size;
     cResult[4] = tmp4;
@@ -436,7 +436,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
     let obj = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(require("intl").t.iXAna6), children: closure_6(require("native").Avatar, obj2) };
     const PressableOpacity = require("Pressables").PressableOpacity;
     intl = require("intl").intl;
-    obj2 = { size: NORMAL, user: tmp3, guildId: "Array" };
+    obj2 = { size: NORMAL, user: tmp3, guildId: "r" };
     tmp5 = closure_6(PressableOpacity, obj);
   }
   return tmp5;

@@ -1,12 +1,12 @@
-// Module ID: 15195
-// Function ID: 15196
+// Module ID: 15218
+// Function ID: 15219
 // Name: AuthorizedAppsSetting
-// Dependencies: [1085, 10663, 1126, 6639, 15196, 2]
+// Dependencies: [1085, 10663, 1126, 6640, 15219, 2]
 
-// Module 15195 (AuthorizedAppsSetting)
+// Module 15218 (AuthorizedAppsSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import KeyIcon from "KeyIcon" /* 6639 */;
+import KeyIcon from "KeyIcon" /* 6640 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 14910
-// Function ID: 14911
+// Module ID: 14933
+// Function ID: 14934
 // Name: EditableTileGroup
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 9035, 1126, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 9036, 1126, 2]
 
-// Module 14910 (EditableTileGroup)
+// Module 14933 (EditableTileGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -53,7 +53,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTile
     let tmp10 = tmp4;
     if (tmp10) {
       const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_STRONG, accessibilityLabel: intl.string(intl2.t["5AFxuK"]) };
-      const NitroWheelIcon = tmp(9035).NitroWheelIcon;
+      const NitroWheelIcon = tmp(9036).NitroWheelIcon;
       intl = tmp(1126).intl;
       tmp10 = React3(NitroWheelIcon, obj3);
     }
@@ -113,7 +113,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditableTile
   const tmp4 = React3;
   if (flag) {
     const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_STRONG, accessibilityLabel: intl.string(intl2.t["5AFxuK"]) };
-    const NitroWheelIcon = tmp5(9035).NitroWheelIcon;
+    const NitroWheelIcon = tmp5(9036).NitroWheelIcon;
     intl = tmp5(1126).intl;
     flag = tmp4(NitroWheelIcon, obj3);
   }

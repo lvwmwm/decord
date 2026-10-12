@@ -1,9 +1,9 @@
-// Module ID: 6668
-// Function ID: 6669
+// Module ID: 6669
+// Function ID: 6670
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1390, 6199, 1085, 21, 5092, 587, 558, 576, 1503, 504, 1105, 6669, 1265, 1126, 5088, 6284, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 6200, 1085, 21, 5092, 587, 558, 576, 1503, 504, 1105, 6670, 1265, 1126, 5088, 6285, 5379, 2]
 
-// Module 6668 (EnterEmail)
+// Module 6669 (EnterEmail)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -11,7 +11,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6199 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6200 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -118,7 +118,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -267,7 +267,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

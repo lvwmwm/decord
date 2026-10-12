@@ -1,9 +1,9 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15510
+// Function ID: 15511
 // Name: FormSeparator
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 2]
 
-// Module 15487 (FormSeparator)
+// Module 15510 (FormSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

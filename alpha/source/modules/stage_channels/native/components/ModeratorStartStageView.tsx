@@ -1,10 +1,10 @@
 // Module ID: 10972
 // Function ID: 10973
 // Name: ModeratorStartStageView
-// Dependencies: [32, 19, 2087, 21, 558, 576, 504, 8654, 10973, 8572, 8653, 10974, 8520, 1126, 10975, 10976, 11019, 2]
+// Dependencies: [32, 19, 2087, 21, 558, 576, 504, 8655, 10973, 8573, 8654, 10974, 8521, 1126, 10975, 10976, 11019, 2]
 
 // Module 10972 (ModeratorStartStageView)
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8653 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8654 */;
 import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 10973 */;
 import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 11019 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -54,10 +54,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModeratorS
   }
   const tmpResult = guild_id(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmpResult5 = guild_id(8654);
+  const tmpResult5 = guild_id(8655);
   const first1 = _slicedToArray(tmpResult5.useGuildChannelScheduledEvents(channel.id), 1)[0];
   const moderator = useCurrentUserStageRolesDefault(channel.id, true).moderator;
-  const tmpResult6 = guild_id(8572);
+  const tmpResult6 = guild_id(8573);
   const canManageGuildEvent = tmpResult6.useManageResourcePermissions(channel).canManageGuildEvent;
   if (cResult[4] === canManageGuildEvent) {
     let tmp11;
@@ -69,7 +69,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModeratorS
     const tmpResult7 = guild_id(10974);
     const isLive = tmpResult7.useStageChannelStartEvent(channel.id).isLive;
     if (cResult[7] !== first1) {
-      const tmpResult8 = guild_id(8520);
+      const tmpResult8 = guild_id(8521);
       const nextRecurrenceIdInEvent = tmpResult8.getNextRecurrenceIdInEvent(first1);
       cResult[7] = first1;
       cResult[8] = nextRecurrenceIdInEvent;
@@ -217,15 +217,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModeratorS
   const items1 = [guild_id];
   const obj = guild_id(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guild_id), items1);
-  const obj2 = guild_id(8654);
+  const obj2 = guild_id(8655);
   const first = _slicedToArray(obj2.useGuildChannelScheduledEvents(channel.id), 1)[0];
   const moderator = useCurrentUserStageRolesDefault(channel.id, true).moderator;
-  const obj3 = guild_id(8572);
+  const obj3 = guild_id(8573);
   const canManageGuildEventResult = obj3.useManageResourcePermissions(channel).canManageGuildEvent(first);
   const tmp7 = useCanCreateAnEventDefault(guild_id);
   const obj4 = guild_id(10974);
   const isLive = obj4.useStageChannelStartEvent(channel.id).isLive;
-  const obj5 = guild_id(8520);
+  const obj5 = guild_id(8521);
   const nextRecurrenceIdInEvent = obj5.getNextRecurrenceIdInEvent(first);
   let tmp10Result6 = null;
   if (null != stateFromStores) {

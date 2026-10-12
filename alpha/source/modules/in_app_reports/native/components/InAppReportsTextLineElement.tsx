@@ -1,12 +1,12 @@
-// Module ID: 7743
-// Function ID: 7744
+// Module ID: 7744
+// Function ID: 7745
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 5399, 6169, 6885, 4808, 1382, 5068, 4806, 5088, 1126, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 5399, 6170, 6886, 4808, 1382, 5068, 4806, 5088, 1126, 5379, 2]
 
-// Module 7743 (InAppReportsTextLineElement)
+// Module 7744 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 587 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
-import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
   } else {
     first = cResult[0];
   }
-  const tmp8 = sms_body(6169)(first);
+  const tmp8 = sms_body(6170)(first);
   if (is_localized) {
     let tmp10;
     let tmp11;
@@ -323,7 +323,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
               obj.openURL(closure_0);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c3 = 3;
@@ -434,7 +434,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -469,7 +469,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextLineElem
               obj.openURL(closure_0);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c3 = 3;

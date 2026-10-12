@@ -1,10 +1,10 @@
-// Module ID: 18518
-// Function ID: 18519
+// Module ID: 18576
+// Function ID: 18577
 // Name: FormChannelPicker
-// Dependencies: [19, 2065, 21, 5092, 14102, 504, 5421, 8673, 5056, 18519, 2000, 8158, 8207, 5088, 1126, 1200, 11018, 2]
+// Dependencies: [19, 2065, 21, 5092, 14125, 504, 5421, 8674, 5056, 18577, 2000, 8159, 8208, 5088, 1126, 1200, 11018, 2]
 // Exports: default
 
-// Module 18518 (FormChannelPicker)
+// Module 18576 (FormChannelPicker)
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import react from "react" /* 19 */;
@@ -54,7 +54,7 @@ export default function FormChannelPicker(channelId) {
       const obj = { guildId: importDefault, selectedChannelId: id, onChannelSelected: onChange };
       id = undefined;
       ActionSheetActionCreatorsDefault;
-      const tmp2 = asyncRequire(18519, dependencyMap.paths);
+      const tmp2 = asyncRequire(18577, dependencyMap.paths);
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }

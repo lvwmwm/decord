@@ -1,18 +1,18 @@
-// Module ID: 10446
-// Function ID: 10447
+// Module ID: 10447
+// Function ID: 10448
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [32, 2065, 5966, 1085, 5967, 1095, 558, 576, 573, 7913, 10444, 6808, 10447, 6803, 2]
+// Dependencies: [32, 2065, 5966, 1085, 5967, 1095, 558, 576, 573, 7914, 10445, 6809, 10448, 6804, 2]
 // Exports: updateChannelNotificationSetting, updateChannelPreset, updateChannelToGuildDefault, updateChannelUnreadSetting
 
-// Module 10446 (notficationSettingsChannelFlagUtils)
+// Module 10447 (notficationSettingsChannelFlagUtils)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6803 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6808 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7913 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10444 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10447 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7914 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10445 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10448 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;

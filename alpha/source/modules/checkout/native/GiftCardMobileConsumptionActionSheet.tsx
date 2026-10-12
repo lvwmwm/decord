@@ -1,9 +1,9 @@
-// Module ID: 7103
-// Function ID: 7104
+// Module ID: 7104
+// Function ID: 7105
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 1631, 5056, 7104, 1126, 2274, 5088, 5379, 5377, 6839, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 1631, 5056, 7105, 1126, 2274, 5088, 5379, 5377, 6840, 2]
 
-// Module 7103 (GiftCardMobileConsumptionActionSheet)
+// Module 7104 (GiftCardMobileConsumptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
           return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const tmp19 = closure_6(tmp(7104).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
+      const tmp19 = closure_6(tmp(7105).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
       cResult[14] = tmp19;
       tmp18 = tmp19;
     } else {
@@ -327,11 +327,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobi
   };
   obj2 = { style: items2, children: closure_7(Stack, obj3) };
   items2 = [tmp.container, { paddingBottom: bottom }];
-  BottomSheet = markAsDismissed(6839).BottomSheet;
+  BottomSheet = markAsDismissed(6840).BottomSheet;
   obj3 = { spacing: nativeDefault.space.PX_16, children: items3 };
   Stack = markAsDismissed(5377).Stack;
   items3 = [, , ];
-  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7104).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
+  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7105).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
   items3[0] = closure_6(View, obj4);
   const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2274.V3DI1E) };
   const Text = markAsDismissed(5088).Text;

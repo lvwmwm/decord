@@ -1,23 +1,23 @@
-// Module ID: 18558
-// Function ID: 18559
+// Module ID: 18616
+// Function ID: 18617
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2065, 8683, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1503, 38, 504, 12, 18559, 8689, 5299, 1126, 5396, 7088, 18560, 8684, 8579, 1273, 6200, 6687, 2]
+// Dependencies: [32, 19, 2065, 8684, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1503, 38, 504, 12, 18617, 8690, 5299, 1126, 5396, 7089, 18618, 8685, 8580, 1273, 6201, 6688, 2]
 
-// Module 18558 (InviteSettingsModal)
+// Module 18616 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import Navigator from "Navigator" /* 6687 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8689 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18559 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import Navigator from "Navigator" /* 6688 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8690 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18617 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8683 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8684 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
@@ -418,9 +418,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8579).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8684).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(18560);
+  const Form = tmp2(8580).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8685).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(18618);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 });

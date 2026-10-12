@@ -1,14 +1,14 @@
 // Module ID: 10968
 // Function ID: 10969
 // Name: ChannelCallNavigator
-// Dependencies: [5, 32, 19, 17, 10969, 10354, 1085, 10863, 21, 5092, 558, 576, 1497, 10359, 4850, 10970, 10352, 10357, 5924, 5934, 10724, 2000, 1121, 11016, 11190, 4972, 11028, 1382, 4827, 6687, 5002, 2]
+// Dependencies: [5, 32, 19, 17, 10969, 10355, 1085, 10863, 21, 5092, 558, 576, 1497, 10360, 4850, 10970, 10353, 10358, 5924, 5934, 10724, 2000, 1121, 11016, 11190, 4972, 11028, 1382, 4827, 6688, 5002, 2]
 
 // Module 10968 (ChannelCallNavigator)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import reactDefault from "react" /* 5002 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10354 */;
-import VoiceChatModalContext from "VoiceChatModalContext" /* 10359 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10355 */;
+import VoiceChatModalContext from "VoiceChatModalContext" /* 10360 */;
 import Constants2 from "Constants" /* 10863 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -40,7 +40,7 @@ function MainCallScreen(channel) {
   let isConnectedToVoiceChannel;
   let tmp3 = dependencyMap;
   let tmp = closure_14();
-  let obj = isConnectedToVoiceChannel(10357);
+  let obj = isConnectedToVoiceChannel(10358);
   isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const id = react.useId();
   const items = [isConnectedToVoiceChannel, id];
@@ -83,7 +83,7 @@ function MainCallScreen(channel) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -119,7 +119,7 @@ function MainCallScreen(channel) {
             } else {
               c0 = true;
               c3 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp6) {
             c3 = 3;
@@ -383,7 +383,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function CallWi
         let tmp29 = null;
         if (tmp13) {
           const obj9 = { channel };
-          tmp29 = closure_12(tmp5(10352), obj9);
+          tmp29 = closure_12(tmp5(10353), obj9);
         }
         cResult[13] = channel;
         cResult[14] = tmp13;
@@ -523,7 +523,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function CallWi
   tmp19Result = null;
   if (first) {
     const obj9 = { channel };
-    tmp19Result = tmp19(tmp2(10352), obj9);
+    tmp19Result = tmp19(tmp2(10353), obj9);
   }
   items3[1] = closure_12(closure_6, obj8);
   return closure_13(View, obj4);
@@ -563,7 +563,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
   }
   if (cResult[2] !== tmp6) {
     const obj4 = { screens: tmp6, initialRouteName: MAIN_CALL_SCREEN };
-    const tmp9 = closure_12(tmp(6687).Navigator, obj4);
+    const tmp9 = closure_12(tmp(6688).Navigator, obj4);
     cResult[2] = tmp6;
     cResult[3] = tmp9;
     tmp7 = tmp9;
@@ -593,7 +593,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
   if (guild_id == null) {
     guild_id = null;
   }
-  let obj = { value: guild_id, children: closure_12(channel(6687).Navigator, obj2) };
+  let obj = { value: guild_id, children: closure_12(channel(6688).Navigator, obj2) };
   obj2 = { screens: { [tmp.MAIN_CALL_SCREEN]: obj3 }, initialRouteName: MAIN_CALL_SCREEN };
   obj3 = {
     headerShown: false,

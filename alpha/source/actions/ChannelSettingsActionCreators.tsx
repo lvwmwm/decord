@@ -1,15 +1,15 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9697
+// Function ID: 9698
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 9697, 2065, 1085, 584, 4977, 7901, 1295, 7027, 2]
+// Dependencies: [5, 9698, 2065, 1085, 584, 4977, 7902, 1295, 7028, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 9696 (ChannelSettingsActionCreators)
+// Module 9697 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9697 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9698 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -138,7 +138,7 @@ let obj = function _saveChannel() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -317,7 +317,7 @@ obj = function _deleteChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -374,7 +374,7 @@ obj = function _deleteChannel() {
           }
           closure_130_8();
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp21) {
         c4 = 3;

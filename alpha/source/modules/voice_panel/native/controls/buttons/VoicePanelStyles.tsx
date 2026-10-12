@@ -1,9 +1,9 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17917
+// Function ID: 17918
 // Name: VoicePanelStyles
-// Dependencies: [5092, 587, 558, 576, 8394, 2]
+// Dependencies: [5092, 587, 558, 576, 8395, 2]
 
-// Module 17860 (VoicePanelStyles)
+// Module 17917 (VoicePanelStyles)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useStateFromSharedValue = tmp(8394);
+const useStateFromSharedValue = tmp(8395);
 let closure_3 = createStyles.createStyles((arg0) => {
   let colors;
   let colors2;

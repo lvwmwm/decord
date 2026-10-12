@@ -1,19 +1,19 @@
-// Module ID: 7004
-// Function ID: 7005
+// Module ID: 7005
+// Function ID: 7006
 // Name: ForumActivePostStore
-// Dependencies: [6060, 7005, 502, 2065, 6035, 2116, 2074, 2076, 12, 7006, 11, 504, 2082, 584, 2]
+// Dependencies: [6060, 7006, 502, 2065, 6035, 2116, 2074, 2076, 12, 7007, 11, 504, 2082, 584, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 7004 (ForumActivePostStore)
+// Module 7005 (ForumActivePostStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2074 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2076 */;
 import SetUtils from "SetUtils" /* 2082 */;
-import ForumUtils from "ForumUtils" /* 7006 */;
+import ForumUtils from "ForumUtils" /* 7007 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6060 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7005 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7006 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;

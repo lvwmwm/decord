@@ -1,10 +1,10 @@
-// Module ID: 7691
-// Function ID: 7692
+// Module ID: 7692
+// Function ID: 7693
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 5729, 5734, 1503, 5909, 7692, 7696, 7545, 7693, 7514, 7515, 5377, 5088, 1126, 3120, 5958, 5379, 5918, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5729, 5734, 1503, 5909, 7693, 7697, 7546, 7694, 7515, 7516, 5377, 5088, 1126, 3120, 5958, 5379, 5918, 2]
 // Exports: default
 
-// Module 7691 (AppStoreAgeVerificationScreen)
+// Module 7692 (AppStoreAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
 import MetricEvents from "MetricEvents" /* 5734 */;
@@ -77,7 +77,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let status;
@@ -188,7 +188,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             if ("accepted" === closure_5.result) {
               callback1 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } else {
               const reason = closure_5.reason;
               unknown_str = reason;
@@ -202,7 +202,7 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
             }
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp41) {
         status = tmp41;
@@ -242,8 +242,8 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  const ModalScreen = modalSessionId(7514).ModalScreen;
-  const ModalContent = modalSessionId(7515).ModalContent;
+  const ModalScreen = modalSessionId(7515).ModalScreen;
+  const ModalContent = modalSessionId(7516).ModalContent;
   const Stack = modalSessionId(5377).Stack;
   if ("loading" === tmp5.type) {
     let obj3 = { children: items3 };

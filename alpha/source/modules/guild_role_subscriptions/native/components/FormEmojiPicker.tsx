@@ -1,13 +1,13 @@
-// Module ID: 18521
-// Function ID: 18522
+// Module ID: 18579
+// Function ID: 18580
 // Name: FormEmojiPicker
-// Dependencies: [19, 1085, 1393, 21, 5092, 5906, 587, 558, 576, 14102, 4764, 15511, 15510, 6156, 18522, 9426, 4768, 1126, 1200, 11018, 8673, 2]
+// Dependencies: [19, 1085, 1393, 21, 5092, 5906, 587, 558, 576, 14125, 4764, 15534, 15533, 6157, 18580, 9427, 4768, 1126, 1200, 11018, 8674, 2]
 
-// Module 18521 (FormEmojiPicker)
+// Module 18579 (FormEmojiPicker)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9426 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -45,14 +45,14 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
   onChange = onChange.onChange;
   ({ emojiId, emojiName } = emoji);
   const tmp4 = closure_6();
-  const tmp6 = onChange(14102)();
+  const tmp6 = onChange(14125)();
   if (cResult[0] === emojiId) {
     let tmp7;
     let tmp16;
     if (cResult[1] === emojiName) {
       tmp7 = cResult[2];
     }
-    const tmpResult = tmp(15511);
+    const tmpResult = tmp(15534);
     const emojiByIdOrName = tmpResult.useEmojiByIdOrName(guildId, tmp7);
     if (cResult[3] === tmp7) {
       let tmp12;
@@ -120,7 +120,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
               }
               const obj3 = { style: tmp19, accessibilityRole: "link", onPress: tmp18, children: items };
               items = [tmp12, tmp25, tmp29];
-              const tmp34 = closure_5(onChange(8673), obj3);
+              const tmp34 = closure_5(onChange(8674), obj3);
               cResult[21] = tmp12;
               cResult[22] = tmp18;
               cResult[23] = tmp19;
@@ -175,10 +175,10 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
     }
     if (null != tmp7) {
       const obj5 = { guildId, id: tmp7 };
-      tmp16 = closure_4(tmp5(15510), obj5);
+      tmp16 = closure_4(tmp5(15533), obj5);
     } else {
-      const obj6 = { resizeMode: "contain", source: onChange(18522) };
-      const tmp5Result = onChange(6156);
+      const obj6 = { resizeMode: "contain", source: onChange(18580) };
+      const tmp5Result = onChange(6157);
       tmp16 = closure_4(tmp5Result, obj6);
     }
     cResult[3] = tmp7;
@@ -213,7 +213,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
   const onChange = emoji.onChange;
   const tmp = closure_6();
   const tmp3 = dependencyMap;
-  const tmp4 = onChange(14102)();
+  const tmp4 = onChange(14125)();
   if (emojiId == null) {
     const convertSurrogateToName = onChange(4764).convertSurrogateToName;
     onChange(4764);
@@ -222,15 +222,15 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
     }
     emojiId = convertSurrogateToName(emojiName, false);
   }
-  let obj = guildId(15511);
+  let obj = guildId(15534);
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, emojiId);
   if (null != emojiId) {
     let obj2 = { guildId, id: emojiId };
-    tmp10 = closure_4(tmp2(15510), obj2);
+    tmp10 = closure_4(tmp2(15533), obj2);
     tmp11 = closure_4;
   } else {
-    const obj3 = { resizeMode: "contain", source: onChange(18522) };
-    const tmp2Result3 = onChange(6156);
+    const obj3 = { resizeMode: "contain", source: onChange(18580) };
+    const tmp2Result3 = onChange(6157);
     tmp10 = closure_4(tmp2Result3, obj3);
     tmp11 = closure_4;
   }
@@ -265,7 +265,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormEmojiP
   const items2 = [tmp.content, ];
   const obj5 = { style: items2, children: allEmojiNamesString };
   items2[1] = null != emojiByIdOrName ? tmp.text : tmp.placeholder;
-  const tmp2Result4 = onChange(8673);
+  const tmp2Result4 = onChange(8674);
   const LegacyText = tmp6(1200).LegacyText;
   const tmp13 = closure_5;
   if (null != emojiByIdOrName) {

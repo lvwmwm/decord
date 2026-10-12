@@ -1,23 +1,23 @@
-// Module ID: 17151
-// Function ID: 17152
+// Module ID: 17289
+// Function ID: 17290
 // Name: ConjurePlanTypeTags
-// Dependencies: [19, 17, 21, 6946, 8233, 8228, 17152, 9211, 17154, 10408, 11433, 10619, 5092, 587, 558, 576, 5088, 1126, 17143, 2]
+// Dependencies: [19, 17, 21, 6947, 8234, 8229, 17290, 9212, 17292, 10409, 11435, 10620, 5092, 587, 558, 576, 5088, 1126, 17283, 2]
 
-// Module 17151 (ConjurePlanTypeTags)
+// Module 17289 (ConjurePlanTypeTags)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ConjureTypes from "ConjureTypes" /* 6946 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8228 */;
-import AppsIcon from "AppsIcon" /* 8233 */;
-import GameControllerIcon from "GameControllerIcon" /* 9211 */;
-import ShieldIcon from "ShieldIcon" /* 10408 */;
-import SlashBoxIcon from "SlashBoxIcon" /* 10619 */;
-import RobotIcon from "RobotIcon" /* 11433 */;
-import conjurePlanTags from "conjurePlanTags" /* 17143 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 17152 */;
-import WidgetsIcon from "WidgetsIcon" /* 17154 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8229 */;
+import AppsIcon from "AppsIcon" /* 8234 */;
+import GameControllerIcon from "GameControllerIcon" /* 9212 */;
+import ShieldIcon from "ShieldIcon" /* 10409 */;
+import SlashBoxIcon from "SlashBoxIcon" /* 10620 */;
+import RobotIcon from "RobotIcon" /* 11435 */;
+import conjurePlanTags from "conjurePlanTags" /* 17283 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 17290 */;
+import WidgetsIcon from "WidgetsIcon" /* 17292 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -33,14 +33,14 @@ let obj3;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = {};
-obj[ConjureTypes.ConjureSupportedSurface.APP_CHANNEL] = AppsIcon.AppsIcon;
-obj[ConjureTypes.ConjureSupportedSurface.VOICE_CHANNEL] = VoiceNormalIcon.VoiceNormalIcon;
-obj[ConjureTypes.ConjureSupportedSurface.ACTIVITY] = ActivitiesIcon.ActivitiesIcon;
-obj[ConjureTypes.ConjureSupportedSurface.OVERLAY] = GameControllerIcon.GameControllerIcon;
-obj[ConjureTypes.ConjureSupportedSurface.PROFILE_WIDGET] = WidgetsIcon.WidgetsIcon;
-obj[ConjureTypes.ConjureSupportedSurface.AUTOMOD] = ShieldIcon.ShieldIcon;
-obj[ConjureTypes.ConjureSupportedSurface.BOT] = RobotIcon.RobotIcon;
-obj[ConjureTypes.ConjureSupportedSurface.APPLICATION_COMMANDS] = SlashBoxIcon.SlashBoxIcon;
+obj[ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL] = AppsIcon.AppsIcon;
+obj[ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL] = VoiceNormalIcon.VoiceNormalIcon;
+obj[ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY] = ActivitiesIcon.ActivitiesIcon;
+obj[ConjureProjectTypes.ConjureSupportedSurface.OVERLAY] = GameControllerIcon.GameControllerIcon;
+obj[ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET] = WidgetsIcon.WidgetsIcon;
+obj[ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD] = ShieldIcon.ShieldIcon;
+obj[ConjureProjectTypes.ConjureSupportedSurface.BOT] = RobotIcon.RobotIcon;
+obj[ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS] = SlashBoxIcon.SlashBoxIcon;
 let createStyles = createStyles_mod;
 let obj2 = { tags: obj3, tag: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 } };
 obj3 = { flexDirection: "row", flexWrap: "wrap", rowGap: nativeDefault.space.PX_4, columnGap: nativeDefault.space.PX_12 };

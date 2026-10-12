@@ -1,21 +1,21 @@
-// Module ID: 15271
-// Function ID: 15272
+// Module ID: 15294
+// Function ID: 15295
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9062, 7389, 5972, 21, 558, 576, 15272, 504, 15273, 12971, 15278, 15279, 15280, 15276, 12981, 5979, 5977, 15283, 15288, 2]
+// Dependencies: [5, 32, 19, 17, 9063, 7390, 5972, 21, 558, 576, 15295, 504, 15296, 12973, 15301, 15302, 15303, 15299, 12983, 5979, 5977, 15306, 15311, 2]
 
-// Module 15271 (BountiesScrollVideoItem)
+// Module 15294 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import QuestContent from "QuestContent" /* 5977 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12981 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15272 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12983 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9062 */;
-import BountyStore from "BountyStore" /* 7389 */;
+import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9063 */;
+import BountyStore from "BountyStore" /* 7390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -314,7 +314,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -370,7 +370,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
               });
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp24) {
           closure_2 = tmp24;
@@ -433,7 +433,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   let tmp21;
   let tmp7;
   let tmp8;
-  const f120147 = () => {
+  const f120356 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -492,9 +492,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   const handlePlayerStateChange = isEndCardVisible({ isActive, playerRef: ref }).handlePlayerStateChange;
   [tmp17, tmp18] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp20, tmp21] = isActive(obj.useState(f120147), 2);
+  [tmp20, tmp21] = isActive(obj.useState(f120356), 2);
   VirtualCurrencyStore = tmp21;
-  isActive(obj.useState(f120147), 2);
+  isActive(obj.useState(f120356), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;
@@ -523,7 +523,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -579,7 +579,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
             });
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp24) {
         width = tmp24;
@@ -804,7 +804,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScro
       return <closure_12 bounty={bounty} sourceQuestContent={sourceQuestContent} width={dependencyMap} height={_asyncToGenerator} index={_slicedToArray} isActive={isActive} isRecapPageRevealed={flag} isRecapPageOnTop={flag2} isScrollingInBoundsSharedValue={BountyStore} shouldLoadHls={shouldLoadHls} softDownloadCapsEnabled={flag3} isScrollIndicatorEnabled={flag4} />;
     }
   };
-  const BillableAdPlacementImpressionTrackerNative = bounty(12981).BillableAdPlacementImpressionTrackerNative;
+  const BillableAdPlacementImpressionTrackerNative = bounty(12983).BillableAdPlacementImpressionTrackerNative;
   return flag3(BillableAdPlacementImpressionTrackerNative, obj);
 });
 let size = size_mod;

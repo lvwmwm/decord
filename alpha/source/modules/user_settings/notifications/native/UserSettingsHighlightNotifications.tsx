@@ -1,14 +1,14 @@
-// Module ID: 15799
-// Function ID: 15800
+// Module ID: 15822
+// Function ID: 15823
 // Name: UserSettingsHighlightNotifications
-// Dependencies: [19, 2087, 5963, 5966, 1085, 21, 558, 576, 6808, 6803, 504, 6158, 6895, 8579, 2]
+// Dependencies: [19, 2087, 5963, 5966, 1085, 21, 558, 576, 6809, 6804, 504, 6159, 6896, 8580, 2]
 
-// Module 15799 (UserSettingsHighlightNotifications)
+// Module 15822 (UserSettingsHighlightNotifications)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import GuildIconDefault from "GuildIcon" /* 6158 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6803 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6808 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;
@@ -107,7 +107,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(gui
         }
       }
     }
-    const tmp20 = jsx(guildId(6895).TableSwitchRow, { label: name, icon: tmp14, value: !muted, onValueChange: tmp4, start: isStart, end: isEnd });
+    const tmp20 = jsx(guildId(6896).TableSwitchRow, { label: name, icon: tmp14, value: !muted, onValueChange: tmp4, start: isStart, end: isEnd });
     cResult[8] = tmp14;
     cResult[9] = isEnd;
     cResult[10] = isStart;
@@ -155,7 +155,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(gui
     }
     const tmp7 = !muted;
     jsx(GuildIconDefault, { guild });
-    return jsx(tmp2(6895).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
+    return jsx(tmp2(6896).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -204,7 +204,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   if (0 !== stateFromStoresArray.length) {
     let tmp11;
     if (cResult[6] !== tmp7) {
-      const tmp13 = jsx(stateFromStoresArray(8579).Form, { children: tmp7 });
+      const tmp13 = jsx(stateFromStoresArray(8580).Form, { children: tmp7 });
       cResult[6] = tmp7;
       cResult[7] = tmp13;
       tmp11 = tmp13;
@@ -224,7 +224,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   [][0] = stateFromStoresArray;
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    tmp4 = jsx(tmp(8579).Form, { children: tmp3 });
+    tmp4 = jsx(tmp(8580).Form, { children: tmp3 });
   }
   return tmp4;
 });

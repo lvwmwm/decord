@@ -1,18 +1,18 @@
-// Module ID: 8116
-// Function ID: 8117
+// Module ID: 8117
+// Function ID: 8118
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [2065, 1390, 5092, 587, 4738, 8014, 5409, 7978, 1126, 7980, 7890, 8117, 7982, 2]
+// Dependencies: [2065, 1390, 5092, 587, 4738, 8015, 5409, 7979, 1126, 7981, 7891, 8118, 7983, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 8116 (GuildSpaceLeaderboardSystemMessage)
+// Module 8117 (GuildSpaceLeaderboardSystemMessage)
 import nativeDefault from "native" /* 587 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4738 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7890 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7978 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7980 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8014 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8117 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7891 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8015 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8118 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -97,12 +97,12 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
             let obj6;
             if (null != previousLeader) {
               const obj4 = { userId: previousLeader.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-              obj6 = tmp22(7980)(obj4);
+              obj6 = tmp22(7981)(obj4);
             }
             obj2.previousUsernameOnClick = obj6;
             const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult8.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
             tmpResult8 = renderer_EmbedUtils;
-            const merged1 = Object.assign(tmp22(7982)(theme));
+            const merged1 = Object.assign(tmp22(7983)(theme));
             return obj5;
           }
           obj6 = {};

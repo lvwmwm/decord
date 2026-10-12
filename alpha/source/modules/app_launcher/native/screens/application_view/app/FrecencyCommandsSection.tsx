@@ -1,16 +1,16 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 11835
+// Function ID: 11836
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 1085, 21, 5092, 11815, 558, 576, 11834, 5107, 10622, 5088, 1126, 7246, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 11817, 558, 576, 11836, 5107, 10623, 5088, 1126, 7247, 2]
 
-// Module 11833 (FrecencyCommandsSection)
+// Module 11835 (FrecencyCommandsSection)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7246 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10622 */;
-import AppDetailContent from "AppDetailContent" /* 11815 */;
-import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 11834 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
+import AppDetailContent from "AppDetailContent" /* 11817 */;
+import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 11836 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

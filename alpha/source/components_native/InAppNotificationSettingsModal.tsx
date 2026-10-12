@@ -1,18 +1,18 @@
-// Module ID: 12593
-// Function ID: 12594
+// Module ID: 12595
+// Function ID: 12596
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 2069, 2065, 4760, 5966, 1390, 1085, 21, 6808, 6803, 5421, 8579, 1126, 12594, 7093, 558, 576, 504, 6200, 6687, 2]
+// Dependencies: [19, 2069, 2065, 4760, 5966, 1390, 1085, 21, 6809, 6804, 5421, 8580, 1126, 12596, 7094, 558, 576, 504, 6201, 6688, 2]
 
-// Module 12593 (InAppNotificationSettingsModal)
+// Module 12595 (InAppNotificationSettingsModal)
 import intl4 from "intl" /* 1126 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6200 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6803 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6808 */;
-import openUserSettings from "openUserSettings" /* 7093 */;
-import Form2 from "Form" /* 8579 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 12594 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6201 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import Form2 from "Form" /* 8580 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 12596 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -290,7 +290,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj3 = NavigatorHeader2;
     return obj;
   }, items);
-  return closure_11(channelId(6687).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return closure_11(channelId(6688).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 }));
 let result = size.fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

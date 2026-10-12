@@ -1,17 +1,17 @@
-// Module ID: 17972
-// Function ID: 17973
+// Module ID: 18029
+// Function ID: 18030
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1390, 21, 5092, 587, 558, 576, 6153, 1631, 17973, 504, 4850, 5093, 1126, 2568, 17974, 6156, 4930, 5088, 7514, 6687, 17975, 5930, 17971, 5372, 10602, 2]
+// Dependencies: [32, 19, 17, 1390, 21, 5092, 587, 558, 576, 6154, 1631, 18030, 504, 4850, 5093, 1126, 2568, 18031, 6157, 4930, 5088, 7515, 6688, 18032, 5930, 18028, 5372, 10603, 2]
 
-// Module 17972 (RestrictedHoursModal)
+// Module 18029 (RestrictedHoursModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17971 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17975 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 18028 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 18032 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -38,7 +38,7 @@ let obj8;
 let tmp;
 let tmp4;
 const useBackPressHandlerDefault = tmp4(5372);
-const ActivityIndicator_ActivityIndicator = tmp(6153);
+const ActivityIndicator_ActivityIndicator = tmp(6154);
 ({ StyleSheet, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let c9 = "rgb(0, 3, 40)";
@@ -822,7 +822,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScr
       tmp4 = cResult[2];
       tmp5 = cResult[3];
     }
-    const tmpResult = tmp(6687);
+    const tmpResult = tmp(6688);
     return tmpResult.useNavigatorScreens(tmp4, tmp5);
   }
   const fn = function o() {
@@ -966,7 +966,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedHo
       }
     }
     const obj3 = { screens: tmp12, initialRouteName: constants.MAIN };
-    const tmp20 = closure_7(tmp(10602).Modal, obj3);
+    const tmp20 = closure_7(tmp(10603).Modal, obj3);
     cResult[7] = tmp12;
     cResult[8] = tmp20;
     tmp18 = tmp20;

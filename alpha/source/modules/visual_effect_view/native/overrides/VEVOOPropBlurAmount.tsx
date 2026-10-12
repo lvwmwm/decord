@@ -1,13 +1,13 @@
-// Module ID: 16323
-// Function ID: 16324
+// Module ID: 16346
+// Function ID: 16347
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5366, 21, 5092, 558, 576, 6896, 16324, 8579, 2]
+// Dependencies: [32, 19, 5366, 21, 5092, 558, 576, 6897, 16347, 8580, 2]
 
-// Module 16323 (VEVOOPropBlurAmount)
+// Module 16346 (VEVOOPropBlurAmount)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FormSwitch from "FormSwitch" /* 6896 */;
-import Form from "Form" /* 8579 */;
+import FormSwitch from "FormSwitch" /* 6897 */;
+import Form from "Form" /* 8580 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import VEVOOStore from "VEVOOStore" /* 5366 */;
@@ -153,8 +153,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     cResult[9] = !tmp7;
     cResult[10] = !tmp7;
-    cResult[11] = jsx(first1(16324), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
-    const tmp25 = jsx(first1(16324), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
+    cResult[11] = jsx(first1(16347), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
+    const tmp25 = jsx(first1(16347), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
   }
   cResult[6] = tmp7;
   cResult[7] = tmp17;

@@ -1,17 +1,17 @@
-// Module ID: 7223
-// Function ID: 7224
+// Module ID: 7224
+// Function ID: 7225
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1085, 1126, 558, 576, 5763, 7224, 5031, 4969, 1295, 2]
+// Dependencies: [5, 1085, 1126, 558, 576, 5763, 7225, 5031, 4969, 1295, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals
 
-// Module 7223 (MemberSafetySupplementalUtils)
+// Module 7224 (MemberSafetySupplementalUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl11 from "intl" /* 1126 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7224 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7225 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ let obj = function _fetchMemberSupplemental() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;

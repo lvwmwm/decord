@@ -1,24 +1,24 @@
-// Module ID: 18009
-// Function ID: 18010
+// Module ID: 18066
+// Function ID: 18067
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 2065, 5965, 2087, 5757, 1085, 2072, 3, 1102, 6807, 1265, 584, 7340, 13942, 1403, 1279, 2]
+// Dependencies: [5, 502, 2065, 5965, 2087, 5757, 1085, 2072, 3, 1102, 6808, 1265, 584, 7341, 13965, 1403, 1279, 2]
 
-// Module 18009 (ChannelResyncManager)
+// Module 18066 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7340 */;
-import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 13942 */;
+import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7341 */;
+import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 13965 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5965 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -271,7 +271,7 @@ let obj = function _scheduleGuildResyncs() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -422,7 +422,7 @@ let obj = function _scheduleGuildResyncs() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c4 = 3;
@@ -446,7 +446,7 @@ obj = function _getResyncGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

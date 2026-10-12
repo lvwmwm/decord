@@ -1,20 +1,20 @@
-// Module ID: 12893
-// Function ID: 12894
+// Module ID: 12895
+// Function ID: 12896
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 9231, 8457, 1126, 4815, 12894, 9211, 7091, 5088, 12896, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 9232, 8458, 1126, 4815, 12896, 9212, 7092, 5088, 12898, 2]
 
-// Module 12893 (ApplicationEducation)
+// Module 12895 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import FriendsIcon from "FriendsIcon" /* 4815 */;
-import SettingsIcon from "SettingsIcon" /* 7091 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
-import GameControllerIcon from "GameControllerIcon" /* 9211 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9231 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 12894 */;
-import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 12896 */;
+import SettingsIcon from "SettingsIcon" /* 7092 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import GameControllerIcon from "GameControllerIcon" /* 9212 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9232 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 12896 */;
+import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 12898 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

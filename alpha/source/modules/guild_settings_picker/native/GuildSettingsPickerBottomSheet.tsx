@@ -1,14 +1,14 @@
-// Module ID: 14093
-// Function ID: 14094
+// Module ID: 14116
+// Function ID: 14117
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 5092, 558, 576, 14094, 5056, 38, 8637, 6838, 5088, 1200, 14098, 5379, 6839, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 14117, 5056, 38, 8638, 6839, 5088, 1200, 14121, 5379, 6840, 2]
 
-// Module 14093 (GuildSettingsPickerBottomSheet)
+// Module 14116 (GuildSettingsPickerBottomSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
-import GuildPickerDefault from "GuildPicker" /* 14098 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildPickerDefault from "GuildPicker" /* 14121 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -208,12 +208,12 @@ if (ReactCompilerGating.isReactCompilerEnabled()) {
       feature = feature.feature;
       ({ section: importDefault, subsection: dependencyMap, guildId } = feature);
       const tmp = closure_6();
-      let obj = feature(14094);
+      let obj = feature(14117);
       const guildSettingsPickerFeature = obj.useGuildSettingsPickerFeature(feature);
       ({ selectGuildCta, title, description, isGuildSupported } = guildSettingsPickerFeature);
       let obj2 = { startExpanded: true, children: items };
-      BottomSheet = feature(6839).BottomSheet;
-      items = [closure_4(feature(6838).BottomSheetTitleHeader, { title }), , , , , ];
+      BottomSheet = feature(6840).BottomSheet;
+      items = [closure_4(feature(6839).BottomSheetTitleHeader, { title }), , , , , ];
       const obj3 = { style: tmp.content, children: closure_4(feature(5088).Text, { variant: "text-md/medium", children: description }) };
       items[1] = closure_4(guildId, obj3);
       items[2] = closure_4(feature(1200).Spacer, { size: 16 });

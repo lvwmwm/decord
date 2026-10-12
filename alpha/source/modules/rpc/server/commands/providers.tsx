@@ -1,9 +1,9 @@
-// Module ID: 14730
-// Function ID: 14731
+// Module ID: 14754
+// Function ID: 14755
 // Name: providers
-// Dependencies: [5, 5761, 5639, 1085, 2024, 1096, 10939, 10945, 5763, 10936, 584, 1121, 9204, 6874, 2]
+// Dependencies: [5, 5761, 5639, 1085, 2024, 1096, 10939, 10945, 5763, 10936, 584, 1121, 9205, 6875, 2]
 
-// Module 14730 (providers)
+// Module 14754 (providers)
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
@@ -101,7 +101,7 @@ obj2 = {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c5;
@@ -167,7 +167,7 @@ obj2 = {
                   if (self) {
                     const result = handleSocketDisconnected();
                     c7 = 3;
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   } else {
                     const obj7 = provider(connection_redirect[10]);
                     const subscription = obj7.subscribe("USER_CONNECTIONS_UPDATE", handleConnectionsUpdate);
@@ -215,7 +215,7 @@ obj2 = {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp38) {
             closure_4 = tmp38;
             if (0 === c5) {
@@ -278,7 +278,7 @@ let closure_3 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "+51" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {

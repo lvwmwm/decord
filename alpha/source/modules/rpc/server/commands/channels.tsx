@@ -1,20 +1,20 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 14731
+// Function ID: 14732
 // Name: channels
-// Dependencies: [2069, 2065, 2087, 4750, 2116, 5113, 5639, 1085, 14693, 8610, 10936, 8457, 14709, 10945, 12, 14696, 10810, 10939, 5889, 5414, 1112, 8496, 2]
+// Dependencies: [2069, 2065, 2087, 4750, 2116, 5113, 5639, 1085, 14716, 8611, 10936, 8458, 14732, 10945, 12, 14719, 10810, 10939, 5889, 5414, 1112, 8497, 2]
 
-// Module 14708 (channels)
+// Module 14731 (channels)
 import router_utils from "router_utils" /* 1112 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8496 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
 import RPCHelpers from "RPCHelpers" /* 10945 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 14696 */;
-import botScopedAccess from "botScopedAccess" /* 14709 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 14719 */;
+import botScopedAccess from "botScopedAccess" /* 14732 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -169,7 +169,7 @@ let obj2 = {
         const scopes = socket.authorization.scopes;
         const tmp = require;
         if (!scopes.has(OAuth2Scopes.OAuth2Scopes.RPC)) {
-          if (!scopes.has(tmp(8457).OAuth2Scopes.DM_CHANNELS_READ)) {
+          if (!scopes.has(tmp(8458).OAuth2Scopes.DM_CHANNELS_READ)) {
             const self = this;
             const self2 = this;
             const obj2 = { errorCode: constants2.INVALID_PERMISSIONS };

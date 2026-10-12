@@ -1,17 +1,17 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12880
+// Function ID: 12881
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 2065, 21, 5092, 587, 558, 576, 1631, 9259, 504, 7369, 9293, 9292, 5934, 1126, 9297, 1382, 6200, 6184, 5088, 6209, 6773, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 21, 5092, 587, 558, 576, 1631, 9260, 504, 7370, 9294, 9293, 5934, 1126, 9298, 1382, 6201, 6185, 5088, 6210, 6774, 2]
 
-// Module 12878 (ScheduledMessageEditContentModal)
+// Module 12880 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import Pressables from "Pressables" /* 6184 */;
-import MessageParserDefault from "MessageParser" /* 7369 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9293 */;
-import HeaderShared from "HeaderShared" /* 9297 */;
+import Pressables from "Pressables" /* 6185 */;
+import MessageParserDefault from "MessageParser" /* 7370 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9294 */;
+import HeaderShared from "HeaderShared" /* 9298 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -110,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
               arr.pop();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -215,7 +215,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -251,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
             arr.pop();
           }
           stateFromStores = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         stateFromStores = 3;

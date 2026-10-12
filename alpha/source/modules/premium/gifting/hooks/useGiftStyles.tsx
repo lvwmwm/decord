@@ -1,10 +1,10 @@
-// Module ID: 10057
-// Function ID: 10058
+// Module ID: 10058
+// Function ID: 10059
 // Name: useGiftStyles
 // Dependencies: [1392, 2]
 // Exports: useGiftStyles
 
-// Module 10057 (useGiftStyles)
+// Module 10058 (useGiftStyles)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 6815
-// Function ID: 6816
+// Module ID: 6816
+// Function ID: 6817
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 5081, 5987, 1393, 21, 4850, 5092, 587, 558, 576, 504, 5093, 5378, 6816, 4828, 1126, 4818, 4832, 6819, 1415, 5088, 6184, 6822, 1200, 2]
+// Dependencies: [32, 19, 17, 5081, 5987, 1393, 21, 4850, 5092, 587, 558, 576, 504, 5093, 5378, 6817, 4828, 1126, 4818, 4832, 6820, 1415, 5088, 6185, 6823, 1200, 2]
 
-// Module 6815 (GuildOnboardingPromptOptionButton)
+// Module 6816 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -1297,7 +1297,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   S.__workletHash = 8205438722579;
   S.__initData = derivedValue1;
   const animatedStyle = obj3.useAnimatedStyle(S);
-  const tmp9 = selected(6816)(guildId);
+  const tmp9 = selected(6817)(guildId);
   closure_5 = tmp9;
   num = 0;
   if (null != tmp9) {
@@ -1594,7 +1594,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     accessibilityLabel: memo,
     children: items7
   };
-  const PressableOpacity = tmp3(6184).PressableOpacity;
+  const PressableOpacity = tmp3(6185).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -1618,7 +1618,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
     emojiURL = undefined;
     const tmp42 = closure_5;
-    tmp8Result = selected(6819);
+    tmp8Result = selected(6820);
     if (null != stateFromStores) {
       const obj13 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
@@ -1667,7 +1667,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   items11 = [tmp2.checkIcon, animatedStyle];
   const View3 = tmp8(4850).View;
   obj21 = { size: "xs", color: selected(587).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(6822).CheckmarkSmallIcon;
+  CheckmarkSmallIcon = tmp3(6823).CheckmarkSmallIcon;
   items9[2] = closure_9(View3, obj20);
   if (canBeNew) {
     canBeNew = !selected;

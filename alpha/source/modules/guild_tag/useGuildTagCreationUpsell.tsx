@@ -1,9 +1,9 @@
-// Module ID: 14879
-// Function ID: 14880
+// Module ID: 14902
+// Function ID: 14903
 // Name: useGuildTagCreationUpsell
-// Dependencies: [19, 2087, 4750, 1390, 4771, 4775, 558, 576, 12, 8289, 12247, 504, 1989, 5724, 14880, 2]
+// Dependencies: [19, 2087, 4750, 1390, 4771, 4775, 558, 576, 12, 8290, 12249, 504, 1989, 5724, 14903, 2]
 
-// Module 14879 (useGuildTagCreationUpsell)
+// Module 14902 (useGuildTagCreationUpsell)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
@@ -20,7 +20,7 @@ let guildsArray;
 
 let tmp;
 const get_initialized = tmp(504);
-const ServerTagUpsellOnProfileExperiment = tmp(14880);
+const ServerTagUpsellOnProfileExperiment = tmp(14903);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagCreationUpsell(arg0) {
   let combined;
   let enabled;

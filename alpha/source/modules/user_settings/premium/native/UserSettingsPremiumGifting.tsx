@@ -1,9 +1,9 @@
-// Module ID: 13825
-// Function ID: 13826
+// Module ID: 13848
+// Function ID: 13849
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8316, 7109, 1085, 1392, 21, 5092, 587, 558, 576, 6264, 7133, 1503, 1631, 504, 5633, 12, 7136, 9120, 10095, 8308, 13668, 7115, 7138, 8321, 6679, 6683, 9394, 6156, 13826, 5088, 1126, 13827, 13833, 13835, 13838, 13840, 2664, 13841, 6153, 10496, 6685, 2]
+// Dependencies: [32, 19, 17, 8317, 7110, 1085, 1392, 21, 5092, 587, 558, 576, 6265, 7134, 1503, 1631, 504, 5633, 12, 7137, 9121, 10096, 8309, 13691, 7116, 7139, 8322, 6680, 6684, 9395, 6157, 13849, 5088, 1126, 13850, 13856, 13858, 13861, 13863, 2664, 13864, 6154, 10497, 6686, 2]
 
-// Module 13825 (UserSettingsPremiumGifting)
+// Module 13848 (UserSettingsPremiumGifting)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1126 */;
@@ -11,28 +11,28 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import GiftCodeUtils from "GiftCodeUtils" /* 5633 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6153 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6679 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6683 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 7115 */;
-import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7133 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7138 */;
-import BadgeId from "BadgeId" /* 8308 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8321 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9394 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13826 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13827 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13833 */;
-import PremiumTierCardDefault from "PremiumTierCard" /* 13835 */;
-import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13838 */;
-import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13840 */;
-import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13841 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 7116 */;
+import useStoreConnectionErrorAlertDefault from "useStoreConnectionErrorAlert" /* 7134 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7139 */;
+import BadgeId from "BadgeId" /* 8309 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13849 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 13850 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 13856 */;
+import PremiumTierCardDefault from "PremiumTierCard" /* 13858 */;
+import GiftPurchaseButtonDefault from "GiftPurchaseButton" /* 13861 */;
+import PremiumUnverifiedWarningDefault from "PremiumUnverifiedWarning" /* 13863 */;
+import UserSettingsGiftingBadgeProgressDefault from "UserSettingsGiftingBadgeProgress" /* 13864 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8316 */;
-import EntitlementStore from "EntitlementStore" /* 7109 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import EntitlementStore from "EntitlementStore" /* 7110 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -58,7 +58,7 @@ let tmp;
 let tmp8;
 let unpackModuleId;
 const _modDef12 = tmp8(12);
-const TableRowGroup = tmp(6264);
+const TableRowGroup = tmp(6265);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet } = react_native);
@@ -184,9 +184,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     }
   }
   react = tmp15;
-  const tmpResult7 = tmp(7136);
+  const tmpResult7 = tmp(7137);
   const isPaymentsBlocked = tmpResult7.useIsPaymentsBlocked();
-  const tmpResult8 = tmp(9120);
+  const tmpResult8 = tmp(9121);
   const outboundPromotions = tmpResult8.useOutboundPromotions();
   const promotionsLoaded = outboundPromotions.promotionsLoaded;
   const activeOutboundPromotions = outboundPromotions.activeOutboundPromotions;
@@ -209,7 +209,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       }
     }
   }
-  const GiftingBadgeExperiment = tmp(10095).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp(10096).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig(tmp20).enabled;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
@@ -243,7 +243,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp25 = navigation(react.useState(false), 2);
   constants2 = tmp25[0];
   let closure_11 = tmp25[1];
-  const tmpResult10 = tmp(13668);
+  const tmpResult10 = tmp(13691);
   const subscriptionPlansLoaded = tmpResult10.useSubscriptionPlansLoaded();
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class L {

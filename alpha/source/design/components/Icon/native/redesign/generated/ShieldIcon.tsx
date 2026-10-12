@@ -1,14 +1,14 @@
-// Module ID: 10408
-// Function ID: 10409
+// Module ID: 10409
+// Function ID: 10410
 // Name: ShieldIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10409, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10410, 4817, 2]
 
-// Module 10408 (ShieldIcon)
+// Module 10409 (ShieldIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 10409 */;
+import AssetRegistry from "AssetRegistry" /* 10410 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

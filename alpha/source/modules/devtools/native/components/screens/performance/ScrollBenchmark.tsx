@@ -1,18 +1,18 @@
-// Module ID: 16090
-// Function ID: 16091
+// Module ID: 16113
+// Function ID: 16114
 // Name: ScrollBenchmark
-// Dependencies: [19, 21, 558, 576, 16087, 6179, 2]
+// Dependencies: [19, 21, 558, 576, 16110, 6180, 2]
 
-// Module 16090 (ScrollBenchmark)
+// Module 16113 (ScrollBenchmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 16087 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 16110 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TableRow2 = tmp(6179);
+const TableRow2 = tmp(6180);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScrollBenchmark(subLabel) {
   let monitoring;

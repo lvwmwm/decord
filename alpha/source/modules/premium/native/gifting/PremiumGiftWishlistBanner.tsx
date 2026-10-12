@@ -1,17 +1,17 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10150
+// Function ID: 10151
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 6931, 1392, 1085, 1087, 8307, 21, 587, 5092, 558, 576, 8967, 8979, 10150, 10154, 6851, 6878, 1265, 8303, 10097, 10155, 4977, 4809, 1126, 7262, 12702, 4962, 5088, 12727, 12732, 2]
+// Dependencies: [5, 19, 17, 6932, 1392, 1085, 1087, 8308, 21, 587, 5092, 558, 576, 8968, 8980, 10151, 10155, 6852, 6879, 1265, 8304, 10098, 10156, 4977, 4809, 1126, 7263, 12704, 4962, 5088, 12729, 12734, 2]
 
-// Module 10149 (PremiumGiftWishlistBanner)
+// Module 10150 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6931 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
-import Constants2 from "Constants" /* 8307 */;
-import useWishlistHooks from "useWishlistHooks" /* 8979 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10154 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6932 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import Constants2 from "Constants" /* 8308 */;
+import useWishlistHooks from "useWishlistHooks" /* 8980 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10155 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -428,7 +428,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                       } else if (arg0 === 2) {
                         return { value, done: true };
                       } else {
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -503,7 +503,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
                           return { value, done: true };
                         }
                         c2 = 3;
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       } catch (tmp23) {
                         c2 = 3;
                         throw tmp23;
@@ -736,7 +736,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -811,7 +811,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftW
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;

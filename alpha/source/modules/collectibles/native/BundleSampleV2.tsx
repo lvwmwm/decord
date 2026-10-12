@@ -1,19 +1,19 @@
-// Module ID: 9000
-// Function ID: 9001
+// Module ID: 9001
+// Function ID: 9002
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 9001, 21, 558, 576, 6156, 5092, 587, 38, 1993, 1990, 9002, 9013, 9020, 1200, 2]
+// Dependencies: [19, 17, 9002, 21, 558, 576, 6157, 5092, 587, 38, 1993, 1990, 9003, 9014, 9021, 1200, 2]
 
-// Module 9000 (BundleSampleV2)
+// Module 9001 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils from "utils" /* 1990 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9001 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9002 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9013 */;
-import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9020 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9002 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9003 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9014 */;
+import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9021 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -363,7 +363,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bundle
             if (null != tmp5) {
               const obj3 = { style: tmp4.nameplate, children: metroRequire(NameplateDummyUserPreview, obj4) };
               obj4 = { width: BUNDLE_PREVIEW_CONFIG[str].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: tmp5 };
-              NameplateDummyUserPreview = tmp(9020).NameplateDummyUserPreview;
+              NameplateDummyUserPreview = tmp(9021).NameplateDummyUserPreview;
               const tmp26 = React3;
               if ("large" === str) {
                 XSMALL_20 = tmp(1200).AvatarSizes.NORMAL;

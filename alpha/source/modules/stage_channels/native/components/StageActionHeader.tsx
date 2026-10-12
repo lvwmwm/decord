@@ -1,7 +1,7 @@
 // Module ID: 11144
 // Function ID: 11145
 // Name: StageActionHeader
-// Dependencies: [19, 17, 6036, 2065, 6077, 2087, 2070, 10977, 1085, 21, 5092, 6258, 4967, 587, 1265, 5107, 10360, 5934, 7481, 558, 576, 504, 5106, 1126, 1200, 11003, 11145, 5421, 5956, 5950, 5391, 5088, 8560, 7718, 11146, 7483, 11147, 8654, 8682, 10331, 10330, 10979, 10985, 10986, 10989, 11148, 11149, 2]
+// Dependencies: [19, 17, 6036, 2065, 6078, 2087, 2070, 10977, 1085, 21, 5092, 6259, 4967, 587, 1265, 5107, 10361, 5934, 7482, 558, 576, 504, 5106, 1126, 1200, 11003, 11145, 5421, 5956, 5950, 5391, 5088, 8561, 7719, 11146, 7484, 11147, 8655, 8683, 10332, 10331, 10979, 10985, 10986, 10989, 11148, 11149, 2]
 // Exports: closeStageModal
 
 // Module 11144 (StageActionHeader)
@@ -14,13 +14,13 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 *
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7483 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7718 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8560 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8682 */;
-import StatusBarDefault from "StatusBar" /* 10360 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 7484 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7719 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8561 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import StatusBarDefault from "StatusBar" /* 10361 */;
 import StageMusicActionCreators from "StageMusicActionCreators" /* 10989 */;
 import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11003 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 11145 */;
@@ -31,7 +31,7 @@ import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 11149 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6077 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import StageMusicStore from "StageMusicStore" /* 10977 */;

@@ -1,9 +1,9 @@
-// Module ID: 10496
-// Function ID: 10497
+// Module ID: 10497
+// Function ID: 10498
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5031, 1126, 1200, 2128, 4969, 10497, 10498, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5031, 1126, 1200, 2128, 4969, 10498, 10499, 2]
 
-// Module 10496 (BlockedPaymentsCountryDisplay)
+// Module 10497 (BlockedPaymentsCountryDisplay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -80,9 +80,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   }
   const tmpResult = shared;
   if (tmpResult.isThemeDark(tmp6)) {
-    tmp5Result2 = tmp5(10497);
-  } else {
     tmp5Result2 = tmp5(10498);
+  } else {
+    tmp5Result2 = tmp5(10499);
   }
   if (cResult[4] === tmp4.image) {
     let tmp17;
@@ -143,9 +143,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   const tmp7 = metroRequire;
   const tmp8 = React3;
   if (obj7.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(10497);
-  } else {
     tmp2Result = tmp2(10498);
+  } else {
+    tmp2Result = tmp2(10499);
   }
   items[2] = tmp7(tmp8, obj6);
   return tmp5(tmp6, obj);

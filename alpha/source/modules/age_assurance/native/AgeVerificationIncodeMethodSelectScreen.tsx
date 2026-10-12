@@ -1,12 +1,12 @@
-// Module ID: 7509
-// Function ID: 7510
+// Module ID: 7510
+// Function ID: 7511
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [5, 32, 19, 1205, 5917, 7498, 21, 5092, 7510, 7514, 7515, 5377, 6153, 7516, 5088, 1126, 3120, 6264, 6179, 2]
+// Dependencies: [5, 32, 19, 1205, 5917, 7499, 21, 5092, 7511, 7515, 7516, 5377, 6154, 7517, 5088, 1126, 3120, 6265, 6180, 2]
 // Exports: default
 
-// Module 7509 (AgeVerificationIncodeMethodSelectScreen)
+// Module 7510 (AgeVerificationIncodeMethodSelectScreen)
 import AgeVerificationConstants from "AgeVerificationConstants" /* 5917 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7498 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7499 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -74,7 +74,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -133,7 +133,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
             c4 = 0;
             tmp(false);
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp32) {
           if (0 === c4) {
@@ -153,11 +153,11 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     return closure_0(...arguments);
   }, items);
   const obj = { children: null };
-  const ModalScreen = onMethodSelected(7514).ModalScreen;
-  const ModalContent = onMethodSelected(7515).ModalContent;
+  const ModalScreen = onMethodSelected(7515).ModalScreen;
+  const ModalContent = onMethodSelected(7516).ModalContent;
   const obj2 = { children: null };
   if (tmp2) {
-    let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6153).ActivityIndicator, { size: "large" }) };
+    let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6154).ActivityIndicator, { size: "large" }) };
     const Stack4 = tmp7(5377).Stack;
     obj2.children = closure_9(Stack4, obj3);
     obj.children = closure_9(ModalContent, obj2);
@@ -167,7 +167,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     const Stack = tmp7(5377).Stack;
     let obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
     const Stack2 = tmp7(5377).Stack;
-    items1 = [tmp6(tmp7(7516).ShieldSpotIllustration, { height: 100, width: 177 }), ];
+    items1 = [tmp6(tmp7(7517).ShieldSpotIllustration, { height: 100, width: 177 }), ];
     const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
     const Stack3 = tmp7(5377).Stack;
     let obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.header, children: intl.string(trustedOrigin(3120).eZvwAe) };
@@ -188,7 +188,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     }
     items3[1] = tmp6Result;
     const obj10 = { hasIcons: false, children: items4 };
-    const TableRowGroup = tmp7(6264).TableRowGroup;
+    const TableRowGroup = tmp7(6265).TableRowGroup;
     const obj11 = {
       arrow: true,
       label: intl4.string(trustedOrigin(3120).rgXXcW),
@@ -197,7 +197,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
           closure_4(VerificationMethod.FACIAL_AGE_ESTIMATION);
         }
     };
-    const TableRow = tmp7(6179).TableRow;
+    const TableRow = tmp7(6180).TableRow;
     intl4 = tmp7(1126).intl;
     intl5 = tmp7(1126).intl;
     items4 = [tmp6(TableRow, obj11), ];
@@ -209,7 +209,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
           closure_4(VerificationMethod.ID_VERIFICATION);
         }
     };
-    const TableRow2 = tmp7(6179).TableRow;
+    const TableRow2 = tmp7(6180).TableRow;
     intl6 = tmp7(1126).intl;
     intl7 = tmp7(1126).intl;
     items4[1] = closure_9(TableRow2, obj12);

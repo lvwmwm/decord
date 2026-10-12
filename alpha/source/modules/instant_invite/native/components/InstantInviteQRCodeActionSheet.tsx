@@ -1,9 +1,9 @@
-// Module ID: 8732
-// Function ID: 8733
+// Module ID: 8733
+// Function ID: 8734
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 2087, 1390, 1085, 21, 5092, 587, 6158, 558, 576, 504, 1126, 584, 4808, 6838, 8733, 5088, 6898, 2]
+// Dependencies: [19, 17, 2087, 1390, 1085, 21, 5092, 587, 6159, 558, 576, 504, 1126, 584, 4808, 6839, 8734, 5088, 6899, 2]
 
-// Module 8732 (InstantInviteQRCodeActionSheet)
+// Module 8733 (InstantInviteQRCodeActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,10 +11,10 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
-import GuildIcon from "GuildIcon" /* 6158 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6838 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import components_native_QRCodeDefault from "components_native/QRCode" /* 8733 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import components_native_QRCodeDefault from "components_native/QRCode" /* 8734 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -400,14 +400,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
     tmp9 = null;
     const obj = GuildStore;
     if (null != GuildStore.getGuild(channel.guild_id)) {
-      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(6158).GuildIconSizes.LARGE };
+      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(6159).GuildIconSizes.LARGE };
       const tmp12 = GuildIconDefault;
       tmp9 = React4(tmp12, obj2);
     }
   }
   closure_13(tmp5(4808).presentFriendRequestAcceptedToast);
-  const obj3 = { header: React4(tmp5(6838).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
-  const ActionSheet = tmp5(6898).ActionSheet;
+  const obj3 = { header: React4(tmp5(6839).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
+  const ActionSheet = tmp5(6899).ActionSheet;
   const obj5 = { text: link, size: 240, style: tmp.code, accessibilityLabel: plainText };
   plainText = undefined;
   obj4 = { style: tmp.container, children: items1 };

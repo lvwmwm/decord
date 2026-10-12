@@ -1,14 +1,14 @@
 // Module ID: 11143
 // Function ID: 11144
 // Name: SingleVideoCall
-// Dependencies: [19, 10353, 21, 558, 576, 1631, 6851, 5106, 8303, 10905, 1200, 10894, 2]
+// Dependencies: [19, 10354, 21, 558, 576, 1631, 6852, 5106, 8304, 10905, 1200, 10894, 2]
 
 // Module 11143 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10353 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVide
   ({ bottom, right } = analyticsLocations(1631)());
   analyticsLocations(1631)();
   const tmp4 = analyticsLocations;
-  analyticsLocations = analyticsLocations(6851)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6852)().analyticsLocations;
   if (cResult[0] !== channel.id) {
     function handleDoubleTap() {
       React3();

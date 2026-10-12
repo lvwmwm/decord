@@ -1,17 +1,17 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 15621
+// Function ID: 15622
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1085, 2062, 21, 2049, 558, 576, 7099, 1200, 1126, 10663, 15599, 15601, 2]
+// Dependencies: [32, 19, 1085, 2062, 21, 2049, 558, 576, 7100, 1200, 1126, 10663, 15622, 15624, 2]
 
-// Module 15598 (AccessibilitySetting)
+// Module 15621 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7099 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 15599 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 15622 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavi
   let tmp4;
   let obj = first(576);
   const cResult = obj.c(3);
-  const obj2 = first(7099);
+  const obj2 = first(7100);
   [first, tmp4] = obj2.useSelectedDismissibleContent(items);
   dependencyMap = tmp4;
   if (cResult[0] === tmp4) {
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavi
 }) : (function usePreNavigationAction() {
   let closure_1;
   let first;
-  let obj = first(7099);
+  let obj = first(7100);
   const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp[0];
   dependencyMap = tmp3;

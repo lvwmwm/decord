@@ -1,16 +1,16 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12077
+// Function ID: 12078
 // Name: SuggestedSearchActionCreators
-// Dependencies: [5, 12035, 12036, 1085, 569, 12074, 12058, 584, 1295, 2]
+// Dependencies: [5, 12037, 12038, 1085, 569, 12076, 12060, 584, 1295, 2]
 // Exports: advanceSuggestedSearches, fetchInitialSuggestedSearches
 
-// Module 12075 (SuggestedSearchActionCreators)
+// Module 12077 (SuggestedSearchActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SmartSearchExperiments from "SmartSearchExperiments" /* 12074 */;
+import SmartSearchExperiments from "SmartSearchExperiments" /* 12076 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12035 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 12036 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12037 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12038 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -125,7 +125,7 @@ obj = function _fetchInitialSuggestedSearches() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -158,7 +158,7 @@ obj = function _fetchInitialSuggestedSearches() {
           return obj;
         }
         c2 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;

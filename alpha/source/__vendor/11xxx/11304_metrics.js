@@ -16,7 +16,7 @@ import DEBUG_BUILD from "module_11207" /* 11207 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f107825 = () => {
+const f108044 = () => {
   const weakMap = new WeakMap();
   return weakMap;
 };
@@ -67,7 +67,7 @@ function addToMetricsAggregator(arg0, SET_METRIC_TYPE, arg2, arg3, arg4) {
       logger.log("Adding value of " + arg3 + " to " + SET_METRIC_TYPE + " metric " + arg2);
     }
     const tmp3Result4 = _mod11209;
-    const globalSingleton = tmp3Result4.getGlobalSingleton("globalMetricsAggregators", f107825);
+    const globalSingleton = tmp3Result4.getGlobalSingleton("globalMetricsAggregators", f108044);
     let value = globalSingleton.get(client);
     if (!value) {
       const self = this;
@@ -182,7 +182,7 @@ export const metrics = {
   },
   getMetricsAggregatorForClient(on, arg1) {
     const obj = _mod11209;
-    const globalSingleton = obj.getGlobalSingleton("globalMetricsAggregators", f107825);
+    const globalSingleton = obj.getGlobalSingleton("globalMetricsAggregators", f108044);
     const value = globalSingleton.get(on);
     if (value) {
       return value;

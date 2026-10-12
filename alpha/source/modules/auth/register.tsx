@@ -1,10 +1,10 @@
-// Module ID: 16359
-// Function ID: 16360
+// Module ID: 16382
+// Function ID: 16383
 // Name: register
-// Dependencies: [5, 16360, 502, 1085, 1110, 4702, 1265, 5938, 1273, 5636, 5727, 584, 16361, 16362, 16363, 2]
+// Dependencies: [5, 16383, 502, 1085, 1110, 4702, 1265, 5938, 1273, 5636, 5727, 584, 16384, 16385, 16386, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 16359 (register)
+// Module 16382 (register)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
@@ -12,10 +12,10 @@ import _modDef4702 from "module_4702" /* 4702 */;
 import APIErrorDefault from "APIError" /* 5636 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5727 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 16361 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 16363 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 16384 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 16386 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16360 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16383 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
@@ -45,7 +45,7 @@ let obj = function _scorePassword() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ obj = function _registerPhone() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(16362)(birthday);
+    tmp9 = tmp4(16385)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

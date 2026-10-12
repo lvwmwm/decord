@@ -1,13 +1,13 @@
-// Module ID: 12029
-// Function ID: 12030
+// Module ID: 12031
+// Function ID: 12032
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 4748, 1390, 1085, 21, 5092, 6258, 6096, 7768, 12016, 6097, 2079, 8715, 6813, 12030, 2]
+// Dependencies: [5, 32, 19, 4748, 1390, 1085, 21, 5092, 6259, 6097, 7769, 12018, 6098, 2079, 8716, 6814, 12032, 2]
 // Exports: default
 
-// Module 12029 (CreateGuildContainer)
+// Module 12031 (CreateGuildContainer)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -86,7 +86,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ export default function CreateGuildContainer(onCreate) {
             closure_129_6(base64);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -146,7 +146,7 @@ export default function CreateGuildContainer(onCreate) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -258,7 +258,7 @@ export default function CreateGuildContainer(onCreate) {
         }
         closure_129_7(false);
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         channel = tmp36;
         if (0 === c3) {

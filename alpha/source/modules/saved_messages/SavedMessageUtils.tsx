@@ -1,14 +1,14 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 12658
+// Function ID: 12659
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2069, 2065, 1085, 1126, 4702, 558, 576, 504, 7014, 6949, 2]
+// Dependencies: [5, 19, 2069, 2065, 1085, 1126, 4702, 558, 576, 504, 7015, 6950, 2]
 // Exports: savedMessageJumpToMessage, useDueInString
 
-// Module 12656 (SavedMessageUtils)
+// Module 12658 (SavedMessageUtils)
 import intl2 from "intl" /* 1126 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import _modDef4702 from "module_4702" /* 4702 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -38,7 +38,7 @@ let obj = function _savedMessageJumpToMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -83,11 +83,11 @@ let obj = function _savedMessageJumpToMessage() {
               if (null == type2.recipients) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               } else if (type2.recipients.length > 1) {
                 c5 = 0;
                 c7 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               } else {
                 type = closure_131_1(closure_131_2[10]);
                 const recipients = type2.recipients;
@@ -116,7 +116,7 @@ let obj = function _savedMessageJumpToMessage() {
           type = CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId);
           tmp17(type, { openChannel: true });
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp26) {
           closure_4 = tmp26;
           if (0 === c5) {

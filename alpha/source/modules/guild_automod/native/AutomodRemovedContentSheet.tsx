@@ -1,9 +1,9 @@
-// Module ID: 17993
-// Function ID: 17994
+// Module ID: 18050
+// Function ID: 18051
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1085, 21, 7746, 5092, 587, 558, 576, 1126, 5434, 6838, 9373, 5088, 6898, 2]
+// Dependencies: [19, 17, 1085, 21, 7747, 5092, 587, 558, 576, 1126, 5434, 6839, 9374, 5088, 6899, 2]
 
-// Module 17993 (AutomodRemovedContentSheet)
+// Module 18050 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,10 +11,10 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import RowGeneratorDefault from "RowGenerator" /* 7746 */;
-import ChatItemDefault from "ChatItem" /* 9373 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import RowGeneratorDefault from "RowGenerator" /* 7747 */;
+import ChatItemDefault from "ChatItem" /* 9374 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -196,8 +196,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodRemov
     return messageRecord;
   }, items);
   const tmp5 = message;
-  const ActionSheet = message(6898).ActionSheet;
-  const BottomSheetTitleHeader = message(6838).BottomSheetTitleHeader;
+  const ActionSheet = message(6899).ActionSheet;
+  const BottomSheetTitleHeader = message(6839).BottomSheetTitleHeader;
   let intl = message(1126).intl;
   const string = intl.string;
   if (null != thread) {

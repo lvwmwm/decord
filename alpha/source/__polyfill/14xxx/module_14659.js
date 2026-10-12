@@ -1,148 +1,369 @@
 // Module ID: 14659
 // Function ID: 14660
-// Dependencies: [32, 14660]
-// Exports: default
+// Dependencies: [5, 17, 82, 14660, 14662, 14664, 14665, 14668, 14669, 14682, 14684, 14686, 14687, 14688, 14689, 14670]
 
 // Module 14659
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import ArgType2 from "ArgType" /* 14670 */;
+import _mod14689 from "module_14689" /* 14689 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import react_native_mod from "react-native" /* 17 */;
+import get_mod from "module_82" /* 82 */;
+import getReactNativeVersion from "getReactNativeVersion" /* 14660 */;
+import getReactNativeDimensions from "getReactNativeDimensions" /* 14662 */;
+import _asyncToGenerator_mod2 from "_asyncToGenerator" /* 14664 */;
+import OverlayCreator from "OverlayCreator" /* 14665 */;
+import module_14668 from "module_14668" /* 14668 */;
+import module_14669 from "module_14669" /* 14669 */;
+import module_14682 from "module_14682" /* 14682 */;
+import module_14684 from "module_14684" /* 14684 */;
+import react_native_mod2 from "react-native" /* 14686 */;
+import ArgType from "module_14687" /* 14687 */;
+import getReactNativePlatformConstants from "getReactNativePlatformConstants" /* 14688 */;
 
-let regex;
+let c1, c3, c4;
 
-const re3 = /^(image)\/.*$/i;
-let closure_4 = {};
-
-export default () => {
+let forceTouch;
+let interfaceIdiom;
+let obj10;
+let obj12;
+let obj14;
+let obj16;
+let obj18;
+let obj20;
+let obj22;
+let obj24;
+let obj26;
+let obj28;
+let obj30;
+let obj32;
+let osRelease;
+let serial;
+let serverHost;
+let tmp13;
+let uiMode;
+let _asyncToGenerator = _asyncToGenerator_mod2;
+let react_native = react_native_mod2;
+let get = get_mod;
+if (!get) {
+  tmp13 = { default: get };
+  const obj9 = { default: get };
+} else {
+  tmp13 = get;
+}
+get = tmp13;
+if (!getReactNativeVersion) {
+  obj10 = { default: getReactNativeVersion };
+  const obj11 = { default: getReactNativeVersion };
+} else {
+  obj10 = getReactNativeVersion;
+}
+if (!getReactNativeDimensions) {
+  obj12 = { default: getReactNativeDimensions };
+  const obj13 = { default: getReactNativeDimensions };
+} else {
+  obj12 = getReactNativeDimensions;
+}
+_asyncToGenerator = _asyncToGenerator_mod2;
+if (!_asyncToGenerator) {
+  obj14 = { default: _asyncToGenerator };
+  const obj15 = { default: _asyncToGenerator };
+} else {
+  obj14 = _asyncToGenerator;
+}
+if (!OverlayCreator) {
+  obj16 = { default: OverlayCreator };
+  const obj17 = { default: OverlayCreator };
+} else {
+  obj16 = OverlayCreator;
+}
+if (!module_14668) {
+  obj18 = { default: module_14668 };
+  const obj19 = { default: module_14668 };
+} else {
+  obj18 = module_14668;
+}
+if (!module_14669) {
+  obj20 = { default: module_14669 };
+  const obj21 = { default: module_14669 };
+} else {
+  obj20 = module_14669;
+}
+if (!module_14682) {
+  obj22 = { default: module_14682 };
+  const obj23 = { default: module_14682 };
+} else {
+  obj22 = module_14682;
+}
+if (!module_14684) {
+  obj24 = { default: module_14684 };
+  const obj25 = { default: module_14684 };
+} else {
+  obj24 = module_14684;
+}
+react_native = react_native_mod2;
+if (!react_native) {
+  obj26 = { default: react_native };
+  const obj27 = { default: react_native };
+} else {
+  obj26 = react_native;
+}
+if (!ArgType) {
+  obj28 = { default: ArgType };
+  const obj29 = { default: ArgType };
+} else {
+  obj28 = ArgType;
+}
+if (!getReactNativePlatformConstants) {
+  obj30 = { default: getReactNativePlatformConstants };
+  const obj31 = { default: getReactNativePlatformConstants };
+} else {
+  obj30 = getReactNativePlatformConstants;
+}
+let c15 = "@REACTOTRON/clientId";
+const defaultResult = obj30.default();
+const model = defaultResult.model;
+const systemName = defaultResult.systemName;
+const url = {
+  createSocket(url) {
+    const webSocket = new WebSocket(url);
+    return webSocket;
+  },
+  host: (function() {
+    try {
+      const _default = get.default;
+      const scriptURL = _default.getConstants().scriptURL;
+      if (typeof scriptURL !== "string") {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Invalid non-string URL");
+        throw error;
+      } else {
+        return _mod14689.getHostFromUrl(scriptURL);
+      }
+    } catch (tmp6) {
+      const _console = console;
+      const _HermesInternal = HermesInternal;
+      console.warn("getHost: \"" + tmp6.message + "\" for scriptURL - Falling back to " + "localhost");
+      return "localhost";
+    }
+  })("localhost"),
+  port: 9090,
+  name: "React Native App",
+  environment: "production",
+  client: obj32,
+  getClientId() {
+    return closure_14(...arguments);
+  },
+  setClientId(payload) {
+    return closure_13(...arguments);
+  },
+  proxyHack: true
+};
+({ osRelease, serverHost, forceTouch, interfaceIdiom, uiMode, serial } = defaultResult);
+obj32 = { reactotronLibraryName: "reactotron-react-native", reactotronLibraryVersion: "REACTOTRON_REACT_NATIVE_VERSION", platform: react_native.Platform.OS, platformVersion: react_native.Platform.Version, osRelease, model, serverHost, forceTouch, interfaceIdiom, systemName, uiMode, serial, reactNativeVersion: obj10.default() };
+const merged = Object.assign(obj12.default());
+let closure_14 = _asyncToGenerator(async (arg0, value) => {
+  let asyncStorageHandler;
+  let closure_1;
+  let closure_0 = arg0;
+  if (c4 === 2) {
+    c4 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp3 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj = { value, done: true };
+      return obj;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      let str2;
+      let tmp;
+      let screenWidth;
+      let screenHeight;
+      let screenScale;
+      let closure_5;
+      let closure_6;
+      c4 = 2;
+      if (0 === c3) {
+        if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          let closure_2 = tmp4;
+          str2 = closure_0;
+          if (closure_0 === undefined) {
+            str2 = "";
+          }
+          tmp = undefined;
+          screenWidth = undefined;
+          screenHeight = undefined;
+          screenScale = undefined;
+          closure_5 = undefined;
+          closure_6 = undefined;
+          c3 = 1;
+          c4 = 1;
+          return { value: "Set", done: true };
+        }
+      } else if (arg0 === 1) {
+        c4 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 3;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else if (closure_130_18.asyncStorageHandler) {
+        c4 = 3;
+        const obj4 = { value: asyncStorageHandler.getItem(closure_130_15), done: true };
+        asyncStorageHandler = closure_130_18.asyncStorageHandler;
+        return obj4;
+      } else {
+        tmp = closure_130_4.default();
+        screenWidth = tmp.screenWidth;
+        screenHeight = tmp.screenHeight;
+        screenScale = tmp.screenScale;
+        const items = [screenWidth, screenHeight];
+        const sorted = items.sort();
+        closure_5 = sorted.join("-");
+        const Platform = closure_130_2.Platform;
+        const obj5 = { ios: closure_130_17, android: closure_130_16, default: "" };
+        closure_6 = Platform.select(obj5);
+        const items1 = [str2, closure_130_2.Platform.OS, closure_130_2.Platform.Version, closure_6, closure_5, screenScale];
+        const _Boolean = Boolean;
+        const found = items1.filter(Boolean);
+        c4 = 3;
+        const obj6 = { value: found.join("-"), done: true };
+        return obj6;
+      }
+    } catch (tmp24) {
+      c4 = 3;
+      throw tmp24;
+    }
+  }
+});
+let closure_13 = _asyncToGenerator(async (arg0, value) => {
+  let asyncStorageHandler;
+  let closure_0;
+  if (c1 === 2) {
+    c1 = 3;
+    throw new TypeError("Generator functions may not be called on executing generators");
+  } else if (tmp2 === 3) {
+    if (arg0 === 1) {
+      throw value;
+    } else if (arg0 === 2) {
+      const obj2 = { value, done: true };
+      return obj2;
+    } else {
+      return { value: "IconComponent", done: null };
+    }
+  } else {
+    try {
+      c1 = 2;
+      if (arg0 === 1) {
+        c1 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c1 = 3;
+        const obj3 = { value, done: true };
+        return obj3;
+      } else if (client.asyncStorageHandler) {
+        c1 = 3;
+        const obj = { value: asyncStorageHandler.setItem(c15, tmp3), done: true };
+        asyncStorageHandler = client.asyncStorageHandler;
+        return obj;
+      } else {
+        c1 = 3;
+        return { value: "IconComponent", done: null };
+      }
+    } catch (tmp5) {
+      c1 = 3;
+      throw tmp5;
+    }
+  }
+});
+let items = [obj14.default(), obj20.default(), obj28.default(), obj18.default(), obj16.default(), obj22.default(), obj24.default(), obj26.default()];
+const client = ArgType2.createClient(url);
+client.useReactNative = () => {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  return (arg0) => {
-    let closure_0 = arg0;
-    function onSend(data, _url) {
-      if (merged.ignoreUrls) {
-        const ignoreUrls = merged.ignoreUrls;
-        if (ignoreUrls.test(_url._url)) {
-          _url._skipReactotron = true;
-        }
-      }
-      sum = sum + 1;
-      _url._trackingName = sum;
-      closure_4[sum] = { data, xhr: _url, stopTimer: closure_0.startTimer() };
-      ({ data, xhr: _url, stopTimer: closure_0.startTimer() });
+  if (false !== obj.errors) {
+    const errors = obj.errors;
+    let tmp3 = null;
+    const use = client.use;
+    const _default = obj20.default;
+    if (typeof errors === "object") {
+      tmp3 = errors;
     }
-    function onResponse(status, arg1, _bodyBlob, arg3, arg4, _skipReactotron) {
-      let data;
-      let responseHeaders;
-      let closure_1 = _bodyBlob;
-      regex = _skipReactotron;
-      if (!_skipReactotron._skipReactotron) {
-        let _url = arg3;
-        obj = null;
-        let num2 = -1;
-        if (arg3) {
-          let str = "?";
-          num2 = _url.indexOf("?");
-        }
-        let tmp2 = null;
-        if (num2 > -1) {
-          obj = {};
-          const str2 = _url.substr(num2 + 1);
-          const parts = str2.split("&");
-          const item = parts.forEach((item) => {
-            let str;
-            let tmp2;
-            [tmp2, str] = closure_3_2(item.split("="), 2);
-            closure_3_2(item.split("="), 2);
-            const tmp3 = tmp2 && undefined !== str;
-            if (tmp3) {
-              const _decodeURIComponent = decodeURIComponent;
-              obj[tmp2] = decodeURIComponent(str.replace(/\+/g, " "));
-            }
-          });
-          tmp2 = obj;
-        }
-        const _trackingName = _skipReactotron._trackingName;
-        let tmp5 = closure_4[_trackingName];
-        const tmp4 = closure_4;
-        if (!tmp5) {
-          tmp5 = { xhr: _skipReactotron };
-          const obj2 = { xhr: _skipReactotron };
-        }
-        tmp4[_trackingName] = null;
-        ({ stopTimer: closure_4, data } = tmp5);
-        if (!_url) {
-          _url = tmp5.xhr._url;
-        }
-        const request = { url: _url, method: _skipReactotron._method || null, data, headers: _skipReactotron._headers || null, params: tmp2 };
-        let str4 = _skipReactotron.responseHeaders && _skipReactotron.responseHeaders["content-type"];
-        if (!str4) {
-          str4 = _skipReactotron.responseHeaders && _skipReactotron.responseHeaders["Content-Type"];
-        }
-        if (!str4) {
-          str4 = "";
-        }
-        function sendResponse(result) {
-          let str = "~~~ skipped ~~~";
-          if (result) {
-            try {
-              const _JSON = JSON;
-              str = JSON.parse(result);
-            } catch (err) {
-              str = _bodyBlob;
-            }
-          }
-          const response = { body: str, status, headers: responseHeaders.responseHeaders || null };
-          let tmp4Result = null;
-          const apiResponse = status.apiResponse;
-          const tmp3 = request;
-          if (closure_4) {
-            tmp4Result = tmp4();
-          }
-          apiResponse(tmp3, response, tmp4Result);
-        }
-        if (typeof _bodyBlob === "string") {
-          const test = regex.test;
-          if (!str4) {
-            str4 = "";
-          }
-          if (!test(str4)) {
-            if ("blob" === arg4) {
-              const _FileReader = FileReader;
-              if (typeof FileReader !== "undefined") {
-                if (_bodyBlob) {
-                  const _FileReader2 = FileReader;
-                  const self = this;
-                  const self2 = this;
-                  const fileReader = new FileReader();
-                  function brListener() {
-                    sendResponse(fileReader.result);
-                    const removed = fileReader.removeEventListener("loadend", brListener);
-                  }
-                  const listener = fileReader.addEventListener("loadend", brListener);
-                  const asText = fileReader.readAsText(_bodyBlob);
-                }
-              }
-            }
-            sendResponse(_bodyBlob);
-          }
-        }
-        sendResponse("");
-      }
+    use(_default(tmp3));
+  }
+  if (false !== obj.log) {
+    client.use(obj28.default());
+  }
+  if (false !== obj.editor) {
+    const editor = obj.editor;
+    let tmp10 = null;
+    const use2 = client.use;
+    const _default2 = obj18.default;
+    if (typeof editor === "object") {
+      tmp10 = editor;
     }
-    const merged = Object.assign({}, closure_4, obj);
-    let closure_2 = merged.ignoreContentTypes || re3;
-    let sum = 1000;
-    closure_4 = {};
-    obj = {
-      onConnect() {
-        const XHRInterceptor = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor.setSendCallback(onSend);
-        const XHRInterceptor2 = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor2.setResponseCallback(onResponse);
-        const XHRInterceptor3 = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor3.enableInterception();
-      }
-    };
-    return obj;
-  };
+    use2(_default2(tmp10));
+  }
+  if (false !== obj.overlay) {
+    client.use(obj16.default());
+  }
+  if (false !== obj.asyncStorage) {
+    const asyncStorage = obj.asyncStorage;
+    let tmp17 = null;
+    const use3 = client.use;
+    const _default3 = obj14.default;
+    if (typeof asyncStorage === "object") {
+      tmp17 = asyncStorage;
+    }
+    use3(_default3(tmp17));
+  }
+  if (false !== obj.networking) {
+    const networking = obj.networking;
+    let tmp21 = null;
+    const use4 = client.use;
+    const _default4 = obj22.default;
+    if (typeof networking === "object") {
+      tmp21 = networking;
+    }
+    use4(_default4(tmp21));
+  }
+  if (false !== obj.storybook) {
+    client.use(obj24.default());
+  }
+  if (false !== obj.devTools) {
+    client.use(obj26.default());
+  }
+  return client;
 };
+client.setAsyncStorageHandler = (asyncStorageHandler) => {
+  client.asyncStorageHandler = asyncStorageHandler;
+  return client;
+};
+const asyncStorage_export = obj14.default;
+const networking_export = obj22.default;
+
+export { asyncStorage_export as asyncStorage };
+export const devTools = obj26.default;
+export { networking_export as networking };
+export const openInEditor = obj18.default;
+export const overlay = obj16.default;
+export const storybook = obj24.default;
+export const trackGlobalErrors = obj20.default;
+export const trackGlobalLogs = obj28.default;
+export const reactNativeCorePlugins = items;
+export default client;

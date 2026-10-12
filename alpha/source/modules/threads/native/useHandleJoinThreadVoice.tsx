@@ -1,10 +1,10 @@
-// Module ID: 9333
-// Function ID: 9334
+// Module ID: 9334
+// Function ID: 9335
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 4752, 8187, 6144, 2000, 7901, 7481, 2]
+// Dependencies: [5, 4752, 8188, 6145, 2000, 7902, 7482, 2]
 // Exports: default
 
-// Module 9333 (useHandleJoinThreadVoice)
+// Module 9334 (useHandleJoinThreadVoice)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ export default function useHandleJoinThreadVoice(arg0) {
     } else {
       value.openGuildVoiceModal(closure_129_0, "Thread Header");
       c3 = 3;
-      return { value: "IconComponent", done: "+51" };
+      return { value: "IconComponent", done: null };
     }
     await guildId(c2[4])(c2[6], c2.paths);
     return value.openMemberVerificationModal(guildId);

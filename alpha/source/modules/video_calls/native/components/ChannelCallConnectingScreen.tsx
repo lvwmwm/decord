@@ -1,7 +1,7 @@
 // Module ID: 11071
 // Function ID: 11072
 // Name: ChannelCallConnectingScreen
-// Dependencies: [19, 17, 5111, 2012, 4750, 5112, 10353, 1085, 1096, 21, 5092, 10840, 5056, 558, 576, 1628, 6839, 6306, 11072, 5421, 11016, 8682, 11099, 11100, 1126, 1894, 5243, 5889, 5031, 11101, 11025, 504, 11108, 7056, 11109, 11110, 587, 10913, 11127, 11128, 2]
+// Dependencies: [19, 17, 5111, 2012, 4750, 5112, 10354, 1085, 1096, 21, 5092, 10840, 5056, 558, 576, 1628, 6840, 6307, 11072, 5421, 11016, 8683, 11099, 11100, 1126, 1894, 5243, 5889, 5031, 11101, 11025, 504, 11108, 7057, 11109, 11110, 587, 10913, 11127, 11128, 2]
 // Exports: showVoiceSettingsActionSheet
 
 // Module 11071 (ChannelCallConnectingScreen)
@@ -16,10 +16,10 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
-import BottomSheetModal from "BottomSheetModal" /* 6306 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8682 */;
-import ChannelCallStore from "ChannelCallStore" /* 10353 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import useActionBarHeight from "useActionBarHeight" /* 10840 */;
 import UserSettingsVoiceDefault from "UserSettingsVoice" /* 11072 */;
 import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 11099 */;
@@ -72,9 +72,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceS
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { scrollable: true, startExpanded: first, children: authStore2(BottomSheetScrollView, obj3) };
-    BottomSheet = tmp(6839).BottomSheet;
+    BottomSheet = tmp(6840).BottomSheet;
     obj3 = { children: authStore2(UserSettingsVoiceDefault, {}) };
-    BottomSheetScrollView = tmp(6306).BottomSheetScrollView;
+    BottomSheetScrollView = tmp(6307).BottomSheetScrollView;
     const tmp9 = authStore2(BottomSheet, obj2);
     cResult[1] = tmp9;
     tmp6 = tmp9;

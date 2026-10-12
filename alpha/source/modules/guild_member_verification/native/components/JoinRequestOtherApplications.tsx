@@ -1,9 +1,9 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17049
+// Function ID: 17050
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4942, 6867, 6295, 17026, 1126, 5088, 17022, 4793, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4942, 6868, 6296, 17050, 1126, 5088, 17046, 4793, 2]
 
-// Module 17025 (JoinRequestOtherApplications)
+// Module 17049 (JoinRequestOtherApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4793 */;
@@ -45,7 +45,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-      const CircleCheckIcon = tmp(6867).CircleCheckIcon;
+      const CircleCheckIcon = tmp(6868).CircleCheckIcon;
       const tmp14 = metroRequire(CircleCheckIcon, obj2);
       cResult[0] = tmp14;
       first = tmp14;
@@ -58,7 +58,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-      const CircleXIcon = tmp(6295).CircleXIcon;
+      const CircleXIcon = tmp(6296).CircleXIcon;
       const tmp9 = metroRequire(CircleXIcon, obj3);
       cResult[1] = tmp9;
       tmp6 = tmp9;
@@ -73,11 +73,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const CircleCheckIcon = tmp(6867).CircleCheckIcon;
+    const CircleCheckIcon = tmp(6868).CircleCheckIcon;
     return metroRequire(CircleCheckIcon, obj2);
   } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp(6295).CircleXIcon;
+    const CircleXIcon = tmp(6296).CircleXIcon;
     return metroRequire(CircleXIcon, obj);
   } else {
     return null;

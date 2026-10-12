@@ -1,17 +1,17 @@
-// Module ID: 9522
-// Function ID: 9523
+// Module ID: 9523
+// Function ID: 9524
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9523, 9527, 6306, 1126, 1200, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9524, 9528, 6307, 1126, 1200, 2]
 
-// Module 9522 (EmojiPickerListComponentEmpty)
+// Module 9523 (EmojiPickerListComponentEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import SearchEmpty from "SearchEmpty" /* 9523 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9527 */;
+import SearchEmpty from "SearchEmpty" /* 9524 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9528 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmpResult2 = useModalDismissGuardRefreshControl;
     const modalDismissGuardRefreshControl = tmpResult2.useModalDismissGuardRefreshControl();
     if (inActionSheet) {
-      BottomSheetScrollView = tmp(6306).BottomSheetScrollView;
+      BottomSheetScrollView = tmp(6307).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = ScrollView;
     }
@@ -116,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = obj2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6306).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6307).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

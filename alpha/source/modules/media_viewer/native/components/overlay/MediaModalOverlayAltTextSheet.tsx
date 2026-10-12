@@ -1,7 +1,7 @@
 // Module ID: 10688
 // Function ID: 10689
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 5092, 587, 558, 576, 10689, 8326, 6838, 1126, 5088, 6839, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 10689, 8327, 6839, 1126, 5088, 6840, 2]
 
 // Module 10688 (MediaModalOverlayAltTextSheet)
 import Fragment from "Fragment" /* 21 */;
@@ -9,8 +9,8 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8326 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8327 */;
 import useMessagePreviewHeight from "useMessagePreviewHeight" /* 10689 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewe
     num = messagePreviewCollapsedheight + 20 + 50;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
     const intl = tmp(1126).intl;
     const tmp8 = <BottomSheetTitleHeader title={intl.string(intl2.t.J3IOO1)} />;
     cResult[0] = tmp8;
@@ -98,9 +98,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewe
   if (!obj2.useIsScreenLandscape()) {
     num = messagePreviewCollapsedheight + 20 + 50;
   }
-  BottomSheet = tmp2(6839).BottomSheet;
+  BottomSheet = tmp2(6840).BottomSheet;
   ({ title: intl.string(intl2.t.J3IOO1) });
-  const BottomSheetTitleHeader = tmp2(6838).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp2(6839).BottomSheetTitleHeader;
   intl = tmp2(1126).intl;
   const items = [tmp.container, { minHeight: num }];
   return <BottomSheet header={null} contentStyles={items}>{null}</BottomSheet>;

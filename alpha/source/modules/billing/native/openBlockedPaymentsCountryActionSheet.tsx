@@ -1,10 +1,10 @@
-// Module ID: 10494
-// Function ID: 10495
+// Module ID: 10495
+// Function ID: 10496
 // Name: openBlockedPaymentsCountryActionSheet
-// Dependencies: [5056, 10495, 2000, 2]
+// Dependencies: [5056, 10496, 2000, 2]
 // Exports: default
 
-// Module 10494 (openBlockedPaymentsCountryActionSheet)
+// Module 10495 (openBlockedPaymentsCountryActionSheet)
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import size from "module_2" /* 2 */;
@@ -15,5 +15,5 @@ export default function openBlockedPaymentsCountryActionSheet() {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
   const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequire(10495, dependencyMap.paths), "BlockedPaymentsCountryActionSheet");
+  obj2.openLazy(asyncRequire(10496, dependencyMap.paths), "BlockedPaymentsCountryActionSheet");
 };

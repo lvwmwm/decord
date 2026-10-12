@@ -1,15 +1,15 @@
-// Module ID: 6999
-// Function ID: 7000
+// Module ID: 7000
+// Function ID: 7001
 // Name: SensitiveMediaGoreRedactionSettingsUtils
-// Dependencies: [19, 1390, 1085, 1209, 5921, 6997, 2041, 558, 2]
+// Dependencies: [19, 1390, 1085, 1209, 5921, 6998, 2041, 558, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting
 
-// Module 6999 (SensitiveMediaGoreRedactionSettingsUtils)
+// Module 7000 (SensitiveMediaGoreRedactionSettingsUtils)
 import Constants from "Constants" /* 1085 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6997 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 6998 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,11 +1,11 @@
-// Module ID: 8834
-// Function ID: 8835
+// Module ID: 8835
+// Function ID: 8836
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 2012, 5110, 8829, 5117, 206, 558, 576, 504, 38, 8835, 2]
+// Dependencies: [32, 5, 19, 502, 2012, 5110, 8830, 5117, 206, 558, 576, 504, 38, 8836, 2]
 
-// Module 8834 (useSecureFramesPairwiseFingerprint)
+// Module 8835 (useSecureFramesPairwiseFingerprint)
 import Constants from "Constants" /* 5117 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8829 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -34,7 +34,7 @@ let SecureFramesPairwiseFingerprintMode = function _computeNativeDisplayPair() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -242,7 +242,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -346,7 +346,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
             closure_9.current = setTimeout(() => {
               _asyncToGenerator(true);
               const promise = t8();
-              promise.then(() => { /* body not rendered: F154126 */ });
+              promise.then(() => { /* body not rendered: F154441 */ });
             }, 0);
           } else {
             tmp4 = closure_10;
@@ -405,7 +405,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

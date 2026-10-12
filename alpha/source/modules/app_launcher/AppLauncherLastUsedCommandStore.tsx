@@ -1,9 +1,9 @@
-// Module ID: 11805
-// Function ID: 11806
+// Module ID: 11807
+// Function ID: 11808
 // Name: AppLauncherLastUsedCommandStore
 // Dependencies: [1102, 504, 584, 2]
 
-// Module 11805 (AppLauncherLastUsedCommandStore)
+// Module 11807 (AppLauncherLastUsedCommandStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;

@@ -1,7 +1,7 @@
 // Module ID: 11140
 // Function ID: 11141
 // Name: SingleScreenshare
-// Dependencies: [19, 10353, 21, 5092, 587, 558, 576, 5396, 5106, 11141, 2]
+// Dependencies: [19, 10354, 21, 5092, 587, 558, 576, 5396, 5106, 11141, 2]
 
 // Module 11140 (SingleScreenshare)
 import Fragment from "Fragment" /* 21 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 587 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10353 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

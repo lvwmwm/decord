@@ -1,17 +1,17 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 16414
+// Function ID: 16415
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 1085, 21, 5092, 16392, 6153, 5088, 1126, 5379, 1200, 4962, 558, 576, 1503, 5631, 1265, 16393, 16397, 6653, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 16415, 6154, 5088, 1126, 5379, 1200, 4962, 558, 576, 1503, 5631, 1265, 16416, 16420, 6654, 2]
 
-// Module 16391 (CompanionRemoteAuth)
+// Module 16414 (CompanionRemoteAuth)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import reactDefault from "react" /* 5631 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6153 */;
-import typing from "typing" /* 16392 */;
-import react_nativeDefault from "react-native" /* 16397 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
+import typing from "typing" /* 16415 */;
+import react_nativeDefault from "react-native" /* 16420 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(16393);
+  const tmpResult = tmp(16416);
   const state = tmpResult.useAuthWebsocket(first, true).state;
   if (cResult[1] !== navigation) {
     class E {
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
       }
     }
   }
-  if (state.step === tmp(16392).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === tmp(16415).RemoteAuthStep.PENDING_REMOTE_INIT) {
     class E {
       constructor() {
         navigation.goBack();
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
     }
     track(LOGIN_SUCCESSFUL, obj);
   }, []);
-  const obj3 = navigation(16393);
+  const obj3 = navigation(16416);
   const state = obj3.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = react.useCallback(() => {
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
   const tmp5 = fingerprint;
   fingerprint = null;
   const obj2 = react;
-  if (state.step === navigation(16392).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(16415).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CompanionRem
     }
   }, items1);
   const obj4 = { headerText: intl.string(tmp2(1126).t["7fNJgA"]), children: closure_7(View, obj5) };
-  const tmp5Result = tmp5(6653);
+  const tmp5Result = tmp5(6654);
   intl = tmp2(1126).intl;
   obj5 = { style: tmp.statusContainer, children: renderSteps(state, tmp, callback1, context) };
   return closure_7(tmp5Result, obj4);

@@ -1,13 +1,13 @@
-// Module ID: 16164
-// Function ID: 16165
+// Module ID: 16187
+// Function ID: 16188
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 6181, 5377, 14203, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 6182, 5377, 14226, 2]
 
-// Module 16164 (UserSettingsDesignSystemAILoader)
+// Module 16187 (UserSettingsDesignSystemAILoader)
 import react2 from "react" /* 576 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import Card_Card from "Card/Card" /* 6181 */;
-import AILoader from "AILoader" /* 14203 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import AILoader from "AILoader" /* 14226 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -85,7 +85,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { children: hasOwnProperty(Stack, obj3) };
-    const Card = tmp(6181).Card;
+    const Card = tmp(6182).Card;
     obj3 = { children: items };
     Stack = tmp(5377).Stack;
     items = [
@@ -109,7 +109,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     items1 = [first, ];
     const Stack2 = tmp(5377).Stack;
     const obj5 = { children: hasOwnProperty(Stack3, obj6) };
-    const Card2 = tmp(6181).Card;
+    const Card2 = tmp(6182).Card;
     obj6 = { children: items2 };
     Stack3 = tmp(5377).Stack;
     items2 = [

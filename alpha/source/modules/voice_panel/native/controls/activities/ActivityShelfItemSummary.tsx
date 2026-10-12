@@ -1,16 +1,16 @@
-// Module ID: 17822
-// Function ID: 17823
+// Module ID: 17879
+// Function ID: 17880
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 5092, 587, 4967, 558, 576, 17823, 10723, 1200, 5389, 5088, 5395, 4850, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 4967, 558, 576, 17880, 10723, 1200, 5389, 5088, 5395, 4850, 2]
 
-// Module 17822 (ActivityShelfItemSummary)
+// Module 17879 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ButtonPill from "ButtonPill" /* 5389 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17823 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

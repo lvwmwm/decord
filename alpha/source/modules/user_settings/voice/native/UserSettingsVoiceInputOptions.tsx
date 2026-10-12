@@ -1,14 +1,14 @@
 // Module ID: 11078
 // Function ID: 11079
 // Name: UserSettingsVoiceInputOptions
-// Dependencies: [19, 17, 2012, 1085, 21, 5092, 6890, 1126, 5243, 558, 576, 504, 6179, 5088, 6895, 11079, 11072, 2]
+// Dependencies: [19, 17, 2012, 1085, 21, 5092, 6891, 1126, 5243, 558, 576, 504, 6180, 5088, 6896, 11079, 11072, 2]
 
 // Module 11078 (UserSettingsVoiceInputOptions)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6890 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6891 */;
 import VoiceSensitivityDefault from "VoiceSensitivity" /* 11079 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
@@ -200,11 +200,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
               return obj.setMode(inputMode, obj2);
             }
       };
-      const TableSwitchRow = tmp(6895).TableSwitchRow;
+      const TableSwitchRow = tmp(6896).TableSwitchRow;
       intl5 = tmp(1126).intl;
       items2 = [closure_6(TableSwitchRow, obj3), ];
       const obj4 = { label: intl6.string(inputMode(1126).t["o+2oMK"]), subLabel: closure_6(View, obj5) };
-      const TableRow2 = tmp(6179).TableRow;
+      const TableRow2 = tmp(6180).TableRow;
       intl6 = tmp(1126).intl;
       obj5 = { style: iter.slider, children: closure_6(VoiceSensitivityDefault, obj6) };
       obj6 = {
@@ -227,7 +227,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     tmp17 = tmp19;
   }
   const obj7 = { label: tmp10, trailing: closure_6(inputMode(5088).Text, obj8), onPress: handleInputModePress };
-  const TableRow = tmp(6179).TableRow;
+  const TableRow = tmp(6180).TableRow;
   obj8 = { style: iter.value, variant: "text-md/medium", color: "text-muted", children: tmp12 };
   const tmp16 = closure_6(TableRow, obj7);
   cResult[6] = iter.value;
@@ -261,7 +261,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const UserSettingsTableRowGroup = inputMode(11072).UserSettingsTableRowGroup;
   intl = inputMode(1126).intl;
   const obj3 = { label: intl2.string(inputMode(1126).t["pS+K2L"]), trailing: closure_6(Text, obj4), onPress: handleInputModePress };
-  const TableRow = inputMode(6179).TableRow;
+  const TableRow = inputMode(6180).TableRow;
   intl2 = inputMode(1126).intl;
   obj4 = { style: iter.value, variant: "text-md/medium", color: "text-muted", children: stringResult };
   Text = inputMode(5088).Text;
@@ -286,11 +286,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           return obj.setMode(inputMode, obj2);
         }
     };
-    const TableSwitchRow = tmp(6895).TableSwitchRow;
+    const TableSwitchRow = tmp(6896).TableSwitchRow;
     intl5 = tmp(1126).intl;
     items2 = [closure_6(TableSwitchRow, obj6), ];
     const obj7 = { label: intl6.string(inputMode(1126).t["o+2oMK"]), subLabel: closure_6(View, obj8) };
-    const TableRow2 = tmp(6179).TableRow;
+    const TableRow2 = tmp(6180).TableRow;
     intl6 = tmp(1126).intl;
     obj8 = { style: iter.slider, children: closure_6(VoiceSensitivityDefault, obj9) };
     obj9 = {

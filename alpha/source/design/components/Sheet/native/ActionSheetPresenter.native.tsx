@@ -1,14 +1,14 @@
-// Module ID: 14212
-// Function ID: 14213
+// Module ID: 14235
+// Function ID: 14236
 // Name: ActionSheetPresenter
-// Dependencies: [32, 19, 17, 4802, 1085, 21, 558, 576, 1273, 8971, 5056, 5372, 5358, 6841, 504, 12135, 5306, 2]
+// Dependencies: [32, 19, 17, 4802, 1085, 21, 558, 576, 1273, 8972, 5056, 5372, 5358, 6842, 504, 12137, 5306, 2]
 
-// Module 14212 (ActionSheetPresenter)
+// Module 14235 (ActionSheetPresenter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8971 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 4802 */;
@@ -226,7 +226,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tracked
     ref2.current();
   }, []);
   let obj = { type: sheetKey(1273).ImpressionTypes.HALFSHEET, name: impressionName, properties: impressionProperties };
-  const tmp5 = transitionState(8971);
+  const tmp5 = transitionState(8972);
   tmp5(obj);
   const imperativeHandle = registerDismissHandler.useImperativeHandle(ref, () => ({
     componentDidEnter() {
@@ -258,7 +258,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tracked
     return true;
   }, items2);
   transitionState(5372)(callback3);
-  const Provider = transitionState(6841).Provider;
+  const Provider = transitionState(6842).Provider;
   return <Provider value={memo}>{null}</Provider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -317,7 +317,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionShee
       tmp11 = cResult[8];
     }
     if (cResult[10] !== tmp11) {
-      const TransitionGroup = tmp(12135).TransitionGroup;
+      const TransitionGroup = tmp(12137).TransitionGroup;
       const tmp17 = <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5306).TransitionGroupOverlayView}>{tmp11}</TransitionGroup>;
       cResult[10] = tmp11;
       cResult[11] = tmp17;
@@ -361,7 +361,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionShee
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => stack.getStack(), []);
   const found = stateFromStoresArray.filter((appEntryKey) => appEntryKey.appEntryKey === appEntryKey);
   const mapped = found.map((content) => <closure_1_9 key={arg0.key} sheetKey={arg0.key} content={arg0.content} impressionName={arg0.impressionName} impressionProperties={arg0.impressionProperties} zIndex={arg0.zIndex} />);
-  const TransitionGroup = appEntryKey(12135).TransitionGroup;
+  const TransitionGroup = appEntryKey(12137).TransitionGroup;
   return <TransitionGroup style={StyleSheet.absoluteFill} component={appEntryKey(5306).TransitionGroupOverlayView}>{mapped}</TransitionGroup>;
 });
 let result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetPresenter.native.tsx");

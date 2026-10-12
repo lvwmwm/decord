@@ -1,7 +1,7 @@
 // Module ID: 10767
 // Function ID: 10768
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 2065, 2125, 2119, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1631, 504, 1503, 5421, 10768, 8602, 5056, 9696, 10769, 5088, 1126, 8620, 6184, 7091, 6838, 8581, 10766, 10330, 7567, 6306, 6839, 2]
+// Dependencies: [19, 17, 2065, 2125, 2119, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1631, 504, 1503, 5421, 10768, 8603, 5056, 9697, 10769, 5088, 1126, 8621, 6185, 7092, 6839, 8582, 10766, 10331, 7568, 6307, 6840, 2]
 
 // Module 10767 (ChannelMembersActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,11 +13,11 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import SettingsIcon from "SettingsIcon" /* 7091 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8602 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8620 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9696 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10330 */;
+import SettingsIcon from "SettingsIcon" /* 7092 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8603 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8621 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9697 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10331 */;
 import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10766 */;
 import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 10768 */;
 import ChannelDetailsUtils from "ChannelDetailsUtils" /* 10769 */;
@@ -267,9 +267,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
         const obj7 = { title: intl5.string(intl7.t["9Oq93m"]), data: existingMembersRows };
         intl5 = tmp5(1126).intl;
         push2(obj7);
-        BottomSheet = tmp5(6839).BottomSheet;
+        BottomSheet = tmp5(6840).BottomSheet;
         const obj8 = { title: intl6.string(intl7.t.ES4CC6), subtitle: "#" + tmp9, trailing: tmp32Result };
-        const BottomSheetTitleHeader = tmp5(6838).BottomSheetTitleHeader;
+        const BottomSheetTitleHeader = tmp5(6839).BottomSheetTitleHeader;
         intl6 = tmp5(1126).intl;
         const _HermesInternal = HermesInternal;
         tmp32Result = canResult;
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
             accessibilityLabel: intl.string(intl7.t.XPDhcc),
             children: closure_11(SettingsIcon.SettingsIcon, {})
           };
-          const PressableOpacity = tmp5(6184).PressableOpacity;
+          const PressableOpacity = tmp5(6185).PressableOpacity;
           intl = tmp5(1126).intl;
           tmp32Result = tmp32(PressableOpacity, obj9);
         }
@@ -303,13 +303,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
                     },
             icon: closure_11(GroupPlusIcon.GroupPlusIcon, {})
           };
-          const RowButton = tmp5(8581).RowButton;
+          const RowButton = tmp5(8582).RowButton;
           intl3 = tmp5(1126).intl;
           tmp32Result2 = tmp32(RowButton, obj12);
         } else {
           const obj13 = { style: tmp.warning, children: closure_11(InlineNotice, obj14) };
           obj14 = { type: "info", message: intl2.string(intl7.t.VOuiSj), role: "static" };
-          InlineNotice = tmp5(7567).InlineNotice;
+          InlineNotice = tmp5(7568).InlineNotice;
           intl2 = tmp5(1126).intl;
           tmp32Result2 = tmp32(tmp14, obj13);
         }
@@ -340,7 +340,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelMembe
           stickySectionHeadersEnabled: false
         };
         obj16 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-        const BottomSheetSectionList = tmp5(6306).BottomSheetSectionList;
+        const BottomSheetSectionList = tmp5(6307).BottomSheetSectionList;
         items6[1] = closure_11(BottomSheetSectionList, obj15);
         return closure_11(BottomSheet, obj10);
       }

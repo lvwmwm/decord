@@ -1,21 +1,21 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17056
+// Function ID: 17057
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 13213, 21, 5092, 587, 6946, 17040, 11411, 5056, 11427, 17041, 1126, 3849, 6891, 17042, 17043, 17046, 17047, 6898, 6838, 6773, 6264, 6179, 5088, 17044, 17051, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 13218, 21, 5092, 587, 17057, 17058, 11413, 5056, 11417, 17059, 1126, 3849, 6892, 17062, 17066, 17067, 6899, 6839, 6774, 6265, 6180, 5088, 17063, 17071, 5379, 2]
 // Exports: default
 
-// Module 17039 (ConjureCreateSheet)
+// Module 17056 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6891 */;
-import ConjureTypes from "ConjureTypes" /* 6946 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 17043 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 17047 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6892 */;
+import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 17057 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 17062 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 17067 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13218 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
@@ -147,7 +147,7 @@ export default function ConjureCreateSheet(guildId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -203,7 +203,7 @@ export default function ConjureCreateSheet(guildId) {
             c4 = 0;
             closure_1_8(false);
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           install_scope = tmp25;
@@ -236,7 +236,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -272,7 +272,7 @@ export default function ConjureCreateSheet(guildId) {
           return obj;
         }
         c2 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp9) {
         c2 = 3;
         throw tmp9;
@@ -300,7 +300,7 @@ export default function ConjureCreateSheet(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -447,7 +447,7 @@ export default function ConjureCreateSheet(guildId) {
           closure_129_8(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp81) {
         closure_2 = tmp81;
         if (0 === c3) {
@@ -499,7 +499,7 @@ export default function ConjureCreateSheet(guildId) {
     Sheet_showSimpleActionSheet;
     const result = showSimpleActionSheet(obj);
   }, items3);
-  let obj2 = guildId(str[17]);
+  let obj2 = guildId(str[8]);
   const landingModelChoicesResult = obj2.landingModelChoices();
   c15 = landingModelChoicesResult;
   const items4 = [landingModelChoicesResult, CONJURE_DEFAULT_TIER_SETTINGS];
@@ -509,11 +509,11 @@ export default function ConjureCreateSheet(guildId) {
     const tmp = ActionSheetActionCreators;
     const showActionSheet = tmp.showActionSheet;
     const obj = { key: ConjureEffortPicker.CONJURE_EFFORT_PICKER_SHEET_KEY, stackingBehavior: "stack", content: authStore(ConjureEffortPickerSheet, obj2) };
-    obj2 = { initialSettings: CONJURE_DEFAULT_TIER_SETTINGS, tiers: ConjureTypes.CONJURE_LANDING_TIER_SEATS, choices, onChange };
+    obj2 = { initialSettings: CONJURE_DEFAULT_TIER_SETTINGS, tiers: ConjureLandingModelChoices.CONJURE_LANDING_TIER_SEATS, choices, onChange };
     ConjureEffortPickerSheet = ConjureEffortPicker.ConjureEffortPickerSheet;
     showActionSheet(obj);
   }, items4);
-  let obj3 = guildId(str[19]);
+  let obj3 = guildId(str[18]);
   const items5 = [onCreated];
   const conjureTemplatesResult = obj3.conjureTemplates();
   callback3 = obj.useCallback((arg0, arg1) => {
@@ -529,7 +529,7 @@ export default function ConjureCreateSheet(guildId) {
       const tmp = first1;
       if (!tmp) {
         const promise = callback((arg0) => {
-          const obj = guildId(str[19]);
+          const obj = guildId(str[18]);
           return obj.startConjureTemplateProject(arg0, closure_0);
         });
         promise.catch(() => {
@@ -552,48 +552,48 @@ export default function ConjureCreateSheet(guildId) {
   items7[2] = intl4.string(onCreated(str[15]).SKsrzl);
   const tmp25 = callback;
   let obj4 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: callback(BottomSheetTitleHeader, obj5), children: tmp26(tmp27, obj6) };
-  const ActionSheet = guildId(str[21]).ActionSheet;
+  const ActionSheet = guildId(str[20]).ActionSheet;
   obj5 = { title: intl5.string(onCreated(str[15])["+5XyCR"]) };
-  BottomSheetTitleHeader = guildId(str[22]).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = guildId(str[21]).BottomSheetTitleHeader;
   intl5 = guildId(str[14]).intl;
   tmp27 = CONJURE_DEFAULT_TIER_SETTINGS;
   obj6 = { style: tmp.content, children: items9 };
   let obj7 = { style: tmp.form, children: items8 };
   let obj8 = { placeholder: intl6.string(onCreated(str[15]).ab1sMf), autoComplete: "off", value: str, onChange: tmp4, disabled: first1 };
-  const TextArea = guildId(str[23]).TextArea;
+  const TextArea = guildId(str[22]).TextArea;
   intl6 = guildId(str[14]).intl;
   items8 = [callback(TextArea, obj8), , , , , ];
   let obj9 = { hasIcons: false, children: callback(TableRow, obj10) };
-  const TableRowGroup = guildId(str[24]).TableRowGroup;
-  obj10 = { label: stringResult, trailing: callback(guildId(str[26]).Text, obj11), arrow: true, disabled: first1, onPress: callback1 };
-  TableRow = guildId(str[25]).TableRow;
+  const TableRowGroup = guildId(str[23]).TableRowGroup;
+  obj10 = { label: stringResult, trailing: callback(guildId(str[25]).Text, obj11), arrow: true, disabled: first1, onPress: callback1 };
+  TableRow = guildId(str[24]).TableRow;
   obj11 = { variant: "text-md/normal", color: "text-muted", children: memo[first] };
   items8[1] = callback(TableRowGroup, obj9);
   let obj12 = { hasIcons: false, children: callback(TableRow2, obj13) };
-  const TableRowGroup2 = guildId(str[24]).TableRowGroup;
+  const TableRowGroup2 = guildId(str[23]).TableRowGroup;
   obj13 = { label: intl7.string(onCreated(str[15]).aBPQxX), trailing: callback(Text, obj14), arrow: true, disabled: first1, onPress: callback2 };
-  TableRow2 = guildId(str[25]).TableRow;
+  TableRow2 = guildId(str[24]).TableRow;
   intl7 = guildId(str[14]).intl;
   obj14 = { variant: "text-md/normal", color: "text-muted", children: obj15.conjureTierDescription(CONJURE_DEFAULT_TIER_SETTINGS.tier) };
-  Text = guildId(str[26]).Text;
-  obj15 = guildId(str[27]);
+  Text = guildId(str[25]).Text;
+  obj15 = guildId(str[26]);
   items8[2] = callback(TableRowGroup2, obj12);
   let tmp25Result = null;
   if (null != tmp16) {
     let str2 = "text-muted";
-    const Text2 = tmp18(tmp15[26]).Text;
+    const Text2 = tmp18(tmp15[25]).Text;
     if (0 === tmp16) {
       str2 = "text-feedback-warning";
     }
     let obj16 = { variant: "text-sm/normal", color: str2, children: tmp18Result.conjureAppSlotsLeftLabel(tmp16) };
-    tmp18Result = guildId(str[28]);
+    tmp18Result = guildId(str[27]);
     tmp25Result = tmp25(Text2, obj16);
   }
   items8[3] = tmp25Result;
   let tmp25Result2 = null;
   if (null != tmp13) {
     let obj17 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp13 };
-    tmp25Result2 = tmp25(tmp18(tmp15[26]).Text, obj17);
+    tmp25Result2 = tmp25(tmp18(tmp15[25]).Text, obj17);
   }
   items8[4] = tmp25Result2;
   let obj18 = {
@@ -605,23 +605,23 @@ export default function ConjureCreateSheet(guildId) {
       return closure_11();
     }
   };
-  const Button = tmp18(tmp15[29]).Button;
+  const Button = tmp18(tmp15[28]).Button;
   intl8 = tmp18(tmp15[14]).intl;
   items8[5] = tmp25(Button, obj18);
   items9 = [tmp26(tmp27, obj7), , , ];
   const obj19 = { style: tmp.section, children: items11 };
   const obj20 = { style: tmp.sectionHeading, children: items10 };
   const obj21 = { variant: "text-md/medium", color: "text-default", children: intl9.string(onCreated(str[15]).I7nPgX) };
-  const Text3 = tmp18(tmp15[26]).Text;
+  const Text3 = tmp18(tmp15[25]).Text;
   intl9 = tmp18(tmp15[14]).intl;
   items10 = [tmp25(Text3, obj21), ];
   const obj22 = { variant: "text-sm/normal", color: "text-muted", children: intl10.string(onCreated(str[15]).FXB8wQ) };
-  const Text4 = tmp18(tmp15[26]).Text;
+  const Text4 = tmp18(tmp15[25]).Text;
   intl10 = tmp18(tmp15[14]).intl;
   items10[1] = tmp25(Text4, obj22);
   items11 = [tmp26(tmp27, obj20), ];
   const obj23 = { hasIcons: false, children: tmp25(TableRow3, obj24) };
-  const TableRowGroup3 = tmp18(tmp15[24]).TableRowGroup;
+  const TableRowGroup3 = tmp18(tmp15[23]).TableRowGroup;
   obj24 = {
     label: intl11.string(onCreated(str[15])["C8/T2E"]),
     arrow: true,
@@ -633,18 +633,18 @@ export default function ConjureCreateSheet(guildId) {
       });
     }
   };
-  TableRow3 = tmp18(tmp15[25]).TableRow;
+  TableRow3 = tmp18(tmp15[24]).TableRow;
   intl11 = tmp18(tmp15[14]).intl;
   items11[1] = tmp25(TableRowGroup3, obj23);
   items9[1] = closure_11(tmp27, obj19);
   const obj25 = { style: tmp.section, children: items13 };
   const obj26 = { style: tmp.sectionHeading, children: items12 };
   const obj27 = { variant: "text-md/medium", color: "text-default", children: intl12.string(onCreated(str[15]).zzYLlW) };
-  const Text5 = tmp18(tmp15[26]).Text;
+  const Text5 = tmp18(tmp15[25]).Text;
   intl12 = tmp18(tmp15[14]).intl;
   items12 = [tmp25(Text5, obj27), ];
   const obj28 = { variant: "text-sm/normal", color: "text-muted", children: intl13.string(onCreated(str[15])["N88+Ld"]) };
-  const Text6 = tmp18(tmp15[26]).Text;
+  const Text6 = tmp18(tmp15[25]).Text;
   intl13 = tmp18(tmp15[14]).intl;
   items12[1] = tmp25(Text6, obj28);
   items13 = [tmp26(tmp27, obj26), ];
@@ -664,23 +664,23 @@ export default function ConjureCreateSheet(guildId) {
           return closure_17(name);
         }
       };
-      const TableRow = guildId(str[25]).TableRow;
+      const TableRow = guildId(str[24]).TableRow;
       intl = guildId(str[14]).intl;
       obj2 = { name: name.name };
       return callback(TableRow, obj, name.id);
     })
   };
-  const TableRowGroup4 = tmp18(tmp15[24]).TableRowGroup;
+  const TableRowGroup4 = tmp18(tmp15[23]).TableRowGroup;
   items13[1] = tmp25(TableRowGroup4, obj29);
   items9[2] = closure_11(tmp27, obj25);
   const obj30 = { style: tmp.section, children: items15 };
   const obj31 = { style: tmp.sectionHeading, children: items14 };
   const obj32 = { variant: "text-md/medium", color: "text-default", children: intl14.string(onCreated(str[15])["2XcV3x"]) };
-  const Text7 = tmp18(tmp15[26]).Text;
+  const Text7 = tmp18(tmp15[25]).Text;
   intl14 = tmp18(tmp15[14]).intl;
   items14 = [tmp25(Text7, obj32), ];
   const obj33 = { variant: "text-sm/normal", color: "text-muted", children: intl15.string(onCreated(str[15]).JnJOAn) };
-  const Text8 = tmp18(tmp15[26]).Text;
+  const Text8 = tmp18(tmp15[25]).Text;
   intl15 = tmp18(tmp15[14]).intl;
   items14[1] = tmp25(Text8, obj33);
   items15 = [tmp26(tmp27, obj31), ];
@@ -696,10 +696,10 @@ export default function ConjureCreateSheet(guildId) {
           return closure_11(label);
         }
       };
-      return callback(guildId(str[25]).TableRow, obj, label);
+      return callback(guildId(str[24]).TableRow, obj, label);
     })
   };
-  const TableRowGroup5 = tmp18(tmp15[24]).TableRowGroup;
+  const TableRowGroup5 = tmp18(tmp15[23]).TableRowGroup;
   items15[1] = tmp25(TableRowGroup5, obj34);
   items9[3] = closure_11(tmp27, obj30);
   return tmp25(ActionSheet, obj4);

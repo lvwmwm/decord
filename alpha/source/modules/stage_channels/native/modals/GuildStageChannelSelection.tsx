@@ -1,10 +1,10 @@
-// Module ID: 8677
-// Function ID: 8678
+// Module ID: 8678
+// Function ID: 8679
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4760, 1390, 21, 5092, 8555, 5421, 1894, 5056, 8553, 2000, 1126, 5088, 2]
+// Dependencies: [19, 4760, 1390, 21, 5092, 8556, 5421, 1894, 5056, 8554, 2000, 1126, 5088, 2]
 // Exports: default
 
-// Module 8677 (GuildStageChannelSelection)
+// Module 8678 (GuildStageChannelSelection)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
@@ -52,7 +52,7 @@ export default function GuildStageChannelSelection(channel) {
       selectedItem: id,
       hasIcons: false
     };
-    const tmp4 = asyncRequire(8553, dependencyMap.paths);
+    const tmp4 = asyncRequire(8554, dependencyMap.paths);
     intl = intl2.intl;
     id = undefined;
     if (channel != null) {

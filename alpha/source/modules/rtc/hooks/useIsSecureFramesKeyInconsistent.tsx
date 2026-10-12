@@ -1,13 +1,13 @@
-// Module ID: 8839
-// Function ID: 8840
+// Module ID: 8840
+// Function ID: 8841
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 5110, 7428, 558, 576, 8828, 504, 2]
+// Dependencies: [19, 5110, 7429, 558, 576, 8829, 504, 2]
 
-// Module 8839 (useIsSecureFramesKeyInconsistent)
-import SecureFramesUtils from "SecureFramesUtils" /* 8828 */;
+// Module 8840 (useIsSecureFramesKeyInconsistent)
+import SecureFramesUtils from "SecureFramesUtils" /* 8829 */;
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7428 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,11 +100,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAlertIfSe
           tmp6 = globalThis;
           _setTimeout = setTimeout;
           num = 1000;
-          tmp2.current = setTimeout(() => { /* body not rendered: F141436 */ }, 1000);
+          tmp2.current = setTimeout(() => { /* body not rendered: F141728 */ }, 1000);
           tmp4 = tmp2;
         }
         current = tmp4.current;
-        return () => { /* body not rendered: F141437 */ };
+        return () => { /* body not rendered: F141729 */ };
       }
       tmp4 = closure_5;
       clearTimeoutResult = clearTimeout(closure_5.current);

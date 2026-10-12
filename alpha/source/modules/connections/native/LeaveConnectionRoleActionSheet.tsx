@@ -1,7 +1,7 @@
 // Module ID: 10722
 // Function ID: 10723
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 1126, 5379, 6839, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 1126, 5379, 6840, 2]
 
 // Module 10722 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveConnect
     const obj5 = { children: React3(View, obj6) };
     obj6 = { style: container, children: items };
     items = [first, tmp10, tmp18];
-    BottomSheet = tmp(6839).BottomSheet;
+    BottomSheet = tmp(6840).BottomSheet;
     const tmp24 = _false(BottomSheet, obj5);
     cResult[10] = tmp4.container;
     cResult[11] = tmp10;

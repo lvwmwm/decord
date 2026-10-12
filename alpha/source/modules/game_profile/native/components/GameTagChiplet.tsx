@@ -1,21 +1,21 @@
-// Module ID: 17832
-// Function ID: 17833
+// Module ID: 17889
+// Function ID: 17890
 // Name: GameTagChiplet
-// Dependencies: [19, 21, 5092, 558, 576, 8878, 8879, 6156, 8858, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 8879, 8880, 6157, 8859, 2]
 
-// Module 17832 (GameTagChiplet)
+// Module 17889 (GameTagChiplet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GuildTag from "GuildTag" /* 8858 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8878 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8879 */;
+import GuildTag from "GuildTag" /* 8859 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8880 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const FastImageDefault = tmp3(6156);
+const FastImageDefault = tmp3(6157);
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flexShrink: 1, minWidth: 0, overflow: "hidden" }, text: { flexShrink: 1, minWidth: 0 }, image: { width: 12, height: 12 } });
 const memo = react.memo;
@@ -77,7 +77,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp12;
     if (null != tmp5) {
       const obj4 = { uri: tmp5 };
-      tmp12 = jsx(tmp8(6156), { source: obj4, accessible: false, style: tmp4.image });
+      tmp12 = jsx(tmp8(6157), { source: obj4, accessible: false, style: tmp4.image });
     }
     cResult[5] = tmp5;
     cResult[6] = tmp4.image;

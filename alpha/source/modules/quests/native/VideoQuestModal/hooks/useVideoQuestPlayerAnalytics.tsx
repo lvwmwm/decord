@@ -1,10 +1,10 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15413
+// Function ID: 15414
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [5, 19, 17, 5282, 1085, 9201, 7416, 7415, 5977, 15281, 7406, 7364, 1382, 7386, 7397, 12964, 15391, 15272, 7393, 5975, 15282, 5729, 5734, 5979, 2]
+// Dependencies: [5, 19, 17, 5282, 1085, 9202, 7417, 7416, 5977, 15304, 7407, 7365, 1382, 7387, 7398, 12966, 15414, 15295, 7394, 5975, 15305, 5729, 5734, 5979, 2]
 // Exports: default
 
-// Module 15390 (useVideoQuestPlayerAnalytics)
+// Module 15413 (useVideoQuestPlayerAnalytics)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
@@ -12,13 +12,13 @@ import MetricEvents from "MetricEvents" /* 5734 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import QuestContent from "QuestContent" /* 5977 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7393 */;
-import AnalyticsActions from "AnalyticsActions" /* 7406 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
-import AdDataUtils from "AdDataUtils" /* 7416 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 12964 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15272 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 15282 */;
+import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7394 */;
+import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
+import AdDataUtils from "AdDataUtils" /* 7417 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 15305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import NetworkStore from "NetworkStore" /* 5282 */;
@@ -84,7 +84,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -174,7 +174,7 @@ export default function useVideoQuestPlayerAnalytics(duration) {
             trackQuestEvent(obj11);
             c6 = 0;
             c8 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp49) {
           closure_5 = tmp49;

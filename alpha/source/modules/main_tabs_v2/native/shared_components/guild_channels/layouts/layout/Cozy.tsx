@@ -1,15 +1,15 @@
-// Module ID: 11763
-// Function ID: 11764
+// Module ID: 11765
+// Function ID: 11766
 // Name: Cozy
-// Dependencies: [11761, 11762, 587, 1200, 6158, 6861, 2]
+// Dependencies: [11763, 11764, 587, 1200, 6159, 6862, 2]
 
-// Module 11763 (Cozy)
+// Module 11765 (Cozy)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import GuildIcon from "GuildIcon" /* 6158 */;
-import GameIcon from "GameIcon" /* 6861 */;
-import Compact from "Compact" /* 11762 */;
-import deepmerge from "deepmerge" /* 11761 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
+import GameIcon from "GameIcon" /* 6862 */;
+import Compact from "Compact" /* 11764 */;
+import deepmerge from "deepmerge" /* 11763 */;
 import size from "module_2" /* 2 */;
 
 let items;

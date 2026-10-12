@@ -1,20 +1,20 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11759
+// Function ID: 11760
 // Name: MarkupMessagePreviewReactRules
-// Dependencies: [19, 11758, 21, 5087, 8127, 11759, 6299, 5400, 5402, 11764, 6156, 1383, 11765, 11766, 1200, 11767, 2]
+// Dependencies: [19, 11760, 21, 5087, 8128, 11761, 6300, 5400, 5402, 11766, 6157, 1383, 11767, 11768, 1200, 11769, 2]
 // Exports: default
 
-// Module 11757 (MarkupMessagePreviewReactRules)
+// Module 11759 (MarkupMessagePreviewReactRules)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 5087 */;
 import MarkupRulesDefault from "MarkupRules" /* 5402 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8127 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11758 */;
-import ChannelListLayout from "ChannelListLayout" /* 11759 */;
-import HighlightTextDefault from "HighlightText" /* 11764 */;
-import SpoilerDefault from "Spoiler" /* 11765 */;
-import TimestampDefault from "Timestamp" /* 11767 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8128 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
+import ChannelListLayout from "ChannelListLayout" /* 11761 */;
+import HighlightTextDefault from "HighlightText" /* 11766 */;
+import SpoilerDefault from "Spoiler" /* 11767 */;
+import TimestampDefault from "Timestamp" /* 11769 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const IconSize = tmp(6299);
+const IconSize = tmp(6300);
 function defaultReactFn(content, output, state) {
   if (typeof content.content === "string") {
     content = content.content;
@@ -182,7 +182,7 @@ function createMessagePreviewReactRules(customEmojiSize) {
   const MENTION = num(5400).AST_KEY.MENTION;
   const merged12 = Object.assign(MarkupRulesDefault.RULES[num(undefined, 5400).AST_KEY.MENTION]);
   obj[MENTION] = obj15;
-  const obj16 = { react: num(11766).inlineChannelMentionReact };
+  const obj16 = { react: num(11768).inlineChannelMentionReact };
   const CHANNEL_MENTION = num(5400).AST_KEY.CHANNEL_MENTION;
   const merged13 = Object.assign(MarkupRulesDefault.RULES[num(undefined, 5400).AST_KEY.CHANNEL_MENTION]);
   obj[CHANNEL_MENTION] = obj16;
@@ -208,7 +208,7 @@ function createMessagePreviewReactRules(customEmojiSize) {
   const obj19 = { react: obj20.createInlineChannelReact("\u{1F4AC}") };
   const CHANNEL = num(5400).AST_KEY.CHANNEL;
   obj[CHANNEL] = obj19;
-  obj20 = num(11766);
+  obj20 = num(11768);
   const obj21 = {
     react(node, output, key) {
       let items;

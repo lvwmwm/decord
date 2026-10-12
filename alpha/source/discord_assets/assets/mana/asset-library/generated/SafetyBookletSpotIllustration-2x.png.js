@@ -1,8 +1,8 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 10406
+// Function ID: 10407
 // Dependencies: [2]
 
-// Module 10405
+// Module 10406
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyBookletSpotIllustration-2x.png.js");

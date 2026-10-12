@@ -1,9 +1,9 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16301
+// Function ID: 16302
 // Name: DoubleTapEmojiSetting
-// Dependencies: [5, 19, 7992, 1085, 1393, 21, 5092, 587, 558, 576, 2041, 7986, 1415, 6819, 9426, 1265, 6878, 9439, 10663, 1126, 2]
+// Dependencies: [5, 19, 7993, 1085, 1393, 21, 5092, 587, 558, 576, 2041, 7987, 1415, 6820, 9427, 1265, 6879, 9440, 10663, 1126, 2]
 
-// Module 16278 (DoubleTapEmojiSetting)
+// Module 16301 (DoubleTapEmojiSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import intl2 from "intl" /* 1126 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import EmojiDefault from "Emoji" /* 6819 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7986 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import EmojiDefault from "Emoji" /* 6820 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7987 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -257,7 +257,7 @@ let obj3 = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -296,7 +296,7 @@ let obj3 = {
               const obj = emoji(closure_2[17]);
               const result = obj.showDoubleTapEmojiUpdatedToast(obj16);
               constants = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp11) {
             constants = 3;

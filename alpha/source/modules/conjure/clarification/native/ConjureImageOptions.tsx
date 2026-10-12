@@ -1,18 +1,17 @@
-// Module ID: 17242
-// Function ID: 17243
+// Module ID: 17304
+// Function ID: 17305
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 13213, 21, 5092, 587, 558, 576, 17141, 8208, 1126, 3849, 5088, 6156, 4832, 6177, 6265, 17239, 6181, 7573, 5049, 17243, 8386, 17244, 5379, 17246, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 17276, 8209, 1126, 3849, 5088, 6157, 4832, 6178, 6266, 17301, 6182, 7574, 5049, 17305, 17061, 8387, 17306, 5379, 17092, 2]
 
-// Module 17242 (clarification/ConjureImageOptions)
+// Module 17304 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import react_native from "react-native" /* 4832 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import openMediaModal from "openMediaModal" /* 8386 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17141 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 17239 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import openMediaModal from "openMediaModal" /* 8387 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17276 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 17301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -25,8 +24,8 @@ import size_mod from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _Promise, c3, closure_2, map, nextPromise, tmp4Result;
 
-let c10;
 let c9;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj10;
@@ -43,13 +42,12 @@ let obj9;
 let tmp;
 const intl5 = tmp(1126);
 const Text_Text = tmp(5088);
-const ImageWarningIcon2 = tmp(8208);
+const ImageWarningIcon2 = tmp(8209);
 let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native2);
-const getAttachmentUrl = ConjureConnectionStore.getAttachmentUrl;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let c11 = 1024;
-let c12 = 104;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let c10 = 1024;
+let c11 = 104;
 let createStyles = createStyles_mod;
 let obj = { row: obj2, own: obj3, galleryContent: obj4, rowTile: { flex: 1, minWidth: 0 }, card: obj5, ring: obj6, ringSelected: obj7, frame: obj8, frameInert: { opacity: 0.5 }, image: { width: "100%", height: "100%" }, broken: obj9, brokenText: { textAlign: "center" }, indicator: obj10, caption: obj11, view: obj12 };
 obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
@@ -64,9 +62,9 @@ obj9 = { gap: nativeDefault.space.PX_4, alignItems: "center", paddingHorizontal:
 obj10 = { position: "absolute", top: nativeDefault.space.PX_4, end: nativeDefault.space.PX_4, padding: 2, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 obj11 = { paddingHorizontal: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_4 };
 obj12 = { position: "absolute", end: nativeDefault.space.PX_8 };
-let closure_13 = createStyles(obj);
+let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageOptionPicture(onMeasured) {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageOptionPicture(onMeasured) {
   let attachmentId;
   let handleError;
   let inert;
@@ -79,7 +77,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   const cResult = obj.c(21);
   onMeasured = onMeasured.onMeasured;
   ({ projectId, attachmentId, inert } = onMeasured);
-  const tmp4 = closure_13();
+  const tmp4 = closure_12();
   const obj2 = useConjureAttachmentImage;
   const conjureAttachmentImage = obj2.useConjureAttachmentImage(projectId, attachmentId);
   ({ src, handleError } = conjureAttachmentImage);
@@ -102,7 +100,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
         const ImageWarningIcon = ImageWarningIcon2.ImageWarningIcon;
-        const tmp20 = React4(ImageWarningIcon, obj3);
+        const tmp20 = metroImportAll(ImageWarningIcon, obj3);
         cResult[3] = tmp20;
         tmp17 = tmp20;
       } else {
@@ -120,7 +118,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       }
       if (cResult[5] !== tmp4.brokenText) {
         const obj4 = { variant: "text-xs/medium", color: "text-muted", style: brokenText, children: tmp21 };
-        const tmp26 = React4(Text_Text.Text, obj4);
+        const tmp26 = metroImportAll(Text_Text.Text, obj4);
         cResult[5] = tmp4.brokenText;
         cResult[6] = tmp26;
         tmp24 = tmp26;
@@ -140,7 +138,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
           return tmp31;
         }
         const obj5 = { style: tmp7, children: tmp27 };
-        const tmp34 = React4(metroImportDefault, obj5);
+        const tmp34 = metroImportAll(metroImportDefault, obj5);
         cResult[10] = tmp7;
         cResult[11] = tmp27;
         cResult[12] = tmp34;
@@ -148,7 +146,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       }
       const obj6 = { style: broken, children: items };
       items = [tmp17, tmp24];
-      const tmp30 = authStore(metroImportDefault, obj6);
+      const tmp30 = React4(metroImportDefault, obj6);
       cResult[7] = tmp4.broken;
       cResult[8] = tmp24;
       cResult[9] = tmp30;
@@ -169,7 +167,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
               return tmp12;
             }
             const obj7 = { style: tmp7, children: tmp8 };
-            const tmp15 = React4(metroImportDefault, obj7);
+            const tmp15 = metroImportAll(metroImportDefault, obj7);
             cResult[18] = tmp7;
             cResult[19] = tmp8;
             cResult[20] = tmp15;
@@ -202,7 +200,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
           accessible: false
         };
         obj9 = { uri: src };
-        tmp9 = React4(FastImageDefault, obj8);
+        tmp9 = metroImportAll(FastImageDefault, obj8);
       }
       cResult[13] = handleError;
       cResult[14] = onMeasured;
@@ -229,7 +227,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   let tmp10;
   onMeasured = onMeasured.onMeasured;
   ({ projectId, attachmentId, inert } = onMeasured);
-  let tmp = closure_13();
+  let tmp = closure_12();
   const obj = useConjureAttachmentImage;
   const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, attachmentId);
   const src = conjureAttachmentImage.src;
@@ -244,13 +242,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   if (gone) {
     const obj3 = { style: tmp.broken, children: items1 };
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(8208).ImageWarningIcon;
-    items1 = [React4(ImageWarningIcon, obj4), ];
+    const ImageWarningIcon = tmp2(8209).ImageWarningIcon;
+    items1 = [metroImportAll(ImageWarningIcon, obj4), ];
     const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3849.lhgD88) };
     const Text = tmp2(5088).Text;
     intl = tmp2(1126).intl;
-    items1[1] = React4(Text, obj5);
-    obj2.children = authStore(metroImportDefault, obj3);
+    items1[1] = metroImportAll(Text, obj5);
+    obj2.children = React4(metroImportDefault, obj3);
     tmp10 = obj2;
   } else {
     let tmp6Result = null;
@@ -283,10 +281,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     obj2.children = tmp6Result;
     tmp10 = obj2;
   }
-  return React4(metroImportDefault, tmp10);
+  return metroImportAll(metroImportDefault, tmp10);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageOptionTile(onView) {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageOptionTile(onView) {
   let accessibilityRole;
   let accessibilityState;
   let disabled;
@@ -306,7 +304,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   ({ onMeasured, onPick } = onView);
   onView = onView.onView;
   const onRemove = onView.onRemove;
-  const tmp4 = closure_13();
+  const tmp4 = closure_12();
   if (cResult[0] === disabled) {
     react_native;
     if (cResult[3] === disabled) {
@@ -356,7 +354,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                     if (cResult[24] === onView) {
                       let tmp36;
                       if (cResult[27] !== onFrameHeight) {
-                        class V {
+                        class U {
                           constructor(arg0) {
                             return onFrameHeight(onView.nativeEvent.layout.height);
                           }
@@ -378,9 +376,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                             return;
                           }
                         }
-                        cResult[28] = V;
+                        cResult[28] = U;
                       } else {
-                        class V {
+                        class U {
                           constructor(arg0) {
                             return onFrameHeight(onView.nativeEvent.layout.height);
                           }
@@ -404,7 +402,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                         }
                       }
                       if (null != option.image) {
-                        class V {
+                        class U {
                           constructor(arg0) {
                             return onFrameHeight(onView.nativeEvent.layout.height);
                           }
@@ -430,9 +428,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                         tmp38[1] = option.image.attachment_id;
                         tmp38[2] = disabled;
                         tmp38[3] = onMeasured;
-                        tmp36 = React4(closure_14, tmp38);
+                        tmp36 = metroImportAll(closure_13, tmp38);
                       } else {
-                        class V {
+                        class U {
                           constructor(arg0) {
                             return onFrameHeight(onView.nativeEvent.layout.height);
                           }
@@ -455,7 +453,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                           }
                         }
                         tmp35[0] = tmp4.frame;
-                        tmp36 = React4(metroImportDefault, tmp35);
+                        tmp36 = metroImportAll(metroImportDefault, tmp35);
                       }
                       cResult[29] = disabled;
                       cResult[30] = onMeasured;
@@ -488,7 +486,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                   cResult[26] = N;
                 }
                 if (null != onRemove) {
-                  class V {
+                  class U {
                     constructor(arg0) {
                       return onFrameHeight(onView.nativeEvent.layout.height);
                     }
@@ -515,13 +513,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                   const items = [tmp30];
                   tmp27 = items;
                 } else {
-                  class V {
+                  class U {
                     constructor(arg0) {
                       return onFrameHeight(onView.nativeEvent.layout.height);
                     }
                   }
                   if (null != option.image) {
-                    class V {
+                    class U {
                       constructor(arg0) {
                         return onFrameHeight(onView.nativeEvent.layout.height);
                       }
@@ -554,7 +552,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
               }
             }
             if (!disabled) {
-              class V {
+              class U {
                 constructor(arg0) {
                   return onFrameHeight(onView.nativeEvent.layout.height);
                 }
@@ -573,7 +571,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
         cResult[13] = items1;
       }
       if (null != galleryWidth) {
-        class V {
+        class U {
           constructor(arg0) {
             return onFrameHeight(onView.nativeEvent.layout.height);
           }
@@ -597,7 +595,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
           }
         }
       } else {
-        class V {
+        class U {
           constructor(arg0) {
             return onFrameHeight(onView.nativeEvent.layout.height);
           }
@@ -652,7 +650,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   option = option.option;
   ({ multi, galleryWidth, selected, disabled, frameHeight, onFrameHeight: closure_129_1, onPick: closure_129_2, onView: closure_129_3, onRemove } = option);
   ({ projectId, onMeasured } = option);
-  const tmp = closure_13();
+  const tmp = closure_12();
   const obj = react_native;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected, disabled });
   const obj2 = react_native;
@@ -696,7 +694,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     children: items4
   };
   fn = undefined;
-  const Card = tmp2(6181).Card;
+  const Card = tmp2(6182).Card;
   if (!disabled) {
     fn = () => closure_1_2(option);
   }
@@ -715,40 +713,40 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   }
   const obj10 = {
     onLayout(nativeEvent) {
-      return ref(nativeEvent.nativeEvent.layout.height);
+      return closure_1_1(nativeEvent.nativeEvent.layout.height);
     },
     children: items3
   };
   if (null != option.image) {
     const obj11 = { projectId, attachmentId: option.image.attachment_id, inert: disabled, onMeasured };
-    tmp13 = React4(closure_14, obj11);
-    tmp12 = React4;
+    tmp13 = metroImportAll(closure_13, obj11);
+    tmp12 = metroImportAll;
   } else {
-    tmp12 = React4;
+    tmp12 = metroImportAll;
     const obj12 = { style: tmp.frame };
-    tmp13 = React4(tmp9, obj12);
+    tmp13 = metroImportAll(tmp9, obj12);
   }
   items3 = [tmp13, ];
   if (multi) {
     const obj13 = { style: tmp.indicator, children: tmp12Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp12Result = tmp12(tmp2(6177).FormCheckbox, obj14);
+      tmp12Result = tmp12(tmp2(6178).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp12Result = tmp12(tmp2(6265).FormRadio, obj15);
+      tmp12Result = tmp12(tmp2(6266).FormRadio, obj15);
     }
     tmp12Result3 = tmp12(tmp9, obj13);
   } else {
     tmp12Result3 = null;
   }
   items3[1] = tmp12Result3;
-  items4 = [authStore(metroImportDefault, obj10), ];
+  items4 = [React4(metroImportDefault, obj10), ];
   const obj16 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
   const Text = tmp2(5088).Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp12(Text, obj16);
-  items5 = [authStore(Card, obj6), ];
+  items5 = [React4(Card, obj6), ];
   let tmp12Result4 = null;
   if (null != option.image) {
     tmp12Result4 = null;
@@ -758,11 +756,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(7573).IconButton;
+      IconButton = tmp2(7574).IconButton;
       if (null != onRemove) {
         MaximizeIcon = tmp2(5049).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(17243).MaximizeIcon;
+        MaximizeIcon = tmp2(17305).MaximizeIcon;
       }
       obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3849.JGjZMs, obj20) };
       if (null == onRemove) {
@@ -774,37 +772,34 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     }
   }
   items5[1] = tmp12Result4;
-  return authStore(metroImportDefault, obj4);
+  return React4(metroImportDefault, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureImageOptions(projectId) {
-  let closure_10;
   let disabled;
-  let items1;
-  let items2;
+  let id;
   let multi;
-  let num4;
   let question;
   let selectedIds;
-  let tmp17;
+  let tmp15;
   let tmp18;
+  let tmp19;
   let tmp6;
   let tmp8;
-  let tmpResult3;
   let tmp = projectId;
   let tmp2 = disabled;
-  let obj = projectId(disabled[9]);
+  let obj = projectId(disabled[8]);
   const cResult = obj.c(57);
   projectId = projectId.projectId;
   ({ question, selectedIds } = projectId);
   disabled = projectId.disabled;
   const onPick = projectId.onPick;
   const own = projectId.own;
-  const tmp4 = closure_13();
+  id();
   react = tmp5;
   const options = question.options;
   if (cResult[0] !== options) {
-    const tmpResult = tmp(tmp2[19]);
+    const tmpResult = tmp(tmp2[18]);
     const imageOptionsLayoutResult = tmpResult.imageOptionsLayout(options);
     cResult[0] = options;
     cResult[1] = imageOptionsLayoutResult;
@@ -822,261 +817,114 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
   } else {
     tmp8 = cResult[2];
   }
-  let obj3 = react;
   let closure_7 = react.useRef(tmp8);
   const tmp11 = own(react.useState(null), 2);
   const frameHeight = tmp11[0];
   const onFrameHeight = tmp13;
-  [num4, closure_10] = own(react.useState(null), 2);
-  const tmp14 = own(react.useState(null), 2);
+  [tmp15, c10] = own(react.useState(null), 2);
+  own(react.useState(null), 2);
   const ref = react.useRef(null);
   const image = own.image;
-  let id;
+  id = undefined;
+  const obj3 = react;
   if (image != null) {
     id = image.attachment.id;
   }
   if (cResult[3] !== id) {
-    const fn = function j() {
-      if (null != id) {
-        const current = ref.current;
-        if (current != null) {
-          current.scrollToEnd({ animated: true });
+    class O {
+      constructor() {
+        if (null != id) {
+          const current = ref.current;
+          if (current != null) {
+            current.scrollToEnd({ animated: true });
+          }
         }
       }
-    };
+    }
     const items = [id];
     cResult[3] = id;
-    cResult[4] = fn;
+    cResult[4] = O;
     cResult[5] = items;
-    tmp18 = items;
-    tmp17 = fn;
+    tmp19 = items;
+    tmp18 = O;
   } else {
-    tmp17 = cResult[4];
-    tmp18 = cResult[5];
+    class O {
+      constructor() {
+        if (null != id) {
+          const current = ref.current;
+          if (current != null) {
+            current.scrollToEnd({ animated: true });
+          }
+        }
+      }
+    }
+    tmp19 = cResult[5];
   }
-  const effect = obj3.useEffect(tmp17, tmp18);
-  let num8 = 0;
+  const effect = obj3.useEffect(tmp18, tmp19);
   const length = options.length;
   if (null != own.image) {
-    num8 = 1;
+    class O {
+      constructor() {
+        if (null != id) {
+          const current = ref.current;
+          if (current != null) {
+            current.scrollToEnd({ animated: true });
+          }
+        }
+      }
+    }
   }
-  const sum = length + num8;
-  let tmp21 = null != num4;
-  if (tmp21) {
-    tmp21 = (num4 - selectedIds(tmp2[7]).space.PX_8 * (sum - 1)) / sum < id;
+  const sum = length;
+  let tmp22 = null != tmp15;
+  if (tmp22) {
+    class O {
+      constructor() {
+        if (null != id) {
+          const current = ref.current;
+          if (current != null) {
+            current.scrollToEnd({ animated: true });
+          }
+        }
+      }
+    }
+    tmp22 = (tmp15 - selectedIds(tmp2[6]).space.PX_8 * (sum - 1)) / sum < ref;
   }
   closure_13 = tmp24;
   const _Math = Math;
   const _Math2 = Math;
-  const tmp25 = id;
-  const maxResult = max(tmp25, min(136, (num4 - 2 * selectedIds(tmp2[7]).space.PX_8) / 2.4));
+  const tmp25 = ref;
+  if (tmp15 == null) {
+    class O {
+      constructor() {
+        if (null != id) {
+          const current = ref.current;
+          if (current != null) {
+            current.scrollToEnd({ animated: true });
+          }
+        }
+      }
+    }
+  }
+  const maxResult = max(tmp25, min(136, (tmp15 - 2 * selectedIds(tmp2[6]).space.PX_8) / 2.4));
   if (cResult[6] === options) {
-    let tmp27;
-    if (cResult[7] === projectId) {
-      tmp27 = cResult[8];
+    class O {
+      constructor() {
+        if (null != id) {
+          const current = ref.current;
+          if (current != null) {
+            current.scrollToEnd({ animated: true });
+          }
+        }
+      }
     }
     const onView = tmp27;
     if (cResult[9] === disabled) {
-      if (cResult[10] === frameHeight) {
-        if (cResult[11] === maxResult) {
-          if (cResult[12] === true === question.multi_select) {
-            if (cResult[13] === onPick) {
-              if (cResult[14] === options) {
-                if (cResult[15] === own.image) {
-                  if (cResult[16] === own.onPick) {
-                    if (cResult[17] === own.onRemove) {
-                      if (cResult[18] === own.selected) {
-                        if (cResult[19] === projectId) {
-                          if (cResult[20] === ("gallery" === tmp6 || tmp21)) {
-                            if (cResult[21] === selectedIds) {
-                              let tmp28;
-                              if (cResult[22] === tmp27) {
-                                tmp28 = cResult[23];
-                              }
-                              if (cResult[38] === own) {
-                                let tmp39;
-                                let tmp41;
-                                let tmp43Result;
-                                if (cResult[39] === projectId) {
-                                  tmp39 = cResult[40];
-                                }
-                                let closure_16 = tmp39;
-                                const _Symbol3 = Symbol;
-                                if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
-                                  function oe(nativeEvent) {
-                                    return closure_10(nativeEvent.nativeEvent.layout.width);
-                                  }
-                                  cResult[41] = oe;
-                                  tmp41 = oe;
-                                } else {
-                                  tmp41 = cResult[41];
-                                }
-                                if (cResult[42] === ("gallery" === tmp6 || tmp21)) {
-                                  if (cResult[43] === tmp4.galleryContent) {
-                                    if (cResult[44] === tmp4.row) {
-                                      let tmp42;
-                                      if (cResult[45] === tmp28) {
-                                        tmp42 = cResult[46];
-                                      }
-                                      if (cResult[47] === disabled) {
-                                        if (cResult[48] === own.busy) {
-                                          if (cResult[49] === own.error) {
-                                            if (cResult[50] === tmp39) {
-                                              if (cResult[51] === question) {
-                                                let tmp47;
-                                                if (cResult[52] === tmp4.own) {
-                                                  tmp47 = cResult[53];
-                                                }
-                                                if (cResult[54] === tmp42) {
-                                                  let tmp53;
-                                                  if (cResult[55] === tmp47) {
-                                                    tmp53 = cResult[56];
-                                                  }
-                                                  return tmp53;
-                                                }
-                                                let obj2 = { onLayout: tmp41, children: items1 };
-                                                items1 = [tmp42, tmp47];
-                                                const tmp56 = closure_10(closure_7, obj2);
-                                                cResult[54] = tmp42;
-                                                cResult[55] = tmp47;
-                                                cResult[56] = tmp56;
-                                                tmp53 = tmp56;
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                      let tmp49Result = null;
-                                      if (!disabled) {
-                                        let obj4 = { style: tmp4.own, children: items2 };
-                                        let obj5 = {
-                                          variant: "secondary",
-                                          size: "sm",
-                                          icon: onFrameHeight(tmp(tmp2[27]).ImagePlusIcon, { size: "xs" }),
-                                          text: tmpResult3.ownImageUploadText(question),
-                                          loading: "upload" === own.busy,
-                                          onPress() {
-                                                                                  const promise = closure_16();
-                                                                                  promise.catch(() => {
-
-                                                                                  });
-                                                                                }
-                                        };
-                                        const Button = tmp(tmp2[26]).Button;
-                                        tmpResult3 = tmp(tmp2[19]);
-                                        items2 = [onFrameHeight(Button, obj5), ];
-                                        let tmp51Result = null;
-                                        const tmp49 = closure_10;
-                                        const tmp50 = closure_7;
-                                        const tmp51 = onFrameHeight;
-                                        if (null != own.error) {
-                                          let obj6 = { variant: "text-xs/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: own.error.text };
-                                          tmp51Result = tmp51(tmp(tmp2[14]).Text, obj6);
-                                        }
-                                        items2[1] = tmp51Result;
-                                        tmp49Result = tmp49(tmp50, obj4);
-                                      }
-                                      cResult[47] = disabled;
-                                      cResult[48] = own.busy;
-                                      cResult[49] = own.error;
-                                      cResult[50] = tmp39;
-                                      cResult[51] = question;
-                                      cResult[52] = tmp4.own;
-                                      cResult[53] = tmp49Result;
-                                      tmp47 = tmp49Result;
-                                    }
-                                  }
-                                }
-                                if ("gallery" === tmp6 || tmp21) {
-                                  const obj7 = { ref, horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp4.galleryContent, children: tmp28 };
-                                  tmp43Result = tmp43(options, obj7);
-                                } else {
-                                  const obj8 = { style: tmp4.row, children: tmp28 };
-                                  tmp43Result = tmp43(closure_7, obj8);
-                                }
-                                cResult[42] = "gallery" === tmp6 || tmp21;
-                                cResult[43] = tmp4.galleryContent;
-                                cResult[44] = tmp4.row;
-                                cResult[45] = tmp28;
-                                cResult[46] = tmp43Result;
-                                tmp42 = tmp43Result;
-                              }
-                              projectId = onPick(function*(arg0, value) {
-                                let obj3;
-                                let onUpload;
-                                if (c3 === 2) {
-                                  c3 = 3;
-                                  throw new TypeError("Generator functions may not be called on executing generators");
-                                } else if (tmp3 === 3) {
-                                  if (arg0 === 1) {
-                                    throw value;
-                                  } else if (arg0 === 2) {
-                                    const obj2 = { value, done: true };
-                                    return obj2;
-                                  } else {
-                                    return { value: "IconComponent", done: "+51" };
-                                  }
-                                } else {
-                                  try {
-                                    let tmp;
-                                    let closure_1;
-                                    c3 = 2;
-                                    if (0 === c2) {
-                                      if (arg0 === 1) {
-                                        c3 = 3;
-                                        throw value;
-                                      } else if (arg0 === 2) {
-                                        c3 = 3;
-                                        const obj4 = { value, done: true };
-                                        return obj4;
-                                      } else {
-                                        tmp = undefined;
-                                        closure_1 = undefined;
-                                        c2 = 1;
-                                        c3 = 1;
-                                        const obj5 = { value: obj3.pickConjurePhotos("photo", 1), done: false };
-                                        obj3 = tmp(disabled[25]);
-                                        return obj5;
-                                      }
-                                    } else if (arg0 === 1) {
-                                      c3 = 3;
-                                      throw value;
-                                    } else if (arg0 === 2) {
-                                      c3 = 3;
-                                      const obj6 = { value, done: true };
-                                      return obj6;
-                                    } else {
-                                      tmp = value;
-                                      closure_1 = own(tmp, 1)[0];
-                                      if (null != closure_1) {
-                                        onUpload = onUpload.onUpload;
-                                        const obj = tmp(disabled[25]);
-                                        onUpload(obj.uploadConjurePickedFile(tmp, closure_1));
-                                      }
-                                      c3 = 3;
-                                      return { value: "IconComponent", done: "+51" };
-                                    }
-                                  } catch (tmp15) {
-                                    c3 = 3;
-                                    throw tmp15;
-                                  }
-                                }
-                              });
-                              function t6() {
-                                return closure_0(...arguments);
-                              }
-                              cResult[38] = own;
-                              cResult[39] = projectId;
-                              cResult[40] = t6;
-                              tmp39 = t6;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
+      class O {
+        constructor() {
+          if (null != id) {
+            const current = ref.current;
+            if (current != null) {
+              current.scrollToEnd({ animated: true });
             }
           }
         }
@@ -1102,84 +950,114 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
         onView
       };
       tmp3 = null;
-      const tmp = onFrameHeight;
-      const tmp2 = onView;
+      const tmp = frameHeight;
+      const tmp2 = maxResult;
       if (closure_13) {
         tmp3 = closure_14;
       }
       return tmp(tmp2, obj, option.id);
     });
     if (null != own.image) {
-      let tmp29;
       let tmp32;
-      let tmp33;
-      if (cResult[24] !== own.image) {
-        const tmpResult4 = tmp(tmp2[19]);
-        const ownImageOptionResult = tmpResult4.ownImageOption(own.image);
-        cResult[24] = own.image;
-        cResult[25] = ownImageOptionResult;
-        tmp29 = ownImageOptionResult;
-      } else {
-        tmp29 = cResult[25];
-      }
-      let tmp31 = null;
-      if ("gallery" === tmp6 || tmp21) {
-        tmp31 = maxResult;
-      }
-      const _Symbol = Symbol;
-      if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-        function ie() {
-
+      let tmp34;
+      class O {
+        constructor() {
+          if (null != id) {
+            const current = ref.current;
+            if (current != null) {
+              current.scrollToEnd({ animated: true });
+            }
+          }
         }
-        cResult[26] = ie;
-        tmp32 = ie;
-      } else {
-        tmp32 = cResult[26];
       }
-      const _Symbol2 = Symbol;
-      if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-        function te() {
-
-        }
-        cResult[27] = te;
-        tmp33 = te;
-      } else {
-        tmp33 = cResult[27];
-      }
-      if (cResult[28] === disabled) {
-        if (cResult[29] === frameHeight) {
-          if (cResult[30] === true === question.multi_select) {
-            if (cResult[31] === own.onPick) {
-              if (cResult[32] === own.onRemove) {
-                if (cResult[33] === own.selected) {
-                  if (cResult[34] === tmp29) {
-                    if (cResult[35] === projectId) {
-                      let tmp34;
-                      if (cResult[36] === tmp31) {
-                        tmp34 = cResult[37];
-                      }
-                      mapped.push(tmp34);
-                    }
-                  }
-                }
+      if ("gallery" === tmp6 || tmp22) {
+        class O {
+          constructor() {
+            if (null != id) {
+              const current = ref.current;
+              if (current != null) {
+                current.scrollToEnd({ animated: true });
               }
             }
           }
         }
       }
-      const obj9 = { projectId, option: tmp29, multi: true === question.multi_select, galleryWidth: tmp31, selected: own.selected, disabled, frameHeight, onFrameHeight: tmp11[1], onMeasured: tmp32, onPick: own.onPick, onView: tmp33, onRemove: own.onRemove };
-      const tmp37 = onFrameHeight(onView, obj9, tmp29.id);
+      const _Symbol = Symbol;
+      if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
+        class O {
+          constructor() {
+            if (null != id) {
+              const current = ref.current;
+              if (current != null) {
+                current.scrollToEnd({ animated: true });
+              }
+            }
+          }
+        }
+        cResult[26] = tmp33;
+        tmp32 = tmp33;
+      } else {
+        class O {
+          constructor() {
+            if (null != id) {
+              const current = ref.current;
+              if (current != null) {
+                current.scrollToEnd({ animated: true });
+              }
+            }
+          }
+        }
+      }
+      const _Symbol2 = Symbol;
+      if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
+        class O {
+          constructor() {
+            if (null != id) {
+              const current = ref.current;
+              if (current != null) {
+                current.scrollToEnd({ animated: true });
+              }
+            }
+          }
+        }
+        cResult[27] = tmp35;
+        tmp34 = tmp35;
+      } else {
+        class O {
+          constructor() {
+            if (null != id) {
+              const current = ref.current;
+              if (current != null) {
+                current.scrollToEnd({ animated: true });
+              }
+            }
+          }
+        }
+      }
+      if (cResult[28] === disabled) {
+        class O {
+          constructor() {
+            if (null != id) {
+              const current = ref.current;
+              if (current != null) {
+                current.scrollToEnd({ animated: true });
+              }
+            }
+          }
+        }
+      }
+      let obj2 = { projectId, option: tmp30, multi: tmp5, galleryWidth: null, selected: own.selected, disabled, frameHeight, onFrameHeight: tmp11[1], onMeasured: tmp32, onPick: own.onPick, onView: tmp34, onRemove: own.onRemove };
       cResult[28] = disabled;
       cResult[29] = frameHeight;
       cResult[30] = true === question.multi_select;
       cResult[31] = own.onPick;
       cResult[32] = own.onRemove;
       cResult[33] = own.selected;
-      cResult[34] = tmp29;
+      cResult[34] = tmp30;
       cResult[35] = projectId;
-      cResult[36] = tmp31;
-      cResult[37] = tmp37;
-      tmp34 = tmp37;
+      cResult[36] = null;
+      cResult[37] = frameHeight(maxResult, obj2, tmp30.id);
+      const tmp39 = frameHeight(maxResult, obj2, tmp30.id);
     }
     cResult[9] = disabled;
     cResult[10] = frameHeight;
@@ -1192,16 +1070,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
     cResult[17] = own.onRemove;
     cResult[18] = own.selected;
     cResult[19] = projectId;
-    cResult[20] = "gallery" === tmp6 || tmp21;
+    cResult[20] = "gallery" === tmp6 || tmp22;
     cResult[21] = selectedIds;
     cResult[22] = tmp27;
     cResult[23] = mapped;
-    tmp28 = mapped;
   }
-  class G {
+  class W {
     constructor(arg0) {
       closure_0 = projectId;
-      obj = projectId(disabled[19]);
+      obj = projectId(disabled[18]);
       viewableImageOptionsResult = obj.viewableImageOptions(options);
       closure_1 = viewableImageOptionsResult;
       findIndexResult = viewableImageOptionsResult.findIndex((id) => id.id === id.id);
@@ -1209,7 +1086,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
       if (findIndexResult >= 0) {
         tmp2 = globalThis;
         _Promise = Promise;
-        allPromises = Promise.all(viewableImageOptionsResult.map((image) => first(id, image.image.attachment_id)));
+        allPromises = Promise.all(viewableImageOptionsResult.map((image) => {
+          const obj = projectId(disabled[23]);
+          return obj.getAttachmentUrl(id, image.image.attachment_id);
+        }));
         nextPromise = allPromises.then((arr) => {
           const mapped = arr.map((uri, mediaIndex) => {
             let height;
@@ -1219,7 +1099,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
             let result = null;
             const tmp = closure_1_1;
             if (null != value) {
-              const obj = projectId(disabled[19]);
+              const obj = projectId(disabled[18]);
               result = obj.imageOptionViewerSize(value);
             }
             size = { uri, mediaIndex, width, height, accessoryType: "embed", description: tmp[mediaIndex].label, disableDownload: true };
@@ -1228,14 +1108,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
               width = result.width;
             }
             if (width == null) {
-              width = ref;
+              width = c10;
             }
             height = undefined;
             if (result != null) {
               height = result.height;
             }
             if (height == null) {
-              height = ref;
+              height = c10;
             }
             return size;
           });
@@ -1251,11 +1131,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
   }
   cResult[6] = options;
   cResult[7] = projectId;
-  cResult[8] = G;
-  tmp27 = G;
+  cResult[8] = W;
 }) : (function ConjureImageOptions(projectId) {
   let _undefined;
-  let c10;
   let disabled;
   let items3;
   let items4;
@@ -1272,17 +1150,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
   ({ question, selectedIds: importDefault, disabled } = projectId);
   ({ onPick: _asyncToGenerator, own } = projectId);
   c10 = undefined;
+  let id;
   closure_13 = undefined;
   let c14;
   let onView;
   let closure_16;
-  let tmp = closure_13();
+  let tmp = id();
   let tmp2 = true === question.multi_select;
   react = tmp2;
   const options = question.options;
   let tmp3 = projectId;
   const tmp4 = disabled;
-  let obj = projectId(disabled[19]);
+  let obj = projectId(disabled[18]);
   let obj2 = react;
   const useRef = react.useRef;
   const imageOptionsLayoutResult = obj.imageOptionsLayout(options);
@@ -1295,7 +1174,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
   const tmp10 = own(react.useState(null), 2);
   const ref = react.useRef(null);
   const image = own.image;
-  let id;
+  id = undefined;
   if (image != null) {
     id = image.attachment.id;
   }
@@ -1316,24 +1195,27 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
   const sum = length + num2;
   let tmp15 = null != num;
   if (tmp15) {
-    tmp15 = (num - require("native").space.PX_8 * (sum - 1)) / sum < id;
+    tmp15 = (num - require("native").space.PX_8 * (sum - 1)) / sum < ref;
   }
   closure_13 = tmp18;
   const _Math = Math;
   const _Math2 = Math;
-  const tmp19 = id;
+  const tmp19 = ref;
   const maxResult = max(tmp19, min(136, (num - 2 * require("native").space.PX_8) / 2.4));
   c14 = maxResult;
   const items1 = [options, projectId];
   onView = obj2.useCallback((arg0) => {
     id = arg0;
-    let obj = projectId(disabled[19]);
+    let obj = projectId(disabled[18]);
     const viewableImageOptionsResult = obj.viewableImageOptions(options);
     let closure_1 = viewableImageOptionsResult;
     const findIndexResult = viewableImageOptionsResult.findIndex((id) => id.id === id.id);
     disabled = findIndexResult;
     if (findIndexResult >= 0) {
-      const allPromises = Promise.all(viewableImageOptionsResult.map((image) => first(id, image.image.attachment_id)));
+      const allPromises = Promise.all(viewableImageOptionsResult.map((image) => {
+        const obj = projectId(disabled[23]);
+        return obj.getAttachmentUrl(id, image.image.attachment_id);
+      }));
       allPromises.then((arr) => {
         const mapped = arr.map((uri, mediaIndex) => {
           let height;
@@ -1343,7 +1225,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
           let result = null;
           const tmp = closure_1_1;
           if (null != value) {
-            const obj = projectId(disabled[19]);
+            const obj = projectId(disabled[18]);
             result = obj.imageOptionViewerSize(value);
           }
           size = { uri, mediaIndex, width, height, accessoryType: "embed", description: tmp[mediaIndex].label, disableDownload: true };
@@ -1352,14 +1234,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
             width = result.width;
           }
           if (width == null) {
-            width = ref;
+            width = c10;
           }
           height = undefined;
           if (result != null) {
             height = result.height;
           }
           if (height == null) {
-            height = ref;
+            height = c10;
           }
           return size;
         });
@@ -1391,15 +1273,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
       onView
     };
     tmp3 = null;
-    const tmp = onFrameHeight;
-    const tmp2 = onView;
+    const tmp = frameHeight;
+    const tmp2 = c14;
     if (closure_13) {
       tmp3 = c14;
     }
     return tmp(tmp2, obj, option.id);
   });
   if (null != own.image) {
-    const tmp3Result = tmp3(tmp4[19]);
+    const tmp3Result = tmp3(tmp4[18]);
     const ownImageOptionResult = tmp3Result.ownImageOption(own.image);
     let obj3 = {
       projectId,
@@ -1421,8 +1303,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
     };
     tmp21 = null;
     const push = mapped.push;
-    const tmp32 = onFrameHeight;
-    const tmp33 = onView;
+    const tmp32 = frameHeight;
+    const tmp33 = c14;
     if ("gallery" === imageOptionsLayoutResult || tmp15) {
       tmp21 = maxResult;
     }
@@ -1442,7 +1324,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1482,7 +1364,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp15) {
         c3 = 3;
@@ -1523,18 +1405,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
         }
     };
     const Button = tmp3(tmp4[26]).Button;
-    tmp3Result2 = tmp3(tmp4[19]);
+    tmp3Result2 = tmp3(tmp4[18]);
     items4 = [tmp27(Button, obj8), ];
     let tmp27Result = null;
     if (null != own.error) {
       const obj9 = { variant: "text-xs/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: own.error.text };
-      tmp27Result = tmp27(tmp3(tmp4[14]).Text, obj9);
+      tmp27Result = tmp27(tmp3(tmp4[13]).Text, obj9);
     }
     items4[1] = tmp27Result;
     tmp23Result = tmp23(tmp24, obj7);
   }
   items3[1] = tmp23Result;
-  return c10(closure_7, obj4);
+  return onFrameHeight(closure_7, obj4);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/clarification/native/ConjureImageOptions.tsx");

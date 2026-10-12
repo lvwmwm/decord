@@ -1,9 +1,9 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14820
+// Function ID: 14821
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4761, 502, 2065, 5432, 1085, 14797, 3, 1102, 510, 4702, 4793, 9811, 7178, 10783, 12822, 2000, 2002, 584, 5752, 9316, 2]
+// Dependencies: [5, 32, 4761, 502, 2065, 5432, 1085, 14821, 3, 1102, 510, 4702, 4793, 9812, 7179, 10783, 12824, 2000, 2002, 584, 5752, 9317, 2]
 
-// Module 14796 (LocalMessageCacheManager)
+// Module 14820 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -11,15 +11,15 @@ import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import DateUtils from "DateUtils" /* 4793 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
-import createMessageDefault from "createMessage" /* 9811 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
+import createMessageDefault from "createMessage" /* 9812 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MessageRecord from "MessageRecord" /* 4761 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
-import MutexUtils from "MutexUtils" /* 14797 */;
+import MutexUtils from "MutexUtils" /* 14821 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
@@ -132,7 +132,7 @@ obj = function _rehydrateFailedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -192,7 +192,7 @@ obj = function _rehydrateFailedMessages() {
                 closure_1 = keys;
               }
               c9 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c9 = 3;
@@ -349,7 +349,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c7;
@@ -405,7 +405,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                         let obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       }
                     } else {
                       try {
@@ -427,7 +427,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                             }, 0);
                           }
                           c1 = 3;
-                          return { value: "IconComponent", done: "+51" };
+                          return { value: "IconComponent", done: null };
                         }
                       } catch (tmp8) {
                         c1 = 3;
@@ -440,7 +440,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   applyArgumentsResult = values[Symbol.iterator]();
                   if (applyArgumentsResult === undefined) {
                     c10 = 3;
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   } else {
                     c7 = 1;
                     _undefined = tmp29;
@@ -700,7 +700,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -729,7 +729,7 @@ class LocalMessageCacheManager extends LifecycleManager {
               return obj;
             }
             c1 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp8) {
             c1 = 3;
             throw tmp8;
@@ -981,7 +981,7 @@ class LocalMessageCacheManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -1036,7 +1036,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   let obj4 = values(closure_2[19]);
                   let subscription1 = obj4.subscribe("CACHE_LOADED", closure_132_0.handleCacheLoaded);
                   c8 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   let c6 = 1;
                   values = tmp10;

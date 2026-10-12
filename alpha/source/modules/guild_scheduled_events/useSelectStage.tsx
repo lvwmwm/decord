@@ -1,9 +1,9 @@
-// Module ID: 8774
-// Function ID: 8775
+// Module ID: 8775
+// Function ID: 8776
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 2065, 2116, 558, 576, 504, 7492, 2]
+// Dependencies: [5, 32, 19, 2065, 2116, 558, 576, 504, 7493, 2]
 
-// Module 8774 (useSelectStage)
+// Module 8775 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -155,7 +155,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
               c5 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp18) {
           let closure_4 = tmp18;
@@ -236,7 +236,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -287,7 +287,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
             c5 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         let closure_4 = tmp18;

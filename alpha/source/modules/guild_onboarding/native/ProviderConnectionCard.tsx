@@ -1,9 +1,9 @@
-// Module ID: 6870
-// Function ID: 6871
+// Module ID: 6871
+// Function ID: 6872
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1085, 21, 558, 576, 5031, 5763, 1126, 6871, 6872, 1265, 5107, 1415, 4969, 1200, 5038, 6866, 2]
+// Dependencies: [5, 19, 1085, 21, 558, 576, 5031, 5763, 1126, 6872, 6873, 1265, 5107, 1415, 4969, 1200, 5038, 6867, 2]
 
-// Module 6870 (ProviderConnectionCard)
+// Module 6871 (ProviderConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConn
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConn
             return obj;
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -287,7 +287,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConn
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -323,7 +323,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConn
             return obj;
           } else {
             guildId = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           guildId = 3;

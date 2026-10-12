@@ -1,7 +1,7 @@
 // Module ID: 10862
 // Function ID: 10863
 // Name: ApplicationUtils
-// Dependencies: [1085, 10863, 1265, 8490, 4806, 10864, 1097, 5934, 10724, 2000, 8457, 2]
+// Dependencies: [1085, 10863, 1265, 8491, 4806, 10864, 1097, 5934, 10724, 2000, 8458, 2]
 // Exports: installApplication, installPrivateChannelIntegration, openOAuth2Modal
 
 // Module 10862 (ApplicationUtils)
@@ -11,7 +11,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
 import Constants2 from "Constants" /* 10863 */;
 import authorizeCallbackDefault from "authorizeCallback" /* 10864 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ export const installApplication = function installApplication(arg0) {
           obj.openURL(customInstallUrl);
         }
     };
-    const obj11 = customInstallUrl(8490);
+    const obj11 = customInstallUrl(8491);
     return obj11.handleClick(obj2);
   } else {
     if (null != integrationTypesConfig) {

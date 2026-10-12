@@ -1,14 +1,14 @@
 // Module ID: 11029
 // Function ID: 11030
 // Name: GlobalStatusContent
-// Dependencies: [19, 17, 2065, 2087, 5110, 5112, 11024, 1085, 21, 5092, 587, 558, 576, 11025, 504, 10849, 11022, 5031, 4969, 8326, 4976, 10825, 1382, 1631, 10360, 11030, 2]
+// Dependencies: [19, 17, 2065, 2087, 5110, 5112, 11024, 1085, 21, 5092, 587, 558, 576, 11025, 504, 10849, 11022, 5031, 4969, 8327, 4976, 10825, 1382, 1631, 10361, 11030, 2]
 
 // Module 11029 (GlobalStatusContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import useThemeDefault from "useTheme" /* 5031 */;
-import StatusBarDefault from "StatusBar" /* 10360 */;
+import StatusBarDefault from "StatusBar" /* 10361 */;
 import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 10849 */;
 import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11022 */;
 import ConnectivityConstants from "ConnectivityConstants" /* 11024 */;

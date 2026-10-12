@@ -1,10 +1,10 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9768
+// Function ID: 9769
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 5092, 587, 5749, 1126, 558, 576, 5088, 6184, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 5749, 1126, 558, 576, 5088, 6185, 2]
 // Exports: doesStickerPackHavePopoutInformation
 
-// Module 9767 (StickerPackInformationPopout)
+// Module 9768 (StickerPackInformationPopout)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
@@ -235,7 +235,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackI
   obj6 = { stickerPackName: stickerPack.name };
   items2 = [closure_4(Text, obj5), ];
   const obj7 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: intl3.string(require("intl").t.cpT0Cq), children: closure_4(Text2, obj8) };
-  const PressableOpacity = tmp2(6184).PressableOpacity;
+  const PressableOpacity = tmp2(6185).PressableOpacity;
   intl3 = tmp2(1126).intl;
   obj8 = { variant: "text-md/bold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
   Text2 = tmp2(5088).Text;

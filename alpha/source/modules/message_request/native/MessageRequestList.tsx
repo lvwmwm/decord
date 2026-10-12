@@ -1,9 +1,9 @@
-// Module ID: 17582
-// Function ID: 17583
+// Module ID: 17639
+// Function ID: 17640
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 1126, 558, 576, 4809, 5103, 5934, 12160, 1265, 17583, 1200, 13495, 6184, 15181, 8579, 1631, 17588, 17590, 12159, 17593, 5088, 1382, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 1126, 558, 576, 4809, 5103, 5934, 12162, 1265, 17640, 1200, 13518, 6185, 15204, 8580, 1631, 17645, 17647, 12161, 17650, 5088, 1382, 2]
 
-// Module 17582 (MessageRequestList)
+// Module 17639 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;

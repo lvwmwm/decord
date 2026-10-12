@@ -1,9 +1,9 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 16881
+// Function ID: 16882
 // Name: ForYouItemActionButtons
-// Dependencies: [109, 5, 19, 17, 2065, 1390, 1085, 21, 5092, 1121, 558, 576, 4850, 5093, 1126, 5379, 5377, 5088, 573, 7993, 16456, 5069, 14049, 10229, 6058, 7014, 7017, 4809, 9690, 1265, 2]
+// Dependencies: [109, 5, 19, 17, 2065, 1390, 1085, 21, 5092, 1121, 558, 576, 4850, 5093, 1126, 5379, 5377, 5088, 573, 7994, 16479, 5069, 14072, 10230, 6058, 7015, 7018, 4809, 9691, 1265, 2]
 
-// Module 16857 (ForYouItemActionButtons)
+// Module 16881 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import intl22 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -12,11 +12,11 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import parseURLDefault from "parseURL" /* 5069 */;
 import timing from "timing" /* 5093 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6058 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7017 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10229 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 14049 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16456 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10230 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 14072 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16479 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -722,7 +722,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
   const message3 = other_user.message;
-  const tmpResult3 = tmp(7993);
+  const tmpResult3 = tmp(7994);
   const canReplyToMessage = tmpResult3.useCanReplyToMessage(stateFromStores, other_user.message);
   if (message3 != null) {
     const type = message3.type;
@@ -1224,7 +1224,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1259,7 +1259,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useItemActio
         closure_128_1();
         focusChatInput(closure_128_0.message_channel_id);
         c2 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp17) {
         c2 = 3;
         throw tmp17;

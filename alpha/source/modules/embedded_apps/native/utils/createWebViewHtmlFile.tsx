@@ -63,7 +63,7 @@ let obj = function _createWebViewHtmlFile() {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             let c3;
@@ -104,7 +104,7 @@ let obj = function _createWebViewHtmlFile() {
                   c3 = 0;
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp16) {
               closure_2 = tmp16;
@@ -137,7 +137,7 @@ let obj = function _createWebViewHtmlFile() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let insets;

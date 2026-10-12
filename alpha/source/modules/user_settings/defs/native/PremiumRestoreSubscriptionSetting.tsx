@@ -1,17 +1,17 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15536
+// Function ID: 15537
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1390, 21, 7138, 5300, 1126, 15514, 2000, 558, 576, 504, 1382, 10663, 9035, 2]
+// Dependencies: [1390, 21, 7139, 5300, 1126, 15537, 2000, 558, 576, 504, 1382, 10663, 9036, 2]
 
-// Module 15513 (PremiumRestoreSubscriptionSetting)
+// Module 15536 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7138 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9035 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7139 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9036 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

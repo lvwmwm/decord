@@ -1,13 +1,13 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12113
+// Function ID: 12114
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 2125, 9716, 21, 5092, 587, 558, 576, 5386, 504, 11927, 1126, 6156, 5088, 6184, 2]
+// Dependencies: [19, 17, 2125, 9717, 21, 5092, 587, 558, 576, 5386, 504, 11929, 1126, 6157, 5088, 6185, 2]
 
-// Module 12111 (ApplicationCommandItem)
+// Module 12113 (ApplicationCommandItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9716 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11927 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11929 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import Fragment from "Fragment" /* 21 */;
@@ -147,7 +147,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
                         }
                         const obj4 = { accessibilityLabel: tmp15, style: tmp19, accessibilityRole: "button", onPress, children: items1 };
                         items1 = [tmp25, tmp36, tmp40];
-                        const tmp45 = closure_8(tmp(6184).PressableOpacity, obj4);
+                        const tmp45 = closure_8(tmp(6185).PressableOpacity, obj4);
                         cResult[32] = onPress;
                         cResult[33] = tmp36;
                         cResult[34] = tmp40;
@@ -178,7 +178,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
               let tmp26 = tmp4 && null != tmp11;
               if (tmp26) {
                 const obj8 = { style: tmp6.applicationCommandIcon, source: tmp11 };
-                tmp26 = closure_7(guildId(6156), obj8);
+                tmp26 = closure_7(guildId(6157), obj8);
               }
               cResult[17] = tmp11;
               cResult[18] = undefined === showIcon || showIcon;
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
       cResult[10] = formatToPlainStringResult;
       tmp15 = formatToPlainStringResult;
     }
-    const tmpResult4 = tmp(11927);
+    const tmpResult4 = tmp(11929);
     const applicationCommandsIconSource = tmpResult4.getApplicationCommandsIconSource(section, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = section;

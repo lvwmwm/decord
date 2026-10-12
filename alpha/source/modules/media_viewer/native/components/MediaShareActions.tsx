@@ -1,9 +1,9 @@
-// Module ID: 8452
-// Function ID: 8453
+// Module ID: 8453
+// Function ID: 8454
 // Name: MediaShareActions
-// Dependencies: [19, 8453, 2065, 5432, 8480, 1085, 6992, 21, 573, 8242, 8262, 5056, 8392, 5419, 8481, 8388, 6885, 4808, 8490, 4806, 11551, 5103, 4979, 11463, 2000, 9682, 8485, 5044, 1126, 11563, 13047, 5038, 12869, 12663, 8208, 558, 576, 6894, 6898, 2]
+// Dependencies: [19, 8454, 2065, 5432, 8481, 1085, 6993, 21, 573, 8243, 8263, 5056, 8393, 5419, 8482, 8389, 6886, 4808, 8491, 4806, 11553, 5103, 4979, 11465, 2000, 9683, 8486, 5044, 1126, 11565, 13052, 5038, 12871, 12665, 8209, 558, 576, 6895, 6899, 2]
 
-// Module 8452 (MediaShareActions)
+// Module 8453 (MediaShareActions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl8 from "intl" /* 1126 */;
@@ -15,25 +15,25 @@ import DownloadIcon from "DownloadIcon" /* 5044 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import transitionToChannel from "transitionToChannel" /* 5103 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
-import ClipboardUtils from "ClipboardUtils" /* 6885 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 6894 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6992 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8208 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8388 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8392 */;
-import showShareActionSheet from "showShareActionSheet" /* 8481 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8490 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11551 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 11563 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 12663 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 12869 */;
-import ShareIcon from "ShareIcon" /* 13047 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 6895 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6993 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8209 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8389 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8393 */;
+import showShareActionSheet from "showShareActionSheet" /* 8482 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8491 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11553 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 11565 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 12665 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 12871 */;
+import ShareIcon from "ShareIcon" /* 13052 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 8453 */;
+import ICYMIStore from "ICYMIStore" /* 8454 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8480 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8481 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -200,7 +200,7 @@ function useMediaShareActions(source) {
       const obj2 = { messageId: null, channelId: null, attachmentId };
       ({ messageId: obj3.messageId, channelId: obj3.channelId } = source);
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(11463, tmp2.paths), closure_11, obj2);
+      tmpResult.openLazy(asyncRequire(11465, tmp2.paths), closure_11, obj2);
     }
   }, items8);
   let tmpResult = tmp(tmp2[25]);
@@ -320,7 +320,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaShare
         tmp6 = cResult[5];
       }
       if (cResult[7] !== tmp6) {
-        const ActionSheet = tmp(6898).ActionSheet;
+        const ActionSheet = tmp(6899).ActionSheet;
         const tmp12 = <ActionSheet>{null}</ActionSheet>;
         cResult[7] = tmp6;
         cResult[8] = tmp12;

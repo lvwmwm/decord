@@ -1,15 +1,15 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 14857
+// Function ID: 14858
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 8284, 7320, 1390, 1085, 558, 576, 504, 6670, 10638, 6677, 6680, 14835, 8291, 5635, 584, 14836, 8305, 8321, 13364, 2041, 14119, 1126, 2]
+// Dependencies: [109, 5, 19, 8285, 7321, 1390, 1085, 558, 576, 504, 6671, 10639, 6678, 6681, 14858, 8292, 5635, 584, 14859, 8306, 8322, 13387, 2041, 14142, 1126, 2]
 
-// Module 14834 (useUserProfileEditForm)
+// Module 14857 (useUserProfileEditForm)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8284 */;
-import UserProfileStore from "UserProfileStore" /* 7320 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import UserProfileStore from "UserProfileStore" /* 7321 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
           }
         }
       }
-      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6670).resetAllPending };
+      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6671).resetAllPending };
       class S {
         constructor() {
           isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING || isSubmitting.isSubmitting;
@@ -145,7 +145,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -191,7 +191,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           c3 = 3;
           throw tmp15;
@@ -229,7 +229,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -278,7 +278,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
             const tmp206 = c1;
             if (tmp206) {
               c7 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } else {
               const obj24 = _false(dependencyMap[11]);
               accountUpdateForUpdateRequest = obj24.getAccountUpdateForUpdateRequest(_false);
@@ -672,7 +672,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -720,7 +720,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
             const tmp206 = stateFromStores;
             if (tmp206) {
               c7 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } else {
               const obj24 = _false(_false3[11]);
               accountUpdateForUpdateRequest = obj24.getAccountUpdateForUpdateRequest(pendingChanges);
@@ -1085,7 +1085,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -1131,14 +1131,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           c3 = 3;
           throw tmp15;
         }
       }
     }), items3),
-    resetPending: pendingChanges(6670).resetAllPending
+    resetPending: pendingChanges(6671).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

@@ -1,9 +1,9 @@
-// Module ID: 9697
-// Function ID: 9698
+// Module ID: 9698
+// Function ID: 9699
 // Name: ChannelSettingsStore
-// Dependencies: [2069, 8498, 1404, 2065, 1085, 1125, 4762, 4764, 2074, 2075, 1295, 584, 12, 2079, 4702, 504, 2]
+// Dependencies: [2069, 8499, 1404, 2065, 1085, 1125, 4762, 4764, 2074, 2075, 1295, 584, 12, 2079, 4702, 504, 2]
 
-// Module 9697 (ChannelSettingsStore)
+// Module 9698 (ChannelSettingsStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -16,7 +16,7 @@ import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import ReactionUtils from "ReactionUtils" /* 4762 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
-import InviteRecord from "InviteRecord" /* 8498 */;
+import InviteRecord from "InviteRecord" /* 8499 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
@@ -29,13 +29,13 @@ let FormStates;
 let closure_14;
 let closure_15;
 let map1;
-const f102132 = (body) => {
+const f102351 = (body) => {
   c21 = false;
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
   obj.dispatch(obj2);
 };
-const f102133 = () => {
+const f102352 = () => {
   c21 = false;
   return false;
 };
@@ -303,7 +303,7 @@ invites = {
         let obj2 = { url: authStore3.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
         const get = HTTP.get;
         const value = get(obj2);
-        value.then(f102132, f102133);
+        value.then(f102351, f102352);
       }
       return true;
     }
@@ -470,7 +470,7 @@ invites = {
       const get = HTTP.get;
       const obj = { url: authStore3.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
       const value = get(obj);
-      value.then(f102132, f102133);
+      value.then(f102351, f102352);
     }
   },
   CHANNEL_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {

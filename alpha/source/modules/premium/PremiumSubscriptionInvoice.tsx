@@ -1,10 +1,10 @@
-// Module ID: 13656
-// Function ID: 13657
+// Module ID: 13679
+// Function ID: 13680
 // Name: PremiumSubscriptionInvoice
 // Dependencies: [109, 32, 5, 19, 4778, 1085, 4769, 1295, 584, 5635, 38, 5644, 558, 576, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionInvoicePreview
 
-// Module 13656 (PremiumSubscriptionInvoice)
+// Module 13679 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -21,7 +21,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f116282 = (enabled) => enabled.enabled;
+const f116489 = (enabled) => enabled.enabled;
 function createSubscriptionInvoicePreview() {
   return obj(...arguments);
 }
@@ -50,7 +50,7 @@ let obj = function _createSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -206,7 +206,7 @@ obj = function _updateSubscriptionInvoicePreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let currency;
@@ -359,7 +359,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -472,7 +472,7 @@ obj = function _getSubscriptionInvoice() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -607,7 +607,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -660,7 +660,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           closure_2 = tmp28;
@@ -720,7 +720,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -772,7 +772,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGene
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp28) {
             if (0 === c3) {
@@ -914,7 +914,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f116282);
+          const found = payment_sources.find(f116489);
           let id;
           if (found != null) {
             id = found.id;
@@ -968,7 +968,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f116282);
+          const found = payment_sources.find(f116489);
           let id;
           if (found != null) {
             id = found.id;

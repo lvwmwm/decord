@@ -1,14 +1,14 @@
-// Module ID: 6669
-// Function ID: 6670
+// Module ID: 6670
+// Function ID: 6671
 // Name: verification/ChangeEmailUtils
-// Dependencies: [5, 6199, 6670, 6680, 1105, 2]
+// Dependencies: [5, 6200, 6671, 6681, 1105, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
-// Module 6669 (verification/ChangeEmailUtils)
+// Module 6670 (verification/ChangeEmailUtils)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 6670 */;
+import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 6671 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6199 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6200 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -32,7 +32,7 @@ let obj = function _saveEmail() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

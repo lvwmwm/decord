@@ -1,16 +1,16 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 16078
+// Function ID: 16079
 // Name: DevToolsGuildTagBadgesScreen
-// Dependencies: [32, 19, 17, 7887, 21, 5092, 587, 558, 576, 5088, 5379, 14120, 5377, 2]
+// Dependencies: [32, 19, 17, 7888, 21, 5092, 587, 558, 576, 5088, 5379, 14143, 5377, 2]
 
-// Module 16055 (DevToolsGuildTagBadgesScreen)
+// Module 16078 (DevToolsGuildTagBadgesScreen)
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import badges_GuildBadge from "badges/GuildBadge" /* 14120 */;
+import badges_GuildBadge from "badges/GuildBadge" /* 14143 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildTagConstants from "GuildTagConstants" /* 7887 */;
+import GuildTagConstants from "GuildTagConstants" /* 7888 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 6980
-// Function ID: 6981
+// Module ID: 6981
+// Function ID: 6982
 // Name: ChannelMemberStore
 // Dependencies: [5016, 5897, 502, 2065, 5020, 2125, 2119, 2087, 5108, 5759, 1390, 1085, 1126, 4755, 1264, 12, 1097, 504, 584, 2]
 
-// Module 6980 (ChannelMemberStore)
+// Module 6981 (ChannelMemberStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -219,7 +219,7 @@ class MemberList {
             if (null != guild) {
               role = GuildRoleStore.getRole(guild.id, id);
             }
-            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "apply" };
+            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "code" };
             str = "";
             if (null != role) {
               str = role.name;
@@ -304,7 +304,7 @@ class MemberList {
             if (null != guild) {
               role = GuildRoleStore.getRole(guild.id, id);
             }
-            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "apply" };
+            obj2 = { type: obj.GROUP, key: id, id, title: str, count, index: "code" };
             str = "";
             if (null != role) {
               str = role.name;

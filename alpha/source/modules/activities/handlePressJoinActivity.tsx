@@ -1,7 +1,7 @@
 // Module ID: 10923
 // Function ID: 10924
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2022, 2065, 2087, 4750, 1390, 5113, 2064, 10920, 10877, 5299, 1126, 6852, 5924, 10846, 10822, 2]
+// Dependencies: [5, 2022, 2065, 2087, 4750, 1390, 5113, 2064, 10920, 10877, 5299, 1126, 6853, 5924, 10846, 10822, 2]
 // Exports: maybeJoinEmbeddedActivity
 
 // Module 10923 (handlePressJoinActivity)
@@ -182,7 +182,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -211,7 +211,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } catch (tmp12) {
               c0 = 3;
               throw tmp12;

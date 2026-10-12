@@ -1,20 +1,20 @@
-// Module ID: 9368
-// Function ID: 9369
+// Module ID: 9369
+// Function ID: 9370
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7313, 7315, 1085, 21, 5092, 587, 558, 576, 1503, 504, 9337, 9355, 9340, 5088, 1126, 5391, 9369, 9370, 9372, 6242, 6181, 2]
+// Dependencies: [19, 17, 7314, 7316, 1085, 21, 5092, 587, 558, 576, 1503, 504, 9338, 9356, 9341, 5088, 1126, 5391, 9370, 9371, 9373, 6243, 6182, 2]
 
-// Module 9368 (ConversationListItem)
+// Module 9369 (ConversationListItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ConversationConstants from "ConversationConstants" /* 7315 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9337 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9340 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9355 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9370 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9372 */;
+import ConversationConstants from "ConversationConstants" /* 7316 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9338 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9341 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9356 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9371 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9373 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7313 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7314 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -189,7 +189,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                                   }
                                   const obj6 = { style: tmp14, onPress: tmp13, accessibilityLabel: tmp15, children: items1 };
                                   items1 = [tmp25, tmp53];
-                                  const tmp59 = closure_9(conversation(6181).Card, obj6);
+                                  const tmp59 = closure_9(conversation(6182).Card, obj6);
                                   cResult[44] = conversation.title;
                                   cResult[45] = tmp13;
                                   cResult[46] = tmp4.card;
@@ -200,7 +200,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                                 }
                               }
                               const obj7 = { style: tmp4.previewsMask, maskElement: tmp40, children: tmp49 };
-                              const tmp56 = closure_8(navigation(6242), obj7);
+                              const tmp56 = closure_8(navigation(6243), obj7);
                               cResult[40] = tmp4.previewsMask;
                               cResult[41] = tmp40;
                               cResult[42] = tmp49;
@@ -216,7 +216,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                           }
                         }
                         if (null == arr4) {
-                          mapped = closure_8(navigation(9369), {});
+                          mapped = closure_8(navigation(9370), {});
                         } else {
                           mapped = arr4.map((blocked) => {
                             if (!blocked.blocked) {

@@ -1,24 +1,24 @@
-// Module ID: 12902
-// Function ID: 12903
+// Module ID: 12904
+// Function ID: 12905
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5092, 587, 9228, 9103, 12903, 558, 576, 11, 9226, 5038, 1126, 9230, 8222, 11441, 5051, 8457, 11433, 10408, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 9229, 9104, 12905, 558, 576, 11, 9227, 5038, 1126, 9231, 8223, 11443, 5051, 8458, 11435, 10409, 5088, 2]
 
-// Module 12902 (ApplicationDetails)
+// Module 12904 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import LinkIcon from "LinkIcon" /* 5038 */;
-import LockIcon from "LockIcon" /* 8222 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9103 */;
-import scopes from "scopes" /* 9226 */;
-import disclosures from "disclosures" /* 9228 */;
-import Utils from "Utils" /* 9230 */;
-import RobotIcon from "RobotIcon" /* 11433 */;
-import HammerIcon from "HammerIcon" /* 11441 */;
-import EmbedIcon from "EmbedIcon" /* 12903 */;
+import LockIcon from "LockIcon" /* 8223 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9104 */;
+import scopes from "scopes" /* 9227 */;
+import disclosures from "disclosures" /* 9229 */;
+import Utils from "Utils" /* 9231 */;
+import RobotIcon from "RobotIcon" /* 11435 */;
+import HammerIcon from "HammerIcon" /* 11443 */;
+import EmbedIcon from "EmbedIcon" /* 12905 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -32,7 +32,7 @@ let tmp;
 let tmp4;
 const ClockIcon2 = tmp4(5051);
 const Text_Text = tmp(5088);
-const ShieldIcon = tmp4(10408);
+const ShieldIcon = tmp4(10409);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: size };
@@ -97,7 +97,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetai
                     tmp44 = cResult[35];
                   }
                   if (cResult[36] !== tmp7) {
-                    let obj3 = { iconComponent: tmp(10408).ShieldIcon, text: tmp7 };
+                    let obj3 = { iconComponent: tmp(10409).ShieldIcon, text: tmp7 };
                     const tmp52 = React3(closure_7, obj3);
                     cResult[36] = tmp7;
                     cResult[37] = tmp52;

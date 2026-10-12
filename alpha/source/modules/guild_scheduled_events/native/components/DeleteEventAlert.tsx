@@ -1,9 +1,9 @@
-// Module ID: 8678
-// Function ID: 8679
+// Module ID: 8679
+// Function ID: 8680
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6054, 21, 5092, 558, 576, 504, 8518, 5056, 1126, 5088, 5305, 2]
+// Dependencies: [5, 19, 6054, 21, 5092, 558, 576, 504, 8519, 5056, 1126, 5088, 5305, 2]
 
-// Module 8678 (DeleteEventAlert)
+// Module 8679 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl7 from "intl" /* 1126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -213,7 +213,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -262,7 +262,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
           const obj2 = guildId(recurrenceId[9]);
           obj2.hideActionSheet();
           c2 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp16) {
         c2 = 3;
@@ -303,7 +303,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -352,7 +352,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
             const obj2 = c1(c2[9]);
             obj2.hideActionSheet();
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           c2 = 3;

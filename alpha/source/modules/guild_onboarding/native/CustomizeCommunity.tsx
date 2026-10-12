@@ -1,7 +1,7 @@
 // Module ID: 10699
 // Function ID: 10700
 // Name: CustomizeCommunity
-// Dependencies: [19, 17, 5987, 2087, 6035, 4939, 6788, 6789, 1085, 1393, 5967, 21, 5092, 587, 5906, 558, 576, 4825, 5031, 504, 10700, 10701, 6156, 1126, 1200, 5088, 6794, 6814, 6849, 6878, 1631, 10702, 6787, 6799, 6793, 6819, 1415, 1388, 4818, 4850, 5093, 10703, 5056, 6824, 2000, 6184, 6847, 6815, 2]
+// Dependencies: [19, 17, 5987, 2087, 6035, 4939, 6789, 6790, 1085, 1393, 5967, 21, 5092, 587, 5906, 558, 576, 4825, 5031, 504, 10700, 10701, 6157, 1126, 1200, 5088, 6795, 6815, 6850, 6879, 1631, 10702, 6788, 6800, 6794, 6820, 1415, 1388, 4818, 4850, 5093, 10703, 5056, 6825, 2000, 6185, 6848, 6816, 2]
 
 // Module 10699 (CustomizeCommunity)
 import react2 from "react" /* 576 */;
@@ -15,20 +15,20 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 6787 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6794 */;
-import EmojiDefault from "Emoji" /* 6819 */;
-import ConnectionCardDefault from "ConnectionCard" /* 6849 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 6788 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6795 */;
+import EmojiDefault from "Emoji" /* 6820 */;
+import ConnectionCardDefault from "ConnectionCard" /* 6850 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6788 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6789 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6789 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6790 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import TextStyles from "TextStyles" /* 5906 */;
@@ -150,7 +150,7 @@ function DropdownPrompt(guildId) {
       canBeNew: !_prompt.isNew,
       returnToCustomize: true
     };
-    obj.openLazy(asyncRequire(6824, dependencyMap.paths), "DropdownOptions", obj2);
+    obj.openLazy(asyncRequire(6825, dependencyMap.paths), "DropdownOptions", obj2);
   }, items1);
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp.promptContainer, animatedStyle];
@@ -318,7 +318,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyC
       tmp26 = tmp29;
     }
     const obj7 = { style: tmp4.emptyContainerImage, source: tmp5Result };
-    const tmp15 = closure_15(stateFromStores(6156), obj7);
+    const tmp15 = closure_15(stateFromStores(6157), obj7);
     cResult[5] = tmp4.emptyContainerImage;
     cResult[6] = tmp5Result;
     cResult[7] = tmp15;
@@ -482,7 +482,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
     if (cResult[6] !== tmp11) {
       let selectedRoleIds;
       if (null != tmp11) {
-        const tmpResult3 = guildId(6794);
+        const tmpResult3 = guildId(6795);
         selectedRoleIds = tmpResult3.getSelectedRoleIds(tmp11);
       } else {
         const _Set = Set;
@@ -499,7 +499,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
     if (cResult[8] !== tmp11) {
       let selectedChannelIds;
       if (null != tmp11) {
-        const tmpResult4 = guildId(6794);
+        const tmpResult4 = guildId(6795);
         selectedChannelIds = tmpResult4.getSelectedChannelIds(tmp11);
       } else {
         const _Set2 = Set;
@@ -532,8 +532,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
           if (cResult[14] === tmp14) {
             tmp19 = cResult[15];
           }
-          ({ helpText, helpTextAdditional } = selectedOptionIds(6814)(tmp19));
-          selectedOptionIds(6814)(tmp19);
+          ({ helpText, helpTextAdditional } = selectedOptionIds(6815)(tmp19));
+          selectedOptionIds(6815)(tmp19);
           if (cResult[16] === helpText) {
             if (cResult[17] === helpTextAdditional) {
               let tmp22;

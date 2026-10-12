@@ -1,9 +1,9 @@
-// Module ID: 16339
-// Function ID: 16340
+// Module ID: 16362
+// Function ID: 16363
 // Name: RootThemeContextProvider
-// Dependencies: [19, 5081, 1205, 1096, 21, 558, 576, 504, 4972, 6663, 16340, 4827, 5097, 11189, 2]
+// Dependencies: [19, 5081, 1205, 1096, 21, 558, 576, 504, 4972, 6664, 16363, 4827, 5097, 11189, 2]
 
-// Module 16339 (RootThemeContextProvider)
+// Module 16362 (RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,9 +11,9 @@ import Constants from "Constants" /* 1096 */;
 import native from "native" /* 4827 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4972 */;
 import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5097 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6663 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
 import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 11189 */;
-import PlainTextExperiment from "PlainTextExperiment" /* 16340 */;
+import PlainTextExperiment from "PlainTextExperiment" /* 16363 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
@@ -172,10 +172,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RootThemeC
   ({ saturation, contrast } = stateFromStoresObject);
   const theme = stateFromStoresObject.theme;
   const tmp4 = useColorThemeBackgroundDefault();
-  const obj2 = manaTypeConsolidationExperiment(6663);
+  const obj2 = manaTypeConsolidationExperiment(6664);
   manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("RootThemeContextProvider");
   const items1 = [manaTypeConsolidationExperiment];
-  const obj3 = manaTypeConsolidationExperiment(16340);
+  const obj3 = manaTypeConsolidationExperiment(16363);
   const plainTextExperiment = obj3.usePlainTextExperiment("RootThemeContextProvider");
   let num = 0;
   const memo = react.useMemo(() => {

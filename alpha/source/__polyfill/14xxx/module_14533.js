@@ -1,13 +1,36 @@
 // Module ID: 14533
 // Function ID: 14534
-// Dependencies: [14534, 14538]
+// Dependencies: [14454, 14534]
+// Exports: getSupportedCalendars
 
 // Module 14533
-import _mod14534 from "module_14534" /* 14534 */;
-import _mod14538 from "module_14538" /* 14538 */;
+const require = globalThis.__r;
+let _require;
 
 
-export default (arg0) => {
-  const tmp = _mod14534;
-  return tmp(_mod14538(arg0));
+export const getSupportedCalendars = function getSupportedCalendars(locale) {
+  _require = locale;
+  const calendars = require("module_14534").calendars;
+  return calendars.filter((item) => {
+    function isSupportedCalendar(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat;
+        const combined = "".concat(str, "-u-ca-");
+        const memoizedDateTimeFormat = createMemoizedDateTimeFormat(combined.concat(item));
+        if ("gregory" === item) {
+          if ("gregory" === memoizedDateTimeFormat.resolvedOptions().calendar) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
+    }
+    return isSupportedCalendar(item, locale);
+  });
 };

@@ -1,9 +1,9 @@
-// Module ID: 17710
-// Function ID: 17711
+// Module ID: 17767
+// Function ID: 17768
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 5081, 2065, 2064, 2024, 6067, 17705, 1085, 11970, 21, 5092, 587, 558, 576, 1631, 504, 1497, 17700, 17076, 4850, 4827, 5093, 5378, 5359, 4739, 17702, 17711, 10853, 10924, 2]
+// Dependencies: [19, 17, 5081, 2065, 2064, 2024, 6067, 17762, 1085, 11972, 21, 5092, 587, 558, 576, 1631, 504, 1497, 17757, 17118, 4850, 4827, 5093, 5378, 5359, 4739, 17759, 17768, 10853, 10924, 2]
 
-// Module 17710 (ActivityPanelFocusedView)
+// Module 17767 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,15 +15,15 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
 import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 10924 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11970 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17702 */;
-import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17711 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17759 */;
+import ActivityPanelHeaderDefault from "ActivityPanelHeader" /* 17768 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17705 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17762 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

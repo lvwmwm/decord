@@ -1,10 +1,10 @@
-// Module ID: 8847
-// Function ID: 8848
+// Module ID: 8848
+// Function ID: 8849
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [2065, 5110, 8829, 558, 576, 504, 2]
+// Dependencies: [2065, 5110, 8830, 558, 576, 504, 2]
 
-// Module 8847 (useIsSecureFramesUIEnabled)
-import SecureFramesConstants from "SecureFramesConstants" /* 8829 */;
+// Module 8848 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 8830 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

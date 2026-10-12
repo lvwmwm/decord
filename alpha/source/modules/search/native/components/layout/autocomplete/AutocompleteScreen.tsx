@@ -1,24 +1,24 @@
-// Module ID: 17433
-// Function ID: 17434
+// Module ID: 17490
+// Function ID: 17491
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 2065, 4760, 1390, 17434, 12048, 9312, 1085, 21, 558, 576, 504, 17338, 12034, 12059, 12055, 4962, 5421, 12041, 17435, 12040, 12042, 17398, 17330, 1126, 17342, 2]
+// Dependencies: [32, 19, 2065, 4760, 1390, 17491, 12050, 9313, 1085, 21, 558, 576, 504, 17395, 12036, 12061, 12057, 4962, 5421, 12043, 17492, 12042, 12044, 17455, 17387, 1126, 17399, 2]
 
-// Module 17433 (AutocompleteScreen)
+// Module 17490 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12034 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12055 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12059 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17435 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12036 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12061 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17492 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 17434 */;
-import SearchQueryStore from "SearchQueryStore" /* 12048 */;
-import SearchConstants from "SearchConstants" /* 9312 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 17491 */;
+import SearchQueryStore from "SearchQueryStore" /* 12050 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

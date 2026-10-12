@@ -1,14 +1,14 @@
-// Module ID: 9228
-// Function ID: 9229
+// Module ID: 9229
+// Function ID: 9230
 // Name: disclosures
-// Dependencies: [5, 1085, 1295, 9229, 1126, 2]
+// Dependencies: [5, 1085, 1295, 9230, 1126, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9228 (disclosures)
+// Module 9229 (disclosures)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import applications from "applications" /* 9229 */;
+import applications from "applications" /* 9230 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ obj = function _ackDisclosures() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ obj = function _ackDisclosures() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c2 = 3;

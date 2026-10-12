@@ -1,19 +1,19 @@
-// Module ID: 12967
-// Function ID: 12968
+// Module ID: 12969
+// Function ID: 12970
 // Name: QuestMatchingUtils
-// Dependencies: [32, 5440, 10648, 5972, 1085, 2024, 7412, 7396, 7410, 12539, 2]
+// Dependencies: [32, 5440, 10649, 5972, 1085, 2024, 7413, 7397, 7411, 12541, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 12967 (QuestMatchingUtils)
+// Module 12969 (QuestMatchingUtils)
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 2024 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7396 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7410 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7412 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 12539 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7397 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7411 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 12541 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 10648 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 10649 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import size from "module_2" /* 2 */;
 

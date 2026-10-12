@@ -1,9 +1,9 @@
-// Module ID: 7411
-// Function ID: 7412
+// Module ID: 7412
+// Function ID: 7413
 // Name: QuestUtmStore
 // Dependencies: [570, 2]
 
-// Module 7411 (QuestUtmStore)
+// Module 7412 (QuestUtmStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -11,9 +11,9 @@ let obj = module_570.create((arg0) => {
   const state = arg0;
   obj = {
     utmSourceCurrent: "r",
-    utmMediumCurrent: "k",
-    utmCampaignCurrent: "c",
-    utmContentCurrent: "getCurrentUser",
+    utmMediumCurrent: "apply",
+    utmCampaignCurrent: "exports",
+    utmContentCurrent: "Symbol",
     setUtmCurrentContext(utmSourceCurrent) {
       obj = { utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent };
       return state(obj);

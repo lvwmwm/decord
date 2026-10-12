@@ -1,7 +1,7 @@
 // Module ID: 11390
 // Function ID: 11391
 // Name: ModerateUserActionSheet
-// Dependencies: [19, 2125, 2087, 4750, 1390, 1085, 21, 5092, 504, 11391, 11392, 5409, 5056, 6894, 1126, 7091, 5934, 11393, 2000, 11389, 4737, 11437, 11397, 5036, 11439, 11441, 11443, 6839, 6838, 11445, 6264, 2]
+// Dependencies: [19, 2125, 2087, 4750, 1390, 1085, 21, 5092, 504, 11391, 11392, 5409, 5056, 6895, 1126, 7092, 5934, 11393, 2000, 11389, 4737, 11439, 11397, 5036, 11441, 11443, 11445, 6840, 6839, 11447, 6265, 2]
 
 // Module 11390 (ModerateUserActionSheet)
 import Constants from "Constants" /* 1085 */;
@@ -10,8 +10,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import GuildMemberUtils from "GuildMemberUtils" /* 11391 */;
 import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 11392 */;
 import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11397 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 11439 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 11443 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 11441 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 11445 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;

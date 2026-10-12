@@ -1,23 +1,22 @@
-// Module ID: 17144
-// Function ID: 17145
+// Module ID: 17284
+// Function ID: 17285
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2129, 13213, 10651, 13245, 17145, 17146, 13328, 558, 576, 504, 2]
+// Dependencies: [32, 19, 2129, 10652, 13268, 17285, 17286, 13351, 558, 576, 17061, 504, 2]
 
-// Module 17144 (conjurePlanWidget)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
-import _mod13245 from "module_13245" /* 13245 */;
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 13328 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 17145 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 17146 */;
+// Module 17284 (conjurePlanWidget)
+import _mod13268 from "module_13268" /* 13268 */;
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 13351 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 17285 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 17286 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, map;
+let _require, closure_5, dependencyMap, map;
 
 function withImageAssets(value_type) {
   let tmp = value_type;
@@ -121,19 +120,19 @@ function sampleValues(widget_config, sample_data, tmp12Result) {
       let _String = String;
       let tmp13 = tmp12Result[String(undefined, tmp8)];
       if (null != tmp13) {
-        let obj3 = { type: _mod13245.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod13268.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod13245.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod13268.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp10 = dependencyMap;
         let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod13245.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod13268.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }
@@ -163,7 +162,7 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp1
     }
     continue;
   }
-  const applicationWidgetSurfaceConfigsSchema = _mod13245.applicationWidgetSurfaceConfigsSchema;
+  const applicationWidgetSurfaceConfigsSchema = _mod13268.applicationWidgetSurfaceConfigsSchema;
   const safeParseResult = applicationWidgetSurfaceConfigsSchema.safeParse(obj);
   if (safeParseResult.success) {
     const data = safeParseResult.data;
@@ -194,19 +193,19 @@ function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp1
     return null;
   }
 }
-const getAttachmentUrl = ConjureConnectionStore.getAttachmentUrl;
 const localizedStrings = [];
-let closure_8 = {};
-let c9 = 256;
+let closure_7 = {};
+let c8 = 256;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureWidgetImageSrcs(arg0, arg1) {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureWidgetImageSrcs(arg0, arg1) {
+  let closure_0;
   let closure_1;
   let closure_2;
   _require = arg0;
   dependencyMap = arg1;
   let obj = require("react");
   const cResult = obj.c(4);
-  [, _slicedToArray] = react.useState(closure_8);
+  [, _slicedToArray] = react.useState(closure_7);
   const obj2 = react;
   if (cResult[0] === arg1) {
     let tmp4;
@@ -218,7 +217,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
     const effect = obj2.useEffect(tmp4, tmp5);
     return tmp3;
   }
-  const fn = function o() {
+  const fn = function u() {
     let obj = closure_1;
     let _Object = Object;
     if (closure_1 == null) {
@@ -229,9 +228,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       let c0 = false;
       const allPromises = Promise.all(entries1.map((item) => {
         const tmp = closure_2(item, 2);
-        closure_0 = tmp[0];
-        const promise = getAttachmentUrl(c0, tmp[1].id);
-        return promise.then((result) => {
+        _true = tmp[0];
+        const tmp2 = tmp[1];
+        const obj = _true(closure_1[10]);
+        const attachmentUrl = obj.getAttachmentUrl(c0, tmp2.id);
+        return attachmentUrl.then((result) => {
           const items = [closure_0, result];
           return items;
         }, () => null);
@@ -246,7 +247,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
 
       });
       return () => {
-        c0 = true;
+        let c0 = true;
       };
     }
   };
@@ -262,9 +263,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
   let first;
   let closure_0 = arg0;
   let closure_1 = arg1;
-  [first, _slicedToArray] = react.useState(closure_8);
+  [first, _slicedToArray] = react.useState(closure_7);
   let items = [arg0, arg1];
   const effect = react.useEffect(() => {
+    let _true;
     let obj = closure_1;
     let _Object = Object;
     if (closure_1 == null) {
@@ -276,8 +278,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       const allPromises = Promise.all(entries1.map((item) => {
         let tmp;
         [, tmp] = item;
-        const promise = getAttachmentUrl(c0, tmp.id);
-        return promise.then((result) => {
+        const obj = _true(closure_1[10]);
+        const attachmentUrl = obj.getAttachmentUrl(c0, tmp.id);
+        return attachmentUrl.then((result) => {
           const items = [closure_1_0, result];
           return items;
         }, () => null);
@@ -292,7 +295,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
 
       });
       return () => {
-        c0 = true;
+        let c0 = true;
       };
     }
   }, items);
@@ -361,7 +364,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   const tmpResult2 = require("get initialized");
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10);
   let images;
-  const tmp12 = closure_15;
+  const tmp12 = closure_14;
   if (widget_preview != null) {
     images = widget_preview.images;
   }
@@ -410,7 +413,6 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   tmp15 = tmp16;
 }) : (function useConjurePlanWidget(arg0, widget_config) {
   let closure_0;
-  let memo;
   let stateFromStores1;
   _require = arg0;
   widget_config = widget_config.widget_config;
@@ -418,7 +420,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
   let obj = require("get initialized");
   const items = [stateFromStores1];
   const stateFromStores = obj.useStateFromStores(items, () => stateFromStores1.locale);
-  const items1 = [memo];
+  const items1 = [closure_5];
   const obj2 = require("get initialized");
   stateFromStores1 = obj2.useStateFromStores(items1, () => {
     const project = ConjureProjectStore.getProject(closure_0);
@@ -439,14 +441,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
     return prop;
   });
   let images;
-  const tmp3 = closure_15;
+  const tmp3 = closure_14;
   if (widget_preview != null) {
     images = widget_preview.images;
   }
   const tmp3Result = tmp3(arg0, images);
-  let closure_5 = tmp3Result;
+  closure_5 = tmp3Result;
   const items2 = [widget_config, widget_preview, tmp3Result, stateFromStores];
-  memo = stateFromStores.useMemo(() => {
+  const memo = stateFromStores.useMemo(() => {
     let tmp2 = null;
     if (null != widget_config) {
       tmp2 = null;

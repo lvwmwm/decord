@@ -1,16 +1,16 @@
-// Module ID: 17703
-// Function ID: 17704
+// Module ID: 17760
+// Function ID: 17761
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 6067, 21, 17704, 17710, 558, 576, 17724, 4827, 6845, 17725, 17702, 2]
+// Dependencies: [19, 17, 6067, 21, 17761, 17767, 558, 576, 17781, 4827, 6846, 17782, 17759, 2]
 
-// Module 17703 (ActivityPanelUI)
+// Module 17760 (ActivityPanelUI)
 import react2 from "react" /* 576 */;
 import native from "native" /* 4827 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import LayerScope2 from "LayerScope" /* 6845 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17702 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17724 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17725 */;
+import LayerScope2 from "LayerScope" /* 6846 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17759 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17781 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17782 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,9 +28,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = metroImportDefault;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 17704;
+    tmp4 = 17761;
   } else {
-    tmp4 = 17710;
+    tmp4 = 17767;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivity
     tmp4 = closure_12;
   }, items);
   const obj = { children: items1 };
-  const LayerScope = mode(6845).LayerScope;
+  const LayerScope = mode(6846).LayerScope;
   items1 = [renderActivityPanelSystemUIManager(), ];
   const obj2 = { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren };
   items1[1] = closure_7(mode(4827).TransitionGroup, obj2);

@@ -1,15 +1,15 @@
-// Module ID: 11979
-// Function ID: 11980
+// Module ID: 11981
+// Function ID: 11982
 // Name: VoicePanelHeaderGlassBlur
-// Dependencies: [19, 17, 21, 5092, 1382, 558, 576, 4850, 5378, 5031, 4969, 5364, 6161, 6761, 2]
+// Dependencies: [19, 17, 21, 5092, 1382, 558, 576, 4850, 5378, 5031, 4969, 5364, 6162, 6762, 2]
 
-// Module 11979 (VoicePanelHeaderGlassBlur)
+// Module 11981 (VoicePanelHeaderGlassBlur)
 import react_native from "react-native" /* 17 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5364 */;
 import spring from "spring" /* 5378 */;
-import NativeViewDefault from "NativeView" /* 6161 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6761 */;
+import NativeViewDefault from "NativeView" /* 6162 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

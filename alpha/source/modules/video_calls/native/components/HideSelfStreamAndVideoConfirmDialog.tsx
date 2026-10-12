@@ -1,13 +1,13 @@
-// Module ID: 17889
-// Function ID: 17890
+// Module ID: 17946
+// Function ID: 17947
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [109, 19, 17, 17888, 21, 5092, 558, 576, 5260, 1126, 5088, 5398, 2]
+// Dependencies: [109, 19, 17, 17945, 21, 5092, 558, 576, 5260, 1126, 5088, 5398, 2]
 
-// Module 17889 (HideSelfStreamAndVideoConfirmDialog)
+// Module 17946 (HideSelfStreamAndVideoConfirmDialog)
 import react_native from "react-native" /* 17 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5260 */;
 import AlertDefault from "Alert" /* 5398 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17888 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17945 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

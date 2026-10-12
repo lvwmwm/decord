@@ -1,10 +1,10 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 17074
+// Function ID: 17075
 // Name: conjureProjectActions
-// Dependencies: [5, 13213, 10651, 2072, 17041, 4808, 5305, 1126, 3849, 15229, 10992, 12620, 6639, 8772, 10345, 11425, 17055, 5044, 15817, 17057, 5051, 5038, 6885, 5414, 10016, 4809, 5042, 7091, 17059, 5049, 11411, 2]
+// Dependencies: [5, 13218, 10652, 2072, 17059, 4808, 5305, 1126, 3849, 15252, 10992, 12622, 6640, 8773, 10346, 11415, 17075, 5044, 15840, 17077, 5051, 5038, 6886, 5414, 10017, 4809, 5042, 7092, 17079, 5049, 11413, 2]
 // Exports: conjureProjectActions
 
-// Module 17054 (conjureProjectActions)
+// Module 17074 (conjureProjectActions)
 import intl14 from "intl" /* 1126 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import _modDef3849 from "module_3849" /* 3849 */;
@@ -13,13 +13,13 @@ import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import CopyIcon from "CopyIcon" /* 5042 */;
 import AlertModal from "AlertModal" /* 5305 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
-import ClipboardUtils from "ClipboardUtils" /* 6885 */;
-import conjureProjectMute from "conjureProjectMute" /* 11425 */;
-import ConjureArchivePicker from "ConjureArchivePicker" /* 17041 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 17059 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
+import conjureProjectMute from "conjureProjectMute" /* 11415 */;
+import ConjureArchivePicker from "ConjureArchivePicker" /* 17059 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 17079 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13218 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ let obj = function _importIntoProject() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -117,7 +117,7 @@ let obj = function _importIntoProject() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } else {
                     let c2;
@@ -164,7 +164,7 @@ let obj = function _importIntoProject() {
                           c2 = 0;
                         }
                         c3 = 3;
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       }
                     } catch (tmp24) {
                       if (0 === c2) {
@@ -184,7 +184,7 @@ let obj = function _importIntoProject() {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp33) {
           c5 = 3;

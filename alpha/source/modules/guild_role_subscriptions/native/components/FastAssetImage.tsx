@@ -1,12 +1,12 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15529
+// Function ID: 15530
 // Name: FastAssetImage
-// Dependencies: [32, 19, 21, 558, 576, 5644, 6156, 2]
+// Dependencies: [32, 19, 21, 558, 576, 5644, 6157, 2]
 
-// Module 15506 (FastAssetImage)
+// Module 15529 (FastAssetImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 6156 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

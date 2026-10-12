@@ -1,9 +1,9 @@
-// Module ID: 8798
-// Function ID: 8799
+// Module ID: 8799
+// Function ID: 8800
 // Name: VoiceStateIconUtils
 // Dependencies: [2012, 5113, 568, 558, 576, 504, 2]
 
-// Module 8798 (VoiceStateIconUtils)
+// Module 8799 (VoiceStateIconUtils)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;

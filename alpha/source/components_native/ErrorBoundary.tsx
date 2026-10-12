@@ -1,21 +1,21 @@
-// Module ID: 16327
-// Function ID: 16328
+// Module ID: 16350
+// Function ID: 16351
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 10483, 21, 5092, 558, 576, 11341, 504, 1126, 5379, 4827, 1255, 584, 1200, 8717, 5088, 2]
+// Dependencies: [5, 32, 19, 17, 10484, 21, 5092, 558, 576, 11341, 504, 1126, 5379, 4827, 1255, 584, 1200, 8718, 5088, 2]
 
-// Module 16327 (components_native/ErrorBoundary)
+// Module 16350 (components_native/ErrorBoundary)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import native from "native" /* 1200 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import native2 from "native" /* 4827 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AppCrash from "AppCrash" /* 8717 */;
+import AppCrash from "AppCrash" /* 8718 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10483 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10484 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -87,7 +87,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaybeC
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -126,7 +126,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaybeC
                 c3 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp13) {
             let closure_2 = tmp13;
@@ -185,7 +185,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaybeC
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -224,7 +224,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaybeC
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp13) {
           closure_2 = tmp13;

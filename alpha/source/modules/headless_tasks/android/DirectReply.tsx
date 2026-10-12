@@ -1,9 +1,9 @@
-// Module ID: 18702
-// Function ID: 18703
+// Module ID: 18760
+// Function ID: 18761
 // Name: DirectReply
-// Dependencies: [5, 17, 5085, 3, 18696, 7178, 2]
+// Dependencies: [5, 17, 5085, 3, 18754, 7179, 2]
 
-// Module 18702 (DirectReply)
+// Module 18760 (DirectReply)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import MessageConstants from "MessageConstants" /* 5085 */;
@@ -45,7 +45,7 @@ export default (arg0) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -91,7 +91,7 @@ export default (arg0) => {
                 }
                 closure_0(true);
                 c4 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             } catch (tmp19) {
               c4 = 3;

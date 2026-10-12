@@ -75,12 +75,15 @@ class FramesStoreClass extends Store {
 const prototype = FramesStoreClass.prototype;
 FramesStoreClass.displayName = "FramesStore";
 let obj = {
-  FRAME_LAUNCH_START: function handleFrameLaunchStart(applicationId) {
+  FRAME_LAUNCH_START: function handleFrameLaunchStart(arg0) {
+    let applicationId;
     let hostWindowKey;
+    let launch;
+    let launchRequestId;
     let surface;
-    ({ frameId, surface, hostWindowKey } = applicationId);
-    applicationId = applicationId.applicationId;
-    const obj = { id: frameId, applicationId, intent: metroRequire(surface), surface, state: "loading", data: null, hostWindowKey };
+    ({ frameId, surface, hostWindowKey } = arg0);
+    ({ applicationId, launch, launchRequestId } = arg0);
+    const obj = { id: frameId, applicationId, intent: metroRequire(surface), surface, state: "loading", data: null, hostWindowKey, launch, launchRequestId };
     set = map.set;
     if (hostWindowKey == null) {
       hostWindowKey = null;
@@ -90,34 +93,48 @@ let obj = {
   FRAME_LAUNCH: function handleFrameLaunch(arg0) {
     let hostWindowKey;
     let launch;
+    let launchRequestId;
     let obj5;
     let proxyTicket;
-    ({ frameId, hostWindowKey } = arg0);
+    ({ frameId, hostWindowKey, launchRequestId } = arg0);
     ({ proxyTicket, launch } = arg0);
     const value = map.get(frameId);
     if (null != value) {
-      const tmp8 = getURLForApplicationDefault(value.applicationId);
-      if (null == tmp8) {
-        map.delete(frameId);
-        if (frameId === frameId) {
-          frameId = null;
+      const tmp2 = null != launchRequestId && value.launchRequestId !== launchRequestId;
+      if (!tmp2) {
+        const tmp5 = getURLForApplicationDefault(value.applicationId);
+        if (null == tmp5) {
+          map.delete(frameId);
+          if (frameId === frameId) {
+            frameId = null;
+          }
+        } else {
+          const obj3 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj5 };
+          ({ id: obj2.id, applicationId: obj2.applicationId, intent: obj2.intent, surface: obj2.surface, launchRequestId: obj2.launchRequestId } = value);
+          const _Date = Date;
+          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, prefersPictureInPictureOnNavigateAway: false, iframeId: null, hostWindowKey, launch };
+          set = map.set;
+          if (hostWindowKey == null) {
+            hostWindowKey = null;
+          }
+          const result = set(frameId, obj3);
         }
-      } else {
-        const obj3 = { id: null, applicationId: null, intent: null, surface: null, state: "launched", data: obj5 };
-        ({ id: obj2.id, applicationId: obj2.applicationId, intent: obj2.intent, surface: obj2.surface } = value);
-        const _Date = Date;
-        obj5 = { url: tmp8, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, prefersPictureInPictureOnNavigateAway: false, iframeId: null, hostWindowKey, launch };
-        set = map.set;
-        if (hostWindowKey == null) {
-          hostWindowKey = null;
-        }
-        const result = set(frameId, obj3);
       }
     }
+    return false;
   },
-  FRAME_LAUNCH_FAIL: function handleFrameLaunchFail(frameId) {
-    frameId = frameId.frameId;
-    map.delete(frameId);
+  FRAME_LAUNCH_FAIL: function handleFrameLaunchFail(arg0) {
+    let launchRequestId;
+    ({ frameId, launchRequestId } = arg0);
+    const value = map.get(frameId);
+    const obj = map;
+    if (null != value) {
+      const tmp2 = null != launchRequestId && value.launchRequestId !== launchRequestId;
+      if (tmp2) {
+        return false;
+      }
+    }
+    obj.delete(frameId);
     if (frameId === frameId) {
       frameId = null;
     }

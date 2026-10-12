@@ -1,16 +1,16 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9202
+// Function ID: 9203
 // Name: ContentImpressionTrackerHooks
-// Dependencies: [19, 7390, 558, 576, 5979, 504, 7415, 5922, 9202, 2]
+// Dependencies: [19, 7391, 558, 576, 5979, 504, 7416, 5922, 9203, 2]
 // Exports: useQuestImpressionId
 
-// Module 9201 (ContentImpressionTrackerHooks)
+// Module 9202 (ContentImpressionTrackerHooks)
 import react2 from "react" /* 576 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
-import react3 from "react" /* 9202 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
+import react3 from "react" /* 9203 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7390 */;
+import QuestStore from "QuestStore" /* 7391 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -228,7 +228,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestStat
     if (null != stateFromStores) {
       let tmp10;
       if (cResult[5] !== stateFromStores) {
-        const tmpResult2 = adContentIds(7415);
+        const tmpResult2 = adContentIds(7416);
         const questStatus = tmpResult2.getQuestStatus(stateFromStores);
         cResult[5] = stateFromStores;
         cResult[6] = questStatus;

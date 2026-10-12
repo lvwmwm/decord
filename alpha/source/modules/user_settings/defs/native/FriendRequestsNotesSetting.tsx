@@ -1,13 +1,13 @@
-// Module ID: 16298
-// Function ID: 16299
+// Module ID: 16321
+// Function ID: 16322
 // Name: FriendRequestsNotesSetting
-// Dependencies: [7992, 10663, 1126, 13394, 2041, 2]
+// Dependencies: [7993, 10663, 1126, 13417, 2041, 2]
 
-// Module 16298 (FriendRequestsNotesSetting)
+// Module 16321 (FriendRequestsNotesSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import HideFriendRequestNotesUtils from "HideFriendRequestNotesUtils" /* 13394 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import HideFriendRequestNotesUtils from "HideFriendRequestNotesUtils" /* 13417 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

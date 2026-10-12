@@ -1,9 +1,9 @@
-// Module ID: 9240
-// Function ID: 9241
+// Module ID: 9241
+// Function ID: 9242
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 5440, 502, 1390, 21, 5092, 587, 558, 576, 5031, 504, 5763, 1415, 4969, 6852, 9204, 1200, 9241, 5088, 1126, 5379, 5046, 6195, 2]
+// Dependencies: [19, 17, 5440, 502, 1390, 21, 5092, 587, 558, 576, 5031, 504, 5763, 1415, 4969, 6853, 9205, 1200, 9242, 5088, 1126, 5379, 5046, 6196, 2]
 
-// Module 9240 (ConnectAccountStep)
+// Module 9241 (ConnectAccountStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6852 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9204 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9205 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
         }
       }
       const obj4 = { color: platformType(587).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-      const MoreHorizontalIcon = tmp(9241).MoreHorizontalIcon;
+      const MoreHorizontalIcon = tmp(9242).MoreHorizontalIcon;
       const tmp36 = closure_8(MoreHorizontalIcon, obj4);
       class E {
         constructor() {
@@ -415,7 +415,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
   const Avatar = tmp5(1200).Avatar;
   items4 = [closure_8(Avatar, obj9), , ];
   const obj10 = { color: platformType(587).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-  const MoreHorizontalIcon = tmp5(9241).MoreHorizontalIcon;
+  const MoreHorizontalIcon = tmp5(9242).MoreHorizontalIcon;
   items4[1] = closure_8(MoreHorizontalIcon, obj10);
   const obj11 = { source: userAvatarSource, size: clientId(1200).AvatarSizes.XLARGE };
   const Avatar2 = tmp5(1200).Avatar;
@@ -546,7 +546,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedA
             const _Symbol = Symbol;
             if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
               const obj6 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
-              const CheckmarkLargeIcon = tmp(6195).CheckmarkLargeIcon;
+              const CheckmarkLargeIcon = tmp(6196).CheckmarkLargeIcon;
               const tmp35 = metroImportAll(CheckmarkLargeIcon, obj6);
               cResult[21] = tmp35;
               tmp33 = tmp35;
@@ -715,7 +715,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedA
   items2[1] = metroImportAll(Text2, obj9);
   items1[1] = React4(View, obj7);
   const obj11 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
-  const CheckmarkLargeIcon = tmp12(6195).CheckmarkLargeIcon;
+  const CheckmarkLargeIcon = tmp12(6196).CheckmarkLargeIcon;
   items1[2] = metroImportAll(CheckmarkLargeIcon, obj11);
   items[1] = React4(View, obj5);
   const obj12 = { variant: "text-sm/normal", color: "text-default", children: intl3.format(intl5.t.pyRNXJ, { applicationName }) };

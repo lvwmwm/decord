@@ -1,9 +1,9 @@
-// Module ID: 6808
-// Function ID: 6809
+// Module ID: 6809
+// Function ID: 6810
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 5966, 1085, 4763, 1095, 584, 6803, 6805, 11, 4969, 1126, 1403, 1295, 2]
+// Dependencies: [5, 5966, 1085, 4763, 1095, 584, 6804, 6806, 11, 4969, 1126, 1403, 1295, 2]
 
-// Module 6808 (NotificationSettingsModalActionCreators)
+// Module 6809 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,8 +11,8 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import intl2 from "intl" /* 1126 */;
 import NotificationConstants from "NotificationConstants" /* 4763 */;
 import shared from "shared" /* 4969 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6803 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 6805 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 6806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import size from "module_2" /* 2 */;
@@ -184,7 +184,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -239,7 +239,7 @@ let obj = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c3 = 3;

@@ -1,12 +1,12 @@
-// Module ID: 15039
-// Function ID: 15040
+// Module ID: 15062
+// Function ID: 15063
 // Name: AccountWebAuthnRegisterSetting
-// Dependencies: [7992, 1085, 10663, 1126, 15040, 2]
+// Dependencies: [7993, 1085, 10663, 1126, 15063, 2]
 
-// Module 15039 (AccountWebAuthnRegisterSetting)
+// Module 15062 (AccountWebAuthnRegisterSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

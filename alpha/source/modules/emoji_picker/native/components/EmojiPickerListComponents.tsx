@@ -1,19 +1,19 @@
-// Module ID: 9512
-// Function ID: 9513
+// Module ID: 9513
+// Function ID: 9514
 // Name: EmojiPickerListComponents
-// Dependencies: [19, 17, 9429, 21, 5092, 587, 558, 576, 1200, 8280, 1126, 5088, 9510, 2]
+// Dependencies: [19, 17, 9430, 21, 5092, 587, 558, 576, 1200, 8281, 1126, 5088, 9511, 2]
 
-// Module 9512 (EmojiPickerListComponents)
+// Module 9513 (EmojiPickerListComponents)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8280 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9510 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8281 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9511 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9429 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9430 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -151,7 +151,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   let tmp6 = isSectionNitroLocked;
   if (tmp6) {
     const obj4 = { useTier0UpsellContent };
-    tmp6 = React3(tmp(9510).PremiumUpsellGradientBackground, obj4);
+    tmp6 = React3(tmp(9511).PremiumUpsellGradientBackground, obj4);
   }
   cResult[0] = isSectionNitroLocked;
   cResult[1] = useTier0UpsellContent;

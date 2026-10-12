@@ -1,9 +1,9 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7298
+// Function ID: 7299
 // Name: FeaturedSubblockType
 // Dependencies: [2]
 
-// Module 7297 (FeaturedSubblockType)
+// Module 7298 (FeaturedSubblockType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/FeaturedSubblockType.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 10368
-// Function ID: 10369
+// Module ID: 10369
+// Function ID: 10370
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 4850, 5096, 558, 10369, 5093, 576, 6667, 10375, 10377, 6845, 10378, 2]
+// Dependencies: [19, 17, 21, 4850, 5096, 558, 10370, 5093, 576, 6668, 10376, 10378, 6846, 10379, 2]
 
-// Module 10368 (ChatViewWrapperAnimatedKeyboard)
+// Module 10369 (ChatViewWrapperAnimatedKeyboard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6667 */;
-import LayerScope2 from "LayerScope" /* 6845 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10375 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10377 */;
-import StickyWrapper2 from "StickyWrapper" /* 10378 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6668 */;
+import LayerScope2 from "LayerScope" /* 6846 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10376 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10378 */;
+import StickyWrapper2 from "StickyWrapper" /* 10379 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -246,7 +246,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatViewWrap
           }
         }
         const obj3 = { children: hasOwnProperty(StickyWrapper2.StickyWrapper, obj4) };
-        const LayerScope = tmp(6845).LayerScope;
+        const LayerScope = tmp(6846).LayerScope;
         obj4 = { header: stickyHeader, style, pointerEvents: tmp5, children: tmp13 };
         const tmp18 = hasOwnProperty(LayerScope, obj3);
         cResult[9] = tmp5;

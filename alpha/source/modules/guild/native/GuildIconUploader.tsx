@@ -1,7 +1,7 @@
 // Module ID: 11353
 // Function ID: 11354
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1205, 21, 5092, 587, 4827, 6156, 4969, 11354, 11355, 5088, 1126, 11356, 11357, 6184, 2]
+// Dependencies: [19, 17, 1205, 21, 5092, 587, 4827, 6157, 4969, 11354, 11355, 5088, 1126, 11356, 11357, 6185, 2]
 
 // Module 11353 (GuildIconUploader)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 4827 */;
 import shared from "shared" /* 4969 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import Pressables from "Pressables" /* 6184 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import Pressables from "Pressables" /* 6185 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11356 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11357 */;
 import react from "react" /* 19 */;

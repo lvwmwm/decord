@@ -1,11 +1,11 @@
-// Module ID: 10443
-// Function ID: 10444
+// Module ID: 10444
+// Function ID: 10445
 // Name: useUnreadSettingNotice
-// Dependencies: [32, 19, 2069, 558, 576, 10444, 10445, 504, 2]
+// Dependencies: [32, 19, 2069, 558, 576, 10445, 10446, 504, 2]
 
-// Module 10443 (useUnreadSettingNotice)
+// Module 10444 (useUnreadSettingNotice)
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 10445 */;
+import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 10446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

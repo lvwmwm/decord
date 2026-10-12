@@ -1,9 +1,9 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10328
+// Function ID: 10329
 // Name: useCanShowFavoritesGuildOnboarding
 // Dependencies: [4802, 2116, 558, 576, 504, 4976, 2]
 
-// Module 10327 (useCanShowFavoritesGuildOnboarding)
+// Module 10328 (useCanShowFavoritesGuildOnboarding)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;

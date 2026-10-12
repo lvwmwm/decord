@@ -1,13 +1,13 @@
-// Module ID: 14629
-// Function ID: 14630
+// Module ID: 14652
+// Function ID: 14653
 // Name: InteractionModalStore
-// Dependencies: [5442, 38, 8254, 1102, 7178, 504, 584, 2]
+// Dependencies: [5442, 38, 8255, 1102, 7179, 504, 584, 2]
 
-// Module 14629 (InteractionModalStore)
+// Module 14652 (InteractionModalStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8254 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 8255 */;
 import size from "module_2" /* 2 */;
 
 let ERRORED, c3, c5, c6, c7;
@@ -59,7 +59,7 @@ const obj2 = {
     let data;
     let obj;
     let preflight;
-    const f146064 = () => {
+    const f146339 = () => {
       let tmp2 = nonce === closure_1_0;
       const tmp = closure_1_0;
       if (tmp2) {
@@ -96,13 +96,13 @@ const obj2 = {
       };
       if (null != preflight) {
         const _setTimeout2 = setTimeout;
-        let timerId = setTimeout(f146064, 2 * tmp3(1102).Millis.MINUTE);
+        let timerId = setTimeout(f146339, 2 * tmp3(1102).Millis.MINUTE);
         const nextPromise = preflight.then(() => {
           let tmp;
           if (typeof startTimeout === "function") {
             let tmp2 = globalThis;
             const _setTimeout = setTimeout;
-            const timerId = setTimeout(f146064, tmp);
+            const timerId = setTimeout(f146339, tmp);
           } else {
             throw new TypeError("Trying to call a non-function");
           }
@@ -113,7 +113,7 @@ const obj2 = {
         });
       } else {
         let _setTimeout = setTimeout;
-        const timerId1 = setTimeout(f146064, 10 * tmp3(1102).Millis.SECOND);
+        const timerId1 = setTimeout(f146339, 10 * tmp3(1102).Millis.SECOND);
       }
       return true;
     } else {

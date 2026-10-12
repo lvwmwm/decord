@@ -1,15 +1,15 @@
-// Module ID: 14997
-// Function ID: 14998
+// Module ID: 15020
+// Function ID: 15021
 // Name: useShouldShowInitialGoogleWalletBanner
-// Dependencies: [5, 32, 19, 7536, 7512, 504, 1382, 7511, 7543, 1398, 7546, 2]
+// Dependencies: [5, 32, 19, 7537, 7513, 504, 1382, 7512, 7544, 1398, 7547, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 14997 (useShouldShowInitialGoogleWalletBanner)
-import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
+// Module 15020 (useShouldShowInitialGoogleWalletBanner)
+import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7536 */;
+import SafetyHubStore from "SafetyHubStore" /* 7537 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c2;
@@ -140,7 +140,7 @@ export const useShouldShowInitialGoogleWalletBanner = function useShouldShowInit
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp24) {
             if (0 === c2) {

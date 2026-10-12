@@ -1,9 +1,9 @@
-// Module ID: 10036
-// Function ID: 10037
+// Module ID: 10037
+// Function ID: 10038
 // Name: useMediaKeyboardItemsPerRow
 // Dependencies: [19, 4980, 558, 576, 2]
 
-// Module 10036 (useMediaKeyboardItemsPerRow)
+// Module 10037 (useMediaKeyboardItemsPerRow)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

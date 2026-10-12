@@ -1,11 +1,11 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17225
+// Function ID: 17226
 // Name: ConjureTurnPresentation
-// Dependencies: [17166, 2]
+// Dependencies: [17176, 2]
 // Exports: resolveAttachmentHost, resolveTurnPresentation, turnLeadsWithStretch
 
-// Module 17234 (ConjureTurnPresentation)
-import ConjureTimelineTree from "ConjureTimelineTree" /* 17166 */;
+// Module 17225 (ConjureTurnPresentation)
+import ConjureTimelineTree from "ConjureTimelineTree" /* 17176 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTurnPresentation.tsx");
@@ -39,8 +39,7 @@ export const resolveTurnPresentation = function resolveTurnPresentation(hasAttac
   }
   let c0;
   hasAttachments = hasAttachments.hasAttachments;
-  const tmp = require;
-  let obj = ConjureTimelineTree;
+  const obj = ConjureTimelineTree;
   const streamedContentResult = obj.streamedContent(steps);
   const found = streamedContentResult.filter((type) => "message" === type.type);
   const atResult = found.at(-1);
@@ -50,13 +49,12 @@ export const resolveTurnPresentation = function resolveTurnPresentation(hasAttac
     if (null != atResult) {
       const trimmed = str.trim();
       const trimmed1 = content.trim();
-      let str2 = "";
       let tmp6 = "" !== trimmed && "" !== trimmed1;
       if (tmp6) {
         let tmp7 = trimmed === trimmed1;
         if (!tmp7) {
           tmp7 = atResult.content.length >= 16000 && trimmed1.startsWith(trimmed);
-          const tmp8 = atResult.content.length >= 16000 && trimmed1.startsWith(trimmed);
+          atResult.content.length >= 16000 && trimmed1.startsWith(trimmed);
         }
         tmp6 = tmp7;
       }
@@ -77,7 +75,7 @@ export const resolveTurnPresentation = function resolveTurnPresentation(hasAttac
   if (tmp10) {
     tmp10 = "" !== content.trim();
   }
-  let obj2 = { streamed: found1, lastStreamedMessage: atResult1, replyKey: key, showsClosingMessage: tmp10, closingContent: str4, attachmentsHost: str5 };
+  const obj2 = { streamed: found1, lastStreamedMessage: atResult1, replyKey: key, showsClosingMessage: tmp10, closingContent: str4, attachmentsHost: str5 };
   key = undefined;
   if (tmp4 != null) {
     key = tmp4.key;

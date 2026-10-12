@@ -1,13 +1,13 @@
-// Module ID: 13694
-// Function ID: 13695
+// Module ID: 13717
+// Function ID: 13718
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 7263, 7262, 12770, 2]
+// Dependencies: [5, 7264, 7263, 12772, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 13694 (showMarketingMomentRewardScreen)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7262 */;
+// Module 13717 (showMarketingMomentRewardScreen)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7263 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -26,7 +26,7 @@ let obj = function _showMarketingMomentRewardScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -64,7 +64,7 @@ let obj = function _showMarketingMomentRewardScreen() {
             obj.open(obj7);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         c4 = 3;

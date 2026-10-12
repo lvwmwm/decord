@@ -1,7 +1,7 @@
 // Module ID: 10708
 // Function ID: 10709
 // Name: OptInChannelsUtils
-// Dependencies: [19, 2065, 6800, 6035, 4760, 1390, 1085, 2072, 7256, 5967, 6924, 6094, 5421, 6801, 7250, 10709, 6799, 1112, 558, 576, 4938, 2049, 504, 1126, 4702, 11, 2]
+// Dependencies: [19, 2065, 6801, 6035, 4760, 1390, 1085, 2072, 7257, 5967, 6925, 6095, 5421, 6802, 7251, 10709, 6800, 1112, 558, 576, 4938, 2049, 504, 1126, 4702, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useFilterCategoriesByQuery
 
 // Module 10708 (OptInChannelsUtils)
@@ -10,14 +10,14 @@ import intl2 from "intl" /* 1126 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6094 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6799 */;
-import ChannelListState from "ChannelListState" /* 7250 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7256 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6095 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
+import ChannelListState from "ChannelListState" /* 7251 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7257 */;
 import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 10709 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6800 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;

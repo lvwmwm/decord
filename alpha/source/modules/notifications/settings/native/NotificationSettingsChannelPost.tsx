@@ -1,12 +1,12 @@
-// Module ID: 12613
-// Function ID: 12614
+// Module ID: 12615
+// Function ID: 12616
 // Name: NotificationSettingsChannelPost
-// Dependencies: [19, 17, 5966, 21, 558, 576, 504, 1126, 6808, 6264, 6176, 2]
+// Dependencies: [19, 17, 5966, 21, 558, 576, 504, 1126, 6809, 6265, 6177, 2]
 
-// Module 12613 (NotificationSettingsChannelPost)
+// Module 12615 (NotificationSettingsChannelPost)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6808 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
 import react from "react" /* 19 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

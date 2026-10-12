@@ -1,20 +1,20 @@
-// Module ID: 9299
-// Function ID: 9300
+// Module ID: 9300
+// Function ID: 9301
 // Name: PressableNavigatorBackIcon
-// Dependencies: [109, 19, 17, 2065, 6077, 2116, 21, 5092, 1200, 587, 558, 576, 504, 4818, 4936, 1126, 6156, 9300, 9301, 9303, 6184, 2]
+// Dependencies: [109, 19, 17, 2065, 6078, 2116, 21, 5092, 1200, 587, 558, 576, 504, 4818, 4936, 1126, 6157, 9301, 9302, 9304, 6185, 2]
 
-// Module 9299 (PressableNavigatorBackIcon)
+// Module 9300 (PressableNavigatorBackIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9300 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 9301 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9303 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9301 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 9302 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9304 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6077 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -209,7 +209,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PressableN
             const obj7 = { children: closure_10(PressableOpacity, obj8) };
             obj8 = { ref: tmp8, accessibilityRole: "button", accessibilityLabel: tmp24, onPress: tmp23, style: tmp12.actionButtonPressable, children: tmp36 };
             const tmp43 = PressableNavigatorButtonWrapperDefault;
-            PressableOpacity = tmp(6184).PressableOpacity;
+            PressableOpacity = tmp(6185).PressableOpacity;
             const merged = Object.assign(tmp7);
             const tmp47 = closure_10(tmp43, obj7);
             cResult[25] = tmp23;

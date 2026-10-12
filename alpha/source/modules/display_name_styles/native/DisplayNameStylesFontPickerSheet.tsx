@@ -1,15 +1,15 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15637
+// Function ID: 15638
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1096, 21, 5092, 587, 558, 576, 8294, 15609, 15611, 1410, 1407, 5057, 5056, 1126, 2958, 15615, 5379, 14848, 8853, 5088, 5377, 5046, 6839, 2]
+// Dependencies: [32, 19, 17, 1096, 21, 5092, 587, 558, 576, 8295, 15632, 15634, 1410, 1407, 5057, 5056, 1126, 2958, 15638, 5379, 14871, 8854, 5088, 5377, 5046, 6840, 2]
 
-// Module 15614 (DisplayNameStylesFontPickerSheet)
+// Module 15637 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import _modDef2958 from "module_2958" /* 2958 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 15615 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 15638 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -155,11 +155,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   importDefault = tmp;
   let tmp2 = onSelectFont;
   let tmp3 = dependencyMap;
-  let obj = onSelectFont(8294);
+  let obj = onSelectFont(8295);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = onSelectFont(15609);
+  let obj2 = onSelectFont(15632);
   const visibleFontOrder = obj2.useVisibleFontOrder();
-  let obj3 = onSelectFont(15611);
+  let obj3 = onSelectFont(15634);
   const displayNameStylesNewFonts = obj3.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   [first, closure_5] = first.useState(selectedFontId);
@@ -184,7 +184,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     obj2.hideActionSheet();
   }, items);
   const obj5 = { ref: bottomSheetRef, header: closure_8(tmp13, obj6), children: tmp11(closure_5, obj8) };
-  BottomSheet = onSelectFont(6839).BottomSheet;
+  BottomSheet = onSelectFont(6840).BottomSheet;
   const tmp12 = importDefault;
   obj6 = { title: intl.string(_modDef2958["0JCuGm"]), trailing: closure_8(Button, obj7) };
   tmp13 = DisplayNameStylesSheetHeaderDefault;

@@ -20,7 +20,7 @@ let c10;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f92115 = (id) => id.id === cover_sticker_id.cover_sticker_id;
+const f92334 = (id) => id.id === cover_sticker_id.cover_sticker_id;
 function getStickerExtensionFromFormatType(format_type) {
   if (StickersTypes.StickerFormat.PNG === format_type) {
     const SUPPORTS_WEBP = tmp(1415).SUPPORTS_WEBP;
@@ -59,7 +59,7 @@ export const getStickerPackPreviewSticker = function getStickerPackPreviewSticke
   let closure_0 = cover_sticker_id;
   if (null != cover_sticker_id.cover_sticker_id) {
     const stickers = cover_sticker_id.stickers;
-    const found = stickers.find(f92115);
+    const found = stickers.find(f92334);
     if (null != found) {
       return found;
     }
@@ -228,7 +228,7 @@ export const createStickerPackCategory = function createStickerPackCategory(id) 
     first = id.stickers[0];
   } else {
     const stickers = id.stickers;
-    first = stickers.find(f92115);
+    first = stickers.find(f92334);
   }
   return obj;
 };

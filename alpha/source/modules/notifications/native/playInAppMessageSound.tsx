@@ -1,14 +1,14 @@
-// Module ID: 12580
-// Function ID: 12581
+// Module ID: 12582
+// Function ID: 12583
 // Name: playInAppMessageSound
-// Dependencies: [12564, 12581, 1085, 1628, 10980, 2]
+// Dependencies: [12566, 12583, 1085, 1628, 10980, 2]
 // Exports: playInAppMessageSound
 
-// Module 12580 (playInAppMessageSound)
+// Module 12582 (playInAppMessageSound)
 import Constants from "Constants" /* 1085 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import InAppMessageSoundsStore from "InAppMessageSoundsStore" /* 12581 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12564 */;
+import InAppMessageSoundsStore from "InAppMessageSoundsStore" /* 12583 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12566 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = InAppMessageSoundsStore.isInAppMessageSoundsEnabled;

@@ -1,18 +1,18 @@
-// Module ID: 8030
-// Function ID: 8031
+// Module ID: 8031
+// Function ID: 8032
 // Name: GameServerStore
-// Dependencies: [8031, 8032, 504, 584, 2]
+// Dependencies: [8032, 8033, 504, 584, 2]
 
-// Module 8030 (GameServerStore)
+// Module 8031 (GameServerStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import getPowerupEntitlementPriceDefault from "getPowerupEntitlementPrice" /* 8031 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8032 */;
+import getPowerupEntitlementPriceDefault from "getPowerupEntitlementPrice" /* 8032 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8033 */;
 import size from "module_2" /* 2 */;
 
 let sku;
 
-const f97476 = (acc, item) => {
+const f97695 = (acc, item) => {
   let num = getPowerupEntitlementPriceDefault(item);
   if (num == null) {
     num = 0;
@@ -234,7 +234,7 @@ obj = {
     ({ guildId, unlockedGameServers } = arg0);
     const values = Object.values(unlockedGameServers);
     obj = {};
-    const reduced = values.reduce(f97476, 0);
+    const reduced = values.reduce(f97695, 0);
     const merged = Object.assign(obj2);
     if (null == obj2[guildId]) {
       obj2 = { catalog: {}, instances: {}, instructions: {}, entitlements: {} };
@@ -291,7 +291,7 @@ obj = {
     });
     const values = Object.values(tmp2.entitlements);
     obj2 = {};
-    const reduced = values.reduce(f97476, 0);
+    const reduced = values.reduce(f97695, 0);
     const merged = Object.assign(obj2);
     const obj3 = { appliedBoosts: reduced };
     const merged1 = Object.assign(tmp2);
@@ -312,7 +312,7 @@ obj = {
     });
     const values = Object.values(tmp2.entitlements);
     obj2 = {};
-    const reduced = values.reduce(f97476, 0);
+    const reduced = values.reduce(f97695, 0);
     const merged = Object.assign(obj2);
     const obj3 = { appliedBoosts: reduced };
     const merged1 = Object.assign(tmp2);

@@ -1,11 +1,11 @@
-// Module ID: 14746
-// Function ID: 14747
+// Module ID: 14770
+// Function ID: 14771
 // Name: soundboard
-// Dependencies: [5, 5428, 1390, 5639, 1096, 8457, 7047, 7048, 10939, 7084, 7055, 10936, 7086, 6878, 2]
+// Dependencies: [5, 5428, 1390, 5639, 1096, 8458, 7048, 7049, 10939, 7085, 7056, 10936, 7087, 6879, 2]
 
-// Module 14746 (soundboard)
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7047 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
+// Module 14770 (soundboard)
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7048 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SoundboardStore from "SoundboardStore" /* 5428 */;
@@ -43,7 +43,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ let obj4 = {
                   playSound(tmp4, id, items);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               } else {
                 const obj8 = { errorCode: constants.INVALID_PERMISSIONS };
                 const self3 = this;

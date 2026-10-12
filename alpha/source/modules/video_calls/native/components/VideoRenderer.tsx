@@ -1,7 +1,7 @@
 // Module ID: 10894
 // Function ID: 10895
 // Name: VideoRenderer
-// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 5231, 10895, 10896, 1497, 1382, 8450, 10898, 10899, 10901, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 5231, 10895, 10896, 1497, 1382, 8451, 10898, 10899, 10901, 2]
 
 // Module 10894 (VideoRenderer)
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -551,7 +551,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return 0;
   }, items2);
   const items3 = [width, first1, first2, first3, memo];
-  const obj2 = resizeMode(8450);
+  const obj2 = resizeMode(8451);
   const store = obj2.useStore((orientation) => orientation.orientation);
   const layoutEffect = react.useLayoutEffect(() => {
     const obj = PlatformUtils;
@@ -617,7 +617,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const obj3 = { animate: true, style: tmp2.spinner };
     tmp35 = ref(tmp18(10898), obj3);
   }
-  const tmp37 = store === tmp3(8450).OrientationType.PORTRAIT;
+  const tmp37 = store === tmp3(8451).OrientationType.PORTRAIT;
   const tmp3Result = tmp3(1382);
   if (tmp3Result.isAndroid()) {
     const obj4 = { onLayout: callback2, style: items10, children: items12 };

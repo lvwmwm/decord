@@ -1,19 +1,19 @@
-// Module ID: 10021
-// Function ID: 10022
+// Module ID: 10022
+// Function ID: 10023
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 7243, 1085, 6840, 21, 5092, 587, 558, 576, 38, 7758, 1497, 1631, 5396, 5056, 9262, 7769, 10022, 1265, 4809, 7768, 12807, 12808, 5088, 1382, 8425, 10040, 6264, 6179, 11880, 12809, 1126, 6176, 12811, 8214, 12813, 5379, 5049, 5377, 6306, 6839, 2]
+// Dependencies: [32, 19, 17, 7244, 1085, 6841, 21, 5092, 587, 558, 576, 38, 7759, 1497, 1631, 5396, 5056, 9263, 7770, 10023, 1265, 4809, 7769, 12809, 12810, 5088, 1382, 8426, 10041, 6265, 6180, 11882, 12811, 1126, 6177, 12813, 8215, 12815, 5379, 5049, 5377, 6307, 6840, 2]
 
-// Module 10021 (UploadPreviewActionSheet)
+// Module 10022 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6840 */;
-import DraftStore from "DraftStore" /* 7243 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7768 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9262 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10022 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 12809 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
+import DraftStore from "DraftStore" /* 7244 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7769 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10023 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 12811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

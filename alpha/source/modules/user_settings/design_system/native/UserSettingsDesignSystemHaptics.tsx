@@ -1,9 +1,9 @@
-// Module ID: 16162
-// Function ID: 16163
+// Module ID: 16185
+// Function ID: 16186
 // Name: UserSettingsDesignSystemHaptics
-// Dependencies: [19, 17, 21, 5092, 558, 576, 5057, 5379, 5058, 6181, 5377, 5088, 5059, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5057, 5379, 5058, 6182, 5377, 5088, 5059, 2]
 
-// Module 16162 (UserSettingsDesignSystemHaptics)
+// Module 16185 (UserSettingsDesignSystemHaptics)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
@@ -11,7 +11,7 @@ import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 
 import Patterns from "Patterns" /* 5059 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import Card_Card from "Card/Card" /* 6181 */;
+import Card_Card from "Card/Card" /* 6182 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -158,7 +158,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp4 = closure_5();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: React3(Stack, obj3) };
-    const Card = tmp(6181).Card;
+    const Card = tmp(6182).Card;
     obj3 = { children: items };
     Stack = tmp(5377).Stack;
     items = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Semantic Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Existing haptic types with platform-specific remapping for the best feel." }), ];
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { children: React3(Stack2, obj5) };
-    const Card2 = tmp(6181).Card;
+    const Card2 = tmp(6182).Card;
     obj5 = { children: items1 };
     Stack2 = tmp(5377).Stack;
     items1 = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Impact / Notification Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Direct 1:1 mappings for impact and notification feedback." }), ];
@@ -192,7 +192,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { children: React3(Stack3, obj7) };
-    const Card3 = tmp(6181).Card;
+    const Card3 = tmp(6182).Card;
     obj7 = { children: items2 };
     Stack3 = tmp(5377).Stack;
     items2 = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Gesture / UI Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Feedback for gestures, toggles, and UI confirmations. New in v3." }), ];
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { children: React3(Stack4, obj9) };
-    const Card4 = tmp(6181).Card;
+    const Card4 = tmp(6182).Card;
     obj9 = { children: items3 };
     Stack4 = tmp(5377).Stack;
     items3 = [_false(Text_Text.Text, { variant: "text-lg/bold", children: "Platform Haptic Types" }), _false(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Native Android haptics with iOS Core Haptics approximations. Cross-platform in v3." }), ];
@@ -229,7 +229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     items4 = [first, tmp10, tmp15, tmp20, ];
     const Stack5 = tmp(5377).Stack;
     const obj11 = { children: React3(Stack6, obj12) };
-    const Card5 = tmp(6181).Card;
+    const Card5 = tmp(6182).Card;
     obj12 = { children: items5 };
     Stack6 = tmp(5377).Stack;
     items5 = [

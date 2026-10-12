@@ -1,17 +1,17 @@
-// Module ID: 17417
-// Function ID: 17418
+// Module ID: 17474
+// Function ID: 17475
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 2065, 1085, 1125, 21, 5092, 587, 558, 576, 6971, 6664, 12157, 5103, 17418, 573, 1504, 2]
+// Dependencies: [19, 17, 2065, 1085, 1125, 21, 5092, 587, 558, 576, 6972, 6665, 12159, 5103, 17475, 573, 1504, 2]
 
-// Module 17417 (ThreadsScreen)
+// Module 17474 (ThreadsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6664 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 12157 */;
-import ThreadListDefault from "ThreadList" /* 17418 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 12159 */;
+import ThreadListDefault from "ThreadList" /* 17475 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -37,7 +37,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   const cResult = obj.c(16);
   ({ style, channel } = arg0);
   const tmp3 = closure_9();
-  let obj2 = channel(6971);
+  let obj2 = channel(6972);
   const canStartThread = obj2.useCanStartThread(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { includeKeyboardHeight: true };
@@ -128,7 +128,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(6971);
+  let obj = channel(6972);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;

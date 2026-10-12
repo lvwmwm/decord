@@ -1,9 +1,9 @@
-// Module ID: 12940
-// Function ID: 12941
+// Module ID: 12942
+// Function ID: 12943
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1085, 21, 5092, 5763, 1126, 6874, 4806, 12941, 6813, 5088, 6284, 1200, 5379, 558, 576, 6200, 6687, 2]
+// Dependencies: [5, 32, 19, 1085, 21, 5092, 5763, 1126, 6875, 4806, 12943, 6814, 5088, 6285, 1200, 5379, 558, 576, 6201, 6688, 2]
 
-// Module 12940 (FederatedSocialModal)
+// Module 12942 (FederatedSocialModal)
 import Constants from "Constants" /* 1085 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -48,7 +48,7 @@ function FederatedSocialModalScreen(onClose) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ function FederatedSocialModalScreen(onClose) {
               }
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           closure_2 = tmp26;

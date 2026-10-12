@@ -1,9 +1,9 @@
-// Module ID: 6678
-// Function ID: 6679
+// Module ID: 6679
+// Function ID: 6680
 // Name: ProfilePendingImageTypes
 // Dependencies: [2]
 
-// Module 6678 (ProfilePendingImageTypes)
+// Module 6679 (ProfilePendingImageTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/profile_customization/ProfilePendingImageTypes.tsx");

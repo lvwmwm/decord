@@ -1,10 +1,10 @@
-// Module ID: 14111
-// Function ID: 14112
+// Module ID: 14134
+// Function ID: 14135
 // Name: MobileNativeUpdateUtils
 // Dependencies: [5, 5070, 3, 1295, 4806, 1382, 1105, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 14111 (MobileNativeUpdateUtils)
+// Module 14134 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -30,7 +30,7 @@ let obj = function _checkForNewerBuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

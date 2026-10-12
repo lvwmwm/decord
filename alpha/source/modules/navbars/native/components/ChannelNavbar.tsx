@@ -1,9 +1,9 @@
-// Module ID: 12554
-// Function ID: 12555
+// Module ID: 12556
+// Function ID: 12557
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 5757, 2069, 2065, 2087, 5108, 4760, 1390, 1085, 2072, 2062, 21, 5092, 5906, 587, 558, 576, 504, 1126, 8158, 5421, 10234, 12555, 12556, 1200, 12557, 12558, 6156, 12559, 9460, 6184, 5088, 4962, 8384, 8673, 4938, 2049, 10012, 12560, 2]
+// Dependencies: [19, 17, 5757, 2069, 2065, 2087, 5108, 4760, 1390, 1085, 2072, 2062, 21, 5092, 5906, 587, 558, 576, 504, 1126, 8159, 5421, 10235, 12557, 12558, 1200, 12559, 12560, 6157, 12561, 9461, 6185, 5088, 4962, 8385, 8674, 4938, 2049, 10013, 12562, 2]
 
-// Module 12554 (ChannelNavbar)
+// Module 12556 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -17,9 +17,9 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 493
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8158 */;
-import isStreamingDefault from "isStreaming" /* 8384 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10234 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import isStreamingDefault from "isStreaming" /* 8385 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -48,7 +48,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const Pressables = tmp(6184);
+const Pressables = tmp(6185);
 const View = react_native.View;
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 ({ ChannelTypes: closure_12, Fonts } = Constants);
@@ -133,7 +133,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle
   if (cResult[7] !== stateFromStores) {
     let channelIcon = null;
     if (null != stateFromStores) {
-      const tmpResult5 = channelId(8158);
+      const tmpResult5 = channelId(8159);
       channelIcon = tmpResult5.getChannelIcon(stateFromStores);
     }
     class C {

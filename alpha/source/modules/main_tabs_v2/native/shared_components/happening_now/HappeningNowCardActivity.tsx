@@ -1,9 +1,9 @@
-// Module ID: 16486
-// Function ID: 16487
+// Module ID: 16509
+// Function ID: 16510
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 2070, 1390, 15566, 1085, 1096, 21, 16487, 16488, 5092, 587, 6851, 504, 6857, 1265, 11338, 2000, 8303, 16482, 5409, 16489, 15567, 16483, 1200, 16492, 10252, 16493, 10247, 13120, 8911, 8224, 9211, 1126, 558, 576, 4967, 1382, 11171, 6156, 16484, 16495, 11174, 8274, 16497, 8374, 2]
+// Dependencies: [19, 17, 2070, 1390, 15589, 1085, 1096, 21, 16510, 16511, 5092, 587, 6852, 504, 6858, 1265, 11338, 2000, 8304, 16505, 5409, 16512, 15590, 16506, 1200, 16515, 10253, 16516, 10248, 13125, 8912, 8225, 9212, 1126, 558, 576, 4967, 1382, 11171, 6157, 16507, 16518, 11174, 8275, 16520, 8375, 2]
 
-// Module 16486 (HappeningNowCardActivity)
+// Module 16509 (HappeningNowCardActivity)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1096 */;
@@ -13,21 +13,21 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ColorUtils from "ColorUtils" /* 4967 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8274 */;
-import VideoBackground from "VideoBackground" /* 8374 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10252 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8275 */;
+import VideoBackground from "VideoBackground" /* 8375 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10253 */;
 import StreamPreviewDefault from "StreamPreview" /* 11171 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11174 */;
-import useLiveStageData from "useLiveStageData" /* 16484 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16487 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16488 */;
-import HappeningNowAvatarStack2 from "HappeningNowAvatarStack" /* 16495 */;
+import useLiveStageData from "useLiveStageData" /* 16507 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16510 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16511 */;
+import HappeningNowAvatarStack2 from "HappeningNowAvatarStack" /* 16518 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import UserStore from "UserStore" /* 1390 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15566 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -55,8 +55,8 @@ let size;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const isOnXboxDefault = tmp(13120);
-const AssetRegistryDefault3 = tmp4(16497);
+const isOnXboxDefault = tmp(13125);
+const AssetRegistryDefault3 = tmp4(16520);
 function getActivityA11yLabel(activity) {
   let stringResult;
   if (isListeningOnSpotifyDefault(activity)) {
@@ -205,7 +205,7 @@ const memoResult = react.memo(function ActivityCard(userId) {
       const promise2 = asyncRequire(11338, dependencyMap.paths);
       promise2.then((result) => result.default(channelId.channelId, true));
     } else {
-      const promise = asyncRequire(8303, dependencyMap.paths);
+      const promise = asyncRequire(8304, dependencyMap.paths);
       promise.then((result) => {
         const obj = { userId, localUser, sourceAnalyticsLocations };
         return result.default(obj);
@@ -594,7 +594,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageS
       }
     }
     const obj4 = { users: tmp7, guildId: stage.guild_id, userCount: sum, isStage: true, avatarSize: native.AvatarSizes.SIZE_16 };
-    const HappeningNowAvatarStack = tmp(16495).HappeningNowAvatarStack;
+    const HappeningNowAvatarStack = tmp(16518).HappeningNowAvatarStack;
     const tmp11 = unpackModuleId(HappeningNowAvatarStack, obj4);
     cResult[3] = stage.guild_id;
     cResult[4] = tmp7;

@@ -1,13 +1,13 @@
-// Module ID: 17067
-// Function ID: 17068
+// Module ID: 17090
+// Function ID: 17091
 // Name: conjureProjectNameError
-// Dependencies: [1126, 3849, 6946, 2]
+// Dependencies: [1126, 3849, 6947, 2]
 // Exports: conjureProjectNameError
 
-// Module 17067 (conjureProjectNameError)
+// Module 17090 (conjureProjectNameError)
 import intl3 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureTypes from "ConjureTypes" /* 6946 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureProjectNameError.tsx");
@@ -19,10 +19,10 @@ export const conjureProjectNameError = function conjureProjectNameError(trimmed)
     stringResult = intl2.string(_modDef3849.l669D8);
   } else {
     stringResult = null;
-    if (trimmed.length < ConjureTypes.MIN_PROJECT_NAME_LENGTH) {
+    if (trimmed.length < ConjureProjectTypes.MIN_PROJECT_NAME_LENGTH) {
       const intl = tmp5(1126).intl;
       const formatToPlainString = intl.formatToPlainString;
-      const range = { min: ConjureTypes.MIN_PROJECT_NAME_LENGTH, max: ConjureTypes.MAX_PROJECT_NAME_LENGTH };
+      const range = { min: ConjureProjectTypes.MIN_PROJECT_NAME_LENGTH, max: ConjureProjectTypes.MAX_PROJECT_NAME_LENGTH };
       const ONSqYd = tmp5(1126).t.ONSqYd;
       stringResult = formatToPlainString(ONSqYd, range);
     }

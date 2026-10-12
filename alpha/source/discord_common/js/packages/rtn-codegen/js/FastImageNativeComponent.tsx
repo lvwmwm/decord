@@ -1,9 +1,9 @@
-// Module ID: 6157
-// Function ID: 6158
+// Module ID: 6158
+// Function ID: 6159
 // Name: FastImageNativeComponent
 // Dependencies: [81, 26, 106, 65, 2]
 
-// Module 6157 (FastImageNativeComponent)
+// Module 6158 (FastImageNativeComponent)
 import _mod26 from "module_26" /* 26 */;
 import resolveAssetSource_mod from "resolveAssetSource" /* 81 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;

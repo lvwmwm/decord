@@ -1,9 +1,9 @@
-// Module ID: 14726
-// Function ID: 14727
+// Module ID: 14750
+// Function ID: 14751
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2065, 1390, 2064, 10216, 5085, 21, 5092, 587, 558, 576, 504, 11556, 11818, 14725, 6857, 1388, 14727, 7178, 7369, 4809, 1126, 6885, 4808, 7088, 5038, 1497, 1631, 1382, 9297, 6200, 6209, 10225, 11567, 11591, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 1390, 2064, 10217, 5085, 21, 5092, 587, 558, 576, 504, 11558, 11820, 14749, 6858, 1388, 14751, 7179, 7370, 4809, 1126, 6886, 4808, 7089, 5038, 1497, 1631, 1382, 9298, 6201, 6210, 10226, 11569, 11593, 2]
 
-// Module 14726 (ActivityShareLinkModal)
+// Module 14750 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -11,13 +11,13 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import LinkIcon from "LinkIcon" /* 5038 */;
 import MessageConstants from "MessageConstants" /* 5085 */;
-import ClipboardUtils from "ClipboardUtils" /* 6885 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
-import HeaderShared from "HeaderShared" /* 9297 */;
-import UserRowConstants from "UserRowConstants" /* 10216 */;
-import formatResults from "formatResults" /* 11556 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11818 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14725 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
+import HeaderShared from "HeaderShared" /* 9298 */;
+import UserRowConstants from "UserRowConstants" /* 10217 */;
+import formatResults from "formatResults" /* 11558 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11820 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14749 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -270,7 +270,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -323,7 +323,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -358,7 +358,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   } catch (tmp12) {
                     c1 = 3;
                     throw tmp12;
@@ -380,7 +380,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
             const result = obj8.closeActivityShareLinkModal();
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp10) {
           c3 = 3;
           throw tmp10;

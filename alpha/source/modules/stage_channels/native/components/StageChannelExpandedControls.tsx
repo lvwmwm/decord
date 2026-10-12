@@ -1,7 +1,7 @@
 // Module ID: 11130
 // Function ID: 11131
 // Name: StageChannelExpandedControls
-// Dependencies: [19, 17, 5897, 502, 2087, 21, 5092, 4967, 587, 558, 576, 10849, 10357, 504, 5895, 8788, 11131, 2]
+// Dependencies: [19, 17, 5897, 502, 2087, 21, 5092, 4967, 587, 558, 576, 10849, 10358, 504, 5895, 8789, 11131, 2]
 
 // Module 11130 (StageChannelExpandedControls)
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ let importDefault;
 let ColorUtils;
 let obj2;
 let tmp2;
-const useChannelVideoLimitDefault = tmp2(8788);
+const useChannelVideoLimitDefault = tmp2(8789);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -50,7 +50,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   channel = channel.channel;
   const tmp4 = closure_8();
   const tmp6 = stateFromStores1(10849)(channel.id);
-  const obj2 = channel(10357);
+  const obj2 = channel(10358);
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   const tmp5 = stateFromStores1;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -123,7 +123,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const tmpResult6 = channel(5895);
   const stageHasMedia = tmpResult6.useStageHasMedia(channel.id);
-  const reachedLimit = tmp5(8788)(channel).reachedLimit;
+  const reachedLimit = tmp5(8789)(channel).reachedLimit;
   if (cResult[10] === channel) {
     if (cResult[11] === stateFromStores1) {
       if (cResult[12] === stageHasMedia) {
@@ -247,7 +247,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   importDefault = undefined;
   const tmp = closure_8();
   const tmp4 = useCanSpeakInChannelDefault(channel.id);
-  const obj = channel(10357);
+  const obj = channel(10358);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const items = [GuildStore];
   const items1 = [channel.guild_id];

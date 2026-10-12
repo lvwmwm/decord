@@ -1,21 +1,21 @@
-// Module ID: 18338
-// Function ID: 18339
+// Module ID: 18396
+// Function ID: 18397
 // Name: GuildSettingsModalIntegrationPlatform
-// Dependencies: [19, 17, 8638, 1085, 21, 5092, 587, 18299, 18269, 5763, 6156, 1415, 4969, 6264, 6179, 6895, 1126, 8637, 5300, 5398, 558, 576, 4818, 1503, 504, 5031, 6200, 7088, 7093, 2128, 8579, 5377, 5088, 6727, 2]
+// Dependencies: [19, 17, 8639, 1085, 21, 5092, 587, 18357, 18327, 5763, 6157, 1415, 4969, 6265, 6180, 6896, 1126, 8638, 5300, 5398, 558, 576, 4818, 1503, 504, 5031, 6201, 7089, 7094, 2128, 8580, 5377, 5088, 6728, 2]
 
-// Module 18338 (GuildSettingsModalIntegrationPlatform)
+// Module 18396 (GuildSettingsModalIntegrationPlatform)
 import nativeDefault from "native" /* 587 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import AlertDefault from "Alert" /* 5398 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
-import openUserSettings from "openUserSettings" /* 7093 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
-import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 18299 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildSettingsModalIntegrations from "GuildSettingsModalIntegrations" /* 18357 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8638 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -38,10 +38,10 @@ let unpackModuleId;
 const intl6 = tmp(1126);
 const AvatarUtils = tmp(1415);
 const shared = tmp(4969);
-const TableRow2 = tmp(6179);
-const TableRowGroup2 = tmp(6264);
-const TableSwitchRow2 = tmp(6895);
-const IntegrationTypes = tmp(18269);
+const TableRow2 = tmp(6180);
+const TableRowGroup2 = tmp(6265);
+const TableSwitchRow2 = tmp(6896);
+const IntegrationTypes = tmp(18327);
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 ({ GuildSettingsSections: metroRequire, HelpdeskArticles: metroImportDefault, PlatformTypes: metroImportAll, UserSettingsSections: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
@@ -157,7 +157,7 @@ class IntegrationItem extends Component {
       let tmp12Result = null;
       const tmp8 = importDefault;
       if (null != value) {
-        const tmp8Result = tmp8(6156);
+        const tmp8Result = tmp8(6157);
         const makeSource = AvatarUtils.makeSource;
         AvatarUtils;
         const icon = value.icon;
@@ -443,7 +443,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       }
       tmp45 = tmp42;
     }
-    const Form = tmp(8579).Form;
+    const Form = tmp(8580).Form;
     const form = tmp6.form;
     const Stack = tmp(5377).Stack;
     if (cResult[32] !== token) {
@@ -614,7 +614,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       formatResult = format2(ro1jEN, obj7);
     }
     const obj8 = { style: tmp5.form, contentContainerStyle, children: closure_11(Stack, obj9) };
-    const Form = tmp(8579).Form;
+    const Form = tmp(8580).Form;
     obj9 = { style: obj10, spacing: tmp3(587).space.PX_24, children: items2 };
     obj10 = { paddingHorizontal: token };
     Stack = tmp(5377).Stack;
@@ -640,7 +640,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const obj11 = { children: items3 };
     const obj12 = { variant: "text-sm/medium", color: "text-muted", children: formatResult };
     items2[1] = closure_10(tmp(5088).Text, obj12);
-    items3 = [closure_10(Form, obj8), closure_10(tmp(6727).NavScrim, {})];
+    items3 = [closure_10(Form, obj8), closure_10(tmp(6728).NavScrim, {})];
     return closure_11(tmp16, obj11);
   }
 });

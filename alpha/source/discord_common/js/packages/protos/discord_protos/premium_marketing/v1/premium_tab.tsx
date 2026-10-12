@@ -1,11 +1,11 @@
-// Module ID: 9129
-// Function ID: 9130
+// Module ID: 9130
+// Function ID: 9131
 // Name: premium_tab
-// Dependencies: [32, 1210, 9126, 2]
+// Dependencies: [32, 1210, 9127, 2]
 
-// Module 9129 (premium_tab)
+// Module 9130 (premium_tab)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 9126 */;
+import localized_string from "localized_string" /* 9127 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

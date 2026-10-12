@@ -1,16 +1,16 @@
-// Module ID: 9292
-// Function ID: 9293
+// Module ID: 9293
+// Function ID: 9294
 // Name: ScheduledMessagesUtils
-// Dependencies: [5, 7918, 1126, 4702, 9293, 5934, 9295, 2000, 12878, 9294, 12873, 12879, 6890, 5056, 12661, 2]
+// Dependencies: [5, 7919, 1126, 4702, 9294, 5934, 9296, 2000, 12880, 9295, 12875, 12881, 6891, 5056, 12663, 2]
 // Exports: cancelScheduledMessage, openRescheduleMessageActionSheet, openScheduleMessageActionSheet, openScheduledMessageEditContentModal, pickScheduledMessageTime, sendScheduledMessageNow, showScheduledMessagesModal
 
-// Module 9292 (ScheduledMessagesUtils)
+// Module 9293 (ScheduledMessagesUtils)
 import intl3 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7918 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7919 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require, closure_2, closure_3, closure_4;
 
 let tmp2;
-const ScheduledMessageUtils = tmp2(9293);
+const ScheduledMessageUtils = tmp2(9294);
 function onSelect(toISOString) {
   return id(toISOString.toISOString());
 }
@@ -41,7 +41,7 @@ let obj = function _editScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ obj = function _cancelScheduledMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ obj = function _cancelScheduledMessage() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp20) {
           closure_3 = tmp20;
@@ -192,7 +192,7 @@ obj = function _sendScheduledMessageNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -233,7 +233,7 @@ obj = function _sendScheduledMessageNow() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp20) {
           closure_3 = tmp20;
@@ -265,12 +265,12 @@ function openSendTimeActionSheet(title) {
   const tmp2 = title;
   let tmp3 = dependencyMap;
   ({ key, entryPoint, isEditing, channelId } = title);
-  obj = title(9293);
+  obj = title(9294);
   const result = obj.trackScheduledMessageTimePickerOpened({ entryPoint, isEditing, channelId });
   let obj2 = { key, header: { title }, hasIcons: false, options: items };
-  const showSimpleActionSheet = title(6890).showSimpleActionSheet;
-  title(6890);
-  let obj3 = title(9293);
+  const showSimpleActionSheet = title(6891).showSimpleActionSheet;
+  title(6891);
+  let obj3 = title(9294);
   const presetScheduledTimes = obj3.getPresetScheduledTimes();
   items = [
     ...presetScheduledTimes.map((label) => {
@@ -307,7 +307,7 @@ function openSendTimeActionSheet(title) {
         },
         onClose: ModalActionCreatorsDefault.pop
       };
-      const tmp3 = asyncRequire(12661, dependencyMap.paths);
+      const tmp3 = asyncRequire(12663, dependencyMap.paths);
       obj3 = ScheduledMessageUtils;
       obj4 = ScheduledMessageUtils;
       pushLazy(tmp3, obj2, "scheduled-message-custom-time", { presentation: "modal" });
@@ -356,7 +356,7 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   if (null != currentTimestamp) {
     defaultScheduledTime = _modDef4702(currentTimestamp);
   } else {
-    const tmp2Result = tmp2(9293);
+    const tmp2Result = tmp2(9294);
     defaultScheduledTime = tmp2Result.getDefaultScheduledTime();
   }
   tmp(obj2);
@@ -384,12 +384,12 @@ export const pickScheduledMessageTime = function pickScheduledMessageTime(arg0) 
 };
 export const showScheduledMessagesModal = function showScheduledMessagesModal() {
   obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(9295, dependencyMap.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
+  obj.pushLazy(asyncRequire(9296, dependencyMap.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
 };
 export const openScheduledMessageEditContentModal = function openScheduledMessageEditContentModal(scheduledMessage) {
   obj = ModalActionCreatorsDefault;
   const obj2 = { scheduledMessage };
-  obj.pushLazy(asyncRequire(12878, dependencyMap.paths), obj2, "scheduled-message-edit-content", { presentation: "modal" });
+  obj.pushLazy(asyncRequire(12880, dependencyMap.paths), obj2, "scheduled-message-edit-content", { presentation: "modal" });
 };
 export const openRescheduleMessageActionSheet = function openRescheduleMessageActionSheet(scheduledMessageId, sendAtTimestamp, channelId) {
   let intl;

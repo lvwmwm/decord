@@ -1,7 +1,7 @@
 // Module ID: 4801
 // Function ID: 4802
 // Name: handleURL
-// Dependencies: [5, 17, 4802, 1085, 3, 4803, 4805, 4806, 4807, 1949, 4808, 1126, 5053, 1382, 5056, 1386, 5069, 14049, 2]
+// Dependencies: [5, 17, 4802, 1085, 3, 4803, 4805, 4806, 4807, 1949, 4808, 1126, 5053, 1382, 5056, 1386, 5069, 14072, 2]
 // Exports: default
 
 // Module 4801 (handleURL)
@@ -205,7 +205,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp45;
         c6 = 0;
         c8 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;

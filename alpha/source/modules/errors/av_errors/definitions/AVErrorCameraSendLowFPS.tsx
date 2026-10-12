@@ -1,13 +1,13 @@
-// Module ID: 18614
-// Function ID: 18615
+// Module ID: 18672
+// Function ID: 18673
 // Name: AVErrorCameraSendLowFPS
-// Dependencies: [502, 2012, 5110, 1102, 18600, 5289, 18597, 2]
+// Dependencies: [502, 2012, 5110, 1102, 18658, 5289, 18655, 2]
 
-// Module 18614 (AVErrorCameraSendLowFPS)
+// Module 18672 (AVErrorCameraSendLowFPS)
 import DurationsDefault from "Durations" /* 1102 */;
 import AVError from "AVError" /* 5289 */;
-import AVErrorContext from "AVErrorContext" /* 18597 */;
-import AVErrorUtils from "AVErrorUtils" /* 18600 */;
+import AVErrorContext from "AVErrorContext" /* 18655 */;
+import AVErrorUtils from "AVErrorUtils" /* 18658 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;

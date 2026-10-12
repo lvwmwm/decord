@@ -1,9 +1,9 @@
-// Module ID: 6083
-// Function ID: 6084
+// Module ID: 6084
+// Function ID: 6085
 // Name: ThreadNotificationSettings
 // Dependencies: [2065, 5966, 4752, 1125, 1085, 1403, 558, 576, 504, 2]
 
-// Module 6083 (ThreadNotificationSettings)
+// Module 6084 (ThreadNotificationSettings)
 import Constants from "Constants" /* 1085 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
 import FlagUtils from "FlagUtils" /* 1403 */;

@@ -1,7 +1,7 @@
 // Module ID: 10712
 // Function ID: 10713
 // Name: useGetOrFetchApplicationBatched
-// Dependencies: [19, 5440, 2060, 12, 6852, 558, 576, 504, 2]
+// Dependencies: [19, 5440, 2060, 12, 6853, 558, 576, 504, 2]
 
 // Module 10712 (useGetOrFetchApplicationBatched)
 import Timers from "Timers" /* 2060 */;

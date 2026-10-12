@@ -1,7 +1,7 @@
 // Module ID: 11183
 // Function ID: 11184
 // Name: AudienceTile
-// Dependencies: [19, 17, 2125, 21, 5092, 587, 558, 576, 5416, 1200, 11015, 1497, 504, 5950, 7492, 5409, 6334, 1126, 11163, 4969, 11184, 2]
+// Dependencies: [19, 17, 2125, 21, 5092, 587, 558, 576, 5416, 1200, 11015, 1497, 504, 5950, 7493, 5409, 6335, 1126, 11163, 4969, 11184, 2]
 // Exports: getTileWidthStyle
 
 // Module 11183 (AudienceTile)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5416 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7492 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7493 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import Fragment from "Fragment" /* 21 */;
@@ -425,7 +425,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       const tmp5Result = user(5409);
       const name = tmp5Result.getName(tmp7, channel.id, user);
       const tmp22 = blocked || ignored;
-      const LegacyPressable = tmp(6334).LegacyPressable;
+      const LegacyPressable = tmp(6335).LegacyPressable;
       const intl = tmp(1126).intl;
       const obj12 = { name };
       const formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.QLMGhv, obj12);

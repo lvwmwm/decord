@@ -1,17 +1,17 @@
-// Module ID: 18548
-// Function ID: 18549
+// Module ID: 18606
+// Function ID: 18607
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 16544, 5088, 15507, 6662, 1631, 18549, 1126, 18550, 18551, 9560, 6306, 6839, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 16567, 5088, 15530, 6663, 1631, 18607, 1126, 18608, 18609, 9561, 6307, 6840, 2]
 
-// Module 18548 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 18606 (GuildRoleSubscriptionTierTemplateFullCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15507 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16544 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18551 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15530 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16567 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 18609 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -509,7 +509,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
                                 const obj13 = { scrollable: true, startExpanded: true, children: closure_6(View, obj14) };
                                 obj14 = { style: tmp7, children: items2 };
                                 items2 = [tmp8, tmp10, tmp71];
-                                BottomSheet = tmp(6839).BottomSheet;
+                                BottomSheet = tmp(6840).BottomSheet;
                                 const tmp78 = closure_4(BottomSheet, obj13);
                                 cResult[57] = tmp4.container;
                                 cResult[58] = tmp8;

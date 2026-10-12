@@ -1,9 +1,9 @@
-// Module ID: 7342
-// Function ID: 7343
+// Module ID: 7343
+// Function ID: 7344
 // Name: KvCacheVersion
 // Dependencies: [5, 499, 3, 2091, 2]
 
-// Module 7342 (KvCacheVersion)
+// Module 7343 (KvCacheVersion)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -52,7 +52,7 @@ class KvCacheVersion {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

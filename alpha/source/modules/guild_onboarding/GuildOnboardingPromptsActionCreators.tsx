@@ -1,20 +1,20 @@
-// Module ID: 6787
-// Function ID: 6788
+// Module ID: 6788
+// Function ID: 6789
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 2125, 2087, 6788, 6789, 1085, 4736, 1265, 5107, 584, 1295, 1403, 2]
+// Dependencies: [5, 502, 2125, 2087, 6789, 6790, 1085, 4736, 1265, 5107, 584, 1295, 1403, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 6787 (GuildOnboardingPromptsActionCreators)
+// Module 6788 (GuildOnboardingPromptsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6789 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6790 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6788 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6789 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let obj = function _maybeFetchOnboardingPrompts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

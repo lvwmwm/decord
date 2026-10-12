@@ -1,17 +1,17 @@
-// Module ID: 18473
-// Function ID: 18474
+// Module ID: 18531
+// Function ID: 18532
 // Name: CreatorHighlightSection
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1200, 9466, 1126, 6662, 18474, 4806, 18446, 6156, 15510, 5380, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1200, 9467, 1126, 6663, 18532, 4806, 18504, 6157, 15533, 5380, 2]
 
-// Module 18473 (CreatorHighlightSection)
+// Module 18531 (CreatorHighlightSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9466 */;
-import EmojiIconDefault from "EmojiIcon" /* 15510 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9467 */;
+import EmojiIconDefault from "EmojiIcon" /* 15533 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -177,7 +177,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creato
   const typeConsolidationEyebrow = obj2.useTypeConsolidationEyebrow("CreatorHighlightSection", "text-xs/semibold");
   const guild_id = highlightedCreatorGuild.guild_id;
   ({ quote, quote_attribution, quote_attribution_title } = highlightedCreatorGuild);
-  const tmp7 = guild_id(18474)(guild_id, 3, 60);
+  const tmp7 = guild_id(18532)(guild_id, 3, 60);
   dependencyMap = tmp7;
   const hasAllImperativeDetails = tmp7.hasAllImperativeDetails;
   if (cResult[0] === tmp7.details) {
@@ -190,7 +190,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creato
       let tmp68;
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp67 = closure_6(guild_id(18446), {});
+        const tmp67 = closure_6(guild_id(18504), {});
         cResult[3] = tmp67;
         tmp65 = tmp67;
       } else {
@@ -454,7 +454,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creato
         tmp18 = tmp20;
       }
       const obj19 = { style: tmp4.guildIcon, source: tmp11 };
-      const tmp14 = closure_6(guild_id(6156), obj19);
+      const tmp14 = closure_6(guild_id(6157), obj19);
       cResult[8] = tmp4.guildIcon;
       cResult[9] = tmp11;
       cResult[10] = tmp14;
@@ -509,12 +509,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creato
   const guild_id = highlightedCreatorGuild.guild_id;
   let quote_attribution_title = highlightedCreatorGuild.quote_attribution_title;
   ({ quote, quote_attribution } = highlightedCreatorGuild);
-  const tmp6 = guild_id(18474)(guild_id, 3, 60);
+  const tmp6 = guild_id(18532)(guild_id, 3, 60);
   dependencyMap = tmp6;
   const hasAllImperativeDetails = tmp6.hasAllImperativeDetails;
   let items = [hasAllImperativeDetails, tmp6];
   if (tmp6.isLoading) {
-    const obj2 = { style: tmp.cardContainer, children: closure_6(guild_id(18446), {}) };
+    const obj2 = { style: tmp.cardContainer, children: closure_6(guild_id(18504), {}) };
     return closure_6(closure_4, obj2);
   } else if (hasAllImperativeDetails) {
     const details = tmp6.details;
@@ -524,7 +524,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Creato
     ({ guildName, guildAvatarUrl } = details);
     const obj5 = { style: tmp.guildIcon, source: obj6 };
     obj6 = { uri: guildAvatarUrl };
-    items1 = [closure_6(tmp5(6156), obj5), ];
+    items1 = [closure_6(tmp5(6157), obj5), ];
     const obj7 = { style: tmp.cardHeaderContainer, children: items2 };
     const obj8 = { variant: "heading-md/extrabold", color: "mobile-text-heading-primary", lineClamp: 1, lineBreakMode: "tail", children: guildName };
     items2 = [closure_6(tmp2(5088).Text, obj8), ];

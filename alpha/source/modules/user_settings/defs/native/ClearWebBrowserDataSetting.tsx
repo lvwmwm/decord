@@ -1,14 +1,14 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15777
+// Function ID: 15778
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 7992, 5305, 1126, 5053, 4809, 10663, 1382, 1105, 2]
+// Dependencies: [5, 7993, 5305, 1126, 5053, 4809, 10663, 1382, 1105, 2]
 
-// Module 15754 (ClearWebBrowserDataSetting)
+// Module 15777 (ClearWebBrowserDataSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import BrowserManager from "BrowserManager" /* 5053 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ let obj = {
             intl = tmp3(c2[3]).intl;
             open("web-browser-data-cleared", obj6);
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp6) {
           c2 = 3;

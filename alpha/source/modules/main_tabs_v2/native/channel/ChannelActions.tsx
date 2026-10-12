@@ -1,9 +1,9 @@
-// Module ID: 9309
-// Function ID: 9310
+// Module ID: 9310
+// Function ID: 9311
 // Name: ChannelActions
-// Dependencies: [19, 17, 6060, 2069, 2065, 5113, 9310, 1085, 9311, 21, 5092, 558, 576, 9314, 8233, 8198, 1126, 9321, 587, 9323, 8228, 9325, 9326, 9332, 504, 6971, 9333, 9334, 6973, 12841, 7481, 12842, 6739, 11996, 9328, 1382, 4985, 11995, 12055, 10661, 1121, 4977, 10780, 8200, 10349, 12843, 12844, 5924, 12845, 12847, 2]
+// Dependencies: [19, 17, 6060, 2069, 2065, 5113, 9311, 1085, 9312, 21, 5092, 558, 576, 9315, 8234, 8199, 1126, 9322, 587, 9324, 8229, 9326, 9327, 9333, 504, 6972, 9334, 9335, 6974, 12843, 7482, 12844, 6740, 11998, 9329, 1382, 4985, 11997, 12057, 10661, 1121, 4977, 10780, 8201, 10350, 12845, 12846, 5924, 12847, 12849, 2]
 
-// Module 9309 (ChannelActions)
+// Module 9310 (ChannelActions)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,19 +13,19 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import ChatInputUtils from "ChatInputUtils" /* 4985 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9310 */;
-import TrackingConstants from "TrackingConstants" /* 9311 */;
-import AppChannelChat from "AppChannelChat" /* 9314 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9328 */;
-import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10349 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9311 */;
+import TrackingConstants from "TrackingConstants" /* 9312 */;
+import AppChannelChat from "AppChannelChat" /* 9315 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9329 */;
+import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10350 */;
 import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 10661 */;
-import useSearchContext from "useSearchContext" /* 11995 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 11996 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12055 */;
-import ConversationCoachmark from "ConversationCoachmark" /* 12843 */;
-import IconActionButtonDefault from "IconActionButton" /* 12844 */;
-import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 12847 */;
+import useSearchContext from "useSearchContext" /* 11997 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 11998 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
+import ConversationCoachmark from "ConversationCoachmark" /* 12845 */;
+import IconActionButtonDefault from "IconActionButton" /* 12846 */;
+import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 12849 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6060 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
@@ -42,9 +42,9 @@ let c10;
 let c9;
 let tmp;
 let unpackModuleId;
-const VoiceNormalIcon2 = tmp(8228);
-const PhoneCallIcon2 = tmp(9321);
-const PhoneHangUpIcon2 = tmp(9323);
+const VoiceNormalIcon2 = tmp(8229);
+const PhoneCallIcon2 = tmp(9322);
+const PhoneHangUpIcon2 = tmp(9324);
 const View = react_native.View;
 const THREADED_CHANNEL_TYPES = ChannelRecord.THREADED_CHANNEL_TYPES;
 let closure_8 = ChannelDetailsStore.setIsChannelDetailsSearchActive;
@@ -69,7 +69,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApp
   }
   const isAppChannelChatOpen = useIsAppChannelChatOpen(id);
   let id1 = null;
-  const useAppChannelChatUnread = tmp(9314).useAppChannelChatUnread;
+  const useAppChannelChatUnread = tmp(9315).useAppChannelChatUnread;
   require("AppChannelChat");
   if (type.type === constants.GUILD_APP) {
     id1 = type.id;
@@ -87,9 +87,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApp
       tmp11 = hasUnread;
     }
     if (isAppChannelChatOpen) {
-      ChatIcon = tmp(8233).AppsIcon;
+      ChatIcon = tmp(8234).AppsIcon;
     } else {
-      ChatIcon = tmp(8198).ChatIcon;
+      ChatIcon = tmp(8199).ChatIcon;
     }
     if (cResult[0] === type.guild_id) {
       if (cResult[1] === type.id) {
@@ -183,9 +183,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApp
       tmp10 = hasUnread;
     }
     if (isAppChannelChatOpen) {
-      ChatIcon = tmp2(8233).AppsIcon;
+      ChatIcon = tmp2(8234).AppsIcon;
     } else {
-      ChatIcon = tmp2(8198).ChatIcon;
+      ChatIcon = tmp2(8199).ChatIcon;
     }
     let obj = {
       source: null,
@@ -924,7 +924,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelActio
   const tmpResult = tmp(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6);
   ({ isMultiUserDM, isDM } = stateFromStoresObject);
-  const tmpResult2 = tmp(9326);
+  const tmpResult2 = tmp(9327);
   const hasForumSearchQuery = tmpResult2.useHasForumSearchQuery(channelId);
   if (cResult[3] === channelId) {
     if (cResult[4] === hasForumSearchQuery) {
@@ -953,7 +953,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelActio
     }
   }
   if (hasForumSearchQuery) {
-    tmp12 = jsx(tmp(12845).ForumChannelCloseSearchButton, { channelId });
+    tmp12 = jsx(tmp(12847).ForumChannelCloseSearchButton, { channelId });
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {
@@ -1006,10 +1006,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelActio
     return obj2;
   });
   ({ isMultiUserDM, isDM } = stateFromStoresObject);
-  let obj2 = channelId(9326);
+  let obj2 = channelId(9327);
   if (obj2.useHasForumSearchQuery(channelId)) {
     const obj4 = { channelId };
-    tmp4Result = tmp4(tmp(12845).ForumChannelCloseSearchButton, obj4);
+    tmp4Result = tmp4(tmp(12847).ForumChannelCloseSearchButton, obj4);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {

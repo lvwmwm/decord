@@ -1,9 +1,9 @@
-// Module ID: 7005
-// Function ID: 7006
+// Module ID: 7006
+// Function ID: 7007
 // Name: ThreadMessageStore
 // Dependencies: [2069, 4761, 1404, 2065, 5432, 1125, 1085, 12, 11, 5434, 504, 584, 2]
 
-// Module 7005 (ThreadMessageStore)
+// Module 7006 (ThreadMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;

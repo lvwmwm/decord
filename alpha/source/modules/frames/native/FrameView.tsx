@@ -1,16 +1,16 @@
-// Module ID: 17681
-// Function ID: 17682
+// Module ID: 17738
+// Function ID: 17739
 // Name: FrameView
-// Dependencies: [32, 19, 10802, 21, 558, 576, 6852, 584, 10821, 17682, 10924, 5300, 1126, 10809, 17683, 10941, 10960, 17686, 2]
+// Dependencies: [32, 19, 10802, 21, 558, 576, 6853, 584, 10821, 17739, 10924, 5300, 1126, 10809, 17740, 10941, 10960, 17743, 2]
 
-// Module 17681 (FrameView)
+// Module 17738 (FrameView)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1126 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import leaveFrame from "leaveFrame" /* 10821 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 17682 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 17739 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
   ({ iframeId, onActivityCrash, presentation } = frame);
   const layoutMode = presentation.layoutMode;
   ({ portraitSafeAreasConfig, landscapeSafeAreasConfig } = presentation);
-  let obj2 = frame(6852);
+  let obj2 = frame(6853);
   const data = obj2.useApplication(frame.applicationId).data;
   const orientationLock = frame.data.orientationLock;
   [first] = react.useState(true);
@@ -124,7 +124,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
   let portraitSafeAreasConfig = presentation.portraitSafeAreasConfig;
   ({ iframeId, onActivityCrash } = frame);
   const landscapeSafeAreasConfig = presentation.landscapeSafeAreasConfig;
-  let obj = frame(6852);
+  let obj = frame(6853);
   const data = obj.useApplication(frame.applicationId).data;
   const orientationLock = frame.data.orientationLock;
   [first, tmp5] = react.useState(true);
@@ -182,8 +182,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
     safeAreasConfig: portraitSafeAreasConfig
   });
   obj4 = { type: frame(10809).EmbeddedContextSourceType.FRAME, frameId: frame.id };
-  layoutMode(17686);
-  tmp12 = layoutMode(17683);
+  layoutMode(17743);
+  tmp12 = layoutMode(17740);
   tmpResult2 = frame(10960);
   if (isLandscape) {
     portraitSafeAreasConfig = landscapeSafeAreasConfig;

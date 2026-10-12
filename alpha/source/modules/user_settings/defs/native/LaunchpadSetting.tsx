@@ -1,13 +1,13 @@
-// Module ID: 15809
-// Function ID: 15810
+// Module ID: 15832
+// Function ID: 15833
 // Name: LaunchpadSetting
-// Dependencies: [7992, 10659, 2041, 1209, 1126, 10663, 10660, 2]
+// Dependencies: [7993, 10659, 2041, 1209, 1126, 10663, 10660, 2]
 
-// Module 15809 (LaunchpadSetting)
+// Module 15832 (LaunchpadSetting)
 import intl9 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import LaunchPadConstants from "LaunchPadConstants" /* 10659 */;
 import useLaunchPadTypeDefault from "useLaunchPadType" /* 10660 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

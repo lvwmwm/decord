@@ -1,15 +1,15 @@
-// Module ID: 10271
-// Function ID: 10272
+// Module ID: 10272
+// Function ID: 10273
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 21, 5092, 558, 576, 10272, 10273, 10275, 587, 8925, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 10273, 10274, 10276, 587, 8926, 2]
 
-// Module 10271 (LeaderboardWinnerBadge)
+// Module 10272 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10272 */;
-import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10273 */;
+import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10273 */;
+import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10274 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Leaderboar
       }
       const _Symbol2 = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const MedalIcon = tmp(10275).MedalIcon;
+        const MedalIcon = tmp(10276).MedalIcon;
         const tmp23 = <MedalIcon size="xs" color={nativeDefault.colors.TEXT_FEEDBACK_WARNING} />;
         cResult[2] = tmp23;
         tmp21 = tmp23;
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Leaderboar
     }
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const TrophyIcon = tmp(8925).TrophyIcon;
+      const TrophyIcon = tmp(8926).TrophyIcon;
       const tmp13 = <TrophyIcon size="xs" color={nativeDefault.colors.TEXT_FEEDBACK_WARNING} />;
       cResult[8] = tmp13;
       tmp11 = tmp13;
@@ -117,14 +117,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Leaderboar
     if (null != activeLeaderboardLeaderData) {
       const tmp5Result = GuildLeaderboardUtils;
       ({ size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING });
-      const MedalIcon = tmp5(10275).MedalIcon;
+      const MedalIcon = tmp5(10276).MedalIcon;
       tmp7 = <View style={tmp.container} accessible accessibilityLabel={tmp5Result.getLeaderboardLeaderBadgeText(activeLeaderboardLeaderData)}>{null}</View>;
     }
     tmp10 = tmp7;
   } else {
     const tmp5Result2 = GuildLeaderboardUtils;
     ({ size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING });
-    const TrophyIcon = tmp5(8925).TrophyIcon;
+    const TrophyIcon = tmp5(8926).TrophyIcon;
     tmp10 = <View style={tmp.container} accessible accessibilityLabel={tmp5Result2.getLeaderboardWinnerBadgeText(tmp4)}>{null}</View>;
   }
   return tmp10;

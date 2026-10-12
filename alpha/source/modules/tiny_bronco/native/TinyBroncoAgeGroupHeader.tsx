@@ -1,9 +1,9 @@
-// Module ID: 14980
-// Function ID: 14981
+// Module ID: 15003
+// Function ID: 15004
 // Name: TinyBroncoAgeGroupHeader
-// Dependencies: [32, 19, 17, 5927, 2062, 21, 5092, 587, 2049, 9624, 3152, 7497, 558, 576, 14970, 7099, 5046, 1126, 5088, 6207, 6184, 14981, 5379, 2]
+// Dependencies: [32, 19, 17, 5927, 2062, 21, 5092, 587, 2049, 9625, 3152, 7498, 558, 576, 14993, 7100, 5046, 1126, 5088, 6208, 6185, 15004, 5379, 2]
 
-// Module 14980 (TinyBroncoAgeGroupHeader)
+// Module 15003 (TinyBroncoAgeGroupHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,9 +13,9 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import _modDef3152 from "module_3152" /* 3152 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import TinyBroncoConstants from "TinyBroncoConstants" /* 5927 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7497 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9624 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14981 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9625 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 15004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -203,7 +203,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accoun
       obj6 = { handleOnBlogHook: handleOpenBlog };
       items[1] = closure_8(Text, obj5);
       const obj7 = { style: tmp.noticeDismiss, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(require("intl").t.WAI6xu), hitSlop: 12, onPress: tmp8, children: closure_8(require("XSmallIcon").XSmallIcon, { size: "sm", color: "icon-strong" }) };
-      const PressableOpacity = tmp2(6184).PressableOpacity;
+      const PressableOpacity = tmp2(6185).PressableOpacity;
       intl2 = tmp2(1126).intl;
       items[2] = closure_8(PressableOpacity, obj7);
       tmp9 = closure_9(View, obj3);

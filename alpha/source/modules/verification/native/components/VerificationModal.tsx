@@ -1,9 +1,9 @@
-// Module ID: 18213
-// Function ID: 18214
+// Module ID: 18271
+// Function ID: 18272
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 18214, 2059, 1390, 1085, 21, 5092, 558, 576, 1126, 5379, 1504, 1200, 18215, 1273, 6200, 7088, 8664, 6890, 5930, 18219, 6273, 6282, 6279, 6668, 6732, 6733, 6274, 18220, 6766, 6681, 504, 5056, 4985, 6687, 2]
+// Dependencies: [5, 19, 17, 18272, 2059, 1390, 1085, 21, 5092, 558, 576, 1126, 5379, 1504, 1200, 18273, 1273, 6201, 7089, 8665, 6891, 5930, 18277, 6274, 6283, 6280, 6669, 6733, 6734, 6275, 18278, 6767, 6682, 504, 5056, 4985, 6688, 2]
 
-// Module 18213 (VerificationModal)
+// Module 18271 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -13,20 +13,20 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 127
 import Link from "Link" /* 1504 */;
 import ChatInputUtils from "ChatInputUtils" /* 4985 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import ResendEmailDefault from "ResendEmail" /* 6273 */;
-import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 6279 */;
-import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6282 */;
-import EnterEmailDefault from "EnterEmail" /* 6668 */;
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6681 */;
-import Navigator2 from "Navigator" /* 6687 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 6766 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8664 */;
-import OverviewDefault from "Overview" /* 18219 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import ResendEmailDefault from "ResendEmail" /* 6274 */;
+import ConfirmEmailChangeStartDefault from "ConfirmEmailChangeStart" /* 6280 */;
+import ConfirmEmailChangeCodeDefault from "ConfirmEmailChangeCode" /* 6283 */;
+import EnterEmailDefault from "EnterEmail" /* 6669 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6682 */;
+import Navigator2 from "Navigator" /* 6688 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 6767 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8665 */;
+import OverviewDefault from "Overview" /* 18277 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 18214 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 18272 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2059 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
@@ -215,7 +215,7 @@ function getScreens() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   let c4;
@@ -301,7 +301,7 @@ function getScreens() {
                     const obj3 = { value, done: true };
                     return obj3;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -336,7 +336,7 @@ function getScreens() {
                         closure_0.push(constants2.OVERVIEW);
                       }
                       c2 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp14) {
                     c2 = 3;
@@ -469,7 +469,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PhoneT
     return tmp14;
   }
   const EmptyState = tmp(1200).EmptyState;
-  const tmp15 = <EmptyState Illustration={navigation(18215).VerifyPhone} title={tmp5} body={tmp6}>{null}</EmptyState>;
+  const tmp15 = <EmptyState Illustration={navigation(18273).VerifyPhone} title={tmp5} body={tmp6}>{null}</EmptyState>;
   cResult[5] = tmp4.button;
   cResult[6] = tmp11;
   cResult[7] = tmp15;
@@ -502,7 +502,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PhoneT
   });
   const Button = navigation(5379).Button;
   intl3 = navigation(1126).intl;
-  return <EmptyState Illustration={navigation(18215).VerifyPhone} title={intl.string(navigation(1126).t.KLnLIP)} body={intl2.string(navigation(1126).t.XGbCq3)}>{null}</EmptyState>;
+  return <EmptyState Illustration={navigation(18273).VerifyPhone} title={intl.string(navigation(1126).t.KLnLIP)} body={intl2.string(navigation(1126).t.XGbCq3)}>{null}</EmptyState>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerificationModal() {
@@ -624,7 +624,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Verificati
     const obj2 = stateFromStores(dependencyMap[35]);
     obj2.dismissKeyboard();
   }, []);
-  const Navigator = stateFromStores(6687).Navigator;
+  const Navigator = stateFromStores(6688).Navigator;
   const intl = stateFromStores(1126).intl;
   return <Navigator screens={react.useMemo(() => getScreens(), [])} initialRouteStack={memo} headerBackTitle={intl.string(stateFromStores(1126).t["13/7kX"])} />;
 });

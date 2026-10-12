@@ -1,15 +1,15 @@
-// Module ID: 9463
-// Function ID: 9464
+// Module ID: 9464
+// Function ID: 9465
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 2087, 2072, 21, 9270, 1126, 558, 576, 1497, 504, 6097, 9464, 9467, 5398, 2]
+// Dependencies: [19, 2087, 2072, 21, 9271, 1126, 558, 576, 1497, 504, 6098, 9465, 9468, 5398, 2]
 
-// Module 9463 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9464 (RoleSubscriptionEmojiUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1126 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9270 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9464 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9271 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9465 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
     name = stateFromStores.name;
   }
   if (cResult[3] !== name) {
-    const obj2 = { image: onClose(9270), title: intl.string(tmp(1126).t.cBjkcx), description: intl2.formatToPlainString(tmp(1126).t["h0u/Hi"], obj3) };
+    const obj2 = { image: onClose(9271), title: intl.string(tmp(1126).t.cBjkcx), description: intl2.formatToPlainString(tmp(1126).t["h0u/Hi"], obj3) };
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;
     obj3 = { serverName: name };
@@ -133,8 +133,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
     }
     cResult[11] = diff;
     cResult[12] = tmp11;
-    cResult[13] = jsx(tmp(9467).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
-    const tmp18 = jsx(tmp(9467).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    cResult[13] = jsx(tmp(9468).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    const tmp18 = jsx(tmp(9468).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
   }
   function handleConfirm() {
     const obj = GuildActionCreatorsDefault;

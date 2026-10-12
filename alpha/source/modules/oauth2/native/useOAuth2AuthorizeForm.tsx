@@ -1,21 +1,21 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 9224
+// Function ID: 9225
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4765, 5081, 2022, 5761, 1390, 9224, 1085, 21, 5092, 4755, 504, 5362, 4850, 5093, 6852, 9225, 9226, 1097, 9227, 1295, 1279, 9228, 9230, 9233, 9234, 6859, 1255, 9235, 9236, 5107, 9237, 5372, 9238, 5379, 1126, 6153, 5763, 9240, 9242, 8457, 9231, 12893, 12897, 12896, 12898, 12899, 12900, 12902, 12905, 6819, 2]
+// Dependencies: [5, 32, 19, 17, 4765, 5081, 2022, 5761, 1390, 9225, 1085, 21, 5092, 4755, 504, 5362, 4850, 5093, 6853, 9226, 9227, 1097, 9228, 1295, 1279, 9229, 9231, 9234, 9235, 6860, 1255, 9236, 9237, 5107, 9238, 5372, 9239, 5379, 1126, 6154, 5763, 9241, 9243, 8458, 9232, 12895, 12899, 12898, 12900, 12901, 12902, 12904, 12907, 6820, 2]
 // Exports: default
 
-// Module 9223 (useOAuth2AuthorizeForm)
+// Module 9224 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6153 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6852 */;
-import Authorize from "Authorize" /* 9225 */;
-import react_nativeDefault from "react-native" /* 9227 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9234 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
+import Authorize from "Authorize" /* 9226 */;
+import react_nativeDefault from "react-native" /* 9228 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9235 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -24,7 +24,7 @@ import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import UserStore from "UserStore" /* 1390 */;
-import Constants_mod from "Constants" /* 9224 */;
+import Constants_mod from "Constants" /* 9225 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -40,7 +40,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(9226);
+const scopes2 = tmp4(9227);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -459,7 +459,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -533,7 +533,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               c3 = 0;
               closure_1_49.current = false;
               c5 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp42) {
             body = tmp42;
@@ -822,7 +822,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -912,7 +912,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
           closure_130_57.current = false;
         }
         c6 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp57) {
         body = tmp57;
         if (0 === c4) {
@@ -1036,7 +1036,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(9237);
+            const tmp27Result = tmp27(9238);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;

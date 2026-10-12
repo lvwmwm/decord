@@ -1,7 +1,7 @@
 // Module ID: 11072
 // Function ID: 11073
 // Name: UserSettingsVoice
-// Dependencies: [19, 17, 11073, 11074, 21, 5092, 558, 576, 6264, 11075, 11076, 11078, 11080, 1126, 5088, 11084, 11085, 11087, 11095, 6813, 5377, 2]
+// Dependencies: [19, 17, 11073, 11074, 21, 5092, 558, 576, 6265, 11075, 11076, 11078, 11080, 1126, 5088, 11084, 11085, 11087, 11095, 6814, 5377, 2]
 
 // Module 11072 (UserSettingsVoice)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6813 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11073 */;
 import UserSettingsVoiceConstants from "UserSettingsVoiceConstants" /* 11074 */;
 import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11075 */;
@@ -28,7 +28,7 @@ import size from "module_2" /* 2 */;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const TableRowGroup2 = tmp(6264);
+const TableRowGroup2 = tmp(6265);
 const View = react_native.View;
 const isMobileOverlaySupported = MobileVoiceOverlayStore.isMobileOverlaySupported;
 const guideURL = UserSettingsVoiceConstants.USER_SETTINGS_VOICE_GUILD_URL;

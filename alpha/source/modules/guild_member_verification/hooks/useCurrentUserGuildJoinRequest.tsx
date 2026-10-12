@@ -1,9 +1,9 @@
-// Module ID: 6120
-// Function ID: 6121
+// Module ID: 6121
+// Function ID: 6122
 // Name: useCurrentUserGuildJoinRequest
 // Dependencies: [4940, 558, 576, 504, 2]
 
-// Module 6120 (useCurrentUserGuildJoinRequest)
+// Module 6121 (useCurrentUserGuildJoinRequest)
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 10705
 // Function ID: 10706
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 7254, 6800, 4748, 2087, 5966, 1085, 2062, 21, 5092, 587, 558, 576, 6664, 10706, 504, 10708, 4938, 2049, 10704, 6738, 6181, 6184, 1126, 6295, 6156, 10710, 5088, 8624, 5421, 4832, 6264, 6177, 4818, 8158, 6176, 6187, 1200, 5079, 2]
+// Dependencies: [32, 19, 17, 7255, 6801, 4748, 2087, 5966, 1085, 2062, 21, 5092, 587, 558, 576, 6665, 10706, 504, 10708, 4938, 2049, 10704, 6739, 6182, 6185, 1126, 6296, 6157, 10710, 5088, 8625, 5421, 4832, 6265, 6178, 4818, 8159, 6177, 6188, 1200, 5079, 2]
 
 // Module 10705 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7254 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6800 */;
+import NewChannelsStore from "NewChannelsStore" /* 7255 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
@@ -526,7 +526,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
                       return onChannelClick(channel.guild_id, channel.id, channel.id);
                     }
                   }
-                  const tmp27 = closure_12(channel(6184).PressableOpacity, obj3);
+                  const tmp27 = closure_12(channel(6185).PressableOpacity, obj3);
                   cResult[21] = tmp4.categoryContainer;
                   cResult[22] = tmp12;
                   cResult[23] = str2;
@@ -555,7 +555,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
           let tmp17 = null;
           if ("null" !== id) {
             const obj5 = { style: tmp4.selectAllContainer, children: items2 };
-            const obj6 = { style: tmp4.selectAllCheckbox, children: closure_12(channel(6177).FormCheckbox, obj7) };
+            const obj6 = { style: tmp4.selectAllCheckbox, children: closure_12(channel(6178).FormCheckbox, obj7) };
             obj7 = { checked: null };
             class T {
               constructor() {
@@ -587,7 +587,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
           }
         }
         const obj9 = { style: tmp4.categoryTitle, title: tmp5, lineClamp: 1 };
-        const tmp15 = closure_12(channel(6264).TableRowGroupTitle, obj9);
+        const tmp15 = closure_12(channel(6265).TableRowGroupTitle, obj9);
         cResult[10] = tmp5;
         cResult[11] = tmp4.categoryTitle;
         cResult[12] = tmp15;
@@ -639,7 +639,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
     children: closure_13(tmp11, { children: items1 })
   };
   str = "text";
-  const PressableOpacity = channel(6184).PressableOpacity;
+  const PressableOpacity = channel(6185).PressableOpacity;
   if ("null" !== channel.id) {
     str = checkboxA11yNative.accessibilityRole;
   }
@@ -649,12 +649,12 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
   }
   items1 = [, ];
   const obj4 = { style: tmp.categoryTitle, title: tmp3, lineClamp: 1 };
-  items1[0] = closure_12(channel(6264).TableRowGroupTitle, obj4);
+  items1[0] = closure_12(channel(6265).TableRowGroupTitle, obj4);
   let tmp10Result = null;
   tmp11 = closure_14;
   if ("null" !== channel.id) {
     const obj5 = { style: tmp.selectAllContainer, children: items2 };
-    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(6177).FormCheckbox, obj7) };
+    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(6178).FormCheckbox, obj7) };
     obj7 = { checked: stateFromStores };
     items2 = [closure_12(View, obj6), ];
     const obj8 = { variant: "text-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1126).t.mSQwnW) };

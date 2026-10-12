@@ -187,7 +187,7 @@ export const useViewModelInstance = function useViewModelInstance(arg0, instance
     let obj2 = { instance, error: null };
     obj3 = obj2;
   } else if (undefined === instance) {
-    obj3 = { instance: "Array", error: false };
+    obj3 = { instance: "Array", error: 0 };
   } else {
     obj3 = { instance: null, error: tmp7 };
   }

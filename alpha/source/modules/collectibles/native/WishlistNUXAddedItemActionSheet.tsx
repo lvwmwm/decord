@@ -1,17 +1,17 @@
-// Module ID: 8974
-// Function ID: 8975
+// Module ID: 8975
+// Function ID: 8976
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1390, 8307, 21, 5092, 587, 558, 576, 504, 1993, 5056, 8303, 6878, 8975, 8976, 5088, 1126, 5379, 5958, 6839, 2]
+// Dependencies: [32, 19, 17, 1390, 8308, 21, 5092, 587, 558, 576, 504, 1993, 5056, 8304, 6879, 8976, 8977, 5088, 1126, 5379, 5958, 6840, 2]
 
-// Module 8974 (WishlistNUXAddedItemActionSheet)
+// Module 8975 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
-import Constants from "Constants" /* 8307 */;
-import SKUPreview from "SKUPreview" /* 8975 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import Constants from "Constants" /* 8308 */;
+import SKUPreview from "SKUPreview" /* 8976 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -194,8 +194,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     }
     const obj5 = { renderPreview: tmp18 };
     cResult[13] = tmp18;
-    cResult[14] = closure_8(obj4(8976), obj5);
-    const tmp21 = closure_8(obj4(8976), obj5);
+    cResult[14] = closure_8(obj4(8977), obj5);
+    const tmp21 = closure_8(obj4(8977), obj5);
   } else {
     class L {
       constructor() {
@@ -408,7 +408,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     const obj13 = { children: closure_9(View, obj14) };
     obj14 = { style: container, children: items3 };
     items3 = [tmp19, tmp28, tmp34];
-    BottomSheet = tmp(6839).BottomSheet;
+    BottomSheet = tmp(6840).BottomSheet;
     cResult[26] = tmp4.container;
     cResult[27] = tmp28;
     cResult[28] = tmp34;

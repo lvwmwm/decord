@@ -1,19 +1,19 @@
-// Module ID: 18307
-// Function ID: 18308
+// Module ID: 18365
+// Function ID: 18366
 // Name: HeaderRow
-// Dependencies: [11937, 5, 32, 19, 17, 18301, 1085, 1393, 21, 5092, 587, 8572, 9546, 1265, 1126, 1279, 7768, 5379, 5088, 558, 576, 504, 2]
+// Dependencies: [11939, 5, 32, 19, 17, 18359, 1085, 1393, 21, 5092, 587, 8573, 9547, 1265, 1126, 1279, 7769, 5379, 5088, 558, 576, 504, 2]
 
-// Module 18307 (HeaderRow)
+// Module 18365 (HeaderRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11937 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11939 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18301 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18359 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -86,7 +86,7 @@ function HeaderRow(guild) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -210,7 +210,7 @@ function HeaderRow(guild) {
             c5 = 0;
             closure_132_4(false);
             c8 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           upload_id = tmp28;
@@ -235,7 +235,7 @@ function HeaderRow(guild) {
   [c6, c7] = tmp6;
   let tmp7 = guild;
   let tmp8 = dependencyMap;
-  obj = guild(8572);
+  obj = guild(8573);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
   let intl = guild(1126).intl;
   let obj2 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 1, text: stringResult };

@@ -1,9 +1,9 @@
-// Module ID: 16354
-// Function ID: 16355
+// Module ID: 16377
+// Function ID: 16378
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1404, 4963, 1390, 12125, 21, 5092, 558, 576, 504, 6867, 587, 5046, 5088, 1126, 6184, 4832, 1200, 4962, 2]
+// Dependencies: [19, 17, 1404, 4963, 1390, 12127, 21, 5092, 558, 576, 504, 6868, 587, 5046, 5088, 1126, 6185, 4832, 1200, 4962, 2]
 
-// Module 16354 (AccountSwitcherListItem)
+// Module 16377 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1200 */;
 import react_native from "react-native" /* 4832 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import MultiAccountStore from "MultiAccountStore" /* 12125 */;
+import MultiAccountStore from "MultiAccountStore" /* 12127 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1404 */;
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountStatu
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-      const CircleCheckIcon = tmp(6867).CircleCheckIcon;
+      const CircleCheckIcon = tmp(6868).CircleCheckIcon;
       const tmp17 = React4(CircleCheckIcon, obj2);
       cResult[2] = tmp17;
       tmp14 = tmp17;
@@ -104,7 +104,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountStatu
   }
   if (id === id1) {
     const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-    const CircleCheckIcon = tmp(6867).CircleCheckIcon;
+    const CircleCheckIcon = tmp(6868).CircleCheckIcon;
     tmp6 = React4(CircleCheckIcon, obj2);
   } else {
     tmp6 = null;
@@ -222,7 +222,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     if (null == onPressUser) {
       PressableOpacity = _false;
     } else {
-      PressableOpacity = tmp(6184).PressableOpacity;
+      PressableOpacity = tmp(6185).PressableOpacity;
     }
     if (cResult[8] !== (id === id1)) {
       const obj3 = { selected: id === id1 };
@@ -528,7 +528,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     if (null == onPressUser) {
       PressableOpacity = _false;
     } else {
-      PressableOpacity = tmp2(6184).PressableOpacity;
+      PressableOpacity = tmp2(6185).PressableOpacity;
     }
     const obj5 = { selected: id === id1 };
     const tmp2Result = react_native;
@@ -543,7 +543,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     const merged = Object.assign(sortHandlers);
     items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: items3 };
-    const obj9 = { user: obj3, guildId: "Array" };
+    const obj9 = { user: obj3, guildId: "r" };
     items3 = [React4(native.Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: items5 };
     const obj11 = { style: tmp.tagContainer, children: items4 };

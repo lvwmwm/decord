@@ -1,28 +1,28 @@
-// Module ID: 10064
-// Function ID: 10065
+// Module ID: 10065
+// Function ID: 10066
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7139, 7140, 502, 4775, 7131, 9400, 7132, 1085, 5071, 1392, 21, 3, 7126, 584, 9399, 1264, 4702, 7148, 4784, 5724, 1265, 5300, 1126, 10065, 2000, 5934, 7129, 2]
+// Dependencies: [109, 5, 19, 17, 7140, 7141, 502, 4775, 7132, 9401, 7133, 1085, 5071, 1392, 21, 3, 7127, 584, 9400, 1264, 4702, 7149, 4784, 5724, 1265, 5300, 1126, 10066, 2000, 5934, 7130, 2]
 
-// Module 10064 (GPlayManager)
+// Module 10065 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import PaymentConstants from "PaymentConstants" /* 5071 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
-import ProductIds from "ProductIds" /* 7126 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9399 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9400 */;
+import ProductIds from "ProductIds" /* 7127 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9400 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9401 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7139 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7140 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7140 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7141 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import IAPStore from "IAPStore" /* 7131 */;
-import Constants_mod from "Constants" /* 7132 */;
+import IAPStore from "IAPStore" /* 7132 */;
+import Constants_mod from "Constants" /* 7133 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ let obj = function _handlePurchaseUpdated() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ let obj = function _handlePurchaseUpdated() {
                 return { value, done: true };
               } else if (closure_131_11.isPurchasingProduct(purchase.productId)) {
                 c7 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               } else {
                 closure_1 = closure_131_12.getState().analyticsByProductId[purchase.productId];
                 giftOptionsForKey = closure_131_25[purchase.productId];
@@ -189,7 +189,7 @@ let obj = function _handlePurchaseUpdated() {
                   const obj44 = closure_131_1(closure_131_2[17]);
                   obj44.dispatch(obj17);
                   c7 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   c6 = 7;
                   c7 = 1;
@@ -494,7 +494,7 @@ obj = function _executePendingDowngrade() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -591,7 +591,7 @@ obj = function _executePendingDowngrade() {
           obj9.dispatch({ type: "GPLAY_UPDATE_IS_DOWNGRADING", isDowngrading: false });
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp62) {
         closure_2 = tmp62;
         if (0 === c3) {
@@ -626,7 +626,7 @@ obj = function _fetchAndAlertActiveSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -695,7 +695,7 @@ obj = function _fetchAndAlertActiveSubscription() {
               obj.openLazy(obj2);
             });
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp21) {

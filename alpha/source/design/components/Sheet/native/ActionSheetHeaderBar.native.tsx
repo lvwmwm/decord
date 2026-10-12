@@ -1,9 +1,9 @@
-// Module ID: 6843
-// Function ID: 6844
+// Module ID: 6844
+// Function ID: 6845
 // Name: ActionSheetHeaderBar
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 1497, 4818, 5362, 2]
 
-// Module 6843 (ActionSheetHeaderBar)
+// Module 6844 (ActionSheetHeaderBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;

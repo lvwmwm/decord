@@ -1,19 +1,19 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14075
+// Function ID: 14076
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1390, 1085, 12400, 21, 5092, 5906, 587, 558, 576, 12402, 1265, 1382, 5396, 1506, 5934, 4962, 1126, 8481, 7088, 14053, 6200, 5088, 14054, 14056, 1631, 6687, 2]
+// Dependencies: [32, 19, 17, 1390, 1085, 12402, 21, 5092, 5906, 587, 558, 576, 12404, 1265, 1382, 5396, 1506, 5934, 4962, 1126, 8482, 7089, 14076, 6201, 5088, 14077, 14079, 1631, 6688, 2]
 
-// Module 14052 (AddFriendModal)
+// Module 14075 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import Navigator from "Navigator" /* 6687 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12400 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12402 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import Navigator from "Navigator" /* 6688 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12402 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,10 +1,10 @@
-// Module ID: 7038
-// Function ID: 7039
+// Module ID: 7039
+// Function ID: 7040
 // Name: LurkerActionCreators
 // Dependencies: [5, 5110, 4751, 1085, 584, 1295, 1388, 2]
 // Exports: stopLurking
 
-// Module 7038 (LurkerActionCreators)
+// Module 7039 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = function _stopLurkingAll() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -80,7 +80,7 @@ let obj = function _stopLurkingAll() {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "IconComponent", done: "+51" };
+                                    return { value: "IconComponent", done: null };
                                   }
                                 } else {
                                   try {
@@ -127,7 +127,7 @@ let obj = function _stopLurkingAll() {
                                         c5 = 0;
                                       }
                                       c7 = 3;
-                                      return { value: "IconComponent", done: "+51" };
+                                      return { value: "IconComponent", done: null };
                                     }
                                   } catch (tmp18) {
                                     closure_4 = tmp18;
@@ -159,7 +159,7 @@ let obj = function _stopLurkingAll() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;

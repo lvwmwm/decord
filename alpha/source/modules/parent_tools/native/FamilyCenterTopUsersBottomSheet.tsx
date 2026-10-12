@@ -1,19 +1,19 @@
-// Module ID: 15153
-// Function ID: 15154
+// Module ID: 15176
+// Function ID: 15177
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1390, 21, 5092, 558, 576, 7741, 6179, 4962, 1200, 1126, 2568, 5088, 6264, 6898, 2]
+// Dependencies: [19, 1390, 21, 5092, 558, 576, 7742, 6180, 4962, 1200, 1126, 2568, 5088, 6265, 6899, 2]
 
-// Module 15153 (FamilyCenterTopUsersBottomSheet)
+// Module 15176 (FamilyCenterTopUsersBottomSheet)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import TableRow2 from "TableRow" /* 6179 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7741 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7742 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
@@ -48,7 +48,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
       if (tmp7 === Symbol.for("react.early_return_sentinel")) {
         let tmp19;
         if (cResult[11] !== tmp8) {
-          const obj2 = { size: native.AvatarSizes.SMALL, user: tmp8, guildId: "Array" };
+          const obj2 = { size: native.AvatarSizes.SMALL, user: tmp8, guildId: "r" };
           const Avatar = tmp(1200).Avatar;
           const tmp21 = React3(Avatar, obj2);
           cResult[11] = tmp8;
@@ -92,7 +92,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
       if (cResult[9] === userActivity.dms_sent) {
         tmp15 = cResult[10];
       }
-      TableRow = tmp(6179).TableRow;
+      TableRow = tmp(6180).TableRow;
       const obj3 = UserUtilsDefault;
       name = obj3.getName(user);
       tmp13 = tmp15;
@@ -132,7 +132,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
     const obj2 = { label: obj3.getName(user), subLabel: topUserOrGuildDescription, icon: React3(Avatar, obj4) };
     const TableRow = TableRow2.TableRow;
     obj3 = UserUtilsDefault;
-    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "Array" };
+    obj4 = { size: native.AvatarSizes.SMALL, user, guildId: "r" };
     Avatar = native.Avatar;
     return React3(TableRow, obj2);
   }

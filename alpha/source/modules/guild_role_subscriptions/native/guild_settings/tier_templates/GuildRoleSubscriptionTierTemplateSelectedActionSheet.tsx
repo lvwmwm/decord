@@ -1,9 +1,9 @@
-// Module ID: 18541
-// Function ID: 18542
+// Module ID: 18599
+// Function ID: 18600
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 1631, 5088, 1126, 1200, 5380, 6306, 6839, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 1631, 5088, 1126, 1200, 5380, 6307, 6840, 2]
 
-// Module 18541 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 18599 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
@@ -143,7 +143,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
           return tmp29;
         }
         const obj5 = { backdropOpacity: 0.8, onDismiss: tmp5, children: tmp25 };
-        const tmp31 = closure_5(markAsDismissed(6839).BottomSheet, obj5);
+        const tmp31 = closure_5(markAsDismissed(6840).BottomSheet, obj5);
         cResult[20] = tmp5;
         cResult[21] = tmp25;
         cResult[22] = tmp31;
@@ -159,8 +159,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     items = [tmp7, tmp8, tmp12, tmp13, tmp20];
     cResult[14] = tmp20;
     cResult[15] = tmp6;
-    cResult[16] = closure_6(markAsDismissed(6306).BottomSheetScrollView, obj7);
-    const tmp24 = closure_6(markAsDismissed(6306).BottomSheetScrollView, obj7);
+    cResult[16] = closure_6(markAsDismissed(6307).BottomSheetScrollView, obj7);
+    const tmp24 = closure_6(markAsDismissed(6307).BottomSheetScrollView, obj7);
   }
   const obj8 = { text: tmp17, pillStyle: tmp4.button, onPress: tmp19, grow: true };
   cResult[11] = tmp4.button;
@@ -186,9 +186,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     children: closure_5(View, obj2)
   };
   obj2 = { style: tmp.container, children: closure_6(BottomSheetScrollView, obj3) };
-  BottomSheet = markAsDismissed(6839).BottomSheet;
+  BottomSheet = markAsDismissed(6840).BottomSheet;
   obj3 = { contentContainerStyle: { paddingBottom: bottom }, children: items };
-  BottomSheetScrollView = markAsDismissed(6306).BottomSheetScrollView;
+  BottomSheetScrollView = markAsDismissed(6307).BottomSheetScrollView;
   const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1126).t.Y0PTc0) };
   const Text = markAsDismissed(5088).Text;
   intl = markAsDismissed(1126).intl;

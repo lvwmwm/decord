@@ -1,25 +1,25 @@
-// Module ID: 15414
-// Function ID: 15415
+// Module ID: 15437
+// Function ID: 15438
 // Name: QuestBottomSheetProgressCard
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 558, 576, 9170, 9203, 504, 9189, 7410, 5088, 1126, 5980, 15387, 6181, 9184, 15379, 9167, 15373, 8425, 5391, 6156, 15415, 8400, 6184, 2]
+// Dependencies: [19, 17, 1390, 21, 5092, 587, 558, 576, 9171, 9204, 504, 9190, 7411, 5088, 1126, 5980, 15410, 6182, 9185, 15402, 9168, 15396, 8426, 5391, 6157, 15438, 8401, 6185, 2]
 
-// Module 15414 (QuestBottomSheetProgressCard)
+// Module 15437 (QuestBottomSheetProgressCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5980 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import Card_Card from "Card/Card" /* 6181 */;
-import Pressables from "Pressables" /* 6184 */;
-import QuestUtils from "QuestUtils" /* 9167 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9170 */;
-import AssetUtils from "AssetUtils" /* 9184 */;
-import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 15373 */;
-import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 15379 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15387 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 15415 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import Pressables from "Pressables" /* 6185 */;
+import QuestUtils from "QuestUtils" /* 9168 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
+import AssetUtils from "AssetUtils" /* 9185 */;
+import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 15396 */;
+import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 15402 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15410 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 15438 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -238,9 +238,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   let c8;
   let tmp = closure_9();
   let tmp2 = questTaskDetails;
-  let obj = questTaskDetails(9170);
+  let obj = questTaskDetails(9171);
   questTaskDetails = obj.useQuestTaskDetails(quest);
-  let obj2 = questTaskDetails(9170);
+  let obj2 = questTaskDetails(9171);
   let isQuestProgressing = obj2.useIsQuestProgressing(quest);
   const userStatus = quest.userStatus;
   let completedAt;
@@ -256,18 +256,18 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   }
   let tmp9 = null != claimedAt;
   react = tmp9;
-  const tmp2Result = tmp2(9203);
+  const tmp2Result = tmp2(9204);
   const result = tmp2Result.supportedTaskPlatforms(quest);
   c4 = result;
-  const tmp2Result5 = tmp2(9170);
+  const tmp2Result5 = tmp2(9171);
   questFormattedDate = tmp2Result5.useQuestFormattedDate(quest.config.rewardsConfig.rewardsExpireAt);
   gameTitle = quest.config.messages.gameTitle;
   const items = [gameTitle];
   const tmp2Result6 = tmp2(504);
   const stateFromStores = tmp2Result6.useStateFromStores(items, () => gameTitle.getCurrentUser());
-  const tmp2Result7 = tmp2(9189);
+  const tmp2Result7 = tmp2(9190);
   defaultRewardName = tmp2Result7.getDefaultRewardName(quest.config, stateFromStores);
-  const tmp2Result8 = tmp2(7410);
+  const tmp2Result8 = tmp2(7411);
   const isSponsoredPlayQuestResult = tmp2Result8.isSponsoredPlayQuest(quest);
   c8 = isSponsoredPlayQuestResult;
   const items1 = [questTaskDetails, tmp7, tmp9, gameTitle, defaultRewardName, isQuestProgressing, result, questFormattedDate, isSponsoredPlayQuestResult];
@@ -332,9 +332,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   }, items1);
   let obj3 = { style: tmp.card, border: "subtle", children: items3 };
   let obj4 = { style: tmp.content, children: items2 };
-  const Card = tmp2(6181).Card;
+  const Card = tmp2(6182).Card;
   let obj5 = { quest, size: "lg", progress: questTaskDetails.percentComplete, loading: !tmp7, hasConfetti: true };
-  const tmp19 = isQuestProgressing(15387);
+  const tmp19 = isQuestProgressing(15410);
   if (!tmp7) {
     tmp7 = isQuestProgressing;
   }
@@ -379,7 +379,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
   if (cResult[0] !== quest) {
     const tmpResult = AssetUtils;
-    const questAsset = tmpResult.getQuestAsset(quest, tmp(9184).QuestAssetType.QUEST_BAR_HERO_VIDEO);
+    const questAsset = tmpResult.getQuestAsset(quest, tmp(9185).QuestAssetType.QUEST_BAR_HERO_VIDEO);
     cResult[0] = quest;
     cResult[1] = questAsset;
     tmp6 = questAsset;
@@ -388,7 +388,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   }
   if (cResult[2] !== quest) {
     const tmpResult6 = AssetUtils;
-    const questAsset1 = tmpResult6.getQuestAsset(quest, tmp(9184).QuestAssetType.VIDEO_PLAYER_THUMBNAIL, undefined, true);
+    const questAsset1 = tmpResult6.getQuestAsset(quest, tmp(9185).QuestAssetType.VIDEO_PLAYER_THUMBNAIL, undefined, true);
     cResult[2] = quest;
     cResult[3] = questAsset1;
     tmp8 = questAsset1;
@@ -397,7 +397,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   }
   if (cResult[4] !== quest) {
     const tmpResult7 = AssetUtils;
-    const questAsset2 = tmpResult7.getQuestAsset(quest, tmp(9184).QuestAssetType.QUEST_BAR_HERO_IMAGE);
+    const questAsset2 = tmpResult7.getQuestAsset(quest, tmp(9185).QuestAssetType.QUEST_BAR_HERO_IMAGE);
     cResult[4] = quest;
     cResult[5] = questAsset2;
     tmp12 = questAsset2;
@@ -482,7 +482,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
                     if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
                       const tmp52 = metroImportDefault(QuestDockBlurredContentBackgroundDefault, { blurTheme: "light" });
                       const obj3 = { color: nativeDefault.colors.WHITE };
-                      const PlayIcon = tmp(8400).PlayIcon;
+                      const PlayIcon = tmp(8401).PlayIcon;
                       const tmp53 = metroImportDefault(PlayIcon, obj3);
                       cResult[27] = tmp52;
                       cResult[28] = tmp53;
@@ -604,7 +604,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
         const obj14 = { style: tmp4.videoPreview, poster: url1, posterResizeMode: "cover", source: obj15, resizeMode: "cover", muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false };
         url1 = undefined;
         const obj13 = { style: tmp4.videoPreviewWrapper, children: items4 };
-        const VideoComponent = tmp(8425).VideoComponent;
+        const VideoComponent = tmp(8426).VideoComponent;
         const tmp33 = metroImportAll;
         const tmp34 = React3;
         if (tmp8 != null) {
@@ -658,7 +658,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   quest = quest.quest;
   const sourceQuestContent = quest.sourceQuestContent;
   const tmp = closure_9();
-  let obj = quest(9170);
+  let obj = quest(9171);
   const items = [quest];
   const questTaskDetails = obj.useQuestTaskDetails(quest);
   const memo = react.useMemo(() => {
@@ -676,11 +676,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
     return obj.getQuestAsset(quest, AssetUtils.QuestAssetType.QUEST_BAR_HERO_IMAGE);
   }, items2);
   let isHeroVideoSupportedResult = null != memo;
-  const obj2 = quest(15379);
+  const obj2 = quest(15402);
   const obj3 = { questId: quest.id, sourceQuestContent };
   const watchTaskPressHandler = obj2.useWatchTaskPressHandler(obj3);
   if (isHeroVideoSupportedResult) {
-    const tmp2Result = quest(9167);
+    const tmp2Result = quest(9168);
     isHeroVideoSupportedResult = tmp2Result.isHeroVideoSupported(memo.mimetype);
   }
   const userStatus = quest.userStatus;
@@ -694,23 +694,23 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
     YsCuyF = tmp2(1126).t["74KqrR"];
   }
   let tmp12 = watchTaskPressHandler;
-  const tmp2Result2 = quest(9170);
+  const tmp2Result2 = quest(9171);
   if (tmp2Result2.useIsQuestAccessSuspended()) {
     tmp12 = openQuestAccessSuspendedBottomSheetDefault;
   }
   const obj4 = { onPress: tmp12, accessibilityRole: "button", accessibilityLabel: intl.string(YsCuyF), children: closure_8(Card, obj5) };
-  const PressableOpacity = tmp2(6184).PressableOpacity;
+  const PressableOpacity = tmp2(6185).PressableOpacity;
   intl = tmp2(1126).intl;
   obj5 = { style: items3, border: "subtle", children: items5 };
   items3 = [, ];
   ({ card: arr4[0], cardWatchTask: arr4[1] } = tmp);
   let tmp15Result = isHeroVideoSupportedResult;
-  Card = tmp2(6181).Card;
+  Card = tmp2(6182).Card;
   if (isHeroVideoSupportedResult) {
     const obj7 = { style: tmp.videoPreview, poster: url, posterResizeMode: "cover", source: obj8, resizeMode: "cover", muted: true, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false };
     url = undefined;
     const obj6 = { style: tmp.videoPreviewWrapper, children: items4 };
-    const VideoComponent = tmp2(8425).VideoComponent;
+    const VideoComponent = tmp2(8426).VideoComponent;
     const tmp17 = closure_4;
     if (memo1 != null) {
       url = memo1.url;
@@ -736,7 +736,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomS
   const obj14 = { style: tmp.playVideoIconWrapper, children: items7 };
   items7 = [closure_7(QuestDockBlurredContentBackgroundDefault, { blurTheme: "light" }), ];
   const obj15 = { color: nativeDefault.colors.WHITE };
-  const PlayIcon = tmp2(8400).PlayIcon;
+  const PlayIcon = tmp2(8401).PlayIcon;
   items7[1] = closure_7(PlayIcon, obj15);
   items5[2] = closure_8(closure_4, obj14);
   const obj16 = { style: items8, children: closure_7(QuestProgressIndicatorDefault, obj17) };

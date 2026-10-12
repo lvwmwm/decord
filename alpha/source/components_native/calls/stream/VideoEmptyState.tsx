@@ -1,7 +1,7 @@
 // Module ID: 10887
 // Function ID: 10888
 // Name: VideoEmptyState
-// Dependencies: [109, 19, 17, 2065, 1085, 21, 5092, 587, 558, 576, 10888, 1200, 1126, 5289, 504, 7443, 5900, 5396, 5088, 5379, 2]
+// Dependencies: [109, 19, 17, 2065, 1085, 21, 5092, 587, 558, 576, 10888, 1200, 1126, 5289, 504, 7444, 5900, 5396, 5088, 5379, 2]
 
 // Module 10887 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import StreamActionCreators from "StreamActionCreators" /* 7443 */;
+import StreamActionCreators from "StreamActionCreators" /* 7444 */;
 import StreamEnded from "StreamEnded" /* 10888 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 17640
-// Function ID: 17641
+// Module ID: 17697
+// Function ID: 17698
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 4775, 17641, 1085, 2062, 21, 5092, 587, 558, 576, 504, 4769, 6939, 6839, 5088, 1126, 2128, 5379, 2]
+// Dependencies: [19, 17, 4775, 17698, 1085, 2062, 21, 5092, 587, 558, 576, 504, 4769, 6940, 6840, 5088, 1126, 2128, 5379, 2]
 
-// Module 17640 (GooglePlayPriceChangeActionSheet)
+// Module 17697 (GooglePlayPriceChangeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,7 +11,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17641 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 17698 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -229,11 +229,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPr
   const intervalType = tmpResult9.getInterval(str).intervalType;
   const tmpResult10 = markAsDismissed(4769);
   const intervalStringAsNoun = tmpResult10.getIntervalStringAsNoun(intervalType);
-  const tmpResult11 = markAsDismissed(6939);
+  const tmpResult11 = markAsDismissed(6940);
   const formatPriceResult = tmpResult11.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmpResult12 = markAsDismissed(6939);
+  const tmpResult12 = markAsDismissed(6940);
   const formatPriceResult1 = tmpResult12.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  BottomSheet = tmp(6839).BottomSheet;
+  BottomSheet = tmp(6840).BottomSheet;
   ({ container, textContainer } = tmp4);
   const obj7 = { variant: "heading-xl/bold", style: tmp4.header, children: intl.format(markAsDismissed(1126).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
   const Text = tmp(5088).Text;
@@ -311,14 +311,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPr
   const intervalType = tmp2Result5.getInterval(str).intervalType;
   const tmp2Result6 = markAsDismissed(4769);
   const intervalStringAsNoun = tmp2Result6.getIntervalStringAsNoun(intervalType);
-  const tmp2Result7 = markAsDismissed(6939);
+  const tmp2Result7 = markAsDismissed(6940);
   const formatPriceResult = tmp2Result7.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmp2Result8 = markAsDismissed(6939);
+  const tmp2Result8 = markAsDismissed(6940);
   const obj3 = { children: closure_9(View, obj4) };
   obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.textContainer, children: items2 };
   const formatPriceResult1 = tmp2Result8.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  BottomSheet = tmp2(6839).BottomSheet;
+  BottomSheet = tmp2(6840).BottomSheet;
   const obj6 = { variant: "heading-xl/bold", style: tmp.header, children: intl.format(markAsDismissed(1126).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
   const Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;

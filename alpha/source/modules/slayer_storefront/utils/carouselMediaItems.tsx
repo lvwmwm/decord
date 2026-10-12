@@ -1,10 +1,10 @@
-// Module ID: 10159
-// Function ID: 10160
+// Module ID: 10160
+// Function ID: 10161
 // Name: carouselMediaItems
-// Dependencies: [5644, 6930, 2]
+// Dependencies: [5644, 6931, 2]
 // Exports: convertCarouselItemsToMediaItems, getThumbnailSrc
 
-// Module 10159 (carouselMediaItems)
+// Module 10160 (carouselMediaItems)
 import StoreUtils from "StoreUtils" /* 5644 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
             assetURL1 = undefined;
             if (null != tmp4.backgroundAssetId) {
               let tmp26Result2 = tmp26(5644);
-              assetURL1 = tmp26Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp26(6930).LARGE_ASSET_FORMAT);
+              assetURL1 = tmp26Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp26(6931).LARGE_ASSET_FORMAT);
             }
             let arr2 = push(obj3);
           } else {
@@ -82,7 +82,7 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
             assetURL3 = undefined;
             if (null != tmp4.backgroundAssetId) {
               let tmp8Result2 = tmp8(5644);
-              assetURL3 = tmp8Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp8(6930).LARGE_ASSET_FORMAT);
+              assetURL3 = tmp8Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp8(6931).LARGE_ASSET_FORMAT);
             }
             let arr3 = push(obj);
           }

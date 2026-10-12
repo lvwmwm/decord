@@ -1,10 +1,10 @@
-// Module ID: 13149
-// Function ID: 13150
+// Module ID: 13154
+// Function ID: 13155
 // Name: ChannelAnimationConstants
 // Dependencies: [5378, 2]
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 13149 (ChannelAnimationConstants)
+// Module 13154 (ChannelAnimationConstants)
 import spring from "spring" /* 5378 */;
 import size from "module_2" /* 2 */;
 

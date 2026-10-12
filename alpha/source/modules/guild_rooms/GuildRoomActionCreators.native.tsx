@@ -1,11 +1,11 @@
-// Module ID: 7446
-// Function ID: 7447
+// Module ID: 7447
+// Function ID: 7448
 // Name: GuildRoomActionCreators
-// Dependencies: [5, 7447, 2]
+// Dependencies: [5, 7448, 2]
 // Exports: guildRoomConnect, guildRoomUpdate
 
-// Module 7446 (GuildRoomActionCreators)
-import guildRoomConnect2 from "guildRoomConnect" /* 7447 */;
+// Module 7447 (GuildRoomActionCreators)
+import guildRoomConnect2 from "guildRoomConnect" /* 7448 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _guildRoomConnect() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c7;
@@ -65,7 +65,7 @@ let obj = function _guildRoomConnect() {
             c7 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         let closure_6 = tmp13;
@@ -96,7 +96,7 @@ obj = function _guildRoomUpdate() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -133,7 +133,7 @@ obj = function _guildRoomUpdate() {
             c6 = 0;
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         let closure_5 = tmp10;

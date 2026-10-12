@@ -1,9 +1,9 @@
-// Module ID: 15342
-// Function ID: 15343
+// Module ID: 15365
+// Function ID: 15366
 // Name: QuestCard
-// Dependencies: [5, 32, 19, 17, 1390, 7390, 5972, 1096, 21, 587, 5092, 4970, 4967, 4830, 5975, 7397, 12977, 9170, 1497, 9184, 15343, 8624, 5729, 5734, 7415, 504, 9189, 7412, 7396, 7386, 9192, 5031, 10506, 4818, 15373, 9201, 9173, 9174, 9177, 5979, 9203, 5056, 15375, 2000, 12978, 7273, 9161, 1126, 9167, 12965, 15380, 9171, 9162, 9163, 5386, 10514, 8878, 1382, 9039, 5088, 15381, 6181, 15418, 6156, 5391, 1105, 15406, 6163, 15387, 12973, 15419, 5377, 5379, 15422, 7573, 12621, 15407, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 7391, 5972, 1096, 21, 587, 5092, 4970, 4967, 4830, 5975, 7398, 12979, 9171, 1497, 9185, 15366, 8625, 5729, 5734, 7416, 504, 9190, 7413, 7397, 7387, 9193, 5031, 10507, 4818, 15396, 9202, 9174, 9175, 9178, 5979, 9204, 5056, 15398, 2000, 12980, 7274, 9162, 1126, 9168, 12967, 15403, 9172, 9163, 9164, 5386, 10515, 8879, 1382, 9040, 5088, 15404, 6182, 15441, 6157, 5391, 1105, 15429, 6164, 15410, 12975, 15442, 5377, 5379, 15445, 7574, 12623, 15430, 2]
 
-// Module 15342 (QuestCard)
+// Module 15365 (QuestCard)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl15 from "intl" /* 1126 */;
@@ -16,23 +16,23 @@ import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
 import MetricEvents from "MetricEvents" /* 5734 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
-import OrbsIcon from "OrbsIcon" /* 9039 */;
-import QuestUtils from "QuestUtils" /* 9167 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9173 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9174 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9177 */;
-import AssetUtils from "AssetUtils" /* 9184 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9203 */;
-import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 15373 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 15380 */;
-import VideoQuestModal from "VideoQuestModal" /* 15381 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
+import OrbsIcon from "OrbsIcon" /* 9040 */;
+import QuestUtils from "QuestUtils" /* 9168 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9174 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9175 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9178 */;
+import AssetUtils from "AssetUtils" /* 9185 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9204 */;
+import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 15396 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 15403 */;
+import VideoQuestModal from "VideoQuestModal" /* 15404 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
-import QuestStore_mod from "QuestStore" /* 7390 */;
+import QuestStore_mod from "QuestStore" /* 7391 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
@@ -196,7 +196,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
   function showQuestBottomSheet() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
-    obj.openLazy(asyncRequire(15375, dependencyMap.paths), "QuestBottomSheet", obj2);
+    obj.openLazy(asyncRequire(15398, dependencyMap.paths), "QuestBottomSheet", obj2);
   }
   let tmp = require;
   const tmp2 = QUEST_HOME_MOBILE;
@@ -518,7 +518,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                       } else {
                         const obj3 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
                         const obj = ActionSheetActionCreatorsDefault;
-                        obj.openLazy(asyncRequire(15375, dependencyMap.paths), "QuestBottomSheet", obj3);
+                        obj.openLazy(asyncRequire(15398, dependencyMap.paths), "QuestBottomSheet", obj3);
                       }
                     }
           };
@@ -564,7 +564,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                           trackClick(AnalyticsTypes.QuestContentCTA.VIEW_REQUIREMENTS);
                           const obj = ActionSheetActionCreatorsDefault;
                           const obj2 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
-                          obj.openLazy(asyncRequire(15375, dependencyMap.paths), "QuestBottomSheet", obj2);
+                          obj.openLazy(asyncRequire(15398, dependencyMap.paths), "QuestBottomSheet", obj2);
                         }
             };
             intl = tmp(tmp2[47]).intl;
@@ -602,7 +602,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -651,7 +651,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                   quest(QUEST_HOME_MOBILE[50])(obj);
                 }
                 questContent = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
               const tmp6 = isMobileActivityQuest;
               if (tmp6) {
@@ -847,7 +847,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -877,7 +877,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp8) {
         c0 = 3;
@@ -997,7 +997,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
       onPress: function showQuestEnrollmentBlockedBottomSheet() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { questId: quest.id, questEnrollmentBlockedUntil, sourceQuestContent };
-          obj.openLazy(asyncRequire(15422, dependencyMap.paths), "QuestEnrollmentBlockedBottomSheet", obj2);
+          obj.openLazy(asyncRequire(15445, dependencyMap.paths), "QuestEnrollmentBlockedBottomSheet", obj2);
         },
       variant: "tertiary",
       text: intl12.string(tmp(tmp2[47]).t.vY9GgG)

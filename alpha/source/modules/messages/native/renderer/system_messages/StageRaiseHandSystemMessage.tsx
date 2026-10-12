@@ -1,15 +1,15 @@
-// Module ID: 8058
-// Function ID: 8059
+// Module ID: 8059
+// Function ID: 8060
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [5896, 2065, 4750, 1085, 1126, 2128, 7978, 11, 5416, 7980, 7982, 2]
+// Dependencies: [5896, 2065, 4750, 1085, 1126, 2128, 7979, 11, 5416, 7981, 7983, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8058 (StageRaiseHandSystemMessage)
+// Module 8059 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl5 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7978 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7980 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
 import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5896 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
@@ -84,6 +84,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(7982)(message));
+  const merged = Object.assign(tmp6(7983)(message));
   return obj3;
 };

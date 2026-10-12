@@ -1,9 +1,9 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14189
+// Function ID: 14190
 // Name: GuildActionSheetUtils
 // Dependencies: [4750, 1085, 558, 576, 504, 2]
 
-// Module 14166 (GuildActionSheetUtils)
+// Module 14189 (GuildActionSheetUtils)
 import Constants from "Constants" /* 1085 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

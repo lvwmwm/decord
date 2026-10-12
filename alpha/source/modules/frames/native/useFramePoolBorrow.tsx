@@ -1,11 +1,11 @@
-// Module ID: 17091
-// Function ID: 17092
+// Module ID: 17131
+// Function ID: 17132
 // Name: useFramePoolBorrow
-// Dependencies: [32, 19, 17092, 2]
+// Dependencies: [32, 19, 17132, 2]
 // Exports: default
 
-// Module 17091 (useFramePoolBorrow)
-import FramePoolManagerDefault from "FramePoolManager" /* 17092 */;
+// Module 17131 (useFramePoolBorrow)
+import FramePoolManagerDefault from "FramePoolManager" /* 17132 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

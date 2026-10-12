@@ -1,7 +1,7 @@
 // Module ID: 10673
 // Function ID: 10674
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 5016, 5017, 8144, 5021, 8142, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5016, 5017, 8145, 5021, 8143, 558, 576, 504, 2]
 // Exports: getLegacyExperiments
 
 // Module 10673 (useLegacyExperiments)

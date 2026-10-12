@@ -1,9 +1,9 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16472
+// Function ID: 16473
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1085, 5085, 558, 576, 11962, 1112, 7178, 4809, 1126, 16450, 2]
+// Dependencies: [5, 32, 19, 1085, 5085, 558, 576, 11964, 1112, 7179, 4809, 1126, 16473, 2]
 
-// Module 16449 (usePrivateChannelWave)
+// Module 16472 (usePrivateChannelWave)
 import MessageConstants from "MessageConstants" /* 5085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -33,7 +33,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
     if (cResult[1] === first) {
       tmp6 = cResult[2];
     }
-    const tmpResult = tmp(16450);
+    const tmpResult = tmp(16473);
     const privateChannelWaveEligible = tmpResult.usePrivateChannelWaveEligible(id, arg1);
     if (cResult[3] === tmp6) {
       let tmp9;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
           tmp41(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp41) {
         if (0 === c3) {
           c5 = 3;
@@ -161,7 +161,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
           closure_129_2(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp41) {
         closure_2 = tmp41;
         if (0 === c3) {

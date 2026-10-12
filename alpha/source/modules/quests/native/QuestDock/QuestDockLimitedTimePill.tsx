@@ -1,9 +1,9 @@
-// Module ID: 15469
-// Function ID: 15470
+// Module ID: 15492
+// Function ID: 15493
 // Name: QuestDockLimitedTimePill
 // Dependencies: [19, 17, 21, 587, 5092, 558, 576, 10763, 1126, 5088, 2]
 
-// Module 15469 (QuestDockLimitedTimePill)
+// Module 15492 (QuestDockLimitedTimePill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,9 +1,9 @@
-// Module ID: 14361
-// Function ID: 14362
+// Module ID: 14384
+// Function ID: 14385
 // Name: InputWatcher
-// Dependencies: [32, 5, 5898, 4, 2060, 5137, 1383, 14301, 4731, 6139, 584, 2]
+// Dependencies: [32, 5, 5898, 4, 2060, 5137, 1383, 14324, 4731, 6140, 584, 2]
 
-// Module 14361 (InputWatcher)
+// Module 14384 (InputWatcher)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Constants from "Constants" /* 5898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -36,7 +36,7 @@ class InputWatcher {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let closure_2;
@@ -136,7 +136,7 @@ class InputWatcher {
             _Promise.dispatch(obj);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp42) {
           closure_2 = tmp42;
           if (0 === osVolume) {
@@ -170,7 +170,7 @@ class InputWatcher {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -208,7 +208,7 @@ class InputWatcher {
             const obj2 = c1(inputDetected[10]);
             obj2.dispatch(obj6);
             inputDetected = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp11) {
             inputDetected = 3;
             throw tmp11;

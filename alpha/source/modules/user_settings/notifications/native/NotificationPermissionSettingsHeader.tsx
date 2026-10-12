@@ -1,15 +1,15 @@
-// Module ID: 15760
-// Function ID: 15761
+// Module ID: 15783
+// Function ID: 15784
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1085, 12122, 21, 5092, 587, 558, 576, 12123, 1265, 10345, 5088, 1126, 5379, 6181, 2]
+// Dependencies: [19, 17, 1085, 12124, 21, 5092, 587, 558, 576, 12125, 1265, 10346, 5088, 1126, 5379, 6182, 2]
 
-// Module 15760 (NotificationPermissionSettingsHeader)
+// Module 15783 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12122 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12124 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -54,7 +54,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   let obj = canSeePushNotificationNudge(576);
   const cResult = obj.c(20);
   const tmp4 = closure_13();
-  let obj2 = canSeePushNotificationNudge(12123);
+  let obj2 = canSeePushNotificationNudge(12125);
   canSeePushNotificationNudge = obj2.useCanSeePushNotificationNudge();
   if (cResult[0] !== canSeePushNotificationNudge) {
     const fn = function o() {
@@ -126,7 +126,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
         }
       }
       let obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-      const BellSlashIcon = tmp(10345).BellSlashIcon;
+      const BellSlashIcon = tmp(10346).BellSlashIcon;
       const tmp12 = closure_11(BellSlashIcon, obj3);
       cResult[4] = tmp12;
       tmp10 = tmp12;
@@ -312,7 +312,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     const obj10 = { border: "none", shadow: "none", children: closure_12(View, obj11) };
     obj11 = { style: cardContent, children: items1 };
     items1 = [tmp13, tmp16, tmp20, tmp24];
-    const Card = tmp(6181).Card;
+    const Card = tmp(6182).Card;
     cResult[13] = tmp4.cardContent;
     cResult[14] = tmp20;
     cResult[15] = tmp13;
@@ -344,7 +344,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   let obj4;
   let obj6;
   let tmp = closure_13();
-  let obj = canSeePushNotificationNudge(12123);
+  let obj = canSeePushNotificationNudge(12125);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = react.useEffect(() => {
@@ -361,9 +361,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     obj3 = { border: "none", shadow: "none", children: closure_12(View, obj4) };
     obj4 = { style: tmp.cardContent, children: items1 };
     const obj5 = { style: tmp.iconCircle, children: closure_11(BellSlashIcon, obj6) };
-    Card = tmp2(6181).Card;
+    Card = tmp2(6182).Card;
     obj6 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    BellSlashIcon = tmp2(10345).BellSlashIcon;
+    BellSlashIcon = tmp2(10346).BellSlashIcon;
     items1 = [closure_11(View, obj5), , , ];
     const obj7 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(canSeePushNotificationNudge(1126).t.MUwOvc) };
     const Text = tmp2(5088).Text;

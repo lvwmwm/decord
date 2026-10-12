@@ -1,17 +1,17 @@
-// Module ID: 16386
-// Function ID: 16387
+// Module ID: 16409
+// Function ID: 16410
 // Name: PrivacyHint
-// Dependencies: [19, 17, 5931, 16348, 1085, 21, 5092, 558, 576, 1126, 5088, 4832, 6177, 8579, 16387, 2]
+// Dependencies: [19, 17, 5931, 16371, 1085, 21, 5092, 558, 576, 1126, 5088, 4832, 6178, 8580, 16410, 2]
 
-// Module 16386 (PrivacyHint)
+// Module 16409 (PrivacyHint)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import react_native from "react-native" /* 4832 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import PromoEmailConsentStore from "PromoEmailConsentStore" /* 5931 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16348 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16387 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16371 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16410 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -165,10 +165,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privac
   }
   if (undefined !== asCheckbox && asCheckbox) {
     const obj6 = { checked: consent };
-    tmp13Result = tmp13(tmp(6177).FormCheckbox, obj6);
+    tmp13Result = tmp13(tmp(6178).FormCheckbox, obj6);
   } else {
     const obj8 = { selected: consent };
-    tmp13Result = tmp13(tmp(8579).FormRow.Radio, obj8);
+    tmp13Result = tmp13(tmp(8580).FormRow.Radio, obj8);
   }
   cResult[4] = undefined !== asCheckbox && asCheckbox;
   cResult[5] = consent;
@@ -197,11 +197,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privac
   const tmp6 = React3;
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    tmp7Result = tmp7(tmp2(6177).FormCheckbox, obj3);
+    tmp7Result = tmp7(tmp2(6178).FormCheckbox, obj3);
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8579).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8580).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];

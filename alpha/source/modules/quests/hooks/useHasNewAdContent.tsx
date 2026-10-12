@@ -1,15 +1,15 @@
-// Module ID: 9159
-// Function ID: 9160
+// Module ID: 9160
+// Function ID: 9161
 // Name: useHasNewAdContent
-// Dependencies: [32, 9160, 7390, 5972, 1102, 558, 576, 9161, 7396, 504, 5979, 7099, 2049, 2]
+// Dependencies: [32, 9161, 7391, 5972, 1102, 558, 576, 9162, 7397, 504, 5979, 7100, 2049, 2]
 
-// Module 9159 (useHasNewAdContent)
+// Module 9160 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1102 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 9160 */;
-import QuestStore from "QuestStore" /* 7390 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 9161 */;
+import QuestStore from "QuestStore" /* 7391 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

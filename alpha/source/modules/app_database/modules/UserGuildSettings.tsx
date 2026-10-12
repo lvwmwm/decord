@@ -1,9 +1,9 @@
-// Module ID: 7212
-// Function ID: 7213
+// Module ID: 7213
+// Function ID: 7214
 // Name: UserGuildSettings
 // Dependencies: [5, 5966, 3, 2091, 12, 2]
 
-// Module 7212 (UserGuildSettings)
+// Module 7213 (UserGuildSettings)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
@@ -45,7 +45,7 @@ class UserGuildSettings {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

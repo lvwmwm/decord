@@ -1,14 +1,14 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12132
+// Function ID: 12133
 // Name: NotificationUtils
-// Dependencies: [5, 12121, 1085, 12124, 1265, 11031, 7505, 10980, 2]
+// Dependencies: [5, 12123, 1085, 12126, 1265, 11031, 7506, 10980, 2]
 
-// Module 12130 (NotificationUtils)
+// Module 12132 (NotificationUtils)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import SoundUtils from "SoundUtils" /* 10980 */;
 import PushNotificationDefault from "PushNotification" /* 11031 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12121 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12123 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, c0;
 
 let tmp;
-const react_nativeDefault = tmp(7505);
+const react_nativeDefault = tmp(7506);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let obj = {
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ let obj = {
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp3) {
           c0 = 3;

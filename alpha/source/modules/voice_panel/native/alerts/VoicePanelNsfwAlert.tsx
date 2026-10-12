@@ -1,11 +1,11 @@
-// Module ID: 17867
-// Function ID: 17868
+// Module ID: 17924
+// Function ID: 17925
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 2083, 2087, 21, 558, 576, 5305, 6097, 1126, 5305, 2]
+// Dependencies: [19, 2083, 2087, 21, 558, 576, 5305, 6098, 1126, 5305, 2]
 
-// Module 17867 (VoicePanelNsfwAlert)
+// Module 17924 (VoicePanelNsfwAlert)
 import GuildRecord from "GuildRecord" /* 2083 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;

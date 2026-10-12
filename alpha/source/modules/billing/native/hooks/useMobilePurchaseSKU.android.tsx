@@ -1,15 +1,15 @@
-// Module ID: 10168
-// Function ID: 10169
+// Module ID: 10169
+// Function ID: 10170
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 7143, 1390, 1085, 7132, 3, 10059, 6169, 1265, 584, 7148, 4784, 2031, 10169, 1279, 2]
+// Dependencies: [5, 19, 7144, 1390, 1085, 7133, 3, 10060, 6170, 1265, 584, 7149, 4784, 2031, 10170, 1279, 2]
 // Exports: default
 
-// Module 10168 (useMobilePurchaseSKU)
+// Module 10169 (useMobilePurchaseSKU)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 7132 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7143 */;
+import Constants2 from "Constants" /* 7133 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -122,7 +122,7 @@ export default function useMobilePurchaseSKU(skuId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -163,7 +163,7 @@ export default function useMobilePurchaseSKU(skuId) {
               }
               closure_1_8();
               v3 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === c5) {
             c4 = 0;
@@ -243,7 +243,7 @@ export default function useMobilePurchaseSKU(skuId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -389,7 +389,7 @@ export default function useMobilePurchaseSKU(skuId) {
           }
           c4 = 0;
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
         const obj15 = { productId: closure_130_1, skuId: closure_130_0, isOneTimePurchase: true, analyticsLoadId: closure_130_3, analyticsLocations: closure_130_2, analyticsData: closure_130_4, isGift: closure_130_18, giftInfoOptions: options, onPurchaseError: closure_130_21 };
         options = undefined;

@@ -1,11 +1,11 @@
-// Module ID: 16133
-// Function ID: 16134
+// Module ID: 16156
+// Function ID: 16157
 // Name: DesignSystemsContextMenuSetting
-// Dependencies: [7992, 1085, 10663, 16134, 2]
+// Dependencies: [7993, 1085, 10663, 16157, 2]
 
-// Module 16133 (DesignSystemsContextMenuSetting)
+// Module 16156 (DesignSystemsContextMenuSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

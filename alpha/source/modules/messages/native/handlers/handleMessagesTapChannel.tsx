@@ -1,13 +1,13 @@
 // Module ID: 10696
 // Function ID: 10697
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 2069, 2083, 2065, 2087, 4750, 1085, 7051, 6919, 8494, 8127, 10697, 6949, 5422, 7481, 5889, 2]
+// Dependencies: [5, 2069, 2083, 2065, 2087, 4750, 1085, 7052, 6920, 8495, 8128, 10697, 6950, 5422, 7482, 5889, 2]
 // Exports: handleMessagesTapChannel
 
 // Module 10696 (handleMessagesTapChannel)
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7051 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -40,7 +40,7 @@ let obj = function _maybeStartLurking() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c7;
@@ -119,7 +119,7 @@ obj = function _handleMessagesTapChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -188,7 +188,7 @@ obj = function _handleMessagesTapChannel() {
                     closure_130_1(closure_130_3[11])(obj8);
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 }
               }
               if (null != messageId) {
@@ -210,7 +210,7 @@ obj = function _handleMessagesTapChannel() {
                         if (channel.type === closure_130_10.GUILD_STAGE_VOICE) {
                           if (!closure_130_9.can(closure_130_11.CONNECT, channel)) {
                             c4 = 3;
-                            return { value: "IconComponent", done: "+51" };
+                            return { value: "IconComponent", done: null };
                           }
                         }
                         if (v4 != null) {
@@ -277,7 +277,7 @@ obj = function _handleMessagesTapChannel() {
               return obj17;
             } else if (value) {
               c4 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else if (3 === v4) {
             if (arg0 === 1) {
@@ -289,7 +289,7 @@ obj = function _handleMessagesTapChannel() {
               return obj18;
             } else if (value) {
               c4 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -300,7 +300,7 @@ obj = function _handleMessagesTapChannel() {
             return obj19;
           } else if (value) {
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } else {
             if (c2 != null) {
               tmp6();

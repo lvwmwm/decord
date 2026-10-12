@@ -1,16 +1,16 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8082
+// Function ID: 8083
 // Name: ReferralSystemMessage
-// Dependencies: [7174, 502, 5092, 587, 8082, 7982, 7890, 8080, 8095, 2]
+// Dependencies: [7175, 502, 5092, 587, 8083, 7983, 7891, 8081, 8096, 2]
 // Exports: createReferralSystemMessage
 
-// Module 8081 (ReferralSystemMessage)
+// Module 8082 (ReferralSystemMessage)
 import nativeDefault from "native" /* 587 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7982 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8080 */;
-import ReferralTrialEmbedRedesign from "ReferralTrialEmbedRedesign" /* 8082 */;
-import ReferralTrialEmbed from "ReferralTrialEmbed" /* 8095 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7174 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7983 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8081 */;
+import ReferralTrialEmbedRedesign from "ReferralTrialEmbedRedesign" /* 8083 */;
+import ReferralTrialEmbed from "ReferralTrialEmbed" /* 8096 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7175 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ export const createReferralSystemMessage = function createReferralSystemMessage(
         const tmp17 = closure_5(theme);
         const merged = Object.assign(createCommonMessageDefault(message));
         ({ iconTintColor: obj4.iconTintColor, iconDividerColor: obj4.iconDividerColor } = tmp17);
-        tmp8Result = tmp8(7890);
+        tmp8Result = tmp8(7891);
         return obj2;
       }
     } else {
@@ -59,7 +59,7 @@ export const createReferralSystemMessage = function createReferralSystemMessage(
         const tmp4 = closure_5(theme);
         const merged1 = Object.assign(createCommonMessageDefault(message));
         ({ iconTintColor: obj.iconTintColor, iconDividerColor: obj.iconDividerColor } = tmp4);
-        tmp23Result = tmp23(7890);
+        tmp23Result = tmp23(7891);
         return obj;
       }
     }

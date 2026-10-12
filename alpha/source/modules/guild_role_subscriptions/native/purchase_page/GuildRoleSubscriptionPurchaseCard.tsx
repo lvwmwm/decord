@@ -1,9 +1,9 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 17013
+// Function ID: 17014
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 6662, 1631, 15497, 16984, 5088, 1200, 16990, 1126, 15507, 6306, 6839, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 6663, 1631, 15520, 17008, 5088, 1200, 17014, 1126, 15530, 6307, 6840, 2]
 
-// Module 16989 (GuildRoleSubscriptionPurchaseCard)
+// Module 17013 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,12 +11,12 @@ import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import BottomSheetModal from "BottomSheetModal" /* 6306 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6662 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15507 */;
-import Elements from "Elements" /* 16984 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15530 */;
+import Elements from "Elements" /* 17008 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -33,7 +33,7 @@ let obj3;
 let obj4;
 let size;
 let tmp6;
-const SubscribeButtonDefault = tmp6(16990);
+const SubscribeButtonDefault = tmp6(17014);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -242,7 +242,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                       const obj15 = { scrollable: true, startExpanded: true, children: metroImportDefault(View, obj16) };
                       obj16 = { style: container, children: items1 };
                       items1 = [tmp35, tmp39, tmp58];
-                      BottomSheet = tmp(6839).BottomSheet;
+                      BottomSheet = tmp(6840).BottomSheet;
                       const tmp65 = metroRequire(BottomSheet, obj15);
                       cResult[41] = tmp5.container;
                       cResult[42] = tmp35;

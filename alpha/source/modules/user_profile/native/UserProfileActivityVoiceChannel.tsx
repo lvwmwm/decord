@@ -1,10 +1,10 @@
-// Module ID: 13144
-// Function ID: 13145
+// Module ID: 13149
+// Function ID: 13150
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 2083, 4750, 1096, 21, 5092, 1382, 6851, 8314, 5362, 13145, 5421, 504, 8224, 8228, 1126, 6158, 6184, 4809, 6905, 5088, 8650, 7481, 5056, 13146, 2000, 8303, 13147, 1200, 2]
+// Dependencies: [17, 2083, 4750, 1096, 21, 5092, 1382, 6852, 8315, 5362, 13150, 5421, 504, 8225, 8229, 1126, 6159, 6185, 4809, 6906, 5088, 8651, 7482, 5056, 13151, 2000, 8304, 13152, 1200, 2]
 // Exports: default
 
-// Module 13144 (UserProfileActivityVoiceChannel)
+// Module 13149 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1096 */;
 import native from "native" /* 1200 */;
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -161,7 +161,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(13146, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(13151, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };

@@ -1,12 +1,12 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9114
+// Function ID: 9115
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1085, 21, 558, 576, 8878, 7033, 7037, 1998, 1126, 5379, 2]
+// Dependencies: [5, 19, 1085, 21, 558, 576, 8879, 7034, 7038, 1998, 1126, 5379, 2]
 
-// Module 9113 (GameProfileGameClaimCta)
+// Module 9114 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7033 */;
+import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 7034 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
             return obj;
           } else {
             c0 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c0 = 3;
@@ -134,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -164,7 +164,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileG
           return obj;
         } else {
           trackAction = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         trackAction = 3;

@@ -1,10 +1,10 @@
-// Module ID: 7196
-// Function ID: 7197
+// Module ID: 7197
+// Function ID: 7198
 // Name: TTIAnalyticsUtils
-// Dependencies: [5, 7197, 5016, 1205, 502, 2065, 1370, 1085, 7359, 2072, 21, 5068, 5233, 1279, 1381, 4977, 4976, 10, 1255, 1265, 7360, 4983, 7362, 9, 1102, 1376, 7363, 5300, 5398, 2000, 2]
+// Dependencies: [5, 7198, 5016, 1205, 502, 2065, 1370, 1085, 7360, 2072, 21, 5068, 5233, 1279, 1381, 4977, 4976, 10, 1255, 1265, 7361, 4983, 7363, 9, 1102, 1376, 7364, 5300, 5398, 2000, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 7196 (TTIAnalyticsUtils)
+// Module 7197 (TTIAnalyticsUtils)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
@@ -15,10 +15,10 @@ import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import react_nativeDefault from "react-native" /* 4983 */;
 import DeviceUtils from "DeviceUtils" /* 5068 */;
 import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5233 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 7359 */;
-import AppStartInfo2 from "AppStartInfo" /* 7360 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 7360 */;
+import AppStartInfo2 from "AppStartInfo" /* 7361 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 7197 */;
+import CacheStore from "CacheStore" /* 7198 */;
 import ExperimentStore from "ExperimentStore" /* 5016 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -198,7 +198,7 @@ let obj = function _trackAppUIViewedAsync() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -259,7 +259,7 @@ let obj = function _trackAppUIViewedAsync() {
             }, 1000);
             scheduleTrackAppUiViewed2();
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c6 = 3;
@@ -288,7 +288,7 @@ obj = function _logLegacyAppUiViewed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -348,7 +348,7 @@ obj = function _logLegacyAppUiViewed() {
           const merged2 = Object.assign(closure_0);
           track(APP_UI_VIEWED, obj8, { logEventProperties: true });
           c8 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c8 = 3;
@@ -402,7 +402,7 @@ obj = function _trackAppUIViewed() {
         const obj7 = { value, done: true };
         return obj7;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -540,7 +540,7 @@ obj = function _trackAppUIViewed() {
             logToDevice(obj);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp56) {
         c6 = 3;
@@ -586,7 +586,7 @@ obj = function _trackAppLaunchCompletedAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -627,7 +627,7 @@ obj = function _trackAppLaunchCompletedAsync() {
           obj = closure_132_1(closure_132_2[19]);
           obj.track(closure_132_10.APP_LAUNCH_COMPLETED, closure_0, { logEventProperties: true });
           c8 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp20) {
         c8 = 3;

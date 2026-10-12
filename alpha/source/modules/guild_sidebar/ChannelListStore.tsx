@@ -1,16 +1,16 @@
-// Module ID: 7248
-// Function ID: 7249
+// Module ID: 7249
+// Function ID: 7250
 // Name: ChannelListStore
-// Dependencies: [2064, 2117, 6054, 6034, 4752, 1244, 502, 6806, 2065, 7249, 4750, 6035, 2116, 5966, 1095, 7250, 12, 1388, 4739, 11, 504, 584, 2]
+// Dependencies: [2064, 2117, 6054, 6034, 4752, 1244, 502, 6807, 2065, 7250, 4750, 6035, 2116, 5966, 1095, 7251, 12, 1388, 4739, 11, 504, 584, 2]
 
-// Module 7248 (ChannelListStore)
+// Module 7249 (ChannelListStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
-import ChannelListStateDefault from "ChannelListState" /* 7250 */;
+import ChannelListStateDefault from "ChannelListState" /* 7251 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import GatedChannelStore from "GatedChannelStore" /* 2117 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
@@ -18,9 +18,9 @@ import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6034 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 6806 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 6807 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7249 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7250 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;

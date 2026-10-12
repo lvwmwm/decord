@@ -1,11 +1,11 @@
-// Module ID: 16129
-// Function ID: 16130
+// Module ID: 16152
+// Function ID: 16153
 // Name: DesignSystemSegmentedControlSetting
-// Dependencies: [7992, 1085, 10663, 16130, 2]
+// Dependencies: [7993, 1085, 10663, 16153, 2]
 
-// Module 16129 (DesignSystemSegmentedControlSetting)
+// Module 16152 (DesignSystemSegmentedControlSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

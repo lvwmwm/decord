@@ -1,9 +1,9 @@
-// Module ID: 15002
-// Function ID: 15003
+// Module ID: 15025
+// Function ID: 15026
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 7536, 7512, 1085, 21, 5092, 587, 558, 576, 7571, 1126, 5088, 13842, 10532, 8673, 7511, 11, 15003, 7513, 5934, 11469, 2000, 11473, 504, 1265, 11471, 2]
+// Dependencies: [32, 19, 17, 7537, 7513, 1085, 21, 5092, 587, 558, 576, 7572, 1126, 5088, 13865, 10533, 8674, 7512, 11, 15026, 7514, 5934, 11471, 2000, 11475, 504, 1265, 11473, 2]
 
-// Module 15002 (SafetyHubViolationsContainer)
+// Module 15025 (SafetyHubViolationsContainer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,16 +12,16 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7511 */;
-import SafetyHubModels from "SafetyHubModels" /* 7513 */;
-import WarningIcon2 from "WarningIcon" /* 7571 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8673 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11471 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
+import SafetyHubModels from "SafetyHubModels" /* 7514 */;
+import WarningIcon2 from "WarningIcon" /* 7572 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11473 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 7536 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
+import SafetyHubStore from "SafetyHubStore" /* 7537 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -122,7 +122,7 @@ function ClassificationDetail(classification) {
     onPress() {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { classificationId: id, source: metroImportAll.StandingTab };
-      obj.pushLazy(asyncRequire(11469, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(11471, dependencyMap.paths), obj2);
     },
     children: tmp12(closure_6, obj5)
   };
@@ -265,7 +265,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
             }
             const obj5 = { onPress: onClick, style: tmp4.header, children: items };
             items = [tmp11, tmp23, tmp27];
-            const tmp32 = authStore2(tmp7(8673), obj5);
+            const tmp32 = authStore2(tmp7(8674), obj5);
             cResult[21] = onClick;
             cResult[22] = tmp4.header;
             cResult[23] = tmp11;
@@ -276,9 +276,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
           }
           const tmp28 = unpackModuleId;
           if (opened) {
-            ChevronSmallDownIcon = tmp(13842).ChevronSmallUpIcon;
+            ChevronSmallDownIcon = tmp(13865).ChevronSmallUpIcon;
           } else {
-            ChevronSmallDownIcon = tmp(10532).ChevronSmallDownIcon;
+            ChevronSmallDownIcon = tmp(10533).ChevronSmallDownIcon;
           }
           const obj6 = { size: "md", style: tmp4.chevron };
           const tmp28Result = tmp28(ChevronSmallDownIcon, obj6);
@@ -367,9 +367,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Safety
   items1[1] = unpackModuleId(Text2, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
   items[1] = authStore2(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(13842).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(13865).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(10532).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(10533).ChevronSmallDownIcon;
   }
   const obj7 = { size: "md", style: tmp.chevron };
   items[2] = unpackModuleId(ChevronSmallDownIcon, obj7);
@@ -607,7 +607,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   importDefault = tmp5[1];
   [tmp8, dependencyMap] = safetyHubAccountStanding(stateFromStores.useState(3), 2);
   const tmp7 = safetyHubAccountStanding(stateFromStores.useState(3), 2);
-  const obj3 = opened(11473);
+  const obj3 = opened(11475);
   safetyHubAccountStanding = obj3.useSafetyHubAccountStanding();
   const obj2 = stateFromStores;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -777,7 +777,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   let obj11;
   let obj9;
   let status;
-  const f119253 = (classification) => {
+  const f119462 = (classification) => {
     const obj = { classification };
     return closure_1_11(ClassificationDetail, obj, classification.id);
   };
@@ -792,7 +792,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   const tmp4 = first1(is_dsa_eligible.useState(3), 2);
   first1 = tmp4[0];
   is_dsa_eligible = tmp4[1];
-  let obj = classifications(11473);
+  let obj = classifications(11475);
   const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
   const items = [memo];
   const obj2 = classifications(504);
@@ -827,9 +827,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubV
   items3[0] = closure_11(closure_15, obj4);
   if (opened) {
     const obj5 = { style: tmp.separator };
-    const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f119253), , , ];
+    const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f119462), , , ];
     let tmp11Result = memo.length < classifications.length;
-    memo.length > 0 && memo.map(f119253);
+    memo.length > 0 && memo.map(f119462);
     if (tmp11Result) {
       const obj6 = { children: items5 };
       const obj7 = { style: tmp.separator };

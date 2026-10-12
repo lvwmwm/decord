@@ -1,9 +1,9 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 17014
+// Function ID: 17015
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 2116, 4743, 1085, 2072, 21, 15497, 504, 9398, 5088, 5300, 1126, 6144, 4702, 1200, 16984, 5056, 16991, 2000, 558, 576, 16980, 8187, 5379, 9465, 2]
+// Dependencies: [5, 32, 19, 17, 2116, 4743, 1085, 2072, 21, 15520, 504, 9399, 5088, 5300, 1126, 6145, 4702, 1200, 17008, 5056, 17015, 2000, 558, 576, 17004, 8188, 5379, 9466, 2]
 
-// Module 16990 (SubscribeButton)
+// Module 17014 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
@@ -12,8 +12,8 @@ import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9398 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15497 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9399 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -67,7 +67,7 @@ function useCreateRoleSubscription(listingId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -107,7 +107,7 @@ function useCreateRoleSubscription(listingId) {
             c3 = 0;
             closure_128_1(false);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           closure_2 = tmp19;
@@ -141,7 +141,7 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(15497);
+  let obj = changeToListingId(15520);
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   const obj3 = { children: items };
   const obj2 = activeListingId(4702)(activeSubscription.currentPeriodEnd);
@@ -157,11 +157,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(16991, dependencyMap.paths);
+      const tmp2 = asyncRequire(17015, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(16984).ArrowButton;
+  const ArrowButton = activeSubscription(17008).ArrowButton;
   intl2 = activeSubscription(1126).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);

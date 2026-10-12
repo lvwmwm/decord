@@ -1,28 +1,28 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 11933
+// Function ID: 11934
 // Name: ChatInputActions
-// Dependencies: [32, 19, 11634, 1085, 21, 5092, 587, 5384, 9306, 4818, 6304, 4987, 1629, 11932, 9293, 5371, 7770, 1126, 10042, 8214, 10025, 11933, 8233, 10027, 11917, 9292, 9294, 1265, 4850, 9362, 11935, 4823, 11936, 11938, 11942, 2]
+// Dependencies: [32, 19, 11636, 1085, 21, 5092, 587, 5384, 9307, 4818, 6305, 4987, 1629, 11934, 9294, 5371, 7771, 1126, 10043, 8215, 10026, 11935, 8234, 10028, 11919, 9293, 9295, 1265, 4850, 9363, 11937, 4823, 11938, 11940, 11944, 2]
 
-// Module 11931 (ChatInputActions)
+// Module 11933 (ChatInputActions)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import mergeProps from "mergeProps" /* 4823 */;
 import ButtonConstants from "ButtonConstants" /* 5384 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 7770 */;
-import ImageIcon from "ImageIcon" /* 8214 */;
-import AppsIcon from "AppsIcon" /* 8233 */;
-import PollsIcon from "PollsIcon" /* 10025 */;
-import AttachmentIcon from "AttachmentIcon" /* 10027 */;
-import CameraIcon from "CameraIcon" /* 10042 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11917 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 11933 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11935 */;
-import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 11936 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 7771 */;
+import ImageIcon from "ImageIcon" /* 8215 */;
+import AppsIcon from "AppsIcon" /* 8234 */;
+import PollsIcon from "PollsIcon" /* 10026 */;
+import AttachmentIcon from "AttachmentIcon" /* 10028 */;
+import CameraIcon from "CameraIcon" /* 10043 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11919 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 11935 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11937 */;
+import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 11938 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 11634 */;
+import ChatInputConstants from "ChatInputConstants" /* 11636 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;

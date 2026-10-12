@@ -1,9 +1,9 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12170
+// Function ID: 12171
 // Name: useLongestChannelMessageBeforeReply
 // Dependencies: [5432, 558, 576, 504, 2]
 
-// Module 12168 (useLongestChannelMessageBeforeReply)
+// Module 12170 (useLongestChannelMessageBeforeReply)
 import MessageStore from "MessageStore" /* 5432 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

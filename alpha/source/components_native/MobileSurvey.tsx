@@ -1,19 +1,19 @@
-// Module ID: 17630
-// Function ID: 17631
+// Module ID: 17687
+// Function ID: 17688
 // Name: MobileSurvey
-// Dependencies: [5, 19, 7471, 1085, 21, 5092, 558, 576, 504, 1265, 16057, 1126, 4806, 1200, 587, 11126, 5398, 2]
+// Dependencies: [5, 19, 7472, 1085, 21, 5092, 558, 576, 504, 1265, 16080, 1126, 4806, 1200, 587, 11126, 5398, 2]
 
-// Module 17630 (MobileSurvey)
+// Module 17687 (MobileSurvey)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
 import LinkingDefault from "Linking" /* 4806 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11126 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 16057 */;
+import SurveyActionCreators from "SurveyActionCreators" /* 16080 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SurveyStore from "SurveyStore" /* 7471 */;
+import SurveyStore from "SurveyStore" /* 7472 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -76,7 +76,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MobileSurvey
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -105,7 +105,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MobileSurvey
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } catch (tmp8) {
               c0 = 3;
               throw tmp8;
@@ -239,7 +239,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MobileSurvey
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -268,7 +268,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MobileSurvey
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } catch (tmp8) {
               c0 = 3;
               throw tmp8;

@@ -1,10 +1,10 @@
-// Module ID: 7487
-// Function ID: 7488
+// Module ID: 7488
+// Function ID: 7489
 // Name: StageChannelActionCreators
-// Dependencies: [5, 2116, 5113, 1085, 7019, 38, 5107, 7488, 1295, 7025, 5416, 5949, 6097, 1998, 4755, 1097, 7014, 7492, 7495, 2]
+// Dependencies: [5, 2116, 5113, 1085, 7020, 38, 5107, 7489, 1295, 7026, 5416, 5949, 6098, 1998, 4755, 1097, 7015, 7493, 7496, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 7487 (StageChannelActionCreators)
+// Module 7488 (StageChannelActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
@@ -13,12 +13,12 @@ import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5416 */;
 import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5949 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
-import Constants2 from "Constants" /* 7019 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7025 */;
-import StageChannelUtils from "StageChannelUtils" /* 7488 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7492 */;
-import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7495 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
+import Constants2 from "Constants" /* 7020 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7026 */;
+import StageChannelUtils from "StageChannelUtils" /* 7489 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7493 */;
+import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
@@ -31,8 +31,8 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp2;
-const ChannelActionCreatorsDefault = tmp2(7014);
-const f96400 = (error) => {
+const ChannelActionCreatorsDefault = tmp2(7015);
+const f96619 = (error) => {
   if (error.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
     obj = SafetyToastsActionCreatorsDefault;
     obj.showFailedToast(constants2.GENERIC_ERROR);
@@ -105,7 +105,7 @@ let obj = function _startStage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -133,7 +133,7 @@ let obj = function _startStage() {
                 return obj6;
               } else {
                 c7 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             }
           } else if (arg0 === 1) {
@@ -172,7 +172,7 @@ obj = function _editStage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -193,7 +193,7 @@ obj = function _editStage() {
             return obj5;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -231,7 +231,7 @@ obj = function _endStage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -258,7 +258,7 @@ obj = function _endStage() {
             return { value, done: true };
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp7) {
           c1 = 3;
@@ -346,7 +346,7 @@ export const setUserSuppress = function setUserSuppress(channel, id, suppress) {
   obj = { suppress, channel_id: channel.id };
   obj3 = HTTPUtils;
   const patchResult = patch(request);
-  return patchResult.catch(f96400);
+  return patchResult.catch(f96619);
 };
 export const moveUserToAudience = function moveUserToAudience(user, voiceChannel) {
   let constants2;
@@ -366,7 +366,7 @@ export const moveUserToAudience = function moveUserToAudience(user, voiceChannel
       obj = { suppress: true, channel_id: voiceChannel.id };
       obj3 = HTTPUtils;
       const patchResult = patch(request);
-      patchResult.catch(f96400);
+      patchResult.catch(f96619);
       const HTTP2 = HTTPUtils.HTTP;
       const request1 = { url: React4.UPDATE_VOICE_STATE(guildId, user.id), body: obj2, rejectWithError: obj6.rejectWithMigratedError() };
       const patch2 = HTTP2.patch;

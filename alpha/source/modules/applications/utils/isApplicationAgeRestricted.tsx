@@ -1,12 +1,12 @@
-// Module ID: 9809
-// Function ID: 9810
+// Module ID: 9810
+// Function ID: 9811
 // Name: isApplicationAgeRestricted
-// Dependencies: [5440, 9810, 6042, 2]
+// Dependencies: [5440, 9811, 6042, 2]
 // Exports: default
 
-// Module 9809 (isApplicationAgeRestricted)
+// Module 9810 (isApplicationAgeRestricted)
 import utils from "utils" /* 6042 */;
-import AgeRestrictedApplicationCommandsExperimentDefault from "AgeRestrictedApplicationCommandsExperiment" /* 9810 */;
+import AgeRestrictedApplicationCommandsExperimentDefault from "AgeRestrictedApplicationCommandsExperiment" /* 9811 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import size from "module_2" /* 2 */;
 

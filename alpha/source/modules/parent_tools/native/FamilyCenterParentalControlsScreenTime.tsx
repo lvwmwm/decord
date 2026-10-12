@@ -1,9 +1,9 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15213
+// Function ID: 15214
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 12566, 1126, 2568, 5088, 6179, 15149, 1503, 6264, 2]
+// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 12568, 1126, 2568, 5088, 6180, 15172, 1503, 6265, 2]
 
-// Module 15190 (FamilyCenterParentalControlsScreenTime)
+// Module 15213 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -146,11 +146,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Schedul
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(12566);
+  let obj = rule(12568);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(12566);
+  let obj2 = rule(12568);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(6179).TableRow;
+  const TableRow = rule(6180).TableRow;
   Text = rule(5088).Text;
   const enabled = rule.enabled;
   const intl = rule(1126).intl;

@@ -1,18 +1,18 @@
-// Module ID: 10281
-// Function ID: 10282
+// Module ID: 10282
+// Function ID: 10283
 // Name: ChannelRow
-// Dependencies: [109, 19, 17, 2065, 2087, 6035, 4760, 1390, 10216, 5967, 21, 5092, 587, 558, 576, 504, 5421, 10282, 11595, 8215, 8207, 5088, 4793, 4702, 6176, 6179, 2]
+// Dependencies: [109, 19, 17, 2065, 2087, 6035, 4760, 1390, 10217, 5967, 21, 5092, 587, 558, 576, 504, 5421, 10283, 11597, 8216, 8208, 5088, 4793, 4702, 6177, 6180, 2]
 
-// Module 10281 (ChannelRow)
+// Module 10282 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4793 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import UserRowConstants from "UserRowConstants" /* 10216 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10282 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11595 */;
+import UserRowConstants from "UserRowConstants" /* 10217 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11597 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -251,7 +251,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return closure_9.lastMessageTimestamp(closure_0.id, ReadStateTypes.CHANNEL);
           }
         }
-        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(11595).GuildIconWithChannelTypeSizes.SMALL_32 };
+        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(11597).GuildIconWithChannelTypeSizes.SMALL_32 };
         class J {
           constructor() {
             if (null == closure_1) {
@@ -267,7 +267,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return;
           }
         }
-        const GuildIconWithChannelType = tmp(11595).GuildIconWithChannelType;
+        const GuildIconWithChannelType = tmp(11597).GuildIconWithChannelType;
         tmp34 = closure_14(GuildIconWithChannelType, obj2);
       }
       cResult[26] = tmp4;
@@ -418,9 +418,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(8215).ForumIcon;
+        TextIcon = tmp3(8216).ForumIcon;
       } else {
-        TextIcon = tmp3(8207).TextIcon;
+        TextIcon = tmp3(8208).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: items };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };

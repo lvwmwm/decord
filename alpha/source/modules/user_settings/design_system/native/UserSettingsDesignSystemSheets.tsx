@@ -1,9 +1,9 @@
-// Module ID: 16157
-// Function ID: 16158
+// Module ID: 16180
+// Function ID: 16181
 // Name: UserSettingsDesignSystemSheets
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 8562, 6893, 6838, 6285, 5377, 6894, 6898, 5056, 5379, 1126, 10323, 16158, 5088, 6181, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 8563, 6894, 6839, 6286, 5377, 6895, 6899, 5056, 5379, 1126, 10324, 16181, 5088, 6182, 2]
 
-// Module 16157 (UserSettingsDesignSystemSheets)
+// Module 16180 (UserSettingsDesignSystemSheets)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,13 +12,13 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Card_Card from "Card/Card" /* 6181 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6285 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
-import ActionSheetRow from "ActionSheetRow" /* 6894 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import PromoSheet2 from "PromoSheet" /* 10323 */;
-import _modDef16158 from "module_16158" /* 16158 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6286 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheetRow from "ActionSheetRow" /* 6895 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import PromoSheet2 from "PromoSheet" /* 10324 */;
+import _modDef16181 from "module_16181" /* 16181 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -75,7 +75,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoAc
       let tmp24 = tmp5;
       if (tmp24) {
         const obj2 = { onPress: NOOP };
-        tmp24 = metroImportDefault(tmp(6893).ActionSheetCloseButton, obj2);
+        tmp24 = metroImportDefault(tmp(6894).ActionSheetCloseButton, obj2);
       }
       cResult[3] = tmp5;
       cResult[4] = tmp24;
@@ -225,7 +225,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoAc
       }
     }
     const obj12 = { onPress: NOOP, label: tmp17 };
-    tmp21 = metroImportDefault(tmp(8562).ActionSheetHeaderPressableText, obj12);
+    tmp21 = metroImportDefault(tmp(8563).ActionSheetHeaderPressableText, obj12);
   }
   cResult[0] = tmp17;
   cResult[1] = first;
@@ -270,12 +270,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoAc
   tmp16Result = first;
   if (tmp16Result) {
     const obj2 = { onPress: NOOP, label: tmp14 };
-    tmp16Result = tmp16(tmp17(8562).ActionSheetHeaderPressableText, obj2);
+    tmp16Result = tmp16(tmp17(8563).ActionSheetHeaderPressableText, obj2);
   }
   tmp16Result2 = tmp2;
   if (tmp16Result2) {
     const obj3 = { onPress: NOOP };
-    tmp16Result2 = tmp16(tmp17(6893).ActionSheetCloseButton, obj3);
+    tmp16Result2 = tmp16(tmp17(6894).ActionSheetCloseButton, obj3);
   }
   const obj4 = { header: metroImportDefault(BottomSheetTitleHeader, obj), children: metroImportAll(Stack, obj5) };
   obj5 = { spacing: 24, children: items1 };
@@ -296,7 +296,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoAc
   items[1] = metroImportDefault(TextInput_TextInput.TextInput, obj7);
   items1 = [metroImportAll(Stack2, obj6), , ];
   const obj8 = { hasIcons: false, children: items2 };
-  const Group = tmp17(6894).ActionSheetRow.Group;
+  const Group = tmp17(6895).ActionSheetRow.Group;
   items2 = [metroImportDefault(ActionSheetRow.ActionSheetSwitchRow, { value: first, onValueChange: tmp6, label: "Show Leading" }), metroImportDefault(ActionSheetRow.ActionSheetSwitchRow, { value: tmp2, onValueChange: tmp3, label: "Show Trailing" })];
   items1[1] = metroImportAll(Group, obj8);
   const obj9 = {
@@ -341,8 +341,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoPr
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { graphic: obj4, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: first };
     obj4 = { type: "image", src: obj5, aspectRatio: "16/9" };
-    obj5 = { uri: _modDef16158 };
-    const PromoSheet = tmp(10323).PromoSheet;
+    obj5 = { uri: _modDef16181 };
+    const PromoSheet = tmp(10324).PromoSheet;
     const tmp10 = metroImportDefault(PromoSheet, obj3);
     cResult[1] = tmp10;
     tmp7 = tmp10;
@@ -367,7 +367,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoPr
   intl = intl2.intl;
   const obj2 = { graphic: obj3, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: tmp };
   obj3 = { type: "image", src: obj4, aspectRatio: "16/9" };
-  obj4 = { uri: _modDef16158 };
+  obj4 = { uri: _modDef16181 };
   tmp = metroImportDefault(Button, obj);
   const PromoSheet = PromoSheet2.PromoSheet;
   return metroImportDefault(PromoSheet, obj2);
@@ -401,7 +401,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: metroImportAll(Stack, obj3) };
-    const Card = tmp(6181).Card;
+    const Card = tmp(6182).Card;
     obj3 = { children: items };
     items = [tmp5, tmp6, ];
     Stack = tmp(5377).Stack;
@@ -424,7 +424,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     items1 = [tmp10, ];
     const Stack2 = tmp(5377).Stack;
     const obj6 = { children: metroImportAll(Stack3, obj7) };
-    const Card2 = tmp(6181).Card;
+    const Card2 = tmp(6182).Card;
     obj7 = { children: items2 };
     Stack3 = tmp(5377).Stack;
     items2 = [metroImportDefault(Text_Text.Text, { variant: "text-lg/bold", children: "Promo Sheet" }), metroImportDefault(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "A sheet with an illustration, title, description, and actions." }), ];

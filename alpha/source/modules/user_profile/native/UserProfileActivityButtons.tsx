@@ -1,10 +1,10 @@
-// Module ID: 13152
-// Function ID: 13153
+// Module ID: 13157
+// Function ID: 13158
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 2064, 2065, 5761, 5020, 2087, 10647, 4750, 4760, 2116, 5759, 5113, 1085, 8458, 21, 5092, 587, 558, 576, 6851, 4739, 13153, 573, 5924, 13154, 7426, 1126, 8233, 5056, 5934, 10822, 5379, 10801, 10252, 1200, 8277, 10784, 4806, 13156, 8384, 4977, 7492, 7481, 5763, 1415, 9204, 7093, 8462, 10788, 1384, 8490, 2]
+// Dependencies: [5, 19, 2064, 2065, 5761, 5020, 2087, 10648, 4750, 4760, 2116, 5759, 5113, 1085, 8459, 21, 5092, 587, 558, 576, 6852, 4739, 13158, 573, 5924, 13159, 7427, 1126, 8234, 5056, 5934, 10822, 5379, 10801, 10253, 1200, 8278, 10784, 4806, 13161, 8385, 4977, 7493, 7482, 5763, 1415, 9205, 7094, 8463, 10788, 1384, 8491, 2]
 // Exports: CustomActivityButton
 
-// Module 13152 (UserProfileActivityButtons)
+// Module 13157 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,16 +15,16 @@ import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7492 */;
-import isStreamingDefault from "isStreaming" /* 8384 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9204 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7493 */;
+import isStreamingDefault from "isStreaming" /* 8385 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9205 */;
 import GamesActionCreatorsDefault from "GamesActionCreators" /* 10801 */;
 import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10822 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 13153 */;
-import getActivityJoinability from "getActivityJoinability" /* 13154 */;
-import getStreamURLDefault from "getStreamURL" /* 13156 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 13158 */;
+import getActivityJoinability from "getActivityJoinability" /* 13159 */;
+import getStreamURLDefault from "getStreamURL" /* 13161 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
@@ -32,14 +32,14 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import ConnectedAccountsStore_mod from "ConnectedAccountsStore" /* 5761 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import LocalActivityStore from "LocalActivityStore" /* 10647 */;
+import LocalActivityStore from "LocalActivityStore" /* 10648 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import Constants from "Constants" /* 1085 */;
-import SpotifyConstants from "SpotifyConstants" /* 8458 */;
+import SpotifyConstants from "SpotifyConstants" /* 8459 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -541,7 +541,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
   const sync_id = activity.sync_id;
   let tmp6 = null;
   const tmp5 = sync_id;
-  if (sync_id(10252)(activity)) {
+  if (sync_id(10253)(activity)) {
     tmp6 = null;
     if (null != sync_id) {
       let tmp7;
@@ -558,7 +558,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
       }
       if (cResult[2] !== tmp4.icon) {
         const Icon = tmp(1200).Icon;
-        const tmp11 = <Icon size={tmp(1200).Icon.Sizes.SMALL} source={tmp5(8277)} disableColor style={tmp4.icon} />;
+        const tmp11 = <Icon size={tmp(1200).Icon.Sizes.SMALL} source={tmp5(8278)} disableColor style={tmp4.icon} />;
         cResult[2] = tmp4.icon;
         cResult[3] = tmp11;
         tmp9 = tmp11;
@@ -598,7 +598,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -627,7 +627,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -682,13 +682,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
   const tmp = closure_20();
   let tmp4 = null;
   const tmp2 = sync_id;
-  if (sync_id(10252)(activity)) {
+  if (sync_id(10253)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       const Button = components_Button_Button.Button;
       const intl = intl5.intl;
       let obj2 = { platform: activity.name };
-      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(8277), disableColor: true, style: tmp.icon };
+      let obj3 = { size: native.Icon.Sizes.SMALL, source: tmp2(8278), disableColor: true, style: tmp.icon };
       const Icon = native.Icon;
       tmp4 = <Button text={intl.formatToPlainString(intl5.t.LEgD7t, obj2)} icon={null} variant="secondary" onPress={_asyncToGenerator(async (arg0, value) => {
         let closure_0;
@@ -704,7 +704,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -732,7 +732,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayOnSpotif
             } else if (1 === c4) {
               c3 = 0;
               c5 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -1367,7 +1367,7 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 let tmp17;
@@ -1413,13 +1413,13 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                       if (id.button_urls.length <= closure_129_2) {
                         c3 = 0;
                         c5 = 3;
-                        return { value: "IconComponent", done: "+51" };
+                        return { value: "IconComponent", done: null };
                       } else {
                         tmp = id.button_urls[closure_129_2];
                         if (typeof tmp !== "string") {
                           c3 = 0;
                           c5 = 3;
-                          return { value: "IconComponent", done: "+51" };
+                          return { value: "IconComponent", done: null };
                         } else {
                           const obj8 = tmp(tmp17[50]);
                           tmp17 = obj8.safeParseWithQuery(tmp);
@@ -1450,12 +1450,12 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                           }
                           c3 = 0;
                           c5 = 3;
-                          return { value: "IconComponent", done: "+51" };
+                          return { value: "IconComponent", done: null };
                         }
                       }
                     }
                     c5 = 3;
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp17) {
                   if (0 === c3) {

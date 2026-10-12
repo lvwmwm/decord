@@ -1,18 +1,18 @@
-// Module ID: 7562
-// Function ID: 7563
+// Module ID: 7563
+// Function ID: 7564
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 5092, 558, 576, 1126, 3120, 6641, 587, 5088, 5377, 7514, 7515, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 1126, 3120, 6642, 587, 5088, 5377, 7515, 7516, 2]
 
-// Module 7562 (AgeVerificationOtherWindowScreen)
+// Module 7563 (AgeVerificationOtherWindowScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3120 from "module_3120" /* 3120 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import MobilePhoneIcon2 from "MobilePhoneIcon" /* 6641 */;
-import ModalScreen2 from "ModalScreen" /* 7514 */;
-import ModalContent2 from "ModalContent" /* 7515 */;
+import MobilePhoneIcon2 from "MobilePhoneIcon" /* 6642 */;
+import ModalScreen2 from "ModalScreen" /* 7515 */;
+import ModalContent2 from "ModalContent" /* 7516 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -86,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "lg", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    const MobilePhoneIcon = tmp(6641).MobilePhoneIcon;
+    const MobilePhoneIcon = tmp(6642).MobilePhoneIcon;
     const tmp20 = _false(MobilePhoneIcon, obj2);
     cResult[4] = tmp20;
     tmp17 = tmp20;
@@ -116,9 +116,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
           return tmp29;
         }
         const obj3 = { children: _false(ModalContent, obj4) };
-        const ModalScreen = tmp(7514).ModalScreen;
+        const ModalScreen = tmp(7515).ModalScreen;
         obj4 = { children: React3(Stack_Stack.Stack, obj5) };
-        ModalContent = tmp(7515).ModalContent;
+        ModalContent = tmp(7516).ModalContent;
         obj5 = { align: "center", justify: "center", spacing: 16, style: tmp4.container, children: items };
         items = [tmp17, tmp26];
         const tmp32 = _false(ModalScreen, obj3);

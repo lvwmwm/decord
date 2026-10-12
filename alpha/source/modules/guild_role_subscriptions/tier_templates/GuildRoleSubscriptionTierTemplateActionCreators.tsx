@@ -1,10 +1,10 @@
-// Module ID: 18553
-// Function ID: 18554
+// Module ID: 18611
+// Function ID: 18612
 // Name: GuildRoleSubscriptionTierTemplateActionCreators
 // Dependencies: [5, 1085, 584, 1295, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 18553 (GuildRoleSubscriptionTierTemplateActionCreators)
+// Module 18611 (GuildRoleSubscriptionTierTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
@@ -28,7 +28,7 @@ let obj = function _getTemplates() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let obj = function _getTemplates() {
               obj.dispatch(obj7);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp15) {
           c4 = 3;

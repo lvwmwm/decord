@@ -1,14 +1,14 @@
-// Module ID: 7175
-// Function ID: 7176
+// Module ID: 7176
+// Function ID: 7177
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7176, 1404, 2116, 1085, 1295, 584, 1255, 7178, 2]
+// Dependencies: [5, 7177, 1404, 2116, 1085, 1295, 584, 1255, 7179, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 7175 (ReferralTrialActionCreators)
+// Module 7176 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7176 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7177 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Constants from "Constants" /* 1085 */;
@@ -76,7 +76,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {

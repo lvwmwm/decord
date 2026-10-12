@@ -1,17 +1,17 @@
-// Module ID: 8271
-// Function ID: 8272
+// Module ID: 8272
+// Function ID: 8273
 // Name: utils
-// Dependencies: [1102, 11, 1126, 4702, 8272, 4345, 8267, 2]
+// Dependencies: [1102, 11, 1126, 4702, 8273, 4345, 8268, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8271 (utils)
+// Module 8272 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl4 from "intl" /* 1126 */;
 import _mod4345 from "module_4345" /* 4345 */;
 import _modDef4702 from "module_4702" /* 4702 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8267 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8272 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8268 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8273 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {

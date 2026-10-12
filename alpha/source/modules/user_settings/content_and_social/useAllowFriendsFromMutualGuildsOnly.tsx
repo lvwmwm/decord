@@ -1,9 +1,9 @@
-// Module ID: 16266
-// Function ID: 16267
+// Module ID: 16289
+// Function ID: 16290
 // Name: useAllowFriendsFromMutualGuildsOnly
-// Dependencies: [19, 558, 576, 2041, 6683, 2]
+// Dependencies: [19, 558, 576, 2041, 6684, 2]
 
-// Module 16266 (useAllowFriendsFromMutualGuildsOnly)
+// Module 16289 (useAllowFriendsFromMutualGuildsOnly)
 import react2 from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettingsUtils = tmp(6683);
+const UserSettingsUtils = tmp(6684);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllowFriendsFromMutualGuildsOnly() {
   let tmp5;
   const obj = react2;

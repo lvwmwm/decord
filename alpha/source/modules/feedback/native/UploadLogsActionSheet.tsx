@@ -1,18 +1,18 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18098
+// Function ID: 18099
 // Name: UploadLogsActionSheet
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 12628, 1265, 5056, 6838, 1126, 5088, 5379, 6839, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 12630, 1265, 5056, 6839, 1126, 5088, 5379, 6840, 2]
 
-// Module 18040 (UploadLogsActionSheet)
+// Module 18098 (UploadLogsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
-import DebugUploadManager from "DebugUploadManager" /* 12628 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import DebugUploadManager from "DebugUploadManager" /* 12630 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -69,7 +69,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { title: intl.string(tmp(1126).t.KTjjrG) };
-      const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
       intl = tmp(1126).intl;
       const tmp9 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[3] = tmp9;
@@ -162,7 +162,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadLogsAc
     const obj7 = { header: tmp7, children: closure_7(View, obj8) };
     obj8 = { style: container, children: items };
     items = [tmp12, tmp17, tmp20, tmp26];
-    BottomSheet = tmp(6839).BottomSheet;
+    BottomSheet = tmp(6840).BottomSheet;
     const tmp33 = closure_6(BottomSheet, obj7);
     cResult[14] = tmp4.container;
     cResult[15] = tmp12;

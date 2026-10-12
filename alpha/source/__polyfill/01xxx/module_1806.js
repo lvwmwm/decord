@@ -584,7 +584,7 @@ export const useAnimatedStyle = function useAnimatedStyle(fn, items, arg2, arg3)
   if (!tmp3.current) {
     const tmp11Result = require("module_1728");
     const initialUpdaterRunResult = tmp11Result.initialUpdaterRun(fn);
-    let obj = { initial: obj4, remoteState: tmp11Result4.makeShareable(obj5), viewDescriptors: tmp11Result5.makeViewDescriptorsSet(), styleUpdaterContainer: { current: "r" } };
+    let obj = { initial: obj4, remoteState: tmp11Result4.makeShareable(obj5), viewDescriptors: tmp11Result5.makeViewDescriptorsSet(), styleUpdaterContainer: { current: "top" } };
     obj4 = { value: initialUpdaterRunResult, updater: fn };
     obj5 = { last: initialUpdaterRunResult, animations: {}, isAnimationCancelled: false, isAnimationRunning: false, isFirstRun: true };
     tmp11Result4 = require("startMapper");

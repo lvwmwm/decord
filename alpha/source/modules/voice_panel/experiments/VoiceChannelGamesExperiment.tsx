@@ -1,9 +1,9 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 8855
+// Function ID: 8856
 // Name: VoiceChannelGamesExperiment
 // Dependencies: [1454, 558, 576, 2]
 
-// Module 8854 (VoiceChannelGamesExperiment)
+// Module 8855 (VoiceChannelGamesExperiment)
 import react from "react" /* 576 */;
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 15314
-// Function ID: 15315
+// Module ID: 15337
+// Function ID: 15338
 // Name: BountiesModalContent
-// Dependencies: [5, 32, 19, 17, 7389, 5972, 15264, 1085, 1096, 21, 558, 576, 1497, 1631, 5092, 587, 1382, 12785, 5059, 504, 9060, 15273, 12971, 15278, 9181, 15280, 15276, 7406, 5979, 7415, 5977, 12964, 15260, 12981, 15315, 15288, 15312, 15287, 6813, 4850, 5093, 5096, 12942, 1121, 15311, 15274, 7386, 4827, 2]
+// Dependencies: [5, 32, 19, 17, 7390, 5972, 15287, 1085, 1096, 21, 558, 576, 1497, 1631, 5092, 587, 1382, 12787, 5059, 504, 9061, 15296, 12973, 15301, 9182, 15303, 15299, 7407, 5979, 7416, 5977, 12966, 15283, 12983, 15338, 15311, 15335, 15310, 6814, 4850, 5093, 5096, 12944, 1121, 15334, 15297, 7387, 4827, 2]
 
-// Module 15314 (BountiesModalContent)
+// Module 15337 (BountiesModalContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,20 +16,20 @@ import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
 import QuestContent from "QuestContent" /* 5977 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import QuestDataUtils from "QuestDataUtils" /* 7386 */;
-import AnalyticsActions from "AnalyticsActions" /* 7406 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
-import AnimationUtils from "AnimationUtils" /* 12785 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 12942 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 12964 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12981 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15260 */;
+import QuestDataUtils from "QuestDataUtils" /* 7387 */;
+import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
+import AnimationUtils from "AnimationUtils" /* 12787 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 12944 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12983 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7389 */;
+import BountyStore from "BountyStore" /* 7390 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 15264 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 15287 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -232,7 +232,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
                         }
                         const tmpResult = tmp(504);
                         const stateFromStores = tmpResult.useStateFromStores(tmp18, tmp20);
-                        const tmpResult2 = tmp(9060);
+                        const tmpResult2 = tmp(9061);
                         const balance = tmpResult2.useFetchVirtualCurrencyBalance().balance;
                         let obj7 = react;
                         const tmp24 = _slicedToArray(react.useState(null), 2);
@@ -317,7 +317,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
                               const obj3 = { value, done: true };
                               return obj3;
                             } else {
-                              return { value: "IconComponent", done: "+51" };
+                              return { value: "IconComponent", done: null };
                             }
                           } else {
                             let c3;
@@ -377,7 +377,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
                                   }
                                 }
                                 ref = 3;
-                                return { value: "IconComponent", done: "+51" };
+                                return { value: "IconComponent", done: null };
                               }
                             } catch (tmp37) {
                               closure_2 = tmp37;
@@ -568,7 +568,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -627,7 +627,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp37) {
         dismissVideoEndAppStoreOverlay = tmp37;

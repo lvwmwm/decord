@@ -1,9 +1,9 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7255
+// Function ID: 7256
 // Name: NewChannelsStore
-// Dependencies: [1244, 502, 2065, 4748, 2125, 2087, 6035, 5966, 1085, 1102, 6063, 6799, 11, 504, 5943, 584, 2]
+// Dependencies: [1244, 502, 2065, 4748, 2125, 2087, 6035, 5966, 1085, 1102, 6063, 6800, 11, 504, 5943, 584, 2]
 
-// Module 7254 (NewChannelsStore)
+// Module 7255 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -11,7 +11,7 @@ import DurationsDefault from "Durations" /* 1102 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
 import NSFWContentGate from "NSFWContentGate" /* 5943 */;
 import SidebarActionTypes from "SidebarActionTypes" /* 6063 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6799 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -142,11 +142,11 @@ function pruneNewChannels() {
   const obj = SnowflakeUtilsDefault;
   const keys = obj.keys(closure_16);
   const item = keys.forEach((item) => {
-    const f140281 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
+    const f140573 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
     let closure_0 = item;
     const items = [...closure_16[item]];
-    closure_16[item] = new Set(items.filter(f140281));
-    new Set(items.filter(f140281));
+    closure_16[item] = new Set(items.filter(f140573));
+    new Set(items.filter(f140573));
   });
 }
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;

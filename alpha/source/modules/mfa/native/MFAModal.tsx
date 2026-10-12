@@ -1,19 +1,19 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 15975
+// Function ID: 15976
 // Name: MFAModal
-// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6632, 5934, 1126, 15953, 7088, 7728, 6200, 15954, 15955, 15960, 15963, 15964, 15965, 6687, 5300, 2]
+// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6633, 5934, 1126, 15976, 7089, 7729, 6201, 15977, 15978, 15983, 15986, 15987, 15988, 6688, 5300, 2]
 // Exports: openMFAModal
 
-// Module 15952 (MFAModal)
+// Module 15975 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import MFAUtils from "MFAUtils" /* 6632 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7728 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 15953 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import MFAUtils from "MFAUtils" /* 6633 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 15976 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
     tmp8 = cResult[5];
   }
   let tmp13 = tmp8;
-  if (!tmp(6632).hasWebAuthn) {
+  if (!tmp(6633).hasWebAuthn) {
     if (cResult[7] !== tmp8.methods) {
       let tmp16;
       const _Symbol = Symbol;
@@ -150,7 +150,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
           }
         }
       }
-      const obj3 = { name: tmp(15953).MfaScreens.SELECT, params: obj4 };
+      const obj3 = { name: tmp(15976).MfaScreens.SELECT, params: obj4 };
       obj4 = { mfaChallenge: tmp13, finish: tmp22 };
       cResult[19] = tmp22;
       cResult[20] = tmp13;
@@ -192,7 +192,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
           const obj = closure_2_1(closure_2_2[8]);
           obj.popWithKey(MFA_MODAL_KEY);
           ticket = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp12) {
         ticket = 3;

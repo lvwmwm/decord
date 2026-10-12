@@ -1,10 +1,10 @@
-// Module ID: 16615
-// Function ID: 16616
+// Module ID: 16638
+// Function ID: 16639
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2057, 1085, 2062, 570, 558, 576, 10312, 2049, 7099, 2]
+// Dependencies: [32, 19, 2057, 1085, 2062, 570, 558, 576, 10313, 2049, 7100, 2]
 // Exports: setFavoritesGuildSuggestions
 
-// Module 16615 (FavoritesGuildSuggestionsStore)
+// Module 16638 (FavoritesGuildSuggestionsStore)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
@@ -222,7 +222,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   if (hasAccess) {
     hasAccess = tmp4;
   }
-  const useSelectedDismissibleContent = tmp(7099).useSelectedDismissibleContent;
+  const useSelectedDismissibleContent = tmp(7100).useSelectedDismissibleContent;
   require("useSelectedDismissibleContent");
   if (hasAccess) {
     items = [tmp(2049).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];

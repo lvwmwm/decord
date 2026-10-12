@@ -1,9 +1,9 @@
-// Module ID: 7717
-// Function ID: 7718
+// Module ID: 7718
+// Function ID: 7719
 // Name: StageBlockedUsersActionSheet
-// Dependencies: [32, 19, 17, 4760, 5948, 5892, 21, 5092, 587, 558, 576, 504, 1126, 1200, 7718, 5088, 5056, 7719, 5379, 6813, 6760, 6839, 2]
+// Dependencies: [32, 19, 17, 4760, 5948, 5892, 21, 5092, 587, 558, 576, 504, 1126, 1200, 7719, 5088, 5056, 7720, 5379, 6814, 6761, 6840, 2]
 
-// Module 7717 (StageBlockedUsersActionSheet)
+// Module 7718 (StageBlockedUsersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -168,7 +168,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restri
             }
           }
           const obj2 = { style: tmp4.iconContainer, children: closure_9(Icon, obj3) };
-          obj3 = { style: tmp4.icon, source: user(7718), color: user(587).unsafe_rawColors.WHITE };
+          obj3 = { style: tmp4.icon, source: user(7719), color: user(587).unsafe_rawColors.WHITE };
           Icon = tmp(1200).Icon;
           tmp23 = closure_9(View, obj2);
         }
@@ -239,7 +239,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restri
   items2 = [closure_9(CutoutableAvatarImage, obj5), ];
   if (speaker) {
     const obj6 = { style: tmp.iconContainer, children: closure_9(Icon, obj7) };
-    obj7 = { style: tmp.icon, source: user(7718), color: user(587).unsafe_rawColors.WHITE };
+    obj7 = { style: tmp.icon, source: user(7719), color: user(587).unsafe_rawColors.WHITE };
     Icon = tmp2(1200).Icon;
     speaker = tmp11(tmp10, obj6);
   }
@@ -585,9 +585,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
     if (cResult[2] === onAccept) {
       tmp8 = cResult[3];
     }
-    const tmp2Result = channel(7719);
+    const tmp2Result = channel(7720);
     const stageBlockedUsers = tmp2Result.useStageBlockedUsers(channel.id);
-    const tmp2Result2 = channel(7719);
+    const tmp2Result2 = channel(7720);
     const stageIgnoredUsers = tmp2Result2.useStageIgnoredUsers(channel.id);
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
@@ -747,8 +747,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
             cResult[25] = tmp26;
             cResult[26] = tmp5.container;
             cResult[27] = tmp33;
-            cResult[28] = closure_9(onAccept(6760), obj5);
-            const tmp38 = closure_9(onAccept(6760), obj5);
+            cResult[28] = closure_9(onAccept(6761), obj5);
+            const tmp38 = closure_9(onAccept(6761), obj5);
           }
           const obj6 = { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length };
           cResult[19] = stageBlockedUsers.length;
@@ -775,8 +775,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
     items1 = [tmp12, tmp14];
     cResult[9] = tmp5.buttons;
     cResult[10] = tmp12;
-    cResult[11] = closure_10(channel(6813).SafeAreaPaddingView, obj7);
-    const tmp18 = closure_10(channel(6813).SafeAreaPaddingView, obj7);
+    cResult[11] = closure_10(channel(6814).SafeAreaPaddingView, obj7);
+    const tmp18 = closure_10(channel(6814).SafeAreaPaddingView, obj7);
   }
   function handleJoin() {
     onAccept(channel);
@@ -801,9 +801,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
   const tmp3 = items1(react.useState(0), 2);
   dependencyMap = tmp3[1];
   const first = tmp3[0];
-  let obj = channel(7719);
+  let obj = channel(7720);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  const obj2 = channel(7719);
+  const obj2 = channel(7720);
   const stageIgnoredUsers = obj2.useStageIgnoredUsers(channel.id);
   const length = stageBlockedUsers.length;
   const length2 = stageIgnoredUsers.length;
@@ -811,7 +811,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
     closure_2(nativeEvent.nativeEvent.layout.height);
   }, []);
   const obj3 = { bottom: true, style: tmp2.buttons, onLayout: callback, children: items };
-  const SafeAreaPaddingView = channel(6813).SafeAreaPaddingView;
+  const SafeAreaPaddingView = channel(6814).SafeAreaPaddingView;
   const obj4 = {
     text: intl.string(channel(1126).t.mbD50D),
     onPress: function handleJoin() {
@@ -838,7 +838,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
   const tmp6 = closure_10(SafeAreaPaddingView, obj3);
   HermesBuiltin.arraySpread(items1, stageIgnoredUsers, HermesBuiltin.arraySpread(items1, stageBlockedUsers, 0));
   const obj6 = { scrollable: true, header: closure_9(closure_13, { blockedUserCount: length, ignoredUserCount: length2 }), footer: tmp6, children: items3 };
-  BottomSheet = channel(6839).BottomSheet;
+  BottomSheet = channel(6840).BottomSheet;
   const obj7 = {
     inActionSheet: true,
     contentContainerStyle: tmp2.container,
@@ -852,7 +852,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageBlocked
       return 48;
     }
   };
-  const tmp8 = onAccept(6760);
+  const tmp8 = onAccept(6761);
   intl3 = channel(1126).intl;
   items2 = [items1.length];
   items3 = [closure_9(tmp8, obj7), ];

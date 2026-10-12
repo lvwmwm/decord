@@ -1,9 +1,9 @@
-// Module ID: 6839
-// Function ID: 6840
+// Module ID: 6840
+// Function ID: 6841
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 109, 19, 17, 6840, 21, 5092, 587, 1382, 558, 576, 1631, 5362, 6258, 6306, 5391, 1105, 4850, 6841, 4834, 6842, 5396, 6843, 6844, 6727, 1497, 4972, 6845, 4827, 2]
+// Dependencies: [32, 109, 19, 17, 6841, 21, 5092, 587, 1382, 558, 576, 1631, 5362, 6259, 6307, 5391, 1105, 4850, 6842, 4834, 6843, 5396, 6844, 6845, 6728, 1497, 4972, 6846, 4827, 2]
 
-// Module 6839 (Sheet/BottomSheet)
+// Module 6840 (Sheet/BottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -12,15 +12,15 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4972 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import BottomSheetModal from "BottomSheetModal" /* 6306 */;
-import reactDefault from "react" /* 6841 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6843 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 6844 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import reactDefault from "react" /* 6842 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6844 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 6845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6840 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -47,9 +47,9 @@ let tmp2;
 let unpackModuleId;
 const ConstantsIOS = tmp(1105);
 const useIsScreenReaderEnabled = tmp(5362);
-const NavigatorConstants = tmp(6258);
-const BottomSheetModalDefault = tmp2(6306);
-const NavScrim = tmp2(6727);
+const NavigatorConstants = tmp(6259);
+const BottomSheetModalDefault = tmp2(6307);
+const NavScrim = tmp2(6728);
 let closure_3 = ["startHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "scrollViewStyle", "startExpanded", "onChange", "onExpand", "keyboardShouldPersistTaps", "children", "maxDynamicContentSize", "ref"];
 let closure_4 = ["startHeight", "contentHeight", "maxHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "onChange", "onExpand", "children", "borderGradient", "extraContent", "ref"];
 let closure_5 = ["scrollable", "startHeight", "maxHeight", "containerHeight", "startExpanded", "backdropOpacity", "backdropChildren", "header", "handleComponent", "handleDisabled", "dismissAccessibilityLabel", "footer", "onExpand", "onDismiss", "keyboardShouldPersistTaps", "children", "backgroundStyles", "contentStyles", "bodyStyles", "borderGradient", "showGradient", "extraContent", "contentHeight", "ref"];
@@ -346,11 +346,11 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     const tmp2Result = BottomSheetModalDefault;
     const merged1 = Object.assign(merged);
     if (maxDynamicContentSize == null) {
-      maxDynamicContentSize = height - tmp4(6258).NAV_BAR_HEIGHT_MULTILINE - top;
+      maxDynamicContentSize = height - tmp4(6259).NAV_BAR_HEIGHT_MULTILINE - top;
     }
     obj4 = { bounces: false, keyboardShouldPersistTaps, style: scrollViewStyle, children: closure_20(authStore, obj5) };
     obj5 = { onLayout: callback, style: wrapperStyle, children };
-    BottomSheetScrollView = tmp4(6306).BottomSheetScrollView;
+    BottomSheetScrollView = tmp4(6307).BottomSheetScrollView;
     return closure_20(tmp2Result, obj3);
   }
   items = [];
@@ -984,7 +984,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
       tmp43 = cResult[29];
     }
     const layoutEffect = obj2.useLayoutEffect(tmp42, tmp43);
-    let tmpResult = tmp(6842);
+    let tmpResult = tmp(6843);
     const bottomSheetImperativeHandle = tmpResult.useBottomSheetImperativeHandle(tmp12, ref1);
     if (cResult[30] === close) {
       let tmp46;
@@ -1341,7 +1341,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
                       const obj6 = { children: closure_21(ref1, obj7) };
                       obj7 = { style: tmp75, children: items };
                       items = [tmp76, tmp80];
-                      const LayerScope = tmp(6845).LayerScope;
+                      const LayerScope = tmp(6846).LayerScope;
                       cResult[67] = tmp75;
                       cResult[68] = tmp76;
                       const tmp88 = closure_20(LayerScope, obj6);

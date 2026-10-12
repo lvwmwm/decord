@@ -1,10 +1,10 @@
-// Module ID: 11612
-// Function ID: 11613
+// Module ID: 11614
+// Function ID: 11615
 // Name: AppLauncherPlayUtils
-// Dependencies: [5, 10855, 7014, 11613, 2]
+// Dependencies: [5, 10855, 7015, 11615, 2]
 // Exports: launchActivityInBotDM
 
-// Module 11612 (AppLauncherPlayUtils)
+// Module 11614 (AppLauncherPlayUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _launchActivityInBotDM() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

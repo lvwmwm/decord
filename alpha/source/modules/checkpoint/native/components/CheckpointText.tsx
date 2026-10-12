@@ -1,9 +1,9 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 16019
+// Function ID: 16020
 // Name: CheckpointText
 // Dependencies: [109, 5437, 21, 558, 576, 5088, 2]
 
-// Module 15996 (CheckpointText)
+// Module 16019 (CheckpointText)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import CheckpointConstants from "CheckpointConstants" /* 5437 */;

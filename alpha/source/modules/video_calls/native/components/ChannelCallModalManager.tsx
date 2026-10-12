@@ -1,10 +1,10 @@
 // Module ID: 10967
 // Function ID: 10968
 // Name: ChannelCallModalManager
-// Dependencies: [1390, 5113, 2002, 7481, 2]
+// Dependencies: [1390, 5113, 2002, 7482, 2]
 
 // Module 10967 (ChannelCallModalManager)
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7481 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
 import UserStore from "UserStore" /* 1390 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;

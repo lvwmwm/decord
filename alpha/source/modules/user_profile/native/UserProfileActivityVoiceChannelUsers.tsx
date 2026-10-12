@@ -1,13 +1,13 @@
-// Module ID: 13146
-// Function ID: 13147
+// Module ID: 13151
+// Function ID: 13152
 // Name: UserProfileActivityVoiceChannelUsers
-// Dependencies: [19, 5108, 21, 558, 576, 6053, 504, 5409, 1200, 6179, 1126, 10529, 2]
+// Dependencies: [19, 5108, 21, 558, 576, 6053, 504, 5409, 1200, 6180, 1126, 10530, 2]
 
-// Module 13146 (UserProfileActivityVoiceChannelUsers)
+// Module 13151 (UserProfileActivityVoiceChannelUsers)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10529 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10530 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -80,7 +80,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
                     }
                   }
                 }
-                const tmp16 = jsx(user(6179).TableRow, { onPress, label: tmp9, icon: tmp11, start, end });
+                const tmp16 = jsx(user(6180).TableRow, { onPress, label: tmp9, icon: tmp11, start, end });
                 cResult[14] = end;
                 cResult[15] = onPress;
                 cResult[16] = start;
@@ -131,7 +131,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
     return obj;
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  const TableRow = user(6179).TableRow;
+  const TableRow = user(6180).TableRow;
   const obj4 = NicknameUtilsDefault;
   ({ user, avatarDecoration, size: user(1200).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
   const Avatar = user(1200).Avatar;
@@ -183,13 +183,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         }
         return tmp11;
       }
-      const tmp14 = jsx(onPressUser(10529), { title: first, onBack, scrollable: true, children: tmp8 });
+      const tmp14 = jsx(onPressUser(10530), { title: first, onBack, scrollable: true, children: tmp8 });
       cResult[8] = onBack;
       cResult[9] = tmp8;
       cResult[10] = tmp14;
       tmp11 = tmp14;
     }
-    const tmp10 = jsx(channel(10529).UserProfileStackedActionSheetList, { data: users, keyExtractor: tmp6, renderItem: tmp7 });
+    const tmp10 = jsx(channel(10530).UserProfileStackedActionSheetList, { data: users, keyExtractor: tmp6, renderItem: tmp7 });
     cResult[5] = tmp7;
     cResult[6] = users;
     cResult[7] = tmp10;

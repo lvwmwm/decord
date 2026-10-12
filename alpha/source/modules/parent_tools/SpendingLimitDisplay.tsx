@@ -1,17 +1,17 @@
-// Module ID: 15165
-// Function ID: 15166
+// Module ID: 15188
+// Function ID: 15189
 // Name: SpendingLimitDisplay
-// Dependencies: [1244, 7258, 1392, 558, 576, 504, 15076, 6939, 6940, 1126, 2568, 2]
+// Dependencies: [1244, 7259, 1392, 558, 576, 504, 15099, 6940, 6941, 1126, 2568, 2]
 
-// Module 15165 (SpendingLimitDisplay)
+// Module 15188 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import PriceUtils from "PriceUtils" /* 6939 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 15076 */;
+import PriceUtils from "PriceUtils" /* 6940 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 15099 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7258 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ function getSpendingLimitDisplayState(amount, arg1) {
       return { kind: "spent", monthlyText: formatRateResult };
     } else {
       let obj;
-      let num = tmp6(6940).CurrencyExponents[amount.currency];
+      let num = tmp6(6941).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }

@@ -1,10 +1,10 @@
-// Module ID: 7039
-// Function ID: 7040
+// Module ID: 7040
+// Function ID: 7041
 // Name: getPreviousSafeRouteForNsfwReturn
 // Dependencies: [6073, 2065, 4748, 1085, 5924, 5944, 2]
 // Exports: default
 
-// Module 7039 (getPreviousSafeRouteForNsfwReturn)
+// Module 7040 (getPreviousSafeRouteForNsfwReturn)
 import Constants from "Constants" /* 1085 */;
 import AgeGateUtils from "AgeGateUtils" /* 5924 */;
 import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 6073 */;

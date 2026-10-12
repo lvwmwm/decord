@@ -1,9 +1,9 @@
-// Module ID: 18055
-// Function ID: 18056
+// Module ID: 18113
+// Function ID: 18114
 // Name: NewMemberActionsCompletedModal
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4850, 5093, 5934, 9320, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4850, 5093, 5934, 9321, 1126, 5088, 2]
 
-// Module 18055 (NewMemberActionsCompletedModal)
+// Module 18113 (NewMemberActionsCompletedModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;

@@ -1,22 +1,19 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 17276
+// Function ID: 17277
 // Name: useConjureAttachmentImage
-// Dependencies: [32, 19, 13213, 558, 576, 2]
+// Dependencies: [32, 19, 558, 576, 17061, 2]
 
-// Module 17141 (useConjureAttachmentImage)
+// Module 17276 (useConjureAttachmentImage)
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 17061 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let closure_4;
-let hasOwnProperty;
-({ getAttachmentUrl: closure_4, isAttachmentAvailable: hasOwnProperty } = ConjureConnectionStore);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAttachmentImage(arg0, arg1) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAttachmentImage(arg0, arg1) {
   let closure_0;
   let closure_1;
   let closure_5;
@@ -25,7 +22,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   let tmp5;
   _require = arg0;
   dependencyMap = arg1;
-  const obj = require("react");
+  let obj = require("react");
   const cResult = obj.c(13);
   const tmp2 = _slicedToArray(react.useState(null), 2);
   [tmp3, _slicedToArray] = tmp2;
@@ -65,10 +62,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           tmp12 = obj3;
         }
       }
-      const fn2 = function f() {
+      const fn2 = function o() {
         let tmp = _slicedToArray(null);
-        const promise = hasOwnProperty(closure_0, closure_1);
-        promise.then((result) => {
+        const obj = conjureAttachmentRequests;
+        const result = obj.isAttachmentAvailable(closure_0, closure_1);
+        result.then((result) => {
           const tmp = result;
           if (tmp) {
             if (0 === first) {
@@ -85,10 +83,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       tmp11 = fn2;
     }
   }
-  const fn = function o() {
+  const fn = function s() {
     let c0 = false;
-    const promise = first(c0, closure_1);
-    promise.then((result) => {
+    const obj = closure_0(closure_1[4]);
+    const attachmentUrl = obj.getAttachmentUrl(c0, closure_1);
+    attachmentUrl.then((result) => {
       const tmp = c0;
       if (!tmp) {
         _slicedToArray(result);
@@ -131,8 +130,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   const items = [arg0, arg1, first2];
   const effect = react.useEffect(() => {
     let c0 = false;
-    const promise = first2(c0, closure_1);
-    promise.then((result) => {
+    const obj = closure_0(closure_1[4]);
+    const attachmentUrl = obj.getAttachmentUrl(c0, closure_1);
+    attachmentUrl.then((result) => {
       const tmp = c0;
       if (!tmp) {
         closure_2(result);
@@ -151,13 +151,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       c0 = true;
     };
   }, items);
-  const obj = {
+  let obj = {
     src: first,
     gone: first1,
     handleError: react.useCallback(() => {
       let tmp = closure_2(null);
-      const promise = hasOwnProperty(closure_0, closure_1);
-      promise.then((result) => {
+      const obj = conjureAttachmentRequests;
+      const result = obj.isAttachmentAvailable(closure_0, closure_1);
+      result.then((result) => {
         const tmp = result;
         if (tmp) {
           if (0 === first2) {
@@ -171,6 +172,6 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   items1 = [arg0, arg1, first2];
   return obj;
 });
-const result = size.fileFinishedImporting("modules/conjure/chat/useConjureAttachmentImage.tsx");
+let result = size.fileFinishedImporting("modules/conjure/chat/useConjureAttachmentImage.tsx");
 
-export const useConjureAttachmentImage = tmp3;
+export const useConjureAttachmentImage = tmp2;

@@ -1,18 +1,18 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 12950
+// Function ID: 12951
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 587, 5092, 12949, 1126, 12950, 558, 576, 5088, 1382, 6334, 7406, 7415, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 12951, 1126, 12952, 558, 576, 5088, 1382, 6335, 7407, 7416, 2]
 
-// Module 12948 (AppStoreOverlayStatsCarousel)
+// Module 12950 (AppStoreOverlayStatsCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6334 */;
-import AnalyticsActions from "AnalyticsActions" /* 7406 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 12949 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 12950 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
+import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 12951 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 12952 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -343,7 +343,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(6334);
+  const tmpResult = tmp(6335);
   const nativeGesture = tmpResult.useNativeGesture(first);
   const tmp7 = stats.length <= 2;
   dependencyMap = length.useRef(0);
@@ -568,9 +568,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
           if (bound !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
             if (bound > current) {
-              LEFT = tmp2(7415).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp2(7416).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp2(7415).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp2(7416).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = bound;
@@ -619,9 +619,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7415).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7416).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7415).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7416).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

@@ -1,9 +1,9 @@
-// Module ID: 14199
-// Function ID: 14200
+// Module ID: 14222
+// Function ID: 14223
 // Name: PassthroughTouchNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 14199 (PassthroughTouchNativeComponent)
+// Module 14222 (PassthroughTouchNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

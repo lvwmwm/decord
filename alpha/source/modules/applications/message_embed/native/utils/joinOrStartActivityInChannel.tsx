@@ -1,10 +1,10 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11613
+// Function ID: 11614
 // Name: joinOrStartActivityInChannel
 // Dependencies: [5, 2064, 2065, 2116, 10824, 10853, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11611 (joinOrStartActivityInChannel)
+// Module 11613 (joinOrStartActivityInChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -33,7 +33,7 @@ let obj = function _joinOrStartActivityInChannel() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

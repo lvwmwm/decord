@@ -1,9 +1,9 @@
-// Module ID: 9577
-// Function ID: 9578
+// Module ID: 9578
+// Function ID: 9579
 // Name: ExpressionPickerCategories
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4992, 2]
 
-// Module 9577 (ExpressionPickerCategories)
+// Module 9578 (ExpressionPickerCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

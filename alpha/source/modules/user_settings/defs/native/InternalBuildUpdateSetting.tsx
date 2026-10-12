@@ -1,16 +1,16 @@
-// Module ID: 16096
-// Function ID: 16097
+// Module ID: 16119
+// Function ID: 16120
 // Name: InternalBuildUpdateSetting
-// Dependencies: [14625, 21, 14111, 558, 576, 504, 4702, 15098, 5044, 15229, 10663, 2]
+// Dependencies: [14648, 21, 14134, 558, 576, 504, 4702, 15121, 5044, 15252, 10663, 2]
 
-// Module 16096 (InternalBuildUpdateSetting)
+// Module 16119 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import _modDef4702 from "module_4702" /* 4702 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14111 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15098 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14625 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14134 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15121 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14648 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativ
     if (stateFromStores) {
       RefreshIcon = tmp(5044).DownloadIcon;
     } else {
-      RefreshIcon = tmp(15229).RefreshIcon;
+      RefreshIcon = tmp(15252).RefreshIcon;
     }
     const tmp9Result = tmp9(RefreshIcon, {});
     cResult[2] = stateFromStores;
@@ -163,7 +163,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativ
   if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
     RefreshIcon = tmp(5044).DownloadIcon;
   } else {
-    RefreshIcon = tmp(15229).RefreshIcon;
+    RefreshIcon = tmp(15252).RefreshIcon;
   }
   return tmp3(RefreshIcon, {});
 });

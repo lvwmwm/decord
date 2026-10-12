@@ -1,9 +1,9 @@
-// Module ID: 13433
-// Function ID: 13434
+// Module ID: 13456
+// Function ID: 13457
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6289, 5377, 5088, 12705, 1126, 12707, 13432, 6942, 5031, 13434, 4969, 9039, 5379, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6290, 5377, 5088, 12707, 1126, 12709, 13455, 6943, 5031, 13457, 4969, 9040, 5379, 2]
 
-// Module 13433 (OrbCheckoutModalComponents)
+// Module 13456 (OrbCheckoutModalComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -12,13 +12,13 @@ import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6289 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6942 */;
-import OrbsIcon2 from "OrbsIcon" /* 9039 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 12705 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 12707 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13432 */;
-import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 13434 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6290 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6943 */;
+import OrbsIcon2 from "OrbsIcon" /* 9040 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 12707 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 12709 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13455 */;
+import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 13457 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -363,7 +363,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutL
 }) : (function OrbCheckoutLegalFinePrint() {
   let skuId;
   const tmp = closure_8();
-  let obj = skuId(13432);
+  let obj = skuId(13455);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = react.useMemo(() => {
@@ -465,7 +465,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutP
   }
   const obj3 = { variant: str, size: "lg", text: intl.string(intl3.t["zLch/S"]), icon: metroRequire(OrbsIcon, { size: "md", color: str2 }), iconPosition: "start", loading: isRedeeming, onPress, disabled: isRedeeming };
   intl = tmp3(1126).intl;
-  OrbsIcon = tmp3(9039).OrbsIcon;
+  OrbsIcon = tmp3(9040).OrbsIcon;
   str2 = "control-primary-text-default";
   const tmp3Result2 = shared;
   if (tmp3Result2.isThemeDark(tmp2)) {

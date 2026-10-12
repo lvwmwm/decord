@@ -16,7 +16,7 @@ let closure_52;
 let closure_53;
 let closure_54;
 let closure_55;
-const f83577 = (__h) => {
+const f83796 = (__h) => {
   let closure_0 = __h;
   try {
     __h = __h.__h;
@@ -478,7 +478,7 @@ class C$1 {
         if (obj.__c) {
           let __cResult1 = obj3.__c(tmp8, items);
         }
-        let someResult = items.some(f83577);
+        let someResult = items.some(f83796);
         items.length = 0;
         items1.length = 0;
         let sorted1 = arr3.sort(H);
@@ -502,7 +502,7 @@ class C$1 {
       if (obj.__c) {
         obj4.__c(tmp4, items);
       }
-      items.some(f83577);
+      items.some(f83796);
     }
     C$1.__r = 0;
   }
@@ -2196,12 +2196,12 @@ function Form(onSubmitError) {
     input = screenshotInput.input;
   }
   [tmp12, c14] = tmp3(tmp(tmp2, null), 2);
-  const f83585 = (arg0) => {
+  const f83804 = (arg0) => {
     _undefined(arg0);
     closure_1_13(false);
   };
   items = [emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel];
-  const f83586 = (name) => {
+  const f83805 = (name) => {
     let tmp2 = isEmailRequired;
     let tmp3 = isNameRequired;
     const tmp = emailLabel;
@@ -2233,8 +2233,8 @@ function Form(onSubmitError) {
   };
   c46 = 8;
   tmp3(tmp(tmp2, null), 2);
-  const tmp14 = fn2(() => f83590, []);
-  closure_15 = fn2(() => f83590, items);
+  const tmp14 = fn2(() => f83809, []);
+  closure_15 = fn2(() => f83809, items);
   let closure_0 = screenshotInput(function*(arg0, value) {
     let closure_2;
     let tmp33;
@@ -2249,7 +2249,7 @@ function Form(onSubmitError) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let closure_3;
@@ -2296,7 +2296,7 @@ function Form(onSubmitError) {
               tags = 0;
               closure_1_10(false);
               c6 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           }
         } else if (1 === c5) {
@@ -2337,7 +2337,7 @@ function Form(onSubmitError) {
               tags = 0;
               closure_1_10(false);
               c6 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           }
         } else {
@@ -2371,7 +2371,7 @@ function Form(onSubmitError) {
           tags = 0;
           closure_1_10(false);
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp60) {
         closure_3 = tmp60;
@@ -2391,11 +2391,11 @@ function Form(onSubmitError) {
     screenshotInput = first;
   }
   const items1 = [screenshotInput, onSubmitSuccess, onSubmitError];
-  const f136670 = function(arg0) {
-    return f136670(...arguments);
+  const f136962 = function(arg0) {
+    return f136962(...arguments);
   };
   c46 = 8;
-  obj = { class: "form", onSubmit: tmp13(() => f83590, items1) };
+  obj = { class: "form", onSubmit: tmp13(() => f83809, items1) };
   let tmp15Result = null;
   if (input) {
     tmp15Result = null;
@@ -2542,16 +2542,16 @@ function Dialog(onFormSubmitted) {
   first = tmp3[0];
   let closure_3 = tmp3[1];
   items = [first];
-  const f83589 = () => {
+  const f83808 = () => {
     if (first) {
       const _clearTimeout = clearTimeout;
       clearTimeout(tmp);
       closure_1_3(null);
     }
-    f83589();
+    f83808();
   };
   [][0] = onFormSubmitted;
-  const f83590 = (arg0, arg1) => {
+  const f83809 = (arg0, arg1) => {
     merged.onSubmitSuccess(arg0, arg1);
     closure_1_3(setTimeout(() => {
       closure_1_0();
@@ -2559,7 +2559,7 @@ function Dialog(onFormSubmitted) {
     }, 5000));
   };
   c46 = 8;
-  const tmp5 = fn2(() => f83590, items);
+  const tmp5 = fn2(() => f83809, items);
   const tmp8 = g$1;
   if (first) {
     const obj2 = { class: "success__position", onClick: tmp5 };
@@ -2879,7 +2879,7 @@ const fn3 = function p(keys) {
 const fn4 = function x(arg0, arg1) {
   let closure_0 = arg0;
   c46 = 8;
-  return fn2(() => f83590, arg1);
+  return fn2(() => f83809, arg1);
 };
 let merged = Object.assign({ useCallback: null, useContext: null, useDebugValue: null, useEffect: null, useErrorBoundary: null, useId: null, useImperativeHandle: null, useLayoutEffect: null, useMemo: null, useReducer: null, useRef: null, useState: null });
 merged[0] = fn4;
@@ -3333,7 +3333,7 @@ export const buildFeedbackIntegration = (arg0) => {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -3583,7 +3583,7 @@ export const buildFeedbackIntegration = (arg0) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -3631,7 +3631,7 @@ export const buildFeedbackIntegration = (arg0) => {
               c2.appendToDom();
               c2.open();
               c2 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } catch (tmp14) {
               c2 = 3;
               throw tmp14;
@@ -3970,7 +3970,7 @@ export const buildFeedbackIntegration = (arg0) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else {
             try {
@@ -4219,7 +4219,7 @@ export const feedbackModalIntegration = () => {
         if (closure_2_13.__c) {
           obj3.__c(tmpResult2, __h);
         }
-        __h.some(f83577);
+        __h.some(f83796);
       };
       return obj2;
     }
@@ -4369,7 +4369,7 @@ export const feedbackScreenshotIntegration = () => {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -4437,7 +4437,7 @@ export const feedbackScreenshotIntegration = () => {
                     } else {
                       c2();
                       c3 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp14) {
                     c3 = 3;
@@ -4780,7 +4780,7 @@ export const feedbackScreenshotIntegration = () => {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -4827,7 +4827,7 @@ export const feedbackScreenshotIntegration = () => {
                   return obj6;
                 } else {
                   c4 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 }
               }
             } else if (arg0 === 1) {

@@ -1,17 +1,17 @@
-// Module ID: 13549
-// Function ID: 13550
+// Module ID: 13572
+// Function ID: 13573
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 2065, 1085, 21, 5092, 587, 558, 576, 7725, 5396, 7091, 13543, 504, 7733, 1126, 6264, 7093, 5107, 5088, 2]
+// Dependencies: [32, 19, 17, 2065, 1085, 21, 5092, 587, 558, 576, 7726, 5396, 7092, 13566, 504, 7734, 1126, 6265, 7094, 5107, 5088, 2]
 
-// Module 13549 (InAppReportsSettingsUpsellsElement)
+// Module 13572 (InAppReportsSettingsUpsellsElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import SettingsIcon from "SettingsIcon" /* 7091 */;
-import openUserSettings from "openUserSettings" /* 7093 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 7725 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13543 */;
+import SettingsIcon from "SettingsIcon" /* 7092 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 7726 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13566 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -76,7 +76,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_9(tmp(7091).SettingsIcon, {});
+      const tmp13 = closure_9(tmp(7092).SettingsIcon, {});
       cResult[5] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -96,7 +96,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settin
       }
     }
     const obj2 = { title, disabledTitle, description, disabled: tmp5, onPress: tmp9, icon: tmp11 };
-    const tmp16 = closure_9(tmp7(13543), obj2);
+    const tmp16 = closure_9(tmp7(13566), obj2);
     cResult[6] = description;
     cResult[7] = disabledTitle;
     cResult[8] = tmp5;

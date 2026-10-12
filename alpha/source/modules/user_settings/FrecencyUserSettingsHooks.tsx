@@ -1,9 +1,9 @@
-// Module ID: 9740
-// Function ID: 9741
+// Module ID: 9741
+// Function ID: 9742
 // Name: FrecencyUserSettingsHooks
 // Dependencies: [19, 1244, 558, 576, 2046, 504, 2]
 
-// Module 9740 (FrecencyUserSettingsHooks)
+// Module 9741 (FrecencyUserSettingsHooks)
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2046 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;

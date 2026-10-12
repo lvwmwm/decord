@@ -1,9 +1,9 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 12380
+// Function ID: 12381
 // Name: PortalKeyboardInlineComponent
-// Dependencies: [19, 17, 5081, 558, 576, 4987, 1897, 6304, 1629, 4988, 4985, 5396, 4991, 10374, 2]
+// Dependencies: [19, 17, 5081, 558, 576, 4987, 1897, 6305, 1629, 4988, 4985, 5396, 4991, 10375, 2]
 
-// Module 12378 (PortalKeyboardInlineComponent)
+// Module 12380 (PortalKeyboardInlineComponent)
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -38,7 +38,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  const tmp9 = id(6304)(first);
+  const tmp9 = id(6305)(first);
   react = tmp9;
   let tmpResult = tmp(4987);
   const keyboardContextForType = tmpResult.useKeyboardContextForType(tmp(1629).KeyboardTypes.SYSTEM);
@@ -191,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp2 = id(4987)();
   dependencyMap = tmp2;
   const tmp3 = id(1897)();
-  let tmp4 = id(6304)({ includeCustomKeyboard: false });
+  let tmp4 = id(6305)({ includeCustomKeyboard: false });
   react = tmp4;
   let obj = messagesRef(4987);
   const keyboardContextForType = obj.useKeyboardContextForType(messagesRef(1629).KeyboardTypes.SYSTEM);

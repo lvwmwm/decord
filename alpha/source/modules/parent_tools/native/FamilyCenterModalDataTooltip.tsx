@@ -1,9 +1,9 @@
-// Module ID: 15147
-// Function ID: 15148
+// Module ID: 15170
+// Function ID: 15171
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [32, 19, 17, 7259, 21, 8198, 11534, 4815, 13857, 8200, 7557, 5051, 11536, 5092, 587, 558, 576, 5088, 1126, 2568, 11533, 7739, 7741, 7514, 7515, 11539, 5379, 5934, 6200, 10602, 2]
+// Dependencies: [32, 19, 17, 7260, 21, 8199, 11536, 4815, 13880, 8201, 7558, 5051, 11538, 5092, 587, 558, 576, 5088, 1126, 2568, 11535, 7740, 7742, 7515, 7516, 11541, 5379, 5934, 6201, 10603, 2]
 
-// Module 15147 (FamilyCenterModalDataTooltip)
+// Module 15170 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,16 +12,16 @@ import _modDef2568 from "module_2568" /* 2568 */;
 import FriendsIcon from "FriendsIcon" /* 4815 */;
 import ClockIcon from "ClockIcon" /* 5051 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7259 */;
-import CreditCardIcon from "CreditCardIcon" /* 7557 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7739 */;
-import ChatIcon from "ChatIcon" /* 8198 */;
-import ThreadIcon from "ThreadIcon" /* 8200 */;
-import Modal2 from "Modal" /* 10602 */;
-import PhoneIcon from "PhoneIcon" /* 11534 */;
-import GiftIcon from "GiftIcon" /* 11536 */;
-import ServerGridIcon from "ServerGridIcon" /* 13857 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
+import CreditCardIcon from "CreditCardIcon" /* 7558 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7740 */;
+import ChatIcon from "ChatIcon" /* 8199 */;
+import ThreadIcon from "ThreadIcon" /* 8201 */;
+import Modal2 from "Modal" /* 10603 */;
+import PhoneIcon from "PhoneIcon" /* 11536 */;
+import GiftIcon from "GiftIcon" /* 11538 */;
+import ServerGridIcon from "ServerGridIcon" /* 13880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -218,7 +218,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   } else {
     [tmp5, tmp6] = cResult;
   }
-  const tmpResult = tmp(11533);
+  const tmpResult = tmp(11535);
   const ageSpecificText = tmpResult.useAgeSpecificText(tmp5, tmp6);
   const tmp12 = useIsInAdultAgeGroupDefault();
   _require = tmp12;
@@ -249,7 +249,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
                 const _Symbol = Symbol;
                 if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
                   let obj2 = { children: closure_6(Button, obj3) };
-                  const ModalFooter = tmp(11539).ModalFooter;
+                  const ModalFooter = tmp(11541).ModalFooter;
                   obj3 = { variant: "primary", text: intl3.string(tmp(1126).t["NX+WJN"]), onPress: ModalActionCreatorsDefault.pop };
                   Button = tmp(5379).Button;
                   intl3 = tmp(1126).intl;
@@ -295,10 +295,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       }
     }
   }
-  const tmpResult2 = tmp(7741);
+  const tmpResult2 = tmp(7742);
   const sortedActivityTypeConfigs = tmpResult2.getSortedActivityTypeConfigs();
-  const ModalScreen = tmp(7514).ModalScreen;
-  const ModalContent = tmp(7515).ModalContent;
+  const ModalScreen = tmp(7515).ModalScreen;
+  const ModalContent = tmp(7516).ModalContent;
   const container = tmp4.container;
   if (cResult[12] === ageSpecificText) {
     let tmp20;
@@ -425,7 +425,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { initialRouteName: "DATA_TOOLTIP", screens: first, headerBackTitle: intl.string(intl4.t["13/7kX"]) };
-    const Modal = tmp(10602).Modal;
+    const Modal = tmp(10603).Modal;
     intl = tmp(1126).intl;
     const tmp8 = metroRequire(Modal, obj4);
     cResult[1] = tmp8;

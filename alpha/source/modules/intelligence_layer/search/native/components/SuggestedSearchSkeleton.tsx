@@ -1,15 +1,15 @@
-// Module ID: 17395
-// Function ID: 17396
+// Module ID: 17452
+// Function ID: 17453
 // Name: SuggestedSearchSkeleton
-// Dependencies: [19, 17, 12036, 9312, 21, 5092, 587, 558, 576, 4850, 5093, 2]
+// Dependencies: [19, 17, 12038, 9313, 21, 5092, 587, 558, 576, 4850, 5093, 2]
 
-// Module 17395 (SuggestedSearchSkeleton)
+// Module 17452 (SuggestedSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
-import SearchConstants from "SearchConstants" /* 9312 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 12036 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12038 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

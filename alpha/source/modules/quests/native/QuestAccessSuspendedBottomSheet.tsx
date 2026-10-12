@@ -1,17 +1,17 @@
-// Module ID: 15374
-// Function ID: 15375
+// Module ID: 15397
+// Function ID: 15398
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 21, 558, 576, 5056, 15373, 11506, 1126, 10323, 5379, 2]
+// Dependencies: [19, 21, 558, 576, 5056, 15396, 11508, 1126, 10324, 5379, 2]
 
-// Module 15374 (QuestAccessSuspendedBottomSheet)
+// Module 15397 (QuestAccessSuspendedBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import PromoSheet2 from "PromoSheet" /* 10323 */;
-import openAccountStanding from "openAccountStanding" /* 11506 */;
-import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 15373 */;
+import PromoSheet2 from "PromoSheet" /* 10324 */;
+import openAccountStanding from "openAccountStanding" /* 11508 */;
+import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 15396 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestAcces
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const PromoSheet = tmp(10323).PromoSheet;
+    const PromoSheet = tmp(10324).PromoSheet;
     ({ grow: true, size: "lg", variant: "primary", text: intl3.string(intl4.t.hvVgAZ), onPress: first });
     const Button = tmp(5379).Button;
     intl3 = tmp(1126).intl;

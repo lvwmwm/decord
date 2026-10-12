@@ -1,9 +1,9 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8666
+// Function ID: 8667
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 2065, 2087, 2071, 8514, 21, 5092, 587, 5934, 558, 576, 1126, 1200, 6777, 6184, 5088, 8659, 504, 8572, 8666, 7496, 8669, 5379, 6813, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 2087, 2071, 8515, 21, 5092, 587, 5934, 558, 576, 1126, 1200, 6778, 6185, 5088, 8660, 504, 8573, 8667, 7497, 8670, 5379, 6814, 2]
 
-// Module 8665 (StartEventModal)
+// Module 8666 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,10 +11,10 @@ import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import Pressables from "Pressables" /* 6184 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6777 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8514 */;
-import GuildEventCardDefault from "GuildEventCard" /* 8659 */;
+import Pressables from "Pressables" /* 6185 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6778 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8515 */;
+import GuildEventCardDefault from "GuildEventCard" /* 8660 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -541,7 +541,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -579,7 +579,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;
@@ -644,7 +644,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEventMo
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp10) {
           c0 = 3;
           throw tmp10;

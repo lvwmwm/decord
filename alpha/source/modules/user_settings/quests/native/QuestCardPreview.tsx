@@ -1,15 +1,15 @@
-// Module ID: 15426
-// Function ID: 15427
+// Module ID: 15449
+// Function ID: 15450
 // Name: QuestCardPreview
-// Dependencies: [21, 558, 576, 15427, 1126, 15342, 587, 5975, 12981, 2]
+// Dependencies: [21, 558, 576, 15450, 1126, 15365, 587, 5975, 12983, 2]
 
-// Module 15426 (QuestCardPreview)
+// Module 15449 (QuestCardPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import QuestCard2 from "QuestCard" /* 15342 */;
-import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 15427 */;
+import QuestCard2 from "QuestCard" /* 15365 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 15450 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestCardP
     }
     return tmp5;
   }
-  const QuestContentImpressionTrackerNative = tmp(12981).QuestContentImpressionTrackerNative;
+  const QuestContentImpressionTrackerNative = tmp(12983).QuestContentImpressionTrackerNative;
   const tmp6 = <QuestContentImpressionTrackerNative questOrQuests={quest} questContent={tmp(5975).QuestContent.INTERNAL_PREVIEW_TOOL} sourceQuestContent={tmp(5975).QuestContent.INTERNAL_PREVIEW_TOOL} trackGuildAndChannelMetadata={false}>{tmp4}</QuestContentImpressionTrackerNative>;
   cResult[2] = quest;
   cResult[3] = tmp4;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestCardP
   tmp5 = tmp6;
 }) : (function QuestCardPreview(quest) {
   quest = quest.quest;
-  const QuestContentImpressionTrackerNative = quest(12981).QuestContentImpressionTrackerNative;
+  const QuestContentImpressionTrackerNative = quest(12983).QuestContentImpressionTrackerNative;
   return <QuestContentImpressionTrackerNative questOrQuests={quest} questContent={quest(5975).QuestContent.INTERNAL_PREVIEW_TOOL} sourceQuestContent={quest(5975).QuestContent.INTERNAL_PREVIEW_TOOL} trackGuildAndChannelMetadata={false}>{function children() {
     MobileQuestPreviewContainerDefault;
     const intl = intl2.intl;

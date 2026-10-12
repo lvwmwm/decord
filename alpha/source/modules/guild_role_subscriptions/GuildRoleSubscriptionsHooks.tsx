@@ -1,16 +1,16 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15505
+// Function ID: 15506
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 5757, 4743, 558, 576, 504, 6957, 6160, 15483, 15484, 11911, 1388, 2]
+// Dependencies: [5, 32, 19, 5757, 4743, 558, 576, 504, 6958, 6161, 15506, 15507, 11913, 1388, 2]
 // Exports: useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchSubscriptionsSettings, usePublishSubscriptionListing, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 15482 (GuildRoleSubscriptionsHooks)
+// Module 15505 (GuildRoleSubscriptionsHooks)
 import react2 from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4743 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6957 */;
-import useRequestDefault from "useRequest" /* 11911 */;
-import subscriptionUtils from "subscriptionUtils" /* 15484 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6958 */;
+import useRequestDefault from "useRequest" /* 11913 */;
+import subscriptionUtils from "subscriptionUtils" /* 15507 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -1026,7 +1026,7 @@ export const useCreateSubscriptionGroupListing = function useCreateSubscriptionG
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -1059,7 +1059,7 @@ export const useCreateSubscriptionGroupListing = function useCreateSubscriptionG
             c5 = 0;
             closure_130_0(false);
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -1126,7 +1126,7 @@ export const useUpdateSubscriptionGroupListing = function useUpdateSubscriptionG
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -1160,7 +1160,7 @@ export const useUpdateSubscriptionGroupListing = function useUpdateSubscriptionG
           c6 = 0;
           closure_0(false);
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } else if (arg0 === 1) {
           c7 = 3;
           throw value;
@@ -1224,7 +1224,7 @@ export const useDeleteSubscriptionListing = function useDeleteSubscriptionListin
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -1258,7 +1258,7 @@ export const useDeleteSubscriptionListing = function useDeleteSubscriptionListin
             c6 = 0;
             closure_131_0(false);
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -1325,7 +1325,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -1375,7 +1375,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
               c4 = 0;
               closure_130_0(false);
               c6 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -1446,7 +1446,7 @@ export const useUpdateSubscriptionsSettings = function useUpdateSubscriptionsSet
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -1494,7 +1494,7 @@ export const useUpdateSubscriptionsSettings = function useUpdateSubscriptionsSet
           c5 = 0;
           closure_0(false);
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp29) {
         closure_4 = tmp29;
@@ -1536,7 +1536,7 @@ export const useDeleteSubscriptionGroupListing = function useDeleteSubscriptionG
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c5;
@@ -1569,7 +1569,7 @@ export const useDeleteSubscriptionGroupListing = function useDeleteSubscriptionG
             c5 = 0;
             closure_130_0(false);
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -1634,7 +1634,7 @@ export const useFetchSubscriptionsSettings = function useFetchSubscriptionsSetti
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -1681,7 +1681,7 @@ export const useFetchSubscriptionsSettings = function useFetchSubscriptionsSetti
           c4 = 0;
           closure_0(false);
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         closure_3 = tmp28;
@@ -1728,7 +1728,7 @@ export const useUpdateSubscriptionsTrial = function useUpdateSubscriptionsTrial(
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -1776,7 +1776,7 @@ export const useUpdateSubscriptionsTrial = function useUpdateSubscriptionsTrial(
           c6 = 0;
           closure_0(false);
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp30) {
         closure_5 = tmp30;

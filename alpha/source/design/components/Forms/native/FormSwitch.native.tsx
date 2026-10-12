@@ -1,10 +1,10 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6897
+// Function ID: 6898
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4850, 5092, 587, 5381, 4834, 5378, 5382, 4818, 6178, 6897, 5057, 5058, 2]
+// Dependencies: [32, 19, 17, 21, 4850, 5092, 587, 5381, 4834, 5378, 5382, 4818, 6179, 6898, 5057, 5058, 2]
 // Exports: FormSwitch
 
-// Module 6896 (FormSwitch)
+// Module 6897 (FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

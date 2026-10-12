@@ -1,12 +1,12 @@
-// Module ID: 8109
-// Function ID: 8110
+// Module ID: 8110
+// Function ID: 8111
 // Name: PremiumGiftingUtils
-// Dependencies: [5, 2065, 5085, 7014, 38, 5633, 7178, 7369, 2]
+// Dependencies: [5, 2065, 5085, 7015, 38, 5633, 7179, 7370, 2]
 // Exports: sendGiftMessage, unhandledGiftIntent
 
-// Module 8109 (PremiumGiftingUtils)
+// Module 8110 (PremiumGiftingUtils)
 import MessageConstants from "MessageConstants" /* 5085 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _sendGiftMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

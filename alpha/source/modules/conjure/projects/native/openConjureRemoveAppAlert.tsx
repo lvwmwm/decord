@@ -1,10 +1,10 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17079
+// Function ID: 17080
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 5092, 558, 576, 17060, 1126, 3849, 11432, 11411, 4809, 5088, 5377, 5305, 5301, 2]
+// Dependencies: [5, 32, 19, 21, 5092, 558, 576, 17080, 1126, 3849, 11434, 11413, 11411, 4809, 5088, 5377, 5305, 5301, 2]
 // Exports: default
 
-// Module 17059 (openConjureRemoveAppAlert)
+// Module 17079 (openConjureRemoveAppAlert)
 import useAlertStore from "useAlertStore" /* 5301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -104,7 +104,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                             let tmp36 = null;
                             if (null != tmp13) {
                               let obj2 = { variant: "text-sm/normal", color: "text-muted", children: tmp13 };
-                              tmp36 = closure_6(tmp(tmp2[13]).Text, obj2);
+                              tmp36 = closure_6(tmp(tmp2[14]).Text, obj2);
                             }
                             cResult[28] = tmp13;
                             cResult[29] = tmp36;
@@ -116,7 +116,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                             let tmp39 = null;
                             if (null != tmp8) {
                               let obj3 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp8 };
-                              tmp39 = closure_6(tmp(tmp2[13]).Text, obj3);
+                              tmp39 = closure_6(tmp(tmp2[14]).Text, obj3);
                             }
                             cResult[30] = tmp8;
                             cResult[31] = tmp39;
@@ -152,7 +152,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                                 const _Symbol = Symbol;
                                 if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
                                   let obj4 = { variant: "secondary", text: intl4.string(tmp(tmp2[8]).t["ETE/oC"]) };
-                                  const AlertActionButton = tmp(tmp2[15]).AlertActionButton;
+                                  const AlertActionButton = tmp(tmp2[16]).AlertActionButton;
                                   intl4 = tmp(tmp2[8]).intl;
                                   const tmp54 = closure_6(AlertActionButton, obj4);
                                   cResult[41] = tmp54;
@@ -182,7 +182,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                                   }
                                 }
                                 let obj6 = { title: tmp23, content: tmp26, extraContent: tmp41, actions: tmp55 };
-                                const tmp61 = closure_6(tmp(tmp2[15]).AlertModal, obj6);
+                                const tmp61 = closure_6(tmp(tmp2[16]).AlertModal, obj6);
                                 cResult[44] = tmp41;
                                 cResult[45] = tmp55;
                                 cResult[46] = tmp23;
@@ -191,16 +191,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                                 tmp59 = tmp61;
                               }
                               let obj7 = { variant: "destructive", text: tmp44, onPress: tmp21 };
-                              const tmp50 = closure_6(tmp(tmp2[15]).AlertActionButton, obj7);
+                              const tmp50 = closure_6(tmp(tmp2[16]).AlertActionButton, obj7);
                               cResult[38] = tmp21;
                               cResult[39] = tmp44;
                               cResult[40] = tmp50;
                               tmp48 = tmp50;
                             }
                           }
-                          let obj8 = { spacing: 12, children: items1 };
+                          const obj8 = { spacing: 12, children: items1 };
                           items1 = [tmp29, tmp35, tmp38];
-                          const tmp43 = closure_7(tmp(tmp2[14]).Stack, obj8);
+                          const tmp43 = closure_7(tmp(tmp2[15]).Stack, obj8);
                           cResult[32] = tmp38;
                           cResult[33] = tmp29;
                           cResult[34] = tmp35;
@@ -243,7 +243,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 }
                 const obj11 = { variant: "heading-lg/bold", color: "none", style: tmp16.title, children: tmp17 };
                 const tmpResult7 = tmp(tmp2[7]);
-                const result2 = tmpResult7.conjureTitleWithAppTag(closure_6(tmp(tmp2[13]).Text, obj11));
+                const result2 = tmpResult7.conjureTitleWithAppTag(closure_6(tmp(tmp2[14]).Text, obj11));
                 cResult[17] = tmp16.title;
                 cResult[18] = tmp17;
                 cResult[19] = result2;
@@ -264,7 +264,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             } else {
               try {
@@ -284,12 +284,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                     tmp = undefined;
                     closure_1 = undefined;
                     c3(null);
-                    const obj8 = tmp(checked[11]);
                     if (closure_1_4) {
-                      deleteProjectResult = obj8.deleteProject(tmp.id);
+                      const tmp46Result = tmp(checked[11]);
+                      deleteProjectResult = tmp46Result.deleteProject(tmp.id);
                     } else {
                       const obj5 = { alsoRemovePreviewBot };
-                      deleteProjectResult = obj8.unpublishProject(tmp.id, obj5);
+                      const tmp46Result2 = tmp(checked[12]);
+                      deleteProjectResult = tmp46Result2.unpublishProject(tmp.id, obj5);
                     }
                     alsoRemovePreviewBot = 1;
                     c3 = 1;
@@ -330,13 +331,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                     const tmp8 = closure_1_4;
                     if (!tmp8) {
                       const obj = { text: obj2.conjureRemoveAppSuccess(closure_1), variant: "success" };
-                      const open = target(checked[12]).open;
-                      const tmp11 = target(checked[12]);
+                      const open = target(checked[13]).open;
+                      const tmp11 = target(checked[13]);
                       obj2 = tmp(checked[7]);
                       open("CONJURE_APP_REMOVED", obj);
                     }
                     c3 = 3;
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 }
               } catch (tmp36) {
@@ -434,7 +435,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -454,12 +455,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
               tmp2 = undefined;
               tmp = undefined;
               _undefined(null);
-              const obj8 = tmp2(alsoRemovePreviewBot[11]);
               if (closure_2_4) {
-                deleteProjectResult = obj8.deleteProject(user.id);
+                const tmp46Result = tmp2(alsoRemovePreviewBot[11]);
+                deleteProjectResult = tmp46Result.deleteProject(user.id);
               } else {
                 const obj5 = { alsoRemovePreviewBot };
-                deleteProjectResult = obj8.unpublishProject(user.id, obj5);
+                const tmp46Result2 = tmp2(alsoRemovePreviewBot[12]);
+                deleteProjectResult = tmp46Result2.unpublishProject(user.id, obj5);
               }
               alsoRemovePreviewBot = 1;
               c3 = 1;
@@ -500,13 +502,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
               const tmp8 = closure_129_4;
               if (!tmp8) {
                 obj = { text: obj2.conjureRemoveAppSuccess(closure_129_1), variant: "success" };
-                const open = tmp(alsoRemovePreviewBot[12]).open;
-                const tmp11 = tmp(alsoRemovePreviewBot[12]);
+                const open = tmp(alsoRemovePreviewBot[13]).open;
+                const tmp11 = tmp(alsoRemovePreviewBot[13]);
                 obj2 = tmp2(alsoRemovePreviewBot[7]);
                 open("CONJURE_APP_REMOVED", obj);
               }
               c3 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp36) {
@@ -551,8 +553,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     formatToPlainStringResult = tmp10Result6.formatWithAppTag(target(tmp9[9]).x6FvsZ, target.appName);
     tmp16 = target;
   }
-  let obj3 = { title: tmp10Result7.conjureTitleWithAppTag(closure_6(tmp10(tmp9[13]).Text, obj4)), content: result3, extraContent: tmp20(Stack, { spacing: 12, children: items }), actions: tmp20(closure_8, obj9) };
-  const AlertModal = tmp10(tmp9[15]).AlertModal;
+  let obj3 = { title: tmp10Result7.conjureTitleWithAppTag(closure_6(tmp10(tmp9[14]).Text, obj4)), content: result3, extraContent: tmp20(Stack, { spacing: 12, children: items }), actions: tmp20(closure_8, obj9) };
+  const AlertModal = tmp10(tmp9[16]).AlertModal;
   obj4 = { variant: "heading-lg/bold", color: "none", style: tmp13.title, children: formatToPlainStringResult };
   tmp10Result7 = tmp10(tmp9[7]);
   if ("delete" === action) {
@@ -562,7 +564,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     const intl2 = tmp10(tmp9[8]).intl;
     result3 = intl2.string(tmp16(tmp9[9])["8OKM1N"]);
   }
-  Stack = tmp10(tmp9[14]).Stack;
+  Stack = tmp10(tmp9[15]).Stack;
   if (result.length > 0) {
     let obj5 = { items: result, optionalItem: tmp23 };
     tmp23 = undefined;
@@ -579,16 +581,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let tmp18Result3 = null;
   if (null != result2) {
     let obj7 = { variant: "text-sm/normal", color: "text-muted", children: result2 };
-    tmp18Result3 = tmp18(tmp10(tmp9[13]).Text, obj7);
+    tmp18Result3 = tmp18(tmp10(tmp9[14]).Text, obj7);
   }
   items[1] = tmp18Result3;
   let tmp18Result4 = null;
   if (null != tmp5) {
-    let obj8 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp5 };
-    tmp18Result4 = tmp18(tmp10(tmp9[13]).Text, obj8);
+    const obj8 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp5 };
+    tmp18Result4 = tmp18(tmp10(tmp9[14]).Text, obj8);
   }
   items[2] = tmp18Result4;
-  const AlertActionButton = tmp10(tmp9[15]).AlertActionButton;
+  const AlertActionButton = tmp10(tmp9[16]).AlertActionButton;
   const intl3 = tmp10(tmp9[8]).intl;
   let string = intl3.string;
   const tmp16Result2 = tmp16(tmp9[9]);
@@ -603,7 +605,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   };
   items1[0] = closure_6(AlertActionButton, obj10);
   const obj11 = { variant: "secondary", text: intl4.string(tmp10(tmp9[8]).t["ETE/oC"]) };
-  const AlertActionButton2 = tmp10(tmp9[15]).AlertActionButton;
+  const AlertActionButton2 = tmp10(tmp9[16]).AlertActionButton;
   intl4 = tmp10(tmp9[8]).intl;
   items1[1] = closure_6(AlertActionButton2, obj11);
   return closure_6(AlertModal, obj3);

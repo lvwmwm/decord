@@ -1,15 +1,15 @@
-// Module ID: 15164
-// Function ID: 15165
+// Module ID: 15187
+// Function ID: 15188
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 7258, 15074, 504, 6940, 15076, 2]
+// Dependencies: [5, 32, 19, 7259, 15097, 504, 6941, 15099, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 15164 (ChangeSpendingLimitFormState)
-import SpendingLimitUtils from "SpendingLimitUtils" /* 15076 */;
+// Module 15187 (ChangeSpendingLimitFormState)
+import SpendingLimitUtils from "SpendingLimitUtils" /* 15099 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7258 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -119,7 +119,7 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -155,7 +155,7 @@ export const useChangeSpendingLimitFormState = function useChangeSpendingLimitFo
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else if (1 === controlledSetting) {
           c3 = 0;

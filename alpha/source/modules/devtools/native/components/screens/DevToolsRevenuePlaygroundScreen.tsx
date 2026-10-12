@@ -1,9 +1,9 @@
-// Module ID: 16033
-// Function ID: 16034
+// Module ID: 16056
+// Function ID: 16057
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8106, 7347, 1244, 2065, 2116, 1390, 5091, 1392, 21, 584, 573, 1295, 4809, 6179, 6188, 6264, 6891, 7178, 1200, 587, 10096, 5092, 7169, 5056, 16034, 2000, 558, 576, 6895, 16041, 12740, 11343, 5934, 16042, 16045, 16049, 16051, 16054, 2]
+// Dependencies: [5, 32, 19, 17, 8107, 7348, 1244, 2065, 2116, 1390, 5091, 1392, 21, 584, 573, 1295, 4809, 6180, 6189, 6265, 6892, 7179, 1200, 587, 10097, 5092, 7170, 5056, 16057, 2000, 558, 576, 6896, 16064, 12742, 11343, 5934, 16065, 16068, 16072, 16074, 16077, 2]
 
-// Module 16033 (DevToolsRevenuePlaygroundScreen)
+// Module 16056 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,19 +11,19 @@ import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import DevSettingsStore2 from "DevSettingsStore" /* 5091 */;
-import TableRow6 from "TableRow" /* 6179 */;
-import TableRowArrow from "TableRowArrow" /* 6188 */;
-import TableRowGroup4 from "TableRowGroup" /* 6264 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6891 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6895 */;
+import TableRow6 from "TableRow" /* 6180 */;
+import TableRowArrow from "TableRowArrow" /* 6189 */;
+import TableRowGroup4 from "TableRowGroup" /* 6265 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6892 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
 import BundleUpdaterDefault from "BundleUpdater" /* 11343 */;
-import IAPUtils from "IAPUtils" /* 12740 */;
-import DevSettingsActions from "DevSettingsActions" /* 16041 */;
+import IAPUtils from "IAPUtils" /* 12742 */;
+import DevSettingsActions from "DevSettingsActions" /* 16064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8106 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7347 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8107 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -246,7 +246,7 @@ function FriendAnniversary() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -317,7 +317,7 @@ function FriendAnniversary() {
           c4 = 0;
           closure_130_7(false);
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp49) {
         closure_3 = tmp49;
@@ -353,7 +353,7 @@ function FriendAnniversary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -420,7 +420,7 @@ function FriendAnniversary() {
             c5 = 0;
             closure_1_8(false);
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp40) {
           closure_4 = tmp40;
@@ -689,10 +689,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(7169);
+  let obj = premiumTrialOffer(7170);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(6264).TableRowGroup;
-  const TableRow = premiumTrialOffer(6179).TableRow;
+  const TableRowGroup = premiumTrialOffer(6265).TableRowGroup;
+  const TableRow = premiumTrialOffer(6180).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -701,12 +701,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(16034, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16057, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(6179).TableRow;
+  const TableRow2 = tmp(6180).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -716,7 +716,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(16034, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16057, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -969,9 +969,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceM
     tmp11 = cResult[3];
   }
   if (cResult[4] !== (tmp8 || stateFromStores)) {
-    const TableRowGroup = tmp(6264).TableRowGroup;
+    const TableRowGroup = tmp(6265).TableRowGroup;
     let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
-    const TableSwitchRow = tmp(6895).TableSwitchRow;
+    const TableSwitchRow = tmp(6896).TableSwitchRow;
     if (tmp8) {
       str = "Forced on - the current device can't fetch real StoreKit products.";
     }

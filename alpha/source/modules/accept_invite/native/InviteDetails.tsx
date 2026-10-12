@@ -1,9 +1,9 @@
-// Module ID: 12479
-// Function ID: 12480
+// Module ID: 12481
+// Function ID: 12482
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 12125, 1404, 1390, 1085, 12480, 21, 5092, 587, 5969, 558, 576, 7422, 1200, 12481, 4962, 1126, 6162, 5088, 1415, 6156, 1265, 504, 5379, 5958, 12482, 8530, 2]
+// Dependencies: [32, 19, 17, 12127, 1404, 1390, 1085, 12482, 21, 5092, 587, 5969, 558, 576, 7423, 1200, 12483, 4962, 1126, 6163, 5088, 1415, 6157, 1265, 504, 5379, 5958, 12484, 8531, 2]
 
-// Module 12479 (InviteDetails)
+// Module 12481 (InviteDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,15 +15,15 @@ import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import LegacyTokens from "LegacyTokens" /* 5969 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import GuildBadgeDefault from "GuildBadge" /* 6162 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7422 */;
-import HubConstants from "HubConstants" /* 12480 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 12481 */;
-import InviteRolesListDefault from "InviteRolesList" /* 12482 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import GuildBadgeDefault from "GuildBadge" /* 6163 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
+import HubConstants from "HubConstants" /* 12482 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 12483 */;
+import InviteRolesListDefault from "InviteRolesList" /* 12484 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MultiAccountStore_mod from "MultiAccountStore" /* 12125 */;
+import MultiAccountStore_mod from "MultiAccountStore" /* 12127 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
@@ -603,7 +603,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   }, items);
   const intl = invite(1126).intl;
   const stringResult = intl.string(invite(1126).t["3rE1P8"]);
-  let obj = invite(7422);
+  let obj = invite(7423);
   if (obj.isFriendInvite(invite)) {
     const intl7 = tmp3(1126).intl;
     const format3 = intl7.format;
@@ -612,7 +612,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     obj11 = isGuildMember(4962);
     format3Result = format3(Quj7HX, obj2);
   } else {
-    const tmp3Result = invite(7422);
+    const tmp3Result = invite(7423);
     if (tmp3Result.isGroupDMInvite(invite)) {
       if (null != invite.channel) {
         let format2Result;
@@ -629,7 +629,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
       const intl5 = tmp3(1126).intl;
       format2Result = intl5.string(tmp3(1126).t.OsdY8B);
     } else {
-      const tmp3Result3 = invite(7422);
+      const tmp3Result3 = invite(7423);
       if (tmp3Result3.isStreamInvite(invite)) {
         if (null != invite.target_user) {
           const intl4 = tmp3(1126).intl;
@@ -671,9 +671,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   const tmp20 = closure_13;
   if (null != memo) {
     tmp22 = null;
-    const tmp3Result4 = invite(7422);
+    const tmp3Result4 = invite(7423);
     if (!tmp3Result4.isFriendInvite(invite)) {
-      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(6156), obj12) };
+      const obj10 = { style: tmp.inviterIconWrapper, children: closure_12(isGuildMember(6157), obj12) };
       obj12 = { source: memo, style: tmp.inviterIcon };
       tmp22 = closure_12(tmp21, obj10);
     }
@@ -1296,11 +1296,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteDetail
   if (tmp8Result) {
     const obj10 = { event: guild_scheduled_event };
     const obj9 = { style: tmp.embedDetailsCard, children: items3 };
-    items3 = [closure_12(invite(8530).GuildEventCardHeader, obj10), , ];
+    items3 = [closure_12(invite(8531).GuildEventCardHeader, obj10), , ];
     const obj11 = { event: guild_scheduled_event };
-    items3[1] = closure_12(invite(8530).GuildEventCardMetaInfo, obj11);
+    items3[1] = closure_12(invite(8531).GuildEventCardMetaInfo, obj11);
     const obj12 = { event: guild_scheduled_event };
-    items3[2] = closure_12(invite(8530).GuildEventCardGuildInfo, obj12);
+    items3[2] = closure_12(invite(8531).GuildEventCardGuildInfo, obj12);
     tmp8Result = tmp8(View, obj9);
   }
   items2[5] = tmp8Result;

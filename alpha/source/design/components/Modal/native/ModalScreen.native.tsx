@@ -1,14 +1,14 @@
-// Module ID: 7514
-// Function ID: 7515
+// Module ID: 7515
+// Function ID: 7516
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6664, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6665, 2]
 
-// Module 7514 (ModalScreen)
+// Module 7515 (ModalScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6664 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 14777
-// Function ID: 14778
+// Module ID: 14801
+// Function ID: 14802
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 6036, 2069, 502, 2065, 5110, 2116, 1390, 14705, 2064, 1085, 14704, 1295, 4739, 10869, 5296, 1265, 10804, 10855, 10856, 5106, 1279, 2031, 9252, 2002, 1121, 584, 10480, 10808, 10814, 10820, 6852, 10846, 1126, 10921, 10848, 10923, 11613, 5442, 6878, 2]
+// Dependencies: [5, 6036, 2069, 502, 2065, 5110, 2116, 1390, 14728, 2064, 1085, 14727, 1295, 4739, 10869, 5296, 1265, 10804, 10855, 10856, 5106, 1279, 2031, 9253, 2002, 1121, 584, 10481, 10808, 10814, 10820, 6853, 10846, 1126, 10921, 10848, 10923, 11615, 5442, 6879, 2]
 
-// Module 14777 (EmbeddedActivitiesManager)
+// Module 14801 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -14,14 +14,14 @@ import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 473
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 5296 */;
 import InteractionTypes from "InteractionTypes" /* 5442 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9252 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9253 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
 import getURLForApplication from "getURLForApplication" /* 10808 */;
 import tryLaunchAsFrame from "tryLaunchAsFrame" /* 10855 */;
 import pendingFrameLaunch from "pendingFrameLaunch" /* 10856 */;
 import getShelfItemDataDefault from "getShelfItemData" /* 10869 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 14704 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 14727 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -29,7 +29,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import UserStore from "UserStore" /* 1390 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 14705 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 14728 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import Constants from "Constants" /* 1085 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
@@ -459,7 +459,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -549,7 +549,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
             }
             track(ACTIVITY_SESSION_JOIN_FAILED, obj9);
             is_activity_start = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp32) {
           is_activity_start = 3;

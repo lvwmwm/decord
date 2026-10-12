@@ -1,21 +1,21 @@
-// Module ID: 9260
-// Function ID: 9261
+// Module ID: 9261
+// Function ID: 9262
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7004, 502, 2065, 7243, 5432, 7374, 1125, 1085, 5085, 558, 6971, 7369, 6975, 576, 1126, 9261, 11, 1295, 7918, 9262, 7371, 1403, 7759, 9264, 7903, 5107, 7178, 5299, 584, 4969, 1102, 9806, 12890, 2]
+// Dependencies: [32, 5, 19, 7005, 502, 2065, 7244, 5432, 7375, 1125, 1085, 5085, 558, 6972, 7370, 6976, 576, 1126, 9262, 11, 1295, 7919, 9263, 7372, 1403, 7760, 9265, 7904, 5107, 7179, 5299, 584, 4969, 1102, 9807, 12892, 2]
 // Exports: createThread
 
-// Module 9260 (ThreadCreationHooks)
+// Module 9261 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import MessageConstants from "MessageConstants" /* 5085 */;
-import ThreadHooks from "ThreadHooks" /* 6971 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
-import DraftStore from "DraftStore" /* 7243 */;
-import MessageParserDefault from "MessageParser" /* 7369 */;
-import SlowmodeStore from "SlowmodeStore" /* 7374 */;
+import ThreadHooks from "ThreadHooks" /* 6972 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
+import DraftStore from "DraftStore" /* 7244 */;
+import MessageParserDefault from "MessageParser" /* 7370 */;
+import SlowmodeStore from "SlowmodeStore" /* 7375 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7004 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7005 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
@@ -105,7 +105,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(6975);
+    const tmp17Result = tmp17(6976);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -220,7 +220,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -634,7 +634,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -733,7 +733,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -783,7 +783,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -882,7 +882,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -950,7 +950,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp91;
@@ -1194,7 +1194,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp91;

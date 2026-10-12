@@ -1,13 +1,13 @@
-// Module ID: 16275
-// Function ID: 16276
+// Module ID: 16298
+// Function ID: 16299
 // Name: AllowGameFriendDMsSetting
-// Dependencies: [7992, 10663, 1126, 2041, 16276, 2]
+// Dependencies: [7993, 10663, 1126, 2041, 16299, 2]
 
-// Module 16275 (AllowGameFriendDMsSetting)
+// Module 16298 (AllowGameFriendDMsSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import useIsAllowGameFriendDMsSettingVisible from "useIsAllowGameFriendDMsSettingVisible" /* 16276 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import useIsAllowGameFriendDMsSettingVisible from "useIsAllowGameFriendDMsSettingVisible" /* 16299 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

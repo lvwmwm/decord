@@ -1,9 +1,9 @@
-// Module ID: 12273
-// Function ID: 12274
+// Module ID: 12275
+// Function ID: 12276
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [32, 19, 2087, 5007, 5008, 558, 576, 504, 8029, 1388, 2]
+// Dependencies: [32, 19, 2087, 5007, 5008, 558, 576, 504, 8030, 1388, 2]
 
-// Module 12273 (useAvailableBoostCountForPowerup)
+// Module 12275 (useAvailableBoostCountForPowerup)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;

@@ -1,18 +1,19 @@
 // Module ID: 14339
 // Function ID: 14340
-// Dependencies: [14332]
+// Dependencies: [14325]
 
 // Module 14339
-import _mod14332 from "module_14332" /* 14332 */;
+import _mod14325 from "module_14325" /* 14325 */;
 
 
-export default function(arg0, arg1) {
-  try {
-    const self = this;
-    const self2 = this;
-    const str = new _mod14332(arg0, arg1).range || "*";
-    return str;
-  } catch (err) {
-    return null;
+export default (arg0, arg1) => {
+  const tmp = _mod14325(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
+    }
   }
+  return prerelease;
 };

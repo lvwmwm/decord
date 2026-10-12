@@ -1,14 +1,14 @@
-// Module ID: 18496
-// Function ID: 18497
+// Module ID: 18554
+// Function ID: 18555
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 5092, 587, 7768, 1450, 8673, 1126, 6156, 17246, 9723, 558, 576, 5088, 5379, 2]
+// Dependencies: [109, 5, 19, 17, 21, 5092, 587, 7769, 1450, 8674, 1126, 6157, 17092, 9724, 558, 576, 5088, 5379, 2]
 
-// Module 18496 (FormImagePicker)
+// Module 18554 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7768 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8673 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 7769 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let size;
 let tmp6;
-const FastImageDefault = tmp6(6156);
+const FastImageDefault = tmp6(6157);
 function pickImage() {
   return obj(...arguments);
 }
@@ -46,7 +46,7 @@ let obj = function _pickImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _pickImage() {
               size(obj);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_8;
-      tmp12Result = closure_8(tmp9(17246).ImagePlusIcon, {});
+      tmp12Result = closure_8(tmp9(17092).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -178,7 +178,7 @@ class ImagePickerIcon {
       if (standalone) {
         standalone = tmp.standaloneIcon;
       }
-      obj4 = { style: items4, children: tmp10(image(9723).PencilIcon, { color: "#292b30", size: "sm" }) };
+      obj4 = { style: items4, children: tmp10(image(9724).PencilIcon, { color: "#292b30", size: "sm" }) };
       items4[1] = standalone;
       tmp10Result = tmp10(tmp15, obj4);
     }

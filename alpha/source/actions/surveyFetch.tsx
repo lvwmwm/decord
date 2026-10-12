@@ -1,10 +1,10 @@
-// Module ID: 7472
-// Function ID: 7473
+// Module ID: 7473
+// Function ID: 7474
 // Name: surveyFetch
 // Dependencies: [1085, 5938, 1273, 2077, 1295, 584, 2]
 // Exports: surveyFetch
 
-// Module 7472 (surveyFetch)
+// Module 7473 (surveyFetch)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;

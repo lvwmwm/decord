@@ -1,15 +1,15 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17137
+// Function ID: 17138
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 17098, 11419, 504, 4850, 5378, 5382, 5093, 1126, 3849, 14203, 17099, 5088, 5379, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 17138, 11427, 504, 4850, 5378, 5382, 5093, 1126, 3849, 14226, 17139, 5088, 5379, 2]
 
-// Module 17097 (ConjureNativeControlOverlay)
+// Module 17137 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
-import useConjureControlBar from "useConjureControlBar" /* 17098 */;
+import useConjureControlBar from "useConjureControlBar" /* 17138 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -52,12 +52,15 @@ const __initData4 = { code: "function ConjureNativeControlOverlayTsx4(){const{sh
 const __initData5 = { code: "function ConjureNativeControlOverlayTsx5(){const{shown,barHeight}=this.__closure;return{transform:[{translateY:(shown.get()-1)*barHeight.get()}]};}" };
 const __initData6 = { code: "function ConjureNativeControlOverlayTsx6(){const{pulse}=this.__closure;return{opacity:pulse.get()};}" };
 let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeControlOverlay(active) {
+  let Button;
+  let View2;
   let children;
   let closure_2;
+  let combined;
   let conjureControlPhase;
   let items1;
   let items2;
-  let onOpenPublishedApp;
+  let obj10;
   let projectId;
   let sharedValue2;
   let stop;
@@ -68,16 +71,16 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   let tmp = conjureControlPhase;
   let tmp2 = dependencyMap;
   let obj = conjureControlPhase(576);
-  const cResult = obj.c(48);
-  ({ projectId, visible, onOpenPublishedApp, children } = active);
+  const cResult = obj.c(46);
+  ({ projectId, visible, children } = active);
   active = active.active;
   const tmp4 = closure_10();
-  let obj2 = conjureControlPhase(17098);
+  let obj2 = conjureControlPhase(17138);
   conjureControlPhase = obj2.useConjureControlPhase(active);
-  const obj3 = conjureControlPhase(17098);
+  const obj3 = conjureControlPhase(17138);
   const conjureControlStop = obj3.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj4 = conjureControlPhase(11419);
+  const obj4 = conjureControlPhase(11427);
   const conjureControlTuning = obj4.useConjureControlTuning(projectId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp10 = sharedValue2;
@@ -120,14 +123,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         if (cResult[8] === sharedValue2) {
           let tmp19;
           let tmp20;
-          let prop;
           if (cResult[9] === stateFromStores) {
             tmp19 = cResult[10];
             tmp20 = cResult[11];
           }
           const effect1 = obj8.useEffect(tmp19, tmp20);
           const tmpResult10 = tmp(4850);
-          class U {
+          class B {
             constructor() {
               let bound;
               const obj = { height: bound * sharedValue.get() };
@@ -136,8 +138,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             }
           }
           const obj5 = { shown: sharedValue1, barHeight: sharedValue };
-          U.__closure = obj5;
-          class B {
+          B.__closure = obj5;
+          class P {
             constructor() {
               tmp = closure_2;
               if (tmp) {
@@ -179,38 +181,36 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
               return;
             }
           }
-          U.__workletHash = 5735939888549;
-          U.__initData = __initData;
-          const animatedStyle = tmpResult10.useAnimatedStyle(U);
-          const tmpResult11 = tmp(4850);
-          class M {
-            constructor() {
-              let diff;
-              let items;
-              const obj = { transform: items };
-              const obj2 = { translateY: diff * sharedValue.get() };
-              diff = sharedValue1.get() - 1;
-              items = [obj2];
-              return obj;
-            }
-          }
+          B.__workletHash = 5735939888549;
+          B.__initData = __initData;
+          const animatedStyle = tmpResult10.useAnimatedStyle(B);
+          const fn2 = function z() {
+            let diff;
+            let items;
+            const obj = { transform: items };
+            const obj2 = { translateY: diff * sharedValue.get() };
+            diff = sharedValue1.get() - 1;
+            items = [obj2];
+            return obj;
+          };
           const obj6 = { shown: sharedValue1, barHeight: sharedValue };
-          M.__closure = obj6;
-          M.__workletHash = 11424550793114;
-          M.__initData = __initData2;
-          const animatedStyle1 = tmpResult11.useAnimatedStyle(M);
+          fn2.__closure = obj6;
+          fn2.__workletHash = 11424550793114;
+          fn2.__initData = __initData2;
+          const tmpResult11 = tmp(4850);
+          const animatedStyle1 = tmpResult11.useAnimatedStyle(fn2);
           const tmpResult12 = tmp(4850);
-          class G {
+          class M {
             constructor() {
               const obj = { opacity: sharedValue2.get() };
               return obj;
             }
           }
           const obj7 = { pulse: sharedValue2 };
-          G.__closure = obj7;
-          G.__workletHash = 3342596553897;
-          G.__initData = __initData3;
-          const animatedStyle2 = tmpResult12.useAnimatedStyle(G);
+          M.__closure = obj7;
+          M.__workletHash = 3342596553897;
+          M.__initData = __initData3;
+          const animatedStyle2 = tmpResult12.useAnimatedStyle(M);
           if (visible) {
             visible = "idle" !== conjureControlPhase;
           }
@@ -219,7 +219,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             if (cResult[13] === conjureControlTuning) {
               tmp28 = cResult[14];
             }
-            class U {
+            class B {
               constructor() {
                 let bound;
                 const obj = { height: bound * sharedValue.get() };
@@ -227,329 +227,176 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
                 return obj;
               }
             }
-            if (cResult[15] === animatedStyle) {
-              if (cResult[16] === sharedValue) {
-                if (cResult[17] === animatedStyle1) {
-                  if (cResult[18] === tmp12) {
-                    if (cResult[19] === onOpenPublishedApp) {
-                      if (cResult[20] === visible) {
-                        if (cResult[21] === (tmp12 && null != onOpenPublishedApp)) {
-                          if (cResult[22] === tmp35) {
-                            if (cResult[23] === stop) {
-                              if (cResult[24] === stopping) {
-                                if (cResult[25] === tmp4.actions) {
-                                  if (cResult[26] === tmp4.bar) {
-                                    if (cResult[27] === tmp4.barArea) {
-                                      if (cResult[28] === tmp4.title) {
-                                        let tmp37;
-                                        if (cResult[29] === tmp28) {
-                                          tmp37 = cResult[30];
-                                        }
-                                        if (cResult[31] === tmp12) {
-                                          let tmp40;
-                                          if (cResult[32] === tmp4.block) {
-                                            tmp40 = cResult[33];
-                                          }
-                                          if (cResult[34] === children) {
-                                            if (cResult[35] === tmp4.content) {
-                                              let tmp42;
-                                              if (cResult[36] === tmp40) {
-                                                tmp42 = cResult[37];
-                                              }
-                                              if (cResult[38] === tmp12) {
-                                                if (cResult[39] === animatedStyle2) {
-                                                  if (cResult[40] === tmp4.border) {
-                                                    if (cResult[43] === tmp4.root) {
-                                                      if (cResult[44] === tmp42) {
-                                                        if (cResult[45] === tmp45) {
-                                                          let tmp47;
-                                                          if (cResult[46] === tmp37) {
-                                                            tmp47 = cResult[47];
-                                                          }
-                                                          return tmp47;
-                                                        }
-                                                      }
-                                                    }
-                                                    class U {
-                                                      constructor() {
-                                                        let bound;
-                                                        const obj = { height: bound * sharedValue.get() };
-                                                        bound = Math.max(0, sharedValue1.get());
-                                                        return obj;
-                                                      }
-                                                    }
-                                                    const obj9 = { style: tmp4.root, children: items1 };
-                                                    items1 = [tmp37, , ];
-                                                    class B {
-                                                      constructor() {
-                                                        tmp = closure_2;
-                                                        if (tmp) {
-                                                          tmp2 = closure_1;
-                                                          if (!tmp2) {
-                                                            tmp3 = closure_5;
-                                                            num = 0.2;
-                                                            result = closure_5.set(0.2);
-                                                            tmp5 = closure_0;
-                                                            tmp6 = closure_2;
-                                                            set = closure_5.set;
-                                                            tmp7 = closure_0(closure_2[11]);
-                                                            tmp8 = closure_0;
-                                                            tmp9 = closure_2;
-                                                            withRepeat = tmp7.withRepeat;
-                                                            tmp10 = closure_0(closure_2[14]);
-                                                            obj = { duration: 1200, easing: null };
-                                                            tmp11 = closure_0;
-                                                            tmp12 = closure_2;
-                                                            withTiming = tmp10.withTiming;
-                                                            Easing = closure_0(closure_2[11]).Easing;
-                                                            tmp13 = closure_0;
-                                                            tmp14 = closure_2;
-                                                            obj.easing = Easing.inOut(closure_0(closure_2[11]).Easing.ease);
-                                                            num2 = 0.7;
-                                                            flag = true;
-                                                            num3 = -1;
-                                                            result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
-                                                            fn = () => {
-                                                              const obj = conjureControlPhase(closure_2[11]);
-                                                              return obj.cancelAnimation(sharedValue2);
-                                                            };
-                                                          }
-                                                          return fn;
-                                                        }
-                                                        obj2 = closure_0(closure_2[11]);
-                                                        cancelAnimationResult = obj2.cancelAnimation(closure_5);
-                                                        result2 = closure_5.set(0.5);
-                                                        return;
-                                                      }
-                                                    }
-                                                    items1[2] = tmp45;
-                                                    const tmp49 = closure_7(sharedValue1, obj9);
-                                                    cResult[43] = tmp4.root;
-                                                    class M {
-                                                      constructor() {
-                                                        let diff;
-                                                        let items;
-                                                        const obj = { transform: items };
-                                                        const obj2 = { translateY: diff * sharedValue.get() };
-                                                        diff = sharedValue1.get() - 1;
-                                                        items = [obj2];
-                                                        return obj;
-                                                      }
-                                                    }
-                                                    cResult[44] = tmp42;
-                                                    cResult[45] = tmp45;
-                                                    cResult[46] = tmp37;
-                                                    cResult[47] = tmp49;
-                                                    tmp47 = tmp49;
-                                                  }
-                                                }
-                                              }
-                                              class U {
-                                                constructor() {
-                                                  let bound;
-                                                  const obj = { height: bound * sharedValue.get() };
-                                                  bound = Math.max(0, sharedValue1.get());
-                                                  return obj;
-                                                }
-                                              }
-                                              cResult[38] = tmp12;
-                                              cResult[39] = animatedStyle2;
-                                              class B {
-                                                constructor() {
-                                                  tmp = closure_2;
-                                                  if (tmp) {
-                                                    tmp2 = closure_1;
-                                                    if (!tmp2) {
-                                                      tmp3 = closure_5;
-                                                      num = 0.2;
-                                                      result = closure_5.set(0.2);
-                                                      tmp5 = closure_0;
-                                                      tmp6 = closure_2;
-                                                      set = closure_5.set;
-                                                      tmp7 = closure_0(closure_2[11]);
-                                                      tmp8 = closure_0;
-                                                      tmp9 = closure_2;
-                                                      withRepeat = tmp7.withRepeat;
-                                                      tmp10 = closure_0(closure_2[14]);
-                                                      obj = { duration: 1200, easing: null };
-                                                      tmp11 = closure_0;
-                                                      tmp12 = closure_2;
-                                                      withTiming = tmp10.withTiming;
-                                                      Easing = closure_0(closure_2[11]).Easing;
-                                                      tmp13 = closure_0;
-                                                      tmp14 = closure_2;
-                                                      obj.easing = Easing.inOut(closure_0(closure_2[11]).Easing.ease);
-                                                      num2 = 0.7;
-                                                      flag = true;
-                                                      num3 = -1;
-                                                      result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
-                                                      fn = () => {
-                                                        const obj = conjureControlPhase(closure_2[11]);
-                                                        return obj.cancelAnimation(sharedValue2);
-                                                      };
-                                                    }
-                                                    return fn;
-                                                  }
-                                                  obj2 = closure_0(closure_2[11]);
-                                                  cancelAnimationResult = obj2.cancelAnimation(closure_5);
-                                                  result2 = closure_5.set(0.5);
-                                                  return;
-                                                }
-                                              }
-                                              cResult[40] = tmp4.border;
-                                              cResult[41] = tmp4.glow;
-                                              cResult[42] = null;
-                                              class M {
-                                                constructor() {
-                                                  let diff;
-                                                  let items;
-                                                  const obj = { transform: items };
-                                                  const obj2 = { translateY: diff * sharedValue.get() };
-                                                  diff = sharedValue1.get() - 1;
-                                                  items = [obj2];
-                                                  return obj;
-                                                }
-                                              }
-                                            }
-                                          }
-                                          class U {
-                                            constructor() {
-                                              let bound;
-                                              const obj = { height: bound * sharedValue.get() };
-                                              bound = Math.max(0, sharedValue1.get());
-                                              return obj;
-                                            }
-                                          }
-                                          const obj10 = { style: tmp4.content, children: items2 };
-                                          items2 = [children, ];
-                                          class B {
-                                            constructor() {
-                                              tmp = closure_2;
-                                              if (tmp) {
-                                                tmp2 = closure_1;
-                                                if (!tmp2) {
-                                                  tmp3 = closure_5;
-                                                  num = 0.2;
-                                                  result = closure_5.set(0.2);
-                                                  tmp5 = closure_0;
-                                                  tmp6 = closure_2;
-                                                  set = closure_5.set;
-                                                  tmp7 = closure_0(closure_2[11]);
-                                                  tmp8 = closure_0;
-                                                  tmp9 = closure_2;
-                                                  withRepeat = tmp7.withRepeat;
-                                                  tmp10 = closure_0(closure_2[14]);
-                                                  obj = { duration: 1200, easing: null };
-                                                  tmp11 = closure_0;
-                                                  tmp12 = closure_2;
-                                                  withTiming = tmp10.withTiming;
-                                                  Easing = closure_0(closure_2[11]).Easing;
-                                                  tmp13 = closure_0;
-                                                  tmp14 = closure_2;
-                                                  obj.easing = Easing.inOut(closure_0(closure_2[11]).Easing.ease);
-                                                  num2 = 0.7;
-                                                  flag = true;
-                                                  num3 = -1;
-                                                  result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
-                                                  fn = () => {
-                                                    const obj = conjureControlPhase(closure_2[11]);
-                                                    return obj.cancelAnimation(sharedValue2);
-                                                  };
-                                                }
-                                                return fn;
-                                              }
-                                              obj2 = closure_0(closure_2[11]);
-                                              cancelAnimationResult = obj2.cancelAnimation(closure_5);
-                                              result2 = closure_5.set(0.5);
-                                              return;
-                                            }
-                                          }
-                                          const tmp44 = closure_7(sharedValue1, obj10);
-                                          cResult[34] = children;
-                                          class M {
-                                            constructor() {
-                                              let diff;
-                                              let items;
-                                              const obj = { transform: items };
-                                              const obj2 = { translateY: diff * sharedValue.get() };
-                                              diff = sharedValue1.get() - 1;
-                                              items = [obj2];
-                                              return obj;
-                                            }
-                                          }
-                                          cResult[36] = tmp40;
-                                          cResult[37] = tmp44;
-                                          tmp42 = tmp44;
-                                        }
-                                        class U {
-                                          constructor() {
-                                            let bound;
-                                            const obj = { height: bound * sharedValue.get() };
-                                            bound = Math.max(0, sharedValue1.get());
-                                            return obj;
-                                          }
-                                        }
-                                        cResult[31] = tmp12;
-                                        cResult[32] = tmp4.block;
-                                        class B {
-                                          constructor() {
-                                            tmp = closure_2;
-                                            if (tmp) {
-                                              tmp2 = closure_1;
-                                              if (!tmp2) {
-                                                tmp3 = closure_5;
-                                                num = 0.2;
-                                                result = closure_5.set(0.2);
-                                                tmp5 = closure_0;
-                                                tmp6 = closure_2;
-                                                set = closure_5.set;
-                                                tmp7 = closure_0(closure_2[11]);
-                                                tmp8 = closure_0;
-                                                tmp9 = closure_2;
-                                                withRepeat = tmp7.withRepeat;
-                                                tmp10 = closure_0(closure_2[14]);
-                                                obj = { duration: 1200, easing: null };
-                                                tmp11 = closure_0;
-                                                tmp12 = closure_2;
-                                                withTiming = tmp10.withTiming;
-                                                Easing = closure_0(closure_2[11]).Easing;
-                                                tmp13 = closure_0;
-                                                tmp14 = closure_2;
-                                                obj.easing = Easing.inOut(closure_0(closure_2[11]).Easing.ease);
-                                                num2 = 0.7;
-                                                flag = true;
-                                                num3 = -1;
-                                                result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
-                                                fn = () => {
-                                                  const obj = conjureControlPhase(closure_2[11]);
-                                                  return obj.cancelAnimation(sharedValue2);
-                                                };
-                                              }
-                                              return fn;
-                                            }
-                                            obj2 = closure_0(closure_2[11]);
-                                            cancelAnimationResult = obj2.cancelAnimation(closure_5);
-                                            result2 = closure_5.set(0.5);
-                                            return;
-                                          }
-                                        }
-                                        cResult[33] = null;
-                                        tmp40 = tmp41;
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
+            let tmp37Result4 = null;
+            if (visible) {
+              let tmp37Result;
+              const obj9 = { style: tmp39, children: tmp40(View2, obj10) };
+              class B {
+                constructor() {
+                  let bound;
+                  const obj = { height: bound * sharedValue.get() };
+                  bound = Math.max(0, sharedValue1.get());
+                  return obj;
+                }
+              }
+              tmp39[0] = tmp4.barArea;
+              tmp39[1] = animatedStyle;
+              const View = stateFromStores(4850).View;
+              class P {
+                constructor() {
+                  tmp = closure_2;
+                  if (tmp) {
+                    tmp2 = closure_1;
+                    if (!tmp2) {
+                      tmp3 = closure_5;
+                      num = 0.2;
+                      result = closure_5.set(0.2);
+                      tmp5 = closure_0;
+                      tmp6 = closure_2;
+                      set = closure_5.set;
+                      tmp7 = closure_0(closure_2[11]);
+                      tmp8 = closure_0;
+                      tmp9 = closure_2;
+                      withRepeat = tmp7.withRepeat;
+                      tmp10 = closure_0(closure_2[14]);
+                      obj = { duration: 1200, easing: null };
+                      tmp11 = closure_0;
+                      tmp12 = closure_2;
+                      withTiming = tmp10.withTiming;
+                      Easing = closure_0(closure_2[11]).Easing;
+                      tmp13 = closure_0;
+                      tmp14 = closure_2;
+                      obj.easing = Easing.inOut(closure_0(closure_2[11]).Easing.ease);
+                      num2 = 0.7;
+                      flag = true;
+                      num3 = -1;
+                      result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
+                      fn = () => {
+                        const obj = conjureControlPhase(closure_2[11]);
+                        return obj.cancelAnimation(sharedValue2);
+                      };
                     }
+                    return fn;
+                  }
+                  obj2 = closure_0(closure_2[11]);
+                  cancelAnimationResult = obj2.cancelAnimation(closure_5);
+                  result2 = closure_5.set(0.5);
+                  return;
+                }
+              }
+              obj10 = {
+                style: items1,
+                onLayout(nativeEvent) {
+                              return sharedValue.set(nativeEvent.nativeEvent.layout.height);
+                            },
+                accessibilityLiveRegion: "polite",
+                children: items2
+              };
+              items1 = [tmp4.bar, animatedStyle1];
+              View2 = stateFromStores(4850).View;
+              if (tmp12) {
+                tmp37Result = closure_6(tmp(14226).AILoader, { size: 12, color: "text-overlay-light" });
+              } else {
+                ({ size: "sm", color: stateFromStores(587).colors.TEXT_OVERLAY_LIGHT });
+                const SparklesIcon = tmp(17139).SparklesIcon;
+                class B {
+                  constructor() {
+                    let bound;
+                    const obj = { height: bound * sharedValue.get() };
+                    bound = Math.max(0, sharedValue1.get());
+                    return obj;
                   }
                 }
               }
+              items2 = [tmp37Result, , ];
+              const obj12 = { variant: "text-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp4.title, accessibilityLabel: combined, children: null };
+              combined = tmp28;
+              const Text = tmp(5088).Text;
+              if (tmp12) {
+                const intl = tmp(1126).intl;
+                const string2 = intl.string;
+                const _HermesInternal = HermesInternal;
+                class B {
+                  constructor() {
+                    let bound;
+                    const obj = { height: bound * sharedValue.get() };
+                    bound = Math.max(0, sharedValue1.get());
+                    return obj;
+                  }
+                }
+                combined = "" + tmp28 + ". " + string2(tmp38(3849).fg1sor);
+              }
+              class M {
+                constructor() {
+                  const obj = { opacity: sharedValue2.get() };
+                  return obj;
+                }
+              }
+              items2[1] = closure_6(Text, obj12);
+              let tmp37Result3 = null;
+              if (tmp12 && null != stop) {
+                const obj13 = { style: tmp4.actions, children: closure_6(Button, tmp45) };
+                class B {
+                  constructor() {
+                    let bound;
+                    const obj = { height: bound * sharedValue.get() };
+                    bound = Math.max(0, sharedValue1.get());
+                    return obj;
+                  }
+                }
+                Button = tmp(5379).Button;
+                const intl2 = tmp(1126).intl;
+                tmp45[2] = intl2.string(stateFromStores(3849).oU59sU);
+                class P {
+                  constructor() {
+                    tmp = closure_2;
+                    if (tmp) {
+                      tmp2 = closure_1;
+                      if (!tmp2) {
+                        tmp3 = closure_5;
+                        num = 0.2;
+                        result = closure_5.set(0.2);
+                        tmp5 = closure_0;
+                        tmp6 = closure_2;
+                        set = closure_5.set;
+                        tmp7 = closure_0(closure_2[11]);
+                        tmp8 = closure_0;
+                        tmp9 = closure_2;
+                        withRepeat = tmp7.withRepeat;
+                        tmp10 = closure_0(closure_2[14]);
+                        obj = { duration: 1200, easing: null };
+                        tmp11 = closure_0;
+                        tmp12 = closure_2;
+                        withTiming = tmp10.withTiming;
+                        Easing = closure_0(closure_2[11]).Easing;
+                        tmp13 = closure_0;
+                        tmp14 = closure_2;
+                        obj.easing = Easing.inOut(closure_0(closure_2[11]).Easing.ease);
+                        num2 = 0.7;
+                        flag = true;
+                        num3 = -1;
+                        result1 = set(withRepeat(withTiming(0.7, obj), -1, true));
+                        fn = () => {
+                          const obj = conjureControlPhase(closure_2[11]);
+                          return obj.cancelAnimation(sharedValue2);
+                        };
+                      }
+                      return fn;
+                    }
+                    obj2 = closure_0(closure_2[11]);
+                    cancelAnimationResult = obj2.cancelAnimation(closure_5);
+                    result2 = closure_5.set(0.5);
+                    return;
+                  }
+                }
+                tmp45[4] = stop;
+                tmp37Result3 = tmp37(sharedValue1, obj13);
+              }
+              items2[2] = tmp37Result3;
+              tmp37Result4 = tmp37(View, obj9);
             }
-            class B {
+            cResult[15] = animatedStyle;
+            class P {
               constructor() {
                 tmp = closure_2;
                 if (tmp) {
@@ -591,50 +438,33 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
                 return;
               }
             }
-            cResult[15] = animatedStyle;
             cResult[16] = sharedValue;
-            class M {
-              constructor() {
-                let diff;
-                let items;
-                const obj = { transform: items };
-                const obj2 = { translateY: diff * sharedValue.get() };
-                diff = sharedValue1.get() - 1;
-                items = [obj2];
-                return obj;
-              }
-            }
+            cResult[17] = animatedStyle1;
             cResult[18] = tmp12;
-            cResult[19] = onOpenPublishedApp;
-            cResult[20] = visible;
-            cResult[21] = tmp12 && null != onOpenPublishedApp;
-            cResult[22] = tmp35;
-            class G {
+            cResult[19] = visible;
+            cResult[20] = tmp12 && null != stop;
+            cResult[21] = stop;
+            cResult[22] = stopping;
+            cResult[23] = tmp4.actions;
+            class M {
               constructor() {
                 const obj = { opacity: sharedValue2.get() };
                 return obj;
               }
             }
-            cResult[23] = stop;
-            cResult[24] = stopping;
-            cResult[25] = tmp4.actions;
-            cResult[26] = tmp4.bar;
-            cResult[27] = tmp4.barArea;
-            cResult[28] = tmp4.title;
-            cResult[29] = tmp28;
-            cResult[30] = null;
-            tmp37 = tmp39;
+            cResult[25] = tmp4.barArea;
+            cResult[26] = tmp4.title;
+            cResult[27] = tmp28;
+            cResult[28] = tmp37Result4;
           }
-          const intl = tmp(1126).intl;
-          const string = intl.string;
+          const string = tmp(1126).intl.string;
           const tmp30 = stateFromStores(3849);
           if (tmp12) {
-            prop = conjureControlTuning ? tmp30["VJW/5P"] : tmp30["+hD2Iz"];
+            let prop = conjureControlTuning ? tmp30["VJW/5P"] : tmp30["+hD2Iz"];
           } else {
             prop = tmp30["h+i1r9"];
           }
-          const stringResult = string(prop);
-          class D {
+          class R {
             constructor() {
               let Easing;
               if ("controlling" === conjureControlPhase) {
@@ -667,11 +497,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           }
           cResult[12] = tmp12;
           cResult[13] = conjureControlTuning;
-          cResult[14] = stringResult;
-          tmp28 = stringResult;
+          cResult[14] = tmp32;
+          tmp28 = tmp32;
         }
       }
-      class B {
+      class P {
         constructor() {
           tmp = closure_2;
           if (tmp) {
@@ -714,16 +544,17 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         }
       }
       const items3 = [tmp12, sharedValue2, stateFromStores];
+      cResult[7] = tmp12;
       let num5 = 8;
       cResult[8] = sharedValue2;
       cResult[9] = stateFromStores;
-      cResult[10] = B;
+      cResult[10] = P;
       cResult[11] = items3;
       tmp20 = items3;
-      tmp19 = B;
+      tmp19 = P;
     }
   }
-  class D {
+  class R {
     constructor() {
       let Easing;
       if ("controlling" === conjureControlPhase) {
@@ -758,32 +589,34 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   cResult[2] = conjureControlPhase;
   cResult[3] = stateFromStores;
   cResult[4] = sharedValue1;
-  cResult[5] = D;
+  cResult[5] = R;
   cResult[6] = items4;
   tmp16 = items4;
-  tmp15 = D;
+  tmp15 = R;
 }) : (function ConjureNativeControlOverlay(arg0) {
+  let Button;
+  let View2;
   let active;
   let children;
   let closure_2;
   let combined;
   let intl3;
-  let intl4;
-  let items10;
   let items3;
   let items4;
+  let items5;
   let items6;
   let items7;
   let items8;
   let items9;
-  let onOpenPublishedApp;
+  let obj11;
+  let obj7;
   let projectId;
   let prop1;
   let stop;
   let stopping;
   let tmp20;
   let visible;
-  ({ projectId, visible, onOpenPublishedApp } = arg0);
+  ({ projectId, visible } = arg0);
   let conjureControlPhase;
   dependencyMap = undefined;
   let sharedValue;
@@ -792,12 +625,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   ({ active, children } = arg0);
   let tmp = closure_10();
   let tmp2 = conjureControlPhase;
-  let obj = conjureControlPhase(17098);
+  let obj = conjureControlPhase(17138);
   conjureControlPhase = obj.useConjureControlPhase(active);
-  let obj2 = conjureControlPhase(17098);
+  let obj2 = conjureControlPhase(17138);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj3 = conjureControlPhase(11419);
+  const obj3 = conjureControlPhase(11427);
   const conjureControlTuning = obj3.useConjureControlTuning(projectId);
   let items = [sharedValue2];
   const obj4 = conjureControlPhase(504);
@@ -872,7 +705,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const result2 = sharedValue2.set(0.5);
   }, items2);
   const tmp2Result8 = tmp2(4850);
-  class P {
+  class D {
     constructor() {
       let bound;
       const obj = { height: bound * sharedValue.get() };
@@ -880,10 +713,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       return obj;
     }
   }
-  P.__closure = { shown: sharedValue1, barHeight: sharedValue };
-  P.__workletHash = 10340375351296;
-  P.__initData = __initData4;
-  const animatedStyle = tmp2Result8.useAnimatedStyle(P);
+  D.__closure = { shown: sharedValue1, barHeight: sharedValue };
+  D.__workletHash = 10340375351296;
+  D.__initData = __initData4;
+  const animatedStyle = tmp2Result8.useAnimatedStyle(D);
   const tmp2Result9 = tmp2(4850);
   class V {
     constructor() {
@@ -931,37 +764,33 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     tmp20 = tmp17;
   }
   const stringResult = string(prop1);
-  let tmp24 = tmp8;
-  if (tmp24) {
-    tmp24 = null != stop;
-  }
-  let tmp40Result4 = null;
-  const obj5 = { style: tmp.root, children: items7 };
+  let tmp36Result4 = null;
+  const obj5 = { style: tmp.root, children: items6 };
   if (visible) {
-    tmp40Result4 = null;
+    tmp36Result4 = null;
     if ("idle" !== conjureControlPhase) {
-      let tmp40Result;
-      const obj6 = { style: items3, children: null };
+      let tmp36Result;
+      const obj6 = { style: items3, children: closure_7(View2, obj7) };
       items3 = [tmp.barArea, animatedStyle];
       const View = tmp20(4850).View;
-      const obj7 = {
+      obj7 = {
         style: items4,
         onLayout(nativeEvent) {
               return sharedValue.set(nativeEvent.nativeEvent.layout.height);
             },
         accessibilityLiveRegion: "polite",
-        children: null
+        children: items5
       };
       items4 = [tmp.bar, animatedStyle1];
-      const View2 = tmp20(4850).View;
+      View2 = tmp20(4850).View;
       if (tmp8) {
-        tmp40Result = tmp40(tmp2(14203).AILoader, { size: 12, color: "text-overlay-light" });
+        tmp36Result = tmp36(tmp2(14226).AILoader, { size: 12, color: "text-overlay-light" });
       } else {
         const obj8 = { size: "sm", color: tmp20(587).colors.TEXT_OVERLAY_LIGHT };
-        const SparklesIcon = tmp2(17099).SparklesIcon;
-        tmp40Result = tmp40(SparklesIcon, obj8);
+        const SparklesIcon = tmp2(17139).SparklesIcon;
+        tmp36Result = tmp36(SparklesIcon, obj8);
       }
-      const items5 = [tmp40Result, , ];
+      items5 = [tmp36Result, , ];
       const obj9 = { variant: "text-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp.title, accessibilityLabel: combined, children: stringResult };
       combined = stringResult;
       const Text = tmp2(5088).Text;
@@ -971,54 +800,42 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         combined = "" + stringResult + ". " + intl2.string(tmp20(3849).fg1sor);
       }
       items5[1] = closure_6(Text, obj9);
-      if (!tmp8) {
-        let tmp26Result = null;
-        items5[2] = tmp26Result;
-        obj7.children = items5;
-        obj6.children = closure_7(View2, obj7);
-        tmp40Result4 = tmp40(View, obj6);
+      let tmp36Result3 = null;
+      if (tmp8) {
+        tmp36Result3 = null;
+        if (null != stop) {
+          const obj10 = { style: tmp.actions, children: closure_6(Button, obj11) };
+          obj11 = { variant: "primary-overlay", size: "sm", text: intl3.string(tmp20(3849).oU59sU), loading: stopping, onPress: stop };
+          Button = tmp2(5379).Button;
+          intl3 = tmp2(1126).intl;
+          tmp36Result3 = tmp36(tmp25, obj10);
+        }
       }
-      let tmp40Result5 = null;
-      const obj10 = { style: tmp.actions, children: items6 };
-      if (null != onOpenPublishedApp) {
-        const obj11 = { variant: "secondary-overlay", size: "sm", text: intl3.string(tmp20(3849)["1NcO7H"]), onPress: onOpenPublishedApp };
-        const Button = tmp2(5379).Button;
-        intl3 = tmp2(1126).intl;
-        tmp40Result5 = tmp40(Button, obj11);
-      }
-      items6 = [tmp40Result5, ];
-      let tmp40Result6 = null;
-      if (tmp24) {
-        const obj12 = { variant: "primary-overlay", size: "sm", text: intl4.string(tmp20(3849).oU59sU), loading: stopping, onPress: stop };
-        const Button2 = tmp2(5379).Button;
-        intl4 = tmp2(1126).intl;
-        tmp40Result6 = tmp40(Button2, obj12);
-      }
-      items6[1] = tmp40Result6;
-      tmp26Result = tmp26(tmp27, obj10);
+      items5[2] = tmp36Result3;
+      tmp36Result4 = tmp36(View, obj6);
     }
   }
-  items7 = [tmp40Result4, , ];
-  const obj13 = { style: tmp.content, children: items8 };
-  items8 = [children, ];
-  let tmp35 = null;
+  items6 = [tmp36Result4, , ];
+  const obj12 = { style: tmp.content, children: items7 };
+  items7 = [children, ];
+  let tmp31 = null;
   if (tmp8) {
-    const obj14 = { style: tmp.block, pointerEvents: "box-only" };
-    tmp35 = closure_6(tmp27, obj14);
+    const obj13 = { style: tmp.block, pointerEvents: "box-only" };
+    tmp31 = closure_6(tmp25, obj13);
   }
-  items8[1] = tmp35;
-  items7[1] = closure_7(sharedValue1, obj13);
-  let tmp26Result2 = null;
+  items7[1] = tmp31;
+  items6[1] = closure_7(sharedValue1, obj12);
+  let tmp24Result = null;
   if (tmp8) {
-    const obj16 = { style: items9, pointerEvents: "none" };
-    items9 = [tmp.glow, animatedStyle2];
-    const obj15 = { children: items10 };
-    items10 = [closure_6(tmp20(4850).View, obj16), ];
-    const obj17 = { style: tmp.border, pointerEvents: "none" };
-    items10[1] = closure_6(sharedValue1, obj17);
-    tmp26Result2 = tmp26(closure_8, obj15);
+    const obj15 = { style: items8, pointerEvents: "none" };
+    items8 = [tmp.glow, animatedStyle2];
+    const obj14 = { children: items9 };
+    items9 = [closure_6(tmp20(4850).View, obj15), ];
+    const obj16 = { style: tmp.border, pointerEvents: "none" };
+    items9[1] = closure_6(sharedValue1, obj16);
+    tmp24Result = tmp24(closure_8, obj14);
   }
-  items7[2] = tmp26Result2;
+  items6[2] = tmp24Result;
   return closure_7(sharedValue1, obj5);
 });
 let result = size.fileFinishedImporting("modules/conjure/preview/native/ConjureNativeControlOverlay.tsx");

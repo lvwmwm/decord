@@ -1,24 +1,24 @@
-// Module ID: 18123
-// Function ID: 18124
+// Module ID: 18181
+// Function ID: 18182
 // Name: NewUserManager
-// Dependencies: [5, 6623, 5761, 1390, 6133, 12428, 1085, 12480, 18124, 12398, 12427, 1105, 8682, 584, 6807, 12405, 12512, 2]
+// Dependencies: [5, 6624, 5761, 1390, 6134, 12430, 1085, 12482, 18182, 12400, 12429, 1105, 8683, 584, 6808, 12407, 12514, 2]
 
-// Module 18123 (NewUserManager)
+// Module 18181 (NewUserManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8682 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12398 */;
-import NUFActionCreators from "NUFActionCreators" /* 12427 */;
-import NUFConstants from "NUFConstants" /* 12428 */;
-import HubConstants from "HubConstants" /* 12480 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 18124 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12400 */;
+import NUFActionCreators from "NUFActionCreators" /* 12429 */;
+import NUFConstants from "NUFConstants" /* 12430 */;
+import HubConstants from "HubConstants" /* 12482 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 18182 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PhoneStore from "PhoneStore" /* 6623 */;
+import PhoneStore from "PhoneStore" /* 6624 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import UserStore from "UserStore" /* 1390 */;
-import NewUserStore from "NewUserStore" /* 6133 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
+import NewUserStore from "NewUserStore" /* 6134 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const NewUserTypes = NUFConstants.NewUserTypes;

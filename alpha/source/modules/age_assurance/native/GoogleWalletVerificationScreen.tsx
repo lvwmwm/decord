@@ -1,9 +1,9 @@
-// Module ID: 7690
-// Function ID: 7691
+// Module ID: 7691
+// Function ID: 7692
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1503, 5909, 7546, 7511, 5729, 5734, 1126, 3120, 7514, 7515, 5377, 5088, 5958, 5379, 5918, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1503, 5909, 7547, 7512, 5729, 5734, 1126, 3120, 7515, 7516, 5377, 5088, 5958, 5379, 5918, 2]
 
-// Module 7690 (GoogleWalletVerificationScreen)
+// Module 7691 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -381,7 +381,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp50;
@@ -510,7 +510,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp50) {
           if (0 === c3) {
@@ -604,7 +604,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let tmp50;
@@ -733,7 +733,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWall
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp50) {
         if (0 === c3) {

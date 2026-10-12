@@ -1,16 +1,15 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 17275
+// Function ID: 17276
 // Name: ConjureNativeStepImages
-// Dependencies: [19, 17, 13213, 21, 5092, 587, 558, 576, 17141, 6156, 8386, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17276, 6157, 17061, 8387, 2]
 
-// Module 17168 (ConjureNativeStepImages)
+// Module 17275 (ConjureNativeStepImages)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import openMediaModal from "openMediaModal" /* 8386 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17141 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import openMediaModal from "openMediaModal" /* 8387 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17276 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -27,7 +26,6 @@ let obj2;
 let obj3;
 let obj4;
 ({ ActivityIndicator: closure_4, Pressable: hasOwnProperty, ScrollView: metroRequire, View: metroImportDefault } = react_native);
-const getAttachmentUrl = ConjureConnectionStore.getAttachmentUrl;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { strip: obj2, thumb: obj3, placeholder: obj4 };
@@ -35,9 +33,9 @@ obj2 = { gap: nativeDefault.space.PX_8, paddingTop: nativeDefault.space.PX_4 };
 createStyles = createStyles.createStyles;
 obj3 = { height: 96, aspectRatio: 1.6, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj4 = { height: 96, aspectRatio: 1.6, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
-let closure_10 = createStyles(obj);
+let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepImage(image) {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepImage(image) {
   let handleError;
   let src;
   const obj = react2;
@@ -45,7 +43,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepIm
   image = image.image;
   const onOpen = image.onOpen;
   const projectId = image.projectId;
-  const tmp3 = closure_10();
+  const tmp3 = closure_9();
   const obj2 = useConjureAttachmentImage;
   const conjureAttachmentImage = obj2.useConjureAttachmentImage(projectId, image.id);
   ({ src, handleError } = conjureAttachmentImage);
@@ -112,7 +110,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepIm
   image = image.image;
   const onOpen = image.onOpen;
   const projectId = image.projectId;
-  const tmp = closure_10();
+  const tmp = closure_9();
   const obj = useConjureAttachmentImage;
   const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, image.id);
   const src = conjureAttachmentImage.src;
@@ -141,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   const cResult = obj.c(13);
   projectId = projectId.projectId;
   let images = projectId.images;
-  const tmp2 = closure_10();
+  const tmp2 = closure_9();
   if (cResult[0] === images) {
     let tmp3;
     if (cResult[1] === projectId) {
@@ -164,9 +162,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             }
             return tmp7;
           }
-          class C {
+          class I {
             constructor(image) {
-              return <closure_11 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
+              return <closure_10 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
             }
           }
           const tmp9 = <closure_6 horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={tmp11}>{tmp4}</closure_6>;
@@ -182,9 +180,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           tmp5 = cResult[9];
         }
         let mapped = images.map(tmp5);
-        class C {
+        class I {
           constructor(image) {
-            return <closure_11 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
+            return <closure_10 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
           }
         }
         cResult[3] = tmp3;
@@ -193,22 +191,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         cResult[6] = mapped;
         tmp4 = mapped;
       }
-      class C {
+      class I {
         constructor(image) {
-          return <closure_11 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
+          return <closure_10 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />;
         }
       }
       cResult[7] = tmp3;
       cResult[8] = projectId;
-      cResult[9] = C;
-      tmp5 = C;
+      cResult[9] = I;
+      tmp5 = I;
     }
   }
   const fn = function n(arg0) {
     let closure_1;
     const id = arg0;
     images = images.findIndex((id) => id.id === id.id);
-    const allPromises = Promise.all(images.map((id) => getAttachmentUrl(id, id.id)));
+    const allPromises = Promise.all(images.map((id) => {
+      const obj = projectId(onOpen[9]);
+      return obj.getAttachmentUrl(id, id.id);
+    }));
     allPromises.then((arr) => {
       const mapped = arr.map((uri, mediaIndex) => {
         size = { uri, mediaIndex, width: 1280, height: 800, accessoryType: "embed", description: closure_1_1[mediaIndex].name, disableDownload: true };
@@ -229,12 +230,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   projectId = projectId.projectId;
   let images = projectId.images;
   const items = [images, projectId];
-  const tmp = closure_10();
+  const tmp = closure_9();
   const onOpen = react.useCallback((arg0) => {
     let closure_1;
     const id = arg0;
     images = images.findIndex((id) => id.id === id.id);
-    const allPromises = Promise.all(images.map((id) => getAttachmentUrl(id, id.id)));
+    const allPromises = Promise.all(images.map((id) => {
+      const obj = projectId(onOpen[9]);
+      return obj.getAttachmentUrl(id, id.id);
+    }));
     allPromises.then((arr) => {
       const mapped = arr.map((uri, mediaIndex) => {
         size = { uri, mediaIndex, width: 1280, height: 800, accessoryType: "embed", description: closure_1_1[mediaIndex].name, disableDownload: true };
@@ -249,7 +253,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   }, items);
   let tmp2 = null;
   if (0 !== images.length) {
-    tmp2 = <closure_6 horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={tmp.strip}>{images.map((image) => <closure_11 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />)}</closure_6>;
+    tmp2 = <closure_6 horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={tmp.strip}>{images.map((image) => <closure_10 key={arg0.id} projectId={projectId} image={arg0} onOpen={onOpen} />)}</closure_6>;
   }
   return tmp2;
 });

@@ -1,10 +1,10 @@
-// Module ID: 7270
-// Function ID: 7271
+// Module ID: 7271
+// Function ID: 7272
 // Name: ProfileFrameRecord
 // Dependencies: [1992, 1993, 2]
 // Exports: isProfileFrameRecord
 
-// Module 7270 (ProfileFrameRecord)
+// Module 7271 (ProfileFrameRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1992 */;
 import size from "module_2" /* 2 */;

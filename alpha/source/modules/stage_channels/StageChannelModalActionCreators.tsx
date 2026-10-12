@@ -1,12 +1,12 @@
-// Module ID: 7492
-// Function ID: 7493
+// Module ID: 7493
+// Function ID: 7494
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 5897, 2065, 2087, 4750, 2116, 2073, 7483, 7038, 6097, 7493, 5889, 5900, 7443, 7494, 2]
+// Dependencies: [5, 5897, 2065, 2087, 4750, 2116, 2073, 7484, 7039, 6098, 7494, 5889, 5900, 7444, 7495, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7492 (StageChannelModalActionCreators)
+// Module 7493 (StageChannelModalActionCreators)
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
-import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7483 */;
+import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7484 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -32,7 +32,7 @@ function connectToStage(channel, flag) {
       let num = obj2.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       const tmp7 = importAll;
       if (num) {
-        const tmp7Result = tmp7(7483);
+        const tmp7Result = tmp7(7484);
         const result = tmp7Result.openStageBlockedUsersSheet(channel, () => {
           connectAndOpen(channel, true);
         });
@@ -81,14 +81,14 @@ function connectAndOpen(channel, flag, flag2, arg3) {
     result = obj.shouldShowVoiceChannelChangeConfirmation(channel);
   }
   if (result) {
-    const obj2 = flag2(7483);
+    const obj2 = flag2(7484);
     result = obj2.showChannelChangeConfirmationAlert(channel, () => {
       connectAndOpen(channel, flag, flag2, true);
     });
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      const obj3 = flag2(7483);
+      const obj3 = flag2(7484);
       obj3.navigateToStage(channel, voiceChannelId);
     }
   }
@@ -116,7 +116,7 @@ export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) 
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -185,7 +185,7 @@ export const connectOrLurkStage = function connectOrLurkStage(arg0, arg1, arg2) 
             return flag;
           });
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp19) {
         c4 = 3;

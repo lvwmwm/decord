@@ -1,16 +1,16 @@
-// Module ID: 12333
-// Function ID: 12334
+// Module ID: 12335
+// Function ID: 12336
 // Name: useMessageRequestPreview
-// Dependencies: [5, 5432, 6035, 12334, 1085, 558, 576, 504, 12, 1295, 584, 2]
+// Dependencies: [5, 5432, 6035, 12336, 1085, 558, 576, 504, 12, 1295, 584, 2]
 
-// Module 12333 (useMessageRequestPreview)
+// Module 12335 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 12334 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 12336 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _loadMessageRequestData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -75,7 +75,7 @@ let obj = function _loadMessageRequestData() {
         c3 = 0;
         c9 = null;
         c4 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -105,7 +105,7 @@ obj = function _loadMessageRequestDataHelper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       while (true) {
@@ -209,7 +209,7 @@ obj = function _loadMessageRequestDataHelper() {
               continue;
             }
             c11 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         }
       }

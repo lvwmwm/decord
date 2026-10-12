@@ -1,18 +1,18 @@
-// Module ID: 16072
-// Function ID: 16073
+// Module ID: 16095
+// Function ID: 16096
 // Name: DevToolsActionSheetsScreen
-// Dependencies: [32, 19, 17, 21, 5092, 587, 13039, 10742, 5934, 16073, 2000, 558, 576, 5056, 6838, 6179, 7571, 6195, 6839, 6264, 5088, 5377, 6181, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 13044, 10742, 5934, 16096, 2000, 558, 576, 5056, 6839, 6180, 7572, 6196, 6840, 6265, 5088, 5377, 6182, 2]
 
-// Module 16072 (DevToolsActionSheetsScreen)
+// Module 16095 (DevToolsActionSheetsScreen)
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 10742 */;
-import BlockedDomainModalActionCreatorsDefault from "BlockedDomainModalActionCreators" /* 13039 */;
+import BlockedDomainModalActionCreatorsDefault from "BlockedDomainModalActionCreators" /* 13044 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -63,7 +63,7 @@ let items = [
     description: "Shows safety warning for inappropriate conversations",
     show() {
       const obj = ModalActionCreatorsDefault;
-      return obj.pushLazy(asyncRequire(16073, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
+      return obj.pushLazy(asyncRequire(16096, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
     }
   }
 ];
@@ -99,7 +99,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Action
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const _HermesInternal = HermesInternal;
     const obj2 = { title: "Select Action Sheet", subtitle: "" + items.length + " options" };
-    const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
     const tmp8 = closure_7(BottomSheetTitleHeader, obj2);
     cResult[2] = tmp8;
     tmp5 = tmp8;
@@ -121,8 +121,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Action
     }
     if (cResult[7] !== tmp11) {
       const obj4 = { header: tmp5, children: closure_7(closure_5, obj5) };
-      obj5 = { style: tmp9, children: closure_7(tmp(6264).TableRowGroup, obj6) };
-      BottomSheet = tmp(6839).BottomSheet;
+      obj5 = { style: tmp9, children: closure_7(tmp(6265).TableRowGroup, obj6) };
+      BottomSheet = tmp(6840).BottomSheet;
       obj6 = { hasIcons: true, children: tmp11 };
       const tmp16 = closure_7(BottomSheet, obj4);
       cResult[7] = tmp11;
@@ -285,9 +285,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsActi
   const Stack = tmp(5377).Stack;
   obj4 = { children: items };
   items = [tmp11, ];
-  Card = tmp(6181).Card;
-  const obj5 = { description: "Tap an option to launch the action sheet immediately", hasIcons: false, children: closure_7(selectedType(6179).TableRow, obj11) };
-  const TableRowGroup = tmp(6264).TableRowGroup;
+  Card = tmp(6182).Card;
+  const obj5 = { description: "Tap an option to launch the action sheet immediately", hasIcons: false, children: closure_7(selectedType(6180).TableRow, obj11) };
+  const TableRowGroup = tmp(6265).TableRowGroup;
   obj11 = { label: tmp7.label, subLabel: tmp7.description, arrow: true, onPress: tmp10 };
   items[1] = closure_7(TableRowGroup, obj5);
   const tmp15 = closure_7(Stack, obj3);
@@ -319,10 +319,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsActi
   obj2 = { spacing: 16, children: closure_8(Card, obj3) };
   Stack = selectedType(5377).Stack;
   obj3 = { children: items1 };
-  Card = selectedType(6181).Card;
+  Card = selectedType(6182).Card;
   items1 = [closure_7(selectedType(5088).Text, { variant: "heading-lg/medium", children: "Action Sheets" }), ];
-  const obj4 = { description: "Tap an option to launch the action sheet immediately", hasIcons: false, children: closure_7(selectedType(6179).TableRow, obj5) };
-  const TableRowGroup = selectedType(6264).TableRowGroup;
+  const obj4 = { description: "Tap an option to launch the action sheet immediately", hasIcons: false, children: closure_7(selectedType(6180).TableRow, obj5) };
+  const TableRowGroup = selectedType(6265).TableRowGroup;
   obj5 = { label: found.label, subLabel: found.description, arrow: true, onPress: callback };
   items1[1] = closure_7(TableRowGroup, obj4);
   return closure_7(closure_6, obj);

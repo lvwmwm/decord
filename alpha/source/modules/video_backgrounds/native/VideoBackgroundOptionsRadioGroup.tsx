@@ -1,7 +1,7 @@
 // Module ID: 11095
 // Function ID: 11096
 // Name: VideoBackgroundOptionsRadioGroup
-// Dependencies: [19, 1085, 21, 558, 576, 9538, 5258, 11096, 5253, 5256, 1126, 6261, 6262, 2]
+// Dependencies: [19, 1085, 21, 558, 576, 9539, 5258, 11096, 5253, 5256, 1126, 6262, 6263, 2]
 
 // Module 11095 (VideoBackgroundOptionsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackg
   let obj = analyticsContext(576);
   const cResult = obj.c(13);
   title = title.title;
-  let obj2 = analyticsContext(9538);
+  let obj2 = analyticsContext(9539);
   analyticsContext = obj2.useAnalyticsContext();
   let obj3 = analyticsContext(5258);
   const lastUsedVideoBackgroundOption = obj3.useLastUsedVideoBackgroundOption();
@@ -106,8 +106,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackg
   cResult[9] = tmp7;
   cResult[10] = tmp11;
   cResult[11] = title;
-  cResult[12] = jsx(analyticsContext(6262).TableRadioGroup, { hasIcons: true, title, value: tmp7, onChange: tmp6, accessibilityLabel: tmp9, children: tmp11 });
-  jsx(analyticsContext(6262).TableRadioGroup, { hasIcons: true, title, value: tmp7, onChange: tmp6, accessibilityLabel: tmp9, children: tmp11 });
+  cResult[12] = jsx(analyticsContext(6263).TableRadioGroup, { hasIcons: true, title, value: tmp7, onChange: tmp6, accessibilityLabel: tmp9, children: tmp11 });
+  jsx(analyticsContext(6263).TableRadioGroup, { hasIcons: true, title, value: tmp7, onChange: tmp6, accessibilityLabel: tmp9, children: tmp11 });
 }) : (function VideoBackgroundOptionsRadioGroup(title) {
   let closure_0;
   _require = undefined;

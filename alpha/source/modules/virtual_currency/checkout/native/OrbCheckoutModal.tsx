@@ -1,20 +1,20 @@
-// Module ID: 13431
-// Function ID: 13432
+// Module ID: 13454
+// Function ID: 13455
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1085, 1096, 21, 558, 576, 13432, 10506, 13433, 5377, 13434, 9178, 10163, 1265, 5934, 7514, 7515, 11539, 38, 1279, 1126, 6200, 10602, 2]
+// Dependencies: [19, 1085, 1096, 21, 558, 576, 13455, 10507, 13456, 5377, 13457, 9179, 10164, 1265, 5934, 7515, 7516, 11541, 38, 1279, 1126, 6201, 10603, 2]
 // Exports: default
 
-// Module 13431 (OrbCheckoutModal)
+// Module 13454 (OrbCheckoutModal)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9178 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10163 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10506 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13432 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 13433 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9179 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10164 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10507 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 13455 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 13456 */;
 import "react";
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
@@ -58,7 +58,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbChe
     let tmp8 = null != orbRedemptionError;
     if (tmp8) {
       const obj4 = { error: orbRedemptionError.message };
-      tmp8 = unpackModuleId(tmp(13433).OrbCheckoutErrorCard, obj4);
+      tmp8 = unpackModuleId(tmp(13456).OrbCheckoutErrorCard, obj4);
     }
     cResult[0] = orbRedemptionError;
     cResult[1] = tmp8;
@@ -118,10 +118,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbChe
   const tmp5 = authStore2;
   if (tmp6) {
     const obj3 = { error: orbRedemptionError.message };
-    tmp6 = unpackModuleId(tmp(13433).OrbCheckoutErrorCard, obj3);
+    tmp6 = unpackModuleId(tmp(13456).OrbCheckoutErrorCard, obj3);
   }
   const items = [tmp6, , ];
-  const OrbCheckoutOrderSummary = tmp(13433).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(13456).OrbCheckoutOrderSummary;
   if (product == null) {
     product = null;
   }
@@ -188,7 +188,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrb
   const virtualCurrencyBalance = obj3.useVirtualCurrencyBalance();
   const tmp = _require;
   if (cResult[0] !== skuId) {
-    const tmpResult = tmp(9178);
+    const tmpResult = tmp(9179);
     let result = tmpResult.get1PShopApplicationIdForSKU(skuId);
     cResult[0] = skuId;
     cResult[1] = result;

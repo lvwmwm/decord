@@ -1,14 +1,14 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 7188
+// Function ID: 7189
 // Name: Clickstream
-// Dependencies: [32, 502, 5110, 11, 7188, 1265, 7189, 2]
+// Dependencies: [32, 502, 5110, 11, 7189, 1265, 7190, 2]
 // Exports: trackClickstream
 
-// Module 7187 (Clickstream)
+// Module 7188 (Clickstream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ClickstreamExperiment from "ClickstreamExperiment" /* 7188 */;
-import ClickstreamEvents from "ClickstreamEvents" /* 7189 */;
+import ClickstreamExperiment from "ClickstreamExperiment" /* 7189 */;
+import ClickstreamEvents from "ClickstreamEvents" /* 7190 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;

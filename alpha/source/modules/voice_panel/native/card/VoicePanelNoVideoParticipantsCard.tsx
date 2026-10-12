@@ -1,13 +1,13 @@
-// Module ID: 17813
-// Function ID: 17814
+// Module ID: 17870
+// Function ID: 17871
 // Name: VoicePanelNoVideoParticipantsCard
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11969, 5106, 1126, 5088, 6161, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11971, 5106, 1126, 5088, 6162, 2]
 
-// Module 17813 (VoicePanelNoVideoParticipantsCard)
+// Module 17870 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11969 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11971 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -20,7 +20,7 @@ let obj2;
 let obj3;
 let size;
 let tmp4;
-const NativeViewDefault = tmp4(6161);
+const NativeViewDefault = tmp4(6162);
 const Pressable = react_native.Pressable;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;

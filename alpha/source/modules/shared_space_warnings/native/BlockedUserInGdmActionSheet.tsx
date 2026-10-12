@@ -1,9 +1,9 @@
-// Module ID: 18190
-// Function ID: 18191
+// Module ID: 18248
+// Function ID: 18249
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2065, 1390, 14005, 1085, 21, 5092, 587, 5088, 5409, 1126, 558, 576, 504, 1388, 1200, 11380, 10279, 6867, 5046, 1265, 5056, 18191, 7014, 6898, 6156, 10400, 6264, 6179, 5379, 2]
+// Dependencies: [19, 17, 2065, 1390, 14028, 1085, 21, 5092, 587, 5088, 5409, 1126, 558, 576, 504, 1388, 1200, 11380, 10280, 6868, 5046, 1265, 5056, 18249, 7015, 6899, 6157, 10401, 6265, 6180, 5379, 2]
 
-// Module 18190 (BlockedUserInGdmActionSheet)
+// Module 18248 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,14 +14,14 @@ import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import TableRow2 from "TableRow" /* 6179 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 6867 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18191 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18249 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14005 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14028 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -291,7 +291,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     let tmp10;
     if (cResult[12] !== tmp8) {
       const obj3 = { users: tmp8, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10279).FacepileGroupDMAvatar;
+      const FacepileGroupDMAvatar = tmp(10280).FacepileGroupDMAvatar;
       const tmp12 = closure_10(FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp8;
       cResult[13] = tmp12;
@@ -326,7 +326,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10279).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10280).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;

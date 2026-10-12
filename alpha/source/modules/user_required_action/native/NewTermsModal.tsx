@@ -1,17 +1,17 @@
-// Module ID: 18221
-// Function ID: 18222
+// Module ID: 18279
+// Function ID: 18280
 // Name: NewTermsModal
-// Dependencies: [5, 32, 19, 17, 2059, 1085, 21, 5092, 587, 6890, 1126, 5930, 558, 576, 1631, 6206, 5372, 8305, 1273, 8971, 5088, 5379, 8673, 8664, 2]
+// Dependencies: [5, 32, 19, 17, 2059, 1085, 21, 5092, 587, 6891, 1126, 5930, 558, 576, 1631, 6207, 5372, 8306, 1273, 8972, 5088, 5379, 8674, 8665, 2]
 
-// Module 18221 (NewTermsModal)
+// Module 18279 (NewTermsModal)
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6890 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8664 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8673 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8971 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6891 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8665 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -112,7 +112,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
   }
   [tmp11, importDefault] = _slicedToArray(react.useState(false), 2);
   const tmp10 = _slicedToArray(react.useState(false), 2);
-  const tmpResult = tmp(6206);
+  const tmpResult = tmp(6207);
   tmpResult.useNavigatorBackPressHandler(tmp(5372).BackPressHandler.minimize);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp14 = _asyncToGenerator;
@@ -129,7 +129,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -163,7 +163,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
             tmp = value;
             tmp4(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c3 = 3;
@@ -490,7 +490,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
   const bottom = rect.bottom;
   const memo = react.useMemo(() => action.getAction(), []);
   [first, importDefault] = react.useState(false);
-  let obj = memo(6206);
+  let obj = memo(6207);
   obj.useNavigatorBackPressHandler(memo(5372).BackPressHandler.minimize);
   dependencyMap = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     let closure_0;
@@ -504,7 +504,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -538,7 +538,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
           tmp = value;
           closure_129_1(tmp);
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp14) {
         c3 = 3;

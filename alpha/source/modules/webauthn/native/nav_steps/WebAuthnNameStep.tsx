@@ -1,14 +1,14 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15071
+// Function ID: 15072
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 6682, 1503, 5939, 4809, 1126, 8579, 1200, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 6683, 1503, 5939, 4809, 1126, 8580, 1200, 5379, 2]
 // Exports: default
 
-// Module 15048 (WebAuthnNameStep)
+// Module 15071 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import useNavigation from "useNavigation" /* 1503 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6682 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6683 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -24,7 +24,7 @@ let tmp;
 const intl4 = tmp(1126);
 const native = tmp(1200);
 const components_Button_Button = tmp(5379);
-const Form2 = tmp(8579);
+const Form2 = tmp(8580);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -61,7 +61,7 @@ export default function WebAuthnNameStep() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -114,7 +114,7 @@ export default function WebAuthnNameStep() {
             open("WEBAUTHN_CREDENTIAL_REGISTER_SUCCESS_TOAST_KEY", obj7);
             const replaced = closure_128_2.replace(constants.WEBAUTHN_SUCCESS);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           body = tmp28;

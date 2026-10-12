@@ -1,15 +1,15 @@
-// Module ID: 17755
-// Function ID: 17756
+// Module ID: 17812
+// Function ID: 17813
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 5110, 5113, 5115, 558, 576, 11969, 8798, 573, 11134, 5137, 11075, 16649, 17756, 4809, 1126, 6289, 587, 2]
+// Dependencies: [19, 5110, 5113, 5115, 558, 576, 11971, 8799, 573, 11134, 5137, 11075, 16673, 17813, 4809, 1126, 6290, 587, 2]
 
-// Module 17755 (useVoicePanelCardUserStateIcons)
+// Module 17812 (useVoicePanelCardUserStateIcons)
 import intl6 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import CallConstants from "CallConstants" /* 5115 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8798 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11969 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17756 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8799 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11971 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17813 */;
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
@@ -219,8 +219,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   }
   muteDeafenIconState = useMuteDeafenIconState(tmp7, arg2);
   let tmp10;
-  const useVideoIconState = tmp4(8798).useVideoIconState;
-  tmp4(8798);
+  const useVideoIconState = tmp4(8799).useVideoIconState;
+  tmp4(8799);
   if (arg0 === stateFromStores.USER) {
     tmp10 = arg1;
   }
@@ -255,7 +255,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(16649);
+  const tmp4Result6 = tmp4(16673);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {

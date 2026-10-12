@@ -1,7 +1,7 @@
 // Module ID: 10730
 // Function ID: 10731
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 6876, 21, 5092, 587, 1126, 10731, 10732, 558, 576, 12, 1901, 5088, 1200, 6875, 2]
+// Dependencies: [19, 17, 6877, 21, 5092, 587, 1126, 10731, 10732, 558, 576, 12, 1901, 5088, 1200, 6876, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
 // Module 10730 (ConnectionMetadataVanityItems)
@@ -13,11 +13,11 @@ import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import NumberUtils from "NumberUtils" /* 1901 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 6875 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 6876 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10731 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10732 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 6876 */;
+import Constants from "Constants" /* 6877 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,15 +1,15 @@
 // Module ID: 7855
 // Function ID: 7856
-// Dependencies: [7852]
+// Dependencies: [7853]
 
 // Module 7855
-import _mod7852 from "module_7852" /* 7852 */;
+import _mod7853 from "module_7853" /* 7853 */;
 
-let obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
-obj[45056] = {
-  name: "MPFVersion",
+let obj = { 1: "InteroperabilityIndex", 2: null, 4096: "RelatedImageFileFormat", 4097: "RelatedImageWidth", 4098: "RelatedImageHeight" };
+obj[2] = {
+  name: "InteroperabilityVersion",
   description(value) {
-    const obj = _mod7852;
+    const obj = _mod7853;
     return obj.getStringValue(value);
   }
 };

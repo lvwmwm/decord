@@ -1,9 +1,9 @@
-// Module ID: 13711
-// Function ID: 13712
+// Module ID: 13734
+// Function ID: 13735
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 4962, 7175, 5056, 7014, 1200, 5088, 1126, 8198, 5379, 2128, 6838, 13712, 5377, 6839, 2]
+// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 4962, 7176, 5056, 7015, 1200, 5088, 1126, 8199, 5379, 2128, 6839, 13735, 5377, 6840, 2]
 
-// Module 13711 (ReferralProgramShareConfirmationActionSheet)
+// Module 13734 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,11 +14,11 @@ import UserUtilsDefault from "UserUtils" /* 4962 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6838 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7175 */;
-import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 13712 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7176 */;
+import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 13735 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -67,7 +67,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   } else {
     tmp5 = cResult[1];
   }
-  const FAIL = tmp(7175).CreateReferralStatus.FAIL;
+  const FAIL = tmp(7176).CreateReferralStatus.FAIL;
   if (cResult[2] !== user.id) {
     function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
@@ -112,7 +112,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
             const intl2 = tmp(1126).intl;
             const stringResult = intl2.string(user(1126).t["g33r/P"]);
             let obj3 = { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-            const ChatIcon = tmp(8198).ChatIcon;
+            const ChatIcon = tmp(8199).ChatIcon;
             const tmp26 = closure_5(ChatIcon, obj3);
             cResult[14] = stringResult;
             cResult[15] = tmp26;
@@ -173,7 +173,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
       cResult[13] = tmp16;
       tmp14 = tmp16;
     }
-    const obj11 = { style: tmp10, size: user(1200).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
+    const obj11 = { style: tmp10, size: user(1200).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
     const Avatar = tmp(1200).Avatar;
     const tmp13 = closure_5(Avatar, obj11);
     cResult[7] = tmp10;
@@ -200,7 +200,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   const tmp = closure_8();
   let obj = UserUtilsDefault;
   const name = obj.getName(user);
-  const tmp6 = trialCreationResult === user(7175).CreateReferralStatus.FAIL;
+  const tmp6 = trialCreationResult === user(7176).CreateReferralStatus.FAIL;
   let obj2 = { style: tmp.recipientRow, children: items1 };
   const items = [tmp.avatarContainer, ];
   let erroredAvatar = tmp6;
@@ -209,7 +209,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
-  let obj3 = { style: items, size: tmp5(1200).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
+  let obj3 = { style: items, size: tmp5(1200).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
   items[1] = erroredAvatar;
   items1 = [closure_5(Avatar, obj3), , ];
   if (tmp6) {
@@ -243,7 +243,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   const Button = tmp5(5379).Button;
   intl2 = tmp5(1126).intl;
   obj10 = { size: "xs", color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT };
-  ChatIcon = tmp5(8198).ChatIcon;
+  ChatIcon = tmp5(8199).ChatIcon;
   items1[2] = closure_5(Button, obj9);
   return closure_7(tmp8, obj2);
 });
@@ -431,11 +431,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReferralProg
   let obj = { helpdeskArticle: obj2.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM) };
   const AwGSWl = tmp5(1126).t.AwGSWl;
   obj2 = HelpdeskUtilsDefault;
-  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(6838).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
+  const obj3 = { startExpanded: true, contentStyles: tmp.content, header: closure_5(tmp5(6839).BottomSheetTitleHeader, { title: null }), children: closure_7(Stack, obj4) };
   const formatResult = format(AwGSWl, obj);
-  BottomSheet = tmp5(6839).BottomSheet;
+  BottomSheet = tmp5(6840).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13712).FistBumpSpotIllustration, {}) };
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13735).FistBumpSpotIllustration, {}) };
   Stack = tmp5(5377).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

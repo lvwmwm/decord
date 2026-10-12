@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 11410 (removeConjureServerApp)
-import ConjureActionCreators from "ConjureActionCreators" /* 11411 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _removeConjureServerApp() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -45,7 +45,7 @@ let obj = function _removeConjureServerApp() {
             let closure_2 = tmp2;
             targetAppName = undefined;
             const obj4 = { guildId: closure_0.guildId, alsoRemovePreviewBot: true };
-            const obj8 = ConjureActionCreators;
+            const obj8 = ConjurePublishActionCreators;
             c4 = 1;
             c5 = 1;
             const obj5 = { value: unpublishProjectResult.catch(() => null), done: false };

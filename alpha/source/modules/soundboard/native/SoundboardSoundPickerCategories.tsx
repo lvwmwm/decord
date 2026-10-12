@@ -1,24 +1,24 @@
-// Module ID: 17780
-// Function ID: 17781
+// Module ID: 17837
+// Function ID: 17838
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [109, 19, 17, 17762, 1390, 1085, 21, 5092, 587, 558, 576, 7048, 6158, 1126, 9762, 5051, 17778, 8925, 1200, 8222, 6184, 5057, 5058, 4769, 504, 9461, 1631, 6334, 8371, 4992, 2]
+// Dependencies: [109, 19, 17, 17819, 1390, 1085, 21, 5092, 587, 558, 576, 7049, 6159, 1126, 9763, 5051, 17835, 8926, 1200, 8223, 6185, 5057, 5058, 4769, 504, 9462, 1631, 6335, 8372, 4992, 2]
 
-// Module 17780 (SoundboardSoundPickerCategories)
+// Module 17837 (SoundboardSoundPickerCategories)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import ClockIcon from "ClockIcon" /* 5051 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
-import GuildIconDefault from "GuildIcon" /* 6158 */;
-import Pressables from "Pressables" /* 6184 */;
-import SoundboardTypes from "SoundboardTypes" /* 7048 */;
-import LockIcon from "LockIcon" /* 8222 */;
-import TrophyIcon from "TrophyIcon" /* 8925 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9461 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9762 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 17762 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17778 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import Pressables from "Pressables" /* 6185 */;
+import SoundboardTypes from "SoundboardTypes" /* 7049 */;
+import LockIcon from "LockIcon" /* 8223 */;
+import TrophyIcon from "TrophyIcon" /* 8926 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9462 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9763 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 17819 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17835 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -364,7 +364,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
       const obj3 = { guildName: category.categoryInfo.guild.name };
       name = intl5.formatToPlainString(tmp2(1126).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = authStore2(tmp2(8925).TrophyIcon, obj4);
+      tmp7 = authStore2(tmp2(8926).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -379,7 +379,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundC
   };
   obj6 = { style: items, children: items1 };
   items = [tmp.item, style];
-  const PressableOpacity = tmp2(6184).PressableOpacity;
+  const PressableOpacity = tmp2(6185).PressableOpacity;
   tmp15 = map1;
   if (tmp14Result == null) {
     tmp14Result = tmp7;

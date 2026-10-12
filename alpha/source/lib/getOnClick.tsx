@@ -1,10 +1,10 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8496
+// Function ID: 8497
 // Name: getOnClick
-// Dependencies: [32, 5, 5440, 6054, 6932, 502, 2125, 2087, 5073, 5432, 2116, 4939, 5963, 1085, 1087, 6933, 584, 5074, 8496, 8518, 2000, 6097, 6949, 8513, 5072, 5077, 7378, 4800, 1265, 11609, 13033, 10853, 7014, 11613, 13037, 10685, 10155, 9165, 1384, 9167, 5977, 13038, 7262, 5107, 5422, 8264, 10742, 2]
+// Dependencies: [32, 5, 5440, 6054, 6933, 502, 2125, 2087, 5073, 5432, 2116, 4939, 5963, 1085, 1087, 6934, 584, 5074, 8497, 8519, 2000, 6098, 6950, 8514, 5072, 5077, 7379, 4800, 1265, 11611, 13038, 10853, 7015, 11615, 13042, 10685, 10156, 9166, 1384, 9168, 5977, 13043, 7263, 5107, 5422, 8265, 10742, 2]
 // Exports: default
 
-// Module 8495 (getOnClick)
+// Module 8496 (getOnClick)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
@@ -12,18 +12,18 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import openURLDefault from "openURL" /* 4800 */;
 import CodedLink from "CodedLink" /* 5077 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6933 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 6949 */;
-import _slicedToArray2 from "_slicedToArray" /* 7378 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8496 */;
-import QuestUtils from "QuestUtils" /* 9167 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6934 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 6950 */;
+import _slicedToArray2 from "_slicedToArray" /* 7379 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
+import QuestUtils from "QuestUtils" /* 9168 */;
 import storefrontCodedLink from "storefrontCodedLink" /* 10685 */;
 import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 10742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6932 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6933 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -50,7 +50,7 @@ let map1;
 let tmp;
 let tmp11;
 const QuestContent = tmp11(5977);
-const SocialLayerStorefrontNativeActionCreators = tmp(10155);
+const SocialLayerStorefrontNativeActionCreators = tmp(10156);
 function openInviteModal() {
   return obj(...arguments);
 }
@@ -69,7 +69,7 @@ let obj = function _openInviteModal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ let obj = function _openInviteModal() {
             } else {
               c3 = 1;
               c2 = 1;
-              const obj5 = { type: "DISPLAYED_INVITE_SHOW", code, username: "Array", deeplinkAttemptId: "code", invite_instance_id };
+              const obj5 = { type: "DISPLAYED_INVITE_SHOW", code, username: "Array", deeplinkAttemptId: "apply", invite_instance_id };
               const obj6 = { value: obj2.dispatch(obj5), done: false };
               obj2 = DispatcherDefault;
               return obj6;
@@ -97,7 +97,7 @@ let obj = function _openInviteModal() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c2 = 3;
@@ -126,7 +126,7 @@ obj = function _handleInviteCodedLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ obj = function _handleInviteCodedLink() {
             return { value, done: true };
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp63) {
           c7 = 3;
           throw tmp63;
@@ -320,7 +320,7 @@ export default function getOnClick(url) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "backgroundColor", skuId: "IconComponent" };
+            result = { applicationId: "Array", skuId: "Set" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -335,7 +335,7 @@ export default function getOnClick(url) {
         openURLDefault(url);
         return true;
       }
-      result = { applicationId: code, skuId: "Array" };
+      result = { applicationId: code, skuId: "r" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -383,7 +383,7 @@ export default function getOnClick(url) {
                   } else if (arg0 === 2) {
                     return { value, done: true };
                   } else {
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } else {
                   try {
@@ -427,7 +427,7 @@ export default function getOnClick(url) {
                       return { value, done: true };
                     } else {
                       c4 = 3;
-                      return { value: "IconComponent", done: "+51" };
+                      return { value: "IconComponent", done: null };
                     }
                   } catch (tmp6) {
                     c4 = 3;
@@ -473,7 +473,7 @@ export default function getOnClick(url) {
                   obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -513,7 +513,7 @@ export default function getOnClick(url) {
                     const obj5 = { targetApplicationId: channelId, channelId, analyticsLocations, customId, referrerId };
                     uRL(closure_2[33])(obj5);
                     c4 = 3;
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 } catch (tmp5) {
                   c4 = 3;
@@ -544,7 +544,7 @@ export default function getOnClick(url) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(13037, dependencyMap.paths);
+        const promise = asyncRequire(13042, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });
@@ -600,7 +600,7 @@ export default function getOnClick(url) {
   }
   if (null != findCodedLinkResult) {
     if (findCodedLinkResult.type === tmp2(5077).CodedLinkType.QUESTS_EMBED) {
-      const tmp2Result = tmp2(9165);
+      const tmp2Result = tmp2(9166);
       if (tmp2Result.getIsEligibleForQuests()) {
         return function(preventDefault) {
           if (preventDefault != null) {
@@ -752,7 +752,7 @@ export default function getOnClick(url) {
   const tmp2Result3 = tmp2(5422);
   let result = tmp2Result3.tryParseEventDetailsPath(pathname);
   if (!skipExtensionCheck) {
-    const tmp2Result4 = tmp2(8264);
+    const tmp2Result4 = tmp2(8265);
     if (null != tmp2Result4.isSuspiciousDownload(url)) {
       fn = (preventDefault) => {
         if (preventDefault != null) {

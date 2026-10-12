@@ -1,16 +1,16 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 11884
+// Function ID: 11885
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [109, 19, 21, 5092, 587, 558, 576, 11854, 5088, 1200, 6832, 8579, 2]
+// Dependencies: [109, 19, 21, 5092, 587, 558, 576, 11856, 5088, 1200, 6833, 8580, 2]
 
-// Module 11882 (AppLauncherSelectOptionFormRow)
+// Module 11884 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6832 */;
-import Form from "Form" /* 8579 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11854 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6833 */;
+import Form from "Form" /* 8580 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11856 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
                 }
               }
             }
-            const FormRow = tmp(8579).FormRow;
+            const FormRow = tmp(8580).FormRow;
             const merged = Object.assign(tmp6);
             const tmp31 = <FormRow start end style={tmp16} label={tmp17} subLabel={tmp20} trailing={tmp22} />;
             cResult[20] = tmp6;
@@ -193,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
     }
   }
-  ({ source: unselectedSubLabel(6832), size: native.IconSizes.SMALL_20 });
+  ({ source: unselectedSubLabel(6833), size: native.IconSizes.SMALL_20 });
   const Icon = tmp3(1200).Icon;
   const merged1 = Object.assign(merged);
   return <FormRow start end style={items} label={null} subLabel={fn} trailing={null} />;

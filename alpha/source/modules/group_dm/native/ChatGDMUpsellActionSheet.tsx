@@ -1,7 +1,7 @@
 // Module ID: 10761
 // Function ID: 10762
 // Name: ChatGDMUpsellActionSheet
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 4938, 2049, 5056, 6156, 10762, 1126, 5379, 5088, 10763, 5038, 6306, 6839, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 4938, 2049, 5056, 6157, 10762, 1126, 5379, 5088, 10763, 5038, 6307, 6840, 2]
 
 // Module 10761 (ChatGDMUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import FastImageDefault from "FastImage" /* 6156 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10762 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -319,7 +319,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
                           }
                         }
                         const obj14 = { showGradient: true, scrollable: true, startExpanded: true, header: tmp12, footer: tmp31, children: tmp81 };
-                        const tmp86 = closure_5(onClick(6839).BottomSheet, obj14);
+                        const tmp86 = closure_5(onClick(6840).BottomSheet, obj14);
                         cResult[55] = tmp31;
                         cResult[56] = tmp81;
                         cResult[57] = tmp12;
@@ -329,7 +329,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
                     }
                     const obj15 = { children: items };
                     items = [tmp37, tmp42, tmp77];
-                    const tmp83 = closure_6(onClick(6306).BottomSheetScrollView, obj15);
+                    const tmp83 = closure_6(onClick(6307).BottomSheetScrollView, obj15);
                     cResult[51] = tmp37;
                     cResult[52] = tmp42;
                     cResult[53] = tmp77;
@@ -415,7 +415,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
   }, items);
   let obj = { showGradient: true, scrollable: true, startExpanded: true, header: closure_5(View, obj2), footer: closure_6(View, obj4), children: closure_6(BottomSheetScrollView, obj9) };
   obj2 = { style: tmp.titleImage, children: closure_5(tmp3, obj3) };
-  BottomSheet = onClick(6839).BottomSheet;
+  BottomSheet = onClick(6840).BottomSheet;
   obj3 = { source: AssetRegistryDefault, resizeMode: "contain" };
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.footer, ];
@@ -439,7 +439,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMUpsel
   intl2 = onClick(1126).intl;
   items2[1] = closure_5(View, obj7);
   obj9 = { children: items3 };
-  BottomSheetScrollView = onClick(6306).BottomSheetScrollView;
+  BottomSheetScrollView = onClick(6307).BottomSheetScrollView;
   const obj10 = { style: tmp.title, variant: "heading-lg/extrabold", accessibilityRole: "header", children: intl3.string(onClick(1126).t["bkqux/"]) };
   const Text = onClick(5088).Text;
   intl3 = onClick(1126).intl;

@@ -1,9 +1,9 @@
-// Module ID: 8779
-// Function ID: 8780
+// Module ID: 8780
+// Function ID: 8781
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8394, 4850, 5378, 1382, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8395, 4850, 5378, 1382, 1126, 5088, 2]
 
-// Module 8779 (SegmentedControlItem)
+// Module 8780 (SegmentedControlItem)
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5378 */;
 import react from "react" /* 19 */;

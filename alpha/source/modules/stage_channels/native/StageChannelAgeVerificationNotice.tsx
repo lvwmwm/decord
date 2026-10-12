@@ -1,9 +1,9 @@
-// Module ID: 7496
-// Function ID: 7497
+// Module ID: 7497
+// Function ID: 7498
 // Name: StageChannelAgeVerificationNotice
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5909, 1126, 5088, 4800, 2128, 7497, 5918, 5046, 7571, 1200, 5949, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5909, 1126, 5088, 4800, 2128, 7498, 5918, 5046, 7572, 1200, 5949, 2]
 
-// Module 7496 (StageChannelAgeVerificationNotice)
+// Module 7497 (StageChannelAgeVerificationNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -222,7 +222,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageC
     if (isVerifiedTeen) {
       WarningIcon = tmp(5046).CircleInformationIcon;
     } else {
-      WarningIcon = tmp(7571).WarningIcon;
+      WarningIcon = tmp(7572).WarningIcon;
     }
     obj6 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp4.icon };
     const tmp15Result = tmp15(WarningIcon, obj6);
@@ -275,7 +275,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageC
     if (isVerifiedTeen) {
       WarningIcon = tmp2(5046).CircleInformationIcon;
     } else {
-      WarningIcon = tmp2(7571).WarningIcon;
+      WarningIcon = tmp2(7572).WarningIcon;
     }
     const obj3 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp.icon };
     items = [hasOwnProperty(WarningIcon, obj3), ];

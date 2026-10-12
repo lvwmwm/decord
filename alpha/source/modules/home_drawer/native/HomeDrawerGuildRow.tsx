@@ -1,24 +1,24 @@
-// Module ID: 16750
-// Function ID: 16751
+// Module ID: 16774
+// Function ID: 16775
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4752, 2069, 2065, 4748, 6077, 2087, 6035, 4760, 5966, 1390, 1085, 5967, 21, 5092, 558, 576, 504, 4982, 4979, 12665, 10345, 5088, 16751, 16752, 5421, 11, 16753, 16754, 11640, 16755, 16756, 16757, 16759, 16760, 16739, 2]
+// Dependencies: [19, 17, 4752, 2069, 2065, 4748, 6078, 2087, 6035, 4760, 5966, 1390, 1085, 5967, 21, 5092, 558, 576, 504, 4982, 4979, 12667, 10346, 5088, 16775, 16776, 5421, 11, 16777, 16778, 11642, 16779, 16780, 16781, 16783, 16784, 16763, 2]
 
-// Module 16750 (HomeDrawerGuildRow)
+// Module 16774 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 16755 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 16756 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 16757 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 16759 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 16760 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 16779 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 16780 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 16781 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 16783 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 16784 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6077 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -338,9 +338,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildR
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(12665).BellZIcon;
+        BellSlashIcon = tmp3(12667).BellZIcon;
       } else {
-        BellSlashIcon = tmp3(10345).BellSlashIcon;
+        BellSlashIcon = tmp3(10346).BellSlashIcon;
       }
       tmp2 = BellSlashIcon;
     } else {

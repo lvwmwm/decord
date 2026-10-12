@@ -1,16 +1,16 @@
-// Module ID: 13607
-// Function ID: 13608
+// Module ID: 13630
+// Function ID: 13631
 // Name: premiumOrbsDeliveredModal
-// Dependencies: [19, 7109, 1085, 13608, 21, 5300, 13609, 11, 13611, 2]
+// Dependencies: [19, 7110, 1085, 13631, 21, 5300, 13632, 11, 13634, 2]
 // Exports: anchorOrbsPurchaseStart, openOrbsModalIfDelivered
 
-// Module 13607 (premiumOrbsDeliveredModal)
+// Module 13630 (premiumOrbsDeliveredModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 13608 */;
-import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 13611 */;
+import VirtualCurrencyConstants from "VirtualCurrencyConstants" /* 13631 */;
+import PremiumOrbsDeliveredModalExperimentDefault from "PremiumOrbsDeliveredModalExperiment" /* 13634 */;
 import react from "react" /* 19 */;
-import EntitlementStore from "EntitlementStore" /* 7109 */;
+import EntitlementStore from "EntitlementStore" /* 7110 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

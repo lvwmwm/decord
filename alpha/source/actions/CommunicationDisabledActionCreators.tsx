@@ -1,7 +1,7 @@
 // Module ID: 11400
 // Function ID: 11401
 // Name: CommunicationDisabledActionCreators
-// Dependencies: [5, 4702, 6097, 2]
+// Dependencies: [5, 4702, 6098, 2]
 
 // Module 11400 (CommunicationDisabledActionCreators)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -26,7 +26,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ let obj = {
             return obj;
           } else {
             guildId = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           guildId = 3;

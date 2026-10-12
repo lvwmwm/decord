@@ -1,9 +1,9 @@
-// Module ID: 15256
-// Function ID: 15257
+// Module ID: 15279
+// Function ID: 15280
 // Name: QuestHomeSortingFilteringBottomSheet
-// Dependencies: [32, 19, 17, 5972, 21, 5092, 587, 558, 576, 1126, 5379, 6813, 5958, 5362, 4969, 5056, 9170, 6838, 6261, 6262, 6264, 6176, 9192, 5377, 6306, 6839, 2]
+// Dependencies: [32, 19, 17, 5972, 21, 5092, 587, 558, 576, 1126, 5379, 6814, 5958, 5362, 4969, 5056, 9171, 6839, 6262, 6263, 6265, 6177, 9193, 5377, 6307, 6840, 2]
 
-// Module 15256 (QuestHomeSortingFilteringBottomSheet)
+// Module 15279 (QuestHomeSortingFilteringBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import ButtonGroup2 from "ButtonGroup" /* 5958 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6813 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -127,7 +127,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Filter
           }
         }
         const obj5 = { bottom: true, children: metroImportAll(ButtonGroup2.ButtonGroup, obj6) };
-        const SafeAreaPaddingView = tmp(6813).SafeAreaPaddingView;
+        const SafeAreaPaddingView = tmp(6814).SafeAreaPaddingView;
         obj6 = { direction: "vertical", style: footerButtonGroup, children: items };
         items = [tmp10, tmp15];
         const tmp21 = metroImportDefault(SafeAreaPaddingView, obj5);
@@ -235,7 +235,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeS
             items[HermesBuiltin.arraySpread(items, arr, 0)] = group;
             found = items;
           } else {
-            found = arr.filter(() => { /* body not rendered: F155579 */ });
+            found = arr.filter(() => { /* body not rendered: F155890 */ });
           }
           return found;
         });
@@ -257,7 +257,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeS
             items[HermesBuiltin.arraySpread(items, arr, 0)] = group;
             found = items;
           } else {
-            found = arr.filter(() => { /* body not rendered: F155579 */ });
+            found = arr.filter(() => { /* body not rendered: F155890 */ });
           }
           return found;
         });

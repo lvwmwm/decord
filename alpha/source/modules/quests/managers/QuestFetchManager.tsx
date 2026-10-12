@@ -1,17 +1,17 @@
-// Module ID: 18576
-// Function ID: 18577
+// Module ID: 18634
+// Function ID: 18635
 // Name: QuestFetchManager
-// Dependencies: [7390, 1102, 6807, 9165, 1255, 9171, 1382, 6071, 18577, 2]
+// Dependencies: [7391, 1102, 6808, 9166, 1255, 9172, 1382, 6071, 18635, 2]
 
-// Module 18576 (QuestFetchManager)
+// Module 18634 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1102 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import QuestsEligibility from "QuestsEligibility" /* 9165 */;
-import QuestActionCreators from "QuestActionCreators" /* 9171 */;
-import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 18577 */;
-import QuestStore from "QuestStore" /* 7390 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
+import QuestsEligibility from "QuestsEligibility" /* 9166 */;
+import QuestActionCreators from "QuestActionCreators" /* 9172 */;
+import QuestFetchReconnectJitterExperiment from "QuestFetchReconnectJitterExperiment" /* 18635 */;
+import QuestStore from "QuestStore" /* 7391 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;
@@ -77,7 +77,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
           }, rounded + Math.floor(Math.random() * questHomeHeroJitterMs));
         }
       }
-      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18577).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
+      DEFAULT_QUEST_FETCH_JITTER_CONFIG = tmp5(18635).DEFAULT_QUEST_FETCH_JITTER_CONFIG;
     };
     applyArgumentsResult.handleRunningGamesChange = function handleRunningGamesChange() {
 

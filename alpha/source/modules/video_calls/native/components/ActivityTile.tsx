@@ -1,7 +1,7 @@
 // Module ID: 10917
 // Function ID: 10918
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 2064, 1390, 1085, 1204, 2024, 21, 1200, 5092, 587, 558, 576, 1388, 504, 6857, 5409, 4962, 10918, 6851, 6878, 9538, 1126, 10920, 10822, 10922, 10923, 10924, 6184, 10961, 5088, 5380, 4827, 2]
+// Dependencies: [5, 32, 19, 17, 2064, 1390, 1085, 1204, 2024, 21, 1200, 5092, 587, 558, 576, 1388, 504, 6858, 5409, 4962, 10918, 6852, 6879, 9539, 1126, 10920, 10822, 10922, 10923, 10924, 6185, 10961, 5088, 5380, 4827, 2]
 
 // Module 10917 (ActivityTile)
 import react_native from "react-native" /* 17 */;
@@ -375,7 +375,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -414,7 +414,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
               const result = obj.setOrientationLockState(application);
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp16) {
             c2 = 3;
             throw tmp16;
@@ -509,7 +509,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -548,7 +548,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
             const result = obj.setOrientationLockState(closure_128_3);
           }
           c2 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp17) {
           c2 = 3;
           throw tmp17;

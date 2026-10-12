@@ -1,9 +1,9 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 11994
+// Function ID: 11995
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 5092, 1382, 587, 4969, 558, 576, 9307, 5031, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 1382, 587, 4969, 558, 576, 9308, 5031, 1126, 5088, 2]
 
-// Module 11992 (NewBadge)
+// Module 11994 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9307 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9308 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

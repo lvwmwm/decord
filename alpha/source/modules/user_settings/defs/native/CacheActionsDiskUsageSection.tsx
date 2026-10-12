@@ -1,10 +1,10 @@
-// Module ID: 15849
-// Function ID: 15850
+// Module ID: 15872
+// Function ID: 15873
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 5092, 587, 15850, 2091, 4828, 1126, 558, 576, 5088, 5640, 5377, 1382, 6181, 15852, 2]
+// Dependencies: [5, 32, 19, 21, 5092, 587, 15873, 2091, 4828, 1126, 558, 576, 5088, 5640, 5377, 1382, 6182, 15875, 2]
 // Exports: useDiskUsageMeasurement
 
-// Module 15849 (CacheActionsDiskUsageSection)
+// Module 15872 (CacheActionsDiskUsageSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl24 from "intl" /* 1126 */;
@@ -12,8 +12,8 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import FileSizeUtils from "FileSizeUtils" /* 5640 */;
-import Card_Card from "Card/Card" /* 6181 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15852 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -724,7 +724,7 @@ export const useDiskUsageMeasurement = function useDiskUsageMeasurement() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp43;
@@ -837,7 +837,7 @@ export const useDiskUsageMeasurement = function useDiskUsageMeasurement() {
             closure_129_1.current = false;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp43) {
           if (0 === c3) {
             c5 = 3;

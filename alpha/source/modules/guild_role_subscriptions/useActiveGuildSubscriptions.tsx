@@ -1,12 +1,12 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15504
+// Function ID: 15505
 // Name: useActiveGuildSubscriptions
-// Dependencies: [19, 4775, 15475, 558, 576, 15476, 504, 5724, 2]
+// Dependencies: [19, 4775, 15498, 558, 576, 15499, 504, 5724, 2]
 
-// Module 15481 (useActiveGuildSubscriptions)
+// Module 15504 (useActiveGuildSubscriptions)
 import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5724 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15475 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15476 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15499 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

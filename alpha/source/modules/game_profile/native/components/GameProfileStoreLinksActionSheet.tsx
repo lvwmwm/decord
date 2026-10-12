@@ -1,9 +1,9 @@
-// Module ID: 8915
-// Function ID: 8916
+// Module ID: 8916
+// Function ID: 8917
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8887, 4806, 1631, 1126, 5088, 5379, 5056, 6898, 6306, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8888, 4806, 1631, 1126, 5088, 5379, 5056, 6899, 6307, 2]
 
-// Module 8915 (GameProfileStoreLinksActionSheet)
+// Module 8916 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -12,9 +12,9 @@ import LinkingDefault from "Linking" /* 4806 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import BottomSheetModal from "BottomSheetModal" /* 6306 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8887 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8888 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -126,8 +126,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
                   return tmp30;
                 }
               }
-              const obj5 = { children: closure_5(trackAction(6306).BottomSheetScrollView, obj6) };
-              const ActionSheet = tmp(6898).ActionSheet;
+              const obj5 = { children: closure_5(trackAction(6307).BottomSheetScrollView, obj6) };
+              const ActionSheet = tmp(6899).ActionSheet;
               obj6 = { contentContainerStyle: tmp8, children: items };
               items = [tmp18, tmp26];
               const tmp33 = closure_4(ActionSheet, obj5);

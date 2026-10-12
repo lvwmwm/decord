@@ -1,17 +1,17 @@
-// Module ID: 12738
-// Function ID: 12739
+// Module ID: 12740
+// Function ID: 12741
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 10054, 6179, 8581, 10107, 4832, 1126, 5088, 2]
+// Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 10055, 6180, 8582, 10108, 4832, 1126, 5088, 2]
 
-// Module 12738 (PremiumGiftDuration)
+// Module 12740 (PremiumGiftDuration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import react_native2 from "react-native" /* 4832 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import NativeGiftContext from "NativeGiftContext" /* 10054 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10107 */;
+import NativeGiftContext from "NativeGiftContext" /* 10055 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10108 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -60,9 +60,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const premiumType = nativeGiftContext.premiumType;
   const tmp5 = closure_9();
   if (selected) {
-    RowButton = tmp(6179).TableRow;
+    RowButton = tmp(6180).TableRow;
   } else {
-    RowButton = tmp(8581).RowButton;
+    RowButton = tmp(8582).RowButton;
   }
   let combined = null;
   const tmp6 = SubscriptionIntervalTypes;
@@ -266,9 +266,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const premiumType = nativeGiftContext.premiumType;
   const tmp4 = closure_9();
   if (selected) {
-    RowButton = tmp(6179).TableRow;
+    RowButton = tmp(6180).TableRow;
   } else {
-    RowButton = tmp(8581).RowButton;
+    RowButton = tmp(8582).RowButton;
   }
   let combined = null;
   const tmp5 = SubscriptionIntervalTypes;
@@ -339,7 +339,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftD
   let obj = planInterval(576);
   const cResult = obj.c(9);
   const tmp4 = closure_11();
-  const obj2 = planInterval(10054);
+  const obj2 = planInterval(10055);
   planInterval = obj2.useNativeGiftContext().planInterval;
   ({ durationContainer, durationTitle } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -391,7 +391,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftD
   let intl;
   let planInterval;
   const tmp = closure_11();
-  let obj = planInterval(10054);
+  let obj = planInterval(10055);
   planInterval = obj.useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: items };
   const obj3 = { style: tmp.durationTitle, variant: "text-sm/semibold", children: intl.string(planInterval(1126).t["8XT6Nf"]) };

@@ -1,14 +1,14 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10605
+// Function ID: 10606
 // Name: PlusMediumIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10605, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10606, 4817, 2]
 
-// Module 10604 (PlusMediumIcon)
+// Module 10605 (PlusMediumIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 10605 */;
+import AssetRegistry from "AssetRegistry" /* 10606 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,11 +1,11 @@
-// Module ID: 6852
-// Function ID: 6853
+// Module ID: 6853
+// Function ID: 6854
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6853, 2022, 5440, 1085, 584, 1295, 504, 558, 576, 2]
+// Dependencies: [5, 6854, 2022, 5440, 1085, 584, 1295, 504, 558, 576, 2]
 
-// Module 6852 (ApplicationActionCreators)
+// Module 6853 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6853 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6854 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import Constants from "Constants" /* 1085 */;
@@ -39,7 +39,7 @@ let obj = function _fetchApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -338,7 +338,7 @@ obj = {
             obj11.dispatch(obj10);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp26) {
           closure_2 = tmp26;
           if (0 === c3) {

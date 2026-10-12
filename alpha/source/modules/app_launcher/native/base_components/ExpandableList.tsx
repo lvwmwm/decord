@@ -1,9 +1,9 @@
-// Module ID: 11794
-// Function ID: 11795
+// Module ID: 11796
+// Function ID: 11797
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 5922, 4850, 5093, 5096, 6179, 1126, 5088, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 5922, 4850, 5093, 5096, 6180, 1126, 5088, 2]
 
-// Module 11794 (ExpandableList)
+// Module 11796 (ExpandableList)
 import react_native from "react-native" /* 17 */;
 import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
@@ -452,7 +452,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
   let obj14;
   let showsExpandCTAOverride;
   let title;
-  const f143897 = (fn, index) => {
+  const f144190 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
@@ -562,7 +562,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f143897)
+    children: memo.map(f144190)
   };
   View = tmp4(4850).View;
   const tmp16 = bound;
@@ -580,7 +580,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f143897)
+      children: memo1.map(f144190)
     };
     tmp17Result = tmp17(tmp18, obj9);
   }
@@ -589,7 +589,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
   if (showsExpandCTAOverride) {
     let stringResult;
     let stringResult1;
-    const TableRow = tmp10(6179).TableRow;
+    const TableRow = tmp10(6180).TableRow;
     if (first) {
       const intl2 = tmp10(1126).intl;
       stringResult = intl2.string(tmp10(1126).t.nPGLFQ);

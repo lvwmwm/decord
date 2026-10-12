@@ -1,23 +1,23 @@
-// Module ID: 13707
-// Function ID: 13708
+// Module ID: 13730
+// Function ID: 13731
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1390, 7174, 1085, 21, 5092, 587, 504, 13708, 38, 1388, 10219, 13709, 1126, 4828, 13710, 6851, 6878, 1265, 7175, 5056, 13711, 2000, 4808, 6838, 5088, 6156, 13716, 13717, 10220, 6153, 5379, 6839, 8625, 10222, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 7175, 1085, 21, 5092, 587, 504, 13731, 38, 1388, 10220, 13732, 1126, 4828, 13733, 6852, 6879, 1265, 7176, 5056, 13734, 2000, 4808, 6839, 5088, 6157, 13739, 13740, 10221, 6154, 5379, 6840, 8626, 10223, 2]
 // Exports: default
 
-// Module 13707 (ReferralProgramShareActionSheet)
+// Module 13730 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10219 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13710 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10220 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13733 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7174 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7175 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
@@ -192,7 +192,7 @@ export default function ReferralProgramShareActionSheet() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -242,7 +242,7 @@ export default function ReferralProgramShareActionSheet() {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp16) {
           if (0 === c3) {

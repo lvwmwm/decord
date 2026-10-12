@@ -1,19 +1,19 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 15828
+// Function ID: 15829
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1126, 5092, 587, 558, 576, 9469, 12, 4832, 15802, 6265, 6179, 2]
+// Dependencies: [32, 19, 21, 1126, 5092, 587, 558, 576, 9470, 12, 4832, 15825, 6266, 6180, 2]
 
-// Module 15805 (AppIconRow)
+// Module 15828 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import react_native from "react-native" /* 4832 */;
-import TableRow2 from "TableRow" /* 6179 */;
-import FormRadio from "FormRadio" /* 6265 */;
-import AppIconTypes from "AppIconTypes" /* 9469 */;
-import AppIconDefault from "AppIcon" /* 15802 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import FormRadio from "FormRadio" /* 6266 */;
+import AppIconTypes from "AppIconTypes" /* 9470 */;
+import AppIconDefault from "AppIcon" /* 15825 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -249,7 +249,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow
       accessibilityState,
       trailing: null
     };
-    const TableRow = tmp3(6179).TableRow;
+    const TableRow = tmp3(6180).TableRow;
     if (currentAppIcon !== id) {
       let tmp11Result2;
       if (isPremium) {
@@ -259,7 +259,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow
       tmp11Result = tmp11(TableRow, obj2, id);
     }
     const obj4 = { selected: currentAppIcon === id };
-    tmp11Result2 = tmp11(tmp3(6265).FormRadio, obj4);
+    tmp11Result2 = tmp11(tmp3(6266).FormRadio, obj4);
   }
 });
 const result = size.fileFinishedImporting("modules/app_icons/native/AppIconRow/AppIconRow.tsx");

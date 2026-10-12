@@ -1,7 +1,7 @@
 // Module ID: 10979
 // Function ID: 10980
 // Name: StageMusicManager
-// Dependencies: [2065, 2012, 2116, 5113, 5896, 2070, 10977, 10980, 558, 576, 504, 5956, 5950, 6807, 2]
+// Dependencies: [2065, 2012, 2116, 5113, 5896, 2070, 10977, 10980, 558, 576, 504, 5956, 5950, 6808, 2]
 // Exports: shouldShowStageMusicMuteButton
 
 // Module 10979 (StageMusicManager)
@@ -15,7 +15,7 @@ import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import StageMusicStore from "StageMusicStore" /* 10977 */;
 import SoundUtils from "SoundUtils" /* 10980 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

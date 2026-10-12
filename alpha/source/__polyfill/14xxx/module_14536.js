@@ -1,16 +1,7 @@
 // Module ID: 14536
 // Function ID: 14537
-// Dependencies: [14532]
+// Dependencies: []
 
 // Module 14536
-import _mod14532 from "module_14532" /* 14532 */;
 
-
-export default !_mod14532(() => {
-  const fn = () => {
-
-  };
-  const bindResult = fn.bind();
-  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
-  return hasOwnPropertyResult;
-});
+export const collations = ["big5han", "compat", "dict", "direct", "ducet", "emoji", "eor", "gb2312", "phonebk", "phonetic", "pinyin", "reformed", "search", "searchjl", "standard", "stroke", "trad", "unihan", "zhuyin"];

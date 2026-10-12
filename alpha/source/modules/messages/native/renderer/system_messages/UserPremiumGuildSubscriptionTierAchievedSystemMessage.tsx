@@ -1,15 +1,15 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8024
+// Function ID: 8025
 // Name: UserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: [2065, 2087, 8021, 8022, 7978, 7980, 1126, 8024, 7982, 2]
+// Dependencies: [2065, 2087, 8022, 8023, 7979, 7981, 1126, 8025, 7983, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 8023 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7978 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7980 */;
-import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8021 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8022 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8024 */;
+// Module 8024 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
+import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8022 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8023 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8025 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
         formatToParts2Result = formatToParts(oAYAP7, obj3);
       }
       const obj4 = { content: formatToParts2Result };
-      const merged = Object.assign(tmp11(7982)(message));
+      const merged = Object.assign(tmp11(7983)(message));
       return obj4;
     }
   }

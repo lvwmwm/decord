@@ -1,14 +1,14 @@
-// Module ID: 15225
-// Function ID: 15226
+// Module ID: 15248
+// Function ID: 15249
 // Name: OneWayToTwoWayLinkUpsell
-// Dependencies: [19, 17, 1085, 2062, 21, 5092, 587, 5906, 558, 576, 1200, 10012, 5088, 1126, 5379, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5092, 587, 5906, 558, 576, 1200, 10013, 5088, 1126, 5379, 2]
 
-// Module 15225 (OneWayToTwoWayLinkUpsell)
+// Module 15248 (OneWayToTwoWayLinkUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10012 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10013 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

@@ -1,9 +1,9 @@
-// Module ID: 9788
-// Function ID: 9789
+// Module ID: 9789
+// Function ID: 9790
 // Name: StickerPickerEmptyState
-// Dependencies: [32, 19, 17, 6030, 2044, 1085, 1392, 21, 5092, 558, 576, 9757, 9773, 6851, 6878, 504, 1265, 1126, 5088, 6184, 5057, 5058, 6156, 9504, 9782, 5379, 2]
+// Dependencies: [32, 19, 17, 6030, 2044, 1085, 1392, 21, 5092, 558, 576, 9758, 9774, 6852, 6879, 504, 1265, 1126, 5088, 6185, 5057, 5058, 6157, 9505, 9783, 5379, 2]
 
-// Module 9788 (StickerPickerEmptyState)
+// Module 9789 (StickerPickerEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -11,8 +11,8 @@ import PremiumConstants from "PremiumConstants" /* 1392 */;
 import StickersConstants from "StickersConstants" /* 2044 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
-import StickersHooks from "StickersHooks" /* 9757 */;
-import StickerDefault from "Sticker" /* 9773 */;
+import StickersHooks from "StickersHooks" /* 9758 */;
+import StickerDefault from "Sticker" /* 9774 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 6030 */;
@@ -312,8 +312,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp;
   let obj = require("StickersHooks");
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  const tmp3 = analyticsLocations(6851);
-  analyticsLocations = tmp3(analyticsLocations(6878).EMPTY_STATE).analyticsLocations;
+  const tmp3 = analyticsLocations(6852);
+  analyticsLocations = tmp3(analyticsLocations(6879).EMPTY_STATE).analyticsLocations;
   let obj2 = require("get initialized");
   const items = [StickersStore];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items, () => {
@@ -377,8 +377,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   };
   Button = require("components/Button/Button").Button;
-  obj9 = { source: analyticsLocations(9504), style: tmp.nitroWheel, resizeMode: "contain" };
-  tmp6 = analyticsLocations(6156);
+  obj9 = { source: analyticsLocations(9505), style: tmp.nitroWheel, resizeMode: "contain" };
+  tmp6 = analyticsLocations(6157);
   intl3 = require("intl").intl;
   items2[3] = closure_11(View, obj7);
   return closure_12(View, obj3);

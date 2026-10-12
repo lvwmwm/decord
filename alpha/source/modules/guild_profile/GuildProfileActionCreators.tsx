@@ -1,15 +1,15 @@
-// Module ID: 8618
-// Function ID: 8619
+// Module ID: 8619
+// Function ID: 8620
 // Name: GuildProfileActionCreators
-// Dependencies: [5, 4940, 2125, 8616, 1085, 584, 1295, 6123, 5635, 1265, 2]
+// Dependencies: [5, 4940, 2125, 8617, 1085, 584, 1295, 6124, 5635, 1265, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 8618 (GuildProfileActionCreators)
+// Module 8619 (GuildProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5635 */;
-import GuildProfileBuilders from "GuildProfileBuilders" /* 6123 */;
-import GuildProfileStore2 from "GuildProfileStore" /* 8616 */;
+import GuildProfileBuilders from "GuildProfileBuilders" /* 6124 */;
+import GuildProfileStore2 from "GuildProfileStore" /* 8617 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
@@ -38,7 +38,7 @@ let obj = function _fetchGuildTopGames() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

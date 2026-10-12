@@ -1,10 +1,10 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 7570
+// Function ID: 7571
 // Name: DesignSystemsNotificationComponentsExperiment
 // Dependencies: [1453, 558, 576, 2]
 // Exports: getDesignSystemsNotificationComponents
 
-// Module 7569 (DesignSystemsNotificationComponentsExperiment)
+// Module 7570 (DesignSystemsNotificationComponentsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

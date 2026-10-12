@@ -1,7 +1,7 @@
 // Module ID: 11123
 // Function ID: 11124
 // Name: transferToXbox
-// Dependencies: [5, 19, 17, 1085, 21, 11115, 11111, 11124, 5300, 11125, 2000, 11118, 7443, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 11115, 11111, 11124, 5300, 11125, 2000, 11118, 7444, 2]
 // Exports: default
 
 // Module 11123 (transferToXbox)
@@ -36,7 +36,7 @@ let obj = function _transferToXbox() {
           obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ let obj = function _transferToXbox() {
             obj5.stopOwnStream(false);
             closure_130_5.openURL(closure_2);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } else {
             c4 = 3;
             const obj17 = {

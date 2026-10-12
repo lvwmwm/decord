@@ -1,12 +1,12 @@
-// Module ID: 9044
-// Function ID: 9045
+// Module ID: 9045
+// Function ID: 9046
 // Name: useProductPurchaseState
-// Dependencies: [7279, 9045, 1993, 558, 576, 504, 2]
+// Dependencies: [7280, 9046, 1993, 558, 576, 504, 2]
 
-// Module 9044 (useProductPurchaseState)
+// Module 9045 (useProductPurchaseState)
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import compactDefault from "compact" /* 9045 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7279 */;
+import compactDefault from "compact" /* 9046 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

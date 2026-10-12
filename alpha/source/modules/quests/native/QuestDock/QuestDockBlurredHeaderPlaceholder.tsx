@@ -1,14 +1,14 @@
-// Module ID: 15449
-// Function ID: 15450
+// Module ID: 15472
+// Function ID: 15473
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 5972, 15347, 21, 5092, 558, 576, 15348, 15450, 4850, 6156, 6761, 2]
+// Dependencies: [19, 17, 5972, 15370, 21, 5092, 558, 576, 15371, 15473, 4850, 6157, 6762, 2]
 
-// Module 15449 (QuestDockBlurredHeaderPlaceholder)
+// Module 15472 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
-import _slicedToArray from "_slicedToArray" /* 15450 */;
+import _slicedToArray from "_slicedToArray" /* 15473 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 15347 */;
+import QuestDockConstants from "QuestDockConstants" /* 15370 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = questDockWrapperSpecs(576);
   const cResult = obj.c(22);
   ({ layoutAnimation, layoutAnimatedStyle, opacityAnimatedStyle, placeholder } = arg0);
-  const context = react.useContext(questDockWrapperSpecs(15348).QuestDockGestureContext);
+  const context = react.useContext(questDockWrapperSpecs(15371).QuestDockGestureContext);
   questDockWrapperSpecs = context.questDockWrapperSpecs;
   const activeQuestDockMode = context.activeQuestDockMode;
   if (cResult[0] !== placeholder) {
@@ -66,7 +66,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const _Uint8Array = Uint8Array;
     const _atob = atob;
-    const tmpResult = questDockWrapperSpecs(15450);
+    const tmpResult = questDockWrapperSpecs(15473);
     const thumbHashToDataURLResult = tmpResult.thumbHashToDataURL(Uint8Array.from(atob(placeholder), tmp7));
     cResult[0] = placeholder;
     cResult[1] = thumbHashToDataURLResult;
@@ -109,7 +109,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
         if (cResult[10] !== tmp9) {
           const obj4 = { source: tmp9, style: StyleSheet.absoluteFill };
-          const tmp17 = closure_7(activeQuestDockMode(6156), obj4);
+          const tmp17 = closure_7(activeQuestDockMode(6157), obj4);
           cResult[10] = tmp9;
           cResult[11] = tmp17;
           tmp13 = tmp17;
@@ -144,7 +144,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
             const obj6 = { style: items1 };
             items1 = [tmp10.overlay, opacityAnimatedStyle];
-            const tmp25 = closure_7(activeQuestDockMode(6761), obj6);
+            const tmp25 = closure_7(activeQuestDockMode(6762), obj6);
             cResult[16] = opacityAnimatedStyle;
             cResult[17] = tmp10.overlay;
             cResult[18] = tmp25;
@@ -152,7 +152,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
         const obj7 = { style: tmp12, layout: layoutAnimation, children: tmp13 };
-        const tmp21 = closure_7(activeQuestDockMode(6761), obj7);
+        const tmp21 = closure_7(activeQuestDockMode(6762), obj7);
         cResult[12] = layoutAnimation;
         cResult[13] = tmp12;
         cResult[14] = tmp13;

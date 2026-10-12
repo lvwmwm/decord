@@ -1,13 +1,13 @@
-// Module ID: 17820
-// Function ID: 17821
+// Module ID: 17877
+// Function ID: 17878
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 5092, 587, 558, 576, 11969, 6851, 10923, 10962, 17821, 17822, 6184, 6161, 2]
+// Dependencies: [5, 19, 17, 21, 5092, 587, 558, 576, 11971, 6852, 10923, 10962, 17878, 17879, 6185, 6162, 2]
 
-// Module 17820 (ActivityItemMissingCard)
+// Module 17877 (ActivityItemMissingCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NativeViewDefault from "NativeView" /* 6161 */;
+import NativeViewDefault from "NativeView" /* 6162 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -148,7 +148,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -178,7 +178,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         c0 = 3;
@@ -222,7 +222,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -252,7 +252,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
           return obj;
         } else {
           activity = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp4) {
         activity = 3;

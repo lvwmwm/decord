@@ -1,10 +1,10 @@
-// Module ID: 9265
-// Function ID: 9266
+// Module ID: 9266
+// Function ID: 9267
 // Name: showUploadFileSizeError
-// Dependencies: [1207, 1390, 1085, 5085, 1392, 1989, 9266, 5107, 9267, 9268, 7760, 7768, 9269, 1105, 6878, 1126, 5640, 7759, 5299, 2]
+// Dependencies: [1207, 1390, 1085, 5085, 1392, 1989, 9267, 5107, 9268, 9269, 7761, 7769, 9270, 1105, 6879, 1126, 5640, 7760, 5299, 2]
 // Exports: default
 
-// Module 9265 (showUploadFileSizeError)
+// Module 9266 (showUploadFileSizeError)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl5 from "intl" /* 1126 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
@@ -12,14 +12,14 @@ import MessageConstants from "MessageConstants" /* 5085 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import FileSizeUtils from "FileSizeUtils" /* 5640 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import UploadUtils from "UploadUtils" /* 7759 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7760 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7768 */;
-import logMessageSendFailure from "logMessageSendFailure" /* 9266 */;
-import buildFileSizeLimitEventProperties2 from "buildFileSizeLimitEventProperties" /* 9267 */;
-import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9268 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9269 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import UploadUtils from "UploadUtils" /* 7760 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7761 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7769 */;
+import logMessageSendFailure from "logMessageSendFailure" /* 9267 */;
+import buildFileSizeLimitEventProperties2 from "buildFileSizeLimitEventProperties" /* 9268 */;
+import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9269 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9270 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;

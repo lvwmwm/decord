@@ -1,9 +1,9 @@
-// Module ID: 17916
-// Function ID: 17917
+// Module ID: 17973
+// Function ID: 17974
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 10659, 21, 5092, 558, 576, 10660, 17917, 17919, 11708, 4850, 5378, 4982, 17920, 6334, 16415, 2]
+// Dependencies: [19, 17, 10659, 21, 5092, 558, 576, 10660, 17974, 17976, 11710, 4850, 5378, 4982, 17977, 6335, 16438, 2]
 
-// Module 17916 (LaunchPadContainer)
+// Module 17973 (LaunchPadContainer)
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import react from "react" /* 19 */;
@@ -58,7 +58,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadC
   const tmp4 = closure_8();
   const tmp5 = updaters;
   const tmp6 = updaters(10660)();
-  const tmp7 = updaters(17917)();
+  const tmp7 = updaters(17974)();
   launchPadSharedState = tmp7.launchPadSharedState;
   ({ launchPadPullTabState, launchPadShown, gestureState, updaters } = tmp7);
   if (cResult[0] === gestureState) {
@@ -71,9 +71,9 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadC
             if (cResult[5] === updaters) {
               tmp8 = cResult[6];
             }
-            ({ gesture, gestureRef } = tmp5(17919)(tmp8));
-            tmp5(17919)(tmp8);
-            const tmp10 = tmp5(11708)();
+            ({ gesture, gestureRef } = tmp5(17976)(tmp8));
+            tmp5(17976)(tmp8);
+            const tmp10 = tmp5(11710)();
             dependencyMap = tmp10;
             const tmpResult = tmp(4850);
             class L {
@@ -183,7 +183,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadC
                                     return tmp35;
                                   }
                                   const obj6 = { value: gestureRef, children: tmp32 };
-                                  const tmp37 = closure_6(tmp5(16415).Provider, obj6);
+                                  const tmp37 = closure_6(tmp5(16438).Provider, obj6);
                                   class L {
                                     constructor() {
                                       return closure_2.get().height;
@@ -195,7 +195,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadC
                                   tmp35 = tmp37;
                                 }
                                 const obj7 = { gesture, children: tmp28 };
-                                const tmp34 = closure_6(tmp(6334).GestureDetector, obj7);
+                                const tmp34 = closure_6(tmp(6335).GestureDetector, obj7);
                                 class L {
                                   constructor() {
                                     return closure_2.get().height;
@@ -243,7 +243,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadC
                       return closure_2.get().height;
                     }
                   }
-                  tmp26 = closure_6(tmp5(17920), obj9);
+                  tmp26 = closure_6(tmp5(17977), obj9);
                 }
                 cResult[14] = enableHome;
                 class L {
@@ -319,12 +319,12 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadC
   const tmp = closure_8();
   const tmp2 = updaters;
   const tmp4 = updaters(10660)();
-  const tmp5 = updaters(17917)();
+  const tmp5 = updaters(17974)();
   const launchPadSharedState = tmp5.launchPadSharedState;
   ({ launchPadPullTabState, launchPadShown, gestureState, updaters } = tmp5);
-  ({ gesture, gestureRef } = updaters(17919)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
-  updaters(17919)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters });
-  const tmp7 = updaters(11708)();
+  ({ gesture, gestureRef } = updaters(17976)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
+  updaters(17976)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters });
+  const tmp7 = updaters(11710)();
   dependencyMap = tmp7;
   let obj = launchPadSharedState(4850);
   const fn = function l() {
@@ -382,10 +382,10 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadC
   const MobileHomeDrawerExperiment = launchPadSharedState(4982).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
   let obj4 = { value: gestureRef, children: closure_6(GestureDetector, obj5) };
-  const Provider = updaters(16415).Provider;
+  const Provider = updaters(16438).Provider;
   obj5 = { gesture, children: tmp11(tmp12, obj6) };
   obj6 = { style: tmp.wrapper, children: items1 };
-  GestureDetector = launchPadSharedState(6334).GestureDetector;
+  GestureDetector = launchPadSharedState(6335).GestureDetector;
   const obj7 = { style: items, children };
   items = [tmp.container, animatedStyle];
   items1 = [closure_6(updaters(4850).View, obj7), ];
@@ -393,7 +393,7 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadC
   tmp12 = closure_3;
   if (tmp4 !== constants.DISABLED) {
     const obj8 = { launchPadType: tmp4, gestureState, launchPadShown, launchPadSharedState, launchPadPullTabState, updaters };
-    tmp10Result = closure_6(tmp2(17920), obj8);
+    tmp10Result = closure_6(tmp2(17977), obj8);
   }
   items1[1] = tmp10Result;
   return closure_6(Provider, obj4);

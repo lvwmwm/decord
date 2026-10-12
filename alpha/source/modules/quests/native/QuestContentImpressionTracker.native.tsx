@@ -1,9 +1,9 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 12983
+// Function ID: 12984
 // Name: QuestContentImpressionTracker
-// Dependencies: [32, 19, 1999, 9176, 1085, 21, 558, 576, 8624, 5922, 504, 9201, 12982, 5979, 2]
+// Dependencies: [32, 19, 1999, 9177, 1085, 21, 558, 576, 8625, 5922, 504, 9202, 12984, 5979, 2]
 
-// Module 12981 (QuestContentImpressionTracker)
+// Module 12983 (QuestContentImpressionTracker)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,8 +11,8 @@ import react3 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import usePreviousDefault from "usePrevious" /* 5922 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9176 */;
-import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 9201 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 9177 */;
+import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 9202 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -142,7 +142,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVis
   } else {
     tmp6 = cResult[3];
   }
-  const tmpResult = tmp(8624);
+  const tmpResult = tmp(8625);
   const tmp9 = _slicedToArray(tmpResult.useRecyclingState(false, tmp6), 2)[1];
   dependencyMap = tmp9;
   if (cResult[4] === adContentIds) {
@@ -213,7 +213,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVis
   let overrideVisibility = adContentIds.overrideVisibility;
   dependencyMap = undefined;
   const joined = adContentIds.join("_");
-  let obj = adContentIds(8624);
+  let obj = adContentIds(8625);
   const items = [joined];
   [first, tmp5] = obj.useRecyclingState(false, items);
   dependencyMap = tmp5;
@@ -297,7 +297,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdCont
                 return tmp31;
               }
             }
-            const QuestContentImpressionTracker2 = tmp(12982).QuestContentImpressionTracker;
+            const QuestContentImpressionTracker2 = tmp(12984).QuestContentImpressionTracker;
             const merged = Object.assign(tmp17);
             const tmp36 = <QuestContentImpressionTracker2 key={tmp24} adContentIds={adContentIds} adCreativeType={AdCreativeType.AdCreativeType.QUEST} />;
             cResult[10] = tmp17;
@@ -317,7 +317,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdCont
                 }
               }
             }
-            const QuestContentImpressionTracker = tmp(12982).QuestContentImpressionTracker;
+            const QuestContentImpressionTracker = tmp(12984).QuestContentImpressionTracker;
             const merged1 = Object.assign(tmp17);
             const tmp30 = <QuestContentImpressionTracker key={tmp24} adContentIds={adContentIds} adCreativeType={arg0.adCreativeType} />;
             cResult[14] = tmp17;
@@ -369,7 +369,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdCont
     tmp11 = key;
   }
   const obj5 = { key: tmp11, adContentIds };
-  const QuestContentImpressionTracker = tmp(12982).QuestContentImpressionTracker;
+  const QuestContentImpressionTracker = tmp(12984).QuestContentImpressionTracker;
   const tmp13 = "questOrQuests" in skipRemountKey;
   const merged3 = Object.assign(obj4);
   const tmp12 = createElement;

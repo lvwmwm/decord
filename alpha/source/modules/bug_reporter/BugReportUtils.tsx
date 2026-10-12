@@ -1,15 +1,15 @@
-// Module ID: 12627
-// Function ID: 12628
+// Module ID: 12629
+// Function ID: 12630
 // Name: bug_reporter/BugReportUtils
-// Dependencies: [5, 1205, 1085, 1295, 1126, 12628, 1382, 5938, 1273, 2]
+// Dependencies: [5, 1205, 1085, 1295, 1126, 12630, 1382, 5938, 1273, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 12627 (bug_reporter/BugReportUtils)
+// Module 12629 (bug_reporter/BugReportUtils)
 import intl9 from "intl" /* 1126 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
-import DebugUploadManager from "DebugUploadManager" /* 12628 */;
+import DebugUploadManager from "DebugUploadManager" /* 12630 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import Constants from "Constants" /* 1085 */;
@@ -49,7 +49,7 @@ obj = function _submitReport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;

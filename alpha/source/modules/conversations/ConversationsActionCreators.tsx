@@ -1,27 +1,27 @@
-// Module ID: 9337
-// Function ID: 9338
+// Module ID: 9338
+// Function ID: 9339
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7313, 7318, 9338, 9339, 7315, 1085, 9335, 584, 1295, 7178, 9340, 7470, 7477, 2]
+// Dependencies: [5, 7314, 7319, 9339, 9340, 7316, 1085, 9336, 584, 1295, 7179, 9341, 7471, 7478, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, fetchConversation, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9337 (ConversationsActionCreators)
+// Module 9338 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ConversationConstants from "ConversationConstants" /* 7315 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7470 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9340 */;
+import ConversationConstants from "ConversationConstants" /* 7316 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7471 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9341 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7313 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7318 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9338 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9339 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7314 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7319 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9339 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9340 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(7477);
+const SurveyActionTypes = tmp(7478);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_4;
@@ -162,7 +162,7 @@ obj = function _fetchConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ obj = function _fetchConversation() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           if (0 === c4) {
             c6 = 3;
@@ -247,7 +247,7 @@ obj = function _fetchConversationMessages() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -286,7 +286,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (isFullyHydratedResult) {
                   c8 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 let hydratedMessages;
@@ -297,7 +297,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (null != hydratedMessages) {
                   c8 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 }
               }
               if (tmp15) {
@@ -340,7 +340,7 @@ obj = function _fetchConversationMessages() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp32) {
           if (0 === c6) {
             c8 = 3;
@@ -391,7 +391,7 @@ export const setSelectedConversation = function setSelectedConversation(channelI
       }
       if (null != startMessageId) {
         const obj3 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7178);
+        const tmp6Result = tmp6(7179);
         tmp6Result.jumpToMessage(obj3);
       }
     }

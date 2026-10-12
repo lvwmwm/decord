@@ -1,19 +1,19 @@
-// Module ID: 11416
-// Function ID: 11417
+// Module ID: 11424
+// Function ID: 11425
 // Name: conjurePreviewFrameSurfaces
-// Dependencies: [8610, 6946, 2]
+// Dependencies: [8611, 6947, 2]
 // Exports: declaresPreviewFrame, isConjurePreviewFrameSurfaceType, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
 
-// Module 11416 (conjurePreviewFrameSurfaces)
-import ConjureTypes from "ConjureTypes" /* 6946 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8610 */;
+// Module 11424 (conjurePreviewFrameSurfaces)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
 import size from "module_2" /* 2 */;
 
-let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, declaredBy: ConjureTypes.ConjureSupportedSurface.APP_CHANNEL };
-const items = [obj, { type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, declaredBy: ConjureTypes.ConjureSupportedSurface.VOICE_CHANNEL }, ];
-({ type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, declaredBy: ConjureTypes.ConjureSupportedSurface.VOICE_CHANNEL });
-items[2] = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN, declaredBy: ConjureTypes.ConjureSupportedSurface.ACTIVITY };
-({ type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN, declaredBy: ConjureTypes.ConjureSupportedSurface.ACTIVITY });
+let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL };
+const items = [obj, { type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL }, ];
+({ type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL });
+items[2] = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY };
+({ type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY });
 let mapped = items.map((type) => type.type);
 const items1 = [EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL];
 const items2 = [EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL];

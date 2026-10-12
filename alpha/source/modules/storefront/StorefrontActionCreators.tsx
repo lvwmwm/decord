@@ -1,20 +1,20 @@
-// Module ID: 8989
-// Function ID: 8990
+// Module ID: 8990
+// Function ID: 8991
 // Name: StorefrontActionCreators
-// Dependencies: [5, 4771, 6936, 8990, 8991, 8992, 1085, 1102, 584, 1295, 5636, 6935, 2]
+// Dependencies: [5, 4771, 6937, 8991, 8992, 8993, 1085, 1102, 584, 1295, 5636, 6936, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8989 (StorefrontActionCreators)
+// Module 8990 (StorefrontActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import BillingInfoStore from "BillingInfoStore" /* 4771 */;
-import SKUPricesStore from "SKUPricesStore" /* 6936 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8990 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8991 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8992 */;
+import SKUPricesStore from "SKUPricesStore" /* 6937 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8991 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8992 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8993 */;
 import size from "module_2" /* 2 */;
 
 let apiError, c1, closure_4, promotions;
@@ -50,7 +50,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _maybeFetchStorefrontPromotions() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -109,7 +109,7 @@ obj = function _fetchStorefrontPromotions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ obj = function _fetchStorefrontPromotions() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp29) {
           if (0 === c3) {
             c5 = 3;
@@ -199,7 +199,7 @@ obj = function _claimStorefrontPromotion() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -334,7 +334,7 @@ obj = function _fetchStorefrontPrices() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c2;
@@ -379,7 +379,7 @@ obj = function _fetchStorefrontPrices() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp21) {
         if (0 === c2) {
           c4 = 3;

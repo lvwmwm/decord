@@ -1,12 +1,12 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 15618
+// Function ID: 15619
 // Name: GameMentionsAutocompleteSetting
-// Dependencies: [7992, 10663, 1126, 2041, 2]
+// Dependencies: [7993, 10663, 1126, 2041, 2]
 
-// Module 15595 (GameMentionsAutocompleteSetting)
+// Module 15618 (GameMentionsAutocompleteSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

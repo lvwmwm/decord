@@ -1,12 +1,12 @@
-// Module ID: 13985
-// Function ID: 13986
+// Module ID: 14008
+// Function ID: 14009
 // Name: LocalAppDetectionUtils
-// Dependencies: [5, 5932, 1085, 13986, 13984, 1383, 7438, 1265, 584, 2]
+// Dependencies: [5, 5932, 1085, 14009, 14007, 1383, 7439, 1265, 584, 2]
 // Exports: detectLocalApps
 
-// Module 13985 (LocalAppDetectionUtils)
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 13984 */;
-import GameCommunityUpsellExperiment from "GameCommunityUpsellExperiment" /* 13986 */;
+// Module 14008 (LocalAppDetectionUtils)
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14007 */;
+import GameCommunityUpsellExperiment from "GameCommunityUpsellExperiment" /* 14009 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConsentStore from "ConsentStore" /* 5932 */;
 import Constants from "Constants" /* 1085 */;
@@ -72,7 +72,7 @@ let obj = function _detectLocalApps() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -124,7 +124,7 @@ let obj = function _detectLocalApps() {
               let obj7 = { type: "LOCAL_APP_DETECTION_COMPLETE", result };
               let dispatchResult = obj6.dispatch(obj7);
               c8 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === tmp5) {
             c6 = 0;

@@ -1,7 +1,7 @@
 // Module ID: 2116
 // Function ID: 2117
 // Name: SelectedChannelStore
-// Dependencies: [2117, 2069, 502, 2065, 4748, 2087, 2012, 4750, 4939, 1085, 2072, 510, 12, 1388, 1097, 4976, 1112, 7031, 504, 584, 2]
+// Dependencies: [2117, 2069, 502, 2065, 4748, 2087, 2012, 4750, 4939, 1085, 2072, 510, 12, 1388, 1097, 4976, 1112, 7032, 504, 584, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 2116 (SelectedChannelStore)
@@ -14,7 +14,7 @@ import router_utils from "router_utils" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7031 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7032 */;
 import GatedChannelStore from "GatedChannelStore" /* 2117 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

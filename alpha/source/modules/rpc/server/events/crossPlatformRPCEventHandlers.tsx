@@ -1,22 +1,22 @@
-// Module ID: 14759
-// Function ID: 14760
+// Module ID: 14783
+// Function ID: 14784
 // Name: crossPlatformRPCEventHandlers
-// Dependencies: [5440, 2019, 2083, 5897, 2065, 2125, 2087, 2012, 5110, 1390, 5113, 5639, 1085, 10939, 10945, 10936, 5924, 14691, 8457, 12, 14699, 1097, 568, 10946, 14760, 14761, 2]
+// Dependencies: [5440, 2019, 2083, 5897, 2065, 2125, 2087, 2012, 5110, 1390, 5113, 5639, 1085, 10939, 10945, 10936, 5924, 14714, 8458, 12, 14722, 1097, 568, 10946, 14784, 14785, 2]
 
-// Module 14759 (crossPlatformRPCEventHandlers)
+// Module 14783 (crossPlatformRPCEventHandlers)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
 import RPCHelpers from "RPCHelpers" /* 10945 */;
 import transformUserDefault from "transformUser" /* 10946 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14691 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14699 */;
-import transformGuildMemberDefault from "transformGuildMember" /* 14760 */;
-import transformApplicationDefault from "transformApplication" /* 14761 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 14714 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14722 */;
+import transformGuildMemberDefault from "transformGuildMember" /* 14784 */;
+import transformApplicationDefault from "transformApplication" /* 14785 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
@@ -422,7 +422,7 @@ obj2[RPCEvents.VOICE_SESSION_PARTICIPANTS_UPDATE] = {
   handler(args) {
     const session_id = args.args.session_id;
     const socket = args.socket;
-    let obj = socket(14691);
+    let obj = socket(14714);
     const result = obj.validateEventSubscription(socket, session_id);
     return (prevState) => {
       prevState = prevState.prevState;

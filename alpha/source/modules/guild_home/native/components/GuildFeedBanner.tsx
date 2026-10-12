@@ -1,9 +1,9 @@
-// Module ID: 16994
-// Function ID: 16995
+// Module ID: 17018
+// Function ID: 17019
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 14179, 2087, 16995, 1085, 21, 5092, 587, 558, 576, 4850, 1497, 5031, 14180, 1382, 1415, 6162, 5093, 5096, 504, 6626, 10679, 4969, 16996, 16997, 6156, 6158, 5088, 1200, 6184, 4809, 1126, 16998, 2]
+// Dependencies: [19, 17, 14202, 2087, 17019, 1085, 21, 5092, 587, 558, 576, 4850, 1497, 5031, 14203, 1382, 1415, 6163, 5093, 5096, 504, 6627, 10679, 4969, 17020, 17021, 6157, 6159, 5088, 1200, 6185, 4809, 1126, 17022, 2]
 
-// Module 16994 (GuildFeedBanner)
+// Module 17018 (GuildFeedBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,11 +11,11 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14180 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14203 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 14179 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 14202 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildFeedConstants from "GuildFeedConstants" /* 16995 */;
+import GuildFeedConstants from "GuildFeedConstants" /* 17019 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -146,7 +146,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
         description = guild.description;
       }
       if (cResult[11] !== guild) {
-        const tmpResult = tmp(6162);
+        const tmpResult = tmp(6163);
         const guildBadgeSource = tmpResult.getGuildBadgeSource(guild);
         cResult[11] = guild;
         cResult[12] = guildBadgeSource;
@@ -195,7 +195,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
       }
       const tmpResult5 = tmp(504);
       const discoverableGuild = tmpResult5.useStateFromStoresObject(tmp24, tmp26, tmp27).discoverableGuild;
-      const tmp28 = sharedValue(6626)();
+      const tmp28 = sharedValue(6627)();
       ({ width, height } = sharedValue(1497)());
       sharedValue(1497)();
       const _Math = Math;
@@ -372,8 +372,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
                                                                             },
                                         children: items5
                                       };
-                                      const PressableOpacity = tmp(6184).PressableOpacity;
-                                      const obj13 = { style: tmp4.publicIcon, source: sharedValue(16998) };
+                                      const PressableOpacity = tmp(6185).PressableOpacity;
+                                      const obj13 = { style: tmp4.publicIcon, source: sharedValue(17022) };
                                       const Icon = tmp(1200).Icon;
                                       items5 = [closure_10(Icon, obj13), ];
                                       const obj14 = { variant: "text-xs/medium", color: "text-default", children: intl.string(tmp(1126).t["B/vjCu"]) };
@@ -456,8 +456,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
                       cResult[48] = tmp55;
                       tmp52 = tmp55;
                     }
-                    const obj24 = { style: tmp4.avatar, guild, size: tmp(6158).GuildIconSizes.XLARGE, animate: true };
-                    const tmp7Result4 = sharedValue(6158);
+                    const obj24 = { style: tmp4.avatar, guild, size: tmp(6159).GuildIconSizes.XLARGE, animate: true };
+                    const tmp7Result4 = sharedValue(6159);
                     const tmp51 = closure_10(tmp7Result4, obj24);
                     cResult[43] = guild;
                     cResult[44] = tmp4.avatar;
@@ -486,7 +486,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
             }
           }
           const obj26 = { style: tmp4.bannerImage, source: tmp36, onLoad: tmp23 };
-          const tmp41 = closure_10(sharedValue(6156), obj26);
+          const tmp41 = closure_10(sharedValue(6157), obj26);
           cResult[28] = tmp23;
           cResult[29] = tmp4.bannerImage;
           cResult[30] = tmp36;
@@ -498,9 +498,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
           let tmp7Result5;
           const tmpResult7 = tmp(4969);
           if (tmpResult7.isThemeDark(tmp9)) {
-            tmp7Result5 = tmp7(16996);
+            tmp7Result5 = tmp7(17020);
           } else {
-            tmp7Result5 = tmp7(16997);
+            tmp7Result5 = tmp7(17021);
           }
           tmp37 = tmp7Result5;
         }
@@ -614,7 +614,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
   if (description == null) {
     description = guild.description;
   }
-  const tmp2Result = tmp2(6162);
+  const tmp2Result = tmp2(6163);
   const guildBadgeSource = tmp2Result.getGuildBadgeSource(guild);
   const items2 = [drawerWidth];
   const items3 = [guild];
@@ -623,7 +623,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
     const obj = { discoverableGuild: GuildPopoutStore.getGuild(guild.id) };
     return obj;
   }, items3).discoverableGuild;
-  const tmp12 = sharedValue(6626)();
+  const tmp12 = sharedValue(6627)();
   dependencyMap = tmp12;
   size = tmp6(1497)();
   width = size.width;
@@ -657,14 +657,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
       const result = set(obj.withTiming(1, timingPresets.timingSlow));
     }
   };
-  tmp6Result = sharedValue(6156);
+  tmp6Result = sharedValue(6157);
   if (memo == null) {
     let tmp6Result3;
     const tmp2Result6 = tmp2(4969);
     if (tmp2Result6.isThemeDark(tmp8)) {
-      tmp6Result3 = tmp6(16996);
+      tmp6Result3 = tmp6(17020);
     } else {
-      tmp6Result3 = tmp6(16997);
+      tmp6Result3 = tmp6(17021);
     }
     memo = tmp6Result3;
   }
@@ -675,8 +675,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
   obj8 = { style: items8, children: items9 };
   items8 = [tmp.content, { width: memo1, marginTop: -32 }];
   const obj9 = { style: tmp.guildIconContainer, children: closure_10(tmp6Result4, obj10) };
-  obj10 = { style: tmp.avatar, guild, size: tmp2(6158).GuildIconSizes.XLARGE, animate: true };
-  tmp6Result4 = sharedValue(6158);
+  obj10 = { style: tmp.avatar, guild, size: tmp2(6159).GuildIconSizes.XLARGE, animate: true };
+  tmp6Result4 = sharedValue(6159);
   items9 = [closure_10(height, obj9), , , ];
   const obj11 = { style: tmp.textContainer, children: items10 };
   items10 = [, ];
@@ -714,8 +714,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
             },
         children: items11
       };
-      const PressableOpacity = tmp2(6184).PressableOpacity;
-      const obj17 = { style: tmp.publicIcon, source: sharedValue(16998) };
+      const PressableOpacity = tmp2(6185).PressableOpacity;
+      const obj17 = { style: tmp.publicIcon, source: sharedValue(17022) };
       const Icon = tmp2(1200).Icon;
       items11 = [closure_10(Icon, obj17), ];
       const obj18 = { variant: "text-xs/medium", color: "text-default", children: intl.string(tmp2(1126).t["B/vjCu"]) };

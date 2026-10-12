@@ -1,9 +1,9 @@
-// Module ID: 17302
-// Function ID: 17303
+// Module ID: 17359
+// Function ID: 17360
 // Name: FrameSurfaceState
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6153, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6154, 2]
 
-// Module 17302 (FrameSurfaceState)
+// Module 17359 (FrameSurfaceState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 let obj2;
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(6153);
+const ActivityIndicator_ActivityIndicator = tmp(6154);
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let obj = { container: obj2 };

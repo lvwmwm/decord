@@ -1,9 +1,9 @@
-// Module ID: 18294
-// Function ID: 18295
+// Module ID: 18352
+// Function ID: 18353
 // Name: AuditLog
-// Dependencies: [19, 17, 1205, 1404, 4760, 1390, 1085, 21, 5092, 587, 1418, 1415, 5763, 4969, 558, 576, 6857, 5088, 1382, 4827, 18282, 4962, 1200, 1126, 2079, 5421, 5414, 4702, 1388, 1103, 10014, 6819, 6181, 18286, 6184, 5056, 8303, 14829, 504, 2]
+// Dependencies: [19, 17, 1205, 1404, 4760, 1390, 1085, 21, 5092, 587, 1418, 1415, 5763, 4969, 558, 576, 6858, 5088, 1382, 4827, 18340, 4962, 1200, 1126, 2079, 5421, 5414, 4702, 1388, 1103, 10015, 6820, 6182, 18344, 6185, 5056, 8304, 14852, 504, 2]
 
-// Module 18294 (AuditLog)
+// Module 18352 (AuditLog)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,10 +16,10 @@ import native2 from "native" /* 4827 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import PlatformsDefault from "Platforms" /* 5763 */;
-import EmojiDefault from "Emoji" /* 6819 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6857 */;
-import AppliedForumTag from "AppliedForumTag" /* 10014 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 18282 */;
+import EmojiDefault from "Emoji" /* 6820 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
+import AppliedForumTag from "AppliedForumTag" /* 10015 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 18340 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserRecord from "UserRecord" /* 1404 */;
@@ -56,7 +56,7 @@ let size1;
 let tmp;
 let unpackModuleId;
 const Text_Text = tmp(5088);
-const showUserProfileActionSheetDefault = tmp(8303);
+const showUserProfileActionSheetDefault = tmp(8304);
 const View = react_native.View;
 ({ AuditLogTargetTypes: c10, AuditLogActionTypes: unpackModuleId, AuditLogActions: closure_12, Fonts, AuditLogChangeKeys: map1 } = Constants);
 let Fragment = Fragment_mod;
@@ -717,7 +717,7 @@ class AuditLog extends PureComponent {
     const obj4 = { accessible: false, style: items1, variant: str2, border: str3, onPress: onHeaderClick, children: null };
     items1 = [tmp.container, containerStyle];
     str2 = "secondary";
-    const Card = tmp10(6181).Card;
+    const Card = tmp10(6182).Card;
     if (expanded) {
       str2 = "primary";
     }
@@ -728,7 +728,7 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(18286), obj6);
+    items2[0] = closure_14(user(18344), obj6);
     const obj7 = {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(tmp10(1126).t.iXAna6),
@@ -743,7 +743,7 @@ class AuditLog extends PureComponent {
       },
       children: null
     };
-    const PressableOpacity = tmp10(6184).PressableOpacity;
+    const PressableOpacity = tmp10(6185).PressableOpacity;
     intl = tmp10(1126).intl;
     username = undefined;
     const tmp16 = View;
@@ -782,12 +782,12 @@ class AuditLog extends PureComponent {
           items2[1] = closure_14(PressableOpacity, obj7);
           const obj9 = { accessibilityRole: "button", accessibilityState: obj10, onPress: onHeaderClick, style: tmp.titleContainer, disabled: !checkChangesToRenderResult, children: items3 };
           obj10 = { expanded, disabled: !checkChangesToRenderResult };
-          const PressableOpacity2 = tmp10(6184).PressableOpacity;
+          const PressableOpacity2 = tmp10(6185).PressableOpacity;
           items3 = [self.renderTitle(), tmp8];
           items2[2] = closure_15(PressableOpacity2, obj9);
           let tmp17Result = null;
           if (checkChangesToRenderResult) {
-            const obj11 = { style: items4, size: tmp10(1200).Icon.Sizes.CUSTOM, source: user(14829) };
+            const obj11 = { style: items4, size: tmp10(1200).Icon.Sizes.CUSTOM, source: user(14852) };
             items4 = [tmp.arrow, rotate90];
             const Icon = tmp10(1200).Icon;
             tmp17Result = tmp17(Icon, obj11);

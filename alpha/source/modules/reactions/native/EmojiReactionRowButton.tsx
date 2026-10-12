@@ -1,10 +1,10 @@
-// Module ID: 12829
-// Function ID: 12830
+// Module ID: 12831
+// Function ID: 12832
 // Name: EmojiReactionRowButton
-// Dependencies: [19, 17, 1393, 21, 5092, 587, 558, 576, 4969, 1126, 8960, 6184, 6819, 1415, 4767, 2]
+// Dependencies: [19, 17, 1393, 21, 5092, 587, 558, 576, 4969, 1126, 8961, 6185, 6820, 1415, 4767, 2]
 // Exports: getEmojiKey
 
-// Module 12829 (EmojiReactionRowButton)
+// Module 12831 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,9 +13,9 @@ import intl2 from "intl" /* 1126 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import EmojiTypes from "EmojiTypes" /* 4767 */;
 import shared from "shared" /* 4969 */;
-import Pressables from "Pressables" /* 6184 */;
-import EmojiDefault from "Emoji" /* 6819 */;
-import ReactionIcon2 from "ReactionIcon" /* 8960 */;
+import Pressables from "Pressables" /* 6185 */;
+import EmojiDefault from "Emoji" /* 6820 */;
+import ReactionIcon2 from "ReactionIcon" /* 8961 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -112,10 +112,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerR
   const isThemeLightResult = obj2.isThemeLight(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const tmp5 = isThemeLightResult ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300;
-  const PressableOpacity = tmp2(6184).PressableOpacity;
+  const PressableOpacity = tmp2(6185).PressableOpacity;
   const intl = tmp2(1126).intl;
   const items = [tmp.emojiContainer, styles];
-  const ReactionIcon = tmp2(8960).ReactionIcon;
+  const ReactionIcon = tmp2(8961).ReactionIcon;
   if (str == null) {
     str = "md";
   }

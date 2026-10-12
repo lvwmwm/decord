@@ -1,14 +1,14 @@
-// Module ID: 15109
-// Function ID: 15110
+// Module ID: 15132
+// Function ID: 15133
 // Name: BaseUpsellActionSheet
-// Dependencies: [19, 17, 2087, 21, 5092, 587, 558, 576, 504, 6158, 15107, 1126, 5088, 12359, 12066, 5056, 4809, 5379, 6839, 2]
+// Dependencies: [19, 17, 2087, 21, 5092, 587, 558, 576, 504, 6159, 15130, 1126, 5088, 12361, 12068, 5056, 4809, 5379, 6840, 2]
 
-// Module 15109 (BaseUpsellActionSheet)
+// Module 15132 (BaseUpsellActionSheet)
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import GuildIconDefault from "GuildIcon" /* 6158 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15107 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15130 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -73,7 +73,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StoreG
   const tmpResult = guildId(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] !== stateFromStores) {
-    const obj2 = { guild: stateFromStores, size: guildId(6158).GuildIconSizes.XSMALL };
+    const obj2 = { guild: stateFromStores, size: guildId(6159).GuildIconSizes.XSMALL };
     const tmp11 = GuildIconDefault;
     const tmp12 = closure_7(tmp11, obj2);
     cResult[3] = stateFromStores;
@@ -88,7 +88,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StoreG
   const items = [GuildStore];
   const obj = guildId(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  const obj2 = { guild: stateFromStores, size: guildId(6158).GuildIconSizes.XSMALL };
+  const obj2 = { guild: stateFromStores, size: guildId(6159).GuildIconSizes.XSMALL };
   const tmp2 = GuildIconDefault;
   return closure_7(tmp2, obj2);
 });
@@ -111,7 +111,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   ({ guildIds, direction, onPress } = arg0);
   const tmp4 = closure_9();
   if (cResult[0] !== guildIds) {
-    const tmpResult = arr(15107);
+    const tmpResult = arr(15130);
     const result = tmpResult.sortGuildIdsByFrecency(guildIds);
     cResult[0] = guildIds;
     cResult[1] = result;
@@ -226,7 +226,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   if (cResult[10] !== tmp14) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F146502 */ });
+        return closure_1.map(() => { /* body not rendered: F146777 */ });
       }
     }
     const items2 = [tmp14];
@@ -238,7 +238,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F146502 */ });
+        return closure_1.map(() => { /* body not rendered: F146777 */ });
       }
     }
     tmp18 = cResult[12];
@@ -249,7 +249,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   if (cResult[13] !== guildIds.length) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F146502 */ });
+        return closure_1.map(() => { /* body not rendered: F146777 */ });
       }
     }
     const obj2 = { count: guildIds.length };
@@ -259,14 +259,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F146502 */ });
+        return closure_1.map(() => { /* body not rendered: F146777 */ });
       }
     }
   }
   if (cResult[15] !== tmp20) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F146502 */ });
+        return closure_1.map(() => { /* body not rendered: F146777 */ });
       }
     }
     const obj3 = { variant: "text-md/semibold", color: "text-strong", children: tmp20 };
@@ -276,41 +276,41 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   } else {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F146502 */ });
+        return closure_1.map(() => { /* body not rendered: F146777 */ });
       }
     }
   }
   const statusRow = tmp4.statusRow;
   let str = "text-muted";
-  if (direction === arr(15107).ChangeDirection.RESTRICTING) {
+  if (direction === arr(15130).ChangeDirection.RESTRICTING) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F146502 */ });
+        return closure_1.map(() => { /* body not rendered: F146777 */ });
       }
     }
   }
   if (cResult[17] === tmp10) {
     class B {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F146502 */ });
+        return closure_1.map(() => { /* body not rendered: F146777 */ });
       }
     }
     if (cResult[20] === undefined) {
       class B {
         constructor() {
-          return closure_1.map(() => { /* body not rendered: F146502 */ });
+          return closure_1.map(() => { /* body not rendered: F146777 */ });
         }
       }
       if (cResult[23] === tmp4.guildSummary) {
         class B {
           constructor() {
-            return closure_1.map(() => { /* body not rendered: F146502 */ });
+            return closure_1.map(() => { /* body not rendered: F146777 */ });
           }
         }
         if (cResult[26] === tmp4.statusRow) {
           class B {
             constructor() {
-              return closure_1.map(() => { /* body not rendered: F146502 */ });
+              return closure_1.map(() => { /* body not rendered: F146777 */ });
             }
           }
         }
@@ -533,7 +533,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseUpsellAc
                 let obj3 = { startExpanded: true, children: closure_8(closure_5, obj4) };
                 obj4 = { style: tmp4.container, children: items };
                 items = [tmp8, tmp11, tmp14, tmp24];
-                BottomSheet = tmp(6839).BottomSheet;
+                BottomSheet = tmp(6840).BottomSheet;
                 const tmp32 = closure_7(BottomSheet, obj3);
                 cResult[21] = tmp4.container;
                 cResult[22] = tmp8;
@@ -623,7 +623,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseUpsellAc
   }, []);
   let obj = { startExpanded: true, children: closure_8(closure_5, obj2) };
   obj2 = { style: tmp.container, children: items1 };
-  BottomSheet = toastContent(6839).BottomSheet;
+  BottomSheet = toastContent(6840).BottomSheet;
   let obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/bold", color: "text-strong", children: title };
   items1 = [closure_7(toastContent(5088).Text, obj3), , , ];
   const obj4 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: subtitle };

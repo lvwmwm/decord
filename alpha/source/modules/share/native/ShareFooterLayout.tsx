@@ -1,16 +1,16 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11592
+// Function ID: 11593
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6664, 4850, 5378, 5382, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6665, 4850, 5378, 5382, 5088, 2]
 
-// Module 11590 (ShareFooterLayout)
+// Module 11592 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6664 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

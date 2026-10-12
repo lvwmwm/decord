@@ -1,10 +1,10 @@
-// Module ID: 9606
-// Function ID: 9607
+// Module ID: 9607
+// Function ID: 9608
 // Name: VoiceChannelListInviteExperiment
 // Dependencies: [5014, 558, 576, 2]
 // Exports: getVoiceChannelListInviteExperiment
 
-// Module 9606 (VoiceChannelListInviteExperiment)
+// Module 9607 (VoiceChannelListInviteExperiment)
 import react from "react" /* 576 */;
 import createExperiment from "module_5014" /* 5014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

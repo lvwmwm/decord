@@ -1,25 +1,25 @@
-// Module ID: 12711
-// Function ID: 12712
+// Module ID: 12713
+// Function ID: 12714
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1392, 12712, 21, 12713, 12714, 12715, 12716, 12717, 12718, 12719, 12720, 12721, 5092, 587, 558, 576, 1126, 2632, 6156, 2]
+// Dependencies: [19, 17, 1392, 12714, 21, 12715, 12716, 12717, 12718, 12719, 12720, 12721, 12722, 12723, 5092, 587, 558, 576, 1126, 2632, 6157, 2]
 
-// Module 12711 (PremiumGiftBackgroundSelectTile)
+// Module 12713 (PremiumGiftBackgroundSelectTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _modDef2632 from "module_2632" /* 2632 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import PremiumGiftingConstants from "PremiumGiftingConstants" /* 12712 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12713 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12714 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12715 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12716 */;
-import _modDef12717 from "module_12717" /* 12717 */;
-import _modDef12718 from "module_12718" /* 12718 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import PremiumGiftingConstants from "PremiumGiftingConstants" /* 12714 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12715 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12716 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12717 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12718 */;
 import _modDef12719 from "module_12719" /* 12719 */;
 import _modDef12720 from "module_12720" /* 12720 */;
 import _modDef12721 from "module_12721" /* 12721 */;
+import _modDef12722 from "module_12722" /* 12722 */;
+import _modDef12723 from "module_12723" /* 12723 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -41,19 +41,19 @@ const GIFT_STYLE_DESCRIPTIONS = PremiumGiftingConstants.GIFT_STYLE_DESCRIPTIONS;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const GIFT_STYLE_IMG = { [STANDARD_BOX]: AssetRegistryDefault, [CAKE]: AssetRegistryDefault2, [CHEST]: AssetRegistryDefault3, [COFFEE]: AssetRegistryDefault4 };
 ({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
-let obj2 = { uri: _modDef12717 };
+let obj2 = { uri: _modDef12719 };
 GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = obj2;
 GIFT_STYLE_IMG[PremiumGiftStyles.SNOWGLOBE] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.BOX] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.CUP] = null;
-let obj3 = { uri: _modDef12718 };
+let obj3 = { uri: _modDef12720 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = obj3;
-let obj4 = { uri: _modDef12719 };
+let obj4 = { uri: _modDef12721 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = obj4;
-let obj5 = { uri: _modDef12720 };
+let obj5 = { uri: _modDef12722 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = obj5;
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef12721 };
-({ uri: _modDef12721 });
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef12723 };
+({ uri: _modDef12723 });
 let closure_9 = createStyles.createStyles((arg0) => {
   let num;
   let size1;
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBackgrou
     }
     items = [selected, ];
     const obj4 = { resizeMode: "contain", style: tmp.image, source: obj[giftStyle] };
-    items[1] = metroRequire(tmp8(6156), obj4);
+    items[1] = metroRequire(tmp8(6157), obj4);
     tmp4Result = tmp4(tmp5, obj);
   }
   return tmp4Result;

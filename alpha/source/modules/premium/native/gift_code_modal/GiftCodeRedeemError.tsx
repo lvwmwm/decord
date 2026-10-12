@@ -1,9 +1,9 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10644
+// Function ID: 10645
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1504, 10644, 10645, 6156, 1126, 5088, 5379, 5934, 6813, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1504, 10645, 10646, 6157, 1126, 5088, 5379, 5934, 6814, 2]
 
-// Module 10643 (GiftCodeRedeemError)
+// Module 10644 (GiftCodeRedeemError)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -11,8 +11,8 @@ import Link from "Link" /* 1504 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6813 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,15 +47,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
   ({ container, body } = tmp4);
   const obj2 = Link;
   if (obj2.useTheme().dark) {
-    tmp5Result = tmp5(10644);
+    tmp5Result = tmp5(10645);
     tmp7 = tmp5;
   } else {
-    tmp5Result = tmp5(10645);
+    tmp5Result = tmp5(10646);
     tmp7 = tmp5;
   }
   if (cResult[0] !== tmp5Result) {
     const obj3 = { source: tmp5Result };
-    const tmp10 = hasOwnProperty(tmp7(6156), obj3);
+    const tmp10 = hasOwnProperty(tmp7(6157), obj3);
     cResult[0] = tmp5Result;
     cResult[1] = tmp10;
     tmp8 = tmp10;
@@ -184,9 +184,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
   const tmp6 = React3;
   const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp8Result = tmp8(10644);
-  } else {
     tmp8Result = tmp8(10645);
+  } else {
+    tmp8Result = tmp8(10646);
   }
   items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };

@@ -1,15 +1,15 @@
-// Module ID: 15633
-// Function ID: 15634
+// Module ID: 15656
+// Function ID: 15657
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 6181, 1398, 1126, 3851, 6898, 11654, 5377, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 6182, 1398, 1126, 3851, 6899, 11656, 5377, 2]
 
-// Module 15633 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 15656 (CustomTypingIndicatorAnimationPickerSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import Card_Card from "Card/Card" /* 6181 */;
+import Card_Card from "Card/Card" /* 6182 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   const obj7 = { value: onChange(1398).TypingIndicatorAnimation.WAVE, label: intl4.string(animation(3851)["8t5EiI"]) };
   intl4 = tmp(1126).intl;
   items1[3] = obj7;
-  const ActionSheet = tmp(6898).ActionSheet;
+  const ActionSheet = tmp(6899).ActionSheet;
   const content = tmp4.content;
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     const intl5 = tmp(1126).intl;
@@ -282,7 +282,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   }
   const obj9 = { config: obj10, size: 54 };
   obj10 = { emojis, animation, typingSuggestion: onChange(1398).TypingSuggestion.UNSPECIFIED };
-  const tmp13Result = animation(11654);
+  const tmp13Result = animation(11656);
   const tmp18 = closure_6(tmp13Result, obj9);
   cResult[13] = emojis;
   cResult[14] = animation;
@@ -322,12 +322,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   intl4 = onChange(1126).intl;
   items[3] = obj4;
   const obj5 = { contentStyles: tmp.content, dismissAccessibilityLabel: intl5.string(animation(3851)["q+qHax"]), children: items1 };
-  const ActionSheet = onChange(6898).ActionSheet;
+  const ActionSheet = onChange(6899).ActionSheet;
   intl5 = onChange(1126).intl;
   const obj6 = { style: tmp.previewRow, children: closure_6(tmp4, obj7) };
   obj7 = { config: obj8, size: 54 };
   obj8 = { emojis, animation, typingSuggestion: onChange(1398).TypingSuggestion.UNSPECIFIED };
-  tmp4 = animation(11654);
+  tmp4 = animation(11656);
   items1 = [closure_6(View, obj6), ];
   const obj9 = {
     spacing: 8,

@@ -1,16 +1,16 @@
-// Module ID: 7318
-// Function ID: 7319
+// Module ID: 7319
+// Function ID: 7320
 // Name: ConversationPreviewStore
-// Dependencies: [32, 502, 2065, 4760, 1390, 7315, 1457, 7317, 7316, 5434, 504, 584, 2]
+// Dependencies: [32, 502, 2065, 4760, 1390, 7316, 1457, 7318, 7317, 5434, 504, 584, 2]
 
-// Module 7318 (ConversationPreviewStore)
+// Module 7319 (ConversationPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LRUCacheDefault from "LRUCache" /* 1457 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
-import ConversationConstants from "ConversationConstants" /* 7315 */;
-import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7316 */;
-import ConversationsUtils from "ConversationsUtils" /* 7317 */;
+import ConversationConstants from "ConversationConstants" /* 7316 */;
+import ConversationMessageCacheUtils from "ConversationMessageCacheUtils" /* 7317 */;
+import ConversationsUtils from "ConversationsUtils" /* 7318 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -51,7 +51,7 @@ function handleReaction(messageId) {
         if (flag2) {
           const messageByMessageId2 = peekResult.messageByMessageId;
           const result = messageByMessageId2.set(messageId, applyReactionResult);
-          const tmp5Result = tmp5(7316);
+          const tmp5Result = tmp5(7317);
           const result1 = tmp5Result.replaceHydratedMessage(peekResult, messageId, applyReactionResult);
           flag2 = true;
         }
@@ -355,7 +355,7 @@ let obj2 = {
             if (flag2) {
               const messageByMessageId2 = peekResult.messageByMessageId;
               const result = messageByMessageId2.set(id, updateMessageRecordResult);
-              const tmp7Result = tmp7(7316);
+              const tmp7Result = tmp7(7317);
               const result1 = tmp7Result.replaceHydratedMessage(peekResult, id, updateMessageRecordResult);
               flag2 = true;
             }

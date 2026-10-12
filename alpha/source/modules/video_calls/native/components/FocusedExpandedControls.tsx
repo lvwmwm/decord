@@ -1,7 +1,7 @@
 // Module ID: 11131
 // Function ID: 11132
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 5897, 502, 5117, 21, 5092, 587, 558, 576, 1200, 6156, 11132, 11133, 8579, 504, 11134, 1126, 1382, 11081, 8785, 8792, 11052, 11135, 11102, 11136, 11137, 2]
+// Dependencies: [19, 17, 5897, 502, 5117, 21, 5092, 587, 558, 576, 1200, 6157, 11132, 11133, 8580, 504, 11134, 1126, 1382, 11081, 8786, 8793, 11052, 11135, 11102, 11136, 11137, 2]
 
 // Module 11131 (FocusedExpandedControls)
 import react_native from "react-native" /* 17 */;
@@ -12,10 +12,10 @@ import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import Constants from "Constants" /* 5117 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import Form from "Form" /* 8579 */;
-import CallsUtils from "CallsUtils" /* 8785 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 8792 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import Form from "Form" /* 8580 */;
+import CallsUtils from "CallsUtils" /* 8786 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 8793 */;
 import useScreenshareUtilsDefault from "useScreenshareUtils" /* 11052 */;
 import VolumeSliderDefault from "VolumeSlider" /* 11081 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 11102 */;
@@ -167,7 +167,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expand
       }
     }
     const obj2 = { tintColor: nativeDefault.unsafe_rawColors.BRAND_500, renderIosBackground: true, value: switchValue, disabled, onValueChange: onSwitchValueChange };
-    const FormSwitch = tmp(8579).FormSwitch;
+    const FormSwitch = tmp(8580).FormSwitch;
     const tmp10 = metroImportDefault(FormSwitch, obj2);
     cResult[0] = disabled;
     cResult[1] = onSwitchValueChange;
@@ -362,7 +362,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamVolume
       let tmp31 = null;
       if (null != stateFromStores) {
         const obj4 = { label: tmp26 };
-        tmp31 = metroImportDefault(tmp(8579).FormRow, obj4);
+        tmp31 = metroImportDefault(tmp(8580).FormRow, obj4);
       }
       cResult[14] = stateFromStores;
       cResult[15] = tmp26;
@@ -441,7 +441,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AudioRouteBu
   const cResult = obj.c(7);
   channelId = channelId.channelId;
   const isConnectedToVoiceChannel = channelId.isConnectedToVoiceChannel;
-  const obj2 = channelId(8785);
+  const obj2 = channelId(8786);
   const routeSource = obj2.useMaskedSpeakerStates().routeSource;
   if (cResult[0] === channelId) {
     let tmp4;

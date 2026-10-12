@@ -1,9 +1,9 @@
-// Module ID: 14410
-// Function ID: 14411
+// Module ID: 14433
+// Function ID: 14434
 // Name: Badge/Badge
-// Dependencies: [19, 17, 2129, 1085, 1202, 21, 5092, 587, 1382, 558, 576, 4969, 504, 5088, 1901, 8596, 2]
+// Dependencies: [19, 17, 2129, 1085, 1202, 21, 5092, 587, 1382, 558, 576, 4969, 504, 5088, 1901, 8597, 2]
 
-// Module 14410 (Badge/Badge)
+// Module 14433 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -12,7 +12,7 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import NumberUtils from "NumberUtils" /* 1901 */;
 import shared from "shared" /* 4969 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8596 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8597 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import BadgeConstants from "BadgeConstants" /* 1202 */;

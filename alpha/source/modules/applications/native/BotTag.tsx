@@ -1,16 +1,16 @@
-// Module ID: 8766
-// Function ID: 8767
+// Module ID: 8767
+// Function ID: 8768
 // Name: BotTag
-// Dependencies: [19, 17, 1373, 21, 5092, 587, 1126, 558, 576, 8767, 5088, 2]
+// Dependencies: [19, 17, 1373, 21, 5092, 587, 1126, 558, 576, 8768, 5088, 2]
 
-// Module 8766 (BotTag)
+// Module 8767 (BotTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 8767 */;
+import CheckmarkSmallBoldIcon2 from "CheckmarkSmallBoldIcon" /* 8768 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -87,7 +87,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotTag(arg0)
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-      const CheckmarkSmallBoldIcon = tmp(8767).CheckmarkSmallBoldIcon;
+      const CheckmarkSmallBoldIcon = tmp(8768).CheckmarkSmallBoldIcon;
       const tmp17 = hasOwnProperty(CheckmarkSmallBoldIcon, obj2);
       cResult[2] = tmp17;
       tmp14 = tmp17;

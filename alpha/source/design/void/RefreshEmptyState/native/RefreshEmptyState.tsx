@@ -1,14 +1,14 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14437
+// Function ID: 14438
 // Name: RefreshEmptyState
-// Dependencies: [109, 19, 17, 1085, 21, 5092, 5906, 587, 558, 576, 8596, 5379, 4969, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 5092, 5906, 587, 558, 576, 8597, 5379, 4969, 2]
 
-// Module 14414 (RefreshEmptyState)
+// Module 14437 (RefreshEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import shared from "shared" /* 4969 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8596 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8597 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,50 +1,42 @@
 // Module ID: 14585
 // Function ID: 14586
-// Dependencies: [14554, 14586, 14529, 14582]
+// Dependencies: [14577, 14576, 14584]
 
 // Module 14585
-import _mod14529 from "module_14529" /* 14529 */;
-import _mod14554 from "module_14554" /* 14554 */;
-import defineProperty2 from "defineProperty2" /* 14582 */;
-import _mod14586 from "module_14586" /* 14586 */;
+import _mod14576 from "module_14576" /* 14576 */;
+import _mod14577 from "module_14577" /* 14577 */;
+import _mod14584 from "module_14584" /* 14584 */;
 
 
-export default (arg0, arg1, value, arg3) => {
-  const obj = arg3 || {};
-  let flag = obj.enumerable;
-  let name = arg1;
-  const tmp = arg1;
-  if (undefined !== obj.name) {
-    name = obj.name;
-  }
-  if (_mod14554(value)) {
-    _mod14586(value, name, obj);
-  }
-  if (obj.global) {
-    if (flag) {
-      arg0[arg1] = value;
-    } else {
-      _mod14529(arg1, value);
-    }
-  } else {
-    try {
-      if (obj.unsafe) {
-        if (arg0[arg1]) {
-          flag = true;
-        }
-      } else {
-        delete tmp5[tmp];
+export default (arg0, arg1) => {
+  if ("string" === arg1) {
+    const toString = arg0.toString;
+    if (_mod14577(toString)) {
+      const tmpResult = _mod14576;
+      const tmp4 = _mod14584(toString, arg0);
+      if (!tmpResult(tmp4)) {
+        return tmp4;
       }
-    } catch (err) {
-    }
-    const tmp6 = flag;
-    if (tmp6) {
-      arg0[arg1] = value;
-    } else {
-      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
-      const tmp2Result = defineProperty2;
-      tmp2Result.f(arg0, arg1, obj2);
     }
   }
-  return arg0;
+  const valueOf = arg0.valueOf;
+  if (_mod14577(valueOf)) {
+    const tmp5Result = _mod14576;
+    const tmp8 = _mod14584(valueOf, arg0);
+    if (!tmp5Result(tmp8)) {
+      return tmp8;
+    }
+  }
+  if ("string" !== arg1) {
+    const toString2 = arg0.toString;
+    if (_mod14577(toString2)) {
+      const tmp5Result2 = _mod14576;
+      const tmp10 = _mod14584(toString2, arg0);
+      if (!tmp5Result2(tmp10)) {
+        return tmp10;
+      }
+    }
+  }
+  const tmp11 = new TypeError("Can't convert object to primitive value");
+  throw tmp11;
 };

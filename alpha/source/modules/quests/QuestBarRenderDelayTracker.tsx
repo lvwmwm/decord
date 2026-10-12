@@ -1,9 +1,9 @@
-// Module ID: 9196
-// Function ID: 9197
+// Module ID: 9197
+// Function ID: 9198
 // Name: QuestBarRenderDelayTracker
 // Dependencies: [1085, 5729, 5734, 1265, 6071, 2]
 
-// Module 9196 (QuestBarRenderDelayTracker)
+// Module 9197 (QuestBarRenderDelayTracker)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;

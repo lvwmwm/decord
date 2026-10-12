@@ -1,21 +1,21 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14037
+// Function ID: 14038
 // Name: NowPlayingStore
-// Dependencies: [7347, 5108, 1390, 1085, 14015, 504, 584, 2]
+// Dependencies: [7348, 5108, 1390, 1085, 14038, 504, 584, 2]
 
-// Module 14014 (NowPlayingStore)
+// Module 14037 (NowPlayingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 14015 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7347 */;
+import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 14038 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, timestamps;
 
-const f117081 = (item) => {
+const f117288 = (item) => {
   const tmp = false !== closure_2_9(item) || closure_0;
   closure_0 = tmp;
 };
@@ -203,14 +203,14 @@ let obj = {
     let item = guilds.forEach((presences) => {
       presences = presences.presences;
       let closure_0 = false;
-      const item = presences.forEach(f117081);
+      const item = presences.forEach(f117288);
       const tmp2 = closure_0;
       if (tmp2) {
         c0 = true;
       }
     });
     let c0 = false;
-    const item1 = presences.forEach(f117081);
+    const item1 = presences.forEach(f117288);
     const tmp3 = c0;
     if (tmp3) {
       c0 = true;
@@ -228,7 +228,7 @@ let obj = {
   PRESENCES_REPLACE: function handlePresencesReplace(presences) {
     presences = presences.presences;
     let c0 = false;
-    const item = presences.forEach(f117081);
+    const item = presences.forEach(f117288);
     return c0;
   }
 };

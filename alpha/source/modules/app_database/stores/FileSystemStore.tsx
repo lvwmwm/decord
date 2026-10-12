@@ -1,9 +1,9 @@
-// Module ID: 7200
-// Function ID: 7201
+// Module ID: 7201
+// Function ID: 7202
 // Name: FileSystemStore
 // Dependencies: [5, 3, 1102, 504, 584, 2091, 2]
 
-// Module 7200 (FileSystemStore)
+// Module 7201 (FileSystemStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -62,7 +62,7 @@ function refresh() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ function refresh() {
             }
           }
           isLowDisk = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp37) {
         isLowDisk = 3;

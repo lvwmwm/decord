@@ -1,10 +1,10 @@
-// Module ID: 10154
-// Function ID: 10155
+// Module ID: 10155
+// Function ID: 10156
 // Name: WishlistBannerUtils
-// Dependencies: [19, 1126, 8979, 6930, 558, 576, 2]
+// Dependencies: [19, 1126, 8980, 6931, 558, 576, 2]
 // Exports: getBannerMode
 
-// Module 10154 (WishlistBannerUtils)
+// Module 10155 (WishlistBannerUtils)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;

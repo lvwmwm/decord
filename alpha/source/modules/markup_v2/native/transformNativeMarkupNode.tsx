@@ -1,9 +1,9 @@
-// Module ID: 8151
-// Function ID: 8152
+// Module ID: 8152
+// Function ID: 8153
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 5400, 5087, 8152, 8153, 8154, 8156, 8239, 2]
+// Dependencies: [32, 5400, 5087, 8153, 8154, 8155, 8157, 8240, 2]
 
-// Module 8151 (transformNativeMarkupNode)
+// Module 8152 (transformNativeMarkupNode)
 import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 5087 */;
 import MarkupTypes from "MarkupTypes" /* 5400 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

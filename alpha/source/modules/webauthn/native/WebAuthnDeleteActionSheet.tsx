@@ -1,9 +1,9 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15059
+// Function ID: 15060
 // Name: WebAuthnDeleteActionSheet
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5056, 5939, 4809, 1126, 6893, 6838, 5088, 5379, 6839, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5056, 5939, 4809, 1126, 6894, 6839, 5088, 5379, 6840, 2]
 
-// Module 15036 (WebAuthnDeleteActionSheet)
+// Module 15059 (WebAuthnDeleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
@@ -237,9 +237,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnDe
   }
   let tmp = closure_6();
   let obj = { contentStyles: tmp.sheetContent, bodyStyles: tmp.sheetBody, children: items };
-  BottomSheet = credential(6839).BottomSheet;
-  let obj2 = { title: intl.formatToPlainString(credential(1126).t.mI3CoL, obj3), trailing: closure_4(credential(6893).ActionSheetCloseButton, { onPress: handleClose }) };
-  const BottomSheetTitleHeader = credential(6838).BottomSheetTitleHeader;
+  BottomSheet = credential(6840).BottomSheet;
+  let obj2 = { title: intl.formatToPlainString(credential(1126).t.mI3CoL, obj3), trailing: closure_4(credential(6894).ActionSheetCloseButton, { onPress: handleClose }) };
+  const BottomSheetTitleHeader = credential(6839).BottomSheetTitleHeader;
   intl = credential(1126).intl;
   obj3 = { keyName: credential.name };
   items = [closure_4(BottomSheetTitleHeader, obj2), , , ];

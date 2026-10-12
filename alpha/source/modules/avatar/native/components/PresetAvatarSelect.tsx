@@ -1,24 +1,24 @@
-// Module ID: 18127
-// Function ID: 18128
+// Module ID: 18185
+// Function ID: 18186
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 18128, 18129, 18130, 18131, 18132, 18133, 18134, 18135, 1126, 5092, 587, 558, 576, 5088, 6156, 6184, 2]
+// Dependencies: [19, 17, 21, 18186, 18187, 18188, 18189, 18190, 18191, 18192, 18193, 1126, 5092, 587, 558, 576, 5088, 6157, 6185, 2]
 
-// Module 18127 (PresetAvatarSelect)
+// Module 18185 (PresetAvatarSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import Pressables from "Pressables" /* 6184 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 18128 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 18129 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 18130 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 18131 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 18132 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 18133 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 18134 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 18135 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import Pressables from "Pressables" /* 6185 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 18186 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 18187 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 18188 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 18189 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 18190 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 18191 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 18192 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 18193 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

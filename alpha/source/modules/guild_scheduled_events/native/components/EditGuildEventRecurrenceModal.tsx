@@ -1,21 +1,21 @@
-// Module ID: 8535
-// Function ID: 8536
+// Module ID: 8536
+// Function ID: 8537
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 1631, 8525, 8520, 1894, 8536, 8528, 1126, 5379, 8537, 8519, 8538, 8539, 5088, 6687, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 1631, 8526, 8521, 1894, 8537, 8529, 1126, 5379, 8538, 8520, 8539, 8540, 5088, 6688, 2]
 
-// Module 8535 (EditGuildEventRecurrenceModal)
+// Module 8536 (EditGuildEventRecurrenceModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8519 */;
-import useEventExceptionDefault from "useEventException" /* 8525 */;
-import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8528 */;
-import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 8536 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8537 */;
-import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 8538 */;
-import GuildEventScheduleDefault from "GuildEventSchedule" /* 8539 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8520 */;
+import useEventExceptionDefault from "useEventException" /* 8526 */;
+import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8529 */;
+import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 8537 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8538 */;
+import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 8539 */;
+import GuildEventScheduleDefault from "GuildEventSchedule" /* 8540 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -61,7 +61,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
   const tmp5 = onCloseModal;
   ({ left, right } = onCloseModal(1631)());
   const tmp6 = onCloseModal(1631)();
-  const tmp7 = onCloseModal(8525)(recurrenceId, guildEvent.id);
+  const tmp7 = onCloseModal(8526)(recurrenceId, guildEvent.id);
   dependencyMap = tmp7;
   if (cResult[0] === tmp7) {
     if (cResult[1] === guildEvent) {
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
             if (cResult[7] === schedule) {
               tmp18 = cResult[8];
             }
-            const tmp11Result = tmp11(tmp5(8528)(tmp18), 2);
+            const tmp11Result = tmp11(tmp5(8529)(tmp18), 2);
             const first2 = tmp11Result[0];
             error = tmp11Result[1].error;
             if (cResult[9] === tmp8) {
@@ -312,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 }
               } else {
                 try {
@@ -348,7 +348,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
                     c1();
                   }
                   c2 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 } catch (tmp12) {
                   c2 = 3;
                   throw tmp12;
@@ -392,9 +392,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
       tmp18 = M;
     }
   }
-  const tmpResult = tmp(8520);
+  const tmpResult = tmp(8521);
   const baseScheduleForRecurrence = tmpResult.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  const tmpResult2 = tmp(8520);
+  const tmpResult2 = tmp(8521);
   const scheduleForRecurrenceWithException = tmpResult2.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp7);
   cResult[0] = tmp7;
   cResult[1] = guildEvent;
@@ -430,7 +430,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -466,7 +466,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
             closure_128_1();
           }
           c2 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp12) {
           c2 = 3;
           throw tmp12;
@@ -493,9 +493,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
   ({ left, right } = tmp2);
   let tmp3 = useEventExceptionDefault(recurrenceId, guildEvent.id);
   dependencyMap = tmp3;
-  obj = guildEvent(8520);
+  obj = guildEvent(8521);
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  let obj2 = guildEvent(8520);
+  let obj2 = guildEvent(8521);
   const scheduleForRecurrenceWithException = obj2.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp3);
   [c5, c6] = schedule(react.useState(scheduleForRecurrenceWithException), 2);
   const tmp6 = schedule(react.useState(scheduleForRecurrenceWithException), 2);
@@ -562,7 +562,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
     },
     fullscreen: true
   };
-  let obj5 = { style: items1, children: closure_8(guildEvent(6687).Navigator, obj6) };
+  let obj5 = { style: items1, children: closure_8(guildEvent(6688).Navigator, obj6) };
   items1 = [tmp.container, { paddingLeft: left, paddingRight: right }];
   obj6 = { screens: { [closure_11.TIME]: obj4 }, initialRouteName: obj.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: tmp.cardStyle };
   return closure_8(first, obj5);

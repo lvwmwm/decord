@@ -1,14 +1,14 @@
-// Module ID: 11765
-// Function ID: 11766
+// Module ID: 11767
+// Function ID: 11768
 // Name: Spoiler
-// Dependencies: [19, 17, 1085, 11758, 21, 5092, 1382, 587, 4827, 1200, 2]
+// Dependencies: [19, 17, 1085, 11760, 21, 5092, 1382, 587, 4827, 1200, 2]
 
-// Module 11765 (Spoiler)
+// Module 11767 (Spoiler)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 4827 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11758 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -75,7 +75,7 @@ class Spoiler extends PureComponent {
       let tmp9 = _require;
       let mapped = Children1.map(children, (type) => {
         let validElement;
-        const f109582 = (props) => {
+        const f109803 = (props) => {
           let Children;
           let cloneElement;
           let items;
@@ -87,7 +87,7 @@ class Spoiler extends PureComponent {
             if (Array.isArray(style)) {
               flattenResult = closure_2_4.flatten(style);
             }
-            const obj = { children: Children.map(props.props.children, f109582), style: items, onPress: "Array" };
+            const obj = { children: Children.map(props.props.children, f109803), style: items, onPress: "r" };
             ({ Children, cloneElement } = tmp);
             items = [flattenResult, spoiler.spoiler];
             return cloneElement(props, obj);
@@ -117,7 +117,7 @@ class Spoiler extends PureComponent {
             mapped = type;
             if (!revealed) {
               const Children = tmp.Children;
-              mapped = Children.map(type, f109582);
+              mapped = Children.map(type, f109803);
             }
           }
           tmp9 = mapped;

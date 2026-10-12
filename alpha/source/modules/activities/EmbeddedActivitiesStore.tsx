@@ -1,7 +1,7 @@
 // Module ID: 2064
 // Function ID: 2065
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 2065, 2116, 1390, 2024, 6067, 1085, 6040, 6041, 4739, 10808, 14276, 1121, 10823, 584, 10480, 11716, 1382, 1998, 7246, 504, 2]
+// Dependencies: [32, 502, 2065, 2116, 1390, 2024, 6067, 1085, 6040, 6041, 4739, 10808, 14299, 1121, 10823, 584, 10481, 11718, 1382, 1998, 7247, 504, 2]
 
 // Module 2064 (EmbeddedActivitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,10 +11,10 @@ import Constants2 from "Constants" /* 2024 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
 import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 6040 */;
 import ContentClassificationReference from "ContentClassificationReference" /* 6041 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7246 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10480 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10481 */;
 import getURLForApplicationDefault from "getURLForApplication" /* 10808 */;
-import getPlatformDefault from "getPlatform" /* 11716 */;
+import getPlatformDefault from "getPlatform" /* 11718 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -29,7 +29,7 @@ let embeddedActivitiesForLocationIncludingHidden, importDefault, set3;
 let c10;
 let set1;
 let unpackModuleId;
-const f87168 = (item) => {
+const f87387 = (item) => {
   closure_1_34(item);
 };
 function participantFromServer(userId) {
@@ -741,7 +741,7 @@ const obj2 = {
     let item = guilds.forEach((activity_instances) => {
       activity_instances = activity_instances.activity_instances;
       if (activity_instances != null) {
-        const item = activity_instances.forEach(f87168);
+        const item = activity_instances.forEach(f87387);
       }
     });
     id = AuthenticationStore.getId();
@@ -771,7 +771,7 @@ const obj2 = {
   GUILD_CREATE: function handleGuildCreate(guild) {
     const activity_instances = guild.guild.activity_instances;
     if (activity_instances != null) {
-      const item = activity_instances.forEach(f87168);
+      const item = activity_instances.forEach(f87387);
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {

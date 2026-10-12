@@ -1,24 +1,24 @@
-// Module ID: 7406
-// Function ID: 7407
+// Module ID: 7407
+// Function ID: 7408
 // Name: AnalyticsActions
-// Dependencies: [5, 7407, 1370, 7390, 1085, 7183, 7409, 7386, 7410, 7412, 7415, 5979, 5107, 1265, 7416, 7364, 1382, 1279, 7421, 5975, 2]
+// Dependencies: [5, 7408, 1370, 7391, 1085, 7184, 7410, 7387, 7411, 7413, 7416, 5979, 5107, 1265, 7417, 7365, 1382, 1279, 7422, 5975, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7406 (AnalyticsActions)
+// Module 7407 (AnalyticsActions)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7183 */;
-import QuestDataUtils from "QuestDataUtils" /* 7386 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7409 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7410 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7412 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7415 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7184 */;
+import QuestDataUtils from "QuestDataUtils" /* 7387 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7410 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7411 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7407 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7408 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1370 */;
-import QuestStore from "QuestStore" /* 7390 */;
+import QuestStore from "QuestStore" /* 7391 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
@@ -232,7 +232,7 @@ let obj = function _getCommonClickEventProperties() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

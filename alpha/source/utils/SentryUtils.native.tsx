@@ -1,7 +1,7 @@
 // Module ID: 1255
 // Function ID: 1256
 // Name: SentryUtils
-// Dependencies: [17, 3, 1256, 686, 14369, 685, 1381, 2]
+// Dependencies: [17, 3, 1256, 686, 14392, 685, 1381, 2]
 
 // Module 1255 (SentryUtils)
 import LoggerDefault from "Logger" /* 3 */;
@@ -207,24 +207,24 @@ let obj = {
         getLastCrashReport = CrashReportingManager.getLastCrashReport;
       }
       if (null != getLastCrashReport) {
-        const lastCrashReport = CrashReportingManager.getLastCrashReport((timestamp) => {
+        const lastCrashReport = CrashReportingManager.getLastCrashReport((event_id) => {
           let tmp5;
-          function parseNativeCrashReport(timestamp) {
+          function parseNativeCrashReport(event_id) {
             let obj;
             let obj5;
             let str3;
             let tmp4;
             let result;
-            if (typeof timestamp.timestamp === "number") {
+            if (typeof event_id.timestamp === "number") {
               const _Number = Number;
-              if (!Number.isNaN(timestamp.timestamp)) {
-                result = timestamp.timestamp / 1000;
+              if (!Number.isNaN(event_id.timestamp)) {
+                result = event_id.timestamp / 1000;
               }
             }
-            let str = timestamp.level;
+            let str = event_id.level;
             if (str == null) {
               let str2 = "error";
-              if (timestamp.is_native) {
+              if (event_id.is_native) {
                 str2 = "fatal";
               }
               str = str2;
@@ -233,94 +233,94 @@ let obj = {
             if (str != null) {
               formatted = str.toLowerCase();
             }
-            obj = { type: "y", event_id: timestamp.event_id, timestamp: result, level: formatted, tags: tmp4, extra: Object.assign({}, obj.extra, obj5) };
-            const origin = timestamp.origin;
+            obj = { type: "y", event_id: event_id.event_id, timestamp: result, level: formatted, tags: tmp4, extra: Object.assign({}, obj.extra, obj5) };
+            const origin = event_id.origin;
             let tmp3 = typeof origin === "string";
             if (typeof origin === "string") {
               tmp3 = origin.length > 0;
             }
             tmp4 = undefined;
             if (tmp3) {
-              tmp4 = { "event.origin": timestamp.origin };
-              const obj2 = { "event.origin": timestamp.origin };
+              tmp4 = { "event.origin": event_id.origin };
+              const obj2 = { "event.origin": event_id.origin };
             }
-            const error_message = timestamp.error_message;
+            const error_message = event_id.error_message;
             let tmp5 = typeof error_message === "string";
             if (typeof error_message === "string") {
               tmp5 = error_message.length > 0;
             }
             obj5 = { native_is_native: str3 };
             if (tmp5) {
-              ({ error_message: obj.message, error_message: obj3.persisted_error_message } = timestamp);
+              ({ error_message: obj.message, error_message: obj3.persisted_error_message } = event_id);
             }
-            const error_stack = timestamp.error_stack;
+            const error_stack = event_id.error_stack;
             let tmp6 = typeof error_stack === "string";
             if (typeof error_stack === "string") {
               tmp6 = error_stack.length > 0;
             }
             if (tmp6) {
-              obj5.persisted_error_stack = timestamp.error_stack;
+              obj5.persisted_error_stack = event_id.error_stack;
             }
-            if (timestamp.is_native) {
-              const exit_reason = timestamp.exit_reason;
+            if (event_id.is_native) {
+              const exit_reason = event_id.exit_reason;
               let tmp7 = typeof exit_reason === "string";
               if (typeof exit_reason === "string") {
                 tmp7 = exit_reason.length > 0;
               }
               if (tmp7) {
-                obj5.native_exit_reason = timestamp.exit_reason;
+                obj5.native_exit_reason = event_id.exit_reason;
               }
-              const exit_description = timestamp.exit_description;
+              const exit_description = event_id.exit_description;
               let tmp8 = typeof exit_description === "string";
               if (typeof exit_description === "string") {
                 tmp8 = exit_description.length > 0;
               }
               if (tmp8) {
-                obj5.native_exit_description = timestamp.exit_description;
+                obj5.native_exit_description = event_id.exit_description;
               }
-              const tombstone = timestamp.tombstone;
+              const tombstone = event_id.tombstone;
               let tmp9 = typeof tombstone === "string";
               if (typeof tombstone === "string") {
                 tmp9 = tombstone.length > 0;
               }
               if (tmp9) {
-                obj5.native_tombstone = timestamp.tombstone;
+                obj5.native_tombstone = event_id.tombstone;
               }
-              const tombstone_cause = timestamp.tombstone_cause;
+              const tombstone_cause = event_id.tombstone_cause;
               let tmp10 = typeof tombstone_cause === "string";
               if (typeof tombstone_cause === "string") {
                 tmp10 = tombstone_cause.length > 0;
               }
               if (tmp10) {
-                obj5.native_tombstone_cause = timestamp.tombstone_cause;
+                obj5.native_tombstone_cause = event_id.tombstone_cause;
               }
-              const tombstone_hash = timestamp.tombstone_hash;
+              const tombstone_hash = event_id.tombstone_hash;
               let tmp11 = typeof tombstone_hash === "string";
               if (typeof tombstone_hash === "string") {
                 tmp11 = tombstone_hash.length > 0;
               }
               if (tmp11) {
-                obj5.native_tombstone_hash = timestamp.tombstone_hash;
+                obj5.native_tombstone_hash = event_id.tombstone_hash;
               }
-              const tombstone_group_by = timestamp.tombstone_group_by;
+              const tombstone_group_by = event_id.tombstone_group_by;
               let tmp12 = typeof tombstone_group_by === "string";
               if (typeof tombstone_group_by === "string") {
                 tmp12 = tombstone_group_by.length > 0;
               }
               if (tmp12) {
-                obj5.native_tombstone_group_by = timestamp.tombstone_group_by;
+                obj5.native_tombstone_group_by = event_id.tombstone_group_by;
               }
-              const tombstone_origin = timestamp.tombstone_origin;
+              const tombstone_origin = event_id.tombstone_origin;
               let tmp13 = typeof tombstone_origin === "string";
               if (typeof tombstone_origin === "string") {
                 tmp13 = tombstone_origin.length > 0;
               }
               if (tmp13) {
-                obj5.native_tombstone_origin = timestamp.tombstone_origin;
+                obj5.native_tombstone_origin = event_id.tombstone_origin;
               }
             }
             str3 = "false";
-            if (timestamp.is_native) {
+            if (event_id.is_native) {
               str3 = "true";
             }
             return obj;
@@ -328,8 +328,8 @@ let obj = {
           try {
             let tmp3 = null;
             const tmp2 = closure_0;
-            if (null != timestamp) {
-              tmp3 = parseNativeCrashReport(timestamp);
+            if (null != event_id) {
+              tmp3 = parseNativeCrashReport(event_id);
             }
             tmp2(tmp3);
           } catch (tmp5) {

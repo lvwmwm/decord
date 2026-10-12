@@ -1,20 +1,20 @@
-// Module ID: 18124
-// Function ID: 18125
+// Module ID: 18182
+// Function ID: 18183
 // Name: AddAvatarModalActionCreators
-// Dependencies: [18125, 1085, 1265, 6670, 5299, 1126, 8288, 8290, 5934, 18126, 2000, 12427, 2]
+// Dependencies: [18183, 1085, 1265, 6671, 5299, 1126, 8289, 8291, 5934, 18184, 2000, 12429, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 18124 (AddAvatarModalActionCreators)
+// Module 18182 (AddAvatarModalActionCreators)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6670 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8288 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8290 */;
-import NUFActionCreators from "NUFActionCreators" /* 12427 */;
-import AddAvatarModalConstants from "AddAvatarModalConstants" /* 18125 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6671 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8289 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8291 */;
+import NUFActionCreators from "NUFActionCreators" /* 12429 */;
+import AddAvatarModalConstants from "AddAvatarModalConstants" /* 18183 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,5 +83,5 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
   const obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(18126, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  obj.pushLazy(asyncRequire(18184, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

@@ -1,9 +1,9 @@
-// Module ID: 13158
-// Function ID: 13159
+// Module ID: 13163
+// Function ID: 13164
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 5897, 502, 21, 4850, 5379, 5092, 587, 558, 576, 11174, 5900, 504, 5093, 6761, 6156, 5088, 1126, 2]
+// Dependencies: [19, 17, 5897, 502, 21, 4850, 5379, 5092, 587, 558, 576, 11174, 5900, 504, 5093, 6762, 6157, 5088, 1126, 2]
 
-// Module 13158 (VoicePanelStreamPreview)
+// Module 13163 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5093 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
@@ -183,7 +183,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSt
                   }
                 }
                 const obj4 = { style: animatedStyle, layout, children: tmp23 };
-                const tmp30 = closure_7(stream(6761), obj4);
+                const tmp30 = closure_7(stream(6762), obj4);
                 cResult[15] = animatedStyle;
                 cResult[16] = layout;
                 cResult[17] = tmp23;
@@ -217,10 +217,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSt
   }
   let tmp19 = null;
   if (null != previewUrl) {
-    const obj8 = { layout, style: tmp4.streamPreviewImage, children: closure_7(stream(6156), obj9) };
+    const obj8 = { layout, style: tmp4.streamPreviewImage, children: closure_7(stream(6157), obj9) };
     obj9 = { source: obj10, style: closure_3.absoluteFill, resizeMode: "cover" };
     obj10 = { uri: previewUrl };
-    const tmp5Result = stream(6761);
+    const tmp5Result = stream(6762);
     tmp19 = closure_7(tmp5Result, obj8);
   }
   cResult[4] = layout;
@@ -303,15 +303,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSt
   }
   let tmp14 = null;
   if (null != previewUrl) {
-    const obj5 = { layout, style: tmp.streamPreviewImage, children: closure_7(tmp2(6156), obj6) };
+    const obj5 = { layout, style: tmp.streamPreviewImage, children: closure_7(tmp2(6157), obj6) };
     obj6 = { source: obj7, style: closure_3.absoluteFill, resizeMode: "cover" };
     obj7 = { uri: previewUrl };
-    const tmp2Result = tmp2(6761);
+    const tmp2Result = tmp2(6762);
     tmp14 = closure_7(tmp2Result, obj5);
   }
   items2 = [tmp14, ];
   const obj8 = { style: animatedStyle, layout, children: tmp18Result };
-  const tmp2Result2 = tmp2(6761);
+  const tmp2Result2 = tmp2(6762);
   if (stateFromStores) {
     const obj9 = { style: tmp.ownStreamTextContainer, children: closure_7(Text, obj10) };
     obj10 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(mode(1126).t["ro/HN8"]) };

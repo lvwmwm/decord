@@ -1,7 +1,7 @@
 // Module ID: 10824
 // Function ID: 10825
 // Name: transitionToActivity
-// Dependencies: [10353, 2064, 6067, 10354, 4739, 4976, 10825, 10480, 11338, 5106, 6038, 5056, 10853, 2]
+// Dependencies: [10354, 2064, 6067, 10355, 4739, 4976, 10825, 10481, 11338, 5106, 6038, 5056, 10853, 2]
 // Exports: default
 
 // Module 10824 (transitionToActivity)
@@ -11,9 +11,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import ChannelCallStore from "ChannelCallStore" /* 10353 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10354 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10480 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10355 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10481 */;
 import ChannelCallModalDefault from "ChannelCallModal" /* 10825 */;
 import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10853 */;
 import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 11338 */;
@@ -25,9 +25,9 @@ const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const VoiceChatDrawerState = ChannelCallConstants.VoiceChatDrawerState;
 let result = size.fileFinishedImporting("modules/activities/utils/transitionToActivity.native.tsx");
 
-export default function transitionToActivity(arg0, connectedActivityLocation) {
+export default function transitionToActivity(arg0, location) {
   const obj = embeddedActivityLocationUtils;
-  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(location);
   if (null != embeddedActivityLocationChannelId) {
     const tmpResult = NavigationRouteUtils;
     const isModalOpenResult = tmpResult.isModalOpen(ChannelCallModalDefault);
@@ -35,7 +35,7 @@ export default function transitionToActivity(arg0, connectedActivityLocation) {
     if (tmp4) {
       openChannelCallModalForChannelIdDefault(embeddedActivityLocationChannelId);
     }
-    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
+    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(location);
     if (null != selfEmbeddedActivityForLocation) {
       if (isVoiceEmbeddedActivityDefault(embeddedActivityLocationChannelId)) {
         const selectParticipant = ChannelRTCActionCreatorsDefault.selectParticipant;

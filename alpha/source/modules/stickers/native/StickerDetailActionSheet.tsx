@@ -1,9 +1,9 @@
-// Module ID: 9778
-// Function ID: 9779
+// Module ID: 9779
+// Function ID: 9780
 // Name: StickerDetailActionSheet
-// Dependencies: [5, 32, 19, 17, 2087, 1390, 6030, 9727, 1085, 6840, 21, 5092, 1382, 587, 558, 576, 9757, 9552, 9550, 5056, 9758, 4809, 1126, 504, 1497, 1265, 5088, 9772, 5379, 9777, 9759, 9765, 4769, 6884, 2041, 5749, 9779, 2000, 5107, 6097, 6919, 9780, 7093, 9773, 9241, 9781, 9782, 8579, 9556, 6839, 2]
+// Dependencies: [5, 32, 19, 17, 2087, 1390, 6030, 9728, 1085, 6841, 21, 5092, 1382, 587, 558, 576, 9758, 9553, 9551, 5056, 9759, 4809, 1126, 504, 1497, 1265, 5088, 9773, 5379, 9778, 9760, 9766, 4769, 6885, 2041, 5749, 9780, 2000, 5107, 6098, 6920, 9781, 7094, 9774, 9242, 9782, 9783, 8580, 9557, 6840, 2]
 
-// Module 9778 (StickerDetailActionSheet)
+// Module 9779 (StickerDetailActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -12,18 +12,18 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import StickersUtils from "StickersUtils" /* 5749 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6840 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6919 */;
-import openUserSettings from "openUserSettings" /* 7093 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9550 */;
-import StarIcon from "StarIcon" /* 9552 */;
-import StickersHooks from "StickersHooks" /* 9757 */;
-import StickersActionCreators from "StickersActionCreators" /* 9758 */;
-import stickers_StickersUtils from "stickers/StickersUtils" /* 9759 */;
-import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 9765 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 9777 */;
-import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 9782 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6920 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9551 */;
+import StarIcon from "StarIcon" /* 9553 */;
+import StickersHooks from "StickersHooks" /* 9758 */;
+import StickersActionCreators from "StickersActionCreators" /* 9759 */;
+import stickers_StickersUtils from "stickers/StickersUtils" /* 9760 */;
+import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 9766 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 9778 */;
+import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 9783 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -31,7 +31,7 @@ import react_native from "react-native" /* 17 */;
 import GuildStore_mod from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
 import StickersStore from "StickersStore" /* 6030 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9727 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9728 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -104,7 +104,7 @@ function UnavailableStickerDetail(arg0) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(9779, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(9780, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   items2 = [closure_21(tmp3(tmp4[43]), { sticker: renderableSticker, size: 48 }), , ];
@@ -201,9 +201,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSti
         }
         const tmp8 = closure_21;
         if (arg0) {
-          StarOutlineIcon = tmp9(9552).StarIcon;
+          StarOutlineIcon = tmp9(9553).StarIcon;
         } else {
-          StarOutlineIcon = tmp9(9550).StarOutlineIcon;
+          StarOutlineIcon = tmp9(9551).StarOutlineIcon;
         }
         return tmp8(StarOutlineIcon, { style });
       };
@@ -340,9 +340,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSti
     }
     const tmp8 = closure_21;
     if (arg0) {
-      StarOutlineIcon = tmp9(9552).StarIcon;
+      StarOutlineIcon = tmp9(9553).StarIcon;
     } else {
-      StarOutlineIcon = tmp9(9550).StarOutlineIcon;
+      StarOutlineIcon = tmp9(9551).StarOutlineIcon;
     }
     return tmp8(StarOutlineIcon, { style });
   }, items);
@@ -755,7 +755,7 @@ function GuildStickerDetail(sticker) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(9779, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(9780, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   analyticsLocation = obj.useMemo(() => {
@@ -790,7 +790,7 @@ function GuildStickerDetail(sticker) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -824,7 +824,7 @@ function GuildStickerDetail(sticker) {
               c3(id);
               closure_1_5(true);
               c3 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp15) {
             c3 = 3;
@@ -1084,7 +1084,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const obj4 = { startExpanded: true, children: closure_21(metroRequire, obj5) };
     obj5 = { style: tmp4.content, children: tmp12 };
-    BottomSheet = tmp(6839).BottomSheet;
+    BottomSheet = tmp(6840).BottomSheet;
     const tmp28 = closure_21(BottomSheet, obj4);
     cResult[11] = tmp12;
     cResult[12] = tmp4.content;
@@ -1151,7 +1151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const obj3 = { startExpanded: true, children: closure_21(metroRequire, obj4) };
     obj4 = { style: tmp.content, children: tmp7Result };
-    BottomSheet = tmp2(6839).BottomSheet;
+    BottomSheet = tmp2(6840).BottomSheet;
     return closure_21(BottomSheet, obj3);
   }
   tmp7Result = tmp7Result2;

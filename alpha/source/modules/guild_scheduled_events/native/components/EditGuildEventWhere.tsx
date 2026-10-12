@@ -1,17 +1,17 @@
-// Module ID: 8573
-// Function ID: 8574
+// Module ID: 8574
+// Function ID: 8575
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 2065, 4750, 6054, 2071, 1085, 21, 5092, 1126, 8523, 558, 576, 504, 1503, 1894, 8519, 4828, 4702, 8574, 8540, 5088, 5379, 8635, 8636, 8637, 8538, 2]
+// Dependencies: [32, 19, 2065, 4750, 6054, 2071, 1085, 21, 5092, 1126, 8524, 558, 576, 504, 1503, 1894, 8520, 4828, 4702, 8575, 8541, 5088, 5379, 8636, 8637, 8638, 8539, 2]
 
-// Module 8573 (EditGuildEventWhere)
+// Module 8574 (EditGuildEventWhere)
 import intl5 from "intl" /* 1126 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8519 */;
-import EntityUtils from "EntityUtils" /* 8523 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8520 */;
+import EntityUtils from "EntityUtils" /* 8524 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -256,7 +256,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     }
     function handleChangeEventEntityType(entityType) {
       _slicedToArray(null);
-      const obj = { entityType, scheduledEndTime: "Array" };
+      const obj = { entityType, scheduledEndTime: "r" };
       if (entityType === constants.EXTERNAL) {
         let obj2 = _modDef4702(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;
@@ -412,7 +412,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     entityType: guildEvent.entityType,
     onChange: function handleChangeEventEntityType(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "Array" };
+      const obj = { entityType, scheduledEndTime: "r" };
       if (entityType === constants.EXTERNAL) {
         let obj2 = _modDef4702(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;

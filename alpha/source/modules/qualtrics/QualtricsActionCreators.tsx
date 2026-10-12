@@ -1,18 +1,18 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 7471
+// Function ID: 7472
 // Name: QualtricsActionCreators
-// Dependencies: [32, 5, 7471, 7473, 7474, 7475, 1085, 1295, 584, 1255, 7476, 2]
+// Dependencies: [32, 5, 7472, 7474, 7475, 7476, 1085, 1295, 584, 1255, 7477, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 7470 (QualtricsActionCreators)
+// Module 7471 (QualtricsActionCreators)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import QualtricsResponseStore from "QualtricsResponseStore" /* 7473 */;
+import QualtricsResponseStore from "QualtricsResponseStore" /* 7474 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SurveyStore from "SurveyStore" /* 7471 */;
-import QualtricsStore from "QualtricsStore" /* 7474 */;
-import QualtricsConstants from "QualtricsConstants" /* 7475 */;
+import SurveyStore from "SurveyStore" /* 7472 */;
+import QualtricsStore from "QualtricsStore" /* 7475 */;
+import QualtricsConstants from "QualtricsConstants" /* 7476 */;
 import size from "module_2" /* 2 */;
 
 let c8, closure_3, force_survey_id, state;
@@ -37,7 +37,7 @@ let obj = function _fetchSurveyDetails() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ obj = function _submitSurveyResponse() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -334,7 +334,7 @@ obj = function _fireSurveyAction() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -393,7 +393,7 @@ obj = function _fireSurveyAction() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           if (0 === c5) {
             c7 = 3;

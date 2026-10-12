@@ -1,11 +1,11 @@
-// Module ID: 8997
-// Function ID: 8998
+// Module ID: 8998
+// Function ID: 8999
 // Name: useSlayerStorefrontDevApplicationIdOverride
-// Dependencies: [8998, 558, 576, 2]
+// Dependencies: [8999, 558, 576, 2]
 
-// Module 8997 (useSlayerStorefrontDevApplicationIdOverride)
+// Module 8998 (useSlayerStorefrontDevApplicationIdOverride)
 import react from "react" /* 576 */;
-import useSlayerStorefrontDevOverrideStore from "useSlayerStorefrontDevOverrideStore" /* 8998 */;
+import useSlayerStorefrontDevOverrideStore from "useSlayerStorefrontDevOverrideStore" /* 8999 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

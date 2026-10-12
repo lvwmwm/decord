@@ -1,12 +1,12 @@
-// Module ID: 13538
-// Function ID: 13539
+// Module ID: 13561
+// Function ID: 13562
 // Name: InAppReportsGuildScheduledEventPreview
-// Dependencies: [19, 17, 2087, 21, 5092, 587, 558, 576, 504, 4967, 1126, 5088, 6158, 2]
+// Dependencies: [19, 17, 2087, 21, 5092, 587, 558, 576, 504, 4967, 1126, 5088, 6159, 2]
 
-// Module 13538 (InAppReportsGuildScheduledEventPreview)
+// Module 13561 (InAppReportsGuildScheduledEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildIconDefault from "GuildIcon" /* 6158 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -107,7 +107,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
         tmp17 = cResult[12];
       }
       if (cResult[13] !== stateFromStores) {
-        const obj4 = { guild: stateFromStores, size: event(6158).GuildIconSizes.XXSMALL, selected: false };
+        const obj4 = { guild: stateFromStores, size: event(6159).GuildIconSizes.XXSMALL, selected: false };
         const tmp21 = GuildIconDefault;
         const tmp22 = closure_5(tmp21, obj4);
         cResult[13] = stateFromStores;
@@ -222,7 +222,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSched
     const obj5 = { borderColor: hexWithOpacityResult };
     items2[1] = obj5;
     const obj6 = { style: tmp.guildInfo, children: items3 };
-    const obj7 = { guild: stateFromStores, size: event(6158).GuildIconSizes.XXSMALL, selected: false };
+    const obj7 = { guild: stateFromStores, size: event(6159).GuildIconSizes.XXSMALL, selected: false };
     const tmp10 = GuildIconDefault;
     items3 = [closure_5(tmp10, obj7), ];
     const obj8 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };

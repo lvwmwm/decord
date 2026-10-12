@@ -1,16 +1,16 @@
-// Module ID: 9063
-// Function ID: 9064
+// Module ID: 9064
+// Function ID: 9065
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 6087, 1085, 3, 584, 1295, 5635, 9064, 1255, 2]
+// Dependencies: [5, 6088, 1085, 3, 584, 1295, 5635, 9065, 1255, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9063 (VirtualCurrencyActionCreators)
+// Module 9064 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6087 */;
+import SKUStore from "SKUStore" /* 6088 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, checkout_session_id, closure_2, skuId;
@@ -104,7 +104,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -205,7 +205,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               tmp62(billingError);
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

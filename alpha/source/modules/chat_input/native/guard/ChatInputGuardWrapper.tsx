@@ -1,20 +1,20 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12153
+// Function ID: 12154
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4751, 2069, 2125, 2087, 5891, 4760, 1390, 11634, 1085, 6731, 21, 504, 6170, 4737, 4756, 12152, 12153, 10384, 10383, 12154, 12155, 5107, 7017, 5934, 6730, 2000, 6733, 6197, 10719, 12157, 12158, 12167, 12166, 5046, 1126, 12169, 12172, 12173, 12189, 12193, 12194, 12197, 12198, 8679, 12200, 2]
+// Dependencies: [19, 4751, 2069, 2125, 2087, 5891, 4760, 1390, 11636, 1085, 6732, 21, 504, 6171, 4737, 4756, 12154, 12155, 10385, 10384, 12156, 12157, 5107, 7018, 5934, 6731, 2000, 6734, 6198, 10719, 12159, 12160, 12169, 12168, 5046, 1126, 12171, 12174, 12175, 12191, 12195, 12196, 12199, 12200, 8680, 12202, 2]
 // Exports: default
 
-// Module 12151 (ChatInputGuardWrapper)
+// Module 12153 (ChatInputGuardWrapper)
 import Fragment from "Fragment" /* 21 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4737 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import MemberVerificationUtils from "MemberVerificationUtils" /* 6170 */;
-import PhoneConstants from "PhoneConstants" /* 6731 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7017 */;
+import MemberVerificationUtils from "MemberVerificationUtils" /* 6171 */;
+import PhoneConstants from "PhoneConstants" /* 6732 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
 import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 10719 */;
-import ChatInputConstants from "ChatInputConstants" /* 11634 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 12157 */;
+import ChatInputConstants from "ChatInputConstants" /* 11636 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 12159 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;

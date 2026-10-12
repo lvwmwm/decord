@@ -1,17 +1,17 @@
-// Module ID: 8646
-// Function ID: 8647
+// Module ID: 8647
+// Function ID: 8648
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 6054, 2071, 21, 5092, 1126, 558, 576, 4702, 8520, 1503, 1894, 8519, 4828, 5088, 5379, 8635, 8540, 8538, 2]
+// Dependencies: [32, 19, 6054, 2071, 21, 5092, 1126, 558, 576, 4702, 8521, 1503, 1894, 8520, 4828, 5088, 5379, 8636, 8541, 8539, 2]
 
-// Module 8646 (EditGuildEventDetails)
+// Module 8647 (EditGuildEventDetails)
 import intl8 from "intl" /* 1126 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8519 */;
-import ScheduleUtils from "ScheduleUtils" /* 8520 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8520 */;
+import ScheduleUtils from "ScheduleUtils" /* 8521 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -538,7 +538,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f98983 = () => {
+  const f99202 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef4702(scheduledStartTime), recurrenceRule);
   };
@@ -568,8 +568,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     }
     return addResult;
   }, items1);
-  [c7, c8] = recurrenceRule(memo.useState(f98983), 2);
-  const tmp4 = recurrenceRule(memo.useState(f98983), 2);
+  [c7, c8] = recurrenceRule(memo.useState(f99202), 2);
+  const tmp4 = recurrenceRule(memo.useState(f99202), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[9])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {

@@ -1,13 +1,13 @@
-// Module ID: 12572
-// Function ID: 12573
+// Module ID: 12574
+// Function ID: 12575
 // Name: setUserStatus
-// Dependencies: [5, 6804, 5759, 1085, 4962, 1126, 12573, 2046, 1240, 4970, 1265, 2]
+// Dependencies: [5, 6805, 5759, 1085, 4962, 1126, 12575, 2046, 1240, 4970, 1265, 2]
 // Exports: default
 
-// Module 12572 (setUserStatus)
+// Module 12574 (setUserStatus)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6804 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 6805 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import size from "module_2" /* 2 */;
 

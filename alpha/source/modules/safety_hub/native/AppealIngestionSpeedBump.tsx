@@ -1,17 +1,17 @@
-// Module ID: 11478
-// Function ID: 11479
+// Module ID: 11480
+// Function ID: 11481
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 7536, 7512, 1085, 21, 5092, 558, 576, 504, 11471, 11479, 1126, 11477, 11480, 11496, 11497, 5088, 2]
+// Dependencies: [19, 17, 7537, 7513, 1085, 21, 5092, 558, 576, 504, 11473, 11481, 1126, 11479, 11482, 11498, 11499, 5088, 2]
 
-// Module 11478 (AppealIngestionSpeedBump)
+// Module 11480 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11480 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11496 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11497 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11482 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11498 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11499 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7536 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
+import SafetyHubStore from "SafetyHubStore" /* 7537 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -70,13 +70,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   const tmpResult = emitAppealIngestionEvent(504);
   let stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const useSafetyHubClassification = emitAppealIngestionEvent(11471).useSafetyHubClassification;
-  emitAppealIngestionEvent(11471);
+  const useSafetyHubClassification = emitAppealIngestionEvent(11473).useSafetyHubClassification;
+  emitAppealIngestionEvent(11473);
   if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = useSafetyHubClassification(stateFromStores);
-  const tmpResult4 = emitAppealIngestionEvent(11479);
+  const tmpResult4 = emitAppealIngestionEvent(11481);
   emitAppealIngestionEvent = tmpResult4.useEmitAppealIngestionEvent();
   ({ isDsaEligible, classification } = safetyHubClassification);
   let str;
@@ -130,7 +130,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { headerText: tmp15, subHeaderText: tmp17 };
-    const tmp21 = closure_8(emitAppealIngestionEvent(11477).AppealIngestionModalHeader, obj2);
+    const tmp21 = closure_8(emitAppealIngestionEvent(11479).AppealIngestionModalHeader, obj2);
     cResult[6] = tmp21;
     tmp19 = tmp21;
   } else {
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
               items1 = [tmp19, ];
               const obj7 = { style: tmp4.container, children: items2 };
               items2 = [tmp22, tmp26, tmp30, tmp36, tmp42, tmp48, tmp53];
-              const AppealIngestionModalScreen = tmp(11477).AppealIngestionModalScreen;
+              const AppealIngestionModalScreen = tmp(11479).AppealIngestionModalScreen;
               items1[1] = closure_9(View, obj7);
               const tmp59 = closure_9(AppealIngestionModalScreen, obj6);
               cResult[27] = tmp4.container;
@@ -354,7 +354,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   const stringResult = intl.string(require("intl").t["C5q+pW"]);
   const intl2 = tmp2(1126).intl;
   const stringResult1 = intl2.string(require("intl").t.URt7VI);
-  const AppealIngestionModalScreen = tmp2(11477).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(11479).AppealIngestionModalScreen;
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let tmp10Result = flagged_content.length > 0;
   const obj2 = { style: tmp.container, children: items2 };

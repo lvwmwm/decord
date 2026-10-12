@@ -1,9 +1,9 @@
-// Module ID: 12380
-// Function ID: 12381
+// Module ID: 12382
+// Function ID: 12383
 // Name: useChatPlaceholderAnimatedStyles
 // Dependencies: [5081, 1200, 558, 576, 504, 4850, 5093, 5096, 2]
 
-// Module 12380 (useChatPlaceholderAnimatedStyles)
+// Module 12382 (useChatPlaceholderAnimatedStyles)
 import native from "native" /* 1200 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;

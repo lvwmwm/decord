@@ -1,27 +1,27 @@
-// Module ID: 15343
-// Function ID: 15344
+// Module ID: 15366
+// Function ID: 15367
 // Name: QuestHooks
-// Dependencies: [5, 19, 4802, 5440, 7389, 7390, 5972, 5735, 10802, 1096, 558, 15344, 15372, 5975, 576, 6072, 4976, 5979, 504, 15354, 6626, 7386, 9170, 9165, 9184, 7412, 6851, 10803, 7410, 10921, 6852, 10804, 11612, 2]
+// Dependencies: [5, 19, 4802, 5440, 7390, 7391, 5972, 5735, 10802, 1096, 558, 15367, 15395, 5975, 576, 6072, 4976, 5979, 504, 15377, 6627, 7387, 9171, 9166, 9185, 7413, 6852, 10803, 7411, 10921, 6853, 10804, 11614, 2]
 // Exports: useMobileQuestDock
 
-// Module 15343 (QuestHooks)
+// Module 15366 (QuestHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
 import CaptchaConstants from "CaptchaConstants" /* 5735 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6626 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6852 */;
-import AssetUtils from "AssetUtils" /* 9184 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
+import AssetUtils from "AssetUtils" /* 9185 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
-import QuestDockHooks from "QuestDockHooks" /* 15344 */;
-import useQuestForPlacement from "useQuestForPlacement" /* 15372 */;
+import QuestDockHooks from "QuestDockHooks" /* 15367 */;
+import useQuestForPlacement from "useQuestForPlacement" /* 15395 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore_mod from "ActionSheetStore" /* 4802 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import BountyStore from "BountyStore" /* 7389 */;
-import QuestStore from "QuestStore" /* 7390 */;
+import BountyStore from "BountyStore" /* 7390 */;
+import QuestStore from "QuestStore" /* 7391 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let _require, importDefault, key;
 let c10;
 let c9;
 let tmp;
-const QuestTaskUtils = tmp(7412);
+const QuestTaskUtils = tmp(7413);
 let react = react_mod;
 let ActionSheetStore = ActionSheetStore_mod;
 ({ QUEST_REWARD_CODE_CLAIM_BOTTOM_SHEET_KEY: c9, QuestVariants: c10 } = QuestConstants);
@@ -230,7 +230,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileQ
   }
   let isDismissedResult = null != userStatus1;
   if (isDismissedResult) {
-    const tmpResult7 = tmp(7386);
+    const tmpResult7 = tmp(7387);
     isDismissedResult = tmpResult7.isDismissed(questDockQuest.userStatus, tmp(5975).QuestContent.QUEST_BAR_MOBILE);
   }
   if (questDockQuest != null) {
@@ -239,15 +239,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileQ
       const claimedAt = userStatus.claimedAt;
     }
   }
-  const tmpResult8 = tmp(9170);
+  const tmpResult8 = tmp(9171);
   const isQuestExpired = tmpResult8.useIsQuestExpired(questDockQuest);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult9 = tmp(9165);
+    const tmpResult9 = tmp(9166);
     const isEligibleForQuests = tmpResult9.getIsEligibleForQuests();
     cResult[3] = isEligibleForQuests;
   }
   if (cResult[4] !== bounty) {
-    const tmpResult10 = tmp(15354);
+    const tmpResult10 = tmp(15377);
     const questDockAdCreativeId = tmpResult10.getQuestDockAdCreativeId(bounty);
     cResult[4] = bounty;
     cResult[5] = questDockAdCreativeId;
@@ -372,7 +372,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileQ
   let tmp = _require;
   const obj = require("AdCreativeUtils");
   const questDockQuest = obj.getQuestDockQuest(type);
-  const tmp4 = questDockAdCreativeId(6626)();
+  const tmp4 = questDockAdCreativeId(6627)();
   const items = [QuestStore];
   let userStatus1;
   const obj2 = require("get initialized");
@@ -383,7 +383,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileQ
   }
   let isDismissedResult = null != userStatus1;
   if (isDismissedResult) {
-    const tmpResult = tmp(7386);
+    const tmpResult = tmp(7387);
     isDismissedResult = tmpResult.isDismissed(questDockQuest.userStatus, tmp(5975).QuestContent.QUEST_BAR_MOBILE);
   }
   let claimedAt;
@@ -393,11 +393,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileQ
       claimedAt = userStatus.claimedAt;
     }
   }
-  const tmpResult6 = tmp(9170);
+  const tmpResult6 = tmp(9171);
   const isQuestExpired = tmpResult6.useIsQuestExpired(questDockQuest);
-  const tmpResult7 = tmp(9165);
+  const tmpResult7 = tmp(9166);
   let isEligibleForQuests = tmpResult7.getIsEligibleForQuests();
-  const tmpResult8 = tmp(15354);
+  const tmpResult8 = tmp(15377);
   questDockAdCreativeId = tmpResult8.getQuestDockAdCreativeId(type);
   const items1 = [tmp5];
   const items2 = [questDockAdCreativeId];
@@ -469,7 +469,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestGame
   const cResult = obj.c(2);
   if (cResult[0] !== quest) {
     const tmpResult = AssetUtils;
-    const questAsset = tmpResult.getQuestAsset(quest, tmp(9184).QuestAssetType.LOGO_TYPE, ThemeTypes.DARK);
+    const questAsset = tmpResult.getQuestAsset(quest, tmp(9185).QuestAssetType.LOGO_TYPE, ThemeTypes.DARK);
     cResult[0] = quest;
     cResult[1] = questAsset;
     tmp4 = questAsset;
@@ -493,7 +493,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDoc
   const cResult = obj.c(9);
   if (cResult[0] !== config) {
     const tmpResult = AssetUtils;
-    const questAsset = tmpResult.getQuestAsset(config, tmp(9184).QuestAssetType.QUEST_BAR_HERO);
+    const questAsset = tmpResult.getQuestAsset(config, tmp(9185).QuestAssetType.QUEST_BAR_HERO);
     if (cResult[3] === config.config.assets.questBarHeroVideo) {
       let tmp7;
       let replaced;
@@ -501,7 +501,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDoc
         tmp7 = cResult[5];
       }
       if (questAsset.isAnimated) {
-        replaced = str.replace(tmp(9184).EXTENSION_RE, ".png");
+        replaced = str.replace(tmp(9185).EXTENSION_RE, ".png");
       } else {
         replaced = str;
       }
@@ -549,7 +549,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDoc
       videoAsset = tmpResult.resolveAsset(tmp3.id, tmp3.config.assets.questBarHeroVideo);
     }
     if (questAsset.isAnimated) {
-      staticUrl = str.replace(tmp(9184).EXTENSION_RE, ".png");
+      staticUrl = str.replace(tmp(9185).EXTENSION_RE, ".png");
     } else {
       staticUrl = str;
     }
@@ -823,7 +823,7 @@ const tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobile
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -885,7 +885,7 @@ const tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobile
             return obj;
           }
           config = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp15) {
           config = 3;
           throw tmp15;

@@ -1,10 +1,10 @@
-// Module ID: 12628
-// Function ID: 12629
+// Module ID: 12630
+// Function ID: 12631
 // Name: DebugUploadManager
-// Dependencies: [5, 2065, 3, 17, 5635, 5289, 12629, 12630, 7, 12631, 12632, 562, 4983, 12633, 12634, 12635, 12636, 2]
+// Dependencies: [5, 2065, 3, 17, 5635, 5289, 12631, 12632, 7, 12633, 12634, 562, 4983, 12635, 12636, 12637, 12638, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 12628 (DebugUploadManager)
+// Module 12630 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;
@@ -43,7 +43,7 @@ let obj = function _uploadDebugLogFiles() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -111,7 +111,7 @@ let obj = function _uploadDebugLogFiles() {
         } else {
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp36) {
         closure_4 = tmp36;
@@ -155,7 +155,7 @@ obj = function _uploadAppLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp80;
@@ -314,7 +314,7 @@ obj = function _uploadAppLogFiles() {
               return obj13;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
           c5 = 3;
           appFirstVisibleTimestamp = closure_131_8;

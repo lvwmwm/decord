@@ -1,10 +1,10 @@
-// Module ID: 13827
-// Function ID: 13828
+// Module ID: 13850
+// Function ID: 13851
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 5969, 558, 576, 6838, 1126, 5079, 6839, 5088, 5031, 9156, 13828, 5300, 13829, 2000, 9157, 6156, 5379, 5056, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 5969, 558, 576, 6839, 1126, 5079, 6840, 5088, 5031, 9157, 13851, 5300, 13852, 2000, 9158, 6157, 5379, 5056, 2]
 // Exports: default
 
-// Module 13827 (OutboundPromotionCard)
+// Module 13850 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,8 +15,8 @@ import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import LegacyTokens from "LegacyTokens" /* 5969 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,7 +50,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsAn
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t.PdKWVT) };
-    const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp7 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
@@ -76,7 +76,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsAn
     return tmp11;
   }
   const obj4 = { header: first, children: metroRequire(Text_Text.Text, { style: termsAndConditionsText, variant: "text-sm/medium", children: tmp8 }) };
-  BottomSheet = tmp(6839).BottomSheet;
+  BottomSheet = tmp(6840).BottomSheet;
   const tmp12 = metroRequire(BottomSheet, obj4);
   cResult[3] = tmp4.termsAndConditionsText;
   cResult[4] = tmp8;

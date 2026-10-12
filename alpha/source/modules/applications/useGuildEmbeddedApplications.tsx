@@ -1,13 +1,13 @@
-// Module ID: 8609
-// Function ID: 8610
+// Module ID: 8610
+// Function ID: 8611
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 5440, 1085, 504, 1102, 1388, 6852, 558, 576, 2]
+// Dependencies: [5, 19, 5440, 1085, 504, 1102, 1388, 6853, 558, 576, 2]
 
-// Module 8609 (useGuildEmbeddedApplications)
+// Module 8610 (useGuildEmbeddedApplications)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6852 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
@@ -62,7 +62,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: "+51" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -91,7 +91,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
         return obj;
       }
       c3 = 3;
-      return { value: "IconComponent", done: "+51" };
+      return { value: "IconComponent", done: null };
     } catch (tmp10) {
       c3 = 3;
       throw tmp10;

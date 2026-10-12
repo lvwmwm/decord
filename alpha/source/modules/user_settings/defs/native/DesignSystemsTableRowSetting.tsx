@@ -1,11 +1,11 @@
-// Module ID: 16123
-// Function ID: 16124
+// Module ID: 16146
+// Function ID: 16147
 // Name: DesignSystemsTableRowSetting
-// Dependencies: [7992, 1085, 10663, 16124, 2]
+// Dependencies: [7993, 1085, 10663, 16147, 2]
 
-// Module 16123 (DesignSystemsTableRowSetting)
+// Module 16146 (DesignSystemsTableRowSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

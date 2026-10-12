@@ -1,10 +1,10 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 14863
+// Function ID: 14864
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 17, 5081, 21, 5092, 6851, 6878, 4769, 8283, 8293, 14841, 5056, 14842, 2000, 14830, 14830, 8281, 8290, 504, 2041, 8382, 14843, 14832, 1126, 6184, 14844, 1200, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 6852, 6879, 4769, 8284, 8294, 14864, 5056, 14865, 2000, 14853, 14853, 8282, 8291, 504, 2041, 8383, 14866, 14855, 1126, 6185, 14867, 1200, 2]
 // Exports: default
 
-// Module 14840 (EditUserProfileAvatar)
+// Module 14863 (EditUserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const ProfileCustomizationUtils = tmp3(8290);
+const ProfileCustomizationUtils = tmp3(8291);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ editIcon: { position: "absolute", right: -3 }, editButton: { position: "absolute", top: -8, right: -8 } });
@@ -110,7 +110,7 @@ export default function EditUserProfileAvatar(user) {
       handleEditAvatarDecorationSelect: editAvatarDecoration,
       showRemoveAvatar: tmp3Result.showRemoveAvatar(pendingAvatar, user.avatar)
     };
-    const tmp4 = asyncRequire(14842, dependencyMap.paths);
+    const tmp4 = asyncRequire(14865, dependencyMap.paths);
     if (!flag) {
       editAvatarDecoration = function editAvatarDecoration() {
         const obj = user(flag2[16]);

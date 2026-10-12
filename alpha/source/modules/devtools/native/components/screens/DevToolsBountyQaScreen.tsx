@@ -1,18 +1,18 @@
-// Module ID: 15948
-// Function ID: 15949
+// Module ID: 15971
+// Function ID: 15972
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7387, 21, 5092, 587, 4809, 558, 576, 1631, 5975, 7388, 504, 12971, 9171, 5979, 5088, 6261, 6262, 15361, 6179, 15359, 6651, 6264, 2]
+// Dependencies: [5, 32, 19, 17, 7388, 21, 5092, 587, 4809, 558, 576, 1631, 5975, 7389, 504, 12973, 9172, 5979, 5088, 6262, 6263, 15384, 6180, 15382, 6652, 6265, 2]
 
-// Module 15948 (DevToolsBountyQaScreen)
+// Module 15971 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import QuestActionCreators from "QuestActionCreators" /* 9171 */;
+import QuestActionCreators from "QuestActionCreators" /* 9172 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7387 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7388 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -192,7 +192,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           const _Symbol2 = Symbol;
           if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp32 = closure_8(tmp(15361).UndoIcon, {});
+            const tmp32 = closure_8(tmp(15384).UndoIcon, {});
             cResult[23] = tmp32;
             tmp30 = tmp32;
           } else {
@@ -200,7 +200,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           if (cResult[24] !== tmp15) {
             let obj4 = { label: "Reset and re-serve", subLabel: "Clears serve, dismiss, claim, and impression for the selected scope, then asks the dock for a new decision.", icon: tmp30, onPress: tmp15 };
-            const tmp35 = closure_8(tmp(6179).TableRow, obj4);
+            const tmp35 = closure_8(tmp(6180).TableRow, obj4);
             cResult[24] = tmp15;
             cResult[25] = tmp35;
             tmp33 = tmp35;
@@ -209,8 +209,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           const _Symbol3 = Symbol;
           if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-            let obj5 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(15359).RedoIcon, {}), onPress: tmp17 };
-            const TableRow = tmp(6179).TableRow;
+            let obj5 = { label: "Refresh Organic Serve", subLabel: "Re-runs the dock decision without clearing delivery state. Use to confirm a cooldown still blocks.", icon: closure_8(tmp(15382).RedoIcon, {}), onPress: tmp17 };
+            const TableRow = tmp(6180).TableRow;
             const tmp38 = closure_8(TableRow, obj5);
             cResult[26] = tmp38;
             tmp36 = tmp38;
@@ -253,7 +253,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
             }
             let obj7 = { title: "Dock QA", hasIcons: true, children: items2 };
             items2 = [tmp33, tmp36, tmp39];
-            const tmp44 = closure_9(tmp(6264).TableRowGroup, obj7);
+            const tmp44 = closure_9(tmp(6265).TableRowGroup, obj7);
             cResult[30] = tmp33;
             cResult[31] = tmp39;
             cResult[32] = tmp44;
@@ -261,8 +261,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           }
           let tmp40 = null;
           if (null != stateFromStores) {
-            let obj8 = { label: "Reset Seen", subLabel: "Clears the Quest Home NEW pill for the last dock bounty. Does not restore the dock.", icon: closure_8(tmp(6651).EyeIcon, {}), onPress: tmp18 };
-            const TableRow2 = tmp(6179).TableRow;
+            let obj8 = { label: "Reset Seen", subLabel: "Clears the Quest Home NEW pill for the last dock bounty. Does not restore the dock.", icon: closure_8(tmp(6652).EyeIcon, {}), onPress: tmp18 };
+            const TableRow2 = tmp(6180).TableRow;
             tmp40 = closure_8(TableRow2, obj8);
           }
           cResult[27] = tmp18;
@@ -271,7 +271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           tmp39 = tmp40;
         }
         let obj9 = { title: "Reset scope", description: "Used by Reset and re-serve. Refresh Organic Serve ignores this.", value: str, onChange: tmp14, hasIcons: false, children: tmp25 };
-        const tmp29 = closure_8(tmp(6262).TableRadioGroup, obj9);
+        const tmp29 = closure_8(tmp(6263).TableRadioGroup, obj9);
         cResult[20] = str;
         cResult[21] = tmp25;
         cResult[22] = tmp29;
@@ -296,7 +296,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -317,7 +317,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
                   toast("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -365,7 +365,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           if (0 === c2) {
@@ -420,7 +420,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c2;
@@ -441,7 +441,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
                   closure_1_12("No dock bounty in memory. Pick a lookback window.", "bounty-qa-missing-id");
                   c2 = 0;
                   c3 = 3;
-                  return { value: "IconComponent", done: "+51" };
+                  return { value: "IconComponent", done: null };
                 } else {
                   c1 = 3;
                   c3 = 1;
@@ -489,7 +489,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsBoun
               c2 = 0;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp26) {
           if (0 === c2) {

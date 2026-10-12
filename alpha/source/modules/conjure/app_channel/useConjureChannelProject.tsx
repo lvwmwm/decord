@@ -1,12 +1,12 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 12702
+// Function ID: 12703
 // Name: useConjureChannelProject
-// Dependencies: [19, 2125, 2087, 4750, 10651, 1085, 558, 576, 6945, 504, 11411, 11, 6946, 2]
+// Dependencies: [19, 2125, 2087, 4750, 10652, 1085, 558, 576, 6946, 504, 11413, 11, 6947, 2]
 
-// Module 12700 (useConjureChannelProject)
+// Module 12702 (useConjureChannelProject)
 import Constants from "Constants" /* 1085 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 10651 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11411 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 10652 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11413 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -308,7 +308,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCh
           let tmp7 = null;
           if (result.guild_id === guild_id) {
             tmp7 = null;
-            const obj2 = require("ConjureTypes");
+            const obj2 = require("ConjureProjectTypes");
             if (obj2.isProjectPublic(result)) {
               const tmp10 = stateFromStores;
               if (tmp10) {

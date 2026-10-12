@@ -1,22 +1,22 @@
-// Module ID: 17041
-// Function ID: 17042
+// Module ID: 17059
+// Function ID: 17060
 // Name: ConjureArchivePicker
-// Dependencies: [5, 13213, 12795, 6946, 1126, 3849, 2]
+// Dependencies: [5, 13218, 12797, 17060, 1126, 3849, 17061, 2]
 // Exports: describeConjureArchiveRejection, pickConjureArchive, sendConjureArchiveImport
 
-// Module 17041 (ConjureArchivePicker)
+// Module 17059 (ConjureArchivePicker)
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureTypes from "ConjureTypes" /* 6946 */;
-import FilePickerUtils from "FilePickerUtils" /* 12795 */;
+import FilePickerUtils from "FilePickerUtils" /* 12797 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 17060 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 17061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13218 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, c6;
 
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj = function _pickConjureArchive() {
   let extensions;
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -31,7 +31,7 @@ let obj = function _pickConjureArchive() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _sendConjureArchiveImport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -164,9 +164,10 @@ obj = function _sendConjureArchiveImport() {
             closure_1 = closure_2;
             closure_2 = undefined;
             React32(closure_0);
+            const obj5 = conjureAttachmentRequests;
             c5 = 1;
             c6 = 1;
-            const obj4 = { value: metroRequire(closure_0, closure_1.bytes, closure_1.name, closure_1.contentType), done: false };
+            const obj4 = { value: obj5.uploadAttachmentBytes(closure_0, closure_1.bytes, closure_1.name, closure_1.contentType), done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
@@ -181,18 +182,18 @@ obj = function _sendConjureArchiveImport() {
           const items = [closure_2];
           closure_132_5(closure_0, closure_1, items);
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
-      } catch (tmp20) {
+      } catch (tmp13) {
         c6 = 3;
-        throw tmp20;
+        throw tmp13;
       }
     }
   });
   return obj(...arguments);
 };
-({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty, uploadAttachmentBytes: metroRequire } = ConjureConnectionStore);
-let closure_7 = ["zip", "tar", "gz", "tgz", "bz2", "xz"];
+({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty } = ConjureConnectionStore);
+let closure_6 = ["zip", "tar", "gz", "tgz", "bz2", "xz"];
 const result = size.fileFinishedImporting("modules/conjure/archive/native/ConjureArchivePicker.tsx");
 
 export const pickConjureArchive = function pickConjureArchive() {
@@ -202,15 +203,15 @@ export const describeConjureArchiveRejection = function describeConjureArchiveRe
   let formatConjureAttachmentLimit;
   let tmpResult2;
   let formatToPlainStringResult = null;
-  obj = ConjureTypes;
+  obj = ConjureAttachmentTypes;
   if (!obj.isConjureAttachmentWithinLimit(bytes.bytes.size, bytes.contentType)) {
     const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { size: formatConjureAttachmentLimit(tmpResult2.conjureAttachmentLimit(bytes.contentType)) };
     const ThxcOX = _modDef3849.ThxcOX;
-    formatConjureAttachmentLimit = ConjureTypes.formatConjureAttachmentLimit;
-    ConjureTypes;
-    tmpResult2 = ConjureTypes;
+    formatConjureAttachmentLimit = ConjureAttachmentTypes.formatConjureAttachmentLimit;
+    ConjureAttachmentTypes;
+    tmpResult2 = ConjureAttachmentTypes;
     formatToPlainStringResult = formatToPlainString(ThxcOX, obj2);
   }
   return formatToPlainStringResult;

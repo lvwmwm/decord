@@ -1,10 +1,10 @@
-// Module ID: 9708
-// Function ID: 9709
+// Module ID: 9709
+// Function ID: 9710
 // Name: stageAttachmentFiles
-// Dependencies: [5, 1085, 7756, 2]
+// Dependencies: [5, 1085, 7757, 2]
 // Exports: default
 
-// Module 9708 (stageAttachmentFiles)
+// Module 9709 (stageAttachmentFiles)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

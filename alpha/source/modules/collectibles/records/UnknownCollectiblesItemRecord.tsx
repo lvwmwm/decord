@@ -1,10 +1,10 @@
-// Module ID: 7271
-// Function ID: 7272
+// Module ID: 7272
+// Function ID: 7273
 // Name: UnknownCollectiblesItemRecord
 // Dependencies: [1992, 1993, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 7271 (UnknownCollectiblesItemRecord)
+// Module 7272 (UnknownCollectiblesItemRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1992 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8013
+// Function ID: 8014
 // Name: ApplicationSubscriptionSystemMessageUtils
 // Dependencies: [1126, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 8012 (ApplicationSubscriptionSystemMessageUtils)
+// Module 8013 (ApplicationSubscriptionSystemMessageUtils)
 import intl3 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 

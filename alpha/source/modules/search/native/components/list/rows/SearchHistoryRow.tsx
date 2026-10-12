@@ -1,17 +1,17 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17402
+// Function ID: 17403
 // Name: SearchHistoryRow
-// Dependencies: [109, 5, 19, 17, 2065, 6035, 1390, 9312, 21, 5092, 587, 558, 576, 12059, 6207, 6184, 17334, 12055, 5088, 6739, 17329, 573, 17344, 8305, 7014, 17343, 17346, 17359, 1126, 2]
+// Dependencies: [109, 5, 19, 17, 2065, 6035, 1390, 9313, 21, 5092, 587, 558, 576, 12061, 6208, 6185, 17391, 12057, 5088, 6740, 17386, 573, 17401, 8306, 7015, 17400, 17403, 17416, 1126, 2]
 
-// Module 17345 (SearchHistoryRow)
+// Module 17402 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import UserActionCreators from "UserActionCreators" /* 8305 */;
-import SearchConstants from "SearchConstants" /* 9312 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12055 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12059 */;
+import UserActionCreators from "UserActionCreators" /* 8306 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12061 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -59,7 +59,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { marginLeft: 16 };
       const rect = { bottom: 16, left: 16, right: 16, top: 16 };
-      const tmp10 = closure_12(searchContext(6207).XSmallIcon, { size: "sm", color: "interactive-text-default" });
+      const tmp10 = closure_12(searchContext(6208).XSmallIcon, { size: "sm", color: "interactive-text-default" });
       cResult[3] = obj2;
       cResult[4] = rect;
       cResult[5] = tmp10;
@@ -73,7 +73,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     }
     if (cResult[6] !== tmp4) {
       const obj3 = { onPress: tmp4, accessibilityRole: "button", unstable_pressDelay: 130, style: tmp6, hitSlop: tmp7, children: tmp8 };
-      const tmp13 = closure_12(searchContext(6184).PressableHighlight, obj3);
+      const tmp13 = closure_12(searchContext(6185).PressableHighlight, obj3);
       cResult[6] = tmp4;
       cResult[7] = tmp13;
       tmp11 = tmp13;
@@ -98,8 +98,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     const obj = SearchPlatformActionCreatorsDefault;
     const result = obj.removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
-  let obj = { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: closure_12(searchContext(6207).XSmallIcon, { size: "sm", color: "interactive-text-default" }) };
-  const PressableHighlight = searchContext(6184).PressableHighlight;
+  let obj = { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: closure_12(searchContext(6208).XSmallIcon, { size: "sm", color: "interactive-text-default" }) };
+  const PressableHighlight = searchContext(6185).PressableHighlight;
   return closure_12(PressableHighlight, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -121,7 +121,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = searchContext(17334);
+  const tmpResult = searchContext(17391);
   const onPressSearchHistoryText = tmpResult.useOnPressSearchHistoryText(tmp5);
   if (cResult[2] === onPressSearchHistoryText) {
     if (cResult[3] === searchContext) {
@@ -156,7 +156,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
                     }
                     const _Symbol = Symbol;
                     if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                      const tmp25 = closure_12(searchContext(6739).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" });
+                      const tmp25 = closure_12(searchContext(6740).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" });
                       cResult[21] = tmp25;
                       tmp23 = tmp25;
                     } else {
@@ -185,7 +185,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
                       }
                     }
                     const obj4 = { label: tmp14, onPress: tmp7, trailing: tmp18, iconContainerStyle: tmp4.textIconContainer, icon: tmp26 };
-                    const tmp32 = closure_12(searchContext(17329).SearchListRow, obj4);
+                    const tmp32 = closure_12(searchContext(17386).SearchListRow, obj4);
                     cResult[24] = tmp7;
                     cResult[25] = tmp4.textIconContainer;
                     cResult[26] = tmp14;
@@ -257,7 +257,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_14();
   dependencyMap = tmp;
-  let obj = searchContext(17334);
+  let obj = searchContext(17391);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -270,7 +270,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   let obj2 = { style: tmp.textContainer, children: items1 };
   const tags = searchHistoryItem.tags;
   let mapped;
-  const SearchListRow = searchContext(17329).SearchListRow;
+  const SearchListRow = searchContext(17386).SearchListRow;
   const tmp7 = closure_13;
   if (tags != null) {
     mapped = tags.map((children) => {
@@ -284,7 +284,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   const obj3 = { label: tmp7(View, obj2), onPress: callback, trailing: closure_12(closure_15, { searchContext, searchHistoryItem }), iconContainerStyle: tmp.textIconContainer, icon: closure_12(View, obj5) };
   const obj4 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text };
   items1[1] = closure_12(searchContext(5088).Text, obj4);
-  obj5 = { style: tmp.iconContainer, children: closure_12(searchContext(6739).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) };
+  obj5 = { style: tmp.iconContainer, children: closure_12(searchContext(6740).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) };
   return closure_12(SearchListRow, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -532,7 +532,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -565,7 +565,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
             const result = obj6.trackSearchHistoryClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c4 = 3;
@@ -612,7 +612,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -645,7 +645,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
             const result = obj6.trackSearchHistoryClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp8) {
           c4 = 3;

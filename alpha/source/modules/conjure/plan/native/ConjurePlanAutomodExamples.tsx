@@ -1,9 +1,9 @@
-// Module ID: 17161
-// Function ID: 17162
+// Module ID: 17294
+// Function ID: 17295
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 10408, 8772, 6867, 587, 5092, 558, 576, 5088, 17162, 1200, 1415, 1418, 1126, 3849, 5377, 2]
+// Dependencies: [19, 17, 21, 10409, 8773, 6868, 587, 5092, 558, 576, 5088, 17295, 1200, 1415, 1418, 1126, 3849, 5377, 2]
 
-// Module 17161 (ConjurePlanAutomodExamples)
+// Module 17294 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,10 +13,10 @@ import AvatarUtils from "AvatarUtils" /* 1415 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 6867 */;
-import BellIcon from "BellIcon" /* 8772 */;
-import ShieldIcon from "ShieldIcon" /* 10408 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 17162 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
+import BellIcon from "BellIcon" /* 8773 */;
+import ShieldIcon from "ShieldIcon" /* 10409 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 17295 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

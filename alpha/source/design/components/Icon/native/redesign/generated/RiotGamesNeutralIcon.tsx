@@ -1,14 +1,14 @@
-// Module ID: 8905
-// Function ID: 8906
+// Module ID: 8906
+// Function ID: 8907
 // Name: RiotGamesNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8906, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8907, 4817, 2]
 
-// Module 8905 (RiotGamesNeutralIcon)
+// Module 8906 (RiotGamesNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8906 */;
+import AssetRegistry from "AssetRegistry" /* 8907 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 14846
+// Function ID: 14847
 // Name: CustomColorPickerActionSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 14824, 1103, 4850, 14825, 4967, 683, 5056, 6839, 1126, 6838, 5379, 6285, 12, 14826, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 14847, 1103, 4850, 14848, 4967, 683, 5056, 6840, 1126, 6839, 5379, 6286, 12, 14849, 2]
 
-// Module 14823 (CustomColorPickerActionSheet)
+// Module 14846 (CustomColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
@@ -11,7 +11,7 @@ import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import ColorUtils from "ColorUtils" /* 4967 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14825 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 14848 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorP
                                     }
                                   }
                                   const obj4 = { hue: sharedValue, saturation: sharedValue1, value: sharedValue2, onPanFinalize: tmp24 };
-                                  const tmp65 = sharedValue2(value(14826), obj4);
+                                  const tmp65 = sharedValue2(value(14849), obj4);
                                   cResult[69] = sharedValue;
                                   cResult[70] = tmp24;
                                   cResult[71] = sharedValue1;
@@ -442,7 +442,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorP
                         if (cResult[47] === sharedValue2) {
                           tmp37 = cResult[48];
                         }
-                        BottomSheet = tmp(6839).BottomSheet;
+                        BottomSheet = tmp(6840).BottomSheet;
                         const _Symbol3 = Symbol;
                         if (cResult[49] === Symbol.for("react.memo_cache_sentinel")) {
                           const intl = tmp(1126).intl;
@@ -518,14 +518,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorP
                             tmp21 = closure_10;
                           }
                           const obj6 = { accessibilityLabel: tmp46, value, onChange: tmp36, maxLength: 7 };
-                          const tmp50 = sharedValue2(tmp(6285).TextInput, obj6);
+                          const tmp50 = sharedValue2(tmp(6286).TextInput, obj6);
                           cResult[55] = value;
                           cResult[56] = tmp36;
                           cResult[57] = tmp50;
                           tmp48 = tmp50;
                         }
                         const obj7 = { title: tmp38, trailing: sharedValue2(tmp(5379).Button, obj8) };
-                        const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
+                        const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
                         obj8 = { variant: str, size: "sm", text: tmp40, onPress: tmp35 };
                         const tmp44 = sharedValue2(BottomSheetTitleHeader, obj7);
                         cResult[51] = str;
@@ -709,9 +709,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorP
     obj.hideActionSheet();
   }, items2);
   const obj5 = { onDismiss, startExpanded: true, header: sharedValue2(BottomSheetTitleHeader, obj7), children: tmp13(tmp14, obj10) };
-  BottomSheet = tmp2(6839).BottomSheet;
+  BottomSheet = tmp2(6840).BottomSheet;
   obj7 = { title: intl.string(onSelect(1126).t.WTqQ5e), trailing: sharedValue2(Button, obj9) };
-  BottomSheetTitleHeader = tmp2(6838).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp2(6839).BottomSheetTitleHeader;
   intl = tmp2(1126).intl;
   obj9 = { variant: actionButtonVariant, size: "sm", text: intl2.string(onSelect(1126).t.XqMe3N), onPress: callback1 };
   Button = tmp2(5379).Button;
@@ -737,7 +737,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorP
     },
     maxLength: 7
   };
-  const TextInput = tmp2(6285).TextInput;
+  const TextInput = tmp2(6286).TextInput;
   intl3 = tmp2(1126).intl;
   items3 = [sharedValue2(TextInput, obj11), , ];
   const obj12 = {
@@ -780,7 +780,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomColorP
       runOnJSResult(obj2);
     }
   };
-  items3[2] = sharedValue2(tmp16(14826), obj13);
+  items3[2] = sharedValue2(tmp16(14849), obj13);
   return sharedValue2(BottomSheet, obj5);
 });
 let result = size.fileFinishedImporting("modules/color_picker/native/CustomColorPickerActionSheet.tsx");

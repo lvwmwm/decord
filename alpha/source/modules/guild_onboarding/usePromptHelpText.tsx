@@ -1,9 +1,9 @@
-// Module ID: 6814
-// Function ID: 6815
+// Module ID: 6815
+// Function ID: 6816
 // Name: usePromptHelpText
 // Dependencies: [2065, 2119, 4750, 4760, 1390, 1085, 1126, 558, 576, 504, 5421, 2]
 
-// Module 6814 (usePromptHelpText)
+// Module 6815 (usePromptHelpText)
 import Constants from "Constants" /* 1085 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;

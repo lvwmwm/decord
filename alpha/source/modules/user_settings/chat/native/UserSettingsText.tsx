@@ -1,10 +1,10 @@
-// Module ID: 15737
-// Function ID: 15738
+// Module ID: 15760
+// Function ID: 15761
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1390, 4775, 1206, 1207, 1085, 21, 5092, 587, 1265, 2041, 5260, 558, 576, 4818, 504, 4769, 1503, 6679, 6264, 1126, 6895, 1200, 9770, 5088, 6262, 6261, 8579, 5377, 2]
+// Dependencies: [19, 17, 1390, 4775, 1206, 1207, 1085, 21, 5092, 587, 1265, 2041, 5260, 558, 576, 4818, 504, 4769, 1503, 6680, 6265, 1126, 6896, 1200, 9771, 5088, 6263, 6262, 8580, 5377, 2]
 // Exports: setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15737 (UserSettingsText)
+// Module 15760 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl23 from "intl" /* 1126 */;
@@ -14,12 +14,12 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5260 */;
-import TableRadioRow4 from "TableRadioRow" /* 6261 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6262 */;
-import TableRowGroup7 from "TableRowGroup" /* 6264 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6679 */;
-import TableSwitchRow8 from "TableSwitchRow" /* 6895 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9770 */;
+import TableRadioRow4 from "TableRadioRow" /* 6262 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6263 */;
+import TableRowGroup7 from "TableRowGroup" /* 6265 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
+import TableSwitchRow8 from "TableSwitchRow" /* 6896 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9771 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;

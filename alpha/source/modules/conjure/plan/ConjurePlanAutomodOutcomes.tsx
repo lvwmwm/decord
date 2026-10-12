@@ -1,10 +1,10 @@
-// Module ID: 17162
-// Function ID: 17163
+// Module ID: 17295
+// Function ID: 17296
 // Name: ConjurePlanAutomodOutcomes
 // Dependencies: [2127, 1126, 3849, 5079, 2]
 // Exports: groupPlanAutomodExamples, planAutomodReasonText, renderPlanAutomodExampleContent
 
-// Module 17162 (ConjurePlanAutomodOutcomes)
+// Module 17295 (ConjurePlanAutomodOutcomes)
 import intl7 from "intl" /* 1126 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2127 */;
 import _modDef3849 from "module_3849" /* 3849 */;

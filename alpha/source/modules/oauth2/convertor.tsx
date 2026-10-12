@@ -1,10 +1,10 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9236
+// Function ID: 9237
 // Name: convertor
 // Dependencies: [1097, 2]
 // Exports: convertOAuth2Authorization
 
-// Module 9235 (convertor)
+// Module 9236 (convertor)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;
 

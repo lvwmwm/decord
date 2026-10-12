@@ -1,15 +1,15 @@
 // Module ID: 11412
 // Function ID: 11413
 // Name: ConjureAnalytics
-// Dependencies: [5440, 10651, 1085, 6945, 1265, 2]
+// Dependencies: [5440, 10652, 1085, 6946, 1265, 2]
 // Exports: trackConjureDeployed, trackConjureErrored, trackConjurePublishActionClicked, trackConjureTurnResulted
 
 // Module 11412 (ConjureAnalytics)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ConjureUtils from "ConjureUtils" /* 6945 */;
+import ConjureUtils from "ConjureUtils" /* 6946 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import size from "module_2" /* 2 */;
 
 function conjureLocation(project_id, isPreview) {
@@ -56,7 +56,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let result = size.fileFinishedImporting("modules/conjure/shared/ConjureAnalytics.tsx");
 
 export const ConjureErrorCodes = { BUILD_FAILED: "BUILD_FAILED", HEALTHCHECK_FAILED: "HEALTHCHECK_FAILED", AGENT_ERROR: "AGENT_ERROR", PUBLISH_FAILED: "PUBLISH_FAILED", WS_OPEN_FAILED: "WS_OPEN_FAILED", SEND_FAILED: "SEND_FAILED", RUNTIME_FRAME_ERROR: "RUNTIME_FRAME_ERROR", RUNTIME_WORKER_ERROR: "RUNTIME_WORKER_ERROR" };
-export const trackConjureTurnResulted = function trackConjureTurnResulted(project_id, result) {
+export const trackConjureTurnResulted = function trackConjureTurnResulted(projectId, result) {
   let application_id;
   let cost_usd;
   let obj5;
@@ -66,9 +66,9 @@ export const trackConjureTurnResulted = function trackConjureTurnResulted(projec
   const track = AnalyticsUtilsDefault.track;
   const VIBEGRATION_TURN_RESULTED = AnalyticEvents.VIBEGRATION_TURN_RESULTED;
   AnalyticsUtilsDefault;
-  const project = ConjureProjectStore.getProject(project_id);
+  const project = ConjureProjectStore.getProject(projectId);
   let name;
-  const obj = { project_id, project_name: substr, application_id, preview_application_id: prop };
+  const obj = { project_id: projectId, project_name: substr, application_id, preview_application_id: prop };
   if (project != null) {
     name = project.name;
   }
@@ -181,7 +181,7 @@ export const trackConjureDeployed = function trackConjureDeployed(project_id, is
   const merged1 = Object.assign(conjureLocation(project_id, isPreview));
   track(VIBEGRATION_DEPLOYED, obj2);
 };
-export const trackConjureErrored = function trackConjureErrored(baseUrl, arg1) {
+export const trackConjureErrored = function trackConjureErrored(projectId, arg1) {
   let _location;
   let application_id;
   let code;
@@ -200,9 +200,9 @@ export const trackConjureErrored = function trackConjureErrored(baseUrl, arg1) {
   const track = AnalyticsUtilsDefault.track;
   const VIBEGRATION_ERRORED = AnalyticEvents.VIBEGRATION_ERRORED;
   AnalyticsUtilsDefault;
-  const project = ConjureProjectStore.getProject(baseUrl);
+  const project = ConjureProjectStore.getProject(projectId);
   let name;
-  const obj = { project_id: baseUrl, project_name: substr, application_id, preview_application_id: prop };
+  const obj = { project_id: projectId, project_name: substr, application_id, preview_application_id: prop };
   if (project != null) {
     name = project.name;
   }
@@ -229,7 +229,7 @@ export const trackConjureErrored = function trackConjureErrored(baseUrl, arg1) {
   }
   const obj2 = { is_preview: isPreview, error_location: _location, error_code: code, error_message: substr1, error_details: substr2 };
   const merged = Object.assign(obj);
-  const merged1 = Object.assign(conjureLocation(baseUrl, isPreview));
+  const merged1 = Object.assign(conjureLocation(projectId, isPreview));
   substr1 = null;
   if (null != message) {
     substr1 = null;

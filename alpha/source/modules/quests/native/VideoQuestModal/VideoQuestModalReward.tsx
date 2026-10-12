@@ -1,12 +1,12 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15428
+// Function ID: 15429
 // Name: VideoQuestModalReward
-// Dependencies: [19, 21, 5092, 558, 576, 15382, 9170, 9167, 15387, 5088, 1126, 5377, 587, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 15405, 9171, 9168, 15410, 5088, 1126, 5377, 587, 2]
 
-// Module 15405 (VideoQuestModalReward)
+// Module 15428 (VideoQuestModalReward)
 import nativeDefault from "native" /* 587 */;
-import QuestUtils from "QuestUtils" /* 9167 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15387 */;
+import QuestUtils from "QuestUtils" /* 9168 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15410 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -37,9 +37,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (undefined !== size) {
     str = size;
   }
-  const tmpResult = quest(15382);
+  const tmpResult = quest(15405);
   quest = tmpResult.useVideoQuestModalContext().quest;
-  const tmpResult2 = quest(9170);
+  const tmpResult2 = quest(9171);
   const questTaskDetails = tmpResult2.useQuestTaskDetails(quest);
   if (cResult[0] !== quest.id) {
     const fn = function s() {
@@ -169,9 +169,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
-  let obj = quest(15382);
+  let obj = quest(15405);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj2 = quest(9170);
+  let obj2 = quest(9171);
   const items = [quest.id];
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
   const callback = react.useCallback(() => {

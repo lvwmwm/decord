@@ -1,9 +1,9 @@
-// Module ID: 13128
-// Function ID: 13129
+// Module ID: 13133
+// Function ID: 13134
 // Name: Badges
-// Dependencies: [19, 17, 2129, 21, 587, 5092, 558, 576, 13126, 8271, 5088, 504, 9211, 10763, 13129, 1126, 13131, 13133, 13010, 12620, 1102, 8925, 2]
+// Dependencies: [19, 17, 2129, 21, 587, 5092, 558, 576, 13131, 8272, 5088, 504, 9212, 10763, 13134, 1126, 13136, 13138, 13015, 12622, 1102, 8926, 2]
 
-// Module 13128 (Badges)
+// Module 13133 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,16 +11,16 @@ import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import utils from "utils" /* 8271 */;
-import TrophyIcon from "TrophyIcon" /* 8925 */;
-import GameControllerIcon from "GameControllerIcon" /* 9211 */;
+import utils from "utils" /* 8272 */;
+import TrophyIcon from "TrophyIcon" /* 8926 */;
+import GameControllerIcon from "GameControllerIcon" /* 9212 */;
 import TimerIcon2 from "TimerIcon" /* 10763 */;
-import RetryIcon from "RetryIcon" /* 12620 */;
-import FireIcon from "FireIcon" /* 13010 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 13126 */;
-import NewUserIcon from "NewUserIcon" /* 13129 */;
-import FlashIcon2 from "FlashIcon" /* 13131 */;
-import TrendingType from "TrendingType" /* 13133 */;
+import RetryIcon from "RetryIcon" /* 12622 */;
+import FireIcon from "FireIcon" /* 13015 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 13131 */;
+import NewUserIcon from "NewUserIcon" /* 13134 */;
+import FlashIcon2 from "FlashIcon" /* 13136 */;
+import TrendingType from "TrendingType" /* 13138 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import Fragment from "Fragment" /* 21 */;
@@ -137,7 +137,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActiveTimest
 }) : (function ActiveTimestamp(entry) {
   entry = entry.entry;
   const style = entry.style;
-  obj = entry(13126);
+  obj = entry(13131);
   const now = obj.useTimestampTickedNow().now;
   const items = [entry, now];
   const children = react.useMemo(() => {
@@ -436,7 +436,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameTimestam
         }
         const obj3 = { style: tmpResult.badgeContainer, children: items };
         const obj4 = { style: tmpResult.icon, color: icon };
-        items = [metroRequire(tmp8(9211).GameControllerIcon, obj4), ];
+        items = [metroRequire(tmp8(9212).GameControllerIcon, obj4), ];
         const obj5 = { entry };
         items[1] = metroRequire(closure_15, obj5);
         return metroImportDefault(View, obj3);
@@ -641,7 +641,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreakBadge
         tmp19 = null;
         if (streakCount >= 2) {
           tmp24 = closure_16;
-          FlashIcon = tmp(13131).FlashIcon;
+          FlashIcon = tmp(13136).FlashIcon;
           const intl = tmp(1126).intl;
           const obj3 = { days: streakCount };
           formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t["Klie/P"], obj3);

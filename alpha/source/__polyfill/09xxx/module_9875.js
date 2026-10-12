@@ -1,190 +1,133 @@
 // Module ID: 9875
 // Function ID: 9876
-// Dependencies: [41, 42, 93, 95, 98, 9843, 9825, 9824, 9826]
+// Dependencies: [9816, 9823, 9825, 9876, 9877, 9849, 9878, 9879, 9880, 9881, 9883, 9884, 9885, 9886, 9887, 9856]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 9875
-import Meridiem from "Meridiem" /* 9824 */;
-import assignSimilarDate from "assignSimilarDate" /* 9825 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9826 */;
-import now2 from "now" /* 9843 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod9849 from "module_9849" /* 9849 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 9856 */;
+import _mod9876 from "module_9876" /* 9876 */;
+import _mod9877 from "module_9877" /* 9877 */;
+import _mod9878 from "module_9878" /* 9878 */;
+import _mod9879 from "module_9879" /* 9879 */;
+import _mod9880 from "module_9880" /* 9880 */;
+import _mod9881 from "module_9881" /* 9881 */;
+import _mod9883 from "module_9883" /* 9883 */;
+import _mod9884 from "module_9884" /* 9884 */;
+import _mod9885 from "module_9885" /* 9885 */;
+import _mod9886 from "module_9886" /* 9886 */;
+import _mod9887 from "module_9887" /* 9887 */;
+import { Chrono } from "module_9816" /* 9816 */;
 
-let hasOwnProperty;
+const require = globalThis.__r;
 
-let self = this;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+function createConfiguration(flag, arg1) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
+  }
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_9849.default(flag2), , , , , , ];
+  new module_9849.default(flag2);
+  items[1] = new module_9884.default();
+  new module_9884.default();
+  items[2] = new module_9878.default();
+  new module_9878.default();
+  items[3] = new module_9883.default();
+  new module_9883.default();
+  items[4] = new module_9885.default();
+  new module_9885.default();
+  items[5] = new module_9886.default();
+  new module_9886.default();
+  items[6] = new module_9881.default();
+  new module_9881.default();
+  items1 = [new module_9879.default(), ];
+  new module_9879.default();
+  items1[1] = new module_9880.default();
+  new module_9880.default();
+  return includeCommonConfiguration(obj, flag);
+}
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const tmp = createConfiguration(false, flag);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_9876.default();
+  unshift(_default);
+  const parsers1 = tmp.parsers;
+  const unshift2 = parsers1.unshift;
+  const _default1 = new module_9877.default();
+  unshift2(_default1);
+  const parsers2 = tmp.parsers;
+  const unshift3 = parsers2.unshift;
+  const _default2 = new module_9887.default();
+  unshift3(_default2);
+  return tmp;
+}
+const module_9876 = fn(_mod9876);
+const module_9877 = fn(_mod9877);
+const module_9849 = fn(_mod9849);
+const module_9878 = fn(_mod9878);
+const module_9879 = fn(_mod9879);
+const module_9880 = fn(_mod9880);
+const module_9881 = fn(_mod9881);
+const module_9883 = fn(_mod9883);
+const module_9884 = fn(_mod9884);
+const module_9885 = fn(_mod9885);
+const module_9886 = fn(_mod9886);
+const module_9887 = fn(_mod9887);
+const configuration = createConfiguration(false, true);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_9876.default();
+unshift(_default);
+let parsers1 = configuration.parsers;
+let unshift2 = parsers1.unshift;
+let _default1 = new module_9877.default();
+unshift2(_default1);
+let parsers2 = configuration.parsers;
+let unshift3 = parsers2.unshift;
+let _default2 = new module_9887.default();
+unshift3(_default2);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_9816").Chrono(createConfiguration(true));
+const Chrono_export = require("module_9816").Chrono;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (!self2) {
-  let tmp3 = globalThis;
-  let _Object = Object;
-  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let tmp4 = self && self.__setModuleDefault;
-if (!tmp4) {
-  let tmp5 = globalThis;
-  const _Object2 = Object;
-  tmp4 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_8 = tmp4;
-let fn = self && self.__importStar;
-if (!fn) {
-  fn = function c(arg0) {
-    fn = Object.getOwnPropertyNames || ((obj) => {
-      const items = [];
-      for (const key10005 in obj) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        if (!hasOwnProperty.call(obj, key10005)) {
-          continue;
-        } else {
-          items[items.length] = key10005;
-          continue;
-        }
-        continue;
-      }
-      return items;
-    });
-    return fn(arg0);
-  };
-  fn = (__esModule) => {
-    const tmp = __esModule;
-    if (tmp) {
-      if (__esModule.__esModule) {
-        return __esModule;
-      }
-    }
-    const obj = {};
-    if (null != __esModule) {
-      let num;
-      const arr = fn(__esModule);
-      for (let num = 0; num < arr.length; num = num + 1) {
-        if ("default" !== arr[num]) {
-          let tmp5 = self2(obj, __esModule, arr[num]);
-        }
-      }
-    }
-    closure_8(obj, __esModule);
-    return obj;
-  };
-}
-const now = fn(now2);
-class FRCasualDateParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, FRCasualDateParser);
-    const obj = _getPrototypeOf(FRCasualDateParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FRCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return /(maintenant|aujourd'hui|demain|hier|cette\s*nuit|la\s*veille)(?=\W|$)/i;
-  }
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 };
-let items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const str = arg1[0];
-      const str2 = str.toLowerCase();
-      const parsingComponents = refDate.createParsingComponents();
-      if ("maintenant" === str2) {
-        return now.now(refDate.reference);
-      } else if ("aujourd'hui" === str2) {
-        return now.today(refDate.reference);
-      } else if ("hier" === str2) {
-        return now.yesterday(refDate.reference);
-      } else if ("demain" === str2) {
-        return now.tomorrow(refDate.reference);
-      } else {
-        if (str2.match(/cette\s*nuit/)) {
-          assignSimilarDate.assignSimilarDate(parsingComponents, refDate);
-          parsingComponents.imply("hour", 22);
-          parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        } else if (str2.match(/la\s*veille/)) {
-          const _Date = Date;
-          const self = this;
-          self2 = this;
-          const date = new Date(refDate.getTime());
-          date.setDate(date.getDate() - 1);
-          assignSimilarDate.assignSimilarDate(parsingComponents, date);
-          parsingComponents.imply("hour", 0);
-        }
-        return parsingComponents;
-      }
-    }
-  }
-];
-
-export default _createClass(FRCasualDateParser, items);
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+};
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

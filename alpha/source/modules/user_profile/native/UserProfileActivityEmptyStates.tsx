@@ -1,9 +1,9 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13383
+// Function ID: 13384
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1085, 21, 1126, 5092, 587, 558, 576, 5088, 5409, 12, 7014, 5056, 5379, 7093, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 1126, 5092, 587, 558, 576, 5088, 5409, 12, 7015, 5056, 5379, 7094, 2]
 
-// Module 13360 (UserProfileActivityEmptyStates)
+// Module 13383 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import intl4 from "intl" /* 1126 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

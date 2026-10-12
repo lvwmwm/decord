@@ -1,9 +1,9 @@
-// Module ID: 12701
-// Function ID: 12702
+// Module ID: 12703
+// Function ID: 12704
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 729, 19, 17, 5081, 6087, 6933, 1085, 21, 5092, 587, 558, 576, 4850, 5378, 5093, 5057, 1497, 504, 8326, 6930, 5088, 1126, 5379, 6156, 5391, 6207, 6209, 9028, 6813, 6857, 6854, 10507, 6878, 1265, 10155, 5396, 3719, 8949, 4962, 2]
+// Dependencies: [32, 729, 19, 17, 5081, 6088, 6934, 1085, 21, 5092, 587, 558, 576, 4850, 5378, 5093, 5057, 1497, 504, 8327, 6931, 5088, 1126, 5379, 6157, 5391, 6208, 6210, 9029, 6814, 6858, 6855, 10508, 6879, 1265, 10156, 5396, 3719, 8950, 4962, 2]
 
-// Module 12701 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 12703 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -12,17 +12,17 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
-import XSmallIcon from "XSmallIcon" /* 6207 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6930 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6933 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10155 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6934 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import SKUStore from "SKUStore" /* 6087 */;
+import SKUStore from "SKUStore" /* 6088 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -510,7 +510,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   let title;
   let tmp18Result4;
   let useReducedMotion;
-  const f113103 = () => useReducedMotion.useReducedMotion;
+  const f113324 = () => useReducedMotion.useReducedMotion;
   sku = sku.sku;
   ({ finePrint, ctaLabel, onCtaPress, onClose } = sku);
   let width;
@@ -522,8 +522,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   width = require("useWindowDimensions")().width;
   let obj = sku(width[18]);
   const items = [AccessibilityStore];
-  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_26(obj.useStateFromStores(items, f113103)));
-  const tmp5 = closure_26(obj.useStateFromStores(items, f113103));
+  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_26(obj.useStateFromStores(items, f113324)));
+  const tmp5 = closure_26(obj.useStateFromStores(items, f113324));
   let obj2 = sku(width[19]);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let obj3 = react;

@@ -1,9 +1,9 @@
-// Module ID: 18418
-// Function ID: 18419
+// Module ID: 18476
+// Function ID: 18477
 // Name: CommunityRequirementSatisfiedForm
-// Dependencies: [19, 17, 21, 4808, 558, 576, 18408, 6184, 2]
+// Dependencies: [19, 17, 21, 4808, 558, 576, 18466, 6185, 2]
 
-// Module 18418 (CommunityRequirementSatisfiedForm)
+// Module 18476 (CommunityRequirementSatisfiedForm)
 import react_native from "react-native" /* 17 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
   const cResult = obj.c(7);
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
   const children = formSwitchDisabled.children;
-  const obj2 = formSwitchDisabled(18408);
+  const obj2 = formSwitchDisabled(18466);
   const enableCommunitySharedStyles = obj2.useEnableCommunitySharedStyles();
   if (cResult[0] === enableCommunitySharedStyles.communityRequirementSatisfiedFormPressable) {
     let tmp5;
@@ -60,7 +60,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
           }
         }
     };
-    tmp6 = closure_3(tmp(6184).PressableOpacity, obj4);
+    tmp6 = closure_3(tmp(6185).PressableOpacity, obj4);
   }
   cResult[0] = enableCommunitySharedStyles.communityRequirementSatisfiedFormPressable;
   cResult[1] = formSwitchDisabled;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
   const children = formSwitchDisabled.children;
   let tmp = formSwitchDisabled;
-  let obj = formSwitchDisabled(18408);
+  let obj = formSwitchDisabled(18466);
   const enableCommunitySharedStyles = obj.useEnableCommunitySharedStyles();
   const obj2 = { style: enableCommunitySharedStyles.communityRequirementSatisfiedFormWrapper, children: items };
   items = [children, ];
@@ -90,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommunityReq
           }
         }
     };
-    tmp6 = closure_3(tmp(6184).PressableOpacity, obj3);
+    tmp6 = closure_3(tmp(6185).PressableOpacity, obj3);
   }
   items[1] = tmp6;
   return tmp4(tmp5, obj2);

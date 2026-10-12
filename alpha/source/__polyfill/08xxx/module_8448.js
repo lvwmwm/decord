@@ -1,22 +1,19 @@
 // Module ID: 8448
 // Function ID: 8449
-// Dependencies: [8439, 8432, 4947]
+// Dependencies: [8438, 8449, 4947, 8435, 8433]
 
 // Module 8448
-import normalizeColor from "normalizeColor" /* 8432 */;
-import _mod8439 from "module_8439" /* 8439 */;
+import normalizeColor from "normalizeColor" /* 8433 */;
+import _mod8435 from "module_8435" /* 8435 */;
+import _mod8449 from "module_8449" /* 8449 */;
+import DeprecatedStyleSheetPropType from "DeprecatedStyleSheetPropType" /* 8438 */;
 import "module_4947";
 import module_4947_mod from "module_4947" /* 4947 */;
 
-let arrayOf;
 let module_4947;
-let size;
-const obj = { color: normalizeColor, fontFamily: module_4947.string, fontSize: module_4947.number, fontStyle: module_4947.oneOf(["normal", "italic"]), fontWeight: module_4947.oneOf(["normal", "bold", "100", "200", "300", "400", "500", "600", "700", "800", "900"]), fontVariant: arrayOf(module_4947.oneOf(["small-caps", "oldstyle-nums", "lining-nums", "tabular-nums", "proportional-nums"])), textShadowOffset: module_4947.shape(size), textShadowRadius: module_4947.number, textShadowColor: normalizeColor, letterSpacing: module_4947.number, lineHeight: module_4947.number, textAlign: module_4947.oneOf(["auto", "left", "right", "center", "justify"]), textAlignVertical: module_4947.oneOf(["auto", "top", "bottom", "center"]), includeFontPadding: module_4947.bool, textDecorationLine: module_4947.oneOf(["none", "underline", "line-through", "underline line-through"]), textDecorationStyle: module_4947.oneOf(["solid", "double", "dotted", "dashed"]), textDecorationColor: normalizeColor, textTransform: module_4947.oneOf(["none", "capitalize", "uppercase", "lowercase"]), writingDirection: module_4947.oneOf(["auto", "ltr", "rtl"]) };
-const module_8439 = Object.assign(_mod8439);
-module_4947 = module_4947_mod;
-arrayOf = module_4947.arrayOf;
-module_4947 = module_4947_mod;
-size = { width: module_4947.number, height: module_4947.number };
+let module_8449;
+const obj = { ellipsizeMode: module_4947.oneOf(["head", "middle", "tail", "clip"]), numberOfLines: module_4947.number, textBreakStrategy: module_4947.oneOf(["simple", "highQuality", "balanced"]), onLayout: module_4947.func, onPress: module_4947.func, onLongPress: module_4947.func, pressRetentionOffset: _mod8435, selectable: module_4947.bool, selectionColor: normalizeColor, suppressHighlighting: module_4947.bool, style: module_8449, testID: module_4947.string, nativeID: module_4947.string, allowFontScaling: module_4947.bool, maxFontSizeMultiplier: module_4947.number, accessible: module_4947.bool, adjustsFontSizeToFit: module_4947.bool, minimumFontScale: module_4947.number, disabled: module_4947.bool, dataDetectorType: module_4947.oneOf(["phoneNumber", "link", "email", "none", "all"]) };
+module_8449 = DeprecatedStyleSheetPropType(_mod8449);
 module_4947 = module_4947_mod;
 
 export default obj;

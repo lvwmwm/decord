@@ -1,12 +1,12 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15717
+// Function ID: 15718
 // Name: LanguageSetting
-// Dependencies: [2129, 1085, 558, 576, 504, 1126, 10663, 15695, 15697, 2]
+// Dependencies: [2129, 1085, 558, 576, 504, 1126, 10663, 15718, 15720, 2]
 
-// Module 15694 (LanguageSetting)
+// Module 15717 (LanguageSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import LanguageIcon from "LanguageIcon" /* 15695 */;
+import LanguageIcon from "LanguageIcon" /* 15718 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

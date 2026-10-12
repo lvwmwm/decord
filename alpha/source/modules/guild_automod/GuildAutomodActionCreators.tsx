@@ -1,17 +1,17 @@
-// Module ID: 11453
-// Function ID: 11454
+// Module ID: 11455
+// Function ID: 11456
 // Name: GuildAutomodActionCreators
-// Dependencies: [5, 2119, 2087, 4750, 1085, 11454, 1388, 11, 1295, 11447, 5107, 7239, 584, 2]
+// Dependencies: [5, 2119, 2087, 4750, 1085, 11456, 1388, 11, 1295, 11449, 5107, 7240, 584, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11453 (GuildAutomodActionCreators)
+// Module 11455 (GuildAutomodActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import AutomodFeedback from "AutomodFeedback" /* 7239 */;
-import DataUtils from "DataUtils" /* 11454 */;
+import AutomodFeedback from "AutomodFeedback" /* 7240 */;
+import DataUtils from "DataUtils" /* 11456 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -116,7 +116,7 @@ let obj = function _validateAutomodRule() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _executeAlertAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -297,7 +297,7 @@ obj = function _executeAlertAction() {
           return obj;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp7) {
         c3 = 3;
         throw tmp7;

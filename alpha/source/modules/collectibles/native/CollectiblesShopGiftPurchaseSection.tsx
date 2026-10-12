@@ -1,10 +1,10 @@
-// Module ID: 12708
-// Function ID: 12709
+// Module ID: 12710
+// Function ID: 12711
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8316, 7143, 1085, 1392, 21, 5092, 587, 6664, 10095, 504, 8308, 10099, 6851, 10181, 1265, 12709, 584, 5934, 5300, 12710, 2000, 1382, 10114, 5088, 1126, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 8317, 7144, 1085, 1392, 21, 5092, 587, 6665, 10096, 504, 8309, 10100, 6852, 10182, 1265, 12711, 584, 5934, 5300, 12712, 2000, 1382, 10115, 5088, 1126, 5379, 2]
 // Exports: default
 
-// Module 12708 (CollectiblesShopGiftPurchaseSection)
+// Module 12710 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,11 +12,11 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7143 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8316 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -230,7 +230,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -267,7 +267,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
               closure_128_9();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

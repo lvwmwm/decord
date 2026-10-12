@@ -1,9 +1,9 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15164
+// Function ID: 15165
 // Name: FamilyCenterFeatureRow
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 2568, 11533, 15142, 15143, 12082, 6651, 8730, 15138, 5088, 5377, 6264, 6179, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 2568, 11535, 15165, 15166, 12084, 6652, 8731, 15161, 5088, 5377, 6265, 6180, 2]
 
-// Module 15141 (FamilyCenterFeatureRow)
+// Module 15164 (FamilyCenterFeatureRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,15 +11,15 @@ import intl11 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import TableRow2 from "TableRow" /* 6179 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import EyeIcon from "EyeIcon" /* 6651 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8730 */;
-import useAgeSpecificText4 from "useAgeSpecificText" /* 11533 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12082 */;
-import QrCodeIcon from "QrCodeIcon" /* 15138 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15142 */;
-import ChatCheckIcon from "ChatCheckIcon" /* 15143 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import EyeIcon from "EyeIcon" /* 6652 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8731 */;
+import useAgeSpecificText4 from "useAgeSpecificText" /* 11535 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12084 */;
+import QrCodeIcon from "QrCodeIcon" /* 15161 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15165 */;
+import ChatCheckIcon from "ChatCheckIcon" /* 15166 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
                   return closure_1_4(TableRow, obj, header);
                 })
         };
-        const TableRowGroup = tmp(6264).TableRowGroup;
+        const TableRowGroup = tmp(6265).TableRowGroup;
         items[1] = React3(TableRowGroup, obj7);
         const tmp45 = hasOwnProperty(Stack, obj6);
         cResult[20] = arr;

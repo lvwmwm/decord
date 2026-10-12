@@ -1,9 +1,9 @@
-// Module ID: 15840
-// Function ID: 15841
+// Module ID: 15863
+// Function ID: 15864
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5056, 558, 576, 5934, 9635, 6894, 6838, 1126, 15841, 15843, 5051, 6898, 15846, 1382, 10347, 15847, 10663, 14041, 2041, 2]
+// Dependencies: [19, 17, 21, 5056, 558, 576, 5934, 9636, 6895, 6839, 1126, 15864, 15866, 5051, 6899, 15869, 1382, 10348, 15870, 10663, 14064, 2041, 2]
 
-// Module 15840 (ViewDebugLogsSetting)
+// Module 15863 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
@@ -13,16 +13,16 @@ import UserSettings from "UserSettings" /* 2041 */;
 import ClockIcon from "ClockIcon" /* 5051 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
-import ActionSheetRow from "ActionSheetRow" /* 6894 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9635 */;
-import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10347 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14041 */;
-import WrenchIcon from "WrenchIcon" /* 15841 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15843 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15846 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15847 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheetRow from "ActionSheetRow" /* 6895 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9636 */;
+import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10348 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14064 */;
+import WrenchIcon from "WrenchIcon" /* 15864 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 15866 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 15869 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 15870 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
@@ -108,7 +108,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
       obj2.pushLazy(Promise.resolve(obj3));
     }
   };
-  return closure_5(title(6894).ActionSheetRow, obj);
+  return closure_5(title(6895).ActionSheetRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDebugLogsActionSheet() {
@@ -128,7 +128,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl5.t.BUOCPi) };
-    const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp6 = hasOwnProperty(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp6;
@@ -177,7 +177,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { header: first, children: tmp23(Group, obj7) };
-    const ActionSheet = tmp(6898).ActionSheet;
+    const ActionSheet = tmp(6899).ActionSheet;
     const items = [tmp12, , ];
     const obj5 = {
       icon: tmp16,
@@ -188,7 +188,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
           return closure_1_5(Suspense, obj);
         }
     };
-    Group = tmp(6894).ActionSheetRow.Group;
+    Group = tmp(6895).ActionSheetRow.Group;
     items[1] = hasOwnProperty(closure_8, obj5);
     let tmp22Result = null;
     tmp23 = metroRequire;

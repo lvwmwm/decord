@@ -1,14 +1,14 @@
-// Module ID: 17251
-// Function ID: 17252
+// Module ID: 17177
+// Function ID: 17178
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 12996, 1126, 3849, 558, 576, 2]
+// Dependencies: [32, 19, 1126, 3849, 12999, 558, 576, 2]
 // Exports: secretRequestStatuses
 
-// Module 17251 (ConjureSecretRequestState)
+// Module 17177 (ConjureSecretRequestState)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureChatStore from "ConjureChatStore" /* 12996 */;
+import conjureChatTurns from "conjureChatTurns" /* 12999 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -27,7 +27,6 @@ function isSecretsSavedMessage(content) {
   }
   return tmp5;
 }
-const turnSettled = ConjureChatStore.turnSettled;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretRequestStatusChanged(cardId, arg1) {
   let flag;
   let tmp6;
@@ -136,9 +135,10 @@ export const secretRequestStatuses = function secretRequestStatuses(memo, stateF
           flag3 = flag;
           flag4 = flag2;
           if (0 !== fields.length) {
+            let obj3 = conjureChatTurns;
             flag3 = flag;
             flag4 = flag2;
-            if (turnSettled(tmp4)) {
+            if (obj3.turnSettled(tmp4)) {
               if (flag) {
                 if (null == set1) {
                   let result = map.set(tmp4.render_id, "pending");

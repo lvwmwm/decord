@@ -1,12 +1,12 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14025
+// Function ID: 14026
 // Name: handleBlockedOrIgnoredUserVoiceChannelJoin
-// Dependencies: [2065, 5110, 14003, 14004, 2]
+// Dependencies: [2065, 5110, 14026, 14027, 2]
 // Exports: default
 
-// Module 14002 (handleBlockedOrIgnoredUserVoiceChannelJoin)
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 14003 */;
-import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 14004 */;
+// Module 14025 (handleBlockedOrIgnoredUserVoiceChannelJoin)
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 14026 */;
+import showVoiceChannelBlockedUserWarning from "showVoiceChannelBlockedUserWarning" /* 14027 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import size from "module_2" /* 2 */;

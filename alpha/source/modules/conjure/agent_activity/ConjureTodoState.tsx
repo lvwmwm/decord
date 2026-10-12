@@ -1,17 +1,16 @@
-// Module ID: 17237
-// Function ID: 17238
+// Module ID: 17175
+// Function ID: 17176
 // Name: ConjureTodoState
-// Dependencies: [12996, 17166, 2]
+// Dependencies: [12999, 17176, 2]
 // Exports: checklistExpanded, checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, toggleChecklist, unfinishedTodoCount
 
-// Module 17237 (ConjureTodoState)
-import ConjureChatStore from "ConjureChatStore" /* 12996 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 17166 */;
+// Module 17175 (ConjureTodoState)
+import conjureChatTurns from "conjureChatTurns" /* 12999 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 17176 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
-const turnSettled = ConjureChatStore.turnSettled;
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTodoState.tsx");
 
 export function todoMark(status, flag2) {
@@ -36,8 +35,9 @@ export const todoLabel = function todoLabel(activeForm, todoMarkResult) {
   text = activeForm.text;
 };
 export const checklistLive = function checklistLive(memo) {
-  let tmp2 = !turnSettled(memo);
-  turnSettled(memo);
+  const obj = conjureChatTurns;
+  let tmp2 = !obj.turnSettled(memo);
+  obj.turnSettled(memo);
   if (tmp2) {
     tmp2 = true !== memo.stopRequested;
   }

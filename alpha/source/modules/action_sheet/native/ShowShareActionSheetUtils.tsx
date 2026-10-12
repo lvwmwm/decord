@@ -1,17 +1,17 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 8484
+// Function ID: 8485
 // Name: ShowShareActionSheetUtils
-// Dependencies: [1085, 8484, 1265, 8485, 1384, 1382, 6143, 2]
+// Dependencies: [1085, 8485, 1265, 8486, 1384, 1382, 6144, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8483 (ShowShareActionSheetUtils)
+// Module 8484 (ShowShareActionSheetUtils)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
-import FileExtensionUtils from "FileExtensionUtils" /* 6143 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8484 */;
-import MobileMediaViewerShareExperiment from "MobileMediaViewerShareExperiment" /* 8485 */;
+import FileExtensionUtils from "FileExtensionUtils" /* 6144 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8485 */;
+import MobileMediaViewerShareExperiment from "MobileMediaViewerShareExperiment" /* 8486 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

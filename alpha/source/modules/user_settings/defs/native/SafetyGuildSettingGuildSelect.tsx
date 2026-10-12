@@ -1,19 +1,19 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16279
+// Function ID: 16280
 // Name: SafetyGuildSettingGuildSelect
-// Dependencies: [19, 5963, 14944, 16257, 7992, 5056, 16258, 2000, 558, 576, 16259, 1126, 10663, 2]
+// Dependencies: [19, 5963, 14967, 16280, 7993, 5056, 16281, 2000, 558, 576, 16282, 1126, 10663, 2]
 
-// Module 16256 (SafetyGuildSettingGuildSelect)
+// Module 16279 (SafetyGuildSettingGuildSelect)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 16259 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 16282 */;
 import react from "react" /* 19 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14944 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16257 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14967 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16280 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
@@ -108,7 +108,7 @@ let obj = {
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(16258, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    obj.openLazy(asyncRequire(16281, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 const guildSelector = SettingBuilders.createGuildSelector(obj);

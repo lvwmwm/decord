@@ -1,16 +1,16 @@
-// Module ID: 12143
-// Function ID: 12144
+// Module ID: 12145
+// Function ID: 12146
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1205, 1241, 21, 5092, 587, 1382, 4818, 12138, 4850, 5378, 11860, 6184, 1126, 6156, 4969, 6820, 6821, 9514, 1200, 2]
+// Dependencies: [32, 19, 17, 1205, 1241, 21, 5092, 587, 1382, 4818, 12140, 4850, 5378, 11862, 6185, 1126, 6157, 4969, 6821, 6822, 9515, 1200, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 12143 (EmojiSuggestionChatButton)
+// Module 12145 (EmojiSuggestionChatButton)
 import nativeDefault from "native" /* 587 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12138 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 12140 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

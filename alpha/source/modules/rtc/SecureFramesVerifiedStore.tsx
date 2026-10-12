@@ -1,22 +1,22 @@
-// Module ID: 8810
-// Function ID: 8811
+// Module ID: 8811
+// Function ID: 8812
 // Name: SecureFramesVerifiedStore
-// Dependencies: [502, 5110, 7428, 8811, 8812, 1085, 8828, 5900, 5137, 504, 584, 2]
+// Dependencies: [502, 5110, 7429, 8812, 8813, 1085, 8829, 5900, 5137, 504, 584, 2]
 
-// Module 8810 (SecureFramesVerifiedStore)
+// Module 8811 (SecureFramesVerifiedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8828 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8829 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7428 */;
-import TransientKeyStore from "TransientKeyStore" /* 8811 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 8812 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import TransientKeyStore from "TransientKeyStore" /* 8812 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 8813 */;
 import size from "module_2" /* 2 */;
 
-const f99481 = (acc, item) => {
+const f99700 = (acc, item) => {
   const obj = closure_0(dependencyMap[7]);
   const tmp = true === map.get(obj.decodeStreamKey(item).ownerId);
   const value = map1.get(item);
@@ -68,7 +68,7 @@ function handleUserUpdate(userId) {
       const result = map.set(userId, isKeyVerifiedResult);
     }
     const allActiveStreamKeys = StreamRTCConnectionStore.getAllActiveStreamKeys();
-    const reduced = allActiveStreamKeys.reduce(f99481, false);
+    const reduced = allActiveStreamKeys.reduce(f99700, false);
     const tmp16 = computeCallVerification();
     if (!flag) {
       flag = reduced;
@@ -153,7 +153,7 @@ let obj = {
       return tmp;
     }, false);
     const allActiveStreamKeys = StreamRTCConnectionStore.getAllActiveStreamKeys();
-    const reduced1 = allActiveStreamKeys.reduce(f99481, false);
+    const reduced1 = allActiveStreamKeys.reduce(f99700, false);
     const tmp3 = computeCallVerification();
     if (!reduced) {
       reduced = reduced1;

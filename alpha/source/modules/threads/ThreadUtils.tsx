@@ -1,18 +1,18 @@
-// Module ID: 7922
-// Function ID: 7923
+// Module ID: 7923
+// Function ID: 7924
 // Name: ThreadUtils
-// Dependencies: [109, 6035, 5966, 4752, 1125, 1085, 1126, 7220, 5107, 1265, 7911, 6803, 1403, 558, 576, 504, 11, 4702, 2]
+// Dependencies: [109, 6035, 5966, 4752, 1125, 1085, 1126, 7221, 5107, 1265, 7912, 6804, 1403, 558, 576, 504, 11, 4702, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated
 
-// Module 7922 (ThreadUtils)
+// Module 7923 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import getTimestampStringDefault from "getTimestampString" /* 7220 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7911 */;
+import getTimestampStringDefault from "getTimestampString" /* 7221 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7912 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
@@ -27,7 +27,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(6803);
+const NotificationSettingsUtils = tmp(6804);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };

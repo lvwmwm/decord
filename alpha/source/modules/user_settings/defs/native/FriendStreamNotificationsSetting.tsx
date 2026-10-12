@@ -1,13 +1,13 @@
-// Module ID: 15774
-// Function ID: 15775
+// Module ID: 15797
+// Function ID: 15798
 // Name: FriendStreamNotificationsSetting
-// Dependencies: [7992, 10663, 1126, 2041, 15775, 2]
+// Dependencies: [7993, 10663, 1126, 2041, 15798, 2]
 
-// Module 15774 (FriendStreamNotificationsSetting)
+// Module 15797 (FriendStreamNotificationsSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 15775 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 15798 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

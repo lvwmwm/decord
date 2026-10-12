@@ -1,14 +1,14 @@
-// Module ID: 8799
-// Function ID: 8800
+// Module ID: 8800
+// Function ID: 8801
 // Name: HeadphonesDenyIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8800, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8801, 4817, 2]
 
-// Module 8799 (HeadphonesDenyIcon)
+// Module 8800 (HeadphonesDenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8800 */;
+import AssetRegistry from "AssetRegistry" /* 8801 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

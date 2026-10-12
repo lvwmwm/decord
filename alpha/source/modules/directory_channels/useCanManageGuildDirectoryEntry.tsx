@@ -1,9 +1,9 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 12005
+// Function ID: 12006
 // Name: useCanManageGuildDirectoryEntry
 // Dependencies: [2065, 2087, 4750, 1085, 558, 576, 504, 2]
 
-// Module 12003 (useCanManageGuildDirectoryEntry)
+// Module 12005 (useCanManageGuildDirectoryEntry)
 import Constants from "Constants" /* 1085 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;

@@ -1,24 +1,24 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 11510
+// Function ID: 11511
 // Name: PollsActionCreators
-// Dependencies: [5, 4751, 7312, 502, 2065, 7243, 5891, 5432, 7907, 10488, 1085, 38, 5299, 1126, 6097, 6919, 11509, 11511, 5107, 12, 504, 584, 7900, 11520, 4969, 11514, 7178, 9264, 5635, 2]
+// Dependencies: [5, 4751, 7313, 502, 2065, 7244, 5891, 5432, 7908, 10489, 1085, 38, 5299, 1126, 6098, 6920, 11511, 11513, 5107, 12, 504, 584, 7901, 11522, 4969, 11516, 7179, 9265, 5635, 2]
 
-// Module 11508 (PollsActionCreators)
+// Module 11510 (PollsActionCreators)
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6919 */;
-import DraftStore from "DraftStore" /* 7243 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 11509 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6920 */;
+import DraftStore from "DraftStore" /* 7244 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 11511 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7312 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7313 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildVerificationStore from "GuildVerificationStore" /* 5891 */;
 import MessageStore from "MessageStore" /* 5432 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7907 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10488 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10489 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -426,7 +426,7 @@ obj = function _handleClearPollVote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -485,7 +485,7 @@ obj = function _handleClearPollVote() {
                 }
               }
               c4 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -653,7 +653,7 @@ obj = function _createPoll() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -786,7 +786,7 @@ obj = function _createPoll() {
                 duration = 0;
               }
               c6 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp33) {
             closure_3 = tmp33;

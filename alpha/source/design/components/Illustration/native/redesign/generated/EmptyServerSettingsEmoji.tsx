@@ -1,15 +1,15 @@
-// Module ID: 18308
-// Function ID: 18309
+// Module ID: 18366
+// Function ID: 18367
 // Name: EmptyServerSettingsEmoji
-// Dependencies: [19, 17, 21, 8359, 18309, 18310, 18311, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8360, 18367, 18368, 18369, 558, 576, 4969, 2]
 // Exports: getEmptyServerSettingsEmojiSource
 
-// Module 18308 (EmptyServerSettingsEmoji)
+// Module 18366 (EmptyServerSettingsEmoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4969 */;
-import _mod8359 from "module_8359" /* 8359 */;
+import _mod8360 from "module_8360" /* 8360 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmptyServ
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8359;
+    const tmpResult = _mod8360;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -48,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmptyServ
 }) : (function useEmptyServerSettingsEmojiSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8359;
+  const obj2 = _mod8360;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyServerS
   return <Image source={tmp} />;
 });
 function getEmptyServerSettingsEmojiSource(theme) {
-  const obj = _mod8359;
+  const obj = _mod8360;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

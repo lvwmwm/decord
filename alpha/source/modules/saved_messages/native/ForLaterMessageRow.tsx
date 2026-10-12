@@ -1,15 +1,15 @@
-// Module ID: 12670
-// Function ID: 12671
+// Module ID: 12672
+// Function ID: 12673
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 1382, 2041, 7746, 9373, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 1382, 2041, 7747, 9374, 2]
 
-// Module 12670 (ForLaterMessageRow)
+// Module 12672 (ForLaterMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import useThemeDefault from "useTheme" /* 5031 */;
-import RowGeneratorDefault from "RowGenerator" /* 7746 */;
-import ChatItemDefault from "ChatItem" /* 9373 */;
+import RowGeneratorDefault from "RowGenerator" /* 7747 */;
+import ChatItemDefault from "ChatItem" /* 9374 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -95,7 +95,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMess
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const self = this;
       const self2 = this;
-      let obj3 = new tmp5(7746)();
+      let obj3 = new tmp5(7747)();
       const obj4 = { renderEmbeds: tmp12, inlineEmbedMedia: tmp14, inlineAttachmentMedia: tmp16, renderReplies: false, renderExecutedCommands: false, animateEmoji: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderThreadEmbeds: false, renderForumPostActions: false, ignoreMentioned: true, shouldDisableInteractiveComponents: true };
       obj3.setOptions(obj4);
       cResult[8] = obj3;

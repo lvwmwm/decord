@@ -1,13 +1,13 @@
 // Module ID: 11154
 // Function ID: 11155
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 11021, 5092, 558, 576, 1631, 11155, 11156, 4850, 10360, 11157, 2]
+// Dependencies: [19, 21, 11021, 5092, 558, 576, 1631, 11155, 11156, 4850, 10361, 11157, 2]
 
 // Module 11154 (StageChannelCallView)
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
-import StatusBarDefault from "StatusBar" /* 10360 */;
+import StatusBarDefault from "StatusBar" /* 10361 */;
 import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 11155 */;
 import StageChannelBackgroundDefault from "StageChannelBackground" /* 11156 */;
 import StageChannelCallListDefault from "StageChannelCallList" /* 11157 */;

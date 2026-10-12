@@ -1,14 +1,14 @@
-// Module ID: 17358
-// Function ID: 17359
+// Module ID: 17415
+// Function ID: 17416
 // Name: ChannelTitle
-// Dependencies: [19, 5967, 21, 5092, 587, 558, 576, 17354, 5088, 2]
+// Dependencies: [19, 5967, 21, 5092, 587, 558, 576, 17411, 5088, 2]
 
-// Module 17358 (ChannelTitle)
+// Module 17415 (ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17354 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17411 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,16 +1,16 @@
-// Module ID: 16640
-// Function ID: 16641
+// Module ID: 16664
+// Function ID: 16665
 // Name: TextChannel
-// Dependencies: [19, 17, 2064, 2117, 2065, 4750, 6035, 5966, 11758, 21, 5092, 587, 16543, 8202, 8158, 12085, 558, 576, 5413, 504, 7014, 5103, 1124, 10282, 16542, 8512, 5421, 5088, 12086, 8650, 16641, 16642, 8541, 16647, 6161, 2]
+// Dependencies: [19, 17, 2064, 2117, 2065, 4750, 6035, 5966, 11760, 21, 5092, 587, 16566, 8203, 8159, 12087, 558, 576, 5413, 504, 7015, 5103, 1124, 10283, 16565, 8513, 5421, 5088, 12088, 8651, 16665, 16666, 8542, 16671, 6162, 2]
 
-// Module 16640 (TextChannel)
+// Module 16664 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1124 */;
 import transitionToChannel2 from "transitionToChannel" /* 5103 */;
 import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5413 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10282 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import GatedChannelStore from "GatedChannelStore" /* 2117 */;
@@ -18,7 +18,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11758 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

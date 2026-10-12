@@ -1,17 +1,17 @@
-// Module ID: 18633
-// Function ID: 18634
+// Module ID: 18691
+// Function ID: 18692
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1390, 18627, 18629, 5934, 18628, 4809, 1126, 2862, 558, 576, 1503, 18632, 2]
+// Dependencies: [5, 19, 1390, 18685, 18687, 5934, 18686, 4809, 1126, 2862, 558, 576, 1503, 18690, 2]
 // Exports: getScreensForTaskType
 
-// Module 18633 (SafetyFlowsUtils)
+// Module 18691 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1126 */;
 import _modDef2862 from "module_2862" /* 2862 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import types from "types" /* 18627 */;
-import constants from "constants" /* 18628 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18629 */;
+import types from "types" /* 18685 */;
+import constants from "constants" /* 18686 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18687 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -37,7 +37,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -174,7 +174,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -220,7 +220,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -261,7 +261,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -307,7 +307,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp14) {
           c4 = 3;

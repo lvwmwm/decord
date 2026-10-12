@@ -1,14 +1,14 @@
-// Module ID: 15655
-// Function ID: 15656
+// Module ID: 15678
+// Function ID: 15679
 // Name: EmojiNerdFaceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 15656, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 15679, 4817, 2]
 
-// Module 15655 (EmojiNerdFaceIcon)
+// Module 15678 (EmojiNerdFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 15656 */;
+import AssetRegistry from "AssetRegistry" /* 15679 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

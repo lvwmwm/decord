@@ -1,10 +1,10 @@
-// Module ID: 7046
-// Function ID: 7047
+// Module ID: 7047
+// Function ID: 7048
 // Name: StickerSendability
 // Dependencies: [2125, 6032, 1085, 4769, 5749, 4755, 2]
 // Exports: isSendableSticker
 
-// Module 7046 (StickerSendability)
+// Module 7047 (StickerSendability)
 import Constants from "Constants" /* 1085 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;

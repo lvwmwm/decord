@@ -1,10 +1,10 @@
-// Module ID: 14781
-// Function ID: 14782
+// Module ID: 14805
+// Function ID: 14806
 // Name: MediaPlayerManager
-// Dependencies: [17, 2064, 6074, 2065, 5432, 4750, 1999, 1085, 6067, 14782, 1096, 3, 570, 1272, 2002, 4977, 584, 1382, 568, 7178, 6072, 2]
+// Dependencies: [17, 2064, 6074, 2065, 5432, 4750, 1999, 1085, 6067, 14806, 1096, 3, 570, 1272, 2002, 4977, 584, 1382, 568, 7179, 6072, 2]
 // Exports: isPlaybackComplete
 
-// Module 14781 (MediaPlayerManager)
+// Module 14805 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -13,7 +13,7 @@ import Constants2 from "Constants" /* 1096 */;
 import react_native from "react-native" /* 1272 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
 import react_native2 from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import VoicePanelStore from "VoicePanelStore" /* 6074 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14782 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14806 */;
 import module_570 from "module_570" /* 570 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Set",
-    showPip: -1.5,
+    showPip: "Bouvet Island",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));

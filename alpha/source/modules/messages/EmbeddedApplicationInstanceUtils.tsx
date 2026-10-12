@@ -1,9 +1,9 @@
-// Module ID: 13510
-// Function ID: 13511
+// Module ID: 13533
+// Function ID: 13534
 // Name: EmbeddedApplicationInstanceUtils
-// Dependencies: [19, 558, 576, 1126, 8512, 10920, 2]
+// Dependencies: [19, 558, 576, 1126, 8513, 10920, 2]
 
-// Module 13510 (EmbeddedApplicationInstanceUtils)
+// Module 13533 (EmbeddedApplicationInstanceUtils)
 import react2 from "react" /* 576 */;
 import intl12 from "intl" /* 1126 */;
 import react from "react" /* 19 */;
@@ -31,7 +31,7 @@ function getJoinOrStartButtonState(channel) {
     stringResult = string(t.sqe0hj);
     tmp6 = tmp2;
   }
-  const tmp6Result = tmp6(8512);
+  const tmp6Result = tmp6(8513);
   const result = tmp6Result.isActivitiesInTextEnabled(channel);
   if (null != embeddedActivity) {
     if (null != currentEmbeddedActivity) {

@@ -1,9 +1,9 @@
-// Module ID: 15988
-// Function ID: 15989
+// Module ID: 16011
+// Function ID: 16012
 // Name: CheckpointTraitOptionNames
 // Dependencies: [5494, 3118, 5461, 5565, 5581, 5479, 5596, 5611, 5463, 2]
 
-// Module 15988 (CheckpointTraitOptionNames)
+// Module 16011 (CheckpointTraitOptionNames)
 import _modDef3118 from "module_3118" /* 3118 */;
 import CheckpointTrait from "CheckpointTrait" /* 5461 */;
 import CheckpointCharacterBase from "CheckpointCharacterBase" /* 5463 */;

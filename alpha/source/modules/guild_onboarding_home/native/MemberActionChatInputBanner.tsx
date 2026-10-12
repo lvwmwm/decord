@@ -1,9 +1,9 @@
-// Module ID: 11983
-// Function ID: 11984
+// Module ID: 11985
+// Function ID: 11986
 // Name: MemberActionChatInputBanner
-// Dependencies: [32, 19, 17, 5081, 5987, 2065, 2125, 1085, 1393, 21, 5092, 587, 558, 576, 573, 5421, 5088, 1126, 1200, 11359, 1415, 6156, 4764, 11984, 9320, 4850, 5093, 11985, 6184, 1112, 11982, 6924, 2]
+// Dependencies: [32, 19, 17, 5081, 5987, 2065, 2125, 1085, 1393, 21, 5092, 587, 558, 576, 573, 5421, 5088, 1126, 1200, 11359, 1415, 6157, 4764, 11986, 9321, 4850, 5093, 11987, 6185, 1112, 11984, 6925, 2]
 
-// Module 11983 (MemberActionChatInputBanner)
+// Module 11985 (MemberActionChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,12 +17,12 @@ import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import Pressables from "Pressables" /* 6184 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import Pressables from "Pressables" /* 6185 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11359 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11982 */;
-import MemberActionUtils from "MemberActionUtils" /* 11984 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11985 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11984 */;
+import MemberActionUtils from "MemberActionUtils" /* 11986 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11987 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -45,7 +45,7 @@ let obj3;
 let size;
 let size1;
 let tmp;
-const GuildOnboardingHomeTypes = tmp(9320);
+const GuildOnboardingHomeTypes = tmp(9321);
 let View = react_native.View;
 let ChannelStore = ChannelStore_mod;
 let Routes = Constants.Routes;
@@ -955,7 +955,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj = channel(576);
   const cResult = obj.c(5);
   channel = channel.channel;
-  const obj2 = channel(6924);
+  const obj2 = channel(6925);
   const canSeeOnboardingHome = obj2.useCanSeeOnboardingHome(channel.guild_id);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildMemberStore];
@@ -982,7 +982,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmpResult = channel(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   let tmp9 = null;
-  const tmpResult2 = channel(11984);
+  const tmpResult2 = channel(11986);
   if (!tmpResult2.useAllActionsCompleted(channel.guild_id)) {
     tmp9 = null;
     if (!stateFromStores) {
@@ -1005,7 +1005,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   return tmp9;
 }) : (function MemberActionChatInputBannerGuarded(channel) {
   channel = channel.channel;
-  const obj = channel(6924);
+  const obj = channel(6925);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [GuildMemberStore];
   const obj2 = channel(573);
@@ -1018,7 +1018,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return true === isPending;
   });
   let tmp3 = null;
-  const obj3 = channel(11984);
+  const obj3 = channel(11986);
   if (!obj3.useAllActionsCompleted(channel.guild_id)) {
     tmp3 = null;
     if (!stateFromStores) {

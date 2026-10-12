@@ -1,9 +1,9 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 12996
+// Function ID: 12997
 // Name: ConjureProjectsSheet
-// Dependencies: [19, 17, 4939, 10651, 6921, 21, 5092, 587, 5056, 4977, 12341, 558, 576, 12995, 12997, 6179, 6264, 6158, 504, 5088, 1126, 3849, 5377, 5379, 11411, 1631, 5396, 6838, 6898, 6306, 2]
+// Dependencies: [19, 17, 4939, 10652, 6922, 21, 5092, 587, 5056, 4977, 12343, 558, 576, 12997, 13002, 6180, 6265, 6159, 504, 5088, 1126, 3849, 5377, 5379, 11413, 1631, 5396, 6839, 6899, 6307, 2]
 
-// Module 12994 (ConjureProjectsSheet)
+// Module 12996 (ConjureProjectsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,15 +13,15 @@ import _modDef3849 from "module_3849" /* 3849 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import BottomSheetModal from "BottomSheetModal" /* 6306 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6838 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import openConjureProject from "openConjureProject" /* 12341 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import openConjureProject from "openConjureProject" /* 12343 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6921 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6922 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -57,7 +57,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     fallbackGuildId = entry.fallbackGuildId;
   }
   if (cResult[0] !== entry) {
-    const tmpResult = tmp(12995);
+    const tmpResult = tmp(12997);
     const result = tmpResult.describeConjureProjectRow(entry);
     let num = 0;
     cResult[0] = entry;
@@ -69,7 +69,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   ({ serverName, label } = tmp4);
   if (cResult[2] !== entry.project) {
     let obj2 = { project: entry.project, size: "list" };
-    const tmp9 = closure_6(fallbackGuildId(12997), obj2);
+    const tmp9 = closure_6(fallbackGuildId(13002), obj2);
     cResult[2] = entry.project;
     cResult[3] = tmp9;
     tmp6 = tmp9;
@@ -110,7 +110,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       }
     }
     let obj3 = { label: entry.name, subLabel: serverName, accessibilityLabel: label, icon: tmp6, trailing: tmp10, disabled: null == fallbackGuildId, onPress: tmp15 };
-    const tmp18 = closure_6(tmp(6179).TableRow, obj3);
+    const tmp18 = closure_6(tmp(6180).TableRow, obj3);
     cResult[9] = label;
     cResult[10] = entry.name;
     cResult[11] = serverName;
@@ -167,14 +167,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   if (fallbackGuildId == null) {
     fallbackGuildId = entry.fallbackGuildId;
   }
-  let obj = entry(12995);
+  let obj = entry(12997);
   const result = obj.describeConjureProjectRow(entry);
   ({ serverName, label } = result);
   let obj2 = {
     label: entry.name,
     subLabel: serverName,
     accessibilityLabel: label,
-    icon: closure_6(fallbackGuildId(12997), obj3),
+    icon: closure_6(fallbackGuildId(13002), obj3),
     trailing: tmp2Result,
     disabled: null == fallbackGuildId,
     onPress() {
@@ -210,7 +210,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       }
     }
   };
-  const TableRow = entry(6179).TableRow;
+  const TableRow = entry(6180).TableRow;
   obj3 = { project: entry.project, size: "list" };
   tmp2Result = undefined;
   if ("building" === entry.activity) {
@@ -244,7 +244,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
         return tmp7;
       }
       const obj2 = { title, hasIcons: true, children: tmp4 };
-      const tmp9 = closure_6(tmp(6264).TableRowGroup, obj2);
+      const tmp9 = closure_6(tmp(6265).TableRowGroup, obj2);
       cResult[5] = tmp4;
       cResult[6] = title;
       cResult[7] = tmp9;
@@ -456,9 +456,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetB
   let obj = stateFromStores1(576);
   const cResult = obj.c(46);
   const tmp4 = closure_9(0);
-  const obj2 = stateFromStores1(12995);
+  const obj2 = stateFromStores1(12997);
   const conjureProjects = obj2.useConjureProjects(VibegrationsProjectsSheet);
-  const obj3 = stateFromStores1(12995);
+  const obj3 = stateFromStores1(12997);
   const conjureEligibleGuilds = obj3.useConjureEligibleGuilds(VibegrationsProjectsSheet);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];
@@ -1003,7 +1003,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   useMountEffectDefault(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(_modDef3849.uk6jhJ) };
-    const BottomSheetTitleHeader = tmp(6838).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[1] = tmp10;
@@ -1034,7 +1034,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
     return tmp16;
   }
   const obj4 = { scrollable: true, header: tmp8, children: metroRequire(BottomSheetModal.BottomSheetScrollView, obj5) };
-  const ActionSheet = tmp(6898).ActionSheet;
+  const ActionSheet = tmp(6899).ActionSheet;
   obj5 = { contentContainerStyle: tmp5.scrollContent, scrollIndicatorInsets: tmp11, children: tmp12 };
   const tmp17 = metroRequire(ActionSheet, obj4);
   cResult[5] = tmp5.scrollContent;

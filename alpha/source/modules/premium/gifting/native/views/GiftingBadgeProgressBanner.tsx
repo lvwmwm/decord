@@ -1,17 +1,17 @@
-// Module ID: 10114
-// Function ID: 10115
+// Module ID: 10115
+// Function ID: 10116
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6851, 1273, 8971, 10105, 1126, 2664, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 1273, 8972, 10106, 1126, 2664, 5088, 2]
 
-// Module 10114 (GiftingBadgeProgressBanner)
+// Module 10115 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8971 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -80,7 +80,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
         let tmp15 = null != nextTierIcon;
         if (tmp15) {
           const obj3 = { icon: nextTierIcon, size: 24 };
-          tmp15 = React3(tmp7(10105), obj3);
+          tmp15 = React3(tmp7(10106), obj3);
         }
         cResult[7] = nextTierIcon;
         cResult[8] = tmp15;
@@ -176,7 +176,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
   const tmp8 = hasOwnProperty;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: 24 };
-    tmp10Result = tmp10(tmp2(10105), obj4);
+    tmp10Result = tmp10(tmp2(10106), obj4);
   }
   items2 = [React3(View, obj3), ];
   const obj5 = { variant: "text-md/semibold", children: intl.formatToPlainString(_modDef2664["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };

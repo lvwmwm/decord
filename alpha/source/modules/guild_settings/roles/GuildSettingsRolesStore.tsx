@@ -1,9 +1,9 @@
-// Module ID: 18348
-// Function ID: 18349
+// Module ID: 18406
+// Function ID: 18407
 // Name: GuildSettingsRolesStore
-// Dependencies: [2080, 18349, 2120, 2119, 8638, 18343, 1085, 18350, 12128, 5408, 1388, 1097, 4755, 1103, 2122, 12, 504, 584, 2]
+// Dependencies: [2080, 18407, 2120, 2119, 8639, 18401, 1085, 18408, 12130, 5408, 1388, 1097, 4755, 1103, 2122, 12, 504, 584, 2]
 
-// Module 18348 (GuildSettingsRolesStore)
+// Module 18406 (GuildSettingsRolesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
@@ -14,13 +14,13 @@ import GuildRoleRecord from "GuildRoleRecord" /* 2120 */;
 import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2122 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5408 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12128 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 18343 */;
-import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 18349 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12130 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 18401 */;
+import GuildRoleConnectionsConfigurationStore from "GuildRoleConnectionsConfigurationStore" /* 18407 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8638 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
 import Constants from "Constants" /* 1085 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18350 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 18408 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -868,13 +868,13 @@ let obj2 = {
     let id;
     let role;
     let roles;
-    const f134463 = (item) => map1.get(item);
-    const f134464 = (item, index) => {
+    const f134755 = (item) => map1.get(item);
+    const f134756 = (item, index) => {
       if (!set1.has(index)) {
         found1.push(item);
       }
     };
-    const f134465 = (item, index) => {
+    const f134757 = (item, index) => {
       const obj = { position: length - 1 - index };
       const merged = Object.assign(item);
       return obj;
@@ -885,22 +885,22 @@ let obj2 = {
       return items;
     }));
     let result = map.set(role.id, role);
-    const mapped = roles.map(f134463);
+    const mapped = roles.map(f134755);
     const found = mapped.filter(id(1388).isNotNullish);
     set = new Set(roles);
-    const item = map.forEach(f134464);
-    items = found.map(f134465);
+    const item = map.forEach(f134756);
+    items = found.map(f134757);
     map1 = new Map(items2.map((id) => {
       items = [id.id, id];
       return items;
     }));
     const result1 = map1.set(role.id, role);
-    const mapped1 = roles.map(f134463);
+    const mapped1 = roles.map(f134755);
     const found1 = mapped1.filter(id(1388).isNotNullish);
     const set1 = new Set(roles);
-    const item1 = map1.forEach(f134464);
+    const item1 = map1.forEach(f134756);
     const length = found1.length;
-    items2 = found1.map(f134465);
+    items2 = found1.map(f134757);
     id = undefined;
     if (user != null) {
       id = user.id;

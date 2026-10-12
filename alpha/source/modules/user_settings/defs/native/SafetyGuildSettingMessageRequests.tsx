@@ -1,24 +1,24 @@
-// Module ID: 16267
-// Function ID: 16268
+// Module ID: 16290
+// Function ID: 16291
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [2087, 16257, 7992, 10664, 558, 576, 16268, 15073, 2041, 5299, 1126, 5398, 16269, 7497, 5918, 6683, 16260, 10663, 2]
+// Dependencies: [2087, 16280, 7993, 10664, 558, 576, 16291, 15096, 2041, 5299, 1126, 5398, 16292, 7498, 5918, 6684, 16283, 10663, 2]
 
-// Module 16267 (SafetyGuildSettingMessageRequests)
+// Module 16290 (SafetyGuildSettingMessageRequests)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import AlertDefault from "Alert" /* 5398 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6683 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7497 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 10664 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15073 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16260 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16268 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 16269 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16283 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16291 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 16292 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16257 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16280 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

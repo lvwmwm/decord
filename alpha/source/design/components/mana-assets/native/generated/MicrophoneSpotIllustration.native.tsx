@@ -1,13 +1,13 @@
 // Module ID: 11040
 // Function ID: 11041
 // Name: MicrophoneSpotIllustration
-// Dependencies: [19, 21, 11041, 11042, 11043, 558, 576, 6272, 6156, 2]
+// Dependencies: [19, 21, 11041, 11042, 11043, 558, 576, 6273, 6157, 2]
 
 // Module 11040 (MicrophoneSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import react_native from "react-native" /* 6272 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import react_native from "react-native" /* 6273 */;
 import _modDef11041 from "module_11041" /* 11041 */;
 import _modDef11042 from "module_11042" /* 11042 */;
 import _modDef11043 from "module_11043" /* 11043 */;

@@ -1,18 +1,18 @@
-// Module ID: 9091
-// Function ID: 9092
+// Module ID: 9092
+// Function ID: 9093
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2129, 9089, 7282, 1085, 8345, 584, 5644, 5636, 2]
+// Dependencies: [5, 2129, 9090, 7283, 1085, 8346, 584, 5644, 5636, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9091 (StorefrontCollectionActionCreators)
+// Module 9092 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import StoreUtils from "StoreUtils" /* 5644 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8345 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8346 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9089 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7282 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9090 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7283 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, requestKey;
@@ -197,7 +197,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
                   const _Date = Date;
                   if (Date.now() - collectionPageFetchedAt <= TWELVE_HOURS_MS) {
                     c7 = 3;
-                    return { value: "IconComponent", done: "+51" };
+                    return { value: "IconComponent", done: null };
                   }
                 }
               }
@@ -291,7 +291,7 @@ obj = function _maybeFetchCollectionsAfter() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -337,7 +337,7 @@ obj = function _maybeFetchCollectionsAfter() {
                         const _Date = Date;
                         if (Date.now() - collectionsAfterFetchedAt <= TWELVE_HOURS_MS) {
                           c6 = 3;
-                          return { value: "IconComponent", done: "+51" };
+                          return { value: "IconComponent", done: null };
                         }
                       }
                     }
@@ -383,7 +383,7 @@ obj = function _maybeFetchCollectionsAfter() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp46) {
           closure_3 = tmp46;
           if (0 === c4) {
@@ -445,7 +445,7 @@ obj = function _maybeFetchCollectionsForApplication() {
                   }
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             }
             skuTypes = 1;

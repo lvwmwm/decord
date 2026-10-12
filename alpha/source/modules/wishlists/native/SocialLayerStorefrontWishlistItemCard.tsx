@@ -1,16 +1,16 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 12733
+// Function ID: 12734
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [109, 19, 5440, 12729, 21, 5092, 587, 558, 576, 504, 9028, 6156, 8976, 2]
+// Dependencies: [109, 19, 5440, 12731, 21, 5092, 587, 558, 576, 504, 9029, 6157, 8977, 2]
 
-// Module 12731 (SocialLayerStorefrontWishlistItemCard)
+// Module 12733 (SocialLayerStorefrontWishlistItemCard)
 import nativeDefault from "native" /* 587 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8976 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9028 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8977 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9029 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import SentGiftsStore from "SentGiftsStore" /* 12729 */;
+import SentGiftsStore from "SentGiftsStore" /* 12731 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -25,7 +25,7 @@ let metroImportAll;
 let obj2;
 let size;
 let tmp4;
-const FastImageDefault = tmp4(6156);
+const FastImageDefault = tmp4(6157);
 let closure_3 = ["sku", "isOwned", "source", "wishlistOwnerId", "size"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
@@ -201,7 +201,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerStore
               cResult[30] = tmp36;
               tmp29 = tmp36;
             }
-            OWNED = tmp(8976).WishlistItemCardOverlay.OWNED;
+            OWNED = tmp(8977).WishlistItemCardOverlay.OWNED;
           }
         }
       }

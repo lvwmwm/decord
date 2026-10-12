@@ -1,7 +1,7 @@
 // Module ID: 10964
 // Function ID: 10965
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1200, 8579, 6827, 1497, 1631, 12, 4850, 5093, 5059, 6334, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1200, 8580, 6828, 1497, 1631, 12, 4850, 5093, 5059, 6335, 2]
 
 // Module 10964 (PopoutMenu)
 import _modDef12 from "module_12" /* 12 */;
@@ -10,8 +10,8 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Patterns from "Patterns" /* 5059 */;
 import timing from "timing" /* 5093 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6334 */;
-import FormRowDefault from "FormRow" /* 6827 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
+import FormRowDefault from "FormRow" /* 6828 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,7 +28,7 @@ let obj2;
 let tmp;
 const native = tmp(1200);
 const ReanimatedRexport = tmp(4850);
-const Form = tmp(8579);
+const Form = tmp(8580);
 let react = react_mod;
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -472,7 +472,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutMenu(o
             }
           }
         }
-        const Gesture = tmp(6334).Gesture;
+        const Gesture = tmp(6335).Gesture;
         const LongPressResult = Gesture.LongPress();
         function be() {
           const obj = ReanimatedRexport;
@@ -554,7 +554,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PopoutMenu(o
         }
         const obj6 = { gesture: tmp39, children: closure_6(first2, obj8) };
         obj8 = { ref: ref1, children: trigger };
-        const GestureDetector = tmp(6334).GestureDetector;
+        const GestureDetector = tmp(6335).GestureDetector;
         const items2 = [closure_6(GestureDetector, obj6), ];
         const tmp47 = ref2;
         class De {

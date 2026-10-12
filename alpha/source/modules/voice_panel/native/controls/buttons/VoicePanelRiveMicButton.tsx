@@ -1,7 +1,7 @@
 // Module ID: 11103
 // Function ID: 11104
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 558, 576, 8805, 11104, 4920, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8806, 11104, 4920, 2]
 
 // Module 11103 (VoicePanelRiveMicButton)
 import react_native from "react-native" /* 17 */;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     }
     const tmp8 = jsx;
     if (muted) {
-      MicrophoneIcon = tmp(8805).MicrophoneSlashIcon;
+      MicrophoneIcon = tmp(8806).MicrophoneSlashIcon;
     } else {
       MicrophoneIcon = tmp(11104).MicrophoneIcon;
     }
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     str = "Off";
   }
   if (muted) {
-    let MicrophoneIcon = tmp3(8805).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(8806).MicrophoneSlashIcon;
   } else {
     MicrophoneIcon = tmp3(11104).MicrophoneIcon;
   }

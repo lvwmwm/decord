@@ -1,11 +1,11 @@
-// Module ID: 9071
-// Function ID: 9072
+// Module ID: 9072
+// Function ID: 9073
 // Name: OrderSigningDeferral
-// Dependencies: [5, 9072, 2]
+// Dependencies: [5, 9073, 2]
 // Exports: performSigningDeferralAction
 
-// Module 9071 (OrderSigningDeferral)
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9072 */;
+// Module 9072 (OrderSigningDeferral)
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9073 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj = function _performSigningDeferralAction() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _performSigningDeferralAction() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp13) {
         c1 = 3;
         throw tmp13;

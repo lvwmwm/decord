@@ -1,9 +1,9 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15390
+// Function ID: 15391
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 2041, 9243, 1126, 9103, 11380, 9211, 15368, 9192, 5088, 6181, 2128, 5379, 2]
+// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 2041, 9244, 1126, 9104, 11380, 9212, 15391, 9193, 5088, 6182, 2128, 5379, 2]
 
-// Module 15367 (QuestDisclosureModalInner)
+// Module 15390 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 5088 */;
@@ -70,20 +70,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
     let items1;
     let obj2 = { icon: null, text: null };
     if (setting) {
-      obj2.icon = closure_6(tmp(9243).ServerIcon, { size: "xs" });
+      obj2.icon = closure_6(tmp(9244).ServerIcon, { size: "xs" });
       const intl4 = tmp(1126).intl;
       obj2.text = intl4.string(tmp(1126).t["2bL0wT"]);
       let items = [obj2];
       items1 = items;
     } else {
-      obj2.icon = closure_6(tmp(9103).GlobeEarthIcon, { size: "xs" });
+      obj2.icon = closure_6(tmp(9104).GlobeEarthIcon, { size: "xs" });
       const intl = tmp(1126).intl;
       obj2.text = intl.string(tmp(1126).t.xQSdPv);
       items1 = [obj2, , ];
       const obj3 = { icon: closure_6(tmp(11380).UserIcon, { size: "xs" }), text: intl2.string(tmp(1126).t.mYt7hQ) };
       intl2 = tmp(1126).intl;
       items1[1] = obj3;
-      const obj4 = { icon: closure_6(tmp(9211).GameControllerIcon, { size: "xs" }), text: intl3.string(tmp(1126).t.XAsWxQ) };
+      const obj4 = { icon: closure_6(tmp(9212).GameControllerIcon, { size: "xs" }), text: intl3.string(tmp(1126).t.XAsWxQ) };
       intl3 = tmp(1126).intl;
       items1[2] = obj4;
     }
@@ -95,7 +95,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
   }
   ({ container, contentContainer } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = closure_6(tmp(15368).WumpusCouchSpotIllustration, {});
+    const tmp9 = closure_6(tmp(15391).WumpusCouchSpotIllustration, {});
     cResult[2] = tmp9;
     tmp7 = tmp9;
   } else {
@@ -241,7 +241,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
                                   return tmp(React3, obj, index);
                                 })
                 };
-                const Card = tmp(6181).Card;
+                const Card = tmp(6182).Card;
                 tmp20 = closure_6(Card, obj13);
               }
               cResult[15] = isTargetedDisclosure;
@@ -258,7 +258,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
       }
     }
   }
-  const tmpResult = tmp(9192);
+  const tmpResult = tmp(9193);
   const disclosureText = tmpResult.getDisclosureText({ adCreativeType, gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
   cResult[5] = adCreativeType;
   cResult[6] = cosponsorName;
@@ -349,7 +349,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
           return tmp(React3, obj, index);
         })
     };
-    const Card = tmp2(6181).Card;
+    const Card = tmp2(6182).Card;
     isTargetedDisclosure = tmp6(Card, obj7);
   }
   items2[2] = isTargetedDisclosure;

@@ -1,7 +1,7 @@
 // Module ID: 10743
 // Function ID: 10744
 // Name: SuspiciousDownloadActionSheet
-// Dependencies: [19, 21, 5092, 587, 558, 576, 5056, 4800, 1631, 6268, 1126, 5088, 5377, 5379, 6839, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 5056, 4800, 1631, 6269, 1126, 5088, 5377, 5379, 6840, 2]
 
 // Module 10743 (SuspiciousDownloadActionSheet)
 import nativeDefault from "native" /* 587 */;
@@ -68,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp11 = closure_3(href(6268).TrafficConeSpotIllustration, {});
+      const tmp11 = closure_3(href(6269).TrafficConeSpotIllustration, {});
       cResult[7] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
         }
       }
       const obj8 = { startExpanded: true, children: closure_4(href(5377).Stack, obj9) };
-      BottomSheet = tmp(6839).BottomSheet;
+      BottomSheet = tmp(6840).BottomSheet;
       obj9 = { spacing: 16, justify: "center", align: "center", style: tmp7, children: items1 };
       items1 = [tmp22, tmp30];
       const tmp37 = closure_3(BottomSheet, obj8);
@@ -207,13 +207,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuspiciousDo
   const tmp = closure_5();
   const bottom = useSafeAreaInsetsDefault().bottom;
   let obj = { startExpanded: true, children: closure_4(Stack, obj2) };
-  BottomSheet = href(6839).BottomSheet;
+  BottomSheet = href(6840).BottomSheet;
   obj2 = { spacing: 16, justify: "center", align: "center", style: items, children: items2 };
   items = [tmp.container, { paddingBottom: bottom }];
   Stack = href(5377).Stack;
   const obj3 = { spacing: 8, justify: "center", align: "center", children: items1 };
   const Stack2 = href(5377).Stack;
-  items1 = [closure_3(href(6268).TrafficConeSpotIllustration, {}), , ];
+  items1 = [closure_3(href(6269).TrafficConeSpotIllustration, {}), , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(href(1126).t.XtDo9Z) };
   const Text = href(5088).Text;
   intl = href(1126).intl;

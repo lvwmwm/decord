@@ -1,16 +1,16 @@
-// Module ID: 13209
-// Function ID: 13210
+// Module ID: 13214
+// Function ID: 13215
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 8367, 2049, 10012, 5046, 5088, 1126, 6184, 6207, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 8368, 2049, 10013, 5046, 5088, 1126, 6185, 6208, 2]
 
-// Module 13209 (UserProfileWidgetsBoardEditNotice)
+// Module 13214 (UserProfileWidgetsBoardEditNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import XSmallIcon from "XSmallIcon" /* 6207 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8367 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8368 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp5;
-const SelectedDismissibleContentDefault = tmp5(10012);
+const SelectedDismissibleContentDefault = tmp5(10013);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
           style: closure_0.closeButton,
           children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
         };
-        const PressableOpacity = tmp(6184).PressableOpacity;
+        const PressableOpacity = tmp(6185).PressableOpacity;
         intl2 = tmp(1126).intl;
         items1[2] = hasOwnProperty(PressableOpacity, obj5);
         tmp3 = metroRequire(View, obj);
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
           style: closure_0.closeButton,
           children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
         };
-        const PressableOpacity = tmp(6184).PressableOpacity;
+        const PressableOpacity = tmp(6185).PressableOpacity;
         intl2 = tmp(1126).intl;
         items1[2] = hasOwnProperty(PressableOpacity, obj5);
         tmp3 = metroRequire(View, obj);

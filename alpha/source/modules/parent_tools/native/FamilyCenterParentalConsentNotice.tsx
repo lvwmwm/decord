@@ -1,13 +1,13 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 15152
+// Function ID: 15153
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 5092, 587, 558, 576, 15121, 15122, 4806, 5088, 1126, 2568, 15130, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 15144, 15145, 4806, 5088, 1126, 2568, 15153, 2]
 
-// Module 15129 (FamilyCenterParentalConsentNotice)
+// Module 15152 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15130 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15153 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
             }
             return tmp14;
           }
-          const tmp17 = jsx(onPress(15130), { style: tmp4.container, text: tmp10 });
+          const tmp17 = jsx(onPress(15153), { style: tmp4.container, text: tmp10 });
           cResult[6] = tmp4.container;
           cResult[7] = tmp10;
           cResult[8] = tmp17;

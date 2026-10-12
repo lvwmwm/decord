@@ -1,10 +1,10 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 12980
+// Function ID: 12981
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2129, 1390, 5972, 1085, 1392, 1126, 558, 576, 9170, 7410, 7412, 9189, 2128, 12979, 1989, 504, 12980, 8878, 8879, 5975, 9192, 1901, 10921, 12965, 9203, 7415, 7414, 2]
+// Dependencies: [5, 32, 19, 2129, 1390, 5972, 1085, 1392, 1126, 558, 576, 9171, 7411, 7413, 9190, 2128, 12981, 1989, 504, 12982, 8879, 8880, 5975, 9193, 1901, 10921, 12967, 9204, 7416, 7415, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions
 
-// Module 12978 (QuestCopyHooks)
+// Module 12980 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,15 +13,15 @@ import NumberUtils from "NumberUtils" /* 1901 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7412 */;
-import QuestType from "QuestType" /* 7414 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8879 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9170 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9189 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9192 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
+import QuestType from "QuestType" /* 7415 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8880 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9190 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
 import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10921 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12965 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 12980 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12967 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 12982 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -40,9 +40,9 @@ let metroImportAll;
 let tmp;
 let tmp2;
 const intl13 = tmp(1126);
-const utils_QuestUtils = tmp(7410);
-const GameProfileAnalyticUtils = tmp2(8878);
-const SponsoredQuestUtils = tmp(12979);
+const utils_QuestUtils = tmp(7411);
+const GameProfileAnalyticUtils = tmp2(8879);
+const SponsoredQuestUtils = tmp(12981);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -904,7 +904,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestsIns
     tmp11 = cResult[3];
   }
   if (gameProfileSource == null) {
-    gameProfileSource = tmp(8878).GameProfileSources.QuestHome;
+    gameProfileSource = tmp(8879).GameProfileSources.QuestHome;
   }
   if (cResult[4] === tmp11) {
     let tmp16;
@@ -2036,7 +2036,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -2077,7 +2077,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
           }
           openGameLinkDirectly(tmp18, obj5);
           c2 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         c2 = 3;
@@ -2114,7 +2114,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -2155,7 +2155,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
             }
             openGameLinkDirectly(tmp18, obj5);
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -2207,7 +2207,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCta
     }
     return subtitle;
   }, items);
-  obj2 = quest(9192);
+  obj2 = quest(9193);
   return obj;
 });
 let result = size.fileFinishedImporting("modules/quests/hooks/QuestCopyHooks.tsx");

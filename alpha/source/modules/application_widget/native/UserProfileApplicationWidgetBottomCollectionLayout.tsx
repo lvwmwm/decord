@@ -1,14 +1,14 @@
-// Module ID: 13339
-// Function ID: 13340
+// Module ID: 13362
+// Function ID: 13363
 // Name: UserProfileApplicationWidgetBottomCollectionLayout
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 13245, 6156, 13333, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 13268, 6157, 13356, 5088, 2]
 
-// Module 13339 (UserProfileApplicationWidgetBottomCollectionLayout)
+// Module 13362 (UserProfileApplicationWidgetBottomCollectionLayout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import _mod13245 from "module_13245" /* 13245 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import _mod13268 from "module_13268" /* 13268 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -117,7 +117,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
               const obj4 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: tmp10.text };
               tmp23 = React3(tmp(5088).Text, obj4);
             } else {
-              tmp23 = React3(tmp(13333).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+              tmp23 = React3(tmp(13356).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
             }
             cResult[15] = tmp10.status;
             cResult[16] = tmp10.text;
@@ -128,7 +128,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
             const obj5 = { variant: "text-xs/medium", lineClamp: 2, children: tmp8.text };
             tmp19 = React3(tmp(5088).Text, obj5);
           } else {
-            tmp19 = React3(tmp(13333).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+            tmp19 = React3(tmp(13356).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
           }
           cResult[12] = tmp8.status;
           cResult[13] = tmp8.text;
@@ -141,28 +141,28 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
           tmp14 = React3(FastImageDefault, obj6);
         } else {
           const obj8 = { style: tmp4.itemImage };
-          tmp14 = React3(tmp(13333).ImageSkeleton, obj8);
+          tmp14 = React3(tmp(13356).ImageSkeleton, obj8);
         }
         cResult[9] = tmp6;
         cResult[10] = tmp4.itemImage;
         cResult[11] = tmp14;
         tmp12 = tmp14;
       }
-      const tmpResult = _mod13245;
+      const tmpResult = _mod13268;
       const singleStringOrSkeleton = tmpResult.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
       cResult[6] = componentConfig;
       cResult[7] = resolveFieldValue;
       cResult[8] = singleStringOrSkeleton;
       tmp10 = singleStringOrSkeleton;
     }
-    const tmpResult2 = _mod13245;
+    const tmpResult2 = _mod13268;
     const singleStringOrSkeleton1 = tmpResult2.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
     cResult[3] = componentConfig;
     cResult[4] = resolveFieldValue;
     cResult[5] = singleStringOrSkeleton1;
     tmp8 = singleStringOrSkeleton1;
   }
-  const items2 = [_mod13245.ResolvedValueType.MEDIA];
+  const items2 = [_mod13268.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items2);
   cResult[0] = resolveFieldValue;
   cResult[1] = image;
@@ -184,11 +184,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
   if (componentConfig != null) {
     image = componentConfig.fields.image;
   }
-  const items = [_mod13245.ResolvedValueType.MEDIA];
+  const items = [_mod13268.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const obj = _mod13245;
+  const obj = _mod13268;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(componentConfig, "name", resolveFieldValue);
-  const obj2 = _mod13245;
+  const obj2 = _mod13268;
   const singleStringOrSkeleton1 = obj2.resolveSingleStringOrSkeleton(componentConfig, "description", resolveFieldValue);
   const obj3 = { style: tmp.item, children: items1 };
   if (null != fieldValue) {
@@ -198,7 +198,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
     tmp12 = React3;
   } else {
     const obj6 = { style: tmp.itemImage };
-    tmp11 = React3(tmp3(13333).ImageSkeleton, obj6);
+    tmp11 = React3(tmp3(13356).ImageSkeleton, obj6);
     tmp12 = React3;
   }
   items1 = [tmp11, ];
@@ -207,14 +207,14 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collect
     const obj8 = { variant: "text-xs/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
     tmp12Result = tmp12(tmp3(5088).Text, obj8);
   } else {
-    tmp12Result = tmp12(tmp3(13333).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
+    tmp12Result = tmp12(tmp3(13356).TextSkeleton, { variant: "text-xs/medium", widthChars: 6 });
   }
   items2 = [tmp12Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj9 = { variant: "text-xxs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
     tmp12Result2 = tmp12(tmp3(5088).Text, obj9);
   } else {
-    tmp12Result2 = tmp12(tmp3(13333).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
+    tmp12Result2 = tmp12(tmp3(13356).TextSkeleton, { variant: "text-xxs/medium", widthChars: 10 });
   }
   items2[1] = tmp12Result2;
   items1[1] = hasOwnProperty(View, obj7);

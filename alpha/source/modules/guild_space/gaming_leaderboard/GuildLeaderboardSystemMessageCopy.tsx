@@ -1,10 +1,10 @@
-// Module ID: 8014
-// Function ID: 8015
+// Module ID: 8015
+// Function ID: 8016
 // Name: GuildLeaderboardSystemMessageCopy
 // Dependencies: [4738, 2472, 1102, 1126, 2]
 // Exports: getLeaderboardSystemMessage, getMobileLeaderboardSystemMessage, resolveGuildSpaceLeaderboardMessage
 
-// Module 8014 (GuildLeaderboardSystemMessageCopy)
+// Module 8015 (GuildLeaderboardSystemMessageCopy)
 import DurationsDefault from "Durations" /* 1102 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef2472 from "module_2472" /* 2472 */;

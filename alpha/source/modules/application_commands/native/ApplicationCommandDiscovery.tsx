@@ -1,9 +1,9 @@
-// Module ID: 12106
-// Function ID: 12107
+// Module ID: 12108
+// Function ID: 12109
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 5403, 12107, 9716, 1085, 21, 12108, 5092, 587, 558, 576, 5386, 12109, 1998, 9253, 9807, 4828, 1126, 5107, 12, 1200, 9794, 7246, 12110, 12111, 12112, 2]
+// Dependencies: [32, 19, 17, 5403, 12109, 9717, 1085, 21, 12110, 5092, 587, 558, 576, 5386, 12111, 1998, 9254, 9808, 4828, 1126, 5107, 12, 1200, 9795, 7247, 12112, 12113, 12114, 2]
 
-// Module 12106 (ApplicationCommandDiscovery)
+// Module 12108 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -11,13 +11,13 @@ import native from "native" /* 1200 */;
 import Server from "Server" /* 1998 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import useFontScale from "useFontScale" /* 5386 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9253 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9716 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9794 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12107 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 12108 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 12109 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 12112 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9254 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9795 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12109 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 12110 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 12111 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 12114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -94,7 +94,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
   } else {
     first = cResult[0];
   }
-  let tmpResult = tmp(12109);
+  let tmpResult = tmp(12111);
   const commandDiscoveryManager = tmpResult.useCommandDiscoveryManager(first);
   if (cResult[1] !== channel) {
     const obj4 = { channel, type: "channel" };
@@ -113,7 +113,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
   } else {
     tmp12 = cResult[3];
   }
-  const BuiltInCommandFilter = tmp(9253).BuiltInCommandFilter;
+  const BuiltInCommandFilter = tmp(9254).BuiltInCommandFilter;
   let tmp13 = canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW;
   let tmp14 = !canOnlyUseTextCommands;
   if (cResult[4] === tmp13) {
@@ -137,7 +137,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
         tmp18 = cResult[10];
       }
       let tmp19 = channel;
-      const obj9 = channel(9807);
+      const obj9 = channel(9808);
       const discovery = obj9.useDiscovery(tmp18);
       sectionDescriptors = discovery.sectionDescriptors;
       const activeSections = discovery.activeSections;
@@ -755,7 +755,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
   ref = ref.useRef(false);
   let obj3 = ApplicationCommandDiscoveryManager;
   const commandDiscoveryManager = obj3.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let tmp8 = channel(9807);
+  let tmp8 = channel(9808);
   const obj4 = { context: { channel, type: "channel" }, filters: obj5, options: obj6, allowFetch: true };
   obj5 = { commandTypes: items, builtIns: canOnlyUseTextCommands ? BuiltInCommandFilter.ONLY_TEXT : BuiltInCommandFilter.ALLOW, applicationCommands: !canOnlyUseTextCommands };
   const useDiscovery = tmp8.useDiscovery;

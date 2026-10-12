@@ -1,16 +1,16 @@
-// Module ID: 6730
-// Function ID: 6731
+// Module ID: 6731
+// Function ID: 6732
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 1085, 6731, 21, 6200, 6732, 6733, 5934, 1273, 6766, 6681, 558, 576, 1126, 6687, 2]
+// Dependencies: [5, 19, 1085, 6732, 21, 6201, 6733, 6734, 5934, 1273, 6767, 6682, 558, 576, 1126, 6688, 2]
 
-// Module 6730 (PhoneVerificationModal)
+// Module 6731 (PhoneVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6681 */;
-import PhoneConstants from "PhoneConstants" /* 6731 */;
-import AddPhoneDefault from "AddPhone" /* 6732 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 6733 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 6766 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6682 */;
+import PhoneConstants from "PhoneConstants" /* 6732 */;
+import AddPhoneDefault from "AddPhone" /* 6733 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 6734 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 6767 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -129,7 +129,7 @@ const render2 = function render(arg0, arg1) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {

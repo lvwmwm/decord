@@ -1,14 +1,14 @@
-// Module ID: 7975
-// Function ID: 7976
+// Module ID: 7976
+// Function ID: 7977
 // Name: EmojiColorUtils
-// Dependencies: [4967, 4968, 683, 7924, 2]
+// Dependencies: [4967, 4968, 683, 7925, 2]
 // Exports: buildEmojiColorPalette
 
-// Module 7975 (EmojiColorUtils)
+// Module 7976 (EmojiColorUtils)
 import _modDef683 from "module_683" /* 683 */;
 import ColorUtils from "ColorUtils" /* 4967 */;
 import utils_ColorDefault from "utils/Color" /* 4968 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7924 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7925 */;
 import size from "module_2" /* 2 */;
 
 function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {

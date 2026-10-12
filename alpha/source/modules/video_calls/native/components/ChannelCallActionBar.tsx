@@ -1,7 +1,7 @@
 // Module ID: 11046
 // Function ID: 11047
 // Name: ChannelCallActionBar
-// Dependencies: [19, 17, 2064, 6036, 5111, 5897, 502, 2012, 10831, 5115, 5117, 21, 5092, 10840, 558, 576, 11047, 504, 8788, 5895, 11048, 8785, 10851, 1126, 10841, 11051, 11052, 10357, 11067, 5106, 7443, 5900, 11068, 10812, 11069, 6972, 11070, 6851, 6878, 10844, 11071, 11101, 11129, 2]
+// Dependencies: [19, 17, 2064, 6036, 5111, 5897, 502, 2012, 10831, 5115, 5117, 21, 5092, 10840, 558, 576, 11047, 504, 8789, 5895, 11048, 8786, 10851, 1126, 10841, 11051, 11052, 10358, 11067, 5106, 7444, 5900, 11068, 10812, 11069, 6973, 11070, 6852, 6879, 10844, 11071, 11101, 11129, 2]
 
 // Module 11046 (ChannelCallActionBar)
 import react_native from "react-native" /* 17 */;
@@ -11,12 +11,12 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 *
 import CallConstants from "CallConstants" /* 5115 */;
 import Constants from "Constants" /* 5117 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6851 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import useIsRemoteDefault from "useIsRemote" /* 6972 */;
-import StreamActionCreators from "StreamActionCreators" /* 7443 */;
-import CallsUtils from "CallsUtils" /* 8785 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 10357 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import useIsRemoteDefault from "useIsRemote" /* 6973 */;
+import StreamActionCreators from "StreamActionCreators" /* 7444 */;
+import CallsUtils from "CallsUtils" /* 8786 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 10358 */;
 import useActionBarHeight from "useActionBarHeight" /* 10840 */;
 import CallBarActionAll from "CallBarAction" /* 10841 */;
 import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 10844 */;
@@ -953,7 +953,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActionBa
   let obj = channel(576);
   const cResult = obj.c(15);
   channel = channel.channel;
-  const obj2 = channel(10357);
+  const obj2 = channel(10358);
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelRTCStore, AuthenticationStore];
@@ -1170,7 +1170,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActionBa
 }) : (function useActionBarPrimaryButtons(channel) {
   let currentEmbeddedActivity;
   channel = channel.channel;
-  let obj = channel(10357);
+  let obj = channel(10358);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const items = [ChannelRTCStore, AuthenticationStore];
   const obj2 = channel(504);
@@ -1288,7 +1288,7 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCall
   }
   const tmp11 = closure_30(tmp10);
   const tmp6Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp6Result(tmp6(6878).CHANNEL_CALL_ACTION_BAR).analyticsLocations;
+  const analyticsLocations = tmp6Result(tmp6(6879).CHANNEL_CALL_ACTION_BAR).analyticsLocations;
   const tmpResult = useIsFiveButtonLayout;
   const isFiveButtonLayout = tmpResult.useIsFiveButtonLayout(channel.id);
   const tmp14 = isFiveButtonLayout ? tmp5.containerForFiveButtonLayout : tmp5.container;

@@ -1,14 +1,14 @@
-// Module ID: 14039
-// Function ID: 14040
+// Module ID: 14062
+// Function ID: 14063
 // Name: SignPostIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14040, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 14063, 4817, 2]
 
-// Module 14039 (SignPostIcon)
+// Module 14062 (SignPostIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 14040 */;
+import AssetRegistry from "AssetRegistry" /* 14063 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,13 +1,13 @@
-// Module ID: 14192
-// Function ID: 14193
+// Module ID: 14215
+// Function ID: 14216
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 4775, 1085, 7093, 14193, 5056, 1126, 1265, 5724, 2]
+// Dependencies: [5, 4775, 1085, 7094, 14216, 5056, 1126, 1265, 5724, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 14192 (subscriptionSettingsDeepLink)
+// Module 14215 (subscriptionSettingsDeepLink)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
-import openUserSettings from "openUserSettings" /* 7093 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
 import Constants from "Constants" /* 1085 */;
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

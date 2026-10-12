@@ -1,18 +1,18 @@
-// Module ID: 8487
-// Function ID: 8488
+// Module ID: 8488
+// Function ID: 8489
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5363, 1126, 6207, 8488, 8489, 6153, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5363, 1126, 6208, 8489, 8490, 6154, 5088, 2]
 
-// Module 8487 (SharePreparingModal)
+// Module 8488 (SharePreparingModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Backdrop from "Backdrop" /* 5363 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6153 */;
-import XSmallIcon from "XSmallIcon" /* 6207 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8488 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8489 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8489 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8490 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

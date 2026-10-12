@@ -1,9 +1,9 @@
-// Module ID: 7336
-// Function ID: 7337
+// Module ID: 7337
+// Function ID: 7338
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5757, 2069, 502, 2065, 2119, 2087, 4750, 2066, 3, 2091, 7337, 1097, 4759, 2]
+// Dependencies: [32, 5, 5757, 2069, 502, 2065, 2119, 2087, 4750, 2066, 3, 2091, 7338, 1097, 4759, 2]
 
-// Module 7336 (GuildBasicChannels)
+// Module 7337 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import ChannelStore2 from "ChannelStore" /* 2065 */;
@@ -233,7 +233,7 @@ class GuildBasicChannels {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c7;
@@ -288,7 +288,7 @@ class GuildBasicChannels {
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "IconComponent", done: "+51" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           try {
@@ -332,7 +332,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "r" }, done: true };
+                              return { value: { v: "top" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;
@@ -342,7 +342,7 @@ class GuildBasicChannels {
                                 return { value, done: true };
                               } else {
                                 c6 = 3;
-                                return { value: "IconComponent", done: "+51" };
+                                return { value: "IconComponent", done: null };
                               }
                             } else if (3 === c5) {
                               if (arg0 === 1) {
@@ -400,7 +400,7 @@ class GuildBasicChannels {
                 }
               }
               c10 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } else if (1 === tmp3) {
             c7 = 0;

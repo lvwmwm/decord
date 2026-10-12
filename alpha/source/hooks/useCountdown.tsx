@@ -1,12 +1,12 @@
-// Module ID: 7161
-// Function ID: 7162
+// Module ID: 7162
+// Function ID: 7163
 // Name: useCountdown
-// Dependencies: [19, 558, 576, 4793, 7162, 7167, 2]
+// Dependencies: [19, 558, 576, 4793, 7163, 7168, 2]
 
-// Module 7161 (useCountdown)
+// Module 7162 (useCountdown)
 import react from "react" /* 19 */;
 import DateUtils from "DateUtils" /* 4793 */;
-import useIntervalDefault from "useInterval" /* 7167 */;
+import useIntervalDefault from "useInterval" /* 7168 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdo
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult2 = tmp(7162);
+  const tmpResult2 = tmp(7163);
   const forceUpdate = tmpResult2.useForceUpdate();
   if (cResult[2] === expiresAt) {
     if (cResult[3] === (undefined !== arg3 && arg3)) {
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdo
   }
   let obj = require("DateUtils");
   const diffAsUnitsResult = obj.diffAsUnits(Date.now(), expiresAt);
-  const obj2 = require("module_7162");
+  const obj2 = require("module_7163");
   const forceUpdate = obj2.useForceUpdate();
   const items = [expiresAt, flag, forceUpdate, arg2];
   let tmp5 = null;

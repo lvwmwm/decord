@@ -1,9 +1,9 @@
-// Module ID: 17767
-// Function ID: 17768
+// Module ID: 17824
+// Function ID: 17825
 // Name: TopSoundboardSoundsExperiment
 // Dependencies: [1453, 2]
 
-// Module 17767 (TopSoundboardSoundsExperiment)
+// Module 17824 (TopSoundboardSoundsExperiment)
 import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

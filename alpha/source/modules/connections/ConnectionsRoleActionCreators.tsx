@@ -1,7 +1,7 @@
 // Module ID: 10728
 // Function ID: 10729
 // Name: ConnectionsRoleActionCreators
-// Dependencies: [5, 1085, 1295, 584, 6818, 2]
+// Dependencies: [5, 1085, 1295, 584, 6819, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
 // Module 10728 (ConnectionsRoleActionCreators)
@@ -29,7 +29,7 @@ let obj = function _putRoleConnectionsConfigurations() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -99,7 +99,7 @@ let obj = function _putRoleConnectionsConfigurations() {
             const obj3 = closure_132_1(closure_132_2[3]);
             obj3.dispatch(obj11);
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp27) {
           c6 = 3;

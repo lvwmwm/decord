@@ -1,12 +1,12 @@
 // Module ID: 11187
 // Function ID: 11188
 // Name: ModeratorStartStageHeader
-// Dependencies: [19, 17, 21, 5092, 6258, 558, 576, 11148, 11144, 2]
+// Dependencies: [19, 17, 21, 5092, 6259, 558, 576, 11148, 11144, 2]
 
 // Module 11187 (ModeratorStartStageHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import StageActionHeader from "StageActionHeader" /* 11144 */;
 import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11148 */;
 import react from "react" /* 19 */;

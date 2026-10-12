@@ -1,12 +1,12 @@
-// Module ID: 9330
-// Function ID: 9331
+// Module ID: 9331
+// Function ID: 9332
 // Name: ForumChannelSeenManager
-// Dependencies: [9331, 9329, 7903, 7905, 2]
+// Dependencies: [9332, 9330, 7904, 7906, 2]
 // Exports: getForumPostSeenManagerId, markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 9330 (ForumChannelSeenManager)
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9329 */;
-import AnalyticsFeedItemSeenManager2 from "AnalyticsFeedItemSeenManager" /* 9331 */;
+// Module 9331 (ForumChannelSeenManager)
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9330 */;
+import AnalyticsFeedItemSeenManager2 from "AnalyticsFeedItemSeenManager" /* 9332 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

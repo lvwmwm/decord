@@ -1,7 +1,7 @@
 // Module ID: 5432
 // Function ID: 5433
 // Name: MessageStore
-// Dependencies: [32, 5, 2118, 5433, 2129, 502, 2065, 5751, 4748, 2125, 2087, 4750, 4760, 2116, 4939, 1390, 1085, 3, 11, 5752, 5757, 2091, 5755, 5434, 1403, 12, 7319, 5627, 4762, 7753, 14031, 504, 10782, 5442, 1998, 584, 2]
+// Dependencies: [32, 5, 2118, 5433, 2129, 502, 2065, 5751, 4748, 2125, 2087, 4750, 4760, 2116, 4939, 1390, 1085, 3, 11, 5752, 5757, 2091, 5755, 5434, 1403, 12, 7320, 5627, 4762, 7754, 14054, 504, 10782, 5442, 1998, 584, 2]
 
 // Module 5432 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -16,10 +16,10 @@ import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
 import InteractionTypes from "InteractionTypes" /* 5442 */;
 import ChannelMessagesDefault from "ChannelMessages" /* 5752 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
-import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7319 */;
-import MessageQueue from "MessageQueue" /* 7753 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7320 */;
+import MessageQueue from "MessageQueue" /* 7754 */;
 import canEditMessageDefault from "canEditMessage" /* 10782 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 14031 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 14054 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 2118 */;
@@ -120,7 +120,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         const obj5 = { value, done: true };
         return obj5;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;
@@ -168,7 +168,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         } else if (null != value) {
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } else {
           c5 = 0;
         }
@@ -179,7 +179,7 @@ let obj = function _addPushNotificationMessageIfNotCached() {
         obj3.commit(tmp25.receivePushNotification(closure_1, closure_2));
         closure_132_35.emitChange();
         c7 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp24) {
         tmp25 = c5;
         if (0 === c5) {

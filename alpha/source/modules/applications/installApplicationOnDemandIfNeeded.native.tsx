@@ -1,7 +1,7 @@
 // Module ID: 10860
 // Function ID: 10861
 // Name: installApplicationOnDemandIfNeeded
-// Dependencies: [5, 2022, 5440, 1085, 10861, 6852, 9234, 5107, 4985, 10862, 2]
+// Dependencies: [5, 2022, 5440, 1085, 10861, 6853, 9235, 5107, 4985, 10862, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
 // Module 10860 (installApplicationOnDemandIfNeeded)
@@ -32,7 +32,7 @@ let obj = function _installApplicationOnDemandIfNeeded() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

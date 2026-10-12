@@ -1,7 +1,7 @@
 // Module ID: 11188
 // Function ID: 11189
 // Name: ActiveSpeakerTooltip
-// Dependencies: [32, 19, 17, 6036, 11158, 1085, 21, 5092, 587, 558, 576, 504, 5957, 10723, 1126, 5088, 6184, 2]
+// Dependencies: [32, 19, 17, 6036, 11158, 1085, 21, 5092, 587, 558, 576, 504, 5957, 10723, 1126, 5088, 6185, 2]
 
 // Module 11188 (ActiveSpeakerTooltip)
 import react_native from "react-native" /* 17 */;
@@ -141,7 +141,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                         }
                       }
                       const obj3 = { accessibilityRole: "button", style: container, onPress: tmp10, children: tmp30 };
-                      const tmp36 = closure_8(channel(6184).PressableOpacity, obj3);
+                      const tmp36 = closure_8(channel(6185).PressableOpacity, obj3);
                       cResult[26] = tmp10;
                       cResult[27] = tmp4.container;
                       cResult[28] = tmp30;
@@ -219,7 +219,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       const obj2 = { accessibilityRole: "button", style: tmp.container, onPress: tmp5, children: closure_9(View, obj3) };
       obj3 = { style: tmp.participantItemContainer, children: items2 };
       const obj4 = { style: tmp.participantAvatarContainer, children: closure_8(tmp11, obj5) };
-      const PressableOpacity = tmp2(6184).PressableOpacity;
+      const PressableOpacity = tmp2(6185).PressableOpacity;
       obj5 = { namesStyle: tmp.participantAvatarText, users: first, withNames: true, channelId: channel.id, guildId: channel.getGuildId() };
       tmp11 = UserSummaryItemDefault;
       items2 = [closure_8(View, obj4), ];

@@ -1,17 +1,17 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15873
+// Function ID: 15874
 // Name: DiskUsageManager
-// Dependencies: [5, 1390, 1085, 3, 1367, 510, 9701, 1382, 15851, 1265, 7196, 6807, 12635, 12636, 2]
+// Dependencies: [5, 1390, 1085, 3, 1367, 510, 9702, 1382, 15874, 1265, 7197, 6808, 12637, 12638, 2]
 
-// Module 15850 (DiskUsageManager)
+// Module 15873 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1367 */;
-import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 9701 */;
-import react_nativeDefault from "react-native" /* 15851 */;
+import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 9702 */;
+import react_nativeDefault from "react-native" /* 15874 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -41,7 +41,7 @@ let obj = function _measureAndReportInstallSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ let obj = function _measureAndReportInstallSize() {
             obj3.endBackgroundTask(caches_directory_bytes);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp55) {
         closure_3 = tmp55;
@@ -199,7 +199,7 @@ class DiskUsageManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

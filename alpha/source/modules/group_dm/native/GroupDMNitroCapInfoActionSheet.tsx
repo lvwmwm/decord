@@ -1,9 +1,9 @@
-// Module ID: 11895
-// Function ID: 11896
+// Module ID: 11897
+// Function ID: 11898
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 10751, 21, 5092, 587, 558, 576, 5056, 1126, 5088, 5379, 6839, 2]
+// Dependencies: [19, 17, 10751, 21, 5092, 587, 558, 576, 5056, 1126, 5088, 5379, 6840, 2]
 
-// Module 11895 (GroupDMNitroCapInfoActionSheet)
+// Module 11897 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import intl4 from "intl" /* 1126 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6839 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import GroupDMConstants from "GroupDMConstants" /* 10751 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -134,7 +134,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   const obj7 = { showGradient: true, children: metroImportDefault(View, obj8) };
   obj8 = { style: container, children: items };
   items = [tmp8, tmp14, tmp20];
-  BottomSheet = tmp(6839).BottomSheet;
+  BottomSheet = tmp(6840).BottomSheet;
   const tmp25 = metroRequire(BottomSheet, obj7);
   cResult[10] = tmp4.container;
   cResult[11] = tmp8;

@@ -1,15 +1,15 @@
-// Module ID: 13691
-// Function ID: 13692
+// Module ID: 13714
+// Function ID: 13715
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6851, 13692, 1273, 10094, 8971, 13695, 6156, 5088, 4806, 9781, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 13715, 1273, 10095, 8972, 13718, 6157, 5088, 4806, 9782, 2]
 
-// Module 13691 (MarketingPageBannerTile)
+// Module 13714 (MarketingPageBannerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import LinkingDefault from "Linking" /* 4806 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8971 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9781 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 9782 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -212,7 +212,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingP
                     if (tmp18) {
                       const obj9 = { source: obj10, style: tmp4.image, resizeMode: "contain" };
                       obj10 = { uri: bannerFields.assetUrl };
-                      tmp18 = closure_4(tmp5(6156), obj9);
+                      tmp18 = closure_4(tmp5(6157), obj9);
                     }
                     cResult[19] = bannerFields.assetUrl;
                     cResult[20] = tmp4.image;
@@ -282,7 +282,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingP
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(13692).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(13715).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
@@ -294,14 +294,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingP
       value = iter.value;
     }
   }
-  const obj2 = { type: helpArticleLinkProps(1273).ImpressionTypes.VIEW, name: helpArticleLinkProps(1273).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: helpArticleLinkProps(10094).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId } };
+  const obj2 = { type: helpArticleLinkProps(1273).ImpressionTypes.VIEW, name: helpArticleLinkProps(1273).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: helpArticleLinkProps(10095).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId } };
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
-  ({ component_type: helpArticleLinkProps(10094).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
+  ({ component_type: helpArticleLinkProps(10095).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(13695);
+  const tmp4Result = helpArticleLinkProps(13718);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(13695);
+  const tmp4Result2 = helpArticleLinkProps(13718);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj4 = { style: items, children: closure_5(View, obj5) };
   items = [tmp.container, style];
@@ -311,7 +311,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingP
   if (tmp13Result) {
     const obj6 = { source: obj7, style: tmp.image, resizeMode: "contain" };
     obj7 = { uri: bannerFields.assetUrl };
-    tmp13Result = tmp13(tmp2(6156), obj6);
+    tmp13Result = tmp13(tmp2(6157), obj6);
   }
   items2 = [tmp13Result, , , ];
   const obj8 = { color: "mobile-text-heading-primary", variant: "text-lg/bold", children: bannerFields.header };

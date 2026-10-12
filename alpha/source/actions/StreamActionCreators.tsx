@@ -1,10 +1,10 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7444
+// Function ID: 7445
 // Name: StreamActionCreators
-// Dependencies: [5, 5111, 7444, 7445, 5897, 502, 2065, 2087, 2116, 5113, 1085, 5898, 584, 5900, 38, 5414, 7446, 5106, 7480, 1295, 1102, 5938, 1273, 5270, 5889, 7014, 7016, 2]
+// Dependencies: [5, 5111, 7445, 7446, 5897, 502, 2065, 2087, 2116, 5113, 1085, 5898, 584, 5900, 38, 5414, 7447, 5106, 7481, 1295, 1102, 5938, 1273, 5270, 5889, 7015, 7017, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
-// Module 7443 (StreamActionCreators)
+// Module 7444 (StreamActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
@@ -14,13 +14,13 @@ import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators"
 import Constants2 from "Constants" /* 5898 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7016 */;
-import transitionToStreamDefault from "transitionToStream" /* 7480 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7017 */;
+import transitionToStreamDefault from "transitionToStream" /* 7481 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameConsoleStore from "GameConsoleStore" /* 5111 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7444 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7445 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7445 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7446 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -59,7 +59,7 @@ function watchStream(stream, forceMultiple) {
       obj3.dispatch(obj4);
       const tmp18 = importDefault;
       if (null != guildId) {
-        const tmp12Result = tmp12(7446);
+        const tmp12Result = tmp12(7447);
         const result = tmp12Result.maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
       }
       let forceFocus;
@@ -113,7 +113,7 @@ let obj = function _fetchStreamPreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ let obj = function _fetchStreamPreview() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp40) {
           closure_5 = tmp40;
           if (0 === c6) {
@@ -215,7 +215,7 @@ obj = function _notifyStreamStart() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -254,7 +254,7 @@ obj = function _notifyStreamStart() {
             c4 = 0;
           }
           c1 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         let closure_3 = tmp5;

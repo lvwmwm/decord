@@ -1,9 +1,9 @@
-// Module ID: 15627
-// Function ID: 15628
+// Module ID: 15650
+// Function ID: 15651
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5081, 8284, 21, 5092, 587, 558, 576, 8290, 1990, 8293, 504, 1126, 2958, 10511, 10627, 6053, 8283, 4793, 1200, 8373, 10262, 10263, 5088, 2]
+// Dependencies: [19, 17, 5081, 8285, 21, 5092, 587, 558, 576, 8291, 1990, 8294, 504, 1126, 2958, 10512, 10628, 6053, 8284, 4793, 1200, 8374, 10263, 10264, 5088, 2]
 
-// Module 15627 (DisplayNameStylesEditPreview)
+// Module 15650 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,14 +13,14 @@ import _modDef2958 from "module_2958" /* 2958 */;
 import DateUtils from "DateUtils" /* 4793 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useAvatarDecoration from "useAvatarDecoration" /* 6053 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8283 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8293 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8373 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10262 */;
-import types from "types" /* 10263 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8284 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8294 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8374 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
+import types from "types" /* 10264 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8284 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -64,7 +64,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   ({ selectedFontId, selectedEffectId, selectedColors, isTryItOut } = user);
   dependencyMap = tmp4;
   const tmp5 = closure_9();
-  const tmpResult = user(8290);
+  const tmpResult = user(8291);
   const guildMemberAndUserPendingNameplate = tmpResult.useGuildMemberAndUserPendingNameplate(user, guildId);
   ({ guildNameplate, pendingNameplate, userNameplate } = guildMemberAndUserPendingNameplate);
   if (cResult[0] !== guildNameplate) {
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                 }
                               }
                               const obj4 = { user, nameplate: pendingNameplate, nameplateData: tmp30, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp13, pendingGlobalName: displayName };
-                              const tmp33 = closure_7(user(10627).NameplatePreview, obj4);
+                              const tmp33 = closure_7(user(10628).NameplatePreview, obj4);
                               cResult[28] = stateFromStores;
                               cResult[29] = displayName;
                               cResult[30] = tmp13;
@@ -223,7 +223,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
             }
           }
           const obj7 = { user, displayName, guildId, displayNameStylesOverride: tmp13, isPremiumTryItOut: undefined !== isTryItOut && isTryItOut, compact: true, hideFrame: true, maxWidth: 320, accessibilityLabel: tmp14 };
-          const tmp20 = closure_7(guildId(10511), obj7);
+          const tmp20 = closure_7(guildId(10512), obj7);
           cResult[12] = displayName;
           cResult[13] = tmp13;
           cResult[14] = guildId;

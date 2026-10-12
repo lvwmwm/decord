@@ -1,21 +1,21 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 11484
+// Function ID: 11485
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1205, 1390, 7536, 7512, 1085, 21, 7746, 5092, 558, 576, 504, 4969, 11483, 11484, 7511, 5419, 8386, 8426, 11485, 5434, 11, 9373, 2]
+// Dependencies: [32, 19, 17, 1205, 1390, 7537, 7513, 1085, 21, 7747, 5092, 558, 576, 504, 4969, 11485, 11486, 7512, 5419, 8387, 8427, 11487, 5434, 11, 9374, 2]
 
-// Module 11482 (ClassificationMessageEvidence)
+// Module 11484 (ClassificationMessageEvidence)
 import Constants from "Constants" /* 1085 */;
 import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7511 */;
-import RowGeneratorDefault from "RowGenerator" /* 7746 */;
-import openMediaModal from "openMediaModal" /* 8386 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
+import RowGeneratorDefault from "RowGenerator" /* 7747 */;
+import openMediaModal from "openMediaModal" /* 8387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserStore from "UserStore" /* 1390 */;
-import SafetyHubStore from "SafetyHubStore" /* 7536 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
+import SafetyHubStore from "SafetyHubStore" /* 7537 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f108587 = (arg0, arg1) => {
+const f108808 = (arg0, arg1) => {
   url = arg0;
   return size.getSize(url.url, (width, height) => {
     size = { width, height };
@@ -197,7 +197,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
                   });
                   const mapped = found.map((item) => {
                     let closure_0 = item;
-                    const promise = new Promise(f108587);
+                    const promise = new Promise(f108808);
                     const nextPromise = promise.then((result) => {
                       id = result;
                       return closure_1_4((arg0) => {
@@ -541,10 +541,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
     const obj = ref(closure_2[14]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(11483));
+    assetSource = resolveAssetSource(tmp12(11485));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(11484));
+    assetSource = resolveAssetSource(tmp12(11486));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -664,7 +664,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
     });
     const mapped = found.map((item) => {
       let closure_0 = item;
-      const promise = new Promise(f108587);
+      const promise = new Promise(f108808);
       const nextPromise = promise.then((result) => {
         id = result;
         return closure_1_4((arg0) => {
@@ -723,9 +723,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(11485), obj6), ];
+      const items9 = [closure_18(tmp14(11487), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(9373);
+      const tmp14Result = tmp14(9374);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id, type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
       createMessageRecord = tmp2(5434).createMessageRecord;

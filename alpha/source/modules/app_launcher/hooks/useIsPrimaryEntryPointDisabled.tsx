@@ -1,16 +1,16 @@
-// Module ID: 11829
-// Function ID: 11830
+// Module ID: 11831
+// Function ID: 11832
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [2022, 558, 576, 10876, 11733, 8512, 11716, 1382, 1126, 2]
+// Dependencies: [2022, 558, 576, 10876, 11735, 8513, 11718, 1382, 1126, 2]
 
-// Module 11829 (useIsPrimaryEntryPointDisabled)
+// Module 11831 (useIsPrimaryEntryPointDisabled)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8512 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8513 */;
 import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 10876 */;
-import getPlatformDefault from "getPlatform" /* 11716 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 11733 */;
+import getPlatformDefault from "getPlatform" /* 11718 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 11735 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

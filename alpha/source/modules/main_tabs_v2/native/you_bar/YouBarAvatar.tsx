@@ -1,17 +1,17 @@
-// Module ID: 16824
-// Function ID: 16825
+// Module ID: 16848
+// Function ID: 16849
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 5081, 5759, 1390, 15350, 1085, 21, 5092, 587, 558, 576, 504, 1200, 4827, 4850, 6053, 9016, 5378, 4818, 9015, 8281, 5057, 7093, 2000, 6334, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 5759, 1390, 15373, 1085, 21, 5092, 587, 558, 576, 504, 1200, 4827, 4850, 6053, 9017, 5378, 4818, 9016, 8282, 5057, 7094, 2000, 6335, 2]
 
-// Module 16824 (YouBarAvatar)
+// Module 16848 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
 import native2 from "native" /* 4827 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6334 */;
-import ClipView from "ClipView" /* 9016 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
+import ClipView from "ClipView" /* 9017 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -19,7 +19,7 @@ import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import UserStore from "UserStore" /* 1390 */;
-import YouBarConstants from "YouBarConstants" /* 15350 */;
+import YouBarConstants from "YouBarConstants" /* 15373 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -876,7 +876,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -908,7 +908,7 @@ const memoResult = react.memo(function YouBarAvatarAnimated(isLargeAvatar) {
           value.openUserSettings();
           closure_128_3(false);
           isAvatarPressed = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         isAvatarPressed = 3;

@@ -1,16 +1,10 @@
 // Module ID: 8500
 // Function ID: 8501
 // Name: head
-// Dependencies: []
+// Dependencies: [8501]
 
 // Module 8500 (head)
+import head from "head" /* 8501 */;
 
-export default function head(arg0) {
-  let first;
-  if (arg0) {
-    if (arg0.length) {
-      first = arg0[0];
-    }
-  }
-  return first;
-};
+
+export default head;

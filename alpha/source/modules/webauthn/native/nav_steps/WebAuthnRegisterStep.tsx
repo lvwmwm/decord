@@ -1,16 +1,16 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15063
+// Function ID: 15064
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 6630, 558, 576, 1126, 1200, 1503, 1382, 15041, 15042, 5088, 5958, 5379, 6813, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 6631, 558, 576, 1126, 1200, 1503, 1382, 15064, 15065, 5088, 5958, 5379, 6814, 2]
 
-// Module 15040 (WebAuthnRegisterStep)
+// Module 15063 (WebAuthnRegisterStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6630 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6631 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -185,10 +185,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
     tmp19 = cResult[3];
   }
   dependencyMap = tmp19;
-  const tmpResult = navigation(15041);
+  const tmpResult = navigation(15064);
   const announceError = tmpResult.useAnnounceError(tmp11);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = closure_7(navigation(15042).KeyImage, {});
+    const tmp23 = closure_7(navigation(15065).KeyImage, {});
     cResult[4] = tmp23;
     tmp21 = tmp23;
   } else {
@@ -284,7 +284,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
                 tmp48[3] = tmp5.flexContainer;
                 const items = [tmp31, tmp34, tmp42];
                 tmp48[4] = items;
-                const tmp49 = closure_8(navigation(6813).SafeAreaPaddingView, tmp48);
+                const tmp49 = closure_8(navigation(6814).SafeAreaPaddingView, tmp48);
                 cResult[28] = tmp5.flexContainer;
                 cResult[29] = tmp42;
                 cResult[30] = tmp31;
@@ -383,12 +383,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(15041);
+  const tmpResult = navigation(15064);
   const announceError = tmpResult.useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   obj4 = { style: tmp4.centerFlex, children: items3 };
-  const SafeAreaPaddingView = tmp(6813).SafeAreaPaddingView;
-  items3 = [closure_7(navigation(15042).KeyImage, {}), , ];
+  const SafeAreaPaddingView = tmp(6814).SafeAreaPaddingView;
+  items3 = [closure_7(navigation(15065).KeyImage, {}), , ];
   const obj5 = { style: tmp4.margin, variant: "text-md/normal", children: stringResult };
   const Text = tmp(5088).Text;
   const intl = tmp(1126).intl;

@@ -1,9 +1,9 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17622
+// Function ID: 17623
 // Name: ChannelDetailsScreen
-// Dependencies: [19, 21, 558, 576, 1504, 4981, 17310, 2]
+// Dependencies: [19, 21, 558, 576, 1504, 4981, 17367, 2]
 
-// Module 17565 (ChannelDetailsScreen)
+// Module 17622 (ChannelDetailsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Link from "Link" /* 1504 */;
@@ -13,21 +13,19 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const ChannelDetailsDefault = tmp4(17310);
+const ChannelDetailsDefault = tmp4(17367);
 const jsx = Fragment.jsx;
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsScreen(navigation) {
   let tmp5;
-  let tmp = dependencyMap;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(8);
   navigation = navigation.navigation;
-  let obj2 = Link;
+  const obj2 = Link;
   const route = obj2.useRoute();
   const channelId = route.params.channelId;
   const search = route.params.search;
   const expandTopic = route.params.expandTopic;
-  const tmp4 = importDefault;
   const width = useBaseAppContainerDimensionsDefault().width;
   if (cResult[0] !== navigation) {
     const fn = function s() {
@@ -39,11 +37,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     tmp5 = cResult[1];
   }
-  let tmp6 = true === search;
   if (cResult[2] === channelId) {
     if (cResult[3] === width) {
       if (cResult[4] === true === expandTopic) {
-        if (cResult[5] === tmp6) {
+        if (cResult[5] === true === search) {
           let tmp8;
           if (cResult[6] === tmp5) {
             tmp8 = cResult[7];
@@ -53,11 +50,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }
-  const tmp9 = jsx(ChannelDetailsDefault, { channelId, isSearchLocked: tmp6, onBackPress: tmp5, componentWidth: width, onChannelDeleted: tmp5, expandTopic: true === expandTopic });
+  const tmp9 = jsx(ChannelDetailsDefault, { channelId, isSearchLocked: true === search, onBackPress: tmp5, componentWidth: width, onChannelDeleted: tmp5, expandTopic: true === expandTopic });
   cResult[2] = channelId;
   cResult[3] = width;
   cResult[4] = true === expandTopic;
-  cResult[5] = tmp6;
+  cResult[5] = true === search;
   cResult[6] = tmp5;
   cResult[7] = tmp9;
   tmp8 = tmp9;
@@ -68,7 +65,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const search = route.params.search;
   const channelId = route.params.channelId;
   const expandTopic = route.params.expandTopic;
-  const items = [navigation];
+  let items = [navigation];
   const width = useBaseAppContainerDimensionsDefault().width;
   const callback = react.useCallback(() => {
     navigation.goBack();

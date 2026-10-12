@@ -9,11 +9,11 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/embeddedActivityLocationUtils.tsx");
 
-export const getEmbeddedActivityLocationChannelId = function getEmbeddedActivityLocationChannelId(connectedActivityLocation) {
-  if (null != connectedActivityLocation) {
+export const getEmbeddedActivityLocationChannelId = function getEmbeddedActivityLocationChannelId(location) {
+  if (null != location) {
     let channel_id;
-    if ("channel_id" in connectedActivityLocation) {
-      channel_id = connectedActivityLocation.channel_id;
+    if ("channel_id" in location) {
+      channel_id = location.channel_id;
     }
     return channel_id;
   }

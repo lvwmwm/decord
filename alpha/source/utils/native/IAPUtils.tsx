@@ -1,10 +1,10 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 12742
+// Function ID: 12743
 // Name: IAPUtils
-// Dependencies: [5, 17, 5091, 5911, 1390, 7131, 1085, 1392, 1382, 12741, 12742, 3, 38, 12761, 7126, 12, 1279, 4784, 558, 576, 504, 12762, 1381, 5068, 12763, 2]
+// Dependencies: [5, 17, 5091, 5911, 1390, 7132, 1085, 1392, 1382, 12743, 12744, 3, 38, 12763, 7127, 12, 1279, 4784, 558, 576, 504, 12764, 1381, 5068, 12765, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable
 
-// Module 12740 (IAPUtils)
+// Module 12742 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -14,15 +14,15 @@ import react_nativeAll from "react-native" /* 1381 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import DeviceUtils from "DeviceUtils" /* 5068 */;
 import CountryCodeUtils from "CountryCodeUtils" /* 5911 */;
-import react_native2 from "react-native" /* 12741 */;
-import _mod12742 from "module_12742" /* 12742 */;
-import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 12761 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 12762 */;
-import iapProducts from "iapProducts" /* 12763 */;
+import react_native2 from "react-native" /* 12743 */;
+import _mod12744 from "module_12744" /* 12744 */;
+import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 12763 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 12764 */;
+import iapProducts from "iapProducts" /* 12765 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DevSettingsStore from "DevSettingsStore" /* 5091 */;
 import UserStore from "UserStore" /* 1390 */;
-import IAPStore from "IAPStore" /* 7131 */;
+import IAPStore from "IAPStore" /* 7132 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ let _require, appAccountToken, arr4, c4, closure_3, closure_4, code, currentUser
 let IOS_BUNDLE_ID;
 let metroImportAll;
 let tmp;
-const ProductIds = tmp(7126);
+const ProductIds = tmp(7127);
 function serializePurchaseResponse(originalTransactionDate) {
   let parsed;
   _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
@@ -70,7 +70,7 @@ let obj = function _restorePurchases() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -267,7 +267,7 @@ obj = function _fetchStoreFront() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -291,7 +291,7 @@ obj = function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               const obj6 = { value: obj4.getStorefront(), done: false };
-              obj4 = require("module_12742");
+              obj4 = require("module_12744");
               return obj6;
             } else {
               c5 = 3;
@@ -350,7 +350,7 @@ let _default = null;
 if (PlatformUtils.isIOS()) {
   _default = react_native2.default;
 }
-let items = [_mod12742.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod12742.ErrorCode.E_UNKNOWN];
+let items = [_mod12744.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod12744.ErrorCode.E_UNKNOWN];
 let set = new Set(items);
 let tmp5 = new LoggerDefault("IAPUtils.tsx");
 obj = {
@@ -409,7 +409,7 @@ obj = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -481,7 +481,7 @@ obj = {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp31) {
             closure_4 = tmp31;
             if (0 === c5) {
@@ -694,7 +694,7 @@ export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -766,7 +766,7 @@ export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
             }
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp43) {
           closure_4 = tmp43;
           if (0 === c5) {

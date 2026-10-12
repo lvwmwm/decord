@@ -1,10 +1,10 @@
-// Module ID: 17788
-// Function ID: 17789
+// Module ID: 17845
+// Function ID: 17846
 // Name: useCanSetVoiceChannelStatus
 // Dependencies: [4750, 1096, 4755, 558, 576, 504, 2]
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus
 
-// Module 17788 (useCanSetVoiceChannelStatus)
+// Module 17845 (useCanSetVoiceChannelStatus)
 import Constants from "Constants" /* 1096 */;
 import PermissionStore_mod from "PermissionStore" /* 4750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

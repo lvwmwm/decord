@@ -1,12 +1,12 @@
-// Module ID: 7095
-// Function ID: 7096
+// Module ID: 7096
+// Function ID: 7097
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 2087, 1390, 1085, 21, 5092, 558, 576, 7096, 504, 1503, 6851, 6169, 7108, 1398, 1265, 6959, 5724, 7116, 13844, 13851, 13856, 13866, 13871, 13875, 2]
+// Dependencies: [32, 19, 17, 2087, 1390, 1085, 21, 5092, 558, 576, 7097, 504, 1503, 6852, 6170, 7109, 1398, 1265, 6960, 5724, 7117, 13867, 13874, 13879, 13889, 13894, 13898, 2]
 
-// Module 7095 (GuildBoostingMarketingOverview)
+// Module 7096 (GuildBoostingMarketingOverview)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7116 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7117 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore_mod from "GuildStore" /* 2087 */;

@@ -1,19 +1,19 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12114
+// Function ID: 12115
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 2125, 12107, 21, 5092, 587, 558, 576, 504, 11927, 6156, 1126, 6184, 5057, 5058, 2]
+// Dependencies: [19, 17, 2125, 12109, 21, 5092, 587, 558, 576, 504, 11929, 6157, 1126, 6185, 5057, 5058, 2]
 
-// Module 12112 (ApplicationCommandsCategories)
+// Module 12114 (ApplicationCommandsCategories)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import HapticUtils from "HapticUtils" /* 5057 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11927 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11929 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12107 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 12109 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -184,7 +184,7 @@ let closure_10 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(6184).PressableOpacity;
+  const PressableOpacity = tmp2(6185).PressableOpacity;
   const intl = tmp2(1126).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1126).t;

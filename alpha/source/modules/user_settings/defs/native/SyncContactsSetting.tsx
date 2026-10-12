@@ -1,15 +1,15 @@
-// Module ID: 15099
-// Function ID: 15100
+// Module ID: 15122
+// Function ID: 15123
 // Name: SyncContactsSetting
-// Dependencies: [5761, 1390, 7992, 1085, 558, 576, 12402, 15100, 10663, 1126, 2]
+// Dependencies: [5761, 1390, 7993, 1085, 558, 576, 12404, 15123, 10663, 1126, 2]
 
-// Module 15099 (SyncContactsSetting)
+// Module 15122 (SyncContactsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12402 */;
-import ContactSyncSettings from "ContactSyncSettings" /* 15100 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
+import ContactSyncSettings from "ContactSyncSettings" /* 15123 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

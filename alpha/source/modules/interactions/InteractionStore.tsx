@@ -1,15 +1,15 @@
-// Module ID: 7883
-// Function ID: 7884
+// Module ID: 7884
+// Function ID: 7885
 // Name: InteractionStore
-// Dependencies: [32, 502, 2065, 1102, 5443, 5442, 7178, 504, 584, 2]
+// Dependencies: [32, 502, 2065, 1102, 5443, 5442, 7179, 504, 584, 2]
 
-// Module 7883 (InteractionStore)
+// Module 7884 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import InteractionTypes from "InteractionTypes" /* 5442 */;
 import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5443 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7178 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7179 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

@@ -1,10 +1,10 @@
-// Module ID: 14995
-// Function ID: 14996
+// Module ID: 15018
+// Function ID: 15019
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 7536, 7512, 1085, 21, 5930, 11474, 7716, 558, 576, 1126, 7567, 504, 3184, 5088, 14996, 1398, 14997, 5092, 587, 14998, 11507, 11473, 14992, 5396, 11472, 1265, 5729, 5734, 5056, 14999, 2000, 15000, 15002, 2]
+// Dependencies: [19, 17, 7537, 7513, 1085, 21, 5930, 11476, 7717, 558, 576, 1126, 7568, 504, 3184, 5088, 15019, 1398, 15020, 5092, 587, 15021, 11509, 11475, 15015, 5396, 11474, 1265, 5729, 5734, 5056, 15022, 2000, 15023, 15025, 2]
 // Exports: default
 
-// Module 14995 (SafetyHubPage)
+// Module 15018 (SafetyHubPage)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,16 +17,16 @@ import Text_Text from "Text/Text" /* 5088 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
 import MetricEvents from "MetricEvents" /* 5734 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7512 */;
-import InlineNotice6 from "InlineNotice" /* 7567 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7716 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11472 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11474 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14996 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14997 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
+import InlineNotice6 from "InlineNotice" /* 7568 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7717 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11474 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11476 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 15019 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 15020 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafetyHubStore from "SafetyHubStore" /* 7536 */;
+import SafetyHubStore from "SafetyHubStore" /* 7537 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -80,7 +80,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function RetryB
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { type: "critical", message: first, role: "alert", action: obj3 };
     obj3 = { text: intl2.string(intl7.t.IcA9iD), onClick: handleRetryClick };
-    const InlineNotice = tmp(7567).InlineNotice;
+    const InlineNotice = tmp(7568).InlineNotice;
     intl2 = tmp(1126).intl;
     const tmp9 = authStore2(InlineNotice, obj2);
     cResult[1] = tmp9;
@@ -282,7 +282,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manual
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { type: "critical", message: tmp17, role: "alert", action: obj4 };
       obj4 = { text: intl2.string(intl7.t.NkTGsC), onClick: handleManualReviewClick };
-      const InlineNotice = tmp(7567).InlineNotice;
+      const InlineNotice = tmp(7568).InlineNotice;
       intl2 = tmp(1126).intl;
       const tmp22 = authStore2(InlineNotice, obj3);
       cResult[2] = tmp22;
@@ -314,7 +314,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manual
       }
     }
     const obj2 = { type: "critical", message: intl.string(intl7.t.VTgFYh), role: "alert", action: obj3 };
-    const InlineNotice = tmp(7567).InlineNotice;
+    const InlineNotice = tmp(7568).InlineNotice;
     intl = tmp(1126).intl;
     obj3 = { text: intl2.string(intl7.t.NkTGsC), onClick: handleManualReviewClick };
     intl2 = tmp(1126).intl;
@@ -372,7 +372,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Automa
     const _Symbol9 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { type: "positive", message: intl6.format(intl7.t.hyh4ls, obj3), role: "status" };
-      const InlineNotice5 = tmp(7567).InlineNotice;
+      const InlineNotice5 = tmp(7568).InlineNotice;
       intl6 = tmp(1126).intl;
       obj3 = {
         loginHook(children) {
@@ -411,7 +411,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Automa
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { type: "positive", message: tmp31, role: "status", action: obj5 };
       obj5 = { text: intl5.string(intl7.t["2jvQ6K"]), onClick: handleLogInClick };
-      const InlineNotice4 = tmp(7567).InlineNotice;
+      const InlineNotice4 = tmp(7568).InlineNotice;
       intl5 = tmp(1126).intl;
       const tmp36 = authStore2(InlineNotice4, obj4);
       cResult[6] = tmp36;
@@ -425,7 +425,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Automa
     const _Symbol6 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { type: "positive", message: intl3.string(intl7.t.Ie7p1Q), role: "status" };
-      const InlineNotice3 = tmp(7567).InlineNotice;
+      const InlineNotice3 = tmp(7568).InlineNotice;
       intl3 = tmp(1126).intl;
       const tmp30 = authStore2(InlineNotice3, obj6);
       cResult[7] = tmp30;
@@ -439,7 +439,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Automa
     const _Symbol5 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { type: "critical", message: intl2.string(intl7.t["4sILBU"]), role: "alert" };
-      const InlineNotice2 = tmp(7567).InlineNotice;
+      const InlineNotice2 = tmp(7568).InlineNotice;
       intl2 = tmp(1126).intl;
       const tmp27 = authStore2(InlineNotice2, obj7);
       cResult[8] = tmp27;
@@ -453,7 +453,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Automa
     const _Symbol4 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { type: "critical", message: intl.string(intl7.t["40R63o"]), role: "alert" };
-      const InlineNotice = tmp(7567).InlineNotice;
+      const InlineNotice = tmp(7568).InlineNotice;
       intl = tmp(1126).intl;
       const tmp24 = authStore2(InlineNotice, obj8);
       cResult[9] = tmp24;
@@ -518,7 +518,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Automa
     tmp9 = tmp20;
   } else if (stateFromStores === AgeCheckStatus.SUCCESS) {
     const obj2 = { type: "positive", message: intl6.format(intl7.t.hyh4ls, obj3), role: "status" };
-    const InlineNotice5 = tmp(7567).InlineNotice;
+    const InlineNotice5 = tmp(7568).InlineNotice;
     intl6 = tmp(1126).intl;
     obj3 = {
       loginHook(children) {
@@ -537,24 +537,24 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Automa
     tmp9 = authStore2(InlineNotice5, obj2);
   } else if (stateFromStores === AgeCheckStatus.VERIFIED) {
     const obj4 = { type: "positive", message: intl4.string(intl7.t["2Qe65J"]), role: "status", action: obj5 };
-    const InlineNotice4 = tmp(7567).InlineNotice;
+    const InlineNotice4 = tmp(7568).InlineNotice;
     intl4 = tmp(1126).intl;
     obj5 = { text: intl5.string(intl7.t["2jvQ6K"]), onClick: handleLogInClick };
     intl5 = tmp(1126).intl;
     tmp9 = authStore2(InlineNotice4, obj4);
   } else if (stateFromStores === AgeCheckStatus.VERIFIED_OTHER_VIOLATIONS_REMAIN) {
     const obj6 = { type: "positive", message: intl3.string(intl7.t.Ie7p1Q), role: "status" };
-    const InlineNotice3 = tmp(7567).InlineNotice;
+    const InlineNotice3 = tmp(7568).InlineNotice;
     intl3 = tmp(1126).intl;
     tmp9 = authStore2(InlineNotice3, obj6);
   } else if (stateFromStores === AgeCheckStatus.ERROR) {
     const obj7 = { type: "critical", message: intl2.string(intl7.t["4sILBU"]), role: "alert" };
-    const InlineNotice2 = tmp(7567).InlineNotice;
+    const InlineNotice2 = tmp(7568).InlineNotice;
     intl2 = tmp(1126).intl;
     tmp9 = authStore2(InlineNotice2, obj7);
   } else if (stateFromStores === AgeCheckStatus.FAILURE) {
     const obj8 = { type: "critical", message: intl.string(intl7.t["40R63o"]), role: "alert" };
-    const InlineNotice = tmp(7567).InlineNotice;
+    const InlineNotice = tmp(7568).InlineNotice;
     intl = tmp(1126).intl;
     tmp9 = authStore2(InlineNotice, obj8);
   } else if (stateFromStores === AgeCheckStatus.UNDERAGE) {
@@ -613,7 +613,7 @@ export default function SafetyHubPage(visible) {
     if (tmp) {
       if (null != safetyHubFetchError) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(14999, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        obj2.openLazy(asyncRequire(15022, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     const obj = ActionSheetActionCreatorsDefault;

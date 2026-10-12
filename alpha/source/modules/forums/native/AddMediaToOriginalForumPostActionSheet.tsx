@@ -1,16 +1,16 @@
-// Module ID: 11672
-// Function ID: 11673
+// Module ID: 11674
+// Function ID: 11675
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2065, 7243, 2087, 5432, 1085, 21, 5092, 587, 9699, 7764, 7779, 5056, 9265, 9262, 11, 7759, 9264, 7901, 1295, 11673, 7178, 8242, 5300, 1126, 558, 576, 504, 6851, 7903, 7768, 11674, 5088, 5380, 6839, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 7244, 2087, 5432, 1085, 21, 5092, 587, 9700, 7765, 7780, 5056, 9266, 9263, 11, 7760, 9265, 7902, 1295, 11675, 7179, 8243, 5300, 1126, 558, 576, 504, 6852, 7904, 7769, 11676, 5088, 5380, 6840, 2]
 
-// Module 11672 (AddMediaToOriginalForumPostActionSheet)
+// Module 11674 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import DraftStore from "DraftStore" /* 7243 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7768 */;
-import Tracking from "Tracking" /* 7903 */;
+import DraftStore from "DraftStore" /* 7244 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7769 */;
+import Tracking from "Tracking" /* 7904 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -60,7 +60,7 @@ let obj = function _upload2() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c7;
@@ -264,7 +264,7 @@ let obj = function _upload2() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp72) {
           closure_6 = tmp72;

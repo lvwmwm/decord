@@ -1,9 +1,9 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16104
+// Function ID: 16105
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6030, 2069, 4761, 2065, 2087, 2116, 1390, 1085, 21, 5092, 587, 4809, 12575, 12577, 5750, 11, 558, 576, 1631, 1200, 6264, 6179, 15866, 6188, 2]
+// Dependencies: [19, 17, 6030, 2069, 4761, 2065, 2087, 2116, 1390, 1085, 21, 5092, 587, 4809, 12577, 12579, 5750, 11, 558, 576, 1631, 1200, 6265, 6180, 15889, 6189, 2]
 
-// Module 16081 (DevToolsInAppNotificationTestingScreen)
+// Module 16104 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import StickersTypes from "StickersTypes" /* 5750 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12575 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12577 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12577 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12579 */;
 import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 6030 */;
 import MessageRecord from "MessageRecord" /* 4761 */;
@@ -607,7 +607,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAp
               return closure_1_14(TableRow, obj, label.label);
             })
       };
-      let TableRowGroup = tmp(6264).TableRowGroup;
+      let TableRowGroup = tmp(6265).TableRowGroup;
       const tmp20 = closure_14(TableRowGroup, obj4);
       cResult[8] = tmp20;
       tmp17 = tmp20;

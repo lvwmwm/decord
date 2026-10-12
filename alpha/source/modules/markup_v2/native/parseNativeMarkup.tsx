@@ -1,16 +1,16 @@
-// Module ID: 8147
-// Function ID: 8148
+// Module ID: 8148
+// Function ID: 8149
 // Name: parseNativeMarkup
-// Dependencies: [12, 8148, 8151, 2]
+// Dependencies: [12, 8149, 8152, 2]
 // Exports: default
 
-// Module 8147 (parseNativeMarkup)
-import _mod8148 from "module_8148" /* 8148 */;
-import transformNativeMarkupNode from "transformNativeMarkupNode" /* 8151 */;
+// Module 8148 (parseNativeMarkup)
+import _mod8149 from "module_8149" /* 8149 */;
+import transformNativeMarkupNode from "transformNativeMarkupNode" /* 8152 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = module_12.once(() => _mod8148.parse);
+let closure_2 = module_12.once(() => _mod8149.parse);
 let result = size.fileFinishedImporting("modules/markup_v2/native/parseNativeMarkup.tsx");
 
 export default function parseNativeMarkupToAST(arg0, arg1, channelId) {

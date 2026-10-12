@@ -1,11 +1,11 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16285
+// Function ID: 16286
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [19, 6796, 558, 576, 504, 10684, 6859, 2]
+// Dependencies: [19, 6797, 558, 576, 504, 10684, 6860, 2]
 
-// Module 16262 (useAuthorizedSlayerApplications)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6796 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6859 */;
+// Module 16285 (useAuthorizedSlayerApplications)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6797 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6860 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

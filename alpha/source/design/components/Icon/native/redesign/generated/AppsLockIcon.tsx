@@ -1,14 +1,14 @@
-// Module ID: 8232
-// Function ID: 8233
+// Module ID: 8233
+// Function ID: 8234
 // Name: AppsLockIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8196, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8197, 4817, 2]
 
-// Module 8232 (AppsLockIcon)
+// Module 8233 (AppsLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8196 */;
+import AssetRegistry from "AssetRegistry" /* 8197 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

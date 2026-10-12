@@ -1,13 +1,13 @@
-// Module ID: 17481
-// Function ID: 17482
+// Module ID: 17538
+// Function ID: 17539
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 7017, 558, 576, 1126, 5305, 5305, 2]
+// Dependencies: [5, 19, 21, 7018, 558, 576, 1126, 5305, 5305, 2]
 
-// Module 17481 (ClearAllIncomingRequestsAlertModal)
+// Module 17538 (ClearAllIncomingRequestsAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import AlertModal2 from "AlertModal" /* 5305 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7017 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -34,7 +34,7 @@ let obj = function _handleConfirm() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ let obj = function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp6) {
         c0 = 3;

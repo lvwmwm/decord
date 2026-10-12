@@ -1,9 +1,9 @@
-// Module ID: 16752
-// Function ID: 16753
+// Module ID: 16776
+// Function ID: 16777
 // Name: isHomeDrawerChannelInChannelList
-// Dependencies: [5966, 558, 576, 6076, 504, 2]
+// Dependencies: [5966, 558, 576, 6077, 504, 2]
 
-// Module 16752 (isHomeDrawerChannelInChannelList)
+// Module 16776 (isHomeDrawerChannelInChannelList)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;

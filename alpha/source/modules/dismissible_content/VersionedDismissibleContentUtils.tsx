@@ -1,24 +1,24 @@
 // Module ID: 2063
 // Function ID: 2064
 // Name: VersionedDismissibleContentUtils
-// Dependencies: [2064, 7278, 2049, 13006, 14277, 1998, 14278, 2077, 2]
+// Dependencies: [2064, 7279, 2049, 13011, 14300, 1998, 14301, 2077, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
 // Module 2063 (VersionedDismissibleContentUtils)
 import Server from "Server" /* 1998 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import TypeUtils from "TypeUtils" /* 2077 */;
-import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 14277 */;
-import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 14278 */;
+import AppLauncherBadgeUtils from "AppLauncherBadgeUtils" /* 14300 */;
+import WideBannerDismissibleContentVersion from "WideBannerDismissibleContentVersion" /* 14301 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7278 */;
+import CollectiblesMarketingsStore from "CollectiblesMarketingsStore" /* 7279 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/dismissible_content/VersionedDismissibleContentUtils.tsx");
 
 export const getVersionedDismissibleContentCurrentVersion = function getVersionedDismissibleContentCurrentVersion(id) {
   if (dismissible_content.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING === id) {
-    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(13006).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
+    const marketingBySurface = CollectiblesMarketingsStore.getMarketingBySurface(tmp(13011).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
     let num5;
     if (marketingBySurface != null) {
       num5 = marketingBySurface.version;

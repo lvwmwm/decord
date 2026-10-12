@@ -1,10 +1,10 @@
-// Module ID: 12017
-// Function ID: 12018
+// Module ID: 12019
+// Function ID: 12020
 // Name: directory_channels/GuildDirectoryUtils
-// Dependencies: [5, 19, 21, 12012, 5300, 12018, 2000, 2]
+// Dependencies: [5, 19, 21, 12014, 5300, 12020, 2000, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 12017 (directory_channels/GuildDirectoryUtils)
+// Module 12019 (directory_channels/GuildDirectoryUtils)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

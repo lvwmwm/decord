@@ -1,16 +1,16 @@
-// Module ID: 12013
-// Function ID: 12014
+// Module ID: 12015
+// Function ID: 12016
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 12008, 12001, 21, 5092, 504, 5636, 6773, 1126, 6262, 6261, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 12010, 12003, 21, 5092, 504, 5636, 6774, 1126, 6263, 6262, 5379, 2]
 // Exports: default
 
-// Module 12013 (GuildDirectoryEditDescriptionTemplate)
+// Module 12015 (GuildDirectoryEditDescriptionTemplate)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12008 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12001 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12010 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12003 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -116,7 +116,7 @@ export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
             c3 = 0;
             closure_129_5(false);
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp32) {
           closure_2 = tmp32;

@@ -1,10 +1,10 @@
-// Module ID: 17166
-// Function ID: 17167
+// Module ID: 17176
+// Function ID: 17177
 // Name: ConjureTimelineTree
 // Dependencies: [32, 3849, 1126, 2]
 // Exports: currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 17166 (ConjureTimelineTree)
+// Module 17176 (ConjureTimelineTree)
 import intl6 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -20,7 +20,6 @@ function isLegacyControlLineNode(label_key) {
   return "testing_app" === label_key;
 }
 function buildTimelineTree(steps, arg1) {
-  let _undefined;
   let c10;
   let c9;
   let obj4;
@@ -110,14 +109,14 @@ function buildTimelineTree(steps, arg1) {
         if (null != value) {
           return value;
         } else {
-          const obj3 = { id, kind: "step", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
+          const obj3 = { id, kind: "step", detail: [], detailDrivenBy: [], detailError: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
           const result = obj.set(combined, obj3);
           if (null != taskId) {
             let value3 = map.get(taskId);
             const obj2 = map;
             if (null == value3) {
               const obj4 = { taskId, task: obj5, steps: [] };
-              obj5 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
+              obj5 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], detailError: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
               const result1 = obj2.set(taskId, obj4);
               value3 = obj4;
             }
@@ -135,14 +134,14 @@ function buildTimelineTree(steps, arg1) {
       const obj6 = map;
       if (null == value4) {
         const obj7 = { taskId, task: obj8, steps: [] };
-        obj8 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
+        obj8 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], detailError: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
         const result2 = obj6.set(taskId, obj7);
         value4 = obj7;
       }
       task = value4.task;
     } else if (task == null) {
-      task = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
-      const obj9 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
+      task = { id: "task", kind: "task", detail: [], detailDrivenBy: [], detailError: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
+      const obj9 = { id: "task", kind: "task", detail: [], detailDrivenBy: [], detailError: [], status: "running", screenshots: [], browserSessions: [], attachments: [], touched: 0, segment };
     }
     return task;
   }
@@ -156,9 +155,8 @@ function buildTimelineTree(steps, arg1) {
   function _loop() {
     let detail;
     let id;
-    let node;
     let node_kind;
-    let task_id;
+    let tmp = c10;
     let hasItem = 0 !== size.size;
     obj = size;
     if (hasItem) {
@@ -202,9 +200,10 @@ function buildTimelineTree(steps, arg1) {
         if (num == null) {
           num = 0;
         }
-        if ("node" === _undefined.kind) {
-          if (null != _undefined.node) {
-            ({ node, task_id } = _undefined);
+        if ("node" === tmp.kind) {
+          if (null != tmp.node) {
+            const node = tmp.node;
+            const task_id = tmp.task_id;
             ({ id, node_kind } = node);
             const tmp18 = ensure;
             if (node_kind == null) {
@@ -237,7 +236,29 @@ function buildTimelineTree(steps, arg1) {
             }
             if (null != node.detail) {
               ({ detail: tmp23.detail, detail } = node);
-              tmp18Result.detailDrivenBy = detail.map(() => null);
+              tmp18Result.detailDrivenBy = detail.map((item, index) => {
+                const detail_driven_by = node.detail_driven_by;
+                let tmp;
+                if (detail_driven_by != null) {
+                  tmp = detail_driven_by[index];
+                }
+                if (tmp == null) {
+                  tmp = null;
+                }
+                return tmp;
+              });
+              const detail1 = node.detail;
+              tmp18Result.detailError = detail1.map((item, index) => {
+                const detail_error = node.detail_error;
+                let tmp;
+                if (detail_error != null) {
+                  tmp = detail_error[index];
+                }
+                if (tmp == null) {
+                  tmp = null;
+                }
+                return tmp;
+              });
             }
             if (null != node.append_detail) {
               let driven_by = node.driven_by;
@@ -249,9 +270,24 @@ function buildTimelineTree(steps, arg1) {
               tmp18Result.detail = items;
               const items1 = [];
               const append_detail = node.append_detail;
-              const arraySpreadResult3 = HermesBuiltin.arraySpread(items1, tmp18Result.detailDrivenBy, 0);
-              HermesBuiltin.arraySpread(items1, append_detail.map(() => driven_by), arraySpreadResult3);
+              const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, tmp18Result.detailDrivenBy, 0);
+              HermesBuiltin.arraySpread(items1, append_detail.map(() => driven_by), arraySpreadResult5);
               tmp18Result.detailDrivenBy = items1;
+              const items2 = [];
+              const append_detail1 = node.append_detail;
+              const arraySpreadResult7 = HermesBuiltin.arraySpread(items2, tmp18Result.detailError, 0);
+              HermesBuiltin.arraySpread(items2, append_detail1.map((item, index) => {
+                const append_detail_error = node.append_detail_error;
+                let tmp;
+                if (append_detail_error != null) {
+                  tmp = append_detail_error[index];
+                }
+                if (tmp == null) {
+                  tmp = null;
+                }
+                return tmp;
+              }), arraySpreadResult7);
+              tmp18Result.detailError = items2;
             }
             if (null != node.status) {
               tmp18Result.status = node.status;
@@ -271,17 +307,17 @@ function buildTimelineTree(steps, arg1) {
             return 0;
           }
         }
-        if ("error" === _undefined.kind) {
+        if ("error" === tmp.kind) {
           const _HermesInternal = HermesInternal;
-          const tmp14 = ensure(undefined, "" + _undefined.kind + "-" + tmp9, "step", num);
+          const tmp14 = ensure(undefined, "" + tmp.kind + "-" + tmp9, "step", num);
           sum1 = sum1 + 1;
           tmp14.touched = sum1;
           tmp14.labelKey = "error";
           tmp14.status = "failed";
-          const tmp17 = null != _undefined.message && "" !== _undefined.message;
+          const tmp17 = null != tmp.message && "" !== tmp.message;
           if (tmp17) {
-            const items2 = [_undefined.message];
-            tmp14.detail = items2;
+            const items3 = [tmp.message];
+            tmp14.detail = items3;
           }
         }
       }

@@ -1,7 +1,7 @@
 // Module ID: 10930
 // Function ID: 10931
 // Name: createWebViewController
-// Dependencies: [5, 1085, 2024, 5639, 7521, 10931, 1255, 10932, 1121, 10951, 2]
+// Dependencies: [5, 1085, 2024, 5639, 7522, 10931, 1255, 10932, 1121, 10951, 2]
 // Exports: default
 
 // Module 10930 (createWebViewController)
@@ -41,7 +41,7 @@ export default function createWebViewController(id, contextSource) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -84,7 +84,7 @@ export default function createWebViewController(id, contextSource) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp17) {
           closure_3 = tmp17;

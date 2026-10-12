@@ -1,11 +1,11 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8888
+// Function ID: 8889
 // Name: useOpenExternalUrlFromGameProfile
-// Dependencies: [32, 5, 19, 8888, 8889, 4800, 558, 576, 2]
+// Dependencies: [32, 5, 19, 8889, 8890, 4800, 558, 576, 2]
 
-// Module 8887 (useOpenExternalUrlFromGameProfile)
+// Module 8888 (useOpenExternalUrlFromGameProfile)
 import openURLDefault from "openURL" /* 4800 */;
-import GameUtilsDefault from "GameUtils" /* 8888 */;
+import GameUtilsDefault from "GameUtils" /* 8889 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -34,7 +34,7 @@ let obj = function _getDeepLinkUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -159,7 +159,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -196,7 +196,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
         } else if (1 === c4) {
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -222,7 +222,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
           }
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp37) {
         if (0 === c3) {
           c5 = 3;
@@ -257,7 +257,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -294,7 +294,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
         } else if (1 === c4) {
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -320,7 +320,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenExt
           }
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp37) {
         if (0 === c3) {
           c5 = 3;

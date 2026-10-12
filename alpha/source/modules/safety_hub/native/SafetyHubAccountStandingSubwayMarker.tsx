@@ -1,9 +1,9 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15024
+// Function ID: 15025
 // Name: SafetyHubAccountStandingSubwayMarker
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 2]
 
-// Module 15001 (SafetyHubAccountStandingSubwayMarker)
+// Module 15024 (SafetyHubAccountStandingSubwayMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;

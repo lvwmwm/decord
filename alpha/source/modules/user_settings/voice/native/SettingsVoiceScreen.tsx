@@ -1,21 +1,21 @@
-// Module ID: 15517
-// Function ID: 15518
+// Module ID: 15540
+// Function ID: 15541
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2012, 7992, 1085, 21, 2128, 5092, 558, 576, 5031, 4969, 11093, 11094, 1126, 6156, 6334, 11092, 5088, 11089, 10663, 14942, 2]
+// Dependencies: [19, 17, 2012, 7993, 1085, 21, 2128, 5092, 558, 576, 5031, 4969, 11093, 11094, 1126, 6157, 6335, 11092, 5088, 11089, 10663, 14965, 2]
 
-// Module 15517 (SettingsVoiceScreen)
+// Module 15540 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl10 from "intl" /* 1126 */;
 import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11089 */;
 import KrispLogo2 from "KrispLogo" /* 11092 */;
-import SettingLayoutDefault from "SettingLayout" /* 14942 */;
+import SettingLayoutDefault from "SettingLayout" /* 14965 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import Fragment from "Fragment" /* 21 */;
@@ -156,7 +156,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
     const _Symbol2 = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp12, onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj4) };
-      const LegacyPressable = tmp(6334).LegacyPressable;
+      const LegacyPressable = tmp(6335).LegacyPressable;
       obj4 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
       Text = tmp(5088).Text;
       intl3 = tmp(1126).intl;
@@ -208,7 +208,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   intl = tmp5(1126).intl;
   items = [metroImportAll(tmp2Result2, obj3), ];
   const obj4 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl10.t.hvVgAZ), onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj5) };
-  const LegacyPressable = tmp5(6334).LegacyPressable;
+  const LegacyPressable = tmp5(6335).LegacyPressable;
   intl2 = tmp5(1126).intl;
   obj5 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
   Text = tmp5(5088).Text;

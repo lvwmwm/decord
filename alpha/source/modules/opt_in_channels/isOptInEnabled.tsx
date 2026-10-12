@@ -1,10 +1,10 @@
-// Module ID: 6076
-// Function ID: 6077
+// Module ID: 6077
+// Function ID: 6078
 // Name: isOptInEnabled
 // Dependencies: [2087, 4750, 5966, 1390, 1085, 558, 576, 504, 2]
 // Exports: isOptInEnabledForGuild
 
-// Module 6076 (isOptInEnabled)
+// Module 6077 (isOptInEnabled)
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;

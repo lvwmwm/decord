@@ -1,9 +1,9 @@
-// Module ID: 6628
-// Function ID: 6629
+// Module ID: 6629
+// Function ID: 6630
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
 // Dependencies: [19, 21, 558, 576, 1126, 5305, 5305, 2]
 
-// Module 6628 (OneTimeLoginForgotPasswordConfirmAlertModal)
+// Module 6629 (OneTimeLoginForgotPasswordConfirmAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;

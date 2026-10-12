@@ -1,17 +1,17 @@
 // Module ID: 14584
 // Function ID: 14585
-// Dependencies: [14531, 14582, 14565]
+// Dependencies: [14559]
 
 // Module 14584
-import _mod14531 from "module_14531" /* 14531 */;
-import _mod14565 from "module_14565" /* 14565 */;
-import defineProperty2 from "defineProperty2" /* 14582 */;
+import _mod14559 from "module_14559" /* 14559 */;
 
+let fn;
+if (_mod14559) {
+  fn = call.bind(call);
+} else {
+  fn = function() {
+    return call(...arguments);
+  };
+}
 
-export default _mod14531 ? ((arg0, arg1, arg2) => {
-  const obj = defineProperty2;
-  return obj.f(arg0, arg1, _mod14565(1, arg2));
-}) : ((arg0, arg1, arg2) => {
-  arg0[arg1] = arg2;
-  return arg0;
-});
+export default fn;

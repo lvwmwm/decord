@@ -1,7 +1,7 @@
 // Module ID: 10853
 // Function ID: 10854
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [5, 9247, 5440, 6036, 7444, 502, 2065, 2087, 4750, 1390, 5113, 2064, 2024, 6067, 1085, 1373, 2062, 7423, 10803, 9806, 10804, 10854, 10855, 10856, 10857, 584, 10813, 10858, 10816, 5636, 5441, 2029, 8610, 8512, 10859, 1998, 10860, 10867, 9801, 1265, 10868, 10876, 5924, 10877, 5299, 1126, 10480, 10878, 1273, 5938, 4739, 6038, 5106, 1295, 8496, 7178, 7014, 7369, 2050, 2049, 2]
+// Dependencies: [5, 9248, 5440, 6036, 7445, 502, 2065, 2087, 4750, 1390, 5113, 2064, 2024, 6067, 1085, 1373, 2062, 7424, 10803, 9807, 10804, 10854, 10855, 10856, 10857, 584, 10813, 10858, 10816, 5636, 5441, 2029, 8611, 8513, 10859, 1998, 10860, 10867, 9802, 1265, 10868, 10876, 5924, 10877, 5299, 1126, 10481, 10878, 1273, 5938, 4739, 6038, 5106, 1295, 8497, 7179, 7015, 7370, 2050, 2049, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
 // Module 10853 (EmbeddedActivitiesActionCreators)
@@ -15,13 +15,13 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import Constants3 from "Constants" /* 7423 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9247 */;
+import Constants3 from "Constants" /* 7424 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
 import createProxyTicket2 from "createProxyTicket" /* 10813 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7444 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7445 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -102,7 +102,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c15;
@@ -467,7 +467,7 @@ obj = function _maybeSendPrimaryAppCommand() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -778,7 +778,7 @@ obj = function _joinEmbeddedActivity() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1103,7 +1103,7 @@ obj = function _uploadImageAttachment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c6;
@@ -1203,7 +1203,7 @@ obj = function _sendEmbeddedActivityInvite() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1260,7 +1260,7 @@ obj = function _sendEmbeddedActivityInvite() {
             obj.sendInvite(c1, code.code, c3, c4);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp29) {
         c4 = 3;
@@ -1292,7 +1292,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -1382,7 +1382,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
           return obj;
         } else {
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         c4 = 3;
@@ -1405,7 +1405,7 @@ obj = function _validateTestMode() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -1475,7 +1475,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

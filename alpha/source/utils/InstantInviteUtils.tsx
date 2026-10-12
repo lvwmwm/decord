@@ -1,22 +1,22 @@
-// Module ID: 8684
-// Function ID: 8685
+// Module ID: 8685
+// Function ID: 8686
 // Name: InstantInviteUtils
-// Dependencies: [2064, 2065, 2125, 6035, 4760, 1390, 6922, 1085, 7423, 5970, 8685, 1126, 2]
+// Dependencies: [2064, 2065, 2125, 6035, 4760, 1390, 6923, 1085, 7424, 5970, 8686, 1126, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8684 (InstantInviteUtils)
+// Module 8685 (InstantInviteUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
-import Constants2 from "Constants" /* 7423 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8685 */;
+import Constants2 from "Constants" /* 7424 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8686 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6922 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6923 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -370,7 +370,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       if (obj10.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
         let tmp3 = dependencyMap;
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: tmp44, limit: 3, guildId: "apply" };
+        const obj12 = { query: tmp44, limit: 3, guildId: "set" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };

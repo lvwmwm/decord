@@ -1,9 +1,9 @@
-// Module ID: 9083
-// Function ID: 9084
+// Module ID: 9084
+// Function ID: 9085
 // Name: useProductDisableState
 // Dependencies: [4775, 558, 576, 504, 1088, 1126, 2]
 
-// Module 9083 (useProductDisableState)
+// Module 9084 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1088 */;

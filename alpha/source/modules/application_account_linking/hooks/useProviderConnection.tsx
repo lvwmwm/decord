@@ -1,11 +1,11 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6874
+// Function ID: 6875
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5761, 504, 6874, 2]
+// Dependencies: [5, 19, 5761, 504, 6875, 2]
 // Exports: useProviderConnection
 
-// Module 6873 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6874 */;
+// Module 6874 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
@@ -48,7 +48,7 @@ export const useProviderConnection = function useProviderConnection(arg0) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c5;

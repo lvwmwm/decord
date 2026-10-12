@@ -1,10 +1,10 @@
-// Module ID: 11784
-// Function ID: 11785
+// Module ID: 11786
+// Function ID: 11787
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [19, 1497, 10621, 10374, 12, 4850, 2]
+// Dependencies: [19, 1497, 10622, 10375, 12, 4850, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 11784 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 11786 (useBottomSheetFlashListBottomViewabilityInset)
 import _modDef12 from "module_12" /* 12 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import react from "react" /* 19 */;
@@ -22,13 +22,13 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
   let flashListRef;
   let obj = bottomVisibilityInsetRef;
   const tmp3 = flashListRef(1497)();
-  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(10621).AppLauncherContext);
+  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(10622).AppLauncherContext);
   bottomSheetPosition = undefined;
   const tmp = flashListRef;
   if (context != null) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
-  const maximum = tmp(10374)().maximum;
+  const maximum = tmp(10375)().maximum;
   flashListRef = obj.useRef(null);
   const diff = tmp3.height - maximum;
   dependencyMap = diff;

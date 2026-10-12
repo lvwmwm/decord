@@ -1,9 +1,9 @@
-// Module ID: 11455
-// Function ID: 11456
+// Module ID: 11457
+// Function ID: 11458
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 11448, 1085, 4736, 21, 5092, 587, 558, 576, 1126, 1200, 11456, 5088, 5398, 11457, 7093, 573, 4756, 1265, 5396, 2]
+// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 11450, 1085, 4736, 21, 5092, 587, 558, 576, 1126, 1200, 11458, 5088, 5398, 11459, 7094, 573, 4756, 1265, 5396, 2]
 
-// Module 11455 (AutomodUserProfileQuarantineAlert)
+// Module 11457 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,9 +14,9 @@ import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4756 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import AlertDefault from "Alert" /* 5398 */;
-import Constants2 from "Constants" /* 11448 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11456 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11457 */;
+import Constants2 from "Constants" /* 11450 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11458 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11459 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -366,7 +366,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
     let intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(11457);
+  const tmp2Result = tmp2(11459);
   [closure_129_0, tmp8] = _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   const tmp7 = _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {

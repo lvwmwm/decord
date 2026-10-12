@@ -1,17 +1,17 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17027
+// Function ID: 17028
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 2087, 1390, 6925, 21, 5092, 587, 558, 576, 573, 8310, 8353, 7010, 8311, 4962, 1103, 8382, 1200, 5409, 5088, 8622, 10530, 4827, 2]
+// Dependencies: [19, 17, 2087, 1390, 6926, 21, 5092, 587, 558, 576, 573, 8311, 8354, 7011, 8312, 4962, 1103, 8383, 1200, 5409, 5088, 8623, 10531, 4827, 2]
 
-// Module 17003 (HomeWelcomeMessage)
+// Module 17027 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8311 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6925 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6926 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

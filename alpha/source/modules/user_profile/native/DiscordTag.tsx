@@ -1,14 +1,14 @@
-// Module ID: 8765
-// Function ID: 8766
+// Module ID: 8766
+// Function ID: 8767
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 8766, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 8767, 2]
 
-// Module 8765 (DiscordTag)
+// Module 8766 (DiscordTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import BotTagDefault from "BotTag" /* 8766 */;
+import BotTagDefault from "BotTag" /* 8767 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

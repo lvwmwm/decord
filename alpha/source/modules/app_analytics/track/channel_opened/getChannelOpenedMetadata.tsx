@@ -1,15 +1,15 @@
-// Module ID: 7912
-// Function ID: 7913
+// Module ID: 7913
+// Function ID: 7914
 // Name: getChannelOpenedMetadata
-// Dependencies: [2065, 2087, 4750, 6035, 5966, 1390, 1085, 2072, 5107, 1102, 7913, 7914, 2]
+// Dependencies: [2065, 2087, 4750, 6035, 5966, 1390, 1085, 2072, 5107, 1102, 7914, 7915, 2]
 // Exports: getChannelOpenedMetadata
 
-// Module 7912 (getChannelOpenedMetadata)
+// Module 7913 (getChannelOpenedMetadata)
 import DurationsDefault from "Durations" /* 1102 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7913 */;
-import hasPendingMemberAction from "hasPendingMemberAction" /* 7914 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7914 */;
+import hasPendingMemberAction from "hasPendingMemberAction" /* 7915 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;

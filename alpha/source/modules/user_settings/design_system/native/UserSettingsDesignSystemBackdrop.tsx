@@ -1,15 +1,15 @@
-// Module ID: 16149
-// Function ID: 16150
+// Module ID: 16172
+// Function ID: 16173
 // Name: UserSettingsDesignSystemBackdrop
-// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 5088, 5379, 6181, 5377, 4850, 5378, 5382, 5358, 5363, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 5088, 5379, 6182, 5377, 4850, 5378, 5382, 5358, 5363, 2]
 
-// Module 16149 (UserSettingsDesignSystemBackdrop)
+// Module 16172 (UserSettingsDesignSystemBackdrop)
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import spring from "spring" /* 5378 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Card_Card from "Card/Card" /* 6181 */;
+import Card_Card from "Card/Card" /* 6182 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -90,7 +90,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backdro
           }
         }
         const obj4 = { children: metroImportDefault(Stack_Stack.Stack, obj5) };
-        const Card = tmp(6181).Card;
+        const Card = tmp(6182).Card;
         obj5 = { spacing: 12, children: items };
         items = [tmp4, tmp7, tmp11];
         const tmp17 = metroRequire(Card, obj4);
@@ -243,7 +243,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     items2 = [closure_6(tmp(5363).Backdrop, obj10), ];
     const obj11 = { style: tmp4.backdropContent, pointerEvents: "box-none", children: closure_6(Card, obj12) };
     obj12 = { children: closure_7(tmp(5088).Text, obj13) };
-    Card = tmp(6181).Card;
+    Card = tmp(6182).Card;
     obj13 = { variant: "text-md/normal", children: items3 };
     items3 = ["blur style: ", tmp9];
     items2[1] = closure_6(closure_5, obj11);
@@ -304,7 +304,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     items2 = [closure_6(showBackdrop(5363).Backdrop, obj6), ];
     const obj7 = { style: tmp.backdropContent, pointerEvents: "box-none", children: closure_6(Card, obj8) };
     obj8 = { children: closure_7(showBackdrop(5088).Text, obj9) };
-    Card = tmp8(6181).Card;
+    Card = tmp8(6182).Card;
     obj9 = { variant: "text-md/normal", children: items3 };
     items3 = ["blur style: ", tmp6];
     items2[1] = closure_6(closure_5, obj7);

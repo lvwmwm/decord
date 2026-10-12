@@ -1,10 +1,10 @@
-// Module ID: 7795
-// Function ID: 7796
+// Module ID: 7796
+// Function ID: 7797
 // Name: webpConversion
-// Dependencies: [5, 3, 7796, 1264, 2]
+// Dependencies: [5, 3, 7797, 1264, 2]
 // Exports: maybeConvertToWebP
 
-// Module 7795 (webpConversion)
+// Module 7796 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef1264 from "module_1264" /* 1264 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = function _shouldConvertToWebP2() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -213,7 +213,7 @@ obj = function _performWebPConversion() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -472,7 +472,7 @@ obj = function _maybeConvertToWebP() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

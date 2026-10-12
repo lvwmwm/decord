@@ -1,13 +1,13 @@
-// Module ID: 17484
-// Function ID: 17485
+// Module ID: 17541
+// Function ID: 17542
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4760, 1390, 10216, 1085, 21, 558, 576, 6851, 6878, 17482, 504, 8303, 10222, 2]
+// Dependencies: [19, 4760, 1390, 10217, 1085, 21, 558, 576, 6852, 6879, 17539, 504, 8304, 10223, 2]
 
-// Module 17484 (IgnoredUserRequestsScreen)
+// Module 17541 (IgnoredUserRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
-import UserRowConstants from "UserRowConstants" /* 10216 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import UserRowConstants from "UserRowConstants" /* 10217 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;

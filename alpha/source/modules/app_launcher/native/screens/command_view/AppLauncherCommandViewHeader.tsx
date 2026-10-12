@@ -1,15 +1,15 @@
-// Module ID: 11840
-// Function ID: 11841
+// Module ID: 11842
+// Function ID: 11843
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1502, 21, 11817, 5092, 587, 558, 576, 11727, 4850, 4818, 8268, 6156, 5088, 1200, 2]
+// Dependencies: [19, 17, 1502, 21, 11819, 5092, 587, 558, 576, 11729, 4850, 4818, 8269, 6157, 5088, 1200, 2]
 
-// Module 11840 (AppLauncherCommandViewHeader)
+// Module 11842 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8268 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11727 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 11817 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8269 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11729 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 11819 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import Fragment from "Fragment" /* 21 */;
@@ -71,7 +71,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     application = section.application;
   }
   if (cResult[0] !== application) {
-    const tmpResult = scrollOffsetY(11727);
+    const tmpResult = scrollOffsetY(11729);
     const appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
     cResult[0] = application;
     cResult[1] = appLauncherIconSource;
@@ -328,7 +328,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   }
   if (null != tmp6) {
     const obj10 = { style: tmp4.appIcon, source: tmp6 };
-    tmp19 = closure_6(tmp11(6156), obj10);
+    tmp19 = closure_6(tmp11(6157), obj10);
   } else {
     const obj11 = { style: items5 };
     items5 = [, ];
@@ -438,7 +438,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   let obj7 = scrollOffsetY(4818);
   let str = obj7.useToken(section(587).colors.BACKGROUND_BASE_LOW);
   let tmp10 = memo;
-  const tmp9 = section(8268);
+  const tmp9 = section(8269);
   if (typeof memo !== "number") {
     let uri;
     if (memo != null) {
@@ -452,7 +452,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   const tmp9Result = tmp9(tmp10, str);
   if (null != memo) {
     const obj8 = { style: tmp.appIcon, source: memo };
-    tmp15 = closure_6(tmp8(6156), obj8);
+    tmp15 = closure_6(tmp8(6157), obj8);
     tmp16 = closure_6;
   } else {
     const obj9 = { style: items1 };
@@ -473,7 +473,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   items2[1] = prop;
   const obj11 = { style: items3 };
   items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  items4 = [tmp16(section(4850).View, obj11), tmp16(section(11817), { onPress: onPressBack }), , , ];
+  items4 = [tmp16(section(4850).View, obj11), tmp16(section(11819), { onPress: onPressBack }), , , ];
   const obj12 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: displayName };
   items5 = [tmp.appSmallName, animatedStyle];
   displayName = undefined;

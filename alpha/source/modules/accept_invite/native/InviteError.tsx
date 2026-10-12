@@ -1,9 +1,9 @@
-// Module ID: 12483
-// Function ID: 12484
+// Module ID: 12485
+// Function ID: 12486
 // Name: InviteError
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 4969, 5031, 12484, 12485, 12486, 1126, 5379, 6156, 5088, 1415, 1200, 12487, 6158, 2128, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 4969, 5031, 12486, 12487, 12488, 1126, 5379, 6157, 5088, 1415, 1200, 12489, 6159, 2128, 2]
 
-// Module 12483 (InviteError)
+// Module 12485 (InviteError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,10 +15,10 @@ import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import GuildIcon from "GuildIcon" /* 6158 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12486 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12487 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12488 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12489 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,13 +72,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   }
   importDefault = tmp5;
   const tmpResult = onPressClose(4969);
-  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12484 : 12485);
+  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12486 : 12487);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
   if (cResult[2] !== code) {
-    const tmpResult2 = onPressClose(12486);
+    const tmpResult2 = onPressClose(12488);
     const descriptiveInviteError = tmpResult2.getDescriptiveInviteError(code);
     cResult[2] = code;
     cResult[3] = descriptiveInviteError;
@@ -234,7 +234,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12484 : 12485);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12486 : 12487);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -439,7 +439,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         cResult[15] = tmp22;
         tmp19 = tmp22;
       }
-      const obj11 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(6158).GuildIconSizes.XLARGE };
+      const obj11 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(6159).GuildIconSizes.XLARGE };
       const tmp17 = GuildIconDefault;
       const tmp18 = closure_7(tmp17, obj11);
       cResult[9] = tmp6;

@@ -1,8 +1,8 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 14920
+// Function ID: 14921
 // Dependencies: [2]
 
-// Module 14897
+// Module 14920
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/user_profile/try_it_out/shadow_realm_banner.png.js");

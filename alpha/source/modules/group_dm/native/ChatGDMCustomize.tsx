@@ -1,9 +1,9 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9638
+// Function ID: 9639
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 2065, 1085, 21, 5092, 587, 6664, 504, 5421, 6169, 1415, 9638, 7014, 1126, 4809, 9639, 6184, 5088, 6285, 5379, 9641, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 1085, 21, 5092, 587, 6665, 504, 5421, 6170, 1415, 9639, 7015, 1126, 4809, 9640, 6185, 5088, 6286, 5379, 9642, 2]
 
-// Module 9637 (ChatGDMCustomize)
+// Module 9638 (ChatGDMCustomize)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -195,7 +195,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -301,7 +301,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
           c3 = 0;
           closure_129_10(false);
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
         const tmp31 = closure_129_4;
         if (tmp31) {

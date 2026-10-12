@@ -1,13 +1,13 @@
-// Module ID: 6656
-// Function ID: 6657
+// Module ID: 6657
+// Function ID: 6658
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 558, 576, 5031, 4969, 6657, 6658, 6156, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5031, 4969, 6658, 6659, 6157, 2]
 
-// Module 6656 (BackgroundImage)
+// Module 6657 (BackgroundImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useThemeDefault from "useTheme" /* 5031 */;
-import FastImageDefault from "FastImage" /* 6156 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
     let tmp5Result;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(6657);
-    } else {
       tmp5Result = tmp5(6658);
+    } else {
+      tmp5Result = tmp5(6659);
     }
     backgroundImageSource = tmp5Result;
   }
@@ -90,16 +90,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
       let tmp5Result;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp5Result = tmp5(6657);
-      } else {
         tmp5Result = tmp5(6658);
+      } else {
+        tmp5Result = tmp5(6659);
       }
       tmp = tmp5Result;
     }
     return obj;
   }, items);
   let obj2 = {};
-  flag(6156);
+  flag(6157);
   const merged = Object.assign(memo);
   return <closure_4 style={closure_5.absoluteFill}>{null}</closure_4>;
 });

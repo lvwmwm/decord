@@ -1,17 +1,17 @@
-// Module ID: 18340
-// Function ID: 18341
+// Module ID: 18398
+// Function ID: 18399
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 2083, 2087, 1390, 8638, 1085, 21, 5092, 587, 558, 576, 504, 8637, 1126, 5088, 5379, 6156, 15022, 6727, 2]
+// Dependencies: [19, 17, 2083, 2087, 1390, 8639, 1085, 21, 5092, 587, 558, 576, 504, 8638, 1126, 5088, 5379, 6157, 15045, 6728, 2]
 
-// Module 18340 (GuildSettingsModalSecurity)
+// Module 18398 (GuildSettingsModalSecurity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8638 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                             return props.getProps().mfaLevel;
                           }
                         }
-                        tmp53[0] = stateFromStores(15022);
+                        tmp53[0] = stateFromStores(15045);
                         tmp53[1] = tmp4.image;
                         const tmp54 = closure_11(tmp52, tmp53);
                         cResult[35] = tmp4.image;
@@ -649,8 +649,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   items4[2] = tmp17Result;
   items5 = [closure_12(View, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
-  const obj11 = { source: stateFromStores(15022), style: tmp.image, resizeMode: "contain" };
-  const tmp22 = stateFromStores(6156);
+  const obj11 = { source: stateFromStores(15045), style: tmp.image, resizeMode: "contain" };
+  const tmp22 = stateFromStores(6157);
   items6 = [closure_11(tmp22, obj11), ];
   const obj12 = { style: tmp.infoWrapper, children: closure_11(Text3, obj13) };
   obj13 = { variant: "text-sm/medium", color: "text-muted", children: intl4.format(guildId(1126).t["FK0+iX"], {}) };
@@ -658,7 +658,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   intl4 = tmp2(1126).intl;
   items6[1] = closure_11(View, obj12);
   items5[1] = closure_12(View, obj10);
-  items7 = [closure_12(View, obj3), closure_11(tmp2(6727).NavScrim, {})];
+  items7 = [closure_12(View, obj3), closure_11(tmp2(6728).NavScrim, {})];
   return closure_12(tmp15, obj9);
 });
 const result = size.fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalSecurity.tsx");

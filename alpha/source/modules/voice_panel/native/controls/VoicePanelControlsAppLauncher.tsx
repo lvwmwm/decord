@@ -1,14 +1,14 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 17954
+// Function ID: 17955
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 2065, 11968, 1085, 21, 5092, 558, 576, 9306, 11969, 8394, 504, 38, 11977, 1121, 10621, 10622, 4850, 11754, 11978, 1126, 2]
+// Dependencies: [19, 2065, 11970, 1085, 21, 5092, 558, 576, 9307, 11971, 8395, 504, 38, 11979, 1121, 10622, 10623, 4850, 11756, 11980, 1126, 2]
 
-// Module 17897 (VoicePanelControlsAppLauncher)
+// Module 17954 (VoicePanelControlsAppLauncher)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11968 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -207,20 +207,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   react = undefined;
   let derivedValue1;
   const tmp = closure_10();
-  let obj = gestureSpecs(9306);
+  let obj = gestureSpecs(9307);
   const gradientTop = obj.useGradientTop();
-  const context = react.useContext(setControlsMode(11969));
+  const context = react.useContext(setControlsMode(11971));
   setControlsMode = context.setControlsMode;
   ({ channelId: c2, safeArea, windowDimensions } = context);
-  const tmp4 = setControlsMode(8394)(windowDimensions);
+  const tmp4 = setControlsMode(8395)(windowDimensions);
   react = tmp4;
-  const rect = setControlsMode(8394)(safeArea);
+  const rect = setControlsMode(8395)(safeArea);
   const items = [rect];
   const obj2 = gestureSpecs(504);
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c2));
   setControlsMode(38)(null != stateFromStores, "channel should not be null");
   const items1 = [setControlsMode];
-  const obj3 = gestureSpecs(11977);
+  const obj3 = gestureSpecs(11979);
   const controlsDrawerOpenWidth = obj3.getControlsDrawerOpenWidth(tmp4.width, rect.left, rect.right);
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -228,10 +228,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { mode: hasOwnProperty.HIDDEN };
     setControlsMode(obj);
   }, items1);
-  const obj4 = gestureSpecs(10621);
+  const obj4 = gestureSpecs(10622);
   const appLauncherChatInputRefDummy = obj4.useAppLauncherChatInputRefDummy({ noop: true });
-  const VOICE = gestureSpecs(10622).AppLauncherEntrypoint.VOICE;
-  const ref = react.useRef(gestureSpecs(10621).AppLauncherKeyboardCloseReason.DISMISSED);
+  const VOICE = gestureSpecs(10623).AppLauncherEntrypoint.VOICE;
+  const ref = react.useRef(gestureSpecs(10622).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = react.useRef(undefined);
   const obj5 = gestureSpecs(4850);
   const sharedValue = obj5.useSharedValue(0);
@@ -277,9 +277,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   View = setControlsMode(4850).View;
   items3 = [, ];
   const obj12 = { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth };
-  items3[0] = closure_7(setControlsMode(11754), obj12);
+  items3[0] = closure_7(setControlsMode(11756), obj12);
   const obj13 = { title: intl.string(gestureSpecs(1126).t.shUONg), disablePill: true };
-  const tmp17 = setControlsMode(11978);
+  const tmp17 = setControlsMode(11980);
   intl = gestureSpecs(1126).intl;
   items3[1] = closure_7(tmp17, obj13);
   return closure_7(closure_9, obj10);

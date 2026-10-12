@@ -1,12 +1,12 @@
-// Module ID: 8893
-// Function ID: 8894
+// Module ID: 8894
+// Function ID: 8895
 // Name: useSteamWebsiteUrl
-// Dependencies: [2020, 1085, 558, 576, 8894, 8892, 2031, 504, 2]
+// Dependencies: [2020, 1085, 558, 576, 8895, 8893, 2031, 504, 2]
 // Exports: buildSteamStoreUrl
 
-// Module 8893 (useSteamWebsiteUrl)
+// Module 8894 (useSteamWebsiteUrl)
 import Constants from "Constants" /* 1085 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 8894 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 8895 */;
 import GameStore from "GameStore" /* 2020 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

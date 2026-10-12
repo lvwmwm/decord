@@ -1,13 +1,13 @@
-// Module ID: 15067
-// Function ID: 15068
+// Module ID: 15090
+// Function ID: 15091
 // Name: SensitiveContentFilterSetting
-// Dependencies: [7992, 1085, 10663, 1126, 8208, 15068, 2]
+// Dependencies: [7993, 1085, 10663, 1126, 8209, 15091, 2]
 
-// Module 15067 (SensitiveContentFilterSetting)
+// Module 15090 (SensitiveContentFilterSetting)
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8208 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8209 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

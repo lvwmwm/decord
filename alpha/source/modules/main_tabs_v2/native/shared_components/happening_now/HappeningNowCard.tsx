@@ -1,15 +1,15 @@
-// Module ID: 15567
-// Function ID: 15568
+// Module ID: 15590
+// Function ID: 15591
 // Name: HappeningNowCard
-// Dependencies: [109, 19, 17, 15566, 21, 5092, 558, 576, 6626, 4972, 6181, 5088, 2]
+// Dependencies: [109, 19, 17, 15589, 21, 5092, 558, 576, 6627, 4972, 6182, 5088, 2]
 
-// Module 15567 (HappeningNowCard)
+// Module 15590 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6626 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15566 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let tmp;
 let unpackModuleId;
 const useColorThemeBackgroundDefault = tmp(4972);
 const Text_Text = tmp(5088);
-const Card_Card = tmp(6181);
+const Card_Card = tmp(6182);
 let closure_3 = ["children", "noMargin", "displayNameFont"];
 let closure_4 = ["children", "variant"];
 const View = react_native.View;

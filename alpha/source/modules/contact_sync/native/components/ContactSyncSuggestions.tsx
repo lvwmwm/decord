@@ -1,9 +1,9 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 12423
+// Function ID: 12424
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1085, 12422, 21, 5092, 587, 6258, 558, 5386, 576, 5088, 4962, 1415, 1200, 1126, 6176, 4818, 4967, 11, 1265, 8579, 8624, 5391, 1105, 5379, 2]
+// Dependencies: [32, 19, 17, 1085, 12424, 21, 5092, 587, 6259, 558, 5386, 576, 5088, 4962, 1415, 1200, 1126, 6177, 4818, 4967, 11, 1265, 8580, 8625, 5391, 1105, 5379, 2]
 
-// Module 12421 (ContactSyncSuggestions)
+// Module 12423 (ContactSyncSuggestions)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -14,10 +14,10 @@ import native from "native" /* 1200 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import UserUtils from "UserUtils" /* 4962 */;
 import useFontScale from "useFontScale" /* 5386 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6176 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
-import Form from "Form" /* 8579 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 12422 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6177 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import Form from "Form" /* 8580 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 12424 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -284,7 +284,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sugges
       return onSelect(suggestion.suggested_user.id);
     }
   };
-  const TableCheckboxRow = tmp3(6176).TableCheckboxRow;
+  const TableCheckboxRow = tmp3(6177).TableCheckboxRow;
   obj4 = { source: userAvatarSource, size: native.AvatarSizes.REFRESH_MEDIUM_32 };
   Avatar = tmp3(1200).Avatar;
   items = [metroImportAll(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
@@ -618,7 +618,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
   }, items3);
   let obj6 = { contentContainerStyle: obj7, data: memo, renderItem: callback1 };
   obj7 = { paddingHorizontal: onSubmit(587).space.PX_16, paddingBottom: tmp6 };
-  const FlashList = friendSuggestions(8624).FlashList;
+  const FlashList = friendSuggestions(8625).FlashList;
   items5 = [closure_8(FlashList, obj6), , ];
   let obj8 = { style: tmp.linearGradient, start: friendSuggestions(1105).VerticalGradient.START, end: friendSuggestions(1105).VerticalGradient.END, pointerEvents: "none", colors: items };
   const tmp11 = onSubmit(5391);

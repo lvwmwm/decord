@@ -1,21 +1,21 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17401
+// Function ID: 17402
 // Name: rows/GroupDMRow
-// Dependencies: [19, 21, 558, 576, 5421, 10279, 1200, 10280, 5088, 17329, 2]
+// Dependencies: [19, 21, 558, 576, 5421, 10280, 1200, 10281, 5088, 17386, 2]
 
-// Module 17344 (rows/GroupDMRow)
+// Module 17401 (rows/GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1200 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 10280 */;
-import SearchListRow2 from "SearchListRow" /* 17329 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 10281 */;
+import SearchListRow2 from "SearchListRow" /* 17386 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const GroupDMAvatarDefault = tmp4(10279);
+const GroupDMAvatarDefault = tmp4(10280);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRow(channel) {
   let accessibilityActions;
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRow
     tmp3Result = tmp3(tmp5(5088).Text, obj3);
   }
   let str2 = str;
-  const SearchListRow = tmp5(17329).SearchListRow;
+  const SearchListRow = tmp5(17386).SearchListRow;
   if (str == null) {
     str2 = "";
   }

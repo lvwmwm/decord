@@ -1,15 +1,15 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16165
+// Function ID: 16166
 // Name: UserSettingsDesignSystemTooltip
-// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 8450, 9443, 5379, 6895, 6261, 6262, 5088, 6845, 6813, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 8451, 9444, 5379, 6896, 6262, 6263, 5088, 6846, 6814, 2]
 
-// Module 16142 (UserSettingsDesignSystemTooltip)
+// Module 16165 (UserSettingsDesignSystemTooltip)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6813 */;
-import LayerScope2 from "LayerScope" /* 6845 */;
-import DeviceOrientation from "DeviceOrientation" /* 8450 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import LayerScope2 from "LayerScope" /* 6846 */;
+import DeviceOrientation from "DeviceOrientation" /* 8451 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -136,7 +136,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     if (cResult[2] === visible) {
       tmp15 = cResult[3];
     }
-    const tmpResult = visible(9443);
+    const tmpResult = visible(9444);
     const tooltip = tmpResult.useTooltip(ref, tmp15);
     if (cResult[4] !== visible) {
       class U {
@@ -201,8 +201,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
             }
             const obj3 = { title: "Position", value: first1, onChange: tmp12, hasIcons: false, children: tmp28 };
             cResult[16] = first1;
-            cResult[17] = closure_5(visible(6262).TableRadioGroup, obj3);
-            const tmp31 = closure_5(visible(6262).TableRadioGroup, obj3);
+            cResult[17] = closure_5(visible(6263).TableRadioGroup, obj3);
+            const tmp31 = closure_5(visible(6263).TableRadioGroup, obj3);
           } else {
             class U {
               constructor() {
@@ -245,8 +245,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         const obj5 = { label: "Unlock Orientation", value: tmp8, onValueChange: tmp9 };
         cResult[12] = tmp8;
         cResult[13] = tmp9;
-        cResult[14] = closure_5(visible(6895).TableSwitchRow, obj5);
-        const tmp27 = closure_5(visible(6895).TableSwitchRow, obj5);
+        cResult[14] = closure_5(visible(6896).TableSwitchRow, obj5);
+        const tmp27 = closure_5(visible(6896).TableSwitchRow, obj5);
       }
       const obj6 = { style: tmp4.container, children: tmp18 };
       cResult[9] = tmp4.container;
@@ -296,7 +296,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       return closure_1_1(false);
     }
   }), items);
-  const obj2 = visible(9443);
+  const obj2 = visible(9444);
   const tooltip = obj2.useTooltip(ref, memo);
   const obj3 = { children: items1 };
   const obj4 = { style: tmp.container, children: closure_5(visible(5379).Button, obj5) };
@@ -309,7 +309,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     text: str,
     size: "md"
   };
-  items1 = [closure_5(View, obj4), closure_5(visible(6895).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), , ];
+  items1 = [closure_5(View, obj4), closure_5(visible(6896).TableSwitchRow, { label: "Unlock Orientation", value: tmp5, onValueChange: tmp6 }), , ];
   const obj6 = {
     title: "Position",
     value: first1,
@@ -320,7 +320,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       return closure_1_5(first(closure_1[11]).TableRadioRow, obj, label);
     })
   };
-  const TableRadioGroup = visible(6262).TableRadioGroup;
+  const TableRadioGroup = visible(6263).TableRadioGroup;
   items1[2] = closure_5(TableRadioGroup, obj6);
   items1[3] = closure_5(closure_12, {});
   return closure_7(closure_6, obj3);
@@ -367,7 +367,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { children: hasOwnProperty(closure_11, {}) };
-    const LayerScope = tmp(6845).LayerScope;
+    const LayerScope = tmp(6846).LayerScope;
     const tmp8 = hasOwnProperty(LayerScope, obj2);
     cResult[0] = tmp8;
     first = tmp8;

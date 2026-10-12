@@ -1,9 +1,9 @@
-// Module ID: 6806
-// Function ID: 6807
+// Module ID: 6807
+// Function ID: 6808
 // Name: CategoryCollapseStore
 // Dependencies: [1244, 2065, 5965, 4748, 1085, 1209, 1388, 2090, 504, 584, 2]
 
-// Module 6806 (CategoryCollapseStore)
+// Module 6807 (CategoryCollapseStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;

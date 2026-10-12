@@ -1,19 +1,19 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17045
+// Function ID: 17046
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 6117, 21, 5092, 587, 558, 576, 4962, 5088, 17022, 1415, 1200, 6179, 1631, 4942, 17027, 17028, 504, 1126, 8624, 8358, 6727, 2]
+// Dependencies: [19, 17, 6118, 21, 5092, 587, 558, 576, 4962, 5088, 17046, 1415, 1200, 6180, 1631, 4942, 17051, 17052, 504, 1126, 8625, 8359, 6728, 2]
 
-// Module 17021 (GuildSettingsModalMemberApplications)
+// Module 17045 (GuildSettingsModalMemberApplications)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 17022 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 17046 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6117 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6118 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -193,7 +193,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         }
       }
       const obj5 = { arrow: true, icon: tmp8, label: tmp11, onPress: tmp4, start, end };
-      const tmp17 = closure_7(joinRequest(6179).TableRow, obj5);
+      const tmp17 = closure_7(joinRequest(6180).TableRow, obj5);
       cResult[8] = end;
       cResult[9] = tmp4;
       cResult[10] = start;
@@ -225,7 +225,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         userAvatarSource = obj.getUserAvatarSource(user);
       }
       const obj2 = { arrow: true, icon: closure_7(Avatar, obj3), label: closure_7(closure_11, obj4), onPress: tmp, start, end };
-      const TableRow = joinRequest(6179).TableRow;
+      const TableRow = joinRequest(6180).TableRow;
       obj3 = { source: userAvatarSource, size: joinRequest(1200).AvatarSizes.SMALL };
       Avatar = joinRequest(1200).Avatar;
       obj4 = { user };

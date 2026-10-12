@@ -1,14 +1,14 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15157
+// Function ID: 15158
 // Name: shareGuardianConnectLink
-// Dependencies: [7259, 8481, 1126, 2568, 2]
+// Dependencies: [7260, 8482, 1126, 2568, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 15134 (shareGuardianConnectLink)
+// Module 15157 (shareGuardianConnectLink)
 import intl2 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7259 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8481 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8482 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = FamilyCenterConstants.FAMILY_CENTER_REQUEST_QR_CODE_URL;

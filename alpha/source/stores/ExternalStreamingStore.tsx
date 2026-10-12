@@ -1,7 +1,7 @@
 // Module ID: 10654
 // Function ID: 10655
 // Name: ExternalStreamingStore
-// Dependencies: [5, 5761, 4963, 1085, 1102, 1295, 6874, 584, 8274, 5763, 1355, 504, 2]
+// Dependencies: [5, 5761, 4963, 1085, 1102, 1295, 6875, 584, 8275, 5763, 1355, 504, 2]
 
 // Module 10654 (ExternalStreamingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _modDef1355 from "module_1355" /* 1355 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6874 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
 import StreamerModeStore from "StreamerModeStore" /* 4963 */;
@@ -126,7 +126,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c6;
@@ -315,7 +315,7 @@ class StreamingPoller {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;

@@ -1,20 +1,20 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12555
+// Function ID: 12556
 // Name: GuildDirectoryNicknameUpsellModal
-// Dependencies: [5, 32, 19, 17, 2087, 12544, 21, 5092, 6258, 587, 558, 576, 504, 6664, 6809, 5635, 6158, 1126, 5088, 6284, 1200, 5379, 12545, 12552, 6200, 6169, 6687, 2]
+// Dependencies: [5, 32, 19, 17, 2087, 12546, 21, 5092, 6259, 587, 558, 576, 504, 6665, 6810, 5635, 6159, 1126, 5088, 6285, 1200, 5379, 12547, 12554, 6201, 6170, 6688, 2]
 
-// Module 12553 (GuildDirectoryNicknameUpsellModal)
+// Module 12555 (GuildDirectoryNicknameUpsellModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import GuildIcon from "GuildIcon" /* 6158 */;
-import useInitialValueDefault from "useInitialValue" /* 6169 */;
-import NavigatorHeader from "NavigatorHeader" /* 6200 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6664 */;
-import Constants from "Constants" /* 12544 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
+import useInitialValueDefault from "useInitialValue" /* 6170 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import Constants from "Constants" /* 12546 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let obj4;
 let obj5;
 let tmp5;
 let unpackModuleId;
-const FreeFormInputGroupDefault = tmp5(6284);
+const FreeFormInputGroupDefault = tmp5(6285);
 const handleClose2 = function handleClose() {
   const obj = closure_2_1(closure_2_2[22]);
   obj.viewPrompt(constants.REAL_NAME_PROMPT, guildId);
@@ -94,7 +94,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const insets = handleClose(6664)().insets;
+  const insets = handleClose(6665)().insets;
   [obj3, dependencyMap] = ref(react.useState(null), 2);
   const tmp10 = ref(react.useState(null), 2);
   const tmp11 = ref(react.useState(""), 2);
@@ -263,7 +263,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
                   }
                   let obj5 = { label: tmp42, placeholder: tmp43, value: first1, onChangeText: tmp13, style: null, textStyle: null, clearButtonVisibility: tmp(1200).ClearButtonVisibility.WITH_CONTENT, error: tmp46, onFocus: tmp48, onBlur: tmp49 };
                   ({ input: obj10.style, redesignTextInput: obj10.textStyle } = tmp4);
-                  const tmp9Result = handleClose(6284);
+                  const tmp9Result = handleClose(6285);
                   cResult[34] = first1;
                   cResult[35] = tmp4.input;
                   cResult[36] = tmp4.redesignTextInput;
@@ -287,8 +287,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
             cResult[20] = tmp32;
             tmp30 = tmp32;
           }
-          const obj8 = { style: tmp4.guildIcon, guild: stateFromStores, size: tmp(6158).GuildIconSizes.XLARGE };
-          const tmp9Result2 = handleClose(6158);
+          const obj8 = { style: tmp4.guildIcon, guild: stateFromStores, size: tmp(6159).GuildIconSizes.XLARGE };
+          const tmp9Result2 = handleClose(6159);
           const tmp22 = closure_10(tmp9Result2, obj8);
           cResult[13] = stateFromStores;
           cResult[14] = tmp4.guildIcon;
@@ -320,7 +320,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -365,7 +365,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
             nick = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp25) {
         if (0 === nick) {
@@ -419,7 +419,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -467,7 +467,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp25) {
           closure_2 = tmp25;
@@ -608,7 +608,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryNi
   const tmp5 = useInitialValueDefault(tmp4);
   if (cResult[2] !== tmp5) {
     let obj2 = { screens: tmp5, initialRouteName: UPSELL_SCREEN_KEY };
-    const tmp9 = closure_10(tmp(6687).Navigator, obj2);
+    const tmp9 = closure_10(tmp(6688).Navigator, obj2);
     cResult[2] = tmp5;
     cResult[3] = tmp9;
     tmp6 = tmp9;

@@ -1,15 +1,15 @@
-// Module ID: 8768
-// Function ID: 8769
+// Module ID: 8769
+// Function ID: 8770
 // Name: InviteButton
-// Dependencies: [19, 17, 7423, 21, 5092, 558, 576, 1126, 5379, 2]
+// Dependencies: [19, 17, 7424, 21, 5092, 558, 576, 1126, 5379, 2]
 
-// Module 8768 (InviteButton)
+// Module 8769 (InviteButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Constants from "Constants" /* 7423 */;
+import Constants from "Constants" /* 7424 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

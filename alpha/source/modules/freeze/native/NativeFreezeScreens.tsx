@@ -1,9 +1,9 @@
-// Module ID: 16713
-// Function ID: 16714
+// Module ID: 16737
+// Function ID: 16738
 // Name: NativeFreezeScreens
 // Dependencies: [32, 19, 17, 21, 558, 576, 38, 5307, 5092, 2]
 
-// Module 16713 (NativeFreezeScreens)
+// Module 16737 (NativeFreezeScreens)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;

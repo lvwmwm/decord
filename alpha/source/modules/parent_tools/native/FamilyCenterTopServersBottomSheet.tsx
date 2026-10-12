@@ -1,18 +1,18 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 15177
+// Function ID: 15178
 // Name: FamilyCenterTopServersBottomSheet
-// Dependencies: [7258, 21, 5092, 587, 558, 576, 504, 7741, 6158, 6179, 1126, 2568, 5088, 6264, 6898, 2]
+// Dependencies: [7259, 21, 5092, 587, 558, 576, 504, 7742, 6159, 6180, 1126, 2568, 5088, 6265, 6899, 2]
 
-// Module 15154 (FamilyCenterTopServersBottomSheet)
+// Module 15177 (FamilyCenterTopServersBottomSheet)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import GuildIconDefault from "GuildIcon" /* 6158 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import ActionSheet2 from "ActionSheet" /* 6898 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7258 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -75,7 +75,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
           }
         }
         const obj2 = { label: stateFromStores.name, subLabel: tmp9, icon: tmp11 };
-        const tmp17 = closure_4(guildActivity(6179).TableRow, obj2);
+        const tmp17 = closure_4(guildActivity(6180).TableRow, obj2);
         cResult[9] = tmp9;
         cResult[10] = stateFromStores.name;
         cResult[11] = tmp11;
@@ -89,7 +89,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const tmpResult2 = guildActivity(7741);
+    const tmpResult2 = guildActivity(7742);
     const topUserOrGuildDescription = tmpResult2.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     cResult[3] = guildActivity.call_count;
     cResult[4] = guildActivity.messages_sent;
@@ -106,10 +106,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRo
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp2Result = guildActivity(7741);
+    const tmp2Result = guildActivity(7742);
     const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
-    const TableRow = tmp2(6179).TableRow;
+    const TableRow = tmp2(6180).TableRow;
     obj3 = { guild: stateFromStores, style: tmp.guildIcon };
     return closure_4(TableRow, obj2);
   }

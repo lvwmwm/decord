@@ -1,9 +1,9 @@
-// Module ID: 9467
-// Function ID: 9468
+// Module ID: 9468
+// Function ID: 9469
 // Name: PremiumUpsellAlert
-// Dependencies: [32, 19, 17, 1207, 1390, 1085, 9468, 1392, 21, 5092, 587, 4827, 6156, 5088, 558, 576, 7169, 1126, 4769, 9270, 9271, 5031, 4969, 9495, 9496, 9497, 9498, 9259, 9499, 9500, 9501, 9502, 504, 5260, 6895, 9269, 1497, 6851, 6878, 1265, 5396, 9503, 5640, 9504, 5398, 1200, 9505, 9273, 2]
+// Dependencies: [32, 19, 17, 1207, 1390, 1085, 9469, 1392, 21, 5092, 587, 4827, 6157, 5088, 558, 576, 7170, 1126, 4769, 9271, 9272, 5031, 4969, 9496, 9497, 9498, 9499, 9260, 9500, 9501, 9502, 9503, 504, 5260, 6896, 9270, 1497, 6852, 6879, 1265, 5396, 9504, 5640, 9505, 5398, 1200, 9506, 9274, 2]
 
-// Module 9467 (PremiumUpsellAlert)
+// Module 9468 (PremiumUpsellAlert)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -17,16 +17,16 @@ import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5260 */;
 import FileSizeUtils from "FileSizeUtils" /* 5640 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7169 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9259 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9270 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9271 */;
-import AppIconConstants from "AppIconConstants" /* 9468 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9497 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9498 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9503 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9504 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7170 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9260 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9271 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9272 */;
+import AppIconConstants from "AppIconConstants" /* 9469 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9498 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9499 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 9504 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9505 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
@@ -497,9 +497,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const tmp6 = useThemeDefault();
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(9495);
-  } else {
     tmp5Result = tmp5(9496);
+  } else {
+    tmp5Result = tmp5(9497);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -550,9 +550,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const tmp6 = map1;
   const tmp7 = closure_18;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(9495);
-  } else {
     tmp4Result = tmp4(9496);
+  } else {
+    tmp4Result = tmp4(9497);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t.OVN9la), description: intl2.string(intl6.t.j0dyAG) };
   intl = tmp(1126).intl;
@@ -810,9 +810,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Longer
   const largerUpsellImage = legacyClassComponentStyles.largerUpsellImage;
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(9499);
-  } else {
     tmp5Result = tmp5(9500);
+  } else {
+    tmp5Result = tmp5(9501);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -874,9 +874,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Longer
   const tmp7 = map1;
   const tmp8 = closure_18;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(9499);
-  } else {
     tmp4Result = tmp4(9500);
+  } else {
+    tmp4Result = tmp4(9501);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["8cjmTj"]), description: intl2.formatToPlainString(intl6.t.moN9wh, { maxLength: tmp6 }) };
   intl = tmp(1126).intl;
@@ -898,9 +898,9 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   const tmp6 = useThemeDefault();
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(9501);
-  } else {
     tmp5Result = tmp5(9502);
+  } else {
+    tmp5Result = tmp5(9503);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -951,9 +951,9 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildC
   const tmp6 = map1;
   const tmp7 = closure_18;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(9501);
-  } else {
     tmp4Result = tmp4(9502);
+  } else {
+    tmp4Result = tmp4(9503);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["CoNXB+"]), description: intl2.format(intl6.t.mkXb2F, {}) };
   intl = tmp(1126).intl;
@@ -1028,7 +1028,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Upload
     let tmp13 = null;
     if (first) {
       const obj3 = { start: true, end: true, label: intl.string(intl6.t.ix8XIj), subLabel: intl2.string(intl6.t["wC0+Ph"]), value: stateFromStores, onValueChange: tmp8 };
-      const TableSwitchRow = tmp(6895).TableSwitchRow;
+      const TableSwitchRow = tmp(6896).TableSwitchRow;
       intl = tmp(1126).intl;
       intl2 = tmp(1126).intl;
       tmp13 = map1(TableSwitchRow, obj3);
@@ -1072,7 +1072,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Upload
           const result = obj.updatedUnsyncedSettings(obj2);
         }
     };
-    const TableSwitchRow = tmp(6895).TableSwitchRow;
+    const TableSwitchRow = tmp(6896).TableSwitchRow;
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;
     tmp7Result = tmp7(TableSwitchRow, obj2);

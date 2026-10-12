@@ -1,16 +1,16 @@
-// Module ID: 17125
-// Function ID: 17126
+// Module ID: 17164
+// Function ID: 17165
 // Name: useConjurePreviewMenu
-// Dependencies: [19, 13213, 558, 576, 13346, 17126, 4808, 504, 13226, 17127, 1126, 3849, 2]
+// Dependencies: [19, 13230, 558, 576, 13369, 17165, 4808, 504, 17153, 17166, 1126, 3849, 2]
 
-// Module 17125 (useConjurePreviewMenu)
+// Module 17164 (useConjurePreviewMenu)
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 13226 */;
-import conjureProjectMenuItems from "conjureProjectMenuItems" /* 17127 */;
+import conjureExternalConnections from "conjureExternalConnections" /* 17153 */;
+import conjureProjectMenuItems from "conjureProjectMenuItems" /* 17166 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13213 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 13230 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   const conjureConnectActions = obj2.useConjureConnectActions(projectId, projectId(connect[6]).presentError);
   ({ pending: pending2, connect } = conjureConnectActions);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureConnectionStore];
+    const items = [ConjureSettingsStore];
     cResult[0] = items;
     first = items;
   } else {
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   if (cResult[1] !== projectId) {
     const fn = function s() {
-      return ConjureConnectionStore.getDeclaredConnections(projectId);
+      return ConjureSettingsStore.getDeclaredConnections(projectId);
     };
     const items1 = [projectId];
     cResult[1] = projectId;
@@ -180,7 +180,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   let obj2 = projectId(pending[7]);
   const items = [pending2];
   const items1 = [projectId];
-  const stateFromStores = obj2.useStateFromStores(items, () => ConjureConnectionStore.getDeclaredConnections(projectId), items1);
+  const stateFromStores = obj2.useStateFromStores(items, () => ConjureSettingsStore.getDeclaredConnections(projectId), items1);
   const items2 = [stateFromStores];
   const memo = refresh.useMemo(() => {
     const obj = conjureExternalConnections;

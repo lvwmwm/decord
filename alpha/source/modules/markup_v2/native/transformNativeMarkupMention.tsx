@@ -1,15 +1,15 @@
-// Module ID: 8156
-// Function ID: 8157
+// Module ID: 8157
+// Function ID: 8158
 // Name: transformNativeMarkupMention
-// Dependencies: [8157, 5402, 5400, 5412, 8238, 2]
+// Dependencies: [8158, 5402, 5400, 5412, 8239, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8156 (transformNativeMarkupMention)
+// Module 8157 (transformNativeMarkupMention)
 import MarkupTypes from "MarkupTypes" /* 5400 */;
 import MarkupRules from "MarkupRules" /* 5402 */;
 import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5412 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8157 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8238 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8158 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8239 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -31,16 +31,16 @@ export const transformNativeMention = function transformNativeMention(value, all
     const str9 = value.value;
     const str1 = str9.toString();
     const _HermesInternal2 = HermesInternal;
-    const obj5 = { fullMatch: "<@" + str1 + ">", id: str1, everyoneOrHere: "Array" };
+    const obj5 = { fullMatch: "<@" + str1 + ">", id: str1, everyoneOrHere: "r" };
     const hydrateUserMention = MarkupRules.hydrateUserMention;
     MarkupRules;
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "apply", everyoneOrHere: null }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "apply", everyoneOrHere: true }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "apply", everyoneOrHere: null }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "apply", everyoneOrHere: true }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

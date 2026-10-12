@@ -1,9 +1,9 @@
-// Module ID: 15218
-// Function ID: 15219
+// Module ID: 15241
+// Function ID: 15242
 // Name: ConnectionsEmptyStateUpsell
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5031, 9204, 15219, 15220, 4969, 1415, 1200, 6181, 5056, 15216, 2000, 5088, 7224, 1631, 5377, 1126, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5031, 9205, 15242, 15243, 4969, 1415, 1200, 6182, 5056, 15239, 2000, 5088, 7225, 1631, 5377, 1126, 2]
 
-// Module 15218 (ConnectionsEmptyStateUpsell)
+// Module 15241 (ConnectionsEmptyStateUpsell)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,10 +13,10 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import Card_Card from "Card/Card" /* 6181 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7224 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9204 */;
-import ConnectionsTracking from "ConnectionsTracking" /* 15219 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7225 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9205 */;
+import ConnectionsTracking from "ConnectionsTracking" /* 15242 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -79,7 +79,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
     tmp6 = cResult[1];
   }
   if (cResult[2] !== platform.type) {
-    const tmpResult = platform(15220);
+    const tmpResult = platform(15243);
     const connectionBackgroundColor = tmpResult.getConnectionBackgroundColor(platform.type);
     cResult[2] = platform.type;
     cResult[3] = connectionBackgroundColor;
@@ -126,7 +126,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
                       }
                     }
                     let obj2 = { onPress: tmp6, style: tmp4.card, border: "strong", children: tmp19 };
-                    const tmp25 = closure_6(platform(6181).Card, obj2);
+                    const tmp25 = closure_6(platform(6182).Card, obj2);
                     cResult[23] = tmp6;
                     cResult[24] = tmp4.card;
                     cResult[25] = tmp19;
@@ -404,7 +404,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsE
   let items6;
   let obj4;
   const tmp = closure_8();
-  let obj = emptyStatePlatforms(7224);
+  let obj = emptyStatePlatforms(7225);
   emptyStatePlatforms = obj.useEmptyStatePlatforms();
   const items = [emptyStatePlatforms];
   const memo = react.useMemo(() => emptyStatePlatforms.slice(0, 3), items);

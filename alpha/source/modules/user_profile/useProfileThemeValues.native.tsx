@@ -1,9 +1,9 @@
-// Module ID: 6880
-// Function ID: 6881
+// Module ID: 6881
+// Function ID: 6882
 // Name: useProfileThemeValues
 // Dependencies: [19, 5081, 558, 576, 573, 587, 586, 2]
 
-// Module 6880 (useProfileThemeValues)
+// Module 6881 (useProfileThemeValues)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;

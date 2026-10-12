@@ -1,9 +1,9 @@
-// Module ID: 17020
-// Function ID: 17021
+// Module ID: 17044
+// Function ID: 17045
 // Name: PruneGuildModalActionCreators
 // Dependencies: [5, 1085, 1295, 2]
 
-// Module 17020 (PruneGuildModalActionCreators)
+// Module 17044 (PruneGuildModalActionCreators)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -50,7 +50,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = {
             return obj;
           } else {
             id = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           id = 3;

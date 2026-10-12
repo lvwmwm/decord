@@ -1,17 +1,17 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 15839
+// Function ID: 15840
 // Name: UploadIntlDataSetting
-// Dependencies: [5, 17, 1085, 21, 570, 1272, 558, 576, 1381, 1130, 1164, 1126, 1382, 1295, 4809, 5046, 10663, 15817, 15098, 2]
+// Dependencies: [5, 17, 1085, 21, 570, 1272, 558, 576, 1381, 1130, 1164, 1126, 1382, 1295, 4809, 5046, 10663, 15840, 15121, 2]
 
-// Module 15816 (UploadIntlDataSetting)
+// Module 15839 (UploadIntlDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
 import AssetRegistry from "AssetRegistry" /* 1164 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15098 */;
-import FileUpIcon from "FileUpIcon" /* 15817 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15121 */;
+import FileUpIcon from "FileUpIcon" /* 15840 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import module_570 from "module_570" /* 570 */;
@@ -43,7 +43,7 @@ let obj = function _serializeIntlData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let tmp32;
@@ -176,7 +176,7 @@ obj = function _handleUploadIntlDataSettingPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -262,7 +262,7 @@ obj = function _handleUploadIntlDataSettingPress() {
           c3 = 0;
           onUploadIntlDataRequestFinish();
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp28) {
         url = tmp28;

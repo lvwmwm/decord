@@ -1,14 +1,14 @@
-// Module ID: 6866
-// Function ID: 6867
+// Module ID: 6867
+// Function ID: 6868
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 6867, 5379, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 6868, 5379, 2]
 
-// Module 6866 (ConnectionCardView)
+// Module 6867 (ConnectionCardView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 6867 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

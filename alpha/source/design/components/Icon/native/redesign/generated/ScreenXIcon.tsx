@@ -1,9 +1,9 @@
-// Module ID: 17871
-// Function ID: 17872
+// Module ID: 17928
+// Function ID: 17929
 // Name: ScreenXIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 11063, 4817, 2]
 
-// Module 17871 (ScreenXIcon)
+// Module 17928 (ScreenXIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

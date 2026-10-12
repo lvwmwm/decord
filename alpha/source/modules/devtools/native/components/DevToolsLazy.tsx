@@ -1,17 +1,17 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 14830
+// Function ID: 14831
 // Name: DevToolsLazy
-// Dependencies: [19, 17, 7408, 7407, 21, 5373, 14808, 2000, 558, 576, 504, 1382, 16321, 2]
+// Dependencies: [19, 17, 7409, 7408, 21, 5373, 14831, 2000, 558, 576, 504, 1382, 16344, 2]
 
-// Module 14807 (DevToolsLazy)
+// Module 14830 (DevToolsLazy)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import KeyCommands from "KeyCommands" /* 5373 */;
 import react from "react" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7408 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7407 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7409 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7408 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = {
   eventName: "keyCommandShowDevTools",
   discoverabilityTitle: "Open DevTools Panel",
   onKeyCommand() {
-    const promise = asyncRequire(14808, dependencyMap.paths);
+    const promise = asyncRequire(14831, dependencyMap.paths);
     promise.then((navigateToDevTools) => {
       navigateToDevTools.navigateToDevTools();
     });
@@ -121,8 +121,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLa
       let tmp19;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        cResult[8] = tmp(16321);
-        tmp(16321);
+        cResult[8] = tmp(16344);
+        tmp(16344);
         class D {
           constructor() {
             return showDevWidget.showDevWidget;
@@ -175,7 +175,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsLa
   const keyCommands = obj3.useKeyCommands(stateFromStores ? items : []);
   if (stateFromStores) {
     if (stateFromStores1) {
-      return jsx(tmp(16321).default, {});
+      return jsx(tmp(16344).default, {});
     }
   }
   return null;

@@ -1,18 +1,18 @@
-// Module ID: 16022
-// Function ID: 16023
+// Module ID: 16045
+// Function ID: 16046
 // Name: TraitOptionItem
-// Dependencies: [17, 5437, 21, 587, 5092, 558, 576, 5438, 9035, 5391, 6242, 15986, 7576, 6156, 4832, 2]
+// Dependencies: [17, 5437, 21, 587, 5092, 558, 576, 5438, 9036, 5391, 6243, 16009, 7577, 6157, 4832, 2]
 
-// Module 16022 (TraitOptionItem)
+// Module 16045 (TraitOptionItem)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react_native from "react-native" /* 4832 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5438 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import _modDef6242 from "module_6242" /* 6242 */;
-import inlineStylesDefault from "inlineStyles" /* 7576 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 15986 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import _modDef6243 from "module_6243" /* 6243 */;
+import inlineStylesDefault from "inlineStyles" /* 7577 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16009 */;
 import react_native2 from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 5437 */;
 import Fragment from "Fragment" /* 21 */;
@@ -32,8 +32,8 @@ let metroRequire;
 let obj2;
 let tmp;
 let unpackModuleId;
-const inlineStyles = tmp(7576);
-const NitroWheelIcon = tmp(9035);
+const inlineStyles = tmp(7577);
+const NitroWheelIcon = tmp(9036);
 ({ Pressable: c3, View: closure_4 } = react_native2);
 ({ CHECKPOINT_DARK_CYAN: hasOwnProperty, CHECKPOINT_NITRO_GRADIENT_COLORS: metroRequire, CHECKPOINT_PRIMARY: metroImportDefault, CHECKPOINT_RARITY_COLORS: metroImportAll, TRAIT_OPTION_HEIGHT } = CheckpointConstants);
 const TRAIT_OPTION_WIDTH = CheckpointConstants.TRAIT_OPTION_WIDTH;
@@ -88,7 +88,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Rarity
         return tmp23;
       }
       const obj3 = { style: tmp11, maskElement: tmp13, pointerEvents: "none", children: tmp16 };
-      const tmp26 = unpackModuleId(_modDef6242, obj3);
+      const tmp26 = unpackModuleId(_modDef6243, obj3);
       cResult[6] = tmp11;
       cResult[7] = tmp16;
       cResult[8] = tmp26;
@@ -145,7 +145,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Rarity
     items = [, ];
     ({ rarityIndicator: arr2[0], cornerNitroIcon: arr2[1] } = tmp);
     obj3 = { colors: metroRequire, start, end, style: tmp.cornerNitroIconGradient };
-    const tmp12 = _modDef6242;
+    const tmp12 = _modDef6243;
     tmp4Result = unpackModuleId(tmp12, obj2);
   } else {
     const items1 = [, , ];
@@ -267,9 +267,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
     let tmp6 = !isNoneOption;
     if (tmp6) {
       const obj2 = { children: authStore2(LinearGradient, obj3) };
-      const Defs = tmp(7576).Defs;
+      const Defs = tmp(7577).Defs;
       obj3 = { id: checkpointTraitGradient, x1: "0", y1: "1", x2: "0", y2: "0", children: items };
-      LinearGradient = tmp(7576).LinearGradient;
+      LinearGradient = tmp(7577).LinearGradient;
       const obj4 = { offset: "0", stopColor: hasOwnProperty, stopOpacity };
       items = [unpackModuleId(inlineStyles.Stop, obj4), ];
       const obj5 = { offset: "1", stopColor: hasOwnProperty, stopOpacity };
@@ -285,7 +285,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
   const tmp13 = isSelected ? hasOwnProperty : hasOwnProperty;
   let num3 = 1;
   if (isSelected) {
-    num3 = tmp(15986).TRAIT_OPTION_STROKE_WIDTH;
+    num3 = tmp(16009).TRAIT_OPTION_STROKE_WIDTH;
   }
   if (cResult[2] === tmp13) {
     let tmp14;
@@ -297,7 +297,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
       let tmp17 = !isNoneOption;
       if (tmp17) {
         const obj6 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "url(#" + checkpointTraitGradient + ")" };
-        const Polygon2 = tmp(7576).Polygon;
+        const Polygon2 = tmp(7577).Polygon;
         const _HermesInternal = HermesInternal;
         tmp17 = unpackModuleId(Polygon2, obj6);
       }
@@ -329,7 +329,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
     tmp21 = tmp26;
   }
   const obj7 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "transparent", stroke: tmp13, strokeWidth: num3 };
-  const Polygon = tmp(7576).Polygon;
+  const Polygon = tmp(7577).Polygon;
   const tmp15 = unpackModuleId(Polygon, obj7);
   cResult[2] = tmp13;
   cResult[3] = num3;
@@ -364,13 +364,13 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetS
   const Polygon = inlineStyles.Polygon;
   num = 1;
   if (isSelected) {
-    num = tmp13(15986).TRAIT_OPTION_STROKE_WIDTH;
+    num = tmp13(16009).TRAIT_OPTION_STROKE_WIDTH;
   }
   items1[1] = unpackModuleId(Polygon, obj5);
   let tmp12Result = !isNoneOption;
   if (tmp12Result) {
     const obj6 = { points: CheckpointCustomizationUtils.TRAIT_OPTION_SHAPE_POINTS, fill: "url(#" + checkpointTraitGradient + ")" };
-    const Polygon2 = tmp13(7576).Polygon;
+    const Polygon2 = tmp13(7577).Polygon;
     const _HermesInternal = HermesInternal;
     tmp12Result = tmp12(Polygon2, obj6);
   }

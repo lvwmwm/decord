@@ -1,9 +1,9 @@
-// Module ID: 6630
-// Function ID: 6631
+// Module ID: 6631
+// Function ID: 6632
 // Name: NativeCeremonies
-// Dependencies: [5, 3, 5942, 5939, 1126, 1382, 6631, 6632, 1628, 2]
+// Dependencies: [5, 3, 5942, 5939, 1126, 1382, 6632, 6633, 1628, 2]
 
-// Module 6630 (NativeCeremonies)
+// Module 6631 (NativeCeremonies)
 import LoggerDefault from "Logger" /* 3 */;
 import intl2 from "intl" /* 1126 */;
 import react_nativeDefault from "react-native" /* 5942 */;
@@ -27,7 +27,7 @@ let obj = function _promptForRegisterCredential() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {

@@ -1,7 +1,7 @@
 // Module ID: 10789
 // Function ID: 10790
 // Name: getCanJoin
-// Dependencies: [1085, 10790, 10791, 10792, 10793, 10794, 10795, 10796, 7012, 1382, 2]
+// Dependencies: [1085, 10790, 10791, 10792, 10793, 10794, 10795, 10796, 7013, 1382, 2]
 // Exports: getCanJoin, getCanSync
 
 // Module 10789 (getCanJoin)
@@ -60,7 +60,7 @@ export const getCanJoin = function getCanJoin(currentUserId) {
                   const remoteJoinableActivityPlatform = tmp6Result7.getRemoteJoinableActivityPlatform(presenceActivity);
                   if (null != remoteJoinableActivityPlatform) {
                     return { canJoin: true, remoteJoinPlatform: remoteJoinableActivityPlatform };
-                  } else if (tmp13(7012)(presenceActivity, constants2.SUPPORTS_JOIN_URL)) {
+                  } else if (tmp13(7013)(presenceActivity, constants2.SUPPORTS_JOIN_URL)) {
                     return { canJoin: true, remoteJoinPlatform: null };
                   }
                 }
@@ -90,7 +90,7 @@ export const getCanSync = function getCanSync(activity, tmp9Result, arg2, id) {
     let tmp6 = isInviteActiveDefault(activity, arg2, id.id);
     const tmp4 = importDefault;
     if (tmp6) {
-      let tmp8 = tmp4(7012)(activity, constants2.SYNC);
+      let tmp8 = tmp4(7013)(activity, constants2.SYNC);
       if (tmp8) {
         let isPlatformEmbedded = PlatformUtils.isPlatformEmbedded;
         const tmp9 = require;

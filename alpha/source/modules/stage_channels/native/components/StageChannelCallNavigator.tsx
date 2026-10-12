@@ -1,7 +1,7 @@
 // Module ID: 10970
 // Function ID: 10971
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1096, 21, 558, 576, 10971, 4850, 5378, 587, 10972, 11044, 10974, 10357, 10356, 9316, 10904, 5106, 11045, 11130, 4827, 10827, 11138, 11139, 11021, 11144, 11152, 11154, 11187, 11188, 5092, 11189, 10976, 2]
+// Dependencies: [32, 19, 17, 1096, 21, 558, 576, 10971, 4850, 5378, 587, 10972, 11044, 10974, 10358, 10357, 9317, 10904, 5106, 11045, 11130, 4827, 10827, 11138, 11139, 11021, 11144, 11152, 11154, 11187, 11188, 5092, 11189, 10976, 2]
 
 // Module 10970 (StageChannelCallNavigator)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1096 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import spring from "spring" /* 5378 */;
-import MessageManagerDefault from "MessageManager" /* 9316 */;
+import MessageManagerDefault from "MessageManager" /* 9317 */;
 import participantHasVideoDefault from "participantHasVideo" /* 10904 */;
 import JoinStageViewDefault from "JoinStageView" /* 11044 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

@@ -1,14 +1,14 @@
-// Module ID: 8518
-// Function ID: 8519
+// Module ID: 8519
+// Function ID: 8520
 // Name: GuildScheduledEventsActionCreators
-// Dependencies: [5, 502, 6054, 2071, 1085, 1295, 5889, 1112, 8519, 5644, 584, 8524, 11, 2]
+// Dependencies: [5, 502, 6054, 2071, 1085, 1295, 5889, 1112, 8520, 5644, 584, 8525, 11, 2]
 
-// Module 8518 (GuildScheduledEventsActionCreators)
+// Module 8519 (GuildScheduledEventsActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1112 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8519 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8520 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
@@ -182,7 +182,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -222,7 +222,7 @@ let obj = {
             const obj = tmp(c2[10]);
             obj.dispatch(obj7);
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -252,7 +252,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -337,7 +337,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -374,7 +374,7 @@ let obj = {
                 return obj9;
               } else {
                 rsvp = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             }
           } else if (1 === userId) {
@@ -428,7 +428,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -503,7 +503,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp33) {
           closure_2 = tmp33;
@@ -543,7 +543,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

@@ -1,18 +1,18 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17693
+// Function ID: 17694
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1390, 2062, 21, 5092, 587, 558, 576, 504, 4769, 5056, 13724, 6156, 17637, 1200, 9537, 5088, 1126, 5379, 6839, 2]
+// Dependencies: [19, 17, 1390, 2062, 21, 5092, 587, 558, 576, 504, 4769, 5056, 13747, 6157, 17694, 1200, 9538, 5088, 1126, 5379, 6840, 2]
 
-// Module 17636 (AppIconsCoachmark)
+// Module 17693 (AppIconsCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9537 */;
-import AppIconUtils from "AppIconUtils" /* 13724 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17637 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9538 */;
+import AppIconUtils from "AppIconUtils" /* 13747 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17694 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
@@ -343,7 +343,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconsCoac
     children: items4
   };
   const obj4 = { style: tmp.info, children: items2 };
-  BottomSheet = markAsDismissed(6839).BottomSheet;
+  BottomSheet = markAsDismissed(6840).BottomSheet;
   const obj5 = { source: AssetRegistryDefault2, style: tmp.image };
   const tmp10 = FastImageDefault;
   items2 = [closure_7(tmp10, obj5), , ];

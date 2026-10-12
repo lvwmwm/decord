@@ -1,10 +1,10 @@
-// Module ID: 17514
-// Function ID: 17515
+// Module ID: 17571
+// Function ID: 17572
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 558, 576, 11408, 11410, 1126, 3849, 11432, 5377, 5088, 5305, 5301, 2]
+// Dependencies: [5, 32, 19, 21, 558, 576, 11408, 11410, 1126, 3849, 11434, 5377, 5088, 5305, 5301, 2]
 // Exports: default
 
-// Module 17514 (openConjureDeleteAppChannelAlert)
+// Module 17571 (openConjureDeleteAppChannelAlert)
 import useAlertStore from "useAlertStore" /* 5301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -187,7 +187,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -235,7 +235,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
             throw error;
           }
           length = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp31) {
           length = 3;
           throw tmp31;
@@ -297,7 +297,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
             throw error;
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp31) {
           c3 = 3;
           throw tmp31;

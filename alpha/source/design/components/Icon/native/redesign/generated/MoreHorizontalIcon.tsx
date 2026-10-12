@@ -1,14 +1,14 @@
-// Module ID: 9241
-// Function ID: 9242
+// Module ID: 9242
+// Function ID: 9243
 // Name: MoreHorizontalIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8771, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8772, 4817, 2]
 
-// Module 9241 (MoreHorizontalIcon)
+// Module 9242 (MoreHorizontalIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8771 */;
+import AssetRegistry from "AssetRegistry" /* 8772 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

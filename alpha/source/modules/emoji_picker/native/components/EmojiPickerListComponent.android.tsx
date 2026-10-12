@@ -1,22 +1,22 @@
-// Module ID: 9529
-// Function ID: 9530
+// Module ID: 9530
+// Function ID: 9531
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 5987, 5991, 9429, 1241, 21, 5092, 4850, 9530, 6306, 1628, 558, 576, 4764, 6758, 9517, 2]
+// Dependencies: [19, 5987, 5991, 9430, 1241, 21, 5092, 4850, 9531, 6307, 1628, 558, 576, 4764, 6759, 9518, 2]
 
-// Module 9529 (EmojiPickerListComponent)
+// Module 9530 (EmojiPickerListComponent)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
 import EmojiPickerConstants from "EmojiPickerConstants" /* 5991 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 6758 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9429 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9517 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9530 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 6759 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9430 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9518 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9531 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
-import BottomSheetModal from "BottomSheetModal" /* 6306 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

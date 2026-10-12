@@ -1,14 +1,14 @@
-// Module ID: 15239
-// Function ID: 15240
+// Module ID: 15262
+// Function ID: 15263
 // Name: ScanQrCodeSetting
-// Dependencies: [5, 7482, 12, 1628, 7499, 5934, 14072, 2000, 10663, 1126, 15138, 2]
+// Dependencies: [5, 7483, 12, 1628, 7500, 5934, 14095, 2000, 10663, 1126, 15161, 2]
 
-// Module 15239 (ScanQrCodeSetting)
+// Module 15262 (ScanQrCodeSetting)
 import intl2 from "intl" /* 1126 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7499 */;
-import QrCodeIcon from "QrCodeIcon" /* 15138 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7500 */;
+import QrCodeIcon from "QrCodeIcon" /* 15161 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_12 from "module_12" /* 12 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
@@ -29,7 +29,7 @@ const debounceResult = module_12.debounce(_asyncToGenerator(async (arg0, value) 
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "+51" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     let c2;
@@ -78,7 +78,7 @@ const debounceResult = module_12.debounce(_asyncToGenerator(async (arg0, value) 
           c2 = 0;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } catch (tmp18) {
       if (0 === c2) {

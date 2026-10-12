@@ -1,21 +1,21 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16091
+// Function ID: 16092
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 5091, 21, 5092, 587, 558, 576, 6664, 504, 15899, 2049, 16041, 6179, 6896, 6895, 5377, 6264, 2]
+// Dependencies: [19, 17, 5091, 21, 5092, 587, 558, 576, 6665, 504, 15922, 2049, 16064, 6180, 6897, 6896, 5377, 6265, 2]
 
-// Module 16068 (DevToolsShopScreen)
+// Module 16091 (DevToolsShopScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import TableRow5 from "TableRow" /* 6179 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6664 */;
-import TableSwitchRow from "TableSwitchRow" /* 6895 */;
-import FormSwitch from "FormSwitch" /* 6896 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15899 */;
+import TableRow5 from "TableRow" /* 6180 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import TableSwitchRow from "TableSwitchRow" /* 6896 */;
+import FormSwitch from "FormSwitch" /* 6897 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 15922 */;
 import react from "react" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 5091 */;
 import Fragment from "Fragment" /* 21 */;
@@ -156,7 +156,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
   }
   if (cResult[12] !== stateFromStores) {
     const obj4 = { label: "Disable collectibles shop cache", subLabel: "shop_disable_cache", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp30) };
-    const TableRow = tmp(6179).TableRow;
+    const TableRow = tmp(6180).TableRow;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
@@ -200,7 +200,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
       }
     }
     const obj5 = { label: "Show unpublished items in collectibles shop", subLabel: "shop_include_unpublished", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp34) };
-    const TableRow2 = tmp(6179).TableRow;
+    const TableRow2 = tmp(6180).TableRow;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
@@ -240,7 +240,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
         }
       }
       const obj6 = { label: "Show debug log overlay in collectibles shop", subLabel: "shop_show_debug_overlay", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp41) };
-      const TableRow3 = tmp(6179).TableRow;
+      const TableRow3 = tmp(6180).TableRow;
       class R {
         constructor() {
           return DevSettingsStore.get("bypass_google_sku_sync");
@@ -289,7 +289,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
         }
       }
       const obj7 = { label: "[Android] Bypass Google SKU sync in collectibles shop", subLabel: "bypass_google_sku_sync", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp45) };
-      const TableRow4 = tmp(6179).TableRow;
+      const TableRow4 = tmp(6180).TableRow;
       class R {
         constructor() {
           return DevSettingsStore.get("bypass_google_sku_sync");

@@ -1,12 +1,12 @@
-// Module ID: 9314
-// Function ID: 9315
+// Module ID: 9315
+// Function ID: 9316
 // Name: AppChannelChat
-// Dependencies: [6061, 6035, 9315, 6063, 558, 576, 504, 2]
+// Dependencies: [6061, 6035, 9316, 6063, 558, 576, 504, 2]
 // Exports: closeAppChannelChat, openAppChannelChat
 
-// Module 9314 (AppChannelChat)
+// Module 9315 (AppChannelChat)
 import SidebarActionTypes from "SidebarActionTypes" /* 6063 */;
-import SidebarActionCreatorsDefault from "SidebarActionCreators" /* 9315 */;
+import SidebarActionCreatorsDefault from "SidebarActionCreators" /* 9316 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 6061 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

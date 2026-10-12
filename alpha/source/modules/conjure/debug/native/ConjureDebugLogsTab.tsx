@@ -1,20 +1,20 @@
-// Module ID: 17286
-// Function ID: 17287
+// Module ID: 17335
+// Function ID: 17336
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 10651, 21, 5092, 587, 558, 576, 17287, 10532, 6905, 17288, 5088, 1126, 3849, 6184, 6181, 1631, 504, 17289, 8529, 8778, 6738, 17290, 17291, 8624, 2]
+// Dependencies: [32, 19, 17, 13224, 21, 5092, 587, 558, 576, 17336, 10533, 6906, 17337, 5088, 1126, 3849, 6185, 6182, 1631, 504, 17338, 8530, 8779, 6739, 17339, 17340, 8625, 2]
 
-// Module 17286 (ConjureDebugLogsTab)
+// Module 17335 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 17287 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 17288 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 17289 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 17336 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 17337 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 17338 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 13224 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -86,9 +86,9 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp(10532).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp(10533).ChevronSmallDownIcon;
   } else {
-    ChevronSmallRightIcon = tmp(6905).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp(6906).ChevronSmallRightIcon;
   }
   ({ row, rowHead } = tmp4);
   if (cResult[2] !== entry.ts) {
@@ -206,7 +206,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
                         children: items2
                       };
                       obj6 = { expanded };
-                      const PressableOpacity = tmp(6184).PressableOpacity;
+                      const PressableOpacity = tmp(6185).PressableOpacity;
                       intl2 = tmp(1126).intl;
                       const obj7 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
                       items2 = [metroImportDefault(ChevronSmallRightIcon, obj7), ];
@@ -227,7 +227,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
                       let tmp36Result = null;
                       if (expanded) {
                         const obj10 = { variant: "primary", children: metroImportDefault(Text_Text.Text, obj11) };
-                        const Card = tmp(6181).Card;
+                        const Card = tmp(6182).Card;
                         obj11 = { variant: "text-xs/normal", color: str, selectable: true, children: tmp5.pretty };
                         tmp36Result = tmp36(Card, obj10);
                       }
@@ -325,17 +325,17 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp3(10532).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp3(10533).ChevronSmallDownIcon;
     tmp6 = tmp3;
   } else {
-    ChevronSmallRightIcon = tmp3(6905).ChevronSmallRightIcon;
+    ChevronSmallRightIcon = tmp3(6906).ChevronSmallRightIcon;
     tmp6 = tmp3;
   }
   let obj = { style: tmp.row, children: items2 };
   const obj2 = { style: tmp.rowHead, children: items1 };
   const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6Result.formatClockTime(entry.ts) };
   const Text = tmp6(5088).Text;
-  tmp6Result = tmp6(17288);
+  tmp6Result = tmp6(17337);
   items1 = [closure_7(Text, obj3), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
@@ -387,7 +387,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
       children: items4
     };
     obj9 = { expanded };
-    const PressableOpacity = tmp6(6184).PressableOpacity;
+    const PressableOpacity = tmp6(6185).PressableOpacity;
     intl2 = tmp6(1126).intl;
     const obj10 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
     items4 = [closure_7(ChevronSmallRightIcon, obj10), ];
@@ -408,7 +408,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     let tmp9Result6 = null;
     if (expanded) {
       const obj13 = { variant: "primary", children: closure_7(tmp6(5088).Text, obj14) };
-      const Card = tmp6(6181).Card;
+      const Card = tmp6(6182).Card;
       obj14 = { variant: "text-xs/normal", color: str, selectable: true, children: memo.pretty };
       tmp9Result6 = tmp9(Card, obj13);
     }
@@ -443,8 +443,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   const tmp4 = closure_10();
   const bottom = first1(1631)().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = ConjureProjectStore;
-    const items = [ConjureProjectStore];
+    const tmp6 = ConjureDebugLogStore;
+    const items = [ConjureDebugLogStore];
     cResult[0] = items;
     first = items;
   } else {
@@ -452,7 +452,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   }
   if (cResult[1] !== projectId) {
     const fn = function y() {
-      return ConjureProjectStore.getLogs(projectId);
+      return ConjureDebugLogStore.getLogs(projectId);
     };
     const items1 = [projectId];
     cResult[1] = projectId;
@@ -467,7 +467,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   let tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [ConjureProjectStore];
+    const items2 = [ConjureDebugLogStore];
     cResult[4] = items2;
     tmp9 = items2;
   } else {
@@ -476,7 +476,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   if (cResult[5] !== projectId) {
     class L {
       constructor() {
-        return ConjureProjectStore.getHistoryState(projectId, "logs");
+        return ConjureDebugLogStore.getHistoryState(projectId, "logs");
       }
     }
     const items3 = [projectId];
@@ -488,7 +488,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   } else {
     class L {
       constructor() {
-        return ConjureProjectStore.getHistoryState(projectId, "logs");
+        return ConjureDebugLogStore.getHistoryState(projectId, "logs");
       }
     }
     tmp12 = cResult[7];
@@ -501,10 +501,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
       constructor() {
-        return ConjureProjectStore.getHistoryState(projectId, "logs");
+        return ConjureDebugLogStore.getHistoryState(projectId, "logs");
       }
     }
-    const DEBUG_LOG_FILTERS = tmp(17289).DEBUG_LOG_FILTERS;
+    const DEBUG_LOG_FILTERS = tmp(17338).DEBUG_LOG_FILTERS;
     tmp18[1] = DEBUG_LOG_FILTERS.map((id) => {
       let obj2;
       const obj = { id, label: obj2.debugLogFilterLabel(id), page: null };
@@ -524,16 +524,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   } else {
     class L {
       constructor() {
-        return ConjureProjectStore.getHistoryState(projectId, "logs");
+        return ConjureDebugLogStore.getHistoryState(projectId, "logs");
       }
     }
   }
-  const tmpResult4 = tmp(8529);
+  const tmpResult4 = tmp(8530);
   const segmentedControlState = tmpResult4.useSegmentedControlState(tmp17);
   if (cResult[9] === first1) {
     class L {
       constructor() {
-        return ConjureProjectStore.getHistoryState(projectId, "logs");
+        return ConjureDebugLogStore.getHistoryState(projectId, "logs");
       }
     }
   }
@@ -610,11 +610,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
   let obj = projectId(first[19]);
   const items = [first2];
   const items1 = [projectId];
-  stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getLogs(projectId), items1);
+  stateFromStores = obj.useStateFromStores(items, () => ConjureDebugLogStore.getLogs(projectId), items1);
   let obj2 = projectId(first[19]);
   const items2 = [first2];
   const items3 = [projectId];
-  const stateFromStores1 = obj2.useStateFromStores(items2, () => ConjureProjectStore.getHistoryState(projectId, "logs"), items3);
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => ConjureDebugLogStore.getHistoryState(projectId, "logs"), items3);
   [first, _slicedToArray] = first1.useState("all");
   [first1, tmp10] = first1.useState("");
   const obj3 = {

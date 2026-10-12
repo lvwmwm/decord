@@ -1,9 +1,9 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 14434
+// Function ID: 14435
 // Name: CarouselPagination
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4850, 5093, 14196, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4850, 5093, 14219, 2]
 
-// Module 14411 (CarouselPagination)
+// Module 14434 (CarouselPagination)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,7 +17,7 @@ import size_mod from "module_2" /* 2 */;
 let obj2;
 let size;
 let tmp;
-const Easing = tmp(14196);
+const Easing = tmp(14219);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

@@ -1,10 +1,10 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8011
+// Function ID: 8012
 // Name: GuildRoleSubscriptionSystemMessageConstants
 // Dependencies: [1126, 5750, 2]
 // Exports: getJoinButtonLabels, getRenewButtonLabels
 
-// Module 8010 (GuildRoleSubscriptionSystemMessageConstants)
+// Module 8011 (GuildRoleSubscriptionSystemMessageConstants)
 import intl3 from "intl" /* 1126 */;
 import StickersTypes from "StickersTypes" /* 5750 */;
 import size from "module_2" /* 2 */;

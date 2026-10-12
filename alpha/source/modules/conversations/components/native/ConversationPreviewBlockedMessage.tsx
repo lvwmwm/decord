@@ -1,9 +1,9 @@
-// Module ID: 9370
-// Function ID: 9371
+// Module ID: 9371
+// Function ID: 9372
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 558, 576, 9371, 587, 6649, 1126, 5088, 5377, 2]
+// Dependencies: [19, 21, 558, 576, 9372, 587, 6650, 1126, 5088, 5377, 2]
 
-// Module 9370 (ConversationPreviewBlockedMessage)
+// Module 9371 (ConversationPreviewBlockedMessage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5088 */;
@@ -28,9 +28,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     let EyeSlashIcon;
     const tmp5 = _false;
     if ("blocked" === reason) {
-      EyeSlashIcon = tmp(9371).DenyIcon;
+      EyeSlashIcon = tmp(9372).DenyIcon;
     } else {
-      EyeSlashIcon = tmp(6649).EyeSlashIcon;
+      EyeSlashIcon = tmp(6650).EyeSlashIcon;
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };
     const tmp5Result = tmp5(EyeSlashIcon, obj2);
@@ -88,9 +88,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   const Stack = Stack_Stack.Stack;
   const tmp = React3;
   if ("blocked" === reason) {
-    EyeSlashIcon = tmp2(9371).DenyIcon;
+    EyeSlashIcon = tmp2(9372).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(6649).EyeSlashIcon;
+    EyeSlashIcon = tmp2(6650).EyeSlashIcon;
   }
   items = [, ];
   const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };

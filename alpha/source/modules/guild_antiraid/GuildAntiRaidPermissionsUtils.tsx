@@ -1,10 +1,10 @@
-// Module ID: 12579
-// Function ID: 12580
+// Module ID: 12581
+// Function ID: 12582
 // Name: GuildAntiRaidPermissionsUtils
-// Dependencies: [4750, 10694, 1085, 558, 576, 504, 8043, 2]
+// Dependencies: [4750, 10694, 1085, 558, 576, 504, 8044, 2]
 // Exports: canEnableRaidAlerts, canReportRaid
 
-// Module 12579 (GuildAntiRaidPermissionsUtils)
+// Module 12581 (GuildAntiRaidPermissionsUtils)
 import Constants from "Constants" /* 1085 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 10694 */;
@@ -155,7 +155,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRepo
   }, items3);
   let hasDetectedActivityResult = null != stateFromStores1;
   if (hasDetectedActivityResult) {
-    const tmpResult = tmp(8043);
+    const tmpResult = tmp(8044);
     hasDetectedActivityResult = tmpResult.hasDetectedActivity(stateFromStores1);
   }
   return !hasDetectedActivityResult && stateFromStores;

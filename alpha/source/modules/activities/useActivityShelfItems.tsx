@@ -1,11 +1,11 @@
-// Module ID: 11714
-// Function ID: 11715
+// Module ID: 11716
+// Function ID: 11717
 // Name: useActivityShelfItems
-// Dependencies: [19, 9065, 558, 576, 504, 11715, 11717, 11718, 2]
+// Dependencies: [19, 9066, 558, 576, 504, 11717, 11719, 11720, 2]
 
-// Module 11714 (useActivityShelfItems)
+// Module 11716 (useActivityShelfItems)
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9065 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9066 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,10 +38,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
   }
   const tmp2Result = enableFilter(504);
   const filter = tmp2Result.useStateFromStoresObject(tmp6, tmp7).filter;
-  const tmp2Result3 = enableFilter(11715);
+  const tmp2Result3 = enableFilter(11717);
   const activityShelfData = tmp2Result3.useActivityShelfData(guildId);
-  const tmp10 = filter(11717)(activityShelfData);
-  const tmp2Result4 = enableFilter(11718);
+  const tmp10 = filter(11719)(activityShelfData);
+  const tmp2Result4 = enableFilter(11720);
   const developerActivityShelfItems = tmp2Result4.useDeveloperActivityShelfItems();
   if (cResult[2] === tmp5) {
     let tmp12;
@@ -113,11 +113,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
     const obj = { filter: filter.getFilter() };
     return obj;
   }).filter;
-  const obj2 = flag(11715);
+  const obj2 = flag(11717);
   const activityShelfData = obj2.useActivityShelfData(guildId);
-  const tmp2 = filter(11717)(activityShelfData);
+  const tmp2 = filter(11719)(activityShelfData);
   dependencyMap = tmp2;
-  const obj3 = flag(11718);
+  const obj3 = flag(11720);
   const developerActivityShelfItems = obj3.useDeveloperActivityShelfItems();
   const items1 = [developerActivityShelfItems, flag, filter, tmp2];
   return developerActivityShelfItems.useMemo(() => {

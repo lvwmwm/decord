@@ -1,10 +1,10 @@
-// Module ID: 13517
-// Function ID: 13518
+// Module ID: 13540
+// Function ID: 13541
 // Name: getCanSendInvite
-// Dependencies: [1085, 10790, 7012, 10791, 10792, 10793, 2]
+// Dependencies: [1085, 10790, 7013, 10791, 10792, 10793, 2]
 // Exports: getCanSendInvite
 
-// Module 13517 (getCanSendInvite)
+// Module 13540 (getCanSendInvite)
 import isInviteActiveDefault from "isInviteActive" /* 10790 */;
 import _slicedToArray from "_slicedToArray" /* 10791 */;
 import hasPartySize from "hasPartySize" /* 10792 */;
@@ -29,7 +29,7 @@ export const getCanSendInvite = function getCanSendInvite(applicationActivity, a
       }
       if (type !== constants2.JOIN_REQUEST) {
         return false;
-      } else if (tmp11(7012)(applicationActivity, constants.JOIN)) {
+      } else if (tmp11(7013)(applicationActivity, constants.JOIN)) {
         const obj = _slicedToArray;
         const partySize = obj.getPartySize(applicationActivity);
         const obj2 = hasPartySize;

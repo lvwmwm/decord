@@ -1,10 +1,10 @@
-// Module ID: 9070
-// Function ID: 9071
+// Module ID: 9071
+// Function ID: 9072
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5071, 4791, 4784, 6944, 9071, 1126, 9073, 2]
+// Dependencies: [5, 32, 19, 5071, 4791, 4784, 6945, 9072, 1126, 9074, 2]
 // Exports: useOrderSigning
 
-// Module 9070 (useOrderSigning)
+// Module 9071 (useOrderSigning)
 import BillingUtils from "BillingUtils" /* 4784 */;
 import BillingErrorDefault from "BillingError" /* 4791 */;
 import PaymentConstants from "PaymentConstants" /* 5071 */;
@@ -94,7 +94,7 @@ export const useOrderSigning = function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c4;

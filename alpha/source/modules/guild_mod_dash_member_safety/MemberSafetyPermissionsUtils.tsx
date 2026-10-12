@@ -1,10 +1,10 @@
-// Module ID: 6967
-// Function ID: 6968
+// Module ID: 6968
+// Function ID: 6969
 // Name: MemberSafetyPermissionsUtils
 // Dependencies: [32, 2083, 2087, 4750, 1390, 4754, 1085, 1097, 4755, 558, 576, 504, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions
 
-// Module 6967 (MemberSafetyPermissionsUtils)
+// Module 6968 (MemberSafetyPermissionsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
 import MemberSafetyConstants from "MemberSafetyConstants" /* 4754 */;

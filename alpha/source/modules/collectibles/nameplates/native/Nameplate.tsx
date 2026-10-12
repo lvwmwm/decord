@@ -1,9 +1,9 @@
-// Module ID: 9021
-// Function ID: 9022
+// Module ID: 9022
+// Function ID: 9023
 // Name: Nameplate
-// Dependencies: [109, 19, 5081, 21, 5092, 558, 576, 504, 5031, 4850, 5093, 1990, 9022, 5391, 1382, 9011, 6156, 2]
+// Dependencies: [109, 19, 5081, 21, 5092, 558, 576, 504, 5031, 4850, 5093, 1990, 9023, 5391, 1382, 9012, 6157, 2]
 
-// Module 9021 (Nameplate)
+// Module 9022 (Nameplate)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
@@ -207,7 +207,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
         tmp27 = cResult[8];
       }
       if (cResult[9] !== nameplate) {
-        const tmpResult8 = tmp(9022);
+        const tmpResult8 = tmp(9023);
         const nameplateAssets = tmpResult8.getNameplateAssets(nameplate);
         cResult[9] = nameplate;
         class B {
@@ -313,7 +313,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
               }
               const obj5 = { source: obj6, style: tmp16.img, accessibilityRole: "image" };
               obj6 = { uri: str };
-              tmp39 = closure_7(sharedValue(6156), obj5);
+              tmp39 = closure_7(sharedValue(6157), obj5);
             }
           }
           let tmp36Result = null;
@@ -464,7 +464,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
   const animatedStyle = tmpResult.useAnimatedStyle(A);
   const tmpResult4 = tmp(1990);
   const backgroundGradientColors = tmpResult4.getBackgroundGradientColors(nameplate.palette, tmp6);
-  const tmpResult5 = tmp(9022);
+  const tmpResult5 = tmp(9023);
   const nameplateAssets = tmpResult5.getNameplateAssets(nameplate);
   let str = nameplateAssets.staticImageUrl;
   let tmp13 = true === flag7;
@@ -505,14 +505,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Namepl
     let tmp18;
     if (tmp13) {
       const obj4 = { url: str, style: tmp4.img, autoplay: true };
-      tmp18 = closure_7(tmp(9011).APNGPlayer, obj4);
+      tmp18 = closure_7(tmp(9012).APNGPlayer, obj4);
     }
     items4[1] = tmp18;
     obj2.children = items4;
     return tmp14(View, obj2);
   }
   const obj5 = { source: { uri: str }, style: tmp4.img, accessibilityRole: "image" };
-  tmp18 = closure_7(tmp5(6156), obj5);
+  tmp18 = closure_7(tmp5(6157), obj5);
 });
 let result = size.fileFinishedImporting("modules/collectibles/nameplates/native/Nameplate.tsx");
 

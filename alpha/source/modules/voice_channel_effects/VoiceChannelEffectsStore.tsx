@@ -1,7 +1,7 @@
 // Module ID: 10906
 // Function ID: 10907
 // Name: VoiceChannelEffectsStore
-// Dependencies: [5115, 584, 1102, 12, 7060, 4969, 504, 2]
+// Dependencies: [5115, 584, 1102, 12, 7061, 4969, 504, 2]
 // Exports: clearVoiceChannelEffectForUser
 
 // Module 10906 (VoiceChannelEffectsStore)
@@ -10,7 +10,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import shared from "shared" /* 4969 */;
 import CallConstants from "CallConstants" /* 5115 */;
-import VoiceChannelEffectsUtils from "VoiceChannelEffectsUtils" /* 7060 */;
+import VoiceChannelEffectsUtils from "VoiceChannelEffectsUtils" /* 7061 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

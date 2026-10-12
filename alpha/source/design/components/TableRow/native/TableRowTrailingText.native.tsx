@@ -1,9 +1,9 @@
-// Module ID: 6190
-// Function ID: 6191
+// Module ID: 6191
+// Function ID: 6192
 // Name: TableRowTrailingText
 // Dependencies: [19, 21, 558, 576, 5088, 2]
 
-// Module 6190 (TableRowTrailingText)
+// Module 6191 (TableRowTrailingText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

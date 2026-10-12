@@ -1,10 +1,10 @@
-// Module ID: 7138
-// Function ID: 7139
+// Module ID: 7139
+// Function ID: 7140
 // Name: BillingActionCreators
-// Dependencies: [109, 5, 19, 7139, 7140, 1390, 4775, 7131, 1085, 1096, 21, 3, 1264, 510, 1265, 1295, 4784, 5724, 1382, 12740, 6959, 12742, 584, 12, 7126, 7136, 10494, 1126, 10052, 5300, 10065, 2000, 5934, 7129, 7125, 4781, 10061, 5635, 13612, 13614, 4791, 5938, 1273, 13615, 13616, 2077, 13617, 10163, 10169, 1279, 9397, 2]
+// Dependencies: [109, 5, 19, 7140, 7141, 1390, 4775, 7132, 1085, 1096, 21, 3, 1264, 510, 1265, 1295, 4784, 5724, 1382, 12742, 6960, 12744, 584, 12, 7127, 7137, 10495, 1126, 10053, 5300, 10066, 2000, 5934, 7130, 7126, 4781, 10062, 5635, 13635, 13637, 4791, 5938, 1273, 13638, 13639, 2077, 13640, 10164, 10170, 1279, 9398, 2]
 // Exports: cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
-// Module 7138 (BillingActionCreators)
+// Module 7139 (BillingActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Storage2 from "Storage" /* 510 */;
@@ -18,25 +18,25 @@ import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5635 */;
 import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5724 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
-import ProductIds from "ProductIds" /* 7126 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7136 */;
-import ACOMExperiments from "ACOMExperiments" /* 9397 */;
-import showSpendingLimitReachedAlert from "showSpendingLimitReachedAlert" /* 10061 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10494 */;
-import IAPUtils from "IAPUtils" /* 12740 */;
-import _mod12742 from "module_12742" /* 12742 */;
-import ErrorUtilsAll from "ErrorUtils" /* 13612 */;
-import purchaseExceptionAlerts from "purchaseExceptionAlerts" /* 13614 */;
-import APBRequestOperations from "APBRequestOperations" /* 13615 */;
-import ACRequestOperations from "ACRequestOperations" /* 13616 */;
+import ProductIds from "ProductIds" /* 7127 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7137 */;
+import ACOMExperiments from "ACOMExperiments" /* 9398 */;
+import showSpendingLimitReachedAlert from "showSpendingLimitReachedAlert" /* 10062 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 10495 */;
+import IAPUtils from "IAPUtils" /* 12742 */;
+import _mod12744 from "module_12744" /* 12744 */;
+import ErrorUtilsAll from "ErrorUtils" /* 13635 */;
+import purchaseExceptionAlerts from "purchaseExceptionAlerts" /* 13637 */;
+import APBRequestOperations from "APBRequestOperations" /* 13638 */;
+import ACRequestOperations from "ACRequestOperations" /* 13639 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7139 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7140 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7140 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7141 */;
 import UserStore from "UserStore" /* 1390 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import IAPStore from "IAPStore" /* 7131 */;
+import IAPStore from "IAPStore" /* 7132 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -181,7 +181,7 @@ function handlePurchaseException(code, purchase_type, arg2, productId) {
     if (isSpendingLimitError(billingError)) {
       const tmpResult = showSpendingLimitReachedAlert;
       const result = tmpResult.showSpendingLimitReachedAlert();
-    } else if (code.code !== _mod12742.ErrorCode.E_DEFERRED_PAYMENT) {
+    } else if (code.code !== _mod12744.ErrorCode.E_DEFERRED_PAYMENT) {
       const message = code.message;
       const _JSON = JSON;
       obj2 = { name, message: message1, stack };
@@ -333,7 +333,7 @@ obj = function _clearAndMakeIAPRequest() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -352,7 +352,7 @@ obj = function _clearAndMakeIAPRequest() {
             c7 = 1;
             c8 = 1;
             const obj5 = { value: obj3.clearTransactionIOS(), done: false };
-            obj3 = _mod12742;
+            obj3 = _mod12744;
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -402,7 +402,7 @@ obj = function _makeTrackedIAPRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -650,7 +650,7 @@ obj = function _updateAppleSubscription() {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -702,7 +702,7 @@ obj = function _updateAppleSubscription() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp4) {
           c1 = 3;
@@ -764,7 +764,7 @@ obj = function _cancelGenericSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -885,7 +885,7 @@ obj = function _createGenericSubscription() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let orderId;
@@ -1113,7 +1113,7 @@ obj = function _modifyGenericSubscription() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let v0;
@@ -1443,7 +1443,7 @@ obj = function _resubscribeGenericSubscription() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let tmp74;
@@ -1653,7 +1653,7 @@ obj = function _retryPendingPurchases() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {
@@ -1827,7 +1827,7 @@ obj = function _mobilePurchaseSKU() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let giftInfoOptions;
@@ -2205,7 +2205,7 @@ obj = function _migrateToACOM() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -2320,7 +2320,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -2397,7 +2397,7 @@ obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
           if (null != _undefined) {
             const obj6 = _undefined(closure_3[20]);
@@ -2446,7 +2446,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -2468,7 +2468,7 @@ obj = {
               c4 = 2;
               c5 = 1;
               const obj4 = { value: obj7.initConnection(), done: false };
-              obj7 = _mod12742;
+              obj7 = _mod12744;
               return obj4;
             }
           } else if (1 === c4) {
@@ -2524,7 +2524,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -2621,7 +2621,7 @@ obj = {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp42) {
           closure_3 = tmp42;
@@ -2660,7 +2660,7 @@ obj = {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let application_id;
@@ -2738,7 +2738,7 @@ obj = {
                   }
                 }
                 v3 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
               break;
             }
@@ -3092,7 +3092,7 @@ obj = {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c8;
@@ -3229,7 +3229,7 @@ obj = {
                           let obj4 = { value, done: true };
                           return obj4;
                         } else {
-                          return { value: "IconComponent", done: "+51" };
+                          return { value: "IconComponent", done: null };
                         }
                       } else {
                         try {
@@ -3339,7 +3339,7 @@ obj = {
                               c5 = 0;
                             }
                             c7 = 3;
-                            return { value: "IconComponent", done: "+51" };
+                            return { value: "IconComponent", done: null };
                           }
                         } catch (tmp30) {
                           closure_4 = tmp30;
@@ -3503,9 +3503,9 @@ obj = {
     })();
   }
 };
-let items = [_mod12742.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
+let items = [_mod12744.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
 const set = new Set(items);
-const items1 = [_mod12742.ErrorCode.E_UNKNOWN, _mod12742.ErrorCode.E_DEFERRED_PAYMENT];
+const items1 = [_mod12744.ErrorCode.E_UNKNOWN, _mod12744.ErrorCode.E_DEFERRED_PAYMENT];
 const set1 = new Set(items1);
 let obj2 = { NONE: "none", CANNOT_MAKE_REQUEST: "cannot_make_request", INVALID_CURRENCY: "invalid_currency", PURCHASE_INCOMPLETE: "purchase_incomplete", USER_CANCELLED: "user_cancelled", POST_PURCHASE_FAILED: "post_purchase_failed" };
 let result = size.fileFinishedImporting("actions/native/BillingActionCreators.tsx");

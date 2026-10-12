@@ -1,16 +1,16 @@
-// Module ID: 14165
-// Function ID: 14166
+// Module ID: 14188
+// Function ID: 14189
 // Name: markGuildsAsRead
-// Dependencies: [6788, 6034, 2065, 4748, 6035, 1085, 5967, 12, 11, 1265, 6799, 2]
+// Dependencies: [6789, 6034, 2065, 4748, 6035, 1085, 5967, 12, 11, 1265, 6800, 2]
 // Exports: default
 
-// Module 14165 (markGuildsAsRead)
+// Module 14188 (markGuildsAsRead)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6788 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6789 */;
 import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6034 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
@@ -76,6 +76,6 @@ export default function markGuildsAsRead(arr, source, onFinished) {
   let obj2 = AnalyticsUtilsDefault;
   let obj3 = { source, type: "guild" };
   obj2.track(AnalyticEvents.MARK_AS_READ, obj3);
-  let obj4 = mapped(6799);
+  let obj4 = mapped(6800);
   return obj4.bulkAck(mapped, onFinished);
 };

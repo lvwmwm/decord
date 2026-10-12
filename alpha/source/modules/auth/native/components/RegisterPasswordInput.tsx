@@ -1,20 +1,20 @@
-// Module ID: 16375
-// Function ID: 16376
+// Module ID: 16398
+// Function ID: 16399
 // Name: RegisterPasswordInput
-// Dependencies: [32, 109, 19, 6623, 16348, 21, 5092, 587, 4850, 558, 576, 16372, 1126, 5088, 14265, 6638, 5913, 504, 4823, 6649, 6651, 6285, 2]
+// Dependencies: [32, 109, 19, 6624, 16371, 21, 5092, 587, 4850, 558, 576, 16395, 1126, 5088, 14288, 6639, 5913, 504, 4823, 6650, 6652, 6286, 2]
 
-// Module 16375 (RegisterPasswordInput)
+// Module 16398 (RegisterPasswordInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14265 */;
-import usePasswordScore from "usePasswordScore" /* 16372 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 14288 */;
+import usePasswordScore from "usePasswordScore" /* 16395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 6623 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16348 */;
+import PhoneStore from "PhoneStore" /* 6624 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16371 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let tmp12;
 let unpackModuleId;
-const getErrorDefault = tmp12(6638);
+const getErrorDefault = tmp12(6639);
 let user = ["ref"];
 let closure_4 = ["password"];
 let closure_5 = ["password"];
@@ -605,8 +605,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterPass
     cResult[34] = tmp40;
     cResult[35] = tmp45;
     cResult[36] = undefined;
-    cResult[37] = closure_13(tmp(6285).TextInput, obj4);
-    const tmp50 = closure_13(tmp(6285).TextInput, obj4);
+    cResult[37] = closure_13(tmp(6286).TextInput, obj4);
+    const tmp50 = closure_13(tmp(6286).TextInput, obj4);
   }
   class W {
     constructor(arg0) {

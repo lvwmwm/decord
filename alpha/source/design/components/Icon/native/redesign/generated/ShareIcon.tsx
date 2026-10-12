@@ -1,14 +1,14 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13052
+// Function ID: 13053
 // Name: ShareIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8728, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8729, 4817, 2]
 
-// Module 13047 (ShareIcon)
+// Module 13052 (ShareIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8728 */;
+import AssetRegistry from "AssetRegistry" /* 8729 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

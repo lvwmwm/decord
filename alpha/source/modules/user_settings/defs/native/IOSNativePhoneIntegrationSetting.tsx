@@ -1,16 +1,16 @@
-// Module ID: 15767
-// Function ID: 15768
+// Module ID: 15790
+// Function ID: 15791
 // Name: IOSNativePhoneIntegrationSetting
-// Dependencies: [7992, 558, 15768, 1382, 1126, 2041, 10663, 14682, 15763, 2]
+// Dependencies: [7993, 558, 15791, 1382, 1126, 2041, 10663, 14705, 15786, 2]
 
-// Module 15767 (IOSNativePhoneIntegrationSetting)
+// Module 15790 (IOSNativePhoneIntegrationSetting)
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14682 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15763 */;
-import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 15768 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14705 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15786 */;
+import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 15791 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders_mod from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

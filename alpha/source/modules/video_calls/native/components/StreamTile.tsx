@@ -1,7 +1,7 @@
 // Module ID: 10884
 // Function ID: 10885
 // Name: StreamTile
-// Dependencies: [19, 17, 5897, 502, 1085, 5117, 21, 5092, 587, 4967, 558, 576, 5088, 1200, 504, 10885, 10887, 1126, 5409, 10891, 10893, 10894, 10882, 6334, 10903, 6184, 2]
+// Dependencies: [19, 17, 5897, 502, 1085, 5117, 21, 5092, 587, 4967, 558, 576, 5088, 1200, 504, 10885, 10887, 1126, 5409, 10891, 10893, 10894, 10882, 6335, 10903, 6185, 2]
 
 // Module 10884 (StreamTile)
 import react2 from "react" /* 576 */;
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Constants2 from "Constants" /* 5117 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import Pressables from "Pressables" /* 6184 */;
+import Pressables from "Pressables" /* 6185 */;
 import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10882 */;
 import useVideoStreamErrorDefault from "useVideoStreamError" /* 10885 */;
 import VideoEmptyStateDefault from "VideoEmptyState" /* 10887 */;
@@ -42,7 +42,7 @@ let tmp;
 let tmp5;
 let unpackModuleId;
 const native = tmp5(1200);
-const LegacyBaseButton = tmp(6334);
+const LegacyBaseButton = tmp(6335);
 const VideoRenderer = tmp(10894);
 ({ View: closure_4, StyleSheet } = react_native);
 const ApplicationStreamStates = Constants.ApplicationStreamStates;

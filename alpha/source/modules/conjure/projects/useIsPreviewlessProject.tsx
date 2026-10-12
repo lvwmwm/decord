@@ -1,11 +1,11 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17084
+// Function ID: 17085
 // Name: useIsPreviewlessProject
-// Dependencies: [10651, 558, 576, 6946, 504, 2]
+// Dependencies: [10652, 558, 576, 6947, 504, 2]
 
-// Module 17064 (useIsPreviewlessProject)
-import ConjureTypes from "ConjureTypes" /* 6946 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10651 */;
+// Module 17084 (useIsPreviewlessProject)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrevi
       const project = ConjureProjectStore.getProject(closure_0);
       let isPreviewlessProjectResult = null != project;
       if (isPreviewlessProjectResult) {
-        const obj = ConjureTypes;
+        const obj = ConjureProjectTypes;
         isPreviewlessProjectResult = obj.isPreviewlessProject(project);
       }
       return isPreviewlessProjectResult;
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrevi
     const project = ConjureProjectStore.getProject(closure_0);
     let isPreviewlessProjectResult = null != project;
     if (isPreviewlessProjectResult) {
-      const obj = ConjureTypes;
+      const obj = ConjureProjectTypes;
       isPreviewlessProjectResult = obj.isPreviewlessProject(project);
     }
     return isPreviewlessProjectResult;

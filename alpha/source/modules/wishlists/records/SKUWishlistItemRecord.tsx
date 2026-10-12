@@ -1,12 +1,12 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 8986
+// Function ID: 8987
 // Name: SKUWishlistItemRecord
-// Dependencies: [6088, 8982, 2]
+// Dependencies: [6089, 8983, 2]
 // Exports: isSKUWishlistItemRecord
 
-// Module 8985 (SKUWishlistItemRecord)
-import SKURecord from "SKURecord" /* 6088 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8982 */;
+// Module 8986 (SKUWishlistItemRecord)
+import SKURecord from "SKURecord" /* 6089 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8983 */;
 import size from "module_2" /* 2 */;
 
 class SKUWishlistItemRecord extends BaseWishlistItemRecord {

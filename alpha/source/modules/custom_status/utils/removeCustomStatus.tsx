@@ -1,11 +1,11 @@
-// Module ID: 10523
-// Function ID: 10524
+// Module ID: 10524
+// Function ID: 10525
 // Name: removeCustomStatus
-// Dependencies: [10521, 2]
+// Dependencies: [10522, 2]
 // Exports: default
 
-// Module 10523 (removeCustomStatus)
-import setCustomStatusDefault from "setCustomStatus" /* 10521 */;
+// Module 10524 (removeCustomStatus)
+import setCustomStatusDefault from "setCustomStatus" /* 10522 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/custom_status/utils/removeCustomStatus.tsx");

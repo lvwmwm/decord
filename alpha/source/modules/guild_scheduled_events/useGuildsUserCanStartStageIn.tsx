@@ -1,9 +1,9 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8556
+// Function ID: 8557
 // Name: useGuildsUserCanStartStageIn
 // Dependencies: [4748, 4750, 2073, 558, 576, 504, 2]
 
-// Module 8555 (useGuildsUserCanStartStageIn)
+// Module 8556 (useGuildsUserCanStartStageIn)
 import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
     class S {
       constructor() {
         arr = closure_2.getChannels(c0)[GUILD_VOCAL_CHANNELS_KEY];
-        return arr.reduce(() => { /* body not rendered: F141183 */ }, []);
+        return arr.reduce(() => { /* body not rendered: F141475 */ }, []);
       }
     }
     const items1 = [id];
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
     class S {
       constructor() {
         arr = closure_2.getChannels(c0)[GUILD_VOCAL_CHANNELS_KEY];
-        return arr.reduce(() => { /* body not rendered: F141183 */ }, []);
+        return arr.reduce(() => { /* body not rendered: F141475 */ }, []);
       }
     }
     tmp9 = cResult[3];

@@ -1,10 +1,10 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15095
+// Function ID: 15096
 // Name: TinyBroncoSettingsNotices
-// Dependencies: [19, 17, 1390, 5927, 7019, 21, 5092, 587, 558, 576, 14941, 9624, 7497, 5918, 1126, 7567, 3152, 14981, 5928, 5921, 5909, 15073, 7737, 2]
+// Dependencies: [19, 17, 1390, 5927, 7020, 21, 5092, 587, 558, 576, 14964, 9625, 7498, 5918, 1126, 7568, 3152, 15004, 5928, 5921, 5909, 15096, 7738, 2]
 // Exports: shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled
 
-// Module 15072 (TinyBroncoSettingsNotices)
+// Module 15095 (TinyBroncoSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -15,15 +15,15 @@ import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 591
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
 import TinyBroncoConstants from "TinyBroncoConstants" /* 5927 */;
 import TinyBroncoExperiment from "TinyBroncoExperiment" /* 5928 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7497 */;
-import useUserIsTeen from "useUserIsTeen" /* 7737 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9624 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14941 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14981 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15073 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
+import useUserIsTeen from "useUserIsTeen" /* 7738 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9625 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14964 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 15004 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 7019 */;
+import Constants from "Constants" /* 7020 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -194,8 +194,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function TeenNo
     }
     cResult[13] = tmp11;
     cResult[14] = tmp16;
-    cResult[15] = jsx(noticeType(7567).InlineNotice, { type: "info", message: tmp11, role: "status", action: tmp16 });
-    const tmp20 = jsx(noticeType(7567).InlineNotice, { type: "info", message: tmp11, role: "status", action: tmp16 });
+    cResult[15] = jsx(noticeType(7568).InlineNotice, { type: "info", message: tmp11, role: "status", action: tmp16 });
+    const tmp20 = jsx(noticeType(7568).InlineNotice, { type: "info", message: tmp11, role: "status", action: tmp16 });
   }
   const intl = tmp(1126).intl;
   cResult[7] = tmp9;
@@ -230,7 +230,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function TeenNo
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
   }, items2);
   let obj2 = { type: "info", message: intl.format(message, { handleOnConfirmAgeHook: callback1 }), role: "status", action: obj3 };
-  const InlineNotice = noticeType(7567).InlineNotice;
+  const InlineNotice = noticeType(7568).InlineNotice;
   intl = noticeType(1126).intl;
   obj3 = { text: intl2.string(noticeType(1126).t.hvVgAZ), onClick: callback };
   intl2 = noticeType(1126).intl;
@@ -405,8 +405,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unconf
       }
     }
     cResult[7] = tmp10;
-    cResult[8] = jsx(AGE_CONFIRMATION_NOTICE(7567).InlineNotice, { type: "info", message: tmp10, role: "status", action: tmp12 });
-    const tmp15 = jsx(AGE_CONFIRMATION_NOTICE(7567).InlineNotice, { type: "info", message: tmp10, role: "status", action: tmp12 });
+    cResult[8] = jsx(AGE_CONFIRMATION_NOTICE(7568).InlineNotice, { type: "info", message: tmp10, role: "status", action: tmp12 });
+    const tmp15 = jsx(AGE_CONFIRMATION_NOTICE(7568).InlineNotice, { type: "info", message: tmp10, role: "status", action: tmp12 });
   } else {
     class C {
       constructor() {
@@ -462,7 +462,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unconf
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
   }, items2);
   let obj2 = { type: "info", message: intl.format(message, { handleOnAgeGatedContentHook: callback }), role: "status", action: obj3 };
-  const InlineNotice = AGE_CONFIRMATION_NOTICE(7567).InlineNotice;
+  const InlineNotice = AGE_CONFIRMATION_NOTICE(7568).InlineNotice;
   intl = AGE_CONFIRMATION_NOTICE(1126).intl;
   obj3 = { text: intl2.string(AGE_CONFIRMATION_NOTICE(1126).t.FDSSia), onClick: callback1 };
   intl2 = AGE_CONFIRMATION_NOTICE(1126).intl;

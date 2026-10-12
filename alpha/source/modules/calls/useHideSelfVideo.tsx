@@ -1,9 +1,9 @@
-// Module ID: 17890
-// Function ID: 17891
+// Module ID: 17947
+// Function ID: 17948
 // Name: useHideSelfVideo
 // Dependencies: [502, 2012, 1085, 5117, 558, 576, 504, 5243, 2]
 
-// Module 17890 (useHideSelfVideo)
+// Module 17947 (useHideSelfVideo)
 import Constants2 from "Constants" /* 1085 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

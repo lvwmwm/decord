@@ -1,9 +1,9 @@
-// Module ID: 7486
-// Function ID: 7487
+// Module ID: 7487
+// Function ID: 7488
 // Name: StartStageChannelActionSheet
-// Dependencies: [5, 32, 19, 17, 2070, 5892, 1085, 2071, 21, 5092, 587, 558, 576, 504, 5949, 1265, 5396, 1894, 7487, 5056, 5635, 1126, 5088, 6285, 7496, 5379, 6839, 6813, 2]
+// Dependencies: [5, 32, 19, 17, 2070, 5892, 1085, 2071, 21, 5092, 587, 558, 576, 504, 5949, 1265, 5396, 1894, 7488, 5056, 5635, 1126, 5088, 6286, 7497, 5379, 6840, 6814, 2]
 
-// Module 7486 (StartStageChannelActionSheet)
+// Module 7487 (StartStageChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -271,11 +271,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
                   let obj6 = { onConfirmPress: tmp47, style: tmp4.ageVerificationNotice, channelId: channel.id };
                   cResult[32] = channel.id;
                   cResult[33] = tmp4.ageVerificationNotice;
-                  cResult[34] = closure_13(tmp19(7496), obj6);
-                  const tmp50 = closure_13(tmp19(7496), obj6);
+                  cResult[34] = closure_13(tmp19(7497), obj6);
+                  const tmp50 = closure_13(tmp19(7497), obj6);
                 }
                 let obj7 = { label: tmp39, maxLength, value: first1, placeholder: tmp41, onChange: tmp11, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: tmp21 };
-                const tmp46 = closure_13(tmp(6285).TextInput, obj7);
+                const tmp46 = closure_13(tmp(6286).TextInput, obj7);
                 cResult[28] = tmp21;
                 cResult[29] = first1;
                 cResult[30] = tmp46;
@@ -319,7 +319,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -391,7 +391,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp40) {
           if (0 === c3) {
             c5 = 3;
@@ -471,7 +471,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -546,7 +546,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp40) {
           if (0 === c3) {
             c5 = 3;
@@ -624,12 +624,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
   function handleSave() {
     return obj(...arguments);
   }
-  BottomSheet = tmp2(6839).BottomSheet;
+  BottomSheet = tmp2(6840).BottomSheet;
   let obj7 = { bottom: true, style: tmp.container, children: items2 };
   items2 = [tmp14Result, , , , , ];
-  const SafeAreaPaddingView = tmp2(6813).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(6814).SafeAreaPaddingView;
   let obj8 = { label: intl6.string(tmp2(1126).t["5FPBOB"]), maxLength, value, placeholder: intl7.string(tmp2(1126).t.ZwWruY), onChange: tmp7, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: handleSave };
-  const TextInput = tmp2(6285).TextInput;
+  const TextInput = tmp2(6286).TextInput;
   intl6 = tmp2(1126).intl;
   intl7 = tmp2(1126).intl;
   items2[1] = closure_13(TextInput, obj8);
@@ -641,7 +641,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
     style: tmp.ageVerificationNotice,
     channelId: channel.id
   };
-  items2[2] = closure_13(tmp12(7496), obj9);
+  items2[2] = closure_13(tmp12(7497), obj9);
   let tmp16Result = null;
   if (null != obj3) {
     const obj10 = { style: tmp.error, variant: "text-xs/medium", color: "text-feedback-critical", children: obj3.getAnyErrorMessage() };

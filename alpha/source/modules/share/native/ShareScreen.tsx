@@ -1,18 +1,18 @@
-// Module ID: 14104
-// Function ID: 14105
+// Module ID: 14127
+// Function ID: 14128
 // Name: ShareScreen
-// Dependencies: [5, 32, 19, 17, 2069, 2065, 4750, 1085, 11555, 10216, 21, 5092, 587, 1382, 1126, 14105, 11556, 14106, 14107, 1265, 9316, 5103, 8482, 9264, 11594, 2000, 5301, 14108, 14109, 6209, 9297, 1628, 6200, 11567, 14110, 2]
+// Dependencies: [5, 32, 19, 17, 2069, 2065, 4750, 1085, 11557, 10217, 21, 5092, 587, 1382, 1126, 14128, 11558, 14129, 14130, 1265, 9317, 5103, 8483, 9265, 11596, 2000, 5301, 14131, 14132, 6210, 9298, 1628, 6201, 11569, 14133, 2]
 // Exports: default
 
-// Module 14104 (ShareScreen)
+// Module 14127 (ShareScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import HeaderShared from "HeaderShared" /* 9297 */;
-import UserRowConstants from "UserRowConstants" /* 10216 */;
-import ForwardConstants from "ForwardConstants" /* 11555 */;
-import ShareAttachmentsDefault from "ShareAttachments" /* 14108 */;
-import ShareEmbedDefault from "ShareEmbed" /* 14109 */;
+import HeaderShared from "HeaderShared" /* 9298 */;
+import UserRowConstants from "UserRowConstants" /* 10217 */;
+import ForwardConstants from "ForwardConstants" /* 11557 */;
+import ShareAttachmentsDefault from "ShareAttachments" /* 14131 */;
+import ShareEmbedDefault from "ShareEmbed" /* 14132 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -176,7 +176,7 @@ export default function ShareScreen(appEntryKey) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -283,7 +283,7 @@ export default function ShareScreen(appEntryKey) {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "IconComponent", done: "+51" };
+                                    return { value: "IconComponent", done: null };
                                   }
                                 } else {
                                   try {
@@ -417,7 +417,7 @@ export default function ShareScreen(appEntryKey) {
                 closure_129_8(false);
                 closure_129_9.current = false;
                 length = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               }
             }
             closure_10 = length.lazy(() => closure_1_0(paths[25])(paths[24], paths.paths));
@@ -459,7 +459,7 @@ export default function ShareScreen(appEntryKey) {
           return obj20;
         }
         length = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp102) {
         paths = tmp102;
         if (0 === c3) {

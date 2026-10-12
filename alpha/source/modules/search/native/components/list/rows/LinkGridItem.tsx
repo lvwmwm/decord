@@ -1,27 +1,27 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17427
+// Function ID: 17428
 // Name: LinkGridItem
-// Dependencies: [32, 19, 17, 2065, 6062, 9312, 21, 5092, 504, 1126, 8138, 17371, 5088, 8198, 12034, 5038, 9618, 17363, 6184, 558, 576, 17361, 38, 8490, 2]
+// Dependencies: [32, 19, 17, 2065, 6062, 9313, 21, 5092, 504, 1126, 8139, 17428, 5088, 8199, 12036, 5038, 9619, 17420, 6185, 558, 576, 17418, 38, 8491, 2]
 
-// Module 17370 (LinkGridItem)
+// Module 17427 (LinkGridItem)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import LinkIcon from "LinkIcon" /* 5038 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8138 */;
-import ChatIcon from "ChatIcon" /* 8198 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8490 */;
-import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 9618 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12034 */;
-import SearchMediaImage from "SearchMediaImage" /* 17361 */;
-import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 17371 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8139 */;
+import ChatIcon from "ChatIcon" /* 8199 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8491 */;
+import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 9619 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12036 */;
+import SearchMediaImage from "SearchMediaImage" /* 17418 */;
+import SearchResultLinkPreviewMarkup from "SearchResultLinkPreviewMarkup" /* 17428 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SearchMessageStore from "SearchMessageStore" /* 6062 */;
-import SearchConstants from "SearchConstants" /* 9312 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -35,9 +35,9 @@ let closure_12;
 let hasOwnProperty;
 let metroRequire;
 let unpackModuleId;
-const f129225 = (type) => {
+const f129516 = (type) => {
   if (Array.isArray(type)) {
-    const item = type.forEach(f129225);
+    const item = type.forEach(f129516);
   } else {
     if ("link" !== type.type) {
       if ("channelMention" !== type.type) {
@@ -47,7 +47,7 @@ const f129225 = (type) => {
           closure_1 = tmp2;
           const _Array = Array;
           if (Array.isArray(content)) {
-            const item1 = content.forEach(f129225);
+            const item1 = content.forEach(f129516);
           } else {
             if ("link" !== content.type) {
               if ("channelMention" !== content.type) {
@@ -72,7 +72,7 @@ const f129225 = (type) => {
       closure_1 = tmp2;
       const _Array2 = Array;
       if (Array.isArray(type)) {
-        const item2 = type.forEach(f129225);
+        const item2 = type.forEach(f129516);
       } else {
         if ("link" !== type.type) {
           if ("channelMention" !== type.type) {
@@ -95,7 +95,7 @@ function getLinkNodeAtIndex(content, diff, fn) {
   let closure_0 = diff;
   let closure_1 = fn;
   if (Array.isArray(content)) {
-    const item = content.forEach(f129225);
+    const item = content.forEach(f129516);
   } else {
     if ("link" !== content.type) {
       if ("channelMention" !== content.type) {
@@ -148,7 +148,7 @@ function LinkParsedGridItem(author) {
     let closure_0 = linkIndex;
     let closure_1 = closure_11;
     if (Array.isArray(type)) {
-      let item = type.forEach(f129225);
+      let item = type.forEach(f129516);
     } else {
       if ("link" !== type.type) {
         if ("channelMention" !== type.type) {
@@ -158,7 +158,7 @@ function LinkParsedGridItem(author) {
             closure_1 = tmp2;
             let _Array = Array;
             if (Array.isArray(content)) {
-              let item1 = content.forEach(f129225);
+              let item1 = content.forEach(f129516);
             } else {
               if ("link" !== content.type) {
                 if ("channelMention" !== content.type) {
@@ -183,7 +183,7 @@ function LinkParsedGridItem(author) {
         closure_1 = tmp2;
         let _Array2 = Array;
         if (Array.isArray(type)) {
-          let item2 = type.forEach(f129225);
+          let item2 = type.forEach(f129516);
         } else {
           if ("link" !== type.type) {
             if ("channelMention" !== type.type) {

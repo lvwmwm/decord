@@ -1,9 +1,9 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 17616
+// Function ID: 17617
 // Name: ChannelSettingsChangeCategory
-// Dependencies: [32, 729, 19, 2065, 6800, 2087, 4750, 4760, 1390, 1085, 21, 5092, 587, 4827, 6801, 12128, 4755, 6097, 5299, 1126, 5421, 6179, 6264, 8579, 5377, 5088, 558, 576, 504, 1503, 10768, 38, 2]
+// Dependencies: [32, 729, 19, 2065, 6801, 2087, 4750, 4760, 1390, 1085, 21, 5092, 587, 4827, 6802, 12130, 4755, 6098, 5299, 1126, 5421, 6180, 6265, 8580, 5377, 5088, 558, 576, 504, 1503, 10768, 38, 2]
 
-// Module 17559 (ChannelSettingsChangeCategory)
+// Module 17616 (ChannelSettingsChangeCategory)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,15 +13,15 @@ import Text_Text from "Text/Text" /* 5088 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6097 */;
-import TableRow from "TableRow" /* 6179 */;
-import TableRowGroup2 from "TableRowGroup" /* 6264 */;
-import Form2 from "Form" /* 8579 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
+import TableRow from "TableRow" /* 6180 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import Form2 from "Form" /* 8580 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildCategoryStore_mod from "GuildCategoryStore" /* 6800 */;
+import GuildCategoryStore_mod from "GuildCategoryStore" /* 6801 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -79,7 +79,7 @@ class ChannelSettingsChangeCategory extends Component {
   handleSetCategory(id) {
     let obj7;
     let parent_id;
-    const f150434 = () => closure_1_2.pop();
+    const f150749 = () => closure_1_2.pop();
     let self = this;
     _require = id;
     function saveUpdates() {
@@ -92,7 +92,7 @@ class ChannelSettingsChangeCategory extends Component {
       } else {
         const obj = GuildActionCreatorsDefault;
         const batchChannelUpdateResult = obj.batchChannelUpdate(tmp, GuildCategoryStore);
-        return batchChannelUpdateResult.then(f150434);
+        return batchChannelUpdateResult.then(f150749);
       }
     }
     const props = this.props;
@@ -209,7 +209,7 @@ class ChannelSettingsChangeCategory extends Component {
                           } else {
                             const obj = channel(channel1[17]);
                             const batchChannelUpdateResult = obj.batchChannelUpdate(tmp, closure_1_7);
-                            batchChannelUpdateResult.then(f150434);
+                            batchChannelUpdateResult.then(f150749);
                           }
                         },
                   onCancel: saveUpdates,
@@ -239,7 +239,7 @@ class ChannelSettingsChangeCategory extends Component {
           } else {
             const obj5 = GuildActionCreatorsDefault;
             let batchChannelUpdateResult = obj5.batchChannelUpdate(tmp26, GuildCategoryStore);
-            batchChannelUpdateResult.then(f150434);
+            batchChannelUpdateResult.then(f150749);
           }
         });
       }
@@ -312,7 +312,7 @@ class ChannelSettingsChangeCategory extends Component {
         tmp3Result = null;
         if (null != category) {
           const obj4 = { hasIcons: false, children: map1(TableRow.TableRow, obj5, first.id) };
-          const TableRowGroup = tmp4(6264).TableRowGroup;
+          const TableRowGroup = tmp4(6265).TableRowGroup;
           obj5 = {
             label: first.name,
             onPress() {

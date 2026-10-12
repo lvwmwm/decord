@@ -1,15 +1,15 @@
-// Module ID: 18328
-// Function ID: 18329
+// Module ID: 18386
+// Function ID: 18387
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7887, 21, 587, 5092, 558, 576, 18329, 12215, 5088, 1126, 18330, 18331, 14120, 6905, 5377, 2]
+// Dependencies: [19, 17, 7888, 21, 587, 5092, 558, 576, 18387, 12217, 5088, 1126, 18388, 18389, 14143, 6906, 5377, 2]
 
-// Module 18328 (GuildSettingsServerTagBadgeGrid)
+// Module 18386 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 7887 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12215 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18329 */;
-import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18330 */;
-import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 18331 */;
+import GuildTagConstants from "GuildTagConstants" /* 7888 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12217 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18387 */;
+import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18388 */;
+import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 18389 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -265,7 +265,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
     intl3 = tmp7(1126).intl;
     items2[1] = closure_7(Text2, obj6);
     const obj7 = { size: "md", color: nativeDefault.colors.ICON_SUBTLE };
-    const ChevronSmallRightIcon = tmp7(6905).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp7(6906).ChevronSmallRightIcon;
     items2[2] = closure_7(ChevronSmallRightIcon, obj7);
     tmp6Result = tmp6(closure_4, obj4);
   }

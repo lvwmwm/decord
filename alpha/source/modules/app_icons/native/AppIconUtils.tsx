@@ -1,22 +1,22 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13747
+// Function ID: 13748
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 9468, 1085, 1392, 3, 13725, 9469, 558, 576, 584, 5396, 1265, 4809, 1126, 7093, 1628, 2]
+// Dependencies: [32, 5, 19, 9469, 1085, 1392, 3, 13748, 9470, 558, 576, 584, 5396, 1265, 4809, 1126, 7094, 1628, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon
 
-// Module 13724 (AppIconUtils)
+// Module 13747 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import openUserSettings from "openUserSettings" /* 7093 */;
-import react_nativeDefault from "react-native" /* 13725 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import react_nativeDefault from "react-native" /* 13748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 9468 */;
+import AppIconConstants from "AppIconConstants" /* 9469 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ let obj = function _fetchCurrentAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -122,7 +122,7 @@ obj = function _setAppIcon() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -176,7 +176,7 @@ obj = function _setAppIcon() {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp28) {
           closure_4 = tmp28;
@@ -219,7 +219,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
             tmp = value;
             tmp(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -299,7 +299,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -331,7 +331,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAp
           closure_0 = value;
           closure_129_0(closure_0);
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -399,7 +399,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -460,7 +460,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -550,7 +550,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -609,7 +609,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons(
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp22) {
         closure_3 = tmp22;

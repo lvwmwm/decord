@@ -1,7 +1,7 @@
 // Module ID: 10739
 // Function ID: 10740
 // Name: contentHandlers
-// Dependencies: [5, 9673, 9317, 8494, 4806, 10740, 9676, 8303, 6878, 5056, 10745, 2000, 11, 2041, 1126, 6885, 4808, 5299, 9540, 2]
+// Dependencies: [5, 9674, 9318, 8495, 4806, 10740, 9677, 8304, 6879, 5056, 10745, 2000, 11, 2041, 1126, 6886, 4808, 5299, 9541, 2]
 
 // Module 10739 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -9,10 +9,10 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import ClipboardUtils from "ClipboardUtils" /* 6885 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9673 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9674 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = {
     let roleId;
     let roleName;
     let userId;
-    let obj = parsedUserId(9676);
+    let obj = parsedUserId(9677);
     const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
     ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
     ({ roleId, guildId } = nativeSyntheticEventData);
@@ -125,7 +125,7 @@ let obj = {
   onTapEmoji(nativeEvent) {
     const node = nativeEvent.nativeEvent.node;
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(9540, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
+    obj.openLazy(asyncRequire(9541, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
   }
 };
 let closure_6 = _asyncToGenerator(async (arg0) => {

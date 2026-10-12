@@ -1,10 +1,10 @@
-// Module ID: 10290
-// Function ID: 10291
+// Module ID: 10291
+// Function ID: 10292
 // Name: useShowUnlinkChannelAlert
-// Dependencies: [5, 19, 9696, 5300, 1126, 5398, 2]
+// Dependencies: [5, 19, 9697, 5300, 1126, 5398, 2]
 // Exports: default
 
-// Module 10290 (useShowUnlinkChannelAlert)
+// Module 10291 (useShowUnlinkChannelAlert)
 import intl5 from "intl" /* 1126 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import AlertDefault from "Alert" /* 5398 */;
@@ -35,7 +35,7 @@ export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp21) {
         closure_2 = tmp21;

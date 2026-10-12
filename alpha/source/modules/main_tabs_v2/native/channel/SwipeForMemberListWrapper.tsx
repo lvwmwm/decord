@@ -1,9 +1,9 @@
-// Module ID: 17308
-// Function ID: 17309
+// Module ID: 17365
+// Function ID: 17366
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9310, 9298, 1085, 21, 3, 5092, 587, 558, 576, 5107, 16819, 4979, 4850, 5396, 5031, 6725, 4985, 10678, 1121, 16413, 8394, 16424, 11200, 4977, 4976, 5372, 1504, 16969, 16417, 16422, 16419, 16963, 17309, 11626, 10225, 6845, 17310, 6334, 2]
+// Dependencies: [32, 19, 17, 9311, 9299, 1085, 21, 3, 5092, 587, 558, 576, 5107, 16843, 4979, 4850, 5396, 5031, 6726, 4985, 10678, 1121, 16436, 8395, 16447, 11200, 4977, 4976, 5372, 1504, 16993, 16440, 16445, 16442, 16987, 17366, 11628, 10226, 6846, 17367, 6335, 2]
 
-// Module 17308 (SwipeForMemberListWrapper)
+// Module 17365 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,13 +13,13 @@ import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import useChatLayout from "useChatLayout" /* 4979 */;
 import ChatInputUtils from "ChatInputUtils" /* 4985 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import react_native from "react-native" /* 9298 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16424 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16819 */;
+import react_native from "react-native" /* 9299 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16447 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16843 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9310 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9311 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

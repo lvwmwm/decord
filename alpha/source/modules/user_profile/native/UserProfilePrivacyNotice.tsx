@@ -1,9 +1,9 @@
-// Module ID: 13372
-// Function ID: 13373
+// Module ID: 13395
+// Function ID: 13396
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1085, 2062, 21, 5092, 587, 1209, 1126, 558, 576, 7737, 2041, 2049, 7099, 5088, 7093, 5046, 6207, 6184, 2]
+// Dependencies: [32, 19, 17, 1085, 2062, 21, 5092, 587, 1209, 1126, 558, 576, 7738, 2041, 2049, 7100, 5088, 7094, 5046, 6208, 6185, 2]
 
-// Module 13372 (UserProfilePrivacyNotice)
+// Module 13395 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,9 +14,9 @@ import UserSettings from "UserSettings" /* 2041 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
-import XSmallIcon from "XSmallIcon" /* 6207 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7099 */;
-import useUserIsTeen from "useUserIsTeen" /* 7737 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
+import useUserIsTeen from "useUserIsTeen" /* 7738 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -354,7 +354,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileP
       style: tmp.closeButton,
       children: closure_7(XSmallIcon.XSmallIcon, { size: "xs", color: "icon-feedback-info" })
     };
-    const PressableOpacity = tmp3(6184).PressableOpacity;
+    const PressableOpacity = tmp3(6185).PressableOpacity;
     intl2 = tmp3(1126).intl;
     items[2] = closure_7(PressableOpacity, obj6);
     return closure_8(View, obj2);

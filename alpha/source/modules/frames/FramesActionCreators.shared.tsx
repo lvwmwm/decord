@@ -16,7 +16,7 @@ import FramesStore from "FramesStore" /* 10807 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import size from "module_2" /* 2 */;
 
-let analyticsContext, closure_2, dispatchResult1, error, hostWindowKey, intent, message, proxyTicket, type;
+let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -36,6 +36,7 @@ let obj = function _launchFrame() {
       let obj11;
       let obj6;
       let showErrorModal;
+      let sum;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -45,7 +46,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -60,10 +61,10 @@ let obj = function _launchFrame() {
               return { value, done: true };
             } else {
               let closure_3 = tmp;
-              closure_2 = tmp4;
+              let closure_2 = tmp4;
               applicationId = undefined;
               type = undefined;
-              c2 = undefined;
+              launch = undefined;
               analyticsContext = undefined;
               hostWindowKey = undefined;
               showErrorModal = undefined;
@@ -73,6 +74,7 @@ let obj = function _launchFrame() {
               }
               frameId = undefined;
               intent = undefined;
+              launchRequestId = undefined;
               proxyTicket = undefined;
               message = undefined;
               c6 = 1;
@@ -88,22 +90,24 @@ let obj = function _launchFrame() {
               return { value, done: true };
             } else {
               frameId = closure_131_8(applicationId, type);
-              intent = closure_131_4.getFrame(frameId);
+              intent = frame.getFrame(frameId);
               if (null != intent) {
-                if (intent.intent === closure_131_5.MAIN) {
-                  closure_131_13(frameId);
-                  const obj7 = { frameId, layoutMode: closure_131_6.FOCUSED };
-                  closure_131_14(obj7);
+                if (intent.intent === constants.MAIN) {
+                  closure_131_14(frameId);
+                  const obj7 = { frameId, layoutMode: constants2.FOCUSED };
+                  closure_131_15(obj7);
                 }
                 c7 = 3;
                 return { value: frameId, done: true };
               } else {
-                if (closure_131_7(type) === closure_131_5.MAIN) {
+                if (closure_131_7(type) === constants.MAIN) {
                   const obj8 = closure_131_0(closure_131_2[4]);
                   const result = obj8.leaveCurrentEmbeddedActivity();
-                  closure_131_11();
+                  closure_131_12();
                 }
-                const obj12 = { type: "FRAME_LAUNCH_START", applicationId, frameId, surface: type, hostWindowKey };
+                sum = sum + 1;
+                launchRequestId = sum;
+                const obj12 = { type: "FRAME_LAUNCH_START", applicationId, frameId, surface: type, hostWindowKey, launch, launchRequestId };
                 const obj9 = closure_131_1(closure_131_2[5]);
                 obj9.dispatch(obj12);
                 c5 = 1;
@@ -118,8 +122,8 @@ let obj = function _launchFrame() {
             if (2 === c6) {
               c5 = 0;
               error = closure_4;
-              const tmp18 = showErrorModal;
-              if (tmp18) {
+              const tmp19 = showErrorModal;
+              if (tmp19) {
                 c6 = 4;
                 c7 = 1;
                 const obj14 = { value: obj6.getActivityLaunchErrorInfo(error, applicationId), done: false };
@@ -136,11 +140,11 @@ let obj = function _launchFrame() {
                 return { value, done: true };
               } else {
                 proxyTicket = value;
-                const obj16 = { type: "FRAME_LAUNCH", applicationId, frameId, surface: type, proxyTicket, analyticsContext, launch: type, hostWindowKey };
-                type = c2;
+                const obj16 = { type: "FRAME_LAUNCH", applicationId, frameId, surface: type, proxyTicket, analyticsContext, launch: type, hostWindowKey, launchRequestId };
+                type = launch;
                 const dispatch = closure_131_1(closure_131_2[5]).dispatch;
                 closure_131_1(closure_131_2[5]);
-                if (c2 == null) {
+                if (launch == null) {
                   type = {};
                 }
                 dispatch(obj16);
@@ -158,16 +162,16 @@ let obj = function _launchFrame() {
               message = value;
               closure_131_1(closure_131_2[9])(message.message);
             }
-            const obj18 = { type: "FRAME_LAUNCH_FAIL", applicationId, frameId, error, analyticsContext };
+            const obj18 = { type: "FRAME_LAUNCH_FAIL", applicationId, frameId, launchRequestId, error, analyticsContext };
             const obj4 = closure_131_1(closure_131_2[5]);
             obj4.dispatch(obj18);
             throw error;
           }
-        } catch (tmp72) {
-          closure_4 = tmp72;
+        } catch (tmp78) {
+          closure_4 = tmp78;
           if (0 === c5) {
             c7 = 3;
-            throw tmp72;
+            throw tmp78;
           } else {
             c6 = 2;
           }
@@ -268,7 +272,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -379,6 +383,7 @@ obj = function _refreshProxyTicket() {
 };
 ({ FrameIntent: hasOwnProperty, FrameLayoutModes: metroRequire, getFrameIntentForSurface: metroImportDefault, makeFrameId: metroImportAll } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
+let c10 = 0;
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 
 export const launchFrame = function launchFrame() {

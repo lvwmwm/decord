@@ -1,9 +1,9 @@
-// Module ID: 15341
-// Function ID: 15342
+// Module ID: 15364
+// Function ID: 15365
 // Name: OrbsHoldoutExperiment
 // Dependencies: [1453, 2]
 
-// Module 15341 (OrbsHoldoutExperiment)
+// Module 15364 (OrbsHoldoutExperiment)
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

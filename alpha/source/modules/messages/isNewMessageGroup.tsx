@@ -1,13 +1,13 @@
-// Module ID: 9612
-// Function ID: 9613
+// Module ID: 9613
+// Function ID: 9614
 // Name: isNewMessageGroup
-// Dependencies: [1085, 1102, 6079, 11, 4793, 2]
+// Dependencies: [1085, 1102, 6080, 11, 4793, 2]
 // Exports: isNewGroupItem
 
-// Module 9612 (isNewMessageGroup)
+// Module 9613 (isNewMessageGroup)
 import DurationsDefault from "Durations" /* 1102 */;
 import DateUtils from "DateUtils" /* 4793 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6079 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6080 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

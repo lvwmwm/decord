@@ -1,11 +1,10 @@
 // Module ID: 6364
 // Function ID: 6365
 // Name: react-native
-// Dependencies: [17]
+// Dependencies: [6365]
 
 // Module 6364 (react-native)
-import react_native from "react-native" /* 17 */;
+import react_nativeDefault from "react-native" /* 6365 */;
 
-const TurboModuleRegistry = react_native.TurboModuleRegistry;
 
-export default TurboModuleRegistry.getEnforcing("RNGestureHandlerModule");
+export default react_nativeDefault;

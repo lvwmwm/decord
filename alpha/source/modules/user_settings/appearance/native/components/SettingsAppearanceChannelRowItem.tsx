@@ -1,15 +1,15 @@
-// Module ID: 15562
-// Function ID: 15563
+// Module ID: 15585
+// Function ID: 15586
 // Name: SettingsAppearanceChannelRowItem
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 1200, 558, 576, 10279, 5088, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 1200, 558, 576, 10280, 5088, 2]
 
-// Module 15562 (SettingsAppearanceChannelRowItem)
+// Module 15585 (SettingsAppearanceChannelRowItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import GroupDMAvatar from "GroupDMAvatar" /* 10279 */;
+import GroupDMAvatar from "GroupDMAvatar" /* 10280 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -208,7 +208,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelRow
       if (null != avatar2) {
         const obj10 = { sources: items3, size: native.AvatarSizes.LARGE_48 };
         items3 = [avatar1, avatar2];
-        const FacepileGroupDMAvatar = tmp(10279).FacepileGroupDMAvatar;
+        const FacepileGroupDMAvatar = tmp(10280).FacepileGroupDMAvatar;
         tmp18 = React3(FacepileGroupDMAvatar, obj10);
       } else {
         const obj11 = { status, source: avatar1, cutout: obj5, size: native.AvatarSizes.LARGE_48 };

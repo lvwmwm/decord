@@ -1,10 +1,10 @@
-// Module ID: 12952
-// Function ID: 12953
+// Module ID: 12954
+// Function ID: 12955
 // Name: AppStoreOverlayMediaSize
 // Dependencies: [32, 19, 17, 2035, 1415, 558, 576, 2]
 // Exports: getAppStoreOverlayCarouselImageUrl, getMediaSizeFromLoadEvent, getMediaTileSize
 
-// Module 12952 (AppStoreOverlayMediaSize)
+// Module 12954 (AppStoreOverlayMediaSize)
 import react_native from "react-native" /* 17 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import ImageProxyUtils from "ImageProxyUtils" /* 2035 */;

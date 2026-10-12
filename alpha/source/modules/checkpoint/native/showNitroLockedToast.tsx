@@ -1,10 +1,10 @@
-// Module ID: 16018
-// Function ID: 16019
+// Module ID: 16041
+// Function ID: 16042
 // Name: showNitroLockedToast
 // Dependencies: [5461, 3118, 1126, 4808, 2]
 // Exports: default, getNitroLockedMessage
 
-// Module 16018 (showNitroLockedToast)
+// Module 16041 (showNitroLockedToast)
 import intl2 from "intl" /* 1126 */;
 import _modDef3118 from "module_3118" /* 3118 */;
 import ToastUtils from "ToastUtils" /* 4808 */;

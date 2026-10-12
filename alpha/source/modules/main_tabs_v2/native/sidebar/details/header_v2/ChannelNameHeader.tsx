@@ -1,9 +1,9 @@
-// Module ID: 17440
-// Function ID: 17441
+// Module ID: 17497
+// Function ID: 17498
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 2065, 2087, 4750, 5108, 1390, 1085, 21, 5092, 587, 558, 576, 504, 1200, 5421, 1503, 5103, 1126, 5088, 6184, 5414, 3785, 10279, 8158, 10262, 6851, 8303, 2]
+// Dependencies: [19, 17, 2065, 2087, 4750, 5108, 1390, 1085, 21, 5092, 587, 558, 576, 504, 1200, 5421, 1503, 5103, 1126, 5088, 6185, 5414, 3785, 10280, 8159, 10263, 6852, 8304, 2]
 
-// Module 17440 (ChannelNameHeader)
+// Module 17497 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import _modDef3785 from "module_3785" /* 3785 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import transitionToChannel from "transitionToChannel" /* 5103 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8158 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10279 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10280 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -691,7 +691,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   channel = channel.channel;
   const containerStyle = channel.containerStyle;
   const tmp4 = closure_15();
-  analyticsLocations = analyticsLocations(6851)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6852)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp5;
     if (cResult[1] === channel) {
@@ -722,7 +722,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
         }
       }
       const obj3 = { style: tmp6, onPress: tmp5, children: tmp7 };
-      const tmp13 = closure_12(tmp(6184).PressableOpacity, obj3);
+      const tmp13 = closure_12(tmp(6185).PressableOpacity, obj3);
       cResult[8] = tmp5;
       cResult[9] = tmp6;
       cResult[10] = tmp7;
@@ -753,7 +753,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   let analyticsLocations;
   const containerStyle = channel.containerStyle;
   let tmp = closure_15();
-  analyticsLocations = analyticsLocations(6851)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6852)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = react.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -765,7 +765,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
   }, items);
   let obj = { style: items1, onPress: callback, children: closure_12(closure_19, { channel }) };
   items1 = [tmp.container, containerStyle];
-  const PressableOpacity = channel(6184).PressableOpacity;
+  const PressableOpacity = channel(6185).PressableOpacity;
   return closure_12(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

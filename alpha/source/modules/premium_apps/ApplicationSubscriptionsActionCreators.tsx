@@ -1,10 +1,10 @@
-// Module ID: 14735
-// Function ID: 14736
+// Module ID: 14759
+// Function ID: 14760
 // Name: ApplicationSubscriptionsActionCreators
-// Dependencies: [5, 1085, 584, 10870, 6959, 2]
+// Dependencies: [5, 1085, 584, 10870, 6960, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 14735 (ApplicationSubscriptionsActionCreators)
+// Module 14759 (ApplicationSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 10870 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -64,7 +64,7 @@ let obj = function _fetchAllSubscriptionListingsDataForApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ let obj = function _fetchAllSubscriptionListingsDataForApplication() {
             const obj3 = closure_132_0(closure_132_2[2]);
             obj3.dispatch(obj7);
             c8 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } else if (arg0 === 1) {
             c8 = 3;
             throw value;
@@ -149,7 +149,7 @@ obj = function _fetchEntitlementsForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ obj = function _fetchEntitlementsForGuild() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -231,7 +231,7 @@ obj = function _fetchSubscriptionListingForPlan() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ obj = function _fetchSubscriptionListingForPlan() {
               return obj;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp30) {
           closure_5 = tmp30;

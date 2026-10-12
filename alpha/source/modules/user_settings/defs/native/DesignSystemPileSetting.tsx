@@ -1,11 +1,11 @@
-// Module ID: 16152
-// Function ID: 16153
+// Module ID: 16175
+// Function ID: 16176
 // Name: DesignSystemPileSetting
-// Dependencies: [7992, 1085, 10663, 16153, 2]
+// Dependencies: [7993, 1085, 10663, 16176, 2]
 
-// Module 16152 (DesignSystemPileSetting)
+// Module 16175 (DesignSystemPileSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 9550
-// Function ID: 9551
+// Module ID: 9551
+// Function ID: 9552
 // Name: StarOutlineIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9551, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9552, 4817, 2]
 
-// Module 9550 (StarOutlineIcon)
+// Module 9551 (StarOutlineIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 9551 */;
+import AssetRegistry from "AssetRegistry" /* 9552 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

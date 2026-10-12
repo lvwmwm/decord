@@ -1,9 +1,9 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9719
+// Function ID: 9720
 // Name: MediaPostMultipleThumbnailActionSheet
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 1631, 5088, 1126, 1200, 5379, 6306, 6839, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 1631, 5088, 1126, 1200, 5379, 6307, 6840, 2]
 
-// Module 9718 (MediaPostMultipleThumbnailActionSheet)
+// Module 9719 (MediaPostMultipleThumbnailActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
@@ -206,7 +206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
                   return tmp50;
                 }
                 const obj8 = { backdropOpacity: 0.8, onDismiss: tmp5, children: tmp46 };
-                const tmp52 = closure_5(markAsDismissed(6839).BottomSheet, obj8);
+                const tmp52 = closure_5(markAsDismissed(6840).BottomSheet, obj8);
                 cResult[34] = tmp5;
                 cResult[35] = tmp46;
                 cResult[36] = tmp52;
@@ -224,7 +224,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
       }
       const obj10 = { contentContainerStyle: tmp7, children: items1 };
       items1 = [tmp18, tmp24, tmp27, tmp32, tmp35, tmp40];
-      const tmp45 = closure_6(markAsDismissed(6306).BottomSheetScrollView, obj10);
+      const tmp45 = closure_6(markAsDismissed(6307).BottomSheetScrollView, obj10);
       cResult[25] = tmp24;
       cResult[26] = tmp32;
       cResult[27] = tmp40;
@@ -268,12 +268,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaPostThu
     children: closure_5(View, obj2)
   };
   obj2 = { style: tmp.container, children: closure_6(BottomSheetScrollView, obj3) };
-  BottomSheet = markAsDismissed(6839).BottomSheet;
+  BottomSheet = markAsDismissed(6840).BottomSheet;
   obj3 = { contentContainerStyle: items, children: items2 };
   items = [tmp.contentContainer, { paddingBottom: bottom }];
   const obj4 = { style: tmp.topContainer, children: closure_6(View, obj5) };
   obj5 = { style: tmp.setAsThumbnailContainer, children: items1 };
-  BottomSheetScrollView = markAsDismissed(6306).BottomSheetScrollView;
+  BottomSheetScrollView = markAsDismissed(6307).BottomSheetScrollView;
   const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1126).t.ews2pj) };
   const Text = markAsDismissed(5088).Text;
   intl = markAsDismissed(1126).intl;

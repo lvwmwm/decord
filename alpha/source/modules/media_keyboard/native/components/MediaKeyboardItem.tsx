@@ -1,10 +1,10 @@
-// Module ID: 10037
-// Function ID: 10038
+// Module ID: 10038
+// Function ID: 10039
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 7907, 10038, 21, 4850, 5092, 587, 4967, 558, 576, 1200, 9769, 5088, 7766, 504, 10039, 1126, 7786, 7768, 10040, 10041, 5093, 1497, 10042, 8214, 10027, 2]
+// Dependencies: [19, 17, 7908, 10039, 21, 4850, 5092, 587, 4967, 558, 576, 1200, 9770, 5088, 7767, 504, 10040, 1126, 7787, 7769, 10041, 10042, 5093, 1497, 10043, 8215, 10028, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10037 (MediaKeyboardItem)
+// Module 10038 (MediaKeyboardItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -13,15 +13,15 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
-import ImageIcon from "ImageIcon" /* 8214 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9769 */;
-import AttachmentIcon from "AttachmentIcon" /* 10027 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10039 */;
-import CameraIcon from "CameraIcon" /* 10042 */;
+import ImageIcon from "ImageIcon" /* 8215 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9770 */;
+import AttachmentIcon from "AttachmentIcon" /* 10028 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10040 */;
+import CameraIcon from "CameraIcon" /* 10043 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7907 */;
-import DeviceConstants from "DeviceConstants" /* 10038 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
+import DeviceConstants from "DeviceConstants" /* 10039 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ColorUtils_mod from "ColorUtils" /* 4967 */;
@@ -842,66 +842,66 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaK
       }
     }
     if (isIncluded.VIDEO !== type) {
-      let tmp13;
+      let tmp12;
       if (constants.VIDEO !== type) {
         if (isIncluded.PHOTO === type) {
-          tmp13 = null;
+          tmp12 = null;
           const tmp2Result = tmp2(tmp3[19]);
           if ("image/gif" === tmp2Result.getType(image.uri)) {
             let obj2 = { style: tmp.mediaKeyboardItemLabelContainer, label: "GIF" };
-            tmp13 = closure_9(tmp2(tmp3[20]).Caption, obj2);
+            tmp12 = closure_9(tmp2(tmp3[20]).Caption, obj2);
           }
         } else {
-          tmp13 = null;
+          tmp12 = null;
         }
       }
-      let tmp17 = !tmp5;
-      if (tmp17) {
-        tmp17 = uploadCount >= uploadLimit && disableWhenReachedLimit || disabled;
+      let tmp16 = !tmp5;
+      if (tmp16) {
+        tmp16 = uploadCount >= uploadLimit && disableWhenReachedLimit || disabled;
       }
       const obj3 = { style: tmp.checkIconContainer, children: closure_9(Icon, obj4) };
       obj4 = { source: item(tmp3[21]), disableColor: false, color: tmp.checkIcon.color, style: tmp.checkIcon };
       Icon = tmp2(tmp3[11]).Icon;
-      const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj6, onPress: tmp7, onLongPress: tmp8, disabled: tmp17, style: items3, children: items5 };
+      const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj6, onPress: tmp7, onLongPress: tmp8, disabled: tmp16, style: items3, children: items5 };
       items3 = [tmp.imageContainer, , ];
       let imageDisabled;
       obj6 = { selected: null != stateFromStoresObject.upload };
-      const tmp22 = closure_9(onLongPressItem, obj3);
-      const tmp20 = onLongPressItem;
-      const tmp24 = closure_13(index, numItemsPerRow, totalNumItems);
-      const tmp25 = closure_10;
-      const tmp26 = includedUploadIds;
-      if (tmp17) {
+      const tmp21 = closure_9(onLongPressItem, obj3);
+      const tmp19 = onLongPressItem;
+      const tmp23 = closure_13(index, numItemsPerRow, totalNumItems);
+      const tmp24 = closure_10;
+      const tmp25 = includedUploadIds;
+      if (tmp16) {
         imageDisabled = tmp.imageDisabled;
       }
       items3[1] = imageDisabled;
-      items3[2] = tmp24;
+      items3[2] = tmp23;
       const obj7 = { resizeMode: "cover", resizeMethod: "resize", style: items4, source: size2, localImageSource: size3 };
       items4 = [tmp.image, ];
       const size1 = { height: size, width: size };
       items4[1] = size1;
       size2 = { uri: image.uri, width: size, height: size, cache: "force-cache" };
       size3 = { uri: image.uri, width: size, height: size };
-      items5 = [closure_9(tmp2(tmp3[11]).ThumbnailImage, obj7), tmp13, , ];
-      let tmp19Result = null;
+      items5 = [closure_9(tmp2(tmp3[11]).ThumbnailImage, obj7), tmp12, , ];
+      let tmp18Result = null;
       if (null != stateFromStoresObject.upload) {
         const obj8 = { style: items6 };
         items6 = [tmp.selectedOverlay, ];
         const size4 = { height: size, width: size };
         items6[1] = size4;
-        tmp19Result = tmp19(tmp20, obj8);
+        tmp18Result = tmp18(tmp19, obj8);
       }
-      items5[2] = tmp19Result;
-      let tmp29 = null;
+      items5[2] = tmp18Result;
+      let tmp28 = null;
       if (null != stateFromStoresObject.upload) {
-        tmp29 = tmp22;
+        tmp28 = tmp21;
       }
-      items5[3] = tmp29;
-      return tmp25(tmp26, obj5);
+      items5[3] = tmp28;
+      return tmp24(tmp25, obj5);
     }
     const obj9 = { label: tmp2Result2.getTimeFormat(image.playableDuration) };
     tmp2Result2 = tmp2(tmp3[18]);
-    tmp13 = closure_9(closure_14, obj9);
+    tmp12 = closure_9(closure_14, obj9);
   }
   const intl2 = tmp2(tmp3[17]).intl;
   stringResult = intl2.string(tmp2(tmp3[17]).t.SkfkEJ);

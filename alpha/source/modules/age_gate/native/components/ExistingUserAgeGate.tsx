@@ -1,12 +1,12 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18041
+// Function ID: 18042
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 2059, 1390, 1110, 17983, 1085, 21, 5092, 558, 576, 1503, 504, 1265, 1126, 2128, 38, 16363, 5934, 4702, 16385, 5088, 17985, 5379, 6813, 2]
+// Dependencies: [5, 32, 19, 17, 2059, 1390, 1110, 18040, 1085, 21, 5092, 558, 576, 1503, 504, 1265, 1126, 2128, 38, 16386, 5934, 4702, 16408, 5088, 18042, 5379, 6814, 2]
 
-// Module 17984 (ExistingUserAgeGate)
+// Module 18041 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 17983 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 18040 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -356,7 +356,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: "+51" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           try {
@@ -399,7 +399,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                               return obj;
                             }
                             c0 = 3;
-                            return { value: "IconComponent", done: "+51" };
+                            return { value: "IconComponent", done: null };
                           } catch (tmp9) {
                             c0 = 3;
                             throw tmp9;
@@ -455,7 +455,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "IconComponent", done: "+51" };
+                            return { value: "IconComponent", done: null };
                           }
                         } else {
                           try {
@@ -737,7 +737,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -837,7 +837,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -880,7 +880,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp9) {
           c0 = 3;
           throw tmp9;

@@ -1,18 +1,18 @@
-// Module ID: 16530
-// Function ID: 16531
+// Module ID: 16553
+// Function ID: 16554
 // Name: ConnectedUserLimit
-// Dependencies: [19, 21, 558, 576, 8788, 16531, 2]
+// Dependencies: [19, 21, 558, 576, 8789, 16554, 2]
 
-// Module 16530 (ConnectedUserLimit)
+// Module 16553 (ConnectedUserLimit)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 8788 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 8789 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const VoiceChannelUserLimitDefault = tmp3(16531);
+const VoiceChannelUserLimitDefault = tmp3(16554);
 const jsx = Fragment.jsx;
 tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedUserLimit(arg0) {
   let channel;

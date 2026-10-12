@@ -1,18 +1,18 @@
-// Module ID: 8002
-// Function ID: 8003
+// Module ID: 8003
+// Function ID: 8004
 // Name: UserJoinSystemMessage
-// Dependencies: [2065, 2087, 1085, 7978, 7980, 1126, 7982, 8003, 8015, 8016, 8019, 2]
+// Dependencies: [2065, 2087, 1085, 7979, 7981, 1126, 7983, 8004, 8016, 8017, 8020, 2]
 // Exports: createUserJoinSystemMessage
 
-// Module 8002 (UserJoinSystemMessage)
+// Module 8003 (UserJoinSystemMessage)
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7978 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7980 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8003 */;
-import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 8015 */;
-import transformSticker2 from "transformSticker" /* 8016 */;
-import WelcomeCTAUtils from "WelcomeCTAUtils" /* 8019 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8004 */;
+import useIsStickerReplyEnabled from "useIsStickerReplyEnabled" /* 8016 */;
+import transformSticker2 from "transformSticker" /* 8017 */;
+import WelcomeCTAUtils from "WelcomeCTAUtils" /* 8020 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
     if (null == actor) {
       const obj5 = { content: intl3.formatToParts(intl5.t.EAkHd2, obj2) };
       intl3 = tmp23(1126).intl;
-      const merged = Object.assign(tmp26(7982)(message));
+      const merged = Object.assign(tmp26(7983)(message));
       obj6 = obj5;
     } else {
       const tmp23Result = useAuthorWithProcessedColor;
@@ -57,7 +57,7 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
       prop = tmp23(1126).t["x6G/Rr"];
       obj8 = { userId: actor.id, message: message2, author: userAuthorWithProcessedColor, roleStyle };
       const merged1 = Object.assign(obj2);
-      const merged2 = Object.assign(tmp26(7982)(message));
+      const merged2 = Object.assign(tmp26(7983)(message));
     }
     return obj6;
   } else {
@@ -90,7 +90,7 @@ export const createUserJoinSystemMessage = function createUserJoinSystemMessage(
     obj11 = { username: messageAuthorWithProcessedColor1.nick, usernameOnClick: formatUsernameOnClickDefault(obj12) };
     obj12 = { message, author: messageAuthorWithProcessedColor1, roleStyle: tmp };
     intl2 = tmp2(1126).intl;
-    const merged3 = Object.assign(tmp6(7982)(message));
+    const merged3 = Object.assign(tmp6(7983)(message));
     return obj10;
   }
 };

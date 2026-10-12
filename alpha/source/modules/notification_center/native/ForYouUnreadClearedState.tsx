@@ -1,16 +1,16 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 16904
+// Function ID: 16905
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 10041, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 10042, 1126, 5088, 2]
 
-// Module 16880 (ForYouUnreadClearedState)
+// Module 16904 (ForYouUnreadClearedState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10041 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10042 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

@@ -1,16 +1,16 @@
-// Module ID: 6922
-// Function ID: 6923
+// Module ID: 6923
+// Function ID: 6924
 // Name: PrivateChannelSortStore
-// Dependencies: [6055, 6056, 2069, 2065, 2087, 6035, 5966, 1390, 11, 4745, 4702, 6923, 504, 584, 2]
+// Dependencies: [6055, 6056, 2069, 2065, 2087, 6035, 5966, 1390, 11, 4745, 4702, 6924, 504, 584, 2]
 
-// Module 6922 (PrivateChannelSortStore)
+// Module 6923 (PrivateChannelSortStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import SecondaryIndexMap from "SecondaryIndexMap" /* 4745 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6923 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6924 */;
 import MessageRequestStore from "MessageRequestStore" /* 6055 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6056 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -82,7 +82,7 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function index
 let values = [];
 let values2 = [];
 let closure_17 = [];
-const f40084 = () => {
+const f40143 = () => {
 
 };
 const Store = get_initializedDefault.Store;
@@ -93,7 +93,7 @@ class PrivateChannelSortStore extends Store {
     this.syncWith(items, handleConnectionOpen);
   }
   getPrivateChannelIds() {
-    if (typeof f40084 === "function") {
+    if (typeof f40143 === "function") {
       values = secondaryIndexMap.values(constants.FAVORITE);
       values2 = secondaryIndexMap.values(constants.DEFAULT);
       const tmp4 = values === values && values2 === values2;

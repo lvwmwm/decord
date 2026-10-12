@@ -1,18 +1,18 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16818
+// Function ID: 16819
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 5963, 16718, 16715, 21, 5092, 558, 576, 16434, 4850, 5378, 4827, 6761, 4818, 587, 16726, 16749, 4733, 2]
+// Dependencies: [19, 5963, 16742, 16739, 21, 5092, 558, 576, 16457, 4850, 5378, 4827, 6762, 4818, 587, 16750, 16773, 4733, 2]
 
-// Module 16794 (GuildsBarDragPreview)
+// Module 16818 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 4827 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import SortedGuildStore from "SortedGuildStore" /* 5963 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16715 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16739 */;
 import react_mod from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16718 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16742 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -182,7 +182,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   if ("convert-after" === overState) {
     if (null != overNode) {
       if (cResult[0] !== overNode) {
-        const element = { type: listInsets.FOLDER, id: -1, parentId: "Set", name: "Array", color: "round", expanded: "PX_80", children: items };
+        const element = { type: listInsets.FOLDER, id: -1, parentId: "Set", name: "Array", color: "apply", expanded: -894742272, children: items };
         items = [overNode];
         let num = 0;
         cResult[0] = overNode;
@@ -349,7 +349,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Set", name: "Array", color: "round", expanded: "PX_80", children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Set", name: "Array", color: "apply", expanded: -894742272, children: items };
         items = [tmp2];
         return element;
       }

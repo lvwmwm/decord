@@ -1,27 +1,27 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17391
+// Function ID: 17392
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7318, 2065, 12048, 9312, 17335, 9311, 1085, 2072, 12034, 12059, 558, 576, 1384, 4808, 1126, 8490, 4806, 1503, 17308, 17336, 12037, 9337, 9355, 1121, 5944, 8386, 7014, 5103, 7481, 2000, 5924, 13025, 5413, 8187, 6144, 1112, 12055, 2]
+// Dependencies: [5, 19, 7319, 2065, 12050, 9313, 17392, 9312, 1085, 2072, 12036, 12061, 558, 576, 1384, 4808, 1126, 8491, 4806, 1503, 17365, 17393, 12039, 9338, 9356, 1121, 5944, 8387, 7015, 5103, 7482, 2000, 5924, 13030, 5413, 8188, 6145, 1112, 12057, 2]
 // Exports: useOnPressMediaItem
 
-// Module 17334 (useOnPressSearchItem)
+// Module 17391 (useOnPressSearchItem)
 import intl2 from "intl" /* 1126 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8490 */;
-import TrackingConstants from "TrackingConstants" /* 9311 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12034 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12055 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12059 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17335 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8491 */;
+import TrackingConstants from "TrackingConstants" /* 9312 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12036 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12061 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17392 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7318 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7319 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import SearchQueryStore from "SearchQueryStore" /* 12048 */;
-import SearchConstants from "SearchConstants" /* 9312 */;
+import SearchQueryStore from "SearchQueryStore" /* 12050 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let closure_15;
 let closure_16;
 let map1;
 let metroImportAll;
-const f149226 = async (arg0, value) => {
+const f149541 = async (arg0, value) => {
   let c2;
   closure_0 = arg0;
   if (c3 === 2) {
@@ -50,7 +50,7 @@ const f149226 = async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "+51" };
+      return { value: "IconComponent", done: null };
     }
   } else {
     try {
@@ -95,7 +95,7 @@ const f149226 = async (arg0, value) => {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else if (arg0 === 1) {
         c3 = 3;
@@ -146,7 +146,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -176,7 +176,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else {
           value.openGuildVoiceModal(closure_0, "Channel List");
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -449,7 +449,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -523,7 +523,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
               }
             });
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp17) {
@@ -562,7 +562,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -636,7 +636,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPressCo
               }
             });
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         }
       } catch (tmp17) {
@@ -865,7 +865,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   const obj2 = searchContext(callback[19]);
   navigation = obj2.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f149226);
+  let closure_0 = _asyncToGenerator(f149541);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);
@@ -911,7 +911,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnPres
   obj = searchContext(callback[19]);
   navigation = obj.useNavigation();
   const useCallback = react.useCallback;
-  let closure_0 = _asyncToGenerator(f149226);
+  let closure_0 = _asyncToGenerator(f149541);
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, []);

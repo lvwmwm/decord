@@ -1,15 +1,15 @@
-// Module ID: 12862
-// Function ID: 12863
+// Module ID: 12864
+// Function ID: 12865
 // Name: GroupDMNitroCapCoachmark
-// Dependencies: [32, 19, 17, 10751, 2062, 21, 5092, 558, 576, 10749, 10756, 10752, 2049, 7099, 1126, 1200, 10331, 9035, 587, 10748, 9442, 2]
+// Dependencies: [32, 19, 17, 10751, 2062, 21, 5092, 558, 576, 10749, 10756, 10752, 2049, 7100, 1126, 1200, 10332, 9036, 587, 10748, 9443, 2]
 
-// Module 12862 (GroupDMNitroCapCoachmark)
+// Module 12864 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10331 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10332 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 10748 */;
 import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 10749 */;
 import GroupDMConstants from "GroupDMConstants" /* 10751 */;
@@ -22,7 +22,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap;
 
 let tmp;
-const NitroWheelIcon2 = tmp(9035);
+const NitroWheelIcon2 = tmp(9036);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
       if (cResult[6] === tmp12) {
         tmp13 = cResult[7];
       }
-      const tmpResult = tmp(7099);
+      const tmpResult = tmp(7100);
       const tmp15 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp13), 2);
       react = tmp17;
       const first = tmp15[0];
@@ -180,7 +180,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
             return closure_4(ContentDismissActionType.USER_DISMISS);
           }
         }
-        const NitroWheelIcon = tmp(9035).NitroWheelIcon;
+        const NitroWheelIcon = tmp(9036).NitroWheelIcon;
         class H {
           constructor() {
             const tmp = closure_2;
@@ -250,7 +250,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
   let closure_5 = tmp7Result;
   const obj4 = _location(10752);
   const enabled = obj4.useConfig({ location: _location }).enabled;
-  channelId(7099);
+  channelId(7100);
   if (enabled) {
     let str = "staff";
     if ("staff" !== groupDMNitroAudience) {
@@ -318,7 +318,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNit
       }
       return obj;
     }, items1);
-    const tmp3Result = tmp3(9442);
+    const tmp3Result = tmp3(9443);
     const coachmark = tmp3Result.useCoachmark(ref, memo);
     return <closure_5 ref={ref} collapsable={false}>{children}</closure_5>;
   }

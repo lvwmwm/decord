@@ -1,12 +1,12 @@
-// Module ID: 16185
-// Function ID: 16186
+// Module ID: 16208
+// Function ID: 16209
 // Name: useCollectiblesShopDeepLinkProps
-// Dependencies: [19, 7263, 7280, 558, 576, 7274, 504, 2]
+// Dependencies: [19, 7264, 7281, 558, 576, 7275, 504, 2]
 
-// Module 16185 (useCollectiblesShopDeepLinkProps)
+// Module 16208 (useCollectiblesShopDeepLinkProps)
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7263 */;
-import CollectiblesShopStore from "CollectiblesShopStore" /* 7280 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
+import CollectiblesShopStore from "CollectiblesShopStore" /* 7281 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

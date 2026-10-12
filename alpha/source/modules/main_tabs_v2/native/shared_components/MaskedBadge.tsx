@@ -1,13 +1,13 @@
-// Module ID: 9301
-// Function ID: 9302
+// Module ID: 9302
+// Function ID: 9303
 // Name: MaskedBadge
-// Dependencies: [19, 21, 5092, 587, 558, 576, 1200, 9302, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 1200, 9303, 2]
 
-// Module 9301 (MaskedBadge)
+// Module 9302 (MaskedBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9302 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9303 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

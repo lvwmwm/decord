@@ -1,20 +1,20 @@
-// Module ID: 14939
-// Function ID: 14940
+// Module ID: 14962
+// Function ID: 14963
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4760, 1390, 1085, 7019, 21, 5092, 587, 558, 576, 7093, 14940, 1126, 504, 6685, 6197, 6179, 5379, 2]
+// Dependencies: [19, 17, 4760, 1390, 1085, 7020, 21, 5092, 587, 558, 576, 7094, 14963, 1126, 504, 6686, 6198, 6180, 5379, 2]
 
-// Module 14939 (SettingsAccountHeader)
+// Module 14962 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6197 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6685 */;
-import Constants2 from "Constants" /* 7019 */;
-import openUserSettings from "openUserSettings" /* 7093 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14940 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6198 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6686 */;
+import Constants2 from "Constants" /* 7020 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14963 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -164,7 +164,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
         ({ title: obj5.label, title: obj5.accessibilityLabel } = tmp9);
         const obj2 = { onPress: tmp15, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj3), start: true, end: true };
-        const TableRow = tmp(6179).TableRow;
+        const TableRow = tmp(6180).TableRow;
         obj3 = { text: null, accessibilityLabel: null, onPress: tmp15 };
         ({ button: obj6.text, button: obj6.accessibilityLabel } = tmp9);
         tmp19 = React4(TableRow, obj2);
@@ -235,7 +235,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (null != bannerText) {
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
       const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
-      const TableRow = tmp2(6179).TableRow;
+      const TableRow = tmp2(6180).TableRow;
       obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       tmp14 = React4(TableRow, obj9);

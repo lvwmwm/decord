@@ -1,9 +1,9 @@
-// Module ID: 16573
-// Function ID: 16574
+// Module ID: 16596
+// Function ID: 16597
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 4939, 5006, 2062, 21, 3, 5092, 587, 558, 576, 16574, 5027, 504, 5056, 1126, 16575, 5088, 6261, 6262, 7567, 5379, 6839, 2]
+// Dependencies: [5, 32, 19, 17, 4939, 5006, 2062, 21, 3, 5092, 587, 558, 576, 16597, 5027, 504, 5056, 1126, 16598, 5088, 6262, 6263, 7568, 5379, 6840, 2]
 
-// Module 16573 (GuildThemeNuxActionSheet)
+// Module 16596 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -67,8 +67,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
   const markAsDismissed = guildId.markAsDismissed;
   const tmp4 = closure_14();
   let obj2 = react;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(guildId(16574).getInitialGuildThemeNuxSelection), 2);
-  const tmp5 = _slicedToArray(react.useState(guildId(16574).getInitialGuildThemeNuxSelection), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(guildId(16597).getInitialGuildThemeNuxSelection), 2);
+  const tmp5 = _slicedToArray(react.useState(guildId(16597).getInitialGuildThemeNuxSelection), 2);
   [r10028, _asyncToGenerator] = _slicedToArray(react.useState(null), 2);
   const tmp7 = _slicedToArray(react.useState(null), 2);
   const tmp8 = _slicedToArray(react.useState(false), 2);
@@ -219,7 +219,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -271,7 +271,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
             obj.hideActionSheet(GuildThemeNuxActionSheet_str);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp36) {
           closure_2 = tmp36;
           if (0 === c3) {
@@ -344,7 +344,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
   const tmp = closure_14();
   let tmp2 = guildId;
   const tmp3 = dependencyMap;
-  const tmp4 = _slicedToArray(react.useState(guildId(16574).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = _slicedToArray(react.useState(guildId(16597).getInitialGuildThemeNuxSelection), 2);
   [tmp5, c2] = tmp4;
   [tmp7, c3] = _slicedToArray(react.useState(null), 2);
   const tmp6 = _slicedToArray(react.useState(null), 2);
@@ -410,7 +410,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -462,7 +462,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
           obj.hideActionSheet(GuildThemeNuxActionSheet_str);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp36) {
         closure_2 = tmp36;
         if (0 === v0) {
@@ -486,9 +486,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
     stringResult = string(t["cY+Oob"]);
   }
   let obj3 = { startExpanded: true, dismissAccessibilityLabel: intl2.string(tmp2(1126).t.cpT0Cq), onDismiss: callback3, contentStyles: tmp.container, children: items7 };
-  BottomSheet = tmp2(6839).BottomSheet;
+  BottomSheet = tmp2(6840).BottomSheet;
   intl2 = tmp2(1126).intl;
-  items7 = [closure_10(markAsDismissed(16575), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  items7 = [closure_10(markAsDismissed(16598), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   let obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl3.string(tmp2(1126).t.Q9zFy9) };
   const Text = tmp2(5088).Text;
   intl3 = tmp2(1126).intl;
@@ -499,13 +499,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
   items7[2] = closure_10(Text2, obj5);
   let obj6 = { style: tmp.options, children: closure_11(TableRadioGroup, obj7) };
   obj7 = { hasIcons: false, value: tmp5, onChange: callback, children: items8 };
-  TableRadioGroup = tmp2(6262).TableRadioGroup;
+  TableRadioGroup = tmp2(6263).TableRadioGroup;
   const obj8 = { label: intl5.string(tmp2(1126).t.aN3RNQ), value: tmp2(5027).GuildThemeSourcePreference.GUILD };
-  const TableRadioRow = tmp2(6261).TableRadioRow;
+  const TableRadioRow = tmp2(6262).TableRadioRow;
   intl5 = tmp2(1126).intl;
   items8 = [closure_10(TableRadioRow, obj8), ];
   const obj9 = { label: intl6.string(tmp2(1126).t.js8y7t), value: tmp2(5027).GuildThemeSourcePreference.PERSONAL };
-  const TableRadioRow2 = tmp2(6261).TableRadioRow;
+  const TableRadioRow2 = tmp2(6262).TableRadioRow;
   intl6 = tmp2(1126).intl;
   items8[1] = closure_10(TableRadioRow2, obj9);
   items7[3] = closure_10(closure_6, obj6);
@@ -514,14 +514,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNu
   if (tmp10) {
     const obj10 = { style: tmp.warning, children: closure_10(InlineNotice, obj11) };
     obj11 = { type: "warning", message: intl7.string(tmp2(1126).t.tTHQAy), role: "status" };
-    InlineNotice = tmp2(7567).InlineNotice;
+    InlineNotice = tmp2(7568).InlineNotice;
     intl7 = tmp2(1126).intl;
     tmp20Result = tmp20(tmp21, obj10);
   }
   items7[4] = tmp20Result;
   let tmp20Result2 = null;
   if (null != tmp7) {
-    const obj12 = { style: tmp.warning, children: closure_10(tmp2(7567).InlineNotice, obj13) };
+    const obj12 = { style: tmp.warning, children: closure_10(tmp2(7568).InlineNotice, obj13) };
     obj13 = { type: "critical", message: tmp7, role: "alert" };
     tmp20Result2 = tmp20(tmp21, obj12);
   }

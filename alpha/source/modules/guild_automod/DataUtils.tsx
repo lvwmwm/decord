@@ -1,17 +1,17 @@
-// Module ID: 11454
-// Function ID: 11455
+// Module ID: 11456
+// Function ID: 11457
 // Name: DataUtils
 // Dependencies: [12, 2]
 // Exports: _transformMetadataToCamelCase, _transformMetadataToSnakeCase
 
-// Module 11454 (DataUtils)
+// Module 11456 (DataUtils)
 import _mod12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/DataUtils.tsx");
 
 export const _transformMetadataToCamelCase = function _transformMetadataToCamelCase(body) {
-  const f108397 = (acc, item) => {
+  const f108618 = (acc, item) => {
     const obj = _mod12;
     const camelCaseResult = obj.camelCase(item);
     if (typeof body[item] === "object") {
@@ -22,7 +22,7 @@ export const _transformMetadataToCamelCase = function _transformMetadataToCamelC
         if (null != body[item]) {
           const _Object = Object;
           const keys = Object.keys(tmp3);
-          reduced = keys.reduce(f108397, {});
+          reduced = keys.reduce(f108618, {});
         }
         acc[camelCaseResult] = reduced;
       }
@@ -34,12 +34,12 @@ export const _transformMetadataToCamelCase = function _transformMetadataToCamelC
   if (null != body) {
     let _Object = Object;
     let keys = Object.keys(body);
-    reduced = keys.reduce(f108397, {});
+    reduced = keys.reduce(f108618, {});
   }
   return reduced;
 };
 export const _transformMetadataToSnakeCase = function _transformMetadataToSnakeCase(metadata) {
-  const f108398 = (acc, item) => {
+  const f108619 = (acc, item) => {
     const obj = _mod12;
     const snakeCaseResult = obj.snakeCase(item);
     if (typeof metadata[item] === "object") {
@@ -50,7 +50,7 @@ export const _transformMetadataToSnakeCase = function _transformMetadataToSnakeC
         if (null != metadata[item]) {
           const _Object = Object;
           const keys = Object.keys(tmp3);
-          reduced = keys.reduce(f108398, {});
+          reduced = keys.reduce(f108619, {});
         }
         acc[snakeCaseResult] = reduced;
       }
@@ -63,7 +63,7 @@ export const _transformMetadataToSnakeCase = function _transformMetadataToSnakeC
   if (null != metadata) {
     let _Object = Object;
     let keys = Object.keys(metadata);
-    reduced = keys.reduce(f108398, {});
+    reduced = keys.reduce(f108619, {});
   }
   return reduced;
 };

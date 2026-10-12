@@ -1,13 +1,13 @@
-// Module ID: 17264
-// Function ID: 17265
+// Module ID: 17189
+// Function ID: 17190
 // Name: ConjureStatusLabels
-// Dependencies: [3849, 1126, 6946, 2]
-// Exports: connectionLabel, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
+// Dependencies: [3849, 1126, 13221, 2]
+// Exports: connectionLabel, isPublishLineSwitch, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 17264 (ConjureStatusLabels)
+// Module 17189 (ConjureStatusLabels)
 import intl4 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureTypes from "ConjureTypes" /* 6946 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 13221 */;
 import size from "module_2" /* 2 */;
 
 function thinkingLabel(saving) {
@@ -34,9 +34,15 @@ function thinkingLabel(saving) {
   if (flag4 === undefined) {
     flag4 = false;
   }
+  let flag5 = saving.publishPending;
+  if (flag5 === undefined) {
+    flag5 = false;
+  }
   const tmp = null != activity && "end" !== activity.phase;
   if (flag4) {
     xnCAaP = _modDef3849["1jqaAc"];
+  } else if (flag5) {
+    xnCAaP = _modDef3849.xCdlEF;
   } else if (flag2) {
     xnCAaP = _modDef3849.M4KI5F;
   } else if (flag3) {
@@ -59,6 +65,11 @@ const result = size.fileFinishedImporting("modules/conjure/agent_activity/Conjur
 export const INDICATOR_PASS_MS = 1000;
 export const INDICATOR_PASS_STAGGER_MS = 1800;
 export const RECALLING_LINES = items;
+export const isPublishLineSwitch = function isPublishLineSwitch(line, arg1) {
+  const intl = intl4.intl;
+  const stringResult = intl.string(_modDef3849.xCdlEF);
+  return line === stringResult !== (arg1 === stringResult);
+};
 export const recallingLine = function recallingLine(current) {
   const intl = intl4.intl;
   return intl.string(items[current % items.length]);
@@ -92,7 +103,7 @@ export const runesUsedLabels = function runesUsedLabels(projectUsage) {
   let gMuw5d;
   let intl2;
   let obj3;
-  const obj = ConjureTypes;
+  const obj = ConjureUsageTypes;
   const runesFromUsdResult = obj.runesFromUsd(projectUsage.cost_usd);
   const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3849.Z4LvGa, obj4) };
   const intl = intl4.intl;

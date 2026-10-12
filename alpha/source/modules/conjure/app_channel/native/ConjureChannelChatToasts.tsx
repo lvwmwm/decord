@@ -1,17 +1,17 @@
-// Module ID: 17299
-// Function ID: 17300
+// Module ID: 17356
+// Function ID: 17357
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5092, 587, 1126, 558, 576, 4962, 1200, 5088, 6181, 17300, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1126, 558, 576, 4962, 1200, 5088, 6182, 17357, 2]
 
-// Module 17299 (ConjureChannelChatToasts)
+// Module 17356 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import UserUtils from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import Card_Card from "Card/Card" /* 6181 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 17300 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 17357 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -74,7 +74,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
       tmp9 = cResult[4];
     }
     if (cResult[5] !== message.author) {
-      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
+      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
       const Avatar = tmp(1200).Avatar;
       const tmp12 = hasOwnProperty(Avatar, obj3);
       cResult[5] = message.author;
@@ -185,8 +185,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(6181).Card;
-  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
+  Card = tmp2(6182).Card;
+  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
   const Avatar = tmp2(1200).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };

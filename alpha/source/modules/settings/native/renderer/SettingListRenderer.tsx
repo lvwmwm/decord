@@ -1,26 +1,26 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 14966
+// Function ID: 14967
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 14944, 14810, 10664, 21, 5092, 587, 558, 576, 6264, 5088, 14945, 1631, 14946, 14951, 8624, 14952, 14955, 14956, 1894, 2]
+// Dependencies: [19, 17, 14967, 14833, 10664, 21, 5092, 587, 558, 576, 6265, 5088, 14968, 1631, 14969, 14974, 8625, 14975, 14978, 14979, 1894, 2]
 
-// Module 14943 (SettingListRenderer)
+// Module 14966 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 8624 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 8625 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 10664 */;
-import SettingRenderer from "SettingRenderer" /* 14945 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14946 */;
-import useAutoScrollToSetting from "useAutoScrollToSetting" /* 14951 */;
-import useSettingSearchResults from "useSettingSearchResults" /* 14952 */;
-import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 14955 */;
-import SettingSearchBarDefault from "SettingSearchBar" /* 14956 */;
+import SettingRenderer from "SettingRenderer" /* 14968 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14969 */;
+import useAutoScrollToSetting from "useAutoScrollToSetting" /* 14974 */;
+import useSettingSearchResults from "useSettingSearchResults" /* 14975 */;
+import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 14978 */;
+import SettingSearchBarDefault from "SettingSearchBar" /* 14979 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14944 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 14810 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14967 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 14833 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let importDefault, searchResultsHeader;
 let obj2;
 let tmp;
 const Text_Text = tmp(5088);
-const TableRowGroup = tmp(6264);
+const TableRowGroup = tmp(6265);
 function getItemType(type) {
   type = type.type;
   if (ListItemType.SECTION_HEADER !== type) {
@@ -263,10 +263,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return obj.toSettingListItems(node, field);
   }, items);
   const ref = react.useRef(null);
-  let obj = node(14951);
+  let obj = node(14974);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   const obj4 = { paddingBottom: bottom + field(587).space.PX_16 };
-  const FlashList = node(8624).FlashList;
+  const FlashList = node(8625).FlashList;
   const merged = Object.assign(tmp.contentContainer);
   return <View style={tmp.container}>{null}</View>;
 }));
@@ -347,7 +347,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
                     }
                   }
                 }
-                const FlashList = tmp(8624).FlashList;
+                const FlashList = tmp(8625).FlashList;
                 const tmp28 = <FlashList keyboardShouldPersistTaps="always" contentContainerStyle={tmp19} ListHeaderComponentStyle={tmp13} ListHeaderComponent={SettingSearchBarDefault} ListEmptyComponent={tmp15} onScroll={KeyboardManagerUtils.dismissGlobalKeyboard} scrollIndicatorInsets={tmp22} keyExtractor={keyExtractor} renderItem={renderItem} data={arr} getItemType={getItemType} />;
                 cResult[19] = tmp15;
                 cResult[20] = tmp13;
@@ -370,7 +370,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
             if (!isLoading) {
               tmp16 = null;
               if (0 === arr.length) {
-                tmp16 = jsx(tmp5(14955), {});
+                tmp16 = jsx(tmp5(14978), {});
               }
             }
           }

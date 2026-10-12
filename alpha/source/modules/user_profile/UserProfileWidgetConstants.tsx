@@ -1,12 +1,12 @@
-// Module ID: 7323
-// Function ID: 7324
+// Module ID: 7324
+// Function ID: 7325
 // Name: UserProfileWidgetConstants
-// Dependencies: [5440, 7321, 1126, 2]
+// Dependencies: [5440, 7322, 1126, 2]
 // Exports: widgetSupportsComment, widgetSupportsTags
 
-// Module 7323 (UserProfileWidgetConstants)
+// Module 7324 (UserProfileWidgetConstants)
 import intl2 from "intl" /* 1126 */;
-import WidgetType from "WidgetType" /* 7321 */;
+import WidgetType from "WidgetType" /* 7322 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import size from "module_2" /* 2 */;
 

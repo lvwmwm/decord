@@ -1,13 +1,13 @@
-// Module ID: 7363
-// Function ID: 7364
+// Module ID: 7364
+// Function ID: 7365
 // Name: ArtProfileAnalytics
-// Dependencies: [32, 5, 1085, 7361, 2060, 1265, 2]
+// Dependencies: [32, 5, 1085, 7362, 2060, 1265, 2]
 // Exports: trackAndroidArtProfileSnapshot
 
-// Module 7363 (ArtProfileAnalytics)
+// Module 7364 (ArtProfileAnalytics)
 import Constants from "Constants" /* 1085 */;
 import Timers from "Timers" /* 2060 */;
-import react_nativeDefault from "react-native" /* 7361 */;
+import react_nativeDefault from "react-native" /* 7362 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _trackAndroidArtProfileSnapshotAsync() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ let obj = function _trackAndroidArtProfileSnapshotAsync() {
             const obj6 = closure_131_1(closure_131_2[5]);
             obj6.track(closure_131_5.ANDROID_ART_PROFILE_SNAPSHOT, obj5, { logEventProperties: true });
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp5) {
           c5 = 3;

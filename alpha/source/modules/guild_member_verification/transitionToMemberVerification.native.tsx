@@ -1,14 +1,14 @@
-// Module ID: 6101
-// Function ID: 6102
+// Module ID: 6102
+// Function ID: 6103
 // Name: transitionToMemberVerification
-// Dependencies: [2087, 4940, 1112, 4942, 6102, 6144, 2]
+// Dependencies: [2087, 4940, 1112, 4942, 6103, 6145, 2]
 // Exports: transitionToMemberVerification
 
-// Module 6101 (transitionToMemberVerification)
+// Module 6102 (transitionToMemberVerification)
 import router_utils from "router_utils" /* 1112 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6102 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6144 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6103 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6145 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
 import size from "module_2" /* 2 */;

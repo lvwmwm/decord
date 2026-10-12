@@ -1,13 +1,13 @@
 // Module ID: 10800
 // Function ID: 10801
 // Name: startAuthorizationNoHook
-// Dependencies: [5, 1085, 6856, 4806, 1265, 2]
+// Dependencies: [5, 1085, 6857, 4806, 1265, 2]
 // Exports: startAuthorizationNoHook
 
 // Module 10800 (startAuthorizationNoHook)
 import Constants from "Constants" /* 1085 */;
 import LinkingDefault from "Linking" /* 4806 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 6856 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 6857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _startAuthorizationNoHook() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ let obj = function _startAuthorizationNoHook() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp20) {
           closure_4 = tmp20;
           if (0 === c5) {

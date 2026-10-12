@@ -1,7 +1,7 @@
 // Module ID: 5962
 // Function ID: 5963
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 2087, 5963, 5961, 1085, 21, 5092, 587, 5969, 558, 576, 1503, 5970, 504, 7087, 1126, 5959, 6184, 6158, 1200, 6813, 2]
+// Dependencies: [32, 19, 17, 2087, 5963, 5961, 1085, 21, 5092, 587, 5969, 558, 576, 1503, 5970, 504, 7088, 1126, 5959, 6185, 6159, 1200, 6814, 2]
 
 // Module 5962 (SubscribeModalGuildSelect)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import BoostingActionCreatorsAll from "BoostingActionCreators" /* 5959 */;
 import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5961 */;
 import LegacyTokens from "LegacyTokens" /* 5969 */;
 import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
-import SearchBarNavDefault from "SearchBarNav" /* 7087 */;
+import SearchBarNavDefault from "SearchBarNav" /* 7088 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -397,7 +397,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeMod
     return reduce2Result;
   }, items2);
   let obj3 = { top: true, style: tmp.safeArea, children: items3 };
-  const SafeAreaPaddingView = guildBoostSlots(6813).SafeAreaPaddingView;
+  const SafeAreaPaddingView = guildBoostSlots(6814).SafeAreaPaddingView;
   const obj4 = { placeholder: intl.string(guildBoostSlots(1126).t.vf3ZTa), onChange: tmp4, onClose: BoostingActionCreatorsAll.closeApplyBoostModal };
   const tmp6 = SearchBarNavDefault;
   intl = guildBoostSlots(1126).intl;
@@ -425,7 +425,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscribeMod
       return closure_1_12(PressableOpacity, obj, guild.id);
     })
   };
-  SafeAreaPaddingView2 = guildBoostSlots(6813).SafeAreaPaddingView;
+  SafeAreaPaddingView2 = guildBoostSlots(6814).SafeAreaPaddingView;
   items3[1] = closure_11(memo, obj5);
   return closure_12(SafeAreaPaddingView, obj3);
 });

@@ -1,9 +1,9 @@
-// Module ID: 13430
-// Function ID: 13431
+// Module ID: 13453
+// Function ID: 13454
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7279, 1087, 1085, 10636, 1392, 21, 5092, 587, 558, 576, 11536, 5056, 12702, 1126, 7573, 13428, 9083, 9044, 1503, 6851, 5934, 13431, 2000, 7262, 13435, 1088, 13436, 12770, 9039, 5088, 5380, 1993, 8302, 504, 10535, 4769, 7275, 7274, 9060, 9398, 8298, 10635, 13438, 13439, 1631, 5379, 13440, 1255, 1382, 5730, 5300, 2]
+// Dependencies: [32, 19, 17, 7280, 1087, 1085, 10637, 1392, 21, 5092, 587, 558, 576, 11538, 5056, 12704, 1126, 7574, 13451, 9084, 9045, 1503, 6852, 5934, 13454, 2000, 7263, 13458, 1088, 13459, 12772, 9040, 5088, 5380, 1993, 8303, 504, 10536, 4769, 7276, 7275, 9061, 9399, 8299, 10636, 13461, 13462, 1631, 5379, 13463, 1255, 1382, 5730, 5300, 2]
 
-// Module 13430 (ProductDetailsActionSheetPurchaseSection)
+// Module 13453 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,15 +19,15 @@ import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 
 import components_Button_Button from "components/Button/Button" /* 5379 */;
 import ReleaseChannelUtils from "ReleaseChannelUtils" /* 5730 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6851 */;
-import OrbsIcon from "OrbsIcon" /* 9039 */;
-import MainTabsConstants from "MainTabsConstants" /* 10636 */;
-import openGiftModal from "openGiftModal" /* 12702 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 12770 */;
-import UnlockWithNitroButton from "UnlockWithNitroButton" /* 13440 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import OrbsIcon from "OrbsIcon" /* 9040 */;
+import MainTabsConstants from "MainTabsConstants" /* 10637 */;
+import openGiftModal from "openGiftModal" /* 12704 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 12772 */;
+import UnlockWithNitroButton from "UnlockWithNitroButton" /* 13463 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7279 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -73,12 +73,12 @@ function VCButton(balance) {
   const tmp = closure_17();
   react = tmp;
   const tmp2 = balance;
-  let obj = balance(13428);
+  let obj = balance(13451);
   const virtualCurrencyData = obj.useVirtualCurrencyData(product, flag);
   ({ price, canAfford } = virtualCurrencyData);
-  let obj2 = balance(9083);
+  let obj2 = balance(9084);
   let isDisabled = obj2.useProductDisableState(product.skuId).isDisabled;
-  let obj3 = balance(9044);
+  let obj3 = balance(9045);
   const isPartiallyOwnedBundle = obj3.useProductPurchaseState(product).isPartiallyOwnedBundle;
   if (!isDisabled) {
     isDisabled = !canAfford;
@@ -153,7 +153,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(13431, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(13454, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;
@@ -951,7 +951,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
   const result1 = obj7.isFreeCollectiblesProduct(product);
   const obj8 = require("CollectiblesProductUtils");
   const result2 = obj8.isOrbsExclusiveProduct(product);
-  const obj9 = require("module_9060");
+  const obj9 = require("module_9061");
   const balance = obj9.useFetchVirtualCurrencyBalance().balance;
   const obj10 = require("NativePaymentHooks");
   nativePaymentsConnected = obj10.useNativeIAPPayments().nativePaymentsConnected;

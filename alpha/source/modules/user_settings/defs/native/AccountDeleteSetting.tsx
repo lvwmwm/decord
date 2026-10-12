@@ -1,12 +1,12 @@
-// Module ID: 15064
-// Function ID: 15065
+// Module ID: 15087
+// Function ID: 15088
 // Name: AccountDeleteSetting
-// Dependencies: [7992, 15065, 10663, 1126, 2]
+// Dependencies: [7993, 15088, 10663, 1126, 2]
 
-// Module 15064 (AccountDeleteSetting)
+// Module 15087 (AccountDeleteSetting)
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import handleDisableAccountDefault from "handleDisableAccount" /* 15065 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import handleDisableAccountDefault from "handleDisableAccount" /* 15088 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

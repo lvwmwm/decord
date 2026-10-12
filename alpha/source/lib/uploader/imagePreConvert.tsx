@@ -1,13 +1,13 @@
-// Module ID: 9263
-// Function ID: 9264
+// Module ID: 9264
+// Function ID: 9265
 // Name: imagePreConvert
-// Dependencies: [32, 5, 7758, 7787, 7880, 2000, 6672, 2]
+// Dependencies: [32, 5, 7759, 7788, 7881, 2000, 6673, 2]
 // Exports: itemNeedsImagePreConversion, maybePreConvertImageItem
 
-// Module 9263 (imagePreConvert)
+// Module 9264 (imagePreConvert)
 import asyncRequire from "asyncRequire" /* 2000 */;
-import UploadPlatform from "UploadPlatform" /* 7758 */;
-import imageFilename from "imageFilename" /* 7787 */;
+import UploadPlatform from "UploadPlatform" /* 7759 */;
+import imageFilename from "imageFilename" /* 7788 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ let value = function _maybePreConvertImageItem() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

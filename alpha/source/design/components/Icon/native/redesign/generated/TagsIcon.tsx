@@ -1,14 +1,14 @@
-// Module ID: 10458
-// Function ID: 10459
+// Module ID: 10459
+// Function ID: 10460
 // Name: TagsIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10459, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10460, 4817, 2]
 
-// Module 10458 (TagsIcon)
+// Module 10459 (TagsIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 10459 */;
+import AssetRegistry from "AssetRegistry" /* 10460 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

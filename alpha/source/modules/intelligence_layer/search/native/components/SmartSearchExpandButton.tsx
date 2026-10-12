@@ -1,13 +1,13 @@
-// Module ID: 17394
-// Function ID: 17395
+// Module ID: 17451
+// Function ID: 17452
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 17393, 10532, 13842, 1126, 4075, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 17450, 10533, 13865, 1126, 4075, 2]
 
-// Module 17394 (SmartSearchExpandButton)
+// Module 17451 (SmartSearchExpandButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef4075 from "module_4075" /* 4075 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 17393 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 17450 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -48,9 +48,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj2 = useSearchHostSurface;
   const tmp4 = closure_9(obj2.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10532).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(10533).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(13842).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(13865).ChevronSmallUpIcon;
   }
   ({ block, pill } = tmp4);
   if (cResult[0] !== isCollapsed) {
@@ -131,9 +131,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj = useSearchHostSurface;
   const tmp3 = closure_9(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10532).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(10533).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(13842).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(13865).ChevronSmallUpIcon;
   }
   const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp6(tmp7, obj3) };
   obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: string(FKLBbW), onPress, children: items };

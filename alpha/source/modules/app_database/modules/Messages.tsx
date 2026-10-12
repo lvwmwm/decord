@@ -1,21 +1,21 @@
-// Module ID: 7198
-// Function ID: 7199
+// Module ID: 7199
+// Function ID: 7200
 // Name: modules/Messages
-// Dependencies: [5, 32, 5757, 2065, 7199, 3, 5756, 2091, 7205, 7208, 2092, 11, 2]
+// Dependencies: [5, 32, 5757, 2065, 7200, 3, 5756, 2091, 7206, 7209, 2092, 11, 2]
 // Exports: isLikelyNotDelta
 
-// Module 7198 (modules/Messages)
+// Module 7199 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
 import _mod2092 from "module_2092" /* 2092 */;
 import requireSortedDescending from "requireSortedDescending" /* 5756 */;
-import isReadableChannel from "isReadableChannel" /* 7205 */;
-import KvMessage2 from "KvMessage" /* 7208 */;
+import isReadableChannel from "isReadableChannel" /* 7206 */;
+import KvMessage2 from "KvMessage" /* 7209 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 7199 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 7200 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, importDefault;
@@ -140,7 +140,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -416,7 +416,7 @@ class Messages {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -468,7 +468,7 @@ class Messages {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;

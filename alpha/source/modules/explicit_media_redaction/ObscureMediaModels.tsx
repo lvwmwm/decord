@@ -1,9 +1,9 @@
-// Module ID: 6994
-// Function ID: 6995
+// Module ID: 6995
+// Function ID: 6996
 // Name: ObscureMediaModels
 // Dependencies: [2]
 
-// Module 6994 (ObscureMediaModels)
+// Module 6995 (ObscureMediaModels)
 import size from "module_2" /* 2 */;
 
 const obj = { SPOILER: "spoiler", EXPLICIT_CONTENT: "explicit_content", POTENTIAL_EXPLICIT_CONTENT: "potential_explicit_content", GORE_CONTENT: "gore_content", SELF_HARM_CONTENT: "self_harm_content" };

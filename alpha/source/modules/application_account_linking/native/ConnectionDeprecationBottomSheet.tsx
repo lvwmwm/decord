@@ -1,10 +1,10 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17710
+// Function ID: 17711
 // Name: ConnectionDeprecationBottomSheet
-// Dependencies: [19, 17, 5440, 5761, 2062, 21, 5092, 587, 4827, 1631, 504, 5763, 6854, 6851, 6878, 17654, 5056, 17656, 2000, 6838, 6839, 5377, 17639, 5088, 1126, 3216, 9039, 5379, 12869, 558, 576, 4825, 1415, 5381, 6861, 6857, 2]
+// Dependencies: [19, 17, 5440, 5761, 2062, 21, 5092, 587, 4827, 1631, 504, 5763, 6855, 6852, 6879, 17711, 5056, 17713, 2000, 6839, 6840, 5377, 17696, 5088, 1126, 3216, 9040, 5379, 12871, 558, 576, 4825, 1415, 5381, 6862, 6858, 2]
 // Exports: default
 
-// Module 17653 (ConnectionDeprecationBottomSheet)
+// Module 17710 (ConnectionDeprecationBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,9 +13,9 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import themes from "themes" /* 4825 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Icon from "Icon" /* 5381 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 6854 */;
-import GameIconDefault from "GameIcon" /* 6861 */;
-import AccountLinkManager from "AccountLinkManager" /* 17654 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 6855 */;
+import GameIconDefault from "GameIcon" /* 6862 */;
+import AccountLinkManager from "AccountLinkManager" /* 17711 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
@@ -32,7 +32,7 @@ let c9;
 let metroImportAll;
 let obj2;
 let tmp;
-const GameIcon = tmp(6861);
+const GameIcon = tmp(6862);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -201,8 +201,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldS
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6);
   ({ fetchingConnections, matchingPlatform } = stateFromStoresObject);
   let replacedBy;
-  const useGetOrFetchApplication = deprecatedPlatformTypes(6857).useGetOrFetchApplication;
-  deprecatedPlatformTypes(6857);
+  const useGetOrFetchApplication = deprecatedPlatformTypes(6858).useGetOrFetchApplication;
+  deprecatedPlatformTypes(6858);
   if (matchingPlatform != null) {
     let migrationData = matchingPlatform.migrationData;
     if (migrationData != null) {
@@ -255,8 +255,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldS
   });
   ({ fetchingConnections, matchingPlatform } = stateFromStoresObject);
   let replacedBy;
-  const useGetOrFetchApplication = deprecatedPlatformTypes(6857).useGetOrFetchApplication;
-  deprecatedPlatformTypes(6857);
+  const useGetOrFetchApplication = deprecatedPlatformTypes(6858).useGetOrFetchApplication;
+  deprecatedPlatformTypes(6858);
   if (matchingPlatform != null) {
     let migrationData = matchingPlatform.migrationData;
     if (migrationData != null) {

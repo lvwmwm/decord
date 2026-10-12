@@ -1,9 +1,9 @@
-// Module ID: 9547
-// Function ID: 9548
+// Module ID: 9548
+// Function ID: 9549
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 2087, 5987, 6159, 1085, 4767, 558, 576, 573, 2]
+// Dependencies: [5, 32, 19, 2087, 5987, 6160, 1085, 4767, 558, 576, 573, 2]
 
-// Module 9547 (useEmojiAndSource)
+// Module 9548 (useEmojiAndSource)
 import Constants from "Constants" /* 1085 */;
 import EmojiTypes from "EmojiTypes" /* 4767 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -11,7 +11,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import EmojiStore from "EmojiStore" /* 5987 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6159 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6160 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -516,10 +516,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
       if (current != null) {
         currentResult = current();
       }
-      closure_0 = closure_2(function() { /* body not rendered: F154237 */ });
+      closure_0 = closure_2(function() { /* body not rendered: F154552 */ });
       tmp3 = closure_2;
       if (tmp3) {
-        tmp5 = (function fetch() { /* body not rendered: F154238 */ })();
+        tmp5 = (function fetch() { /* body not rendered: F154553 */ })();
       } else {
         current2 = tmp.current;
         if (current2 != null) {
@@ -634,7 +634,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           try {
@@ -687,7 +687,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiAndS
               current();
             }
             c3 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } catch (tmp26) {
             c3 = 3;
             throw tmp26;

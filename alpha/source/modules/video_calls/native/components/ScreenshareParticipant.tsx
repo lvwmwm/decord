@@ -1,13 +1,13 @@
 // Module ID: 11141
 // Function ID: 11142
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10882, 6156, 10883, 1126, 5088, 5379, 11052, 6334, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10882, 6157, 10883, 1126, 5088, 5379, 11052, 6335, 2]
 
 // Module 11141 (ScreenshareParticipant)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 6156 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10882 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10883 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ let tmp;
 const intl4 = tmp(1126);
 const Text_Text = tmp(5088);
 const components_Button_Button = tmp(5379);
-const LegacyBaseButton = tmp(6334);
+const LegacyBaseButton = tmp(6335);
 const useScreenshareUtils = tmp(11052);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

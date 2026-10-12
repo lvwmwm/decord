@@ -1,9 +1,9 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 9684
+// Function ID: 9685
 // Name: useShouldHideMediaOptions
 // Dependencies: [2065, 2072, 558, 576, 573, 2]
 
-// Module 9683 (useShouldHideMediaOptions)
+// Module 9684 (useShouldHideMediaOptions)
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

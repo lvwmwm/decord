@@ -1,9 +1,9 @@
-// Module ID: 6100
-// Function ID: 6101
+// Module ID: 6101
+// Function ID: 6102
 // Name: QuarantineModeInfoAlert
 // Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5088, 5398, 2]
 
-// Module 6100 (QuarantineModeInfoAlert)
+// Module 6101 (QuarantineModeInfoAlert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

@@ -1,9 +1,9 @@
-// Module ID: 15162
-// Function ID: 15163
+// Module ID: 15185
+// Function ID: 15186
 // Name: FamilyCenterSettingsControls
-// Dependencies: [19, 17, 7259, 1085, 21, 5092, 587, 5088, 1126, 2568, 5934, 15163, 2000, 558, 576, 15165, 6179, 7738, 15149, 1503, 7306, 7014, 15166, 5377, 6264, 5379, 15074, 7260, 15167, 2]
+// Dependencies: [19, 17, 7260, 1085, 21, 5092, 587, 5088, 1126, 2568, 5934, 15186, 2000, 558, 576, 15188, 6180, 7739, 15172, 1503, 7307, 7015, 15189, 5377, 6265, 5379, 15097, 7261, 15190, 2]
 
-// Module 15162 (FamilyCenterSettingsControls)
+// Module 15185 (FamilyCenterSettingsControls)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,12 +13,12 @@ import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7259 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7260 */;
-import LayerActionCreators from "LayerActionCreators" /* 7306 */;
-import useUserLinks from "useUserLinks" /* 7738 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15167 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
+import LayerActionCreators from "LayerActionCreators" /* 7307 */;
+import useUserLinks from "useUserLinks" /* 7739 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15190 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -96,7 +96,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Spendi
   teenId = teenId.teenId;
   const cap = teenId.cap;
   const tmp4 = closure_9();
-  let obj2 = teenId(15165);
+  let obj2 = teenId(15188);
   const spendingLimitDisplayState = obj2.useSpendingLimitDisplayState(cap);
   if (cResult[0] === spendingLimitDisplayState) {
     let tmp6;
@@ -133,7 +133,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Spendi
         }
       }
       const obj3 = { label: tmp11, trailing, subLabel, onPress: tmp14, arrow: null != teenId, disabled: null == teenId };
-      const tmp18 = closure_7(teenId(6179).TableRow, obj3);
+      const tmp18 = closure_7(teenId(6180).TableRow, obj3);
       cResult[7] = null == teenId;
       cResult[8] = subLabel;
       cResult[9] = tmp14;
@@ -147,7 +147,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Spendi
       fn = () => {
         const obj = ModalActionCreatorsDefault;
         const obj2 = { teenId };
-        obj.pushLazy(asyncRequire(15163, dependencyMap.paths), obj2, undefined, { animation: "slide_from_right" });
+        obj.pushLazy(asyncRequire(15186, dependencyMap.paths), obj2, undefined, { animation: "slide_from_right" });
       };
     }
     cResult[4] = null == teenId;
@@ -168,11 +168,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Spendi
   teenId = teenId.teenId;
   const cap = teenId.cap;
   const tmp = closure_9();
-  let obj = teenId(15165);
+  let obj = teenId(15188);
   ({ trailing, subLabel } = getSpendingLimitRowProps(obj.useSpendingLimitDisplayState(cap), tmp));
   let obj2 = { label: intl.string(_modDef2568.gMeekL), trailing, subLabel, onPress: fn, arrow: null != teenId, disabled: null == teenId };
   getSpendingLimitRowProps(obj.useSpendingLimitDisplayState(cap), tmp);
-  const TableRow = teenId(6179).TableRow;
+  const TableRow = teenId(6180).TableRow;
   intl = teenId(1126).intl;
   fn = undefined;
   const tmp4 = closure_7;
@@ -180,7 +180,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Spendi
     fn = () => {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { teenId };
-      obj.pushLazy(asyncRequire(15163, dependencyMap.paths), obj2, undefined, { animation: "slide_from_right" });
+      obj.pushLazy(asyncRequire(15186, dependencyMap.paths), obj2, undefined, { animation: "slide_from_right" });
     };
   }
   return tmp4(TableRow, obj2);
@@ -207,9 +207,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   let obj = activeLinkUserIds(576);
   const cResult = obj.c(40);
   const tmp4 = closure_9();
-  let obj2 = activeLinkUserIds(7738);
+  let obj2 = activeLinkUserIds(7739);
   activeLinkUserIds = obj2.useActiveLinkUserIds();
-  let obj3 = activeLinkUserIds(15149);
+  let obj3 = activeLinkUserIds(15172);
   const selectedTeenUser = obj3.useSelectedTeenUser();
   const obj4 = activeLinkUserIds(1503);
   navigation = obj4.useNavigation();
@@ -245,7 +245,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   } else {
     arr2 = cResult[1];
   }
-  const tmpResult = activeLinkUserIds(15165);
+  const tmpResult = activeLinkUserIds(15188);
   const spendingLimitFromUserSettings = tmpResult.useSpendingLimitFromUserSettings();
   if (cResult[2] !== activeLinkUserIds) {
     function handleMessageParentClick() {
@@ -283,9 +283,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   } else {
     tmp13 = cResult[7];
   }
-  ({ subLabel, trailing } = navigation(15166)(arr2));
+  ({ subLabel, trailing } = navigation(15189)(arr2));
   ({ teenControlsContainer, controlledSettingsHeader } = tmp4);
-  navigation(15166)(arr2);
+  navigation(15189)(arr2);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "text-sm/semibold", children: intl.string(navigation(2568).ahKIJO) };
     const Text = tmp(5088).Text;
@@ -420,7 +420,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
           }
           const obj13 = { hasIcons: false, children: items1 };
           items1 = [tmp26, tmp34];
-          const tmp39 = closure_8(activeLinkUserIds(6264).TableRowGroup, obj13);
+          const tmp39 = closure_8(activeLinkUserIds(6265).TableRowGroup, obj13);
           cResult[24] = tmp26;
           cResult[25] = tmp34;
           cResult[26] = tmp39;
@@ -429,7 +429,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       }
     }
     const obj14 = { label: tmp30, subLabel, trailing, onPress: tmp32, arrow: arr2.length > 0 };
-    const tmp36 = closure_7(activeLinkUserIds(6179).TableRow, obj14);
+    const tmp36 = closure_7(activeLinkUserIds(6180).TableRow, obj14);
     cResult[19] = subLabel;
     cResult[20] = tmp32;
     cResult[21] = arr2.length > 0;
@@ -883,9 +883,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   const tmp = closure_9();
   let tmp2 = selectedTeenUser;
   let tmp3 = dependencyMap;
-  let obj = selectedTeenUser(15149);
+  let obj = selectedTeenUser(15172);
   selectedTeenUser = obj.useSelectedTeenUser();
-  const obj2 = selectedTeenUser(15149);
+  const obj2 = selectedTeenUser(15172);
   const shouldLoadSettingsForSelectedTeenUser = obj2.useShouldLoadSettingsForSelectedTeenUser();
   const obj3 = selectedTeenUser(1503);
   dependencyMap = obj3.useNavigation();
@@ -899,7 +899,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   if (rules == null) {
     rules = [];
   }
-  const ParentalControlledSpendingLimit = tmp2(15074).ParentalControlledSpendingLimit;
+  const ParentalControlledSpendingLimit = tmp2(15097).ParentalControlledSpendingLimit;
   let id;
   const useControlledSetting = ParentalControlledSpendingLimit.useControlledSetting;
   if (selectedTeenUser != null) {
@@ -923,9 +923,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       const teenSettingsAndConsents = obj.fetchTeenSettingsAndConsents(tmp.id);
     }
   }, items);
-  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(15166)(rules));
+  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(15189)(rules));
   const obj4 = { style: tmp.parentalControlsContainer, children: items1 };
-  shouldLoadSettingsForSelectedTeenUser(15166)(rules);
+  shouldLoadSettingsForSelectedTeenUser(15189)(rules);
   const Stack = tmp2(5377).Stack;
   const obj5 = { variant: "text-sm/semibold", children: intl.string(shouldLoadSettingsForSelectedTeenUser(2568).ahKIJO) };
   const Text = tmp2(5088).Text;
@@ -936,7 +936,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   intl2 = tmp2(1126).intl;
   items1[1] = closure_7(Text2, obj6);
   const obj7 = { style: tmp.controlsGroup, children: closure_8(TableRowGroup, { hasIcons: false, children: items2 }) };
-  TableRowGroup = tmp2(6264).TableRowGroup;
+  TableRowGroup = tmp2(6265).TableRowGroup;
   const obj8 = {
     label: intl3.string(tmp2(1126).t["+o1pDZ"]),
     onPress() {
@@ -945,7 +945,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     },
     arrow: true
   };
-  const TableRow = tmp2(6179).TableRow;
+  const TableRow = tmp2(6180).TableRow;
   intl3 = tmp2(1126).intl;
   items2 = [closure_7(TableRow, obj8), , , ];
   const obj9 = {
@@ -956,7 +956,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     },
     arrow: true
   };
-  const TableRow2 = tmp2(6179).TableRow;
+  const TableRow2 = tmp2(6180).TableRow;
   intl4 = tmp2(1126).intl;
   items2[1] = closure_7(TableRow2, obj9);
   let id2;
@@ -998,7 +998,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
         },
       arrow: true
     };
-    const TableRow3 = tmp2(6179).TableRow;
+    const TableRow3 = tmp2(6180).TableRow;
     intl5 = tmp2(1126).intl;
     tmp14Result2 = tmp14(TableRow3, obj11);
   }

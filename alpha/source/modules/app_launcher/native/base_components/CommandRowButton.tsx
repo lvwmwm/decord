@@ -1,10 +1,10 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 11793
+// Function ID: 11794
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 11703, 9246, 11667, 7246, 558, 576, 6188, 5379, 1126, 5040, 2]
+// Dependencies: [5, 32, 19, 21, 11705, 9247, 11669, 7247, 558, 576, 6189, 5379, 1126, 5040, 2]
 // Exports: useCommandRowSend
 
-// Module 11791 (CommandRowButton)
+// Module 11793 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
     }
   }
   if (hasOptions) {
-    tmp5Result = tmp5(tmp(6188).TableRowArrow, {});
+    tmp5Result = tmp5(tmp(6189).TableRowArrow, {});
   } else {
     const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
     const Button = tmp(5379).Button;
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(6188).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6189).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
     const Button = tmp4(5379).Button;
@@ -100,7 +100,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -149,7 +149,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp25) {
         closure_2 = tmp25;

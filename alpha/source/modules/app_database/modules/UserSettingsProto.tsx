@@ -1,9 +1,9 @@
-// Module ID: 7210
-// Function ID: 7211
+// Module ID: 7211
+// Function ID: 7212
 // Name: UserSettingsProto
 // Dependencies: [5, 1244, 502, 3, 2091, 2108, 12, 2]
 
-// Module 7210 (UserSettingsProto)
+// Module 7211 (UserSettingsProto)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
@@ -79,7 +79,7 @@ class UserSettingsProto {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         while (true) {

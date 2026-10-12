@@ -1,9 +1,9 @@
-// Module ID: 6776
-// Function ID: 6777
+// Module ID: 6777
+// Function ID: 6778
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 1096, 21, 5092, 5906, 587, 558, 576, 5088, 6261, 6262, 2]
+// Dependencies: [19, 17, 1096, 21, 5092, 5906, 587, 558, 576, 5088, 6262, 6263, 2]
 
-// Module 6776 (MultipleChoiceField)
+// Module 6777 (MultipleChoiceField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
@@ -129,8 +129,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultipleChoi
     cResult[12] = response;
     cResult[13] = tmp11;
     cResult[14] = tmp12;
-    cResult[15] = closure_4(onChange(6262).TableRadioGroup, obj2);
-    const tmp17 = closure_4(onChange(6262).TableRadioGroup, obj2);
+    cResult[15] = closure_4(onChange(6263).TableRadioGroup, obj2);
+    const tmp17 = closure_4(onChange(6263).TableRadioGroup, obj2);
   }
   const obj3 = { style: tmp4.formHeader, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: label };
   cResult[3] = label;

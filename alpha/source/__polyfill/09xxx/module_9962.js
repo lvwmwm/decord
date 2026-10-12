@@ -1,89 +1,115 @@
 // Module ID: 9962
 // Function ID: 9963
-// Dependencies: [41, 42, 93, 95, 98, 9819, 9963, 9846, 9826]
+// Dependencies: [9816, 9823, 9825, 9849, 9963, 9965, 9966, 9967, 9968, 9969, 9970, 9971, 9856]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 9962
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9819 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9826 */;
+import _mod9849 from "module_9849" /* 9849 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 9856 */;
 import _mod9963 from "module_9963" /* 9963 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod9965 from "module_9965" /* 9965 */;
+import _mod9966 from "module_9966" /* 9966 */;
+import _mod9967 from "module_9967" /* 9967 */;
+import _mod9968 from "module_9968" /* 9968 */;
+import _mod9969 from "module_9969" /* 9969 */;
+import _mod9970 from "module_9970" /* 9970 */;
+import _mod9971 from "module_9971" /* 9971 */;
+import { Chrono } from "module_9816" /* 9816 */;
 
-let tmp2;
-const _mod9846 = tmp2(9846);
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function createConfiguration(flag, arg1) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_9849.default(flag2), , , , ];
+  new module_9849.default(flag2);
+  items[1] = new module_9963.default();
+  new module_9963.default();
+  items[2] = new module_9965.default();
+  new module_9965.default();
+  items[3] = new module_9968.default();
+  new module_9968.default();
+  items[4] = new module_9971.default();
+  new module_9971.default();
+  items1 = [new module_9966.default(), ];
+  new module_9966.default();
+  items1[1] = new module_9967.default();
+  new module_9967.default();
+  return includeCommonConfiguration(obj, flag);
 }
-const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(este|esta|pasado|pr[o\u00F3]ximo)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod9963.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(este|esta|pasado|pr[\u00F3o]ximo)\\s*semana)?(?=\\W|\\d|$)", "i");
-class ESWeekdayParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ESWeekdayParser);
-    const obj = _getPrototypeOf(ESWeekdayParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const tmp = createConfiguration(false, flag);
+  const parsers = tmp.parsers;
+  const push = parsers.push;
+  const _default = new module_9969.default();
+  push(_default);
+  const parsers1 = tmp.parsers;
+  const push2 = parsers1.push;
+  const _default1 = new module_9970.default();
+  push2(_default1);
+  return tmp;
 }
-_inherits(ESWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
-  }
+const module_9849 = fn(_mod9849);
+const module_9963 = fn(_mod9963);
+const module_9965 = fn(_mod9965);
+const module_9966 = fn(_mod9966);
+const module_9967 = fn(_mod9967);
+const module_9968 = fn(_mod9968);
+const module_9969 = fn(_mod9969);
+const module_9970 = fn(_mod9970);
+const module_9971 = fn(_mod9971);
+const configuration = createConfiguration(false, true);
+let parsers = configuration.parsers;
+let push = parsers.push;
+let _default = new module_9969.default();
+push(_default);
+let parsers1 = configuration.parsers;
+let push2 = parsers1.push;
+let _default1 = new module_9970.default();
+push2(_default1);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_9816").Chrono(createConfiguration(true));
+const Chrono_export = require("module_9816").Chrono;
+
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[2];
-      const formatted = str.toLowerCase();
-      const tmp4 = _mod9963.WEEKDAY_DICTIONARY[formatted];
-      if (undefined === tmp4) {
-        return null;
-      } else {
-        const str2 = arg1[1] || arg1[3] || "";
-        const formatted1 = str2.toLowerCase();
-        let str5 = "this";
-        if ("pasado" != formatted1) {
-          str5 = "next";
-          if ("pr\u00F3ximo" != formatted1) {
-            str5 = "next";
-            if ("proximo" != formatted1) {
-              str5 = null;
-              if ("este" == formatted1) {
-                str5 = "this";
-              }
-            }
-          }
-        }
-        return _mod9846.createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
-      }
-    }
-  }
-];
-
-export default _createClass(ESWeekdayParser, items);
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+};
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

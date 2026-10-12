@@ -1,18 +1,18 @@
-// Module ID: 12415
-// Function ID: 12416
+// Module ID: 12417
+// Function ID: 12418
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 7482, 21, 5092, 587, 6258, 558, 576, 7499, 6156, 12416, 1126, 5088, 5379, 12417, 12408, 2]
+// Dependencies: [5, 19, 17, 7483, 21, 5092, 587, 6259, 558, 576, 7500, 6157, 12418, 1126, 5088, 5379, 12419, 12410, 2]
 
-// Module 12415 (ContactSyncLandingOnboardingRedesign)
+// Module 12417 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7499 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12408 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12416 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 12417 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7500 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12410 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12418 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12419 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -79,7 +79,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncL
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncL
               tmp3();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -310,7 +310,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncL
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -343,7 +343,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncL
             closure_128_0();
           }
           c2 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp10) {
         c2 = 3;

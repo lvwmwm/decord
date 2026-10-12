@@ -1,18 +1,18 @@
-// Module ID: 15280
-// Function ID: 15281
+// Module ID: 15303
+// Function ID: 15304
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 5282, 1085, 9201, 1279, 7416, 7415, 5977, 15281, 7406, 5979, 7364, 1382, 7397, 12964, 15272, 15282, 5729, 5734, 2]
+// Dependencies: [5, 32, 19, 5282, 1085, 9202, 1279, 7417, 7416, 5977, 15304, 7407, 5979, 7365, 1382, 7398, 12966, 15295, 15305, 5729, 5734, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 15280 (useBountiesModalVideoAnalytics)
+// Module 15303 (useBountiesModalVideoAnalytics)
 import Constants from "Constants" /* 1085 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
 import MetricEvents from "MetricEvents" /* 5734 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;
-import AnalyticsActions from "AnalyticsActions" /* 7406 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 12964 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15272 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 15282 */;
+import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 15305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -136,7 +136,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c4;
@@ -214,7 +214,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
               trackAdContentEvent(obj8);
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           }
         } catch (tmp30) {

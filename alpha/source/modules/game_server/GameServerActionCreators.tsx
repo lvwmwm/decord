@@ -1,22 +1,22 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12220
+// Function ID: 12221
 // Name: GameServerActionCreators
-// Dependencies: [2129, 1390, 12219, 5009, 1085, 584, 12220, 5644, 1295, 12222, 8032, 1265, 12223, 12221, 2]
+// Dependencies: [2129, 1390, 12221, 5009, 1085, 584, 12222, 5644, 1295, 12224, 8033, 1265, 12225, 12223, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer, wakeMyGameServer
 
-// Module 12218 (GameServerActionCreators)
+// Module 12220 (GameServerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import GameServerConstants from "GameServerConstants" /* 5009 */;
 import StoreUtils from "StoreUtils" /* 5644 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8032 */;
-import GameServerMocks from "GameServerMocks" /* 12220 */;
-import GameServerStatus from "GameServerStatus" /* 12221 */;
-import regionResponseToRegionDefault from "regionResponseToRegion" /* 12223 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8033 */;
+import GameServerMocks from "GameServerMocks" /* 12222 */;
+import GameServerStatus from "GameServerStatus" /* 12223 */;
+import regionResponseToRegionDefault from "regionResponseToRegion" /* 12225 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import UserStore from "UserStore" /* 1390 */;
-import OwnedGameServersStore from "OwnedGameServersStore" /* 12219 */;
+import OwnedGameServersStore from "OwnedGameServersStore" /* 12221 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let _require;
 
 let metroImportAll;
 let metroImportDefault;
-const f111471 = (body) => {
+const f111692 = (body) => {
   body = body.body;
   let game_servers = body.game_servers;
   const dispatch = closure_1_1(closure_1_2[5]).dispatch;
@@ -288,7 +288,7 @@ export const fetchMyGameServers = function fetchMyGameServers() {
   const HTTP = HTTPUtils.HTTP;
   const obj = { url: metroImportAll.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
   const value = HTTP.get(obj);
-  return value.then(f111471);
+  return value.then(f111692);
 };
 export const optimisticallyMarkGameServerResizing = function optimisticallyMarkGameServerResizing(arg0) {
   let obj2;
@@ -330,7 +330,7 @@ export const updateMyGameServerName = function updateMyGameServerName(arg0, name
       const HTTP = closure_0(dependencyMap[8]).HTTP;
       const obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
       const value = HTTP.get(obj);
-      const nextPromise = value.then(f111471);
+      const nextPromise = value.then(f111692);
       nextPromise.catch(() => {
 
       });
@@ -339,7 +339,7 @@ export const updateMyGameServerName = function updateMyGameServerName(arg0, name
       const HTTP = closure_0(dependencyMap[8]).HTTP;
       const obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
       const value = HTTP.get(obj);
-      const nextPromise = value.then(f111471);
+      const nextPromise = value.then(f111692);
       nextPromise.catch(() => {
 
       });
@@ -385,7 +385,7 @@ export const wakeMyGameServer = function wakeMyGameServer(arg0) {
     const HTTP = closure_0(dependencyMap[8]).HTTP;
     let obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
     const value = HTTP.get(obj);
-    const nextPromise = value.then(f111471);
+    const nextPromise = value.then(f111692);
     nextPromise.catch(() => {
 
     });

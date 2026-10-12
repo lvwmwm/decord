@@ -1,10 +1,10 @@
-// Module ID: 6279
-// Function ID: 6280
+// Module ID: 6280
+// Function ID: 6281
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1390, 21, 5092, 1503, 504, 6280, 1105, 5636, 4809, 1126, 6156, 6281, 5088, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 21, 5092, 1503, 504, 6281, 1105, 5636, 4809, 1126, 6157, 6282, 5088, 5379, 2]
 // Exports: default
 
-// Module 6279 (ConfirmEmailChangeStart)
+// Module 6280 (ConfirmEmailChangeStart)
 import Text_Text from "Text/Text" /* 5088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -54,9 +54,9 @@ export default function ConfirmEmailChangeStart() {
     let obj3 = { oldEmail: stateFromStores.email };
     let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_6, obj5) };
     obj5 = { style: tmp.container, children: items1 };
-    let obj6 = { style: tmp.image, source: navigation(6281) };
+    let obj6 = { style: tmp.image, source: navigation(6282) };
     const formatResult = intl.format(require("intl").t.oMFSgi, obj3);
-    const tmp14 = navigation(6156);
+    const tmp14 = navigation(6157);
     items1 = [closure_9(tmp14, obj6), , , ];
     let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(1126).t.dQ71Wa) };
     const Text = tmp2(5088).Text;

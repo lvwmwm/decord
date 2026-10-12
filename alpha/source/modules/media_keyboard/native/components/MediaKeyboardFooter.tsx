@@ -1,17 +1,17 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10045
+// Function ID: 10046
 // Name: MediaKeyboardFooter
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10033, 1126, 5088, 5379, 6156, 10045, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10034, 1126, 5088, 5379, 6157, 10046, 2]
 
-// Module 10044 (MediaKeyboardFooter)
+// Module 10045 (MediaKeyboardFooter)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10033 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10045 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10034 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10046 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

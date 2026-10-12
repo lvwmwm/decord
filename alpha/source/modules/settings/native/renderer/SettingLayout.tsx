@@ -1,19 +1,19 @@
-// Module ID: 14942
-// Function ID: 14943
+// Module ID: 14965
+// Function ID: 14966
 // Name: SettingLayout
-// Dependencies: [19, 10664, 21, 558, 576, 14943, 14957, 2]
+// Dependencies: [19, 10664, 21, 558, 576, 14966, 14980, 2]
 
-// Module 14942 (SettingLayout)
+// Module 14965 (SettingLayout)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 10664 */;
-import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14957 */;
+import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14980 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SettingListRenderer = tmp(14943);
+const SettingListRenderer = tmp(14966);
 const NodeType = SettingRendererConstants.NodeType;
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingLayout(node) {

@@ -1,23 +1,23 @@
-// Module ID: 16647
-// Function ID: 16648
+// Module ID: 16671
+// Function ID: 16672
 // Name: FavoritesGuildCoachmarkMenuItem
-// Dependencies: [19, 2068, 1085, 2062, 21, 558, 576, 10328, 6845, 504, 1126, 3442, 9442, 2]
+// Dependencies: [19, 2068, 1085, 2062, 21, 558, 576, 10329, 6846, 504, 1126, 3442, 9443, 2]
 
-// Module 16647 (FavoritesGuildCoachmarkMenuItem)
+// Module 16671 (FavoritesGuildCoachmarkMenuItem)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _modDef3442 from "module_3442" /* 3442 */;
-import FavoritesDismissibleContent from "FavoritesDismissibleContent" /* 10328 */;
+import FavoritesDismissibleContent from "FavoritesDismissibleContent" /* 10329 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 2068 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const LayerScope2 = tmp(6845);
+const LayerScope2 = tmp(6846);
 const ChannelTypes = Constants.ChannelTypes;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -89,7 +89,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favorit
   } else {
     tmp8 = cResult[3];
   }
-  const tmpResult2 = markPopoverAsDismissed(10328);
+  const tmpResult2 = markPopoverAsDismissed(10329);
   const favoritesMenuItemPopoverDismissibleContent = tmpResult2.useFavoritesMenuItemPopoverDismissibleContent(tmp8);
   ({ shouldShowPopover, markPopoverAsDismissed } = favoritesMenuItemPopoverDismissibleContent);
   if (cResult[4] !== markPopoverAsDismissed) {

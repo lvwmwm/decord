@@ -1,9 +1,9 @@
-// Module ID: 17644
-// Function ID: 17645
+// Module ID: 17701
+// Function ID: 17702
 // Name: PremiumDiscountOfferActionSheetContent
-// Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 11380, 1126, 12894, 8201, 7760, 4769, 16036, 5088, 16040, 9035, 5379, 2]
+// Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 11380, 1126, 12896, 8202, 7761, 4769, 16059, 5088, 16063, 9036, 5379, 2]
 
-// Module 17644 (PremiumDiscountOfferActionSheetContent)
+// Module 17701 (PremiumDiscountOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,13 +12,13 @@ import PremiumConstants from "PremiumConstants" /* 1392 */;
 import PremiumUtils from "PremiumUtils" /* 4769 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7760 */;
-import FolderIcon from "FolderIcon" /* 8201 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9035 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7761 */;
+import FolderIcon from "FolderIcon" /* 8202 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9036 */;
 import UserIcon from "UserIcon" /* 11380 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 12894 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 16036 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 16040 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 12896 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 16059 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 16063 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -156,7 +156,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const _Symbol2 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       const obj11 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-      const NitroWheelIcon = tmp(9035).NitroWheelIcon;
+      const NitroWheelIcon = tmp(9036).NitroWheelIcon;
       const tmp30 = hasOwnProperty(NitroWheelIcon, obj11);
       cResult[14] = tmp30;
       tmp27 = tmp30;

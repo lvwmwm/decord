@@ -1,10 +1,10 @@
-// Module ID: 15192
-// Function ID: 15193
+// Module ID: 15215
+// Function ID: 15216
 // Name: ScheduleDowntimeScreen
-// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5056, 8561, 2000, 5092, 587, 558, 576, 5088, 1126, 2568, 1200, 5377, 1503, 6682, 12566, 573, 15193, 15194, 5049, 6264, 6895, 6179, 6813, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5056, 8562, 2000, 5092, 587, 558, 576, 5088, 1126, 2568, 1200, 5377, 1503, 6683, 12568, 573, 15216, 15217, 5049, 6265, 6896, 6180, 6814, 5379, 2]
 // Exports: default
 
-// Module 15192 (ScheduleDowntimeScreen)
+// Module 15215 (ScheduleDowntimeScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -15,7 +15,7 @@ import _modDef2568 from "module_2568" /* 2568 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12566 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12568 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -205,7 +205,7 @@ export default function ScheduleDowntimeScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -277,7 +277,7 @@ export default function ScheduleDowntimeScreen() {
             closure_128_17(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp33) {
           closure_2 = tmp33;
           if (0 === c3) {
@@ -441,7 +441,7 @@ export default function ScheduleDowntimeScreen() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -508,7 +508,7 @@ export default function ScheduleDowntimeScreen() {
           closure_129_17(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp32) {
         closure_3 = tmp32;
         if (0 === c4) {
@@ -607,7 +607,7 @@ export default function ScheduleDowntimeScreen() {
       arrow: true,
       onPress: function handleStartTimePress() {
           const intl = intl11.intl;
-          const f146544 = (first1) => {
+          const f146819 = (first1) => {
             closure_1_11(first1);
             obj = closure_2_0(rule[21]);
             const result = (obj.timeToMinutes(first1) + 540) % 1440;
@@ -626,7 +626,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8561, dependencyMap.paths);
+          const tmp3 = asyncRequire(8562, dependencyMap.paths);
           new Date(2025, 0, 1, first1.hours, first1.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeStartTimePicker", obj);
         }
@@ -656,7 +656,7 @@ export default function ScheduleDowntimeScreen() {
             }
           };
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(8561, dependencyMap.paths);
+          const tmp3 = asyncRequire(8562, dependencyMap.paths);
           new Date(2025, 0, 1, first2.hours, first2.minutes, 0, 0);
           openLazy(tmp3, "ScheduleDowntimeEndTimePicker", obj);
         }

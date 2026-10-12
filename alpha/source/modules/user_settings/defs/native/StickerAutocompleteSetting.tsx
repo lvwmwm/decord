@@ -1,13 +1,13 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15767
+// Function ID: 15768
 // Name: StickerAutocompleteSetting
-// Dependencies: [7992, 10663, 1126, 2041, 15737, 2]
+// Dependencies: [7993, 10663, 1126, 2041, 15760, 2]
 
-// Module 15744 (StickerAutocompleteSetting)
+// Module 15767 (StickerAutocompleteSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import UserSettingsText from "UserSettingsText" /* 15737 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import UserSettingsText from "UserSettingsText" /* 15760 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

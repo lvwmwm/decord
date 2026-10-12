@@ -1,12 +1,12 @@
-// Module ID: 16536
-// Function ID: 16537
+// Module ID: 16559
+// Function ID: 16560
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1390, 7887, 21, 1382, 5092, 587, 558, 576, 504, 8289, 8858, 5088, 2]
+// Dependencies: [19, 17, 1390, 7888, 21, 1382, 5092, 587, 558, 576, 504, 8290, 8859, 5088, 2]
 
-// Module 16536 (VoiceGuildTag)
+// Module 16559 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 7887 */;
+import GuildTagConstants from "GuildTagConstants" /* 7888 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
@@ -84,8 +84,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     const _Symbol = Symbol;
     let primaryGuild1;
     const forResult = Symbol.for("react.early_return_sentinel");
-    const getUserPrimaryGuild = userId(8289).getUserPrimaryGuild;
-    userId(8289);
+    const getUserPrimaryGuild = userId(8290).getUserPrimaryGuild;
+    userId(8290);
     if (stateFromStores != null) {
       primaryGuild1 = stateFromStores.primaryGuild;
     }
@@ -96,7 +96,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (null != guildId) {
       tmp20 = null;
       if (null != tag) {
-        const tmpResult4 = userId(8289);
+        const tmpResult4 = userId(8290);
         guildTagBadgeUrl = tmpResult4.getGuildTagBadgeUrl(guildId, tmp19, GuildTagBadgeSize.SIZE_12);
         tmp20 = forResult;
       }
@@ -124,7 +124,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (cResult[8] !== tmp12) {
       const obj2 = { source: obj3, size: GuildTagBadgeSize.SIZE_12 };
       obj3 = { uri: tmp12 };
-      const tmp27 = closure_5(userId(8858).GuildTagBadge, obj2);
+      const tmp27 = closure_5(userId(8859).GuildTagBadge, obj2);
       cResult[8] = tmp12;
       cResult[9] = tmp27;
       tmp24 = tmp27;
@@ -186,8 +186,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId), items1);
   let primaryGuild;
-  const getUserPrimaryGuild = userId(8289).getUserPrimaryGuild;
-  userId(8289);
+  const getUserPrimaryGuild = userId(8290).getUserPrimaryGuild;
+  userId(8290);
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
@@ -197,11 +197,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (null != tag) {
       const obj2 = { style: tmp.gapContainer, children: closure_6(View, obj3) };
       obj3 = { style: tmp.tagContainer, children: items2 };
-      const tmp2Result = userId(8289);
+      const tmp2Result = userId(8290);
       const guildTagBadgeUrl = tmp2Result.getGuildTagBadgeUrl(guildId, tmp8, GuildTagBadgeSize.SIZE_12);
       const obj4 = { source: obj5, size: GuildTagBadgeSize.SIZE_12 };
       obj5 = { uri: guildTagBadgeUrl };
-      items2 = [closure_5(userId(8858).GuildTagBadge, obj4), ];
+      items2 = [closure_5(userId(8859).GuildTagBadge, obj4), ];
       const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
       items2[1] = closure_5(userId(5088).Text, obj6);
       return closure_5(View, obj2);

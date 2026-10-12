@@ -1,12 +1,12 @@
-// Module ID: 6951
-// Function ID: 6952
+// Module ID: 6952
+// Function ID: 6953
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 6784, 2065, 2119, 2087, 1085, 2072, 6945, 6952, 6961, 6930, 6964, 6966, 6924, 6967, 6968, 5026, 6969, 6928, 1388, 7013, 7014, 7031, 2]
+// Dependencies: [5, 6785, 2065, 2119, 2087, 1085, 2072, 6946, 6953, 6962, 6931, 6965, 6967, 6925, 6968, 6969, 5026, 6970, 6929, 1388, 7014, 7015, 7032, 2]
 // Exports: default
 
-// Module 6951 (isAccessibleChannelOrThreadPath)
+// Module 6952 (isAccessibleChannelOrThreadPath)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6784 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 6785 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -47,7 +47,7 @@ let obj = function _isAccessibleChannelOrThreadPath() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15875
+// Function ID: 15876
 // Name: CacheActionsStorageDiagnostics
-// Dependencies: [5, 32, 19, 21, 4809, 5046, 15850, 1126, 5377, 5088, 5379, 2]
+// Dependencies: [5, 32, 19, 21, 4809, 5046, 15873, 1126, 5377, 5088, 5379, 2]
 // Exports: default
 
-// Module 15852 (CacheActionsStorageDiagnostics)
+// Module 15875 (CacheActionsStorageDiagnostics)
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -49,7 +49,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -124,7 +124,7 @@ export default function CacheActionsStorageDiagnostics(onBusyChange) {
             closure_129_0(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp41) {
           ref = tmp41;
           if (0 === c3) {

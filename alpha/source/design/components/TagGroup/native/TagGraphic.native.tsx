@@ -1,13 +1,13 @@
-// Module ID: 14250
-// Function ID: 14251
+// Module ID: 14273
+// Function ID: 14274
 // Name: TagGraphic
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 14247, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 14270, 2]
 
-// Module 14250 (TagGraphic)
+// Module 14273 (TagGraphic)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import TagGroupTypes from "TagGroupTypes" /* 14247 */;
+import TagGroupTypes from "TagGroupTypes" /* 14270 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5092 */;

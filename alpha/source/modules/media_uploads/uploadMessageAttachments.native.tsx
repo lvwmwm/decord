@@ -1,12 +1,12 @@
-// Module ID: 13602
-// Function ID: 13603
+// Module ID: 13625
+// Function ID: 13626
 // Name: uploadMessageAttachments
-// Dependencies: [5, 7886, 9699, 5434, 584, 2]
+// Dependencies: [5, 7887, 9700, 5434, 584, 2]
 // Exports: uploadMessageAttachments
 
-// Module 13602 (uploadMessageAttachments)
+// Module 13625 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 7886 */;
+import UploadStore from "UploadStore" /* 7887 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;
@@ -29,7 +29,7 @@ let obj = function _uploadMessageAttachments() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ let obj = function _uploadMessageAttachments() {
             return obj4;
           } else if (closure_131_5.has(c2)) {
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           } else {
             const self = this;
             const self2 = this;

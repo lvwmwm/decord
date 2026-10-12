@@ -1,10 +1,10 @@
-// Module ID: 6121
-// Function ID: 6122
+// Module ID: 6122
+// Function ID: 6123
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 5073, 4940, 1085, 504, 6122, 2]
+// Dependencies: [5, 32, 19, 5073, 4940, 1085, 504, 6123, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 6121 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 6122 (useCanReapplyToRejectedMemberVerificationApplication)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -48,7 +48,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c4;
@@ -91,7 +91,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
         c4 = 0;
         tmp(false);
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp15) {
         closure_3 = tmp15;
         if (0 === c4) {

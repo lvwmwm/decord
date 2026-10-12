@@ -1,7 +1,7 @@
 // Module ID: 10814
 // Function ID: 10815
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 10815, 9065, 1085, 21, 1126, 10816, 2041, 10817, 5441, 8253, 5930, 2128, 10818, 2]
+// Dependencies: [5, 19, 10815, 9066, 1085, 21, 1126, 10816, 2041, 10817, 5441, 8254, 5930, 2128, 10818, 2]
 // Exports: getActivityLaunchErrorInfo
 
 // Module 10814 (activityLaunchErrorUtils)
@@ -10,8 +10,8 @@ import Constants from "Constants" /* 1085 */;
 import intl12 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5441 */;
-import InteractionUtils from "InteractionUtils" /* 8253 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 9065 */;
+import InteractionUtils from "InteractionUtils" /* 8254 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 9066 */;
 import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 10816 */;
 import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10817 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -43,7 +43,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {

@@ -1,9 +1,9 @@
-// Module ID: 16568
-// Function ID: 16569
+// Module ID: 16591
+// Function ID: 16592
 // Name: LurkerServerPreviewJoinButton
-// Dependencies: [5, 32, 19, 2065, 4751, 1085, 21, 8694, 1209, 6097, 6919, 5379, 1126, 2]
+// Dependencies: [5, 32, 19, 2065, 4751, 1085, 21, 8695, 1209, 6098, 6920, 5379, 1126, 2]
 
-// Module 16568 (LurkerServerPreviewJoinButton)
+// Module 16591 (LurkerServerPreviewJoinButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function LurkerServerPreviewJoinButton(guildId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -130,7 +130,7 @@ const memoResult = react.memo(function LurkerServerPreviewJoinButton(guildId) {
           closure_129_3(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp50) {
         loading = tmp50;
         if (0 === c3) {

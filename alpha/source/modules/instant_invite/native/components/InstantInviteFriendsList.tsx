@@ -1,9 +1,9 @@
-// Module ID: 8761
-// Function ID: 8762
+// Module ID: 8762
+// Function ID: 8763
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5056, 4977, 6184, 5088, 8762, 6664, 6306, 2]
+// Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5056, 4977, 6185, 5088, 8763, 6665, 6307, 2]
 
-// Module 8761 (InstantInviteFriendsList)
+// Module 8762 (InstantInviteFriendsList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,8 +12,8 @@ import native from "native" /* 1200 */;
 import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import Pressables from "Pressables" /* 6184 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 8762 */;
+import Pressables from "Pressables" /* 6185 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 8763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -114,7 +114,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
     }
     if (cResult[9] !== tmp4.goToFriendsLink) {
       let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(6184).PressableOpacity;
+      const PressableOpacity = tmp(6185).PressableOpacity;
       obj3 = { style: goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: tmp15 };
       const tmp19 = React3(PressableOpacity, obj2);
       cResult[9] = tmp4.goToFriendsLink;

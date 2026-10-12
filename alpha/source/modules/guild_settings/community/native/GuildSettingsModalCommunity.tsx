@@ -1,24 +1,24 @@
-// Module ID: 18398
-// Function ID: 18399
+// Module ID: 18456
+// Function ID: 18457
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 2065, 4748, 4750, 4760, 1390, 8638, 16917, 1085, 21, 5092, 587, 4818, 1503, 504, 8637, 1126, 7088, 6200, 5421, 5056, 8553, 2000, 8579, 5377, 6264, 6179, 2]
+// Dependencies: [19, 2065, 4748, 4750, 4760, 1390, 8639, 16941, 1085, 21, 5092, 587, 4818, 1503, 504, 8638, 1126, 7089, 6201, 5421, 5056, 8554, 2000, 8580, 5377, 6265, 6180, 2]
 // Exports: default
 
-// Module 18398 (GuildSettingsModalCommunity)
+// Module 18456 (GuildSettingsModalCommunity)
 import nativeDefault from "native" /* 587 */;
 import intl11 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8637 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 16917 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 16941 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8638 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -265,7 +265,7 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8553, dependencyMap.paths);
+    const tmp2 = asyncRequire(8554, dependencyMap.paths);
     intl = intl11.intl;
     id = undefined;
     if (rulesChannel != null) {
@@ -292,7 +292,7 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8553, dependencyMap.paths);
+    const tmp2 = asyncRequire(8554, dependencyMap.paths);
     intl = intl11.intl;
     id = undefined;
     if (publicUpdatesChannel != null) {
@@ -319,7 +319,7 @@ export default function GuildSettingsModalCommunity(guildId) {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8553, dependencyMap.paths);
+    const tmp2 = asyncRequire(8554, dependencyMap.paths);
     intl = intl11.intl;
     id = undefined;
     if (safetyAlertsChannel != null) {

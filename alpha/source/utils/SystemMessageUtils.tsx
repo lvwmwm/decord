@@ -1,9 +1,9 @@
-// Module ID: 8003
-// Function ID: 8004
+// Module ID: 8004
+// Function ID: 8005
 // Name: SystemMessageUtils
-// Dependencies: [32, 4761, 502, 2065, 2087, 4760, 1390, 1085, 1126, 11, 8004, 8008, 5409, 5421, 8009, 8011, 5627, 5434, 8012, 8013, 7237, 4738, 8014, 2]
+// Dependencies: [32, 4761, 502, 2065, 2087, 4760, 1390, 1085, 1126, 11, 8005, 8009, 5409, 5421, 8010, 8012, 5627, 5434, 8013, 8014, 7238, 4738, 8015, 2]
 
-// Module 8003 (SystemMessageUtils)
+// Module 8004 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl20 from "intl" /* 1126 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4738 */;
@@ -11,13 +11,13 @@ import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
 import useMessageAuthor from "useMessageAuthor" /* 5627 */;
-import MarkupParser from "MarkupParser" /* 8004 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8008 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8009 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8011 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8012 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8013 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8014 */;
+import MarkupParser from "MarkupParser" /* 8005 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8009 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8010 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8012 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8013 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8014 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8015 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MessageRecord from "MessageRecord" /* 4761 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

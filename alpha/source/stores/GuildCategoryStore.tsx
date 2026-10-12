@@ -1,12 +1,12 @@
-// Module ID: 6800
-// Function ID: 6801
+// Module ID: 6801
+// Function ID: 6802
 // Name: GuildCategoryStore
-// Dependencies: [2068, 502, 2065, 4748, 2087, 1085, 6801, 504, 584, 2]
+// Dependencies: [2068, 502, 2065, 4748, 2087, 1085, 6802, 504, 584, 2]
 
-// Module 6800 (GuildCategoryStore)
+// Module 6801 (GuildCategoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6801 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6802 */;
 import FavoriteStore from "FavoriteStore" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

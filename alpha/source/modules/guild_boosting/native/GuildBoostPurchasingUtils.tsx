@@ -1,10 +1,10 @@
-// Module ID: 7119
-// Function ID: 7120
+// Module ID: 7120
+// Function ID: 7121
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 4775, 1085, 1392, 5300, 1126, 1265, 5724, 7120, 7125, 7126, 7127, 7128, 4769, 2]
+// Dependencies: [5, 4775, 1085, 1392, 5300, 1126, 1265, 5724, 7121, 7126, 7127, 7128, 7129, 4769, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7119 (GuildBoostPurchasingUtils)
+// Module 7120 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

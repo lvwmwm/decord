@@ -1,22 +1,22 @@
-// Module ID: 17572
-// Function ID: 17573
+// Module ID: 17629
+// Function ID: 17630
 // Name: SearchNavigatorScreen
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17311, 4981, 17573, 1126, 6204, 6184, 10225, 17313, 17322, 16796, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17368, 4981, 17630, 1126, 6205, 6185, 10226, 17370, 17379, 16820, 2]
 
-// Module 17572 (SearchNavigatorScreen)
+// Module 17629 (SearchNavigatorScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4981 */;
-import Pressables from "Pressables" /* 6184 */;
-import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 6204 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10225 */;
-import NonCollapsableGestureDetector2 from "NonCollapsableGestureDetector" /* 16796 */;
-import useSearchSuggestionsGesture from "useSearchSuggestionsGesture" /* 17311 */;
-import SearchScreenSearchBarDefault from "SearchScreenSearchBar" /* 17313 */;
-import SearchScreenLayoutDefault from "SearchScreenLayout" /* 17322 */;
-import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 17573 */;
+import Pressables from "Pressables" /* 6185 */;
+import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 6205 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10226 */;
+import NonCollapsableGestureDetector2 from "NonCollapsableGestureDetector" /* 16820 */;
+import useSearchSuggestionsGesture from "useSearchSuggestionsGesture" /* 17368 */;
+import SearchScreenSearchBarDefault from "SearchScreenSearchBar" /* 17370 */;
+import SearchScreenLayoutDefault from "SearchScreenLayout" /* 17379 */;
+import useSearchLayoutInsetTopDefault from "useSearchLayoutInsetTop" /* 17630 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchNaviga
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-    const ArrowLargeLeftIcon = tmp(6204).ArrowLargeLeftIcon;
+    const ArrowLargeLeftIcon = tmp(6205).ArrowLargeLeftIcon;
     const tmp12 = hasOwnProperty(ArrowLargeLeftIcon, obj3);
     cResult[1] = tmp12;
     tmp10 = tmp12;
@@ -217,7 +217,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchNaviga
   const searchContext = navigation.route.params.searchContext;
   const tmp = closure_8();
   importDefault = tmp;
-  let obj = navigation(17311);
+  let obj = navigation(17368);
   const searchSuggestionsGesture = obj.useSearchSuggestionsGesture(searchContext);
   ({ gesture, detectorRef, suggestionsContext } = searchSuggestionsGesture);
   const width = useBaseAppContainerDimensionsDefault().width;
@@ -240,11 +240,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchNaviga
   }, items);
   items1 = [closure_5(ThemedGradientDefault, { absolute: true, wide: true, tall: true }), ];
   let obj3 = { value: suggestionsContext, children: closure_5(NonCollapsableGestureDetector, obj4) };
-  const SearchSuggestionsProvider = navigation(17311).SearchSuggestionsProvider;
+  const SearchSuggestionsProvider = navigation(17368).SearchSuggestionsProvider;
   obj4 = { gesture, children: closure_6(View, obj5) };
   obj5 = { ref: detectorRef, style: items2, children: items3 };
   items2 = [tmp.wrapper, { paddingTop: tmp3 }];
-  NonCollapsableGestureDetector = navigation(16796).NonCollapsableGestureDetector;
+  NonCollapsableGestureDetector = navigation(16820).NonCollapsableGestureDetector;
   items3 = [closure_5(SearchScreenSearchBarDefault, { searchContext, backButton: memo }), ];
   const obj6 = { style: tmp.tabs, children: closure_5(SearchScreenLayoutDefault, { searchContext, width }) };
   items3[1] = closure_5(View, obj6);

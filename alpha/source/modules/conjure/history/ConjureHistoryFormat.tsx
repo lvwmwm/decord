@@ -1,10 +1,10 @@
-// Module ID: 17116
-// Function ID: 17117
+// Module ID: 17115
+// Function ID: 17116
 // Name: ConjureHistoryFormat
 // Dependencies: [5448, 1126, 3849, 2]
 // Exports: backupRow, formatAuthoredAt, formatHistoryDateTime, formatHistoryTime, groupHistoryByDay, historyDatabaseTitle, historyEnvironmentLabel, historyPreviewSha, historyRewindCopy, matchingPreviewBackup, parseTimestampMs, versionTitle, visibleBackups
 
-// Module 17116 (ConjureHistoryFormat)
+// Module 17115 (ConjureHistoryFormat)
 import intl8 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import getTimestampString from "getTimestampString" /* 5448 */;
@@ -130,8 +130,8 @@ export const formatHistoryTime = function formatHistoryTime(parseTimestampMsResu
   const date = new Date(parseTimestampMsResult);
   return date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
 };
-export const formatHistoryDateTime = function formatHistoryDateTime(arg0) {
-  const date = new Date(arg0);
+export const formatHistoryDateTime = function formatHistoryDateTime(parseTimestampMsResult) {
+  const date = new Date(parseTimestampMsResult);
   return date.toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
 };
 export { formatHistoryDay };

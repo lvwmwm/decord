@@ -1,9 +1,9 @@
-// Module ID: 14073
-// Function ID: 14074
+// Module ID: 14096
+// Function ID: 14097
 // Name: QRScannerNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 14073 (QRScannerNativeComponent)
+// Module 14096 (QRScannerNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

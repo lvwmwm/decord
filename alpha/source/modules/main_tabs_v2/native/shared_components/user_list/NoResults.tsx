@@ -1,9 +1,9 @@
-// Module ID: 11576
-// Function ID: 11577
+// Module ID: 11578
+// Function ID: 11579
 // Name: NoResults
 // Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 2]
 
-// Module 11576 (NoResults)
+// Module 11578 (NoResults)
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;

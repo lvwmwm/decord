@@ -1,9 +1,9 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10012
+// Function ID: 10013
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 5081, 2119, 2087, 4760, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 4850, 5093, 5396, 504, 1200, 4962, 5088, 6883, 6901, 8261, 8158, 5421, 6156, 2]
+// Dependencies: [19, 17, 5081, 2119, 2087, 4760, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 4850, 5093, 5396, 504, 1200, 4962, 5088, 6884, 6902, 8262, 8159, 5421, 6157, 2]
 
-// Module 10011 (HorizontalAutocomplete)
+// Module 10012 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,10 +12,10 @@ import UserUtilsDefault from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
 import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import RoleIconUtils from "RoleIconUtils" /* 6883 */;
-import RoleIconDefault from "RoleIcon" /* 6901 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8261 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import RoleIconUtils from "RoleIconUtils" /* 6884 */;
+import RoleIconDefault from "RoleIcon" /* 6902 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8262 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -371,7 +371,7 @@ let obj5 = {
       if (cResult[4] !== stateFromStores) {
         let roleIconData = null;
         if (null != stateFromStores) {
-          const tmpResult2 = guildId(6883);
+          const tmpResult2 = guildId(6884);
           roleIconData = tmpResult2.getRoleIconData(stateFromStores, 30);
         }
         cResult[4] = stateFromStores;
@@ -445,7 +445,7 @@ let obj5 = {
       }
       let tmp12 = null;
       if (null != tmp9) {
-        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6901), obj7) };
+        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6902), obj7) };
         obj7 = { name, src: null, unicodeEmoji: null, size: 24 };
         ({ customIconSrc: obj5.src, unicodeEmoji: obj5.unicodeEmoji } = tmp9);
         tmp12 = closure_11(closure_4, obj6);
@@ -595,7 +595,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmpResult4 = channel(8158);
+      const tmpResult4 = channel(8159);
       channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, stateFromStores);
     }
     cResult[4] = channel;
@@ -613,7 +613,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(8158);
+      const tmp2Result = channel(8159);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };

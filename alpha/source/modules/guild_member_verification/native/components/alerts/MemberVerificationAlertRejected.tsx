@@ -1,9 +1,9 @@
-// Module ID: 6119
-// Function ID: 6120
+// Module ID: 6120
+// Function ID: 6121
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 109, 19, 2125, 1390, 4940, 21, 558, 576, 6120, 504, 6121, 6116, 6144, 1126, 5379, 6112, 6207, 2]
+// Dependencies: [5, 109, 19, 2125, 1390, 4940, 21, 558, 576, 6121, 504, 6122, 6117, 6145, 1126, 5379, 6113, 6208, 2]
 
-// Module 6119 (MemberVerificationAlertRejected)
+// Module 6120 (MemberVerificationAlertRejected)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -218,7 +218,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
             const obj2 = tmp(stateFromStores[13]);
             const result = obj2.openMemberVerificationModal(tmp);
             c2 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp19) {
           c2 = 3;
@@ -379,7 +379,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -435,7 +435,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
           const obj2 = guildId(stateFromStores[13]);
           const result = obj2.openMemberVerificationModal(closure_128_0);
           stateFromStores = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp18) {
         stateFromStores = 3;

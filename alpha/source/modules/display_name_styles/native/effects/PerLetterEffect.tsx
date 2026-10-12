@@ -1,10 +1,10 @@
-// Module ID: 10267
-// Function ID: 10268
+// Module ID: 10268
+// Function ID: 10269
 // Name: PerLetterEffect
-// Dependencies: [19, 17, 21, 5092, 10268, 10269, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 10269, 10270, 5088, 2]
 // Exports: default
 
-// Module 10267 (PerLetterEffect)
+// Module 10268 (PerLetterEffect)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -73,6 +73,6 @@ export default function PerLetterEffect(name) {
   if (accessibilityLabel == null) {
     accessibilityLabel = name;
   }
-  items2 = [textStyle, { lineHeight: "r" }];
+  items2 = [textStyle, { lineHeight: "top" }];
   return jsx(tmp4, obj);
 };

@@ -1,29 +1,29 @@
-// Module ID: 13379
-// Function ID: 13380
+// Module ID: 13402
+// Function ID: 13403
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 19, 17, 7263, 12729, 8980, 8983, 8981, 1390, 6087, 7320, 8307, 1085, 1087, 1392, 21, 3, 5092, 587, 558, 576, 13380, 4827, 4969, 8314, 5056, 7262, 6878, 1126, 5088, 5379, 10604, 13098, 6851, 10098, 9398, 504, 13381, 8298, 13365, 13382, 4977, 4809, 10755, 4769, 7126, 5300, 10050, 1383, 10156, 6935, 10155, 8303, 4782, 12702, 7033, 4784, 8300, 13383, 2000, 5046, 7573, 9723, 12727, 2]
+// Dependencies: [5, 19, 17, 7264, 12731, 8981, 8984, 8982, 1390, 6088, 7321, 8308, 1085, 1087, 1392, 21, 3, 5092, 587, 558, 576, 13403, 4827, 4969, 8315, 5056, 7263, 6879, 1126, 5088, 5379, 10605, 13103, 6852, 10099, 9399, 504, 13404, 8299, 13388, 13405, 4977, 4809, 10755, 4769, 7127, 5300, 10051, 1383, 10157, 6936, 10156, 8304, 4782, 12704, 7034, 4784, 8301, 13406, 2000, 5046, 7574, 9724, 12729, 2]
 // Exports: default
 
-// Module 13379 (UserProfileWishlistGrid)
+// Module 13402 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6878 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7262 */;
-import WishlistRecord from "WishlistRecord" /* 8981 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 8983 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
+import WishlistRecord from "WishlistRecord" /* 8982 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 8984 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7263 */;
-import SentGiftsStore from "SentGiftsStore" /* 12729 */;
-import WishlistStore from "WishlistStore" /* 8980 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
+import SentGiftsStore from "SentGiftsStore" /* 12731 */;
+import WishlistStore from "WishlistStore" /* 8981 */;
 import UserStore from "UserStore" /* 1390 */;
-import SKUStore from "SKUStore" /* 6087 */;
-import UserProfileStore from "UserProfileStore" /* 7320 */;
-import Constants_mod from "Constants" /* 8307 */;
+import SKUStore from "SKUStore" /* 6088 */;
+import UserProfileStore from "UserProfileStore" /* 7321 */;
+import Constants_mod from "Constants" /* 8308 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -88,7 +88,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEmpt
   let trackUserProfileWishlistAction;
   let obj = trackUserProfileWishlistAction(576);
   const cResult = obj.c(17);
-  let obj2 = trackUserProfileWishlistAction(13380);
+  let obj2 = trackUserProfileWishlistAction(13403);
   const isMobileWishlistSuggestionsEnabled = obj2.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
   const tmp5 = closure_26(isMobileWishlistSuggestionsEnabled);
   let obj3 = trackUserProfileWishlistAction(4827);
@@ -98,7 +98,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEmpt
   if (obj4.isThemeDark(theme)) {
     str = "text-overlay-light";
   }
-  const tmpResult = trackUserProfileWishlistAction(8314);
+  const tmpResult = trackUserProfileWishlistAction(8315);
   trackUserProfileWishlistAction = tmpResult.useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
   if (cResult[0] !== trackUserProfileWishlistAction) {
     const fn = function e() {
@@ -189,7 +189,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEmpt
   let tmp18 = !isMobileWishlistSuggestionsEnabled;
   if (tmp18) {
     const obj8 = { style: tmp5.emptyStateCta, children: closure_22(Button, obj9) };
-    obj9 = { size: "md", variant: "secondary", icon: closure_22(trackUserProfileWishlistAction(10604).PlusMediumIcon, { size: "xs" }), text: intl3.string(trackUserProfileWishlistAction(1126).t.SDUwM0), onPress: tmp6 };
+    obj9 = { size: "md", variant: "secondary", icon: closure_22(trackUserProfileWishlistAction(10605).PlusMediumIcon, { size: "xs" }), text: intl3.string(trackUserProfileWishlistAction(1126).t.SDUwM0), onPress: tmp6 };
     Button = tmp(5379).Button;
     intl3 = tmp(1126).intl;
     tmp18 = closure_22(View, obj8);
@@ -207,7 +207,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEmpt
   let items1;
   let obj8;
   let trackUserProfileWishlistAction;
-  let obj = trackUserProfileWishlistAction(13380);
+  let obj = trackUserProfileWishlistAction(13403);
   const isMobileWishlistSuggestionsEnabled = obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
   let tmp4 = closure_26(isMobileWishlistSuggestionsEnabled);
   let obj2 = trackUserProfileWishlistAction(4827);
@@ -217,7 +217,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEmpt
   if (obj3.isThemeDark(theme)) {
     str = "text-overlay-light";
   }
-  const tmpResult = trackUserProfileWishlistAction(8314);
+  const tmpResult = trackUserProfileWishlistAction(8315);
   trackUserProfileWishlistAction = tmpResult.useUserProfileAnalyticsContext().trackUserProfileWishlistAction;
   let items = [trackUserProfileWishlistAction];
   const obj4 = { style: tmp4.emptyState, children: items1 };
@@ -248,7 +248,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEmpt
   const tmp6 = closure_23;
   if (tmp8Result) {
     const obj7 = { style: tmp4.emptyStateCta, children: closure_22(Button, obj8) };
-    obj8 = { size: "md", variant: "secondary", icon: closure_22(trackUserProfileWishlistAction(10604).PlusMediumIcon, { size: "xs" }), text: intl3.string(trackUserProfileWishlistAction(1126).t.SDUwM0), onPress: callback };
+    obj8 = { size: "md", variant: "secondary", icon: closure_22(trackUserProfileWishlistAction(10605).PlusMediumIcon, { size: "xs" }), text: intl3.string(trackUserProfileWishlistAction(1126).t.SDUwM0), onPress: callback };
     Button = tmp(5379).Button;
     intl3 = tmp(1126).intl;
     tmp8Result = tmp8(tmp7, obj7);
@@ -466,7 +466,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -734,7 +734,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
             openGiftModal(obj39);
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp140) {
           closure_4 = tmp140;
           if (0 === v0) {
@@ -774,7 +774,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     tmp(obj);
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { wishlistId: tmp2, analyticsContext: context, analyticsLocations };
-    obj2.openLazy(asyncRequire(13383, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(13406, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
   }, items14);
   const callback1 = obj12.useCallback(() => {
     let items;

@@ -1,9 +1,9 @@
-// Module ID: 6826
-// Function ID: 6827
+// Module ID: 6827
+// Function ID: 6828
 // Name: Form/FormCheckbox
 // Dependencies: [19, 21, 5092, 558, 576, 1200, 2]
 
-// Module 6826 (Form/FormCheckbox)
+// Module 6827 (Form/FormCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

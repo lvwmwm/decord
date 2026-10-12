@@ -1,13 +1,13 @@
-// Module ID: 7541
-// Function ID: 7542
+// Module ID: 7542
+// Function ID: 7543
 // Name: ManualReviewFallbackGate
-// Dependencies: [5, 7542, 7511, 7543, 584, 7544, 2]
+// Dependencies: [5, 7543, 7512, 7544, 584, 7545, 2]
 // Exports: shouldShowManualReviewFallback
 
-// Module 7541 (ManualReviewFallbackGate)
-import SafetyHubUtils from "SafetyHubUtils" /* 7511 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7542 */;
-import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 7543 */;
+// Module 7542 (ManualReviewFallbackGate)
+import SafetyHubUtils from "SafetyHubUtils" /* 7512 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7543 */;
+import AgeVerificationMethodsV2 from "AgeVerificationMethodsV2" /* 7544 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ export const shouldShowManualReviewFallback = function shouldShowManualReviewFal
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c2;

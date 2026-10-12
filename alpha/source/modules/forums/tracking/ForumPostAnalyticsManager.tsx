@@ -1,15 +1,15 @@
-// Module ID: 7910
-// Function ID: 7911
+// Module ID: 7911
+// Function ID: 7912
 // Name: ForumPostAnalyticsManager
-// Dependencies: [6060, 502, 2065, 6807, 11, 7006, 2]
+// Dependencies: [6060, 502, 2065, 6808, 11, 7007, 2]
 
-// Module 7910 (ForumPostAnalyticsManager)
+// Module 7911 (ForumPostAnalyticsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ForumUtils from "ForumUtils" /* 7006 */;
+import ForumUtils from "ForumUtils" /* 7007 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6060 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6807 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 class ForumPostAnalyticsManager extends AutomaticLifecycleManager {

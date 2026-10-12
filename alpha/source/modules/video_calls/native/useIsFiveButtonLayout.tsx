@@ -1,7 +1,7 @@
 // Module ID: 10844
 // Function ID: 10845
 // Name: useIsFiveButtonLayout
-// Dependencies: [2065, 2087, 558, 576, 504, 10357, 10845, 10847, 6972, 2]
+// Dependencies: [2065, 2087, 558, 576, 504, 10358, 10845, 10847, 6973, 2]
 
 // Module 10844 (useIsFiveButtonLayout)
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     id1 = stateFromStores.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
-  const tmp23 = guild_id(6972)();
+  const tmp23 = guild_id(6973)();
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp10Result;
   }
@@ -178,7 +178,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     id1 = stateFromStores.id;
   }
   const tmp5ResultResult = tmp5Result(id1);
-  const tmp14 = guild_id(6972)();
+  const tmp14 = guild_id(6973)();
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp6Result;
   }

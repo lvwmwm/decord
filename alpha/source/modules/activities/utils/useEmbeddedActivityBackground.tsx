@@ -1,7 +1,7 @@
 // Module ID: 10962
 // Function ID: 10963
 // Name: useEmbeddedActivityBackground
-// Dependencies: [32, 19, 558, 576, 8274, 2]
+// Dependencies: [32, 19, 558, 576, 8275, 2]
 
 // Module 10962 (useEmbeddedActivityBackground)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -84,7 +84,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F143146 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F143438 */ });
               }
               return;
             }
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F143146 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F143438 */ });
               }
               return;
             }
@@ -121,7 +121,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
                 tmp3 = closure_1;
                 obj = applicationId(closure_1[4]);
                 assets = obj.getAssets(tmp);
-                nextPromise = assets.then(() => { /* body not rendered: F143146 */ });
+                nextPromise = assets.then(() => { /* body not rendered: F143438 */ });
               }
               return;
             }

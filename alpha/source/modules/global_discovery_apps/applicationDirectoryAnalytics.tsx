@@ -1,10 +1,10 @@
-// Module ID: 7380
-// Function ID: 7381
+// Module ID: 7381
+// Function ID: 7382
 // Name: applicationDirectoryAnalytics
 // Dependencies: [2116, 4939, 1085, 1265, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 7380 (applicationDirectoryAnalytics)
+// Module 7381 (applicationDirectoryAnalytics)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;

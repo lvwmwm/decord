@@ -1,9 +1,9 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15052
+// Function ID: 15053
 // Name: AccountSmsBackupSetting
-// Dependencies: [1390, 7992, 1085, 6731, 558, 576, 504, 15024, 1126, 15019, 15026, 5300, 5934, 6730, 2000, 6733, 12, 10663, 14937, 2]
+// Dependencies: [1390, 7993, 1085, 6732, 558, 576, 504, 15047, 1126, 15042, 15049, 5300, 5934, 6731, 2000, 6734, 12, 10663, 14960, 2]
 
-// Module 15029 (AccountSmsBackupSetting)
+// Module 15052 (AccountSmsBackupSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,13 +11,13 @@ import intl4 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import PhoneConstants from "PhoneConstants" /* 6731 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 6733 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14937 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 15019 */;
-import account_MFAUtils from "account/MFAUtils" /* 15024 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15026 */;
+import PhoneConstants from "PhoneConstants" /* 6732 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 6734 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14960 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15042 */;
+import account_MFAUtils from "account/MFAUtils" /* 15047 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15049 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import module_12 from "module_12" /* 12 */;
@@ -166,7 +166,7 @@ let closure_7 = module_12.debounce(function toggleSMS(user) {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     let obj = { reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
     ModalActionCreatorsDefault;
-    const tmp6 = asyncRequire(6730, dependencyMap.paths);
+    const tmp6 = asyncRequire(6731, dependencyMap.paths);
     pushLazy(tmp6, obj, closure_5);
   }
 }, 200);

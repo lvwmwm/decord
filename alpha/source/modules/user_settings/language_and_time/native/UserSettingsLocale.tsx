@@ -1,17 +1,17 @@
-// Module ID: 15697
-// Function ID: 15698
+// Module ID: 15720
+// Function ID: 15721
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2130, 2129, 21, 5092, 587, 5260, 558, 576, 504, 1126, 6261, 6156, 15698, 6813, 6262, 2]
+// Dependencies: [5, 19, 17, 2130, 2129, 21, 5092, 587, 5260, 558, 576, 504, 1126, 6262, 6157, 15721, 6814, 6263, 2]
 
-// Module 15697 (UserSettingsLocale)
+// Module 15720 (UserSettingsLocale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import TableRadioRow2 from "TableRadioRow" /* 6261 */;
-import flags from "flags" /* 15698 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import TableRadioRow2 from "TableRadioRow" /* 6262 */;
+import flags from "flags" /* 15721 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
@@ -39,7 +39,7 @@ let obj = function _handleLanguageChange() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -71,7 +71,7 @@ let obj = function _handleLanguageChange() {
           obj = closure_130_1(closure_130_2[8]);
           obj.updateLocale(closure_0);
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp13) {
         c4 = 3;
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[9] = tmp16;
     tmp13 = tmp16;
   }
-  const SafeAreaPaddingView = tmp(6813).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(6814).SafeAreaPaddingView;
   const tmp12 = <SafeAreaPaddingView bottom>{null}</SafeAreaPaddingView>;
   cResult[4] = stateFromStores;
   cResult[5] = tmp9;

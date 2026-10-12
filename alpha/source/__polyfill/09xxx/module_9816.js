@@ -1,181 +1,210 @@
 // Module ID: 9816
 // Function ID: 9817
-// Dependencies: [41, 42, 9817, 9827, 9828, 9829, 9830, 9831, 9832, 9834, 9835, 9836, 9839, 9842, 9844, 9845, 9847, 9848, 9849, 9850, 9851, 9852, 9853, 9854, 9855]
+// Dependencies: [41, 42, 9817, 9823]
 
 // Module 9816
 import _mod9817 from "module_9817" /* 9817 */;
-import _mod9827 from "module_9827" /* 9827 */;
-import _mod9828 from "module_9828" /* 9828 */;
-import _mod9829 from "module_9829" /* 9829 */;
-import _mod9830 from "module_9830" /* 9830 */;
-import _mod9831 from "module_9831" /* 9831 */;
-import _mod9832 from "module_9832" /* 9832 */;
-import _mod9834 from "module_9834" /* 9834 */;
-import _mod9835 from "module_9835" /* 9835 */;
-import _mod9836 from "module_9836" /* 9836 */;
-import _mod9839 from "module_9839" /* 9839 */;
-import _mod9842 from "module_9842" /* 9842 */;
-import _mod9844 from "module_9844" /* 9844 */;
-import _mod9845 from "module_9845" /* 9845 */;
-import _mod9847 from "module_9847" /* 9847 */;
-import _mod9848 from "module_9848" /* 9848 */;
-import _mod9849 from "module_9849" /* 9849 */;
-import _mod9850 from "module_9850" /* 9850 */;
-import _mod9851 from "module_9851" /* 9851 */;
-import _mod9852 from "module_9852" /* 9852 */;
-import _mod9853 from "module_9853" /* 9853 */;
-import _mod9854 from "module_9854" /* 9854 */;
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 9855 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 9823 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
+let tmp2 = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+const module_9817 = tmp2(_mod9817);
+class Chrono {
+  constructor(configuration) {
+    const self = this;
+    let casualConfiguration = configuration;
+    _classCallCheck(this, Chrono);
+    this.defaultConfig = new module_9817.default();
+    new module_9817.default();
+    if (!configuration) {
+      const defaultConfig = self.defaultConfig;
+      casualConfiguration = defaultConfig.createCasualConfiguration();
     }
-    return tmp2;
-  };
-}
-const module_9817 = fn(_mod9817);
-const module_9827 = fn(_mod9827);
-const module_9828 = fn(_mod9828);
-const module_9829 = fn(_mod9829);
-const module_9830 = fn(_mod9830);
-const module_9831 = fn(_mod9831);
-const module_9832 = fn(_mod9832);
-const module_9834 = fn(_mod9834);
-const module_9835 = fn(_mod9835);
-const module_9836 = fn(_mod9836);
-const module_9839 = fn(_mod9839);
-const module_9842 = fn(_mod9842);
-const module_9844 = fn(_mod9844);
-const module_9845 = fn(_mod9845);
-const module_9847 = fn(_mod9847);
-const module_9848 = fn(_mod9848);
-const module_9849 = fn(_mod9849);
-const module_9850 = fn(_mod9850);
-const module_9851 = fn(_mod9851);
-const module_9852 = fn(_mod9852);
-const module_9853 = fn(_mod9853);
-const module_9854 = fn(_mod9854);
-class ENDefaultConfiguration {
-  constructor() {
-    _classCallCheck(this, ENDefaultConfiguration);
+    const items = [...casualConfiguration.parsers];
+    self.parsers = items;
+    self.refiners = [...casualConfiguration.refiners];
   }
 }
 const entry = {
-  key: "createCasualConfiguration",
-  value: function createCasualConfiguration() {
-    let flag = arg0;
-    if (arg0 === undefined) {
-      flag = false;
-    }
-    const configuration = this.createConfiguration(false, flag);
-    const parsers = configuration.parsers;
-    const push = parsers.push;
-    const _default = new module_9842.default();
-    push(_default);
-    const parsers1 = configuration.parsers;
-    const push2 = parsers1.push;
-    const _default1 = new module_9844.default();
-    push2(_default1);
-    const parsers2 = configuration.parsers;
-    const push3 = parsers2.push;
-    const _default2 = new module_9829.default();
-    push3(_default2);
-    const parsers3 = configuration.parsers;
-    const push4 = parsers3.push;
-    const _default3 = new module_9847.default();
-    push4(_default3);
-    const parsers4 = configuration.parsers;
-    const push5 = parsers4.push;
-    const _default4 = new module_9849.default();
-    push5(_default4);
-    const refiners = configuration.refiners;
-    const push6 = refiners.push;
-    const _default5 = new module_9854.default();
-    push6(_default5);
-    return configuration;
+  key: "clone",
+  value: function clone() {
+    let items;
+    const obj = { parsers: items, refiners: [...this.refiners] };
+    items = [...this.parsers];
+    const obj2 = Object.create(Chrono.prototype);
+    _classCallCheck(obj2, Chrono);
+    obj2.defaultConfig = new module_9817.default();
+    obj2.parsers = [...obj.parsers];
+    obj2.refiners = [...obj.refiners];
+    new module_9817.default();
+    return obj2;
   }
 };
 let items = [
   entry,
   {
-    key: "createConfiguration",
-    value: function createConfiguration(flag) {
-      let items;
-      let items1;
-      if (flag === undefined) {
-        flag = true;
+    key: "parseDate",
+    value: function parseDate(arg0, arg1, arg2) {
+      const parsed = this.parse(arg0, arg1, arg2);
+      let dateResult = null;
+      if (parsed.length > 0) {
+        const start = parsed[0].start;
+        dateResult = start.date();
       }
-      let flag2 = arg1;
-      if (arg1 === undefined) {
-        flag2 = false;
-      }
-      const obj = { parsers: items, refiners: items1 };
-      const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-      items = [new module_9848.default(flag2), , , , , , , , ];
-      new module_9848.default(flag2);
-      items[1] = new module_9817.default(flag);
-      new module_9817.default(flag);
-      items[2] = new module_9827.default();
-      new module_9827.default();
-      items[3] = new module_9828.default(flag2);
-      new module_9828.default(flag2);
-      items[4] = new module_9845.default();
-      new module_9845.default();
-      items[5] = new module_9831.default();
-      new module_9831.default();
-      items[6] = new module_9832.default(flag);
-      new module_9832.default(flag);
-      items[7] = new module_9834.default(flag);
-      new module_9834.default(flag);
-      items[8] = new module_9835.default(flag);
-      new module_9835.default(flag);
-      items1 = [new module_9839.default()];
-      new module_9839.default();
-      const result = includeCommonConfiguration(obj, flag);
-      const parsers = result.parsers;
-      const unshift = parsers.unshift;
-      const _default10 = new module_9830.default(flag);
-      unshift(_default10);
-      const refiners = result.refiners;
-      const unshift2 = refiners.unshift;
-      const _default11 = new module_9851.default();
-      unshift2(_default11);
-      const refiners1 = result.refiners;
-      const unshift3 = refiners1.unshift;
-      const _default12 = new module_9850.default();
-      unshift3(_default12);
-      const refiners2 = result.refiners;
-      const unshift4 = refiners2.unshift;
-      const _default13 = new module_9852.default();
-      unshift4(_default13);
-      const refiners3 = result.refiners;
-      const push = refiners3.push;
-      const _default14 = new module_9839.default();
-      push(_default14);
-      const refiners4 = result.refiners;
-      const push2 = refiners4.push;
-      const _default15 = new module_9853.default();
-      push2(_default15);
-      const refiners5 = result.refiners;
-      const push3 = refiners5.push;
-      const _default16 = new module_9836.default();
-      push3(_default16);
-      return result;
+      return dateResult;
+    }
+  },
+  {
+    key: "parse",
+    value: function parse(arg0, arg1, arg2) {
+      let closure_0 = new closure_1_4(arg0, arg1, arg2);
+      let closure_1 = [];
+      const parsers = this.parsers;
+      new closure_1_4(arg0, arg1, arg2);
+      const item = parsers.forEach((item) => {
+        closure_1 = closure_1.concat(Chrono.executeParser(closure_0, item));
+      });
+      const sorted = closure_1.sort((index, index2) => index.index - index2.index);
+      const refiners = this.refiners;
+      const item1 = refiners.forEach((refine) => {
+        closure_1 = refine.refine(closure_0, closure_1);
+      });
+      return closure_1;
     }
   }
 ];
+const entry1 = {
+  key: "executeParser",
+  value: function executeParser(createParsingResult, pattern) {
+    let match1;
+    let text;
+    let text2;
+    const constructor = pattern;
+    const items = [];
+    const patternResult = pattern.pattern(createParsingResult);
+    ({ text, text: text2 } = createParsingResult);
+    let match = patternResult.exec(text2);
+    if (match) {
+      do {
+        let substr1;
+        match.index = match.index + text.length - text2.length;
+        let extractResult = pattern.extract(createParsingResult, match);
+        if (extractResult) {
+          let tmp6 = require;
+          let parsingResult1 = extractResult;
+          if (!(extractResult instanceof ReferenceWithTimezone2.ParsingResult)) {
+            createParsingResult = createParsingResult.createParsingResult;
+            let index = match.index;
+            let first = match[0];
+            if (extractResult instanceof tmp6(9823).ParsingComponents) {
+              let parsingResult = createParsingResult(index, first);
+              parsingResult.start = extractResult;
+              parsingResult1 = parsingResult;
+            } else {
+              parsingResult1 = createParsingResult(index, first, extractResult);
+            }
+          }
+          let index2 = parsingResult1.index;
+          let text1 = parsingResult1.text;
+          let debugResult = createParsingResult.debug(() => console.log("" + constructor.constructor.name + " extracted (at index=" + index2 + ") '" + text1 + "'"));
+          let arr = items.push(parsingResult1);
+          let substr = text.substring(index2 + text1.length);
+          match1 = patternResult.exec(substr);
+          substr1 = substr;
+        } else {
+          substr1 = text.substring(match.index + 1);
+          match1 = patternResult.exec(substr1);
+        }
+        match = match1;
+        text2 = substr1;
+      } while (match1);
+    }
+    return items;
+  }
+};
+const items1 = [entry1];
+class ParsingContext {
+  constructor(text, instant, arg2) {
+    const self = this;
+    let obj = arg2;
+    _classCallCheck(this, ParsingContext);
+    this.text = text;
+    if (null == arg2) {
+      obj = {};
+    }
+    self.option = obj;
+    const ReferenceWithTimezone = ReferenceWithTimezone2.ReferenceWithTimezone;
+    self.reference = ReferenceWithTimezone.fromInput(instant, self.option.timezones);
+    self.refDate = self.reference.instant;
+  }
+}
+const entry2 = {
+  key: "createParsingComponents",
+  value: function createParsingComponents(date) {
+    let parsingComponents = date;
+    if (!(date instanceof ReferenceWithTimezone2.ParsingComponents)) {
+      const self = this;
+      const self2 = this;
+      const self3 = this;
+      parsingComponents = new ReferenceWithTimezone2.ParsingComponents(this.reference, date);
+    }
+    return parsingComponents;
+  }
+};
+const items2 = [
+  entry2,
+  {
+    key: "createParsingResult",
+    value: function createParsingResult(sum, length2, extractResult, date) {
+      const self = this;
+      let substr = length2;
+      if (typeof length2 !== "string") {
+        const str = self.text;
+        substr = str.substring(sum, length2);
+      }
+      let parsingComponents = null;
+      if (extractResult) {
+        parsingComponents = self.createParsingComponents(extractResult);
+      }
+      let parsingComponents1 = null;
+      if (date) {
+        parsingComponents1 = self.createParsingComponents(date);
+      }
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(self.reference, sum, substr, parsingComponents, parsingComponents1);
+      return parsingResult;
+    }
+  },
+  {
+    key: "debug",
+    value: function debug(arg0) {
+      const self = this;
+      if (this.option.debug) {
+        const _Function = Function;
+        const option = self.option;
+        const debug = option.debug;
+        if (self.option.debug instanceof Function) {
+          debug(arg0);
+        } else {
+          debug.debug(arg0);
+        }
+      }
+    }
+  }
+];
+const _moduleResult = _createClass(ParsingContext, items2);
+const Chrono_export = _createClass(Chrono, items, items1);
+const ParsingContext_export = _createClass(ParsingContext, items2);
 
-export default _createClass(ENDefaultConfiguration, items);
+export { Chrono_export as Chrono };
+export { ParsingContext_export as ParsingContext };

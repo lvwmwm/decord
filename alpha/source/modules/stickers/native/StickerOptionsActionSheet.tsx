@@ -1,13 +1,13 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9780
+// Function ID: 9781
 // Name: StickerOptionsActionSheet
-// Dependencies: [19, 21, 558, 576, 6885, 4808, 5056, 5038, 1126, 6898, 6264, 6179, 2]
+// Dependencies: [19, 21, 558, 576, 6886, 4808, 5056, 5038, 1126, 6899, 6265, 6180, 2]
 
-// Module 9779 (StickerOptionsActionSheet)
+// Module 9780 (StickerOptionsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 4808 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ClipboardUtils from "ClipboardUtils" /* 6885 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,9 +42,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerOpt
     cResult[3] = stringResult;
   }
   if (cResult[4] !== tmp4) {
-    const ActionSheet = tmp(6898).ActionSheet;
+    const ActionSheet = tmp(6899).ActionSheet;
     let obj3 = { hasIcons: true, children: null };
-    const TableRowGroup = tmp(6264).TableRowGroup;
+    const TableRowGroup = tmp(6265).TableRowGroup;
     const tmp12 = <ActionSheet>{null}</ActionSheet>;
     cResult[4] = tmp4;
     cResult[5] = tmp12;
@@ -65,11 +65,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerOpt
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items);
-  const ActionSheet = stickerUrl(6898).ActionSheet;
+  const ActionSheet = stickerUrl(6899).ActionSheet;
   let obj2 = { hasIcons: true, children: null };
-  const TableRowGroup = stickerUrl(6264).TableRowGroup;
+  const TableRowGroup = stickerUrl(6265).TableRowGroup;
   let obj3 = { icon: null, label: intl.string(stickerUrl(1126).t.B1ubHx), onPress: callback };
-  const TableRow = stickerUrl(6179).TableRow;
+  const TableRow = stickerUrl(6180).TableRow;
   intl = stickerUrl(1126).intl;
   return <ActionSheet>{null}</ActionSheet>;
 });

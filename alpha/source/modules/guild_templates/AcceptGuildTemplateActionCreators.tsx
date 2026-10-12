@@ -1,12 +1,12 @@
 // Module ID: 11349
 // Function ID: 11350
 // Name: AcceptGuildTemplateActionCreators
-// Dependencies: [5757, 2087, 1085, 584, 1295, 7052, 2]
+// Dependencies: [5757, 2087, 1085, 584, 1295, 7053, 2]
 
 // Module 11349 (AcceptGuildTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import transitionToGuild from "transitionToGuild" /* 7052 */;
+import transitionToGuild from "transitionToGuild" /* 7053 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 7714
-// Function ID: 7715
+// Module ID: 7715
+// Function ID: 7716
 // Name: ManualReviewPendingAlertModal
 // Dependencies: [19, 21, 558, 576, 1126, 3184, 5305, 5305, 2]
 
-// Module 7714 (ManualReviewPendingAlertModal)
+// Module 7715 (ManualReviewPendingAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;

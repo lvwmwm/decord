@@ -1,9 +1,9 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11454
+// Function ID: 11455
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 558, 576, 1126, 7088, 7728, 6813, 7239, 1631, 5088, 8579, 1200, 5379, 5107, 11453, 7238, 4808, 6687, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 558, 576, 1126, 7089, 7729, 6814, 7240, 1631, 5088, 8580, 1200, 5379, 5107, 11455, 7239, 4808, 6688, 2]
 
-// Module 11452 (AutomodSubmitFeedbackModal)
+// Module 11454 (AutomodSubmitFeedbackModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,12 +14,12 @@ import ToastUtils from "ToastUtils" /* 4808 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6813 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7088 */;
-import AutomodAlert from "AutomodAlert" /* 7238 */;
-import AutomodFeedback from "AutomodFeedback" /* 7239 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7728 */;
-import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 11453 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
+import AutomodAlert from "AutomodAlert" /* 7239 */;
+import AutomodFeedback from "AutomodFeedback" /* 7240 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
+import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 11455 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -78,7 +78,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Navbar
   }
   if (cResult[1] !== onClose) {
     const obj2 = { accessibilityLabel: first, onPress: onClose, source: AssetRegistryDefault };
-    const HeaderActionButton = tmp(7088).HeaderActionButton;
+    const HeaderActionButton = tmp(7089).HeaderActionButton;
     const tmp10 = metroImportDefault(HeaderActionButton, obj2);
     cResult[1] = onClose;
     cResult[2] = tmp10;

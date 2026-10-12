@@ -1,9 +1,9 @@
-// Module ID: 9001
-// Function ID: 9002
+// Module ID: 9002
+// Function ID: 9003
 // Name: CollectiblesPreviewConstants
 // Dependencies: [2]
 
-// Module 9001 (CollectiblesPreviewConstants)
+// Module 9002 (CollectiblesPreviewConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesPreviewConstants.tsx");

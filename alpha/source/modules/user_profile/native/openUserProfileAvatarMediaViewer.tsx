@@ -1,12 +1,12 @@
-// Module ID: 8385
-// Function ID: 8386
+// Module ID: 8386
+// Function ID: 8387
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [5081, 1085, 8386, 2]
+// Dependencies: [5081, 1085, 8387, 2]
 // Exports: default
 
-// Module 8385 (openUserProfileAvatarMediaViewer)
+// Module 8386 (openUserProfileAvatarMediaViewer)
 import Constants from "Constants" /* 1085 */;
-import openMediaModal from "openMediaModal" /* 8386 */;
+import openMediaModal from "openMediaModal" /* 8387 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import size_mod from "module_2" /* 2 */;
 

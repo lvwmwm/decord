@@ -1,9 +1,9 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15264
+// Function ID: 15265
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 4775, 1392, 7151, 21, 5092, 587, 558, 576, 4830, 4969, 5031, 5088, 1273, 10094, 8971, 1200, 15242, 7169, 8089, 4769, 4938, 2049, 504, 7099, 8085, 8084, 13688, 1126, 1382, 5391, 1105, 2]
+// Dependencies: [32, 19, 17, 4775, 1392, 7152, 21, 5092, 587, 558, 576, 4830, 4969, 5031, 5088, 1273, 10095, 8972, 1200, 15265, 7170, 8090, 4769, 4938, 2049, 504, 7100, 8086, 8085, 13711, 1126, 1382, 5391, 1105, 2]
 
-// Module 15241 (PremiumTabBadge)
+// Module 15264 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -21,15 +21,15 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 493
 import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7099 */;
-import ColorConstants from "ColorConstants" /* 7151 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7169 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 8084 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8085 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8089 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8971 */;
-import MarketingComponentType from "MarketingComponentType" /* 10094 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13688 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
+import ColorConstants from "ColorConstants" /* 7152 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7170 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 8085 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8086 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8090 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
+import MarketingComponentType from "MarketingComponentType" /* 10095 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 13711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 4775 */;
@@ -51,7 +51,7 @@ let obj9;
 let tmp;
 let tmp5;
 const Text_Text = tmp(5088);
-const AssetRegistryDefault = tmp5(15242);
+const AssetRegistryDefault = tmp5(15265);
 const View = react_native.View;
 let closure_6 = PremiumConstants.PREMIUM_TIER_2_REFERRAL_TRIAL_ID;
 const Gradients = ColorConstants.Gradients;
@@ -196,7 +196,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function OfferB
     if (acked) {
       let tmp16;
       if (cResult[5] !== tmp5.icon) {
-        const obj4 = { source: tmp10(15242), size: native.Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
+        const obj4 = { source: tmp10(15265), size: native.Icon.Sizes.EXTRA_SMALL, color: tmp5.icon.color, style: tmp5.icon };
         const Icon = tmp(1200).Icon;
         const tmp18 = metroImportAll(Icon, obj4);
         cResult[5] = tmp5.icon;
@@ -368,7 +368,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumTabBadge(
       const tmpResult12 = ReferralProgramUtils;
       const isReferralProgramEntrypointBadgeAcknowledged = tmpResult12.useIsReferralProgramEntrypointBadgeAcknowledged();
       const tmpResult13 = usePromotionMarketingComponent;
-      const promotionMarketingComponent = tmpResult13.usePromotionMarketingComponent(tmp(10094).MarketingComponentType.PREMIUM_TAB);
+      const promotionMarketingComponent = tmpResult13.usePromotionMarketingComponent(tmp(10095).MarketingComponentType.PREMIUM_TAB);
       let prop = null;
       const useSelectedSnowflakeBoundDismissibleContent = useSelectedDismissibleContent.useSelectedSnowflakeBoundDismissibleContent;
       const tmpResult14 = useSelectedDismissibleContent;
@@ -832,7 +832,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumTabBadge(
       const tmpResult12 = ReferralProgramUtils;
       const isReferralProgramEntrypointBadgeAcknowledged = tmpResult12.useIsReferralProgramEntrypointBadgeAcknowledged();
       const tmpResult13 = usePromotionMarketingComponent;
-      const promotionMarketingComponent = tmpResult13.usePromotionMarketingComponent(tmp(10094).MarketingComponentType.PREMIUM_TAB);
+      const promotionMarketingComponent = tmpResult13.usePromotionMarketingComponent(tmp(10095).MarketingComponentType.PREMIUM_TAB);
       let prop = null;
       const useSelectedSnowflakeBoundDismissibleContent = useSelectedDismissibleContent.useSelectedSnowflakeBoundDismissibleContent;
       const tmpResult14 = useSelectedDismissibleContent;

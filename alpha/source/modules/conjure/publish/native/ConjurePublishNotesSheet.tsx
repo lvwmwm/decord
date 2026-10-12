@@ -1,19 +1,19 @@
-// Module ID: 17036
-// Function ID: 17037
+// Module ID: 17116
+// Function ID: 17117
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4748, 2087, 4760, 1390, 5085, 21, 5092, 587, 6664, 504, 6945, 9259, 17037, 5056, 12179, 1126, 3849, 7369, 7178, 6898, 6838, 5088, 6773, 5421, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 4748, 2087, 4760, 1390, 5085, 21, 5092, 587, 6665, 504, 6946, 9260, 17117, 5056, 12181, 1126, 3849, 7370, 7179, 6899, 6839, 5088, 6774, 5421, 5379, 2]
 // Exports: default
 
-// Module 17036 (ConjurePublishNotesSheet)
+// Module 17116 (ConjurePublishNotesSheet)
 import nativeDefault from "native" /* 587 */;
 import intl14 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
 import MessageConstants from "MessageConstants" /* 5085 */;
-import ConjureUtils from "ConjureUtils" /* 6945 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12179 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 17037 */;
+import ConjureUtils from "ConjureUtils" /* 6946 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12181 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 17117 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -292,7 +292,7 @@ export default function ConjurePublishNotesSheet(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -363,7 +363,7 @@ export default function ConjurePublishNotesSheet(guildId) {
           }
         }
         c4 = 3;
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       } catch (tmp38) {
         if (0 === publish) {
           c4 = 3;

@@ -1,17 +1,17 @@
-// Module ID: 18523
-// Function ID: 18524
+// Module ID: 18581
+// Function ID: 18582
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5988, 21, 5092, 587, 558, 576, 18514, 504, 5299, 1126, 5398, 6156, 1415, 8579, 18509, 5088, 18520, 2]
+// Dependencies: [5, 32, 19, 17, 5988, 21, 5092, 587, 558, 576, 18572, 504, 5299, 1126, 5398, 6157, 1415, 8580, 18567, 5088, 18578, 2]
 
-// Module 18523 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 18581 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import AlertDefault from "Alert" /* 5398 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import EmojiAliasDefault from "EmojiAlias" /* 18509 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import EmojiAliasDefault from "EmojiAlias" /* 18567 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -207,7 +207,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       let c3;
@@ -245,7 +245,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
             c3 = 0;
           }
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp11) {
         if (0 === c3) {
@@ -296,7 +296,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -334,7 +334,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp11) {
           let closure_2 = tmp11;

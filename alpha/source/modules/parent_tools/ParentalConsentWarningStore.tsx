@@ -1,9 +1,9 @@
-// Module ID: 15123
-// Function ID: 15124
+// Module ID: 15146
+// Function ID: 15147
 // Name: ParentalConsentWarningStore
 // Dependencies: [504, 584, 2]
 
-// Module 15123 (ParentalConsentWarningStore)
+// Module 15146 (ParentalConsentWarningStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

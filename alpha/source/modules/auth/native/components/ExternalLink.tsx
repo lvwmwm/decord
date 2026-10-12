@@ -1,9 +1,9 @@
-// Module ID: 16383
-// Function ID: 16384
+// Module ID: 16406
+// Function ID: 16407
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6625, 1503, 6655, 1126, 5088, 5379, 5958, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6626, 1503, 6656, 1126, 5088, 5379, 5958, 2]
 
-// Module 16383 (ExternalLink)
+// Module 16406 (ExternalLink)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -54,7 +54,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   const obj = externalURL(576);
   const cResult = obj.c(22);
   externalURL = externalURL.externalURL;
-  const tmp5 = closure_9(navigation(6625)());
+  const tmp5 = closure_9(navigation(6626)());
   const obj2 = externalURL(1503);
   const tmp4 = navigation;
   navigation = obj2.useNavigation();
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   const container = tmp5.container;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: intl.string(externalURL(1126).t["0Niu/F"]) };
-    const tmp4Result = tmp4(6655);
+    const tmp4Result = tmp4(6656);
     intl = tmp(1126).intl;
     const tmp14 = closure_7(tmp4Result, obj3);
     cResult[5] = tmp14;

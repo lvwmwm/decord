@@ -1,7 +1,7 @@
 // Module ID: 10785
 // Function ID: 10786
 // Name: SpotifyUtils
-// Dependencies: [5, 2019, 10786, 5760, 8458, 1085, 1102, 5763, 10787, 10788, 2]
+// Dependencies: [5, 2019, 10786, 5760, 8459, 1085, 1102, 5763, 10787, 10788, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
 // Module 10785 (SpotifyUtils)
@@ -14,7 +14,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
 import SpotifyProtocolStore from "SpotifyProtocolStore" /* 10786 */;
 import SpotifyStore from "SpotifyStore" /* 5760 */;
-import SpotifyConstants from "SpotifyConstants" /* 8458 */;
+import SpotifyConstants from "SpotifyConstants" /* 8459 */;
 import size from "module_2" /* 2 */;
 
 let TRACK, closure_3, closure_4;
@@ -52,7 +52,7 @@ let value = function _getSpotifyMetadataFromActivity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

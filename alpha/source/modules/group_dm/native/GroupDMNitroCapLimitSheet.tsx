@@ -1,14 +1,14 @@
 // Module ID: 10754
 // Function ID: 10755
 // Name: GroupDMNitroCapLimitSheet
-// Dependencies: [19, 17, 5081, 10751, 1085, 21, 5092, 587, 558, 576, 504, 10749, 1265, 5056, 10755, 9518, 10756, 1126, 5088, 9035, 5379, 6839, 2]
+// Dependencies: [19, 17, 5081, 10751, 1085, 21, 5092, 587, 558, 576, 504, 10749, 1265, 5056, 10755, 9519, 10756, 1126, 5088, 9036, 5379, 6840, 2]
 
 // Module 10754 (GroupDMNitroCapLimitSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9518 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9519 */;
 import GroupDMConstants from "GroupDMConstants" /* 10751 */;
 import PremiumMarketingUtil from "PremiumMarketingUtil" /* 10755 */;
 import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 10756 */;
@@ -175,7 +175,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
     closure_2();
   }, items2);
   const obj5 = { style: tmp.container, children: items3 };
-  BottomSheet = tmp2(6839).BottomSheet;
+  BottomSheet = tmp2(6840).BottomSheet;
   const obj6 = { style: tmp.title, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.formatToPlainString(_location(1126).t.IyBYPN, obj7) };
   const Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;
@@ -193,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   string = intl3.string;
   tmp2Result = _location(10749);
   obj12 = { style: tmp.nitroWheelIcon, color: nativeDefault.unsafe_rawColors.WHITE, size: "custom" };
-  NitroWheelIcon = tmp2(9035).NitroWheelIcon;
+  NitroWheelIcon = tmp2(9036).NitroWheelIcon;
   tmp16 = null;
   if (!loading) {
     tmp16 = callback1;

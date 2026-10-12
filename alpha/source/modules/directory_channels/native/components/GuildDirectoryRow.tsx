@@ -1,15 +1,15 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12033
+// Function ID: 12034
 // Name: GuildDirectoryRow
-// Dependencies: [5, 32, 19, 17, 2065, 2087, 1085, 21, 5092, 587, 504, 7052, 6097, 8694, 1209, 6919, 1415, 1126, 6181, 6158, 2079, 5088, 12009, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 2087, 1085, 21, 5092, 587, 504, 7053, 6098, 8695, 1209, 6920, 1415, 1126, 6182, 6159, 2079, 5088, 12011, 5379, 2]
 
-// Module 12031 (GuildDirectoryRow)
+// Module 12033 (GuildDirectoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import GuildIconDefault from "GuildIcon" /* 6158 */;
-import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 12009 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import GuildDirectoryMoreMenuDefault from "GuildDirectoryMoreMenu" /* 12011 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c3;
@@ -136,7 +136,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
                 c3 = 0;
                 closure_129_2(false);
                 c5 = 3;
-                return { value: "IconComponent", done: "+51" };
+                return { value: "IconComponent", done: null };
               } else {
                 let guildId;
                 const setHubProgressActionComplete = channel2(closure_2[13]).setHubProgressActionComplete;
@@ -152,7 +152,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
             c3 = 0;
             closure_129_2(false);
             c5 = 3;
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } catch (tmp47) {
           closure_2 = tmp47;
@@ -191,7 +191,7 @@ const memoResult = react.memo(function GuildDirectoryRow(entry) {
   obj5 = { style: tmp.guildWrapper, children: items7 };
   let obj6 = { style: tmp.headerContainer, children: items6 };
   let obj7 = { style: tmp.titleContainer, children: items1 };
-  const Card = tmp2(6181).Card;
+  const Card = tmp2(6182).Card;
   let obj8 = { style: tmp.guildIcon, icon: guildIconURL, guild: result, selected: false };
   result = undefined;
   const tmp7Result = GuildIconDefault;

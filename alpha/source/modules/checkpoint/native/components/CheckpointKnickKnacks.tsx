@@ -1,9 +1,9 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 16020
+// Function ID: 16021
 // Name: CheckpointKnickKnacks
 // Dependencies: [19, 17, 5081, 5437, 21, 5092, 558, 576, 504, 1382, 4842, 2]
 
-// Module 15997 (CheckpointKnickKnacks)
+// Module 16020 (CheckpointKnickKnacks)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;

@@ -1,14 +1,14 @@
-// Module ID: 17787
-// Function ID: 17788
+// Module ID: 17844
+// Function ID: 17845
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 5110, 1085, 21, 558, 576, 504, 8831, 8481, 1126, 8828, 8844, 2]
+// Dependencies: [19, 5110, 1085, 21, 558, 576, 504, 8832, 8482, 1126, 8829, 8845, 2]
 
-// Module 17787 (SecureFramesCallVerificationBottomSheet)
+// Module 17844 (SecureFramesCallVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import showShareActionSheet from "showShareActionSheet" /* 8481 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 8831 */;
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 8844 */;
+import showShareActionSheet from "showShareActionSheet" /* 8482 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 8832 */;
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 8845 */;
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
     const format = intl3.format;
     let obj2 = { helpArticle: tmpResult2.getSecureFramesHelpdeskArticle() };
     const wKxADe = tmp(1126).t.wKxADe;
-    tmpResult2 = channelId(8828);
+    tmpResult2 = channelId(8829);
     const formatResult = format(wKxADe, obj2);
     cResult[4] = stringResult;
     cResult[5] = stringResult1;
@@ -126,7 +126,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
   const wKxADe = channelId(1126).t.wKxADe;
-  obj4 = channelId(8828);
+  obj4 = channelId(8829);
   return <tmp3 title={intl.string(channelId(1126).t.cTQI5t)} subtitle={intl2.string(channelId(1126).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 });
 let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesCallVerificationBottomSheet.tsx");

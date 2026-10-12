@@ -1,7 +1,7 @@
 // Module ID: 10879
 // Function ID: 10880
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 2064, 6036, 502, 2012, 2116, 5947, 10831, 10353, 5115, 21, 5092, 1200, 587, 558, 576, 10359, 12, 10828, 10880, 504, 5106, 10881, 10884, 10894, 10904, 10905, 10824, 10917, 10963, 4818, 8268, 10907, 10910, 10838, 10834, 10837, 1497, 1382, 8450, 2]
+// Dependencies: [32, 19, 17, 2064, 6036, 502, 2012, 2116, 5947, 10831, 10354, 5115, 21, 5092, 1200, 587, 558, 576, 10360, 12, 10828, 10880, 504, 5106, 10881, 10884, 10894, 10904, 10905, 10824, 10917, 10963, 4818, 8269, 10907, 10910, 10838, 10834, 10837, 1497, 1382, 8451, 2]
 
 // Module 10879 (PictureInPictureVideo)
 import get_initialized from "get initialized" /* 504 */;
@@ -12,7 +12,7 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import useToken2 from "useToken" /* 4818 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
 import CallConstants from "CallConstants" /* 5115 */;
-import useAvatarColorDefault from "useAvatarColor" /* 8268 */;
+import useAvatarColorDefault from "useAvatarColor" /* 8269 */;
 import transitionToActivityDefault from "transitionToActivity" /* 10824 */;
 import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 10834 */;
 import usePipDimensionsDefault from "usePipDimensions" /* 10837 */;
@@ -31,7 +31,7 @@ import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SpeakingStore from "SpeakingStore" /* 5947 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 10831 */;
-import ChannelCallStore from "ChannelCallStore" /* 10353 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import native_mod from "native" /* 1200 */;
@@ -1033,7 +1033,7 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let obj9;
   let tmp5;
   let tmp6;
-  const f106452 = () => {
+  const f106671 = () => {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
@@ -1043,8 +1043,8 @@ let closure_23 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let items = [ChannelCallLifecycleStore];
   const obj = get_initialized;
   const obj2 = { channelId: channel.id, selfParticipant };
-  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f106452);
-  _slicedToArray(obj.useStateFromStoresArray(items, f106452), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f106671);
+  _slicedToArray(obj.useStateFromStoresArray(items, f106671), 2);
   const tmp7 = closure_22(obj2);
   let avatarURL;
   const obj3 = useToken2;

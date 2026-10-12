@@ -1,16 +1,16 @@
-// Module ID: 16155
-// Function ID: 16156
+// Module ID: 16178
+// Function ID: 16179
 // Name: UserSettingsDesignSystemTagGroup
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 5088, 6181, 5377, 14246, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 5088, 6182, 5377, 14269, 2]
 
-// Module 16155 (UserSettingsDesignSystemTagGroup)
+// Module 16178 (UserSettingsDesignSystemTagGroup)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 4818 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import Card_Card from "Card/Card" /* 6181 */;
-import TagGroup from "TagGroup" /* 14246 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import TagGroup from "TagGroup" /* 14269 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -128,7 +128,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[11] !== tmp12) {
     const obj9 = { children: metroRequire(Stack, obj10) };
-    const Card = tmp(6181).Card;
+    const Card = tmp(6182).Card;
     obj10 = { spacing: nativeDefault.space.PX_12, children: items1 };
     Stack = tmp(5377).Stack;
     items1 = [tmp16, tmp17, ];
@@ -143,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
     const obj12 = { children: metroRequire(Stack2, obj13) };
-    const Card2 = tmp(6181).Card;
+    const Card2 = tmp(6182).Card;
     obj13 = { spacing: nativeDefault.space.PX_12, children: items2 };
     Stack2 = tmp(5377).Stack;
     items2 = [hasOwnProperty(Text_Text.Heading, { variant: "text-lg/bold", children: "Sizes" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Compare the extra-small and small densities with the default medium group above." }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", children: "Extra small" }), , , ];
@@ -160,7 +160,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     const obj16 = { children: metroRequire(Stack3, obj17) };
-    const Card3 = tmp(6181).Card;
+    const Card3 = tmp(6182).Card;
     obj17 = { spacing: nativeDefault.space.PX_12, children: items3 };
     Stack3 = tmp(5377).Stack;
     items3 = [hasOwnProperty(Text_Text.Heading, { variant: "text-lg/bold", children: "Filter treatment" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Filter tags have fully rounded corners but remain read-only." }), ];
@@ -211,7 +211,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[22] !== tmp4.narrow) {
     const obj22 = { children: metroRequire(Stack4, obj23) };
-    const Card4 = tmp(6181).Card;
+    const Card4 = tmp(6182).Card;
     obj23 = { spacing: nativeDefault.space.PX_12, children: items4 };
     Stack4 = tmp(5377).Stack;
     items4 = [tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, ];

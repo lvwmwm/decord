@@ -1,11 +1,11 @@
-// Module ID: 16154
-// Function ID: 16155
+// Module ID: 16177
+// Function ID: 16178
 // Name: DesignSystemTagGroupSetting
-// Dependencies: [7992, 1085, 10663, 16155, 2]
+// Dependencies: [7993, 1085, 10663, 16178, 2]
 
-// Module 16154 (DesignSystemTagGroupSetting)
+// Module 16177 (DesignSystemTagGroupSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7992 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 12101
-// Function ID: 12102
+// Module ID: 12103
+// Function ID: 12104
 // Name: TimestampSearchHeader
-// Dependencies: [19, 17, 21, 558, 10514, 5092, 587, 576, 5051, 5088, 1126, 8579, 2]
+// Dependencies: [19, 17, 21, 558, 10515, 5092, 587, 576, 5051, 5088, 1126, 8580, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 12101 (TimestampSearchHeader)
+// Module 12103 (TimestampSearchHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import ClockIcon from "ClockIcon" /* 5051 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import Form from "Form" /* 8579 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10514 */;
+import Form from "Form" /* 8580 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

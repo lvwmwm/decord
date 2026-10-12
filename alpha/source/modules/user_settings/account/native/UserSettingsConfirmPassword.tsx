@@ -1,17 +1,17 @@
-// Module ID: 6681
-// Function ID: 6682
+// Module ID: 6682
+// Function ID: 6683
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 6682, 504, 6683, 5635, 1255, 1126, 6685, 5088, 6284, 6621, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 6683, 504, 6684, 5635, 1255, 1126, 6686, 5088, 6285, 6622, 5379, 2]
 
-// Module 6681 (UserSettingsConfirmPassword)
+// Module 6682 (UserSettingsConfirmPassword)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6284 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6682 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6683 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 6685 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6285 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6683 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 6686 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -92,7 +92,7 @@ class UserSettingsConfirmPasswordInner {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "+51" };
+            return { value: "IconComponent", done: null };
           }
         } else {
           let c3;
@@ -181,7 +181,7 @@ class UserSettingsConfirmPasswordInner {
               c3 = 0;
               closure_129_3(false);
               c5 = 3;
-              return { value: "IconComponent", done: "+51" };
+              return { value: "IconComponent", done: null };
             }
           } catch (tmp67) {
             closure_2 = tmp67;
@@ -255,7 +255,7 @@ class UserSettingsConfirmPasswordInner {
         tmp20Result = null;
         if (null == obj2.getFieldMessage("password")) {
           const obj9 = { style: tmp.hint, children: obj2.message };
-          tmp20Result = tmp20(tmp21(6621), obj9);
+          tmp20Result = tmp20(tmp21(6622), obj9);
         }
       }
       items3[3] = tmp20Result;

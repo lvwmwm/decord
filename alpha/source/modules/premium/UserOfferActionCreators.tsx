@@ -1,18 +1,18 @@
-// Module ID: 8091
-// Function ID: 8092
+// Module ID: 8092
+// Function ID: 8093
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8092, 7176, 7172, 1392, 1085, 1382, 584, 1265, 1295, 8093, 1255, 4938, 2049, 2046, 2]
+// Dependencies: [5, 8093, 7177, 7173, 1392, 1085, 1382, 584, 1265, 1295, 8094, 1255, 4938, 2049, 2046, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8091 (UserOfferActionCreators)
+// Module 8092 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8092 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7176 */;
-import UserOfferStore from "UserOfferStore" /* 7172 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8093 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7177 */;
+import UserOfferStore from "UserOfferStore" /* 7173 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "backgroundColor", paymentGatewayOverride: "IconComponent" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Set" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;

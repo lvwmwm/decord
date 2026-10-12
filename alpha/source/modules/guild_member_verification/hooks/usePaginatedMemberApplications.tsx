@@ -1,10 +1,10 @@
-// Module ID: 17028
-// Function ID: 17029
+// Module ID: 17052
+// Function ID: 17053
 // Name: usePaginatedMemberApplications
-// Dependencies: [5, 32, 19, 4942, 11, 6116, 5635, 2]
+// Dependencies: [5, 32, 19, 4942, 11, 6117, 5635, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 17028 (usePaginatedMemberApplications)
+// Module 17052 (usePaginatedMemberApplications)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -76,7 +76,7 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -156,7 +156,7 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
             ref.current = false;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp53) {
           if (0 === ref2) {
             c7 = 3;

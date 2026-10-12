@@ -1,10 +1,10 @@
-// Module ID: 14836
-// Function ID: 14837
+// Module ID: 14859
+// Function ID: 14860
 // Name: BadgeSettingsActionCreators
 // Dependencies: [5, 1085, 1295, 1255, 2]
 // Exports: updateBadgeSettings
 
-// Module 14836 (BadgeSettingsActionCreators)
+// Module 14859 (BadgeSettingsActionCreators)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let obj = function _updateBadgeSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

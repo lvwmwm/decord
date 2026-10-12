@@ -1,9 +1,9 @@
-// Module ID: 8954
-// Function ID: 8955
+// Module ID: 8955
+// Function ID: 8956
 // Name: GameProfileSkeletonCardRow
 // Dependencies: [19, 17, 21, 5092, 558, 576, 587, 2]
 
-// Module 8954 (GameProfileSkeletonCardRow)
+// Module 8955 (GameProfileSkeletonCardRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

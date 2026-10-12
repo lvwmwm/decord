@@ -1,9 +1,9 @@
-// Module ID: 17805
-// Function ID: 17806
+// Module ID: 17862
+// Function ID: 17863
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 5897, 5110, 5947, 11970, 11968, 17740, 11973, 1085, 5115, 11971, 21, 4850, 5088, 5391, 1200, 5092, 587, 558, 576, 7443, 5900, 6161, 1126, 5379, 11969, 504, 10885, 5137, 13158, 10887, 10884, 17806, 10893, 9029, 8377, 5093, 5378, 6156, 6761, 4818, 10907, 17808, 11575, 9579, 4827, 6851, 17741, 17753, 17739, 17809, 8303, 17810, 6334, 17811, 11972, 17812, 17813, 17814, 17815, 17816, 17826, 2]
+// Dependencies: [32, 19, 17, 5897, 5110, 5947, 11972, 11970, 17797, 11975, 1085, 5115, 11973, 21, 4850, 5088, 5391, 1200, 5092, 587, 558, 576, 7444, 5900, 6162, 1126, 5379, 11971, 504, 10885, 5137, 13163, 10887, 10884, 17863, 10893, 9030, 8378, 5093, 5378, 6157, 6762, 4818, 10907, 17865, 11577, 9580, 4827, 6852, 17798, 17810, 17796, 17866, 8304, 17867, 6335, 17868, 11974, 17869, 17870, 17871, 17872, 17873, 17883, 2]
 
-// Module 17805 (VoicePanelCard)
+// Module 17862 (VoicePanelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -16,23 +16,23 @@ import CallConstants from "CallConstants" /* 5115 */;
 import spring from "spring" /* 5378 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
-import StreamActionCreators from "StreamActionCreators" /* 7443 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8303 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9579 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11575 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11968 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11971 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11973 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17739 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17740 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17808 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17809 */;
+import StreamActionCreators from "StreamActionCreators" /* 7444 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11973 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11975 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17796 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17797 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17865 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17866 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 5897 */;
 import RTCConnectionStore_mod from "RTCConnectionStore" /* 5110 */;
 import SpeakingStore from "SpeakingStore" /* 5947 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11970 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -2060,7 +2060,7 @@ let closure_59 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSha
   });
   return { sharedTransitionState, cardGestureEnabled };
 });
-let closure_60 = { isSelf: false, hasVideo: false, user: { id: "r" } };
+let closure_60 = { isSelf: false, hasVideo: false, user: { id: "top" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING, scale, sharedValue1, flag) {
   let obj3;
   let obj4;

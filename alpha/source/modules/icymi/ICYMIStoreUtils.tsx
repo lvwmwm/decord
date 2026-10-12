@@ -1,16 +1,16 @@
-// Module ID: 16893
-// Function ID: 16894
+// Module ID: 16917
+// Function ID: 16918
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 5432, 6035, 8453, 1085, 16894, 8470, 8466, 6799, 2000, 1085, 11, 8471, 558, 576, 504, 2]
+// Dependencies: [5, 5432, 6035, 8454, 1085, 16918, 8471, 8467, 6800, 2000, 1085, 11, 8472, 558, 576, 504, 2]
 // Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates
 
-// Module 16893 (ICYMIStoreUtils)
+// Module 16917 (ICYMIStoreUtils)
 import Constants from "Constants" /* 1085 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 16894 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 16918 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
-import ICYMIStore from "ICYMIStore" /* 8453 */;
+import ICYMIStore from "ICYMIStore" /* 8454 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp5) {
         c0 = 3;
@@ -93,7 +93,7 @@ obj = function _regenerateFeedAndClearReadStates() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "+51" };
+        return { value: "IconComponent", done: null };
       }
     } else {
       try {
@@ -218,7 +218,7 @@ obj = function _regenerateFeedAndClearReadStates() {
           obj = closure_130_1(closure_130_2[12]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c4 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } catch (tmp35) {
         c4 = 3;

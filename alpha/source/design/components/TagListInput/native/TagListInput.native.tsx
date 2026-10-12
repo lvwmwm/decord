@@ -1,9 +1,9 @@
-// Module ID: 8625
-// Function ID: 8626
+// Module ID: 8626
+// Function ID: 8627
 // Name: TagListInput
-// Dependencies: [32, 19, 17, 21, 5092, 587, 5088, 558, 576, 4850, 5378, 5382, 6242, 5391, 6294, 5386, 6301, 6303, 4824, 6305, 6169, 6306, 8626, 8627, 1126, 8628, 4828, 6300, 6739, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 5088, 558, 576, 4850, 5378, 5382, 6243, 5391, 6295, 5386, 6302, 6304, 4824, 6306, 6170, 6307, 8627, 8628, 1126, 8629, 4828, 6301, 6740, 2]
 
-// Module 8625 (TagListInput)
+// Module 8626 (TagListInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -12,8 +12,8 @@ import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import spring from "spring" /* 5378 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import _modDef6242 from "module_6242" /* 6242 */;
-import useInputClearButton from "useInputClearButton" /* 6294 */;
+import _modDef6243 from "module_6243" /* 6243 */;
+import useInputClearButton from "useInputClearButton" /* 6295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -150,7 +150,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLea
                 items = [, ];
                 obj2 = { style: closure_1.mask, children: items2 };
                 const obj4 = { start, end, colors, style: metroImportDefault.absoluteFill };
-                const tmp5 = _modDef6242;
+                const tmp5 = _modDef6243;
                 items[0] = metroImportAll(LinearGradientDefault, obj4);
                 const obj5 = { style: items1 };
                 items1 = [closure_1.leadingCover, animatedStyle];
@@ -183,7 +183,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLea
             items = [, ];
             obj2 = { style: closure_1.mask, children: items2 };
             const obj4 = { start, end, colors, style: metroImportDefault.absoluteFill };
-            const tmp5 = _modDef6242;
+            const tmp5 = _modDef6243;
             items[0] = metroImportAll(LinearGradientDefault, obj4);
             const obj5 = { style: items1 };
             items1 = [closure_1.leadingCover, animatedStyle];
@@ -274,7 +274,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLea
       items = [, ];
       obj2 = { style: closure_1.mask, children: items2 };
       const obj4 = { start, end, colors, style: metroImportDefault.absoluteFill };
-      const tmp5 = _modDef6242;
+      const tmp5 = _modDef6243;
       items[0] = metroImportAll(LinearGradientDefault, obj4);
       const obj5 = { style: items1 };
       items1 = [closure_1.leadingCover, animatedStyle];
@@ -638,7 +638,7 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
   const tmp3 = dependencyMap;
   let obj = tags(5386);
   const bound = Math.min(2, obj.useFontScale());
-  const result = tags(6301).InputHeights.MD * bound;
+  const result = tags(6302).InputHeights.MD * bound;
   let tmp6 = closure_18(ref, onChangeText);
   const inputRef = tmp6.inputRef;
   const inputValueRef = tmp6.inputValueRef;
@@ -646,21 +646,21 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
   const clearButton = tmp6.clearButton;
   const inputInitializedRef = tmp6.inputInitializedRef;
   ref = inputRef.useRef({ start: 0, end: 0 });
-  const obj3 = tags(6303);
+  const obj3 = tags(6304);
   const keyboardBlurring = obj3.useKeyboardBlurring(inputRef);
   const obj4 = tags(4824);
   const focus = obj4.useFocus();
   ({ focusProps: c8, isFocused } = focus);
   let tmp9 = focusOnAdd;
-  ({ onFocus: c9, onBlur: c10 } = focusOnAdd(6305)({ onFocus, onBlur }));
-  const tmp10 = focusOnAdd(6305)({ onFocus, onBlur });
+  ({ onFocus: c9, onBlur: c10 } = focusOnAdd(6306)({ onFocus, onBlur }));
+  const tmp10 = focusOnAdd(6306)({ onFocus, onBlur });
   const ref1 = inputRef.useRef(null);
   let tmp12 = autoClearInputOnTagAdd;
   [c12, c13] = autoClearInputOnTagAdd(inputRef.useState(null), 2);
   const tmp13 = autoClearInputOnTagAdd(inputRef.useState(null), 2);
   [tmp15, c14] = autoClearInputOnTagAdd(inputRef.useState(false), 2);
   const tmp14 = autoClearInputOnTagAdd(inputRef.useState(false), 2);
-  const tmp16 = focusOnAdd(6169)(tags);
+  const tmp16 = focusOnAdd(6170)(tags);
   const length = tmp16;
   const ref2 = inputRef.useRef(tags);
   const items = [focusOnAdd, inputUpdate, ref2, tags, inputRef, inputValueRef, autoClearInputOnTagAdd];
@@ -716,14 +716,14 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
     }
   }, items1);
   if (inActionSheet) {
-    BottomSheetScrollView = tmp2(6306).BottomSheetScrollView;
+    BottomSheetScrollView = tmp2(6307).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = inputUpdate;
   }
   if (inActionSheet) {
-    BottomSheetTextInput = tmp2(8626).BottomSheetTextInput;
+    BottomSheetTextInput = tmp2(8627).BottomSheetTextInput;
   } else {
-    BottomSheetTextInput = tmp9(8627);
+    BottomSheetTextInput = tmp9(8628);
   }
   const result1 = 33 * bound;
   [tmp22, c17] = tmp12(inputRef.useState(0), 2);
@@ -906,10 +906,10 @@ const memoResult = react.memo(function TagListInput(accessibilityHint) {
   items7 = [{ minHeight: result, overflow: "hidden" }, style];
   obj12 = { size: "sm", disabled, isFocused, children: items8 };
   const tmp25Result = c8(BottomSheetScrollView, obj6);
-  InputFieldContainer = tmp2(6300).InputFieldContainer;
+  InputFieldContainer = tmp2(6301).InputFieldContainer;
   if (null == icon) {
     const obj13 = { style: tmp.iconLeft, size: "xs", color: "interactive-text-default" };
-    icon = tmp25(tmp2(6739).MagnifyingGlassIcon, obj13);
+    icon = tmp25(tmp2(6740).MagnifyingGlassIcon, obj13);
   }
   items8 = [icon, obj5.wrap(tmp25Result), ];
   if (null == footer) {

@@ -1,9 +1,9 @@
-// Module ID: 13980
-// Function ID: 13981
+// Module ID: 14003
+// Function ID: 14004
 // Name: GuildMediaStateStore
-// Dependencies: [2064, 6054, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 4739, 13981, 8654, 11, 5894, 8512, 504, 568, 584, 2]
+// Dependencies: [2064, 6054, 2070, 2069, 5897, 502, 2065, 2087, 4750, 4760, 2116, 5966, 5113, 1085, 1106, 4739, 14004, 8655, 11, 5894, 8513, 504, 568, 584, 2]
 
-// Module 13980 (GuildMediaStateStore)
+// Module 14003 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
@@ -11,7 +11,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 13981 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14004 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
 import StageInstanceStore from "StageInstanceStore" /* 2070 */;
@@ -257,7 +257,7 @@ function computeGuildMediaState(guildId) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = getEmbeddedActivityLocationChannelId(_location);
-        let tmp29Result = tmp29(8512);
+        let tmp29Result = tmp29(8513);
         if (tmp29Result.isActivitiesInTextEnabled(ChannelStore.getChannel(embeddedActivityLocationChannelId))) {
           someResult2 = found.length > 0;
         } else {
@@ -270,7 +270,7 @@ function computeGuildMediaState(guildId) {
           });
         }
         let obj4 = { audio: flag2, video: flag, screenshare: someResult, liveStage: someResult1, activeEvent: null != tmp29Result2.getGuildActiveEvent(guildId), activity: someResult2, isCurrentUserConnected: false };
-        let tmp29Result2 = tmp29(8654);
+        let tmp29Result2 = tmp29(8655);
         return obj4;
       }
       continue;

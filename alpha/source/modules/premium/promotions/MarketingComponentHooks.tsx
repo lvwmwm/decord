@@ -1,9 +1,9 @@
-// Module ID: 10109
-// Function ID: 10110
+// Module ID: 10110
+// Function ID: 10111
 // Name: MarketingComponentHooks
 // Dependencies: [5081, 558, 576, 5031, 504, 4825, 2]
 
-// Module 10109 (MarketingComponentHooks)
+// Module 10110 (MarketingComponentHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import themes from "themes" /* 4825 */;

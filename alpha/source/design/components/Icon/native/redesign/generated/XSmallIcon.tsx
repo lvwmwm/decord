@@ -1,14 +1,14 @@
-// Module ID: 6207
-// Function ID: 6208
+// Module ID: 6208
+// Function ID: 6209
 // Name: XSmallIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 6208, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 6209, 4817, 2]
 
-// Module 6207 (XSmallIcon)
+// Module 6208 (XSmallIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 6208 */;
+import AssetRegistry from "AssetRegistry" /* 6209 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

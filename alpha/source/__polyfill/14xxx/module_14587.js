@@ -1,15 +1,26 @@
 // Module ID: 14587
 // Function ID: 14588
-// Dependencies: [14535, 14554, 14544]
+// Dependencies: [14576, 14551]
 
 // Module 14587
-import _mod14535 from "module_14535" /* 14535 */;
-import _mod14544 from "module_14544" /* 14544 */;
-import module_14554 from "module_14554" /* 14554 */;
+import _mod14551 from "module_14551" /* 14551 */;
+import module_14576 from "module_14576" /* 14576 */;
 
-let closure_0 = _mod14535(Function.toString);
-if (!module_14554(_mod14544.inspectSource)) {
-  _mod14544.inspectSource = (arg0) => closure_0(arg0);
+let _moduleResult = module_14576(_mod14551.document);
+if (_moduleResult) {
+  const _module1 = module_14576;
+  _moduleResult = _module1(_mod14551.document.createElement);
 }
+let c2 = _moduleResult;
 
-export default _mod14544.inspectSource;
+export default (arg0) => {
+  let element;
+  const tmp = c2;
+  if (tmp) {
+    const _document = _mod14551.document;
+    element = _document.createElement(arg0);
+  } else {
+    element = {};
+  }
+  return element;
+};

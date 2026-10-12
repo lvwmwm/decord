@@ -1,13 +1,13 @@
-// Module ID: 8423
-// Function ID: 8424
+// Module ID: 8424
+// Function ID: 8425
 // Name: MediaModalWebViewBase
-// Dependencies: [109, 19, 17, 21, 1382, 5092, 558, 576, 4850, 5093, 4806, 7521, 2]
+// Dependencies: [109, 19, 17, 21, 1382, 5092, 558, 576, 4850, 5093, 4806, 7522, 2]
 
-// Module 8423 (MediaModalWebViewBase)
+// Module 8424 (MediaModalWebViewBase)
 import LinkingDefault from "Linking" /* 4806 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
-import WebViewDefault from "WebView" /* 7521 */;
+import WebViewDefault from "WebView" /* 7522 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,13 +1,13 @@
-// Module ID: 8633
-// Function ID: 8634
+// Module ID: 8634
+// Function ID: 8635
 // Name: AddModerators
-// Dependencies: [32, 109, 19, 17, 2087, 7489, 21, 5092, 587, 558, 576, 1503, 38, 8600, 5893, 1998, 1126, 6200, 7088, 5088, 7567, 8634, 2073, 2]
+// Dependencies: [32, 109, 19, 17, 2087, 7490, 21, 5092, 587, 558, 576, 1503, 38, 8601, 5893, 1998, 1126, 6201, 7089, 5088, 7568, 8635, 2073, 2]
 
-// Module 8633 (AddModerators)
+// Module 8634 (AddModerators)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import HeaderActionButton from "HeaderActionButton" /* 7088 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7489 */;
+import HeaderActionButton from "HeaderActionButton" /* 7089 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7490 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;

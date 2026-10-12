@@ -1,14 +1,14 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 17939
+// Function ID: 17940
 // Name: JankVoicePanelTabReporter
-// Dependencies: [32, 19, 11970, 11968, 16424, 558, 576, 4850, 2]
+// Dependencies: [32, 19, 11972, 11970, 16447, 558, 576, 4850, 2]
 // Exports: reportJankVoicePanelTabRequest
 
-// Module 17882 (JankVoicePanelTabReporter)
+// Module 17939 (JankVoicePanelTabReporter)
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11968 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11970 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16424 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

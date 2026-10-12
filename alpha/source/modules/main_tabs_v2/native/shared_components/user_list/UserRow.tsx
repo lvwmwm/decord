@@ -1,9 +1,9 @@
-// Module ID: 10227
-// Function ID: 10228
+// Module ID: 10228
+// Function ID: 10229
 // Name: UserRow
-// Dependencies: [19, 17, 5081, 5440, 7350, 2065, 5108, 4760, 10216, 1085, 21, 5092, 587, 7014, 38, 10228, 10229, 4808, 10230, 7017, 7351, 558, 576, 504, 1200, 5088, 4962, 10234, 6851, 6053, 1126, 10257, 10258, 6195, 5379, 2032, 9321, 8198, 8303, 2000, 8342, 10260, 9409, 5408, 7979, 5628, 8853, 10262, 8766, 10270, 8858, 10271, 6176, 10277, 6179, 2]
+// Dependencies: [19, 17, 5081, 5440, 7351, 2065, 5108, 4760, 10217, 1085, 21, 5092, 587, 7015, 38, 10229, 10230, 4808, 10231, 7018, 7352, 558, 576, 504, 1200, 5088, 4962, 10235, 6852, 6053, 1126, 10258, 10259, 6196, 5379, 2032, 9322, 8199, 8304, 2000, 8343, 10261, 9410, 5408, 7980, 5628, 8854, 10263, 8767, 10271, 8859, 10272, 6177, 10278, 6180, 2]
 
-// Module 10227 (UserRow)
+// Module 10228 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,24 +14,24 @@ import ToastUtils from "ToastUtils" /* 4808 */;
 import UserUtils from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6195 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7014 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7017 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7351 */;
-import ChatIcon from "ChatIcon" /* 8198 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9321 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9409 */;
-import UserRowConstants from "UserRowConstants" /* 10216 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10229 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10230 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10234 */;
-import ActionButtonDefault from "ActionButton" /* 10257 */;
-import XLargeIcon from "XLargeIcon" /* 10258 */;
-import CrownIcon2 from "CrownIcon" /* 10260 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6196 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7352 */;
+import ChatIcon from "ChatIcon" /* 8199 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9322 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9410 */;
+import UserRowConstants from "UserRowConstants" /* 10217 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10230 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10231 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
+import ActionButtonDefault from "ActionButton" /* 10258 */;
+import XLargeIcon from "XLargeIcon" /* 10259 */;
+import CrownIcon2 from "CrownIcon" /* 10261 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7350 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7351 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -448,7 +448,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "Array" };
+      let obj2 = { accessibilityActions: items, actions: "r" };
       return obj2;
     } else {
       let tmp9;
@@ -763,7 +763,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8303, dependencyMap.paths);
+      const promise = asyncRequire(8304, dependencyMap.paths);
       promise.then((result) => {
         const obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

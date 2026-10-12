@@ -1,9 +1,9 @@
-// Module ID: 13657
-// Function ID: 13658
+// Module ID: 13680
+// Function ID: 13681
 // Name: SubscriptionRenewalMutationsNotice
 // Dependencies: [19, 17, 4770, 21, 5092, 587, 5969, 558, 576, 1200, 1126, 4769, 2]
 
-// Module 13657 (SubscriptionRenewalMutationsNotice)
+// Module 13680 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

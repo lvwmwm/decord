@@ -1,15 +1,15 @@
-// Module ID: 12410
-// Function ID: 12411
+// Module ID: 12412
+// Function ID: 12413
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 5092, 6258, 587, 558, 576, 5088, 1126, 5379, 2]
+// Dependencies: [19, 17, 21, 5092, 6259, 587, 558, 576, 5088, 1126, 5379, 2]
 
-// Module 12410 (NewUserPermissionsOnboarding)
+// Module 12412 (NewUserPermissionsOnboarding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import NavigatorConstants from "NavigatorConstants" /* 6258 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

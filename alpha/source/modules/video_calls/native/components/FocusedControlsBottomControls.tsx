@@ -1,7 +1,7 @@
 // Module ID: 11035
 // Function ID: 11036
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 10353, 10354, 1085, 21, 1382, 5092, 587, 5906, 1200, 558, 576, 1631, 4850, 11036, 1105, 1126, 6843, 5093, 6334, 9742, 1497, 10842, 1121, 4827, 4969, 5365, 11038, 2]
+// Dependencies: [32, 19, 17, 10354, 10355, 1085, 21, 1382, 5092, 587, 5906, 1200, 558, 576, 1631, 4850, 11036, 1105, 1126, 6844, 5093, 6335, 9743, 1497, 10842, 1121, 4827, 4969, 5365, 11038, 2]
 
 // Module 11035 (FocusedControlsBottomControls)
 import react2 from "react" /* 576 */;
@@ -14,8 +14,8 @@ import CallPTTButtonDefault from "CallPTTButton" /* 11038 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelCallStore from "ChannelCallStore" /* 10353 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10354 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10355 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -368,7 +368,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_13(tmp(6843).ActionSheetHeaderBar, {});
+    const tmp13 = closure_13(tmp(6844).ActionSheetHeaderBar, {});
     cResult[4] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -449,7 +449,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Focuse
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: tmp6(tmp7, obj4) };
   obj4 = { style: tmp.aboveActionBarContainer, children: items };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  items = [closure_13(closure_27, { positionY }), closure_13(positionY(6843).ActionSheetHeaderBar, {}), ];
+  items = [closure_13(closure_27, { positionY }), closure_13(positionY(6844).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   const tmp5 = closure_6;
   tmp6 = closure_14;

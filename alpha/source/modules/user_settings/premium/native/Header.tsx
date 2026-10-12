@@ -1,16 +1,16 @@
-// Module ID: 13735
-// Function ID: 13736
+// Module ID: 13758
+// Function ID: 13759
 // Name: Header
-// Dependencies: [19, 17, 21, 5092, 558, 576, 5031, 1126, 4969, 13736, 13737, 6156, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5031, 1126, 4969, 13759, 13760, 6157, 5088, 2]
 
-// Module 13735 (Header)
+// Module 13758 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6156 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -49,9 +49,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(style
     }
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(13736);
+      tmp5Result = tmp5(13759);
     } else {
-      tmp5Result = tmp5(13737);
+      tmp5Result = tmp5(13760);
     }
     if (cResult[4] !== tmp5Result) {
       const obj2 = { accessible: true, accessibilityLabel: tmp9, accessibilityRole: "header", source: tmp5Result };
@@ -122,9 +122,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(style
   const tmp5 = hasOwnProperty;
   const tmp6 = View;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(13736);
+    tmp2Result = tmp2(13759);
   } else {
-    tmp2Result = tmp2(13737);
+    tmp2Result = tmp2(13760);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj4 = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.SD5MJW) };

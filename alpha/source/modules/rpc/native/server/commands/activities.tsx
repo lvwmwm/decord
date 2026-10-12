@@ -1,18 +1,18 @@
-// Module ID: 14753
-// Function ID: 14754
+// Module ID: 14777
+// Function ID: 14778
 // Name: commands/activities
-// Dependencies: [5, 5639, 1085, 7482, 8457, 14720, 10936, 8682, 14713, 14696, 10810, 11415, 7499, 7769, 10853, 5636, 2]
+// Dependencies: [5, 5639, 1085, 7483, 8458, 14743, 10936, 8683, 14736, 14719, 10810, 11423, 7500, 7770, 10853, 5636, 2]
 
-// Module 14753 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 7482 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8682 */;
+// Module 14777 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14720 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14743 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 5639 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14713 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14736 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -47,7 +47,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(8682).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(8683).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }
@@ -77,7 +77,7 @@ let obj4 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {

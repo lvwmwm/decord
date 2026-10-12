@@ -1,11 +1,11 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11432
+// Function ID: 11433
 // Name: conjureLiveRelaunch
-// Dependencies: [11413, 2]
+// Dependencies: [11421, 2]
 // Exports: relaunchAppFramesForBuild, reloadAppFramesAfterDeploy
 
-// Module 11430 (conjureLiveRelaunch)
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11413 */;
+// Module 11432 (conjureLiveRelaunch)
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11421 */;
 import size from "module_2" /* 2 */;
 
 let set;

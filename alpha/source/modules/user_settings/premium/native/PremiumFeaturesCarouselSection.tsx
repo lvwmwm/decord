@@ -1,9 +1,9 @@
-// Module ID: 13738
-// Function ID: 13739
+// Module ID: 13761
+// Function ID: 13762
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1085, 7151, 1392, 21, 587, 5092, 558, 576, 5391, 1105, 5088, 6156, 1126, 13739, 13740, 13741, 13742, 5362, 1628, 10115, 1200, 6851, 1497, 1265, 2]
+// Dependencies: [32, 19, 17, 1085, 7152, 1392, 21, 587, 5092, 558, 576, 5391, 1105, 5088, 6157, 1126, 13762, 13763, 13764, 13765, 5362, 1628, 10116, 1200, 6852, 1497, 1265, 2]
 
-// Module 13738 (PremiumFeaturesCarouselSection)
+// Module 13761 (PremiumFeaturesCarouselSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,13 +13,13 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import FastImageDefault from "FastImage" /* 6156 */;
-import ColorConstants from "ColorConstants" /* 7151 */;
-import PaginationDefault from "Pagination" /* 10115 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13739 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13740 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13741 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13742 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import ColorConstants from "ColorConstants" /* 7152 */;
+import PaginationDefault from "Pagination" /* 10116 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13762 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13763 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13764 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13765 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -621,7 +621,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   const cResult = obj.c(18);
   style = style.style;
   const tmp4 = closure_14();
-  analyticsLocations = first(6851)().analyticsLocations;
+  analyticsLocations = first(6852)().analyticsLocations;
   let obj2 = react;
   [first, dependencyMap] = react.useState(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -740,7 +740,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   _slicedToArray = undefined;
   style = style.style;
   let tmp = closure_14();
-  const analyticsLocations = first(6851)().analyticsLocations;
+  const analyticsLocations = first(6852)().analyticsLocations;
   [first, dependencyMap] = react.useState(false);
   const useState = react.useState;
   let obj = analyticsLocations(1497);

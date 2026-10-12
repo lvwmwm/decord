@@ -1,11 +1,11 @@
-// Module ID: 13400
-// Function ID: 13401
+// Module ID: 13423
+// Function ID: 13424
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 2065, 558, 576, 1126, 10228, 504, 7014, 2]
+// Dependencies: [5, 19, 2065, 558, 576, 1126, 10229, 504, 7015, 2]
 
-// Module 13400 (usePrivateChannelCall)
+// Module 13423 (usePrivateChannelCall)
 import intl3 from "intl" /* 1126 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10228 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10229 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -86,7 +86,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
             c2();
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         }
       } else {
         try {
@@ -305,7 +305,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateCh
             closure_129_2();
           }
           c3 = 3;
-          return { value: "IconComponent", done: "+51" };
+          return { value: "IconComponent", done: null };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;

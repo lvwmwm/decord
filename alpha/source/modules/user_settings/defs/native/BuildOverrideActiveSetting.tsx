@@ -1,18 +1,18 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 16127
+// Function ID: 16128
 // Name: BuildOverrideActiveSetting
-// Dependencies: [19, 10483, 21, 14808, 558, 576, 11341, 504, 15098, 5377, 16098, 1126, 2206, 5379, 10663, 15229, 2]
+// Dependencies: [19, 10484, 21, 14831, 558, 576, 11341, 504, 15121, 5377, 16121, 1126, 2206, 5379, 10663, 15252, 2]
 
-// Module 16104 (BuildOverrideActiveSetting)
+// Module 16127 (BuildOverrideActiveSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import _modDef2206 from "module_2206" /* 2206 */;
 import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11341 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14808 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15098 */;
-import RefreshIcon from "RefreshIcon" /* 15229 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14831 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15121 */;
+import RefreshIcon from "RefreshIcon" /* 15252 */;
 import react from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10483 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10484 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
@@ -90,7 +90,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
   if (null != tmp4) {
     const Stack = tmp(5377).Stack;
     const obj3 = { label: "" + intl.string(_modDef2206.d11XdP) + " ", value: tmp4.id };
-    const DevToolsContentSubLabel = tmp(16098).DevToolsContentSubLabel;
+    const DevToolsContentSubLabel = tmp(16121).DevToolsContentSubLabel;
     intl = tmp(1126).intl;
     const _HermesInternal = HermesInternal;
     const items = [React3(DevToolsContentSubLabel, obj3), , ];
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
   if (null != tmp) {
     const Stack = tmp2(5377).Stack;
     const obj2 = { label: "" + intl.string(_modDef2206.d11XdP) + " ", value: tmp.id };
-    const DevToolsContentSubLabel = tmp2(16098).DevToolsContentSubLabel;
+    const DevToolsContentSubLabel = tmp2(16121).DevToolsContentSubLabel;
     intl = tmp2(1126).intl;
     const _HermesInternal = HermesInternal;
     const items = [React3(DevToolsContentSubLabel, obj2), , ];

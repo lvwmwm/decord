@@ -1,18 +1,18 @@
-// Module ID: 17982
-// Function ID: 17983
+// Module ID: 18039
+// Function ID: 18040
 // Name: ExistingUserAgeGateModal
-// Dependencies: [19, 2065, 4939, 1110, 17983, 1085, 21, 1382, 4809, 1126, 5929, 6097, 5934, 1265, 1273, 6200, 17984, 17986, 17987, 16390, 6914, 11190, 558, 576, 5908, 504, 5421, 5909, 6687, 2]
+// Dependencies: [19, 2065, 4939, 1110, 18040, 1085, 21, 1382, 4809, 1126, 5929, 6098, 5934, 1265, 1273, 6201, 18041, 18043, 18044, 16413, 6915, 11190, 558, 576, 5908, 504, 5421, 5909, 6688, 2]
 
-// Module 17982 (ExistingUserAgeGateModal)
+// Module 18039 (ExistingUserAgeGateModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 5929 */;
 import GuildNSFWDefault from "GuildNSFW" /* 11190 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 17983 */;
-import ExistingUserAgeGateDefault from "ExistingUserAgeGate" /* 17984 */;
-import ExistingUserAgeGateConfirmDefault from "ExistingUserAgeGateConfirm" /* 17986 */;
-import AgeGateVerifyDefault from "AgeGateVerify" /* 17987 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 18040 */;
+import ExistingUserAgeGateDefault from "ExistingUserAgeGate" /* 18041 */;
+import ExistingUserAgeGateConfirmDefault from "ExistingUserAgeGateConfirm" /* 18043 */;
+import AgeGateVerifyDefault from "AgeGateVerify" /* 18044 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
@@ -376,7 +376,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUser
   }, items2));
   const obj4 = { screens: stateFromStores.useMemo(() => getScreens(source, stateFromStores, closure_4), items3), initialRouteName: AgeGate, headerBackTitle: intl.string(source(1126).t["13/7kX"]) };
   items3 = [source, tmp5, tmp7];
-  const Navigator = tmp(6687).Navigator;
+  const Navigator = tmp(6688).Navigator;
   const tmp9 = jsx;
   if (shouldAgeVerifyForAgeGate) {
     let Pawtect;
